@@ -1,0 +1,598 @@
+{
+  "slug": "cybersecurity-auditing",
+  "en": {
+    "name": "Cybersecurity Auditing",
+    "shortDescription": "Identify critical security vulnerabilities, compliance gaps, and infrastructure risks before malicious actors exploit them with our comprehensive, expert-led cybersecurity audits and penetration testing services.",
+    "fullDescription": "Protect your digital assets and maintain customer trust with PakSoft's comprehensive cybersecurity auditing services. Our certified security experts conduct deep-dive assessments of your web applications, cloud infrastructure, and source code to identify hidden vulnerabilities. We evaluate your systems against industry standards like OWASP Top 10, ISO 27001, and SOC 2, identifying critical gaps before attackers can exploit them. Beyond automated scanning, we perform manual penetration testing and social engineering simulations to test your human and technical defenses. You receive a prioritized remediation roadmap and an executive risk report to secure your business efficiently.",
+    "features": [
+      "Application Security Audit",
+      "Infrastructure Assessment",
+      "Cloud Security Review",
+      "Static & Dynamic Code Analysis",
+      "Compliance Gap Analysis",
+      "Social Engineering Assessment",
+      "Third-Party Risk Assessment",
+      "Executive Risk & Remediation Report"
+    ],
+    "benefits": [
+      "Proactive Threat Mitigation",
+      "Regulatory Compliance Alignment",
+      "Enhanced Customer Trust",
+      "Reduced Data Breach Costs",
+      "Secured Cloud Infrastructure",
+      "Actionable Remediation Roadmap"
+    ],
+    "metaTitle": "Cybersecurity Auditing Services | PakSoft",
+    "metaDescription": "Secure your business with expert cybersecurity auditing. We identify vulnerabilities, ensure compliance, and protect your data. Schedule your audit today!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Scoping & Planning",
+          "description": "We define the audit boundaries, target systems, and compliance requirements for your organization. This ensures a focused assessment that aligns perfectly with your business objectives and risk profile."
+        },
+        {
+          "step": 2,
+          "title": "Information Gathering",
+          "description": "Our team collects public and private intelligence about your infrastructure to map the attack surface. We identify active hosts, open ports, and running services to prepare for deep scanning."
+        },
+        {
+          "step": 3,
+          "title": "Vulnerability Scanning",
+          "description": "We utilize advanced automated tools to scan your applications, networks, and cloud environments for known weaknesses. This step quickly highlights outdated software, misconfigurations, and common security flaws."
+        },
+        {
+          "step": 4,
+          "title": "Manual Penetration Testing",
+          "description": "Our certified ethical hackers attempt to exploit identified vulnerabilities to verify their real-world impact. This manual effort eliminates false positives and uncovers complex logical flaws that automated tools miss."
+        },
+        {
+          "step": 5,
+          "title": "Reporting & Analysis",
+          "description": "We compile our findings into a comprehensive report detailing every vulnerability, its severity, and proof of concept. This document includes both high-level executive summaries and technical remediation steps."
+        },
+        {
+          "step": 6,
+          "title": "Remediation Support",
+          "description": "Our security engineers work closely with your development team to help patch the identified vulnerabilities. We provide clear guidance and perform re-testing to ensure all security gaps are successfully closed."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How often should we conduct a cybersecurity audit?",
+          "answer": "We recommend conducting a comprehensive cybersecurity audit at least once a year or after any major system changes. Regular audits ensure you stay protected against newly discovered threats and maintain compliance with industry standards."
+        },
+        {
+          "question": "What is the difference between vulnerability scanning and penetration testing?",
+          "answer": "Vulnerability scanning is an automated process that identifies potential weaknesses in your systems. Penetration testing is a manual, active attempt by ethical hackers to exploit those weaknesses to prove their real-world risk."
+        },
+        {
+          "question": "How long does a typical security audit take to complete?",
+          "answer": "A standard cybersecurity audit takes between two to four weeks depending on the scope of your infrastructure. This timeline includes scoping, active testing, manual analysis, and the delivery of the final report."
+        },
+        {
+          "question": "Will the security audit cause downtime for our active services?",
+          "answer": "We design our testing methodologies to minimize any impact on your production environments. Most active exploitation is performed in staging environments or during scheduled off-peak hours to prevent operational disruption."
+        },
+        {
+          "question": "Which compliance standards do your audits cover?",
+          "answer": "Our audits are mapped against major global standards including ISO 27001, SOC 2, GDPR, HIPAA, and PCI-DSS. We help you identify specific compliance gaps and provide actionable steps to achieve full certification."
+        },
+        {
+          "question": "What deliverables will we receive after the audit?",
+          "answer": "You will receive an executive risk report for stakeholders and a detailed technical report for developers. The technical report includes step-by-step remediation guides, proof-of-concept details, and severity ratings for each finding."
+        },
+        {
+          "question": "Do you help us fix the vulnerabilities you find?",
+          "answer": "Yes, we provide comprehensive post-audit support to guide your team through the remediation process. We offer technical consultations, code-level recommendations, and perform verification scans to ensure patches are correctly implemented."
+        },
+        {
+          "question": "How do you handle sensitive data during the audit?",
+          "answer": "We adhere to strict non-disclosure agreements and use secure, encrypted channels to handle all client data. Any sensitive information discovered during testing is handled according to industry-best data protection practices."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Burp Suite",
+          "icon": "burpsuite"
+        },
+        {
+          "name": "Nessus",
+          "icon": "nessus"
+        },
+        {
+          "name": "OWASP ZAP",
+          "icon": "owasp-zap"
+        },
+        {
+          "name": "Semgrep",
+          "icon": "semgrep"
+        },
+        {
+          "name": "ScoutSuite",
+          "icon": "scoutsuite"
+        },
+        {
+          "name": "Trivy",
+          "icon": "trivy"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Siber Güvenlik Denetimi",
+    "shortDescription": "Kapsamlı ve uzman liderliğindeki siber güvenlik denetimlerimizle, kötü niyetli aktörler istismar etmeden önce kritik güvenlik açıklarını, uyumluluk eksikliklerini ve altyapı risklerini belirleyin.",
+    "fullDescription": "PakSoft'un kapsamlı siber güvenlik denetim hizmetleriyle dijital varlıklarınızı koruyun ve müşteri güvenini sürdürün. Sertifikalı güvenlik uzmanlarımız, gizli açıkları belirlemek için web uygulamalarınızı, bulut altyapınızı ve kaynak kodlarınızı derinlemesine inceler. Sistemlerinizi OWASP Top 10, ISO 27001 ve SOC 2 gibi endüstri standartlarına göre değerlendirerek, saldırganlar sızmadan önce kritik açıkları kapatmanızı sağlıyoruz. Otomatik taramaların ötesinde, hem insani hem de teknik savunmanızı test etmek için manuel sızma testleri ve sosyal mühendislik simülasyonları gerçekleştiriyoruz. İşletmenizi verimli bir şekilde güvence altına almak için önceliklendirilmiş bir iyileştirme yol haritası ve yönetici risk raporu sunuyoruz.",
+    "features": [
+      "Uygulama Güvenliği Denetimi",
+      "Altyapı Değerlendirmesi",
+      "Bulut Güvenliği İncelemesi",
+      "Statik ve Dinamik Kod Analizi",
+      "Mevzuat Uyumluluk Analizi",
+      "Sosyal Mühendislik Değerlendirmesi",
+      "Üçüncü Taraf Risk Değerlendirmesi",
+      "Yönetici Risk ve İyileştirme Raporu"
+    ],
+    "benefits": [
+      "Proaktif Tehdit Azaltma",
+      "Yasal Uyumluluk Hizalaması",
+      "Artan Müşteri Güveni",
+      "Azaltılmış Veri İhlali Maliyetleri",
+      "Güvenli Bulut Altyapısı",
+      "Uygulanabilir İyileştirme Yol Haritası"
+    ],
+    "metaTitle": "Siber Güvenlik Denetimi Hizmetleri | PakSoft",
+    "metaDescription": "Uzman siber güvenlik denetimi ile işletmenizi güvenceye alın. Açıkları belirleyin, uyumluluk sağlayın ve verilerinizi koruyun. Hemen denetim planlayın!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Kapsam ve Planlama",
+          "description": "Kuruluşunuz için denetim sınırlarını, hedef sistemleri ve uyumluluk gereksinimlerini tanımlıyoruz. Bu, iş hedefleriniz ve risk profilinizle mükemmel şekilde uyumlu, odaklanmış bir değerlendirme sağlar."
+        },
+        {
+          "step": 2,
+          "title": "Bilgi Toplama",
+          "description": "Ekibimiz, saldırı yüzeyini haritalandırmak için altyapınız hakkında açık ve kapalı kaynaklı istihbarat toplar. Derinlemesine taramaya hazırlanmak için aktif ana bilgisayarları, açık portları ve çalışan servisleri belirleriz."
+        },
+        {
+          "step": 3,
+          "title": "Güvenlik Açığı Tarama",
+          "description": "Uygulamalarınızı, ağlarınızı ve bulut ortamlarınızı bilinen zayıflıklara karşı taramak için gelişmiş otomatik araçlar kullanıyoruz. Bu adım, güncel olmayan yazılımları, hatalı yapılandırmaları ve yaygın güvenlik açıklarını hızla ortaya çıkarır."
+        },
+        {
+          "step": 4,
+          "title": "Manuel Sızma Testi",
+          "description": "Sertifikalı etik hackerlarımız, gerçek dünyadaki etkilerini doğrulamak için belirlenen güvenlik açıklarını istismar etmeye çalışır. Bu manuel çalışma, yanlış pozitifleri ortadan kaldırır ve otomatik araçların kaçırdığı karmaşık mantıksal hataları ortaya çıkarır."
+        },
+        {
+          "step": 5,
+          "title": "Raporlama ve Analiz",
+          "description": "Bulgularımızı, her bir güvenlik açığını, ciddiyet derecesini ve kanıtını detaylandıran kapsamlı bir raporda birleştiriyoruz. Bu belge, hem üst düzey yönetici özetlerini hem de teknik iyileştirme adımlarını içerir."
+        },
+        {
+          "step": 6,
+          "title": "İyileştirme Desteği",
+          "description": "Güvenlik mühendislerimiz, belirlenen açıkları kapatmak için yazılım geliştirme ekibinizle yakından çalışır. Net rehberlik sağlıyor ve tüm güvenlik açıklarının başarıyla kapatıldığından emin olmak için yeniden testler gerçekleştiriyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Siber güvenlik denetimini ne sıklıkla yapmalıyız?",
+          "answer": "Kapsamlı bir siber güvenlik denetimini yılda en az bir kez veya büyük sistem değişikliklerinden sonra yapmanızı öneririz. Düzenli denetimler, yeni ortaya çıkan tehditlere karşı korunmanızı ve endüstri standartlarına uyumluluğunuzu sürdürmenizi sağlar."
+        },
+        {
+          "question": "Güvenlik açığı taraması ile sızma testi arasındaki fark nedir?",
+          "answer": "Güvenlik açığı taraması, sistemlerinizdeki potansiyel zayıflıkları belirleyen otomatik bir süreçtir. Sızma testi ise etik hackerların bu zayıflıkların gerçek dünyadaki riskini kanıtlamak için bunları istismar etmeye çalıştığı manuel ve aktif bir çabadır."
+        },
+        {
+          "question": "Tipik bir güvenlik denetimi ne kadar sürer?",
+          "answer": "Standart bir siber güvenlik denetimi, altyapınızın kapsamına bağlı olarak iki ila dört hafta arasında sürer. Bu süreye kapsam belirleme, aktif testler, manuel analizler ve nihai raporun sunulması dahildir."
+        },
+        {
+          "question": "Güvenlik denetimi aktif hizmetlerimizde kesintiye neden olur mu?",
+          "answer": "Test metodolojilerimizi, üretim ortamlarınız üzerindeki her türlü etkiyi en aza indirecek şekilde tasarlıyoruz. Operasyonel kesintileri önlemek için aktif istismarların çoğu hazırlık (staging) ortamlarında veya planlı mesai dışı saatlerde gerçekleştirilir."
+        },
+        {
+          "question": "Denetimleriniz hangi uyumluluk standartlarını kapsıyor?",
+          "answer": "Denetimlerimiz ISO 27001, SOC 2, GDPR, HIPAA ve PCI-DSS dahil olmak üzere başlıca küresel standartlarla eşleştirilmiştir. Belirli uyumluluk eksikliklerinizi belirlemenize ve tam sertifikasyon elde etmeniz için uygulanabilir adımlar sunmanıza yardımcı oluyoruz."
+        },
+        {
+          "question": "Denetimden sonra hangi çıktıları alacağız?",
+          "answer": "Paydaşlar için bir yönetici risk raporu ve geliştiriciler için ayrıntılı bir teknik rapor alacaksınız. Teknik rapor, her bulgu için adım adım iyileştirme kılavuzlarını, kanıt detaylarını ve önem derecelerini içerir."
+        },
+        {
+          "question": "Bulduğunuz güvenlik açıklarını düzeltmemize yardımcı oluyor musunuz?",
+          "answer": "Evet, iyileştirme sürecinde ekibinize rehberlik etmek için kapsamlı denetim sonrası destek sağlıyoruz. Teknik danışmanlık, kod düzeyinde öneriler sunuyor ve yamaların doğru şekilde uygulandığından emin olmak için doğrulama taramaları yapıyoruz."
+        },
+        {
+          "question": "Denetim sırasında hassas verileri nasıl işliyorsunuz?",
+          "answer": "Sıkı gizlilik sözleşmelerine bağlı kalıyor ve tüm müşteri verilerini işlemek için güvenli, şifreli kanallar kullanıyoruz. Test sırasında keşfedilen tüm hassas bilgiler, endüstri lideri veri koruma uygulamalarına uygun olarak işlenir."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Burp Suite",
+          "icon": "burpsuite"
+        },
+        {
+          "name": "Nessus",
+          "icon": "nessus"
+        },
+        {
+          "name": "OWASP ZAP",
+          "icon": "owasp-zap"
+        },
+        {
+          "name": "Semgrep",
+          "icon": "semgrep"
+        },
+        {
+          "name": "ScoutSuite",
+          "icon": "scoutsuite"
+        },
+        {
+          "name": "Trivy",
+          "icon": "trivy"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Cybersecurity-Auditierung",
+    "shortDescription": "Identifizieren Sie kritische Sicherheitslücken, Compliance-Defizite und Infrastrukturrisiken mit unseren umfassenden, von Experten geleiteten Cybersecurity-Audits, bevor böswillige Akteure sie ausnutzen.",
+    "fullDescription": "Schützen Sie Ihre digitalen Assets und wahren Sie das Vertrauen Ihrer Kunden mit den umfassenden Cybersecurity-Audit-Diensten von PakSoft. Unsere zertifizierten Sicherheitsexperten führen tiefgehende Analysen Ihrer Webanwendungen, Cloud-Infrastruktur und Quellcodes durch, um versteckte Schwachstellen aufzudecken. Wir bewerten Ihre Systeme nach Branchenstandards wie OWASP Top 10, ISO 27001 und SOC 2, um kritische Lücken zu schließen, bevor Angreifer sie ausnutzen können. Über automatisierte Scans hinaus führen wir manuelle Penetrationstests und Social-Engineering-Simulationen durch, um Ihre menschlichen und technischen Abwehrmechanismen zu prüfen. Sie erhalten einen priorisierten Sanierungsfahrplan und einen Executive-Risikobericht zur effizienten Absicherung Ihres Unternehmens.",
+    "features": [
+      "Anwendungssicherheits-Audit",
+      "Infrastrukturbewertung",
+      "Cloud-Sicherheitsüberprüfung",
+      "Statische & dynamische Codeanalyse",
+      "Compliance-Gap-Analyse",
+      "Social-Engineering-Bewertung",
+      "Drittanbieter-Risikobewertung",
+      "Executive Risiko- & Sanierungsbericht"
+    ],
+    "benefits": [
+      "Proaktive Bedrohungsminimierung",
+      "Einhaltung gesetzlicher Vorschriften",
+      "Gesteigertes Kundenvertrauen",
+      "Reduzierte Kosten bei Datenpannen",
+      "Gesicherte Cloud-Infrastruktur",
+      "Praxisnaher Sanierungsfahrplan"
+    ],
+    "metaTitle": "Cybersecurity-Auditierung | PakSoft",
+    "metaDescription": "Sichern Sie Ihr Unternehmen mit professionellen Cybersecurity-Audits. Wir finden Schwachstellen und schützen Ihre Daten. Jetzt Audit vereinbaren!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Abgrenzung & Planung",
+          "description": "Wir definieren die Audit-Grenzen, Zielsysteme und Compliance-Anforderungen für Ihr Unternehmen. Dies gewährleistet eine zielgerichtete Bewertung, die perfekt auf Ihre Geschäftsziele und Ihr Risikoprofil abgestimmt ist."
+        },
+        {
+          "step": 2,
+          "title": "Informationsbeschaffung",
+          "description": "Unser Team sammelt öffentliche und private Informationen über Ihre Infrastruktur, um die Angriffsfläche zu kartieren. Wir identifizieren aktive Hosts, offene Ports und laufende Dienste zur Vorbereitung auf tiefe Scans."
+        },
+        {
+          "step": 3,
+          "title": "Schwachstellen-Scanning",
+          "description": "Wir setzen fortschrittliche automatisierte Tools ein, um Ihre Anwendungen, Netzwerke und Cloud-Umgebungen auf bekannte Schwachstellen zu scannen. Dieser Schritt zeigt schnell veraltete Software, Fehlkonfigurationen und häufige Sicherheitsmängel auf."
+        },
+        {
+          "step": 4,
+          "title": "Manuelle Penetrationstests",
+          "description": "Unsere zertifizierten Ethical Hacker versuchen, identifizierte Schwachstellen auszunutzen, um deren reale Auswirkungen zu überprüfen. Dieser manuelle Aufwand eliminiert Fehlalarme und deckt komplexe logische Fehler auf, die automatisierte Tools übersehen."
+        },
+        {
+          "step": 5,
+          "title": "Berichterstattung & Analyse",
+          "description": "Wir fassen unsere Ergebnisse in einem umfassenden Bericht zusammen, der jede Schwachstelle, ihren Schweregrad und den Proof of Concept detailliert beschreibt. Dieses Dokument enthält sowohl Zusammenfassungen für die Geschäftsführung als auch technische Schritte zur Behebung."
+        },
+        {
+          "step": 6,
+          "title": "Unterstützung bei der Behebung",
+          "description": "Unsere Sicherheitsingenieure arbeiten eng mit Ihrem Entwicklungsteam zusammen, um die identifizierten Schwachstellen zu beheben. Wir bieten klare Anleitungen und führen erneute Tests durch, um sicherzustellen, dass alle Sicherheitslücken erfolgreich geschlossen wurden."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie oft sollten wir ein Cybersecurity-Audit durchführen?",
+          "answer": "Wir empfehlen, mindestens einmal im Jahr oder nach größeren Systemänderungen ein umfassendes Cybersecurity-Audit durchzuführen. Regelmäßige Audits stellen sicher, dass Sie vor neu entdeckten Bedrohungen geschützt bleiben und Branchenstandards einhalten."
+        },
+        {
+          "question": "Was ist der Unterschied zwischen Schwachstellen-Scanning und Penetrationstests?",
+          "answer": "Schwachstellen-Scanning ist ein automatisierter Prozess, der potenzielle Schwachstellen in Ihren Systemen identifiziert. Ein Penetrationstest ist ein manueller, aktiver Versuch von Ethical Hackern, diese Schwachstellen auszunutzen, um das reale Risiko nachzuweisen."
+        },
+        {
+          "question": "Wie lange dauert ein typisches Sicherheitsaudit?",
+          "answer": "Ein Standard-Cybersecurity-Audit dauert je nach Umfang Ihrer Infrastruktur zwischen zwei und vier Wochen. Dieser Zeitrahmen umfasst die Abgrenzung, aktive Tests, manuelle Analysen und die Bereitstellung des Abschlussberichts."
+        },
+        {
+          "question": "Verursacht das Sicherheitsaudit Ausfallzeiten für unsere aktiven Dienste?",
+          "answer": "Wir konzipieren unsere Testmethoden so, dass die Auswirkungen auf Ihre Produktionsumgebungen minimiert werden. Die meisten aktiven Ausnutzungen werden in Staging-Umgebungen oder außerhalb der Hauptgeschäftszeiten durchgeführt, um Betriebsunterbrechungen zu vermeiden."
+        },
+        {
+          "question": "Welche Compliance-Standards decken Ihre Audits ab?",
+          "answer": "Unsere Audits sind an wichtigen globalen Standards wie ISO 27001, SOC 2, DSGVO, HIPAA und PCI-DSS ausgerichtet. Wir helfen Ihnen, spezifische Compliance-Lücken zu identifizieren und bieten konkrete Schritte zur vollständigen Zertifizierung."
+        },
+        {
+          "question": "Welche Ergebnisse erhalten wir nach dem Audit?",
+          "answer": "Sie erhalten einen Executive-Risikobericht für Stakeholder und einen detaillierten technischen Bericht für Entwickler. Der technische Bericht enthält Schritt-für-Schritt-Anleitungen zur Behebung, Proof-of-Concept-Details und Schweregrade für jeden Befund."
+        },
+        {
+          "question": "Helfen Sie uns bei der Behebung der gefundenen Schwachstellen?",
+          "answer": "Ja, wir bieten umfassende Unterstützung nach dem Audit, um Ihr Team durch den Behebungsprozess zu führen. Wir bieten technische Beratung, Empfehlungen auf Code-Ebene und führen Verifizierungsscans durch, um die korrekte Implementierung der Patches sicherzustellen."
+        },
+        {
+          "question": "Wie gehen Sie während des Audits mit sensiblen Daten um?",
+          "answer": "Wir halten uns an strenge Geheimhaltungsvereinbarungen und nutzen sichere, verschlüsselte Kanäle für alle Kundendaten. Alle während der Tests entdeckten sensiblen Informationen werden gemäß den branchenweit besten Datenschutzpraktiken behandelt."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Burp Suite",
+          "icon": "burpsuite"
+        },
+        {
+          "name": "Nessus",
+          "icon": "nessus"
+        },
+        {
+          "name": "OWASP ZAP",
+          "icon": "owasp-zap"
+        },
+        {
+          "name": "Semgrep",
+          "icon": "semgrep"
+        },
+        {
+          "name": "ScoutSuite",
+          "icon": "scoutsuite"
+        },
+        {
+          "name": "Trivy",
+          "icon": "trivy"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "سائبر سیکیورٹی آڈیٹنگ",
+    "shortDescription": "ہمارے جامع اور ماہرانہ سائبر سیکیورٹی آڈٹ کے ذریعے سیکیورٹی کی سنگین خامیوں، تعمیل کے خلا اور انفراسٹرکچر کے خطرات کو حملہ آوروں کے فائدہ اٹھانے سے پہلے ہی شناخت کریں۔",
+    "fullDescription": "PakSoft کی جامع سائبر سیکیورٹی آڈیٹنگ سروسز کے ساتھ اپنے ڈیجیٹل اثاثوں کی حفاظت کریں اور کسٹمر کے اعتماد کو برقرار رکھیں۔ ہمارے تصدیق شدہ سیکیورٹی ماہرین پوشیدہ خطرات کی نشاندہی کرنے کے لیے آپ کی ویب ایپلیکیشنز، کلاؤڈ انفراسٹرکچر، اور سورس کوڈ کا گہرائی سے جائزہ لیتے ہیں۔ ہم آپ کے سسٹمز کا OWASP Top 10، ISO 27001، اور SOC 2 جیسے صنعتی معیارات کے مطابق جائزہ لیتے ہیں تاکہ حملہ آوروں کے فائدہ اٹھانے سے پہلے اہم خامیوں کو دور کیا جا سکے۔ خودکار اسکیننگ کے علاوہ، ہم آپ کے انسانی اور تکنیکی دفاع کو جانچنے کے لیے مینوئل پینیٹریشن ٹیسٹنگ اور سوشل انجینئرنگ کے تجربات بھی کرتے ہیں۔ آپ کو اپنے کاروبار کو مؤثر طریقے سے محفوظ بنانے کے لیے ترجیحی بنیادوں پر اصلاحی روڈ میپ اور ایگزیکٹو رسک رپورٹ فراہم کی جاتی ہے۔",
+    "features": [
+      "ایپلی کیشن سیکیورٹی آڈٹ",
+      "انفراسٹرکچر کی تشخیص",
+      "کلاؤڈ سیکیورٹی کا جائزہ",
+      "سٹیٹک اور ڈائنامک کوڈ کا تجزیہ",
+      "تعمیل کے خلا کا تجزیہ",
+      "سوشل انجینئرنگ کی تشخیص",
+      "تھرڈ پارٹی رسک اسیسمنٹ",
+      "ایگزیکٹو رسک اور اصلاحی رپورٹ"
+    ],
+    "benefits": [
+      "فعال خطرات کا تدارک",
+      "ریگولیٹری تعمیل کی ہم آہنگی",
+      "صافرین کے اعتماد میں اضافہ",
+      "ڈیٹا کی خلاف ورزی کے اخراجات میں کمی",
+      "محفوظ کلاؤڈ انفراسٹرکچر",
+      "عملی اصلاحی روڈ میپ"
+    ],
+    "metaTitle": "سائبر سیکیورٹی آڈیٹنگ سروسز | PakSoft",
+    "metaDescription": "ماہر سائبر سیکیورٹی آڈٹ کے ساتھ اپنے کاروبار کو محفوظ بنائیں۔ ہم خامیوں کی نشاندہی کرتے ہیں اور آپ کے ڈیٹا کی حفاظت کرتے ہیں۔ آج ہی آڈٹ شیڈول کریں!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "حدود اور منصوبہ بندی",
+          "description": "ہم آپ کی تنظیم کے لیے آڈٹ کی حدود، ہدف سسٹمز اور تعمیل کی ضروریات کی وضاحت کرتے ہیں۔ یہ ایک مرکوز تشخیص کو یقینی بناتا ہے جو آپ کے کاروباری مقاصد اور رسک پروفائل کے ساتھ بالکل ہم آہنگ ہوتا۔"
+        },
+        {
+          "step": 2,
+          "title": "معلومات کا حصول",
+          "description": "ہماری ٹیم حملے کی سطح کا نقشہ بنانے کے لیے آپ کے انفراسٹرکچر کے بارے میں عوامی اور نجی معلومات اکٹھی کرتی ہے۔ ہم گہری اسکیننگ کی تیاری کے لیے فعال ہوسٹس، اوپن پورٹس اور چلنے والی سروسز کی شناخت کرتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "خامیوں کی اسکیننگ",
+          "description": "ہم آپ کی ایپلیکیشنز، نیٹ ورکس اور کلاؤڈ ماحول کو معلوم کمزوریوں کے لیے اسکین کرنے کے لیے جدید خودکار ٹولز کا استعمال کرتے ہیں۔ یہ مرحلہ پرانے سافٹ ویئر، غلط کنفیگریشنز اور عام سیکیورٹی خامیوں کو تیزی سے اجاگر کرتا ہے۔"
+        },
+        {
+          "step": 4,
+          "title": "مینوئل پینیٹریشن ٹیسٹنگ",
+          "description": "ہمارے تصدیق شدہ اخلاقی ہیکرز معلوم خامیوں کے حقیقی دنیا کے اثرات کی تصدیق کے لیے ان کا فائدہ اٹھانے کی کوشش کرتے ہیں۔ یہ مینوئل کوشش غلط نتائج کو ختم کرتی ہے اور پیچیدہ منطقی خامیوں کو بے نقاب کرتی ہے جنہیں خودکار ٹولز چھوڑ دیتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "رپورٹنگ اور تجزیہ",
+          "description": "ہم اپنے نتائج کو ایک جامع رپورٹ میں مرتب کرتے ہیں جس میں ہر خامی، اس کی سنگینی اور ثبوت کی تفصیل ہوتی ہے۔ اس دستاویز میں اعلیٰ سطحی ایگزیکٹو خلاصے اور تکنیکی اصلاحی اقدامات دونوں شامل ہوتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "اصلاحی مدد",
+          "description": "ہمارے سیکیورٹی انجینئرز شناخت شدہ خامیوں کو دور کرنے کے لیے آپ کی ڈویلپمنٹ ٹیم کے ساتھ مل کر کام کرتے ہیں۔ ہم واضح رہنمائی فراہم کرتے ہیں اور دوبارہ ٹیسٹنگ کرتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ تمام سیکیورٹی خلا کامیابی سے بند ہو گئے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "ہمیں کتنی بار سائبر سیکیورٹی آڈٹ کروانا چاہیے؟",
+          "answer": "ہم سال میں کم از کم ایک بار یا سسٹم میں کسی بڑی تبدیلی کے بعد جامع سائبر سیکیورٹی آڈٹ کروانے کی سفارش کرتے ہیں۔ باقاعدہ آڈٹ اس بات کو یقینی بناتے ہیں کہ آپ نئے خطرات سے محفوظ رہیں اور صنعتی معیارات پر پورا اتریں۔"
+        },
+        {
+          "question": "خامیوں کی اسکیننگ اور پینیٹریشن ٹیسٹنگ میں کیا فرق ہے؟",
+          "answer": "خامیوں کی اسکیننگ ایک خودکار عمل ہے جو آپ کے سسٹمز میں ممکنہ کمزوریوں کی نشاندہی کرتا ہے۔ پینیٹریشن ٹیسٹنگ اخلاقی ہیکرز کی طرف سے ان کمزوریوں کا فائدہ اٹھانے کی ایک مینوئل اور فعال کوشش ہے تاکہ ان کے حقیقی خطرے کو ثابت کیا جا سکے۔"
+        },
+        {
+          "question": "ایک عام سیکیورٹی آڈٹ مکمل ہونے میں کتنا وقت لگتا ہے؟",
+          "answer": "ایک معیاری سائبر سیکیورٹی آڈٹ آپ کے انفراسٹرکچر کی حدود کے لحاظ سے دو سے چار ہفتے لیتا ہے۔ اس ٹائم لائن میں منصوبہ بندی، فعال ٹیسٹنگ، مینوئل تجزیہ، اور حتمی رپورٹ کی فراہمی شامل ہے۔"
+        },
+        {
+          "question": "کیا سیکیورٹی آڈٹ ہماری فعال سروسز کے لیے ڈاؤن ٹائم کا سبب بنے گا؟",
+          "answer": "ہم اپنی ٹیسٹنگ کے طریقوں کو اس طرح ڈیزائن کرتے ہیں کہ آپ کے پروڈکشن ماحول پر اثرات کم سے کم ہوں۔ زیادہ تر فعال ٹیسٹنگ اسٹیجنگ ماحول میں یا کام کے اوقات کے بعد کی جاتی ہے تاکہ آپریشنل خلل سے بچا جا سکے۔"
+        },
+        {
+          "question": "آپ کے آڈٹ کن تعمیل کے معیارات کا احاطہ کرتے ہیں؟",
+          "answer": "ہمارے آڈٹ بڑے عالمی معیارات بشمول ISO 27001، SOC 2، GDPR، HIPAA، اور PCI-DSS کے مطابق کیے جاتے ہیں۔ ہم مخصوص تعمیل کے خلا کی نشاندہی کرنے اور مکمل سرٹیفیکیشن حاصل کرنے کے لیے عملی اقدامات فراہم کرنے میں مدد کرتے ہیں۔"
+        },
+        {
+          "question": "آڈٹ کے بعد ہمیں کیا نتائج حاصل ہوں گے؟",
+          "answer": "آپ کو اسٹیک ہولڈرز کے لیے ایک ایگزیکٹو رسک رپورٹ اور ڈویلپرز کے لیے ایک تفصیلی تکنیکی رپورٹ ملے گی۔ تکنیکی رپورٹ میں ہر تلاش کے لیے مرحلہ وار اصلاحی گائیڈز، ثبوت کی تفصیلات اور سنگینی کی درجہ بندی شامل ہوتی ہے۔"
+        },
+        {
+          "question": "کیا آپ تلاش کی جانے والی خامیوں کو ٹھیک کرنے میں ہماری مدد کرتے ہیں؟",
+          "answer": "جی ہاں، ہم اصلاحی عمل میں آپ کی ٹیم کی رہنمائی کے لیے آڈٹ کے بعد جامع مدد فراہم کرتے ہیں۔ ہم تکنیکی مشاورت، کوڈ کی سطح پر سفارشات پیش کرتے ہیں اور تصدیقی اسکینز کرتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ پیچز درست طریقے سے لاگو ہو گئے ہیں۔"
+        },
+        {
+          "question": "آڈٹ کے دوران آپ حساس ڈیٹا کو کس طرح سنبھالتے ہیں؟",
+          "answer": "ہم سخت رازداری کے معاہدوں پر عمل کرتے ہیں اور کلائنٹ کے تمام ڈیٹا کو سنبھالنے کے لیے محفوظ، انکرپٹڈ چینلز کا استعمال کرتے ہیں۔ ٹیسٹنگ کے دوران دریافت ہونے والی کسی بھی حساس معلومات کو ڈیٹا پروٹیکشن کے بہترین طریقوں کے مطابق سنبھالا جاتا ہے۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Burp Suite",
+          "icon": "burpsuite"
+        },
+        {
+          "name": "Nessus",
+          "icon": "nessus"
+        },
+        {
+          "name": "OWASP ZAP",
+          "icon": "owasp-zap"
+        },
+        {
+          "name": "Semgrep",
+          "icon": "semgrep"
+        },
+        {
+          "name": "ScoutSuite",
+          "icon": "scoutsuite"
+        },
+        {
+          "name": "Trivy",
+          "icon": "trivy"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تدقيق الأمن السيبراني",
+    "shortDescription": "حدد الثغرات الأمنية الحرجة، وفجوات الامتثال، ومخاطر البنية التحتية قبل أن يستغلها المهاجمون من خلال خدمات تدقيق الأمن السيبراني الشاملة التي يقودها خبراؤنا المعتمدون.",
+    "fullDescription": "احمِ أصولك الرقمية وحافظ على ثقة عملائك من خلال خدمات تدقيق الأمن السيبراني الشاملة من PakSoft. يقوم خبراء الأمن المعتمدون لدينا بإجراء تقييمات عميقة لتطبيقات الويب والبنية التحتية السحابية والتعليمات البرمجية المصدرية لتحديد الثغرات المخفية. نقوم بتقييم أنظمتك وفقًا لمعايير الصناعة مثل OWASP Top 10 و ISO 27001 و SOC 2، لتحديد الفجوات الحرجة قبل أن يتمكن المهاجمون من استغلالها. بالإضافة إلى الفحص الآلي، نقوم بإجراء اختبارات اختراق يدوية ومحاكاة للهندسة الاجتماعية لاختبار دفاعاتك البشرية والتقنية. ستتلقى خارطة طريق ذات أولويات للإصلاح وتقرير مخاطر تنفيذي لتأمين عملك بكفاءة عالية.",
+    "features": [
+      "تدقيق أمن التطبيقات",
+      "تقييم البنية التحتية",
+      "مراجعة الأمن السحابي",
+      "تحليل الأكواد الثابت والديناميكي",
+      "تحليل فجوات الامتثال",
+      "تقييم الهندسة الاجتماعية",
+      "تقييم مخاطر الطرف الثالث",
+      "تقرير المخاطر والإصلاح التنفيذي"
+    ],
+    "benefits": [
+      "التخفيف الاستباقي للتهديدات",
+      "التوافق مع الامتثال التنظيمي",
+      "تعزيز ثقة العملاء",
+      "تقليل تكاليف اختراق البيانات",
+      "بنية تحتية سحابية آمنة",
+      "خارطة طريق قابلة للتنفيذ للإصلاح"
+    ],
+    "metaTitle": "خدمات تدقيق الأمن السيبراني | PakSoft",
+    "metaDescription": "أمن عملك من خلال خدمات تدقيق الأمن السيبراني الاحترافية من PakSoft. نحدد الثغرات ونضمن الامتثال ونحمي بياناتك الحساسة بالكامل. احجز موعد التدقيق اليوم!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تحديد النطاق والتخطيط",
+          "description": "نحدد حدود التدقيق والأنظمة المستهدفة ومتطلبات الامتثال لمؤسستك. يضمن ذلك إجراء تقييم مركز يتوافق تمامًا مع أهداف عملك وملف المخاطر الخاص بك."
+        },
+        {
+          "step": 2,
+          "title": "جمع المعلومات",
+          "description": "يجمع فريقنا معلومات استخباراتية عامة وخاصة حول بنيتك التحتية لرسم خريطة لسطح الهجوم. نحدد المضيفين النشطين والمنافذ المفتوحة والخدمات قيد التشغيل للتحضير للفحص العميق."
+        },
+        {
+          "step": 3,
+          "title": "فحص الثغرات الأمنية",
+          "description": "نستخدم أدوات آلية متقدمة لفحص تطبيقاتك وشبكاتك وبيئاتك السحابية بحثًا عن نقاط الضعف المعروفة. تسلط هذه الخطوة الضوء بسرعة على البرامج القديمة والتكوينات الخاطئة والعيوب الأمنية الشائعة."
+        },
+        {
+          "step": 4,
+          "title": "اختبار الاختراق اليدوي",
+          "description": "يحاول المتسللون الأخلاقيون المعتمدون لدينا استغلال الثغرات الأمنية المحددة للتحقق من تأثيرها الفعلي. يقضي هذا الجهد اليدوي على النتائج الإيجابية الكاذبة ويكشف عن العيوب المنطقية المعقدة التي تغفلها الأدوات الآلية."
+        },
+        {
+          "step": 5,
+          "title": "إعداد التقارير والتحليل",
+          "description": "نجمع نتائجنا في تقرير شامل يوضح بالتفصيل كل ثغرة أمنية وشدتها وإثبات المفهوم الخاص بها. تتضمن هذه الوثيقة ملخصات تنفيذية رفيعة المستوى وخطوات إصلاح تقنية مفصلة."
+        },
+        {
+          "step": 6,
+          "title": "دعم معالجة الثغرات",
+          "description": "يعمل مهندسو الأمن لدينا بشكل وثيق مع فريق التطوير لديك للمساعدة في سد الثغرات الأمنية المحددة. نقدم إرشادات واضحة ونجري اختبارات إعادة الفحص للتأكد من إغلاق جميع الفجوات الأمنية بنجاح."
+        }
+      ],
+      "faq": [
+        {
+          "question": "كم مرة يجب أن نجري تدقيقًا للأمن السيبراني؟",
+          "answer": "نوصي بإجراء تدقيق شامل للأمن السيبراني مرة واحدة على الأقل سنويًا أو بعد أي تغييرات رئيسية في النظام. تضمن عمليات التدقيق المنتظمة بقاءك محميًا ضد التهديدات المكتشفة حديثًا والحفاظ على الامتثال لمعايير الصناعة."
+        },
+        {
+          "question": "ما الفرق بين فحص الثغرات الأمنية واختبار الاختراق؟",
+          "answer": "فحص الثغرات الأمنية هو عملية آلية تحدد نقاط الضعف المحتملة في أنظمتك. أما اختبار الاختراق فهو محاولة يدوية ونشطة من قبل متسللين أخلاقيين لاستغلال نقاط الضعف هذه لإثبات مخاطرها الفعلية."
+        },
+        {
+          "question": "كم من الوقت يستغرق تدقيق الأمن النموذجي؟",
+          "answer": "يستغرق تدقيق الأمن السيبراني القياسي ما بين أسبوعين إلى أربعة أسابيع اعتمادًا على نطاق بنيتك التحتية. يشمل هذا الجدول الزمني تحديد النطاق، والاختبار النشط، والتحليل اليدوي، وتسليم التقرير النهائي."
+        },
+        {
+          "question": "هل سيؤدي التدقيق الأمني إلى توقف خدماتنا النشطة؟",
+          "answer": "نحن نصمم منهجيات الاختبار الخاصة بنا لتقليل أي تأثير على بيئات الإنتاج الخاصة بك. يتم إجراء معظم عمليات الاستغلال النشطة في بيئات الاختبار (staging) أو خلال ساعات خارج أوقات الذروة المخطط لها لتجنب أي انقطاع تشغيلي."
+        },
+        {
+          "question": "ما هي معايير الامتثال التي يغطيها تدقيقكم؟",
+          "answer": "تتوافق عمليات التدقيق لدينا مع المعايير العالمية الكبرى بما في ذلك ISO 27001 و SOC 2 و GDPR و HIPAA و PCI-DSS. نساعدك في تحديد فجوات امتثال محددة ونقدم خطوات قابلة للتنفيذ للحصول على الشهادة الكاملة."
+        },
+        {
+          "question": "ما هي المخرجات التي سنحصل عليها بعد التدقيق؟",
+          "answer": "ستتلقى تقرير مخاطر تنفيذي لأصحاب المصلحة وتقريرًا فنيًا مفصلاً للمطورين. يتضمن التقرير الفني أدلة إصلاح خطوة بخطوة، وتفاصيل إثبات المفهوم، وتصنيفات الشدة لكل نتيجة."
+        },
+        {
+          "question": "هل تساعدوننا في إصلاح الثغرات الأمنية التي تجدونها؟",
+          "answer": "نعم، نحن نقدم دعمًا شاملاً بعد التدقيق لتوجيه فريقك خلال عملية الإصلاح. نقدم استشارات فنية وتوصيات على مستوى الكود ونجري عمليات فحص للتحقق لضمان تنفيذ الحلول بشكل صحيح."
+        },
+        {
+          "question": "كيف تتعاملون مع البيانات الحساسة أثناء التدقيق؟",
+          "answer": "نحن نلتزم باتفاقيات عدم إفشاء صارمة ونستخدم قنوات آمنة ومشفرة للتعامل مع جميع بيانات العملاء. يتم التعامل مع أي معلومات حساسة يتم اكتشافها أثناء الاختبار وفقًا لأفضل ممارسات حماية البيانات في الصناعة."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Burp Suite",
+          "icon": "burpsuite"
+        },
+        {
+          "name": "Nessus",
+          "icon": "nessus"
+        },
+        {
+          "name": "OWASP ZAP",
+          "icon": "owasp-zap"
+        },
+        {
+          "name": "Semgrep",
+          "icon": "semgrep"
+        },
+        {
+          "name": "ScoutSuite",
+          "icon": "scoutsuite"
+        },
+        {
+          "name": "Trivy",
+          "icon": "trivy"
+        }
+      ]
+    }
+  }
+}

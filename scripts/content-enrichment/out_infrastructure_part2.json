@@ -1,0 +1,2410 @@
+{
+  "cloud-management": {
+    "en": {
+      "name": "Cloud Management & Cost Optimization",
+      "shortDescription": "Maximize your cloud ROI with expert multi-cloud management, continuous cost optimization, automated scaling, and robust security compliance designed to keep your enterprise workloads running efficiently.",
+      "fullDescription": "Take complete control of your cloud infrastructure with PakSoft's comprehensive Cloud Management services. We help businesses navigate complex multi-cloud environments across AWS, Azure, and Google Cloud. Our certified engineers implement continuous resource right-sizing, automated scaling policies, and real-time performance monitoring to eliminate waste and reduce monthly cloud spend by up to 30-40%. We establish robust security baselines, automate compliance audits, and provide 24/7 incident response. By aligning your cloud architecture with industry best practices, we ensure high availability, seamless disaster recovery, and predictable operational costs, allowing your internal teams to focus entirely on core product innovation.",
+      "features": [
+        "Multi-Cloud Governance",
+        "Automated Cost Optimization",
+        "Real-Time Performance Monitoring",
+        "Resource Right-Sizing",
+        "Automated Compliance Auditing",
+        "Disaster Recovery Planning",
+        "24/7 Incident Response",
+        "Cloud Migration Strategy"
+      ],
+      "benefits": [
+        "Reduce cloud spend by 30-40%",
+        "Ensure 99.99% infrastructure uptime",
+        "Achieve continuous regulatory compliance",
+        "Eliminate resource waste automatically",
+        "Accelerate deployment cycles safely",
+        "Gain complete cost transparency"
+      ],
+      "metaTitle": "Cloud Management & Cost Optimization | PakSoft",
+      "metaDescription": "Optimize your cloud infrastructure, reduce monthly spend by up to 40%, and ensure 24/7 security compliance. Contact PakSoft for expert cloud management.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Discovery & Audit",
+            "description": "We conduct a comprehensive audit of your existing cloud infrastructure, resource utilization, and billing patterns. This initial assessment identifies immediate cost-saving opportunities and security vulnerabilities."
+          },
+          {
+            "step": 2,
+            "title": "Strategy & Architecture",
+            "description": "Our team designs a tailored cloud management strategy aligning with your business goals and performance requirements. We define clear governance policies, resource tagging structures, and optimization roadmaps."
+          },
+          {
+            "step": 3,
+            "title": "Cost Optimization",
+            "description": "We implement automated right-sizing, terminate idle resources, and configure reserved instances or savings plans. This step immediately slashes unnecessary operational expenses without compromising application performance."
+          },
+          {
+            "step": 4,
+            "title": "Security & Compliance",
+            "description": "We deploy advanced security monitoring tools and configure automated compliance checks against industry standards. Your infrastructure is hardened against threats while maintaining continuous audit readiness."
+          },
+          {
+            "step": 5,
+            "title": "Monitoring & Automation",
+            "description": "We set up real-time dashboards using Datadog and establish automated scaling policies for dynamic workloads. This ensures your systems automatically adapt to traffic spikes while maintaining optimal efficiency."
+          },
+          {
+            "step": 6,
+            "title": "Continuous Management",
+            "description": "Our engineers provide ongoing maintenance, monthly cost reviews, and proactive performance tuning. We continuously adapt your cloud environment to support new business initiatives and technological advancements."
+          }
+        ],
+        "faq": [
+          {
+            "question": "How much can we realistically save on our monthly cloud bill?",
+            "answer": "Most organizations save between 20% and 40% within the first three months of optimization. We achieve this by identifying idle resources, right-sizing over-provisioned instances, and leveraging strategic commitment discounts."
+          },
+          {
+            "question": "Do you support multi-cloud environments?",
+            "answer": "Yes, we specialize in managing hybrid and multi-cloud architectures across AWS, Azure, and Google Cloud. We use unified management tools like Terraform and Datadog to provide a single pane of glass for your entire infrastructure."
+          },
+          {
+            "question": "How do you ensure our cloud infrastructure remains secure?",
+            "answer": "We implement continuous security posture management (CSPM) and automated compliance scanning. Our team configures strict IAM policies, network segmentation, and real-time threat detection to mitigate risks proactively."
+          },
+          {
+            "question": "What tools do you use for cloud monitoring and management?",
+            "answer": "We leverage industry-leading tools including Datadog, CloudHealth, Prometheus, and native cloud solutions like AWS CloudWatch. This allows us to gather deep telemetry and automate resource scaling efficiently."
+          },
+          {
+            "question": "Will optimizing our cloud resources cause any downtime?",
+            "answer": "No, all optimization and right-sizing activities are planned and executed with zero downtime. We utilize blue-green deployments and rolling updates to ensure your services remain fully operational throughout the process."
+          },
+          {
+            "question": "How do you handle disaster recovery and high availability?",
+            "answer": "We design multi-region, highly available architectures with automated failover capabilities. Regular disaster recovery drills and automated backup strategies are established to guarantee a low Recovery Point Objective (RPO)."
+          },
+          {
+            "question": "Can you help us migrate from on-premises to the cloud?",
+            "answer": "Absolutely, we provide end-to-end migration services from initial assessment to final execution. We use proven migration frameworks to minimize risk, control costs, and ensure a seamless transition."
+          },
+          {
+            "question": "What is your response time for critical infrastructure incidents?",
+            "answer": "We offer 24/7/365 monitoring with guaranteed response times under 15 minutes for critical (Severity 1) incidents. Our dedicated site reliability engineers are always on standby to resolve issues immediately."
+          }
+        ],
+        "technologies": [
+          {
+            "name": "AWS",
+            "icon": "aws"
+          },
+          {
+            "name": "Azure",
+            "icon": "azure"
+          },
+          {
+            "name": "Google Cloud",
+            "icon": "google-cloud"
+          },
+          {
+            "name": "Terraform",
+            "icon": "terraform"
+          },
+          {
+            "name": "Datadog",
+            "icon": "datadog"
+          },
+          {
+            "name": "Prometheus",
+            "icon": "prometheus"
+          }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Bulut Yönetimi ve Maliyet Optimizasyonu",
+      "shortDescription": "Modern kurumsal iş yükleriniz için tasarlanmış uzman çoklu bulut yönetimi, sürekli maliyet optimizasyonu ve güçlü güvenlik uyumluluğu ile bulut yatırım getirinizi en üst düzeye çıkarın.",
+      "fullDescription": "PakSoft'un kapsamlı Bulut Yönetimi hizmetleriyle bulut altyapınızın kontrolünü tamamen elinize alın. AWS, Azure ve Google Cloud üzerindeki karmaşık çoklu bulut ortamlarını yönetmenize yardımcı oluyoruz. Sertifikalı mühendislerimiz, kaynak israfını ortadan kaldırmak ve aylık bulut harcamalarınızı %30-40 oranında azaltmak için sürekli kaynak ölçeklendirme, otomatik ölçeklendirme politikaları ve gerçek zamanlı performans izleme uygular. Güçlü güvenlik temelleri oluşturuyor, uyumluluk denetimlerini otomatikleştiriyor ve 7/24 olay müdahalesi sağlıyoruz. Bulut mimarinizi sektörün en iyi uygulamalarıyla uyumlu hale getirerek yüksek kullanılabilirlik, kesintisiz olağanüstü durum kurtarma ve öngörülebilir operasyonel maliyetler sağlıyoruz.",
+      "features": [
+        "Çoklu Bulut Yönetimi",
+        "Otomatik Maliyet Optimizasyonu",
+        "Gerçek Zamanlı Performans İzleme",
+        "Kaynak Doğru Boyutlandırma",
+        "Otomatik Uyumluluk Denetimi",
+        "Olağanüstü Durum Kurtarma Planlaması",
+        "7/24 Olay Müdahalesi",
+        "Bulut Geçiş Stratejisi"
+      ],
+      "benefits": [
+        "Bulut harcamalarını %30-40 azaltın",
+        "%99.99 altyapı çalışma süresi sağlayın",
+        "Sürekli yasal uyumluluk elde edin",
+        "Kaynak israfını otomatik olarak önleyin",
+        "Dağıtım döngülerini güvenli şekilde hızlandırın",
+        "Tam maliyet şeffaflığı elde edin"
+      ],
+      "metaTitle": "Bulut Yönetimi ve Maliyet Optimizasyonu | PakSoft",
+      "metaDescription": "Bulut altyapınızı optimize edin, aylık harcamaları %40'a varan oranda azaltın ve 7/24 güvenlik sağlayın. Uzman bulut yönetimi için PakSoft ile iletişime geçin.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Keşif ve Denetim",
+            "description": "Mevcut bulut altyapınızın, kaynak kullanımınızın ve faturalandırma modellerinizin kapsamlı bir denetimini gerçekleştiriyoruz. Bu ilk değerlendirme, anında maliyet tasarrufu fırsatlarını ve güvenlik açıklarını belirler."
+          },
+          {
+            "step": 2,
+            "title": "Strateji ve Mimari",
+            "description": "İş hedefleriniz ve performans gereksinimlerinizle uyumlu, özel bir bulut yönetimi stratejisi tasarlıyoruz. Net yönetim politikaları, kaynak etiketleme yapıları ve optimizasyon yol haritaları tanımlıyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Maliyet Optimizasyonu",
+            "description": "Otomatik doğru boyutlandırmayı uyguluyor, boşta kalan kaynakları sonlandırıyor ve rezerve edilmiş örnekleri yapılandırıyoruz. Bu adım, uygulama performansından ödün vermeden gereksiz operasyonel giderleri anında azaltır."
+          },
+          {
+            "step": 4,
+            "title": "Güvenlik ve Uyumluluk",
+            "description": "Gelişmiş güvenlik izleme araçlarını devreye alıyor ve sektör standartlarına göre otomatik uyumluluk kontrolleri yapılandırıyoruz. Altyapınız, sürekli denetime hazır tutulurken tehditlere karşı güçlendirilir."
+          },
+          {
+            "step": 5,
+            "title": "İzleme ve Otomasyon",
+            "description": "Datadog kullanarak gerçek zamanlı panolar kuruyor ve dinamik iş yükleri için otomatik ölçeklendirme politikaları belirliyoruz. Bu, sistemlerinizin trafik artışlarına otomatik olarak uyum sağlamasını kolaylaştırır."
+          },
+          {
+            "step": 6,
+            "title": "Sürekli Yönetim",
+            "description": "Mühendislerimiz sürekli bakım, aylık maliyet incelemeleri ve proaktif performans ayarlamaları sağlar. Yeni iş girişimlerini ve teknolojik gelişmeleri desteklemek için bulut ortamınızı sürekli olarak uyarlıyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Aylık bulut faturamızda gerçekçi olarak ne kadar tasarruf edebiliriz?",
+            "answer": "Çoğu kuruluş, optimizasyonun ilk üç ayı içinde %20 ila %40 arasında tasarruf sağlar. Bunu, boşta kalan kaynakları belirleyerek, aşırı ayrılmış örnekleri doğru boyutlandırarak ve stratejik taahhüt indirimlerinden yararlanarak başarıyoruz."
+          },
+          {
+            "question": "Çoklu bulut ortamlarını destekliyor musunuz?",
+            "answer": "Evet, AWS, Azure ve Google Cloud genelinde hibrit ve çoklu bulut mimarilerini yönetme konusunda uzmanız. Tüm altyapınız için tek bir yönetim ekranı sağlamak amacıyla Terraform ve Datadog gibi birleşik araçlar kullanıyoruz."
+          },
+          {
+            "question": "Bulut altyapımızın güvenli kalmasını nasıl sağlıyorsunuz?",
+            "answer": "Sürekli güvenlik duruşu yönetimi (CSPM) ve otomatik uyumluluk taraması uyguluyoruz. Ekibimiz, riskleri proaktif olarak azaltmak için katı IAM politikaları, ağ segmentasyonu ve gerçek zamanlı tehdit algılama yapılandırır."
+          },
+          {
+            "question": "Bulut izleme ve yönetimi için hangi araçları kullanıyorsunuz?",
+            "answer": "Datadog, CloudHealth, Prometheus ve AWS CloudWatch gibi yerel bulut çözümleri dahil olmak üzere sektör lideri araçlardan yararlanıyoruz. Bu, derin telemetri verileri toplamamıza ve kaynakları verimli bir şekilde ölçeklendirmemize olanak tanır."
+          },
+          {
+            "question": "Bulut kaynaklarımızı optimize etmek herhangi bir kesintiye neden olur mu?",
+            "answer": "Hayır, tüm optimizasyon ve doğru boyutlandırma faaliyetleri sıfır kesinti süresiyle planlanır ve yürütülür. Süreç boyunca hizmetlerinizin tamamen çalışır durumda kalmasını sağlamak için mavi-yeşil dağıtımlar ve kademeli güncellemeler kullanıyoruz."
+          },
+          {
+            "question": "Olağanüstü durum kurtarma ve yüksek kullanılabilirliği nasıl yönetiyorsunuz?",
+            "answer": "Otomatik yük devretme özelliklerine sahip, çok bölgeli, yüksek düzeyde kullanılabilir mimariler tasarlıyoruz. Düşük bir Kurtarma Noktası Hedefi (RPO) garanti etmek için düzenli olağanüstü durum kurtarma tatbikatları ve otomatik yedekleme stratejileri oluşturuyoruz."
+          },
+          {
+            "question": "Şirket içinden buluta geçiş yapmamıza yardımcı olabilir misiniz?",
+            "answer": "Kesinlikle, ilk değerlendirmeden nihai uygulamaya kadar uçtan uca geçiş hizmetleri sunuyoruz. Riski en aza indirmek, maliyetleri kontrol etmek ve sorunsuz bir geçiş sağlamak için kanıtlanmış geçiş çerçeveleri kullanıyoruz."
+          },
+          {
+            "question": "Kritik altyapı olayları için yanıt süreniz nedir?",
+            "answer": "Kritik (Öncelik 1) olaylar için 15 dakikanın altında garantili yanıt süreleriyle 7/24/365 izleme sunuyoruz. Özel site güvenilirliği mühendislerimiz, sorunları anında çözmek için her zaman hazırdır."
+          }
+        ],
+        "technologies": [
+          {
+            "name": "AWS",
+            "icon": "aws"
+          },
+          {
+            "name": "Azure",
+            "icon": "azure"
+          },
+          {
+            "name": "Google Cloud",
+            "icon": "google-cloud"
+          },
+          {
+            "name": "Terraform",
+            "icon": "terraform"
+          },
+          {
+            "name": "Datadog",
+            "icon": "datadog"
+          },
+          {
+            "name": "Prometheus",
+            "icon": "prometheus"
+          }
+        ]
+      }
+    },
+    "de": {
+      "name": "Cloud-Management & Kostenoptimierung",
+      "shortDescription": "Maximieren Sie Ihren Cloud-ROI mit professionellem Multi-Cloud-Management, kontinuierlicher Kostenoptimierung, automatisierter Skalierung und robuster Sicherheits-Compliance, die speziell für moderne Unternehmens-Workloads entwickelt wurden.",
+      "fullDescription": "Übernehmen Sie die volle Kontrolle über Ihre Cloud-Infrastruktur mit den umfassenden Cloud-Management-Services von PakSoft. Wir unterstützen Unternehmen bei der Verwaltung komplexer Multi-Cloud-Umgebungen auf AWS, Azure und Google Cloud. Unsere zertifizierten Ingenieure implementieren kontinuierliche Ressourcen-Optimierung, automatisierte Skalierungsrichtlinien und Echtzeit-Leistungsüberwachung, um Verschwendung zu vermeiden und Ihre monatlichen Cloud-Ausgaben um bis zu 30-40% zu senken. Wir etablieren robuste Sicherheits-Baselines, automatisieren Compliance-Audits und bieten einen 24/7-Incident-Response-Service. Durch die Ausrichtung Ihrer Cloud-Architektur an Best Practices der Branche gewährleisten wir hohe Verfügbarkeit, nahtlose Disaster Recovery und planbare Betriebskosten.",
+      "features": [
+        "Multi-Cloud-Governance",
+        "Automatisierte Kostenoptimierung",
+        "Echtzeit-Leistungsüberwachung",
+        "Ressourcen-Right-Sizing",
+        "Automatisierte Compliance-Audits",
+        "Disaster-Recovery-Planung",
+        "24/7 Incident Response",
+        "Cloud-Migrationsstrategie"
+      ],
+      "benefits": [
+        "Cloud-Ausgaben um 30-40% senken",
+        "99,99% Infrastruktur-Uptime sichern",
+        "Kontinuierliche Compliance erreichen",
+        "Ressourcenverschwendung automatisch stoppen",
+        "Deployment-Zyklen sicher beschleunigen",
+        "Volle Kostentransparenz gewinnen"
+      ],
+      "metaTitle": "Cloud-Management & Kostenoptimierung | PakSoft",
+      "metaDescription": "Optimieren Sie Ihre Cloud-Infrastruktur, senken Sie Kosten um bis zu 40% und sichern Sie 24/7 Compliance. Kontaktieren Sie PakSoft für Cloud-Management.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Analyse & Audit",
+            "description": "Wir führen ein umfassendes Audit Ihrer bestehenden Cloud-Infrastruktur, Ressourcennutzung und Abrechnungsmuster durch. Diese erste Bewertung identifiziert sofortige Kosteneinsparungspotenziale und Sicherheitsrisiken."
+          },
+          {
+            "step": 2,
+            "title": "Strategie & Architektur",
+            "description": "Unser Team entwirft eine maßgeschneiderte Cloud-Management-Strategie, die auf Ihre Geschäftsziele und Leistungsanforderungen abgestimmt ist. Wir definieren klare Governance-Richtlinien, Ressourcen-Tagging und Optimierungs-Roadmaps."
+          },
+          {
+            "step": 3,
+            "title": "Kostenoptimierung",
+            "description": "Wir implementieren automatisierte Anpassungen, beenden ungenutzte Ressourcen und konfigurieren Reserved Instances oder Savings Plans. Dieser Schritt senkt sofort unnötige Betriebskosten, ohne die Anwendungsleistung zu beeinträchtigen."
+          },
+          {
+            "step": 4,
+            "title": "Sicherheit & Compliance",
+            "description": "Wir implementieren fortschrittliche Sicherheitsüberwachungstools und konfigurieren automatisierte Compliance-Prüfungen nach Branchenstandards. Ihre Infrastruktur wird gegen Bedrohungen gehärtet und bleibt kontinuierlich auditbereit."
+          },
+          {
+            "step": 5,
+            "title": "Überwachung & Automatisierung",
+            "description": "Wir richten Echtzeit-Dashboards mit Datadog ein und erstellen automatisierte Skalierungsrichtlinien für dynamische Workloads. Dies stellt sicher, dass sich Ihre Systeme automatisch an Datenverkehrsspitzen anpassen."
+          },
+          {
+            "step": 6,
+            "title": "Kontinuierliches Management",
+            "description": "Unsere Ingenieure bieten fortlaufende Wartung, monatliche Kostenprüfungen und proaktive Leistungsoptimierung. Wir passen Ihre Cloud-Umgebung kontinuierlich an neue Geschäftsinitiativen und technologische Entwicklungen an."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Wie viel können wir realistisch bei unserer monatlichen Cloud-Rechnung einsparen?",
+            "answer": "Die meisten Unternehmen sparen innerhalb der ersten drei Monate der Optimierung zwischen 20% und 40%. Wir erreichen dies, indem wir ungenutzte Ressourcen identifizieren, überdimensionierte Instanzen anpassen und strategische Rabatte nutzen."
+          },
+          {
+            "question": "Unterstützen Sie Multi-Cloud-Umgebungen?",
+            "answer": "Ja, wir sind auf die Verwaltung von Hybrid- und Multi-Cloud-Architekturen auf AWS, Azure und Google Cloud spezialisiert. Wir nutzen einheitliche Tools wie Terraform und Datadog für eine zentrale Verwaltung."
+          },
+          {
+            "question": "Wie stellen Sie sicher, dass unsere Cloud-Infrastruktur sicher bleibt?",
+            "answer": "Wir implementieren kontinuierliches Cloud Security Posture Management (CSPM) und automatisierte Compliance-Scans. Unser Team konfiguriert strenge IAM-Richtlinien, Netzwerksegmentierung und Echtzeit-Bedrohungserkennung."
+          },
+          {
+            "question": "Welche Tools verwenden Sie für das Cloud-Monitoring und -Management?",
+            "answer": "Wir nutzen branchenführende Tools wie Datadog, CloudHealth, Prometheus und native Cloud-Lösungen wie AWS CloudWatch. Dies ermöglicht es uns, tiefe Telemetriedaten zu erfassen und Ressourcen effizient zu skalieren."
+          },
+          {
+            "question": "Führt die Optimierung unserer Cloud-Ressourcen zu Ausfallzeiten?",
+            "answer": "Nein, alle Optimierungs- und Anpassungsaktivitäten werden ohne Ausfallzeiten geplant und durchgeführt. Wir nutzen Blue-Green-Deployments und Rolling Updates, um sicherzustellen, dass Ihre Dienste voll funktionsfähig bleiben."
+          },
+          {
+            "question": "Wie handhaben Sie Disaster Recovery und Hochverfügbarkeit?",
+            "answer": "Wir entwerfen hochverfügbare Multi-Regionen-Architekturen mit automatisierten Failover-Funktionen. Regelmäßige Disaster-Recovery-Tests und automatisierte Backup-Strategien werden etabliert, um ein niedriges RPO zu garantieren."
+          },
+          {
+            "question": "Können Sie uns bei der Migration von On-Premises in die Cloud helfen?",
+            "answer": "Absolut, wir bieten End-to-End-Migrationsdienste von der ersten Bewertung bis zur endgültigen Durchführung. Wir nutzen bewährte Migrations-Frameworks, um Risiken zu minimieren und eine nahtlose Transition zu gewährleisten."
+          },
+          {
+            "question": "Wie hoch ist Ihre Reaktionszeit bei kritischen Infrastrukturvorfällen?",
+            "answer": "Wir bieten eine 24/7/365-Überwachung mit garantierten Reaktionszeiten von unter 15 Minuten bei kritischen Vorfällen (Priorität 1). Unsere spezialisierten Site Reliability Engineers sind jederzeit einsatzbereit."
+          }
+        ],
+        "technologies": [
+          {
+            "name": "AWS",
+            "icon": "aws"
+          },
+          {
+            "name": "Azure",
+            "icon": "azure"
+          },
+          {
+            "name": "Google Cloud",
+            "icon": "google-cloud"
+          },
+          {
+            "name": "Terraform",
+            "icon": "terraform"
+          },
+          {
+            "name": "Datadog",
+            "icon": "datadog"
+          },
+          {
+            "name": "Prometheus",
+            "icon": "prometheus"
+          }
+        ]
+      }
+    },
+    "ur": {
+      "name": "کلاؤڈ مینجمنٹ اور لاگت کی اصلاح",
+      "shortDescription": "جدید ترین کلاؤڈ مینجمنٹ، لاگت کی بچت، خودکار اسکیلنگ، اور سیکیورٹی تعمیل کے ذریعے اپنے کلاؤڈ سرمایہ کاری پر زیادہ سے زیادہ منافع حاصل کریں۔",
+      "fullDescription": "پاک سافٹ کی جامع کلاؤڈ مینجمنٹ سروسز کے ساتھ اپنے کلاؤڈ انفراسٹرکچر پر مکمل کنٹرول حاصل کریں۔ ہم AWS، Azure اور Google Cloud پر مشتمل پیچیدہ ملٹی کلاؤڈ ماحول کو منظم کرنے میں آپ کی مدد کرتے ہیں۔ ہمارے تصدیق شدہ انجینئرز وسائل کے ضیاع کو ختم کرنے اور ماہانہ کلاؤڈ اخراجات کو 30-40٪ تک کم کرنے کے لیے مسلسل وسائل کی درست سائزنگ، خودکار اسکیلنگ پالیسیاں، اور ریئل ٹائم کارکردگی کی نگرانی نافذ کرتے ہیں۔ ہم مضبوط سیکیورٹی بیس لائنز قائم کرتے ہیں، تعمیل کے آڈٹ کو خودکار بناتے ہیں، اور 24/7 ہنگامی ردعمل فراہم کرتے ہیں۔ آپ کے کلاؤڈ آرکیٹیکچر کو بہترین صنعتی طریقوں کے مطابق بنا کر، ہم اعلیٰ دستیابی اور ہموار ڈیزاسٹر ریکوری کو یقینی بناتے ہیں۔",
+      "features": [
+        "ملٹی کلاؤڈ گورننس",
+        "خودکار لاگت کی اصلاح",
+        "ریئل ٹائم کارکردگی کی نگرانی",
+        "وسائل کی درست سائزنگ",
+        "خودکار تعمیل کا آڈٹ",
+        "ڈیزاسٹر ریکوری پلاننگ",
+        "24/7 ہنگامی ردعمل",
+        "کلاؤڈ مائیگریشن حکمت عملی"
+      ],
+      "benefits": [
+        "کلاؤڈ اخراجات میں 30-40٪ کمی",
+        "انفراسٹرکچر کے 99.99٪ اپ ٹائم کی ضمانت",
+        "مسلسل ریگولیٹری تعمیل کا حصول",
+        "وسائل کے ضیاع کا خودکار خاتمہ",
+        "ڈیپلائمنٹ سائیکلز کی محفوظ رفتار",
+        "لاگت کی مکمل شفافیت"
+      ],
+      "metaTitle": "کلاؤڈ مینجمنٹ اور لاگت کی اصلاح | PakSoft",
+      "metaDescription": "اپنے کلاؤڈ انفراسٹرکچر کو بہتر بنائیں، ماہانہ اخراجات میں 40٪ تک کمی کریں اور 24/7 سیکیورٹی یقینی بنائیں۔ ماہر کلاؤڈ مینجمنٹ کے لیے پاک سافٹ سے رابطہ کریں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "دریافت اور آڈٹ",
+            "description": "ہم آپ کے موجودہ کلاؤڈ انفراسٹرکچر، وسائل کے استعمال اور بلنگ کے پیٹرن کا ایک جامع آڈٹ کرتے ہیں۔ یہ ابتدائی تشخیص فوری طور پر لاگت بچانے کے مواقع اور سیکیورٹی کے خطرات کی نشاندہی کرتی ہے۔"
+          },
+          {
+            "step": 2,
+            "title": "حکمت عملی اور آرکیٹیکچر",
+            "description": "ہماری ٹیم آپ کے کاروباری اہداف اور کارکردگی کی ضروریات کے مطابق کلاؤڈ مینجمنٹ کی حکمت عملی تیار کرتی ہے۔ ہم واضح گورننس پالیسیاں، وسائل کی ٹیگنگ اور اصلاح کے روڈ میپس کی وضاحت کرتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "لاگت کی اصلاح",
+            "description": "ہم خودکار رائٹ سائزنگ نافذ کرتے ہیں، غیر استعمال شدہ وسائل کو ختم کرتے ہیں، اور محفوظ کردہ انسٹنسز کو کنفیگر کرتے ہیں۔ یہ مرحلہ ایپلی کیشن کی کارکردگی پر سمجھوتہ کیے بغیر غیر ضروری اخراجات کو فوری طور پر کم کرتا ہے۔"
+          },
+          {
+            "step": 4,
+            "title": "سیکیورٹی اور تعمیل",
+            "description": "ہم جدید سیکیورٹی مانیٹرنگ ٹولز کو تعینات کرتے ہیں اور صنعتی معیارات کے مطابق خودکار تعمیل کی جانچ کو ترتیب دیتے ہیں۔ آپ کا انفراسٹرکچر خطرات کے خلاف محفوظ اور آڈٹ کے لیے تیار رہتا ہے۔"
+          },
+          {
+            "step": 5,
+            "title": "نگرانی اور آٹومیشن",
+            "description": "ہم Datadog کا استعمال کرتے ہوئے ریئل ٹائم ڈیش بورڈز قائم کرتے ہیں اور متحرک کام کے بوجھ کے لیے خودکار اسکیلنگ پالیسیاں بناتے ہیں۔ یہ یقینی بناتا ہے کہ آپ کے سسٹمز ٹریفک کے اتار چڑھاؤ کے مطابق خود بخود ڈھل جائیں۔"
+          },
+          {
+            "step": 6,
+            "title": "مسلسل انتظام",
+            "description": "ہمارے انجینئرز مسلسل دیکھ بھال، ماہانہ لاگت کا جائزہ، اور فعال کارکردگی کی ٹیوننگ فراہم کرتے ہیں۔ ہم نئے کاروباری اقدامات اور تکنیکی ترقیوں کی مدد کے لیے آپ کے کلاؤڈ ماحول کو مسلسل اپ ڈیٹ کرتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "ہم اپنے ماہانہ کلاؤڈ بل پر حقیقت پسندانہ طور پر کتنی بچت کر سکتے ہیں؟",
+            "answer": "زیادہ تر تنظیمیں اصلاح کے پہلے تین مہینوں میں 20٪ سے 40٪ کے درمیان بچت کرتی ہیں۔ ہم یہ بچت غیر استعمال شدہ وسائل کی نشاندہی اور اسٹریٹجک ڈسکاؤنٹس کا فائدہ اٹھا کر حاصل کرتے ہیں۔"
+          },
+          {
+            "question": "کیا آپ ملٹی کلاؤڈ ماحول کو سپورٹ کرتے ہیں؟",
+            "answer": "جی ہاں، ہم AWS، Azure اور Google Cloud پر ہائبرڈ اور ملٹی کلاؤڈ آرکیٹیکچرز کو منظم کرنے میں مہارت رکھتے ہیں۔ ہم آپ کے پورے انفراسٹرکچر کے لیے Terraform اور Datadog جیسے مربوط ٹولز استعمال کرتے ہیں۔"
+          },
+          {
+            "question": "آپ ہمارے کلاؤڈ انفراسٹرکچر کو کیسے محفوظ رکھتے ہیں؟",
+            "answer": "ہم مسلسل سیکیورٹی پوسچر مینجمنٹ (CSPM) اور خودکار تعمیل کی اسکیننگ نافذ کرتے ہیں۔ ہماری ٹیم خطرات کو کم کرنے کے لیے سخت IAM پالیسیاں اور ریئل ٹائم خطرے کی نشاندہی کو ترتیب دیتی ہے۔"
+          },
+          {
+            "question": "آپ کلاؤڈ مانیٹرنگ اور مینجمنٹ کے لیے کون سے ٹولز استعمال کرتے ہیں؟",
+            "answer": "ہم Datadog، CloudHealth، Prometheus اور AWS CloudWatch جیسے صنعتی معروف ٹولز کا استعمال کرتے ہیں۔ یہ ہمیں گہرائی سے ڈیٹا اکٹھا کرنے اور وسائل کو مؤثر طریقے سے اسکیل کرنے کی اجازت دیتا ہے۔"
+          },
+          {
+            "question": "کیا ہمارے کلاؤڈ وسائل کو بہتر بنانے سے کوئی ڈاؤن ٹائم ہوگا؟",
+            "answer": "جی نہیں، تمام اصلاحی سرگرمیاں بغیر کسی ڈاؤن ٹائم کے منصوبہ بند اور انجام دی جاتی ہیں۔ ہم یہ یقینی بنانے کے لیے بلیو-گرین ڈیپلائمنٹ اور رولنگ اپ ڈیٹس کا استعمال کرتے ہیں کہ آپ کی سروسز فعال رہیں۔"
+          },
+          {
+            "question": "آپ ڈیزاسٹر ریکوری اور ہائی اویلیبلٹی کو کیسے سنبھالتے ہیں؟",
+            "answer": "ہم خودکار فیل اوور صلاحیتوں کے ساتھ ملٹی ریجن، انتہائی دستیاب آرکیٹیکچرز ڈیزائن کرتے ہیں۔ کم سے کم ڈیٹا کے نقصان کو یقینی بنانے کے لیے باقاعدہ ڈیزاسٹر ریکوری مشقیں کی جاتی ہیں۔"
+          },
+          {
+            "question": "کیا آپ آن پریمیسس سے کلاؤڈ پر منتقل ہونے میں ہماری مدد کر سکتے ہیں؟",
+            "answer": "بالکل، ہم ابتدائی تشخیص سے لے پر حتمی نفاذ تک اینڈ ٹو اینڈ مائیگریشن سروسز فراہم کرتے ہیں۔ ہم خطرات کو کم کرنے اور ہموار منتقلی کو یقینی بنانے کے لیے ثابت شدہ فریم ورک استعمال کرتے ہیں۔"
+          },
+          {
+            "question": "انتہائی اہم انفراسٹرکچر کے مسائل کے لیے آپ کا ردعمل کا وقت کیا ہے؟",
+            "answer": "ہم انتہائی اہم مسائل کے لیے 15 منٹ سے کم کے گارنٹی شدہ جوابی وقت کے ساتھ 24/7/365 نگرانی پیش کرتے ہیں۔ ہمارے سرشار انجینئرز مسائل کو فوری طور پر حل کرنے کے لیے ہمیشہ تیار رہتے ہیں۔"
+          }
+        ],
+        "technologies": [
+          {
+            "name": "AWS",
+            "icon": "aws"
+          },
+          {
+            "name": "Azure",
+            "icon": "azure"
+          },
+          {
+            "name": "Google Cloud",
+            "icon": "google-cloud"
+          },
+          {
+            "name": "Terraform",
+            "icon": "terraform"
+          },
+          {
+            "name": "Datadog",
+            "icon": "datadog"
+          },
+          {
+            "name": "Prometheus",
+            "icon": "prometheus"
+          }
+        ]
+      }
+    },
+    "ar": {
+      "name": "إدارة السحابة وتحسين التكلفة",
+      "shortDescription": "ضاعف عائد الاستثمار السحابي من خلال إدارة السحابة المتعددة الاحترافية، والتحسين المستمر للتكلفة، والامتثال الأمني القوي المصمم لبيئات العمل الحديثة.",
+      "fullDescription": "استعد السيطرة الكاملة على بنيتك التحتية السحابية مع خدمات إدارة السحابة الشاملة من PakSoft. نحن نساعد الشركات على التنقل في البيئات السحابية المتعددة والمعقدة عبر AWS و Azure و Google Cloud. يقوم مهندسونا المعتمدون بتنفيذ عمليات ضبط حجم الموارد المستمرة، وسياسات القياس الآلي، ومراقبة الأداء في الوقت الفعلي للتخلص من الهدر وتقليل الإنفاق السحابي الشهري بنسبة تتراوح بين 30-40%. نحن نضع أسسًا أمنية قوية، ونقوم بأتمتة عمليات تدقيق الامتثال، ونوفر استجابة للحوادث على مدار الساعة طوال أيام الأسبوع. من خلال مواءمة بنيتك السحابية مع أفضل الممارسات، نضمن لك توفيرًا عاليًا واستعادة سلسة للبيانات وتكاليف تشغيلية يمكن التنبؤ بها.",
+      "features": [
+        "حوكمة السحابة المتعددة",
+        "تحسين التكلفة المؤتمت",
+        "مراقبة الأداء في الوقت الفعلي",
+        "ضبط حجم الموارد",
+        "التدقيق المؤتمت للامتثال",
+        "التخطيط للتعافي من الكوارث",
+        "الاستجابة للحوادث 24/7",
+        "استراتيجية الهجرة السحابية"
+      ],
+      "benefits": [
+        "تقليل الإنفاق السحابي بنسبة 30-40%",
+        "ضمان وقت تشغيل البنية التحتية بنسبة 99.99%",
+        "تحقيق الامتثال التنظيمي المستمر",
+        "القضاء على هدر الموارد تلقائيًا",
+        "تسريع دورات النشر بأمان",
+        "الحصول على شفافية كاملة للتكاليف"
+      ],
+      "metaTitle": "إدارة السحابة وتحسين التكلفة | PakSoft",
+      "metaDescription": "قم بتحسين بنيتك التحتية السحابية، وتقليل الإنفاق الشهري بنسبة تصل إلى 40%، وضمان الامتثال الأمني على مدار الساعة. اتصل بـ PakSoft لإدارة السحابة.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "الاستكشاف والتدقيق",
+            "description": "نقوم بإجراء تدقيق شامل لبنيتك التحتية السحابية الحالية، واستخدام الموارد، وأنماط الفوترة. يحدد هذا التقييم الأولي فرص توفير التكاليف الفورية والثغرات الأمنية."
+          },
+          {
+            "step": 2,
+            "title": "الاستراتيجية والهندسة المعمارية",
+            "description": "يصمم فريقنا استراتيجية مخصصة لإدارة السحابة تتوافق مع أهداف عملك ومتطلبات الأداء. نحدد سياسات حوكمة واضحة، وهياكل تصنيف الموارد، وخرائط طريق التحسين."
+          },
+          {
+            "step": 3,
+            "title": "تحسين التكلفة",
+            "description": "نقوم بتنفيذ الضبط التلقائي للحجم، وإنهاء الموارد الخاملة، وتكوين المثيلات المحجوزة أو خطط التوفير. تقلل هذه الخطوة على الفور النفقات التشغيلية غير الضرورية دون التأثير على الأداء."
+          },
+          {
+            "step": 4,
+            "title": "الأمان والامتثال",
+            "description": "نشر أدوات مراقبة الأمان المتقدمة وتكوين فحوصات الامتثال الآلية ضد معايير الصناعة. يتم تحصين بنيتك التحتية ضد التهديدات مع الحفاظ على الاستعداد المستمر للتدقيق."
+          },
+          {
+            "step": 5,
+            "title": "المراقبة والأتمتة",
+            "description": "نقوم بإعداد لوحات معلومات في الوقت الفعلي باستخدام Datadog ونضع سياسات قياس تلقائية لأعباء العمل الديناميكية. يضمن ذلك تكيف أنظمتك تلقائيًا مع ارتفاع حركة المرور."
+          },
+          {
+            "step": 6,
+            "title": "الإدارة المستمرة",
+            "description": "يقدم مهندسونا صيانة مستمرة، ومراجعات شهرية للتكاليف، وضبطًا استباقيًا للأداء. نقوم باستمرار بتكييف بيئتك السحابية لدعم مبادرات العمل الجديدة والتطورات التكنولوجية."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما مقدار ما يمكننا توفيره واقعيًا في فاتورتنا السحابية الشهرية؟",
+            "answer": "توفر معظم المؤسسات ما بين 20% و40% خلال الأشهر الثلاثة الأولى من التحسين. نحقق ذلك من خلال تحديد الموارد الخاملة، وضبط حجم المثيلات المفرطة، والاستفادة من خصومات الالتزام الاستراتيجية."
+          },
+          {
+            "question": "هل تدعمون البيئات السحابية المتعددة؟",
+            "answer": "نعم، نحن متخصصون في إدارة البنيات الهجينة والمتعددة السحابية عبر AWS و Azure و Google Cloud. نستخدم أدوات إدارة موحدة مثل Terraform و Datadog لتوفير لوحة تحكم واحدة."
+          },
+          {
+            "question": "كيف تضمنون بقاء بنيتنا التحتية السحابية آمنة؟",
+            "answer": "نقوم بتنفيذ إدارة مستمرة للوضع الأمني السحابي (CSPM) وفحص الامتثال الآلي. يقوم فريقنا بتكوين سياسات IAM صارمة، وتجزئة الشبكة، والكشف عن التهديدات في الوقت الفعلي."
+          },
+          {
+            "question": "ما هي الأدوات التي تستخدمونها لمراقبة وإدارة السحابة؟",
+            "answer": "نحن نستفيد من الأدوات الرائدة في الصناعة بما في ذلك Datadog و CloudHealth و Prometheus والحلول السحابية الأصلية مثل AWS CloudWatch. يتيح لنا ذلك جمع بيانات تتبع عميقة وأتمتة قياس الموارد."
+          },
+          {
+            "question": "هل سيؤدي تحسين مواردنا السحابية إلى أي توقف عن العمل؟",
+            "answer": "لا، يتم تخطيط وتنفيذ جميع أنشطة التحسين وضبط الحجم دون أي توقف عن العمل. نستخدم عمليات النشر باللونين الأزرق والأخضر والتحديثات المستمرة لضمان بقاء خدماتك تعمل بكامل طاقتها."
+          },
+          {
+            "question": "كيف تتعاملون مع التعافي من الكوارث والتوافر العالي؟",
+            "answer": "نحن نصمم بنيات متعددة المناطق وعالية التوافر مع قدرات فشل تلقائي. يتم إجراء تدريبات منتظمة على التعافي من الكوارث واستراتيجيات النسخ الاحتياطي الآلي لضمان حد أدنى من فقدان البيانات."
+          },
+          {
+            "question": "هل يمكنك مساعدتنا في الانتقال من البنية المحلية إلى السحابة؟",
+            "answer": "بالتأكيد، نحن نقدم خدمات هجرة شاملة من التقييم الأولي إلى التنفيذ النهائي. نستخدم أطر عمل هجرة مجربة لتقليل المخاطر والتحكم في التكاليف وضمان انتقال سلس."
+          },
+          {
+            "question": "ما هو وقت الاستجابة لحوادث البنية التحتية الحرجة؟",
+            "answer": "نحن نقدم مراقبة على مدار الساعة طوال أيام الأسبوع مع أوقات استجابة مضمونة تقل عن 15 دقيقة للحوادث الحرجة (الخطورة 1). مهندسو موثوقية الموقع المخصصون لدينا دائمًا في حالة استعداد للحل الفوري."
+          }
+        ],
+        "technologies": [
+          {
+            "name": "AWS",
+            "icon": "aws"
+          },
+          {
+            "name": "Azure",
+            "icon": "azure"
+          },
+          {
+            "name": "Google Cloud",
+            "icon": "google-cloud"
+          },
+          {
+            "name": "Terraform",
+            "icon": "terraform"
+          },
+          {
+            "name": "Datadog",
+            "icon": "datadog"
+          },
+          {
+            "name": "Prometheus",
+            "icon": "prometheus"
+          }
+        ]
+      }
+    }
+  },
+  "continuous-monitoring": {
+    "en": {
+      "name": "Continuous Monitoring & APM",
+      "shortDescription": "Ensure 24/7 system availability and peak performance with proactive infrastructure monitoring, real-time application performance metrics, and automated incident alerting systems designed for modern cloud environments.",
+      "fullDescription": "Protect your digital operations from costly downtime with PakSoft's comprehensive continuous monitoring services. We deploy advanced Application Performance Monitoring (APM) and infrastructure tracking tools to observe your entire stack in real-time. By analyzing system logs, database queries, and server metrics, we identify performance bottlenecks before they impact your users. Our team configures intelligent, noise-reduced alerting thresholds and designs custom Grafana or Datadog dashboards for complete operational visibility. With 24/7 incident response integration, we guarantee rapid resolution of infrastructure anomalies, maintaining 99.99% uptime and ensuring a seamless end-user experience across all your digital platforms.",
+      "features": [
+        "Real-Time Infrastructure Tracking",
+        "Application Performance Monitoring (APM)",
+        "Centralized Log Management & Analysis",
+        "Custom Dashboard Design (Grafana/Datadog)",
+        "Intelligent Alerting & Noise Reduction",
+        "Synthetic Transaction & API Monitoring",
+        "Database Query Performance Profiling",
+        "Automated Incident Response Integration"
+      ],
+      "benefits": [
+        "99.99% System Uptime Guarantee",
+        "Proactive Bottleneck Identification",
+        "Reduced Mean Time to Resolution (MTTR)",
+        "Complete Operational Stack Visibility",
+        "Elimination of Alert Fatigue",
+        "Optimized Cloud Infrastructure Costs"
+      ],
+      "metaTitle": "Continuous Monitoring & APM Services | PakSoft",
+      "metaDescription": "Ensure 99.99% uptime with PakSoft's 24/7 continuous monitoring and APM services. Prevent downtime and optimize cloud performance. Contact us today!",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Audit & Strategy",
+            "description": "We analyze your current infrastructure architecture and identify critical performance metrics. This allows us to design a tailored monitoring strategy that aligns with your business goals."
+          },
+          {
+            "step": 2,
+            "title": "Agent Deployment",
+            "description": "Our team installs lightweight monitoring agents across your servers, databases, and applications. We ensure zero disruption to your active production environments during this setup phase."
+          },
+          {
+            "step": 3,
+            "title": "Dashboard Creation",
+            "description": "We build intuitive, centralized dashboards using Grafana, Datadog, or Prometheus. These visualizations provide your team with real-time insights into system health and resource utilization."
+          },
+          {
+            "step": 4,
+            "title": "Alert Configuration",
+            "description": "We establish intelligent threshold limits to trigger alerts only for genuine, actionable anomalies. This eliminates alert fatigue and ensures critical issues receive immediate attention."
+          },
+          {
+            "step": 5,
+            "title": "Incident Playbooks",
+            "description": "Our engineers document step-by-step response playbooks for potential system failures. These automated and manual procedures guarantee rapid, consistent recovery during critical incidents."
+          },
+          {
+            "step": 6,
+            "title": "Continuous Optimization",
+            "description": "We regularly review performance data to identify long-term trends and optimization opportunities. This proactive analysis helps prevent future bottlenecks and reduces overall infrastructure costs."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is the difference between basic monitoring and APM?",
+            "answer": "Basic monitoring tracks infrastructure metrics like CPU, memory, and disk usage. Application Performance Monitoring (APM) goes deeper, tracing individual code executions, database queries, and external API calls to pinpoint exact performance bottlenecks."
+          },
+          {
+            "question": "How do you prevent alert fatigue for our engineering team?",
+            "answer": "We implement intelligent alerting thresholds and deduplication rules using tools like PagerDuty or Opsgenie. By separating critical alerts from non-actionable warnings, your team only gets notified when immediate human intervention is required."
+          },
+          {
+            "question": "Which monitoring tools do you support?",
+            "answer": "We support a wide range of industry-standard tools including Datadog, Prometheus, Grafana, New Relic, and ELK Stack. We select and configure the best combination based on your specific infrastructure and budget."
+          },
+          {
+            "question": "Will installing monitoring agents slow down our application?",
+            "answer": "No, modern monitoring agents are designed to be extremely lightweight, typically consuming less than 1% of CPU and memory. We carefully configure sampling rates to ensure comprehensive visibility with zero noticeable performance impact."
+          },
+          {
+            "question": "Do you offer 24/7 incident response support?",
+            "answer": "Yes, we provide dedicated on-call support options with guaranteed response times under SLA agreements. Our team is ready to respond to critical alerts and resolve issues at any hour of the day."
+          },
+          {
+            "question": "Can you monitor multi-cloud or hybrid environments?",
+            "answer": "Absolutely, we specialize in setting up unified monitoring solutions that span across AWS, Azure, Google Cloud, and on-premises servers. This gives you a single pane of glass for your entire infrastructure."
+          },
+          {
+            "question": "How does log management fit into continuous monitoring?",
+            "answer": "Log management centralizes application and system logs, making them searchable in real-time. This is crucial for post-incident root cause analysis and identifying security threats or silent application errors."
+          },
+          {
+            "question": "What is synthetic monitoring and do we need it?",
+            "answer": "Synthetic monitoring simulates user journeys, such as logging in or checking out, at regular intervals. It is highly recommended because it alerts you to broken user flows even when traffic is low."
+          }
+        ],
+        "technologies": [
+          {
+            "name": "Datadog",
+            "icon": "datadog"
+          },
+          {
+            "name": "Prometheus",
+            "icon": "prometheus"
+          },
+          {
+            "name": "Grafana",
+            "icon": "grafana"
+          },
+          {
+            "name": "New Relic",
+            "icon": "newrelic"
+          },
+          {
+            "name": "Elasticsearch",
+            "icon": "elasticsearch"
+          },
+          {
+            "name": "PagerDuty",
+            "icon": "pagerduty"
+          }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Kesintisiz İzleme ve APM",
+      "shortDescription": "Modern bulut ortamları için tasarlanmış proaktif altyapı izleme, gerçek zamanlı uygulama performansı metrikleri ve otomatik olay uyarı sistemleriyle 7/24 sistem kullanılabilirliği sağlayın.",
+      "fullDescription": "PakSoft'un kapsamlı kesintisiz izleme hizmetleriyle dijital operasyonlarınızı maliyetli kesintilerden koruyun. Tüm sisteminizi gerçek zamanlı olarak gözlemlemek için gelişmiş Uygulama Performansı İzleme (APM) ve altyapı takip araçları kuruyoruz. Sistem günlüklerini, veritabanı sorgularını ve sunucu metriklerini analiz ederek, performans darboğazlarını kullanıcılarınızı etkilemeden önce tespit ediyoruz. Ekibimiz, akıllı ve gürültüden arındırılmış uyarı eşikleri yapılandırır ve eksiksiz operasyonel görünürlük için özel Grafana veya Datadog panelleri tasarlar. 7/24 olay müdahale entegrasyonu ile altyapı anomalilerinin hızlı bir şekilde çözülmesini garanti ediyor, %99,99 çalışma süresi sağlıyoruz.",
+      "features": [
+        "Gerçek Zamanlı Altyapı Takibi",
+        "Uygulama Performansı İzleme (APM)",
+        "Merkezi Günlük (Log) Yönetimi ve Analizi",
+        "Özel Panel Tasarımı (Grafana/Datadog)",
+        "Akıllı Uyarı ve Gürültü Azaltma",
+        "Sentetik İşlem ve API İzleme",
+        "Veritabanı Sorgu Performansı Profili",
+        "Otomatik Olay Müdahale Entegrasyonu"
+      ],
+      "benefits": [
+        "%99,99 Sistem Çalışma Süresi Garantisi",
+        "Proaktif Darboğaz Tespiti",
+        "Kısaltılmış Ortalama Çözüm Süresi (MTTR)",
+        "Eksiksiz Operasyonel Sistem Görünürlüğü",
+        "Uyarı Yorgunluğunun Ortadan Kaldırılması",
+        "Optimize Edilmiş Bulut Altyapı Maliyetleri"
+      ],
+      "metaTitle": "Kesintisiz İzleme ve APM Hizmetleri | PakSoft",
+      "metaDescription": "PakSoft'un 7/24 kesintisiz izleme ve APM hizmetleriyle %99,99 çalışma süresi sağlayın. Kesintileri önleyin ve bulut performansını optimize edin.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Denetim ve Strateji",
+            "description": "Mevcut altyapı mimarinizi analiz ediyor ve kritik performans metriklerini belirliyoruz. Bu, iş hedeflerinizle uyumlu, özel bir izleme stratejisi tasarlamamızı sağlar."
+          },
+          {
+            "step": 2,
+            "title": "Ajan Dağıtımı",
+            "description": "Ekibimiz sunucularınıza, veritabanlarınıza ve uygulamalarınıza hafif izleme ajanları yükler. Bu kurulum aşamasında aktif üretim ortamlarınızda sıfır kesinti sağlıyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Panel Oluşturma",
+            "description": "Grafana, Datadog veya Prometheus kullanarak sezgisel, merkezi paneller oluşturuyoruz. Bu görselleştirmeler, ekibinize sistem sağlığı ve kaynak kullanımı hakkında gerçek zamanlı bilgiler sunar."
+          },
+          {
+            "step": 4,
+            "title": "Uyarı Yapılandırması",
+            "description": "Yalnızca gerçek, müdahale gerektiren anomaliler için uyarıları tetikleyecek akıllı eşik sınırları belirliyoruz. Bu, uyarı yorgunluğunu ortadan kaldırır ve kritik sorunların anında ilgi görmesini sağlar."
+          },
+          {
+            "step": 5,
+            "title": "Olay Müdahale Planları",
+            "description": "Mühendislerimiz olası sistem arızaları için adım adım müdahale kılavuzları hazırlar. Bu otomatik ve manuel prosedürler, kritik olaylar sırasında hızlı ve tutarlı bir kurtarma garanti eder."
+          },
+          {
+            "step": 6,
+            "title": "Sürekli Optimizasyon",
+            "description": "Uzun vadeli eğilimleri ve optimizasyon fırsatlarını belirlemek için performans verilerini düzenli olarak inceliyoruz. Bu proaktif analiz, gelecekteki darboğazları önlemeye yardımcı olur ve maliyetleri düşürür."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Temel izleme ile APM arasındaki fark nedir?",
+            "answer": "Temel izleme; CPU, bellek ve disk kullanımı gibi altyapı metriklerini izler. Uygulama Performansı İzleme (APM) ise daha derine inerek tam performans darboğazlarını belirlemek için kod yürütmelerini, veritabanı sorgularını ve harici API çağrılarını izler."
+          },
+          {
+            "question": "Mühendislik ekibimiz için uyarı yorgunluğunu nasıl önlüyorsunuz?",
+            "answer": "PagerDuty veya Opsgenie gibi araçları kullanarak akıllı uyarı eşikleri ve tekilleştirme kuralları uyguluyoruz. Kritik uyarıları önemsiz olanlardan ayırarak, ekibinizin yalnızca acil insan müdahalesi gerektiğinde bilgilendirilmesini sağlıyoruz."
+          },
+          {
+            "question": "Hangi izleme araçlarını destekliyorsunuz?",
+            "answer": "Datadog, Prometheus, Grafana, New Relic ve ELK Stack dahil olmak üzere geniş bir endüstri standardı araç yelpazesini destekliyoruz. Özel altyapınıza ve bütçenize göre en iyi kombinasyonu seçip yapılandırıyoruz."
+          },
+          {
+            "question": "İzleme ajanlarının yüklenmesi uygulamamızı yavaşlatır mı?",
+            "answer": "Hayır, modern izleme ajanları son derece hafif olacak şekilde tasarlanmıştır ve genellikle %1'den daha az CPU ve bellek tüketir. Fark edilebilir bir performans etkisi olmadan kapsamlı görünürlük sağlamak için örnekleme oranlarını dikkatlice yapılandırıyoruz."
+          },
+          {
+            "question": "7/24 olay müdahale desteği sunuyor musunuz?",
+            "answer": "Evet, SLA anlaşmaları kapsamında garantili yanıt süreleriyle özel nöbetçi destek seçenekleri sunuyoruz. Ekibimiz kritik uyarılara yanıt vermeye ve günün her saatinde sorunları çözmeye hazırdır."
+          },
+          {
+            "question": "Çoklu bulut veya hibrit ortamları izleyebilir misiniz?",
+            "answer": "Kesinlikle, AWS, Azure, Google Cloud ve şirket içi sunucuları kapsayan birleşik izleme çözümleri kurma konusunda uzmanız. Bu, tüm altyapınız için tek bir yönetim paneli sağlar."
+          },
+          {
+            "question": "Günlük (log) yönetimi kesintisiz izlemeye nasıl uyum sağlar?",
+            "answer": "Günlük yönetimi, uygulama ve sistem günlüklerini merkezileştirerek gerçek zamanlı olarak aranabilir hale getirir. Bu, olay sonrası kök neden analizi ve güvenlik tehditlerinin veya sessiz uygulama hatalarının tespiti için çok önemlidir."
+          },
+          {
+            "question": "Sentetik izleme nedir ve buna ihtiyacımız var mı?",
+            "answer": "Sentetik izleme, giriş yapma veya ödeme yapma gibi kullanıcı yolculuklarını düzenli aralıklarla simüle eder. Trafik düşük olduğunda bile bozuk kullanıcı akışları konusunda sizi uyardığı için şiddetle tavsiye edilir."
+          }
+        ],
+        "technologies": [
+          {
+            "name": "Datadog",
+            "icon": "datadog"
+          },
+          {
+            "name": "Prometheus",
+            "icon": "prometheus"
+          },
+          {
+            "name": "Grafana",
+            "icon": "grafana"
+          },
+          {
+            "name": "New Relic",
+            "icon": "newrelic"
+          },
+          {
+            "name": "Elasticsearch",
+            "icon": "elasticsearch"
+          },
+          {
+            "name": "PagerDuty",
+            "icon": "pagerduty"
+          }
+        ]
+      }
+    },
+    "de": {
+      "name": "Kontinuierliche Überwachung & APM",
+      "shortDescription": "Sichern Sie eine 24/7-Systemverfügbarkeit und Spitzenleistung mit proaktiver Infrastrukturüberwachung, Echtzeit-Anwendungsmetriken und automatisierten Alarmierungssystemen für moderne Cloud-Umgebungen.",
+      "fullDescription": "Schützen Sie Ihre digitalen Abläufe vor kostspieligen Ausfällen mit den umfassenden Überwachungsdiensten von PakSoft. Wir implementieren fortschrittliche APM- und Infrastruktur-Tools, um Ihren gesamten Stack in Echtzeit zu überwachen. Durch die Analyse von Systemprotokollen, Datenbankabfragen und Servermetriken identifizieren wir Leistungsengpässe, bevor sie Ihre Benutzer beeinträchtigen. Unser Team konfiguriert intelligente, rauschreduzierte Alarmschwellenwerte und entwirft maßgeschneiderte Grafana- oder Datadog-Dashboards für vollständige Transparenz. Mit unserer 24/7-Incident-Response-Integration garantieren wir eine schnelle Behebung von Anomalien und sichern eine Systemverfügbarkeit von 99,99 %.",
+      "features": [
+        "Echtzeit-Infrastrukturüberwachung",
+        "Application Performance Monitoring (APM)",
+        "Zentralisiertes Log-Management & Analyse",
+        "Individuelles Dashboard-Design (Grafana/Datadog)",
+        "Intelligente Alarmierung & Rauschunterdrückung",
+        "Synthetische Transaktions- & API-Überwachung",
+        "Datenbankabfrage-Leistungsprofilierung",
+        "Automatisierte Incident-Response-Integration"
+      ],
+      "benefits": [
+        "Garantierte Systemverfügbarkeit von 99,99 %",
+        "Proaktive Erkennung von Engpässen",
+        "Reduzierte mittlere Lösungszeit (MTTR)",
+        "Vollständige Transparenz des operativen Stacks",
+        "Eliminierung von Alarmmüdigkeit",
+        "Optimierte Cloud-Infrastrukturkosten"
+      ],
+      "metaTitle": "Kontinuierliche Überwachung & APM | PakSoft",
+      "metaDescription": "Sichern Sie 99,99 % Uptime mit PakSofts 24/7-Überwachung & APM. Vermeiden Sie Ausfälle und optimieren Sie die Cloud-Performance. Jetzt anfragen!",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Audit & Strategie",
+            "description": "Wir analysieren Ihre aktuelle Infrastrukturarchitektur und identifizieren kritische Leistungsmetriken. Dies ermöglicht uns die Entwicklung einer maßgeschneiderten Überwachungsstrategie, die auf Ihre Geschäftsziele abgestimmt ist."
+          },
+          {
+            "step": 2,
+            "title": "Agenten-Bereitstellung",
+            "description": "Unser Team installiert leichtgewichtige Überwachungsagenten auf Ihren Servern, Datenbanken und Anwendungen. Wir gewährleisten eine unterbrechungsfreie Bereitstellung in Ihren aktiven Produktionsumgebungen."
+          },
+          {
+            "step": 3,
+            "title": "Dashboard-Erstellung",
+            "description": "Wir erstellen intuitive, zentralisierte Dashboards mit Grafana, Datadog oder Prometheus. Diese Visualisierungen bieten Ihrem Team Echtzeit-Einblicke in den Systemzustand und die Ressourcenauslastung."
+          },
+          {
+            "step": 4,
+            "title": "Alarm-Konfiguration",
+            "description": "Wir legen intelligente Schwellenwerte fest, um Alarme nur bei echten, handlungsrelevanten Anomalien auszulösen. Dies eliminiert Alarmmüdigkeit und stellt sicher, dass kritische Probleme sofortige Aufmerksamkeit erhalten."
+          },
+          {
+            "step": 5,
+            "title": "Incident-Playbooks",
+            "description": "Unsere Ingenieure dokumentieren schrittweise Reaktionsleitfäden für potenzielle Systemausfälle. Diese automatisierten und manuellen Verfahren garantieren eine schnelle und konsistente Wiederherstellung bei kritischen Vorfällen."
+          },
+          {
+            "step": 6,
+            "title": "Kontinuierliche Optimierung",
+            "description": "Wir überprüfen regelmäßig die Leistungsdaten, um langfristige Trends und Optimierungspotenziale zu identifizieren. Diese proaktive Analyse hilft, zukünftige Engpässe zu vermeiden und die Infrastrukturkosten zu senken."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Was ist der Unterschied zwischen Basis-Überwachung und APM?",
+            "answer": "Die Basis-Überwachung verfolgt Infrastrukturmetriken wie CPU, Arbeitsspeicher und Festplattennutzung. Application Performance Monitoring (APM) geht tiefer und verfolgt einzelne Code-Ausführungen, Datenbankabfragen und externe API-Aufrufe, um genaue Leistungsengpässe zu lokalisieren."
+          },
+          {
+            "question": "Wie verhindern Sie Alarmmüdigkeit bei unserem Entwicklerteam?",
+            "answer": "Wir implementieren intelligente Alarmschwellenwerte und Deduplizierungsregeln mit Tools wie PagerDuty oder Opsgenie. Durch die Trennung kritischer Alarme von unwichtigen Warnungen wird Ihr Team nur benachrichtigt, wenn ein sofortiges menschliches Eingreifen erforderlich ist."
+          },
+          {
+            "question": "Welche Überwachungstools unterstützen Sie?",
+            "answer": "Wir unterstützen eine Vielzahl von Branchenstandards wie Datadog, Prometheus, Grafana, New Relic und den ELK-Stack. Wir wählen und konfigurieren die beste Kombination basierend auf Ihrer spezifischen Infrastruktur und Ihrem Budget."
+          },
+          {
+            "question": "Verlangsamt die Installation von Überwachungsagenten unsere Anwendung?",
+            "answer": "Nein, moderne Überwachungsagenten sind extrem leichtgewichtig und verbrauchen in der Regel weniger als 1 % CPU und Arbeitsspeicher. Wir konfigurieren die Stichprobenraten sorgfältig, um eine umfassende Sichtbarkeit ohne spürbare Leistungseinbußen zu gewährleisten."
+          },
+          {
+            "question": "Bieten Sie einen 24/7-Support für die Vorfallreaktion an?",
+            "answer": "Ja, wir bieten dedizierte On-Call-Support-Optionen mit garantierten Reaktionszeiten im Rahmen von SLA-Vereinbarungen an. Unser Team ist bereit, auf kritische Alarme zu reagieren und Probleme zu jeder Tages- und Nachtzeit zu lösen."
+          },
+          {
+            "question": "Können Sie Multi-Cloud- oder Hybrid-Umgebungen überwachen?",
+            "answer": "Absolut, wir sind darauf spezialisiert, einheitliche Überwachungslösungen einzurichten, die sich über AWS, Azure, Google Cloud und On-Premises-Server erstrecken. Dies bietet Ihnen eine zentrale Benutzeroberfläche für Ihre gesamte Infrastruktur."
+          },
+          {
+            "question": "Wie fügt sich das Log-Management in die kontinuierliche Überwachung ein?",
+            "answer": "Das Log-Management zentralisiert Anwendungs- und Systemprotokolle und macht sie in Echtzeit durchsuchbar. Dies ist entscheidend für die Ursachenanalyse nach Vorfällen sowie für die Erkennung von Sicherheitsbedrohungen oder stillen Anwendungsfehlern."
+          },
+          {
+            "question": "Was ist synthetische Überwachung und benötigen wir sie?",
+            "answer": "Die synthetische Überwachung simuliert in regelmäßigen Abständen Benutzerpfade wie das Anmelden oder Bezahlen. Sie wird dringend empfohlen, da sie Sie auch bei geringem Datenverkehr auf fehlerhafte Benutzerabläufe aufmerksam macht."
+          }
+        ],
+        "technologies": [
+          {
+            "name": "Datadog",
+            "icon": "datadog"
+          },
+          {
+            "name": "Prometheus",
+            "icon": "prometheus"
+          },
+          {
+            "name": "Grafana",
+            "icon": "grafana"
+          },
+          {
+            "name": "New Relic",
+            "icon": "newrelic"
+          },
+          {
+            "name": "Elasticsearch",
+            "icon": "elasticsearch"
+          },
+          {
+            "name": "PagerDuty",
+            "icon": "pagerduty"
+          }
+        ]
+      }
+    },
+    "ur": {
+      "name": "مسلسل مانیٹرنگ اور APM",
+      "shortDescription": "جدید کلاؤڈ ماحول کے لیے ڈیزائن کردہ فعال انفراسٹرکچر مانیٹرنگ، ریئل ٹائم ایپلیکیشن کارکردگی میٹرکس، اور خودکار الرٹ سسٹمز کے ساتھ 24/7 سسٹم کی دستیابی کو یقینی بنائیں۔",
+      "fullDescription": "پاک سافٹ کی جامع مسلسل مانیٹرنگ سروسز کے ساتھ اپنے ڈیجیٹل آپریشنز کو مہنگے ڈاؤن ٹائم سے بچائیں۔ ہم آپ کے پورے اسٹیک کو ریئل ٹائم میں مانیٹر کرنے کے لیے ایڈوانسڈ ایپلیکیشن پرفارمنس مانیٹرنگ (APM) اور انفراسٹرکچر ٹریکنگ ٹولز کا استعمال کرتے ہیں۔ سسٹم لاگز، ڈیٹا بیس کیوریز، اور سرور میٹرکس کا تجزیہ کر کے، ہم کارکردگی کی رکاوٹوں کو صارفین پر اثر انداز ہونے سے پہلے ہی شناخت کر لیتے ہیں۔ ہماری ٹیم ذہین، شور سے پاک الرٹنگ تھریشولڈز ترتیب دیتی ہے اور مکمل آپریشنل مرئیت کے لیے کسٹم Grafana یا Datadog ڈیش بورڈز ڈیزائن کرتی ہے۔ 24/7 ہنگامی ردعمل کے ساتھ، ہم 99.99% اپ ٹائم کی ضمانت دیتے ہیں۔",
+      "features": [
+        "ریئل ٹائم انفراسٹرکچر ٹریکنگ",
+        "ایپلیکیشن پرفارمنس مانیٹرنگ (APM)",
+        "مرکزی لاگ مینجمنٹ اور تجزیہ",
+        "کسٹم ڈیش بورڈ ڈیزائن (Grafana/Datadog)",
+        "ذہین الرٹنگ اور شور کی کمی",
+        "سنتھیٹک ٹرانزیکشن اور API مانیٹرنگ",
+        "ڈیٹا بیس کیوری پرفارمنس پروفائلنگ",
+        "خودکار انسیڈنٹ ریسپانس انٹیگریشن"
+      ],
+      "benefits": [
+        "99.99% سسٹم اپ ٹائم کی ضمانت",
+        "فعال طور پر رکاوٹوں کی شناخت",
+        "مسائل کے حل کے اوسط وقت (MTTR) میں کمی",
+        "پورے آپریشنل اسٹیک کی مکمل مرئیت",
+        "الرٹ کی تھکن کا خاتمہ",
+        "کلاؤڈ انفراسٹرکچر کے اخراجات میں بہتری"
+      ],
+      "metaTitle": "مسلسل مانیٹرنگ اور APM سروسز | PakSoft",
+      "metaDescription": "پاک سافٹ کی 24/7 مسلسل مانیٹرنگ اور APM سروسز کے ساتھ 99.99% اپ ٹائم حاصل کریں۔ ڈاؤن ٹائم سے بچیں اور کلاؤڈ کارکردگی کو بہتر بنائیں۔ آج ہی رابطہ کریں!",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "آڈٹ اور حکمت عملی",
+            "description": "ہم آپ کے موجودہ انفراسٹرکچر آرکیٹیکچر کا تجزیہ کرتے ہیں اور اہم کارکردگی کے میٹرکس کی شناخت کرتے ہیں۔ یہ ہمیں ایک ایسا مانیٹرنگ پلان بنانے کی اجازت دیتا ہے جو آپ کے کاروباری اہداف سے مطابقت رکھتا ہو۔"
+          },
+          {
+            "step": 2,
+            "title": "ایجنٹ کی تعیناتی",
+            "description": "ہماری ٹیم آپ کے سرورز، ڈیٹا بیسز اور ایپلیکیشنز پر ہلکے وزن والے مانیٹرنگ ایجنٹس انسٹال کرتی ہے۔ ہم اس بات کو یقینی بناتے ہیں کہ اس سیٹ اپ کے دوران آپ کے لائیو پروڈکشن ماحول میں کوئی خلل نہ آئے۔"
+          },
+          {
+            "step": 3,
+            "title": "ڈیش بورڈ کی تخلیق",
+            "description": "ہم Grafana، Datadog، یا Prometheus کا استعمال کرتے ہوئے آسان اور مرکزی ڈیش بورڈز بناتے ہیں۔ یہ ڈیش بورڈز آپ کی ٹیم کو سسٹم کی صحت اور وسائل کے استعمال کے بارے میں ریئل ٹائم معلومات فراہم کرتے ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "الرٹ کنفیگریشن",
+            "description": "ہم صرف حقیقی اور قابل عمل مسائل کے لیے الرٹس کو متحرک کرنے کے لیے ذہین حدیں مقرر کرتے ہیں۔ یہ الرٹ کی تھکن کو ختم کرتا ہے اور اس بات کو یقینی بناتا ہے کہ اہم مسائل پر فوری توجہ دی جائے۔"
+          },
+          {
+            "step": 5,
+            "title": "انسیڈنٹ پلے بکس",
+            "description": "ہمارے انجینئرز ممکنہ سسٹم کی خرابیوں کے لیے مرحلہ وار جوابی گائیڈز تیار کرتے ہیں۔ یہ خودکار اور دستی طریقہ کار نازک حالات کے دوران تیز رفتار اور مستقل بحالی کی ضمانت دیتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "مسلسل اصلاح",
+            "description": "ہم طویل مدتی رجحانات اور بہتری کے مواقع کی شناخت کے لیے کارکردگی کے ڈیٹا کا باقاعدگی سے جائزہ لیتے ہیں۔ یہ فعال تجزیہ مستقبل کی رکاوٹوں کو روکنے اور انفراسٹرکچر کے اخراجات کو کم کرنے میں مدد کرتا ہے۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "بنیادی مانیٹرنگ اور APM میں کیا فرق ہے؟",
+            "answer": "بنیادی مانیٹرنگ انفراسٹرکچر میٹرکس جیسے CPU، میموری، اور ڈسک کے استعمال کو ٹریک کرتی ہے۔ ایپلیکیشن پرفارمنس مانیٹرنگ (APM) گہرائی میں جا کر کوڈ کے نفاذ، ڈیٹا بیس کیوریز، اور بیرونی API کالز کو ٹریک کرتی ہے تاکہ کارکردگی کی اصل رکاوٹوں کا پتہ لگایا جا سکے۔"
+          },
+          {
+            "question": "آپ ہماری انجینئرنگ ٹیم کے لیے الرٹ کی تھکن کو کیسے روکتے ہیں؟",
+            "answer": "ہم PagerDuty یا Opsgenie جیسے ٹولز کا استعمال کرتے ہوئے ذہین الرٹ کی حدیں اور ڈپلیکیشن قوانین نافذ کرتے ہیں۔ اہم الرٹس کو غیر ضروری وارننگز سے الگ کر کے، آپ کی ٹیم کو صرف تب ہی مطلع کیا جاتا ہے جب فوری انسانی مداخلت کی ضرورت ہو۔"
+          },
+          {
+            "question": "آپ کن مانیٹرنگ ٹولز کو سپورٹ کرتے ہیں؟",
+            "answer": "ہم صنعت کے معیاری ٹولز کی ایک وسیع رینج کو سپورٹ کرتے ہیں جن میں Datadog، Prometheus، Grafana، New Relic، اور ELK Stack شامل ہیں۔ ہم آپ کے مخصوص انفراسٹرکچر اور بجٹ کی بنیاد پر بہترین امتزاج کا انتخاب اور ترتیب دیتے ہیں۔"
+          },
+          {
+            "question": "کیا مانیٹرنگ ایجنٹس انسٹال کرنے سے ہماری ایپلیکیشن سست ہو جائے گی؟",
+            "answer": "نہیں، جدید مانیٹرنگ ایجنٹس انتہائی ہلکے وزن کے لیے ڈیزائن کیے گئے ہیں، جو عام طور پر 1% سے کم CPU اور میموری استعمال کرتے ہیں۔ ہم سیمپلنگ کی شرحوں کو احتیاط سے ترتیب دیتے ہیں تاکہ کارکردگی پر اثر ڈالے بغیر مکمل مرئیت حاصل کی جا سکے۔"
+          },
+          {
+            "question": "کیا آپ 24/7 انسیڈنٹ ریسپانس سپورٹ پیش کرتے ہیں؟",
+            "answer": "جی ہاں، ہم SLA معاہدوں کے تحت گارنٹی شدہ جوابی اوقات کے ساتھ آن کال سپورٹ کے اختیارات فراہم کرتے ہیں۔ ہماری ٹیم کسی بھی وقت اہم الرٹس کا جواب دینے اور مسائل کو حل کرنے کے لیے تیار رہتی ہے۔"
+          },
+          {
+            "question": "کیا آپ ملٹی کلاؤڈ یا ہائبرڈ ماحول کی نگرانی کر سکتے ہیں؟",
+            "answer": "بالکل، ہم ایسے متحد مانیٹرنگ سلوشنز قائم کرنے میں مہارت رکھتے ہیں جو AWS، Azure، Google Cloud، اور آن پریمیسس سرورز پر محیط ہو۔ یہ آپ کو آپ کے پورے انفراسٹرکچر کے لیے ایک واحد مانیٹرنگ پینل فراہم کرتا ہے۔"
+          },
+          {
+            "question": "لاگ مینجمنٹ مسلسل مانیٹرنگ میں کیسے مددگار ہے؟",
+            "answer": "لاگ مینجمنٹ ایپلیکیشن اور سسٹم لاگز کو ایک جگہ جمع کرتی ہے، جس سے وہ ریئل ٹائم میں تلاش کے قابل بن جاتے ہیں۔ یہ واقعہ کے بعد بنیادی وجہ کے تجزیے اور سیکیورٹی خطرات یا خاموش ایپلیکیشن کی غلطیوں کی شناخت کے لیے اہم ہے۔"
+          },
+          {
+            "question": "سنتھیٹک مانیٹرنگ کیا ہے اور کیا ہمیں اس کی ضرورت ہے؟",
+            "answer": "سنتھیٹک مانیٹرنگ باقاعدہ وقفوں سے صارف کے سفر، جیسے لاگ ان یا چیک آؤٹ، کی نقل کرتی ہے۔ اس کی انتہائی سفارش کی جاتی ہے کیونکہ یہ ٹریفک کم ہونے پر بھی خراب صارف کے بہاؤ کے بارے میں آپ کو الرٹ کرتی ہے۔"
+          }
+        ],
+        "technologies": [
+          {
+            "name": "Datadog",
+            "icon": "datadog"
+          },
+          {
+            "name": "Prometheus",
+            "icon": "prometheus"
+          },
+          {
+            "name": "Grafana",
+            "icon": "grafana"
+          },
+          {
+            "name": "New Relic",
+            "icon": "newrelic"
+          },
+          {
+            "name": "Elasticsearch",
+            "icon": "elasticsearch"
+          },
+          {
+            "name": "PagerDuty",
+            "icon": "pagerduty"
+          }
+        ]
+      }
+    },
+    "ar": {
+      "name": "المراقبة المستمرة وإدارة أداء التطبيقات APM",
+      "shortDescription": "اضمن توفر النظام على مدار الساعة طوال أيام الأسبوع والأداء العالي من خلال مراقبة البنية التحتية الاستباقية ومقاييس أداء التطبيقات في الوقت الفعلي وأنظمة التنبيه الآلية المصممة لبيئات السحاب الحديثة.",
+      "fullDescription": "احمِ عملياتك الرقمية من التوقف المكلف عن العمل من خلال خدمات المراقبة المستمرة الشاملة من PakSoft. نقوم بنشر أدوات متقدمة لمراقبة أداء التطبيقات (APM) وتتبع البنية التحتية لمراقبة نظامك بالكامل في الوقت الفعلي. من خلال تحليل سجلات النظام واستعلامات قواعد البيانات ومقاييس الخادم، نحدد اختناقات الأداء قبل أن تؤثر على المستخدمين. يقوم فريقنا بتكوين عتبات تنبيه ذكية وخالية من الضوضاء وتصميم لوحات معلومات مخصصة باستخدام Grafana أو Datadog لرؤية تشغيلية كاملة. مع تكامل الاستجابة للحوادث على مدار الساعة طوال أيام الأسبوع، نضمن الحل السريع للمشكلات والحفاظ على وقت تشغيل بنسبة 99.99%.",
+      "features": [
+        "تتبع البنية التحتية في الوقت الفعلي",
+        "مراقبة أداء التطبيقات (APM)",
+        "إدارة السجلات المركزية وتحليلها",
+        "تصميم لوحات معلومات مخصصة (Grafana/Datadog)",
+        "التنبيه الذكي وتقليل الضوضاء",
+        "المراقبة الاصطناعية وتتبع واجهات برمجة التطبيقات API",
+        "تحديد أداء استعلامات قواعد البيانات",
+        "تكامل الاستجابة الآلية للحوادث"
+      ],
+      "benefits": [
+        "ضمان وقت تشغيل النظام بنسبة 99.99%",
+        "تحديد الاختناقات بشكل استباقي",
+        "تقليل متوسط وقت الحل (MTTR)",
+        "رؤية كاملة للنظام التشغيلي",
+        "القضاء على إجهاد التنبيهات",
+        "تحسين تكاليف البنية التحتية السحابية"
+      ],
+      "metaTitle": "خدمات المراقبة المستمرة وAPM | PakSoft",
+      "metaDescription": "اضمن وقت تشغيل بنسبة 99.99% مع خدمات المراقبة المستمرة وAPM على مدار الساعة من PakSoft. امنع التوقف وحسّن أداء السحابة. اتصل بنا اليوم!",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "التدقيق والاستراتيجية",
+            "description": "نقوم بتحليل بنية البنية التحتية الحالية وتحديد مقاييس الأداء الحيوية. يتيح لنا ذلك تصميم استراتيجية مراقبة مخصصة تتوافق مع أهداف عملك."
+          },
+          {
+            "step": 2,
+            "title": "نشر وكلاء المراقبة",
+            "description": "يقوم فريقنا بتثبيت وكلاء مراقبة خفيفي الوزن عبر الخوادم وقواعد البيانات والتطبيقات الخاصة بك. نحن نضمن عدم حدوث أي انقطاع في بيئات الإنتاج النشطة أثناء هذه المرحلة."
+          },
+          {
+            "step": 3,
+            "title": "إنشاء لوحات المعلومات",
+            "description": "نقوم ببناء لوحات معلومات بديهية ومركزية باستخدام Grafana أو Datadog أو Prometheus. توفر هذه المرئيات لفريقك رؤى في الوقت الفعلي حول صحة النظام واستخدام الموارد."
+          },
+          {
+            "step": 4,
+            "title": "تكوين التنبيهات",
+            "description": "نضع حدودًا ذكية لتشغيل التنبيهات فقط في حالة حدوث مشكلات حقيقية وقابلة للتنفيذ. هذا يزيل إجهاد التنبيهات ويضمن حصول المشكلات الحرجة على اهتمام فوري."
+          },
+          {
+            "step": 5,
+            "title": "كتيبات الاستجابة للحوادث",
+            "description": "يوثق مهندسونا أدلة استجابة خطوة بخطوة للأعطال المحتملة في النظام. تضمن هذه الإجراءات الآلية واليدوية التعافي السريع والمتسق أثناء الحوادث الحرجة."
+          },
+          {
+            "step": 6,
+            "title": "التحسين المستمر",
+            "description": "نراجع بيانات الأداء بانتظام لتحديد الاتجاهات طويلة الأجل وفرص التحسين. يساعد هذا التحليل الاستباقي في منع الاختناقات المستقبلية وتقليل تكاليف البنية التحتية."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما الفرق بين المراقبة الأساسية ومراقبة أداء التطبيقات APM؟",
+            "answer": "تتتبع المراقبة الأساسية مقاييس البنية التحتية مثل المعالج والذاكرة واستخدام القرص. بينما تذهب مراقبة أداء التطبيقات (APM) إلى عمق أكبر، حيث تتبع تنفيذ الأكواد واستعلامات قواعد البيانات واستدعاءات واجهة برمجة التطبيقات الخارجية لتحديد اختناقات الأداء بدقة."
+          },
+          {
+            "question": "كيف تمنعون إجهاد التنبيهات لفريق الهندسة لدينا؟",
+            "answer": "نحن نطبق عتبات تنبيه ذكية وقواعد تكرار باستخدام أدوات مثل PagerDuty أو Opsgenie. من خلال فصل التنبيهات الحرجة عن التحذيرات غير القابلة للتنفيذ، يتم إخطار فريقك فقط عندما يكون التدخل البشري الفوري مطلوبًا."
+          },
+          {
+            "question": "ما هي أدوات المراقبة التي تدعمونها؟",
+            "answer": "نحن ندعم مجموعة واسعة من الأدوات القياسية في الصناعة بما في ذلك Datadog و Prometheus و Grafana و New Relic و ELK Stack. نختار ونقوم بتكوين المزيج الأفضل بناءً على بنيتك التحتية المحددة وميزانيتك."
+          },
+          {
+            "question": "هل سيؤدي تثبيت وكلاء المراقبة إلى إبطاء تطبيقنا؟",
+            "answer": "لا، تم تصميم وكلاء المراقبة الحديثة لتكون خفيفة الوزن للغاية، وعادة ما تستهلك أقل من 1% من المعالج والذاكرة. نحن نكون معدلات أخذ العينات بعناية لضمان رؤية شاملة دون أي تأثير ملحوظ على الأداء."
+          },
+          {
+            "question": "هل تقدمون دعم الاستجابة للحوادث على مدار الساعة طوال أيام الأسبوع؟",
+            "answer": "نعم، نحن نقدم خيارات دعم مخصصة عند الطلب مع أوقات استجابة مضمونة بموجب اتفاقيات مستوى الخدمة (SLA). فريقنا مستعد للاستجابة للتنبيهات الحرجة وحل المشكلات في أي ساعة من اليوم."
+          },
+          {
+            "question": "هل يمكنكم مراقبة البيئات متعددة السحابة أو الهجينة؟",
+            "answer": "بالتأكيد، نحن متخصصون في إعداد حلول مراقبة موحدة تمتد عبر AWS و Azure و Google Cloud والخوادم المحلية. يمنحك هذا واجهة واحدة لإدارة بنيتك التحتية بالكامل."
+          },
+          {
+            "question": "كيف تتناسب إدارة السجلات مع المراقبة المستمرة؟",
+            "answer": "تعمل إدارة السجلات على مركزية سجلات التطبيقات والنظام، مما يجعلها قابلة للبحث في الوقت الفعلي. هذا أمر بالغ الأهمية لتحليل السبب الجذري بعد الحوادث وتحديد التهديدات الأمنية أو أخطاء التطبيقات الصامتة."
+          },
+          {
+            "question": "ما هي المراقبة الاصطناعية وهل نحتاجها؟",
+            "answer": "تحاكي المراقبة الاصطناعية رحلات المستخدم، مثل تسجيل الدخول أو إتمام الشراء، على فترات منتظمة. يوصى بها بشدة لأنها تنبهك إلى تدفقات المستخدم المعطلة حتى عندما تكون حركة المرور منخفضة."
+          }
+        ],
+        "technologies": [
+          {
+            "name": "Datadog",
+            "icon": "datadog"
+          },
+          {
+            "name": "Prometheus",
+            "icon": "prometheus"
+          },
+          {
+            "name": "Grafana",
+            "icon": "grafana"
+          },
+          {
+            "name": "New Relic",
+            "icon": "newrelic"
+          },
+          {
+            "name": "Elasticsearch",
+            "icon": "elasticsearch"
+          },
+          {
+            "name": "PagerDuty",
+            "icon": "pagerduty"
+          }
+        ]
+      }
+    }
+  },
+  "core-web-vitals": {
+    "en": {
+      "name": "Core Web Vitals Optimization",
+      "shortDescription": "Accelerate your website loading speeds, eliminate layout shifts, and boost search engine rankings with our comprehensive Core Web Vitals audit and engineering services designed for modern web applications.",
+      "fullDescription": "Slow loading speeds and unstable layouts frustrate users and directly damage your search engine rankings. Our Core Web Vitals optimization service targets the critical metrics Google uses to evaluate user experience: Largest Contentful Paint (LCP), Interaction to Next Paint (INP), and Cumulative Layout Shift (CLS). We perform deep-dive audits of your frontend architecture, optimize critical rendering paths, implement advanced image compression, and eliminate render-blocking JavaScript. By resolving these performance bottlenecks, we help your business achieve perfect Lighthouse scores, lower bounce rates, and secure a competitive edge in organic search results.",
+      "features": [
+        "Largest Contentful Paint (LCP) Acceleration",
+        "Interaction to Next Paint (INP) Optimization",
+        "Cumulative Layout Shift (CLS) Prevention",
+        "Critical Rendering Path Optimization",
+        "Advanced Image and Asset Compression",
+        "Render-Blocking JavaScript Elimination",
+        "Real User Monitoring (RUM) Setup",
+        "Server-Side Rendering (SSR) Tuning"
+      ],
+      "benefits": [
+        "Improved Google Search Rankings",
+        "Reduced Bounce Rates",
+        "Increased Conversion Rates",
+        "Enhanced Mobile User Experience",
+        "Lower Server Bandwidth Costs",
+        "Faster Page Load Times"
+      ],
+      "metaTitle": "Core Web Vitals Optimization | PakSoft",
+      "metaDescription": "Boost your Google rankings and user experience. Get expert Core Web Vitals optimization to fix LCP, INP, and CLS issues. Contact PakSoft today!",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Initial Audit",
+            "description": "We conduct a comprehensive performance audit using Lighthouse and Chrome User Experience reports. This establishes a clear baseline of your current LCP, INP, and CLS metrics."
+          },
+          {
+            "step": 2,
+            "title": "Bottleneck Identification",
+            "description": "Our engineers analyze your critical rendering path and identify render-blocking scripts. We pinpoint the exact elements causing layout shifts and slow execution times."
+          },
+          {
+            "step": 3,
+            "title": "Asset Optimization",
+            "description": "We implement modern image formats, lazy loading, and aggressive code-splitting strategies. This significantly reduces the initial payload size and speeds up visual delivery."
+          },
+          {
+            "step": 4,
+            "title": "Execution Tuning",
+            "description": "We optimize JavaScript execution by deferring non-critical scripts and refactoring heavy event handlers. This directly improves your Interaction to Next Paint score."
+          },
+          {
+            "step": 5,
+            "title": "Layout Stabilization",
+            "description": "We apply explicit dimensions to media elements and optimize web font loading behaviors. This completely eliminates unexpected layout shifts during page rendering."
+          },
+          {
+            "step": 6,
+            "title": "Continuous Monitoring",
+            "description": "We set up real-time monitoring tools to track performance metrics across different devices. This ensures your website remains fast and compliant with future updates."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What are Core Web Vitals?",
+            "answer": "Core Web Vitals are a set of specific factors that Google considers important in a webpage's overall user experience. They consist of three specific page speed and user interaction measurements: LCP, INP, and CLS."
+          },
+          {
+            "question": "How does LCP affect my website?",
+            "answer": "Largest Contentful Paint measures how quickly the main content of a web page loads. A slow LCP frustrates users and can lead to higher bounce rates, which negatively impacts your SEO rankings."
+          },
+          {
+            "question": "What is INP and why does it matter?",
+            "answer": "Interaction to Next Paint measures a page's overall responsiveness to user inputs like clicks and taps. A low INP ensures that your website feels snappy and interactive, preventing user frustration."
+          },
+          {
+            "question": "How do you fix Cumulative Layout Shift?",
+            "answer": "We fix CLS by ensuring all images and dynamic elements have explicit width and height attributes. We also optimize font loading to prevent invisible text flashes that cause shifts."
+          },
+          {
+            "question": "Will this optimization affect my website design?",
+            "answer": "No, our optimization process focuses entirely on underlying code, asset delivery, and server configurations. Your visual design and brand identity will remain completely unchanged throughout the process."
+          },
+          {
+            "question": "How long does it take to see SEO improvements?",
+            "answer": "While performance improvements are immediate, Google search console reports can take two to four weeks to reflect the updated metrics. Organic ranking improvements typically follow shortly after validation."
+          },
+          {
+            "question": "Do you support custom JavaScript frameworks?",
+            "answer": "Yes, we specialize in optimizing complex single-page applications built on React, Next.js, Vue, and Angular. We apply framework-specific code-splitting and server-side rendering techniques."
+          },
+          {
+            "question": "How do you measure real-world performance?",
+            "answer": "We combine synthetic lab testing tools like Lighthouse with Real User Monitoring (RUM) libraries. This allows us to capture actual performance data from real users visiting your site."
+          }
+        ],
+        "technologies": [
+          {
+            "name": "PageSpeed Insights",
+            "icon": "pagespeed"
+          },
+          {
+            "name": "Lighthouse",
+            "icon": "lighthouse"
+          },
+          {
+            "name": "Chrome UX Report",
+            "icon": "crux"
+          },
+          {
+            "name": "Web Vitals",
+            "icon": "web-vitals"
+          },
+          {
+            "name": "Next.js",
+            "icon": "nextjs"
+          },
+          {
+            "name": "React",
+            "icon": "react"
+          },
+          {
+            "name": "Cloudflare",
+            "icon": "cloudflare"
+          }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Core Web Vitals Optimizasyonu",
+      "shortDescription": "Kapsamlı Core Web Vitals denetim ve mühendislik hizmetlerimizle web sitenizin yükleme hızlarını artırın, düzen kaymalarını önleyin ve arama motoru sıralamalarınızı yükseltin.",
+      "fullDescription": "Yavaş yükleme hızları ve kararsız düzenler kullanıcıları hayal kırıklığına uğratır ve arama motoru sıralamalarınıza doğrudan zarar verir. Core Web Vitals optimizasyon hizmetimiz, Google'ın kullanıcı deneyimini değerlendirmek için kullandığı kritik metrikleri hedefler: En Büyük İçerikli Boyama (LCP), Sonraki Boyamayla Etkileşim (INP) ve Kümülatif Düzen Kayması (CLS). Ön uç mimarinizi derinlemesine inceliyor, kritik oluşturma yollarını optimize ediyor, gelişmiş görsel sıkıştırma uyguluyor ve oluşturmayı engelleyen JavaScript'leri ortadan kaldırıyoruz. Bu darboğazları çözerek mükemmel Lighthouse skorları elde etmenize, hemen çıkma oranlarını düşürmenize ve organik arama sonuçlarında rekabet avantajı kazanmanıza yardımcı oluyoruz.",
+      "features": [
+        "LCP (En Büyük İçerikli Boyama) Hızlandırma",
+        "INP (Sonraki Boyamayla Etkileşim) Optimizasyonu",
+        "CLS (Kümülatif Düzen Kayması) Önleme",
+        "Kritik Oluşturma Yolu Optimizasyonu",
+        "Gelişmiş Görsel ve Varlık Sıkıştırma",
+        "Oluşturmayı Engelleyen JavaScript Temizliği",
+        "Gerçek Kullanıcı İzleme (RUM) Kurulumu",
+        "Sunucu Tarafı Oluşturma (SSR) Ayarları"
+      ],
+      "benefits": [
+        "Gelişmiş Google Arama Sıralamaları",
+        "Düşük Hemen Çıkma Oranları",
+        "Artan Dönüşüm Oranları",
+        "Gelişmiş Mobil Kullanıcı Deneyimi",
+        "Daha Düşük Sunucu Bant Genişliği Maliyetleri",
+        "Daha Hızlı Sayfa Yükleme Süreleri"
+      ],
+      "metaTitle": "Core Web Vitals Optimizasyonu | PakSoft",
+      "metaDescription": "Google sıralamalarınızı ve kullanıcı deneyiminizi yükseltin. LCP, INP ve CLS sorunlarını çözmek için uzman desteği alın. PakSoft ile hemen iletişime geçin!",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "İlk Denetim",
+            "description": "Lighthouse ve Chrome Kullanıcı Deneyimi raporlarını kullanarak kapsamlı bir performans denetimi gerçekleştiriyoruz. Bu, mevcut LCP, INP ve CLS metriklerinizin net bir temelini oluşturur."
+          },
+          {
+            "step": 2,
+            "title": "Darboğaz Tespiti",
+            "description": "Mühendislerimiz kritik oluşturma yolunuzu analiz eder ve oluşturmayı engelleyen betikleri belirler. Düzen kaymalarına ve yavaş yürütme sürelerine neden olan tam öğeleri tespit ederiz."
+          },
+          {
+            "step": 3,
+            "title": "Varlık Optimizasyonu",
+            "description": "Modern görsel formatlarını, tembel yüklemeyi (lazy loading) ve agresif kod bölme stratejilerini uyguluyoruz. Bu, başlangıç yük boyutunu önemli ölçüde azaltır ve görsel teslimatı hızlandırır."
+          },
+          {
+            "step": 4,
+            "title": "Yürütme İyileştirmesi",
+            "description": "Kritik olmayan betikleri erteleyerek ve ağır olay işleyicilerini yeniden yapılandırarak JavaScript yürütmesini optimize ediyoruz. Bu, INP skorunuzu doğrudan iyileştirir."
+          },
+          {
+            "step": 5,
+            "title": "Düzen Sabitleme",
+            "description": "Medya öğelerine açık boyutlar atıyor ve web yazı tipi yükleme davranışlarını optimize ediyoruz. Bu, sayfa oluşturma sırasında beklenmeyen düzen kaymalarını tamamen ortadan kaldırır."
+          },
+          {
+            "step": 6,
+            "title": "Sürekli İzleme",
+            "description": "Farklı cihazlardaki performans metriklerini izlemek için gerçek zamanlı izleme araçları kuruyoruz. Bu, web sitenizin hızlı kalmasını ve gelecekteki güncellemelere uyumlu olmasını sağlar."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Core Web Vitals nedir?",
+            "answer": "Core Web Vitals, Google'ın bir web sayfasının genel kullanıcı deneyiminde önemli gördüğü belirli faktörler kümesidir. LCP, INP ve CLS olmak üzere üç spesifik sayfa hızı ve kullanıcı etkileşimi ölçümünden oluşur."
+          },
+          {
+            "question": "LCP web sitemi nasıl etkiler?",
+            "answer": "En Büyük İçerikli Boyama (LCP), bir web sayfasının ana içeriğinin ne kadar hızlı yüklendiğini ölçer. Yavaş bir LCP, kullanıcıları hayal kırıklığına uğratır ve hemen çıkma oranlarını artırarak SEO sıralamalarınızı olumsuz etkiler."
+          },
+          {
+            "question": "INP nedir ve neden önemlidir?",
+            "answer": "Sonraki Boyamayla Etkileşim (INP), bir sayfanın tıklamalar ve dokunmalar gibi kullanıcı girişlerine verdiği genel yanıt verme süresini ölçer. Düşük bir INP, web sitenizin hızlı ve etkileşimli hissettirmesini sağlayarak kullanıcı memnuniyetsizliğini önler."
+          },
+          {
+            "question": "Kümülatif Düzen Kayması (CLS) nasıl düzeltilir?",
+            "answer": "Tüm görsellerin ve dinamik öğelerin açık genişlik ve yükseklik niteliklerine sahip olmasını sağlayarak CLS'yi düzeltiyoruz. Ayrıca, kaymalara neden olan görünmez metin parlamalarını önlemek için yazı tipi yüklemesini optimize ediyoruz."
+          },
+          {
+            "question": "Bu optimizasyon web sitemin tasarımını etkiler mi?",
+            "answer": "Hayır, optimizasyon sürecimiz tamamen arka plan koduna, varlık teslimatına ve sunucu yapılandırmalarına odaklanır. Görsel tasarımınız ve marka kimliğiniz süreç boyunca tamamen değişmeden kalacaktır."
+          },
+          {
+            "question": "SEO iyileşmelerini görmek ne kadar sürer?",
+            "answer": "Performans iyileştirmeleri anında gerçekleşirken, Google Search Console raporlarının güncellenmiş metrikleri yansıtması iki ila dört hafta sürebilir. Organik sıralama artışları genellikle doğrulamadan kısa bir süre sonra başlar."
+          },
+          {
+            "question": "Özel JavaScript çerçevelerini destekliyor musunuz?",
+            "answer": "Evet, React, Next.js, Vue ve Angular üzerinde oluşturulmuş karmaşık tek sayfalık uygulamaları optimize etme konusunda uzmanız. Çerçeveye özel kod bölme ve sunucu tarafı oluşturma teknikleri uyguluyoruz."
+          },
+          {
+            "question": "Gerçek dünya performansını nasıl ölçüyorsunuz?",
+            "answer": "Lighthouse gibi sentetik laboratuvar test araçlarını Gerçek Kullanıcı İzleme (RUM) kitaplıklarıyla birleştiriyoruz. Bu, sitemizi ziyaret eden gerçek kullanıcılardan gerçek performans verilerini yakalamamızı sağlar."
+          }
+        ],
+        "technologies": [
+          {
+            "name": "PageSpeed Insights",
+            "icon": "pagespeed"
+          },
+          {
+            "name": "Lighthouse",
+            "icon": "lighthouse"
+          },
+          {
+            "name": "Chrome UX Report",
+            "icon": "crux"
+          },
+          {
+            "name": "Web Vitals",
+            "icon": "web-vitals"
+          },
+          {
+            "name": "Next.js",
+            "icon": "nextjs"
+          },
+          {
+            "name": "React",
+            "icon": "react"
+          },
+          {
+            "name": "Cloudflare",
+            "icon": "cloudflare"
+          }
+        ]
+      }
+    },
+    "de": {
+      "name": "Core Web Vitals Optimierung",
+      "shortDescription": "Beschleunigen Sie die Ladezeiten Ihrer Website, eliminieren Sie Layout-Verschiebungen und verbessern Sie Ihr Suchmaschinen-Ranking mit unseren umfassenden Core Web Vitals-Audits.",
+      "fullDescription": "Langsame Ladezeiten und instabile Layouts frustrieren Nutzer und schaden Ihren Suchmaschinen-Rankings direkt. Unser Core Web Vitals-Optimierungsservice zielt auf die kritischen Metriken ab, die Google zur Bewertung der Nutzererfahrung heranzieht: Largest Contentful Paint (LCP), Interaction to Next Paint (INP) und Cumulative Layout Shift (CLS). Wir führen tiefgehende Audits Ihrer Frontend-Architektur durch, optimieren kritische Rendering-Pfade, implementieren fortsrittliche Bildkomprimierung und eliminieren renderblockierendes JavaScript. Durch die Behebung dieser Leistungsengpässe helfen wir Ihrem Unternehmen, perfekte Lighthouse-Scores zu erzielen, Absprungraten zu senken und sich einen Wettbewerbsvorteil in den organischen Suchergebnissen zu sichern.",
+      "features": [
+        "LCP-Beschleunigung (Largest Contentful Paint)",
+        "INP-Optimierung (Interaction to Next Paint)",
+        "CLS-Prävention (Cumulative Layout Shift)",
+        "Optimierung des kritischen Rendering-Pfads",
+        "Fortschrittliche Bild- und Asset-Komprimierung",
+        "Eliminierung von renderblockierendem JavaScript",
+        "Einrichtung von Real User Monitoring (RUM)",
+        "Server-Side Rendering (SSR) Tuning"
+      ],
+      "benefits": [
+        "Verbesserte Google-Suchrankings",
+        "Reduzierte Absprungraten",
+        "Erhöhte Konversionsraten",
+        "Verbesserte mobile Nutzererfahrung",
+        "Geringere Server-Bandbreitenkosten",
+        "Schnellere Seitenladezeiten"
+      ],
+      "metaTitle": "Core Web Vitals Optimierung | PakSoft",
+      "metaDescription": "Steigern Sie Ihre Google-Rankings und Nutzererfahrung. Erhalten Sie professionelle Core Web Vitals Optimierung für LCP, INP und CLS. Jetzt PakSoft kontaktieren!",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Erstes Audit",
+            "description": "Wir führen ein umfassendes Performance-Audit mit Lighthouse und Chrome User Experience Reports durch. Dies etabliert eine klare Baseline Ihrer aktuellen LCP-, INP- und CLS-Metriken."
+          },
+          {
+            "step": 2,
+            "title": "Engpassanalyse",
+            "description": "Unsere Ingenieure analysieren Ihren kritischen Rendering-Pfad und identifizieren renderblockierende Skripte. Wir lokalisieren die genauen Elemente, die Layout-Verschiebungen und langsame Ausführungszeiten verursachen."
+          },
+          {
+            "step": 3,
+            "title": "Asset-Optimierung",
+            "description": "Wir implementieren moderne Bildformate, Lazy Loading und aggressive Code-Splitting-Strategien. Dies reduziert die anfängliche Payload-Größe erheblich und beschleunigt die visuelle Bereitstellung."
+          },
+          {
+            "step": 4,
+            "title": "Ausführungs-Tuning",
+            "description": "Wir optimieren die JavaScript-Ausführung, indem wir unkritische Skripte verzögern und schwere Event-Handler refaktorieren. Dies verbessert direkt Ihren INP-Score."
+          },
+          {
+            "step": 5,
+            "title": "Layout-Stabilisierung",
+            "description": "Wir weisen Medienelementen explizite Dimensionen zu und optimieren das Ladeverhalten von Webfonts. Dies eliminiert unerwartete Layout-Verschiebungen während des Renderns vollständig."
+          },
+          {
+            "step": 6,
+            "title": "Kontinuierliche Überwachung",
+            "description": "Wir richten Echtzeit-Überwachungstools ein, um Performance-Metriken auf verschiedenen Geräten zu verfolgen. Dies stellt sicher, dass Ihre Website schnell bleibt und zukünftigen Updates entspricht."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Was sind Core Web Vitals?",
+            "answer": "Core Web Vitals sind eine Reihe spezifischer Faktoren, die Google für die allgemeine Nutzererfahrung einer Webseite als wichtig erachtet. Sie bestehen aus drei spezifischen Messungen der Seitengeschwindigkeit und Nutzerinteraktion: LCP, INP und CLS."
+          },
+          {
+            "question": "Wie beeinflusst LCP meine Website?",
+            "answer": "Largest Contentful Paint misst, wie schnell der Hauptinhalt einer Webseite geladen wird. Ein langsamer LCP frustriert Benutzer und kann zu höheren Absprungraten führen, was sich negativ auf Ihre SEO-Rankings auswirkt."
+          },
+          {
+            "question": "Was ist INP und warum ist es wichtig?",
+            "answer": "Interaction to Next Paint misst die allgemeine Reaktionsfähigkeit einer Seite auf Benutzereingaben wie Klicks und Taps. Ein niedriger INP stellt sicher, dass sich Ihre Website schnell und interaktiv anfühlt, was Frustrationen der Nutzer verhindert."
+          },
+          {
+            "question": "Wie behebt man den Cumulative Layout Shift?",
+            "answer": "Wir beheben CLS, indem wir sicherstellen, dass alle Bilder und dynamischen Elemente explizite Breiten- und Höhenattribute haben. Wir optimieren auch das Laden von Schriftarten, um unsichtbare Textblitze zu verhindern, die Verschiebungen verursachen."
+          },
+          {
+            "question": "Beeinflusst diese Optimierung das Design meiner Website?",
+            "answer": "Nein, unser Optimierungsprozess konzentriert sich ausschließlich auf den zugrunde liegenden Code, die Bereitstellung von Assets und Serverkonfigurationen. Ihr visuelles Design und Ihre Markenidentität bleiben während des gesamten Prozesses völlig unverändert."
+          },
+          {
+            "question": "Wie lange dauert es, bis SEO-Verbesserungen sichtbar sind?",
+            "answer": "Während Leistungsverbesserungen sofort wirksam sind, kann es zwei bis vier Wochen dauern, bis die Berichte der Google Search Console die aktualisierten Metriken widerspiegeln. Organische Ranking-Verbesserungen folgen in der Regel kurz nach der Validierung."
+          },
+          {
+            "question": "Unterstützen Sie benutzerdefinierte JavaScript-Frameworks?",
+            "answer": "Ja, wir sind darauf spezialisiert, komplexe Single-Page-Anwendungen zu optimieren, die auf React, Next.js, Vue und Angular basieren. Wir wenden Framework-spezifische Code-Splitting- und serverseitige Rendering-Techniken an."
+          },
+          {
+            "question": "Wie messen Sie die Leistung in der Praxis?",
+            "answer": "Wir kombinieren synthetische Labortests wie Lighthouse mit Real User Monitoring (RUM) Bibliotheken. Dies ermöglicht es uns, tatsächliche Leistungsdaten von echten Benutzern zu erfassen, die Ihre Website besuchen."
+          }
+        ],
+        "technologies": [
+          {
+            "name": "PageSpeed Insights",
+            "icon": "pagespeed"
+          },
+          {
+            "name": "Lighthouse",
+            "icon": "lighthouse"
+          },
+          {
+            "name": "Chrome UX Report",
+            "icon": "crux"
+          },
+          {
+            "name": "Web Vitals",
+            "icon": "web-vitals"
+          },
+          {
+            "name": "Next.js",
+            "icon": "nextjs"
+          },
+          {
+            "name": "React",
+            "icon": "react"
+          },
+          {
+            "name": "Cloudflare",
+            "icon": "cloudflare"
+          }
+        ]
+      }
+    },
+    "ur": {
+      "name": "کور ویب وائٹلز آپٹیمائزیشن",
+      "shortDescription": "ہماری جامع Core Web Vitals آڈٹ اور انجینئرنگ سروسز کے ساتھ اپنی ویب سائٹ کی لوڈنگ کی رفتار کو تیز کریں، لے آؤٹ کی تبدیلیوں کو ختم کریں، اور سرچ انجن رینکنگ کو بڑھائیں۔",
+      "fullDescription": "سست لوڈنگ کی رفتار اور غیر مستحکم لے آؤٹ صارفین کو مایوس کرتے ہیں اور آپ کی سرچ انجن رینکنگ کو براہ راست نقصان پہنچاتے ہیں۔ ہماری Core Web Vitals آپٹیمائزیشن سروس ان اہم میٹرکس کو نشانہ بناتی ہے جنہیں Google صارف کے تجربے کا جائزہ لینے کے لیے استعمال کرتا ہے: Largest Contentful Paint (LCP)، Interaction to Next Paint (INP)، اور Cumulative Layout Shift (CLS)۔ ہم آپ کے فرنٹ اینڈ آرکیٹیکچر کا گہرا آڈٹ کرتے ہیں، اہم رینڈرنگ پاتھز کو بہتر بناتے ہیں، جدید امیج کمپریشن نافذ کرتے ہیں، اور رینڈر بلاک کرنے والے JavaScript کو ختم کرتے ہیں۔ ان کارکردگی کی رکاوٹوں کو حل کر کے، ہم آپ کے کاروبار کو بہترین Lighthouse اسکور حاصل کرنے، باؤنس ریٹ کو کم کرنے، اور آرگینک سرچ نتائج میں مسابقتی برتری حاصل کرنے میں مدد کرتے ہیں۔",
+      "features": [
+        "LCP (Largest Contentful Paint) کی رفتار میں اضافہ",
+        "INP (Interaction to Next Paint) آپٹیمائزیشن",
+        "CLS (Cumulative Layout Shift) کی روک تھام",
+        "اہم رینڈرنگ پاتھ کی آپٹیمائزیشن",
+        "جدید امیج اور ایسٹ کمپریشن",
+        "رینڈر بلاک کرنے والے JavaScript کا خاتمہ",
+        "ریئل یوزر مانیٹرنگ (RUM) سیٹ اپ",
+        "سرور سائیڈ رینڈرنگ (SSR) ٹیوننگ"
+      ],
+      "benefits": [
+        "گوگل سرچ رینکنگ میں بہتری",
+        "باؤنس ریٹس میں کمی",
+        "کنورژن ریٹس میں اضافہ",
+        "بہتر موبائل صارف کا تجربہ",
+        "سرور بینڈوتھ کے کم اخراجات",
+        "تیز تر پیج لوڈ ٹائمز"
+      ],
+      "metaTitle": "کور ویب وائٹلز آپٹیمائزیشن | PakSoft",
+      "metaDescription": "اپنی گوگل رینکنگ اور صارف کے تجربے کو بہتر بنائیں۔ LCP، INP، اور CLS کے مسائل کو حل کرنے کے لیے ماہرانہ مدد حاصل کریں۔ آج ہی PakSoft سے رابطہ کریں!",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "ابتدائی آڈٹ",
+            "description": "ہم Lighthouse اور Chrome صارف کے تجربے کی رپورٹوں کا استعمال کرتے ہوئے ایک جامع کارکردگی کا آڈٹ کرتے ہیں۔ یہ آپ کے موجودہ LCP، INP، اور CLS میٹرکس کا ایک واضح بنیادی ڈھانچہ قائم کرتا ہے۔"
+          },
+          {
+            "step": 2,
+            "title": "رکاوٹوں کی نشاندہی",
+            "description": "ہمارے انجینئرز آپ کے اہم رینڈرنگ پاتھ کا تجزیہ کرتے ہیں اور رینڈر بلاک کرنے والے اسکرپٹس کی نشاندہی کرتے ہیں۔ ہم ان درست عناصر کی نشاندہی کرتے ہیں جو لے آؤٹ کی تبدیلیوں اور سست عمل درآمد کا سبب بنتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "ایسٹ آپٹیمائزیشن",
+            "description": "ہم جدید امیج فارمیٹس، لیزی لوڈنگ، اور جارحانہ کوڈ اسپلٹنگ کی حکمت عملیوں کو نافذ کرتے ہیں۔ یہ ابتدائی پے لوڈ سائز کو نمایاں طور پر کم کرتا ہے اور بصری ترسیل کو تیز کرتا ہے۔"
+          },
+          {
+            "step": 4,
+            "title": "عمل درآمد کی ٹیوننگ",
+            "description": "ہم غیر اہم اسکرپٹس کو مؤخر کر کے اور بھاری ایونٹ ہینڈلرز کو ری فیکٹر کر کے JavaScript کے عمل درآمد کو بہتر بناتے ہیں۔ یہ براہ راست آپ کے INP اسکور کو بہتر بناتا ہے۔"
+          },
+          {
+            "step": 5,
+            "title": "لے آؤٹ کا استحکام",
+            "description": "ہم میڈیا عناصر کے لیے واضح چوڑائی اور اونچائی کے اوصاف لاگو کرتے ہیں اور ویب فونٹ لوڈنگ کے رویوں کو بہتر بناتے ہیں۔ یہ پیج رینڈرنگ کے دوران غیر متوقع لے آؤٹ کی تبدیلیوں کو مکمل طور پر ختم کرتا ہے۔"
+          },
+          {
+            "step": 6,
+            "title": "مسلسل مانیٹرنگ",
+            "description": "ہم مختلف آلات پر کارکردگی کے میٹرکس کو ٹریک کرنے کے لیے ریئل ٹائم مانیٹرنگ ٹولز ترتیب دیتے ہیں۔ یہ یقینی بناتا ہے کہ آپ کی ویب سائٹ تیز رہے اور مستقبل کی اپ ڈیٹس کے مطابق رہے۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "کور ویب وائٹلز کیا ہیں؟",
+            "answer": "کور ویب وائٹلز مخصوص عوامل کا ایک مجموعہ ہیں جنہیں Google ویب پیج کے مجموعی صارف کے تجربے میں اہم سمجھتا ہے۔ یہ پیج کی رفتار اور صارف کے تعامل کی تین مخصوص پیمائشوں پر مشتمل ہیں: LCP، INP، اور CLS۔"
+          },
+          {
+            "question": "LCP میری ویب سائٹ کو کیسے متاثر کرتا ہے؟",
+            "answer": "Largest Contentful Paint اس بات کی پیمائش کرتا ہے کہ ویب پیج کا بنیادی مواد کتنی جلدی لوڈ ہوتا ہے۔ سست LCP صارفین کو مایوس کرتا ہے اور باؤنس ریٹ کو بڑھا سکتا ہے، جو آپ کی SEO رینکنگ کو منفی طور پر متاثر کرتا ہے۔"
+          },
+          {
+            "question": "INP کیا ہے اور یہ کیوں اہم ہے؟",
+            "answer": "Interaction to Next Paint صارف کے ان پٹس جیسے کلکس اور ٹیپس پر پیج کے مجموعی ردعمل کی پیمائش کرتا ہے۔ کم INP اس بات کو یقینی بناتا ہے کہ آپ کی ویب سائٹ تیز اور انٹرایکٹو محسوس ہو، جس سے صارف کی مایوسی سے بچا جا سکے۔"
+          },
+          {
+            "question": "آپ کcumulative لے آؤٹ شفٹ کو کیسے ٹھیک کرتے ہیں؟",
+            "answer": "ہم CLS کو اس بات کو یقینی بنا کر ٹھیک کرتے ہیں کہ تمام تصاویر اور متحرک عناصر کے پاس واضح چوڑائی اور اونچائی کے اوصاف ہوں۔ ہم فونٹ لوڈنگ کو بھی بہتر بناتے ہیں تاکہ غیر مرئی ٹیکسٹ فلیشز کو روکا جا سکے جو تبدیلیوں کا سبب بنتے ہیں۔"
+          },
+          {
+            "question": "کیا یہ آپٹیمائزیشن میری ویب سائٹ کے ڈیزائن کو متاثر کرے گی؟",
+            "answer": "نہیں، ہمارا آپٹیمائزیشن کا عمل مکمل طور پر بنیادی کوڈ، ایسٹ کی ترسیل، اور سرور کنفیگریشنز پر مرکوز ہے۔ آپ کا بصری ڈیزائن اور برانڈ کی شناخت پورے عمل کے دوران مکمل طور پر غیر تبدیل شدہ رہے گی۔"
+          },
+          {
+            "question": "SEO میں بہتری دیکھنے میں کتنا وقت لگتا ہے؟",
+            "answer": "اگرچہ کارکردگی میں بہتری فوری ہوتی ہے، لیکن Google Search Console کی رپورٹوں میں اپ ڈیٹ شدہ میٹرکس کو ظاہر ہونے میں دو سے چار ہفتے لگ سکتے ہیں۔ آرگینک رینکنگ میں بہتری عام طور پر توثیق کے فوراً بعد ہوتی ہے۔"
+          },
+          {
+            "question": "کیا آپ اپنی مرضی کے مطابق JavaScript فریم ورکس کو سپورٹ کرتے ہیں؟",
+            "answer": "جی ہاں، ہم React، Next.js، Vue، اور Angular پر بنے پیچیدہ سنگل پیج ایپلی کیشنز کو بہتر بنانے میں مہارت رکھتے ہیں۔ ہم فریم ورک کے مخصوص کوڈ اسپلٹنگ اور سرور سائیڈ رینڈرنگ کی تکنیکوں کو لاگو کرتے ہیں۔"
+          },
+          {
+            "question": "آپ حقیقی دنیا کی کارکردگی کی پیمائش کیسے کرتے ہیں؟",
+            "answer": "ہم Lighthouse جیسے مصنوعی لیب ٹیسٹنگ ٹولز کو ریئل یوزر مانیٹرنگ (RUM) لائبریریوں کے ساتھ جوڑتے ہیں۔ یہ ہمیں آپ کی سائٹ پر آنے والے حقیقی صارفین سے حقیقی کارکردگی کا ڈیٹا حاصل کرنے کی اجازت دیتا ہے۔"
+          }
+        ],
+        "technologies": [
+          {
+            "name": "PageSpeed Insights",
+            "icon": "pagespeed"
+          },
+          {
+            "name": "Lighthouse",
+            "icon": "lighthouse"
+          },
+          {
+            "name": "Chrome UX Report",
+            "icon": "crux"
+          },
+          {
+            "name": "Web Vitals",
+            "icon": "web-vitals"
+          },
+          {
+            "name": "Next.js",
+            "icon": "nextjs"
+          },
+          {
+            "name": "React",
+            "icon": "react"
+          },
+          {
+            "name": "Cloudflare",
+            "icon": "cloudflare"
+          }
+        ]
+      }
+    },
+    "ar": {
+      "name": "تحسين مؤشرات أداء الويب الأساسية",
+      "shortDescription": "قم بتسريع سرعة تحميل موقعك الإلكتروني، والقضاء على انزياحات التصميم، وتعزيز ترتيبك في محركات البحث من خلال خدمات تدقيق وهندسة Core Web Vitals الشاملة لدينا.",
+      "fullDescription": "تؤدي سرعات التحميل البطيئة والتخطيطات غير المستقرة إلى إحباط المستخدمين وتضر بترتيبك في محركات البحث بشكل مباشر. تستهدف خدمة تحسين Core Web Vitals المقاييس البالغة الأهمية التي تستخدمها Google لتقييم تجربة المستخدم: سرعة تحميل أكبر جزء من المحتوى (LCP)، والتفاعل مع عملية الطلاء التالية (INP)، وتراكم انزياح تخطيط الصفحة (CLS). نقوم بإجراء عمليات تدقيق عميقة لبنية الواجهة الأمامية الخاصة بك، وتحسين مسارات العرض الهامة، وتطبيق ضغط الصور المتقدم، والتخلص من ملفات JavaScript التي تعيق العرض. من خلال حل هذه الاختناقات، نساعد عملك على تحقيق درجات Lighthouse مثالية، وتقليل معدلات الارتداد، وتأمين ميزة تنافسية في نتائج البحث العضوية.",
+      "features": [
+        "تسريع مؤشر LCP (سرعة تحميل أكبر جزء من المحتوى)",
+        "تحسين مؤشر INP (التفاعل مع عملية الطلاء التالية)",
+        "منع مؤشر CLS (تراكم انزياح تخطيط الصفحة)",
+        "تحسين مسار العرض الحرج (Critical Rendering Path)",
+        "الضغط المتقدم للصور والأصول الرقمية",
+        "التخلص من ملفات JavaScript التي تعيق العرض",
+        "إعداد أدوات مراقبة المستخدم الحقيقي (RUM)",
+        "ضبط إعدادات العرض من جانب الخادم (SSR)"
+      ],
+      "benefits": [
+        "تحسين ترتيب الموقع في نتائج بحث Google",
+        "تقليل معدلات الارتداد بشكل ملحوظ",
+        "زيادة معدلات التحويل والمبيعات",
+        "تعزيز تجربة المستخدم على الهواتف المحمولة",
+        "خفض تكاليف استهلاك النطاق الترددي للخادم",
+        "تسريع أوقات تحميل الصفحات بشكل عام"
+      ],
+      "metaTitle": "تحسين مؤشرات أداء الويب الأساسية | PakSoft",
+      "metaDescription": "عزز ترتيبك في Google وتجربة المستخدم. احصل على تحسين احترافي لمؤشرات LCP وINP وCLS لتسريع موقعك بشكل مذهل. اتصل بـ PakSoft اليوم وابدأ الآن!",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "التدقيق الأولي",
+            "description": "نقوم بإجراء تدقيق شامل للأداء باستخدام تقارير Lighthouse وتجربة مستخدم Chrome. يتيح لنا ذلك وضع خط أساس واضح لمقاييس LCP وINP وCLS الحالية."
+          },
+          {
+            "step": 2,
+            "title": "تحديد الاختناقات",
+            "description": "يحلل مهندسونا مسار العرض الحرج ويحددون البرامج النصية التي تعيق العرض. نحدد بدقة العناصر التي تسبب انزياحات في التصميم وبطء أوقات التنفيذ."
+          },
+          {
+            "step": 3,
+            "title": "تحسين الأصول الرقمية",
+            "description": "نطبق تنسيقات الصور الحديثة، والتحميل الكسول (lazy loading)، واستراتيجيات تقسيم الكود القوية. يقلل هذا بشكل كبير من حجم الحمولة الأولية ويسرع التسليم البصري."
+          },
+          {
+            "step": 4,
+            "title": "ضبط التنفيذ",
+            "description": "نقوم بتحسين تنفيذ JavaScript عن طريق تأجيل البرامج النصية غير الحرجة وإعادة هيكلة معالجات الأحداث الثقيلة. يؤدي هذا مباشرة إلى تحسين درجة INP الخاصة بك."
+          },
+          {
+            "step": 5,
+            "title": "تثبيت التخطيط",
+            "description": "نطبق أبعادًا صريحة على عناصر الوسائط ونحسن سلوكيات تحميل خطوط الويب. يقضي هذا تمامًا على انزياحات التصميم غير المتوقعة أثناء عرض الصفحة."
+          },
+          {
+            "step": 6,
+            "title": "المراقبة المستمرة",
+            "description": "نقوم بإعداد أدوات مراقبة في الوقت الفعلي لتتبع مقاييس الأداء عبر الأجهزة المختلفة. يضمن ذلك بقاء موقع الويب الخاص بك سريعًا ومتوافقًا مع التحديثات المستقبلية."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما هي مؤشرات أداء الويب الأساسية (Core Web Vitals)؟",
+            "answer": "مؤشرات أداء الويب الأساسية هي مجموعة من العوامل المحددة التي تعتبرها Google مهمة في تجربة المستخدم الإجمالية لصفحة الويب. وهي تتكون من ثلاثة قياسات محددة لسرعة الصفحة وتفاعل المستخدم: LCP وINP وCLS."
+          },
+          {
+            "question": "كيف يؤثر مؤشر LCP على موقعي الإلكتروني؟",
+            "answer": "يقيس مؤشر LCP مدى سرعة تحميل المحتوى الرئيسي لصفحة الويب. يؤدي بطء LCP إلى إحباط المستخدمين ويمكن أن يؤدي إلى ارتفاع معدلات الارتداد، مما يؤثر سلبًا على ترتيبك في محركات البحث."
+          },
+          {
+            "question": "ما هو مؤشر INP ولماذا هو مهم؟",
+            "answer": "يقيس مؤشر INP استجابة الصفحة الإجمالية لمدخلات المستخدم مثل النقرات واللمسات. يضمن انخفاض INP أن يبدو موقع الويب الخاص بك سريعًا وتفاعليًا، مما يمنع إحباط المستخدم."
+          },
+          {
+            "question": "كيف تقومون بإصلاح تراكم انزياح تخطيط الصفحة (CLS)؟",
+            "answer": "نقوم بإصلاح CLS من خلال التأكد من أن جميع الصور والعناصر الديناميكية لها سمات عرض وارتفاع صريحة. نقوم أيضًا بتحسين تحميل الخطوط لمنع ومضات النص غير المرئي التي تسبب انزياحات."
+          },
+          {
+            "question": "هل سيؤثر هذا التحسين على تصميم موقعي الإلكتروني؟",
+            "answer": "لا، تركز عملية التحسين لدينا بالكامل على الكود الأساسي، وتسليم الأصول، وتكوينات الخادم. سيبقى تصميمك المرئي وهوية علامتك التجارية دون تغيير تمامًا طوال العملية."
+          },
+          {
+            "question": "كم من الوقت يستغرق رؤية تحسينات في تحسين محركات البحث (SEO)؟",
+            "answer": "بينما تكون تحسينات الأداء فورية، قد تستغرق تقارير Google Search Console من أسبوعين إلى أربعة أسابيع لتعكس المقاييس المحدثة. تتبع تحسينات الترتيب العضوي عادةً بعد فترة وجيزة من التحقق."
+          },
+          {
+            "question": "هل تدعمون أطر عمل JavaScript المخصصة؟",
+            "answer": "نعم، نحن متخصصون في تحسين تطبيقات الصفحة الواحدة المعقدة المبنية على React وNext.js وVue وAngular. نطبق تقنيات تقسيم الكود والعرض من جانب الخادم الخاصة بكل إطار عمل."
+          },
+          {
+            "question": "كيف تقيسون الأداء في العالم الحقيقي؟",
+            "answer": "نحن نجمع بين أدوات اختبار المختبر الاصطناعية مثل Lighthouse ومكتبات مراقبة المستخدم الحقيقي (RUM). يتيح لنا ذلك التقاط بيانات الأداء الفعلية من المستخدمين الحقيقيين الذين يزورون موقعك."
+          }
+        ],
+        "technologies": [
+          {
+            "name": "PageSpeed Insights",
+            "icon": "pagespeed"
+          },
+          {
+            "name": "Lighthouse",
+            "icon": "lighthouse"
+          },
+          {
+            "name": "Chrome UX Report",
+            "icon": "crux"
+          },
+          {
+            "name": "Web Vitals",
+            "icon": "web-vitals"
+          },
+          {
+            "name": "Next.js",
+            "icon": "nextjs"
+          },
+          {
+            "name": "React",
+            "icon": "react"
+          },
+          {
+            "name": "Cloudflare",
+            "icon": "cloudflare"
+          }
+        ]
+      }
+    }
+  },
+  "cybersecurity-auditing": {
+    "en": {
+      "name": "Cybersecurity Auditing",
+      "shortDescription": "Identify critical security vulnerabilities, compliance gaps, and infrastructure risks before malicious actors exploit them with our comprehensive, expert-led cybersecurity audits and penetration testing services.",
+      "fullDescription": "Protect your digital assets and maintain customer trust with PakSoft's comprehensive cybersecurity auditing services. Our certified security experts conduct deep-dive assessments of your web applications, cloud infrastructure, and source code to identify hidden vulnerabilities. We evaluate your systems against industry standards like OWASP Top 10, ISO 27001, and SOC 2, identifying critical gaps before attackers can exploit them. Beyond automated scanning, we perform manual penetration testing and social engineering simulations to test your human and technical defenses. You receive a prioritized remediation roadmap and an executive risk report to secure your business efficiently.",
+      "features": [
+        "Application Security Audit",
+        "Infrastructure Assessment",
+        "Cloud Security Review",
+        "Static & Dynamic Code Analysis",
+        "Compliance Gap Analysis",
+        "Social Engineering Assessment",
+        "Third-Party Risk Assessment",
+        "Executive Risk & Remediation Report"
+      ],
+      "benefits": [
+        "Proactive Threat Mitigation",
+        "Regulatory Compliance Alignment",
+        "Enhanced Customer Trust",
+        "Reduced Data Breach Costs",
+        "Secured Cloud Infrastructure",
+        "Actionable Remediation Roadmap"
+      ],
+      "metaTitle": "Cybersecurity Auditing Services | PakSoft",
+      "metaDescription": "Secure your business with expert cybersecurity auditing. We identify vulnerabilities, ensure compliance, and protect your data. Schedule your audit today!",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Scoping & Planning",
+            "description": "We define the audit boundaries, target systems, and compliance requirements for your organization. This ensures a focused assessment that aligns perfectly with your business objectives and risk profile."
+          },
+          {
+            "step": 2,
+            "title": "Information Gathering",
+            "description": "Our team collects public and private intelligence about your infrastructure to map the attack surface. We identify active hosts, open ports, and running services to prepare for deep scanning."
+          },
+          {
+            "step": 3,
+            "title": "Vulnerability Scanning",
+            "description": "We utilize advanced automated tools to scan your applications, networks, and cloud environments for known weaknesses. This step quickly highlights outdated software, misconfigurations, and common security flaws."
+          },
+          {
+            "step": 4,
+            "title": "Manual Penetration Testing",
+            "description": "Our certified ethical hackers attempt to exploit identified vulnerabilities to verify their real-world impact. This manual effort eliminates false positives and uncovers complex logical flaws that automated tools miss."
+          },
+          {
+            "step": 5,
+            "title": "Reporting & Analysis",
+            "description": "We compile our findings into a comprehensive report detailing every vulnerability, its severity, and proof of concept. This document includes both high-level executive summaries and technical remediation steps."
+          },
+          {
+            "step": 6,
+            "title": "Remediation Support",
+            "description": "Our security engineers work closely with your development team to help patch the identified vulnerabilities. We provide clear guidance and perform re-testing to ensure all security gaps are successfully closed."
+          }
+        ],
+        "faq": [
+          {
+            "question": "How often should we conduct a cybersecurity audit?",
+            "answer": "We recommend conducting a comprehensive cybersecurity audit at least once a year or after any major system changes. Regular audits ensure you stay protected against newly discovered threats and maintain compliance with industry standards."
+          },
+          {
+            "question": "What is the difference between vulnerability scanning and penetration testing?",
+            "answer": "Vulnerability scanning is an automated process that identifies potential weaknesses in your systems. Penetration testing is a manual, active attempt by ethical hackers to exploit those weaknesses to prove their real-world risk."
+          },
+          {
+            "question": "How long does a typical security audit take to complete?",
+            "answer": "A standard cybersecurity audit takes between two to four weeks depending on the scope of your infrastructure. This timeline includes scoping, active testing, manual analysis, and the delivery of the final report."
+          },
+          {
+            "question": "Will the security audit cause downtime for our active services?",
+            "answer": "We design our testing methodologies to minimize any impact on your production environments. Most active exploitation is performed in staging environments or during scheduled off-peak hours to prevent operational disruption."
+          },
+          {
+            "question": "Which compliance standards do your audits cover?",
+            "answer": "Our audits are mapped against major global standards including ISO 27001, SOC 2, GDPR, HIPAA, and PCI-DSS. We help you identify specific compliance gaps and provide actionable steps to achieve full certification."
+          },
+          {
+            "question": "What deliverables will we receive after the audit?",
+            "answer": "You will receive an executive risk report for stakeholders and a detailed technical report for developers. The technical report includes step-by-step remediation guides, proof-of-concept details, and severity ratings for each finding."
+          },
+          {
+            "question": "Do you help us fix the vulnerabilities you find?",
+            "answer": "Yes, we provide comprehensive post-audit support to guide your team through the remediation process. We offer technical consultations, code-level recommendations, and perform verification scans to ensure patches are correctly implemented."
+          },
+          {
+            "question": "How do you handle sensitive data during the audit?",
+            "answer": "We adhere to strict non-disclosure agreements and use secure, encrypted channels to handle all client data. Any sensitive information discovered during testing is handled according to industry-best data protection practices."
+          }
+        ],
+        "technologies": [
+          {
+            "name": "Burp Suite",
+            "icon": "burpsuite"
+          },
+          {
+            "name": "Nessus",
+            "icon": "nessus"
+          },
+          {
+            "name": "OWASP ZAP",
+            "icon": "owasp-zap"
+          },
+          {
+            "name": "Semgrep",
+            "icon": "semgrep"
+          },
+          {
+            "name": "ScoutSuite",
+            "icon": "scoutsuite"
+          },
+          {
+            "name": "Trivy",
+            "icon": "trivy"
+          }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Siber Güvenlik Denetimi",
+      "shortDescription": "Kapsamlı ve uzman liderliğindeki siber güvenlik denetimlerimizle, kötü niyetli aktörler istismar etmeden önce kritik güvenlik açıklarını, uyumluluk eksikliklerini ve altyapı risklerini belirleyin.",
+      "fullDescription": "PakSoft'un kapsamlı siber güvenlik denetim hizmetleriyle dijital varlıklarınızı koruyun ve müşteri güvenini sürdürün. Sertifikalı güvenlik uzmanlarımız, gizli açıkları belirlemek için web uygulamalarınızı, bulut altyapınızı ve kaynak kodlarınızı derinlemesine inceler. Sistemlerinizi OWASP Top 10, ISO 27001 ve SOC 2 gibi endüstri standartlarına göre değerlendirerek, saldırganlar sızmadan önce kritik açıkları kapatmanızı sağlıyoruz. Otomatik taramaların ötesinde, hem insani hem de teknik savunmanızı test etmek için manuel sızma testleri ve sosyal mühendislik simülasyonları gerçekleştiriyoruz. İşletmenizi verimli bir şekilde güvence altına almak için önceliklendirilmiş bir iyileştirme yol haritası ve yönetici risk raporu sunuyoruz.",
+      "features": [
+        "Uygulama Güvenliği Denetimi",
+        "Altyapı Değerlendirmesi",
+        "Bulut Güvenliği İncelemesi",
+        "Statik ve Dinamik Kod Analizi",
+        "Mevzuat Uyumluluk Analizi",
+        "Sosyal Mühendislik Değerlendirmesi",
+        "Üçüncü Taraf Risk Değerlendirmesi",
+        "Yönetici Risk ve İyileştirme Raporu"
+      ],
+      "benefits": [
+        "Proaktif Tehdit Azaltma",
+        "Yasal Uyumluluk Hizalaması",
+        "Artan Müşteri Güveni",
+        "Azaltılmış Veri İhlali Maliyetleri",
+        "Güvenli Bulut Altyapısı",
+        "Uygulanabilir İyileştirme Yol Haritası"
+      ],
+      "metaTitle": "Siber Güvenlik Denetimi Hizmetleri | PakSoft",
+      "metaDescription": "Uzman siber güvenlik denetimi ile işletmenizi güvenceye alın. Açıkları belirleyin, uyumluluk sağlayın ve verilerinizi koruyun. Hemen denetim planlayın!",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Kapsam ve Planlama",
+            "description": "Kuruluşunuz için denetim sınırlarını, hedef sistemleri ve uyumluluk gereksinimlerini tanımlıyoruz. Bu, iş hedefleriniz ve risk profilinizle mükemmel şekilde uyumlu, odaklanmış bir değerlendirme sağlar."
+          },
+          {
+            "step": 2,
+            "title": "Bilgi Toplama",
+            "description": "Ekibimiz, saldırı yüzeyini haritalandırmak için altyapınız hakkında açık ve kapalı kaynaklı istihbarat toplar. Derinlemesine taramaya hazırlanmak için aktif ana bilgisayarları, açık portları ve çalışan servisleri belirleriz."
+          },
+          {
+            "step": 3,
+            "title": "Güvenlik Açığı Tarama",
+            "description": "Uygulamalarınızı, ağlarınızı ve bulut ortamlarınızı bilinen zayıflıklara karşı taramak için gelişmiş otomatik araçlar kullanıyoruz. Bu adım, güncel olmayan yazılımları, hatalı yapılandırmaları ve yaygın güvenlik açıklarını hızla ortaya çıkarır."
+          },
+          {
+            "step": 4,
+            "title": "Manuel Sızma Testi",
+            "description": "Sertifikalı etik hackerlarımız, gerçek dünyadaki etkilerini doğrulamak için belirlenen güvenlik açıklarını istismar etmeye çalışır. Bu manuel çalışma, yanlış pozitifleri ortadan kaldırır ve otomatik araçların kaçırdığı karmaşık mantıksal hataları ortaya çıkarır."
+          },
+          {
+            "step": 5,
+            "title": "Raporlama ve Analiz",
+            "description": "Bulgularımızı, her bir güvenlik açığını, ciddiyet derecesini ve kanıtını detaylandıran kapsamlı bir raporda birleştiriyoruz. Bu belge, hem üst düzey yönetici özetlerini hem de teknik iyileştirme adımlarını içerir."
+          },
+          {
+            "step": 6,
+            "title": "İyileştirme Desteği",
+            "description": "Güvenlik mühendislerimiz, belirlenen açıkları kapatmak için yazılım geliştirme ekibinizle yakından çalışır. Net rehberlik sağlıyor ve tüm güvenlik açıklarının başarıyla kapatıldığından emin olmak için yeniden testler gerçekleştiriyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Siber güvenlik denetimini ne sıklıkla yapmalıyız?",
+            "answer": "Kapsamlı bir siber güvenlik denetimini yılda en az bir kez veya büyük sistem değişikliklerinden sonra yapmanızı öneririz. Düzenli denetimler, yeni ortaya çıkan tehditlere karşı korunmanızı ve endüstri standartlarına uyumluluğunuzu sürdürmenizi sağlar."
+          },
+          {
+            "question": "Güvenlik açığı taraması ile sızma testi arasındaki fark nedir?",
+            "answer": "Güvenlik açığı taraması, sistemlerinizdeki potansiyel zayıflıkları belirleyen otomatik bir süreçtir. Sızma testi ise etik hackerların bu zayıflıkların gerçek dünyadaki riskini kanıtlamak için bunları istismar etmeye çalıştığı manuel ve aktif bir çabadır."
+          },
+          {
+            "question": "Tipik bir güvenlik denetimi ne kadar sürer?",
+            "answer": "Standart bir siber güvenlik denetimi, altyapınızın kapsamına bağlı olarak iki ila dört hafta arasında sürer. Bu süreye kapsam belirleme, aktif testler, manuel analizler ve nihai raporun sunulması dahildir."
+          },
+          {
+            "question": "Güvenlik denetimi aktif hizmetlerimizde kesintiye neden olur mu?",
+            "answer": "Test metodolojilerimizi, üretim ortamlarınız üzerindeki her türlü etkiyi en aza indirecek şekilde tasarlıyoruz. Operasyonel kesintileri önlemek için aktif istismarların çoğu hazırlık (staging) ortamlarında veya planlı mesai dışı saatlerde gerçekleştirilir."
+          },
+          {
+            "question": "Denetimleriniz hangi uyumluluk standartlarını kapsıyor?",
+            "answer": "Denetimlerimiz ISO 27001, SOC 2, GDPR, HIPAA ve PCI-DSS dahil olmak üzere başlıca küresel standartlarla eşleştirilmiştir. Belirli uyumluluk eksikliklerinizi belirlemenize ve tam sertifikasyon elde etmeniz için uygulanabilir adımlar sunmanıza yardımcı oluyoruz."
+          },
+          {
+            "question": "Denetimden sonra hangi çıktıları alacağız?",
+            "answer": "Paydaşlar için bir yönetici risk raporu ve geliştiriciler için ayrıntılı bir teknik rapor alacaksınız. Teknik rapor, her bulgu için adım adım iyileştirme kılavuzlarını, kanıt detaylarını ve önem derecelerini içerir."
+          },
+          {
+            "question": "Bulduğunuz güvenlik açıklarını düzeltmemize yardımcı oluyor musunuz?",
+            "answer": "Evet, iyileştirme sürecinde ekibinize rehberlik etmek için kapsamlı denetim sonrası destek sağlıyoruz. Teknik danışmanlık, kod düzeyinde öneriler sunuyor ve yamaların doğru şekilde uygulandığından emin olmak için doğrulama taramaları yapıyoruz."
+          },
+          {
+            "question": "Denetim sırasında hassas verileri nasıl işliyorsunuz?",
+            "answer": "Sıkı gizlilik sözleşmelerine bağlı kalıyor ve tüm müşteri verilerini işlemek için güvenli, şifreli kanallar kullanıyoruz. Test sırasında keşfedilen tüm hassas bilgiler, endüstri lideri veri koruma uygulamalarına uygun olarak işlenir."
+          }
+        ],
+        "technologies": [
+          {
+            "name": "Burp Suite",
+            "icon": "burpsuite"
+          },
+          {
+            "name": "Nessus",
+            "icon": "nessus"
+          },
+          {
+            "name": "OWASP ZAP",
+            "icon": "owasp-zap"
+          },
+          {
+            "name": "Semgrep",
+            "icon": "semgrep"
+          },
+          {
+            "name": "ScoutSuite",
+            "icon": "scoutsuite"
+          },
+          {
+            "name": "Trivy",
+            "icon": "trivy"
+          }
+        ]
+      }
+    },
+    "de": {
+      "name": "Cybersecurity-Auditierung",
+      "shortDescription": "Identifizieren Sie kritische Sicherheitslücken, Compliance-Defizite und Infrastrukturrisiken mit unseren umfassenden, von Experten geleiteten Cybersecurity-Audits, bevor böswillige Akteure sie ausnutzen.",
+      "fullDescription": "Schützen Sie Ihre digitalen Assets und wahren Sie das Vertrauen Ihrer Kunden mit den umfassenden Cybersecurity-Audit-Diensten von PakSoft. Unsere zertifizierten Sicherheitsexperten führen tiefgehende Analysen Ihrer Webanwendungen, Cloud-Infrastruktur und Quellcodes durch, um versteckte Schwachstellen aufzudecken. Wir bewerten Ihre Systeme nach Branchenstandards wie OWASP Top 10, ISO 27001 und SOC 2, um kritische Lücken zu schließen, bevor Angreifer sie ausnutzen können. Über automatisierte Scans hinaus führen wir manuelle Penetrationstests und Social-Engineering-Simulationen durch, um Ihre menschlichen und technischen Abwehrmechanismen zu prüfen. Sie erhalten einen priorisierten Sanierungsfahrplan und einen Executive-Risikobericht zur effizienten Absicherung Ihres Unternehmens.",
+      "features": [
+        "Anwendungssicherheits-Audit",
+        "Infrastrukturbewertung",
+        "Cloud-Sicherheitsüberprüfung",
+        "Statische & dynamische Codeanalyse",
+        "Compliance-Gap-Analyse",
+        "Social-Engineering-Bewertung",
+        "Drittanbieter-Risikobewertung",
+        "Executive Risiko- & Sanierungsbericht"
+      ],
+      "benefits": [
+        "Proaktive Bedrohungsminimierung",
+        "Einhaltung gesetzlicher Vorschriften",
+        "Gesteigertes Kundenvertrauen",
+        "Reduzierte Kosten bei Datenpannen",
+        "Gesicherte Cloud-Infrastruktur",
+        "Praxisnaher Sanierungsfahrplan"
+      ],
+      "metaTitle": "Cybersecurity-Auditierung | PakSoft",
+      "metaDescription": "Sichern Sie Ihr Unternehmen mit professionellen Cybersecurity-Audits. Wir finden Schwachstellen und schützen Ihre Daten. Jetzt Audit vereinbaren!",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Abgrenzung & Planung",
+            "description": "Wir definieren die Audit-Grenzen, Zielsysteme und Compliance-Anforderungen für Ihr Unternehmen. Dies gewährleistet eine zielgerichtete Bewertung, die perfekt auf Ihre Geschäftsziele und Ihr Risikoprofil abgestimmt ist."
+          },
+          {
+            "step": 2,
+            "title": "Informationsbeschaffung",
+            "description": "Unser Team sammelt öffentliche und private Informationen über Ihre Infrastruktur, um die Angriffsfläche zu kartieren. Wir identifizieren aktive Hosts, offene Ports und laufende Dienste zur Vorbereitung auf tiefe Scans."
+          },
+          {
+            "step": 3,
+            "title": "Schwachstellen-Scanning",
+            "description": "Wir setzen fortschrittliche automatisierte Tools ein, um Ihre Anwendungen, Netzwerke und Cloud-Umgebungen auf bekannte Schwachstellen zu scannen. Dieser Schritt zeigt schnell veraltete Software, Fehlkonfigurationen und häufige Sicherheitsmängel auf."
+          },
+          {
+            "step": 4,
+            "title": "Manuelle Penetrationstests",
+            "description": "Unsere zertifizierten Ethical Hacker versuchen, identifizierte Schwachstellen auszunutzen, um deren reale Auswirkungen zu überprüfen. Dieser manuelle Aufwand eliminiert Fehlalarme und deckt komplexe logische Fehler auf, die automatisierte Tools übersehen."
+          },
+          {
+            "step": 5,
+            "title": "Berichterstattung & Analyse",
+            "description": "Wir fassen unsere Ergebnisse in einem umfassenden Bericht zusammen, der jede Schwachstelle, ihren Schweregrad und den Proof of Concept detailliert beschreibt. Dieses Dokument enthält sowohl Zusammenfassungen für die Geschäftsführung als auch technische Schritte zur Behebung."
+          },
+          {
+            "step": 6,
+            "title": "Unterstützung bei der Behebung",
+            "description": "Unsere Sicherheitsingenieure arbeiten eng mit Ihrem Entwicklungsteam zusammen, um die identifizierten Schwachstellen zu beheben. Wir bieten klare Anleitungen und führen erneute Tests durch, um sicherzustellen, dass alle Sicherheitslücken erfolgreich geschlossen wurden."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Wie oft sollten wir ein Cybersecurity-Audit durchführen?",
+            "answer": "Wir empfehlen, mindestens einmal im Jahr oder nach größeren Systemänderungen ein umfassendes Cybersecurity-Audit durchzuführen. Regelmäßige Audits stellen sicher, dass Sie vor neu entdeckten Bedrohungen geschützt bleiben und Branchenstandards einhalten."
+          },
+          {
+            "question": "Was ist der Unterschied zwischen Schwachstellen-Scanning und Penetrationstests?",
+            "answer": "Schwachstellen-Scanning ist ein automatisierter Prozess, der potenzielle Schwachstellen in Ihren Systemen identifiziert. Ein Penetrationstest ist ein manueller, aktiver Versuch von Ethical Hackern, diese Schwachstellen auszunutzen, um das reale Risiko nachzuweisen."
+          },
+          {
+            "question": "Wie lange dauert ein typisches Sicherheitsaudit?",
+            "answer": "Ein Standard-Cybersecurity-Audit dauert je nach Umfang Ihrer Infrastruktur zwischen zwei und vier Wochen. Dieser Zeitrahmen umfasst die Abgrenzung, aktive Tests, manuelle Analysen und die Bereitstellung des Abschlussberichts."
+          },
+          {
+            "question": "Verursacht das Sicherheitsaudit Ausfallzeiten für unsere aktiven Dienste?",
+            "answer": "Wir konzipieren unsere Testmethoden so, dass die Auswirkungen auf Ihre Produktionsumgebungen minimiert werden. Die meisten aktiven Ausnutzungen werden in Staging-Umgebungen oder außerhalb der Hauptgeschäftszeiten durchgeführt, um Betriebsunterbrechungen zu vermeiden."
+          },
+          {
+            "question": "Welche Compliance-Standards decken Ihre Audits ab?",
+            "answer": "Unsere Audits sind an wichtigen globalen Standards wie ISO 27001, SOC 2, DSGVO, HIPAA und PCI-DSS ausgerichtet. Wir helfen Ihnen, spezifische Compliance-Lücken zu identifizieren und bieten konkrete Schritte zur vollständigen Zertifizierung."
+          },
+          {
+            "question": "Welche Ergebnisse erhalten wir nach dem Audit?",
+            "answer": "Sie erhalten einen Executive-Risikobericht für Stakeholder und einen detaillierten technischen Bericht für Entwickler. Der technische Bericht enthält Schritt-für-Schritt-Anleitungen zur Behebung, Proof-of-Concept-Details und Schweregrade für jeden Befund."
+          },
+          {
+            "question": "Helfen Sie uns bei der Behebung der gefundenen Schwachstellen?",
+            "answer": "Ja, wir bieten umfassende Unterstützung nach dem Audit, um Ihr Team durch den Behebungsprozess zu führen. Wir bieten technische Beratung, Empfehlungen auf Code-Ebene und führen Verifizierungsscans durch, um die korrekte Implementierung der Patches sicherzustellen."
+          },
+          {
+            "question": "Wie gehen Sie während des Audits mit sensiblen Daten um?",
+            "answer": "Wir halten uns an strenge Geheimhaltungsvereinbarungen und nutzen sichere, verschlüsselte Kanäle für alle Kundendaten. Alle während der Tests entdeckten sensiblen Informationen werden gemäß den branchenweit besten Datenschutzpraktiken behandelt."
+          }
+        ],
+        "technologies": [
+          {
+            "name": "Burp Suite",
+            "icon": "burpsuite"
+          },
+          {
+            "name": "Nessus",
+            "icon": "nessus"
+          },
+          {
+            "name": "OWASP ZAP",
+            "icon": "owasp-zap"
+          },
+          {
+            "name": "Semgrep",
+            "icon": "semgrep"
+          },
+          {
+            "name": "ScoutSuite",
+            "icon": "scoutsuite"
+          },
+          {
+            "name": "Trivy",
+            "icon": "trivy"
+          }
+        ]
+      }
+    },
+    "ur": {
+      "name": "سائبر سیکیورٹی آڈیٹنگ",
+      "shortDescription": "ہمارے جامع اور ماہرانہ سائبر سیکیورٹی آڈٹ کے ذریعے سیکیورٹی کی سنگین خامیوں، تعمیل کے خلا اور انفراسٹرکچر کے خطرات کو حملہ آوروں کے فائدہ اٹھانے سے پہلے ہی شناخت کریں۔",
+      "fullDescription": "PakSoft کی جامع سائبر سیکیورٹی آڈیٹنگ سروسز کے ساتھ اپنے ڈیجیٹل اثاثوں کی حفاظت کریں اور کسٹمر کے اعتماد کو برقرار رکھیں۔ ہمارے تصدیق شدہ سیکیورٹی ماہرین پوشیدہ خطرات کی نشاندہی کرنے کے لیے آپ کی ویب ایپلیکیشنز، کلاؤڈ انفراسٹرکچر، اور سورس کوڈ کا گہرائی سے جائزہ لیتے ہیں۔ ہم آپ کے سسٹمز کا OWASP Top 10، ISO 27001، اور SOC 2 جیسے صنعتی معیارات کے مطابق جائزہ لیتے ہیں تاکہ حملہ آوروں کے فائدہ اٹھانے سے پہلے اہم خامیوں کو دور کیا جا سکے۔ خودکار اسکیننگ کے علاوہ، ہم آپ کے انسانی اور تکنیکی دفاع کو جانچنے کے لیے مینوئل پینیٹریشن ٹیسٹنگ اور سوشل انجینئرنگ کے تجربات بھی کرتے ہیں۔ آپ کو اپنے کاروبار کو مؤثر طریقے سے محفوظ بنانے کے لیے ترجیحی بنیادوں پر اصلاحی روڈ میپ اور ایگزیکٹو رسک رپورٹ فراہم کی جاتی ہے۔",
+      "features": [
+        "ایپلی کیشن سیکیورٹی آڈٹ",
+        "انفراسٹرکچر کی تشخیص",
+        "کلاؤڈ سیکیورٹی کا جائزہ",
+        "سٹیٹک اور ڈائنامک کوڈ کا تجزیہ",
+        "تعمیل کے خلا کا تجزیہ",
+        "سوشل انجینئرنگ کی تشخیص",
+        "تھرڈ پارٹی رسک اسیسمنٹ",
+        "ایگزیکٹو رسک اور اصلاحی رپورٹ"
+      ],
+      "benefits": [
+        "فعال خطرات کا تدارک",
+        "ریگولیٹری تعمیل کی ہم آہنگی",
+        "صافرین کے اعتماد میں اضافہ",
+        "ڈیٹا کی خلاف ورزی کے اخراجات میں کمی",
+        "محفوظ کلاؤڈ انفراسٹرکچر",
+        "عملی اصلاحی روڈ میپ"
+      ],
+      "metaTitle": "سائبر سیکیورٹی آڈیٹنگ سروسز | PakSoft",
+      "metaDescription": "ماہر سائبر سیکیورٹی آڈٹ کے ساتھ اپنے کاروبار کو محفوظ بنائیں۔ ہم خامیوں کی نشاندہی کرتے ہیں اور آپ کے ڈیٹا کی حفاظت کرتے ہیں۔ آج ہی آڈٹ شیڈول کریں!",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "حدود اور منصوبہ بندی",
+            "description": "ہم آپ کی تنظیم کے لیے آڈٹ کی حدود، ہدف سسٹمز اور تعمیل کی ضروریات کی وضاحت کرتے ہیں۔ یہ ایک مرکوز تشخیص کو یقینی بناتا ہے جو آپ کے کاروباری مقاصد اور رسک پروفائل کے ساتھ بالکل ہم آہنگ ہوتا۔"
+          },
+          {
+            "step": 2,
+            "title": "معلومات کا حصول",
+            "description": "ہماری ٹیم حملے کی سطح کا نقشہ بنانے کے لیے آپ کے انفراسٹرکچر کے بارے میں عوامی اور نجی معلومات اکٹھی کرتی ہے۔ ہم گہری اسکیننگ کی تیاری کے لیے فعال ہوسٹس، اوپن پورٹس اور چلنے والی سروسز کی شناخت کرتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "خامیوں کی اسکیننگ",
+            "description": "ہم آپ کی ایپلیکیشنز، نیٹ ورکس اور کلاؤڈ ماحول کو معلوم کمزوریوں کے لیے اسکین کرنے کے لیے جدید خودکار ٹولز کا استعمال کرتے ہیں۔ یہ مرحلہ پرانے سافٹ ویئر، غلط کنفیگریشنز اور عام سیکیورٹی خامیوں کو تیزی سے اجاگر کرتا ہے۔"
+          },
+          {
+            "step": 4,
+            "title": "مینوئل پینیٹریشن ٹیسٹنگ",
+            "description": "ہمارے تصدیق شدہ اخلاقی ہیکرز معلوم خامیوں کے حقیقی دنیا کے اثرات کی تصدیق کے لیے ان کا فائدہ اٹھانے کی کوشش کرتے ہیں۔ یہ مینوئل کوشش غلط نتائج کو ختم کرتی ہے اور پیچیدہ منطقی خامیوں کو بے نقاب کرتی ہے جنہیں خودکار ٹولز چھوڑ دیتے ہیں۔"
+          },
+          {
+            "step": 5,
+            "title": "رپورٹنگ اور تجزیہ",
+            "description": "ہم اپنے نتائج کو ایک جامع رپورٹ میں مرتب کرتے ہیں جس میں ہر خامی، اس کی سنگینی اور ثبوت کی تفصیل ہوتی ہے۔ اس دستاویز میں اعلیٰ سطحی ایگزیکٹو خلاصے اور تکنیکی اصلاحی اقدامات دونوں شامل ہوتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "اصلاحی مدد",
+            "description": "ہمارے سیکیورٹی انجینئرز شناخت شدہ خامیوں کو دور کرنے کے لیے آپ کی ڈویلپمنٹ ٹیم کے ساتھ مل کر کام کرتے ہیں۔ ہم واضح رہنمائی فراہم کرتے ہیں اور دوبارہ ٹیسٹنگ کرتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ تمام سیکیورٹی خلا کامیابی سے بند ہو گئے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "ہمیں کتنی بار سائبر سیکیورٹی آڈٹ کروانا چاہیے؟",
+            "answer": "ہم سال میں کم از کم ایک بار یا سسٹم میں کسی بڑی تبدیلی کے بعد جامع سائبر سیکیورٹی آڈٹ کروانے کی سفارش کرتے ہیں۔ باقاعدہ آڈٹ اس بات کو یقینی بناتے ہیں کہ آپ نئے خطرات سے محفوظ رہیں اور صنعتی معیارات پر پورا اتریں۔"
+          },
+          {
+            "question": "خامیوں کی اسکیننگ اور پینیٹریشن ٹیسٹنگ میں کیا فرق ہے؟",
+            "answer": "خامیوں کی اسکیننگ ایک خودکار عمل ہے جو آپ کے سسٹمز میں ممکنہ کمزوریوں کی نشاندہی کرتا ہے۔ پینیٹریشن ٹیسٹنگ اخلاقی ہیکرز کی طرف سے ان کمزوریوں کا فائدہ اٹھانے کی ایک مینوئل اور فعال کوشش ہے تاکہ ان کے حقیقی خطرے کو ثابت کیا جا سکے۔"
+          },
+          {
+            "question": "ایک عام سیکیورٹی آڈٹ مکمل ہونے میں کتنا وقت لگتا ہے؟",
+            "answer": "ایک معیاری سائبر سیکیورٹی آڈٹ آپ کے انفراسٹرکچر کی حدود کے لحاظ سے دو سے چار ہفتے لیتا ہے۔ اس ٹائم لائن میں منصوبہ بندی، فعال ٹیسٹنگ، مینوئل تجزیہ، اور حتمی رپورٹ کی فراہمی شامل ہے۔"
+          },
+          {
+            "question": "کیا سیکیورٹی آڈٹ ہماری فعال سروسز کے لیے ڈاؤن ٹائم کا سبب بنے گا؟",
+            "answer": "ہم اپنی ٹیسٹنگ کے طریقوں کو اس طرح ڈیزائن کرتے ہیں کہ آپ کے پروڈکشن ماحول پر اثرات کم سے کم ہوں۔ زیادہ تر فعال ٹیسٹنگ اسٹیجنگ ماحول میں یا کام کے اوقات کے بعد کی جاتی ہے تاکہ آپریشنل خلل سے بچا جا سکے۔"
+          },
+          {
+            "question": "آپ کے آڈٹ کن تعمیل کے معیارات کا احاطہ کرتے ہیں؟",
+            "answer": "ہمارے آڈٹ بڑے عالمی معیارات بشمول ISO 27001، SOC 2، GDPR، HIPAA، اور PCI-DSS کے مطابق کیے جاتے ہیں۔ ہم مخصوص تعمیل کے خلا کی نشاندہی کرنے اور مکمل سرٹیفیکیشن حاصل کرنے کے لیے عملی اقدامات فراہم کرنے میں مدد کرتے ہیں۔"
+          },
+          {
+            "question": "آڈٹ کے بعد ہمیں کیا نتائج حاصل ہوں گے؟",
+            "answer": "آپ کو اسٹیک ہولڈرز کے لیے ایک ایگزیکٹو رسک رپورٹ اور ڈویلپرز کے لیے ایک تفصیلی تکنیکی رپورٹ ملے گی۔ تکنیکی رپورٹ میں ہر تلاش کے لیے مرحلہ وار اصلاحی گائیڈز، ثبوت کی تفصیلات اور سنگینی کی درجہ بندی شامل ہوتی ہے۔"
+          },
+          {
+            "question": "کیا آپ تلاش کی جانے والی خامیوں کو ٹھیک کرنے میں ہماری مدد کرتے ہیں؟",
+            "answer": "جی ہاں، ہم اصلاحی عمل میں آپ کی ٹیم کی رہنمائی کے لیے آڈٹ کے بعد جامع مدد فراہم کرتے ہیں۔ ہم تکنیکی مشاورت، کوڈ کی سطح پر سفارشات پیش کرتے ہیں اور تصدیقی اسکینز کرتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ پیچز درست طریقے سے لاگو ہو گئے ہیں۔"
+          },
+          {
+            "question": "آڈٹ کے دوران آپ حساس ڈیٹا کو کس طرح سنبھالتے ہیں؟",
+            "answer": "ہم سخت رازداری کے معاہدوں پر عمل کرتے ہیں اور کلائنٹ کے تمام ڈیٹا کو سنبھالنے کے لیے محفوظ، انکرپٹڈ چینلز کا استعمال کرتے ہیں۔ ٹیسٹنگ کے دوران دریافت ہونے والی کسی بھی حساس معلومات کو ڈیٹا پروٹیکشن کے بہترین طریقوں کے مطابق سنبھالا جاتا ہے۔"
+          }
+        ],
+        "technologies": [
+          {
+            "name": "Burp Suite",
+            "icon": "burpsuite"
+          },
+          {
+            "name": "Nessus",
+            "icon": "nessus"
+          },
+          {
+            "name": "OWASP ZAP",
+            "icon": "owasp-zap"
+          },
+          {
+            "name": "Semgrep",
+            "icon": "semgrep"
+          },
+          {
+            "name": "ScoutSuite",
+            "icon": "scoutsuite"
+          },
+          {
+            "name": "Trivy",
+            "icon": "trivy"
+          }
+        ]
+      }
+    },
+    "ar": {
+      "name": "تدقيق الأمن السيبراني",
+      "shortDescription": "حدد الثغرات الأمنية الحرجة، وفجوات الامتثال، ومخاطر البنية التحتية قبل أن يستغلها المهاجمون من خلال خدمات تدقيق الأمن السيبراني الشاملة التي يقودها خبراؤنا المعتمدون.",
+      "fullDescription": "احمِ أصولك الرقمية وحافظ على ثقة عملائك من خلال خدمات تدقيق الأمن السيبراني الشاملة من PakSoft. يقوم خبراء الأمن المعتمدون لدينا بإجراء تقييمات عميقة لتطبيقات الويب والبنية التحتية السحابية والتعليمات البرمجية المصدرية لتحديد الثغرات المخفية. نقوم بتقييم أنظمتك وفقًا لمعايير الصناعة مثل OWASP Top 10 و ISO 27001 و SOC 2، لتحديد الفجوات الحرجة قبل أن يتمكن المهاجمون من استغلالها. بالإضافة إلى الفحص الآلي، نقوم بإجراء اختبارات اختراق يدوية ومحاكاة للهندسة الاجتماعية لاختبار دفاعاتك البشرية والتقنية. ستتلقى خارطة طريق ذات أولويات للإصلاح وتقرير مخاطر تنفيذي لتأمين عملك بكفاءة عالية.",
+      "features": [
+        "تدقيق أمن التطبيقات",
+        "تقييم البنية التحتية",
+        "مراجعة الأمن السحابي",
+        "تحليل الأكواد الثابت والديناميكي",
+        "تحليل فجوات الامتثال",
+        "تقييم الهندسة الاجتماعية",
+        "تقييم مخاطر الطرف الثالث",
+        "تقرير المخاطر والإصلاح التنفيذي"
+      ],
+      "benefits": [
+        "التخفيف الاستباقي للتهديدات",
+        "التوافق مع الامتثال التنظيمي",
+        "تعزيز ثقة العملاء",
+        "تقليل تكاليف اختراق البيانات",
+        "بنية تحتية سحابية آمنة",
+        "خارطة طريق قابلة للتنفيذ للإصلاح"
+      ],
+      "metaTitle": "خدمات تدقيق الأمن السيبراني | PakSoft",
+      "metaDescription": "أمن عملك من خلال خدمات تدقيق الأمن السيبراني الاحترافية من PakSoft. نحدد الثغرات ونضمن الامتثال ونحمي بياناتك الحساسة بالكامل. احجز موعد التدقيق اليوم!",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تحديد النطاق والتخطيط",
+            "description": "نحدد حدود التدقيق والأنظمة المستهدفة ومتطلبات الامتثال لمؤسستك. يضمن ذلك إجراء تقييم مركز يتوافق تمامًا مع أهداف عملك وملف المخاطر الخاص بك."
+          },
+          {
+            "step": 2,
+            "title": "جمع المعلومات",
+            "description": "يجمع فريقنا معلومات استخباراتية عامة وخاصة حول بنيتك التحتية لرسم خريطة لسطح الهجوم. نحدد المضيفين النشطين والمنافذ المفتوحة والخدمات قيد التشغيل للتحضير للفحص العميق."
+          },
+          {
+            "step": 3,
+            "title": "فحص الثغرات الأمنية",
+            "description": "نستخدم أدوات آلية متقدمة لفحص تطبيقاتك وشبكاتك وبيئاتك السحابية بحثًا عن نقاط الضعف المعروفة. تسلط هذه الخطوة الضوء بسرعة على البرامج القديمة والتكوينات الخاطئة والعيوب الأمنية الشائعة."
+          },
+          {
+            "step": 4,
+            "title": "اختبار الاختراق اليدوي",
+            "description": "يحاول المتسللون الأخلاقيون المعتمدون لدينا استغلال الثغرات الأمنية المحددة للتحقق من تأثيرها الفعلي. يقضي هذا الجهد اليدوي على النتائج الإيجابية الكاذبة ويكشف عن العيوب المنطقية المعقدة التي تغفلها الأدوات الآلية."
+          },
+          {
+            "step": 5,
+            "title": "إعداد التقارير والتحليل",
+            "description": "نجمع نتائجنا في تقرير شامل يوضح بالتفصيل كل ثغرة أمنية وشدتها وإثبات المفهوم الخاص بها. تتضمن هذه الوثيقة ملخصات تنفيذية رفيعة المستوى وخطوات إصلاح تقنية مفصلة."
+          },
+          {
+            "step": 6,
+            "title": "دعم معالجة الثغرات",
+            "description": "يعمل مهندسو الأمن لدينا بشكل وثيق مع فريق التطوير لديك للمساعدة في سد الثغرات الأمنية المحددة. نقدم إرشادات واضحة ونجري اختبارات إعادة الفحص للتأكد من إغلاق جميع الفجوات الأمنية بنجاح."
+          }
+        ],
+        "faq": [
+          {
+            "question": "كم مرة يجب أن نجري تدقيقًا للأمن السيبراني؟",
+            "answer": "نوصي بإجراء تدقيق شامل للأمن السيبراني مرة واحدة على الأقل سنويًا أو بعد أي تغييرات رئيسية في النظام. تضمن عمليات التدقيق المنتظمة بقاءك محميًا ضد التهديدات المكتشفة حديثًا والحفاظ على الامتثال لمعايير الصناعة."
+          },
+          {
+            "question": "ما الفرق بين فحص الثغرات الأمنية واختبار الاختراق؟",
+            "answer": "فحص الثغرات الأمنية هو عملية آلية تحدد نقاط الضعف المحتملة في أنظمتك. أما اختبار الاختراق فهو محاولة يدوية ونشطة من قبل متسللين أخلاقيين لاستغلال نقاط الضعف هذه لإثبات مخاطرها الفعلية."
+          },
+          {
+            "question": "كم من الوقت يستغرق تدقيق الأمن النموذجي؟",
+            "answer": "يستغرق تدقيق الأمن السيبراني القياسي ما بين أسبوعين إلى أربعة أسابيع اعتمادًا على نطاق بنيتك التحتية. يشمل هذا الجدول الزمني تحديد النطاق، والاختبار النشط، والتحليل اليدوي، وتسليم التقرير النهائي."
+          },
+          {
+            "question": "هل سيؤدي التدقيق الأمني إلى توقف خدماتنا النشطة؟",
+            "answer": "نحن نصمم منهجيات الاختبار الخاصة بنا لتقليل أي تأثير على بيئات الإنتاج الخاصة بك. يتم إجراء معظم عمليات الاستغلال النشطة في بيئات الاختبار (staging) أو خلال ساعات خارج أوقات الذروة المخطط لها لتجنب أي انقطاع تشغيلي."
+          },
+          {
+            "question": "ما هي معايير الامتثال التي يغطيها تدقيقكم؟",
+            "answer": "تتوافق عمليات التدقيق لدينا مع المعايير العالمية الكبرى بما في ذلك ISO 27001 و SOC 2 و GDPR و HIPAA و PCI-DSS. نساعدك في تحديد فجوات امتثال محددة ونقدم خطوات قابلة للتنفيذ للحصول على الشهادة الكاملة."
+          },
+          {
+            "question": "ما هي المخرجات التي سنحصل عليها بعد التدقيق؟",
+            "answer": "ستتلقى تقرير مخاطر تنفيذي لأصحاب المصلحة وتقريرًا فنيًا مفصلاً للمطورين. يتضمن التقرير الفني أدلة إصلاح خطوة بخطوة، وتفاصيل إثبات المفهوم، وتصنيفات الشدة لكل نتيجة."
+          },
+          {
+            "question": "هل تساعدوننا في إصلاح الثغرات الأمنية التي تجدونها؟",
+            "answer": "نعم، نحن نقدم دعمًا شاملاً بعد التدقيق لتوجيه فريقك خلال عملية الإصلاح. نقدم استشارات فنية وتوصيات على مستوى الكود ونجري عمليات فحص للتحقق لضمان تنفيذ الحلول بشكل صحيح."
+          },
+          {
+            "question": "كيف تتعاملون مع البيانات الحساسة أثناء التدقيق؟",
+            "answer": "نحن نلتزم باتفاقيات عدم إفشاء صارمة ونستخدم قنوات آمنة ومشفرة للتعامل مع جميع بيانات العملاء. يتم التعامل مع أي معلومات حساسة يتم اكتشافها أثناء الاختبار وفقًا لأفضل ممارسات حماية البيانات في الصناعة."
+          }
+        ],
+        "technologies": [
+          {
+            "name": "Burp Suite",
+            "icon": "burpsuite"
+          },
+          {
+            "name": "Nessus",
+            "icon": "nessus"
+          },
+          {
+            "name": "OWASP ZAP",
+            "icon": "owasp-zap"
+          },
+          {
+            "name": "Semgrep",
+            "icon": "semgrep"
+          },
+          {
+            "name": "ScoutSuite",
+            "icon": "scoutsuite"
+          },
+          {
+            "name": "Trivy",
+            "icon": "trivy"
+          }
+        ]
+      }
+    }
+  }
+}

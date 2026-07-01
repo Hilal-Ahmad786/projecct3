@@ -1,0 +1,618 @@
+{
+  "slug": "core-web-vitals",
+  "en": {
+    "name": "Core Web Vitals Optimization",
+    "shortDescription": "Accelerate your website loading speeds, eliminate layout shifts, and boost search engine rankings with our comprehensive Core Web Vitals audit and engineering services designed for modern web applications.",
+    "fullDescription": "Slow loading speeds and unstable layouts frustrate users and directly damage your search engine rankings. Our Core Web Vitals optimization service targets the critical metrics Google uses to evaluate user experience: Largest Contentful Paint (LCP), Interaction to Next Paint (INP), and Cumulative Layout Shift (CLS). We perform deep-dive audits of your frontend architecture, optimize critical rendering paths, implement advanced image compression, and eliminate render-blocking JavaScript. By resolving these performance bottlenecks, we help your business achieve perfect Lighthouse scores, lower bounce rates, and secure a competitive edge in organic search results.",
+    "features": [
+      "Largest Contentful Paint (LCP) Acceleration",
+      "Interaction to Next Paint (INP) Optimization",
+      "Cumulative Layout Shift (CLS) Prevention",
+      "Critical Rendering Path Optimization",
+      "Advanced Image and Asset Compression",
+      "Render-Blocking JavaScript Elimination",
+      "Real User Monitoring (RUM) Setup",
+      "Server-Side Rendering (SSR) Tuning"
+    ],
+    "benefits": [
+      "Improved Google Search Rankings",
+      "Reduced Bounce Rates",
+      "Increased Conversion Rates",
+      "Enhanced Mobile User Experience",
+      "Lower Server Bandwidth Costs",
+      "Faster Page Load Times"
+    ],
+    "metaTitle": "Core Web Vitals Optimization | PakSoft",
+    "metaDescription": "Boost your Google rankings and user experience. Get expert Core Web Vitals optimization to fix LCP, INP, and CLS issues. Contact PakSoft today!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Initial Audit",
+          "description": "We conduct a comprehensive performance audit using Lighthouse and Chrome User Experience reports. This establishes a clear baseline of your current LCP, INP, and CLS metrics."
+        },
+        {
+          "step": 2,
+          "title": "Bottleneck Identification",
+          "description": "Our engineers analyze your critical rendering path and identify render-blocking scripts. We pinpoint the exact elements causing layout shifts and slow execution times."
+        },
+        {
+          "step": 3,
+          "title": "Asset Optimization",
+          "description": "We implement modern image formats, lazy loading, and aggressive code-splitting strategies. This significantly reduces the initial payload size and speeds up visual delivery."
+        },
+        {
+          "step": 4,
+          "title": "Execution Tuning",
+          "description": "We optimize JavaScript execution by deferring non-critical scripts and refactoring heavy event handlers. This directly improves your Interaction to Next Paint score."
+        },
+        {
+          "step": 5,
+          "title": "Layout Stabilization",
+          "description": "We apply explicit dimensions to media elements and optimize web font loading behaviors. This completely eliminates unexpected layout shifts during page rendering."
+        },
+        {
+          "step": 6,
+          "title": "Continuous Monitoring",
+          "description": "We set up real-time monitoring tools to track performance metrics across different devices. This ensures your website remains fast and compliant with future updates."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What are Core Web Vitals?",
+          "answer": "Core Web Vitals are a set of specific factors that Google considers important in a webpage's overall user experience. They consist of three specific page speed and user interaction measurements: LCP, INP, and CLS."
+        },
+        {
+          "question": "How does LCP affect my website?",
+          "answer": "Largest Contentful Paint measures how quickly the main content of a web page loads. A slow LCP frustrates users and can lead to higher bounce rates, which negatively impacts your SEO rankings."
+        },
+        {
+          "question": "What is INP and why does it matter?",
+          "answer": "Interaction to Next Paint measures a page's overall responsiveness to user inputs like clicks and taps. A low INP ensures that your website feels snappy and interactive, preventing user frustration."
+        },
+        {
+          "question": "How do you fix Cumulative Layout Shift?",
+          "answer": "We fix CLS by ensuring all images and dynamic elements have explicit width and height attributes. We also optimize font loading to prevent invisible text flashes that cause shifts."
+        },
+        {
+          "question": "Will this optimization affect my website design?",
+          "answer": "No, our optimization process focuses entirely on underlying code, asset delivery, and server configurations. Your visual design and brand identity will remain completely unchanged throughout the process."
+        },
+        {
+          "question": "How long does it take to see SEO improvements?",
+          "answer": "While performance improvements are immediate, Google search console reports can take two to four weeks to reflect the updated metrics. Organic ranking improvements typically follow shortly after validation."
+        },
+        {
+          "question": "Do you support custom JavaScript frameworks?",
+          "answer": "Yes, we specialize in optimizing complex single-page applications built on React, Next.js, Vue, and Angular. We apply framework-specific code-splitting and server-side rendering techniques."
+        },
+        {
+          "question": "How do you measure real-world performance?",
+          "answer": "We combine synthetic lab testing tools like Lighthouse with Real User Monitoring (RUM) libraries. This allows us to capture actual performance data from real users visiting your site."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "PageSpeed Insights",
+          "icon": "pagespeed"
+        },
+        {
+          "name": "Lighthouse",
+          "icon": "lighthouse"
+        },
+        {
+          "name": "Chrome UX Report",
+          "icon": "crux"
+        },
+        {
+          "name": "Web Vitals",
+          "icon": "web-vitals"
+        },
+        {
+          "name": "Next.js",
+          "icon": "nextjs"
+        },
+        {
+          "name": "React",
+          "icon": "react"
+        },
+        {
+          "name": "Cloudflare",
+          "icon": "cloudflare"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Core Web Vitals Optimizasyonu",
+    "shortDescription": "Kapsamlı Core Web Vitals denetim ve mühendislik hizmetlerimizle web sitenizin yükleme hızlarını artırın, düzen kaymalarını önleyin ve arama motoru sıralamalarınızı yükseltin.",
+    "fullDescription": "Yavaş yükleme hızları ve kararsız düzenler kullanıcıları hayal kırıklığına uğratır ve arama motoru sıralamalarınıza doğrudan zarar verir. Core Web Vitals optimizasyon hizmetimiz, Google'ın kullanıcı deneyimini değerlendirmek için kullandığı kritik metrikleri hedefler: En Büyük İçerikli Boyama (LCP), Sonraki Boyamayla Etkileşim (INP) ve Kümülatif Düzen Kayması (CLS). Ön uç mimarinizi derinlemesine inceliyor, kritik oluşturma yollarını optimize ediyor, gelişmiş görsel sıkıştırma uyguluyor ve oluşturmayı engelleyen JavaScript'leri ortadan kaldırıyoruz. Bu darboğazları çözerek mükemmel Lighthouse skorları elde etmenize, hemen çıkma oranlarını düşürmenize ve organik arama sonuçlarında rekabet avantajı kazanmanıza yardımcı oluyoruz.",
+    "features": [
+      "LCP (En Büyük İçerikli Boyama) Hızlandırma",
+      "INP (Sonraki Boyamayla Etkileşim) Optimizasyonu",
+      "CLS (Kümülatif Düzen Kayması) Önleme",
+      "Kritik Oluşturma Yolu Optimizasyonu",
+      "Gelişmiş Görsel ve Varlık Sıkıştırma",
+      "Oluşturmayı Engelleyen JavaScript Temizliği",
+      "Gerçek Kullanıcı İzleme (RUM) Kurulumu",
+      "Sunucu Tarafı Oluşturma (SSR) Ayarları"
+    ],
+    "benefits": [
+      "Gelişmiş Google Arama Sıralamaları",
+      "Düşük Hemen Çıkma Oranları",
+      "Artan Dönüşüm Oranları",
+      "Gelişmiş Mobil Kullanıcı Deneyimi",
+      "Daha Düşük Sunucu Bant Genişliği Maliyetleri",
+      "Daha Hızlı Sayfa Yükleme Süreleri"
+    ],
+    "metaTitle": "Core Web Vitals Optimizasyonu | PakSoft",
+    "metaDescription": "Google sıralamalarınızı ve kullanıcı deneyiminizi yükseltin. LCP, INP ve CLS sorunlarını çözmek için uzman desteği alın. PakSoft ile hemen iletişime geçin!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "İlk Denetim",
+          "description": "Lighthouse ve Chrome Kullanıcı Deneyimi raporlarını kullanarak kapsamlı bir performans denetimi gerçekleştiriyoruz. Bu, mevcut LCP, INP ve CLS metriklerinizin net bir temelini oluşturur."
+        },
+        {
+          "step": 2,
+          "title": "Darboğaz Tespiti",
+          "description": "Mühendislerimiz kritik oluşturma yolunuzu analiz eder ve oluşturmayı engelleyen betikleri belirler. Düzen kaymalarına ve yavaş yürütme sürelerine neden olan tam öğeleri tespit ederiz."
+        },
+        {
+          "step": 3,
+          "title": "Varlık Optimizasyonu",
+          "description": "Modern görsel formatlarını, tembel yüklemeyi (lazy loading) ve agresif kod bölme stratejilerini uyguluyoruz. Bu, başlangıç yük boyutunu önemli ölçüde azaltır ve görsel teslimatı hızlandırır."
+        },
+        {
+          "step": 4,
+          "title": "Yürütme İyileştirmesi",
+          "description": "Kritik olmayan betikleri erteleyerek ve ağır olay işleyicilerini yeniden yapılandırarak JavaScript yürütmesini optimize ediyoruz. Bu, INP skorunuzu doğrudan iyileştirir."
+        },
+        {
+          "step": 5,
+          "title": "Düzen Sabitleme",
+          "description": "Medya öğelerine açık boyutlar atıyor ve web yazı tipi yükleme davranışlarını optimize ediyoruz. Bu, sayfa oluşturma sırasında beklenmeyen düzen kaymalarını tamamen ortadan kaldırır."
+        },
+        {
+          "step": 6,
+          "title": "Sürekli İzleme",
+          "description": "Farklı cihazlardaki performans metriklerini izlemek için gerçek zamanlı izleme araçları kuruyoruz. Bu, web sitenizin hızlı kalmasını ve gelecekteki güncellemelere uyumlu olmasını sağlar."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Core Web Vitals nedir?",
+          "answer": "Core Web Vitals, Google'ın bir web sayfasının genel kullanıcı deneyiminde önemli gördüğü belirli faktörler kümesidir. LCP, INP ve CLS olmak üzere üç spesifik sayfa hızı ve kullanıcı etkileşimi ölçümünden oluşur."
+        },
+        {
+          "question": "LCP web sitemi nasıl etkiler?",
+          "answer": "En Büyük İçerikli Boyama (LCP), bir web sayfasının ana içeriğinin ne kadar hızlı yüklendiğini ölçer. Yavaş bir LCP, kullanıcıları hayal kırıklığına uğratır ve hemen çıkma oranlarını artırarak SEO sıralamalarınızı olumsuz etkiler."
+        },
+        {
+          "question": "INP nedir ve neden önemlidir?",
+          "answer": "Sonraki Boyamayla Etkileşim (INP), bir sayfanın tıklamalar ve dokunmalar gibi kullanıcı girişlerine verdiği genel yanıt verme süresini ölçer. Düşük bir INP, web sitenizin hızlı ve etkileşimli hissettirmesini sağlayarak kullanıcı memnuniyetsizliğini önler."
+        },
+        {
+          "question": "Kümülatif Düzen Kayması (CLS) nasıl düzeltilir?",
+          "answer": "Tüm görsellerin ve dinamik öğelerin açık genişlik ve yükseklik niteliklerine sahip olmasını sağlayarak CLS'yi düzeltiyoruz. Ayrıca, kaymalara neden olan görünmez metin parlamalarını önlemek için yazı tipi yüklemesini optimize ediyoruz."
+        },
+        {
+          "question": "Bu optimizasyon web sitemin tasarımını etkiler mi?",
+          "answer": "Hayır, optimizasyon sürecimiz tamamen arka plan koduna, varlık teslimatına ve sunucu yapılandırmalarına odaklanır. Görsel tasarımınız ve marka kimliğiniz süreç boyunca tamamen değişmeden kalacaktır."
+        },
+        {
+          "question": "SEO iyileşmelerini görmek ne kadar sürer?",
+          "answer": "Performans iyileştirmeleri anında gerçekleşirken, Google Search Console raporlarının güncellenmiş metrikleri yansıtması iki ila dört hafta sürebilir. Organik sıralama artışları genellikle doğrulamadan kısa bir süre sonra başlar."
+        },
+        {
+          "question": "Özel JavaScript çerçevelerini destekliyor musunuz?",
+          "answer": "Evet, React, Next.js, Vue ve Angular üzerinde oluşturulmuş karmaşık tek sayfalık uygulamaları optimize etme konusunda uzmanız. Çerçeveye özel kod bölme ve sunucu tarafı oluşturma teknikleri uyguluyoruz."
+        },
+        {
+          "question": "Gerçek dünya performansını nasıl ölçüyorsunuz?",
+          "answer": "Lighthouse gibi sentetik laboratuvar test araçlarını Gerçek Kullanıcı İzleme (RUM) kitaplıklarıyla birleştiriyoruz. Bu, sitemizi ziyaret eden gerçek kullanıcılardan gerçek performans verilerini yakalamamızı sağlar."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "PageSpeed Insights",
+          "icon": "pagespeed"
+        },
+        {
+          "name": "Lighthouse",
+          "icon": "lighthouse"
+        },
+        {
+          "name": "Chrome UX Report",
+          "icon": "crux"
+        },
+        {
+          "name": "Web Vitals",
+          "icon": "web-vitals"
+        },
+        {
+          "name": "Next.js",
+          "icon": "nextjs"
+        },
+        {
+          "name": "React",
+          "icon": "react"
+        },
+        {
+          "name": "Cloudflare",
+          "icon": "cloudflare"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Core Web Vitals Optimierung",
+    "shortDescription": "Beschleunigen Sie die Ladezeiten Ihrer Website, eliminieren Sie Layout-Verschiebungen und verbessern Sie Ihr Suchmaschinen-Ranking mit unseren umfassenden Core Web Vitals-Audits.",
+    "fullDescription": "Langsame Ladezeiten und instabile Layouts frustrieren Nutzer und schaden Ihren Suchmaschinen-Rankings direkt. Unser Core Web Vitals-Optimierungsservice zielt auf die kritischen Metriken ab, die Google zur Bewertung der Nutzererfahrung heranzieht: Largest Contentful Paint (LCP), Interaction to Next Paint (INP) und Cumulative Layout Shift (CLS). Wir führen tiefgehende Audits Ihrer Frontend-Architektur durch, optimieren kritische Rendering-Pfade, implementieren fortsrittliche Bildkomprimierung und eliminieren renderblockierendes JavaScript. Durch die Behebung dieser Leistungsengpässe helfen wir Ihrem Unternehmen, perfekte Lighthouse-Scores zu erzielen, Absprungraten zu senken und sich einen Wettbewerbsvorteil in den organischen Suchergebnissen zu sichern.",
+    "features": [
+      "LCP-Beschleunigung (Largest Contentful Paint)",
+      "INP-Optimierung (Interaction to Next Paint)",
+      "CLS-Prävention (Cumulative Layout Shift)",
+      "Optimierung des kritischen Rendering-Pfads",
+      "Fortschrittliche Bild- und Asset-Komprimierung",
+      "Eliminierung von renderblockierendem JavaScript",
+      "Einrichtung von Real User Monitoring (RUM)",
+      "Server-Side Rendering (SSR) Tuning"
+    ],
+    "benefits": [
+      "Verbesserte Google-Suchrankings",
+      "Reduzierte Absprungraten",
+      "Erhöhte Konversionsraten",
+      "Verbesserte mobile Nutzererfahrung",
+      "Geringere Server-Bandbreitenkosten",
+      "Schnellere Seitenladezeiten"
+    ],
+    "metaTitle": "Core Web Vitals Optimierung | PakSoft",
+    "metaDescription": "Steigern Sie Ihre Google-Rankings und Nutzererfahrung. Erhalten Sie professionelle Core Web Vitals Optimierung für LCP, INP und CLS. Jetzt PakSoft kontaktieren!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Erstes Audit",
+          "description": "Wir führen ein umfassendes Performance-Audit mit Lighthouse und Chrome User Experience Reports durch. Dies etabliert eine klare Baseline Ihrer aktuellen LCP-, INP- und CLS-Metriken."
+        },
+        {
+          "step": 2,
+          "title": "Engpassanalyse",
+          "description": "Unsere Ingenieure analysieren Ihren kritischen Rendering-Pfad und identifizieren renderblockierende Skripte. Wir lokalisieren die genauen Elemente, die Layout-Verschiebungen und langsame Ausführungszeiten verursachen."
+        },
+        {
+          "step": 3,
+          "title": "Asset-Optimierung",
+          "description": "Wir implementieren moderne Bildformate, Lazy Loading und aggressive Code-Splitting-Strategien. Dies reduziert die anfängliche Payload-Größe erheblich und beschleunigt die visuelle Bereitstellung."
+        },
+        {
+          "step": 4,
+          "title": "Ausführungs-Tuning",
+          "description": "Wir optimieren die JavaScript-Ausführung, indem wir unkritische Skripte verzögern und schwere Event-Handler refaktorieren. Dies verbessert direkt Ihren INP-Score."
+        },
+        {
+          "step": 5,
+          "title": "Layout-Stabilisierung",
+          "description": "Wir weisen Medienelementen explizite Dimensionen zu und optimieren das Ladeverhalten von Webfonts. Dies eliminiert unerwartete Layout-Verschiebungen während des Renderns vollständig."
+        },
+        {
+          "step": 6,
+          "title": "Kontinuierliche Überwachung",
+          "description": "Wir richten Echtzeit-Überwachungstools ein, um Performance-Metriken auf verschiedenen Geräten zu verfolgen. Dies stellt sicher, dass Ihre Website schnell bleibt und zukünftigen Updates entspricht."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was sind Core Web Vitals?",
+          "answer": "Core Web Vitals sind eine Reihe spezifischer Faktoren, die Google für die allgemeine Nutzererfahrung einer Webseite als wichtig erachtet. Sie bestehen aus drei spezifischen Messungen der Seitengeschwindigkeit und Nutzerinteraktion: LCP, INP und CLS."
+        },
+        {
+          "question": "Wie beeinflusst LCP meine Website?",
+          "answer": "Largest Contentful Paint misst, wie schnell der Hauptinhalt einer Webseite geladen wird. Ein langsamer LCP frustriert Benutzer und kann zu höheren Absprungraten führen, was sich negativ auf Ihre SEO-Rankings auswirkt."
+        },
+        {
+          "question": "Was ist INP und warum ist es wichtig?",
+          "answer": "Interaction to Next Paint misst die allgemeine Reaktionsfähigkeit einer Seite auf Benutzereingaben wie Klicks und Taps. Ein niedriger INP stellt sicher, dass sich Ihre Website schnell und interaktiv anfühlt, was Frustrationen der Nutzer verhindert."
+        },
+        {
+          "question": "Wie behebt man den Cumulative Layout Shift?",
+          "answer": "Wir beheben CLS, indem wir sicherstellen, dass alle Bilder und dynamischen Elemente explizite Breiten- und Höhenattribute haben. Wir optimieren auch das Laden von Schriftarten, um unsichtbare Textblitze zu verhindern, die Verschiebungen verursachen."
+        },
+        {
+          "question": "Beeinflusst diese Optimierung das Design meiner Website?",
+          "answer": "Nein, unser Optimierungsprozess konzentriert sich ausschließlich auf den zugrunde liegenden Code, die Bereitstellung von Assets und Serverkonfigurationen. Ihr visuelles Design und Ihre Markenidentität bleiben während des gesamten Prozesses völlig unverändert."
+        },
+        {
+          "question": "Wie lange dauert es, bis SEO-Verbesserungen sichtbar sind?",
+          "answer": "Während Leistungsverbesserungen sofort wirksam sind, kann es zwei bis vier Wochen dauern, bis die Berichte der Google Search Console die aktualisierten Metriken widerspiegeln. Organische Ranking-Verbesserungen folgen in der Regel kurz nach der Validierung."
+        },
+        {
+          "question": "Unterstützen Sie benutzerdefinierte JavaScript-Frameworks?",
+          "answer": "Ja, wir sind darauf spezialisiert, komplexe Single-Page-Anwendungen zu optimieren, die auf React, Next.js, Vue und Angular basieren. Wir wenden Framework-spezifische Code-Splitting- und serverseitige Rendering-Techniken an."
+        },
+        {
+          "question": "Wie messen Sie die Leistung in der Praxis?",
+          "answer": "Wir kombinieren synthetische Labortests wie Lighthouse mit Real User Monitoring (RUM) Bibliotheken. Dies ermöglicht es uns, tatsächliche Leistungsdaten von echten Benutzern zu erfassen, die Ihre Website besuchen."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "PageSpeed Insights",
+          "icon": "pagespeed"
+        },
+        {
+          "name": "Lighthouse",
+          "icon": "lighthouse"
+        },
+        {
+          "name": "Chrome UX Report",
+          "icon": "crux"
+        },
+        {
+          "name": "Web Vitals",
+          "icon": "web-vitals"
+        },
+        {
+          "name": "Next.js",
+          "icon": "nextjs"
+        },
+        {
+          "name": "React",
+          "icon": "react"
+        },
+        {
+          "name": "Cloudflare",
+          "icon": "cloudflare"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "کور ویب وائٹلز آپٹیمائزیشن",
+    "shortDescription": "ہماری جامع Core Web Vitals آڈٹ اور انجینئرنگ سروسز کے ساتھ اپنی ویب سائٹ کی لوڈنگ کی رفتار کو تیز کریں، لے آؤٹ کی تبدیلیوں کو ختم کریں، اور سرچ انجن رینکنگ کو بڑھائیں۔",
+    "fullDescription": "سست لوڈنگ کی رفتار اور غیر مستحکم لے آؤٹ صارفین کو مایوس کرتے ہیں اور آپ کی سرچ انجن رینکنگ کو براہ راست نقصان پہنچاتے ہیں۔ ہماری Core Web Vitals آپٹیمائزیشن سروس ان اہم میٹرکس کو نشانہ بناتی ہے جنہیں Google صارف کے تجربے کا جائزہ لینے کے لیے استعمال کرتا ہے: Largest Contentful Paint (LCP)، Interaction to Next Paint (INP)، اور Cumulative Layout Shift (CLS)۔ ہم آپ کے فرنٹ اینڈ آرکیٹیکچر کا گہرا آڈٹ کرتے ہیں، اہم رینڈرنگ پاتھز کو بہتر بناتے ہیں، جدید امیج کمپریشن نافذ کرتے ہیں، اور رینڈر بلاک کرنے والے JavaScript کو ختم کرتے ہیں۔ ان کارکردگی کی رکاوٹوں کو حل کر کے، ہم آپ کے کاروبار کو بہترین Lighthouse اسکور حاصل کرنے، باؤنس ریٹ کو کم کرنے، اور آرگینک سرچ نتائج میں مسابقتی برتری حاصل کرنے میں مدد کرتے ہیں۔",
+    "features": [
+      "LCP (Largest Contentful Paint) کی رفتار میں اضافہ",
+      "INP (Interaction to Next Paint) آپٹیمائزیشن",
+      "CLS (Cumulative Layout Shift) کی روک تھام",
+      "اہم رینڈرنگ پاتھ کی آپٹیمائزیشن",
+      "جدید امیج اور ایسٹ کمپریشن",
+      "رینڈر بلاک کرنے والے JavaScript کا خاتمہ",
+      "ریئل یوزر مانیٹرنگ (RUM) سیٹ اپ",
+      "سرور سائیڈ رینڈرنگ (SSR) ٹیوننگ"
+    ],
+    "benefits": [
+      "گوگل سرچ رینکنگ میں بہتری",
+      "باؤنس ریٹس میں کمی",
+      "کنورژن ریٹس میں اضافہ",
+      "بہتر موبائل صارف کا تجربہ",
+      "سرور بینڈوتھ کے کم اخراجات",
+      "تیز تر پیج لوڈ ٹائمز"
+    ],
+    "metaTitle": "کور ویب وائٹلز آپٹیمائزیشن | PakSoft",
+    "metaDescription": "اپنی گوگل رینکنگ اور صارف کے تجربے کو بہتر بنائیں۔ LCP، INP، اور CLS کے مسائل کو حل کرنے کے لیے ماہرانہ مدد حاصل کریں۔ آج ہی PakSoft سے رابطہ کریں!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "ابتدائی آڈٹ",
+          "description": "ہم Lighthouse اور Chrome صارف کے تجربے کی رپورٹوں کا استعمال کرتے ہوئے ایک جامع کارکردگی کا آڈٹ کرتے ہیں۔ یہ آپ کے موجودہ LCP، INP، اور CLS میٹرکس کا ایک واضح بنیادی ڈھانچہ قائم کرتا ہے۔"
+        },
+        {
+          "step": 2,
+          "title": "رکاوٹوں کی نشاندہی",
+          "description": "ہمارے انجینئرز آپ کے اہم رینڈرنگ پاتھ کا تجزیہ کرتے ہیں اور رینڈر بلاک کرنے والے اسکرپٹس کی نشاندہی کرتے ہیں۔ ہم ان درست عناصر کی نشاندہی کرتے ہیں جو لے آؤٹ کی تبدیلیوں اور سست عمل درآمد کا سبب بنتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "ایسٹ آپٹیمائزیشن",
+          "description": "ہم جدید امیج فارمیٹس، لیزی لوڈنگ، اور جارحانہ کوڈ اسپلٹنگ کی حکمت عملیوں کو نافذ کرتے ہیں۔ یہ ابتدائی پے لوڈ سائز کو نمایاں طور پر کم کرتا ہے اور بصری ترسیل کو تیز کرتا ہے۔"
+        },
+        {
+          "step": 4,
+          "title": "عمل درآمد کی ٹیوننگ",
+          "description": "ہم غیر اہم اسکرپٹس کو مؤخر کر کے اور بھاری ایونٹ ہینڈلرز کو ری فیکٹر کر کے JavaScript کے عمل درآمد کو بہتر بناتے ہیں۔ یہ براہ راست آپ کے INP اسکور کو بہتر بناتا ہے۔"
+        },
+        {
+          "step": 5,
+          "title": "لے آؤٹ کا استحکام",
+          "description": "ہم میڈیا عناصر کے لیے واضح چوڑائی اور اونچائی کے اوصاف لاگو کرتے ہیں اور ویب فونٹ لوڈنگ کے رویوں کو بہتر بناتے ہیں۔ یہ پیج رینڈرنگ کے دوران غیر متوقع لے آؤٹ کی تبدیلیوں کو مکمل طور پر ختم کرتا ہے۔"
+        },
+        {
+          "step": 6,
+          "title": "مسلسل مانیٹرنگ",
+          "description": "ہم مختلف آلات پر کارکردگی کے میٹرکس کو ٹریک کرنے کے لیے ریئل ٹائم مانیٹرنگ ٹولز ترتیب دیتے ہیں۔ یہ یقینی بناتا ہے کہ آپ کی ویب سائٹ تیز رہے اور مستقبل کی اپ ڈیٹس کے مطابق رہے۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "کور ویب وائٹلز کیا ہیں؟",
+          "answer": "کور ویب وائٹلز مخصوص عوامل کا ایک مجموعہ ہیں جنہیں Google ویب پیج کے مجموعی صارف کے تجربے میں اہم سمجھتا ہے۔ یہ پیج کی رفتار اور صارف کے تعامل کی تین مخصوص پیمائشوں پر مشتمل ہیں: LCP، INP، اور CLS۔"
+        },
+        {
+          "question": "LCP میری ویب سائٹ کو کیسے متاثر کرتا ہے؟",
+          "answer": "Largest Contentful Paint اس بات کی پیمائش کرتا ہے کہ ویب پیج کا بنیادی مواد کتنی جلدی لوڈ ہوتا ہے۔ سست LCP صارفین کو مایوس کرتا ہے اور باؤنس ریٹ کو بڑھا سکتا ہے، جو آپ کی SEO رینکنگ کو منفی طور پر متاثر کرتا ہے۔"
+        },
+        {
+          "question": "INP کیا ہے اور یہ کیوں اہم ہے؟",
+          "answer": "Interaction to Next Paint صارف کے ان پٹس جیسے کلکس اور ٹیپس پر پیج کے مجموعی ردعمل کی پیمائش کرتا ہے۔ کم INP اس بات کو یقینی بناتا ہے کہ آپ کی ویب سائٹ تیز اور انٹرایکٹو محسوس ہو، جس سے صارف کی مایوسی سے بچا جا سکے۔"
+        },
+        {
+          "question": "آپ کcumulative لے آؤٹ شفٹ کو کیسے ٹھیک کرتے ہیں؟",
+          "answer": "ہم CLS کو اس بات کو یقینی بنا کر ٹھیک کرتے ہیں کہ تمام تصاویر اور متحرک عناصر کے پاس واضح چوڑائی اور اونچائی کے اوصاف ہوں۔ ہم فونٹ لوڈنگ کو بھی بہتر بناتے ہیں تاکہ غیر مرئی ٹیکسٹ فلیشز کو روکا جا سکے جو تبدیلیوں کا سبب بنتے ہیں۔"
+        },
+        {
+          "question": "کیا یہ آپٹیمائزیشن میری ویب سائٹ کے ڈیزائن کو متاثر کرے گی؟",
+          "answer": "نہیں، ہمارا آپٹیمائزیشن کا عمل مکمل طور پر بنیادی کوڈ، ایسٹ کی ترسیل، اور سرور کنفیگریشنز پر مرکوز ہے۔ آپ کا بصری ڈیزائن اور برانڈ کی شناخت پورے عمل کے دوران مکمل طور پر غیر تبدیل شدہ رہے گی۔"
+        },
+        {
+          "question": "SEO میں بہتری دیکھنے میں کتنا وقت لگتا ہے؟",
+          "answer": "اگرچہ کارکردگی میں بہتری فوری ہوتی ہے، لیکن Google Search Console کی رپورٹوں میں اپ ڈیٹ شدہ میٹرکس کو ظاہر ہونے میں دو سے چار ہفتے لگ سکتے ہیں۔ آرگینک رینکنگ میں بہتری عام طور پر توثیق کے فوراً بعد ہوتی ہے۔"
+        },
+        {
+          "question": "کیا آپ اپنی مرضی کے مطابق JavaScript فریم ورکس کو سپورٹ کرتے ہیں؟",
+          "answer": "جی ہاں، ہم React، Next.js، Vue، اور Angular پر بنے پیچیدہ سنگل پیج ایپلی کیشنز کو بہتر بنانے میں مہارت رکھتے ہیں۔ ہم فریم ورک کے مخصوص کوڈ اسپلٹنگ اور سرور سائیڈ رینڈرنگ کی تکنیکوں کو لاگو کرتے ہیں۔"
+        },
+        {
+          "question": "آپ حقیقی دنیا کی کارکردگی کی پیمائش کیسے کرتے ہیں؟",
+          "answer": "ہم Lighthouse جیسے مصنوعی لیب ٹیسٹنگ ٹولز کو ریئل یوزر مانیٹرنگ (RUM) لائبریریوں کے ساتھ جوڑتے ہیں۔ یہ ہمیں آپ کی سائٹ پر آنے والے حقیقی صارفین سے حقیقی کارکردگی کا ڈیٹا حاصل کرنے کی اجازت دیتا ہے۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "PageSpeed Insights",
+          "icon": "pagespeed"
+        },
+        {
+          "name": "Lighthouse",
+          "icon": "lighthouse"
+        },
+        {
+          "name": "Chrome UX Report",
+          "icon": "crux"
+        },
+        {
+          "name": "Web Vitals",
+          "icon": "web-vitals"
+        },
+        {
+          "name": "Next.js",
+          "icon": "nextjs"
+        },
+        {
+          "name": "React",
+          "icon": "react"
+        },
+        {
+          "name": "Cloudflare",
+          "icon": "cloudflare"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تحسين مؤشرات أداء الويب الأساسية",
+    "shortDescription": "قم بتسريع سرعة تحميل موقعك الإلكتروني، والقضاء على انزياحات التصميم، وتعزيز ترتيبك في محركات البحث من خلال خدمات تدقيق وهندسة Core Web Vitals الشاملة لدينا.",
+    "fullDescription": "تؤدي سرعات التحميل البطيئة والتخطيطات غير المستقرة إلى إحباط المستخدمين وتضر بترتيبك في محركات البحث بشكل مباشر. تستهدف خدمة تحسين Core Web Vitals المقاييس البالغة الأهمية التي تستخدمها Google لتقييم تجربة المستخدم: سرعة تحميل أكبر جزء من المحتوى (LCP)، والتفاعل مع عملية الطلاء التالية (INP)، وتراكم انزياح تخطيط الصفحة (CLS). نقوم بإجراء عمليات تدقيق عميقة لبنية الواجهة الأمامية الخاصة بك، وتحسين مسارات العرض الهامة، وتطبيق ضغط الصور المتقدم، والتخلص من ملفات JavaScript التي تعيق العرض. من خلال حل هذه الاختناقات، نساعد عملك على تحقيق درجات Lighthouse مثالية، وتقليل معدلات الارتداد، وتأمين ميزة تنافسية في نتائج البحث العضوية.",
+    "features": [
+      "تسريع مؤشر LCP (سرعة تحميل أكبر جزء من المحتوى)",
+      "تحسين مؤشر INP (التفاعل مع عملية الطلاء التالية)",
+      "منع مؤشر CLS (تراكم انزياح تخطيط الصفحة)",
+      "تحسين مسار العرض الحرج (Critical Rendering Path)",
+      "الضغط المتقدم للصور والأصول الرقمية",
+      "التخلص من ملفات JavaScript التي تعيق العرض",
+      "إعداد أدوات مراقبة المستخدم الحقيقي (RUM)",
+      "ضبط إعدادات العرض من جانب الخادم (SSR)"
+    ],
+    "benefits": [
+      "تحسين ترتيب الموقع في نتائج بحث Google",
+      "تقليل معدلات الارتداد بشكل ملحوظ",
+      "زيادة معدلات التحويل والمبيعات",
+      "تعزيز تجربة المستخدم على الهواتف المحمولة",
+      "خفض تكاليف استهلاك النطاق الترددي للخادم",
+      "تسريع أوقات تحميل الصفحات بشكل عام"
+    ],
+    "metaTitle": "تحسين مؤشرات أداء الويب الأساسية | PakSoft",
+    "metaDescription": "عزز ترتيبك في Google وتجربة المستخدم. احصل على تحسين احترافي لمؤشرات LCP وINP وCLS لتسريع موقعك بشكل مذهل. اتصل بـ PakSoft اليوم وابدأ الآن!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "التدقيق الأولي",
+          "description": "نقوم بإجراء تدقيق شامل للأداء باستخدام تقارير Lighthouse وتجربة مستخدم Chrome. يتيح لنا ذلك وضع خط أساس واضح لمقاييس LCP وINP وCLS الحالية."
+        },
+        {
+          "step": 2,
+          "title": "تحديد الاختناقات",
+          "description": "يحلل مهندسونا مسار العرض الحرج ويحددون البرامج النصية التي تعيق العرض. نحدد بدقة العناصر التي تسبب انزياحات في التصميم وبطء أوقات التنفيذ."
+        },
+        {
+          "step": 3,
+          "title": "تحسين الأصول الرقمية",
+          "description": "نطبق تنسيقات الصور الحديثة، والتحميل الكسول (lazy loading)، واستراتيجيات تقسيم الكود القوية. يقلل هذا بشكل كبير من حجم الحمولة الأولية ويسرع التسليم البصري."
+        },
+        {
+          "step": 4,
+          "title": "ضبط التنفيذ",
+          "description": "نقوم بتحسين تنفيذ JavaScript عن طريق تأجيل البرامج النصية غير الحرجة وإعادة هيكلة معالجات الأحداث الثقيلة. يؤدي هذا مباشرة إلى تحسين درجة INP الخاصة بك."
+        },
+        {
+          "step": 5,
+          "title": "تثبيت التخطيط",
+          "description": "نطبق أبعادًا صريحة على عناصر الوسائط ونحسن سلوكيات تحميل خطوط الويب. يقضي هذا تمامًا على انزياحات التصميم غير المتوقعة أثناء عرض الصفحة."
+        },
+        {
+          "step": 6,
+          "title": "المراقبة المستمرة",
+          "description": "نقوم بإعداد أدوات مراقبة في الوقت الفعلي لتتبع مقاييس الأداء عبر الأجهزة المختلفة. يضمن ذلك بقاء موقع الويب الخاص بك سريعًا ومتوافقًا مع التحديثات المستقبلية."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما هي مؤشرات أداء الويب الأساسية (Core Web Vitals)؟",
+          "answer": "مؤشرات أداء الويب الأساسية هي مجموعة من العوامل المحددة التي تعتبرها Google مهمة في تجربة المستخدم الإجمالية لصفحة الويب. وهي تتكون من ثلاثة قياسات محددة لسرعة الصفحة وتفاعل المستخدم: LCP وINP وCLS."
+        },
+        {
+          "question": "كيف يؤثر مؤشر LCP على موقعي الإلكتروني؟",
+          "answer": "يقيس مؤشر LCP مدى سرعة تحميل المحتوى الرئيسي لصفحة الويب. يؤدي بطء LCP إلى إحباط المستخدمين ويمكن أن يؤدي إلى ارتفاع معدلات الارتداد، مما يؤثر سلبًا على ترتيبك في محركات البحث."
+        },
+        {
+          "question": "ما هو مؤشر INP ولماذا هو مهم؟",
+          "answer": "يقيس مؤشر INP استجابة الصفحة الإجمالية لمدخلات المستخدم مثل النقرات واللمسات. يضمن انخفاض INP أن يبدو موقع الويب الخاص بك سريعًا وتفاعليًا، مما يمنع إحباط المستخدم."
+        },
+        {
+          "question": "كيف تقومون بإصلاح تراكم انزياح تخطيط الصفحة (CLS)؟",
+          "answer": "نقوم بإصلاح CLS من خلال التأكد من أن جميع الصور والعناصر الديناميكية لها سمات عرض وارتفاع صريحة. نقوم أيضًا بتحسين تحميل الخطوط لمنع ومضات النص غير المرئي التي تسبب انزياحات."
+        },
+        {
+          "question": "هل سيؤثر هذا التحسين على تصميم موقعي الإلكتروني؟",
+          "answer": "لا، تركز عملية التحسين لدينا بالكامل على الكود الأساسي، وتسليم الأصول، وتكوينات الخادم. سيبقى تصميمك المرئي وهوية علامتك التجارية دون تغيير تمامًا طوال العملية."
+        },
+        {
+          "question": "كم من الوقت يستغرق رؤية تحسينات في تحسين محركات البحث (SEO)؟",
+          "answer": "بينما تكون تحسينات الأداء فورية، قد تستغرق تقارير Google Search Console من أسبوعين إلى أربعة أسابيع لتعكس المقاييس المحدثة. تتبع تحسينات الترتيب العضوي عادةً بعد فترة وجيزة من التحقق."
+        },
+        {
+          "question": "هل تدعمون أطر عمل JavaScript المخصصة؟",
+          "answer": "نعم، نحن متخصصون في تحسين تطبيقات الصفحة الواحدة المعقدة المبنية على React وNext.js وVue وAngular. نطبق تقنيات تقسيم الكود والعرض من جانب الخادم الخاصة بكل إطار عمل."
+        },
+        {
+          "question": "كيف تقيسون الأداء في العالم الحقيقي؟",
+          "answer": "نحن نجمع بين أدوات اختبار المختبر الاصطناعية مثل Lighthouse ومكتبات مراقبة المستخدم الحقيقي (RUM). يتيح لنا ذلك التقاط بيانات الأداء الفعلية من المستخدمين الحقيقيين الذين يزورون موقعك."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "PageSpeed Insights",
+          "icon": "pagespeed"
+        },
+        {
+          "name": "Lighthouse",
+          "icon": "lighthouse"
+        },
+        {
+          "name": "Chrome UX Report",
+          "icon": "crux"
+        },
+        {
+          "name": "Web Vitals",
+          "icon": "web-vitals"
+        },
+        {
+          "name": "Next.js",
+          "icon": "nextjs"
+        },
+        {
+          "name": "React",
+          "icon": "react"
+        },
+        {
+          "name": "Cloudflare",
+          "icon": "cloudflare"
+        }
+      ]
+    }
+  }
+}

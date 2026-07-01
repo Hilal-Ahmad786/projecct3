@@ -1,0 +1,638 @@
+{
+  "slug": "chatbot-development",
+  "en": {
+    "name": "AI Chatbot Development",
+    "shortDescription": "Deploy intelligent, context-aware conversational agents that resolve customer queries, qualify leads, and provide 24/7 multilingual support.",
+    "fullDescription": "Older chatbots relied on frustrating, rigid decision trees. When a user asked a question outside the script, the bot broke. Our AI Chatbot Development services leverage Large Language Models (LLMs) and advanced Natural Language Understanding (NLU) to create conversational agents that actually understand intent and context. We build bots that ingest your entire knowledge base—documentation, past support tickets, and website content—so they can answer complex, highly specific customer questions accurately. Whether you need a customer support bot on your website, a lead qualification assistant on WhatsApp, or an internal IT helpdesk bot on Slack, we design the conversational flow, integrate it with your APIs (to check order status or book appointments), and implement seamless human handoff protocols so your team only deals with high-value interactions.",
+    "features": [
+      "LLM & NLU Powered Intent Recognition",
+      "Multi-Platform Deployment (Web, WhatsApp, Slack)",
+      "RAG (Retrieval-Augmented Generation) Knowledge Integration",
+      "API Integrations for Action Execution (Booking, Checking Orders)",
+      "Context-Aware & Multi-Turn Conversations",
+      "Seamless Human-Agent Handoff Systems",
+      "Automated Multi-Language Translation",
+      "Conversation Analytics & Sentiment Tracking"
+    ],
+    "benefits": [
+      "Provide instant, accurate customer support 24 hours a day, 7 days a week",
+      "Reduce support ticket volume by automating repetitive inquiries",
+      "Qualify sales leads automatically before they reach your human team",
+      "Speak to customers in their native language with real-time translation",
+      "Ensure frustrating loops are avoided with smart human handoff",
+      "Gather actionable insights from user conversation data and sentiment"
+    ],
+    "metaTitle": "AI Chatbot Development | LLM Conversational Agents | PakSoft",
+    "metaDescription": "Build intelligent AI chatbots that understand context. We develop multi-platform conversational agents for customer support, lead qualification, and internal IT.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Use Case & Persona Definition",
+          "description": "We identify the bot's primary goal (support, sales, internal helpdesk). We define its tone of voice, personality constraints, and the platforms it will operate on (Web, WhatsApp, etc.)."
+        },
+        {
+          "step": 2,
+          "title": "Knowledge Ingestion",
+          "description": "We collect your FAQs, PDFs, and website data, processing them into a vector database using RAG. This ensures the bot's answers are strictly grounded in your proprietary information."
+        },
+        {
+          "step": 3,
+          "title": "Conversational Flow Design",
+          "description": "While LLMs are dynamic, we structure 'guardrails' to guide the conversation. We design how the bot should qualify leads or troubleshoot issues step-by-step before executing an action."
+        },
+        {
+          "step": 4,
+          "title": "Backend & API Integration",
+          "description": "We connect the chatbot to your business systems. If a user asks 'Where is my order?', the bot securely pings your Shopify or ERP API, fetches the status, and replies conversationally."
+        },
+        {
+          "step": 5,
+          "title": "Human Handoff Setup",
+          "description": "We integrate with your live chat software (Zendesk, Intercom). If the bot detects high negative sentiment or is asked to speak to a human, it transfers the chat and context to an agent instantly."
+        },
+        {
+          "step": 6,
+          "title": "Testing & Iteration",
+          "description": "We simulate hundreds of conversations to expose edge cases and prevent 'hallucinations'. After deployment, we monitor chat logs to refine prompts and update the knowledge base."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How do you stop the chatbot from making up answers (hallucinating)?",
+          "answer": "We use a technique called Retrieval-Augmented Generation (RAG) combined with strict system prompts. The AI is instructed: 'Only answer using the provided documents. If the answer is not in the documents, say you don't know.' This practically eliminates hallucinations."
+        },
+        {
+          "question": "Can the chatbot speak multiple languages?",
+          "answer": "Yes. Modern LLMs are inherently multilingual. Even if your entire knowledge base is written in English, the bot can understand a query in Spanish, search the English documents, and translate the accurate answer back into fluent Spanish in real time."
+        },
+        {
+          "question": "Will the chatbot replace my customer support team?",
+          "answer": "No, it augments them. The bot is designed to handle the 70% of repetitive questions (password resets, shipping policies, basic troubleshooting). This frees up your human agents to handle complex, high-value, or emotionally sensitive issues."
+        },
+        {
+          "question": "Can the bot actually perform actions, or just answer questions?",
+          "answer": "It can perform actions. We integrate 'function calling' capabilities. If a user wants to book a meeting, the bot can check a calendar API, offer time slots, and confirm the booking directly within the chat interface."
+        },
+        {
+          "question": "What platforms can you deploy the chatbot on?",
+          "answer": "We deploy on a wide variety of channels: Web widgets, WhatsApp Business API, Facebook Messenger, Slack, Microsoft Teams, Telegram, and SMS via Twilio."
+        },
+        {
+          "question": "How do human agents take over the chat?",
+          "answer": "We integrate the bot with platforms like Zendesk, Intercom, or HubSpot. The bot monitors for specific intent ('talk to human') or negative sentiment. When triggered, it pauses the AI, alerts a human agent in their dashboard, and passes the entire chat history over so the user doesn't have to repeat themselves."
+        },
+        {
+          "question": "What happens if our knowledge base information changes?",
+          "answer": "The system is dynamic. When you update a PDF or a web page, our pipeline automatically re-ingests the document, updates the vector database, and the chatbot instantly starts using the new information."
+        },
+        {
+          "question": "How do we know if the chatbot is actually performing well?",
+          "answer": "We provide an analytics dashboard that tracks resolution rates (how many chats ended without a human handoff), user sentiment analysis, and the most frequently asked questions, helping you identify gaps in your product documentation."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "openai",
+          "name": "OpenAI / GPT-4"
+        },
+        {
+          "icon": "nodedotjs",
+          "name": "Node.js"
+        },
+        {
+          "icon": "python",
+          "name": "Python / LangChain"
+        },
+        {
+          "icon": "vector",
+          "name": "Pinecone / ChromaDB"
+        },
+        {
+          "icon": "react",
+          "name": "React (Web Widget)"
+        },
+        {
+          "icon": "whatsapp",
+          "name": "WhatsApp Business API"
+        },
+        {
+          "icon": "slack",
+          "name": "Slack"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS / Vercel"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Yapay Zeka Chatbot Geliştirme",
+    "shortDescription": "Müşteri sorgularını çözen, satış potansiyelini değerlendiren ve 7/24 çok dilli destek sağlayan akıllı, bağlamı anlayan diyalog ajanları (chatbot) kurun.",
+    "fullDescription": "Eski chatbot'lar sinir bozucu, katı karar ağaçlarına (decision trees) dayanıyordu. Bir kullanıcı senaryo dışında bir soru sorduğunda bot çöküyordu. Yapay Zeka Chatbot Geliştirme hizmetlerimiz, niyeti ve bağlamı gerçekten anlayan diyalog ajanları oluşturmak için Büyük Dil Modellerinden (LLM'ler) ve gelişmiş Doğal Dil Anlamadan (NLU) yararlanır. Tüm bilgi tabanınızı (dokümantasyon, geçmiş destek biletleri ve web sitesi içeriği) özümseyen botlar inşa ediyoruz, böylece karmaşık ve son derece spesifik müşteri sorularını doğru bir şekilde yanıtlayabilirler. Web sitenizde bir müşteri destek botuna, WhatsApp'ta bir müşteri adayı (lead) değerlendirme asistanına veya Slack'te dahili bir BT (IT) yardım masası botuna ihtiyacınız olsun fark etmez; sohbet akışını tasarlıyor, API'lerinizle (sipariş durumunu kontrol etmek veya randevu almak için) entegre ediyor ve ekibinizin yalnızca yüksek değerli etkileşimlerle ilgilenmesi için sorunsuz 'insana aktarma' protokolleri uyguluyoruz.",
+    "features": [
+      "LLM ve NLU Destekli Niyet Tanıma",
+      "Çoklu Platform Dağıtımı (Web, WhatsApp, Slack)",
+      "RAG (Geri Çağırımla Artırılmış Üretim) Bilgi Entegrasyonu",
+      "Eylem Yürütme İçin API Entegrasyonları (Rezervasyon, Sipariş Kontrolü)",
+      "Bağlam Farkındalığı Olan ve Çok Turlu Sohbetler",
+      "Sorunsuz İnsana Aktarma (Handoff) Sistemleri",
+      "Otomatik Çoklu Dil Çevirisi",
+      "Diyalog Analitiği ve Duygu (Sentiment) Takibi"
+    ],
+    "benefits": [
+      "Haftanın 7 günü, günün 24 saati anında ve doğru müşteri desteği sağlayın",
+      "Tekrarlanan sorguları otomatikleştirerek destek talebi (ticket) hacmini azaltın",
+      "Satış potansiyellerini (leads) insan ekibinize ulaşmadan önce otomatik olarak filtreleyin",
+      "Gerçek zamanlı çeviri ile müşterilerle kendi anadillerinde konuşun",
+      "Akıllı insana aktarma ile sinir bozucu tekrarlayan döngülerden kaçının",
+      "Kullanıcı konuşma verilerinden ve duygu durumlarından eyleme geçirilebilir içgörüler toplayın"
+    ],
+    "metaTitle": "Yapay Zeka Chatbot Geliştirme | LLM Destekli | PakSoft",
+    "metaDescription": "Bağlamı anlayan akıllı yapay zeka chatbotları oluşturun. Müşteri desteği, müşteri adayı değerlendirmesi ve dahili iletişim için çok platformlu ajanlar geliştiriyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Kullanım Senaryosu ve Persona Tanımlama",
+          "description": "Botun birincil hedefini (destek, satış, dahili yardım) belirliyoruz. Ses tonunu, kişilik sınırlarını ve üzerinde çalışacağı platformları (Web, WhatsApp vb.) tanımlıyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Bilgi Yükleme (Ingestion)",
+          "description": "SSS'lerinizi (FAQ), PDF'lerinizi ve web sitesi verilerinizi topluyor, RAG kullanarak bir vektör veritabanına işliyoruz. Bu, botun yanıtlarının kesinlikle size ait tescilli bilgilere dayanmasını sağlar."
+        },
+        {
+          "step": 3,
+          "title": "Diyalog Akışı Tasarımı",
+          "description": "LLM'ler dinamik olsa da konuşmayı yönlendirmek için 'korkuluklar' (guardrails) oluşturuyoruz. Botun bir eylemi gerçekleştirmeden önce müşteriyi nasıl değerlendirmesi veya sorunları nasıl gidermesi gerektiğini adım adım tasarlıyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Arka Uç (Backend) ve API Entegrasyonu",
+          "description": "Chatbot'u iş sistemlerinize bağlıyoruz. Kullanıcı 'Siparişim nerede?' diye sorarsa, bot Shopify veya ERP API'nize güvenli bir şekilde ping atar, durumu getirir ve sohbete uygun şekilde yanıtlar."
+        },
+        {
+          "step": 5,
+          "title": "İnsana Aktarma (Handoff) Kurulumu",
+          "description": "Canlı sohbet yazılımınızla (Zendesk, Intercom vb.) entegre oluyoruz. Bot yüksek oranda negatif duygu tespit ederse veya bir insanla konuşması istenirse, sohbeti ve bağlamı anında bir müşteri temsilcisine aktarır."
+        },
+        {
+          "step": 6,
+          "title": "Test ve İyileştirme",
+          "description": "Uç durumları (edge cases) ortaya çıkarmak ve 'halüsinasyonları' önlemek için yüzlerce konuşmayı simüle ediyoruz. Yayına alındıktan sonra, promptları iyileştirmek ve bilgi tabanını güncellemek için sohbet günlüklerini izliyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Chatbot'un kendi kendine cevaplar uydurmasını (halüsinasyon görmesini) nasıl engelliyorsunuz?",
+          "answer": "Katı sistem promptlarıyla birleştirilmiş Geri Çağırımla Artırılmış Üretim (RAG) adı verilen bir teknik kullanıyoruz. Yapay zekaya şu talimat verilir: 'Sadece sağlanan belgeleri kullanarak yanıt ver. Cevap belgelerde yoksa, bilmediğini söyle.' Bu, halüsinasyonları pratikte ortadan kaldırır."
+        },
+        {
+          "question": "Chatbot birden fazla dil konuşabilir mi?",
+          "answer": "Evet. Modern LLM'ler doğası gereği çok dillidir. Tüm bilgi tabanınız İngilizce yazılmış olsa bile bot, İspanyolca bir sorguyu anlayabilir, İngilizce belgelerde arama yapabilir ve doğru yanıtı gerçek zamanlı olarak akıcı İspanyolcaya çevirebilir."
+        },
+        {
+          "question": "Chatbot müşteri destek ekibimin yerini alacak mı?",
+          "answer": "Hayır, onları güçlendirir. Bot, tekrarlayan soruların %70'ini (parola sıfırlamaları, nakliye politikaları, temel sorun giderme) halletmek için tasarlanmıştır. Bu, insan temsilcilerinizin karmaşık, yüksek değerli veya duygusal olarak hassas sorunlarla ilgilenmesi için onlara zaman kazandırır."
+        },
+        {
+          "question": "Bot sadece soru mu cevaplıyor, yoksa fiilen işlem (aksiyon) yapabiliyor mu?",
+          "answer": "İşlem yapabilir. 'Fonksiyon çağırma' (function calling) özelliklerini entegre ediyoruz. Kullanıcı toplantı planlamak isterse, bot takvim API'sini kontrol edebilir, uygun saatleri sunabilir ve rezervasyonu doğrudan sohbet arayüzünde onaylayabilir."
+        },
+        {
+          "question": "Chatbot'u hangi platformlarda yayınlayabilirsiniz?",
+          "answer": "Geniş bir kanal yelpazesinde hizmet veriyoruz: Web widget'ları, WhatsApp Business API, Facebook Messenger, Slack, Microsoft Teams, Telegram ve Twilio üzerinden SMS."
+        },
+        {
+          "question": "İnsan temsilciler sohbeti nasıl devralıyor?",
+          "answer": "Botu Zendesk, Intercom veya HubSpot gibi platformlarla entegre ediyoruz. Bot belirli bir niyeti ('insanla konuşmak') veya olumsuz bir duyguyu izler. Tetiklendiğinde yapay zekayı duraklatır, kontrol panelindeki insan temsilciyi uyarır ve kullanıcının kendini tekrarlamak zorunda kalmaması için tüm sohbet geçmişini aktarır."
+        },
+        {
+          "question": "Bilgi tabanımızdaki bilgiler değişirse ne olur?",
+          "answer": "Sistem dinamiktir. Siz bir PDF'yi veya web sayfasını güncellediğinizde, boru hattımız (pipeline) belgeyi otomatik olarak yeniden içe aktarır, vektör veritabanını günceller ve chatbot anında yeni bilgileri kullanmaya başlar."
+        },
+        {
+          "question": "Chatbot'un gerçekten iyi performans gösterip göstermediğini nasıl anlarız?",
+          "answer": "Çözüm oranlarını (kaç sohbetin insana devredilmeden bittiği), kullanıcı duyarlılık (sentiment) analizini ve en sık sorulan soruları takip eden bir analitik gösterge paneli sunuyoruz; bu da ürün belgelerinizdeki boşlukları belirlemenize yardımcı olur."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "openai",
+          "name": "OpenAI / GPT-4"
+        },
+        {
+          "icon": "nodedotjs",
+          "name": "Node.js"
+        },
+        {
+          "icon": "python",
+          "name": "Python / LangChain"
+        },
+        {
+          "icon": "vector",
+          "name": "Pinecone / ChromaDB"
+        },
+        {
+          "icon": "react",
+          "name": "React (Web Widget)"
+        },
+        {
+          "icon": "whatsapp",
+          "name": "WhatsApp Business API"
+        },
+        {
+          "icon": "slack",
+          "name": "Slack"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS / Vercel"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "KI Chatbot Entwicklung",
+    "shortDescription": "Setzen Sie intelligente, kontextbezogene Konversationsagenten ein, die Kundenanfragen lösen, Leads qualifizieren und 24/7 mehrsprachigen Support bieten.",
+    "fullDescription": "Ältere Chatbots stützten sich auf frustrierende, starre Entscheidungsbäume. Wenn ein Nutzer eine Frage außerhalb des Skripts stellte, brach der Bot ab. Unsere KI-Chatbot-Entwicklungsdienste nutzen Large Language Models (LLMs) und fortschrittliches Natural Language Understanding (NLU), um Konversationsagenten zu erstellen, die Absicht und Kontext tatsächlich verstehen. Wir bauen Bots, die Ihre gesamte Wissensbasis — Dokumentationen, alte Support-Tickets und Website-Inhalte — aufnehmen, sodass sie komplexe, hochspezifische Kundenfragen präzise beantworten können. Egal, ob Sie einen Kundensupport-Bot auf Ihrer Website, einen Lead-Qualifizierungs-Assistenten auf WhatsApp oder einen internen IT-Helpdesk-Bot auf Slack benötigen: Wir entwerfen den Gesprächsverlauf, integrieren ihn in Ihre APIs (um Bestellstatus zu prüfen oder Termine zu buchen) und implementieren nahtlose Human-Handoff-Protokolle, damit Ihr Team sich nur um hochwertige Interaktionen kümmern muss.",
+    "features": [
+      "LLM & NLU-gestützte Absichtserkennung (Intent Recognition)",
+      "Multi-Plattform-Deployment (Web, WhatsApp, Slack)",
+      "Wissensintegration durch RAG (Retrieval-Augmented Generation)",
+      "API-Integrationen zur Aktionsausführung (Buchungen, Bestellabfragen)",
+      "Kontextsensitive & mehrstufige Konversationen",
+      "Nahtlose Human-Agent-Übergabesysteme (Handoff)",
+      "Automatisierte mehrsprachige Echtzeit-Übersetzung",
+      "Konversations-Analytics & Sentiment-Tracking"
+    ],
+    "benefits": [
+      "Bieten Sie sofortigen, präzisen Kundensupport 24 Stunden am Tag, 7 Tage die Woche",
+      "Reduzieren Sie das Support-Ticketvolumen durch Automatisierung repetitiver Anfragen",
+      "Qualifizieren Sie Sales-Leads automatisch, bevor sie Ihr menschliches Team erreichen",
+      "Sprechen Sie mit Kunden in ihrer Muttersprache dank Echtzeit-Übersetzung",
+      "Vermeiden Sie frustrierende Endlosschleifen durch clevere Übergaben an Menschen",
+      "Gewinnen Sie verwertbare Erkenntnisse aus Nutzerdaten und Stimmungsanalysen"
+    ],
+    "metaTitle": "KI Chatbot Entwicklung | LLM Konversationsagenten | PakSoft",
+    "metaDescription": "Bauen Sie intelligente KI-Chatbots, die Kontext verstehen. Wir entwickeln Multi-Plattform-Bots für Support, Lead-Qualifizierung und interne IT.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Use-Case & Persona-Definition",
+          "description": "Wir identifizieren das Primärziel des Bots (Support, Sales, IT-Helpdesk). Wir definieren den Tonfall, die Persönlichkeitsgrenzen und die Plattformen (Web, WhatsApp, etc.)."
+        },
+        {
+          "step": 2,
+          "title": "Wissensaufnahme (Knowledge Ingestion)",
+          "description": "Wir sammeln Ihre FAQs, PDFs und Website-Daten und verarbeiten sie via RAG in eine Vektordatenbank. Dies stellt sicher, dass die Antworten strikt auf Ihren proprietären Infos basieren."
+        },
+        {
+          "step": 3,
+          "title": "Konversationsfluss-Design",
+          "description": "Obwohl LLMs dynamisch sind, strukturieren wir 'Leitplanken' (Guardrails). Wir designen schrittweise, wie der Bot Leads qualifizieren oder Probleme beheben soll, bevor er eine Aktion ausführt."
+        },
+        {
+          "step": 4,
+          "title": "Backend- & API-Integration",
+          "description": "Wir verbinden den Chatbot mit Ihren Geschäftssystemen. Fragt ein Nutzer 'Wo ist meine Bestellung?', pingt der Bot sicher Ihre Shopify- oder ERP-API, holt den Status und antwortet natürlich."
+        },
+        {
+          "step": 5,
+          "title": "Setup der Human-Handoff-Protokolle",
+          "description": "Wir integrieren Ihre Live-Chat-Software (Zendesk, Intercom). Erkennt der Bot starke Frustration oder wird nach einem Menschen gefragt, übergibt er den Chat sofort an einen Agenten."
+        },
+        {
+          "step": 6,
+          "title": "Testing & Iteration",
+          "description": "Wir simulieren Hunderte Gespräche, um Edge-Cases aufzudecken und 'Halluzinationen' zu verhindern. Nach dem Live-Gang überwachen wir Chat-Logs, um Prompts und Wissen zu verfeinern."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie verhindern Sie, dass der Chatbot Antworten erfindet (halluziniert)?",
+          "answer": "Wir nutzen Retrieval-Augmented Generation (RAG) kombiniert mit strikten System-Prompts. Die KI erhält die Anweisung: 'Antworte nur anhand der bereitgestellten Dokumente. Wenn die Antwort nicht in den Dokumenten steht, sage, dass du es nicht weißt.' Das eliminiert Halluzinationen praktisch komplett."
+        },
+        {
+          "question": "Kann der Chatbot mehrere Sprachen sprechen?",
+          "answer": "Ja. Moderne LLMs sind von Natur aus mehrsprachig. Selbst wenn Ihre gesamte Wissensbasis auf Englisch ist, kann der Bot eine Frage auf Spanisch verstehen, in den englischen Dokumenten suchen und die korrekte Antwort in Echtzeit in fließendes Spanisch übersetzen."
+        },
+        {
+          "question": "Wird der Chatbot mein Kundensupport-Team ersetzen?",
+          "answer": "Nein, er erweitert es. Der Bot ist darauf ausgelegt, die 70% repetitiven Fragen (Passwort-Resets, Versandrichtlinien, Basis-Troubleshooting) zu erledigen. Das gibt Ihren menschlichen Agenten Zeit für komplexe, hochwertige oder emotional sensible Probleme."
+        },
+        {
+          "question": "Kann der Bot tatsächliche Aktionen durchführen oder nur Fragen beantworten?",
+          "answer": "Er kann Aktionen durchführen. Wir integrieren 'Function Calling'. Möchte ein Nutzer ein Meeting buchen, prüft der Bot eine Kalender-API, bietet Zeiten an und bestätigt die Buchung direkt im Chat."
+        },
+        {
+          "question": "Auf welchen Plattformen können Sie den Chatbot bereitstellen?",
+          "answer": "Wir deployen auf einer Vielzahl von Kanälen: Web-Widgets, WhatsApp Business API, Facebook Messenger, Slack, Microsoft Teams, Telegram und SMS via Twilio."
+        },
+        {
+          "question": "Wie übernehmen menschliche Agenten den Chat?",
+          "answer": "Wir integrieren den Bot mit Plattformen wie Zendesk oder HubSpot. Der Bot achtet auf spezifische Absichten ('Mit Mensch sprechen') oder negative Stimmung. Er pausiert die KI, alarmiert einen Agenten im Dashboard und übergibt den kompletten Chatverlauf."
+        },
+        {
+          "question": "Was passiert, wenn sich unsere Wissensbasis-Informationen ändern?",
+          "answer": "Das System ist dynamisch. Wenn Sie eine PDF oder eine Webseite aktualisieren, nimmt unsere Pipeline das Dokument automatisch neu auf, aktualisiert die Vektordatenbank und der Chatbot nutzt sofort die neuen Informationen."
+        },
+        {
+          "question": "Woher wissen wir, ob der Chatbot wirklich gut funktioniert?",
+          "answer": "Wir stellen ein Analytics-Dashboard bereit, das Lösungsraten (Chats ohne Human-Handoff), Sentiment-Analysen und die häufigsten Fragen erfasst und Ihnen hilft, Lücken in Ihrer Dokumentation zu finden."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "openai",
+          "name": "OpenAI / GPT-4"
+        },
+        {
+          "icon": "nodedotjs",
+          "name": "Node.js"
+        },
+        {
+          "icon": "python",
+          "name": "Python / LangChain"
+        },
+        {
+          "icon": "vector",
+          "name": "Pinecone / ChromaDB"
+        },
+        {
+          "icon": "react",
+          "name": "React (Web Widget)"
+        },
+        {
+          "icon": "whatsapp",
+          "name": "WhatsApp Business API"
+        },
+        {
+          "icon": "slack",
+          "name": "Slack"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS / Vercel"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "AI چیٹ بوٹ ڈیولپمنٹ",
+    "shortDescription": "ذہین اور سیاق و سباق کو سمجھنے والے چیٹ بوٹس تعینات کریں جو کسٹمرز کے سوالات حل کریں، لیڈز کو پرکھیں اور 24/7 کثیر لسانی سپورٹ فراہم کریں۔",
+    "fullDescription": "پرانے چیٹ بوٹس مایوس کن اور سخت فیصلہ سازی (decision trees) پر انحصار کرتے تھے۔ جب کوئی صارف اسکرپٹ سے ہٹ کر سوال پوچھتا تھا، تو بوٹ کام کرنا بند کر دیتا تھا۔ ہماری AI چیٹ بوٹ ڈیولپمنٹ سروسز لارج لینگویج ماڈلز (LLMs) اور جدید نیچرل لینگویج انڈرسٹینڈنگ (NLU) کا استعمال کرتی ہیں تاکہ ایسے بوٹس بنائے جا سکیں جو واقعی صارف کا ارادہ اور سیاق و سباق سمجھتے ہوں۔ ہم ایسے بوٹس بناتے ہیں جو آپ کے پورے نالج بیس—دستاویزات، پچھلے سپورٹ ٹکٹس، اور ویب سائٹ کے مواد—کو ہضم کر لیتے ہیں، تاکہ وہ پیچیدہ اور انتہائی مخصوص سوالات کے درست جواب دے سکیں۔ چاہے آپ کو اپنی ویب سائٹ پر کسٹمر سپورٹ بوٹ کی ضرورت ہو، واٹس ایپ پر لیڈز کو پرکھنے والے اسسٹنٹ کی ضرورت ہو، یا Slack پر اندرونی IT ہیلپ ڈیسک بوٹ کی، ہم بات چیت کا بہاؤ ڈیزائن کرتے ہیں، اسے آپ کی APIs کے ساتھ ضم کرتے ہیں (آرڈر چیک کرنے یا اپوائنٹمنٹ بک کرنے کے لیے)، اور بغیر کسی رکاوٹ کے انسان کو چیٹ منتقل کرنے کے پروٹوکول نافذ کرتے ہیں تاکہ آپ کی ٹیم صرف اہم ترین کاموں پر توجہ دے سکے۔",
+    "features": [
+      "LLM اور NLU کے ذریعے ارادے کی پہچان (Intent Recognition)",
+      "ملٹی پلیٹ فارم ڈیپلائمنٹ (Web, WhatsApp, Slack)",
+      "RAG (Retrieval-Augmented Generation) کے ذریعے علم کا انضمام",
+      "ایکشن لینے کے لیے API انٹیگریشنز (بکنگ، آرڈرز چیک کرنا)",
+      "سیاق و سباق کو سمجھنے والی اور طویل گفتگو (Multi-Turn)",
+      "AI سے انسانی ایجنٹ کو بغیر کسی رکاوٹ کے منتقلی",
+      "خودکار ملٹی لینگویج ٹرانسلیشن",
+      "گفتگو کے تجزیات (Analytics) اور جذبات (Sentiment) کی ٹریکنگ"
+    ],
+    "benefits": [
+      "دن کے 24 گھنٹے، ہفتے کے 7 دن فوری اور درست کسٹمر سپورٹ فراہم کریں",
+      "بار بار پوچھے جانے والے سوالات کو خودکار بنا کر سپورٹ ٹکٹس کے حجم کو کم کریں",
+      "سیلز لیڈز کو انسانی ٹیم تک پہنچنے سے پہلے خود بخود پرکھیں (Qualify)",
+      "ریئل ٹائم ترجمہ کے ساتھ گاہکوں سے ان کی مادری زبان میں بات کریں",
+      "انسانی ایجنٹ کو چیٹ کی اسمارٹ منتقلی کے ذریعے گاہک کی مایوسی سے بچیں",
+      "صارفین کی گفتگو کے ڈیٹا اور جذبات سے قابل عمل بصیرت اکٹھی کریں"
+    ],
+    "metaTitle": "AI چیٹ بوٹ ڈیولپمنٹ | اسمارٹ بوٹس | PakSoft",
+    "metaDescription": "ایسے ذہین AI چیٹ بوٹس بنائیں جو سیاق و سباق کو سمجھتے ہوں۔ ہم کسٹمر سپورٹ اور لیڈ کوالیفکیشن کے لیے ملٹی پلیٹ فارم چیٹ بوٹس تیار کرتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "استعمال کے کیس اور پرسونا کی تعریف",
+          "description": "ہم بوٹ کے بنیادی مقصد کی نشاندہی کرتے ہیں (سپورٹ، سیلز، ہیلپ ڈیسک)۔ ہم اس کے بات کرنے کے انداز (tone)، شخصیت کی حدود اور ان پلیٹ فارمز کی وضاحت کرتے ہیں جن پر یہ کام کرے گا (ویب، واٹس ایپ وغیرہ)۔"
+        },
+        {
+          "step": 2,
+          "title": "علم کی شمولیت (Knowledge Ingestion)",
+          "description": "ہم آپ کے سوالات (FAQs)، PDFs، اور ویب سائٹ کا ڈیٹا اکٹھا کرتے ہیں، اور انہیں RAG کا استعمال کرتے ہوئے ایک ویکٹر ڈیٹا بیس میں پروسیس کرتے ہیں۔ اس سے یہ یقینی بنتا ہے کہ بوٹ کے جوابات صرف آپ کی معلومات پر مبنی ہوں۔"
+        },
+        {
+          "step": 3,
+          "title": "گفتگو کے بہاؤ کا ڈیزائن",
+          "description": "اگرچہ LLMs متحرک ہوتے ہیں، ہم بات چیت کی رہنمائی کے لیے 'حفاظتی باڑیں' (guardrails) بناتے ہیں۔ ہم قدم بہ قدم یہ ڈیزائن کرتے ہیں کہ کوئی اقدام کرنے سے پہلے بوٹ کو لیڈز کی تصدیق یا مسائل کا حل کیسے نکالنا چاہیے۔"
+        },
+        {
+          "step": 4,
+          "title": "بیک اینڈ اور API انٹیگریشن",
+          "description": "ہم چیٹ بوٹ کو آپ کے کاروباری سسٹمز سے جوڑتے ہیں۔ اگر کوئی صارف پوچھے 'میرا آرڈر کہاں ہے؟'، تو بوٹ محفوظ طریقے سے آپ کی Shopify یا ERP API کو پنگ کرتا ہے، اسٹیٹس لاتا ہے اور قدرتی انداز میں جواب دیتا ہے۔"
+        },
+        {
+          "step": 5,
+          "title": "انسان کو چیٹ منتقل کرنے کی ترتیب",
+          "description": "ہم آپ کے لائیو چیٹ سافٹ ویئر (Zendesk, Intercom) کے ساتھ انضمام کرتے ہیں۔ اگر بوٹ غصہ یا منفی جذبات محسوس کرتا ہے، یا اسے کسی انسان سے بات کروانے کو کہا جاتا ہے، تو وہ فوری طور پر چیٹ انسانی ایجنٹ کو منتقل کر دیتا ہے۔"
+        },
+        {
+          "step": 6,
+          "title": "ٹیسٹنگ اور بہتری",
+          "description": "ہم غیر متوقع حالات کو سامنے لانے اور بوٹ کے غلط جواب دینے (hallucination) کو روکنے کے لیے سینکڑوں چیٹس کی نقل (simulate) کرتے ہیں۔ تعیناتی کے بعد، ہم پرامپٹس کو بہتر بنانے کے لیے چیٹ لاگز کی نگرانی کرتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "آپ چیٹ بوٹ کو خود سے جوابات گھڑنے (hallucinating) سے کیسے روکتے ہیں؟",
+          "answer": "ہم Retrieval-Augmented Generation (RAG) نامی تکنیک کو سخت سسٹم پرامپٹس کے ساتھ استعمال کرتے ہیں۔ AI کو ہدایت دی جاتی ہے: 'صرف فراہم کردہ دستاویزات کا استعمال کرتے ہوئے جواب دیں۔ اگر جواب دستاویزات میں نہیں ہے، تو کہیں کہ آپ نہیں جانتے۔' یہ عملی طور پر ہذیان (hallucination) کو ختم کر دیتا ہے۔"
+        },
+        {
+          "question": "کیا چیٹ بوٹ کئی زبانیں بول سکتا ہے؟",
+          "answer": "جی ہاں۔ جدید LLMs قدرتی طور پر کثیر لسانی ہیں۔ یہاں تک کہ اگر آپ کا پورا ڈیٹا بیس انگریزی میں لکھا گیا ہے، بوٹ ہسپانوی زبان میں سوال سمجھ سکتا ہے، انگریزی دستاویزات تلاش کر سکتا ہے، اور ریئل ٹائم میں درست جواب کا ہسپانوی میں ترجمہ کر کے دے سکتا ہے۔"
+        },
+        {
+          "question": "کیا چیٹ بوٹ میری کسٹمر سپورٹ ٹیم کی جگہ لے لے گا؟",
+          "answer": "نہیں، یہ انہیں تقویت دیتا ہے۔ بوٹ کو 70% بار بار پوچھے جانے والے سوالات (پاس ورڈ ری سیٹ، شپنگ پالیسیز وغیرہ) کو سنبھالنے کے لیے ڈیزائن کیا گیا ہے۔ اس سے آپ کے انسانی ایجنٹوں کو پیچیدہ، زیادہ اہم یا جذباتی نوعیت کے مسائل کو سنبھالنے کے لیے وقت مل جاتا ہے۔"
+        },
+        {
+          "question": "کیا بوٹ واقعی کام سرانجام دے سکتا ہے، یا صرف سوالات کے جوابات دیتا ہے؟",
+          "answer": "یہ کام سرانجام دے سکتا ہے۔ ہم 'function calling' کی صلاحیتوں کو مربوط کرتے ہیں۔ اگر کوئی صارف میٹنگ بُک کرنا چاہتا ہے، تو بوٹ کیلنڈر API چیک کر سکتا ہے، ٹائم سلاٹس پیش کر سکتا ہے، اور چیٹ انٹرفیس کے اندر براہ راست بکنگ کی تصدیق کر سکتا ہے۔"
+        },
+        {
+          "question": "آپ کن پلیٹ فارمز پر چیٹ بوٹ لگا سکتے ہیں؟",
+          "answer": "ہم مختلف چینلز پر بوٹ تعینات کر سکتے ہیں: ویب وجیٹس، WhatsApp بزنس API، Facebook میسنجر، Slack، مائیکروسافٹ ٹیمز، ٹیلیگرام، اور Twilio کے ذریعے SMS۔"
+        },
+        {
+          "question": "انسانی ایجنٹ چیٹ کو کیسے اپنے ہاتھ میں لیتے ہیں؟",
+          "answer": "ہم بوٹ کو Zendesk یا Intercom جیسے پلیٹ فارمز کے ساتھ مربوط کرتے ہیں۔ بوٹ صارف کے ارادے ('انسان سے بات کریں') یا منفی جذبات کی نگرانی کرتا ہے۔ ایسا ہونے پر، یہ AI کو روکتا ہے، انسانی ایجنٹ کو الرٹ کرتا ہے، اور پوری چیٹ ہسٹری منتقل کر دیتا ہے تاکہ صارف کو اپنی بات نہ دہرانی پڑے۔"
+        },
+        {
+          "question": "اگر ہمارے ڈیٹا بیس کی معلومات تبدیل ہو جائیں تو کیا ہوگا؟",
+          "answer": "یہ سسٹم متحرک ہے۔ جب آپ پی ڈی ایف یا ویب پیج کو اپ ڈیٹ کرتے ہیں، تو ہماری پائپ لائن خود بخود دستاویز کو دوبارہ پروسیس کرتی ہے، ویکٹر ڈیٹا بیس کو اپ ڈیٹ کرتی ہے، اور چیٹ بوٹ فوراً نئی معلومات کا استعمال شروع کر دیتا ہے۔"
+        },
+        {
+          "question": "ہمیں کیسے پتہ چلے گا کہ چیٹ بوٹ واقعی اچھی کارکردگی دکھا رہا ہے؟",
+          "answer": "ہم ایک اینالیٹکس ڈیش بورڈ فراہم کرتے ہیں جو مسائل کے حل کی شرح (کتنی چیٹس انسانی ایجنٹ کو منتقل کیے بغیر ختم ہوئیں)، صارف کے جذبات کا تجزیہ، اور سب سے زیادہ پوچھے جانے والے سوالات کو ٹریک کرتا ہے۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "openai",
+          "name": "OpenAI / GPT-4"
+        },
+        {
+          "icon": "nodedotjs",
+          "name": "Node.js"
+        },
+        {
+          "icon": "python",
+          "name": "Python / LangChain"
+        },
+        {
+          "icon": "vector",
+          "name": "Pinecone / ChromaDB"
+        },
+        {
+          "icon": "react",
+          "name": "React (Web Widget)"
+        },
+        {
+          "icon": "whatsapp",
+          "name": "WhatsApp Business API"
+        },
+        {
+          "icon": "slack",
+          "name": "Slack"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS / Vercel"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تطوير روبوتات الدردشة (Chatbot) بالذكاء الاصطناعي",
+    "shortDescription": "انشر وكلاء محادثة أذكياء يدركون السياق لحل استفسارات العملاء، وتأهيل العملاء المحتملين، وتوفير دعم متعدد اللغات على مدار الساعة طوال أيام الأسبوع.",
+    "fullDescription": "اعتمدت روبوتات الدردشة القديمة على أشجار قرارات (Decision trees) صارمة ومحبطة. عندما يسأل المستخدم سؤالاً خارج النص المبرمج، يتعطل الروبوت. تستفيد خدمات تطوير روبوتات الدردشة بالذكاء الاصطناعي لدينا من نماذج اللغات الكبيرة (LLMs) والفهم المتقدم للغة الطبيعية (NLU) لإنشاء وكلاء محادثة يفهمون النية والسياق بالفعل. نبني روبوتات تستوعب قاعدة المعرفة الخاصة بك بالكامل — الوثائق، وتذاكر الدعم السابقة، ومحتوى موقع الويب — حتى تتمكن من الإجابة على أسئلة العملاء المعقدة والمحددة للغاية بدقة. سواء كنت بحاجة إلى روبوت دعم عملاء على موقعك الإلكتروني، أو مساعد لتأهيل المبيعات على WhatsApp، أو روبوت مكتب مساعدة تقنية داخلي على Slack، فإننا نصمم تدفق المحادثة، وندمجه مع واجهات برمجة التطبيقات (APIs) الخاصة بك (للتحقق من حالة الطلب أو حجز المواعيد)، ونطبق بروتوكولات انتقال سلسة للعنصر البشري حتى يتعامل فريقك فقط مع التفاعلات ذات القيمة العالية.",
+    "features": [
+      "التعرف على النوايا (Intent Recognition) المدعوم بـ LLM و NLU",
+      "النشر متعدد المنصات (الويب، WhatsApp، Slack)",
+      "تكامل المعرفة باستخدام RAG (الجيل المعزز بالاسترجاع)",
+      "تكامل واجهات برمجة التطبيقات لتنفيذ الإجراءات (الحجوزات، فحص الطلبات)",
+      "محادثات متعددة الأدوار تدرك السياق",
+      "أنظمة انتقال سلسة من الروبوت إلى العامل البشري",
+      "الترجمة الآلية الفورية متعددة اللغات",
+      "تحليلات المحادثة وتتبع مشاعر المستخدم (Sentiment Tracking)"
+    ],
+    "benefits": [
+      "توفير دعم فوري ودقيق للعملاء 24 ساعة في اليوم، 7 أيام في الأسبوع",
+      "تقليل حجم تذاكر الدعم من خلال أتمتة الاستفسارات المتكررة",
+      "تأهيل العملاء المحتملين (Leads) آلياً قبل وصولهم إلى فريق المبيعات",
+      "التحدث مع العملاء بلغتهم الأم من خلال الترجمة الفورية في الوقت الفعلي",
+      "تجنب الحلقات المفرغة والمحبطة من خلال الانتقال الذكي للعنصر البشري",
+      "جمع رؤى قابلة للتنفيذ من بيانات محادثة المستخدم ومشاعره"
+    ],
+    "metaTitle": "تطوير روبوتات الدردشة بالذكاء الاصطناعي | PakSoft",
+    "metaDescription": "ابنِ روبوتات دردشة تعمل بالذكاء الاصطناعي وتفهم السياق. نطور وكلاء محادثة متعددة المنصات لدعم العملاء وتأهيل المبيعات.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تحديد حالة الاستخدام والشخصية",
+          "description": "نحدد الهدف الأساسي للروبوت (الدعم، المبيعات، المساعدة الداخلية). نحدد نبرة صوته، وقيود شخصيته، والمنصات التي سيعمل عليها (الويب، WhatsApp، إلخ)."
+        },
+        {
+          "step": 2,
+          "title": "استيعاب المعرفة (Knowledge Ingestion)",
+          "description": "نجمع الأسئلة الشائعة وملفات PDF وبيانات موقعك، ونعالجها في قاعدة بيانات متجهات (Vector DB) باستخدام RAG. يضمن هذا أن تكون إجابات الروبوت مبنية بدقة على معلوماتك الخاصة."
+        },
+        {
+          "step": 3,
+          "title": "تصميم تدفق المحادثة",
+          "description": "بينما تتميز نماذج LLM بالديناميكية، فإننا نبني 'حواجز حماية' (Guardrails) لتوجيه المحادثة. نصمم كيفية قيام الروبوت بتأهيل العملاء أو استكشاف الأخطاء خطوة بخطوة قبل تنفيذ أي إجراء."
+        },
+        {
+          "step": 4,
+          "title": "الواجهة الخلفية وتكامل API",
+          "description": "نربط روبوت الدردشة بأنظمة عملك. إذا سأل المستخدم 'أين طلبي؟'، يتصل الروبوت بأمان بواجهة Shopify أو ERP، ويجلب حالة الطلب، ويرد بأسلوب حواري."
+        },
+        {
+          "step": 5,
+          "title": "إعداد الانتقال للعنصر البشري (Human Handoff)",
+          "description": "نتكامل مع برنامج الدردشة المباشرة الخاص بك (مثل Zendesk أو Intercom). إذا اكتشف الروبوت مشاعر سلبية أو طلب منه المستخدم التحدث إلى إنسان، فإنه ينقل الدردشة والسياق إلى الوكيل فوراً."
+        },
+        {
+          "step": 6,
+          "title": "الاختبار والتكرار",
+          "description": "نحاكي مئات المحادثات لكشف الحالات الطرفية ومنع 'الهلوسة'. بعد النشر، نراقب سجلات الدردشة لتحسين المطالبات وتحديث قاعدة المعرفة باستمرار."
+        }
+      ],
+      "faq": [
+        {
+          "question": "كيف تمنعون روبوت الدردشة من تأليف إجابات غير صحيحة (الهلوسة)؟",
+          "answer": "نستخدم تقنية تسمى التوليد المعزز بالاسترجاع (RAG) مقترنة بمطالبات نظام صارمة. يُعطى الذكاء الاصطناعي التعليمات التالية: 'أجب فقط باستخدام المستندات المقدمة. إذا لم تكن الإجابة في المستندات، قل أنك لا تعرف'. هذا يقضي على الهلوسة عملياً."
+        },
+        {
+          "question": "هل يستطيع الروبوت التحدث بلغات متعددة؟",
+          "answer": "نعم. نماذج LLM الحديثة متعددة اللغات بطبيعتها. حتى إذا كانت قاعدة معارفك بالكامل مكتوبة باللغة الإنجليزية، يمكن للروبوت فهم سؤال باللغة الإسبانية، والبحث في المستندات الإنجليزية، وترجمة الإجابة الدقيقة إلى إسبانية طلقة في الوقت الفعلي."
+        },
+        {
+          "question": "هل سيحل روبوت الدردشة محل فريق دعم العملاء لدي؟",
+          "answer": "لا، بل يعززهم. تم تصميم الروبوت للتعامل مع 70% من الأسئلة المتكررة (إعادة تعيين كلمة المرور، سياسات الشحن، الاستكشاف الأساسي للأخطاء). هذا يحرر وكلائك البشريين للتعامل مع القضايا المعقدة أو ذات القيمة العالية أو الحساسة عاطفياً."
+        },
+        {
+          "question": "هل يستطيع الروبوت تنفيذ الإجراءات فعلياً أم أنه يجيب على الأسئلة فقط؟",
+          "answer": "يمكنه تنفيذ الإجراءات. نحن ندمج قدرات 'استدعاء الوظائف' (Function calling). إذا أراد مستخدم حجز اجتماع، يمكن للروبوت فحص واجهة برمجة تطبيقات (API) التقويم، وتقديم الفترات الزمنية المتاحة، وتأكيد الحجز مباشرة داخل واجهة الدردشة."
+        },
+        {
+          "question": "ما هي المنصات التي يمكنكم نشر روبوت الدردشة عليها؟",
+          "answer": "ننشر على مجموعة واسعة من القنوات: تطبيقات الويب (Web widgets)، و WhatsApp Business API، و Facebook Messenger، و Slack، و Microsoft Teams، و Telegram، والرسائل القصيرة (SMS) عبر Twilio."
+        },
+        {
+          "question": "كيف يتولى الوكلاء البشريون الدردشة؟",
+          "answer": "ندمج الروبوت مع منصات مثل Zendesk أو Intercom. يراقب الروبوت نية محددة ('التحدث إلى إنسان') أو المشاعر السلبية. عند إطلاقها، يقوم بإيقاف الذكاء الاصطناعي، وينبه وكيلاً بشرياً في لوحة التحكم الخاصة به، ويمرر سجل الدردشة بالكامل حتى لا يضطر المستخدم لتكرار كلامه."
+        },
+        {
+          "question": "ماذا يحدث إذا تغيرت المعلومات في قاعدة المعرفة الخاصة بنا؟",
+          "answer": "النظام ديناميكي. عندما تقوم بتحديث ملف PDF أو صفحة ويب، يقوم مسار عملنا تلقائياً بإعادة استيعاب المستند، وتحديث قاعدة بيانات المتجهات، ويبدأ روبوت الدردشة فوراً في استخدام المعلومات الجديدة."
+        },
+        {
+          "question": "كيف نعرف ما إذا كان روبوت الدردشة يؤدي عمله بشكل جيد حقاً؟",
+          "answer": "نحن نقدم لوحة تحكم تحليلية تتتبع معدلات الحل (كم عدد الدردشات التي انتهت دون تدخل بشري)، وتحليل مشاعر المستخدم، والأسئلة الأكثر شيوعاً، مما يساعدك على تحديد الفجوات في وثائق منتجك."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "openai",
+          "name": "OpenAI / GPT-4"
+        },
+        {
+          "icon": "nodedotjs",
+          "name": "Node.js"
+        },
+        {
+          "icon": "python",
+          "name": "Python / LangChain"
+        },
+        {
+          "icon": "vector",
+          "name": "Pinecone / ChromaDB"
+        },
+        {
+          "icon": "react",
+          "name": "React (Web Widget)"
+        },
+        {
+          "icon": "whatsapp",
+          "name": "WhatsApp Business API"
+        },
+        {
+          "icon": "slack",
+          "name": "Slack"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS / Vercel"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,618 @@
+{
+  "slug": "rpa-solutions",
+  "en": {
+    "name": "RPA Solutions",
+    "shortDescription": "Automate repetitive tasks, reduce human error, and streamline operational workflows with custom Robotic Process Automation solutions. We design intelligent software bots that run seamlessly across your business systems.",
+    "fullDescription": "Manual data entry, invoice processing, and repetitive administrative tasks drain employee productivity and increase operational costs. We develop custom Robotic Process Automation (RPA) solutions using leading platforms like UiPath, Automation Anywhere, and custom Python scripts. Our software bots mimic human actions, interacting with desktop applications, web portals, and legacy systems to extract data, generate reports, and sync records. We integrate optical character recognition (OCR) and computer vision to enable bots to read unstructured documents and handle complex decision logic. By automating these workflows, we help your business achieve 24/7 processing speeds, eliminate transcription errors, and free your workforce for high-value strategic tasks.",
+    "features": [
+      "UiPath Workflow Design & Custom Bots",
+      "Automation Anywhere Enterprise Deployments",
+      "Custom Python & Selenium Automation Scripts",
+      "Intelligent Document Ingestion with OCR",
+      "Legacy System Desktop Integration Bots",
+      "Automated Reporting and Email Workflows",
+      "Centralized Orchestrator Management Setup",
+      "Error Handling and Exception Alerts Logging"
+    ],
+    "benefits": [
+      "Reduce operational costs by automating manual data processing",
+      "Eliminate human data entry errors and typos completely",
+      "Ensure continuous processing with bots running twenty-four seven",
+      "Deploy automation without changing legacy software codebases",
+      "Accelerate document processing times by up to eighty percent",
+      "Free human resources to focus on customer-facing tasks"
+    ],
+    "metaTitle": "Custom RPA Solutions | Robotic Process Automation | PakSoft",
+    "metaDescription": "Automate manual workflows and reduce errors with custom Robotic Process Automation. We build intelligent bots using UiPath and Python. Get a quote.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Process Assessment",
+          "description": "We analyze your administrative tasks and document processing routines to identify workflows suitable for automation."
+        },
+        {
+          "step": 2,
+          "title": "Bot Design & Mapping",
+          "description": "We map step-by-step user interactions and document data dependencies to structure the automation path."
+        },
+        {
+          "step": 3,
+          "title": "Workflow Development",
+          "description": "We write custom Python script orchestrations and build visual workflows inside UiPath or Automation Anywhere."
+        },
+        {
+          "step": 4,
+          "title": "Exception Setup",
+          "description": "We configure strict error-handling rules and construct notification pipelines when files fail formatting validations."
+        },
+        {
+          "step": 5,
+          "title": "Orchestrator Setup",
+          "description": "We deploy bots to a central orchestrator platform to schedule tasks, monitor runs, and manage licensing."
+        },
+        {
+          "step": 6,
+          "title": "Testing & Support",
+          "description": "We run extensive end-to-end sandbox tests, ensuring the bots execute correctly under varying system loads."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is Robotic Process Automation (RPA)?",
+          "answer": "RPA is a technology that uses software bots to automate repetitive, rules-based tasks typically performed by humans, such as data entry or report generation."
+        },
+        {
+          "question": "Do we need to replace our old legacy systems to use RPA?",
+          "answer": "No, RPA bots interact with the user interface of your existing systems just like a human operator, avoiding the need for expensive software replacements."
+        },
+        {
+          "question": "What is the difference between attended and unattended bots?",
+          "answer": "Attended bots run on a user's machine and require human triggers or input, while unattended bots run on remote servers automatically based on schedules."
+        },
+        {
+          "question": "How do RPA bots handle unstructured data like PDFs?",
+          "answer": "We integrate optical character recognition (OCR) and computer vision systems to read, extract, and convert text from unstructured documents into structured tables."
+        },
+        {
+          "question": "What happens if a bot encounters an unexpected error?",
+          "answer": "We build exception-handling rules. The bot stops the affected transaction, logs the error, and alerts a human operator to review the issue manually."
+        },
+        {
+          "question": "Is RPA secure for handling sensitive financial data?",
+          "answer": "Yes, we implement strict credential vaults and encrypted connections, ensuring bots access databases securely and all actions are recorded in audit logs."
+        },
+        {
+          "question": "How do we choose between UiPath and custom Python scripts?",
+          "answer": "We recommend UiPath for complex enterprise workflows involving multiple legacy desktop apps, and lightweight Python scripts for web scraping or API integrations."
+        },
+        {
+          "question": "What processes are best suited for RPA?",
+          "answer": "Processes that are highly repetitive, rules-based, require high volume, and use digital inputs (like Excel files, emails, or databases) are ideal for RPA."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "UiPath",
+          "icon": "uipath"
+        },
+        {
+          "name": "Automation Anywhere",
+          "icon": "automationanywhere"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "Selenium",
+          "icon": "selenium"
+        },
+        {
+          "name": "Power Automate",
+          "icon": "microsoft"
+        },
+        {
+          "name": "OpenCV",
+          "icon": "opencv"
+        },
+        {
+          "name": "Node.js",
+          "icon": "nodejs"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "RPA Çözümleri",
+    "shortDescription": "Özel Robotik Süreç Otomasyonu çözümleriyle tekrarlanan görevleri otomatikleştirin, insan hatasını azaltın ve operasyonel iş akışlarını kolaylaştırın. İş sistemlerinizde sorunsuz çalışan akıllı yazılım botları tasarlıyoruz.",
+    "fullDescription": "Manuel veri girişi, fatura işleme ve tekrarlayan idari görevler çalışan verimliliğini düşürür ve operasyonel maliyetleri artırır. UiPath, Automation Anywhere gibi lider platformları ve özel Python betiklerini kullanarak özel Robotik Süreç Otomasyonu (RPA) çözümleri geliştiriyoruz. Yazılım botlarımız, verileri ayıklamak, raporlar oluşturmak ve kayıtları senkronize etmek için masaüstü uygulamaları, web portalları ve eski sistemlerle etkileşime girerek insan eylemlerini taklit eder. Botların yapılandırılmamış belgeleri okumasını ve karmaşık karar mantıklarını işlemesini sağlamak için optik karakter tanıma (OCR) ve bilgisayarlı görü entegre ediyoruz. Bu iş akışlarını otomatikleştirerek işletmenizin 7/24 işlem hızına ulaşmasına yardımcı oluyoruz.",
+    "features": [
+      "UiPath İş Akışı Tasarımı ve Özel Botlar",
+      "Automation Anywhere Kurumsal Dağıtımları",
+      "Özel Python ve Selenium Otomasyon Betikleri",
+      "OCR ile Akıllı Belge Alımı Sistemleri",
+      "Eski Sistemler İçin Masaüstü Entegrasyon Botları",
+      "Otomatik Raporlama ve E-posta İş Akışları",
+      "Merkezi Orkestratör Yönetim Kurulumu",
+      "Hata Yönetimi ve İstisna Bildirimleri Günlüğü"
+    ],
+    "benefits": [
+      "Manuel veri işlemeyi otomatikleştirerek operasyonel maliyetleri azaltın",
+      "İnsan kaynaklı veri girişi hatalarını ve yazım hatalarını tamamen önleyin",
+      "7/24 çalışan botlarla işlemlerin kesintisiz devam etmesini sağlayın",
+      "Eski yazılımların kodlarını değiştirmeden otomasyonu devreye alın",
+      "Belge işleme sürelerini yüzde seksen oranına kadar hızlandırın",
+      "İnsan kaynaklarının müşteri odaklı görevlere odaklanmasını sağlayın"
+    ],
+    "metaTitle": "Özel RPA Çözümleri | Robotik Süreç Otomasyonu | PakSoft",
+    "metaDescription": "Özel Robotik Süreç Otomasyonu ile manuel iş akışlarını otomatikleştirin ve hataları azaltın. UiPath ve Python kullanarak akıllı botlar oluşturuyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Süreç Değerlendirmesi",
+          "description": "Otomasyona uygun iş akışlarını belirlemek için idari görevlerinizi ve belge işleme rutinlerinizi analiz ediyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Bot Tasarımı & Haritalama",
+          "description": "Otomasyon yolunu yapılandırmak için adım adım kullanıcı etkileşimlerini ve belge veri bağımlılıklarını haritalandırıyoruz."
+        },
+        {
+          "step": 3,
+          "title": "İş Akışı Geliştirme",
+          "description": "Özel Python komut dizisi orkestrasyonları yazıyor ve UiPath veya Automation Anywhere içinde görsel iş akışları oluşturuyoruz."
+        },
+        {
+          "step": 4,
+          "title": "İstisna Yönetimi Kurulumu",
+          "description": "Dosyalar biçimlendirme doğrulamalarından geçemediğinde katı hata yönetimi kuralları yapılandırıyor ve bildirim hatları oluşturuyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Orkestratör Kurulumu",
+          "description": "Görevleri planlamak, çalışmaları izlemek ve lisansları yönetmek için botları merkezi bir orkestratör platformuna dağıtıyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Test & Destek",
+          "description": "Botların değişen sistem yükleri altında doğru şekilde çalışmasını sağlamak için kapsamlı uçtan uca korumalı alan testleri yapıyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Robotik Süreç Otomasyonu (RPA) nedir?",
+          "answer": "RPA, veri girişi veya rapor oluşturma gibi normalde insanlar tarafından gerçekleştirilen tekrarlayan, kural tabanlı görevleri otomatikleştirmek için yazılım botlarını kullanan bir teknolojidir."
+        },
+        {
+          "question": "RPA kullanmak için eski sistemlerimizi değiştirmemiz gerekiyor mu?",
+          "answer": "Hayır, RPA botları mevcut sistemlerinizin kullanıcı arayüzüyle tıpkı bir insan operatör gibi etkileşime girerek pahalı yazılım değişiklikleri ihtiyacını ortadan kaldırır."
+        },
+        {
+          "question": "Katılımlı (attended) ve katılımsız (unattended) botlar arasındaki fark nedir?",
+          "answer": "Katılımlı botlar kullanıcının makinesinde çalışır ve insan tetiklemesi veya girdisi gerektirir; katılımsız botlar ise planlamalara göre uzak sunucularda otomatik olarak çalışır."
+        },
+        {
+          "question": "RPA botları PDF gibi yapılandırılmamış verileri nasıl işler?",
+          "answer": "Yapılandırılmamış belgelerdeki metinleri okumak, ayıklamak ve yapılandırılmış tablolara dönüştürmek için optik karakter tanıma (OCR) ve bilgisayarlı görü sistemlerini entegre ediyoruz."
+        },
+        {
+          "question": "Bot beklenmeyen bir hatayla karşılaşırsa ne olur?",
+          "answer": "İstisna işleme kuralları oluşturuyoruz. Bot etkilenen işlemi durdurur, hatayı günlüğe kaydeder ve bir insan operatörü sorunu manuel olarak incelemesi için uyarır."
+        },
+        {
+          "question": "RPA, hassas finansal verileri işlemek için güvenli midir?",
+          "answer": "Evet, botların veritabanlarına güvenli bir şekilde erişmesini ve tüm eylemlerin denetim günlüklerine kaydedilmesini sağlamak için katı kimlik bilgisi kasaları ve şifreli bağlantılar uyguluyoruz."
+        },
+        {
+          "question": "UiPath ile özel Python betikleri arasında nasıl seçim yaparız?",
+          "answer": "Birden fazla eski masaüstü uygulamasını içeren karmaşık kurumsal iş akışları için UiPath'i, web kazıma veya API entegrasyonları için ise hafif Python betiklerini öneriyoruz."
+        },
+        {
+          "question": "Hangi süreçler RPA için en uygundur?",
+          "answer": "Yüksek düzeyde tekrarlanan, kural tabanlı, yüksek hacim gerektiren ve dijital girdiler (Excel dosyaları, e-postalar veya veritabanları gibi) kullanan süreçler RPA için idealdir."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "UiPath",
+          "icon": "uipath"
+        },
+        {
+          "name": "Automation Anywhere",
+          "icon": "automationanywhere"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "Selenium",
+          "icon": "selenium"
+        },
+        {
+          "name": "Power Automate",
+          "icon": "microsoft"
+        },
+        {
+          "name": "OpenCV",
+          "icon": "opencv"
+        },
+        {
+          "name": "Node.js",
+          "icon": "nodejs"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "RPA-Lösungen",
+    "shortDescription": "Automatisieren Sie wiederkehrende Aufgaben, reduzieren Sie menschliche Fehler und optimieren Sie Betriebsabläufe mit maßgeschneiderten Robotic-Process-Automation-Lösungen. Wir entwickeln intelligente Software-Bots, die sich nahtlos in Ihre bestehenden Geschäftssysteme einfügen.",
+    "fullDescription": "Manuelle Dateneingabe, Rechnungsverarbeitung und wiederkehrende administrative Aufgaben belasten die Produktivität Ihrer Mitarbeiter und erhöhen die Betriebskosten. Wir entwickeln maßgeschneiderte Robotic-Process-Automation-Lösungen (RPA) mit führenden Plattformen wie UiPath, Automation Anywhere und individuellen Python-Skripten. Unsere Software-Bots imitieren menschliche Aktionen und interagieren mit Desktop-Anwendungen, Webportalen und Altsystemen, um Daten zu extrahieren, Berichte zu erstellen und Datensätze zu synchronisieren. Wir integrieren optische Zeichenerkennung (OCR) und Computer Vision, damit Bots unstrukturierte Dokumente lesen und komplexe Entscheidungslogiken verarbeiten können. Durch die Automatisierung dieser Arbeitsabläufe helfen wir Ihrem Unternehmen, eine Bearbeitung rund um die Uhr zu realisieren, Übertragungsfehler zu eliminieren und Ihr Team für strategische Aufgaben freizusetzen.",
+    "features": [
+      "UiPath Workflow-Design & kundenorientierte Bots",
+      "Automation Anywhere Enterprise-Bereitstellungen",
+      "Individuelle Python- & Selenium-Automatisierungsskripte",
+      "Intelligente Dokumentenerfassung mit OCR-Integration",
+      "Desktop-Integrations-Bots für ältere Systeme",
+      "Automatisierte Berichterstellung & E-Mail-Workflows",
+      "Setup für zentrales Orchestrator-Management",
+      "Fehlerbehandlung & detailliertes Exception-Logging"
+    ],
+    "benefits": [
+      "Betriebskosten durch Automatisierung manueller Prozesse senken",
+      "Menschliche Fehler bei der Dateneingabe vollständig eliminieren",
+      "Kontinuierliche Verarbeitung durch rund um die Uhr aktive Bots",
+      "Automatisierung ohne Änderungen an alten Codebasen bereitstellen",
+      "Dokumentenbearbeitungszeiten um bis zu achtzig Prozent verkürzen",
+      "Mitarbeiter entlasten, damit sie sich auf Kunden fokussieren"
+    ],
+    "metaTitle": "Custom RPA Solutions | Robotic Process Automation | PakSoft",
+    "metaDescription": "Automatisieren Sie manuelle Workflows mit Robotic Process Automation. Wir bauen intelligente Bots mit UiPath und Python. Jetzt anfragen.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Prozessanalyse",
+          "description": "Wir analysieren Ihre administrativen Aufgaben und Dokumenten-Workflows, um für die Automatisierung geeignete Abläufe zu identifizieren."
+        },
+        {
+          "step": 2,
+          "title": "Bot-Design & Mapping",
+          "description": "Wir zeichnen die Interaktionen und Datenbeziehungen der Benutzer Schritt für Schritt auf, um den Automatisierungspfad zu strukturieren."
+        },
+        {
+          "step": 3,
+          "title": "Workflow-Entwicklung",
+          "description": "Wir schreiben maßgeschneiderte Python-Skripte und erstellen visuelle Workflows in UiPath oder Automation Anywhere."
+        },
+        {
+          "step": 4,
+          "title": "Exception-Setup",
+          "description": "Wir konfigurieren Regeln zur Fehlerbehandlung und richten Benachrichtigungen ein, falls Formatierungsprüfungen von Dokumenten fehlschlagen."
+        },
+        {
+          "step": 5,
+          "title": "Orchestrator-Setup",
+          "description": "Wir binden die Bots in eine zentrale Orchestrator-Plattform ein, um Aufgaben zu planen, Läufe zu überwachen und Lizenzen zu steuern."
+        },
+        {
+          "step": 6,
+          "title": "Testbetrieb & Support",
+          "description": "Wir führen umfangreiche End-to-End-Tests in Sandbox-Umgebungen durch, um das Verhalten unter wechselnden Systemlasten abzusichern."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist Robotic Process Automation (RPA)?",
+          "answer": "RPA ist eine Technologie, bei der Software-Bots eingesetzt werden, um sich wiederholende, regelbasierte Aufgaben wie Dateneingaben oder Berichterstellungen automatisch auszuführen."
+        },
+        {
+          "question": "Müssen wir unsere alten Altsysteme für RPA ersetzen?",
+          "answer": "Nein, RPA-Bots interagieren mit der Benutzeroberfläche Ihrer bestehenden Systeme genau wie ein menschlicher Mitarbeiter. Teure Software-Neuanschaffungen entfallen dadurch."
+        },
+        {
+          "question": "Was ist der Unterschied zwischen Attended- und Unattended-Bots?",
+          "answer": "Attended-Bots laufen auf dem Rechner des Nutzers und erfordern manuelle Interaktionen, während Unattended-Bots vollautomatisch nach Zeitplänen auf Remote-Servern ausgeführt werden."
+        },
+        {
+          "question": "Wie verarbeiten RPA-Bots unstrukturierte Daten wie PDFs?",
+          "answer": "Wir binden OCR (optische Zeichenerkennung) und Computer Vision ein, um Texte aus Dokumenten auszulesen, zu interpretieren und in strukturierte Tabellen zu überführen."
+        },
+        {
+          "question": "Was passiert, wenn ein Bot auf einen unerwarteten Fehler stößt?",
+          "answer": "Wir programmieren Regeln zur Ausnahmebehandlung. Der Bot stoppt die Transaktion, protokolliert den Fehler und benachrichtigt einen menschlichen Operator zur manuellen Überprüfung."
+        },
+        {
+          "question": "Ist RPA für sensible Finanzdaten sicher?",
+          "answer": "Ja, wir implementieren verschlüsselte Verbindungen und sichere Tresore für Zugangsdaten. Alle Aktionen des Bots werden lückenlos in Audit-Logs aufgezeichnet."
+        },
+        {
+          "question": "Wie entscheidet man zwischen UiPath und individuellen Python-Skripten?",
+          "answer": "Wir empfehlen UiPath für komplexe Unternehmens-Workflows mit mehreren Desktop-Anwendungen und schlanke Python-Skripte für Web-Scraping oder einfache API-Integrationsaufgaben."
+        },
+        {
+          "question": "Welche Prozesse eignen sich am besten für RPA?",
+          "answer": "Ideal sind Prozesse, die hochgradig repetitiv und regelbasiert sind, ein hohes Datenvolumen aufweisen und digitale Eingaben (wie Excel, E-Mails oder Datenbanken) nutzen."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "UiPath",
+          "icon": "uipath"
+        },
+        {
+          "name": "Automation Anywhere",
+          "icon": "automationanywhere"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "Selenium",
+          "icon": "selenium"
+        },
+        {
+          "name": "Power Automate",
+          "icon": "microsoft"
+        },
+        {
+          "name": "OpenCV",
+          "icon": "opencv"
+        },
+        {
+          "name": "Node.js",
+          "icon": "nodejs"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "آر پی اے سلوشنز (RPA Solutions)",
+    "shortDescription": "روبوٹک پروسیس آٹومیشن کے ذریعے دفتری کاموں کو خودکار بنائیں، انسانی غلطیوں کو ختم کریں، اور کاروباری کام کی رفتار کو تیز کریں۔ ہم سسٹمز کے لیے ہوشیار سافٹ ویئر بوٹس بناتے ہیں۔",
+    "fullDescription": "دستی ڈیٹا انٹری، فلیٹ فائل پروسیسنگ اور بار بار کیے جانے والے انتظامی کام ملازمین کی پیداوری کو کم کرتے ہیں اور کاروباری اخراجات میں اضافہ کرتے ہیں۔ ہم UiPath، Automation Anywhere، اور کسٹم Python اسکرپٹس کا استعمال کرتے ہوئے کسٹم روبوٹک پروسیس آٹومیشن (RPA) سلوشنز تیار کرتے ہیں۔ ہمارے سافٹ ویئر بوٹس انسانی اعمال کی نقل کرتے ہوئے ڈیٹا نکالنے، رپورٹیں بنانے اور ریکارڈز کو سنکرونائز کرنے کے لیے ڈیسک ٹاپ ایپلی کیشنز، ویب پورٹلز اور پرانے سسٹمز کے ساتھ تعامل کرتے ہیں۔ ہم ان بوٹس میں OCR اور کمپیوٹر ویژن کو شامل کرتے ہیں تاکہ یہ غیر ترتیب شدہ فائلز (جیسے تصاویر اور پی ڈی ایف) کو پڑھ سکیں۔ ان سسٹمز کی مدد سے ہم 24/7 کام کی رفتار حاصل کرنے میں مدد کرتے ہیں۔",
+    "features": [
+      "UiPath ورک فلو ڈیزائن اور کسٹم بوٹس کی تیاری",
+      "Automation Anywhere کمپنی لیول کی لانچنگ",
+      "کسٹم Python اور Selenium آٹومیشن اسکرپٹس",
+      "OCR ٹیکنالوجی کے ذریعے سمارٹ دستاویزات کی پروسیسنگ",
+      "پرانے سسٹمز کے لیے ڈیسک ٹاپ انٹیگریشن بوٹس",
+      "خودکار رپورٹنگ اور ای میل ورک فلو کا قیام",
+      "مرکزی آرکیسٹریٹر مینجمنٹ کا سیٹ اپ",
+      "مسائل کی نشاندہی اور سسٹم ایرر لاگنگ"
+    ],
+    "benefits": [
+      "دستی ڈیٹا پروسیسنگ کو خودکار بنا کر اخراجات کو کم کریں",
+      "ڈیٹا انٹری کے دوران ٹائپنگ کی غلطیوں کو سو فیصد ختم کریں",
+      "24/7 کام کرنے والے بوٹس کے ذریعے مسلسل پروسیسنگ یقینی بنائیں",
+      "پرانے سسٹمز کے کوڈز کو تبدیل کیے بغیر آٹومیشن لاگو کریں",
+      "دستاویزات کی پروسیسنگ کی رفتار اسی فیصد تک تیز کریں",
+      "کارکنوں کو فارغ کریں تاکہ وہ کلائنٹ ہینڈلنگ پر توجہ دے سکیں"
+    ],
+    "metaTitle": "کسٹم RPA سلوشنز | روبوٹک پروسیس آٹومیشن | PakSoft",
+    "metaDescription": "دستی کاموں کو خودکار بنائیں اور غلطیوں کو ختم کریں۔ ہم UiPath اور Python کی مدد سے انٹیلیجنٹ بوٹس بناتے ہیں۔ رابطہ کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "عمل کی جانچ اور تشخیص",
+          "description": "ہم آپ کے دفتری کاموں اور دستاویزات کے ورک فلو کا جائزہ لیتے ہیں تاکہ آٹومیشن کے لیے موزوں عمل کا انتخاب کیا جا سکے۔"
+        },
+        {
+          "step": 2,
+          "title": "بوٹ ڈیزائن اور میپنگ",
+          "description": "ہم آٹومیشن پاتھ کو ترتیب دینے کے لیے صارفین کی سرگرمیوں اور دستاویز کے ڈیٹا کے ربط کا مرحلہ وار نقشہ تیار کرتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "ورک فلو ڈویلپمنٹ",
+          "description": "ہم کسٹم Python اسکرپٹس لکھتے ہیں اور UiPath یا Automation Anywhere کے اندر ویژول آٹومیشن ورک فلو تیار کرتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "ایرر ہینڈلنگ سیٹ اپ",
+          "description": "ہم غلطیوں کو سنبھالنے کے اصول وضع کرتے ہیں اور ڈیٹا فارمیٹنگ خراب ہونے کی صورت میں نوٹیفکیشن پائپ لائنز بناتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "آرکیسٹریٹر کی تشکیل",
+          "description": "ہم کاموں کو شیڈول کرنے، رنز کی نگرانی کرنے اور لائسنس کے انتظام کے لیے بوٹس کو مرکزی پلیٹ فارم پر ہوسٹ کرتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "ٹیسٹنگ اور سپورٹ",
+          "description": "ہم سینڈ باکس ٹیسٹنگ چلاتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ بوٹس مختلف بوجھ کے تحت بھی درست کارکردگی دکھائیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "روبوٹک پروسیس آٹومیشن (RPA) کیا ہے؟",
+          "answer": "یہ ایک ایسی ٹیکنالوجی ہے جو بار بار کیے جانے والے اور قوانین پر مبنی کاموں (جیسے ڈیٹا انٹری یا رپورٹس بنانا) کو سافٹ ویئر بوٹس کے ذریعے خودکار بناتی ہے۔"
+        },
+        {
+          "question": "کیا آر پی اے (RPA) استعمال کرنے کے لیے پرانے سسٹمز کو بدلنا ضروری ہے؟",
+          "answer": "جی نہیں، بوٹس آپ کے موجودہ سسٹمز کے ساتھ بالکل اسی طرح کام کرتے ہیں جیسے کوئی انسان کرتا ہے، اس لیے مہنگے سسٹمز کو بدلنے کی ضرورت نہیں ہوتی۔"
+        },
+        {
+          "question": "اٹینڈڈ (attended) اور ان اٹینڈڈ (unattended) بوٹس میں کیا فرق ہے؟",
+          "answer": "اٹینڈڈ بوٹس صارف کے کمپیوٹر پر چلتے ہیں اور انہیں انسانی اشارے کی ضرورت ہوتی ہے، جبکہ ان اٹینڈڈ بوٹس بیک اینڈ سرورز پر خودکار شیڈول کے تحت چلتے ہیں۔"
+        },
+        {
+          "question": "بوٹس پی ڈی ایف (PDF) جیسے غیر ترتیب شدہ ڈیٹا کو کیسے سنبھالتے ہیں؟",
+          "answer": "ہم بوٹس کے ساتھ او سی آر (OCR) اور کمپیوٹر ویژن کو جوڑتے ہیں جو دستاویز سے تحریر پڑھ کر اسے ایک منظم ٹیبلر فارمیٹ میں تبدیل کر دیتے ہیں۔"
+        },
+        {
+          "question": "اگر بوٹ کو کام کے دوران کوئی نامعلوم ایرر پیش آئے تو کیا ہوتا ہے؟",
+          "answer": "ہم بوٹ میں ایرر ہینڈلنگ سیٹ کرتے ہیں۔ بوٹ اس ٹرانزیکشن کو روکتا ہے، لاگ فائل بناتا ہے اور انسانی آپریٹر کو مطلع کرتا ہے تاکہ وہ اسے دستی طور پر چیک کرے۔"
+        },
+        {
+          "question": "کیا حساس مالیاتی ڈیٹا کے لیے آر پی اے (RPA) محفوظ ہے؟",
+          "answer": "جی ہاں، ہم سیکیورٹی کے لیے کرپٹوگرافک والٹس اور انکرپٹڈ سیشنز استعمال کرتے ہیں۔ بوٹ کی ہر سرگرمی کو آڈٹ لاگز میں محفوظ کیا جاتا ہے تاکہ مکمل شفافیت رہے۔"
+        },
+        {
+          "question": "ہمیں یو آئی پاتھ (UiPath) اور پائتھن (Python) میں سے کس کا انتخاب کرنا چاہیے؟",
+          "answer": "کئی ڈیسک ٹاپ ایپس پر مشتمل بڑے کاموں کے لیے ہم UiPath اور ویب سکریپنگ یا ہلکے کاموں کے لیے کسٹم پائتھن اسکرپٹس تجویز کرتے ہیں۔"
+        },
+        {
+          "question": "روبوٹک آٹومیشن کے لیے کس قسم کے کام سب سے زیادہ مناسب ہیں؟",
+          "answer": "ایسے تمام کام جو روزانہ کی بنیاد پر ایک ہی جیسے قوانین کے تحت کیے جاتے ہوں اور ان کا ان پٹ ڈیجیٹل (جیسے ایکسل شیٹ یا ای میل) ہو، آٹومیشن کے لیے بہترین ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "UiPath",
+          "icon": "uipath"
+        },
+        {
+          "name": "Automation Anywhere",
+          "icon": "automationanywhere"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "Selenium",
+          "icon": "selenium"
+        },
+        {
+          "name": "Power Automate",
+          "icon": "microsoft"
+        },
+        {
+          "name": "OpenCV",
+          "icon": "opencv"
+        },
+        {
+          "name": "Node.js",
+          "icon": "nodejs"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "حلول أتمتة العمليات الروبوتية RPA",
+    "shortDescription": "أتمت العمليات الإدارية المتكررة، وقلل الأخطاء البشرية، وبسط تدفقات العمل التشغيلية باستخدام حلول RPA المخصصة. نصمم برامج روبوتية ذكية تعمل بسلاسة وكفاءة تامة عبر أنظمة عملك المختلفة.",
+    "fullDescription": "يتسبب إدخال البيانات يدوياً، ومعالجة الفواتير، والمهام الإدارية المتكررة في تقليل إنتاجية الموظفين وزيادة التكاليف التشغيلية. نحن نطور حلول أتمتة العمليات الروبوتية (RPA) المخصصة باستخدام منصات رائدة مثل UiPath و Automation Anywhere والبرمجة النصية المخصصة بلغة Python. تحاكي الروبوتات البرمجية لدينا تصرفات البشر، حيث تتفاعل مع تطبيقات سطح المكتب، وبوابات الويب، والأنظمة القديمة لاستخراج البيانات وإنشاء التقارير ومزامنة السجلات. ندمج تقنيات التعرف الضوئي على الحروف (OCR) والرؤية الحاسوبية لتمكين الروبوتات من قراءة المستندات غير المهيكلة والتعامل مع منطق القرار المعقد. ومن خلال أتمتة هذه التدفقات، نساعد عملك على العمل على مدار الساعة 24/7.",
+    "features": [
+      "تصميم سير العمل في UiPath والروبوتات المخصصة",
+      "نشر وإعداد منصة Automation Anywhere للمؤسسات",
+      "برمجة نصوص الأتمتة المخصصة بلغة Python و Selenium",
+      "استيراد المستندات الذكي المدعوم بتقنية OCR",
+      "روبوتات التكامل مع تطبيقات سطح المكتب والأنظمة القديمة",
+      "أتمتة إعداد التقارير البريدية وسير عمل البريد الإلكتروني",
+      "إعداد وإدارة النظام المركزي للمراقبة والتشغيل Orchestrator",
+      "تتبع الأخطاء البرمجية وتسجيل الاستثناءات التشغيلية تلقائياً"
+    ],
+    "benefits": [
+      "تقليل التكاليف التشغيلية عن طريق أتمتة معالجة البيانات اليدوية",
+      "القضاء التام على أخطاء إدخال البيانات البشرية والأخطاء الإملائية",
+      "ضمان المعالجة المستمرة بفضل الروبوتات التي تعمل على مدار الساعة",
+      "نشر الأتمتة دون الحاجة إلى تغيير التعليمات البرمجية للأنظمة القديمة",
+      "تسريع أوقات معالجة المستندات بنسبة تصل إلى ثمانين بالمائة",
+      "تمكين الموارد البشرية من التركيز على المهام الموجهة للعملاء"
+    ],
+    "metaTitle": "حلول RPA المخصصة | أتمتة العمليات الروبوتية | PakSoft",
+    "metaDescription": "أتمت سير العمل اليدوي وقلل الأخطاء التشغيلية باستخدام أتمتة العمليات الروبوتية. نبني روبوتات ذكية باستخدام UiPath و Python. اتصل بنا.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تقييم العمليات التشغيلية",
+          "description": "نحلل مهامك الإدارية وروتين معالجة المستندات لتحديد تدفقات العمل الأكثر ملاءمة للأتمتة."
+        },
+        {
+          "step": 2,
+          "title": "تصميم ورسم مسار الروبوت",
+          "description": "نرسم تفاعلات المستخدم خطوة بخطوة وتدفق البيانات للمستندات لبناء هيكل مسار الأتمتة الصحيح."
+        },
+        {
+          "step": 3,
+          "title": "تطوير سير العمل البرمجي",
+          "description": "نكتب سيناريوهات برمجية مخصصة بلغة Python ونبني تدفقات عمل مرئية داخل UiPath أو Automation Anywhere."
+        },
+        {
+          "step": 4,
+          "title": "إعداد الاستثناءات البرمجية",
+          "description": "نهيئ قواعد صارمة للتعامل مع الأخطاء وننشئ مسارات تنبيه عند فشل التحقق من صحة تنسيق الملفات."
+        },
+        {
+          "step": 5,
+          "title": "تهيئة نظام التشغيل Orchestrator",
+          "description": "ننشر الروبوتات على منصة إدارة مركزية لجدولة المهام، ومراقبة عمليات التشغيل، وإدارة التراخيص اللازمة."
+        },
+        {
+          "step": 6,
+          "title": "الاختبار الشامل والدعم",
+          "description": "نجري اختبارات شاملة في بيئات اختبارية معزولة، للتأكد من تشغيل الروبوتات بشكل صحيح تحت أحمال تشغيل مختلفة."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما هي أتمتة العمليات الروبوتية (RPA)؟",
+          "answer": "RPA هي تقنية تستخدم روبوتات برمجية لأتمتة المهام المتكررة القائمة على القواعد والتي يؤديها البشر عادةً، مثل إدخال البيانات أو إنشاء التقارير."
+        },
+        {
+          "question": "هل نحتاج إلى استبدال أنظمتنا القديمة لاستخدام تقنية RPA؟",
+          "answer": "لا، تتفاعل روبوتات RPA مع واجهة المستخدم لأنظمتك الحالية تماماً مثل الموظف البشري، مما يلغي الحاجة إلى عمليات استبدال البرامج المكلفة."
+        },
+        {
+          "question": "ما الفرق بين الروبوتات الموجهة (Attended) وغير الموجهة (Unattended)؟",
+          "answer": "تعمل الروبوتات الموجهة على جهاز المستخدم وتتطلب تحفيزاً أو مدخلات بشرية، بينما تعمل الروبوتات غير الموجهة على خوادم بعيدة تلقائياً بناءً على جداول زمنية محددة."
+        },
+        {
+          "question": "كيف تتعامل روبوتات RPA مع البيانات غير المهيكلة مثل ملفات PDF؟",
+          "answer": "ندمج أنظمة التعرف الضوئي على الحروف (OCR) والرؤية الحاسوبية لقراءة واستخراج وتحويل النصوص من المستندات غير المهيكلة إلى جداول بيانات مهيكلة."
+        },
+        {
+          "question": "ماذا يحدث إذا واجه الروبوت خطأً غير متوقع أثناء العمل؟",
+          "answer": "نبني قواعد لمعالجة الاستثناءات. يوقف الروبوت المعاملة المتأثرة، ويسجل الخطأ في ملف السجل، وينبه المشغل البشري لمراجعة المشكلة يدوياً."
+        },
+        {
+          "question": "هل تقنية RPA آمنة للتعامل مع البيانات المالية الحساسة؟",
+          "answer": "نعم، نحن نطبق خزائن بيانات اعتماد صارمة واتصالات مشفرة، مما يضمن وصول الروبوتات إلى قواعد البيانات بأمان، وتسجيل كافة الإجراءات في سجلات التدقيق."
+        },
+        {
+          "question": "كيف نختار بين UiPath والبرمجة النصية المخصصة بلغة Python؟",
+          "answer": "نوصي بـ UiPath لتدفقات العمل المعقدة التي تشمل تطبيقات سطح مكتب قديمة متعددة، ونوصي ببرامج Python النصية البسيطة لعمليات كشط الويب أو تكامل واجهات التطبيقات."
+        },
+        {
+          "question": "ما هي العمليات الأكثر ملاءمة للأتمتة باستخدام RPA؟",
+          "answer": "العمليات المثالية هي تلك المتكررة للغاية، والقائمة على القواعد، والتي تتطلب حجماً كبيراً من المعالجة، وتستخدم مدخلات رقمية مثل ملفات Excel أو رسائل البريد."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "UiPath",
+          "icon": "uipath"
+        },
+        {
+          "name": "Automation Anywhere",
+          "icon": "automationanywhere"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "Selenium",
+          "icon": "selenium"
+        },
+        {
+          "name": "Power Automate",
+          "icon": "microsoft"
+        },
+        {
+          "name": "OpenCV",
+          "icon": "opencv"
+        },
+        {
+          "name": "Node.js",
+          "icon": "nodejs"
+        }
+      ]
+    }
+  }
+}

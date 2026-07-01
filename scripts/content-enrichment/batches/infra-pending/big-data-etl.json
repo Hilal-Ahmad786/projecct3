@@ -1,0 +1,638 @@
+{
+  "slug": "big-data-etl",
+  "en": {
+    "name": "Big Data & ETL Pipelines",
+    "shortDescription": "Build high-throughput, fault-tolerant data pipelines that seamlessly extract, transform, and load multi-source enterprise data into scalable warehouses for real-time analytical decision-making.",
+    "fullDescription": "Unlock the true value of your enterprise data with our custom Big Data and ETL engineering services. We design and implement robust, distributed data pipelines that process terabytes of structured and unstructured data with minimal latency. By leveraging modern orchestration tools and cloud data warehouses, we eliminate data silos and ensure high availability. Our team builds resilient architectures that handle schema evolution, automated data quality validation, and real-time streaming. Whether migrating legacy databases to Snowflake or optimizing Apache Spark clusters, we deliver clean, production-ready data assets that empower your business intelligence tools and machine learning models.",
+    "features": [
+      "Distributed ETL Pipeline Development",
+      "Cloud Data Warehouse Architecture",
+      "Real-Time Event Streaming",
+      "Automated Data Quality Validation",
+      "Dynamic Schema Evolution Management",
+      "Multi-DAG Pipeline Orchestration",
+      "Data Lakehouse Implementation",
+      "CDC (Change Data Capture) Integration"
+    ],
+    "benefits": [
+      "Zero-latency decision making",
+      "Eliminated data silos",
+      "99.9% pipeline uptime",
+      "Reduced cloud storage costs",
+      "Trusted, clean data assets",
+      "Seamless BI tool integration"
+    ],
+    "metaTitle": "Big Data & ETL Pipeline Services | PakSoft",
+    "metaDescription": "Build scalable, real-time ETL pipelines and cloud data warehouses. Optimize your data processing with PakSoft. Contact our data engineers today!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Data Discovery & Audit",
+          "description": "We analyze your existing data sources, schemas, and processing bottlenecks. This assessment helps us design a tailored architecture that meets your throughput requirements."
+        },
+        {
+          "step": 2,
+          "title": "Architecture & Schema Design",
+          "description": "Our team designs scalable target schemas and selects the optimal cloud data warehouse. We map out the extraction, transformation, and loading phases for maximum efficiency."
+        },
+        {
+          "step": 3,
+          "title": "Pipeline Development",
+          "description": "We write clean, optimized ETL/ELT code using Apache Spark, dbt, or SQL. This step includes setting up robust error handling and automated data validation rules."
+        },
+        {
+          "step": 4,
+          "title": "Orchestration & Scheduling",
+          "description": "We configure Apache Airflow or Prefect to manage complex workflow dependencies. This ensures your pipelines run reliably on schedule with automated retry mechanisms."
+        },
+        {
+          "step": 5,
+          "title": "Testing & Validation",
+          "description": "We run comprehensive integration tests with production-grade data volumes to verify performance. Our engineers validate data integrity, schema compliance, and transformation accuracy."
+        },
+        {
+          "step": 6,
+          "title": "Deployment & Monitoring",
+          "description": "We deploy the pipelines to your cloud environment with continuous monitoring and alerting. Our team provides ongoing optimization to keep operational costs low."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the difference between ETL and ELT, and which one do you use?",
+          "answer": "ETL transforms data before loading it, while ELT loads raw data into a modern warehouse like Snowflake and transforms it there. We typically recommend ELT for cloud environments because it leverages the massive parallel processing power of modern data warehouses. However, we choose the approach that best fits your specific infrastructure and budget."
+        },
+        {
+          "question": "How do you ensure data quality and prevent corrupt data from entering our warehouse?",
+          "answer": "We implement automated data quality checks at every stage of the pipeline using tools like Great Expectations or dbt tests. If a record fails validation, it is routed to a dead-letter queue for inspection while healthy data continues processing. This prevents pipeline failures and ensures your business intelligence dashboards remain accurate."
+        },
+        {
+          "question": "Can your pipelines handle real-time streaming data as well as batch processing?",
+          "answer": "Yes, we build hybrid architectures that support both real-time streaming and scheduled batch processing. We utilize Apache Kafka or AWS Kinesis for low-latency streaming, combined with Apache Spark for high-throughput batch transformations. This ensures your business has access to both historical depth and immediate real-time insights."
+        },
+        {
+          "question": "How do you handle schema changes in source databases without breaking the pipelines?",
+          "answer": "We design our pipelines with dynamic schema evolution capabilities that automatically detect and adapt to source changes. By using schema registries and flexible JSON parsing, we prevent pipeline crashes when columns are added or modified. Our systems alert administrators of major changes while keeping the core data flow running."
+        },
+        {
+          "question": "Which cloud data warehouses do you support for ETL deployments?",
+          "answer": "We have extensive experience deploying pipelines to Snowflake, Google BigQuery, Amazon Redshift, and Databricks. We help you select the right platform based on your query patterns, data volume, and budget. Our team optimizes storage and compute configurations to minimize your monthly cloud expenditures."
+        },
+        {
+          "question": "How do you secure sensitive data like PII during the ETL process?",
+          "answer": "We integrate strict security measures including end-to-end encryption, column-level masking, and automated data anonymization. Sensitive PII is either hashed or encrypted before it reaches the data warehouse, ensuring compliance with GDPR and HIPAA. Access controls are strictly managed using role-based permissions."
+        },
+        {
+          "question": "What orchestration tools do you use to manage complex data workflows?",
+          "answer": "We primarily use Apache Airflow, Prefect, or cloud-native orchestrators like AWS Step Functions to manage workflow dependencies. These tools allow us to build complex Directed Acyclic Graphs (DAGs) with automated retries, alerting, and dependency tracking. This guarantees that tasks execute in the correct order and fail gracefully."
+        },
+        {
+          "question": "How long does it typically take to build and deploy a custom ETL pipeline?",
+          "answer": "A standard production-ready ETL pipeline takes between 4 to 8 weeks to design, build, test, and deploy. The exact timeline depends on the number of data sources, schema complexity, and transformation requirements. We provide a detailed roadmap and iterative delivery milestones throughout the project."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Apache Spark",
+          "icon": "apache-spark"
+        },
+        {
+          "name": "Apache Airflow",
+          "icon": "apache-airflow"
+        },
+        {
+          "name": "dbt",
+          "icon": "dbt"
+        },
+        {
+          "name": "Snowflake",
+          "icon": "snowflake"
+        },
+        {
+          "name": "Apache Kafka",
+          "icon": "apache-kafka"
+        },
+        {
+          "name": "Google BigQuery",
+          "icon": "google-bigquery"
+        },
+        {
+          "name": "Databricks",
+          "icon": "databricks"
+        },
+        {
+          "name": "AWS Redshift",
+          "icon": "aws-redshift"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Büyük Veri ve ETL Çözümleri",
+    "shortDescription": "Çok kaynaklı kurumsal verileri gerçek zamanlı analizler için ölçeklenebilir veri ambarlarına sorunsuz bir şekilde aktaran, dönüştüren ve yükleyen yüksek performanslı veri boru hatları kurun.",
+    "fullDescription": "PakSoft'un uzman Büyük Veri ve ETL mühendisliği hizmetleriyle kurumsal verilerinizin gerçek değerini ortaya çıkarın. Terabaytlarca yapılandırılmış ve yapılandırılmamış veriyi minimum gecikmeyle işleyen dayanıklı, dağıtık veri boru hatları tasarlıyor ve uyguluyoruz. Modern orkestrasyon araçları ve bulut veri ambarları kullanarak veri silolarını ortadan kaldırıyor ve yüksek kullanılabilirlik sağlıyoruz. Ekibimiz, şema değişikliklerini, otomatik veri kalitesi doğrulamalarını ve gerçek zamanlı veri akışını yöneten esnek mimariler inşa eder. Eski veritabanlarını Snowflake'e taşımaktan Apache Spark kümelerini optimize etmeye kadar, iş zekası araçlarınızı ve yapay zeka modellerinizi besleyecek temiz, üretime hazır veri varlıkları sunuyoruz.",
+    "features": [
+      "Dağıtık ETL Boru Hattı Geliştirme",
+      "Bulut Veri Ambarı Mimarisi",
+      "Gerçek Zamanlı Olay Akışı",
+      "Otomatik Veri Kalitesi Doğrulaması",
+      "Dinamik Şema Değişim Yönetimi",
+      "Çoklu DAG Boru Hattı Orkestrasyonu",
+      "Veri Gölü (Lakehouse) Kurulumu",
+      "CDC (Değişen Veri Yakalama) Entegrasyonu"
+    ],
+    "benefits": [
+      "Sıfır gecikmeli karar alma",
+      "Ortadan kalkan veri siloları",
+      "%99.9 boru hattı çalışma süresi",
+      "Düşen bulut depolama maliyetleri",
+      "Güvenilir ve temiz veri varlıkları",
+      "Sorunsuz BI araç entegrasyonu"
+    ],
+    "metaTitle": "Büyük Veri ve ETL Çözümleri | PakSoft",
+    "metaDescription": "Ölçeklenebilir, gerçek zamanlı ETL boru hatları ve bulut veri ambarları kurun. Veri işleme süreçlerinizi PakSoft ile optimize edin. Hemen iletişime geçin!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Veri Keşfi ve Denetimi",
+          "description": "Mevcut veri kaynaklarınızı, şemalarınızı ve işlem darboğazlarınızı analiz ediyoruz. Bu değerlendirme, veri hacmi gereksinimlerinizi karşılayan özel bir mimari tasarlamamıza yardımcı olur."
+        },
+        {
+          "step": 2,
+          "title": "Mimari ve Şema Tasarımı",
+          "description": "Ekibimiz ölçeklenebilir hedef şemalar tasarlar ve en uygun bulut veri ambarını seçer. Maksimum verimlilik için çıkarma, dönüştürme ve yükleme aşamalarını planlıyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Boru Hattı Geliştirme",
+          "description": "Apache Spark, dbt veya SQL kullanarak temiz ve optimize edilmiş ETL/ELT kodları yazıyoruz. Bu adım, güçlü hata yönetimi ve otomatik veri doğrulama kurallarının kurulumunu içerir."
+        },
+        {
+          "step": 4,
+          "title": "Orchestration ve Zamanlama",
+          "description": "Karmaşık iş akışı bağımlılıklarını yönetmek için Apache Airflow veya Prefect yapılandırıyoruz. Bu, boru hatlarınızın otomatik yeniden deneme mekanizmalarıyla güvenilir şekilde çalışmasını sağlar."
+        },
+        {
+          "step": 5,
+          "title": "Test ve Doğrulama",
+          "description": "Performansı doğrulamak için üretim kalitesinde veri hacimleriyle kapsamlı entegrasyon testleri yürütüyoruz. Mühendislerimiz veri bütünlüğünü, şema uyumluluğunu ve dönüşüm doğruluğunu onaylar."
+        },
+        {
+          "step": 6,
+          "title": "Dağıtım ve İzleme",
+          "description": "Boru hatlarını sürekli izleme ve uyarı sistemleriyle bulut ortamınıza dağıtıyoruz. Ekibimiz, operasyonel maliyetleri düşük tutmak için sürekli optimizasyon desteği sunar."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ETL ve ELT arasındaki fark nedir ve hangisini kullanıyorsunuz?",
+          "answer": "ETL, verileri yüklemeden önce dönüştürür; ELT ise ham verileri Snowflake gibi modern bir ambara yükler ve orada dönüştürür. Bulut ortamlarında modern veri ambarlarının paralel işlem gücünden yararlandığı için genellikle ELT yaklaşımını öneriyoruz. Ancak, altyapınıza ve bütçenize en uygun yöntemi seçiyoruz."
+        },
+        {
+          "question": "Veri kalitesini nasıl sağlıyor ve hatalı verilerin ambarımıza girmesini nasıl önliyorsunuz?",
+          "answer": "Great Expectations veya dbt testleri gibi araçlar kullanarak boru hattının her aşamasında otomatik veri kalitesi kontrolleri uyguluyoruz. Doğrulamadan geçemeyen kayıtlar incelenmek üzere bir hata kuyruğuna yönlendirilirken, temiz veriler işlenmeye devam eder. Bu sayede boru hattı kesintileri önlenir ve raporlama ekranlarınız doğru kalır."
+        },
+        {
+          "question": "Boru hatlarınız toplu (batch) işlemenin yanı sıra gerçek zamanlı veri akışını da destekliyor mu?",
+          "answer": "Evet, hem gerçek zamanlı veri akışını hem de planlanmış toplu işlemeyi destekleyen hibrit mimariler kuruyoruz. Düşük gecikmeli akışlar için Apache Kafka veya AWS Kinesis, yüksek hacimli toplu dönüşümler için ise Apache Spark kullanıyoruz. Bu, işletmenizin hem geçmiş verilere hem de anlık analizlere erişmesini sağlar."
+        },
+        {
+          "question": "Kaynak veritabanlarındaki şema değişikliklerini boru hatlarını bozmadan nasıl yönetiyorsunuz?",
+          "answer": "Boru hatlarımızı, kaynak değişikliklerini otomatik olarak algılayan ve bunlara uyum sağlayan dinamik şema evrimi yetenekleriyle tasarlıyoruz. Şema kayıt defterleri (schema registry) ve esnek JSON ayrıştırma kullanarak, yeni sütunlar eklendiğinde sistemin çökmesini önlüyoruz. Kritik değişikliklerde yöneticileri uyarırken ana veri akışını kesintisiz sürdürüyoruz."
+        },
+        {
+          "question": "ETL dağıtımları için hangi bulut veri ambarlarını destekliyorsunuz?",
+          "answer": "Snowflake, Google BigQuery, Amazon Redshift ve Databricks platformlarında boru hatları dağıtma konusunda derin deneyime sahibiz. Sorgu modellerinize, veri hacminize ve bütçenize göre en doğru platformu seçmenize yardımcı oluyoruz. Aylık bulut harcamalarınızı en aza indirmek için depolama ve işlem yapılandırmalarını optimize ediyoruz."
+        },
+        {
+          "question": "ETL sürecinde kişisel veriler (PII) gibi hassas verileri nasıl güvence altına alıyorsunuz?",
+          "answer": "Uçtan uca şifreleme, sütun düzeyinde maskeleme ve otomatik veri anonimleştirme dahil olmak üzere katı güvenlik önlemleri uyguluyoruz. Hassas kişisel veriler, veri ambarına ulaşmadan önce maskelenir veya şifrelenir, böylece KVKK ve GDPR uyumluluğu sağlanır. Erişim yetkileri rol tabanlı izinlerle sıkıca yönetilir."
+        },
+        {
+          "question": "Karmaşık veri iş akışlarını yönetmek için hangi orkestrasyon araçlarını kullanıyorsunuz?",
+          "answer": "İş akışı bağımlılıklarını yönetmek için öncelikle Apache Airflow, Prefect veya AWS Step Functions gibi bulut tabanlı araçlar kullanıyoruz. Bu araçlar, otomatik yeniden denemeler, uyarılar ve bağımlılık takibi içeren karmaşık Yönlendirilmiş Döngüsüz Grafikler (DAG) oluşturmamızı sağlar. Bu sayede görevler doğru sırayla ve güvenle çalışır."
+        },
+        {
+          "question": "Özel bir ETL boru hattı oluşturmak ve dağıtmak genellikle ne kadar sürer?",
+          "answer": "Standart, üretime hazır bir ETL boru hattının tasarımı, geliştirilmesi, test edilmesi ve dağıtılması 4 ila 8 hafta sürer. Kesin süre, veri kaynaklarının sayısına, şema karmaşıklığına ve dönüşüm gereksinimlerine bağlıdır. Proje boyunca ayrıntılı bir yol haritası ve aşamalı teslimat kilometre taşları sunuyoruz."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Apache Spark",
+          "icon": "apache-spark"
+        },
+        {
+          "name": "Apache Airflow",
+          "icon": "apache-airflow"
+        },
+        {
+          "name": "dbt",
+          "icon": "dbt"
+        },
+        {
+          "name": "Snowflake",
+          "icon": "snowflake"
+        },
+        {
+          "name": "Apache Kafka",
+          "icon": "apache-kafka"
+        },
+        {
+          "name": "Google BigQuery",
+          "icon": "google-bigquery"
+        },
+        {
+          "name": "Databricks",
+          "icon": "databricks"
+        },
+        {
+          "name": "AWS Redshift",
+          "icon": "aws-redshift"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Big Data & ETL-Pipelines",
+    "shortDescription": "Bauen Sie hochverfügbare, fehlertolerante Datenpipelines, die Unternehmensdaten aus verschiedenen Quellen extrahieren, transformieren und in skalierbare Warehouses laden.",
+    "fullDescription": "Nutzen Sie das volle Potenzial Ihrer Unternehmensdaten mit unseren maßgeschneiderten Big Data- und ETL-Engineering-Diensten. Wir entwerfen und implementieren robuste, verteilte Datenpipelines, die Terabytes an strukturierten und unstrukturierten Daten mit minimaler Latenz verarbeiten. Durch den Einsatz moderner Orchestrierungstools und Cloud-Data-Warehouses beseitigen wir Datensilos und gewährleisten eine hohe Verfügbarkeit. Unser Team baut widerstandsfähige Architekturen, die Schema-Evolution, automatisierte Datenqualitätsprüfungen und Echtzeit-Streaming bewältigen. Ob Migration von Altsystemen zu Snowflake oder Optimierung von Apache Spark-Clustern – wir liefern saubere, produktionsbereite Daten für Ihre Business-Intelligence-Tools und Machine-Learning-Modelle.",
+    "features": [
+      "Verteilte ETL-Pipeline-Entwicklung",
+      "Cloud-Data-Warehouse-Architektur",
+      "Echtzeit-Event-Streaming",
+      "Automatisierte Datenqualitätsprüfung",
+      "Dynamisches Schema-Evolutionsmanagement",
+      "Multi-DAG-Pipeline-Orchestrierung",
+      "Data-Lakehouse-Implementierung",
+      "CDC (Change Data Capture) Integration"
+    ],
+    "benefits": [
+      "Entscheidungen in Echtzeit",
+      "Beseitigung von Datensilos",
+      "99,9 % Pipeline-Uptime",
+      "Reduzierte Cloud-Speicherkosten",
+      "Vertrauenswürdige, saubere Daten",
+      "Nahtlose BI-Tool-Integration"
+    ],
+    "metaTitle": "Big Data & ETL-Pipeline-Dienste | PakSoft",
+    "metaDescription": "Skalierbare, Echtzeit-ETL-Pipelines und Cloud-Data-Warehouses aufbauen. Optimieren Sie Ihre Datenverarbeitung mit PakSoft. Jetzt anfragen!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Datenanalyse & Audit",
+          "description": "Wir analysieren Ihre bestehenden Datenquellen, Schemata und Verarbeitungsengpässe. Diese Bewertung hilft uns, eine maßgeschneiderte Architektur zu entwerfen, die Ihre Durchsatzanforderungen erfüllt."
+        },
+        {
+          "step": 2,
+          "title": "Architektur- & Schemadesign",
+          "description": "Unser Team entwirft skalierbare Zielschemata und wählt das optimale Cloud-Data-Warehouse aus. Wir planen die Extraktions-, Transformations- und Ladephasen für maximale Effizienz."
+        },
+        {
+          "step": 3,
+          "title": "Pipeline-Entwicklung",
+          "description": "Wir schreiben sauberen, optimierten ETL/ELT-Code mit Apache Spark, dbt oder SQL. Dieser Schritt umfasst die Einrichtung einer robusten Fehlerbehandlung und automatisierter Datenvalidierungsregeln."
+        },
+        {
+          "step": 4,
+          "title": "Orchestrierung & Planung",
+          "description": "Wir konfigurieren Apache Airflow oder Prefect, um komplexe Workflow-Abhängigkeiten zu verwalten. Dies stellt sicher, dass Ihre Pipelines zuverlässig nach Zeitplan mit automatischen Wiederholungsmechanismen laufen."
+        },
+        {
+          "step": 5,
+          "title": "Testen & Validierung",
+          "description": "Wir führen umfassende Integrationstests mit produktionsnahen Datenmengen durch, um die Leistung zu überprüfen. Unsere Ingenieure validieren die Datenintegrität, Schemakonformität und Transformationsgenauigkeit."
+        },
+        {
+          "step": 6,
+          "title": "Bereitstellung & Überwachung",
+          "description": "Wir stellen die Pipelines in Ihrer Cloud-Umgebung mit kontinuierlicher Überwachung und Alarmierung bereit. Unser Team sorgt für eine laufende Optimierung, um die Betriebskosten niedrig zu halten."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist der Unterschied zwischen ETL und ELT und welchen Ansatz nutzen Sie?",
+          "answer": "ETL transformiert Daten vor dem Laden, während ELT Rohdaten in ein modernes Warehouse wie Snowflake lädt und dort transformiert. Wir empfehlen in der Regel ELT für Cloud-Umgebungen, da es die massiv parallele Verarbeitungsleistung moderner Data Warehouses nutzt. Wir wählen jedoch den Ansatz, der am besten zu Ihrer Infrastruktur passt."
+        },
+        {
+          "question": "Wie stellen Sie die Datenqualität sicher und verhindern fehlerhafte Daten im Warehouse?",
+          "answer": "Wir implementieren automatisierte Qualitätsprüfungen auf jeder Pipeline-Stufe mit Tools wie Great Expectations oder dbt-Tests. Wenn ein Datensatz die Validierung nicht besteht, wird er zur Überprüfung in eine Dead-Letter-Queue geleitet, während fehlerfreie Daten weiterverarbeitet werden. Dies verhindert Pipeline-Ausfälle und hält Ihre Dashboards präzise."
+        },
+        {
+          "question": "Können Ihre Pipelines sowohl Echtzeit-Streaming als auch Batch-Verarbeitung verarbeiten?",
+          "answer": "Ja, wir entwickeln hybride Architekturen, die sowohl Echtzeit-Streaming als auch geplante Batch-Verarbeitung unterstützen. Wir nutzen Apache Kafka oder AWS Kinesis für Streaming mit geringer Latenz, kombiniert mit Apache Spark für Batch-Transformationen mit hohem Durchsatz. Dies sichert Ihnen sowohl historische Tiefe als auch sofortige Echtzeit-Erkenntnisse."
+        },
+        {
+          "question": "Wie gehen Sie mit Schemaänderungen in Quelldatenbanken um, ohne die Pipelines zu beschädigen?",
+          "answer": "Wir entwerfen unsere Pipelines mit dynamischen Schema-Evolutionsfunktionen, die Änderungen an den Quellen automatisch erkennen und anpassen. Durch den Einsatz von Schema-Registries und flexiblem JSON-Parsing verhindern wir Pipeline-Abstürze bei neuen Spalten. Unsere Systeme alarmieren Administratoren bei größeren Änderungen, während der Datenfluss weiterläuft."
+        },
+        {
+          "question": "Welche Cloud-Data-Warehouses unterstützen Sie für ETL-Bereitstellungen?",
+          "answer": "Wir haben umfassende Erfahrung mit der Bereitstellung von Pipelines auf Snowflake, Google BigQuery, Amazon Redshift und Databricks. Wir helfen Ihnen bei der Auswahl der richtigen Plattform basierend auf Ihren Abfragemustern, dem Datenvolumen und dem Budget. Unser Team optimiert die Konfigurationen, um Ihre monatlichen Cloud-Kosten zu minimieren."
+        },
+        {
+          "question": "Wie sichern Sie sensible Daten wie personenbezogene Daten (PII) während des ETL-Prozesses?",
+          "answer": "Wir integrieren strenge Sicherheitsmaßnahmen wie Ende-zu-Ende-Verschlüsselung, Maskierung auf Spaltenebene und automatisierte Datenanonymisierung. Sensible PII-Daten werden verschlüsselt oder maskiert, bevor sie das Data Warehouse erreichen, um die Einhaltung der DSGVO zu gewährleisten. Die Zugriffskontrolle wird streng über rollenbasierte Berechtigungen verwaltet."
+        },
+        {
+          "question": "Welche Orchestrierungstools verwenden Sie zur Verwaltung komplexer Daten-Workflows?",
+          "answer": "Wir verwenden hauptsächlich Apache Airflow, Prefect oder Cloud-native Orchestratoren wie AWS Step Functions. Diese Tools ermöglichen es uns, komplexe Directed Acyclic Graphs (DAGs) mit automatischen Wiederholungsversuchen, Alarmen und Abhängigkeitsverfolgung zu erstellen. Dies garantiert, dass Aufgaben in der richtigen Reihenfolge ausgeführt werden."
+        },
+        {
+          "question": "Wie lange dauert es normalerweise, eine benutzerdefinierte ETL-Pipeline zu erstellen?",
+          "answer": "Eine standardmäßige, produktionsbereite ETL-Pipeline benötigt zwischen 4 und 8 Wochen für Design, Entwicklung, Test und Bereitstellung. Der genaue Zeitrahmen hängt von der Anzahl der Datenquellen, der Schemakomplexität und den Transformationsanforderungen ab. Wir bieten während des gesamten Projekts einen detaillierten Fahrplan und iterative Meilensteine."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Apache Spark",
+          "icon": "apache-spark"
+        },
+        {
+          "name": "Apache Airflow",
+          "icon": "apache-airflow"
+        },
+        {
+          "name": "dbt",
+          "icon": "dbt"
+        },
+        {
+          "name": "Snowflake",
+          "icon": "snowflake"
+        },
+        {
+          "name": "Apache Kafka",
+          "icon": "apache-kafka"
+        },
+        {
+          "name": "Google BigQuery",
+          "icon": "google-bigquery"
+        },
+        {
+          "name": "Databricks",
+          "icon": "databricks"
+        },
+        {
+          "name": "AWS Redshift",
+          "icon": "aws-redshift"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "بگ ڈیٹا اور ای ٹی ایل پائپ لائنز",
+    "shortDescription": "اعلیٰ کارکردگی اور فالٹ ٹولرنٹ ڈیٹا پائپ لائنز بنائیں جو متعدد ذرائع سے ڈیٹا نکال کر، تبدیل کر کے، اور لوڈ کر کے اسکیل ایبل ڈیٹا ویئر ہاؤسز میں منتقل کرتی ہیں۔",
+    "fullDescription": "پاک سافٹ کی ماہر بگ ڈیٹا اور ای ٹی ایل (ETL) انجینئرنگ سروسز کے ساتھ اپنے کاروباری ڈیٹا کی حقیقی طاقت کو غیر مقفل کریں۔ ہم ایسے مضبوط اور تقسیم شدہ ڈیٹا پائپ لائنز ڈیزائن اور نافذ کرتے ہیں جو کم سے کم تاخیر کے ساتھ ٹیرابائٹس پر مشتمل اسٹرکچرڈ اور ان اسٹرکچرڈ ڈیٹا کو پروسیس کرتی ہیں۔ جدید آرکیسٹریشن ٹولز اور کلاؤڈ ڈیٹا ویئر ہاؤسز کا استعمال کرتے ہوئے، ہم ڈیٹا کے الگ تھلگ حصوں (silos) کو ختم کرتے ہیں اور اعلیٰ دستیابی کو یقینی بناتے ہیں۔ ہماری ٹیم لچکدار آرکیٹیکچرز تیار کرتی ہے جو شےما کی تبدیلیوں، خودکار ڈیٹا کوالٹی کی توثیق، اور ریئل ٹائم اسٹریمنگ کو سنبھالتی ہے۔ چاہے پرانے ڈیٹا بیسز کو Snowflake پر منتقل کرنا ہو یا Apache Spark کلسٹرز کو بہتر بنانا ہو، ہم صاف اور پروڈکشن کے لیے تیار ڈیٹا فراہم کرتے ہیں۔",
+    "features": [
+      "تقسیم شدہ ای ٹی ایل پائپ لائن ڈویلپمنٹ",
+      "کلاؤڈ ڈیٹا ویئر ہاؤس آرکیٹیکچر",
+      "ریئل ٹائم ایونٹ اسٹریمنگ",
+      "خودکار ڈیٹا کوالٹی کی توثیق",
+      "ڈائنامک شےما ایوولوشن مینجمنٹ",
+      "ملٹی ڈی اے جی پائپ لائن آرکیسٹریشن",
+      "ڈیٹا لیک ہاؤس کا نفاذ",
+      "سی ڈی سی (چینج ڈیٹا کیپچر) انٹیگریشن"
+    ],
+    "benefits": [
+      "بغیر کسی تاخیر کے فیصلے",
+      "ڈیٹا سائلوز کا خاتمہ",
+      "99.9% پائپ لائن اپ ٹائم",
+      "کلاؤڈ اسٹوریج کے اخراجات میں کمی",
+      "قابل اعتماد اور صاف ڈیٹا",
+      "بی آئی ٹولز کے ساتھ آسان انٹیگریشن"
+    ],
+    "metaTitle": "بگ ڈیٹا اور ای ٹی ایل پائپ لائن سروسز | PakSoft",
+    "metaDescription": "اسکیل ایبل اور ریئل ٹائم ای ٹی ایل پائپ لائنز اور کلاؤڈ ڈیٹا ویئر ہاؤسز بنائیں۔ پاک سافٹ کے ساتھ ڈیٹا پروسیسنگ کو بہتر بنائیں۔ آج ہی رابطہ کریں!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "ڈیٹا کی دریافت اور آڈٹ",
+          "description": "ہم آپ کے موجودہ ڈیٹا کے ذرائع، شےماز اور پروسیسنگ کی رکاوٹوں کا تجزیہ کرتے ہیں۔ یہ تشخیص ہمیں ایک ایسا موزوں آرکیٹیکچر ڈیزائن کرنے میں مدد دیتی ہے جو آپ کی ضروریات کو پورا کرے۔"
+        },
+        {
+          "step": 2,
+          "title": "آرکیٹیکچر اور شےما ڈیزائن",
+          "description": "ہماری ٹیم اسکیل ایبل ٹارگٹ شےماز ڈیزائن کرتی ہے اور بہترین کلاؤڈ ڈیٹا ویئر ہاؤس کا انتخاب کرتی ہے۔ ہم زیادہ سے زیادہ کارکردگی کے لیے ڈیٹا نکالنے، تبدیل کرنے اور لوڈ کرنے کے مراحل کا نقشہ بناتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "پائپ لائن کی تیاری",
+          "description": "ہم Apache Spark، dbt، یا SQL کا استعمال کرتے ہوئے صاف اور بہتر ای ٹی ایل/ای ایل ٹی کوڈ لکھتے ہیں۔ اس مرحلے میں مضبوط ایرر ہینڈلنگ اور خودکار ڈیٹا کی توثیق کے قوانین کا سیٹ اپ شامل ہے۔"
+        },
+        {
+          "step": 4,
+          "title": "آرکیسٹریشن اور شیڈولنگ",
+          "description": "ہم پیچیدہ ورک فلو کے انحصار کو منظم کرنے کے لیے Apache Airflow یا Prefect کو کنفیگر کرتے ہیں۔ یہ یقینی بناتا ہے کہ آپ کی پائپ لائنز خودکار دوبارہ کوشش کے طریقہ کار کے ساتھ شیڈول کے مطابق چلیں۔"
+        },
+        {
+          "step": 5,
+          "title": "ٹیسٹنگ اور توثیق",
+          "description": "ہم کارکردگی کی تصدیق کے لیے پروڈکشن گریڈ ڈیٹا والیوم کے ساتھ جامع انٹیگریشن ٹیسٹ چلاتے ہیں۔ ہمارے انجینئرز ڈیٹا کی سالمیت، شےما کی تعمیل، اور تبدیلی کی درستگی کی توثیق کرتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "ڈیپلائمنٹ اور مانیٹرنگ",
+          "description": "ہم مسلسل نگرانی اور الرٹنگ کے ساتھ پائپ لائنز کو آپ کے کلاؤڈ ماحول میں ڈیپلائے کرتے ہیں۔ ہماری ٹیم آپریشنل اخراجات کو کم رکھنے کے لیے جاری اصلاحی مدد فراہم کرتی ہے۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "ای ٹی ایل (ETL) اور ای ایل ٹی (ELT) میں کیا فرق ہے، اور آپ کون سا استعمال کرتے ہیں؟",
+          "answer": "ای ٹی ایل ڈیٹا کو لوڈ کرنے سے پہلے تبدیل کرتا ہے، جبکہ ای ایل ٹی خام ڈیٹا کو Snowflake جیسے جدید ویئر ہاؤس میں لوڈ کرتا ہے اور وہاں تبدیل کرتا ہے۔ ہم عام طور پر کلاؤڈ ماحول کے لیے ای ایل ٹی کی سفارش کرتے ہیں کیونکہ یہ جدید ڈیٹا ویئر ہاؤسز کی متوازی پروسیسنگ پاور کا فائدہ اٹھاتا ہے۔ تاہم، ہم وہ طریقہ منتخب کرتے ہیں جو آپ کے بنیادی ڈھانچے اور بجٹ کے مطابق ہو۔"
+        },
+        {
+          "question": "آپ ڈیٹا کی کوالٹی کو کیسے یقینی بناتے ہیں اور خراب ڈیٹا کو ویئر ہاؤس میں جانے سے کیسے روکتے ہیں؟",
+          "answer": "ہم Great Expectations یا dbt ٹیسٹ جیسے ٹولز کا استعمال کرتے ہوئے پائپ لائن کے ہر مرحلے پر خودکار ڈیٹا کوالٹی چیک نافذ کرتے ہیں۔ اگر کوئی ریکارڈ توثیق میں ناکام ہو جاتا ہے، تو اسے معائنے کے لیے ایک علیحدہ کیو (queue) میں بھیج دیا جاتا ہے جبکہ درست ڈیٹا پروسیس ہوتا رہتا ہے۔ یہ پائپ لائن کی خرابیوں کو روکتا ہے اور آپ کے ڈیش بورڈز کو درست رکھتا ہے۔"
+        },
+        {
+          "question": "کیا آپ کی پائپ لائنز بیچ پروسیسنگ کے ساتھ ساتھ ریئل ٹائم اسٹریمنگ ڈیٹا کو بھی سنبھال سکتی ہیں؟",
+          "answer": "جی ہاں، ہم ہائبرڈ آرکیٹیکچرز بناتے ہیں جو ریئل ٹائم اسٹریمنگ اور شیڈولڈ بیچ پروسیسنگ دونوں کو سپورٹ کرتے ہیں۔ ہم کم تاخیر والی اسٹریمنگ کے لیے Apache Kafka یا AWS Kinesis کا استعمال کرتے ہیں، اور ہائی تھرو پٹ بیچ ٹرانسفارمیشنز کے لیے Apache Spark کا استعمال کرتے ہیں۔ یہ یقینی بناتا ہے کہ آپ کے کاروبار کو تاریخی اور فوری ریئل ٹائم معلومات تک رسائی حاصل ہو۔"
+        },
+        {
+          "question": "آپ پائپ لائنز کو توڑے بغیر سورس ڈیٹا بیسز میں شےما کی تبدیلیوں کو کیسے سنبھالتے ہیں؟",
+          "answer": "ہم اپنی پائپ لائنز کو ڈائنامک شےما ایوولوشن کی صلاحیتوں کے ساتھ ڈیزائن کرتے ہیں جو سورس کی تبدیلیوں کو خودکار طور پر شناخت اور مطابقت پذیر کرتی ہیں۔ شےما رجسٹریوں اور لچکدار JSON پارسنگ کا استعمال کرتے ہوئے، ہم نئے کالمز شامل ہونے پر پائپ لائن کو کریش ہونے سے بچاتے ہیں۔ ہمارا سسٹم اہم تبدیلیوں پر ایڈمنسٹریٹرز کو الرٹ کرتا ہے جبکہ ڈیٹا کا بہاؤ جاری رہتا ہے۔"
+        },
+        {
+          "question": "آپ ای ٹی ایل ڈیپلائمنٹس کے لیے کن کلاؤڈ ڈیٹا ویئر ہاؤسز کو سپورٹ کرتے ہیں؟",
+          "answer": "ہمیں Snowflake، Google BigQuery، Amazon Redshift، اور Databricks پر پائپ لائنز ڈیپلائے کرنے کا وسیع تجربہ ہے۔ ہم آپ کے سوالات کے پیٹرن، ڈیٹا والیوم اور بجٹ کی بنیاد پر صحیح پلیٹ فارم کا انتخاب کرنے میں مدد کرتے ہیں۔ ہماری ٹیم آپ کے ماہانہ کلاؤڈ اخراجات کو کم سے کم کرنے کے لیے اسٹوریج اور کمپیوٹ کنفیگریشنز کو بہتر بناتی ہے۔"
+        },
+        {
+          "question": "آپ ای ٹی ایل کے عمل کے دوران ذاتی معلومات (PII) جیسے حساس ڈیٹا کو کیسے محفوظ کرتے ہیں؟",
+          "answer": "ہم اینڈ ٹو اینڈ انکرپشن، کالم لیول ماسکنگ، اور خودکار ڈیٹا گمنامی (anonymization) سمیت سخت سیکیورٹی اقدامات کو مربوط کرتے ہیں۔ حساس ذاتی معلومات ڈیٹا ویئر ہاؤس تک پہنچنے سے پہلے ہیش یا انکرپٹ کی جاتی ہیں، جس سے GDPR اور دیگر قوانین کی تعمیل یقینی ہوتی ہے۔ رسائی کے کنٹرول کو رول بیسڈ اجازتوں کے ذریعے سختی سے منظم کیا جاتا ہے۔"
+        },
+        {
+          "question": "پیچیدہ ڈیٹا ورک فلوز کو منظم کرنے کے لیے آپ کون سے آرکیسٹریشن ٹولز استعمال کرتے ہیں؟",
+          "answer": "ہم بنیادی طور پر Apache Airflow، Prefect، یا کلاؤڈ نیٹیو آرکیسٹریٹرز جیسے AWS Step Functions کا استعمال کرتے ہیں۔ یہ ٹولز ہمیں خودکار دوبارہ کوششوں، الرٹس اور انحصار کی ٹریکنگ کے ساتھ پیچیدہ ڈائریکٹڈ ایسائکلک گراف (DAGs) بنانے کی اجازت دیتے ہیں۔ یہ اس بات کی ضمانت دیتا ہے کہ تمام کام درست ترتیب میں انجام پائیں۔"
+        },
+        {
+          "question": "ایک کسٹم ای ٹی ایل پائپ لائن بنانے اور ڈیپلائے کرنے میں عام طور پر کتنا وقت لگتا ہے؟",
+          "answer": "ایک معیاری پروڈکشن کے لیے تیار ای ٹی ایل پائپ لائن کو ڈیزائن، بنانے، ٹیسٹ کرنے اور ڈیپلائے کرنے میں 4 سے 8 ہفتے لگتے ہیں۔ درست وقت کا انحصار ڈیٹا کے ذرائع کی تعداد، شےما کی پیچیدگی اور تبدیلی کی ضروریات پر ہوتا ہے۔ ہم پورے پروجیکٹ کے دوران ایک تفصیلی روڈ میپ اور مرحلہ وار ڈیلیوری کے سنگ میل فراہم کرتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Apache Spark",
+          "icon": "apache-spark"
+        },
+        {
+          "name": "Apache Airflow",
+          "icon": "apache-airflow"
+        },
+        {
+          "name": "dbt",
+          "icon": "dbt"
+        },
+        {
+          "name": "Snowflake",
+          "icon": "snowflake"
+        },
+        {
+          "name": "Apache Kafka",
+          "icon": "apache-kafka"
+        },
+        {
+          "name": "Google BigQuery",
+          "icon": "google-bigquery"
+        },
+        {
+          "name": "Databricks",
+          "icon": "databricks"
+        },
+        {
+          "name": "AWS Redshift",
+          "icon": "aws-redshift"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "خطوط أنابيب البيانات الضخمة وETL",
+    "shortDescription": "قم ببناء خطوط أنابيب بيانات عالية الإنتاجية ومقاومة للأخطاء تقوم باستخراج البيانات وتحويلها وتحميلها بسلاسة من مصادر متعددة إلى مستودعات سحابية قابلة للتوسع.",
+    "fullDescription": "استفد من القيمة الحقيقية لبيانات مؤسستك مع خدمات هندسة البيانات الضخمة وETL المخصصة من PakSoft. نحن نصمم وننفذ خطوط أنابيب بيانات موزعة وقوية تعالج تيرابايت من البيانات المهيكلة وغير المهيكلة بأقل زمن انتقال. من خلال الاستفادة من أدوات التنسيق الحديثة ومستودعات البيانات السحابية، نقضي على صوامع البيانات ونضمن التوافر العالي. يبني فريقنا بنيات مرنة تتعامل مع تطور المخططات، والتحقق الآلي من جودة البيانات، والبث المباشر في الوقت الفعلي. سواء كنت تقوم بنقل قواعد البيانات القديمة إلى Snowflake أو تحسين مجموعات Apache Spark، فإننا نقدم أصول بيانات نظيفة وجاهزة للإنتاج لتمكين أدوات ذكاء الأعمال ونماذج التعلم الآلي لديك.",
+    "features": [
+      "تطوير خطوط أنابيب ETL الموزعة",
+      "بنية مستودع البيانات السحابية",
+      "بث الأحداث في الوقت الفعلي",
+      "التحقق الآلي من جودة البيانات",
+      "إدارة تطور المخطط الديناميكي",
+      "تنسيق خطوط الأنابيب متعددة DAG",
+      "تنفيذ بحيرة البيانات (Lakehouse)",
+      "تكامل تقنية CDC (التقاط تغيير البيانات)"
+    ],
+    "benefits": [
+      "اتخاذ القرار بدون زمن انتقال",
+      "القضاء على صوامع البيانات",
+      "وقت تشغيل خط الأنابيب بنسبة 99.9%",
+      "تقليل تكاليف التخزين السحابي",
+      "أصول بيانات نظيفة وموثوقة",
+      "تكامل سلس مع أدوات ذكاء الأعمال"
+    ],
+    "metaTitle": "خدمات خطوط أنابيب البيانات الضخمة وETL | PakSoft",
+    "metaDescription": "قم ببناء خطوط أنابيب ETL ومستودعات بيانات سحابية قابلة للتوسع في الوقت الفعلي. حسن معالجة بياناتك مع PakSoft. اتصل بمهندسينا اليوم!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "اكتشاف البيانات وتدقيقها",
+          "description": "نقوم بتحليل مصادر البيانات الحالية والمخططات واختناقات المعالجة لديك. يساعدنا هذا التقييم في تصميم بنية مخصصة تلبي متطلبات الإنتاجية الخاصة بك تمامًا."
+        },
+        {
+          "step": 2,
+          "title": "تصميم البنية والمخطط",
+          "description": "يصمم فريقنا مخططات مستهدفة قابلة للتوسع ويختار مستودع البيانات السحابي الأمثل. نرسم مراحل الاستخراج والتحويل والتحميل لتحقيق أقصى قدر من الكفاءة والسرعة."
+        },
+        {
+          "step": 3,
+          "title": "تطوير خطوط الأنابيب",
+          "description": "نكتب كود ETL/ELT نظيفًا ومحسنًا باستخدام Apache Spark أو dbt أو SQL. تتضمن هذه الخطوة إعداد معالجة قوية للأخطاء وقواعد التحقق التلقائي من صحة البيانات."
+        },
+        {
+          "step": 4,
+          "title": "التنسيق والجدولة",
+          "description": "نقوم بتكوين Apache Airflow أو Prefect لإدارة تبعيات سير العمل المعقدة. يضمن ذلك تشغيل خطوط الأنابيب الخاصة بك بشكل موثوق وفقًا للجدول الزمني مع آليات إعادة المحاولة التلقائية."
+        },
+        {
+          "step": 5,
+          "title": "الاختبار والتحقق",
+          "description": "نقوم بتشغيل اختبارات تكامل شاملة بأحجام بيانات تحاكي بيئة الإنتاج للتحقق من الأداء. يتحقق مهندسونا من سلامة البيانات، وتوافق المخطط، ودقة عمليات التحويل."
+        },
+        {
+          "step": 6,
+          "title": "النشر والمراقبة",
+          "description": "ننشر خطوط الأنابيب في بيئتك السحابية مع مراقبة وتنبيهات مستمرة على مدار الساعة. يقدم فريقنا تحسينات مستمرة للحفاظ على انخفاض التكاليف التشغيلية للخدمات السحابية."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما الفرق بين ETL وELT، وأيهما تستخدمون؟",
+          "answer": "يقوم ETL بتحويل البيانات قبل تحميلها، بينما يقوم ELT بتحميل البيانات الخام في مستودع حديث مثل Snowflake وتحويلها هناك. نوصي عادةً بـ ELT للبيئات السحابية لأنه يستفيد من قوة المعالجة المتوازية الهائلة لمستودعات البيانات الحديثة، ومع ذلك نختار النهج الأنسب لبنيتك التحتية وميزانيتك."
+        },
+        {
+          "question": "كيف تضمنون جودة البيانات وتمنعون البيانات التالفة من دخول مستودعنا؟",
+          "answer": "ننفذ عمليات تحقق تلقائية من جودة البيانات في كل مرحلة من مراحل خط الأنابيب باستخدام أدوات مثل Great Expectations أو اختبارات dbt. إذا فشل سجل ما في التحقق، يتم توجيهه إلى قائمة انتظار الأخطاء لفحصه بينما تستمر البيانات السليمة في المعالجة، مما يمنع تعطل خطوط الأنابيب."
+        },
+        {
+          "question": "هل يمكن لخطوط الأنابيب الخاصة بكم معالجة بيانات البث المباشر بالإضافة إلى المعالجة الدفعية؟",
+          "answer": "نعم، نحن نبني بنيات هجينة تدعم كلاً من البث المباشر في الوقت الفعلي والمعالجة الدفعية المجدولة. نستخدم Apache Kafka أو AWS Kinesis للبث منخفض زمن الانتقال، مدمجًا مع Apache Spark للتحويلات الدفعية عالية الإنتاجية، مما يضمن وصول عملك إلى البيانات التاريخية والحديثة معًا."
+        },
+        {
+          "question": "كيف تتعاملون مع تغييرات المخطط في قواعد بيانات المصدر دون تعطل خطوط الأنابيب؟",
+          "answer": "نصمم خطوط الأنابيب لدينا بقدرات تطور المخطط الديناميكي التي تكتشف التغييرات في المصدر وتتكيف معها تلقائيًا. باستخدام سجلات المخططات وتحليل JSON المرن، نمنع تعطل النظام عند إضافة أعمدة جديدة، ونقوم بتنبيه المسؤولين بالتغييرات الكبيرة مع الحفاظ على استمرار تدفق البيانات."
+        },
+        {
+          "question": "ما هي مستودعات البيانات السحابية التي تدعمونها لنشر عمليات ETL؟",
+          "answer": "لدينا خبرة واسعة في نشر خطوط الأنابيب على Snowflake وGoogle BigQuery وAmazon Redshift وDatabricks. نساعدك في اختيار النظام الأساسي المناسب بناءً على أنماط الاستعلام وحجم البيانات والميزانية، ونقوم بتحسين تكوينات الحوسبة والتخزين لتقليل نفقاتك السحابية الشهرية."
+        },
+        {
+          "question": "كيف تقومون بتأمين البيانات الحساسة مثل معلومات الهوية الشخصية (PII) أثناء عملية ETL؟",
+          "answer": "نحن ندمج تدابير أمنية صارمة تشمل التشفير الشامل، وإخفاء البيانات على مستوى العمود، وإخفاء الهوية تلقائيًا. يتم تشفير معلومات الهوية الشخصية الحساسة أو إخفاؤها قبل وصولها إلى مستودع البيانات لضمان الامتثال للوائح GDPR، مع إدارة صارمة لصلاحيات الوصول."
+        },
+        {
+          "question": "ما هي أدوات التنسيق التي تستخدمونها لإدارة سير عمل البيانات المعقدة؟",
+          "answer": "نستخدم بشكل أساسي Apache Airflow أو Prefect أو أدوات التنسيق السحابية الأصلية مثل AWS Step Functions لإدارة تبعيات سير العمل. تتيح لنا هذه الأدوات بناء مخططات بيانية موجهة غير دائرية (DAGs) معقدة مع عمليات إعادة محاولة وتنبيهات تلقائية لضمان تنفيذ المهام بالترتيب الصحيح."
+        },
+        {
+          "question": "كم من الوقت يستغرق عادةً بناء ونشر خط أنابيب ETL مخصص؟",
+          "answer": "يستغرق خط أنابيب ETL القياسي الجاهز للإنتاج ما بين 4 إلى 8 أسابيع للتصميم والبناء والاختبار والنشر. يعتمد الجدول الزمني الدقيق على عدد مصادر البيانات وتعقيد المخطط ومتطلبات التحويل، ونحن نقدم خارطة طريق مفصلة ومعالم تسليم تدريجية طوال المشروع."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Apache Spark",
+          "icon": "apache-spark"
+        },
+        {
+          "name": "Apache Airflow",
+          "icon": "apache-airflow"
+        },
+        {
+          "name": "dbt",
+          "icon": "dbt"
+        },
+        {
+          "name": "Snowflake",
+          "icon": "snowflake"
+        },
+        {
+          "name": "Apache Kafka",
+          "icon": "apache-kafka"
+        },
+        {
+          "name": "Google BigQuery",
+          "icon": "google-bigquery"
+        },
+        {
+          "name": "Databricks",
+          "icon": "databricks"
+        },
+        {
+          "name": "AWS Redshift",
+          "icon": "aws-redshift"
+        }
+      ]
+    }
+  }
+}

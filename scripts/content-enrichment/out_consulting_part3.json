@@ -1,0 +1,1523 @@
+{
+  "startup-mvp-development": {
+    "en": {
+      "name": "Startup MVP Development",
+      "shortDescription": "Build and launch a high-quality Minimum Viable Product quickly to validate your startup concept. We use lean development frameworks to test core features with real users.",
+      "fullDescription": "Launching a successful startup requires validating your core business hypothesis before spending massive budgets on full-scale development. Our MVP development service focuses on identifying and building the essential features that solve your customers' primary pain points. We employ lean methodologies and modern, scalable tech stacks to ensure a fast, cost-effective launch. We help you define key metrics, design intuitive user experiences, and establish a robust feedback loop. By building a high-quality prototype, you can gather real-world user data, attract early adopters, and pitch to venture capital investors with confidence. We deliver a solid foundation that easily transitions into a production-ready application.",
+      "features": [
+        "Rapid Prototyping and Wireframing",
+        "Core Feature Identification Workshop",
+        "Scalable Database Schema Design",
+        "User Authentication and Authorization",
+        "Third-Party API Integration",
+        "Analytics and Event Tracking",
+        "Responsive Web Design Layouts",
+        "Continuous Integration Setup"
+      ],
+      "benefits": [
+        "Validate your startup idea with minimal financial risk",
+        "Accelerate time-to-market and launch within weeks",
+        "Gather actionable feedback from early real-world users",
+        "Reduce overall software development costs and waste",
+        "Create a polished product ready for investor pitches",
+        "Establish a scalable technical base for future features"
+      ],
+      "metaTitle": "Startup MVP Development Services | PakSoft",
+      "metaDescription": "Build your Minimum Viable Product quickly. We help startups validate ideas, design core features, and launch scalable MVPs. Contact us today.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Concept Discovery & Scope definition",
+            "description": "We analyze your business model to identify the absolute minimum set of features. This scoping session prevents feature creep and aligns expectations."
+          },
+          {
+            "step": 2,
+            "title": "UX/UI Prototyping & Wireframes",
+            "description": "Our design team creates interactive screens to map the user journey. This visualization helps confirm the product flow before writing code."
+          },
+          {
+            "step": 3,
+            "title": "Database & API Architecture",
+            "description": "We design a modular database schema and define secure API contracts. This robust setup ensures the platform scales smoothly after launch."
+          },
+          {
+            "step": 4,
+            "title": "Agile Iterative MVP Coding",
+            "description": "Our developers write clean code using React, Next.js, and modern backends. We work in two-week sprints to demo progress regularly."
+          },
+          {
+            "step": 5,
+            "title": "QA Testing & Deploy",
+            "description": "We run manual and automated tests to eliminate bugs and security vulnerabilities. Once verified, the product is deployed to secure cloud hosting."
+          },
+          {
+            "step": 6,
+            "title": "Launch & Feedback Loop",
+            "description": "We launch your MVP to early adopters and set up analytics tools. This data collection guides the prioritization of future product features."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is an MVP in software development?",
+            "answer": "A Minimum Viable Product is a version of a new product that allows a team to collect the maximum amount of validated learning about customers with the least effort. It focuses only on core features that solve the primary problem."
+          },
+          {
+            "question": "How long does it take to build an MVP?",
+            "answer": "Building an MVP typically takes between six to twelve weeks, depending on complexity. We focus on speed to help you validate your business idea as fast as possible."
+          },
+          {
+            "question": "How do you decide which features to include in the MVP?",
+            "answer": "We conduct collaborative discovery workshops with your team to rank features by business value and complexity. We prioritize features that address user pain points directly while deferring secondary requirements."
+          },
+          {
+            "question": "What technologies do you use for MVP development?",
+            "answer": "We use modern, scalable technologies like Next.js, React, Node.js, and PostgreSQL. These tools allow us to write code quickly while building a foundation that can scale."
+          },
+          {
+            "question": "Is the MVP code throwaway or reusable?",
+            "answer": "We build all MVPs using professional engineering standards and modular architecture. This ensures that the code is fully reusable and can be expanded into a full product."
+          },
+          {
+            "question": "Can you help us launch the MVP on App Stores?",
+            "answer": "Yes, we handle the entire deployment process for web and mobile platforms. We assist with App Store, Google Play, and cloud hosting configurations to ensure a smooth launch."
+          },
+          {
+            "question": "How much does MVP development cost?",
+            "answer": "The cost of an MVP varies based on the scope and technical requirements of the project. We provide detailed estimation and fixed-price options after our initial scoping workshops."
+          },
+          {
+            "question": "What happens after the MVP is launched?",
+            "answer": "After launch, we help you monitor user behavior through integrated analytics and collect direct feedback. We then use this data to plan and develop the next iterations."
+          }
+        ],
+        "technologies": [
+          { "name": "React", "icon": "react" },
+          { "name": "Next.js", "icon": "nextjs" },
+          { "name": "Node.js", "icon": "nodejs" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "Supabase", "icon": "supabase" },
+          { "name": "Vercel", "icon": "vercel" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Startup MVP Geliştirme",
+      "shortDescription": "Startup konseptinizi doğrulamak için yüksek kaliteli bir Minimum Uygulanabilir Ürün (MVP) hızla oluşturun ve başlatın. Temel özellikleri gerçek kullanıcılarla test etmek için yalın çerçeveler kullanıyoruz.",
+      "fullDescription": "Başarılı bir startup başlatmak, tam ölçekli geliştirmeye büyük bütçeler harcamadan önce temel iş hipotezinizi doğrulamayı gerektirir. MVP geliştirme hizmetimiz, müşterilerinizin temel sorunlarını çözen temel özelliklerin belirlenmesine ve oluşturulmasına odaklanır. Hızlı ve uygun maliyetli bir lansman sağlamak için yalın metodolojiler ve modern, ölçeklenebilir teknoloji yığınları kullanıyoruz. Temel metrikleri tanımlamanıza, sezgisel kullanıcı deneyimleri tasarlamanıza ve sağlam bir geri bildirim döngüsü oluşturmanıza yardımcı oluyoruz. Yüksek kaliteli bir prototip oluşturarak gerçek kullanıcı verileri toplayabilir, erken benimseyenleri çekebilir ve yatırımcılara güvenle sunum yapabilirsiniz.",
+      "features": [
+        "Hızlı Prototipleme ve Tel Kafes Tasarımı",
+        "Temel Özellik Belirleme Çalıştayı",
+        "Ölçeklenebilir Veritabanı Şeması Tasarımı",
+        "Kullanıcı Kimlik Doğrulama ve Yetkilendirme",
+        "Üçüncü Taraf API Entegrasyonu",
+        "Analitik ve Olay İzleme Kurulumu",
+        "Duyarlı Web Tasarım Düzenleri",
+        "Sürekli Entegrasyon Kurulumu"
+      ],
+      "benefits": [
+        "Startup fikrinizi minimum finansal riskle doğrulayın",
+        "Pazara sunma süresini hızlandırın ve haftalar içinde başlayın",
+        "Erken gerçek kullanıcılardan uygulanabilir geri bildirimler alın",
+        "Genel yazılım geliştirme maliyetlerini ve israfını azaltın",
+        "Yatırımcı sunumları için cilalanmış bir ürün oluşturun",
+        "Gelecekteki özellikler için ölçeklenebilir teknik temel kurun"
+      ],
+      "metaTitle": "Startup MVP Geliştirme Hizmetleri | PakSoft",
+      "metaDescription": "Minimum Uygulanabilir Ürününüzü hızla oluşturun. Startupların fikirleri doğrulamasına ve ölçeklenebilir MVP'ler başlatmasına yardımcı oluyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Konsept Keşfi ve Kapsam Belirleme",
+            "description": "Mutlak minimum özellik setini belirlemek için iş modelinizi analiz ediyoruz. Bu kapsam belirleme oturumu özellik şişmesini önler ve beklentileri uyumlu hale getirir."
+          },
+          {
+            "step": 2,
+            "title": "UX/UI Prototipleme ve Tel Kafesler",
+            "description": "Tasarım ekibimiz kullanıcı yolculuğunu haritalamak için etkileşimli ekranlar oluşturur. Bu görselleştirme kod yazmadan önce ürün akışını doğrulamaya yardımcı olur."
+          },
+          {
+            "step": 3,
+            "title": "Veritabanı ve API Mimarisi",
+            "description": "Modüler bir veritabanı şeması tasarlıyor ve güvenli API sözleşmeleri tanımlıyoruz. Bu sağlam kurulum platformun lansmandan sonra sorunsuz ölçeklenmesini sağlar."
+          },
+          {
+            "step": 4,
+            "title": "Çevik Yinelemeli MVP Kodlaması",
+            "description": "Geliştiricilerimiz React, Next.js ve modern arka uçlar kullanarak temiz kod yazarlar. İlerlemeyi düzenli olarak göstermek için iki haftalık sprintler halinde çalışıyoruz."
+          },
+          {
+            "step": 5,
+            "title": "QA Testi ve Dağıtım",
+            "description": "Hataları ve güvenlik açıklarını ortadan kaldırmak için manuel ve otomatik testler çalıştırıyoruz. Doğrulandıktan sonra ürün güvenli bulut barındırma üzerinde dağıtılır."
+          },
+          {
+            "step": 6,
+            "title": "Lansman ve Geri Bildirim Döngüsü",
+            "description": "MVP'nizi erken benimseyenlere sunuyor ve analitik araçları kuruyoruz. Bu veri toplama gelecekteki ürün özelliklerinin önceliklendirilmesine rehberlik eder."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Yazılım geliştirmede MVP nedir?",
+            "answer": "Minimum Uygulanabilir Ürün, bir ekibin en az çabayla müşteriler hakkında maksimum miktarda doğrulanmış öğrenme toplamasını sağlayan yeni bir ürün sürümüdür. Yalnızca temel sorunu çözen temel özelliklere odaklanır."
+          },
+          {
+            "question": "Bir MVP oluşturmak ne kadar sürer?",
+            "answer": "Bir MVP oluşturmak, karmaşıklığa bağlı olarak genellikle altı ila on iki hafta sürer. İş fikrinizi mümkün olan en hızlı şekilde doğrulamanıza yardımcı olmak için hıza odaklanıyoruz."
+          },
+          {
+            "question": "MVP'ye hangi özelliklerin dahil edileceğine nasıl karar veriyorsunuz?",
+            "answer": "Özellikleri iş değerine ve karmaşıklığa göre sıralamak için ekibinizle ortak keşif çalıştayları düzenliyoruz. İkincil gereksinimleri ertelerken doğrudan kullanıcı sorunlarını çözen özelliklere öncelik veriyoruz."
+          },
+          {
+            "question": "MVP geliştirmek için hangi teknolojileri kullanıyorsunuz?",
+            "answer": "Next.js, React, Node.js ve PostgreSQL gibi modern ve ölçeklenebilir teknolojiler kullanıyoruz. Bu araçlar, ölçeklenebilir bir temel oluştururken hızlı kod yazmamızı sağlar."
+          },
+          {
+            "question": "MVP kodu atılacak mı yoksa yeniden kullanılabilir mi?",
+            "answer": "Tüm MVP'leri profesyonel mühendislik standartları ve modüler mimari kullanarak inşa ediyoruz. Bu, kodun tamamen yeniden kullanılabilir olmasını ve tam bir ürüne genişletilebilmesini sağlar."
+          },
+          {
+            "question": "MVP'yi Uygulama Mağazalarında yayınlamamıza yardımcı olabilir misiniz?",
+            "answer": "Evet, web ve mobil platformlar için tüm dağıtım sürecini yönetiyoruz. Sorunsuz bir lansman sağlamak için App Store, Google Play ve bulut barındırma yapılandırmalarına yardımcı oluyoruz."
+          },
+          {
+            "question": "MVP geliştirme maliyeti nedir?",
+            "answer": "Bir MVP'nin maliyeti projenin kapsamına ve teknik gereksinimlerine göre değişir. İlk kapsam belirleme çalıştaylarımızdan sonra detaylı tahmin ve sabit fiyat seçenekleri sunuyoruz."
+          },
+          {
+            "question": "MVP lansmanından sonra ne olur?",
+            "answer": "Lansmandan sonra, entegre analitik araçları aracılığıyla kullanıcı davranışını izlemenize ve doğrudan geri bildirim toplamanıza yardımcı oluyoruz. Ardından bu verileri sonraki sürümleri planlemek için kullanırız."
+          }
+        ],
+        "technologies": [
+          { "name": "React", "icon": "react" },
+          { "name": "Next.js", "icon": "nextjs" },
+          { "name": "Node.js", "icon": "nodejs" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "Supabase", "icon": "supabase" },
+          { "name": "Vercel", "icon": "vercel" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Startup MVP-Entwicklung",
+      "shortDescription": "Erstellen und starten Sie schnell ein hochwertiges Minimum Viable Product, um Ihr Startup-Konzept zu validieren. Wir nutzen Lean-Frameworks, um Kernfunktionen mit echten Nutzern zu testen.",
+      "fullDescription": "Der Start eines erfolgreichen Startups erfordert die Validierung Ihrer Kernhypothese, bevor Sie massive Budgets für eine umfassende Entwicklung ausgeben. Unser MVP-Entwicklungsservice konzentriert sich auf die Identifizierung und Erstellung der wesentlichen Funktionen, die die primären Probleme Ihrer Kunden lösen. Wir setzen auf Lean-Methoden und moderne, skalierbare Technologie-Stacks, um einen schnellen und kostengünstigen Start zu gewährleisten. Wir helfen Ihnen, wichtige Kennzahlen zu definieren, intuitive Benutzeroberflächen zu entwerfen und eine robuste Feedbackschleife einzurichten. Durch den Aufbau eines hochwertigen Prototyps können Sie reale Nutzerdaten sammeln, Early Adopters gewinnen und Investoren überzeugen.",
+      "features": [
+        "Schnelle Prototypenerstellung und Wireframing",
+        "Workshop zur Identifizierung von Kernfunktionen",
+        "Skalierbares Datenbank-Schema-Design",
+        "Benutzerauthentifizierung und Autorisierung",
+        "Integration von APIs von Drittanbietern",
+        "Einrichtung von Analysen und Event-Tracking",
+        "Responsive Webdesign-Layouts",
+        "Setup für kontinuierliche Integration (CI)"
+      ],
+      "benefits": [
+        "Validieren Sie Ihre Startup-Idee mit minimalem finanziellen Risiko",
+        "Beschleunigen Sie die Markteinführung auf wenige Wochen",
+        "Sammeln Sie direktes Feedback von ersten echten Nutzern",
+        "Reduzieren Sie die Gesamtkosten der Softwareentwicklung",
+        "Erstellen Sie ein überzeugendes Produkt für Investoren-Pitches",
+        "Etablieren Sie eine skalierbare technische Basis für die Zukunft"
+      ],
+      "metaTitle": "Startup MVP-Entwicklung | PakSoft",
+      "metaDescription": "Bauen Sie Ihr Minimum Viable Product schnell auf. Wir helfen Startups, Ideen zu validieren, Kernfunktionen zu entwerfen und skalierbare MVPs zu starten.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Konzept-Discovery & Umfangskonfiguration",
+            "description": "Wir analysieren Ihr Geschäftsmodell, um die absolut minimalen Kernfunktionen zu identifizieren. Dieser Prozess verhindert ein Ausufern des Projekts und gleicht Erwartungen ab."
+          },
+          {
+            "step": 2,
+            "title": "UX/UI-Prototyping & Wireframes",
+            "description": "Unser Designteam erstellt interaktive Screens, um die User Journey abzubilden. Diese Visualisierung hilft, den Produktfluss vor der Programmierung zu bestätigen."
+          },
+          {
+            "step": 3,
+            "title": "Datenbank- & API-Architektur",
+            "description": "Wir entwerfen ein modulares Datenbankschema und definieren sichere API-Schnittstellen. Dieses robuste Setup stellt sicher, dass die Plattform nach dem Start reibungslos skaliert."
+          },
+          {
+            "step": 4,
+            "title": "Agile iterative MVP-Codierung",
+            "description": "Unsere Entwickler schreiben sauberen Code unter Verwendung von React, Next.js und modernen Backends. Wir arbeiten in zweiwöchigen Sprints, um regelmäßige Fortschritte zu demonstrieren."
+          },
+          {
+            "step": 5,
+            "title": "Qualitätssicherung & Deployment",
+            "description": "Wir führen manuelle und automatisierte Tests durch, um Fehler und Sicherheitsrisiken zu minimieren. Nach erfolgreicher Verifizierung wird das Produkt auf sicheren Cloud-Servern bereitgestellt."
+          },
+          {
+            "step": 6,
+            "title": "Launch & Feedbackschleife",
+            "description": "Wir stellen Ihr MVP den ersten Nutzern vor und integrieren Analysetools. Diese Datensammlung leitet die Priorisierung zukünftiger Produktfunktionen an."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Was ist ein MVP in der Softwareentwicklung?",
+            "answer": "Ein Minimum Viable Product ist die minimal spielfähige Version eines neuen Produkts, die es einem Team ermöglicht, mit geringstem Aufwand das meiste Feedback über Kunden zu sammeln. Es konzentriert sich auf Kernfunktionen."
+          },
+          {
+            "question": "Wie lange dauert es, ein MVP zu bauen?",
+            "answer": "Die Entwicklung eines MVP dauert in der Regel zwischen sechs und zwölf Wochen, je nach Komplexität. Wir konzentrieren uns auf Geschwindigkeit, damit Sie Ihre Idee so schnell wie möglich testen können."
+          },
+          {
+            "question": "Wie entscheiden Sie, welche Funktionen in das MVP aufgenommen werden?",
+            "answer": "Wir führen gemeinsame Discovery-Workshops durch, um Funktionen nach Geschäftswert und Komplexität zu bewerten. Wir priorisieren Funktionen, die Benutzerprobleme direkt lösen, während sekundäre Anforderungen zurückgestellt werden."
+          },
+          {
+            "question": "Welche Technologien nutzen Sie für die MVP-Entwicklung?",
+            "answer": "Wir nutzen moderne, skalierbare Tools wie Next.js, React, Node.js und PostgreSQL. Diese Technologien ermöglichen eine schnelle Entwicklung bei gleichzeitig hoher Codequalität und Zukunftssicherheit."
+          },
+          {
+            "question": "Ist der MVP-Code wegwerfbar oder wiederverwendbar?",
+            "answer": "Wir bauen alle MVPs nach professionellen Standards und mit einer modularen Architektur. Das stellt sicher, dass der Code vollständig wiederverwendbar ist und problemlos erweitert werden kann."
+          },
+          {
+            "question": "Helfen Sie uns beim Launch des MVP in den App Stores?",
+            "answer": "Ja, wir übernehmen das gesamte Deployment für Web- und Mobilplattformen. Wir unterstützen Sie bei der Registrierung und Konfiguration im App Store, Google Play Store und bei Cloud-Hostern."
+          },
+          {
+            "question": "Wie viel kostet die Entwicklung eines MVP?",
+            "answer": "Die Kosten variieren je nach Umfang und den technischen Anforderungen des Projekts. Nach unseren ersten Scoping-Workshops erstellen wir eine detaillierte Aufwandsschätzung und bieten Festpreisoptionen an."
+          },
+          {
+            "question": "Was passiert nach dem Launch des MVP?",
+            "answer": "Nach dem Launch helfen wir Ihnen, das Nutzerverhalten über integrierte Analisetools zu überwachen und Feedback zu sammeln. Diese Daten nutzen wir, um die nächsten Entwicklungsschritte zu planen."
+          }
+        ],
+        "technologies": [
+          { "name": "React", "icon": "react" },
+          { "name": "Next.js", "icon": "nextjs" },
+          { "name": "Node.js", "icon": "nodejs" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "Supabase", "icon": "supabase" },
+          { "name": "Vercel", "icon": "vercel" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "اسٹارٹ اپ MVP ڈویلپمنٹ",
+      "shortDescription": "اپنے اسٹارٹ اپ کے آئیڈیا کی تصدیق کے لیے ایک اعلیٰ معیار کا کم از کم قابلِ عمل پروڈکٹ (MVP) تیزی سے بنائیں اور لانچ کریں۔ ہم صارفین کے ساتھ ٹیسٹ کرنے کے لیے لین فریم ورکس کا استعمال کرتے ہیں۔",
+      "fullDescription": "کسی بھی کامیاب اسٹارٹ اپ کو شروع کرنے کے لیے ضروری ہے کہ آپ بڑے بجٹ خرچ کرنے سے پہلے اپنے کاروباری آئیڈیا کی تصدیق کریں۔ ہماری MVP ڈویلپمنٹ سروس ایسے بنیادی فیچرز کی شناخت اور تیاری پر توجہ مرکوز کرتی ہے جو آپ کے صارفین کے بنیادی مسائل کو حل کرتے ہیں۔ ہم تیز رفتار اور کم لاگت لانچ کو یقینی بنانے کے لیے لین طریقہ کار اور جدید، اسکیل ایبل ٹیکنالوجیز استعمال کرتے ہیں۔ ہم میٹرکس متعین کرنے، بہترین یوزر ایکسپیرینس ڈیزائن کرنے اور فیڈ بیک کا نظام قائم کرنے میں آپ کی مدد کرتے ہیں۔ ایک بہترین پروٹو ٹائپ بنا کر آپ حقیقی صارفین کا ڈیٹا حاصل کر سکتے ہیں اور سرمایہ کاروں کو اعتماد کے ساتھ پچ کر سکتے ہیں۔",
+      "features": [
+        "تیز رفتار پروٹو ٹائپنگ اور وائر فریمز",
+        "بنیادی فیچرز کی شناخت کا ورک شاپ",
+        "اسکیل ایبل ڈیٹا بیس اسکیمہ ڈیزائن",
+        "یوزر رجسٹریشن اور لاگ ان سیکیورٹی",
+        "تھرڈ پارٹی APIs کی انٹیگریشنز",
+        "اینالیٹکس اور ٹریکنگ کا سیٹ اپ",
+        "ہر اسکرین کے لیے موزوں ویب ڈیزائنز",
+        "کنٹینیوس انٹیگریشن کا محفوظ سیٹ اپ"
+      ],
+      "benefits": [
+        "کم سے کم مالیاتی خطرے کے ساتھ کاروباری آئیڈیا کی تصدیق کریں",
+        "پروڈکٹ کو چند ہفتوں کے اندر مارکیٹ میں تیزی سے لانچ کریں",
+        "شروع کے حقیقی صارفین سے مفید فیڈ بیک حاصل کریں",
+        "سافٹ ویئر ڈویلپمنٹ کے مجموعی اخراجات اور نقصان کو کم کریں",
+        "سرمایہ کاروں کو پچ کرنے کے لیے ایک بہترین پروڈکٹ تیار کریں",
+        "مستقبل کے فیچرز کے لیے ایک بہترین ٹیکنیکل بنیاد بنائیں"
+      ],
+      "metaTitle": "اسٹارٹ اپ MVP ڈویلپمنٹ سروسز | PakSoft",
+      "metaDescription": "اپنا کم از کم قابلِ عمل پروڈکٹ تیزی سے تیار کریں۔ ہم اسٹارٹ اپس کو آئیڈیاز کی تصدیق کرنے اور اسکیل ایبل MVPs لانچ کرنے میں مدد دیتے ہیں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تصور کی دریافت اور اسکوپنگ",
+            "description": "ہم اہم ترین فیچرز کی شناخت کے لیے آپ کے بزنس ماڈل کا تجزیہ کرتے ہیں۔ یہ سیشن غیر ضروری فیچرز کو روکتا ہے اور توقعات کو واضح کرتا ہے۔"
+          },
+          {
+            "step": 2,
+            "title": "پروٹو ٹائپ اور وائر فریمز",
+            "description": "ہماری ڈیزائن ٹیم یوزر جرنی کو سمجھنے کے لیے انٹرایکٹو اسکرینز بناتی ہے۔ یہ خاکہ کوڈ لکھنے سے پہلے پروڈکٹ کے فلو کی تصدیق کرتا ہے۔"
+          },
+          {
+            "step": 3,
+            "title": "ڈیٹا بیس اور API آرکیٹیکچر",
+            "description": "ہم ایک ماڈیولر ڈیٹا بیس اسکیمہ ڈیزائن کرتے ہیں اور سیکیور API معاہدے بناتے ہیں۔ یہ سیٹ اپ لانچ کے بعد سسٹمز کی آسانی سے اسکیلنگ کو یقینی بناتا ہے۔"
+          },
+          {
+            "step": 4,
+            "title": "ایجائل طریقے سے MVP کوڈنگ",
+            "description": "ہمارے ڈویلپرز React، Next.js اور جدید ٹولز کا استعمال کرتے ہوئے کلین کوڈ لکھتے ہیں۔ ہم باقاعدگی سے پروڈکٹ کا ڈیمو دکھانے کے لیے کام کرتے ہیں۔"
+          },
+          {
+            "step": 5,
+            "title": "کوالٹی اشورنس اور کلاؤڈ ڈپلائیمنٹ",
+            "description": "ہم کیڑے اور سیکیورٹی کے مسائل ختم کرنے کے لیے ٹیسٹ چلاتے ہیں۔ تصدیق کے بعد پروڈکٹ کو محفوظ کلاؤڈ ہوسٹنگ پر اپ لوڈ کیا جاتا ہے۔"
+          },
+          {
+            "step": 6,
+            "title": "لانچ اور فیڈ بیک مانیٹرنگ",
+            "description": "ہم ابتدائی صارفین کے لیے MVP لانچ کرتے ہیں اور اینالیٹکس ٹولز سیٹ اپ کرتے ہیں۔ یہ ڈیٹا مستقبل کے فیچرز کی پلاننگ میں مدد دیتا ہے۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "سافٹ ویئر ڈویلپمنٹ میں MVP کیا ہے؟",
+            "answer": "کم از کم قابلِ عمل پروڈکٹ (Minimum Viable Product) نئی پروڈکٹ کا وہ بنیادی ورژن ہے جو کم سے کم محنت کے ساتھ صارفین کے بارے میں زیادہ سے زیادہ معلومات حاصل کرنے میں مدد دیتا ہے۔ یہ صرف بنیادی مسائل کو حل کرتا ہے۔"
+          },
+          {
+            "question": "ایک MVP بنانے میں کتنا وقت لگتا ہے؟",
+            "answer": "ایک MVP بنانے میں عام طور پر چھ سے بارہ ہفتے لگتے ہیں، جو اس کی پیچیدگی پر منحصر ہے۔ ہمارا مقصد آپ کے بزنس آئیڈیا کی جلد از جلد تصدیق کرنا ہوتا ہے۔"
+          },
+          {
+            "question": "آپ MVP میں شامل کرنے کے لیے فیچرز کا فیصلہ کیسے کرتے ہیں؟",
+            "answer": "ہم آپ کی ٹیم کے ساتھ ایک ورک شاپ کرتے ہیں جس میں کاروباری اہمیت کے لحاظ سے فیچرز کی درجہ بندی کی جاتی ہے۔ ہم ان فیچرز کو ترجیح دیتے ہیں جو صارفین کے بنیادی مسائل حل کریں۔"
+          },
+          {
+            "question": "MVP کی تیاری کے لیے آپ کون سی ٹیکنالوجیز استعمال کرتے ہیں؟",
+            "answer": "ہم Next.js، React، Node.js اور PostgreSQL جیسی جدید اور اسکیل ایبل ٹیکنالوجیز استعمال کرتے ہیں۔ یہ ٹولز تیزی سے کوڈ لکھنے اور ایک مضبوط بنیاد بنانے میں مدد دیتے ہیں۔"
+          },
+          {
+            "question": "کیا MVP کا کوڈ بعد میں دوبارہ استعمال ہو سکتا ہے؟",
+            "answer": "جی بالکل، ہم تمام MVPs کو اعلیٰ انجینئرنگ معیارات اور ماڈیولر آرکیٹیکچر کے مطابق بناتے ہیں۔ اس سے کوڈ دوبارہ استعمال کے قابل رہتا ہے اور اسے آسانی سے بڑھایا جا سکتا ہے۔"
+          },
+          {
+            "question": "کیا آپ موبائل اسٹورز پر ایپ لانچ کرنے میں مدد کرتے ہیں؟",
+            "answer": "جی ہاں، ہم ویب اور موبائل دونوں پلیٹ فارمز کے لیے ڈپلائیمنٹ کو سنبھالتے ہیں۔ ہم App Store og Google Play Store پر ایپ اپ لوڈ کرنے کے تمام مراحل میں مدد کرتے ہیں۔"
+          },
+          {
+            "question": "MVP بنانے کے اخراجات کتنے ہوتے ہیں؟",
+            "answer": "اسٹارٹ اپ MVP کی لاگت پروجیکٹ کے اسکوپ اور ٹیکنیکل ضروریات کے مطابق مختلف ہوتی ہے۔ ہم ابتدائی سیشنز کے بعد تفصیلی بجٹ اور فکسڈ پرائس کے اختیارات فراہم کرتے ہیں۔"
+          },
+          {
+            "question": "لانچ کے بعد کا اگلا مرحلہ کیا ہوتا ہے؟",
+            "answer": "لانچ کے بعد، ہم اینالیٹکس کے ذریعے صارفین کے رویے کو مانیٹر کرتے ہیں اور فیڈ بیک جمع کرتے ہیں۔ اس ڈیٹا کی مدد سے ہم اگلے ورژن کے فیچرز کی پلاننگ کرتے ہیں۔"
+          }
+        ],
+        "technologies": [
+          { "name": "React", "icon": "react" },
+          { "name": "Next.js", "icon": "nextjs" },
+          { "name": "Node.js", "icon": "nodejs" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "Supabase", "icon": "supabase" },
+          { "name": "Vercel", "icon": "vercel" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "تطوير المنتج الأدنى الجاهز للاستطلاق للمشاريع الناشئة",
+      "shortDescription": "قم ببناء وإطلاق منتج أدنى قابل للتطبيق (MVP) عالي الجودة بسرعة للتحقق من فكرة مشروعك الناشئ. نستخدم أطر عمل مرنة لاختبار الميزات الأساسية مع مستخدمين حقيقيين.",
+      "fullDescription": "يتطلب إطلاق مشروع ناشئ ناجح التحقق من فرضيات عملك الأساسية قبل إنفاق ميزانيات ضخمة على التطوير الكامل. تركز خدمة تطوير MVP لدينا على تحديد وبناء الميزات الأساسية التي تحل المشاكل الرئيسية لعملائك. نحن نستخدم منهجيات مرنة وتقنيات حديثة وقابلة للتوسع لضمان إطلاق سريع وفعال من حيث التكلفة. نساعدك في تحديد المقاييس الرئيسية، وتصميم تجارب مستخدم سهلة، وإنشاء حلقة ردود فعل قوية. من خلال بناء نموذج أولي عالي الجودة، يمكنك جمع بيانات حقيقية من المستخدمين وجذب المستثمرين بثقة. نحن نقدم أساساً تقنياً متيناً يسهل توسيعه لاحقاً.",
+      "features": [
+        "نماذج أولية وتخطيط سريع للواجهات",
+        "ورشة عمل لتحديد الميزات الأساسية للمنتج",
+        "تصميم قواعد بيانات مرنة وقابلة للتوسع",
+        "نظام توثيق وحماية حسابات المستخدمين",
+        "ربط وتكامل واجهات التطبيقات الخارجية APIs",
+        "إعداد أدوات التحليل وتتبع الأحداث بدقة",
+        "تصاميم صفحات ويب متجاوبة ومتوافقة تماماً",
+        "إعداد بيئة التكامل والانتشار المستمر للمشروع"
+      ],
+      "benefits": [
+        "التحقق من فكرة مشروعك الناشئ بأقل مخاطر مالية",
+        "تسريع وقت طرح المنتج في السوق خلال أسابيع قليلة",
+        "جمع تعليقات مفيدة من المستخدمين الحقيقيين الأوائل",
+        "تقليل التكاليف الإجمالية لتطوير البرمجيات وتجنب الهدر",
+        "إنشاء منتج مصقول وجاهز للعرض على المستثمرين",
+        "تأسيس قاعدة تقنية قابلة للتوسع للميزات المستقبلية"
+      ],
+      "metaTitle": "خدمات تطوير MVP للمشاريع الناشئة | PakSoft",
+      "metaDescription": "ابنِ منتجك الأدنى القابل للتطبيق بسرعة. نساعد الشركات الناشئة في التحقق من الأفكار، وتصميم الميزات الأساسية، وإطلاق نماذج MVP قابلة للتوسع.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "استكشاف المفهوم وتحديد النطاق",
+            "description": "نحسن نموذج عملك لتحديد الحد الأدنى المطلق من الميزات الأساسية. تمنع هذه الجلسة تضخم الميزات وتوحد التوقعات بوضوح."
+          },
+          {
+            "step": 2,
+            "title": "تخطيط الواجهات وتصميم تجربة المستخدم",
+            "description": "يصمم فريقنا شاشات تفاعلية لتخطيط رحلة المستخدم بدقة. يساعد هذا التصور في تأكيد تدفق المنتج قبل كتابة الكود."
+          },
+          {
+            "step": 3,
+            "title": "بناء قواعد البيانات وهندسة APIs",
+            "description": "نصمم نموذج قاعدة بيانات مرن ونحدد واجهات برمجية آمنة. يضمن هذا الإعداد القوي توسع المنصة بسلاسة بعد الإطلاق."
+          },
+          {
+            "step": 4,
+            "title": "تطوير MVP بأسلوب مرن وتكراري",
+            "description": "يكتب مطورونا كوداً برمجياً نظيفاً باستخدام React وNext.js وقواعد بيانات حديثة. نعمل في دورات مدتها أسبوعان لعرض التقدم بانتظام."
+          },
+          {
+            "step": 5,
+            "title": "اختبار الجودة والانتشار السحابي",
+            "description": "نجرى اختبارات يدوية وتلقائية للتخلص من الأخطاء والثغرات الأمنية. بمجرد التحقق، يتم نشر المنتج على خوادم سحابية آمنة."
+          },
+          {
+            "step": 6,
+            "title": "الإطلاق وتتبع تعليقات المستخدمين",
+            "description": "نطلق منتج MVP للمستخدمين الأوائل ونقوم بإعداد أدوات التحليلات. يساعد جمع البيانات هذا في ترتيب أولويات الميزات القادمة."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما هو المنتج الأدنى القابل للتطبيق (MVP) في تطوير البرمجيات؟",
+            "answer": "المنتج الأدنى القابل للتطبيق هو نسخة من منتج جديد تتيح للفريق جمع أكبر قدر من المعلومات المؤكدة عن العملاء بأقل جهد ممكن. يركز فقط على الميزات الأساسية التي تحل المشكلة الرئيسية."
+          },
+          {
+            "question": "كم من الوقت يستغرق بناء منتج MVP؟",
+            "answer": "يقدر بناء منتج MVP عادةً ما بين ستة إلى اثني عشر أسبوعاً، اعتماداً على التعقيد. نحن نركز على السرعة لمساعدتك في التحقق من فكرة عملك بأسرع وقت ممكن."
+          },
+          {
+            "question": "كيف تقررون أي الميزات يجب تضمينها في منتج MVP؟",
+            "answer": "نعقد ورش عمل مشتركة مع فريقك لترتيب الميزات حسب القيمة التجارية والتعقيد الفني. نعطي الأولوية للميزات التي تحل مشاكل المستخدمين مباشرة ونؤجل المتطلبات الثانوية."
+          },
+          {
+            "question": "ما هي التقنيات التي تستخدمونها لتطوير MVP؟",
+            "answer": "نستخدم تقنيات حديثة وقابلة للتوسع مثل Next.js وReact وNode.js وPostgreSQL. تتيح لنا هذه الأدوات كتابة الكود بسرعة مع بناء أساس قوي يمكنه النمو مستقبلاً."
+          },
+          {
+            "question": "هل كود MVP مؤقت أم يمكن إعادة استخدامه؟",
+            "answer": "نبني جميع منتجات MVP باستخدام معايير هندسية احترافية وهندسة برمجية مرنة. يضمن ذلك أن يكون الكود قابلاً لإعادة الاستخدام بالكامل ومستعداً للتوسيع إلى منتج كامل."
+          },
+          {
+            "question": "هل تساعدون في إطلاق منتج MVP على متاجر التطبيقات؟",
+            "answer": "نعم، نحن نتولى عملية النشر الكاملة للمنصات الإلكترونية وتطبيقات الهواتف. نساعد في إعداد حسابات App Store وGoogle Play والتهيئة السحابية لضمان إطلاق ناجح."
+          },
+          {
+            "question": "كم تكلفة تطوير منتج MVP؟",
+            "answer": "تختلف تكلفة منتج MVP بناءً على نطاق المشروع والمتطلبات التقنية الخاصة به. نقدم تقديرات مفصلة وخيارات أسعار ثابتة بعد ورش عمل تحديد النطاق الأولية."
+          },
+          {
+            "question": "ماذا يحدث بعد إطلاق منتج MVP؟",
+            "answer": "بعد الإطلاق، نساعدك في مراقبة سلوك المستخدمين من خلال التحليلات المتكاملة وجمع التعليقات المباشرة. نستخدم هذه البيانات لاحقاً لتخطيط وتطوير التكرارات والتحسينات القادمة."
+          }
+        ],
+        "technologies": [
+          { "name": "React", "icon": "react" },
+          { "name": "Next.js", "icon": "nextjs" },
+          { "name": "Node.js", "icon": "nodejs" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "Supabase", "icon": "supabase" },
+          { "name": "Vercel", "icon": "vercel" }
+        ]
+      }
+    }
+  },
+  "tech-stack-assessment": {
+    "en": {
+      "name": "Tech Stack Assessment",
+      "shortDescription": "Evaluate your technology stack for performance, security, and scalability. We deliver actionable recommendations to eliminate technical debt and optimize cloud infrastructure costs.",
+      "fullDescription": "Outdated software dependencies, poor database design, and sub-optimal cloud hosting choices can quietly drain your company's budgets and stall product development. Our comprehensive tech stack assessment evaluates your current architecture, code quality, deployment pipelines, and database configurations. We identify critical bottlenecks, security vulnerabilities, and licensing compliance issues. Our senior engineers deliver a detailed technical report that outlines immediate performance optimizations, long-term migration strategies, and cloud cost reduction opportunities. Whether you are prepping for an investor due diligence audit, scaling for high traffic, or refactoring legacy applications, we provide the technical clarity you need to succeed.",
+      "features": [
+        "Comprehensive Source Code Quality Auditing",
+        "Database Query Performance Analysis",
+        "Cloud Architecture Cost Optimization Reviews",
+        "Dependency Security Vulnerability Scanning",
+        "API Security and Performance Profiling",
+        "CI/CD Pipeline Efficiency Audits",
+        "Software License Compliance Audits",
+        "Technical Due Diligence Blueprinting"
+      ],
+      "benefits": [
+        "Identify and fix hidden security vulnerabilities instantly",
+        "Reduce cloud hosting costs by removing redundant resources",
+        "Improve application speed and response time bottlenecks",
+        "Eliminate technical debt to accelerate development speed",
+        "Prepare technical assets for investor due diligence reviews",
+        "Establish clear scalability paths for user growth"
+      ],
+      "metaTitle": "Tech Stack Assessment & Code Audit Services | PakSoft",
+      "metaDescription": "Get a comprehensive technology stack assessment. We audit source code, analyze databases, and optimize cloud costs to improve performance. Contact us.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Access Provisioning & Scoping",
+            "description": "We obtain secure, read-only access to your code repositories, cloud environments, and database monitoring systems. This initial setup defines the audit boundaries clearly."
+          },
+          {
+            "step": 2,
+            "title": "Static Code Analysis",
+            "description": "Our team scans the repository for security flaws, code smells, and outdated package dependencies. This review identifies structural issues that impact software maintainability."
+          },
+          {
+            "step": 3,
+            "title": "Database & Query Analysis",
+            "description": "We profile your database configurations, slow queries, indexing strategies, and connection pool behaviors. This step pinpoints performance bottlenecks that cause slow response times."
+          },
+          {
+            "step": 4,
+            "title": "Infrastructure & Cloud Review",
+            "description": "We audit your cloud resources, deployment scripts, auto-scaling rules, and monthly billing statements. This review uncovers redundant systems and cost-saving opportunities."
+          },
+          {
+            "step": 5,
+            "title": "CI/CD Pipeline Assessment",
+            "description": "We check your build scripts, automated test coverage, deployment workflows, and container configurations. This evaluation helps speed up the software delivery cycle."
+          },
+          {
+            "step": 6,
+            "title": "Deliverable Assessment Report",
+            "description": "We deliver a detailed report containing prioritized recommendations, code refactoring examples, and cost-saving steps. We hold a walkthrough meeting to explain findings."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is a tech stack assessment?",
+            "answer": "A tech stack assessment is an in-depth evaluation of your software systems, databases, APIs, code quality, and cloud hosting infrastructure. It identifies security issues, performance bottlenecks, and cost-reduction opportunities."
+          },
+          {
+            "question": "How long does a technology assessment take?",
+            "answer": "A standard tech stack assessment takes between three to six weeks to complete. The exact timeframe depends on the size of your codebases and the complexity of your cloud deployment systems."
+          },
+          {
+            "question": "Do you need write access to our code or databases?",
+            "answer": "No, we only require secure, read-only access to perform our audit. We never modify your production systems, code, or databases during the assessment process."
+          },
+          {
+            "question": "What deliverables do we receive at the end?",
+            "answer": "You receive a comprehensive technical report detailing our findings, categorized by severity. It includes actionable code refactoring suggestions, cloud architecture diagrams, and a clear roadmap for modernization."
+          },
+          {
+            "question": "Can this assessment help prepare us for due diligence?",
+            "answer": "Yes, we frequently perform audits for startups preparing for investment rounds or acquisitions. Our report meets the standards expected by venture capital firms and technical auditors."
+          },
+          {
+            "question": "How can an assessment reduce our cloud hosting costs?",
+            "answer": "We analyze your resource utilization patterns to identify over-provisioned servers, unused databases, and inefficient database queries. Our recommendations help you reduce hosting costs by up to forty percent."
+          },
+          {
+            "question": "What types of technologies do you assess?",
+            "answer": "We evaluate a wide range of frontend and backend technologies, including JavaScript, TypeScript, Python, Ruby, Java, PHP, PostgreSQL, MySQL, AWS, Azure, and Google Cloud platforms."
+          },
+          {
+            "question": "What is the cost of a tech stack assessment?",
+            "answer": "The pricing depends on the size of the codebase, number of applications, and complexity of the cloud infrastructure. We provide custom quotes after a quick discovery call."
+          }
+        ],
+        "technologies": [
+          { "name": "GitHub", "icon": "github" },
+          { "name": "AWS", "icon": "aws" },
+          { "name": "Google Cloud", "icon": "googlecloud" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "SonarQube", "icon": "sonarqube" },
+          { "name": "Prisma", "icon": "prisma" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Teknoloji Yığını Değerlendirmesi",
+      "shortDescription": "Performans, güvenlik ve ölçeklenebilirlik için teknoloji yığınınızı değerlendirin. Teknik borçları ortadan kaldırmak ve bulut altyapı maliyetlerini optimize etmek için uygulanabilir öneriler sunuyoruz.",
+      "fullDescription": "Güncel olmayan yazılım bağımlılıkları, zayıf veritabanı tasarımı ve optimize edilmemiş bulut barındırma seçimleri, şirketinizin bütçelerini sessizce tüketebilir ve ürün geliştirmeyi durdurabilir. Kapsamlı teknoloji yığını değerlendirmemiz mevcut mimarinizi, kod kalitenizi, dağıtım hatlarınızı ve veritabanı yapılandırmalarınızı derinlemesine analiz eder. Kritik darboğazları, güvenlik açıklarını ve lisans uyumluluk sorunlarını hızlıca belirliyoruz. Kıdemli mühendislerimiz performans iyileştirmelerini, uzun vadeli geçiş stratejilerini ve bulut maliyet azaltma fırsatlarını özetleyen ayrıntılı bir teknik rapor sunar. Sisteminizin güvenle büyümesini sağlamak ve operasyonel verimliliği artırmak için ihtiyacınız olan tüm teknik netliği sağlıyoruz.",
+      "features": [
+        "Kapsamlı Kaynak Kod Kalite Denetimi",
+        "Veritabanı Sorgu Performans Analizi",
+        "Bulut Mimarisi Maliyet Optimizasyonu İncelemesi",
+        "Bağımlılık Güvenlik Açığı Taraması",
+        "API Güvenliği ve Performans Profili Oluşturma",
+        "CI/CD Dağıtım Hattı Verimlilik Denetimleri",
+        "Yazılım Lisans Uyumluluğu Denetimi",
+        "Teknik Durum Tespiti (Due Diligence) Planı"
+      ],
+      "benefits": [
+        "Gizli güvenlik açıklarını anında tespit edin ve giderin",
+        "Gereksiz kaynakları kaldırarak bulut maliyetlerini azaltın",
+        "Uygulama hızı ve yanıt süresi darboğazlarını iyileştirin",
+        "Geliştirme hızını artırmak için teknik borçları ortadan kaldırın",
+        "Yatırımcı teknik incelemeleri için teknik varlıkları hazırlayın",
+        "Kullanıcı büyümesi için net ölçeklenebilirlik yolları belirleyin"
+      ],
+      "metaTitle": "Teknoloji Yığını Değerlendirme Hizmetleri | PakSoft",
+      "metaDescription": "Kapsamlı teknoloji yığını değerlendirmesi alın. Performansı artırmak için kaynak kodlerini denetliyor, veritabanlarını analiz ediyoruz. İletişime geçin.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Erişim Sağlama ve Kapsam Belirleme",
+            "description": "Kod depolarınıza, bulut ortamlarınıza ve veritabanı izleme sistemlerinize salt okunur erişim sağlıyoruz. Bu kurulum denetim sınırlarını netleştirir."
+          },
+          {
+            "step": 2,
+            "title": "Statik Kod Analizi",
+            "description": "Ekibimiz güvenlik kusurlarını ve güncel olmayan paket bağımlılıklarını tarar. Bu inceleme yazılım sürdürülebilirliğini etkileyen yapısal sorunları belirler."
+          },
+          {
+            "step": 3,
+            "title": "Veritabanı ve Sorgu Analizi",
+            "description": "Veritabanı yapılandırmalarınızı ve yavaş sorguları analiz ediyoruz. Bu adım yavaş yanıt sürelerine neden olan performans darboğazlarını tespit eder."
+          },
+          {
+            "step": 4,
+            "title": "Altyapı ve Bulut İncelemesi",
+            "description": "Bulut kaynaklarınızı, dağıtım betiklerinizi ve faturalarınızı denetliyoruz. Bu inceleme gereksiz sistemleri ve tasarruf fırsatlarını ortaya çıkarır."
+          },
+          {
+            "step": 5,
+            "title": "CI/CD Süreç Değerlendirmesi",
+            "description": "Derleme betiklerinizi, test kapsamınızı ve konteyner yapılandırmalarınızı kontrol ediyoruz. Bu değerlendirme yazılım teslim döngüsünü hızlandırmaya yardımcı olur."
+          },
+          {
+            "step": 6,
+            "title": "Değerlendirme Raporunun Sunulması",
+            "description": "Öncelikli önerileri ve kod yeniden yapılandırma örneklerini içeren ayrıntılı bir rapor sunuyoruz. Bulguları açıklamak için bir toplantı düzenliyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Teknoloji yığını değerlendirmesi nedir?",
+            "answer": "Yazılım sistemlerinizin, veritabanlarınızın, API'lerinizin, kod kalitenizin ve bulut altyapınızın derinlemesine değerlendirilmesidir. Güvenlik sorunlarını, performans darboğazlarını ve maliyet tasarrufu fırsatlarını belirler."
+          },
+          {
+            "question": "Teknoloji değerlendirmesi ne kadar sürer?",
+            "answer": "Standart bir değerlendirme projesi genellikle üç ila altı hafta sürer. Tam süre, kod tabanlarınızın boyutuna ve bulut sistemlerinizin karmaşıklığına bağlıdır."
+          },
+          {
+            "question": "Kodumuza veya veritabanımıza yazma erişimine ihtiyacınız var mı?",
+            "answer": "Hayır, denetimimizi gerçekleştirmek için yalnızca salt okunur erişime ihtiyacımız var. Değerlendirme sürecinde üretim sistemlerinizi, kodunuzu veya veritabanınızı asla değiştirmeyiz."
+          },
+          {
+            "question": "Süreç sonunda hangi belgeleri alıyoruz?",
+            "answer": "Bulgularımızı önem derecesine göre listeleyen kapsamlı bir rapor alırsınız. Bu rapor kod yeniden yapılandırma önerilerini, mimari diyagramları ve modernizasyon planını içerir."
+          },
+          {
+            "question": "Bu değerlendirme bizi yatırımcı denetimine hazırlayabilir mi?",
+            "answer": "Evet, yatırım turlarına hazırlanan startuplar için sıkça denetimler yapıyoruz. Raporumuz girişim sermayesi firmalarının ve teknik denetçilerin beklediği standartları karşılar."
+          },
+          {
+            "question": "Değerlendirme bulut maliyetlerimizi nasıl azaltabilir?",
+            "answer": "Gereksiz sunucuları ve verimsiz veritabanı sorgularını belirlemek için kaynak kullanım modellerinizi analiz ediyoruz. Önerilerimiz barındırma maliyetlerini yüzde kırka kadar azaltmaya yardımcı olur."
+          },
+          {
+            "question": "Hangi teknolojileri değerlendiriyorsunuz?",
+            "answer": "JavaScript, TypeScript, Python, Ruby, Java, PHP, PostgreSQL, MySQL, AWS, Azure ve Google Cloud dahil olmak üzere geniş bir yelpazedeki teknolojileri değerlendiriyoruz."
+          },
+          {
+            "question": "Teknoloji yığını değerlendirmesinin maliyeti nedir?",
+            "answer": "Fiyatlandırma kod tabanının boyutuna, uygulama sayısına ve bulut altyapısının karmaşıklığına bağlıdır. Hızlı bir keşif görüşmesinden sonra özel teklifler sunuyoruz."
+          }
+        ],
+        "technologies": [
+          { "name": "GitHub", "icon": "github" },
+          { "name": "AWS", "icon": "aws" },
+          { "name": "Google Cloud", "icon": "googlecloud" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "SonarQube", "icon": "sonarqube" },
+          { "name": "Prisma", "icon": "prisma" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Technologie-Stack-Bewertung",
+      "shortDescription": "Bewerten Sie Ihren Technologie-Stack auf Leistung, Sicherheit und Skalierbarkeit. Wir liefern konkrete Empfehlungen zum Abbau von technischen Schulden und zur Kostenoptimierung.",
+      "fullDescription": "Veraltete Software-Abhängigkeiten, ein unstrukturiertes Datenbankdesign und suboptimale Cloud-Hosting-Entscheidungen können die Budgets Ihres Unternehmens unbemerkt belasten und die Produktentwicklung hemmen. Unsere umfassende Technologie-Stack-Bewertung analysiert Ihre gesamte Architektur, die Codequalität, Ihre CI/CD-Pipelines und alle Datenbankkonfigurationen bis ins kleinste Detail. Wir identifizieren kritische Leistungsengpässe, versteckte Sicherheitslücken und potenzielle Lizenzkonformitätsprobleme. Unsere Senior-Entwickler liefern Ihnen einen detaillierten technischen Bericht mit sofortigen Optimierungsvorschlägen, langfristigen Migrationsstrategien und klaren Cloud-Kostensenkungspotenzialen. Wir sorgen für die nötige technische Klarheit, damit Ihr System stabil und sicher skaliert werden kann.",
+      "features": [
+        "Umfassendes Audit der Quellcode-Qualität",
+        "Leistungsanalyse von Datenbank-Abfragen",
+        "Kostenoptimierungs-Reviews der Cloud-Architektur",
+        "Sicherheits-Scans von Software-Abhängigkeiten",
+        "Sicherheits- und Performance-Profiling von APIs",
+        "Effizienz-Audits von CI/CD-Pipelines",
+        "Überprüfung der Software-Lizenzkonformität",
+        "Erstellung von Plänen für die technische Due Diligence"
+      ],
+      "benefits": [
+        "Sicherheitslücken in Ihren Systemen sofort aufdecken",
+        "Cloud-Kosten durch entfernen ungenutzter Ressourcen senken",
+        "Die Geschwindigkeit und Antwortzeit Ihrer Anwendungen verbessern",
+        "Technische Schulden abbauen, um die Entwicklung zu beschleunigen",
+        "Technische Assets optimal auf Due-Diligence-Prüfungen vorbereiten",
+        "Einen klaren Skalierungspfad für wachsende Nutzerzahlen festlegen"
+      ],
+      "metaTitle": "Technologie-Stack-Bewertung & Code-Audits | PakSoft",
+      "metaDescription": "Erhalten Sie ein umfassendes Technologie-Stack-Audit. Wir bewerten Quellcode, analysieren Datenbanken und senken Cloud-Kosten nachhaltig. Kontakt.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Bereitstellung & Scoping",
+            "description": "Wir richten einen sicheren, lesenden Zugriff auf Ihre Code-Repositories, Cloud-Umgebungen und Datenbanken ein. Das stellt sicher, dass die Audit-Grenzen klar definiert sind."
+          },
+          {
+            "step": 2,
+            "title": "Statische Code-Analyse",
+            "description": "Unser Team scannt den Quellcode auf Sicherheitsrisiken und veraltete Bibliotheken. Diese Überprüfung zeigt strukturelle Schwachstellen auf, die die Wartbarkeit beeinträchtigen."
+          },
+          {
+            "step": 3,
+            "title": "Datenbank- & Abfrageanalyse",
+            "description": "Wir analysieren Datenbankkonfigurationen, langsame Abfragen und Indexierungsstrategien. Dieser Schritt lokalisiert Leistungsengpässe, die Verzögerungen verursachen."
+          },
+          {
+            "step": 4,
+            "title": "Infrastruktur- & Cloud-Review",
+            "description": "Wir prüfen Ihre Cloud-Ressourcen, Deployment-Skripte und monatlichen Abrechnungen. Diese Analyse deckt ungenutzte Server und Einsparpotenziale auf."
+          },
+          {
+            "step": 5,
+            "title": "CI/CD-Pipeline-Audit",
+            "description": "Wir testen Ihre Build-Prozesse, automatisierte Testabdeckung und Containerkonfigurationen. Diese Evaluierung hilft, den Release-Zyklus Ihrer Software zu beschleunigen."
+          },
+          {
+            "step": 6,
+            "title": "Ergebnisbericht & Präsentation",
+            "description": "Wir übergeben einen detaillierten Bericht mit priorisierten Empfehlungen und Refactoring-Beispielen. In einem Abschlussgespräch erläutern wir alle Ergebnisse."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Was ist eine Technologie-Stack-Bewertung?",
+            "answer": "Es ist eine eingehende Analyse Ihrer Softwarearchitektur, Datenbanken, Schnittstellen, Codequalität und Cloud-Infrastruktur. Sie hilft, Sicherheitslücken, Engpässe und Kostenpotenziale aufzudecken."
+          },
+          {
+            "question": "Wie lange dauert eine Technologie-Bewertung?",
+            "answer": "Ein Standard-Audit dauert in der Regel drei bis sechs Wochen. Die genaue Projektdauer hängt vom Umfang Ihres Codes und der Komplexität der Cloud-Infrastruktur ab."
+          },
+          {
+            "question": "Benötigen Sie Schreibrechte auf unseren Code oder unsere Datenbanken?",
+            "answer": "Nein, für das gesamte Audit benötigen wir ausschließlich lesenden Zugriff. Wir nehmen während der Analyse keinerlei Änderungen an Ihren Live-Systemen oder Ihrem Code vor."
+          },
+          {
+            "question": "Welche Ergebnisse erhalten wir am Ende?",
+            "answer": "Sie erhalten einen detaillierten Bericht, der Mängel nach Priorität sortiert auflistet. Er enthält konkrete Refactoring-Tipps, Cloud-Diagramme und einen Modernisierungsfahrplan."
+          },
+          {
+            "question": "Hilft uns diese Bewertung bei einer Due Diligence?",
+            "answer": "Ja, wir führen regelmäßig technische Audits für Startups vor Finanzierungsrunden oder Übernahmen durch. Unser Bericht erfüllt die Standards von Venture-Capital-Investoren."
+          },
+          {
+            "question": "Wie kann die Bewertung unsere Cloud-Hostingkosten senken?",
+            "answer": "Wir identifizieren überdimensionierte Server, ungenutzte Datenbanken und ineffiziente Abfragen. Unsere Empfehlungen helfen Ihnen, die Hosting-Kosten um bis zu vierzig Prozent zu senken."
+          },
+          {
+            "question": "Welche Technologien können bewertet werden?",
+            "answer": "Wir analysieren viele gängige Frontend- und Backend-Technologien, darunter JavaScript, TypeScript, Python, Java, PHP, PostgreSQL, MySQL sowie AWS, Azure und Google Cloud."
+          },
+          {
+            "question": "Wie viel kostet ein solches Audit?",
+            "answer": "Die Kosten hängen vom Umfang des Quellcodes und der Komplexität der Cloud-Strukturen ab. Nach einem kurzen Erstgespräch erstellen wir Ihnen ein individuelles Angebot."
+          }
+        ],
+        "technologies": [
+          { "name": "GitHub", "icon": "github" },
+          { "name": "AWS", "icon": "aws" },
+          { "name": "Google Cloud", "icon": "googlecloud" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "SonarQube", "icon": "sonarqube" },
+          { "name": "Prisma", "icon": "prisma" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "ٹیکنالوجی اسٹیک کا جائزہ",
+      "shortDescription": "کارکردگی، سیکیورٹی اور اسکیل ایبلٹی کے لیے اپنے ٹیکنالوجی اسٹیک کا جائزہ لیں۔ ہم ٹیکنیکل ڈیٹ کو ختم کرنے اور کلاؤڈ لاگت کو بہتر بنانے کے لیے عملی مشورے دیتے ہیں۔",
+      "fullDescription": "پرانی سافٹ ویئر لائبریریز، ڈیٹا بیس کا ناقص ڈیزائن اور غیر مناسب کلاؤڈ ہوسٹنگ کمپنی کا بجٹ ضائع کر سکتی ہیں اور پروڈکٹ کی ترقی کو روک سکتی ہیں۔ ہماری جامع ٹیکنالوجی اسٹیک اسیسمنٹ سروس آپ کے موجودہ آرکیٹیکچر، کوڈ کی کوالٹی، اور ڈیٹا بیس کنفیگریشنز کا تفصیلی تجزیہ کرتی ہے۔ ہم کارکردگی کی رکاوٹیں، سیکیورٹی خطرات اور لائسنس کے مسائل تلاش کرتے ہیں۔ ہمارے تجربہ کار انجینئرز ایک تفصیلی رپورٹ فراہم کرتے ہیں جس میں کارکردگی کی بہتری اور کلاؤڈ لاگت میں کمی کے طریقے شامل ہوتے ہیں۔ ہم سسٹمز کو جدید بنانے کے لیے ٹیکنیکل وضاحت دیتے ہیں۔",
+      "features": [
+        "سورس کوڈ کی کوالٹی کا جامع آڈٹ",
+        "ڈیٹا بیس کیوریز کی کارکردگی کا تجزیہ",
+        "کلاؤڈ آرکیٹیکچر کی لاگت کا جائزہ",
+        "لائبریری سیکیورٹی خطرات کی اسکیننگ",
+        "API سیکیورٹی اور کارکردگی کا پروفائلنگ",
+        "CI/CD پائپ لائنز کی کارکردگی کا آڈٹ",
+        "سافٹ ویئر لائسنس کی تعمیل کا آڈٹ",
+        "ٹیکنیکل ڈیو ڈیلیجنس کا تفصیلی خاکہ"
+      ],
+      "benefits": [
+        "سسٹمز کے پوشیدہ سیکیورٹی خطرات کو فوری ختم کریں",
+        "فالتو کلاؤڈ سسٹمز کو ہٹا کر ماہانہ اخراجات کم کریں",
+        "ایپلی کیشن کی رفتار اور رسپانس ٹائم کو بہتر بنائیں",
+        "ڈویلپمنٹ کی رفتار بڑھانے کے لیے ٹیکنیکل ڈیٹ ختم کریں",
+        "سرمایہ کاروں کے جائزے کے لیے ٹیکنیکل اثاثے تیار کریں",
+        "صاورفین کی بڑھتی ہوئی تعداد کے لیے اسکیلنگ کی پلاننگ کریں"
+      ],
+      "metaTitle": "ٹیکنالوجی اسٹیک آڈٹ اور کوڈ اسیسمنٹ سروسز | PakSoft",
+      "metaDescription": "اپنے ٹیکنالوجی اسٹیک کا آڈٹ کروائیں۔ ہم سورس کوڈ کا جائزہ لیتے ہیں، ڈیٹا بیس کا تجزیہ کرتے ہیں اور کلاؤڈ لاگت کو کم کرتے ہیں۔ رابطہ کریں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "رسائی اور اسکوپنگ کا سیٹ اپ",
+            "description": "ہم آپ کے کوڈ ریپوزٹریز، کلاؤڈ اور ڈیٹا بیس مانیٹرنگ سسٹمز تک محفوظ، ریڈ اونلی رسائی حاصل کرتے ہیں۔ یہ سیٹ اپ آڈٹ کے حدود کو واضح کرتا ہے۔"
+          },
+          {
+            "step": 2,
+            "title": "اسٹیٹک کوڈ کا تجزیہ",
+            "description": "ہماری ٹیم کوڈ میں سیکیورٹی کے مسائل اور پرانے پیکیجز کو اسکین کرتی ہے۔ یہ جائزہ سافٹ ویئر کی دیکھ بھال کو متاثر کرنے والے مسائل بتاتا ہے۔"
+          },
+          {
+            "step": 3,
+            "title": "ڈیٹا بیس اور کیوریز کا جائزہ",
+            "description": "ہم ڈیٹا بیس کنفیگریشنs، سست رفتار کیوریز اور انڈیکسنگ کا موازنہ کرتے ہیں۔ یہ مرحلہ کارکردگی کے مسائل کی درست نشاندہی کرتا ہے۔"
+          },
+          {
+            "step": 4,
+            "title": "انفراسٹرکچر اور کلاؤڈ آڈٹ",
+            "description": "ہم آپ کے کلاؤڈ سرورز، ڈپلائیمنٹ اسکرپٹس اور بلنگ اسٹیٹمنٹس کا جائزہ لیتے ہیں۔ یہ ریویو فالتو اخراجات اور بچت کے طریقے تلاش کرتا ہے۔"
+          },
+          {
+            "step": 5,
+            "title": "CI/CD پائپ لائن کا جائزہ",
+            "description": "ہم آپ کے خودکار ٹیسٹنگ اور کنٹینر سسٹمز का معائنہ کرتے ہیں۔ یہ تجزیہ سافٹ ویئر لانچ کرنے کے عمل کو تیز کرنے میں مدد دیتا ہے۔"
+          },
+          {
+            "step": 6,
+            "title": "حتمی رپورٹ اور بریفنگ سیشن",
+            "description": "ہم تفصیلی سفارشات اور ری فیکٹرنگ کوڈ کی مثالوں پر مشتمل رپورٹ دیتے ہیں۔ ہم نتائج کی وضاحت کے لیے ایک میٹنگ بھی کرتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "ٹیکنالوجی اسٹیک اسیسمنٹ (tech stack assessment) کیا ہے؟",
+            "answer": "یہ آپ کے سافٹ ویئر سسٹمز، ڈیٹا بیسز، APIs، کوڈ کی کوالٹی اور کلاؤڈ ہوسٹنگ انفراسٹرکچر کا ایک تفصیلی جائزہ ہے۔ یہ سیکیورٹی خطرات, کارکردگی کے مسائل اور لاگت میں کمی کے مواقع تلاش کرتا ہے۔"
+          },
+          {
+            "question": "ٹیکنالوجی آڈٹ کے پروجیکٹ میں کتنا وقت لگتا ہے؟",
+            "answer": "ایک عام ٹیکنالوجی اسٹیک اسیسمنٹ کو مکمل ہونے میں تین سے چھ ہفتے لگتے ہیں۔ اس کا انحصار آپ کے کوڈ بیس اور کلاؤڈ سسٹمز کی پیچیدگی پر ہوتا ہے۔"
+          },
+          {
+            "question": "کیا آپ کو ہمارے کوڈ یا ڈیٹا بیس تک لکھنے کی رسائی چاہیے؟",
+            "answer": "نہیں، ہمیں آڈٹ کے کاموں کے لیے صرف محفوظ، ریڈ اونلی (read-only) رسائی کی ضرورت ہوتی ہے۔ ہم جائزہ لینے کے دوران آپ کے لائیو سسٹمز یا کوڈ میں کوئی تبدیلی نہیں کرتے۔"
+          },
+          {
+            "question": "ہمیں آڈٹ کے آخر میں کیا ملے گا؟",
+            "answer": "آپ کو ایک جامع رپورٹ ملے گی جس میں مسائل کو ان کی سنگینی کے لحاظ سے ترتیب دیا گیا ہو گا۔ اس رپورٹ میں کوڈ ری فیکٹرنگ کی تجاویز اور سسٹمز کو بہتر بنانے کا روڈ میپ شامل ہو گا۔"
+          },
+          {
+            "question": "کیا یہ جائزہ ہمیں سرمایہ کاروں کے لیے تیار کر سکتا ہے؟",
+            "answer": "جی ہاں، ہم اکثر ان اسٹارٹ اپس کے لیے آڈٹ کرتے ہیں جو فنڈنگ یا حصولیابی کی تیاری کر رہے ہوتے ہیں۔ ہماری رپورٹ سرمایہ کاروں کے طے شدہ معیارات کے مطابق ہوتی ہے۔"
+          },
+          {
+            "question": "یہ جائزہ ہمارے کلاؤڈ ہوسٹنگ اخراجات کو کیسے کم کر سکتا ہے؟",
+            "answer": "ہم فالتو سرورز اور کارکردگی کے مسائل والی ڈیٹا بیس کیوریز کا پتہ لگاتے ہیں۔ ہماری تجاویز پر عمل کر کے آپ کلاؤڈ اخراجات میں چالیس فیصد تک کمی لا سکتے ہیں۔"
+          },
+          {
+            "question": "آپ کن ٹیکنالوجیز کا جائزہ لیتے ہیں؟",
+            "answer": "ہم وسیع پیمانے پر ٹیکنالوجیز کا جائزہ لیتے ہیں، بشمول JavaScript، TypeScript، Python، PHP, PostgreSQL، MySQL، AWS، Azure اور Google Cloud سسٹمز۔"
+          },
+          {
+            "question": "ٹیکنالوجی اسٹیک اسیسمنٹ کی فیس کتنی ہے؟",
+            "answer": "اس کی قیمت کوڈ کی لمبائی، ایپلی کیشنز کی تعداد اور کلاؤڈ انفراسٹرکچر کی پیچیدگی پر منحصر ہوتی ہے۔ ہم میٹرکس طے کرنے کے بعد تفصیلی کوٹیشن فراہم کرتے ہیں۔"
+          }
+        ],
+        "technologies": [
+          { "name": "GitHub", "icon": "github" },
+          { "name": "AWS", "icon": "aws" },
+          { "name": "Google Cloud", "icon": "googlecloud" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "SonarQube", "icon": "sonarqube" },
+          { "name": "Prisma", "icon": "prisma" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "تقييم البنية التكنولوجية",
+      "shortDescription": "قم بتقييم البنية التكنولوجية الحالية لعملك من حيث الأداء والأمان والتوسع. نقدم توصيات عملية للتخلص من الديون التقنية وتحسين تكاليف الاستضافة السحابية.",
+      "fullDescription": "يمكن للاعتماد على تبعيات برمجية قديمة وتصميم قواعد البيانات السيئ واختيارات الاستضافة السحابية غير المناسبة استنزاف ميزانيات شركتك دون علمك وتعطيل تطوير منتجاتك. يقيم تقييمنا الشامل للبنية التكنولوجية جودة الكود البرمجي الحالي، وقواعد البيانات، ومسارات النشر والتشغيل، والبنية التحتية. نحدد العقبات الحرجة، والثغرات الأمنية، ومشكلات الامتثال لتراخيص البرمجيات. يقدم مهندسونا تقريراً فنياً تفصيلياً يوضح تحسينات الأداء الفورية، واستراتيجيات الهجرة طويلة المدى، وفرص توفير التكاليف السحابية. نحن نوفر الوضوح الفني الكامل لتحسين أنظمتك بنجاح.",
+      "features": [
+        "تدقيق شامل لجودة الكود البرمجي المصدري",
+        "تحليل شامل لأداء استعلامات قواعد البيانات",
+        "مراجعة وتحسين تكاليف البنية السحابية",
+        "فحص شامل للثغرات الأمنية في التبعيات",
+        "تحليل أداء وأمان واجهات التطبيقات APIs",
+        "تدقيق كفاءة مسارات النشر الآلي CI/CD",
+        "مراجعة الامتثال لتراخيص البرمجيات والأنظمة",
+        "تخطيط الفحص الفني النافي للجهالة للمستثمرين"
+      ],
+      "benefits": [
+        "تحديد الثغرات الأمنية المخفية وإصلاحها فوراً",
+        "تقليل تكاليف الاستضافة عن طريق إزالة الموارد المكررة",
+        "تحسين سرعة التطبيق وحل مشكلات أوقات الاستجابة",
+        "التخلص من الديون التقنية لتسريع عمليات التطوير",
+        "تهيئة الأصول الفنية للمراجعة والتدقيق من المستثمرين",
+        "تحديد مسارات توسع واضحة لتلبية نمو المستخدمين"
+      ],
+      "metaTitle": "تقييم البنية التكنولوجية وتدقيق الكود | PakSoft",
+      "metaDescription": "احصل على تقييم شامل للبنية التكنولوجية. ندقق الكود المصدري، ونحلل قواعد البيانات، ونحسن التكاليف السحابية لتعزيز الأداء. اتصل بنا.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "توفير الصلاحيات وتحديد النطاق",
+            "description": "نحصل على وصول آمن للقراءة فقط إلى مستودعات الكود، والبيئات السحابية، وأنظمة مراقبة قواعد البيانات. يحدد هذا الإجراء حدود التدقيق بدقة."
+          },
+          {
+            "step": 2,
+            "title": "تحليل الكود المصدري الساكن",
+            "description": "يفحص فريقنا الكود بحثاً عن العيوب الأمنية والتبعيات القديمة. تحدد هذه المراجعة المشكلات الهيكلية التي تؤثر على سهولة صيانة البرمجيات."
+          },
+          {
+            "step": 3,
+            "title": "تحليل قواعد البيانات والاستعلامات",
+            "description": "نراجع إعدادات قواعد البيانات، والاستعلامات البطيئة، واستراتيجيات الفهرسة. تحدد هذه الخطوة الاختناقات التي تسبب بطء الاستجابة في التطبيقات."
+          },
+          {
+            "step": 4,
+            "title": "مراجعة البنية التحتية والسحابة",
+            "description": "ندقق الموارد السحابية، ونصوص النشر، والتقارير المالية الشهرية للاستضافة. تكشف هذه المراجعة عن الأنظمة الزائدة عن الحاجة وفرص التوفير المتاحة."
+          },
+          {
+            "step": 5,
+            "title": "تقييم مسارات النشر الآلي",
+            "description": "نتحقق من نصوص بناء البرمجيات، وتغطية الاختبارات التلقائية، وإعدادات الحاويات. يساعد هذا التقييم في تسريع دورة تسليم البرمجيات للمستخدمين."
+          },
+          {
+            "step": 6,
+            "title": "تسليم تقرير التقييم الفني",
+            "description": "نقدم تقريراً مفصلاً يحتوي على توصيات مرتبة حسب الأهمية وأمثلة لإعادة هيكلة الكود. نعقد اجتماعاً لمناقشة النتائج وشرح التوصيات."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما هو تقييم البنية التكنولوجية؟",
+            "answer": "هو فحص دقيق وشامل للأنظمة البرمجية، وقواعد البيانات، وواجهات التطبيقات، وجودة الكود، والبنية التحتية السحابية. يهدف إلى تحديد الثغرات الأمنية، واختناقات الأداء، وفرص خفض التكاليف."
+          },
+          {
+            "question": "كم من الوقت يستغرق تقييم البنية التكنولوجية؟",
+            "answer": "يستغرق التقييم القياسي ما بين ثلاثة إلى ستة أسابيع للانتهاء منه. يعتمد الوقت المحدد على حجم مشاريعك البرمجية ومدى تعقيد بيئتك السحابية."
+          },
+          {
+            "question": "هل تحتاجون إلى صلاحية الكتابة في الكود أو قواعد البيانات الخاصة بنا؟",
+            "answer": "لا، نحتاج فقط إلى صلاحيات القراءة فقط للقيام بعملنا بأمان تام. لن نقوم بتعديل أنظمة الإنتاج الحية أو الكود الخاص بك أثناء التقييم."
+          },
+          {
+            "question": "ما هي المخرجات التي نحصل عليها في النهاية؟",
+            "answer": "تحصل على تقرير فني شامل يفصل النتائج التي توصلنا إليها، مصنفة حسب الأهمية. يتضمن مقترحات عملية لإعادة هيكلة الكود، ومخططات سحابية، وخريطة طريق للتحديث."
+          },
+          {
+            "question": "هل يساعدنا هذا التقييم في الاستعداد لعمليات التدقيق والتحقق للمستثمرين؟",
+            "answer": "نعم، نجري بانتظام عمليات تدقيق للشركات الناشئة التي تستعد لجولات استثمارية أو عمليات استحواذ. يلبي تقريرنا المعايير المتوقعة من المستثمرين والمدققين الفنيين."
+          },
+          {
+            "question": "كيف يمكن للتقييم أن يقلل من تكاليف الاستضافة السحابية؟",
+            "answer": "نحلل أنماط استخدام الموارد لتحديد الخوادم الزائدة عن الحاجة وقواعد البيانات غير المستغلة. تساعدك توصياتنا في تقليل تكاليف الاستضافة بنسب تصل إلى أربعين بالمئة."
+          },
+          {
+            "question": "ما هي أنواع التقنيات التي تقومون بتقييمها؟",
+            "answer": "نحن نقيم مجموعة واسعة من تقنيات الواجهات الأمامية والخلفية، بما في ذلك JavaScript وTypeScript وPython وPHP وPostgreSQL وMySQL وAWS وAzure وGoogle Cloud."
+          },
+          {
+            "question": "ما هي تكلفة تقييم البنية التكنولوجية للشركات؟",
+            "answer": "تعتمد التكلفة على حجم الكود البرمجي، وعدد التطبيقات، ومدى تعقيد البنية السحابية. نقدم عرض سعر مخصص بعد مكالمة استكشافية سريعة مع فريقكم."
+          }
+        ],
+        "technologies": [
+          { "name": "GitHub", "icon": "github" },
+          { "name": "AWS", "icon": "aws" },
+          { "name": "Google Cloud", "icon": "googlecloud" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "SonarQube", "icon": "sonarqube" },
+          { "name": "Prisma", "icon": "prisma" }
+        ]
+      }
+    }
+  },
+  "technical-cto": {
+    "en": {
+      "name": "Technical CTO",
+      "shortDescription": "Access part-time, senior CTO leadership without the high cost of a full-time hire. We provide strategic technical roadmaps, mentor developers, and oversee architecture.",
+      "fullDescription": "Growing startups and mid-sized companies often need strategic technical leadership to align software decisions with business objectives, but hiring a full-time executive can be cost-prohibitive. Our fractional Technical CTO service provides on-demand access to experienced technology leaders. We help you design long-term software architecture roadmaps, select the right database and hosting providers, and establish industry-standard engineering processes. We mentor your existing development team, lead code review standards, and manage technical vendor relationships. Additionally, we assist with security compliance planning and prep your company's tech assets for investor due diligence audits, ensuring your engineering department supports business scaling smoothly.",
+      "features": [
+        "Strategic Technology Roadmap Design",
+        "Software Architecture Blueprint Creation",
+        "Development Team Mentorship and Hiring",
+        "Engineering Standards and Process Setup",
+        "Technical Vendor and Tool Evaluation",
+        "Security and Compliance Blueprinting",
+        "Investor Technical Due Diligence Prep",
+        "Agile Sprint and Project Governance"
+      ],
+      "benefits": [
+        "Get high-level technology guidance at a fraction of the cost",
+        "Align software development decisions with business goals",
+        "Improve developer code quality and deployment speeds",
+        "Select the right tools and avoid costly vendor lock-in",
+        "Build a security-first culture to meet compliance standards",
+        "Prepare technical assets for future investment rounds"
+      ],
+      "metaTitle": "Fractional & Virtual Technical CTO Services | PakSoft",
+      "metaDescription": "Hire a fractional Technical CTO on demand. Get senior engineering leadership, architecture design, developer mentoring, and due diligence prep. Contact us.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Discovery & Goal Alignment",
+            "description": "We hold initial scoping sessions with your leadership to map business goals, technical issues, and roadmap requirements. This setup ensures our alignment with your company strategy."
+          },
+          {
+            "step": 2,
+            "title": "Technology & Process Audit",
+            "description": "We audit your existing source code, server architectures, databases, and development workflows. This review provides a clear understanding of current technical strengths and weaknesses."
+          },
+          {
+            "step": 3,
+            "title": "Strategic Roadmap Design",
+            "description": "We construct a phased technology plan outlining architecture updates, hiring schedules, and tooling recommendations. This blueprint structures development projects for the coming quarters."
+          },
+          {
+            "step": 4,
+            "title": "Team Governance Setup",
+            "description": "We establish coding standards, code review processes, and agile sprint structures for your team. This setup improves communication and ensures developer code quality."
+          },
+          {
+            "step": 5,
+            "title": "Mentorship & Hiring Support",
+            "description": "We conduct weekly mentoring sessions with your lead engineers and assist in interviewing new technical talent. This support ensures you build a high-performing software team."
+          },
+          {
+            "step": 6,
+            "title": "Ongoing Executive Support",
+            "description": "We participate in key leadership meetings, manage technical vendors, and oversee major launch events. This continuous guidance ensures smooth execution of your technology plans."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is a fractional Technical CTO?",
+            "answer": "A fractional Technical CTO is a senior technology executive who provides part-time strategic leadership to your company. This allows you to access high-level engineering guidance without the cost of a full-time hire."
+          },
+          {
+            "question": "What does a virtual CTO do on a daily basis?",
+            "answer": "A virtual CTO designs technical roadmaps, audits codebase architectures, mentors developers, and assists in hiring. They also coordinate with executive leadership to ensure technology supports business goals."
+          },
+          {
+            "question": "How many hours a week does a fractional CTO work?",
+            "answer": "The hours vary based on your company's needs and project complexity. Typically, engagement options range from five to twenty hours per week of dedicated strategic support."
+          },
+          {
+            "question": "Can a fractional CTO help us hire developers?",
+            "answer": "Yes, we handle technical recruiting, review developer resumes, design coding tests, and conduct technical interviews. This ensures you hire the right talent for your stack."
+          },
+          {
+            "question": "How is a CTO different from a senior developer?",
+            "answer": "A senior developer focuses on writing code and building specific features. A CTO focuses on strategic decisions, choosing tech stacks, managing teams, and aligning software with business objectives."
+          },
+          {
+            "question": "Do you write code during the engagement?",
+            "answer": "Our primary focus is on strategic leadership, architecture design, and process governance. While we may write boilerplate code or proof-of-concepts, we do not perform daily feature development."
+          },
+          {
+            "question": "How do we get started with fractional CTO services?",
+            "answer": "We start with a discovery call to discuss your business goals and technical challenges. Then, we design a customized engagement plan outlining weekly hours and deliverables."
+          },
+          {
+            "question": "What industries do you have experience in?",
+            "answer": "We have extensive experience across multiple sectors, including e-commerce, SaaS, healthcare, financial technology, blockchain, and artificial intelligence platforms."
+          }
+        ],
+        "technologies": [
+          { "name": "Jira", "icon": "jira" },
+          { "name": "Confluence", "icon": "confluence" },
+          { "name": "Slack", "icon": "slack" },
+          { "name": "GitHub", "icon": "github" },
+          { "name": "Notion", "icon": "notion" },
+          { "name": "Trello", "icon": "trello" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Teknik CTO",
+      "shortDescription": "Tam zamanlı bir çalışanın yüksek maliyeti olmadan yarı zamanlı, kıdemli CTO liderliğine erişin. Stratejik yol haritaları sağlıyor ve geliştiricilere mentorluk yapıyoruz.",
+      "fullDescription": "Büyüyen startuplar ve orta ölçekli şirketler genellikle yazılım kararlarını iş hedefleriyle uyumlu hale getirmek için stratejik teknik liderliğe ihtiyaç duyar, ancak tam zamanlı bir yönetici tutmak oldukça maliyetli olabilir. Teknik CTO hizmetimiz, deneyimli teknoloji liderlerine isteğe bağlı ve esnek erişim sağlar. Uzun vadeli yazılım mimarisi yol haritaları tasarlamanıza, doğru araçları seçmenize ve endüstri standardı mühendislik süreçleri oluşturmanıza yardımcı oluyoruz. Geliştirme ekibinize mentorluk yapıyor, kod inceleme standartlarını yönetiyor ve satıcı ilişkilerini koordine ediyoruz. Şirketinizin gelecekteki büyüme ve yatırım hedeflerini destekleyen, ölçeklenebilir ve güvenli bir teknoloji vizyonu sunuyoruz.",
+      "features": [
+        "Stratejik Teknoloji Yol Haritası Tasarımı",
+        "Yazılım Mimarisi Planının Oluşturulması",
+        "Yazılım Ekibi Mentorluğu ve İşe Alım Desteği",
+        "Mühendislik Standartları ve Süreç Kurulumu",
+        "Teknik Satıcı ve Yazılım Değerlendirmeleri",
+        "Güvenlik ve Uyumluluk Yol Haritası Tasarımı",
+        "Yatırımcı Teknik Durum Tespiti Hazırlığı",
+        "Çevik Sprint ve Proje Yönetişimi Kurulumu"
+      ],
+      "benefits": [
+        "Maliyetin çok azına üst düzey teknoloji rehberliği alın",
+        "Yazılım geliştirme kararlarını iş hedefleriyle uyumlu hale getirin",
+        "Geliştiricilerin kod kalitesini ve teslimat hızlarını artırın",
+        "Doğru araçları seçerek maliyetli satıcı kilitlenmelerinden kaçının",
+        "Güvenlik odaklı bir kültür oluşturarak uyumluluk standartlarını karşılayın",
+        "Gelecekteki yatırım turları için teknik varlıkları hazırlayın"
+      ],
+      "metaTitle": "Teknik CTO ve Sanal CTO Hizmetleri | PakSoft",
+      "metaDescription": "İsteğe bağlı yarı zamanlı Teknik CTO kiralayın. Kıdemli mühendislik liderliği, mimari tasarımı, geliştirici mentorluğu ve durum tespiti hazırlığı sunuyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Keşif ve Hedef Uyumlama",
+            "description": "İş hedeflerini, teknik sorunları ve yol haritası gereksinimlerini haritalandırmak için ilk planlama toplantılarını yapıyoruz. Bu kurulum stratejimizle uyum sağlar."
+          },
+          {
+            "step": 2,
+            "title": "Teknoloji ve Süreç Denetimi",
+            "description": "Mevcut kaynak kodunuzu, sunucu mimarilerinizi, veritabanlarınızı ve geliştirme iş akışlarınızı denetliyoruz. Bu inceleme mevcut güçlü ve zayıf teknik yönleri belirler."
+          },
+          {
+            "step": 3,
+            "title": "Stratejik Yol Haritası Tasarımı",
+            "description": "Mimari güncellemeleri, işe alım programlarını ve araç önerilerini içeren aşamalı bir teknoloji planı oluşturuyoruz. Bu plan sonraki çeyrekler için geliştirme projelerini yapılandırır."
+          },
+          {
+            "step": 4,
+            "title": "Ekip Yönetişimi Kurulumu",
+            "description": "Ekibiniz için kodlama standartları, kod inceleme süreçleri ve çevik sprint yapıları oluşturuyoruz. Bu kurulum iletişimi geliştirir ve kod kalitesini artırır."
+          },
+          {
+            "step": 5,
+            "title": "Mentorluk ve İşe Alım Desteği",
+            "description": "Lider mühendislerinizle haftalık mentorluk oturumları düzenliyor ve yeni teknik yeteneklerin işe alım görüşmelerine katılıyoruz. Bu destek yüksek performanslı ekipler kurmanızı sağlar."
+          },
+          {
+            "step": 6,
+            "title": "Sürekli Yönetim Desteği",
+            "description": "Kilit liderlik toplantılarına katılıyor, teknik satıcıları yönetiyor ve büyük lansmanları denetliyoruz. Bu sürekli rehberlik teknoloji planlarınızın sorunsuz yürütülmesini sağlar."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Yarı zamanlı Teknik CTO nedir?",
+            "answer": "Şirketinize yarı zamanlı stratejik liderlik sağlayan kıdemli bir teknoloji yöneticisidir. Tam zamanlı bir işe alım maliyeti olmadan üst düzey mühendislik rehberliğine erişmenizi sağlar."
+          },
+          {
+            "question": "Sanal bir CTO günlük olarak ne yapar?",
+            "answer": "Sanal bir CTO teknik yol haritaları tasarlar, kod tabanı mimarilerini denetler, geliştiricilere mentorluk yapar ve işe alımlara yardımcı olur. Teknolojinin iş hedeflerini desteklemesini sağlarlar."
+          },
+          {
+            "question": "Yarı zamanlı bir CTO haftada kaç saat çalışır?",
+            "answer": "Çalışma saatleri şirketinizin ihtiyaçlarına ve proje karmaşıklığına göre değişir. Genellikle, haftalık beş ila yirmi saat arasında özel stratejik destek sağlanır."
+          },
+          {
+            "question": "Yarı zamanlı bir CTO geliştirici işe almamıza yardımcı olabilir mi?",
+            "answer": "Evet, teknik işe alım süreçlerini yönetiyor, aday özgeçmişlerini inceliyor, kodlama testleri tasarlıyor ve teknik mülakatlar yapıyoruz. Yığına uygun yetenekleri seçmenizi sağlıyoruz."
+          },
+          {
+            "question": "CTO ile kıdemli geliştirici arasındaki fark nedir?",
+            "answer": "Kıdemli bir geliştirici kod yazmaya ve belirli özellikleri oluşturmaya odaklanır. Bir CTO ise stratejik kararlara, teknoloji yığınlarını seçmeye ve ekipleri yönetmeye odaklanır."
+          },
+          {
+            "question": "Hizmet süresince kod yazıyor musunuz?",
+            "answer": "Birincil odak noktamız stratejik liderlik, mimari tasarım ve süreç yönetimidir. Taslak kodlar yazabilsek de günlük özellik geliştirme faaliyetleri gerçekleştirmeyiz."
+          },
+          {
+            "question": "Yarı zamanlı CTO hizmetlerine nasıl başlayabiliriz?",
+            "answer": "İş hedeflerinizi ve teknik zorluklarınızı tartışmak için bir keşif görüşmesiyle başlıyoruz. Ardından, haftalık çalışma saatlerini ve teslimatları içeren bir plan tasarlıyoruz."
+          },
+          {
+            "question": "Hangi sektörlerde deneyiminiz var?",
+            "answer": "E-ticaret, SaaS, sağlık, finansal teknoloji, blockchain ve yapay zeka platformları dahil olmak üzere birçok sektörde kapsamlı deneyime sahibiz."
+          }
+        ],
+        "technologies": [
+          { "name": "Jira", "icon": "jira" },
+          { "name": "Confluence", "icon": "confluence" },
+          { "name": "Slack", "icon": "slack" },
+          { "name": "GitHub", "icon": "github" },
+          { "name": "Notion", "icon": "notion" },
+          { "name": "Trello", "icon": "trello" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Technischer CTO",
+      "shortDescription": "Nutzen Sie eine erfahrene CTO-Führung in Teilzeit ohne die hohen Kosten einer Vollzeitanstellung. Wir liefern strategische Roadmaps und betreuen Ihre Entwickler.",
+      "fullDescription": "Wachsende Startups und mittelständische Unternehmen benötigen oft eine strategische technische Führung, um Software-Entscheidungen optimal auf die Geschäftsziele abzustimmen. Eine permanente Vollzeitkraft ist in der Anfangsphase jedoch oft finanziell nicht tragbar. Unser Fractional-CTO-Service bietet Ihnen flexiblen Zugang zu erfahrenen Technologie-Führungskräften auf Abruf. Wir helfen Ihnen beim Entwurf langfristiger Architektur-Roadmaps, der Auswahl der passenden Technologien und der Etablierung moderner, standardisierter Entwicklungsprozesse. Wir betreuen Ihr Team persönlich, optimieren Code-Reviews und steuern technische Partner effizient. So machen wir Ihre IT-Infrastruktur zukunftssicher und bereit für schnelles Wachstum.",
+      "features": [
+        "Entwurf strategischer Technologie-Roadmaps",
+        "Erstellung von Softwarearchitektur-Blueprints",
+        "Mentoring und Unterstützung bei der Entwickler-Rekrutierung",
+        "Etablierung von Entwicklungsstandards und -prozessen",
+        "Evaluation technischer Dienstleister und Tools",
+        "Erstellung von Sicherheits- und Compliance-Konzepten",
+        "Vorbereitung auf technische Due-Diligence-Prüfungen",
+        "Steuerung von agilen Sprints und Projekt-Governance"
+      ],
+      "benefits": [
+        "Erhalten Sie hochgradige Technologieberatung zu geringen Kosten",
+        "Richten Sie Software-Entscheidungen gezielt an Unternehmenszielen aus",
+        "Verbessern Sie die Codequalität und Release-Geschwindigkeit der Entwickler",
+        "Vermeiden Sie durch die richtige Tool-Auswahl teuren Vendor Lock-in",
+        "Etablieren Sie eine Security-First-Kultur für höchste Standards",
+        "Bereiten Sie technische Assets optimal auf Finanzierungsrunden vor"
+      ],
+      "metaTitle": "Technischer CTO & Virtual CTO-Services | PakSoft",
+      "metaDescription": "Buchen Sie einen Technischen CTO auf Abruf. Wir bieten strategische Führung, Architektur-Design, Entwickler-Mentoring und Due-Diligence-Prep. Kontakt.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Discovery & Zielabgleich",
+            "description": "Wir führen erste Scoping-Workshops mit Ihrer Führungsebene durch, um Geschäftsziele und technische Hürden zu erfassen. Das sichert die strategische Ausrichtung."
+          },
+          {
+            "step": 2,
+            "title": "Technologie- & Prozess-Audit",
+            "description": "Wir untersuchen Ihren Quellcode, Serverstrukturen, Datenbanken und Workflows. Diese Analyse deckt Stärken und Schwachstellen Ihrer technischen Basis auf."
+          },
+          {
+            "step": 3,
+            "title": "Entwurf der IT-Roadmap",
+            "description": "Wir erstellen einen Phasenplan mit Architektur-Updates, Einstellungsplänen und Tool-Empfehlungen. Dieser Blueprint gibt der Entwicklung eine klare Struktur."
+          },
+          {
+            "step": 4,
+            "title": "Etablierung der Team-Governance",
+            "description": "Wir definieren Coding-Standards, Review-Prozesse und agile Arbeitsstrukturen für Ihr Team. Dies verbessert die Abstimmung und hebt die Codequalität."
+          },
+          {
+            "step": 5,
+            "title": "Mentoring & Recruiting-Support",
+            "description": "Wir führen wöchentliche Coachings mit Ihren Lead-Engineers durch und unterstützen bei technischen Vorstellungsgesprächen. Das sichert den Aufbau eines Top-Teams."
+          },
+          {
+            "step": 6,
+            "title": "Laufender Executive-Support",
+            "description": "Wir nehmen an strategischen Management-Meetings teil, steuern Dienstleister und überwachen Releases. Diese kontinuierliche Begleitung sichert die Umsetzung."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Was ist ein Fractional Technical CTO?",
+            "answer": "Ein Fractional CTO ist eine erfahrene Führungskraft, die Ihrem Unternehmen in Teilzeit strategische Führung bietet. So erhalten Sie High-Level-Expertise ohne die Kosten einer Vollzeitstelle."
+          },
+          {
+            "question": "Was macht ein virtueller CTO im Alltag?",
+            "answer": "Ein virtueller CTO entwirft Roadmaps, prüft Code-Architekturen, coacht Entwickler und unterstützt beim Recruiting. Er sorgt dafür, dass die Technik die Geschäftsziele optimal unterstützt."
+          },
+          {
+            "question": "Wie viele Stunden pro Woche arbeitet ein Fractional CTO?",
+            "answer": "Die Stundenanzahl richtet sich nach dem Bedarf Ihres Unternehmens. Typischerweise liegt der Aufwand zwischen fünf und zwanzig Stunden pro Woche für dedizierten Support."
+          },
+          {
+            "question": "Kann ein Fractional CTO bei der Entwicklersuche helfen?",
+            "answer": "Ja, wir unterstützen Sie bei der Personalbeschaffung, bewerten Lebensläufe, entwerfen Coding-Tests und führen Interviews. Das stellt sicher, dass Sie die passenden Talente einstellen."
+          },
+          {
+            "question": "Was unterscheidet einen CTO von einem Senior-Entwickler?",
+            "answer": "Ein Entwickler konzentriert sich auf das Schreiben von Code und Funktionen. Ein CTO fokussiert sich auf strategische Entscheidungen, Teambuilding und die Ausrichtung der IT auf die Geschäftsziele."
+          },
+          {
+            "question": "Schreiben Sie während der Zusammenarbeit selbst Code?",
+            "answer": "Unser Fokus liegt auf Führung, Architektur und Prozessen. Wir können zwar Prototypen oder Bootstrapping-Code erstellen, führen aber keine tägliche Feature-Entwicklung durch."
+          },
+          {
+            "question": "Wie starten wir die Zusammenarbeit mit einem Fractional CTO?",
+            "answer": "Wir beginnen mit einem Erstgespräch, um Ihre Ziele und Hürden zu besprechen. Anschließend erstellen wir einen Kooperationsplan mit wöchentlichen Stunden und Meilensteinen."
+          },
+          {
+            "question": "In welchen Branchen haben Sie Erfahrung?",
+            "answer": "Wir verfügen über weitreichende Erfahrung in Branchen wie E-Commerce, SaaS, Healthcare, FinTech, Blockchain und Plattformen für künstliche Intelligenz."
+          }
+        ],
+        "technologies": [
+          { "name": "Jira", "icon": "jira" },
+          { "name": "Confluence", "icon": "confluence" },
+          { "name": "Slack", "icon": "slack" },
+          { "name": "GitHub", "icon": "github" },
+          { "name": "Notion", "icon": "notion" },
+          { "name": "Trello", "icon": "trello" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "ٹیکنیکل CTO",
+      "shortDescription": "فل ٹائم ہائرنگ کے بھاری اخراجات کے بغیر پارٹ ٹائم، سینئر CTO قیادت حاصل کریں۔ ہم اسٹریٹجک روڈ میپس فراہم کرتے ہیں اور ڈویلپرز کی رہنمائی کرتے ہیں۔",
+      "fullDescription": "بڑھتے ہوئے اسٹارٹ اپس اور درمیانے درجے کی کمپنیوں کو کاروباری مقاصد کے مطابق سافٹ ویئر کے فیصلے کرنے کے لیے اکثر اسٹریٹجک ٹیکنیکل لیڈرشپ کی ضرورت ہوتی ہے، لیکن فل ٹائم لیڈر رکھنا بہت مہنگا ہو سکتا ہے۔ ہماری فریکشنل ٹیکنیکل CTO سروس تجربہ کار ٹیکنالوجی لیڈرز تک پارٹ ٹائم رسائی فراہم کرتی ہے۔ ہم طویل مدتی سافٹ ویئر آرکیٹیکچر ڈیزائن کرنے، صحیح ٹولز منتخب کرنے اور انجینئرنگ کے عمل کو قائم کرنے میں مدد کرتے ہیں۔ ہم آپ کی ڈویلپمنٹ ٹیم کی رہنمائی کرتے ہیں اور بیرونی تعلقات کو سنبھالتے ہیں۔ ہم ترقی کو یقینی بناتے ہیں۔",
+      "features": [
+        "اسٹریٹجک ٹیکنالوجی روڈ میپ ڈیزائن",
+        "سافٹ ویئر آرکیٹیکچر کا خاکہ تیار کرنا",
+        "ڈویلپمنٹ ٹیم کی رہنمائی اور ہائرنگ سپورٹ",
+        "انجینئرنگ معیارات اور طریقہ کار کا قیام",
+        "تکنیکی شراکت داروں اور ٹولز کا جائزہ",
+        "سیکیورٹی اور تعمیل کا تفصیلی روڈ میپ",
+        "سرمایہ کاروں کے لیے فنی جائزے کی تیاری",
+        "ایجائل اسپرنٹ اور پروجیکٹ گورننس"
+      ],
+      "benefits": [
+        "کم لاگت میں اعلیٰ درجے کی ٹیکنالوجی گائیڈنس حاصل کریں",
+        "سافٹ ویئر ڈویلپمنٹ کے فیصلوں کو بزنس اہداف سے ہم آہنگ کریں",
+        "ڈویلپرز کے کوڈ کی کوالٹی اور ڈپلائیمنٹ کی رفتار بہتر کریں",
+        "صحیح ٹولز منتخب کر کے مہنگے معاہدوں سے بچیں",
+        "تعمیل کے معیارات کو پورا کرنے کے لیے سیکیورٹی کلچر بنائیں",
+        "مستقبل کے انویسٹمنٹ راؤنڈز کے لیے تکنیکی اثاثے تیار کریں"
+      ],
+      "metaTitle": "ٹیکنیکل CTO اور ورچوئل CTO سروسز | PakSoft",
+      "metaDescription": "پروفیشنل پارٹ ٹائم ٹیکنیکل CTO حاصل کریں۔ ہم انجینئرنگ لیڈرشپ، آرکیٹیکچر ڈیزائن، ڈویلپرز مینٹرشپ اور فنی جائزہ کی تیاری فراہم کرتے ہیں۔ رابطہ کریں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "اہداف کی دریافت اور ہم آہنگی",
+            "description": "ہم کاروباری مقاصد اور ٹیکنالوجی کے مسائل کو سمجھنے کے لیے انتظامیہ کے ساتھ سیشنز کرتے ہیں۔ یہ سیٹ اپ ہماری حکمت عملی کو آپ کے وژن سے جوڑتا ہے۔"
+          },
+          {
+            "step": 2,
+            "title": "ٹیکنالوجی اور طریقہ کار کا آڈٹ",
+            "description": "ہم آپ کے کوڈ، سرور آرکیٹیکچر، ڈیٹا بیس اور ڈویلپمنٹ کے طریقوں کا جائزہ لیتے ہیں۔ یہ تجزیہ موجودہ سسٹمز کی مضبوطی اور کمزوریوں کو واضح کرتا ہے۔"
+          },
+          {
+            "step": 3,
+            "title": "اسٹریٹجک روڈ میپ ڈیزائن",
+            "description": "ہم آرکیٹیکچر کو اپ ڈیٹ کرنے، ہائرنگ شیڈولز اور ٹولز کی تجاویز پر مشتمل پلان بناتے ہیں۔ یہ خاکہ آنے والے مہینوں کے ڈویلپمنٹ منصوبوں کو ترتیب دیتا ہے۔"
+          },
+          {
+            "step": 4,
+            "title": "ٹیم گورننس کا سیٹ اپ",
+            "description": "ہم آپ کی ٹیم کے لیے کوڈنگ کے معیارات، کوڈ کے جائزے کے طریقے اور اسپرنٹ کی ساخت قائم کرتے ہیں۔ یہ سیٹ اپ ٹیم کی کارکردگی اور کوڈ کوالٹی کو بہتر بناتا ہے۔"
+          },
+          {
+            "step": 5,
+            "title": "مینٹرشپ اور ہائرنگ سپورٹ",
+            "description": "ہم آپ کے لیڈ انجینئرز کے ساتھ ہفتہ وار سیشنز کرتے ہیں اور نئے ٹیکنیکل اسٹاف کے انٹرویوز میں مدد کرتے ہیں۔ یہ سپورٹ ایک بہترین ٹیم بنانے میں مدد دیتی ہے۔"
+          },
+          {
+            "step": 6,
+            "title": "انتظامی مشاورت اور سپورٹ",
+            "description": "ہم اہم میٹنگز میں حصہ لیتے ہیں، تکنیکی شراکت داروں کو مانیٹر کرتے ہیں اور لانچ کے کاموں کی نگرانی کرتے ہیں۔ یہ مسلسل گائیڈنس ٹیکنالوجی کی کامیابی کو یقینی بناتی ہے۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "فریکشنل ٹیکنیکل CTO (fractional CTO) کیا ہے؟",
+            "answer": "یہ ایک سینئر ٹیکنالوجی لیڈر ہے جو آپ کی کمپنی کو پارٹ ٹائم اسٹریٹجک رہنمائی فراہم کرتا ہے۔ اس سے آپ فل ٹائم ہائرنگ کے اخراجات کے بغیر اعلیٰ درجے کے انجینئرنگ لیڈر حاصل کر سکتے ہیں۔"
+          },
+          {
+            "question": "ورچوئل CTO روزمرہ کیا کام کرتا ہے؟",
+            "answer": "ایک ورچوئل CTO روڈ میپس ڈیزائن کرتا ہے، سورس کوڈ کا جائزہ لیتا ہے، ڈویلپرز کی رہنمائی کرتا ہے اور ہائرنگ میں مدد کرتا ہے۔ وہ ٹیکنالوجی کو کاروباری مقاصد کے مطابق چلاتا ہے۔"
+          },
+          {
+            "question": "پارٹ ٹائم CTO ہفتے میں کتنے گھنٹے کام کرتا ہے؟",
+            "answer": "یہ گھنٹے کمپنی کی ضروریات اور پروجیکٹ کی پیچیدگی کے مطابق مختلف ہوتے ہیں۔ عام طور پر، ہفتہ وار پانچ سے بیس گھنٹے کی خدمات حاصل کی جا سکتی ہیں۔"
+          },
+          {
+            "question": "کیا پارٹ ٹائم CTO ڈویلپرز کی ہائرنگ میں مدد کر سکتا ہے؟",
+            "answer": "جی ہاں، ہم ہائرنگ کے عمل کو سنبھالتے ہیں، سی وی کا جائزہ لیتے ہیں، کوڈنگ ٹیسٹ ڈیزائن کرتے ہیں اور انٹرویوز کرتے ہیں۔ اس سے آپ کو صحیح ٹیلنٹ ملتا ہے۔"
+          },
+          {
+            "question": "CTO اور سینئر ڈویلپر میں کیا فرق ہے؟",
+            "answer": "سینئر ڈویلپر کوڈ لکھنے اور فیچرز بنانے پر توجہ دیتا ہے۔ جب کہ ایک CTO اسٹریٹجک فیصلوں، ٹیم مینجمنٹ، ٹولز کے انتخاب اور بزنس اہداف کے مطابق کام کرنے پر توجہ دیتا ہے۔"
+          },
+          {
+            "question": "کیا آپ سروس کے دوران خود کوڈ لکھتے ہیں؟",
+            "answer": "ہمارا بنیادی کام اسٹریٹجک لیڈرشپ اور ٹیم کی نگرانی ہے۔ ہم پروٹو ٹائپ کوڈ تو لکھ سکتے ہیں لیکن روزانہ کے ڈویلپمنٹ فیچرز کی کوڈنگ نہیں کرتے۔"
+          },
+          {
+            "question": "پارٹ ٹائم CTO سروسز کا آغاز کیسے ہوتا ہے؟",
+            "answer": "ہم آپ کی کاروباری ضروریات کو سمجھنے کے لیے ایک ابتدائی سیشن سے آغاز کرتے ہیں۔ پھر ہم ہفتہ وار گھنٹوں اور کام کی تفصیلات پر مشتمل پلان تیار کرتے ہیں۔"
+          },
+          {
+            "question": "آپ کو کن شعبوں میں کام کا تجربہ ہے؟",
+            "answer": "ہمیں ای کامرس، سافٹ ویئر ایز اے سروس (SaaS)، ہیلتھ کیئر، فنانشل ٹیکنالوجی، بلاک چین اور مصنوعی ذہانت (AI) کے شعبوں میں کام کرنے کا وسیع تجربہ ہے۔"
+          }
+        ],
+        "technologies": [
+          { "name": "Jira", "icon": "jira" },
+          { "name": "Confluence", "icon": "confluence" },
+          { "name": "Slack", "icon": "slack" },
+          { "name": "GitHub", "icon": "github" },
+          { "name": "Notion", "icon": "notion" },
+          { "name": "Trello", "icon": "trello" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "المدير الفني للتكنولوجيا",
+      "shortDescription": "احصل على قيادة تقنية استشارية وخبرة CTO رفيعة المستوى بدوام جزئي دون تكبد أعباء تكاليف التعيين الكامل. نقدم خططاً استراتيجية ونوجه مطوري البرمجيات ببراعة.",
+      "fullDescription": "غالباً ما تحتاج الشركات الناشئة والمتوسطة النامية إلى قيادة تقنية استراتيجية لربط القرارات البرمجية بأهداف العمل التجارية، ولكن تعيين مدير دائم قد يكون مكلفاً للغاية. توفر خدمة المدير الفني للتكنولوجيا بدوام جزئي وصولاً مرناً إلى قادة تكنولوجيا ذوي خبرة. نساعدك في تصميم خرائط طريق معمارية البرمجيات طويلة المدى، واختيار الأدوات والتقنيات المناسبة، وتأسيس عمليات هندسية متوافقة مع المعايير الصناعية. نحن نوجه فريق التطوير الحالي لديك, ونشرف على مراجعات الكود، وندير علاقات الموردين التقنيين. نحن نقدم القيادة التقنية التي تدعم نمو عملك بكفاءة.",
+      "features": [
+        "تصميم خرائط طريق تكنولوجية استراتيجية",
+        "إنشاء مخططات معمارية البرمجيات الشاملة",
+        "توجيه فريق التطوير ودعم عمليات التوظيف",
+        "تأسيس معايير هندسة البرمجيات والعمليات",
+        "تقييم واختيار الأدوات والموردين الفنيين",
+        "تخطيط استراتيجيات الأمن والامتثال للأنظمة",
+        "تهيئة الشركة لعمليات التدقيق الفني للمستثمرين",
+        "إدارة وتوجيه دورات التطوير المرنة Sprints"
+      ],
+      "benefits": [
+        "الحصول على توجيه تكنولوجي رفيع المستوى بأقل تكلفة",
+        "ربط قرارات تطوير البرمجيات مباشرة بأهداف العمل",
+        "تحسين جودة كود المطورين وسرعة نشر البرمجيات",
+        "اختيار الأدوات المناسبة وتجنب الارتباط الحصري بالموردين",
+        "بناء ثقافة تركز على الأمن لتلبية معمعايير الامتثال",
+        "تهيئة الأصول الفنية لجولات الاستثمار المستقبلية بنجاح"
+      ],
+      "metaTitle": "خدمات المدير الفني للتكنولوجيا الافتراضي | PakSoft",
+      "metaDescription": "وظف مدير تكنولوجيا تنفيذي بدوام جزئي. نقدم قيادة هندسية استراتيجية، وتصميم المعمارية، وتوجيه المطورين، والاستعداد للتدقيق الفني. اتصل بنا.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "الاستكشاف والتنسيق مع الإدارة",
+            "description": "نعقد جلسات أولية مع القيادة لتحديد أهداف العمل، والمشكلات الفنية، ومتطلبات خريطة الطريق لضمان توافق خططنا مع استراتيجيتكم."
+          },
+          {
+            "step": 2,
+            "title": "تدقيق التكنولوجيا والعمليات",
+            "description": "نفحص الكود البرمجي الحالي، ومعماريات الخوادم، وقواعد البيانات، ومسارات العمل لمعرفة نقاط القوة والضعف التقنية بوضوح."
+          },
+          {
+            "step": 3,
+            "title": "تصميم خريطة الطريق الاستراتيجية",
+            "description": "نبني خطة تقنية مرحلية توضح تحديثات المعمارية، وجداول التوظيف، وتوصيات الأدوات لتنظيم مشاريع التطوير للرباع القادمة."
+          },
+          {
+            "step": 4,
+            "title": "إعداد سياسات إدارة الفريق",
+            "description": "نضع معايير كتابة الكود، ومراجعة البرمجيات، وهياكل العمل المرنة لتعزيز التواصل بين المطورين وضمان جودة المخرجات الفنية."
+          },
+          {
+            "step": 5,
+            "title": "التوجيه ودعم عمليات التوظيف",
+            "description": "نجري جلسات توجيه أسبوعية لكبار المهندسين ونساعد في إجراء المقابلات الفنية لضمان توظيف أفضل الكفاءات المناسبة لبنيتكم."
+          },
+          {
+            "step": 6,
+            "title": "الدعم التنفيذي المستمر",
+            "description": "نشارك في اجتماعات القيادة الرئيسية، وندير الموردين التقنيين، ونشرف على عمليات الإطلاق لضمان تنفيذ خطط التكنولوجيا بنجاح."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما هو المدير الفني للتكنولوجيا بدوام جزئي (fractional CTO)؟",
+            "answer": "هو قيادي تقني ذو خبرة يقدم توجيهاً استراتيجياً لشركتك بدوام جزئي. يتيح لك ذلك الحصول على خبرة هندسية رفيعة المستوى دون تحمل تكاليف تعيين مدير دائم."
+          },
+          {
+            "question": "ما الذي يفعله المدير الفني الافتراضي للتكنولوجيا يومياً؟",
+            "answer": "يصمم خرائط طريق تقنية، ويدقق جودة الكود المعماري، ويوجه المطورين، ويساعد في عمليات التوظيف. يضمن أن تخدم التكنولوجيا أهداف العمل بشكل كامل."
+          },
+          {
+            "question": "كم عدد ساعات عمل المدير الفني للتكنولوجيا بدوام جزئي؟",
+            "answer": "تختلف الساعات بناءً على احتياجات شركتك ومدى تعقيد مشاريعك الفنية. تتراوح فترات العمل عادةً من خمس إلى عشرين ساعة أسبوعياً من الدعم المخصص."
+          },
+          {
+            "question": "هل يمكن للمدير الفني بدوام جزئي مساعدتنا في تعيين المطورين؟",
+            "answer": "نعم، نحن نتولى عمليات التوظيف الفني، ونراجع سير الذاتية للمطورين، ونصمم اختبارات البرمجة، ونجري المقابلات لضمان اختيار المهارات المناسبة تماماً."
+          },
+          {
+            "question": "ما الفرق بين المدير الفني للتكنولوجيا وكبير المطورين؟",
+            "answer": "يركز كبير المطورين على كتابة الكود وبناء ميزات محددة، بينما يركز المدير الفني على القرارات الاستراتيجية، واختيار بنية التكنولوجيا، وإدارة الفرق، وربط التقنيات بالأهداف التجارية."
+          },
+          {
+            "question": "هل تكتبون كوداً برمجياً أثناء العمل معنا؟",
+            "answer": "ينصب تركيزنا الأساسي على القيادة الاستراتيجية، وتصميم المعمارية، وإدارة العمليات. قد نكتب نماذج كود أولية لإثبات المفاهيم، لكننا لا نقوم بالتطوير اليومي للميزات."
+          },
+          {
+            "question": "كيف نبدأ العمل والحصول على خدمات المدير الفني؟",
+            "answer": "نبدأ بمكالمة استكشافية لمناقشة أهداف عملك وتحدياتك التقنية الحالية. بعد ذلك، نصمم خطة عمل مخصصة تحدد الساعات الأسبوعية والمخرجات المتوقعة."
+          },
+          {
+            "question": "ما هي القطاعات التي لديكم خبرة عمل فيها؟",
+            "answer": "لدينا خبرة واسعة في قطاعات متعددة تشمل التجارة الإلكترونية، والبرمجيات كخدمة (SaaS)، والرعاية الصحية، والتكنولوجيا المالية، وسلسلة الكتل (blockchain)، ومنصات الذكاء الاصطناعي."
+          }
+        ],
+        "technologies": [
+          { "name": "Jira", "icon": "jira" },
+          { "name": "Confluence", "icon": "confluence" },
+          { "name": "Slack", "icon": "slack" },
+          { "name": "GitHub", "icon": "github" },
+          { "name": "Notion", "icon": "notion" },
+          { "name": "Trello", "icon": "trello" }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,638 @@
+{
+  "slug": "database-migration",
+  "en": {
+    "name": "Database Migration",
+    "shortDescription": "Migrate your critical enterprise databases across platforms, versions, or cloud environments with guaranteed zero data loss, minimal application downtime, and comprehensive schema validation.",
+    "fullDescription": "Relocating production databases requires meticulous planning to prevent data corruption and costly downtime. PakSoft provides end-to-end database migration services, transitioning your legacy systems, on-premises databases, or cloud instances to modern, optimized platforms. We specialize in heterogeneous migrations (e.g., Oracle to PostgreSQL) and homogeneous upgrades. Our engineers utilize advanced replication tools to perform live syncs, ensuring a seamless cutover window. Every migration undergoes rigorous schema mapping, data integrity validation, and performance tuning. We mitigate risks with detailed rollback strategies, ensuring your business operations remain uninterrupted throughout the entire transition process.",
+    "features": [
+      "Heterogeneous Schema Conversion",
+      "Zero-Downtime Live Replication",
+      "Automated Data Validation",
+      "Cross-Cloud Database Migration",
+      "Legacy Version Upgrades",
+      "Post-Migration Performance Tuning",
+      "Comprehensive Rollback Planning",
+      "Security and Compliance Auditing"
+    ],
+    "benefits": [
+      "Zero Data Loss Guaranteed",
+      "Minimal Application Downtime",
+      "Reduced Infrastructure Costs",
+      "Enhanced Database Performance",
+      "Modernized Security Compliance",
+      "Seamless Business Continuity"
+    ],
+    "metaTitle": "Database Migration Services | PakSoft",
+    "metaDescription": "Migrate your databases to the cloud or modern platforms with zero data loss. Contact PakSoft today for secure, zero-downtime database migration.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Assessment & Discovery",
+          "description": "We analyze your source database schema, volume, and dependencies to identify potential migration bottlenecks. This initial phase establishes the baseline performance metrics and compatibility requirements."
+        },
+        {
+          "step": 2,
+          "title": "Schema Conversion",
+          "description": "We convert and optimize database schemas, stored procedures, and triggers for the target platform. Automated tools are combined with manual refactoring to ensure absolute compatibility."
+        },
+        {
+          "step": 3,
+          "title": "Replication Setup",
+          "description": "We establish continuous data replication between the source and target databases using secure channels. This keeps the target system synchronized in real-time without impacting production performance."
+        },
+        {
+          "step": 4,
+          "title": "Validation & Testing",
+          "description": "We perform rigorous data integrity checks, row counts, and dry-run cutovers to verify accuracy. Performance testing is conducted to ensure the target database meets or exceeds original benchmarks."
+        },
+        {
+          "step": 5,
+          "title": "Cutover Execution",
+          "description": "We execute the final cutover during a pre-approved, low-traffic maintenance window to minimize business impact. DNS and application connection strings are updated swiftly to complete the transition."
+        },
+        {
+          "step": 6,
+          "title": "Post-Migration Support",
+          "description": "Our team monitors the new database environment closely to resolve any immediate performance anomalies. We provide ongoing optimization and hand over complete documentation to your internal team."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How do you ensure zero data loss during migration?",
+          "answer": "We use continuous data replication tools like AWS DMS or pgloader to sync data in real-time. Before the final cutover, we perform strict checksum validation and row-count verifications to guarantee every record is transferred accurately."
+        },
+        {
+          "question": "What is the typical downtime during a database migration?",
+          "answer": "By utilizing live replication and CDC (Change Data Capture) technologies, we reduce actual downtime to just a few minutes or seconds. The only downtime occurs during the final DNS and connection string switchover."
+        },
+        {
+          "question": "Can you migrate databases between different engines, like Oracle to PostgreSQL?",
+          "answer": "Yes, we specialize in heterogeneous migrations. We use advanced schema conversion tools to translate database objects, and then manually refactor complex stored procedures to ensure full compatibility with the target engine."
+        },
+        {
+          "question": "How do you handle security and compliance during transit?",
+          "answer": "All data is encrypted both in transit and at rest using industry-standard TLS and AES-256 protocols. We also establish secure VPN tunnels or dedicated network connections to prevent exposure to the public internet."
+        },
+        {
+          "question": "What happens if the migration fails during the cutover?",
+          "answer": "We design a comprehensive, tested rollback plan for every project. If any critical metric fails during the cutover window, we can instantly revert traffic back to the source database without data loss or extended downtime."
+        },
+        {
+          "question": "Do you support cloud migrations to AWS, Azure, or Google Cloud?",
+          "answer": "Absolutely, we migrate on-premises databases to managed cloud services like AWS RDS, Azure SQL, or Google Cloud SQL. This transition helps reduce administrative overhead and improves scalability."
+        },
+        {
+          "question": "How do you handle very large databases (VLDB) over 10 Terabytes?",
+          "answer": "For extremely large databases, we use physical transport methods or initial backup seeding combined with delta replication. This prevents network bottlenecks and ensures the migration completes within a predictable timeframe."
+        },
+        {
+          "question": "Is post-migration performance tuning included in your service?",
+          "answer": "Yes, post-migration tuning is a core part of our process. We optimize indexes, update statistics, and adjust configuration parameters to ensure your new database runs faster than the old one."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "AWS DMS",
+          "icon": "aws-dms"
+        },
+        {
+          "name": "pgloader",
+          "icon": "pgloader"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "MySQL",
+          "icon": "mysql"
+        },
+        {
+          "name": "Oracle",
+          "icon": "oracle"
+        },
+        {
+          "name": "Microsoft SQL Server",
+          "icon": "sql-server"
+        },
+        {
+          "name": "MongoDB",
+          "icon": "mongodb"
+        },
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Veritabanı Taşıma",
+    "shortDescription": "Kritik kurumsal veritabanlarınızı, sıfır veri kaybı, minimum kesinti süresi ve kapsamlı şema doğrulaması ile platformlar, sürümler veya bulut ortamları arasında güvenle taşıyın.",
+    "fullDescription": "Üretim veritabanlarının taşınması, veri kaybını ve maliyetli kesintileri önlemek için titiz bir planlama gerektirir. PakSoft, eski sistemlerinizi, şirket içi veritabanlarınızı veya bulut örneklerinizi modern, optimize edilmiş platformlara taşıyarak uçtan uca veritabanı taşıma hizmetleri sunar. Farklı veritabanı motorları arası (örneğin Oracle'dan PostgreSQL'e) geçişlerde ve sürüm yükseltmelerinde uzmanız. Mühendislerimiz, canlı senkronizasyon sağlamak için gelişmiş replikasyon araçları kullanır ve sorunsuz bir geçiş penceresi sunar. Her taşıma işlemi sıkı şema eşleme, veri bütünlüğü doğrulaması ve performans optimizasyonundan geçer. İş operasyonlarınızın kesintisiz devam etmesini sağlamak için detaylı geri dönüş planlarıyla riskleri en aza indiriyoruz.",
+    "features": [
+      "Farklı Motorlar Arası Şema Dönüştürme",
+      "Sıfır Kesintili Canlı Replikasyon",
+      "Otomatik Veri Doğrulama",
+      "Bulutlar Arası Veritabanı Taşıma",
+      "Eski Sürüm Yükseltmeleri",
+      "Taşıma Sonrası Performans Optimizasyonu",
+      "Kapsamlı Geri Dönüş Planlaması",
+      "Güvenlik ve Uyumluluk Denetimi"
+    ],
+    "benefits": [
+      "Sıfır Veri Kaybı Garantisi",
+      "Minimum Uygulama Kesinti Süresi",
+      "Düşük Altyapı Maliyetleri",
+      "Gelişmiş Veritabanı Performansı",
+      "Modern Güvenlik Uyumluluğu",
+      "Kesintisiz İş Sürekliliği"
+    ],
+    "metaTitle": "Veritabanı Taşıma Hizmetleri | PakSoft",
+    "metaDescription": "Veritabanlarınızı sıfır veri kaybıyla buluta veya modern platformlara taşıyın. Güvenli ve kesintisiz geçiş için bugün PakSoft ile iletişime geçin.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Değerlendirme ve Keşif",
+          "description": "Potansiyel taşıma darboğazlarını belirlemek için kaynak veritabanı şemanızı, hacminizi ve bağımlılıklarınızı analiz ediyoruz. Bu ilk aşama, temel performans metriklerini ve uyumluluk gereksinimlerini belirler."
+        },
+        {
+          "step": 2,
+          "title": "Şema Dönüştürme",
+          "description": "Hedef platform için veritabanı şemalarını, saklı yordamları ve tetikleyicileri dönüştürüyor ve optimize ediyoruz. Kesin uyumluluk sağlamak için otomatik araçları manuel yeniden yapılandırmayla birleştiriyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Replikasyon Kurulumu",
+          "description": "Güvenli kanallar kullanarak kaynak ve hedef veritabanları arasında sürekli veri replikasyonu kuruyoruz. Bu, üretim performansını etkilemeden hedef sistemin gerçek zamanlı olarak senkronize kalmasını sağlar."
+        },
+        {
+          "step": 4,
+          "title": "Doğrulama ve Test",
+          "description": "Doğruluğu doğrulamak için sıkı veri bütünlüğü kontrolleri, satır sayımları ve deneme geçişleri gerçekleştiriyoruz. Hedef veritabanının orijinal kıyaslamaları karşılamasını sağlamak için performans testleri yapıyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Geçişin Gerçekleştirilmesi",
+          "description": "İş etkisini en aza indirmek için nihai geçişi önceden onaylanmış, düşük trafikli bir bakım penceresinde gerçekleştiriyoruz. Geçişi tamamlamak için DNS ve uygulama bağlantı dizelerini hızla güncelliyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Taşıma Sonrası Destek",
+          "description": "Olası performans sapmalarını anında çözmek için yeni veritabanı ortamını yakından izliyoruz. Sürekli optimizasyon sağlıyor ve eksiksiz belgeleri şirket içi ekibinize teslim ediyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Taşıma sırasında sıfır veri kaybını nasıl sağlıyorsunuz?",
+          "answer": "Verileri gerçek zamanlı olarak senkronize etmek için AWS DMS veya pgloader gibi sürekli veri replikasyon araçları kullanıyoruz. Nihai geçişten önce, her kaydın doğru şekilde aktarıldığını garanti etmek için sıkı sağlama toplamı (checksum) doğrulaması ve satır sayısı kontrolleri yapıyoruz."
+        },
+        {
+          "question": "Bir veritabanı taşıma işlemi sırasında tipik kesinti süresi nedir?",
+          "answer": "Canlı replikasyon ve CDC (Değişiklik Verisi Yakalama) teknolojilerini kullanarak gerçek kesinti süresini sadece birkaç dakikaya veya saniyeye indiriyoruz. Tek kesinti, nihai DNS ve bağlantı dizesi değişimi sırasında meydana gelir."
+        },
+        {
+          "question": "Oracle'dan PostgreSQL'e gibi farklı motorlar arasında veritabanı taşıyabilir misiniz?",
+          "answer": "Evet, farklı motorlar arası (heterojen) geçişlerde uzmanız. Veritabanı nesnelerini dönüştürmek için gelişmiş şema dönüştürme araçları kullanıyor ve ardından karmaşık saklı yordamları hedef motorla tam uyumlu olacak şekilde manuel olarak yeniden yapılandırıyoruz."
+        },
+        {
+          "question": "Taşıma sırasında güvenlik ve uyumluluğu nasıl yönetiyorsunuz?",
+          "answer": "Tüm veriler, endüstri standardı TLS ve AES-256 protokolleri kullanılarak hem aktarım sırasında hem de beklemede şifrelenir. Ayrıca, verilerin genel internete maruz kalmasını önlemek için güvenli VPN tünelleri veya özel ağ bağlantıları kuruyoruz."
+        },
+        {
+          "question": "Geçiş sırasında taşıma başarısız olursa ne olur?",
+          "answer": "Her proje için kapsamlı ve test edilmiş bir geri dönüş (rollback) planı tasarlıyoruz. Geçiş penceresi sırasında herhangi bir kritik metrik başarısız olursa, veri kaybı veya uzun süreli kesinti olmadan trafiği anında kaynak veritabanına geri yönlendirebiliriz."
+        },
+        {
+          "question": "AWS, Azure veya Google Cloud'a bulut taşımalarını destekliyor musunuz?",
+          "answer": "Kesinlikle, şirket içi veritabanlarını AWS RDS, Azure SQL veya Google Cloud SQL gibi yönetilen bulut hizmetlerine taşıyoruz. Bu geçiş, yönetim yükünü azaltmaya ve ölçeklenebilirliği artırmaya yardımcı olur."
+        },
+        {
+          "question": "10 Terabaytın üzerindeki çok büyük veritabanlarını (VLDB) nasıl yönetiyorsunuz?",
+          "answer": "Son derece büyük veritabanları için, fiziksel taşıma yöntemlerini veya delta replikasyonu ile birleştirilmiş ilk yedekleme yüklemelerini kullanıyoruz. Bu, ağ darboğazlarını önler ve taşımanın öngörülebilir bir zaman diliminde tamamlanmasını sağlar."
+        },
+        {
+          "question": "Taşıma sonrası performans optimizasyonu hizmetinize dahil mi?",
+          "answer": "Evet, taşıma sonrası optimizasyon sürecimizin temel bir parçasıdır. Yeni veritabanınızın eskisinden daha hızlı çalışmasını sağlamak için dizinleri optimize ediyor, istatistikleri güncelliyor ve yapılandırma parametrelerini ayarlıyoruz."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "AWS DMS",
+          "icon": "aws-dms"
+        },
+        {
+          "name": "pgloader",
+          "icon": "pgloader"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "MySQL",
+          "icon": "mysql"
+        },
+        {
+          "name": "Oracle",
+          "icon": "oracle"
+        },
+        {
+          "name": "Microsoft SQL Server",
+          "icon": "sql-server"
+        },
+        {
+          "name": "MongoDB",
+          "icon": "mongodb"
+        },
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Datenbankmigration",
+    "shortDescription": "Migrieren Sie Ihre kritischen Unternehmensdatenbanken plattform-, versions- oder cloudübergreifend mit garantierter Datensicherheit, minimalen Ausfallzeiten und umfassender Schema-Validierung.",
+    "fullDescription": "Die Verlagerung von Produktionsdatenbanken erfordert eine sorgfältige Planung, um Datenverlust und kostspielige Ausfallzeiten zu vermeiden. PakSoft bietet durchgängige Datenbankmigrationsdienste, die Ihre Altsysteme, On-Premises-Datenbanken oder Cloud-Instanzen auf moderne, optimierte Plattformen übertragen. Wir sind auf heterogene Migrationen (z. B. Oracle zu PostgreSQL) und homogene Upgrades spezialisiert. Unsere Ingenieure nutzen fortschrittliche Replikationstools für Echtzeitsynchronisationen, um ein nahtloses Cutover-Fenster zu gewährleisten. Jede Migration durchläuft eine strenge Schema-Zuordnung, Datenintegritätsprüfung und Leistungsoptimierung. Wir minimieren Risiken durch detaillierte Rollback-Strategien, damit Ihr Geschäftsbetrieb während des gesamten Übergangsprozesses ungestört bleibt.",
+    "features": [
+      "Heterogene Schema-Konvertierung",
+      "Ausfallfreie Live-Replikation",
+      "Automatisierte Datenvalidierung",
+      "Cloud-übergreifende Datenbankmigration",
+      "Upgrade von Altsystemen",
+      "Leistungsoptimierung nach der Migration",
+      "Umfassende Rollback-Planung",
+      "Sicherheits- und Compliance-Audits"
+    ],
+    "benefits": [
+      "Garantierter Schutz vor Datenverlust",
+      "Minimale Ausfallzeiten der Anwendung",
+      "Reduzierte Infrastrukturkosten",
+      "Verbesserte Datenbankleistung",
+      "Modernisierte Sicherheits-Compliance",
+      "Nahtlose Geschäftskontinuität"
+    ],
+    "metaTitle": "Datenbankmigrationsdienste | PakSoft",
+    "metaDescription": "Migrieren Sie Ihre Datenbanken ohne Datenverlust in die Cloud oder auf moderne Plattformen. Kontaktieren Sie PakSoft für eine sichere Migration.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Bewertung & Analyse",
+          "description": "Wir analysieren Ihr Quelldatenbankschema, das Datenvolumen und die Abhängigkeiten, um potenzielle Engpässe zu identifizieren. Diese erste Phase legt die grundlegenden Leistungsmetriken und Kompatibilitätsanforderungen fest."
+        },
+        {
+          "step": 2,
+          "title": "Schema-Konvertierung",
+          "description": "Wir konvertieren und optimieren Datenbankschemata, gespeicherte Prozeduren und Trigger für die Zielplattform. Automatisierte Tools werden mit manuellem Refactoring kombiniert, um absolute Kompatibilität zu gewährleisten."
+        },
+        {
+          "step": 3,
+          "title": "Replikations-Setup",
+          "description": "Wir richten eine kontinuierliche Datenreplikation zwischen Quell- und Zieldatenbank über sichere Kanäle ein. Dadurch bleibt das Zielsystem in Echtzeit synchronisiert, ohne die Leistung der Produktionsumgebung zu beeinträchnen."
+        },
+        {
+          "step": 4,
+          "title": "Validierung & Tests",
+          "description": "Wir führen strenge Datenintegritätsprüfungen, Zeilenabgleiche und Testläufe durch, um die Genauigkeit zu verifizieren. Leistungstests stellen sicher, dass die Zieldatenbank die ursprünglichen Benchmarks erreicht oder übertrifft."
+        },
+        {
+          "step": 5,
+          "title": "Cutover-Ausführung",
+          "description": "Wir führen den endgültigen Cutover während eines vorab genehmigten Wartungsfensters mit geringem Datenverkehr durch, um die Auswirkungen zu minimieren. DNS- und Anwendungs-Verbindungsstrings werden schnell aktualisiert."
+        },
+        {
+          "step": 6,
+          "title": "Support nach der Migration",
+          "description": "Wir überwachen die neue Datenbankumgebung genau, um unmittelbare Leistungsanomalien sofort zu beheben. Wir bieten fortlaufende Optimierung und übergeben eine vollständige Dokumentation an Ihr internes Team."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie garantieren Sie absolute Datensicherheit während der Migration?",
+          "answer": "Wir verwenden kontinuierliche Replikationstools wie AWS DMS oder pgloader, um Daten in Echtzeit zu synchronisieren. Vor dem endgültigen Cutover führen wir strenge Checksummen-Validierungen und Zeilenabgleiche durch, um sicherzustellen, dass jeder Datensatz korrekt übertragen wurde."
+        },
+        {
+          "question": "Wie lange dauert die Ausfallzeit bei einer Datenbankmigration typischerweise?",
+          "answer": "Durch den Einsatz von Live-Replikation und CDC-Technologien (Change Data Capture) reduzieren wir die tatsächliche Ausfallzeit auf wenige Minuten oder Sekunden. Die einzige minimale Unterbrechung tritt während der DNS- und Verbindungsstring-Umstellung auf."
+        },
+        {
+          "question": "Können Sie Datenbanken zwischen verschiedenen Systemen wie Oracle und PostgreSQL migrieren?",
+          "answer": "Ja, wir sind auf heterogene Migrationen spezialisiert. Wir nutzen hochentwickelte Schema-Konvertierungstools zur Übersetzung von Datenbankobjekten und passen komplexe gespeicherte Prozeduren manuell an, um die volle Kompatibilität mit dem Zielsystem zu gewährleisten."
+        },
+        {
+          "question": "Wie gewährleisten Sie Sicherheit und Compliance während der Datenübertragung?",
+          "answer": "Alle Daten werden sowohl während der Übertragung als auch im Ruhezustand mit TLS- und AES-256-Protokollen verschlüsselt. Zudem richten wir sichere VPN-Tunnel oder dedizierte Netzwerkverbindungen ein, um eine Offenlegung im öffentlichen Internet zu verhindern."
+        },
+        {
+          "question": "Was passiert, wenn die Migration während des Cutovers fehlschlägt?",
+          "answer": "Wir erstellen für jedes Projekt einen umfassenden, getesteten Rollback-Plan. Sollte während des Cutover-Fensters eine kritische Metrik fehlschlagen, können wir den Datenverkehr ohne Datenverlust oder längere Ausfallzeiten sofort auf die Quelldatenbank zurückleiten."
+        },
+        {
+          "question": "Unterstützen Sie Cloud-Migrationen zu AWS, Azure oder Google Cloud?",
+          "answer": "Ja, wir migrieren On-Premises-Datenbanken auf verwaltete Cloud-Dienste wie AWS RDS, Azure SQL oder Google Cloud SQL. Dieser Übergang reduziert den administrativen Aufwand erheblich und verbessert die Skalierbarkeit."
+        },
+        {
+          "question": "Wie handhaben Sie sehr große Datenbanken (VLDB) mit mehr als 10 Terabyte?",
+          "answer": "Bei extrem großen Datenbanken nutzen wir physische Transportmethoden oder ein initiales Backup-Seeding in Kombination mit Delta-Replikation. Dies verhindert Netzwerkengpässe und stellt sicher, dass die Migration in einem vorhersehbaren Zeitrahmen abgeschlossen wird."
+        },
+        {
+          "question": "Ist eine Leistungsoptimierung nach der Migration in Ihrem Service enthalten?",
+          "answer": "Ja, die Optimierung nach der Migration ist ein zentraler Bestandteil unseres Prozesses. Wir optimieren Indizes, aktualisieren Statistiken und passen Konfigurationsparameter an, um sicherzustellen, dass Ihre neue Datenbank schneller läuft als die alte."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "AWS DMS",
+          "icon": "aws-dms"
+        },
+        {
+          "name": "pgloader",
+          "icon": "pgloader"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "MySQL",
+          "icon": "mysql"
+        },
+        {
+          "name": "Oracle",
+          "icon": "oracle"
+        },
+        {
+          "name": "Microsoft SQL Server",
+          "icon": "sql-server"
+        },
+        {
+          "name": "MongoDB",
+          "icon": "mongodb"
+        },
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "ڈیٹا بیس مائیگریشن",
+    "shortDescription": "اپنے اہم کاروباری ڈیٹا بیسز کو بغیر کسی ڈیٹا کے نقصان، کم سے کم ڈاؤن ٹائم، اور مکمل اسکیما کی توثیق کے ساتھ مختلف پلیٹ فارمز، ورژنز یا کلاؤڈ پر منتقل کریں۔",
+    "fullDescription": "پروڈکشن ڈیٹا بیسز کی منتقلی کے لیے انتہائی محتاط منصوبہ بندی کی ضرورت ہوتی ہے تاکہ ڈیٹا کی خرابی اور مہنگے ڈاؤن ٹائم سے بچا جا سکے۔ PakSoft اینڈ ٹو اینڈ ڈیٹا بیس مائیگریشن سروسز فراہم کرتا ہے، جو آپ کے پرانے سسٹمز، آن پریمیسس ڈیٹا بیسز، یا کلاؤڈ انسٹنسز کو جدید، بہتر پلیٹ فارمز پر منتقل کرتا ہے۔ ہم ہیٹروجینیس مائیگریشنز (جیسے Oracle سے PostgreSQL) اور ہوموجینیس اپ گریڈز میں مہارت رکھتے ہیں۔ ہمارے انجینئرز لائیو سنکرونائزیشن کو یقینی بنانے کے لیے جدید ریپلیکیشن ٹولز کا استعمال کرتے ہیں۔ ہر مائیگریشن سخت اسکیما میپنگ، ڈیٹا کی سالمیت کی توثیق، اور کارکردگی کی ٹیوننگ سے گزرتی ہے۔ ہم تفصیلی رول بیک حکمت عملیوں کے ساتھ خطرات کو کم کرتے ہیں تاکہ آپ کے کاروباری آپریشنز بلا رکاوٹ جاری رہیں۔",
+    "features": [
+      "ہیٹروجینیس اسکیما کنورژن",
+      "زیرو ڈاؤن ٹائم لائیو ریپلیکیشن",
+      "خودکار ڈیٹا کی توثیق",
+      "کراس کلاؤڈ ڈیٹا بیس مائیگریشن",
+      "لیگیسی ورژن اپ گریڈز",
+      "مائیگریشن کے بعد کارکردگی کی ٹیوننگ",
+      "جامع رول بیک پلاننگ",
+      "سیکیورٹی اور تعمیل کا آڈٹ"
+    ],
+    "benefits": [
+      "زیرو ڈیٹا لاس کی ضمانت",
+      "کم سے کم ایپلیکیشن ڈاؤن ٹائم",
+      "انفراسٹرکچر کے اخراجات میں کمی",
+      "بہتر ڈیٹا بیس کارکردگی",
+      "جدید سیکیورٹی تعمیل",
+      "بغیر کسی رکاوٹ کے کاروباری تسلسل"
+    ],
+    "metaTitle": "ڈیٹا بیس مائیگریشن سروسز | PakSoft",
+    "metaDescription": "اپنے ڈیٹا بیس کو بغیر کسی ڈیٹا کے نقصان کے کلاؤڈ یا جدید پلیٹ فارمز پر منتقل کریں۔ محفوظ اور تیز منتقلی کے لیے آج ہی PakSoft سے رابطہ کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تشخیص اور دریافت",
+          "description": "ہم ممکنہ رکاوٹوں کی نشاندہی کرنے کے لیے آپ کے سورس ڈیٹا بیس اسکیما، حجم اور انحصار کا تجزیہ کرتے ہیں۔ یہ ابتدائی مرحلہ بنیادی کارکردگی کے میٹرکس اور مطابقت کی ضروریات کو قائم کرتا ہے۔"
+        },
+        {
+          "step": 2,
+          "title": "اسکیما کنورژن",
+          "description": "ہم ٹارگٹ پلیٹ فارم کے لیے ڈیٹا بیس اسکیما، اسٹورڈ پروسیجرز اور ٹرگرز کو تبدیل اور بہتر بناتے ہیں۔ مکمل مطابقت کو یقینی بنانے کے لیے خودکار ٹولز کو مینوئل ریفیکٹرنگ کے ساتھ ملایا جاتا ہے۔"
+        },
+        {
+          "step": 3,
+          "title": "ریپلیکیشن سیٹ اپ",
+          "description": "ہم محفوظ چینلز کا استعمال کرتے ہوئے سورس اور ٹارگٹ ڈیٹا بیس کے درمیان مسلسل ڈیٹا ریپلیکیشن قائم کرتے ہیں۔ یہ پروڈکشن کی کارکردگی کو متاثر کیے بغیر ٹارگٹ سسٹم کو ریئل ٹائم میں ہم آہنگ رکھتا ہے۔"
+        },
+        {
+          "step": 4,
+          "title": "توثیق اور ٹیسٹنگ",
+          "description": "ہم درستگی کی تصدیق کے لیے ڈیٹا کی سالمیت کی سخت جانچ، قطاروں کی گنتی، اور ڈرائی رن کٹ اوور انجام دیتے ہیں۔ کارکردگی کی جانچ یہ یقینی بنانے کے لیے کی جاتی ہے کہ ٹارگٹ ڈیٹا بیس اصل معیارات پر پورا اترتا ہے۔"
+        },
+        {
+          "step": 5,
+          "title": "کٹ اوور کا نفاذ",
+          "description": "ہم کاروباری اثرات کو کم کرنے کے لیے پہلے سے منظور شدہ، کم ٹریفک والے مینٹیننس ونڈو کے دوران حتمی کٹ اوور انجام دیتے ہیں۔ منتقلی کو مکمل کرنے کے لیے DNS اور ایپلیکیشن کنکشن اسٹرنگز کو تیزی سے اپ ڈیٹ کیا جاتا ہے۔"
+        },
+        {
+          "step": 6,
+          "title": "مائیگریشن کے بعد سپورٹ",
+          "description": "ہم کسی بھی فوری کارکردگی کی خرابی کو حل کرنے کے لیے نئے ڈیٹا بیس ماحول کی قریب سے نگرانی کرتے ہیں۔ ہم جاری آپٹیمائزیشن فراہم کرتے ہیں اور آپ کی اندرونی ٹیم کو مکمل دستاویزات فراہم کرتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "آپ مائیگریشن کے دوران ڈیٹا کے صفر نقصان کو کیسے یقینی بناتے ہیں؟",
+          "answer": "ہم ریئل ٹائم میں ڈیٹا کو ہم آہنگ کرنے کے لیے AWS DMS یا pgloader جیسے مسلسل ڈیٹا ریپلیکیشن ٹولز کا استعمال کرتے ہیں۔ حتمی کٹ اوور سے پہلے، ہم سخت چیک سم توثیق اور قطاروں کی گنتی کی تصدیق کرتے ہیں تاکہ یہ ضمانت دی جا سکے کہ ہر ریکارڈ درست طریقے سے منتقل ہوا ہے۔"
+        },
+        {
+          "question": "ڈیٹا بیس مائیگریشن کے دوران عام طور پر کتنا ڈاؤن ٹائم ہوتا ہے؟",
+          "answer": "لائیو ریپلیکیشن اور CDC ٹیکنالوجیز کا استعمال کرتے ہوئے، ہم اصل ڈاؤن ٹائم کو صرف چند منٹوں یا سیکنڈوں تک محدود کر دیتے ہیں۔ واحد ڈاؤن ٹائم حتمی DNS اور کنکشن اسٹرنگ کی تبدیلی کے دوران ہوتا ہے۔"
+        },
+        {
+          "question": "کیا آپ مختلف انجنوں، جیسے Oracle سے PostgreSQL کے درمیان ڈیٹا بیس منتقل کر سکتے ہیں؟",
+          "answer": "جی ہاں، ہم ہیٹروجینیس مائیگریشنز میں مہارت رکھتے ہیں۔ ہم ڈیٹا بیس اشیاء کا ترجمہ کرنے کے لیے جدید اسکیما کنورژن ٹولز کا استعمال کرتے ہیں اور پھر ٹارگٹ انجن کے ساتھ مکمل مطابقت کو یقینی بنانے کے لیے پیچیدہ اسٹورڈ پروسیجرز کو مینوئل ریفیکٹر کرتے ہیں۔"
+        },
+        {
+          "question": "آپ منتقلی کے دوران سیکیورٹی اور تعمیل کو کیسے سنبھالتے ہیں؟",
+          "answer": "تمام ڈیٹا کو انڈسٹری اسٹینڈرڈ TLS اور AES-256 پروٹوکولز کا استعمال کرتے ہوئے ٹرانزٹ اور ریسٹ دونوں حالتوں میں انکرپٹ کیا جاتا ہے۔ ہم پبلک انٹرنیٹ پر ڈیٹا کے افشا ہونے سے بچنے کے لیے محفوظ VPN ٹنل یا مخصوص نیٹ ورک کنکشن بھی قائم کرتے ہیں۔"
+        },
+        {
+          "question": "اگر کٹ اوور کے دوران مائیگریشن ناکام ہو جائے تو کیا ہوگا؟",
+          "answer": "ہم ہر پروجیکٹ کے لیے ایک جامع، ٹیسٹ شدہ رول بیک پلان ڈیزائن کرتے ہیں۔ اگر کٹ اوور ونڈو کے دوران کوئی بھی اہم میٹرک ناکام ہو جاتا ہے، تو ہم ڈیٹا کے نقصان یا طویل ڈاؤن ٹائم کے بغیر ٹریفک کو فوری طور پر سورس ڈیٹا بیس پر واپس منتقل کر سکتے ہیں۔"
+        },
+        {
+          "question": "کیا آپ AWS، Azure، یا Google Cloud پر کلاؤڈ مائیگریشن کی حمایت کرتے ہیں؟",
+          "answer": "بالکل، ہم آن پریمیسس ڈیٹا بیسز کو منظم کلاؤڈ سروسز جیسے AWS RDS، Azure SQL، یا Google Cloud SQL پر منتقل کرتے ہیں۔ یہ منتقلی انتظامی اخراجات کو کم کرنے اور اسکیل ایبلٹی کو بہتر بنانے میں مدد کرتی ہے۔"
+        },
+        {
+          "question": "آپ 10 ٹیرابائٹ سے زیادہ کے بہت بڑے ڈیٹا بیسز (VLDB) کو کیسے سنبھالتے ہیں؟",
+          "answer": "انتہائی بڑے ڈیٹا بیسز کے لیے، ہم فزیکل ٹرانسپورٹ کے طریقے یا ڈیلٹا ریپلیکیشن کے ساتھ مل کر ابتدائی بیک اپ سیڈنگ کا استعمال کرتے ہیں۔ یہ نیٹ ورک کی رکاوٹوں کو روکتا ہے اور یہ یقینی بناتا ہے کہ مائیگریشن ایک قابل پیشن گوئی وقت کے اندر مکمل ہو۔"
+        },
+        {
+          "question": "کیا مائیگریشن کے بعد کارکردگی کی ٹیوننگ آپ کی سروس میں شامل ہے؟",
+          "answer": "جی ہاں، مائیگریشن کے بعد ٹیوننگ ہمارے عمل کا ایک بنیادی حصہ ہے۔ ہم انڈیکس کو بہتر بناتے ہیں، اعداد و شمار کو اپ ڈیٹ کرتے ہیں، اور کنفیگریشن پیرامیٹرز کو ایڈجسٹ کرتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ آپ کا نیا ڈیٹا بیس پرانے سے زیادہ تیزی سے چلتا ہے۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "AWS DMS",
+          "icon": "aws-dms"
+        },
+        {
+          "name": "pgloader",
+          "icon": "pgloader"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "MySQL",
+          "icon": "mysql"
+        },
+        {
+          "name": "Oracle",
+          "icon": "oracle"
+        },
+        {
+          "name": "Microsoft SQL Server",
+          "icon": "sql-server"
+        },
+        {
+          "name": "MongoDB",
+          "icon": "mongodb"
+        },
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "ترحيل قواعد البيانات",
+    "shortDescription": "قم بترحيل قواعد البيانات الحساسة لمؤسستك عبر الأنظمة الأساسية أو الإصدارات أو البيئات السحابية مع ضمان عدم فقدان البيانات، وتقليل وقت التوقف عن العمل، والتحقق الشامل من المخطط.",
+    "fullDescription": "يتطلب نقل قواعد البيانات الإنتاجية تخطيطًا دقيقًا لمنع تلف البيانات ووقت التوقف المكلف عن العمل. تقدم PakSoft خدمات ترحيل قواعد البيانات الشاملة، حيث تنقل أنظمتك القديمة، أو قواعد البيانات المحلية، أو المثيلات السحابية إلى منصات حديثة ومحسنة. نحن متخصصون في عمليات الترحيل غير المتجانسة (مثل Oracle إلى PostgreSQL) والترقيات المتجانسة. يستخدم مهندسونا أدوات نسخ متقدمة لإجراء عمليات مزامنة حية، مما يضمن نافذة انتقال سلسة. يخضع كل ترحيل لعمليات رسم خرائط المخطط الصارمة، والتحقق من سلامة البيانات، وضبط الأداء. نحن نخفف المخاطر من خلال استراتيجيات تراجع مفصلة، مما يضمن بقاء عمليات عملك دون انقطاع طوال عملية الانتقال بأكملها.",
+    "features": [
+      "تحويل المخطط غير المتجانس",
+      "نسخ متماثل حي بدون توقف",
+      "التحقق الآلي من البيانات",
+      "ترحيل قواعد البيانات عبر السحاب",
+      "ترقية الإصدارات القديمة",
+      "ضبط الأداء بعد الترحيل",
+      "تخطيط شامل للتراجع",
+      "تدقيق الأمان والامتثال"
+    ],
+    "benefits": [
+      "ضمان عدم فقدان البيانات",
+      "تقليل وقت توقف التطبيقات",
+      "خفض تكاليف البنية التحتية",
+      "تحسين أداء قواعد البيانات",
+      "تحديث الامتثال الأمني",
+      "استمرارية الأعمال بسلاسة"
+    ],
+    "metaTitle": "خدمات ترحيل قواعد البيانات | PakSoft",
+    "metaDescription": "قم بترحيل قواعد البيانات الخاصة بك إلى السحابة أو المنصات الحديثة دون فقدان البيانات. اتصل بـ PakSoft اليوم لترحيل آمن وبدون توقف.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "التقييم والاكتشاف",
+          "description": "نقوم بتحليل مخطط قاعدة البيانات المصدر وحجمها والاعتمادات لتحديد اختناقات الترحيل المحتملة. تحدد هذه المرحلة الأولية مقاييس الأداء الأساسية ومتطلبات التوافق."
+        },
+        {
+          "step": 2,
+          "title": "تحويل المخطط",
+          "description": "نقوم بتحويل وتحسين مخططات قواعد البيانات والإجراءات المخزنة والمشغلات للمنصة المستهدفة. يتم دمج الأدوات الآلية مع إعادة صياغة التعليمات البرمجية يدويًا لضمان التوافق المطلق."
+        },
+        {
+          "step": 3,
+          "title": "إعداد النسخ المتماثل",
+          "description": "ننشئ نسخًا متماثلاً مستمرًا للبيانات بين قواعد البيانات المصدر والمستهدفة باستخدام قنوات آمنة. يحافظ هذا على مزامنة النظام المستهدف في الوقت الفعلي دون التأثير على أداء الإنتاج."
+        },
+        {
+          "step": 4,
+          "title": "التحقق والاختبار",
+          "description": "نقوم بإجراء فحوصات صارمة لسلامة البيانات، وعد الصفوف، وعمليات ترحيل تجريبية للتحقق من الدقة. يتم إجراء اختبار الأداء لضمان تلبية قاعدة البيانات المستهدفة للمعايير الأصلية أو تجاوزها."
+        },
+        {
+          "step": 5,
+          "title": "تنفيذ الانتقال",
+          "description": "نقوم بتنفيذ الانتقال النهائي خلال نافذة صيانة معتمدة مسبقًا ومنخفضة حركة المرور لتقليل تأثير الأعمال. يتم تحديث سلاسل اتصال DNS والتطبيقات بسرعة لإكمال الانتقال."
+        },
+        {
+          "step": 6,
+          "title": "دعم ما بعد الترحيل",
+          "description": "نراقب بيئة قاعدة البيانات الجديدة عن كثب لحل أي مشكلات غير طبيعية في الأداء على الفور. نحن نقدم تحسينًا مستمرًا ونسلم الوثائق الكاملة لفريقك الداخلي."
+        }
+      ],
+      "faq": [
+        {
+          "question": "كيف تضمنون عدم فقدان البيانات أثناء الترحيل؟",
+          "answer": "نحن نستخدم أدوات نسخ متماثل مستمر للبيانات مثل AWS DMS أو pgloader لمزامنة البيانات في الوقت الفعلي. قبل الانتقال النهائي، نقوم بإجراء تحقق صارم من المجموع التدقيقي (checksum) والتحقق من عدد الصفوف لضمان نقل كل سجل بدقة."
+        },
+        {
+          "question": "ما هو وقت التوقف النموذجي أثناء ترحيل قاعدة البيانات؟",
+          "answer": "من خلال استخدام تقنيات النسخ المتماثل الحي والتقاط تغيير البيانات (CDC)، نقوم بتقليل وقت التوقف الفعلي إلى بضع دقائق أو ثوانٍ فقط. يحدث وقت التوقف الوحيد أثناء التبديل النهائي لـ DNS وسلسلة الاتصال."
+        },
+        {
+          "question": "هل يمكنكم ترحيل قواعد البيانات بين محركات مختلفة، مثل Oracle إلى PostgreSQL؟",
+          "answer": "نعم، نحن متخصصون في عمليات الترحيل غير المتجانسة. نستخدم أدوات تحويل المخطط المتقدمة لترجمة كائنات قاعدة البيانات، ثم نعيد صياغة الإجراءات المخزنة المعقدة يدويًا لضمان التوافق التام مع المحرك المستهدف."
+        },
+        {
+          "question": "كيف تتعاملون مع الأمان والامتثال أثناء النقل؟",
+          "answer": "يتم تشفير جميع البيانات أثناء النقل وأثناء السكون باستخدام بروتوكولات TLS و AES-256 القياسية في الصناعة. ننشئ أيضًا أنفاق VPN آمنة أو اتصالات شبكة مخصصة لمنع التعرض للإنترنت العام."
+        },
+        {
+          "question": "ماذا يحدث إذا فشل الترحيل أثناء عملية الانتقال؟",
+          "answer": "نحن نصمم خطة تراجع شاملة ومختبرة لكل مشروع. إذا فشل أي مقياس حاسم خلال نافذة الانتقال، يمكننا إعادة حركة المرور فورًا إلى قاعدة البيانات المصدر دون فقدان البيانات أو وقت توقف ممتد."
+        },
+        {
+          "question": "هل تدعمون عمليات الترحيل السحابي إلى AWS أو Azure أو Google Cloud؟",
+          "answer": "بالتأكيد، نقوم بترحيل قواعد البيانات المحلية إلى الخدمات السحابية المدارة مثل AWS RDS أو Azure SQL أو Google Cloud SQL. يساعد هذا الانتقال في تقليل النفقات الإدارية وتحسين القابلية للتوسع."
+        },
+        {
+          "question": "كيف تتعاملون مع قواعد البيانات الكبيرة جدًا (VLDB) التي تزيد عن 10 تيرابايت؟",
+          "answer": "بالنسبة لقواعد البيانات الكبيرة للغاية، نستخدم طرق النقل المادي أو بذر النسخ الاحتياطي الأولي جنبًا إلى جنب مع النسخ المتماثل للدلتا. هذا يمنع اختناقات الشبكة ويضمن اكتمال الترحيل في إطار زمني يمكن التنبؤ به."
+        },
+        {
+          "question": "هل يتم تضمين ضبط الأداء بعد الترحيل في خدمتكم؟",
+          "answer": "نعم، يعد ضبط ما بعد الترحيل جزءًا أساسيًا من عمليتنا. نقوم بتحسين الفهارس وتحديث الإحصاءات وضبط معلمات التكوين لضمان تشغيل قاعدة البيانات الجديدة بشكل أسرع من القديمة."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "AWS DMS",
+          "icon": "aws-dms"
+        },
+        {
+          "name": "pgloader",
+          "icon": "pgloader"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "MySQL",
+          "icon": "mysql"
+        },
+        {
+          "name": "Oracle",
+          "icon": "oracle"
+        },
+        {
+          "name": "Microsoft SQL Server",
+          "icon": "sql-server"
+        },
+        {
+          "name": "MongoDB",
+          "icon": "mongodb"
+        },
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        }
+      ]
+    }
+  }
+}

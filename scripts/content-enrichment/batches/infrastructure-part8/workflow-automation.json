@@ -1,0 +1,278 @@
+{
+  "slug": "workflow-automation",
+  "en": {
+    "name": "Workflow Automation",
+    "shortDescription": "Automate the repetitive business workflows that drain your team's time. We connect your apps and build reliable automations for reports, data entry, approvals, and integrations, so work runs itself.",
+    "fullDescription": "Every hour your team spends copying data between systems, chasing approvals, or compiling the same report is an hour not spent on real work, and a chance for human error. We map your manual processes and automate them end to end, connecting the tools you already use through platforms like Zapier, Make, and n8n, or custom code for complex logic. From lead routing and invoice processing to scheduled reports, file management, and multi-step approvals, we build automations that are reliable, observable, and easy to maintain. Crucially, we design with error handling, retries, and alerts from the start, so an automation fails loudly and safely instead of silently corrupting data. The result is a team freed from busywork and processes that run consistently, day and night.",
+    "features": [
+      "Process mapping and automation strategy",
+      "App integration via Zapier, Make & n8n",
+      "Custom automations and API integrations",
+      "Automated reporting and data syncing",
+      "Approval flows and notification routing",
+      "Document and file management automation",
+      "Error handling, retries, and alerting",
+      "Monitoring and maintenance of automations"
+    ],
+    "benefits": [
+      "Free your team from repetitive busywork",
+      "Eliminate copy-paste errors between systems",
+      "Run processes 24/7 without manual effort",
+      "Speed up approvals and handoffs",
+      "Scale operations without adding headcount",
+      "Get reliable automations that fail safely, not silently"
+    ],
+    "metaTitle": "Workflow Automation Services | PakSoft",
+    "metaDescription": "Automate repetitive workflows for reports, data entry, approvals, and integrations with Zapier, Make, n8n, and custom code. Save time and cut errors. Get started today.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Process Discovery", "description": "We map your current manual workflows step by step and the tools they touch. This reveals where automation saves the most time and removes the most risk." },
+        { "step": 2, "title": "Opportunity & Tooling", "description": "We prioritise workflows by impact and choose the right platform for each. Simple connectors suit many tasks, while complex logic may need custom code." },
+        { "step": 3, "title": "Design & Mapping", "description": "We design the trigger, steps, data mapping, and edge cases for each automation. Clear design prevents the silent data issues that plague rushed automations." },
+        { "step": 4, "title": "Build & Integrate", "description": "We build the automations and connect your apps via APIs and webhooks. Every flow is built with error handling and retries from the outset." },
+        { "step": 5, "title": "Test & Validate", "description": "We test against real and edge-case data before anything touches production. Validation ensures the automation behaves correctly when inputs are messy." },
+        { "step": 6, "title": "Monitor & Maintain", "description": "We add alerting and monitor your automations so failures surface immediately. We then adapt flows as your tools and processes evolve." }
+      ],
+      "faq": [
+        { "question": "Which tasks are worth automating?", "answer": "The best candidates are repetitive, rule-based tasks done frequently, such as data entry, report generation, lead routing, and notifications. We help you identify the workflows with the highest time savings and lowest risk." },
+        { "question": "Do we need custom code, or can off-the-shelf tools handle it?", "answer": "Many workflows are fully served by platforms like Zapier, Make, or n8n. We use custom code only when logic, scale, or integrations exceed what no-code tools can do, keeping cost and complexity appropriate." },
+        { "question": "What is the difference between Zapier, Make, and n8n?", "answer": "Zapier is the simplest and most polished, Make offers more complex visual logic at lower cost, and n8n is open-source and self-hostable for full control. We pick based on your needs, budget, and data-privacy requirements." },
+        { "question": "What happens if an automation fails?", "answer": "We build in error handling, automatic retries, and alerts, so failures are caught and surfaced instead of silently losing data. You are notified and the flow can pause safely until resolved." },
+        { "question": "Can you automate workflows across our existing tools?", "answer": "Yes. We connect CRMs, spreadsheets, email, accounting, and custom systems through their APIs, so data flows automatically between the tools your team already relies on." },
+        { "question": "Will automation replace our staff?", "answer": "No, it removes the tedious busywork so your team can focus on higher-value work. Automation handles the repetitive steps while people handle judgement, relationships, and exceptions." },
+        { "question": "How much time can we realistically save?", "answer": "It varies by process, but automating a daily multi-step task often saves several hours per week per person, and the savings compound as you automate more workflows." },
+        { "question": "How do you keep automations working as our tools change?", "answer": "We monitor for failures and design flows to be maintainable, then update them when an app's API or your process changes, so automations keep running reliably over time." }
+      ],
+      "technologies": [
+        { "name": "Zapier", "icon": "zapier" },
+        { "name": "Make", "icon": "make" },
+        { "name": "n8n", "icon": "n8n" },
+        { "name": "Python", "icon": "python" },
+        { "name": "Power Automate", "icon": "power-automate" },
+        { "name": "Apache Airflow", "icon": "apache-airflow" },
+        { "name": "Temporal", "icon": "temporal" },
+        { "name": "Webhooks", "icon": "webhook" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "İş Akışı Otomasyonu",
+    "shortDescription": "Ekibinizin zamanını tüketen tekrarlayan iş akışlarını otomatikleştirin. Uygulamalarınızı bağlar ve raporlar, veri girişi, onaylar ve entegrasyonlar için güvenilir otomasyonlar kurarız; böylece iş kendi kendine yürür.",
+    "fullDescription": "Ekibinizin sistemler arasında veri kopyalamak, onay kovalamak veya aynı raporu derlemek için harcadığı her saat, gerçek işe ayrılmayan bir saat ve bir insan hatası fırsatıdır. Manuel süreçlerinizi haritalar ve uçtan uca otomatikleştiririz; halihazırda kullandığınız araçları Zapier, Make ve n8n gibi platformlar veya karmaşık mantık için özel kod aracılığıyla bağlarız. Müşteri adayı yönlendirme ve fatura işlemeden zamanlanmış raporlara, dosya yönetimine ve çok adımlı onaylara kadar güvenilir, gözlemlenebilir ve bakımı kolay otomasyonlar kurarız. Önemlisi, baştan hata işleme, yeniden denemeler ve uyarılarla tasarlarız; böylece bir otomasyon veriyi sessizce bozmak yerine yüksek sesle ve güvenli biçimde başarısız olur. Sonuç, angaryadan kurtulmuş bir ekip ve gece gündüz tutarlı çalışan süreçlerdir.",
+    "features": [
+      "Süreç haritalama ve otomasyon stratejisi",
+      "Zapier, Make ve n8n ile uygulama entegrasyonu",
+      "Özel otomasyonlar ve API entegrasyonları",
+      "Otomatik raporlama ve veri senkronizasyonu",
+      "Onay akışları ve bildirim yönlendirme",
+      "Belge ve dosya yönetimi otomasyonu",
+      "Hata işleme, yeniden deneme ve uyarı",
+      "Otomasyonların izlenmesi ve bakımı"
+    ],
+    "benefits": [
+      "Ekibinizi tekrarlayan angaryadan kurtarın",
+      "Sistemler arası kopyala-yapıştır hatalarını ortadan kaldırın",
+      "Süreçleri manuel çaba olmadan 7/24 çalıştırın",
+      "Onayları ve devirleri hızlandırın",
+      "Personel eklemeden operasyonları ölçekleyin",
+      "Sessizce değil, güvenli başarısız olan otomasyonlar edinin"
+    ],
+    "metaTitle": "İş Akışı Otomasyonu Hizmetleri | PakSoft",
+    "metaDescription": "Raporlar, veri girişi, onaylar ve entegrasyonlar için tekrarlayan iş akışlarını Zapier, Make, n8n ve özel kodla otomatikleştirin. Zaman kazanın, hataları azaltın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Süreç Keşfi", "description": "Mevcut manuel iş akışlarınızı adım adım ve dokundukları araçları haritalarız. Bu, otomasyonun en çok zaman kazandırdığı ve en çok riski kaldırdığı yerleri ortaya çıkarır." },
+        { "step": 2, "title": "Fırsat ve Araç Seçimi", "description": "İş akışlarını etkiye göre önceliklendirir ve her biri için doğru platformu seçeriz. Basit konnektörler birçok göreve uyar, karmaşık mantık ise özel kod gerektirebilir." },
+        { "step": 3, "title": "Tasarım ve Eşleme", "description": "Her otomasyon için tetikleyiciyi, adımları, veri eşlemesini ve uç durumları tasarlarız. Net tasarım, aceleye gelen otomasyonların yaşadığı sessiz veri sorunlarını önler." },
+        { "step": 4, "title": "Geliştirme ve Entegrasyon", "description": "Otomasyonları kurar ve uygulamalarınızı API'ler ve webhook'lar aracılığıyla bağlarız. Her akış en baştan hata işleme ve yeniden denemelerle inşa edilir." },
+        { "step": 5, "title": "Test ve Doğrulama", "description": "Production'a dokunmadan önce gerçek ve uç durum verisine karşı test ederiz. Doğrulama, girdiler dağınık olduğunda otomasyonun doğru davranmasını sağlar." },
+        { "step": 6, "title": "İzleme ve Bakım", "description": "Uyarı ekler ve otomasyonlarınızı izleriz, böylece arızalar hemen yüzeye çıkar. Ardından araçlarınız ve süreçleriniz geliştikçe akışları uyarlarız." }
+      ],
+      "faq": [
+        { "question": "Hangi görevleri otomatikleştirmeye değer?", "answer": "En iyi adaylar sık yapılan, tekrarlayan, kurala dayalı görevlerdir; örneğin veri girişi, rapor oluşturma, müşteri adayı yönlendirme ve bildirimler. En yüksek zaman tasarrufu ve en düşük riskli iş akışlarını belirlemenize yardım ederiz." },
+        { "question": "Özel kod mu gerekir, yoksa hazır araçlar yeterli mi?", "answer": "Birçok iş akışı Zapier, Make veya n8n gibi platformlarla tamamen karşılanır. Mantık, ölçek veya entegrasyonlar no-code araçların yapabileceğini aştığında özel kod kullanırız, maliyeti ve karmaşıklığı uygun tutarak." },
+        { "question": "Zapier, Make ve n8n arasındaki fark nedir?", "answer": "Zapier en basit ve en cilalı olanıdır, Make daha düşük maliyetle daha karmaşık görsel mantık sunar, n8n ise tam kontrol için açık kaynak ve kendi sunucunuzda barındırılabilir. İhtiyaçlarınıza, bütçenize ve veri gizliliği gereksinimlerinize göre seçeriz." },
+        { "question": "Bir otomasyon başarısız olursa ne olur?", "answer": "Hata işleme, otomatik yeniden denemeler ve uyarılar ekleriz; böylece arızalar veriyi sessizce kaybetmek yerine yakalanır ve yüzeye çıkar. Bilgilendirilirsiniz ve akış çözülene kadar güvenle duraklayabilir." },
+        { "question": "Mevcut araçlarımız genelinde iş akışlarını otomatikleştirebilir misiniz?", "answer": "Evet. CRM'leri, e-tabloları, e-postayı, muhasebeyi ve özel sistemleri API'leri aracılığıyla bağlarız, böylece veri ekibinizin halihazırda güvendiği araçlar arasında otomatik akar." },
+        { "question": "Otomasyon personelimizin yerini alır mı?", "answer": "Hayır, sıkıcı angaryayı kaldırır, böylece ekibiniz daha yüksek değerli işe odaklanabilir. Otomasyon tekrarlayan adımları ele alırken insanlar muhakeme, ilişkiler ve istisnaları yönetir." },
+        { "question": "Gerçekçi olarak ne kadar zaman kazanabiliriz?", "answer": "Sürece göre değişir, ancak günlük çok adımlı bir görevi otomatikleştirmek genellikle kişi başına haftada birkaç saat kazandırır ve daha fazla iş akışı otomatikleştikçe tasarruf birikir." },
+        { "question": "Araçlarımız değiştikçe otomasyonları nasıl çalışır tutuyorsunuz?", "answer": "Arızaları izler ve akışları bakımı yapılabilir tasarlarız, ardından bir uygulamanın API'si veya süreciniz değiştiğinde onları güncelleriz, böylece otomasyonlar zamanla güvenilir biçimde çalışmaya devam eder." }
+      ],
+      "technologies": [
+        { "name": "Zapier", "icon": "zapier" },
+        { "name": "Make", "icon": "make" },
+        { "name": "n8n", "icon": "n8n" },
+        { "name": "Python", "icon": "python" },
+        { "name": "Power Automate", "icon": "power-automate" },
+        { "name": "Apache Airflow", "icon": "apache-airflow" },
+        { "name": "Temporal", "icon": "temporal" },
+        { "name": "Webhooks", "icon": "webhook" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Workflow-Automatisierung",
+    "shortDescription": "Automatisieren Sie die repetitiven Geschäftsabläufe, die die Zeit Ihres Teams verschlingen. Wir verbinden Ihre Apps und bauen zuverlässige Automatisierungen für Reports, Dateneingabe, Freigaben und Integrationen – Arbeit erledigt sich selbst.",
+    "fullDescription": "Jede Stunde, die Ihr Team mit dem Kopieren von Daten zwischen Systemen, dem Hinterherjagen von Freigaben oder dem Zusammenstellen desselben Reports verbringt, ist eine Stunde ohne echte Arbeit und eine Chance für menschliche Fehler. Wir mappen Ihre manuellen Prozesse und automatisieren sie end-to-end, indem wir die bereits genutzten Tools über Plattformen wie Zapier, Make und n8n oder per Custom Code für komplexe Logik verbinden. Von Lead-Routing und Rechnungsverarbeitung über geplante Reports und Dateimanagement bis zu mehrstufigen Freigaben bauen wir Automatisierungen, die zuverlässig, beobachtbar und leicht zu warten sind. Entscheidend: Wir gestalten von Anfang an mit Fehlerbehandlung, Retries und Alerts, sodass eine Automatisierung laut und sicher scheitert, statt Daten still zu beschädigen. Das Ergebnis ist ein von Fleißarbeit befreites Team und Prozesse, die Tag und Nacht konsistent laufen.",
+    "features": [
+      "Prozess-Mapping und Automatisierungsstrategie",
+      "App-Integration via Zapier, Make & n8n",
+      "Custom-Automatisierungen und API-Integrationen",
+      "Automatisiertes Reporting und Datensynchronisation",
+      "Freigabe-Flows und Benachrichtigungs-Routing",
+      "Automatisierung von Dokumenten- und Dateimanagement",
+      "Fehlerbehandlung, Retries und Alerting",
+      "Monitoring und Wartung der Automatisierungen"
+    ],
+    "benefits": [
+      "Befreien Sie Ihr Team von repetitiver Fleißarbeit",
+      "Eliminieren Sie Copy-Paste-Fehler zwischen Systemen",
+      "Lassen Sie Prozesse 24/7 ohne manuellen Aufwand laufen",
+      "Beschleunigen Sie Freigaben und Übergaben",
+      "Skalieren Sie den Betrieb ohne zusätzliches Personal",
+      "Erhalten Sie Automatisierungen, die sicher statt still scheitern"
+    ],
+    "metaTitle": "Workflow-Automatisierung Services | PakSoft",
+    "metaDescription": "Automatisieren Sie repetitive Workflows für Reports, Dateneingabe, Freigaben und Integrationen mit Zapier, Make, n8n und Custom Code. Zeit sparen, Fehler senken.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Prozess-Discovery", "description": "Wir mappen Ihre aktuellen manuellen Workflows Schritt für Schritt samt der berührten Tools. Das zeigt, wo Automatisierung am meisten Zeit spart und Risiko entfernt." },
+        { "step": 2, "title": "Chancen & Tooling", "description": "Wir priorisieren Workflows nach Wirkung und wählen für jeden die richtige Plattform. Einfache Konnektoren passen für viele Aufgaben, komplexe Logik kann Custom Code erfordern." },
+        { "step": 3, "title": "Design & Mapping", "description": "Wir entwerfen Trigger, Schritte, Daten-Mapping und Edge Cases je Automatisierung. Klares Design verhindert die stillen Datenprobleme überhasteter Automatisierungen." },
+        { "step": 4, "title": "Bau & Integration", "description": "Wir bauen die Automatisierungen und verbinden Ihre Apps via APIs und Webhooks. Jeder Flow wird von Anfang an mit Fehlerbehandlung und Retries gebaut." },
+        { "step": 5, "title": "Test & Validierung", "description": "Wir testen gegen echte und Edge-Case-Daten, bevor etwas Production berührt. Validierung stellt sicher, dass die Automatisierung sich korrekt verhält, wenn Eingaben unsauber sind." },
+        { "step": 6, "title": "Monitoring & Wartung", "description": "Wir ergänzen Alerting und überwachen Ihre Automatisierungen, sodass Fehler sofort sichtbar werden. Dann passen wir Flows an, wenn sich Ihre Tools und Prozesse weiterentwickeln." }
+      ],
+      "faq": [
+        { "question": "Welche Aufgaben lohnt es sich zu automatisieren?", "answer": "Die besten Kandidaten sind häufige, repetitive, regelbasierte Aufgaben wie Dateneingabe, Reporterstellung, Lead-Routing und Benachrichtigungen. Wir helfen Ihnen, die Workflows mit der höchsten Zeitersparnis und dem geringsten Risiko zu identifizieren." },
+        { "question": "Brauchen wir Custom Code, oder reichen fertige Tools?", "answer": "Viele Workflows werden voll von Plattformen wie Zapier, Make oder n8n abgedeckt. Custom Code nutzen wir nur, wenn Logik, Skalierung oder Integrationen über No-Code-Tools hinausgehen, und halten Kosten und Komplexität angemessen." },
+        { "question": "Was ist der Unterschied zwischen Zapier, Make und n8n?", "answer": "Zapier ist am einfachsten und ausgereiftesten, Make bietet komplexere visuelle Logik zu geringeren Kosten, und n8n ist Open Source und selbst hostbar für volle Kontrolle. Wir wählen nach Bedarf, Budget und Datenschutzanforderungen." },
+        { "question": "Was passiert, wenn eine Automatisierung scheitert?", "answer": "Wir bauen Fehlerbehandlung, automatische Retries und Alerts ein, sodass Fehler erkannt und sichtbar gemacht werden, statt Daten still zu verlieren. Sie werden benachrichtigt, und der Flow kann sicher pausieren, bis es gelöst ist." },
+        { "question": "Können Sie Workflows über unsere bestehenden Tools hinweg automatisieren?", "answer": "Ja. Wir verbinden CRMs, Tabellen, E-Mail, Buchhaltung und Custom-Systeme über deren APIs, sodass Daten automatisch zwischen den Tools fließen, auf die sich Ihr Team bereits verlässt." },
+        { "question": "Ersetzt Automatisierung unsere Mitarbeiter?", "answer": "Nein, sie entfernt die mühsame Fleißarbeit, damit Ihr Team sich auf höherwertige Arbeit konzentrieren kann. Automatisierung übernimmt die repetitiven Schritte, während Menschen Urteil, Beziehungen und Ausnahmen managen." },
+        { "question": "Wie viel Zeit können wir realistisch sparen?", "answer": "Das variiert je nach Prozess, aber das Automatisieren einer täglichen mehrstufigen Aufgabe spart oft mehrere Stunden pro Woche und Person, und die Ersparnis summiert sich, je mehr Workflows Sie automatisieren." },
+        { "question": "Wie halten Sie Automatisierungen am Laufen, wenn sich unsere Tools ändern?", "answer": "Wir überwachen auf Fehler und gestalten Flows wartbar, dann aktualisieren wir sie, wenn sich die API einer App oder Ihr Prozess ändert, sodass Automatisierungen über die Zeit zuverlässig weiterlaufen." }
+      ],
+      "technologies": [
+        { "name": "Zapier", "icon": "zapier" },
+        { "name": "Make", "icon": "make" },
+        { "name": "n8n", "icon": "n8n" },
+        { "name": "Python", "icon": "python" },
+        { "name": "Power Automate", "icon": "power-automate" },
+        { "name": "Apache Airflow", "icon": "apache-airflow" },
+        { "name": "Temporal", "icon": "temporal" },
+        { "name": "Webhooks", "icon": "webhook" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "ورک فلو آٹومیشن",
+    "shortDescription": "وہ دہرائے جانے والے کاروباری workflows خودکار بنائیں جو آپ کی ٹیم کا وقت ضائع کرتے ہیں۔ ہم آپ کی apps جوڑتے اور رپورٹس، data entry، منظوریوں اور integrations کے لیے قابلِ اعتماد automations بناتے ہیں، تاکہ کام خود بخود چلے۔",
+    "fullDescription": "آپ کی ٹیم کا ہر گھنٹہ جو سسٹمز کے درمیان ڈیٹا کاپی کرنے، منظوریوں کے پیچھے بھاگنے یا وہی رپورٹ مرتب کرنے میں صرف ہوتا ہے، وہ اصل کام سے ہٹا ہوا ایک گھنٹہ اور انسانی غلطی کا ایک موقع ہے۔ ہم آپ کے manual عمل کو map کر کے انہیں end to end خودکار بناتے ہیں، آپ کے پہلے سے استعمال شدہ ٹولز کو Zapier، Make اور n8n جیسے پلیٹ فارمز یا پیچیدہ منطق کے لیے custom code کے ذریعے جوڑتے ہیں۔ lead routing اور invoice processing سے لے کر scheduled reports، file management اور کئی مرحلوں والی منظوریوں تک، ہم ایسے automations بناتے ہیں جو قابلِ اعتماد، قابلِ مشاہدہ اور آسانی سے قابلِ دیکھ بھال ہوں۔ اہم بات یہ کہ ہم شروع سے error handling، retries اور alerts کے ساتھ ڈیزائن کرتے ہیں، تاکہ کوئی automation ڈیٹا کو خاموشی سے خراب کرنے کے بجائے بلند آواز اور محفوظ طریقے سے ناکام ہو۔ نتیجہ ایک ایسی ٹیم ہے جو فضول کام سے آزاد ہو اور ایسے عمل جو دن رات یکساں چلتے رہیں۔",
+    "features": [
+      "Process mapping اور automation حکمتِ عملی",
+      "Zapier، Make اور n8n کے ذریعے app انضمام",
+      "Custom automations اور API integrations",
+      "خودکار reporting اور data syncing",
+      "منظوری کے flows اور notification routing",
+      "دستاویز اور file management automation",
+      "Error handling، retries اور alerting",
+      "Automations کی نگرانی اور دیکھ بھال"
+    ],
+    "benefits": [
+      "اپنی ٹیم کو دہرائے جانے والے فضول کام سے آزاد کریں",
+      "سسٹمز کے درمیان copy-paste کی غلطیاں ختم کریں",
+      "عمل کو دستی محنت کے بغیر 24/7 چلائیں",
+      "منظوریوں اور handoffs کو تیز کریں",
+      "عملہ بڑھائے بغیر آپریشنز scale کریں",
+      "ایسے automations پائیں جو خاموشی سے نہیں، محفوظ طریقے سے ناکام ہوں"
+    ],
+    "metaTitle": "Workflow Automation خدمات | PakSoft",
+    "metaDescription": "رپورٹس، data entry، منظوریوں اور integrations کے لیے دہرائے جانے والے workflows کو Zapier، Make، n8n اور custom code سے خودکار بنائیں۔ وقت بچائیں، غلطیاں کم کریں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Process Discovery", "description": "ہم آپ کے موجودہ manual workflows کو قدم بہ قدم اور ان کے استعمال کردہ ٹولز کو map کرتے ہیں۔ یہ ظاہر کرتا ہے کہ automation کہاں سب سے زیادہ وقت بچاتی اور سب سے زیادہ خطرہ ہٹاتی ہے۔" },
+        { "step": 2, "title": "موقع اور Tooling", "description": "ہم workflows کو اثر کے مطابق ترجیح دیتے اور ہر ایک کے لیے درست پلیٹ فارم منتخب کرتے ہیں۔ سادہ connectors کئی کاموں کے لیے موزوں ہیں، جبکہ پیچیدہ منطق کو custom code درکار ہو سکتا ہے۔" },
+        { "step": 3, "title": "ڈیزائن اور Mapping", "description": "ہم ہر automation کے لیے trigger، اقدامات، data mapping اور edge cases ڈیزائن کرتے ہیں۔ واضح ڈیزائن ان خاموش data مسائل کو روکتا ہے جو جلد بازی میں بنائے automations کو ستاتے ہیں۔" },
+        { "step": 4, "title": "تعمیر اور انضمام", "description": "ہم automations بناتے اور آپ کی apps کو APIs اور webhooks کے ذریعے جوڑتے ہیں۔ ہر flow کو شروع سے error handling اور retries کے ساتھ بنایا جاتا ہے۔" },
+        { "step": 5, "title": "ٹیسٹ اور Validation", "description": "کسی چیز کے production کو چھونے سے پہلے ہم حقیقی اور edge-case ڈیٹا کے خلاف ٹیسٹ کرتے ہیں۔ Validation یقینی بناتی ہے کہ inputs بے ترتیب ہونے پر بھی automation درست برتاؤ کرے۔" },
+        { "step": 6, "title": "نگرانی اور دیکھ بھال", "description": "ہم alerting شامل کرتے اور آپ کے automations کی نگرانی کرتے ہیں، تاکہ ناکامیاں فوراً سامنے آئیں۔ پھر جیسے جیسے آپ کے ٹولز اور عمل بدلتے ہیں ہم flows کو ڈھالتے ہیں۔" }
+      ],
+      "faq": [
+        { "question": "کون سے کام خودکار بنانے کے قابل ہیں؟", "answer": "بہترین امیدوار اکثر کیے جانے والے، دہرائے جانے والے، اصول پر مبنی کام ہیں، جیسے data entry، report بنانا، lead routing اور notifications۔ ہم آپ کو سب سے زیادہ وقت بچانے والے اور کم خطرے والے workflows کی نشاندہی میں مدد دیتے ہیں۔" },
+        { "question": "کیا ہمیں custom code چاہیے، یا تیار ٹولز کافی ہیں؟", "answer": "کئی workflows Zapier، Make یا n8n جیسے پلیٹ فارمز سے مکمل طور پر پورے ہو جاتے ہیں۔ ہم custom code صرف اس وقت استعمال کرتے ہیں جب منطق، پیمانہ یا integrations no-code ٹولز کی صلاحیت سے بڑھ جائیں، لاگت اور پیچیدگی کو مناسب رکھتے ہوئے۔" },
+        { "question": "Zapier، Make اور n8n میں کیا فرق ہے؟", "answer": "Zapier سب سے سادہ اور سب سے بہتر تراش خراش والا ہے، Make کم لاگت پر زیادہ پیچیدہ visual منطق دیتا ہے، اور n8n مکمل کنٹرول کے لیے open-source اور self-hostable ہے۔ ہم آپ کی ضروریات، بجٹ اور data-privacy تقاضوں کی بنیاد پر منتخب کرتے ہیں۔" },
+        { "question": "اگر کوئی automation ناکام ہو جائے تو کیا ہوتا ہے؟", "answer": "ہم error handling، خودکار retries اور alerts شامل کرتے ہیں، تاکہ ناکامیاں ڈیٹا کو خاموشی سے کھونے کے بجائے پکڑی اور سامنے لائی جائیں۔ آپ کو مطلع کیا جاتا ہے اور flow حل ہونے تک محفوظ طریقے سے رک سکتا ہے۔" },
+        { "question": "کیا آپ ہمارے موجودہ ٹولز کے آر پار workflows خودکار بنا سکتے ہیں؟", "answer": "جی ہاں۔ ہم CRMs، spreadsheets، email، accounting اور custom سسٹمز کو ان کے APIs کے ذریعے جوڑتے ہیں، تاکہ ڈیٹا ان ٹولز کے درمیان خودکار طور پر بہے جن پر آپ کی ٹیم پہلے سے انحصار کرتی ہے۔" },
+        { "question": "کیا automation ہمارے عملے کی جگہ لے لے گی؟", "answer": "نہیں، یہ تھکا دینے والے فضول کام کو ہٹاتی ہے تاکہ آپ کی ٹیم زیادہ قیمتی کام پر توجہ دے سکے۔ Automation دہرائے جانے والے اقدامات سنبھالتی ہے جبکہ لوگ فیصلہ، تعلقات اور استثناءات سنبھالتے ہیں۔" },
+        { "question": "ہم حقیقت میں کتنا وقت بچا سکتے ہیں؟", "answer": "یہ عمل کے مطابق مختلف ہے، مگر روزانہ ایک کئی مرحلوں والے کام کو خودکار بنانا اکثر فی شخص ہفتے میں کئی گھنٹے بچاتا ہے، اور جتنے زیادہ workflows خودکار ہوں بچت بڑھتی جاتی ہے۔" },
+        { "question": "ہمارے ٹولز بدلنے پر آپ automations کو چلتا کیسے رکھتے ہیں؟", "answer": "ہم ناکامیوں کی نگرانی کرتے اور flows کو قابلِ دیکھ بھال ڈیزائن کرتے ہیں، پھر جب کسی app کا API یا آپ کا عمل بدلتا ہے انہیں اپڈیٹ کرتے ہیں، تاکہ automations وقت کے ساتھ قابلِ اعتماد چلتے رہیں۔" }
+      ],
+      "technologies": [
+        { "name": "Zapier", "icon": "zapier" },
+        { "name": "Make", "icon": "make" },
+        { "name": "n8n", "icon": "n8n" },
+        { "name": "Python", "icon": "python" },
+        { "name": "Power Automate", "icon": "power-automate" },
+        { "name": "Apache Airflow", "icon": "apache-airflow" },
+        { "name": "Temporal", "icon": "temporal" },
+        { "name": "Webhooks", "icon": "webhook" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "أتمتة سير العمل",
+    "shortDescription": "أتمت سير العمل المتكرر الذي يستنزف وقت فريقك. نربط تطبيقاتك ونبني أتمتة موثوقة للتقارير وإدخال البيانات والموافقات والتكاملات، فيُدير العمل نفسه بنفسه.",
+    "fullDescription": "كل ساعة يقضيها فريقك في نسخ البيانات بين الأنظمة أو ملاحقة الموافقات أو تجميع التقرير نفسه هي ساعة بعيدة عن العمل الحقيقي وفرصة للخطأ البشري. نرسم خرائط عملياتك اليدوية ونؤتمتها من البداية إلى النهاية، رابطين الأدوات التي تستخدمها بالفعل عبر منصات مثل Zapier وMake وn8n، أو بشيفرة مخصصة للمنطق المعقد. من توجيه العملاء المحتملين ومعالجة الفواتير إلى التقارير المجدولة وإدارة الملفات والموافقات متعددة الخطوات، نبني أتمتة موثوقة وقابلة للمراقبة وسهلة الصيانة. والأهم أننا نصمّم من البداية بمعالجة الأخطاء وإعادة المحاولة والتنبيهات، فتفشل الأتمتة بصوت عالٍ وبأمان بدل إفساد البيانات بصمت. والنتيجة فريق متحرّر من العمل الروتيني وعمليات تعمل باتساق ليلاً ونهاراً.",
+    "features": [
+      "رسم خرائط العمليات واستراتيجية الأتمتة",
+      "تكامل التطبيقات عبر Zapier وMake وn8n",
+      "أتمتة مخصصة وتكاملات API",
+      "تقارير آلية ومزامنة بيانات",
+      "تدفقات موافقات وتوجيه إشعارات",
+      "أتمتة إدارة المستندات والملفات",
+      "معالجة الأخطاء وإعادة المحاولة والتنبيه",
+      "مراقبة وصيانة الأتمتة"
+    ],
+    "benefits": [
+      "حرّر فريقك من العمل الروتيني المتكرر",
+      "تخلّص من أخطاء النسخ واللصق بين الأنظمة",
+      "شغّل العمليات 24/7 دون جهد يدوي",
+      "سرّع الموافقات وعمليات التسليم",
+      "وسّع العمليات دون زيادة عدد الموظفين",
+      "احصل على أتمتة تفشل بأمان لا بصمت"
+    ],
+    "metaTitle": "خدمات أتمتة سير العمل | PakSoft",
+    "metaDescription": "أتمت سير العمل المتكرر للتقارير وإدخال البيانات والموافقات والتكاملات عبر Zapier وMake وn8n وشيفرة مخصصة. وفّر الوقت وقلّل الأخطاء. ابدأ اليوم.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "اكتشاف العمليات", "description": "نرسم خريطة سير عملك اليدوي خطوة بخطوة والأدوات التي يلمسها. هذا يكشف أين توفّر الأتمتة أكبر قدر من الوقت وتزيل أكبر قدر من المخاطر." },
+        { "step": 2, "title": "الفرص والأدوات", "description": "نرتّب سير العمل حسب الأثر ونختار المنصة المناسبة لكل منه. الموصّلات البسيطة تناسب مهام كثيرة، بينما قد يحتاج المنطق المعقد إلى شيفرة مخصصة." },
+        { "step": 3, "title": "التصميم ورسم الخرائط", "description": "نصمّم المُحفّز والخطوات وربط البيانات والحالات الحدّية لكل أتمتة. التصميم الواضح يمنع مشكلات البيانات الصامتة التي تصيب الأتمتة المتعجّلة." },
+        { "step": 4, "title": "البناء والتكامل", "description": "نبني الأتمتة ونربط تطبيقاتك عبر واجهات API وWebhooks. يُبنى كل تدفق بمعالجة أخطاء وإعادة محاولة منذ البداية." },
+        { "step": 5, "title": "الاختبار والتحقق", "description": "نختبر مقابل بيانات حقيقية وحالات حدّية قبل أن يمسّ أي شيء الإنتاج. التحقق يضمن أن تتصرف الأتمتة بشكل صحيح حين تكون المُدخلات فوضوية." },
+        { "step": 6, "title": "المراقبة والصيانة", "description": "نضيف التنبيه ونراقب أتمتتك لتظهر الأعطال فوراً. ثم نكيّف التدفقات مع تطوّر أدواتك وعملياتك." }
+      ],
+      "faq": [
+        { "question": "ما المهام التي تستحق الأتمتة؟", "answer": "أفضل المرشحين هي المهام المتكررة القائمة على القواعد التي تُنفّذ بكثرة، مثل إدخال البيانات وإنشاء التقارير وتوجيه العملاء المحتملين والإشعارات. نساعدك على تحديد سير العمل ذي أعلى توفير للوقت وأقل مخاطرة." },
+        { "question": "هل نحتاج شيفرة مخصصة، أم تكفي الأدوات الجاهزة؟", "answer": "تُخدَم سير عمل كثيرة بالكامل عبر منصات مثل Zapier وMake وn8n. نستخدم الشيفرة المخصصة فقط حين يتجاوز المنطق أو الحجم أو التكاملات ما تقدّمه أدوات بلا كود، مع إبقاء التكلفة والتعقيد مناسبين." },
+        { "question": "ما الفرق بين Zapier وMake وn8n؟", "answer": "Zapier الأبسط والأكثر صقلاً، وMake يقدّم منطقاً بصرياً أعقد بتكلفة أقل، وn8n مفتوح المصدر وقابل للاستضافة الذاتية لتحكّم كامل. نختار بناءً على احتياجاتك وميزانيتك ومتطلبات خصوصية بياناتك." },
+        { "question": "ماذا يحدث إذا فشلت الأتمتة؟", "answer": "نضيف معالجة أخطاء وإعادة محاولة تلقائية وتنبيهات، فتُلتقط الأعطال وتُظهَر بدل فقدان البيانات بصمت. تُخطَر أنت، ويمكن للتدفق أن يتوقف بأمان حتى الحل." },
+        { "question": "هل يمكنكم أتمتة سير العمل عبر أدواتنا القائمة؟", "answer": "نعم. نربط أنظمة CRM وجداول البيانات والبريد والمحاسبة والأنظمة المخصصة عبر واجهات API الخاصة بها، لتتدفق البيانات تلقائياً بين الأدوات التي يعتمد عليها فريقك بالفعل." },
+        { "question": "هل ستحلّ الأتمتة محل موظفينا؟", "answer": "لا، إنها تزيل العمل الروتيني الممل ليتمكن فريقك من التركيز على عمل أعلى قيمة. تتولى الأتمتة الخطوات المتكررة بينما يتولى البشر الحكم والعلاقات والاستثناءات." },
+        { "question": "كم من الوقت يمكننا توفيره واقعياً؟", "answer": "يختلف ذلك حسب العملية، لكن أتمتة مهمة يومية متعددة الخطوات توفّر غالباً عدة ساعات أسبوعياً لكل شخص، وتتراكم الوفورات كلما أتمتت مزيداً من سير العمل." },
+        { "question": "كيف تُبقون الأتمتة تعمل مع تغيّر أدواتنا؟", "answer": "نراقب الأعطال ونصمّم التدفقات قابلة للصيانة، ثم نحدّثها عندما تتغيّر واجهة API لتطبيق ما أو عمليتك، لتستمر الأتمتة في العمل بموثوقية مع الوقت." }
+      ],
+      "technologies": [
+        { "name": "Zapier", "icon": "zapier" },
+        { "name": "Make", "icon": "make" },
+        { "name": "n8n", "icon": "n8n" },
+        { "name": "Python", "icon": "python" },
+        { "name": "Power Automate", "icon": "power-automate" },
+        { "name": "Apache Airflow", "icon": "apache-airflow" },
+        { "name": "Temporal", "icon": "temporal" },
+        { "name": "Webhooks", "icon": "webhook" }
+      ]
+    }
+  }
+}

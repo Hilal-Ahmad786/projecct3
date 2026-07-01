@@ -1,0 +1,2070 @@
+{
+  "time-series-forecasting": {
+    "en": {
+      "name": "Time Series Forecasting",
+      "shortDescription": "Predict future business trends, seasonal demand fluctuations, and key operational metrics using historical sequence data and advanced machine learning models custom-tailored for temporal patterns.",
+      "fullDescription": "Time series forecasting turns historical data sequences into a reliable roadmap for decision making. We design and deploy production-grade forecasting pipelines that help your organization optimize supply chains, manage inventory levels, schedule workforce shifts, and plan financial budgets. Our expertise spans statistical approaches like ARIMA and Prophet, machine learning architectures like XGBoost, and advanced deep learning models including LSTMs and Temporal Fusion Transformers. We address complex challenges such as irregular intervals, missing data, and external influences like holidays or weather. By automating data ingestion, cleaning, and model retraining, we deliver accurate forecasts directly to your ERP, database, or BI dashboard. This reduces operational waste and improves profit margins.",
+      "features": [
+        "Statistical Forecasting (ARIMA, SARIMAX)",
+        "Machine Learning Models (XGBoost, LightGBM)",
+        "Deep Learning Architectures (LSTM, GRU)",
+        "State-of-the-Art Transformers (TFT, PatchTST)",
+        "External Covariate & Holiday Integration",
+        "Automated Anomaly & Outlier Detection",
+        "Hierarchical & Multi-Step Forecasting",
+        "Continuous Model Drift Monitoring"
+      ],
+      "benefits": [
+        "Reduce inventory costs by aligning supply with demand",
+        "Optimize labor scheduling based on predicted customer traffic",
+        "Enhance financial stability with accurate cash flow projections",
+        "Minimize stockouts and maximize revenue during peaks",
+        "Automate forecasting processes to save planning time",
+        "Detect structural trends and cyclical shifts early"
+      ],
+      "metaTitle": "Time Series Forecasting & Predictive Models | PakSoft",
+      "metaDescription": "Anticipate market changes and demand. We build custom time series forecasting models using ARIMA, Prophet, and LSTMs. Contact us for a consultation.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Data Ingestion & Cleaning",
+            "description": "We connect to your database to ingest historical data and clean anomalies. Missing timestamps are imputed to ensure consistent quality throughout the database pipeline."
+          },
+          {
+            "step": 2,
+            "title": "Feature Engineering",
+            "description": "We extract calendar markers, rolling averages, lags, and seasonal indicators from raw inputs. External datasets like weather patterns and market indices are also integrated."
+          },
+          {
+            "step": 3,
+            "title": "Model Selection & Training",
+            "description": "We benchmark classical statistical methods, machine learning, and deep learning models side-by-side. The best performing architecture is selected based on historical backtesting metrics."
+          },
+          {
+            "step": 4,
+            "title": "Validation & Tuning",
+            "description": "We test the model using progressive cross-validation to simulate real-world sequence prediction. Hyperparameters are tuned to minimize error rates across all forecasting horizons."
+          },
+          {
+            "step": 5,
+            "title": "Pipeline Integration",
+            "description": "We deploy the forecasting system to cloud environments as an automated runtime pipeline. Forecast outputs are pushed directly to your business CRM, ERP, or dashboard."
+          },
+          {
+            "step": 6,
+            "title": "Drift Monitoring",
+            "description": "We track production forecasts against actual outcomes to identify performance degradation. Automated retraining schedules are triggered when metrics fall below acceptable thresholds."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What mathematical models do you use for forecasting?",
+            "answer": "We select models based on your data complexity and business needs. For stable data with clear seasonality, we use ARIMA or Prophet. For highly complex data, we apply machine learning like XGBoost or deep learning architectures like LSTMs. This hybrid approach ensures optimal forecasting accuracy."
+          },
+          {
+            "question": "How much historical data is required for forecasts?",
+            "answer": "We recommend having at least two to three full cycles of historical data to capture seasonality. For example, capturing annual seasonality requires at least two years of weekly data points. Having longer histories helps our models separate true structural trends from temporary external anomalies."
+          },
+          {
+            "question": "Can your systems handle sudden changes like economic crises?",
+            "answer": "Yes, our pipelines incorporate external variables such as market indicators or pricing changes to adjust forecasts. However, extreme black swan events are hard for any algorithm to predict. We implement manual overrides so your team can adjust baseline projections during crises."
+          },
+          {
+            "question": "How do you handle missing values in historical data?",
+            "answer": "We apply advanced temporal imputation methods during the preprocessing step of the data pipeline. Depending on your data type, we use linear interpolation, forward-filling, or machine learning models. This prevents minor data collection gaps from degrading forecast performance or crashing pipelines."
+          },
+          {
+            "question": "What is the difference between time series forecasting and regression?",
+            "answer": "Standard regression predicts outcomes based on independent inputs at one point in time. Time series forecasting focuses specifically on the temporal order and sequential dependencies of data. This means it explicitly models how past behaviors, cyclical trends, and seasonality impact future metrics."
+          },
+          {
+            "question": "How are the forecasts delivered to our existing systems?",
+            "answer": "We build custom pipelines that export forecasting outputs in the format your business needs. We can write directly to SQL databases, expose REST APIs, or sync with Power BI. This ensures your operations team can access predictions within their current daily tools."
+          },
+          {
+            "question": "How do you evaluate if a forecasting model is performing well?",
+            "answer": "We measure model performance using standard metrics like Mean Absolute Error and Root Mean Squared Error. We establish a baseline using simple historical averages for comparison. The model must show statistically significant improvements over the baseline before we approve it for deployment."
+          },
+          {
+            "question": "What is model drift, and how is it prevented?",
+            "answer": "Model drift occurs when the underlying patterns in your business shift, causing forecasting accuracy to decrease. We prevent drift by implementing automated monitoring scripts in production. These scripts track prediction errors daily and trigger model retraining automatically when error thresholds are crossed."
+          }
+        ],
+        "technologies": [
+          { "icon": "python", "name": "Python" },
+          { "icon": "pytorch", "name": "PyTorch" },
+          { "icon": "tensorflow", "name": "TensorFlow" },
+          { "icon": "scikitlearn", "name": "scikit-learn" },
+          { "icon": "pandas", "name": "Pandas" },
+          { "icon": "influxdb", "name": "InfluxDB" },
+          { "icon": "apachespark", "name": "Apache Spark" },
+          { "icon": "amazonwebservices", "name": "Amazon Web Services" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Zaman Serisi Tahmini",
+      "shortDescription": "Zaman temelli kalıplara göre özelleştirilmiş gelişmiş makine öğrenimi modelleri ve geçmiş dizi verilerini kullanarak gelecekteki iş eğilimlerini, talep dalgalanmalarını ve operasyonel metrikleri tahmin edin.",
+      "fullDescription": "Zaman serisi tahmini, geçmiş veri dizilerini karar alma süreçleri için güvenilir bir yol haritasına dönüştürür. Kuruluşunuzun tedarik zincirlerini optimize etmesine, envanter seviyelerini yönetmesine, iş gücü vardiyalarını planlamasına ve finansal bütçeler hazırlamasına yardımcı olan üretime hazır tahmin boru hatları tasarlıyor ve uyguluyoruz. Uzmanlığımız, ARIMA ve Prophet gibi istatistiksel yaklaşımlardan XGBoost gibi makine öğrenimi mimarilerine ve LSTM'ler ile Temporal Fusion Transformers dahil gelişmiş derin öğrenme modellerine kadar uzanmaktadır. Düzensiz aralıklar, eksik veriler, tatiller veya hava durumu gibi dış etkenler gibi karmaşık zorlukları çözüyoruz. Veri alımını, temizlemeyi ve modelin yeniden eğitilmesini otomatikleştirerek ERP, veritabanı veya BI panelinize doğrudan doğru tahminler sunuyoruz. Bu, operasyonel israfı azaltır ve kar marjlarını artırır.",
+      "features": [
+        "İstatistiksel Tahmin (ARIMA, SARIMAX)",
+        "Makine Öğrenimi Modelleri (XGBoost, LightGBM)",
+        "Derin Öğrenme Mimarileri (LSTM, GRU)",
+        "Modern Transformer Modelleri (TFT, PatchTST)",
+        "Dışsal Değişken ve Tatil Entegrasyonu",
+        "Otomatik Anomali ve Aykırı Değer Tespiti",
+        "Hiyerarşik ve Çok Adımlı Tahminleme",
+        "Sürekli Model Sapması (Drift) İzleme"
+      ],
+      "benefits": [
+        "Arzı taleple eşleştirerek envanter maliyetlerini azaltın",
+        "Tahmini müşteri trafiğine göre iş gücü planlamasını optimize edin",
+        "Doğru nakit akışı projeksiyonlarıyla finansal istikrarı artırın",
+        "Yoğun dönemlerde stoksuz kalmayı önleyin ve geliri artırın",
+        "Planlama süresinden tasarruf etmek için tahmin süreçlerini otomatikleştirin",
+        "Yapısal eğilimleri ve döngüsel değişimleri erkenden tespit edin"
+      ],
+      "metaTitle": "Zaman Serisi Tahmini ve Öngörücü Modeller | PakSoft",
+      "metaDescription": "Piyasa değişikliklerini ve talebi önceden görün. ARIMA, Prophet ve LSTM kullanarak özel zaman serisi tahmin modelleri kuruyoruz. Bizimle iletişime geçin.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Veri Alımı ve Temizleme",
+            "description": "Geçmiş verileri almak ve anomalileri temizlemek için veritabanınıza bağlanıyoruz. Veritabanı hattı boyunca tutarlı kalite sağlamak için eksik zaman damgaları tamamlanır."
+          },
+          {
+            "step": 2,
+            "title": "Özellik Mühendisliği",
+            "description": "Ham girdilerden takvim işaretçilerini, hareketli ortalamaları, gecikmeleri ve mevsimsel göstergeleri çıkarıyoruz. Hava durumu ve piyasa endeksleri gibi dış veri kümeleri de entegre edilir."
+          },
+          {
+            "step": 3,
+            "title": "Model Seçimi ve Eğitimi",
+            "description": "Klasik istatistiksel yöntemleri, makine öğrenimini ve derin öğrenme modellerini yan yana test ediyoruz. En iyi performans gösteren mimari, geçmiş test metriklerine göre seçilir."
+          },
+          {
+            "step": 4,
+            "title": "Doğrulama ve İnce Ayar",
+            "description": "Gerçek dünya dizi tahminini simüle etmek için modeli aşamalı çapraz doğrulama ile test ediyoruz. Hiperparametreler, tüm tahmin vadelerindeki hata oranlarını en aza indirmek için ayarlanır."
+          },
+          {
+            "step": 5,
+            "title": "Boru Hattı Entegrasyonu",
+            "description": "Tahmin sistemini bulut ortamlarına otomatik bir çalışma hattı olarak kuruyoruz. Tahmin çıktıları doğrudan şirketinizin CRM, ERP veya raporlama paneline aktarılır."
+          },
+          {
+            "step": 6,
+            "title": "Sapma (Drift) İzleme",
+            "description": "Performans düşüşünü tespit etmek için üretim tahminlerini gerçek sonuçlarla karşılaştırarak izliyoruz. Metrikler kabul edilebilir sınırların altına düştüğünde otomatik yeniden eğitim süreçleri tetiklenir."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Tahmin için hangi matematiksel modelleri kullanıyorsunuz?",
+            "answer": "Verilerinizin karmaşıklığına ve iş ihtiyaçlarınıza göre model seçiyoruz. Net mevsimselliğe sahip kararlı veriler için ARIMA veya Prophet kullanıyoruz. Daha karmaşık veriler için XGBoost gibi makine öğrenimi veya LSTM gibi derin öğrenme mimarileri uyguluyoruz. Bu hibrit yaklaşım, optimum tahmin doğruluğu sağlar."
+          },
+          {
+            "question": "Tahminler için ne kadar geçmiş veri gerekiyor?",
+            "answer": "Mevsimselliği yakalamak için en az iki veya üç tam döngülük geçmiş veriye sahip olmanızı öneririz. Örneğin, yıllık mevsimselliği yakalamak için en az iki yıllık haftalık veri noktası gereklidir. Daha uzun geçmişe sahip olmak, modellerimizin gerçek yapısal eğilimleri geçici dış anomalilerden ayırmasına yardımcı olur."
+          },
+          {
+            "question": "Sistemleriniz ekonomik krizler gibi ani değişiklikleri yönetebilir mi?",
+            "answer": "Evet, tahmin boru hatlarımız tahminleri ayarlamak için piyasa göstergeleri veya fiyat değişiklikleri gibi dış değişkenleri entegre edebilir. Ancak, benzeri görülmemiş olağanüstü olayları tahmin etmek her algoritma için zordur. Ekibinizin kriz dönemlerinde temel projeksiyonları ayarlayabilmesi için manuel geçersiz kılma kontrolleri uyguluyoruz."
+          },
+          {
+            "question": "Geçmiş verilerdeki eksik değerleri nasıl ele alıyorsunuz?",
+            "answer": "Veri hattının ön işleme aşamasında gelişmiş zamansal doldurma yöntemleri uyguluyoruz. Veri türünüze bağlı olarak doğrusal interpolasyon, ileriye doğru doldurma veya makine öğrenimi modelleri kullanıyoruz. Bu yöntemler, küçük veri toplama açıklarının tahmin performansını düşürmesini veya boru hatlarını çökertmesini önler."
+          },
+          {
+            "question": "Zaman serisi tahmini ile regresyon arasındaki fark nedir?",
+            "answer": "Standart regresyon, tek bir zamandaki bağımsız girdilere dayanarak sonuçları tahmin eder. Zaman serisi tahmini ise özellikle verilerin zamansal sırasına ve ardışık bağımlılıklarına odaklanır. Bu, geçmiş davranışların, döngüsel eğilimlerin ve mevsimselliğin gelecekteki metrikleri nasıl etkilediğini açıkça modellediği anlamına gelir."
+          },
+          {
+            "question": "Tahminler mevcut sistemlerimize nasıl teslim ediliyor?",
+            "answer": "Tahmin çıktılarını işletmenizin ihtiyaç duyduğu biçimde dışa aktaran özel veri hatları kuruyoruz. Doğrudan SQL veritabanlarına yazabilir, REST API'ler sunabilir veya Power BI ile senkronize edebiliriz. Bu, operasyon ekibinizin tahminlere mevcut günlük araçları içinden erişmesini sağlar."
+          },
+          {
+            "question": "Bir tahmin modelinin iyi performans gösterip göstermediğini nasıl değerlendiriyorsunuz?",
+            "answer": "Model performansını MAE (Ortalama Mutlak Hata) ve RMSE (Kök Ortalama Kare Hata) gibi standart metriklerle ölçüyoruz. Karşılaştırma için basit geçmiş ortalamaları kullanan bir temel çizgi oluşturuyoruz. Model, dağıtım için onaylamadan önce bu temel çizgiye kıyasla istatistiksel olarak anlamlı gelişmeler göstermelidir."
+          },
+          {
+            "question": "Model sapması (drift) nedir ve nasıl önlenir?",
+            "answer": "Model sapması, işinizdeki temel kalıplar değiştiğinde ve tahmin doğruluğunun düşmesine neden olduğunda meydana gelir. Üretim ortamında otomatik izleme betikleri uygulayarak sapmayı önlüyoruz. Bu betikler tahmin hatalarını günlük olarak izler ve hata eşikleri aşıldığında modellerin otomatik olarak yeniden eğitilmesini tetikler."
+          }
+        ],
+        "technologies": [
+          { "icon": "python", "name": "Python" },
+          { "icon": "pytorch", "name": "PyTorch" },
+          { "icon": "tensorflow", "name": "TensorFlow" },
+          { "icon": "scikitlearn", "name": "scikit-learn" },
+          { "icon": "pandas", "name": "Pandas" },
+          { "icon": "influxdb", "name": "InfluxDB" },
+          { "icon": "apachespark", "name": "Apache Spark" },
+          { "icon": "amazonwebservices", "name": "Amazon Web Services" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Zeitreihenprognose",
+      "shortDescription": "Prognostizieren Sie zukünftige Geschäftstrends, saisonale Nachfrageschwankungen und betriebliche Kennzahlen mithilfe historischer Sequenzdaten und fortschrittlicher, auf zeitliche Muster spezialisierter maschineller Lernmodelle.",
+      "fullDescription": "Die Zeitreihenprognose verwandelt historische Datensequenzen in einen verlässlichen Fahrplan für geschäftliche Entscheidungen. Wir entwerfen und implementieren produktionsreife Prognose-Pipelines, die Ihrem Unternehmen helfen, Lieferketten zu optimieren, Lagerbestände zu verwalten, Arbeitszeiten effizient zu planen und Finanzbudgets zu kalkulieren. Unsere Expertise umfasst statistische Ansätze wie ARIMA und Prophet, maschinelle Lernarchitekturen wie XGBoost sowie fortschrittliche Deep-Learning-Modelle einschließlich LSTMs und Temporal Fusion Transformers. Wir lösen komplexe Herausforderungen wie unregelmäßige Intervalle, fehlende Daten und externe Einflüsse wie Feiertage oder das Wetter. Durch die Automatisierung von Datenerfassung, Bereinigung und Modell-Umlernen liefern wir präzise Prognosen direkt in Ihr ERP, Ihre Datenbank oder Ihr BI-Dashboard. Dies reduziert Betriebsverluste und steigert die Gewinnmargen.",
+      "features": [
+        "Statistische Prognose (ARIMA, SARIMAX)",
+        "Maschinelle Lernmodelle (XGBoost, LightGBM)",
+        "Deep-Learning-Architekturen (LSTM, GRU)",
+        "Moderne Transformer-Modelle (TFT, PatchTST)",
+        "Integration externer Kovariaten & Feiertage",
+        "Automatische Anomalie- & Ausreißererkennung",
+        "Hierarchische & mehrstufige Prognosen",
+        "Kontinuierliche Überwachung von Modell-Drift"
+      ],
+      "benefits": [
+        "Lagerkosten senken durch Anpassung des Angebots an die Nachfrage",
+        "Arbeitszeitplanung basierend auf prognostiziertem Kundenverkehr optimieren",
+        "Finanzielle Stabilität durch präzise Cashflow-Prognosen verbessern",
+        "Lagerengpässe minimieren und Umsatz in Spitzenzeiten maximieren",
+        "Prognoseprozesse automatisieren, um Planungszeit einzusparen",
+        "Strukturelle Trends und zyklische Verschiebungen frühzeitig erkennen"
+      ],
+      "metaTitle": "Zeitreihenprognose & Vorhersagemodelle | PakSoft",
+      "metaDescription": "Erkennen Sie Marktveränderungen und Nachfrage im Voraus. Wir erstellen Zeitreihenmodelle mit ARIMA, Prophet und LSTMs. Kontaktieren Sie uns.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Datenerfassung & Bereinigung",
+            "description": "Wir binden Ihre Datenbank an, um historische Daten zu erfassen und Anomalien zu bereinigen. Fehlende Zeitstempel werden imputiert, um eine konsistente Datenqualität sicherzustellen."
+          },
+          {
+            "step": 2,
+            "title": "Feature-Engineering",
+            "description": "Wir extrahieren Kalendermarker, gleitende Durchschnitte, Verzögerungen und saisonale Indikatoren aus Rohdaten. Externe Datensätze wie Wetterdaten und Marktindizes werden ebenfalls integriert."
+          },
+          {
+            "step": 3,
+            "title": "Modellauswahl & Training",
+            "description": "Wir vergleichen klassische statistische Methoden, maschinelles Lernen und Deep-Learning-Modelle direkt miteinander. Die leistungsstärkste Architektur wird basierend auf historischen Backtesting-Metriken ausgewählt."
+          },
+          {
+            "step": 4,
+            "title": "Validierung & Optimierung",
+            "description": "Wir testen das Modell mittels fortschreitender Kreuzvalidierung, um reale Sequenzvorhersagen zu simulieren. Hyperparameter werden optimiert, um die Fehlerraten über alle Prognosehorizonte zu minimieren."
+          },
+          {
+            "step": 5,
+            "title": "Pipeline-Integration",
+            "description": "Wir stellen das Prognosesystem in Cloud-Umgebungen als automatisierte Laufzeit-Pipeline bereit. Prognoseergebnisse werden direkt an Ihr CRM, ERP oder Dashboard übertragen."
+          },
+          {
+            "step": 6,
+            "title": "Drift-Überwachung",
+            "description": "Wir überwachen die Produktionsprognosen im Vergleich zu den tatsächlichen Ergebnissen, um Leistungsverluste zu erkennen. Automatische Umlernprozesse werden gestartet, wenn die Metriken unter Schwellenwerte fallen."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Welche mathematischen Modelle verwenden Sie für Prognosen?",
+            "answer": "Wir wählen die Modelle basierend auf Ihrer Datenkomplexität und Ihren geschäftlichen Anforderungen aus. Für stabile Daten mit klarer Saisonalität nutzen wir ARIMA oder Prophet. Für hochkomplexe Daten wenden wir maschinelles Lernen wie XGBoost oder Deep-Learning-Architekturen wie LSTMs an. Dieser hybride Ansatz sichert optimale Vorhersagegenauigkeit."
+          },
+          {
+            "question": "Wie viele historische Daten werden für genaue Prognosen benötigt?",
+            "answer": "Wir empfehlen, mindestens zwei bis drei vollständige Zyklen historischer Daten vorzuhalten, um die Saisonalität zu erfassen. Beispielsweise erfordert die Erfassung der jährlichen Saisonalität mindestens zwei Jahre wöchentlicher Datenpunkte. Längere Historien helfen unseren Modellen, echte strukturelle Trends von temporären externen Anomalien zu trennen."
+          },
+          {
+            "question": "Können Ihre Systeme plötzliche Änderungen wie Wirtschaftskrisen bewältigen?",
+            "answer": "Ja, unsere Pipelines integrieren externe Variablen wie Marktindikatoren oder Preisänderungen, um Prognosen anzupassen. Dennoch sind extreme Black-Swan-Ereignisse für jeden Algorithmus schwer vorherzusehen. Wir implementieren manuelle Überschreibungsoptionen, damit Ihr Team die Basisprojektionen in Krisenzeiten anpassen kann."
+          },
+          {
+            "question": "Wie gehen Sie mit fehlenden Werten in historischen Daten um?",
+            "answer": "Wir wenden während des Vorbereitungsschritts der Daten-Pipeline fortschrittliche zeitliche Imputationsmethoden an. Je nach Datentyp nutzen wir lineare Interpolation, Forward-Filling oder maschinelle Lernmodelle. Dies verhindert, dass kleinere Lücken in der Datenerfassung die Prognoseleistung beeinträchtigen oder Pipelines abstürzen lassen."
+          },
+          {
+            "question": "Was ist der Unterschied zwischen Zeitreihenprognose und Regression?",
+            "answer": "Die Standardregression sagt Ergebnisse basierend auf unabhängigen Variablen zu einem einzelnen Zeitpunkt voraus. Die Zeitreihenprognose konzentriert sich speziell auf die zeitliche Reihenfolge und die sequentiellen Abhängigkeiten der Daten. Das bedeutet, sie modelliert explizit, wie vergangene Verhaltensweisen, zyklische Trends und Saisonalität zukünftige Kennzahlen beeinflussen."
+          },
+          {
+            "question": "Wie werden die Prognosen an unsere bestehenden Systeme übermittelt?",
+            "answer": "Wir erstellen maßgeschneiderte Pipelines, die Prognoseergebnisse in dem Format exportieren, das Ihr Unternehmen benötigt. Wir können direkt in SQL-Datenbanken schreiben, REST-APIs bereitstellen oder eine Synchronisation mit Power BI einrichten. Dadurch kann Ihr Betriebsteam direkt in seinen täglichen Werkzeugen auf Vorhersagen zugreifen."
+          },
+          {
+            "question": "Wie bewerten Sie, ob ein Prognosemodell eine gute Leistung erbringt?",
+            "answer": "Wir messen die Modellleistung anhand von Standardmetriken wie dem mittleren absoluten Fehler und dem quadratischen Mittelwert des Fehlers. Zum Vergleich erstellen wir eine Baseline auf Basis einfacher historischer Durchschnitte. Das Modell muss diese Baseline im Backtesting signifikant übertreffen, bevor wir es für den Produktivbetrieb freigeben."
+          },
+          {
+            "question": "Was ist Modell-Drift und wie wird sie verhindert?",
+            "answer": "Modell-Drift tritt auf, wenn sich die zugrunde liegenden Muster in Ihrem Geschäft verändern, wodurch die Prognosegenauigkeit sinkt. Wir verhindern Drift durch die Implementierung automatischer Überwachungsskripte in der Produktion. Diese Skripte verfolgen Vorhersagefehler täglich und starten automatisch ein Modell-Umlernen, wenn Fehlerschwellenwerte überschritten werden."
+          }
+        ],
+        "technologies": [
+          { "icon": "python", "name": "Python" },
+          { "icon": "pytorch", "name": "PyTorch" },
+          { "icon": "tensorflow", "name": "TensorFlow" },
+          { "icon": "scikitlearn", "name": "scikit-learn" },
+          { "icon": "pandas", "name": "Pandas" },
+          { "icon": "influxdb", "name": "InfluxDB" },
+          { "icon": "apachespark", "name": "Apache Spark" },
+          { "icon": "amazonwebservices", "name": "Amazon Web Services" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "ٹائم سیریز فورکاسٹنگ",
+      "shortDescription": "تاریخی سیکوئنس ڈیٹا اور ٹیمپورل پیٹرنز کے لیے تیار کردہ ایڈوانسڈ مشین لرننگ ماڈلز کا استعمال کرتے ہوئے مستقبل کے کاروباری رجحانات، موسمی مانگ کے اتار چڑھاؤ، اور آپریشنل میٹرکس کی پیشگوئی کریں۔",
+      "fullDescription": "ٹائم سیریز فورکاسٹنگ تاریخی ڈیٹا کے سیکوئنسز کو فیصلہ سازی کے لیے ایک قابل اعتماد روڈ میپ میں تبدیل کرتی ہے۔ ہم پروڈکشن گریڈ فورکاسٹنگ پائپ لائنز ڈیزائن اور ڈیپلائے کرتے ہیں جو آپ کی تنظیم کو سپلائی چین کو بہتر بنانے، انوینٹری کی سطح کو منظم کرنے، ورک فورس کی شفٹوں کو شیڈول کرنے، اور مالیاتی بجٹ کی منصوبہ بندی کرنے میں مدد کرتی ہے۔ ہماری مہارت ARIMA اور Prophet جیسے اسٹیٹسٹیکل طریقوں، XGBoost جیسی مشین لرننگ آرکیٹیکچرز، اور LSTMs اور Temporal Fusion Transformers سمیت ایڈوانسڈ ڈیپ لرننگ ماڈلز تک پھیلی ہوئی ہے۔ ہم غیر منظم وقفوں، گمشدہ ڈیٹا، اور بیرونی اثرات جیسے تعطیلات یا موسم کی پیچیدگیوں کو حل کرتے ہیں۔ ڈیٹا کی شمولیت، صفائی اور ماڈل ری ٹریننگ کو خودکار بنا کر، ہم درست پیشگوئیاں براہ راست آپ کے ERP، ڈیٹا بیس، یا BI ڈیش بورڈ پر فراہم کرتے ہیں۔ اس سے آپریشنل نقصان کم ہوتا ہے اور منافع کا مارجن بڑھتا ہے۔",
+      "features": [
+        "اسٹیٹسٹیکل فورکاسٹنگ (ARIMA, SARIMAX)",
+        "مشین لرننگ ماڈلز (XGBoost, LightGBM)",
+        "ڈیپ لرننگ آرکیٹیکچرز (LSTM, GRU)",
+        "جدید ترین ٹرانسفارمرز (TFT, PatchTST)",
+        "بیرونی متغیرات اور تعطیلات کی انٹیگریشن",
+        "خودکار انوملی اور آؤٹ لائر ڈیٹیکشن",
+        "ہائیرارکیکل اور ملٹی اسٹیپ فورکاسٹنگ",
+        "ماڈل ڈرفٹ کی مسلسل مانیٹرنگ"
+      ],
+      "benefits": [
+        "مانگ کے مطابق سپلائی کو ایڈجسٹ کر کے انوینٹری کے اخراجات کم کریں",
+        "پیش گوئی کردہ کسٹمر ٹریفک کی بنیاد پر لیبر شیڈولنگ کو بہتر بنائیں",
+        "درست کیش فلو پروجیکشنز کے ساتھ مالیاتی استحکام کو بہتر بنائیں",
+        "پیک سیزن کے دوران اسٹاک آؤٹ کو کم سے کم اور آمدنی کو زیادہ سے زیادہ کریں",
+        "منصوبہ بندی کا وقت بچانے کے لیے فورکاسٹنگ کے عمل کو خودکار بنائیں",
+        "سٹرکچرل رجحانات اور سائیکلکل تبدیلیوں کا جلدی پتہ لگائیں"
+      ],
+      "metaTitle": "ٹائم سیریز فورکاسٹنگ اور پیشگوئی کے ماڈلز | PakSoft",
+      "metaDescription": "مارکیٹ کی تبدیلیوں اور مانگ کا پہلے سے اندازہ لگائیں۔ ہم ARIMA، Prophet اور LSTMs کا استعمال کرتے ہوئے فورکاسٹنگ ماڈل بناتے ہیں۔ رابطہ کریں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "ڈیٹا کی شمولیت اور صفائی",
+            "description": "ہم تاریخی ڈیٹا حاصل کرنے اور انوملیز کو صاف کرنے کے لیے آپ کے ڈیٹا بیس سے جڑتے ہیں۔ پوری ڈیٹا بیس پائپ لائن میں مستقل کوالٹی کو یقینی بنانے کے لیے گمشدہ ٹائم اسٹیمپس کو فل کیا جاتا ہے۔"
+          },
+          {
+            "step": 2,
+            "title": "فیچر انجینئرنگ",
+            "description": "ہم خام ان پٹس سے کیلنڈر مارکرز، رولنگ ایوریجز، لیگز، اور سیزنل انڈیکیٹرز حاصل کرتے ہیں۔ موسم کے پیٹرنز اور مارکیٹ انڈیکس جیسے بیرونی ڈیٹا سیٹس کو بھی انٹیگریٹ کیا جاتا ہے۔"
+          },
+          {
+            "step": 3,
+            "title": "ماڈل کا انتخاب اور ٹریننگ",
+            "description": "ہم کلاسیکی اسٹیٹسٹیکل طریقوں، مشین لرننگ، اور ڈیپ لرننگ ماڈلز کا شانہ بشانہ موازنہ کرتے ہیں۔ سب سے بہترین کارکردگی کا مظاہرہ کرنے والے آرکیٹیکچر کو تاریخی ٹیسٹنگ ڈیٹا کی بنیاد پر منتخب کیا جاتا ہے۔"
+          },
+          {
+            "step": 4,
+            "title": "ویلیڈیشن اور ٹیوننگ",
+            "description": "ہم حقیقی دنیا کی پیشگوئی کو سیمولیٹ کرنے کے لیے کراس ویلیڈیشن کا استعمال کرتے ہوئے ماڈل کی جانچ کرتے ہیں۔ تمام فورکاسٹنگ حدود میں غلطی کی شرح کو کم سے کم کرنے کے لیے ہائپر پیرامیٹرز کو ٹیون کیا جاتا ہے۔"
+          },
+          {
+            "step": 5,
+            "title": "پائپ لائن انٹیگریشن",
+            "description": "ہم فورکاسٹنگ سسٹم کو کلاؤڈ انوائرمنٹس میں ایک خودکار رن ٹائم پائپ لائن کے طور پر ڈیپلائے کرتے ہیں۔ پیشگوئی کے آؤٹ پٹس کو براہ راست آپ کے کاروباری CRM، ERP یا ڈیش بورڈ پر بھیجا جاتا ہے۔"
+          },
+          {
+            "step": 6,
+            "title": "ڈرفٹ مانیٹرنگ",
+            "description": "ہم کارکردگی میں کمی کا پتہ لگانے کے لیے اصل نتائج کے مقابلے میں پروڈکشن پیشگوئیوں کی نگرانی کرتے ہیں۔ اگر میٹرکس مقررہ حد سے نیچے گرتے ہیں تو خودکار ری ٹریننگ شروع ہو جاتی ہے۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "پیش گوئی کے لیے آپ کون سے میتھمیٹیکل ماڈلز استعمال کرتے ہیں؟",
+            "answer": "ہم آپ کے ڈیٹا کی پیچیدگی اور کاروباری ضروریات کی بنیاد پر ماڈلز کا انتخاب کرتے ہیں۔ واضح سیزنلٹی والے مستحکم ڈیٹا کے لیے، ہم ARIMA یا Prophet استعمال کرتے ہیں۔ انتہائی پیچیدہ ڈیٹا کے لیے، ہم XGBoost جیسی مشین لرننگ یا LSTMs جیسی ڈیپ لرننگ آرکیٹیکچرز کا استعمال کرتے ہیں۔ یہ ہائبرڈ اپروچ بہترین درستگی کو یقینی بناتی ہے۔"
+          },
+          {
+            "question": "درست پیشگوئیوں کے لیے کتنے تاریخی ڈیٹا کی ضرورت ہوتی ہے؟",
+            "answer": "ہم سیزنلٹی کو حاصل کرنے کے لیے کم از کم دو سے تین مکمل سائیکلز کا تاریخی ڈیٹا رکھنے کی سفارش کرتے ہیں۔ مثال کے طور پر، سالانہ سیزنلٹی کو سمجھنے کے لیے کم از کم دو سال کا ہفتہ وار ڈیٹا ہونا ضروری ہے۔ طویل تاریخ ہمارے ماڈلز کو عارضی بیرونی انوملیز سے حقیقی سٹرکچرل رجحانات کو الگ کرنے میں مدد دیتی ہے۔"
+          },
+          {
+            "question": "کیا آپ کے سسٹم معاشی بحران جیسی اچانک تبدیلیوں کو سنبھال سکتے ہیں؟",
+            "answer": "جی ہاں، ہماری پائپ لائنز پیشگوئیوں کو ایڈجسٹ کرنے کے لیے مارکیٹ انڈیکیٹرز یا قیمتوں میں تبدیلی جیسے بیرونی متغیرات کو شامل کرتی ہیں۔ تاہم، غیر معمولی واقعات کی پیشگوئی کرنا کسی بھی الگورتھم کے لیے مشکل ہوتا ہے۔ ہم دستی کنٹرولز فراہم کرتے ہیں تاکہ آپ کی ٹیم بحران کے دوران بنیادی پروجیکشنز کو تبدیل کر سکے۔"
+          },
+          {
+            "question": "آپ تاریخی ڈیٹا میں گمشدہ اقدار کو کیسے سنبھالتے ہیں؟",
+            "answer": "ہم ڈیٹا پائپ لائن کے پری پروسیسنگ مرحلے کے دوران ایڈوانسڈ ٹیمپورل امپیوٹیشن کے طریقے لاگو کرتے ہیں۔ آپ کے ڈیٹا کی نوعیت پر منحصر ہے، ہم لینیئر انٹرپولیشن، فارورڈ فلنگ، یا مشین لرننگ ماڈلز استعمال کرتے ہیں۔ یہ طریقہ کار ڈیٹا اکٹھا کرنے کے معمولی وقفوں کی وجہ سے پیشگوئی کی کارکردگی کو متاثر ہونے سے روکتا ہے۔"
+          },
+          {
+            "question": "ٹائم سیریز فورکاسٹنگ اور ریگریشن میں کیا فرق ہے؟",
+            "answer": "معیاری ریگریشن وقت کے ایک نقطہ پر آزاد ان پٹس کی بنیاد پر نتائج کی پیشگوئی کرتی ہے۔ ٹائم سیریز فورکاسٹنگ خاص طور پر ڈیٹا کی ٹیمپورل ترتیب اور سیکوئنشل انحصار پر توجہ مرکوز کرتی ہے۔ اس کا مطلب ہے کہ یہ واضح طور پر ماڈل کرتی ہے کہ ماضی کے رویے، سائیکلکل رجحانات اور سیزنلٹی مستقبل کے میٹرکس کو کیسے متاثر کرتی ہے۔"
+          },
+          {
+            "question": "پیشگوئیاں ہمارے موجودہ سسٹمز تک کیسے پہنچائی جاتی ہیں؟",
+            "answer": "ہم اپنی مرضی کے مطابق پائپ لائنز بناتے ہیں جو فورکاسٹنگ آؤٹ پٹس کو آپ کی ضرورت کے مطابق ایکسپورٹ کرتی ہیں۔ ہم براہ راست SQL ڈیٹا بیس میں لکھ سکتے ہیں، REST APIs فراہم کر سکتے ہیں، یا Power BI کے ساتھ سنک کر سکتے ہیں۔ یہ یقینی بناتا ہے کہ آپ کی آپریشنز ٹیم اپنے موجودہ روزمرہ کے ٹولز کے اندر پیشگوئیوں تک رسائی حاصل کر سکے۔"
+          },
+          {
+            "question": "آپ کیسے اندازہ لگاتے ہیں کہ فورکاسٹنگ ماڈل اچھا کام کر رہا ہے؟",
+            "answer": "ہم ماڈل کی کارکردگی کو MAE اور RMSE جیسے معیاری میٹرکس کا استعمال کرتے ہوئے ماپتے ہیں۔ ہم موازنہ کے لیے آسان تاریخی اوسط کا استعمال کرتے ہوئے ایک بیس لائن قائم کرتے ہیں۔ ماڈل کو ڈیپلومنٹ کے لیے منظور کرنے سے پہلے بیس لائن کے مقابلے میں نمایاں طور پر بہتر کارکردگی کا مظاہره کرنا چاہیے۔"
+          },
+          {
+            "question": "ماڈل ڈرفٹ کیا ہے، اور اس سے کیسے بچا جاتا ہے؟",
+            "answer": "ماڈل ڈرفٹ تب ہوتا ہے جب آپ کے کاروبار کے بنیادی پیٹرنز تبدیل ہو جائیں، جس سے پیشگوئی کی درستگی کم ہو جائے۔ ہم پروڈکشن میں خودکار مانیٹرنگ اسکرپٹس چلا کر ڈرفٹ سے بچتے ہیں۔ یہ اسکرپٹس روزانہ کی پیشگوئی کی غلطیوں کو ٹریک کرتی ہیں اور غلطی کی شرح بڑھنے پر ماڈل کی خودکار ری ٹریننگ شروع کرتی ہے۔"
+          }
+        ],
+        "technologies": [
+          { "icon": "python", "name": "Python" },
+          { "icon": "pytorch", "name": "PyTorch" },
+          { "icon": "tensorflow", "name": "TensorFlow" },
+          { "icon": "scikitlearn", "name": "scikit-learn" },
+          { "icon": "pandas", "name": "Pandas" },
+          { "icon": "influxdb", "name": "InfluxDB" },
+          { "icon": "apachespark", "name": "Apache Spark" },
+          { "icon": "amazonwebservices", "name": "Amazon Web Services" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "التنبؤ بالسلاسل الزمنية",
+      "shortDescription": "توقع اتجاهات الأعمال وتقلبات الطلب الموسمية والمقاييس التشغيلية الرئيسية باستخدام بيانات السلاسل التاريخية ونماذج التعلم الآلي المتقدمة والمخصصة للأنماط الزمنية لتحسين كفاءة سلاسل الإمداد ومستويات المخزون.",
+      "fullDescription": "يساعد التنبؤ بالسلاسل الزمنية في تحويل تسلسل البيانات التاريخية إلى خريطة طريق موثوقة لاتخاذ القرارات. نحن نصمم وننشر خطوط معالجة تنبؤية جاهزة للإنتاج تساعد مؤسستك على تحسين سلاسل الإمداد، وإدارة مستويات المخزون، وجدولة نوبات العمل، وتخطيط الميزانيات المالية. تغطي خبرتنا الأساليب الإحصائية مثل ARIMA و Prophet، ونماذج التعلم الآلي مثل XGBoost، ونماذج التعلم العميق المتقدمة بما في ذلك LSTMs و Temporal Fusion Transformers. نحن نعالج التحديات المعقدة مثل الفترات الزمنية غير المنتظمة، والبيانات المفقودة، والتأثيرات الخارجية مثل العطلات أو الطقس. من خلال أتمتة جمع البيانات وتنظيفها وإعادة تدريب النماذج، نقدم تنبؤات دقيقة مباشرة إلى نظام ERP أو قاعدة البيانات أو لوحة تشغيل BI الخاصة بك. يقلل هذا من الهدر التشغيلي ويزيد من هوامش الربح.",
+      "features": [
+        "التنبؤ الإحصائي (ARIMA, SARIMAX)",
+        "نماذج التعلم الآلي (XGBoost, LightGBM)",
+        "هندسة التعلم العميق (LSTM, GRU)",
+        "نماذج المحولات الحديثة (TFT, PatchTST)",
+        "دمج المتغيرات الخارجية والعطلات الرسمية",
+        "الكشف التلقائي عن الشذوذ والقيم المتطرفة",
+        "التنبؤ الهرمي ومتعدد الخطوات",
+        "المراقبة المستمرة لانحراف النموذج (Drift)"
+      ],
+      "benefits": [
+        "تقليل تكاليف المخزون من خلال مواءمة العرض مع الطلب",
+        "تحسين جدولة العمالة بناءً على حركة العملاء المتوقعة",
+        "تعزيز الاستقرار المالي من خلال توقعات التدفق النقدي الدقيقة",
+        "تقليل نفاد المخزون وزيادة الإيرادات في فترات الذروة",
+        "أتمتة عمليات التنبؤ لتوفير وقت التخطيط للموظفين",
+        "اكتشاف الاتجاهات الهيكلية والتغيرات الدورية مبكراً"
+      ],
+      "metaTitle": "التنبؤ بالسلاسل الزمنية ونماذج التنبؤ | PakSoft",
+      "metaDescription": "توقع التغيرات في السوق والطلب. نحن نبني نماذج تنبؤ بالسلاسل الزمنية باستخدام ARIMA و Prophet و LSTMs. اتصل بنا للحصول على استشارة.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "جمع البيانات وتنظيفها",
+            "description": "نتصل بقاعدة البيانات الخاصة بك لجمع البيانات التاريخية وتنظيف الشذوذ. يتم استكمال الطوابع الزمنية المفقودة لضمان جودة بيانات متسقة طوال خط المعالجة."
+          },
+          {
+            "step": 2,
+            "title": "هندسة الميزات",
+            "description": "نستخرج مؤشرات التقويم والمعدلات المتحركة والفروق الزمنية والمؤشرات الموسمية من المدخلات الخام. يتم دمج مجموعات البيانات الخارجية مثل الطقس ومؤشرات السوق أيضاً."
+          },
+          {
+            "step": 3,
+            "title": "اختيار النموذج وتدريبه",
+            "description": "نقارن بين الأساليب الإحصائية الكلاسيكية ونماذج التعلم الآلي والتعلم العميق جنباً إلى جنب. يتم اختيار النموذج الأفضل أداءً بناءً على مقاييس الاختبار التاريخية."
+          },
+          {
+            "step": 4,
+            "title": "التحقق والضبط الدقيق",
+            "description": "نختبر النموذج باستخدام التحقق المتبادل لمحاكاة تنبؤات السلاسل في العالم الحقيقي. يتم ضبط المعلمات الفائقة لتقليل معدلات الخطأ عبر جميع الآفاق التنبؤية."
+          },
+          {
+            "step": 5,
+            "title": "تكامل خطوط المعالجة",
+            "description": "ننشر نظام التنبؤ في البيئات السحابية كخط معالجة تلقائي وقت التشغيل. يتم إرسال مخرجات التنبؤ مباشرة إلى نظام CRM أو ERP أو لوحة التحكم."
+          },
+          {
+            "step": 6,
+            "title": "مراقبة الانحراف (Drift)",
+            "description": "نراقب التنبؤات الفعلية مقابل النتائج الحقيقية لتحديد أي تراجع في الأداء. يتم إطلاق جداول إعادة التدريب التلقائي عندما تنخفض المقاييس عن الحدود المقبولة."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما هي النماذج الرياضية التي تستخدمها للتنبؤ؟",
+            "answer": "نختار النماذج بناءً على تعقيد بياناتك واحتياجات عملك. للبيانات المستقرة ذات الموسمية الواضحة، نستخدم ARIMA أو Prophet. للبيانات الأكثر تعقيداً، نطبق التعلم الآلي مثل XGBoost أو هندسة التعلم العميق مثل LSTMs. يضمن هذا النهج الهجين دقة تنبؤ مثالية."
+          },
+          {
+            "question": "ما هي كمية البيانات التاريخية المطلوبة للتنبؤات الدقيقة؟",
+            "answer": "نوصي بوجود دورتين أو ثلاث دورات كاملة من البيانات التاريخية لالتقاط الموسمية بدقة. على سبيل المثال، يتطلب التقاط الموسمية السنوية ما لا يقل عن عامين من البيانات الأسبوعية. يساعد وجود تاريخ أطول نماذجنا على فصل الاتجاهات الهيكلية الحقيقية عن الشذوذ الخارجي المؤقت."
+          },
+          {
+            "question": "هل يمكن لأنظمتكم التعامل مع التغيرات المفاجئة مثل الأزمات الاقتصادية؟",
+            "answer": "نعم، تدمج خطوط المعالجة لدينا متغيرات خارجية مثل مؤشرات السوق أو تغيرات الأسعار لتعديل التنبؤات. ومع ذلك، يصعب على أي خوارزمية التنبؤ بالأحداث النادرة جداً. نحن نوفر عناصر تحكم يدوية لتعديل التوقعات الأساسية أثناء الأزمات."
+          },
+          {
+            "question": "كيف تتعاملون مع القيم المفقودة في البيانات التاريخية؟",
+            "answer": "نطبق طرق معالجة زمنية متقدمة لملء الفراغات أثناء مرحلة المعالجة المسبقة لخط البيانات. اعتماداً على نوع البيانات، نستخدم الاستكمال الخطي أو الملء الأمامي أو نماذج التعلم الآلي. يمنع هذا حدوث أي تراجع في الأداء بسبب نقص جمع البيانات."
+          },
+          {
+            "question": "ما هو الفرق بين التنبؤ بالسلاسل الزمنية والانحدار (Regression)؟",
+            "answer": "يتوقع الانحدار القياسي النتائج بناءً على متغيرات مستقلة في نقطة زمنية واحدة. أما التنبؤ بالسلاسل الزمنية فيركز خصيصاً على الترتيب الزمني والاعتماد المتسلسل للبيانات. يعني هذا أنه يحدد بوضوح كيف تؤثر السلوكيات الماضية والاتجاهات الدورية والموسمية على المقاييس المستقبلية."
+          },
+          {
+            "question": "كيف يتم تسليم التنبؤات إلى أنظمتنا الحالية؟",
+            "answer": "نقوم ببناء خطوط معالجة مخصصة تصدر مخرجات التنبؤ بالتنسيق الذي يناسب عملك. يمكننا الكتابة مباشرة في قواعد بيانات SQL، أو توفير REST APIs، أو المزامنة مع Power BI. يضمن ذلك وصول فريق العمليات إلى التوقعات ضمن أدواتهم اليومية."
+          },
+          {
+            "question": "كيف تقيمون ما إذا كان نموذج التنبؤ يعمل بشكل جيد؟",
+            "answer": "نقيس أداء النموذج باستخدام مقاييس قياسية مثل متوسط الخطأ المطلق وجذر متوسط الخطأ التربيعي. نضع خط أساس باستخدام المتوسطات التاريخية البسيطة للمقارنة. يجب أن يظهر النموذج تحسناً كبيراً مقارنة بخط الأساس قبل اعتماده للنشر النهائي."
+          },
+          {
+            "question": "ما هو انحراف النموذج (Model Drift) وكيف يتم منعه؟",
+            "answer": "يحدث انحراف النموذج عندما تتغير الأنماط الأساسية لأعمالك، مما يؤدي إلى انخفاض دقة التنبؤ. نمنع هذا الانحراف من خلال تنفيذ نصوص مراقبة تلقائية في بيئة الإنتاج. تتتبع هذه النصوص أخطاء التنبؤ يومياً وتطلق إعادة التدريب التلقائي عند تجاوز الحدود."
+          }
+        ],
+        "technologies": [
+          { "icon": "python", "name": "Python" },
+          { "icon": "pytorch", "name": "PyTorch" },
+          { "icon": "tensorflow", "name": "TensorFlow" },
+          { "icon": "scikitlearn", "name": "scikit-learn" },
+          { "icon": "pandas", "name": "Pandas" },
+          { "icon": "influxdb", "name": "InfluxDB" },
+          { "icon": "apachespark", "name": "Apache Spark" },
+          { "icon": "amazonwebservices", "name": "Amazon Web Services" }
+        ]
+      }
+    }
+  },
+  "video-analytics": {
+    "en": {
+      "name": "Video Analytics",
+      "shortDescription": "Extract real-time operational insights, track moving objects, detect security anomalies, and automate surveillance monitoring from live camera feeds using custom deep learning computer vision algorithms.",
+      "fullDescription": "Video analytics transforms passive camera feeds into active sources of intelligence and automation. We design and build custom enterprise solutions that analyze video in real time for security, operations, retail, and manufacturing. Utilizing state-of-the-art computer vision models like YOLO, custom CNNs, and vision transformers, our systems perform object detection, tracking, crowd counting, and behavioral analysis. We optimize pipelines using NVIDIA DeepStream, TensorRT, and OpenCV to run efficiently on edge devices or in the cloud. Whether you need automated quality control on a factory line, traffic monitoring for smart cities, or customer analytics for retail stores, we deliver secure, compliant, and highly accurate video intelligence solutions.",
+      "features": [
+        "Real-Time Object Detection & Classification",
+        "Multi-Camera Object Tracking & Re-Identification",
+        "Anomaly Detection & Intrusion Alerts",
+        "Crowd Density & Queue Management",
+        "License Plate Recognition (LPR / ANPR)",
+        "Optimized Edge Computing Deployment",
+        "Privacy-Masking & GDPR/HIPAA Compliance",
+        "Custom Dashboard & Analytics Integration"
+      ],
+      "benefits": [
+        "Improve physical security with instant anomaly notifications",
+        "Enhance operational efficiency by automating quality inspections",
+        "Gain deep customer insights through foot-traffic behavior analysis",
+        "Reduce bandwidth costs using intelligent edge processing models",
+        "Ensure strict privacy compliance via automatic face blurring",
+        "Scale monitoring capabilities without increasing security staff"
+      ],
+      "metaTitle": "Video Analytics & Computer Vision Solutions | PakSoft",
+      "metaDescription": "Turn camera feeds into intelligence. We build custom video analytics systems for security, retail, and manufacturing. Contact us for a demo.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Camera Feed Integration",
+            "description": "We connect to your existing IP camera streams using secure protocols like RTSP. The incoming video signals are transcoded and prepared for real-time analysis."
+          },
+          {
+            "step": 2,
+            "title": "Model Selection & Customization",
+            "description": "We select the optimal object detection architecture such as YOLO or custom vision transformers. The models are trained on your specific target objects and environments."
+          },
+          {
+            "step": 3,
+            "title": "Pipeline Optimization",
+            "description": "We optimize execution using NVIDIA TensorRT and DeepStream SDKs. This ensures low-latency execution and high frame rates on edge hardware or cloud servers."
+          },
+          {
+            "step": 4,
+            "title": "Logic & Alert Configuration",
+            "description": "We program custom spatial triggers, virtual tripwires, and behavioral rules. Alerts are configured to ping your internal notification systems when specific events are detected."
+          },
+          {
+            "step": 5,
+            "title": "Privacy & Compliance Setup",
+            "description": "We integrate automated privacy protection rules like face and license plate blurring. This ensures your systems fully comply with local data protection regulations."
+          },
+          {
+            "step": 6,
+            "title": "Deployment & Scaling",
+            "description": "We deploy the optimized system as containerized microservices across your infrastructure. The platform is configured to scale dynamically as more camera feeds are added."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Can your video analytics systems run on our existing IP cameras?",
+            "answer": "Yes, our solutions are camera-agnostic and work with any modern IP camera that supports RTSP or ONVIF protocols. You do not need to purchase expensive new cameras to utilize our analytics software. We simply ingest the existing video streams directly into our processing pipeline."
+          },
+          {
+            "question": "Do you run the video processing on-premise or in the cloud?",
+            "answer": "We offer flexible deployment models based on your bandwidth and security requirements. We can deploy on-premise edge hardware using NVIDIA Jetson devices to process video locally. Alternatively, we can route streams to cloud infrastructure for centralized processing and easier management."
+          },
+          {
+            "question": "How do you handle privacy regulations like GDPR?",
+            "answer": "We design privacy-first systems by implementing automated redaction directly at the edge. The pipeline can automatically blur faces and license plates before the video is stored or analyzed. This allows you to collect valuable operational metrics without violating user privacy laws."
+          },
+          {
+            "question": "What is the detection accuracy of your video analytics models?",
+            "answer": "Accuracy depends on lighting, camera positioning, and object density, but our custom-trained models typically achieve 95% to 99% accuracy. We conduct extensive testing on your actual environment to refine detection parameters. This ensures we minimize false positives from shadows or environmental changes."
+          },
+          {
+            "question": "What kind of hardware is required for local processing?",
+            "answer": "For local edge processing, we typically recommend NVIDIA hardware such as Jetson Orin modules or industrial PCs equipped with TensorRT-compatible GPUs. These devices are optimized to run multiple deep learning streams simultaneously. We will help you select the most cost-effective hardware."
+          },
+          {
+            "question": "Can the system detect complex behaviors like falls or fights?",
+            "answer": "Yes, we build action recognition models that analyze sequence frames to detect behavioral anomalies. The system can recognize specific actions like slipping, falling, fighting, or loitering. These triggers can instantly alert security personnel to take immediate action on-site."
+          },
+          {
+            "question": "How long does it take to deploy a video analytics solution?",
+            "answer": "A standard deployment using pre-trained models for object counting takes 4 to 6 weeks. If we need to train custom models for specific proprietary objects, the project can take 8 to 12 weeks. This timeline includes setup, training, and onsite optimization."
+          },
+          {
+            "question": "Can the video analytics system integrate with our CRM or ERP?",
+            "answer": "Absolutely. We build integrations that expose detected events via webhook or REST API. This allows video analytics metadata (like customer counts or anomaly alerts) to trigger workflows in your CRM, ERP, or warehouse management systems. Your business processes become automatically responsive to real-world events."
+          }
+        ],
+        "technologies": [
+          { "icon": "opencv", "name": "OpenCV" },
+          { "icon": "pytorch", "name": "PyTorch" },
+          { "icon": "tensorflow", "name": "TensorFlow" },
+          { "icon": "python", "name": "Python" },
+          { "icon": "nvidia", "name": "NVIDIA TensorRT" },
+          { "icon": "docker", "name": "Docker" },
+          { "icon": "amazonwebservices", "name": "Amazon Web Services" },
+          { "icon": "postgresql", "name": "PostgreSQL" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Video Analitiği",
+      "shortDescription": "Gelişmiş bilgisayarlı görü algoritmaları kullanarak canlı kamera akışlarından gerçek zamanlı operasyonel içgörüler elde edin, hareketli nesneleri takip edin ve güvenlik anomali tespitini otomatikleştirin.",
+      "fullDescription": "Video analitiği, pasif kamera görüntülerini aktif birer zeka ve otomasyon kaynağına dönüştürür. Güvenlik, operasyon, perakende ve üretim alanlarında video verilerini gerçek zamanlı analiz eden özel kurumsal çözümler tasarlıyor ve geliştiriyoruz. YOLO, özel CNN'ler ve vision transformers gibi son teknoloji bilgisayarlı görü modellerini kullanarak nesne algılama, takip, kalabalık sayımı ve davranışsal analizler gerçekleştiriyoruz. İşleme hatlarımızı uç cihazlarda veya bulutta verimli çalışacak şekilde NVIDIA DeepStream, TensorRT ve OpenCV kullanarak optimize ediyoruz. Fabrika hattında otomatik kalite kontrolüne, akıllı şehirler için trafik izlemeye veya mağazalar için müşteri analitiğine ihtiyaç duyduğunuzda, güvenli ve uyumlu çözümler sunuyoruz.",
+      "features": [
+        "Gerçek Zamanlı Nesne Algılama ve Sınıflandırma",
+        "Çoklu Kamera Nesne Takibi ve Yeniden Tanımlama",
+        "Anomali Tespiti ve Yetkisiz Giriş Uyarıları",
+        "Kalabalık Yoğunluğu ve Kuyruk Yönetimi",
+        "Plaka Tanıma Sistemleri (LPR / ANPR)",
+        "Optimize Edilmiş Uç Bilişim (Edge) Dağıtımı",
+        "Gizlilik Maskeleme ve GDPR/KVKK Uyumluluğu",
+        "Özel Gösterge Paneli ve Analitik Entegrasyonu"
+      ],
+      "benefits": [
+        "Anlık anomali bildirimleriyle fiziksel güvenliği artırın",
+        "Kalite denetimlerini otomatikleştirerek operasyonel verimliliği yükseltin",
+        "Ziyaretçi davranışı analiziyle derin müşteri içgörüleri edinin",
+        "Uçta işleme modelleriyle bant genişliği maliyetlerini azaltın",
+        "Otomatik yüz maskeleme ile veri gizliliği uyumluluğu sağlayın",
+        "Güvenlik personeli sayısını artırmadan izleme kapasitenizi ölçeklendirin"
+      ],
+      "metaTitle": "Video Analitiği ve Bilgisayarlı Görü Çözümleri | PakSoft",
+      "metaDescription": "Kamera görüntülerini zekaya dönüştürün. Güvenlik, perakende ve üretim için özel video analitik sistemleri kuruyoruz. Demolarımız için iletişime geçin.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Kamera Akışı Entegrasyonu",
+            "description": "RTSP gibi güvenli protokolleri kullanarak mevcut IP kameralarınıza bağlanıyoruz. Gelen video sinyalleri gerçek zamanlı analiz için dönüştürülür ve hazır hale getirilir."
+          },
+          {
+            "step": 2,
+            "title": "Model Seçimi ve Özelleştirme",
+            "description": "YOLO veya özel vision transformers gibi en uygun nesne algılama mimarisini seçiyoruz. Modeller, hedeflenen nesneler ve çalışma ortamlarınız üzerinde eğitilir."
+          },
+          {
+            "step": 3,
+            "title": "Boru Hattı Optimasyonu",
+            "description": "NVIDIA TensorRT ve DeepStream SDK'larını kullanarak video işleme hatlarını optimize ediyoruz. Bu, uç donanımlarda veya bulut sunucularında düşük gecikme sağlar."
+          },
+          {
+            "step": 4,
+            "title": "Mantık ve Uyarı Yapılandırması",
+            "description": "Özel mekansal tetikleyiciler, sanal sınırlar ve davranış kuralları programlıyoruz. Belirli olaylar algılandığında iç bildirim sistemlerinize uyarı gönderilecek şekilde yapılandırılır."
+          },
+          {
+            "step": 5,
+            "title": "Gizlilik ve Uyumluluk Ayarı",
+            "description": "Otomatik yüz ve plaka maskeleme gibi gizlilik koruma kurallarını sisteme entegre ediyoruz. Bu, sisteminizin yerel veri koruma yönetmeliklerine tam uymasını sağlar."
+          },
+          {
+            "step": 6,
+            "title": "Dağıtım ve Ölçeklendirme",
+            "description": "Optimize edilmiş sistemi altyapınız genelinde konteynerli mikro hizmetler olarak kuruyoruz. Platform, yeni kamera akışları eklendikçe dinamik olarak ölçeklenecek şekilde yapılandırılır."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Video analitik sistemleriniz mevcut IP kameralarımızda çalışabilir mi?",
+            "answer": "Evet, çözümlerimiz kamera markasından bağımsızdır ve RTSP veya ONVIF protokollerini destekleyen tüm modern IP kameralarla çalışır. Analitik yazılımımızı kullanmak için pahalı yeni kameralar satın almanıza gerek yoktur. Mevcut video akışlarını doğrudan analiz hattımıza entegre ediyoruz."
+          },
+          {
+            "question": "Video işlemeyi yerinde mi yoksa bulutta mı çalıştırıyorsunuz?",
+            "answer": "Bant genişliği ve güvenlik gereksinimlerinize göre esnek dağıtım modelleri sunuyoruz. Videoları yerel olarak işlemek için NVIDIA Jetson cihazları kullanarak yerinde kurulum yapabiliriz. Alternatif olarak, merkezi yönetim ve daha kolay kontrol için akışları bulut altyapısına yönlendirebiliriz."
+          },
+          {
+            "question": "KVKK ve GDPR gibi gizlilik düzenlemelerini nasıl ele alıyorsunuz?",
+            "answer": "Uç cihazlarda otomatik gizleme uygulayarak gizlilik odaklı sistemler tasarlıyoruz. Veri hattı, video depolanmadan veya analiz edilmeden önce yüzleri ve plakaları otomatik olarak maskeleyebilir. Bu sayede kullanıcı gizliliğini ihlal etmeden değerli operasyonel metrikler toplayabilirsiniz."
+          },
+          {
+            "question": "Video analitik modellerinizin algılama doğruluğu nedir?",
+            "answer": "Algılama doğruluğu aydınlatmaya, kamera açılarına ve nesne yoğunluğuna bağlıdır, ancak özel eğitimli modellerimiz genellikle %95 ila %99 doğruluğa ulaşır. Algılama parametrelerini iyileştirmek için ortamınızda kapsamlı testler yapıyoruz. Bu, gölgelerden veya çevresel değişikliklerden kaynaklanan yanlış uyarıları en aza indirir."
+          },
+          {
+            "question": "Yerel işleme için ne tür donanımlar gereklidir?",
+            "answer": "Yerel uç işleme için genellikle NVIDIA Jetson Orin modülleri veya TensorRT uyumlu GPU'lara sahip endüstriyel bilgisayarlar öneriyoruz. Bu cihazlar, birden fazla derin öğrenme akışını aynı anda çalıştıracak şekilde optimize edilmiştir. En uygun maliyetli donanımı seçmenize yardımcı oluyoruz."
+          },
+          {
+            "question": "Sistem düşme veya kavga gibi karmaşık davranışları algılayabilir mi?",
+            "answer": "Evet, davranışsal anomalileri tespit etmek için ardışık kareleri analiz eden eylem tanıma modelleri geliştiriyoruz. Sistem kayma, düşme, kavga veya şüpheli bekleme gibi belirli eylemleri tanıyabilir. Bu tetikleyiciler, yerinde müdahale için güvenlik personelini anında uyarabilir."
+          },
+          {
+            "question": "Bir video analitiği çözümünü devreye almak ne kadar sürer?",
+            "answer": "Nesne sayımı için önceden eğitilmiş modeller kullanan standart bir kurulum 4 ila 6 hafta sürer. Özel tescilli nesneler için özel modeller eğitmemiz gerekirse proje 8 ila 12 hafta sürebilir. Bu süreye kurulum, eğitim ve yerinde optimizasyon dahildir."
+          },
+          {
+            "question": "Video analitik sistemi CRM veya ERP sistemimizle entegre olabilir mi?",
+            "answer": "Kesinlikle. Algılanan olayları webhook'lar veya REST API aracılığıyla ileten entegrasyonlar oluşturuyoruz. Bu, video analitiği meta verilerinin (müşteri sayıları veya anomali uyarıları gibi) CRM, ERP veya depo yönetim sistemlerinizde iş akışlarını tetiklemesini sağlar. İş süreçleriniz gerçek dünyadaki olaylara otomatik yanıt verir."
+          }
+        ],
+        "technologies": [
+          { "icon": "opencv", "name": "OpenCV" },
+          { "icon": "pytorch", "name": "PyTorch" },
+          { "icon": "tensorflow", "name": "TensorFlow" },
+          { "icon": "python", "name": "Python" },
+          { "icon": "nvidia", "name": "NVIDIA TensorRT" },
+          { "icon": "docker", "name": "Docker" },
+          { "icon": "amazonwebservices", "name": "Amazon Web Services" },
+          { "icon": "postgresql", "name": "PostgreSQL" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Videoanalytik",
+      "shortDescription": "Gewinnen Sie betriebliche Erkenntnisse in Echtzeit, verfolgen Sie bewegliche Objekte, erkennen Sie Anomalien und automatisieren Sie die Überwachung mithilfe kundenspezifischer Deep-Learning-Computer-Vision-Algorithmen.",
+      "fullDescription": "Die Videoanalytik verwandelt passive Kamera-Feeds in aktive Quellen für Intelligenz und Automatisierung. Wir entwerfen und bauen maßgeschneiderte Unternehmenslösungen, die Videodaten in Echtzeit für Sicherheit, Betrieb, Einzelhandel und Fertigung analysieren. Unter Verwendung modernster Computer-Vision-Modelle wie YOLO, kundenspezifischer CNNs und Vision-Transformers führen unsere Systeme Objekterkennung, Tracking, Personenzählung und Verhaltensanalyse durch. Wir optimieren Daten-Pipelines mit NVIDIA DeepStream, TensorRT und OpenCV, um sie effizient auf Edge-Geräten oder in der Cloud auszuführen. Ob Sie eine automatisierte Qualitätskontrolle in einer Fabrik, Verkehrsüberwachung für Smart Cities oder Kundenanalysen im Einzelhandel benötigen — wir liefern sichere, konforme und hochpräzise Video-Intelligence-Lösungen.",
+      "features": [
+        "Echtzeit-Objekterkennung & Klassifizierung",
+        "Kameraübergreiftes Tracking & Wiedererkennung",
+        "Anomalieerkennung & Einbruchsalarme",
+        "Crowd-Dichte- & Warteschlangenmanagement",
+        "Kennzeichenerkennung (LPR / ANPR)",
+        "Optimierte Edge-Computing-Bereitstellung",
+        "Privatsphären-Maskierung & GDPR/DSGVO-Konformität",
+        "Integration von Dashboards & Analysen"
+      ],
+      "benefits": [
+        "Physische Sicherheit durch sofortige Anomaliebenachrichtigungen verbessern",
+        "Betriebliche Effizienz durch automatisierte Qualitätsinspektionen steigern",
+        "Tiefe Kundeneinblicke durch Analyse des Besucherverhaltens gewinnen",
+        "Bandbreitenkosten durch intelligente Edge-Verarbeitungsmodelle senken",
+        "Strikte Datenschutzkonformität durch automatische Gesichtszensur sichern",
+        "Überwachungskapazitäten skalieren, ohne das Sicherheitspersonal aufzustocken"
+      ],
+      "metaTitle": "Videoanalytik & Computer-Vision-Lösungen | PakSoft",
+      "metaDescription": "Kamera-Feeds in Intelligenz verwandeln. Wir bauen Videoanalytik-Systeme für Sicherheit, Handel und Industrie. Kontaktieren Sie uns für eine Demo.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Kamera-Feed-Integration",
+            "description": "Wir binden Ihre IP-Kamera-Streams über sichere Protokolle wie RTSP an. Eingehende Videosignale werden transkodiert und für die Echtzeitanalyse vorbereitet."
+          },
+          {
+            "step": 2,
+            "title": "Modellauswahl & Anpassung",
+            "description": "Wir wählen die optimale Objekterkennungsarchitektur wie YOLO oder kundenspezifische Vision-Transformers aus. Die Modelle werden auf Ihre spezifischen Objekte trainiert."
+          },
+          {
+            "step": 3,
+            "title": "Pipeline-Optimierung",
+            "description": "Wir optimieren die Verarbeitung mithilfe von NVIDIA TensorRT und den DeepStream SDKs. Dies garantiert eine extrem niedrige Latenz auf Edge-Hardware oder Cloud-Servern."
+          },
+          {
+            "step": 4,
+            "title": "Logik & Alarmkonfiguration",
+            "description": "Wir programmieren räumliche Trigger, virtuelle Stolperdrähte und Verhaltensregeln. Alarme werden so konfiguriert, dass sie bei Erkennung bestimmter Ereignisse Benachrichtigungen senden."
+          },
+          {
+            "step": 5,
+            "title": "Datenschutz-Einrichtung",
+            "description": "Wir integrieren automatisierte Datenschutzregeln zur Gesichts- und Kennzeichenverpixelung. Dies stellt sicher, dass Ihre Systeme den lokalen Datenschutzbestimmungen entsprechen."
+          },
+          {
+            "step": 6,
+            "title": "Bereitstellung & Skalierung",
+            "description": "Wir stellen das optimierte System als containerisierte Mikrodienste auf Ihrer Infrastruktur bereit. Die Plattform skaliert automatisch, wenn weitere Kamera-Feeds hinzugefügt werden."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Können Ihre Videoanalytik-Systeme auf unseren vorhandenen IP-Kameras laufen?",
+            "answer": "Ja, unsere Lösungen sind herstellerunabhängig und funktionieren mit jeder modernen IP-Kamera, die RTSP oder ONVIF unterstützt. Sie müssen keine teuren neuen Kameras erwerben, um unsere Analysesoftware zu nutzen. Wir integrieren die vorhandenen Videoströme einfach direkt in unsere Verarbeitungspipeline."
+          },
+          {
+            "question": "Wird die Videoverarbeitung vor Ort oder in der Cloud durchgeführt?",
+            "answer": "Wir bieten flexible Bereitstellungsmodelle basierend auf Ihren Bandbreiten- und Sicherheitsanforderungen. Wir können lokale Edge-Hardware mit NVIDIA Jetson-Geräten installieren, um Videos direkt vor Ort zu verarbeiten. Alternativ leiten wir die Videoströme für eine zentralisierte Cloud-Verarbeitung weiter."
+          },
+          {
+            "question": "Wie gehen Sie mit Datenschutzbestimmungen wie der DSGVO um?",
+            "answer": "Wir entwerfen datenschutzfreundliche Systeme, indem wir eine automatische Zensur direkt auf den Edge-Geräten implementieren. Die Pipeline kann Gesichter und Kennzeichen verpixeln, bevor das Video gespeichert oder analysiert wird. So erfassen Sie wertvolle Kennzahlen, ohne die Privatsphäre der Nutzer zu verletzen."
+          },
+          {
+            "question": "Wie hoch ist die Erkennungsgenauigkeit Ihrer Videoanalytik-Modelle?",
+            "answer": "Die Genauigkeit hängt von Lichtverhältnissen, Kameraposition und Objektdichte ab, aber unsere speziell trainierten Modelle erreichen typischerweise 95% bis 99% Genauigkeit. Wir führen umfangreiche Tests vor Ort durch, um die Erkennungsparameter anzupassen. Dies minimiert Fehlalarme durch Schatten oder Umweltfaktoren."
+          },
+          {
+            "question": "Welche Hardware ist für die lokale Verarbeitung erforderlich?",
+            "answer": "Für die lokale Edge-Verarbeitung empfehlen wir NVIDIA Hardware wie Jetson Orin-Module oder Industrie-PCs mit TensorRT-kompatiblen Grafikkarten. Diese Geräte sind dafür optimiert, mehrere Deep-Learning-Streams gleichzeitig zu verarbeiten. Wir unterstützen Sie bei der Auswahl der kosteneffizientesten Hardware-Komponenten."
+          },
+          {
+            "question": "Kann das System komplexe Verhaltensweisen wie Stürze erkennen?",
+            "answer": "Ja, wir entwickeln Action-Recognition-Modelle, die aufeinanderfolgende Videobilder analysieren, um Verhaltensanomalien zu erkennen. Das System erkennt Aktionen wie Ausrutschen, Stürzen, Kämpfen oder unbefugtes Verweilen. Diese Auslöser können das Sicherheitspersonal vor Ort sofort über kritische Vorfälle informieren."
+          },
+          {
+            "question": "Wie lange dauert es, eine Videoanalytik-Lösung bereitzustellen?",
+            "answer": "Eine Standardbereitstellung mit vortrainierten Modellen zur Personenzählung dauert etwa 4 bis 6 Wochen. Wenn wir benutzerdefinierte Modelle für spezielle, proprietäre Objekte trainieren müssen, dauert das Projekt 8 bis 12 Wochen. Dieser Zeitrahmen umfasst Installation, Training und Optimierung vor Ort."
+          },
+          {
+            "question": "Kann das Videoanalytik-System in unser CRM oder ERP integriert werden?",
+            "answer": "Absolut. Wir entwickeln Integrationen, die erkannte Ereignisse über Webhooks oder REST-APIs übertragen. Dadurch können Metadaten der Videoanalytik (wie Kundenzahlen oder Warnmeldungen) Workflows in Ihrem CRM, ERP oder Lagersystem auslösen. Ihre Geschäftsprozesse reagieren somit automatisch auf reale Ereignisse vor Ort."
+          }
+        ],
+        "technologies": [
+          { "icon": "opencv", "name": "OpenCV" },
+          { "icon": "pytorch", "name": "PyTorch" },
+          { "icon": "tensorflow", "name": "TensorFlow" },
+          { "icon": "python", "name": "Python" },
+          { "icon": "nvidia", "name": "NVIDIA TensorRT" },
+          { "icon": "docker", "name": "Docker" },
+          { "icon": "amazonwebservices", "name": "Amazon Web Services" },
+          { "icon": "postgresql", "name": "PostgreSQL" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "ویڈیو اینالیٹکس",
+      "shortDescription": "خصوصی کمپیوٹر ویژن الگورتھمز اور ڈیپ لرننگ کا استعمال کرتے ہوئے لائیو کیمرہ فیڈز سے ریئل ٹائم آپریشنل بصیرت حاصل کریں، متحرک اشیاء کو ٹریک کریں، اور سیکیورٹی مانیٹرنگ کو خودکار بنائیں۔",
+      "fullDescription": "ویڈیو اینالیٹکس غیر فعال کیمرہ فیڈز کو فعال انٹیلی جنس اور خودکار نظاموں میں تبدیل کرتی ہے۔ ہم سیکیورٹی، آپریشنز، ریٹیل اور مینوفیکچرنگ کے لیے ایسے مرضی کے مطابق حل ڈیزائن اور بناتے ہیں جو ریئل ٹائم میں ویڈیو ڈیٹا کا تجزیہ کرتے ہیں۔ YOLO، اپنی مرضی کے مطابق CNNs اور ویژن ٹرانسفارمرز جیسے جدید ترین کمپیوٹر ویژن ماڈلز کا استعمال کرتے ہوئے، ہمارے سسٹمز آبجیکٹ ڈیٹیکشن، ٹریکنگ، ہجوم کی گنتی، اور رویے کے تجزیے کے کام انجام دیتے ہیں۔ ہم NVIDIA DeepStream، TensorRT اور OpenCV کا استعمال کرتے ہوئے ڈیٹا پائپ لائنز کو بہتر بناتے ہیں تاکہ وہ کلاؤڈ یا ایج ڈیوائسز پر آسانی سے چل سکیں۔ چاہے آپ کو فیکٹری میں کوالٹی کنٹرول کی ضرورت ہو یا ریٹیل اسٹورز کے لیے کسٹمر اینالیٹکس کی، ہم محفوظ اور مستحکم حل فراہم کرتے ہیں۔",
+      "features": [
+        "ریئل ٹائم آبجیکٹ ڈیٹیکشن اور کلاسیفیکیشن",
+        "ملٹی کیمرہ آبجیکٹ ٹریکنگ اور ری-آئیڈنٹیفیکیشن",
+        "انوملی ڈیٹیکشن اور مداخلت کے الرٹس",
+        "ہجوم کی کثافت اور قطار کا انتظام",
+        "لائسنس پلیٹ کی شناخت (LPR / ANPR)",
+        "بہتر ایج کمپیوٹنگ (Edge) ڈیپلومنٹ",
+        "پرائیویسی ماسکنگ اور GDPR/KVKK تعمیل",
+        "کسٹم ڈیش بورڈ اور اینالیٹکس انٹیگریشن"
+      ],
+      "benefits": [
+        "فوری انوملی الرٹس کے ذریعے جسمانی حفاظت کو بہتر بنائیں",
+        "کوالٹی چیکس کو خودکار بنا کر آپریشنل کارکردگی میں اضافہ کریں",
+        "کسٹمر بیہیویئر کے تجزیے کے ذریعے گہری بصیرت حاصل کریں",
+        "ایج پروسیسنگ ماڈلز کا استعمال کر کے بینڈوتھ کے اخراجات کم کریں",
+        "چہروں کو خودکار دھندلا (blur) کر کے پرائیویسی قوانین کی تعمیل کریں",
+        "سیکیورٹی اسٹاف میں اضافہ کیے بغیر نگرانی کی صلاحیتوں کو بڑھائیں"
+      ],
+      "metaTitle": "ویڈیو اینالیٹکس اور کمپیوٹر ویژن سلوشنز | PakSoft",
+      "metaDescription": "کیمرہ فیڈز کو انٹیلی جنس میں تبدیل کریں۔ ہم سیکیورٹی اور مینوفیکچرنگ کے لیے کسٹم ویڈیو اینالیٹکس سسٹمز بناتے ہیں۔ ڈیمو کے لیے آج ہی رابطہ کریں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "کیمرہ فیڈ انٹیگریشن",
+            "description": "ہم RTSP جیسے محفوظ پروٹوکول کا استعمال کرتے ہوئے آپ کے موجودہ IP کیمرہ اسٹریمز سے جڑتے ہیں۔ موصول ہونے والے ویڈیو سگنلز کو ریئل ٹائم تجزیہ کے لیے تبدیل کیا جاتا ہے۔"
+          },
+          {
+            "step": 2,
+            "title": "ماڈل کا انتخاب اور کسٹمائزیشن",
+            "description": "ہم YOLO veya özel vision transformers gibi en uygun nesne algılama mimarisini seçiyoruz. Modeller, hedeflenen nesneler ve çalışma ortamlarınız üzerinde eğitilir."
+          },
+          {
+            "step": 3,
+            "title": "پائپ لائن کی بہتری",
+            "description": "ہم NVIDIA TensorRT ve DeepStream SDK'larını kullanarak video işleme hatlarını optimize ediyoruz. Bu, uç donanımlarda veya bulut sunucularında düşük gecikme sağlar."
+          },
+          {
+            "step": 4,
+            "title": "لوجک اور الرٹ کنفیگریشن",
+            "description": "ہم özel mekansal tetikleyiciler, sanal sınırlar ve davranış kuralları programlıyoruz. Belirli olaylar algılandığında iç bildirim sistemlerinize uyarı gönderilecek şekilde yapılandırılır."
+          },
+          {
+            "step": 5,
+            "title": "پرائیویسی اور کمپلائنس سیٹ اپ",
+            "description": "ہم otomatik yüz ve plaka maskeleme gibi gizlilik koruma kurallarını sisteme entegre ediyoruz. Bu, sisteminizin yerel veri koruma yönetmeliklerine tam uymasını sağlar."
+          },
+          {
+            "step": 6,
+            "title": "ڈیپلومنٹ اور اسکیلنگ",
+            "description": "ہم optimize edilmiş sistemi altyapınız genelinde konteynerli mikro hizmetler olarak kuruyoruz. Platform, yeni kamera akışları eklendikçe dinamik olarak ölçeklenecek şekilde yapılandırılır."
+          }
+        ],
+        "faq": [
+          {
+            "question": "کیا آپ کا ویڈیو اینالیٹکس سسٹم ہمارے موجودہ کیمروں پر چل سکتا ہے؟",
+            "answer": "جی ہاں، ہمارے سلوشنز کسی بھی جدید IP کیمرے کے ساتھ کام کر سکتے ہیں جو RTSP یا ONVIF پروٹوکول کو سپورٹ کرتا ہو۔ ویڈیو اینالیٹکس سافٹ ویئر استعمال کرنے کے لیے آپ کو مہنگے نئے کیمرے خریدنے کی ضرورت نہیں ہے۔ ہم آسانی سے موجودہ اسٹریمز کو اپنے سسٹم میں مربوط کر لیتے ہیں۔"
+          },
+          {
+            "question": "کیا ویڈیو کی پروسیسنگ مقامی طور پر ہوتی ہے یا کلاؤڈ پر؟",
+            "answer": "ہم آپ کی بینڈوتھ اور سیکیورٹی کی ضروریات کی بنیاد پر دونوں آپشنز فراہم کرتے ہیں۔ ہم مقامی طور پر ویڈیوز کو پروسیس کرنے کے لیے NVIDIA Jetson ایج ڈیوائسز انسٹال کر سکتے ہیں۔ متبادل کے طور پر، ہم مرکزی انتظام اور آسان کنٹرول کے لیے اسٹریمز کو کلاؤڈ انفراسٹرکچر پر منتقل کر سکتے ہیں۔"
+          },
+          {
+            "question": "آپ GDPR اور مقامی پرائیویسی قوانین کو کیسے ہینڈل کرتے ہیں؟",
+            "answer": "ہم ایج پروسیسنگ کے دوران چہروں اور لائسنس پلیٹوں کو خودکار دھندلا کرنے کے فیچرز فراہم کرتے ہیں۔ یہ پروسیسنگ ویڈیو کے اسٹور یا تجزیہ ہونے سے پہلے کی جاتی ہے۔ اس طرح آپ پرائیویسی قوانین کی خلاف ورزی کیے بغیر آپریشنل میٹرکس اور ڈیٹا حاصل کر سکتے ہیں۔"
+          },
+          {
+            "question": "آپ کے ویڈیو اینالیٹکس ماڈلز کی درستگی کی شرح کیا ہے؟",
+            "answer": "اگرچہ درستگی روشنی، کیمرے کی پوزیشن اور بھیڑ پر منحصر ہوتی ہے، ہمارے ماڈلز عام طور پر 95% سے 99% درستگی فراہم کرتے ہیں۔ ہم غلط الرٹس کو کم کرنے کے لیے آپ کے حقیقی ماحول پر تفصیلی ٹیسٹنگ کرتے ہیں۔ اس سے ماحولیاتی تبدیلیوں اور سائے کی وجہ سے غلط الرٹس ختم ہو جاتے ہیں۔"
+          },
+          {
+            "question": "لوکل پروسیسنگ کے لیے کس قسم کے ہارڈ ویئر کی ضرورت ہوتی ہے؟",
+            "answer": "مقامی ایج پروسیسنگ کے لیے، ہم NVIDIA Jetson Orin ماڈیولز یا TensorRT مطابقت رکھنے والے GPUs سے لیس انڈسٹریل کمپیوٹرز کی سفارش کرتے ہیں۔ یہ ڈیوائسز ایک ہی وقت میں متعدد ویڈیوز کو پروسیس کرنے کے لیے بہترین ہیں۔ ہم آپ کے بجٹ کے مطابق بہترین ہارڈ ویئر منتخب کرنے میں مدد کریں گے۔"
+          },
+          {
+            "question": "کیا سسٹم پیچیدہ رویوں جیسے گرنا یا لڑائی کا پتہ لگا سکتا ہے؟",
+            "answer": "جی ہاں، ہم ایسے ایکشن ریکگنیشن ماڈلز بناتے ہیں جو ویڈیو کے مختلف فریمز کا تجزیہ کر کے غیر معمولی رویوں کا پتہ لگاتے ہیں۔ ہمارا سسٹم گرنے، پھسلنے، لڑائی جھگڑے یا مشتبہ طور پر کھڑے رہنے کا پتہ لگا سکتا ہے۔ یہ سسٹمز سیکیورٹی ٹیم کو فوری طور پر الرٹ بھیجتے ہیں۔"
+          },
+          {
+            "question": "ویڈیو اینالیٹکس سلوشن کو ڈیپلائے کرنے میں کتنا وقت لگتا ہے؟",
+            "answer": "عام آبجیکٹ کاؤنٹنگ کے لیے پہلے سے تربیت یافتہ ماڈلز کا استفاده کرتے ہوئے ڈیپلومنٹ میں 4 سے 6 ہفتے لگتے ہیں۔ اگر ہمیں آپ کی مخصوص اور نایاب اشیاء کے لیے کسٹم ماڈلز ٹرین کرنے ہوں تو 8 سے 12 ہفتے لگ سکتے ہیں۔ اس وقت میں ہارڈ ویئر سیٹ اپ اور فائن ٹیوننگ شامل ہے۔"
+          },
+          {
+            "question": "کیا ویڈیو اینالیٹکس سسٹم کو ہمارے CRM یا ERP کے ساتھ مربوط کیا جا سکتا ہے؟",
+            "answer": "بالکل، ہم ایسے روابط بناتے ہیں جو دریافت ہونے والے واقعات کو ویب ہکس یا REST API کے ذریعے منتقل کرتے ہیں۔ یہ ویڈیو اینالیٹکس کا ڈیٹا (جیسے گاہکوں کی تعداد یا الرٹس) آپ کے CRM یا ERP سسٹمز میں ورک فلو کو شروع کرنے کی اجازت دیتا ہے۔ آپ کے کاروباری سسٹمز خودکار طور پر ردعمل دیتے ہیں۔"
+          }
+        ],
+        "technologies": [
+          { "icon": "opencv", "name": "OpenCV" },
+          { "icon": "pytorch", "name": "PyTorch" },
+          { "icon": "tensorflow", "name": "TensorFlow" },
+          { "icon": "python", "name": "Python" },
+          { "icon": "nvidia", "name": "NVIDIA TensorRT" },
+          { "icon": "docker", "name": "Docker" },
+          { "icon": "amazonwebservices", "name": "Amazon Web Services" },
+          { "icon": "postgresql", "name": "PostgreSQL" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "تحليلات الفيديو",
+      "shortDescription": "استخرج رؤى تشغيلية في الوقت الفعلي، وتتبع الأجسام المتحركة، واكتشف الحالات الشاذة الأمنية، وأتمت مراقبة الكاميرات من بث الفيديو المباشر باستخدام خوارزميات الرؤية الحاسوبية القائمة على التعلم العميق.",
+      "fullDescription": "تحول تحليلات الفيديو بث الكاميرات غير النشط إلى مصدر فعال للمعلومات والأتمتة. نحن نصمم ونبني حلولاً مخصصة للمؤسسات تعمل على تحليل الفيديو في الوقت الفعلي للأمن والعمليات والتجزئة والتصنيع. باستخدام نماذج الرؤية الحاسوبية الأحدث مثل YOLO ونماذج CNN المخصصة ومحولات الرؤية (vision transformers)، تقوم أنظمتنا بالكشف عن الأجسام وتتبعها وعد الحشود وتحليل السلوكيات. نقوم بتحسين خطوط معالجة البيانات باستخدام NVIDIA DeepStream و TensorRT و OpenCV لتعمل بكفاءة عالية على الأجهزة الطرفية (edge) أو في السحابة. سواء كنت بحاجة إلى مراقبة جودة الإنتاج في المصنع، أو مراقبة حركة المرور للمدن الذكية، أو تحليل سلوك العملاء في المتاجر، فإننا نقدم حلول تحليلات فيديو آمنة ومتوافقة ودقيقة.",
+      "features": [
+        "الكشف عن الأجسام وتصنيفها في الوقت الفعلي",
+        "تتبع الأجسام وإعادة التعرف عليها عبر عدة كاميرات",
+        "كشف الشذوذ الأمني وإرسال تنبيهات الاختراق",
+        "إدارة كثافة الحشود وإدارة طوابير الانتظار",
+        "التعرف التلقائي على لوحات السيارات (LPR / ANPR)",
+        "النشر المحسن على الأجهزة الطرفية (Edge)",
+        "تعتيم الوجوه التلقائي والامتثال لـ GDPR/KVKK",
+        "لوحات معلومات مخصصة وتكامل التحليلات"
+      ],
+      "benefits": [
+        "تحسين الأمن المادي من خلال إرسال إشعارات فورية بالشذوذ",
+        "زيادة الكفاءة التشغيلية عبر أتمتة عمليات فحص الجودة",
+        "الحصول على رؤى عميقة للعملاء من خلال تحليل سلوك الحركة",
+        "تقليل تكاليف نطاق حزمة البيانات باستخدام معالجة الأجهزة الطرفية",
+        "ضمان الامتثال الصارم لقوانين الخصوصية بتعتيم الوجوه تلقائياً",
+        "زيادة قدرات المراقبة دون الحاجة لزيادة عدد موظفي الأمن"
+      ],
+      "metaTitle": "تحليلات الفيديو وحلول الرؤية الحاسوبية | PakSoft",
+      "metaDescription": "حول بث الكاميرات إلى معلومات تشغيلية. نحن نبني أنظمة تحليلات فيديو مخصصة للأمن والتصنيع والتجزئة باستخدام نماذج YOLO. اتصل بنا للحصول على عرض تجريبي.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تكامل بث الكاميرات",
+            "description": "نتصل ببث الكاميرات الحالية باستخدام بروتوكولات آمنة مثل RTSP. يتم تشفير إشارات الفيديو الواردة وإعدادها للتحليل المباشر في الوقت الفعلي."
+          },
+          {
+            "step": 2,
+            "title": "اختيار النموذج وتخصيصه",
+            "description": "نختار بنية الكشف عن الأجسام المثالية مثل YOLO أو محولات الرؤية المخصصة. يتم تدريب النماذج على الأجسام والبيئات المحددة لعملك."
+          },
+          {
+            "step": 3,
+            "title": "تحسين خطوط المعالجة",
+            "description": "نحسن معالجة الفيديو باستخدام NVIDIA TensorRT ومجموعات تطوير DeepStream. يضمن هذا تشغيلاً منخفض زمن الاستجابة على الأجهزة الطرفية أو السحابة."
+          },
+          {
+            "step": 4,
+            "title": "تهيئة المنطق والتنبيهات",
+            "description": "نبرمج القواعد السلوكية وخطوط الكشف الافتراضية المخصصة. يتم تكوين التنبيهات لإرسال إشعارات فورية إلى أنظمتك الداخلية عند اكتشاف أحداث معينة."
+          },
+          {
+            "step": 5,
+            "title": "إعداد الخصوصية والامتثال",
+            "description": "ندمج قواعد حماية الخصوصية التلقائية مثل تعتيم الوجوه ولوحات السيارات. يضمن هذا امتثال أنظمتك بالكامل للوائح حماية البيانات والخصوصية المحلية."
+          },
+          {
+            "step": 6,
+            "title": "النشر والترقية",
+            "description": "ننشر النظام المطور كخدمات برمجية مصغرة ومعبأة عبر البنية التحتية الخاصة بك. تتم تهيئة المنصة للتوسع تلقائياً مع إضافة كاميرات جديدة."
+          }
+        ],
+        "faq": [
+          {
+            "question": "هل يمكن لأنظمة تحليلات الفيديو لدينا العمل على كاميرات IP الحالية؟",
+            "answer": "نعم، حلولنا متوافقة مع الكاميرات من أي علامة تجارية تدعم بروتوكولات RTSP أو ONVIF. لا تحتاج إلى شراء كاميرات جديدة ومكلفة لاستخدام برمجيات التحليل الخاصة بنا. نقوم ببساطة بدمج تدفقات الفيديو الحالية مباشرة في خط المعالجة لدينا."
+          },
+          {
+            "question": "هل تتم معالجة الفيديو محلياً في الموقع أم على السحابة؟",
+            "answer": "نحن نقدم نماذج نشر مرنة بناءً على متطلبات النطاق الترددي والأمن لديك. يمكننا النشر في الموقع باستخدام أجهزة NVIDIA Jetson لمعالجة الفيديو محلياً. بدلاً من ذلك، يمكننا توجيه التدفقات إلى السحابة لمعالجة مركزية وإدارة أسهل للأنظمة."
+          },
+          {
+            "question": "كيف تتعاملون مع لوائح الخصوصية مثل GDPR؟",
+            "answer": "نحن نصمم أنظمة تركز على الخصوصية أولاً عن طريق تطبيق التعتيم التلقائي على الأجهزة الطرفية. يمكن لخط المعالجة تعتيم الوجوه ولوحات السيارات تلقائياً قبل تخزين الفيديو أو تحليله. يتيح لك هذا جمع مقاييس تشغيلية قيمة دون انتهاك الخصوصية."
+          },
+          {
+            "question": "ما هي دقة الكشف لنماذج تحليلات الفيديو الخاصة بكم؟",
+            "answer": "تعتمد الدقة على الإضاءة وزوايا الكاميرا وكثافة الأجسام، لكن نماذجنا تحقق عادةً دقة تتراوح بين 95% و 99%. نجري اختبارات مكثفة في بيئتك الحقيقية لضبط معلمات الكشف. يضمن هذا تقليل التنبيهات الكاذبة الناتجة عن الظلال أو التغيرات البيئية."
+          },
+          {
+            "question": "ما هي الأجهزة المطلوبة للمعالجة المحلية؟",
+            "answer": "للمعالجة المحلية، نوصي عادةً بأجهزة NVIDIA مثل وحدات Jetson Orin أو أجهزة الكمبيوتر الصناعية المزودة ببطاقات رسومية متوافقة مع TensorRT. تم تحسين هذه الأجهزة لتشغيل عدة تدفقات للتعلم العميق في وقت واحد. سنساعدك في اختيار الأجهزة الأكثر كفاءة."
+          },
+          {
+            "question": "هل يمكن للنظام الكشف عن السلوكيات المعقدة مثل السقوط أو المشاجرات؟",
+            "answer": "نعم، نقوم ببناء نماذج التعرف على الحركات التي تحلل تسلسل الإطارات للكشف عن الشذوذ السلوكي. يمكن للنظام التعرف على إجراءات محددة مثل الانزلاق أو السقوط أو المشاجرات أو التسكع. يمكن لهذه المحفزات تنبيه موظفي الأمن على الفور للتدخل السريع."
+          },
+          {
+            "question": "كم من الوقت يستغرق نشر حل تحليلات الفيديو؟",
+            "answer": "يستغرق النشر القياسي باستخدام نماذج مدربة مسبقاً لعد الأجسام من 4 إلى 6 أسابيع. إذا كنا بحاجة إلى تدريب نماذج مخصصة لأجسام معينة، فقد يستغرق المشروع من 8 إلى 12 أسبوعاً. يشمل هذا الجدول الزمني التثبيت والتدريب والتحسين في الموقع."
+          },
+          {
+            "question": "هل يمكن لنظام تحليلات الفيديو التكامل مع نظام CRM أو ERP الخاص بنا؟",
+            "answer": "بالتأكيد. نحن نبني عمليات تكامل ترسل الأحداث المكتشفة عبر webhooks أو REST API. يتيح ذلك لبيانات تحليلات الفيديو (مثل أعداد العملاء أو تنبيهات الشذوذ) تشغيل مهام العمل في أنظمة CRM أو ERP لديك. تصبح عمليات عملك مستجيبة تلقائياً للأحداث."
+          }
+        ],
+        "technologies": [
+          { "icon": "opencv", "name": "OpenCV" },
+          { "icon": "pytorch", "name": "PyTorch" },
+          { "icon": "tensorflow", "name": "TensorFlow" },
+          { "icon": "python", "name": "Python" },
+          { "icon": "nvidia", "name": "NVIDIA TensorRT" },
+          { "icon": "docker", "name": "Docker" },
+          { "icon": "amazonwebservices", "name": "Amazon Web Services" },
+          { "icon": "postgresql", "name": "PostgreSQL" }
+        ]
+      }
+    }
+  },
+  "voice-assistant-development": {
+    "en": {
+      "name": "Voice Assistant Development",
+      "shortDescription": "Build intelligent voice agents and custom conversational assistants that understand natural spoken language, maintain context, and execute business actions across your corporate APIs and databases.",
+      "fullDescription": "Voice assistant development enables hands-free, natural interactions for your customers and employees. We build production-ready voice systems combining Automatic Speech Recognition (ASR), Natural Language Understanding (NLU), and Text-to-Speech (TTS) pipelines. Utilizing platforms like OpenAI's Realtime API, Google Cloud Text-to-Speech, and custom LLMs, our assistants do not just follow scripts—they understand intent, maintain multi-turn context, and retrieve data from internal APIs to answer questions. We optimize for low-latency audio streaming, implement noise-filtering models, and add guardrails to prevent hallucinations. Whether you need a customer service phone agent, a voice-enabled mobile app interface, or a smart device integration, we build voice solutions that deliver human-like conversation.",
+      "features": [
+        "Real-Time Automatic Speech Recognition (ASR)",
+        "Natural Language Understanding (NLU) & Intent Parsing",
+        "High-Fidelity Text-to-Speech (TTS) Synthesis",
+        "Low-Latency Audio Streaming (WebSockets, WebRTC)",
+        "Context-Aware Multi-Turn Conversational Logic",
+        "API & Database Integration for Action Execution",
+        "Noise-Filtering & Voice Activity Detection (VAD)",
+        "Multi-Language & Accent Adaptation"
+      ],
+      "benefits": [
+        "Provide 24/7 instant customer support over voice channels",
+        "Reduce phone queue waiting times using virtual voice agents",
+        "Allow hands-free data entry and operational reporting",
+        "Lower call center staffing costs on routine customer inquiries",
+        "Deliver personalized customer experiences using database integrations",
+        "Improve accessibility for users with physical or visual impairments"
+      ],
+      "metaTitle": "Voice Assistant Development & Conversational AI | PakSoft",
+      "metaDescription": "Build intelligent, low-latency voice assistants. We integrate ASR, TTS, and LLMs for phone agents and smart apps. Contact us for a consultation.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Requirements & Voice Persona",
+            "description": "We start by defining the assistant's scope, vocabulary, integration points, and tone of voice. We establish the target persona and select the optimal speech synthesis voices."
+          },
+          {
+            "step": 2,
+            "title": "ASR & TTS Integration",
+            "description": "We configure the speech-to-text and text-to-speech pipelines using technologies like Whispers, OpenAI, or Google Cloud. We optimize latency by setting up raw audio streaming interfaces."
+          },
+          {
+            "step": 3,
+            "title": "NLU & Conversational Logic",
+            "description": "We design the conversation flows and connect them to large language models for intent parsing. The system is programmed to handle interruptions and maintain memory across turns."
+          },
+          {
+            "step": 4,
+            "title": "API & Action Binding",
+            "description": "We connect the voice assistant to your internal databases, CRMs, and APIs. The agent is trained to execute database searches and complete transactions based on spoken commands."
+          },
+          {
+            "step": 5,
+            "title": "Testing & Latency Tuning",
+            "description": "We test the voice assistant in real-world environments with varying background noise levels. We tune voice activity detection and caching to bring round-trip latency under one second."
+          },
+          {
+            "step": 6,
+            "title": "Deployment & Monitoring",
+            "description": "We deploy the voice solution as a scalable web service or telephone gateway. Conversational logs and speech recognition error rates are continuously monitored for ongoing improvement."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What speech recognition and synthesis engines do you use?",
+            "answer": "We select speech engines based on your language needs, latency requirements, and budget. For general applications, we integrate leading cloud APIs like Google Cloud Speech-to-Text or Azure Cognitive Services. For cutting-edge conversational systems, we leverage OpenAI's Realtime API or deploy open-source models like Whisper."
+          },
+          {
+            "question": "How do you achieve low latency in voice conversations?",
+            "answer": "Low latency is critical for natural voice conversations, and we target a sub-second response time. We achieve this by streaming raw audio chunks bi-directionally over WebSockets or WebRTC. We also utilize fast streaming LLM architectures and optimize our internal API calls to prevent audio delays."
+          },
+          {
+            "question": "Can the voice assistant handle noisy environments or accents?",
+            "answer": "Yes, we implement advanced Voice Activity Detection (VAD) and noise-filtering algorithms to isolate the speaker's voice from background noise. We also configure speech recognition parameters to support regional accents and dialects. This ensures the assistant maintains high comprehension rates in real-world scenarios."
+          },
+          {
+            "question": "Can you integrate the voice assistant with telephone systems?",
+            "answer": "Absolutely. We specialize in connecting conversational voice agents to traditional phone lines or VoIP networks using SIP and Twilio. This allows you to deploy virtual agents that answer customer calls, resolve standard inquiries, and transfer complex issues to human agents."
+          },
+          {
+            "question": "How do you prevent the assistant from hallucinating or sharing incorrect data?",
+            "answer": "We implement strict guardrails and restrict the model's knowledge base using Retrieval-Augmented Generation (RAG). The LLM is instructed to rely exclusively on authenticated data retrieved from your APIs. We also audit conversational flows regularly to ensure the assistant does not make unverified promises."
+          },
+          {
+            "question": "Is our conversational data secure and private?",
+            "answer": "Yes. We design our integrations with strict data security measures, ensuring all audio transmissions are fully encrypted. Depending on your regulatory requirements, we can implement anonymization layers that strip personal data before processing. We ensure the solution complies with HIPAA and GDPR standard guidelines."
+          },
+          {
+            "question": "How long does it take to build a custom voice assistant?",
+            "answer": "A standard voice assistant integrating with a few simple APIs takes 6 to 10 weeks to develop. More complex integrations—such as full call-center telephone deployment or custom offline edge models—can take 3 to 5 months. We provide detailed milestones during the initial discovery phase."
+          },
+          {
+            "question": "Does the voice assistant support languages other than English?",
+            "answer": "Yes, our voice assistants support over 50 languages, including Turkish, German, Arabic, and Urdu. We customize the speech recognition and text-to-speech pipelines for each target language. This ensures correct pronunciation and native conversational flows that resonate with your global customer base."
+          }
+        ],
+        "technologies": [
+          { "icon": "openai", "name": "OpenAI Realtime API" },
+          { "icon": "python", "name": "Python" },
+          { "icon": "nodedotjs", "name": "Node.js" },
+          { "icon": "twilio", "name": "Twilio" },
+          { "icon": "webrtc", "name": "WebRTC" },
+          { "icon": "googlecloud", "name": "Google Cloud Speech-to-Text" },
+          { "icon": "amazonwebservices", "name": "Amazon Web Services" },
+          { "icon": "react", "name": "React Native (Voice Apps)" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Sesli Asistan Geliştirme",
+      "shortDescription": "Doğal konuşma dilini anlayan, bağlamı koruyan ve kurumsal API'leriniz ile veritabanlarınız genelinde iş eylemlerini yürüten akıllı sesli ajanlar ve özel konuşma asistanları geliştirin.",
+      "fullDescription": "Sesli asistan geliştirme, müşterileriniz ve çalışanlarınız için eller serbest, doğal etkileşimler sağlar. Otomatik Konuşma Tanıma (ASR), Doğal Dil Anlama (NLU) ve Metinden Konuşmaya (TTS) boru hatlarını birleştiren üretime hazır ses sistemleri kuruyoruz. OpenAI'ın Realtime API'si, Google Cloud Text-to-Speech ve özel LLM'ler gibi platformları kullanan asistanlarımız yalnızca komut dosyalarını takip etmez; amacı anlar, çok turlu bağlamı korur ve soruları yanıtlamak için dahili API'lerden veri çeker. Düşük gecikmeli ses akışı için optimizasyon yapıyor, gürültü filtreleme modelleri uyguluyor ve halüsinasyonları önlemek için güvenlik bariyerleri ekliyoruz. İster bir müşteri hizmetleri telefon ajanı, ister ses özellikli bir mobil uygulama arayüzü veya akıllı cihaz entegrasyonu olsun, insan benzeri sesli çözümler sunuyoruz.",
+      "features": [
+        "Gerçek Zamanlı Otomatik Konuşma Tanıma (ASR)",
+        "Doğal Dil Anlama (NLU) ve Niyet Çözümleme",
+        "Yüksek Kaliteli Metinden Konuşmaya (TTS) Sentezi",
+        "Düşük Gecikmeli Ses Akışı (WebSockets, WebRTC)",
+        "Bağlam Duyarlı Çok Turlu Konuşma Mantığı",
+        "Eylem Yürütme için API ve Veritabanı Entegrasyonu",
+        "Gürültü Filtreleme ve Ses Etkinliği Algılama (VAD)",
+        "Çoklu Dil ve Aksan Uyumluluğu"
+      ],
+      "benefits": [
+        "Ses kanalları üzerinden 7/24 anında müşteri desteği sağlayın",
+        "Sanal sesli ajanlarla telefon kuyruğu bekleme sürelerini azaltın",
+        "Eller serbest veri girişi ve operasyonel raporlama yapın",
+        "Rutin müşteri sorularında çağrı merkezi personel maliyetlerini düşürün",
+        "Veritabanı entegrasyonlarıyla kişiselleştirilmiş deneyimler sunun",
+        "Fiziksel veya görsel engelli kullanıcılar için erişilebilirliği artırın"
+      ],
+      "metaTitle": "Sesli Asistan Geliştirme ve Konuşan Yapay Zeka | PakSoft",
+      "metaDescription": "Akıllı ve düşük gecikmeli sesli asistanlar kurun. Telefon ajanları ve akıllı uygulamalar için ASR, TTS ve LLM'leri entegre ediyoruz. İletişime geçin.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Gereksinimler ve Ses Karakteri",
+            "description": "Asistanın kapsamını, kelime dağarcığını, entegrasyon noktalarını ve ses tonunu tanımlayarak başlıyoruz. Hedef ses karakterini belirliyor ve en uygun konuşma sentezi seslerini seçiyoruz."
+          },
+          {
+            "step": 2,
+            "title": "ASR ve TTS Entegrasyonu",
+            "description": "Whisper, OpenAI veya Google Cloud gibi teknolojileri kullanarak konuşmayı metne ve metni konuşmaya dönüştürme sistemlerini yapılandırıyoruz. Ses akışı arayüzleriyle gecikmeyi en aza indiriyoruz."
+          },
+          {
+            "step": 3,
+            "title": "NLU ve Konuşma Mantığı",
+            "description": "Konuşma akışlarını tasarlıyor ve niyet analizi için bunları büyük dil modellerine bağlıyoruz. Sistemi, kesintileri yönetecek ve konuşma turları arasında hafızayı koruyacak şekilde programlıyoruz."
+          },
+          {
+            "step": 4,
+            "title": "API ve Eylem Bağlama",
+            "description": "Sesli asistanı dahili veritabanlarınıza, CRM ve API'lerinize bağlıyoruz. Asistanı, sesli komutlara dayanarak veritabanı aramaları yapması ve işlemleri tamamlaması için eğitiyoruz."
+          },
+          {
+            "step": 5,
+            "title": "Test ve Gecikme Ayarı",
+            "description": "Sesli asistanı farklı arka plan gürültü seviyelerine sahip gerçek dünya ortamlarında test ediyoruz. Toplam yanıt gecikmesini bir saniyenin altına indirmek için ses algılama hassasiyetini ayarlıyoruz."
+          },
+          {
+            "step": 6,
+            "title": "Dağıtım ve İzleme",
+            "description": "Sesli çözümü ölçeklenebilir bir web hizmeti veya telefon geçidi olarak kuruyoruz. Sürekli iyileştirme için konuşma günlüklerini ve konuşma tanıma hata oranlarını düzenli olarak izliyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Hangi konuşma tanıma ve sentezleme motorlarını kullanıyorsunuz?",
+            "answer": "Dil ihtiyaçlarınıza, gecikme gereksinimlerinize ve bütçenize göre ses motorlarını seçiyoruz. Genel uygulamalar için Google Cloud Speech-to-Text veya Azure Cognitive Services gibi lider bulut API'lerini entegre ediyoruz. Gelişmiş konuşma sistemleri için OpenAI'ın Realtime API'sini entegre ediyor veya Whisper gibi açık kaynaklı modeller kuruyoruz."
+          },
+          {
+            "question": "Sesli konuşmalarda düşük gecikmeyi nasıl sağlıyorsunuz?",
+            "answer": "Doğal sesli görüşmeler için düşük gecikme süresi kritik önem taşır ve biz bir saniyenin altında yanıt süresi hedefliyoruz. Bunu WebSockets veya WebRTC üzerinden ham ses parçalarını çift yönlü olarak aktararak başarıyoruz. Ayrıca ses gecikmelerini önlemek için hızlı LLM mimarileri kullanıyor ve iç API çağrılarımızı optimize ediyoruz."
+          },
+          {
+            "question": "Sesli asistan gürültülü ortamları veya farklı aksanları yönetebilir mi?",
+            "answer": "Evet, konuşmacının sesini arka plan gürültüsünden ayırmak için gelişmiş Ses Etkinliği Algılama (VAD) ve gürültü filtreleme algoritmaları uyguluyoruz. Konuşma tanıma parametrelerini bölgesel aksanları ve şiveleri destekleyecek şekilde yapılandırıyoruz. Bu sayede asistan, gerçek dünya senaryolarında yüksek anlama oranlarını korur."
+          },
+          {
+            "question": "Sesli asistanı telefon sistemleriyle entegre edebilir misiniz?",
+            "answer": "Kesinlikle. SIP ve Twilio kullanarak konuşmaya dayalı sesli ajanları geleneksel telefon hatlarına veya VoIP ağlarına bağlama konusunda uzmanız. Bu entegrasyon, müşteri aramalarını yanıtlayan, standart soruları çözen ve karmaşık konuları insan temsilcilere aktaran sanal ajanlar devreye almanızı sağlar."
+          },
+          {
+            "question": "Asistanın yanlış bilgi vermesini (halüsinasyon) nasıl önliyorsunuz?",
+            "answer": "RAG (Veri Geri Kazanımıyla Artırılmış Nesil) kullanarak sıkı güvenlik sınırları uyguluyor ve modelin bilgi tabanını sınırlandırıyoruz. Modelin yalnızca API'lerinizden alınan doğrulanmış verilere güvenmesini sağlıyoruz. Ayrıca asistanın doğrulanmamış sözler vermesini önlemek için konuşma akışlarını düzenli olarak denetliyoruz."
+          },
+          {
+            "question": "Konuşma verilerimiz güvenli ve gizli tutuluyor mu?",
+            "answer": "Evet. Entegrasyonlarimizi sıkı veri güvenliği önlemleriyle tasarlıyor, tüm ses iletimlerinin tamamen şifrelenmesini sağlıyoruz. Yasal gereksinimlerinize bağlı olarak, verileri işlemeden önce kişisel bilgileri arındıran anonimleştirme katmanları uygulayabiliriz. Çözümün HIPAA ve GDPR standart kurallarına uymasını garanti ediyoruz."
+          },
+          {
+            "question": "Özel bir sesli asistan geliştirmek ne kadar sürer?",
+            "answer": "Birkaç basit API ile entegre olan standart bir sesli asistanın geliştirilmesi 6 ila 10 hafta sürer. Tam çağrı merkezi telefon entegrasyonu veya özel çevrimdışı uç modeller gibi daha karmaşık entegrasyonlar 3 ila 5 ay sürebilir. İlk keşif aşamasında ayrıntılı proje aşamalarını sunuyoruz."
+          },
+          {
+            "question": "Sesli asistan İngilizce dışındaki dilleri de destekliyor mu?",
+            "answer": "Evet, sesli asistanlarımız Türkçe, Almanca, Arapça ve Urduca dahil olmak üzere 50'den fazla dili desteklemektedir. Konuşma tanıma ve metinden konuşmaya boru hatlarını her hedef dil için özel olarak özelleştiriyoruz. Bu, doğru telaffuz ve küresel müşteri tabanınıza hitap eden doğal konuşma akışları sağlar."
+          }
+        ],
+        "technologies": [
+          { "icon": "openai", "name": "OpenAI Realtime API" },
+          { "icon": "python", "name": "Python" },
+          { "icon": "nodedotjs", "name": "Node.js" },
+          { "icon": "twilio", "name": "Twilio" },
+          { "icon": "webrtc", "name": "WebRTC" },
+          { "icon": "googlecloud", "name": "Google Cloud Speech-to-Text" },
+          { "icon": "amazonwebservices", "name": "Amazon Web Services" },
+          { "icon": "react", "name": "React Native (Voice Apps)" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Sprachassistenten-Entwicklung",
+      "shortDescription": "Erstellen Sie intelligente Sprachagenten und maßgeschneiderte Konversationsassistenten, die gesprochene Sprache verstehen, den Kontext wahren und Aktionen über Ihre APIs ausführen.",
+      "fullDescription": "Die Sprachassistenten-Entwicklung ermöglicht eine freihändige, natürliche Interaktion für Ihre Kunden und Mitarbeiter. Wir bauen produktionsreife Sprachsysteme, die automatische Spracherkennung (ASR), natürliches Sprachverstehen (NLU) und Text-to-Speech (TTS) kombinieren. Unter Verwendung von Plattformen wie der OpenAI Realtime API, Google Cloud Text-to-Speech und eigenen LLMs verstehen unsere Assistenten Absichten, wahren den Kontext über mehrere Runden und rufen Daten aus internen APIs ab. Wir optimieren auf extrem niedrige Audio-Streaming-Latenzzeiten, integrieren Rauschfilter und setzen Sicherheitsrichtlinien ein, um Halluzinationen zu verhindern. Ob Sie einen telefonischen Kundenservice-Agenten, eine sprachgesteuerte App-Schnittstelle oder eine Smart-Device-Integration benötigen — wir entwickeln Sprachlösungen, die sich wie echte menschliche Gespräche anfühlen.",
+      "features": [
+        "Echtzeit-Spracherkennung (ASR)",
+        "Sprachverstehen (NLU) & Intent-Parsing",
+        "High-Fidelity Text-to-Speech (TTS) Synthese",
+        "Streaming mit niedriger Latenz (WebSockets, WebRTC)",
+        "Kontextsensitive Konversationslogik",
+        "API- & Datenbankintegration zur Aktionsausführung",
+        "Rauschfilter & Voice Activity Detection (VAD)",
+        "Multi-Sprach- & Akzentanpassung"
+      ],
+      "benefits": [
+        "Bieten Sie rund um die Uhr sofortigen Support über Sprachkanäle",
+        "Verkürzen Sie Wartezeiten am Telefon durch virtuelle Sprachagenten",
+        "Ermöglichen Sie freihändige Dateneingabe und Berichterstattung",
+        "Senken Sie Personalkosten bei routinemäßigen Kundenanfragen",
+        "Liefern Sie personalisierte Erlebnisse durch Datenbankintegrationen",
+        "Verbessern Sie die Barrierefreiheit für beeinträchtigte Benutzer"
+      ],
+      "metaTitle": "Sprachassistenten-Entwicklung & Voice AI | PakSoft",
+      "metaDescription": "Bauen Sie intelligente Sprachassistenten mit niedriger Latenz. Wir integrieren ASR, TTS und LLMs für Telefonie und Smart Apps. Kontaktieren Sie uns.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Anforderungen & Persona",
+            "description": "Wir definieren den Umfang, das Vokabular, die Integrationspunkte und die Stimme des Assistenten. Gemeinsam legen wir die Persona fest und wählen die Stimmen aus."
+          },
+          {
+            "step": 2,
+            "title": "ASR- & TTS-Integration",
+            "description": "Wir konfigurieren Sprach-zu-Text- und Text-zu-Sprach-Pipelines mit Whisper, OpenAI oder Google Cloud. Wir optimieren Latenzen durch die Einrichtung von Audio-Streaming-Schnittstellen."
+          },
+          {
+            "step": 3,
+            "title": "NLU & Konversationslogik",
+            "description": "Wir entwerfen Gesprächsabläufe und verbinden sie mit LLMs zur Intent-Erkennung. Das System wird so programmiert, dass es Unterbrechungen handhaben und den Kontext behalten kann."
+          },
+          {
+            "step": 4,
+            "title": "API- & Aktionsbindung",
+            "description": "Wir verbinden den Sprachassistenten mit Ihren Datenbanken, CRMs und APIs. Der Agent wird darauf trainiert, Datenbanksuchen durchzuführen und Transaktionen per Sprachbefehl abzuschließen."
+          },
+          {
+            "step": 5,
+            "title": "Testing & Latenz-Tuning",
+            "description": "Wir testen den Sprachassistenten in realen Umgebungen mit Hintergrundgeräuschen. Wir optimieren die Sprachaktivitätserkennung und das Caching, um die Antwortzeit unter einer Sekunde zu halten."
+          },
+          {
+            "step": 6,
+            "title": "Bereitstellung & Monitoring",
+            "description": "Wir stellen die Sprachlösung als skalierbaren Webdienst oder Telefonie-Gateway bereit. Gesprächsprotokolle und Fehlerquoten werden zur kontinuierlichen Verbesserung fortlaufend überwacht."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Welche Spracherkennungs- und Synthese-Engines verwenden Sie?",
+            "answer": "Wir wählen die Sprach-Engines basierend auf Ihren Sprachanforderungen, Latenzvorgaben und Ihrem Budget aus. Für allgemeine Anwendungen integrieren wir führende Cloud-APIs wie Google Cloud Speech-to-Text oder Azure Cognitive Services. Für hochentwickelte Konversationssysteme nutzen wir die OpenAI Realtime API oder offene Modelle wie Whisper."
+          },
+          {
+            "question": "Wie erreichen Sie eine niedrige Latenz in Sprachgesprächen?",
+            "answer": "Eine niedrige Latenz ist entscheidend für natürliche Gespräche, und wir streben Antwortzeiten unter einer Sekunde vor Ort an. Wir erreichen dies durch bidirektionales Audio-Streaming über WebSockets oder WebRTC. Zudem verwenden wir schnelle Streaming-LLM-Architekturen und optimieren interne API-Aufrufe, um Audioverzögerungen zu verhindern."
+          },
+          {
+            "question": "Kann der Sprachassistent mit lauten Umgebungen oder Akzenten umgehen?",
+            "answer": "Ja, wir implementieren fortschrittliche Algorithmen zur Sprachaktivitätsdetektion und Rauschunterdrückung, um die Stimme des Sprechers von Hintergrundgeräuschen zu isolieren. Wir konfigurieren die Erkennungsparameter so, dass regionale Akzente und Dialekte unterstützt werden. Dies sichert eine hohe Verständigungsrate des Assistenten im produktiven Alltag."
+          },
+          {
+            "question": "Können Sie den Sprachassistenten mit Telefonanlagen verbinden?",
+            "answer": "Absolut. Wir sind darauf spezialisiert, sprachbasierte Agenten über SIP und Twilio an klassische Telefonleitungen oder VoIP-Netzwerke anzubinden. Dies ermöglicht Ihnen den Einsatz virtueller Agenten, die Kundenanrufe annehmen, Standardanfragen lösen und komplexe Fälle an menschliche Mitarbeiter übergeben."
+          },
+          {
+            "question": "Wie verhindern Sie, dass der Assistent halluziniert oder falsche Daten teilt?",
+            "answer": "Wir setzen strenge Sicherheitsrichtlinien durch und schränken die Wissensbasis des Modells mittels RAG (Retrieval-Augmented Generation) einschränken. Das LLM ist angewiesen, sich ausschließlich auf verifizierte API-Daten zu stützen. Zudem überprüfen wir die Konversationsabläufe regelmäßig, um nicht autorisierte Zusagen zu unterbinden."
+          },
+          {
+            "question": "Sind unsere Gesprächsdaten sicher und geschützt?",
+            "answer": "Ja. Wir konzipieren unsere Integrationen mit strengen Sicherheitsmaßnahmen, sodass alle Audioübertragungen vollständig verschlüsselt sind. Je nach gesetzlichen Anforderungen können wir Anonymisierungsebenen einziehen, die persönliche Daten vor der Verarbeitung entfernen. Wir garantieren die Einhaltung der HIPAA- und DSGVO-Richtlinien."
+          },
+          {
+            "question": "Wie lange dauert es, einen maßgeschneiderten Sprachassistenten zu bauen?",
+            "answer": "Ein Standard-Sprachassistent mit Anbindung an einfache APIs erfordert eine Entwicklungszeit von 6 bis 10 Wochen. Komplexere Integrationen wie eine vollständige Telefonie-Einbindung im Callcenter oder benutzerdefinierte Offline-Edge-Modelle dauern 3 bis 5 Monate. Wir erstellen detaillierte Meilensteine in der ersten Discovery-Phase."
+          },
+          {
+            "question": "Unterstützt der Sprachassistent auch andere Sprachen als Englisch?",
+            "answer": "Ja, unsere Sprachassistenten unterstützen über 50 Sprachen, darunter Deutsch, Türkisch, Arabisch und Urdu. Wir passen die Spracherkennungs- und Synthese-Pipelines für jede Zielsprache individuell an. Dies sorgt für eine korrekte Aussprache und natürliche Gesprächsabläufe, die Ihre globale Kundenbasis ansprechen."
+          }
+        ],
+        "technologies": [
+          { "icon": "openai", "name": "OpenAI Realtime API" },
+          { "icon": "python", "name": "Python" },
+          { "icon": "nodedotjs", "name": "Node.js" },
+          { "icon": "twilio", "name": "Twilio" },
+          { "icon": "webrtc", "name": "WebRTC" },
+          { "icon": "googlecloud", "name": "Google Cloud Speech-to-Text" },
+          { "icon": "amazonwebservices", "name": "Amazon Web Services" },
+          { "icon": "react", "name": "React Native (Voice Apps)" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "وائس اسسٹنٹ ڈیولپمنٹ",
+      "shortDescription": "ایسے ذہین وائس ایجنٹس اور کسٹم کنورسیشنل اسسٹنٹس تیار کریں جو قدرتی بولی جانے والی زبان کو سمجھیں، سیاق و سباق کو برقرار رکھیں، اور آپ کی کارپوریٹ APIs اور ڈیٹا بیسز پر کاروباری کام انجام دیں۔",
+      "fullDescription": "وائس اسسٹنٹ ڈیولپمنٹ آپ کے صارفین اور ملازمین کے لیے ہینڈز فری اور قدرتی بات چیت کو ممکن بناتی ہے۔ ہم خودکار اسپیچ ریکگنیشن (ASR)، نیچرل لینگویج انڈرسٹینڈنگ (NLU)، اور ٹیکسٹ ٹو اسپیچ (TTS) پائپ لائنز کو مربوط کرنے والے پروڈکشن ریڈی سسٹمز بناتے ہیں۔ OpenAI کی Realtime API، Google Cloud Text-to-Speech، اور کسٹم LLMs جیسے پلیٹ فارمز کا استعمال کرتے ہوئے، ہمارے اسسٹنٹس نیت کو سمجھتے ہیں، گفتگو کے دوران پچھلی باتیں یاد رکھتے ہیں، اور جواب دینے کے لیے اندرونی APIs سے ڈیٹا حاصل کرتے ہیں۔ ہم آڈیو اسٹریمنگ کی تاخیر کو کم سے کم کرنے کے لیے کام کرتے ہیں، شور کو فلٹر کرنے والے ماڈلز لگاتے ہیں، اور غلط معلومات کو روکنے کے لیے گارڈ ریلز شامل کرتے ہیں۔ چاہے آپ کو کسٹمر سروس فون ایجنٹ کی ضرورت ہو یا موبائل ایپ میں وائس فیچر کی، ہم بہترین حل فراہم کرتے ہیں۔",
+      "features": [
+        "ریئل ٹائم خودکار اسپیچ ریکگنیشن (ASR)",
+        "نیچرل لینگویج انڈرسٹینڈنگ (NLU) اور نیت کا تجزیہ",
+        "اعلیٰ معیار کی ٹیکسٹ ٹو اسپیچ (TTS) سنتھیسز",
+        "لو-لیٹنسی آڈیو اسٹریمنگ (WebSockets, WebRTC)",
+        "سیاق و سباق کو یاد رکھنے والی کنورسیشنل لاجک",
+        "کارروائی کے لیے API اور ڈیٹا بیس انٹیگریشن",
+        "شور کی فلٹرنگ اور وائس ایکٹیویٹی ڈیٹیکشن (VAD)",
+        "کثیر لسانی اور مختلف لہجوں کی مطابقت"
+      ],
+      "benefits": [
+        "وائس چینلز کے ذریعے 24/7 فوری کسٹمر سپورٹ فراہم کریں",
+        "ورچوئل وائس ایجنٹس کے ذریعے فون ہولڈ کے انتظار کا وقت کم کریں",
+        "ہینڈز فری ڈیٹا انٹری اور آپریشنل رپورٹنگ کو ممکن بنائیں",
+        "عام کسٹمر سوالات پر کال سنٹر کے عملے کے اخراجات کم کریں",
+        "ڈیٹا بیس انٹیگریشنز کے ذریعے ذاتی نوعیت کے تجربات فراہم کریں",
+        "جسمانی یا بینائی کی کمزوری والے صارفین کے لیے رسائی کو بہتر بنائیں"
+      ],
+      "metaTitle": "وائس اسسٹنٹ ڈیولپمنٹ اور کنورسیشنل AI | PakSoft",
+      "metaDescription": "ذہین اور کم تاخیر والے وائس اسسٹنٹس بنائیں۔ ہم فون ایجنٹس اور اسمارٹ ایپس کے لیے ASR، TTS اور LLMs کو مربوط کرتے ہیں۔ آج ہی ہم سے رابطہ کریں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "ضروریات اور وائس پرسنل",
+            "description": "ہم اسسٹنٹ کے دائرہ کار، الفاظ، انٹیگریشن پوائنٹس، اور آواز کے لہجے کی وضاحت سے شروع کرتے ہیں۔ ہم ہدف پرسنل تیار کرتے ہیں اور بہترین آوازیں منتخب کرتے ہیں۔"
+          },
+          {
+            "step": 2,
+            "title": "ASR اور TTS انٹیگریشن",
+            "description": "ہم Whisper، OpenAI یا Google Cloud جیسے ٹولز کا استعمال کرتے ہوئے اسپیچ ٹو ٹیکسٹ اور ٹیکسٹ ٹو اسپیچ سسٹمز کو ترتیب دیتے ہیں۔ ہم تاخیر کو کم کرتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "NLU اور کنورسیشنل لاجک",
+            "description": "ہم گفتگو کے فلو کو ڈیزائن کرتے ہیں اور نیت کو سمجھنے کے لیے انہیں بڑے لسانی ماڈلز سے جوڑتے ہیں۔ سسٹم گفتگو کے دوران خلل کو سنبھالنا سیکھتا ہے۔"
+          },
+          {
+            "step": 4,
+            "title": "API اور کارروائی کا ربط",
+            "description": "ہم وائس اسسٹنٹ کو آپ کے اندرونی ڈیٹا بیسز، CRMs اور APIs سے جوڑتے ہیں۔ ایجنٹ کو صوتی احکامات کی بنیاد پر ڈیٹا بیس تلاش کرنے کی ٹریننگ دی جاتی ہے۔"
+          },
+          {
+            "step": 5,
+            "title": "ٹیسٹنگ اور لیٹنسی ٹیوننگ",
+            "description": "ہم شور والے ماحول میں وائس اسسٹنٹ کی جانچ کرتے ہیں۔ ہم صوتی سرگرمی کی شناخت اور کیشنگ کو ایڈجسٹ کرتے ہیں تاکہ گفتگو میں تاخیر ایک سیکنڈ سے کم ہو۔"
+          },
+          {
+            "step": 6,
+            "title": "ڈیپلومنٹ اور مانیٹرنگ",
+            "description": "ہم وائس اسسٹنٹ کو اسکیل ایبل کلاؤڈ سروس یا ٹیلی فون گیٹ وے کے طور پر ڈیپلائے کرتے ہیں۔ غلطیوں کی شرح اور صوتی لاگز کی مسلسل نگرانی کی جاتی ہے۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "آپ صوتی شناخت اور ترکیب کے لیے کون سے انجن استعمال کرتے ہیں؟",
+            "answer": "ہم آپ کی زبان کی ضروریات، تاخیر کی حد، اور بجٹ کی بنیاد پر اسپیچ انجن منتخب کرتے ہیں۔ عام استعمال کے لیے، ہم Google Cloud Speech-to-Text یا Azure Cognitive Services جیسے کلاؤڈ APIs کو مربوط کرتے ہیں۔ انتہائی جدید سسٹمز کے لیے، ہم OpenAI کی Realtime API یا Whisper جیسے اوپن سورس ماڈلز استعمال کرتے ہیں۔"
+          },
+          {
+            "question": "آپ صوتی گفتگو کے دوران تاخیر کو کیسے کم کرتے ہیں؟",
+            "answer": "قدرتی گفتگو کے لیے کم تاخیر بہت ضروری ہے، اور ہم ایک سیکنڈ سے کم کا رسپانس ٹائم حاصل کرتے ہیں۔ ہم WebSockets یا WebRTC کے ذریعے خام آڈیو چنکس کو دونوں طرف منتقل کر کے یہ حاصل کرتے ہیں۔ ہم تیز رفتار اسٹریمنگ LLM سسٹمز اور موزوں APIs کا استعمال بھی کرتے ہیں۔"
+          },
+          {
+            "question": "کیا صوتی اسسٹنٹ شور والے ماحول یا مختلف لہجوں کو سنبھال سکتا ہے؟",
+            "answer": "جی ہاں، ہم پس منظر کے شور سے بولنے والے کی آواز کو الگ کرنے کے لیے VAD اور شور کو فلٹر کرنے والے الگورتھمز لاگو کرتے ہیں۔ ہم گفتگو کی شناخت کے پیرامیٹرز کو علاقائی لہجوں کی مدد کے لیے ترتیب دیتے ہیں۔ اس سے یقینی ہوتا ہے کہ اسسٹنٹ حقیقی دنیا کے حالات میں بہتر کام کر سکے۔"
+          },
+          {
+            "question": "کیا آپ صوتی اسسٹنٹ کو ٹیلی فون سسٹم کے ساتھ جوڑ سکتے ہیں؟",
+            "answer": "بالكل، ہم SIP اور Twilio کا استعمال کرتے ہوئے صوتی ایجنٹس کو روایتی فون لائنوں یا VoIP نیٹ ورکس سے جوڑنے میں مہارت رکھتے ہیں۔ یہ آپ کو ایسے ورچوئل ایجنٹس ڈیپلائے کرنے کی اجازت دیتا ہے جو کالز کا جواب دیتے ہیں، معلومات فراہم کرتے ہیں، اور پیچیدہ معاملات انسانی نمائندوں کو منتقل کرتے ہیں۔"
+          },
+          {
+            "question": "آپ اسسٹنٹ کو غلط معلومات دینے سے کیسے روکتے ہیں؟",
+            "answer": "ہم RAG کا استعمال کرتے ہوئے ماڈل کے علمی اڈے کو محدود کرتے ہیں اور سخت اصول لاگو کرتے ہیں۔ LLM کو صرف آپ کے APIs سے حاصل کردہ تصدیق شدہ ڈیٹا پر انحصار کرنے کی ہدایت کی جاتی ہے۔ ہم صوتی گفتگو کے بہاؤ کی باقاعدگی سے نگرانی کرتے ہیں تاکہ کوئی غیر تصدیق شدہ بات نہ ہو۔"
+          },
+          {
+            "question": "کیا ہمارا صوتی ڈیٹا محفوظ اور نجی رہتا ہے؟",
+            "answer": "جی ہاں، ہم اپنی تمام انٹیگریشنز کو سخت حفاظتی اقدامات کے ساتھ ڈیزائن کرتے ہیں تاکہ آڈیو ڈیٹا مکمل طور پر انکرپٹڈ ہو۔ ہم پروسیسنگ سے پہلے ذاتی معلومات کو ہٹانے کے لیے گمنامی کی تہیں لاگو کر سکتے ہیں۔ ہم HIPAA اور GDPR کے رہنما اصولوں کے مطابق ڈیٹا کی حفاظت یقینی بناتے ہیں۔"
+          },
+          {
+            "question": "ایک حسب ضرورت وائس اسسٹنٹ بنانے میں کتنا وقت لگتا ہے؟",
+            "answer": "کچھ آسان APIs کے ساتھ مربوط ہونے والے ایک معیاری صوتی اسسٹنٹ کی تیاری میں 6 سے 10 ہفتے لگتے ہیں۔ زیادہ پیچیدہ کاموں جیسے کال سینٹر ٹیلی فون انٹیگریشن یا کسٹم آف لائن ایج ماڈلز کی تیاری میں 3 سے 5 ماہ لگ سکتے ہیں۔ ہم پروجیکٹ کے آغاز میں تفصیلی شیڈول فراہم کرتے ہیں۔"
+          },
+          {
+            "question": "کیا صوتی اسسٹنٹ انگریزی کے علاوہ دوسری زبانوں کو سپورٹ کرتا ہے؟",
+            "answer": "جی ہاں، ہمارے صوتی اسسٹنٹس ترکی، جرمن، عربی اور اردو سمیت 50 سے زائد زبانوں کو سپورٹ کرتے ہیں۔ ہم ہر ہدف زبان کے لیے صوتی شناخت اور ترکیب کی پائپ لائنز کو خاص طور پر اپنی مرضی کے مطابق بناتے ہیں۔ یہ درست تلفظ اور آپ کے صارفین کے لیے قدرتی گفتگو کو یقینی بناتا ہے۔"
+          }
+        ],
+        "technologies": [
+          { "icon": "openai", "name": "OpenAI Realtime API" },
+          { "icon": "python", "name": "Python" },
+          { "icon": "nodedotjs", "name": "Node.js" },
+          { "icon": "twilio", "name": "Twilio" },
+          { "icon": "webrtc", "name": "WebRTC" },
+          { "icon": "googlecloud", "name": "Google Cloud Speech-to-Text" },
+          { "icon": "amazonwebservices", "name": "Amazon Web Services" },
+          { "icon": "react", "name": "React Native (Voice Apps)" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "تطوير المساعدات الصوتية",
+      "shortDescription": "ابنِ وكلاء صوت أذكياء ومساعدين تفاعليين مخصصين يفهمون اللغة المنطوقة الطبيعية، ويحافظون على سياق الحوار، وينفذون إجراءات العمل عبر أنظمة واجهات برمجة التطبيقات وقواعد البيانات الخاصة بمؤسستك.",
+      "fullDescription": "يمكّن تطوير المساعدات الصوتية من التفاعل الطبيعي دون استخدام اليدين لعملائك وموظفيك. نحن نبني أنظمة صوتية جاهزة للإنتاج تجمع بين التعرف التلقائي على الكلام (ASR) وفهم اللغة الطبيعية (NLU) وتحويل النص إلى كلام (TTS). باستخدام منصات مثل OpenAI Realtime API و Google Cloud Text-to-Speech ونماذج LLMs المخصصة، لا يقتصر عمل مساعدينا على اتباع سيناريوهات محددة؛ بل يفهمون النية، ويحافظون على سياق المحادثات متعددة الجولات، ويستردون البيانات من واجهات برمجة التطبيقات الداخلية للإجابة على الأسئلة. نقوم بتحسين الأنظمة لتقليل زمن استجابة تدفق الصوت، وتطبيق نماذج تصفية الضوضاء، ووضع حواجز لمنع الهلوسة. سواء كنت بحاجة إلى وكيل هاتف لخدمة العملاء، أو واجهة تطبيق هاتف، فإننا نبني حلولاً صوتية تحاكي المحادثات البشرية.",
+      "features": [
+        "التعرف التلقائي على الكلام في الوقت الفعلي (ASR)",
+        "فهم اللغة الطبيعية (NLU) وتحليل النوايا",
+        "توليف تحويل النص إلى كلام عالي الجودة (TTS)",
+        "تدفق الصوت منخفض زمن الاستجابة (WebSockets, WebRTC)",
+        "منطق محادثة متعدد الجولات متوافق مع السياق",
+        "تكامل واجهات برمجة التطبيقات وقواعد البيانات لتنفيذ الإجراءات",
+        "تصفية الضوضاء والكشف عن النشاط الصوتي (VAD)",
+        "التكيف مع اللغات المختلفة واللهجات الإقليمية"
+      ],
+      "benefits": [
+        "تقديم دعم فوري للعملاء على مدار الساعة عبر قنوات الصوت",
+        "تقليل أوقات الانتظار على الهاتف باستخدام وكلاء الصوت الافتراضيين",
+        "السماح بإدخال البيانات والتقارير التشغيلية دون استخدام اليدين",
+        "خفض تكاليف التوظيف في مراكز الاتصال للاستفسارات الروتينية",
+        "تقديم تجارب عملاء مخصصة باستخدام تكامل قواعد البيانات",
+        "تحسين إمكانية الوصول للمستخدمين ذوي الإعاقات الجسدية أو البصرية"
+      ],
+      "metaTitle": "تطوير المساعدات الصوتية والذكاء الاصطناعي التفاعلي | PakSoft",
+      "metaDescription": "ابنِ مساعدين صوتيين أذكياء ومنخفضي زمن الاستجابة. ندمج تقنيات ASR و TTS و LLMs لوكلاء الهاتف والتطبيقات الذكية. اتصل بنا للحصول على استشارة.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "المتطلبات وشخصية الصوت",
+            "description": "نبدأ بتحديد نطاق المساعد ومفرداته ونقاط تكامله ونبرة صوته. نحدد الشخصية الصوتية المستهدفة ونختار أفضل الأصوات المناسبة لتوليف الكلام الطبيعي."
+          },
+          {
+            "step": 2,
+            "title": "تكامل تقنيات ASR و TTS",
+            "description": "نقوم بتهيئة أنظمة تحويل الكلام إلى نص والنص إلى كلام باستخدام Whisper أو OpenAI أو Google Cloud. نحسن زمن الاستجابة بإعداد واجهات تدفق الصوت."
+          },
+          {
+            "step": 3,
+            "title": "منطق فهم اللغة الطبيعية NLU",
+            "description": "نصمم تدفقات المحادثة ونربطها بنماذج اللغة الكبيرة لتحليل النية بدقة. تمت برمجة النظام للتعامل مع المقاطعات والحفاظ على الذاكرة عبر جولات الحوار."
+          },
+          {
+            "step": 4,
+            "title": "ربط الإجراءات والـ APIs",
+            "description": "نربط المساعد الصوتي بقواعد البيانات الداخلية وأنظمة CRM وواجهات برمجة التطبيقات. يتم تدريب الوكيل على تنفيذ عمليات البحث وإتمام المعاملات بناءً على الأوامر."
+          },
+          {
+            "step": 5,
+            "title": "الاختبار وضبط زمن الاستجابة",
+            "description": "نختبر المساعد الصوتي في بيئات حقيقية ذات مستويات ضوضاء خلفية مختلفة. نضبط الكشف عن النشاط الصوتي والتخزين المؤقت لتقليل زمن الاستجابة لأقل من ثانية."
+          },
+          {
+            "step": 6,
+            "title": "النشر والمراقبة",
+            "description": "ننشر الحل الصوتي كخدمة ويب قابلة للتوسع أو كبوابة هاتفية. تتم مراقبة سجلات المحادثات ومعدلات خطأ التعرف على الكلام باستمرار لضمان التحسين المستمر."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما هي محركات التعرف على الكلام وتوليفه التي تستخدمونها؟",
+            "answer": "نختار محركات الصوت بناءً على احتياجات لغتك، ومتطلبات زمن الاستجابة، والميزانية المحددة. للتطبيقات العامة، ندمج واجهات برمجة التطبيقات السحابية الرائدة مثل Google Cloud Speech-to-Text أو Azure Cognitive Services. للأنظمة التفاعلية المتقدمة، نستفيد من OpenAI Realtime API أو ننشر نماذج مفتوحة المصدر مثل Whisper."
+          },
+          {
+            "question": "كيف تحققون زمناً منخفضاً للاستجابة في المحادثات الصوتية؟",
+            "answer": "يعد زمن الاستجابة المنخفض أمراً بالغ الأهمية للمحادثات الطبيعية، ونستهدف وقتاً يقل عن ثانية واحدة. نحقق ذلك من خلال بث الصوت الخام ثنائي الاتجاه عبر WebSockets أو WebRTC. نستخدم أيضاً نماذج LLM سريعة البث ونحسن استدعاءات واجهات برمجة التطبيقات لمنع تأخير الصوت."
+          },
+          {
+            "question": "هل يمكن للمساعد الصوتي التعامل مع البيئات الصاخبة أو اللهجات المختلفة؟",
+            "answer": "نعم، نطبق خوارزميات متقدمة للكشف عن النشاط الصوتي (VAD) وتصفية الضوضاء لعزل صوت المتحدث عن ضوضاء الخلفية. نقوم أيضاً بتهيئة معلمات التعرف على الكلام لدعم اللهجات الإقليمية المختلفة. يضمن هذا الحفاظ على فهم مرتفع للمساعد الصوتي في السيناريوهات الحقيقية."
+          },
+          {
+            "question": "هل يمكنكم دمج المساعد الصوتي مع أنظمة الهاتف؟",
+            "answer": "بالتأكيد. نحن متخصصون في ربط وكلاء الصوت التفاعليين بخطوط الهاتف التقليدية أو شبكات VoIP باستخدام بروتوكول SIP ومنصة Twilio. يتيح لك هذا نشر وكلاء افتراضيين يجيبون على مكالمات العملاء، ويحلون الاستفسارات القياسية، وينقلون الحالات المعقدة إلى موظفين بشريين."
+          },
+          {
+            "question": "ما هي الأجهزة التي تستخدمها لتوليد الصوت؟",
+            "answer": "نختار المحركات وفقاً لمتطلبات اللغات والسرعة والميزانية المحددة. للتطبيقات الأساسية، نقوم بدمج Google Cloud أو Azure. وللمحادثات المتقدمة الأسرع، نستخدم OpenAI Realtime API أو Whisper لحلول مفتوحة المصدر."
+          },
+          {
+            "question": "هل بيانات المحادثات الصوتية لدينا آمنة وخصوصية؟",
+            "answer": "نعم. نحن نصمم عمليات التكامل لدينا مع تدابير أمنية صارمة، مما يضمن تشفير جميع عمليات نقل الصوت بالكامل. اعتماداً على المتطلبات التنظيمية، يمكننا تطبيق طبقات إخفاء الهوية لإزالة البيانات الشخصية قبل المعالجة. نضمن توافق الحل مع معايير HIPAA و GDPR لحماية البيانات."
+          },
+          {
+            "question": "كم من الوقت يستغرق بناء مساعد صوتي مخصص؟",
+            "answer": "يستغرق تطوير مساعد صوتي قياسي يتكامل مع بعض واجهات برمجة التطبيقات البسيطة من 6 إلى 10 أسابيع. أما عمليات التكامل الأكثر تعقيداً — مثل النشر الهاتفي الكامل لمراكز الاتصال أو النماذج الطرفية المخصصة دون اتصال بالإنترنت — فيمكن أن تستغرق من 3 إلى 5 أشهر."
+          },
+          {
+            "question": "هل يدعم المساعد الصوتي لغات أخرى غير الإنجليزية؟",
+            "answer": "نعم، تدعم مساعداتنا الصوتية أكثر من 50 لغة، بما في ذلك العربية والتركية والألمانية والأردية. نقوم بتخصيص خطوط معالجة التعرف على الكلام وتحويل النص إلى كلام لكل لغة مستهدفة بشكل فردي. يضمن هذا نطقاً صحيحاً وتدفقات محادثة طبيعية تناسب عملائك."
+          }
+        ],
+        "technologies": [
+          { "icon": "openai", "name": "OpenAI Realtime API" },
+          { "icon": "python", "name": "Python" },
+          { "icon": "nodedotjs", "name": "Node.js" },
+          { "icon": "twilio", "name": "Twilio" },
+          { "icon": "webrtc", "name": "WebRTC" },
+          { "icon": "googlecloud", "name": "Google Cloud Speech-to-Text" },
+          { "icon": "amazonwebservices", "name": "Amazon Web Services" },
+          { "icon": "react", "name": "React Native (Voice Apps)" }
+        ]
+      }
+    }
+  },
+  "whatsapp-bots": {
+    "en": {
+      "name": "WhatsApp Bots",
+      "shortDescription": "Engage global customers, automate support workflows, and drive direct sales on the world's most popular messaging platform using intelligent AI assistants fully integrated with your business APIs.",
+      "fullDescription": "WhatsApp bots bring conversational commerce and automated support directly to your customers' favorite app. We design and build enterprise-grade AI assistants that connect securely to the WhatsApp Business Platform (Cloud API). Utilizing large language models and conversational frameworks, our bots do more than reply with static menu templates—they understand free-form questions, resolve customer inquiries in real time, and process transactions. We link bots directly to your inventory databases, CRM, payment gateways, and shipping APIs to enable automated order tracking, appointment booking, and instant support. We implement human agent handoff logic so complex queries escalate seamlessly to your live team, improving customer satisfaction.",
+      "features": [
+        "Official WhatsApp Business Cloud API Integration",
+        "Interactive Message Templates & Quick Replies",
+        "AI Intent Parsing & Free-Form Conversational Logic",
+        "Seamless Live Agent Handoff Protocols",
+        "Database & CRM Synchronization (Salesforce, HubSpot)",
+        "Automated Payment Link & Checkout Integration",
+        "Multi-Media Support (Images, PDFs, Audio, Location)",
+        "Analytics Dashboards & Conversation Metrics"
+      ],
+      "benefits": [
+        "Reach customers instantly on the application they use daily",
+        "Reduce customer support call volumes by automating FAQ resolution",
+        "Increase sales conversions with automated product catalog browsing",
+        "Send high-engagement transaction updates like order confirmations",
+        "Ensure secure conversations with WhatsApp end-to-end encryption",
+        "Scale customer interactions 24/7 without adding support agents"
+      ],
+      "metaTitle": "WhatsApp Bot Development & AI Chatbots | PakSoft",
+      "metaDescription": "Automate support and sales. We build custom AI-powered WhatsApp bots integrated with your CRM and APIs. Contact us for a consultation today.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "API Account Setup",
+            "description": "We assist you in registering and verifying your WhatsApp Business Platform account through the Meta Developer Console. The sandbox environment is prepared for secure development."
+          },
+          {
+            "step": 2,
+            "title": "CRM & API Connection",
+            "description": "We link the messaging server to your internal CRM, databases, and transactional APIs. This ensures the bot can retrieve real-time customer data during chats."
+          },
+          {
+            "step": 3,
+            "title": "Flow Design & Prompting",
+            "description": "We map the conversational pathways, interactive buttons, and template messages for common user journeys. AI agents are prompted to handle free-text inputs professionally."
+          },
+          {
+            "step": 4,
+            "title": "Handoff Logic Integration",
+            "description": "We integrate human-in-the-loop fallback mechanisms with customer desk platforms like Zendesk or Twilio Flex. Complex queries escalate to live agents with full history logs."
+          },
+          {
+            "step": 5,
+            "title": "Testing & Compliance",
+            "description": "We test the conversational flows against edge inputs, language variations, and media uploads. We verify compliance with WhatsApp commerce policies and security standards."
+          },
+          {
+            "step": 6,
+            "title": "Launch & Optimization",
+            "description": "We deploy the webhook server to handle high-volume production traffic securely. Conversations are monitored via dashboards to refine prompts and improve automated resolution rates."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is the difference between WhatsApp Business App and WhatsApp Business API?",
+            "answer": "The WhatsApp Business App is designed for small local businesses, running on a single phone with limited manual tools. The WhatsApp Business API is built for larger organizations, allowing custom software integrations, multiple agent logins, automated AI bot flows, and high-volume messaging. We specialize exclusively in deploying and integrating the official Business API."
+          },
+          {
+            "question": "Do we need our own server to host the WhatsApp bot?",
+            "answer": "We deploy the bot application on secure cloud servers using containerized microservices. You do not need to host any physical hardware on-premise to run the bot. We configure the webhook integrations so that Meta servers push customer messages directly to our secure cloud runtime environment."
+          },
+          {
+            "question": "Can the WhatsApp bot accept payments from customers?",
+            "answer": "Yes, we can integrate payment gateways like Stripe or local payment providers directly into the conversational flow. The bot can generate secure, dynamic checkout links or utilize WhatsApp's native payment features where available. This allows customers to browse, select, and pay for services within the chat."
+          },
+          {
+            "question": "How does the bot hand over a conversation to a human agent?",
+            "answer": "We build seamless handoff logic that monitors user intent or specific triggers, such as clicking a 'Talk to human' button. When triggered, the bot pauses its automated responses and routes the conversation to your customer service platform. Your live agents receive the complete chat transcript for context."
+          },
+          {
+            "question": "What are Meta's messaging fees for the WhatsApp Business API?",
+            "answer": "Meta charges for WhatsApp API usage based on 24-hour conversational sessions, categorizing them into utility, marketing, authentication, and service templates. The first 1,000 service conversations per month are completely free of charge. We help you optimize your conversation flows and template choices to minimize monthly Meta costs."
+          },
+          {
+            "question": "Can the bot send broadcast marketing messages to our customers?",
+            "answer": "Yes, you can send broadcast notifications to opted-in customers using pre-approved Meta message templates. These templates can contain personalized text, images, and quick-reply buttons to drive high engagement. We configure your campaigns to strictly adhere to WhatsApp's anti-spam policies to protect your business number."
+          },
+          {
+            "question": "How secure is the data processed by the WhatsApp bot?",
+            "answer": "Data processed by the bot is highly secure, leveraging WhatsApp's end-to-end encryption for all communication between the user and Meta. Our webhook servers process the messages using secure HTTPS protocols and encrypt sensitive customer data in transit. We ensure full compliance with standard GDPR data protection regulations."
+          },
+          {
+            "question": "How long does it take to get a WhatsApp bot live?",
+            "answer": "A standard WhatsApp bot taking care of FAQs and basic routing can be deployed within 4 to 6 weeks, including Meta account verification. More complex bots with deep database integrations and payment processing can take 8 to 12 weeks. We assist you through the entire Meta registration process."
+          }
+        ],
+        "technologies": [
+          { "icon": "whatsapp", "name": "WhatsApp Business API" },
+          { "icon": "nodedotjs", "name": "Node.js" },
+          { "icon": "python", "name": "Python" },
+          { "icon": "docker", "name": "Docker" },
+          { "icon": "postgresql", "name": "PostgreSQL" },
+          { "icon": "redis", "name": "Redis" },
+          { "icon": "amazonwebservices", "name": "Amazon Web Services" },
+          { "icon": "twilio", "name": "Twilio" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "WhatsApp Botları",
+      "shortDescription": "Şirket API'lerinizle tam entegre akıllı yapay zeka asistanlarını kullanarak dünyanın en popüler mesajlaşma platformunda küresel müşterilerle etkileşim kurun, destek iş akışlarını otomatikleştirin ve satışları doğrudan artırın.",
+      "fullDescription": "WhatsApp botları, konuşmalı ticareti ve otomatik desteği doğrudan müşterilerinizin en sevdiği uygulamaya taşır. WhatsApp Business Platformuna (Bulut API) güvenli bir şekilde bağlanan kurumsal düzeyde yapay zeka asistanları tasarlıyor ve geliştiriyoruz. Büyük dil modellerini ve konuşma çerçevelerini kullanan botlarımız, yalnızca statik menü şablonlarıyla yanıt vermekle kalmaz; serbest metin sorularını anlar, müşteri sorularını gerçek zamanlı çözer ve işlemleri yürütür. Sipariş takibi, randevu alma ve anında destek sağlamak için botları doğrudan envanter veritabanlarınıza, CRM, ödeme geçitleri ve kargo API'lerinize bağlıyoruz. Canlı ekibinize sorunsuz aktarım için insan temsilciye geçiş mantığı uyguluyoruz.",
+      "features": [
+        "Resmi WhatsApp Business Bulut API Entegrasyonu",
+        "Etkileşimli Mesaj Şablonları ve Hızlı Yanıtlar",
+        "Yapay Zeka Niyet Analizi ve Serbest Metin Konuşma Mantığı",
+        "Sorunsuz Canlı Temsilciye Geçiş Protokolleri",
+        "Veritabanı ve CRM Senkronizasyonu (Salesforce, HubSpot)",
+        "Otomatik Ödeme Bağlantısı ve Kasa Entegrasyonu",
+        "Çoklu Ortam Desteği (Görsel, PDF, Ses, Konum)",
+        "Analitik Gösterge Panelleri ve Konuşma Metrikleri"
+      ],
+      "benefits": [
+        "Müşterilere günlük kullandıkları uygulama üzerinden anında ulaşın",
+        "Sıkça sorulan soruların çözümünü otomatikleştirerek çağrı yükünü azaltın",
+        "Otomatik ürün kataloğu tarama ile satış dönüşümlerini artırın",
+        "Sipariş onayları gibi yüksek etkileşimli işlem güncellemeleri gönderin",
+        "WhatsApp uçtan uca şifrelemesiyle güvenli konuşmalar sağlayın",
+        "Destek temsilcisi eklemeden müşteri etkileşimlerini 7/24 ölçeklendirin"
+      ],
+      "metaTitle": "WhatsApp Bot Geliştirme ve Yapay Zeka Chatbotları | PakSoft",
+      "metaDescription": "Destek ve satışları otomatikleştirin. CRM ve API'lerinizle entegre, yapay zeka destekli özel WhatsApp botları kuruyoruz. Bugün bizimle iletişime geçin.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "API Hesap Kurulumu",
+            "description": "Meta Developer Console üzerinden WhatsApp Business Platform hesabınızı kaydetmenize ve doğrulamanıza yardımcı oluyoruz. Sandbox ortamı güvenli geliştirme için hazırlanır."
+          },
+          {
+            "step": 2,
+            "title": "CRM ve API Bağlantısı",
+            "description": "Mesajlaşma sunucusunu dahili CRM, veritabanları ve işlem API'lerinize bağlıyoruz. Bu, botun sohbet sırasında gerçek zamanlı müşteri verilerini alabilmesini sağlar."
+          },
+          {
+            "step": 3,
+            "title": "Akış Tasarımı ve Yönlendirme",
+            "description": "Ortak kullanıcı yolculukları için konuşma yollarını, etkileşimli butonları ve şablon mesajları tasarlıyoruz. Yapay zeka ajanları, serbest metin girdilerini profesyonelce yönetecek şekilde yönlendirilir."
+          },
+          {
+            "step": 4,
+            "title": "Temsilciye Geçiş Entegrasyonu",
+            "description": "Zendesk veya Twilio Flex gibi müşteri masası platformlarıyla canlı temsilciye geçiş mekanizmaları kuruyoruz. Karmaşık sorular, tüm sohbet geçmişiyle birlikte canlı temsilcilere aktarılır."
+          },
+          {
+            "step": 5,
+            "title": "Test ve Uyumluluk",
+            "description": "Konuşma akışlarını uç girdilere, dil varyasyonlarına ve medya yüklemelerine karşı test ediyoruz. WhatsApp ticaret politikalarına ve güvenlik standartlarına uygunluğu doğrularız."
+          },
+          {
+            "step": 6,
+            "title": "Lansman ve Optimizasyon",
+            "description": "Yüksek hacimli üretim trafiğini güvenli bir şekilde yönetmek için webhook sunucusunu kuruyoruz. Konuşmalar, yönlendirmeleri iyileştirmek ve otomatik çözüm oranlarını artırmak için izlenir."
+          }
+        ],
+        "faq": [
+          {
+            "question": "WhatsApp Business Uygulaması ile WhatsApp Business API arasındaki fark nedir?",
+            "answer": "WhatsApp Business Uygulaması, sınırlı manuel araçlarla tek bir telefonda çalışan küçük yerel işletmeler için tasarlanmıştır. WhatsApp Business API ise özel yazılım entegrasyonlarına, çoklu temsilci girişlerine, otomatik yapay zeka bot akışlarına ve yüksek hacimli mesajlaşmaya izin veren daha büyük kuruluşlar için tasarlanmıştır. Biz sadece resmi Business API kurulumu yapıyoruz."
+          },
+          {
+            "question": "WhatsApp botunu barındırmak için kendi sunucumuza ihtiyacımız var mı?",
+            "answer": "Bot uygulamasını, konteynerli mikro hizmetler kullanarak güvenli bulut sunucularında barındırıyoruz. Botu çalıştırmak için şirketinizde herhangi bir fiziksel donanım barındırmanıza gerek yoktur. Meta sunucularının müşteri mesajlarını doğrudan güvenli bulut çalışma zamanı ortamımıza iletmesi için webhook entegrasyonlarını yapılandırıyoruz."
+          },
+          {
+            "question": "WhatsApp botu müşterilerden ödeme kabul edebilir mi?",
+            "answer": "Evet, Stripe veya yerel ödeme sağlayıcıları gibi ödeme geçitlerini doğrudan konuşma akışına entegre edebiliriz. Bot, güvenli ve dinamik ödeme bağlantıları oluşturabilir veya varsa WhatsApp'ın yerel ödeme özelliklerini kullanabilir. Bu, müşterilerin sohbet içinde hizmetleri aramasına, seçmesine ve ödeme yapmasına olanak tanır."
+          },
+          {
+            "question": "Bot bir konuşmayı insan temsilciye nasıl aktarır?",
+            "answer": "Kullanıcı niyetini veya 'Müşteri temsilcisiyle konuş' butonuna tıklamak gibi belirli tetikleyicileri izleyen sorunsuz bir geçiş mantığı oluşturuyoruz. Tetiklendiğinde, bot otomatik yanıtlarını durdurur ve konuşmayı müşteri hizmetleri platformunuza yönlendirir. Canlı temsilcileriniz bağlam için tüm sohbet geçmişini alır."
+          },
+          {
+            "question": "WhatsApp Business API için Meta'nın mesajlaşma ücretleri nelerdir?",
+            "answer": "Meta, WhatsApp API kullanımı için 24 saatlik konuşma oturumlarına göre ücret alır ve bunları hizmet, pazarlama, ve doğrulama şablonları olarak sınıflandırır. Her ay ilk 1.000 hizmet konuşması tamamen ücretsizdir. Aylık Meta maliyetlerini en aza indirmek için konuşma akışlarınızı ve şablon seçimlerinizi optimize etmenize yardımcı oluyoruz."
+          },
+          {
+            "question": "Bot, müşterilerimize toplu pazarlama mesajları gönderebilir mi?",
+            "answer": "Evet, önceden onaylanmış Meta mesaj şablonlarını kullanarak izin veren müşterilere toplu bildirimler gönderebilirsiniz. Bu şablonlar, etkileşimi artırmak için kişiselleştirilmiş metinler, görseller ve hızlı yanıt butonları içerebilir. İş numaranızı korumak için kampanyalarınızı WhatsApp'ın spam önleme politikalarına sıkı sıkıya uyacak şekilde yapılandırıyoruz."
+          },
+          {
+            "question": "WhatsApp botu tarafından işlenen veriler ne kadar güvenlidir?",
+            "answer": "Bot tarafından işlenen veriler, kullanıcı ile Meta arasındaki tüm iletişim için WhatsApp'ın uçtan uca şifrelemesini kullanarak son derece güvenlidir. Webhook sunucularımız mesajları güvenli HTTPS protokollerini kullanarak işler ve hassas müşteri verilerini aktarım sırasında şifreler. Standart GDPR ve KVKK veri koruma yönetmeliklerine tam uyum sağlıyoruz."
+          },
+          {
+            "question": "Bir WhatsApp botunun canlıya geçmesi ne kadar sürer?",
+            "answer": "SSS ve temel yönlendirmeleri yöneten standart bir WhatsApp botu, Meta hesap doğrulaması dahil 4 ila 6 hafta içinde devreye alınabilir. Derin veritabanı entegrasyonlarına ve ödeme işlemlerine sahip daha karmaşık botlar 8 ila 12 hafta sürebilir. Tüm Meta kayıt süreci boyunca size yardımcı oluyoruz."
+          }
+        ],
+        "technologies": [
+          { "icon": "whatsapp", "name": "WhatsApp Business API" },
+          { "icon": "nodedotjs", "name": "Node.js" },
+          { "icon": "python", "name": "Python" },
+          { "icon": "docker", "name": "Docker" },
+          { "icon": "postgresql", "name": "PostgreSQL" },
+          { "icon": "redis", "name": "Redis" },
+          { "icon": "amazonwebservices", "name": "Amazon Web Services" },
+          { "icon": "twilio", "name": "Twilio" }
+        ]
+      }
+    },
+    "de": {
+      "name": "WhatsApp-Bots",
+      "shortDescription": "Binden Sie globale Kunden ein, automatisieren Sie Support-Workflows und steigern Sie den Umsatz auf der weltweit beliebtesten Messaging-Plattform mit intelligenten, API-integrierten KI-Assistenten.",
+      "fullDescription": "WhatsApp-Bots bringen Conversational Commerce und automatisierten Support direkt auf die bevorzugte App Ihrer Kunden. Wir entwerfen und bauen professionelle KI-Assistenten, die sich sicher mit der WhatsApp Business Platform (Cloud API) verbinden. Mithilfe großer Sprachmodelle und Konversations-Frameworks verstehen unsere Bots freiformulierte Fragen, lösen Kundenanfragen in Echtzeit und wickeln Transaktionen ab. Wir verknüpfen Bots direkt mit Ihren Bestandsdatenbanken, CRM, Zahlungsgateways und Versand-APIs, um eine automatische Bestellverfolgung, Terminbuchung und sofortigen Support zu ermöglichen. Zudem implementieren wir eine Übergabelogik an menschliche Agenten, damit komplexe Anfragen nahtlos an Ihr Live-Team weitergeleitet werden, was die Kundenzufriedenheit erheblich steigert.",
+      "features": [
+        "Offizielle WhatsApp Business Cloud API Integration",
+        "Interaktive Nachrichtenvorlagen & Quick Replies",
+        "KI-Intent-Parsing & Freitext-Konversationslogik",
+        "Nahtlose Übergabeprotokolle an Live-Agenten",
+        "Datenbank- & CRM-Synchronisation (Salesforce, HubSpot)",
+        "Automatisierte Zahlungslink- & Checkout-Integration",
+        "Multimedia-Support (Bilder, PDFs, Audio, Standort)",
+        "Analytik-Dashboards & Konversations-Metriken"
+      ],
+      "benefits": [
+        "Kunden sofort auf der täglich genutzten Anwendung erreichen",
+        "Supportanrufe durch automatisierte FAQ-Beantwortung reduzieren",
+        "Umsatzkonversionen durch automatisiertes Durchsuchen von Katalogen steigern",
+        "Transaktions-Updates mit hoher Interaktionsrate versenden",
+        "Sichere Konversationen durch WhatsApp-Ende-zu-Ende-Verschlüsselung garantieren",
+        "Kundeninteraktionen rund um die Uhr ohne zusätzliches Personal skalieren"
+      ],
+      "metaTitle": "WhatsApp-Bot-Entwicklung & KI-Chatbots | PakSoft",
+      "metaDescription": "Support und Vertrieb automatisieren. Wir bauen KI-gestützte WhatsApp-Bots mit CRM- und API-Anbindung. Kontaktieren Sie uns für ein Angebot.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "API-Konto-Einrichtung",
+            "description": "Wir unterstützen Sie bei der Registrierung und Verifizierung Ihres WhatsApp-Business-Kontos über die Meta Developer Console. Die Sandbox-Umgebung wird für eine sichere Entwicklung vorbereitet."
+          },
+          {
+            "step": 2,
+            "title": "CRM- & API-Verbindung",
+            "description": "Wir verbinden den Messaging-Server mit Ihrem internen CRM, Ihren Datenbanken und Transaktions-APIs. Dies stellt sicher, dass der Bot während des Chats Echtzeit-Kundendaten abrufen kann."
+          },
+          {
+            "step": 3,
+            "title": "Ablaufdesign & Prompting",
+            "description": "Wir entwerfen die Gesprächspfade, interaktiven Schaltflächen und Vorlagen für gängige Benutzerreisen. Die KI-Agenten werden so programmiert, dass sie Freitext-Eingaben professionell und kontextgerecht beantworten."
+          },
+          {
+            "step": 4,
+            "title": "Übergabelogik-Integration",
+            "description": "Wir integrieren Übergabemechanismen an Kundenservice-Plattformen wie Zendesk oder Twilio Flex. Komplexe Anfragen werden mit vollständigen Chat-Protokollen nahtlos an Live-Mitarbeiter übergeben."
+          },
+          {
+            "step": 5,
+            "title": "Testing & Compliance",
+            "description": "Wir testen die Konversationsabläufe auf Randfälle, Sprachvariationen und Medien-Uploads. Wir überprüfen die Einhaltung der WhatsApp-Handelsrichtlinien und der erforderlichen Sicherheitsstandards."
+          },
+          {
+            "step": 6,
+            "title": "Launch & Optimierung",
+            "description": "Wir stellen den Webhook-Server bereit, um ein hohes Produktionsvolumen sicher zu bewältigen. Die Gespräche werden über Dashboards überwacht, um Prompts zu verfeinern und Lösungsraten zu erhöhen."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Was ist der Unterschied zwischen der WhatsApp Business App und der WhatsApp Business API?",
+            "answer": "Die WhatsApp Business App ist für kleine Unternehmen gedacht und läuft auf einem einzelnen Smartphone mit eingeschränkten manuellen Tools. Die WhatsApp Business API ist für größere Organisationen konzipiert und ermöglicht individuelle Software-Integrationen, mehrere Agenten-Logins, automatisierte KI-Bot-Abläufe und ein hohes Nachrichtenvolumen. Wir sind ausschließlich auf die offizielle API spezialisiert."
+          },
+          {
+            "question": "Benötigen wir einen eigenen Server, um den WhatsApp-Bot zu hosten?",
+            "answer": "Wir betreiben die Bot-Anwendung auf sicheren Cloud-Servern mittels containerisierter Mikrodienste. Sie müssen keine physische Hardware vor Ort bereitstellen, um den Bot auszuführen. Wir konfigurieren die Webhook-Integrationen so, dass die Meta-Server die Kundennachrichten direkt an unsere sichere Cloud-Laufzeitumgebung weiterleiten."
+          },
+          {
+            "question": "Kann der WhatsApp-Bot Zahlungen von Kunden akzeptieren?",
+            "answer": "Ja, wir können Zahlungsgateways wie Stripe oder lokale Zahlungsanbieter direkt in den Konversationsfluss einbinden. Der Bot kann sichere, dynamische Checkout-Links generieren oder die nativen Zahlungsfunktionen von WhatsApp nutzen, sofern diese verfügbar sind. Dadurch können Kunden Dienstleistungen direkt im Chat suchen, auswählen und bezahlen."
+          },
+          {
+            "question": "Wie übergibt der Bot ein Gespräch an einen menschlichen Mitarbeiter?",
+            "answer": "Wir entwickeln eine nahtlose Übergabelogik, die die Benutzerabsicht oder bestimmte Auslöser überwacht, wie das Klicken auf die Schaltfläche 'Mit Mitarbeiter sprechen'. Bei Auslösung stoppt der Bot die automatischen Antworten und leitet den Chat an Ihre Kundenservice-Plattform weiter. Ihre Live-Mitarbeiter erhalten den vollständigen Chatverlauf als Kontext."
+          },
+          {
+            "question": "Wie hoch sind die Messaging-Gebühren von Meta für die WhatsApp Business API?",
+            "answer": "Meta berechnet die Nutzung der WhatsApp API basierend auf 24-stündigen Konversationssitzungen, unterteilt in Marketing-, Hilfs-, Authentifizierungs- und Servicekategorien. Die ersten 1.000 Service-Konversationen pro Monat sind völlig kostenlos. Wir helfen Ihnen, Ihre Konversationsabläufe und Vorlagen zu optimieren, um die monatlichen Meta-Gebühren zu minimieren."
+          },
+          {
+            "question": "Kann der Bot Broadcast-Marketingnachrichten an unsere Kunden senden?",
+            "answer": "Ja, Sie können Broadcast-Benachrichtigungen an Kunden, die dem Empfang zugestimmt haben, über vorab genehmigte Meta-Nachrichtenvorlagen senden. Diese Vorlagen können personalisierten Text, Bilder und Schnellantwort-Schaltflächen enthalten, um die Interaktion zu maximieren. Wir konfigurieren Ihre Kampagnen streng nach den Anti-Spam-Richtlinien von WhatsApp, um Ihre Nummer zu schützen."
+          },
+          {
+            "question": "Wie sicher sind die vom WhatsApp-Bot verarbeiteten Daten?",
+            "answer": "Die vom Bot verarbeiteten Daten sind äußerst sicher, da WhatsApp eine Ende-zu-Ende-Verschlüsselung für die gesamte Kommunikation zwischen dem Benutzer und Meta nutzt. Unsere Webhook-Server verarbeiten die Nachrichten über sichere HTTPS-Protokolle und verschlüsseln sensible Kundendaten bei der Übertragung. Wir garantieren die vollständige Einhaltung der DSGVO-Datenschutzbestimmungen."
+          },
+          {
+            "question": "Wie lange dauert es, bis ein WhatsApp-Bot live geht?",
+            "answer": "Ein Standard-WhatsApp-Bot zur Beantwortung von FAQs und einfachen Weiterleitungen kann innerhalb von 4 bis 6 Wochen bereitgestellt werden, einschließlich der Verifizierung des Meta-Kontos. Komplexere Bots mit tiefen Datenbankintegrationen und Zahlungsabwicklungen dauern 8 bis 12 Wochen. Wir unterstützen Sie während des gesamten Meta-Registrierungsprozesses."
+          }
+        ],
+        "technologies": [
+          { "icon": "whatsapp", "name": "WhatsApp Business API" },
+          { "icon": "nodedotjs", "name": "Node.js" },
+          { "icon": "python", "name": "Python" },
+          { "icon": "docker", "name": "Docker" },
+          { "icon": "postgresql", "name": "PostgreSQL" },
+          { "icon": "redis", "name": "Redis" },
+          { "icon": "amazonwebservices", "name": "Amazon Web Services" },
+          { "icon": "twilio", "name": "Twilio" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "واٹس ایپ بوٹس",
+      "shortDescription": "کاروباری APIs کے ساتھ مربوط ذہین AI اسسٹنٹس کا استعمال کرتے ہوئے دنیا کے سب سے مقبول میسجنگ پلیٹ فارم پر عالمی صارفین کو راغب کریں، سپورٹ ورک فلوز کو خودکار بنائیں اور براہ راست فروخت بڑھائیں۔",
+      "fullDescription": "واٹس ایپ بوٹس گفتگو پر مبنی تجارت اور خودکار سپورٹ کو براہ راست آپ کے صارفین کی پسندیدہ ایپ پر لاتے ہیں۔ ہم انٹرپرائز گریڈ AI اسسٹنٹس ڈیزائن اور بناتے ہیں جو واٹس ایپ بزنس پلیٹ فارم (Cloud API) سے محفوظ طریقے سے جڑتے ہیں۔ بڑے لسانی ماڈلز اور گفتگو کے فریم ورکس کا استعمال کرتے ہوئے، ہمارے بوٹس مینو شابلونز سے ہٹ کر آزادانہ سوالات کو سمجھتے ہیں، کسٹمر کے مسائل کو ریئل ٹائم میں حل کرتے ہیں، اور لین دین کو مکمل کرتے ہیں۔ ہم بوٹس کو براہ راست آپ کے انوینٹری ڈیٹا بیسز، CRM، پیمنٹ گیٹ ویز اور شپنگ APIs سے جوڑتے ہیں تاکہ خودکار آرڈر ٹریکنگ، اپائنٹمنٹ بکنگ اور فوری سپورٹ ممکن ہو۔ ہم لائیو ایجنٹ ہینڈ اوور لاجک لاگو کرتے ہیں تاکہ پیچیدہ سوالات خودکار طور پر آپ کی لائیو ٹیم کو منتقل ہو جائیں۔",
+      "features": [
+        "سرکاری واٹس ایپ بزنس کلاؤڈ API انٹیگریشن",
+        "انٹرایکٹو میسج ٹیمپلیٹس اور کوئک ریپلائز",
+        "AI نیت کا تجزیہ اور آزاد گفتگو کی لاجک",
+        "لائیو ایجنٹ کو گفتگو کی منتقلی کے پروٹوکولز",
+        "ڈیٹا بیس اور CRM سنکرونائزیشن (Salesforce, HubSpot)",
+        "خودکار پیمنٹ لنک اور چیک آؤٹ انٹیگریشن",
+        "ملٹی میڈیا سپورٹ (تصاویر، PDFs، آڈیو، لوکیشن)",
+        "اینالیٹکس ڈیش بورڈز اور کنورسیشن میٹرکس"
+      ],
+      "benefits": [
+        "روزمرہ استعمال ہونے والی ایپلی کیشن پر صارفین تک فوری رسائی حاصل کریں",
+        "SSS کو خودکار حل کر کے کسٹمر سپورٹ کالز کے دباؤ کو کم کریں",
+        "خودکار مصنوعات کے کیٹلاگ کے ذریعے فروخت کو فروغ دیں",
+        "آرڈر کی تصدیق جیسے اعلیٰ مشغولیت والے پیغامات بھیجیں",
+        "واٹس ایپ اینڈ ٹو اینڈ انکرپشن کے ساتھ محفوظ گفتگو یقینی بنائیں",
+        "اضافی عملے کے بغیر کسٹمر سپورٹ کو 24/7 اسکیل کریں"
+      ],
+      "metaTitle": "واٹس ایپ بوٹ ڈیولپمنٹ اور AI چیٹ بوٹس | PakSoft",
+      "metaDescription": "سپورٹ اور فروخت کو خودکار بنائیں۔ ہم CRM اور APIs کے ساتھ مربوط کسٹم AI واٹس ایپ بوٹس بناتے ہیں۔ مشاورت کے لیے آج ہی ہم سے رابطہ کریں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "API اکاؤنٹ سیٹ اپ",
+            "description": "ہم Meta Developer Console کے ذریعے واٹس ایپ بزنس پلیٹ فارم اکاؤنٹ کو رجسٹر اور ویریفائی کرنے میں مدد کرتے ہیں۔ محفوظ ڈیولپمنٹ کے لیے سینڈ باکس تیار کیا جاتا ہے۔"
+          },
+          {
+            "step": 2,
+            "title": "CRM اور API کنکشن",
+            "description": "ہم میسجنگ سرور کو آپ کے اندرونی CRM، ڈیٹا بیس اور ٹرانزیکشنل APIs سے جوڑتے ہیں۔ یہ یقینی بناتا ہے کہ بوٹ گفتگو کے دوران ریئل ٹائم کسٹمر ڈیٹا حاصل کر سکے۔"
+          },
+          {
+            "step": 3,
+            "title": "فلو ڈیزائن اور پرامپٹنگ",
+            "description": "ہم عام صارفین کے لیے گفتگو کے راستے، بٹنز اور شیمپلیٹس ڈیزائن کرتے ہیں۔ AI ایجنٹس کو اس طرح پرامپٹ کیا جاتا ہے کہ وہ آزادانہ سوالات کا پیشہ ورانہ جواب دیں۔"
+          },
+          {
+            "step": 4,
+            "title": "ہینڈ اوور لاجک انٹیگریشن",
+            "description": "ہم Zendesk یا Twilio Flex gibi کسٹمر ڈیسک پلیٹ فارمز کے ساتھ انسانی ایجنٹ کی منتقلی کا نظام مربوط کرتے ہیں۔ پیچیدہ سوالات گفتگو کی ہسٹری کے ساتھ منتقل ہوتے ہیں۔"
+          },
+          {
+            "step": 5,
+            "title": "ٹیسٹنگ اور تعمیل",
+            "description": "ہم گفتگو کے فلو کو مختلف زبانوں، لہجوں اور میڈیا فائلز پر ٹیسٹ کرتے ہیں۔ ہم واٹس ایپ کی تجارتی پالیسیوں اور سیکیورٹی معیارات کی تعمیل کی تصدیق کرتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "لانچ اور آپٹیمائزیشن",
+            "description": "ہم بھاری ٹریفک کو محفوظ طریقے سے سنبھالنے کے لیے ویب ہک سرور قائم کرتے ہیں۔ گفتگو کی کارکردگی اور خودکار حل کی شرح کو ڈیش بورڈز سے مانیٹر کیا جاتا ہے۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "واٹس ایپ بزنس ایپ اور واٹس ایپ بزنس API میں کیا فرق ہے؟",
+            "answer": "واٹس ایپ بزنس ایپ چھوٹے کاروباروں کے لیے ہے، جو محدود ٹولز کے ساتھ ایک فون پر چلتی ہے۔ واٹس ایپ بزنس API بڑی تنظیموں کے لیے ہے، جو کسٹم سافٹ ویئر انٹیگریشنز، متعدد ایجنٹ لاگ انز، خودکار AI بوٹ فلو اور بھاری پیغامات بھیجنے کی سہولت فراہم کرتی ہے۔ ہم صرف سرکاری Business API پر کام کرتے ہیں۔"
+          },
+          {
+            "question": "کیا ہمیں واٹس ایپ بوٹ کی میزبانی کے لیے اپنے سرور کی ضرورت ہے؟",
+            "answer": "ہم کنٹینرائزڈ مائیکرو سروسز کا استعمال کرتے ہوئے محفوظ کلاؤڈ سرورز پر بوٹ کو ہوسٹ کرتے ہیں۔ آپ کو اپنے پاس کسی فزیکل ہارڈ ویئر کی ضرورت نہیں ہے۔ ہم ویب ہک انٹیگریشنز کو اس طرح ترتیب دیتے ہیں کہ Meta سرورز صارفین کے پیغامات کو ہمارے محفوظ کلاؤڈ انوائرمنٹ میں بھیجیں۔"
+          },
+          {
+            "question": "کیا واٹس ایپ بوٹ صارفین سے ادائیگیاں قبول کر سکتا ہے؟",
+            "answer": "جی ہاں، ہم گفتگو کے بہاؤ میں Stripe یا مقامی ادائیگی کے ذرائع کو مربوط کر سکتے ہیں۔ بوٹ محفوظ اور متحرک چیک آؤٹ لنکس بنا سکتا ہے یا واٹس ایپ کی اپنی ادائیگی کی خصوصیات استعمال کر سکتا ہے۔ اس سے صارفین چیٹ کے اندر ہی خدمات دیکھ اور خرید سکتے ہیں۔"
+          },
+          {
+            "question": "بوٹ گفتگو کو انسانی نمائندے کو کیسے منتقل کرتا ہے؟",
+            "answer": "ہم ایک بہترین ہینڈ اوور لاجک بناتے ہیں جو صارف کی نیت یا بٹن پر کلک کرنے کو مانیٹر کرتی ہے۔ متحرک ہونے پر، بوٹ اپنی گفتگو کو روک دیتا ہے اور چیٹ کو آپ کے کسٹمر سپورٹ پلیٹ فارم پر بھیج دیتا ہے۔ آپ کے لائیو ایجنٹس کو گفتگو کا ریکارڈ فراہم کیا جاتا ہے۔"
+          },
+          {
+            "question": "واٹس ایپ بزنس API کے لیے Meta کی فیسیں کیا ہیں؟",
+            "answer": "Meta واٹس ایپ API کے استعمال کے لیے 24 گھنٹے کے سیشن کی بنیاد پر فیس چارج کرتا ہے، جس میں سروس، مارکیٹنگ، اور تصدیقی پیغامات شامل ہیں۔ ہر ماہ پہلی 1,000 سروس گفتگو بالکل مفت ہوتی ہے۔ ہم ماہانہ اخراجات کو کم کرنے کے لیے آپ کے گفتگو کے بہاؤ کو بہتر کرتے ہیں۔"
+          },
+          {
+            "question": "کیا بوٹ ہمارے گاہکوں کو مارکیٹنگ کے پیغامات بھیج سکتا ہے؟",
+            "answer": "جی ہاں، آپ پہلے سے منظور شدہ Meta میسج ٹیمپلیٹس کا استعمال کرتے ہوئے منتخب صارفین کو نوٹیفیکیشنز بھیج سکتے ہیں۔ ان ٹیمپلیٹس میں تصاویر اور فوری جواب کے بٹن شامل ہو سکتے ہیں۔ ہم آپ کی مہمات کو واٹس ایپ کی پالیسیوں کے مطابق ترتیب دیتے ہیں تاکہ آپ کا نمبر محفوظ رہے۔"
+          },
+          {
+            "question": "واٹس ایپ بوٹ کے ذریعے پروسیس ہونے والا ڈیٹا کتنا محفوظ ہے؟",
+            "answer": "بٹ کے ذریعے پروسیس ہونے والا ڈیٹا واٹس ایپ کی اینڈ ٹو اینڈ انکرپشن کی وجہ سے انتہائی محفوظ ہوتا ہے۔ ہمارے ویب ہک سرورز پیغامات کو محفوظ HTTPS پروٹوکول کے ذریعے منتقل کرتے ہیں اور کسٹمر ڈیٹا کو انکرپٹ کرتے ہیں۔ ہم تمام حفاظتی اور GDPR قوانین کی مکمل تعمیل کو یقینی بناتے ہیں۔"
+          },
+          {
+            "question": "واٹس ایپ بوٹ کو لائیو کرنے میں کتنا وقت لگتا ہے؟",
+            "answer": "SSS اور temel yönlendirmeleri yöneten standart bir WhatsApp botu, Meta hesap doğrulaması dahil 4 ila 6 hafta içinde devreye alınabilir. Derin veritabanı entegrasyonlarına ve ödeme işlemlerine sahip daha karmaşık botlar 8 ila 12 hafta sürebilir. Tüm Meta kayıt süreci boyunca size yardımcı oluyoruz."
+          }
+        ],
+        "technologies": [
+          { "icon": "whatsapp", "name": "WhatsApp Business API" },
+          { "icon": "nodedotjs", "name": "Node.js" },
+          { "icon": "python", "name": "Python" },
+          { "icon": "docker", "name": "Docker" },
+          { "icon": "postgresql", "name": "PostgreSQL" },
+          { "icon": "redis", "name": "Redis" },
+          { "icon": "amazonwebservices", "name": "Amazon Web Services" },
+          { "icon": "twilio", "name": "Twilio" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "بوتات واتساب",
+      "shortDescription": "تفاعل مع العملاء العالميين، وأتمت عمليات الدعم، وزد من المبيعات المباشرة على منصة المراسلة الأكثر شعبية في العالم باستخدام مساعدين أذكياء مدمجين بالكامل مع واجهات برمجة التطبيقات الخاصة بمؤسستك.",
+      "fullDescription": "تجلب بوتات واتساب التجارة التفاعلية والدعم المؤتمت مباشرة إلى التطبيق المفضل لعملائك. نحن نصمم ونبني مساعدين أذكياء على مستوى المؤسسات يتصلون بأمان مع منصة واتساب للأعمال (Cloud API). باستخدام نماذج اللغة الكبيرة وأطر عمل المحادثة، تقوم البوتات بفهم الأسئلة الحرة وحل استفسارات العملاء في الوقت الفعلي وإتمام المعاملات. نربط البوتات مباشرة بقواعد بيانات المخزون، ونظام CRM، وبوابات الدفع، وواجهات برمجة تطبيقات الشحن لتمكين تتبع الطلبات، وحجز المواعيد. ندمج منطق نقل المحادثات إلى الموظفين البشريين بحيث يتم تصعيد الاستفسارات المعقدة بسلاسة إلى فريقك المباشر، مما يعزز رضا العملاء.",
+      "features": [
+        "التكامل الرسمي مع واجهة واتساب للأعمال (Cloud API)",
+        "قوالب الرسائل التفاعلية والردود السريعة المخصصة",
+        "تحليل النوايا بالذكاء الاصطناعي ومنطق المحادثة الحرة",
+        "بروتوكولات نقل المحادثات السلسة للموظفين البشريين",
+        "مزامنة البيانات ونظام CRM (Salesforce, HubSpot)",
+        "تكامل روابط الدفع المؤتمتة وعمليات الخروج",
+        "دعم الوسائط المتعددة (الصور، PDFs، الصوت، الموقع)",
+        "لوحات تحكم التحليلات ومقاييس المحادثات النشطة"
+      ],
+      "benefits": [
+        "الوصول إلى العملاء فوراً على التطبيق الذي يستخدمونه يومياً",
+        "تقليل ضغط المكالمات عبر أتمتة حل الأسئلة الشائعة",
+        "زيادة مبيعاتك من خلال تصفح كتالوج المنتجات المؤتمت",
+        "إرسال تحديثات المعاملات مثل تأكيدات الطلبات تلقائياً",
+        "ضمان أمن المحادثات باستخدام تشفير واتساب بين الطرفين",
+        "توسيع تفاعلات العملاء على مدار الساعة دون زيادة موظفي الدعم"
+      ],
+      "metaTitle": "تطوير بوتات واتساب وروبوتات الدردشة | PakSoft",
+      "metaDescription": "أتمت الدعم والمبيعات. نحن نبني بوتات واتساب مخصصة بالذكاء الاصطناعي مدمجة مع نظام CRM وواجهات برمجة التطبيقات الخاصة بك. اتصل بنا اليوم للحصول على استشارة.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "إعداد حساب الـ API",
+            "description": "نساعدك في تسجيل وتوثيق حساب منصة واتساب للأعمال عبر Meta Developer Console. يتم إعداد بيئة التطوير التجريبية لبدء البرمجة الآمنة."
+          },
+          {
+            "step": 2,
+            "title": "الاتصال بـ CRM وقواعد البيانات",
+            "description": "نربط خادم المراسلة بنظام CRM الداخلي وقواعد البيانات وواجهات العمليات. يضمن ذلك قدرة البوت على استرداد بيانات العملاء المحدثة أثناء الدردشة."
+          },
+          {
+            "step": 3,
+            "title": "تصميم التدفق والتوجيه",
+            "description": "نحدد مسارات المحادثة والأزرار التفاعلية وقوالب الرسائل لرحلات المستخدم الشائعة. يتم توجيه وكلاء الذكاء الاصطناعي للتعامل مع النصوص الحرة باحترافية."
+          },
+          {
+            "step": 4,
+            "title": "تكامل منطق النقل للموظفين",
+            "description": "ندمج آليات التصعيد للموظفين البشريين مع منصات خدمة العملاء مثل Zendesk أو Twilio Flex. يتم نقل الاستفسارات المعقدة مع سجل المحادثات الكامل."
+          },
+          {
+            "step": 5,
+            "title": "الاختبار والامتثال",
+            "description": "نختبر تدفقات المحادثة ضد المدخلات غير المتوقعة واختلافات اللغات وتحميل الوسائط. نتحقق من الامتثال لسياسات واتساب التجارية ومعايير الأمن المعتمدة."
+          },
+          {
+            "step": 6,
+            "title": "الإطلاق والتحسين",
+            "description": "ننشر خادم الويب لاستقبال حركة مرور البيانات الكثيفة في بيئة الإنتاج بأمان. تتم مراقبة المحادثات لتحسين التوجيهات وزيادة معدلات الحل التلقائي."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما الفرق بين تطبيق واتساب للأعمال وواجهة واتساب للأعمال (WhatsApp Business API)؟",
+            "answer": "تم تصميم تطبيق واتساب للأعمال للمشاريع المحلية الصغيرة، حيث يعمل على هاتف واحد بأدوات يدوية محدودة. أما واجهة واتساب للأعمال فتستهدف المؤسسات الكبيرة، وتتيح تكامل البرمجيات، وتسجيل دخول موظفين متعددين، وتشغيل بوتات الذكاء الاصطناعي التلقائية، وإرسال الرسائل الكثيفة. نحن متخصصون فقط في واجهة برمجة التطبيقات الرسمية."
+          },
+          {
+            "question": "هل نحتاج إلى خادم خاص بنا لاستضافة بوت واتساب؟",
+            "answer": "نحن ننشر تطبيق البوت على خوادم سحابية آمنة باستخدام خدمات برمجية مصغرة ومعبأة. لا تحتاج إلى استضافة أي أجهزة مادية في موقعك لتشغيل البوت. نقوم بتهيئة تكاملات ويب هوك بحيث تقوم خوادم Meta بإرسال رسائل العملاء مباشرة إلى خوادمنا السحابية الآمنة."
+          },
+          {
+            "question": "هل يمكن لبوت واتساب قبول المدفوعات من العملاء؟",
+            "answer": "نعم، يمكننا دمج بوابات الدفع مثل Stripe أو موفري الدفع المحليين مباشرة في تدفق المحادثة. يمكن للبوت إنشاء روابط دفع آمنة وديناميكية أو استخدام ميزات الدفع الأصلية في واتساب إذا كانت متوفرة. يتيح ذلك للعملاء تصفح الخدمات واختيارها والدفع داخل الشات."
+          },
+          {
+            "question": "كيف ينقل البوت المحادثة إلى موظف بشري؟",
+            "answer": "نبني منطق نقل سلس يراقب نية المستخدم أو محفزات محددة مثل النقر فوق زر 'التحدث إلى موظف'. عند التفعيل، يوقف البوت ردوده التلقائية ويوجه المحادثة إلى منصة خدمة العملاء الخاصة بك. يتلقى موظفوك سجل الدردشة الكامل لفهم السياق."
+          },
+          {
+            "question": "ما هي رسوم المراسلة الخاصة بشركة Meta لواجهة واتساب للأعمال؟",
+            "answer": "تحتسب شركة Meta رسوماً بناءً على جلسات المحادثة لمدة 24 ساعة، وتصنفها إلى فئات مثل التسويق، والخدمات، والمصادقة. أول 1,000 محادثة خدمة شهرياً مجانية تماماً. نساعدك في تحسين تدفقات المحادثة واختيار القوالب لتقليل التكاليف الشهرية المدفوعة لشركة Meta."
+          },
+          {
+            "question": "هل يمكن للبوت إرسال رسائل تسويقية جماعية لعملائنا؟",
+            "answer": "نعم، يمكنك إرسال إشعارات جماعية للعملاء المشتركين باستخدام قوالب رسائل معتمدة مسبقاً من Meta. يمكن أن تحتوي هذه القوالب على نصوص وصور وأزرار ردود سريعة لزيادة التفاعل. نقوم بتهيئة حملاتك للالتزام بسياسات واتساب لمكافحة الرسائل المزعجة لحماية رقمك."
+          },
+          {
+            "question": "ما مدى أمان البيانات التي يتم معالجتها بواسطة البوت؟",
+            "answer": "البيانات التي يعالجها البوت آمنة للغاية، حيث تستخدم تشفير واتساب بين الطرفين لجميع الاتصالات بين المستخدم و Meta. تقوم خوادم الويب هوك الخاصة بنا بمعالجة الرسائل باستخدام بروتوكولات HTTPS الآمنة وتشفير بيانات العملاء الحساسة أثناء النقل. نحن نضمن الامتثال الكامل لقوانين GDPR."
+          },
+          {
+            "question": "كم من الوقت يستغرق إطلاق بوت واتساب بالكامل؟",
+            "answer": "يمكن نشر بوت واتساب قياسي يجيب على الأسئلة الشائعة ويوجه العملاء في غضون 4 إلى 6 أسابيع، بما في ذلك توثيق حساب Meta. قد تستغرق البوتات الأكثر تعقيداً ذات التكاملات العميقة والمدفوعات من 8 إلى 12 أسبوعاً. نحن نساعدك طوال عملية التسجيل."
+          }
+        ],
+        "technologies": [
+          { "icon": "whatsapp", "name": "WhatsApp Business API" },
+          { "icon": "nodedotjs", "name": "Node.js" },
+          { "icon": "python", "name": "Python" },
+          { "icon": "docker", "name": "Docker" },
+          { "icon": "postgresql", "name": "PostgreSQL" },
+          { "icon": "redis", "name": "Redis" },
+          { "icon": "amazonwebservices", "name": "Amazon Web Services" },
+          { "icon": "twilio", "name": "Twilio" }
+        ]
+      }
+    }
+  }
+}

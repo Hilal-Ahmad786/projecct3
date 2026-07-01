@@ -1,0 +1,638 @@
+{
+  "slug": "voice-assistant-development",
+  "en": {
+    "name": "Voice Assistant Development",
+    "shortDescription": "Build intelligent voice agents and custom conversational assistants that understand natural spoken language, maintain context, and execute business actions across your corporate APIs and databases.",
+    "fullDescription": "Voice assistant development enables hands-free, natural interactions for your customers and employees. We build production-ready voice systems combining Automatic Speech Recognition (ASR), Natural Language Understanding (NLU), and Text-to-Speech (TTS) pipelines. Utilizing platforms like OpenAI's Realtime API, Google Cloud Text-to-Speech, and custom LLMs, our assistants do not just follow scripts—they understand intent, maintain multi-turn context, and retrieve data from internal APIs to answer questions. We optimize for low-latency audio streaming, implement noise-filtering models, and add guardrails to prevent hallucinations. Whether you need a customer service phone agent, a voice-enabled mobile app interface, or a smart device integration, we build voice solutions that deliver human-like conversation.",
+    "features": [
+      "Real-Time Automatic Speech Recognition (ASR)",
+      "Natural Language Understanding (NLU) & Intent Parsing",
+      "High-Fidelity Text-to-Speech (TTS) Synthesis",
+      "Low-Latency Audio Streaming (WebSockets, WebRTC)",
+      "Context-Aware Multi-Turn Conversational Logic",
+      "API & Database Integration for Action Execution",
+      "Noise-Filtering & Voice Activity Detection (VAD)",
+      "Multi-Language & Accent Adaptation"
+    ],
+    "benefits": [
+      "Provide 24/7 instant customer support over voice channels",
+      "Reduce phone queue waiting times using virtual voice agents",
+      "Allow hands-free data entry and operational reporting",
+      "Lower call center staffing costs on routine customer inquiries",
+      "Deliver personalized customer experiences using database integrations",
+      "Improve accessibility for users with physical or visual impairments"
+    ],
+    "metaTitle": "Voice Assistant Development & Conversational AI | PakSoft",
+    "metaDescription": "Build intelligent, low-latency voice assistants. We integrate ASR, TTS, and LLMs for phone agents and smart apps. Contact us for a consultation.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Requirements & Voice Persona",
+          "description": "We start by defining the assistant's scope, vocabulary, integration points, and tone of voice. We establish the target persona and select the optimal speech synthesis voices."
+        },
+        {
+          "step": 2,
+          "title": "ASR & TTS Integration",
+          "description": "We configure the speech-to-text and text-to-speech pipelines using technologies like Whispers, OpenAI, or Google Cloud. We optimize latency by setting up raw audio streaming interfaces."
+        },
+        {
+          "step": 3,
+          "title": "NLU & Conversational Logic",
+          "description": "We design the conversation flows and connect them to large language models for intent parsing. The system is programmed to handle interruptions and maintain memory across turns."
+        },
+        {
+          "step": 4,
+          "title": "API & Action Binding",
+          "description": "We connect the voice assistant to your internal databases, CRMs, and APIs. The agent is trained to execute database searches and complete transactions based on spoken commands."
+        },
+        {
+          "step": 5,
+          "title": "Testing & Latency Tuning",
+          "description": "We test the voice assistant in real-world environments with varying background noise levels. We tune voice activity detection and caching to bring round-trip latency under one second."
+        },
+        {
+          "step": 6,
+          "title": "Deployment & Monitoring",
+          "description": "We deploy the voice solution as a scalable web service or telephone gateway. Conversational logs and speech recognition error rates are continuously monitored for ongoing improvement."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What speech recognition and synthesis engines do you use?",
+          "answer": "We select speech engines based on your language needs, latency requirements, and budget. For general applications, we integrate leading cloud APIs like Google Cloud Speech-to-Text or Azure Cognitive Services. For cutting-edge conversational systems, we leverage OpenAI's Realtime API or deploy open-source models like Whisper."
+        },
+        {
+          "question": "How do you achieve low latency in voice conversations?",
+          "answer": "Low latency is critical for natural voice conversations, and we target a sub-second response time. We achieve this by streaming raw audio chunks bi-directionally over WebSockets or WebRTC. We also utilize fast streaming LLM architectures and optimize our internal API calls to prevent audio delays."
+        },
+        {
+          "question": "Can the voice assistant handle noisy environments or accents?",
+          "answer": "Yes, we implement advanced Voice Activity Detection (VAD) and noise-filtering algorithms to isolate the speaker's voice from background noise. We also configure speech recognition parameters to support regional accents and dialects. This ensures the assistant maintains high comprehension rates in real-world scenarios."
+        },
+        {
+          "question": "Can you integrate the voice assistant with telephone systems?",
+          "answer": "Absolutely. We specialize in connecting conversational voice agents to traditional phone lines or VoIP networks using SIP and Twilio. This allows you to deploy virtual agents that answer customer calls, resolve standard inquiries, and transfer complex issues to human agents."
+        },
+        {
+          "question": "How do you prevent the assistant from hallucinating or sharing incorrect data?",
+          "answer": "We implement strict guardrails and restrict the model's knowledge base using Retrieval-Augmented Generation (RAG). The LLM is instructed to rely exclusively on authenticated data retrieved from your APIs. We also audit conversational flows regularly to ensure the assistant does not make unverified promises."
+        },
+        {
+          "question": "Is our conversational data secure and private?",
+          "answer": "Yes. We design our integrations with strict data security measures, ensuring all audio transmissions are fully encrypted. Depending on your regulatory requirements, we can implement anonymization layers that strip personal data before processing. We ensure the solution complies with HIPAA and GDPR standard guidelines."
+        },
+        {
+          "question": "How long does it take to build a custom voice assistant?",
+          "answer": "A standard voice assistant integrating with a few simple APIs takes 6 to 10 weeks to develop. More complex integrations—such as full call-center telephone deployment or custom offline edge models—can take 3 to 5 months. We provide detailed milestones during the initial discovery phase."
+        },
+        {
+          "question": "Does the voice assistant support languages other than English?",
+          "answer": "Yes, our voice assistants support over 50 languages, including Turkish, German, Arabic, and Urdu. We customize the speech recognition and text-to-speech pipelines for each target language. This ensures correct pronunciation and native conversational flows that resonate with your global customer base."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "openai",
+          "name": "OpenAI Realtime API"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "nodedotjs",
+          "name": "Node.js"
+        },
+        {
+          "icon": "twilio",
+          "name": "Twilio"
+        },
+        {
+          "icon": "webrtc",
+          "name": "WebRTC"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Cloud Speech-to-Text"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "Amazon Web Services"
+        },
+        {
+          "icon": "react",
+          "name": "React Native (Voice Apps)"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Sesli Asistan Geliştirme",
+    "shortDescription": "Doğal konuşma dilini anlayan, bağlamı koruyan ve kurumsal API'leriniz ile veritabanlarınız genelinde iş eylemlerini yürüten akıllı sesli ajanlar ve özel konuşma asistanları geliştirin.",
+    "fullDescription": "Sesli asistan geliştirme, müşterileriniz ve çalışanlarınız için eller serbest, doğal etkileşimler sağlar. Otomatik Konuşma Tanıma (ASR), Doğal Dil Anlama (NLU) ve Metinden Konuşmaya (TTS) boru hatlarını birleştiren üretime hazır ses sistemleri kuruyoruz. OpenAI'ın Realtime API'si, Google Cloud Text-to-Speech ve özel LLM'ler gibi platformları kullanan asistanlarımız yalnızca komut dosyalarını takip etmez; amacı anlar, çok turlu bağlamı korur ve soruları yanıtlamak için dahili API'lerden veri çeker. Düşük gecikmeli ses akışı için optimizasyon yapıyor, gürültü filtreleme modelleri uyguluyor ve halüsinasyonları önlemek için güvenlik bariyerleri ekliyoruz. İster bir müşteri hizmetleri telefon ajanı, ister ses özellikli bir mobil uygulama arayüzü veya akıllı cihaz entegrasyonu olsun, insan benzeri sesli çözümler sunuyoruz.",
+    "features": [
+      "Gerçek Zamanlı Otomatik Konuşma Tanıma (ASR)",
+      "Doğal Dil Anlama (NLU) ve Niyet Çözümleme",
+      "Yüksek Kaliteli Metinden Konuşmaya (TTS) Sentezi",
+      "Düşük Gecikmeli Ses Akışı (WebSockets, WebRTC)",
+      "Bağlam Duyarlı Çok Turlu Konuşma Mantığı",
+      "Eylem Yürütme için API ve Veritabanı Entegrasyonu",
+      "Gürültü Filtreleme ve Ses Etkinliği Algılama (VAD)",
+      "Çoklu Dil ve Aksan Uyumluluğu"
+    ],
+    "benefits": [
+      "Ses kanalları üzerinden 7/24 anında müşteri desteği sağlayın",
+      "Sanal sesli ajanlarla telefon kuyruğu bekleme sürelerini azaltın",
+      "Eller serbest veri girişi ve operasyonel raporlama yapın",
+      "Rutin müşteri sorularında çağrı merkezi personel maliyetlerini düşürün",
+      "Veritabanı entegrasyonlarıyla kişiselleştirilmiş deneyimler sunun",
+      "Fiziksel veya görsel engelli kullanıcılar için erişilebilirliği artırın"
+    ],
+    "metaTitle": "Sesli Asistan Geliştirme ve Konuşan Yapay Zeka | PakSoft",
+    "metaDescription": "Akıllı ve düşük gecikmeli sesli asistanlar kurun. Telefon ajanları ve akıllı uygulamalar için ASR, TTS ve LLM'leri entegre ediyoruz. İletişime geçin.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Gereksinimler ve Ses Karakteri",
+          "description": "Asistanın kapsamını, kelime dağarcığını, entegrasyon noktalarını ve ses tonunu tanımlayarak başlıyoruz. Hedef ses karakterini belirliyor ve en uygun konuşma sentezi seslerini seçiyoruz."
+        },
+        {
+          "step": 2,
+          "title": "ASR ve TTS Entegrasyonu",
+          "description": "Whisper, OpenAI veya Google Cloud gibi teknolojileri kullanarak konuşmayı metne ve metni konuşmaya dönüştürme sistemlerini yapılandırıyoruz. Ses akışı arayüzleriyle gecikmeyi en aza indiriyoruz."
+        },
+        {
+          "step": 3,
+          "title": "NLU ve Konuşma Mantığı",
+          "description": "Konuşma akışlarını tasarlıyor ve niyet analizi için bunları büyük dil modellerine bağlıyoruz. Sistemi, kesintileri yönetecek ve konuşma turları arasında hafızayı koruyacak şekilde programlıyoruz."
+        },
+        {
+          "step": 4,
+          "title": "API ve Eylem Bağlama",
+          "description": "Sesli asistanı dahili veritabanlarınıza, CRM ve API'lerinize bağlıyoruz. Asistanı, sesli komutlara dayanarak veritabanı aramaları yapması ve işlemleri tamamlaması için eğitiyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Test ve Gecikme Ayarı",
+          "description": "Sesli asistanı farklı arka plan gürültü seviyelerine sahip gerçek dünya ortamlarında test ediyoruz. Toplam yanıt gecikmesini bir saniyenin altına indirmek için ses algılama hassasiyetini ayarlıyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Dağıtım ve İzleme",
+          "description": "Sesli çözümü ölçeklenebilir bir web hizmeti veya telefon geçidi olarak kuruyoruz. Sürekli iyileştirme için konuşma günlüklerini ve konuşma tanıma hata oranlarını düzenli olarak izliyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Hangi konuşma tanıma ve sentezleme motorlarını kullanıyorsunuz?",
+          "answer": "Dil ihtiyaçlarınıza, gecikme gereksinimlerinize ve bütçenize göre ses motorlarını seçiyoruz. Genel uygulamalar için Google Cloud Speech-to-Text veya Azure Cognitive Services gibi lider bulut API'lerini entegre ediyoruz. Gelişmiş konuşma sistemleri için OpenAI'ın Realtime API'sini entegre ediyor veya Whisper gibi açık kaynaklı modeller kuruyoruz."
+        },
+        {
+          "question": "Sesli konuşmalarda düşük gecikmeyi nasıl sağlıyorsunuz?",
+          "answer": "Doğal sesli görüşmeler için düşük gecikme süresi kritik önem taşır ve biz bir saniyenin altında yanıt süresi hedefliyoruz. Bunu WebSockets veya WebRTC üzerinden ham ses parçalarını çift yönlü olarak aktararak başarıyoruz. Ayrıca ses gecikmelerini önlemek için hızlı LLM mimarileri kullanıyor ve iç API çağrılarımızı optimize ediyoruz."
+        },
+        {
+          "question": "Sesli asistan gürültülü ortamları veya farklı aksanları yönetebilir mi?",
+          "answer": "Evet, konuşmacının sesini arka plan gürültüsünden ayırmak için gelişmiş Ses Etkinliği Algılama (VAD) ve gürültü filtreleme algoritmaları uyguluyoruz. Konuşma tanıma parametrelerini bölgesel aksanları ve şiveleri destekleyecek şekilde yapılandırıyoruz. Bu sayede asistan, gerçek dünya senaryolarında yüksek anlama oranlarını korur."
+        },
+        {
+          "question": "Sesli asistanı telefon sistemleriyle entegre edebilir misiniz?",
+          "answer": "Kesinlikle. SIP ve Twilio kullanarak konuşmaya dayalı sesli ajanları geleneksel telefon hatlarına veya VoIP ağlarına bağlama konusunda uzmanız. Bu entegrasyon, müşteri aramalarını yanıtlayan, standart soruları çözen ve karmaşık konuları insan temsilcilere aktaran sanal ajanlar devreye almanızı sağlar."
+        },
+        {
+          "question": "Asistanın yanlış bilgi vermesini (halüsinasyon) nasıl önliyorsunuz?",
+          "answer": "RAG (Veri Geri Kazanımıyla Artırılmış Nesil) kullanarak sıkı güvenlik sınırları uyguluyor ve modelin bilgi tabanını sınırlandırıyoruz. Modelin yalnızca API'lerinizden alınan doğrulanmış verilere güvenmesini sağlıyoruz. Ayrıca asistanın doğrulanmamış sözler vermesini önlemek için konuşma akışlarını düzenli olarak denetliyoruz."
+        },
+        {
+          "question": "Konuşma verilerimiz güvenli ve gizli tutuluyor mu?",
+          "answer": "Evet. Entegrasyonlarimizi sıkı veri güvenliği önlemleriyle tasarlıyor, tüm ses iletimlerinin tamamen şifrelenmesini sağlıyoruz. Yasal gereksinimlerinize bağlı olarak, verileri işlemeden önce kişisel bilgileri arındıran anonimleştirme katmanları uygulayabiliriz. Çözümün HIPAA ve GDPR standart kurallarına uymasını garanti ediyoruz."
+        },
+        {
+          "question": "Özel bir sesli asistan geliştirmek ne kadar sürer?",
+          "answer": "Birkaç basit API ile entegre olan standart bir sesli asistanın geliştirilmesi 6 ila 10 hafta sürer. Tam çağrı merkezi telefon entegrasyonu veya özel çevrimdışı uç modeller gibi daha karmaşık entegrasyonlar 3 ila 5 ay sürebilir. İlk keşif aşamasında ayrıntılı proje aşamalarını sunuyoruz."
+        },
+        {
+          "question": "Sesli asistan İngilizce dışındaki dilleri de destekliyor mu?",
+          "answer": "Evet, sesli asistanlarımız Türkçe, Almanca, Arapça ve Urduca dahil olmak üzere 50'den fazla dili desteklemektedir. Konuşma tanıma ve metinden konuşmaya boru hatlarını her hedef dil için özel olarak özelleştiriyoruz. Bu, doğru telaffuz ve küresel müşteri tabanınıza hitap eden doğal konuşma akışları sağlar."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "openai",
+          "name": "OpenAI Realtime API"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "nodedotjs",
+          "name": "Node.js"
+        },
+        {
+          "icon": "twilio",
+          "name": "Twilio"
+        },
+        {
+          "icon": "webrtc",
+          "name": "WebRTC"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Cloud Speech-to-Text"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "Amazon Web Services"
+        },
+        {
+          "icon": "react",
+          "name": "React Native (Voice Apps)"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Sprachassistenten-Entwicklung",
+    "shortDescription": "Erstellen Sie intelligente Sprachagenten und maßgeschneiderte Konversationsassistenten, die gesprochene Sprache verstehen, den Kontext wahren und Aktionen über Ihre APIs ausführen.",
+    "fullDescription": "Die Sprachassistenten-Entwicklung ermöglicht eine freihändige, natürliche Interaktion für Ihre Kunden und Mitarbeiter. Wir bauen produktionsreife Sprachsysteme, die automatische Spracherkennung (ASR), natürliches Sprachverstehen (NLU) und Text-to-Speech (TTS) kombinieren. Unter Verwendung von Plattformen wie der OpenAI Realtime API, Google Cloud Text-to-Speech und eigenen LLMs verstehen unsere Assistenten Absichten, wahren den Kontext über mehrere Runden und rufen Daten aus internen APIs ab. Wir optimieren auf extrem niedrige Audio-Streaming-Latenzzeiten, integrieren Rauschfilter und setzen Sicherheitsrichtlinien ein, um Halluzinationen zu verhindern. Ob Sie einen telefonischen Kundenservice-Agenten, eine sprachgesteuerte App-Schnittstelle oder eine Smart-Device-Integration benötigen — wir entwickeln Sprachlösungen, die sich wie echte menschliche Gespräche anfühlen.",
+    "features": [
+      "Echtzeit-Spracherkennung (ASR)",
+      "Sprachverstehen (NLU) & Intent-Parsing",
+      "High-Fidelity Text-to-Speech (TTS) Synthese",
+      "Streaming mit niedriger Latenz (WebSockets, WebRTC)",
+      "Kontextsensitive Konversationslogik",
+      "API- & Datenbankintegration zur Aktionsausführung",
+      "Rauschfilter & Voice Activity Detection (VAD)",
+      "Multi-Sprach- & Akzentanpassung"
+    ],
+    "benefits": [
+      "Bieten Sie rund um die Uhr sofortigen Support über Sprachkanäle",
+      "Verkürzen Sie Wartezeiten am Telefon durch virtuelle Sprachagenten",
+      "Ermöglichen Sie freihändige Dateneingabe und Berichterstattung",
+      "Senken Sie Personalkosten bei routinemäßigen Kundenanfragen",
+      "Liefern Sie personalisierte Erlebnisse durch Datenbankintegrationen",
+      "Verbessern Sie die Barrierefreiheit für beeinträchtigte Benutzer"
+    ],
+    "metaTitle": "Sprachassistenten-Entwicklung & Voice AI | PakSoft",
+    "metaDescription": "Bauen Sie intelligente Sprachassistenten mit niedriger Latenz. Wir integrieren ASR, TTS und LLMs für Telefonie und Smart Apps. Kontaktieren Sie uns.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Anforderungen & Persona",
+          "description": "Wir definieren den Umfang, das Vokabular, die Integrationspunkte und die Stimme des Assistenten. Gemeinsam legen wir die Persona fest und wählen die Stimmen aus."
+        },
+        {
+          "step": 2,
+          "title": "ASR- & TTS-Integration",
+          "description": "Wir konfigurieren Sprach-zu-Text- und Text-zu-Sprach-Pipelines mit Whisper, OpenAI oder Google Cloud. Wir optimieren Latenzen durch die Einrichtung von Audio-Streaming-Schnittstellen."
+        },
+        {
+          "step": 3,
+          "title": "NLU & Konversationslogik",
+          "description": "Wir entwerfen Gesprächsabläufe und verbinden sie mit LLMs zur Intent-Erkennung. Das System wird so programmiert, dass es Unterbrechungen handhaben und den Kontext behalten kann."
+        },
+        {
+          "step": 4,
+          "title": "API- & Aktionsbindung",
+          "description": "Wir verbinden den Sprachassistenten mit Ihren Datenbanken, CRMs und APIs. Der Agent wird darauf trainiert, Datenbanksuchen durchzuführen und Transaktionen per Sprachbefehl abzuschließen."
+        },
+        {
+          "step": 5,
+          "title": "Testing & Latenz-Tuning",
+          "description": "Wir testen den Sprachassistenten in realen Umgebungen mit Hintergrundgeräuschen. Wir optimieren die Sprachaktivitätserkennung und das Caching, um die Antwortzeit unter einer Sekunde zu halten."
+        },
+        {
+          "step": 6,
+          "title": "Bereitstellung & Monitoring",
+          "description": "Wir stellen die Sprachlösung als skalierbaren Webdienst oder Telefonie-Gateway bereit. Gesprächsprotokolle und Fehlerquoten werden zur kontinuierlichen Verbesserung fortlaufend überwacht."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Welche Spracherkennungs- und Synthese-Engines verwenden Sie?",
+          "answer": "Wir wählen die Sprach-Engines basierend auf Ihren Sprachanforderungen, Latenzvorgaben und Ihrem Budget aus. Für allgemeine Anwendungen integrieren wir führende Cloud-APIs wie Google Cloud Speech-to-Text oder Azure Cognitive Services. Für hochentwickelte Konversationssysteme nutzen wir die OpenAI Realtime API oder offene Modelle wie Whisper."
+        },
+        {
+          "question": "Wie erreichen Sie eine niedrige Latenz in Sprachgesprächen?",
+          "answer": "Eine niedrige Latenz ist entscheidend für natürliche Gespräche, und wir streben Antwortzeiten unter einer Sekunde vor Ort an. Wir erreichen dies durch bidirektionales Audio-Streaming über WebSockets oder WebRTC. Zudem verwenden wir schnelle Streaming-LLM-Architekturen und optimieren interne API-Aufrufe, um Audioverzögerungen zu verhindern."
+        },
+        {
+          "question": "Kann der Sprachassistent mit lauten Umgebungen oder Akzenten umgehen?",
+          "answer": "Ja, wir implementieren fortschrittliche Algorithmen zur Sprachaktivitätsdetektion und Rauschunterdrückung, um die Stimme des Sprechers von Hintergrundgeräuschen zu isolieren. Wir konfigurieren die Erkennungsparameter so, dass regionale Akzente und Dialekte unterstützt werden. Dies sichert eine hohe Verständigungsrate des Assistenten im produktiven Alltag."
+        },
+        {
+          "question": "Können Sie den Sprachassistenten mit Telefonanlagen verbinden?",
+          "answer": "Absolut. Wir sind darauf spezialisiert, sprachbasierte Agenten über SIP und Twilio an klassische Telefonleitungen oder VoIP-Netzwerke anzubinden. Dies ermöglicht Ihnen den Einsatz virtueller Agenten, die Kundenanrufe annehmen, Standardanfragen lösen und komplexe Fälle an menschliche Mitarbeiter übergeben."
+        },
+        {
+          "question": "Wie verhindern Sie, dass der Assistent halluziniert oder falsche Daten teilt?",
+          "answer": "Wir setzen strenge Sicherheitsrichtlinien durch und schränken die Wissensbasis des Modells mittels RAG (Retrieval-Augmented Generation) einschränken. Das LLM ist angewiesen, sich ausschließlich auf verifizierte API-Daten zu stützen. Zudem überprüfen wir die Konversationsabläufe regelmäßig, um nicht autorisierte Zusagen zu unterbinden."
+        },
+        {
+          "question": "Sind unsere Gesprächsdaten sicher und geschützt?",
+          "answer": "Ja. Wir konzipieren unsere Integrationen mit strengen Sicherheitsmaßnahmen, sodass alle Audioübertragungen vollständig verschlüsselt sind. Je nach gesetzlichen Anforderungen können wir Anonymisierungsebenen einziehen, die persönliche Daten vor der Verarbeitung entfernen. Wir garantieren die Einhaltung der HIPAA- und DSGVO-Richtlinien."
+        },
+        {
+          "question": "Wie lange dauert es, einen maßgeschneiderten Sprachassistenten zu bauen?",
+          "answer": "Ein Standard-Sprachassistent mit Anbindung an einfache APIs erfordert eine Entwicklungszeit von 6 bis 10 Wochen. Komplexere Integrationen wie eine vollständige Telefonie-Einbindung im Callcenter oder benutzerdefinierte Offline-Edge-Modelle dauern 3 bis 5 Monate. Wir erstellen detaillierte Meilensteine in der ersten Discovery-Phase."
+        },
+        {
+          "question": "Unterstützt der Sprachassistent auch andere Sprachen als Englisch?",
+          "answer": "Ja, unsere Sprachassistenten unterstützen über 50 Sprachen, darunter Deutsch, Türkisch, Arabisch und Urdu. Wir passen die Spracherkennungs- und Synthese-Pipelines für jede Zielsprache individuell an. Dies sorgt für eine korrekte Aussprache und natürliche Gesprächsabläufe, die Ihre globale Kundenbasis ansprechen."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "openai",
+          "name": "OpenAI Realtime API"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "nodedotjs",
+          "name": "Node.js"
+        },
+        {
+          "icon": "twilio",
+          "name": "Twilio"
+        },
+        {
+          "icon": "webrtc",
+          "name": "WebRTC"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Cloud Speech-to-Text"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "Amazon Web Services"
+        },
+        {
+          "icon": "react",
+          "name": "React Native (Voice Apps)"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "وائس اسسٹنٹ ڈیولپمنٹ",
+    "shortDescription": "ایسے ذہین وائس ایجنٹس اور کسٹم کنورسیشنل اسسٹنٹس تیار کریں جو قدرتی بولی جانے والی زبان کو سمجھیں، سیاق و سباق کو برقرار رکھیں، اور آپ کی کارپوریٹ APIs اور ڈیٹا بیسز پر کاروباری کام انجام دیں۔",
+    "fullDescription": "وائس اسسٹنٹ ڈیولپمنٹ آپ کے صارفین اور ملازمین کے لیے ہینڈز فری اور قدرتی بات چیت کو ممکن بناتی ہے۔ ہم خودکار اسپیچ ریکگنیشن (ASR)، نیچرل لینگویج انڈرسٹینڈنگ (NLU)، اور ٹیکسٹ ٹو اسپیچ (TTS) پائپ لائنز کو مربوط کرنے والے پروڈکشن ریڈی سسٹمز بناتے ہیں۔ OpenAI کی Realtime API، Google Cloud Text-to-Speech، اور کسٹم LLMs جیسے پلیٹ فارمز کا استعمال کرتے ہوئے، ہمارے اسسٹنٹس نیت کو سمجھتے ہیں، گفتگو کے دوران پچھلی باتیں یاد رکھتے ہیں، اور جواب دینے کے لیے اندرونی APIs سے ڈیٹا حاصل کرتے ہیں۔ ہم آڈیو اسٹریمنگ کی تاخیر کو کم سے کم کرنے کے لیے کام کرتے ہیں، شور کو فلٹر کرنے والے ماڈلز لگاتے ہیں، اور غلط معلومات کو روکنے کے لیے گارڈ ریلز شامل کرتے ہیں۔ چاہے آپ کو کسٹمر سروس فون ایجنٹ کی ضرورت ہو یا موبائل ایپ میں وائس فیچر کی، ہم بہترین حل فراہم کرتے ہیں۔",
+    "features": [
+      "ریئل ٹائم خودکار اسپیچ ریکگنیشن (ASR)",
+      "نیچرل لینگویج انڈرسٹینڈنگ (NLU) اور نیت کا تجزیہ",
+      "اعلیٰ معیار کی ٹیکسٹ ٹو اسپیچ (TTS) سنتھیسز",
+      "لو-لیٹنسی آڈیو اسٹریمنگ (WebSockets, WebRTC)",
+      "سیاق و سباق کو یاد رکھنے والی کنورسیشنل لاجک",
+      "کارروائی کے لیے API اور ڈیٹا بیس انٹیگریشن",
+      "شور کی فلٹرنگ اور وائس ایکٹیویٹی ڈیٹیکشن (VAD)",
+      "کثیر لسانی اور مختلف لہجوں کی مطابقت"
+    ],
+    "benefits": [
+      "وائس چینلز کے ذریعے 24/7 فوری کسٹمر سپورٹ فراہم کریں",
+      "ورچوئل وائس ایجنٹس کے ذریعے فون ہولڈ کے انتظار کا وقت کم کریں",
+      "ہینڈز فری ڈیٹا انٹری اور آپریشنل رپورٹنگ کو ممکن بنائیں",
+      "عام کسٹمر سوالات پر کال سنٹر کے عملے کے اخراجات کم کریں",
+      "ڈیٹا بیس انٹیگریشنز کے ذریعے ذاتی نوعیت کے تجربات فراہم کریں",
+      "جسمانی یا بینائی کی کمزوری والے صارفین کے لیے رسائی کو بہتر بنائیں"
+    ],
+    "metaTitle": "وائس اسسٹنٹ ڈیولپمنٹ اور کنورسیشنل AI | PakSoft",
+    "metaDescription": "ذہین اور کم تاخیر والے وائس اسسٹنٹس بنائیں۔ ہم فون ایجنٹس اور اسمارٹ ایپس کے لیے ASR، TTS اور LLMs کو مربوط کرتے ہیں۔ آج ہی ہم سے رابطہ کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "ضروریات اور وائس پرسنل",
+          "description": "ہم اسسٹنٹ کے دائرہ کار، الفاظ، انٹیگریشن پوائنٹس، اور آواز کے لہجے کی وضاحت سے شروع کرتے ہیں۔ ہم ہدف پرسنل تیار کرتے ہیں اور بہترین آوازیں منتخب کرتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "ASR اور TTS انٹیگریشن",
+          "description": "ہم Whisper، OpenAI یا Google Cloud جیسے ٹولز کا استعمال کرتے ہوئے اسپیچ ٹو ٹیکسٹ اور ٹیکسٹ ٹو اسپیچ سسٹمز کو ترتیب دیتے ہیں۔ ہم تاخیر کو کم کرتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "NLU اور کنورسیشنل لاجک",
+          "description": "ہم گفتگو کے فلو کو ڈیزائن کرتے ہیں اور نیت کو سمجھنے کے لیے انہیں بڑے لسانی ماڈلز سے جوڑتے ہیں۔ سسٹم گفتگو کے دوران خلل کو سنبھالنا سیکھتا ہے۔"
+        },
+        {
+          "step": 4,
+          "title": "API اور کارروائی کا ربط",
+          "description": "ہم وائس اسسٹنٹ کو آپ کے اندرونی ڈیٹا بیسز، CRMs اور APIs سے جوڑتے ہیں۔ ایجنٹ کو صوتی احکامات کی بنیاد پر ڈیٹا بیس تلاش کرنے کی ٹریننگ دی جاتی ہے۔"
+        },
+        {
+          "step": 5,
+          "title": "ٹیسٹنگ اور لیٹنسی ٹیوننگ",
+          "description": "ہم شور والے ماحول میں وائس اسسٹنٹ کی جانچ کرتے ہیں۔ ہم صوتی سرگرمی کی شناخت اور کیشنگ کو ایڈجسٹ کرتے ہیں تاکہ گفتگو میں تاخیر ایک سیکنڈ سے کم ہو۔"
+        },
+        {
+          "step": 6,
+          "title": "ڈیپلومنٹ اور مانیٹرنگ",
+          "description": "ہم وائس اسسٹنٹ کو اسکیل ایبل کلاؤڈ سروس یا ٹیلی فون گیٹ وے کے طور پر ڈیپلائے کرتے ہیں۔ غلطیوں کی شرح اور صوتی لاگز کی مسلسل نگرانی کی جاتی ہے۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "آپ صوتی شناخت اور ترکیب کے لیے کون سے انجن استعمال کرتے ہیں؟",
+          "answer": "ہم آپ کی زبان کی ضروریات، تاخیر کی حد، اور بجٹ کی بنیاد پر اسپیچ انجن منتخب کرتے ہیں۔ عام استعمال کے لیے، ہم Google Cloud Speech-to-Text یا Azure Cognitive Services جیسے کلاؤڈ APIs کو مربوط کرتے ہیں۔ انتہائی جدید سسٹمز کے لیے، ہم OpenAI کی Realtime API یا Whisper جیسے اوپن سورس ماڈلز استعمال کرتے ہیں۔"
+        },
+        {
+          "question": "آپ صوتی گفتگو کے دوران تاخیر کو کیسے کم کرتے ہیں؟",
+          "answer": "قدرتی گفتگو کے لیے کم تاخیر بہت ضروری ہے، اور ہم ایک سیکنڈ سے کم کا رسپانس ٹائم حاصل کرتے ہیں۔ ہم WebSockets یا WebRTC کے ذریعے خام آڈیو چنکس کو دونوں طرف منتقل کر کے یہ حاصل کرتے ہیں۔ ہم تیز رفتار اسٹریمنگ LLM سسٹمز اور موزوں APIs کا استعمال بھی کرتے ہیں۔"
+        },
+        {
+          "question": "کیا صوتی اسسٹنٹ شور والے ماحول یا مختلف لہجوں کو سنبھال سکتا ہے؟",
+          "answer": "جی ہاں، ہم پس منظر کے شور سے بولنے والے کی آواز کو الگ کرنے کے لیے VAD اور شور کو فلٹر کرنے والے الگورتھمز لاگو کرتے ہیں۔ ہم گفتگو کی شناخت کے پیرامیٹرز کو علاقائی لہجوں کی مدد کے لیے ترتیب دیتے ہیں۔ اس سے یقینی ہوتا ہے کہ اسسٹنٹ حقیقی دنیا کے حالات میں بہتر کام کر سکے۔"
+        },
+        {
+          "question": "کیا آپ صوتی اسسٹنٹ کو ٹیلی فون سسٹم کے ساتھ جوڑ سکتے ہیں؟",
+          "answer": "بالكل، ہم SIP اور Twilio کا استعمال کرتے ہوئے صوتی ایجنٹس کو روایتی فون لائنوں یا VoIP نیٹ ورکس سے جوڑنے میں مہارت رکھتے ہیں۔ یہ آپ کو ایسے ورچوئل ایجنٹس ڈیپلائے کرنے کی اجازت دیتا ہے جو کالز کا جواب دیتے ہیں، معلومات فراہم کرتے ہیں، اور پیچیدہ معاملات انسانی نمائندوں کو منتقل کرتے ہیں۔"
+        },
+        {
+          "question": "آپ اسسٹنٹ کو غلط معلومات دینے سے کیسے روکتے ہیں؟",
+          "answer": "ہم RAG کا استعمال کرتے ہوئے ماڈل کے علمی اڈے کو محدود کرتے ہیں اور سخت اصول لاگو کرتے ہیں۔ LLM کو صرف آپ کے APIs سے حاصل کردہ تصدیق شدہ ڈیٹا پر انحصار کرنے کی ہدایت کی جاتی ہے۔ ہم صوتی گفتگو کے بہاؤ کی باقاعدگی سے نگرانی کرتے ہیں تاکہ کوئی غیر تصدیق شدہ بات نہ ہو۔"
+        },
+        {
+          "question": "کیا ہمارا صوتی ڈیٹا محفوظ اور نجی رہتا ہے؟",
+          "answer": "جی ہاں، ہم اپنی تمام انٹیگریشنز کو سخت حفاظتی اقدامات کے ساتھ ڈیزائن کرتے ہیں تاکہ آڈیو ڈیٹا مکمل طور پر انکرپٹڈ ہو۔ ہم پروسیسنگ سے پہلے ذاتی معلومات کو ہٹانے کے لیے گمنامی کی تہیں لاگو کر سکتے ہیں۔ ہم HIPAA اور GDPR کے رہنما اصولوں کے مطابق ڈیٹا کی حفاظت یقینی بناتے ہیں۔"
+        },
+        {
+          "question": "ایک حسب ضرورت وائس اسسٹنٹ بنانے میں کتنا وقت لگتا ہے؟",
+          "answer": "کچھ آسان APIs کے ساتھ مربوط ہونے والے ایک معیاری صوتی اسسٹنٹ کی تیاری میں 6 سے 10 ہفتے لگتے ہیں۔ زیادہ پیچیدہ کاموں جیسے کال سینٹر ٹیلی فون انٹیگریشن یا کسٹم آف لائن ایج ماڈلز کی تیاری میں 3 سے 5 ماہ لگ سکتے ہیں۔ ہم پروجیکٹ کے آغاز میں تفصیلی شیڈول فراہم کرتے ہیں۔"
+        },
+        {
+          "question": "کیا صوتی اسسٹنٹ انگریزی کے علاوہ دوسری زبانوں کو سپورٹ کرتا ہے؟",
+          "answer": "جی ہاں، ہمارے صوتی اسسٹنٹس ترکی، جرمن، عربی اور اردو سمیت 50 سے زائد زبانوں کو سپورٹ کرتے ہیں۔ ہم ہر ہدف زبان کے لیے صوتی شناخت اور ترکیب کی پائپ لائنز کو خاص طور پر اپنی مرضی کے مطابق بناتے ہیں۔ یہ درست تلفظ اور آپ کے صارفین کے لیے قدرتی گفتگو کو یقینی بناتا ہے۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "openai",
+          "name": "OpenAI Realtime API"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "nodedotjs",
+          "name": "Node.js"
+        },
+        {
+          "icon": "twilio",
+          "name": "Twilio"
+        },
+        {
+          "icon": "webrtc",
+          "name": "WebRTC"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Cloud Speech-to-Text"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "Amazon Web Services"
+        },
+        {
+          "icon": "react",
+          "name": "React Native (Voice Apps)"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تطوير المساعدات الصوتية",
+    "shortDescription": "ابنِ وكلاء صوت أذكياء ومساعدين تفاعليين مخصصين يفهمون اللغة المنطوقة الطبيعية، ويحافظون على سياق الحوار، وينفذون إجراءات العمل عبر أنظمة واجهات برمجة التطبيقات وقواعد البيانات الخاصة بمؤسستك.",
+    "fullDescription": "يمكّن تطوير المساعدات الصوتية من التفاعل الطبيعي دون استخدام اليدين لعملائك وموظفيك. نحن نبني أنظمة صوتية جاهزة للإنتاج تجمع بين التعرف التلقائي على الكلام (ASR) وفهم اللغة الطبيعية (NLU) وتحويل النص إلى كلام (TTS). باستخدام منصات مثل OpenAI Realtime API و Google Cloud Text-to-Speech ونماذج LLMs المخصصة، لا يقتصر عمل مساعدينا على اتباع سيناريوهات محددة؛ بل يفهمون النية، ويحافظون على سياق المحادثات متعددة الجولات، ويستردون البيانات من واجهات برمجة التطبيقات الداخلية للإجابة على الأسئلة. نقوم بتحسين الأنظمة لتقليل زمن استجابة تدفق الصوت، وتطبيق نماذج تصفية الضوضاء، ووضع حواجز لمنع الهلوسة. سواء كنت بحاجة إلى وكيل هاتف لخدمة العملاء، أو واجهة تطبيق هاتف، فإننا نبني حلولاً صوتية تحاكي المحادثات البشرية.",
+    "features": [
+      "التعرف التلقائي على الكلام في الوقت الفعلي (ASR)",
+      "فهم اللغة الطبيعية (NLU) وتحليل النوايا",
+      "توليف تحويل النص إلى كلام عالي الجودة (TTS)",
+      "تدفق الصوت منخفض زمن الاستجابة (WebSockets, WebRTC)",
+      "منطق محادثة متعدد الجولات متوافق مع السياق",
+      "تكامل واجهات برمجة التطبيقات وقواعد البيانات لتنفيذ الإجراءات",
+      "تصفية الضوضاء والكشف عن النشاط الصوتي (VAD)",
+      "التكيف مع اللغات المختلفة واللهجات الإقليمية"
+    ],
+    "benefits": [
+      "تقديم دعم فوري للعملاء على مدار الساعة عبر قنوات الصوت",
+      "تقليل أوقات الانتظار على الهاتف باستخدام وكلاء الصوت الافتراضيين",
+      "السماح بإدخال البيانات والتقارير التشغيلية دون استخدام اليدين",
+      "خفض تكاليف التوظيف في مراكز الاتصال للاستفسارات الروتينية",
+      "تقديم تجارب عملاء مخصصة باستخدام تكامل قواعد البيانات",
+      "تحسين إمكانية الوصول للمستخدمين ذوي الإعاقات الجسدية أو البصرية"
+    ],
+    "metaTitle": "تطوير المساعدات الصوتية والذكاء الاصطناعي التفاعلي | PakSoft",
+    "metaDescription": "ابنِ مساعدين صوتيين أذكياء ومنخفضي زمن الاستجابة. ندمج تقنيات ASR و TTS و LLMs لوكلاء الهاتف والتطبيقات الذكية. اتصل بنا للحصول على استشارة.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "المتطلبات وشخصية الصوت",
+          "description": "نبدأ بتحديد نطاق المساعد ومفرداته ونقاط تكامله ونبرة صوته. نحدد الشخصية الصوتية المستهدفة ونختار أفضل الأصوات المناسبة لتوليف الكلام الطبيعي."
+        },
+        {
+          "step": 2,
+          "title": "تكامل تقنيات ASR و TTS",
+          "description": "نقوم بتهيئة أنظمة تحويل الكلام إلى نص والنص إلى كلام باستخدام Whisper أو OpenAI أو Google Cloud. نحسن زمن الاستجابة بإعداد واجهات تدفق الصوت."
+        },
+        {
+          "step": 3,
+          "title": "منطق فهم اللغة الطبيعية NLU",
+          "description": "نصمم تدفقات المحادثة ونربطها بنماذج اللغة الكبيرة لتحليل النية بدقة. تمت برمجة النظام للتعامل مع المقاطعات والحفاظ على الذاكرة عبر جولات الحوار."
+        },
+        {
+          "step": 4,
+          "title": "ربط الإجراءات والـ APIs",
+          "description": "نربط المساعد الصوتي بقواعد البيانات الداخلية وأنظمة CRM وواجهات برمجة التطبيقات. يتم تدريب الوكيل على تنفيذ عمليات البحث وإتمام المعاملات بناءً على الأوامر."
+        },
+        {
+          "step": 5,
+          "title": "الاختبار وضبط زمن الاستجابة",
+          "description": "نختبر المساعد الصوتي في بيئات حقيقية ذات مستويات ضوضاء خلفية مختلفة. نضبط الكشف عن النشاط الصوتي والتخزين المؤقت لتقليل زمن الاستجابة لأقل من ثانية."
+        },
+        {
+          "step": 6,
+          "title": "النشر والمراقبة",
+          "description": "ننشر الحل الصوتي كخدمة ويب قابلة للتوسع أو كبوابة هاتفية. تتم مراقبة سجلات المحادثات ومعدلات خطأ التعرف على الكلام باستمرار لضمان التحسين المستمر."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما هي محركات التعرف على الكلام وتوليفه التي تستخدمونها؟",
+          "answer": "نختار محركات الصوت بناءً على احتياجات لغتك، ومتطلبات زمن الاستجابة، والميزانية المحددة. للتطبيقات العامة، ندمج واجهات برمجة التطبيقات السحابية الرائدة مثل Google Cloud Speech-to-Text أو Azure Cognitive Services. للأنظمة التفاعلية المتقدمة، نستفيد من OpenAI Realtime API أو ننشر نماذج مفتوحة المصدر مثل Whisper."
+        },
+        {
+          "question": "كيف تحققون زمناً منخفضاً للاستجابة في المحادثات الصوتية؟",
+          "answer": "يعد زمن الاستجابة المنخفض أمراً بالغ الأهمية للمحادثات الطبيعية، ونستهدف وقتاً يقل عن ثانية واحدة. نحقق ذلك من خلال بث الصوت الخام ثنائي الاتجاه عبر WebSockets أو WebRTC. نستخدم أيضاً نماذج LLM سريعة البث ونحسن استدعاءات واجهات برمجة التطبيقات لمنع تأخير الصوت."
+        },
+        {
+          "question": "هل يمكن للمساعد الصوتي التعامل مع البيئات الصاخبة أو اللهجات المختلفة؟",
+          "answer": "نعم، نطبق خوارزميات متقدمة للكشف عن النشاط الصوتي (VAD) وتصفية الضوضاء لعزل صوت المتحدث عن ضوضاء الخلفية. نقوم أيضاً بتهيئة معلمات التعرف على الكلام لدعم اللهجات الإقليمية المختلفة. يضمن هذا الحفاظ على فهم مرتفع للمساعد الصوتي في السيناريوهات الحقيقية."
+        },
+        {
+          "question": "هل يمكنكم دمج المساعد الصوتي مع أنظمة الهاتف؟",
+          "answer": "بالتأكيد. نحن متخصصون في ربط وكلاء الصوت التفاعليين بخطوط الهاتف التقليدية أو شبكات VoIP باستخدام بروتوكول SIP ومنصة Twilio. يتيح لك هذا نشر وكلاء افتراضيين يجيبون على مكالمات العملاء، ويحلون الاستفسارات القياسية، وينقلون الحالات المعقدة إلى موظفين بشريين."
+        },
+        {
+          "question": "ما هي الأجهزة التي تستخدمها لتوليد الصوت؟",
+          "answer": "نختار المحركات وفقاً لمتطلبات اللغات والسرعة والميزانية المحددة. للتطبيقات الأساسية، نقوم بدمج Google Cloud أو Azure. وللمحادثات المتقدمة الأسرع، نستخدم OpenAI Realtime API أو Whisper لحلول مفتوحة المصدر."
+        },
+        {
+          "question": "هل بيانات المحادثات الصوتية لدينا آمنة وخصوصية؟",
+          "answer": "نعم. نحن نصمم عمليات التكامل لدينا مع تدابير أمنية صارمة، مما يضمن تشفير جميع عمليات نقل الصوت بالكامل. اعتماداً على المتطلبات التنظيمية، يمكننا تطبيق طبقات إخفاء الهوية لإزالة البيانات الشخصية قبل المعالجة. نضمن توافق الحل مع معايير HIPAA و GDPR لحماية البيانات."
+        },
+        {
+          "question": "كم من الوقت يستغرق بناء مساعد صوتي مخصص؟",
+          "answer": "يستغرق تطوير مساعد صوتي قياسي يتكامل مع بعض واجهات برمجة التطبيقات البسيطة من 6 إلى 10 أسابيع. أما عمليات التكامل الأكثر تعقيداً — مثل النشر الهاتفي الكامل لمراكز الاتصال أو النماذج الطرفية المخصصة دون اتصال بالإنترنت — فيمكن أن تستغرق من 3 إلى 5 أشهر."
+        },
+        {
+          "question": "هل يدعم المساعد الصوتي لغات أخرى غير الإنجليزية؟",
+          "answer": "نعم، تدعم مساعداتنا الصوتية أكثر من 50 لغة، بما في ذلك العربية والتركية والألمانية والأردية. نقوم بتخصيص خطوط معالجة التعرف على الكلام وتحويل النص إلى كلام لكل لغة مستهدفة بشكل فردي. يضمن هذا نطقاً صحيحاً وتدفقات محادثة طبيعية تناسب عملائك."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "openai",
+          "name": "OpenAI Realtime API"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "nodedotjs",
+          "name": "Node.js"
+        },
+        {
+          "icon": "twilio",
+          "name": "Twilio"
+        },
+        {
+          "icon": "webrtc",
+          "name": "WebRTC"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Cloud Speech-to-Text"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "Amazon Web Services"
+        },
+        {
+          "icon": "react",
+          "name": "React Native (Voice Apps)"
+        }
+      ]
+    }
+  }
+}

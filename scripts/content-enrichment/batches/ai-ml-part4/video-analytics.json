@@ -1,0 +1,638 @@
+{
+  "slug": "video-analytics",
+  "en": {
+    "name": "Video Analytics",
+    "shortDescription": "Extract real-time operational insights, track moving objects, detect security anomalies, and automate surveillance monitoring from live camera feeds using custom deep learning computer vision algorithms.",
+    "fullDescription": "Video analytics transforms passive camera feeds into active sources of intelligence and automation. We design and build custom enterprise solutions that analyze video in real time for security, operations, retail, and manufacturing. Utilizing state-of-the-art computer vision models like YOLO, custom CNNs, and vision transformers, our systems perform object detection, tracking, crowd counting, and behavioral analysis. We optimize pipelines using NVIDIA DeepStream, TensorRT, and OpenCV to run efficiently on edge devices or in the cloud. Whether you need automated quality control on a factory line, traffic monitoring for smart cities, or customer analytics for retail stores, we deliver secure, compliant, and highly accurate video intelligence solutions.",
+    "features": [
+      "Real-Time Object Detection & Classification",
+      "Multi-Camera Object Tracking & Re-Identification",
+      "Anomaly Detection & Intrusion Alerts",
+      "Crowd Density & Queue Management",
+      "License Plate Recognition (LPR / ANPR)",
+      "Optimized Edge Computing Deployment",
+      "Privacy-Masking & GDPR/HIPAA Compliance",
+      "Custom Dashboard & Analytics Integration"
+    ],
+    "benefits": [
+      "Improve physical security with instant anomaly notifications",
+      "Enhance operational efficiency by automating quality inspections",
+      "Gain deep customer insights through foot-traffic behavior analysis",
+      "Reduce bandwidth costs using intelligent edge processing models",
+      "Ensure strict privacy compliance via automatic face blurring",
+      "Scale monitoring capabilities without increasing security staff"
+    ],
+    "metaTitle": "Video Analytics & Computer Vision Solutions | PakSoft",
+    "metaDescription": "Turn camera feeds into intelligence. We build custom video analytics systems for security, retail, and manufacturing. Contact us for a demo.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Camera Feed Integration",
+          "description": "We connect to your existing IP camera streams using secure protocols like RTSP. The incoming video signals are transcoded and prepared for real-time analysis."
+        },
+        {
+          "step": 2,
+          "title": "Model Selection & Customization",
+          "description": "We select the optimal object detection architecture such as YOLO or custom vision transformers. The models are trained on your specific target objects and environments."
+        },
+        {
+          "step": 3,
+          "title": "Pipeline Optimization",
+          "description": "We optimize execution using NVIDIA TensorRT and DeepStream SDKs. This ensures low-latency execution and high frame rates on edge hardware or cloud servers."
+        },
+        {
+          "step": 4,
+          "title": "Logic & Alert Configuration",
+          "description": "We program custom spatial triggers, virtual tripwires, and behavioral rules. Alerts are configured to ping your internal notification systems when specific events are detected."
+        },
+        {
+          "step": 5,
+          "title": "Privacy & Compliance Setup",
+          "description": "We integrate automated privacy protection rules like face and license plate blurring. This ensures your systems fully comply with local data protection regulations."
+        },
+        {
+          "step": 6,
+          "title": "Deployment & Scaling",
+          "description": "We deploy the optimized system as containerized microservices across your infrastructure. The platform is configured to scale dynamically as more camera feeds are added."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Can your video analytics systems run on our existing IP cameras?",
+          "answer": "Yes, our solutions are camera-agnostic and work with any modern IP camera that supports RTSP or ONVIF protocols. You do not need to purchase expensive new cameras to utilize our analytics software. We simply ingest the existing video streams directly into our processing pipeline."
+        },
+        {
+          "question": "Do you run the video processing on-premise or in the cloud?",
+          "answer": "We offer flexible deployment models based on your bandwidth and security requirements. We can deploy on-premise edge hardware using NVIDIA Jetson devices to process video locally. Alternatively, we can route streams to cloud infrastructure for centralized processing and easier management."
+        },
+        {
+          "question": "How do you handle privacy regulations like GDPR?",
+          "answer": "We design privacy-first systems by implementing automated redaction directly at the edge. The pipeline can automatically blur faces and license plates before the video is stored or analyzed. This allows you to collect valuable operational metrics without violating user privacy laws."
+        },
+        {
+          "question": "What is the detection accuracy of your video analytics models?",
+          "answer": "Accuracy depends on lighting, camera positioning, and object density, but our custom-trained models typically achieve 95% to 99% accuracy. We conduct extensive testing on your actual environment to refine detection parameters. This ensures we minimize false positives from shadows or environmental changes."
+        },
+        {
+          "question": "What kind of hardware is required for local processing?",
+          "answer": "For local edge processing, we typically recommend NVIDIA hardware such as Jetson Orin modules or industrial PCs equipped with TensorRT-compatible GPUs. These devices are optimized to run multiple deep learning streams simultaneously. We will help you select the most cost-effective hardware."
+        },
+        {
+          "question": "Can the system detect complex behaviors like falls or fights?",
+          "answer": "Yes, we build action recognition models that analyze sequence frames to detect behavioral anomalies. The system can recognize specific actions like slipping, falling, fighting, or loitering. These triggers can instantly alert security personnel to take immediate action on-site."
+        },
+        {
+          "question": "How long does it take to deploy a video analytics solution?",
+          "answer": "A standard deployment using pre-trained models for object counting takes 4 to 6 weeks. If we need to train custom models for specific proprietary objects, the project can take 8 to 12 weeks. This timeline includes setup, training, and onsite optimization."
+        },
+        {
+          "question": "Can the video analytics system integrate with our CRM or ERP?",
+          "answer": "Absolutely. We build integrations that expose detected events via webhook or REST API. This allows video analytics metadata (like customer counts or anomaly alerts) to trigger workflows in your CRM, ERP, or warehouse management systems. Your business processes become automatically responsive to real-world events."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "opencv",
+          "name": "OpenCV"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch"
+        },
+        {
+          "icon": "tensorflow",
+          "name": "TensorFlow"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "nvidia",
+          "name": "NVIDIA TensorRT"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "Amazon Web Services"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Video Analitiği",
+    "shortDescription": "Gelişmiş bilgisayarlı görü algoritmaları kullanarak canlı kamera akışlarından gerçek zamanlı operasyonel içgörüler elde edin, hareketli nesneleri takip edin ve güvenlik anomali tespitini otomatikleştirin.",
+    "fullDescription": "Video analitiği, pasif kamera görüntülerini aktif birer zeka ve otomasyon kaynağına dönüştürür. Güvenlik, operasyon, perakende ve üretim alanlarında video verilerini gerçek zamanlı analiz eden özel kurumsal çözümler tasarlıyor ve geliştiriyoruz. YOLO, özel CNN'ler ve vision transformers gibi son teknoloji bilgisayarlı görü modellerini kullanarak nesne algılama, takip, kalabalık sayımı ve davranışsal analizler gerçekleştiriyoruz. İşleme hatlarımızı uç cihazlarda veya bulutta verimli çalışacak şekilde NVIDIA DeepStream, TensorRT ve OpenCV kullanarak optimize ediyoruz. Fabrika hattında otomatik kalite kontrolüne, akıllı şehirler için trafik izlemeye veya mağazalar için müşteri analitiğine ihtiyaç duyduğunuzda, güvenli ve uyumlu çözümler sunuyoruz.",
+    "features": [
+      "Gerçek Zamanlı Nesne Algılama ve Sınıflandırma",
+      "Çoklu Kamera Nesne Takibi ve Yeniden Tanımlama",
+      "Anomali Tespiti ve Yetkisiz Giriş Uyarıları",
+      "Kalabalık Yoğunluğu ve Kuyruk Yönetimi",
+      "Plaka Tanıma Sistemleri (LPR / ANPR)",
+      "Optimize Edilmiş Uç Bilişim (Edge) Dağıtımı",
+      "Gizlilik Maskeleme ve GDPR/KVKK Uyumluluğu",
+      "Özel Gösterge Paneli ve Analitik Entegrasyonu"
+    ],
+    "benefits": [
+      "Anlık anomali bildirimleriyle fiziksel güvenliği artırın",
+      "Kalite denetimlerini otomatikleştirerek operasyonel verimliliği yükseltin",
+      "Ziyaretçi davranışı analiziyle derin müşteri içgörüleri edinin",
+      "Uçta işleme modelleriyle bant genişliği maliyetlerini azaltın",
+      "Otomatik yüz maskeleme ile veri gizliliği uyumluluğu sağlayın",
+      "Güvenlik personeli sayısını artırmadan izleme kapasitenizi ölçeklendirin"
+    ],
+    "metaTitle": "Video Analitiği ve Bilgisayarlı Görü Çözümleri | PakSoft",
+    "metaDescription": "Kamera görüntülerini zekaya dönüştürün. Güvenlik, perakende ve üretim için özel video analitik sistemleri kuruyoruz. Demolarımız için iletişime geçin.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Kamera Akışı Entegrasyonu",
+          "description": "RTSP gibi güvenli protokolleri kullanarak mevcut IP kameralarınıza bağlanıyoruz. Gelen video sinyalleri gerçek zamanlı analiz için dönüştürülür ve hazır hale getirilir."
+        },
+        {
+          "step": 2,
+          "title": "Model Seçimi ve Özelleştirme",
+          "description": "YOLO veya özel vision transformers gibi en uygun nesne algılama mimarisini seçiyoruz. Modeller, hedeflenen nesneler ve çalışma ortamlarınız üzerinde eğitilir."
+        },
+        {
+          "step": 3,
+          "title": "Boru Hattı Optimasyonu",
+          "description": "NVIDIA TensorRT ve DeepStream SDK'larını kullanarak video işleme hatlarını optimize ediyoruz. Bu, uç donanımlarda veya bulut sunucularında düşük gecikme sağlar."
+        },
+        {
+          "step": 4,
+          "title": "Mantık ve Uyarı Yapılandırması",
+          "description": "Özel mekansal tetikleyiciler, sanal sınırlar ve davranış kuralları programlıyoruz. Belirli olaylar algılandığında iç bildirim sistemlerinize uyarı gönderilecek şekilde yapılandırılır."
+        },
+        {
+          "step": 5,
+          "title": "Gizlilik ve Uyumluluk Ayarı",
+          "description": "Otomatik yüz ve plaka maskeleme gibi gizlilik koruma kurallarını sisteme entegre ediyoruz. Bu, sisteminizin yerel veri koruma yönetmeliklerine tam uymasını sağlar."
+        },
+        {
+          "step": 6,
+          "title": "Dağıtım ve Ölçeklendirme",
+          "description": "Optimize edilmiş sistemi altyapınız genelinde konteynerli mikro hizmetler olarak kuruyoruz. Platform, yeni kamera akışları eklendikçe dinamik olarak ölçeklenecek şekilde yapılandırılır."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Video analitik sistemleriniz mevcut IP kameralarımızda çalışabilir mi?",
+          "answer": "Evet, çözümlerimiz kamera markasından bağımsızdır ve RTSP veya ONVIF protokollerini destekleyen tüm modern IP kameralarla çalışır. Analitik yazılımımızı kullanmak için pahalı yeni kameralar satın almanıza gerek yoktur. Mevcut video akışlarını doğrudan analiz hattımıza entegre ediyoruz."
+        },
+        {
+          "question": "Video işlemeyi yerinde mi yoksa bulutta mı çalıştırıyorsunuz?",
+          "answer": "Bant genişliği ve güvenlik gereksinimlerinize göre esnek dağıtım modelleri sunuyoruz. Videoları yerel olarak işlemek için NVIDIA Jetson cihazları kullanarak yerinde kurulum yapabiliriz. Alternatif olarak, merkezi yönetim ve daha kolay kontrol için akışları bulut altyapısına yönlendirebiliriz."
+        },
+        {
+          "question": "KVKK ve GDPR gibi gizlilik düzenlemelerini nasıl ele alıyorsunuz?",
+          "answer": "Uç cihazlarda otomatik gizleme uygulayarak gizlilik odaklı sistemler tasarlıyoruz. Veri hattı, video depolanmadan veya analiz edilmeden önce yüzleri ve plakaları otomatik olarak maskeleyebilir. Bu sayede kullanıcı gizliliğini ihlal etmeden değerli operasyonel metrikler toplayabilirsiniz."
+        },
+        {
+          "question": "Video analitik modellerinizin algılama doğruluğu nedir?",
+          "answer": "Algılama doğruluğu aydınlatmaya, kamera açılarına ve nesne yoğunluğuna bağlıdır, ancak özel eğitimli modellerimiz genellikle %95 ila %99 doğruluğa ulaşır. Algılama parametrelerini iyileştirmek için ortamınızda kapsamlı testler yapıyoruz. Bu, gölgelerden veya çevresel değişikliklerden kaynaklanan yanlış uyarıları en aza indirir."
+        },
+        {
+          "question": "Yerel işleme için ne tür donanımlar gereklidir?",
+          "answer": "Yerel uç işleme için genellikle NVIDIA Jetson Orin modülleri veya TensorRT uyumlu GPU'lara sahip endüstriyel bilgisayarlar öneriyoruz. Bu cihazlar, birden fazla derin öğrenme akışını aynı anda çalıştıracak şekilde optimize edilmiştir. En uygun maliyetli donanımı seçmenize yardımcı oluyoruz."
+        },
+        {
+          "question": "Sistem düşme veya kavga gibi karmaşık davranışları algılayabilir mi?",
+          "answer": "Evet, davranışsal anomalileri tespit etmek için ardışık kareleri analiz eden eylem tanıma modelleri geliştiriyoruz. Sistem kayma, düşme, kavga veya şüpheli bekleme gibi belirli eylemleri tanıyabilir. Bu tetikleyiciler, yerinde müdahale için güvenlik personelini anında uyarabilir."
+        },
+        {
+          "question": "Bir video analitiği çözümünü devreye almak ne kadar sürer?",
+          "answer": "Nesne sayımı için önceden eğitilmiş modeller kullanan standart bir kurulum 4 ila 6 hafta sürer. Özel tescilli nesneler için özel modeller eğitmemiz gerekirse proje 8 ila 12 hafta sürebilir. Bu süreye kurulum, eğitim ve yerinde optimizasyon dahildir."
+        },
+        {
+          "question": "Video analitik sistemi CRM veya ERP sistemimizle entegre olabilir mi?",
+          "answer": "Kesinlikle. Algılanan olayları webhook'lar veya REST API aracılığıyla ileten entegrasyonlar oluşturuyoruz. Bu, video analitiği meta verilerinin (müşteri sayıları veya anomali uyarıları gibi) CRM, ERP veya depo yönetim sistemlerinizde iş akışlarını tetiklemesini sağlar. İş süreçleriniz gerçek dünyadaki olaylara otomatik yanıt verir."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "opencv",
+          "name": "OpenCV"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch"
+        },
+        {
+          "icon": "tensorflow",
+          "name": "TensorFlow"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "nvidia",
+          "name": "NVIDIA TensorRT"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "Amazon Web Services"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Videoanalytik",
+    "shortDescription": "Gewinnen Sie betriebliche Erkenntnisse in Echtzeit, verfolgen Sie bewegliche Objekte, erkennen Sie Anomalien und automatisieren Sie die Überwachung mithilfe kundenspezifischer Deep-Learning-Computer-Vision-Algorithmen.",
+    "fullDescription": "Die Videoanalytik verwandelt passive Kamera-Feeds in aktive Quellen für Intelligenz und Automatisierung. Wir entwerfen und bauen maßgeschneiderte Unternehmenslösungen, die Videodaten in Echtzeit für Sicherheit, Betrieb, Einzelhandel und Fertigung analysieren. Unter Verwendung modernster Computer-Vision-Modelle wie YOLO, kundenspezifischer CNNs und Vision-Transformers führen unsere Systeme Objekterkennung, Tracking, Personenzählung und Verhaltensanalyse durch. Wir optimieren Daten-Pipelines mit NVIDIA DeepStream, TensorRT und OpenCV, um sie effizient auf Edge-Geräten oder in der Cloud auszuführen. Ob Sie eine automatisierte Qualitätskontrolle in einer Fabrik, Verkehrsüberwachung für Smart Cities oder Kundenanalysen im Einzelhandel benötigen — wir liefern sichere, konforme und hochpräzise Video-Intelligence-Lösungen.",
+    "features": [
+      "Echtzeit-Objekterkennung & Klassifizierung",
+      "Kameraübergreiftes Tracking & Wiedererkennung",
+      "Anomalieerkennung & Einbruchsalarme",
+      "Crowd-Dichte- & Warteschlangenmanagement",
+      "Kennzeichenerkennung (LPR / ANPR)",
+      "Optimierte Edge-Computing-Bereitstellung",
+      "Privatsphären-Maskierung & GDPR/DSGVO-Konformität",
+      "Integration von Dashboards & Analysen"
+    ],
+    "benefits": [
+      "Physische Sicherheit durch sofortige Anomaliebenachrichtigungen verbessern",
+      "Betriebliche Effizienz durch automatisierte Qualitätsinspektionen steigern",
+      "Tiefe Kundeneinblicke durch Analyse des Besucherverhaltens gewinnen",
+      "Bandbreitenkosten durch intelligente Edge-Verarbeitungsmodelle senken",
+      "Strikte Datenschutzkonformität durch automatische Gesichtszensur sichern",
+      "Überwachungskapazitäten skalieren, ohne das Sicherheitspersonal aufzustocken"
+    ],
+    "metaTitle": "Videoanalytik & Computer-Vision-Lösungen | PakSoft",
+    "metaDescription": "Kamera-Feeds in Intelligenz verwandeln. Wir bauen Videoanalytik-Systeme für Sicherheit, Handel und Industrie. Kontaktieren Sie uns für eine Demo.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Kamera-Feed-Integration",
+          "description": "Wir binden Ihre IP-Kamera-Streams über sichere Protokolle wie RTSP an. Eingehende Videosignale werden transkodiert und für die Echtzeitanalyse vorbereitet."
+        },
+        {
+          "step": 2,
+          "title": "Modellauswahl & Anpassung",
+          "description": "Wir wählen die optimale Objekterkennungsarchitektur wie YOLO oder kundenspezifische Vision-Transformers aus. Die Modelle werden auf Ihre spezifischen Objekte trainiert."
+        },
+        {
+          "step": 3,
+          "title": "Pipeline-Optimierung",
+          "description": "Wir optimieren die Verarbeitung mithilfe von NVIDIA TensorRT und den DeepStream SDKs. Dies garantiert eine extrem niedrige Latenz auf Edge-Hardware oder Cloud-Servern."
+        },
+        {
+          "step": 4,
+          "title": "Logik & Alarmkonfiguration",
+          "description": "Wir programmieren räumliche Trigger, virtuelle Stolperdrähte und Verhaltensregeln. Alarme werden so konfiguriert, dass sie bei Erkennung bestimmter Ereignisse Benachrichtigungen senden."
+        },
+        {
+          "step": 5,
+          "title": "Datenschutz-Einrichtung",
+          "description": "Wir integrieren automatisierte Datenschutzregeln zur Gesichts- und Kennzeichenverpixelung. Dies stellt sicher, dass Ihre Systeme den lokalen Datenschutzbestimmungen entsprechen."
+        },
+        {
+          "step": 6,
+          "title": "Bereitstellung & Skalierung",
+          "description": "Wir stellen das optimierte System als containerisierte Mikrodienste auf Ihrer Infrastruktur bereit. Die Plattform skaliert automatisch, wenn weitere Kamera-Feeds hinzugefügt werden."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Können Ihre Videoanalytik-Systeme auf unseren vorhandenen IP-Kameras laufen?",
+          "answer": "Ja, unsere Lösungen sind herstellerunabhängig und funktionieren mit jeder modernen IP-Kamera, die RTSP oder ONVIF unterstützt. Sie müssen keine teuren neuen Kameras erwerben, um unsere Analysesoftware zu nutzen. Wir integrieren die vorhandenen Videoströme einfach direkt in unsere Verarbeitungspipeline."
+        },
+        {
+          "question": "Wird die Videoverarbeitung vor Ort oder in der Cloud durchgeführt?",
+          "answer": "Wir bieten flexible Bereitstellungsmodelle basierend auf Ihren Bandbreiten- und Sicherheitsanforderungen. Wir können lokale Edge-Hardware mit NVIDIA Jetson-Geräten installieren, um Videos direkt vor Ort zu verarbeiten. Alternativ leiten wir die Videoströme für eine zentralisierte Cloud-Verarbeitung weiter."
+        },
+        {
+          "question": "Wie gehen Sie mit Datenschutzbestimmungen wie der DSGVO um?",
+          "answer": "Wir entwerfen datenschutzfreundliche Systeme, indem wir eine automatische Zensur direkt auf den Edge-Geräten implementieren. Die Pipeline kann Gesichter und Kennzeichen verpixeln, bevor das Video gespeichert oder analysiert wird. So erfassen Sie wertvolle Kennzahlen, ohne die Privatsphäre der Nutzer zu verletzen."
+        },
+        {
+          "question": "Wie hoch ist die Erkennungsgenauigkeit Ihrer Videoanalytik-Modelle?",
+          "answer": "Die Genauigkeit hängt von Lichtverhältnissen, Kameraposition und Objektdichte ab, aber unsere speziell trainierten Modelle erreichen typischerweise 95% bis 99% Genauigkeit. Wir führen umfangreiche Tests vor Ort durch, um die Erkennungsparameter anzupassen. Dies minimiert Fehlalarme durch Schatten oder Umweltfaktoren."
+        },
+        {
+          "question": "Welche Hardware ist für die lokale Verarbeitung erforderlich?",
+          "answer": "Für die lokale Edge-Verarbeitung empfehlen wir NVIDIA Hardware wie Jetson Orin-Module oder Industrie-PCs mit TensorRT-kompatiblen Grafikkarten. Diese Geräte sind dafür optimiert, mehrere Deep-Learning-Streams gleichzeitig zu verarbeiten. Wir unterstützen Sie bei der Auswahl der kosteneffizientesten Hardware-Komponenten."
+        },
+        {
+          "question": "Kann das System komplexe Verhaltensweisen wie Stürze erkennen?",
+          "answer": "Ja, wir entwickeln Action-Recognition-Modelle, die aufeinanderfolgende Videobilder analysieren, um Verhaltensanomalien zu erkennen. Das System erkennt Aktionen wie Ausrutschen, Stürzen, Kämpfen oder unbefugtes Verweilen. Diese Auslöser können das Sicherheitspersonal vor Ort sofort über kritische Vorfälle informieren."
+        },
+        {
+          "question": "Wie lange dauert es, eine Videoanalytik-Lösung bereitzustellen?",
+          "answer": "Eine Standardbereitstellung mit vortrainierten Modellen zur Personenzählung dauert etwa 4 bis 6 Wochen. Wenn wir benutzerdefinierte Modelle für spezielle, proprietäre Objekte trainieren müssen, dauert das Projekt 8 bis 12 Wochen. Dieser Zeitrahmen umfasst Installation, Training und Optimierung vor Ort."
+        },
+        {
+          "question": "Kann das Videoanalytik-System in unser CRM oder ERP integriert werden?",
+          "answer": "Absolut. Wir entwickeln Integrationen, die erkannte Ereignisse über Webhooks oder REST-APIs übertragen. Dadurch können Metadaten der Videoanalytik (wie Kundenzahlen oder Warnmeldungen) Workflows in Ihrem CRM, ERP oder Lagersystem auslösen. Ihre Geschäftsprozesse reagieren somit automatisch auf reale Ereignisse vor Ort."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "opencv",
+          "name": "OpenCV"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch"
+        },
+        {
+          "icon": "tensorflow",
+          "name": "TensorFlow"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "nvidia",
+          "name": "NVIDIA TensorRT"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "Amazon Web Services"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "ویڈیو اینالیٹکس",
+    "shortDescription": "خصوصی کمپیوٹر ویژن الگورتھمز اور ڈیپ لرننگ کا استعمال کرتے ہوئے لائیو کیمرہ فیڈز سے ریئل ٹائم آپریشنل بصیرت حاصل کریں، متحرک اشیاء کو ٹریک کریں، اور سیکیورٹی مانیٹرنگ کو خودکار بنائیں۔",
+    "fullDescription": "ویڈیو اینالیٹکس غیر فعال کیمرہ فیڈز کو فعال انٹیلی جنس اور خودکار نظاموں میں تبدیل کرتی ہے۔ ہم سیکیورٹی، آپریشنز، ریٹیل اور مینوفیکچرنگ کے لیے ایسے مرضی کے مطابق حل ڈیزائن اور بناتے ہیں جو ریئل ٹائم میں ویڈیو ڈیٹا کا تجزیہ کرتے ہیں۔ YOLO، اپنی مرضی کے مطابق CNNs اور ویژن ٹرانسفارمرز جیسے جدید ترین کمپیوٹر ویژن ماڈلز کا استعمال کرتے ہوئے، ہمارے سسٹمز آبجیکٹ ڈیٹیکشن، ٹریکنگ، ہجوم کی گنتی، اور رویے کے تجزیے کے کام انجام دیتے ہیں۔ ہم NVIDIA DeepStream، TensorRT اور OpenCV کا استعمال کرتے ہوئے ڈیٹا پائپ لائنز کو بہتر بناتے ہیں تاکہ وہ کلاؤڈ یا ایج ڈیوائسز پر آسانی سے چل سکیں۔ چاہے آپ کو فیکٹری میں کوالٹی کنٹرول کی ضرورت ہو یا ریٹیل اسٹورز کے لیے کسٹمر اینالیٹکس کی، ہم محفوظ اور مستحکم حل فراہم کرتے ہیں۔",
+    "features": [
+      "ریئل ٹائم آبجیکٹ ڈیٹیکشن اور کلاسیفیکیشن",
+      "ملٹی کیمرہ آبجیکٹ ٹریکنگ اور ری-آئیڈنٹیفیکیشن",
+      "انوملی ڈیٹیکشن اور مداخلت کے الرٹس",
+      "ہجوم کی کثافت اور قطار کا انتظام",
+      "لائسنس پلیٹ کی شناخت (LPR / ANPR)",
+      "بہتر ایج کمپیوٹنگ (Edge) ڈیپلومنٹ",
+      "پرائیویسی ماسکنگ اور GDPR/KVKK تعمیل",
+      "کسٹم ڈیش بورڈ اور اینالیٹکس انٹیگریشن"
+    ],
+    "benefits": [
+      "فوری انوملی الرٹس کے ذریعے جسمانی حفاظت کو بہتر بنائیں",
+      "کوالٹی چیکس کو خودکار بنا کر آپریشنل کارکردگی میں اضافہ کریں",
+      "کسٹمر بیہیویئر کے تجزیے کے ذریعے گہری بصیرت حاصل کریں",
+      "ایج پروسیسنگ ماڈلز کا استعمال کر کے بینڈوتھ کے اخراجات کم کریں",
+      "چہروں کو خودکار دھندلا (blur) کر کے پرائیویسی قوانین کی تعمیل کریں",
+      "سیکیورٹی اسٹاف میں اضافہ کیے بغیر نگرانی کی صلاحیتوں کو بڑھائیں"
+    ],
+    "metaTitle": "ویڈیو اینالیٹکس اور کمپیوٹر ویژن سلوشنز | PakSoft",
+    "metaDescription": "کیمرہ فیڈز کو انٹیلی جنس میں تبدیل کریں۔ ہم سیکیورٹی اور مینوفیکچرنگ کے لیے کسٹم ویڈیو اینالیٹکس سسٹمز بناتے ہیں۔ ڈیمو کے لیے آج ہی رابطہ کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "کیمرہ فیڈ انٹیگریشن",
+          "description": "ہم RTSP جیسے محفوظ پروٹوکول کا استعمال کرتے ہوئے آپ کے موجودہ IP کیمرہ اسٹریمز سے جڑتے ہیں۔ موصول ہونے والے ویڈیو سگنلز کو ریئل ٹائم تجزیہ کے لیے تبدیل کیا جاتا ہے۔"
+        },
+        {
+          "step": 2,
+          "title": "ماڈل کا انتخاب اور کسٹمائزیشن",
+          "description": "ہم YOLO veya özel vision transformers gibi en uygun nesne algılama mimarisini seçiyoruz. Modeller, hedeflenen nesneler ve çalışma ortamlarınız üzerinde eğitilir."
+        },
+        {
+          "step": 3,
+          "title": "پائپ لائن کی بہتری",
+          "description": "ہم NVIDIA TensorRT ve DeepStream SDK'larını kullanarak video işleme hatlarını optimize ediyoruz. Bu, uç donanımlarda veya bulut sunucularında düşük gecikme sağlar."
+        },
+        {
+          "step": 4,
+          "title": "لوجک اور الرٹ کنفیگریشن",
+          "description": "ہم özel mekansal tetikleyiciler, sanal sınırlar ve davranış kuralları programlıyoruz. Belirli olaylar algılandığında iç bildirim sistemlerinize uyarı gönderilecek şekilde yapılandırılır."
+        },
+        {
+          "step": 5,
+          "title": "پرائیویسی اور کمپلائنس سیٹ اپ",
+          "description": "ہم otomatik yüz ve plaka maskeleme gibi gizlilik koruma kurallarını sisteme entegre ediyoruz. Bu, sisteminizin yerel veri koruma yönetmeliklerine tam uymasını sağlar."
+        },
+        {
+          "step": 6,
+          "title": "ڈیپلومنٹ اور اسکیلنگ",
+          "description": "ہم optimize edilmiş sistemi altyapınız genelinde konteynerli mikro hizmetler olarak kuruyoruz. Platform, yeni kamera akışları eklendikçe dinamik olarak ölçeklenecek şekilde yapılandırılır."
+        }
+      ],
+      "faq": [
+        {
+          "question": "کیا آپ کا ویڈیو اینالیٹکس سسٹم ہمارے موجودہ کیمروں پر چل سکتا ہے؟",
+          "answer": "جی ہاں، ہمارے سلوشنز کسی بھی جدید IP کیمرے کے ساتھ کام کر سکتے ہیں جو RTSP یا ONVIF پروٹوکول کو سپورٹ کرتا ہو۔ ویڈیو اینالیٹکس سافٹ ویئر استعمال کرنے کے لیے آپ کو مہنگے نئے کیمرے خریدنے کی ضرورت نہیں ہے۔ ہم آسانی سے موجودہ اسٹریمز کو اپنے سسٹم میں مربوط کر لیتے ہیں۔"
+        },
+        {
+          "question": "کیا ویڈیو کی پروسیسنگ مقامی طور پر ہوتی ہے یا کلاؤڈ پر؟",
+          "answer": "ہم آپ کی بینڈوتھ اور سیکیورٹی کی ضروریات کی بنیاد پر دونوں آپشنز فراہم کرتے ہیں۔ ہم مقامی طور پر ویڈیوز کو پروسیس کرنے کے لیے NVIDIA Jetson ایج ڈیوائسز انسٹال کر سکتے ہیں۔ متبادل کے طور پر، ہم مرکزی انتظام اور آسان کنٹرول کے لیے اسٹریمز کو کلاؤڈ انفراسٹرکچر پر منتقل کر سکتے ہیں۔"
+        },
+        {
+          "question": "آپ GDPR اور مقامی پرائیویسی قوانین کو کیسے ہینڈل کرتے ہیں؟",
+          "answer": "ہم ایج پروسیسنگ کے دوران چہروں اور لائسنس پلیٹوں کو خودکار دھندلا کرنے کے فیچرز فراہم کرتے ہیں۔ یہ پروسیسنگ ویڈیو کے اسٹور یا تجزیہ ہونے سے پہلے کی جاتی ہے۔ اس طرح آپ پرائیویسی قوانین کی خلاف ورزی کیے بغیر آپریشنل میٹرکس اور ڈیٹا حاصل کر سکتے ہیں۔"
+        },
+        {
+          "question": "آپ کے ویڈیو اینالیٹکس ماڈلز کی درستگی کی شرح کیا ہے؟",
+          "answer": "اگرچہ درستگی روشنی، کیمرے کی پوزیشن اور بھیڑ پر منحصر ہوتی ہے، ہمارے ماڈلز عام طور پر 95% سے 99% درستگی فراہم کرتے ہیں۔ ہم غلط الرٹس کو کم کرنے کے لیے آپ کے حقیقی ماحول پر تفصیلی ٹیسٹنگ کرتے ہیں۔ اس سے ماحولیاتی تبدیلیوں اور سائے کی وجہ سے غلط الرٹس ختم ہو جاتے ہیں۔"
+        },
+        {
+          "question": "لوکل پروسیسنگ کے لیے کس قسم کے ہارڈ ویئر کی ضرورت ہوتی ہے؟",
+          "answer": "مقامی ایج پروسیسنگ کے لیے، ہم NVIDIA Jetson Orin ماڈیولز یا TensorRT مطابقت رکھنے والے GPUs سے لیس انڈسٹریل کمپیوٹرز کی سفارش کرتے ہیں۔ یہ ڈیوائسز ایک ہی وقت میں متعدد ویڈیوز کو پروسیس کرنے کے لیے بہترین ہیں۔ ہم آپ کے بجٹ کے مطابق بہترین ہارڈ ویئر منتخب کرنے میں مدد کریں گے۔"
+        },
+        {
+          "question": "کیا سسٹم پیچیدہ رویوں جیسے گرنا یا لڑائی کا پتہ لگا سکتا ہے؟",
+          "answer": "جی ہاں، ہم ایسے ایکشن ریکگنیشن ماڈلز بناتے ہیں جو ویڈیو کے مختلف فریمز کا تجزیہ کر کے غیر معمولی رویوں کا پتہ لگاتے ہیں۔ ہمارا سسٹم گرنے، پھسلنے، لڑائی جھگڑے یا مشتبہ طور پر کھڑے رہنے کا پتہ لگا سکتا ہے۔ یہ سسٹمز سیکیورٹی ٹیم کو فوری طور پر الرٹ بھیجتے ہیں۔"
+        },
+        {
+          "question": "ویڈیو اینالیٹکس سلوشن کو ڈیپلائے کرنے میں کتنا وقت لگتا ہے؟",
+          "answer": "عام آبجیکٹ کاؤنٹنگ کے لیے پہلے سے تربیت یافتہ ماڈلز کا استفاده کرتے ہوئے ڈیپلومنٹ میں 4 سے 6 ہفتے لگتے ہیں۔ اگر ہمیں آپ کی مخصوص اور نایاب اشیاء کے لیے کسٹم ماڈلز ٹرین کرنے ہوں تو 8 سے 12 ہفتے لگ سکتے ہیں۔ اس وقت میں ہارڈ ویئر سیٹ اپ اور فائن ٹیوننگ شامل ہے۔"
+        },
+        {
+          "question": "کیا ویڈیو اینالیٹکس سسٹم کو ہمارے CRM یا ERP کے ساتھ مربوط کیا جا سکتا ہے؟",
+          "answer": "بالکل، ہم ایسے روابط بناتے ہیں جو دریافت ہونے والے واقعات کو ویب ہکس یا REST API کے ذریعے منتقل کرتے ہیں۔ یہ ویڈیو اینالیٹکس کا ڈیٹا (جیسے گاہکوں کی تعداد یا الرٹس) آپ کے CRM یا ERP سسٹمز میں ورک فلو کو شروع کرنے کی اجازت دیتا ہے۔ آپ کے کاروباری سسٹمز خودکار طور پر ردعمل دیتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "opencv",
+          "name": "OpenCV"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch"
+        },
+        {
+          "icon": "tensorflow",
+          "name": "TensorFlow"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "nvidia",
+          "name": "NVIDIA TensorRT"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "Amazon Web Services"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تحليلات الفيديو",
+    "shortDescription": "استخرج رؤى تشغيلية في الوقت الفعلي، وتتبع الأجسام المتحركة، واكتشف الحالات الشاذة الأمنية، وأتمت مراقبة الكاميرات من بث الفيديو المباشر باستخدام خوارزميات الرؤية الحاسوبية القائمة على التعلم العميق.",
+    "fullDescription": "تحول تحليلات الفيديو بث الكاميرات غير النشط إلى مصدر فعال للمعلومات والأتمتة. نحن نصمم ونبني حلولاً مخصصة للمؤسسات تعمل على تحليل الفيديو في الوقت الفعلي للأمن والعمليات والتجزئة والتصنيع. باستخدام نماذج الرؤية الحاسوبية الأحدث مثل YOLO ونماذج CNN المخصصة ومحولات الرؤية (vision transformers)، تقوم أنظمتنا بالكشف عن الأجسام وتتبعها وعد الحشود وتحليل السلوكيات. نقوم بتحسين خطوط معالجة البيانات باستخدام NVIDIA DeepStream و TensorRT و OpenCV لتعمل بكفاءة عالية على الأجهزة الطرفية (edge) أو في السحابة. سواء كنت بحاجة إلى مراقبة جودة الإنتاج في المصنع، أو مراقبة حركة المرور للمدن الذكية، أو تحليل سلوك العملاء في المتاجر، فإننا نقدم حلول تحليلات فيديو آمنة ومتوافقة ودقيقة.",
+    "features": [
+      "الكشف عن الأجسام وتصنيفها في الوقت الفعلي",
+      "تتبع الأجسام وإعادة التعرف عليها عبر عدة كاميرات",
+      "كشف الشذوذ الأمني وإرسال تنبيهات الاختراق",
+      "إدارة كثافة الحشود وإدارة طوابير الانتظار",
+      "التعرف التلقائي على لوحات السيارات (LPR / ANPR)",
+      "النشر المحسن على الأجهزة الطرفية (Edge)",
+      "تعتيم الوجوه التلقائي والامتثال لـ GDPR/KVKK",
+      "لوحات معلومات مخصصة وتكامل التحليلات"
+    ],
+    "benefits": [
+      "تحسين الأمن المادي من خلال إرسال إشعارات فورية بالشذوذ",
+      "زيادة الكفاءة التشغيلية عبر أتمتة عمليات فحص الجودة",
+      "الحصول على رؤى عميقة للعملاء من خلال تحليل سلوك الحركة",
+      "تقليل تكاليف نطاق حزمة البيانات باستخدام معالجة الأجهزة الطرفية",
+      "ضمان الامتثال الصارم لقوانين الخصوصية بتعتيم الوجوه تلقائياً",
+      "زيادة قدرات المراقبة دون الحاجة لزيادة عدد موظفي الأمن"
+    ],
+    "metaTitle": "تحليلات الفيديو وحلول الرؤية الحاسوبية | PakSoft",
+    "metaDescription": "حول بث الكاميرات إلى معلومات تشغيلية. نحن نبني أنظمة تحليلات فيديو مخصصة للأمن والتصنيع والتجزئة باستخدام نماذج YOLO. اتصل بنا للحصول على عرض تجريبي.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تكامل بث الكاميرات",
+          "description": "نتصل ببث الكاميرات الحالية باستخدام بروتوكولات آمنة مثل RTSP. يتم تشفير إشارات الفيديو الواردة وإعدادها للتحليل المباشر في الوقت الفعلي."
+        },
+        {
+          "step": 2,
+          "title": "اختيار النموذج وتخصيصه",
+          "description": "نختار بنية الكشف عن الأجسام المثالية مثل YOLO أو محولات الرؤية المخصصة. يتم تدريب النماذج على الأجسام والبيئات المحددة لعملك."
+        },
+        {
+          "step": 3,
+          "title": "تحسين خطوط المعالجة",
+          "description": "نحسن معالجة الفيديو باستخدام NVIDIA TensorRT ومجموعات تطوير DeepStream. يضمن هذا تشغيلاً منخفض زمن الاستجابة على الأجهزة الطرفية أو السحابة."
+        },
+        {
+          "step": 4,
+          "title": "تهيئة المنطق والتنبيهات",
+          "description": "نبرمج القواعد السلوكية وخطوط الكشف الافتراضية المخصصة. يتم تكوين التنبيهات لإرسال إشعارات فورية إلى أنظمتك الداخلية عند اكتشاف أحداث معينة."
+        },
+        {
+          "step": 5,
+          "title": "إعداد الخصوصية والامتثال",
+          "description": "ندمج قواعد حماية الخصوصية التلقائية مثل تعتيم الوجوه ولوحات السيارات. يضمن هذا امتثال أنظمتك بالكامل للوائح حماية البيانات والخصوصية المحلية."
+        },
+        {
+          "step": 6,
+          "title": "النشر والترقية",
+          "description": "ننشر النظام المطور كخدمات برمجية مصغرة ومعبأة عبر البنية التحتية الخاصة بك. تتم تهيئة المنصة للتوسع تلقائياً مع إضافة كاميرات جديدة."
+        }
+      ],
+      "faq": [
+        {
+          "question": "هل يمكن لأنظمة تحليلات الفيديو لدينا العمل على كاميرات IP الحالية؟",
+          "answer": "نعم، حلولنا متوافقة مع الكاميرات من أي علامة تجارية تدعم بروتوكولات RTSP أو ONVIF. لا تحتاج إلى شراء كاميرات جديدة ومكلفة لاستخدام برمجيات التحليل الخاصة بنا. نقوم ببساطة بدمج تدفقات الفيديو الحالية مباشرة في خط المعالجة لدينا."
+        },
+        {
+          "question": "هل تتم معالجة الفيديو محلياً في الموقع أم على السحابة؟",
+          "answer": "نحن نقدم نماذج نشر مرنة بناءً على متطلبات النطاق الترددي والأمن لديك. يمكننا النشر في الموقع باستخدام أجهزة NVIDIA Jetson لمعالجة الفيديو محلياً. بدلاً من ذلك، يمكننا توجيه التدفقات إلى السحابة لمعالجة مركزية وإدارة أسهل للأنظمة."
+        },
+        {
+          "question": "كيف تتعاملون مع لوائح الخصوصية مثل GDPR؟",
+          "answer": "نحن نصمم أنظمة تركز على الخصوصية أولاً عن طريق تطبيق التعتيم التلقائي على الأجهزة الطرفية. يمكن لخط المعالجة تعتيم الوجوه ولوحات السيارات تلقائياً قبل تخزين الفيديو أو تحليله. يتيح لك هذا جمع مقاييس تشغيلية قيمة دون انتهاك الخصوصية."
+        },
+        {
+          "question": "ما هي دقة الكشف لنماذج تحليلات الفيديو الخاصة بكم؟",
+          "answer": "تعتمد الدقة على الإضاءة وزوايا الكاميرا وكثافة الأجسام، لكن نماذجنا تحقق عادةً دقة تتراوح بين 95% و 99%. نجري اختبارات مكثفة في بيئتك الحقيقية لضبط معلمات الكشف. يضمن هذا تقليل التنبيهات الكاذبة الناتجة عن الظلال أو التغيرات البيئية."
+        },
+        {
+          "question": "ما هي الأجهزة المطلوبة للمعالجة المحلية؟",
+          "answer": "للمعالجة المحلية، نوصي عادةً بأجهزة NVIDIA مثل وحدات Jetson Orin أو أجهزة الكمبيوتر الصناعية المزودة ببطاقات رسومية متوافقة مع TensorRT. تم تحسين هذه الأجهزة لتشغيل عدة تدفقات للتعلم العميق في وقت واحد. سنساعدك في اختيار الأجهزة الأكثر كفاءة."
+        },
+        {
+          "question": "هل يمكن للنظام الكشف عن السلوكيات المعقدة مثل السقوط أو المشاجرات؟",
+          "answer": "نعم، نقوم ببناء نماذج التعرف على الحركات التي تحلل تسلسل الإطارات للكشف عن الشذوذ السلوكي. يمكن للنظام التعرف على إجراءات محددة مثل الانزلاق أو السقوط أو المشاجرات أو التسكع. يمكن لهذه المحفزات تنبيه موظفي الأمن على الفور للتدخل السريع."
+        },
+        {
+          "question": "كم من الوقت يستغرق نشر حل تحليلات الفيديو؟",
+          "answer": "يستغرق النشر القياسي باستخدام نماذج مدربة مسبقاً لعد الأجسام من 4 إلى 6 أسابيع. إذا كنا بحاجة إلى تدريب نماذج مخصصة لأجسام معينة، فقد يستغرق المشروع من 8 إلى 12 أسبوعاً. يشمل هذا الجدول الزمني التثبيت والتدريب والتحسين في الموقع."
+        },
+        {
+          "question": "هل يمكن لنظام تحليلات الفيديو التكامل مع نظام CRM أو ERP الخاص بنا؟",
+          "answer": "بالتأكيد. نحن نبني عمليات تكامل ترسل الأحداث المكتشفة عبر webhooks أو REST API. يتيح ذلك لبيانات تحليلات الفيديو (مثل أعداد العملاء أو تنبيهات الشذوذ) تشغيل مهام العمل في أنظمة CRM أو ERP لديك. تصبح عمليات عملك مستجيبة تلقائياً للأحداث."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "opencv",
+          "name": "OpenCV"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch"
+        },
+        {
+          "icon": "tensorflow",
+          "name": "TensorFlow"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "nvidia",
+          "name": "NVIDIA TensorRT"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "Amazon Web Services"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        }
+      ]
+    }
+  }
+}

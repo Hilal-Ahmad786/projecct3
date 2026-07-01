@@ -1,0 +1,638 @@
+{
+  "slug": "ai-image-generation",
+  "en": {
+    "name": "AI Image Generation",
+    "shortDescription": "Create custom AI image generation solutions using DALL-E, Stable Diffusion, and Midjourney to automate visual asset creation and personalization at scale.",
+    "fullDescription": "Visual content creation is a massive bottleneck for marketing, e-commerce, and media companies. We build scalable AI image generation pipelines that replace manual design work with automated, brand-consistent asset creation. Using APIs like OpenAI DALL-E 3, Stable Diffusion XL, and Midjourney, we develop systems that generate high-quality product lifestyle shots, personalized ad creatives, and dynamic backgrounds. We don't just prompt existing tools; we fine-tune models on your specific brand guidelines and products using LoRA and ControlNet, ensuring the AI outputs match your exact visual identity. From automated batch processing to real-time image upscaling, our solutions cut creative costs while massively increasing the volume and speed of asset production.",
+    "features": [
+      "DALL-E 3 & Stable Diffusion Integration",
+      "Brand-Specific Model Fine-Tuning (LoRA)",
+      "ControlNet for Precise Composition",
+      "Automated Product Image Variations",
+      "Background Removal & Replacement",
+      "High-Resolution Image Upscaling",
+      "Batch Processing & Pipeline Architecture",
+      "Automated Content Moderation"
+    ],
+    "benefits": [
+      "Reduce creative production costs by up to 80%",
+      "Generate thousands of brand-consistent images in minutes",
+      "Eliminate expensive and time-consuming photoshoots",
+      "A/B test ad creatives at massive scale",
+      "Personalize visual content for different audience segments",
+      "Maintain strict brand consistency across all generated assets"
+    ],
+    "metaTitle": "AI Image Generation Services | DALL-E & Stable Diffusion | PakSoft",
+    "metaDescription": "Automate visual content creation with custom AI image generation. We integrate Stable Diffusion and DALL-E to build brand-consistent asset pipelines.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Visual Requirements Discovery",
+          "description": "We analyze your brand guidelines, existing assets, and creative bottlenecks. Together we define the exact style, resolution, and volume requirements for the generated images."
+        },
+        {
+          "step": 2,
+          "title": "Model Selection & Architecture",
+          "description": "We choose the right base models (e.g., Stable Diffusion XL for local control, DALL-E 3 for prompt adherence). We design the pipeline for prompt engineering, batching, and image storage."
+        },
+        {
+          "step": 3,
+          "title": "Fine-Tuning & Prompt Engineering",
+          "description": "We train custom LoRA models on your specific products and brand assets to ensure the AI understands your visual identity. We also develop structured prompt templates that yield consistent results."
+        },
+        {
+          "step": 4,
+          "title": "Integration & Pipeline Development",
+          "description": "We build the API wrappers and integrate the generation engine into your CMS, PIM, or marketing platforms. This includes automated upscaling, background removal, and format conversion."
+        },
+        {
+          "step": 5,
+          "title": "Quality Assurance & Moderation",
+          "description": "We implement automated moderation layers to block inappropriate content and hallucinated artifacts. We test the pipeline across thousands of edge cases to ensure consistent quality."
+        },
+        {
+          "step": 6,
+          "title": "Deployment & Scaling",
+          "description": "The system goes live, processing image requests at scale. We continuously monitor generation quality, API costs, and latency, refining prompts and models based on your feedback."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Can the AI generate images with my specific products?",
+          "answer": "Yes. We use advanced fine-tuning techniques like LoRA (Low-Rank Adaptation) and ControlNet on models like Stable Diffusion. By training the AI on a small dataset of your actual product photos, it learns to generate that exact item in new environments, lighting, and angles without hallucinating features."
+        },
+        {
+          "question": "Who owns the copyright to the generated images?",
+          "answer": "Generally, images generated entirely by AI are not copyrightable by the creator under current US/EU law. However, you own the commercial usage rights provided by the API platforms (like OpenAI). We advise using AI for marketing assets, ad creatives, and backgrounds, while keeping core logos and trademarked assets human-created."
+        },
+        {
+          "question": "What is the cost per generated image?",
+          "answer": "Using cloud APIs like DALL-E 3, costs range from $0.04 to $0.08 per image. If you require massive volume (hundreds of thousands of images), we can deploy custom Stable Diffusion models on dedicated GPU instances via AWS or RunPod, which drastically reduces the per-image cost to fractions of a cent."
+        },
+        {
+          "question": "Can we ensure the AI follows our brand colors and style?",
+          "answer": "Absolutely. Standard text-to-image models struggle with precise brand compliance. We solve this by fine-tuning the model specifically on your brand kit and using ControlNet to enforce specific compositions, color palettes, and stylistic constraints, ensuring every output looks like it belongs to your brand."
+        },
+        {
+          "question": "How long does it take to build a custom image pipeline?",
+          "answer": "A basic API integration for standard image generation takes 2–4 weeks. A fully customized pipeline with fine-tuned product models, automated upscaling, and CMS integration typically requires 6–10 weeks from discovery to production rollout."
+        },
+        {
+          "question": "Can the AI add text to the generated images?",
+          "answer": "While newer models like DALL-E 3 and Midjourney v6 are getting better at rendering short text, they are still prone to spelling errors and unpredictable typography. For reliable text overlays (like ad banners), we build pipelines that generate the background image first, then use traditional graphic libraries to overlay precise, editable text."
+        },
+        {
+          "question": "Do you use Midjourney, DALL-E, or Stable Diffusion?",
+          "answer": "We are platform-agnostic and use the right tool for the job. Midjourney excels at high-end artistic aesthetics but lacks an official robust API. DALL-E 3 is excellent for prompt adherence and quick integrations. Stable Diffusion provides the ultimate control, allowing us to fine-tune, use ControlNet, and host privately for maximum security and customization."
+        },
+        {
+          "question": "How do you handle inappropriate or off-brand generations?",
+          "answer": "We implement strict input moderation to block risky prompts, and output validation to catch artifacts or NSFW content before it reaches your system. For public-facing apps, we use tools like Azure Content Moderator to guarantee brand safety."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "openai",
+          "name": "OpenAI DALL-E"
+        },
+        {
+          "icon": "stablediffusion",
+          "name": "Stable Diffusion"
+        },
+        {
+          "icon": "midjourney",
+          "name": "Midjourney API"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch"
+        },
+        {
+          "icon": "aws",
+          "name": "AWS SageMaker"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "react",
+          "name": "React"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Yapay Zeka Görsel Üretimi",
+    "shortDescription": "Görsel varlık üretimini ve kişiselleştirmeyi büyük ölçekte otomatikleştirmek için DALL-E, Stable Diffusion ve Midjourney ile özel yapay zeka görsel üretim çözümleri geliştirin.",
+    "fullDescription": "Görsel içerik üretimi pazarlama, e-ticaret ve medya şirketleri için devasa bir darboğazdır. Manuel tasarım işlerini otomatik, markaya uygun varlık üretimiyle değiştiren ölçeklenebilir yapay zeka görsel üretim hatları kuruyoruz. OpenAI DALL-E 3, Stable Diffusion XL ve Midjourney gibi API'leri kullanarak yüksek kaliteli ürün konsept çekimleri, kişiselleştirilmiş reklam görselleri ve dinamik arka planlar üreten sistemler geliştiriyoruz. Sadece mevcut araçlara komut yazmıyoruz; modelleri LoRA ve ControlNet kullanarak kendi marka yönergelerinize ve ürünlerinize göre eğitiyor (fine-tuning), yapay zekanın tam olarak sizin görsel kimliğinizle eşleşmesini sağlıyoruz. Otomatik toplu işlemeden gerçek zamanlı görsel büyütmeye (upscaling) kadar çözümlerimiz, yaratıcı üretim maliyetlerini düşürürken varlık üretiminin hacmini ve hızını muazzam ölçüde artırır.",
+    "features": [
+      "DALL-E 3 ve Stable Diffusion Entegrasyonu",
+      "Markaya Özel Model Eğitimi (LoRA)",
+      "Hassas Kompozisyon için ControlNet",
+      "Otomatik Ürün Görseli Varyasyonları",
+      "Arka Plan Kaldırma ve Değiştirme",
+      "Yüksek Çözünürlüklü Görsel Büyütme (Upscaling)",
+      "Toplu İşleme ve Pipeline Mimarisi",
+      "Otomatik İçerik Moderasyonu"
+    ],
+    "benefits": [
+      "Yaratıcı üretim maliyetlerini %80'e kadar azaltın",
+      "Dakikalar içinde markaya uygun binlerce görsel üretin",
+      "Pahalı ve zaman alan fotoğraf çekimlerini ortadan kaldırın",
+      "Reklam görsellerini devasa ölçekte A/B testine tabi tutun",
+      "Farklı hedef kitle segmentleri için görsel içeriği kişiselleştirin",
+      "Üretilen tüm varlıklarda katı marka tutarlılığını koruyun"
+    ],
+    "metaTitle": "Yapay Zeka Görsel Üretim Hizmetleri | PakSoft",
+    "metaDescription": "Özel yapay zeka görsel üretimi ile görsel içerik oluşturmayı otomatikleştirin. Markanıza uygun varlık üretim hatları için Stable Diffusion ve DALL-E entegre ediyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Görsel İhtiyaç Analizi",
+          "description": "Marka yönergelerinizi, mevcut varlıklarınızı ve yaratıcı süreçteki darboğazları inceliyoruz. Üretilecek görsellerin tam stilini, çözünürlüğünü ve hacim gereksinimlerini birlikte tanımlıyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Model Seçimi ve Mimari",
+          "description": "Doğru temel modelleri (yerel kontrol için Stable Diffusion XL, komuta uyum için DALL-E 3 vb.) seçiyoruz. Prompt mühendisliği, toplu işleme ve görsel depolama için üretim hattını (pipeline) tasarlıyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Fine-Tuning ve Prompt Mühendisliği",
+          "description": "Yapay zekanın görsel kimliğinizi anlamasını sağlamak için özel LoRA modellerini kendi ürünleriniz ve marka varlıklarınız üzerinde eğitiyoruz. Ayrıca tutarlı sonuçlar veren yapılandırılmış prompt şablonları geliştiriyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Entegrasyon ve Pipeline Geliştirme",
+          "description": "API arayüzlerini oluşturuyor ve üretim motorunu CMS, PIM veya pazarlama platformlarınıza entegre ediyoruz. Buna otomatik büyütme (upscaling), arka plan kaldırma ve format dönüştürme de dahildir."
+        },
+        {
+          "step": 5,
+          "title": "Kalite Güvencesi ve Moderasyon",
+          "description": "Uygunsuz içeriği ve halüsinasyonlu hatalı görselleri engellemek için otomatik moderasyon katmanları uyguluyoruz. Tutarlı kaliteyi sağlamak için sistemi binlerce uç senaryoda test ediyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Yayına Alma ve Ölçekleme",
+          "description": "Sistem devreye girerek görsel taleplerini büyük ölçekte işlemeye başlar. Üretim kalitesini, API maliyetlerini ve gecikmeyi (latency) sürekli izleyerek geri bildirimlerinize göre promptları ve modelleri iyileştiriyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Yapay zeka tam olarak benim kendi ürünlerimle görsel üretebilir mi?",
+          "answer": "Evet. Stable Diffusion gibi modellerde LoRA (Low-Rank Adaptation) ve ControlNet gibi gelişmiş fine-tuning teknikleri kullanıyoruz. Yapay zekayı gerçek ürün fotoğraflarınızdan oluşan küçük bir veri setiyle eğiterek, o ürünü yeni ortamlarda, ışıkta ve açılarda özellik uydurmadan (halüsinasyon) tam olarak çizmeyi öğrenmesini sağlıyoruz."
+        },
+        {
+          "question": "Üretilen görsellerin telif hakkı kime aittir?",
+          "answer": "Genel olarak, tamamen yapay zeka tarafından üretilen görseller mevcut ABD/AB yasalarına göre üreten kişi tarafından telif hakkına tabi tutulamaz. Ancak, API platformları (OpenAI gibi) tarafından sağlanan ticari kullanım haklarına sahip olursunuz. Temel logoları ve ticari markalı varlıkları insan yapımı tutarken, pazarlama varlıkları, reklam görselleri ve arka planlar için yapay zekayı kullanmanızı tavsiye ediyoruz."
+        },
+        {
+          "question": "Üretilen görsel başına maliyet nedir?",
+          "answer": "DALL-E 3 gibi bulut API'leri kullanıldığında maliyetler görsel başına 0,04 ile 0,08 ABD Doları arasında değişir. Çok büyük bir hacme (yüz binlerce görsel) ihtiyacınız varsa, AWS veya RunPod üzerinden özel GPU sunucularında kendi Stable Diffusion modellerimizi kurabiliriz; bu, görsel başına maliyeti bir sentin çok küçük kesirlerine düşürür."
+        },
+        {
+          "question": "Yapay zekanın marka renklerimizi ve stilimizi takip etmesini sağlayabilir miyiz?",
+          "answer": "Kesinlikle. Standart metinden-görsele modelleri, markaya tam uyum sağlama konusunda zorlanır. Modeli doğrudan marka kitiniz üzerinde eğiterek ve belirli kompozisyonları, renk paletlerini ve stilistik sınırları zorlamak için ControlNet kullanarak bu sorunu çözüyoruz. Böylece her çıktı markanıza aitmiş gibi görünür."
+        },
+        {
+          "question": "Özel bir görsel üretim sistemi (pipeline) kurmak ne kadar sürer?",
+          "answer": "Standart görsel üretimi için temel bir API entegrasyonu 2-4 hafta sürer. Kendi ürünlerinize göre eğitilmiş modeller, otomatik büyütme (upscaling) ve CMS entegrasyonuna sahip tamamen özelleştirilmiş bir pipeline, keşiften üretime kadar genellikle 6-10 hafta gerektirir."
+        },
+        {
+          "question": "Yapay zeka üretilen görsellere metin ekleyebilir mi?",
+          "answer": "DALL-E 3 ve Midjourney v6 gibi yeni modeller kısa metinleri işlemede daha iyi hale gelse de, hala yazım hatalarına ve tahmin edilemez tipografiye eğilimlidirler. Güvenilir metin katmanları (reklam banner'ları gibi) için, önce arka plan görselini üreten, ardından net ve düzenlenebilir metni yerleştirmek için geleneksel grafik kütüphanelerini kullanan üretim hatları (pipeline) kuruyoruz."
+        },
+        {
+          "question": "Midjourney, DALL-E mi yoksa Stable Diffusion mı kullanıyorsunuz?",
+          "answer": "Platform bağımsız çalışıyor ve iş için en doğru aracı kullanıyoruz. Midjourney üst düzey sanatsal estetikte mükemmeldir ancak resmi ve sağlam bir API'den yoksundur. DALL-E 3, komuta uyum ve hızlı entegrasyonlar için mükemmeldir. Stable Diffusion ise maksimum güvenlik ve özelleştirme için modeli eğitmemize, ControlNet kullanmamıza ve sunucuyu özel olarak barındırmamıza olanak tanıyarak en üst düzey kontrolü sağlar."
+        },
+        {
+          "question": "Uygunsuz veya markaya aykırı görsel üretimlerini nasıl engelliyorsunuz?",
+          "answer": "Riskli promptları engellemek için sıkı bir girdi moderasyonu ve sisteminize ulaşmadan önce uygunsuz içeriği (NSFW) veya hatalı çizimleri yakalamak için çıktı doğrulaması uyguluyoruz. Herkese açık uygulamalar için marka güvenliğini garanti altına almak adına Azure Content Moderator gibi araçlar kullanıyoruz."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "openai",
+          "name": "OpenAI DALL-E"
+        },
+        {
+          "icon": "stablediffusion",
+          "name": "Stable Diffusion"
+        },
+        {
+          "icon": "midjourney",
+          "name": "Midjourney API"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch"
+        },
+        {
+          "icon": "aws",
+          "name": "AWS SageMaker"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "react",
+          "name": "React"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "KI-Bildgenerierung",
+    "shortDescription": "Erstellen Sie maßgeschneiderte Lösungen zur KI-Bildgenerierung mit DALL-E, Stable Diffusion und Midjourney, um die Erstellung visueller Assets und Personalisierung in großem Maßstab zu automatisieren.",
+    "fullDescription": "Die Erstellung visueller Inhalte ist ein massiver Engpass für Marketing-, E-Commerce- und Medienunternehmen. Wir bauen skalierbare Pipelines zur KI-Bildgenerierung, die manuelle Designarbeit durch automatisierte, markenkonforme Asset-Erstellung ersetzen. Mit APIs wie OpenAI DALL-E 3, Stable Diffusion XL und Midjourney entwickeln wir Systeme, die hochwertige Produkt-Lifestyle-Aufnahmen, personalisierte Werbemotive und dynamische Hintergründe erzeugen. Wir schreiben nicht nur Prompts für bestehende Tools; wir trainieren Modelle mit LoRA und ControlNet auf Ihre spezifischen Markenrichtlinien und Produkte (Fine-Tuning), um sicherzustellen, dass die KI-Outputs exakt zu Ihrer visuellen Identität passen. Von der automatisierten Stapelverarbeitung bis zum Echtzeit-Upscaling von Bildern senken unsere Lösungen die Kreativkosten und erhöhen Volumen und Geschwindigkeit der Asset-Produktion massiv.",
+    "features": [
+      "Integration von DALL-E 3 & Stable Diffusion",
+      "Markenspezifisches Model Fine-Tuning (LoRA)",
+      "ControlNet für präzise Kompositionen",
+      "Automatisierte Produktbild-Variationen",
+      "Hintergrundentfernung & -ersetzung",
+      "Hochauflösendes Image Upscaling",
+      "Stapelverarbeitung (Batching) & Pipeline-Architektur",
+      "Automatisierte Inhaltsmoderation"
+    ],
+    "benefits": [
+      "Senkung der kreativen Produktionskosten um bis zu 80%",
+      "Erzeugung Tausender markenkonformer Bilder in Minuten",
+      "Eliminierung teurer und zeitaufwändiger Fotoshootings",
+      "A/B-Testing von Werbemotiven in massivem Maßstab",
+      "Personalisierung visueller Inhalte für verschiedene Zielgruppensegmente",
+      "Strikte Wahrung der Markenkonformität bei allen generierten Assets"
+    ],
+    "metaTitle": "KI-Bildgenerierung Agentur | DALL-E & Stable Diffusion | PakSoft",
+    "metaDescription": "Automatisieren Sie Ihre visuelle Content-Produktion. Wir integrieren Stable Diffusion und DALL-E für maßgeschneiderte, markenkonforme KI-Bild-Pipelines.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Ermittlung der visuellen Anforderungen",
+          "description": "Wir analysieren Ihre Markenrichtlinien, vorhandenen Assets und kreativen Engpässe. Gemeinsam definieren wir den genauen Stil, die Auflösung und die Volumenanforderungen für die generierten Bilder."
+        },
+        {
+          "step": 2,
+          "title": "Modellauswahl & Architektur",
+          "description": "Wir wählen die richtigen Basismodelle (z. B. Stable Diffusion XL für lokale Kontrolle, DALL-E 3 für Prompt-Treue). Wir entwerfen die Pipeline für Prompt-Engineering, Batching und Bildspeicherung."
+        },
+        {
+          "step": 3,
+          "title": "Fine-Tuning & Prompt-Engineering",
+          "description": "Wir trainieren maßgeschneiderte LoRA-Modelle auf Ihren spezifischen Produkten und Marken-Assets, damit die KI Ihre visuelle Identität versteht. Wir entwickeln strukturierte Prompt-Vorlagen für konsistente Ergebnisse."
+        },
+        {
+          "step": 4,
+          "title": "Integration & Pipeline-Entwicklung",
+          "description": "Wir bauen die API-Wrapper und integrieren die Generierungs-Engine in Ihr CMS, PIM oder Marketingplattform. Dies umfasst automatisches Upscaling, Hintergrundentfernung und Formatkonvertierung."
+        },
+        {
+          "step": 5,
+          "title": "Qualitätssicherung & Moderation",
+          "description": "Wir implementieren automatisierte Moderationsschichten, um unangemessene Inhalte und KI-Artefakte (Halluzinationen) zu blockieren. Wir testen die Pipeline mit Tausenden von Edge-Cases."
+        },
+        {
+          "step": 6,
+          "title": "Deployment & Skalierung",
+          "description": "Das System geht live und verarbeitet Bildanfragen in großem Maßstab. Wir überwachen Generierungsqualität, API-Kosten und Latenz und verfeinern Prompts und Modelle basierend auf Ihrem Feedback."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Kann die KI Bilder mit meinen eigenen, spezifischen Produkten generieren?",
+          "answer": "Ja. Wir nutzen fortschrittliche Fine-Tuning-Techniken wie LoRA (Low-Rank Adaptation) und ControlNet für Modelle wie Stable Diffusion. Indem wir die KI mit einem kleinen Datensatz Ihrer tatsächlichen Produktfotos trainieren, lernt sie, exakt diesen Artikel in neuen Umgebungen, bei neuer Beleuchtung und aus neuen Blickwinkeln zu generieren, ohne Merkmale zu erfinden."
+        },
+        {
+          "question": "Wem gehören die Urheberrechte an den generierten Bildern?",
+          "answer": "Im Allgemeinen sind vollständig von KI generierte Bilder nach aktuellem US/EU-Recht für den Ersteller nicht urheberrechtlich schützbar. Sie besitzen jedoch die kommerziellen Nutzungsrechte, die von den API-Plattformen (wie OpenAI) gewährt werden. Wir raten dazu, KI für Marketing-Assets und Hintergründe zu nutzen, während Kernlogos und markenrechtlich geschützte Elemente menschengemacht bleiben sollten."
+        },
+        {
+          "question": "Was kostet ein generiertes Bild?",
+          "answer": "Bei Cloud-APIs wie DALL-E 3 liegen die Kosten zwischen 0,04 und 0,08 US-Dollar pro Bild. Wenn Sie massive Volumina (Hunderttausende von Bildern) benötigen, können wir benutzerdefinierte Stable Diffusion-Modelle auf dedizierten GPU-Instanzen über AWS oder RunPod hosten, was die Kosten pro Bild auf Bruchteile eines Cents reduziert."
+        },
+        {
+          "question": "Können wir sicherstellen, dass die KI unsere Markenfarben und unseren Stil einhält?",
+          "answer": "Absolut. Standard-Text-zu-Bild-Modelle haben oft Probleme mit präziser Markenkonformität. Wir lösen dies, indem wir das Modell spezifisch auf Ihr Brand-Kit fine-tunen und ControlNet verwenden, um spezifische Kompositionen, Farbpaletten und stilistische Einschränkungen zu erzwingen."
+        },
+        {
+          "question": "Wie lange dauert es, eine maßgeschneiderte Bild-Pipeline zu bauen?",
+          "answer": "Eine grundlegende API-Integration für Standard-Bildgenerierung dauert 2–4 Wochen. Eine vollständig angepasste Pipeline mit fine-getunten Produktmodellen, automatisiertem Upscaling und CMS-Integration erfordert typischerweise 6–10 Wochen von der Discovery bis zum Produktions-Rollout."
+        },
+        {
+          "question": "Kann die KI den generierten Bildern Text hinzufügen?",
+          "answer": "Obwohl neuere Modelle wie DALL-E 3 und Midjourney v6 bei der Darstellung von kurzem Text besser werden, sind sie immer noch anfällig für Rechtschreibfehler und unvorhersehbare Typografie. Für zuverlässige Text-Overlays (wie Werbebanner) bauen wir Pipelines, die zuerst das Hintergrundbild generieren und dann traditionelle Grafikbibliotheken nutzen, um den Text präzise und editierbar darüberzulegen."
+        },
+        {
+          "question": "Verwenden Sie Midjourney, DALL-E oder Stable Diffusion?",
+          "answer": "Wir sind plattformunabhängig und nutzen das richtige Tool für die jeweilige Aufgabe. Midjourney glänzt bei High-End-Kunstästhetik, hat aber keine offizielle, robuste API. DALL-E 3 eignet sich hervorragend für exakte Prompt-Umsetzung. Stable Diffusion bietet die ultimative Kontrolle für Fine-Tuning und privates Hosting für maximale Sicherheit."
+        },
+        {
+          "question": "Wie gehen Sie mit unangemessenen oder nicht markenkonformen Generierungen um?",
+          "answer": "Wir implementieren eine strikte Eingabemoderation, um riskante Prompts zu blockieren, sowie eine Ausgabevalidierung, um Artefakte oder NSFW-Inhalte abzufangen, bevor sie Ihr System erreichen. Für öffentlich zugängliche Apps nutzen wir Tools wie den Azure Content Moderator, um die Markensicherheit zu garantieren."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "openai",
+          "name": "OpenAI DALL-E"
+        },
+        {
+          "icon": "stablediffusion",
+          "name": "Stable Diffusion"
+        },
+        {
+          "icon": "midjourney",
+          "name": "Midjourney API"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch"
+        },
+        {
+          "icon": "aws",
+          "name": "AWS SageMaker"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "react",
+          "name": "React"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "AI امیج جنریشن (AI Image Generation)",
+    "shortDescription": "بڑے پیمانے پر بصری مواد (visual assets) کی تخلیق کو خودکار بنانے کے لیے DALL-E، Stable Diffusion اور Midjourney APIs کا استعمال کرتے ہوئے کسٹم AI امیج جنریشن سلوشنز تیار کریں۔",
+    "fullDescription": "بصری مواد (Visual content) کی تخلیق مارکیٹنگ، ای کامرس اور میڈیا کمپنیوں کے لیے ایک بہت بڑی رکاوٹ ہے۔ ہم قابلِ توسیع AI امیج جنریشن پائپ لائنز بناتے ہیں جو دستی ڈیزائن کے کام کو خودکار، برانڈ کے مطابق مواد کی تخلیق سے بدل دیتی ہیں۔ OpenAI DALL-E 3، Stable Diffusion XL اور Midjourney جیسی APIs کا استعمال کرتے ہوئے، ہم ایسے سسٹمز تیار کرتے ہیں جو اعلیٰ معیار کے پراڈکٹ لائف اسٹائل شاٹس، ذاتی نوعیت کے اشتہارات اور متحرک پس منظر تیار کرتے ہیں۔ ہم صرف موجودہ ٹولز کو پرامپٹس نہیں دیتے؛ ہم آپ کی مخصوص برانڈ گائیڈلائنز اور مصنوعات پر ماڈلز کو LoRA اور ControlNet کے ذریعے فائن ٹیون کرتے ہیں، تاکہ یہ یقینی بنایا جا سکے کہ AI کے نتائج آپ کی بصری شناخت سے بالکل میل کھاتے ہیں۔ خودکار بیچ پروسیسنگ سے لے کر ریئل ٹائم امیج اپ سکیلنگ تک، ہمارے سلوشنز تخلیقی لاگت کو کم کرتے ہوئے مواد کی پیداوار کے حجم اور رفتار کو بے حد بڑھا دیتے ہیں۔",
+    "features": [
+      "DALL-E 3 اور Stable Diffusion انٹیگریشن",
+      "برانڈ کے مطابق ماڈل فائن ٹیوننگ (LoRA)",
+      "درست کمپوزیشن کے لیے ControlNet",
+      "پراڈکٹ امیج کی خودکار تبدیلیاں (Variations)",
+      "پس منظر ہٹانا اور تبدیل کرنا",
+      "ہائی ریزولوشن امیج اپ سکیلنگ",
+      "بیچ پروسیسنگ اور پائپ لائن آرکیٹیکچر",
+      "خودکار مواد کی ماڈریشن (Moderation)"
+    ],
+    "benefits": [
+      "تخلیقی پیداوار کی لاگت میں 80 فیصد تک کمی لائیں",
+      "منٹوں میں برانڈ کے مطابق ہزاروں تصاویر تیار کریں",
+      "مہنگے اور وقت طلب فوٹوشوٹس کو ختم کریں",
+      "بڑے پیمانے پر اشتہاری تخلیقات کا A/B ٹیسٹ کریں",
+      "مختلف سامعین کے لیے بصری مواد کو ذاتی نوعیت (Personalize) کا بنائیں",
+      "تیار کردہ تمام مواد میں برانڈ کی مستقل مزاجی برقرار رکھیں"
+    ],
+    "metaTitle": "AI امیج جنریشن سروسز | DALL-E اور Stable Diffusion | PakSoft",
+    "metaDescription": "کسٹم AI امیج جنریشن کے ذریعے بصری مواد کی تخلیق کو خودکار بنائیں۔ ہم برانڈ کے مطابق مواد تیار کرنے کے لیے Stable Diffusion اور DALL-E کو مربوط کرتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "بصری ضروریات کی دریافت",
+          "description": "ہم آپ کی برانڈ گائیڈلائنز، موجودہ اثاثوں اور تخلیقی رکاوٹوں کا تجزیہ کرتے ہیں۔ ہم مل کر تیار کی جانے والی تصاویر کے درست انداز، ریزولوشن اور حجم کی ضروریات کا تعین کرتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "ماڈل کا انتخاب اور آرکیٹیکچر",
+          "description": "ہم صحیح بنیادی ماڈلز کا انتخاب کرتے ہیں (مثلاً مقامی کنٹرول کے لیے Stable Diffusion XL، پرامپٹ کی پابندی کے لیے DALL-E 3)۔ ہم پرامپٹ انجینئرنگ، بیچنگ اور تصویر ذخیرہ کرنے کے لیے پائپ لائن ڈیزائن کرتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "فائن ٹیوننگ اور پرامپٹ انجینئرنگ",
+          "description": "ہم آپ کی مخصوص مصنوعات اور برانڈ کے مواد پر حسب ضرورت LoRA ماڈلز کو تربیت دیتے ہیں تاکہ AI آپ کی بصری شناخت کو سمجھ سکے۔ ہم ایسے پرامپٹ ٹیمپلیٹس بھی بناتے ہیں جو مستقل نتائج دیتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "انٹیگریشن اور پائپ لائن ڈیولپمنٹ",
+          "description": "ہم API ریپرز بناتے ہیں اور جنریشن انجن کو آپ کے CMS، PIM یا مارکیٹنگ پلیٹ فارمز میں ضم کرتے ہیں۔ اس میں خودکار اپ سکیلنگ، پس منظر ہٹانا اور فارمیٹ کی تبدیلی شامل ہے۔"
+        },
+        {
+          "step": 5,
+          "title": "کوالٹی اشورینس اور ماڈریشن",
+          "description": "ہم نامناسب مواد اور AI کی خرابیوں (hallucinations) کو روکنے کے لیے خودکار ماڈریشن تہیں لگاتے ہیں۔ ہم مستقل معیار کو یقینی بنانے کے لیے پائپ لائن کو ہزاروں ایج کیسز پر ٹیسٹ کرتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "تعیناتی اور اسکیلنگ (Deployment)",
+          "description": "سسٹم لائیو ہو جاتا ہے اور بڑے پیمانے پر تصاویر کی درخواستوں پر کارروائی کرتا ہے۔ ہم جنریشن کے معیار، API لاگت اور تاخیر کی مسلسل نگرانی کرتے ہیں، اور آپ کی رائے کی بنیاد پر ماڈلز کو بہتر بناتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "کیا AI میری مخصوص مصنوعات کے ساتھ تصاویر بنا سکتا ہے؟",
+          "answer": "جی ہاں۔ ہم Stable Diffusion جیسے ماڈلز پر LoRA (Low-Rank Adaptation) اور ControlNet جیسی جدید فائن ٹیوننگ تکنیک استعمال کرتے ہیں۔ AI کو آپ کی اصل پروڈکٹ کی تصاویر کے ایک چھوٹے سے ڈیٹاسیٹ پر تربیت دے کر، یہ بالکل اسی چیز کو نئے ماحول، روشنی اور زاویوں میں بغیر غلطی (hallucination) کے بنانا سیکھ لیتا ہے۔"
+        },
+        {
+          "question": "تیار کردہ تصاویر کے کاپی رائٹ کا مالک کون ہے؟",
+          "answer": "عمومی طور پر، مکمل طور پر AI کے ذریعے تیار کردہ تصاویر پر موجودہ امریکی/یورپی قوانین کے تحت تخلیق کار کا کاپی رائٹ نہیں ہوتا۔ تاہم، آپ کے پاس تجارتی استعمال کے حقوق ہوتے ہیں جو API پلیٹ فارمز (جیسے OpenAI) فراہم کرتے ہیں۔ ہم مارکیٹنگ اور پس منظر کے لیے AI کے استعمال کا مشورہ دیتے ہیں، جبکہ بنیادی لوگوز انسان کے بنائے ہوئے ہونے چاہئیں۔"
+        },
+        {
+          "question": "فی تصویر تیار کرنے کی لاگت کیا ہے؟",
+          "answer": "DALL-E 3 جیسی کلاؤڈ APIs استعمال کرنے پر، لاگت فی تصویر $0.04 سے $0.08 تک ہوتی ہے۔ اگر آپ کو بڑے حجم (لاکھوں تصاویر) کی ضرورت ہے، تو ہم AWS یا RunPod کے ذریعے وقف شدہ GPU انسٹینسز پر حسب ضرورت Stable Diffusion ماڈلز تعینات کر سکتے ہیں، جو فی تصویر لاگت کو ایک سینٹ کے بہت چھوٹے حصے تک کم کر دیتا ہے۔"
+        },
+        {
+          "question": "کیا ہم یقینی بنا سکتے ہیں کہ AI ہمارے برانڈ کے رنگوں اور انداز کی پیروی کرے؟",
+          "answer": "بالکل۔ معیاری ٹیکسٹ ٹو امیج ماڈلز درست برانڈ کی تعمیل میں جدوجہد کرتے ہیں۔ ہم اس ماڈل کو خاص طور پر آپ کی برانڈ کٹ پر فائن ٹیون کر کے اور مخصوص کمپوزیشنز، رنگوں اور انداز کو نافذ کرنے کے لیے ControlNet کا استعمال کر کے اس مسئلے کو حل کرتے ہیں۔"
+        },
+        {
+          "question": "کسٹم امیج پائپ لائن بنانے میں کتنا وقت لگتا ہے؟",
+          "answer": "معیاری امیج جنریشن کے لیے بنیادی API انٹیگریشن میں 2–4 ہفتے لگتے ہیں۔ فائن ٹیونڈ پراڈکٹ ماڈلز، خودکار اپ سکیلنگ اور CMS انٹیگریشن کے ساتھ مکمل طور پر حسب ضرورت پائپ لائن کو ڈسکوری سے پروڈکشن تک عموماً 6–10 ہفتے درکار ہوتے ہیں۔"
+        },
+        {
+          "question": "کیا AI تیار کردہ تصاویر میں متن (text) شامل کر سکتا ہے؟",
+          "answer": "اگرچہ DALL-E 3 اور Midjourney v6 جیسے نئے ماڈلز مختصر متن دکھانے میں بہتر ہو رہے ہیں، لیکن ان میں اب بھی ہجے کی غلطیاں اور غیر متوقع ٹائپوگرافی کا امکان ہوتا ہے۔ قابل اعتماد متن کے لیے (جیسے ایڈ بینرز)، ہم ایسی پائپ لائنز بناتے ہیں جو پہلے پس منظر تیار کرتی ہیں، پھر قابل تدوین متن لگانے کے لیے روایتی گرافک لائبریریاں استعمال کرتی ہیں۔"
+        },
+        {
+          "question": "کیا آپ Midjourney، DALL-E یا Stable Diffusion استعمال کرتے ہیں؟",
+          "answer": "ہم پلیٹ فارم کے پابند نہیں ہیں اور کام کے لیے صحیح ٹول استعمال کرتے ہیں۔ Midjourney اعلیٰ درجے کی فنکارانہ جمالیات میں بہترین ہے لیکن اس کی باضابطہ API نہیں ہے۔ DALL-E 3 پرامپٹ کی پابندی اور فوری انٹیگریشن کے لیے شاندار ہے۔ Stable Diffusion فائن ٹیوننگ اور زیادہ سے زیادہ کنٹرول کے لیے بہترین ہے۔"
+        },
+        {
+          "question": "آپ نامناسب یا برانڈ سے ہٹ کر تیار ہونے والی تصاویر سے کیسے نمٹتے ہیں؟",
+          "answer": "ہم خطرناک پرامپٹس کو روکنے کے لیے سخت ان پٹ ماڈریشن نافذ کرتے ہیں، اور آپ کے سسٹم تک پہنچنے سے پہلے نامناسب مواد کو پکڑنے کے لیے آؤٹ پٹ کی توثیق کرتے ہیں۔ عوامی ایپس کے لیے، ہم برانڈ کی حفاظت کو یقینی بنانے کے لیے Azure Content Moderator جیسے ٹولز استعمال کرتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "openai",
+          "name": "OpenAI DALL-E"
+        },
+        {
+          "icon": "stablediffusion",
+          "name": "Stable Diffusion"
+        },
+        {
+          "icon": "midjourney",
+          "name": "Midjourney API"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch"
+        },
+        {
+          "icon": "aws",
+          "name": "AWS SageMaker"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "react",
+          "name": "React"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "توليد الصور بالذكاء الاصطناعي",
+    "shortDescription": "قم بإنشاء حلول مخصصة لتوليد الصور بالذكاء الاصطناعي باستخدام DALL-E و Stable Diffusion و Midjourney لأتمتة إنشاء الأصول المرئية والتخصيص على نطاق واسع.",
+    "fullDescription": "يعد إنشاء المحتوى المرئي عقبة هائلة لشركات التسويق والتجارة الإلكترونية والإعلام. نحن نبني مسارات (Pipelines) قابلة للتطوير لتوليد الصور بالذكاء الاصطناعي والتي تستبدل أعمال التصميم اليدوية بإنشاء أصول آلية ومتوافقة مع العلامة التجارية. باستخدام واجهات برمجة التطبيقات (APIs) مثل OpenAI DALL-E 3 و Stable Diffusion XL و Midjourney، نقوم بتطوير أنظمة تولد لقطات منتجات عالية الجودة، وتصميمات إعلانات مخصصة، وخلفيات ديناميكية. نحن لا نكتفي بكتابة المطالبات (Prompts) للأدوات الحالية؛ بل نقوم بضبط دقيق (Fine-tuning) للنماذج وفقاً لإرشادات علامتك التجارية ومنتجاتك الخاصة باستخدام LoRA و ControlNet، مما يضمن تطابق مخرجات الذكاء الاصطناعي مع هويتك المرئية الدقيقة. من المعالجة الآلية المجمعة (Batch processing) إلى تحسين دقة الصور (Upscaling) في الوقت الفعلي، تعمل حلولنا على خفض التكاليف الإبداعية مع زيادة حجم وسرعة إنتاج الأصول بشكل كبير.",
+    "features": [
+      "تكامل DALL-E 3 و Stable Diffusion",
+      "الضبط الدقيق للنماذج الخاصة بالعلامة التجارية (LoRA)",
+      "تقنية ControlNet للتركيب المرئي الدقيق",
+      "توليد اختلافات صور المنتجات آلياً",
+      "إزالة واستبدال الخلفيات",
+      "تحسين دقة الصور (Upscaling) عالية الوضوح",
+      "المعالجة المجمعة وبنية مسار العمل (Pipeline)",
+      "الاعتدال الآلي للمحتوى (Content Moderation)"
+    ],
+    "benefits": [
+      "تقليل تكاليف الإنتاج الإبداعي بنسبة تصل إلى 80٪",
+      "إنشاء آلاف الصور المتوافقة مع العلامة التجارية في دقائق",
+      "التخلص من جلسات التصوير الباهظة والمستهلكة للوقت",
+      "إجراء اختبارات A/B لتصميمات الإعلانات على نطاق واسع",
+      "تخصيص المحتوى المرئي لشرائح الجمهور المختلفة",
+      "الحفاظ على اتساق صارم للعلامة التجارية عبر جميع الأصول المُنشأة"
+    ],
+    "metaTitle": "خدمات توليد الصور بالذكاء الاصطناعي | PakSoft",
+    "metaDescription": "قم بأتمتة إنشاء المحتوى المرئي من خلال توليد الصور المخصص بالذكاء الاصطناعي. ندمج Stable Diffusion و DALL-E لبناء مسارات أصول متوافقة مع علامتك التجارية.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "اكتشاف المتطلبات المرئية",
+          "description": "نقوم بتحليل إرشادات علامتك التجارية، والأصول الحالية، والعقبات الإبداعية. نحدد معاً النمط الدقيق، والدقة، ومتطلبات الحجم للصور التي سيتم إنشاؤها."
+        },
+        {
+          "step": 2,
+          "title": "اختيار النموذج والهندسة المعمارية",
+          "description": "نختار النماذج الأساسية الصحيحة (مثل Stable Diffusion XL للتحكم المحلي، و DALL-E 3 للالتزام بالمطالبات). نصمم مسار العمل لهندسة المطالبات، والمعالجة المجمعة، وتخزين الصور."
+        },
+        {
+          "step": 3,
+          "title": "الضبط الدقيق (Fine-Tuning) وهندسة المطالبات",
+          "description": "نقوم بتدريب نماذج LoRA مخصصة على منتجاتك الخاصة وأصول علامتك التجارية لضمان فهم الذكاء الاصطناعي لهويتك المرئية. كما نقوم بتطوير قوالب مطالبات منظمة تعطي نتائج متسقة."
+        },
+        {
+          "step": 4,
+          "title": "التكامل وتطوير مسار العمل (Pipeline)",
+          "description": "نبني واجهات (API Wrappers) وندمج محرك التوليد في نظام إدارة المحتوى (CMS) أو منصات التسويق الخاصة بك. يشمل ذلك التحسين الآلي للدقة، وإزالة الخلفية، وتحويل التنسيقات."
+        },
+        {
+          "step": 5,
+          "title": "ضمان الجودة والاعتدال",
+          "description": "نقوم بتنفيذ طبقات اعتدال آلية لحظر المحتوى غير اللائق والأخطاء المرئية (Hallucinations). نختبر مسار العمل عبر آلاف الحالات الطرفية لضمان الجودة المتسقة."
+        },
+        {
+          "step": 6,
+          "title": "النشر والتوسع (Deployment)",
+          "description": "ينطلق النظام للعمل، ويعالج طلبات الصور على نطاق واسع. نراقب باستمرار جودة التوليد، وتكاليف API، وزمن الانتقال، ونقوم بتحسين المطالبات والنماذج بناءً على ملاحظاتك."
+        }
+      ],
+      "faq": [
+        {
+          "question": "هل يمكن للذكاء الاصطناعي إنشاء صور لمنتجاتي الخاصة تحديداً؟",
+          "answer": "نعم. نستخدم تقنيات ضبط دقيق متقدمة مثل LoRA و ControlNet على نماذج مثل Stable Diffusion. من خلال تدريب الذكاء الاصطناعي على مجموعة بيانات صغيرة من صور منتجك الفعلي، فإنه يتعلم إنشاء هذا العنصر بالضبط في بيئات وإضاءة وزوايا جديدة دون اختلاق ميزات وهمية."
+        },
+        {
+          "question": "من يملك حقوق الطبع والنشر للصور المُنشأة؟",
+          "answer": "بشكل عام، لا تخضع الصور التي يتم إنشاؤها بالكامل بواسطة الذكاء الاصطناعي لحقوق الطبع والنشر من قبل المنشئ بموجب القانون الأمريكي/الأوروبي الحالي. ومع ذلك، فإنك تمتلك حقوق الاستخدام التجاري التي توفرها منصات API (مثل OpenAI). ننصح باستخدام الذكاء الاصطناعي لأصول التسويق وتصميمات الإعلانات، مع إبقاء الشعارات الأساسية من صنع الإنسان."
+        },
+        {
+          "question": "ما هي تكلفة كل صورة مُنشأة؟",
+          "answer": "باستخدام واجهات برمجة التطبيقات السحابية مثل DALL-E 3، تتراوح التكاليف من 0.04 دولار إلى 0.08 دولار لكل صورة. إذا كنت بحاجة إلى حجم هائل (مئات الآلاف من الصور)، يمكننا نشر نماذج Stable Diffusion مخصصة على خوادم GPU مخصصة عبر AWS أو RunPod، مما يقلل التكلفة إلى أجزاء من السنت."
+        },
+        {
+          "question": "هل يمكننا ضمان التزام الذكاء الاصطناعي بألوان وأسلوب علامتنا التجارية؟",
+          "answer": "بالتأكيد. تكافح نماذج تحويل النص إلى صورة القياسية مع الامتثال الدقيق للعلامة التجارية. نحن نحل هذه المشكلة عن طريق الضبط الدقيق (Fine-tuning) للنموذج تحديداً على حزمة علامتك التجارية واستخدام تقنية ControlNet لفرض تركيبات معينة ولوحات ألوان وقيود أسلوبية."
+        },
+        {
+          "question": "كم من الوقت يستغرق بناء مسار (Pipeline) صور مخصص؟",
+          "answer": "يستغرق التكامل الأساسي لـ API لتوليد الصور القياسي من أسبوعين إلى 4 أسابيع. أما مسار العمل المخصص بالكامل مع نماذج المنتجات المضبوطة بدقة، والتحسين الآلي للدقة (Upscaling)، والتكامل مع نظام إدارة المحتوى (CMS)، فيتطلب عادةً من 6 إلى 10 أسابيع."
+        },
+        {
+          "question": "هل يمكن للذكاء الاصطناعي إضافة نص إلى الصور المُنشأة؟",
+          "answer": "في حين أن النماذج الأحدث مثل DALL-E 3 و Midjourney v6 تتحسن في تقديم نص قصير، إلا أنها لا تزال عرضة للأخطاء الإملائية. للحصول على طبقات نصية موثوقة (مثل لافتات الإعلانات)، نبني مسارات عمل تولد صورة الخلفية أولاً، ثم نستخدم مكتبات الرسوم التقليدية لتركيب نص دقيق وقابل للتحرير."
+        },
+        {
+          "question": "هل تستخدمون Midjourney أم DALL-E أم Stable Diffusion؟",
+          "answer": "نحن لا نقتصر على منصة واحدة ونستخدم الأداة المناسبة للمهمة. يتفوق Midjourney في الجماليات الفنية ولكنه يفتقر إلى API رسمية. يعد DALL-E 3 ممتازاً في الالتزام بالمطالبات والتكامل السريع. يوفر Stable Diffusion التحكم المطلق، مما يتيح لنا الضبط الدقيق واستخدام ControlNet والاستضافة بشكل خاص."
+        },
+        {
+          "question": "كيف تتعاملون مع التوليدات غير اللائقة أو غير المتوافقة مع العلامة التجارية؟",
+          "answer": "نقوم بتنفيذ اعتدال صارم للمدخلات لحظر المطالبات المحفوفة بالمخاطر، والتحقق من المخرجات لالتقاط المحتوى غير اللائق قبل وصوله إلى نظامك. بالنسبة للتطبيقات الموجهة للجمهور، نستخدم أدوات مثل Azure Content Moderator لضمان سلامة العلامة التجارية."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "openai",
+          "name": "OpenAI DALL-E"
+        },
+        {
+          "icon": "stablediffusion",
+          "name": "Stable Diffusion"
+        },
+        {
+          "icon": "midjourney",
+          "name": "Midjourney API"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch"
+        },
+        {
+          "icon": "aws",
+          "name": "AWS SageMaker"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "react",
+          "name": "React"
+        }
+      ]
+    }
+  }
+}

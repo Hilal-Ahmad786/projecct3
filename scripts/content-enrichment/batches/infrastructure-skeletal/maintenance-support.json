@@ -1,0 +1,638 @@
+{
+  "slug": "maintenance-support",
+  "en": {
+    "name": "Maintenance & Support",
+    "shortDescription": "Ensure your applications run flawlessly with PakSoft's comprehensive maintenance and support. We provide proactive monitoring, timely updates, and expert assistance to keep your systems secure, performant, and reliable, minimizing downtime and maximizing operational efficiency.",
+    "fullDescription": "PakSoft offers robust Maintenance & Support services to safeguard your digital assets. Our proactive approach includes continuous monitoring, regular security patches, and performance optimizations to prevent issues before they impact your operations. We handle everything from critical bug fixes and routine updates to feature enhancements, ensuring your software remains current, secure, and aligned with evolving business needs. Our dedicated support team provides rapid response and expert troubleshooting, ensuring minimal disruption and maximum uptime for your critical applications. Partner with us to extend the lifespan and enhance the value of your software investments.",
+    "features": [
+      "Proactive Monitoring & Alerting",
+      "Critical Bug Fixing & Patch Management",
+      "Security Updates & Vulnerability Management",
+      "Performance Optimization & Tuning",
+      "Feature Enhancements & Updates",
+      "24/7 Technical Support & Incident Response",
+      "Database Maintenance & Optimization",
+      "Comprehensive Documentation & Knowledge Base"
+    ],
+    "benefits": [
+      "Maximized Application Uptime & Reliability",
+      "Enhanced Security Posture & Compliance",
+      "Reduced Operational Costs & Risks",
+      "Improved Performance & User Experience",
+      "Extended Software Lifespan & ROI",
+      "Access to Expert Technical Guidance"
+    ],
+    "metaTitle": "Reliable Software Maintenance & Support | PakSoft",
+    "metaDescription": "Ensure your applications are always secure, performant, and up-to-date with PakSoft's expert maintenance and support services. Minimize downtime and maximize efficiency. Contact us today for a tailored plan.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Assessment & Onboarding",
+          "description": "We begin by thoroughly assessing your existing applications and infrastructure, understanding your current state, and documenting all critical components. This phase establishes a baseline for our support services and integrates your systems into our monitoring framework."
+        },
+        {
+          "step": 2,
+          "title": "Proactive Monitoring Setup",
+          "description": "Our team deploys advanced monitoring tools to continuously track your application's health, performance, and security metrics. This allows us to detect potential issues early, often before they impact users, ensuring high availability."
+        },
+        {
+          "step": 3,
+          "title": "Regular Maintenance & Updates",
+          "description": "We schedule and execute routine maintenance tasks, including security patches, software updates, and database optimizations. This keeps your systems secure, performant, and compliant with the latest industry standards."
+        },
+        {
+          "step": 4,
+          "title": "Incident Response & Bug Fixing",
+          "description": "Upon detecting an issue or receiving a support request, our dedicated team initiates rapid incident response and troubleshooting. We prioritize and resolve bugs efficiently, minimizing downtime and restoring full functionality swiftly."
+        },
+        {
+          "step": 5,
+          "title": "Performance Optimization & Enhancements",
+          "description": "Beyond fixing issues, we continuously analyze performance data to identify areas for optimization and suggest feature enhancements. This ensures your applications evolve and continue to meet your business objectives effectively."
+        },
+        {
+          "step": 6,
+          "title": "Reporting & Communication",
+          "description": "We provide regular reports on system health, maintenance activities, and incident resolutions, maintaining transparent communication. Our team is always available for consultations and strategic planning to align support with your long-term goals."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What types of applications do you support?",
+          "answer": "We support a wide range of applications, including web, mobile, desktop, and enterprise systems built on various technologies. Our expertise spans custom software, SaaS platforms, and legacy systems, ensuring comprehensive coverage for your digital ecosystem."
+        },
+        {
+          "question": "How quickly do you respond to critical issues?",
+          "answer": "Our Service Level Agreements (SLAs) define specific response times based on issue severity, with critical issues typically receiving a response within 15-30 minutes, 24/7. We aim for rapid resolution to minimize any impact on your operations."
+        },
+        {
+          "question": "Do you offer 24/7 support?",
+          "answer": "Yes, we offer 24/7 monitoring and support for critical incidents, ensuring that your applications are protected around the clock. Our global team is equipped to handle emergencies regardless of time zones."
+        },
+        {
+          "question": "Can you support legacy systems?",
+          "answer": "Absolutely. We specialize in maintaining and modernizing legacy systems, ensuring their continued stability, security, and performance. Our approach often involves strategic upgrades and refactoring to extend their useful life."
+        },
+        {
+          "question": "How do you handle security updates?",
+          "answer": "We proactively monitor for new vulnerabilities and security patches relevant to your technology stack. Updates are thoroughly tested in staging environments before deployment to production, ensuring minimal disruption and maximum security."
+        },
+        {
+          "question": "What is included in performance optimization?",
+          "answer": "Performance optimization includes database tuning, code refactoring, infrastructure scaling recommendations, and caching strategies. Our goal is to ensure your application runs efficiently, loads quickly, and provides an optimal user experience."
+        },
+        {
+          "question": "How often do you provide reports?",
+          "answer": "We provide monthly or quarterly reports detailing system uptime, incident summaries, maintenance activities, and performance metrics. Custom reporting frequencies can also be arranged based on your specific needs and preferences."
+        },
+        {
+          "question": "What if I need new features developed?",
+          "answer": "While our core maintenance service focuses on stability and existing features, we can seamlessly integrate new feature development requests into our workflow. This can be handled as a separate project or as part of an ongoing enhancement plan, leveraging our development expertise."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Jira",
+          "icon": "jira"
+        },
+        {
+          "name": "ServiceNow",
+          "icon": "servicenow"
+        },
+        {
+          "name": "Grafana",
+          "icon": "grafana"
+        },
+        {
+          "name": "Prometheus",
+          "icon": "prometheus"
+        },
+        {
+          "name": "PagerDuty",
+          "icon": "pagerduty"
+        },
+        {
+          "name": "GitLab",
+          "icon": "gitlab"
+        },
+        {
+          "name": "GitHub Actions",
+          "icon": "github"
+        },
+        {
+          "name": "Ansible",
+          "icon": "ansible"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Bakım ve Destek",
+    "shortDescription": "Uygulamalarınızın sorunsuz çalışmasını PakSoft'un kapsamlı bakım ve destek hizmetleriyle sağlayın. Sistemlerinizi güvenli, performanslı ve güvenilir tutmak için proaktif izleme, zamanında güncellemeler ve uzman yardımı sunarak kesinti sürelerini en aza indiririz.",
+    "fullDescription": "PakSoft, dijital varlıklarınızı korumak için sağlam Bakım ve Destek hizmetleri sunar. Proaktif yaklaşımımız, operasyonlarınızı etkilemeden önce sorunları önlemek için sürekli izleme, düzenli güvenlik yamaları ve performans optimizasyonlarını içerir. Kritik hata düzeltmelerinden rutin güncellemelere ve özellik geliştirmelerine kadar her şeyi ele alarak yazılımınızın güncel, güvenli ve gelişen iş ihtiyaçlarınızla uyumlu kalmasını sağlarız. Özel destek ekibimiz, kritik uygulamalarınız için minimum kesinti ve maksimum çalışma süresi sağlayarak hızlı yanıt ve uzman sorun giderme hizmeti sunar. Yazılım yatırımlarınızın ömrünü uzatmak ve değerini artırmak için bizimle ortak olun.",
+    "features": [
+      "Proaktif İzleme ve Uyarı",
+      "Kritik Hata Düzeltme ve Yama Yönetimi",
+      "Güvenlik Güncellemeleri ve Güvenlik Açığı Yönetimi",
+      "Performans Optimizasyonu ve Ayarlama",
+      "Özellik Geliştirmeleri ve Güncellemeler",
+      "7/24 Teknik Destek ve Olay Müdahalesi",
+      "Veritabanı Bakımı ve Optimizasyonu",
+      "Kapsamlı Dokümantasyon ve Bilgi Tabanı"
+    ],
+    "benefits": [
+      "Maksimum Uygulama Çalışma Süresi ve Güvenilirlik",
+      "Gelişmiş Güvenlik Durumu ve Uyumluluk",
+      "Azaltılmış Operasyonel Maliyetler ve Riskler",
+      "İyileştirilmiş Performans ve Kullanıcı Deneyimi",
+      "Uzatılmış Yazılım Ömrü ve Yatırım Getirisi",
+      "Uzman Teknik Rehberliğe Erişim"
+    ],
+    "metaTitle": "Güvenilir Yazılım Bakım ve Destek | PakSoft",
+    "metaDescription": "PakSoft'un uzman bakım ve destek hizmetleriyle uygulamalarınızın her zaman güvenli, performanslı ve güncel olduğundan emin olun. Kesinti sürelerini en aza indirin ve verimliliği en üst düzeye çıkarın. Özel bir plan için bugün bize ulaşın.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Değerlendirme ve Entegrasyon",
+          "description": "Mevcut uygulamalarınızı ve altyapınızı kapsamlı bir şekilde değerlendirerek, mevcut durumunuzu anlar ve tüm kritik bileşenleri belgeleriz. Bu aşama, destek hizmetlerimiz için bir temel oluşturur ve sistemlerinizi izleme çerçevemize entegre eder."
+        },
+        {
+          "step": 2,
+          "title": "Proaktif İzleme Kurulumu",
+          "description": "Ekibimiz, uygulamanızın sağlığını, performansını ve güvenlik metriklerini sürekli olarak izlemek için gelişmiş izleme araçları dağıtır. Bu, potansiyel sorunları kullanıcıları etkilemeden önce erken tespit etmemizi sağlayarak yüksek kullanılabilirlik sağlar."
+        },
+        {
+          "step": 3,
+          "title": "Düzenli Bakım ve Güncellemeler",
+          "description": "Güvenlik yamaları, yazılım güncellemeleri ve veritabanı optimizasyonları dahil olmak üzere rutin bakım görevlerini planlar ve yürütürüz. Bu, sistemlerinizin güvenli, performanslı ve en son endüstri standartlarına uygun kalmasını sağlar."
+        },
+        {
+          "step": 4,
+          "title": "Olay Müdahalesi ve Hata Düzeltme",
+          "description": "Bir sorun tespit edildiğinde veya bir destek talebi alındığında, özel ekibimiz hızlı olay müdahalesi ve sorun giderme başlatır. Hataları verimli bir şekilde önceliklendirir ve çözer, kesinti süresini en aza indirir ve tam işlevselliği hızla geri yükleriz."
+        },
+        {
+          "step": 5,
+          "title": "Performans Optimizasyonu ve Geliştirmeler",
+          "description": "Sorunları düzeltmenin ötesinde, optimizasyon alanlarını belirlemek ve özellik geliştirmeleri önermek için performans verilerini sürekli olarak analiz ederiz. Bu, uygulamalarınızın gelişmesini ve iş hedeflerinizi etkili bir şekilde karşılamaya devam etmesini sağlar."
+        },
+        {
+          "step": 6,
+          "title": "Raporlama ve İletişim",
+          "description": "Sistem sağlığı, bakım faaliyetleri ve olay çözümleri hakkında düzenli raporlar sunarak şeffaf iletişimi sürdürürüz. Ekibimiz, desteği uzun vadeli hedeflerinizle uyumlu hale getirmek için danışmanlık ve stratejik planlama için her zaman hazırdır."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Ne tür uygulamaları destekliyorsunuz?",
+          "answer": "Web, mobil, masaüstü ve çeşitli teknolojiler üzerine kurulu kurumsal sistemler dahil olmak üzere geniş bir uygulama yelpazesini destekliyoruz. Uzmanlığımız, dijital ekosisteminiz için kapsamlı kapsama alanı sağlayarak özel yazılımları, SaaS platformlarını ve eski sistemleri kapsar."
+        },
+        {
+          "question": "Kritik sorunlara ne kadar hızlı yanıt veriyorsunuz?",
+          "answer": "Hizmet Seviyesi Anlaşmalarımız (SLA'lar), sorun ciddiyetine göre belirli yanıt sürelerini tanımlar; kritik sorunlar genellikle 7/24, 15-30 dakika içinde yanıt alır. Operasyonlarınız üzerindeki herhangi bir etkiyi en aza indirmek için hızlı çözüm hedefliyoruz."
+        },
+        {
+          "question": "7/24 destek sunuyor musunuz?",
+          "answer": "Evet, kritik olaylar için 7/24 izleme ve destek sunarak uygulamalarınızın günün her saati korunmasını sağlıyoruz. Küresel ekibimiz, zaman dilimlerinden bağımsız olarak acil durumları ele almak için donatılmıştır."
+        },
+        {
+          "question": "Eski sistemleri destekleyebilir misiniz?",
+          "answer": "Kesinlikle. Eski sistemlerin bakımını ve modernizasyonunu yapma konusunda uzmanız, sürekli kararlılıklarını, güvenliklerini ve performanslarını sağlıyoruz. Yaklaşımımız genellikle faydalı ömürlerini uzatmak için stratejik yükseltmeler ve yeniden düzenlemeyi içerir."
+        },
+        {
+          "question": "Güvenlik güncellemelerini nasıl ele alıyorsunuz?",
+          "answer": "Teknoloji yığınlarınızla ilgili yeni güvenlik açıklarını ve güvenlik yamalarını proaktif olarak izliyoruz. Güncellemeler, üretim ortamına dağıtılmadan önce hazırlık ortamlarında kapsamlı bir şekilde test edilir, minimum kesinti ve maksimum güvenlik sağlanır."
+        },
+        {
+          "question": "Performans optimizasyonuna neler dahildir?",
+          "answer": "Performans optimizasyonu, veritabanı ayarlaması, kod yeniden düzenleme, altyapı ölçeklendirme önerileri ve önbellekleme stratejilerini içerir. Amacımız, uygulamanızın verimli çalışmasını, hızlı yüklenmesini ve optimum kullanıcı deneyimi sunmasını sağlamaktır."
+        },
+        {
+          "question": "Ne sıklıkla rapor sağlıyorsunuz?",
+          "answer": "Sistem çalışma süresi, olay özetleri, bakım faaliyetleri ve performans metriklerini detaylandıran aylık veya üç aylık raporlar sunuyoruz. Özel raporlama sıklıkları, özel ihtiyaçlarınıza ve tercihlerinize göre de düzenlenebilir."
+        },
+        {
+          "question": "Yeni özellikler geliştirmem gerekirse ne olur?",
+          "answer": "Temel bakım hizmetimiz istikrar ve mevcut özelliklere odaklanırken, yeni özellik geliştirme taleplerini iş akışımıza sorunsuz bir şekilde entegre edebiliriz. Bu, ayrı bir proje olarak veya devam eden bir geliştirme planının parçası olarak, geliştirme uzmanlığımızdan yararlanılarak ele alınabilir."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Jira",
+          "icon": "jira"
+        },
+        {
+          "name": "ServiceNow",
+          "icon": "servicenow"
+        },
+        {
+          "name": "Grafana",
+          "icon": "grafana"
+        },
+        {
+          "name": "Prometheus",
+          "icon": "prometheus"
+        },
+        {
+          "name": "PagerDuty",
+          "icon": "pagerduty"
+        },
+        {
+          "name": "GitLab",
+          "icon": "gitlab"
+        },
+        {
+          "name": "GitHub Actions",
+          "icon": "github"
+        },
+        {
+          "name": "Ansible",
+          "icon": "ansible"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Wartung & Support",
+    "shortDescription": "Sorgen Sie mit den umfassenden Wartungs- und Supportleistungen von PakSoft für den reibungslosen Betrieb Ihrer Anwendungen. Wir bieten proaktive Überwachung, zeitnahe Updates und fachkundige Unterstützung, um Ihre Systeme sicher, leistungsfähig und zuverlässig zu halten, Ausfallzeiten zu minimieren und die Betriebseffizienz zu maximieren.",
+    "fullDescription": "PakSoft bietet robuste Wartungs- und Supportleistungen, um Ihre digitalen Assets zu schützen. Unser proaktiver Ansatz umfasst kontinuierliche Überwachung, regelmäßige Sicherheitspatches und Leistungsoptimierungen, um Probleme zu verhindern, bevor sie Ihre Abläufe beeinträchtigen. Wir kümmern uns um alles, von kritischen Fehlerbehebungen und routinemäßigen Updates bis hin zu Funktionserweiterungen, um sicherzustellen, dass Ihre Software aktuell, sicher und an die sich entwickelnden Geschäftsanforderungen angepasst bleibt. Unser engagiertes Support-Team bietet schnelle Reaktion und fachkundige Fehlerbehebung, um minimale Unterbrechungen und maximale Betriebszeit für Ihre kritischen Anwendungen zu gewährleisten. Arbeiten Sie mit uns zusammen, um die Lebensdauer und den Wert Ihrer Softwareinvestitionen zu verlängern.",
+    "features": [
+      "Proaktive Überwachung & Alarmierung",
+      "Kritische Fehlerbehebung & Patch-Management",
+      "Sicherheitsupdates & Schwachstellenmanagement",
+      "Leistungsoptimierung & Feinabstimmung",
+      "Funktionserweiterungen & Updates",
+      "24/7 Technischer Support & Incident Response",
+      "Datenbankwartung & Optimierung",
+      "Umfassende Dokumentation & Wissensdatenbank"
+    ],
+    "benefits": [
+      "Maximale Anwendungsverfügbarkeit & Zuverlässigkeit",
+      "Verbesserte Sicherheitslage & Compliance",
+      "Reduzierte Betriebskosten & Risiken",
+      "Optimierte Leistung & Benutzererfahrung",
+      "Verlängerte Software-Lebensdauer & ROI",
+      "Zugang zu fachkundiger technischer Beratung"
+    ],
+    "metaTitle": "Zuverlässige Software-Wartung & Support | PakSoft",
+    "metaDescription": "Stellen Sie mit den Experten-Wartungs- und Supportleistungen von PakSoft sicher, dass Ihre Anwendungen stets sicher, leistungsfähig und aktuell sind. Minimieren Sie Ausfallzeiten und maximieren Sie die Effizienz. Kontaktieren Sie uns noch heute für einen maßgeschneiderten Plan.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Bewertung & Onboarding",
+          "description": "Wir beginnen mit einer gründlichen Bewertung Ihrer bestehenden Anwendungen und Infrastruktur, um Ihren aktuellen Zustand zu verstehen und alle kritischen Komponenten zu dokumentieren. Diese Phase legt eine Grundlage für unsere Supportleistungen und integriert Ihre Systeme in unser Überwachungsframework."
+        },
+        {
+          "step": 2,
+          "title": "Einrichtung der proaktiven Überwachung",
+          "description": "Unser Team implementiert fortschrittliche Überwachungstools, um den Zustand, die Leistung und die Sicherheitsmetriken Ihrer Anwendung kontinuierlich zu verfolgen. Dies ermöglicht es uns, potenzielle Probleme frühzeitig zu erkennen, oft bevor sie Benutzer beeinträchtigen, und so eine hohe Verfügbarkeit zu gewährleisten."
+        },
+        {
+          "step": 3,
+          "title": "Regelmäßige Wartung & Updates",
+          "description": "Wir planen und führen routinemäßige Wartungsaufgaben durch, einschließlich Sicherheitspatches, Software-Updates und Datenbankoptimierungen. Dadurch bleiben Ihre Systeme sicher, leistungsfähig und entsprechen den neuesten Industriestandards."
+        },
+        {
+          "step": 4,
+          "title": "Incident Response & Fehlerbehebung",
+          "description": "Bei der Erkennung eines Problems oder dem Erhalt einer Supportanfrage leitet unser engagiertes Team eine schnelle Incident Response und Fehlerbehebung ein. Wir priorisieren und beheben Fehler effizient, minimieren Ausfallzeiten und stellen die volle Funktionalität schnell wieder her."
+        },
+        {
+          "step": 5,
+          "title": "Leistungsoptimierung & Erweiterungen",
+          "description": "Über die Fehlerbehebung hinaus analysieren wir kontinuierlich Leistungsdaten, um Bereiche für Optimierungen zu identifizieren und Funktionserweiterungen vorzuschlagen. Dies stellt sicher, dass Ihre Anwendungen sich weiterentwickeln und Ihre Geschäftsziele effektiv erfüllen."
+        },
+        {
+          "step": 6,
+          "title": "Berichterstattung & Kommunikation",
+          "description": "Wir erstellen regelmäßige Berichte über den Systemzustand, Wartungsaktivitäten und Incident-Lösungen, um eine transparente Kommunikation aufrechtzuerhalten. Unser Team steht jederzeit für Beratungen und strategische Planungen zur Verfügung, um den Support an Ihren langfristigen Zielen auszurichten."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Welche Arten von Anwendungen unterstützen Sie?",
+          "answer": "Wir unterstützen eine breite Palette von Anwendungen, einschließlich Web-, Mobil-, Desktop- und Unternehmenssystemen, die auf verschiedenen Technologien basieren. Unsere Expertise umfasst kundenspezifische Software, SaaS-Plattformen und Altsysteme, um eine umfassende Abdeckung für Ihr digitales Ökosystem zu gewährleisten."
+        },
+        {
+          "question": "Wie schnell reagieren Sie auf kritische Probleme?",
+          "answer": "Unsere Service Level Agreements (SLAs) definieren spezifische Reaktionszeiten basierend auf der Schwere des Problems, wobei kritische Probleme typischerweise innerhalb von 15-30 Minuten, 24/7, eine Antwort erhalten. Wir streben eine schnelle Lösung an, um jegliche Auswirkungen auf Ihre Abläufe zu minimieren."
+        },
+        {
+          "question": "Bieten Sie 24/7-Support an?",
+          "answer": "Ja, wir bieten 24/7-Überwachung und -Support für kritische Vorfälle, um sicherzustellen, dass Ihre Anwendungen rund um die Uhr geschützt sind. Unser globales Team ist darauf vorbereitet, Notfälle unabhängig von Zeitzonen zu bewältigen."
+        },
+        {
+          "question": "Können Sie Altsysteme unterstützen?",
+          "answer": "Absolut. Wir sind spezialisiert auf die Wartung und Modernisierung von Altsystemen, um deren kontinuierliche Stabilität, Sicherheit und Leistung zu gewährleisten. Unser Ansatz beinhaltet oft strategische Upgrades und Refactoring, um ihre Nutzungsdauer zu verlängern."
+        },
+        {
+          "question": "Wie gehen Sie mit Sicherheitsupdates um?",
+          "answer": "Wir überwachen proaktiv neue Schwachstellen und Sicherheitspatches, die für Ihren Technologie-Stack relevant sind. Updates werden in Staging-Umgebungen gründlich getestet, bevor sie in die Produktion eingesetzt werden, um minimale Unterbrechungen und maximale Sicherheit zu gewährleisten."
+        },
+        {
+          "question": "Was ist in der Leistungsoptimierung enthalten?",
+          "answer": "Leistungsoptimierung umfasst Datenbank-Tuning, Code-Refactoring, Empfehlungen zur Infrastruktur-Skalierung und Caching-Strategien. Unser Ziel ist es, sicherzustellen, dass Ihre Anwendung effizient läuft, schnell lädt und ein optimales Benutzererlebnis bietet."
+        },
+        {
+          "question": "Wie oft stellen Sie Berichte bereit?",
+          "answer": "Wir stellen monatliche oder vierteljährliche Berichte bereit, die die Systemverfügbarkeit, Incident-Zusammenfassungen, Wartungsaktivitäten und Leistungsmetriken detailliert beschreiben. Kundenspezifische Berichtsintervalle können auch basierend auf Ihren spezifischen Bedürfnissen und Präferenzen vereinbart werden."
+        },
+        {
+          "question": "Was passiert, wenn ich neue Funktionen entwickeln lassen möchte?",
+          "answer": "Während unser Kernwartungsservice sich auf Stabilität und bestehende Funktionen konzentriert, können wir Anfragen zur Entwicklung neuer Funktionen nahtlos in unseren Workflow integrieren. Dies kann als separates Projekt oder als Teil eines laufenden Erweiterungsplans behandelt werden, wobei wir unsere Entwicklungsexpertise nutzen."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Jira",
+          "icon": "jira"
+        },
+        {
+          "name": "ServiceNow",
+          "icon": "servicenow"
+        },
+        {
+          "name": "Grafana",
+          "icon": "grafana"
+        },
+        {
+          "name": "Prometheus",
+          "icon": "prometheus"
+        },
+        {
+          "name": "PagerDuty",
+          "icon": "pagerduty"
+        },
+        {
+          "name": "GitLab",
+          "icon": "gitlab"
+        },
+        {
+          "name": "GitHub Actions",
+          "icon": "github"
+        },
+        {
+          "name": "Ansible",
+          "icon": "ansible"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "دیکھ بھال اور معاونت",
+    "shortDescription": "پاک سوفٹ کی جامع دیکھ بھال اور معاونت کی خدمات کے ساتھ اپنی ایپلیکیشنز کو بے عیب طریقے سے چلائیں۔ ہم آپ کے سسٹمز کو محفوظ، کارکردگی کے حامل اور قابل اعتماد رکھنے کے لیے فعال نگرانی، بروقت اپ ڈیٹس اور ماہرانہ مدد فراہم کرتے ہیں، جس سے ڈاؤن ٹائم کم ہوتا ہے اور آپریشنل کارکردگی زیادہ ہوتی ہے۔",
+    "fullDescription": "پاک سوفٹ آپ کے ڈیجیٹل اثاثوں کی حفاظت کے لیے مضبوط دیکھ بھال اور معاونت کی خدمات پیش کرتا ہے۔ ہمارا فعال طریقہ کار مسلسل نگرانی، باقاعدہ سیکیورٹی پیچز، اور کارکردگی کی اصلاحات پر مشتمل ہے تاکہ مسائل کو آپ کے آپریشنز کو متاثر کرنے سے پہلے روکا جا سکے۔ ہم اہم بگ فکسز اور معمول کے اپ ڈیٹس سے لے کر فیچر کی بہتری تک ہر چیز کو سنبھالتے ہیں، اس بات کو یقینی بناتے ہیں کہ آپ کا سافٹ ویئر موجودہ، محفوظ اور بدلتی ہوئی کاروباری ضروریات کے مطابق رہے۔ ہماری وقف شدہ سپورٹ ٹیم آپ کی اہم ایپلیکیشنز کے لیے کم سے کم رکاوٹ اور زیادہ سے زیادہ اپ ٹائم کو یقینی بناتے ہوئے فوری ردعمل اور ماہرانہ خرابیوں کا سراغ لگاتی ہے۔ اپنے سافٹ ویئر کی سرمایہ کاری کی عمر بڑھانے اور قدر بڑھانے کے لیے ہمارے ساتھ شراکت کریں۔",
+    "features": [
+      "فعال نگرانی اور الرٹنگ",
+      "اہم بگ فکسنگ اور پیچ مینجمنٹ",
+      "سیکیورٹی اپ ڈیٹس اور کمزوری کا انتظام",
+      "کارکردگی کی اصلاح اور ٹیوننگ",
+      "فیچر کی بہتری اور اپ ڈیٹس",
+      "24/7 تکنیکی معاونت اور واقعہ کا ردعمل",
+      "ڈیٹا بیس کی دیکھ بھال اور اصلاح",
+      "جامع دستاویزات اور نالج بیس"
+    ],
+    "benefits": [
+      "زیادہ سے زیادہ ایپلیکیشن اپ ٹائم اور قابل اعتماد",
+      "بہتر سیکیورٹی پوزیشن اور تعمیل",
+      "کم آپریشنل لاگت اور خطرات",
+      "بہتر کارکردگی اور صارف کا تجربہ",
+      "توسیعی سافٹ ویئر کی عمر اور ROI",
+      "ماہر تکنیکی رہنمائی تک رسائی"
+    ],
+    "metaTitle": "قابل اعتماد سافٹ ویئر دیکھ بھال اور معاونت | PakSoft",
+    "metaDescription": "پاک سوفٹ کی ماہر دیکھ بھال اور معاونت کی خدمات کے ساتھ یقینی بنائیں کہ آپ کی ایپلیکیشنز ہمیشہ محفوظ، کارکردگی کے حامل اور اپ ٹو ڈیٹ ہیں۔ ڈاؤن ٹائم کو کم کریں اور کارکردگی کو زیادہ سے زیادہ کریں۔ ایک موزوں منصوبے کے لیے آج ہی ہم سے رابطہ کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تشخیص اور آن بورڈنگ",
+          "description": "ہم آپ کی موجودہ ایپلیکیشنز اور انفراسٹرکچر کا مکمل جائزہ لے کر آغاز کرتے ہیں، آپ کی موجودہ حالت کو سمجھتے ہیں اور تمام اہم اجزاء کو دستاویز کرتے ہیں۔ یہ مرحلہ ہماری معاونت کی خدمات کے لیے ایک بنیاد قائم کرتا ہے اور آپ کے سسٹمز کو ہمارے نگرانی کے فریم ورک میں ضم کرتا ہے۔"
+        },
+        {
+          "step": 2,
+          "title": "فعال نگرانی کا سیٹ اپ",
+          "description": "ہماری ٹیم آپ کی ایپلیکیشن کی صحت، کارکردگی اور سیکیورٹی میٹرکس کو مسلسل ٹریک کرنے کے لیے جدید نگرانی کے ٹولز تعینات کرتی ہے۔ یہ ہمیں ممکنہ مسائل کو جلد، اکثر صارفین کو متاثر کرنے سے پہلے ہی، دریافت کرنے کی اجازت دیتا ہے، جس سے اعلیٰ دستیابی یقینی ہوتی ہے۔"
+        },
+        {
+          "step": 3,
+          "title": "باقاعدہ دیکھ بھال اور اپ ڈیٹس",
+          "description": "ہم معمول کی دیکھ بھال کے کاموں کو شیڈول اور انجام دیتے ہیں، بشمول سیکیورٹی پیچز، سافٹ ویئر اپ ڈیٹس، اور ڈیٹا بیس کی اصلاحات۔ یہ آپ کے سسٹمز کو محفوظ، کارکردگی کے حامل اور تازہ ترین صنعتی معیارات کے مطابق رکھتا ہے۔"
+        },
+        {
+          "step": 4,
+          "title": "واقعہ کا ردعمل اور بگ فکسنگ",
+          "description": "کسی مسئلے کا پتہ چلنے یا معاونت کی درخواست موصول ہونے پر، ہماری وقف شدہ ٹیم فوری واقعہ کا ردعمل اور خرابیوں کا سراغ لگانا شروع کرتی ہے۔ ہم بگ کو مؤثر طریقے سے ترجیح دیتے اور حل کرتے ہیں، ڈاؤن ٹائم کو کم کرتے ہیں اور مکمل فعالیت کو تیزی سے بحال کرتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "کارکردگی کی اصلاح اور بہتری",
+          "description": "مسائل کو حل کرنے کے علاوہ، ہم اصلاح کے شعبوں کی نشاندہی کرنے اور فیچر کی بہتری کی تجویز دینے کے لیے کارکردگی کے ڈیٹا کا مسلسل تجزیہ کرتے ہیں۔ یہ یقینی بناتا ہے کہ آپ کی ایپلیکیشنز تیار ہوں اور آپ کے کاروباری مقاصد کو مؤثر طریقے سے پورا کرتی رہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "رپورٹنگ اور مواصلت",
+          "description": "ہم سسٹم کی صحت، دیکھ بھال کی سرگرمیوں، اور واقعہ کے حل کے بارے میں باقاعدہ رپورٹس فراہم کرتے ہیں، شفاف مواصلت کو برقرار رکھتے ہیں۔ ہماری ٹیم طویل مدتی اہداف کے ساتھ معاونت کو ہم آہنگ کرنے کے لیے مشاورت اور اسٹریٹجک منصوبہ بندی کے لیے ہمیشہ دستیاب ہے۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "آپ کس قسم کی ایپلیکیشنز کو سپورٹ کرتے ہیں؟",
+          "answer": "ہم مختلف ٹیکنالوجیز پر بنی ویب، موبائل، ڈیسک ٹاپ، اور انٹرپرائز سسٹمز سمیت ایپلیکیشنز کی ایک وسیع رینج کو سپورٹ کرتے ہیں۔ ہماری مہارت کسٹم سافٹ ویئر، SaaS پلیٹ فارمز، اور لیگیسی سسٹمز پر محیط ہے، جو آپ کے ڈیجیٹل ایکو سسٹم کے لیے جامع کوریج کو یقینی بناتی ہے۔"
+        },
+        {
+          "question": "آپ اہم مسائل پر کتنی جلدی ردعمل دیتے ہیں؟",
+          "answer": "ہمارے سروس لیول ایگریمنٹس (SLAs) مسئلے کی شدت کی بنیاد پر مخصوص ردعمل کے اوقات کی وضاحت کرتے ہیں، جس میں اہم مسائل کو عام طور پر 24/7، 15-30 منٹ کے اندر ردعمل ملتا ہے۔ ہم آپ کے آپریشنز پر کسی بھی اثر کو کم کرنے کے لیے فوری حل کا ہدف رکھتے ہیں۔"
+        },
+        {
+          "question": "کیا آپ 24/7 سپورٹ پیش کرتے ہیں؟",
+          "answer": "جی ہاں، ہم اہم واقعات کے لیے 24/7 نگرانی اور معاونت پیش کرتے ہیں، اس بات کو یقینی بناتے ہیں کہ آپ کی ایپلیکیشنز چوبیس گھنٹے محفوظ رہیں۔ ہماری عالمی ٹیم ٹائم زونز سے قطع نظر ہنگامی حالات کو سنبھالنے کے لیے لیس ہے۔"
+        },
+        {
+          "question": "کیا آپ لیگیسی سسٹمز کو سپورٹ کر سکتے ہیں؟",
+          "answer": "بالکل۔ ہم لیگیسی سسٹمز کی دیکھ بھال اور جدید کاری میں مہارت رکھتے ہیں، ان کی مسلسل استحکام، سیکیورٹی، اور کارکردگی کو یقینی بناتے ہیں۔ ہمارا طریقہ کار اکثر ان کی مفید زندگی کو بڑھانے کے لیے اسٹریٹجک اپ گریڈز اور ریفیکٹرنگ کو شامل کرتا ہے۔"
+        },
+        {
+          "question": "آپ سیکیورٹی اپ ڈیٹس کو کیسے سنبھالتے ہیں؟",
+          "answer": "ہم آپ کے ٹیکنالوجی اسٹیک سے متعلق نئی کمزوریوں اور سیکیورٹی پیچز کی فعال طور پر نگرانی کرتے ہیں۔ اپ ڈیٹس کو پروڈکشن میں تعینات کرنے سے پہلے اسٹیجنگ ماحول میں اچھی طرح سے جانچا جاتا ہے، جس سے کم سے کم رکاوٹ اور زیادہ سے زیادہ سیکیورٹی یقینی ہوتی ہے۔"
+        },
+        {
+          "question": "کارکردگی کی اصلاح میں کیا شامل ہے؟",
+          "answer": "کارکردگی کی اصلاح میں ڈیٹا بیس ٹیوننگ، کوڈ ریفیکٹرنگ، انفراسٹرکچر اسکیلنگ کی سفارشات، اور کیشنگ کی حکمت عملی شامل ہیں۔ ہمارا مقصد یہ یقینی بنانا ہے کہ آپ کی ایپلیکیشن مؤثر طریقے سے چلے، تیزی سے لوڈ ہو، اور بہترین صارف کا تجربہ فراہم کرے۔"
+        },
+        {
+          "question": "آپ کتنی بار رپورٹس فراہم کرتے ہیں؟",
+          "answer": "ہم سسٹم اپ ٹائم، واقعہ کے خلاصے، دیکھ بھال کی سرگرمیوں، اور کارکردگی کے میٹرکس کی تفصیلات کے ساتھ ماہانہ یا سہ ماہی رپورٹس فراہم کرتے ہیں۔ آپ کی مخصوص ضروریات اور ترجیحات کی بنیاد پر کسٹم رپورٹنگ کی فریکوئنسی بھی ترتیب دی جا سکتی ہے۔"
+        },
+        {
+          "question": "اگر مجھے نئی خصوصیات تیار کرنے کی ضرورت ہو تو کیا ہوگا؟",
+          "answer": "جبکہ ہماری بنیادی دیکھ بھال کی خدمت استحکام اور موجودہ خصوصیات پر مرکوز ہے، ہم نئی خصوصیات کی ترقی کی درخواستوں کو اپنے ورک فلو میں بغیر کسی رکاوٹ کے ضم کر سکتے ہیں۔ اسے ایک علیحدہ منصوبے کے طور پر یا جاری بہتری کے منصوبے کے حصے کے طور پر سنبھالا جا سکتا ہے، ہماری ترقیاتی مہارت کا فائدہ اٹھاتے ہوئے."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Jira",
+          "icon": "jira"
+        },
+        {
+          "name": "ServiceNow",
+          "icon": "servicenow"
+        },
+        {
+          "name": "Grafana",
+          "icon": "grafana"
+        },
+        {
+          "name": "Prometheus",
+          "icon": "prometheus"
+        },
+        {
+          "name": "PagerDuty",
+          "icon": "pagerduty"
+        },
+        {
+          "name": "GitLab",
+          "icon": "gitlab"
+        },
+        {
+          "name": "GitHub Actions",
+          "icon": "github"
+        },
+        {
+          "name": "Ansible",
+          "icon": "ansible"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "الصيانة والدعم",
+    "shortDescription": "تأكد من تشغيل تطبيقاتك بسلاسة مع خدمات الصيانة والدعم الشاملة من PakSoft. نحن نقدم مراقبة استباقية وتحديثات في الوقت المناسب ومساعدة الخبراء للحفاظ على أنظمتك آمنة وفعالة وموثوقة، مما يقلل من وقت التوقف عن العمل ويزيد من الكفاءة التشغيلية.",
+    "fullDescription": "تقدم PakSoft خدمات صيانة ودعم قوية لحماية أصولك الرقمية. يتضمن نهجنا الاستباقي المراقبة المستمرة، وتصحيحات الأمان المنتظمة، وتحسينات الأداء لمنع المشكلات قبل أن تؤثر على عملياتك. نتعامل مع كل شيء بدءًا من إصلاحات الأخطاء الحرجة والتحديثات الروتينية وصولاً إلى تحسينات الميزات، مما يضمن بقاء برنامجك حديثًا وآمنًا ومتوافقًا مع احتياجات العمل المتطورة. يوفر فريق الدعم المتخصص لدينا استجابة سريعة واستكشاف الأخطاء وإصلاحها بخبرة، مما يضمن الحد الأدنى من التعطيل والحد الأقصى من وقت التشغيل لتطبيقاتك الهامة. شاركنا لتمديد عمر استثماراتك البرمجية وتعزيز قيمتها.",
+    "features": [
+      "المراقبة الاستباقية والتنبيه",
+      "إصلاح الأخطاء الحرجة وإدارة التصحيحات",
+      "تحديثات الأمان وإدارة الثغرات الأمنية",
+      "تحسين الأداء والضبط",
+      "تحسينات الميزات والتحديثات",
+      "دعم فني على مدار الساعة طوال أيام الأسبوع والاستجابة للحوادث",
+      "صيانة وتحسين قواعد البيانات",
+      "وثائق شاملة وقاعدة معرفية"
+    ],
+    "benefits": [
+      "زيادة وقت تشغيل التطبيق وموثوقيته",
+      "تعزيز الوضع الأمني والامتثال",
+      "تقليل التكاليف والمخاطر التشغيلية",
+      "تحسين الأداء وتجربة المستخدم",
+      "إطالة عمر البرنامج وعائد الاستثمار",
+      "الوصول إلى إرشادات فنية متخصصة"
+    ],
+    "metaTitle": "صيانة ودعم برامج موثوقة | PakSoft",
+    "metaDescription": "تأكد من أن تطبيقاتك آمنة وفعالة ومحدثة دائمًا مع خدمات الصيانة والدعم المتخصصة من PakSoft. قلل وقت التوقف عن العمل وزد الكفاءة. اتصل بنا اليوم للحصول على خطة مخصصة.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "التقييم والتأهيل",
+          "description": "نبدأ بتقييم شامل لتطبيقاتك وبنيتك التحتية الحالية، وفهم حالتك الراهنة، وتوثيق جميع المكونات الحيوية. تحدد هذه المرحلة أساس خدمات الدعم لدينا وتدمج أنظمتك في إطار المراقبة الخاص بنا."
+        },
+        {
+          "step": 2,
+          "title": "إعداد المراقبة الاستباقية",
+          "description": "ينشر فريقنا أدوات مراقبة متقدمة لتتبع صحة تطبيقك وأدائه ومقاييس الأمان بشكل مستمر. يتيح لنا ذلك اكتشاف المشكلات المحتملة مبكرًا، غالبًا قبل أن تؤثر على المستخدمين، مما يضمن توفرًا عاليًا."
+        },
+        {
+          "step": 3,
+          "title": "الصيانة والتحديثات المنتظمة",
+          "description": "نقوم بجدولة وتنفيذ مهام الصيانة الروتينية، بما في ذلك تصحيحات الأمان وتحديثات البرامج وتحسينات قواعد البيانات. يحافظ هذا على أنظمتك آمنة وفعالة ومتوافقة مع أحدث معايير الصناعة."
+        },
+        {
+          "step": 4,
+          "title": "الاستجابة للحوادث وإصلاح الأخطاء",
+          "description": "عند اكتشاف مشكلة أو تلقي طلب دعم، يبدأ فريقنا المتخصص استجابة سريعة للحوادث واستكشاف الأخطاء وإصلاحها. نقوم بتحديد أولويات الأخطاء وحلها بكفاءة، مما يقلل من وقت التوقف عن العمل ويعيد الوظائف الكاملة بسرعة."
+        },
+        {
+          "step": 5,
+          "title": "تحسين الأداء والتحسينات",
+          "description": "بالإضافة إلى إصلاح المشكلات، نقوم بتحليل بيانات الأداء باستمرار لتحديد مجالات التحسين واقتراح تحسينات للميزات. يضمن ذلك تطور تطبيقاتك واستمرارها في تلبية أهداف عملك بفعالية."
+        },
+        {
+          "step": 6,
+          "title": "التقارير والتواصل",
+          "description": "نقدم تقارير منتظمة عن صحة النظام، وملخصات الحوادث، وأنشطة الصيانة، ومقاييس الأداء، مع الحفاظ على التواصل الشفاف. فريقنا متاح دائمًا للاستشارات والتخطيط الاستراتيجي لمواءمة الدعم مع أهدافك طويلة المدى."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما هي أنواع التطبيقات التي تدعمونها؟",
+          "answer": "نحن ندعم مجموعة واسعة من التطبيقات، بما في ذلك أنظمة الويب والجوال وسطح المكتب وأنظمة المؤسسات المبنية على تقنيات مختلفة. تمتد خبرتنا لتشمل البرامج المخصصة ومنصات SaaS والأنظمة القديمة، مما يضمن تغطية شاملة لنظامك البيئي الرقمي."
+        },
+        {
+          "question": "ما مدى سرعة استجابتكم للمشكلات الحرجة؟",
+          "answer": "تحدد اتفاقيات مستوى الخدمة (SLAs) الخاصة بنا أوقات استجابة محددة بناءً على خطورة المشكلة، حيث تتلقى المشكلات الحرجة عادةً استجابة في غضون 15-30 دقيقة، على مدار الساعة طوال أيام الأسبوع. نهدف إلى حل سريع لتقليل أي تأثير على عملياتك."
+        },
+        {
+          "question": "هل تقدمون دعمًا على مدار الساعة طوال أيام الأسبوع؟",
+          "answer": "نعم، نحن نقدم مراقبة ودعمًا على مدار الساعة طوال أيام الأسبوع للحوادث الحرجة، مما يضمن حماية تطبيقاتك على مدار الساعة. فريقنا العالمي مجهز للتعامل مع حالات الطوارئ بغض النظر عن المناطق الزمنية."
+        },
+        {
+          "question": "هل يمكنكم دعم الأنظمة القديمة؟",
+          "answer": "بالتأكيد. نحن متخصصون في صيانة وتحديث الأنظمة القديمة، مما يضمن استمرار استقرارها وأمانها وأدائها. غالبًا ما يتضمن نهجنا ترقيات استراتيجية وإعادة هيكلة لإطالة عمرها الافتراضي المفيد."
+        },
+        {
+          "question": "كيف تتعاملون مع تحديثات الأمان؟",
+          "answer": "نحن نراقب بشكل استباقي الثغرات الأمنية الجديدة وتصحيحات الأمان ذات الصلة بمجموعة التقنيات الخاصة بك. يتم اختبار التحديثات بدقة في بيئات الاختبار قبل النشر إلى الإنتاج، مما يضمن الحد الأدنى من التعطيل وأقصى قدر من الأمان."
+        },
+        {
+          "question": "ما الذي يتضمنه تحسين الأداء؟",
+          "answer": "يتضمن تحسين الأداء ضبط قاعدة البيانات، وإعادة هيكلة التعليمات البرمجية، وتوصيات توسيع البنية التحتية، واستراتيجيات التخزين المؤقت. هدفنا هو ضمان تشغيل تطبيقك بكفاءة، وتحميله بسرعة، وتوفير تجربة مستخدم مثالية."
+        },
+        {
+          "question": "كم مرة تقدمون التقارير؟",
+          "answer": "نقدم تقارير شهرية أو ربع سنوية تفصل وقت تشغيل النظام، وملخصات الحوادث، وأنشطة الصيانة، ومقاييس الأداء. يمكن أيضًا ترتيب ترددات التقارير المخصصة بناءً على احتياجاتك وتفضيلاتك المحددة."
+        },
+        {
+          "question": "ماذا لو احتجت إلى تطوير ميزات جديدة؟",
+          "answer": "بينما تركز خدمة الصيانة الأساسية لدينا على الاستقرار والميزات الحالية، يمكننا دمج طلبات تطوير الميزات الجديدة بسلاسة في سير عملنا. يمكن التعامل مع هذا كمشروع منفصل أو كجزء من خطة تحسين مستمرة، بالاستفادة من خبرتنا في التطوير."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Jira",
+          "icon": "jira"
+        },
+        {
+          "name": "ServiceNow",
+          "icon": "servicenow"
+        },
+        {
+          "name": "Grafana",
+          "icon": "grafana"
+        },
+        {
+          "name": "Prometheus",
+          "icon": "prometheus"
+        },
+        {
+          "name": "PagerDuty",
+          "icon": "pagerduty"
+        },
+        {
+          "name": "GitLab",
+          "icon": "gitlab"
+        },
+        {
+          "name": "GitHub Actions",
+          "icon": "github"
+        },
+        {
+          "name": "Ansible",
+          "icon": "ansible"
+        }
+      ]
+    }
+  }
+}

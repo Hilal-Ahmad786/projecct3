@@ -1,0 +1,638 @@
+{
+  "slug": "ai-integration",
+  "en": {
+    "name": "AI Integration Services",
+    "shortDescription": "Seamlessly embed LLMs, predictive models, and custom AI APIs into your existing software, turning legacy applications into intelligent platforms.",
+    "fullDescription": "Building a great AI model is only half the battle; integrating it into your existing tech stack without breaking performance is where the real complexity lies. Our AI integration services connect powerful machine learning models and LLMs (OpenAI, Claude, local models) directly into your web apps, mobile apps, and enterprise systems (ERP, CRM). We don't just paste an API key — we design robust middleware architectures that handle rate limiting, prompt caching, background queue processing, and fallback mechanisms for when external AI services go down. Whether you need to inject AI search into a legacy SQL database, add smart summarization to your proprietary dashboard, or route intelligent notifications through Kafka, we bridge the gap between cutting-edge AI and your everyday software operations securely.",
+    "features": [
+      "LLM API Integration (OpenAI, Anthropic, Gemini)",
+      "Legacy System & ERP/CRM AI Bridging",
+      "Middleware & Gateway Architecture",
+      "Rate Limiting & Cost Control Logic",
+      "Prompt Caching & Redis Integration",
+      "Asynchronous Queue Processing (Kafka/RabbitMQ)",
+      "Fallback & Error Handling Mechanisms",
+      "Secure Data Sanitization & PII Masking"
+    ],
+    "benefits": [
+      "Modernize legacy software without rewriting it from scratch",
+      "Keep API costs predictable with smart caching and rate limits",
+      "Ensure app stability even when third-party AI APIs face downtime",
+      "Protect sensitive customer data before it reaches public LLMs",
+      "Process heavy AI tasks in the background without freezing the UI",
+      "Accelerate time-to-market by using proven middleware patterns"
+    ],
+    "metaTitle": "AI Integration Services | Connect LLMs to Your Apps | PakSoft",
+    "metaDescription": "Integrate AI seamlessly into your existing software. We connect LLMs, build robust API middleware, and modernize legacy systems with intelligent features.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Architecture Assessment",
+          "description": "We audit your existing tech stack, databases, and third-party tools. We identify the integration points where AI can add the most value and review system limitations like latency."
+        },
+        {
+          "step": 2,
+          "title": "Security & Compliance Review",
+          "description": "Before any data flows to an AI model, we establish compliance guardrails. We design PII masking strategies and decide between cloud APIs or self-hosted models to meet your data privacy needs."
+        },
+        {
+          "step": 3,
+          "title": "Middleware Development",
+          "description": "We build the integration layer—typically in Node.js or Python—that will manage communication between your app and the AI. This layer handles retries, formatting, and prompt construction."
+        },
+        {
+          "step": 4,
+          "title": "Performance Optimization",
+          "description": "AI APIs can be slow. We implement Redis for caching repeated queries and message brokers like Kafka or Celery to run heavy AI tasks asynchronously, keeping your user interface fast."
+        },
+        {
+          "step": 5,
+          "title": "Testing & Fallback Implementation",
+          "description": "We stress-test the integration under high load and simulate API outages. We ensure that if the AI provider goes down, your app gracefully degrades rather than crashing entirely."
+        },
+        {
+          "step": 6,
+          "title": "Deployment & Cost Monitoring",
+          "description": "We deploy the integrated system and set up custom dashboards. You will have full visibility into API latency, error rates, and exact token costs per feature in real time."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How do you protect sensitive data when using external AI APIs?",
+          "answer": "We use a combination of techniques. First, we implement PII (Personally Identifiable Information) scrubbers in the middleware that strip names, emails, and financial data before sending prompts to OpenAI or Claude. If your industry (like healthcare or finance) strictly forbids cloud APIs, we integrate open-source models (like Llama 3) hosted on your own secure cloud infrastructure."
+        },
+        {
+          "question": "Will adding AI make my application slow?",
+          "answer": "It can, if done incorrectly. LLM responses take seconds, which feels like an eternity in a web app. We solve this by using asynchronous background jobs (via Celery or BullMQ) for heavy tasks, streaming responses directly to the frontend (like ChatGPT does), and caching frequent identical queries using Redis to provide instant answers."
+        },
+        {
+          "question": "Can you integrate AI into an old, legacy system?",
+          "answer": "Yes. We frequently integrate modern AI into legacy ERPs and older SQL databases. We do this by building a modern microservice (API Gateway) that acts as a bridge. The legacy system talks to our bridge using standard webhooks or REST, and our bridge handles the complex AI orchestration."
+        },
+        {
+          "question": "What happens if the OpenAI or Anthropic API goes down?",
+          "answer": "We design for failure. Our middleware includes automatic retries with exponential backoff. For mission-critical features, we implement multi-provider fallbacks: if OpenAI times out, the system automatically routes the request to Anthropic Claude or a backup local model to ensure uninterrupted service."
+        },
+        {
+          "question": "How do we stop AI costs from spiraling out of control?",
+          "answer": "Cost control is built into our integration architecture. We implement hard rate limits per user, cache duplicate requests so you don't pay twice for the same answer, and use smaller, cheaper models (like GPT-4o-mini) for simple routing tasks, reserving expensive models only for complex reasoning."
+        },
+        {
+          "question": "Do we need to switch our whole stack to Python for AI?",
+          "answer": "Not at all. While the core AI/ML data science ecosystem is Python-heavy, integration is stack-agnostic. We can build AI microservices in Node.js, Go, or Java that communicate seamlessly with your existing PHP, .NET, or Ruby applications via standard REST APIs or gRPC."
+        },
+        {
+          "question": "How long does a typical AI integration take?",
+          "answer": "Adding a specific feature—like an AI summarizer or semantic search—to an existing app usually takes 3–6 weeks. Complex enterprise integrations that require deep database syncing, custom middleware, and strict security compliance take 2–3 months."
+        },
+        {
+          "question": "Can you integrate AI into our CRM like Salesforce or HubSpot?",
+          "answer": "Yes. We build custom middleware that hooks into your CRM's webhooks. For example, when a new ticket is created in Zendesk or Salesforce, our integration can intercept it, use AI to analyze the sentiment and draft a response, and push that draft back into the CRM for your agents."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python / FastAPI"
+        },
+        {
+          "icon": "nodedotjs",
+          "name": "Node.js"
+        },
+        {
+          "icon": "redis",
+          "name": "Redis"
+        },
+        {
+          "icon": "apachekafka",
+          "name": "Apache Kafka"
+        },
+        {
+          "icon": "openai",
+          "name": "OpenAI API"
+        },
+        {
+          "icon": "anthropic",
+          "name": "Anthropic API"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS API Gateway"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Yapay Zeka Entegrasyon Hizmetleri",
+    "shortDescription": "LLM'leri, tahmine dayalı modelleri ve özel yapay zeka API'lerini mevcut yazılımınıza sorunsuz bir şekilde yerleştirerek eski uygulamaları akıllı platformlara dönüştürün.",
+    "fullDescription": "Harika bir yapay zeka modeli oluşturmak işin sadece yarısıdır; onu performansı bozmadan mevcut teknoloji yığınınıza (tech stack) entegre etmek asıl karmaşıklığın yattığı yerdir. Yapay zeka entegrasyon hizmetlerimiz, güçlü makine öğrenimi modellerini ve LLM'leri (OpenAI, Claude, yerel modeller) doğrudan web uygulamalarınıza, mobil uygulamalarınıza ve kurumsal sistemlerinize (ERP, CRM) bağlar. Sadece bir API anahtarı yapıştırmıyoruz; hız sınırlaması (rate limiting), prompt önbelleğe alma (caching), arka plan kuyruk işleme ve dış yapay zeka hizmetleri çöktüğünde devreye girecek yedek (fallback) mekanizmalarını yöneten sağlam ara yazılım (middleware) mimarileri tasarlıyoruz. Eski bir SQL veritabanına yapay zeka destekli arama eklemek, özel kontrol panelinize akıllı özetleme getirmek veya akıllı bildirimleri Kafka üzerinden yönlendirmek istiyorsanız, en yeni yapay zeka teknolojileri ile günlük yazılım operasyonlarınız arasındaki köprüyü güvenli bir şekilde kuruyoruz.",
+    "features": [
+      "LLM API Entegrasyonu (OpenAI, Anthropic, Gemini)",
+      "Eski Sistem (Legacy) ve ERP/CRM Yapay Zeka Köprüsü",
+      "Ara Yazılım (Middleware) ve Gateway Mimarisi",
+      "Hız Sınırlaması (Rate Limiting) ve Maliyet Kontrol Mantığı",
+      "Prompt Önbellekleme ve Redis Entegrasyonu",
+      "Asenkron Kuyruk İşleme (Kafka/RabbitMQ)",
+      "Yedekleme (Fallback) ve Hata Yönetim Mekanizmaları",
+      "Güvenli Veri Temizleme ve PII Maskeleme"
+    ],
+    "benefits": [
+      "Eski yazılımları sıfırdan yazmadan modernize edin",
+      "Akıllı önbellekleme ve hız sınırlarıyla API maliyetlerini öngörülebilir tutun",
+      "Üçüncü taraf yapay zeka API'leri kesintiye uğrasa bile uygulama kararlılığını sağlayın",
+      "Müşteri verilerini herkese açık LLM'lere ulaşmadan önce koruyun",
+      "Kullanıcı arayüzünü (UI) dondurmadan ağır yapay zeka görevlerini arka planda işleyin",
+      "Kanıtlanmış ara yazılım kalıplarını kullanarak pazara çıkış süresini hızlandırın"
+    ],
+    "metaTitle": "Yapay Zeka Entegrasyon Hizmetleri | PakSoft",
+    "metaDescription": "Yapay zekayı mevcut yazılımınıza sorunsuz bir şekilde entegre edin. LLM'leri bağlıyor, sağlam API ara yazılımları (middleware) kuruyor ve sistemlerinizi modernize ediyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Mimari Değerlendirmesi",
+          "description": "Mevcut teknoloji yığınınızı, veritabanlarınızı ve üçüncü taraf araçlarınızı denetliyoruz. Yapay zekanın en çok değer katabileceği entegrasyon noktalarını belirliyor ve gecikme (latency) gibi sistem sınırlamalarını inceliyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Güvenlik ve Uyumluluk İncelemesi",
+          "description": "Bir yapay zeka modeline herhangi bir veri akmadan önce uyumluluk koruma bariyerlerini kuruyoruz. PII (Kişisel Veri) maskeleme stratejileri tasarlıyor ve veri gizliliği ihtiyaçlarınızı karşılamak için bulut API'leri veya kendi sunucunuzdaki (self-hosted) modeller arasında karar veriyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Ara Yazılım (Middleware) Geliştirme",
+          "description": "Uygulamanız ile yapay zeka arasındaki iletişimi yönetecek olan entegrasyon katmanını (genellikle Node.js veya Python dilinde) oluşturuyoruz. Bu katman yeniden denemeleri, formatlamayı ve prompt oluşturmayı yönetir."
+        },
+        {
+          "step": 4,
+          "title": "Performans Optimizasyonu",
+          "description": "Yapay zeka API'leri yavaş olabilir. Tekrarlanan sorguları önbelleğe almak için Redis'i; ağır yapay zeka görevlerini asenkron çalıştırmak ve kullanıcı arayüzünüzü hızlı tutmak için Kafka veya Celery gibi mesaj aracılarını (message brokers) uyguluyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Test ve Fallback (Yedek) Uygulaması",
+          "description": "Entegrasyonu yüksek yük altında stres testine tabi tutuyor ve API kesintilerini simüle ediyoruz. Yapay zeka sağlayıcısı çökerse, uygulamanızın tamamen çökmek yerine sorunsuz bir şekilde (graceful degradation) çalışmaya devam etmesini sağlıyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Yayına Alma ve Maliyet İzleme",
+          "description": "Entegre sistemi devreye alıyor ve özel gösterge panelleri (dashboards) kuruyoruz. API gecikmesi, hata oranları ve özellik başına kesin token maliyetleri hakkında gerçek zamanlı ve tam görünürlüğe sahip olacaksınız."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Dış yapay zeka API'lerini kullanırken hassas verileri nasıl koruyorsunuz?",
+          "answer": "Bir dizi teknik kullanıyoruz. İlk olarak, ara yazılımda (middleware) promptları OpenAI veya Claude'a göndermeden önce isimleri, e-postaları ve finansal verileri temizleyen PII (Kişisel Tanımlanabilir Bilgi) temizleyicileri uyguluyoruz. Sektörünüz bulut API'lerini kesinlikle yasaklıyorsa, kendi güvenli bulut altyapınızda barındırılan açık kaynaklı modelleri (Llama 3 gibi) entegre ediyoruz."
+        },
+        {
+          "question": "Yapay zeka eklemek uygulamamı yavaşlatır mı?",
+          "answer": "Yanlış yapılırsa yavaşlatabilir. LLM yanıtları saniyeler sürer, bu da bir web uygulamasında sonsuzluk gibi hissettirir. Bunu çözmek için ağır görevleri asenkron arka plan işleri (Celery veya BullMQ aracılığıyla) olarak yürütüyor, yanıtları doğrudan ön yüze akış (streaming) olarak veriyor (ChatGPT gibi) ve anında yanıtlar sağlamak için sık sorulan aynı sorguları Redis kullanarak önbelleğe alıyoruz."
+        },
+        {
+          "question": "Yapay zekayı eski bir (legacy) sisteme entegre edebilir misiniz?",
+          "answer": "Evet. Modern yapay zekayı genellikle eski ERP'lere ve eski SQL veritabanlarına entegre ederiz. Bunu köprü görevi gören modern bir mikro hizmet (API Gateway) oluşturarak yapıyoruz. Eski sistem köprümüzle standart webhook'lar veya REST kullanarak konuşur ve köprümüz karmaşık yapay zeka orkestrasyonunu üstlenir."
+        },
+        {
+          "question": "OpenAI veya Anthropic API'si çökerse ne olur?",
+          "answer": "Arızaya karşı tasarım yapıyoruz. Ara yazılımımız, katlanarak artan bekleme süreleriyle (exponential backoff) otomatik yeniden denemeler içerir. Kritik görev özellikleri için çoklu sağlayıcı yedekleri (multi-provider fallbacks) uyguluyoruz: OpenAI zaman aşımına uğrarsa, sistem kesintisiz hizmet sağlamak için isteği otomatik olarak Anthropic Claude'a veya yerel bir yedek modele yönlendirir."
+        },
+        {
+          "question": "Yapay zeka maliyetlerinin kontrolden çıkmasını nasıl durdurabiliriz?",
+          "answer": "Maliyet kontrolü entegrasyon mimarimizin içine yerleştirilmiştir. Kullanıcı başına kesin hız sınırları (rate limits) uyguluyor, aynı yanıt için iki kez ödeme yapmamanız için yinelenen istekleri önbelleğe alıyor ve basit yönlendirme görevleri için daha küçük, daha ucuz modeller (GPT-4o-mini gibi) kullanarak pahalı modelleri yalnızca karmaşık akıl yürütme için saklıyoruz."
+        },
+        {
+          "question": "Yapay zeka için tüm yazılım yığınımızı (stack) Python'a geçirmemiz mi gerekiyor?",
+          "answer": "Kesinlikle hayır. Çekirdek yapay zeka/makine öğrenimi veri bilimi ekosistemi ağırlıklı olarak Python olsa da, entegrasyon dilden bağımsızdır. Node.js, Go veya Java dillerinde, standart REST API'leri veya gRPC aracılığıyla mevcut PHP, .NET veya Ruby uygulamalarınızla sorunsuz bir şekilde iletişim kuran yapay zeka mikro hizmetleri oluşturabiliriz."
+        },
+        {
+          "question": "Tipik bir yapay zeka entegrasyonu ne kadar sürer?",
+          "answer": "Mevcut bir uygulamaya yapay zeka özetleyici veya anlamsal arama (semantic search) gibi belirli bir özellik eklemek genellikle 3-6 hafta sürer. Derin veritabanı senkronizasyonu, özel ara yazılım (middleware) ve sıkı güvenlik uyumluluğu gerektiren karmaşık kurumsal entegrasyonlar 2-3 ay sürer."
+        },
+        {
+          "question": "Yapay zekayı Salesforce veya HubSpot gibi CRM'imize entegre edebilir misiniz?",
+          "answer": "Evet. CRM'inizin webhook'larına bağlanan özel ara yazılımlar oluşturuyoruz. Örneğin, Zendesk veya Salesforce'ta yeni bir destek talebi (ticket) oluşturulduğunda, entegrasyonumuz bunu yakalayabilir, duygu analizi yapmak ve bir yanıt taslağı hazırlamak için yapay zekayı kullanabilir ve bu taslağı temsilcileriniz için tekrar CRM'e gönderebilir."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python / FastAPI"
+        },
+        {
+          "icon": "nodedotjs",
+          "name": "Node.js"
+        },
+        {
+          "icon": "redis",
+          "name": "Redis"
+        },
+        {
+          "icon": "apachekafka",
+          "name": "Apache Kafka"
+        },
+        {
+          "icon": "openai",
+          "name": "OpenAI API"
+        },
+        {
+          "icon": "anthropic",
+          "name": "Anthropic API"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS API Gateway"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "KI-Integrations-Services",
+    "shortDescription": "Betten Sie LLMs, prädiktive Modelle und benutzerdefinierte KI-APIs nahtlos in Ihre bestehende Software ein und verwandeln Sie Legacy-Anwendungen in intelligente Plattformen.",
+    "fullDescription": "Ein großartiges KI-Modell zu bauen, ist nur die halbe Miete; die wahre Komplexität liegt darin, es in Ihren bestehenden Tech-Stack zu integrieren, ohne die Performance zu beeinträchtigen. Unsere KI-Integrations-Services verbinden leistungsstarke Machine-Learning-Modelle und LLMs (OpenAI, Claude, lokale Modelle) direkt mit Ihren Web-Apps, Mobile-Apps und Enterprise-Systemen (ERP, CRM). Wir fügen nicht einfach nur einen API-Key ein — wir entwerfen robuste Middleware-Architekturen, die Rate Limiting, Prompt-Caching, Background-Queue-Verarbeitung und Fallback-Mechanismen für den Fall von Ausfällen externer KI-Dienste übernehmen. Egal, ob Sie KI-Suche in eine alte SQL-Datenbank injizieren, smarte Zusammenfassungen zu Ihrem proprietären Dashboard hinzufügen oder intelligente Benachrichtigungen über Kafka routen möchten, wir schlagen sicher die Brücke zwischen modernster KI und Ihrem täglichen Softwarebetrieb.",
+    "features": [
+      "LLM API-Integration (OpenAI, Anthropic, Gemini)",
+      "Legacy-System & ERP/CRM KI-Überbrückung",
+      "Middleware- & Gateway-Architektur",
+      "Rate Limiting & Kostenkontroll-Logik",
+      "Prompt-Caching & Redis-Integration",
+      "Asynchrone Queue-Verarbeitung (Kafka/RabbitMQ)",
+      "Fallback- & Fehlerbehandlungsmechanismen",
+      "Sichere Datenbereinigung & PII-Maskierung"
+    ],
+    "benefits": [
+      "Modernisieren Sie Legacy-Software, ohne sie von Grund auf neu zu schreiben",
+      "Halten Sie API-Kosten durch smartes Caching und Rate Limits berechenbar",
+      "Gewährleisten Sie App-Stabilität auch bei Ausfällen von Drittanbieter-KI-APIs",
+      "Schützen Sie sensible Kundendaten, bevor sie öffentliche LLMs erreichen",
+      "Verarbeiten Sie schwere KI-Aufgaben im Hintergrund, ohne die UI einzufrieren",
+      "Beschleunigen Sie die Markteinführung durch bewährte Middleware-Muster"
+    ],
+    "metaTitle": "KI-Integrations-Services | LLMs in Ihre Apps einbinden | PakSoft",
+    "metaDescription": "Integrieren Sie KI nahtlos in Ihre Software. Wir binden LLMs an, bauen robuste API-Middleware und modernisieren Legacy-Systeme mit intelligenten Features.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Architektur-Assessment",
+          "description": "Wir auditieren Ihren bestehenden Tech-Stack, Datenbanken und Drittanbieter-Tools. Wir identifizieren die Integrationspunkte, an denen KI den größten Wert bietet, und prüfen Systemgrenzen wie Latenz."
+        },
+        {
+          "step": 2,
+          "title": "Security & Compliance-Prüfung",
+          "description": "Bevor Daten in ein KI-Modell fließen, etablieren wir Compliance-Guardrails. Wir entwerfen PII-Maskierungsstrategien und entscheiden zwischen Cloud-APIs oder selbst gehosteten Modellen, um Ihren Datenschutzanforderungen gerecht zu werden."
+        },
+        {
+          "step": 3,
+          "title": "Middleware-Entwicklung",
+          "description": "Wir bauen die Integrationsschicht – typischerweise in Node.js oder Python – die die Kommunikation zwischen Ihrer App und der KI verwaltet. Diese Schicht kümmert sich um Retries, Formatierung und Prompt-Erstellung."
+        },
+        {
+          "step": 4,
+          "title": "Performance-Optimierung",
+          "description": "KI-APIs können langsam sein. Wir implementieren Redis für das Caching wiederholter Abfragen und Message-Broker wie Kafka oder Celery, um schwere KI-Aufgaben asynchron auszuführen und Ihre Benutzeroberfläche schnell zu halten."
+        },
+        {
+          "step": 5,
+          "title": "Testing & Fallback-Implementierung",
+          "description": "Wir unterziehen die Integration einem Stresstest unter hoher Last und simulieren API-Ausfälle. Wir stellen sicher, dass Ihre App bei Ausfall des KI-Anbieters gracefully degradiert, anstatt komplett abzustürzen."
+        },
+        {
+          "step": 6,
+          "title": "Deployment & Kostenüberwachung",
+          "description": "Wir deployen das integrierte System und richten benutzerdefinierte Dashboards ein. Sie haben in Echtzeit vollen Einblick in API-Latenz, Fehlerraten und exakte Token-Kosten pro Feature."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie schützen Sie sensible Daten bei der Nutzung externer KI-APIs?",
+          "answer": "Wir verwenden eine Kombination von Techniken. Zunächst implementieren wir PII (Personally Identifiable Information) Scrubbers in der Middleware, die Namen, E-Mails und Finanzdaten entfernen, bevor Prompts an OpenAI oder Claude gesendet werden. Wenn Ihre Branche Cloud-APIs streng verbietet, integrieren wir Open-Source-Modelle (wie Llama 3), die auf Ihrer eigenen sicheren Cloud-Infrastruktur gehostet werden."
+        },
+        {
+          "question": "Wird das Hinzufügen von KI meine Anwendung langsam machen?",
+          "answer": "Das kann passieren, wenn es falsch gemacht wird. LLM-Antworten dauern Sekunden, was sich in einer Web-App wie eine Ewigkeit anfühlt. Wir lösen dies, indem wir asynchrone Hintergrundjobs (über Celery oder BullMQ) für schwere Aufgaben nutzen, Antworten direkt ins Frontend streamen (wie ChatGPT es tut) und häufige identische Abfragen mit Redis cachen."
+        },
+        {
+          "question": "Können Sie KI in ein altes Legacy-System integrieren?",
+          "answer": "Ja. Wir integrieren häufig moderne KI in Legacy-ERPs und ältere SQL-Datenbanken. Dazu bauen wir einen modernen Microservice (API Gateway), der als Brücke fungiert. Das Legacy-System kommuniziert über Standard-Webhooks oder REST mit unserer Brücke, und unsere Brücke übernimmt die komplexe KI-Orchestrierung."
+        },
+        {
+          "question": "Was passiert, wenn die API von OpenAI oder Anthropic ausfällt?",
+          "answer": "Wir designen für den Ausfall. Unsere Middleware beinhaltet automatische Retries mit exponentiellem Backoff. Für geschäftskritische Features implementieren wir Multi-Provider-Fallbacks: Wenn OpenAI in ein Timeout läuft, leitet das System die Anfrage automatisch an Anthropic Claude oder ein lokales Backup-Modell um."
+        },
+        {
+          "question": "Wie verhindern wir, dass die KI-Kosten außer Kontrolle geraten?",
+          "answer": "Kostenkontrolle ist in unsere Integrationsarchitektur eingebaut. Wir implementieren harte Rate Limits pro Nutzer, cachen doppelte Anfragen und nutzen kleinere, günstigere Modelle (wie GPT-4o-mini) für einfache Routing-Aufgaben, während wir teure Modelle nur für komplexes Reasoning reservieren."
+        },
+        {
+          "question": "Müssen wir unseren gesamten Stack für KI auf Python umstellen?",
+          "answer": "Überhaupt nicht. Während das Kern-Ökosystem für Data Science sehr Python-lastig ist, ist die Integration stackunabhängig. Wir können KI-Microservices in Node.js, Go oder Java bauen, die über Standard-REST-APIs oder gRPC nahtlos mit Ihren bestehenden PHP-, .NET- oder Ruby-Anwendungen kommunizieren."
+        },
+        {
+          "question": "Wie lange dauert eine typische KI-Integration?",
+          "answer": "Das Hinzufügen eines spezifischen Features — wie eines KI-Zusammenfassers oder semantischer Suche — zu einer bestehenden App dauert meist 3–6 Wochen. Komplexe Enterprise-Integrationen, die tiefe Datenbanksynchronisation und strenge Sicherheitsvorgaben erfordern, dauern 2–3 Monate."
+        },
+        {
+          "question": "Können Sie KI in unser CRM wie Salesforce oder HubSpot integrieren?",
+          "answer": "Ja. Wir bauen maßgeschneiderte Middleware, die sich in die Webhooks Ihres CRMs einklinkt. Wenn beispielsweise ein neues Ticket in Zendesk oder Salesforce erstellt wird, kann unsere Integration es abfangen, KI nutzen, um das Sentiment zu analysieren und eine Antwort zu entwerfen, und diesen Entwurf für Ihre Agenten in das CRM pushen."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python / FastAPI"
+        },
+        {
+          "icon": "nodedotjs",
+          "name": "Node.js"
+        },
+        {
+          "icon": "redis",
+          "name": "Redis"
+        },
+        {
+          "icon": "apachekafka",
+          "name": "Apache Kafka"
+        },
+        {
+          "icon": "openai",
+          "name": "OpenAI API"
+        },
+        {
+          "icon": "anthropic",
+          "name": "Anthropic API"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS API Gateway"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "AI انٹیگریشن سروسز",
+    "shortDescription": "LLMs، پیشن گوئی کرنے والے ماڈلز اور کسٹم AI APIs کو اپنے موجودہ سافٹ ویئر میں بغیر کسی رکاوٹ کے شامل کریں، اور پرانی ایپلی کیشنز کو ذہین پلیٹ فارمز میں تبدیل کریں۔",
+    "fullDescription": "ایک بہترین AI ماڈل بنانا محض آدھا کام ہے؛ اسے کارکردگی کو متاثر کیے بغیر آپ کے موجودہ ٹیک اسٹیک (tech stack) میں ضم کرنا اصل پیچیدگی ہے۔ ہماری AI انٹیگریشن سروسز طاقتور مشین لرننگ ماڈلز اور LLMs (OpenAI، Claude، مقامی ماڈلز) کو براہ راست آپ کی ویب ایپس، موبائل ایپس اور انٹرپرائز سسٹمز (ERP, CRM) سے جوڑتی ہیں۔ ہم صرف ایک API کی (key) کاپی پیسٹ نہیں کرتے — ہم مضبوط مڈل ویئر آرکیٹیکچر ڈیزائن کرتے ہیں جو ریٹ لمیٹنگ، پرامپٹ کیشنگ، بیک گراؤنڈ کیو پروسیسنگ اور بیرونی AI سروسز کے ڈاؤن ہونے کی صورت میں متبادل (fallback) میکانزم کو سنبھالتا ہے۔ چاہے آپ کو پرانے SQL ڈیٹا بیس میں AI سرچ شامل کرنی ہو، اپنے ڈیش بورڈ میں سمارٹ سمری متعارف کرانی ہو، یا Kafka کے ذریعے ذہین نوٹیفیکیشنز بھیجنے ہوں، ہم آپ کے روزمرہ کے سافٹ ویئر آپریشنز اور جدید AI کے درمیان محفوظ پل بناتے ہیں۔",
+    "features": [
+      "LLM API انٹیگریشن (OpenAI, Anthropic, Gemini)",
+      "لیگیسی (Legacy) سسٹمز اور ERP/CRM AI انٹیگریشن",
+      "مڈل ویئر اور گیٹ وے آرکیٹیکچر",
+      "ریٹ لمیٹنگ (Rate Limiting) اور لاگت کا کنٹرول",
+      "پرامپٹ کیشنگ اور Redis انٹیگریشن",
+      "Asynchronous کیو پروسیسنگ (Kafka/RabbitMQ)",
+      "فال بیک (Fallback) اور ایرر ہینڈلنگ میکانزم",
+      "محفوظ ڈیٹا سینیٹائزیشن اور PII ماسکنگ"
+    ],
+    "benefits": [
+      "پرانے سافٹ ویئر کو شروع سے دوبارہ لکھے بغیر جدید بنائیں",
+      "اسمارٹ کیشنگ اور ریٹ لمیٹس کے ساتھ API کے اخراجات کو قابو میں رکھیں",
+      "تھرڈ پارٹی AI APIs ڈاؤن ہونے کے باوجود ایپ کے استحکام کو یقینی بنائیں",
+      "حساس کسٹمر ڈیٹا کو پبلک LLMs تک پہنچنے سے پہلے محفوظ بنائیں",
+      "UI کو منجمد کیے بغیر پس منظر میں بھاری AI کاموں پر کارروائی کریں",
+      "مصدقہ مڈل ویئر پیٹرنز استعمال کر کے پروڈکٹ کو تیزی سے مارکیٹ میں لائیں"
+    ],
+    "metaTitle": "AI انٹیگریشن سروسز | LLMs کو اپنی ایپس سے جوڑیں | PakSoft",
+    "metaDescription": "AI کو بغیر کسی رکاوٹ کے اپنے موجودہ سافٹ ویئر میں ضم کریں۔ ہم LLMs کو مربوط کرتے ہیں، مڈل ویئر بناتے ہیں اور پرانے سسٹمز کو ذہین خصوصیات سے آراستہ کرتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "آرکیٹیکچر کا جائزہ",
+          "description": "ہم آپ کے موجودہ ٹیک اسٹیک، ڈیٹا بیس اور تھرڈ پارٹی ٹولز کا آڈٹ کرتے ہیں۔ ہم انٹیگریشن پوائنٹس کی نشاندہی کرتے ہیں جہاں AI سب سے زیادہ اہمیت کا حامل ہو سکتا ہے اور تاخیر (latency) جیسی سسٹمز کی حدود کا جائزہ لیتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "سیکیورٹی اور تعمیل (Compliance) کا جائزہ",
+          "description": "کسی بھی AI ماڈل میں ڈیٹا جانے سے پہلے، ہم سیکیورٹی گارڈریلز قائم کرتے ہیں۔ ہم PII ماسکنگ حکمت عملی ڈیزائن کرتے ہیں اور آپ کی رازداری کی ضروریات کے مطابق کلاؤڈ APIs یا سیلف ہوسٹڈ ماڈلز کے درمیان فیصلہ کرتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "مڈل ویئر ڈیولپمنٹ",
+          "description": "ہم انٹیگریشن لیئر بناتے ہیں—عام طور پر Node.js یا Python میں—جو آپ کی ایپ اور AI کے درمیان رابطے کا انتظام کرے گی۔ یہ لیئر دوبارہ کوششوں (retries)، فارمیٹنگ اور پرامپٹ کی تشکیل کو سنبھالتی ہے۔"
+        },
+        {
+          "step": 4,
+          "title": "کارکردگی کی بہتری",
+          "description": "AI APIs سست ہو سکتی ہیں۔ ہم بار بار کی جانے والی کوئریز کو کیش (cache) کرنے کے لیے Redis اور بھاری AI کاموں کو پس منظر میں چلانے کے لیے Kafka یا Celery جیسے میسج بروکرز نافذ کرتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "ٹیسٹنگ اور فال بیک کا نفاذ",
+          "description": "ہم بھاری بوجھ کے تحت انٹیگریشن کا ٹیسٹ کرتے ہیں اور API کے ڈاؤن ہونے کی نقل کرتے ہیں۔ ہم اس بات کو یقینی بناتے ہیں کہ اگر AI فراہم کنندہ ڈاؤن ہو جائے تو آپ کی ایپ مکمل طور پر کریش ہونے کے بجائے ایک حد تک کام کرتی رہے۔"
+        },
+        {
+          "step": 6,
+          "title": "ڈپلائمنٹ اور لاگت کی نگرانی",
+          "description": "ہم مربوط نظام کو تعینات کرتے ہیں اور حسب ضرورت ڈیش بورڈز ترتیب دیتے ہیں۔ آپ کو ریئل ٹائم میں API کی تاخیر، غلطی کی شرح، اور فی فیچر درست ٹوکن لاگت پر مکمل نظر رہے گی۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "بیرونی AI APIs استعمال کرتے وقت آپ حساس ڈیٹا کی حفاظت کیسے کرتے ہیں؟",
+          "answer": "ہم تکنیکوں کا امتزاج استعمال کرتے ہیں۔ سب سے پہلے، ہم مڈل ویئر میں PII سکربرز نافذ کرتے ہیں جو OpenAI یا Claude کو پرامپٹ بھیجنے سے پہلے نام، ای میل اور مالیاتی ڈیٹا ہٹا دیتے ہیں۔ اگر آپ کی انڈسٹری میں کلاؤڈ APIs منع ہیں، تو ہم اوپن سورس ماڈلز (جیسے Llama 3) کو مربوط کرتے ہیں جو آپ کے اپنے کلاؤڈ انفراسٹرکچر پر موجود ہوتے ہیں۔"
+        },
+        {
+          "question": "کیا AI شامل کرنے سے میری ایپلی کیشن سست ہو جائے گی؟",
+          "answer": "یہ ہو سکتا ہے، اگر غلط طریقے سے کیا جائے۔ LLM کے جوابات میں سیکنڈ لگتے ہیں، جو ایک ویب ایپ میں بہت طویل وقت محسوس ہوتا ہے۔ ہم اس مسئلے کو بھاری کاموں کے لیے (Celery یا BullMQ کے ذریعے) پس منظر کی جابز کا استعمال کر کے، فرنٹ اینڈ پر جوابات کی براہ راست سٹریمنگ (جیسے ChatGPT کرتا ہے) اور فوری جوابات کے لیے Redis کے ذریعے عام کوئریز کو کیش کر کے حل کرتے ہیں۔"
+        },
+        {
+          "question": "کیا آپ پرانے (Legacy) سسٹم میں AI ضم کر سکتے ہیں؟",
+          "answer": "جی ہاں۔ ہم اکثر جدید AI کو پرانے ERPs اور پرانے SQL ڈیٹا بیس میں ضم کرتے ہیں۔ ہم ایک جدید مائیکرو سروس (API گیٹ وے) بنا کر ایسا کرتے ہیں جو ایک پل کا کام کرتی ہے۔ پرانا سسٹم معیاری ویب ہکس یا REST کا استعمال کرتے ہوئے ہمارے پل سے بات کرتا ہے، اور ہمارا پل پیچیدہ AI آرکیسٹریشن کو سنبھالتا ہے۔"
+        },
+        {
+          "question": "اگر OpenAI یا Anthropic API ڈاؤن ہو جائے تو کیا ہوتا ہے؟",
+          "answer": "ہم ناکامی کے لیے بھی ڈیزائن کرتے ہیں۔ ہمارے مڈل ویئر میں وقفے کے ساتھ خودکار دوبارہ کوشش (automatic retries) شامل ہے۔ انتہائی اہم فیچرز کے لیے، ہم ملٹی پرووائیڈر فال بیک نافذ کرتے ہیں: اگر OpenAI ٹائم آؤٹ ہو جاتا ہے، تو سسٹم خود بخود درخواست کو Anthropic Claude یا متبادل مقامی ماڈل پر بھیج دیتا ہے۔"
+        },
+        {
+          "question": "ہم AI کے اخراجات کو بے قابو ہونے سے کیسے روک سکتے ہیں؟",
+          "answer": "لاگت کا کنٹرول ہمارے انٹیگریشن آرکیٹیکچر کا حصہ ہے۔ ہم فی صارف سخت ریٹ لمیٹس لاگو کرتے ہیں، ڈپلیکیٹ درخواستوں کو کیش کرتے ہیں تاکہ آپ ایک ہی جواب کے لیے دو بار ادائیگی نہ کریں، اور سادہ راؤٹنگ کاموں کے لیے چھوٹے، سستے ماڈلز (جیسے GPT-4o-mini) استعمال کرتے ہیں، جبکہ مہنگے ماڈلز صرف پیچیدہ کاموں کے لیے مخصوص رکھتے ہیں۔"
+        },
+        {
+          "question": "کیا ہمیں AI کے لیے اپنا پورا سافٹ ویئر اسٹیک Python پر منتقل کرنا ہوگا؟",
+          "answer": "بالکل نہیں۔ اگرچہ بنیادی AI ڈیٹا سائنس ایکو سسٹم Python پر بھاری ہے، انٹیگریشن اسٹیک سے آزاد ہے۔ ہم Node.js، Go، یا Java میں AI مائیکرو سروسز بنا سکتے ہیں جو معیاری REST APIs یا gRPC کے ذریعے آپ کے موجودہ PHP، .NET، یا Ruby ایپلی کیشنز کے ساتھ بغیر کسی رکاوٹ کے بات چیت کرتی ہیں۔"
+        },
+        {
+          "question": "عام AI انٹیگریشن میں کتنا وقت لگتا ہے؟",
+          "answer": "کسی موجودہ ایپ میں ایک مخصوص خصوصیت شامل کرنے میں—جیسے AI سمرائزر یا سیمینٹک سرچ—عام طور پر 3 سے 6 ہفتے لگتے ہیں۔ پیچیدہ انٹرپرائز انٹیگریشن جن کے لیے گہری ڈیٹا بیس سنکنگ، حسب ضرورت مڈل ویئر اور سخت حفاظتی تعمیل کی ضرورت ہوتی ہے، اس میں 2 سے 3 ماہ لگتے ہیں۔"
+        },
+        {
+          "question": "کیا آپ ہمارے CRM جیسے Salesforce یا HubSpot میں AI ضم کر سکتے ہیں؟",
+          "answer": "جی ہاں۔ ہم کسٹم مڈل ویئر بناتے ہیں جو آپ کے CRM کے ویب ہکس کے ساتھ جڑ جاتا ہے۔ مثال کے طور پر، جب Zendesk یا Salesforce میں کوئی نیا ٹکٹ بنتا ہے، تو ہماری انٹیگریشن اسے پکڑ سکتی ہے، جذبات کا تجزیہ کرنے اور جواب کا مسودہ تیار کرنے کے لیے AI کا استعمال کر سکتی ہے، اور وہ مسودہ آپ کے ایجنٹس کے لیے واپس CRM میں بھیج سکتی ہے۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python / FastAPI"
+        },
+        {
+          "icon": "nodedotjs",
+          "name": "Node.js"
+        },
+        {
+          "icon": "redis",
+          "name": "Redis"
+        },
+        {
+          "icon": "apachekafka",
+          "name": "Apache Kafka"
+        },
+        {
+          "icon": "openai",
+          "name": "OpenAI API"
+        },
+        {
+          "icon": "anthropic",
+          "name": "Anthropic API"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS API Gateway"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "خدمات دمج الذكاء الاصطناعي",
+    "shortDescription": "قم بتضمين نماذج اللغات الكبيرة (LLMs) والنماذج التنبؤية وواجهات الذكاء الاصطناعي المخصصة بسلاسة في برنامجك الحالي، لتحويل التطبيقات القديمة إلى منصات ذكية.",
+    "fullDescription": "إن بناء نموذج ذكاء اصطناعي رائع هو مجرد نصف المعركة؛ أما دمج هذا النموذج في مجموعة التكنولوجيا (Tech Stack) الخاصة بك دون التأثير على الأداء فهو يكمن فيه التعقيد الحقيقي. تقوم خدمات دمج الذكاء الاصطناعي لدينا بربط نماذج التعلم الآلي القوية ونماذج LLMs (OpenAI، Claude، النماذج المحلية) مباشرة بتطبيقات الويب وتطبيقات الهاتف المحمول وأنظمة المؤسسات (ERP, CRM) الخاصة بك. نحن لا نكتفي بنسخ ولصق مفتاح API — بل نصمم بنيات برمجيات وسيطة (Middleware) قوية تتعامل مع تحديد معدل الطلبات (Rate Limiting)، والتخزين المؤقت للمطالبات (Prompt Caching)، ومعالجة قوائم الانتظار في الخلفية، وآليات التراجع (Fallback) عندما تتعطل خدمات الذكاء الاصطناعي الخارجية. سواء كنت بحاجة إلى حقن بحث الذكاء الاصطناعي في قاعدة بيانات SQL قديمة، أو إضافة تلخيص ذكي إلى لوحة التحكم الخاصة بك، أو توجيه إشعارات ذكية عبر Kafka، فإننا نسد الفجوة بين أحدث تقنيات الذكاء الاصطناعي وعمليات البرامج اليومية الخاصة بك بشكل آمن.",
+    "features": [
+      "تكامل واجهات LLM (OpenAI, Anthropic, Gemini)",
+      "ربط الذكاء الاصطناعي بالأنظمة القديمة و ERP/CRM",
+      "هندسة البرمجيات الوسيطة (Middleware) والبوابات (Gateway)",
+      "منطق تحديد المعدل (Rate Limiting) والتحكم في التكلفة",
+      "التخزين المؤقت للمطالبات وتكامل Redis",
+      "معالجة قوائم الانتظار غير المتزامنة (Kafka/RabbitMQ)",
+      "آليات التراجع (Fallback) ومعالجة الأخطاء",
+      "تعقيم البيانات الآمن وإخفاء المعلومات الشخصية (PII)"
+    ],
+    "benefits": [
+      "تحديث البرامج القديمة دون إعادة كتابتها من الصفر",
+      "إبقاء تكاليف API متوقعة بفضل التخزين المؤقت الذكي وحدود المعدل",
+      "ضمان استقرار التطبيق حتى عند تعطل واجهات الذكاء الاصطناعي الخارجية",
+      "حماية بيانات العملاء الحساسة قبل وصولها إلى نماذج LLMs العامة",
+      "معالجة مهام الذكاء الاصطناعي الثقيلة في الخلفية دون تجميد واجهة المستخدم",
+      "تسريع وقت الوصول إلى السوق باستخدام أنماط البرمجيات الوسيطة المُثبتة"
+    ],
+    "metaTitle": "خدمات تكامل الذكاء الاصطناعي | ربط LLMs بتطبيقاتك | PakSoft",
+    "metaDescription": "ادمج الذكاء الاصطناعي بسلاسة في برنامجك الحالي. نقوم بربط نماذج LLMs، وبناء برمجيات وسيطة (Middleware) قوية، وتحديث الأنظمة القديمة.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تقييم البنية المعمارية",
+          "description": "نقوم بمراجعة مجموعة التكنولوجيا الحالية الخاصة بك وقواعد البيانات وأدوات الطرف الثالث. نحدد نقاط التكامل حيث يمكن للذكاء الاصطناعي أن يضيف أكبر قيمة ونراجع قيود النظام مثل زمن الانتقال (Latency)."
+        },
+        {
+          "step": 2,
+          "title": "مراجعة الأمان والامتثال",
+          "description": "قبل تدفق أي بيانات إلى نموذج الذكاء الاصطناعي، نضع ضوابط الامتثال. نصمم استراتيجيات إخفاء المعلومات الشخصية (PII) ونقرر بين واجهات برمجة التطبيقات السحابية أو النماذج المستضافة ذاتياً لتلبية احتياجات خصوصية بياناتك."
+        },
+        {
+          "step": 3,
+          "title": "تطوير البرمجيات الوسيطة (Middleware)",
+          "description": "نبني طبقة التكامل — عادةً باستخدام Node.js أو Python — والتي ستدير الاتصال بين تطبيقك والذكاء الاصطناعي. تتعامل هذه الطبقة مع إعادة المحاولة، والتنسيق، وبناء المطالبات (Prompts)."
+        },
+        {
+          "step": 4,
+          "title": "تحسين الأداء",
+          "description": "يمكن أن تكون واجهات الذكاء الاصطناعي بطيئة. نطبق Redis لتخزين الاستعلامات المتكررة مؤقتاً، ووسطاء الرسائل مثل Kafka أو Celery لتشغيل مهام الذكاء الاصطناعي الثقيلة بشكل غير متزامن."
+        },
+        {
+          "step": 5,
+          "title": "الاختبار وتطبيق آليات التراجع",
+          "description": "نقوم باختبار ضغط التكامل تحت حمولة عالية ومحاكاة انقطاعات API. نضمن أنه في حال تعطل مزود الذكاء الاصطناعي، سيستمر تطبيقك في العمل بشكل جزئي بدلاً من الانهيار التام."
+        },
+        {
+          "step": 6,
+          "title": "النشر ومراقبة التكاليف",
+          "description": "ننشر النظام المتكامل ونقوم بإعداد لوحات تحكم مخصصة. ستحصل على رؤية كاملة في الوقت الفعلي لزمن انتقال API، ومعدلات الخطأ، وتكاليف Tokens الدقيقة لكل ميزة."
+        }
+      ],
+      "faq": [
+        {
+          "question": "كيف تحمون البيانات الحساسة عند استخدام واجهات الذكاء الاصطناعي الخارجية؟",
+          "answer": "نستخدم مزيجاً من التقنيات. أولاً، نقوم بتنفيذ أدوات تنظيف المعلومات الشخصية (PII) في البرمجيات الوسيطة التي تزيل الأسماء ورسائل البريد الإلكتروني والبيانات المالية قبل إرسال المطالبات إلى OpenAI أو Claude. إذا كانت صناعتك تمنع تماماً واجهات برمجة التطبيقات السحابية، نقوم بدمج نماذج مفتوحة المصدر (مثل Llama 3) المستضافة على بنيتك التحتية السحابية الآمنة."
+        },
+        {
+          "question": "هل ستؤدي إضافة الذكاء الاصطناعي إلى إبطاء تطبيقي؟",
+          "answer": "يمكن أن يحدث ذلك إذا تم بشكل خاطئ. تستغرق استجابات LLM ثواني، وهو ما يبدو وكأنه دهر في تطبيق ويب. نحن نحل هذه المشكلة باستخدام مهام خلفية غير متزامنة (عبر Celery أو BullMQ) للمهام الثقيلة، وبث الاستجابات مباشرة إلى الواجهة الأمامية (كما يفعل ChatGPT)، وتخزين الاستعلامات المتطابقة المتكررة مؤقتاً باستخدام Redis لتوفير إجابات فورية."
+        },
+        {
+          "question": "هل يمكنك دمج الذكاء الاصطناعي في نظام قديم (Legacy)؟",
+          "answer": "نعم. نقوم بشكل متكرر بدمج الذكاء الاصطناعي الحديث في أنظمة ERP القديمة وقواعد بيانات SQL القديمة. نقوم بذلك من خلال بناء خدمة مصغرة (API Gateway) حديثة تعمل كجسر. يتواصل النظام القديم مع الجسر باستخدام خطافات الويب (Webhooks) القياسية أو REST، ويتولى جسرنا إدارة تنسيق الذكاء الاصطناعي المعقد."
+        },
+        {
+          "question": "ماذا يحدث إذا تعطلت واجهة OpenAI أو Anthropic؟",
+          "answer": "نحن نصمم النظام ليتعامل مع الفشل. تتضمن البرمجيات الوسيطة الخاصة بنا إعادة محاولة تلقائية مع تأخير متزايد. بالنسبة للميزات الحرجة، نطبق آليات تراجع (Fallbacks) متعددة المزودين: إذا انتهت مهلة OpenAI، يوجه النظام الطلب تلقائياً إلى Anthropic Claude أو نموذج محلي احتياطي لضمان خدمة دون انقطاع."
+        },
+        {
+          "question": "كيف نوقف تكاليف الذكاء الاصطناعي من الخروج عن نطاق السيطرة؟",
+          "answer": "التحكم في التكلفة مدمج في بنية التكامل الخاصة بنا. نطبق حدود معدل (Rate limits) صارمة لكل مستخدم، ونخزن الطلبات المكررة مؤقتاً حتى لا تدفع مرتين مقابل الإجابة نفسها، ونستخدم نماذج أصغر وأرخص (مثل GPT-4o-mini) لمهام التوجيه البسيطة، مع الاحتفاظ بالنماذج باهظة الثمن فقط للاستدلال المعقد."
+        },
+        {
+          "question": "هل نحتاج إلى تبديل مجموعتنا البرمجية (Stack) بالكامل إلى Python من أجل الذكاء الاصطناعي؟",
+          "answer": "على الإطلاق. في حين أن نظام علوم البيانات الأساسي للذكاء الاصطناعي والتعلم الآلي يعتمد بشكل كبير على Python، فإن التكامل مستقل عن التكنولوجيا. يمكننا بناء خدمات مصغرة للذكاء الاصطناعي بلغة Node.js أو Go أو Java تتواصل بسلاسة مع تطبيقات PHP أو .NET أو Ruby الحالية عبر واجهات REST القياسية أو gRPC."
+        },
+        {
+          "question": "كم من الوقت يستغرق تكامل الذكاء الاصطناعي النموذجي؟",
+          "answer": "عادة ما تستغرق إضافة ميزة معينة — مثل ملخص الذكاء الاصطناعي أو البحث الدلالي — إلى تطبيق موجود من 3 إلى 6 أسابيع. أما تكاملات المؤسسات المعقدة التي تتطلب مزامنة قاعدة بيانات عميقة، وبرمجيات وسيطة مخصصة، وامتثالاً أمنياً صارماً فتستغرق من 2 إلى 3 أشهر."
+        },
+        {
+          "question": "هل يمكنكم دمج الذكاء الاصطناعي في نظام CRM مثل Salesforce أو HubSpot؟",
+          "answer": "نعم. نبني برمجيات وسيطة مخصصة ترتبط بخطافات الويب (Webhooks) الخاصة بنظام CRM لديك. على سبيل المثال، عند إنشاء تذكرة جديدة في Zendesk أو Salesforce، يمكن للتكامل الخاص بنا اعتراضها، واستخدام الذكاء الاصطناعي لتحليل المشاعر وصياغة رد، ودفع تلك المسودة مرة أخرى إلى CRM للوكلاء لديك."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python / FastAPI"
+        },
+        {
+          "icon": "nodedotjs",
+          "name": "Node.js"
+        },
+        {
+          "icon": "redis",
+          "name": "Redis"
+        },
+        {
+          "icon": "apachekafka",
+          "name": "Apache Kafka"
+        },
+        {
+          "icon": "openai",
+          "name": "OpenAI API"
+        },
+        {
+          "icon": "anthropic",
+          "name": "Anthropic API"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS API Gateway"
+        }
+      ]
+    }
+  }
+}

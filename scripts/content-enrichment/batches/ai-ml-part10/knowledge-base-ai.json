@@ -1,0 +1,638 @@
+{
+  "slug": "knowledge-base-ai",
+  "en": {
+    "name": "Knowledge Base AI",
+    "shortDescription": "Build intelligent corporate knowledge bases that understand semantic queries. We combine vector databases and LLMs to provide quick, source-attributed answers for teams.",
+    "fullDescription": "Static wikis and employee handbooks are rarely read, leaving crucial internal knowledge inaccessible. We build intelligent, AI-powered Knowledge Base systems that turn static documentation into a dynamic search and Q&A resource. Using semantic vector search with Pinecone and OpenAI embeddings, our platforms understand the intent of user questions and search context across multiple directories. By integrating LangChain and Next.js, we build clean web portals where employees or clients can ask questions in natural language and receive immediate answers with source citations. Our solutions integrate secure permissions mapping, ensuring that sensitive folders remain hidden from unauthorized users, while automated crawlers keep the indexes fresh as files change.",
+    "features": [
+      "Semantic Vector Search across Documentations",
+      "Automated Content Categorization & Tagging",
+      "Intelligent Natural Language Question Answering",
+      "Instant Source Attribution and Citations",
+      "Multi-Format Document Parsing and Support",
+      "Granular Access Control and Privacy Integration",
+      "Automated Web and Storage Directory Crawlers",
+      "Search Query Analytics & Documentation Gap Reports"
+    ],
+    "benefits": [
+      "Reduce internal support ticket volumes by up to 60%",
+      "Onboard new team members faster with self-service info",
+      "Ensure information is retrieved in under 300 milliseconds",
+      "Establish a single, secure source of corporate truth",
+      "Prevent leaks of sensitive corporate directories",
+      "Discover missing documents using search query analytics"
+    ],
+    "metaTitle": "AI Knowledge Base Software | Custom Search | PakSoft",
+    "metaDescription": "Turn static docs into an intelligent Q&A portal. We build custom semantic knowledge bases with Pinecone and OpenAI for secure team search.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Information Audit",
+          "description": "We audit your company's files, wikis, and folders to map out where internal knowledge is stored."
+        },
+        {
+          "step": 2,
+          "title": "Ingestion & Sync",
+          "description": "We build automated connectors that ingest files from Google Drive, Notion, and databases securely."
+        },
+        {
+          "step": 3,
+          "title": "Embedding & Vector Database",
+          "description": "We convert all extracted text into vector embeddings and index them inside Pinecone or Milvus."
+        },
+        {
+          "step": 4,
+          "title": "Q&A Engine Setup",
+          "description": "We set up an LLM retrieval pipeline using LangChain to fetch relevant context and draft precise answers."
+        },
+        {
+          "step": 5,
+          "title": "Access & Safety Control",
+          "description": "We configure OAuth and Active Directory sync so users can only search files their roles authorize them to read."
+        },
+        {
+          "step": 6,
+          "title": "Interface Launch",
+          "description": "We build and deploy a responsive Next.js frontend search interface with built-in query analytics dashboards."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Can this connect to Notion and Google Drive?",
+          "answer": "Yes, we build secure API connectors that synchronize documents from Notion, Google Drive, Microsoft OneDrive, and local network folders automatically."
+        },
+        {
+          "question": "How does it handle document permissions?",
+          "answer": "We integrate search queries with your identity provider (like Okta or Active Directory), filtering vector search results at retrieval time so users only see authorized files."
+        },
+        {
+          "question": "What happens when a document is updated?",
+          "answer": "We set up webhook listeners and scheduled crawlers. When a document is modified, the system automatically extracts the new text, updates its vector embedding, and refreshes the database index."
+        },
+        {
+          "question": "Does it support multiple languages?",
+          "answer": "Yes, our embedding models are multilingual. An employee can ask a question in German and retrieve answers sourced from English or Turkish documentation automatically."
+        },
+        {
+          "question": "Can it index scanned invoices or PDFs?",
+          "answer": "Yes, we integrate OCR technology to extract clean text from scanned images, hand-written notes, and older PDFs before embedding and indexing."
+        },
+        {
+          "question": "Is the search secure from public LLM models?",
+          "answer": "Absolutely. Your data is housed in private vector databases, and we route LLM calls through secure enterprise APIs that guarantee your data is never used for training."
+        },
+        {
+          "question": "How do we know what employees are searching for?",
+          "answer": "We build a search analytics dashboard showing popular queries, search satisfaction rates, and 'failed' queries where no relevant documents were found, helping you locate documentation gaps."
+        },
+        {
+          "question": "What is the typical setup time for this system?",
+          "answer": "A custom enterprise knowledge base integration with 3 to 4 major connectors and role-based permissions typically takes 6 to 8 weeks from discovery to production launch."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Pinecone",
+          "icon": "pinecone"
+        },
+        {
+          "name": "OpenAI API",
+          "icon": "openai"
+        },
+        {
+          "name": "LangChain",
+          "icon": "langchain"
+        },
+        {
+          "name": "Next.js",
+          "icon": "nextjs"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "tailwindcss"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Yapay Zeka Bilgi Bankası",
+    "shortDescription": "Anlamsal sorguları anlayan akıllı kurumsal bilgi bankaları oluşturun. Ekipler için hızlı ve kaynak odaklı yanıtlar sağlamak amacıyla vektör veritabanlarını ve LLM'leri birleştiriyoruz.",
+    "fullDescription": "Statik vikiler ve çalışan el kitapları nadiren okunur, bu da kritik kurum içi bilgileri erişilmez hale getirir. Statik belgeleri dinamik bir arama ve soru-cevap kaynağına dönüştüren yapay zeka destekli akıllı Bilgi Bankası sistemleri kuruyoruz. Pinecone ve OpenAI gömmeleriyle anlamsal vektör araması kullanarak, platformlarımız kullanıcı sorularının amacını anlar ve birden fazla dizin genelinde bağlamı tarar. LangChain ve Next.js'i entegre ederek, çalışanların veya müşterilerin doğal dilde sorular sorabileceği ve kaynak atıflarıyla anında yanıtlar alabileceği temiz web portalları oluşturuyoruz. Çözümlerimiz, hassas klasörlerin yetkisiz kullanıcılardan gizli kalmasını sağlayan güvenli izin eşleştirmesini entegre ederken, otomatik tarayıcılar dosyalar değiştikçe indeksleri güncel tutar.",
+    "features": [
+      "Belgeler Arasında Anlamsal Vektör Araması",
+      "Otomatik İçerik Kategorizasyonu ve Etiketleme",
+      "Doğal Dilde Akıllı Soru-Cevap Sistemleri",
+      "Anında Kaynak İlişkilendirmesi ve Atıflar",
+      "Çoklu Format Belge Ayrıştırma ve Desteği",
+      "Ayrıntılı Erişim Kontrolü ve Gizlilik Entegrasyonu",
+      "Otomatik Web ve Depolama Dizini Tarayıcıları",
+      "Arama Sorgusu Analitiği ve Bilgi Eksikliği Raporları"
+    ],
+    "benefits": [
+      "Dahili destek talebi hacimlerini %60'a varan oranda azaltın",
+      "Self-servis bilgilerle yeni ekip üyelerini daha hızlı işe alıştırın",
+      "Bilgilerin 300 milisaniyenin altında getirilmesini sağlayın",
+      "Güvenli ve tek bir kurumsal doğruluk kaynağı oluşturun",
+      "Hassas kurumsal dizinlerin sızmasını önleyin",
+      "Arama sorgusu analitiğini kullanarak eksik belgeleri keşfedin"
+    ],
+    "metaTitle": "Yapay Zeka Bilgi Bankası Yazılımı | Arama | PakSoft",
+    "metaDescription": "Statik belgeleri akıllı bir soru-cevap portalına dönüştürün. Ekipler için güvenli arama sunan, Pinecone ve OpenAI tabanlı anlamsal bilgi bankaları kuruyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Bilgi Denetimi",
+          "description": "Kurum içi bilgilerin nerede depolandığını belirlemek için şirketinizin dosyalarını, vikilerini ve klasörlerini inceliyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Veri Alımı & Eşitleme",
+          "description": "Google Drive, Notion ve veritabanlarından belgeleri güvenli bir şekilde alan otomatik konnektörler kuruyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Gömme & Vektör Veritabanı",
+          "description": "Çıkarılan tüm metinleri vektör gömmelerine dönüştürüyor ve bunları Pinecone veya Milvus içinde indeksliyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Soru-Cevap Motoru Kurulumu",
+          "description": "İlgili bağlamı getirmek ve kesin yanıtlar tasarlamak için LangChain kullanarak bir LLM veri hattı kuruyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Erişim & Güvenlik Kontrolü",
+          "description": "Kullanıcıların yalnızca rollerinin yetkilendirdiği dosyaları araması için OAuth ve Active Directory entegrasyonu yapılandırıyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Arayüz Lansmanı",
+          "description": "Yerleşik sorgu analitiği panellerine sahip, duyarlı bir Next.js ön uç arama arayüzü oluşturuyor ve dağıtıyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bu sistem Notion ve Google Drive'a bağlanabilir mi?",
+          "answer": "Evet, Notion, Google Drive, Microsoft OneDrive ve yerel ağ klasörlerindeki belgeleri otomatik olarak senkronize eden güvenli API konnektörleri oluşturuyoruz."
+        },
+        {
+          "question": "Belge izinlerini nasıl yönetiyor?",
+          "answer": "Arama sorgularını kimlik sağlayıcınızla (Okta veya Active Directory gibi) entegre ediyoruz ve vektör arama sonuçlarını kullanıcıların yetkili olduğu dosyalarla sınırlıyoruz."
+        },
+        {
+          "question": "Bir belge güncellendiğinde ne olur?",
+          "answer": "Web kancası dinleyicileri ve zamanlanmış tarayıcılar kuruyoruz. Bir belge değiştirildiğinde, sistem otomatik olarak yeni metni çıkarır, vektör gömmesini günceller ve veri dizinini yeniler."
+        },
+        {
+          "question": "Çoklu dil desteği var mı?",
+          "answer": "Evet, vektör gömme modellerimiz çok dillidir. Bir çalışan Almanca soru sorabilir ve sistem otomatik olarak İngilizce veya Türkçe belgelerden kaynaklanan yanıtları getirebilir."
+        },
+        {
+          "question": "Taranmış faturaları veya PDF'leri indeksleyebilir mi?",
+          "answer": "Evet, indekslemeden önce taranmış görüntülerden, el yazısı notlardan ve eski PDF'lerden temiz metin çıkarmak için OCR teknolojisini entegre ediyoruz."
+        },
+        {
+          "question": "Arama sistemi kamuya açık LLM modellerine karşı güvenli mi?",
+          "answer": "Kesinlikle. Verileriniz özel vektör veritabanlarında barındırılır ve LLM çağrılarını verilerinizin eğitim için kullanılmayacağını garanti eden güvenli kurumsal API'ler üzerinden yönlendiririz."
+        },
+        {
+          "question": "Çalışanların ne aradığını nasıl öğrenebiliriz?",
+          "answer": "Popüler sorguları, arama memnuniyet oranlarını ve ilgili belgelerin bulunamadığı 'başarısız' aramaları gösteren bir arama analitiği paneli oluşturarak belge eksikliklerini belirlemenize yardımcı oluyoruz."
+        },
+        {
+          "question": "Bu sistemin tipik kurulum süresi ne kadardır?",
+          "answer": "3 ila 4 ana konnektör ve rol tabanlı izinlere sahip özel bir kurumsal bilgi bankası entegrasyonu, keşiften üretime kadar genellikle 6 ila 8 hafta sürer."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Pinecone",
+          "icon": "pinecone"
+        },
+        {
+          "name": "OpenAI API",
+          "icon": "openai"
+        },
+        {
+          "name": "LangChain",
+          "icon": "langchain"
+        },
+        {
+          "name": "Next.js",
+          "icon": "nextjs"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "tailwindcss"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "KI-Wissensdatenbank",
+    "shortDescription": "Bauen Sie intelligente Wissensdatenbanken auf, die semantische Abfragen verstehen. Wir verbinden Vektordatenbanken und LLMs für präzise, quellenbasierte Antworten.",
+    "fullDescription": "Statische Wikis und Handbücher für Mitarbeiter werden selten gelesen, wodurch wichtiges internes Wissen ungenutzt bleibt. Wir entwickeln intelligente, KI-gestützte Wissensdatenbanken, die statische Dokumente in eine dynamische Q&A-Ressource verwandeln. Mithilfe der semantischen Vektorsuche mit Pinecone und OpenAI-Embeddings verstehen unsere Plattformen die Absicht hinter Fragen und suchen nach dem passenden Kontext in all Ihren Systemen. Durch die Integration von LangChain und Next.js bauen wir moderne Webportale, auf denen Mitarbeiter oder Kunden Fragen in natürlicher Sprache stellen können und sofortige Antworten mit Quellennachweisen erhalten. Sicherheitsberechtigungen sorgen dafür, dass sensible Daten geschützt bleiben.",
+    "features": [
+      "Semantische Vektorsuche über Dokumente hinweg",
+      "Automatisierte Inhaltskategorisierung & Tagging",
+      "Intelligente Q&A-Systeme in natürlicher Sprache",
+      "Sofortige Quellenzuordnung und Zitate",
+      "Unterstützung diverser Dokumentenformate",
+      "Integration granularer Zugriffsrechte & Datenschutz",
+      "Automatisierte Crawler für Web- und Cloudspeicher",
+      "Suchanalysen & Berichte über Dokumentationslücken"
+    ],
+    "benefits": [
+      "Interne Support-Tickets um bis zu 60% reduzieren",
+      "Schnellere Einarbeitung neuer Teammitglieder",
+      "Informationsabruf in weniger als 300 Millisekunden",
+      "Aufbau einer sicheren, zentralen Wissensquelle",
+      "Abfließen sensibler Unternehmensdaten verhindern",
+      "Dokumentationslücken durch Suchanalysen leicht aufdecken"
+    ],
+    "metaTitle": "KI-Wissensdatenbank Software | Semantische Suche | PakSoft",
+    "metaDescription": "Machen Sie statische Dokumente interaktiv. Wir entwickeln semantische Wissensdatenbanken mit Pinecone und OpenAI für sichere Suchen im Team.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Informations-Audit",
+          "description": "Wir analysieren die vorhandenen Dokumente, Wikis und Ordnerstrukturen Ihres Unternehmens, um die Wissenslandschaft zu kartografieren."
+        },
+        {
+          "step": 2,
+          "title": "Ingestion & Sync",
+          "description": "Wir implementieren automatische Schnittstellen zur sicheren Übernahme von Dokumenten aus Google Drive, Notion oder Confluence."
+        },
+        {
+          "step": 3,
+          "title": "Embedding & Vektordatenbank",
+          "description": "Wir konvertieren den gesamten Text in Vektor-Embeddings und indexieren diese in Pinecone oder Milvus."
+        },
+        {
+          "step": 4,
+          "title": "Q&A-Engine Setup",
+          "description": "Wir richten mit LangChain eine LLM-Abfrage-Pipeline ein, um relevanten Kontext abzurufen und präzise Antworten zu formulieren."
+        },
+        {
+          "step": 5,
+          "title": "Zugriffs- & Sicherheitssteuerung",
+          "description": "Wir konfigurieren OAuth und Active Directory, sodass Benutzer nur Suchergebnisse erhalten, für die sie eine Berechtigung besitzen."
+        },
+        {
+          "step": 6,
+          "title": "Interface-Launch",
+          "description": "Wir entwickeln ein responsives Next.js-Frontend für die Suche inklusive Dashboard für Abfrageanalysen."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Kann das System mit Notion und Google Drive verbunden werden?",
+          "answer": "Ja, wir entwickeln sichere API-Konnektoren, die Dokumente aus Notion, Google Drive, Microsoft OneDrive und lokalen Netzwerkordnern automatisch synchronisieren."
+        },
+        {
+          "question": "Wie werden Dokumentenberechtigungen gehandhabt?",
+          "answer": "Wir verknüpfen Suchabfragen mit Ihrem Identity Provider (z. B. Okta oder Active Directory) und filtern die Vektorsuchergebnisse, sodass Benutzer nur autorisierte Dateien sehen."
+        },
+        {
+          "question": "Was passiert, wenn ein Dokument aktualisiert wird?",
+          "answer": "Wir konfigurieren Webhooks und zeitgesteuerte Crawler. Sobald eine Datei geändert wird, extrahiert das System den neuen Text, aktualisiert das Embedding und passt den Index an."
+        },
+        {
+          "question": "Unterstützt das System mehrere Sprachen?",
+          "answer": "Ja, unsere Embedding-Modelle sind multilingual. Ein Mitarbeiter kann eine Frage auf Deutsch stellen und das System liefert Antworten, die aus englischen oder türkischen Dokumenten stammen."
+        },
+        {
+          "question": "Können gescannte Dokumente oder Rechnungen indexiert werden?",
+          "answer": "Ja, wir integrieren OCR-Technologie zur Textextraktion aus gescannten Dokumenten, handschriftlichen Notizen und älteren PDFs, bevor diese indexiert werden."
+        },
+        {
+          "question": "Sind unsere Daten bei der Nutzung öffentlicher LLMs geschützt?",
+          "answer": "Absolut. Ihre Daten verbleiben in privaten Vektordatenbanken und LLM-Aufrufe erfolgen über Enterprise-APIs, die garantieren, dass Ihre Daten nicht für Trainingszwecke verwendet werden."
+        },
+        {
+          "question": "Wie erfahren wir, wonach Mitarbeiter suchen?",
+          "answer": "Wir integrieren ein Analytics-Dashboard, das häufige Fragen, die Suchzufriedenheit sowie Abfragen ohne Treffer anzeigt, um Lücken in Ihrer Dokumentation aufzudecken."
+        },
+        {
+          "question": "Wie lange dauert die Einrichtung der Wissensdatenbank?",
+          "answer": "Ein maßgeschneidertes Projekt mit 3 bis 4 Konnektoren und rollenbasierter Zugriffskontrolle dauert in der Regel 6 bis 8 Wochen von der Discovery bis zum Go-Live."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Pinecone",
+          "icon": "pinecone"
+        },
+        {
+          "name": "OpenAI API",
+          "icon": "openai"
+        },
+        {
+          "name": "LangChain",
+          "icon": "langchain"
+        },
+        {
+          "name": "Next.js",
+          "icon": "nextjs"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "tailwindcss"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "آئی ٹی نالج بیس سسٹم",
+    "shortDescription": "سمانٹک سوالات کو سمجھنے والے کاروباری نالج بیسز بنائیں۔ ہم معلومات فراہم کرنے کے لیے ویکٹر ڈیٹا بیسز اور ایل ایل ایمز کو جوڑتے ہیں۔",
+    "fullDescription": "کمپنی کے پرانے مینوئلز اور ملازمین کے ہینڈ بکس شاید ہی کبھی پڑھے جاتے ہوں، جس کی وجہ سے اہم معلومات تک رسائی نہیں ہو پاتی۔ ہم اے آئی سے چلنے والے نالج بیس سسٹم بناتے ہیں جو پرانے ریکارڈز کو تلاش کے ایک بہترین نظام میں تبدیل کر دیتے ہیں۔ Pinecone اور OpenAI ایمبیڈنگز کے ساتھ سمانٹک ویکٹر سرچ کا استعمال کرتے ہوئے، ہمارے پلیٹ فارمز سوالات کے مقصد کو سمجھتے ہیں اور سیکنڈوں میں جواب تلاش کرتے ہیں۔ LangChain اور Next.js کو مربوط کر کے ہم ایک ویب پورٹل بناتے ہیں جہاں ملازمین یا کلائنٹس اپنی زبان میں سوالات پوچھ کر حوالہ جات کے ساتھ جواب حاصل کر سکتے ہیں۔ سیکیورٹی اور ایکسیس کنٹرول کے نفاذ سے حساس فائلیں غیر مجاز افراد سے محفوظ رہتی ہیں۔",
+    "features": [
+      "دستاویزات میں سمانٹک ویکٹر سرچ کا نظام",
+      "مواد کی خودکار درجہ بندی اور ٹیگنگ",
+      "قدرتی زبان میں سوال و جواب کے سسٹمز",
+      "حوالہ جات اور ذرائع کی فوری نشاندہی",
+      "کثیر فارمیٹ دستاویزات کی پروسیسنگ",
+      "ایکسیس کنٹرول اور ڈیٹا پرائیویسی",
+      "خودکار اسٹوریج اور ڈائریکٹری اسکینرز",
+      "سرچ اینالیٹکس اور معلومات کے خلا کی رپورٹس"
+    ],
+    "benefits": [
+      "مدد کے لیے آنے والی ٹکٹوں کے حجم میں 60 فیصد تک کمی لائیں",
+      "نئے ٹیم ممبرز کو کمپنی کی معلومات آسانی سے فراہم کریں",
+      "صرف 300 ملی سیکنڈ سے بھی کم وقت میں معلومات تلاش کریں",
+      "کمپنی کی معلومات کے لیے ایک محفوظ اور سنگل سورس بنائیں",
+      "حساس کمپنی ڈائریکٹریز کے ڈیٹا کو لیک ہونے سے بچائیں",
+      "سرچ اینالیٹکس کی مدد سے معلوم کریں کہ کون سی معلومات غائب ہیں"
+    ],
+    "metaTitle": "اے آئی نالج بیس سافٹ ویئر | سمانٹک سرچ | PakSoft",
+    "metaDescription": "کاروباری دستاویزات کو ایک ذہین سوال و جواب کے پورٹل میں تبدیل کریں۔ ہم Pinecone اور OpenAI کی مدد سے سیکیورٹی والا نالج بیس بناتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "معلومات کا آڈٹ",
+          "description": "ہم کمپنی کی فائلوں، پورٹلز اور فولڈرز کا جائزہ لیتے ہیں تاکہ یہ معلوم کیا جا سکے کہ اہم معلومات کہاں محفوظ ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "انڈیکسنگ اور سنکرونائزیشن",
+          "description": "ہم خودکار کنیکٹرز بناتے ہیں جو گوگل ڈرائیو، نوشن (Notion) اور ڈیٹا بیس سے فائلیں سنکرونائز کرتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "ویکٹر ڈیٹا بیس کی تیاری",
+          "description": "ہم تمام نکالے گئے متنی مواد کو ویکٹرز میں تبدیل کرتے ہیں اور انہیں Pinecone ڈیٹا بیس میں انڈیکس کرتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "سوال و جواب انجن کی تشکیل",
+          "description": "ہم LangChain کی مدد سے ایک پائپ لائن بناتے ہیں جو متعلقہ ڈیٹا حاصل کر کے درست جواب تیار کرتی ہے۔"
+        },
+        {
+          "step": 5,
+          "title": "رسائی اور سیکیورٹی کنٹرول",
+          "description": "ہم OAuth اور ایکٹو ڈائریکٹری سنکرونائزیشن ترتیب دیتے ہیں تاکہ ملازمین صرف وہی فائلیں دیکھ سکیں جن کی انہیں اجازت حاصل ہے۔"
+        },
+        {
+          "step": 6,
+          "title": "انٹرفیس کا لانچ",
+          "description": "ہم اینالیٹکس ڈیش بورڈز کے ساتھ ایک ریسپانسیو Next.js سرچ انٹرفیس تیار اور لانچ کرتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "کیا یہ نوشن (Notion) اور گوگل ڈرائیو سے جڑ سکتا ہے؟",
+          "answer": "جی ہاں، ہم محفوظ اے پی آئی کنیکٹرز بناتے ہیں جو نوشن، گوگل ڈرائیو، مائیکروسافٹ ون ڈرائیو اور لوکل نیٹ ورک فولڈرز سے دستاویزات کو خود بخود اپ ڈیٹ کرتے ہیں۔"
+        },
+        {
+          "question": "یہ سسٹم دستاویزات کی اجازتوں (permissions) کو کیسے سنبھالتا ہے؟",
+          "answer": "ہم سرچ کیوریز کو آپ کے آئی ڈی فراہم کنندہ (جیسے Okta یا Active Directory) کے ساتھ مربوط کرتے ہیں تاکہ سرچ نتائج میں صرف وہی فائلیں نظر آئیں جن کے لیے صارف مجاز ہو۔"
+        },
+        {
+          "question": "دستاویز اپ ڈیٹ ہونے پر کیا عمل ہوتا ہے؟",
+          "answer": "ہم اسکینرز ترتیب دیتے ہیں۔ جب کوئی فائل تبدیل ہوتی ہے، تو سسٹم خود بخود اس کا نیا متن نکالتا ہے، ویکٹرز کو اپ ڈیٹ کرتا ہے اور سرچ انڈیکس کو ریفریش کرتا ہے۔"
+        },
+        {
+          "question": "کیا یہ سسٹم متعدد زبانوں کو سپورٹ کرتا ہے؟",
+          "answer": "جی ہاں، ہمارے ایمبیڈنگ ماڈلز ملٹی لنگول ہیں۔ کوئی بھی ملازم جرمن زبان میں سوال پوچھ کر انگریزی یا ترکی زبان کی دستاویزات سے جواب حاصل کر سکتا ہے۔"
+        },
+        {
+          "question": "کیا یہ اسکین شدہ فائلوں یا بلوں کو انڈیکس کر سکتا ہے؟",
+          "answer": "جی ہاں، ہم اسکین شدہ تصاویر، ہاتھ سے لکھے ہوئے نوٹوں اور پرانے پی ڈی ایف سے صاف متن نکالنے کے لیے او سی آر (OCR) ٹیکنالوجی مربوط کرتے ہیں۔"
+        },
+        {
+          "question": "کیا سرچ ڈیٹا پبلک ایل ایل ایم ماڈلز سے محفوظ رہتا ہے؟",
+          "answer": "بالکل۔ آپ کا ڈیٹا نجی ویکٹر ڈیٹا بیسز میں محفوظ رہتا ہے اور ہم کالز کو محفوظ کاروباری APIs کے ذریعے چلاتے ہیں جو ڈیٹا کے رازداری کی ضمانت فراہم کرتے ہیں۔"
+        },
+        {
+          "question": "ہمیں کیسے معلوم ہوگا کہ ملازمین کیا تلاش کر رہے ہیں؟",
+          "answer": "ہم ایک اینالیٹکس ڈیش بورڈ بناتے ہیں جو زیادہ پوچھے جانے والے سوالات، تلاش کی کامیابی اور ناکام سرچز دکھاتا ہے تاکہ معلوماتی ریکارڈز کے خلا کو پر کیا جا سکے۔"
+        },
+        {
+          "question": "اس سسٹم کو تیار کرنے میں کتنا وقت لگتا ہے؟",
+          "answer": "ملازمین کے رولز اور 3 سے 4 کنیکٹرز کے ساتھ کسٹم نالج بیس سسٹم کی تیاری میں عام طور پر 6 سے 8 ہفتے کا وقت لگتا ہے۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Pinecone",
+          "icon": "pinecone"
+        },
+        {
+          "name": "OpenAI API",
+          "icon": "openai"
+        },
+        {
+          "name": "LangChain",
+          "icon": "langchain"
+        },
+        {
+          "name": "Next.js",
+          "icon": "nextjs"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "tailwindcss"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "قاعدة المعرفة بالذكاء الاصطناعي",
+    "shortDescription": "ابنِ قواعد معرفة ذكية للمؤسسات تفهم الاستعلامات الدلالية. نجمع بين قواعد البيانات المتجهة والنماذج اللغوية لتوفير إجابات سريعة وموثقة للفرق.",
+    "fullDescription": "نادراً ما تُقرأ ملفات الويكي الكلاسيكية وكتيبات الموظفين الثابتة، مما يجعل المعرفة الداخلية الهامة غير قابلة للوصول. نحن نبني أنظمة قواعد معرفة ذكية مدعومة بالذكاء الاصطناعي تحول المستندات الثابتة إلى مورد بحث وأسئلة وأجوبة تفاعلي ونشط. باستخدام البحث المتجه الدلالي مع Pinecone وتمثيلات OpenAI، تفهم منصاتنا نية أسئلة المستخدمين وتبحث في السياق عبر أدلة متعددة. من خلال دمج LangChain و Next.js، نبني بوابات ويب نظيفة حيث يمكن للموظفين أو العملاء طرح الأسئلة بلغة طبيعية وتلقي إجابات فورية مع استشهادات بالمصادر. تتكامل حلولنا مع خرائط أمان للوصول، مما يضمن بقاء المجلدات الحساسة مخفية عن غير المصرح لهم.",
+    "features": [
+      "بحث متجه دلالي متقدم عبر المستندات",
+      "تصنيف ووسم تلقائي للمحتوى والمعلومات",
+      "أنظمة أسئلة وأجوبة ذكية بلغة طبيعية",
+      "استشهادات فورية بالمصادر والصفحات المرجعية",
+      "تحليل ودعم ملفات بتنسيقات متعددة ومتنوعة",
+      "تكامل الخصوصية وضوابط الوصول الدقيقة للبيانات",
+      "زواحف آلية لفحص الويب وأدلة التخزين السحابي",
+      "تقارير تحليلات البحث وتحديد فجوات المستندات"
+    ],
+    "benefits": [
+      "تقليل حجم تذاكر الدعم الداخلي بنسبة تصل إلى 60٪",
+      "تهيئة أعضاء الفريق الجدد بشكل أسرع عبر المعرفة الذاتية",
+      "ضمان استرجاع المعلومات المطلوبة في أقل من 300 مللي ثانية",
+      "تأسيس مصدر آمن وموحد للحقيقة والمعرفة بالمؤسسة",
+      "منع تسريب المستندات والأدلة الحساسة للشركة",
+      "اكتشاف المستندات المفقودة باستخدام تحليلات استعلامات البحث"
+    ],
+    "metaTitle": "برمجيات قواعد المعرفة بالذكاء الاصطناعي | PakSoft",
+    "metaDescription": "حول المستندات الثابتة إلى بوابة أسئلة وأجوبة ذكية. نبني قواعد معرفة دلالية مخصصة مع Pinecone و OpenAI لبحث آمن ومبسط للفرق.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تدقيق المعلومات",
+          "description": "نقوم بمسح ملفات شركتك ومستنداتها ومجلداتها لرسم خريطة لمواقع تخزين المعرفة الداخلية."
+        },
+        {
+          "step": 2,
+          "title": "الاستيراد والمزامنة",
+          "description": "نبني موصلات آلية تستورد الملفات من Google Drive و Notion وقواعد البيانات بشكل آمن."
+        },
+        {
+          "step": 3,
+          "title": "التمثيل والفهرسة المتجهة",
+          "description": "نحول جميع النصوص المستخرجة إلى تمثيلات متجهية ونفهرسها داخل Pinecone أو Milvus."
+        },
+        {
+          "step": 4,
+          "title": "إعداد محرك الأسئلة والأجوبة",
+          "description": "نعد مسار استرجاع للنماذج اللغوية باستخدام LangChain لجلب السياقات المناسبة وصياغة الإجابات الدقيقة."
+        },
+        {
+          "step": 5,
+          "title": "ضوابط الوصول والأمان",
+          "description": "نعد مزامنة OAuth و Active Directory ليتمكن المستخدمون فقط من البحث في الملفات المصرح لهم بقراءتها."
+        },
+        {
+          "step": 6,
+          "title": "إطلاق الواجهة",
+          "description": "نبني وننشر واجهة بحث Next.js متجاوبة ومزودة بلوحات تحليلات متقدمة لعمليات البحث والاستعلام."
+        }
+      ],
+      "faq": [
+        {
+          "question": "هل يمكن ربط هذا النظام بـ Notion و Google Drive؟",
+          "answer": "نعم، نحن نبني موصلات آمنة لواجهات برمجة التطبيقات تقوم بمزامنة المستندات من Notion و Google Drive و Microsoft OneDrive والمجلدات المحلية تلقائياً."
+        },
+        {
+          "question": "كيف يتعامل النظام مع أذونات وصلاحيات المستندات؟",
+          "answer": "نقوم بدمج استعلامات البحث مع موفر الهوية الخاص بك (مثل Okta أو Active Directory)، وتصفية نتائج البحث المتجه لضمان ظهور الملفات المصرح بها فقط."
+        },
+        {
+          "question": "ماذا يحدث عند تحديث مستند؟",
+          "answer": "نقوم بإعداد مستمعي خطافات الويب (Webhooks) وزواحف مجدولة. عندما يتم تعديل مستند، يستخرج النظام النص الجديد تلقائياً ويحدث تمثيله المتجه ويعيد الفهرسة."
+        },
+        {
+          "question": "هل يدعم النظام لغات متعددة؟",
+          "answer": "نعم، نماذج التمثيل المتجهي لدينا متعددة اللغات. يمكن للموظف طرح سؤال باللغة الألمانية واسترداد إجابات مستمدة من وثائق باللغة الإنجليزية أو التركية تلقائياً."
+        },
+        {
+          "question": "هل يمكنه فهرسة الفواتير الممسوحة ضوئياً أو ملفات PDF القديمة؟",
+          "answer": "نعم، ندمج تقنية OCR لاستخراج النصوص النظيفة من الصور الممسوحة ضوئياً، والملاحظات المكتوبة بخط اليد، وملفات PDF القديمة قبل التمثيل والفهرسة."
+        },
+        {
+          "question": "هل البحث آمن ومحمي من النماذج اللغوية العامة؟",
+          "answer": "بالتأكيد. يتم استضافة بياناتك في قواعد بيانات متجهة خاصة، ونوجه مكالمات النماذج اللغوية عبر واجهات آمنة تضمن عدم استخدام بياناتك لأي تدريب."
+        },
+        {
+          "question": "كيف نعرف ما يبحث عنه الموظفون؟",
+          "answer": "نبني لوحة تحكم لتحليلات البحث تعرض الاستعلامات الشائعة، ومعدلات الرضا عن النتائج، والاستعلامات الفاشلة التي لم تعثر على مستندات، لمساعدتك في سد فجوات الوثائق."
+        },
+        {
+          "question": "ما هو وقت الإعداد النموذجي لهذا النظام؟",
+          "answer": "يستغرق مشروع دمج قاعدة المعرفة المؤسسية المخصصة مع 3 إلى 4 موصلات رئيسية وأذونات محددة من 6 إلى 8 أسابيع من الاكتشاف إلى الإطلاق الفعلي."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Pinecone",
+          "icon": "pinecone"
+        },
+        {
+          "name": "OpenAI API",
+          "icon": "openai"
+        },
+        {
+          "name": "LangChain",
+          "icon": "langchain"
+        },
+        {
+          "name": "Next.js",
+          "icon": "nextjs"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "tailwindcss"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        }
+      ]
+    }
+  }
+}

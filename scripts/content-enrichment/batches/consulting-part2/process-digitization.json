@@ -1,0 +1,598 @@
+{
+  "slug": "process-digitization",
+  "en": {
+    "name": "Process Digitization",
+    "shortDescription": "Convert manual workflows into automated, scalable digital operations. We streamline administrative tasks, replace paper forms, and integrate custom software solutions for maximum efficiency.",
+    "fullDescription": "Relying on paper logs, spreadsheet tracking, and manual data entry creates operational bottlenecks, limits visibility, and increases data errors. We analyze your day-to-day operations and design custom Process Digitization solutions that automate manual workflows. Our team builds integrated digital tools, constructs centralized web dashboards, and connects siloed software systems via secure APIs. We replace legacy paper processes with mobile-friendly forms, configure automated approvals, and build real-time reporting views. By shifting your operations to a modern digital architecture, we help you eliminate transcription errors, improve task visibility, and establish a scalable foundation for business expansion.",
+    "features": [
+      "Manual Workflow Mapping and Audit",
+      "Paperless Form and Data Capture Systems",
+      "Automated Approval Routing Engines",
+      "Legacy Process Integration Middleware",
+      "Custom Administrative Dashboards Design",
+      "Real-Time Operational Reporting Setup",
+      "Mobile-Friendly Field Operations Tools",
+      "Database Sync and API Connections"
+    ],
+    "benefits": [
+      "Eliminate transcription errors and paper handling overhead costs",
+      "Accelerate operational processing speeds by up to seventy percent",
+      "Improve task visibility and team progress tracking metrics",
+      "Ensure strict operational regulatory compliance and audit logs",
+      "Reduce physical storage needs through centralized cloud archiving",
+      "Empower employees with automated data sharing pipelines"
+    ],
+    "metaTitle": "Business Process Digitization Services | PakSoft",
+    "metaDescription": "Digitize manual workflows and paper processes. We design custom approval engines, web forms, and operational reporting dashboards. Contact us.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Process Mapping Audit",
+          "description": "We document your daily administrative routines, manual handoffs, and data storage systems. This exposes core operational bottlenecks and error-prone tasks."
+        },
+        {
+          "step": 2,
+          "title": "Digital Form Design",
+          "description": "We replace paper checklists and Excel tracking files with secure, mobile-friendly digital forms. This enables instant field data capture and validation."
+        },
+        {
+          "step": 3,
+          "title": "Workflow Automation Setup",
+          "description": "We write automated routing rules for approvals, notifications, and task assignments. This removes wait times and ensures prompt progress across internal departments."
+        },
+        {
+          "step": 4,
+          "title": "System Integration Middleware",
+          "description": "We construct secure middleware to sync newly captured digital data with your CRM, ERP, or accounting databases. This eliminates double entry errors."
+        },
+        {
+          "step": 5,
+          "title": "Dashboard & Analytics Launch",
+          "description": "We design centralized web dashboards to track active tasks, showing operational performance in real time. This provides managers with actionable process visibility."
+        },
+        {
+          "step": 6,
+          "title": "Team Onboarding & Support",
+          "description": "We conduct training sessions for your staff, ensuring smooth adoption of the new digital tools. We monitor performance logs to optimize usability."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is process digitization?",
+          "answer": "Process digitization is the conversion of analog, manual, or paper-based business workflows into automated digital processes using custom software and cloud databases."
+        },
+        {
+          "question": "How does process digitization improve operational efficiency?",
+          "answer": "It eliminates manual data entry, automates approval flows, and provides instant access to information. This drastically reduces task processing times and prevents human transcription errors."
+        },
+        {
+          "question": "Can we digitize field operations without reliable internet?",
+          "answer": "Yes, we design mobile-friendly digital forms that support offline data caching. The data is securely stored locally on the device and syncs automatically once reconnected."
+        },
+        {
+          "question": "Do we need to replace all our current software to digitize?",
+          "answer": "No, we build custom middleware APIs to connect and sync data with your existing CRM, ERP, or legacy database systems, modernizing workflows without replacing stable tools."
+        },
+        {
+          "question": "How do you ensure data security in digitized workflows?",
+          "answer": "We implement role-based access control, secure SSL/TLS data encryption, and automated audit logs. This ensures only authorized personnel can view or modify specific business records."
+        },
+        {
+          "question": "What business processes can be digitized?",
+          "answer": "Almost any repetitive workflow, including invoice approvals, employee onboarding, field inspections, inventory tracking, expense reporting, and client onboarding can be fully digitized."
+        },
+        {
+          "question": "How long does a process digitization project take?",
+          "answer": "A focused digitization project for a specific department typically takes six to twelve weeks, from initial workflow mapping to final staff training and release."
+        },
+        {
+          "question": "How do you measure the success of digitization?",
+          "answer": "We track indicators like average task completion time, paper costs saved, data error reduction rates, and employee satisfaction metrics to measure operational success."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Node.js",
+          "icon": "nodedotjs"
+        },
+        {
+          "name": "React",
+          "icon": "react"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "MongoDB",
+          "icon": "mongodb"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "AWS",
+          "icon": "aws"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Süreç Dijitalleştirme",
+    "shortDescription": "Manuel iş akışlarını otomatikleştirilmiş, ölçeklenebilir dijital operasyonlara dönüştürün. Maksimum verimlilik için idari görevleri kolaylaştırıyor, kağıt formları kaldırıyor ve özel yazılımlar entegre ediyoruz.",
+    "fullDescription": "Kağıt günlüklere, elektronik tablolara ve manuel veri girişine güvenmek operasyonel darboğazlar yaratır, görünürlüğü sınırlar ve veri hatalarını artırır. Günlük operasyonlarınızı analiz ediyor ve manuel iş akışlarını otomatikleştiren özel Süreç Dijitalleştirme çözümleri tasarlıyoruz. Ekibimiz entegre dijital araçlar oluşturur, merkezi web panelleri tasarlar ve bağımsız yazılım sistemlerini güvenli API'ler aracılığıyla bağlar. Kağıt süreçleri mobil uyumlu formlarla değiştiriyor, otomatik onayları yapılandırıyor ve gerçek zamanlı raporlama görünümleri oluşturuyoruz. Operasyonlarınızı modernize ederek verimliliğinizi artırıyoruz.",
+    "features": [
+      "Manuel İş Akışı Eşleme ve Denetimi",
+      "Kağıtsız Form ve Veri Yakalama Sistemleri",
+      "Otomatik Onay Yönlendirme Motorları",
+      "Eski Süreç Entegrasyon Ara Yazılımları",
+      "Özel İdari Kontrol Panelleri Tasarımı",
+      "Gerçek Zamanlı Operasyonel Raporlama",
+      "Mobil Uyumlu Saha Operasyon Araçları",
+      "Veritabanı Senkronizasyonu ve API Bağlantıları"
+    ],
+    "benefits": [
+      "Yazım hatalarını ve kağıt işleme genel gider maliyetlerini ortadan kaldırın",
+      "Operasyonel işlem hızlarını yüzde yetmişe varan oranda artırın",
+      "Görev görünürlüğünü ve ekip ilerleme takip metriklerini iyileştirin",
+      "Sıkı operasyonel mevzuat uyumluluğu ve denetim günlükleri sağlayın",
+      "Merkezi bulut arşivleme ile fiziksel depolama ihtiyaçlarını azaltın",
+      "Çalışanları otomatik veri paylaşım veri hatlarıyla güçlendirin"
+    ],
+    "metaTitle": "İş Süreçleri Dijitalleştirme Hizmetleri | PakSoft",
+    "metaDescription": "Manuel iş akışlarını ve kağıt süreçleri dijitalleştirin. Özel onay motorları, web formları ve raporlama panelleri tasarlıyoruz. İletişime geçin.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Süreç Eşleme Denetimi",
+          "description": "Günlük idari rutinlerinizi, manuel devir teslimleri ve veri depolama sistemlerinizi belgeliyoruz. Bu, operasyonel darboğazları ve hataya açık görevleri ortaya çıkarır."
+        },
+        {
+          "step": 2,
+          "title": "Dijital Form Tasarımı",
+          "description": "Kağıt kontrol listelerini ve Excel takip dosyalarını güvenli, mobil uyumlu dijital formlarla değiştiriyoruz. Bu, anında saha veri yakalama ve doğrulamayı sağlar."
+        },
+        {
+          "step": 3,
+          "title": "İş Akışı Otomasyonu Kurulumu",
+          "description": "Onaylar, bildirimler ve görev atamaları için otomatik yönlendirme kuralları yazıyoruz. Bu, bekleme sürelerini ortadan kaldırır ve departmanlar arası hızlı ilerleme sağlar."
+        },
+        {
+          "step": 4,
+          "title": "Sistem Entegrasyonu Ara Yazılımı",
+          "description": "Yeni yakalanan dijital verileri CRM, ERP veya muhasebe veritabanlarınızla senkronize etmek için güvenli ara yazılımlar oluşturuyoruz. Bu, mükerrer giriş hatalarını önler."
+        },
+        {
+          "step": 5,
+          "title": "Panel & Analitik Yayını",
+          "description": "Aktif görevleri izlemek için merkezi web panelleri tasarlıyor, operasyonel performansı gerçek zamanlı gösteriyoruz. Bu, yöneticilere eyleme geçirilebilir süreç görünürlüğü sağlar."
+        },
+        {
+          "step": 6,
+          "title": "Ekip Oryantasyonu & Destek",
+          "description": "Yeni dijital araçların sorunsuz bir şekilde benimsenmesini sağlamak için personeliniz için eğitim oturumları düzenliyoruz. Kullanılabilirliği optimize etmek için sistem günlüklerini izliyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Süreç dijitalleştirme nedir?",
+          "answer": "Süreç dijitalleştirme; analog, manuel veya kağıt tabanlı iş akışlarının, özel yazılımlar ve bulut veritabanları kullanılarak otomatikleştirilmiş dijital süreçlere dönüştürülmesidir."
+        },
+        {
+          "question": "Süreç dijitalleştirme operasyonel verimliliği nasıl artırır?",
+          "answer": "Manuel veri girişini ortadan kaldırır, onay akışlarını otomatikleştirir ve bilgiye anında erişim sağlar. Bu, işlem sürelerini azaltır ve insan kaynaklı hataları önler."
+        },
+        {
+          "question": "Güvenilir internet olmadan saha operasyonlarını dijitalleştirebilir miyiz?",
+          "answer": "Evet, çevrimdışı veri önbelleğe almayı destekleyen saha formları tasarlıyoruz. Veriler cihazda yerel olarak güvenli bir şekilde saklanır ve internet bağlandığında otomatik olarak senkronize edilir."
+        },
+        {
+          "question": "Dijitalleşmek için mevcut tüm yazılımlarımızı değiştirmemiz gerekiyor mu?",
+          "answer": "No, verileri mevcut CRM, ERP veya eski veritabanı sistemlerinizle senkronize etmek için özel ara yazılım API'leri oluşturuyor, kararlı araçları değiştirmeden iş akışlarını modernize ediyoruz."
+        },
+        {
+          "question": "Dijitalleştirilmiş iş akışlarında veri güvenliğini nasıl sağlıyorsunuz?",
+          "answer": "Rol tabanlı erişim kontrolü, güvenli SSL/TLS veri şifreleme ve otomatik denetim günlükleri uyguluyoruz. Bu, yalnızca yetkili personelin kritik kayıtlara erişmesini sağlar."
+        },
+        {
+          "question": "Hangi iş süreçleri dijitalleştirilebilir?",
+          "answer": "Fatura onayları, çalışan işe alımı, saha denetimleri, envanter takibi, masraf raporlaması ve müşteri kayıt işlemleri dahil olmak üzere neredeyse tüm tekrarlayan iş akışları dijitalleştirilebilir."
+        },
+        {
+          "question": "Bir süreç dijitalleştirme projesi ne kadar sürer?",
+          "answer": "Belirli bir departman için odaklanmış bir dijitalleştirme projesi, ilk iş akışı haritalamasından son personel eğitimine ve yayına kadar genellikle altı ila on iki hafta sürer."
+        },
+        {
+          "question": "Dijitalleştirmenin başarısını nasıl ölçüyorsunuz?",
+          "answer": "Operasyonel başarıyı ölçmek için ortalama görev tamamlanma süresi, tasarruf edilen kağıt maliyetleri, veri hata azaltma oranları ve çalışan memnuniyeti metriklerini takip ediyoruz."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Node.js",
+          "icon": "nodedotjs"
+        },
+        {
+          "name": "React",
+          "icon": "react"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "MongoDB",
+          "icon": "mongodb"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "AWS",
+          "icon": "aws"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Prozessdigitalisierung",
+    "shortDescription": "Überführen Sie manuelle Arbeitsabläufe in automatisierte, skalierbare digitale Prozesse. Wir vereinfachen administrative Aufgaben, ersetzen Papierformulare und binden maßgeschneiderte Software-Lösungen für maximale Betriebseffizienz in Ihre Infrastruktur ein.",
+    "fullDescription": "Die Abhängigkeit von Papierprotokollen, Tabellenkalkulationen und manueller Dateneingabe verursacht Engpässe, schränkt die Übersicht ein und erhöht die Fehlerquote. Wir analysieren Ihre täglichen Abläufe und entwerfen maßgeschneiderte Lösungen zur Prozessdigitalisierung, die manuelle Workflows automatisieren. Unser Team entwickelt integrierte Web-Tools, konzipiert zentrale Dashboards und verbindet Datensysteme über sichere APIs. Wir ersetzen Papierprozesse durch digitale Formulare, konfigurieren automatisierte Genehmigungen und erstellen Echtzeit-Berichte. Durch die Modernisierung Ihrer Abläufe eliminieren Sie Übertragungsfehler und schaffen ein stabiles Fundament für Ihr Wachstum.",
+    "features": [
+      "Audit und Mapping manueller Arbeitsabläufe",
+      "Papierlose Formulare und digitale Datenerfassung",
+      "Entwicklung automatisierter Genehmigungs-Engines",
+      "Schnittstellen zur Integration von Altsystemen",
+      "Design individueller administrativer Dashboards",
+      "Einrichtung von Echtzeit-Betriebsberichten",
+      "Mobile Web-Tools für Außendienst-Aktivitäten",
+      "Datenbanksynchronisation und sichere API-Anbindungen"
+    ],
+    "benefits": [
+      "Übertragungsfehler und Kosten für Papierdokumente eliminieren",
+      "Betriebliche Bearbeitungszeiten um bis zu siebzig Prozent beschleunigen",
+      "Die Übersicht über Aufgaben und Teamfortschritte deutlich verbessern",
+      "Einhaltung gesetzlicher Vorschriften durch lückenlose Audit-Logs sichern",
+      "Physischen Lagerplatz durch zentrale Cloud-Archivierung einsparen",
+      "Mitarbeiter durch automatisierte Datenaustausch-Pipelines entlasten"
+    ],
+    "metaTitle": "Prozessdigitalisierung für Unternehmen | PakSoft",
+    "metaDescription": "Digitalisieren Sie manuelle Abläufe und Papierprozesse. Wir entwickeln Genehmigungssysteme, Webformulare und Dashboards zur Betriebsübersicht. Kontakt.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Prozess-Mapping & Analyse",
+          "description": "Wir dokumentieren Ihre administrativen Abläufe, manuellen Übergaben und Datensysteme. Dies deckt Engpässe und fehleranfällige manuelle Schritte auf."
+        },
+        {
+          "step": 2,
+          "title": "Design digitaler Formulare",
+          "description": "Wir ersetzen Papierlisten und Excel-Dateien durch sichere, mobiloptimierte Webformulare. Dies ermöglicht eine unmittelbare Datenerfassung und -prüfung vor Ort."
+        },
+        {
+          "step": 3,
+          "title": "Workflow-Automatisierung",
+          "description": "Wir implementieren automatische Regeln für Genehmigungen, Benachrichtigungen und Aufgabenzuweisungen. Dies verkürzt Wartezeiten und sichert zügige Abläufe zwischen Abteilungen."
+        },
+        {
+          "step": 4,
+          "title": "Schnittstellen-Integration",
+          "description": "Wir entwickeln sichere Middleware zur Synchronisation erfasster Daten mit Ihren CRM- oder ERP-Systemen. Dies schließt doppelte Dateneingaben zuverlässig aus."
+        },
+        {
+          "step": 5,
+          "title": "Dashboard- & Analytics-Launch",
+          "description": "Wir entwerfen zentrale Dashboards zur Überwachung aktiver Aufgaben und zur Echtzeit-Leistungsanalyse. Dies gibt Führungskräften eine klare Prozessübersicht."
+        },
+        {
+          "step": 6,
+          "title": "Mitarbeiter-Onboarding & Support",
+          "description": "Wir schulen Ihre Mitarbeiter, um eine schnelle Akzeptanz der neuen digitalen Tools sicherzustellen. Wir analysieren Nutzungsprotokolle, um das System kontinuierlich zu optimieren."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist Prozessdigitalisierung?",
+          "answer": "Es beschreibt die Überführung von analogen, manuellen oder papierbasierten Arbeitsabläufen in automatisierte digitale Prozesse mithilfe von Software und Datenbanken."
+        },
+        {
+          "question": "Wie steigert Prozessdigitalisierung die Effizienz?",
+          "answer": "Sie eliminiert manuelle Eingaben, automatisiert Freigabeprozesse und bietet sofortigen Datenzugriff. Dies senkt Bearbeitungszeiten drastisch und verhindert menschliche Übertragungsfehler."
+        },
+        {
+          "question": "Können wir Außendienstprozesse ohne Internet digitalisieren?",
+          "answer": "Ja, wir entwickeln Webformulare mit Offline-Datenspeicherung. Die erfassten Daten werden verschlüsselt auf dem Gerät gesichert und automatisch synchronisiert, sobald wieder Netzempfang besteht."
+        },
+        {
+          "question": "Müssen wir unsere gesamte Software für die Digitalisierung ersetzen?",
+          "answer": "Nein, wir entwickeln individuelle Middleware-APIs, um Daten mit Ihrem CRM, ERP oder Altsystemen zu synchronisieren. Bestehende, stabile Tools bleiben erhalten."
+        },
+        {
+          "question": "Wie sichern Sie die Daten in digitalisierten Abläufen?",
+          "answer": "Wir nutzen rollenbasierte Zugriffskontrollen, SSL/TLS-Datenverschlüsselung und automatisierte Audit-Logs. So greifen ausschließlich autorisierte Mitarbeiter auf sensible Unternehmensdaten zu."
+        },
+        {
+          "question": "Welche Geschäftsprozesse lassen sich digitalisieren?",
+          "answer": "Nahezu jeder wiederkehrende Ablauf, wie Rechnungsfreigaben, Mitarbeiter-Onboarding, Qualitätskontrollen, Inventarprüfungen, Reisekostenabrechnungen und die Neukundenregistrierung."
+        },
+        {
+          "question": "Wie lange dauert ein Digitalisierungsprojekt?",
+          "answer": "Ein fokussiertes Projekt für eine Abteilung dauert meist sechs bis zwölf Wochen — von der ersten Analyse bis zur Mitarbeiterschulung und Live-Schaltung."
+        },
+        {
+          "question": "Wie wird der Erfolg der Digitalisierung gemessen?",
+          "answer": "Wir analysieren Metriken wie die durchschnittliche Bearbeitungszeit, eingesparte Papierkosten, die Reduzierung von Datenfehlern sowie die Zufriedenheit der Mitarbeiter."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Node.js",
+          "icon": "nodedotjs"
+        },
+        {
+          "name": "React",
+          "icon": "react"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "MongoDB",
+          "icon": "mongodb"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "AWS",
+          "icon": "aws"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "کاروباری عمل کو ڈیجیٹل بنانا",
+    "shortDescription": "دستی کاموں کو خودکار اور پیمائش پذیر ڈیجیٹل آپریشنز میں تبدیل کریں۔ ہم کاغذی فارمز کو ختم کر کے کارکردگی بڑھانے والے سسٹمز مربوط کرتے ہیں۔",
+    "fullDescription": "کاغذی ریکارڈز، ایکسل شیٹس اور دستی ڈیٹا انٹری پر انحصار کرنے سے کام میں تاخیر ہوتی ہے اور غلطیوں کے امکانات بڑھ جاتے ہیں۔ ہم آپ کے روزمرہ کے کاموں کا جائزہ لیتے ہیں اور دستی ورک فلو کو خودکار بنانے کے لیے کسٹم سلوشنز ڈیزائن کرتے ہیں۔ ہماری ٹیم مربوط ڈیجیٹل ٹولز بناتی ہے، مرکزی کنٹرول پینلز ڈیزائن کرتی ہے اور سیکیور APIs کے ذریعے مختلف سسٹمز کو آپس میں جوڑتی ہے۔ ہم کاغذی فارمز کو موبائل فرینڈلی فارمز سے بدلتے ہیں، خودکار منظوری کا نظام بناتے ہیں اور ریئل ٹائم رپورٹنگ دیتے ہیں۔ سسٹم کو ڈیجیٹل بنا کر ہم کاروباری کارکردگی کو بڑھاتے ہیں۔",
+    "features": [
+      "دستی ورک فلو کی نقشہ سازی اور آڈٹ",
+      "پیپر لیس فارمز اور ڈیٹا اکٹھا کرنے کا نظام",
+      "خودکار منظوری اور ٹاسک روٹنگ انجن",
+      "پرانے سسٹمز کو جوڑنے کے لیے لنکنگ سافٹ ویئر",
+      "خصوصی انتظامی کنٹرول پینلز کی ڈیزائننگ",
+      "ریئل ٹائم آپریشنل رپورٹنگ کا سیٹ اپ",
+      "موبائل فرینڈلی فیلڈ آپریشنز کے ٹولز",
+      "ڈیٹا بیس سنکرونائزیشن اور API کنکشنز"
+    ],
+    "benefits": [
+      "ٹائپنگ کی غلطیوں اور کاغذی کام کے اخراجات ختم کریں",
+      "کاروباری پروسیسنگ کی رفتار کو ستر فیصد تک تیز کریں",
+      "کام کی نگرانی اور ٹیم کی پیش رفت کو بہتر بنائیں",
+      "سخت قانونی تعمیل اور آڈٹ لاگز کو یقینی بنائیں",
+      "کلاؤڈ فائلنگ کے ذریعے کاغذی فائلوں کی جگہ بچائیں",
+      "خودکار ڈیٹا شیئرنگ پائپ لائنز سے ٹیم کو فعال بنائیں"
+    ],
+    "metaTitle": "کاروباری عمل کو ڈیجیٹل بنانے کی سروسز | PakSoft",
+    "metaDescription": "دستی اور کاغذی کاموں کو ڈیجیٹل بنائیں۔ ہم خودکار منظوری کے سسٹمز، فارمز اور آپریشنل ڈیش بورڈز ڈیزائن کرتے ہیں۔ رابطہ کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "سول ورک فلو کا جائزہ",
+          "description": "ہم آپ کے روزمرہ کے دفتری کاموں، دستی تبادلوں اور ڈیٹا کے ریکارڈز کا جائزہ لیتے ہیں۔ اس سے ہمیں سست روی کے مسائل کا پتا چلتا ہے۔"
+        },
+        {
+          "step": 2,
+          "title": "ڈیجیٹل فارمز کی تیاری",
+          "description": "ہم کاغذی فائلوں اور ایکسل لاگز کو موبائل فرینڈلی فارمز سے بدلتے ہیں۔ اس سے فیلڈ پر موجود ملازمین کا ڈیٹا فوراً سسٹم میں محفوظ ہو جاتا."
+        },
+        {
+          "step": 3,
+          "title": "آٹومیشن کا سیٹ اپ",
+          "description": "ہم منظوریوں، نوٹیفیکیشنز اور کاموں کی تقسیم کے لیے خودکار اصول بناتے ہیں۔ اس سے محکموں کے درمیان انتظار کا وقت ختم ہو جاتا ہے۔"
+        },
+        {
+          "step": 4,
+          "title": "سسٹمز کو آپس میں جوڑنا",
+          "description": "ہم ڈیجیٹل ڈیٹا کو آپ کے موجودہ CRM یا ERP ڈیٹا بیسز سے سنکرونائز کرنے کے لیے سیکیور سافٹ ویئر بناتے ہیں۔ اس سے غلطیاں ختم ہوتی ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "ڈیش بورڈ اور تجزیات کا آغاز",
+          "description": "ہم جاری کاموں کو ٹریک کرنے کے لیے مرکزی ویب پورٹلز بناتے ہیں، جو کام کی رفتار کو لائیو دکھاتے ہیں۔ اس سے مینیجرز کو آسانی ہوتی ہے۔"
+        },
+        {
+          "step": 6,
+          "title": "ٹیم ٹریننگ اور سپورٹ",
+          "description": "ہم آپ کے عملے کو ان ڈیجیٹل سسٹمز کو استعمال کرنے کی ٹریننگ دیتے ہیں۔ ہم کارکردگی پر نظر رکھتے ہیں تاکہ کام میں کوئی رکاوٹ نہ آئے۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "کاروباری عمل کو ڈیجیٹل بنانا (process digitization) کیا ہے؟",
+          "answer": "اس کا مطلب ہے کہ پرانے کاغذی یا دستی کاموں کو کسٹم سافٹ ویئر اور کلاؤڈ ڈیٹا بیس کا استعمال کر کے خودکار ڈیجیٹل سسٹم میں تبدیل کیا جائے۔"
+        },
+        {
+          "question": "ڈیجیٹلائزیشن سے کارکردگی کیسے بہتر ہوتی ہے؟",
+          "answer": "یہ دستی ڈیٹا انٹری کو ختم کرتی ہے، منظوریوں کو خودکار بناتی ہے اور ڈیٹا تک فوری رسائی دیتی ہے۔ اس سے غلطیاں ختم اور وقت کی بچت ہوتی."
+        },
+        {
+          "question": "کیا ہم انٹرنیٹ کے بغیر فیلڈ کا کام ڈیجیٹل کر سکتے ہیں؟",
+          "answer": "جی ہاں، ہم آف لائن کام کرنے والے فارمز بناتے ہیں۔ ڈیٹا موبائل میں محفوظ ہو جاتا ہے اور انٹرنیٹ کنیکٹ ہوتے ہی خود بخود سنک ہو جاتا ہے۔"
+        },
+        {
+          "question": "کیا ڈیجیٹلائزیشن کے لیے ہمیں پرانے سافٹ ویئرز بدلنے ہوں گے؟",
+          "answer": "جی نہیں، ہم کسٹم APIs بناتے ہیں جو آپ کے موجودہ CRM یا ERP سے جڑ جاتے ہیں، جس سے پرانے سسٹمز کو بدلے بغیر کام آسان ہو جاتا ہے۔"
+        },
+        {
+          "question": "ڈیجیٹل سسٹمز میں ڈیٹا کی سیکیورٹی کیسے ہوتی ہے؟",
+          "answer": "ہم رول بیسڈ ایکسیس کنٹرول، ڈیٹا انکرپشن اور آڈٹ لاگز کا استعمال کرتے ہیں تاکہ صرف مجاز ملازمین ہی اہم کاروباری ریکارڈز دیکھ سکیں۔"
+        },
+        {
+          "question": "ہم کن کاروباری کاموں کو ڈیجیٹل بنا سکتے ہیں؟",
+          "answer": "تقریباً تمام کاموں کو، جیسے انوائس کی منظوری، ملازمین کی بھرتی، انوینٹری ٹریکنگ، اخراجات کی رپورٹنگ، اور کسٹمر سائن اپس کو ڈیجیٹل بنایا جا سکتا ہے۔"
+        },
+        {
+          "question": "ڈیجیٹلائزیشن کے پروجیکٹ میں کتنا وقت لگتا ہے؟",
+          "answer": "کسی ایک شعبے کے پروجیکٹ کے لیے، کام کے جائزے سے لے کر ٹیم ٹریننگ اور لانچ تک عام طور پر چھ سے بارہ ہفتے لگتے ہیں۔"
+        },
+        {
+          "question": "ہم اس پروجیکٹ کی کامیابی کو کیسے ناپتے ہیں؟",
+          "answer": "ہم کام کی تکمیل کا وقت، کاغذی اخراجات میں بچت، ڈیٹا کی غلطیوں میں کمی، اور عملے کے اطمینان کے میٹرکس سے کامیابی ناپتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Node.js",
+          "icon": "nodedotjs"
+        },
+        {
+          "name": "React",
+          "icon": "react"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "MongoDB",
+          "icon": "mongodb"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "AWS",
+          "icon": "aws"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "رقمنة العمليات التشغيلية",
+    "shortDescription": "حوّل مسارات العمل اليدوية إلى عمليات رقمية مؤتمتة وقابلة للتوسع. نبسط المهام الإدارية، ونستبدل النماذج الورقية، وندمج حلول البرمجيات المخصصة لكفاءة تشغيلية قصوى.",
+    "fullDescription": "الاعتماد على السجلات الورقية، وتتبع جداول البيانات، وإدخال البيانات يدوياً يسبب اختناقات تشغيلية، ويحد من الرؤية، وييزيد من الأخطاء. نحن نحلل عملياتك اليومية ونصمم حلول رقمنة العمليات المخصصة التي تؤتمت مسارات العمل اليدوية. يبني فريقنا أدوات رقمية متكاملة، ويصمم لوحات تحكم ويب مركزية، ويربط الأنظمة البرمجية المعزولة عبر واجهات تطبيقات آمنة. نستبدل العمليات الورقية بنماذج رقمية متوافقة مع الجوال، ونهيئ الموافقات التلقائية، وننشئ تقارير فورية. نساعدك على تحديث عملياتك بكفاءة.",
+    "features": [
+      "رسم مسارات العمل اليدوية وتدقيقها بالكامل",
+      "أنظمة النماذج الورقية والتقاط البيانات الرقمية",
+      "محركات توجيه الموافقات والاعتمادات تلقائياً",
+      "أدوات برمجية لربط ودمج العمليات القديمة",
+      "تصميم لوحات التحكم الإدارية المخصصة للويب",
+      "إعداد أنظمة التقارير التشغيلية الفورية لمديري العمل",
+      "أدوات ومستندات رقمية متوافقة مع أجهزة الجوال",
+      "مزامنة قواعد البيانات واتصالات واجهات التطبيقات"
+    ],
+    "benefits": [
+      "القضاء التام على أخطاء الكتابة وتكاليف التعامل الورقي",
+      "تسريع أوقات المعالجة التشغيلية بنسبة تصل إلى سبعين بالمائة",
+      "تحسين رؤية المهام ومقاييس تتبع تقدم فرق العمل",
+      "ضمان الامتثال الصارم للوائح التشريعية وإعداد سجلات التدقيق",
+      "تقليل مساحات التخزين الفيزيائية عبر الأرشفة السحابية",
+      "تمكين الموظفين بمسارات مشاركة البيانات التلقائية"
+    ],
+    "metaTitle": "خدمات رقمنة العمليات التشغيلية للمؤسسات | PakSoft",
+    "metaDescription": "رقمن مسارات العمل اليدوية والعمليات الورقية. نصمم محركات موافقة مخصصة، ونماذج ويب، ولوحات تقارير تشغيلية. اتصل بنا الآن.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تدقيق ورسم مسار العمل",
+          "description": "نوثق روتين عملك الإداري اليومي، وعمليات التسليم اليدوية، وأنظمة تخزين البيانات لكشف الاختناقات التشغيلية والمهام المعرضة للأخطاء."
+        },
+        {
+          "step": 2,
+          "title": "تصميم النماذج الرقمية",
+          "description": "نستبدل السجلات الورقية وملفات إكسل بنماذج رقمية آمنة وسهلة الاستخدام عبر الجوال، مما يتيح التقاط البيانات ميدانياً والتحقق منها."
+        },
+        {
+          "step": 3,
+          "title": "إعداد أتمتة مسار العمل",
+          "description": "نضع قواعد توجيه تلقائية للموافقات، والإشعارات، وتعيين المهام، لإزالة فترات الانتظار وضمان تقدم العمل بين الأقسام المختلفة."
+        },
+        {
+          "step": 4,
+          "title": "تكامل الأنظمة البرمجية",
+          "description": "نبني أدوات برمجية وسيطة آمنة لمزامنة البيانات الرقمية الجديدة مع قواعد بيانات CRM أو ERP، مما يلغي أخطاء الإدخال المكرر."
+        },
+        {
+          "step": 5,
+          "title": "إطلاق لوحة التحكم والتحليلات",
+          "description": "نصمم لوحات تحكم ويب مركزية لمتابعة المهام النشطة، وعرض الأداء التشغيلي فورياً لمساعدة المديرين في اتخاذ القرارات السليمة."
+        },
+        {
+          "step": 6,
+          "title": "تدريب فريق العمل والدعم",
+          "description": "ننظم جلسات تدريبية لموظفيك لضمان الاستخدام السلس للأدوات الرقمية الجديدة، ونراقب سجلات الأداء لتحسين تجربة الاستخدام باستمرار."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما هي رقمنة العمليات التشغيلية?",
+          "answer": "رقمنة العمليات هي تحويل مسارات العمل الورقية أو اليدوية إلى عمليات رقمية مؤتمتة باستخدام البرمجيات المخصصة وقواعد البيانات السحابية الآمنة."
+        },
+        {
+          "question": "كيف تحسن رقمنة العمليات من الكفاءة التشغيلية؟",
+          "answer": "تلغي إدخال البيانات يدوياً، وتؤتمت الموافقات، وتوفر وصولاً فورياً للمعلومات، مما يقلل أوقات إنجاز المهام ويمنع أخطاء النسخ البشرية."
+        },
+        {
+          "question": "هل يمكن رقمنة العمليات الميدانية دون توفر إنترنت دائم؟",
+          "answer": "نعم، نصمم نماذج رقمية تدعم ميزة التخزين المؤقت للبيانات دون اتصال، حيث تُحفظ البيانات على الجهاز وتُزامن تلقائياً عند الاتصال."
+        },
+        {
+          "question": "هل يجب استبدال جميع برمجياتنا الحالية لرقمنة العمل؟",
+          "answer": "لا، نبني واجهات برمجية وسيطة لربط البيانات ومزامنتها مع أنظمة CRM أو ERP الحالية، لتحديث مسارات العمل مع الحفاظ على أدواتك المستقرة."
+        },
+        {
+          "question": "كيف تضمنون أمان البيانات في مسارات العمل الرقمية؟",
+          "answer": "نطبق أذونات وصول قائمة على الأدوار الوظيفية، وتشفير البيانات عبر بروتوكولات SSL/TLS، وسجلات تدقيق تلقائية تمنع الوصول غير المصرح به للبيانات."
+        },
+        {
+          "question": "ما هي العمليات التي يمكن رقمنتها بالشركة؟",
+          "answer": "يمكن رقمنة أي مسار عمل متكرر، مثل اعتمادات الفواتير، وتهيئة الموظفين الجدد، وفحص المخزون، وتقارير النفقات، وتسجيل تفاصيل العملاء الجدد."
+        },
+        {
+          "question": "كم يستغرق مشروع رقمنة العمليات عادةً؟",
+          "answer": "يستغرق المشروع الموجه لقسم معين من ستة إلى اثني عشر أسبوعاً، بدءاً من رسم مسار العمل الأول إلى تدريب الموظفين والإطلاق."
+        },
+        {
+          "question": "كيف تقيسون نجاح مشروع الرقمنة التشغيلية؟",
+          "answer": "نتتبع مؤشرات مثل متوسط وقت إنجاز المهام، وتكلفة الورق الموفرة، ومعدل انخفاض الأخطاء في البيانات، ومقاييس رضا الموظفين عن الأدوات."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Node.js",
+          "icon": "nodedotjs"
+        },
+        {
+          "name": "React",
+          "icon": "react"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "MongoDB",
+          "icon": "mongodb"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "AWS",
+          "icon": "aws"
+        }
+      ]
+    }
+  }
+}

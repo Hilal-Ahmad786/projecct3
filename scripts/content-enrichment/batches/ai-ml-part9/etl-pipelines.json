@@ -1,0 +1,638 @@
+{
+  "slug": "etl-pipelines",
+  "en": {
+    "name": "ETL Pipelines",
+    "shortDescription": "Build reliable ETL/ELT data pipelines that consolidate your business data. We design automated ingestion, transformation, and quality validation workflows for high-performance warehouses.",
+    "fullDescription": "Businesses generate massive data daily, but it is often isolated in silos. We design and implement robust, high-performance ETL/ELT pipelines that clean, transform, and load scattered enterprise data into a centralized warehouse like Snowflake or BigQuery. Using tools like Apache Airflow, dbt, Fivetran, and Apache Spark, we automate data flows from various sources including CRM systems, payment gateways, and databases. We prioritize data quality by building automated verification checks at every stage, preventing corrupted or incomplete data from affecting your analytics. Whether you require real-time streaming data feeds via Kafka or scheduled batch processing, our custom pipeline engineering guarantees a single, reliable source of truth for your business intelligence.",
+    "features": [
+      "ETL/ELT Pipeline Design and Architecture",
+      "Pre-built and Custom Source Connectors",
+      "Data Transformation and Schema Mapping",
+      "Automated Data Quality & Validation Checks",
+      "Orchestration & Workflow Scheduling",
+      "High-Performance Incremental Loading",
+      "Real-Time Streaming Pipelines with Kafka",
+      "Centralized Monitoring and Error Alerting"
+    ],
+    "benefits": [
+      "Ensure your data warehouse is always fresh and reliable",
+      "Eliminate manual data consolidation tasks entirely",
+      "Identify operational issues instantly with real-time analytics",
+      "Guarantee high data quality across all reports",
+      "Scale your data infrastructure smoothly as business grows",
+      "Reduce server overhead costs through optimized queries"
+    ],
+    "metaTitle": "Custom ETL/ELT Pipeline Development | PakSoft",
+    "metaDescription": "Design reliable, automated ETL pipelines using Airflow, dbt, and Kafka. Consolidate your data into a unified source of truth. Get in touch.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Data Source Mapping",
+          "description": "We audit your scattered data sources, databases, and APIs, designing a unified target data model."
+        },
+        {
+          "step": 2,
+          "title": "Ingestion Strategy",
+          "description": "We set up secure connectors using Fivetran or custom scripts, ensuring reliable data extraction from sources."
+        },
+        {
+          "step": 3,
+          "title": "Transformation Engineering",
+          "description": "We write optimized dbt models and Spark scripts to clean, normalize, and model raw data into analytical tables."
+        },
+        {
+          "step": 4,
+          "title": "Data Quality Validation",
+          "description": "We implement automated validation checks that test constraints, data types, and check for missing columns automatically."
+        },
+        {
+          "step": 5,
+          "title": "Orchestration Setup",
+          "description": "We configure Apache Airflow workflows to schedule tasks, manage dependencies, and handle automatic error retries."
+        },
+        {
+          "step": 6,
+          "title": "Monitoring & Tuning",
+          "description": "We set up real-time alerting for pipeline errors and optimize query latency to reduce database warehouse costs."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the difference between ETL and ELT?",
+          "answer": "ETL (Extract, Transform, Load) transforms data before loading it into the warehouse, ideal for privacy compliance. ELT loads raw data first and transforms it inside the warehouse, leveraging warehouse compute power."
+        },
+        {
+          "question": "Which data warehouses do you support?",
+          "answer": "We build pipelines for all major data warehouses, including Snowflake, Google BigQuery, Amazon Redshift, and Microsoft Azure Synapse, as well as traditional databases like PostgreSQL."
+        },
+        {
+          "question": "How do you handle schema changes in source databases?",
+          "answer": "We build resilient schemas using schema evolution features in modern connectors. We also implement alerts in dbt to notify engineering teams when source columns change unexpectedly."
+        },
+        {
+          "question": "Can you handle real-time streaming data?",
+          "answer": "Yes, we implement streaming pipelines using Apache Kafka or AWS Kinesis to ingest and process high-frequency event streams for real-time analytics."
+        },
+        {
+          "question": "How do you ensure data security during transfer?",
+          "answer": "We encrypt data in transit using TLS and at rest. We also implement secure credentials management systems like AWS Secrets Manager to protect database keys."
+        },
+        {
+          "question": "How do you check for data quality issues?",
+          "answer": "We write automated validation rules within dbt to verify key constraints, check for null values, and flag abnormal schema patterns automatically during execution."
+        },
+        {
+          "question": "Can we connect custom legacy systems?",
+          "answer": "Yes, when pre-built connectors do not exist, we write custom Python-based ingestion scripts to pull data from legacy databases and files securely."
+        },
+        {
+          "question": "How do you prevent duplicate data?",
+          "answer": "We implement upsert patterns and unique constraints within the staging tables, ensuring that data is deduplicated properly during pipeline transformation steps."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Apache Airflow",
+          "icon": "airflow"
+        },
+        {
+          "name": "dbt",
+          "icon": "dbt"
+        },
+        {
+          "name": "Fivetran",
+          "icon": "fivetran"
+        },
+        {
+          "name": "Apache Spark",
+          "icon": "spark"
+        },
+        {
+          "name": "Apache Kafka",
+          "icon": "kafka"
+        },
+        {
+          "name": "Snowflake",
+          "icon": "snowflake"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "ETL Veri Hatları",
+    "shortDescription": "İş verilerinizi birleştiren güvenilir ETL/ELT veri hatları oluşturun. Yüksek performanslı veri ambarları için otomatik veri alımı, dönüştürme ve kalite doğrulama iş akışları tasarlıyoruz.",
+    "fullDescription": "İşletmeler her gün devasa miktarda veri üretir, ancak bu veriler genellikle farklı departmanlarda izole edilmiş durumdadır. Dağınık kurumsal verileri temizleyen, dönüştüren ve Snowflake veya BigQuery gibi merkezi bir veri ambarına yükleyen sağlam, yüksek performanslı ETL/ELT veri hatları tasarlıyor ve uyguluyoruz. Apache Airflow, dbt, Fivetran ve Apache Spark gibi araçları kullanarak CRM sistemleri, ödeme geçitleri ve veritabanları dahil olmak üzere çeşitli kaynaklardan veri akışlarını otomatikleştiriyoruz. Her aşamada otomatik veri doğrulama kontrolleri oluşturarak veri kalitesine öncelik veriyor, bozuk veya eksik verilerin analizlerinizi etkilemesini engelliyoruz. İster Kafka üzerinden gerçek zamanlı veri akışlarına ister zamanlanmış toplu işlemeye ihtiyacınız olsun, özel veri hattı mühendisliğimiz iş zekanız için tek ve güvenilir bir kaynak garanti eder.",
+    "features": [
+      "ETL/ELT Veri Hattı Tasarımı ve Mimarisi",
+      "Hazır ve Özel Kaynak Konnektörleri",
+      "Veri Dönüştürme ve Şema Eşleştirme",
+      "Otomatik Veri Kalitesi ve Doğrulama Kontrolleri",
+      "İş Akışı Yönetimi ve Zamanlama",
+      "Yüksek Performanslı Artımlı Yükleme",
+      "Kafka ile Gerçek Zamanlı Veri Akışları",
+      "Merkezi İzleme ve Hata Bildirimleri"
+    ],
+    "benefits": [
+      "Veri ambarınızın her zaman güncel ve güvenilir olmasını sağlayın",
+      "Manuel veri birleştirme görevlerini tamamen ortadan kaldırın",
+      "Gerçek zamanlı analizlerle operasyonel sorunları anında belirleyin",
+      "Tüm raporlarda yüksek veri kalitesini garanti edin",
+      "İşletmeniz büyüdükçe veri altyapınızı sorunsuz bir şekilde ölçeklendirin",
+      "Optimize edilmiş sorgularla sunucu ek yükü maliyetlerini azaltın"
+    ],
+    "metaTitle": "Özel ETL/ELT Veri Hattı Geliştirme | PakSoft",
+    "metaDescription": "Airflow, dbt ve Kafka kullanarak güvenilir, otomatik ETL veri hatları tasarlayın. Verilerinizi tek bir doğruluk kaynağında birleştirin.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Veri Kaynaklarının Belirlenmesi",
+          "description": "Dağınık veri kaynaklarınızı, veritabanlarınızı ve API'lerinizi denetliyor, birleşik bir hedef veri modeli tasarlıyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Veri Alma Stratejisi",
+          "description": "Fivetran veya özel betikler kullanarak güvenli konnektörler kuruyor, kaynaklardan güvenilir veri çekilmesini sağlıyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Dönüşüm Mühendisliği",
+          "description": "Ham verileri temizlemek, normalleştirmek ve analitik tablolarda modellemek için optimize edilmiş dbt modelleri ve Spark betikleri yazıyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Veri Kalitesi Doğrulaması",
+          "description": "Sorgu kısıtlamalarını, veri türlerini test eden ve eksik sütunları otomatik olarak kontrol eden doğrulama kontrolleri uyguluyoruz."
+        },
+        {
+          "step": 5,
+          "title": "İş Akışı Yönetimi Kurulumu",
+          "description": "Görevleri zamanlamak, bağımlılıkları yönetmek ve otomatik hata tekrarlarını işlemek için Apache Airflow iş akışlarını yapılandırıyoruz."
+        },
+        {
+          "step": 6,
+          "title": "İzleme ve İnce Ayar",
+          "description": "Veri hattı hataları için gerçek zamanlı uyarılar ayarlıyor ve veri ambarı maliyetlerini azaltmak için sorgu gecikmesini optimize ediyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ETL ve ELT arasındaki fark nedir?",
+          "answer": "ETL (Extract, Transform, Load) verileri veri ambarına yüklemeden önce dönüştürür; bu, gizlilik uyumluluğu için idealdir. ELT ise ham verileri önce yükler ve veri ambarının işlem gücünü kullanarak ambar içinde dönüştürür."
+        },
+        {
+          "question": "Hangi veri ambarlarını destekliyorsunuz?",
+          "answer": "Snowflake, Google BigQuery, Amazon Redshift ve Microsoft Azure Synapse dahil olmak üzere tüm büyük veri ambarlarının yanı sıra PostgreSQL gibi geleneksel veritabanları için de veri hatları kuruyoruz."
+        },
+        {
+          "question": "Kaynak veritabanlarındaki şema değişikliklerini nasıl yönetiyorsunuz?",
+          "answer": "Modern konnektörlerdeki şema evrimi (schema evolution) özelliklerini kullanarak esnek şemalar oluşturuyoruz. Kaynak sütunlar beklenmedik bir şekilde değiştiğinde mühendislik ekiplerine haber vermek için dbt içinde uyarılar da uyguluyoruz."
+        },
+        {
+          "question": "Gerçek zamanlı veri akışlarını işleyebilir misiniz?",
+          "answer": "Evet, gerçek zamanlı analizler için yüksek frekanslı olay akışlarını almak ve işlemek üzere Apache Kafka veya AWS Kinesis kullanarak veri akış hatları kuruyoruz."
+        },
+        {
+          "question": "Veri aktarımı sırasında veri güvenliğini nasıl sağlıyorsunuz?",
+          "answer": "Verileri aktarım sırasında TLS kullanarak ve bekleyen verileri şifreliyoruz. Veritabanı anahtarlarını korumak için AWS Secrets Manager gibi güvenli kimlik bilgileri yönetim sistemleri de uyguluyoruz."
+        },
+        {
+          "question": "Veri kalitesi sorunlarını nasıl kontrol ediyorsunuz?",
+          "answer": "Anahtar kısıtlamalarını doğrulamak, boş (null) değerleri kontrol etmek ve yürütme sırasında anormal şema kalıplarını otomatik olarak işaretlemek için dbt içinde otomatik doğrulama kuralları yazıyoruz."
+        },
+        {
+          "question": "Özel eski (legacy) sistemleri bağlayabilir miyiz?",
+          "answer": "Evet, hazır konnektörlerin bulunmadığı durumlarda eski veritabanlarından ve dosyalardan verileri güvenli bir şekilde çekmek için Python tabanlı özel veri alma betikleri yazıyoruz."
+        },
+        {
+          "question": "Mükerrer verileri nasıl önlüyorsunuz?",
+          "answer": "Ara tablolarda (staging tables) güncelleme ve ekleme (upsert) kalıpları ve benzersiz kısıtlamalar uygulayarak, veri hattı dönüştürme adımları sırasında verilerin düzgün şekilde tekilleştirilmesini sağlıyoruz."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Apache Airflow",
+          "icon": "airflow"
+        },
+        {
+          "name": "dbt",
+          "icon": "dbt"
+        },
+        {
+          "name": "Fivetran",
+          "icon": "fivetran"
+        },
+        {
+          "name": "Apache Spark",
+          "icon": "spark"
+        },
+        {
+          "name": "Apache Kafka",
+          "icon": "kafka"
+        },
+        {
+          "name": "Snowflake",
+          "icon": "snowflake"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "ETL-Datenpipelines",
+    "shortDescription": "Bauen Sie zuverlässige ETL/ELT-Datenpipelines zur Konsolidierung Ihrer Unternehmensdaten auf. Wir entwickeln Workflows für Ingestion, Transformation und Validierung.",
+    "fullDescription": "Unternehmen erzeugen täglich riesige Datenmengen, diese sind jedoch oft in Silos isoliert. Wir entwerfen und implementieren robuste, leistungsstarke ETL/ELT-Pipelines, die verteilte Unternehmensdaten bereinigen, transformieren und in ein zentrales Data Warehouse wie Snowflake oder BigQuery laden. Mit Tools wie Apache Airflow, dbt, Fivetran und Apache Spark automatisieren wir Datenflüsse aus verschiedenen Quellen, darunter CRM-Systeme, Payment-Gateways und Datenbanken. Wir legen großen Wert auf Datenqualität, indem wir automatisierte Validierungen auf jeder Stufe einbauen, um zu verhindern, dass fehlerhafte Daten Ihre Berichte verfälschen. Ob Echtzeit-Streaming über Kafka oder stapelweise Verarbeitung (Batching) — wir sichern eine zuverlässige Datenbasis für Ihre Business Intelligence.",
+    "features": [
+      "ETL/ELT-Pipeline-Design und -Architektur",
+      "Vorgefertigte und maßgeschneiderte Konnektoren",
+      "Datentransformation und Schema-Mapping",
+      "Automatisierte Datenqualitätsprüfungen",
+      "Workflow-Orchestrierung und -Planung",
+      "Inkrementelle Beladung für hohe Performance",
+      "Echtzeit-Streaming-Pipelines mit Kafka",
+      "Zentrales Monitoring und Alarmierung bei Fehlern"
+    ],
+    "benefits": [
+      "Sicherstellen, dass Ihr Data Warehouse stets aktuell und verlässlich ist",
+      "Vollständige Eliminierung manueller Datenkonsolidierung",
+      "Sofortiges Erkennen operativer Probleme durch Echtzeitanalysen",
+      "Garantie für eine hohe Datenqualität in allen Berichten",
+      "Problemlose Skalierung der Dateninfrastruktur bei Wachstum",
+      "Reduzierung der Serverkosten durch optimierte Datenbankabfragen"
+    ],
+    "metaTitle": "ETL/ELT-Pipeline-Entwicklung | PakSoft",
+    "metaDescription": "Wir entwickeln automatisierte, zuverlässige ETL-Pipelines mit Airflow, dbt und Kafka. Konsolidieren Sie Ihre Unternehmensdaten sicher. Kontaktieren Sie uns.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Datenquellen-Mapping",
+          "description": "Wir analysieren Ihre verteilten Datenquellen, Datenbanken und APIs und entwerfen ein einheitliches Ziel-Datenmodell."
+        },
+        {
+          "step": 2,
+          "title": "Ingestion-Strategie",
+          "description": "Wir richten sichere Konnektoren mit Fivetran oder maßgeschneiderten Skripten ein, um eine zuverlässige Datenextraktion zu gewährleisten."
+        },
+        {
+          "step": 3,
+          "title": "Transformation-Engineering",
+          "description": "Wir schreiben optimierte dbt-Modelle und Spark-Skripte, um Rohdaten zu bereinigen, zu normalisieren und in analytischen Tabellen zu modellieren."
+        },
+        {
+          "step": 4,
+          "title": "Datenqualitätsvalidierung",
+          "description": "Wir implementieren automatisierte Prüfungen, die Integritätsregeln und Datentypen testen und auf fehlende Spalten prüfen."
+        },
+        {
+          "step": 5,
+          "title": "Orchestrierungs-Setup",
+          "description": "Wir konfigurieren Apache Airflow-Workflows zur Planung von Aufgaben, Steuerung von Abhängigkeiten und Durchführung automatischer Retries."
+        },
+        {
+          "step": 6,
+          "title": "Monitoring & Tuning",
+          "description": "Wir richten Echtzeit-Alarmierungen für Pipeline-Fehler ein und optimieren die Abfragezeiten, um die Data-Warehouse-Kosten zu minimieren."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist der Unterschied zwischen ETL und ELT?",
+          "answer": "ETL (Extract, Transform, Load) transformiert Daten vor dem Laden in das Warehouse, was ideal für den Datenschutz ist. ELT lädt Rohdaten zuerst und transformiert sie innerhalb des Warehouses, wodurch die Rechenleistung des Warehouses genutzt wird."
+        },
+        {
+          "question": "Welche Data Warehouses unterstützen Sie?",
+          "answer": "Wir bauen Pipelines für alle gängigen Data Warehouses wie Snowflake, Google BigQuery, Amazon Redshift und Microsoft Azure Synapse sowie für relationale Datenbanken wie PostgreSQL."
+        },
+        {
+          "question": "Wie gehen Sie mit Schemaänderungen in Quelldatenbanken um?",
+          "answer": "Wir bauen flexible Schemata mit den Schema-Evolution-Funktionen moderner Konnektoren. Zudem integrieren wir Warnmeldungen in dbt, um Entwicklerteams bei unerwarteten Strukturänderungen sofort zu benachrichtigen."
+        },
+        {
+          "question": "Können Sie Echtzeit-Streaming-Daten verarbeiten?",
+          "answer": "Ja, wir implementieren Streaming-Pipelines mit Apache Kafka oder AWS Kinesis, um hochfrequente Event-Streams für Echtzeitanalysen direkt aufzunehmen und zu verarbeiten."
+        },
+        {
+          "question": "Wie wird die Datensicherheit bei der Übertragung gewahrt?",
+          "answer": "Wir verschlüsseln Daten während der Übertragung (Transit) mit TLS und im Speicher (at Rest). Zudem nutzen wir Secrets-Manager-Systeme wie AWS Secrets Manager zum Schutz von Zugangsdaten."
+        },
+        {
+          "question": "Wie prüfen Sie die Datenqualität?",
+          "answer": "Wir definieren automatisierte Validierungsregeln in dbt, um während der Ausführung Primärschlüssel, Nullwerte und ungewöhnliche Tabellenstrukturen automatisch zu überprüfen."
+        },
+        {
+          "question": "Können wir benutzerdefinierte Altsysteme (Legacy) anbinden?",
+          "answer": "Ja, wenn keine vorgefertigten Konnektoren existieren, schreiben wir Python-basierte Skripte, um Daten sicher aus älteren Datenbanken und Dateisystemen zu extrahieren."
+        },
+        {
+          "question": "Wie verhindern Sie Daten-Duplikate?",
+          "answer": "Wir implementieren Upsert-Muster und Unique Constraints in den Staging-Tabellen, um sicherzustellen, dass Daten während der Transformationsschritte der Pipeline korrekt bereinigt werden."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Apache Airflow",
+          "icon": "airflow"
+        },
+        {
+          "name": "dbt",
+          "icon": "dbt"
+        },
+        {
+          "name": "Fivetran",
+          "icon": "fivetran"
+        },
+        {
+          "name": "Apache Spark",
+          "icon": "spark"
+        },
+        {
+          "name": "Apache Kafka",
+          "icon": "kafka"
+        },
+        {
+          "name": "Snowflake",
+          "icon": "snowflake"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "ای ٹی ایل ڈیٹا پائپ لائنز",
+    "shortDescription": "کاروباری ڈیٹا کو یکجا کرنے کے لیے قابل بھروسہ ETL/ELT ڈیٹا پائپ لائنز بنائیں۔ ہم کارکردگی بڑھانے کے لیے خودکار ڈیٹا اکٹھا کرنے اور معیار کی توثیق کے عمل کو ڈیزائن کرتے ہیں۔",
+    "fullDescription": "کاروباری ادارے روزانہ کی بنیاد پر بڑے پیمانے پر ڈیٹا تیار کرتے ہیں، لیکن یہ معلومات اکثر مختلف سسٹمز میں الگ الگ رہتی ہے۔ ہم مضبوط اور تیز رفتار ETL/ELT پائپ لائنز ڈیزائن اور نافذ کرتے ہیں جو پھیلے ہوئے ڈیٹا کو صاف، تبدیل اور Snowflake یا BigQuery جیسے مرکزی گودام میں لوڈ کرتی ہیں۔ Apache Airflow، dbt، Fivetran، اور Apache Spark جیسے ٹولز کی مدد سے، ہم CRM سسٹمز، پیمنٹ گیٹ ویز، اور ڈیٹا بیسز سے ڈیٹا کے بہاؤ کو خودکار بناتے ہیں۔ ہم ہر مرحلے پر خودکار توثیقی چیکس بنا کر ڈیٹا کے معیار کو یقینی بناتے ہیں، تاکہ خراب یا نامکمل ڈیٹا آپ کے تجزیات کو متاثر نہ کرے۔ چاہے آپ کو Kafka کے ذریعے ریئل ٹائم ڈیٹا اسٹریمنگ کی ضرورت ہو یا شیڈول بیچ پروسیسنگ کی، ہماری پائپ لائن انجینئرنگ آپ کے بزنس کے لیے ایک قابل بھروسہ ڈیٹا کی بنیاد فراہم کرتی ہے۔",
+    "features": [
+      "ای ٹی ایل/ای ایل ٹی پائپ لائن ڈیزائن اور فن تعمیر",
+      "پہلے سے بنے ہوئے اور کسٹم سورس کنیکٹرز",
+      "ڈیٹا کی تبدیلی اور شبیہہ کی نقشہ سازی",
+      "معیار کی جانچ اور خودکار توثیقی چیکس",
+      "کام کے بہاؤ کی نگرانی اور شیڈولنگ",
+      "تیز رفتاری کے لیے بتدریج لوڈنگ کا عمل",
+      "کافکا کے ساتھ ریئل ٹائم ڈیٹا پائپ لائنز",
+      "مرکزی نگرانی اور خودکار الرٹس کا نظام"
+    ],
+    "benefits": [
+      "یقینی بنائیں کہ ڈیٹا کا گودام ہمیشہ تازہ اور قابل بھروسہ رہے",
+      "دستی ڈیٹا جمع کرنے کے کاموں کو مکمل طور پر ختم کریں",
+      "ریئل ٹائم تجزیات کی مدد سے کاروباری مسائل کی فوری شناخت کریں",
+      "تمام رپورٹس میں ڈیٹا کے بہترین معیار کی ضمانت حاصل کریں",
+      "کاروبار کی ترقی کے ساتھ ڈیٹا کی بنیادی ڈھانچے کو وسعت دیں",
+      "بہتر کیوریز کے ذریعے سرورز کے اضافی اخراجات کو کم کریں"
+    ],
+    "metaTitle": "ای ٹی ایل ڈیٹا پائپ لائنز کی تیاری | PakSoft",
+    "metaDescription": "Airflow، dbt، اور Kafka کے ذریعے خودکار اور قابل بھروسہ ETL پائپ لائنز ڈیزائن کریں۔ اپنے تمام ڈیٹا کو ایک جگہ محفوظ کریں۔ رابطہ کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "ڈیٹا سورس میپنگ",
+          "description": "ہم آپ کے بکھرے ہوئے ڈیٹا ذرائع، ڈیٹا بیسز اور APIs کا آڈٹ کرتے ہیں اور ایک یکجا ٹارگٹ ماڈل ڈیزائن کرتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "ڈیٹا اکٹھا کرنے کی حکمت عملی",
+          "description": "ہم فائیوٹیران یا کسٹم اسکرپٹس کی مدد سے محفوظ کنیکٹرز بناتے ہیں تاکہ تمام سسٹمز سے محفوظ ڈیٹا حاصل کیا جا سکے۔"
+        },
+        {
+          "step": 3,
+          "title": "ٹرانسفارمیشن انجینئرنگ",
+          "description": "ہم خام ڈیٹا کو صاف، نارملائز اور درست ٹیبلز میں تبدیل کرنے کے لیے dbt ماڈلز اور Spark اسکرپٹس لکھتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "ڈیٹا کے معیار کی توثیق",
+          "description": "ہم خودکار توثیقی چیکس نافذ کرتے ہیں جو ڈیٹا کی اقسام اور نامکمل کالمز کی خود بخود جانچ کرتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "شیڈولنگ کی تشکیل",
+          "description": "ہم کاموں کو شیڈول کرنے اور غلطیوں پر خودکار دوبارہ کوشش کرنے کے لیے Apache Airflow کو ترتیب دیتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "نگرانی اور بہتری",
+          "description": "ہم پائپ لائن کی غلطیوں کے لیے الرٹس ترتیب دیتے ہیں اور گودام کے اخراجات کو کم کرنے کے لیے رفتار کو بہتر بناتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "ای ٹی ایل (ETL) اور ای ایل ٹی (ELT) میں کیا فرق ہے؟",
+          "answer": "ای ٹی ایل (ETL) ڈیٹا کو گودام میں لوڈ کرنے سے پہلے تبدیل کرتا ہے جو رازداری کے قوانین کے لیے موزوں ہے۔ جبکہ ای ایل ٹی (ELT) خام ڈیٹا کو پہلے لوڈ کرتا ہے اور پھر ڈیٹا گودام کے اندر ہی اسے تبدیل کرتا ہے۔"
+        },
+        {
+          "question": "آپ کن ڈیٹا گوداموں کو سپورٹ کرتے ہیں؟",
+          "answer": "ہم تمام بڑے ڈیٹا گوداموں بشمول Snowflake، Google BigQuery، Amazon Redshift، اور Microsoft Azure Synapse کے ساتھ ساتھ روایتی ڈیٹا بیس جیسے PostgreSQL کو سپورٹ کرتے ہیں۔"
+        },
+        {
+          "question": "آپ سورس ڈیٹا بیسز میں تبدیلیوں کو کیسے سنبھالتے ہیں؟",
+          "answer": "ہم جدید کنیکٹرز کے ذریعے خود کار شبیہہ کی ترقی کا نظام بناتے ہیں۔ ہم dbt کے اندر الرٹس بھی لگاتے ہیں تاکہ ساخت تبدیل ہونے پر ٹیم کو فوری معلوم ہو سکے۔"
+        },
+        {
+          "question": "کیا آپ ریئل ٹائم ڈیٹا کو سنبھال سکتے ہیں؟",
+          "answer": "جی ہاں، ہم ریئل ٹائم تجزیات کے لیے Apache Kafka یا AWS Kinesis کا استعمال کرتے ہوئے لائیو ڈیٹا پائپ لائنز بناتے ہیں جو تیزی سے ڈیٹا پروسیس کرتی ہیں۔"
+        },
+        {
+          "question": "منتقلی کے دوران ڈیٹا کی سیکیورٹی کیسے یقینی بنائی جاتی ہے؟",
+          "answer": "ہم TLS کا استعمال کرتے ہوئے ڈیٹا کو انکرپٹ کرتے ہیں۔ ڈیٹا بیس کی چابیاں محفوظ رکھنے کے لیے ہم AWS Secrets Manager جیسے سیکیورٹی سسٹمز بھی نافذ کرتے ہیں۔"
+        },
+        {
+          "question": "آپ ڈیٹا کے معیار کے مسائل کی جانچ کیسے کرتے ہیں؟",
+          "answer": "ہم dbt کے اندر خودکار قوانین لکھتے ہیں جو کام کے دوران ڈیٹا کی درستگی اور غلطیوں کو خود بخود چیک کر کے رپورٹ فراہم کرتے ہیں۔"
+        },
+        {
+          "question": "کیا ہم پرانے سسٹمز کو اس سے جوڑ سکتے ہیں؟",
+          "answer": "جی ہاں، جہاں بنے بنائے کنیکٹرز دستیاب نہیں ہوتے، ہم پرانے ڈیٹا بیسز اور فائلوں سے محفوظ ڈیٹا حاصل کرنے کے لیے Python پر مبنی اسکرپٹس لکھتے ہیں۔"
+        },
+        {
+          "question": "آپ ڈیٹا کی تکرار کو کیسے روکتے ہیں؟",
+          "answer": "ہم اسٹیجنگ ٹیبلز کے اندر اپسرٹ (upsert) پیٹرن نافذ کرتے ہیں، جو یقینی بناتا ہے کہ پروسیسنگ کے دوران ڈیٹا کی تکرار نہ ہو۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Apache Airflow",
+          "icon": "airflow"
+        },
+        {
+          "name": "dbt",
+          "icon": "dbt"
+        },
+        {
+          "name": "Fivetran",
+          "icon": "fivetran"
+        },
+        {
+          "name": "Apache Spark",
+          "icon": "spark"
+        },
+        {
+          "name": "Apache Kafka",
+          "icon": "kafka"
+        },
+        {
+          "name": "Snowflake",
+          "icon": "snowflake"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "مسارات نقل وهندسة البيانات",
+    "shortDescription": "قم ببناء مسارات بيانات ETL/ELT موثوقة تعمل على توحيد بيانات عملك. نصمم عمليات تدفق مؤتمتة وتدقيق الجودة للمستودعات عالية الأداء.",
+    "fullDescription": "تولد الشركات كميات هائلة من البيانات يومياً، ولكنها غالباً ما تكون معزولة في أنظمة مختلفة. نحن نصمم وننفذ مسارات ETL/ELT قوية وعالية الأداء تعمل على تنظيف وتحويل وتحميل بيانات المؤسسة المشتتة إلى مستودع مركزي مثل Snowflake أو BigQuery. باستخدام أدوات مثل Apache Airflow و dbt و Fivetran و Apache Spark، نقوم بأتمتة تدفقات البيانات من مصادر مختلفة بما في ذلك أنظمة إدارة العملاء وبوابات الدفع وقواعد البيانات. نعطي الأولوية لجودة البيانات من خلال بناء فحوصات تحقق تلقائية في كل مرحلة، مما يمنع البيانات التالفة أو غير المكتملة من التأثير على تحليلاتك. وسواء كنت بحاجة لتدفقات البيانات الفورية عبر Kafka أو معالجة الدفعات المجدولة، فإننا نضمن لك مصدراً موحداً وموثوقاً للحقيقة لذكاء أعمالك.",
+    "features": [
+      "تصميم وبنية مسارات نقل البيانات ETL/ELT",
+      "موصلات مصادر جاهزة ومخصصة للأنظمة",
+      "تحويل البيانات وتخطيط الجداول والتنسيقات",
+      "فحوصات تلقائية لجودة البيانات والتحقق منها",
+      "جدولة تدفقات العمل وأتمتة المهام التشغيلية",
+      "تحميل تدريجي عالي الأداء للمستودعات",
+      "مسارات تدفق البيانات في الوقت الفعلي مع Kafka",
+      "مراقبة مركزية ونظام تنبيهات فوري للأخطاء"
+    ],
+    "benefits": [
+      "ضمان بقاء مستودع البيانات الخاص بك حديثاً وموثوقاً دائماً",
+      "القضاء التام على مهام دمج البيانات اليدوية والمستهلكة للوقت",
+      "تحديد المشكلات التشغيلية فوراً باستخدام التحليلات المباشرة",
+      "ضمان جودة بيانات عالية وموثقة في جميع التقارير",
+      "توسيع البنية التحتية لبياناتك بسلاسة مع نمو أعمالك",
+      "تقليل تكاليف الخوادم وقواعد البيانات عبر الاستعلامات المحسنة"
+    ],
+    "metaTitle": "تطوير مسارات البيانات ETL/ELT | PakSoft",
+    "metaDescription": "صمم مسارات بيانات ETL موثوقة ومؤتمتة باستخدام Airflow و dbt و Kafka. قم بتوحيد بياناتك في مصدر واحد موثق. اتصل بنا الآن.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تحديد مصادر البيانات",
+          "description": "نقوم بمسح وفحص مصادر البيانات وقواعد البيانات وواجهات البرمجة المشتتة وتصميم نموذج بيانات هدف موحد."
+        },
+        {
+          "step": 2,
+          "title": "استراتيجية جلب البيانات",
+          "description": "نقوم بإعداد موصلات آمنة باستخدام Fivetran أو البرامج المخصصة، مما يضمن استخراج البيانات بشكل موثوق من المصادر."
+        },
+        {
+          "step": 3,
+          "title": "هندسة تحويل البيانات",
+          "description": "نكتب نماذج dbt ومستندات Spark المحسنة لتنظيف البيانات الخام وتوحيدها وتنسيقها في جداول تحليلية مهيأة."
+        },
+        {
+          "step": 4,
+          "title": "التحقق من جودة البيانات",
+          "description": "نطبق فحوصات تحقق تلقائية تختبر قيود البيانات، وأنواعها، وتتحقق تلقائياً من أي أعمدة أو بيانات مفقودة."
+        },
+        {
+          "step": 5,
+          "title": "إعداد وأتمتة مسار العمل",
+          "description": "نقوم بتكوين مهام سير العمل في Apache Airflow لجدولة المهام وإدارة الارتباطات والتعامل مع تكرار المحاولة للأخطاء."
+        },
+        {
+          "step": 6,
+          "title": "المراقبة والتحسين",
+          "description": "نعد نظام تنبيه فوري لأخطاء مسارات البيانات ونحسن سرعة الاستعلامات لتقليل تكاليف تخزين وتشغيل البيانات."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما الفرق بين ETL و ELT؟",
+          "answer": "يقوم ETL (الاستخراج والتحويل والتحميل) بتحويل البيانات قبل تحميلها في مستودع البيانات، وهو خيار رائع لسرية البيانات. بينما يقوم ELT بتحميل البيانات الخام أولاً ومن ثم تحويلها داخل المستودع اعتماداً على قوة المعالجة فيه."
+        },
+        {
+          "question": "ما هي مستودعات البيانات التي تدعمونها؟",
+          "answer": "نحن نبني مسارات لجميع مستودعات البيانات الرئيسية بما في ذلك Snowflake و Google BigQuery و Amazon Redshift و Microsoft Azure Synapse، بالإضافة إلى قواعد البيانات التقليدية مثل PostgreSQL."
+        },
+        {
+          "question": "كيف تتعامل مع تغييرات الجداول في قواعد البيانات المصدر؟",
+          "answer": "نبني جداول مرنة باستخدام ميزات تطور البنية في الموصلات الحديثة. نضع أيضاً تنبيهات في dbt لإخطار فرق الهندسة عند تغير أعمدة المصدر بشكل غير متوقع."
+        },
+        {
+          "question": "هل يمكنك التعامل مع البيانات المتدفقة في الوقت الفعلي؟",
+          "answer": "نعم، نحن ننفذ مسارات تدفق البيانات باستخدام Apache Kafka أو AWS Kinesis لاستيعاب ومعالجة تدفقات الأحداث عالية التردد للتحليلات المباشرة."
+        },
+        {
+          "question": "كيف تضمن أمن البيانات أثناء النقل؟",
+          "answer": "نحن نشفر البيانات أثناء النقل باستخدام TLS والبيانات المخزنة كذلك. نستخدم أيضاً أنظمة إدارة بيانات الاعتماد الآمنة مثل AWS Secrets Manager لحماية مفاتيح قواعد البيانات."
+        },
+        {
+          "question": "كيف تتحقق من مشاكل جودة البيانات؟",
+          "answer": "نكتب قواعد تحقق تلقائية داخل dbt للتحقق من القيود الرئيسية، وفحص القيم الفارغة، وتحديد أي أنماط غير طبيعية للجداول تلقائياً أثناء التشغيل."
+        },
+        {
+          "question": "هل يمكننا توصيل الأنظمة القديمة المخصصة؟",
+          "answer": "نعم، عندما لا تتوفر موصلات جاهزة، نكتب برامج استيراد مخصصة بلغة Python لسحب البيانات من قواعد البيانات والملفات القديمة بأمان."
+        },
+        {
+          "question": "كيف تمنع تكرار البيانات؟",
+          "answer": "نحن ننفذ أنماط التحديث والإدخال (upsert) وقيوداً فريدة داخل جداول المرحلة الانتقالية، مما يضمن إزالة تكرار البيانات بشكل صحيح أثناء خطوات تحويل المسار."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Apache Airflow",
+          "icon": "airflow"
+        },
+        {
+          "name": "dbt",
+          "icon": "dbt"
+        },
+        {
+          "name": "Fivetran",
+          "icon": "fivetran"
+        },
+        {
+          "name": "Apache Spark",
+          "icon": "spark"
+        },
+        {
+          "name": "Apache Kafka",
+          "icon": "kafka"
+        },
+        {
+          "name": "Snowflake",
+          "icon": "snowflake"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        }
+      ]
+    }
+  }
+}

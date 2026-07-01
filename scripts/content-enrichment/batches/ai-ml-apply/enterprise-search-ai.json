@@ -1,0 +1,634 @@
+{
+  "slug": "enterprise-search-ai",
+  "en": {
+    "name": "Enterprise Search AI",
+    "shortDescription": "Find and retrieve information instantly across all company databases, folders, and legacy systems. We build unified semantic search engines with role-based permissions and high security.",
+    "fullDescription": "Locating vital company information across fragmented silos like email, chat, CRM, cloud storage, and databases is an operational bottleneck. We design and build secure Enterprise Search AI platforms that connect your entire business data ecosystem. Utilizing Elasticsearch, hybrid search algorithms, and vector embeddings, our solution understands search intent and retrieves relevant content in seconds. We implement strict access control lists to ensure users only see search results for files they are authorized to view. From customer service agents looking for product specs to executives querying quarterly performance databases, we turn scattered text into a unified, searchable, and highly secure operational asset.",
+    "features": [
+      "Unified Multi-System Ingestion",
+      "Intent-Based Semantic Search",
+      "Federated Search Architecture",
+      "Secure Role-Based Permissions",
+      "Elasticsearch & Vector Hybridization",
+      "Interactive Search Analytics",
+      "Automatic Content Classification",
+      "Real-Time Document Indexing"
+    ],
+    "benefits": [
+      "Retrieve critical internal files in seconds",
+      "Reduce duplicate work by finding existing data",
+      "Protect confidential files with permission rules",
+      "Speed up onboarding for new employees",
+      "Gain deep insights from search analytics dashboard",
+      "Enhance productivity of support and operations teams"
+    ],
+    "metaTitle": "Enterprise Search AI & Semantic Search Engines | PakSoft",
+    "metaDescription": "Unify your company data. We build secure Enterprise Search AI systems with Elasticsearch and vector databases. Contact PakSoft for a free data audit.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Silo Mapping & Audit",
+          "description": "We identify all internal databases, cloud storage folders, and communication platforms in your stack. Together we map data permissions and define the search scope."
+        },
+        {
+          "step": 2,
+          "title": "Data Ingestion Pipelines",
+          "description": "We build connectors to ingest documents, tables, and messages from various sources into a centralized pipeline. Text is cleaned and structured automatically for indexing."
+        },
+        {
+          "step": 3,
+          "title": "Semantic Indexing",
+          "description": "We generate vector embeddings for the ingested content and store them in vector databases. This enables the engine to understand concepts rather than just matching keywords."
+        },
+        {
+          "step": 4,
+          "title": "Access Control Integration",
+          "description": "We sync the search index with your existing user directories like Active Directory. This ensures the engine respects document-level access permissions at the query time."
+        },
+        {
+          "step": 5,
+          "title": "UI & API Development",
+          "description": "We design and build the search interface, embedding it into your intranet or software. APIs are exposed to connect search results to internal business dashboards."
+        },
+        {
+          "step": 6,
+          "title": "Testing & Analytics Setup",
+          "description": "We benchmark search speed, relevance, and access security against real test queries. We set up analytics dashboards to track popular queries and search failures."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Which data sources can the Enterprise Search AI connect to?",
+          "answer": "We build custom connectors to link the search engine to almost any repository in your stack. This includes SQL and NoSQL databases, cloud storage like Google Drive or AWS S3, CRMs like Salesforce, and email or Slack databases. All connections are secured using modern API protocols."
+        },
+        {
+          "question": "How does the search engine understand intent instead of just keywords?",
+          "answer": "We combine traditional keyword search with semantic vector search. Vector embeddings represent the conceptual meaning of your text rather than exact letters. When a user queries 'client agreement', the engine retrieves documents containing 'signed contract' or 'terms of service' because it understands the conceptual relationship between the terms."
+        },
+        {
+          "question": "Is it possible for employees to search confidential files?",
+          "answer": "No, the search engine strictly respects your company's existing permission structure. Before displaying any search results, the query filters out all documents the user is not authorized to see. We integrate with Active Directory, Okta, or other SSO systems to keep your confidential files fully protected."
+        },
+        {
+          "question": "How long does it take to index new or updated documents?",
+          "answer": "We configure real-time indexing pipelines for active systems. When a user uploads a new contract or edits a project document, the system updates the vector index in seconds. For large legacy archives, we schedule off-peak batch runs to optimize performance and prevent network slowdowns during work hours."
+        },
+        {
+          "question": "What happens if our company has documents in different languages?",
+          "answer": "Our search engines support multilingual search and cross-language retrieval. The system utilizes multilingual embedding models that match search concepts across different languages. For example, a query in English can retrieve relevant documents written in Turkish, Arabic, or German. This is ideal for global teams."
+        },
+        {
+          "question": "Do we need to host our company data on your servers?",
+          "answer": "No, you retain full ownership and control of your data. We deploy the search architecture directly inside your secure private cloud or local physical servers. Your files never leave your corporate network. This setup is fully compliant with modern data protection regulations."
+        },
+        {
+          "question": "What is the difference between semantic search and basic databases search?",
+          "answer": "Basic search matches exact characters, which often fails due to synonyms, spelling errors, or translation differences. Semantic search understands the context, synonyms, and intent of the query. This ensures users find the right files even if they do not know the exact filename or wording."
+        },
+        {
+          "question": "How do search analytics help our organization?",
+          "answer": "Search analytics track what information your employees look for most frequently. It identifies 'search failures' where users search for terms but find no results. This highlights gaps in your internal documentation or training. It allows managers to proactively create resources to support operational teams."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "elasticsearch",
+          "name": "Elasticsearch"
+        },
+        {
+          "icon": "opensearch",
+          "name": "OpenSearch"
+        },
+        {
+          "icon": "pinecone",
+          "name": "Pinecone"
+        },
+        {
+          "icon": "weaviate",
+          "name": "Weaviate"
+        },
+        {
+          "icon": "langchain",
+          "name": "LangChain"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "Amazon Web Services"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Kurumsal Arama Yapay Zekası",
+    "shortDescription": "Tüm şirket veritabanlarında, bulut klasörlerinde ve eski sistemlerde bilgiyi anında bulun. Rol tabanlı izinlere ve yüksek güvenliğe sahip birleşik anlamsal arama motorları kuruyoruz.",
+    "fullDescription": "E-posta, sohbet, CRM, bulut depolama ve veritabanları gibi dağınık silolarda kritik şirket bilgilerini aramak operasyonel bir darboğazdır. Tüm iş veri ekosisteminizi birbirine bağlayan güvenli Kurumsal Arama Yapay Zekası platformları tasarlıyor ve geliştiriyoruz. Elasticsearch, hibrit arama algoritmaları ve vektör yerleştirmeleri kullanan çözümümüz, arama amacını anlar ve ilgili içeriği saniyeler içinde getirir. Kullanıcıların yalnızca görüntülemeye yetkili oldukları dosyaların arama sonuçlarını görmelerini sağlamak için katı erişim kontrol listeleri uyguluyoruz. Teknik özellikler arayan müşteri temsilcilerinden finansal performansı sorgulayan yöneticilere kadar dağınık metinleri birleşik, aranabilir ve son derece güvenli bir operasyonel varlığa dönüştürüyoruz.",
+    "features": [
+      "Birleşik Çoklu Sistem Alımı",
+      "Niyete Dayalı Anlamsal Arama",
+      "Federe Arama Mimarisi",
+      "Güvenli Rol Tabanlı İzinler",
+      "Elasticsearch ve Vektör Hibritleşmesi",
+      "Etkileşimli Arama Analitiği",
+      "Otomatik İçerik Sınıflandırma",
+      "Gerçek Zamanlı Belge İndeksleme"
+    ],
+    "benefits": [
+      "Kritik şirket içi dosyaları saniyeler içinde bulun",
+      "Mevcut verileri bularak mükerrer işleri azaltın",
+      "Gizli dosyaları yetkilendirme kurallarıyla koruyun",
+      "Yeni çalışanların işe başlama süreçlerini hızlandırın",
+      "Arama analitiği panelinden derin içgörüler elde edin",
+      "Destek ve operasyon ekiplerinin üretkenliğini artırın"
+    ],
+    "metaTitle": "Kurumsal Arama Yapay Zekası ve Arama Motoru | PakSoft",
+    "metaDescription": "Şirket verilerinizi birleştirin. Elasticsearch ve vektör veritabanlarıyla güvenli Kurumsal Arama Yapay Zekası kuruyoruz. Ücretsiz veri denetimi için görüşün.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Silo Eşleme ve Denetim",
+          "description": "Stack'inizdeki tüm dahili veritabanlarını, bulut depolama klasörlerini ve iletişim platformlarını belirleriz. Veri izinlerini haritalandırır ve arama kapsamını tanımlarız."
+        },
+        {
+          "step": 2,
+          "title": "Veri Alım Hatları",
+          "description": "Farklı kaynaklardaki belgeleri, tabloları ve mesajları merkezi bir veri hattına aktarmak için entegrasyonlar kurarız. Metinler, dizine eklenmek üzere otomatik olarak temizlenir ve yapılandırılır."
+        },
+        {
+          "step": 3,
+          "title": "Anlamsal İndeksleme",
+          "description": "Alınan içerik için vektör yerleştirmeleri oluşturur ve bunları vektör veritabanlarında saklarız. Bu, arama motorunun kelimeleri eşleştirmek yerine kavramları anlamasını sağlar."
+        },
+        {
+          "step": 4,
+          "title": "Erişim Kontrolü Entegrasyonu",
+          "description": "Arama dizinini Active Directory gibi mevcut kullanıcı dizinlerinizle senkronize ederiz. Bu, arama motorunun sorgu anında belge düzeyindeki erişim izinlerine uymasını sağlar."
+        },
+        {
+          "step": 5,
+          "title": "Arayüz ve API Geliştirme",
+          "description": "Arama arayüzünü tasarlayıp intranet veya yazılımınıza entegre ederiz. Arama sonuçlarını şirket içi raporlama panellerine bağlamak için API bağlantılarını yapılandırırız."
+        },
+        {
+          "step": 6,
+          "title": "Test ve Analitik Kurulumu",
+          "description": "Arama hızını, alaka düzeyini ve erişim güvenliğini gerçek test sorgularıyla kıyaslarız. Popüler sorguları ve başarısız aramaları izlemek için analitik panelleri kurarız."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Kurumsal Arama Yapay Zekası hangi veri kaynaklarına bağlanabilir?",
+          "answer": "Arama motorunu altyapınızdaki hemen hemen her depoya bağlamak için özel entegrasyonlar geliştiriyoruz. Bu, SQL ve NoSQL veritabanlarını, Google Drive veya AWS S3 gibi bulut depolarını, Salesforce gibi CRM araçlarını ve e-posta veya Slack verilerini kapsar. Tüm bağlantılar güvenli API protokolleri ile korunur."
+        },
+        {
+          "question": "Arama motoru sadece anahtar kelimeleri değil, niyeti nasıl anlar?",
+          "answer": "Geleneksel anahtar kelime araması ile anlamsal vektör aramasını birleştiriyoruz. Vektör yerleştirmeleri, kelimelerin tam harfleri yerine kavramsal anlamlarını temsil eder. Bir kullanıcı 'müşteri sözleşmesi' aradığında, sistem 'imzalanan kontrat' içeren belgeleri juga getirir, çünkü terimler arasındaki kavramsal ilişkiyi anlar."
+        },
+        {
+          "question": "Çalışanların gizli belgelere erişmesi mümkün müdür?",
+          "answer": "Ham, arama motoru şirketinizin mevcut izin yapısına kesinlikle uyar. Arama sonuçları görüntülenmeden önce, kullanıcının görmeye yetkili olmadığı tüm belgeler sorgudan filtrelenir. Gizli dosyalarınızı korumak için Active Directory, Okta veya diğer SSO sistemleriyle entegre çalışırız."
+        },
+        {
+          "question": "Yeni veya güncellenen belgelerin dizine eklenmesi ne kadar sürer?",
+          "answer": "Aktif sistemler için gerçek zamanlı indeksleme hatları yapılandırıyoruz. Bir kullanıcı yeni bir sözleşme yüklediğinde veya bir belgeyi düzenlediğinde, sistem vektör dizinini saniyeler içinde günceller. Büyük arşivler için ise mesai saatleri dışındaki zamanlarda çalışacak toplu yenilemeler planlarız."
+        },
+        {
+          "question": "Şirketimizin farklı dillerde belgeleri varsa ne olur?",
+          "answer": "Arama motorlarımız çok dilli aramayı ve diller arası bilgi getirmeyi destekler. Sistem, farklı dillerdeki arama kavramlarını eşleştiren çok dilli yerleştirme modelleri kullanır. Örneğin, İngilizce bir sorgu Türkçe, Arapça veya Almanca yazılmış ilgili belgeleri bulabilir. Bu, küresel ekipler için idealdir."
+        },
+        {
+          "question": "Şirket verilerimizi sizin sunucularınızda barındırmamız gerekiyor mu?",
+          "answer": "Hayır, verilerinizin tam mülkiyeti ve kontrolü sizde kalır. Arama mimarisini doğrudan kendi güvenli özel bulutunuza veya yerel fiziksel sunucularınıza kuruyoruz. Dosyalarınız şirket ağınızdan asla çıkmaz. Bu kurulum, modern veri koruma yönetmelikleriyle tamamen uyumludur."
+        },
+        {
+          "question": "Anlamsal arama ile temel veritabanı araması arasındaki fark nedir?",
+          "answer": "Temel arama, eş anlamlı kelimeler veya yazım hataları nedeniyle genellikle başarısız olan tam karakter eşleştirmesi yapar. Anlamsal arama ise sorgunun bağlamını, eş anlamlılarını ve amacını anlar. Bu sayede kullanıcılar, dosya adını tam bilmeseler bile doğru dosyalara ulaşabilirler."
+        },
+        {
+          "question": "Arama analitiği kuruluşumuza nasıl yardımcı olur?",
+          "answer": "Arama analitiği, çalışanlarınızın en sık hangi bilgileri aradığını takip eder. Kullanıcıların arama yaptığı ancak sonuç bulamadığı 'arama hatalarını' tanımlar. Bu durum iç belgelerinizdeki veya eğitimlerinizdeki eksikleri gösterir. Yöneticilerin operasyonel ekipleri desteklemek için proaktif kaynaklar oluşturmasını sağlar."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "elasticsearch",
+          "name": "Elasticsearch"
+        },
+        {
+          "icon": "opensearch",
+          "name": "OpenSearch"
+        },
+        {
+          "icon": "pinecone",
+          "name": "Pinecone"
+        },
+        {
+          "icon": "weaviate",
+          "name": "Weaviate"
+        },
+        {
+          "icon": "langchain",
+          "name": "LangChain"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "Amazon Web Services"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Kurumsale Suche KI",
+    "shortDescription": "Finden und durchsuchen Sie Informationen sofort in allen Unternehmensdatenbanken, Cloud-Ordnern und Altsystemen. Wir bauen sichere semantische Suchmaschinen mit Rechteverwaltung.",
+    "fullDescription": "Das Suchen nach wichtigen Unternehmensinformationen in fragmentierten Silos wie E-Mails, Chats, CRMs, Cloud-Speichern und Datenbanken ist ineffizient. Wir entwerfen und bauen sichere Enterprise Search KI-Plattformen, die Ihr gesamtes Datenökosystem verbinden. Unter Verwendung von Elasticsearch, Hybrid-Suchalgorithmen und Vektoreinbettungen versteht unsere Lösung die Suchabsicht und liefert Ergebnisse in Sekunden. Wir implementieren strenge Zugriffskontrolllisten, um sicherzustellen, dass Benutzer nur Suchergebnisse für Dokumente sehen, für die sie eine Berechtigung haben. Vom Kundenservice-Mitarbeiter bis zum Geschäftsführer verwandeln wir verstreute Texte in eine einheitliche, durchsuchbare und hochsichere betriebliche Ressource.",
+    "features": [
+      "Einheitliche Multi-System-Erfassung",
+      "Absichtsbasierte semantische Suche",
+      "Federated Search Architektur",
+      "Sichere rollenbasierte Rechte",
+      "Elasticsearch & Vektor-Hybridisierung",
+      "Interaktive Suchanalysen",
+      "Automatische Inhaltsklassifizierung",
+      "Echtzeit-Dokumentenindexierung"
+    ],
+    "benefits": [
+      "Kritische interne Dateien in Sekunden finden",
+      "Minderaufwand durch das Finden vorhandener Daten",
+      "Vertrauliche Dateien durch Berechtigungsregeln schützen",
+      "Einarbeitungszeit neuer Mitarbeiter verkürzen",
+      "Tiefe Einblicke durch Suchanalyse-Dashboards gewinnen",
+      "Produktivität von Support- und Betriebsteams steigern"
+    ],
+    "metaTitle": "Enterprise Search KI & Semantische Suchen | PakSoft",
+    "metaDescription": "Führen Sie Ihre Unternehmensdaten zusammen. Wir bauen sichere Enterprise-Suchsysteme mit Elasticsearch und Vektordatenbanken. Kontaktieren Sie PakSoft.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Silo-Mapping & Audit",
+          "description": "Wir identifizieren alle internen Datenbanken, Cloud-Ordner und Kommunikationsplattformen. Gemeinsam kartieren wir Datenberechtigungen und definieren den Suchbereich."
+        },
+        {
+          "step": 2,
+          "title": "Daten-Erfassungskanäle",
+          "description": "Wir erstellen Konnektoren, um Dokumente und Nachrichten aus verschiedenen Quellen in eine zentrale Pipeline zu importieren. Texte werden für die Indexierung bereinigt."
+        },
+        {
+          "step": 3,
+          "title": "Semantische Indexierung",
+          "description": "Wir generieren Vektoreinbettungen für die erfassten Inhalte und speichern sie in Vektordatenbanken. Dies ermöglicht der Suchmaschine, Konzepte statt nur Keywords zu verstehen."
+        },
+        {
+          "step": 4,
+          "title": "Integration der Zugriffskontrolle",
+          "description": "Wir synchronisieren den Suchindex mit Ihren Benutzerverzeichnissen wie Active Directory. Dadurch wird sichergestellt, dass die Suchmaschine Zugriffsrechte auf Dokumentenebene berücksichtigt."
+        },
+        {
+          "step": 5,
+          "title": "UI- & API-Entwicklung",
+          "description": "Wir entwerfen die Suchoberfläche und betten sie in Ihr Intranet oder Ihre Software ein. APIs verbinden die Suchergebnisse mit internen Business-Dashboards."
+        },
+        {
+          "step": 6,
+          "title": "Testing & Analytik-Setup",
+          "description": "Wir vergleichen Suchgeschwindigkeit, Relevanz und Sicherheit anhand von realen Testanfragen. Wir richten Analyse-Dashboards ein, um Suchanfragen zu überwachen."
+        }
+      ],
+      "faq": [
+        {
+          "question": "An welche Datenquellen kann die Enterprise Search KI angebunden werden?",
+          "answer": "Wir entwickeln maßgeschneiderte Konnektoren, um die Suchmaschine mit fast jedem Repository zu verbinden. Dazu gehören SQL- und NoSQL-Datenbanken, Cloud-Speicher wie Google Drive oder AWS S3, CRMs wie Salesforce sowie E-Mail- und Slack-Daten. Alle Verbindungen werden über sichere APIs geschützt."
+        },
+        {
+          "question": "Wie versteht die Suchmaschine die Suchabsicht statt nur Keywords?",
+          "answer": "Wir kombinieren traditionelle Keyword-Suche mit semantischer Vektorsuche. Vektoreinbettungen repräsentieren die Bedeutung Ihres Textes anstelle von Buchstaben. Sucht ein Benutzer nach 'Kundenvereinbarung', findet das System auch Dokumente mit 'Vertrag' oder 'Dienstleistungsbedingungen', da es die inhaltliche Verwandtschaft versteht."
+        },
+        {
+          "question": "Können Mitarbeiter vertrauliche Dateien durchsuchen?",
+          "answer": "Nein, die Suchmaschine berücksichtigt die bestehenden Berechtigungen Ihres Unternehmens. Vor der Anzeige von Suchergebnissen filtert die Abfrage alle Dokumente heraus, für die der Benutzer keine Freigabe hat. Wir integrieren Active Directory, Okta oder andere SSO-Systeme zum Schutz vertraulicher Daten."
+        },
+        {
+          "question": "Wie lange dauert die Indexierung neuer oder geänderter Dokumente?",
+          "answer": "Für aktive Systeme konfigurieren wir Echtzeit-Indexierungspipelines. Wenn ein Benutzer einen Vertrag hochlädt oder ein Dokument bearbeitet, wird der Vektorindex in Sekunden aktualisiert. Für große Altdatenarchive planen wir Batch-Läufe außerhalb der Arbeitszeiten, um die Systemleistung tagsüber zu schonen."
+        },
+        {
+          "question": "Was passiert, wenn unser Unternehmen Dokumente in verschiedenen Sprachen hat?",
+          "answer": "Unsere Suchmaschinen unterstützen mehrsprachige Suchen. Das System nutzt mehrsprachige Einbettungsmodelle, die Suchbegriffe sprachübergreifend abgleichen. So kann eine englische Suchanfrage relevante Dokumente in Türkisch, Arabisch oder Deutsch finden. Dies ist ideal für global agierende Teams."
+        },
+        {
+          "question": "Müssen wir unsere Unternehmensdaten auf Ihren Servern speichern?",
+          "answer": "Nein, Sie behalten die volle Kontrolle über Ihre Daten. Wir installieren die Sucharchitektur direkt in Ihrer sicheren Private Cloud oder auf lokalen physischen Servern. Ihre Dokumente verlassen niemals Ihr Firmennetzwerk. Dieser Aufbau erfüllt alle modernen Datenschutzrichtlinien."
+        },
+        {
+          "question": "Was ist der Unterschied zwischen semantischer Suche und normaler Datenbanksuche?",
+          "answer": "Die normale Suche sucht nach exakten Wörtern, was bei Synonymen oder Tippfehlern oft scheitert. Die semantische Suche versteht den Kontext, Synonyme und die Absicht der Anfrage. So finden Benutzer die richtigen Dateien, auch ohne den genauen Dateinamen zu kennen."
+        },
+        {
+          "question": "Wie helfen Suchanalysen unserem Unternehmen?",
+          "answer": "Suchanalysen zeigen, wonach Ihre Mitarbeiter am häufigsten suchen. Sie identifizieren Suchanfragen ohne Ergebnisse, was Lücken in der internen Dokumentation aufdeckt. Dies ermöglicht es Managern, gezielt Ressourcen und Schulungen für ihre Teams bereitzustellen."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "elasticsearch",
+          "name": "Elasticsearch"
+        },
+        {
+          "icon": "opensearch",
+          "name": "OpenSearch"
+        },
+        {
+          "icon": "pinecone",
+          "name": "Pinecone"
+        },
+        {
+          "icon": "weaviate",
+          "name": "Weaviate"
+        },
+        {
+          "icon": "langchain",
+          "name": "LangChain"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "Amazon Web Services"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "انٹرپرائز سرچ AI",
+    "shortDescription": "کمپنی کے تمام ڈیٹا بیسز، کلاؤڈ فولڈرز اور پرانے سسٹمز میں معلومات سیکنڈز میں تلاش کریں۔ ہم رول بیسڈ پرمیشنز اور اعلیٰ سیکیورٹی کے حامل سرچ انجن بناتے ہیں۔",
+    "fullDescription": "ای میل، چیٹ، CRM، کلاؤڈ اسٹوریج اور مختلف ڈیٹا بیسز میں کمپنی کی اہم معلومات تلاش کرنا ایک بڑا آپریشنل مسئلہ ہے۔ ہم انٹرپرائز سرچ AI کے ایسے محفوظ پلیٹ فارمز ڈیزائن اور تیار کرتے ہیں جو آپ کے پورے کاروباری ڈیٹا کو آپس میں جوڑتے ہیں۔ Elasticsearch، ہائبرڈ سرچ الگورتھمز اور ویکٹرز کا استعمال کرتے ہوئے ہمارا سرچ انجن سیکنڈز میں مطلوبہ معلومات تلاش کر لیتا ہے۔ ہم سیکیورٹی کے سخت اصول لاگو کرتے ہیں تاکہ ملازمین صرف وہی فائلیں دیکھ سکیں جن کی انہیں اجازت ہوتی ہے۔ کسٹمر سروس ایجنٹس سے لے کر اعلیٰ مینیجرز تک، ہم بکھرے ہوئے متن کو ایک مربوط، تلاش کے قابل اور انتہائی محفوظ اثاثے میں تبدیل کرتے ہیں۔",
+    "features": [
+      "Custom D3.js Visualizations",
+      "Interactive Tableau Dashboards",
+      "Enterprise Power BI Reporting",
+      "Real-Time Streaming Visuals",
+      "Embedded Analytics Integration",
+      "Responsive Mobile Layouts",
+      "Cross-Platform Data Syncing",
+      "Role-Based Access Controls"
+    ],
+    "benefits": [
+      "کمپنی کی فائلیں سیکنڈز میں تلاش کریں",
+      "موجودہ ڈیٹا تلاش کر کے ڈپلیکیٹ کام سے بچیں",
+      "سیکیورٹی رولز کے ذریعے خفیہ فائلوں کی حفاظت کریں",
+      "نئے ملازمین کی کمپنی میں شمولیت تیز بنائیں",
+      "سرچ اینالیٹکس سے کمپنی کی معلومات کے خلا جانیں",
+      "سپورٹ اور آپریشنز ٹیموں کی کارکردگی بہتر بنائیں"
+    ],
+    "metaTitle": "انٹرپرائز سرچ AI اور سیمنٹک سرچ انجن | PakSoft",
+    "metaDescription": "اپنی کمپنی کے ڈیٹا کو یکجا کریں۔ ہم Elasticsearch اور ویکٹر ڈیٹا بیس کے ساتھ انٹرپرائز سرچ سسٹمز بناتے ہیں۔ PakSoft سے رابطہ کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "سلو میپنگ اور آڈٹ",
+          "description": "ہم آپ کے تمام اندرونی ڈیٹا بیسز اور کلاؤڈ فولڈرز کی نشاندہی کرتے ہیں۔ ہم معلومات کی رسائی کے حقوق اور سرچ کے دائرہ کار کا نقشہ بناتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "ڈیٹا وصولی کے طریقے",
+          "description": "ہم مختلف سورسز سے دستاویزات اور پیغامات کو حاصل کرنے کے لیے کنیکٹر بناتے ہیں۔ متن کو انڈیکس کرنے کے لیے خودکار طور پر صاف اور منظم کیا جاتا ہے۔"
+        },
+        {
+          "step": 3,
+          "title": "سیمنٹک انڈیکسنگ",
+          "description": "ہم مواد کے ویکٹرز تیار کرتے ہیں اور انہیں ویکٹر ڈیٹا بیس میں اسٹور کرتے ہیں۔ یہ سرچ انجن کو الفاظ کے بجائے مفہوم سمجھنے کے قابل بناتا ہے۔"
+        },
+        {
+          "step": 4,
+          "title": "رسائی کنٹرول کا الحاق",
+          "description": "ہم سرچ انڈیکس کو آپ کے سیکیورٹی سسٹم Active Directory سے لنک کرتے ہیں۔ یہ یقینی بناتا ہے کہ سرچ رزلٹس صارف کے اجازت ناموں کے مطابق ہوں۔"
+        },
+        {
+          "step": 5,
+          "title": "UI اور API کی تیاری",
+          "description": "ہم سرچ کا انٹرفیس ڈیزائن کر کے آپ کے سافٹ ویئر میں شامل کرتے ہیں۔ سرچ نتائج کو کاروباری ڈیش بورڈز سے جوڑنے کے لیے APIs بنائی جاتی ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "ٹیسٹنگ اور اینالیٹکس",
+          "description": "ہم سرچ کی اسپیڈ، افادیت اور سیکیورٹی کی جانچ کرتے ہیں۔ ہم یہ ٹریک کرنے کے لیے ڈیش بورڈ بناتے ہیں کہ ملازمین کیا تلاش کر رہے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "انٹرپرائز سرچ AI کن ڈیٹا سورسز سے منسلک ہو سکتا ہے؟",
+          "answer": "ہم سرچ انجن کو آپ کے سسٹم کے تقریباً ہر حصے سے جوڑنے کے لیے کسٹم کنیکٹر بناتے ہیں۔ اس میں SQL اور NoSQL ڈیٹا بیس، Google Drive، AWS S3، Salesforce اور Slack شامل ہیں۔ یہ تمام کنکشنز محفوظ API پروٹوکولز کے ذریعے چلائے جاتے ہیں۔"
+        },
+        {
+          "question": "سرچ انجن صرف الفاظ کے بجائے مفہوم کو کیسے سمجھتا ہے؟",
+          "answer": "ہم روایتی سرچ کو سیمنٹک ویکٹر سرچ کے ساتھ مربوط کرتے ہیں۔ ویکٹرز متن کے تصوراتی معنی کی نمائندگی کرتے ہیں۔ جب کوئی صارف 'کلائنٹ ایگریمنٹ' تلاش کرتا ہے، تو سسٹم 'سائن شدہ کنٹریکٹ' بھی دکھاتا ہے کیونکہ یہ دونوں کے درمیان تصوراتی تعلق کو سمجھتا ہے۔"
+        },
+        {
+          "question": "کیا ملازمین کمپنی کی خفیہ فائلوں کو سرچ کر سکتے ہیں؟",
+          "answer": "جی نہیں، سرچ انجن کمپنی کے اجازت ناموں کے نظام کے مطابق کام کرتا ہے۔ سرچ نتائج دکھانے سے پہلے ان تمام دستاویزات کو ہٹا دیا جاتا ہے جنہیں دیکھنے کی صارف کو اجازت نہیں ہوتی۔ ہم سیکیورٹی کے لیے Active Directory، Okta یا دیگر SSO سسٹمز استعمال کرتے ہیں۔"
+        },
+        {
+          "question": "نئی یا اپ ڈیٹ شدہ دستاویزات کو انڈیکس کرنے میں کتنا وقت لگتا ہے؟",
+          "answer": "ہم فعال سسٹمز کے لیے ریئل ٹائم انڈیکسنگ سیٹ کرتے ہیں۔ جب کوئی صارف نئی فائل اپ لوڈ کرتا ہے تو سسٹم ویکٹر انڈیکس کو سیکنڈز میں اپ ڈیٹ کر دیتا ہے۔ پرانے اور بڑے ریکارڈز کے لیے ہم رات کے اوقات میں اپ ڈیٹ شیڈول کرتے ہیں۔"
+        },
+        {
+          "question": "اگر ہماری کمپنی کی دستاویزات مختلف زبانوں میں ہوں تو کیا ہوگا؟",
+          "answer": "ہماری سرچ مختلف زبانوں کو سپورٹ کرتی ہے۔ یہ ایسے ماڈلز استعمال کرتی ہے جو زبانوں سے قطع نظر معلومات کو میچ کر سکتے ہیں۔ مثال کے طور پر، انگریزی کیوری اردو، عربی یا جرمن زبان میں لکھی گئی فائل بھی تلاش کر سکتی ہے۔ یہ عالمی ٹیموں کے لیے بہترین ہے۔"
+        },
+        {
+          "question": "کیا ہمیں اپنا ڈیٹا آپ کے سرور پر منتقل کرنا پڑے گا؟",
+          "answer": "جی نہیں، آپ کے ڈیٹا کا مکمل کنٹرول آپ کے پاس رہتا ہے۔ ہم سرچ کا پورا سسٹم آپ کے اپنے نجی کلاؤڈ یا لوکل سرورز پر انسٹال کرتے ہیں۔ آپ کا ڈیٹا کمپنی کے نیٹ ورک سے باہر نہیں جاتا۔ یہ سیکیورٹی کے تمام قوانین کے مطابق ہے۔"
+        },
+        {
+          "question": "سیمنٹک سرچ اور عام ڈیٹا بیس سرچ میں کیا فرق ہے؟",
+          "answer": "عام سرچ صرف لکھے ہوئے الفاظ کو میچ کرتی ہے، جو املا کی غلطیوں یا متبادل الفاظ کی وجہ سے اکثر ناکام رہتی ہے۔ سیمنٹک سرچ پورے سیاق و سباق اور مفہوم کو سمجھتی ہے۔ اس سے ملازمین کو فائل کا نام معلوم نہ ہونے پر بھی درست معلومات مل جاتی ہیں۔"
+        },
+        {
+          "question": "سرچ اینالیٹکس کمپنی کے لیے کیسے مفید ثابت ہو سکتی ہے؟",
+          "answer": "سرچ اینالیٹکس یہ ٹریک کرتی ہے کہ ملازمین سب سے زیادہ کیا سرچ کر رہے ہیں۔ یہ ان معلومات کی نشاندہی کرتی ہے جو ملازمین کو سرچ کرنے پر نہیں ملیں۔ اس سے مینیجرز کمپنی کی دستاویزات اور ملازمین کی ٹریننگ کو بہتر بنانے کے اقدامات کر سکتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "elasticsearch",
+          "name": "Elasticsearch"
+        },
+        {
+          "icon": "opensearch",
+          "name": "OpenSearch"
+        },
+        {
+          "icon": "pinecone",
+          "name": "Pinecone"
+        },
+        {
+          "icon": "weaviate",
+          "name": "Weaviate"
+        },
+        {
+          "icon": "langchain",
+          "name": "LangChain"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "Amazon Web Services"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "البحث المؤسسي بالذكاء الاصطناعي",
+    "shortDescription": "ابحث عن المعلومات فوراً عبر جميع قواعد بيانات الشركة وسحابات التخزين والأنظمة القديمة. نحن نبني محركات بحث دلالية آمنة ومدمجة بنظام الصلاحيات.",
+    "fullDescription": "البحث عن المعلومات الهامة عبر صوامع البيانات المتفرقة مثل البريد الإلكتروني والمحادثات وأنظمة CRM والتخزين السحابي وقواعد البيانات يمثل عائقاً تشغيلياً كبيراً. نحن نصمم ونبني منصات بحث مؤسسي آمنة بالذكاء الاصطناعي تربط نظام البيانات بالكامل في شركتك. باستخدام Elasticsearch وخوارزميات البحث الهجين والتمثيلات المتجهة، يفهم محركنا نية البحث ويسترجع المحتوى ذي الصلة في ثوانٍ. نطبق قوائم تحكم صارمة لضمان عرض نتائج البحث فقط للملفات المصرح للمستخدم برؤيتها. من موظفي الدعم الذين يبحثون عن مواصفات المنتجات إلى المديرين التنفيذيين الذين يستعلمون عن قواعد البيانات، نحول النصوص المتفرقة إلى أصل تشغيلي موحد وآمن.",
+    "features": [
+      "Custom D3.js Visualizations",
+      "Interactive Tableau Dashboards",
+      "Enterprise Power BI Reporting",
+      "Real-Time Streaming Visuals",
+      "Embedded Analytics Integration",
+      "Responsive Mobile Layouts",
+      "Cross-Platform Data Syncing",
+      "Role-Based Access Controls"
+    ],
+    "benefits": [
+      "استرجاع الملفات الداخلية الهامة في ثوانٍ معدودة",
+      "تقليل تكرار الأعمال من خلال إيجاد البيانات المتاحة",
+      "حماية الملفات السرية بقواعد صلاحيات دقيقة",
+      "تسريع عملية تدريب ودمج الموظفين الجدد",
+      "الحصول على تحليلات دقيقة من لوحة أداء البحث",
+      "تعزيز إنتاجية فرق الدعم والعمليات التشغيلية"
+    ],
+    "metaTitle": "محركات البحث المؤسسي والدلالي بالذكاء الاصطناعي | PakSoft",
+    "metaDescription": "وحد بيانات شركتك الآن. نحن نبني أنظمة بحث مؤسسية آمنة باستخدام Elasticsearch وقواعد البيانات المتجهة. اتصل بـ PakSoft للحصول على تدقيق للبيانات.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تحديد صوامع البيانات",
+          "description": "نحدد جميع قواعد البيانات ومنصات الاتصال وسحابات التخزين في شركتك. نقوم برسم خريطة لصلاحيات الوصول وتحديد نطاق البحث المؤسسي المطلق."
+        },
+        {
+          "step": 2,
+          "title": "قنوات جمع البيانات",
+          "description": "نبني موصلات مخصصة لاستيراد المستندات والرسائل من مصادر مختلفة إلى قناة معالجة مركزية. تنظف النصوص وتهيأ تلقائياً لعملية الفهرسة الفنية."
+        },
+        {
+          "step": 3,
+          "title": "الفهرسة الدلالية",
+          "description": "nنشئ تمثيلات متجهة للمحتوى المستورد ونخزنها في قاعدة البيانات المتجهة. يساعد ذلك محرك البحث على فهم المفاهيم بدلاً من مطابقة الكلمات فقط."
+        },
+        {
+          "step": 4,
+          "title": "تكامل صلاحيات الوصول",
+          "description": "نربط فهرس البحث مع أدلة المستخدمين الحالية مثل Active Directory. يضمن ذلك احترام المحرك لأذونات الوصول على مستوى المستند في وقت الاستعلام."
+        },
+        {
+          "step": 5,
+          "title": "تطوير واجهة الاستخدام",
+          "description": "نصمم واجهة البحث ونقوم بتضمينها في شبكتك الداخلية أو برامجك. نوفر واجهات برمجة التطبيقات لربط نتائج البحث بلوحات المعلومات التشغيلية."
+        },
+        {
+          "step": 6,
+          "title": "الاختبار وإعداد التحليلات",
+          "description": "نختبر سرعة البحث وملاءمة النتائج وأمان الوصول مقابل استعلامات تجريبية حقيقية. نعد لوحات تحليلات لتتبع عمليات البحث الناجحة والفاشلة."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما هي مصادر البيانات التي يمكن لمحرك البحث الاتصال بها؟",
+          "answer": "نحن نبني موصلات مخصصة لربط محرك البحث بأي مستودع بيانات في شركتك تقريباً. يشمل ذلك قواعد بيانات SQL و NoSQL، والتخزين السحابي مثل Google Drive أو AWS S3، وأنظمة CRM مثل Salesforce، ومحادثات Slack. جميع الاتصالات مؤمنة ببروتوكولات API."
+        },
+        {
+          "question": "كيف يفهم محرك البحث نية المستخدم بدلاً من الكلمات المفتاحية فقط؟",
+          "answer": "نحن ندمج بين البحث التقليدي والبحث الدلالي المتجه. تمثل المتجهات المعنى المفهوم للنص بدلاً من الأحرف المطابقة. عند البحث عن 'اتفاقية العميل'، يسترجع النظام المستندات التي تحتوي على 'عقد موقع' أو 'شروط الخدمة' لفهمه العلاقة الدلالية بين هذه الكلمات."
+        },
+        {
+          "question": "هل يمكن للموظفين البحث في الملفات السرية بالشركة؟",
+          "answer": "لا، يحترم محرك البحث تماماً هيكل الصلاحيات الحالي في شركتك. قبل عرض أي نتائج، يقوم النظام بتصفية المستندات التي لا يملك المستخدم إذناً لعرضها. ندمج هذا النظام مع Active Directory أو Okta أو أنظمة SSO الأخرى لحماية خصوصيتك."
+        },
+        {
+          "question": "كم من الوقت تستغرق فهرسة المستندات الجديدة أو المحدثة؟",
+          "answer": "نعد قنوات فهرسة في الوقت الفعلي للأنظمة النشطة. عندما يرفع مستخدم عقداً جديداً أو يعدل وثيقة، يتم تحديث الفهرس المتجه في ثوانٍ. بالنسبة للأرشيفات الضخمة، نجدول عمليات الفهرسة خارج ساعات العمل للحفاظ على سرعة أداء الخادم."
+        },
+        {
+          "question": "ماذا يحدث إذا كانت شركتنا تحتوي على مستندات بلغات مختلفة؟",
+          "answer": "تدعم محركات البحث لدينا البحث متعدد اللغات واسترجاع المعلومات عبر اللغات المختلفة. يستخدم النظام نماذج متجهة لغوية تطابق المفاهيم عبر اللغات. على سبيل المثال، يمكن للبحث باللغة الإنجليزية العثور على ملفات باللغة التركية أو العربية أو الألمانية لفرق العمل العالمية."
+        },
+        {
+          "question": "هل يجب علينا استضافة بيانات شركتنا على خوادمكم؟",
+          "answer": "لا، أنت تحتفظ بالملك الكامل والتحكم المطلق في بياناتك. نحن ننشر بنية البحث بالكامل داخل سحابتك الخاصة الآمنة أو خوادمك المحلية المادية. لا تخرج ملفاتك عن شبكة شركتك أبداً، وتتوافق هذه البنية مع قوانين حماية البيانات."
+        },
+        {
+          "question": "ما الفرق بين البحث الدلالي والبحث التقليدي في قواعد البيانات؟",
+          "answer": "البحث التقليدي يطابق الأحرف بدقة، وهو ما يفشل عند وجود أخطاء إملائية أو مرادفات مختلفة. البحث الدلالي يفهم السياق والمرادفات ونية المستخدم من الاستعلام. يضمن ذلك العثور على المستندات الصحيحة حتى لو لم يعرف المستخدم اسم الملف بدقة."
+        },
+        {
+          "question": "كيف تفيد تحليلات البحث مؤسستنا؟",
+          "answer": "تتبع تحليلات البحث ما يبحث عنه الموظفون بشكل متكرر. وتحدد 'إخفاقات البحث' عندما يبحث المستخدمون عن مصطلحات دون نتائج. يوضح ذلك الثغرات في الوثائق الداخلية، مما يسمح للإدارة بإنشاء الموارد اللازمة لتمكين فرق العمل."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "elasticsearch",
+          "name": "Elasticsearch"
+        },
+        {
+          "icon": "opensearch",
+          "name": "OpenSearch"
+        },
+        {
+          "icon": "looker",
+          "name": "Looker"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        },
+        {
+          "icon": "apachespark",
+          "name": "Apache Spark"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "Amazon Web Services"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        }
+      ]
+    }
+  }
+}

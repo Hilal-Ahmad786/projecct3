@@ -1,0 +1,1553 @@
+{
+  "image-recognition": {
+    "en": {
+      "name": "Image Recognition",
+      "shortDescription": "Identify objects, scenes, faces, and text in images with high precision. We build custom computer vision models to automate visual classification and search workflows.",
+      "fullDescription": "Manual inspection of visual assets or real-world images is slow and prone to errors. We design and build custom Image Recognition solutions that automate visual analysis for e-commerce, manufacturing, and security applications. Utilizing advanced deep learning frameworks like PyTorch and TensorFlow, alongside custom YOLO and OpenCV pipelines, we train models to detect specific objects, classify images by category, perform facial recognition, and extract text via OCR. We tune our models to achieve high accuracy and minimal latency, preparing them for cloud deployment or edge processing on IoT devices. From identifying defects on production lines to auto-tagging product catalogs, our image recognition engines scale your business operations visually.",
+      "features": [
+        "Object Detection & Image Classification",
+        "Real-Time Scene & Pattern Understanding",
+        "Custom Model Training & Transfer Learning",
+        "Facial Detection and Matching Systems",
+        "High-Accuracy OCR & Data Extraction",
+        "Low-Latency Edge AI & IoT Deployment",
+        "Flexible API Wrapper and Cloud Integration",
+        "Automatic Visual Search Indexing Systems"
+      ],
+      "benefits": [
+        "Automate visual inspections and quality check tasks",
+        "Reduce catalog tagging time from days to seconds",
+        "Enhance security with fast facial recognition checks",
+        "Process visual assets at scale in real time",
+        "Minimize operational costs using low-power edge AI devices",
+        "Improve data entry speed through automated visual extraction"
+      ],
+      "metaTitle": "Custom Image Recognition Services | AI Vision | PakSoft",
+      "metaDescription": "Build custom image recognition and classification solutions. We train YOLO and PyTorch models for defect detection, tagging, and search. Contact us.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Use Case Assessment",
+            "description": "We analyze your visual data, lighting conditions, and target categories to select the best camera hardware and model types."
+          },
+          {
+            "step": 2,
+            "title": "Dataset Preparation",
+            "description": "We collect, clean, and annotate target images using bounding boxes or segmentation masks to build high-quality training sets."
+          },
+          {
+            "step": 3,
+            "title": "Model Selection & Custom Training",
+            "description": "We choose appropriate neural network architectures and train them using PyTorch, optimizing parameters to prevent overfitting."
+          },
+          {
+            "step": 4,
+            "title": "Inference Optimization",
+            "description": "We convert trained models into TensorRT or ONNX formats to maximize frame rate and reduce processing latency."
+          },
+          {
+            "step": 5,
+            "title": "System Integration",
+            "description": "We wrap the model in a microservice API and connect it to your database, CMS, or security system cameras."
+          },
+          {
+            "step": 6,
+            "title": "Deployment & Monitoring",
+            "description": "We deploy the vision pipeline to the cloud or edge devices, tracking accuracy and setting up logs for model improvements."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is the difference between image recognition and object detection?",
+            "answer": "Image recognition identifies the overall category of an image (e.g., 'car'). Object detection identifies individual items in an image and provides their exact locations using coordinate bounding boxes."
+          },
+          {
+            "question": "How much labeled data do we need to train a model?",
+            "answer": "For simple object detection, we usually need 500 to 1,000 labeled images per category. For highly complex inspections, we utilize transfer learning to achieve high accuracy with smaller datasets."
+          },
+          {
+            "question": "Can image recognition run locally on-premise?",
+            "answer": "Yes, we can deploy models on local servers with NVIDIA GPUs or on compact edge hardware like NVIDIA Jetson devices to run offline without internet connectivity."
+          },
+          {
+            "question": "How accurate can the system get?",
+            "answer": "Under consistent lighting and camera angles, our custom-trained models routinely achieve over 95% classification and detection accuracy, exceeding typical human inspection rates."
+          },
+          {
+            "question": "How long does it take to train and deploy a model?",
+            "answer": "A standard project with custom training and system integration takes 6 to 10 weeks, depending on data availability and the complexity of target categories."
+          },
+          {
+            "question": "Can the system read text from images?",
+            "answer": "Yes, we integrate OCR technology alongside image recognition to locate, read, and extract text from labels, signs, invoices, and documents automatically."
+          },
+          {
+            "question": "Do you support video stream analysis?",
+            "answer": "Yes, we build video analytics pipelines using OpenCV and deep learning models that process real-time RTSP camera streams at 30+ frames per second."
+          },
+          {
+            "question": "How do you handle changes in visual items over time?",
+            "answer": "We build continuous learning pipelines. If a new product variant is introduced, we add a small batch of images to the dataset and retrain the model."
+          }
+        ],
+        "technologies": [
+          { "name": "PyTorch", "icon": "pytorch" },
+          { "name": "TensorFlow", "icon": "tensorflow" },
+          { "name": "YOLO", "icon": "yolo" },
+          { "name": "OpenCV", "icon": "opencv" },
+          { "name": "TensorRT", "icon": "tensorrt" },
+          { "name": "AWS Rekognition", "icon": "aws" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "Python", "icon": "python" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Görüntü Tanıma",
+      "shortDescription": "Görsellerdeki nesneleri, sahneleri, yüzleri ve metinleri yüksek hassasiyetle tanımlayın. Görsel sınıflandırma ve arama iş akışlarını otomatikleştirmek için özel bilgisayarlı görü modelleri oluşturuyoruz.",
+      "fullDescription": "Görsel varlıkların veya gerçek dünya görüntülerinin manuel olarak incelenmesi yavaştır ve hatalara açıktır. E-ticaret, üretim ve güvenlik uygulamaları için görsel analizleri otomatikleştiren özel Görüntü Tanıma çözümleri tasarlıyor ve oluşturuyoruz. PyTorch ve TensorFlow gibi gelişmiş derin öğrenme çerçevelerinin yanı sıra özel YOLO ve OpenCV veri hatlarını kullanarak, modelleri belirli nesneleri tespit etmek, görselleri kategorilere göre sınıflandırmak, yüz tanıma gerçekleştirmek ve OCR yoluyla metin çıkarmak üzere eğitiyoruz. Modellerimizi yüksek doğruluk ve minimum gecikme süresi elde edecek şekilde optimize ederek bulut dağıtımına veya IoT cihazlarında uç (edge) işlemeye hazırlıyoruz. Üretim hatlarındaki kusurları belirlemekten ürün kataloglarını otomatik etiketlemeye kadar, görüntü tanıma motorlarımız iş süreçlerinizi görsel olarak ölçeklendirir.",
+      "features": [
+        "Nesne Tespiti ve Görüntü Sınıflandırma",
+        "Gerçek Zamanlı Sahne ve Örüntü Anlama",
+        "Özel Model Eğitimi ve Aktarımlı Öğrenme",
+        "Yüz Algılama ve Eşleştirme Sistemleri",
+        "Yüksek Hassasiyetli OCR ve Veri Çıkarımı",
+        "Düşük Gecikmeli Edge AI ve IoT Dağıtımı",
+        "Esnek API Sarmalayıcı ve Bulut Entegrasyonu",
+        "Otomatik Görsel Arama İndeksleme Sistemleri"
+      ],
+      "benefits": [
+        "Görsel incelemeleri ve kalite kontrol görevlerini otomatikleştirin",
+        "Katalog etiketleme süresini günlerden saniyelere indirin",
+        "Hızlı yüz tanıma kontrolleriyle güvenliği artırın",
+        "Görsel varlıkları gerçek zamanlı olarak ölçekli bir şekilde işleyin",
+        "Düşük güçlü edge AI cihazları kullanarak operasyonel maliyetleri en aza indirin",
+        "Otomatik görsel çıkarım yoluyla veri giriş hızını artırın"
+      ],
+      "metaTitle": "Özel Görüntü Tanıma Hizmetleri | AI Vision | PakSoft",
+      "metaDescription": "Özel görüntü tanıma ve sınıflandırma çözümleri oluşturun. Kusur tespiti, etiketleme ve arama için YOLO ve PyTorch modelleri eğitiyoruz. Bizimle iletişime geçin.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Kullanım Durumu Değerlendirmesi",
+            "description": "En iyi kamera donanımını ve model türlerini seçmek için görsel verilerinizi, aydınlatma koşullarını ve hedef kategorileri analiz ediyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Veri Kümesi Hazırlığı",
+            "description": "Yüksek kaliteli eğitim setleri oluşturmak için hedef görselleri sınırlayıcı kutular (bounding boxes) veya bölümleme maskeleri kullanarak topluyor, temizliyor ve etiketliyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Model Seçimi ve Özel Eğitim",
+            "description": "Uygun sinir ağı mimarilerini seçiyor ve aşırı öğrenmeyi (overfitting) önlemek için parametreleri optimize ederek PyTorch kullanarak eğitiyoruz."
+          },
+          {
+            "step": 4,
+            "title": "Çıkarım Optimizasyonu",
+            "description": "Kare hızını (FPS) en üst düzeye çıkarmak ve işlem gecikmesini azaltmak için eğitilmiş modelleri TensorRT veya ONNX formatlarına dönüştürüyoruz."
+          },
+          {
+            "step": 5,
+            "title": "Sistem Entegrasyonu",
+            "description": "Modeli bir mikro hizmet API'si ile sarmalıyor ve veritabanınıza, CMS'nize veya güvenlik sistemi kameralarınıza bağlıyoruz."
+          },
+          {
+            "step": 6,
+            "title": "Yayına Alma ve İzleme",
+            "description": "Görüntü işleme hattını buluta veya uç cihazlara dağıtıyor, doğruluğu izliyor ve model geliştirmeleri için günlükler ayarlıyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Görüntü tanıma ile nesne tespiti arasındaki fark nedir?",
+            "answer": "Görüntü tanıma bir görselin genel kategorisini tanımlar (örneğin, 'araba'). Nesne tespiti ise görseldeki tek tek öğeleri belirler ve koordinat kutuları kullanarak bunların tam konumlarını sağlar."
+          },
+          {
+            "question": "Bir modeli eğitmek için ne kadar etiketli veriye ihtiyacımız var?",
+            "answer": "Basit nesne tespiti için genellikle kategori başına 500 ila 1.000 etiketli görsel gerekir. Çok karmaşık denetimler için, daha küçük veri kümeleriyle yüksek doğruluk elde etmek üzere aktarımlı öğrenme (transfer learning) kullanıyoruz."
+          },
+          {
+            "question": "Görüntü tanıma yerel olarak (on-premise) çalışabilir mi?",
+            "answer": "Evet, internet bağlantısı olmadan çevrimdışı çalışabilmek için modelleri NVIDIA GPU'lu yerel sunucularda veya NVIDIA Jetson gibi kompakt uç donanımlarda barındırabiliriz."
+          },
+          {
+            "question": "Sistem ne kadar doğru çalışabilir?",
+            "answer": "Tutarlı aydınlatma ve kamera açısı altında, özel olarak eğitilmiş modellerimiz rutin olarak %95'in üzerinde sınıflandırma ve tespit doğruluğuna ulaşarak standart insan denetim oranlarını aşar."
+          },
+          {
+            "question": "Bir modeli eğitmek ve yayına almak ne kadar sürer?",
+            "answer": "Özel eğitim ve sistem entegrasyonuna sahip standart bir proje, veri kullanılabilirliğine ve hedef kategorilerin karmaşıklığına bağlı olarak 6 ila 10 hafta sürer."
+          },
+          {
+            "question": "Sistem görsellerdeki metinleri okuyabilir mi?",
+            "answer": "Evet, etiketlerden, tabelalardan, faturalardan ve belgelerden metinleri otomatik olarak bulmak, okumak ve çıkarmak için görüntü tanımanın yanı sıra OCR teknolojisini de entegre ediyoruz."
+          },
+          {
+            "question": "Video akışı analizini destekliyor musunuz?",
+            "answer": "Evet, saniyede 30 kare ve üzeri hızlarda gerçek zamanlı RTSP kamera akışlarını işleyen OpenCV ve derin öğrenme modellerini kullanan video analitiği veri hatları kuruyoruz."
+          },
+          {
+            "question": "Görsel öğeler zamanla değiştiğinde bunu nasıl yönetiyorsunuz?",
+            "answer": "Sürekli öğrenme hatları kuruyoruz. Yeni bir ürün varyasyonu eklendiğinde, veri kümesine küçük bir grup yeni görsel ekliyor ve modeli yeniden eğitiyoruz."
+          }
+        ],
+        "technologies": [
+          { "name": "PyTorch", "icon": "pytorch" },
+          { "name": "TensorFlow", "icon": "tensorflow" },
+          { "name": "YOLO", "icon": "yolo" },
+          { "name": "OpenCV", "icon": "opencv" },
+          { "name": "TensorRT", "icon": "tensorrt" },
+          { "name": "AWS Rekognition", "icon": "aws" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "Python", "icon": "python" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Bilderkennung",
+      "shortDescription": "Identifizieren Sie Objekte, Szenen, Gesichter und Text in Bildern mit hoher Präzision. Wir bauen maßgeschneiderte Computer-Vision-Modelle für automatisierte Klassifizierung.",
+      "fullDescription": "Die manuelle Überprüfung von Bildern oder visuellen Assets ist zeitaufwändig und fehleranfällig. Wir entwerfen und bauen maßgeschneiderte Bilderkennungslösungen, die visuelle Analysen für E-Commerce, Fertigung und Sicherheitssysteme automatisieren. Unter Verwendung moderner Deep-Learning-Frameworks wie PyTorch und TensorFlow sowie YOLO und OpenCV trainieren wir Modelle zur Erkennung spezifischer Objekte, zur Klassifizierung von Bildern nach Kategorien, zur Gesichtserkennung und zur Textextraktion mittels OCR. Wir optimieren unsere Modelle für maximale Genauigkeit und minimale Latenzzeiten auf Cloud-Systemen oder Edge-Hardware (IoT). Von der automatisierten Fehlererkennung in der Produktion bis zur automatischen Verschlagwortung von Produktkatalogen skalieren unsere Bilderkennungs-Systeme Ihre Prozesse.",
+      "features": [
+        "Objekterkennung & Bildklassifizierung",
+        "Szenen- und Mustererkennung in Echtzeit",
+        "Custom Model Training & Transfer Learning",
+        "Gesichtserkennungs- und Abgleichsysteme",
+        "Präzise Textextraktion (OCR)",
+        "Edge-AI- & IoT-Deployment mit geringer Latenz",
+        "Flexible API-Wrapper & Cloud-Integration",
+        "Automatische visuelle Suchindexierung"
+      ],
+      "benefits": [
+        "Visuelle Qualitätskontrollen vollautomatisch durchführen",
+        "Verschlagwortung von Produktkatalogen drastisch beschleunigen",
+        "Sicherheit durch schnellen Gesichtsabgleich erhöhen",
+        "Visuelle Assets in Echtzeit und großem Maßstab verarbeiten",
+        "Betriebskosten durch den Einsatz energiesparender Edge-KI-Geräte senken",
+        "Datenerfassung durch automatische visuelle Textextraktion beschleunigen"
+      ],
+      "metaTitle": "Maßgeschneiderte Bilderkennung | Computer Vision | PakSoft",
+      "metaDescription": "Wir entwickeln Bilderkennungs- und Klassifizierungslösungen. Wir trainieren YOLO- und PyTorch-Modelle zur Fehlerprüfung, Verschlagwortung und Suche.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Use-Case-Analyse",
+            "description": "Wir analysieren Ihre Bilddaten, Lichtverhältnisse und Zielkategorien, um die geeignete Kamera-Hardware und Modelltypen auszuwählen."
+          },
+          {
+            "step": 2,
+            "title": "Datenvorbereitung",
+            "description": "Wir sammeln, bereinigen und annotieren Bilder mit Bounding Boxes oder Segmentierungsmasken, um qualitativ hochwertige Trainingsdaten zu erstellen."
+          },
+          {
+            "step": 3,
+            "title": "Modellauswahl & Training",
+            "description": "Wir wählen die passende neuronale Netzarchitektur aus und trainieren das Modell mit PyTorch unter Vermeidung von Overfitting."
+          },
+          {
+            "step": 4,
+            "title": "Inferenzoptimierung",
+            "description": "Wir konvertieren die trainierten Modelle in TensorRT- oder ONNX-Formate, um die Framerate zu maximieren und Latenzen zu minimieren."
+          },
+          {
+            "step": 5,
+            "title": "Systemintegration",
+            "description": "Wir stellen das Modell als API-Mikroservice bereit und binden es in Ihre Datenbank, Ihr CMS oder Ihre Kamerasysteme ein."
+          },
+          {
+            "step": 6,
+            "title": "Deployment & Monitoring",
+            "description": "Wir verteilen die Pipeline in der Cloud oder auf Edge-Geräten, überwachen die Genauigkeit und protokollieren Daten für zukünftige Optimierungen."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Was ist der Unterschied zwischen Bilderkennung und Objekterkennung?",
+            "answer": "Die Bilderkennung weist einem gesamten Bild eine Kategorie zu (z. B. 'Auto'). Die Objekterkennung hingegen identifiziert einzelne Objekte im Bild und liefert deren genaue Position mithilfe von Koordinaten-Boxen."
+          },
+          {
+            "question": "Wie viele annotierte Bilder werden für das Training benötigt?",
+            "answer": "Für einfache Objekterkennungen benötigen wir meist 500 bis 1.000 annotierte Bilder pro Kategorie. Bei komplexeren Anforderungen nutzen wir Transfer Learning für hohe Präzision bei kleineren Datensätzen."
+          },
+          {
+            "question": "Kann die Bilderkennung auch offline (lokal) betrieben werden?",
+            "answer": "Ja, wir können die Modelle auf lokalen GPU-Servern oder kompakter Edge-Hardware wie NVIDIA-Jetson-Geräten installieren, um sie offline ohne Internetverbindung auszuführen."
+          },
+          {
+            "question": "Wie hoch ist die typische Erkennungsgenauigkeit?",
+            "answer": "Unter stabilen Lichtverhältnissen und Kamerawinkeln erreichen unsere speziell trainierten Modelle regelmäßig eine Genauigkeit von über 95%, was die typische Fehlerquote menschlicher Prüfer unterschreitet."
+          },
+          {
+            "question": "Wie lange dauert die Entwicklung eines Bilderkennungsmodells?",
+            "answer": "Ein typisches Projekt inklusive individuellem Training und Systemintegration dauert ca. 6 bis 10 Wochen, je nach Datenverfügbarkeit und der Komplexität der Aufgabenstellung."
+          },
+          {
+            "question": "Kann das System auch Text aus Bildern auslesen?",
+            "answer": "Ja, wir integrieren OCR-Technologie in die Bilderkennung, um Texte auf Etiketten, Schildern, Rechnungen und Dokumenten automatisch zu erfassen und zu digitalisieren."
+          },
+          {
+            "question": "Unterstützen Sie die Analyse von Live-Videostreams?",
+            "answer": "Ja, wir entwickeln Videoanalyselösungen auf Basis von OpenCV und Deep-Learning-Modellen, die Echtzeit-RTSP-Kamerastreams mit über 30 Bildern pro Sekunde (FPS) verarbeiten können."
+          },
+          {
+            "question": "Wie reagiert das System auf neue Produktvarianten?",
+            "answer": "Wir implementieren Pipelines für kontinuierliches Lernen. Bei neuen Varianten erweitern wir den Trainingsdatensatz um einige Bilder und trainieren das Modell automatisch nach."
+          }
+        ],
+        "technologies": [
+          { "name": "PyTorch", "icon": "pytorch" },
+          { "name": "TensorFlow", "icon": "tensorflow" },
+          { "name": "YOLO", "icon": "yolo" },
+          { "name": "OpenCV", "icon": "opencv" },
+          { "name": "TensorRT", "icon": "tensorrt" },
+          { "name": "AWS Rekognition", "icon": "aws" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "Python", "icon": "python" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "گروہ اور تصویر کی پہچان",
+      "shortDescription": "تصاویر میں موجود اشیاء، مناظر، چہروں اور متن کی اعلیٰ درستگی کے ساتھ پہچان کریں۔ ہم کسٹم کمپیوٹر وژن ماڈلز بناتے ہیں۔",
+      "fullDescription": "تصویری اثاثوں یا حقیقی دنیا کی تصاویر کا دستی معائنہ سست ہوتا ہے اور اس میں غلطیوں کا امکان رہتا ہے۔ ہم اپنی مرضی کے مطابق تصویر کی پہچان (Image Recognition) کے سلوشنز ڈیزائن اور بناتے ہیں جو ای کامرس، مینوفیکچرنگ اور سیکیورٹی ایپلی کیشنز کے لیے خودکار بصری تجزیہ فراہم کرتے ہیں۔ PyTorch اور TensorFlow جیسے جدید ڈیپ لرننگ فریم ورکس اور YOLO اور OpenCV کا استعمال کرتے ہوئے، ہم ماڈلز کو مخصوص اشیاء کا پتہ لگانے، کیٹیگریز کی درجہ بندی کرنے، چہروں کی شناخت کرنے اور OCR کے ذریعے متن نکالنے کی تربیت دیتے ہیں۔ ہم کارکردگی کو تیز اور درست بنانے کے لیے ماڈلز کو بہتر بناتے ہیں تاکہ انہیں کلاؤڈ یا IoT آلات پر چلایا جا سکے۔ فیکٹریوں میں ناقص پروڈکٹس کی نشاندہی سے لے کر مصنوعات کے کیٹلاگ کو خودکار ٹیگ کرنے تک، ہمارے سسٹمز کارآمد ثابت ہوتے ہیں۔",
+      "features": [
+        "اشیاء کی شناخت اور تصاویر کی درجہ بندی",
+        "ریئل ٹائم منظر اور پیٹرن کی سمجھ",
+        "کسٹم ماڈل ٹریننگ اور ٹرانسفر لرننگ",
+        "چہروں کا پتہ لگانے اور میچ کرنے کے سسٹمز",
+        "اعلیٰ درستگی والا OCR اور ڈیٹا نکالنے کا عمل",
+        "تیز رفتار Edge AI اور IoT ہوسٹنگ",
+        "لچکدار اے پی آئی اور کلاؤڈ انٹیگریشن",
+        "خودکار بصری سرچ انڈیکسنگ سسٹمز"
+      ],
+      "benefits": [
+        "بصری معائنہ اور کوالٹی چیک کے کاموں کو خودکار بنائیں",
+        "کیٹلاگ ٹیگ کرنے کے وقت کو دنوں سے سیکنڈوں میں لائیں",
+        "تیز چہروں کی پہچان کے ذریعے سیکیورٹی بہتر بنائیں",
+        "بڑی تعداد میں تصاویر کو ریئل ٹائم میں پروسیس کریں",
+        "کم بجلی استعمال کرنے والے ڈیوائسز سے اخراجات بچائیں",
+        "خودکار ڈیٹا نکالنے کے عمل سے ڈیٹا انٹری تیز کریں"
+      ],
+      "metaTitle": "کسٹم امیج ریکگنیشن سروسز | AI وژن | PakSoft",
+      "metaDescription": "تصویر کی پہچان اور درجہ بندی کے کسٹم سلوشنز بنائیں۔ ہم ناقص مصنوعات کی شناخت اور سرچ کے لیے ماڈلز تیار کرتے ہیں۔ رابطہ کریں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "ضروریات کا جائزہ",
+            "description": "ہم بہترین کیمرہ ہارڈویئر اور ماڈل منتخب کرنے کے لیے تصویر کے معیار اور روشنی کے حالات کا تجزیہ کرتے ہیں۔"
+          },
+          {
+            "step": 2,
+            "title": "ڈیٹا سیٹ کی تیاری",
+            "description": "ہم تصاویر کو اکٹھا کرتے ہیں اور اعلیٰ معیار کی ٹریننگ فائلز بنانے کے لیے ان پر باؤنڈنگ باکسز کی مدد سے نشان لگاتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "ماڈل کی تربیت",
+            "description": "ہم مناسب نیورل نیٹ ورک ڈیزائن منتخب کرتے ہیں اور PyTorch کی مدد سے ماڈل کو اوور فٹنگ سے بچاتے ہوئے تربیت دیتے ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "رفتار کی اصلاح",
+            "description": "ہم ماڈل کو TensorRT یا ONNX فارمیٹ میں تبدیل کرتے ہیں تاکہ پروسیسنگ کا وقت کم سے کم ہو سکے۔"
+          },
+          {
+            "step": 5,
+            "title": "سسٹم انٹیگریشن",
+            "description": "ہم ماڈل کو اے پی آئی مائیکرو سروس میں تبدیل کرتے ہیں اور اسے آپ کے کیمروں یا ڈیٹا بیس سے جوڑ دیتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "لانچ اور نگرانی",
+            "description": "ہم سسٹم کو کلاؤڈ یا لوکل ڈیوائسز پر لانچ کرتے ہیں اور اس کی درستگی کی نگرانی جاری رکھتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "تصویر کی پہچان اور آبجیکٹ ڈیٹیکشن میں کیا فرق ہے؟",
+            "answer": "تصویر کی پہچان مجموعی طور پر پوری تصویر کی شناخت کرتی ہے (جیسے 'کار')۔ جبکہ آبجیکٹ ڈیٹیکشن تصویر کے اندر موجود مخصوص چیزوں کی نشاندہی کرتی ہے اور ان کے گرد باؤنڈنگ باکس بناتی ہے۔"
+          },
+          {
+            "question": "ماڈل کی تربیت کے لیے کتنی تصاویر کی ضرورت ہوتی ہے؟",
+            "answer": "معمولی آبجیکٹ ڈیٹیکشن کے لیے ہمیں عام طور پر فی کیٹیگری 500 سے 1000 تصاویر درکار ہوتی ہیں۔ پیچیدہ معائنے کے لیے ہم کم تصاویر کے ساتھ بھی بہترین نتائج حاصل کرنے کے لیے ٹرانسفر لرننگ استعمال کرتے ہیں۔"
+          },
+          {
+            "question": "کیا تصویر کی پہچان کا ماڈل انٹرنیٹ کے بغیر چل سکتا ہے؟",
+            "answer": "جی ہاں، ہم انٹرنیٹ کے بغیر چلانے کے لیے ماڈلز کو کمپنی کے لوکل سرورز پر یا NVIDIA Jetson جیسے آلات پر انسٹال کر سکتے ہیں۔"
+          },
+          {
+            "question": "سسٹم کتنی درستگی کے ساتھ کام کرتا ہے؟",
+            "answer": "بہتر روشنی اور کیمرے کی مناسب پوزیشن کے ساتھ، ہمارے ماڈلز 95 فیصد سے زیادہ درست نتائج فراہم کرتے ہیں جو کہ انسانی کارکردگی سے بھی بہتر ہے۔"
+          },
+          {
+            "question": "ماڈل تیار کرنے میں کتنا وقت لگتا ہے؟",
+            "answer": "ڈیٹا کی دستیابی اور کام کی پیچیدگی کے لحاظ سے کسٹم ٹریننگ اور سسٹم کی تیاری میں 6 سے 10 ہفتے لگتے ہیں۔"
+          },
+          {
+            "question": "کیا سسٹم تصویروں سے متن پڑھ سکتا ہے؟",
+            "answer": "جی ہاں، ہم تصاویر، بلوں، دستاویزات یا بورڈز سے متن نکالنے کے لیے امیج ریکگنیشن کے ساتھ او سی آر (OCR) ٹیکنالوجی کو مربوط کرتے ہیں۔"
+          },
+          {
+            "question": "کیا آپ ویڈیو لائیو اسٹریم کو سپورٹ کرتے ہیں؟",
+            "answer": "جی ہاں، ہم ایسے ویڈیو اینالیٹکس سسٹمز بناتے ہیں جو کیمرے سے حاصل ہونے والے لائیو ویڈیو اسٹریم کا 30 فریم فی سیکنڈ سے زیادہ کی رفتار پر تجزیہ کر سکتے ہیں۔"
+          },
+          {
+            "question": "مصنوعات تبدیل ہونے پر ماڈل کو کیسے اپ ڈیٹ کیا جاتا ہے؟",
+            "answer": "ہم ماڈل کی مسلسل اپ ڈیٹ کا انتظام کرتے ہیں۔ جب کوئی نئی پروڈکٹ آتی ہے، تو ہم اس کی چند تصاویر لے کر ماڈل کو دوبارہ تربیت دے دیتے ہیں۔"
+          }
+        ],
+        "technologies": [
+          { "name": "PyTorch", "icon": "pytorch" },
+          { "name": "TensorFlow", "icon": "tensorflow" },
+          { "name": "YOLO", "icon": "yolo" },
+          { "name": "OpenCV", "icon": "opencv" },
+          { "name": "TensorRT", "icon": "tensorrt" },
+          { "name": "AWS Rekognition", "icon": "aws" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "Python", "icon": "python" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "التعرف على الصور",
+      "shortDescription": "حدد الأشياء، والمشاهد، والوجوه، والنصوص في الصور بدقة عالية. نحن نبني نماذج رؤية حاسوبية مخصصة لأتمتة عمليات التصنيف والبحث المرئي.",
+      "fullDescription": "يعد الفحص اليدوي للأصول المرئية أو الصور الواقعية بطيئاً وعرضة للأخطاء. نحن نصمم ونبني حلولاً مخصصة للتعرف على الصور تعمل على أتمتة التحليل المرئي لتطبيقات التجارة الإلكترونية، والتصنيع، والأمن. باستخدام أطر التعلم العميق المتقدمة مثل PyTorch و TensorFlow، إلى جانب مسارات YOLO و OpenCV المخصصة، نقوم بتدريب النماذج على اكتشاف أشياء معينة، وتصنيف الصور حسب الفئة، وإجراء التعرف على الوجوه، واستخراج النصوص عبر OCR. نقوم بضبط نماذجنا لتحقيق دقة عالية والحد الأدنى من زمن الوصول، وإعدادها للنشر السحابي أو المعالجة الطرفية على أجهزة IoT. من تحديد العيوب في خطوط الإنتاج إلى وضع العلامات التلقائية على كتالوجات المنتجات، تعمل محركاتنا على توسيع نطاق أعمالك بصرياً.",
+      "features": [
+        "اكتشاف الأشياء وتصنيف الصور بدقة",
+        "فهم المشاهد والأنماط البصرية في الوقت الفعلي",
+        "تدريب مخصص للنماذج والتعلم الانتقالي",
+        "أنظمة اكتشاف الوجوه والمطابقة الأمنية",
+        "استخراج النصوص بدقة عالية عبر OCR",
+        "نشر أنظمة الذكاء الاصطناعي الطرفية IoT",
+        "تكامل سحابي مرن وواجهات برمجية خفيفة",
+        "أنظمة فهرسة وبحث مرئي تلقائية بالكامل"
+      ],
+      "benefits": [
+        "أتمتة الفحص البصري ومهام مراقبة الجودة",
+        "تقليل وقت تصنيف المنتجات من أيام إلى ثوانٍ",
+        "تعزيز الأمن من خلال فحوصات التعرف السريع على الوجوه",
+        "معالجة الأصول المرئية على نطاق واسع وفي الوقت الفعلي",
+        "تقليل التكاليف التشغيلية باستخدام أجهزة معالجة طرفية موفرة للطاقة",
+        "تحسين سرعة إدخال البيانات من خلال الاستخراج البصري الآلي"
+      ],
+      "metaTitle": "خدمات التعرف على الصور | الرؤية الحاسوبية | PakSoft",
+      "metaDescription": "ابنِ حلولاً مخصصة للتعرف على الصور وتصنيفها. ندرب نماذج YOLO و PyTorch للكشف عن العيوب والتصنيف والبحث المتقدم. اتصل بنا.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تقييم حالة الاستخدام",
+            "description": "نحلل بياناتك المرئية وظروف الإضاءة والفئات المستهدفة لاختيار أفضل أجهزة الكاميرا وأنواع النماذج."
+          },
+          {
+            "step": 2,
+            "title": "إعداد مجموعة البيانات",
+            "description": "نجمع الصور المستهدفة وننظفها ونضع عليها علامات توضيحية باستخدام صناديق التحديد أو أقنعة التقسيم لبناء مجموعات تدريب عالية الجودة."
+          },
+          {
+            "step": 3,
+            "title": "اختيار النموذج والتدريب المخصص",
+            "description": "نختار بنيات الشبكات العصبية المناسبة وندربها باستخدام PyTorch، مع تحسين المعلمات لمنع الإفراط في التجهيز (overfitting)."
+          },
+          {
+            "step": 4,
+            "title": "تحسين عمليات الاستدلال",
+            "description": "نحول النماذج المدربة إلى تنسيقات TensorRT أو ONNX لزيادة معدل الإطارات وتقليل زمن معالجة الصور."
+          },
+          {
+            "step": 5,
+            "title": "دمج وتكامل الأنظمة",
+            "description": "نغلف النموذج في واجهة برمجية للخدمات المصغرة ونربطه بقاعدة البيانات الخاصة بك، أو نظام إدارة المحتوى، أو كاميرات الأمن."
+          },
+          {
+            "step": 6,
+            "title": "النشر والمراقبة الفعالة",
+            "description": "ننشر مسار الرؤية الحاسوبية في السحاب أو الأجهزة الطرفية، مع تتبع الدقة وإعداد سجلات لتحسين أداء النماذج مستقبلاً."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما الفرق بين التعرف على الصور واكتشاف الأشياء؟",
+            "answer": "يحدد التعرف على الصور الفئة العامة للصورة (مثل 'سيارة'). بينما يحدد اكتشاف الأشياء العناصر الفردية داخل الصورة ويوفر مواقعها الدقيقة باستخدام صناديق تحديد إحداثية."
+          },
+          {
+            "question": "كم عدد الصور المطلوبة لتدريب نموذج مخصص؟",
+            "answer": "لاكتشاف الأشياء البسيطة، نحتاج عادةً من 500 إلى 1,000 صورة لكل فئة. للفحوصات شديدة التعقيد، نستخدم التعلم الانتقالي (transfer learning) لتحقيق دقة عالية بمجموعات بيانات أصغر."
+          },
+          {
+            "question": "هل يمكن تشغيل نظام التعرف على الصور محلياً؟",
+            "answer": "نعم، يمكننا نشر النماذج على خوادم محلية مزودة بوحدات معالجة الرسومات NVIDIA أو على أجهزة طرفية مدمجة مثل أجهزة NVIDIA Jetson للتشغيل دون الحاجة إلى إنترنت."
+          },
+          {
+            "question": "ما مدى دقة عمل هذا النظام؟",
+            "answer": "تحت ظروف إضاءة وزوايا كاميرا متسقة، تحقق نماذجنا المدربة بشكل مخصص دقة تصنيف واكتشاف تتجاوز 95٪، متفوقة على معدلات الفحص البشري المعتادة."
+          },
+          {
+            "question": "كم من الوقت يستغرق تدريب ونشر نموذج رؤية؟",
+            "answer": "يستغرق المشروع القياسي الذي يتضمن التدريب المخصص وتكامل النظام من 6 إلى 10 أسابيع، اعتماداً على توفر البيانات وتعقيد الفئات المستهدفة."
+          },
+          {
+            "question": "هل يمكن للنظام قراءة النصوص من الصور؟",
+            "answer": "نعم، نحن ندمج تقنية OCR إلى جانب التعرف على الصور لتحديد وتفسير واستخراج النصوص من الملصقات، واللوحات، والفواتير، والمستندات تلقائياً."
+          },
+          {
+            "question": "هل تدعمون تحليل بث الفيديو المباشر؟",
+            "answer": "نعم، نبني مسارات تحليل فيديو باستخدام OpenCV ونماذج التعلم العميق التي تعالج بث كاميرات RTSP في الوقت الفعلي بمعدل 30 إطاراً أو أكثر في الثانية."
+          },
+          {
+            "question": "كيف تتعامل مع التغيرات في العناصر المرئية بمرور الوقت؟",
+            "answer": "نبني مسارات تعلم مستمر. إذا تم تقديم منتج جديد أو شكل مختلف، نضيف مجموعة صغيرة من الصور الجديدة إلى قاعدة البيانات ونعيد تدريب النموذج."
+          }
+        ],
+        "technologies": [
+          { "name": "PyTorch", "icon": "pytorch" },
+          { "name": "TensorFlow", "icon": "tensorflow" },
+          { "name": "YOLO", "icon": "yolo" },
+          { "name": "OpenCV", "icon": "opencv" },
+          { "name": "TensorRT", "icon": "tensorrt" },
+          { "name": "AWS Rekognition", "icon": "aws" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "Python", "icon": "python" }
+        ]
+      }
+    }
+  },
+  "knowledge-base-ai": {
+    "en": {
+      "name": "Knowledge Base AI",
+      "shortDescription": "Build intelligent corporate knowledge bases that understand semantic queries. We combine vector databases and LLMs to provide quick, source-attributed answers for teams.",
+      "fullDescription": "Static wikis and employee handbooks are rarely read, leaving crucial internal knowledge inaccessible. We build intelligent, AI-powered Knowledge Base systems that turn static documentation into a dynamic search and Q&A resource. Using semantic vector search with Pinecone and OpenAI embeddings, our platforms understand the intent of user questions and search context across multiple directories. By integrating LangChain and Next.js, we build clean web portals where employees or clients can ask questions in natural language and receive immediate answers with source citations. Our solutions integrate secure permissions mapping, ensuring that sensitive folders remain hidden from unauthorized users, while automated crawlers keep the indexes fresh as files change.",
+      "features": [
+        "Semantic Vector Search across Documentations",
+        "Automated Content Categorization & Tagging",
+        "Intelligent Natural Language Question Answering",
+        "Instant Source Attribution and Citations",
+        "Multi-Format Document Parsing and Support",
+        "Granular Access Control and Privacy Integration",
+        "Automated Web and Storage Directory Crawlers",
+        "Search Query Analytics & Documentation Gap Reports"
+      ],
+      "benefits": [
+        "Reduce internal support ticket volumes by up to 60%",
+        "Onboard new team members faster with self-service info",
+        "Ensure information is retrieved in under 300 milliseconds",
+        "Establish a single, secure source of corporate truth",
+        "Prevent leaks of sensitive corporate directories",
+        "Discover missing documents using search query analytics"
+      ],
+      "metaTitle": "AI Knowledge Base Software | Custom Search | PakSoft",
+      "metaDescription": "Turn static docs into an intelligent Q&A portal. We build custom semantic knowledge bases with Pinecone and OpenAI for secure team search.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Information Audit",
+            "description": "We audit your company's files, wikis, and folders to map out where internal knowledge is stored."
+          },
+          {
+            "step": 2,
+            "title": "Ingestion & Sync",
+            "description": "We build automated connectors that ingest files from Google Drive, Notion, and databases securely."
+          },
+          {
+            "step": 3,
+            "title": "Embedding & Vector Database",
+            "description": "We convert all extracted text into vector embeddings and index them inside Pinecone or Milvus."
+          },
+          {
+            "step": 4,
+            "title": "Q&A Engine Setup",
+            "description": "We set up an LLM retrieval pipeline using LangChain to fetch relevant context and draft precise answers."
+          },
+          {
+            "step": 5,
+            "title": "Access & Safety Control",
+            "description": "We configure OAuth and Active Directory sync so users can only search files their roles authorize them to read."
+          },
+          {
+            "step": 6,
+            "title": "Interface Launch",
+            "description": "We build and deploy a responsive Next.js frontend search interface with built-in query analytics dashboards."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Can this connect to Notion and Google Drive?",
+            "answer": "Yes, we build secure API connectors that synchronize documents from Notion, Google Drive, Microsoft OneDrive, and local network folders automatically."
+          },
+          {
+            "question": "How does it handle document permissions?",
+            "answer": "We integrate search queries with your identity provider (like Okta or Active Directory), filtering vector search results at retrieval time so users only see authorized files."
+          },
+          {
+            "question": "What happens when a document is updated?",
+            "answer": "We set up webhook listeners and scheduled crawlers. When a document is modified, the system automatically extracts the new text, updates its vector embedding, and refreshes the database index."
+          },
+          {
+            "question": "Does it support multiple languages?",
+            "answer": "Yes, our embedding models are multilingual. An employee can ask a question in German and retrieve answers sourced from English or Turkish documentation automatically."
+          },
+          {
+            "question": "Can it index scanned invoices or PDFs?",
+            "answer": "Yes, we integrate OCR technology to extract clean text from scanned images, hand-written notes, and older PDFs before embedding and indexing."
+          },
+          {
+            "question": "Is the search secure from public LLM models?",
+            "answer": "Absolutely. Your data is housed in private vector databases, and we route LLM calls through secure enterprise APIs that guarantee your data is never used for training."
+          },
+          {
+            "question": "How do we know what employees are searching for?",
+            "answer": "We build a search analytics dashboard showing popular queries, search satisfaction rates, and 'failed' queries where no relevant documents were found, helping you locate documentation gaps."
+          },
+          {
+            "question": "What is the typical setup time for this system?",
+            "answer": "A custom enterprise knowledge base integration with 3 to 4 major connectors and role-based permissions typically takes 6 to 8 weeks from discovery to production launch."
+          }
+        ],
+        "technologies": [
+          { "name": "Pinecone", "icon": "pinecone" },
+          { "name": "OpenAI API", "icon": "openai" },
+          { "name": "LangChain", "icon": "langchain" },
+          { "name": "Next.js", "icon": "nextjs" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "Tailwind CSS", "icon": "tailwindcss" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "Python", "icon": "python" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Yapay Zeka Bilgi Bankası",
+      "shortDescription": "Anlamsal sorguları anlayan akıllı kurumsal bilgi bankaları oluşturun. Ekipler için hızlı ve kaynak odaklı yanıtlar sağlamak amacıyla vektör veritabanlarını ve LLM'leri birleştiriyoruz.",
+      "fullDescription": "Statik vikiler ve çalışan el kitapları nadiren okunur, bu da kritik kurum içi bilgileri erişilmez hale getirir. Statik belgeleri dinamik bir arama ve soru-cevap kaynağına dönüştüren yapay zeka destekli akıllı Bilgi Bankası sistemleri kuruyoruz. Pinecone ve OpenAI gömmeleriyle anlamsal vektör araması kullanarak, platformlarımız kullanıcı sorularının amacını anlar ve birden fazla dizin genelinde bağlamı tarar. LangChain ve Next.js'i entegre ederek, çalışanların veya müşterilerin doğal dilde sorular sorabileceği ve kaynak atıflarıyla anında yanıtlar alabileceği temiz web portalları oluşturuyoruz. Çözümlerimiz, hassas klasörlerin yetkisiz kullanıcılardan gizli kalmasını sağlayan güvenli izin eşleştirmesini entegre ederken, otomatik tarayıcılar dosyalar değiştikçe indeksleri güncel tutar.",
+      "features": [
+        "Belgeler Arasında Anlamsal Vektör Araması",
+        "Otomatik İçerik Kategorizasyonu ve Etiketleme",
+        "Doğal Dilde Akıllı Soru-Cevap Sistemleri",
+        "Anında Kaynak İlişkilendirmesi ve Atıflar",
+        "Çoklu Format Belge Ayrıştırma ve Desteği",
+        "Ayrıntılı Erişim Kontrolü ve Gizlilik Entegrasyonu",
+        "Otomatik Web ve Depolama Dizini Tarayıcıları",
+        "Arama Sorgusu Analitiği ve Bilgi Eksikliği Raporları"
+      ],
+      "benefits": [
+        "Dahili destek talebi hacimlerini %60'a varan oranda azaltın",
+        "Self-servis bilgilerle yeni ekip üyelerini daha hızlı işe alıştırın",
+        "Bilgilerin 300 milisaniyenin altında getirilmesini sağlayın",
+        "Güvenli ve tek bir kurumsal doğruluk kaynağı oluşturun",
+        "Hassas kurumsal dizinlerin sızmasını önleyin",
+        "Arama sorgusu analitiğini kullanarak eksik belgeleri keşfedin"
+      ],
+      "metaTitle": "Yapay Zeka Bilgi Bankası Yazılımı | Arama | PakSoft",
+      "metaDescription": "Statik belgeleri akıllı bir soru-cevap portalına dönüştürün. Ekipler için güvenli arama sunan, Pinecone ve OpenAI tabanlı anlamsal bilgi bankaları kuruyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Bilgi Denetimi",
+            "description": "Kurum içi bilgilerin nerede depolandığını belirlemek için şirketinizin dosyalarını, vikilerini ve klasörlerini inceliyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Veri Alımı & Eşitleme",
+            "description": "Google Drive, Notion ve veritabanlarından belgeleri güvenli bir şekilde alan otomatik konnektörler kuruyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Gömme & Vektör Veritabanı",
+            "description": "Çıkarılan tüm metinleri vektör gömmelerine dönüştürüyor ve bunları Pinecone veya Milvus içinde indeksliyoruz."
+          },
+          {
+            "step": 4,
+            "title": "Soru-Cevap Motoru Kurulumu",
+            "description": "İlgili bağlamı getirmek ve kesin yanıtlar tasarlamak için LangChain kullanarak bir LLM veri hattı kuruyoruz."
+          },
+          {
+            "step": 5,
+            "title": "Erişim & Güvenlik Kontrolü",
+            "description": "Kullanıcıların yalnızca rollerinin yetkilendirdiği dosyaları araması için OAuth ve Active Directory entegrasyonu yapılandırıyoruz."
+          },
+          {
+            "step": 6,
+            "title": "Arayüz Lansmanı",
+            "description": "Yerleşik sorgu analitiği panellerine sahip, duyarlı bir Next.js ön uç arama arayüzü oluşturuyor ve dağıtıyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Bu sistem Notion ve Google Drive'a bağlanabilir mi?",
+            "answer": "Evet, Notion, Google Drive, Microsoft OneDrive ve yerel ağ klasörlerindeki belgeleri otomatik olarak senkronize eden güvenli API konnektörleri oluşturuyoruz."
+          },
+          {
+            "question": "Belge izinlerini nasıl yönetiyor?",
+            "answer": "Arama sorgularını kimlik sağlayıcınızla (Okta veya Active Directory gibi) entegre ediyoruz ve vektör arama sonuçlarını kullanıcıların yetkili olduğu dosyalarla sınırlıyoruz."
+          },
+          {
+            "question": "Bir belge güncellendiğinde ne olur?",
+            "answer": "Web kancası dinleyicileri ve zamanlanmış tarayıcılar kuruyoruz. Bir belge değiştirildiğinde, sistem otomatik olarak yeni metni çıkarır, vektör gömmesini günceller ve veri dizinini yeniler."
+          },
+          {
+            "question": "Çoklu dil desteği var mı?",
+            "answer": "Evet, vektör gömme modellerimiz çok dillidir. Bir çalışan Almanca soru sorabilir ve sistem otomatik olarak İngilizce veya Türkçe belgelerden kaynaklanan yanıtları getirebilir."
+          },
+          {
+            "question": "Taranmış faturaları veya PDF'leri indeksleyebilir mi?",
+            "answer": "Evet, indekslemeden önce taranmış görüntülerden, el yazısı notlardan ve eski PDF'lerden temiz metin çıkarmak için OCR teknolojisini entegre ediyoruz."
+          },
+          {
+            "question": "Arama sistemi kamuya açık LLM modellerine karşı güvenli mi?",
+            "answer": "Kesinlikle. Verileriniz özel vektör veritabanlarında barındırılır ve LLM çağrılarını verilerinizin eğitim için kullanılmayacağını garanti eden güvenli kurumsal API'ler üzerinden yönlendiririz."
+          },
+          {
+            "question": "Çalışanların ne aradığını nasıl öğrenebiliriz?",
+            "answer": "Popüler sorguları, arama memnuniyet oranlarını ve ilgili belgelerin bulunamadığı 'başarısız' aramaları gösteren bir arama analitiği paneli oluşturarak belge eksikliklerini belirlemenize yardımcı oluyoruz."
+          },
+          {
+            "question": "Bu sistemin tipik kurulum süresi ne kadardır?",
+            "answer": "3 ila 4 ana konnektör ve rol tabanlı izinlere sahip özel bir kurumsal bilgi bankası entegrasyonu, keşiften üretime kadar genellikle 6 ila 8 hafta sürer."
+          }
+        ],
+        "technologies": [
+          { "name": "Pinecone", "icon": "pinecone" },
+          { "name": "OpenAI API", "icon": "openai" },
+          { "name": "LangChain", "icon": "langchain" },
+          { "name": "Next.js", "icon": "nextjs" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "Tailwind CSS", "icon": "tailwindcss" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "Python", "icon": "python" }
+        ]
+      }
+    },
+    "de": {
+      "name": "KI-Wissensdatenbank",
+      "shortDescription": "Bauen Sie intelligente Wissensdatenbanken auf, die semantische Abfragen verstehen. Wir verbinden Vektordatenbanken und LLMs für präzise, quellenbasierte Antworten.",
+      "fullDescription": "Statische Wikis und Handbücher für Mitarbeiter werden selten gelesen, wodurch wichtiges internes Wissen ungenutzt bleibt. Wir entwickeln intelligente, KI-gestützte Wissensdatenbanken, die statische Dokumente in eine dynamische Q&A-Ressource verwandeln. Mithilfe der semantischen Vektorsuche mit Pinecone und OpenAI-Embeddings verstehen unsere Plattformen die Absicht hinter Fragen und suchen nach dem passenden Kontext in all Ihren Systemen. Durch die Integration von LangChain und Next.js bauen wir moderne Webportale, auf denen Mitarbeiter oder Kunden Fragen in natürlicher Sprache stellen können und sofortige Antworten mit Quellennachweisen erhalten. Sicherheitsberechtigungen sorgen dafür, dass sensible Daten geschützt bleiben.",
+      "features": [
+        "Semantische Vektorsuche über Dokumente hinweg",
+        "Automatisierte Inhaltskategorisierung & Tagging",
+        "Intelligente Q&A-Systeme in natürlicher Sprache",
+        "Sofortige Quellenzuordnung und Zitate",
+        "Unterstützung diverser Dokumentenformate",
+        "Integration granularer Zugriffsrechte & Datenschutz",
+        "Automatisierte Crawler für Web- und Cloudspeicher",
+        "Suchanalysen & Berichte über Dokumentationslücken"
+      ],
+      "benefits": [
+        "Interne Support-Tickets um bis zu 60% reduzieren",
+        "Schnellere Einarbeitung neuer Teammitglieder",
+        "Informationsabruf in weniger als 300 Millisekunden",
+        "Aufbau einer sicheren, zentralen Wissensquelle",
+        "Abfließen sensibler Unternehmensdaten verhindern",
+        "Dokumentationslücken durch Suchanalysen leicht aufdecken"
+      ],
+      "metaTitle": "KI-Wissensdatenbank Software | Semantische Suche | PakSoft",
+      "metaDescription": "Machen Sie statische Dokumente interaktiv. Wir entwickeln semantische Wissensdatenbanken mit Pinecone und OpenAI für sichere Suchen im Team.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Informations-Audit",
+            "description": "Wir analysieren die vorhandenen Dokumente, Wikis und Ordnerstrukturen Ihres Unternehmens, um die Wissenslandschaft zu kartografieren."
+          },
+          {
+            "step": 2,
+            "title": "Ingestion & Sync",
+            "description": "Wir implementieren automatische Schnittstellen zur sicheren Übernahme von Dokumenten aus Google Drive, Notion oder Confluence."
+          },
+          {
+            "step": 3,
+            "title": "Embedding & Vektordatenbank",
+            "description": "Wir konvertieren den gesamten Text in Vektor-Embeddings und indexieren diese in Pinecone oder Milvus."
+          },
+          {
+            "step": 4,
+            "title": "Q&A-Engine Setup",
+            "description": "Wir richten mit LangChain eine LLM-Abfrage-Pipeline ein, um relevanten Kontext abzurufen und präzise Antworten zu formulieren."
+          },
+          {
+            "step": 5,
+            "title": "Zugriffs- & Sicherheitssteuerung",
+            "description": "Wir konfigurieren OAuth und Active Directory, sodass Benutzer nur Suchergebnisse erhalten, für die sie eine Berechtigung besitzen."
+          },
+          {
+            "step": 6,
+            "title": "Interface-Launch",
+            "description": "Wir entwickeln ein responsives Next.js-Frontend für die Suche inklusive Dashboard für Abfrageanalysen."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Kann das System mit Notion und Google Drive verbunden werden?",
+            "answer": "Ja, wir entwickeln sichere API-Konnektoren, die Dokumente aus Notion, Google Drive, Microsoft OneDrive und lokalen Netzwerkordnern automatisch synchronisieren."
+          },
+          {
+            "question": "Wie werden Dokumentenberechtigungen gehandhabt?",
+            "answer": "Wir verknüpfen Suchabfragen mit Ihrem Identity Provider (z. B. Okta oder Active Directory) und filtern die Vektorsuchergebnisse, sodass Benutzer nur autorisierte Dateien sehen."
+          },
+          {
+            "question": "Was passiert, wenn ein Dokument aktualisiert wird?",
+            "answer": "Wir konfigurieren Webhooks und zeitgesteuerte Crawler. Sobald eine Datei geändert wird, extrahiert das System den neuen Text, aktualisiert das Embedding und passt den Index an."
+          },
+          {
+            "question": "Unterstützt das System mehrere Sprachen?",
+            "answer": "Ja, unsere Embedding-Modelle sind multilingual. Ein Mitarbeiter kann eine Frage auf Deutsch stellen und das System liefert Antworten, die aus englischen oder türkischen Dokumenten stammen."
+          },
+          {
+            "question": "Können gescannte Dokumente oder Rechnungen indexiert werden?",
+            "answer": "Ja, wir integrieren OCR-Technologie zur Textextraktion aus gescannten Dokumenten, handschriftlichen Notizen und älteren PDFs, bevor diese indexiert werden."
+          },
+          {
+            "question": "Sind unsere Daten bei der Nutzung öffentlicher LLMs geschützt?",
+            "answer": "Absolut. Ihre Daten verbleiben in privaten Vektordatenbanken und LLM-Aufrufe erfolgen über Enterprise-APIs, die garantieren, dass Ihre Daten nicht für Trainingszwecke verwendet werden."
+          },
+          {
+            "question": "Wie erfahren wir, wonach Mitarbeiter suchen?",
+            "answer": "Wir integrieren ein Analytics-Dashboard, das häufige Fragen, die Suchzufriedenheit sowie Abfragen ohne Treffer anzeigt, um Lücken in Ihrer Dokumentation aufzudecken."
+          },
+          {
+            "question": "Wie lange dauert die Einrichtung der Wissensdatenbank?",
+            "answer": "Ein maßgeschneidertes Projekt mit 3 bis 4 Konnektoren und rollenbasierter Zugriffskontrolle dauert in der Regel 6 bis 8 Wochen von der Discovery bis zum Go-Live."
+          }
+        ],
+        "technologies": [
+          { "name": "Pinecone", "icon": "pinecone" },
+          { "name": "OpenAI API", "icon": "openai" },
+          { "name": "LangChain", "icon": "langchain" },
+          { "name": "Next.js", "icon": "nextjs" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "Tailwind CSS", "icon": "tailwindcss" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "Python", "icon": "python" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "آئی ٹی نالج بیس سسٹم",
+      "shortDescription": "سمانٹک سوالات کو سمجھنے والے کاروباری نالج بیسز بنائیں۔ ہم معلومات فراہم کرنے کے لیے ویکٹر ڈیٹا بیسز اور ایل ایل ایمز کو جوڑتے ہیں۔",
+      "fullDescription": "کمپنی کے پرانے مینوئلز اور ملازمین کے ہینڈ بکس شاید ہی کبھی پڑھے جاتے ہوں، جس کی وجہ سے اہم معلومات تک رسائی نہیں ہو پاتی۔ ہم اے آئی سے چلنے والے نالج بیس سسٹم بناتے ہیں جو پرانے ریکارڈز کو تلاش کے ایک بہترین نظام میں تبدیل کر دیتے ہیں۔ Pinecone اور OpenAI ایمبیڈنگز کے ساتھ سمانٹک ویکٹر سرچ کا استعمال کرتے ہوئے، ہمارے پلیٹ فارمز سوالات کے مقصد کو سمجھتے ہیں اور سیکنڈوں میں جواب تلاش کرتے ہیں۔ LangChain اور Next.js کو مربوط کر کے ہم ایک ویب پورٹل بناتے ہیں جہاں ملازمین یا کلائنٹس اپنی زبان میں سوالات پوچھ کر حوالہ جات کے ساتھ جواب حاصل کر سکتے ہیں۔ سیکیورٹی اور ایکسیس کنٹرول کے نفاذ سے حساس فائلیں غیر مجاز افراد سے محفوظ رہتی ہیں۔",
+      "features": [
+        "دستاویزات میں سمانٹک ویکٹر سرچ کا نظام",
+        "مواد کی خودکار درجہ بندی اور ٹیگنگ",
+        "قدرتی زبان میں سوال و جواب کے سسٹمز",
+        "حوالہ جات اور ذرائع کی فوری نشاندہی",
+        "کثیر فارمیٹ دستاویزات کی پروسیسنگ",
+        "ایکسیس کنٹرول اور ڈیٹا پرائیویسی",
+        "خودکار اسٹوریج اور ڈائریکٹری اسکینرز",
+        "سرچ اینالیٹکس اور معلومات کے خلا کی رپورٹس"
+      ],
+      "benefits": [
+        "مدد کے لیے آنے والی ٹکٹوں کے حجم میں 60 فیصد تک کمی لائیں",
+        "نئے ٹیم ممبرز کو کمپنی کی معلومات آسانی سے فراہم کریں",
+        "صرف 300 ملی سیکنڈ سے بھی کم وقت میں معلومات تلاش کریں",
+        "کمپنی کی معلومات کے لیے ایک محفوظ اور سنگل سورس بنائیں",
+        "حساس کمپنی ڈائریکٹریز کے ڈیٹا کو لیک ہونے سے بچائیں",
+        "سرچ اینالیٹکس کی مدد سے معلوم کریں کہ کون سی معلومات غائب ہیں"
+      ],
+      "metaTitle": "اے آئی نالج بیس سافٹ ویئر | سمانٹک سرچ | PakSoft",
+      "metaDescription": "کاروباری دستاویزات کو ایک ذہین سوال و جواب کے پورٹل میں تبدیل کریں۔ ہم Pinecone اور OpenAI کی مدد سے سیکیورٹی والا نالج بیس بناتے ہیں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "معلومات کا آڈٹ",
+            "description": "ہم کمپنی کی فائلوں، پورٹلز اور فولڈرز کا جائزہ لیتے ہیں تاکہ یہ معلوم کیا جا سکے کہ اہم معلومات کہاں محفوظ ہیں۔"
+          },
+          {
+            "step": 2,
+            "title": "انڈیکسنگ اور سنکرونائزیشن",
+            "description": "ہم خودکار کنیکٹرز بناتے ہیں جو گوگل ڈرائیو، نوشن (Notion) اور ڈیٹا بیس سے فائلیں سنکرونائز کرتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "ویکٹر ڈیٹا بیس کی تیاری",
+            "description": "ہم تمام نکالے گئے متنی مواد کو ویکٹرز میں تبدیل کرتے ہیں اور انہیں Pinecone ڈیٹا بیس میں انڈیکس کرتے ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "سوال و جواب انجن کی تشکیل",
+            "description": "ہم LangChain کی مدد سے ایک پائپ لائن بناتے ہیں جو متعلقہ ڈیٹا حاصل کر کے درست جواب تیار کرتی ہے۔"
+          },
+          {
+            "step": 5,
+            "title": "رسائی اور سیکیورٹی کنٹرول",
+            "description": "ہم OAuth اور ایکٹو ڈائریکٹری سنکرونائزیشن ترتیب دیتے ہیں تاکہ ملازمین صرف وہی فائلیں دیکھ سکیں جن کی انہیں اجازت حاصل ہے۔"
+          },
+          {
+            "step": 6,
+            "title": "انٹرفیس کا لانچ",
+            "description": "ہم اینالیٹکس ڈیش بورڈز کے ساتھ ایک ریسپانسیو Next.js سرچ انٹرفیس تیار اور لانچ کرتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "کیا یہ نوشن (Notion) اور گوگل ڈرائیو سے جڑ سکتا ہے؟",
+            "answer": "جی ہاں، ہم محفوظ اے پی آئی کنیکٹرز بناتے ہیں جو نوشن، گوگل ڈرائیو، مائیکروسافٹ ون ڈرائیو اور لوکل نیٹ ورک فولڈرز سے دستاویزات کو خود بخود اپ ڈیٹ کرتے ہیں۔"
+          },
+          {
+            "question": "یہ سسٹم دستاویزات کی اجازتوں (permissions) کو کیسے سنبھالتا ہے؟",
+            "answer": "ہم سرچ کیوریز کو آپ کے آئی ڈی فراہم کنندہ (جیسے Okta یا Active Directory) کے ساتھ مربوط کرتے ہیں تاکہ سرچ نتائج میں صرف وہی فائلیں نظر آئیں جن کے لیے صارف مجاز ہو۔"
+          },
+          {
+            "question": "دستاویز اپ ڈیٹ ہونے پر کیا عمل ہوتا ہے؟",
+            "answer": "ہم اسکینرز ترتیب دیتے ہیں۔ جب کوئی فائل تبدیل ہوتی ہے، تو سسٹم خود بخود اس کا نیا متن نکالتا ہے، ویکٹرز کو اپ ڈیٹ کرتا ہے اور سرچ انڈیکس کو ریفریش کرتا ہے۔"
+          },
+          {
+            "question": "کیا یہ سسٹم متعدد زبانوں کو سپورٹ کرتا ہے؟",
+            "answer": "جی ہاں، ہمارے ایمبیڈنگ ماڈلز ملٹی لنگول ہیں۔ کوئی بھی ملازم جرمن زبان میں سوال پوچھ کر انگریزی یا ترکی زبان کی دستاویزات سے جواب حاصل کر سکتا ہے۔"
+          },
+          {
+            "question": "کیا یہ اسکین شدہ فائلوں یا بلوں کو انڈیکس کر سکتا ہے؟",
+            "answer": "جی ہاں، ہم اسکین شدہ تصاویر، ہاتھ سے لکھے ہوئے نوٹوں اور پرانے پی ڈی ایف سے صاف متن نکالنے کے لیے او سی آر (OCR) ٹیکنالوجی مربوط کرتے ہیں۔"
+          },
+          {
+            "question": "کیا سرچ ڈیٹا پبلک ایل ایل ایم ماڈلز سے محفوظ رہتا ہے؟",
+            "answer": "بالکل۔ آپ کا ڈیٹا نجی ویکٹر ڈیٹا بیسز میں محفوظ رہتا ہے اور ہم کالز کو محفوظ کاروباری APIs کے ذریعے چلاتے ہیں جو ڈیٹا کے رازداری کی ضمانت فراہم کرتے ہیں۔"
+          },
+          {
+            "question": "ہمیں کیسے معلوم ہوگا کہ ملازمین کیا تلاش کر رہے ہیں؟",
+            "answer": "ہم ایک اینالیٹکس ڈیش بورڈ بناتے ہیں جو زیادہ پوچھے جانے والے سوالات، تلاش کی کامیابی اور ناکام سرچز دکھاتا ہے تاکہ معلوماتی ریکارڈز کے خلا کو پر کیا جا سکے۔"
+          },
+          {
+            "question": "اس سسٹم کو تیار کرنے میں کتنا وقت لگتا ہے؟",
+            "answer": "ملازمین کے رولز اور 3 سے 4 کنیکٹرز کے ساتھ کسٹم نالج بیس سسٹم کی تیاری میں عام طور پر 6 سے 8 ہفتے کا وقت لگتا ہے۔"
+          }
+        ],
+        "technologies": [
+          { "name": "Pinecone", "icon": "pinecone" },
+          { "name": "OpenAI API", "icon": "openai" },
+          { "name": "LangChain", "icon": "langchain" },
+          { "name": "Next.js", "icon": "nextjs" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "Tailwind CSS", "icon": "tailwindcss" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "Python", "icon": "python" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "قاعدة المعرفة بالذكاء الاصطناعي",
+      "shortDescription": "ابنِ قواعد معرفة ذكية للمؤسسات تفهم الاستعلامات الدلالية. نجمع بين قواعد البيانات المتجهة والنماذج اللغوية لتوفير إجابات سريعة وموثقة للفرق.",
+      "fullDescription": "نادراً ما تُقرأ ملفات الويكي الكلاسيكية وكتيبات الموظفين الثابتة، مما يجعل المعرفة الداخلية الهامة غير قابلة للوصول. نحن نبني أنظمة قواعد معرفة ذكية مدعومة بالذكاء الاصطناعي تحول المستندات الثابتة إلى مورد بحث وأسئلة وأجوبة تفاعلي ونشط. باستخدام البحث المتجه الدلالي مع Pinecone وتمثيلات OpenAI، تفهم منصاتنا نية أسئلة المستخدمين وتبحث في السياق عبر أدلة متعددة. من خلال دمج LangChain و Next.js، نبني بوابات ويب نظيفة حيث يمكن للموظفين أو العملاء طرح الأسئلة بلغة طبيعية وتلقي إجابات فورية مع استشهادات بالمصادر. تتكامل حلولنا مع خرائط أمان للوصول، مما يضمن بقاء المجلدات الحساسة مخفية عن غير المصرح لهم.",
+      "features": [
+        "بحث متجه دلالي متقدم عبر المستندات",
+        "تصنيف ووسم تلقائي للمحتوى والمعلومات",
+        "أنظمة أسئلة وأجوبة ذكية بلغة طبيعية",
+        "استشهادات فورية بالمصادر والصفحات المرجعية",
+        "تحليل ودعم ملفات بتنسيقات متعددة ومتنوعة",
+        "تكامل الخصوصية وضوابط الوصول الدقيقة للبيانات",
+        "زواحف آلية لفحص الويب وأدلة التخزين السحابي",
+        "تقارير تحليلات البحث وتحديد فجوات المستندات"
+      ],
+      "benefits": [
+        "تقليل حجم تذاكر الدعم الداخلي بنسبة تصل إلى 60٪",
+        "تهيئة أعضاء الفريق الجدد بشكل أسرع عبر المعرفة الذاتية",
+        "ضمان استرجاع المعلومات المطلوبة في أقل من 300 مللي ثانية",
+        "تأسيس مصدر آمن وموحد للحقيقة والمعرفة بالمؤسسة",
+        "منع تسريب المستندات والأدلة الحساسة للشركة",
+        "اكتشاف المستندات المفقودة باستخدام تحليلات استعلامات البحث"
+      ],
+      "metaTitle": "برمجيات قواعد المعرفة بالذكاء الاصطناعي | PakSoft",
+      "metaDescription": "حول المستندات الثابتة إلى بوابة أسئلة وأجوبة ذكية. نبني قواعد معرفة دلالية مخصصة مع Pinecone و OpenAI لبحث آمن ومبسط للفرق.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تدقيق المعلومات",
+            "description": "نقوم بمسح ملفات شركتك ومستنداتها ومجلداتها لرسم خريطة لمواقع تخزين المعرفة الداخلية."
+          },
+          {
+            "step": 2,
+            "title": "الاستيراد والمزامنة",
+            "description": "نبني موصلات آلية تستورد الملفات من Google Drive و Notion وقواعد البيانات بشكل آمن."
+          },
+          {
+            "step": 3,
+            "title": "التمثيل والفهرسة المتجهة",
+            "description": "نحول جميع النصوص المستخرجة إلى تمثيلات متجهية ونفهرسها داخل Pinecone أو Milvus."
+          },
+          {
+            "step": 4,
+            "title": "إعداد محرك الأسئلة والأجوبة",
+            "description": "نعد مسار استرجاع للنماذج اللغوية باستخدام LangChain لجلب السياقات المناسبة وصياغة الإجابات الدقيقة."
+          },
+          {
+            "step": 5,
+            "title": "ضوابط الوصول والأمان",
+            "description": "نعد مزامنة OAuth و Active Directory ليتمكن المستخدمون فقط من البحث في الملفات المصرح لهم بقراءتها."
+          },
+          {
+            "step": 6,
+            "title": "إطلاق الواجهة",
+            "description": "نبني وننشر واجهة بحث Next.js متجاوبة ومزودة بلوحات تحليلات متقدمة لعمليات البحث والاستعلام."
+          }
+        ],
+        "faq": [
+          {
+            "question": "هل يمكن ربط هذا النظام بـ Notion و Google Drive؟",
+            "answer": "نعم، نحن نبني موصلات آمنة لواجهات برمجة التطبيقات تقوم بمزامنة المستندات من Notion و Google Drive و Microsoft OneDrive والمجلدات المحلية تلقائياً."
+          },
+          {
+            "question": "كيف يتعامل النظام مع أذونات وصلاحيات المستندات؟",
+            "answer": "نقوم بدمج استعلامات البحث مع موفر الهوية الخاص بك (مثل Okta أو Active Directory)، وتصفية نتائج البحث المتجه لضمان ظهور الملفات المصرح بها فقط."
+          },
+          {
+            "question": "ماذا يحدث عند تحديث مستند؟",
+            "answer": "نقوم بإعداد مستمعي خطافات الويب (Webhooks) وزواحف مجدولة. عندما يتم تعديل مستند، يستخرج النظام النص الجديد تلقائياً ويحدث تمثيله المتجه ويعيد الفهرسة."
+          },
+          {
+            "question": "هل يدعم النظام لغات متعددة؟",
+            "answer": "نعم، نماذج التمثيل المتجهي لدينا متعددة اللغات. يمكن للموظف طرح سؤال باللغة الألمانية واسترداد إجابات مستمدة من وثائق باللغة الإنجليزية أو التركية تلقائياً."
+          },
+          {
+            "question": "هل يمكنه فهرسة الفواتير الممسوحة ضوئياً أو ملفات PDF القديمة؟",
+            "answer": "نعم، ندمج تقنية OCR لاستخراج النصوص النظيفة من الصور الممسوحة ضوئياً، والملاحظات المكتوبة بخط اليد، وملفات PDF القديمة قبل التمثيل والفهرسة."
+          },
+          {
+            "question": "هل البحث آمن ومحمي من النماذج اللغوية العامة؟",
+            "answer": "بالتأكيد. يتم استضافة بياناتك في قواعد بيانات متجهة خاصة، ونوجه مكالمات النماذج اللغوية عبر واجهات آمنة تضمن عدم استخدام بياناتك لأي تدريب."
+          },
+          {
+            "question": "كيف نعرف ما يبحث عنه الموظفون؟",
+            "answer": "نبني لوحة تحكم لتحليلات البحث تعرض الاستعلامات الشائعة، ومعدلات الرضا عن النتائج، والاستعلامات الفاشلة التي لم تعثر على مستندات، لمساعدتك في سد فجوات الوثائق."
+          },
+          {
+            "question": "ما هو وقت الإعداد النموذجي لهذا النظام؟",
+            "answer": "يستغرق مشروع دمج قاعدة المعرفة المؤسسية المخصصة مع 3 إلى 4 موصلات رئيسية وأذونات محددة من 6 إلى 8 أسابيع من الاكتشاف إلى الإطلاق الفعلي."
+          }
+        ],
+        "technologies": [
+          { "name": "Pinecone", "icon": "pinecone" },
+          { "name": "OpenAI API", "icon": "openai" },
+          { "name": "LangChain", "icon": "langchain" },
+          { "name": "Next.js", "icon": "nextjs" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "Tailwind CSS", "icon": "tailwindcss" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "Python", "icon": "python" }
+        ]
+      }
+    }
+  },
+  "llm-finetuning": {
+    "en": {
+      "name": "LLM Fine-tuning",
+      "shortDescription": "Adapt open-source large language models to your specific domain. We customize LLMs using LoRA, QLoRA, and supervised fine-tuning for maximum accuracy and cost efficiency.",
+      "fullDescription": "Off-the-shelf public language models often fail on specialized corporate terminology or private domain data. We offer end-to-end LLM Fine-Tuning services that adapt open-source models like Llama 3 and Mistral to your specific business requirements. Using parameter-efficient methods like LoRA and QLoRA, we train models to understand your proprietary documents, match your brand's unique tone of voice, and output structured data formats (like JSON) reliably. We manage the entire dataset preparation pipeline, execute supervised fine-tuning (SFT) using Axolotl and PyTorch, and benchmark the results against target accuracy metrics. Our custom-tuned models are optimized for high-throughput deployment using vLLM, reducing API costs and keeping your data fully private.",
+      "features": [
+        "Domain-Specific Model Adaptation & Tuning",
+        "Supervised Fine-Tuning (SFT) & Alignment",
+        "LoRA & QLoRA Parameter-Efficient Training",
+        "RLHF and DPO Preference Alignment Integration",
+        "Proprietary Dataset Cleaning and Curation",
+        "Rigorous Model Evaluation and Benchmarking",
+        "High-Throughput vLLM Serving Infrastructure",
+        "On-Premise or Private Cloud Model Hosting"
+      ],
+      "benefits": [
+        "Achieve higher accuracy on specialized domain tasks",
+        "Eliminate dependency on third-party cloud LLM APIs",
+        "Ensure absolute data privacy by hosting models locally",
+        "Reduce API token usage costs by up to 90%",
+        "Enforce consistent brand voice and format outputs",
+        "Speed up model inference times using optimized hosting"
+      ],
+      "metaTitle": "LLM Fine-Tuning Services | Llama & Mistral | PakSoft",
+      "metaDescription": "Fine-tune open-source LLMs on your private company data. We use LoRA and QLoRA to build highly accurate, private, and cost-effective models.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Data Gathering & Audit",
+            "description": "We collect and clean your proprietary documents, conversational logs, and files to prepare training datasets."
+          },
+          {
+            "step": 2,
+            "title": "Model Selection",
+            "description": "We select the appropriate open-source base model (like Llama 3 or Mistral) based on performance, size, and cost requirements."
+          },
+          {
+            "step": 3,
+            "title": "SFT & Parameter Tuning",
+            "description": "We apply Supervised Fine-Tuning (SFT) using LoRA or QLoRA on high-performance GPUs, optimizing hyperparameters carefully."
+          },
+          {
+            "step": 4,
+            "title": "Alignment & Guardrails",
+            "description": "We align model responses using DPO (Direct Preference Optimization) to match your target tone of voice and enforce security guardrails."
+          },
+          {
+            "step": 5,
+            "title": "Evaluation & Testing",
+            "description": "We run automated benchmark tests against a validation dataset to measure accuracy, formatting compliance, and hallucinations."
+          },
+          {
+            "step": 6,
+            "title": "vLLM Production Serving",
+            "description": "We deploy the fine-tuned model inside a private cloud or on-premise hardware using vLLM for optimized inference speed."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is the difference between fine-tuning and RAG?",
+            "answer": "RAG retrieves relevant documents and feeds them to an LLM as context for answering. Fine-tuning actually updates the model's weights to teach it new styles, tones, formatting rules, or deep domain terminology."
+          },
+          {
+            "question": "What are LoRA and QLoRA?",
+            "answer": "LoRA (Low-Rank Adaptation) and QLoRA (Quantized LoRA) are parameter-efficient tuning methods. Instead of training all model parameters, they train a tiny subset of weights, reducing GPU memory requirements and training costs by up to 90%."
+          },
+          {
+            "question": "Where are the fine-tuned models hosted?",
+            "answer": "We deploy models on your private cloud (AWS, GCP, Azure) or local servers using serving engines like vLLM or TGI. You maintain 100% control over model files and inputs."
+          },
+          {
+            "question": "How much data is required for fine-tuning?",
+            "answer": "For basic instruction tuning or tone matching, a high-quality dataset of 1,000 to 5,000 conversational pairs is sufficient. Domain adaptation typically requires larger text datasets."
+          },
+          {
+            "question": "Which base models do you recommend?",
+            "answer": "We recommend top-performing open-source base models like Meta's Llama 3, Mistral 7B, or Mixtral 8x7B, depending on your performance goals and GPU budget."
+          },
+          {
+            "question": "Can we fine-tune a model to generate structured outputs?",
+            "answer": "Yes, we tune models specifically to output valid JSON, XML, or SQL queries, ensuring reliable integration into your databases and application APIs."
+          },
+          {
+            "question": "How do you evaluate fine-tuned models?",
+            "answer": "We create validation datasets and measure metrics like perplexity, task accuracy, and formatting compliance. We also use LLM-as-a-judge frameworks to evaluate tone consistency."
+          },
+          {
+            "question": "What hardware is required to run these models?",
+            "answer": "A quantized 7B model can run on a single consumer GPU (like NVIDIA RTX 4090 or A10G). Larger models require multi-GPU setups (like A100 or H100 instances) for high concurrency."
+          }
+        ],
+        "technologies": [
+          { "name": "Hugging Face", "icon": "huggingface" },
+          { "name": "PyTorch", "icon": "pytorch" },
+          { "name": "vLLM", "icon": "vllm" },
+          { "name": "Weights & Biases", "icon": "wandb" },
+          { "name": "Axolotl", "icon": "axolotl" },
+          { "name": "Llama 3", "icon": "meta" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "Python", "icon": "python" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "LLM Model Eğitimi (Fine-tuning)",
+      "shortDescription": "Açık kaynaklı büyük dil modellerini kendi alanınıza uyarlayın. Maksimum doğruluk ve maliyet verimliliği elde etmek amacıyla LoRA, QLoRA ve denetimli ince ayar (supervised fine-tuning) kullanarak LLM'leri özelleştiriyoruz.",
+      "fullDescription": "Hazır kamuya açık dil modelleri, genellikle özel kurumsal terminolojide veya özel alan verilerinde yetersiz kalır. Llama 3 ve Mistral gibi açık kaynaklı modelleri özel iş gereksinimlerinize uyarlayan uçtan uca LLM İnce Ayar (Fine-Tuning) hizmetleri sunuyoruz. LoRA ve QLoRA gibi parametre verimli yöntemler kullanarak modelleri, tescilli belgelerinizi anlamaları, markanızın benzersiz ses tonunu yakalamaları ve yapılandırılmış veri formatlarını (JSON gibi) güvenilir şekilde üretmeleri için eğitiyoruz. Veri kümesi hazırlama sürecini yönetiyor, Axolotl ve PyTorch kullanarak denetimli ince ayar (SFT) gerçekleştiriyor ve sonuçları hedef doğruluk metriklerine göre test ediyoruz. Özel olarak eğitilmiş modellerimiz, vLLM kullanılarak yüksek performanslı dağıtım için optimize edilir; bu da API maliyetlerini düşürür ve verilerinizi tamamen gizli tutar.",
+      "features": [
+        "Alana Özel Model Uyarlama ve İnce Ayar",
+        "Denetimli İnce Ayar (SFT) ve Hizalama",
+        "LoRA ve QLoRA Parametre Verimli Eğitim",
+        "RLHF ve DPO Tercih Hizalama Entegrasyonu",
+        "Özel Veri Kümesi Temizleme ve Düzenleme",
+        "Katı Model Değerlendirme ve Karşılaştırmalı Test",
+        "Yüksek Performanslı vLLM Sunum Altyapısı",
+        "Yerel Sunucuda veya Özel Bulutta Model Barındırma"
+      ],
+      "benefits": [
+        "Uzmanlık gerektiren alan görevlerinde daha yüksek doğruluk elde edin",
+        "Üçüncü taraf bulut LLM API'lerine olan bağımlılığı ortadan kaldırın",
+        "Modelleri yerel olarak barındırarak mutlak veri gizliliği sağlayın",
+        "API token kullanım maliyetlerini %90'a varan oranda azaltın",
+        "Tutarlı marka sesi ve çıktı formatları uygulayın",
+        "Optimize edilmiş barındırma kullanarak model yanıt sürelerini hızlandırın"
+      ],
+      "metaTitle": "LLM İnce Ayar Hizmetleri | Llama & Mistral | PakSoft",
+      "metaDescription": "Açık kaynaklı LLM'leri şirketinizin özel verileriyle eğitin. Son derece doğru, özel ve uygun maliyetli modeller oluşturmak için LoRA ve QLoRA kullanıyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Veri Toplama ve Denetim",
+            "description": "Eğitim veri kümelerini hazırlamak için şirketinize ait özel belgeleri, konuşma günlüklerini ve dosyaları topluyor ve temizliyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Model Seçimi",
+            "description": "Performans, boyut ve maliyet gereksinimlerine göre uygun açık kaynaklı temel modeli (Llama 3 veya Mistral gibi) seçiyoruz."
+          },
+          {
+            "step": 3,
+            "title": "SFT & Parametre İnce Ayarı",
+            "description": "Yüksek performanslı GPU'larda LoRA veya QLoRA kullanarak Denetimli İnce Ayar (SFT) uyguluyor, hiperparametreleri optimize ediyoruz."
+          },
+          {
+            "step": 4,
+            "title": "Hizalama & Güvenlik Sınırları",
+            "description": "Hedef ses tonunuzla eşleşmesi ve güvenlik kurallarını uygulaması için DPO (Direct Preference Optimization) kullanarak model yanıtlarını hizalıyoruz."
+          },
+          {
+            "step": 5,
+            "title": "Değerlendirme & Test",
+            "description": "Doğruluğu, format uyumluluğunu ve halüsinasyonları ölçmek için bir doğrulama veri kümesine karşı otomatik karşılaştırma testleri yapıyoruz."
+          },
+          {
+            "step": 6,
+            "title": "vLLM Üretim Sunumu",
+            "description": "Optimize edilmiş çıkarım hızı için vLLM kullanarak ince ayar yapılmış modeli özel bir bulut veya yerel donanımda devreye alıyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "İnce ayar (fine-tuning) ile RAG arasındaki fark nedir?",
+            "answer": "RAG, ilgili belgeleri alır ve bunları yanıt vermesi için bir LLM'ye bağlam olarak besler. İnce ayar ise modele yeni stiller, tonlar, biçimlendirme kuralları veya derin alan terminolojisi öğretmek için modelin ağırlıklarını doğrudan günceller."
+          },
+          {
+            "question": "LoRA ve QLoRA nedir?",
+            "answer": "LoRA (Low-Rank Adaptation) ve QLoRA (Quantized LoRA) parametre verimli eğitim yöntemleridir. Tüm model parametrelerini eğitmek yerine, ağırlıkların küçük bir alt kümesini eğiterek GPU bellek gereksinimlerini ve eğitim maliyetlerini %90'a kadar azaltırlar."
+          },
+          {
+            "question": "İnce ayar yapılmış modeller nerede barındırılıyor?",
+            "answer": "Modelleri vLLM veya TGI gibi sunum motorlarını kullanarak özel bulutunuzda (AWS, GCP, Azure) veya yerel sunucularınızda barındırıyoruz. Model dosyaları ve girdileri üzerinde %100 kontrol sahibi olursunuz."
+          },
+          {
+            "question": "İnce ayar için ne kadar veri gereklidir?",
+            "answer": "Temel talimat eğitimi veya ton eşleştirme için, 1.000 ila 5.000 arası yüksek kaliteli konuşma çiftinden oluşan bir veri kümesi yeterlidir. Alan uyarlaması genellikle daha büyük metin veri kümeleri gerektirir."
+          },
+          {
+            "question": "Hangi temel modelleri öneriyorsunuz?",
+            "answer": "Performans hedeflerinize ve GPU bütçenize bağlı olarak Meta'nın Llama 3'ü, Mistral 7B veya Mixtral 8x7B gibi en iyi performans gösteren açık kaynaklı temel modelleri öneriyoruz."
+          },
+          {
+            "question": "Bir modeli yapılandırılmış çıktılar üretmesi için eğitebilir miyiz?",
+            "answer": "Evet, modelleri veritabanlarınıza ve uygulama API'lerinize güvenilir entegrasyon sağlamak amacıyla geçerli JSON, XML veya SQL sorguları üretecek şekilde özel olarak eğitiyoruz."
+          },
+          {
+            "question": "İnce ayar yapılmış modelleri nasıl değerlendiriyorsunuz?",
+            "answer": "Doğrulama veri kümeleri oluşturuyor ve perplexity (karmaşıklık), görev doğruluğu ve biçimlendirme uyumluluğu gibi metrikleri ölçüyoruz. Ton tutarlılığını değerlendirmek için de LLM-as-a-judge (hakem olarak LLM) çerçevelerini kullanıyoruz."
+          },
+          {
+            "question": "Bu modelleri çalıştırmak için hangi donanım gereklidir?",
+            "answer": "Kuantize edilmiş 7B'lik bir model, tek bir tüketici GPU'sunda (NVIDIA RTX 4090 veya A10G gibi) çalışabilir. Daha büyük modeller, yüksek eşzamanlılık için çoklu GPU kurulumları (A100 veya H100 örnekleri gibi) gerektirir."
+          }
+        ],
+        "technologies": [
+          { "name": "Hugging Face", "icon": "huggingface" },
+          { "name": "PyTorch", "icon": "pytorch" },
+          { "name": "vLLM", "icon": "vllm" },
+          { "name": "Weights & Biases", "icon": "wandb" },
+          { "name": "Axolotl", "icon": "axolotl" },
+          { "name": "Llama 3", "icon": "meta" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "Python", "icon": "python" }
+        ]
+      }
+    },
+    "de": {
+      "name": "LLM Fine-Tuning",
+      "shortDescription": "Passen Sie Open-Source-Sprachmodelle an Ihre spezifische Domäne an. Wir optimieren LLMs mit LoRA, QLoRA und Supervised Fine-Tuning für maximale Effizienz.",
+      "fullDescription": "Standard-Sprachmodelle scheitern oft an spezieller Unternehmensterminologie oder privaten Domänendaten. Wir bieten End-to-End LLM Fine-Tuning Services, um Open-Source-Modelle wie Llama 3 und Mistral an Ihre spezifischen Geschäftsanforderungen anzupassen. Mithilfe von LoRA und QLoRA trainieren wir Modelle, proprietäre Dokumente zu verstehen, Ihre Markenstimme zu treffen und strukturierte Datenformate (wie JSON) verlässlich auszugeben. Wir verwalten die Datenaufbereitung, führen das Supervised Fine-Tuning (SFT) mit Axolotl und PyTorch durch und testen die Genauigkeit der Ergebnisse. Unsere feinabgestimmten Modelle werden für vLLM optimiert, was API-Kosten senkt und Ihre Daten schützt.",
+      "features": [
+        "Domänenspezifische Modellanpassung & Tuning",
+        "Supervised Fine-Tuning (SFT) & Alignment",
+        "LoRA- & QLoRA-Parameter-Tuning",
+        "RLHF- & DPO-Präferenzabgleich",
+        "Bereinigung und Kuration proprietärer Datensätze",
+        "Strikte Modellevaluierung und Benchmarking",
+        "Aufbau einer vLLM-Serving-Infrastruktur",
+        "Modellhosting lokal oder in einer privaten Cloud"
+      ],
+      "benefits": [
+        "Höhere Genauigkeit bei spezialisierten Fachaufgaben erzielen",
+        "Abhängigkeit von externen Cloud-LLM-APIs beseitigen",
+        "Volle Datenkontrolle durch lokales Hosten der Modelle sichern",
+        "API-Token-Kosten um bis zu 90% reduzieren",
+        "Konsistente Einhaltung der Markenstimme und Ausgabeformate",
+        "Schnellere Antwortzeiten durch optimiertes Modellhosting"
+      ],
+      "metaTitle": "LLM Fine-Tuning Services | Llama & Mistral | PakSoft",
+      "metaDescription": "Trainieren Sie Open-Source-LLMs auf Ihren privaten Unternehmensdaten. Wir nutzen LoRA und QLoRA für präzise, private und kosteneffiziente Modelle.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Datenprüfung & -sammlung",
+            "description": "Wir sammeln und bereinigen Ihre Dokumente, Chat-Protokolle und Dateien, um hochwertige Trainingsdatensätze zu erstellen."
+          },
+          {
+            "step": 2,
+            "title": "Modellauswahl",
+            "description": "Wir wählen das passende Open-Source-Basismodell (z. B. Llama 3 oder Mistral) basierend auf Ihren Performance- und Budgetvorgaben."
+          },
+          {
+            "step": 3,
+            "title": "SFT & Parameter-Tuning",
+            "description": "Wir führen das Supervised Fine-Tuning (SFT) mittels LoRA oder QLoRA auf GPU-Servern durch und optimieren die Hyperparameter."
+          },
+          {
+            "step": 4,
+            "title": "Alignment & Sicherheitsbarrieren",
+            "description": "Wir optimieren die Modellantworten mit DPO (Direct Preference Optimization) für Ihre Markenstimme und integrieren Guardrails."
+          },
+          {
+            "step": 5,
+            "title": "Evaluierung & Testing",
+            "description": "Wir testen das Modell mit einem Validierungsdatensatz, um Genauigkeit, Formatierung und eventuelle Halluzinationen zu messen."
+          },
+          {
+            "step": 6,
+            "title": "vLLM-Produktionsbereitstellung",
+            "description": "Wir stellen das trainierte Modell in einer privaten Cloud oder lokal mit vLLM bereit, um maximale Abfragegeschwindigkeiten zu sichern."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Was ist der Unterschied zwischen Fine-Tuning und RAG?",
+            "answer": "RAG sucht nach relevanten Dokumenten und übergibt sie dem Modell als Kontext für die Beantwortung. Fine-Tuning hingegen ändert die Gewichte des Modells selbst, um ihm neue Schreibstile, Formatierungsregeln oder Fachbegriffe beizubringen."
+          },
+          {
+            "question": "Was sind LoRA und QLoRA?",
+            "answer": "LoRA (Low-Rank Adaptation) und QLoRA (Quantized LoRA) sind effiziente Trainingsmethoden. Statt des gesamten Modells wird nur ein kleiner Teil der Gewichte trainiert, was den GPU-Speicherbedarf und die Trainingskosten um bis zu 90% senkt."
+          },
+          {
+            "question": "Wo werden die trainierten Modelle gehostet?",
+            "answer": "Wir stellen die Modelle in Ihrer privaten Cloud (AWS, GCP, Azure) oder auf Ihren eigenen Servern mit Serving-Engines wie vLLM oder TGI bereit. Sie behalten die volle Kontrolle über Ihre Modelldateien."
+          },
+          {
+            "question": "Wie viele Daten werden für das Fine-Tuning benötigt?",
+            "answer": "Für einfaches Instruction-Tuning oder das Anpassen der Tonalität reicht ein qualitativ hochwertiger Datensatz von 1.000 bis 5.000 Dialogpaaren. Domänenanpassungen erfordern meist größere Textmengen."
+          },
+          {
+            "question": "Welche Basismodelle empfehlen Sie?",
+            "answer": "Wir empfehlen leistungsstarke Open-Source-Basismodelle wie Metas Llama 3, Mistral 7B oder Mixtral 8x7B, je nach Anwendungsfall und GPU-Budget."
+          },
+          {
+            "question": "Können wir Modelle auf strukturierte Ausgaben trainieren?",
+            "answer": "Ja, wir trainieren Modelle speziell auf die Ausgabe von validem JSON, XML oder auf SQL-Abfragen, um eine nahtlose Integration in Ihre IT-Systeme zu ermöglichen."
+          },
+          {
+            "question": "Wie bewerten Sie die Qualität der trainierten Modelle?",
+            "answer": "Wir nutzen Validierungsdaten und messen Kennzahlen wie Perplexity, Genauigkeit der Zielaufgaben und Formatkonformität. Zur Qualitätskontrolle setzen wir auch LLM-as-a-Judge-Konzepte ein."
+          },
+          {
+            "question": "Welche Hardware wird für den Betrieb benötigt?",
+            "answer": "Ein quantisiertes 7B-Modell läuft auf einer einzelnen Grafikkarte (z. B. NVIDIA RTX 4090). Größere Modelle erfordern Multi-GPU-Systeme (z. B. A100- oder H100-Instanzen) für viele parallele Abfragen."
+          }
+        ],
+        "technologies": [
+          { "name": "Hugging Face", "icon": "huggingface" },
+          { "name": "PyTorch", "icon": "pytorch" },
+          { "name": "vLLM", "icon": "vllm" },
+          { "name": "Weights & Biases", "icon": "wandb" },
+          { "name": "Axolotl", "icon": "axolotl" },
+          { "name": "Llama 3", "icon": "meta" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "Python", "icon": "python" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "ایل ایل ایم فائن ٹیوننگ",
+      "shortDescription": "آپن سورس بڑے زبان کے ماڈلز کو اپنے مخصوص کاروباری شعبے کے مطابق ڈھالیں۔ ہم LoRA اور QLoRA کی مدد سے ماڈلز کو فائن ٹیون کرتے ہیں۔",
+      "fullDescription": "معیاری پبلک زبان کے ماڈلز اکثر کمپنی کی مخصوص اصطلاحات یا نجی کاروباری ڈیٹا کو سمجھنے میں ناکام رہتے ہیں۔ ہم مکمل LLM فائن ٹیوننگ سروسز فراہم کرتے ہیں جو Llama 3 اور Mistral جیسے ماڈلز کو آپ کے کاروبار کے مطابق ڈھال دیتی ہیں۔ LoRA اور QLoRA جیسی جدید تکنیکوں کا استعمال کرتے ہوئے، ہم ماڈلز کو تربیت دیتے ہیں کہ وہ آپ کی دستاویزات کو سمجھیں، آپ کے برانڈ کے لہجے میں بات کریں اور مطلوبہ فارمیٹس (جیسے JSON) میں جوابات فراہم کریں۔ ہم ڈیٹا سیٹ کی تیاری سے لے کر Axolotl اور PyTorch کے ذریعے ٹریننگ اور نتائج کی جانچ تک کا مکمل عمل سنبھالتے ہیں۔ فائن ٹیون کیے گئے ماڈلز کو vLLM کے ذریعے تیز رفتار پروسیسنگ کے لیے ہوسٹ کیا جاتا ہے جس سے اخراجات میں بڑی بچت ہوتی ہے۔",
+      "features": [
+        "کاروباری شعبے کے مطابق ماڈل کی فائن ٹیوننگ",
+        "سپروائزڈ فائن ٹیوننگ (SFT) اور الائنمنٹ",
+        "LoRA اور QLoRA ٹریننگ تکنیک کا استعمال",
+        "DPO کی مدد سے ماڈل کے لہجے کی درستگی",
+        "کاروباری ڈیٹا سیٹ کی صفائی اور تیاری",
+        "ماڈل کی کارکردگی اور درستگی کی جانچ",
+        "vLLM کے ذریعے تیز رفتار سرونگ سیٹ اپ",
+        "کمپنی کے نجی سرورز یا کلاؤڈ پر ہوسٹنگ"
+      ],
+      "benefits": [
+        "مخصوص کاروباری کاموں میں اعلیٰ درستگی حاصل کریں",
+        "بیرونی کلاؤڈ اے پی آئی کیز پر انحصار ختم کریں",
+        "ماڈلز کو مقامی طور پر ہوسٹ کر کے ڈیٹا مکمل نجی رکھیں",
+        "ٹوکن کے استعمال کے اخراجات میں 90 فیصد تک بچت کریں",
+        "برانڈ کے مخصوص لہجے اور آؤٹ پٹ فارمیٹ کو یقینی بنائیں",
+        "بہتر ہوسٹنگ کی مدد سے جواب دینے کی رفتار کو تیز کریں"
+      ],
+      "metaTitle": "ایل ایل ایم فائن ٹیوننگ سروسز | Llama اور Mistral | PakSoft",
+      "metaDescription": "کمپنی کے نجی ڈیٹا پر اوپن سورس LLMs کو فائن ٹیون کریں۔ ہم محفوظ اور سستے ماڈلز بنانے کے لیے LoRA اور QLoRA استعمال کرتے ہیں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "ڈیٹا اکٹھا کرنا اور صفائی",
+            "description": "ہم ٹریننگ ڈیٹا تیار کرنے کے لیے کمپنی کی فائلوں، چیٹ لاگز اور دستاویزات کو اکٹھا اور صاف کرتے ہیں۔"
+          },
+          {
+            "step": 2,
+            "title": "ماڈل کا انتخاب",
+            "description": "ہم کارکردگی اور بجٹ کی ضروریات کے مطابق موزوں ترین اوپن سورس ماڈل (جیسے Llama 3) کا انتخاب کرتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "فائن ٹیوننگ کی ٹریننگ",
+            "description": "ہم GPU سرورز پر LoRA یا QLoRA کا استعمال کرتے ہوئے ماڈل کو اوور فٹنگ سے بچاتے ہوئے تربیت دیتے ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "لہجے کی الائنمنٹ",
+            "description": "ہم DPO تکنیک کا استعمال کرتے ہوئے ماڈل کے لہجے کو آپ کے برانڈ کے مطابق بناتے ہیں اور سیکیورٹی قوانین لاگو کرتے ہیں۔"
+          },
+          {
+            "step": 5,
+            "title": "کارکردگی کی جانچ",
+            "description": "ہم ماڈل کی کارکردگی اور سچائی کو ماپنے کے لیے ٹیسٹ ڈیٹا کے خلاف خودکار جانچ کرتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "پروڈکشن ہوسٹنگ",
+            "description": "ہم فائن ٹیون شدہ ماڈل کو تیز ترین رفتار کے لیے vLLM کے ذریعے کمپنی کے اپنے سرورز پر ہوسٹ کرتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "فائن ٹیوننگ اور آر اے جی (RAG) میں کیا فرق ہے؟",
+            "answer": "آر اے جی (RAG) متعلقہ دستاویزات تلاش کر کے جواب دینے کے لیے ماڈل کو بطور سیاق و سباق فراہم کرتا ہے۔ جبکہ فائن ٹیوننگ ماڈل کی اندرونی معلومات کو اپ ڈیٹ کرتی ہے تاکہ وہ نیا لہجہ، اصطلاحات یا فارمیٹنگ سیکھ سکے۔"
+          },
+          {
+            "question": "LoRA اور QLoRA کیا ہیں؟",
+            "answer": "یہ دونوں ماڈل ٹریننگ کو سستا بنانے کی تکنیکیں ہیں۔ پورے ماڈل کو ٹرین کرنے کے بجائے، یہ صرف ایک چھوٹے حصے کو تربیت دیتی ہیں جس سے ٹریننگ کے اخراجات 90 فیصد تک کم ہو جاتے ہیں۔"
+          },
+          {
+            "question": "فائن ٹیون شدہ ماڈل کہاں ہوسٹ کیا جاتا ہے؟",
+            "answer": "ہم ماڈلز کو آپ کے نجی کلاؤڈ (AWS, GCP) یا لوکل سرورز پر vLLM کے ذریعے ہوسٹ کرتے ہیں۔ آپ کا اپنے ماڈل فائلوں پر 100 فیصد کنٹرول رہتا ہے۔"
+          },
+          {
+            "question": "فائن ٹیوننگ کے لیے کتنے ڈیٹا کی ضرورت ہوتی ہے؟",
+            "answer": "لہجہ تبدیل کرنے یا عام کاموں کے لیے 1000 سے 5000 سوال و جواب کے جوڑوں کا ڈیٹا کافی ہوتا ہے۔ بڑی تبدیلیوں کے لیے زیادہ ڈیٹا درکار ہوتا ہے۔"
+          },
+          {
+            "question": "آپ کن بنیادی ماڈلز کی سفارش کرتے ہیں؟",
+            "answer": "ہم آپ کے بجٹ اور کارکردگی کی ضروریات کے مطابق Llama 3، Mistral 7B، یا Mixtral 8x7B کی سفارش کرتے ہیں۔"
+          },
+          {
+            "question": "کیا ہم ماڈل کو مخصوص فارمیٹس (جیسے JSON) کے لیے فائن ٹیون کر سکتے ہیں؟",
+            "answer": "جی ہاں، ہم ماڈلز کو خاص طور پر درست JSON، XML یا SQL کیوریز تیار کرنے کے لیے فائن ٹیون کرتے ہیں تاکہ انہیں ڈیٹا بیس سے جوڑا جا سکے۔"
+          },
+          {
+            "question": "آپ فائن ٹیون شدہ ماڈل کی کارکردگی کو کیسے ناپتے ہیں؟",
+            "answer": "ہم توثیقی ڈیٹا کا استعمال کرتے ہوئے ماڈل کی درستگی اور فارمیٹ کی تعمیل کی پیمائش کرتے ہیں اور لہجے کی Tutarlılık جانچنے کے لیے اے آئی ٹولز استعمال کرتے ہیں۔"
+          },
+          {
+            "question": "ان ماڈلز کو چلانے کے لیے کس قسم کے ہارڈویئر کی ضرورت ہوتی ہے؟",
+            "answer": "چھوٹے 7B ماڈلز کو ایک سنگل گرافک کارڈ (جیسے NVIDIA RTX 4090) پر چلایا جا سکتا ہے، جبکہ بڑے ماڈلز کے لیے ملٹی GPU سیٹ اپ کی ضرورت ہوتی ہے۔"
+          }
+        ],
+        "technologies": [
+          { "name": "Hugging Face", "icon": "huggingface" },
+          { "name": "PyTorch", "icon": "pytorch" },
+          { "name": "vLLM", "icon": "vllm" },
+          { "name": "Weights & Biases", "icon": "wandb" },
+          { "name": "Axolotl", "icon": "axolotl" },
+          { "name": "Llama 3", "icon": "meta" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "Python", "icon": "python" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "الضبط الدقيق لنماذج اللغة LLM",
+      "shortDescription": "قم بملاءمة نماذج اللغة الكبيرة مفتوحة المصدر مع مجال عملك الخاص. نقوم بتخصيص النماذج اللغوية باستخدام LoRA و QLoRA والضبط الدقيق الخاضع للإشراف لتحقيق أقصى درجات الدقة والفعالية التكليفية.",
+      "fullDescription": "غالباً ما تفشل النماذج اللغوية العامة المتاحة تجارياً في فهم المصطلحات المؤسسية المتخصصة أو بيانات مجالات العمل الخاصة. نحن نقدم خدمات الضبط الدقيق (Fine-Tuning) الشاملة لنماذج اللغة الكبيرة التي توائم النماذج مفتوحة المصدر مثل Llama 3 و Mistral مع متطلبات عملك المحددة. باستخدام أساليب فعالة المعلمات مثل LoRA و QLoRA، ندرب النماذج على فهم مستنداتك الخاصة، ومطابقة نبرة صوت علامتك التجارية الفريدة، وإخراج تنسيقات بيانات منظمة (مثل JSON) بشكل موثوق. نحن ندير مسار إعداد البيانات بالكامل، وننفذ الضبط الدقيق الخاضع للإشراف (SFT) باستخدام Axolotl و PyTorch، ونقارن النتائج بمعايير الدقة المستهدفة. نماذجنا المخصصة مهيأة للتشغيل عالي الكفاءة باستخدام vLLM، مما يقلل تكاليف API ويحافظ على سرية بياناتك بالكامل.",
+      "features": [
+        "تكييف وضبط النماذج اللغوية لمجالات متخصصة",
+        "الضبط الدقيق الخاضع للإشراف (SFT) والمحاذاة",
+        "التدريب الفعال للمعلمات باستخدام LoRA و QLoRA",
+        "تكامل محاذاة التفضيلات باستخدام RLHF و DPO",
+        "تنظيف وإعداد مجموعات البيانات المملوكة للمؤسسة",
+        "تقييم صارم للنماذج وإجراء اختبارات مقارنة",
+        "بنية خدمة تشغيل النماذج عالية الكفاءة vLLM",
+        "استضافة النماذج محلياً أو في سحابة خاصة آمنة"
+      ],
+      "benefits": [
+        "تحقيق دقة أعلى في المهام المتخصصة لمجال عملك",
+        "القضاء على الاعتماد على واجهات برمجة تطبيقات LLM السحابية الخارجية",
+        "ضمان خصوصية مطلقة للبيانات باستضافة النماذج محلياً",
+        "تقليل تكاليف استخدام الرموز (tokens) بنسبة تصل إلى 90٪",
+        "فرص التزام صارم بنبرة العلامة وتنسيق المخرجات",
+        "تسريع أوقات استجابة النماذج باستخدام الاستضافة المحسنة"
+      ],
+      "metaTitle": "خدمات الضبط الدقيق للنماذج LLM | PakSoft",
+      "metaDescription": "اضبط نماذج LLM مفتوحة المصدر على بيانات شركتك الخاصة. نستخدم LoRA و QLoRA لبناء نماذج دقيقة للغاية، خاصة، ومنخفضة التكاليف.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "جمع وتدقيق البيانات",
+            "description": "نجمع وننظف مستنداتك الخاصة وسجلات المحادثات والملفات لإعداد مجموعات بيانات تدريب عالية الجودة."
+          },
+          {
+            "step": 2,
+            "title": "اختيار النموذج المناسب",
+            "description": "نختار النموذج الأساسي المفتوح المصدر المناسب (مثل Llama 3 أو Mistral) بناءً على متطلبات الأداء والحجم والتكلفة."
+          },
+          {
+            "step": 3,
+            "title": "الضبط الخاضع للإشراف وتعديل المعلمات",
+            "description": "نطبق الضبط الدقيق الخاضع للإشراف (SFT) باستخدام LoRA أو QLoRA على معالجات رسومية عالية الأداء مع تحسين المعلمات الفائقة."
+          },
+          {
+            "step": 4,
+            "title": "المحاذاة وحواجز الحماية",
+            "description": "نحاذي استجابات النموذج باستخدام تحسين التفضيل المباشر (DPO) لمطابقة نبرة الصوت المستهدفة وفرض حواجز الأمان."
+          },
+          {
+            "step": 5,
+            "title": "التقييم والاختبار",
+            "description": "نجري اختبارات مقارنة تلقائية مقابل مجموعة بيانات التحقق لقياس الدقة والامتثال للتنسيق ونسبة الهلوسة."
+          },
+          {
+            "step": 6,
+            "title": "تشغيل النماذج بالإنتاج عبر vLLM",
+            "description": "ننشر النموذج الذي تم ضبطه داخل سحابة خاصة أو على أجهزة محلية باستخدام vLLM لتحسين سرعة الاستدلال."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما الفرق بين الضبط الدقيق وتوليد الاسترجاع المعزز (RAG)؟",
+            "answer": "يسترجع RAG المستندات ذات الصلة ويغذيها بنموذج لغوي كـسياق للإجابة. بينما يقوم الضبط الدقيق بتحديث أوزان النموذج نفسه ليعلمه أساليب أو نغمات أو قواعد تنسيق جديدة أو مصطلحات عميقة للمجال."
+          },
+          {
+            "question": "ما هي تقنيات LoRA و QLoRA؟",
+            "answer": "تعد LoRA و QLoRA طرقاً لتدريب النماذج بكفاءة عالية في استخدام المعلمات. بدلاً من تدريب جميع معلمات النموذج، فإنهما تدربان مجموعة فرعية صغيرة جداً من الأوزان، مما يقلل من متطلبات ذاكرة GPU وتكاليف التدريب بنسبة تصل إلى 90٪."
+          },
+          {
+            "question": "أين يتم استضافة النماذج التي تم ضبطها؟",
+            "answer": "نقوم بنشر النماذج على سحابتك الخاصة (AWS, GCP, Azure) أو خوادمك المحلية باستخدام محركات تشغيل مثل vLLM أو TGI. تحتفظ بالسيطرة الكاملة بنسبة 100٪ على ملفات النموذج والمدخلات."
+          },
+          {
+            "question": "ما هي كمية البيانات المطلوبة للضبط الدقيق؟",
+            "answer": "لتدريب التعليمات البسيط أو مطابقة نبرة الصوت، تكفي مجموعة بيانات عالية الجودة تتراوح من 1,000 إلى 5,000 زوج محادثة. تتطلب ملاءمة المجال عادةً مجموعات بيانات نصية أكبر."
+          },
+          {
+            "question": "ما هي النماذج الأساسية التي توصون بها؟",
+            "answer": "نوصي بالنماذج الأساسية مفتوحة المصدر ذات الأداء الأعلى مثل Llama 3 من Meta، أو Mistral 7B، أو Mixtral 8x7B، اعتماداً على أهداف الأداء وميزانية GPU المتاحة."
+          },
+          {
+            "question": "هل يمكننا ضبط نموذج لإنتاج مخرجات منظمة؟",
+            "answer": "نعم، نحن نضبط النماذج خصيصاً لإخراج استعلامات JSON أو XML أو SQL صالحة، مما يضمن التكامل الموثوق به في قواعد البيانات وواجهات تطبيقاتك."
+          },
+          {
+            "question": "كيف تقوم بتقييم النماذج بعد ضبطها؟",
+            "answer": "ننشئ مجموعات بيانات التحقق ونقيس مقاييس مثل الحيرة (perplexity)، ودقة المهام، والالتزام بالتنسيق. نستخدم أيضاً أطر عمل تعتمد على تقييم نموذج لغوي كحكم (LLM-as-a-judge)."
+          },
+          {
+            "question": "ما هي الأجهزة المطلوبة لتشغيل هذه النماذج؟",
+            "answer": "يمكن لنموذج 7B مُكمّم العمل على وحدة معالجة رسومات فردية للمستهلك (مثل NVIDIA RTX 4090). تتطلب النماذج الأكبر إعدادات متعددة المعالجات (مثل A100 أو H100) للتشغيل المتزامن العالي."
+          }
+        ],
+        "technologies": [
+          { "name": "Hugging Face", "icon": "huggingface" },
+          { "name": "PyTorch", "icon": "pytorch" },
+          { "name": "vLLM", "icon": "vllm" },
+          { "name": "Weights & Biases", "icon": "wandb" },
+          { "name": "Axolotl", "icon": "axolotl" },
+          { "name": "Llama 3", "icon": "meta" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "Python", "icon": "python" }
+        ]
+      }
+    }
+  }
+}

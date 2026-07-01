@@ -1,0 +1,638 @@
+{
+  "slug": "document-qa",
+  "en": {
+    "name": "Document Q&A",
+    "shortDescription": "Query, extract, and analyze information from your business documents using conversational AI. We build custom RAG pipelines with source citations, context-awareness, and secure data handling.",
+    "fullDescription": "Looking up information across hundreds of PDFs, spreadsheets, and manuals is slow and error-prone. We build production-ready Document Q&A systems that allow your team to query documents in natural language. Powered by LlamaIndex, OpenAI, and vector databases like Pinecone and Weaviate, our solution parses text, tables, and images to return accurate answers with precise page citations. We implement advanced chunking strategies and hybrid search to prevent hallucinations and ensure context-awareness. Every Q&A pipeline includes user permission checks, audit logs, and secure local or cloud deployment. This reduces search times and speeds up decision making across departments like legal, finance, and support.",
+    "features": [
+      "Multi-Document Conversations",
+      "Precise Source Citations",
+      "Table & Image Extraction",
+      "Vector Database Querying",
+      "Hallucination Prevention Guardrails",
+      "Hybrid Search Architectures",
+      "User Permission Routing",
+      "Exportable Chat Summaries"
+    ],
+    "benefits": [
+      "Find critical business answers in seconds",
+      "Reduce research time for complex documents",
+      "Ensure high answer accuracy with source citations",
+      "Onboard employees faster with interactive knowledge",
+      "Protect sensitive files with role-based access",
+      "Scale document processing without adding staff"
+    ],
+    "metaTitle": "Document Q&A Solutions & Custom RAG Pipelines | PakSoft",
+    "metaDescription": "Query your business documents using AI. We build custom Document Q&A systems with LlamaIndex and Pinecone. Contact PakSoft for a consultation.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Document Ingestion",
+          "description": "We connect to your document repositories and ingest files in various formats like PDF, DOCX, and XLSX. Text is extracted, cleaned, and normalized for processing."
+        },
+        {
+          "step": 2,
+          "title": "Vector Embedding",
+          "description": "We split documents into optimized chunks and convert them into vector embeddings. These embeddings are stored in secure vector databases to enable fast semantic search."
+        },
+        {
+          "step": 3,
+          "title": "Pipeline Development",
+          "description": "We configure retriever and generator components using LlamaIndex and LangChain. We design prompts to enforce source citation and prevent the model from fabricating facts."
+        },
+        {
+          "step": 4,
+          "title": "Interface Integration",
+          "description": "We build a conversational UI or embed the Q&A interface into your existing software. We configure APIs and single sign-on authentication for seamless access."
+        },
+        {
+          "step": 5,
+          "title": "Security & Guardrails",
+          "description": "We implement access control lists to ensure users only query files they are authorized to see. Guardrails are added to filter out sensitive queries."
+        },
+        {
+          "step": 6,
+          "title": "Testing & Refinement",
+          "description": "We test the system against real-world query datasets to verify retrieval accuracy and answer quality. We refine chunking parameters based on user feedback."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How does the system ensure the answers are accurate?",
+          "answer": "We use Retrieval-Augmented Generation (RAG) which forces the AI to base its answers only on your uploaded documents. The system provides direct citations with page numbers for every claim. This allows your team to verify the sources and eliminates the hallucination issues typical of standard chatbots."
+        },
+        {
+          "question": "What file formats does the Document Q&A system support?",
+          "answer": "Our pipelines support a wide range of formats including PDF, Word (DOCX), Excel (XLSX), CSV, TXT, and HTML. We integrate OCR tools to process scanned documents and image files. This ensures you can search through scanned invoices, contracts, and legacy paper records easily."
+        },
+        {
+          "question": "Is our sensitive business data safe with the AI?",
+          "answer": "Yes, security is our top priority. We store your files in encrypted databases and use secure API connections to query the models. We can deploy open-source models locally on your private servers so no data ever leaves your company. This ensures full compliance with local regulations."
+        },
+        {
+          "question": "Can users query multiple documents at the same time?",
+          "answer": "Yes, our systems support multi-document querying and cross-referencing. The AI can compare terms across different contracts or summarize quarterly financial reports side by side. We implement semantic search tags so you can filter document sets by date, department, or client before asking questions."
+        },
+        {
+          "question": "How does the system handle tables and financial spreadsheets?",
+          "answer": "We implement specialized parser tools that extract tabular data structure without losing cell relationships. The parsed tables are converted into structured Markdown or JSON before being embedded. This allows the LLM to perform calculations and answer complex questions about financial sheets accurately."
+        },
+        {
+          "question": "What is the difference between Document Q&A and semantic search?",
+          "answer": "Semantic search finds the most relevant passages or files matching your query concept. Document Q&A goes a step further by reading those passages, synthesising an answer, and writing a natural response. This saves your team from having to open files and search for the right sentences manually."
+        },
+        {
+          "question": "Do we need to retrain the model when documents change?",
+          "answer": "No, you do not need to retrain the model. The RAG system reads your current documents dynamically by updating the vector database index. When you add, edit, or delete files, the changes are reflected in the search results within seconds. This keeps the system up to date."
+        },
+        {
+          "question": "How do you handle user permissions for sensitive documents?",
+          "answer": "We integrate the vector database metadata with your existing SSO and permission systems. Before retrieving any text, the search query filters out all documents the user does not have permission to view. This prevents employees from accessing sensitive files like payroll sheets or executive decisions."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "llamaindex",
+          "name": "LlamaIndex"
+        },
+        {
+          "icon": "langchain",
+          "name": "LangChain"
+        },
+        {
+          "icon": "openai",
+          "name": "OpenAI API"
+        },
+        {
+          "icon": "pinecone",
+          "name": "Pinecone"
+        },
+        {
+          "icon": "weaviate",
+          "name": "Weaviate"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Döküman Soru-Cevap",
+    "shortDescription": "Yapay zeka kullanarak iş dökümanlarınızdan bilgi sorgulayın, çıkarın ve analiz edin. Kaynak atıfları, bağlam duyarlılığı ve güvenli veri işleme özelliklerine sahip özel RAG hatları kuruyoruz.",
+    "fullDescription": "Yüzlerce PDF, elektronik tablo ve el kitabı arasında bilgi aramak yavaş ve hata eğilimlidir. Ekibinizin dökümanları doğal dilde sorgulamasını sağlayan üretime hazır Döküman Soru-Cevap sistemleri kuruyoruz. LlamaIndex, OpenAI ve Pinecone ile Weaviate gibi vektör veritabanlarıyla desteklenen çözümümüz; metinleri, tabloları ve görüntüleri analiz ederek kesin sayfa atıflarıyla doğru yanıtlar sunar. Halüsinasyonları önlemek ve bağlam duyarlılığını korumak için gelişmiş döküman parçalama (chunking) ve hibrit arama yöntemleri kullanıyoruz. Her Soru-Cevap hattı kullanıcı yetki kontrolleri, denetim günlükleri ve güvenli yerel veya bulut kurulumu içerir. Bu sayede hukuk, finans ve destek gibi departmanlarda karar alma süreçleri hızlanır.",
+    "features": [
+      "Çoklu Döküman Sohbetleri",
+      "Kesin Kaynak Atıfları",
+      "Tablo ve Görüntü Çıkarımı",
+      "Vektör Veritabanı Sorgulama",
+      "Halüsinasyon Önleyici Bariyerler",
+      "Hibrit Arama Mimarileri",
+      "Kullanıcı İzin Yönlendirmesi",
+      "Dışa Aktarılabilir Sohbet Özetleri"
+    ],
+    "benefits": [
+      "Kritik iş cevaplarını saniyeler içinde bulun",
+      "Karmaşık dökümanlar için araştırma süresini azaltın",
+      "Kaynak atıflarıyla yüksek yanıt doğruluğu sağlayın",
+      "Etkileşimli bilgi ile çalışanları daha hızlı eğitin",
+      "Rol tabanlı erişimle hassas dosyaları koruyun",
+      "Personel eklemeden döküman işlemeyi ölçeklendirin"
+    ],
+    "metaTitle": "Döküman Soru-Cevap ve Özel RAG Sistemleri | PakSoft",
+    "metaDescription": "İş dökümanlarınızı yapay zeka ile sorgulayın. LlamaIndex ve Pinecone ile kustom Döküman Soru-Cevap sistemleri kuruyoruz. Detaylar için PakSoft ile görüşün.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Döküman Alımı",
+          "description": "Belge depolarınıza bağlanarak PDF, DOCX ve XLSX gibi çeşitli biçimlerdeki dosyaları alırız. Metinler çıkarılır, temizlenir ve işlenmek üzere normalize edilir."
+        },
+        {
+          "step": 2,
+          "title": "Vektör Eşleme",
+          "description": "Dökümanları optimize edilmiş parçalara ayırır ve vektör yerleştirmelerine dönüştürürüz. Bu yerleştirmeler, hızlı anlamsal aramayı etkinleştirmek için güvenli vektör veritabanlarında saklanır."
+        },
+        {
+          "step": 3,
+          "title": "Hat Geliştirme",
+          "description": "LlamaIndex ve LangChain kullanarak erişim ve üretim bileşenlerini yapılandırırız. Modelin kaynak atıfları yapmasını sağlamak ve halüsinasyon üretmesini engellemek için promptlar tasarlarız."
+        },
+        {
+          "step": 4,
+          "title": "Arayüz Entegrasyonu",
+          "description": "Konuşmaya dayalı bir kullanıcı arayüzü oluşturur veya Soru-Cevap arayüzünü mevcut yazılımınıza entegre ederiz. Sorunsuz erişim için API ve tekli oturum açma yapılandırmalarını tamamlarız."
+        },
+        {
+          "step": 5,
+          "title": "Güvenlik ve Yetkilendirme",
+          "description": "Kullanıcıların yalnızca görmeye yetkili oldukları dosyaları sorgulayabilmelerini sağlamak için erişim kontrol listeleri uygularız. Hassas sorguları filtrelemek için koruma bariyerleri ekleriz."
+        },
+        {
+          "step": 6,
+          "title": "Test ve İyileştirme",
+          "description": "Arama doğruluğunu ve yanıt kalitesini doğrulamak için sistemi gerçek sorgu veri kümeleriyle test ederiz. Kullanıcı geri bildirimlerine göre parçalama parametrelerini iyileştiririz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Sistem yanıtların doğru olmasını nasıl sağlıyor?",
+          "answer": "Yapay zekanın yanıtlarını yalnızca yüklediğiniz belgelerle sınırlayan RAG teknolojisini kullanıyoruz. Sistem, her iddia için sayfa numaralarıyla birlikte doğrudan kaynak gösterir. Bu, ekibinizin kaynakları doğrulamasını sağlar ve standart sohbet robotlarında görülen yanlış bilgi sorunlarını ortadan kaldırır."
+        },
+        {
+          "question": "Döküman Soru-Cevap sistemi hangi dosya biçimlerini destekler?",
+          "answer": "Sistemlerimiz PDF, Word (DOCX), Excel (XLSX), CSV, TXT ve HTML gibi geniş bir dosya yelpazesini destekler. Taranmış belgeleri ve görsel dosyalarını işlemek için OCR araçlarını entegre ediyoruz. Bu sayede taranmış faturalar, sözleşmeler ve eski arşiv kayıtları arasında kolayca arama yapabilirsiniz."
+        },
+        {
+          "question": "Hassas kurumsal verilerimiz yapay zeka ile güvende mi?",
+          "answer": "Evet, veri güvenliği bizim en yüksek önceliğimizdir. Dosyalarınızı şifreli veritabanlarında saklıyor ve modelleri sorgulamak için güvenli API bağlantıları kullanıyoruz. Hiçbir verinin dışarı çıkmaması için açık kaynaklı modelleri şirket içi özel sunucularınıza kurabiliriz. Bu sayede yasal uyumluluk tam sağlanır."
+        },
+        {
+          "question": "Kullanıcılar aynı anda birden fazla dökümanı sorgulayabilir mi?",
+          "answer": "Evet, sistemlerimiz çoklu belge sorgulama ve çapraz referanslama özelliklerini destekler. Yapay zeka farklı sözleşmelerdeki maddeleri karşılaştırabilir veya çeyrek dönem finansal raporları yan yana özetleyebilir. Belgeleri tarih, departman veya istemciye göre filtrelemek için anlamsal etiketler kullanıyoruz."
+        },
+        {
+          "question": "Sistem tabloları ve finansal tabloları nasıl yönetiyor?",
+          "answer": "Hücre ilişkilerini bozmadan tablolardaki verileri çıkaran özel ayrıştırıcılar kullanıyoruz. Ayrıştırılan tablolar, vektör tabanına eklenmeden önce yapılandırılmış Markdown veya JSON biçimine dönüştürülür. Bu yöntem, yapay zekanın finansal raporlar hakkında hesaplamalar yapmasını ve karmaşık soruları doğru yanıtlamasını sağlar."
+        },
+        {
+          "question": "Döküman Soru-Cevap ile anlamsal arama arasındaki fark nedir?",
+          "answer": "Anlamsal arama, sorgunuzla en çok eşleşen paragrafları veya dosyaları bulur. Döküman Soru-Cevap ise bu paragrafları okur, bilgiyi sentezler ve doğal bir dille cevap hazırlar. Bu sayede ekibiniz dosyaları tek tek açıp aradıkları cümleleri bulma zahmetinden kurtulur."
+        },
+        {
+          "question": "Belgeler değiştiğinde modeli yeniden eğitmek gerekiyor mu?",
+          "answer": "Hayır, modeli yeniden eğitmenize gerek yoktur. RAG sistemi, vektör veritabanı dizinini güncelleyerek mevcut belgelerinizi dinamik olarak okur. Dosya eklediğinizde, düzenlediğinizde veya sildiğinizde, değişiklikler saniyeler içinde arama sonuçlarına yansır. Bu, sistemin her zaman güncel kalmasını sağlar."
+        },
+        {
+          "question": "Hassas belgeler için kullanıcı izinlerini nasıl yönetiyorsunuz?",
+          "answer": "Vektör veritabanı meta verilerini mevcut SSO ve yetkilendirme sistemlerinizle entegre ediyoruz. Metin getirilmeden önce arama sorgusu, kullanıcının görmeye izni olmayan belgeleri filtreler. Bu sayede çalışanların maaş tabloları veya yönetim kararları gibi hassas dosyalara erişmesi engellenir."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "llamaindex",
+          "name": "LlamaIndex"
+        },
+        {
+          "icon": "langchain",
+          "name": "LangChain"
+        },
+        {
+          "icon": "openai",
+          "name": "OpenAI API"
+        },
+        {
+          "icon": "pinecone",
+          "name": "Pinecone"
+        },
+        {
+          "icon": "weaviate",
+          "name": "Weaviate"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Dokumenten-Q&A",
+    "shortDescription": "Suchen, extrahieren und analysieren Sie Informationen aus Ihren Unternehmensdokumenten mit KI. Wir entwickeln maßgeschneiderte RAG-Pipelines mit präzisen Quellenangaben und Datensicherheit.",
+    "fullDescription": "Das Suchen nach Informationen in Hunderten von PDFs, Excel-Tabellen und Handbüchern ist zeitaufwändig und fehleranfällig. Wir entwickeln produktionsreife Dokumenten-Q&A-Systeme, mit denen Ihr Team Dokumente in natürlicher Sprache abfragen kann. Unterstützt von LlamaIndex, OpenAI und Vektordatenbanken wie Pinecone und Weaviate, analysiert unsere Lösung Texte, Tabellen und Bilder und liefert präzise Antworten mit Seitenangaben. Wir implementieren fortschrittliche Chunking-Strategien und Hybridsuche, um Halluzinationen zu vermeiden. Jede Q&A-Pipeline umfasst Benutzerrechteprüfungen, Audit-Logs und eine sichere Bereitstellung in der Cloud oder On-Premise. Dies beschleunigt die Entscheidungsfindung in Abteilungen wie Recht, Finanzen und Kundenservice.",
+    "features": [
+      "Multi-Dokumenten-Konversationen",
+      "Präzise Quellenangaben",
+      "Tabellen- & Bild-Extraktion",
+      "Vektordatenbank-Abfragen",
+      "Halluzinationsschutz-Guardrails",
+      "Hybride Sucharchitekturen",
+      "Benutzerrechte-Routing",
+      "Exportierbare Chat-Zusammenfassungen"
+    ],
+    "benefits": [
+      "Kritische Antworten in Sekundenschnelle finden",
+      "Recherchezeit für komplexe Dokumente reduzieren",
+      "Hohe Antwortgenauigkeit durch Quellenangaben sichern",
+      "Mitarbeiter schneller mit interaktivem Wissen einarbeiten",
+      "Sensible Dateien durch rollenbasierte Rechte schützen",
+      "Dokumentenverarbeitung ohne Personalaufbau skalieren"
+    ],
+    "metaTitle": "Dokumenten-Q&A & Custom RAG Systeme | PakSoft",
+    "metaDescription": "Fragen Sie Ihre Dokumente mit KI ab. Wir bauen Custom Q&A Systeme mit LlamaIndex und Pinecone. Kontaktieren Sie PakSoft für eine Beratung.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Dokumenten-Import",
+          "description": "Wir binden Ihre Dokumentenarchive an und importieren Dateien wie PDF, DOCX und XLSX. Der Text wird extrahiert, bereinigt und für die Verarbeitung normalisiert."
+        },
+        {
+          "step": 2,
+          "title": "Vektorisierung & Indexierung",
+          "description": "Wir teilen Dokumente in Chunks auf und konvertieren sie in Vektoreinbettungen. Diese Vektoren werden in einer sicheren Vektordatenbank gespeichert, um schnelle semantische Suchen zu ermöglichen."
+        },
+        {
+          "step": 3,
+          "title": "Pipeline-Entwicklung",
+          "description": "Wir konfigurieren Retriever- und Generator-Komponenten mit LlamaIndex und LangChain. Wir optimieren Prompts, um korrekte Quellenangaben zu erzwingen und Halluzinationen zu verhindern."
+        },
+        {
+          "step": 4,
+          "title": "Interface-Integration",
+          "description": "Wir erstellen ein Chat-Interface oder integrieren die Q&A-Funktion in Ihre Software. Wir konfigurieren APIs und Single Sign-On für einen sicheren Zugriff."
+        },
+        {
+          "step": 5,
+          "title": "Sicherheit & Berechtigungen",
+          "description": "Wir implementieren Zugriffskontrolllisten, damit Benutzer nur freigegebene Dokumente abfragen können. Sicherheitsfilter überprüfen alle Anfragen vor der Verarbeitung."
+        },
+        {
+          "step": 6,
+          "title": "Testen & Optimierung",
+          "description": "Wir testen das System mit realen Testfragen, um die Abfragegenauigkeit und Antwortqualität zu verifizieren. Chunking-Parameter werden basierend auf Feedback angepasst."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie stellt das System sicher, dass die Antworten korrekt sind?",
+          "answer": "Wir nutzen Retrieval-Augmented Generation (RAG), wodurch die KI ihre Antworten ausschließlich auf Ihre hochgeladenen Dokumente stützt. Jede Antwort enthält direkte Quellenangaben mit Seitenzahlen. Dadurch kann Ihr Team die Fakten überprüfen, und das Risiko von Halluzinationen wird minimiert."
+        },
+        {
+          "question": "Welche Dateiformate unterstützt das Dokumenten-Q&A-System?",
+          "answer": "Unsere Pipelines unterstützen Formate wie PDF, Word (DOCX), Excel (XLSX), CSV, TXT und HTML. Wir integrieren OCR-Tools, um gescannte Dokumente und Bilddateien zu verarbeiten. Dadurch können Sie auch gescannte Rechnungen, Verträge und historische Papierdokumente problemlos durchsuchen."
+        },
+        {
+          "question": "Sind unsere sensiblen Geschäftsdaten bei der KI sicher?",
+          "answer": "Ja, Datensicherheit steht bei uns an erster Stelle. Wir speichern Ihre Daten verschlüsselt und nutzen gesicherte API-Verbindungen. Wir können Open-Source-Modelle auch lokal auf Ihren eigenen Servern bereitstellen, sodass keine Daten Ihr Unternehmen verlassen. Dies sichert die Einhaltung aller Datenschutzrichtlinien."
+        },
+        {
+          "question": "Können Benutzer mehrere Dokumente gleichzeitig abfragen?",
+          "answer": "Ja, das System unterstützt Multi-Dokumenten-Abfragen. Die KI kann Klauseln aus verschiedenen Verträgen vergleichen oder Finanzberichte direkt gegenüberstellen. Durch Metadaten-Tags können Sie Dokumente vor der Abfrage nach Datum, Abteilung oder Kunde filtern, um präzisere Ergebnisse zu erhalten."
+        },
+        {
+          "question": "Wie verarbeitet das System Tabellen und Finanzdaten?",
+          "answer": "Wir verwenden spezialisierte Parser, die Tabellenstrukturen ohne Datenverlust extrahieren. Die Tabellen werden vor der Indexierung in Markdown oder JSON konvertiert. Dadurch kann das LLM mathematische Berechnungen durchführen und komplexe Fragen zu Finanzdokumenten absolut präzise beantworten."
+        },
+        {
+          "question": "Was ist der Unterschied zwischen Dokumenten-Q&A und semantischer Suche?",
+          "answer": "Die semantische Suche findet relevante Textstellen oder Dateien, die zu Ihrer Suchanfrage passen. Dokumenten-Q&A geht weiter: Es liest diese Textstellen, fasst die Informationen zusammen und formuliert eine präzise Antwort. Das spart Ihrem Team das manuelle Öffnen und Durchsuchen der Dateien."
+        },
+        {
+          "question": "Müssen wir das Modell neu trainieren, wenn sich Dokumente ändern?",
+          "answer": "Nein, ein erneutes Training des Modells ist nicht erforderlich. Das RAG-System liest Ihre aktuellen Dokumente dynamisch über die Aktualisierung des Vektordatenbank-Index. Wenn Sie Dateien hinzufügen, bearbeiten oder löschen, sind diese Änderungen sofort in den Antworten wirksam."
+        },
+        {
+          "question": "Wie verwalten Sie Benutzerberechtigungen für sensible Dokumente?",
+          "answer": "Wir integrieren die Vektordatenbank mit Ihren bestehenden SSO- und Berechtigungssystemen. Vor dem Datenabruf filtert die Suche alle Dokumente heraus, für die der Benutzer keine Leserechte besitzt. Dies verhindert den unbefugten Zugriff auf sensible Informationen wie Gehaltslisten oder Vorstandsbeschlüsse."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "llamaindex",
+          "name": "LlamaIndex"
+        },
+        {
+          "icon": "langchain",
+          "name": "LangChain"
+        },
+        {
+          "icon": "openai",
+          "name": "OpenAI API"
+        },
+        {
+          "icon": "pinecone",
+          "name": "Pinecone"
+        },
+        {
+          "icon": "weaviate",
+          "name": "Weaviate"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "ڈاکیومنٹ سوال و جواب",
+    "shortDescription": "مصنوعی ذہانت کا استعمال کرتے ہوئے اپنے کاروباری دستاویزی فائلز سے معلومات تلاش کریں۔ ہم مخصوص RAG پائپ لائنز تیار کرتے ہیں جو درست حوالہ جات فراہم کرتی ہیں۔",
+    "fullDescription": "سینکڑوں PDFs، ایکسل شیٹس اور مینوئلز میں معلومات تلاش کرنا وقت طلب اور مشکل کام ہے۔ ہم ڈاکیومنٹ سوال و جواب کے ایسے سسٹمز تیار کرتے ہیں جن کے ذریعے آپ کی ٹیم دستاویزی فائلوں کو عام زبان میں سوال کر کے پڑھ سکتی ہے۔ LlamaIndex، OpenAI اور Pinecone اور Weaviate جیسے ویکٹر ڈیٹا بیس سے لیس یہ نظام متن، ٹیبلز اور تصاویر کا تجزیہ کر کے درست صفحہ نمبر کے ساتھ جواب فراہم کرتا ہے۔ غلط بیانی کو روکنے کے لیے ہم جدید ترین الگورتھمز استعمال کرتے ہیں۔ ہر سسٹم میں صارف کی رسائی کے حقوق، آڈٹ لاگز اور محفوظ کلاؤڈ یا لوکل سرور ڈیپلومنٹ شامل ہے۔ یہ مختلف شعبوں جیسے قانونی اور فنانس میں فیصلہ سازی کو تیز بناتا ہے۔",
+    "features": [
+      "Custom D3.js Visualizations",
+      "Interactive Tableau Dashboards",
+      "Enterprise Power BI Reporting",
+      "Real-Time Streaming Visuals",
+      "Embedded Analytics Integration",
+      "Responsive Mobile Layouts",
+      "Cross-Platform Data Syncing",
+      "Role-Based Access Controls"
+    ],
+    "benefits": [
+      "ریئل ٹائم ڈیش بورڈز کے ذریعے تیزی سے کاروباری فیصلے کریں",
+      "مختلف پلیٹ فارمز کے ڈیٹا کو ایک اسکرین پر یکجا کریں",
+      "غیر تکنیکی ٹیموں کو خود کار تجزیہ کی سہولت فراہم کریں",
+      "ہفتہ وار دستی رپورٹ بنانے کے وقت کو بچائیں",
+      "آپریشنل رکاوٹوں اور رجحانات کی فوری نشاندہی کریں",
+      "مضبوط ڈیٹا گورننس کے ذریعے معلومات کی حفاظت یقینی بنائیں"
+    ],
+    "metaTitle": "ڈاکیومنٹ سوال و جواب اور کسٹم RAG حل | PakSoft",
+    "metaDescription": "اپنے کاروباری دستاویزات کو AI کے ذریعے تلاش کریں۔ ہم LlamaIndex اور Pinecone کے ساتھ کسٹم سوال و جواب کے سسٹمز بناتے ہیں۔ PakSoft سے رابطہ کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "دستاویزات کی وصولی",
+          "description": "ہم آپ کے دستاویزی ذخائر سے جڑتے ہیں اور PDF، DOCX اور XLSX فائلیں حاصل کرتے ہیں۔ اس متن کو صاف اور پروسیسنگ کے لیے تیار کیا جاتا ہے۔"
+        },
+        {
+          "step": 2,
+          "title": "ویکٹر انڈیکسنگ",
+          "description": "ہم دستاویزات کو چھوٹے حصوں میں تقسیم کر کے ویکٹرز میں تبدیل کرتے ہیں۔ ان ویکٹرز کو تیز رفتار تلاش کے لیے ویکٹر ڈیٹا بیس میں اسٹور کیا جاتا ہے۔"
+        },
+        {
+          "step": 3,
+          "title": "پائپ لائن ڈیولپمنٹ",
+          "description": "ہم LlamaIndex اور LangChain کے ذریعے سسٹم کو ترتیب دیتے ہیں۔ ہم ماڈل کو صرف آپ کے دستاویزات پر مبنی جوابات دینے کے لیے تیار کرتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "انٹرفیس انٹیگریشن",
+          "description": "ہم گفتگو کا انٹرفیس بناتے ہیں یا اسے آپ کے موجودہ سافٹ ویئر میں شامل کرتے ہیں۔ محفوظ رسائی کے لیے APIs اور لاگ ان سسٹم مربوط کیا جاتا ہے۔"
+        },
+        {
+          "step": 5,
+          "title": "سیکٹر سیکیورٹی کا نفاذ",
+          "description": "ہم یہ یقینی بناتے ہیں کہ صارفین صرف وہی فائلیں دیکھ سکیں جن کی انہیں اجازت ہے۔ حساس سوالات کو فلٹر کرنے کے لیے حفاظتی فلٹرز لگائے جاتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "ٹیسٹنگ اور فائنلنگ",
+          "description": "ہم حقیقی سوالات کے ذریعے سسٹم کی کارکردگی اور جوابات کی درستگی کی جانچ کرتے ہیں۔ صارف کی رائے کے مطابق سسٹم کو مزید بہتر بنایا جاتا ہے۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "سistem جوابات کی درستگی کو کیسے یقینی بناتا ہے؟",
+          "answer": "ہم RAG تکنیک استعمال کرتے ہیں جو AI کو صرف آپ کے دستاویزات سے جواب دینے پر مجبور کرتی ہے۔ سسٹم ہر جواب کے ساتھ صفحہ نمبر اور فائل کا نام فراہم کرتا ہے۔ اس سے آپ کی ٹیم معلومات کی تصدیق کر سکتی ہے اور غلط معلومات کا خطرہ بالکل ختم ہو جاتا ہے۔"
+        },
+        {
+          "question": "یہ سسٹم کن فائل فارمیٹس کو سپورٹ کرتا ہے؟",
+          "answer": "ہماری پائپ لائنز PDF، Word (DOCX)، Excel (XLSX)، CSV، TXT اور HTML فائل فارمیٹس کو سپورٹ کرتی ہیں۔ ہم اسکین شدہ فائلوں کو پروسیس کرنے کے لیے OCR ٹولز بھی شامل کرتے ہیں۔ اس سے آپ اسکین شدہ بلز، معاہدوں اور پرانے ریکارڈز میں آسانی سے تلاش کر سکتے ہیں۔"
+        },
+        {
+          "question": "کیا ہمارا حساس کاروباری ڈیٹا محفوظ رہے گا؟",
+          "answer": "جی ہاں، سیکیورٹی ہماری اولین ترجیح ہے۔ ہم آپ کے ڈیٹا کو انکرپٹڈ ڈیٹا بیس میں اسٹور کرتے ہیں اور محفوظ کنکشنز استعمال کرتے ہیں۔ ہم کلاؤڈ کے بجائے اوپن سورس ماڈل کو آپ کے اپنے لوکل سرور پر بھی ڈیپلائے کر سکتے ہیں تاکہ ڈیٹا باہر نہ جائے۔"
+        },
+        {
+          "question": "کیا صارفین ایک ہی وقت میں متعدد دستاویزات سے سوال پوچھ سکتے ہیں؟",
+          "answer": "جی ہاں، ہمارا سسٹم ایک وقت میں کئی فائلز سے معلومات حاصل کر سکتا ہے۔ یہ مختلف معاہدوں کا موازنہ کر سکتا ہے یا متعدد فنانشل رپورٹس کو یکجا کر سکتا ہے۔ ہم تاریخ یا ڈپارٹمنٹ کے مطابق فائلز کو فلٹر کرنے کی سہولت بھی دیتے ہیں۔"
+        },
+        {
+          "question": "سسٹم ایکسل شیٹس اور ٹیبلز کو کیسے سنبھالتا ہے؟",
+          "answer": "ہم خاص پارسر ٹولز استعمال کرتے ہیں جو ٹیبلز کی ساخت کو خراب کیے بغیر ڈیٹا نکالتے ہیں۔ ان ٹیبلز کو Markdown یا JSON میں تبدیل کیا جاتا ہے۔ اس سے ماڈل فنانشل شیٹس کے حساب کتاب اور ٹیبلز کے پیچیدہ سوالات کے بالکل درست جواب دیتا ہے۔"
+        },
+        {
+          "question": "ڈاکیومنٹ سوال و جواب اور عام سرچ میں کیا فرق ہے؟",
+          "answer": "عام سرچ صرف آپ کے مطلوبہ لفظ سے ملتے جلتے پیراگراف یا فائلیں دکھاتی ہے۔ ڈاکیومنٹ سوال و جواب ان پیراگراف کو پڑھ کر معلومات کا نچوڑ نکالتا ہے اور پورا جواب لکھتا ہے۔ اس سے آپ کی ٹیم کا فائلیں کھولنے اور پڑھنے کا وقت بچتا ہے۔"
+        },
+        {
+          "question": "کیا دستاویزات تبدیل ہونے پر ماڈل کو دوبارہ ٹرین کرنا پڑے گا؟",
+          "answer": "نہیں، ماڈل کو دوبارہ ٹرین کرنے کی ضرورت نہیں ہوتی۔ RAG سسٹم ویکٹر ڈیٹا بیس کو اپ ڈیٹ کر کے آپ کی نئی فائلوں کو خود بخود پڑھ لیتا ہے۔ جب آپ فائلیں شامل یا ڈیلیٹ کرتے ہیں تو سیکنڈز میں نئی معلومات جوابات میں شامل ہو جاتی ہیں۔"
+        },
+        {
+          "question": "آپ حساس دستاویزات کے لیے صارفین کے حقوق کا انتظام کیسے کرتے ہیں؟",
+          "answer": "ہم ویکٹر ڈیٹا بیس کو آپ کے موجودہ SSO اور یوزر پرمیشن سسٹم کے ساتھ لنک کرتے ہیں۔ معلومات نکالنے سے پہلے سرچ فلٹر ان فائلوں کو ہٹا دیتا ہے جنہیں دیکھنے کی صارف کو اجازت نہیں ہوتی۔ اس سے حساس معلومات مکمل محفوظ رہتی ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "llamaindex",
+          "name": "LlamaIndex"
+        },
+        {
+          "icon": "langchain",
+          "name": "LangChain"
+        },
+        {
+          "icon": "openai",
+          "name": "OpenAI API"
+        },
+        {
+          "icon": "pinecone",
+          "name": "Pinecone"
+        },
+        {
+          "icon": "weaviate",
+          "name": "Weaviate"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "الأسئلة والأجوبة حول المستندات",
+    "shortDescription": "استعلم عن المعلومات واستخرجها وحللها من مستندات أعمالك باستخدام الذكاء الاصطناعي. نحن نبني قنوات RAG مخصصة مع اقتباسات للمصادر وحماية كاملة للبيانات.",
+    "fullDescription": "البحث عن المعلومات عبر مئات ملفات PDF وجداول البيانات والأدلة عملية بطيئة ومعرضة للخطأ. نحن نبني أنظمة أسئلة وأجوبة للمستندات جاهزة للاستخدام تتيح لفريقك الاستعلام عن الملفات بلغة طبيعية. يحلل نظامنا المدعوم بـ LlamaIndex و OpenAI وقواعد البيانات المتجهة مثل Pinecone و Weaviate النصوص والجداول والصور لتقديم إجابات دقيقة مع تحديد أرقام الصفحات بدقة. نطبق استراتيجيات تقسيم متقدمة لمنع الهلوسة وضمان دقة المعلومات. تتضمن كل قناة صلاحيات وصول المستخدمين، وسجلات التدقيق، والنشر الآمن محلياً أو سحابياً لتسريع اتخاذ القرارات في الأقسام القانونية والمالية والدعم.",
+    "features": [
+      "Multi-Document Conversations",
+      "Precise Source Citations",
+      "Table & Image Extraction",
+      "Vector Database Querying",
+      "Hallucination Prevention Guardrails",
+      "Hybrid Search Architectures",
+      "User Permission Routing",
+      "Exportable Chat Summaries"
+    ],
+    "benefits": [
+      "العثور على إجابات الأعمال الهامة في ثوانٍ معدودة",
+      "تقليل وقت البحث والقراءة للمستندات المعقدة",
+      "ضمان دقة الإجابات من خلال توفير مصادر الاقتباس",
+      "تدريب الموظفين الجدد بسرعة باستخدام المعرفة التفاعلية",
+      "حماية الملفات الحساسة بصلاحيات وصول قائمة على الأدوار",
+      "توسيع نطاق معالجة المستندات دون الحاجة لزيادة الموظفين"
+    ],
+    "metaTitle": "أنظمة الأسئلة والأجوبة للمستندات وحلول RAG | PakSoft",
+    "metaDescription": "استعلم عن مستندات أعمالك باستخدام الذكاء الاصطناعي. نحن نبني أنظمة مخصصة باستخدام LlamaIndex و Pinecone. اتصل بـ PakSoft للحصول على استشارة.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "جمع المستندات",
+          "description": "نتصل بمستودعات المستندات الخاصة بك ونستورد الملفات بصيغ مختلفة مثل PDF و DOCX و XLSX. يتم استخراج النصوص وتنظيفها وإعدادها للمعالجة الفنية."
+        },
+        {
+          "step": 2,
+          "title": "الفهرسة المتجهة",
+          "description": "نقسم المستندات إلى أجزاء محسنة ونحولها إلى تمثيلات متجهة. يتم تخزين هذه المتجهات في قواعد بيانات متجهة آمنة لتمكين البحث الدلالي السريع."
+        },
+        {
+          "step": 3,
+          "title": "تطوير خط المعالجة",
+          "description": "نعد مكونات الاسترجاع والتوليد باستخدام LlamaIndex و LangChain. نصمم التعليمات لإجبار النموذج على الاستشهاد بالمصادر ومنع الهلوسة في الإجابات."
+        },
+        {
+          "step": 4,
+          "title": "تكامل الواجهة",
+          "description": "نبني واجهة محادثة تفاعلية أو ندمج نظام الأسئلة والأجوبة في برامجك الحالية. نعد واجهات برمجة التطبيقات وتسجيل الدخول الموحد للوصول السلس."
+        },
+        {
+          "step": 5,
+          "title": "الأمن والصلاحيات",
+          "description": "نطبق قوائم التحكم في الوصول لضمان استعلام المستخدمين فقط عن الملفات المصرح لهم برؤيتها. نضيف حواجز حماية لتصفية الاستفسارات الحساسة."
+        },
+        {
+          "step": 6,
+          "title": "الاختبار والتحسين",
+          "description": "نختبر النظام مقابل مجموعات استعلامات حقيقية للتحقق من دقة الاسترجاع وجودة الإجابات. نعمل على تحسين معلمات التقسيم بناءً على آراء المستخدمين."
+        }
+      ],
+      "faq": [
+        {
+          "question": "كيف يضمن النظام دقة الإجابات المقدمة؟",
+          "answer": "ونحن نستخدم تقنية توليد الاسترجاع المعزز RAG التي تجبر الذكاء الاصطناعي على استخلاص إجاباته فقط من مستنداتك المرفوعة. يوفر النظام اقتباسات مباشرة مع أرقام الصفحات لكل معلومة. يتيح ذلك لفريقك التحقق من المصادر ويلغي مشاكل الهلوسة تماماً."
+        },
+        {
+          "question": "ما هي تنسيقات الملفات التي يدعمها هذا النظام؟",
+          "answer": "تدعم قنواتنا مجموعة واسعة من التنسيقات بما في ذلك PDF و Word (DOCX) و Excel (XLSX) و CSV و TXT و HTML. ندمج أدوات التعرف الضوئي على الحروف OCR لمعالجة الملفات الممسوحة ضوئياً. يتيح لك ذلك البحث في الفواتير والعقود القديمة بسهولة."
+        },
+        {
+          "question": "هل بيانات أعمالنا الحساسة آمنة مع الذكاء الاصطناعي؟",
+          "answer": "نعم، أمن البيانات هو أولويتنا القصوى. نقوم بتخزين ملفاتك في قواعد بيانات مشفرة ونستخدم اتصالات آمنة بالكامل. يمكننا نشر نماذج مفتوحة المصدر محلياً على خوادمك الخاصة لضمان عدم خروج أي بيانات من شركتك والتوافق مع القوانين المحلية."
+        },
+        {
+          "question": "هل يمكن للمستخدمين الاستعلام عن مستندات متعددة معاً؟",
+          "answer": "نعم، تدعم أنظمتنا الاستعلام المقارن بين مستندات متعددة في نفس الوقت. يمكن للذكاء الاصطناعي مقارنة الشروط بين عقود مختلفة أو تلخيص التقارير المالية لعدة أرباع جنباً إلى جنب. نستخدم وسوم البحث الدلالي لتصفية المستندات حسب القسم أو التاريخ."
+        },
+        {
+          "question": "كيف يتعامل النظام مع الجداول والبيانات المالية؟",
+          "answer": "نستخدم أدوات تحليل متخصصة تستخرج البيانات الجدولية مع الحفاظ على علاقات الخلايا بدقة. يتم تحويل الجداول إلى Markdown أو JSON قبل الفهرسة. يتيح ذلك للنموذج إجراء العمليات الحسابية والإجابة بدقة على الأسئلة المالية المعقدة."
+        },
+        {
+          "question": "ما الفرق بين الأسئلة والأجوبة حول المستندات والبحث التقليدي؟",
+          "answer": "البحث التقليدي يجد الفقرات أو الملفات التي تطابق الكلمات المفتاحية. بينما يقرأ نظام الأسئلة والأجوبة تلك الفقرات ويحلل المعلومات ويصيغ إجابة طبيعية متكاملة. يغني ذلك فريقك عن فتح الملفات والبحث داخل الصفحات يدوياً."
+        },
+        {
+          "question": "هل نحتاج إلى إعادة تدريب النموذج عند تغير المستندات؟",
+          "answer": "لا، لا تحتاج إلى إعادة تدريب النموذج. يقرأ نظام RAG مستنداتك الحالية ديناميكياً عن طريق تحديث فهرس قاعدة البيانات المتجهة. عند إضافة ملفات أو تعديلها أو حذفها، تظهر التحديثات في نتائج البحث خلال ثوانٍ معدودة."
+        },
+        {
+          "question": "كيف تديرون صلاحيات المستخدمين للمستندات الحساسة؟",
+          "answer": "نربط قاعدة البيانات المتجهة بنظام SSO وإدارة الصلاحيات الحالي لديك. قبل استرجاع أي نص، يقوم الفلتر باستبعاد المستندات التي لا يملك المستخدم صلاحية عرضها. يمنع ذلك الموظفين غير المصرح لهم من الوصول لبيانات الرواتب أو القرارات الإدارية."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "llamaindex",
+          "name": "LlamaIndex"
+        },
+        {
+          "icon": "langchain",
+          "name": "LangChain"
+        },
+        {
+          "icon": "openai",
+          "name": "OpenAI API"
+        },
+        {
+          "icon": "pinecone",
+          "name": "Pinecone"
+        },
+        {
+          "icon": "weaviate",
+          "name": "Weaviate"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "slug": "penetration-testing",
+  "en": {
+    "name": "Penetration Testing",
+    "shortDescription": "Ethical hacking that finds the vulnerabilities real attackers would exploit, before they do. We test web apps, APIs, networks, and cloud, then hand you proof and a clear remediation plan.",
+    "fullDescription": "A vulnerability scanner tells you what might be wrong; a penetration test proves what an attacker can actually do. Our certified ethical hackers (OSCP, CEH) simulate real-world attacks against your web applications, APIs, internal networks, cloud infrastructure, and even your staff through social engineering. We chain weaknesses the way adversaries do, demonstrating genuine business impact rather than theoretical risk. Every engagement follows a defined scope and rules of engagement, so production stays safe. You receive a prioritised report with reproducible proof-of-concept exploits, CVSS severity ratings, and concrete fixes your developers can act on, plus a free retest to confirm the holes are closed.",
+    "features": [
+      "Web application & API penetration testing",
+      "Internal and external network testing",
+      "Cloud configuration review (AWS, Azure, GCP)",
+      "Social engineering & phishing simulations",
+      "OWASP Top 10 and business-logic testing",
+      "Authenticated and unauthenticated scenarios",
+      "Reproducible proof-of-concept exploits",
+      "Free remediation retest after fixes"
+    ],
+    "benefits": [
+      "See your real exposure, not just theoretical risk",
+      "Prioritise fixes by genuine business impact",
+      "Satisfy ISO 27001, PCI DSS, and SOC 2 requirements",
+      "Protect customer data and brand reputation",
+      "Give developers clear, actionable remediation steps",
+      "Validate that fixes actually work with a retest"
+    ],
+    "metaTitle": "Penetration Testing Services | PakSoft",
+    "metaDescription": "Certified ethical hackers find and prove the vulnerabilities attackers exploit. Web, API, network & cloud pentests with clear fixes. Book your security test today.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Scoping & Rules of Engagement", "description": "We agree on targets, testing windows, and boundaries together. This protects production systems and ensures the engagement maps to your real risk concerns." },
+        { "step": 2, "title": "Reconnaissance & Mapping", "description": "We gather information and map your attack surface the way an adversary would. This reveals exposed services, endpoints, and entry points before active testing begins." },
+        { "step": 3, "title": "Vulnerability Discovery", "description": "We combine automated tooling with deep manual testing to find flaws scanners miss. Manual analysis is where business-logic and chained vulnerabilities surface." },
+        { "step": 4, "title": "Exploitation & Impact", "description": "We safely exploit confirmed weaknesses to demonstrate real impact. This separates genuine threats from noise and shows exactly what an attacker could access." },
+        { "step": 5, "title": "Reporting & Debrief", "description": "We deliver a prioritised report with proof-of-concept steps and clear fixes. A live debrief walks your team through findings and answers questions." },
+        { "step": 6, "title": "Remediation Retest", "description": "After your team applies fixes, we retest the findings at no extra cost. You get written confirmation that each vulnerability is genuinely closed." }
+      ],
+      "faq": [
+        { "question": "What is the difference between a vulnerability scan and a penetration test?", "answer": "A scan is automated and lists potential issues, often with false positives. A penetration test adds expert manual analysis that exploits and chains weaknesses to prove real, demonstrable impact." },
+        { "question": "Will the testing disrupt our production systems?", "answer": "We agree on rules of engagement and testing windows beforehand to avoid disruption. Destructive tests are excluded or run against staging, and we stay in contact throughout the engagement." },
+        { "question": "How often should we run a penetration test?", "answer": "At least annually, and after any major release, infrastructure change, or migration. Many compliance frameworks such as PCI DSS require testing at defined intervals." },
+        { "question": "What certifications do your testers hold?", "answer": "Our team holds recognised credentials including OSCP and CEH. These verify hands-on offensive security skills rather than just theoretical knowledge." },
+        { "question": "Do you offer black-box, grey-box, or white-box testing?", "answer": "We offer all three. Black-box mimics an external attacker with no knowledge, white-box uses full access and source code, and grey-box sits in between for efficient coverage." },
+        { "question": "What do we receive at the end of the engagement?", "answer": "You receive a detailed report with an executive summary, reproducible proof-of-concept exploits, CVSS severity ratings, and prioritised remediation guidance your developers can follow." },
+        { "question": "Can a penetration test help with compliance?", "answer": "Yes. Our reports support ISO 27001, PCI DSS, SOC 2, and GDPR requirements, providing the independent evidence auditors and customers expect." },
+        { "question": "Is the retest really included?", "answer": "Yes. Once you have applied fixes, we retest the reported findings at no extra cost and issue written confirmation that they are resolved." }
+      ],
+      "technologies": [
+        { "name": "Burp Suite", "icon": "burp-suite" },
+        { "name": "Metasploit", "icon": "metasploit" },
+        { "name": "Nmap", "icon": "nmap" },
+        { "name": "OWASP ZAP", "icon": "owasp-zap" },
+        { "name": "Wireshark", "icon": "wireshark" },
+        { "name": "Kali Linux", "icon": "kali-linux" },
+        { "name": "Nessus", "icon": "nessus" },
+        { "name": "Nikto", "icon": "nikto" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Sızma Testi (Penetrasyon Testi)",
+    "shortDescription": "Gerçek saldırganların istismar edeceği açıkları, onlar bulmadan önce ortaya çıkaran etik hackleme. Web uygulamaları, API’ler, ağlar ve bulutu test eder, size kanıt ve net bir düzeltme planı sunarız.",
+    "fullDescription": "Bir güvenlik açığı tarayıcısı neyin yanlış olabileceğini söyler; sızma testi ise bir saldırganın gerçekte ne yapabileceğini kanıtlar. Sertifikalı etik hackerlarımız (OSCP, CEH) web uygulamalarınıza, API’lerinize, iç ağlarınıza, bulut altyapınıza ve hatta sosyal mühendislik yoluyla personelinize karşı gerçek dünya saldırılarını simüle eder. Zayıflıkları tıpkı saldırganlar gibi zincirleyerek teorik risk yerine gerçek iş etkisini gösteririz. Her çalışma tanımlı bir kapsam ve kurallar çerçevesinde yürütülür, böylece üretim ortamı güvende kalır. Yeniden üretilebilir kavram-kanıtı istismarları, CVSS önem derecelendirmeleri ve geliştiricilerinizin uygulayabileceği somut çözümler içeren önceliklendirilmiş bir rapor ile açıkların kapandığını doğrulayan ücretsiz bir yeniden test alırsınız.",
+    "features": [
+      "Web uygulaması ve API sızma testi",
+      "İç ve dış ağ testi",
+      "Bulut yapılandırma incelemesi (AWS, Azure, GCP)",
+      "Sosyal mühendislik ve oltalama simülasyonları",
+      "OWASP Top 10 ve iş mantığı testi",
+      "Kimlik doğrulamalı ve doğrulamasız senaryolar",
+      "Yeniden üretilebilir kavram-kanıtı istismarları",
+      "Düzeltmelerden sonra ücretsiz yeniden test"
+    ],
+    "benefits": [
+      "Teorik değil gerçek maruziyetinizi görün",
+      "Düzeltmeleri gerçek iş etkisine göre önceliklendirin",
+      "ISO 27001, PCI DSS ve SOC 2 gereksinimlerini karşılayın",
+      "Müşteri verilerini ve marka itibarını koruyun",
+      "Geliştiricilere net, uygulanabilir adımlar verin",
+      "Düzeltmelerin işe yaradığını yeniden testle doğrulayın"
+    ],
+    "metaTitle": "Sızma Testi Hizmetleri | PakSoft",
+    "metaDescription": "Sertifikalı etik hackerlar, saldırganların istismar ettiği açıkları bulur ve kanıtlar. Web, API, ağ ve bulut sızma testleri ve net çözümler. Hemen test planlayın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Kapsam ve Kuralların Belirlenmesi", "description": "Hedefleri, test zaman aralıklarını ve sınırları birlikte kararlaştırırız. Bu, üretim sistemlerini korur ve çalışmanın gerçek risk endişelerinizle örtüşmesini sağlar." },
+        { "step": 2, "title": "Keşif ve Haritalama", "description": "Bir saldırganın yapacağı gibi bilgi toplar ve saldırı yüzeyinizi haritalarız. Bu, aktif test başlamadan önce açık servisleri ve giriş noktalarını ortaya çıkarır." },
+        { "step": 3, "title": "Açık Tespiti", "description": "Tarayıcıların kaçırdığı kusurları bulmak için otomatik araçları derin manuel testle birleştiririz. İş mantığı ve zincirlenmiş açıklar manuel analizde ortaya çıkar." },
+        { "step": 4, "title": "İstismar ve Etki", "description": "Doğrulanan zayıflıkları gerçek etkiyi göstermek için güvenli biçimde istismar ederiz. Bu, gerçek tehditleri gürültüden ayırır." },
+        { "step": 5, "title": "Raporlama ve Bilgilendirme", "description": "Kavram-kanıtı adımları ve net çözümler içeren önceliklendirilmiş bir rapor sunarız. Canlı bir bilgilendirme ekibinizi bulgular boyunca yönlendirir." },
+        { "step": 6, "title": "Düzeltme Sonrası Yeniden Test", "description": "Ekibiniz düzeltmeleri uyguladıktan sonra bulguları ek ücret olmadan yeniden test ederiz. Her açığın gerçekten kapandığına dair yazılı onay alırsınız." }
+      ],
+      "faq": [
+        { "question": "Açık taraması ile sızma testi arasındaki fark nedir?", "answer": "Tarama otomatiktir ve genellikle yanlış pozitiflerle olası sorunları listeler. Sızma testi ise zayıflıkları istismar edip zincirleyerek gerçek, gösterilebilir etkiyi kanıtlayan uzman manuel analiz ekler." },
+        { "question": "Test üretim sistemlerimizi aksatır mı?", "answer": "Aksamayı önlemek için kuralları ve test zaman aralıklarını önceden belirleriz. Yıkıcı testler hariç tutulur veya hazırlık ortamında çalıştırılır ve çalışma boyunca iletişimde kalırız." },
+        { "question": "Ne sıklıkla sızma testi yaptırmalıyız?", "answer": "En az yılda bir kez ve her büyük sürüm, altyapı değişikliği veya geçişten sonra. PCI DSS gibi birçok uyumluluk çerçevesi belirli aralıklarla test gerektirir." },
+        { "question": "Test uzmanlarınız hangi sertifikalara sahip?", "answer": "Ekibimiz OSCP ve CEH dahil tanınmış sertifikalara sahiptir. Bunlar yalnızca teorik bilgiyi değil, uygulamalı saldırı güvenliği becerilerini doğrular." },
+        { "question": "Black-box, grey-box veya white-box test sunuyor musunuz?", "answer": "Üçünü de sunuyoruz. Black-box bilgisi olmayan dış saldırganı taklit eder, white-box tam erişim ve kaynak kodu kullanır, grey-box ise verimli kapsam için ikisinin arasındadır." },
+        { "question": "Çalışmanın sonunda ne alırız?", "answer": "Yönetici özeti, yeniden üretilebilir kavram-kanıtı istismarları, CVSS önem derecelendirmeleri ve geliştiricilerin izleyebileceği önceliklendirilmiş düzeltme rehberi içeren ayrıntılı bir rapor alırsınız." },
+        { "question": "Sızma testi uyumluluğa yardımcı olur mu?", "answer": "Evet. Raporlarımız ISO 27001, PCI DSS, SOC 2 ve GDPR gereksinimlerini destekler ve denetçilerin ile müşterilerin beklediği bağımsız kanıtı sağlar." },
+        { "question": "Yeniden test gerçekten dahil mi?", "answer": "Evet. Düzeltmeleri uyguladıktan sonra raporlanan bulguları ek ücret olmadan yeniden test eder ve çözüldüklerine dair yazılı onay veririz." }
+      ],
+      "technologies": [
+        { "name": "Burp Suite", "icon": "burp-suite" },
+        { "name": "Metasploit", "icon": "metasploit" },
+        { "name": "Nmap", "icon": "nmap" },
+        { "name": "OWASP ZAP", "icon": "owasp-zap" },
+        { "name": "Wireshark", "icon": "wireshark" },
+        { "name": "Kali Linux", "icon": "kali-linux" },
+        { "name": "Nessus", "icon": "nessus" },
+        { "name": "Nikto", "icon": "nikto" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Penetrationstest",
+    "shortDescription": "Ethisches Hacking, das die Schwachstellen findet, die echte Angreifer ausnutzen würden – bevor sie es tun. Wir testen Web-Apps, APIs, Netzwerke und Cloud und liefern Nachweis plus klaren Behebungsplan.",
+    "fullDescription": "Ein Schwachstellen-Scanner sagt Ihnen, was falsch sein könnte; ein Penetrationstest beweist, was ein Angreifer tatsächlich tun kann. Unsere zertifizierten ethischen Hacker (OSCP, CEH) simulieren reale Angriffe auf Ihre Webanwendungen, APIs, internen Netzwerke, Cloud-Infrastruktur und sogar auf Ihre Mitarbeiter mittels Social Engineering. Wir verketten Schwachstellen so, wie es Angreifer tun, und zeigen echte geschäftliche Auswirkungen statt theoretischer Risiken. Jedes Engagement folgt einem definierten Umfang und Regeln, sodass die Produktion sicher bleibt. Sie erhalten einen priorisierten Bericht mit reproduzierbaren Proof-of-Concept-Exploits, CVSS-Schweregraden und konkreten Lösungen, die Ihre Entwickler umsetzen können, sowie einen kostenlosen Retest zur Bestätigung, dass die Lücken geschlossen sind.",
+    "features": [
+      "Penetrationstest für Webanwendungen und APIs",
+      "Interne und externe Netzwerktests",
+      "Cloud-Konfigurationsprüfung (AWS, Azure, GCP)",
+      "Social Engineering und Phishing-Simulationen",
+      "OWASP Top 10 und Business-Logik-Tests",
+      "Authentifizierte und nicht authentifizierte Szenarien",
+      "Reproduzierbare Proof-of-Concept-Exploits",
+      "Kostenloser Retest nach der Behebung"
+    ],
+    "benefits": [
+      "Sehen Sie Ihr echtes Risiko, nicht nur die Theorie",
+      "Priorisieren Sie Fixes nach echter geschäftlicher Wirkung",
+      "Erfüllen Sie ISO 27001, PCI DSS und SOC 2",
+      "Schützen Sie Kundendaten und Markenreputation",
+      "Geben Sie Entwicklern klare, umsetzbare Schritte",
+      "Bestätigen Sie per Retest, dass Fixes wirken"
+    ],
+    "metaTitle": "Penetrationstest-Services | PakSoft",
+    "metaDescription": "Zertifizierte ethische Hacker finden und beweisen die Schwachstellen, die Angreifer ausnutzen. Web-, API-, Netzwerk- und Cloud-Pentests mit klaren Fixes. Jetzt buchen.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Scoping & Regeln des Engagements", "description": "Wir legen Ziele, Testfenster und Grenzen gemeinsam fest. Das schützt Produktionssysteme und stellt sicher, dass das Engagement Ihren realen Risiken entspricht." },
+        { "step": 2, "title": "Aufklärung & Mapping", "description": "Wir sammeln Informationen und kartieren Ihre Angriffsfläche wie ein Angreifer. So werden exponierte Dienste und Einstiegspunkte vor dem aktiven Test sichtbar." },
+        { "step": 3, "title": "Schwachstellenfindung", "description": "Wir kombinieren automatisierte Tools mit tiefem manuellem Testen, um Lücken zu finden, die Scanner übersehen. Business-Logik- und verkettete Schwachstellen treten dabei zutage." },
+        { "step": 4, "title": "Ausnutzung & Auswirkung", "description": "Wir nutzen bestätigte Schwachstellen sicher aus, um die echte Wirkung zu zeigen. Das trennt echte Bedrohungen vom Rauschen." },
+        { "step": 5, "title": "Bericht & Debriefing", "description": "Wir liefern einen priorisierten Bericht mit Proof-of-Concept-Schritten und klaren Fixes. Ein Live-Debriefing führt Ihr Team durch die Ergebnisse." },
+        { "step": 6, "title": "Retest nach der Behebung", "description": "Nachdem Ihr Team die Fixes umgesetzt hat, testen wir die Findings ohne Aufpreis erneut. Sie erhalten eine schriftliche Bestätigung, dass jede Schwachstelle geschlossen ist." }
+      ],
+      "faq": [
+        { "question": "Worin unterscheiden sich ein Schwachstellen-Scan und ein Penetrationstest?", "answer": "Ein Scan ist automatisiert und listet mögliche Probleme, oft mit Fehlalarmen. Ein Penetrationstest ergänzt diese um manuelle Expertenanalyse, die Schwachstellen ausnutzt und verkettet, um reale Wirkung zu beweisen." },
+        { "question": "Stört das Testen unsere Produktionssysteme?", "answer": "Wir vereinbaren vorab Regeln und Testfenster, um Störungen zu vermeiden. Destruktive Tests werden ausgeschlossen oder in Staging ausgeführt, und wir bleiben durchgängig in Kontakt." },
+        { "question": "Wie oft sollten wir einen Penetrationstest durchführen?", "answer": "Mindestens jährlich sowie nach jedem großen Release, jeder Infrastrukturänderung oder Migration. Viele Compliance-Rahmen wie PCI DSS verlangen Tests in festgelegten Intervallen." },
+        { "question": "Welche Zertifizierungen haben Ihre Tester?", "answer": "Unser Team verfügt über anerkannte Zertifizierungen wie OSCP und CEH. Diese belegen praktische offensive Sicherheitsfähigkeiten und nicht nur theoretisches Wissen." },
+        { "question": "Bieten Sie Black-Box-, Grey-Box- oder White-Box-Tests an?", "answer": "Wir bieten alle drei an. Black-Box ahmt einen externen Angreifer ohne Wissen nach, White-Box nutzt vollen Zugriff und Quellcode, Grey-Box liegt für effiziente Abdeckung dazwischen." },
+        { "question": "Was erhalten wir am Ende des Engagements?", "answer": "Sie erhalten einen detaillierten Bericht mit Management-Zusammenfassung, reproduzierbaren Proof-of-Concept-Exploits, CVSS-Schweregraden und priorisierten Behebungsempfehlungen für Ihre Entwickler." },
+        { "question": "Hilft ein Penetrationstest bei der Compliance?", "answer": "Ja. Unsere Berichte unterstützen ISO 27001, PCI DSS, SOC 2 und DSGVO und liefern den unabhängigen Nachweis, den Auditoren und Kunden erwarten." },
+        { "question": "Ist der Retest wirklich inklusive?", "answer": "Ja. Sobald Sie die Fixes umgesetzt haben, testen wir die gemeldeten Findings ohne Aufpreis erneut und bestätigen schriftlich, dass sie behoben sind." }
+      ],
+      "technologies": [
+        { "name": "Burp Suite", "icon": "burp-suite" },
+        { "name": "Metasploit", "icon": "metasploit" },
+        { "name": "Nmap", "icon": "nmap" },
+        { "name": "OWASP ZAP", "icon": "owasp-zap" },
+        { "name": "Wireshark", "icon": "wireshark" },
+        { "name": "Kali Linux", "icon": "kali-linux" },
+        { "name": "Nessus", "icon": "nessus" },
+        { "name": "Nikto", "icon": "nikto" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "پینٹریشن ٹیسٹنگ (سیکیورٹی نفوذ ٹیسٹ)",
+    "shortDescription": "اخلاقی ہیکنگ جو ان کمزوریوں کو ڈھونڈتی ہے جنہیں حقیقی حملہ آور استعمال کرتے ہیں، اس سے پہلے کہ وہ ایسا کریں۔ ہم web apps، APIs، نیٹ ورکس اور cloud کو ٹیسٹ کرتے ہیں اور آپ کو ثبوت کے ساتھ واضح اصلاحی منصوبہ دیتے ہیں۔",
+    "fullDescription": "ایک vulnerability scanner آپ کو بتاتا ہے کہ کیا غلط ہو سکتا ہے؛ جبکہ پینٹریشن ٹیسٹ یہ ثابت کرتا ہے کہ ایک حملہ آور حقیقت میں کیا کر سکتا ہے۔ ہمارے certified ethical hackers (OSCP، CEH) آپ کی web applications، APIs، اندرونی نیٹ ورکس، cloud انفراسٹرکچر اور حتیٰ کہ social engineering کے ذریعے آپ کے عملے پر حقیقی دنیا کے حملوں کی نقل کرتے ہیں۔ ہم کمزوریوں کو اسی طرح جوڑتے ہیں جیسے حملہ آور کرتے ہیں، اور نظریاتی خطرے کے بجائے حقیقی کاروباری اثر دکھاتے ہیں۔ ہر engagement ایک طے شدہ scope اور قواعد کے تحت ہوتی ہے، تاکہ production محفوظ رہے۔ آپ کو ایک ترجیحی رپورٹ ملتی ہے جس میں دوبارہ قابلِ تکرار proof-of-concept exploits، CVSS severity ریٹنگز اور ٹھوس حل شامل ہوتے ہیں، نیز ایک مفت retest جو تصدیق کرتا ہے کہ خامیاں بند ہو چکی ہیں۔",
+    "features": [
+      "Web application اور API پینٹریشن ٹیسٹنگ",
+      "اندرونی اور بیرونی نیٹ ورک ٹیسٹنگ",
+      "Cloud configuration جائزہ (AWS، Azure، GCP)",
+      "Social engineering اور phishing سمیولیشنز",
+      "OWASP Top 10 اور business-logic ٹیسٹنگ",
+      "Authenticated اور unauthenticated منظرنامے",
+      "دوبارہ قابلِ تکرار proof-of-concept exploits",
+      "اصلاح کے بعد مفت retest"
+    ],
+    "benefits": [
+      "صرف نظریہ نہیں، اپنا حقیقی خطرہ دیکھیں",
+      "اصلاحات کو حقیقی کاروباری اثر کے مطابق ترجیح دیں",
+      "ISO 27001، PCI DSS اور SOC 2 تقاضے پورے کریں",
+      "کسٹمر ڈیٹا اور برانڈ ساکھ کی حفاظت کریں",
+      "ڈیولپرز کو واضح، قابلِ عمل اقدامات دیں",
+      "retest سے تصدیق کریں کہ اصلاحات کام کرتی ہیں"
+    ],
+    "metaTitle": "Penetration Testing خدمات | PakSoft",
+    "metaDescription": "Certified ethical hackers ان کمزوریوں کو ڈھونڈتے اور ثابت کرتے ہیں جنہیں حملہ آور استعمال کرتے ہیں۔ Web، API، نیٹ ورک اور cloud pentests واضح حل کے ساتھ۔ آج ہی بک کریں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Scope اور قواعد کا تعین", "description": "ہم اہداف، ٹیسٹنگ کے اوقات اور حدود مل کر طے کرتے ہیں۔ یہ production سسٹمز کو محفوظ رکھتا ہے اور یقینی بناتا ہے کہ کام آپ کے حقیقی خطرات سے مطابقت رکھے۔" },
+        { "step": 2, "title": "Reconnaissance اور Mapping", "description": "ہم معلومات اکٹھی کرتے ہیں اور آپ کی attack surface کو ایک حملہ آور کی طرح map کرتے ہیں۔ اس سے فعال ٹیسٹنگ سے پہلے exposed services اور entry points سامنے آ جاتے ہیں۔" },
+        { "step": 3, "title": "کمزوریوں کی دریافت", "description": "ہم automated tooling کو گہری manual testing کے ساتھ ملا کر وہ خامیاں ڈھونڈتے ہیں جو scanners چھوڑ دیتے ہیں۔ business-logic اور جُڑی ہوئی کمزوریاں manual تجزیے میں ظاہر ہوتی ہیں۔" },
+        { "step": 4, "title": "Exploitation اور اثر", "description": "ہم تصدیق شدہ کمزوریوں کو محفوظ طریقے سے exploit کر کے حقیقی اثر دکھاتے ہیں۔ یہ اصل خطرات کو شور سے الگ کرتا ہے۔" },
+        { "step": 5, "title": "رپورٹنگ اور Debrief", "description": "ہم proof-of-concept اقدامات اور واضح حل کے ساتھ ایک ترجیحی رپورٹ پیش کرتے ہیں۔ ایک live debrief آپ کی ٹیم کو نتائج کے ذریعے رہنمائی دیتا ہے۔" },
+        { "step": 6, "title": "اصلاح کے بعد Retest", "description": "آپ کی ٹیم کے اصلاحات لاگو کرنے کے بعد، ہم نتائج کو بغیر اضافی فیس کے دوبارہ ٹیسٹ کرتے ہیں۔ آپ کو تحریری تصدیق ملتی ہے کہ ہر کمزوری بند ہو چکی ہے۔" }
+      ],
+      "faq": [
+        { "question": "Vulnerability scan اور penetration test میں کیا فرق ہے؟", "answer": "Scan خودکار ہوتا ہے اور ممکنہ مسائل کی فہرست دیتا ہے، اکثر false positives کے ساتھ۔ Penetration test ماہر manual تجزیہ شامل کرتا ہے جو کمزوریوں کو exploit اور chain کر کے حقیقی، قابلِ مظاہرہ اثر ثابت کرتا ہے۔" },
+        { "question": "کیا ٹیسٹنگ ہمارے production سسٹمز میں خلل ڈالے گی؟", "answer": "خلل سے بچنے کے لیے ہم قواعد اور ٹیسٹنگ کے اوقات پہلے سے طے کرتے ہیں۔ تباہ کن ٹیسٹ خارج کیے جاتے ہیں یا staging پر چلائے جاتے ہیں، اور ہم پورے دوران رابطے میں رہتے ہیں۔" },
+        { "question": "ہمیں کتنی بار penetration test کرانا چاہیے؟", "answer": "کم از کم سالانہ، اور کسی بھی بڑی ریلیز، انفراسٹرکچر تبدیلی یا migration کے بعد۔ PCI DSS جیسے کئی compliance فریم ورک مقررہ وقفوں سے ٹیسٹنگ کا تقاضا کرتے ہیں۔" },
+        { "question": "آپ کے testers کے پاس کون سی certifications ہیں؟", "answer": "ہماری ٹیم کے پاس OSCP اور CEH سمیت تسلیم شدہ credentials ہیں۔ یہ صرف نظریاتی علم نہیں بلکہ عملی offensive security مہارت کی تصدیق کرتے ہیں۔" },
+        { "question": "کیا آپ black-box، grey-box یا white-box ٹیسٹنگ پیش کرتے ہیں؟", "answer": "ہم تینوں پیش کرتے ہیں۔ Black-box بغیر معلومات کے بیرونی حملہ آور کی نقل کرتا ہے، white-box مکمل رسائی اور source code استعمال کرتا ہے، اور grey-box مؤثر coverage کے لیے درمیان میں ہوتا ہے۔" },
+        { "question": "engagement کے اختتام پر ہمیں کیا ملتا ہے؟", "answer": "آپ کو ایک تفصیلی رپورٹ ملتی ہے جس میں executive summary، دوبارہ قابلِ تکرار proof-of-concept exploits، CVSS severity ریٹنگز اور ترجیحی اصلاحی رہنمائی شامل ہوتی ہے جسے ڈیولپرز فالو کر سکتے ہیں۔" },
+        { "question": "کیا penetration test compliance میں مدد دیتا ہے؟", "answer": "جی ہاں۔ ہماری رپورٹس ISO 27001، PCI DSS، SOC 2 اور GDPR تقاضوں کی حمایت کرتی ہیں اور وہ آزاد ثبوت فراہم کرتی ہیں جو auditors اور کسٹمرز کو درکار ہوتا ہے۔" },
+        { "question": "کیا retest واقعی شامل ہے؟", "answer": "جی ہاں۔ اصلاحات لاگو کرنے کے بعد، ہم رپورٹ شدہ نتائج کو بغیر اضافی فیس کے دوبارہ ٹیسٹ کرتے ہیں اور تحریری تصدیق جاری کرتے ہیں کہ وہ حل ہو چکے ہیں۔" }
+      ],
+      "technologies": [
+        { "name": "Burp Suite", "icon": "burp-suite" },
+        { "name": "Metasploit", "icon": "metasploit" },
+        { "name": "Nmap", "icon": "nmap" },
+        { "name": "OWASP ZAP", "icon": "owasp-zap" },
+        { "name": "Wireshark", "icon": "wireshark" },
+        { "name": "Kali Linux", "icon": "kali-linux" },
+        { "name": "Nessus", "icon": "nessus" },
+        { "name": "Nikto", "icon": "nikto" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "اختبار الاختراق",
+    "shortDescription": "قرصنة أخلاقية تكتشف الثغرات التي قد يستغلها المهاجمون الحقيقيون قبل أن يفعلوا. نختبر تطبيقات الويب وواجهات API والشبكات والسحابة، ونقدم لك الدليل وخطة معالجة واضحة.",
+    "fullDescription": "يخبرك ماسح الثغرات بما قد يكون خاطئاً؛ أما اختبار الاختراق فيثبت ما يمكن للمهاجم فعله بالفعل. يحاكي قراصنتنا الأخلاقيون المعتمدون (OSCP وCEH) هجمات واقعية على تطبيقات الويب وواجهات API والشبكات الداخلية والبنية السحابية، وحتى على موظفيك عبر الهندسة الاجتماعية. نربط نقاط الضعف بالطريقة نفسها التي يتبعها المهاجمون، ونُظهر الأثر التجاري الحقيقي بدلاً من المخاطر النظرية. يخضع كل تكليف لنطاق محدد وقواعد متفق عليها، فيبقى نظام الإنتاج آمناً. تحصل على تقرير مرتب حسب الأولوية يتضمن أدلة استغلال قابلة لإعادة الإنتاج (proof-of-concept)، وتصنيفات خطورة CVSS، وحلولاً عملية يطبّقها مطوروك، إضافة إلى إعادة اختبار مجانية للتأكد من إغلاق الثغرات.",
+    "features": [
+      "اختبار اختراق لتطبيقات الويب وواجهات API",
+      "اختبار الشبكات الداخلية والخارجية",
+      "مراجعة إعدادات السحابة (AWS، Azure، GCP)",
+      "محاكاة الهندسة الاجتماعية والتصيد",
+      "اختبار OWASP Top 10 ومنطق الأعمال",
+      "سيناريوهات بمصادقة وبدون مصادقة",
+      "أدلة استغلال قابلة لإعادة الإنتاج",
+      "إعادة اختبار مجانية بعد المعالجة"
+    ],
+    "benefits": [
+      "اطّلع على تعرضك الحقيقي وليس النظري فقط",
+      "رتّب الإصلاحات حسب الأثر التجاري الفعلي",
+      "استوفِ متطلبات ISO 27001 وPCI DSS وSOC 2",
+      "احمِ بيانات العملاء وسمعة العلامة التجارية",
+      "امنح المطورين خطوات معالجة واضحة وقابلة للتنفيذ",
+      "تحقّق عبر إعادة الاختبار من نجاح الإصلاحات"
+    ],
+    "metaTitle": "خدمات اختبار الاختراق | PakSoft",
+    "metaDescription": "قراصنة أخلاقيون معتمدون يكتشفون ويثبتون الثغرات التي يستغلها المهاجمون. اختبارات اختراق للويب وAPI والشبكات والسحابة مع حلول واضحة. احجز اختبارك اليوم.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "تحديد النطاق وقواعد التكليف", "description": "نتفق معاً على الأهداف ونوافذ الاختبار والحدود. هذا يحمي أنظمة الإنتاج ويضمن توافق التكليف مع مخاوف المخاطر الحقيقية لديك." },
+        { "step": 2, "title": "الاستطلاع ورسم الخريطة", "description": "نجمع المعلومات ونرسم خريطة سطح الهجوم لديك كما يفعل المهاجم. يكشف ذلك عن الخدمات المكشوفة ونقاط الدخول قبل بدء الاختبار الفعلي." },
+        { "step": 3, "title": "اكتشاف الثغرات", "description": "نجمع بين الأدوات الآلية والاختبار اليدوي العميق لاكتشاف العيوب التي تفوتها الماسحات. تظهر ثغرات منطق الأعمال والثغرات المترابطة في التحليل اليدوي." },
+        { "step": 4, "title": "الاستغلال والأثر", "description": "نستغل الثغرات المؤكدة بأمان لإظهار الأثر الحقيقي. هذا يفصل التهديدات الفعلية عن الضجيج." },
+        { "step": 5, "title": "التقرير والإحاطة", "description": "نقدّم تقريراً مرتباً حسب الأولوية يتضمن خطوات proof-of-concept وحلولاً واضحة. تشرح جلسة إحاطة مباشرة النتائج لفريقك." },
+        { "step": 6, "title": "إعادة الاختبار بعد المعالجة", "description": "بعد تطبيق فريقك للإصلاحات، نعيد اختبار النتائج دون تكلفة إضافية. تحصل على تأكيد خطي بأن كل ثغرة قد أُغلقت فعلاً." }
+      ],
+      "faq": [
+        { "question": "ما الفرق بين فحص الثغرات واختبار الاختراق؟", "answer": "الفحص آلي ويسرد المشكلات المحتملة، غالباً مع نتائج إيجابية خاطئة. أما اختبار الاختراق فيضيف تحليلاً يدوياً متخصصاً يستغل الثغرات ويربطها لإثبات أثر حقيقي قابل للإظهار." },
+        { "question": "هل سيعطّل الاختبار أنظمة الإنتاج لدينا؟", "answer": "نتفق مسبقاً على القواعد ونوافذ الاختبار لتجنب التعطيل. تُستبعد الاختبارات المدمّرة أو تُجرى على بيئة staging، ونبقى على تواصل طوال التكليف." },
+        { "question": "كم مرة ينبغي إجراء اختبار الاختراق؟", "answer": "سنوياً على الأقل، وبعد أي إصدار كبير أو تغيير في البنية التحتية أو ترحيل. تتطلب أطر امتثال عديدة مثل PCI DSS إجراء الاختبار على فترات محددة." },
+        { "question": "ما الشهادات التي يحملها مختبروكم؟", "answer": "يحمل فريقنا اعتمادات معترفاً بها تشمل OSCP وCEH. وهي تثبت مهارات أمن هجومي عملية وليست معرفة نظرية فقط." },
+        { "question": "هل تقدمون اختبار الصندوق الأسود أو الرمادي أو الأبيض؟", "answer": "نقدم الثلاثة جميعاً. الصندوق الأسود يحاكي مهاجماً خارجياً بلا معرفة، والأبيض يستخدم وصولاً كاملاً وشيفرة المصدر، والرمادي بينهما لتغطية فعّالة." },
+        { "question": "ماذا نستلم في نهاية التكليف؟", "answer": "تستلم تقريراً مفصلاً يتضمن ملخصاً تنفيذياً، وأدلة استغلال قابلة لإعادة الإنتاج، وتصنيفات خطورة CVSS، وإرشادات معالجة مرتبة حسب الأولوية يمكن لمطوريك اتباعها." },
+        { "question": "هل يساعد اختبار الاختراق في الامتثال؟", "answer": "نعم. تدعم تقاريرنا متطلبات ISO 27001 وPCI DSS وSOC 2 وGDPR، وتوفر الدليل المستقل الذي يتوقعه المدققون والعملاء." },
+        { "question": "هل إعادة الاختبار مشمولة فعلاً؟", "answer": "نعم. بمجرد تطبيق الإصلاحات، نعيد اختبار النتائج المبلّغ عنها دون تكلفة إضافية ونصدر تأكيداً خطياً بأنها عولجت." }
+      ],
+      "technologies": [
+        { "name": "Burp Suite", "icon": "burp-suite" },
+        { "name": "Metasploit", "icon": "metasploit" },
+        { "name": "Nmap", "icon": "nmap" },
+        { "name": "OWASP ZAP", "icon": "owasp-zap" },
+        { "name": "Wireshark", "icon": "wireshark" },
+        { "name": "Kali Linux", "icon": "kali-linux" },
+        { "name": "Nessus", "icon": "nessus" },
+        { "name": "Nikto", "icon": "nikto" }
+      ]
+    }
+  }
+}

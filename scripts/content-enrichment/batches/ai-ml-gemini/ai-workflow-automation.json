@@ -1,0 +1,638 @@
+{
+  "slug": "ai-workflow-automation",
+  "en": {
+    "name": "AI Workflow Automation",
+    "shortDescription": "Replace rigid, rule-based processes with intelligent AI workflows that can read emails, extract data, make decisions, and route tasks autonomously.",
+    "fullDescription": "Traditional RPA (Robotic Process Automation) breaks the moment a process deviates from strict rules or encounters unstructured data. Our AI Workflow Automation services inject LLMs and computer vision directly into your business processes, enabling software to handle ambiguity just like a human operator. We build intelligent pipelines that can read incoming vendor emails, extract invoice data, cross-reference it against your ERP, and either approve the payment or flag it for human review with a summary of the discrepancy. By orchestrating tools like n8n, LangChain, and OpenAI, we transform manual, repetitive data-entry tasks into autonomous, continuous processes. This isn't just about moving data from A to B; it's about deploying AI that understands the context of the data and makes complex, conditional decisions at scale.",
+    "features": [
+      "Unstructured Data Extraction (Emails, PDFs, Images)",
+      "Intelligent Document Processing & Classification",
+      "LLM-Powered Decision Routing",
+      "Multi-System Orchestration (CRM, ERP, Slack)",
+      "Automated Exception Handling & Logging",
+      "Human-in-the-Loop Approval Workflows",
+      "Custom API & Webhook Integrations",
+      "Continuous Process Mining & Optimization"
+    ],
+    "benefits": [
+      "Eliminate thousands of hours of manual data entry",
+      "Process documents and requests 24/7 without delays",
+      "Reduce human error in repetitive compliance and financial tasks",
+      "Scale operations without linearly scaling headcount",
+      "Handle unstructured data that traditional RPA cannot process",
+      "Maintain complete audit trails of all AI-driven decisions"
+    ],
+    "metaTitle": "AI Workflow Automation Services | Intelligent RPA | PakSoft",
+    "metaDescription": "Automate complex business processes with AI. We build intelligent workflows that read documents, make decisions, and route tasks autonomously.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Process Auditing & Mapping",
+          "description": "We analyze your existing manual workflows, identifying bottlenecks, decision points, and the systems involved. We document the exact criteria your team uses to make decisions."
+        },
+        {
+          "step": 2,
+          "title": "Data Ingestion Architecture",
+          "description": "We build the connectors to pull unstructured data into the pipeline—whether it's monitoring a shared inbox for invoices, listening to webhooks, or scraping external portals."
+        },
+        {
+          "step": 3,
+          "title": "AI Logic & Extraction Setup",
+          "description": "We configure LLMs to act as the 'brain' of the workflow. The AI is prompted to classify the incoming data, extract specific entities (like dates, names, or amounts), and structure it into JSON."
+        },
+        {
+          "step": 4,
+          "title": "Integration & Routing",
+          "description": "Using orchestration tools like n8n or custom Python scripts, we route the structured data to your destination systems (Salesforce, SAP, databases) based on the AI's conditional logic."
+        },
+        {
+          "step": 5,
+          "title": "Human-in-the-Loop Implementation",
+          "description": "We build fail-safes. If the AI's confidence score is below a certain threshold, the task is routed to a human operator via Slack or a custom dashboard for manual approval before proceeding."
+        },
+        {
+          "step": 6,
+          "title": "Testing & Deployment",
+          "description": "We run historical data through the new pipeline in a staging environment to ensure accuracy. Once validated, the automation goes live, with ongoing monitoring for errors and API latency."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Traditional automation (like basic Zapier) is rigid: 'If X happens, do Y'. If X is a misspelled email or a scanned PDF, it breaks. AI automation uses LLMs to understand the context. It can say, 'This email is a complaint about a delayed shipment, so extract the order number, check the database, and draft a personalized apology.'",
+          "answer": "Traditional automation is rigid: 'If X happens, do Y'. If the input is unstructured, it breaks. AI automation uses LLMs to understand context, handling variations, extracting meaning from messy data, and making cognitive decisions."
+        },
+        {
+          "question": "Can this process handwritten documents or scanned PDFs?",
+          "answer": "Yes. We integrate advanced OCR (Optical Character Recognition) and vision models (like GPT-4o or AWS Textract) at the beginning of the workflow. The AI can read handwriting, understand complex table structures, and extract the data reliably."
+        },
+        {
+          "question": "Will the AI make decisions without our oversight?",
+          "answer": "Only if you want it to. We heavily advocate for a 'Human-in-the-Loop' approach for critical workflows. The AI does 95% of the heavy lifting (data gathering, summarization, drafting), but a human clicks the final 'Approve' or 'Send' button."
+        },
+        {
+          "question": "What systems can you integrate with?",
+          "answer": "If it has an API, we can integrate with it. We commonly build workflows connecting Google Workspace, Microsoft 365, Salesforce, HubSpot, Zendesk, Stripe, SAP, and custom internal SQL databases."
+        },
+        {
+          "question": "How do you handle sensitive data in these workflows?",
+          "answer": "Security is paramount. We can process sensitive data using enterprise-tier APIs (which do not train on your data) or deploy completely private, open-source LLMs on your own secure cloud infrastructure to ensure zero data leakage."
+        },
+        {
+          "question": "What happens if the workflow fails or encounters an error?",
+          "answer": "We build robust exception handling into every node. If an API times out or the AI cannot confidently extract data, the workflow catches the error, logs it, and immediately sends an alert to your IT or operations team with the exact payload that caused the issue."
+        },
+        {
+          "question": "How do we measure the ROI of an automated workflow?",
+          "answer": "We track exactly how many times the workflow runs and the average time a human previously took to do the same task. By multiplying hours saved by the hourly rate of the employees, we provide a clear, real-time dashboard of your cost savings."
+        },
+        {
+          "question": "Is this service suitable for small businesses?",
+          "answer": "Absolutely. While large enterprises save millions through AI RPA, small businesses benefit by scaling their operations without needing to hire additional administrative staff. We design lightweight, cost-effective pipelines specifically for SMBs using tools like n8n."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "nodedotjs",
+          "name": "n8n"
+        },
+        {
+          "icon": "openai",
+          "name": "OpenAI / LLMs"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS Textract"
+        },
+        {
+          "icon": "slack",
+          "name": "Slack API"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Cloud Vision"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Yapay Zeka İş Akışı Otomasyonu",
+    "shortDescription": "Katı, kurala dayalı süreçleri e-postaları okuyabilen, veri çıkarabilen, karar verebilen ve görevleri otonom olarak yönlendirebilen akıllı yapay zeka iş akışlarıyla değiştirin.",
+    "fullDescription": "Geleneksel RPA (Robotik Süreç Otomasyonu), bir süreç katı kurallardan saptığı veya yapılandırılmamış (unstructured) verilerle karşılaştığı an çöker. Yapay Zeka İş Akışı Otomasyonu hizmetlerimiz, LLM'leri ve bilgisayarlı görüyü (computer vision) doğrudan iş süreçlerinize entegre ederek, yazılımın belirsizlikleri tıpkı bir insan operatör gibi ele almasını sağlar. Gelen fatura e-postalarını okuyabilen, içindeki verileri çıkarıp ERP sisteminizle çapraz kontrol yapabilen ve ödemeyi onaylayan veya bir uyuşmazlık varsa inceleme için insan personeli uyaran akıllı üretim hatları (pipelines) kuruyoruz. n8n, LangChain ve OpenAI gibi araçları koordine ederek manuel ve tekrarlayan veri girişi görevlerini otonom, sürekli süreçlere dönüştürüyoruz. Bu sadece veriyi A noktasından B noktasına taşımakla ilgili değildir; verinin bağlamını anlayan ve büyük ölçekte karmaşık, koşullu kararlar alan yapay zekayı devreye almakla ilgilidir.",
+    "features": [
+      "Yapılandırılmamış Veri Çıkarımı (E-postalar, PDF'ler, Görseller)",
+      "Akıllı Belge İşleme ve Sınıflandırma",
+      "LLM Destekli Karar Yönlendirmesi",
+      "Çoklu Sistem Orkestrasyonu (CRM, ERP, Slack)",
+      "Otomatik İstisna İşleme (Exception Handling) ve Günlükleme",
+      "Döngüde İnsan (Human-in-the-Loop) Onay İş Akışları",
+      "Özel API ve Webhook Entegrasyonları",
+      "Sürekli Süreç Madenciliği (Process Mining) ve Optimizasyon"
+    ],
+    "benefits": [
+      "Binlerce saatlik manuel veri girişini ortadan kaldırın",
+      "Belge ve talepleri gecikme olmadan 7/24 işleyin",
+      "Tekrarlayan finansal ve uyumluluk görevlerinde insan hatasını azaltın",
+      "Personel sayısını doğrusal olarak artırmadan operasyonlarınızı büyütün",
+      "Geleneksel RPA'nın işleyemediği yapılandırılmamış (unstructured) verileri işleyin",
+      "Yapay zeka tarafından alınan tüm kararların eksiksiz denetim izini (audit trail) tutun"
+    ],
+    "metaTitle": "Yapay Zeka İş Akışı Otomasyonu | Akıllı RPA | PakSoft",
+    "metaDescription": "Karmaşık iş süreçlerini yapay zeka ile otomatikleştirin. Belgeleri okuyan, karar veren ve görevleri otonom olarak yönlendiren akıllı iş akışları oluşturuyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Süreç Denetimi ve Haritalama",
+          "description": "Mevcut manuel iş akışlarınızı analiz ederek darboğazları, karar noktalarını ve dahil olan sistemleri belirliyoruz. Ekibinizin karar verirken kullandığı kesin kriterleri belgeliyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Veri Alma Mimarisi",
+          "description": "Yapılandırılmamış verileri (unstructured data) işlem hattına çekmek için bağlantılar kuruyoruz; ister faturalar için ortak bir e-posta kutusunu izlemek, ister webhook'ları dinlemek olsun."
+        },
+        {
+          "step": 3,
+          "title": "Yapay Zeka Mantığı ve Veri Çıkarma",
+          "description": "LLM'leri iş akışının 'beyni' olarak yapılandırıyoruz. Yapay zeka, gelen verileri sınıflandırmak, belirli varlıkları (tarihler, isimler veya tutarlar) çıkarmak ve bunları JSON formatında yapılandırmak için yönlendirilir."
+        },
+        {
+          "step": 4,
+          "title": "Entegrasyon ve Yönlendirme",
+          "description": "n8n gibi orkestrasyon araçlarını veya özel Python komut dosyalarını kullanarak, yapılandırılmış verileri yapay zekanın koşullu mantığına dayalı olarak hedef sistemlerinize (Salesforce, SAP, veritabanları) yönlendiriyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Döngüde İnsan (Human-in-the-Loop) Uygulaması",
+          "description": "Güvenlik mekanizmaları oluşturuyoruz. Yapay zekanın güven skoru belirli bir eşiğin altındaysa, görev işleme devam etmeden önce manuel onay için Slack veya özel bir panel üzerinden insan operatöre yönlendirilir."
+        },
+        {
+          "step": 6,
+          "title": "Test ve Yayına Alma",
+          "description": "Doğruluğu sağlamak için geçmiş verileri bir test (staging) ortamında yeni işlem hattından geçiriyoruz. Doğrulandıktan sonra otomasyon yayına girer; hatalar ve API gecikmeleri için sürekli izleme yapılır."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Yapay zeka iş akışı otomasyonunun Zapier gibi araçlardan farkı nedir?",
+          "answer": "Geleneksel otomasyon katıdır: 'X olursa, Y yap'. Girdi yapılandırılmamışsa (örneğin yazım hatalı bir e-posta) sistem çöker. Yapay zeka otomasyonu, bağlamı anlamak, varyasyonları ele almak, dağınık verilerden anlam çıkarmak ve bilişsel kararlar vermek için LLM'leri (Büyük Dil Modelleri) kullanır."
+        },
+        {
+          "question": "Bu süreç el yazısı belgeleri veya taranmış PDF'leri işleyebilir mi?",
+          "answer": "Evet. İş akışının başlangıcına gelişmiş OCR (Optik Karakter Tanıma) ve görme modellerini (GPT-4o veya AWS Textract gibi) entegre ediyoruz. Yapay zeka el yazısını okuyabilir, karmaşık tablo yapılarını anlayabilir ve verileri güvenilir bir şekilde çıkarabilir."
+        },
+        {
+          "question": "Yapay zeka bizim denetimimiz olmadan karar verecek mi?",
+          "answer": "Sadece siz isterseniz. Kritik iş akışları için 'Human-in-the-Loop' (Döngüde İnsan) yaklaşımını şiddetle savunuyoruz. Yapay zeka ağır işin %95'ini (veri toplama, özetleme, taslak hazırlama) yapar, ancak son 'Onayla' veya 'Gönder' düğmesine bir insan tıklar."
+        },
+        {
+          "question": "Hangi sistemlerle entegre olabilirsiniz?",
+          "answer": "Bir API'si varsa, onunla entegre olabiliriz. Genellikle Google Workspace, Microsoft 365, Salesforce, HubSpot, Zendesk, Stripe, SAP ve özel dahili SQL veritabanlarını birbirine bağlayan iş akışları kuruyoruz."
+        },
+        {
+          "question": "Bu iş akışlarında hassas verileri nasıl işliyorsunuz?",
+          "answer": "Güvenlik çok önemlidir. Hassas verileri kurumsal düzeydeki API'leri (verileriniz üzerinde eğitim yapmayan) kullanarak işleyebilir veya sıfır veri sızıntısı sağlamak için tamamen gizli, açık kaynaklı LLM'leri kendi güvenli bulut altyapınızda dağıtabiliriz."
+        },
+        {
+          "question": "İş akışı başarısız olursa veya bir hatayla karşılaşırsa ne olur?",
+          "answer": "Her düğüme sağlam bir istisna (exception) yönetimi inşa ediyoruz. Bir API zaman aşımına uğrarsa veya yapay zeka verileri güvenilir bir şekilde çıkaramazsa, iş akışı hatayı yakalar, kaydeder ve soruna neden olan tam veri paketiyle birlikte BT veya operasyon ekibinize derhal bir uyarı gönderir."
+        },
+        {
+          "question": "Otomatikleştirilmiş bir iş akışının yatırım getirisini (ROI) nasıl ölçeriz?",
+          "answer": "İş akışının tam olarak kaç kez çalıştığını ve daha önce bir insanın aynı görevi yapmak için ortalama ne kadar zaman harcadığını izliyoruz. Tasarruf edilen saatleri çalışanların saatlik ücretiyle çarparak, maliyet tasarruflarınızı net ve gerçek zamanlı bir kontrol panelinde sunuyoruz."
+        },
+        {
+          "question": "Bu hizmet küçük işletmeler için uygun mu?",
+          "answer": "Kesinlikle. Büyük kuruluşlar AI RPA ile milyonlarca dolar tasarruf ederken, küçük işletmeler ek idari personel tutmaya gerek kalmadan operasyonlarını ölçeklendirerek fayda sağlarlar. n8n gibi araçları kullanarak KOBİ'ler için özel, hafif ve uygun maliyetli işlem hatları (pipelines) tasarlıyoruz."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "nodedotjs",
+          "name": "n8n"
+        },
+        {
+          "icon": "openai",
+          "name": "OpenAI / LLMs"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS Textract"
+        },
+        {
+          "icon": "slack",
+          "name": "Slack API"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Cloud Vision"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "KI-Workflow-Automatisierung",
+    "shortDescription": "Ersetzen Sie starre, regelbasierte Prozesse durch intelligente KI-Workflows, die E-Mails lesen, Daten extrahieren, Entscheidungen treffen und Aufgaben autonom weiterleiten.",
+    "fullDescription": "Herkömmliche RPA (Robotic Process Automation) bricht zusammen, sobald ein Prozess von strengen Regeln abweicht oder auf unstrukturierte Daten trifft. Unsere KI-Workflow-Automatisierungsdienste injizieren LLMs und Computer Vision direkt in Ihre Geschäftsprozesse, sodass Software mit Unklarheiten genauso umgehen kann wie ein menschlicher Operator. Wir bauen intelligente Pipelines, die eingehende Lieferanten-E-Mails lesen, Rechnungsdaten extrahieren, diese mit Ihrem ERP-System abgleichen und die Zahlung entweder genehmigen oder bei Unstimmigkeiten mit einer Zusammenfassung an einen Menschen zur Prüfung weiterleiten. Durch die Orchestrierung von Tools wie n8n, LangChain und OpenAI verwandeln wir manuelle, repetitive Dateneingabe-Aufgaben in autonome, kontinuierliche Prozesse. Hierbei geht es nicht nur darum, Daten von A nach B zu verschieben, sondern um KI, die den Kontext versteht und komplexe, bedingte Entscheidungen im großen Maßstab trifft.",
+    "features": [
+      "Extraktion unstrukturierter Daten (E-Mails, PDFs, Bilder)",
+      "Intelligente Dokumentenverarbeitung & Klassifizierung",
+      "LLM-gestütztes Entscheidungs-Routing",
+      "Multi-System-Orchestrierung (CRM, ERP, Slack)",
+      "Automatisches Exception-Handling & Logging",
+      "Human-in-the-Loop Freigabe-Workflows",
+      "Benutzerdefinierte API- & Webhook-Integrationen",
+      "Kontinuierliches Process Mining & Optimierung"
+    ],
+    "benefits": [
+      "Eliminieren Sie Tausende Stunden manueller Dateneingabe",
+      "Verarbeiten Sie Dokumente und Anfragen 24/7 ohne Verzögerung",
+      "Reduzieren Sie menschliche Fehler bei repetitiven Aufgaben",
+      "Skalieren Sie Operationen, ohne den Personalbestand linear zu erhöhen",
+      "Verarbeiten Sie unstrukturierte Daten, woran klassische RPA scheitert",
+      "Behalten Sie lückenlose Audit-Trails für alle KI-Entscheidungen"
+    ],
+    "metaTitle": "KI-Workflow-Automatisierung | Intelligente RPA | PakSoft",
+    "metaDescription": "Automatisieren Sie komplexe Prozesse mit KI. Wir bauen smarte Workflows, die Dokumente lesen, Entscheidungen treffen und Aufgaben autonom routen.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Prozess-Audit & Mapping",
+          "description": "Wir analysieren Ihre manuellen Workflows, identifizieren Engpässe und die involvierten Systeme. Wir dokumentieren die genauen Kriterien, nach denen Ihr Team Entscheidungen trifft."
+        },
+        {
+          "step": 2,
+          "title": "Architektur der Datenaufnahme",
+          "description": "Wir bauen die Konnektoren, um unstrukturierte Daten in die Pipeline zu ziehen—sei es durch das Überwachen eines Postfachs für Rechnungen oder das Abhören von Webhooks."
+        },
+        {
+          "step": 3,
+          "title": "KI-Logik & Extraktions-Setup",
+          "description": "Wir konfigurieren LLMs als das 'Gehirn' des Workflows. Die KI klassifiziert Daten, extrahiert spezifische Entitäten (wie Daten, Namen oder Beträge) und strukturiert sie als JSON."
+        },
+        {
+          "step": 4,
+          "title": "Integration & Routing",
+          "description": "Mit Orchestrierungstools wie n8n oder Python-Skripten leiten wir die strukturierten Daten basierend auf der bedingten Logik der KI an Ihre Zielsysteme (Salesforce, SAP) weiter."
+        },
+        {
+          "step": 5,
+          "title": "Human-in-the-Loop Implementierung",
+          "description": "Wir bauen Sicherheitsnetze ein. Wenn der Confidence-Score der KI unter einem Schwellenwert liegt, wird die Aufgabe zur manuellen Freigabe via Slack an einen Menschen geleitet."
+        },
+        {
+          "step": 6,
+          "title": "Testing & Deployment",
+          "description": "Wir lassen historische Daten durch die neue Pipeline in einer Staging-Umgebung laufen, um Genauigkeit sicherzustellen. Danach geht die Automatisierung unter Überwachung live."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie unterscheidet sich KI-Workflow-Automatisierung von Tools wie Zapier?",
+          "answer": "Klassische Automatisierung ist starr: 'Wenn X passiert, tue Y'. Ist der Input unstrukturiert (Tippfehler, PDF), bricht sie ab. KI-Automatisierung nutzt LLMs, um den Kontext zu verstehen, Variationen zu bewältigen und kognitive Entscheidungen aus unordentlichen Daten zu treffen."
+        },
+        {
+          "question": "Kann dieser Prozess handgeschriebene Dokumente oder PDFs verarbeiten?",
+          "answer": "Ja. Wir integrieren fortschrittliche OCR und Vision-Modelle (wie GPT-4o oder AWS Textract) am Beginn des Workflows. Die KI kann Handschrift lesen, Tabellen verstehen und die Daten zuverlässig extrahieren."
+        },
+        {
+          "question": "Trifft die KI Entscheidungen ohne unsere Aufsicht?",
+          "answer": "Nur wenn Sie es wünschen. Bei kritischen Workflows befürworten wir einen 'Human-in-the-Loop'-Ansatz. Die KI übernimmt 95% der Arbeit (Datensammlung, Zusammenfassung), aber ein Mensch klickt den finalen 'Freigeben'-Button."
+        },
+        {
+          "question": "Welche Systeme können Sie integrieren?",
+          "answer": "Alles mit einer API. Häufig bauen wir Workflows, die Google Workspace, Microsoft 365, Salesforce, HubSpot, Zendesk, Stripe, SAP und interne SQL-Datenbanken verbinden."
+        },
+        {
+          "question": "Wie gehen Sie mit sensiblen Daten um?",
+          "answer": "Sicherheit ist oberstes Gebot. Wir verarbeiten Daten über Enterprise-APIs (die nicht mit Ihren Daten trainieren) oder setzen komplett private Open-Source-LLMs in Ihrer Cloud ein, um Datenlecks auszuschließen."
+        },
+        {
+          "question": "Was passiert bei einem Fehler im Workflow?",
+          "answer": "Wir integrieren robustes Exception-Handling. Wenn eine API ein Timeout hat oder die KI Daten nicht sicher extrahieren kann, fängt der Workflow den Fehler ab und alarmiert Ihr IT-Team mit den exakten Payload-Daten."
+        },
+        {
+          "question": "Wie messen wir den ROI eines automatisierten Workflows?",
+          "answer": "Wir tracken, wie oft der Workflow läuft und wie lange ein Mensch früher dafür gebraucht hat. Multipliziert mit dem Stundensatz liefern wir ein Echtzeit-Dashboard Ihrer Kosteneinsparungen."
+        },
+        {
+          "question": "Ist dieser Service für kleine Unternehmen geeignet?",
+          "answer": "Absolut. Großunternehmen sparen Millionen, aber kleine Unternehmen profitieren, indem sie wachsen können, ohne neues Verwaltungspersonal einzustellen. Wir entwerfen kostengünstige Pipelines speziell für KMUs (z.B. mit n8n)."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "nodedotjs",
+          "name": "n8n"
+        },
+        {
+          "icon": "openai",
+          "name": "OpenAI / LLMs"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS Textract"
+        },
+        {
+          "icon": "slack",
+          "name": "Slack API"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Cloud Vision"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "AI ورک فلو آٹومیشن",
+    "shortDescription": "سخت، اصولوں پر مبنی عمل کو ذہین AI ورک فلوز سے تبدیل کریں جو ای میلز پڑھ سکیں، ڈیٹا نکال سکیں، فیصلے کر سکیں اور خود مختار طریقے سے کاموں کو آگے بڑھا سکیں۔",
+    "fullDescription": "روایتی RPA (Robotic Process Automation) اس وقت ناکام ہو جاتا ہے جب کوئی عمل سخت اصولوں سے ہٹتا ہے یا بے ترتیب (unstructured) ڈیٹا کا سامنا کرتا ہے۔ ہماری AI ورک فلو آٹومیشن سروسز LLMs اور کمپیوٹر وژن کو براہ راست آپ کے کاروباری عمل میں شامل کرتی ہیں، جس سے سافٹ ویئر بالکل ایک انسانی آپریٹر کی طرح مبہم صورتحال کو سنبھالنے کے قابل ہو جاتا ہے۔ ہم ایسے ذہین پائپ لائنز بناتے ہیں جو وینڈر کی ای میلز پڑھ سکیں، رسید کا ڈیٹا نکال سکیں، اسے آپ کے ERP سے ملا سکیں، اور یا تو ادائیگی منظور کر لیں یا کسی اختلاف کی صورت میں انسان کے جائزے کے لیے بھیج دیں۔ n8n، LangChain اور OpenAI جیسے ٹولز کو ملا کر، ہم دستی اور بار بار کیے جانے والے ڈیٹا انٹری کے کاموں کو خود مختار عمل میں بدل دیتے ہیں۔ یہ صرف ڈیٹا کو ایک جگہ سے دوسری جگہ منتقل کرنا نہیں ہے؛ یہ اس AI کو تعینات کرنا ہے جو ڈیٹا کے سیاق و سباق کو سمجھتا ہے اور بڑے پیمانے پر پیچیدہ فیصلے کرتا ہے۔",
+    "features": [
+      "بے ترتیب ڈیٹا نکالنا (ای میلز، پی ڈی ایف، تصاویر)",
+      "ذہین دستاویز پروسیسنگ اور درجہ بندی",
+      "LLM کے ذریعے فیصلوں کی رہنمائی",
+      "ملٹی سسٹم آرکیسٹریشن (CRM, ERP, Slack)",
+      "خودکار خرابیوں کا انتظام (Exception Handling)",
+      "انسان کی شمولیت کے ساتھ منظوری کا عمل (Human-in-the-Loop)",
+      "کسٹم API اور Webhook انٹیگریشنز",
+      "مسلسل پراسیس مائننگ اور آپٹیمائزیشن"
+    ],
+    "benefits": [
+      "دستی ڈیٹا انٹری کے ہزاروں گھنٹے ختم کریں",
+      "دستاویزات اور درخواستوں کو بغیر کسی تاخیر کے 24/7 پروسیس کریں",
+      "بار بار کیے جانے والے مالیاتی کاموں میں انسانی غلطی کو کم کریں",
+      "عملے کی تعداد میں اضافہ کیے بغیر اپنے آپریشنز کو وسیع کریں",
+      "اس بے ترتیب ڈیٹا کو پروسیس کریں جسے روایتی RPA نہیں کر سکتا",
+      "AI کے ذریعے کیے گئے تمام فیصلوں کا مکمل آڈٹ ٹریل برقرار رکھیں"
+    ],
+    "metaTitle": "AI ورک فلو آٹومیشن سروسز | اسمارٹ RPA | PakSoft",
+    "metaDescription": "AI کے ساتھ پیچیدہ کاروباری عمل کو خودکار بنائیں۔ ہم ایسے ذہین ورک فلوز بناتے ہیں جو دستاویزات پڑھتے ہیں، فیصلے کرتے ہیں، اور کاموں کو خود بخود آگے بڑھاتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "پراسیس کا آڈٹ اور میپنگ",
+          "description": "ہم آپ کے موجودہ دستی ورک فلو کا تجزیہ کرتے ہیں، رکاوٹوں، فیصلوں کے مقامات اور شامل سسٹمز کی نشاندہی کرتے ہیں۔ ہم ان قطعی معیارات کو دستاویزی شکل دیتے ہیں جو آپ کی ٹیم فیصلے کرنے کے لیے استعمال کرتی ہے۔"
+        },
+        {
+          "step": 2,
+          "title": "ڈیٹا حاصل کرنے کا آرکیٹیکچر",
+          "description": "ہم بے ترتیب ڈیٹا کو پائپ لائن میں کھینچنے کے لیے کنیکٹر بناتے ہیں—چاہے وہ رسیدوں کے لیے شیئرڈ ان باکس کی نگرانی کرنا ہو یا ویب ہکس کو سننا ہو۔"
+        },
+        {
+          "step": 3,
+          "title": "AI لاجک اور ڈیٹا نکالنا",
+          "description": "ہم ورک فلو کے 'دماغ' کے طور پر کام کرنے کے لیے LLMs کو ترتیب دیتے ہیں۔ AI کو آنے والے ڈیٹا کی درجہ بندی کرنے، مخصوص اکائیوں (جیسے تاریخیں، نام، یا رقوم) کو نکالنے اور انہیں JSON میں ترتیب دینے کی ہدایت کی جاتی ہے۔"
+        },
+        {
+          "step": 4,
+          "title": "انٹیگریشن اور راؤٹنگ",
+          "description": "n8n یا کسٹم Python اسکرپٹس جیسے آرکیسٹریشن ٹولز کا استعمال کرتے ہوئے، ہم مرتب کردہ ڈیٹا کو AI کی منطق کی بنیاد پر آپ کے مطلوبہ سسٹمز (Salesforce, SAP) تک پہنچاتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "انسان کی شمولیت (Human-in-the-Loop) کا نفاذ",
+          "description": "ہم حفاظتی اقدامات بناتے ہیں۔ اگر AI کا اعتماد کا اسکور ایک خاص حد سے کم ہے، تو کام کو آگے بڑھنے سے پہلے دستی منظوری کے لیے Slack یا حسب ضرورت ڈیش بورڈ کے ذریعے ایک انسانی آپریٹر کو بھیج دیا جاتا ہے۔"
+        },
+        {
+          "step": 6,
+          "title": "ٹیسٹنگ اور ڈپلائمنٹ",
+          "description": "درستگی کو یقینی بنانے کے لیے ہم نئے پائپ لائن میں پرانا تاریخی ڈیٹا چلاتے ہیں۔ تصدیق کے بعد، مسلسل نگرانی کے ساتھ آٹومیشن کو لائیو کر دیا جاتا ہے۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "AI ورک فلو آٹومیشن Zapier جیسے ٹولز سے کس طرح مختلف ہے؟",
+          "answer": "روایتی آٹومیشن سخت ہے: 'اگر X ہو تو Y کرو'۔ اگر ان پٹ بے ترتیب (unstructured) ہے، تو یہ ٹوٹ جاتا ہے۔ AI آٹومیشن سیاق و سباق کو سمجھنے، تبدیلیوں کو سنبھالنے اور بکھرے ہوئے ڈیٹا سے معنی نکال کر فیصلے کرنے کے لیے LLMs کا استعمال کرتی ہے۔"
+        },
+        {
+          "question": "کیا یہ عمل ہاتھ سے لکھی ہوئی دستاویزات یا اسکین شدہ پی ڈی ایف کو پروسیس کر سکتا ہے؟",
+          "answer": "ہاں۔ ہم ورک فلو کے آغاز میں جدید OCR اور وژن ماڈلز (جیسے GPT-4o یا AWS Textract) کو ضم کرتے ہیں۔ AI ہینڈ رائٹنگ پڑھ سکتا ہے، ٹیبلز کے پیچیدہ ڈھانچے کو سمجھ سکتا ہے، اور قابل اعتماد طریقے سے ڈیٹا نکال سکتا ہے۔"
+        },
+        {
+          "question": "کیا AI ہماری نگرانی کے بغیر فیصلے کرے گا؟",
+          "answer": "صرف اس صورت میں جب آپ چاہیں۔ اہم کاموں کے لیے، ہم ایک انسانی آپریٹر کے ملوث ہونے (Human-in-the-loop) کی سختی سے وکالت کرتے ہیں۔ AI 95% بھاری کام کرتا ہے، لیکن انسان حتمی 'منظور کریں' بٹن پر کلک کرتا ہے۔"
+        },
+        {
+          "question": "آپ کن سسٹمز کے ساتھ انٹیگریٹ کر سکتے ہیں؟",
+          "answer": "اگر اس کا API ہے، تو ہم اس کے ساتھ ضم کر سکتے ہیں۔ ہم عام طور پر Google Workspace، Microsoft 365، Salesforce، HubSpot، Zendesk، Stripe، SAP، اور داخلی SQL ڈیٹا بیس کو جوڑنے والے ورک فلو بناتے ہیں۔"
+        },
+        {
+          "question": "آپ ان ورک فلوز میں حساس ڈیٹا کو کیسے سنبھالتے ہیں؟",
+          "answer": "سیکیورٹی ہماری اولین ترجیح ہے۔ ہم انٹرپرائز ٹائر APIs کا استعمال کرتے ہوئے حساس ڈیٹا پر کارروائی کر سکتے ہیں (جو آپ کے ڈیٹا پر تربیت نہیں دیتے) یا ڈیٹا کی مکمل حفاظت کو یقینی بنانے کے لیے آپ کے اپنے محفوظ کلاؤڈ پر پرائیویٹ LLMs تعینات کر سکتے ہیں۔"
+        },
+        {
+          "question": "اگر ورک فلو ناکام ہو جائے یا کوئی خرابی پیش آئے تو کیا ہوتا ہے؟",
+          "answer": "ہم ہر حصے میں خرابی سے نمٹنے کا مضبوط نظام بناتے ہیں۔ اگر API کا ٹائم آؤٹ ہو جائے یا AI ڈیٹا نہ نکال سکے، تو ورک فلو اس خرابی کو پکڑتا ہے، لاگ کرتا ہے، اور فوری طور پر آپ کی IT ٹیم کو الرٹ بھیجتا ہے۔"
+        },
+        {
+          "question": "ہم خودکار ورک فلو کے ROI کی پیمائش کیسے کرتے ہیں؟",
+          "answer": "ہم اس بات کا ٹریک رکھتے ہیں کہ ورک فلو کتنی بار چلتا ہے اور اس سے پہلے انسان کو اسی کام کو کرنے میں اوسطاً کتنا وقت لگتا تھا۔ بچائے گئے گھنٹوں کو ملازمین کے فی گھنٹہ کی شرح سے ضرب دے کر، ہم آپ کی بچت کا واضح ڈیش بورڈ فراہم کرتے ہیں۔"
+        },
+        {
+          "question": "کیا یہ سروس چھوٹے کاروباروں کے لیے موزوں ہے؟",
+          "answer": "بالکل۔ جب کہ بڑے ادارے AI RPA کے ذریعے لاکھوں کی بچت کرتے ہیں، چھوٹے کاروبار اضافی انتظامی عملے کی خدمات حاصل کیے بغیر اپنے کاموں کو بڑھا کر فائدہ اٹھاتے ہیں۔ ہم خاص طور پر n8n جیسے ٹولز کا استعمال کرتے ہوئے کم خرچ پائپ لائنز ڈیزائن کرتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "nodedotjs",
+          "name": "n8n"
+        },
+        {
+          "icon": "openai",
+          "name": "OpenAI / LLMs"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS Textract"
+        },
+        {
+          "icon": "slack",
+          "name": "Slack API"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Cloud Vision"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "أتمتة سير العمل بالذكاء الاصطناعي",
+    "shortDescription": "استبدل العمليات الصارمة القائمة على القواعد بمسارات عمل ذكية قادرة على قراءة رسائل البريد الإلكتروني، واستخراج البيانات، واتخاذ القرارات، وتوجيه المهام بشكل مستقل.",
+    "fullDescription": "تنهار أتمتة العمليات الروبوتية (RPA) التقليدية في اللحظة التي ينحرف فيها الإجراء عن القواعد الصارمة أو يواجه بيانات غير منظمة. تقوم خدمات أتمتة سير العمل بالذكاء الاصطناعي بضخ نماذج اللغات الكبيرة (LLMs) والرؤية الحاسوبية (Computer Vision) مباشرة في عمليات عملك، مما يمكّن البرمجيات من التعامل مع الغموض تماماً مثل المشغل البشري. نحن نبني مسارات ذكية قادرة على قراءة رسائل البريد الإلكتروني الواردة من الموردين، واستخراج بيانات الفواتير، ومطابقتها مع نظام ERP الخاص بك، وإما الموافقة على الدفع أو وضع علامة عليها لمراجعة بشرية مع ملخص للتناقض. من خلال تنظيم أدوات مثل n8n و LangChain و OpenAI، نحول مهام إدخال البيانات اليدوية والمتكررة إلى عمليات مستقلة ومستمرة. الأمر لا يتعلق فقط بنقل البيانات من نقطة إلى أخرى؛ بل يتعلق بنشر ذكاء اصطناعي يفهم سياق البيانات ويتخذ قرارات معقدة وشرطية على نطاق واسع.",
+    "features": [
+      "استخراج البيانات غير المنظمة (رسائل البريد، PDF، الصور)",
+      "المعالجة الذكية للمستندات والتصنيف",
+      "توجيه القرارات المدعوم بنماذج LLM",
+      "تنسيق الأنظمة المتعددة (CRM, ERP, Slack)",
+      "معالجة الاستثناءات الآلية وتسجيل الأخطاء (Logging)",
+      "مسارات عمل بموافقة بشرية (Human-in-the-Loop)",
+      "تكامل واجهات برمجة التطبيقات (APIs) المخصصة",
+      "تنقيب العمليات المستمر والتحسين (Process Mining)"
+    ],
+    "benefits": [
+      "القضاء على آلاف الساعات من إدخال البيانات يدوياً",
+      "معالجة المستندات والطلبات على مدار الساعة طوال أيام الأسبوع دون تأخير",
+      "الحد من الأخطاء البشرية في المهام المالية والامتثال المتكررة",
+      "توسيع نطاق العمليات دون الحاجة إلى زيادة عدد الموظفين بشكل خطي",
+      "التعامل مع البيانات غير المنظمة التي تعجز أدوات RPA التقليدية عن معالجتها",
+      "الاحتفاظ بمسارات تدقيق (Audit trails) كاملة لجميع قرارات الذكاء الاصطناعي"
+    ],
+    "metaTitle": "خدمات أتمتة سير العمل بالذكاء الاصطناعي | RPA الذكي | PakSoft",
+    "metaDescription": "قم بأتمتة العمليات التجارية المعقدة باستخدام الذكاء الاصطناعي. نبني مسارات عمل ذكية تقرأ المستندات، وتتخذ القرارات، وتوجه المهام تلقائياً.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تدقيق وتخطيط العمليات",
+          "description": "نقوم بتحليل مسارات العمل اليدوية الحالية لديك، وتحديد الاختناقات، ونقاط اتخاذ القرار، والأنظمة المعنية. نوثق المعايير الدقيقة التي يستخدمها فريقك لاتخاذ القرارات."
+        },
+        {
+          "step": 2,
+          "title": "هندسة استيعاب البيانات",
+          "description": "نبني الموصلات لسحب البيانات غير المنظمة إلى مسار العمل — سواء كان ذلك بمراقبة صندوق بريد مشترك للفواتير، أو الاستماع إلى الـ Webhooks، أو استخراج البيانات من بوابات خارجية."
+        },
+        {
+          "step": 3,
+          "title": "إعداد منطق الذكاء الاصطناعي والاستخراج",
+          "description": "نقوم بتهيئة نماذج LLMs لتعمل كـ 'عقل' لمسار العمل. يتم توجيه الذكاء الاصطناعي لتصنيف البيانات الواردة، واستخراج كيانات معينة (مثل التواريخ أو الأسماء أو المبالغ)، وهيكلتها في تنسيق JSON."
+        },
+        {
+          "step": 4,
+          "title": "التكامل والتوجيه",
+          "description": "باستخدام أدوات التنسيق مثل n8n أو نصوص Python المخصصة، نوجه البيانات المهيكلة إلى الأنظمة المستهدفة (Salesforce, SAP, قواعد البيانات) بناءً على المنطق الشرطي للذكاء الاصطناعي."
+        },
+        {
+          "step": 5,
+          "title": "تطبيق الموافقة البشرية (Human-in-the-Loop)",
+          "description": "نبني آليات أمان. إذا كانت درجة ثقة الذكاء الاصطناعي أقل من حد معين، يتم توجيه المهمة إلى مشغل بشري عبر Slack أو لوحة تحكم مخصصة للموافقة اليدوية قبل المتابعة."
+        },
+        {
+          "step": 6,
+          "title": "الاختبار والنشر",
+          "description": "نقوم بتشغيل البيانات التاريخية عبر المسار الجديد في بيئة اختبارية لضمان الدقة. بمجرد التحقق من صحتها، يتم تشغيل الأتمتة، مع مراقبة مستمرة للأخطاء وزمن استجابة الـ API."
+        }
+      ],
+      "faq": [
+        {
+          "question": "كيف تختلف أتمتة سير العمل بالذكاء الاصطناعي عن أدوات مثل Zapier؟",
+          "answer": "الأتمتة التقليدية صارمة: 'إذا حدث X، فافعل Y'. إذا كان الإدخال غير منظم (كمستند ممسوح ضوئياً)، فإنها تفشل. أتمتة الذكاء الاصطناعي تستخدم نماذج LLMs لفهم السياق والتعامل مع الاختلافات واتخاذ قرارات إدراكية من بيانات فوضوية."
+        },
+        {
+          "question": "هل يمكن لهذه العملية معالجة المستندات المكتوبة بخط اليد أو ملفات PDF الممسوحة ضوئياً؟",
+          "answer": "نعم. نقوم بدمج نماذج التعرف البصري على الحروف (OCR) المتقدمة ونماذج الرؤية (مثل GPT-4o أو AWS Textract) في بداية مسار العمل. يمكن للذكاء الاصطناعي قراءة الكتابة اليدوية، وفهم هياكل الجداول المعقدة، واستخراج البيانات بشكل موثوق."
+        },
+        {
+          "question": "هل سيتخذ الذكاء الاصطناعي قرارات دون إشرافنا؟",
+          "answer": "فقط إذا أردت ذلك. نحن ندافع بشدة عن نهج 'وجود الإنسان في الحلقة' لمسارات العمل الحرجة. يقوم الذكاء الاصطناعي بـ 95% من العمل الشاق (جمع البيانات، التلخيص، الصياغة)، لكن الإنسان هو من ينقر فوق الزر النهائي 'موافقة' أو 'إرسال'."
+        },
+        {
+          "question": "ما هي الأنظمة التي يمكنكم التكامل معها؟",
+          "answer": "إذا كان يحتوي على API، فيمكننا التكامل معه. نحن نبني عادةً مسارات عمل تربط Google Workspace و Microsoft 365 و Salesforce و HubSpot و Zendesk و Stripe و SAP وقواعد بيانات SQL الداخلية."
+        },
+        {
+          "question": "كيف تتعاملون مع البيانات الحساسة في مسارات العمل هذه؟",
+          "answer": "الأمان هو الأهم. يمكننا معالجة البيانات الحساسة باستخدام واجهات API على مستوى المؤسسة (والتي لا تتدرب على بياناتك) أو نشر نماذج LLM مفتوحة المصدر وخاصة تماماً على البنية التحتية السحابية الآمنة الخاصة بك."
+        },
+        {
+          "question": "ماذا يحدث إذا فشل مسار العمل أو واجه خطأ؟",
+          "answer": "نبني معالجة استثناءات قوية في كل عقدة. إذا انتهت مهلة API أو لم يتمكن الذكاء الاصطناعي من استخراج البيانات بثقة، يلتقط مسار العمل الخطأ، ويسجله، ويرسل على الفور تنبيهاً إلى فريق تكنولوجيا المعلومات لديك."
+        },
+        {
+          "question": "كيف نقيس العائد على الاستثمار (ROI) لمسار عمل آلي؟",
+          "answer": "نحن نتتبع بالضبط عدد مرات تشغيل مسار العمل ومتوسط الوقت الذي استغرقه الإنسان سابقاً للقيام بنفس المهمة. من خلال ضرب الساعات التي تم توفيرها في معدل أجر الموظف، نقدم لوحة تحكم واضحة لمدخراتك من التكاليف."
+        },
+        {
+          "question": "هل هذه الخدمة مناسبة للشركات الصغيرة؟",
+          "answer": "بالتأكيد. بينما توفر المؤسسات الكبيرة الملايين من خلال AI RPA، تستفيد الشركات الصغيرة من خلال توسيع نطاق عملياتها دون الحاجة إلى تعيين موظفين إداريين إضافيين. نحن نصمم مسارات فعالة من حيث التكلفة خصيصاً للشركات الصغيرة والمتوسطة باستخدام أدوات مثل n8n."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "nodedotjs",
+          "name": "n8n"
+        },
+        {
+          "icon": "openai",
+          "name": "OpenAI / LLMs"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS Textract"
+        },
+        {
+          "icon": "slack",
+          "name": "Slack API"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Cloud Vision"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        }
+      ]
+    }
+  }
+}

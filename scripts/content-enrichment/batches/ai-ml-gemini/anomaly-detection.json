@@ -1,0 +1,638 @@
+{
+  "slug": "anomaly-detection",
+  "en": {
+    "name": "AI Anomaly Detection",
+    "shortDescription": "Deploy real-time machine learning models to detect unusual patterns, prevent fraud, and identify system failures before they occur.",
+    "fullDescription": "Traditional rule-based monitoring systems are noisy. They trigger countless false-positive alerts when conditions slightly change, or worse, they miss sophisticated, multi-variable threats entirely. Our AI Anomaly Detection services implement advanced machine learning algorithms (like Isolation Forests, Autoencoders, and Prophet) to understand the normal baseline behavior of your systems, users, or financial transactions. Instead of relying on static thresholds, our AI adapts dynamically to seasonality, trends, and evolving business logic. Whether you are monitoring IoT sensor data for predictive maintenance, analyzing server logs to prevent cyberattacks, or scanning thousands of credit card transactions for fraud in real-time, we build robust detection pipelines that surface only the anomalies that actually matter. We combine high-speed streaming data platforms with interpretable ML models, so when an alert is triggered, your team receives the exact root-cause analysis needed to take immediate action.",
+    "features": [
+      "Real-Time Streaming Data Processing (Kafka)",
+      "Dynamic, Self-Adjusting Thresholds",
+      "Multi-variate Pattern Recognition",
+      "Root Cause Analysis & Explainable AI",
+      "Fraud Detection & Transaction Scoring",
+      "IoT Predictive Maintenance Alerts",
+      "Automated Alert Triage & Routing",
+      "Custom ML Model Training (Autoencoders)"
+    ],
+    "benefits": [
+      "Drastically reduce alert fatigue by filtering out false positives",
+      "Identify previously unknown fraud patterns or cyber threats",
+      "Prevent expensive machinery breakdowns with predictive maintenance",
+      "Detect subtle, multi-variable anomalies that human analysts miss",
+      "Adapt automatically to changing business trends without manual rule updates",
+      "Provide your operations team with clear, interpretable root-cause alerts"
+    ],
+    "metaTitle": "AI Anomaly Detection Services | Fraud & Predictive ML | PakSoft",
+    "metaDescription": "Detect fraud, prevent system failures, and reduce false alerts with AI anomaly detection. We deploy machine learning models for real-time pattern analysis.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Baseline Data Analysis",
+          "description": "We analyze your historical data (logs, transactions, sensor metrics) to establish what 'normal' behavior looks like, identifying seasonal trends and acceptable variances."
+        },
+        {
+          "step": 2,
+          "title": "Feature Engineering",
+          "description": "We extract the most relevant data points (features) that strongly correlate with anomalous events, transforming raw data into a format suitable for machine learning algorithms."
+        },
+        {
+          "step": 3,
+          "title": "Model Selection & Training",
+          "description": "We train unsupervised or semi-supervised models (like Isolation Forests or Autoencoders) that excel at finding outliers without requiring massive amounts of perfectly labeled failure data."
+        },
+        {
+          "step": 4,
+          "title": "Streaming Pipeline Development",
+          "description": "Anomaly detection must be fast. We build a high-throughput data pipeline (using Apache Kafka or AWS Kinesis) that streams live data directly into the inference model."
+        },
+        {
+          "step": 5,
+          "title": "Explainability & Alerting",
+          "description": "We configure SHAP values or LIME to make the AI's decisions interpretable. When an anomaly is detected, the system generates an alert showing exactly which variables triggered it."
+        },
+        {
+          "step": 6,
+          "title": "Deployment & Continuous Tuning",
+          "description": "The system goes live. We establish a feedback loop where human analysts label the alerts (True Positive/False Positive), allowing the model to continuously learn and reduce noise."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How is AI anomaly detection better than standard threshold alerts?",
+          "answer": "Standard alerts use static rules (e.g., 'alert if CPU > 90%'). This ignores context. AI anomaly detection learns the patterns. It might know that 90% CPU is normal during Friday backups, but 85% CPU is highly anomalous at 3 AM on a Tuesday, allowing it to catch subtle issues while avoiding false alarms."
+        },
+        {
+          "question": "What kind of data can you detect anomalies in?",
+          "answer": "We can process time-series data (server metrics, stock prices), transactional data (credit card swipes, e-commerce purchases), log data (cybersecurity events, application errors), and IoT sensor data (temperature, vibration, pressure)."
+        },
+        {
+          "question": "Do we need historical data of past failures or fraud?",
+          "answer": "Not necessarily. While labeled failure data is great, anomalies are by definition rare. We predominantly use Unsupervised Learning techniques (like Autoencoders) which only need a large dataset of 'normal' operations. The AI learns the normal state and flags anything that significantly deviates from it."
+        },
+        {
+          "question": "How fast can the AI detect an anomaly?",
+          "answer": "For use cases like credit card fraud, we deploy the model at the edge or via high-speed API gateways to achieve sub-100 millisecond inference times, allowing you to block the transaction before it is approved."
+        },
+        {
+          "question": "Will my team understand why an alert was triggered?",
+          "answer": "Yes. Black-box AI is useless for operations. We implement Explainable AI (XAI) techniques. The alert won't just say 'Anomaly Detected'; it will say 'Anomaly Detected: Transaction amount is 3x higher than user's average AND IP address originates from a new country.'"
+        },
+        {
+          "question": "How do you handle seasonality or changing business trends?",
+          "answer": "We use time-series forecasting models (like Prophet) that inherently understand daily, weekly, and yearly seasonality. Furthermore, our models are designed to adapt dynamically. If your baseline traffic doubles over six months, the AI adjusts its concept of 'normal' smoothly without triggering false alarms."
+        },
+        {
+          "question": "Can this be used for predictive maintenance in manufacturing?",
+          "answer": "Absolutely. By analyzing IoT sensor data (like vibration and heat on a CNC machine), the AI detects microscopic deviations from normal behavior, predicting a mechanical failure weeks before a human operator would notice or a machine breaks down."
+        },
+        {
+          "question": "How do we integrate this into our existing alerting systems?",
+          "answer": "We route the AI's outputs directly into your existing infrastructure. We can send formatted alerts to PagerDuty, Slack, Jira, or Datadog, complete with priority scoring and the actionable context needed for triage."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python / Scikit-Learn"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch (Autoencoders)"
+        },
+        {
+          "icon": "apachekafka",
+          "name": "Apache Kafka"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS SageMaker"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "slack",
+          "name": "Slack / PagerDuty"
+        },
+        {
+          "icon": "fastapi",
+          "name": "FastAPI"
+        },
+        {
+          "icon": "redis",
+          "name": "Redis"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Yapay Zeka Anormallik Tespiti",
+    "shortDescription": "Alışılmadık kalıpları tespit etmek, dolandırıcılığı önlemek ve sistem arızalarını gerçekleşmeden önce belirlemek için gerçek zamanlı makine öğrenimi modellerini devreye alın.",
+    "fullDescription": "Geleneksel kural tabanlı izleme sistemleri gürültülüdür. Koşullar biraz değiştiğinde sayısız yanlış alarm (false-positive) tetiklerler veya daha kötüsü, karmaşık tehditleri tamamen gözden kaçırırlar. Yapay Zeka Anormallik Tespiti hizmetlerimiz, sistemlerinizin, kullanıcılarınızın veya finansal işlemlerinizin normal temel davranışını anlamak için gelişmiş makine öğrenimi algoritmaları (İzolasyon Ormanları, Otokodlayıcılar (Autoencoders) ve Prophet gibi) uygular. Statik eşiklere güvenmek yerine, yapay zekamız mevsimselliğe, trendlere ve gelişen iş mantığına dinamik olarak uyum sağlar. Kestirimci bakım için IoT sensör verilerini izliyor, siber saldırıları önlemek için sunucu günlüklerini (logs) analiz ediyor veya dolandırıcılık tespiti için binlerce kredi kartı işlemini gerçek zamanlı olarak tarıyor olmanız fark etmez; yalnızca gerçekten önemli olan anormallikleri yüzeye çıkaran sağlam tespit hatları kuruyoruz. Yüksek hızlı veri akış platformlarını (streaming) yorumlanabilir makine öğrenimi modelleriyle birleştiriyoruz, böylece bir uyarı tetiklendiğinde ekibiniz derhal harekete geçmek için gereken kesin kök neden analizini alır.",
+    "features": [
+      "Gerçek Zamanlı Veri Akışı İşleme (Kafka)",
+      "Dinamik, Kendi Kendini Ayarlayan Eşikler",
+      "Çok Değişkenli Kalıp Tanıma (Pattern Recognition)",
+      "Kök Neden Analizi ve Açıklanabilir Yapay Zeka (XAI)",
+      "Dolandırıcılık (Fraud) Tespiti ve İşlem Puanlama",
+      "IoT Kestirimci Bakım Uyarıları",
+      "Otomatik Uyarı Önceliklendirme ve Yönlendirme",
+      "Özel ML Model Eğitimi (Otokodlayıcılar vb.)"
+    ],
+    "benefits": [
+      "Yanlış alarmları filtreleyerek uyarı yorgunluğunu (alert fatigue) büyük ölçüde azaltın",
+      "Daha önce bilinmeyen dolandırıcılık kalıplarını veya siber tehditleri tespit edin",
+      "Kestirimci bakım ile pahalı makine arızalarını önleyin",
+      "İnsan analistlerin gözden kaçırdığı ince, çok değişkenli anormallikleri yakalayın",
+      "Manuel kural güncellemeleri olmadan değişen iş trendlerine otomatik olarak uyum sağlayın",
+      "Operasyon ekibinize net, anlaşılır ve kök nedeni belirten uyarılar sağlayın"
+    ],
+    "metaTitle": "Yapay Zeka Anormallik Tespiti | PakSoft",
+    "metaDescription": "Yapay zeka anormallik tespiti ile dolandırıcılığı tespit edin ve yanlış alarmları azaltın. Gerçek zamanlı kalıp analizi için makine öğrenimi modelleri kuruyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Temel (Baseline) Veri Analizi",
+          "description": "Geçmiş verilerinizi (günlükler, işlemler, sensör metrikleri) analiz ederek 'normal' davranışın neye benzediğini, mevsimsel eğilimleri ve kabul edilebilir sapmaları belirliyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Özellik Mühendisliği (Feature Engineering)",
+          "description": "Anormal olaylarla güçlü bir şekilde ilişkili olan en alakalı veri noktalarını (özellikleri) çıkararak, ham verileri makine öğrenimi algoritmalarına uygun bir formata dönüştürüyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Model Seçimi ve Eğitimi",
+          "description": "Mükemmel şekilde etiketlenmiş devasa arıza verilerine ihtiyaç duymadan aykırı değerleri bulmada üstün olan denetimsiz veya yarı denetimli modeller (İzolasyon Ormanları veya Otokodlayıcılar gibi) eğitiyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Veri Akış (Streaming) Hattının Geliştirilmesi",
+          "description": "Anormallik tespiti hızlı olmalıdır. Canlı verileri doğrudan çıkarım modeline akıtan (Apache Kafka veya AWS Kinesis kullanarak) yüksek verimli bir veri hattı kuruyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Açıklanabilirlik ve Uyarı Sistemi",
+          "description": "Yapay zekanın kararlarını yorumlanabilir hale getirmek için SHAP değerlerini veya LIME'ı yapılandırıyoruz. Bir anormallik tespit edildiğinde sistem, uyarıyı hangi değişkenlerin tetiklediğini tam olarak gösterir."
+        },
+        {
+          "step": 6,
+          "title": "Yayına Alma ve Sürekli Ayarlama",
+          "description": "Sistem devreye girer. İnsan analistlerin uyarıları etiketlediği (Gerçek Pozitif/Yanlış Pozitif) bir geri bildirim döngüsü kurarak, modelin sürekli öğrenmesini ve gürültüyü azaltmasını sağlıyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Yapay zeka anormallik tespiti, standart eşik uyarılarından neden daha iyidir?",
+          "answer": "Standart uyarılar statik kurallar kullanır ('CPU > %90 ise uyar'). Bu, bağlamı yok sayar. Yapay zeka anormallik tespiti ise kalıpları öğrenir. Cuma yedeklemeleri sırasında %90 CPU'nun normal olduğunu, ancak Salı sabahı saat 3'te %85 CPU'nun son derece anormal olduğunu bilebilir. Böylece yanlış alarmları önlerken ince sorunları yakalar."
+        },
+        {
+          "question": "Hangi tür verilerde anormallikleri tespit edebilirsiniz?",
+          "answer": "Zaman serisi verilerini (sunucu metrikleri, hisse senedi fiyatları), işlemsel verileri (kredi kartı geçişleri, e-ticaret satın alımları), günlük verilerini (siber güvenlik olayları, uygulama hataları) ve IoT sensör verilerini (sıcaklık, titreşim, basınç) işleyebiliriz."
+        },
+        {
+          "question": "Geçmiş arızaların veya dolandırıcılıkların geçmiş verilerine ihtiyacımız var mı?",
+          "answer": "Şart değil. Etiketlenmiş arıza verisi harika olsa da, anormallikler doğası gereği nadirdir. Ağırlıklı olarak yalnızca büyük bir 'normal' operasyon veri seti gerektiren Denetimsiz Öğrenme (Unsupervised Learning) tekniklerini (Otokodlayıcılar gibi) kullanıyoruz. Yapay zeka normal durumu öğrenir ve bundan önemli ölçüde sapan her şeyi işaretler."
+        },
+        {
+          "question": "Yapay zeka bir anormalliği ne kadar hızlı tespit edebilir?",
+          "answer": "Kredi kartı dolandırıcılığı gibi kullanım senaryoları için, işlemi onaylanmadan önce engelleyebilmeniz adına, modelimizi uçta (edge) veya yüksek hızlı API ağ geçitleri aracılığıyla konuşlandırarak 100 milisaniyenin altında çıkarım (inference) süreleri elde ediyoruz."
+        },
+        {
+          "question": "Ekibim bir uyarının neden tetiklendiğini anlayabilecek mi?",
+          "answer": "Evet. Kara kutu (Black-box) yapay zeka operasyonlar için işe yaramaz. Açıklanabilir Yapay Zeka (XAI) teknikleri uyguluyoruz. Uyarı sadece 'Anormallik Tespit Edildi' demez; 'Anormallik Tespit Edildi: İşlem tutarı kullanıcının ortalamasından 3 kat yüksek VE IP adresi yeni bir ülkeden kaynaklanıyor' der."
+        },
+        {
+          "question": "Mevsimsellik (seasonality) veya değişen iş trendleriyle nasıl başa çıkıyorsunuz?",
+          "answer": "Günlük, haftalık ve yıllık mevsimselliği doğası gereği anlayan zaman serisi tahmin modelleri (Prophet gibi) kullanıyoruz. Dahası, modellerimiz dinamik olarak adapte olacak şekilde tasarlanmıştır. Temel trafiğiniz altı ay içinde iki katına çıkarsa, yapay zeka yanlış alarm vermeden 'normal' kavramını sorunsuzca ayarlar."
+        },
+        {
+          "question": "Bu üretimde kestirimci bakım (predictive maintenance) için kullanılabilir mi?",
+          "answer": "Kesinlikle. IoT sensör verilerini (örneğin bir CNC makinesindeki titreşim ve ısı) analiz eden yapay zeka, normal davranıştan mikroskobik sapmaları tespit ederek, bir mekanik arızayı bir insan operatörün fark etmesinden haftalar önce tahmin eder."
+        },
+        {
+          "question": "Bunu mevcut uyarı sistemlerimize nasıl entegre edebiliriz?",
+          "answer": "Yapay zekanın çıktılarını doğrudan mevcut altyapınıza yönlendiriyoruz. PagerDuty, Slack, Jira veya Datadog'a, öncelik puanlaması ve müdahale için gereken eyleme geçirilebilir bağlamla birlikte biçimlendirilmiş uyarılar gönderebiliriz."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python / Scikit-Learn"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch (Autoencoders)"
+        },
+        {
+          "icon": "apachekafka",
+          "name": "Apache Kafka"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS SageMaker"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "slack",
+          "name": "Slack / PagerDuty"
+        },
+        {
+          "icon": "fastapi",
+          "name": "FastAPI"
+        },
+        {
+          "icon": "redis",
+          "name": "Redis"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "KI-Anomalieerkennung",
+    "shortDescription": "Setzen Sie Echtzeit-Machine-Learning-Modelle ein, um ungewöhnliche Muster zu erkennen, Betrug zu verhindern und Systemausfälle zu identifizieren, bevor sie auftreten.",
+    "fullDescription": "Herkömmliche, regelbasierte Überwachungssysteme sind fehleranfällig. Sie lösen unzählige Fehlalarme (False Positives) aus, wenn sich Bedingungen leicht ändern, oder schlimmer noch, sie übersehen komplexe Bedrohungen komplett. Unsere Services zur KI-Anomalieerkennung implementieren fortschrittliche ML-Algorithmen (wie Isolation Forests, Autoencoder und Prophet), um das normale Basisverhalten Ihrer Systeme, Nutzer oder Finanztransaktionen zu verstehen. Anstatt sich auf statische Schwellenwerte zu verlassen, passt sich unsere KI dynamisch an Saisonalitäten, Trends und neue Geschäftslogiken an. Egal, ob Sie IoT-Sensordaten für Predictive Maintenance überwachen, Server-Logs zur Abwehr von Cyberangriffen analysieren oder Tausende von Kreditkartentransaktionen in Echtzeit auf Betrug prüfen — wir bauen robuste Erkennungspipelines, die nur die wirklich relevanten Anomalien aufzeigen. Wir kombinieren High-Speed-Streaming-Plattformen mit interpretierbaren Modellen, sodass Ihr Team bei einem Alarm die exakte Ursachenanalyse erhält, um sofort handeln zu können.",
+    "features": [
+      "Echtzeit-Streaming-Datenverarbeitung (Kafka)",
+      "Dynamische, selbstanpassende Schwellenwerte",
+      "Multivariate Mustererkennung",
+      "Ursachenanalyse (Root Cause) & Explainable AI",
+      "Betrugserkennung & Transaktions-Scoring",
+      "Predictive Maintenance-Alarme für IoT",
+      "Automatisierte Alarm-Triage & Routing",
+      "Custom ML-Modelltraining (Autoencoder etc.)"
+    ],
+    "benefits": [
+      "Reduzierung von 'Alert Fatigue' durch Herausfiltern von Fehlalarmen",
+      "Identifikation bisher unbekannter Betrugsmuster oder Cyber-Bedrohungen",
+      "Vermeidung teurer Maschinenausfälle durch Predictive Maintenance",
+      "Erkennung subtiler Anomalien, die menschliche Analysten übersehen",
+      "Automatische Anpassung an neue Geschäftstrends ohne manuelle Regel-Updates",
+      "Bereitstellung klarer, interpretierbarer Ursachen-Alarme für Ihr Ops-Team"
+    ],
+    "metaTitle": "KI-Anomalieerkennung | Fraud & Predictive ML | PakSoft",
+    "metaDescription": "Erkennen Sie Betrug und reduzieren Sie Fehlalarme mit KI-Anomalieerkennung. Wir implementieren ML-Modelle für Echtzeit-Musteranalyse und Predictive Maintenance.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Baseline-Datenanalyse",
+          "description": "Wir analysieren Ihre historischen Daten (Logs, Transaktionen, Metriken), um zu definieren, wie 'normales' Verhalten aussieht, und identifizieren saisonale Trends und akzeptable Varianzen."
+        },
+        {
+          "step": 2,
+          "title": "Feature Engineering",
+          "description": "Wir extrahieren die relevantesten Datenpunkte (Features), die stark mit anomalen Ereignissen korrelieren, und transformieren Rohdaten in ein ML-taugliches Format."
+        },
+        {
+          "step": 3,
+          "title": "Modellauswahl & Training",
+          "description": "Wir trainieren unüberwachte Modelle (wie Isolation Forests oder Autoencoder), die exzellent darin sind, Ausreißer zu finden, ohne massive Mengen perfekt gelabelter Fehlerdaten zu benötigen."
+        },
+        {
+          "step": 4,
+          "title": "Entwicklung der Streaming-Pipeline",
+          "description": "Anomalieerkennung muss schnell sein. Wir bauen eine High-Throughput-Datenpipeline (Apache Kafka / AWS Kinesis), die Live-Daten direkt in das Inferenz-Modell streamt."
+        },
+        {
+          "step": 5,
+          "title": "Explainability & Alerting",
+          "description": "Wir konfigurieren SHAP-Werte oder LIME, um KI-Entscheidungen interpretierbar zu machen. Wird eine Anomalie erkannt, zeigt der Alarm genau, welche Variablen ihn ausgelöst haben."
+        },
+        {
+          "step": 6,
+          "title": "Deployment & Continuous Tuning",
+          "description": "Das System geht live. Wir etablieren eine Feedback-Schleife, in der Analysten Alarme labeln (True/False Positive), wodurch das Modell kontinuierlich lernt und Rauschen reduziert."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Warum ist KI-Anomalieerkennung besser als standardmäßige Schwellenwert-Alarme?",
+          "answer": "Standard-Alarme nutzen statische Regeln (z. B. 'Alarm wenn CPU > 90%'). Das ignoriert den Kontext. Die KI lernt Muster. Sie weiß, dass 90 % CPU während der Freitags-Backups normal sind, aber 85 % an einem Dienstag um 3 Uhr nachts höchst anomal, was Fehlalarme drastisch reduziert."
+        },
+        {
+          "question": "In welchen Daten können Sie Anomalien erkennen?",
+          "answer": "Wir verarbeiten Zeitreihendaten (Servermetriken, Aktienkurse), Transaktionsdaten (Kreditkarten, E-Commerce), Log-Daten (Cybersecurity, Anwendungsfehler) und IoT-Sensordaten (Temperatur, Vibration, Druck)."
+        },
+        {
+          "question": "Benötigen wir historische Daten von vergangenen Fehlern oder Betrugsfällen?",
+          "answer": "Nicht zwingend. Gelabelte Fehlerdaten sind großartig, aber Anomalien sind per Definition selten. Wir nutzen primär Unsupervised Learning (wie Autoencoder), das nur einen großen Datensatz an 'Normalbetrieb' benötigt. Die KI flaggt alles, was signifikant davon abweicht."
+        },
+        {
+          "question": "Wie schnell kann die KI eine Anomalie erkennen?",
+          "answer": "Für Fälle wie Kreditkartenbetrug stellen wir das Modell am Edge oder über High-Speed-API-Gateways bereit, um Inferenzzeiten von unter 100 Millisekunden zu erreichen, sodass Sie Transaktionen vor der Genehmigung blockieren können."
+        },
+        {
+          "question": "Wird mein Team verstehen, warum ein Alarm ausgelöst wurde?",
+          "answer": "Ja. Black-Box-KI ist für Operations nutzlos. Wir implementieren Explainable AI (XAI). Der Alarm sagt nicht nur 'Anomalie erkannt', sondern: 'Anomalie: Transaktionsbetrag ist 3x höher als der Durchschnitt des Nutzers UND IP-Adresse stammt aus neuem Land.'"
+        },
+        {
+          "question": "Wie gehen Sie mit Saisonalität oder sich ändernden Geschäftstrends um?",
+          "answer": "Wir verwenden Forecasting-Modelle (wie Prophet), die tägliche, wöchentliche und jährliche Saisonalitäten von Natur aus verstehen. Unsere Modelle passen sich dynamisch an, wenn z.B. Ihr Baseline-Traffic in sechs Monaten wächst, ohne Fehlalarme auszulösen."
+        },
+        {
+          "question": "Kann dies für Predictive Maintenance in der Fertigung genutzt werden?",
+          "answer": "Absolut. Durch die Analyse von IoT-Sensordaten (wie Vibration an einer CNC-Maschine) erkennt die KI mikroskopische Abweichungen vom Normalverhalten und prognostiziert einen mechanischen Ausfall Wochen bevor ein Mensch ihn bemerkt."
+        },
+        {
+          "question": "Wie integrieren wir das in unsere bestehenden Alerting-Systeme?",
+          "answer": "Wir leiten die KI-Outputs direkt in Ihre bestehende Infrastruktur. Wir können formatierte Alarme an PagerDuty, Slack, Jira oder Datadog senden, komplett mit Prioritäts-Scoring und dem nötigen Kontext für die Triage."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python / Scikit-Learn"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch (Autoencoders)"
+        },
+        {
+          "icon": "apachekafka",
+          "name": "Apache Kafka"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS SageMaker"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "slack",
+          "name": "Slack / PagerDuty"
+        },
+        {
+          "icon": "fastapi",
+          "name": "FastAPI"
+        },
+        {
+          "icon": "redis",
+          "name": "Redis"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "AI اناملی (غیر معمولی پن) کا پتہ لگانا",
+    "shortDescription": "غیر معمولی پیٹرنز کا پتہ لگانے، دھوکہ دہی کو روکنے اور سسٹم کی خرابیوں کے ہونے سے پہلے ان کی نشاندہی کرنے کے لیے ریئل ٹائم مشین لرننگ ماڈلز تعینات کریں۔",
+    "fullDescription": "روایتی اصولوں پر مبنی نگرانی کے نظام شور مچانے والے ہوتے ہیں۔ حالات کے تھوڑا سا تبدیل ہونے پر وہ بے شمار غلط الارم (false-positives) بجاتے ہیں، یا اس سے بھی برا، وہ پیچیدہ خطرات کو مکمل طور پر نظر انداز کر دیتے ہیں۔ ہماری AI اناملی ڈیٹیکشن سروسز آپ کے سسٹمز، صارفین، یا مالیاتی لین دین کے عام طرز عمل کو سمجھنے کے لیے جدید مشین لرننگ الگورتھم (جیسے Isolation Forests, Autoencoders، اور Prophet) کو نافذ کرتی ہیں۔ جامد حدوں (static thresholds) پر انحصار کرنے کے بجائے، ہماری AI موسم، رجحانات، اور کاروباری منطق کے مطابق خود کو متحرک طور پر ڈھال لیتی ہے۔ چاہے آپ پیشگی دیکھ بھال (predictive maintenance) کے لیے IoT سینسر ڈیٹا کی نگرانی کر رہے ہوں، سائبر حملوں کو روکنے کے لیے سرور لاگز کا تجزیہ کر رہے ہوں، یا ریئل ٹائم میں دھوکہ دہی کے لیے ہزاروں کریڈٹ کارڈ ٹرانزیکشنز کو اسکین کر رہے ہوں، ہم ایسے مضبوط نظام بناتے ہیں جو صرف ان غیر معمولی واقعات کو سامنے لاتے ہیں جو واقعی اہم ہیں۔ ہم تیز رفتار اسٹریمنگ ڈیٹا پلیٹ فارمز کو قابل فہم ML ماڈلز کے ساتھ ملاتے ہیں، تاکہ جب کوئی الرٹ آئے تو آپ کی ٹیم کو فوری کارروائی کے لیے درکار اصل وجہ (root-cause) کا تجزیہ ملے۔",
+    "features": [
+      "ریئل ٹائم اسٹریمنگ ڈیٹا پروسیسنگ (Kafka)",
+      "متحرک، خود کار ایڈجسٹ ہونے والی حدیں (Thresholds)",
+      "کثیر متغیر پیٹرن کی پہچان",
+      "اصل وجہ کا تجزیہ اور قابلِ فہم AI",
+      "دھوکہ دہی کا پتہ لگانا اور ٹرانزیکشن اسکورنگ",
+      "IoT پیشگی دیکھ بھال کے الرٹس",
+      "خودکار الرٹ کی ترجیح اور راؤٹنگ",
+      "حسب ضرورت ML ماڈل ٹریننگ"
+    ],
+    "benefits": [
+      "غلط الارمز کو فلٹر کر کے الرٹ کی تھکاوٹ کو کافی حد تک کم کریں",
+      "دھوکہ دہی کے پہلے سے نامعلوم پیٹرنز یا سائبر خطرات کی نشاندہی کریں",
+      "پیشن گوئی کی دیکھ بھال کے ذریعے مہنگی مشینری کی خرابی کو روکیں",
+      "ان باریک غیر معمولی باتوں کا پتہ لگائیں جنہیں انسان نظر انداز کر دیتے ہیں",
+      "دستی اپ ڈیٹس کے بغیر کاروباری رجحانات میں تبدیلی کے ساتھ خودکار مطابقت پیدا کریں",
+      "اپنی آپریشنز ٹیم کو واضح اور قابل فہم الرٹس فراہم کریں"
+    ],
+    "metaTitle": "AI اناملی ڈیٹیکشن سروسز | فراڈ اور پیشگی ML | PakSoft",
+    "metaDescription": "دھوکہ دہی کا پتہ لگائیں اور AI کی مدد سے غلط الرٹس کو کم کریں۔ ہم پیٹرن کے ریئل ٹائم تجزیے کے لیے مشین لرننگ ماڈلز تعینات کرتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "بیس لائن ڈیٹا کا تجزیہ",
+          "description": "ہم 'نارمل' رویے کی شناخت کرنے، موسمی رجحانات اور قابل قبول تغیرات کی نشاندہی کرنے کے لیے آپ کے تاریخی ڈیٹا کا تجزیہ کرتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "فیچر انجینئرنگ",
+          "description": "ہم سب سے متعلقہ ڈیٹا پوائنٹس نکالتے ہیں جو غیر معمولی واقعات سے گہرا تعلق رکھتے ہیں، خام ڈیٹا کو مشین لرننگ الگورتھم کے لیے موزوں فارمیٹ میں تبدیل کرتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "ماڈل کا انتخاب اور ٹریننگ",
+          "description": "ہم غیر زیرِ نگرانی یا نیم زیرِ نگرانی ماڈلز (جیسے Autoencoders) کی تربیت کرتے ہیں جو لیبل شدہ خراب ڈیٹا کی بڑی مقدار کے بغیر بھی غیر معمولی چیزیں تلاش کرنے میں بہترین ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "اسٹریمنگ پائپ لائن ڈیولپمنٹ",
+          "description": "خرابی کا پتہ لگانا تیز ہونا چاہیے۔ ہم ایک ہائی تھروپ پٹ ڈیٹا پائپ لائن (Kafka یا Kinesis کا استعمال کرتے ہوئے) بناتے ہیں جو لائیو ڈیٹا کو براہ راست ماڈل میں اسٹریم کرتی ہے۔"
+        },
+        {
+          "step": 5,
+          "title": "قابلِ فہم الرٹنگ",
+          "description": "ہم AI کے فیصلوں کو قابل فہم بنانے کے لیے SHAP ویلیوز مرتب کرتے ہیں۔ جب کسی خرابی کا پتہ چلتا ہے، تو سسٹم ایک الرٹ تیار کرتا ہے جس میں دکھایا جاتا ہے کہ کن وجوہات نے اسے متحرک کیا۔"
+        },
+        {
+          "step": 6,
+          "title": "تعیناتی اور مسلسل بہتری",
+          "description": "سسٹم لائیو ہو جاتا ہے۔ ہم ایک فیڈ بیک لوپ قائم کرتے ہیں جہاں انسانی تجزیہ کار الرٹس کو لیبل کرتے ہیں، جس سے ماڈل کو مسلسل سیکھنے اور شور کو کم کرنے میں مدد ملتی ہے۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "AI کی مدد سے اناملی ڈیٹیکشن عام الرٹس سے بہتر کیسے ہے؟",
+          "answer": "معیاری الرٹس طے شدہ اصول استعمال کرتے ہیں (جیسے 'اگر CPU 90 فیصد سے زیادہ ہو تو الرٹ کریں')۔ یہ سیاق و سباق کو نظر انداز کرتا ہے۔ AI پیٹرن سیکھتا ہے۔ یہ جانتا ہے کہ جمعہ کے بیک اپ کے دوران 90% CPU نارمل ہے، لیکن منگل کی صبح 3 بجے 85% CPU بھی غیر معمولی ہے، جس سے جھوٹے الارم سے بچنے میں مدد ملتی ہے۔"
+        },
+        {
+          "question": "آپ کس قسم کے ڈیٹا میں غیر معمولی باتوں کا پتہ لگا سکتے ہیں؟",
+          "answer": "ہم ٹائم سیریز ڈیٹا (سرور میٹرکس)، ٹرانزیکشنل ڈیٹا (کریڈٹ کارڈ سوائپس)، لاگ ڈیٹا (سائبر سیکیورٹی ایونٹس)، اور IoT سینسر ڈیٹا (درجہ حرارت، دباؤ) پر کارروائی کر سکتے ہیں۔"
+        },
+        {
+          "question": "کیا ہمیں ماضی کی ناکامیوں یا دھوکہ دہی کے تاریخی ڈیٹا کی ضرورت ہے؟",
+          "answer": "ضروری نہیں۔ اگرچہ ناکامی کا ڈیٹا بہت اچھا ہے، غیر معمولی واقعات تعریف کے لحاظ سے نایاب ہیں۔ ہم بنیادی طور پر Unsupervised Learning تکنیک (جیسے Autoencoders) استعمال کرتے ہیں جنہیں صرف 'نارمل' آپریشنز کے بڑے ڈیٹاسیٹ کی ضرورت ہوتی ہے۔ AI معمول کی حالت کو سیکھ لیتا ہے اور اس سے نمایاں طور پر ہٹنے والی کسی بھی چیز کو فلیگ کر دیتا ہے۔"
+        },
+        {
+          "question": "AI کتنی جلدی کسی خرابی کا پتہ لگا سکتا ہے؟",
+          "answer": "کریڈٹ کارڈ فراڈ جیسے استعمال کے کیسز کے لیے، ہم 100 ملی سیکنڈ سے کم کا رسپانس ٹائم حاصل کرنے کے لیے ہائی اسپیڈ API گیٹ ویز کے ذریعے ماڈل کو تعینات کرتے ہیں، جس سے آپ ٹرانزیکشن کو منظور ہونے سے پہلے ہی بلاک کر سکتے ہیں۔"
+        },
+        {
+          "question": "کیا میری ٹیم سمجھے گی کہ الرٹ کیوں آیا؟",
+          "answer": "ہاں۔ بلیک باکس AI کام کے لیے بے کار ہے۔ ہم Explainable AI (XAI) تکنیک نافذ کرتے ہیں۔ الرٹ صرف یہ نہیں کہے گا 'خرابی کا پتہ چلا'؛ یہ بتائے گا 'خرابی: لین دین کی رقم صارف کی اوسط سے 3 گنا زیادہ ہے اور آئی پی ایڈریس نئے ملک کا ہے۔'"
+        },
+        {
+          "question": "آپ موسمی تبدیلیوں یا بدلتے کاروباری رجحانات کو کیسے سنبھالتے ہیں؟",
+          "answer": "ہم ٹائم سیریز کی پیش گوئی کرنے والے ماڈل استعمال کرتے ہیں جو قدرتی طور پر روزانہ، ہفتہ وار اور سالانہ موسم کو سمجھتے ہیں۔ اگر چھ مہینوں میں آپ کا ٹریفک دوگنا ہو جاتا ہے، تو AI غلط الارم کو متحرک کیے بغیر آسانی سے اپنے آپ کو ایڈجسٹ کر لیتا ہے۔"
+        },
+        {
+          "question": "کیا اسے مینوفیکچرنگ میں پیشگی دیکھ بھال (predictive maintenance) کے لیے استعمال کیا جا سکتا ہے؟",
+          "answer": "بالکل۔ IoT سینسر کے ڈیٹا (جیسے وائبریشن اور حرارت) کا تجزیہ کر کے، AI عام رویے سے معمولی انحراف کا پتہ لگا لیتا ہے، اور مشین کے خراب ہونے یا انسان کے نوٹس کرنے سے ہفتوں پہلے مکینیکل خرابی کی پیش گوئی کرتا ہے۔"
+        },
+        {
+          "question": "ہم اسے اپنے موجودہ الرٹنگ سسٹم میں کیسے ضم کریں؟",
+          "answer": "ہم AI کے آؤٹ پٹس کو براہ راست آپ کے موجودہ انفراسٹرکچر میں بھیجتے ہیں۔ ہم PagerDuty، Slack، Jira یا Datadog کو فارمیٹ شدہ الرٹس بھیج سکتے ہیں، ترجیحی اسکورنگ کے ساتھ۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python / Scikit-Learn"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch (Autoencoders)"
+        },
+        {
+          "icon": "apachekafka",
+          "name": "Apache Kafka"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS SageMaker"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "slack",
+          "name": "Slack / PagerDuty"
+        },
+        {
+          "icon": "fastapi",
+          "name": "FastAPI"
+        },
+        {
+          "icon": "redis",
+          "name": "Redis"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "اكتشاف الشذوذ (Anomaly Detection) بالذكاء الاصطناعي",
+    "shortDescription": "انشر نماذج تعلم آلي في الوقت الفعلي لاكتشاف الأنماط غير العادية، ومنع الاحتيال، وتحديد أعطال النظام قبل حدوثها.",
+    "fullDescription": "الأنظمة التقليدية المعتمدة على القواعد للمراقبة مزعجة للغاية. فهي تطلق عدداً لا يحصى من الإنذارات الكاذبة (False-positives) عندما تتغير الظروف قليلاً، أو الأسوأ من ذلك، تتجاهل التهديدات المعقدة ومتعددة المتغيرات تماماً. تنفذ خدمات اكتشاف الشذوذ بالذكاء الاصطناعي لدينا خوارزميات تعلم آلي متقدمة (مثل الغابات المعزولة Isolation Forests، والمشفرات التلقائية Autoencoders) لفهم السلوك الأساسي الطبيعي لأنظمتك أو مستخدميك أو معاملاتك المالية. بدلاً من الاعتماد على عتبات ثابتة (Static Thresholds)، يتكيف الذكاء الاصطناعي لدينا ديناميكياً مع الموسمية والاتجاهات ومنطق الأعمال المتطور. سواء كنت تراقب بيانات مستشعرات إنترنت الأشياء (IoT) للصيانة التنبؤية، أو تحلل سجلات الخوادم لمنع الهجمات الإلكترونية، أو تفحص آلاف معاملات بطاقات الائتمان بحثاً عن الاحتيال في الوقت الفعلي، فنحن نبني مسارات اكتشاف قوية تبرز فقط الحالات الشاذة التي تهم حقاً. نجمع بين منصات بث البيانات عالية السرعة ونماذج التعلم الآلي القابلة للتفسير، بحيث عندما يتم إطلاق تنبيه، يتلقى فريقك تحليل السبب الجذري الدقيق اللازم لاتخاذ إجراء فوري.",
+    "features": [
+      "معالجة بث البيانات في الوقت الفعلي (Kafka)",
+      "عتبات ديناميكية ذاتية التعديل",
+      "التعرف على الأنماط متعددة المتغيرات",
+      "تحليل السبب الجذري والذكاء الاصطناعي القابل للتفسير (XAI)",
+      "اكتشاف الاحتيال وتقييم المعاملات",
+      "تنبيهات الصيانة التنبؤية لإنترنت الأشياء",
+      "فرز التنبيهات وتوجيهها آلياً",
+      "تدريب نماذج تعلم آلي مخصصة (Autoencoders)"
+    ],
+    "benefits": [
+      "تقليل الإرهاق من الإنذارات (Alert Fatigue) بشكل كبير عن طريق تصفية الإنذارات الكاذبة",
+      "تحديد أنماط احتيال أو تهديدات إلكترونية غير معروفة سابقاً",
+      "منع تعطل الآلات الباهظة الثمن من خلال الصيانة التنبؤية",
+      "اكتشاف التناقضات الدقيقة متعددة المتغيرات التي يغفل عنها المحللون البشريون",
+      "التكيف التلقائي مع اتجاهات الأعمال المتغيرة دون تحديثات يدوية للقواعد",
+      "تزويد فريق العمليات الخاص بك بتنبيهات واضحة للسبب الجذري وقابلة للتفسير"
+    ],
+    "metaTitle": "خدمات اكتشاف الشذوذ بالذكاء الاصطناعي | PakSoft",
+    "metaDescription": "اكتشف الاحتيال وامنع أعطال الأنظمة باستخدام الذكاء الاصطناعي لاكتشاف الشذوذ. ننشر نماذج التعلم الآلي لتحليل الأنماط في الوقت الفعلي.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تحليل البيانات الأساسية (Baseline)",
+          "description": "نقوم بتحليل بياناتك التاريخية (السجلات، المعاملات، مقاييس المستشعرات) لتحديد الشكل الذي يبدو عليه السلوك 'الطبيعي'، مع تحديد الاتجاهات الموسمية والتباينات المقبولة."
+        },
+        {
+          "step": 2,
+          "title": "هندسة الميزات (Feature Engineering)",
+          "description": "نستخرج نقاط البيانات (الميزات) الأكثر صلة والتي ترتبط بقوة بالأحداث الشاذة، وتحويل البيانات الخام إلى تنسيق مناسب لخوارزميات التعلم الآلي."
+        },
+        {
+          "step": 3,
+          "title": "اختيار النموذج والتدريب",
+          "description": "نقوم بتدريب نماذج غير خاضعة للإشراف أو شبه خاضعة للإشراف تتفوق في العثور على القيم المتطرفة دون الحاجة إلى كميات هائلة من بيانات الفشل المصنفة بشكل مثالي."
+        },
+        {
+          "step": 4,
+          "title": "تطوير مسار البث (Streaming Pipeline)",
+          "description": "يجب أن يكون اكتشاف الشذوذ سريعاً. نبني مسار بيانات عالي الإنتاجية (باستخدام Apache Kafka أو AWS Kinesis) يبث البيانات الحية مباشرة إلى نموذج الاستدلال."
+        },
+        {
+          "step": 5,
+          "title": "قابلية التفسير والتنبيه",
+          "description": "نقوم بتكوين قيم SHAP أو LIME لجعل قرارات الذكاء الاصطناعي قابلة للتفسير. عند اكتشاف شذوذ، ينشئ النظام تنبيهاً يوضح بالضبط المتغيرات التي أدت إلى تشغيله."
+        },
+        {
+          "step": 6,
+          "title": "النشر والضبط المستمر",
+          "description": "يتم إطلاق النظام. نؤسس حلقة ملاحظات حيث يقوم المحللون البشريون بتصنيف التنبيهات (إيجابية صحيحة/إيجابية كاذبة)، مما يسمح للنموذج بالتعلم المستمر وتقليل الضوضاء."
+        }
+      ],
+      "faq": [
+        {
+          "question": "كيف يكون اكتشاف الشذوذ بالذكاء الاصطناعي أفضل من تنبيهات العتبة القياسية؟",
+          "answer": "تستخدم التنبيهات القياسية قواعد ثابتة (مثل، 'تنبيه إذا كانت وحدة المعالجة المركزية > 90%'). هذا يتجاهل السياق. يتعلم الذكاء الاصطناعي الأنماط. قد يعرف أن 90% من وحدة المعالجة المركزية أمر طبيعي أثناء النسخ الاحتياطية ليوم الجمعة، ولكن 85% أمر شاذ للغاية في الساعة 3 صباحاً يوم الثلاثاء، مما يسمح له باكتشاف المشكلات الدقيقة مع تجنب الإنذارات الكاذبة."
+        },
+        {
+          "question": "ما نوع البيانات التي يمكنكم اكتشاف الحالات الشاذة فيها؟",
+          "answer": "يمكننا معالجة بيانات السلاسل الزمنية (مقاييس الخادم، أسعار الأسهم)، وبيانات المعاملات (تمرير بطاقات الائتمان، مشتريات التجارة الإلكترونية)، وبيانات السجلات (أحداث الأمن السيبراني)، وبيانات مستشعرات إنترنت الأشياء (درجة الحرارة، الاهتزاز)."
+        },
+        {
+          "question": "هل نحتاج إلى بيانات تاريخية للإخفاقات أو الاحتيال السابق؟",
+          "answer": "ليس بالضرورة. على الرغم من أن بيانات الفشل المصنفة رائعة، إلا أن الحالات الشاذة نادرة بحكم تعريفها. نحن نستخدم في الغالب تقنيات التعلم غير الخاضع للإشراف (Unsupervised Learning) والتي تحتاج فقط إلى مجموعة بيانات كبيرة من العمليات 'العادية'. يتعلم الذكاء الاصطناعي الحالة الطبيعية ويشير إلى أي شيء ينحرف عنها."
+        },
+        {
+          "question": "ما مدى سرعة اكتشاف الذكاء الاصطناعي للحالة الشاذة؟",
+          "answer": "بالنسبة لحالات الاستخدام مثل الاحتيال في بطاقات الائتمان، نقوم بنشر النموذج عبر بوابات API عالية السرعة لتحقيق أوقات استدلال أقل من 100 مللي ثانية، مما يسمح لك بحظر المعاملة قبل الموافقة عليها."
+        },
+        {
+          "question": "هل سيفهم فريقي سبب إطلاق التنبيه؟",
+          "answer": "نعم. الذكاء الاصطناعي الصندوق الأسود عديم الفائدة للعمليات. نحن نطبق تقنيات الذكاء الاصطناعي القابل للتفسير (XAI). لن يكتفي التنبيه بقول 'تم اكتشاف شذوذ'؛ بل سيقول 'تم اكتشاف شذوذ: مبلغ المعاملة أعلى بـ 3 أضعاف من متوسط المستخدم وعنوان IP ينشأ من بلد جديد'."
+        },
+        {
+          "question": "كيف تتعاملون مع الموسمية أو اتجاهات العمل المتغيرة؟",
+          "answer": "نستخدم نماذج التنبؤ بالسلاسل الزمنية التي تفهم الموسمية اليومية والأسبوعية والسنوية بطبيعتها. يتم تصميم نماذجنا للتكيف ديناميكياً. إذا تضاعفت حركة المرور الأساسية لديك خلال ستة أشهر، يقوم الذكاء الاصطناعي بتعديل مفهومه لـ 'الطبيعي' بسلاسة."
+        },
+        {
+          "question": "هل يمكن استخدام هذا للصيانة التنبؤية في التصنيع؟",
+          "answer": "بالتأكيد. من خلال تحليل بيانات مستشعرات إنترنت الأشياء (مثل الاهتزاز في آلة CNC)، يكتشف الذكاء الاصطناعي انحرافات مجهرية عن السلوك الطبيعي، ويتنبأ بعطل ميكانيكي قبل أسابيع من ملاحظة المشغل البشري أو تعطل الآلة."
+        },
+        {
+          "question": "كيف ندمج هذا في أنظمة التنبيه الحالية لدينا؟",
+          "answer": "نقوم بتوجيه مخرجات الذكاء الاصطناعي مباشرة إلى البنية التحتية الحالية لديك. يمكننا إرسال تنبيهات منسقة إلى PagerDuty أو Slack أو Jira أو Datadog، كاملة مع تسجيل الأولويات والسياق القابل للتنفيذ اللازم للفرز."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python / Scikit-Learn"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch (Autoencoders)"
+        },
+        {
+          "icon": "apachekafka",
+          "name": "Apache Kafka"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS SageMaker"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "slack",
+          "name": "Slack / PagerDuty"
+        },
+        {
+          "icon": "fastapi",
+          "name": "FastAPI"
+        },
+        {
+          "icon": "redis",
+          "name": "Redis"
+        }
+      ]
+    }
+  }
+}

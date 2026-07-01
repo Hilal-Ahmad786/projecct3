@@ -1,0 +1,638 @@
+{
+  "slug": "prompt-engineering",
+  "en": {
+    "name": "Prompt Engineering",
+    "shortDescription": "Maximize the output quality of LLMs with custom prompt systems. We build structured prompt pipelines with few-shot optimizations, testing, and output validation.",
+    "fullDescription": "Raw prompts often yield unpredictable, off-brand, or malformed outputs in production applications. We offer expert Prompt Engineering services to design, build, and optimize prompt systems that guarantee consistent, structured AI outputs (like JSON or XML). Using advanced techniques like Chain-of-Thought, few-shot prompting, and zero-shot reasoning, we maximize model performance for specialized tasks while keeping token costs low. We integrate validation libraries like Guardrails AI and construct automated testing pipelines using PromptFoo and LangSmith to audit prompt reliability across edge cases. From chatbot personas to complex document summarizers, our prompt engineering ensures your AI features are safe, predictable, and production-ready.",
+    "features": [
+      "Prompt System Architecture Design",
+      "Chain-of-Thought Reasoning Templates",
+      "Few-Shot and Zero-Shot Optimization",
+      "Structured JSON/XML Output Guardrails",
+      "Automated Prompt Evaluation with PromptFoo",
+      "Trace & Cost Monitoring in LangSmith",
+      "Prompt Injection & Security Protection",
+      "Production-Ready Dynamic Prompt Pipelines"
+    ],
+    "benefits": [
+      "Guarantee consistent, structured outputs from LLMs",
+      "Reduce token consumption costs by up to 40%",
+      "Prevent prompt injection and jailbreak vulnerabilities",
+      "Iterate and test prompt changes safely in sandbox",
+      "Optimize AI performance without expensive model training",
+      "Maintain strict brand compliance across all generations"
+    ],
+    "metaTitle": "Prompt Engineering Services | AI Optimization | PakSoft",
+    "metaDescription": "Maximize LLM output quality. We design secure, optimized prompt templates with Chain-of-Thought, few-shot tuning, and strict guardrails. Learn more.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Use Case Discovery",
+          "description": "We analyze your AI goals, models used, and required output schemas (like JSON or CSV) to define prompt requirements."
+        },
+        {
+          "step": 2,
+          "title": "System Prompt Design",
+          "description": "We draft base system instructions and configure guidelines to restrict model behavior and match your target tone."
+        },
+        {
+          "step": 3,
+          "title": "Optimization & Tuning",
+          "description": "We apply Chain-of-Thought templates, few-shot examples, and cache-friendly prompt ordering to reduce latency and costs."
+        },
+        {
+          "step": 4,
+          "title": "Guardrails Setup",
+          "description": "We integrate libraries like Guardrails AI or NeMo Guardrails to intercept inappropriate outputs or jailbreak attempts."
+        },
+        {
+          "step": 5,
+          "title": "Evaluation & Testing",
+          "description": "We build automated test suites in PromptFoo, running thousands of variants to ensure outputs are reliable."
+        },
+        {
+          "step": 6,
+          "title": "Monitoring & Tuning",
+          "description": "We monitor live prompt logs in LangSmith, using analytics to continually refine prompts for performance and cost."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is prompt engineering?",
+          "answer": "Prompt engineering is the practice of designing, structuring, and optimizing inputs (prompts) to ensure large language models produce accurate, reliable, and properly formatted outputs."
+        },
+        {
+          "question": "Why can't we just write basic prompts?",
+          "answer": "Basic prompts often lead to hallucinations, inconsistent formats, or off-brand responses in production. Prompt engineering builds structured systems that handle edge cases and guarantee stable outputs."
+        },
+        {
+          "question": "What is Chain-of-Thought prompting?",
+          "answer": "Chain-of-Thought prompting directs the LLM to write down its step-by-step reasoning before outputting the final answer, which drastically improves accuracy on complex logical or mathematical tasks."
+        },
+        {
+          "question": "How do you protect against prompt injection attacks?",
+          "answer": "We set up input sanitization layers, define strict system instructions separating user input from system rules, and implement output guardrails to check for leaked instructions."
+        },
+        {
+          "question": "How do you test prompt changes before launching?",
+          "answer": "We use framework tools like PromptFoo to run automated tests across hundreds of test cases, comparing the new prompt's outputs against the old prompt's results to prevent regressions."
+        },
+        {
+          "question": "Can prompt engineering reduce API token costs?",
+          "answer": "Yes, we structure prompts to be concise, remove redundant instructions, use prompt caching, and implement semantic caching to prevent querying the LLM for identical questions."
+        },
+        {
+          "question": "Which LLM models do you support?",
+          "answer": "We support all major models, including OpenAI GPT-4, Anthropic Claude 3, Google Gemini, and open-source models like Llama 3 and Mistral, tuning prompts specifically to each model's strengths."
+        },
+        {
+          "question": "What are output guardrails?",
+          "answer": "Output guardrails are verification layers (using tools like Guardrails AI) that check model outputs against specific rules, ensuring they are valid JSON, free of inappropriate content, and factually correct."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "OpenAI API",
+          "icon": "openai"
+        },
+        {
+          "name": "Anthropic Claude",
+          "icon": "anthropic"
+        },
+        {
+          "name": "LangChain",
+          "icon": "langchain"
+        },
+        {
+          "name": "PromptFoo",
+          "icon": "promptfoo"
+        },
+        {
+          "name": "LangSmith",
+          "icon": "langsmith"
+        },
+        {
+          "name": "Guardrails AI",
+          "icon": "guardrails"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "LlamaIndex",
+          "icon": "llamaindex"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Prompt Mühendisliği",
+    "shortDescription": "Özel prompt sistemleri ile LLM'lerin çıktı kalitesini en üst düzeye çıkarın. Örnekli optimizasyonlar, testler ve çıktı denetimi içeren yapılandırılmış prompt hatları kuruyoruz.",
+    "fullDescription": "Ham promptlar (komutlar), üretim uygulamalarında genellikle öngörülemeyen, marka dışı veya hatalı biçimlendirilmiş çıktılara yol açar. Tutarlı ve yapılandırılmış (JSON veya XML gibi) yapay zeka çıktıları garanti eden prompt sistemleri tasarlamak, oluşturmak ve optimize etmek için uzman Prompt Mühendisliği hizmetleri sunuyoruz. Chain-of-Thought, few-shot prompting ve zero-shot reasoning gibi gelişmiş teknikleri kullanarak, token maliyetlerini düşük tutarken özel görevler için model performansını en üst düzeye çıkarıyoruz. Edge durumlarında prompt güvenilirliğini denetlemek için Guardrails AI gibi doğrulama kütüphanelerini entegre ediyor ve PromptFoo ile LangSmith kullanarak otomatik test veri hatları oluşturuyoruz. Sohbet robotu personalarından karmaşık belge özetleyicilere kadar prompt mühendisliğimiz, yapay zeka özelliklerinizin güvenli, öngörülebilir ve üretime hazır olmasını sağlar.",
+    "features": [
+      "Prompt Sistem Mimarisi Tasarımı",
+      "Chain-of-Thought Akıl Yürütme Şablonları",
+      "Few-Shot ve Zero-Shot Optimizasyonu",
+      "Yapılandırılmış JSON/XML Çıktı Sınırları",
+      "PromptFoo ile Otomatik Prompt Değerlendirmesi",
+      "LangSmith'te İzleme ve Maliyet Denetimi",
+      "Prompt Enjeksiyonu ve Güvenlik Koruması",
+      "Üretime Hazır Dinamik Prompt Hatları"
+    ],
+    "benefits": [
+      "LLM'lerden tutarlı ve yapılandırılmış çıktılar almayı garanti edin",
+      "Token tüketim maliyetlerini %40'a varan oranda azaltın",
+      "Prompt enjeksiyonu ve jailbreak güvenlik açıklarını önleyin",
+      "Prompt değişikliklerini güvenli bir test ortamında test edin",
+      "Maliyetli model eğitimi yapmadan yapay zeka performansını optimize edin",
+      "Üretilen tüm içeriklerde katı marka uyumluluğu sağlayın"
+    ],
+    "metaTitle": "Prompt Mühendisliği Hizmetleri | AI Optimizasyon | PakSoft",
+    "metaDescription": "LLM çıktı kalitesini en üst düzeye çıkarın. Chain-of-Thought, few-shot ayarlama ve katı denetimlerle güvenli prompt şablonları tasarlıyoruz. Detaylı bilgi edinin.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Kullanım Durumu Keşfi",
+          "description": "Prompt gereksinimlerini tanımlamak için yapay zeka hedeflerinizi, kullanılan modelleri ve gerekli çıktı şemalarını (JSON veya CSV gibi) analiz ediyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Sistem Prompt Tasarımı",
+          "description": "Model davranışını sınırlamak ve hedef tonunuza uyum sağlamak için temel sistem talimatlarını yazıyor ve kuralları yapılandırıyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Optimizasyon & Ayarlama",
+          "description": "Gecikmeyi ve maliyetleri azaltmak için Chain-of-Thought şablonları, few-shot örnekleri ve önbellek dostu prompt sıralaması uyguluyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Güvenlik Sınırları Kurulumu",
+          "description": "Uygunsuz çıktıları veya jailbreak girişimlerini engellemek için Guardrails AI veya NeMo Guardrails gibi kütüphaneleri entegre ediyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Değerlendirme & Test",
+          "description": "Çıktıların güvenilir olmasını sağlamak amacıyla binlerce varyasyonu çalıştırarak PromptFoo'da otomatik test paketleri oluşturuyoruz."
+        },
+        {
+          "step": 6,
+          "title": "İzleme & İnce Ayar",
+          "description": "LangSmith'teki canlı prompt günlüklerini izliyor, performansı ve maliyeti sürekli optimize etmek için analitiği kullanıyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Prompt mühendisliği nedir?",
+          "answer": "Prompt mühendisliği; büyük dil modellerinin doğru, güvenilir ve uygun biçimde yapılandırılmış çıktılar üretmesini sağlamak için girdileri (promptları) tasarlama, yapılandırma ve optimize etme sürecidir."
+        },
+        {
+          "question": "Neden sadece temel promptlar yazamıyoruz?",
+          "answer": "Temel promptlar üretim ortamında sıklıkla halüsinasyonlara, tutarsız formatlara veya marka dışı yanıtlara yol açar. Prompt mühendisliği, uç durumları ele alan ve kararlı çıktılar sunan yapılandırılmış sistemler oluşturur."
+        },
+        {
+          "question": "Chain-of-Thought prompting nedir?",
+          "answer": "Chain-of-Thought prompting, LLM'nin nihai yanıtı vermeden önce adım adım akıl yürütme sürecini yazmasını sağlar; bu, karmaşık mantıksal veya matematiksel görevlerde doğruluğu önemli ölçüde artırır."
+        },
+        {
+          "question": "Prompt enjeksiyonu saldırılarına karşı nasıl koruma sağlıyorsunuz?",
+          "answer": "Girdi temizleme katmanları kuruyoruz, kullanıcı girdisini sistem kurallarından ayıran katı sistem talimatları tanımlıyoruz ve sızdırılan talimatları kontrol etmek için çıktı güvenlik sınırları uyguluyoruz."
+        },
+        {
+          "question": "Prompt değişikliklerini yayına almadan önce nasıl test ediyorsunuz?",
+          "answer": "Gelişmeleri izlemek ve hataları önlemek için yeni promptun çıktılarını eski promptun sonuçlarıyla karşılaştıran, yüzlerce test senaryosunda çalışan PromptFoo gibi araçlar kullanıyoruz."
+        },
+        {
+          "question": "Prompt mühendisliği API token maliyetlerini düşürebilir mi?",
+          "answer": "Evet, promptları kısa olacak şekilde yapılandırıyoruz, gereksiz talimatları kaldırıyoruz, prompt önbelleğe alma kullanıyoruz ve aynı sorular için LLM'ye tekrar gitmeyi önlemek adına anlamsal önbelleğe alma uyguluyoruz."
+        },
+        {
+          "question": "Hangi LLM modellerini destekliyorsunuz?",
+          "answer": "OpenAI GPT-4, Anthropic Claude 3, Google Gemini ve açık kaynaklı Llama 3 ile Mistral dahil tüm büyük modelleri destekliyor, promptları her modelin güçlü yönlerine göre özelleştiriyoruz."
+        },
+        {
+          "question": "Çıktı güvenlik sınırları (output guardrails) nedir?",
+          "answer": "Çıktı güvenlik sınırları, model çıktılarını belirli kurallara karşı kontrol eden (Guardrails AI gibi araçlar kullanarak) doğrulama katmanlarıdır; çıktıların geçerli JSON olmasını, uygunsuz içerik barındırmamasını ve gerçekçi olmasını sağlar."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "OpenAI API",
+          "icon": "openai"
+        },
+        {
+          "name": "Anthropic Claude",
+          "icon": "anthropic"
+        },
+        {
+          "name": "LangChain",
+          "icon": "langchain"
+        },
+        {
+          "name": "PromptFoo",
+          "icon": "promptfoo"
+        },
+        {
+          "name": "LangSmith",
+          "icon": "langsmith"
+        },
+        {
+          "name": "Guardrails AI",
+          "icon": "guardrails"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "LlamaIndex",
+          "icon": "llamaindex"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Prompt-Engineering",
+    "shortDescription": "Maximieren Sie die Ausgabequalität von LLMs mit strukturierten Prompt-Systemen. Wir entwickeln optimierte Prompt-Pipelines mit Testing und Guardrails.",
+    "fullDescription": "Einfache Prompts führen in produktiven Anwendungen oft zu unvorhersehbaren oder fehlerhaft formatierten Ergebnissen. Wir bieten professionelles Prompt-Engineering an, um Prompt-Systeme zu entwerfen, die konsistente und strukturierte KI-Ausgaben (wie JSON oder XML) garantieren. Durch Techniken wie Chain-of-Thought, Few-Shot-Prompting und zielgerichtetes Reasoning maximieren wir die Modellleistung für Ihre Fachaufgaben und senken gleichzeitig die Token-Kosten. Wir integrieren Validierungs-Bibliotheken wie Guardrails AI und etablieren automatisierte Testumgebungen mit PromptFoo und LangSmith, um die Verlässlichkeit der Prompts abzusichern.",
+    "features": [
+      "Konzeption von Prompt-Systemarchitekturen",
+      "Chain-of-Thought Logik-Vorlagen",
+      "Few-Shot & Zero-Shot Prompt-Optimierung",
+      "Strukturierte JSON/XML-Ausgabe-Guardrails",
+      "Automatisierte Prompt-Evaluation mit PromptFoo",
+      "Monitoring von Latenzen & Kosten in LangSmith",
+      "Schutz vor Prompt-Injection & Sicherheits-Hacks",
+      "Produktionsbereite dynamische Prompt-Pipelines"
+    ],
+    "benefits": [
+      "Konsistente, strukturierte Ausgaben von LLMs garantieren",
+      "Token-Verbrauch und Kosten um bis zu 40% reduzieren",
+      "Prompt-Injection und Jailbreak-Sicherheitslücken verhindern",
+      "Prompt-Änderungen gefahrlos in Sandboxen testen",
+      "KI-Leistung ohne teures Modelltraining optimieren",
+      "Strikte Einhaltung der Marken-Compliance sichern"
+    ],
+    "metaTitle": "Prompt-Engineering Services | KI-Optimierung | PakSoft",
+    "metaDescription": "Maximieren Sie die Qualität von LLM-Antworten. Wir entwickeln sichere, optimierte Prompt-Templates mit Chain-of-Thought, Few-Shot-Tuning und Guardrails.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Use-Case-Analyse",
+          "description": "Wir analysieren Ihre KI-Ziele, genutzten Modelle und Zielformate (z. B. JSON, CSV), um Prompt-Anforderungen zu definieren."
+        },
+        {
+          "step": 2,
+          "title": "System-Prompt-Design",
+          "description": "Wir entwerfen Systemanweisungen und Verhaltensregeln, um das Modell abzusichern und Ihre Tonalität zu wahren."
+        },
+        {
+          "step": 3,
+          "title": "Optimierung & Tuning",
+          "description": "Wir implementieren Chain-of-Thought-Vorlagen, Few-Shot-Beispiele und cache-optimierte Prompts, um Kosten zu senken."
+        },
+        {
+          "step": 4,
+          "title": "Guardrails-Setup",
+          "description": "Wir integrieren Bibliotheken wie Guardrails AI oder NeMo Guardrails, um unpassende Ausgaben oder Angriffe abzufangen."
+        },
+        {
+          "step": 5,
+          "title": "Evaluierung & Testing",
+          "description": "Wir bauen automatisierte Test-Suiten in PromptFoo auf, um die Verlässlichkeit über Hunderte Szenarien zu prüfen."
+        },
+        {
+          "step": 6,
+          "title": "Monitoring & Feinjustierung",
+          "description": "Wir überwachen die Prompts live in LangSmith und nutzen Analysen, um Leistung und Kosten kontinuierlich zu optimieren."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist Prompt-Engineering?",
+          "answer": "Prompt-Engineering bezeichnet das gezielte Entwerfen, Strukturieren und Optimieren von Eingabeanweisungen (Prompts), damit große Sprachmodelle präzise, verlässliche und richtig formatierte Ausgaben liefern."
+        },
+        {
+          "question": "Warum reichen einfache Prompts in Anwendungen nicht aus?",
+          "answer": "Einfache Prompts führen in der Produktion oft zu Halluzinationen, fehlerhaften Formaten oder unpassenden Antworten. Prompt-Engineering sorgt für Stabilität und fängt Fehler ab."
+        },
+        {
+          "question": "Was versteht man unter Chain-of-Thought Prompting?",
+          "answer": "Dabei wird das LLM angewiesen, seine logischen Zwischenschritte schriftlich darzulegen, bevor die endgültige Antwort ausgegeben wird. Das erhöht die Genauigkeit bei komplexen Aufgaben deutlich."
+        },
+        {
+          "question": "Wie schützen Sie Systeme vor Prompt-Injection?",
+          "answer": "Wir nutzen Filter für Benutzereingaben, trennen Anweisungen strikt von den Eingaben im System-Prompt und etablieren Guardrails zur Überprüfung der Ausgaben."
+        },
+        {
+          "question": "Wie werden Prompt-Änderungen vor dem Launch getestet?",
+          "answer": "Wir nutzen Tools wie PromptFoo für automatisierte Vergleichstests über Hunderte Fälle, um sicherzustellen, dass neue Prompts keine Verschlechterungen (Regresssions) verursachen."
+        },
+        {
+          "question": "Kann Prompt-Engineering die API-Kosten senken?",
+          "answer": "Ja, wir optimieren die Länge der Prompts, nutzen Caching-Möglichkeiten der APIs und implementieren semantisches Caching, um redundante Abfragen zu vermeiden."
+        },
+        {
+          "question": "Welche LLMs unterstützen Sie?",
+          "answer": "Wir unterstützen alle großen Modelle wie OpenAI GPT-4, Anthropic Claude 3, Google Gemini sowie Open-Source-Modelle wie Llama 3 und Mistral, wobei wir Prompts gezielt auf die Stärken des jeweiligen Modells abstimmen."
+        },
+        {
+          "question": "Was sind Output Guardrails?",
+          "answer": "Das sind Validierungsfilter (z. B. mit Guardrails AI), die Modellantworten vor der Auslieferung prüfen, um z. B. gültiges JSON, Faktenkonsistenz und inhaltliche Sicherheit zu garantieren."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "OpenAI API",
+          "icon": "openai"
+        },
+        {
+          "name": "Anthropic Claude",
+          "icon": "anthropic"
+        },
+        {
+          "name": "LangChain",
+          "icon": "langchain"
+        },
+        {
+          "name": "PromptFoo",
+          "icon": "promptfoo"
+        },
+        {
+          "name": "LangSmith",
+          "icon": "langsmith"
+        },
+        {
+          "name": "Guardrails AI",
+          "icon": "guardrails"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "LlamaIndex",
+          "icon": "llamaindex"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "پرامپٹ انجینئرنگ",
+    "shortDescription": "پرامپٹ سسٹمز کی مدد سے ایل ایل ایمز (LLMs) کی آؤٹ پٹ کو بہتر بنائیں۔ ہم منظم ٹیمپلیٹس، ٹیسٹنگ اور آؤٹ پٹ سیکیورٹی کا نظام بناتے ہیں۔",
+    "fullDescription": "پروڈکشن ایپلی کیشنز میں عام پرامپٹس اکثر غیر متوقع، غلط فارمیٹ یا غیر مناسب جوابات کا سبب بنتے ہیں۔ ہم ماہر پرامپٹ انجینئرنگ سروسز فراہم کرتے ہیں تاکہ ایسے پرامپٹ سسٹمز ڈیزائن اور تیار کیے جائیں جو مستقل اور منظم جوابات (جیسے JSON یا XML) کو یقینی بنائیں۔ Chain-of-Thought، few-shot prompting اور zero-shot reasoning جیسی جدید تکنیکوں کا استعمال کرتے ہوئے ہم ٹوکنز کی لاگت کم رکھتے ہوئے ماڈل کی کارکردگی بڑھاتے ہیں۔ ہم سیکیورٹی کے لیے Guardrails AI کو مربوط کرتے ہیں اور PromptFoo اور LangSmith کے ذریعے خودکار ٹیسٹنگ پائپ لائنز بناتے ہیں تاکہ تمام حالات میں ماڈل کی کارکردگی مستحکم رہے۔",
+    "features": [
+      "پرامپٹ سسٹم آرکیٹیکچر ڈیزائن",
+      "Chain-of-Thought استدلال ٹیمپلیٹس",
+      "Few-Shot اور Zero-Shot کارکردگی کی اصلاح",
+      "منظم JSON/XML آؤٹ پٹ سیکیورٹی گارڈز",
+      "PromptFoo کے ذریعے خودکار پرامپٹ ٹیسٹنگ",
+      "LangSmith میں کارکردگی اور لاگت کی نگرانی",
+      "پرامپٹ انجیکشن اور ہیکنگ سے تحفظ",
+      "پروڈکشن کے لیے متحرک پرامپٹ پائپ لائنز"
+    ],
+    "benefits": [
+      "ایل ایل ایم سے مستقل اور منظم جوابات حاصل کریں",
+      "ٹوکن استعمال کرنے کے اخراجات میں 40 فیصد تک بچت کریں",
+      "پرامپٹ انجیکشن اور سیکیورٹی حملوں کو روکیں",
+      "پرامپٹ میں تبدیلیوں کو لائیو کرنے سے پہلے ٹیسٹ کریں",
+      "مہنگے ماڈل ٹریننگ کے بغیر کارکردگی بہتر بنائیں",
+      "کمپنی کی پالیسی کے مطابق جوابات کو یقینی بنائیں"
+    ],
+    "metaTitle": "پرامپٹ انجینئرنگ سروسز | اے آئی اصلاح | PakSoft",
+    "metaDescription": "ایل ایل ایمز کی آؤٹ پٹ کو بہتر بنائیں۔ ہم Chain-of-Thought، اور سیکیورٹی قوانین کے ساتھ پرامپٹ شبیہہ ڈیزائن کرتے ہیں۔ معلومات حاصل کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "ضروریات کا جائزہ",
+          "description": "ہم پرامپٹ کی ضروریات کو طے کرنے کے لیے آپ کے اہداف، منتخب کردہ ماڈل اور مطلوبہ آؤٹ پٹ فارمیٹس کا جائزہ لیتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "سسٹم پرامپٹ ڈیزائن",
+          "description": "ہم بنیادی سسٹم ہدایات لکھتے ہیں تاکہ ماڈل کے رویے کو کنٹرول کیا جا سکے اور وہ برانڈ کے لہجے میں بات کرے۔"
+        },
+        {
+          "step": 3,
+          "title": "رفتار اور لاگت کی اصلاح",
+          "description": "ہم ٹوکنز کا خرچ اور پروسیسنگ وقت کم کرنے کے لیے Chain-of-Thought اور کیشنگ فرینڈلی پرامپٹس بناتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "سیکیورٹی گارڈز کی تنصیب",
+          "description": "ہم Guardrails AI جیسی لائبریریاں مربوط کرتے ہیں تاکہ ہیکنگ اور غیر مناسب جوابات کو روکا جا سکے۔"
+        },
+        {
+          "step": 5,
+          "title": "خودکار ٹیسٹنگ",
+          "description": "ہم PromptFoo کے اندر خودکار ٹیسٹ اسکرپٹس چلاتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ جوابات ہر حال میں درست ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "مانیٹرنگ اور فائن ٹیوننگ",
+          "description": "ہم LangSmith کے ذریعے لائیو پرامپٹ لاگز کو مانیٹر کرتے ہیں اور لاگت اور کارکردگی کو مزید بہتر بناتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "پرامپٹ انجینئرنگ کیا ہے؟",
+          "answer": "پرامپٹ انجینئرنگ بڑے زبان کے ماڈلز (LLMs) سے درست، قابل بھروسہ اور مطلوبہ فارمیٹ میں جواب حاصل کرنے کے لیے ان پٹ (پرامپٹس) کو ڈیزائن اور بہتر بنانے کا عمل ہے۔"
+        },
+        {
+          "question": "ہم خود عام پرامپٹ کیوں نہیں لکھ سکتے؟",
+          "answer": "عام پرامپٹس اکثر غلط معلومات، غیر مستقل فارمیٹ یا غلط لہجے کا سبب بنتے ہیں۔ پرامپٹ انجینئرنگ ایسے منظم سسٹمز بناتی ہے جو تمام حالات کو سنبھال سکتے ہیں۔"
+        },
+        {
+          "question": "Chain-of-Thought پرامپٹنگ کیا ہے؟",
+          "answer": "یہ ماڈل کو ہدایت دیتی ہے کہ وہ جواب دینے سے پہلے اپنے سوچنے کا عمل قدم بہ قدم لکھے۔ اس سے منطقی اور ریاضیاتی سوالات کے نتائج بہت بہتر ہوتے ہیں۔"
+        },
+        {
+          "question": "آپ پرامپٹ انجیکشن حملوں سے کیسے بچاتے ہیں؟",
+          "answer": "ہم ان پٹ فلٹرز بناتے ہیں، صارف کے سوالات کو ماڈل کے بنیادی قوانین سے الگ رکھتے ہیں اور آؤٹ پٹ کو چیک کرنے کے لیے سیکیورٹی گارڈز لگاتے ہیں۔"
+        },
+        {
+          "question": "آپ پرامپٹ تبدیل کرنے سے پہلے اس کی جانچ کیسے کرتے ہیں؟",
+          "answer": "ہم PromptFoo جیسے ٹولز استعمال کرتے ہیں جو نئے پرامپٹ کے جوابات کا پرانے پرامپٹ کے ساتھ موازنہ کر کے کارکردگی کا فرق واضح کرتے ہیں۔"
+        },
+        {
+          "question": "کیا پرامپٹ انجینئرنگ سے لاگت کم ہو سکتی ہے؟",
+          "answer": "جی ہاں، ہم پرامپٹس کو مختصر بناتے ہیں، غیر ضروری باتیں نکالتے ہیں اور کیشنگ کا نظام نافذ کرتے ہیں تاکہ بار بار ایک ہی سوال پر ایل ایل ایم کو کیوری نہ بھیجنی پڑے۔"
+        },
+        {
+          "question": "آپ کن ماڈلز کو سپورٹ کرتے ہیں؟",
+          "answer": "ہم تمام بڑے ماڈلز بشمول OpenAI GPT-4، Anthropic Claude 3، Google Gemini، اور اوپن سورس Llama 3 اور Mistral کو سپورٹ کرتے ہیں اور پرامپٹ ڈیزائن کرتے ہیں۔"
+        },
+        {
+          "question": "آؤٹ پٹ گارڈز (output guardrails) کیا ہیں؟",
+          "answer": "یہ ایسے سیکیورٹی فلٹرز ہیں (جیسے Guardrails AI) جو ماڈل کے جواب کو چیک کرتے ہیں کہ وہ درست JSON ہے یا نہیں اور اس میں کوئی غلط معلومات شامل تو نہیں ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "OpenAI API",
+          "icon": "openai"
+        },
+        {
+          "name": "Anthropic Claude",
+          "icon": "anthropic"
+        },
+        {
+          "name": "LangChain",
+          "icon": "langchain"
+        },
+        {
+          "name": "PromptFoo",
+          "icon": "promptfoo"
+        },
+        {
+          "name": "LangSmith",
+          "icon": "langsmith"
+        },
+        {
+          "name": "Guardrails AI",
+          "icon": "guardrails"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "LlamaIndex",
+          "icon": "llamaindex"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "هندسة المطالبات",
+    "shortDescription": "عظم جودة مخرجات النماذج اللغوية الكبيرة مع أنظمة المطالبات المخصصة. نبني مسارات مطالبات منظمة ومحسنة مع التقييم وحواجز الأمان.",
+    "fullDescription": "غالباً ما تؤدي المطالبات الكلاسيكية البسيطة إلى مخرجات غير متوقعة أو غير متوافقة مع العلامة التجارية في التطبيقات الفعلية. نحن نقدم خدمات هندسة المطالبات الاحترافية لتصميم وبناء وتحسين أنظمة المطالبات التي تضمن الحصول على مخرجات تفاعلية منظمة (مثل JSON أو XML) بثبات وموثوقية. باستخدام تقنيات متقدمة مثل سلسلة الأفكار (Chain-of-Thought)، والمطالبات بالأمثلة (few-shot)، نستخلص أفضل أداء من النماذج للمهام المتخصصة مع خفض تكاليف الرموز. ندمج مكتبات التحقق مثل Guardrails AI وننشئ مسارات اختبار مؤتمتة باستخدام PromptFoo و LangSmith لضمان الموثوقية.",
+    "features": [
+      "تصميم وبنية أنظمة المطالبات المتكاملة",
+      "قوالب التفكير وسلسلة الأفكار (Chain-of-Thought)",
+      "تحسين المطالبات بالأمثلة والمطالبات الفورية",
+      "حواجز أمان للمخرجات المنظمة JSON/XML",
+      "تقييم تلقائي للمطالبات باستخدام PromptFoo",
+      "تتبع التكاليف وزمن الاستجابة في LangSmith",
+      "الحماية من هجمات حقن المطالبات واختراقها",
+      "مسارات مطالبات ديناميكية جاهزة للإنتاج"
+    ],
+    "benefits": [
+      "ضمان الحصول على مخرجات منظمة ومتسقة من النماذج اللغوية",
+      "تقليل تكاليف استهلاك الرموز (tokens) بنسبة تصل إلى 40٪",
+      "منع ثغرات حقن المطالبات ومحاولات كسر الحماية (jailbreak)",
+      "تجربة واختبار تغييرات المطالبات بأمان في بيئة تجريبية",
+      "تحسين أداء الذكاء الاصطناعي دون الحاجة لتدريب النماذج المكلف",
+      "الحفاظ على توافق صارم مع هوية العلامة التجارية في جميع المخرجات"
+    ],
+    "metaTitle": "خدمات هندسة المطالبات | تحسين الذكاء الاصطناعي | PakSoft",
+    "metaDescription": "عظم جودة مخرجات نماذج اللغة. نصمم قوالب مطالبات آمنة ومحسنة مع سلسلة الأفكار، والضبط بالأمثلة، وحواجز الأمان الصارمة. اعرف المزيد.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "اكتشاف متطلبات الاستخدام",
+          "description": "نحلل أهداف الذكاء الاصطناعي لديك، والنماذج المستخدمة، ومخططات المخرجات المطلوبة (مثل JSON أو CSV) لتحديد متطلبات المطالبة."
+        },
+        {
+          "step": 2,
+          "title": "تصميم مطالبات النظام",
+          "description": "نصيغ تعليمات النظام الأساسية ونقوم بتكوين إرشادات للتحكم بسلوك النموذج ومطابقة النبرة المستهدفة."
+        },
+        {
+          "step": 3,
+          "title": "التحسين والضبط الدقيق",
+          "description": "نطبق قوالب سلسلة الأفكار، وأمثلة few-shot، وترتيب المطالبات الملائم للتخزين المؤقت لتقليل التكاليف وزمن الاستجابة."
+        },
+        {
+          "step": 4,
+          "title": "إعداد حواجز الأمان",
+          "description": "ندمج مكتبات مثل Guardrails AI أو NeMo Guardrails لتعقب وحظر المخرجات غير اللائقة أو محاولات كسر الأمان."
+        },
+        {
+          "step": 5,
+          "title": "التقييم والاختبار التلقائي",
+          "description": "نبني مجموعات اختبار مؤتمتة في PromptFoo، وننفذ آلاف السيناريوهات للتأكد من موثوقية المخرجات وثباتها."
+        },
+        {
+          "step": 6,
+          "title": "المراقبة والضبط المستمر",
+          "description": "نراقب سجلات المطالبات الحية في LangSmith، ونستخدم التحليلات لتحسين وتعديل المطالبات باستمرار للأداء والتكلفة."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما هي هندسة المطالبات؟",
+          "answer": "هندسة المطالبات هي ممارسة تصميم وبناء وتحسين المدخلات (المطالبات) لضمان إنتاج نماذج اللغة الكبيرة لمخرجات دقيقة وموثوقة ومنسقة بشكل صحيح."
+        },
+        {
+          "question": "لماذا لا يمكننا كتابة مطالبات بسيطة فقط؟",
+          "answer": "تؤدي المطالبات البسيطة غالباً إلى حدوث الهلوسة، أو تنسيقات غير متسقة، أو استجابات غير متوافقة مع العلامة. تبني هندسة المطالبات أنظمة منظمة تتعامل مع الحالات الطرفية."
+        },
+        {
+          "question": "ما هي مطالبات سلسلة الأفكار (Chain-of-Thought)؟",
+          "answer": "توجه مطالبات سلسلة الأفكار النموذج لكتابة خطوات تفكيره المنطقي بالتفصيل قبل صياغة الإجابة النهائية، مما يحسن الدقة بشكل كبير في المهام الرياضية أو المنطقية."
+        },
+        {
+          "question": "كيف تحمي النظام من هجمات حقن المطالبات؟",
+          "answer": "نضع طبقات لتنظيف المدخلات، ونحدد تعليمات نظام صارمة تفصل مدخلات المستخدم عن قواعد النظام، ونطبق حواجز مخرجات لفحص تسرب التعليمات."
+        },
+        {
+          "question": "كيف تختبر تغييرات المطالبة قبل الإطلاق الفعلي؟",
+          "answer": "نستخدم أدوات مثل PromptFoo لتشغيل اختبارات تلقائية عبر مئات الحالات، ومقارنة مخرجات المطالبة الجديدة بالنتائج السابقة لمنع أي تراجع في الأداء."
+        },
+        {
+          "question": "هل يمكن لهندسة المطالبات تقليل تكاليف رموز API؟",
+          "answer": "نعم، نقوم بصياغة مطالبات موجزة، وإزالة التعليمات المتكررة، واستخدام التخزين المؤقت للمطالبات، والتخزين المؤقت الدلالي لتجنب الاستعلام المتكرر للأسئلة المتطابقة."
+        },
+        {
+          "question": "ما هي النماذج اللغوية التي تدعمونها؟",
+          "answer": "ندعم جميع النماذج الرئيسية بما في ذلك OpenAI GPT-4 و Anthropic Claude 3 و Google Gemini والنماذج مفتوحة المصدر مثل Llama 3 و Mistral، مع ضبط المطالبات وفقاً لنقاط قوة كل نموذج."
+        },
+        {
+          "question": "ما هي حواجز حماية المخرجات (Output Guardrails)؟",
+          "answer": "حواجز حماية المخرجات هي طبقات تحقق (باستخدام أدوات مثل Guardrails AI) تفحص مخرجات النموذج للتأكد من أنها بتنسيق JSON صالح، وخالية من المحتوى غير اللائق، ودقيقة حقائقياً."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "OpenAI API",
+          "icon": "openai"
+        },
+        {
+          "name": "Anthropic Claude",
+          "icon": "anthropic"
+        },
+        {
+          "name": "LangChain",
+          "icon": "langchain"
+        },
+        {
+          "name": "PromptFoo",
+          "icon": "promptfoo"
+        },
+        {
+          "name": "LangSmith",
+          "icon": "langsmith"
+        },
+        {
+          "name": "Guardrails AI",
+          "icon": "guardrails"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "LlamaIndex",
+          "icon": "llamaindex"
+        }
+      ]
+    }
+  }
+}

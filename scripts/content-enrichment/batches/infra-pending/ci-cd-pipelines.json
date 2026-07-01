@@ -1,0 +1,598 @@
+{
+  "slug": "ci-cd-pipelines",
+  "en": {
+    "name": "CI/CD Pipelines",
+    "shortDescription": "Accelerate your software delivery lifecycle with automated CI/CD pipelines. We design robust build, test, and deployment workflows that eliminate manual errors and speed up production releases.",
+    "fullDescription": "Modern software development demands speed without sacrificing quality. Our CI/CD pipeline services automate your entire release process, from code commit to production deployment. We integrate automated testing, security vulnerability scanning, and multi-environment staging using industry-standard tools like GitHub Actions, GitLab CI, and Jenkins. By implementing advanced deployment strategies such as blue-green and canary releases, we ensure zero-downtime updates and instant rollback capabilities. Our expert DevOps engineers optimize build caching and parallel execution, reducing build times by up to 60% and allowing your engineering team to focus on writing code rather than managing deployments.",
+    "features": [
+      "Automated Build and Test Workflows",
+      "Multi-Environment Deployment Gates",
+      "Static Application Security Testing (SAST)",
+      "Blue-Green and Canary Deployments",
+      "Automated Rollback and Recovery",
+      "Containerized Build Environments",
+      "Infrastructure as Code (IaC) Integration",
+      "Real-Time Pipeline Monitoring and Alerts"
+    ],
+    "benefits": [
+      "Reduce deployment failure rates by up to 50%",
+      "Accelerate time-to-market for new software features",
+      "Eliminate manual configuration errors in production",
+      "Improve developer productivity and feedback loops",
+      "Ensure continuous security compliance and vulnerability checks",
+      "Achieve zero-downtime deployments with automated rollbacks"
+    ],
+    "metaTitle": "Automated CI/CD Pipeline Services | PakSoft",
+    "metaDescription": "Accelerate software delivery with automated CI/CD pipelines. Reduce build times, eliminate manual errors, and deploy safely. Contact PakSoft today!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Assessment & Strategy",
+          "description": "We analyze your current development workflow, repository structure, and deployment bottlenecks. This allows us to design a tailored CI/CD roadmap that aligns with your team's release cadence."
+        },
+        {
+          "step": 2,
+          "title": "Pipeline Architecture",
+          "description": "Our team designs the pipeline stages, environment gates, and security checkpoints. We define clear branching strategies and automated testing triggers to ensure code quality."
+        },
+        {
+          "step": 3,
+          "title": "Workflow Implementation",
+          "description": "We write clean, modular pipeline configurations using tools like GitHub Actions or GitLab CI. This includes setting up automated unit, integration, and security tests."
+        },
+        {
+          "step": 4,
+          "title": "Environment Integration",
+          "description": "We connect the pipelines to your staging and production environments securely. Using Infrastructure as Code, we ensure environments are provisioned consistently and safely."
+        },
+        {
+          "step": 5,
+          "title": "Optimization & Caching",
+          "description": "We optimize build speeds by implementing dependency caching and parallel job execution. This reduces feedback loops for developers, keeping build times under 10 minutes."
+        },
+        {
+          "step": 6,
+          "title": "Handover & Monitoring",
+          "description": "We set up real-time alerts for pipeline failures and train your team on monitoring tools. Comprehensive documentation is provided to ensure seamless long-term maintenance."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Which CI/CD tools do you support?",
+          "answer": "We support a wide range of industry-standard tools including GitHub Actions, GitLab CI, Jenkins, and ArgoCD. Our choice depends on your existing repository hosting, infrastructure, and team expertise."
+        },
+        {
+          "question": "How do you ensure zero-downtime deployments?",
+          "answer": "We implement advanced deployment strategies such as blue-green or canary deployments using Kubernetes or cloud-native load balancers. This ensures that traffic is only routed to the new version once it passes all health checks, allowing instant rollbacks if issues arise."
+        },
+        {
+          "question": "Can you integrate security scanning into the pipeline?",
+          "answer": "Yes, we integrate Static Application Security Testing (SAST) and dependency vulnerability scanning directly into the build phase. This ensures that security flaws and outdated packages are detected and blocked before reaching production."
+        },
+        {
+          "question": "What is the typical timeline for setting up a pipeline?",
+          "answer": "A standard CI/CD pipeline setup typically takes between 2 to 4 weeks depending on the complexity of your application. This includes testing integration, multi-environment configuration, and thorough validation."
+        },
+        {
+          "question": "How do you handle secrets and sensitive credentials?",
+          "answer": "We never store credentials in code repositories. Instead, we integrate secure secret management solutions like HashiCorp Vault, AWS Secrets Manager, or GitHub Secrets to inject credentials dynamically during runtime."
+        },
+        {
+          "question": "Can we migrate our existing legacy pipelines?",
+          "answer": "Absolutely, we specialize in migrating legacy Jenkins or manual deployment setups to modern, declarative pipelines like GitHub Actions. We ensure a phased migration with zero disruption to your ongoing development cycles."
+        },
+        {
+          "question": "How do automated rollbacks work?",
+          "answer": "We configure monitoring tools to track error rates and system health immediately after a deployment. If anomalies are detected, the pipeline automatically triggers a rollback to the previous stable container image or build version."
+        },
+        {
+          "question": "Do you provide post-implementation support?",
+          "answer": "Yes, we offer ongoing maintenance and support packages to update pipeline dependencies, optimize build speeds, and troubleshoot any deployment issues. Our team is available to assist as your infrastructure scales."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "GitHub Actions",
+          "icon": "github"
+        },
+        {
+          "name": "GitLab CI",
+          "icon": "gitlab"
+        },
+        {
+          "name": "Jenkins",
+          "icon": "jenkins"
+        },
+        {
+          "name": "ArgoCD",
+          "icon": "argocd"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "CI/CD Boru Hatları",
+    "shortDescription": "Otomatik CI/CD boru hatları ile yazılım teslimat döngünüzü güvenle hızlandırın. Manuel hataları tamamen ortadan kaldıran ve canlıya çıkış süreçlerinizi optimize eden modern iş akışları tasarlıyoruz.",
+    "fullDescription": "Modern yazılım geliştirme süreçleri, kaliteden ödün vermeden hız gerektirir. CI/CD boru hattı hizmetlerimiz, kodun gönderilmesinden canlıya alınmasına kadar tüm yayınlama sürecinizi otomatikleştirir. GitHub Actions, GitLab CI ve Jenkins gibi endüstri standardı araçları kullanarak otomatik testleri, güvenlik taramalarını ve çoklu ortam dağıtımlarını entegre ediyoruz. Blue-green ve canary gibi gelişmiş dağıtım stratejileriyle kesintisiz güncellemeler ve anında geri alma özellikleri sunuyoruz. Uzman DevOps mühendislerimiz, derleme sürelerini %60'a kadar azaltarak ekibinizin dağıtımlarla uğraşmak yerine kod yazmaya odaklanmasını sağlar.",
+    "features": [
+      "Otomatik Derleme ve Test İş Akışları",
+      "Çoklu Ortam Dağıtım Onay Kapıları",
+      "Statik Uygulama Güvenlik Testi (SAST)",
+      "Blue-Green ve Canary Dağıtım Stratejileri",
+      "Otomatik Geri Alma ve Kurtarma",
+      "Konteynerleştirilmiş Derleme Ortamları",
+      "Kod Olarak Altyapı (IaC) Entegrasyonu",
+      "Gerçek Zamanlı Boru Hattı İzleme ve Uyarılar"
+    ],
+    "benefits": [
+      "Dağıtım hata oranlarını %50'ye varan oranda azaltın",
+      "Yeni yazılım özelliklerinin pazara sunulma süresini hızlandırın",
+      "Canlı ortamdaki manuel yapılandırma hatalarını ortadan kaldırın",
+      "Geliştirici üretkenliğini ve geri bildirim döngülerini iyileştirin",
+      "Sürekli güvenlik uyumluluğu ve zafiyet taraması sağlayın",
+      "Otomatik geri almalarla sıfır kesintili dağıtımlar elde edin"
+    ],
+    "metaTitle": "Otomatik CI/CD Boru Hattı Hizmetleri | PakSoft",
+    "metaDescription": "Otomatik CI/CD boru hatları ile yazılım dağıtımını hızlandırın. Derleme sürelerini kısaltın ve güvenle dağıtın. PakSoft ile hemen iletişime geçin!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Değerlendirme ve Strateji",
+          "description": "Mevcut geliştirme iş akışınızı, depo yapınızı ve dağıtım darboğazlarınızı analiz ediyoruz. Bu analiz, ekibinizin yayınlama sıklığına uygun özel bir CI/CD yol haritası tasarlamamızı sağlar."
+        },
+        {
+          "step": 2,
+          "title": "Boru Hattı Mimarisi",
+          "description": "Ekibimiz boru hattı aşamalarını, ortam kapılarını ve güvenlik kontrol noktalarını tasarlar. Kod kalitesini güvence altına almak için net dallanma stratejileri ve otomatik test tetikleyicileri tanımlarız."
+        },
+        {
+          "step": 3,
+          "title": "İş Akışı Uygulaması",
+          "description": "GitHub Actions veya GitLab CI gibi araçları kullanarak temiz ve modüler boru hattı yapılandırmaları yazıyoruz. Bu süreç, otomatik birim, entegrasyon ve güvenlik testlerinin kurulumunu içerir."
+        },
+        {
+          "step": 4,
+          "title": "Ortam Entegrasyonu",
+          "description": "Boru hatlarını test ve üretim ortamlarınıza güvenli bir şekilde bağlıyoruz. Kod Olarak Altyapı (IaC) kullanarak, ortamların tutarlı ve güvenli bir şekilde kurulmasını sağlıyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Optimizasyon ve Önbelleğe Alma",
+          "description": "Bağımlılık önbelleğe alma ve paralel iş yürütme uygulayarak derleme hızlarını optimize ediyoruz. Bu, geliştiriciler için geri bildirim döngülerini azaltarak derleme sürelerini 10 dakikanın altında tutar."
+        },
+        {
+          "step": 6,
+          "title": "Teslimat ve İzleme",
+          "description": "Boru hattı hataları için gerçek zamanlı uyarılar kuruyor ve ekibinizi izleme araçları konusunda eğitiyoruz. Sorunsuz ve uzun vadeli bakım sağlamak için kapsamlı belgeler sunuyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Hangi CI/CD araçlarını destekliyorsunuz?",
+          "answer": "GitHub Actions, GitLab CI, Jenkins ve ArgoCD dahil olmak üzere geniş bir endüstri standardı araç yelpazesini destekliyoruz. Seçimimiz mevcut depo barındırma hizmetinize, altyapınıza ve ekibinizin uzmanlığına bağlıdır."
+        },
+        {
+          "question": "Sıfır kesintili dağıtımı nasıl sağlıyorsunuz?",
+          "answer": "Kubernetes veya bulut tabanlı yük dengeleyiciler kullanarak blue-green veya canary gibi gelişmiş dağıtım stratejileri uyguluyoruz. Bu, trafiğin yalnızca tüm sağlık kontrollerini geçen yeni sürüme yönlendirilmesini sağlar ve sorun durumunda anında geri alma imkanı sunar."
+        },
+        {
+          "question": "Güvenlik taramasını boru hattına entegre edebilir misiniz?",
+          "answer": "Evet, Statik Uygulama Güvenlik Testi (SAST) ve bağımlılık zafiyet taramalarını doğrudan derleme aşamasına entegre ediyoruz. Bu, güvenlik açıklarının ve güncel olmayan paketlerin üretime ulaşmadan önce tespit edilip engellenmesini sağlar."
+        },
+        {
+          "question": "Bir boru hattı kurmak ne kadar sürer?",
+          "answer": "Standart bir CI/CD boru hattı kurulumu, uygulamanızın karmaşıklığına bağlı olarak genellikle 2 ila 4 hafta sürer. Bu süreye test entegrasyonu, çoklu ortam yapılandırması ve kapsamlı doğrulama dahildir."
+        },
+        {
+          "question": "Hassas verileri ve şifreleri nasıl yönetiyorsunuz?",
+          "answer": "Kimlik bilgilerini asla kod depolarında saklamayız. Bunun yerine, çalışma zamanında kimlik bilgilerini dinamik olarak enjekte etmek için HashiCorp Vault, AWS Secrets Manager veya GitHub Secrets gibi güvenli sır yönetim çözümlerini entegre ediyoruz."
+        },
+        {
+          "question": "Mevcut eski boru hatlarımızı taşıyabilir miyiz?",
+          "answer": "Kesinlikle, eski Jenkins veya manuel dağıtım kurulumlarını GitHub Actions gibi modern, bildirimsel boru hatlarına taşıma konusunda uzmanız. Devam eden geliştirme döngülerinize sıfır kesinti ile aşamalı bir geçiş sağlıyoruz."
+        },
+        {
+          "question": "Otomatik geri almalar nasıl çalışır?",
+          "answer": "Dağıtımdan hemen sonra hata oranlarını ve sistem sağlığını izlemek için izleme araçları yapılandırıyoruz. Anormallikler tespit edilirse, boru hattı otomatik olarak önceki kararlı konteyner imajına veya derleme sürümüne geri dönmeyi tetikler."
+        },
+        {
+          "question": "Uygulama sonrası destek sağlıyor musunuz?",
+          "answer": "Evet, boru hattı bağımlılıklarını güncellemek, derleme hızlarını optimize etmek ve dağıtım sorunlarını gidermek için sürekli bakım ve destek paketleri sunuyoruz. Altyapınız ölçeklendikçe ekibimiz yardıma hazırdır."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "GitHub Actions",
+          "icon": "github"
+        },
+        {
+          "name": "GitLab CI",
+          "icon": "gitlab"
+        },
+        {
+          "name": "Jenkins",
+          "icon": "jenkins"
+        },
+        {
+          "name": "ArgoCD",
+          "icon": "argocd"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "CI/CD-Pipelines",
+    "shortDescription": "Beschleunigen Sie Ihren Software-Lebenszyklus mit automatisierten CI/CD-Pipelines. Wir entwickeln robuste Build-, Test- und Deployment-Workflows, die manuelle Fehler eliminieren und Releases beschleunigen.",
+    "fullDescription": "Moderne Softwareentwicklung erfordert Geschwindigkeit ohne Qualitätsverlust. Unsere CI/CD-Pipeline-Dienste automatisieren Ihren gesamten Release-Prozess vom Code-Commit bis zum Produktions-Deployment. Wir integrieren automatisierte Tests, Sicherheitsprüfungen und Multi-Environment-Staging mit Tools wie GitHub Actions, GitLab CI und Jenkins. Durch fortschrittliche Deployment-Strategien wie Blue-Green- und Canary-Releases garantieren wir ausfallfreie Updates und sofortige Rollbacks. Unsere DevOps-Ingenieure optimieren das Build-Caching und die parallele Ausführung, wodurch die Build-Zeiten um bis zu 60% verkürzt werden, sodass sich Ihr Team ganz auf das Schreiben von Code konzentrieren kann.",
+    "features": [
+      "Automatisierte Build- und Test-Workflows",
+      "Multi-Environment Deployment-Gates",
+      "Statische Anwendungssicherheitsprüfung (SAST)",
+      "Blue-Green- und Canary-Deployments",
+      "Automatische Rollbacks und Wiederherstellung",
+      "Containerisierte Build-Umgebungen",
+      "Infrastructure as Code (IaC) Integration",
+      "Echtzeit-Pipeline-Überwachung und Alarme"
+    ],
+    "benefits": [
+      "Reduzierung der Deployment-Fehlerraten um bis zu 50%",
+      "Schnellere Markteinführung neuer Softwarefunktionen",
+      "Eliminierung manueller Konfigurationsfehler in der Produktion",
+      "Verbesserung der Entwicklerproduktivität und Feedbackschleifen",
+      "Gewährleistung kontinuierlicher Sicherheits- und Compliance-Prüfungen",
+      "Erreichung von Zero-Downtime-Deployments mit automatischen Rollbacks"
+    ],
+    "metaTitle": "Automatisierte CI/CD-Pipeline-Dienste | PakSoft",
+    "metaDescription": "Beschleunigen Sie die Softwarebereitstellung mit CI/CD-Pipelines. Verkürzen Sie Build-Zeiten und deployen Sie sicher. Jetzt PakSoft kontaktieren!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Analyse & Strategie",
+          "description": "Wir analysieren Ihren aktuellen Entwicklungs-Workflow, Ihre Repository-Struktur und Deployment-Engpässe. Dies ermöglicht uns die Erstellung einer maßgeschneiderten CI/CD-Roadmap, die auf Ihren Release-Rhythmus abgestimmt ist."
+        },
+        {
+          "step": 2,
+          "title": "Pipeline-Architektur",
+          "description": "Unser Team entwirft die Pipeline-Stufen, Umgebungs-Gates und Sicherheits-Checkpoints. Wir definieren klare Branching-Strategien und automatisierte Test-Trigger, um die Codequalität zu sichern."
+        },
+        {
+          "step": 3,
+          "title": "Workflow-Implementierung",
+          "description": "Wir schreiben saubere, modulare Pipeline-Konfigurationen mit Tools wie GitHub Actions oder GitLab CI. Dies umfasst die Einrichtung automatisierter Unit-, Integrations- und Sicherheitstests."
+        },
+        {
+          "step": 4,
+          "title": "Umgebungsintegration",
+          "description": "Wir verbinden die Pipelines sicher mit Ihren Staging- und Produktionsumgebungen. Mithilfe von Infrastructure as Code stellen wir sicher, dass Umgebungen konsistent und sicher bereitgestellt werden."
+        },
+        {
+          "step": 5,
+          "title": "Optimierung & Caching",
+          "description": "Wir optimieren die Build-Geschwindigkeit durch die Implementierung von Dependency-Caching und paralleler Job-Ausführung. Dies verkürzt die Feedbackschleifen für Entwickler und hält die Build-Zeiten unter 10 Minuten."
+        },
+        {
+          "step": 6,
+          "title": "Übergabe & Überwachung",
+          "description": "Wir richten Echtzeit-Alarme für Pipeline-Fehler ein und schulen Ihr Team im Umgang mit Überwachungstools. Eine umfassende Dokumentation sorgt für eine reibungslose, langfristige Wartung."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Welche CI/CD-Tools unterstützen Sie?",
+          "answer": "Wir unterstützen eine Vielzahl von Industriestandard-Tools wie GitHub Actions, GitLab CI, Jenkins und ArgoCD. Unsere Auswahl hängt von Ihrem bestehenden Repository-Hosting, Ihrer Infrastruktur und der Expertise Ihres Teams ab."
+        },
+        {
+          "question": "Wie gewährleisten Sie Zero-Downtime-Deployments?",
+          "answer": "Wir implementieren fortschrittliche Deployment-Strategien wie Blue-Green- oder Canary-Deployments mit Kubernetes oder Cloud-nativen Load Balancern. Dies stellt sicher, dass der Datenverkehr erst nach erfolgreichen Health-Checks auf die neue Version umgeleitet wird, was sofortige Rollbacks ermöglicht."
+        },
+        {
+          "question": "Können Sie Sicherheitsprüfungen in die Pipeline integrieren?",
+          "answer": "Ja, wir integrieren statische Anwendungssicherheitsprüfungen (SAST) und Schwachstellen-Scans für Abhängigkeiten direkt in die Build-Phase. Dadurch wird sichergestellt, dass Sicherheitslücken und veraltete Pakete blockiert werden, bevor sie die Produktion erreichen."
+        },
+        {
+          "question": "Wie lange dauert die Einrichtung einer Pipeline typischerweise?",
+          "answer": "Die Einrichtung einer Standard-CI/CD-Pipeline dauert je nach Komplexität Ihrer Anwendung in der Regel 2 bis 4 Wochen. Dies umfasst die Testintegration, die Konfiguration mehrerer Umgebungen und eine gründliche Validierung."
+        },
+        {
+          "question": "Wie gehen Sie mit sensiblen Zugangsdaten und Secrets um?",
+          "answer": "Wir speichern Zugangsdaten niemals in Code-Repositories. Stattdessen integrieren wir sichere Secret-Management-Lösungen wie HashiCorp Vault, AWS Secrets Manager oder GitHub Secrets, um Anmeldedaten während der Laufzeit dynamisch bereitzustellen."
+        },
+        {
+          "question": "Können wir unsere bestehenden Legacy-Pipelines migrieren?",
+          "answer": "Absolut, wir sind darauf spezialisiert, veraltete Jenkins- oder manuelle Setups auf moderne, deklarative Pipelines wie GitHub Actions zu migrieren. Wir gewährleisten eine schrittweise Migration ohne Unterbrechung Ihrer laufenden Entwicklungszyklen."
+        },
+        {
+          "question": "Wie funktionieren automatische Rollbacks?",
+          "answer": "Wir konfigurieren Überwachungstools, um Fehlerraten und Systemzustände unmittelbar nach einem Deployment zu verfolgen. Wenn Anomalien festgestellt werden, leitet die Pipeline automatisch ein Rollback auf das vorherige stabile Container-Image oder Build-Version ein."
+        },
+        {
+          "question": "Bieten Sie Support nach der Implementierung an?",
+          "answer": "Ja, wir bieten fortlaufende Wartungs- und Supportpakete an, um Pipeline-Abhängigkeiten zu aktualisieren, Build-Geschwindigkeiten zu optimieren und Deployment-Probleme zu beheben. Unser Team steht Ihnen bei der Skalierung Ihrer Infrastruktur zur Seite."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "GitHub Actions",
+          "icon": "github"
+        },
+        {
+          "name": "GitLab CI",
+          "icon": "gitlab"
+        },
+        {
+          "name": "Jenkins",
+          "icon": "jenkins"
+        },
+        {
+          "name": "ArgoCD",
+          "icon": "argocd"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "سی آئی/سی ڈی پائپ لائنز",
+    "shortDescription": "خودکار سی آئی/سی ڈی پائپ لائنز کے ساتھ اپنے سافٹ ویئر کی فراہمی کو تیز کریں۔ ہم ایسے مضبوط بلڈ، ٹیسٹ اور ڈیپلائمنٹ ورک فلوز ڈیزائن کرتے ہیں جو دستی غلطیوں کو ختم کرتے ہیں۔",
+    "fullDescription": "جدید سافٹ ویئر ڈویلپمنٹ معیار پر سمجھوتہ کیے بغیر تیز رفتاری کا تقاضا کرتی ہے۔ ہماری سی آئی/سی ڈی پائپ لائن سروسز کوڈ کمٹ سے لے کر پروڈکشن ڈیپلائمنٹ تک آپ کے پورے ریلیز کے عمل کو خودکار بناتی ہیں۔ ہم GitHub Actions، GitLab CI، اور Jenkins جیسے انڈسٹری اسٹینڈرڈ ٹولز کا استعمال کرتے ہوئے خودکار ٹیسٹنگ، سیکیورٹی اسکیننگ، اور ملٹی انوائرمنٹ اسٹیجنگ کو مربوط کرتے ہیں۔ Blue-green اور canary جیسی جدید ڈیپلائمنٹ حکمت عملیوں کے ذریعے، ہم صفر ڈاؤن ٹائم اپ ڈیٹس اور فوری رول بیک کی صلاحیتوں کو یقینی بناتے ہیں۔ ہمارے ماہر DevOps انجینئرز بلڈ کیشنگ اور متوازی عمل درآمد کو بہتر بناتے ہیں، جس سے بلڈ کے وقت میں 60 فیصد تک کمی آتی ہے۔",
+    "features": [
+      "خودکار بلڈ اور ٹیسٹ ورک فلوز",
+      "ملٹی انوائرمنٹ ڈیپلائمنٹ گیٹس",
+      "سٹیٹک ایپلیکیشن سیکیورٹی ٹیسٹنگ (SAST)",
+      "Blue-Green اور Canary ڈیپلائمنٹ حکمت عملی",
+      "خودکار رول بیک اور ریکوری",
+      "کنٹینرائزڈ بلڈ ماحول",
+      "کوڈ کے طور پر انفراسٹرکچر (IaC) انٹیگریشن",
+      "ریئل ٹائم پائپ لائن مانیٹرنگ اور الرٹس"
+    ],
+    "benefits": [
+      "ڈیپلائمنٹ کی ناکامی کی شرح میں 50 فیصد تک کمی لائیں",
+      "نئے سافٹ ویئر فیچرز کی مارکیٹ میں لانچنگ کو تیز کریں",
+      "پروڈکشن میں دستی کنفیگریشن کی غلطیوں کو ختم کریں",
+      "ڈویلپرز کی پیداواری صلاحیت اور فیڈ بیک لوپس کو بہتر بنائیں",
+      "مسلسل سیکیورٹی تعمیل اور خطرات کی اسکیننگ کو یقینی بنائیں",
+      "خودکار رول بیکس کے ساتھ صفر ڈاؤن ٹائم ڈیپلائمنٹ حاصل کریں"
+    ],
+    "metaTitle": "خودکار سی آئی/سی ڈی پائپ لائن سروسز | PakSoft",
+    "metaDescription": "خودکار سی آئی/سی ڈی پائپ لائنز کے ساتھ سافٹ ویئر کی فراہمی تیز کریں۔ بلڈ ٹائم کم کریں اور محفوظ طریقے سے ڈیپلائے کریں۔ آج ہی PakSoft سے رابطہ کریں!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تشخیص اور حکمت عملی",
+          "description": "ہم آپ کے موجودہ ڈویلپمنٹ ورک فلو، ریپوزٹری کے ڈھانچے، اور ڈیپلائمنٹ کی رکاوٹوں کا تجزیہ کرتے ہیں۔ یہ ہمیں ایک ایسا موزوں سی آئی/سی ڈی روڈ میپ ڈیزائن کرنے کی اجازت دیتا ہے جو آپ کی ٹیم کی ریلیز کی رفتار کے مطابق ہو۔"
+        },
+        {
+          "step": 2,
+          "title": "پائپ لائن آرکیٹیکچر",
+          "description": "ہماری ٹیم پائپ لائن کے مراحل، ماحول کے گیٹس، اور سیکیورٹی چیک پوائنٹس کو ڈیزائن کرتی ہے۔ ہم کوڈ کے معیار کو یقینی بنانے کے لیے واضح برانچنگ حکمت عملی اور خودکار ٹیسٹ ٹرگرز کی وضاحت کرتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "ورک فلو کا نفاذ",
+          "description": "ہم GitHub Actions یا GitLab CI جیسے ٹولز کا استعمال کرتے ہوئے صاف اور ماڈیولر پائپ لائن کنفیگریشنز لکھتے ہیں۔ اس میں خودکار یونٹ، انٹیگریشن، اور سیکیورٹی ٹیسٹ ترتیب دینا شامل ہے۔"
+        },
+        {
+          "step": 4,
+          "title": "انوائرمنٹ انٹیگریشن",
+          "description": "ہم پائپ لائنز کو آپ کے اسٹیجنگ اور پروڈکشن ماحول سے محفوظ طریقے سے جوڑتے ہیں۔ کوڈ کے طور پر انفراسٹرکچر (IaC) کا استعمال کرتے ہوئے، ہم یقینی بناتے ہیں کہ ماحول مستقل اور محفوظ طریقے سے تیار کیا گیا ہو۔"
+        },
+        {
+          "step": 5,
+          "title": "آپٹیمائزیشن اور کیشنگ",
+          "description": "ہم ڈیپینڈینسی کیشنگ اور متوازی جاب پروسیسنگ کو نافذ کرکے بلڈ کی رفتار کو بہتر بناتے ہیں۔ یہ ڈویلپرز کے لیے فیڈ بیک کے وقت کو کم کرتا ہے اور بلڈ ٹائم کو 10 منٹ سے کم رکھتا ہے۔"
+        },
+        {
+          "step": 6,
+          "title": "حوالگی اور مانیٹرنگ",
+          "description": "ہم پائپ لائن کی ناکامیوں کے لیے ریئل ٹائم الرٹس ترتیب دیتے ہیں اور آپ کی ٹیم کو مانیٹرنگ ٹولز کی تربیت دیتے ہیں۔ ہموار طویل مدتی دیکھ بھال کو یقینی بنانے کے لیے جامع دستاویزات فراہم کی جاتی ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "آپ کن سی آئی/سی ڈی ٹولز کو سپورٹ کرتے ہیں؟",
+          "answer": "ہم GitHub Actions، GitLab CI، Jenkins، اور ArgoCD سمیت انڈسٹری اسٹینڈرڈ ٹولز کی ایک وسیع رینج کو سپورٹ کرتے ہیں۔ ہمارا انتخاب آپ کی موجودہ ریپوزٹری ہوسٹنگ، انفراسٹرکچر، اور ٹیم کی مہارت پر منحصر ہے۔"
+        },
+        {
+          "question": "آپ صفر ڈاؤن ٹائم ڈیپلائمنٹ کو کیسے یقینی بناتے ہیں؟",
+          "answer": "ہم Kubernetes یا کلاؤڈ نیٹیو لوڈ بیلنسرز کا استعمال کرتے ہوئے blue-green یا canary جیسی جدید ڈیپلائمنٹ حکمت عملیوں کو نافذ کرتے ہیں۔ یہ یقینی بناتا ہے کہ ٹریفک کو صرف اس وقت نئے ورژن پر منتقل کیا جائے جب وہ تمام ہیلتھ چیکس پاس کر لے، جس سے کسی بھی مسئلے کی صورت میں فوری رول بیک ممکن ہوتا۔"
+        },
+        {
+          "question": "کیا آپ پائپ لائن میں سیکیورٹی اسکیننگ کو مربوط کر سکتے ہیں؟",
+          "answer": "جی ہاں، ہم سٹیٹک ایپلیکیشن سیکیورٹی ٹیسٹنگ (SAST) اور ڈیپینڈینسی خطرات کی اسکیننگ کو براہ راست بلڈ مرحلے میں مربوط کرتے ہیں۔ یہ یقینی بناتا ہے کہ سیکیورٹی کے نقائص اور پرانے پیکجز پروڈکشن تک پہنچنے سے پہلے ہی پکڑے اور بلاک کر دیے جائیں۔"
+        },
+        {
+          "question": "پائپ لائن ترتیب دینے کا عام ٹائم فریم کیا ہے؟",
+          "answer": "ایک معیاری سی آئی/سی ڈی پائپ لائن کا سیٹ اپ عام طور پر آپ کی ایپلیکیشن کی پیچیدگی کے لحاظ سے 2 سے 4 ہفتے لیتا ہے۔ اس میں ٹیسٹنگ انٹیگریشن، ملٹی انوائرمنٹ کنفیگریشن، اور مکمل توثیق شامل۔"
+        },
+        {
+          "question": "آپ حساس اسناد اور پاس ورڈز کو کیسے ہینڈل کرتے ہیں؟",
+          "answer": "ہم کبھی بھی کوڈ ریپوزٹریز میں اسناد کو محفوظ نہیں کرتے ہیں۔ اس کے بجائے، ہم رن ٹائم کے دوران متحرک طور پر اسناد فراہم کرنے کے لیے HashiCorp Vault، AWS Secrets Manager، یا GitHub Secrets جیسے محفوظ سیکریٹ مینجمنٹ سلوشنز کو مربوط کرتے ہیں۔"
+        },
+        {
+          "question": "کیا ہم اپنی موجودہ پرانی پائپ لائنز کو منتقل کر سکتے ہیں؟",
+          "answer": "بالکل، ہم پرانے Jenkins یا دستی ڈیپلائمنٹ سیٹ اپس کو GitHub Actions جیسی جدید، ڈیکلاریٹو پائپ لائنز پر منتقل کرنے میں مہارت رکھتے ہیں۔ ہم آپ کے جاری ڈویلپمنٹ سائیکلز میں بغیر کسی رکاوٹ کے مرحلہ وار منتقلی کو یقینی بناتے ہیں۔"
+        },
+        {
+          "question": "خودکار رول بیکس کیسے کام کرتے ہیں؟",
+          "answer": "ہم ڈیپلائمنٹ کے فوراً بعد غلطی کی شرح اور سسٹم کی صحت کو ٹریک کرنے کے لیے مانیٹرنگ ٹولز کو کنفیگر کرتے ہیں۔ اگر کوئی غیر معمولی بات پائی جاتی ہے، تو پائپ لائن خود بخود پچھلے مستحکم کنٹینر امیج یا بلڈ ورژن پر رول بیک کو متحرک کرتی ہے۔"
+        },
+        {
+          "question": "کیا آپ نفاذ کے بعد سپورٹ فراہم کرتے ہیں؟",
+          "answer": "جی ہاں، ہم پائپ لائن کی ڈیپینڈینسیز کو اپ ڈیٹ کرنے، بلڈ کی رفتار کو بہتر بنانے، اور ڈیپلائمنٹ کے مسائل کو حل کرنے کے لیے جاری دیکھ بھال اور سپورٹ پیکجز پیش کرتے ہیں۔ جیسے جیسے آپ کا انفراسٹرکچر بڑھتا ہے، ہماری ٹیم مدد کے لیے دستیاب ہوتی ہے۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "GitHub Actions",
+          "icon": "github"
+        },
+        {
+          "name": "GitLab CI",
+          "icon": "gitlab"
+        },
+        {
+          "name": "Jenkins",
+          "icon": "jenkins"
+        },
+        {
+          "name": "ArgoCD",
+          "icon": "argocd"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "خطوط أنابيب CI/CD",
+    "shortDescription": "سرّع دورة حياة تسليم البرمجيات الخاصة بك باستخدام خطوط أنابيب CI/CD المؤتمتة. نصمم تدفقات عمل قوية للبناء والاختبار والنشر تقضي على الأخطاء اليدوية تمامًا.",
+    "fullDescription": "تتطلب عملية تطوير البرمجيات الحديثة السرعة دون التضحية بالجودة. تعمل خدمات خطوط أنابيب CI/CD لدينا على أتمتة عملية الإصدار بالكامل، بدءًا من إرسال الكود وحتى النشر في البيئة الفعلية. نقوم بدمج الاختبارات الآلية، وفحص الثغرات الأمنية، والبيئات المتعددة باستخدام أدوات قياسية مثل GitHub Actions و GitLab CI و Jenkins. من خلال تطبيق استراتيجيات نشر متقدمة مثل blue-green و canary، نضمن تحديثات خالية من فترات التوقف وإمكانيات التراجع الفوري. يعمل مهندسو DevOps الخبراء لدينا على تحسين التخزين المؤقت للبناء والتنفيذ المتوازي، مما يقلل أوقات البناء بنسبة تصل إلى 60%، مما يتيح لفريقك التركيز على كتابة الكود.",
+    "features": [
+      "تدفقات عمل البناء والاختبار المؤتمتة",
+      "بوابات النشر متعددة البيئات",
+      "اختبار أمان التطبيقات الثابت (SAST)",
+      "استراتيجيات النشر Blue-Green و Canary",
+      "التراجع والاسترداد التلقائي",
+      "بيئات بناء معتمدة على الحاويات",
+      "تكامل البنية التحتية ككود (IaC)",
+      "مراقبة خطوط الأنابيب والتنبيهات في الوقت الفعلي"
+    ],
+    "benefits": [
+      "تقليل معدلات فشل النشر بنسبة تصل إلى 50%",
+      "تسريع وقت طرح ميزات البرمجيات الجديدة في السوق",
+      "القضاء على أخطاء التكوين اليدوية في البيئة الفعلية",
+      "تحسين إنتاجية المطورين وحلقات التغذية الراجعة",
+      "ضمان الامتثال الأمني المستمر وفحص الثغرات",
+      "تحقيق عمليات نشر خالية من التوقف مع التراجع التلقائي"
+    ],
+    "metaTitle": "خدمات خطوط أنابيب CI/CD المؤتمتة | PakSoft",
+    "metaDescription": "سرّع تسليم البرمجيات باستخدام خطوط أنابيب CI/CD المؤتمتة. قلل أوقات البناء، وتخلص من الأخطاء اليدوية، وانشر بأمان تام. اتصل بشركة PakSoft اليوم لبدء العمل!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "التقييم والاستراتيجية",
+          "description": "نقوم بتحليل سير عمل التطوير الحالي، وهيكل المستودع، واختناقات النشر لديك. يتيح لنا ذلك تصميم خارطة طريق CI/CD مخصصة تتوافق تمامًا مع وتيرة إصدارات فريقك."
+        },
+        {
+          "step": 2,
+          "title": "بنية خطوط الأنابيب",
+          "description": "يصمم فريقنا مراحل خطوط الأنابيب، وبوابات البيئة، ونقاط التفتيش الأمنية. نحدد استراتيجيات تفريع واضحة ومحفزات اختبار آلية لضمان جودة الكود البرمجي باستمرار."
+        },
+        {
+          "step": 3,
+          "title": "تنفيذ سير العمل",
+          "description": "نكتب تكوينات خطوط أنابيب نظيفة ومجزأة باستخدام أدوات مثل GitHub Actions أو GitLab CI. يتضمن ذلك إعداد اختبارات الوحدة، والتكامل، والاختبارات الأمنية المؤتمتة بالكامل."
+        },
+        {
+          "step": 4,
+          "title": "تكامل البيئات",
+          "description": "نربط خطوط الأنابيب ببيئات الاختبار والإنتاج الخاصة بك بشكل آمن للغاية. باستخدام البنية التحتية ككود (IaC)، نضمن تهيئة البيئات وتوفيرها بشكل متسق وآمن."
+        },
+        {
+          "step": 5,
+          "title": "التحسين والتخزين المؤقت",
+          "description": "نعمل على تحسين سرعات البناء من خلال تطبيق التخزين المؤقت للمكتبات والتنفيذ المتوازي للمهام. يقلل هذا من حلقات التغذية الراجعة للمطورين ويحافظ على وقت البناء تحت 10 دقائق."
+        },
+        {
+          "step": 6,
+          "title": "التسليم والمراقبة",
+          "description": "نقوم بإعداد تنبيهات فورية لأي فشل في خطوط الأنابيب وتدريب فريقك على أدوات المراقبة الحديثة. يتم تقديم وثائق شاملة لضمان الصيانة السلسة والمستمرة على المدى الطويل."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما هي أدوات CI/CD التي تدعمونها؟",
+          "answer": "نحن ندعم مجموعة واسعة من الأدوات القياسية في الصناعة بما في ذلك GitHub Actions و GitLab CI و Jenkins و ArgoCD. يعتمد اختيارنا على مستودع الأكواد الحالي لديك، وبنيتك التحتية، وخبرة فريقك."
+        },
+        {
+          "question": "كيف تضمنون عمليات نشر خالية من فترات التوقف؟",
+          "answer": "نحن نطبق استراتيجيات نشر متقدمة مثل blue-green أو canary باستخدام Kubernetes أو موازنات التحميل السحابية. يضمن ذلك توجيه حركة المرور إلى الإصدار الجديد فقط بعد اجتيازه لجميع فحوصات السلامة، مما يسمح بالتراجع الفوري في حال حدوث مشاكل."
+        },
+        {
+          "question": "هل يمكنكم دمج فحص الأمان في خط الأنابيب؟",
+          "answer": "نعم، نقوم بدمج اختبار أمان التطبيقات الثابت (SAST) وفحص ثغرات المكتبات مباشرة في مرحلة البناء. يضمن ذلك اكتشاف العيوب الأمنية والحزم القديمة وحظرها قبل وصولها إلى بيئة الإنتاج الفعلية."
+        },
+        {
+          "question": "ما هو الجدول الزمني النموذجي لإعداد خط الأنابيب؟",
+          "answer": "يستغرق إعداد خط أنابيب CI/CD القياسي عادةً ما بين أسبوعين إلى 4 أسابيع اعتمادًا على مدى تعقيد تطبيقك. يشمل ذلك تكامل الاختبارات، وتكوين البيئات المتعددة، والتحقق الشامل من الصحة."
+        },
+        {
+          "question": "كيف تتعاملون مع البيانات الحساسة وكلمات المرور؟",
+          "answer": "نحن لا نقوم أبدًا بتخزين بيانات الاعتماد في مستودعات الأكواد. بدلاً من ذلك، ندمج حلول إدارة الأسرار الآمنة مثل HashiCorp Vault أو AWS Secrets Manager أو GitHub Secrets لحقن البيانات ديناميكيًا أثناء التشغيل."
+        },
+        {
+          "question": "هل يمكننا ترحيل خطوط الأنابيب القديمة الحالية لدينا؟",
+          "answer": "بالتأكيد، نحن متخصصون في ترحيل إعدادات Jenkins القديمة أو عمليات النشر اليدوية إلى خطوط أنابيب حديثة وتصريحية مثل GitHub Actions. نضمن ترحيلًا تدريجيًا دون أي انقطاع لدورات التطوير المستمرة."
+        },
+        {
+          "question": "كيف تعمل عمليات التراجع التلقائي؟",
+          "answer": "نقوم بتكوين أدوات مراقبة لتتبع معدلات الخطأ وصحة النظام فورًا بعد النشر. إذا تم اكتشاف أي شذوذ، يقوم خط الأنابيب تلقائيًا بتشغيل التراجع إلى صورة الحاوية المستقرة السابقة أو إصدار البناء السابق."
+        },
+        {
+          "question": "هل تقدمون دعمًا بعد التنفيذ؟",
+          "answer": "نعم، نحن نقدم حزم صيانة ودعم مستمرة لتحديث مكتبات خطوط الأنابيب، وتحسين سرعات البناء، واستكشاف أخطاء النشر وإصلاحها. فريقنا متاح دائمًا لمساعدتك مع توسع بنيتك التحتية."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "GitHub Actions",
+          "icon": "github"
+        },
+        {
+          "name": "GitLab CI",
+          "icon": "gitlab"
+        },
+        {
+          "name": "Jenkins",
+          "icon": "jenkins"
+        },
+        {
+          "name": "ArgoCD",
+          "icon": "argocd"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        }
+      ]
+    }
+  }
+}

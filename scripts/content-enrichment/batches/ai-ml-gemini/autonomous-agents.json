@@ -1,0 +1,638 @@
+{
+  "slug": "autonomous-agents",
+  "en": {
+    "name": "Autonomous AI Agents",
+    "shortDescription": "Build AI agents that can reason, plan, use tools, and execute complex multi-step tasks autonomously.",
+    "fullDescription": "Chatbots answer questions, but Autonomous AI Agents get work done. We design and deploy agentic systems that can take a high-level goal ('Research our top 5 competitors and write a comparison report in Confluence') and independently break it down into a sequence of actionable steps. Using frameworks like LangChain, LangGraph, and CrewAI, we give Large Language Models access to tools—browsers, calculators, internal APIs, and databases—allowing them to interact with the real world. Unlike single-prompt bots, these agents possess working memory and self-reflection; if a web search fails or an API returns an error, the agent can recognize the failure, pivot its strategy, and try a different tool. From fully autonomous web scraping and research bots to coding assistants and complex scheduling agents, we build reliable, secure agent ecosystems that drastically multiply your team's operational bandwidth.",
+    "features": [
+      "Multi-step Reasoning & Task Decomposition",
+      "Tool Usage Integration (APIs, Browsers, DBs)",
+      "Short-term & Long-term Memory Architecture",
+      "Self-Reflection & Error Recovery Handling",
+      "Multi-Agent Orchestration (CrewAI / AutoGen)",
+      "Human-in-the-Loop Safeguards",
+      "Secure Execution Sandboxes (Docker)",
+      "Custom Plugin Development for Existing Apps"
+    ],
+    "benefits": [
+      "Automate high-level tasks that require planning, not just data entry",
+      "Provide your team with tireless digital workers that operate 24/7",
+      "Reduce research and compilation time from days to minutes",
+      "Enable AI to interact dynamically with your proprietary APIs",
+      "Ensure task completion through the agent's ability to recover from errors",
+      "Maintain control with built-in human approval checkpoints"
+    ],
+    "metaTitle": "Autonomous AI Agents & Multi-Agent Systems | PakSoft",
+    "metaDescription": "Deploy autonomous AI agents that can plan, use APIs, and execute complex tasks. We build intelligent agentic systems using LangChain and CrewAI.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Goal & Tool Definition",
+          "description": "We identify the specific complex tasks you want to automate. We define the tools the agent will need access to (e.g., Google Search API, Jira API, SQL Read Access)."
+        },
+        {
+          "step": 2,
+          "title": "Agentic Architecture Design",
+          "description": "We decide whether a single agent or a Multi-Agent system (where agents with specific roles communicate with each other) is required, designing the graph of state transitions."
+        },
+        {
+          "step": 3,
+          "title": "Prompt Engineering & Personas",
+          "description": "We craft the system prompts that define the agent's persona, its rules of engagement, and how it should format its 'thought process' (Chain of Thought reasoning) before acting."
+        },
+        {
+          "step": 4,
+          "title": "Tool Integration & Sandboxing",
+          "description": "We build the software wrappers that allow the LLM to call your APIs safely. We implement execution sandboxes so the agent cannot perform destructive actions (like dropping a database)."
+        },
+        {
+          "step": 5,
+          "title": "Memory System Implementation",
+          "description": "We integrate vector databases (like Pinecone) for long-term memory, allowing the agent to remember past interactions, preferences, and previously discovered facts across sessions."
+        },
+        {
+          "step": 6,
+          "title": "Testing & Human-in-Loop Setup",
+          "description": "We test the agent against edge cases to ensure it doesn't get stuck in infinite loops. We deploy it with a user interface where a human must approve critical actions before execution."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the difference between an Agent and a Chatbot?",
+          "answer": "A chatbot waits for your prompt, replies with text, and stops. An Agent receives a goal, creates a plan, uses tools (like browsing the web or querying a database), evaluates its own progress, and takes multiple independent actions to achieve the goal before returning to you."
+        },
+        {
+          "question": "Can the agent perform dangerous actions by mistake?",
+          "answer": "Safety is our priority. We design agents with strict RBAC (Role-Based Access Control) and Read-Only permissions where possible. For actions that change state (e.g., sending an email to a client, deleting a file, making a purchase), we enforce a hard 'Human-in-the-Loop' pause where the agent drafts the action and waits for your explicit approval."
+        },
+        {
+          "question": "What are Multi-Agent Systems?",
+          "answer": "Instead of one 'super' agent trying to do everything, Multi-Agent systems use a team of specialized agents. For example, a 'Researcher Agent' gathers data, hands it to an 'Analyst Agent' who processes it, who then gives it to a 'Writer Agent' to draft the report. This greatly improves accuracy and reduces hallucinations."
+        },
+        {
+          "question": "What tools can the AI use?",
+          "answer": "We can build tools for almost anything with an API. Common tools include Web Browsers (Playwright), Search Engines (Tavily/Google), Code Interpreters (Python sandboxes for data analysis), CRM platforms (Salesforce), and your own internal databases."
+        },
+        {
+          "question": "Do agents hallucinate more than normal LLMs?",
+          "answer": "Agents can get confused or stuck in loops, but their tool use actually reduces factual hallucinations. Instead of guessing a fact, an agent is instructed to use its 'Search Web' tool to find the exact truth before answering."
+        },
+        {
+          "question": "How do you handle an agent getting stuck in an infinite loop?",
+          "answer": "We use state-graph frameworks like LangGraph, which allow us to set strict boundaries. We implement 'Max Iteration' limits and timeout protocols. If an agent tries the same tool 3 times and fails, the system forces it to stop and ask a human for help."
+        },
+        {
+          "question": "Are these agents expensive to run?",
+          "answer": "Agents consume more API tokens than standard chatbots because they 'think' and make multiple tool calls behind the scenes. We optimize costs by using cheaper models (like GPT-4o-mini or Llama 3) for basic tool routing, and only calling expensive models for complex reasoning tasks."
+        },
+        {
+          "question": "How long does it take to build a custom agent?",
+          "answer": "A simple agent with access to 2-3 basic tools (like web search and a simple API) takes about 3-4 weeks. Complex multi-agent workflows with memory, secure sandboxes, and custom integrations typically take 8-12 weeks."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "openai",
+          "name": "OpenAI / GPT-4"
+        },
+        {
+          "icon": "huggingface",
+          "name": "LangChain / LangGraph"
+        },
+        {
+          "icon": "docker",
+          "name": "CrewAI"
+        },
+        {
+          "icon": "vector",
+          "name": "Pinecone (Vector DB)"
+        },
+        {
+          "icon": "redis",
+          "name": "Redis (Memory)"
+        },
+        {
+          "icon": "react",
+          "name": "React (Agent UI)"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS Fargate"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Otonom Yapay Zeka Ajanları",
+    "shortDescription": "Akıl yürütebilen, plan yapabilen, araçları kullanabilen ve karmaşık, çok adımlı görevleri otonom olarak yürütebilen yapay zeka ajanları oluşturun.",
+    "fullDescription": "Chatbotlar soruları yanıtlar, ancak Otonom Yapay Zeka Ajanları işi halleder. Üst düzey bir hedefi ('En büyük 5 rakibimizi araştır ve Confluence'ta bir karşılaştırma raporu yaz') alıp bunu bağımsız olarak eyleme geçirilebilir adımlar dizisine bölebilen ajan sistemleri tasarlıyor ve devreye alıyoruz. LangChain, LangGraph ve CrewAI gibi çerçeveleri kullanarak Büyük Dil Modellerine (LLM) dış dünyaya müdahale etmelerini sağlayan araçlara (tarayıcılar, hesap makineleri, dahili API'ler ve veritabanları) erişim veriyoruz. Tek komutluk botların aksine, bu ajanlar çalışan bir belleğe ve öz yansıtma (self-reflection) yeteneğine sahiptir; bir web araması başarısız olursa veya bir API hata döndürürse, ajan hatayı tanıyabilir, stratejisini değiştirebilir ve farklı bir araç deneyebilir. Tamamen otonom web kazıma (web scraping) ve araştırma botlarından, kodlama asistanlarına ve karmaşık planlama ajanlarına kadar, ekibinizin operasyonel kapasitesini katlanarak artıran güvenilir, güvenli ajan ekosistemleri kuruyoruz.",
+    "features": [
+      "Çok Adımlı Akıl Yürütme ve Görev Ayrıştırma",
+      "Araç Kullanımı Entegrasyonu (API'ler, Tarayıcılar, DB'ler)",
+      "Kısa ve Uzun Vadeli Bellek (Memory) Mimarisi",
+      "Öz Yansıtma (Self-Reflection) ve Hata Kurtarma Yönetimi",
+      "Çoklu Ajan (Multi-Agent) Orkestrasyonu (CrewAI / AutoGen)",
+      "Döngüde İnsan (Human-in-the-Loop) Güvenlik Önlemleri",
+      "Güvenli Çalıştırma Alanları (Sandboxes / Docker)",
+      "Mevcut Uygulamalar İçin Özel Eklenti Geliştirme"
+    ],
+    "benefits": [
+      "Sadece veri girişi değil, planlama gerektiren üst düzey görevleri otomatikleştirin",
+      "Ekibinize 7/24 çalışan yorulmaz dijital çalışanlar sağlayın",
+      "Araştırma ve derleme süresini günlerden dakikalara indirin",
+      "Yapay zekanın size ait özel API'lerle dinamik olarak etkileşime girmesini sağlayın",
+      "Ajanın hatalardan kurtulma yeteneği sayesinde görevlerin kesin tamamlanmasını sağlayın",
+      "Dahili insan onayı kontrol noktalarıyla kontrolü daima elinizde tutun"
+    ],
+    "metaTitle": "Otonom Yapay Zeka Ajanları ve Sistemleri | PakSoft",
+    "metaDescription": "Plan yapabilen, API kullanabilen ve görevleri yürütebilen otonom yapay zeka ajanları devreye alın. LangChain ve CrewAI kullanarak akıllı sistemler kuruyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Hedef ve Araç Tanımlama",
+          "description": "Otomatikleştirmek istediğiniz belirli karmaşık görevleri belirliyoruz. Ajanın erişmesi gereken araçları (örn. Google Arama API'si, Jira API'si, SQL Okuma Erişimi) tanımlıyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Ajan (Agentic) Mimari Tasarımı",
+          "description": "Durum geçişlerinin (state transitions) grafiğini çizerek tek bir ajan mı yoksa belirli rollere sahip ajanların birbirleriyle iletişim kurduğu Çoklu Ajan (Multi-Agent) sisteminin mi gerektiğine karar veriyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Prompt Mühendisliği ve Personalar",
+          "description": "Ajanın personasını, angajman kurallarını ve harekete geçmeden önce 'düşünce sürecini' (Chain of Thought) nasıl şekillendirmesi gerektiğini tanımlayan sistem promptlarını hazırlıyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Araç Entegrasyonu ve Korumalı Alan (Sandboxing)",
+          "description": "LLM'in API'lerinizi güvenli bir şekilde çağırmasını sağlayan yazılım sarmalayıcıları oluşturuyoruz. Ajanın zarar verici eylemler (veritabanı silmek gibi) yapmasını önlemek için güvenli çalıştırma alanları (sandboxes) uyguluyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Bellek Sistemi Uygulaması",
+          "description": "Uzun vadeli bellek için vektör veritabanlarını (Pinecone gibi) entegre ederek ajanın geçmiş etkileşimleri, tercihleri ve önceden keşfedilen gerçekleri oturumlar arasında hatırlamasını sağlıyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Test ve Döngüde İnsan (Human-in-Loop) Kurulumu",
+          "description": "Ajanın sonsuz döngülere sıkışmamasını sağlamak için uç durumlara (edge cases) karşı test ediyoruz. Kritik eylemlerin yürütülmeden önce bir insan tarafından onaylanmasını gerektiren bir kullanıcı arayüzü ile devreye alıyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bir Ajan (Agent) ile Chatbot arasındaki fark nedir?",
+          "answer": "Bir chatbot komutunuzu bekler, metinle yanıt verir ve durur. Bir Ajan (Agent) ise bir hedef alır, bir plan oluşturur, araçları kullanır (internette gezinmek veya bir veritabanını sorgulamak gibi), kendi ilerlemesini değerlendirir ve size geri dönmeden önce hedefe ulaşmak için bağımsız olarak birden fazla eylem gerçekleştirir."
+        },
+        {
+          "question": "Ajan yanlışlıkla tehlikeli eylemler gerçekleştirebilir mi?",
+          "answer": "Güvenlik önceliğimizdir. Ajanları sıkı RBAC (Rol Tabanlı Erişim Kontrolü) ve mümkün olduğunca Salt Okunur (Read-Only) izinlerle tasarlıyoruz. Durumu değiştiren eylemler için (bir müşteriye e-posta göndermek, bir dosyayı silmek, bir satın alma işlemi yapmak gibi) ajanın eylemi taslak haline getirdiği ve sizin açık onayınızı beklediği zorunlu bir 'Döngüde İnsan' duraklaması uyguluyoruz."
+        },
+        {
+          "question": "Çoklu Ajan (Multi-Agent) Sistemleri nedir?",
+          "answer": "Her şeyi yapmaya çalışan tek bir 'süper' ajan yerine, Çoklu Ajan sistemleri uzmanlaşmış ajanlardan oluşan bir ekip kullanır. Örneğin, bir 'Araştırmacı Ajan' veri toplar, bunu işleyen bir 'Analist Ajan'a verir, o da raporu hazırlaması için bir 'Yazar Ajan'a verir. Bu, doğruluğu büyük ölçüde artırır ve halüsinasyonları azaltır."
+        },
+        {
+          "question": "Yapay zeka hangi araçları kullanabilir?",
+          "answer": "API'si olan hemen her şey için araç üretebiliriz. Yaygın araçlar arasında Web Tarayıcıları (Playwright), Arama Motorları (Tavily/Google), Kod Yorumlayıcıları (veri analizi için Python korumalı alanları), CRM platformları (Salesforce) ve kendi dahili veritabanlarınız bulunur."
+        },
+        {
+          "question": "Ajanlar normal LLM'lerden daha fazla mı halüsinasyon görür (uydurur)?",
+          "answer": "Ajanlar kafası karışabilir veya döngülere sıkışabilir, ancak araç kullanımları aslında olgusal halüsinasyonları azaltır. Bir ajan bir gerçeği tahmin etmek yerine, cevap vermeden önce kesin gerçeği bulmak için 'Web'de Ara' aracını kullanması talimatını alır."
+        },
+        {
+          "question": "Sonsuz bir döngüde sıkışıp kalan bir ajanı nasıl idare ediyorsunuz?",
+          "answer": "LangGraph gibi, sıkı sınırlar belirlememize olanak tanıyan durum grafiği (state-graph) çerçeveleri kullanıyoruz. 'Maksimum Yineleme' (Max Iteration) sınırları ve zaman aşımı (timeout) protokolleri uyguluyoruz. Bir ajan aynı aracı 3 kez dener ve başarısız olursa, sistem onu durmaya ve bir insandan yardım istemeye zorlar."
+        },
+        {
+          "question": "Bu ajanları çalıştırmak pahalı mı?",
+          "answer": "Ajanlar standart chatbotlardan daha fazla API token'ı tüketir, çünkü sahne arkasında 'düşünürler' ve birden fazla araç çağrısı yaparlar. Temel araç yönlendirmesi için daha ucuz modeller (GPT-4o-mini veya Llama 3 gibi) kullanarak maliyetleri optimize ediyor ve pahalı modelleri yalnızca karmaşık muhakeme görevleri için çağırıyoruz."
+        },
+        {
+          "question": "Özel bir ajan oluşturmak ne kadar sürer?",
+          "answer": "2-3 temel araca (web araması ve basit bir API gibi) erişimi olan basit bir ajan yaklaşık 3-4 hafta sürer. Bellek, güvenli korumalı alanlar ve özel entegrasyonlar içeren karmaşık çoklu ajan iş akışları genellikle 8-12 hafta sürer."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "openai",
+          "name": "OpenAI / GPT-4"
+        },
+        {
+          "icon": "huggingface",
+          "name": "LangChain / LangGraph"
+        },
+        {
+          "icon": "docker",
+          "name": "CrewAI"
+        },
+        {
+          "icon": "vector",
+          "name": "Pinecone (Vector DB)"
+        },
+        {
+          "icon": "redis",
+          "name": "Redis (Memory)"
+        },
+        {
+          "icon": "react",
+          "name": "React (Agent UI)"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS Fargate"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Autonome KI-Agenten",
+    "shortDescription": "Bauen Sie KI-Agenten, die logisch denken, planen, Werkzeuge nutzen und komplexe, mehrstufige Aufgaben autonom ausführen können.",
+    "fullDescription": "Chatbots beantworten Fragen, aber Autonome KI-Agenten erledigen Arbeit. Wir entwerfen und deployen agentische Systeme, die ein übergeordnetes Ziel ('Recherchiere unsere Top-5-Wettbewerber und schreibe einen Vergleichsbericht in Confluence') aufnehmen und selbstständig in eine Abfolge von umsetzbaren Schritten zerlegen können. Mit Frameworks wie LangChain, LangGraph und CrewAI geben wir Large Language Models Zugriff auf Werkzeuge — Browser, Taschenrechner, interne APIs und Datenbanken — und ermöglichen ihnen so die Interaktion mit der realen Welt. Im Gegensatz zu Single-Prompt-Bots verfügen diese Agenten über ein Arbeitsgedächtnis und die Fähigkeit zur Selbstreflexion; wenn eine Websuche fehlschlägt oder eine API einen Fehler zurückgibt, erkennt der Agent den Fehler, ändert seine Strategie und probiert ein anderes Werkzeug. Von völlig autonomen Web-Scraping- und Research-Bots bis hin zu Coding-Assistenten und komplexen Scheduling-Agenten bauen wir zuverlässige, sichere Agenten-Ökosysteme, die die operative Kapazität Ihres Teams vervielfachen.",
+    "features": [
+      "Mehrstufiges Reasoning & Aufgabenzerlegung",
+      "Integration von Werkzeugen (APIs, Browser, DBs)",
+      "Architektur für Kurz- und Langzeitgedächtnis",
+      "Selbstreflexion & Fehlerbehebung (Error Recovery)",
+      "Multi-Agenten-Orchestrierung (CrewAI / AutoGen)",
+      "Human-in-the-Loop-Sicherheitsmechanismen",
+      "Sichere Ausführungsumgebungen (Docker Sandboxes)",
+      "Entwicklung benutzerdefinierter Plugins für existierende Apps"
+    ],
+    "benefits": [
+      "Automatisieren Sie komplexe Aufgaben, die Planung erfordern, nicht nur Dateneingabe",
+      "Stellen Sie Ihrem Team unermüdliche digitale Mitarbeiter zur Verfügung, die 24/7 arbeiten",
+      "Reduzieren Sie Recherche- und Kompilierungszeiten von Tagen auf Minuten",
+      "Ermöglichen Sie KI die dynamische Interaktion mit Ihren proprietären APIs",
+      "Stellen Sie die Aufgabenerledigung durch die Fehler-Recovery-Fähigkeit des Agenten sicher",
+      "Behalten Sie die Kontrolle mit eingebauten Kontrollpunkten für menschliche Freigaben"
+    ],
+    "metaTitle": "Autonome KI-Agenten & Multi-Agenten-Systeme | PakSoft",
+    "metaDescription": "Deployen Sie autonome KI-Agenten, die planen, APIs nutzen und Aufgaben ausführen können. Wir bauen intelligente agentische Systeme mit LangChain und CrewAI.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Ziel- & Werkzeugdefinition",
+          "description": "Wir identifizieren die spezifischen komplexen Aufgaben, die automatisiert werden sollen. Wir definieren die Werkzeuge, auf die der Agent Zugriff benötigt (z.B. Google Search API, Jira API, SQL-Lesezugriff)."
+        },
+        {
+          "step": 2,
+          "title": "Design der agentischen Architektur",
+          "description": "Wir entscheiden, ob ein einzelner Agent oder ein Multi-Agenten-System (bei dem Agenten mit spezifischen Rollen kommunizieren) erforderlich ist, und entwerfen den Zustandsgraphen (State Graph)."
+        },
+        {
+          "step": 3,
+          "title": "Prompt Engineering & Personas",
+          "description": "Wir erstellen die System-Prompts, die die Persona des Agenten, seine Einsatzregeln und die Formatierung seines 'Gedankenprozesses' (Chain of Thought) vor einer Aktion definieren."
+        },
+        {
+          "step": 4,
+          "title": "Werkzeug-Integration & Sandboxing",
+          "description": "Wir bauen die Wrapper, die es dem LLM ermöglichen, Ihre APIs sicher aufzurufen. Wir implementieren sichere Sandboxes, damit der Agent keine zerstörerischen Aktionen durchführen kann."
+        },
+        {
+          "step": 5,
+          "title": "Implementierung des Gedächtnissystems",
+          "description": "Wir integrieren Vektordatenbanken (wie Pinecone) für das Langzeitgedächtnis, sodass sich der Agent sitzungsübergreifend an vergangene Interaktionen, Präferenzen und Fakten erinnern kann."
+        },
+        {
+          "step": 6,
+          "title": "Testing & Human-in-Loop Setup",
+          "description": "Wir testen den Agenten auf Edge-Cases, um Endlosschleifen zu vermeiden. Wir deployen ihn mit einem UI, in dem ein Mensch kritische Aktionen vor der Ausführung freigeben muss."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist der Unterschied zwischen einem Agenten und einem Chatbot?",
+          "answer": "Ein Chatbot wartet auf Ihren Prompt, antwortet mit Text und stoppt. Ein Agent erhält ein Ziel, erstellt einen Plan, nutzt Werkzeuge (wie Webbrowsing), bewertet seinen eigenen Fortschritt und führt mehrere unabhängige Aktionen aus, um das Ziel zu erreichen, bevor er sich zurückmeldet."
+        },
+        {
+          "question": "Kann der Agent aus Versehen gefährliche Aktionen durchführen?",
+          "answer": "Sicherheit ist unsere Priorität. Wir designen Agenten mit strenger RBAC und nach Möglichkeit mit Read-Only-Rechten. Bei zustandsverändernden Aktionen (E-Mail senden, Datei löschen, Kauf tätigen) erzwingen wir eine 'Human-in-the-Loop'-Pause: Der Agent entwirft die Aktion und wartet auf Ihre explizite Freigabe."
+        },
+        {
+          "question": "Was sind Multi-Agenten-Systeme?",
+          "answer": "Statt eines 'Super'-Agenten, der alles versucht, nutzen Multi-Agenten-Systeme ein Team von Spezialisten. Ein 'Recherche-Agent' sammelt Daten, übergibt sie an einen 'Analysten-Agenten', der sie verarbeitet und dann an einen 'Schreiber-Agenten' weitergibt. Das verbessert die Genauigkeit massiv."
+        },
+        {
+          "question": "Welche Werkzeuge kann die KI nutzen?",
+          "answer": "Alles, was eine API hat. Häufige Werkzeuge sind Webbrowser (Playwright), Suchmaschinen (Tavily), Code-Interpreter (Python-Sandboxes für Datenanalyse), CRM-Plattformen (Salesforce) und Ihre internen Datenbanken."
+        },
+        {
+          "question": "Halluzinieren Agenten mehr als normale LLMs?",
+          "answer": "Agenten können verwirrt sein oder in Schleifen stecken bleiben, aber ihre Nutzung von Werkzeugen reduziert faktische Halluzinationen tatsächlich. Anstatt eine Tatsache zu raten, wird ein Agent angewiesen, sein 'Websuche'-Werkzeug zu nutzen, um die exakte Wahrheit zu finden."
+        },
+        {
+          "question": "Wie verhindern Sie, dass ein Agent in einer Endlosschleife stecken bleibt?",
+          "answer": "Wir nutzen State-Graph-Frameworks wie LangGraph, die strenge Grenzen setzen. Wir implementieren 'Max Iteration'-Limits und Timeouts. Versucht ein Agent das gleiche Werkzeug dreimal erfolglos, stoppt das System und bittet einen Menschen um Hilfe."
+        },
+        {
+          "question": "Sind diese Agenten teuer im Betrieb?",
+          "answer": "Agenten verbrauchen mehr API-Tokens als Chatbots, da sie im Hintergrund 'denken' und mehrere Tool-Calls machen. Wir optimieren Kosten, indem wir günstigere Modelle (wie GPT-4o-mini) für einfaches Routing und teure Modelle nur für komplexes Reasoning nutzen."
+        },
+        {
+          "question": "Wie lange dauert es, einen benutzerdefinierten Agenten zu bauen?",
+          "answer": "Ein einfacher Agent mit 2-3 Werkzeugen (Websuche, simple API) dauert ca. 3-4 Wochen. Komplexe Multi-Agenten-Workflows mit Gedächtnis, Sandboxes und benutzerdefinierten Integrationen erfordern meist 8-12 Wochen."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "openai",
+          "name": "OpenAI / GPT-4"
+        },
+        {
+          "icon": "huggingface",
+          "name": "LangChain / LangGraph"
+        },
+        {
+          "icon": "docker",
+          "name": "CrewAI"
+        },
+        {
+          "icon": "vector",
+          "name": "Pinecone (Vector DB)"
+        },
+        {
+          "icon": "redis",
+          "name": "Redis (Memory)"
+        },
+        {
+          "icon": "react",
+          "name": "React (Agent UI)"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS Fargate"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "خودمختار AI ایجنٹس",
+    "shortDescription": "ایسے AI ایجنٹس بنائیں جو منطق استعمال کر سکیں، منصوبہ بندی کر سکیں، ٹولز کا استعمال کر سکیں اور پیچیدہ ملٹی اسٹیپ کاموں کو خود مختاری سے سرانجام دے سکیں۔",
+    "fullDescription": "چیٹ بوٹس صرف سوالوں کے جواب دیتے ہیں، لیکن خودمختار AI ایجنٹس اصل کام کرتے ہیں۔ ہم ایسے ایجنٹ سسٹمز ڈیزائن کرتے ہیں جو ایک اعلیٰ سطح کا ہدف ('ہمارے ٹاپ 5 حریفوں کی تحقیق کریں اور Confluence میں ایک تقابلی رپورٹ لکھیں') لے کر اسے خود مختاری سے قابل عمل اقدامات میں تقسیم کر سکتے ہیں۔ LangChain، LangGraph، اور CrewAI جیسے فریم ورکس کا استعمال کرتے ہوئے، ہم Large Language Models کو ٹولز—براؤزرز، کیلکولیٹرز، اندرونی APIs، اور ڈیٹا بیسز—تک رسائی دیتے ہیں، جس سے وہ حقیقی دنیا کے ساتھ تعامل کر سکتے ہیں۔ سنگل پرامپٹ بوٹس کے برعکس، ان ایجنٹس میں ورکنگ میموری اور خود احتسابی (self-reflection) کی صلاحیت ہوتی ہے؛ اگر کوئی ویب سرچ ناکام ہو جائے یا کوئی API ایرر دے دے، تو ایجنٹ اس ناکامی کو پہچان سکتا ہے، اپنی حکمت عملی تبدیل کر سکتا ہے اور کوئی دوسرا ٹول آزما سکتا ہے۔ مکمل طور پر خودکار ویب اسکریپنگ اور ریسرچ بوٹس سے لے کر کوڈنگ اسسٹنٹس اور پیچیدہ شیڈولنگ ایجنٹس تک، ہم قابلِ اعتماد اور محفوظ ایجنٹ ایکو سسٹم بناتے ہیں جو آپ کی ٹیم کی کام کرنے کی صلاحیت کو کئی گنا بڑھا دیتے ہیں۔",
+    "features": [
+      "متعدد مراحل کی منطق اور کام کی تقسیم",
+      "ٹولز کے استعمال کا انضمام (APIs، براؤزرز، ڈیٹا بیس)",
+      "قلیل مدتی اور طویل مدتی میموری کا آرکیٹیکچر",
+      "خود احتسابی اور خرابی کو دور کرنے کی صلاحیت",
+      "متعدد ایجنٹس کا انتظام (CrewAI / AutoGen)",
+      "انسانی شمولیت (Human-in-the-Loop) کے حفاظتی اقدامات",
+      "محفوظ ایگزیکیوشن سینڈ باکسز (Docker)",
+      "موجودہ ایپس کے لیے کسٹم پلگ ان ڈیولپمنٹ"
+    ],
+    "benefits": [
+      "صرف ڈیٹا انٹری نہیں، بلکہ ان اعلیٰ سطحی کاموں کو خودکار بنائیں جن میں منصوبہ بندی کی ضرورت ہوتی ہے",
+      "اپنی ٹیم کو انتھک ڈیجیٹل کارکن فراہم کریں جو 24/7 کام کریں",
+      "تحقیق اور تالیف کے وقت کو دنوں سے کم کر کے منٹوں تک لائیں",
+      "AI کو اپنے ملکیتی APIs کے ساتھ متحرک طور پر بات چیت کرنے کے قابل بنائیں",
+      "غلطیوں سے سنبھلنے کی ایجنٹ کی صلاحیت کے ذریعے کام کی تکمیل کو یقینی بنائیں",
+      "انسانی منظوری کے چیک پوائنٹس کے ذریعے کنٹرول برقرار رکھیں"
+    ],
+    "metaTitle": "خودمختار AI ایجنٹس اور ملٹی ایجنٹ سسٹمز | PakSoft",
+    "metaDescription": "ایسے خود مختار AI ایجنٹ تعینات کریں جو منصوبہ بندی کر سکیں، APIs استعمال کر سکیں اور پیچیدہ کام سرانجام دے سکیں۔ ہم LangChain اور CrewAI استعمال کر کے ذہین سسٹمز بناتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "ہدف اور ٹولز کی تعریف",
+          "description": "ہم ان مخصوص اور پیچیدہ کاموں کی نشاندہی کرتے ہیں جنہیں آپ خودکار بنانا چاہتے ہیں۔ ہم ان ٹولز کی وضاحت کرتے ہیں جن تک ایجنٹ کو رسائی کی ضرورت ہوگی (مثلاً Google Search API, Jira API, SQL Read Access)۔"
+        },
+        {
+          "step": 2,
+          "title": "ایجنٹک آرکیٹیکچر ڈیزائن",
+          "description": "ہم فیصلہ کرتے ہیں کہ آیا ایک واحد ایجنٹ درکار ہے یا ملٹی ایجنٹ سسٹم (جہاں مخصوص کرداروں والے ایجنٹ ایک دوسرے سے رابطہ کرتے ہیں)، اور پھر اسٹیٹ ٹرانزیشن کا گراف ڈیزائن کرتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "پرامپٹ انجینئرنگ اور پرسوناز (Personas)",
+          "description": "ہم ایسے سسٹم پرامپٹس تیار کرتے ہیں جو ایجنٹ کے پرسونا، اس کے کام کرنے کے قواعد، اور اس بات کی وضاحت کرتے ہیں کہ اسے کام کرنے سے پہلے اپنی 'سوچ کے عمل' کو کیسے مرتب کرنا چاہیے۔"
+        },
+        {
+          "step": 4,
+          "title": "ٹولز کا انضمام اور سینڈ باکسنگ",
+          "description": "ہم ایسے سافٹ ویئر ریپرز بناتے ہیں جو LLM کو محفوظ طریقے سے آپ کی APIs کال کرنے کی اجازت دیتے ہیں۔ ہم سینڈ باکسز نافذ کرتے ہیں تاکہ ایجنٹ کوئی تباہ کن کام نہ کر سکے (جیسے ڈیٹا بیس کو ڈیلیٹ کرنا)۔"
+        },
+        {
+          "step": 5,
+          "title": "میموری سسٹم کا نفاذ",
+          "description": "ہم طویل مدتی یادداشت کے لیے ویکٹر ڈیٹا بیس (جیسے Pinecone) کو مربوط کرتے ہیں، جس سے ایجنٹ کو سیشنز کے دوران پچھلی بات چیت، ترجیحات اور پہلے سے دریافت شدہ حقائق کو یاد رکھنے میں مدد ملتی ہے۔"
+        },
+        {
+          "step": 6,
+          "title": "ٹیسٹنگ اور انسانی شمولیت کی ترتیب",
+          "description": "ہم ایجنٹ کو مختلف مشکل حالات میں ٹیسٹ کرتے ہیں تاکہ وہ لامحدود لوپس (loops) میں نہ پھنسے۔ ہم اسے ایک یوزر انٹرفیس کے ساتھ تعینات کرتے ہیں جہاں انسان کو کسی بھی اہم کارروائی سے پہلے منظوری دینی ہوتی ہے۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "ایک ایجنٹ اور چیٹ بوٹ میں کیا فرق ہے؟",
+          "answer": "چیٹ بوٹ آپ کے پرامپٹ کا انتظار کرتا ہے، متن کے ساتھ جواب دیتا ہے اور رک جاتا ہے۔ ایک ایجنٹ کو ہدف دیا جاتا ہے، وہ ایک منصوبہ بناتا ہے، ٹولز کا استعمال کرتا ہے (جیسے ویب براؤز کرنا یا ڈیٹا بیس سرچ کرنا)، اپنی پیشرفت کا جائزہ لیتا ہے، اور آپ کو جواب دینے سے پہلے ہدف حاصل کرنے کے لیے متعدد آزاد کارروائیاں کرتا ہے۔"
+        },
+        {
+          "question": "کیا ایجنٹ غلطی سے خطرناک کام کر سکتا ہے؟",
+          "answer": "سیکیورٹی ہماری ترجیح ہے۔ ہم ایجنٹس کو سخت رول بیسڈ ایکسیس کنٹرول اور جہاں تک ممکن ہو 'صرف پڑھنے' (Read-Only) کی اجازت کے ساتھ ڈیزائن کرتے ہیں۔ ایسی کارروائیوں کے لیے جو تبدیلی کا باعث ہوں (جیسے کلائنٹ کو ای میل بھیجنا، فائل ڈیلیٹ کرنا)، ہم 'ہیومن ان دی لوپ' وقفہ نافذ کرتے ہیں جہاں ایجنٹ کارروائی کا مسودہ بناتا ہے اور آپ کی واضح منظوری کا انتظار کرتا ہے۔"
+        },
+        {
+          "question": "ملٹی ایجنٹ سسٹمز کیا ہیں؟",
+          "answer": "سب کچھ کرنے کی کوشش کرنے والے ایک 'سپر' ایجنٹ کے بجائے، ملٹی ایجنٹ سسٹم ماہر ایجنٹوں کی ایک ٹیم کا استعمال کرتے ہیں۔ مثال کے طور پر، ایک 'ریسرچر ایجنٹ' ڈیٹا اکٹھا کرتا ہے، اسے ایک 'تجزیہ کار ایجنٹ' کو دیتا ہے جو اس پر کام کرتا ہے، اور پھر وہ اسے رپورٹ کا مسودہ تیار کرنے کے لیے 'رائٹر ایجنٹ' کو دیتا ہے۔ یہ درستگی کو بہت بہتر بناتا ہے۔"
+        },
+        {
+          "question": "AI کون سے ٹولز استعمال کر سکتا ہے؟",
+          "answer": "ہم تقریباً کسی بھی ایسی چیز کے لیے ٹولز بنا سکتے ہیں جس کی API ہو۔ عام ٹولز میں ویب براؤزرز (Playwright)، سرچ انجن (Google)، کوڈ انٹرپریٹرز، CRM پلیٹ فارمز، اور آپ کے اپنے ڈیٹا بیس شامل ہیں۔"
+        },
+        {
+          "question": "کیا ایجنٹس عام LLMs سے زیادہ ہذیان (ہلوسینیشن) کا شکار ہوتے ہیں؟",
+          "answer": "ایجنٹ الجھ سکتے ہیں یا لوپس میں پھنس سکتے ہیں، لیکن ٹولز کا استعمال دراصل ان کے غلط فیکٹس دینے (hallucinations) کو کم کرتا ہے۔ کسی حقیقت کا اندازہ لگانے کے بجائے، ایجنٹ کو ہدایت دی جاتی ہے کہ جواب دینے سے پہلے درست سچائی معلوم کرنے کے لیے اپنے 'ویب سرچ' ٹول کا استعمال کرے۔"
+        },
+        {
+          "question": "آپ لامحدود لوپ میں پھنسنے والے ایجنٹ کو کیسے سنبھالتے ہیں؟",
+          "answer": "ہم LangGraph جیسے اسٹیٹ گراف فریم ورک استعمال کرتے ہیں، جو ہمیں سخت حدیں مقرر کرنے کی اجازت دیتے ہیں۔ ہم 'Max Iteration' (زیادہ سے زیادہ کوشش) کی حدیں اور ٹائم آؤٹ پروٹوکول نافذ کرتے ہیں۔ اگر کوئی ایجنٹ 3 بار ایک ہی ٹول آزمانے میں ناکام رہتا ہے، تو سسٹم اسے رکنے اور انسان سے مدد مانگنے پر مجبور کرتا ہے۔"
+        },
+        {
+          "question": "کیا ان ایجنٹس کو چلانا مہنگا ہے؟",
+          "answer": "ایجنٹ معیاری چیٹ بوٹس کے مقابلے زیادہ API ٹوکن استعمال کرتے ہیں کیونکہ وہ پردے کے پیچھے 'سوچتے' ہیں اور ٹولز کو متعدد بار کال کرتے ہیں۔ ہم بنیادی ٹولز کے لیے سستے ماڈلز کا استعمال کر کے لاگت کو بہتر بناتے ہیں، اور پیچیدہ کاموں کے لیے ہی مہنگے ماڈلز کو کال کرتے ہیں۔"
+        },
+        {
+          "question": "کسٹم ایجنٹ بنانے میں کتنا وقت لگتا ہے؟",
+          "answer": "ایک سادہ ایجنٹ جسے 2-3 بنیادی ٹولز تک رسائی حاصل ہو (جیسے ویب سرچ)، اسے بننے میں تقریباً 3-4 ہفتے لگتے ہیں۔ میموری اور کسٹم انٹیگریشن والے پیچیدہ ملٹی ایجنٹ ورک فلوز میں عموماً 8-12 ہفتے لگتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "openai",
+          "name": "OpenAI / GPT-4"
+        },
+        {
+          "icon": "huggingface",
+          "name": "LangChain / LangGraph"
+        },
+        {
+          "icon": "docker",
+          "name": "CrewAI"
+        },
+        {
+          "icon": "vector",
+          "name": "Pinecone (Vector DB)"
+        },
+        {
+          "icon": "redis",
+          "name": "Redis (Memory)"
+        },
+        {
+          "icon": "react",
+          "name": "React (Agent UI)"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS Fargate"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "وكلاء الذكاء الاصطناعي المستقلون",
+    "shortDescription": "قم ببناء وكلاء ذكاء اصطناعي قادرين على التفكير المنطقي، والتخطيط، واستخدام الأدوات، وتنفيذ المهام المعقدة متعددة الخطوات بشكل مستقل.",
+    "fullDescription": "تكتفي روبوتات الدردشة بالإجابة على الأسئلة، لكن وكلاء الذكاء الاصطناعي المستقلين (Autonomous Agents) ينجزون العمل الفعلي. نحن نصمم وننشر أنظمة وكلاء قادرة على أخذ هدف عالي المستوى ('ابحث عن أفضل 5 منافسين لنا واكتب تقرير مقارنة في Confluence') وتقسيمه بشكل مستقل إلى تسلسل من الخطوات القابلة للتنفيذ. باستخدام أطر عمل مثل LangChain و LangGraph و CrewAI، نمنح نماذج اللغات الكبيرة (LLMs) إمكانية الوصول إلى الأدوات — مثل المتصفحات والآلات الحاسبة وواجهات برمجة التطبيقات الداخلية وقواعد البيانات — مما يسمح لها بالتفاعل مع العالم الحقيقي. على عكس روبوتات المطالبة الواحدة (Single-prompt bots)، يمتلك هؤلاء الوكلاء ذاكرة عاملة وقدرة على التفكير الذاتي؛ فإذا فشل بحث الويب أو أرجعت API خطأ، يمكن للوكيل التعرف على الفشل وتغيير استراتيجيته وتجربة أداة أخرى. من روبوتات استخراج البيانات والبحث المستقلة تماماً إلى مساعدي كتابة الأكواد ووكلاء الجدولة المعقدة، نبني أنظمة وكلاء آمنة وموثوقة تضاعف بشكل كبير من القدرة التشغيلية لفريقك.",
+    "features": [
+      "التفكير متعدد الخطوات وتحليل المهام",
+      "تكامل استخدام الأدوات (APIs، المتصفحات، قواعد البيانات)",
+      "هندسة الذاكرة قصيرة وطويلة المدى",
+      "التفكير الذاتي والتعافي من الأخطاء",
+      "تنسيق الوكلاء المتعددين (CrewAI / AutoGen)",
+      "ضمانات الموافقة البشرية (Human-in-the-Loop)",
+      "بيئات تنفيذ معزولة وآمنة (Docker Sandboxes)",
+      "تطوير مكونات إضافية (Plugins) مخصصة للتطبيقات الحالية"
+    ],
+    "benefits": [
+      "أتمتة المهام عالية المستوى التي تتطلب التخطيط، وليس فقط إدخال البيانات",
+      "تزويد فريقك بعمال رقميين لا يكلون يعملون على مدار الساعة طوال أيام الأسبوع",
+      "تقليل وقت البحث والتجميع من أيام إلى دقائق",
+      "تمكين الذكاء الاصطناعي من التفاعل ديناميكياً مع واجهات برمجة التطبيقات (APIs) الخاصة بك",
+      "ضمان إنجاز المهام من خلال قدرة الوكيل على التعافي من الأخطاء",
+      "الحفاظ على التحكم من خلال نقاط التحقق من الموافقة البشرية المدمجة"
+    ],
+    "metaTitle": "وكلاء الذكاء الاصطناعي المستقلون وأنظمة الوكلاء المتعددين | PakSoft",
+    "metaDescription": "انشر وكلاء ذكاء اصطناعي مستقلين قادرين على التخطيط واستخدام واجهات API وتنفيذ المهام المعقدة. نبني أنظمة ذكية باستخدام LangChain و CrewAI.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تحديد الهدف والأدوات",
+          "description": "نحدد المهام المعقدة والمحددة التي ترغب في أتمتتها. نحدد الأدوات التي سيحتاج الوكيل للوصول إليها (مثل Google Search API أو Jira API أو الوصول لقراءة SQL)."
+        },
+        {
+          "step": 2,
+          "title": "التصميم المعماري للوكيل",
+          "description": "نقرر ما إذا كان هناك حاجة لوكيل واحد أو نظام متعدد الوكلاء (حيث يتواصل الوكلاء ذوو الأدوار المحددة مع بعضهم البعض)، ونقوم بتصميم المخطط البياني لانتقال الحالات (State transitions)."
+        },
+        {
+          "step": 3,
+          "title": "هندسة المطالبات (Prompt Engineering) والشخصيات",
+          "description": "نصيغ مطالبات النظام التي تحدد شخصية الوكيل، وقواعد تفاعله، وكيف ينبغي له صياغة 'عملية التفكير' الخاصة به (سلسلة الأفكار Chain of Thought) قبل اتخاذ أي إجراء."
+        },
+        {
+          "step": 4,
+          "title": "تكامل الأدوات وبيئة الحماية (Sandboxing)",
+          "description": "نبني البرامج التي تسمح لـ LLM باستدعاء واجهات API الخاصة بك بأمان. ننفذ بيئات تنفيذ معزولة (Sandboxes) حتى لا يتمكن الوكيل من أداء إجراءات مدمرة (مثل حذف قاعدة بيانات)."
+        },
+        {
+          "step": 5,
+          "title": "تنفيذ نظام الذاكرة",
+          "description": "نقوم بدمج قواعد بيانات المتجهات (مثل Pinecone) للذاكرة طويلة المدى، مما يسمح للوكيل بتذكر التفاعلات السابقة والتفضيلات والحقائق المكتشفة سابقاً عبر الجلسات."
+        },
+        {
+          "step": 6,
+          "title": "الاختبار وإعداد الموافقة البشرية",
+          "description": "نختبر الوكيل ضد الحالات الطرفية لضمان عدم تعلقه في حلقات لا نهائية. ننشره مع واجهة مستخدم حيث يجب على الإنسان الموافقة على الإجراءات الحاسمة قبل تنفيذها."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما الفرق بين الوكيل (Agent) وروبوت الدردشة (Chatbot)؟",
+          "answer": "ينتظر روبوت الدردشة مطالبتك، ويرد بنص، ويتوقف. أما الوكيل فيتلقى هدفاً، ويضع خطة، ويستخدم الأدوات (مثل تصفح الويب أو الاستعلام من قاعدة بيانات)، ويقيم تقدمه، ويتخذ إجراءات مستقلة متعددة لتحقيق الهدف قبل العودة إليك."
+        },
+        {
+          "question": "هل يمكن للوكيل القيام بأفعال خطيرة عن طريق الخطأ؟",
+          "answer": "السلامة هي أولويتنا. نحن نصمم الوكلاء مع تحكم صارم في الوصول المستند إلى الدور (RBAC) وأذونات للقراءة فقط حيثما أمكن ذلك. بالنسبة للإجراءات التي تغير الحالة (مثل إرسال بريد إلكتروني، حذف ملف، إجراء عملية شراء)، نفرض توقفاً صارماً للموافقة البشرية (Human-in-the-Loop) حيث يصيغ الوكيل الإجراء وينتظر موافقتك الصريحة."
+        },
+        {
+          "question": "ما هي الأنظمة متعددة الوكلاء (Multi-Agent Systems)؟",
+          "answer": "بدلاً من وكيل 'خارق' واحد يحاول القيام بكل شيء، تستخدم الأنظمة متعددة الوكلاء فريقاً من الوكلاء المتخصصين. على سبيل المثال، يجمع 'وكيل باحث' البيانات، ويسلمها إلى 'وكيل محلل' لمعالجتها، والذي يعطيها بعد ذلك لـ 'وكيل كاتب' لصياغة التقرير. هذا يحسن الدقة بشكل كبير ويقلل من الأخطاء (Hallucinations)."
+        },
+        {
+          "question": "ما هي الأدوات التي يمكن للذكاء الاصطناعي استخدامها؟",
+          "answer": "يمكننا بناء أدوات لأي شيء تقريباً يحتوي على واجهة برمجة تطبيقات (API). تشمل الأدوات الشائعة متصفحات الويب، ومحركات البحث، ومفسري الأكواد (بيئات Python لتحليل البيانات)، ومنصات إدارة علاقات العملاء (CRM)، وقواعد بياناتك الداخلية."
+        },
+        {
+          "question": "هل يعاني الوكلاء من 'الهلوسة' (تأليف المعلومات) أكثر من نماذج LLM العادية؟",
+          "answer": "قد يشعر الوكلاء بالارتباك أو يعلقون في حلقات، لكن استخدامهم للأدوات يقلل في الواقع من الهلوسة الواقعية. بدلاً من تخمين حقيقة ما، يُوجه الوكيل لاستخدام أداة 'البحث في الويب' للعثور على الحقيقة الدقيقة قبل الإجابة."
+        },
+        {
+          "question": "كيف تتعاملون مع الوكيل الذي يعلق في حلقة لا نهائية؟",
+          "answer": "نستخدم أطر عمل مثل LangGraph، والتي تتيح لنا وضع حدود صارمة. نقوم بتنفيذ حدود 'أقصى عدد من التكرارات' (Max Iteration) وبروتوكولات انتهاء المهلة. إذا جرب الوكيل نفس الأداة 3 مرات وفشل، يجبره النظام على التوقف وطلب مساعدة الإنسان."
+        },
+        {
+          "question": "هل تشغيل هؤلاء الوكلاء مكلف؟",
+          "answer": "يستهلك الوكلاء عدداً من رموز API (Tokens) أكبر من روبوتات الدردشة القياسية لأنهم 'يفكرون' ويجرون مكالمات أدوات متعددة خلف الكواليس. نحن نحسن التكاليف باستخدام نماذج أرخص (مثل GPT-4o-mini) لتوجيه الأدوات الأساسية، ونستدعي النماذج باهظة الثمن فقط لمهام الاستدلال المعقدة."
+        },
+        {
+          "question": "كم من الوقت يستغرق بناء وكيل مخصص؟",
+          "answer": "يستغرق بناء وكيل بسيط لديه وصول إلى 2-3 أدوات أساسية (مثل بحث الويب و API بسيط) حوالي 3-4 أسابيع. بينما تستغرق مسارات العمل المعقدة متعددة الوكلاء مع الذاكرة، وبيئات الحماية الآمنة، وعمليات الدمج المخصصة عادةً ما بين 8-12 أسبوعاً."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "openai",
+          "name": "OpenAI / GPT-4"
+        },
+        {
+          "icon": "huggingface",
+          "name": "LangChain / LangGraph"
+        },
+        {
+          "icon": "docker",
+          "name": "CrewAI"
+        },
+        {
+          "icon": "vector",
+          "name": "Pinecone (Vector DB)"
+        },
+        {
+          "icon": "redis",
+          "name": "Redis (Memory)"
+        },
+        {
+          "icon": "react",
+          "name": "React (Agent UI)"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS Fargate"
+        }
+      ]
+    }
+  }
+}

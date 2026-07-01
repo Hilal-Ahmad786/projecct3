@@ -1,0 +1,618 @@
+{
+  "slug": "computer-vision-solutions",
+  "en": {
+    "name": "Custom Vision Solutions",
+    "shortDescription": "End-to-end integration of image recognition, object detection, and video analytics directly into your enterprise software and hardware systems.",
+    "fullDescription": "While standard Computer Vision focuses on building the model, our Custom Vision Solutions focus on integrating that intelligence into the real world. We architect complete hardware-software ecosystems. We don't just hand you a Python script; we design the camera rig specifications, set up edge-computing gateways (like NVIDIA Jetson or AWS Panorama), and write the middleware that connects the visual inferences directly to your manufacturing PLCs, retail POS systems, or cloud databases. Whether you need a defect detection system that physically stops a conveyor belt upon spotting a flaw, or a retail analytics system that tracks customer dwell times without violating privacy laws, we handle the entire solution lifecycle. This encompasses model retraining loops, MLOps infrastructure for over-the-air updates to edge devices, and building the executive dashboards that display the insights gathered by the cameras.",
+    "features": [
+      "End-to-End System Architecture (Hardware + Software)",
+      "Edge-to-Cloud Data Pipeline Engineering",
+      "Hardware Integration (Cameras, PLCs, Conveyors)",
+      "Automated Model Retraining Pipelines (MLOps)",
+      "Privacy-Preserving Video Redaction (GDPR Compliant)",
+      "Custom Executive Insight Dashboards",
+      "Over-The-Air (OTA) Edge Device Updates",
+      "High-Throughput Vision APIs"
+    ],
+    "benefits": [
+      "Turn raw computer vision models into fully integrated business solutions",
+      "Trigger physical real-world actions (like stopping a machine) via AI",
+      "Manage fleets of edge AI devices seamlessly across multiple locations",
+      "Continuously improve accuracy through automated model retraining",
+      "Comply with strict data privacy regulations by processing video locally",
+      "Bridge the gap between data science teams and factory floor operations"
+    ],
+    "metaTitle": "Custom Vision Solutions | AI Hardware Integration | PakSoft",
+    "metaDescription": "Deploy end-to-end computer vision systems. We integrate object detection and video analytics directly with your hardware, edge devices, and enterprise software.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Site Survey & Hardware Spec",
+          "description": "We evaluate the physical location (factory, store, street) to determine the exact camera angles, lighting rigs, and edge computing hardware required for the vision task."
+        },
+        {
+          "step": 2,
+          "title": "Model Adaptation",
+          "description": "We take base computer vision models (YOLO, ResNet) and adapt them to your specific environment, ensuring they can handle the exact lighting and occlusion conditions of your site."
+        },
+        {
+          "step": 3,
+          "title": "Edge Gateway Configuration",
+          "description": "We configure the edge devices (e.g., NVIDIA Jetson) that will run the AI locally, writing the C++ or optimized Python code necessary to hit the required frames-per-second."
+        },
+        {
+          "step": 4,
+          "title": "System Integration (Middleware)",
+          "description": "We build the integration layer that takes the AI's output and translates it into actions—such as sending a signal to a PLC controller or logging an event in your ERP system."
+        },
+        {
+          "step": 5,
+          "title": "MLOps & Fleet Management",
+          "description": "We set up the infrastructure to monitor the health of remote cameras and edge devices, allowing us to push updated, smarter AI models to the fleet over-the-air without downtime."
+        },
+        {
+          "step": 6,
+          "title": "Dashboarding & Analytics",
+          "description": "We build custom web dashboards that aggregate the visual data from across your locations, turning raw detections (e.g., 'Person detected') into business metrics ('Average wait time: 4m')."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the difference between this and standard 'Computer Vision'?",
+          "answer": "Standard Computer Vision focuses mostly on the algorithm (training a neural network to recognize a defective part). Custom Vision Solutions covers the entire deployment ecosystem: the physical camera setup, the edge computing hardware, connecting the AI to factory machinery, and building the dashboards."
+        },
+        {
+          "question": "Can the AI interact with physical machinery?",
+          "answer": "Yes. In manufacturing settings, we can connect the edge AI device to Programmable Logic Controllers (PLCs). If the camera detects a defective product on the line, the AI can send an immediate digital signal to the PLC to halt the conveyor belt or activate a robotic arm to remove the item."
+        },
+        {
+          "question": "Do you provide the cameras and hardware?",
+          "answer": "We are a software engineering firm, but we provide detailed hardware specifications (camera resolution, lens type, lighting requirements, and edge compute nodes) and partner with hardware vendors or your existing IT team for procurement and physical installation."
+        },
+        {
+          "question": "How do you handle model drift (when the AI gets worse over time)?",
+          "answer": "Environments change (lighting degrades, new products are introduced). We build MLOps pipelines that continually sample the video feed, flag edge cases where the AI is uncertain, send them to a human for labeling, and automatically retrain and deploy an updated model."
+        },
+        {
+          "question": "Is an internet connection required for this to work?",
+          "answer": "For the actual inference (detecting objects), no. By deploying models on edge devices, the system runs locally and in real-time even if the internet goes down. An internet connection is only required periodically to push model updates or upload aggregated metadata to the cloud."
+        },
+        {
+          "question": "What happens if we have 50 different retail locations?",
+          "answer": "We implement fleet management tools. This allows us to monitor the health of all 50 edge devices from a central dashboard. When we improve the AI model, we can push the update Over-The-Air (OTA) to all 50 locations simultaneously, just like a software update on your phone."
+        },
+        {
+          "question": "How do you ensure GDPR/CCPA compliance with video?",
+          "answer": "By processing the video locally on the edge device, the raw video feed never touches the cloud or a database. The AI extracts only the metadata (e.g., '1 person entered at 9:00 AM') and immediately discards the video frames, ensuring complete privacy compliance."
+        },
+        {
+          "question": "Can we use our existing CCTV cameras?",
+          "answer": "Often, yes. We can capture the RTSP stream from your existing IP cameras and route it into our edge computing devices for AI processing, provided the camera angle and resolution are sufficient for the specific task."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "nvidia",
+          "name": "NVIDIA Jetson / DeepStream"
+        },
+        {
+          "icon": "python",
+          "name": "Python / C++"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS Panorama / IoT Greengrass"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker (Edge Containers)"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch / ONNX"
+        },
+        {
+          "icon": "react",
+          "name": "React (Dashboards)"
+        },
+        {
+          "icon": "apachekafka",
+          "name": "MQTT / Kafka"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Özel Görü (Vision) Çözümleri",
+    "shortDescription": "Görüntü tanıma, nesne tespiti ve video analitiğinin doğrudan kurumsal yazılım ve donanım sistemlerinize uçtan uca entegrasyonu.",
+    "fullDescription": "Standart Bilgisayarlı Görü modeli oluşturmaya odaklanırken, Özel Görü Çözümlerimiz bu zekayı gerçek dünyaya entegre etmeye odaklanır. Eksiksiz donanım-yazılım ekosistemleri tasarlıyoruz. Size sadece bir Python komut dosyası (script) verip bırakmıyoruz; kamera donanımı özelliklerini belirliyor, uç bilişim (edge computing) ağ geçitlerini (NVIDIA Jetson veya AWS Panorama gibi) kuruyor ve görsel çıkarımları (inferences) doğrudan üretim PLC'lerinize, perakende POS sistemlerinize veya bulut veritabanlarınıza bağlayan ara yazılımı (middleware) yazıyoruz. İster bir kusur gördüğünde taşıyıcı bandı fiziksel olarak durduran bir hata tespit sistemine, ister gizlilik yasalarını ihlal etmeden müşterilerin bekleme sürelerini izleyen bir perakende analitik sistemine ihtiyacınız olsun, çözümün tüm yaşam döngüsünü biz yönetiyoruz. Bu, modellerin yeniden eğitim döngülerini, uç cihazlara kablosuz (OTA) güncellemeler için MLOps altyapısını ve kameralar tarafından toplanan içgörüleri gösteren yönetici kontrol panellerini (dashboards) oluşturmayı kapsar.",
+    "features": [
+      "Uçtan Uca Sistem Mimarisi (Donanım + Yazılım)",
+      "Uçtan Buluta (Edge-to-Cloud) Veri Hattı Mühendisliği",
+      "Donanım Entegrasyonu (Kameralar, PLC'ler, Konveyörler)",
+      "Otomatik Model Yeniden Eğitim Hatları (MLOps)",
+      "Gizliliği Koruyan Video Sansürleme (KVKK/GDPR Uyumlu)",
+      "Özel Yönetici İçgörü Gösterge Panelleri",
+      "Uç Cihazlar İçin Kablosuz (OTA) Güncellemeler",
+      "Yüksek Verimli Görü (Vision) API'leri"
+    ],
+    "benefits": [
+      "Ham bilgisayarlı görü modellerini tam entegre iş çözümlerine dönüştürün",
+      "Yapay zeka aracılığıyla fiziksel gerçek dünya eylemlerini (makineyi durdurmak gibi) tetikleyin",
+      "Birden fazla lokasyondaki uç yapay zeka cihaz filolarını sorunsuzca yönetin",
+      "Otomatik model yeniden eğitimi ile doğruluğu sürekli iyileştirin",
+      "Videoları yerel olarak işleyerek katı veri gizliliği düzenlemelerine (KVKK vb.) uyun",
+      "Veri bilimi ekipleri ile fabrika sahası operasyonları arasındaki köprüyü kurun"
+    ],
+    "metaTitle": "Özel Görü Çözümleri | Yapay Zeka Donanım Entegrasyonu | PakSoft",
+    "metaDescription": "Uçtan uca bilgisayarlı görü sistemleri kurun. Nesne tespitini ve video analitiğini doğrudan donanımınız, uç cihazlarınız ve kurumsal yazılımlarınızla entegre ediyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Saha Araştırması ve Donanım Spesifikasyonu",
+          "description": "Görü (vision) görevi için gereken kesin kamera açılarını, aydınlatma teçhizatlarını ve uç bilişim donanımını belirlemek üzere fiziksel konumu (fabrika, mağaza, sokak) değerlendiriyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Model Uyarlaması",
+          "description": "Temel bilgisayarlı görü modellerini (YOLO, ResNet) alıyor ve bunları sahanızın kesin aydınlatma ve engelleme koşullarını (occlusion) kaldırabilmelerini sağlayarak özel ortamınıza uyarlıyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Uç Ağ Geçidi (Edge Gateway) Yapılandırması",
+          "description": "Yapay zekayı yerel olarak çalıştıracak uç cihazları (örn. NVIDIA Jetson) yapılandırıyor, gereken saniye-kare (FPS) hızına ulaşmak için gerekli C++ veya optimize edilmiş Python kodunu yazıyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Sistem Entegrasyonu (Ara Yazılım)",
+          "description": "Yapay zekanın çıktısını alan ve bunu bir PLC kontrolöre sinyal göndermek veya ERP sisteminize bir olay kaydetmek gibi eylemlere çeviren entegrasyon katmanını oluşturuyoruz."
+        },
+        {
+          "step": 5,
+          "title": "MLOps ve Filo Yönetimi",
+          "description": "Uzak kameraların ve uç cihazların sağlığını izlemek için altyapıyı kuruyor, güncellenmiş ve daha akıllı yapay zeka modellerini kesinti süresi olmadan kablosuz (OTA) olarak filoya göndermemizi sağlıyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Gösterge Paneli ve Analitik",
+          "description": "Lokasyonlarınızdaki görsel verileri bir araya getiren, ham tespitleri ('Kişi tespit edildi' gibi) iş metriklerine ('Ortalama bekleme süresi: 4 dk') dönüştüren özel web panelleri oluşturuyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bunun standart 'Bilgisayarlı Görü'den farkı nedir?",
+          "answer": "Standart Bilgisayarlı Görü çoğunlukla algoritmaya (arızalı bir parçayı tanımak için bir sinir ağını eğitmeye) odaklanır. Özel Görü Çözümleri ise tüm dağıtım ekosistemini kapsar: fiziksel kamera kurulumu, uç bilişim (edge) donanımı, yapay zekayı fabrika makinelerine bağlama ve gösterge panellerini (dashboards) oluşturma."
+        },
+        {
+          "question": "Yapay zeka fiziksel makinelerle etkileşime girebilir mi?",
+          "answer": "Evet. Üretim ortamlarında uç (edge) yapay zeka cihazını Programlanabilir Mantık Kontrolörlerine (PLC'ler) bağlayabiliriz. Kamera hatta kusurlu bir ürün tespit ederse, yapay zeka konveyör bandını durdurmak veya ürünü çıkarmak için robotik bir kolu etkinleştirmek üzere PLC'ye anında dijital bir sinyal gönderebilir."
+        },
+        {
+          "question": "Kameraları ve donanımı siz mi sağlıyorsunuz?",
+          "answer": "Biz bir yazılım mühendisliği firmasıyız, ancak ayrıntılı donanım özellikleri (kamera çözünürlüğü, lens tipi, aydınlatma gereksinimleri ve uç işlem düğümleri) sağlıyoruz. Tedarik ve fiziksel kurulum için donanım satıcıları veya mevcut BT (IT) ekibinizle ortaklık yapıyoruz."
+        },
+        {
+          "question": "Model kaymasını (model drift - yapay zekanın zamanla kötüleşmesi) nasıl idare ediyorsunuz?",
+          "answer": "Ortamlar değişir (ışık azalır, yeni ürünler piyasaya sürülür). Video akışından sürekli örneklem alan, yapay zekanın emin olamadığı sınır (edge) durumları işaretleyen, bunları etiketlenmesi için bir insana gönderen ve güncellenmiş bir modeli otomatik olarak yeniden eğitip devreye alan MLOps hatları kuruyoruz."
+        },
+        {
+          "question": "Bunun çalışması için internet bağlantısı gerekli mi?",
+          "answer": "Gerçek çıkarım (nesneleri tespit etme) için hayır. Modelleri uç (edge) cihazlara konuşlandırarak, sistem internet kesilse bile yerel olarak ve gerçek zamanlı olarak çalışır. İnternet bağlantısı yalnızca model güncellemelerini aktarmak veya toplanmış metadataları buluta yüklemek için periyodik olarak gereklidir."
+        },
+        {
+          "question": "50 farklı perakende satış noktamız varsa ne olur?",
+          "answer": "Filo yönetim araçları uyguluyoruz. Bu, merkezi bir kontrol panelinden 50 uç cihazın tamamının durumunu izlememize olanak tanır. Yapay zeka modelini geliştirdiğimizde, güncellemeyi tıpkı telefonunuzdaki bir yazılım güncellemesi gibi 50 lokasyona aynı anda kablosuz (OTA - Over-The-Air) olarak gönderebiliriz."
+        },
+        {
+          "question": "Video verileriyle KVKK / GDPR uyumluluğunu nasıl sağlıyorsunuz?",
+          "answer": "Videoyu yerel olarak uç cihazda işleyerek, ham video akışı asla buluta veya bir veritabanına dokunmaz. Yapay zeka yalnızca metadataları (örneğin, 'Saat 9:00'da 1 kişi girdi') çıkarır ve video karelerini (frames) derhal atarak tam gizlilik uyumluluğunu garanti eder."
+        },
+        {
+          "question": "Mevcut CCTV kameralarımızı kullanabilir miyiz?",
+          "answer": "Genellikle evet. Kamera açısı ve çözünürlüğü söz konusu görev için yeterli olduğu sürece, mevcut IP kameralarınızdan gelen RTSP akışını yakalayabilir ve yapay zeka işlemesi için uç bilişim (edge) cihazlarımıza yönlendirebiliriz."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "nvidia",
+          "name": "NVIDIA Jetson / DeepStream"
+        },
+        {
+          "icon": "python",
+          "name": "Python / C++"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS Panorama / IoT Greengrass"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker (Edge Containers)"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch / ONNX"
+        },
+        {
+          "icon": "react",
+          "name": "React (Dashboards)"
+        },
+        {
+          "icon": "apachekafka",
+          "name": "MQTT / Kafka"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Custom Vision-Lösungen",
+    "shortDescription": "End-to-End-Integration von Bilderkennung, Objektdetektion und Videoanalyse direkt in Ihre Unternehmenssoftware und Hardware-Systeme.",
+    "fullDescription": "Während Standard-Computer-Vision sich auf das Modell konzentriert, fokussieren sich unsere Custom-Vision-Lösungen darauf, diese Intelligenz in die reale Welt zu integrieren. Wir konzipieren komplette Hardware-Software-Ökosysteme. Wir übergeben Ihnen nicht nur ein Python-Skript; wir entwerfen Kameraspezifikationen, richten Edge-Computing-Gateways ein (wie NVIDIA Jetson oder AWS Panorama) und schreiben die Middleware, die die visuellen Inferenzen direkt mit Ihren Fertigungs-SPS, Retail-Kassensystemen oder Cloud-Datenbanken verbindet. Ob Sie ein Fehlererkennungssystem benötigen, das ein Förderband beim Erkennen eines Mangels physisch stoppt, oder ein Retail-Analytics-System, das Kundenverweilzeiten trackt, ohne Datenschutzgesetze zu verletzen — wir verwalten den gesamten Lösungslebenszyklus. Dies umfasst Model-Retraining-Schleifen, MLOps-Infrastruktur für Over-The-Air (OTA) Updates der Edge-Geräte und den Bau von Dashboards, die die von den Kameras gesammelten Insights visualisieren.",
+    "features": [
+      "End-to-End Systemarchitektur (Hardware + Software)",
+      "Edge-to-Cloud Data Pipeline Engineering",
+      "Hardware-Integration (Kameras, SPS, Förderbänder)",
+      "Automatisierte Model-Retraining-Pipelines (MLOps)",
+      "Datenschutzkonforme Video-Redaktion (DSGVO)",
+      "Individuelle Executive-Insight-Dashboards",
+      "Over-The-Air (OTA) Updates für Edge-Geräte",
+      "High-Throughput Vision-APIs"
+    ],
+    "benefits": [
+      "Verwandeln Sie rohe Vision-Modelle in voll integrierte Geschäftslösungen",
+      "Lösen Sie via KI physische Aktionen (wie Maschinenstopps) in der realen Welt aus",
+      "Verwalten Sie Flotten von Edge-KI-Geräten nahtlos über mehrere Standorte hinweg",
+      "Verbessern Sie die Genauigkeit kontinuierlich durch automatisiertes Retraining",
+      "Halten Sie strenge Datenschutzregeln durch lokale Videoverarbeitung ein",
+      "Schließen Sie die Lücke zwischen Data-Science-Teams und der Werkshalle"
+    ],
+    "metaTitle": "Custom Vision Lösungen | KI Hardware-Integration | PakSoft",
+    "metaDescription": "Deployen Sie End-to-End Vision-Systeme. Wir integrieren Objekterkennung und Videoanalysen direkt mit Ihrer Hardware, Edge-Geräten und Enterprise-Software.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Site-Survey & Hardware-Spezifikation",
+          "description": "Wir evaluieren den physischen Ort (Fabrik, Geschäft), um exakte Kamerawinkel, Beleuchtung und die für die Vision-Aufgabe nötige Edge-Computing-Hardware zu bestimmen."
+        },
+        {
+          "step": 2,
+          "title": "Modellanpassung",
+          "description": "Wir nehmen Basis-Vision-Modelle (YOLO, ResNet) und passen sie an Ihre spezifische Umgebung an, um sicherzustellen, dass sie mit genau Ihren Licht- und Verdeckungsbedingungen umgehen können."
+        },
+        {
+          "step": 3,
+          "title": "Edge-Gateway-Konfiguration",
+          "description": "Wir konfigurieren die Edge-Geräte (z.B. NVIDIA Jetson), die die KI lokal ausführen, und schreiben C++ oder Python-Code, um die erforderlichen Frames-per-Second (FPS) zu erreichen."
+        },
+        {
+          "step": 4,
+          "title": "Systemintegration (Middleware)",
+          "description": "Wir bauen die Integrationsschicht, die den Output der KI in Aktionen übersetzt — z.B. das Senden eines Signals an eine SPS-Steuerung oder das Loggen eines Events im ERP-System."
+        },
+        {
+          "step": 5,
+          "title": "MLOps & Flottenmanagement",
+          "description": "Wir richten die Infrastruktur ein, um die Gesundheit der Remote-Kameras zu überwachen, und können aktualisierte KI-Modelle ohne Downtime Over-The-Air an die Flotte pushen."
+        },
+        {
+          "step": 6,
+          "title": "Dashboarding & Analytics",
+          "description": "Wir bauen Web-Dashboards, die visuelle Daten aus all Ihren Standorten aggregieren und rohe Erkennungen (z.B. 'Person erkannt') in Business-Metriken ('Durchschnittliche Wartezeit: 4m') verwandeln."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist der Unterschied hierzu und Standard-'Computer Vision'?",
+          "answer": "Standard Computer Vision fokussiert sich primär auf den Algorithmus (ein Netzwerk trainieren, damit es ein defektes Teil erkennt). Custom Vision-Lösungen decken das gesamte Deployment-Ökosystem ab: das Kamera-Setup, die Edge-Hardware, die Anbindung der KI an Fabrikmaschinen und den Bau der Dashboards."
+        },
+        {
+          "question": "Kann die KI mit physischen Maschinen interagieren?",
+          "answer": "Ja. In der Fertigung können wir das Edge-KI-Gerät mit Speicherprogrammierbaren Steuerungen (SPS/PLCs) verbinden. Entdeckt die Kamera ein defektes Produkt, sendet die KI ein digitales Signal an die SPS, um das Förderband zu stoppen oder einen Roboterarm zur Aussortierung zu aktivieren."
+        },
+        {
+          "question": "Stellen Sie die Kameras und Hardware bereit?",
+          "answer": "Wir sind ein Software-Engineering-Unternehmen, aber wir liefern detaillierte Hardware-Spezifikationen (Auflösung, Linse, Licht, Edge-Knoten) und arbeiten mit Hardware-Anbietern oder Ihrem IT-Team für die Beschaffung und physische Installation zusammen."
+        },
+        {
+          "question": "Wie gehen Sie mit 'Model Drift' (Verschlechterung der KI über die Zeit) um?",
+          "answer": "Umgebungen ändern sich (Licht wird schwächer, neue Produkte). Wir bauen MLOps-Pipelines, die den Videofeed stichprobenartig prüfen, unsichere Fälle markieren, sie an Menschen zum Labeln senden und automatisch ein aktualisiertes Modell trainieren und deployen."
+        },
+        {
+          "question": "Wird eine Internetverbindung benötigt, damit dies funktioniert?",
+          "answer": "Für die eigentliche Inferenz (Erkennung von Objekten) nicht. Da die Modelle auf Edge-Geräten laufen, arbeitet das System lokal und in Echtzeit, selbst wenn das Internet ausfällt. Eine Internetverbindung ist nur periodisch nötig, um Modell-Updates zu pushen oder Metadaten in die Cloud hochzuladen."
+        },
+        {
+          "question": "Was passiert, wenn wir 50 verschiedene Filialen haben?",
+          "answer": "Wir implementieren Flottenmanagement-Tools. Dadurch können wir die Gesundheit aller 50 Edge-Geräte über ein zentrales Dashboard überwachen. Wenn wir das KI-Modell verbessern, pushen wir das Update Over-The-Air (OTA) gleichzeitig an alle 50 Standorte, genau wie ein Software-Update auf dem Handy."
+        },
+        {
+          "question": "Wie stellen Sie die DSGVO-Konformität bei Videoaufnahmen sicher?",
+          "answer": "Indem das Video lokal auf dem Edge-Gerät verarbeitet wird, berührt der rohe Videofeed nie die Cloud oder eine Datenbank. Die KI extrahiert nur die Metadaten (z. B. '1 Person trat um 9:00 Uhr ein') und verwirft sofort die Videobilder, was vollständige Privatsphäre-Compliance gewährleistet."
+        },
+        {
+          "question": "Können wir unsere bestehenden CCTV-Kameras nutzen?",
+          "answer": "Oft ja. Wir können den RTSP-Stream Ihrer vorhandenen IP-Kameras abgreifen und in unsere Edge-Computing-Geräte zur KI-Verarbeitung leiten, vorausgesetzt, Kamerawinkel und Auflösung sind für die spezifische Aufgabe ausreichend."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "nvidia",
+          "name": "NVIDIA Jetson / DeepStream"
+        },
+        {
+          "icon": "python",
+          "name": "Python / C++"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS Panorama / IoT Greengrass"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker (Edge Containers)"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch / ONNX"
+        },
+        {
+          "icon": "react",
+          "name": "React (Dashboards)"
+        },
+        {
+          "icon": "apachekafka",
+          "name": "MQTT / Kafka"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "کسٹم وژن سلوشنز",
+    "shortDescription": "امیج ریکگنیشن، آبجیکٹ ڈیٹیکشن، اور ویڈیو اینالیٹکس کا آپ کے انٹرپرائز سافٹ ویئر اور ہارڈ ویئر سسٹمز میں اینڈ ٹو اینڈ انضمام۔",
+    "fullDescription": "جہاں معیاری کمپیوٹر وژن صرف ماڈل بنانے پر توجہ مرکوز کرتا ہے، وہیں ہمارے کسٹم وژن سلوشنز اس ذہانت کو حقیقی دنیا کے سسٹمز میں ضم کرنے پر توجہ دیتے ہیں۔ ہم مکمل ہارڈویئر اور سافٹ ویئر کا ایکو سسٹم بناتے ہیں۔ ہم آپ کو صرف ایک Python اسکرپٹ دے کر کام ختم نہیں کرتے؛ ہم کیمروں کی تصریحات (specs) ڈیزائن کرتے ہیں، ایج کمپیوٹنگ گیٹ ویز (جیسے NVIDIA Jetson یا AWS Panorama) لگاتے ہیں، اور وہ مڈل ویئر لکھتے ہیں جو بصری ڈیٹا کو براہ راست آپ کے مینوفیکچرنگ PLCs، ریٹیل POS سسٹمز، یا کلاؤڈ ڈیٹا بیسز سے جوڑتا ہے۔ چاہے آپ کو ایسا ڈیفیکٹ ڈیٹیکشن سسٹم چاہیے جو خرابی دیکھتے ہی کنویئر بیلٹ کو روک دے، یا ایسا ریٹیل اینالیٹکس سسٹم چاہیے جو پرائیویسی قوانین کی خلاف ورزی کیے بغیر گاہکوں کے رکنے کا وقت نوٹ کرے، ہم پورے عمل کو سنبھالتے ہیں۔ اس میں ماڈل کو دوبارہ تربیت دینے کے لوپس، دور دراز کے آلات کو اوور دی ایئر (OTA) اپ ڈیٹ کرنے کے لیے MLOps انفراسٹرکچر، اور کیمروں سے حاصل کردہ معلومات کو دکھانے والے ڈیش بورڈز شامل ہیں۔",
+    "features": [
+      "اینڈ ٹو اینڈ سسٹم آرکیٹیکچر (ہارڈ ویئر + سافٹ ویئر)",
+      "ایج ٹو کلاؤڈ (Edge-to-Cloud) ڈیٹا پائپ لائن انجینئرنگ",
+      "ہارڈ ویئر کا انضمام (کیمرے، PLCs، کنویئرز)",
+      "خودکار ماڈل ری ٹریننگ پائپ لائنز (MLOps)",
+      "پرائیویسی کو مدنظر رکھتے ہوئے ویڈیو سنسرشپ (GDPR کے مطابق)",
+      "ایگزیکٹوز کے لیے کسٹم ڈیش بورڈز",
+      "ایج آلات کی اوور دی ایئر (OTA) اپ ڈیٹس",
+      "ہائی تھروپ پٹ وژن APIs"
+    ],
+    "benefits": [
+      "کمپیوٹر وژن کے خام ماڈلز کو مکمل مربوط کاروباری حل میں تبدیل کریں",
+      "AI کے ذریعے حقیقی دنیا میں طبعی کارروائیاں (جیسے مشین روکنا) انجام دیں",
+      "متعدد مقامات پر موجود ایج AI آلات کی فلیٹس (fleets) کا بغیر کسی رکاوٹ کے انتظام کریں",
+      "خودکار ماڈل ری ٹریننگ کے ذریعے درستگی کو مسلسل بہتر بنائیں",
+      "ویڈیو کو مقامی سطح پر پروسیس کر کے سخت پرائیویسی قوانین پر عمل کریں",
+      "ڈیٹا سائنس ٹیموں اور فیکٹری فلور کے آپریشنز کے درمیان خلیج کو پُر کریں"
+    ],
+    "metaTitle": "کسٹم وژن سلوشنز | AI ہارڈ ویئر انٹیگریشن | PakSoft",
+    "metaDescription": "اینڈ ٹو اینڈ کمپیوٹر وژن سسٹمز تعینات کریں۔ ہم آبجیکٹ ڈیٹیکشن اور ویڈیو اینالیٹکس کو براہ راست آپ کے ہارڈ ویئر، ایج ڈیوائسز اور سافٹ ویئر کے ساتھ ضم کرتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "سائٹ کا سروے اور ہارڈ ویئر کی خصوصیات",
+          "description": "ہم وژن کے کام کے لیے درکار درست کیمرے کے زاویوں، روشنی کی ضرورتوں، اور ایج کمپیوٹنگ ہارڈ ویئر کا تعین کرنے کے لیے طبعی مقام (فیکٹری، اسٹور، سڑک) کا جائزہ لیتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "ماڈل کو اپنانا (Adaptation)",
+          "description": "ہم بنیادی کمپیوٹر وژن ماڈلز (YOLO, ResNet) لیتے ہیں اور انہیں آپ کے مخصوص ماحول کے مطابق ڈھالتے ہیں، تاکہ وہ آپ کی سائٹ کی قطعی روشنی اور دیگر رکاوٹوں کو سنبھال سکیں۔"
+        },
+        {
+          "step": 3,
+          "title": "ایج گیٹ وے کی ترتیب",
+          "description": "ہم ان ایج ڈیوائسز (جیسے NVIDIA Jetson) کو ترتیب دیتے ہیں جو AI کو مقامی طور پر چلائیں گے، اور مطلوبہ فریم فی سیکنڈ (FPS) حاصل کرنے کے لیے C++ یا آپٹیمائزڈ Python کوڈ لکھتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "سسٹم انضمام (مڈل ویئر)",
+          "description": "ہم ایک ایسی انضمام کی تہہ (integration layer) بناتے ہیں جو AI کے نتائج کو لیتی ہے اور انہیں کارروائیوں میں تبدیل کرتی ہے—جیسے PLC کنٹرولر کو سگنل بھیجنا یا ERP میں ایونٹ لاگ کرنا۔"
+        },
+        {
+          "step": 5,
+          "title": "MLOps اور فلیٹ (Fleet) کا انتظام",
+          "description": "ہم دور دراز کے کیمروں اور ایج ڈیوائسز کی صحت کی نگرانی کے لیے انفراسٹرکچر ترتیب دیتے ہیں، جس سے ہم ڈاؤن ٹائم کے بغیر نئے اپ ڈیٹ شدہ AI ماڈلز اوور دی ایئر (OTA) بھیج سکتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "ڈیش بورڈنگ اور تجزیات",
+          "description": "ہم ایسے کسٹم ویب ڈیش بورڈز بناتے ہیں جو آپ کے تمام مقامات سے بصری ڈیٹا اکٹھا کرتے ہیں، خام نتائج (جیسے 'شخص پایا گیا') کو بزنس میٹرکس ('اوسط انتظار کا وقت: 4 منٹ') میں تبدیل کرتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "اس میں اور عام 'کمپیوٹر وژن' میں کیا فرق ہے؟",
+          "answer": "معیاری کمپیوٹر وژن بنیادی طور پر الگورتھم (ناقص حصے کو پہچاننے کے لیے نیورل نیٹ ورک کو تربیت دینا) پر مرکوز ہے۔ کسٹم وژن سلوشنز پورے نظام کا احاطہ کرتا ہے: طبعی کیمرے کی تنصیب، ایج کمپیوٹنگ ہارڈ ویئر، AI کو فیکٹری کی مشینری سے جوڑنا، اور ڈیش بورڈز بنانا۔"
+        },
+        {
+          "question": "کیا AI طبعی (physical) مشینری کے ساتھ بات چیت کر سکتا ہے؟",
+          "answer": "ہاں۔ مینوفیکچرنگ ماحول میں، ہم ایج AI ڈیوائس کو PLCs (Programmable Logic Controllers) سے جوڑ سکتے ہیں۔ اگر کیمرہ لائن پر کوئی خراب پروڈکٹ دیکھتا ہے، تو AI کنویئر بیلٹ کو روکنے یا چیز کو ہٹانے کے لیے روکوٹک بازو کو چالو کرنے کے لیے PLC کو فوری ڈیجیٹل سگنل بھیج سکتا ہے۔"
+        },
+        {
+          "question": "کیا آپ کیمرے اور ہارڈ ویئر فراہم کرتے ہیں؟",
+          "answer": "ہم ایک سافٹ ویئر انجینئرنگ فرم ہیں، لیکن ہم ہارڈ ویئر کی تفصیلی وضاحتیں (کیمرے کی ریزولوشن، لینس کی قسم، روشنی، اور ایج نوڈس) فراہم کرتے ہیں اور ہارڈ ویئر فروشوں یا آپ کی IT ٹیم کے ساتھ طبعی تنصیب (installation) کے لیے شراکت داری کرتے ہیں۔"
+        },
+        {
+          "question": "جب وقت کے ساتھ AI کی کارکردگی گرنے لگے (model drift) تو آپ کیا کرتے ہیں؟",
+          "answer": "ماحول بدلتا ہے (روشنی کم ہوتی ہے، نئی مصنوعات متعارف ہوتی ہیں)۔ ہم MLOps پائپ لائنز بناتے ہیں جو مسلسل ویڈیو کا جائزہ لیتی ہیں، جن صورتحال میں AI الجھن کا شکار ہو انہیں لیبلنگ کے لیے انسان کو بھیجتی ہیں، اور خود بخود ایک اپ ڈیٹ شدہ ماڈل دوبارہ ٹرین کر کے تعینات کرتی ہیں۔"
+        },
+        {
+          "question": "کیا اس کے کام کرنے کے لیے انٹرنیٹ کنکشن ضروری ہے؟",
+          "answer": "اصل کام (اشیاء کو پہچاننے) کے لیے، نہیں۔ ماڈلز کو ایج ڈیوائسز پر تعینات کر کے، سسٹم مقامی طور پر اور ریئل ٹائم میں چلتا ہے یہاں تک کہ انٹرنیٹ بند ہونے پر بھی۔ انٹرنیٹ کنکشن صرف وقفے وقفے سے ماڈل اپ ڈیٹس حاصل کرنے یا کلاؤڈ پر میٹا ڈیٹا اپ لوڈ کرنے کے لیے درکار ہوتا ہے۔"
+        },
+        {
+          "question": "اگر ہمارے 50 مختلف ریٹیل مقامات ہوں تو کیا ہوگا؟",
+          "answer": "ہم فلیٹ (fleet) مینجمنٹ ٹولز نافذ کرتے ہیں۔ اس سے ہم ایک مرکزی ڈیش بورڈ سے تمام 50 ایج ڈیوائسز کی نگرانی کر سکتے ہیں۔ جب ہم AI ماڈل کو بہتر بناتے ہیں، تو ہم آپ کے فون پر سافٹ ویئر اپ ڈیٹ کی طرح بیک وقت 50 مقامات پر اوور دی ایئر (OTA) اپ ڈیٹ بھیج سکتے ہیں۔"
+        },
+        {
+          "question": "آپ ویڈیو کے ساتھ رازداری کے قوانین کی پابندی کیسے یقینی بناتے ہیں؟",
+          "answer": "ایج ڈیوائس پر مقامی طور پر ویڈیو پروسیس کر کے، خام ویڈیو فیڈ کبھی بھی کلاؤڈ یا ڈیٹا بیس پر نہیں جاتی۔ AI صرف میٹا ڈیٹا نکالتا ہے (مثلاً، 'صبح 9:00 بجے 1 شخص داخل ہوا') اور فوراً ویڈیو کے فریمز کو تلف کر دیتا ہے، جس سے رازداری کی مکمل تعمیل یقینی ہوتی ہے۔"
+        },
+        {
+          "question": "کیا ہم اپنے موجودہ CCTV کیمرے استعمال کر سکتے ہیں؟",
+          "answer": "اکثر، ہاں۔ ہم آپ کے موجودہ IP کیمروں سے RTSP اسٹریم کیپچر کر کے اسے AI پروسیسنگ کے لیے ہمارے ایج کمپیوٹنگ ڈیوائسز میں بھیج سکتے ہیں، بشرطیکہ کیمرے کا زاویہ اور ریزولوشن اس مخصوص کام کے لیے کافی ہو۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "nvidia",
+          "name": "NVIDIA Jetson / DeepStream"
+        },
+        {
+          "icon": "python",
+          "name": "Python / C++"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS Panorama / IoT Greengrass"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker (Edge Containers)"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch / ONNX"
+        },
+        {
+          "icon": "react",
+          "name": "React (Dashboards)"
+        },
+        {
+          "icon": "apachekafka",
+          "name": "MQTT / Kafka"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "حلول الرؤية المخصصة (Custom Vision)",
+    "shortDescription": "تكامل شامل للتعرف على الصور، واكتشاف الكائنات، وتحليلات الفيديو مباشرة في أنظمة البرامج والأجهزة الخاصة بمؤسستك.",
+    "fullDescription": "بينما تركز الرؤية الحاسوبية القياسية على بناء النموذج، تركز حلول الرؤية المخصصة لدينا على دمج هذا الذكاء في العالم الحقيقي. نحن نصمم أنظمة بيئية متكاملة للأجهزة والبرامج (Hardware-software ecosystems). نحن لا نسلمك مجرد نص برمجي بلغة Python؛ بل نصمم مواصفات معدات الكاميرا، ونقوم بإعداد بوابات الحوسبة الطرفية (مثل NVIDIA Jetson أو AWS Panorama)، ونكتب البرامج الوسيطة (Middleware) التي تربط الاستدلالات المرئية مباشرة بأجهزة التحكم المنطقية القابلة للبرمجة (PLC) الخاصة بالتصنيع، أو أنظمة نقاط البيع (POS)، أو قواعد البيانات السحابية. سواء كنت بحاجة إلى نظام اكتشاف عيوب يوقف فعلياً حزام النقل عند اكتشاف خلل، أو نظام تحليلات للبيع بالتجزئة يتتبع أوقات مكوث العملاء دون انتهاك قوانين الخصوصية، فإننا نتعامل مع دورة حياة الحل بالكامل. يشمل ذلك حلقات إعادة تدريب النماذج، وبنية MLOps للتحديثات عبر الهواء (OTA) للأجهزة الطرفية، وبناء لوحات معلومات تنفيذية تعرض الرؤى التي جمعتها الكاميرات.",
+    "features": [
+      "بنية نظام متكاملة من البداية للنهاية (أجهزة + برامج)",
+      "هندسة مسار البيانات من الحافة إلى السحابة (Edge-to-Cloud)",
+      "تكامل الأجهزة (الكاميرات، أجهزة PLC، أحزمة النقل)",
+      "مسارات إعادة تدريب النماذج الآلية (MLOps)",
+      "تنقيح ومسح الفيديو لحفظ الخصوصية (متوافق مع GDPR/CCPA)",
+      "لوحات معلومات تنفيذية مخصصة",
+      "تحديثات الأجهزة الطرفية عبر الهواء (OTA)",
+      "واجهات برمجة تطبيقات للرؤية (Vision APIs) عالية الإنتاجية"
+    ],
+    "benefits": [
+      "تحويل نماذج الرؤية الحاسوبية الخام إلى حلول أعمال متكاملة تماماً",
+      "تحفيز إجراءات مادية في العالم الحقيقي (مثل إيقاف آلة) عبر الذكاء الاصطناعي",
+      "إدارة أساطيل من أجهزة الذكاء الاصطناعي الطرفية بسلاسة عبر مواقع متعددة",
+      "التحسين المستمر للدقة من خلال إعادة التدريب الآلي للنماذج",
+      "الامتثال للوائح خصوصية البيانات الصارمة من خلال معالجة الفيديو محلياً",
+      "سد الفجوة بين فرق علوم البيانات وعمليات أرض المصنع"
+    ],
+    "metaTitle": "حلول الرؤية المخصصة | تكامل أجهزة الذكاء الاصطناعي | PakSoft",
+    "metaDescription": "انشر أنظمة رؤية حاسوبية متكاملة. ندمج اكتشاف الكائنات وتحليلات الفيديو مباشرة مع أجهزتك، والأجهزة الطرفية، وبرامج مؤسستك.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "مسح الموقع ومواصفات الأجهزة",
+          "description": "نقوم بتقييم الموقع الفعلي (المصنع، المتجر، الشارع) لتحديد زوايا الكاميرا الدقيقة، ومعدات الإضاءة، وأجهزة الحوسبة الطرفية المطلوبة لمهمة الرؤية."
+        },
+        {
+          "step": 2,
+          "title": "تكييف النموذج (Model Adaptation)",
+          "description": "نأخذ نماذج الرؤية الحاسوبية الأساسية (YOLO، ResNet) ونكيفها مع بيئتك الخاصة، مما يضمن قدرتها على التعامل مع ظروف الإضاءة والانسداد الدقيقة لموقعك."
+        },
+        {
+          "step": 3,
+          "title": "تكوين البوابة الطرفية (Edge Gateway)",
+          "description": "نقوم بتكوين الأجهزة الطرفية (مثل NVIDIA Jetson) التي ستشغل الذكاء الاصطناعي محلياً، وكتابة كود C++ أو Python المحسن الضروري للوصول إلى معدل الإطارات المطلوب."
+        },
+        {
+          "step": 4,
+          "title": "تكامل النظام (البرامج الوسيطة - Middleware)",
+          "description": "نبني طبقة التكامل التي تأخذ مخرجات الذكاء الاصطناعي وتترجمها إلى إجراءات — مثل إرسال إشارة إلى وحدة تحكم PLC أو تسجيل حدث في نظام ERP الخاص بك."
+        },
+        {
+          "step": 5,
+          "title": "MLOps وإدارة الأسطول",
+          "description": "نُعد البنية التحتية لمراقبة صحة الكاميرات والأجهزة الطرفية عن بُعد، مما يسمح لنا بدفع نماذج ذكاء اصطناعي محدثة وأكثر ذكاءً للأسطول عبر الهواء (OTA) دون توقف."
+        },
+        {
+          "step": 6,
+          "title": "لوحات المعلومات والتحليلات",
+          "description": "نبني لوحات معلومات ويب مخصصة تجمع البيانات المرئية من جميع مواقعك، وتحول الاكتشافات الخام (مثل 'تم اكتشاف شخص') إلى مقاييس أعمال ('متوسط وقت الانتظار: 4 دقائق')."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما الفرق بين هذا وبين 'الرؤية الحاسوبية' (Computer Vision) القياسية؟",
+          "answer": "تركز الرؤية الحاسوبية القياسية في الغالب على الخوارزمية (تدريب شبكة عصبية للتعرف على جزء معيب). تغطي حلول الرؤية المخصصة بيئة النشر بأكملها: إعداد الكاميرا المادي، وأجهزة الحوسبة الطرفية، وتوصيل الذكاء الاصطناعي بآلات المصنع، وبناء لوحات المعلومات."
+        },
+        {
+          "question": "هل يمكن للذكاء الاصطناعي التفاعل مع الآلات المادية؟",
+          "answer": "نعم. في إعدادات التصنيع، يمكننا توصيل جهاز الذكاء الاصطناعي الطرفي بأجهزة التحكم المنطقية القابلة للبرمجة (PLC). إذا اكتشفت الكاميرا منتجاً معيباً على الخط، يمكن للذكاء الاصطناعي إرسال إشارة رقمية فورية إلى PLC لإيقاف حزام النقل أو تنشيط ذراع آلي لإزالة العنصر."
+        },
+        {
+          "question": "هل تقدمون الكاميرات والأجهزة؟",
+          "answer": "نحن شركة هندسة برمجيات، لكننا نقدم مواصفات تفصيلية للأجهزة (دقة الكاميرا، نوع العدسة، متطلبات الإضاءة، وعقد الحوسبة الطرفية) ونتشارك مع بائعي الأجهزة أو فريق تكنولوجيا المعلومات الحالي لديك للمشتريات والتركيب المادي."
+        },
+        {
+          "question": "كيف تتعاملون مع 'انحراف النموذج' (عندما يزداد أداء الذكاء الاصطناعي سوءاً بمرور الوقت)؟",
+          "answer": "البيئات تتغير (الإضاءة تتدهور، يتم تقديم منتجات جديدة). نحن نبني مسارات MLOps التي تأخذ عينات مستمرة من تغذية الفيديو، وتحدد الحالات غير المألوفة التي يكون فيها الذكاء الاصطناعي غير متأكد، وترسلها إلى إنسان لتصنيفها، ثم تعيد تدريب ونشر نموذج محدث آلياً."
+        },
+        {
+          "question": "هل الاتصال بالإنترنت مطلوب لكي يعمل هذا؟",
+          "answer": "بالنسبة للاستدلال الفعلي (اكتشاف الكائنات)، لا. من خلال نشر النماذج على الأجهزة الطرفية (Edge devices)، يعمل النظام محلياً وفي الوقت الفعلي حتى في حالة انقطاع الإنترنت. مطلوب الاتصال بالإنترنت بشكل دوري فقط لدفع تحديثات النموذج أو تحميل البيانات الوصفية (Metadata) إلى السحابة."
+        },
+        {
+          "question": "ماذا يحدث إذا كان لدينا 50 موقعاً مختلفاً للبيع بالتجزئة؟",
+          "answer": "نحن ننفذ أدوات إدارة الأسطول (Fleet management). يتيح لنا ذلك مراقبة صحة جميع الأجهزة الطرفية الخمسين من لوحة تحكم مركزية. عندما نقوم بتحسين نموذج الذكاء الاصطناعي، يمكننا دفع التحديث عبر الهواء (OTA) إلى جميع المواقع الخمسين في وقت واحد، تماماً مثل تحديث البرنامج على هاتفك."
+        },
+        {
+          "question": "كيف تضمنون الامتثال للوائح الخصوصية (GDPR/CCPA) مع الفيديو؟",
+          "answer": "من خلال معالجة الفيديو محلياً على الجهاز الطرفي، فإن تغذية الفيديو الخام لا تلمس أبداً السحابة أو قاعدة البيانات. يستخرج الذكاء الاصطناعي البيانات الوصفية فقط (مثل، 'دخل شخص واحد الساعة 9:00 صباحاً') ويتخلص فوراً من إطارات الفيديو، مما يضمن الامتثال الكامل للخصوصية."
+        },
+        {
+          "question": "هل يمكننا استخدام كاميرات المراقبة (CCTV) الحالية لدينا؟",
+          "answer": "غالباً نعم. يمكننا التقاط دفق RTSP من كاميرات IP الحالية الخاصة بك وتوجيهه إلى أجهزة الحوسبة الطرفية الخاصة بنا لمعالجة الذكاء الاصطناعي، شريطة أن تكون زاوية الكاميرا ودقتها كافية للمهمة المحددة."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "nvidia",
+          "name": "NVIDIA Jetson / DeepStream"
+        },
+        {
+          "icon": "python",
+          "name": "Python / C++"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS Panorama / IoT Greengrass"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker (Edge Containers)"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch / ONNX"
+        },
+        {
+          "icon": "react",
+          "name": "React (Dashboards)"
+        },
+        {
+          "icon": "apachekafka",
+          "name": "MQTT / Kafka"
+        }
+      ]
+    }
+  }
+}

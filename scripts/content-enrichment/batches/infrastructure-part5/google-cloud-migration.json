@@ -1,0 +1,618 @@
+{
+  "slug": "google-cloud-migration",
+  "en": {
+    "name": "Google Cloud Migration",
+    "shortDescription": "Migrate your legacy workloads to Google Cloud Platform to unlock advanced data analytics, secure Kubernetes orchestration, and scalable AI-ready infrastructure with minimal downtime.",
+    "fullDescription": "Transition your enterprise infrastructure to Google Cloud Platform (GCP) with PakSoft's structured migration framework. We specialize in refactoring legacy applications for Google Kubernetes Engine (GKE), migrating complex databases to Cloud SQL and Spanner, and setting up BigQuery data warehouses for advanced analytics. Our team ensures a zero-downtime migration using Google Cloud Migrate for Compute Engine and Anthos for hybrid-cloud management. By leveraging GCP's native security, global load balancing, and cost-optimization tools, we help you reduce operational overhead by up to 30% while preparing your business for next-generation AI and machine learning integration.",
+    "features": [
+      "Comprehensive GCP Readiness Assessment",
+      "Anthos Hybrid & Multi-Cloud Setup",
+      "BigQuery Data Warehouse Migration",
+      "Google Kubernetes Engine (GKE) Deployment",
+      "Cloud SQL & Spanner Database Migration",
+      "Live VM Migration with Migrate for Compute",
+      "IAM & Cloud Security Architecture Design",
+      "Cost Optimization & FinOps Implementation"
+    ],
+    "benefits": [
+      "Up to 30% reduction in infrastructure costs",
+      "Seamless access to advanced AI and ML tools",
+      "Near-zero downtime during workload cutover",
+      "Enhanced application scalability with GKE",
+      "Enterprise-grade security and IAM compliance",
+      "Real-time data analytics with BigQuery"
+    ],
+    "metaTitle": "Google Cloud Migration Services | PakSoft",
+    "metaDescription": "Migrate to Google Cloud Platform with PakSoft. Secure GKE, BigQuery, and Anthos migrations with zero downtime. Contact us today for a free GCP assessment.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Discovery & Assessment",
+          "description": "We analyze your current infrastructure, application dependencies, and database schemas. This allows us to create a detailed GCP migration roadmap with clear cost estimates."
+        },
+        {
+          "step": 2,
+          "title": "Landing Zone Setup",
+          "description": "Our team configures a secure Google Cloud landing zone with proper IAM roles and VPC networks. This establishes a solid foundation for your migrated workloads."
+        },
+        {
+          "step": 3,
+          "title": "Data & Database Migration",
+          "description": "We migrate your databases to Cloud SQL or Spanner using secure, automated replication tools. This ensures data integrity and minimal disruption to your daily operations."
+        },
+        {
+          "step": 4,
+          "title": "Application Containerization",
+          "description": "We refactor and containerize your applications for deployment on Google Kubernetes Engine (GKE). This step maximizes scalability and resource utilization in the cloud."
+        },
+        {
+          "step": 5,
+          "title": "Testing & Cutover",
+          "description": "We conduct rigorous performance and security testing before executing the final DNS switch. This guarantees a smooth transition with zero data loss or downtime."
+        },
+        {
+          "step": 6,
+          "title": "Optimization & Handover",
+          "description": "Our engineers optimize your GCP resources and set up real-time monitoring dashboards. We then hand over full control along with comprehensive documentation to your team."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How do you ensure zero downtime during a Google Cloud migration?",
+          "answer": "We use live replication tools like Migrate for Compute Engine to sync data in real-time. The final cutover is scheduled during low-traffic hours with automated rollback plans in place."
+        },
+        {
+          "question": "What is Google Anthos and do we need it?",
+          "answer": "Google Anthos is a hybrid and multi-cloud application platform that lets you manage GKE clusters anywhere. It is highly recommended if you need to run applications across on-premises and cloud environments consistently."
+        },
+        {
+          "question": "How does BigQuery improve our data analytics capabilities?",
+          "answer": "BigQuery is a serverless, highly scalable data warehouse that allows you to run SQL queries over terabytes of data in seconds. It also includes built-in machine learning capabilities for predictive analytics without moving your data."
+        },
+        {
+          "question": "Can you migrate our legacy SQL Server or Oracle databases to GCP?",
+          "answer": "Yes, we migrate legacy databases to Cloud SQL, Cloud Spanner, or Bare Metal Solution depending on your needs. We handle schema conversion, data mapping, and continuous replication to ensure a safe transition."
+        },
+        {
+          "question": "How do you manage and optimize GCP costs after migration?",
+          "answer": "We implement FinOps best practices, including automated resource scheduling, committed use discounts, and GKE autoscaling. We also set up real-time budget alerts to prevent unexpected cloud spend."
+        },
+        {
+          "question": "Is Google Cloud Platform secure enough for healthcare or financial data?",
+          "answer": "Absolutely, GCP complies with major global standards including HIPAA, PCI-DSS, and GDPR. We configure advanced IAM policies, VPC Service Controls, and encryption keys to meet your specific compliance needs."
+        },
+        {
+          "question": "How long does a typical GCP migration project take?",
+          "answer": "A standard migration takes anywhere from 4 to 12 weeks depending on infrastructure complexity. We provide a detailed timeline during our initial discovery and assessment phase."
+        },
+        {
+          "question": "Do you provide post-migration support and maintenance?",
+          "answer": "Yes, PakSoft offers 24/7 post-migration support, proactive monitoring, and continuous optimization services. We ensure your GCP environment remains secure, fast, and cost-effective over time."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Google Kubernetes Engine",
+          "icon": "gke"
+        },
+        {
+          "name": "BigQuery",
+          "icon": "bigquery"
+        },
+        {
+          "name": "Anthos",
+          "icon": "anthos"
+        },
+        {
+          "name": "Cloud SQL",
+          "icon": "cloud-sql"
+        },
+        {
+          "name": "Migrate for Compute",
+          "icon": "migrate-for-compute"
+        },
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        },
+        {
+          "name": "Google Cloud Storage",
+          "icon": "gcs"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Google Cloud Migrasyonu",
+    "shortDescription": "En az kesintiyle gelişmiş veri analitiği, güvenli Kubernetes yönetimi ve yapay zekaya hazır ölçeklenebilir altyapı elde etmek için eski iş yüklerinizi Google Cloud Platform'a taşıyın.",
+    "fullDescription": "PakSoft'un yapılandırılmış geçiş çerçevesi ile kurumsal altyapınızı Google Cloud Platform'a (GCP) taşıyın. Eski uygulamaları Google Kubernetes Engine (GKE) için yeniden yapılandırma, karmaşık veritabanlarını Cloud SQL ve Spanner'a taşıma ve gelişmiş analitik için BigQuery veri ambarları kurma konularında uzmanız. Ekibimiz, Google Cloud Migrate for Compute Engine ve hibrit bulut yönetimi için Anthos kullanarak sıfır kesinti süreli bir geçiş sağlar. GCP'nin yerel güvenliğinden, küresel yük dengelemesinden ve maliyet optimizasyon araçlarından yararlanarak, işletmenizi yeni nesil yapay zeka ve makine öğrenimi entegrasyonuna hazırlarken operasyonel genel giderleri %30'a kadar azaltmanıza yardımcı oluyoruz.",
+    "features": [
+      "Kapsamlı GCP Hazırlık Değerlendirmesi",
+      "Anthos Hibrit ve Çoklu Bulut Kurulumu",
+      "BigQuery Veri Ambarı Migrasyonu",
+      "Google Kubernetes Engine (GKE) Dağıtımı",
+      "Cloud SQL ve Spanner Veritabanı Geçişi",
+      "Migrate for Compute ile Canlı Sanal Makine Geçişi",
+      "IAM ve Bulut Güvenlik Mimarisi Tasarımı",
+      "Maliyet Optimizasyonu ve FinOps Uygulaması"
+    ],
+    "benefits": [
+      "Altyapı maliyetlerinde %30'a varan azalma",
+      "Gelişmiş yapay zeka ve makine öğrenimi araçlarına sorunsuz erişim",
+      "İş yükü geçişi sırasında sıfıra yakın kesinti süresi",
+      "GKE ile artırılmış uygulama ölçeklenebilirliği",
+      "Kurumsal düzeyde güvenlik ve IAM uyumluluğu",
+      "BigQuery ile gerçek zamanlı veri analitiği"
+    ],
+    "metaTitle": "Google Cloud Migrasyon Hizmetleri | PakSoft",
+    "metaDescription": "PakSoft ile Google Cloud Platform'a geçiş yapın. Sıfır kesintiyle güvenli GKE, BigQuery ve Anthos geçişleri. Ücretsiz GCP analizi için hemen ulaşın.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Keşif ve Değerlendirme",
+          "description": "Mevcut altyapınızı, uygulama bağımlılıklarınızı ve veritabanı şemalarınızı analiz ediyoruz. Bu, net maliyet tahminleri içeren ayrıntılı bir GCP geçiş yol haritası oluşturmamızı sağlar."
+        },
+        {
+          "step": 2,
+          "title": "Landing Zone Kurulumu",
+          "description": "Ekibimiz, uygun IAM rolleri ve VPC ağları ile güvenli bir Google Cloud iniş bölgesi yapılandırır. Bu, taşınan iş yükleriniz için sağlam bir temel oluşturur."
+        },
+        {
+          "step": 3,
+          "title": "Veri ve Veritabanı Migrasyonu",
+          "description": "Veritabanlarınızı güvenli, otomatik replikasyon araçları kullanarak Cloud SQL veya Spanner'a taşıyoruz. Bu, veri bütünlüğünü ve günlük operasyonlarınızda minimum kesintiyi garanti eder."
+        },
+        {
+          "step": 4,
+          "title": "Uygulama Konteynerleştirme",
+          "description": "Uygulamalarınızı Google Kubernetes Engine (GKE) üzerinde dağıtım için yeniden yapılandırıyor ve konteyner haline getiriyoruz. Bu adım, buluttaki ölçeklenebilirliği ve kaynak kullanımını en üst düzeye çıkarır."
+        },
+        {
+          "step": 5,
+          "title": "Test ve Geçiş (Cutover)",
+          "description": "Nihai DNS geçişini gerçekleştirmeden önce titiz performans ve güvenlik testleri yapıyoruz. Bu, sıfır veri kaybı veya kesinti süresi ile sorunsuz bir geçiş sağlar."
+        },
+        {
+          "step": 6,
+          "title": "Optimizasyon ve Teslim",
+          "description": "Mühendislerimiz GCP kaynaklarınızı optimize eder ve gerçek zamanlı izleme panelleri kurar. Ardından, kapsamlı belgelerle birlikte tam kontrolü ekibinize devrediyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Google Cloud geçişi sırasında sıfır kesinti süresini nasıl sağlıyorsunuz?",
+          "answer": "Verileri gerçek zamanlı olarak senkronize etmek için Migrate for Compute Engine gibi canlı replikasyon araçları kullanıyoruz. Nihai geçiş, otomatik geri alma planlarıyla birlikte trafiğin düşük olduğu saatlerde planlanır."
+        },
+        {
+          "question": "Google Anthos nedir ve buna ihtiyacımız var mı?",
+          "answer": "Google Anthos, GKE kümelerini her yerde yönetmenizi sağlayan hibrit ve çoklu bulut uygulama platformudur. Uygulamaları şirket içi ve bulut ortamlarında tutarlı bir şekilde çalıştırmanız gerekiyorsa şiddetle tavsiye edilir."
+        },
+        {
+          "question": "BigQuery veri analitiği yeteneklerimizi nasıl geliştirir?",
+          "answer": "BigQuery, terabaytlarca veri üzerinde saniyeler içinde SQL sorguları çalıştırmanıza olanak tanıyan sunucusuz, son derece ölçeklenebilir bir veri ambarıdır. Ayrıca, verilerinizi taşımadan tahmine dayalı analizler için yerleşik yapay zeka özellikleri içerir."
+        },
+        {
+          "question": "Eski SQL Server veya Oracle veritabanlarımızı GCP'ye taşıyabilir misiniz?",
+          "answer": "Evet, ihtiyaçlarınıza bağlı olarak eski veritabanlarını Cloud SQL, Cloud Spanner veya Bare Metal Solution'a taşıyoruz. Güvenli bir geçiş sağlamak için şema dönüştürme, veri eşleme ve sürekli replikasyon işlemlerini yönetiyoruz."
+        },
+        {
+          "question": "Geçişten sonra GCP maliyetlerini nasıl yönetiyor ve optimize ediyorsunuz?",
+          "answer": "Otomatik kaynak planlama, taahhütlü kullanım indirimleri ve GKE otomatik ölçeklendirme dahil olmak üzere FinOps en iyi uygulamalarını uyguluyoruz. Beklenmedik bulut harcamalarını önlemek için gerçek zamanlı bütçe uyarıları da kuruyoruz."
+        },
+        {
+          "question": "Google Cloud Platform, sağlık veya finansal veriler için yeterince güvenli mi?",
+          "answer": "Kesinlikle, GCP; HIPAA, PCI-DSS ve GDPR dahil olmak üzere önemli küresel standartlarla uyumludur. Özel uyumluluk ihtiyaçlarınızı karşılamak için gelişmiş IAM politikaları, VPC Servis Kontrolleri ve şifreleme anahtarları yapılandırıyoruz."
+        },
+        {
+          "question": "Tipik bir GCP geçiş projesi ne kadar sürer?",
+          "answer": "Standart bir geçiş, altyapı karmaşıklığına bağlı olarak 4 ila 12 hafta arasında sürer. İlk keşif ve değerlendirme aşamamızda ayrıntılı bir zaman çizelgesi sunuyoruz."
+        },
+        {
+          "question": "Geçiş sonrası destek ve bakım sağlıyor musunuz?",
+          "answer": "Evet, PakSoft olarak 7/24 geçiş sonrası destek, proaktif izleme ve sürekli optimizasyon hizmetleri sunuyoruz. GCP ortamınızın zaman içinde güvenli, hızlı ve maliyet etkin kalmasını sağlıyoruz."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Google Kubernetes Engine",
+          "icon": "gke"
+        },
+        {
+          "name": "BigQuery",
+          "icon": "bigquery"
+        },
+        {
+          "name": "Anthos",
+          "icon": "anthos"
+        },
+        {
+          "name": "Cloud SQL",
+          "icon": "cloud-sql"
+        },
+        {
+          "name": "Migrate for Compute",
+          "icon": "migrate-for-compute"
+        },
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        },
+        {
+          "name": "Google Cloud Storage",
+          "icon": "gcs"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Google Cloud Migration",
+    "shortDescription": "Migrieren Sie Ihre Legacy-Workloads auf die Google Cloud Platform, um fortschrittliche Datenanalysen, sichere Kubernetes-Orchestrierung und eine skalierbare, KI-bereite Infrastruktur mit minimalen Ausfallzeiten freizuschalten.",
+    "fullDescription": "Überführen Sie Ihre Unternehmensinfrastruktur mit dem strukturierten Migrations-Framework von PakSoft auf die Google Cloud Platform (GCP). Wir sind darauf spezialisiert, Altanwendungen für die Google Kubernetes Engine (GKE) zu refaktorieren, komplexe Datenbanken auf Cloud SQL und Spanner zu migrieren und BigQuery-Data-Warehouses für fortschrittliche Analysen einzurichten. Unser Team sorgt für eine migrationsbedingte Ausfallzeit von nahezu Null, indem es Google Cloud Migrate for Compute Engine und Anthos für das Hybrid-Cloud-Management einsetzt. Durch die Nutzung der nativen Sicherheitsfunktionen, des globalen Lastausgleichs und der Kostenoptimierungstools von GCP helfen wir Ihnen, die Betriebskosten um bis zu 30 % zu senken und Ihr Unternehmen gleichzeitig auf die Integration von KI und maschinellem Lernen vorzubereiten.",
+    "features": [
+      "Umfassende GCP-Bereitschaftsbewertung",
+      "Anthos Hybrid- & Multi-Cloud-Einrichtung",
+      "BigQuery Data Warehouse Migration",
+      "Google Kubernetes Engine (GKE) Bereitstellung",
+      "Cloud SQL & Spanner Datenbankmigration",
+      "Live-VM-Migration mit Migrate for Compute",
+      "IAM- & Cloud-Sicherheitsarchitektur-Design",
+      "Kostenoptimierung & FinOps-Implementierung"
+    ],
+    "benefits": [
+      "Bis zu 30 % Reduzierung der Infrastrukturkosten",
+      "Nahtloser Zugriff auf fortschrittliche KI- und ML-Tools",
+      "Nahezu null Ausfallzeiten während der Workload-Umstellung",
+      "Verbesserte Skalierbarkeit von Anwendungen mit GKE",
+      "Sicherheit auf Enterprise-Niveau und IAM-Compliance",
+      "Echtzeit-Datenanalyse mit BigQuery"
+    ],
+    "metaTitle": "Google Cloud Migration Services | PakSoft",
+    "metaDescription": "Migrieren Sie mit PakSoft zur Google Cloud. Sichere GKE-, BigQuery- und Anthos-Migrationen ohne Ausfallzeiten. Kontaktieren Sie uns für eine GCP-Analyse.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Analyse & Bewertung",
+          "description": "Wir analysieren Ihre aktuelle Infrastruktur, Anwendungsabhängigkeiten und Datenbankschemata. Dies ermöglicht es uns, eine detaillierte GCP-Migrations-Roadmap mit klaren Kostenschätzungen zu erstellen."
+        },
+        {
+          "step": 2,
+          "title": "Landing Zone Einrichtung",
+          "description": "Unser Team konfiguriert eine sichere Google Cloud Landing Zone mit den entsprechenden IAM-Rollen und VPC-Netzwerken. Dies schafft ein solides Fundament für Ihre migrierten Workloads."
+        },
+        {
+          "step": 3,
+          "title": "Daten- & Datenbankmigration",
+          "description": "Wir migrieren Ihre Datenbanken mit sicheren, automatisierten Replikationstools zu Cloud SQL oder Spanner. Dies gewährleistet Datenintegrität und minimale Unterbrechungen Ihres täglichen Betriebs."
+        },
+        {
+          "step": 4,
+          "title": "Anwendungs-Containerisierung",
+          "description": "Wir refaktorieren und containerisieren Ihre Anwendungen für die Bereitstellung auf der Google Kubernetes Engine (GKE). Dieser Schritt maximiert die Skalierbarkeit und Ressourcenauslastung in der Cloud."
+        },
+        {
+          "step": 5,
+          "title": "Testen & Umstellung",
+          "description": "Wir führen strenge Leistungs- und Sicherheitstests durch, bevor wir den endgültigen DNS-Wechsel vollziehen. Dies garantiert einen reibomslosen Übergang ohne Datenverlust oder Ausfallzeiten."
+        },
+        {
+          "step": 6,
+          "title": "Optimierung & Übergabe",
+          "description": "Unsere Ingenieure optimieren Ihre GCP-Ressourcen und richten Echtzeit-Monitoring-Dashboards ein. Anschließend übergeben wir die vollständige Kontrolle sowie eine umfassende Dokumentation an Ihr Team."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie gewährleisten Sie eine minimale Ausfallzeit während der Google Cloud-Migration?",
+          "answer": "Wir verwenden Live-Replikationstools wie Migrate for Compute Engine, um Daten in Echtzeit zu synchronisieren. Die endgültige Umstellung wird in verkehrsarmen Zeiten mit automatisierten Rollback-Plänen durchgeführt."
+        },
+        {
+          "question": "Was ist Google Anthos und benötigen wir es?",
+          "answer": "Google Anthos ist eine Hybrid- und Multi-Cloud-Anwendungsplattform, mit der Sie GKE-Cluster überall verwalten können. Sie wird dringend empfohlen, wenn Sie Anwendungen konsistent in On-Premises- und Cloud-Umgebungen ausführen müssen."
+        },
+        {
+          "question": "Wie verbessert BigQuery unsere Datenanalysefähigkeiten?",
+          "answer": "BigQuery ist ein serverloses, hochskalierbares Data Warehouse, mit dem Sie SQL-Abfragen über Terabytes an Daten in Sekundenschnelle ausführen können. Es enthält auch integrierte Funktionen für maschinelles Lernen für prädiktive Analysen."
+        },
+        {
+          "question": "Können Sie unsere alten SQL Server- oder Oracle-Datenbanken zu GCP migrieren?",
+          "answer": "Ja, wir migrieren Altdatenbanken je nach Bedarf zu Cloud SQL, Cloud Spanner oder Bare Metal Solution. Wir übernehmen die Schema-Konvertierung, das Daten-Mapping und die kontinuierliche Replikation für einen sicheren Übergang."
+        },
+        {
+          "question": "Wie verwalten und optimieren Sie die GCP-Kosten nach der Migration?",
+          "answer": "Wir implementieren FinOps-Best-Practices, einschließlich automatisierter Ressourcenplanung, Rabatten für zugesicherte Nutzung und automatischer GKE-Skalierung. Wir richten auch Echtzeit-Budgetalarme ein, um unerwartete Ausgaben zu vermeiden."
+        },
+        {
+          "question": "Ist die Google Cloud Platform sicher genug für Gesundheits- oder Finanzdaten?",
+          "answer": "Absolut, GCP erfüllt wichtige globale Standards wie HIPAA, PCI-DSS und DSGVO. Wir konfigurieren fortschrittliche IAM-Richtlinien, VPC Service Controls und Verschlüsselungsschlüssel, um Ihre spezifischen Compliance-Anforderungen zu erfüllen."
+        },
+        {
+          "question": "Wie lange dauert ein typisches GCP-Migrationsprojekt?",
+          "answer": "Eine Standardmigration dauert je nach Komplexität der Infrastruktur zwischen 4 und 12 Wochen. Wir erstellen während unserer ersten Analyse- und Bewertungsphase einen detaillierten Zeitplan."
+        },
+        {
+          "question": "Bieten Sie Unterstützung und Wartung nach der Migration an?",
+          "answer": "Ja, PakSoft bietet rund um die Uhr Support nach der Migration, proaktive Überwachung und kontinuierliche Optimierungsdienste. Wir sorgen dafür, dass Ihre GCP-Umgebung dauerhaft sicher, schnell und kosteneffizient bleibt."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Google Kubernetes Engine",
+          "icon": "gke"
+        },
+        {
+          "name": "BigQuery",
+          "icon": "bigquery"
+        },
+        {
+          "name": "Anthos",
+          "icon": "anthos"
+        },
+        {
+          "name": "Cloud SQL",
+          "icon": "cloud-sql"
+        },
+        {
+          "name": "Migrate for Compute",
+          "icon": "migrate-for-compute"
+        },
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        },
+        {
+          "name": "Google Cloud Storage",
+          "icon": "gcs"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "گوگل کلاؤڈ مائیگریشن",
+    "shortDescription": "کم سے کم ڈاؤن ٹائم کے ساتھ جدید ڈیٹا اینالیٹکس، محفوظ Kubernetes آرکیسٹریشن، اور اسکیل ایبل AI سے لیس انفراسٹرکچر حاصل کرنے کے لیے اپنے پرانے ورک لوڈز کو Google Cloud Platform پر منتقل کریں۔",
+    "fullDescription": "پاک سافٹ کے منظم مائیگریشن فریم ورک کے ساتھ اپنے انٹرپرائز انفراسٹرکچر کو Google Cloud Platform (GCP) پر منتقل کریں۔ ہم Google Kubernetes Engine (GKE) کے لیے پرانی ایپلی کیشنز کو ری فیکٹر کرنے، پیچیدہ ڈیٹا بیسز کو Cloud SQL اور Spanner پر منتقل کرنے، اور جدید اینالیٹکس کے لیے BigQuery ڈیٹا ویئر ہاؤسز قائم کرنے میں مہارت رکھتے ہیں۔ ہماری ٹیم Google Cloud Migrate for Compute Engine اور ہائبرڈ کلاؤڈ مینجمنٹ کے لیے Anthos کا استعمال کرتے ہوئے صفر ڈاؤن ٹائم مائیگریشن کو یقینی بناتی ہے۔ GCP کی مقامی سیکیورٹی، گلوبل لوڈ بیلنسنگ، اور لاگت کو بہتر بنانے والے ٹولز کا فائدہ اٹھا کر، ہم آپ کے آپریشنل اخراجات کو 30% تک کم کرنے میں مدد کرتے ہیں جبکہ آپ کے کاروبار کو اگلی نسل کے AI اور مشین لرننگ کے لیے تیار کرتے ہیں۔",
+    "features": [
+      "جامع GCP تیاری کی تشخیص",
+      "Anthos ہائبرڈ اور ملٹی کلاؤڈ سیٹ اپ",
+      "BigQuery ڈیٹا ویئر ہاؤس مائیگریشن",
+      "Google Kubernetes Engine (GKE) ڈیپلائمنٹ",
+      "Cloud SQL اور Spanner ڈیٹا بیس مائیگریشن",
+      "Migrate for Compute کے ساتھ لائیو VM مائیگریشن",
+      "IAM اور کلاؤڈ سیکیورٹی آرکیٹیکچر ڈیزائن",
+      "لاگت کی اصلاح اور FinOps کا نفاذ"
+    ],
+    "benefits": [
+      "انفراسٹرکچر کے اخراجات میں 30% تک کمی",
+      "جدید AI اور ML ٹولز تک بلا روک ٹوک رسائی",
+      "ورک لوڈ کی منتقلی کے دوران صفر کے قریب ڈاؤن ٹائم",
+      "GKE کے ساتھ ایپلی کیشن کی بہتر اسکیل ایبلٹی",
+      "انٹرپرائز گریڈ سیکیورٹی اور IAM تعمیل",
+      "BigQuery کے ساتھ ریئل ٹائم ڈیٹا اینالیٹکس"
+    ],
+    "metaTitle": "گوگل کلاؤڈ مائیگریشن سروسز | PakSoft",
+    "metaDescription": "پاک سافٹ کے ساتھ گوگل کلاؤڈ پلیٹ فارم پر منتقل ہوں۔ صفر ڈاؤن ٹائم کے ساتھ محفوظ GKE، BigQuery اور Anthos مائیگریشن۔ مفت GCP تشخیص کے لیے آج ہی رابطہ کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "دریافت اور تشخیص",
+          "description": "ہم آپ کے موجودہ انفراسٹرکچر، ایپلی کیشن کے انحصار اور ڈیٹا بیس اسکیموں کا تجزیہ کرتے ہیں۔ یہ ہمیں لاگت کے واضح تخمینوں کے ساتھ ایک تفصیلی GCP مائیگریشن روڈ میپ بنانے کی اجازت دیتا۔"
+        },
+        {
+          "step": 2,
+          "title": "لینڈنگ زون سیٹ اپ",
+          "description": "ہماری ٹیم مناسب IAM کرداروں اور VPC نیٹ ورکس کے ساتھ ایک محفوظ Google Cloud لینڈنگ زون تشکیل دیتی ہے۔ یہ آپ کے منتقل کردہ ورک لوڈز کے لیے ایک مضبوط بنیاد قائم کرتا ہے۔"
+        },
+        {
+          "step": 3,
+          "title": "ڈیٹا اور ڈیٹا بیس مائیگریشن",
+          "description": "ہم محفوظ، خودکار ریپلیکیشن ٹولز کا استعمال کرتے ہوئے آپ کے ڈیٹا بیس کو Cloud SQL یا Spanner میں منتقل کرتے ہیں۔ یہ ڈیٹا کی سالمیت اور آپ کے روزمرہ کے کاموں میں کم سے کم رکاوٹ کو یقینی بناتا ہے۔"
+        },
+        {
+          "step": 4,
+          "title": "ایپلی کیشن کنٹینرائزیشن",
+          "description": "ہم Google Kubernetes Engine (GKE) پر ڈیپلائمنٹ کے لیے آپ کی ایپلی کیشنز کو ری فیکٹر اور کنٹینرائز کرتے ہیں۔ یہ مرحلہ کلاؤڈ میں اسکیل ایبلٹی اور وسائل کے استعمال کو زیادہ سے زیادہ بناتا ہے۔"
+        },
+        {
+          "step": 5,
+          "title": "ٹیسٹنگ اور کٹ اوور",
+          "description": "ہم حتمی DNS سوئچ کو انجام دینے سے پہلے سخت کارکردگی اور سیکیورٹی ٹیسٹنگ کرتے ہیں۔ یہ بغیر کسی ڈیٹا کے نقصان یا ڈاؤن ٹائم کے ہموار منتقلی کی ضمانت دیتا ہے۔"
+        },
+        {
+          "step": 6,
+          "title": "اصلاح اور حوالگی",
+          "description": "ہمارے انجینئرز آپ کے GCP وسائل کو بہتر بناتے ہیں اور ریئل ٹائم مانیٹرنگ ڈیش بورڈز قائم کرتے ہیں۔ اس کے بعد ہم جامع دستاویزات کے ساتھ مکمل کنٹرول آپ کی ٹیم کے حوالے کر دیتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "آپ گوگل کلاؤڈ مائیگریشن کے دوران صفر ڈاؤن ٹائم کو کیسے یقینی بناتے ہیں؟",
+          "answer": "ہم ریئل ٹائم میں ڈیٹا کو سنک کرنے کے لیے Migrate for Compute Engine جیسے لائیو ریپلیکیشن ٹولز کا استعمال کرتے ہیں۔ حتمی منتقلی کم ٹریفک کے اوقات میں خودکار رول بیک پلانز کے ساتھ شیڈول کی جاتی ہے۔"
+        },
+        {
+          "question": "گوگل Anthos کیا ہے اور کیا ہمیں اس کی ضرورت ہے؟",
+          "answer": "گوگل Anthos ایک ہائبرڈ اور ملٹی کلاؤڈ ایپلی کیشن پلیٹ فارم ہے جو آپ کو کہیں بھی GKE کلسٹرز کا انتظام کرنے کی اجازت دیتا ہے۔ اگر آپ کو آن پریمیسس اور کلاؤڈ ماحول میں ایپلی کیشنز چلانے کی ضرورت ہو تو یہ انتہائی تجویز کردہ ہے۔"
+        },
+        {
+          "question": "BigQuery ہماری ڈیٹا اینالیٹکس کی صلاحیتوں کو کیسے بہتر بناتا ہے؟",
+          "answer": "BigQuery ایک سرور لیس، انتہائی اسکیل ایبل ڈیٹا ویئر ہاؤس ہے جو آپ کو سیکنڈوں میں ٹیرابائٹس ڈیٹا پر SQL سوالات چلانے کی اجازت دیتا ہے۔ اس میں ڈیٹا منتقل کیے بغیر پیش گوئی کرنے والے تجزیات کے لیے بلٹ ان مشین لرننگ کی خصوصیات بھی شامل ہیں۔"
+        },
+        {
+          "question": "کیا آپ ہمارے پرانے SQL Server یا Oracle ڈیٹا بیس کو GCP پر منتقل کر سکتے ہیں؟",
+          "answer": "جی ہاں، ہم آپ کی ضروریات کے مطابق پرانے ڈیٹا بیس کو Cloud SQL، Cloud Spanner، یا Bare Metal Solution پر منتقل کرتے ہیں۔ ہم محفوظ منتقلی کو یقینی بنانے کے لیے اسکیمہ کی تبدیلی، ڈیٹا میپنگ، اور مسلسل ریپلیکیشن کو سنبھالتے ہیں۔"
+        },
+        {
+          "question": "آپ مائیگریشن کے بعد GCP اخراجات کو کیسے منظم اور بہتر بناتے ہیں؟",
+          "answer": "ہم FinOps کے بہترین طریقوں کو نافذ کرتے ہیں، بشمول خودکار وسائل کی شیڈولنگ، کمٹڈ یوز ڈسکاؤنٹس، اور GKE آٹو اسکیلنگ۔ ہم غیر متوقع کلاؤڈ اخراجات کو روکنے کے لیے ریئل ٹائم بجٹ الرٹس بھی ترتیب دیتے ہیں۔"
+        },
+        {
+          "question": "کیا گوگل کلاؤڈ پلیٹ فارم ہیلتھ کیئر یا مالیاتی ڈیٹا کے لیے کافی محفوظ ہے؟",
+          "answer": "بالکل، GCP بڑے عالمی معیارات بشمول HIPAA، PCI-DSS، اور GDPR کی تعمیل کرتا ہے۔ ہم آپ کی مخصوص تعمیل کی ضروریات کو پورا کرنے کے لیے جدید IAM پالیسیاں، VPC سروس کنٹرولز، اور انکرپشن کیز تشکیل دیتے ہیں۔"
+        },
+        {
+          "question": "ایک عام GCP مائیگریشن پروجیکٹ میں کتنا وقت لگتا ہے؟",
+          "answer": "انفراسٹرکچر کی پیچیدگی کے لحاظ سے ایک معیاری مائیگریشن میں 4 سے 12 ہفتے لگتے ہیں۔ ہم اپنی ابتدائی دریافت اور تشخیص کے مرحلے کے دوران ایک تفصیلی ٹائم لائن فراہم کرتے ہیں۔"
+        },
+        {
+          "question": "کیا آپ مائیگریشن کے بعد سپورٹ اور دیکھ بھال فراہم کرتے ہیں؟",
+          "answer": "جی ہاں، پاک سافٹ 24/7 مائیگریشن کے بعد سپورٹ، فعال مانیٹرنگ، اور مسلسل اصلاح کی خدمات پیش کرتا ہے۔ ہم یقینی بناتے ہیں کہ آپ کا GCP ماحول وقت کے ساتھ محفوظ، تیز اور لاگت کے لحاظ سے موثر رہے۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Google Kubernetes Engine",
+          "icon": "gke"
+        },
+        {
+          "name": "BigQuery",
+          "icon": "bigquery"
+        },
+        {
+          "name": "Anthos",
+          "icon": "anthos"
+        },
+        {
+          "name": "Cloud SQL",
+          "icon": "cloud-sql"
+        },
+        {
+          "name": "Migrate for Compute",
+          "icon": "migrate-for-compute"
+        },
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        },
+        {
+          "name": "Google Cloud Storage",
+          "icon": "gcs"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "ترحيل البيانات إلى Google Cloud",
+    "shortDescription": "قم بترحيل أعباء العمل القديمة إلى Google Cloud Platform للاستفادة من تحليلات البيانات المتقدمة، وإدارة Kubernetes الآمنة، والبنية التحتية القابلة للتطوير والجاهزة للذكاء الاصطناعي بأقل وقت توقف.",
+    "fullDescription": "انقل البنية التحتية لمؤسستك إلى Google Cloud Platform (GCP) باستخدام إطار عمل الترحيل المنظم من PakSoft. نحن متخصصون في إعادة هيكلة التطبيقات القديمة لـ Google Kubernetes Engine (GKE)، وترحيل قواعد البيانات المعقدة إلى Cloud SQL و Spanner، وإعداد مستودعات بيانات BigQuery للتحليلات المتقدمة. يضمن فريقنا ترحيلاً بدون وقت توقف تقريباً باستخدام Google Cloud Migrate for Compute Engine و Anthos لإدارة السحابة الهجينة. من خلال الاستفادة من الأمان الأصلي لـ GCP، وموازنة الحمل العالمي، وأدوات تحسين التكلفة، نساعدك على تقليل النفقات التشغيلية بنسبة تصل إلى 30% مع إعداد عملك لدمج الجيل القادم من الذكاء الاصطناعي وتعلم الآلة.",
+    "features": [
+      "تقييم شامل لمدى جاهزية GCP",
+      "إعداد السحابة الهجينة والمتعددة Anthos",
+      "ترحيل مستودع بيانات BigQuery",
+      "نشر Google Kubernetes Engine (GKE)",
+      "ترحيل قواعد بيانات Cloud SQL و Spanner",
+      "ترحيل الأجهزة الافتراضية الحية باستخدام Migrate for Compute",
+      "تصميم بنية أمان السحابة وإدارة الهوية والوصول IAM",
+      "تحسين التكلفة وتطبيق ممارسات FinOps"
+    ],
+    "benefits": [
+      "تقليل تكاليف البنية التحتية بنسبة تصل إلى 30%",
+      "وصول سلس إلى أدوات الذكاء الاصطناعي وتعلم الآلة المتقدمة",
+      "وقت توقف يقارب الصفر أثناء نقل أعباء العمل",
+      "مرونة محسنة للتطبيقات باستخدام GKE",
+      "أمان على مستوى المؤسسات وتوافق مع معايير IAM",
+      "تحليلات بيانات في الوقت الفعلي باستخدام BigQuery"
+    ],
+    "metaTitle": "خدمات الترحيل إلى Google Cloud | PakSoft",
+    "metaDescription": "انتقل إلى Google Cloud Platform مع PakSoft. ترحيل آمن لـ GKE و BigQuery و Anthos بدون وقت توقف. اتصل بنا اليوم للحصول على تقييم مجاني لـ GCP.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "الاستكشاف والتقييم",
+          "description": "نقوم بتحليل البنية التحتية الحالية لديك، والاعتماديات بين التطبيقات، ومخططات قواعد البيانات. يتيح لنا ذلك إنشاء خارطة طريق مفصلة لترحيل GCP مع تقديرات واضحة للتكلفة."
+        },
+        {
+          "step": 2,
+          "title": "إعداد منطقة الهبوط (Landing Zone)",
+          "description": "يقوم فريقنا بتكوين منطقة هبوط آمنة على Google Cloud مع أدوار IAM وشبكات VPC المناسبة. يؤسس هذا قاعدة صلبة لأعباء العمل التي تم ترحيلها."
+        },
+        {
+          "step": 3,
+          "title": "ترحيل البيانات وقواعد البيانات",
+          "description": "نقوم بترحيل قواعد البيانات الخاصة بك إلى Cloud SQL أو Spanner باستخدام أدوات نسخ متطابقة آمنة وتلقائية. يضمن ذلك سلامة البيانات والحد الأدنى من التعطيل لعملياتك اليومية."
+        },
+        {
+          "step": 4,
+          "title": "حوسبة التطبيقات في حاويات",
+          "description": "نقوم بإعادة هيكلة تطبيقاتك ووضعها في حاويات لنشرها على Google Kubernetes Engine (GKE). تزيد هذه الخطوة من قابلية التوسع واستخدام الموارد في السحابة."
+        },
+        {
+          "step": 5,
+          "title": "الاختبار والتحويل النهائي",
+          "description": "نجري اختبارات أداء وأمان صارمة قبل تنفيذ تبديل DNS النهائي. يضمن ذلك انتقالاً سلساً دون أي فقدان للبيانات أو وقت توقف."
+        },
+        {
+          "step": 6,
+          "title": "التحسين والتسليم",
+          "description": "يقوم مهندسونا بتحسين موارد GCP الخاصة بك وإعداد لوحات معلومات المراقبة في الوقت الفعلي. ثم نقوم بنقل التحكم الكامل إلى فريقك مع وثائق شاملة."
+        }
+      ],
+      "faq": [
+        {
+          "question": "كيف تضمنون عدم وجود وقت توقف أثناء الترحيل إلى Google Cloud؟",
+          "answer": "نستخدم أدوات النسخ المتطابق المباشر مثل Migrate for Compute Engine لمزامنة البيانات في الوقت الفعلي. يتم جدولة التحويل النهائي خلال ساعات انخفاض حركة المرور مع وجود خطط تراجع تلقائية."
+        },
+        {
+          "question": "ما هو Google Anthos وهل نحتاجه؟",
+          "answer": "إن Google Anthos عبارة عن منصة تطبيقات سحابية هجينة ومتعددة تتيح لك إدارة مجموعات GKE في أي مكان. يوصى به بشدة إذا كنت بحاجة إلى تشغيل التطبيقات عبر البيئات المحلية والسحابية بشكل متسق."
+        },
+        {
+          "question": "كيف يعمل BigQuery على تحسين قدراتنا في تحليل البيانات؟",
+          "answer": "إن BigQuery عبارة عن مستودع بيانات بدون خادم وقابل للتطوير بشكل كبير يتيح لك تشغيل استعلامات SQL على تيرابايت من البيانات في ثوانٍ. ويتضمن أيضاً إمكانات تعلم الآلة المدمجة للتحليلات التنبؤية دون نقل بياناتك."
+        },
+        {
+          "question": "هل يمكنك ترحيل قواعد بيانات SQL Server أو Oracle القديمة إلى GCP؟",
+          "answer": "نعم، نقوم بترحيل قواعد البيانات القديمة إلى Cloud SQL أو Cloud Spanner أو Bare Metal Solution حسب احتياجاتك. نحن نتولى تحويل المخططات، ورسم خرائط البيانات، والنسخ المتطابق المستمر لضمان انتقال آمن."
+        },
+        {
+          "question": "كيف تديرون وتحسنون تكاليف GCP بعد الترحيل؟",
+          "answer": "نحن نطبق أفضل ممارسات FinOps، بما في ذلك الجدولة التلقائية للموارد، وخصومات الاستخدام الملتزم بها، والتحجيم التلقائي لـ GKE. نضع أيضاً تنبيهات الميزانية في الوقت الفعلي لمنع الإنفاق السحابي غير المتوقع."
+        },
+        {
+          "question": "هل Google Cloud Platform آمن بما يكفي للبيانات الصحية أو المالية؟",
+          "answer": "بالتأكيد، يتوافق GCP مع المعايير العالمية الكبرى بما في ذلك HIPAA و PCI-DSS و GDPR. نقوم بتكوين سياسات IAM المتقدمة، وضوابط خدمة VPC، ومفاتيح التشفير لتلبية احتياجات الامتثال المحددة الخاصة بك."
+        },
+        {
+          "question": "كم من الوقت يستغرق مشروع الترحيل النموذجي إلى GCP؟",
+          "answer": "يستغرق الترحيل القياسي ما بين 4 إلى 12 أسبوعاً اعتماداً على تعقيد البنية التحتية. نحن نقدم جدولاً زمنياً مفصلاً خلال مرحلة الاستكشاف والتقييم الأولية."
+        },
+        {
+          "question": "هل تقدمون الدعم والصيانة بعد الترحيل؟",
+          "answer": "نعم، تقدم PakSoft دعماً على مدار الساعة طوال أيام الأسبوع بعد الترحيل، ومراقبة استباقية، وخدمات تحسين مستمرة. نحن نضمن أن تظل بيئة GCP الخاصة بك آمنة وسريعة وفعالة من حيث التكلفة بمرور الوقت."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Google Kubernetes Engine",
+          "icon": "gke"
+        },
+        {
+          "name": "BigQuery",
+          "icon": "bigquery"
+        },
+        {
+          "name": "Anthos",
+          "icon": "anthos"
+        },
+        {
+          "name": "Cloud SQL",
+          "icon": "cloud-sql"
+        },
+        {
+          "name": "Migrate for Compute",
+          "icon": "migrate-for-compute"
+        },
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        },
+        {
+          "name": "Google Cloud Storage",
+          "icon": "gcs"
+        }
+      ]
+    }
+  }
+}

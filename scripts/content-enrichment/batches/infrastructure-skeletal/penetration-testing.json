@@ -1,0 +1,638 @@
+{
+  "slug": "penetration-testing",
+  "en": {
+    "name": "Penetration Testing",
+    "shortDescription": "Proactively identify and remediate critical security vulnerabilities in your systems, applications, and networks before malicious actors exploit them. Our ethical hacking services safeguard your digital assets and ensure compliance.",
+    "fullDescription": "Our comprehensive penetration testing services simulate real-world cyberattacks to uncover exploitable weaknesses across your IT infrastructure. We go beyond automated scans, employing manual techniques and expert methodologies to identify complex vulnerabilities in web applications, APIs, cloud environments, and internal networks. This proactive approach helps you understand your security posture, prioritize remediation efforts, and strengthen defenses against sophisticated threats, ensuring business continuity and data integrity. We provide actionable insights to fortify your security landscape.",
+    "features": [
+      "Web Application Penetration Testing",
+      "API Security Testing",
+      "Network Penetration Testing (Internal & External)",
+      "Cloud Infrastructure Security Assessment",
+      "Mobile Application Penetration Testing",
+      "Red Team Exercises & Adversary Simulation",
+      "Social Engineering & Phishing Simulations",
+      "Compliance-Driven Security Audits"
+    ],
+    "benefits": [
+      "Proactive Vulnerability Identification",
+      "Reduced Risk of Data Breaches",
+      "Enhanced Compliance Adherence",
+      "Improved Security Posture",
+      "Cost Savings from Preventing Attacks",
+      "Actionable Remediation Roadmaps"
+    ],
+    "metaTitle": "Penetration Testing Services | PakSoft",
+    "metaDescription": "Identify and fix critical security vulnerabilities with PakSoft's expert penetration testing services. Protect your digital assets. Contact us for a security assessment today.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Planning & Scoping",
+          "description": "Define objectives, scope, and rules of engagement. This ensures all parties understand the boundaries and goals of the penetration test. We align on target systems, testing methodologies, and reporting requirements."
+        },
+        {
+          "step": 2,
+          "title": "Information Gathering",
+          "description": "Collect intelligence on the target environment using open-source intelligence (OSINT) and other reconnaissance techniques. This phase helps in understanding the attack surface and potential entry points."
+        },
+        {
+          "step": 3,
+          "title": "Vulnerability Analysis",
+          "description": "Identify potential weaknesses and misconfigurations in systems, applications, and networks. We use a combination of automated tools and manual analysis to pinpoint vulnerabilities."
+        },
+        {
+          "step": 4,
+          "title": "Exploitation",
+          "description": "Attempt to exploit identified vulnerabilities to gain unauthorized access or escalate privileges. This step demonstrates the real-world impact of a vulnerability, proving its exploitability."
+        },
+        {
+          "step": 5,
+          "title": "Post-Exploitation & Reporting",
+          "description": "Document findings, assess impact, and provide detailed remediation recommendations. Our reports include clear steps to fix vulnerabilities and improve overall security."
+        },
+        {
+          "step": 6,
+          "title": "Remediation & Re-testing",
+          "description": "Assist clients in implementing fixes and conduct re-tests to verify that vulnerabilities have been successfully addressed. This ensures the security gaps are closed effectively."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the difference between vulnerability scanning and penetration testing?",
+          "answer": "Vulnerability scanning uses automated tools to identify known weaknesses, providing a broad overview. Penetration testing, however, involves ethical hackers manually exploiting vulnerabilities to simulate a real attack, demonstrating actual risk and impact. It's a deeper, more hands-on assessment."
+        },
+        {
+          "question": "How long does a typical penetration test take?",
+          "answer": "The duration varies significantly based on the scope and complexity of the systems being tested. A small web application might take 1-2 weeks, while a comprehensive network and cloud assessment could span 4-6 weeks. We provide a detailed timeline after the initial scoping."
+        },
+        {
+          "question": "Will penetration testing disrupt my operations?",
+          "answer": "Our goal is to minimize disruption. We work closely with your team to schedule tests during low-impact periods and use non-disruptive techniques where possible. Any potentially disruptive tests are pre-approved and carefully managed to avoid service interruptions."
+        },
+        {
+          "question": "What kind of report will I receive?",
+          "answer": "You will receive a comprehensive report detailing all identified vulnerabilities, their severity, potential impact, and clear, actionable remediation steps. The report also includes an executive summary for management and technical details for your IT team."
+        },
+        {
+          "question": "How often should we conduct penetration tests?",
+          "answer": "It's recommended to conduct penetration tests at least annually, or whenever significant changes are made to your infrastructure, applications, or compliance requirements. Regular testing ensures continuous security posture improvement and adaptation to new threats."
+        },
+        {
+          "question": "Do you offer re-testing after remediation?",
+          "answer": "Yes, re-testing is a crucial part of our service. Once you've implemented the recommended fixes, we conduct targeted re-tests to verify that the vulnerabilities have been successfully patched and no new issues were introduced. This ensures effective closure of security gaps."
+        },
+        {
+          "question": "What industries do you serve for penetration testing?",
+          "answer": "We serve a wide range of industries, including finance, healthcare, e-commerce, technology, and manufacturing. Our methodologies are adaptable to various regulatory environments and business needs, ensuring relevant and effective security assessments."
+        },
+        {
+          "question": "What happens if critical vulnerabilities are found?",
+          "answer": "If critical vulnerabilities are discovered, we immediately notify your team with urgent remediation advice. We then work collaboratively to prioritize fixes and provide guidance on implementing them swiftly to mitigate immediate risks."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Metasploit Framework",
+          "icon": "metasploit"
+        },
+        {
+          "name": "Cobalt Strike",
+          "icon": "cobaltstrike"
+        },
+        {
+          "name": "Kali Linux",
+          "icon": "kali-linux"
+        },
+        {
+          "name": "Burp Suite",
+          "icon": "burp-suite"
+        },
+        {
+          "name": "BloodHound",
+          "icon": "bloodhound"
+        },
+        {
+          "name": "Nuclei",
+          "icon": "nuclei"
+        },
+        {
+          "name": "Nmap",
+          "icon": "nmap"
+        },
+        {
+          "name": "OWASP ZAP",
+          "icon": "owasp-zap"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Sızma Testleri",
+    "shortDescription": "Kötü niyetli aktörler istismar etmeden önce sistemlerinizdeki, uygulamalarınızdaki ve ağlarınızdaki kritik güvenlik açıklarını proaktif olarak belirleyin ve giderin. Etik hackleme hizmetlerimiz dijital varlıklarınızı korur ve uyumluluğu sağlar.",
+    "fullDescription": "Kapsamlı sızma testi hizmetlerimiz, BT altyapınızdaki istismar edilebilir zayıflıkları ortaya çıkarmak için gerçek dünya siber saldırılarını simüle eder. Otomatik taramaların ötesine geçerek, web uygulamalarında, API'lerde, bulut ortamlarında ve dahili ağlarda karmaşık güvenlik açıklarını belirlemek için manuel teknikler ve uzman metodolojiler kullanırız. Bu proaktif yaklaşım, güvenlik duruşunuzu anlamanıza, düzeltme çabalarını önceliklendirmenize ve gelişmiş tehditlere karşı savunmaları güçlendirmenize yardımcı olarak iş sürekliliğini ve veri bütünlüğünü sağlar. Güvenlik ortamınızı güçlendirmek için eyleme geçirilebilir içgörüler sunuyoruz.",
+    "features": [
+      "Web Uygulaması Sızma Testi",
+      "API Güvenlik Testi",
+      "Ağ Sızma Testi (Dahili ve Harici)",
+      "Bulut Altyapısı Güvenlik Değerlendirmesi",
+      "Mobil Uygulama Sızma Testi",
+      "Kırmızı Takım Tatbikatları ve Saldırgan Simülasyonu",
+      "Sosyal Mühendislik ve Kimlik Avı Simülasyonları",
+      "Uyumluluk Odaklı Güvenlik Denetimleri"
+    ],
+    "benefits": [
+      "Proaktif Güvenlik Açığı Tespiti",
+      "Veri İhlali Riskini Azaltma",
+      "Gelişmiş Uyumluluk Sağlama",
+      "Geliştirilmiş Güvenlik Duruşu",
+      "Saldırıları Önleyerek Maliyet Tasarrufu",
+      "Eyleme Geçirilebilir İyileştirme Yol Haritaları"
+    ],
+    "metaTitle": "Sızma Testi Hizmetleri | PakSoft",
+    "metaDescription": "PakSoft'un uzman sızma testi hizmetleriyle kritik güvenlik açıklarını belirleyin ve giderin. Dijital varlıklarınızı koruyun. Güvenlik değerlendirmesi için bugün bize ulaşın.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Planlama ve Kapsam Belirleme",
+          "description": "Hedefleri, kapsamı ve katılım kurallarını tanımlayın. Bu, tüm tarafların sızma testinin sınırlarını ve amaçlarını anlamasını sağlar. Hedef sistemler, test metodolojileri ve raporlama gereksinimleri üzerinde mutabık kalırız."
+        },
+        {
+          "step": 2,
+          "title": "Bilgi Toplama",
+          "description": "Açık kaynak istihbaratı (OSINT) ve diğer keşif tekniklerini kullanarak hedef ortam hakkında bilgi toplayın. Bu aşama, saldırı yüzeyini ve potansiyel giriş noktalarını anlamaya yardımcı olur."
+        },
+        {
+          "step": 3,
+          "title": "Güvenlik Açığı Analizi",
+          "description": "Sistemlerde, uygulamalarda ve ağlarda potansiyel zayıflıkları ve yanlış yapılandırmaları belirleyin. Güvenlik açıklarını tespit etmek için otomatik araçlar ve manuel analizi bir arada kullanırız."
+        },
+        {
+          "step": 4,
+          "title": "İstismar",
+          "description": "Yetkisiz erişim elde etmek veya ayrıcalıkları yükseltmek için belirlenen güvenlik açıklarını istismar etmeye çalışın. Bu adım, bir güvenlik açığının gerçek dünya etkisini gösterir ve istismar edilebilirliğini kanıtlar."
+        },
+        {
+          "step": 5,
+          "title": "İstismar Sonrası ve Raporlama",
+          "description": "Bulguları belgeleyin, etkiyi değerlendirin ve ayrıntılı düzeltme önerileri sunun. Raporlarımız, güvenlik açıklarını düzeltmek ve genel güvenliği iyileştirmek için net adımlar içerir."
+        },
+        {
+          "step": 6,
+          "title": "Düzeltme ve Yeniden Test",
+          "description": "Müşterilere düzeltmeleri uygulamalarında yardımcı olun ve güvenlik açıklarının başarıyla giderildiğini doğrulamak için yeniden testler yapın. Bu, güvenlik boşluklarının etkili bir şekilde kapatılmasını sağlar."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Güvenlik açığı taraması ile sızma testi arasındaki fark nedir?",
+          "answer": "Güvenlik açığı taraması, bilinen zayıflıkları belirlemek için otomatik araçlar kullanır ve genel bir bakış sunar. Sızma testi ise etik hackerların güvenlik açıklarını manuel olarak istismar ederek gerçek bir saldırıyı simüle etmesini içerir, bu da gerçek riski ve etkiyi gösterir. Daha derinlemesine, uygulamalı bir değerlendirmedir."
+        },
+        {
+          "question": "Tipik bir sızma testi ne kadar sürer?",
+          "answer": "Süre, test edilen sistemlerin kapsamına ve karmaşıklığına göre önemli ölçüde değişir. Küçük bir web uygulaması 1-2 hafta sürebilirken, kapsamlı bir ağ ve bulut değerlendirmesi 4-6 hafta sürebilir. İlk kapsam belirlemeden sonra ayrıntılı bir zaman çizelgesi sunarız."
+        },
+        {
+          "question": "Sızma testi operasyonlarımı aksatır mı?",
+          "answer": "Amacımız aksaklığı en aza indirmektir. Düşük etkili dönemlerde testleri planlamak ve mümkün olduğunca kesintiye neden olmayan teknikler kullanmak için ekibinizle yakın çalışırız. Potansiyel olarak aksatıcı testler önceden onaylanır ve hizmet kesintilerini önlemek için dikkatlice yönetilir."
+        },
+        {
+          "question": "Ne tür bir rapor alacağım?",
+          "answer": "Tespit edilen tüm güvenlik açıklarını, ciddiyetlerini, potansiyel etkilerini ve açık, eyleme geçirilebilir düzeltme adımlarını detaylandıran kapsamlı bir rapor alacaksınız. Rapor ayrıca yönetim için bir yönetici özeti ve BT ekibiniz için teknik detaylar içerir."
+        },
+        {
+          "question": "Sızma testlerini ne sıklıkla yapmalıyız?",
+          "answer": "Sızma testlerinin en az yılda bir kez veya altyapınızda, uygulamalarınızda veya uyumluluk gereksinimlerinizde önemli değişiklikler yapıldığında yapılması önerilir. Düzenli testler, sürekli güvenlik duruşu iyileştirmesi ve yeni tehditlere uyum sağlamayı garanti eder."
+        },
+        {
+          "question": "Düzeltme sonrası yeniden test hizmeti sunuyor musunuz?",
+          "answer": "Evet, yeniden test hizmetimizin önemli bir parçasıdır. Önerilen düzeltmeleri uyguladıktan sonra, güvenlik açıklarının başarıyla yamalandığını ve yeni sorunların ortaya çıkmadığını doğrulamak için hedeflenen yeniden testler yaparız. Bu, güvenlik boşluklarının etkili bir şekilde kapatılmasını sağlar."
+        },
+        {
+          "question": "Hangi sektörlere sızma testi hizmeti veriyorsunuz?",
+          "answer": "Finans, sağlık, e-ticaret, teknoloji ve üretim dahil olmak üzere geniş bir sektör yelpazesine hizmet veriyoruz. Metodolojilerimiz çeşitli düzenleyici ortamlara ve iş ihtiyaçlarına uyarlanabilir, ilgili ve etkili güvenlik değerlendirmeleri sağlar."
+        },
+        {
+          "question": "Kritik güvenlik açıkları bulunursa ne olur?",
+          "answer": "Kritik güvenlik açıkları tespit edilirse, ekibinizi acil düzeltme tavsiyesiyle derhal bilgilendiririz. Daha sonra, acil riskleri azaltmak için düzeltmeleri önceliklendirmek ve bunları hızla uygulamak için rehberlik sağlamak üzere işbirliği yaparız."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Metasploit Framework",
+          "icon": "metasploit"
+        },
+        {
+          "name": "Cobalt Strike",
+          "icon": "cobaltstrike"
+        },
+        {
+          "name": "Kali Linux",
+          "icon": "kali-linux"
+        },
+        {
+          "name": "Burp Suite",
+          "icon": "burp-suite"
+        },
+        {
+          "name": "BloodHound",
+          "icon": "bloodhound"
+        },
+        {
+          "name": "Nuclei",
+          "icon": "nuclei"
+        },
+        {
+          "name": "Nmap",
+          "icon": "nmap"
+        },
+        {
+          "name": "OWASP ZAP",
+          "icon": "owasp-zap"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Penetrationstests",
+    "shortDescription": "Identifizieren und beheben Sie proaktiv kritische Sicherheitslücken in Ihren Systemen, Anwendungen und Netzwerken, bevor böswillige Akteure sie ausnutzen können. Unsere ethischen Hacking-Dienste schützen Ihre digitalen Assets und gewährleisten die Compliance.",
+    "fullDescription": "Unsere umfassenden Penetrationstests simulieren reale Cyberangriffe, um ausnutzbare Schwachstellen in Ihrer gesamten IT-Infrastruktur aufzudecken. Wir gehen über automatisierte Scans hinaus und setzen manuelle Techniken und Expertenmethoden ein, um komplexe Schwachstellen in Webanwendungen, APIs, Cloud-Umgebungen und internen Netzwerken zu identifizieren. Dieser proaktive Ansatz hilft Ihnen, Ihre Sicherheitslage zu verstehen, Behebungsmaßnahmen zu priorisieren und die Abwehrmaßnahmen gegen ausgeklügelte Bedrohungen zu stärken, wodurch Geschäftskontinuität und Datenintegrität gewährleistet werden. Wir liefern umsetzbare Erkenntnisse zur Stärkung Ihrer Sicherheitslandschaft.",
+    "features": [
+      "Webanwendungs-Penetrationstests",
+      "API-Sicherheitstests",
+      "Netzwerk-Penetrationstests (Intern & Extern)",
+      "Cloud-Infrastruktur-Sicherheitsbewertung",
+      "Mobile App-Penetrationstests",
+      "Red Team Übungen & Angreifer-Simulation",
+      "Social Engineering & Phishing-Simulationen",
+      "Compliance-gesteuerte Sicherheitsaudits"
+    ],
+    "benefits": [
+      "Proaktive Schwachstellenidentifikation",
+      "Reduziertes Risiko von Datenlecks",
+      "Verbesserte Compliance-Einhaltung",
+      "Gestärkte Sicherheitslage",
+      "Kosteneinsparungen durch Angriffsprävention",
+      "Umsetzbare Sanierungsfahrpläne"
+    ],
+    "metaTitle": "Penetrationstests | PakSoft",
+    "metaDescription": "Identifizieren und beheben Sie kritische Sicherheitslücken mit den Penetrationstests von PakSoft. Schützen Sie Ihre digitalen Assets. Kontaktieren Sie uns noch heute für eine Sicherheitsbewertung.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Planung & Scoping",
+          "description": "Definieren Sie Ziele, Umfang und Regeln des Engagements. Dies stellt sicher, dass alle Parteien die Grenzen und Ziele des Penetrationstests verstehen. Wir stimmen uns über Zielsysteme, Testmethoden und Berichtsanforderungen ab."
+        },
+        {
+          "step": 2,
+          "title": "Informationsbeschaffung",
+          "description": "Sammeln Sie Informationen über die Zielumgebung mithilfe von Open-Source-Intelligence (OSINT) und anderen Aufklärungstechniken. Diese Phase hilft, die Angriffsfläche und potenzielle Einstiegspunkte zu verstehen."
+        },
+        {
+          "step": 3,
+          "title": "Schwachstellenanalyse",
+          "description": "Identifizieren Sie potenzielle Schwachstellen und Fehlkonfigurationen in Systemen, Anwendungen und Netzwerken. Wir verwenden eine Kombination aus automatisierten Tools und manueller Analyse, um Schwachstellen zu lokalisieren."
+        },
+        {
+          "step": 4,
+          "title": "Ausnutzung",
+          "description": "Versuchen Sie, identifizierte Schwachstellen auszunutzen, um unbefugten Zugriff zu erlangen oder Privilegien zu eskalieren. Dieser Schritt demonstriert die reale Auswirkung einer Schwachstelle und beweist deren Ausnutzbarkeit."
+        },
+        {
+          "step": 5,
+          "title": "Nachbereitung & Berichterstattung",
+          "description": "Dokumentieren Sie die Ergebnisse, bewerten Sie die Auswirkungen und geben Sie detaillierte Empfehlungen zur Behebung. Unsere Berichte enthalten klare Schritte zur Behebung von Schwachstellen und zur Verbesserung der Gesamtsicherheit."
+        },
+        {
+          "step": 6,
+          "title": "Behebung & Nachtests",
+          "description": "Unterstützen Sie Kunden bei der Implementierung von Korrekturen und führen Sie Nachtests durch, um zu überprüfen, ob Schwachstellen erfolgreich behoben wurden. Dies stellt sicher, dass die Sicherheitslücken effektiv geschlossen werden."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist der Unterschied zwischen Schwachstellen-Scans und Penetrationstests?",
+          "answer": "Schwachstellen-Scans verwenden automatisierte Tools, um bekannte Schwachstellen zu identifizieren und einen breiten Überblick zu geben. Penetrationstests hingegen beinhalten, dass ethische Hacker Schwachstellen manuell ausnutzen, um einen echten Angriff zu simulieren, wodurch das tatsächliche Risiko und die Auswirkungen demonstriert werden. Es ist eine tiefere, praxisorientiertere Bewertung."
+        },
+        {
+          "question": "Wie lange dauert ein typischer Penetrationstest?",
+          "answer": "Die Dauer variiert erheblich je nach Umfang und Komplexität der zu testenden Systeme. Eine kleine Webanwendung kann 1-2 Wochen dauern, während eine umfassende Netzwerk- und Cloud-Bewertung 4-6 Wochen in Anspruch nehmen kann. Nach der ersten Scoping-Phase erstellen wir einen detaillierten Zeitplan."
+        },
+        {
+          "question": "Werden Penetrationstests meinen Betrieb stören?",
+          "answer": "Unser Ziel ist es, Störungen zu minimieren. Wir arbeiten eng mit Ihrem Team zusammen, um Tests in Zeiten geringer Auslastung zu planen und, wo immer möglich, nicht-störende Techniken einzusetzen. Potenziell störende Tests werden vorab genehmigt und sorgfältig verwaltet, um Dienstunterbrechungen zu vermeiden."
+        },
+        {
+          "question": "Welche Art von Bericht erhalte ich?",
+          "answer": "Sie erhalten einen umfassenden Bericht, der alle identifizierten Schwachstellen, deren Schweregrad, potenzielle Auswirkungen und klare, umsetzbare Schritte zur Behebung detailliert beschreibt. Der Bericht enthält auch eine Zusammenfassung für das Management und technische Details für Ihr IT-Team."
+        },
+        {
+          "question": "Wie oft sollten wir Penetrationstests durchführen?",
+          "answer": "Es wird empfohlen, Penetrationstests mindestens jährlich oder immer dann durchzuführen, wenn wesentliche Änderungen an Ihrer Infrastruktur, Anwendungen oder Compliance-Anforderungen vorgenommen werden. Regelmäßige Tests gewährleisten eine kontinuierliche Verbesserung der Sicherheitslage und die Anpassung an neue Bedrohungen."
+        },
+        {
+          "question": "Bieten Sie Nachtests nach der Behebung an?",
+          "answer": "Ja, Nachtests sind ein entscheidender Bestandteil unseres Services. Sobald Sie die empfohlenen Korrekturen implementiert haben, führen wir gezielte Nachtests durch, um zu überprüfen, ob die Schwachstellen erfolgreich behoben wurden und keine neuen Probleme eingeführt wurden. Dies gewährleistet ein effektives Schließen von Sicherheitslücken."
+        },
+        {
+          "question": "Welche Branchen bedienen Sie für Penetrationstests?",
+          "answer": "Wir bedienen eine Vielzahl von Branchen, darunter Finanzen, Gesundheitswesen, E-Commerce, Technologie und Fertigung. Unsere Methoden sind an verschiedene regulatorische Umgebungen und Geschäftsanforderungen anpassbar und gewährleisten relevante und effektive Sicherheitsbewertungen."
+        },
+        {
+          "question": "Was passiert, wenn kritische Schwachstellen gefunden werden?",
+          "answer": "Wenn kritische Schwachstellen entdeckt werden, benachrichtigen wir Ihr Team sofort mit dringenden Empfehlungen zur Behebung. Wir arbeiten dann gemeinsam daran, die Korrekturen zu priorisieren und Anleitungen zur schnellen Implementierung zu geben, um unmittelbare Risiken zu mindern."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Metasploit Framework",
+          "icon": "metasploit"
+        },
+        {
+          "name": "Cobalt Strike",
+          "icon": "cobaltstrike"
+        },
+        {
+          "name": "Kali Linux",
+          "icon": "kali-linux"
+        },
+        {
+          "name": "Burp Suite",
+          "icon": "burp-suite"
+        },
+        {
+          "name": "BloodHound",
+          "icon": "bloodhound"
+        },
+        {
+          "name": "Nuclei",
+          "icon": "nuclei"
+        },
+        {
+          "name": "Nmap",
+          "icon": "nmap"
+        },
+        {
+          "name": "OWASP ZAP",
+          "icon": "owasp-zap"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "پینیٹریشن ٹیسٹنگ",
+    "shortDescription": "بدنیتی پر مبنی حملہ آوروں کے استحصال سے پہلے اپنے سسٹمز، ایپلیکیشنز اور نیٹ ورکس میں موجود اہم سیکیورٹی خامیوں کی فعال طور پر شناخت اور ان کا ازالہ کریں۔ ہماری اخلاقی ہیکنگ خدمات آپ کے ڈیجیٹل اثاثوں کی حفاظت کرتی ہیں اور تعمیل کو یقینی بناتی ہیں۔",
+    "fullDescription": "ہماری جامع پینیٹریشن ٹیسٹنگ خدمات آپ کے آئی ٹی انفراسٹرکچر میں قابل استحصال کمزوریوں کو بے نقاب کرنے کے لیے حقیقی دنیا کے سائبر حملوں کی نقل کرتی ہیں۔ ہم خودکار اسکینز سے آگے بڑھ کر، ویب ایپلیکیشنز، APIs، کلاؤڈ ماحول اور اندرونی نیٹ ورکس میں پیچیدہ خامیوں کی نشاندہی کرنے کے لیے دستی تکنیکوں اور ماہر طریقہ کار کو استعمال کرتے ہیں۔ یہ فعال نقطہ نظر آپ کو اپنی سیکیورٹی کی صورتحال کو سمجھنے، ازالے کی کوششوں کو ترجیح دینے، اور جدید خطرات کے خلاف دفاع کو مضبوط بنانے میں مدد کرتا ہے، جس سے کاروبار کی تسلسل اور ڈیٹا کی سالمیت یقینی ہوتی ہے۔ ہم آپ کے سیکیورٹی منظر نامے کو مضبوط بنانے کے لیے قابل عمل بصیرت فراہم کرتے ہیں۔",
+    "features": [
+      "ویب ایپلیکیشن پینیٹریشن ٹیسٹنگ",
+      "API سیکیورٹی ٹیسٹنگ",
+      "نیٹ ورک پینیٹریشن ٹیسٹنگ (اندرونی اور بیرونی)",
+      "کلاؤڈ انفراسٹرکچر سیکیورٹی اسیسمنٹ",
+      "موبائل ایپلیکیشن پینیٹریشن ٹیسٹنگ",
+      "ریڈ ٹیم ایکسرسائزز اور حملہ آور کی نقل",
+      "سوشل انجینئرنگ اور فشنگ سمولیشنز",
+      "تعمیل پر مبنی سیکیورٹی آڈٹ"
+    ],
+    "benefits": [
+      "فعال خامیوں کی شناخت",
+      "ڈیٹا کی خلاف ورزی کے خطرے میں کمی",
+      "بہتر تعمیل کی پابندی",
+      "بہتر سیکیورٹی پوزیشن",
+      "حملوں کی روک تھام سے لاگت کی بچت",
+      "قابل عمل ازالے کے روڈ میپس"
+    ],
+    "metaTitle": "پینیٹریشن ٹیسٹنگ سروسز | PakSoft",
+    "metaDescription": "پاک سوفٹ کی ماہر پینیٹریشن ٹیسٹنگ خدمات کے ساتھ اہم سیکیورٹی خامیوں کی شناخت اور ان کا ازالہ کریں۔ اپنے ڈیجیٹل اثاثوں کی حفاظت کریں۔ آج ہی سیکیورٹی اسیسمنٹ کے لیے ہم سے رابطہ کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "منصوبہ بندی اور دائرہ کار کا تعین",
+          "description": "اہداف، دائرہ کار اور مشغولیت کے قواعد کی وضاحت کریں۔ یہ یقینی بناتا ہے کہ تمام فریق پینیٹریشن ٹیسٹ کی حدود اور اہداف کو سمجھتے ہیں۔ ہم ہدف کے نظاموں، جانچ کے طریقہ کار اور رپورٹنگ کی ضروریات پر اتفاق کرتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "معلومات جمع کرنا",
+          "description": "اوپن سورس انٹیلی جنس (OSINT) اور دیگر جاسوسی تکنیکوں کا استعمال کرتے ہوئے ہدف کے ماحول کے بارے میں معلومات جمع کریں۔ یہ مرحلہ حملے کی سطح اور ممکنہ داخلے کے مقامات کو سمجھنے میں مدد کرتا ہے۔"
+        },
+        {
+          "step": 3,
+          "title": "خامیوں کا تجزیہ",
+          "description": "سسٹمز، ایپلیکیشنز اور نیٹ ورکس میں ممکنہ کمزوریوں اور غلط کنفیگریشنز کی نشاندہی کریں۔ ہم خامیوں کا پتہ لگانے کے لیے خودکار ٹولز اور دستی تجزیہ کا مجموعہ استعمال کرتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "استحصال",
+          "description": "غیر مجاز رسائی حاصل کرنے یا مراعات کو بڑھانے کے لیے شناخت شدہ خامیوں کا استحصال کرنے کی کوشش کریں۔ یہ قدم کسی خامی کے حقیقی دنیا کے اثرات کو ظاہر کرتا ہے، اس کے استحصال کی صلاحیت کو ثابت کرتا ہے۔"
+        },
+        {
+          "step": 5,
+          "title": "استحصال کے بعد اور رپورٹنگ",
+          "description": "نتائج کو دستاویز کریں، اثرات کا اندازہ لگائیں، اور تفصیلی ازالے کی سفارشات فراہم کریں۔ ہماری رپورٹس میں خامیوں کو ٹھیک کرنے اور مجموعی سیکیورٹی کو بہتر بنانے کے لیے واضح اقدامات شامل ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "ازالہ اور دوبارہ جانچ",
+          "description": "کلائنٹس کو فکسز کو لاگو کرنے میں مدد کریں اور یہ تصدیق کرنے کے لیے دوبارہ ٹیسٹ کریں کہ خامیوں کو کامیابی سے حل کر دیا گیا ہے۔ یہ یقینی بناتا ہے کہ سیکیورٹی کے خلا کو مؤثر طریقے سے بند کر دیا گیا ہے۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "خامیوں کی اسکیننگ اور پینیٹریشن ٹیسٹنگ میں کیا فرق ہے؟",
+          "answer": "خامیوں کی اسکیننگ معلوم کمزوریوں کی نشاندہی کرنے کے لیے خودکار ٹولز کا استعمال کرتی ہے، جو ایک وسیع جائزہ فراہم کرتی ہے۔ پینیٹریشن ٹیسٹنگ میں، تاہم، اخلاقی ہیکرز خامیوں کا دستی طور پر استحصال کرتے ہیں تاکہ حقیقی حملے کی نقل کی جا سکے، جس سے حقیقی خطرہ اور اثر ظاہر ہوتا ہے۔ یہ ایک گہرا، زیادہ عملی جائزہ ہے۔"
+        },
+        {
+          "question": "ایک عام پینیٹریشن ٹیسٹ میں کتنا وقت لگتا ہے؟",
+          "answer": "مدت جانچ کیے جانے والے سسٹمز کے دائرہ کار اور پیچیدگی کے لحاظ سے نمایاں طور پر مختلف ہوتی ہے۔ ایک چھوٹی ویب ایپلیکیشن میں 1-2 ہفتے لگ سکتے ہیں، جبکہ ایک جامع نیٹ ورک اور کلاؤڈ اسیسمنٹ میں 4-6 ہفتے لگ سکتے ہیں۔ ہم ابتدائی دائرہ کار کے بعد ایک تفصیلی ٹائم لائن فراہم کرتے ہیں۔"
+        },
+        {
+          "question": "کیا پینیٹریشن ٹیسٹنگ میرے آپریشنز میں خلل ڈالے گی؟",
+          "answer": "ہمارا مقصد خلل کو کم سے کم کرنا ہے۔ ہم آپ کی ٹیم کے ساتھ مل کر کام کرتے ہیں تاکہ کم اثر والے ادوار کے دوران ٹیسٹ کا شیڈول بنایا جا سکے اور جہاں ممکن ہو، غیر خلل ڈالنے والی تکنیکوں کا استعمال کیا جا سکے۔ کسی بھی ممکنہ طور پر خلل ڈالنے والے ٹیسٹ کو پہلے سے منظور کیا جاتا ہے اور سروس میں رکاوٹوں سے بچنے کے لیے احتیاط سے منظم کیا جاتا ہے۔"
+        },
+        {
+          "question": "مجھے کس قسم کی رپورٹ ملے گی؟",
+          "answer": "آپ کو ایک جامع رپورٹ ملے گی جس میں تمام شناخت شدہ خامیوں، ان کی شدت، ممکنہ اثرات، اور واضح، قابل عمل ازالے کے اقدامات کی تفصیل ہوگی۔ رپورٹ میں انتظامیہ کے لیے ایک ایگزیکٹو سمری اور آپ کی آئی ٹی ٹیم کے لیے تکنیکی تفصیلات بھی شامل ہیں۔"
+        },
+        {
+          "question": "ہمیں کتنی بار پینیٹریشن ٹیسٹ کرانے چاہئیں؟",
+          "answer": "پینیٹریشن ٹیسٹ کم از کم سالانہ، یا جب بھی آپ کے انفراسٹرکچر، ایپلیکیشنز، یا تعمیل کی ضروریات میں اہم تبدیلیاں کی جائیں، کرانے کی سفارش کی جاتی ہے۔ باقاعدہ جانچ مسلسل سیکیورٹی پوزیشن میں بہتری اور نئے خطرات کے مطابق ڈھالنے کو یقینی بناتی ہے۔"
+        },
+        {
+          "question": "کیا آپ ازالے کے بعد دوبارہ جانچ کی پیشکش کرتے ہیں؟",
+          "answer": "جی ہاں، دوبارہ جانچ ہماری خدمت کا ایک اہم حصہ ہے۔ ایک بار جب آپ تجویز کردہ فکسز کو لاگو کر لیتے ہیں، تو ہم یہ تصدیق کرنے کے لیے ہدف شدہ دوبارہ ٹیسٹ کرتے ہیں کہ خامیوں کو کامیابی سے پیچ کر دیا گیا ہے اور کوئی نئے مسائل متعارف نہیں ہوئے ہیں۔ یہ سیکیورٹی کے خلا کو مؤثر طریقے سے بند کرنے کو یقینی بناتا ہے۔"
+        },
+        {
+          "question": "آپ پینیٹریشن ٹیسٹنگ کے لیے کن صنعتوں کی خدمت کرتے ہیں؟",
+          "answer": "ہم مالیات، صحت کی دیکھ بھال، ای کامرس، ٹیکنالوجی، اور مینوفیکچرنگ سمیت صنعتوں کی ایک وسیع رینج کی خدمت کرتے ہیں۔ ہمارے طریقہ کار مختلف ریگولیٹری ماحول اور کاروباری ضروریات کے مطابق ڈھالنے کے قابل ہیں، جو متعلقہ اور مؤثر سیکیورٹی اسیسمنٹس کو یقینی بناتے ہیں۔"
+        },
+        {
+          "question": "اگر اہم خامیوں کا پتہ چل جائے تو کیا ہوتا ہے؟",
+          "answer": "اگر اہم خامیوں کا پتہ چلتا ہے، تو ہم فوری ازالے کے مشورے کے ساتھ فوری طور پر آپ کی ٹیم کو مطلع کرتے ہیں۔ پھر ہم فوری خطرات کو کم کرنے کے لیے فکسز کو ترجیح دینے اور انہیں تیزی سے لاگو کرنے کے بارے میں رہنمائی فراہم کرنے کے لیے باہمی تعاون سے کام کرتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Metasploit Framework",
+          "icon": "metasploit"
+        },
+        {
+          "name": "Cobalt Strike",
+          "icon": "cobaltstrike"
+        },
+        {
+          "name": "Kali Linux",
+          "icon": "kali-linux"
+        },
+        {
+          "name": "Burp Suite",
+          "icon": "burp-suite"
+        },
+        {
+          "name": "BloodHound",
+          "icon": "bloodhound"
+        },
+        {
+          "name": "Nuclei",
+          "icon": "nuclei"
+        },
+        {
+          "name": "Nmap",
+          "icon": "nmap"
+        },
+        {
+          "name": "OWASP ZAP",
+          "icon": "owasp-zap"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "اختبار الاختراق",
+    "shortDescription": "حدد بشكل استباقي نقاط الضعف الأمنية الحرجة في أنظمتك وتطبيقاتك وشبكاتك وقم بمعالجتها قبل أن يتمكن المهاجمون الخبثاء من استغلالها. خدماتنا في القرصنة الأخلاقية تحمي أصولك الرقمية وتضمن الامتثال.",
+    "fullDescription": "تحاكي خدمات اختبار الاختراق الشاملة لدينا هجمات إلكترونية حقيقية للكشف عن نقاط الضعف القابلة للاستغلال عبر البنية التحتية لتكنولوجيا المعلومات الخاصة بك. نتجاوز عمليات الفحص الآلي، ونستخدم تقنيات يدوية ومنهجيات خبراء لتحديد نقاط الضعف المعقدة في تطبيقات الويب، وواجهات برمجة التطبيقات (APIs)، وبيئات السحابة، والشبكات الداخلية. يساعد هذا النهج الاستباقي على فهم وضعك الأمني، وتحديد أولويات جهود المعالجة، وتعزيز الدفاعات ضد التهديدات المتطورة، مما يضمن استمرارية الأعمال وسلامة البيانات. نقدم رؤى قابلة للتنفيذ لتعزيز مشهدك الأمني.",
+    "features": [
+      "اختبار اختراق تطبيقات الويب",
+      "اختبار أمان واجهات برمجة التطبيقات (API)",
+      "اختبار اختراق الشبكات (الداخلية والخارجية)",
+      "تقييم أمان البنية التحتية السحابية",
+      "اختبار اختراق تطبيقات الجوال",
+      "تمارين الفريق الأحمر ومحاكاة الخصوم",
+      "الهندسة الاجتماعية ومحاكاة التصيد الاحتيالي",
+      "تدقيقات أمنية مدفوعة بالامتثال"
+    ],
+    "benefits": [
+      "تحديد نقاط الضعف بشكل استباقي",
+      "تقليل مخاطر خروقات البيانات",
+      "تعزيز الالتزام بالامتثال",
+      "تحسين الوضع الأمني",
+      "توفير التكاليف من خلال منع الهجمات",
+      "خرائط طريق قابلة للتنفيذ للمعالجة"
+    ],
+    "metaTitle": "خدمات اختبار الاختراق | PakSoft",
+    "metaDescription": "حدد وأصلح نقاط الضعف الأمنية الحرجة باستخدام خدمات اختبار الاختراق المتخصصة من PakSoft. احمِ أصولك الرقمية. اتصل بنا لتقييم أمني اليوم.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "التخطيط وتحديد النطاق",
+          "description": "تحديد الأهداف والنطاق وقواعد الاشتباك. يضمن ذلك فهم جميع الأطراف لحدود وأهداف اختبار الاختراق. نتفق على الأنظمة المستهدفة ومنهجيات الاختبار ومتطلبات إعداد التقارير."
+        },
+        {
+          "step": 2,
+          "title": "جمع المعلومات",
+          "description": "جمع المعلومات الاستخباراتية حول البيئة المستهدفة باستخدام استخبارات المصادر المفتوحة (OSINT) وتقنيات الاستطلاع الأخرى. تساعد هذه المرحلة في فهم سطح الهجوم ونقاط الدخول المحتملة."
+        },
+        {
+          "step": 3,
+          "title": "تحليل نقاط الضعف",
+          "description": "تحديد نقاط الضعف المحتملة والتكوينات الخاطئة في الأنظمة والتطبيقات والشبكات. نستخدم مزيجًا من الأدوات الآلية والتحليل اليدوي لتحديد نقاط الضعف بدقة."
+        },
+        {
+          "step": 4,
+          "title": "الاستغلال",
+          "description": "محاولة استغلال نقاط الضعف المحددة للحصول على وصول غير مصرح به أو تصعيد الامتيازات. توضح هذه الخطوة التأثير الحقيقي لنقطة الضعف، مما يثبت قابليتها للاستغلال."
+        },
+        {
+          "step": 5,
+          "title": "ما بعد الاستغلال وإعداد التقارير",
+          "description": "توثيق النتائج، وتقييم التأثير، وتقديم توصيات مفصلة للمعالجة. تتضمن تقاريرنا خطوات واضحة لإصلاح نقاط الضعف وتحسين الأمان العام."
+        },
+        {
+          "step": 6,
+          "title": "المعالجة وإعادة الاختبار",
+          "description": "مساعدة العملاء في تنفيذ الإصلاحات وإجراء اختبارات إعادة للتحقق من معالجة نقاط الضعف بنجاح. يضمن ذلك إغلاق الثغرات الأمنية بفعالية."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما الفرق بين فحص الثغرات واختبار الاختراق؟",
+          "answer": "يستخدم فحص الثغرات أدوات آلية لتحديد نقاط الضعف المعروفة، مما يوفر نظرة عامة واسعة. أما اختبار الاختراق، فيتضمن قيام قراصنة أخلاقيين باستغلال الثغرات يدويًا لمحاكاة هجوم حقيقي، مما يوضح المخاطر والتأثير الفعلي. إنه تقييم أعمق وأكثر عملية."
+        },
+        {
+          "question": "كم يستغرق اختبار الاختراق النموذجي؟",
+          "answer": "تختلف المدة بشكل كبير بناءً على نطاق وتعقيد الأنظمة التي يتم اختبارها. قد يستغرق تطبيق ويب صغير من أسبوع إلى أسبوعين، بينما قد يستغرق تقييم شامل للشبكة والسحابة من 4 إلى 6 أسابيع. نقدم جدولًا زمنيًا مفصلاً بعد تحديد النطاق الأولي."
+        },
+        {
+          "question": "هل سيعطل اختبار الاختراق عملياتي؟",
+          "answer": "هدفنا هو تقليل التعطيل. نعمل عن كثب مع فريقك لجدولة الاختبارات خلال فترات التأثير المنخفض ونستخدم تقنيات غير معطلة حيثما أمكن ذلك. يتم الموافقة المسبقة على أي اختبارات قد تكون معطلة وإدارتها بعناية لتجنب انقطاع الخدمة."
+        },
+        {
+          "question": "ما نوع التقرير الذي سأستلمه؟",
+          "answer": "ستتلقى تقريرًا شاملاً يوضح بالتفصيل جميع نقاط الضعف المحددة، وشدتها، وتأثيرها المحتمل، وخطوات المعالجة الواضحة والقابلة للتنفيذ. يتضمن التقرير أيضًا ملخصًا تنفيذيًا للإدارة وتفاصيل فنية لفريق تكنولوجيا المعلومات الخاص بك."
+        },
+        {
+          "question": "كم مرة يجب علينا إجراء اختبارات الاختراق؟",
+          "answer": "يوصى بإجراء اختبارات الاختراق سنويًا على الأقل، أو كلما تم إجراء تغييرات كبيرة على البنية التحتية أو التطبيقات أو متطلبات الامتثال الخاصة بك. يضمن الاختبار المنتظم التحسين المستمر للوضع الأمني والتكيف مع التهديدات الجديدة."
+        },
+        {
+          "question": "هل تقدمون إعادة اختبار بعد المعالجة؟",
+          "answer": "نعم، إعادة الاختبار جزء أساسي من خدمتنا. بمجرد تنفيذ الإصلاحات الموصى بها، نجري اختبارات إعادة مستهدفة للتحقق من أنه تم تصحيح نقاط الضعف بنجاح ولم يتم إدخال أي مشكلات جديدة. يضمن ذلك إغلاق الثغرات الأمنية بفعالية."
+        },
+        {
+          "question": "ما هي الصناعات التي تخدمونها لاختبار الاختراق؟",
+          "answer": "نحن نخدم مجموعة واسعة من الصناعات، بما في ذلك التمويل والرعاية الصحية والتجارة الإلكترونية والتكنولوجيا والتصنيع. منهجياتنا قابلة للتكيف مع مختلف البيئات التنظيمية واحتياجات العمل، مما يضمن تقييمات أمنية ذات صلة وفعالة."
+        },
+        {
+          "question": "ماذا يحدث إذا تم العثور على نقاط ضعف حرجة؟",
+          "answer": "إذا تم اكتشاف نقاط ضعف حرجة، فإننا نبلغ فريقك على الفور بنصائح عاجلة للمعالجة. ثم نعمل بشكل تعاوني لتحديد أولويات الإصلاحات وتقديم إرشادات حول تنفيذها بسرعة للتخفيف من المخاطر الفورية."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Metasploit Framework",
+          "icon": "metasploit"
+        },
+        {
+          "name": "Cobalt Strike",
+          "icon": "cobaltstrike"
+        },
+        {
+          "name": "Kali Linux",
+          "icon": "kali-linux"
+        },
+        {
+          "name": "Burp Suite",
+          "icon": "burp-suite"
+        },
+        {
+          "name": "BloodHound",
+          "icon": "bloodhound"
+        },
+        {
+          "name": "Nuclei",
+          "icon": "nuclei"
+        },
+        {
+          "name": "Nmap",
+          "icon": "nmap"
+        },
+        {
+          "name": "OWASP ZAP",
+          "icon": "owasp-zap"
+        }
+      ]
+    }
+  }
+}

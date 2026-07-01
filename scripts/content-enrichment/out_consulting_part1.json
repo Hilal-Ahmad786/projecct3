@@ -1,0 +1,1533 @@
+{
+  "architecture-design": {
+    "en": {
+      "name": "Architecture Design",
+      "shortDescription": "Design highly scalable, secure, and fault-tolerant system architectures tailored to your business needs. We build modern, cloud-native frameworks using industry best practices and microservices patterns.",
+      "fullDescription": "Growing businesses often suffer from slow application performance and system downtime due to poorly designed architectures. Our expert Architecture Design services build high-performance, cost-effective, and secure software backbones for your applications. Utilizing advanced microservices patterns, serverless paradigms, and container orchestration with Docker and Kubernetes, we design system architectures that scale automatically. We map complete data flows, select appropriate SQL and NoSQL databases, and configure caching layers with Redis to minimize database stress. Whether you are launching a new startup MVP or refactoring a complex enterprise database system, we deliver detailed blueprinted architectures that support millions of active users without bottlenecks.",
+      "features": [
+        "Microservices and Serverless Architecture Design",
+        "High-Availability Cloud Infrastructure Planning",
+        "Distributed Caching Layers and Redis Setup",
+        "Multi-Region Cloud Deployment Blueprints",
+        "Container Orchestration with Docker and Kubernetes",
+        "Automated Failover and Disaster Recovery Mapping",
+        "Secure API Gateway and Event-Driven Routing",
+        "Comprehensive Data Flow Diagrams and Documentation"
+      ],
+      "benefits": [
+        "Achieve high system availability and eliminate downtime",
+        "Reduce cloud hosting costs by up to forty percent",
+        "Improve API response times with optimized caching",
+        "Scale applications seamlessly from zero to millions of users",
+        "Prevent vendor lock-in with cloud-agnostic modular blueprints",
+        "Establish clear security boundaries across all software microservices"
+      ],
+      "metaTitle": "Architecture Design & System Planning | PakSoft",
+      "metaDescription": "Design scalable, high-performance system architectures. We plan cloud-native microservices layouts with Kubernetes and Redis caching. Contact us.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Discovery & Requirements Gathering",
+            "description": "We analyze your business objectives, target user traffic, and current system pain points. This helps us define performance budgets and system scaling targets."
+          },
+          {
+            "step": 2,
+            "title": "Data Modeling & Database Design",
+            "description": "We map entity relations and select appropriate databases like PostgreSQL or MongoDB. This ensures efficient query execution and data consistency across modules."
+          },
+          {
+            "step": 3,
+            "title": "Microservices & API Layout",
+            "description": "We design decoupled microservices and define secure REST or GraphQL API communication channels. This prevents monolithic bottlenecks and isolates component failures."
+          },
+          {
+            "step": 4,
+            "title": "Caching & Performance Optimization",
+            "description": "We identify high-frequency data endpoints and configure Redis caching systems. This drastically reduces database query times and improves user page load speeds."
+          },
+          {
+            "step": 5,
+            "title": "Cloud Infrastructure Blueprints",
+            "description": "We structure cloud infrastructure templates using Kubernetes, Docker, and IaC tools. This ensures deployment reproducibility and multi-region high availability."
+          },
+          {
+            "step": 6,
+            "title": "Architecture Handover & Support",
+            "description": "We deliver detailed architectural blueprints, API documentation, and database schema mappings. Our engineers guide your developers during the initial setup phase."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is software architecture design?",
+            "answer": "Software architecture design is the structural blueprint of an application. It defines how different components, databases, and APIs interact to ensure performance and reliability."
+          },
+          {
+            "question": "Why is architecture design important for growing businesses?",
+            "answer": "Without a solid architecture, applications experience performance lag, scaling issues, and security loopholes. Proper design prevents expensive codebase rewrites and reduces hosting costs."
+          },
+          {
+            "question": "Do you design for multi-cloud environments?",
+            "answer": "Yes, we create cloud-agnostic architectures using tools like Docker, Kubernetes, and Terraform. This allows you to run applications across AWS, GCP, or Azure without lock-in."
+          },
+          {
+            "question": "How do you select between SQL and NoSQL databases?",
+            "answer": "We evaluate data complexity, relation structures, and scaling needs. We choose SQL databases like PostgreSQL for structured relations, and NoSQL like MongoDB for flexible documents."
+          },
+          {
+            "question": "What is a microservices architecture?",
+            "answer": "Microservices break a monolithic application into smaller, independent services. Each service handles a specific business function and communicates via secure APIs, simplifying updates and scaling."
+          },
+          {
+            "question": "How do you ensure system security in your designs?",
+            "answer": "We implement strict identity management, API gateway firewalls, data encryption at rest, and secure virtual networks. This prevents unauthorized access to critical databases."
+          },
+          {
+            "question": "Do you write code during the architecture design phase?",
+            "answer": "No, this phase focuses on structural layouts, UML diagrams, and technology selection. However, we do create working proofs-of-concept for complex integration points."
+          },
+          {
+            "question": "How long does the architecture design process take?",
+            "answer": "A standard architectural blueprint project takes between four to six weeks. The exact timeline depends on database complexity and the number of system integrations required."
+          }
+        ],
+        "technologies": [
+          { "name": "Kubernetes", "icon": "kubernetes" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "MongoDB", "icon": "mongodb" },
+          { "name": "Redis", "icon": "redis" },
+          { "name": "AWS", "icon": "aws" },
+          { "name": "Terraform", "icon": "terraform" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Mimari Tasarım",
+      "shortDescription": "İş ihtiyaçlarınıza göre uyarlanmış son derece ölçeklenebilir, güvenli ve hataya dayanıklı sistem mimarileri tasarlayın. Sektördeki en iyi uygulamaları ve mikro hizmet modellerini kullanıyoruz.",
+      "fullDescription": "Büyüyen işletmeler, kötü tasarlanmış mimariler nedeniyle genellikle yavaş uygulama performansından ve sistem kesintilerinden muzdariptir. Uzman Mimari Tasarım hizmetlerimiz, uygulamalarınız için yüksek performanslı, uygun maliyetli ve güvenli yazılım omurgaları oluşturur. Gelişmiş mikro hizmet kalıplarını, sunucusuz paradigmaları ve Docker ve Kubernetes ile konteyner orkestrasyonunu kullanarak, otomatik olarak ölçeklenen sistem mimarileri tasarlıyoruz. Veritabanı stresini en aza indirmek için eksiksiz veri akışlarını haritalandırıyor, uygun SQL ve NoSQL veritabanlarını seçiyor ve Redis ile önbelleğe alma katmanlarını yapılandırıyoruz. Detaylı mimari planlar sunarak milyonlarca aktif kullanıcıyı darboğaz olmadan destekliyoruz.",
+      "features": [
+        "Mikro Hizmetler ve Sunucusuz Mimari Tasarımı",
+        "Yüksek Kullanılabilirlikli Bulut Altyapısı Planlaması",
+        "Dağıtık Önbelleğe Alma Katmanları ve Redis Kurulumu",
+        "Çok Bölgeli Bulut Dağıtım Planları",
+        "Docker ve Kubernetes ile Konteyner Orkestrasyonu",
+        "Otomatik Yük Devretme ve Olağanüstü Durum Kurtarma",
+        "Güvenli API Ağ Geçidi ve Olay Odaklı Yönlendirme",
+        "Kapsamlı Veri Akış Şemaları ve Dokümantasyon"
+      ],
+      "benefits": [
+        "Yüksek sistem kullanılabilirliği elde edin ve kesintileri ortadan kaldırın",
+        "Bulut barındırma maliyetlerini yüzde kırk oranına kadar azaltın",
+        "Optimize edilmiş önbelleğe alma ile API yanıt sürelerini iyileştirin",
+        "Uygulamaları sıfırdan milyonlarca kullanıcıya sorunsuz bir şekilde ölçeklendirin",
+        "Buluttan bağımsız modüler planlarla satıcı kilitlenmesini önleyin",
+        "Tüm yazılım mikro hizmetlerinde net güvenlik sınırları belirleyin"
+      ],
+      "metaTitle": "Mimari Tasarım ve Sistem Planlama | PakSoft",
+      "metaDescription": "Ölçeklenebilir, yüksek performanslı sistem mimarileri tasarlayın. Kubernetes ve Redis önbelleğe alma ile bulut tabanlı tasarımlar yapıyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Keşif ve Gereksinimlerin Belirlenmesi",
+            "description": "İş hedeflerinizi, hedef kullanıcı trafiğini ve mevcut sistem sorunlarını analiz ediyoruz. Bu, performans bütçelerini ve sistem ölçeklendirme hedeflerini belirlememize yardımcı olur."
+          },
+          {
+            "step": 2,
+            "title": "Veri Modelleme ve Veritabanı Tasarımı",
+            "description": "Varlık ilişkilerini haritalandırıyor ve PostgreSQL veya MongoDB gibi uygun veritabanlarını seçiyoruz. Bu, verimli sorgu yürütülmesini ve modüller arasında veri tutarlılığını sağlar."
+          },
+          {
+            "step": 3,
+            "title": "Mikro Hizmetler ve API Düzeni",
+            "description": "Bağımsız mikro hizmetler tasarlıyor ve güvenli REST veya GraphQL API iletişim kanallarını tanımlıyoruz. Bu, monolitik darboğazları önler ve bileşen arızalarını izole eder."
+          },
+          {
+            "step": 4,
+            "title": "Önbelleğe Alma ve Performans Optimizasyonu",
+            "description": "Yüksek frekanslı veri uç noktalarını belirliyor ve Redis önbellekleme sistemlerini yapılandırıyoruz. Bu, veritabanı sorgu sürelerini önemli ölçüde azaltır ve sayfa yükleme hızlarını artırır."
+          },
+          {
+            "step": 5,
+            "title": "Bulut Altyapısı Planları",
+            "description": "Kubernetes, Docker ve IaC araçlarını kullanarak bulut altyapısı şablonlarını yapılandırıyoruz. Bu, dağıtımın tekrarlanabilirliğini ve çok bölgeli yüksek kullanılabilirliği garanti eder."
+          },
+          {
+            "step": 6,
+            "title": "Mimari Teslimi ve Destek",
+            "description": "Ayrıntılı mimari planlar, API dokümantasyonu ve veritabanı şeması haritaları teslim ediyoruz. Mühendislerimiz ilk kurulum aşamasında geliştiricilerinize rehberlik eder."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Yazılım mimarisi tasarımı nedir?",
+            "answer": "Yazılım mimarisi tasarımı, bir uygulamanın yapısal planıdır. Performans ve güvenilirliği sağlamak için farklı bileşenlerin, veritabanlarının ve API'lerin nasıl etkileşime girdiğini tanımlar."
+          },
+          {
+            "question": "Büyüyen işletmeler için mimari tasarım neden önemlidir?",
+            "answer": "Sağlam bir mimari olmadan, uygulamalar performans gecikmesi, ölçekleme sorunları ve güvenlik açıkları yaşar. Doğru tasarım, pahalı kod yeniden yazımlarını önler ve maliyetleri azaltır."
+          },
+          {
+            "question": "Çoklu bulut (multi-cloud) ortamları için tasarım yapıyor musunuz?",
+            "answer": "Evet, Docker, Kubernetes ve Terraform gibi araçları kullanarak buluttan bağımsız mimariler oluşturuyoruz. Bu, uygulamaları AWS, GCP veya Azure üzerinde kilitlenme olmadan çalıştırmanızı sağlar."
+          },
+          {
+            "question": "SQL ve NoSQL veritabanları arasında nasıl seçim yapıyorsunuz?",
+            "answer": "Veri karmaşıklığını, ilişki yapılarını ve ölçeklendirme ihtiyaçlarını değerlendiriyoruz. Yapılandırılmış ilişkiler için PostgreSQL gibi SQL, esnek belgeler için ise MongoDB gibi NoSQL veritabanlarını seçiyoruz."
+          },
+          {
+            "question": "Mikro hizmet (microservices) mimarisi nedir?",
+            "answer": "Mikro hizmetler, monolitik bir uygulamayı daha küçük, bağımsız hizmetlere böler. Her hizmet belirli bir iş işlevini yönetir ve güvenli API'ler aracılığıyla iletişim kurarak güncellemeleri kolaylaştırır."
+          },
+          {
+            "question": "Tasarımlarınızda sistem güvenliğini nasıl sağlıyorsunuz?",
+            "answer": "Sıkı kimlik yönetimi, API ağ geçidi güvenlik duvarları, veri şifreleme ve güvenli sanal ağlar uyguluyoruz. Bu, kritik veritabanlarına yetkisiz erişimi engeller."
+          },
+          {
+            "question": "Mimari tasarım aşamasında kod yazıyor musunuz?",
+            "answer": "Hayır, bu aşama yapısal düzenlere, UML diyagramlarına ve teknoloji seçimine odaklanır. Ancak karmaşık entegrasyon noktaları için çalışan kavram kanıtları (PoC) oluşturuyoruz."
+          },
+          {
+            "question": "Mimari tasarım süreci ne kadar sürer?",
+            "answer": "Standart bir mimari plan projesi dört ila altı hafta sürer. Kesin zaman çizelgesi, veritabanı karmaşıklığına ve gereken sistem entegrasyonlarının sayısına bağlıdır."
+          }
+        ],
+        "technologies": [
+          { "name": "Kubernetes", "icon": "kubernetes" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "MongoDB", "icon": "mongodb" },
+          { "name": "Redis", "icon": "redis" },
+          { "name": "AWS", "icon": "aws" },
+          { "name": "Terraform", "icon": "terraform" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Architektur-Design",
+      "shortDescription": "Entwerfen Sie hochgradig skalierbare, sichere und fehlertolerante Systemarchitekturen für Ihr Unternehmen. Wir entwickeln moderne, Cloud-native Software-Architekturen unter Verwendung bewährter Microservices-Konzepte und moderner Standards.",
+      "fullDescription": "Wachsende Unternehmen leiden aufgrund schlecht konzipierter Architekturen häufig unter langsamer Anwendungsleistung und Systemausfällen. Unsere professionellen Architektur-Design-Services entwickeln performante, kosteneffiziente und sichere Software-Strukturen für Ihre Anwendungen. Unter Verwendung moderner Microservices-Muster, serverloser Architekturen und Container-Orchestrierung mit Docker und Kubernetes entwerfen wir Systemarchitekturen, die sich automatisch skalieren. Wir strukturieren Datenflüsse, wählen passende SQL- und NoSQL-Datenbanken aus und konfigurieren Caching-Layer mit Redis, um Datenbanklasten zu minimieren. Ob Sie ein neues Startup-MVP entwickeln oder ein komplexes Enterprise-System modernisieren möchten — wir liefern detaillierte Architekturpläne.",
+      "features": [
+        "Entwurf von Microservices- und Serverless-Architekturen",
+        "Planung hochverfügbarer Cloud-Infrastrukturen",
+        "Konfiguration verteilter Caching-Layer mit Redis",
+        "Konzepte für Multi-Regionen-Cloud-Deployments",
+        "Container-Orchestrierung mit Docker und Kubernetes",
+        "Automatisierte Failover- und Disaster-Recovery-Pläne",
+        "Sichere API-Gateways und Event-gesteuertes Routing",
+        "Detaillierte Datenflussdiagramme und Dokumentation"
+      ],
+      "benefits": [
+        "Hohe Systemverfügbarkeit erreichen und Ausfälle eliminieren",
+        "Cloud-Hosting-Kosten um die Hälfte senken",
+        "Verbesserung der API-Antwortzeiten durch Caching-Optimierung",
+        "Anwendungen nahtlos für Millionen von Benutzern skalieren",
+        "Hersteller-Lock-in durch modulare Cloud-Pläne vermeiden",
+        "Klare Sicherheitsgrenzen für alle Microservices etablieren"
+      ],
+      "metaTitle": "Architektur-Design & Systemplanung | PakSoft",
+      "metaDescription": "Entwerfen Sie skalierbare, performante Systemarchitekturen. Wir planen Cloud-native Microservices-Strukturen mit Kubernetes und Redis. Kontaktieren Sie uns.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Discovery & Anforderungsanalyse",
+            "description": "Wir analysieren Ihre Geschäftsziele, den erwarteten Benutzerverkehr und Schwachstellen des aktuellen Systems. Dies hilft uns, Leistungsbudgets und Skalierungsziele festzulegen."
+          },
+          {
+            "step": 2,
+            "title": "Datenmodellierung & Datenbankdesign",
+            "description": "Wir entwerfen Entity-Relations und wählen geeignete Datenbanken wie PostgreSQL oder MongoDB. Dies sichert effiziente Abfragen und Datenkonsistenz über alle Module hinweg."
+          },
+          {
+            "step": 3,
+            "title": "Microservices & API-Struktur",
+            "description": "Wir konzipieren entkoppelte Microservices und definieren sichere REST- oder GraphQL-Verbindungen. Dies verhindert monolithische Engpässe und isoliert Ausfälle einzelner Komponenten."
+          },
+          {
+            "step": 4,
+            "title": "Caching & Performance-Optimierung",
+            "description": "Wir identifizieren hochfrequente Daten-Endpunkte und implementieren Redis-Caching-Systeme. Dies verkürzt die Abfragezeiten der Datenbank drastisch und beschleunigt Seitenladezeiten."
+          },
+          {
+            "step": 5,
+            "title": "Cloud-Infrastruktur-Blueprints",
+            "description": "Wir strukturieren Vorlagen für Ihre Cloud-Infrastruktur mit Kubernetes und Docker. Dies garantiert die Reproduzierbarkeit der Umgebung und hohe Verfügbarkeit."
+          },
+          {
+            "step": 6,
+            "title": "Architekturübergabe & Support",
+            "description": "Wir übergeben detaillierte Pläne, API-Dokumentationen und Datenbankschemata. Unsere Ingenieure begleiten Ihr Entwicklerteam in der Anfangsphase der Implementierung."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Was versteht man unter Software-Architektur-Design?",
+            "answer": "Software-Architektur-Design ist der strukturelle Bauplan einer Anwendung. Er legt fest, wie verschiedene Komponenten, Datenbanken und APIs zusammenarbeiten, um Leistung und Zuverlässigkeit zu gewährleisten."
+          },
+          {
+            "question": "Was sind die Vorteile von Microservices?",
+            "answer": "Microservices teilen eine Anwendung in kleine, eigenständige Dienste auf. Jeder Dienst verantwortet eine Funktion und kommuniziert über APIs, was Updates und unabhängige Skalierung vereinfacht."
+          },
+          {
+            "question": "Warum ist Architektur-Design für wachsende Unternehmen wichtig?",
+            "answer": "Ohne eine stabile Architektur kommt es zu Leistungseinbrüchen, Skalierungsproblemen und Sicherheitslücken. Ein gutes Design verhindert teure Code-Rewrites und senkt die Cloud-Kosten."
+          },
+          {
+            "question": "Entwerfen Sie Architekturen für Multi-Cloud-Umgebungen?",
+            "answer": "Ja, wir entwickeln Cloud-unabhängige Systeme mit Docker, Kubernetes und Terraform. So können Sie Ihre Anwendungen flexibel auf AWS, GCP oder Azure betreiben."
+          },
+          {
+            "question": "Wie wählen Sie zwischen SQL- und NoSQL-Datenbanken aus?",
+            "answer": "Wir bewerten die Datenkomplexität, Beziehungsstrukturen und Skalierungsanforderungen. Wir nutzen SQL-Systeme wie PostgreSQL für strukturierte Daten und NoSQL wie MongoDB für flexible Dokumente."
+          },
+          {
+            "question": "Wie gewährleisten Sie die Systemsicherheit in Ihren Designs?",
+            "answer": "Wir planen striktes Identitätsmanagement, API-Gateway-Firewalls, Datenverschlüsselung und sichere virtuelle Netzwerke ein, um unbefugten Zugriff auf kritische Datenbanken zu verhindern."
+          },
+          {
+            "question": "Schreiben Sie während der Designphase bereits Code?",
+            "answer": "Nein, diese Phase konzentriert sich auf Strukturpläne, UML-Diagramme und Technologie-Auswahl. Für komplexe Integrationspunkte erstellen wir jedoch funktionierende Proof-of-Concepts (PoCs)."
+          },
+          {
+            "question": "Wie lange dauert der Prozess des Architektur-Designs?",
+            "answer": "Ein typisches Architekturprojekt dauert zwischen vier und sechs Wochen. Die Dauer hängt stark von der Datenbankkomplexität und den zu integrierenden Systemen ab."
+          }
+        ],
+        "technologies": [
+          { "name": "Kubernetes", "icon": "kubernetes" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "MongoDB", "icon": "mongodb" },
+          { "name": "Redis", "icon": "redis" },
+          { "name": "AWS", "icon": "aws" },
+          { "name": "Terraform", "icon": "terraform" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "سسٹم آرکیٹیکچر ڈیزائن",
+      "shortDescription": "اپنی کاروباری ضروریات کے مطابق انتہائی پیمائش پذیر، محفوظ اور مستحکم سسٹم آرکیٹیکچر ڈیزائن حاصل کریں۔ ہم جدید ترین مائیکرو سروسز ماڈلز استعمال کرتے ہیں۔",
+      "fullDescription": "خراب سسٹم ڈیزائن کی وجہ سے بڑھتے ہوئے کاروباروں کو اکثر سست کارکردگی اور تعطل کا سامنا کرنا پڑتا ہے۔ ہماری سسٹم آرکیٹیکچر ڈیزائن سروسز آپ کی ایپس کے لیے تیز رفتار، محفوظ اور سستی بنیاد فراہم کرتی ہیں۔ ہم Docker اور Kubernetes کے ذریعے کنٹینرائزیشن اور مائیکرو سروسز کے اصولوں کو بروئے کار لاتے ہوئے ایسا ڈھانچہ بناتے ہیں جو خود بخود ٹریفک کے مطابق اسکیل ہو جاتا ہے۔ ہم ڈیٹا بیس کے بوجھ کو کم کرنے کے لیے Redis کیشنگ کا استعمال کرتے ہیں اور PostgreSQL یا MongoDB جیسے ڈیٹا بیسز کا انتخاب کرتے ہیں۔ ہمارے تفصیلی نقشے لاکھوں فعال صارفین کو بغیر کسی رکاوٹ کے سنبھالنے کی صلاحیت رکھتے ہیں۔",
+      "features": [
+        "مائیکرو سروسز اور سرور لیس آرکیٹیکچر ڈیزائن",
+        "انتہائی فعال اور مستحکم کلاؤڈ انفراسٹرکچر کی منصوبہ بندی",
+        "ڈسٹریبیوٹڈ کیشنگ اور Redis کیشے کا قیام",
+        "ملٹی ریجن کلاؤڈ ہوسٹنگ کے نقشے",
+        "Docker اور Kubernetes کے ذریعے کنٹینر ہوسٹنگ",
+        "خودکار فیل اوور اور ڈیٹا بحالی کے پلانز",
+        "محفوظ API گیٹ وے اور ایونٹ ڈریون روٹنگ",
+        "ڈیٹا فلو کے تفصیلی ڈایاگرامس اور دستاویزات"
+      ],
+      "benefits": [
+        "سistem کو چوبیس گھنٹے فعال رکھیں اور تعطل ختم کریں",
+        "کلاؤڈ ہوسٹنگ کے ماہانہ اخراجات میں چالیس فیصد تک کمی لائیں",
+        "بہترین کیشنگ کے ذریعے API کے جواب کی رفتار بڑھائیں",
+        "ایپلیکیشن کو لاکھوں صارفین تک بغیر کسی پریشانی کے بڑھائیں",
+        "کسی ایک کلاؤڈ فراہم کار پر انحصار ختم کریں",
+        "تمام مائیکرو سروسز کے درمیان سیکیورٹی کی مضبوط حدود بنائیں"
+      ],
+      "metaTitle": "آرکیٹیکچر ڈیزائن اور سیستم پلاننگ | PakSoft",
+      "metaDescription": "کاروبار کے لیے پیمائش پذیر سسٹم آرکیٹیکچر ڈیزائن کریں۔ ہم Kubernetes اور Redis کیشنگ کی مدد سے کلاؤڈ فرسٹ ماڈلز بناتے ہیں۔ رابطہ کریں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "ضروریات کی دریافت اور مطالعہ",
+            "description": "ہم آپ کے کاروباری مقاصد، متوقع ٹریفک اور موجودہ مسائل کا مطالعہ کرتے ہیں۔ اس سے ہمیں سسٹم کی کارکردگی کے اہداف طے کرنے میں مدد ملتی ہے۔"
+          },
+          {
+            "step": 2,
+            "title": "ڈیٹا ماڈلنگ اور ڈیٹا بیس کا انتخاب",
+            "description": "ہم ڈیٹا کے روابط کا نقشہ بناتے ہیں اور PostgreSQL یا MongoDB جیسے موزوں ڈیٹا بیسز کا انتخاب کرتے ہیں تاکہ ڈیٹا کی فراہمی تیز ہو۔"
+          },
+          {
+            "step": 3,
+            "title": "مائیکرو سروسز اور API کی تشکیل",
+            "description": "ہم آزاد مائیکرو سروسز اور محفوظ REST یا GraphQL چینلز ڈیزائن کرتے ہیں تاکہ پورے سسٹم پر ایک ساتھ دباؤ نہ بڑھے۔"
+          },
+          {
+            "step": 4,
+            "title": "کارکردگی کی اصلاح اور کیشنگ",
+            "description": "ہم زیادہ استعمال ہونے والے ڈیٹا کی نشاندہی کرتے ہیں اور Redis کیشنگ سیٹ اپ کرتے ہیں تاکہ ویب سائٹ لوڈ ہونے کی رفتار تیز ہو۔"
+          },
+          {
+            "step": 5,
+            "title": "کلاؤڈ انفراسٹرکچر کی تیاری",
+            "description": "ہم Kubernetes اور Docker کو ملا کر کلاؤڈ ہوسٹنگ کا فریم ورک تیار کرتے ہیں جس سے سسٹم کو دوبارہ بنانا انتہائی آسان ہوتا ہے۔"
+          },
+          {
+            "step": 6,
+            "title": "آرکیٹیکچر ہینڈ اوور اور سپورٹ",
+            "description": "ہم تفصیلی نقشے، API گائیڈز اور ڈیٹا بیس ڈیزائن آپ کی ٹیم کے حوالے کرتے ہیں اور ابتدائی سیٹ اپ میں مکمل مدد دیتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "سافٹ ویئر آرکیٹیکچر ڈیزائن سے کیا مراد ہے؟",
+            "answer": "سافٹ ویئر آرکیٹیکچر ایپلیکیشن کا بنیادی خاکہ ہوتا ہے۔ یہ طے کرتا ہے کہ بہترین کارکردگی اور حفاظت کے لیے مختلف کوڈز، ڈیٹا بیسز اور APIs کیسے کام کریں گے۔"
+          },
+          {
+            "question": "بڑھتے ہوئے کاروبار کے لیے اچھا آرکیٹیکچر کیوں ضروری ہے؟",
+            "answer": "مضبوط آرکیٹیکچر کے بغیر ویب سائٹس اور ایپس سست ہو جاتی ہیں اور ان میں سیکیورٹی کے خطرات بڑھ جاتے ہیں۔ اچھا ڈیزائن ہوسٹنگ کے اخراجات کم کرتا ہے۔"
+          },
+          {
+            "question": "کیا آپ ملٹی کلاؤڈ ماحول کے لیے ڈیزائن کرتے ہیں؟",
+            "answer": "جی ہاں، ہم Docker، Kubernetes اور Terraform جیسے ٹولز استعمال کرتے ہیں تاکہ آپ اپنی ایپ کو بغیر کسی روک ٹوک کے AWS، گوگل کلاؤڈ یا Azure پر چلا سکیں۔"
+          },
+          {
+            "question": "آپ SQL اور NoSQL ڈیٹا بیسز کا فیصلہ کیسے کرتے ہیں؟",
+            "answer": "ہم ڈیٹا کے روابط اور کاروباری ضرورت کا جائزہ لیتے ہیں۔ ترتیب شدہ ڈیٹا کے لیے ہم PostgreSQL اور غیر ترتیب شدہ ڈیٹا کے لیے MongoDB کا انتخاب کرتے ہیں۔"
+          },
+          {
+            "question": "مائیکرو سروسز آرکیٹیکچر کیا ہے؟",
+            "answer": "یہ ایک بڑے سسٹم کو چھوٹے آزاد حصوں میں تقسیم کرتا ہے۔ ہر حصہ اپنے مخصوص کام کا ذمہ دار ہوتا ہے اور سیکیور APIs کے ذریعے دوسرے حصوں سے جڑتا ہے۔"
+          },
+          {
+            "question": "آپ اپنے ڈیزائنز میں سیکیورٹی کیسے یقینی بناتے ہیں؟",
+            "answer": "ہم ڈیٹا انکرپشن، سیکیور ورچوئل نیٹ ورکس اور API فائر والز کا استعمال کرتے ہیں تاکہ غیر متعلقہ افراد کو ڈیٹا بیس تک رسائی حاصل نہ ہو سکے۔"
+          },
+          {
+            "question": "کیا آپ ڈیزائننگ کے دوران کوڈ بھی لکھتے ہیں؟",
+            "answer": "نہیں، یہ مرحلہ زیادہ تر نقشہ سازی، ٹیکنالوجی کے انتخاب اور فلو چارٹس پر مبنی ہوتا ہے۔ البتہ ہم پیچیدہ حصوں کے لیے کوڈ کے چھوٹے تجرباتی نمونے بناتے ہیں۔"
+          },
+          {
+            "question": "آرکیٹیکچر ڈیزائن کے عمل میں کتنا وقت لگتا ہے؟",
+            "answer": "اس پروجیکٹ میں عام طور پر چار سے چھ ہفتے لگتے ہیں۔ وقت کا انحصار ڈیٹا بیس کے روابط اور سسٹمز کی تعداد پر ہوتا ہے۔"
+          }
+        ],
+        "technologies": [
+          { "name": "Kubernetes", "icon": "kubernetes" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "MongoDB", "icon": "mongodb" },
+          { "name": "Redis", "icon": "redis" },
+          { "name": "AWS", "icon": "aws" },
+          { "name": "Terraform", "icon": "terraform" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "تصميم البنية المعمارية للأنظمة",
+      "shortDescription": "صمم بنية معمارية للأنظمة قابلة للتوسع وآمنة ومقاومة للأخطاء بما يتناسب مع احتياجات عملك. ننشئ أطر عمل سحابية حديثة تعتمد على الخدمات المصغرة وأحدث التقنيات.",
+      "fullDescription": "غالباً ما تعاني الشركات النامية من بطء أداء التطبيقات وتوقف الأنظمة نتيجة للبنى المعمارية الضعيفة. توفر خدمات تصميم البنية المعمارية لدينا أساساً برمجياً آمناً وعالي الأداء وفعالاً من حيث التكلفة. باستخدام أنماط الخدمات المصغرة المتقدمة، والحوسبة بدون خوادم، وإدارة الحاويات عبر Docker و Kubernetes، نصمم بنية تحتية تتسع تلقائياً لتناسب حجم العمل. نرسم مسارات تدفق البيانات بالكامل، ونحدد قواعد البيانات المناسبة SQL و NoSQL، ونعد طبقات التخزين المؤقت باستخدام Redis لتقليل الضغط على الخوادم. نقدم مخططات معمارية مفصلة تدعم ملايين المستخدمين النشطين دون أي اختناقات في الأداء.",
+      "features": [
+        "تصميم بنيات الخدمات المصغرة والحوسبة بدون خوادم",
+        "تخطيط بنية تحتية سحابية عالية التوفر والاعتمادية",
+        "إعداد طبقات التخزين المؤقت الموزعة باستخدام Redis",
+        "مخططات نشر سحابية متعددة المناطق الجغرافية",
+        "إدارة الحاويات وتشغيلها عبر Docker و Kubernetes",
+        "تخطيط الاستجابة للأعطال والتعافي من الكوارث تلقائياً",
+        "بناء بوابات واجهات التطبيقات الآمنة وتوجيه البيانات",
+        "إعداد مخططات تدفق البيانات والتوثيق التقني الشامل"
+      ],
+      "benefits": [
+        "تحقيق توفر عالٍ للنظام والقضاء التام على فترات التوقف",
+        "تقليل تكاليف الاستضافة السحابية بنسبة تصل إلى أربعين بالمائة",
+        "تحسين أوقات استجابة واجهات التطبيقات عبر التخزين المؤقت",
+        "توسيع نطاق التطبيقات بسلاسة لتشمل ملايين المستخدمين النشطين",
+        "تجنب الارتباط بموفر سحابي واحد بفضل التصاميم المرنة",
+        "تحديد حدود أمان واضحة عبر جميع الخدمات المصغرة للبرمجيات"
+      ],
+      "metaTitle": "تصميم البنية المعمارية وتخطيط الأنظمة | PakSoft",
+      "metaDescription": "صمم بنية معمارية للأنظمة قابلة للتوسع وعالية الأداء. نخطط بنيات سحابية تعتمد على الخدمات المصغرة مع Kubernetes e Redis. اتصل بنا.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "الاستكشاف وجمع المتطلبات",
+            "description": "نحلل أهداف عملك، وحجم الزيارات المتوقع، ونقاط الضعف الحالية بالنظام لتعريف ميزانيات الأداء وأهداف التوسع بدقة."
+          },
+          {
+            "step": 2,
+            "title": "نمذجة البيانات وتصميم قواعد البيانات",
+            "description": "نحدد علاقات البيانات ونختار الأنظمة المناسبة مثل PostgreSQL أو MongoDB لضمان سرعة الاستعلامات واتساق البيانات."
+          },
+          {
+            "step": 3,
+            "title": "تخطيط الخدمات المصغرة وواجهات التطبيقات",
+            "description": "نصمم خدمات مصغرة مستقلة ونحدد قنوات اتصال آمنة باستخدام REST أو GraphQL لمنع حدوث اختناقات في الأداء."
+          },
+          {
+            "step": 4,
+            "title": "التخزين المؤقت وتحسين الأداء",
+            "description": "نحدد نقاط نهاية البيانات الأكثر طلباً ونعد أنظمة تخزين مؤقت باستخدام Redis لتسريع تحميل الصفحات وتخفيف العبء."
+          },
+          {
+            "step": 5,
+            "title": "مخططات البنية التحتية السحابية",
+            "description": "نهيئ قوالب البنية التحتية باستخدام Kubernetes و Docker لضمان تكرار البيئة التشغيلية وحمايتها وتوفرها الجغرافي العالي."
+          },
+          {
+            "step": 6,
+            "title": "تسليم المخططات المعمارية والدعم",
+            "description": "نسلم وثائق البنية المعمارية ومخططات قواعد البيانات وتفاصيل واجهات التطبيقات، ونوجه مطوريك خلال مرحلة الإعداد الأولى."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما هو تصميم البنية المعمارية للبرمجيات؟",
+            "answer": "البنية المعمارية للبرمجيات هي المخطط الهيكلي للتطبيق، والذي يحدد كيفية تفاعل المكونات وقواعد البيانات وواجهات التطبيقات لضمان الأداء والاستقرار."
+          },
+          {
+            "question": "لماذا يعتبر تصميم البنية المعمارية مهماً للشركات النامية؟",
+            "answer": "تساعد البنية المعمارية السليمة في تجنب مشكلات بطء الأداء والثغرات الأمنية، مما يغني عن إعادة كتابة الكود البرمجي ويوفر تكاليف الاستضافة."
+          },
+          {
+            "question": "هل تصممون بنيات معمارية تناسب بيئات السحب المتعددة (Multi-cloud)؟",
+            "answer": "نعم، نبني بنيات مرنة وغير مرتبطة بموفر سحابي واحد باستخدام Docker و Kubernetes و Terraform للتشغيل السلس على AWS أو GCP أو Azure."
+          },
+          {
+            "question": "كيف تختارون بين قواعد البيانات 관계ية SQL وغير 관계ية NoSQL؟",
+            "answer": "نقيم مدى تعقيد العلاقات بين البيانات وحجم التوسع المطلوب، فنختار SQL مثل PostgreSQL للبيانات المترابطة، و NoSQL مثل MongoDB للمستندات المرنة."
+          },
+          {
+            "question": "ما هي بنية الخدمات المصغرة (Microservices)؟",
+            "answer": "هي تقسيم التطبيق الضخم إلى خدمات صغيرة ومستقلة تؤدي وظائف عمل محددة وتتواصل عبر واجهات تطبيقات آمنة، مما يسهل تحديث كل جزء."
+          },
+          {
+            "question": "كيف تضمنون أمان الأنظمة في تصاميمكم المعمارية؟",
+            "answer": "نعتمد أنظمة إدارة الهوية الصارمة، وجدران حماية واجهات التطبيقات، وتشفير البيانات الحساسة، وإنشاء شبكات افتراضية خاصة تمنع الوصول غير المصرح به."
+          },
+          {
+            "question": "هل تقومون بكتابة كود برمجي خلال مرحلة التصميم؟",
+            "answer": "تتركز هذه المرحلة على التخطيط الهيكلي ورسم المخططات واختيار التقنيات، ولكننا نطور نماذج تجريبية صغيرة لإثبات كفاءة عمليات التكامل المعقدة."
+          },
+          {
+            "question": "كم يستغرق مشروع تصميم البنية المعمارية للنظام؟",
+            "answer": "يستغرق المشروع عادة من أربعة إلى ستة أسابيع، ويتأثر الجدول الزمني بمدى تعقيد تدفق البيانات وعدد الأنظمة الخارجية المطلوب ربطها."
+          }
+        ],
+        "technologies": [
+          { "name": "Kubernetes", "icon": "kubernetes" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "MongoDB", "icon": "mongodb" },
+          { "name": "Redis", "icon": "redis" },
+          { "name": "AWS", "icon": "aws" },
+          { "name": "Terraform", "icon": "terraform" }
+        ]
+      }
+    }
+  },
+  "dedicated-teams": {
+    "en": {
+      "name": "Dedicated Teams",
+      "shortDescription": "Accelerate your software engineering pipeline with a dedicated, full-time offshore development team. We assemble top technical talent that integrates seamlessly into your company culture.",
+      "fullDescription": "Hiring local developers is slow, expensive, and subject to high turnover. Our Dedicated Teams services solve this by providing you with fully staffed, remote software engineering teams that work exclusively on your products. We handle recruitment, HR, local tax compliance, and office infrastructure, leaving you with total technical management. Your dedicated developers align with your Git workflows, sprint schedules, and Slack channels, operating as a natural extension of your in-house team. Whether you need senior backend developers, frontend React engineers, QA experts, or complete agile product teams, we scale up resources rapidly to meet your release deadlines.",
+      "features": [
+        "Custom Technical Talent Sourcing",
+        "Seamless Sprint and Workflow Integration",
+        "Full-Time Dedicated Remote Developers",
+        "HR, Payroll, and Admin Management",
+        "Agile Project Delivery and Scrum Support",
+        "Secure Dedicated Remote Hardware Setup",
+        "Rapid Engineering Resource Scaling",
+        "Direct Technical Team Management Control"
+      ],
+      "benefits": [
+        "Reduce developer hiring time from months to weeks",
+        "Save up to sixty percent on engineering operational costs",
+        "Scale development capacity up or down dynamically",
+        "Eliminate local HR overhead and tax compliance risks",
+        "Ensure high developer retention and project knowledge continuity",
+        "Incorporate senior developers skilled in modern technology stacks"
+      ],
+      "metaTitle": "Dedicated Offshore Development Teams | PakSoft",
+      "metaDescription": "Build a dedicated offshore development team aligned with your workflows. We source top developers, manage HR, and scale your engineering. Contact us.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Role Mapping & Scoping",
+            "description": "We audit your project roadmap, identify talent gaps, and map required technical skills and experience levels. This helps us design the ideal team profile."
+          },
+          {
+            "step": 2,
+            "title": "Talent Sourcing & Screening",
+            "description": "We source candidates from our curated developer network, performing code challenges and language checks. This guarantees that only qualified engineers reach the interview stage."
+          },
+          {
+            "step": 3,
+            "title": "Client Interview & Select",
+            "description": "You interview the shortlisted candidates directly and approve the final hiring decisions. This ensures that the selected developers align with your company culture."
+          },
+          {
+            "step": 4,
+            "title": "Onboarding & Tool Setup",
+            "description": "We configure local environments, provision secure hardware, and integrate developers into your Git repositories and Slack. This enables productive contributions from day one."
+          },
+          {
+            "step": 5,
+            "title": "Sprint Launch & Alignment",
+            "description": "We align the team with your agile sprint cadences, daily standups, and reporting lines. This establishes predictable delivery metrics and transparent communication channels."
+          },
+          {
+            "step": 6,
+            "title": "Ongoing Success Management",
+            "description": "We monitor team satisfaction, handle local payroll compliance, and facilitate professional training. This keeps developer motivation high and minimizes turnover risks."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is a dedicated development team?",
+            "answer": "A dedicated team is a model where a group of remote software engineers works exclusively on your projects, fully integrating into your company's processes and workflows."
+          },
+          {
+            "question": "How does a dedicated team differ from project outsourcing?",
+            "answer": "In project outsourcing, we manage the project scope and deliverables. In a dedicated team model, you retain direct management over the developers, directing their daily tasks."
+          },
+          {
+            "question": "How long does it take to assemble a dedicated team?",
+            "answer": "We can typically source and assemble a qualified development team within two to four weeks, depending on the specialization of the required tech stacks."
+          },
+          {
+            "question": "Who manages the remote developers on a daily basis?",
+            "answer": "You manage the developers directly, assigning tasks through your project management tools (like Jira) and communicating via your channels (like Slack or Teams)."
+          },
+          {
+            "question": "How do you handle developer performance and retention?",
+            "answer": "We assign a dedicated HR manager to support the team, monitoring performance and tracking satisfaction. This proactive support ensures high retention and project continuity."
+          },
+          {
+            "question": "What happens if a developer is not a good fit?",
+            "answer": "If a developer does not meet your performance expectations, we initiate a replacement process immediately, sourcing a replacement within two weeks at no extra cost."
+          },
+          {
+            "question": "Are the developers working full-time on my project?",
+            "answer": "Yes, the developers work forty hours per week exclusively on your projects. They do not share their time with other clients or internal tasks."
+          },
+          {
+            "question": "How do you protect my intellectual property (IP)?",
+            "answer": "We sign comprehensive NDA agreements before sourcing candidates. All IP and codebase rights belong exclusively to your company under the terms of our contract."
+          }
+        ],
+        "technologies": [
+          { "name": "Jira", "icon": "jira" },
+          { "name": "Slack", "icon": "slack" },
+          { "name": "GitHub", "icon": "github" },
+          { "name": "GitLab", "icon": "gitlab" },
+          { "name": "Confluence", "icon": "confluence" },
+          { "name": "Trello", "icon": "trello" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Adanmış Ekipler",
+      "shortDescription": "Şirket kültürünüzle sorunsuz bir şekilde bütünleşen üstün teknik yetenekleri bir araya getirerek, tam zamanlı adanmış geliştirici ekibiyle yazılım mühendisliği sürecinizi hızlandırın.",
+      "fullDescription": "Yerel yazılımcıları işe almak yavaş, maliyetli ve yüksek personel devir hızına tabidir. Adanmış Ekipler hizmetlerimiz, projeleriniz üzerinde özel olarak çalışan tam donanımlı, uzaktan yazılım mühendisliği ekipleri sağlayarak bu sorunu çözer. İşe alım, İK, yerel vergi uyumluluğu ve ofis altyapısını biz üstleniyoruz, teknik yönetim ise tamamen sizde kalıyor. Adanmış yazılımcılarınız Git iş akışlarınıza, sprint programlarınıza ve Slack kanallarınıza uyum sağlayarak şirket içi ekibinizin doğal bir uzantısı gibi çalışır. Kıdemli arka uç geliştiricilerine, ön uç React mühendislerine veya QA uzmanlarına ihtiyacınız olsun, sürüm teslim tarihlerinizi karşılamak için kaynakları hızla ölçeklendiriyoruz.",
+      "features": [
+        "Özel Teknik Yetenek Kaynağı Bulma",
+        "Sorunsuz Sprint ve İş Akışı Entegrasyonu",
+        "Tam Zamanlı Adanmış Uzaktan Geliştiriciler",
+        "İK, Bordro ve İdari Yönetim",
+        "Çevik Proje Teslimi ve Scrum Desteği",
+        "Güvenli Adanmış Uzaktan Donanım Kurulumu",
+        "Hızlı Mühendislik Kaynakları Ölçeklendirme",
+        "Doğrudan Teknik Ekip Yönetim Kontrolü"
+      ],
+      "benefits": [
+        "Geliştirici işe alım süresini aylardan haftalara indirin",
+        "Mühendislik operasyonel maliyetlerinde yüzde altmışa varan tasarruf sağlayın",
+        "Geliştirme kapasitesini dinamik olarak artırın veya azaltın",
+        "Yerel İK genel giderlerini ve vergi uyum risklerini ortadan kaldırın",
+        "Yüksek geliştirici elde tutma oranı ve proje bilgisi sürekliliği sağlayın",
+        "Modern teknoloji yığınlarında yetkin kıdemli geliştiricileri ekibinize katın"
+      ],
+      "metaTitle": "Adanmış Yazılım Geliştirme Ekipleri | PakSoft",
+      "metaDescription": "İş akışlarınıza uygun adanmış uzaktan yazılım ekipleri kurun. Yetenekleri buluyor, İK'yı yönetiyor ve geliştirme kapasitenizi ölçeklendiriyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Rol Eşleme ve Kapsam Belirleme",
+            "description": "Proje yol haritanızı inceliyor, yetenek açıklarını belirliyor ve gerekli teknik becerileri haritalandırıyoruz. Bu, ideal ekip profilini tasarlamamıza yardımcı olur."
+          },
+          {
+            "step": 2,
+            "title": "Yetenek Bulma ve Tarama",
+            "description": "Adayları özel geliştirici ağımızdan buluyor, kod testleri ve dil kontrolleri uyguluyoruz. Bu, yalnızca nitelikli mühendislerin mülakat aşamasına ulaşmasını sağlar."
+          },
+          {
+            "step": 3,
+            "title": "Müşteri Mülakatı & Seçim",
+            "description": "Adaylarla doğrudan mülakat yapıyor ve nihai kararları siz veriyorsunuz. Bu, seçilen geliştiricilerin şirket kültürünüzle uyumlu olmasını sağlar."
+          },
+          {
+            "step": 4,
+            "title": "Oryantasyon ve Araç Kurulumu",
+            "description": "Yerel ortamları yapılandırıyor, güvenli donanım sağlıyor ve geliştiricileri Git depolarınıza entegre ediyoruz. Bu, ilk günden itibaren verimli çalışma sağlar."
+          },
+          {
+            "step": 5,
+            "title": "Sprint Başlangıcı ve Uyum",
+            "description": "Ekibi çevik sprint döngülerinize, günlük toplantılarınıza ve raporlama hatlarınıza dahil ediyoruz. Bu, öngörülebilir teslimat metrikleri ve şeffaf iletişim kanalları oluşturur."
+          },
+          {
+            "step": 6,
+            "title": "Sürekli Başarı Yönetimi",
+            "description": "Ekip memnuniyetini izliyor, yerel bordro işlemlerini yürütüyor ve mesleki eğitimleri kolaylaştırıyoruz. Bu, geliştirici motivasyonunu yüksek tutar."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Adanmış geliştirme ekibi nedir?",
+            "answer": "Adanmış ekip, bir grup uzaktan çalışan yazılım mühendisinin yalnızca sizin projeleriniz üzerinde çalıştığı, şirketinizin süreçlerine ve iş akışlarına tamamen entegre olduğu bir modeldir."
+          },
+          {
+            "question": "Adanmış ekibin proje dış kaynak kullanımından (outsourcing) farkı nedir?",
+            "answer": "Proje dış kaynak kullanımında proje kapsamını ve çıktıları biz yönetiriz. Adanmış ekip modelinde ise geliştiricilerin doğrudan yönetimi sizde kalır, günlük görevlerini siz belirlersiniz."
+          },
+          {
+            "question": "Adanmış bir ekibi bir araya getirmek ne kadar sürer?",
+            "answer": "Gerekli teknoloji yığınlarının uzmanlığına bağlı olarak, nitelikli bir geliştirme ekibini genellikle iki ila dört hafta içinde bulup bir araya getirebiliriz."
+          },
+          {
+            "question": "Uzaktan çalışan yazılımcıları günlük olarak kim yönetir?",
+            "answer": "Geliştiricileri doğrudan yönetir, görevleri proje yönetim araçlarınız (Jira gibi) üzerinden atar ve kanallarınız (Slack veya Teams gibi) aracılığıyla iletişim kurarsınız."
+          },
+          {
+            "question": "Geliştirici performansını ve elde tutmayı nasıl yönetiyorsunuz?",
+            "answer": "Ekibi desteklemek, performansı izlemek ve memnuniyeti takip etmek için özel bir İK yöneticisi görevlendiriyoruz. Bu proaktif destek, yüksek kalıcılık ve proje sürekliliği sağlar."
+          },
+          {
+            "question": "Bir geliştirici ekibe uyum sağlayamazsa ne olur?",
+            "answer": "Bir geliştirici performans beklentilerinizi karşılamazsa, hemen bir yedekleme süreci başlatıyor ve ek bir maliyet olmaksızın iki hafta içinde yeni bir geliştirici buluyoruz."
+          },
+          {
+            "question": "Geliştiriciler yalnızca benim projemde mi çalışıyor?",
+            "answer": "Evet, geliştiriciler haftada kırk saat boyunca yalnızca sizin projelerinizde çalışırlar. Zamanlarını diğer müşterilerle veya kurum içi farklı görevlerle paylaşmazlar."
+          },
+          {
+            "question": "Fikri mülkiyetimi (IP) nasıl koruyorsunuz?",
+            "answer": "Adayları aramadan önce kapsamlı gizlilik sözleşmeleri (NDA) imzalıyoruz. Tüm fikri mülkiyet ve kod tabanı hakları sözleşmemiz uyarınca tamamen şirketinize ait olur."
+          }
+        ],
+        "technologies": [
+          { "name": "Jira", "icon": "jira" },
+          { "name": "Slack", "icon": "slack" },
+          { "name": "GitHub", "icon": "github" },
+          { "name": "GitLab", "icon": "gitlab" },
+          { "name": "Confluence", "icon": "confluence" },
+          { "name": "Trello", "icon": "trello" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Dedizierte Teams",
+      "shortDescription": "Beschleunigen Sie Ihre Softwareentwicklung mit einem dedizierten, festangestellten Remote-Entwicklerteam für Ihr Unternehmen. Wir rekrutieren Top-Talente, die sich perfekt in Ihre Prozesse und Ihre Unternehmenskultur integrieren.",
+      "fullDescription": "Die Suche nach lokalen Entwicklern ist oft langwierig, kostspielig und von hoher Fluktuation geprägt. Unsere Dedizierten Teams lösen dieses Problem, indem sie Ihnen voll einsatzbereite Remote-Softwareentwickler zur Verfügung stellen, die exklusiv für Ihre Produkte arbeiten. Wir übernehmen das Recruiting, die HR-Verwaltung, die Einhaltung lokaler Steuervorschriften und die Infrastruktur, während Sie die volle technische Führung behalten. Ihre dedizierten Entwickler passen sich Ihren Git-Workflows, Sprint-Plänen und Slack-Kanälen an und fungieren als natürliche Erweiterung Ihres Inhouse-Teams. Ob Backend-Entwickler, React-Spezialisten oder QA-Experten — wir skalieren Ihre Kapazitäten schnell.",
+      "features": [
+        "Gezieltes Sourcing technischer Fachkräfte",
+        "Nahtlose Integration in Sprints und Workflows",
+        "Vollzeitbeschäftigte, dedizierte Remote-Entwickler",
+        "Komplette HR-, Gehalts- und Admin-Verwaltung",
+        "Agile Projektabwicklung und Scrum-Unterstützung",
+        "Bereitstellung sicherer Hardware für Remote-Arbeit",
+        "Schnelle Skalierung von Entwicklungsressourcen",
+        "Direkte technische Kontrolle über das Team"
+      ],
+      "benefits": [
+        "Die Einstellungszeit für Entwickler von Monaten auf Wochen verkürzen",
+        "Bis zu sechzig Prozent der operativen Entwicklungskosten einsparen",
+        "Entwicklungskapazitäten flexibel aufbauen oder reduzieren",
+        "Lokale HR-Verwaltung und Steuerkonformitätsrisiken eliminieren",
+        "Hohe Mitarbeiterbindung und Erhalt des Projektwissens sichern",
+        "Erfahrene Senior-Entwickler in moderne Tech-Stacks integrieren"
+      ],
+      "metaTitle": "Dedizierte Remote-Entwicklerteams | PakSoft",
+      "metaDescription": "Bauen Sie dedizierte Remote-Entwicklerteams auf, die auf Ihre Workflows abgestimmt sind. Wir übernehmen HR und Skalierung der Ressourcen. Kontakt.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Rollen-Mapping & Scoping",
+            "description": "Wir analysieren Ihre Projekt-Roadmap, identifizieren Fachkräftelücken und definieren die erforderlichen Qualifikationen und Erfahrungsstufen. Dies sichert die Erstellung des optimalen Teampofils."
+          },
+          {
+            "step": 2,
+            "title": "Talentsuche & Vorauswahl",
+            "description": "Wir suchen passende Kandidaten in unserem Entwicklernetzwerk und führen technische Tests sowie Sprachprüfungen durch. Nur qualifizierte Ingenieure werden für Interviews vorgeschlagen."
+          },
+          {
+            "step": 3,
+            "title": "Interviews & Teamauswahl",
+            "description": "Sie führen die Interviews mit den qualifizierten Kandidaten und treffen die finale Entscheidung. So stellen wir sicher, dass die Entwickler perfekt zu Ihrer Kultur passen."
+          },
+          {
+            "step": 4,
+            "title": "Onboarding & Tool-Setup",
+            "description": "Wir konfigurieren lokale Arbeitsumgebungen, stellen sichere Hardware bereit und binden Entwickler in Ihre Git-Repositories und Slack ein. Dies ermöglicht produktives Arbeiten ab Tag eins."
+          },
+          {
+            "step": 5,
+            "title": "Sprint-Start & Alignment",
+            "description": "Wir binden das Team in Ihre agilen Sprints, täglichen Stand-ups und Berichtsstrukturen ein. Dies etabliert berechenbare Liefermetriken und transparente Kommunikationskanäle."
+          },
+          {
+            "step": 6,
+            "title": "Laufende Betreuung & Erfolg",
+            "description": "Wir überwachen die Zufriedenheit der Mitarbeiter, verwalten die Gehaltsabrechnungen vor Ort und unterstützen Weiterbildungen. Dies hält die Motivation hoch und senkt die Fluktuation."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Was ist ein dediziertes Entwicklerteam?",
+            "answer": "Ein dediziertes Team ist ein Modell, bei dem eine group von Remote-Entwicklern exklusiv für Ihr Unternehmen arbeitet und sich vollständig in Ihre internen Prozesse und Workflows integriert."
+          },
+          {
+            "question": "Wie unterscheidet sich ein dediziertes Team vom klassischen Projekt-Outsourcing?",
+            "answer": "Beim Outsourcing verwalten wir das Projektziel und die Liefergegenstände. Beim dedizierten Team behalten Sie die direkte Führung über die Entwickler und weisen ihnen tägliche Aufgaben zu."
+          },
+          {
+            "question": "Wie lange dauert es, ein dediziertes Team aufzubauen?",
+            "answer": "Je nach den Anforderungen an die gesuchten Technologien können wir in der Regel innerhalb von zwei bis vier Wochen ein qualifiziertes Remote-Entwicklerteam zusammenstellen."
+          },
+          {
+            "question": "Wer steuert die Remote-Entwickler im Alltag?",
+            "answer": "Sie führen die Entwickler direkt, weisen Aufgaben über Ihre Projekttools (wie Jira) zu und kommunizieren über Ihre Kanäle wie Slack oder Teams."
+          },
+          {
+            "question": "Wie sichern Sie die Leistung und Bindung der Entwickler?",
+            "answer": "Wir stellen jedem Team einen dedizierten HR-Manager an die Seite, der die Zufriedenheit überwacht. Diese proaktive Betreuung sichert eine hohe Bindung und Projektkontinuität."
+          },
+          {
+            "question": "Was passiert, wenn ein Entwickler nicht ins Team passt?",
+            "answer": "Sollte ein Entwickler Ihre Erwartungen nicht erfüllen, leiten wir umgehend einen Austauschprozess ein und suchen innerhalb von zwei Wochen kostenfrei einen passenden Ersatz."
+          },
+          {
+            "question": "Arbeiten die Entwickler in Vollzeit an meinem Projekt?",
+            "answer": "Ja, die Entwickler arbeiten vierzig Stunden pro Woche ausschließlich an Ihren Aufgaben. Sie teilen ihre Arbeitszeit nicht mit anderen Kunden oder Projekten."
+          },
+          {
+            "question": "Wie wird mein geistiges Eigentum (IP) geschützt?",
+            "answer": "Wir unterzeichnen vor dem Sourcing umfassende Vertraulichkeitsvereinbarungen. Alle Rechte am Code und geistigen Eigentum liegen vertragsgemäß ausschließlich bei Ihrem Unternehmen."
+          }
+        ],
+        "technologies": [
+          { "name": "Jira", "icon": "jira" },
+          { "name": "Slack", "icon": "slack" },
+          { "name": "GitHub", "icon": "github" },
+          { "name": "GitLab", "icon": "gitlab" },
+          { "name": "Confluence", "icon": "confluence" },
+          { "name": "Trello", "icon": "trello" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "مخصوص ڈیولپمنٹ ٹیمیں",
+      "shortDescription": "ایک سرشار، کل وقتی ریموٹ ڈیولپمنٹ ٹیم کے ساتھ اپنے سافٹ ویئر ورک فلو کو تیز کریں۔ ہم بہترین تکنیکی صلاحیتوں کو تلاش کرتے ہیں جو آپ کی کمپنی سے جڑتی ہیں۔",
+      "fullDescription": "مقامی ڈویلپرز کی خدمات حاصل کرنا سست، مہنگا اور ٹیم چھوڑ جانے کے خطرات سے دوچار ہوتا ہے۔ ہماری مخصوص ٹیم سروسز آپ کو ایسے ریموٹ سافٹ ویئر انجینئرز فراہم کرتی ہیں جو صرف آپ کے پروڈکٹس پر کام کرتے ہیں۔ ہم بھرتی، انسانی وسائل (HR)، مقامی ٹیکس اور دفتری ضروریات کو خود سنبھالتے ہیں، جبکہ تکنیکی انتظام مکمل طور پر آپ کے کنٹرول میں رہتا ہے۔ آپ کی مخصوص ٹیم آپ کے Git ورک فلو، اسپرنٹ شیڈولز اور Slack چینلز کے مطابق کام کرتی ہے۔ چاہے آپ کو سینئر بیک اینڈ ڈویلپرز، فرنٹ اینڈ ری ایکٹ انجینئرز، یا کوالٹی ٹیسٹنگ کے ماہرین کی ضرورت ہو، ہم ریلیز کی ڈیڈ لائنز پوری کرنے کے لیے وسائل کو تیزی سے بڑھاتے ہیں۔",
+      "features": [
+        "کاروباری ضرورت کے مطابق تکنیکی صلاحیتوں کی تلاش",
+        "اسپرنٹس اور ورک فلو کی ہم آہنگ انٹیگریشن",
+        "کل وقتی مخصوص ریموٹ سافٹ ویئر ڈویلپرز",
+        "انسانی وسائل (HR)، پے رول اور انتظامی مینجمنٹ",
+        "ایجائل پروجیکٹ ڈیلیوری اور سکرم سپورٹ",
+        "محفوظ اور مخصوص ریموٹ ہارڈویئر کا سیٹ اپ",
+        "ملازمین کے وسائل کو تیزی سے بڑھانے کی سہولت",
+        "ٹیم پر براہ راست تکنیکی کنٹرول اور نگرانی"
+      ],
+      "benefits": [
+        "ڈویلپرز کی بھرتی کا وقت مہینوں سے کم کر کے ہفتوں پر لائیں",
+        "تربیتی اور آپریشنل لاگت میں ساٹھ فیصد تک بچت کریں",
+        "کاروباری ضرورت کے مطابق ٹیم کی تعداد کم یا زیادہ کریں",
+        "مقامی سطح پر HR کے اخراجات اور ٹیکس کے جھنجھٹ ختم کریں",
+        "ڈویلپر کے طویل قیام اور پروجیکٹ کی معلومات کا تحفظ یقینی بنائیں",
+        "جدید ٹیکنالوجیز میں مہارت رکھنے والے سینئر ڈویلپرز کو شامل کریں"
+      ],
+      "metaTitle": "مخصوص ریموٹ ڈویلپمنٹ ٹیمیں | PakSoft",
+      "metaDescription": "اپنے ورک فلو کے مطابق مخصوص ریموٹ سافٹ ویئر ٹیمیں بنائیں۔ ہم ڈویلپرز تلاش کرتے ہیں، HR سنبھالتے ہیں اور کام کو اسکیل کرتے ہیں۔ رابطہ کریں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "کرداروں کا تعین اور اسکوپنگ",
+            "description": "ہم آپ کے پروجیکٹ کے نقشے کا جائزہ لیتے ہیں، مطلوبہ مہارتوں کی نشاندہی کرتے ہیں اور ٹیم کا خاکہ تیار کرتے ہیں۔ اس سے ٹیم بنانے میں مدد ملتی ہے۔"
+          },
+          {
+            "step": 2,
+            "title": "امیدواروں کی تلاش اور اسکریننگ",
+            "description": "ہم اپنے ڈویلپر نیٹ ورک سے امیدوار تلاش کرتے ہیں اور ان کے کوڈ ٹیسٹ لیتے ہیں۔ اس سے یقینی ہوتا ہے کہ صرف بہترین انجینئرز ہی انٹرویو تک پہنچیں۔"
+          },
+          {
+            "step": 3,
+            "title": "کلائنٹ انٹرویو اور فائنل سلیکشن",
+            "description": "آپ شارٹ لسٹ کیے گئے امیدواروں کے براہ راست انٹرویو لیتے ہیں اور حتمی فیصلہ کرتے ہیں۔ اس سے ڈویلپر کا کمپنی کلچر سے ہم آہنگ ہونا یقینی ہوتا ہے۔"
+          },
+          {
+            "step": 4,
+            "title": "آن بورڈنگ اور ٹولز سیٹ اپ",
+            "description": "ہم ڈویلپرز کے لوکل سسٹمز ترتیب دیتے ہیں، انہیں سیکیور ہارڈویئر دیتے ہیں اور آپ کے Git اور Slack سے جوڑتے ہیں تاکہ کام پہلے دن سے شروع ہو۔"
+          },
+          {
+            "step": 5,
+            "title": "اسپرنٹ کا آغاز اور ہم آہنگی",
+            "description": "ہم ٹیم کو روزانہ کی میٹنگز، اسپرنٹ شیڈولز اور رپورٹنگ لائنز کے ساتھ مربوط کرتے ہیں۔ اس سے کام کی رفتار اور معیار کا پتا چلتا رہتا ہے۔"
+          },
+          {
+            "step": 6,
+            "title": "مسلسل کامیابی کا انتظام",
+            "description": "ہم ٹیم کی کارکردگی پر نظر رکھتے ہیں، مقامی پے رول سنبھالتے ہیں اور پیشہ ورانہ ٹریننگ فراہم کرتے ہیں۔ اس سے ڈویلپر کا حوصلہ بلند رہتا ہے۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "مخصوص ڈیولپمنٹ ٹیم (dedicated team) کیا ہوتی ہے؟",
+            "answer": "یہ ایک ایسا ماڈل ہے جہاں ریموٹ ڈویلپرز کا ایک گروپ خاص طور پر آپ کے پروجیکٹس پر کام کرتا ہے اور آپ کی کمپنی کے اصولوں کے مطابق چلتا ہے۔"
+          },
+          {
+            "question": "مخصوص ٹیم اور عام پروجیکٹ آؤٹ سورسنگ میں کیا فرق ہے؟",
+            "answer": "پرجیکٹ آؤٹ سورسنگ میں کام کی فراہمی ہمارے ہاتھ میں ہوتی ہے۔ مخصوص ٹیم میں آپ ڈویلپرز کو براہ راست سنبھالتے ہیں اور ان کے روزانہ کے کام خود طے کرتے ہیں۔"
+          },
+          {
+            "question": "ایک مخصوص ٹیم تیار کرنے میں کتنا وقت لگتا ہے؟",
+            "answer": "ٹیکنالوجی اور مطلوبہ مہارتوں کے لحاظ سے، ہم عام طور پر دو سے چار ہفتوں کے اندر ایک بہترین ریموٹ ڈویلپمنٹ ٹیم تیار کر سکتے ہیں۔"
+          },
+          {
+            "question": "ان ریموٹ ڈویلپرز کو روزانہ کون مانیٹر کرتا ہے؟",
+            "answer": "آپ ان ڈویلپرز کو براہ راست مانیٹر کرتے ہیں، انہیں Jira جیسے ٹولز کے ذریعے کام دیتے ہیں اور Slack یا Teams پر رابطہ رکھتے ہیں۔"
+          },
+          {
+            "question": "آپ ڈویلپرز کی کارکردگی اور برقراری کو کیسے یقینی بناتے ہیں؟",
+            "answer": "ہم ٹیم کی مدد کے لیے ایک مخصوص HR مینیجر لگاتے ہیں جو کارکردگی اور اطمینان پر نظر رکھتا ہے۔ اس سے ڈویلپرز طویل عرصے تک ٹیم کا حصہ رہتے ہیں۔"
+          },
+          {
+            "question": "اگر کوئی ڈویلپر کام کے معیار پر پورا نہ اترے تو کیا ہوتا ہے؟",
+            "answer": "ہم فوری طور پر تبدیلی کا عمل شروع کرتے ہیں اور بغیر کسی اضافی لاگت کے دو ہفتوں کے اندر اس کی جگہ دوسرا ڈویلپر لا کر دیتے ہیں۔"
+          },
+          {
+            "question": "کیا ڈویلپرز صرف میرے پروجیکٹ پر ہی کام کرتے ہیں؟",
+            "answer": "جی ہاں، ڈویلپرز ہفتے میں چالیس گھنٹے صرف اور صرف آپ کے پروجیکٹس کے لیے وقف کرتے ہیں۔ وہ اپنا وقت کسی دوسرے کلائنٹ کو نہیں دیتے۔"
+          },
+          {
+            "question": "آپ میرے کوڈ اور آئیڈیاز کے تحفظ کی کیا ضمانت دیتے ہیں؟",
+            "answer": "ہم کام شروع کرنے سے پہلے سخت رازداری کا معاہدہ (NDA) کرتے ہیں۔ معاہدے کے تحت تمام کوڈز اور حقوق مکمل طور پر آپ کی کمپنی کے ملکیت ہوتے ہیں۔"
+          }
+        ],
+        "technologies": [
+          { "name": "Jira", "icon": "jira" },
+          { "name": "Slack", "icon": "slack" },
+          { "name": "GitHub", "icon": "github" },
+          { "name": "GitLab", "icon": "gitlab" },
+          { "name": "Confluence", "icon": "confluence" },
+          { "name": "Trello", "icon": "trello" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "فرق العمل المخصصة",
+      "shortDescription": "سرّع عمليات هندسة البرمجيات لديك بفريق تطوير مخصص يعمل بدوام كامل عن بُعد. نوفر لك أفضل الكفاءات التقنية التي تنسجم تماماً مع ثقافة عملك وأهدافك.",
+      "fullDescription": "غالباً ما يكون تعيين المطورين المحليين بطيئاً ومكلفاً ويخضع لمعدلات دوران وظيفي مرتفعة. تحل خدمات فرق العمل المخصصة لدينا هذه المشكلة من خلال توفير مهندسي برمجيات مخصصين يعملون عن بُعد بالكامل وحصرياً لتطوير منتجاتك. نتولى عمليات التوظيف والموارد البشرية والامتثال الضريبي المحلي وتوفير المكاتب، بينما تحتفظ أنت بالإدارة التقنية المباشرة. ينسجم المطورون المخصصون معك في مسارات عمل Git وجداول سباقات العمل وقنوات التواصل، ليعملوا كامتداد طبيعي لفريقك الداخلي. سواء كنت بحاجة لمطوري واجهات خلفية أو واجهات أمامية أو خبراء جودة، نوفرهم لك بسرعة.",
+      "features": [
+        "توظيف كفاءات تقنية مخصصة للاحتياجات",
+        "تكامل تام مع سباقات العمل ومسارات الإنتاج",
+        "مطورو برمجيات يعملون عن بُعد بدوام كامل",
+        "إدارة شؤون الموظفين والرواتب والامتثال الإداري",
+        "تسليم المشاريع بنظام الأتمتة الرشيقة وسكروم",
+        "توفير أجهزة حاسوب وأنظمة عمل ريموت آمنة",
+        "توسيع نطاق الموارد الهندسية وتعديلها بسرعة",
+        "التحكم الإداري والتقني المباشر بفريق العمل"
+      ],
+      "benefits": [
+        "تقليل وقت تعيين المطورين من شهور إلى أسابيع",
+        "توفير ما يصل إلى ستين بالمائة من التكاليف الهندسية",
+        "تعديل حجم الفريق بالزيادة أو النقصان بديناميكية تامة",
+        "إلغاء أعباء الموارد البشرية والامتثال للضرائب المحلية",
+        "ضمان بقاء المطورين لفترات طويلة واستمرارية المعرفة بالمشروع",
+        "تعيين مطورين محترفين ذوي خبرة في أحدث التقنيات"
+      ],
+      "metaTitle": "فرق تطوير البرمجيات المخصصة عن بعد | PakSoft",
+      "metaDescription": "ابنِ فريق تطوير مخصص يعمل عن بعد بالتوافق مع مسارات عملك. نتولى الموارد البشرية وتوسيع النطاق لضمان النجاح. اتصل بنا.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تحديد الأدوار ونطاق العمل",
+            "description": "ندقق خريطة طريق مشروعك، ونحدد الفجوات في المهارات المطلوبة، ونضع مواصفات الخبرة الفنية. يساعدنا هذا في تخطيط هيكل الفريق المثالي."
+          },
+          {
+            "step": 2,
+            "title": "البحث وتصفية المرشحين",
+            "description": "نبحث عن المرشحين في شبكتنا التقنية الخاصة، ونخضعهم لاختبارات برمجية واختبارات لغة. يضمن هذا وصول المهندسين المؤهلين فقط للمقابلات."
+          },
+          {
+            "step": 3,
+            "title": "مقابلة العميل والاختيار النهائي",
+            "description": "تقابل المرشحين المؤهلين مباشرة وتتخذ قرارات التعيين النهائية بنفسك. يضمن ذلك توافق المطورين المختارين مع ثقافة شركتك وبيئة عملها."
+          },
+          {
+            "step": 4,
+            "title": "التهيئة وإعداد بيئة العمل",
+            "description": "نهيئ البيئات المحلية، ونوفر أجهزة عمل آمنة، ونربط المطورين بمستودعات الأكواد وقنوات الاتصال. يتيح هذا بدء الإنتاج من اليوم الأول."
+          },
+          {
+            "step": 5,
+            "title": "إطلاق سباق العمل والتنسيق",
+            "description": "ننسق الفريق مع دورات سباقات العمل الرشيقة والاجتماعات اليومية وخطوط التقارير المعتمدة لديك. يضمن هذا تسليم المهام بكفاءة وشفافية."
+          },
+          {
+            "step": 6,
+            "title": "إدارة النجاح المستمرة",
+            "description": "نراقب رضا المطورين، وندير شؤون الرواتب المحلية، ونسهل برامج التدريب المهني المستمرة. يحافظ هذا على مستويات الدافعية ويقلل الاستقالات."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما هو نموذج فريق العمل المخصص؟",
+            "answer": "هو نموذج عمل يعمل فيه فريق من مهندسي البرمجيات عن بعد لصالح شركتك فقط، ويندمجون بالكامل في عملياتك الإدارية ومسارات عملك."
+          },
+          {
+            "question": "كيف يختلف الفريق المخصص عن الاستعانة بمصادر خارجية للمشاريع؟",
+            "answer": "في أوت سورس المشاريع، ندير نحن نطاق العمل والتسليمات. أما في نموذج الفريق المخصص، فتحتفظ بالإدارة المباشرة للمطورين وتحدد مهامهم اليومية بنفسك."
+          },
+          {
+            "question": "كم من الوقت يستغرق تكوين فريق عمل مخصص؟",
+            "answer": "نستطيع عادةً تحديد واختيار فريق تطوير مؤهل خلال أسبوعين إلى أربعة أسابيع، اعتماداً على التخصصات البرمجية والخبرات المطلوبة لمشروعك."
+          },
+          {
+            "question": "من يدير المطورين عن بعد بشكل يومي؟",
+            "answer": "تتولى أنت إدارة المطورين مباشرة، حيث توزع المهام عبر أدوات إدارة المشاريع لديك (مثل Jira) وتتواصل معهم عبر قنواتك مثل Slack."
+          },
+          {
+            "question": "كيف تضمنون إنتاجية المطورين واستمرارهم مع الشركة؟",
+            "answer": "نعين مسؤول موارد بشرية مخصصاً لمتابعة الفريق وتقييم رضاهم وحل مشكلاتهم. تضمن هذه الرعاية الاستباقية الحفاظ على استمرارية المعرفة بالمشروع."
+          },
+          {
+            "question": "ماذا يحدث إذا تبين أن المطور غير مناسب للعمل؟",
+            "answer": "إذا لم يلبِّ المطور توقعات الأداء الخاصة بك، نبدأ عملية الاستبدال فوراً ونوفر مطوراً بديلاً خلال أسبوعين دون أي تكاليف إضافية."
+          },
+          {
+            "question": "هل يعمل المطورون بدوام كامل لصالح مشروعي فقط؟",
+            "answer": "نعم، يعمل المطورون أربعين ساعة أسبوعياً حصرياً لصالح مشاريعك، ولا يشاركون وقتهم أو جهدهم مع أي عملاء آخرين أو مشاريع خارجية."
+          },
+          {
+            "question": "كيف تحمون حقوق الملكية الفكرية الخاصة بشركتي؟",
+            "answer": "نوقع اتفاقيات سرية معلومات (NDA) صارمة قبل بدء العمل. وتعود جميع حقوق الملكية الفكرية وقواعد الأكواد حصرياً لشركتك بموجب العقد المبرم."
+          }
+        ],
+        "technologies": [
+          { "name": "Jira", "icon": "jira" },
+          { "name": "Slack", "icon": "slack" },
+          { "name": "GitHub", "icon": "github" },
+          { "name": "GitLab", "icon": "gitlab" },
+          { "name": "Confluence", "icon": "confluence" },
+          { "name": "Trello", "icon": "trello" }
+        ]
+      }
+    }
+  },
+  "developer-outsourcing": {
+    "en": {
+      "name": "Developer Outsourcing",
+      "shortDescription": "Scale your development capacity instantly with highly skilled onshore and offshore software engineers. We provide flexible staff augmentation services to keep your projects on schedule.",
+      "fullDescription": "Fulfilling specialized development requirements or handling unexpected project spikes is difficult with a fixed internal team. Our Developer Outsourcing services provide flexible access to certified software engineers, QA specialists, and DevOps professionals. We handle the sourcing, vetting, and employment overhead, allowing you to scale your team up or down dynamically based on project workloads. Our outsourced developers are fluent in modern stacks like React, Next.js, Node.js, and Python, adapting quickly to your coding standards and release pipelines. Whether you need a single developer for a niche task or an entire team to execute a complex migration, we deliver reliable, high-quality development resources to accelerate your product roadmap.",
+      "features": [
+        "Flexible Developer Staff Augmentation",
+        "Strict Candidate Vetting and Code Screening",
+        "Expert Engineers in React, Node, and Python",
+        "SaaS and Mobile App Development Talent",
+        "Flexible Short-Term and Long-Term Contracts",
+        "Seamless Integration with Client DevOps Pipelines",
+        "Dedicated Project Management and QA Oversight",
+        "Fast Resource Deployment and Replacement"
+      ],
+      "benefits": [
+        "Scale your development capacity rapidly without long-term commitments",
+        "Access a global talent pool of vetted software engineers",
+        "Reduce hiring costs and eliminate employee overhead expenses",
+        "Keep projects on track during peak workloads and deadlines",
+        "Leverage specialized skills for complex technical challenges",
+        "Maintain complete control over codebase and architectural decisions"
+      ],
+      "metaTitle": "Software Developer Outsourcing Services | PakSoft",
+      "metaDescription": "Outsource software development to vetted, high-performing engineers. We offer flexible staff augmentation for React, Node, Python, and more. Contact us.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Skill Requirements Audit",
+            "description": "We review your active project goals, timeline deadlines, and specific technology stack requirements. This allows us to define the precise candidate profiles needed."
+          },
+          {
+            "step": 2,
+            "title": "Vetted Candidate Sourcing",
+            "description": "We search our active network and screen engineers through rigorous technical challenges and communication tests. This filter ensures only top-tier talent is selected."
+          },
+          {
+            "step": 3,
+            "title": "Client Evaluation & Technical Select",
+            "description": "You review candidate profiles, inspect code samples, and conduct final technical interviews. This step guarantees complete confidence in the selected developer's capabilities."
+          },
+          {
+            "step": 4,
+            "title": "Onboarding & Access Integration",
+            "description": "We set up repository permissions, database access, and communication tool accounts for the developers. This enables them to begin writing code immediately."
+          },
+          {
+            "step": 5,
+            "title": "Development Execution & Sync",
+            "description": "The developers work under your direction, participating in your team meetings and code review loops. This maintains project alignment and quality standards."
+          },
+          {
+            "step": 6,
+            "title": "Delivery Assessment & Scaling",
+            "description": "We conduct regular performance reviews and manage contracts to scale development capacity up or down. This offers ultimate operational flexibility for your budget."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is developer outsourcing?",
+            "answer": "Developer outsourcing is a service where external software engineers are hired to support your projects, helping you scale development capacity without full-time employee overhead."
+          },
+          {
+            "question": "How do you vet the developers before presenting them to us?",
+            "answer": "We run automated coding challenges, review their past system contributions, and conduct technical interviews. This rigorous screening ensures they have senior-level engineering capabilities."
+          },
+          {
+            "question": "Can we hire outsourced developers for short-term projects?",
+            "answer": "Yes, we offer flexible contracts starting from three months. This allows you to handle seasonal workloads or launch specific project modules without long-term commitments."
+          },
+          {
+            "question": "Which programming languages and frameworks do your developers support?",
+            "answer": "We support React, Next.js, Node.js, Python, Kotlin, Swift, and PHP, alongside cloud and database technologies like AWS, PostgreSQL, MongoDB, and Docker."
+          },
+          {
+            "question": "Who owns the code written by outsourced developers?",
+            "answer": "Your company retains absolute ownership of all code, documentation, and intellectual property developed during the outsourcing contract. This is explicitly stated in our agreements."
+          },
+          {
+            "question": "How do you handle time zone differences?",
+            "answer": "We align our developers' working hours to provide at least four hours of overlap with your timezone, ensuring smooth daily syncs and real-time collaboration."
+          },
+          {
+            "question": "What happens if a developer needs to take sick leave?",
+            "answer": "We manage temporary absences and can provide backup resources for critical tasks. If a developer is unavailable long-term, we source a replacement within two weeks."
+          },
+          {
+            "question": "How does billing work for developer outsourcing?",
+            "answer": "We bill on a monthly time-and-materials basis at a fixed rate per developer. There are no hidden fees, recruiting costs, or HR administration expenses."
+          }
+        ],
+        "technologies": [
+          { "name": "React", "icon": "react" },
+          { "name": "Next.js", "icon": "nextdotjs" },
+          { "name": "Node.js", "icon": "nodedotjs" },
+          { "name": "Python", "icon": "python" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "AWS", "icon": "aws" },
+          { "name": "Docker", "icon": "docker" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Geliştirici Dış Kaynak Kullanımı",
+      "shortDescription": "Nitelikli yerli ve yabancı yazılım mühendisleriyle geliştirme kapasitenizi anında ölçeklendirin. Projelerinizi planlanan sürede tamamlamak amacıyla esnek personel desteği ve yazılım dış kaynak hizmetleri sunuyoruz.",
+      "fullDescription": "Özel geliştirme gereksinimlerini karşılamak veya beklenmeyen proje artışlarını yönetmek sabit bir iç ekiple zordur. Geliştirici Dış Kaynak Kullanımı hizmetlerimiz sertifikalı yazılım mühendislerine, QA uzmanlarına ve DevOps uzmanlarına esnek erişim sağlar. Kaynak bulma, inceleme ve İK yüklerini biz üstlenerek, ekibinizi proje yüküne göre dinamik olarak ölçeklendirmenize olanak tanıyoruz. Dış kaynaklı yazılımcılarımız React, Next.js, Node.js ve Python gibi modern teknolojilere hakimdir ve kodlama standartlarınıza hızlıca uyum sağlar. İster niş bir görev için tek bir yazılımcıya ister karmaşık bir göç için tüm bir ekibe ihtiyacınız olsun, güvenilir kaynaklar sağlıyoruz.",
+      "features": [
+        "Esnek Geliştirici Personel Desteği",
+        "Sıkı Aday Değerlendirme ve Kod İncelemesi",
+        "React, Node ve Python Uzmanı Mühendisler",
+        "SaaS ve Mobil Uygulama Geliştirme Yetenekleri",
+        "Esnek Kısa Vadeli ve Uzun Vadeli Sözleşmeler",
+        "Müşteri DevOps Süreçleriyle Sorunsuz Entegrasyon",
+        "Adanmış Proje Yönetimi ve QA Gözetimi",
+        "Hata Yönetimi ve İstisna Bildirimleri Günlüğü"
+      ],
+      "benefits": [
+        "Uzun vadeli taahhütler olmadan geliştirme kapasitenizi hızla artırın",
+        "Denetlenmiş yazılım mühendislerinden oluşan küresel yetenek havuzuna erişin",
+        "İşe alım maliyetlerini azaltın ve personel genel giderlerini ortadan kaldırın",
+        "Yoğun iş yükleri ve teslim tarihlerinde projeleri yolunda tutun",
+        "Karmaşık teknik zorluklar için özel becerilerden yararlanın",
+        "Kod tabanı ve mimari kararlar üzerinde tam kontrol sahibi olun"
+      ],
+      "metaTitle": "Geliştirici Dış Kaynak Hizmetleri | PakSoft",
+      "metaDescription": "Yazılım geliştirmeyi nitelikli ve yüksek performanslı mühendislere devredin. React, Node ve Python için esnek personel desteği sağlıyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Beceri Gereksinimleri Denetimi",
+            "description": "Aktif proje hedeflerinizi, teslim tarihlerini ve özel teknoloji yığını gereksinimlerinizi inceliyoruz. Bu, tam olarak gereken aday profillerini tanımlamamızı sağlar."
+          },
+          {
+            "step": 2,
+            "title": "Denetlenmiş Aday Arama",
+            "description": "Aktif ağımızı tarıyor ve mühendisleri zorlu teknik testler ile iletişim kontrollerinden geçiriyoruz. Bu filtre, yalnızca üst düzey yeteneklerin seçilmesini sağlar."
+          },
+          {
+            "step": 3,
+            "title": "Müşteri Değerlendirmesi & Teknik Seçim",
+            "description": "Aday profillerini inceler, kod örneklerini değerlendirir ve teknik mülakatlar yaparsınız. Bu adım, seçilen yazılımcının yeteneklerine tam güven duymanızı sağlar."
+          },
+          {
+            "step": 4,
+            "title": "Oryantasyon & Erişim Entegrasyonu",
+            "description": "Geliştiriciler için depo izinlerini, veritabanı erişimini ve iletişim aracı hesaplarını kuruyoruz. Bu, onların hemen kod yazmaya başlamalarını sağlar."
+          },
+          {
+            "step": 5,
+            "title": "Geliştirme Yürütme & Senkronizasyon",
+            "description": "Geliştiriciler sizin yönlendirmeniz altında çalışır, ekip toplantılarınıza ve kod inceleme süreçlerinize katılır. Bu, proje uyumunu ve kalite standartlarını korur."
+          },
+          {
+            "step": 6,
+            "title": "Teslimat Değerlendirmesi & Ölçeklendirme",
+            "description": "Geliştirme kapasitesini artırmak veya azaltmak için düzenli performans değerlendirmeleri yapıyor ve sözleşmeleri yönetiyoruz. Bu, bütçeniz için operasyonel esneklik sunar."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Geliştirici dış kaynak kullanımı nedir?",
+            "answer": "Geliştirici dış kaynak kullanımı, projelerinizi desteklemek amacıyla harici yazılım mühendislerinin işe alınması ve tam zamanlı personel maliyetleri olmadan geliştirme kapasitesinin artırılması hizmetidir."
+          },
+          {
+            "question": "Geliştiricileri bize sunmadan önce nasıl denetliyorsunuz?",
+            "answer": "Otomatik kodlama testleri uyguluyor, geçmiş sistem katkılarını inceliyor ve teknik mülakatlar yapıyoruz. Bu sıkı tarama, kıdemli düzeyde mühendislik yeteneklerine sahip olmalarını sağlar."
+          },
+          {
+            "question": "Kısa vadeli projeler için dış kaynaklı yazılımcı kiralayabilir miyiz?",
+            "answer": "Evet, üç aydan başlayan esnek sözleşmeler sunuyoruz. Bu, uzun vadeli taahhütler altına girmeden mevsimsel iş yüklerini yönetmenizi veya belirli proje modüllerini başlatmanızı sağlar."
+          },
+          {
+            "question": "Geliştiricileriniz hangi programlama dillerini ve çerçeveleri destekliyor?",
+            "answer": "React, Next.js, Node.js, Python, Kotlin, Swift ve PHP'nin yanı sıra AWS, PostgreSQL, MongoDB ve Docker gibi bulut ve veritabanı teknolojilerini destekliyoruz."
+          },
+          {
+            "question": "Dış kaynaklı yazılımcılar tarafından yazılan kodların mülkiyeti kime aittir?",
+            "answer": "Şirketiniz, dış kaynak kullanımı sözleşmesi sırasında geliştirilen tüm kodların, belgelerin ve fikri mülkiyetin mutlak mülkiyetine sahiptir. Bu, sözleşmelerimizde açıkça belirtilmiştir."
+          },
+          {
+            "question": "Saat farklarını nasıl yönetiyorsunuz?",
+            "answer": "Geliştiricilerimizin çalışma saatlerini, saat diliminizle en az dört saatlik bir örtüşme sağlayacak şekilde ayarlıyoruz; bu da sorunsuz günlük senkronizasyon ve gerçek zamanlı iş birliği sağlar."
+          },
+          {
+            "question": "Bir geliştiricinin hastalık izni alması gerekirse ne olur?",
+            "answer": "Geçici devamsızlıkları yönetiyor ve kritik görevler için yedek kaynaklar sağlayabiliyoruz. Bir geliştirici uzun süre uygun olamazsa, iki hafta içinde yeni bir geliştirici sağlıyoruz."
+          },
+          {
+            "question": "Dış kaynak kullanımı için faturalandırma nasıl çalışır?",
+            "answer": "Geliştirici başına sabit bir ücret üzerinden aylık zaman ve malzeme bazında faturalandırıyoruz. Gizli ücretler, işe alım maliyetleri veya İK yönetim giderleri yoktur."
+          }
+        ],
+        "technologies": [
+          { "name": "React", "icon": "react" },
+          { "name": "Next.js", "icon": "nextdotjs" },
+          { "name": "Node.js", "icon": "nodedotjs" },
+          { "name": "Python", "icon": "python" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "AWS", "icon": "aws" },
+          { "name": "Docker", "icon": "docker" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Entwickler-Outsourcing",
+      "shortDescription": "Skalieren Sie Ihre Entwicklungskapazitäten sofort mit hochqualifizierten Software-Entwicklern aus unserem Netzwerk. Wir bieten flexible Personalverstärkung, um Ihre Software-Projekte termingerecht und effizient zu realisieren.",
+      "fullDescription": "Spezifische Entwicklungsanforderungen zu erfüllen oder unerwartete Lastspitzen zu bewältigen, ist mit einem festen internen Team oft schwierig. Unsere Entwickler-Outsourcing-Services bieten flexiblen Zugriff auf zertifizierte Software-Entwickler, QA-Spezialisten und DevOps-Experten. Wir übernehmen das Sourcing, die Überprüfung und die administrativen Aufgaben, sodass Sie Ihr Team je nach Auslastung dynamisch skalieren können. Unsere Entwickler beherrschen moderne Stacks wie React, Next.js, Node.js und Python und passen sich schnell Ihren Codierungsstandards und Release-Pipelines an. Ob ein einzelner Entwickler für eine Nischenaufgabe oder ein ganzes Team für eine komplexe Migration — wir liefern die passenden Ressourcen.",
+      "features": [
+        "Flexible Personalverstärkung durch Entwickler",
+        "Strenge Vorauswahl und Überprüfung der Programmierfähigkeiten",
+        "Erfahrene Ingenieure für React, Node.js und Python",
+        "Spezialisten für SaaS- und Mobile-App-Entwicklung",
+        "Flexible Verträge für kurze und lange Laufzeiten",
+        "Nahtlose Einbindung in Ihre DevOps-Pipelines",
+        "Dediziertes Projektmanagement und QA-Überwachung",
+        "Schnelle Bereitstellung und Austausch von Ressourcen"
+      ],
+      "benefits": [
+        "Entwicklungskapazitäten schnell skalieren ohne langfristige Bindung",
+        "Zugriff auf einen globalen Talentpool geprüfter Software-Entwickler",
+        "Rekrutierungskosten senken und administrative Personalnebenkosten eliminieren",
+        "Projekte auch bei hohen Arbeitsbelastungen im Zeitplan halten",
+        "Spezialisiertes Fachwissen für komplexe technische Herausforderungen nutzen",
+        "Die volle Kontrolle über Codebasis und Architekturentscheidungen behalten"
+      ],
+      "metaTitle": "Software Developer Outsourcing Services | PakSoft",
+      "metaDescription": "Lagern Sie die Softwareentwicklung an qualifizierte Entwickler aus. Wir bieten flexible Personalverstärkung für React, Node, Python. Kontakt.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Analyse der Qualifikationen",
+            "description": "Wir analysieren Ihre Projektziele, Meilensteine und die genutzten Technologien, um die genauen Profile der benötigten Entwickler zu definieren."
+          },
+          {
+            "step": 2,
+            "title": "Sourcing geprüfter Kandidaten",
+            "description": "Wir filtern unsere Datenbank und testen Entwickler durch technische Aufgaben und Kommunikationsprüfungen, um höchste Qualität der Kandidaten zu sichern."
+          },
+          {
+            "step": 3,
+            "title": "Kundenbewertung & technische Auswahl",
+            "description": "Sie sichten die Profile, prüfen Codebeispiele und führen abschließende technische Interviews. Dies garantiert volles Vertrauen in die Fähigkeiten der Entwickler."
+          },
+          {
+            "step": 4,
+            "title": "Onboarding & Systemfreigaben",
+            "description": "Wir richten Repository-Berechtigungen, Datenbankzugriffe und Kommunikationskonten für die Entwickler ein, damit diese sofort produktiv Code schreiben können."
+          },
+          {
+            "step": 5,
+            "title": "Entwicklung & Projektabstimmung",
+            "description": "Die Entwickler arbeiten unter Ihrer Führung und nehmen an Teambesprechungen und Code-Reviews teil, um Qualitätsstandards kontinuierlich zu wahren."
+          },
+          {
+            "step": 6,
+            "title": "Leistungsbewertung & Skalierung",
+            "description": "Wir führen regelmäßige Performance-Gespräche und verwalten die Verträge zur flexiblen Kapazitätsanpassung, um maximale Budgetkontrolle zu bieten."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Was versteht man unter Entwickler-Outsourcing?",
+            "answer": "Entwickler-Outsourcing ist ein Service, bei dem externe Software-Entwickler zur Unterstützung Ihrer Projekte bereitgestellt werden, um Kapazitäten ohne feste HR-Nebenkosten aufzubauen."
+          },
+          {
+            "question": "Wie überprüfen Sie die Entwickler vor der Vorstellung?",
+            "answer": "Wir führen automatisierte Programmiertests durch, bewerten frühere Projektleistungen und halten technische Interviews ab. So sichern wir das Niveau der Senior-Entwickler."
+          },
+          {
+            "question": "Können wir Entwickler für kurzfristige Projekte buchen?",
+            "answer": "Ja, wir bieten flexible Verträge mit Laufzeiten ab drei Monaten an. So können Sie saisonale Spitzen abdecken, ohne langfristige Verpflichtungen einzugehen."
+          },
+          {
+            "question": "Welche Programmiersprachen und Frameworks unterstützen die Entwickler?",
+            "answer": "Wir unterstützen React, Next.js, Node.js, Python, Kotlin, Swift und PHP sowie Cloud- und Datenbanktechnologien wie AWS, PostgreSQL, MongoDB und Docker."
+          },
+          {
+            "question": "Wer besitzt den vom externen Entwickler geschriebenen Code?",
+            "answer": "Ihr Unternehmen behält die ausschließlichen Rechte an allen Codes, Dokumenten und geistigem Eigentum. Dies ist vertraglich in unseren Vereinbarungen festgeschrieben."
+          },
+          {
+            "question": "Wie gehen Sie mit Zeitzonenunterschieden um?",
+            "answer": "Wir passen die Arbeitszeiten unserer Entwickler so an, dass mindestens vier Stunden Überschneidung mit Ihrer Zeitzone vorliegen, um Abstimmungen zu erleichtern."
+          },
+          {
+            "question": "Was passiert, wenn ein Entwickler krankheitsbedingt ausfällt?",
+            "answer": "Wir verwalten Krankheitsfälle und stellen bei kritischen Meilensteinen Backup-Ressourcen bereit. Bei langfristigen Ausfällen suchen wir innerhalb von zwei Wochen Ersatz."
+          },
+          {
+            "question": "Wie funktioniert die Abrechnung beim Entwickler-Outsourcing?",
+            "answer": "Wir rechnen monatlich auf Basis von Stundennachweisen zu einem festen Satz pro Entwickler ab. Es gibt keine verdeckten Vermittlungs- oder HR-Kosten."
+          }
+        ],
+        "technologies": [
+          { "name": "React", "icon": "react" },
+          { "name": "Next.js", "icon": "nextdotjs" },
+          { "name": "Node.js", "icon": "nodedotjs" },
+          { "name": "Python", "icon": "python" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "AWS", "icon": "aws" },
+          { "name": "Docker", "icon": "docker" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "ڈویلپر آؤٹ سورسنگ",
+      "shortDescription": "ماہر اور تجربہ کار سافٹ ویئر انجینئرز کے ساتھ اپنے ڈویلپمنٹ ورک کو فوراً اسکیل کریں۔ ہم آپ کے پروجیکٹس کو وقت پر رکھنے کے لیے لچکدار آؤٹ سورسنگ دیتے ہیں۔",
+      "fullDescription": "محدود اندرونی ٹیم کے ساتھ مخصوص تکنیکی کاموں یا اچانک بڑھنے والے کام کے دباؤ کو سنبھالنا مشکل ہوتا ہے۔ ہماری ڈویلپر آؤٹ سورسنگ سروسز آپ کو تسلیم شدہ سافٹ ویئر انجینئرز، ٹیسٹنگ ماہرین اور کلاؤڈ پروفیشنلز تک لچکدار رسائی دیتی ہیں۔ ہم امیدواروں کی جانچ، انٹرویو اور ان کے انتظامی اخراجات خود سنبھالتے ہیں تاکہ آپ کام کے لحاظ سے اپنی ٹیم کو بڑھا یا گھٹا سکیں۔ ہمارے آؤٹ سورس ڈویلپرز React، Next.js، Node.js اور Python جیسے جدید فریم ورکس میں مہارت رکھتے ہیں اور آپ کے کوڈنگ اصولوں کو جلدی اپناتے ہیں۔ ہم پروجیکٹ کی رفتار بڑھانے کے لیے قابل اعتماد اور اعلیٰ معیار کے ڈویلپرز فراہم کرتے ہیں۔",
+      "features": [
+        "لچکدار ڈویلپر سٹاف آگمینٹیشن سروسز",
+        "امیدواروں کی سخت جانچ اور کوڈ ٹیسٹنگ",
+        "React، Node اور Python کے ماہر سافٹ ویئر انجینئرز",
+        "SaaS اور موبائل ایپلیکیشن ڈویلپمنٹ کا ٹیلنٹ",
+        "مختصر اور طویل مدت کے لیے لچکدار معاہدے",
+        "کلائنٹ کی DevOps پائپ لائنز کے ساتھ بہترین انضمام",
+        "پروجیکٹ مینجمنٹ اور کوالٹی اشورنس کی نگرانی",
+        "سسٹم ریسورسز کی فوری فراہمی اور تبدیلی"
+      ],
+      "benefits": [
+        "طویل مدتی معاہدوں کے بغیر اپنے کام کی صلاحیت کو تیزی سے بڑھائیں",
+        "ماہر سافٹ ویئر انجینئرز کے عالمی ٹیلنٹ پول تک رسائی حاصل کریں",
+        "بھرتی کی لاگت اور ملازمین کے اضافی اخراجات ختم کریں",
+        "کام کے زیادہ دباؤ کے دوران بھی پروجیکٹس کو وقت پر رکھیں",
+        "پیچیدہ تکنیکی چیلنجز کے لیے مخصوص مہارتوں کا استعمال کریں",
+        "کوڈ بیس اور آرکیٹیکچر کے فیصلوں پر مکمل کنٹرول برقرار رکھیں"
+      ],
+      "metaTitle": "ڈویلپر آؤٹ سورسنگ کی سروسز | پاک سافٹ | PakSoft",
+      "metaDescription": "سافٹ ویئر ڈویلپمنٹ کو ماہر اور تجربہ کار انجینئرز کے حوالے کریں۔ ہم React، Node اور Python کے لیے لچکدار ٹیم فراہم کرتے ہیں۔ رابطہ کریں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "مہارتوں کا آڈٹ اور جائزہ",
+            "description": "ہم آپ کے پروجیکٹ کے اہداف، ٹائم لائن اور مخصوص ٹیکنالوجی کا جائزہ لیتے ہیں۔ اس سے ہمیں درست امیدوار کا خاکہ بنانے میں مدد ملتی ہے۔"
+          },
+          {
+            "step": 2,
+            "title": "امیدواروں کی تلاش اور فلٹرنگ",
+            "description": "ہم اپنے نیٹ ورک سے امیدوار تلاش کرتے ہیں اور ان کے کوالٹی ٹیسٹ اور کمیونیکیشن سکلز چیک کرتے ہیں تاکہ صرف بہترین ٹیلنٹ آگے آئے۔"
+          },
+          {
+            "step": 3,
+            "title": "کلائنٹ انٹرویو اور ٹیکنیکل سلیکشن",
+            "description": "آپ امیدواروں کے خاکے اور کوڈ کے نمونے چیک کرتے ہیں اور انٹرویو لیتے ہیں۔ یہ قدم ڈویلپر کی صلاحیتوں پر مکمل اعتماد فراہم کرتا ہے۔"
+          },
+          {
+            "step": 4,
+            "title": "سیم تک رسائی اور آن بورڈنگ",
+            "description": "ہم ڈویلپرز کے لیے کوڈ ریپوزٹری، ڈیٹا بیس اور کمیونیکیشن ٹولز تک رسائی ترتیب دیتے ہیں تاکہ وہ بغیر تاخیر کے کوڈ لکھنا شروع کر دیں۔"
+          },
+          {
+            "step": 5,
+            "title": "ڈویلپمنٹ کا آغاز اور ہم آہنگی",
+            "description": "ڈویلپرز آپ کی نگرانی میں کام کرتے ہیں اور روزانہ کی میٹنگز اور کوڈ ریویو کا حصہ بنتے ہیں تاکہ پروجیکٹ کا معیار برقرار رہے۔"
+          },
+          {
+            "step": 6,
+            "title": "کارکردگی کا جائزہ اور اسکیلنگ",
+            "description": "ہم باقاعدگی سے کارکردگی کا جائزہ لیتے ہیں اور بجٹ کے مطابق ٹیم کی تعداد کو کم یا زیادہ کرنے کے لچکدار معاہدے فراہم کرتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "ڈویلپر آؤٹ سورسنگ سے کیا مراد ہے؟",
+            "answer": "یہ ایک ایسی سروس ہے جہاں آپ اپنے پروجیکٹس کی فوری تکمیل کے لیے بیرونی سافٹ ویئر انجینئرز کی خدمات حاصل کرتے ہیں تاکہ بھرتی کے اخراجات سے بچ سکیں۔"
+          },
+          {
+            "question": "آپ پیش کرنے سے پہلے ڈویلپرز کی جانچ کیسے کرتے ہیں؟",
+            "answer": "ہم آن لائن کوڈنگ چیلنجز چلاتے ہیں، ماضی کے کام کا جائزہ لیتے ہیں اور تکنیکی انٹرویوز کرتے ہیں۔ اس سے ان کی سینئر انجینئرنگ کی صلاحیتوں کی تصدیق ہوتی ہے۔"
+          },
+          {
+            "question": "کیا ہم شارٹ ٹرم پروجیکٹس کے لیے بھی ڈویلپرز لے سکتے ہیں؟",
+            "answer": "جی ہاں، ہم تین ماہ سے شروع ہونے والے لچکدار معاہدے فراہم کرتے ہیں تاکہ آپ طویل مدتی وعدوں کے بغیر عارضی کام کا دباؤ سنبھال سکیں۔"
+          },
+          {
+            "question": "آپ کے ڈویلپرز کن پروگرامنگ زبانوں اور فریم ورکس پر کام کرتے ہیں؟",
+            "answer": "ہم React، Next.js، Node.js، Python، Kotlin، Swift اور PHP کے ساتھ ساتھ AWS، PostgreSQL، اور Docker جیسی کلاؤڈ ٹیکنالوجیز کو سپورٹ کرتے ہیں۔"
+          },
+          {
+            "question": "آؤٹ سورس کیے گئے ڈویلپرز کے لکھے گئے کوڈ کا مالک کون ہوگا؟",
+            "answer": "معاہدے کے تحت آؤٹ سورسنگ کے دوران تیار کردہ تمام کوڈز، ڈیزائنز اور انٹلیکچوئل پراپرٹی (IP) کے سو فیصد مالک قانونی طور پر صرف آپ ہی ہوں گے۔"
+          },
+          {
+            "question": "آپ ٹائم زون کے فرق کو کیسے ہینڈل کرتے ہیں؟",
+            "answer": "ہم اپنے ڈویلپرز کے کام کے اوقات کو اس طرح ترتیب دیتے ہیں کہ آپ کے ساتھ روزانہ کم از کم 4 گھنٹے کا کام کا وقت اوورلیپ کرے۔"
+          },
+          {
+            "question": "اگر کوئی ڈویلپر بیمار ہو جائے یا رخصت پر ہو تو کیا ہوتا ہے؟",
+            "answer": "ہم عارضی چھٹیوں کو مانیٹر کرتے ہیں اور اہم کاموں کے لیے متبادل وسائل دیتے ہیں۔ مستقل رخصت کی صورت میں دو ہفتوں میں نیا ڈویلپر لاتے ہیں۔"
+          },
+          {
+            "question": "اس سروس کے بلنگ اور ادائیگی کا کیا طریقہ ہے؟",
+            "answer": "ہم ڈویلپر کی کارکردگی کے مطابق فی ڈویلپر فکسڈ ماہانہ ریٹ چارج کرتے ہیں۔ اس میں کوئی پوشیدہ چارجز یا بھرتی کی اضافی فیس نہیں ہوتی۔"
+          }
+        ],
+        "technologies": [
+          { "name": "React", "icon": "react" },
+          { "name": "Next.js", "icon": "nextdotjs" },
+          { "name": "Node.js", "icon": "nodedotjs" },
+          { "name": "Python", "icon": "python" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "AWS", "icon": "aws" },
+          { "name": "Docker", "icon": "docker" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "تعهيد المطورين واستقدام الكفاءات",
+      "shortDescription": "وسّع قدرتك التطويرية فوراً بمهندسي برمجيات مؤهلين تأهيلاً عالياً عن بعد. نقدم خدمات مرنة لتعزيز الكوادر التقنية لضمان إنجاز مشاريعك في مواعيدها المحددة بدقة.",
+      "fullDescription": "يصعب تلبية المتمتطلبات البرمجية المتخصصة أو التعامل مع فترات ضغط العمل المفاجئة باستخدام فريق عمل داخلي ثابت. توفر خدمات تعهيد المطورين لدينا وصولاً مرناً إلى مهندسي برمجيات معتمدين، ومختصي جودة، وخبراء DevOps. نتولى نحن مسؤولية البحث والتصفية والتوظيف، مما يتيح لك زيادة حجم فريقك أو تقليصه ديناميكياً حسب حاجة المشروع. يتقن المطورون لدينا أحدث التقنيات مثل React و Next.js و Node.js و Python، ويندمجون سريعاً مع معايير الكود الخاصة بك ومسارات النشر المعتمدة. نضمن توفير كفاءات تطوير موثوقة وعالية الجودة لتسريع خريطة طريق منتجك.",
+      "features": [
+        "تعزيز مرن للكوادر البرمجية والمطورين",
+        "تصفية صارمة للمرشحين واختبارات كود عملية",
+        "مهندسون خبراء في React و Node و Python",
+        "كوادر متخصصة في تطوير تطبيقات SaaS والجوال",
+        "عقود عمل مرنة للمشاريع قصيرة وطويلة الأجل",
+        "تكامل تام مع مسارات DevOps الخاصة بالعميل",
+        "إشراف مخصص على إدارة المشاريع وضمان الجودة",
+        "نشر سريع للموارد واستبدال الكفاءات عند الحاجة"
+      ],
+      "benefits": [
+        "توسيع نطاق فريق التطوير بسرعة ودون التزامات طويلة الأجل",
+        "الوصول إلى قاعدة كفاءات عالمية من مهندسي البرمجيات المعتمدين",
+        "تقليل تكاليف التعيين وإلغاء النفقات الإدارية للموظفين",
+        "الحفاظ على سير العمل بالمشاريع أثناء فترات الذروة والمواعيد الضيقة",
+        "الاستفادة من مهارات متخصصة لحل التحديات التقنية المعقدة",
+        "الالاحتفاظ بالتحكم الكامل في قاعدة الكود وقرارات البنية المعمارية"
+      ],
+      "metaTitle": "خدمات تعهيد مطوري البرمجيات | PakSoft",
+      "metaDescription": "عهد بتطوير البرمجيات إلى مهندسين مؤهلين وعالي الأداء. نقدم تعزيزاً مرناً للكوادر في React و Node و Python. اتصل بنا الآن.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تدقيق متطلبات المهارات",
+            "description": "نراجع أهداف مشروعك النشط، والجدول الزمني المحدد، ومتطلبات التقنيات المستخدمة بدقة. يتيح لنا هذا تحديد مواصفات المرشحين المطلوبة بدقة."
+          },
+          {
+            "step": 2,
+            "title": "البحث عن مرشحين معتمدين",
+            "description": "nبحث في شبكتنا النشطة ونقيم المهندسين عبر اختبارات برمجية صارمة واختبارات اتصال للتأكد من اختيار أفضل الكفاءات."
+          },
+          {
+            "step": 3,
+            "title": "تقييم العميل والاختيار التقني",
+            "description": "تراجع ملفات المرشحين، وتطلع على نماذج الأكواد، وتجري المقابلات الفنية النهائية للتأكد التام من قدرات المطورين المختارين."
+          },
+          {
+            "step": 4,
+            "title": "التهيئة ودمج صلاحيات الوصول",
+            "description": "نعد صلاحيات الوصول للمستودعات البرمجية، وقواعد البيانات، وأدوات الاتصال للمطورين الجدد لبدء كتابة الكود البرمجي دون تأخير."
+          },
+          {
+            "step": 5,
+            "title": "تنفيذ التطوير والمزامنة",
+            "description": "يعمل المطورون تحت إدارتك وتوجيهك المباشر، ويشاركون في اجتماعات فريقك ومراجعات الكود لضمان جودة وتناسق المشروع."
+          },
+          {
+            "step": 6,
+            "title": "تقييم التسليمات وضبط الحجم",
+            "description": "نجري مراجعات دورية للأداء وندير العقود لزيادة حجم الفريق أو تقليصه، مما يوفر مرونة تشغيلية ممتازة لميزانيتك."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما هي خدمة تعهيد المطورين؟",
+            "answer": "هي خدمة يتم من خلالها الاستعانة بمهندسي برمجيات خارجيين لدعم مشاريعك، مما يساعدك على زيادة طاقتك التطويرية دون أعباء التوظيف الدائم."
+          },
+          {
+            "question": "كيف تقيمون المطورين قبل تقديمهم لنا؟",
+            "answer": "نخضعهم لاختبارات برمجية مؤتمتة، ونراجع مساهماتهم في مشاريع سابقة، ونجري مقابلات فنية لضمان امتلاكهم لخبرات هندسية متقدمة بمستوى سينيور."
+          },
+          {
+            "question": "هل يمكننا تعيين مطورين بموجب عقود قصيرة الأجل؟",
+            "answer": "نعم، نقدم عقوداً مرنة تبدأ من ثلاثة أشهر، مما يتيح لك التعامل مع ضغوط العمل المؤقتة دون التزامات طويلة الأجل."
+          },
+          {
+            "question": "ما هي لغات البرمجة وأطر العمل التي يدعمها مطوروكم؟",
+            "answer": "ندعم لغات React و Next.js و Node.js و Python و Kotlin و Swift و PHP، بالإضافة لتقنيات السحابة وقواعد البيانات مثل AWS و PostgreSQL."
+          },
+          {
+            "question": "من يملك الكود البرمجي الذي يكتبه المطورون الخارجيون؟",
+            "answer": "تمتلك شركتك حقوق الملكية الفكرية والوثائق وقاعدة الأكواد التي يتم تطويرها بموجب عقد التعهيد بالكامل، وهو ما تنص عليه عقودنا صراحة."
+          },
+          {
+            "question": "كيف تتعاملون مع اختلافات المناطق الزمنية؟",
+            "answer": "نضبط ساعات عمل مطورينا لتوفير أربع ساعات تداخل على الأقل مع منطقتك الزمنية، مما يضمن التنسيق اليومي والتعاون الفوري بسلاسة."
+          },
+          {
+            "question": "ماذا يحدث إذا احتاج أحد المطورين إلى إجازة مرضية؟",
+            "answer": "ندير حالات الغياب الطارئة ونوفر كفاءات بديلة للمهام الحرجة. وفي حال الغياب الطويل، نوفر مطوراً بديلاً خلال أسبوعين كحد أقصى."
+          },
+          {
+            "question": "كيف تعمل آلية الفوترة والدفع لخدمة تعهيد المطورين؟",
+            "answer": "نعتمد الفوترة الشهرية بناءً على الوقت والمواد بمعدل ثابت متفق عليه لكل مطور، دون أي رسوم خفية أو تكاليف إدارية إضافية."
+          }
+        ],
+        "technologies": [
+          { "name": "React", "icon": "react" },
+          { "name": "Next.js", "icon": "nextdotjs" },
+          { "name": "Node.js", "icon": "nodedotjs" },
+          { "name": "Python", "icon": "python" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "AWS", "icon": "aws" },
+          { "name": "Docker", "icon": "docker" }
+        ]
+      }
+    }
+  }
+}

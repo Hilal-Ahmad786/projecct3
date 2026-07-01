@@ -1,0 +1,638 @@
+{
+  "slug": "fraud-detection-systems",
+  "en": {
+    "name": "Fraud Detection Systems",
+    "shortDescription": "Prevent financial loss and security breaches with ML-powered real-time fraud detection. We build custom transaction scoring, anomaly detection, and behavioral fingerprinting systems.",
+    "fullDescription": "Traditional rule-based fraud prevention systems struggle to adapt to new and evolving fraud patterns, leading to high false positives and missed threats. We design and deploy enterprise-grade Fraud Detection Systems that analyze user behavior and transactions in real time. Using machine learning architectures like XGBoost and PyTorch, and event streams via Apache Kafka and Redis, our systems score transactions in under 100 milliseconds. We combine behavioral biometrics, device fingerprinting, and Neo4j graph databases to detect fraud rings and account takeovers. Every system features model explainability tools and case management dashboards so your compliance team can audit and trust every automated decision.",
+    "features": [
+      "Real-Time Transaction Scoring",
+      "Machine Learning Anomaly Models",
+      "Behavioral Fingerprinting & Biometrics",
+      "Device Fingerprinting Integration",
+      "Graph Database Network Analysis",
+      "Custom Rule Engine Scripting",
+      "Explainable AI (SHAP/LIME) Reports",
+      "Compliance Case Management UI"
+    ],
+    "benefits": [
+      "Stop fraudulent transactions before completion",
+      "Reduce manual audit overhead by 40%",
+      "Minimize false positives to improve user experience",
+      "Identify organized fraud rings using graph analysis",
+      "Maintain regulatory compliance with explainable decisions",
+      "Scale threat monitoring without increasing compliance staff"
+    ],
+    "metaTitle": "Custom AI Fraud Detection & Prevention Systems | PakSoft",
+    "metaDescription": "Protect your revenue. We build real-time ML fraud detection systems using XGBoost, PyTorch, and Kafka. Contact PakSoft today for a free threat audit.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Threat Discovery",
+          "description": "We audit your transaction flows, historical fraud data, and current rule engines. Together we define the security metrics and target false-positive rates."
+        },
+        {
+          "step": 2,
+          "title": "Data Pipeline Engineering",
+          "description": "We construct real-time data ingestion pipelines using Apache Kafka and Redis. This ensures transaction features are extracted and processed in under 50 milliseconds."
+        },
+        {
+          "step": 3,
+          "title": "Model Development",
+          "description": "We train anomaly detection and classification models using XGBoost, PyTorch, and Neo4j. The models are benchmarked against historical datasets to optimize accuracy."
+        },
+        {
+          "step": 4,
+          "title": "Rule Engine Integration",
+          "description": "We combine machine learning models with deterministic business rules in a unified scoring engine. This allows compliance teams to modify thresholds without redeploying code."
+        },
+        {
+          "step": 5,
+          "title": "Case Management UI",
+          "description": "We build a dashboard for compliance officers to review flagged transactions. We integrate model explainability tools to show which features triggered the alert."
+        },
+        {
+          "step": 6,
+          "title": "Shadow Pilot & Rollout",
+          "description": "We run the fraud detection system in shadow mode to validate model performance against live traffic. Autonomy is gradually expanded as metrics meet targets."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How does machine learning improve fraud detection over rule-based systems?",
+          "answer": "Rule-based systems use rigid if-then logic which is easily bypassed by smart fraudsters and creates many false alarms. Machine learning analyses thousands of data points simultaneously to identify subtle, non-linear relationships and behavioral anomalies. This reduces false positives while catching new, undocumented fraud patterns automatically."
+        },
+        {
+          "question": "What is transaction latency, and how do you keep it low?",
+          "answer": "Transaction latency is the time it takes to score a payment. We optimize feature extraction using Redis and deploy lightweight models using TensorRT or ONNX runtimes. This keeps total scoring latency under 100 milliseconds, ensuring the security checks do not slow down the checkout experience."
+        },
+        {
+          "question": "What role does a graph database like Neo4j play in fraud detection?",
+          "answer": "Organized fraud often involves networks of accounts sharing credit cards, phone numbers, or IP addresses. Neo4j graph databases allow us to run real-time queries to identify these connected entities. This reveals complex fraud rings and multi-account identity theft that standard relational databases miss completely."
+        },
+        {
+          "question": "How do you handle model explainability for regulatory compliance?",
+          "answer": "We integrate explainability frameworks like SHAP or LIME into the case management UI. When a transaction is flagged, the system displays a visual breakdown of the key factors that influenced the score. This allows your compliance team to audit decisions and document why payments were blocked."
+        },
+        {
+          "question": "Can your system prevent account takeover (ATO) attacks?",
+          "answer": "Yes, we implement behavioral biometrics and device fingerprinting to detect account takeovers. By tracking typing speed, mouse movements, login locations, and device profiles, the system flags logins that deviate from the user's historical baseline. This triggers multi-factor authentication to protect the account."
+        },
+        {
+          "question": "Do we need a massive amount of historical fraud data to start?",
+          "answer": "While historical data is helpful, we can start by deploying unsupervised anomaly detection models alongside classic business rules. Over time, as the system flags and records new events, we transition to supervised machine learning models. This ensures you are protected from day one of deployment."
+        },
+        {
+          "question": "What is a false positive, and how do you minimize it?",
+          "answer": "A false positive occurs when a legitimate customer's transaction is blocked as fraud. We minimize false positives by continuous threshold tuning and using precision-recall optimization. We also implement shadow runs to validate new models against live user traffic before blocking active transactions."
+        },
+        {
+          "question": "How does the system integrate with our existing payment gateways?",
+          "answer": "We expose secure REST APIs or webhook endpoints that your payment gateway calls during checkout. The gateway sends transaction details, receives the fraud score, and blocks or approves the payment based on the result. We support integration with Stripe, PayPal, Adyen, and custom gateways."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "xgboost",
+          "name": "XGBoost"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch"
+        },
+        {
+          "icon": "apachekafka",
+          "name": "Apache Kafka"
+        },
+        {
+          "icon": "redis",
+          "name": "Redis"
+        },
+        {
+          "icon": "neo4j",
+          "name": "Neo4j"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "fastapi",
+          "name": "FastAPI"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Dolandırıcılık Tespit Sistemleri",
+    "shortDescription": "Yapay zeka destekli gerçek zamanlı dolandırıcılık tespiti ile finansal kayıpları ve güvenlik ihlallerini önleyin. Özel işlem puanlama ve davranışsal parmak izi sistemleri kuruyoruz.",
+    "fullDescription": "Geleneksel kural tabanlı dolandırıcılık önleme sistemleri, yeni ve gelişen dolandırıcılık kalıplarına uyum sağlamakta zorlanır; bu da yüksek hatalı alarm (false positive) oranlarına ve gözden kaçan tehditlere yol açar. Kullanıcı davranışlarını ve işlemlerini gerçek zamanlı analiz eden kurumsal düzeyde Dolandırıcılık Tespit Sistemleri tasarlıyor ve uyguluyoruz. XGBoost ve PyTorch gibi makine öğrenimi mimarlarını ve Apache Kafka ile Redis üzerinden akan veri akışlarını kullanarak işlemleri 100 milisaniyenin altında puanlıyoruz. Organize dolandırıcılık şebekelerini tespit etmek için davranışsal biyometri, cihaz parmak izi ve Neo4j grafik veritabanlarını birleştiriyoruz. Her sistem, uyum ekibinizin kararları denetleyebilmesi için açıklanabilir yapay zeka araçları içerir.",
+    "features": [
+      "Gerçek Zamanlı İşlem Puanlama",
+      "Makine Öğrenimi Anomali Modelleri",
+      "Davranışsal Parmak İzi ve Biyometri",
+      "Cihaz Parmak İzi Entegrasyonu",
+      "Grafik Veritabanı Ağ Analizi",
+      "Özel Kural Motoru Kodlaması",
+      "Açıklanabilir Yapay Zeka (SHAP/LIME) Raporları",
+      "Uyum Vaka Yönetimi Arayüzü"
+    ],
+    "benefits": [
+      "Şüpheli işlemleri tamamlanmadan önce durdurun",
+      "Manuel denetim yükünü %40 oranında azaltın",
+      "Kullanıcı deneyimini iyileştirmek için hatalı alarmları en aza indirin",
+      "Grafik analizi kullanarak organize dolandırıcılık şebekelerini belirleyin",
+      "Açıklanabilir kararlarla yasal uyumluluğu koruyun",
+      "Uyum personeli sayısını artırmadan tehdit takibini ölçeklendirin"
+    ],
+    "metaTitle": "Yapay Zeka Dolandırıcılık Tespit Sistemleri | PakSoft",
+    "metaDescription": "Gelirinizi koruyun. XGBoost, PyTorch ve Kafka kullanarak gerçek zamanlı dolandırıcılık önleme sistemleri kuruyoruz. Ücretsiz denetim için PakSoft ile görüşün.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Tehdit Keşfi",
+          "description": "İşlem akışlarınızı, geçmiş dolandırıcılık verilerinizi ve mevcut kural motorlarınızı denetleriz. Güvenlik metriklerini ve hedef hatalı alarm oranlarını birlikte tanımlarız."
+        },
+        {
+          "step": 2,
+          "title": "Veri Hattı Mühendisliği",
+          "description": "Apache Kafka ve Redis kullanarak gerçek zamanlı veri alım hatları inşa ederiz. Bu, işlem özelliklerinin 50 milisaniyenin altında çıkarılmasını ve işlenmesini sağlar."
+        },
+        {
+          "step": 3,
+          "title": "Model Geliştirme",
+          "description": "XGBoost, PyTorch ve Neo4j kullanarak anomali tespiti ve sınıflandırma modelleri eğitiriz. Modelleri, doğruluğu optimize etmek için geçmiş veri kümelerine karşı test ederiz."
+        },
+        {
+          "step": 4,
+          "title": "Kural Motoru Entegrasyonu",
+          "description": "Makine öğrenimi modellerini birleşik bir puanlama motorunda deterministik iş kurallarıyla birleştiririz. Bu, ekiplerin kod yazmadan puan sınırlarını değiştirmesini sağlar."
+        },
+        {
+          "step": 5,
+          "title": "Vaka Yönetim Arayüzü",
+          "description": "Uyum görevlilerinin şüpheli işlemleri incelemesi için bir panel geliştiririz. Alarma hangi özelliklerin neden olduğunu göstermek için açıklanabilir yapay zeka araçları entegre ederiz."
+        },
+        {
+          "step": 6,
+          "title": "Gölge Pilot ve Yayına Alma",
+          "description": "Sistemi, canlı trafik karşısında model performansını doğrulamak için gölge modunda çalıştırırız. Metrikler hedefleri karşıladıkça sistemin yetkilerini kademeli olarak genişletiriz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Makine öğrenimi, dolandırıcılık tespitinde kural tabanlı sistemlere göre nasıl bir avantaj sağlar?",
+          "answer": "Kural tabanlı sistemler, kolayca aşılabilen ve çok sayıda hatalı alarma neden olan katı mantık sınırları kullanır. Makine öğrenimi ise binlerce veri noktasını aynı anda analiz ederek karmaşık ilişkileri ve davranışsal anomalileri tespit eder. Bu, hatalı alarmları azaltırken yeni dolandırıcılık yöntemlerini otomatik yakalar."
+        },
+        {
+          "question": "İşlem gecikmesi nedir ve bunu nasıl düşük tutuyorsunuz?",
+          "answer": "İşlem gecikmesi, bir ödemenin puanlanması için geçen süredir. Redis kullanarak özellik çıkarımını optimize ediyor ve TensorRT veya ONNX gibi hafif modeller kuruyoruz. Bu, toplam puanlama gecikmesini 100 milisaniyenin altında tutarak güvenlik kontrollerinin ödeme deneyimini yavaşlatmamasını sağlar."
+        },
+        {
+          "question": "Neo4j gibi bir grafik veritabanı dolandırıcılık tespitinde nasıl bir rol oynar?",
+          "answer": "Organize dolandırıcılık genellikle kredi kartlarını veya IP adreslerini paylaşan hesap ağlarını içerir. Neo4j grafik veritabanları, bu ilişkili varlıkları belirlemek için gerçek zamanlı sorgular yürütmemizi sağlar. Bu, standart ilişkisel veritabanlarının kaçırdığı karmaşık dolandırıcılık şebekelerini ortaya çıkarır."
+        },
+        {
+          "question": "Yasal uyumluluk için model kararlarının açıklanabilirliğini nasıl sağlıyorsunuz?",
+          "answer": "Uyum yönetimi arayüzüne SHAP veya LIME gibi açıklanabilirlik çerçeveleri entegre ediyoruz. Şüpheli bir işlem işaretlendiğinde, sistem alarma yol açan temel faktörlerin görsel bir dökümünü gösterir. Bu sayede ekibiniz kararları denetleyebilir ve engellenen ödemeleri raporlayabilir."
+        },
+        {
+          "question": "Sisteminiz hesap ele geçirme (ATO) saldırılarını önleyebilir mi?",
+          "answer": "Evet, hesap ele geçirme saldırılarını önlemek için davranışsal biyometri ve cihaz parmak izi yöntemleri uyguluyoruz. Yazma hızını, fare hareketlerini ve oturum açma konumlarını izleyerek, kullanıcının geçmiş davranışlarından sapan girişleri belirleriz. Bu durum, hesabı korumak için iki adımlı doğrulamayı tetikler."
+        },
+        {
+          "question": "Başlamak için çok büyük miktarda geçmiş dolandırıcılık verisine ihtiyacımız var mı?",
+          "answer": "Geçmiş veriler yararlı olsa da, başlangıçta gözetimsiz anomali tespiti modellerini klasik iş kurallarıyla birlikte kurabiliriz. Sistem yeni olayları kaydedip işaretledikçe, zamanla gözetimli makine öğrenimi modellerine geçiş yaparız. Bu sayede kurulumun ilk gününden itibaren korunursunuz."
+        },
+        {
+          "question": "Hatalı alarm (false positive) nedir ve nasıl en aza indirilir?",
+          "answer": "Hatalı alarm, meşru bir müşterinin işleminin yanlışlıkla dolandırıcılık olarak engellenmesidir. Hassas hassasiyet-duyarlılık optimizasyonları ve sürekli eşik değer ayarlamaları ile hatalı alarmları en aza indiriyoruz. Ayrıca, aktif işlemleri engellemeden önce yeni modelleri canlı kullanıcı trafiğiyle test ediyoruz."
+        },
+        {
+          "question": "Sistem mevcut ödeme geçitlerimizle nasıl entegre olur?",
+          "answer": "Ödeme geçidinizin ödeme sırasında çağıracağı güvenli REST API veya webhook uç noktaları sunuyoruz. Ödeme geçidi işlem ayrıntılarını gönderir, dolandırıcılık puanını alır ve sonuca göre ödemeyi onaylar veya engeller. Stripe, PayPal, Adyen ve özel sistemlerle entegrasyonu destekliyoruz."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "xgboost",
+          "name": "XGBoost"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch"
+        },
+        {
+          "icon": "apachekafka",
+          "name": "Apache Kafka"
+        },
+        {
+          "icon": "redis",
+          "name": "Redis"
+        },
+        {
+          "icon": "neo4j",
+          "name": "Neo4j"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "fastapi",
+          "name": "FastAPI"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Betrugserkennungssysteme",
+    "shortDescription": "Verhindern Sie finanzielle Verluste und Sicherheitsverletzungen mit KI-gestützter Betrugserkennung in Echtzeit. Wir bauen maßgeschneiderte Systeme zur Transaktionsbewertung und Verhaltensanalyse.",
+    "fullDescription": "Herkömmliche regelbasierte Systeme zur Betrugsprävention passen sich nur schwer an neue Betrugsmuster an, was zu vielen Fehlalarmen und unentdeckten Bedrohungen führt. Wir entwerfen und implementieren Enterprise Fraud Detection Systeme, die das Nutzerverhalten und Transaktionen in Echtzeit analysieren. Unter Verwendung von Machine-Learning-Architekturen wie XGBoost und PyTorch sowie Datenströmen über Apache Kafka und Redis bewerten unsere Systeme Transaktionen in weniger als 100 Millisekunden. Wir kombinieren Verhaltensbiometrie, Geräte-Fingerprinting und Neo4j-Graphdatenbanken, um Betrugsnetzwerke und Kontoübernahmen zu identifizieren. Jedes System verfügt über Dashboards zur Modellerklärbarkeit, damit Ihr Compliance-Team jede automatisierte Entscheidung auditieren kann.",
+    "features": [
+      "Echtzeit-Transaktionsbewertung",
+      "Machine Learning Anomaliemodelle",
+      "Verhaltensbasierte Fingerabdrücke",
+      "Geräte-Fingerprinting Integration",
+      "Graphdatenbank-Netzwerkanalysen",
+      "Custom Rule-Engine Scripting",
+      "Erklärbare KI (SHAP/LIME) Berichte",
+      "Compliance Case-Management UI"
+    ],
+    "benefits": [
+      "Betrügerische Transaktionen vor Abschluss stoppen",
+      "Manuellen Audit-Aufwand um 40% reduzieren",
+      "Fehlalarme minimieren für bessere Nutzererfahrung",
+      "Organisierte Betrugsringe durch Graphanalysen identifizieren",
+      "Rechtliche Compliance durch erklärbare Entscheidungen wahren",
+      "Bedrohungsüberwachung ohne Personalaufbau im Compliance-Team skalieren"
+    ],
+    "metaTitle": "KI Betrugserkennung & Präventionssysteme | PakSoft",
+    "metaDescription": "Schützen Sie Ihre Umsätze. Wir entwickeln Echtzeit-Betrugserkennung mit XGBoost, PyTorch und Kafka. Kontaktieren Sie PakSoft für eine Analyse.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Risikoanalyse",
+          "description": "Wir analysieren Ihre Transaktionsflüsse, historischen Betrugsdaten und bestehenden Regeln. Gemeinsam definieren wir Sicherheitsmetriken und die Zielrate für Fehlalarme."
+        },
+        {
+          "step": 2,
+          "title": "Daten-Pipeline-Engineering",
+          "description": "Wir bauen Echtzeit-Erfassungskanäle mit Apache Kafka und Redis auf. Dies stellt sicher, dass Transaktionsmerkmale in weniger als 50 Millisekunden extrahiert werden."
+        },
+        {
+          "step": 3,
+          "title": "Modellentwicklung",
+          "description": "Wir trainieren Anomaliemodelle mit XGBoost, PyTorch und Neo4j. Die Modelle werden anhand historischer Datensätze getestet, um die Genauigkeit zu optimieren."
+        },
+        {
+          "step": 4,
+          "title": "Rule-Engine-Integration",
+          "description": "Wir kombinieren Machine-Learning-Modelle mit deterministischen Regeln in einer einheitlichen Scoring-Engine. Dies ermöglicht Anpassungen von Schwellenwerten ohne Code-Änderungen."
+        },
+        {
+          "step": 5,
+          "title": "Case-Management-Oberfläche",
+          "description": "Wir erstellen ein Dashboard für Compliance-Mitarbeiter zur Überprüfung markierter Transaktionen. Wir integrieren Erklärbarkeits-Tools, um die Faktoren hinter jedem Alarm anzuzeigen."
+        },
+        {
+          "step": 6,
+          "title": "Shadow-Pilot & Rollout",
+          "description": "Wir betreiben das System im Shadow-Modus, um die Modellleistung im echten Datenverkehr zu validieren. Die Autonomie des Systems wird schrittweise erweitert."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie verbessert maschinelles Lernen die Betrugserkennung im Vergleich zu regelbasierten Systemen?",
+          "answer": "Wie regelbasierte Systeme nutzen starre Wenn-Dann-Logiken, die von Betrügern leicht umgangen werden und viele Fehlalarme auslösen. Maschinelles Lernen analysiert Tausende Datenpunkte gleichzeitig, um komplexe Zusammenhänge und Verhaltensanomalien zu erkennen. Dies senkt Fehlalarme und identifiziert neue Betrugsmuster automatisch."
+        },
+        {
+          "question": "Was ist Transaktionslatenz und wie halten Sie diese niedrig?",
+          "answer": "Die Transaktionslatenz ist die Zeit zur Bewertung einer Zahlung. Wir optimieren die Merkmalsextraktion mit Redis und nutzen leichtgewichtige Modelle über TensorRT- oder ONNX-Runtimes. Dadurch bleibt die Latenz unter 100 Millisekunden, sodass der Checkout-Prozess für ehrliche Kunden nicht verlangsamt wird."
+        },
+        {
+          "question": "Welche Rolle spielt eine Graphdatenbank wie Neo4j bei der Betrugserkennung?",
+          "answer": "Organisierter Betrug nutzt oft Netzwerke aus Konten, die Kreditkarten, Telefonnummern oder IP-Adressen teilen. Neo4j-Graphdatenbanken ermöglichen Echtzeit-Abfragen zur Identifizierung dieser Beziehungen. Dies deckt komplexe Betrugsringe auf, die normale relationale Datenbanken nicht erkennen können."
+        },
+        {
+          "question": "Wie gewährleisten Sie die Erklärbarkeit der Modelle für die Compliance?",
+          "answer": "Wir integrieren Frameworks wie SHAP oder LIME in die Case-Management-Oberfläche. Wird eine Transaktion markiert, zeigt das System die einflussreichsten Faktoren grafisch an. So kann Ihr Compliance-Team jede Entscheidung nachvollziehen und den Grund für blockierte Zahlungen lückenlos dokumentieren."
+        },
+        {
+          "question": "Kann Ihr System Angriffe zur Kontoübernahme (ATO) verhindern?",
+          "answer": "Ja, wir nutzen Verhaltensbiometrie und Geräte-Fingerprinting zur Erkennung von Kontoübernahmen. Durch die Analyse von Tippgeschwindigkeit, Mausbewegungen, Standorten und Geräteprofilen meldet das System Logins, die vom historischen Muster abweichen. Dies löst eine Multi-Faktor-Authentisierung aus, um das Konto zu schützen."
+        },
+        {
+          "question": "Benötigen wir eine große Menge historischer Betrugsdaten für den Start?",
+          "answer": "Historische Daten sind hilfreich, aber kein Ausschlusskriterium. Wir können anfangs unüberwachte Anomaliemodelle zusammen mit klassischen Regeln bereitstellen. Sobald das System Daten erfasst, wechseln wir zu überwachten Modellen. So sind Sie ab dem ersten Tag der Implementierung geschützt."
+        },
+        {
+          "question": "Was ist ein Fehlalarm (False Positive) und wie wird er minimiert?",
+          "answer": "Ein Fehlalarm liegt vor, wenn eine legitime Kundenzahlung fälschlicherweise blockiert wird. Wir minimieren diese Raten durch präzise Schwellenwert-Optimierung. Zudem testen wir neue Modelle im Shadow-Modus im echten Datenverkehr, bevor wir aktive Transaktionen blockieren, um die Kundenzufriedenheit hoch zu halten."
+        },
+        {
+          "question": "Wie lässt sich das System in unsere bestehenden Zahlungssysteme integrieren?",
+          "answer": "Wir stellen sichere REST-APIs oder Webhooks bereit, die Ihr Zahlungssystem beim Checkout aufruft. Das Gateway sendet die Transaktionsdetails, erhält den Risiko-Score und blockiert oder genehmigt die Zahlung. Wir unterstützen Integrationen für Stripe, PayPal, Adyen und individuelle Gateways."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "xgboost",
+          "name": "XGBoost"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch"
+        },
+        {
+          "icon": "apachekafka",
+          "name": "Apache Kafka"
+        },
+        {
+          "icon": "redis",
+          "name": "Redis"
+        },
+        {
+          "icon": "neo4j",
+          "name": "Neo4j"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "fastapi",
+          "name": "FastAPI"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "فراڈ ڈیٹیکشن سسٹمز",
+    "shortDescription": "مصنوعی ذہانت سے لیس سسٹمز کے ذریعے مالیاتی نقصانات اور سیکیورٹی حملوں کو روکیں۔ ہم کسٹم ٹرانزیکشن اسکورنگ اور بیہیویئرل فنگر پرنٹنگ سسٹمز بناتے ہیں۔",
+    "fullDescription": "روایتی کسٹمر سیکیورٹی سسٹمز نئے اور بدلتے ہوئے فراڈ پیٹرنز کے مطابق خود کو ڈھال نہیں پاتے، جس سے بہت سے جائز صارفین کی ادائیگیاں بلاک ہو جاتی ہیں اور حقیقی خطرات نظر انداز ہو جاتے ہیں۔ ہم بڑے پیمانے پر فراڈ ڈیٹیکشن سسٹمز ڈیزائن اور انسٹال کرتے ہیں جو صارفین کے رویوں اور لین دین کا ریئل ٹائم تجزیہ کرتے ہیں۔ XGBoost اور PyTorch جیسے مشین لرننگ ماڈلز اور Apache Kafka اور Redis کے تیز رفتار ڈیٹا بہاؤ کے ذریعے ادائیگیاں 100 ملی سیکنڈز سے کم وقت میں اسکور کی جاتی ہیں۔ منظم فراڈ اور اکاؤنٹ ہیکنگ کا پتہ لگانے کے لیے ہم ڈیوائس فنگر پرنٹنگ اور Neo4j گراف ڈیٹا بیس کا استعمال کرتے ہیں۔ ہر سسٹم میں مینیجرز کے لیے ڈیش بورڈز شامل ہیں۔",
+    "features": [
+      "Real-Time Transaction Scoring",
+      "Machine Learning Anomaly Models",
+      "Behavioral Fingerprinting & Biometrics",
+      "Device Fingerprinting Integration",
+      "Graph Database Network Analysis",
+      "Custom Rule Engine Scripting",
+      "Explainable AI (SHAP/LIME) Reports",
+      "Compliance Case Management UI"
+    ],
+    "benefits": [
+      "فراڈ پر مبنی ادائیگیوں کو مکمل ہونے سے پہلے روکیں",
+      "دستی چیکنگ کے عمل کو 40 فیصد تک کم کریں",
+      "جائز صارفین کی ادائیگیوں کو بلاک ہونے سے بچائیں",
+      "گراف اینالیٹکس کے ذریعے فراڈ نیٹ ورکس کو پکڑیں",
+      "واضح رپورٹنگ کے ذریعے سیکیورٹی قوانین کی تعمیل کریں",
+      "عملے میں اضافہ کیے بغیر سیکیورٹی کی نگرانی بڑھائیں"
+    ],
+    "metaTitle": "فراڈ ڈیٹیکشن اور سیکیورٹی سسٹمز سروسز | PakSoft",
+    "metaDescription": "اپنے مالی معاملات کو محفوظ بنائیں۔ ہم XGBoost، PyTorch اور Kafka کے ساتھ ریئل ٹائم فراڈ ڈیٹیکشن سسٹمز بناتے ہیں۔ PakSoft سے رابطہ کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "خطرات کا تجزیہ",
+          "description": "ہم آپ کے لین دین کے بہاؤ اور پرانے فراڈ ڈیٹا کا جائزہ لیتے ہیں۔ ہم سیکیورٹی کے معیار اور سسٹم کی حدود کو طے کرتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "ڈیٹا پائپ لائن انجینئرنگ",
+          "description": "ہم Apache Kafka اور Redis کا استعمال کرتے ہوئے تیز رفتار پائپ لائنیں بناتے ہیں۔ یہ یقینی بناتا ہے کہ سیکیورٹی چیک 50 ملی سیکنڈز میں مکمل ہوں۔"
+        },
+        {
+          "step": 3,
+          "title": "ماڈل کی تیاری",
+          "description": "ہم XGBoost، PyTorch اور Neo4j کے ذریعے انوملی ڈیٹیکشن ماڈلز تیار کرتے ہیں۔ ماڈلز کی درستگی کو بہتر بنانے کے لیے پرانے ریکارڈز پر ٹیسٹنگ کی جاتی ہے۔"
+        },
+        {
+          "step": 4,
+          "title": "رولز انجن کا الحاق",
+          "description": "ہم مشین لرننگ ماڈلز کو کاروباری سیکیورٹی قوانین کے ساتھ مربوط کرتے ہیں۔ یہ مینیجرز کو کوڈ تبدیل کیے بغیر سیکیورٹی حدود بدلنے کی اجازت دیتا ہے۔"
+        },
+        {
+          "step": 5,
+          "title": "کیس مینجمنٹ انٹرفیس",
+          "description": "ہم مشکوک ادائیگیوں کے جائزے کے لیے ایک کنٹرول ڈیش بورڈ بناتے ہیں۔ الرٹ کی وجوہات دیکھنے کے لیے ماڈل کی وضاحت کے ٹولز شامل کیے جاتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "ٹیسٹنگ اور نفاذ",
+          "description": "ہم سسٹم کو لائیو ٹریفک کے خلاف ٹیسٹ موڈ میں چلاتے ہیں۔ ماڈل کی کارکردگی بہتر ہونے پر اسے مکمل طور پر فعال کر دیا جاتا ہے۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "مشین لرننگ روایتی رولز پر مبنی سسٹمز سے کیسے بہتر ہے؟",
+          "answer": "روایتی سسٹمز سخت قوانین استعمال کرتے ہیں جن سے بچنا آسان ہوتا ہے اور جائز ادائیگیاں بلاک ہوتی ہیں۔ مشین لرننگ ہزاروں ڈیٹا پوائنٹس کا بیک وقت تجزیہ کر کے غیر واضح تعلقات اور انوملیز کو پکڑتی ہے۔ یہ غلط الرٹس کو کم کرتی ہے اور نئے فراڈ طریقوں کو خود بخود روکتی ہے۔"
+        },
+        {
+          "question": "لین دین کی تاخیر (latency) کیا ہے، اور آپ اسے کیسے کم رکھتے ہیں؟",
+          "answer": "لین دین کی تاخیر سے مراد ادائیگی کو چیک کرنے کا وقت ہے۔ ہم Redis کے ذریعے ڈیٹا نکالنے کے عمل کو تیز بناتے ہیں اور ہلکے ماڈلز استعمال کرتے ہیں۔ اس سے چیکنگ کا وقت 100 ملی سیکنڈز سے کم رہتا ہے، جس سے گاہکوں کو ادائیگی میں کوئی رکاوٹ نہیں ہوتی۔"
+        },
+        {
+          "question": "فراڈ ڈیٹیکشن میں Neo4j گراف ڈیٹا بیس کا کیا کام ہے؟",
+          "answer": "منظم فراڈ میں اکثر کئی اکاؤنٹس ایک ہی کارڈ، فون نمبر یا IP ایڈریس استعمال کر رہے ہوتے ہیں۔ Neo4j گراف ڈیٹا بیس ان باہمی تعلقات کو تلاش کرنے کے لیے تیز رفتار کیوریز چلاتا ہے۔ یہ ان فراڈ نیٹ ورکس کو پکڑتا ہے جنہیں عام ڈیٹا بیس نہیں دیکھ سکتے۔"
+        },
+        {
+          "question": "آپ سیکیورٹی قوانین کی تعمیل کے لیے ماڈل کے فیصلوں کو کیسے واضح کرتے ہیں؟",
+          "answer": "ہم کیس مینجمنٹ میں SHAP یا LIME جیسے وضاحت کے ٹولز مربوط کرتے ہیں۔ جب کوئی ادائیگی بلاک ہوتی ہے، تو سسٹم ان عوامل کی تفصیلی رپورٹ دکھاتا ہے جن کی وجہ سے الرٹ آیا۔ اس سے آپ کی ٹیم بلاک شدہ ادائیگی کی تصدیق اور آڈٹ کر سکتی ہے۔"
+        },
+        {
+          "question": "کیا آپ کا سسٹم اکاؤنٹ ہیکنگ (ATO) کو روک سکتا ہے؟",
+          "answer": "جی ہاں، ہم اکاؤنٹ ہیکنگ سے بچنے کے لیے بیہیویئرل بائیومیٹرکس اور ڈیوائس فنگر پرنٹنگ استعمال کرتے ہیں۔ ماؤس کی حرکت، ٹائپنگ اسپیڈ اور لاگ ان لوکیشن ٹریک کر کے سسٹم غیر معمولی لاگ ان کو بلاک کر دیتا ہے۔ یہ اکاؤنٹ کی حفاظت کے لیے ٹو فیکٹر تصدیق کو فعال کرتا ہے۔"
+        },
+        {
+          "question": "کیا ہمیں شروع کرنے کے لیے بہت زیادہ پرانے فراڈ ڈیٹا کی ضرورت ہے؟",
+          "answer": "اگرچہ پرانا ڈیٹا مفید ہے، لیکن ہم بغیر ڈیٹا کے بھی انوملی ڈیٹیکشن ماڈلز اور عام سیکیورٹی رولز کے ساتھ کام شروع کر سکتے ہیں۔ جیسے جیسے سسٹم پر نئے کیسز ریکارڈ ہوتے ہیں، ہم زیادہ ایڈوانسڈ ماڈلز پر منتقل ہو جاتے ہیں۔ اس طرح آپ پہلے دن سے محفوظ رہتے ہیں۔"
+        },
+        {
+          "question": "غلط الرٹ (false positive) کیا ہے، اور اس سے کیسے بچا جاتا ہے؟",
+          "answer": "غلط الرٹ تب ہوتا ہے جب کسی سچے گاہک کی ادائیگی کو فراڈ سمجھ کر بلاک کر دیا جائے۔ ہم اس مسئلے کو کم کرنے کے لیے ماڈل کے پیرامیٹرز کو روزانہ کی بنیاد پر ٹیون کرتے ہیں۔ ہم نئے ماڈلز کو لائیو کرنے سے پہلے بیک گراؤنڈ میں چلا کر چیک کرتے ہیں۔"
+        },
+        {
+          "question": "سسٹم ہمارے ادائیگی کے گیٹ ویز (payment gateways) کے ساتھ کیسے جڑتا ہے؟",
+          "answer": "ہم محفوظ REST APIs فراہم کرتے ہیں جنہیں آپ کا ادائیگی کا نظام استعمال کرتا ہے۔ چیک آؤٹ کے وقت گیٹ وے ٹرانزیکشن کی تفصیلات بھیجتا ہے، فراڈ اسکور حاصل کرتا ہے اور اس کی بنیاد پر ادائیگی مکمل یا بلاک کرتا ہے۔ ہم Stripe اور PayPal کو سپورٹ کرتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "xgboost",
+          "name": "XGBoost"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch"
+        },
+        {
+          "icon": "apachekafka",
+          "name": "Apache Kafka"
+        },
+        {
+          "icon": "redis",
+          "name": "Redis"
+        },
+        {
+          "icon": "neo4j",
+          "name": "Neo4j"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "fastapi",
+          "name": "FastAPI"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "أنظمة الكشف عن الاحتيال",
+    "shortDescription": "منع الخسائر المالية والاختراقات الأمنية باستخدام أنظمة الكشف عن الاحتيال الفورية بالذكاء الاصطناعي. نحن نبني حلولاً مخصصة لتقييم المعاملات والتحقق السلوكي.",
+    "fullDescription": "تواجه أنظمة منع الاحتيال التقليدية القائمة على القواعد صعوبة كبيرة في التكيف مع أساليب الاحتيال المتطورة، مما يؤدي إلى زيادة التنبيهات الخاطئة وتجاوز التهديدات الحقيقية. نحن نصمم وننشر أنظمة كشف عن الاحتيال على مستوى المؤسسات تحلل سلوك المستخدمين والمعاملات المالية في الوقت الفعلي. باستخدام نماذج التعلم الآلي مثل XGBoost و PyTorch وتدفق البيانات عبر Apache Kafka و Redis، تسجل أنظمتنا المعاملات في أقل من 100 ملّي ثانية. ندمج القياسات الحيوية السلوكية وبصمات الأجهزة وقواعد البيانات الرسومية Neo4j للكشف عن شبكات الاحتيال المنظمة وحظرها. يتضمن كل نظام لوحة تحكم للتحقق الفني من قرارات الذكاء الاصطناعي.",
+    "features": [
+      "Real-Time Transaction Scoring",
+      "Machine Learning Anomaly Models",
+      "Behavioral Fingerprinting & Biometrics",
+      "Device Fingerprinting Integration",
+      "Graph Database Network Analysis",
+      "Custom Rule Engine Scripting",
+      "Explainable AI (SHAP/LIME) Reports",
+      "Compliance Case Management UI"
+    ],
+    "benefits": [
+      "إيقاف المعاملات الاحتيالية قبل اكتمالها",
+      "تقليل أعباء التدقيق اليدوي بنسبة 40%",
+      "تقليل الإنذارات الخاطئة لتحسين تجربة المستخدمين",
+      "تحديد شبكات الاحتيال المنظمة باستخدام التحليل الرسومي",
+      "الحفاظ على الامتثال التنظيمي بقرارات واضحة وموثقة",
+      "توسيع نطاق مراقبة التهديدات دون زيادة موظفي الامتثال"
+    ],
+    "metaTitle": "أنظمة الذكاء الاصطناعي للكشف عن الاحتيال | PakSoft",
+    "metaDescription": "احمِ إيراداتك الآن. نحن نبني أنظمة كشف عن الاحتيال فورية باستخدام XGBoost و PyTorch و Kafka. اتصل بـ PakSoft للحصول على تدقيق أمني للأنظمة.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تحليل التهديدات",
+          "description": "ندقق في تدفقات المعاملات، بيانات الاحتيال التاريخية، ومحركات القواعد الحالية. نحدد معاً معايير الأمان المستهدفة ومعدلات التنبيهات الخاطئة المقبولة."
+        },
+        {
+          "step": 2,
+          "title": "هندسة قنوات البيانات",
+          "description": "نبني قنوات معالجة سريعة باستخدام Apache Kafka و Redis. يضمن ذلك استخراج ميزات المعاملات الحسابية وتحليلها في أقل من 50 ملّي ثانية."
+        },
+        {
+          "step": 3,
+          "title": "تطوير النماذج",
+          "description": "ندرب نماذج تصنيف الشذوذ باستخدام XGBoost و PyTorch و Neo4j. يتم قياس أداء النماذج ومقارنتها بالبيانات التاريخية لتحسين دقة التنبؤ."
+        },
+        {
+          "step": 4,
+          "title": "تكامل محرك القواعد",
+          "description": "ندمج نماذج التعلم الآلي مع القواعد التجارية المحددة في محرك تقييم موحد. يتيح ذلك لفرق الامتثال تعديل حدود الأمان دون تغيير الكود."
+        },
+        {
+          "step": 5,
+          "title": "واجهة إدارة الحالات",
+          "description": "نبني لوحة تحكم لمسؤولي الامتثال لمراجعة المعاملات المشبوهة. ندمج أدوات التفسير الفني لتوضيح أسباب إطلاق التنبيه الأمني لكل معاملة."
+        },
+        {
+          "step": 6,
+          "title": "التشغيل التجريبي والإطلاق",
+          "description": "نشغل النظام في وضع الظل (shadow mode) للتحقق من أداء النموذج مقابل المعاملات الحية. نوسع نطاق التحكم التلقائي تدريجياً بعد تأكيد المقاييس."
+        }
+      ],
+      "faq": [
+        {
+          "question": "كيف يتفوق التعلم الآلي في كشف الاحتيال مقارنة بالأنظمة التقليدية؟",
+          "answer": "تعتمد الأنظمة التقليدية على قواعد ثابتة يسهل للمحتالين تجاوزها وتؤدي للكثير من حظر المستخدمين الحقيقيين. يحلل التعلم الآلي آلاف نقاط البيانات معاً لتحديد العلاقات المعقدة والشذوذ السلوكي. يقلل هذا التنبيهات الخاطئة ويكشف أساليب الاحتيال الجديدة تلقائياً."
+        },
+        {
+          "question": "ما هو زمن استجابة النظام وكيف تحافظون عليه منخفضاً؟",
+          "answer": "زمن الاستجابة هو وقت تقييم المعاملة. نحن نحسن استخراج الميزات باستخدام Redis وننشر نماذج خفيفة باستخدام TensorRT أو ONNX. يضمن ذلك بقاء وقت التقييم تحت 100 ملّي ثانية، مما يحافظ على سرعة وسلاسة عملية الدفع للعملاء."
+        },
+        {
+          "question": "ما أهمية قواعد البيانات الرسومية مثل Neo4j في كشف الاحتيال؟",
+          "answer": "يستخدم الاحتيال المنظم شبكات حسابات تشترك في بطاقات ائتمان أو عناوين IP واحدة. تتيح لنا Neo4j إجراء استعلامات فورية لكشف هذه العلاقات المعقدة. يكشف ذلك شبكات الاحتيال المنظمة وحالات سرقة الهوية التي تعجز قواعد البيانات التقليدية عن كشفها."
+        },
+        {
+          "question": "كيف تتعاملون مع تفسير قرارات النماذج للامتثال التنظيمي؟",
+          "answer": "ندمج أطر العمل التفسيرية مثل SHAP أو LIME في واجهة إدارة الحالات. عند حظر معاملة، يعرض النظام تقريراً مرئياً للأسباب الرئيسية المؤثرة في التقييم. يتيح ذلك لفرق الامتثال تدقيق القرارات وتوثيق أسباب حظر المدفوعات."
+        },
+        {
+          "question": "هل يمكن لنظامكم منع هجمات الاستيلاء على الحسابات (ATO)؟",
+          "answer": "نعم، نحن نطبق القياسات الحيوية السلوكية وبصمات الأجهزة لمنع الاستيلاء على الحسابات. من خلال تتبع سرعة الكتابة وحركات الفأرة ومواقع تسجيل الدخول، يكشف النظام أي دخول غريب عن سلوك المستخدم المعتاد. يفعل هذا التحقق ثنائي العامل لحماية الحساب."
+        },
+        {
+          "question": "هل نحتاج إلى كميات ضخمة من بيانات الاحتيال التاريخية للبدء؟",
+          "answer": "البيانات التاريخية مفيدة ولكنها ليست شرطاً للبدء. يمكننا نشر نماذج كشف الشذوذ غير الخاضعة للإشراف جنباً إلى جنب مع القواعد الأساسية. ومع تراكم البيانات وتسجيل الأحداث، ننتقل لنماذج التعلم الآلي الخاضعة للإشراف لتوفير حماية كاملة من اليوم الأول."
+        },
+        {
+          "question": "ما هو التنبيه الخاطئ (false positive) وكيف تحدون منه؟",
+          "answer": "التنبيه الخاطئ هو حظر معاملة عميل حقيقي بالخطأ. نحن نحد من هذه المشكلة بتحسين معايير الدقة والاستدعاء والضبط المستمر لعتبات التقييم. نشغل النماذج الجديدة أيضاً في وضع التجربة الصامتة للتأكد من أدائها قبل حظر أي معاملات فعلية."
+        },
+        {
+          "question": "كيف يتكامل النظام مع بوابات الدفع الحالية لدينا؟",
+          "answer": "نوفر واجهات برمجة تطبيقات آمنة REST APIs أو نقاط webhook تستدعيها بوابة الدفع أثناء السداد. ترسل البوابة تفاصيل المعاملة وتتلقى تقييم الاحتيال وتتخذ إجراء الحظر أو القبول. نحن ندعم التكامل مع Stripe و PayPal و Adyen والأنظمة المخصصة."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "xgboost",
+          "name": "XGBoost"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch"
+        },
+        {
+          "icon": "apachekafka",
+          "name": "Apache Kafka"
+        },
+        {
+          "icon": "redis",
+          "name": "Redis"
+        },
+        {
+          "icon": "neo4j",
+          "name": "Neo4j"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "fastapi",
+          "name": "FastAPI"
+        }
+      ]
+    }
+  }
+}

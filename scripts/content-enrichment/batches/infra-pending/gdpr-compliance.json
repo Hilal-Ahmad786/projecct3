@@ -1,0 +1,598 @@
+{
+  "slug": "gdpr-compliance",
+  "en": {
+    "name": "GDPR Compliance & Data Privacy",
+    "shortDescription": "Secure your customer data and achieve full GDPR compliance with our comprehensive gap analysis, technical audits, and automated privacy workflows designed for modern digital enterprises.",
+    "fullDescription": "Navigating the complexities of European data protection laws requires more than just a privacy policy template. PakSoft delivers end-to-end GDPR compliance services that align your technical infrastructure, databases, and software workflows with strict EU regulations. We conduct deep-dive data mapping, implement robust encryption protocols, establish consent management systems, and set up automated data subject access request (DSAR) workflows. Our cybersecurity experts work alongside your engineering teams to ensure that data minimization, privacy-by-design, and secure logging are embedded directly into your codebase, protecting your business from devastating regulatory fines and building lasting trust with your global users.",
+    "features": [
+      "Comprehensive GDPR Gap Analysis",
+      "Data Mapping & Inventory Creation",
+      "Privacy by Design Architecture",
+      "Automated DSAR Workflow Setup",
+      "Consent Management Integration",
+      "Data Protection Impact Assessment (DPIA)",
+      "Encrypted Log & Database Auditing",
+      "Continuous Compliance Monitoring"
+    ],
+    "benefits": [
+      "Avoid costly regulatory fines",
+      "Build trust with European clients",
+      "Streamline data subject requests",
+      "Minimize data breach liabilities",
+      "Establish clear privacy policies",
+      "Accelerate enterprise sales cycles"
+    ],
+    "metaTitle": "GDPR Compliance & Data Privacy Services | PakSoft",
+    "metaDescription": "Achieve full GDPR compliance with PakSoft. We provide expert gap analysis, data mapping, and technical implementation. Contact us today for a secure audit!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Discovery & Data Mapping",
+          "description": "We identify where all personally identifiable information (PII) is stored across your entire infrastructure. Our team maps data flows to create a comprehensive inventory of your digital assets."
+        },
+        {
+          "step": 2,
+          "title": "Gap Analysis",
+          "description": "We compare your current technical and organizational measures against strict GDPR requirements. This allows us to pinpoint vulnerabilities and prioritize critical remediation steps."
+        },
+        {
+          "step": 3,
+          "title": "Technical Remediation",
+          "description": "Our engineers implement end-to-end encryption, secure access controls, and robust data minimization protocols. We ensure your databases and APIs are fully compliant by design."
+        },
+        {
+          "step": 4,
+          "title": "Policy & Consent Setup",
+          "description": "We draft tailored privacy policies and integrate advanced consent management platforms on your applications. This ensures transparent data collection practices that respect user choices."
+        },
+        {
+          "step": 5,
+          "title": "DSAR Automation",
+          "description": "We build automated workflows to handle data subject access, rectification, and deletion requests efficiently. This minimizes manual overhead and guarantees compliance with strict statutory timelines."
+        },
+        {
+          "step": 6,
+          "title": "Training & Handover",
+          "description": "We conduct comprehensive training sessions for your internal teams on data handling best practices. Our experts provide complete documentation to ensure long-term compliance maintenance."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the first step in achieving GDPR compliance?",
+          "answer": "The first step is conducting a thorough data mapping exercise to locate all personally identifiable information (PII) within your systems. Once we understand where your data resides and how it flows, we can perform an accurate gap analysis to identify compliance vulnerabilities."
+        },
+        {
+          "question": "How do you handle Data Subject Access Requests (DSARs)?",
+          "answer": "We implement automated workflows that allow users to request, download, or delete their personal data securely. This system verifies user identities and compiles the necessary data automatically, reducing manual effort and ensuring you meet the 30-day legal deadline."
+        },
+        {
+          "question": "What is Privacy by Design and how do you implement it?",
+          "answer": "Privacy by Design means integrating data protection principles into your software development lifecycle from the very beginning. We configure your databases to minimize data collection, enforce strict encryption at rest and in transit, and implement role-based access controls."
+        },
+        {
+          "question": "Do we need a designated Data Protection Officer (DPO)?",
+          "answer": "A DPO is mandatory if your organization processes sensitive personal data on a large scale or conducts systematic monitoring of individuals. We evaluate your specific business model and can provide virtual DPO support to guide your compliance strategy."
+        },
+        {
+          "question": "How does GDPR affect our cloud infrastructure and hosting?",
+          "answer": "GDPR requires that all cloud infrastructure hosting EU citizen data complies with strict security standards and resides within approved jurisdictions. We audit your cloud configurations on AWS, Azure, or Google Cloud to ensure compliant data residency and secure transit."
+        },
+        {
+          "question": "What are the penalties for non-compliance with GDPR?",
+          "answer": "Non-compliance can result in severe administrative fines of up to 20 million Euros or 4% of your global annual turnover, whichever is higher. Beyond financial penalties, organizations face severe reputational damage and potential loss of access to European markets."
+        },
+        {
+          "question": "How long does the entire GDPR compliance process take?",
+          "answer": "A typical compliance project takes between 6 to 12 weeks depending on the complexity of your software architecture and data flows. We provide a detailed roadmap after our initial gap analysis to establish realistic timelines and milestones."
+        },
+        {
+          "question": "Do you provide ongoing compliance monitoring after implementation?",
+          "answer": "Yes, we offer continuous monitoring services and periodic audits to ensure your systems remain compliant as your software evolves. We update your policies and technical controls to align with any new regulatory updates or architectural changes."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "OneTrust",
+          "icon": "onetrust"
+        },
+        {
+          "name": "Cookiebot",
+          "icon": "cookiebot"
+        },
+        {
+          "name": "AWS KMS",
+          "icon": "aws"
+        },
+        {
+          "name": "HashiCorp Vault",
+          "icon": "vault"
+        },
+        {
+          "name": "ScyllaDB",
+          "icon": "scylladb"
+        },
+        {
+          "name": "Auth0",
+          "icon": "auth0"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "GDPR ve KVKK Uyumluluğu",
+    "shortDescription": "Kapsamlı boşluk analizi, teknik denetimler ve modern dijital işletmeler için özel olarak tasarlanmış otomatik gizlilik iş akışlarıyla müşteri verilerinizi güvence altına alın ve tam GDPR uyumluluğu sağlayın.",
+    "fullDescription": "Avrupa veri koruma yasalarının karmaşıklığında yol almak, yalnızca bir gizlilik politikası şablonundan fazlasını gerektirir. PakSoft, teknik altyapınızı, veri tabanlarınızı ve yazılım iş akışlarınızı katı AB düzenlemeleriyle uyumlu hale getiren uçtan uca GDPR uyumluluk hizmetleri sunar. Derinlemesine veri haritalama gerçekleştiriyor, güçlü şifreleme protokolleri uyguluyor, rıza yönetim sistemleri kuruyor ve otomatik veri sahibi erişim talebi (DSAR) iş akışları oluşturuyoruz. Siber güvenlik uzmanlarımız, veri minimizasyonu, tasarım gereği gizlilik ve güvenli günlük kaydı süreçlerinin doğrudan kod tabanınıza entegre edilmesini sağlamak için mühendislik ekiplerinizle birlikte çalışır.",
+    "features": [
+      "Kapsamlı GDPR Boşluk Analizi",
+      "Veri Haritalama ve Envanter Oluşturma",
+      "Tasarım Gereği Gizlilik Mimarisi",
+      "Otomatik DSAR İş Akışı Kurulumu",
+      "Rıza Yönetimi Entegrasyonu",
+      "Veri Koruma Etki Değerlendirmesi (DPIA)",
+      "Şifreli Günlük ve Veritabanı Denetimi",
+      "Sürekli Uyumluluk İzleme"
+    ],
+    "benefits": [
+      "Maliyetli idari para cezalarından kaçının",
+      "Avrupalı müşterilerle güven inşa edin",
+      "Veri sahibi taleplerini kolaylaştırın",
+      "Veri ihlali yükümlülüklerini en aza indirin",
+      "Net gizlilik politikaları oluşturun",
+      "Kurumsal satış süreçlerini hızlandırın"
+    ],
+    "metaTitle": "GDPR ve KVKK Uyumluluk Hizmetleri | PakSoft",
+    "metaDescription": "PakSoft ile tam GDPR uyumluluğu sağlayın. Uzman boşluk analizi, veri haritalama ve teknik uygulama sunuyoruz. Güvenli denetim için bugün iletişime geçin!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Keşif ve Veri Haritalama",
+          "description": "Tüm altyapınızda kişisel olarak tanımlanabilir bilgilerin (PII) nerede saklandığını belirliyoruz. Ekibimiz, dijital varlıklarınızın kapsamlı bir envanterini oluşturmak için veri akışlarını haritalandırır."
+        },
+        {
+          "step": 2,
+          "title": "Boşluk Analizi",
+          "description": "Mevcut teknik ve organizasyonel önlemlerinizi katı GDPR gereksinimleriyle karşılaştırıyoruz. Bu, güvenlik açıklarını tam olarak belirlememize ve kritik düzeltme adımlarına öncelik vermemize olanak tanır."
+        },
+        {
+          "step": 3,
+          "title": "Teknik Düzeltme",
+          "description": "Mühendislerimiz uçtan uca şifreleme, güvenli erişim kontrolleri ve güçlü veri minimizasyonu protokolleri uygular. Veritabanlarınızın ve API'lerinizin tasarım gereği tamamen uyumlu olmasını sağlıyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Politika ve Rıza Kurulumu",
+          "description": "Uygulamalarınızda özel gizlilik politikaları hazırlıyor ve gelişmiş rıza yönetimi platformlarını entegre ediyoruz. Bu, kullanıcı tercihlerine saygı duyan şeffaf veri toplama uygulamaları sağlar."
+        },
+        {
+          "step": 5,
+          "title": "DSAR Otomasyonu",
+          "description": "Veri sahibi erişim, düzeltme ve silme taleplerini verimli bir şekilde yönetmek için otomatik iş akışları oluşturuyoruz. Bu, manuel iş yükünü en aza indirir ve yasal sürelere uyumu garanti eder."
+        },
+        {
+          "step": 6,
+          "title": "Eğitim ve Teslimat",
+          "description": "İç ekipleriniz için veri işleme en iyi uygulamaları konusunda kapsamlı eğitim oturumları düzenliyoruz. Uzmanlarımız, uzun vadeli uyumluluk bakımı sağlamak için eksiksiz belgeler sunar."
+        }
+      ],
+      "faq": [
+        {
+          "question": "GDPR uyumluluğu sağlamada ilk adım nedir?",
+          "answer": "İlk adım, sistemlerinizdeki tüm kişisel verileri (PII) bulmak için kapsamlı bir veri haritalama çalışması yapmaktır. Verilerinizin nerede saklandığını ve nasıl aktığını anladıktan sonra, uyumluluk açıklarını belirlemek için doğru bir boşluk analizi gerçekleştirebiliriz."
+        },
+        {
+          "question": "Veri Sahibi Erişim Taleplerini (DSAR) nasıl yönetiyorsunuz?",
+          "answer": "Kullanıcıların kişisel verilerini güvenli bir şekilde talep etmelerine, indirmelerine veya silmelerine olanak tanıyan otomatik iş akışları uyguluyoruz. Bu sistem, kullanıcı kimliklerini doğrular ve gerekli verileri otomatik olarak derleyerek 30 günlük yasal süreyi kaçırmamanızı sağlar."
+        },
+        {
+          "question": "Tasarım Gereği Gizlilik (Privacy by Design) nedir ve nasıl uygulanır?",
+          "answer": "Tasarım Gereği Gizlilik, veri koruma ilkelerini yazılım geliştirme yaşam döngünüzün en başından itibaren entegre etmek anlamına gelir. Veritabanlarınızı veri toplamayı en aza indirecek şekilde yapılandırıyor, güçlü şifrelemeler uyguluyor ve rol tabanlı erişim kontrolleri kuruyoruz."
+        },
+        {
+          "question": "Şirketimiz için bir Veri Koruma Görevlisi (DPO) atamak zorunda mıyız?",
+          "answer": "Kuruluşunuz hassas kişisel verileri büyük ölçekte işliyorsa veya bireylerin sistematik olarak izlenmesini gerçekleştiriyorsa bir DPO zorunludur. Özel iş modelinizi değerlendiriyor ve uyumluluk stratejinize rehberlik etmek için sanal DPO desteği sağlayabiliyoruz."
+        },
+        {
+          "question": "GDPR bulut altyapımızı ve barındırma hizmetlerimizi nasıl etkiler?",
+          "answer": "GDPR, AB vatandaşı verilerini barındıran tüm bulut altyapılarının katı güvenlik standartlarına uymasını ve onaylanmış bölgelerde bulunmasını gerektirir. AWS, Azure veya Google Cloud üzerindeki bulut yapılandırmalarınızı uyumlu veri yerleşimi ve güvenli aktarım için denetliyoruz."
+        },
+        {
+          "question": "GDPR kurallarına uymamanın cezaları nelerdir?",
+          "answer": "Uyumsuzluk, 20 milyon Euro'ya veya şirketin küresel yıllık cirosunun %4'üne kadar (hangisi daha yüksekse) ağır idari para cezalarıyla sonuçlanabilir. Finansal cezaların ötesinde, kuruluşlar ciddi itibar kaybı ve Avrupa pazarlarına erişim engeliyle karşılaşabilir."
+        },
+        {
+          "question": "GDPR uyumluluk süreci ne kadar sürer?",
+          "answer": "Tipik bir uyumluluk projesi, yazılım mimarinizin ve veri akışlarınızın karmaşıklığına bağlı olarak 6 ila 12 hafta sürer. Gerçekçi zaman çizelgeleri ve kilometre taşları belirlemek için ilk boşluk analizimizden sonra ayrıntılı bir yol haritası sunuyoruz."
+        },
+        {
+          "question": "Uygulamadan sonra sürekli uyumluluk izleme hizmeti sağlıyor musunuz?",
+          "answer": "Evet, yazılımınız geliştikçe sistemlerinizin uyumlu kalmasını sağlamak için sürekli izleme hizmetleri ve periyodik denetimler sunuyoruz. Politikalarınızı ve teknik kontrollerinizi yeni yasal güncellemelere veya mimari değişikliklere göre güncelliyoruz."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "OneTrust",
+          "icon": "onetrust"
+        },
+        {
+          "name": "Cookiebot",
+          "icon": "cookiebot"
+        },
+        {
+          "name": "AWS KMS",
+          "icon": "aws"
+        },
+        {
+          "name": "HashiCorp Vault",
+          "icon": "vault"
+        },
+        {
+          "name": "ScyllaDB",
+          "icon": "scylladb"
+        },
+        {
+          "name": "Auth0",
+          "icon": "auth0"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "GDPR-Konformität & Datenschutz",
+    "shortDescription": "Sichern Sie Ihre Kundendaten und erreichen Sie die vollständige DSGVO-Konformität mit unseren umfassenden Gap-Analysen, technischen Audits und automatisierten Datenschutz-Workflows, die speziell für moderne digitale Unternehmen entwickelt wurden.",
+    "fullDescription": "Die Navigation durch die Komplexität der europäischen Datenschutzgesetze erfordert mehr als nur eine einfache Vorlage für Datenschutzrichtlinien. PakSoft bietet durchgängige DSGVO-Konformitätsdienste, die Ihre technische Infrastruktur, Datenbanken und Software-Workflows an die strengen EU-Vorschriften anpassen. Wir führen detaillierte Datenkartierungen durch, implementieren robuste Verschlüsselungsprotokolle, richten Einwilligungsmanagementsysteme ein und konfigurieren automatisierte Workflows für Betroffenenanfragen (DSAR). Unsere Cybersicherheitsexperten arbeiten eng mit Ihren Entwicklungsteams zusammen, um sicherzustellen, dass Datenminimierung, Privacy-by-Design und sichere Protokollierung direkt in Ihren Code integriert werden, um Ihr Unternehmen vor hohen Bußgeldern zu schützen.",
+    "features": [
+      "Umfassende DSGVO-Gap-Analyse",
+      "Datenkartierung & Inventarisierung",
+      "Privacy-by-Design-Architektur",
+      "Automatisierte DSAR-Workflows",
+      "Integration von Einwilligungsmanagement",
+      "Datenschutz-Folgenabschätzung (DSFA)",
+      "Verschlüsselte Protokoll- & Datenbankaudits",
+      "Kontinuierliche Compliance-Überwachung"
+    ],
+    "benefits": [
+      "Vermeidung hoher Bußgelder",
+      "Vertrauen bei europäischen Kunden aufbauen",
+      "Effiziente Bearbeitung von Betroffenenanfragen",
+      "Minimierung von Haftungsrisiken bei Datenpannen",
+      "Etablierung klarer Datenschutzrichtlinien",
+      "Beschleunigung von B2B-Vertriebszyklen"
+    ],
+    "metaTitle": "GDPR-Konformität & Datenschutz-Services | PakSoft",
+    "metaDescription": "Erreichen Sie die volle DSGVO-Konformität mit PakSoft. Wir bieten Gap-Analysen, Datenkartierung und technische Umsetzung. Kontaktieren Sie uns für ein Audit!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Erfassung & Datenkartierung",
+          "description": "Wir identifizieren, wo alle personenbezogenen Daten (PII) in Ihrer gesamten Infrastruktur gespeichert sind. Unser Team kartiert die Datenflüsse, um ein umfassendes Inventar Ihrer digitalen Assets zu erstellen."
+        },
+        {
+          "step": 2,
+          "title": "Gap-Analyse",
+          "description": "Wir vergleichen Ihre aktuellen technischen und organisatorischen Maßnahmen mit den strengen DSGVO-Anforderungen. Dies ermöglicht es uns, Schwachstellen präzise zu identifizieren und Abhilfemaßnahmen zu priorisieren."
+        },
+        {
+          "step": 3,
+          "title": "Technische Behebung",
+          "description": "Unsere Ingenieure implementieren Ende-zu-Ende-Verschlüsselung, sichere Zugriffskontrollen und robuste Datenminimierungsprotokolle. Wir stellen sicher, dass Ihre Datenbanken und APIs von Grund auf konform sind."
+        },
+        {
+          "step": 4,
+          "title": "Richtlinien- & Consent-Setup",
+          "description": "Wir erstellen maßgeschneiderte Datenschutzrichtlinien und integrieren fortschrittliche Consent-Management-Plattformen in Ihre Anwendungen. Dies gewährleistet transparente Datenerfassungspraktiken, die die Entscheidungen der Nutzer respektieren."
+        },
+        {
+          "step": 5,
+          "title": "DSAR-Automatisierung",
+          "description": "Wir erstellen automatisierte Workflows, um Auskunfts-, Berichtigungs- und Löschanfragen von Betroffenen effizient zu bearbeiten. Dies minimiert den manuellen Aufwand und garantiert die Einhaltung der gesetzlichen Fristen."
+        },
+        {
+          "step": 6,
+          "title": "Schulung & Übergabe",
+          "description": "Wir führen umfassende Schulungen für Ihre internen Teams zu Best Practices im Umgang mit Daten durch. Unsere Experten stellen eine vollständige Dokumentation bereit, um eine langfristige Compliance zu gewährleisten."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist der erste Schritt zur Erreichung der DSGVO-Konformität?",
+          "answer": "Der erste Schritt ist eine gründliche Datenkartierung, um alle personenbezogenen Daten (PII) in Ihren Systemen zu lokalisieren. Sobald wir wissen, wo Ihre Daten liegen und wie sie fließen, können wir eine präzise Gap-Analyse durchführen, um Schwachstellen zu identifizieren."
+        },
+        {
+          "question": "Wie handhaben Sie Betroffenenanfragen (DSARs)?",
+          "answer": "Wir implementieren automatisierte Workflows, mit denen Nutzer ihre persönlichen Daten sicher anfordern, herunterladen oder löschen können. Dieses System verifiziert die Identität des Nutzers und stellt die erforderlichen Daten automatisch zusammen, um die gesetzliche 30-Tage-Frist einzuhalten."
+        },
+        {
+          "question": "Was bedeutet Privacy by Design und wie wird es umgesetzt?",
+          "answer": "Privacy by Design bedeutet, dass Datenschutzprinzipien von Anfang an in den Softwareentwicklungslebenszyklus integriert werden. Wir konfigurieren Ihre Datenbanken so, dass die Datenerfassung minimiert wird, erzwingen Verschlüsselung und richten rollenbasierte Zugriffskontrollen ein."
+        },
+        {
+          "question": "Benötigen wir einen dedizierten Datenschutzbeauftragten (DSB)?",
+          "answer": "Ein DSB ist obligatorisch, wenn Ihr Unternehmen sensible personenbezogene Daten in großem Umfang verarbeitet oder eine systematische Überwachung von Personen durchführt. Wir bewerten Ihr Geschäftsmodell und können virtuellen DSB-Support anbieten, um Ihre Compliance-Strategie zu leiten."
+        },
+        {
+          "question": "Wie wirkt sich die DSGVO auf unsere Cloud-Infrastruktur aus?",
+          "answer": "Die DSGVO verlangt, dass alle Cloud-Infrastrukturen, auf denen Daten von EU-Bürgern gehostet werden, strengen Sicherheitsstandards entsprechen und sich in zugelassenen Ländern befinden. Wir prüfen Ihre Cloud-Konfigurationen auf AWS, Azure oder Google Cloud auf konforme Datenresidenz."
+        },
+        {
+          "question": "Welche Strafen drohen bei Nichteinhaltung der DSGVO?",
+          "answer": "Eine Nichteinhaltung kann zu schweren Geldbußen von bis zu 20 Millionen Euro oder 4 % des weltweiten Jahresumsatzes führen, je nachdem, welcher Wert höher ist. Neben finanziellen Strafen drohen Unternehmen erhebliche Reputationsschäden und der Verlust des Zugangs zum EU-Markt."
+        },
+        {
+          "question": "Wie lange dauert der gesamte Prozess der DSGVO-Umstellung?",
+          "answer": "Ein typisches Compliance-Projekt dauert je nach Komplexität Ihrer Softwarearchitektur und Datenflüsse zwischen 6 und 12 Wochen. Wir erstellen nach unserer ersten Gap-Analyse eine detaillierte Roadmap, um realistische Zeitpläne und Meilensteine festzulegen."
+        },
+        {
+          "question": "Bieten Sie nach der Implementierung eine kontinuierliche Überwachung an?",
+          "answer": "Ja, wir bieten kontinuierliche Überwachungsdienste und regelmäßige Audits an, um sicherzustellen, dass Ihre Systeme auch bei Weiterentwicklung Ihrer Software konform bleiben. Wir aktualisieren Ihre Richtlinien und technischen Kontrollen bei neuen regulatorischen Anforderungen."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "OneTrust",
+          "icon": "onetrust"
+        },
+        {
+          "name": "Cookiebot",
+          "icon": "cookiebot"
+        },
+        {
+          "name": "AWS KMS",
+          "icon": "aws"
+        },
+        {
+          "name": "HashiCorp Vault",
+          "icon": "vault"
+        },
+        {
+          "name": "ScyllaDB",
+          "icon": "scylladb"
+        },
+        {
+          "name": "Auth0",
+          "icon": "auth0"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "جی ڈی پی آر تعمیل اور ڈیٹا پرائیویسی",
+    "shortDescription": "جامع گیپ تجزیہ، تکنیکی آڈٹ، اور جدید ڈیجیٹل اداروں کے لیے ڈیزائن کردہ خودکار پرائیویسی ورک فلوز کے ساتھ اپنے کسٹمر ڈیٹا کو محفوظ بنائیں اور جی ڈی پی آر تعمیل حاصل کریں۔",
+    "fullDescription": "یورپی ڈیٹا پروٹیکشن قوانین کی پیچیدگیوں کو سمجھنے کے لیے محض ایک پرائیویسی پالیسی ٹیمپلیٹ سے زیادہ کی ضرورت ہوتی ہے۔ PakSoft اینڈ ٹو اینڈ جی ڈی پی آر تعمیل کی خدمات فراہم کرتا ہے جو آپ کے تکنیکی انفراسٹرکچر، ڈیٹا بیسز، اور سافٹ ویئر ورک فلوز کو سخت یورپی یونین کے ضوابط کے ساتھ ہم آہنگ کرتی ہے۔ ہم گہرائی سے ڈیٹا میپنگ کرتے ہیں، مضبوط انکرپشن پروٹوکول نافذ کرتے ہیں، رضامندی کے انتظام کے نظام قائم کرتے ہیں، اور خودکار ڈیٹا سبجیکٹ ایکسیس ریکوسٹ (DSAR) ورک فلوز ترتیب دیتے ہیں۔ ہمارے سائبر سیکیورٹی ماہرین آپ کی انجینئرنگ ٹیموں کے ساتھ مل کر کام کرتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ ڈیٹا کو کم سے کم کرنا، ڈیزائن کے لحاظ سے پرائیویسی، اور محفوظ لاگنگ براہ راست آپ کے کوڈ بیس میں شامل ہوں، جو آپ کے کاروبار کو ریگولیٹری جرمانوں سے بچاتا ہے۔",
+    "features": [
+      "جامع جی ڈی پی آر گیپ تجزیہ",
+      "ڈیٹا میپنگ اور انوینٹری کی تخلیق",
+      "ڈیزائن کے لحاظ سے پرائیویسی آرکیٹیکچر",
+      "خودکار DSAR ورک فلو سیٹ اپ",
+      "رضامندی کے انتظام کی انٹیگریشن",
+      "ڈیٹا پروٹیکشن امپیکٹ اسیسمنٹ (DPIA)",
+      "انکرپٹڈ لاگ اور ڈیٹا بیس آڈیٹنگ",
+      "مسلسل تعمیل کی نگرانی"
+    ],
+    "benefits": [
+      "بھاری ریگولیٹری جرمانوں سے بچیں",
+      "یورپی کلائنٹس کے ساتھ اعتماد قائم کریں",
+      "ڈیٹا سبجیکٹ کی درخواستوں کو آسان بنائیں",
+      "ڈیٹا کی خلاف ورزی کی ذمہ داریوں کو کم کریں",
+      "واضح پرائیویسی پالیسیاں قائم کریں",
+      "انٹرپرائز سیلز سائیکلز کو تیز کریں"
+    ],
+    "metaTitle": "جی ڈی پی آر تعمیل اور ڈیٹا پرائیویسی سروسز | PakSoft",
+    "metaDescription": "PakSoft کے ساتھ مکمل جی ڈی پی آر تعمیل حاصل کریں۔ ہم ماہر گیپ تجزیہ، ڈیٹا میپنگ، اور تکنیکی نفاذ فراہم کرتے ہیں۔ محفوظ آڈٹ کے لیے آج ہی رابطہ کریں!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "دریافت اور ڈیٹا میپنگ",
+          "description": "ہم شناخت کرتے ہیں کہ آپ کے پورے انفراسٹرکچر میں ذاتی طور پر قابل شناخت معلومات (PII) کہاں محفوظ ہیں۔ ہماری ٹیم آپ کے ڈیجیٹل اثاثوں کی ایک جامع انوینٹری بنانے کے لیے ڈیٹا کے بہاؤ کا نقشہ بناتی ہے۔"
+        },
+        {
+          "step": 2,
+          "title": "گیپ تجزیہ",
+          "description": "ہم آپ کے موجودہ تکنیکی اور تنظیمی اقدامات کا سخت جی ڈی پی آر تقاضوں سے موازنہ کرتے ہیں۔ یہ ہمیں کمزوریوں کی نشاندہی کرنے اور اہم اصلاحی اقدامات کو ترجیح دینے کی اجازت دیتا ہے۔"
+        },
+        {
+          "step": 3,
+          "title": "تکنیکی اصلاح",
+          "description": "ہمارے انجینئرز اینڈ ٹو اینڈ انکرپشن، محفوظ رسائی کے کنٹرول، اور مضبوط ڈیٹا کو کم سے کم کرنے کے پروٹوکول نافذ کرتے ہیں۔ ہم یقینی بناتے ہیں کہ آپ کے ڈیٹا بیس اور APIs ڈیزائن کے لحاظ سے مکمل طور پر تعمیل کرتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "پالیسی اور رضامندی کا سیٹ اپ",
+          "description": "ہم آپ کی ایپلی کیشنز پر اپنی مرضی کے مطابق پرائیویسی پالیسیاں تیار کرتے ہیں اور جدید رضامندی کے انتظام کے پلیٹ فارمز کو مربوط کرتے ہیں۔ یہ ڈیٹا اکٹھا کرنے کے شفاف طریقوں کو یقینی بناتا ہے جو صارف کے انتخاب کا احترام کرتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "DSAR آٹومیشن",
+          "description": "ہم ڈیٹا سبجیکٹ کی رسائی، تصحیح، اور حذف کرنے کی درخواستوں کو مؤثر طریقے سے سنبھالنے کے لیے خودکار ورک فلو بناتے ہیں۔ یہ دستی اوور ہیڈ کو کم کرتا ہے اور سخت قانونی ٹائم لائنز کی تعمیل کی ضمانت دیتا ہے۔"
+        },
+        {
+          "step": 6,
+          "title": "تربیت اور ہینڈ اوور",
+          "description": "ہم ڈیٹا ہینڈلنگ کے بہترین طریقوں پر آپ کی اندرونی ٹیموں کے لیے جامع تربیتی سیشن منعقد کرتے ہیں۔ ہمارے ماہرین طویل مدتی تعمیل کی دیکھ بھال کو یقینی بنانے کے لیے مکمل دستاویزات فراہم کرتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "جی ڈی پی آر تعمیل حاصل کرنے میں پہلا قدم کیا ہے؟",
+          "answer": "پہلا قدم آپ کے سسٹمز کے اندر تمام ذاتی طور پر قابل شناخت معلومات (PII) کو تلاش کرنے کے لیے ڈیٹا میپنگ کی ایک مکمل مشق کرنا ہے۔ ایک بار جب ہم سمجھ جاتے ہیں کہ آپ کا ڈیٹا کہاں رہتا ہے اور یہ کیسے بہتا ہے، تو ہم تعمیل کی کمزوریوں کی نشاندہی کرنے کے لیے ایک درست گیپ تجزیہ کر سکتے۔"
+        },
+        {
+          "question": "آپ ڈیٹا سبجیکٹ تک رسائی کی درخواستوں (DSARs) کو کیسے ہینڈل کرتے ہیں؟",
+          "answer": "ہم خودکار ورک فلو نافذ کرتے ہیں جو صارفین کو اپنے ذاتی ڈیٹا کی محفوظ طریقے سے درخواست کرنے، ڈاؤن لوڈ کرنے یا حذف کرنے کی اجازت دیتے ہیں۔ یہ سسٹم صارف کی شناخت کی تصدیق کرتا ہے اور ضروری ڈیٹا کو خود بخود مرتب کرتا ہے، جس سے دستی کوششیں کم ہوتی ہیں اور 30 دن کی قانونی آخری تاریخ کو پورا کرنا یقینی ہوتا ہے۔"
+        },
+        {
+          "question": "ڈیزائن کے لحاظ سے پرائیویسی (Privacy by Design) کیا ہے اور آپ اسے کیسے نافذ کرتے ہیں؟",
+          "answer": "ڈیزائن کے لحاظ سے پرائیویسی کا مطلب ہے کہ سافٹ ویئر ڈویلپمنٹ لائف سائیکل میں شروع ہی سے ڈیٹا پروٹیکشن کے اصولوں کو ضم کرنا۔ ہم ڈیٹا اکٹھا کرنے کو کم سے کم کرنے، ٹرانزٹ اور ریسٹ میں سخت انکرپشن نافذ کرنے، اور رول پر مبنی رسائی کنٹرول قائم کرنے کے لیے آپ کے ڈیٹا بیس کو کنفیگر کرتے ہیں۔"
+        },
+        {
+          "question": "کیا ہمیں ایک نامزد ڈیٹا پروٹیکشن آفیسر (DPO) کی ضرورت ہے؟",
+          "answer": "ایک DPO لازمی ہے اگر آپ کی تنظیم بڑے پیمانے پر حساس ذاتی ڈیٹا پروسیس کرتی ہے یا افراد کی منظم نگرانی کرتی ہے۔ ہم آپ کے مخصوص کاروباری ماڈل کا جائزہ لیتے ہیں اور آپ کی تعمیل کی حکمت عملی کی رہنمائی کے لیے ورچوئل DPO سپورٹ فراہم کر سکتے ہیں۔"
+        },
+        {
+          "question": "جی ڈی پی آر ہمارے کلاؤڈ انفراسٹرکچر اور ہوسٹنگ کو کیسے متاثر کرتا ہے؟",
+          "answer": "جی ڈی پی آر کا تقاضا ہے کہ یورپی یونین کے شہریوں کے ڈیٹا کی میزبانی کرنے والا تمام کلاؤڈ انفراسٹرکچر سخت سیکیورٹی معیارات کی تعمیل کرے اور منظور شدہ دائرہ اختیار میں رہے۔ ہم AWS، Azure، یا Google Cloud پر آپ کے کلاؤڈ کنفیگریشنز کا آڈٹ کرتے ہیں تاکہ تعمیل شدہ ڈیٹا ریزیڈنسی کو یقینی بنایا جا سکے۔"
+        },
+        {
+          "question": "جی ڈی پی آر کی عدم تعمیل پر کیا جرمانے ہیں؟",
+          "answer": "عدم تعمیل کے نتیجے میں 20 ملین یورو یا آپ کے عالمی سالانہ ٹرن اوور کے 4 فیصد تک کے سخت انتظامی جرمانے ہو سکتے ہیں، جو بھی زیادہ ہو۔ مالیاتی جرمانوں کے علاوہ، تنظیموں کو شدید ساکھ کے نقصان اور یورپی مارکیٹوں تک رسائی کے ممکنہ نقصان کا سامنا کرنا پڑتا ہے۔"
+        },
+        {
+          "question": "جی ڈی پی آر تعمیل کے پورے عمل میں کتنا وقت لگتا ہے؟",
+          "answer": "ایک عام تعمیل کا منصوبہ آپ کے سافٹ ویئر آرکیٹیکچر اور ڈیٹا کے بہاؤ کی پیچیدگی کے لحاظ سے 6 سے 12 ہفتوں کے درمیان لیتا ہے۔ حقیقت پسندانہ ٹائم لائنز اور سنگ میل قائم کرنے کے لیے ہم اپنے ابتدائی گیپ تجزیہ کے بعد ایک تفصیلی روڈ میپ فراہم کرتے ہیں۔"
+        },
+        {
+          "question": "کیا آپ نفاذ کے بعد جاری تعمیل کی نگرانی فراہم کرتے ہیں؟",
+          "answer": "جی ہاں، ہم مسلسل نگرانی کی خدمات اور متواتر آڈٹ پیش کرتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ آپ کے سسٹمز آپ کے سافٹ ویئر کے تیار ہونے کے ساتھ تعمیل کرتے رہیں۔ ہم آپ کی پالیسیوں اور تکنیکی کنٹرولز کو کسی بھی نئی ریگولیٹری اپ ڈیٹس کے ساتھ ہم آہنگ کرنے کے لیے اپ ڈیٹ کرتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "OneTrust",
+          "icon": "onetrust"
+        },
+        {
+          "name": "Cookiebot",
+          "icon": "cookiebot"
+        },
+        {
+          "name": "AWS KMS",
+          "icon": "aws"
+        },
+        {
+          "name": "HashiCorp Vault",
+          "icon": "vault"
+        },
+        {
+          "name": "ScyllaDB",
+          "icon": "scylladb"
+        },
+        {
+          "name": "Auth0",
+          "icon": "auth0"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "الامتثال للائحة العامة لحماية البيانات GDPR",
+    "shortDescription": "احمِ بيانات عملائك وحقق الامتثال الكامل للائحة GDPR من خلال تحليل الفجوات الشامل، والتدقيق التقني، وسير عمل الخصوصية المؤتمت المصمم خصيصًا لتلبية احتياجات المؤسسات الرقمية الحديثة.",
+    "fullDescription": "يتطلب التنقل في تعقيدات قوانين حماية البيانات الأوروبية ما هو أكثر من مجرد نموذج لسياسة الخصوصية. تقدم PakSoft خدمات امتثال متكاملة للائحة GDPR تعمل على مواءمة بنيتك التحتية التقنية وقواعد البيانات وسير عمل البرمجيات مع لوائح الاتحاد الأوروبي الصارمة. نقوم برسم خرائط البيانات العميقة، وتنفيذ بروتوكولات التشفير القوية، وإنشاء أنظمة إدارة الموافقة، وإعداد سير عمل مؤتمت لطلبات وصول أصحاب البيانات (DSAR). يعمل خبراء الأمن السيبراني لدينا جنبًا إلى جنب مع فرق الهندسة لديك لضمان دمج تقليل البيانات، والخصوصية حسب التصميم، والتسجيل الآمن مباشرة في قاعدة الكود الخاصة بك، مما يحمي عملك من الغرامات التنظيمية المدمرة.",
+    "features": [
+      "تحليل شامل لفجوات GDPR",
+      "رسم خرائط البيانات وإنشاء المخزون",
+      "بنية الخصوصية حسب التصميم",
+      "إعداد سير عمل DSAR المؤتمت",
+      "تكامل إدارة الموافقة",
+      "تقييم أثر حماية البيانات (DPIA)",
+      "تدقيق السجلات وقواعد البيانات المشفرة",
+      "المراقبة المستمرة للامتثال"
+    ],
+    "benefits": [
+      "تجنب الغرامات التنظيمية الباهظة",
+      "بناء الثقة مع العملاء الأوروبيين",
+      "تبسيط طلبات أصحاب البيانات",
+      "تقليل مسؤوليات خرق البيانات",
+      "تأسيس سياسات خصوصية واضحة",
+      "تسريع دورات مبيعات المؤسسات"
+    ],
+    "metaTitle": "خدمات الامتثال للائحة GDPR وحماية البيانات | PakSoft",
+    "metaDescription": "حقق الامتثال الكامل للائحة GDPR مع PakSoft. نحن نقدم تحليل الفجوات ورسم خرائط البيانات والتنفيذ التقني المتقدم. اتصل بنا اليوم لإجراء تدقيق أمني شامل!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "الاستكشاف ورسم خرائط البيانات",
+          "description": "نحدد مكان تخزين جميع معلومات التعريف الشخصية (PII) عبر بنيتك التحتية بالكامل. يقوم فريقنا برسم خرائط تدفق البيانات لإنشاء مخزون شامل لأصولك الرقمية."
+        },
+        {
+          "step": 2,
+          "title": "تحليل الفجوات",
+          "description": "نقارن تدابيرك التقنية والتنظيمية الحالية مع متطلبات GDPR الصارمة. يتيح لنا ذلك تحديد نقاط الضعف وتحديد أولويات خطوات المعالجة الحرجة."
+        },
+        {
+          "step": 3,
+          "title": "المعالجة التقنية",
+          "description": "يقوم مهندسونا بتنفيذ التشفير الشامل، وضوابط الوصول الآمنة، وبروتوكولات تقليل البيانات القوية. نحن نضمن أن قواعد البيانات وواجهات برمجة التطبيقات الخاصة بك متوافقة تمامًا حسب التصميم."
+        },
+        {
+          "step": 4,
+          "title": "إعداد السياسات والموافقة",
+          "description": "نقوم بصياغة سياسات خصوصية مخصصة ودمج منصات إدارة الموافقة المتقدمة في تطبيقاتك. يضمن ذلك ممارسات جمع بيانات شفافة تحترم خيارات المستخدمين."
+        },
+        {
+          "step": 5,
+          "title": "أتمتة طلبات DSAR",
+          "description": "نبني سير عمل مؤتمت للتعامل مع طلبات وصول أصحاب البيانات وتصحيحها وحذفها بكفاءة. يقلل هذا من العبء اليدوي ويضمن الامتثال للجداول الزمنية القانونية الصارمة."
+        },
+        {
+          "step": 6,
+          "title": "التدريب والتسليم",
+          "description": "نعقد جلسات تدريبية شاملة لفرقك الداخلية حول أفضل ممارسات التعامل مع البيانات. يقدم خبراؤنا وثائق كاملة لضمان صيانة الامتثال على المدى الطويل."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما هي الخطوة الأولى لتحقيق الامتثال للائحة GDPR؟",
+          "answer": "الخطوة الأولى هي إجراء عملية رسم خرائط بيانات شاملة لتحديد موقع جميع معلومات التعريف الشخصية (PII) داخل أنظمتك. بمجرد أن نفهم أين توجد بياناتك وكيف تتدفق، يمكننا إجراء تحليل دقيق للفجوات لتحديد نقاط الضعف."
+        },
+        {
+          "question": "كيف تتعاملون مع طلبات وصول أصحاب البيانات (DSARs)؟",
+          "answer": "نقوم بتنفيذ سير عمل مؤتمت يسمح للمستخدمين بطلب بياناتهم الشخصية أو تنزيلها أو حذفها بشكل آمن. يقوم هذا النظام بالتحقق من هويات المستخدمين وتجميع البيانات اللازمة تلقائيًا، مما يقلل الجهد اليدوي ويضمن الوفاء بالموعد النهائي القانوني البالغ 30 يومًا."
+        },
+        {
+          "question": "ما هي الخصوصية حسب التصميم وكيف تقومون بتطبيقها؟",
+          "answer": "الخصوصية حسب التصميم تعني دمج مبادئ حماية البيانات في دورة حياة تطوير البرمجيات منذ البداية. نقوم بتكوين قواعد البيانات الخاصة بك لتقليل جمع البيانات، وفرض التشفير الصارم أثناء النقل والسكون، وتطبيق ضوابط الوصول المستندة إلى الأدوار."
+        },
+        {
+          "question": "هل نحتاج إلى تعيين مسؤول حماية بيانات (DPO) مخصص؟",
+          "answer": "يكون مسؤول حماية البيانات (DPO) إلزاميًا إذا كانت مؤسستك تعالج بيانات شخصية حساسة على نطاق واسع أو تقوم بمراقبة منهجية للأفراد. نحن نقيم نموذج عملك الخاص ويمكننا تقديم دعم DPO افتراضي لتوجيه استراتيجية الامتثال الخاصة بك."
+        },
+        {
+          "question": "كيف تؤثر لائحة GDPR على بنيتنا التحتية السحابية والاستضافة؟",
+          "answer": "تتطلب لائحة GDPR أن تتوافق جميع البنى التحتية السحابية التي تستضيف بيانات مواطني الاتحاد الأوروبي مع معايير أمنية صارمة وأن تقع ضمن الولايات القضائية المعتمدة. نقوم بتدقيق تكوينات السحابة الخاصة بك على AWS أو Azure أو Google Cloud لضمان إقامة البيانات المتوافقة."
+        },
+        {
+          "question": "ما هي العقوبات المترتبة على عدم الامتثال للائحة GDPR؟",
+          "answer": "يمكن أن يؤدي عدم الامتثال إلى غرامات إدارية صارمة تصل إلى 20 مليون يورو أو 4% من حجم المبيعات السنوي العالمي، أيهما أكبر. وخارج العقوبات المالية، تواجه المؤسسات أضرارًا جسيمة في السمعة وخسارة محتملة للوصول إلى الأسواق الأوروبية."
+        },
+        {
+          "question": "كم من الوقت تستغرق عملية الامتثال للائحة GDPR بالكامل؟",
+          "answer": "يستغرق مشروع الامتثال النموذجي ما بين 6 إلى 12 أسبوعًا اعتمادًا على تعقيد بنية البرمجيات وتدفقات البيانات لديك. نحن نقدم خارطة طريق مفصلة بعد تحليل الفجوات الأولي لتحديد جداول زمنية ومعالم واقعية."
+        },
+        {
+          "question": "هل تقدمون مراقبة مستمرة للامتثال بعد التنفيذ؟",
+          "answer": "نعم، نحن نقدم خدمات مراقبة مستمرة وتدقيقات دورية لضمان بقاء أنظمتك متوافقة مع تطور برامجك. نقوم بتحديث سياساتك وضوابطك الفنية لتتماشى مع أي تحديثات تنظيمية جديدة أو تغييرات في البنية التحتية."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "OneTrust",
+          "icon": "onetrust"
+        },
+        {
+          "name": "Cookiebot",
+          "icon": "cookiebot"
+        },
+        {
+          "name": "AWS KMS",
+          "icon": "aws"
+        },
+        {
+          "name": "HashiCorp Vault",
+          "icon": "vault"
+        },
+        {
+          "name": "ScyllaDB",
+          "icon": "scylladb"
+        },
+        {
+          "name": "Auth0",
+          "icon": "auth0"
+        }
+      ]
+    }
+  }
+}

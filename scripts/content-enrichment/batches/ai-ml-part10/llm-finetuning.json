@@ -1,0 +1,638 @@
+{
+  "slug": "llm-finetuning",
+  "en": {
+    "name": "LLM Fine-tuning",
+    "shortDescription": "Adapt open-source large language models to your specific domain. We customize LLMs using LoRA, QLoRA, and supervised fine-tuning for maximum accuracy and cost efficiency.",
+    "fullDescription": "Off-the-shelf public language models often fail on specialized corporate terminology or private domain data. We offer end-to-end LLM Fine-Tuning services that adapt open-source models like Llama 3 and Mistral to your specific business requirements. Using parameter-efficient methods like LoRA and QLoRA, we train models to understand your proprietary documents, match your brand's unique tone of voice, and output structured data formats (like JSON) reliably. We manage the entire dataset preparation pipeline, execute supervised fine-tuning (SFT) using Axolotl and PyTorch, and benchmark the results against target accuracy metrics. Our custom-tuned models are optimized for high-throughput deployment using vLLM, reducing API costs and keeping your data fully private.",
+    "features": [
+      "Domain-Specific Model Adaptation & Tuning",
+      "Supervised Fine-Tuning (SFT) & Alignment",
+      "LoRA & QLoRA Parameter-Efficient Training",
+      "RLHF and DPO Preference Alignment Integration",
+      "Proprietary Dataset Cleaning and Curation",
+      "Rigorous Model Evaluation and Benchmarking",
+      "High-Throughput vLLM Serving Infrastructure",
+      "On-Premise or Private Cloud Model Hosting"
+    ],
+    "benefits": [
+      "Achieve higher accuracy on specialized domain tasks",
+      "Eliminate dependency on third-party cloud LLM APIs",
+      "Ensure absolute data privacy by hosting models locally",
+      "Reduce API token usage costs by up to 90%",
+      "Enforce consistent brand voice and format outputs",
+      "Speed up model inference times using optimized hosting"
+    ],
+    "metaTitle": "LLM Fine-Tuning Services | Llama & Mistral | PakSoft",
+    "metaDescription": "Fine-tune open-source LLMs on your private company data. We use LoRA and QLoRA to build highly accurate, private, and cost-effective models.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Data Gathering & Audit",
+          "description": "We collect and clean your proprietary documents, conversational logs, and files to prepare training datasets."
+        },
+        {
+          "step": 2,
+          "title": "Model Selection",
+          "description": "We select the appropriate open-source base model (like Llama 3 or Mistral) based on performance, size, and cost requirements."
+        },
+        {
+          "step": 3,
+          "title": "SFT & Parameter Tuning",
+          "description": "We apply Supervised Fine-Tuning (SFT) using LoRA or QLoRA on high-performance GPUs, optimizing hyperparameters carefully."
+        },
+        {
+          "step": 4,
+          "title": "Alignment & Guardrails",
+          "description": "We align model responses using DPO (Direct Preference Optimization) to match your target tone of voice and enforce security guardrails."
+        },
+        {
+          "step": 5,
+          "title": "Evaluation & Testing",
+          "description": "We run automated benchmark tests against a validation dataset to measure accuracy, formatting compliance, and hallucinations."
+        },
+        {
+          "step": 6,
+          "title": "vLLM Production Serving",
+          "description": "We deploy the fine-tuned model inside a private cloud or on-premise hardware using vLLM for optimized inference speed."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the difference between fine-tuning and RAG?",
+          "answer": "RAG retrieves relevant documents and feeds them to an LLM as context for answering. Fine-tuning actually updates the model's weights to teach it new styles, tones, formatting rules, or deep domain terminology."
+        },
+        {
+          "question": "What are LoRA and QLoRA?",
+          "answer": "LoRA (Low-Rank Adaptation) and QLoRA (Quantized LoRA) are parameter-efficient tuning methods. Instead of training all model parameters, they train a tiny subset of weights, reducing GPU memory requirements and training costs by up to 90%."
+        },
+        {
+          "question": "Where are the fine-tuned models hosted?",
+          "answer": "We deploy models on your private cloud (AWS, GCP, Azure) or local servers using serving engines like vLLM or TGI. You maintain 100% control over model files and inputs."
+        },
+        {
+          "question": "How much data is required for fine-tuning?",
+          "answer": "For basic instruction tuning or tone matching, a high-quality dataset of 1,000 to 5,000 conversational pairs is sufficient. Domain adaptation typically requires larger text datasets."
+        },
+        {
+          "question": "Which base models do you recommend?",
+          "answer": "We recommend top-performing open-source base models like Meta's Llama 3, Mistral 7B, or Mixtral 8x7B, depending on your performance goals and GPU budget."
+        },
+        {
+          "question": "Can we fine-tune a model to generate structured outputs?",
+          "answer": "Yes, we tune models specifically to output valid JSON, XML, or SQL queries, ensuring reliable integration into your databases and application APIs."
+        },
+        {
+          "question": "How do you evaluate fine-tuned models?",
+          "answer": "We create validation datasets and measure metrics like perplexity, task accuracy, and formatting compliance. We also use LLM-as-a-judge frameworks to evaluate tone consistency."
+        },
+        {
+          "question": "What hardware is required to run these models?",
+          "answer": "A quantized 7B model can run on a single consumer GPU (like NVIDIA RTX 4090 or A10G). Larger models require multi-GPU setups (like A100 or H100 instances) for high concurrency."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Hugging Face",
+          "icon": "huggingface"
+        },
+        {
+          "name": "PyTorch",
+          "icon": "pytorch"
+        },
+        {
+          "name": "vLLM",
+          "icon": "vllm"
+        },
+        {
+          "name": "Weights & Biases",
+          "icon": "wandb"
+        },
+        {
+          "name": "Axolotl",
+          "icon": "axolotl"
+        },
+        {
+          "name": "Llama 3",
+          "icon": "meta"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "LLM Model Eğitimi (Fine-tuning)",
+    "shortDescription": "Açık kaynaklı büyük dil modellerini kendi alanınıza uyarlayın. Maksimum doğruluk ve maliyet verimliliği elde etmek amacıyla LoRA, QLoRA ve denetimli ince ayar (supervised fine-tuning) kullanarak LLM'leri özelleştiriyoruz.",
+    "fullDescription": "Hazır kamuya açık dil modelleri, genellikle özel kurumsal terminolojide veya özel alan verilerinde yetersiz kalır. Llama 3 ve Mistral gibi açık kaynaklı modelleri özel iş gereksinimlerinize uyarlayan uçtan uca LLM İnce Ayar (Fine-Tuning) hizmetleri sunuyoruz. LoRA ve QLoRA gibi parametre verimli yöntemler kullanarak modelleri, tescilli belgelerinizi anlamaları, markanızın benzersiz ses tonunu yakalamaları ve yapılandırılmış veri formatlarını (JSON gibi) güvenilir şekilde üretmeleri için eğitiyoruz. Veri kümesi hazırlama sürecini yönetiyor, Axolotl ve PyTorch kullanarak denetimli ince ayar (SFT) gerçekleştiriyor ve sonuçları hedef doğruluk metriklerine göre test ediyoruz. Özel olarak eğitilmiş modellerimiz, vLLM kullanılarak yüksek performanslı dağıtım için optimize edilir; bu da API maliyetlerini düşürür ve verilerinizi tamamen gizli tutar.",
+    "features": [
+      "Alana Özel Model Uyarlama ve İnce Ayar",
+      "Denetimli İnce Ayar (SFT) ve Hizalama",
+      "LoRA ve QLoRA Parametre Verimli Eğitim",
+      "RLHF ve DPO Tercih Hizalama Entegrasyonu",
+      "Özel Veri Kümesi Temizleme ve Düzenleme",
+      "Katı Model Değerlendirme ve Karşılaştırmalı Test",
+      "Yüksek Performanslı vLLM Sunum Altyapısı",
+      "Yerel Sunucuda veya Özel Bulutta Model Barındırma"
+    ],
+    "benefits": [
+      "Uzmanlık gerektiren alan görevlerinde daha yüksek doğruluk elde edin",
+      "Üçüncü taraf bulut LLM API'lerine olan bağımlılığı ortadan kaldırın",
+      "Modelleri yerel olarak barındırarak mutlak veri gizliliği sağlayın",
+      "API token kullanım maliyetlerini %90'a varan oranda azaltın",
+      "Tutarlı marka sesi ve çıktı formatları uygulayın",
+      "Optimize edilmiş barındırma kullanarak model yanıt sürelerini hızlandırın"
+    ],
+    "metaTitle": "LLM İnce Ayar Hizmetleri | Llama & Mistral | PakSoft",
+    "metaDescription": "Açık kaynaklı LLM'leri şirketinizin özel verileriyle eğitin. Son derece doğru, özel ve uygun maliyetli modeller oluşturmak için LoRA ve QLoRA kullanıyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Veri Toplama ve Denetim",
+          "description": "Eğitim veri kümelerini hazırlamak için şirketinize ait özel belgeleri, konuşma günlüklerini ve dosyaları topluyor ve temizliyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Model Seçimi",
+          "description": "Performans, boyut ve maliyet gereksinimlerine göre uygun açık kaynaklı temel modeli (Llama 3 veya Mistral gibi) seçiyoruz."
+        },
+        {
+          "step": 3,
+          "title": "SFT & Parametre İnce Ayarı",
+          "description": "Yüksek performanslı GPU'larda LoRA veya QLoRA kullanarak Denetimli İnce Ayar (SFT) uyguluyor, hiperparametreleri optimize ediyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Hizalama & Güvenlik Sınırları",
+          "description": "Hedef ses tonunuzla eşleşmesi ve güvenlik kurallarını uygulaması için DPO (Direct Preference Optimization) kullanarak model yanıtlarını hizalıyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Değerlendirme & Test",
+          "description": "Doğruluğu, format uyumluluğunu ve halüsinasyonları ölçmek için bir doğrulama veri kümesine karşı otomatik karşılaştırma testleri yapıyoruz."
+        },
+        {
+          "step": 6,
+          "title": "vLLM Üretim Sunumu",
+          "description": "Optimize edilmiş çıkarım hızı için vLLM kullanarak ince ayar yapılmış modeli özel bir bulut veya yerel donanımda devreye alıyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "İnce ayar (fine-tuning) ile RAG arasındaki fark nedir?",
+          "answer": "RAG, ilgili belgeleri alır ve bunları yanıt vermesi için bir LLM'ye bağlam olarak besler. İnce ayar ise modele yeni stiller, tonlar, biçimlendirme kuralları veya derin alan terminolojisi öğretmek için modelin ağırlıklarını doğrudan günceller."
+        },
+        {
+          "question": "LoRA ve QLoRA nedir?",
+          "answer": "LoRA (Low-Rank Adaptation) ve QLoRA (Quantized LoRA) parametre verimli eğitim yöntemleridir. Tüm model parametrelerini eğitmek yerine, ağırlıkların küçük bir alt kümesini eğiterek GPU bellek gereksinimlerini ve eğitim maliyetlerini %90'a kadar azaltırlar."
+        },
+        {
+          "question": "İnce ayar yapılmış modeller nerede barındırılıyor?",
+          "answer": "Modelleri vLLM veya TGI gibi sunum motorlarını kullanarak özel bulutunuzda (AWS, GCP, Azure) veya yerel sunucularınızda barındırıyoruz. Model dosyaları ve girdileri üzerinde %100 kontrol sahibi olursunuz."
+        },
+        {
+          "question": "İnce ayar için ne kadar veri gereklidir?",
+          "answer": "Temel talimat eğitimi veya ton eşleştirme için, 1.000 ila 5.000 arası yüksek kaliteli konuşma çiftinden oluşan bir veri kümesi yeterlidir. Alan uyarlaması genellikle daha büyük metin veri kümeleri gerektirir."
+        },
+        {
+          "question": "Hangi temel modelleri öneriyorsunuz?",
+          "answer": "Performans hedeflerinize ve GPU bütçenize bağlı olarak Meta'nın Llama 3'ü, Mistral 7B veya Mixtral 8x7B gibi en iyi performans gösteren açık kaynaklı temel modelleri öneriyoruz."
+        },
+        {
+          "question": "Bir modeli yapılandırılmış çıktılar üretmesi için eğitebilir miyiz?",
+          "answer": "Evet, modelleri veritabanlarınıza ve uygulama API'lerinize güvenilir entegrasyon sağlamak amacıyla geçerli JSON, XML veya SQL sorguları üretecek şekilde özel olarak eğitiyoruz."
+        },
+        {
+          "question": "İnce ayar yapılmış modelleri nasıl değerlendiriyorsunuz?",
+          "answer": "Doğrulama veri kümeleri oluşturuyor ve perplexity (karmaşıklık), görev doğruluğu ve biçimlendirme uyumluluğu gibi metrikleri ölçüyoruz. Ton tutarlılığını değerlendirmek için de LLM-as-a-judge (hakem olarak LLM) çerçevelerini kullanıyoruz."
+        },
+        {
+          "question": "Bu modelleri çalıştırmak için hangi donanım gereklidir?",
+          "answer": "Kuantize edilmiş 7B'lik bir model, tek bir tüketici GPU'sunda (NVIDIA RTX 4090 veya A10G gibi) çalışabilir. Daha büyük modeller, yüksek eşzamanlılık için çoklu GPU kurulumları (A100 veya H100 örnekleri gibi) gerektirir."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Hugging Face",
+          "icon": "huggingface"
+        },
+        {
+          "name": "PyTorch",
+          "icon": "pytorch"
+        },
+        {
+          "name": "vLLM",
+          "icon": "vllm"
+        },
+        {
+          "name": "Weights & Biases",
+          "icon": "wandb"
+        },
+        {
+          "name": "Axolotl",
+          "icon": "axolotl"
+        },
+        {
+          "name": "Llama 3",
+          "icon": "meta"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "LLM Fine-Tuning",
+    "shortDescription": "Passen Sie Open-Source-Sprachmodelle an Ihre spezifische Domäne an. Wir optimieren LLMs mit LoRA, QLoRA und Supervised Fine-Tuning für maximale Effizienz.",
+    "fullDescription": "Standard-Sprachmodelle scheitern oft an spezieller Unternehmensterminologie oder privaten Domänendaten. Wir bieten End-to-End LLM Fine-Tuning Services, um Open-Source-Modelle wie Llama 3 und Mistral an Ihre spezifischen Geschäftsanforderungen anzupassen. Mithilfe von LoRA und QLoRA trainieren wir Modelle, proprietäre Dokumente zu verstehen, Ihre Markenstimme zu treffen und strukturierte Datenformate (wie JSON) verlässlich auszugeben. Wir verwalten die Datenaufbereitung, führen das Supervised Fine-Tuning (SFT) mit Axolotl und PyTorch durch und testen die Genauigkeit der Ergebnisse. Unsere feinabgestimmten Modelle werden für vLLM optimiert, was API-Kosten senkt und Ihre Daten schützt.",
+    "features": [
+      "Domänenspezifische Modellanpassung & Tuning",
+      "Supervised Fine-Tuning (SFT) & Alignment",
+      "LoRA- & QLoRA-Parameter-Tuning",
+      "RLHF- & DPO-Präferenzabgleich",
+      "Bereinigung und Kuration proprietärer Datensätze",
+      "Strikte Modellevaluierung und Benchmarking",
+      "Aufbau einer vLLM-Serving-Infrastruktur",
+      "Modellhosting lokal oder in einer privaten Cloud"
+    ],
+    "benefits": [
+      "Höhere Genauigkeit bei spezialisierten Fachaufgaben erzielen",
+      "Abhängigkeit von externen Cloud-LLM-APIs beseitigen",
+      "Volle Datenkontrolle durch lokales Hosten der Modelle sichern",
+      "API-Token-Kosten um bis zu 90% reduzieren",
+      "Konsistente Einhaltung der Markenstimme und Ausgabeformate",
+      "Schnellere Antwortzeiten durch optimiertes Modellhosting"
+    ],
+    "metaTitle": "LLM Fine-Tuning Services | Llama & Mistral | PakSoft",
+    "metaDescription": "Trainieren Sie Open-Source-LLMs auf Ihren privaten Unternehmensdaten. Wir nutzen LoRA und QLoRA für präzise, private und kosteneffiziente Modelle.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Datenprüfung & -sammlung",
+          "description": "Wir sammeln und bereinigen Ihre Dokumente, Chat-Protokolle und Dateien, um hochwertige Trainingsdatensätze zu erstellen."
+        },
+        {
+          "step": 2,
+          "title": "Modellauswahl",
+          "description": "Wir wählen das passende Open-Source-Basismodell (z. B. Llama 3 oder Mistral) basierend auf Ihren Performance- und Budgetvorgaben."
+        },
+        {
+          "step": 3,
+          "title": "SFT & Parameter-Tuning",
+          "description": "Wir führen das Supervised Fine-Tuning (SFT) mittels LoRA oder QLoRA auf GPU-Servern durch und optimieren die Hyperparameter."
+        },
+        {
+          "step": 4,
+          "title": "Alignment & Sicherheitsbarrieren",
+          "description": "Wir optimieren die Modellantworten mit DPO (Direct Preference Optimization) für Ihre Markenstimme und integrieren Guardrails."
+        },
+        {
+          "step": 5,
+          "title": "Evaluierung & Testing",
+          "description": "Wir testen das Modell mit einem Validierungsdatensatz, um Genauigkeit, Formatierung und eventuelle Halluzinationen zu messen."
+        },
+        {
+          "step": 6,
+          "title": "vLLM-Produktionsbereitstellung",
+          "description": "Wir stellen das trainierte Modell in einer privaten Cloud oder lokal mit vLLM bereit, um maximale Abfragegeschwindigkeiten zu sichern."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist der Unterschied zwischen Fine-Tuning und RAG?",
+          "answer": "RAG sucht nach relevanten Dokumenten und übergibt sie dem Modell als Kontext für die Beantwortung. Fine-Tuning hingegen ändert die Gewichte des Modells selbst, um ihm neue Schreibstile, Formatierungsregeln oder Fachbegriffe beizubringen."
+        },
+        {
+          "question": "Was sind LoRA und QLoRA?",
+          "answer": "LoRA (Low-Rank Adaptation) und QLoRA (Quantized LoRA) sind effiziente Trainingsmethoden. Statt des gesamten Modells wird nur ein kleiner Teil der Gewichte trainiert, was den GPU-Speicherbedarf und die Trainingskosten um bis zu 90% senkt."
+        },
+        {
+          "question": "Wo werden die trainierten Modelle gehostet?",
+          "answer": "Wir stellen die Modelle in Ihrer privaten Cloud (AWS, GCP, Azure) oder auf Ihren eigenen Servern mit Serving-Engines wie vLLM oder TGI bereit. Sie behalten die volle Kontrolle über Ihre Modelldateien."
+        },
+        {
+          "question": "Wie viele Daten werden für das Fine-Tuning benötigt?",
+          "answer": "Für einfaches Instruction-Tuning oder das Anpassen der Tonalität reicht ein qualitativ hochwertiger Datensatz von 1.000 bis 5.000 Dialogpaaren. Domänenanpassungen erfordern meist größere Textmengen."
+        },
+        {
+          "question": "Welche Basismodelle empfehlen Sie?",
+          "answer": "Wir empfehlen leistungsstarke Open-Source-Basismodelle wie Metas Llama 3, Mistral 7B oder Mixtral 8x7B, je nach Anwendungsfall und GPU-Budget."
+        },
+        {
+          "question": "Können wir Modelle auf strukturierte Ausgaben trainieren?",
+          "answer": "Ja, wir trainieren Modelle speziell auf die Ausgabe von validem JSON, XML oder auf SQL-Abfragen, um eine nahtlose Integration in Ihre IT-Systeme zu ermöglichen."
+        },
+        {
+          "question": "Wie bewerten Sie die Qualität der trainierten Modelle?",
+          "answer": "Wir nutzen Validierungsdaten und messen Kennzahlen wie Perplexity, Genauigkeit der Zielaufgaben und Formatkonformität. Zur Qualitätskontrolle setzen wir auch LLM-as-a-Judge-Konzepte ein."
+        },
+        {
+          "question": "Welche Hardware wird für den Betrieb benötigt?",
+          "answer": "Ein quantisiertes 7B-Modell läuft auf einer einzelnen Grafikkarte (z. B. NVIDIA RTX 4090). Größere Modelle erfordern Multi-GPU-Systeme (z. B. A100- oder H100-Instanzen) für viele parallele Abfragen."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Hugging Face",
+          "icon": "huggingface"
+        },
+        {
+          "name": "PyTorch",
+          "icon": "pytorch"
+        },
+        {
+          "name": "vLLM",
+          "icon": "vllm"
+        },
+        {
+          "name": "Weights & Biases",
+          "icon": "wandb"
+        },
+        {
+          "name": "Axolotl",
+          "icon": "axolotl"
+        },
+        {
+          "name": "Llama 3",
+          "icon": "meta"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "ایل ایل ایم فائن ٹیوننگ",
+    "shortDescription": "آپن سورس بڑے زبان کے ماڈلز کو اپنے مخصوص کاروباری شعبے کے مطابق ڈھالیں۔ ہم LoRA اور QLoRA کی مدد سے ماڈلز کو فائن ٹیون کرتے ہیں۔",
+    "fullDescription": "معیاری پبلک زبان کے ماڈلز اکثر کمپنی کی مخصوص اصطلاحات یا نجی کاروباری ڈیٹا کو سمجھنے میں ناکام رہتے ہیں۔ ہم مکمل LLM فائن ٹیوننگ سروسز فراہم کرتے ہیں جو Llama 3 اور Mistral جیسے ماڈلز کو آپ کے کاروبار کے مطابق ڈھال دیتی ہیں۔ LoRA اور QLoRA جیسی جدید تکنیکوں کا استعمال کرتے ہوئے، ہم ماڈلز کو تربیت دیتے ہیں کہ وہ آپ کی دستاویزات کو سمجھیں، آپ کے برانڈ کے لہجے میں بات کریں اور مطلوبہ فارمیٹس (جیسے JSON) میں جوابات فراہم کریں۔ ہم ڈیٹا سیٹ کی تیاری سے لے کر Axolotl اور PyTorch کے ذریعے ٹریننگ اور نتائج کی جانچ تک کا مکمل عمل سنبھالتے ہیں۔ فائن ٹیون کیے گئے ماڈلز کو vLLM کے ذریعے تیز رفتار پروسیسنگ کے لیے ہوسٹ کیا جاتا ہے جس سے اخراجات میں بڑی بچت ہوتی ہے۔",
+    "features": [
+      "کاروباری شعبے کے مطابق ماڈل کی فائن ٹیوننگ",
+      "سپروائزڈ فائن ٹیوننگ (SFT) اور الائنمنٹ",
+      "LoRA اور QLoRA ٹریننگ تکنیک کا استعمال",
+      "DPO کی مدد سے ماڈل کے لہجے کی درستگی",
+      "کاروباری ڈیٹا سیٹ کی صفائی اور تیاری",
+      "ماڈل کی کارکردگی اور درستگی کی جانچ",
+      "vLLM کے ذریعے تیز رفتار سرونگ سیٹ اپ",
+      "کمپنی کے نجی سرورز یا کلاؤڈ پر ہوسٹنگ"
+    ],
+    "benefits": [
+      "مخصوص کاروباری کاموں میں اعلیٰ درستگی حاصل کریں",
+      "بیرونی کلاؤڈ اے پی آئی کیز پر انحصار ختم کریں",
+      "ماڈلز کو مقامی طور پر ہوسٹ کر کے ڈیٹا مکمل نجی رکھیں",
+      "ٹوکن کے استعمال کے اخراجات میں 90 فیصد تک بچت کریں",
+      "برانڈ کے مخصوص لہجے اور آؤٹ پٹ فارمیٹ کو یقینی بنائیں",
+      "بہتر ہوسٹنگ کی مدد سے جواب دینے کی رفتار کو تیز کریں"
+    ],
+    "metaTitle": "ایل ایل ایم فائن ٹیوننگ سروسز | Llama اور Mistral | PakSoft",
+    "metaDescription": "کمپنی کے نجی ڈیٹا پر اوپن سورس LLMs کو فائن ٹیون کریں۔ ہم محفوظ اور سستے ماڈلز بنانے کے لیے LoRA اور QLoRA استعمال کرتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "ڈیٹا اکٹھا کرنا اور صفائی",
+          "description": "ہم ٹریننگ ڈیٹا تیار کرنے کے لیے کمپنی کی فائلوں، چیٹ لاگز اور دستاویزات کو اکٹھا اور صاف کرتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "ماڈل کا انتخاب",
+          "description": "ہم کارکردگی اور بجٹ کی ضروریات کے مطابق موزوں ترین اوپن سورس ماڈل (جیسے Llama 3) کا انتخاب کرتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "فائن ٹیوننگ کی ٹریننگ",
+          "description": "ہم GPU سرورز پر LoRA یا QLoRA کا استعمال کرتے ہوئے ماڈل کو اوور فٹنگ سے بچاتے ہوئے تربیت دیتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "لہجے کی الائنمنٹ",
+          "description": "ہم DPO تکنیک کا استعمال کرتے ہوئے ماڈل کے لہجے کو آپ کے برانڈ کے مطابق بناتے ہیں اور سیکیورٹی قوانین لاگو کرتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "کارکردگی کی جانچ",
+          "description": "ہم ماڈل کی کارکردگی اور سچائی کو ماپنے کے لیے ٹیسٹ ڈیٹا کے خلاف خودکار جانچ کرتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "پروڈکشن ہوسٹنگ",
+          "description": "ہم فائن ٹیون شدہ ماڈل کو تیز ترین رفتار کے لیے vLLM کے ذریعے کمپنی کے اپنے سرورز پر ہوسٹ کرتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "فائن ٹیوننگ اور آر اے جی (RAG) میں کیا فرق ہے؟",
+          "answer": "آر اے جی (RAG) متعلقہ دستاویزات تلاش کر کے جواب دینے کے لیے ماڈل کو بطور سیاق و سباق فراہم کرتا ہے۔ جبکہ فائن ٹیوننگ ماڈل کی اندرونی معلومات کو اپ ڈیٹ کرتی ہے تاکہ وہ نیا لہجہ، اصطلاحات یا فارمیٹنگ سیکھ سکے۔"
+        },
+        {
+          "question": "LoRA اور QLoRA کیا ہیں؟",
+          "answer": "یہ دونوں ماڈل ٹریننگ کو سستا بنانے کی تکنیکیں ہیں۔ پورے ماڈل کو ٹرین کرنے کے بجائے، یہ صرف ایک چھوٹے حصے کو تربیت دیتی ہیں جس سے ٹریننگ کے اخراجات 90 فیصد تک کم ہو جاتے ہیں۔"
+        },
+        {
+          "question": "فائن ٹیون شدہ ماڈل کہاں ہوسٹ کیا جاتا ہے؟",
+          "answer": "ہم ماڈلز کو آپ کے نجی کلاؤڈ (AWS, GCP) یا لوکل سرورز پر vLLM کے ذریعے ہوسٹ کرتے ہیں۔ آپ کا اپنے ماڈل فائلوں پر 100 فیصد کنٹرول رہتا ہے۔"
+        },
+        {
+          "question": "فائن ٹیوننگ کے لیے کتنے ڈیٹا کی ضرورت ہوتی ہے؟",
+          "answer": "لہجہ تبدیل کرنے یا عام کاموں کے لیے 1000 سے 5000 سوال و جواب کے جوڑوں کا ڈیٹا کافی ہوتا ہے۔ بڑی تبدیلیوں کے لیے زیادہ ڈیٹا درکار ہوتا ہے۔"
+        },
+        {
+          "question": "آپ کن بنیادی ماڈلز کی سفارش کرتے ہیں؟",
+          "answer": "ہم آپ کے بجٹ اور کارکردگی کی ضروریات کے مطابق Llama 3، Mistral 7B، یا Mixtral 8x7B کی سفارش کرتے ہیں۔"
+        },
+        {
+          "question": "کیا ہم ماڈل کو مخصوص فارمیٹس (جیسے JSON) کے لیے فائن ٹیون کر سکتے ہیں؟",
+          "answer": "جی ہاں، ہم ماڈلز کو خاص طور پر درست JSON، XML یا SQL کیوریز تیار کرنے کے لیے فائن ٹیون کرتے ہیں تاکہ انہیں ڈیٹا بیس سے جوڑا جا سکے۔"
+        },
+        {
+          "question": "آپ فائن ٹیون شدہ ماڈل کی کارکردگی کو کیسے ناپتے ہیں؟",
+          "answer": "ہم توثیقی ڈیٹا کا استعمال کرتے ہوئے ماڈل کی درستگی اور فارمیٹ کی تعمیل کی پیمائش کرتے ہیں اور لہجے کی Tutarlılık جانچنے کے لیے اے آئی ٹولز استعمال کرتے ہیں۔"
+        },
+        {
+          "question": "ان ماڈلز کو چلانے کے لیے کس قسم کے ہارڈویئر کی ضرورت ہوتی ہے؟",
+          "answer": "چھوٹے 7B ماڈلز کو ایک سنگل گرافک کارڈ (جیسے NVIDIA RTX 4090) پر چلایا جا سکتا ہے، جبکہ بڑے ماڈلز کے لیے ملٹی GPU سیٹ اپ کی ضرورت ہوتی ہے۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Hugging Face",
+          "icon": "huggingface"
+        },
+        {
+          "name": "PyTorch",
+          "icon": "pytorch"
+        },
+        {
+          "name": "vLLM",
+          "icon": "vllm"
+        },
+        {
+          "name": "Weights & Biases",
+          "icon": "wandb"
+        },
+        {
+          "name": "Axolotl",
+          "icon": "axolotl"
+        },
+        {
+          "name": "Llama 3",
+          "icon": "meta"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "الضبط الدقيق لنماذج اللغة LLM",
+    "shortDescription": "قم بملاءمة نماذج اللغة الكبيرة مفتوحة المصدر مع مجال عملك الخاص. نقوم بتخصيص النماذج اللغوية باستخدام LoRA و QLoRA والضبط الدقيق الخاضع للإشراف لتحقيق أقصى درجات الدقة والفعالية التكليفية.",
+    "fullDescription": "غالباً ما تفشل النماذج اللغوية العامة المتاحة تجارياً في فهم المصطلحات المؤسسية المتخصصة أو بيانات مجالات العمل الخاصة. نحن نقدم خدمات الضبط الدقيق (Fine-Tuning) الشاملة لنماذج اللغة الكبيرة التي توائم النماذج مفتوحة المصدر مثل Llama 3 و Mistral مع متطلبات عملك المحددة. باستخدام أساليب فعالة المعلمات مثل LoRA و QLoRA، ندرب النماذج على فهم مستنداتك الخاصة، ومطابقة نبرة صوت علامتك التجارية الفريدة، وإخراج تنسيقات بيانات منظمة (مثل JSON) بشكل موثوق. نحن ندير مسار إعداد البيانات بالكامل، وننفذ الضبط الدقيق الخاضع للإشراف (SFT) باستخدام Axolotl و PyTorch، ونقارن النتائج بمعايير الدقة المستهدفة. نماذجنا المخصصة مهيأة للتشغيل عالي الكفاءة باستخدام vLLM، مما يقلل تكاليف API ويحافظ على سرية بياناتك بالكامل.",
+    "features": [
+      "تكييف وضبط النماذج اللغوية لمجالات متخصصة",
+      "الضبط الدقيق الخاضع للإشراف (SFT) والمحاذاة",
+      "التدريب الفعال للمعلمات باستخدام LoRA و QLoRA",
+      "تكامل محاذاة التفضيلات باستخدام RLHF و DPO",
+      "تنظيف وإعداد مجموعات البيانات المملوكة للمؤسسة",
+      "تقييم صارم للنماذج وإجراء اختبارات مقارنة",
+      "بنية خدمة تشغيل النماذج عالية الكفاءة vLLM",
+      "استضافة النماذج محلياً أو في سحابة خاصة آمنة"
+    ],
+    "benefits": [
+      "تحقيق دقة أعلى في المهام المتخصصة لمجال عملك",
+      "القضاء على الاعتماد على واجهات برمجة تطبيقات LLM السحابية الخارجية",
+      "ضمان خصوصية مطلقة للبيانات باستضافة النماذج محلياً",
+      "تقليل تكاليف استخدام الرموز (tokens) بنسبة تصل إلى 90٪",
+      "فرص التزام صارم بنبرة العلامة وتنسيق المخرجات",
+      "تسريع أوقات استجابة النماذج باستخدام الاستضافة المحسنة"
+    ],
+    "metaTitle": "خدمات الضبط الدقيق للنماذج LLM | PakSoft",
+    "metaDescription": "اضبط نماذج LLM مفتوحة المصدر على بيانات شركتك الخاصة. نستخدم LoRA و QLoRA لبناء نماذج دقيقة للغاية، خاصة، ومنخفضة التكاليف.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "جمع وتدقيق البيانات",
+          "description": "نجمع وننظف مستنداتك الخاصة وسجلات المحادثات والملفات لإعداد مجموعات بيانات تدريب عالية الجودة."
+        },
+        {
+          "step": 2,
+          "title": "اختيار النموذج المناسب",
+          "description": "نختار النموذج الأساسي المفتوح المصدر المناسب (مثل Llama 3 أو Mistral) بناءً على متطلبات الأداء والحجم والتكلفة."
+        },
+        {
+          "step": 3,
+          "title": "الضبط الخاضع للإشراف وتعديل المعلمات",
+          "description": "نطبق الضبط الدقيق الخاضع للإشراف (SFT) باستخدام LoRA أو QLoRA على معالجات رسومية عالية الأداء مع تحسين المعلمات الفائقة."
+        },
+        {
+          "step": 4,
+          "title": "المحاذاة وحواجز الحماية",
+          "description": "نحاذي استجابات النموذج باستخدام تحسين التفضيل المباشر (DPO) لمطابقة نبرة الصوت المستهدفة وفرض حواجز الأمان."
+        },
+        {
+          "step": 5,
+          "title": "التقييم والاختبار",
+          "description": "نجري اختبارات مقارنة تلقائية مقابل مجموعة بيانات التحقق لقياس الدقة والامتثال للتنسيق ونسبة الهلوسة."
+        },
+        {
+          "step": 6,
+          "title": "تشغيل النماذج بالإنتاج عبر vLLM",
+          "description": "ننشر النموذج الذي تم ضبطه داخل سحابة خاصة أو على أجهزة محلية باستخدام vLLM لتحسين سرعة الاستدلال."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما الفرق بين الضبط الدقيق وتوليد الاسترجاع المعزز (RAG)؟",
+          "answer": "يسترجع RAG المستندات ذات الصلة ويغذيها بنموذج لغوي كـسياق للإجابة. بينما يقوم الضبط الدقيق بتحديث أوزان النموذج نفسه ليعلمه أساليب أو نغمات أو قواعد تنسيق جديدة أو مصطلحات عميقة للمجال."
+        },
+        {
+          "question": "ما هي تقنيات LoRA و QLoRA؟",
+          "answer": "تعد LoRA و QLoRA طرقاً لتدريب النماذج بكفاءة عالية في استخدام المعلمات. بدلاً من تدريب جميع معلمات النموذج، فإنهما تدربان مجموعة فرعية صغيرة جداً من الأوزان، مما يقلل من متطلبات ذاكرة GPU وتكاليف التدريب بنسبة تصل إلى 90٪."
+        },
+        {
+          "question": "أين يتم استضافة النماذج التي تم ضبطها؟",
+          "answer": "نقوم بنشر النماذج على سحابتك الخاصة (AWS, GCP, Azure) أو خوادمك المحلية باستخدام محركات تشغيل مثل vLLM أو TGI. تحتفظ بالسيطرة الكاملة بنسبة 100٪ على ملفات النموذج والمدخلات."
+        },
+        {
+          "question": "ما هي كمية البيانات المطلوبة للضبط الدقيق؟",
+          "answer": "لتدريب التعليمات البسيط أو مطابقة نبرة الصوت، تكفي مجموعة بيانات عالية الجودة تتراوح من 1,000 إلى 5,000 زوج محادثة. تتطلب ملاءمة المجال عادةً مجموعات بيانات نصية أكبر."
+        },
+        {
+          "question": "ما هي النماذج الأساسية التي توصون بها؟",
+          "answer": "نوصي بالنماذج الأساسية مفتوحة المصدر ذات الأداء الأعلى مثل Llama 3 من Meta، أو Mistral 7B، أو Mixtral 8x7B، اعتماداً على أهداف الأداء وميزانية GPU المتاحة."
+        },
+        {
+          "question": "هل يمكننا ضبط نموذج لإنتاج مخرجات منظمة؟",
+          "answer": "نعم، نحن نضبط النماذج خصيصاً لإخراج استعلامات JSON أو XML أو SQL صالحة، مما يضمن التكامل الموثوق به في قواعد البيانات وواجهات تطبيقاتك."
+        },
+        {
+          "question": "كيف تقوم بتقييم النماذج بعد ضبطها؟",
+          "answer": "ننشئ مجموعات بيانات التحقق ونقيس مقاييس مثل الحيرة (perplexity)، ودقة المهام، والالتزام بالتنسيق. نستخدم أيضاً أطر عمل تعتمد على تقييم نموذج لغوي كحكم (LLM-as-a-judge)."
+        },
+        {
+          "question": "ما هي الأجهزة المطلوبة لتشغيل هذه النماذج؟",
+          "answer": "يمكن لنموذج 7B مُكمّم العمل على وحدة معالجة رسومات فردية للمستهلك (مثل NVIDIA RTX 4090). تتطلب النماذج الأكبر إعدادات متعددة المعالجات (مثل A100 أو H100) للتشغيل المتزامن العالي."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Hugging Face",
+          "icon": "huggingface"
+        },
+        {
+          "name": "PyTorch",
+          "icon": "pytorch"
+        },
+        {
+          "name": "vLLM",
+          "icon": "vllm"
+        },
+        {
+          "name": "Weights & Biases",
+          "icon": "wandb"
+        },
+        {
+          "name": "Axolotl",
+          "icon": "axolotl"
+        },
+        {
+          "name": "Llama 3",
+          "icon": "meta"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        }
+      ]
+    }
+  }
+}

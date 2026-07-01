@@ -1,0 +1,638 @@
+{
+  "slug": "ocr-document-processing",
+  "en": {
+    "name": "OCR & Document Processing",
+    "shortDescription": "Extract structured text and data from scanned files, invoices, and images. We build intelligent OCR pipelines that automate data entry with high accuracy.",
+    "fullDescription": "Processing paper documents, scanned PDFs, and receipts manually drains operational resources. We build intelligent OCR & Document Processing solutions that automate text extraction and structure raw document data into clean database records. Using state-of-the-art tools like Tesseract, Azure Form Recognizer, and AWS Textract, we parse complex document layouts, identify tabular data, recognize handwriting, and classify forms by type. We implement automated validation rules to cross-check extracted figures (like totals on invoices), minimizing false extractions. Our systems handle multi-language documents and output structured JSON data, integrating seamlessly into your ERP, CRM, or document management platforms. By replacing manual entry, our OCR pipelines accelerate your document workflows while reducing errors.",
+    "features": [
+      "Automated Document Text Extraction",
+      "Structured Form and Layout Processing",
+      "Complex Table and Grid Detection",
+      "Intelligent Handwriting Recognition (ICR)",
+      "Multi-Language Processing and Support",
+      "Automated Data Validation and Cross-Checking",
+      "Granular Document Classification & Tagging",
+      "Secure Local or Cloud Integration APIs"
+    ],
+    "benefits": [
+      "Reduce document processing costs by up to 85%",
+      "Eliminate manual data entry errors completely",
+      "Speed up invoice and receipt processing times",
+      "Index scanned archives for easy search retrieval",
+      "Integrate extracted data directly into core ERP systems",
+      "Ensure high data validation rates via automated rules"
+    ],
+    "metaTitle": "AI OCR & Document Processing Solutions | PakSoft",
+    "metaDescription": "Extract data from scanned PDFs, invoices, and receipts automatically. We build custom OCR pipelines using Azure and AWS Textract. Contact us.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Document Layout Analysis",
+          "description": "We analyze your target forms, receipts, or files to map out key-value pairs, tables, and handwritten zones."
+        },
+        {
+          "step": 2,
+          "title": "OCR Engine Configuration",
+          "description": "We configure OCR engines like Tesseract, AWS Textract, or Azure Document Intelligence to process high-resolution files."
+        },
+        {
+          "step": 3,
+          "title": "Preprocessing & Cleaning",
+          "description": "We build preprocessing scripts that deskew, binarize, and clean image noise to maximize text extraction accuracy."
+        },
+        {
+          "step": 4,
+          "title": "Data Extraction & Parsing",
+          "description": "We run parsing scripts to extract tabular details and structure raw text strings into organized JSON formats."
+        },
+        {
+          "step": 5,
+          "title": "Validation & Rules Cross-Check",
+          "description": "We execute custom validation scripts to check math (e.g., adding line items to match total balance) and raise flags on anomalies."
+        },
+        {
+          "step": 6,
+          "title": "API Integration & Export",
+          "description": "We connect the processed output to your database, ERP, or CMS, enabling automated ingestion without manual typing."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Can the OCR system read handwritten text?",
+          "answer": "Yes, we integrate intelligent ICR (Intelligent Character Recognition) engines from AWS and Azure that can parse block handwriting and signatures with high accuracy."
+        },
+        {
+          "question": "How do you validate the accuracy of extracted numbers?",
+          "answer": "We write custom programmatic verification checks (e.g., verifying that item prices add up to the total invoice balance). If checks fail, the file is flagged for human review."
+        },
+        {
+          "question": "What document formats do you support?",
+          "answer": "We process PDF documents, JPEG/PNG images, scanned invoices, TIFF files, and multi-page documents in both digital and physical scans."
+        },
+        {
+          "question": "Is the system secure for sensitive financial records?",
+          "answer": "Yes, we deploy pipelines on your private clouds or on-premise hardware. Data is encrypted, and credentials are managed securely without sharing records with third parties."
+        },
+        {
+          "question": "How do you handle tables or spreadsheets in PDFs?",
+          "answer": "We configure table detection models that extract the grid structures of tables, mapping columns and rows accurately into CSV or database tables."
+        },
+        {
+          "question": "Can it process documents in multiple languages?",
+          "answer": "Yes, our OCR engines support over 50 languages and can process files containing mixed languages simultaneously without losing character fidelity."
+        },
+        {
+          "question": "What is the processing time per document?",
+          "answer": "A standard page takes between 1 and 3 seconds to preprocess, run OCR, validate data, and export, enabling high-speed automated batch runs."
+        },
+        {
+          "question": "Can this integrate into our existing SAP or ERP system?",
+          "answer": "Yes, we wrap the entire OCR engine in a secure REST API or configure database triggers that feed clean, extracted JSON records directly into your ERP."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Tesseract OCR",
+          "icon": "tesseract"
+        },
+        {
+          "name": "Azure Document Intelligence",
+          "icon": "azure"
+        },
+        {
+          "name": "AWS Textract",
+          "icon": "aws"
+        },
+        {
+          "name": "OpenCV",
+          "icon": "opencv"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "FastAPI",
+          "icon": "fastapi"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "OCR ve Belge İşleme",
+    "shortDescription": "Taranmış dosyalardan, faturalardan ve görsellerden yapılandırılmış metin ve verileri ayıklayın. Veri girişini yüksek doğrulukla otomatikleştiren akıllı OCR hatları kuruyoruz.",
+    "fullDescription": "Kağıt belgeleri, taranmış PDF'leri ve makbuzları manuel olarak işlemek operasyonel kaynakları tüketir. Metin ayıklamayı otomatikleştiren ve ham belge verilerini temiz veritabanı kayıtlarına dönüştüren akıllı OCR ve Belge İşleme çözümleri kuruyoruz. Tesseract, Azure Belge Zekası ve AWS Textract gibi en son teknoloji araçları kullanarak karmaşık belge düzenlerini ayrıştırıyor, tablo verilerini tanımlıyor, el yazısını tanıyor ve formları türüne göre sınıflandırıyoruz. Hatalı ayıklamaları en aza indirmek için çıkarılan tutarları (faturalardaki toplamlar gibi) çapraz kontrol eden otomatik doğrulama kuralları uyguluyoruz. Sistemlerimiz çok dilli belgeleri işler ve yapılandırılmış JSON verileri üreterek ERP, CRM veya belge yönetim platformlarınıza sorunsuz bir şekilde entegre olur. OCR veri hatlarımız, manuel girişi ortadan kaldırarak belge işleme süreçlerinizi hızlandırır ve hataları azaltır.",
+    "features": [
+      "Otomatik Belge Metni Ayıklama",
+      "Yapılandırılmış Form ve Düzen İşleme",
+      "Karmaşık Tablo ve Izgara Algılama",
+      "Akıllı El Yazısı Tanıma (ICR)",
+      "Çok Dilli İşleme ve Karakter Desteği",
+      "Otomatik Veri Doğrulama ve Çapraz Kontrol",
+      "Ayrıntılı Belge Sınıflandırma ve Etiketleme",
+      "Güvenli Yerel veya Bulut Entegrasyon API'leri"
+    ],
+    "benefits": [
+      "Belge işleme maliyetlerini %85'e varan oranda azaltın",
+      "Manuel veri girişi hatalarını tamamen ortadan kaldırın",
+      "Fatura ve makbuz işleme sürelerini hızlandırın",
+      "Kolay arama ve erişim için taranmış arşivleri indeksleyin",
+      "Çıkarılan verileri doğrudan temel ERP sistemlerine entegre edin",
+      "Otomatik kurallarla yüksek veri doğrulama oranları sağlayın"
+    ],
+    "metaTitle": "Yapay Zeka OCR ve Belge İşleme Çözümleri | PakSoft",
+    "metaDescription": "Taranmış PDF'lerden, faturalardan ve makbuzlardan verileri otomatik olarak ayıklayın. Azure ve AWS Textract kullanarak özel OCR hatları kuruyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Belge Düzeni Analizi",
+          "description": "Anahtar-değer çiftlerini, tabloları ve el yazısı alanlarını haritalandırmak için formlarınızı, makbuzlarınızı veya dosyalarınızı inceliyoruz."
+        },
+        {
+          "step": 2,
+          "title": "OCR Motoru Yapılandırması",
+          "description": "Yüksek çözünürlüklü dosyaları işlemek için Tesseract, AWS Textract veya Azure Belge Zekası gibi OCR motorlarını yapılandırıyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Ön İşleme & Temizleme",
+          "description": "Metin ayıklama doğruluğunu en üst düzeye çıkarmak için görsel eğriliğini düzelten ve parazitleri temizleyen ön işleme kodları yazıyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Veri Ayıklama & Ayrıştırma",
+          "description": "Tablo ayrıntılarını ayıklamak ve ham metin dizelerini düzenli JSON formatlarına dönüştürmek için ayrıştırma kodları çalıştırıyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Doğrulama & Çapraz Kontrol",
+          "description": "Matematiksel işlemleri kontrol etmek (örn. kalem tutarlarını toplayarak faturadaki genel toplamla eşleştirmek) için otomatik doğrulama yazıyoruz."
+        },
+        {
+          "step": 6,
+          "title": "API Entegrasyonu & Aktarım",
+          "description": "İşlenen çıktıları veritabanınıza, ERP'nize veya CMS'nize bağlayarak manuel yazma gerektirmeden otomatik veri aktarımı sağlıyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "OCR sistemi el yazısı metinleri okuyabilir mi?",
+          "answer": "Evet, el yazısı blokları ve imzaları yüksek doğrulukla ayrıştırabilen AWS ve Azure'un akıllı ICR (Akıllı Karakter Tanıma) motorlarını entegre ediyoruz."
+        },
+        {
+          "question": "Çıkarılan sayıların doğruluğunu nasıl teyit ediyorsunuz?",
+          "answer": "Özel yazılımsal doğrulama kontrolleri yazıyoruz (örneğin, ürün fiyatlarının toplam fatura tutarına eşit olduğunu doğrulamak). Kontroller başarısız olursa, dosya manuel inceleme için işaretlenir."
+        },
+        {
+          "question": "Hangi belge formatlarını destekliyorsunuz?",
+          "answer": "PDF belgelerini, JPEG/PNG görsellerini, taranmış faturaları, TIFF dosyalarını ve hem dijital hem de fiziksel taramalardaki çok sayfalı belgeleri işliyoruz."
+        },
+        {
+          "question": "Sistem hassas finansal kayıtlar için güvenli mi?",
+          "answer": "Evet, veri hatlarını özel bulutunuzda veya yerel donanımınızda barındırıyoruz. Veriler şifrelenir ve kimlik bilgileri, kayıtlar üçüncü taraflarla paylaşılmadan güvenli bir şekilde yönetilir."
+        },
+        {
+          "question": "PDF'lerdeki tabloları veya elektronik tabloları nasıl işliyorsunuz?",
+          "answer": "Tabloların ızgara yapılarını çıkaran, sütunları ve satırları CSV veya veritabanı tablolarına doğru şekilde eşleyen tablo algılama modellerini yapılandırıyoruz."
+        },
+        {
+          "question": "Birden fazla dilde yazılmış belgeleri işleyebilir mi?",
+          "answer": "Evet, OCR motorlarımız 50'den fazla dili destekler ve karakter doğruluğunu kaybetmeden karışık diller içeren dosyaları aynı anda işleyebilir."
+        },
+        {
+          "question": "Belge başına işlem süresi nedir?",
+          "answer": "Standart bir sayfanın ön işleme tabi tutulması, OCR'den geçirilmesi, verilerin doğrulanması ve dışa aktarılması 1 ila 3 saniye sürer, bu da yüksek hızlı otomatik toplu işlemleri mümkün kılar."
+        },
+        {
+          "question": "Bu sistem mevcut SAP veya ERP sistemimizle entegre olabilir mi?",
+          "answer": "Evet, tüm OCR motorunu güvenli bir REST API ile sarmalıyor veya temiz, ayıklanmış JSON kayıtlarını doğrudan ERP'nize aktaran veritabanı tetikleyicileri yapılandırıyoruz."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Tesseract OCR",
+          "icon": "tesseract"
+        },
+        {
+          "name": "Azure Document Intelligence",
+          "icon": "azure"
+        },
+        {
+          "name": "AWS Textract",
+          "icon": "aws"
+        },
+        {
+          "name": "OpenCV",
+          "icon": "opencv"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "FastAPI",
+          "icon": "fastapi"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "OCR & Belegverarbeitung",
+    "shortDescription": "Extrahieren Sie strukturierten Text und Daten aus gescannten Dokumenten, Rechnungen und Bildern. Wir automatisieren Ihre Datenerfassung mit OCR-Systemen.",
+    "fullDescription": "Die manuelle Bearbeitung von Papierdokumenten, gescannten PDFs und Quittungen bindet wertvolle Ressourcen. Wir entwickeln intelligente OCR- und Dokumentenverarbeitungslösungen, die die Textextraktion automatisieren und Rohdaten in strukturierte Datenbankeinträge übersetzen. Mit modernen Systemen wie Tesseract, Azure Document Intelligence und AWS Textract analysieren wir komplexe Dokumenten-Layouts, identifizieren Tabellendaten, lesen Handschriften und klassifizieren Belege. Durch automatische Validierungsregeln (z. B. Abgleich der Zwischensummen mit dem Gesamtbetrag) minimieren wir Auslesefehler. Unsere Systeme übergeben strukturierte JSON-Daten direkt an Ihr ERP, CRM oder Dokumentenmanagementsystem.",
+    "features": [
+      "Automatisierte Textextraktion aus Dokumenten",
+      "Strukturierte Formular- und Layoutverarbeitung",
+      "Erkennung komplexer Tabellenstrukturen",
+      "Intelligente Handschrifterkennung (ICR)",
+      "Mehrsprachige Verarbeitung und Zeichensatz-Support",
+      "Automatisierte Datenvalidierung & Plausibilitätsprüfungen",
+      "Granulare Dokumentenklassifizierung & Tagging",
+      "Sichere lokale oder Cloud-Integrations-Schnittstellen"
+    ],
+    "benefits": [
+      "Kosten für die Dokumentenverarbeitung um bis zu 85% senken",
+      "Manuelle Datenerfassungsfehler vollständig ausschließen",
+      "Rechnungs- und Belegdurchlaufzeiten massiv verkürzen",
+      "Gescannte Archive für die digitale Volltextsuche indexieren",
+      "Ausgelesene Daten direkt in ERP-Systeme übergeben",
+      "Hohe Datenqualität durch automatisierte Prüfregeln sichern"
+    ],
+    "metaTitle": "KI OCR & Belegverarbeitungslösungen | PakSoft",
+    "metaDescription": "Extrahieren Sie Daten aus gescannten PDFs, Rechnungen und Quittungen automatisch. Wir bauen OCR-Pipelines mit Azure und AWS Textract. Kontakt aufnehmen.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Dokumenten-Layoutanalyse",
+          "description": "Wir analysieren Ihre Formulare, Quittungen und Dateien, um Schlüssel-Wert-Paare, Tabellen und Handschriftzonen zu definieren."
+        },
+        {
+          "step": 2,
+          "title": "OCR-Engine Konfiguration",
+          "description": "Wir richten OCR-Engines wie Tesseract, AWS Textract oder Azure Document Intelligence ein, um hochauflösende Scans zu verarbeiten."
+        },
+        {
+          "step": 3,
+          "title": "Vorverarbeitung & Bereinigung",
+          "description": "Wir entwickeln Skripte zur Bildoptimierung (Binarisierung, Ausrichtung, Rauschminderung), um die Auslesegenauigkeit zu maximieren."
+        },
+        {
+          "step": 4,
+          "title": "Datenextraktion & Parsing",
+          "description": "Wir führen Parser-Skripte aus, um Tabellenwerte zu extrahieren und Rohdaten in strukturierte JSON-Formate zu überführen."
+        },
+        {
+          "step": 5,
+          "title": "Validierungs- & Plausibilitätsprüfung",
+          "description": "Wir implementieren Prüfskripte, die mathematische Berechnungen verifizieren (z. B. Summe der Einzelpositionen gegen den Gesamtbetrag) und Fehler melden."
+        },
+        {
+          "step": 6,
+          "title": "Schnittstellenintegration & Export",
+          "description": "Wir übergeben die extrahierten Daten an Ihre Datenbank, Ihr ERP oder CRM, um manuelle Erfassungsprozesse vollständig zu ersetzen."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Kann das OCR-System handschriftlichen Text lesen?",
+          "answer": "Ja, wir integrieren intelligente ICR-Systeme (Intelligent Character Recognition) von AWS und Azure, die gedruckte Handschrift und Unterschriften mit hoher Präzision erfassen."
+        },
+        {
+          "question": "Wie wird die Richtigkeit der ausgelesenen Zahlen geprüft?",
+          "answer": "Wir programmieren Validierungsprüfungen (z. B. Aufsummieren der Einzelpreise zum Rechnungsbetrag). Schlägt diese Prüfung fehl, wird das Dokument zur manuellen Kontrolle markiert."
+        },
+        {
+          "question": "Welche Dateiformate werden unterstützt?",
+          "answer": "Wir verarbeiten PDFs, Bilder (JPEG, PNG), gescannte Belege, TIFF-Dateien sowie mehrseitige digitale und physische Dokumentenscans."
+        },
+        {
+          "question": "Ist das System für sensible Finanzdaten geeignet?",
+          "answer": "Ja, wir deployen die Pipelines in Ihrer privaten Cloud oder lokal. Die Daten werden verschlüsselt und Zugangsdaten sicher verwaltet, ohne Dokumente an Dritte weiterzugeben."
+        },
+        {
+          "question": "Wie werden Tabellen in PDFs ausgelesen?",
+          "answer": "Wir konfigurieren Tabellenerkennungsmodelle, die Zeilen- und Spaltenstrukturen erfassen und diese exakt in CSV-Dateien oder Datenbanktabellen abbilden."
+        },
+        {
+          "question": "Können Dokumente in unterschiedlichen Sprachen verarbeitet werden?",
+          "answer": "Ja, unsere OCR-Engines unterstützen über 50 Sprachen und können Dokumente mit gemischten Sprachen verarbeiten, ohne dass Sonderzeichen verloren gehen."
+        },
+        {
+          "question": "Wie lange dauert die Verarbeitung eines Dokuments?",
+          "answer": "Eine Standardseite benötigt zwischen 1 und 3 Sekunden für Vorverarbeitung, Texterkennung, Datenvalidierung und Export, was schnelle Stapelverarbeitungen ermöglicht."
+        },
+        {
+          "question": "Lässt sich das System in SAP oder ERP anbinden?",
+          "answer": "Ja, wir stellen die OCR-Engine als sichere REST-API bereit oder konfigurieren Datenbank-Trigger, die ausgelesene JSON-Daten direkt an Ihr ERP übergeben."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Tesseract OCR",
+          "icon": "tesseract"
+        },
+        {
+          "name": "Azure Document Intelligence",
+          "icon": "azure"
+        },
+        {
+          "name": "AWS Textract",
+          "icon": "aws"
+        },
+        {
+          "name": "OpenCV",
+          "icon": "opencv"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "FastAPI",
+          "icon": "fastapi"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "او سی آر اور دستاویزی پروسیسنگ",
+    "shortDescription": "اسکین شدہ فائلوں، بلوں اور تصاویر سے منظم متن اور ڈیٹا نکالیں۔ ہم خودکار ڈیٹا انٹری کے لیے ذہین او سی آر سسٹمز بناتے ہیں۔",
+    "fullDescription": "کاغذی دستاویزات، اسکین شدہ پی ڈی ایف اور رسیدوں کو دستی طور پر پروسیس کرنا وقت اور کاروباری وسائل کا زیاں ہے۔ ہم ذہین او سی آر اور دستاویزی پروسیسنگ سلوشنز بناتے ہیں جو خودکار طریقے سے متن نکال کر خام فائلز کو صاف ڈیٹا بیس ریکارڈز میں تبدیل کرتے ہیں۔ Tesseract، Azure اور AWS Textract جیسے ٹولز کی مدد سے، ہم دستاویز کے لے آؤٹس، جدولوں (tables) اور ہاتھ کی تحریر کو پہچانتے ہیں اور فارمز کی درجہ بندی کرتے ہیں۔ ہم خودکار توثیقی قوانین لاگو کرتے ہیں تاکہ بلوں کے مجموعی بیلنس کا خود بخود موازنہ کیا جا سکے۔ یہ سسٹمز کثیر لسانی دستاویزات کو سپورٹ کرتے ہیں اور ڈیٹا کو منظم JSON فارمیٹ میں نکال کر آپ کے ERP یا CRM سسٹمز میں شامل کرتے ہیں۔",
+    "features": [
+      "دستاویزات سے خودکار متنی مواد نکالنا",
+      "منظم فارمز اور لے آؤٹ پروسیسنگ",
+      "جدولوں اور گریڈز کا پیچیدہ پتہ لگانا",
+      "ہاتھ کی تحریر کو پہچاننے کا عمل (ICR)",
+      "کثیر لسانی پروسیسنگ اور کیریکٹر سپورٹ",
+      "خودکار ڈیٹا کی توثیق اور موازنہ",
+      "فائلوں کی درجہ بندی اور خودکار ٹیگنگ",
+      "محفوظ لوکل یا کلاؤڈ انٹیگریشن APIs"
+    ],
+    "benefits": [
+      "دستاویزی پروسیسنگ کے اخراجات میں 85 فیصد تک بچت کریں",
+      "دستی ڈیٹا انٹری کی غلطیوں کو مکمل طور پر ختم کریں",
+      "بلوں اور رسیدوں کو پروسیس کرنے کی رفتار تیز کریں",
+      "اسکین شدہ فائلز کو سرچ کے قابل بنانے کے لیے انڈیکس کریں",
+      "نکالے گئے ڈیٹا کو براہ راست کمپنی کے سسٹمز میں منتقل کریں",
+      "خودکار سیکیورٹی قوانین سے ڈیٹا کی درستگی یقینی بنائیں"
+    ],
+    "metaTitle": "اے آئی او سی آر اور دستاویزی پروسیسنگ | PakSoft",
+    "metaDescription": "اسکین شدہ پی ڈی ایف اور بلوں سے خودکار ڈیٹا حاصل کریں۔ ہم Azure اور AWS Textract کے ذریعے کسٹم OCR پائپ لائنز بناتے ہیں۔ رابطہ کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "دستاویز لے آؤٹ تجزیہ",
+          "description": "ہم فائلوں اور رسیدوں کا تجزیہ کرتے ہیں تاکہ ان کے جدولوں، فیلڈز اور تحریر کے حصوں کا نقشہ بنایا جا سکے۔"
+        },
+        {
+          "step": 2,
+          "title": "او سی آر انجن کی تشکیل",
+          "description": "ہم اسکین فائلوں کو پروسیس کرنے کے لیے Tesseract، AWS Textract یا Azure Document Intelligence کو سیٹ اپ کرتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "تصویر کی صفائی اور تیاری",
+          "description": "ہم تصاویر کی خرابیوں کو دور کرنے اور دھندلا پن صاف کرنے کے لیے اسکرپٹس بناتے ہیں تاکہ پڑھنے میں کوئی غلطی نہ ہو۔"
+        },
+        {
+          "step": 4,
+          "title": "ڈیٹا نکالنے کا عمل",
+          "description": "ہم ٹیکسٹ اور ٹیبلز نکالنے کے لیے اسکرپٹس چلاتے ہیں اور اسے منظم JSON فارمیٹ میں تبدیل کرتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "توثیق اور کراس چیک",
+          "description": "ہم خودکار چیکس چلاتے ہیں جو قیمتوں کو جمع کر کے بل کے کل ٹرانسفر بیلنس سے موازنہ کرتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "سسٹم انٹیگریشن",
+          "description": "ہم پروسیس شدہ ڈیٹا کو بغیر کسی دستی ٹائپنگ کے آپ کے ڈیٹا بیس یا ERP سسٹم سے مربوط کرتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "کیا او سی آر سسٹم ہاتھ سے لکھی تحریر پڑھ سکتا ہے؟",
+          "answer": "جی ہاں، ہم AWS اور Azure کے ذہین ICR (Intelligent Character Recognition) انجنز کو مربوط کرتے ہیں جو ہاتھ سے لکھی تحریر اور دستخطوں کو بھی پڑھ سکتے ہیں۔"
+        },
+        {
+          "question": "آپ نکالے گئے نمبروں کی درستگی کو کیسے چیک کرتے ہیں؟",
+          "answer": "ہم ریاضی کے خودکار قوانین بناتے ہیں (جیسے الگ الگ قیمتوں کا مجموعہ فائنل ٹوٹل کے برابر ہونا)۔ تصدیق نہ ہونے پر فائل کو دستی چیک کے لیے فلیگ کیا جاتا ہے۔"
+        },
+        {
+          "question": "کون سے دستاویز فارمیٹس سپورٹڈ ہیں؟",
+          "answer": "ہم پی ڈی ایف (PDF)، تصاویر (JPEG/PNG)، اسکین شدہ بلوں، اور کثیر صفحات والی فائلوں کی پروسیسنگ کو سپورٹ کرتے ہیں۔"
+        },
+        {
+          "question": "کیا یہ سسٹم مالی دستاویزات کے لیے محفوظ ہے؟",
+          "answer": "جی ہاں، ہم پائپ لائنز کو آپ کے نجی سرورز پر چلاتے ہیں۔ ڈیٹا کو انکرپٹ کیا جاتا ہے اور کسی بھی تیسرے فریق کو ڈیٹا بھیجے بغیر کام مکمل ہوتا ہے۔"
+        },
+        {
+          "question": "آپ پی ڈی ایف کے اندر بنے ٹیبلز کو کیسے پروسیس کرتے ہیں؟",
+          "answer": "ہم ٹیبل ماڈلز ترتیب دیتے ہیں جو جدولوں کی قطاروں اور کالموں کا پتہ لگاتے ہیں اور انہیں درست ڈیٹا بیس ٹیبلز میں نقشہ بناتے ہیں۔"
+        },
+        {
+          "question": "کیا یہ متعدد زبانوں کی فائلوں کو پڑھ سکتا ہے؟",
+          "answer": "جی ہاں، ہمارے او سی آر انجنز 50 سے زیادہ زبانوں کو سپورٹ کرتے ہیں اور ایک ہی فائل میں لکھی گئی مختلف زبانوں کو پڑھ سکتے ہیں۔"
+        },
+        {
+          "question": "ایک صفحے کو پروسیس کرنے میں کتنا وقت لگتا ہے؟",
+          "answer": "تصویر کی صفائی، او سی آر چلانے، ڈیٹا کی توثیق اور فائل ایکسپورٹ میں عام طور پر 1 سے 3 سیکنڈ کا وقت لگتا ہے، جو بہت تیز رفتار سروس ہے۔"
+        },
+        {
+          "question": "کیا ہم اسے اپنے SAP یا ERP سسٹم سے جوڑ سکتے ہیں؟",
+          "answer": "جی ہاں، ہم پورے سسٹم کو ایک محفوظ REST API کے ساتھ جوڑتے ہیں جو نکالا گیا ڈیٹا براہ راست آپ کے ERP سسٹمز میں فیڈ کر دیتا ہے۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Tesseract OCR",
+          "icon": "tesseract"
+        },
+        {
+          "name": "Azure Document Intelligence",
+          "icon": "azure"
+        },
+        {
+          "name": "AWS Textract",
+          "icon": "aws"
+        },
+        {
+          "name": "OpenCV",
+          "icon": "opencv"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "FastAPI",
+          "icon": "fastapi"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "التعرف الضوئي على الحروف ومعالجة المستندات",
+    "shortDescription": "استخرج النصوص والبيانات المنظمة من الملفات والفواتير والصور الممسوحة ضوئياً. نبني مسارات OCR ذكية تؤتمت إدخال البيانات بدقة عالية.",
+    "fullDescription": "تستنزف المعالجة اليدوية للمستندات الورقية، وملفات PDF الممسوحة ضوئياً، والإيصالات الكثير من الموارد التشغيلية للمؤسسة. نحن نبني حلولاً ذكية للتعرف الضوئي على الحروف ومعالجة المستندات تؤتمت استخراج النصوص وتحول بيانات المستندات الخام إلى سجلات نظيفة في قاعدة البيانات. باستخدام أدوات متطورة مثل Tesseract و Azure Document Intelligence و AWS Textract، نقوم بتحليل تنسيقات المستندات المعقدة، وتحديد بيانات الجداول، وقراءة الخطوط المكتوبة بخط اليد، وتصنيف النماذج حسب النوع. نطبق قواعد تحقق تلقائية لمطابقة الأرقام المستخرجة (مثل المجاميع في الفواتير) للحد من الأخطاء والملفات التالفة، وتتكامل مخرجاتنا المنظمة JSON بسلاسة مع أنظمة ERP أو CRM.",
+    "features": [
+      "استخراج تلقائي للنصوص والكلمات من المستندات",
+      "معالجة النماذج وتنسيقات الجداول المنظمة",
+      "اكتشاف وتحديد الجداول والشبكات المعقدة",
+      "التعرف الذكي على الخطوط المكتوبة يدوياً (ICR)",
+      "دعم ومعالجة المستندات متعددة اللغات",
+      "فحوصات تحقق تلقائية ومطابقة البيانات رياضياً",
+      "تصنيف المستندات وتوسيمها بدقة تشغيلية عالية",
+      "واجهات برمجية آمنة للتكامل المحلي أو السحابي"
+    ],
+    "benefits": [
+      "تقليل تكاليف معالجة المستندات بنسبة تصل إلى 85٪",
+      "القضاء التام على أخطاء إدخال البيانات اليدوية",
+      "تسريع أوقات معالجة الفواتير والإيصالات المالية",
+      "فهرسة الأرشيفات الممسوحة ضوئياً لتسهيل البحث عنها",
+      "دمج البيانات المستخرجة مباشرة في أنظمة ERP الأساسية",
+      "ضمان معدلات تحقق عالية للبيانات عبر القواعد الآلية"
+    ],
+    "metaTitle": "حلول التعرف الضوئي على الحروف ومعالجة المستندات | PakSoft",
+    "metaDescription": "استخرج البيانات من ملفات PDF الممسوحة ضوئياً والفواتير تلقائياً. نبني مسارات OCR مخصصة باستخدام Azure و AWS Textract. اتصل بنا الآن.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تحليل تخطيط المستند",
+          "description": "نحلل النماذج أو الإيصالات أو الملفات المستهدفة لرسم خريطة لمواقع الجداول والنصوص والخطوط اليدوية."
+        },
+        {
+          "step": 2,
+          "title": "تهيئة محرك OCR",
+          "description": "نقوم بتهيئة محركات OCR مثل Tesseract أو AWS Textract أو Azure لمعالجة الملفات عالية الدقة."
+        },
+        {
+          "step": 3,
+          "title": "المعالجة المسبقة والتنظيف",
+          "description": "نبني برامج معالجة مسبقة تعمل على تعديل انحراف الصور وإزالة الضوضاء لزيادة دقة استخراج النصوص."
+        },
+        {
+          "step": 4,
+          "title": "استخراج وتحليل البيانات",
+          "description": "ننفذ برامج التحليل لاستخراج تفاصيل الجداول وتحويل النصوص الخام إلى تنسيقات JSON منظمة ومحسنة."
+        },
+        {
+          "step": 5,
+          "title": "التحقق والتدقيق المتبادل",
+          "description": "نجري فحوصات تحقق تلقائية لمطابقة الحسابات الرياضية (مثل جمع العناصر لمطابقة الرصيد الإجمالي للفاتورة) وإصدار تنبيهات بالأخطاء."
+        },
+        {
+          "step": 6,
+          "title": "التكامل البرمجي والتصدير",
+          "description": "نربط المخرجات بقواعد بياناتك أو نظام ERP أو إدارة المحتوى، مما يتيح الاستيراد التلقائي دون الحاجة لإدخال يدوي."
+        }
+      ],
+      "faq": [
+        {
+          "question": "هل يمكن لنظام OCR قراءة النصوص المكتوبة بخط اليد؟",
+          "answer": "نعم، ندمج محركات ICR (التعرف الذكي على الحروف) من AWS و Azure والتي يمكنها تحليل النصوص المكتوبة بخط اليد والتوقيعات بدقة عالية."
+        },
+        {
+          "question": "كيف تتحقق من دقة الأرقام المستخرجة؟",
+          "answer": "نكتب عمليات تحقق برمجية مخصصة (مثل التأكد من أن مجموع أسعار العناصر يساوي إجمالي الفاتورة). إذا فشلت هذه الفحوصات، يتم إرسال الملف لمراجعة يدوية."
+        },
+        {
+          "question": "ما هي تنسيقات المستندات المدعومة؟",
+          "answer": "نعالج مستندات PDF وصور JPEG/PNG والفواتير الممسوحة ضوئياً وملفات TIFF والمستندات متعددة الصفحات، سواء كانت رقمية أو ممسوحة يدوياً."
+        },
+        {
+          "question": "هل النظام آمن للتعامل مع السجلات المالية الحساسة؟",
+          "answer": "نعم، ننشر مسارات العمل على خوادمك المحلية أو سحابتك الخاصة. يتم تشفير البيانات بالكامل، وتتم إدارة بيانات الاعتماد بأمان ودون مشاركة أي بيانات خارج نظامك."
+        },
+        {
+          "question": "كيف تتعامل مع الجداول أو جداول البيانات في ملفات PDF؟",
+          "answer": "نقوم بتهيئة نماذج اكتشاف الجداول التي تستخرج تخطيطات الصفوف والأعمدة بدقة، وترسم خريطة لها داخل ملفات CSV أو جداول قواعد البيانات الخاصة بك."
+        },
+        {
+          "question": "هل يمكن للنظام معالجة مستندات بلغات متعددة؟",
+          "answer": "نعم، تدعم محركاتنا أكثر من 50 لغة مختلفة، ويمكنها معالجة ملفات تحتوي على لغات مختلطة في نفس الوقت دون فقدان دقة الحروف."
+        },
+        {
+          "question": "ما هو وقت المعالجة لكل مستند؟",
+          "answer": "تستغرق الصفحة القياسية ما بين 1 و 3 ثوانٍ فقط لإجراء المعالجة المسبقة، وتشغيل محرك OCR، والتحقق من البيانات، وتصديرها، مما يتيح معالجة دفعات ضخمة بسرعة عالية."
+        },
+        {
+          "question": "هل يمكن دمج هذا النظام مع أنظمة SAP أو ERP الحالية لدينا؟",
+          "answer": "نعم، نغلف محرك OCR بالكامل في واجهة REST API آمنة أو نقوم بتهيئة محفزات قاعدة البيانات لتغذية سجلات JSON المستخرجة مباشرة في نظام ERP الخاص بك."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Tesseract OCR",
+          "icon": "tesseract"
+        },
+        {
+          "name": "Azure Document Intelligence",
+          "icon": "azure"
+        },
+        {
+          "name": "AWS Textract",
+          "icon": "aws"
+        },
+        {
+          "name": "OpenCV",
+          "icon": "opencv"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "FastAPI",
+          "icon": "fastapi"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "slug": "real-time-analytics",
+  "en": {
+    "name": "Real-time Analytics",
+    "shortDescription": "Turn streaming data into instant insight. We build real-time analytics pipelines that ingest, process, and visualise events in seconds, powering live dashboards, alerts, and automated decisions.",
+    "fullDescription": "When decisions wait on yesterday's report, opportunities slip away. We build real-time analytics platforms that ingest high-volume event streams and turn them into insight within seconds. Using Apache Kafka for ingestion, stream processors like Apache Flink and Spark for transformation, and fast stores such as ClickHouse and Apache Druid for sub-second queries, we power live dashboards, threshold alerts, and event-driven automation. Whether you are monitoring fraud, tracking IoT sensors, watching application health, or measuring a live campaign, we design for exactly-once processing, low latency, and scale. The result is a system where your teams act on what is happening now, not on a snapshot from hours ago.",
+    "features": [
+      "High-throughput event ingestion (Kafka)",
+      "Stream processing with Flink and Spark",
+      "Sub-second analytical queries (ClickHouse, Druid)",
+      "Live dashboards and real-time visualisations",
+      "Threshold-based alerting and anomaly detection",
+      "Event-driven automation and webhooks",
+      "Exactly-once and windowed aggregations",
+      "Horizontally scalable, fault-tolerant design"
+    ],
+    "benefits": [
+      "Act on data the moment it arrives",
+      "Detect fraud and incidents within seconds",
+      "Replace stale reports with live dashboards",
+      "Scale to millions of events without redesign",
+      "Trigger automated responses to live signals",
+      "Give every team a single real-time source of truth"
+    ],
+    "metaTitle": "Real-time Analytics Solutions | PakSoft",
+    "metaDescription": "Build real-time analytics pipelines that process streaming data in seconds for live dashboards, alerts, and automation. Powered by Kafka, Flink & ClickHouse. Start now.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Use Cases & Latency Goals", "description": "We clarify which decisions must happen in real time and define acceptable latency. This separates true streaming needs from cases a scheduled batch handles fine." },
+        { "step": 2, "title": "Streaming Architecture Design", "description": "We design the ingestion, processing, and storage layers around your volume and query patterns. The right architecture is what keeps latency low as data grows." },
+        { "step": 3, "title": "Ingestion Pipeline", "description": "We build resilient event ingestion with Kafka or a managed equivalent. Durable, ordered streams ensure no event is lost between source and processor." },
+        { "step": 4, "title": "Stream Processing", "description": "We implement transformations, joins, and windowed aggregations with Flink or Spark. Exactly-once semantics keep your numbers correct even after failures." },
+        { "step": 5, "title": "Serving & Visualisation", "description": "We load results into fast stores and build live dashboards and alerts. Sub-second queries let users explore current data without waiting." },
+        { "step": 6, "title": "Monitoring & Scaling", "description": "We add observability and autoscaling so the pipeline stays healthy under load. You get clear signals before backpressure ever becomes an outage." }
+      ],
+      "faq": [
+        { "question": "What is the difference between real-time and batch analytics?", "answer": "Batch analytics processes data on a schedule, producing results minutes or hours later. Real-time analytics processes each event as it arrives, delivering insight within seconds so you can act immediately." },
+        { "question": "How fast is real-time, really?", "answer": "It depends on the use case, but well-designed pipelines deliver end-to-end latency from milliseconds to a few seconds. We agree on a concrete latency target up front and design to meet it." },
+        { "question": "Do we always need streaming, or is batch sometimes enough?", "answer": "Batch is cheaper and simpler when decisions can wait. We recommend streaming only where acting seconds sooner has real value, such as fraud, monitoring, or live personalisation." },
+        { "question": "What does exactly-once processing mean?", "answer": "It guarantees each event affects your results once, even if the system retries after a failure. This prevents double-counting, which is critical for billing, fraud, and financial metrics." },
+        { "question": "Can this scale as our event volume grows?", "answer": "Yes. We design horizontally scalable, partitioned pipelines that add capacity by adding nodes, so the same architecture handles thousands or millions of events per second." },
+        { "question": "Can real-time analytics trigger automated actions?", "answer": "Absolutely. Beyond dashboards, we wire alerts, webhooks, and event-driven workflows so the system can block a transaction, notify a team, or adjust a setting automatically." },
+        { "question": "How do you handle late or out-of-order events?", "answer": "We use event-time processing with watermarks and windowing, so late-arriving data is still placed in the correct time window rather than silently dropped or miscounted." },
+        { "question": "Do we have to run our own infrastructure?", "answer": "No. We can build on managed services like Confluent Cloud and managed databases to reduce operational burden, or on self-hosted open-source if you prefer full control." }
+      ],
+      "technologies": [
+        { "name": "Apache Kafka", "icon": "apache-kafka" },
+        { "name": "Apache Flink", "icon": "apache-flink" },
+        { "name": "Apache Spark", "icon": "apache-spark" },
+        { "name": "ClickHouse", "icon": "clickhouse" },
+        { "name": "Redis", "icon": "redis" },
+        { "name": "Grafana", "icon": "grafana" },
+        { "name": "Elasticsearch", "icon": "elasticsearch" },
+        { "name": "Apache Druid", "icon": "apache-druid" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Gerçek Zamanlı Analitik",
+    "shortDescription": "Akan veriyi anlık içgörüye dönüştürün. Olayları saniyeler içinde alan, işleyen ve görselleştiren gerçek zamanlı analitik hatları kurarız; canlı panoları, uyarıları ve otomatik kararları besler.",
+    "fullDescription": "Kararlar dünün raporunu beklediğinde fırsatlar kaçar. Yüksek hacimli olay akışlarını alıp saniyeler içinde içgörüye dönüştüren gerçek zamanlı analitik platformları kurarız. Alım için Apache Kafka, dönüşüm için Apache Flink ve Spark gibi akış işleyiciler ve saniyenin altında sorgular için ClickHouse ve Apache Druid gibi hızlı depolar kullanarak canlı panoları, eşik uyarılarını ve olay tabanlı otomasyonu besleriz. İster dolandırıcılığı izleyin, ister IoT sensörlerini takip edin, ister uygulama sağlığını gözleyin veya canlı bir kampanyayı ölçün; tam-bir-kez işleme, düşük gecikme ve ölçek için tasarlarız. Sonuç, ekiplerinizin saatler önceki bir anlık görüntüye değil, şu an olana göre hareket ettiği bir sistemdir.",
+    "features": [
+      "Yüksek verimli olay alımı (Kafka)",
+      "Flink ve Spark ile akış işleme",
+      "Saniye altı analitik sorgular (ClickHouse, Druid)",
+      "Canlı panolar ve gerçek zamanlı görselleştirmeler",
+      "Eşik tabanlı uyarı ve anomali tespiti",
+      "Olay tabanlı otomasyon ve webhook'lar",
+      "Tam-bir-kez ve pencereli toplamalar",
+      "Yatay ölçeklenebilir, hataya dayanıklı tasarım"
+    ],
+    "benefits": [
+      "Veri geldiği anda harekete geçin",
+      "Dolandırıcılığı ve olayları saniyeler içinde tespit edin",
+      "Eski raporları canlı panolarla değiştirin",
+      "Yeniden tasarım olmadan milyonlarca olaya ölçeklenin",
+      "Canlı sinyallere otomatik yanıtları tetikleyin",
+      "Her ekibe tek bir gerçek zamanlı doğruluk kaynağı verin"
+    ],
+    "metaTitle": "Gerçek Zamanlı Analitik Çözümleri | PakSoft",
+    "metaDescription": "Akan veriyi saniyeler içinde işleyen gerçek zamanlı analitik hatları kurun; canlı panolar, uyarılar ve otomasyon için. Kafka, Flink ve ClickHouse ile. Hemen başlayın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Kullanım Senaryoları ve Gecikme Hedefleri", "description": "Hangi kararların gerçek zamanlı olması gerektiğini netleştirir ve kabul edilebilir gecikmeyi tanımlarız. Bu, gerçek akış ihtiyaçlarını bir zamanlanmış toplu işin çözdüğü durumlardan ayırır." },
+        { "step": 2, "title": "Akış Mimarisi Tasarımı", "description": "Alım, işleme ve depolama katmanlarını hacminize ve sorgu desenlerinize göre tasarlarız. Doğru mimari, veri büyürken gecikmeyi düşük tutan şeydir." },
+        { "step": 3, "title": "Alım Hattı", "description": "Kafka veya yönetilen bir eşdeğeriyle dayanıklı olay alımı kurarız. Kalıcı, sıralı akışlar kaynak ile işleyici arasında hiçbir olayın kaybolmamasını sağlar." },
+        { "step": 4, "title": "Akış İşleme", "description": "Flink veya Spark ile dönüşümleri, birleştirmeleri ve pencereli toplamaları uygularız. Tam-bir-kez semantiği, hatalardan sonra bile sayılarınızı doğru tutar." },
+        { "step": 5, "title": "Sunum ve Görselleştirme", "description": "Sonuçları hızlı depolara yükler, canlı panolar ve uyarılar kurarız. Saniye altı sorgular kullanıcıların güncel veriyi beklemeden incelemesini sağlar." },
+        { "step": 6, "title": "İzleme ve Ölçekleme", "description": "Hattın yük altında sağlıklı kalması için gözlemlenebilirlik ve otomatik ölçekleme ekleriz. Geri baskı bir kesintiye dönüşmeden net sinyaller alırsınız." }
+      ],
+      "faq": [
+        { "question": "Gerçek zamanlı ve toplu analitik arasındaki fark nedir?", "answer": "Toplu analitik veriyi bir zaman çizelgesine göre işler ve sonuçları dakikalar veya saatler sonra üretir. Gerçek zamanlı analitik her olayı geldiğinde işler ve saniyeler içinde içgörü sunar, böylece hemen harekete geçebilirsiniz." },
+        { "question": "Gerçek zaman aslında ne kadar hızlı?", "answer": "Kullanım senaryosuna bağlıdır, ancak iyi tasarlanmış hatlar milisaniyelerden birkaç saniyeye kadar uçtan uca gecikme sunar. Baştan somut bir gecikme hedefi belirler ve onu karşılayacak şekilde tasarlarız." },
+        { "question": "Her zaman akış mı gerekir, yoksa bazen toplu işlem yeterli mi?", "answer": "Kararlar bekleyebildiğinde toplu işlem daha ucuz ve basittir. Akışı yalnızca saniyeler önce harekete geçmenin gerçek değeri olduğu yerlerde öneririz; örneğin dolandırıcılık, izleme veya canlı kişiselleştirme." },
+        { "question": "Tam-bir-kez işleme ne anlama gelir?", "answer": "Sistem bir hatadan sonra yeniden denese bile her olayın sonuçlarınızı bir kez etkilemesini garanti eder. Bu, faturalama, dolandırıcılık ve finansal metrikler için kritik olan çift saymayı önler." },
+        { "question": "Olay hacmimiz büyüdükçe bu ölçeklenebilir mi?", "answer": "Evet. Düğüm ekleyerek kapasite ekleyen yatay ölçeklenebilir, bölümlenmiş hatlar tasarlarız; böylece aynı mimari saniyede binlerce veya milyonlarca olayı işler." },
+        { "question": "Gerçek zamanlı analitik otomatik eylemleri tetikleyebilir mi?", "answer": "Kesinlikle. Panoların ötesinde uyarıları, webhook'ları ve olay tabanlı iş akışlarını bağlarız; böylece sistem bir işlemi engelleyebilir, bir ekibi uyarabilir veya bir ayarı otomatik değiştirebilir." },
+        { "question": "Geç veya sırasız gelen olayları nasıl ele alıyorsunuz?", "answer": "Filigranlar ve pencereleme ile olay-zamanı işleme kullanırız; böylece geç gelen veri sessizce atılmak yerine doğru zaman penceresine yerleştirilir." },
+        { "question": "Kendi altyapımızı çalıştırmak zorunda mıyız?", "answer": "Hayır. Operasyonel yükü azaltmak için Confluent Cloud ve yönetilen veritabanları gibi yönetilen hizmetler üzerine kurabiliriz; tam kontrol isterseniz kendi sunucunuzdaki açık kaynak üzerine de kurabiliriz." }
+      ],
+      "technologies": [
+        { "name": "Apache Kafka", "icon": "apache-kafka" },
+        { "name": "Apache Flink", "icon": "apache-flink" },
+        { "name": "Apache Spark", "icon": "apache-spark" },
+        { "name": "ClickHouse", "icon": "clickhouse" },
+        { "name": "Redis", "icon": "redis" },
+        { "name": "Grafana", "icon": "grafana" },
+        { "name": "Elasticsearch", "icon": "elasticsearch" },
+        { "name": "Apache Druid", "icon": "apache-druid" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Echtzeit-Analytics",
+    "shortDescription": "Verwandeln Sie Streaming-Daten in sofortige Erkenntnisse. Wir bauen Echtzeit-Analytics-Pipelines, die Events in Sekunden erfassen, verarbeiten und visualisieren – für Live-Dashboards, Alerts und automatisierte Entscheidungen.",
+    "fullDescription": "Wenn Entscheidungen auf den gestrigen Bericht warten, entgehen Chancen. Wir bauen Echtzeit-Analytics-Plattformen, die hochvolumige Event-Streams erfassen und innerhalb von Sekunden in Erkenntnisse verwandeln. Mit Apache Kafka für die Ingestion, Stream-Prozessoren wie Apache Flink und Spark für die Transformation und schnellen Stores wie ClickHouse und Apache Druid für Sub-Sekunden-Queries treiben wir Live-Dashboards, Schwellenwert-Alerts und ereignisgesteuerte Automatisierung an. Ob Sie Betrug überwachen, IoT-Sensoren verfolgen, die Anwendungsgesundheit beobachten oder eine Live-Kampagne messen – wir entwerfen für Exactly-once-Verarbeitung, niedrige Latenz und Skalierung. Das Ergebnis ist ein System, in dem Ihre Teams nach dem handeln, was jetzt passiert, nicht nach einer Momentaufnahme von vor Stunden.",
+    "features": [
+      "Hochdurchsatz-Event-Ingestion (Kafka)",
+      "Stream-Processing mit Flink und Spark",
+      "Sub-Sekunden-Analytics-Queries (ClickHouse, Druid)",
+      "Live-Dashboards und Echtzeit-Visualisierungen",
+      "Schwellenwert-Alerts und Anomalieerkennung",
+      "Ereignisgesteuerte Automatisierung und Webhooks",
+      "Exactly-once- und gefensterte Aggregationen",
+      "Horizontal skalierbares, fehlertolerantes Design"
+    ],
+    "benefits": [
+      "Handeln Sie, sobald Daten eintreffen",
+      "Erkennen Sie Betrug und Vorfälle in Sekunden",
+      "Ersetzen Sie veraltete Berichte durch Live-Dashboards",
+      "Skalieren Sie auf Millionen Events ohne Redesign",
+      "Lösen Sie automatische Reaktionen auf Live-Signale aus",
+      "Geben Sie jedem Team eine einzige Echtzeit-Wahrheitsquelle"
+    ],
+    "metaTitle": "Echtzeit-Analytics-Lösungen | PakSoft",
+    "metaDescription": "Bauen Sie Echtzeit-Analytics-Pipelines, die Streaming-Daten in Sekunden verarbeiten – für Live-Dashboards, Alerts und Automatisierung. Mit Kafka, Flink & ClickHouse.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Use Cases & Latenzziele", "description": "Wir klären, welche Entscheidungen in Echtzeit fallen müssen, und definieren die akzeptable Latenz. Das trennt echte Streaming-Bedarfe von Fällen, die ein geplanter Batch gut abdeckt." },
+        { "step": 2, "title": "Streaming-Architektur-Design", "description": "Wir entwerfen Ingestion-, Verarbeitungs- und Speicherschichten rund um Ihr Volumen und Ihre Query-Muster. Die richtige Architektur hält die Latenz niedrig, wenn Daten wachsen." },
+        { "step": 3, "title": "Ingestion-Pipeline", "description": "Wir bauen robuste Event-Ingestion mit Kafka oder einem Managed-Äquivalent. Dauerhafte, geordnete Streams stellen sicher, dass kein Event zwischen Quelle und Prozessor verloren geht." },
+        { "step": 4, "title": "Stream-Processing", "description": "Wir implementieren Transformationen, Joins und gefensterte Aggregationen mit Flink oder Spark. Exactly-once-Semantik hält Ihre Zahlen auch nach Ausfällen korrekt." },
+        { "step": 5, "title": "Serving & Visualisierung", "description": "Wir laden Ergebnisse in schnelle Stores und bauen Live-Dashboards und Alerts. Sub-Sekunden-Queries lassen Nutzer aktuelle Daten ohne Wartezeit erkunden." },
+        { "step": 6, "title": "Monitoring & Skalierung", "description": "Wir ergänzen Observability und Autoscaling, damit die Pipeline unter Last gesund bleibt. Sie erhalten klare Signale, bevor Backpressure je zum Ausfall wird." }
+      ],
+      "faq": [
+        { "question": "Was ist der Unterschied zwischen Echtzeit- und Batch-Analytics?", "answer": "Batch-Analytics verarbeitet Daten nach Zeitplan und liefert Ergebnisse Minuten oder Stunden später. Echtzeit-Analytics verarbeitet jedes Event beim Eintreffen und liefert Erkenntnisse in Sekunden, sodass Sie sofort handeln können." },
+        { "question": "Wie schnell ist Echtzeit wirklich?", "answer": "Es hängt vom Use Case ab, aber gut entworfene Pipelines liefern End-to-End-Latenzen von Millisekunden bis wenigen Sekunden. Wir vereinbaren vorab ein konkretes Latenzziel und entwerfen danach." },
+        { "question": "Brauchen wir immer Streaming, oder reicht manchmal Batch?", "answer": "Batch ist günstiger und einfacher, wenn Entscheidungen warten können. Streaming empfehlen wir nur dort, wo Sekunden früher zu handeln echten Wert hat, etwa bei Betrug, Monitoring oder Live-Personalisierung." },
+        { "question": "Was bedeutet Exactly-once-Verarbeitung?", "answer": "Es garantiert, dass jedes Event Ihre Ergebnisse einmal beeinflusst, selbst wenn das System nach einem Ausfall erneut versucht. Das verhindert Doppelzählung, die bei Abrechnung, Betrug und Finanzmetriken kritisch ist." },
+        { "question": "Skaliert das, wenn unser Event-Volumen wächst?", "answer": "Ja. Wir entwerfen horizontal skalierbare, partitionierte Pipelines, die Kapazität durch zusätzliche Knoten hinzufügen, sodass dieselbe Architektur Tausende oder Millionen Events pro Sekunde bewältigt." },
+        { "question": "Kann Echtzeit-Analytics automatisierte Aktionen auslösen?", "answer": "Absolut. Über Dashboards hinaus verdrahten wir Alerts, Webhooks und ereignisgesteuerte Workflows, sodass das System eine Transaktion blockieren, ein Team benachrichtigen oder eine Einstellung automatisch anpassen kann." },
+        { "question": "Wie behandeln Sie verspätete oder unsortierte Events?", "answer": "Wir nutzen Event-Time-Processing mit Watermarks und Windowing, sodass spät eintreffende Daten im korrekten Zeitfenster landen, statt still verworfen oder falsch gezählt zu werden." },
+        { "question": "Müssen wir eigene Infrastruktur betreiben?", "answer": "Nein. Wir können auf Managed Services wie Confluent Cloud und verwaltete Datenbanken aufbauen, um den Betriebsaufwand zu senken, oder auf selbstgehostetem Open Source, wenn Sie volle Kontrolle wünschen." }
+      ],
+      "technologies": [
+        { "name": "Apache Kafka", "icon": "apache-kafka" },
+        { "name": "Apache Flink", "icon": "apache-flink" },
+        { "name": "Apache Spark", "icon": "apache-spark" },
+        { "name": "ClickHouse", "icon": "clickhouse" },
+        { "name": "Redis", "icon": "redis" },
+        { "name": "Grafana", "icon": "grafana" },
+        { "name": "Elasticsearch", "icon": "elasticsearch" },
+        { "name": "Apache Druid", "icon": "apache-druid" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "ریئل ٹائم اینالٹکس",
+    "shortDescription": "Streaming data کو فوری بصیرت میں بدلیں۔ ہم real-time analytics پائپ لائنز بناتے ہیں جو events کو سیکنڈوں میں ingest، process اور visualize کرتی ہیں، اور live dashboards، alerts اور خودکار فیصلوں کو طاقت دیتی ہیں۔",
+    "fullDescription": "جب فیصلے کل کی رپورٹ کے انتظار میں ہوں تو مواقع ہاتھ سے نکل جاتے ہیں۔ ہم real-time analytics پلیٹ فارمز بناتے ہیں جو زیادہ حجم کے event streams کو ingest کر کے سیکنڈوں میں بصیرت میں بدل دیتے ہیں۔ ingestion کے لیے Apache Kafka، transformation کے لیے Apache Flink اور Spark جیسے stream processors، اور sub-second queries کے لیے ClickHouse اور Apache Druid جیسے تیز stores استعمال کر کے ہم live dashboards، threshold alerts اور event-driven automation کو طاقت دیتے ہیں۔ چاہے آپ fraud کی نگرانی کر رہے ہوں، IoT sensors ٹریک کر رہے ہوں، ایپلی کیشن کی صحت دیکھ رہے ہوں یا کسی live مہم کی پیمائش کر رہے ہوں؛ ہم exactly-once processing، کم latency اور scale کے لیے ڈیزائن کرتے ہیں۔ نتیجہ ایک ایسا سسٹم ہے جہاں آپ کی ٹیمیں گھنٹوں پرانے snapshot کے بجائے اس پر عمل کرتی ہیں جو ابھی ہو رہا ہے۔",
+    "features": [
+      "زیادہ throughput event ingestion (Kafka)",
+      "Flink اور Spark کے ساتھ stream processing",
+      "Sub-second analytical queries (ClickHouse، Druid)",
+      "Live dashboards اور real-time visualizations",
+      "Threshold پر مبنی alerting اور anomaly detection",
+      "Event-driven automation اور webhooks",
+      "Exactly-once اور windowed aggregations",
+      "Horizontally scalable، fault-tolerant ڈیزائن"
+    ],
+    "benefits": [
+      "ڈیٹا آتے ہی اس پر عمل کریں",
+      "fraud اور incidents کو سیکنڈوں میں پکڑیں",
+      "پرانی رپورٹس کی جگہ live dashboards لائیں",
+      "بغیر دوبارہ ڈیزائن کیے لاکھوں events تک scale کریں",
+      "live signals پر خودکار ردِعمل trigger کریں",
+      "ہر ٹیم کو ایک واحد real-time ذریعہِ صداقت دیں"
+    ],
+    "metaTitle": "Real-time Analytics حل | PakSoft",
+    "metaDescription": "Real-time analytics پائپ لائنز بنائیں جو streaming data کو سیکنڈوں میں process کریں؛ live dashboards، alerts اور automation کے لیے۔ Kafka، Flink اور ClickHouse سے۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Use Cases اور Latency اہداف", "description": "ہم واضح کرتے ہیں کہ کون سے فیصلے real-time ہونے چاہئیں اور قابلِ قبول latency طے کرتے ہیں۔ یہ حقیقی streaming ضروریات کو ان معاملات سے الگ کرتا ہے جنہیں ایک scheduled batch بخوبی سنبھال لیتا ہے۔" },
+        { "step": 2, "title": "Streaming فن تعمیر کا ڈیزائن", "description": "ہم ingestion، processing اور storage کی تہوں کو آپ کے حجم اور query patterns کے گرد ڈیزائن کرتے ہیں۔ درست فن تعمیر ہی ڈیٹا بڑھنے پر latency کو کم رکھتا ہے۔" },
+        { "step": 3, "title": "Ingestion پائپ لائن", "description": "ہم Kafka یا کسی managed متبادل کے ساتھ مضبوط event ingestion بناتے ہیں۔ پائیدار، ترتیب شدہ streams یقینی بناتی ہیں کہ source اور processor کے درمیان کوئی event ضائع نہ ہو۔" },
+        { "step": 4, "title": "Stream Processing", "description": "ہم Flink یا Spark کے ساتھ transformations، joins اور windowed aggregations نافذ کرتے ہیں۔ Exactly-once semantics ناکامیوں کے بعد بھی آپ کے اعداد درست رکھتی ہے۔" },
+        { "step": 5, "title": "Serving اور Visualization", "description": "ہم نتائج کو تیز stores میں لوڈ کرتے اور live dashboards اور alerts بناتے ہیں۔ Sub-second queries صارفین کو موجودہ ڈیٹا بغیر انتظار کے دیکھنے دیتی ہیں۔" },
+        { "step": 6, "title": "Monitoring اور Scaling", "description": "ہم observability اور autoscaling شامل کرتے ہیں تاکہ پائپ لائن load کے تحت صحت مند رہے۔ backpressure کے outage بننے سے پہلے آپ کو واضح اشارے ملتے ہیں۔" }
+      ],
+      "faq": [
+        { "question": "Real-time اور batch analytics میں کیا فرق ہے؟", "answer": "Batch analytics ڈیٹا کو ایک شیڈول پر process کرتی ہے اور نتائج منٹوں یا گھنٹوں بعد دیتی ہے۔ Real-time analytics ہر event کو آتے ہی process کرتی ہے اور سیکنڈوں میں بصیرت دیتی ہے تاکہ آپ فوراً عمل کر سکیں۔" },
+        { "question": "Real-time حقیقت میں کتنی تیز ہے؟", "answer": "یہ use case پر منحصر ہے، مگر اچھی طرح ڈیزائن کی گئی پائپ لائنز milliseconds سے چند سیکنڈ تک end-to-end latency دیتی ہیں۔ ہم پہلے سے ایک ٹھوس latency ہدف طے کرتے اور اسے پورا کرنے کے لیے ڈیزائن کرتے ہیں۔" },
+        { "question": "کیا ہمیں ہمیشہ streaming چاہیے، یا کبھی batch کافی ہے؟", "answer": "جب فیصلے انتظار کر سکیں تو batch سستا اور آسان ہے۔ ہم streaming صرف وہاں تجویز کرتے ہیں جہاں سیکنڈوں پہلے عمل کرنے کی حقیقی قدر ہو، جیسے fraud، monitoring یا live personalization۔" },
+        { "question": "Exactly-once processing کا کیا مطلب ہے؟", "answer": "یہ ضمانت دیتا ہے کہ ہر event آپ کے نتائج پر ایک بار اثر ڈالے، چاہے سسٹم ناکامی کے بعد دوبارہ کوشش کرے۔ یہ double-counting روکتا ہے، جو billing، fraud اور مالیاتی metrics کے لیے نہایت اہم ہے۔" },
+        { "question": "کیا ہمارے event حجم بڑھنے پر یہ scale کرے گا؟", "answer": "جی ہاں۔ ہم horizontally scalable، partitioned پائپ لائنز ڈیزائن کرتے ہیں جو nodes شامل کر کے صلاحیت بڑھاتی ہیں، تاکہ وہی فن تعمیر فی سیکنڈ ہزاروں یا لاکھوں events سنبھالے۔" },
+        { "question": "کیا real-time analytics خودکار اقدامات trigger کر سکتی ہے؟", "answer": "بالکل۔ dashboards کے علاوہ ہم alerts، webhooks اور event-driven workflows جوڑتے ہیں، تاکہ سسٹم کسی transaction کو روک سکے، کسی ٹیم کو مطلع کرے یا کوئی setting خودکار طور پر تبدیل کرے۔" },
+        { "question": "آپ دیر سے یا بے ترتیب آنے والے events کو کیسے سنبھالتے ہیں؟", "answer": "ہم watermarks اور windowing کے ساتھ event-time processing استعمال کرتے ہیں، تاکہ دیر سے آنے والا ڈیٹا خاموشی سے رد ہونے یا غلط شمار ہونے کے بجائے درست time window میں رکھا جائے۔" },
+        { "question": "کیا ہمیں اپنا انفراسٹرکچر خود چلانا ہوگا؟", "answer": "نہیں۔ ہم operational بوجھ کم کرنے کے لیے Confluent Cloud اور managed databases جیسے managed services پر بنا سکتے ہیں، یا اگر آپ مکمل کنٹرول چاہیں تو self-hosted open-source پر۔" }
+      ],
+      "technologies": [
+        { "name": "Apache Kafka", "icon": "apache-kafka" },
+        { "name": "Apache Flink", "icon": "apache-flink" },
+        { "name": "Apache Spark", "icon": "apache-spark" },
+        { "name": "ClickHouse", "icon": "clickhouse" },
+        { "name": "Redis", "icon": "redis" },
+        { "name": "Grafana", "icon": "grafana" },
+        { "name": "Elasticsearch", "icon": "elasticsearch" },
+        { "name": "Apache Druid", "icon": "apache-druid" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "التحليلات في الزمن الفعلي",
+    "shortDescription": "حوّل البيانات المتدفقة إلى رؤى فورية. نبني خطوط تحليلات في الزمن الفعلي تستوعب الأحداث وتعالجها وتعرضها خلال ثوانٍ، لتشغيل لوحات حية وتنبيهات وقرارات آلية.",
+    "fullDescription": "حين تنتظر القرارات تقرير الأمس، تضيع الفرص. نبني منصات تحليلات في الزمن الفعلي تستوعب تدفقات أحداث عالية الحجم وتحوّلها إلى رؤى خلال ثوانٍ. باستخدام Apache Kafka للاستيعاب، ومعالجات تدفق مثل Apache Flink وSpark للتحويل، ومخازن سريعة مثل ClickHouse وApache Druid لاستعلامات دون الثانية، نشغّل لوحات حية وتنبيهات عتبية وأتمتة مدفوعة بالأحداث. سواء كنت تراقب الاحتيال أو تتتبّع مستشعرات إنترنت الأشياء أو ترصد صحة التطبيق أو تقيس حملة حيّة، نصمّم لمعالجة exactly-once وكُمون منخفض وقابلية للتوسّع. والنتيجة نظام تتصرف فيه فرقك بناءً على ما يحدث الآن، لا على لقطة من قبل ساعات.",
+    "features": [
+      "استيعاب أحداث عالي الإنتاجية (Kafka)",
+      "معالجة التدفق عبر Flink وSpark",
+      "استعلامات تحليلية دون الثانية (ClickHouse، Druid)",
+      "لوحات حية وتصورات في الزمن الفعلي",
+      "تنبيهات عتبية وكشف الشذوذ",
+      "أتمتة مدفوعة بالأحداث وWebhooks",
+      "تجميعات exactly-once ومُنافذة",
+      "تصميم قابل للتوسّع أفقياً ومتحمّل للأعطال"
+    ],
+    "benefits": [
+      "تصرّف فور وصول البيانات",
+      "اكتشف الاحتيال والحوادث خلال ثوانٍ",
+      "استبدل التقارير القديمة بلوحات حية",
+      "توسّع إلى ملايين الأحداث دون إعادة تصميم",
+      "أطلق استجابات آلية للإشارات الحية",
+      "امنح كل فريق مصدر حقيقة واحداً في الزمن الفعلي"
+    ],
+    "metaTitle": "حلول التحليلات في الزمن الفعلي | PakSoft",
+    "metaDescription": "ابنِ خطوط تحليلات في الزمن الفعلي تعالج البيانات المتدفقة خلال ثوانٍ للوحات الحية والتنبيهات والأتمتة. مدعومة بـ Kafka وFlink وClickHouse. ابدأ الآن.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "حالات الاستخدام وأهداف الكُمون", "description": "نوضّح أي القرارات يجب أن تتم في الزمن الفعلي ونحدّد الكُمون المقبول. هذا يفصل احتياجات التدفق الحقيقية عن الحالات التي تكفيها دفعة مجدولة." },
+        { "step": 2, "title": "تصميم بنية التدفق", "description": "نصمّم طبقات الاستيعاب والمعالجة والتخزين حول حجمك وأنماط استعلاماتك. البنية الصحيحة هي ما يبقي الكُمون منخفضاً مع نمو البيانات." },
+        { "step": 3, "title": "خط الاستيعاب", "description": "نبني استيعاب أحداث مرناً عبر Kafka أو بديل مُدار. تضمن التدفقات الدائمة والمرتبة عدم فقدان أي حدث بين المصدر والمعالج." },
+        { "step": 4, "title": "معالجة التدفق", "description": "ننفّذ التحويلات والوصلات والتجميعات المُنافذة عبر Flink أو Spark. تحافظ دلالات exactly-once على صحة أرقامك حتى بعد الأعطال." },
+        { "step": 5, "title": "التقديم والتصور", "description": "نُحمّل النتائج في مخازن سريعة ونبني لوحات حية وتنبيهات. تتيح الاستعلامات دون الثانية للمستخدمين استكشاف البيانات الحالية دون انتظار." },
+        { "step": 6, "title": "المراقبة والتوسّع", "description": "نضيف قابلية المراقبة والتوسّع التلقائي ليبقى الخط سليماً تحت الحِمل. تحصل على إشارات واضحة قبل أن يتحول الضغط العكسي إلى انقطاع." }
+      ],
+      "faq": [
+        { "question": "ما الفرق بين التحليلات في الزمن الفعلي والتحليلات الدفعية؟", "answer": "تعالج التحليلات الدفعية البيانات وفق جدول، فتنتج النتائج بعد دقائق أو ساعات. أما تحليلات الزمن الفعلي فتعالج كل حدث فور وصوله وتقدّم الرؤية خلال ثوانٍ لتتصرف فوراً." },
+        { "question": "ما مدى سرعة الزمن الفعلي حقاً؟", "answer": "يعتمد ذلك على حالة الاستخدام، لكن الخطوط المصممة جيداً تقدّم كُموناً شاملاً من أجزاء الثانية إلى بضع ثوانٍ. نتفق مسبقاً على هدف كُمون ملموس ونصمّم لتحقيقه." },
+        { "question": "هل نحتاج دائماً إلى التدفق، أم تكفي المعالجة الدفعية أحياناً؟", "answer": "المعالجة الدفعية أرخص وأبسط حين يمكن للقرارات أن تنتظر. نوصي بالتدفق فقط حيث يكون للتصرف قبل ثوانٍ قيمة حقيقية، مثل الاحتيال والمراقبة والتخصيص الحي." },
+        { "question": "ماذا تعني معالجة exactly-once؟", "answer": "تضمن أن يؤثر كل حدث في نتائجك مرة واحدة، حتى لو أعاد النظام المحاولة بعد عطل. هذا يمنع الاحتساب المزدوج، وهو حاسم للفوترة والاحتيال والمقاييس المالية." },
+        { "question": "هل يتوسّع هذا مع نمو حجم أحداثنا؟", "answer": "نعم. نصمّم خطوطاً قابلة للتوسّع أفقياً ومجزّأة تضيف السعة بإضافة العُقد، فتعالج البنية نفسها آلاف أو ملايين الأحداث في الثانية." },
+        { "question": "هل يمكن لتحليلات الزمن الفعلي إطلاق إجراءات آلية؟", "answer": "بالتأكيد. إلى جانب اللوحات، نربط التنبيهات وWebhooks وسير العمل المدفوع بالأحداث، ليتمكن النظام من حظر معاملة أو إخطار فريق أو ضبط إعداد تلقائياً." },
+        { "question": "كيف تتعاملون مع الأحداث المتأخرة أو غير المرتبة؟", "answer": "نستخدم المعالجة بزمن الحدث مع العلامات المائية والتنفيذ المُنافذ، فتُوضع البيانات المتأخرة في النافذة الزمنية الصحيحة بدلاً من إسقاطها بصمت أو احتسابها خطأً." },
+        { "question": "هل يتعين علينا تشغيل بنيتنا التحتية بأنفسنا؟", "answer": "لا. يمكننا البناء على خدمات مُدارة مثل Confluent Cloud وقواعد بيانات مُدارة لتقليل العبء التشغيلي، أو على مصادر مفتوحة مُستضافة ذاتياً إذا كنت تفضّل التحكم الكامل." }
+      ],
+      "technologies": [
+        { "name": "Apache Kafka", "icon": "apache-kafka" },
+        { "name": "Apache Flink", "icon": "apache-flink" },
+        { "name": "Apache Spark", "icon": "apache-spark" },
+        { "name": "ClickHouse", "icon": "clickhouse" },
+        { "name": "Redis", "icon": "redis" },
+        { "name": "Grafana", "icon": "grafana" },
+        { "name": "Elasticsearch", "icon": "elasticsearch" },
+        { "name": "Apache Druid", "icon": "apache-druid" }
+      ]
+    }
+  }
+}

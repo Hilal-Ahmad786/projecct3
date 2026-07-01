@@ -1,0 +1,638 @@
+{
+  "slug": "terraform-infrastructure",
+  "en": {
+    "name": "Terraform Infrastructure as Code",
+    "shortDescription": "Define, provision, and manage your cloud infrastructure with Terraform for unparalleled consistency, automation, and scalability. Achieve predictable deployments and reduce operational overhead with our expert IaC services.",
+    "fullDescription": "Leverage Terraform to define your entire cloud infrastructure as code, ensuring repeatable, consistent, and version-controlled deployments across any environment. Our services cover everything from initial module development and multi-cloud strategy to robust state management and CI/CD integration. We help you automate provisioning, detect and remediate configuration drift, and embed security and compliance directly into your infrastructure definitions. This approach significantly reduces manual errors, accelerates deployment cycles, and provides a clear audit trail for all infrastructure changes, leading to more stable and cost-effective operations. Partner with PakSoft to transform your infrastructure management.",
+    "features": [
+      "Custom Terraform Module Development",
+      "Multi-Cloud & Hybrid Cloud Provisioning",
+      "Advanced Terraform State Management",
+      "Automated CI/CD Integration for IaC",
+      "Infrastructure Drift Detection & Remediation",
+      "Security & Compliance as Code Implementation",
+      "Cloud Cost Optimization with Terraform",
+      "Migration of Legacy Infrastructure to IaC"
+    ],
+    "benefits": [
+      "Enhanced Infrastructure Consistency",
+      "Faster, Error-Free Deployments",
+      "Reduced Operational Costs",
+      "Improved Security Posture",
+      "Scalable & Flexible Cloud Environments",
+      "Clear Audit Trails for Changes"
+    ],
+    "metaTitle": "Terraform Infrastructure as Code Services | PakSoft",
+    "metaDescription": "Automate your cloud infrastructure provisioning with Terraform IaC. Ensure consistency, reduce errors, and accelerate deployments across multi-cloud environments. Contact PakSoft for expert solutions.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Infrastructure Assessment",
+          "description": "We begin by thoroughly analyzing your existing infrastructure, applications, and business requirements. This helps us understand your current state, identify pain points, and define clear objectives for IaC adoption."
+        },
+        {
+          "step": 2,
+          "title": "Terraform Design & Planning",
+          "description": "Our experts design a robust Terraform architecture, including module structure, state management strategy, and provider configurations. We plan for scalability, security, and maintainability, aligning with your future growth."
+        },
+        {
+          "step": 3,
+          "title": "Module Development & Implementation",
+          "description": "We develop custom, reusable Terraform modules tailored to your specific needs, ensuring best practices for reusability and maintainability. This phase involves writing the HCL code and setting up initial infrastructure resources."
+        },
+        {
+          "step": 4,
+          "title": "CI/CD Integration & Automation",
+          "description": "We integrate Terraform into your existing CI/CD pipelines, automating infrastructure provisioning, updates, and destruction. This enables continuous delivery of infrastructure changes with automated testing and validation."
+        },
+        {
+          "step": 5,
+          "title": "Security, Compliance & Optimization",
+          "description": "We embed security policies and compliance checks directly into your Terraform code using tools like tfsec and Checkov. We also implement cost optimization strategies and monitoring to ensure efficient resource utilization."
+        },
+        {
+          "step": 6,
+          "title": "Training & Handover",
+          "description": "Upon completion, we provide comprehensive training to your team on managing and extending the Terraform infrastructure. We ensure a smooth handover with detailed documentation and ongoing support options."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is Infrastructure as Code (IaC) with Terraform?",
+          "answer": "IaC with Terraform means defining your infrastructure resources (servers, databases, networks) in human-readable configuration files rather than manually configuring them. This allows you to version control, review, and automate your infrastructure deployments, treating it like application code."
+        },
+        {
+          "question": "Why should I use Terraform over cloud-native IaC tools?",
+          "answer": "Terraform offers multi-cloud and hybrid-cloud capabilities, allowing you to manage infrastructure across AWS, Azure, GCP, and on-premise environments with a single tool. This provides flexibility and avoids vendor lock-in, which is a significant advantage over cloud-specific tools like CloudFormation or ARM templates."
+        },
+        {
+          "question": "How does Terraform handle state management?",
+          "answer": "Terraform uses a state file to map real-world resources to your configuration and track metadata. We implement secure remote state backends (e.g., S3, Azure Blob Storage, Terraform Cloud) with locking to prevent conflicts and ensure consistency in team environments."
+        },
+        {
+          "question": "Can Terraform manage existing infrastructure?",
+          "answer": "Yes, Terraform can import existing infrastructure resources into its state file, allowing you to bring your current setup under IaC management. This process requires careful planning to ensure accurate mapping and avoid unintended changes."
+        },
+        {
+          "question": "What is Terraform drift and how do you prevent it?",
+          "answer": "Terraform drift occurs when manual changes are made to infrastructure outside of Terraform, causing the actual state to diverge from the defined state. We implement drift detection tools and CI/CD processes to identify and remediate drift, ensuring your infrastructure always matches your code."
+        },
+        {
+          "question": "How long does a typical Terraform implementation project take?",
+          "answer": "Project timelines vary based on infrastructure complexity and existing automation levels, typically ranging from 4 to 12 weeks for a medium-sized environment. A small, greenfield project might be quicker, while large-scale migrations take longer. We provide a detailed roadmap after our initial assessment."
+        },
+        {
+          "question": "What are the security implications of IaC?",
+          "answer": "IaC significantly enhances security by enforcing policies consistently and reducing human error. We integrate security scanning tools (tfsec, Checkov) into your CI/CD pipeline to identify vulnerabilities and misconfigurations before deployment, ensuring compliance and a strong security posture."
+        },
+        {
+          "question": "Do you provide ongoing support and maintenance for Terraform infrastructure?",
+          "answer": "Yes, PakSoft offers comprehensive post-implementation support, including monitoring, troubleshooting, and continuous optimization of your Terraform configurations. We can also assist with module updates, provider upgrades, and adapting to evolving cloud services."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        },
+        {
+          "name": "Terraform Cloud",
+          "icon": "terraform"
+        },
+        {
+          "name": "Terragrunt",
+          "icon": "terragrunt"
+        },
+        {
+          "name": "tfsec",
+          "icon": "tfsec"
+        },
+        {
+          "name": "Checkov",
+          "icon": "checkov"
+        },
+        {
+          "name": "Atlantis",
+          "icon": "atlantis"
+        },
+        {
+          "name": "AWS",
+          "icon": "aws"
+        },
+        {
+          "name": "Azure",
+          "icon": "azure"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Terraform ile Kod Olarak Altyapı",
+    "shortDescription": "Bulut altyapınızı Terraform ile tanımlayın, sağlayın ve yönetin; eşsiz tutarlılık, otomasyon ve ölçeklenebilirlik elde edin. Uzman IaC hizmetlerimizle öngörülebilir dağıtımlar sağlayın ve operasyonel yükü azaltın.",
+    "fullDescription": "Tüm bulut altyapınızı kod olarak tanımlamak için Terraform'dan yararlanın, böylece her ortamda tekrarlanabilir, tutarlı ve sürüm kontrollü dağıtımlar sağlayın. Hizmetlerimiz, ilk modül geliştirmeden çoklu bulut stratejisine, sağlam durum yönetimine ve CI/CD entegrasyonuna kadar her şeyi kapsar. Sağlamayı otomatikleştirmenize, yapılandırma kaymasını tespit edip düzeltmenize ve güvenlik ile uyumluluğu doğrudan altyapı tanımlarınıza yerleştirmenize yardımcı oluyoruz. Bu yaklaşım, manuel hataları önemli ölçüde azaltır, dağıtım döngülerini hızlandırır ve tüm altyapı değişiklikleri için net bir denetim izi sağlayarak daha istikrarlı ve uygun maliyetli operasyonlara yol açar. Altyapı yönetiminizi dönüştürmek için PakSoft ile ortak olun.",
+    "features": [
+      "Özel Terraform Modül Geliştirme",
+      "Çoklu Bulut ve Hibrit Bulut Sağlama",
+      "Gelişmiş Terraform Durum Yönetimi",
+      "IaC için Otomatik CI/CD Entegrasyonu",
+      "Altyapı Kayması Tespiti ve Düzeltme",
+      "Kod Olarak Güvenlik ve Uyumluluk Uygulaması",
+      "Terraform ile Bulut Maliyet Optimizasyonu",
+      "Mevcut Altyapının IaC'ye Geçişi"
+    ],
+    "benefits": [
+      "Gelişmiş Altyapı Tutarlılığı",
+      "Daha Hızlı, Hatasız Dağıtımlar",
+      "Azaltılmış Operasyonel Maliyetler",
+      "Geliştirilmiş Güvenlik Durumu",
+      "Ölçeklenebilir ve Esnek Bulut Ortamları",
+      "Değişiklikler için Net Denetim İzleri"
+    ],
+    "metaTitle": "Terraform Kod Olarak Altyapı Hizmetleri | PakSoft",
+    "metaDescription": "Bulut altyapı sağlamanızı Terraform IaC ile otomatikleştirin. Çoklu bulut ortamlarında tutarlılık sağlayın, hataları azaltın ve dağıtımları hızlandırın. Uzman çözümler için PakSoft ile iletişime geçin.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Altyapı Değerlendirmesi",
+          "description": "Mevcut altyapınızı, uygulamalarınızı ve iş gereksinimlerinizi kapsamlı bir şekilde analiz ederek başlıyoruz. Bu, mevcut durumunuzu anlamamıza, sorunlu noktaları belirlememize ve IaC benimseme hedeflerini netleştirmemize yardımcı olur."
+        },
+        {
+          "step": 2,
+          "title": "Terraform Tasarım ve Planlama",
+          "description": "Uzmanlarımız, modül yapısı, durum yönetimi stratejisi ve sağlayıcı yapılandırmaları dahil olmak üzere sağlam bir Terraform mimarisi tasarlar. Ölçeklenebilirlik, güvenlik ve sürdürülebilirlik için planlama yaparız, gelecekteki büyümenize uyum sağlarız."
+        },
+        {
+          "step": 3,
+          "title": "Modül Geliştirme ve Uygulama",
+          "description": "Yeniden kullanılabilirlik ve sürdürülebilirlik için en iyi uygulamaları sağlayarak, özel ihtiyaçlarınıza göre uyarlanmış, yeniden kullanılabilir Terraform modülleri geliştiriyoruz. Bu aşama, HCL kodunu yazmayı ve ilk altyapı kaynaklarını kurmayı içerir."
+        },
+        {
+          "step": 4,
+          "title": "CI/CD Entegrasyonu ve Otomasyonu",
+          "description": "Terraform'u mevcut CI/CD boru hatlarınıza entegre ederek altyapı sağlamayı, güncellemeleri ve yok etmeyi otomatikleştiriyoruz. Bu, otomatik test ve doğrulama ile altyapı değişikliklerinin sürekli teslimini sağlar."
+        },
+        {
+          "step": 5,
+          "title": "Güvenlik, Uyumluluk ve Optimizasyon",
+          "description": "tfsec ve Checkov gibi araçları kullanarak güvenlik politikalarını ve uyumluluk kontrollerini doğrudan Terraform kodunuza yerleştiriyoruz. Ayrıca verimli kaynak kullanımı sağlamak için maliyet optimizasyon stratejileri ve izleme uyguluyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Eğitim ve Devir",
+          "description": "Tamamlandıktan sonra, ekibinize Terraform altyapısını yönetme ve genişletme konusunda kapsamlı eğitim veriyoruz. Detaylı dokümantasyon ve sürekli destek seçenekleriyle sorunsuz bir devir teslim sağlıyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Terraform ile Kod Olarak Altyapı (IaC) nedir?",
+          "answer": "Terraform ile IaC, altyapı kaynaklarınızı (sunucular, veritabanları, ağlar) manuel olarak yapılandırmak yerine insan tarafından okunabilir yapılandırma dosyalarında tanımlamak anlamına gelir. Bu, altyapı dağıtımlarınızı sürüm kontrol etmenize, incelemenize ve otomatikleştirmenize olanak tanır, tıpkı uygulama kodu gibi ele alınır."
+        },
+        {
+          "question": "Neden buluta özel IaC araçları yerine Terraform kullanmalıyım?",
+          "answer": "Terraform, AWS, Azure, GCP ve şirket içi ortamlar arasında altyapıyı tek bir araçla yönetmenize olanak tanıyan çoklu bulut ve hibrit bulut yetenekleri sunar. Bu, buluta özel araçlara (CloudFormation veya ARM şablonları gibi) göre önemli bir avantaj olan esneklik sağlar ve satıcıya bağımlılığı önler."
+        },
+        {
+          "question": "Terraform durum yönetimini nasıl ele alır?",
+          "answer": "Terraform, gerçek dünya kaynaklarını yapılandırmanızla eşleştirmek ve meta verileri izlemek için bir durum dosyası kullanır. Çatışmaları önlemek ve ekip ortamlarında tutarlılık sağlamak için kilitleme özellikli güvenli uzak durum arka uçları (örn. S3, Azure Blob Depolama, Terraform Cloud) uyguluyoruz."
+        },
+        {
+          "question": "Terraform mevcut altyapıyı yönetebilir mi?",
+          "answer": "Evet, Terraform mevcut altyapı kaynaklarını durum dosyasına aktarabilir, böylece mevcut kurulumunuzu IaC yönetimi altına alabilirsiniz. Bu süreç, doğru eşleştirme sağlamak ve istenmeyen değişiklikleri önlemek için dikkatli planlama gerektirir."
+        },
+        {
+          "question": "Terraform kayması nedir ve bunu nasıl önlersiniz?",
+          "answer": "Terraform kayması, altyapıda Terraform dışında manuel değişiklikler yapıldığında meydana gelir ve gerçek durumun tanımlanmış durumdan sapmasına neden olur. Kaymayı tespit etmek ve düzeltmek için kayma tespit araçları ve CI/CD süreçleri uygulayarak altyapınızın her zaman kodunuzla eşleşmesini sağlıyoruz."
+        },
+        {
+          "question": "Tipik bir Terraform uygulama projesi ne kadar sürer?",
+          "answer": "Proje zaman çizelgeleri altyapı karmaşıklığına ve mevcut otomasyon seviyelerine göre değişir, orta ölçekli bir ortam için genellikle 4 ila 12 hafta sürer. Küçük, sıfırdan bir proje daha hızlı olabilirken, büyük ölçekli geçişler daha uzun sürer. İlk değerlendirmemizden sonra ayrıntılı bir yol haritası sunuyoruz."
+        },
+        {
+          "question": "IaC'nin güvenlik etkileri nelerdir?",
+          "answer": "IaC, politikaları tutarlı bir şekilde uygulayarak ve insan hatasını azaltarak güvenliği önemli ölçüde artırır. Güvenlik tarama araçlarını (tfsec, Checkov) CI/CD boru hattınıza entegre ederek dağıtımdan önce güvenlik açıklarını ve yanlış yapılandırmaları tespit ediyor, uyumluluğu ve güçlü bir güvenlik duruşunu sağlıyoruz."
+        },
+        {
+          "question": "Terraform altyapısı için sürekli destek ve bakım sağlıyor musunuz?",
+          "answer": "Evet, PakSoft, Terraform yapılandırmalarınızın izlenmesi, sorun giderme ve sürekli optimizasyonu dahil olmak üzere kapsamlı uygulama sonrası destek sunar. Ayrıca modül güncellemeleri, sağlayıcı yükseltmeleri ve gelişen bulut hizmetlerine uyum sağlama konusunda da yardımcı olabiliriz."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        },
+        {
+          "name": "Terraform Cloud",
+          "icon": "terraform"
+        },
+        {
+          "name": "Terragrunt",
+          "icon": "terragrunt"
+        },
+        {
+          "name": "tfsec",
+          "icon": "tfsec"
+        },
+        {
+          "name": "Checkov",
+          "icon": "checkov"
+        },
+        {
+          "name": "Atlantis",
+          "icon": "atlantis"
+        },
+        {
+          "name": "AWS",
+          "icon": "aws"
+        },
+        {
+          "name": "Azure",
+          "icon": "azure"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Terraform Infrastruktur als Code",
+    "shortDescription": "Definieren, provisionieren und verwalten Sie Ihre Cloud-Infrastruktur mit Terraform für unübertroffene Konsistenz, Automatisierung und Skalierbarkeit. Erzielen Sie vorhersehbare Bereitstellungen und reduzieren Sie den Betriebsaufwand mit unseren Experten-IaC-Diensten.",
+    "fullDescription": "Nutzen Sie Terraform, um Ihre gesamte Cloud-Infrastruktur als Code zu definieren und so wiederholbare, konsistente und versionskontrollierte Bereitstellungen in jeder Umgebung zu gewährleisten. Unsere Dienstleistungen umfassen alles von der anfänglichen Modulentwicklung und Multi-Cloud-Strategie bis hin zu robustem State Management und CI/CD-Integration. Wir helfen Ihnen, die Bereitstellung zu automatisieren, Konfigurationsdrift zu erkennen und zu beheben sowie Sicherheit und Compliance direkt in Ihre Infrastrukturdefinitionen einzubetten. Dieser Ansatz reduziert manuelle Fehler erheblich, beschleunigt Bereitstellungszyklen und bietet eine klare Prüfspur für alle Infrastrukturänderungen, was zu stabileren und kostengünstigeren Operationen führt. Arbeiten Sie mit PakSoft zusammen, um Ihr Infrastrukturmanagement zu transformieren.",
+    "features": [
+      "Kundenspezifische Terraform-Modulentwicklung",
+      "Multi-Cloud- und Hybrid-Cloud-Bereitstellung",
+      "Erweitertes Terraform State Management",
+      "Automatisierte CI/CD-Integration für IaC",
+      "Erkennung und Behebung von Infrastruktur-Drift",
+      "Implementierung von Sicherheit & Compliance als Code",
+      "Cloud-Kostenoptimierung mit Terraform",
+      "Migration von manueller Infrastruktur zu IaC"
+    ],
+    "benefits": [
+      "Verbesserte Infrastrukturkonsistenz",
+      "Schnellere, fehlerfreie Bereitstellungen",
+      "Reduzierte Betriebskosten",
+      "Verbesserte Sicherheitslage",
+      "Skalierbare und flexible Cloud-Umgebungen",
+      "Klare Prüfspuren für Änderungen"
+    ],
+    "metaTitle": "Terraform Infrastruktur als Code Dienste | PakSoft",
+    "metaDescription": "Automatisieren Sie Ihre Cloud-Infrastruktur-Bereitstellung mit Terraform IaC. Sorgen Sie für Konsistenz, reduzieren Sie Fehler und beschleunigen Sie Bereitstellungen in Multi-Cloud-Umgebungen. Kontaktieren Sie PakSoft für Expertenlösungen.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Infrastrukturbewertung",
+          "description": "Wir beginnen mit einer gründlichen Analyse Ihrer bestehenden Infrastruktur, Anwendungen und Geschäftsanforderungen. Dies hilft uns, Ihren aktuellen Zustand zu verstehen, Schwachstellen zu identifizieren und klare Ziele für die IaC-Einführung zu definieren."
+        },
+        {
+          "step": 2,
+          "title": "Terraform Design & Planung",
+          "description": "Unsere Experten entwerfen eine robuste Terraform-Architektur, einschließlich Modulstruktur, State-Management-Strategie und Provider-Konfigurationen. Wir planen Skalierbarkeit, Sicherheit und Wartbarkeit und richten uns an Ihrem zukünftigen Wachstum aus."
+        },
+        {
+          "step": 3,
+          "title": "Modulentwicklung & Implementierung",
+          "description": "Wir entwickeln maßgeschneiderte, wiederverwendbare Terraform-Module, die auf Ihre spezifischen Bedürfnisse zugeschnitten sind und Best Practices für Wiederverwendbarkeit und Wartbarkeit gewährleisten. Diese Phase umfasst das Schreiben des HCL-Codes und die Einrichtung der anfänglichen Infrastrukturressourcen."
+        },
+        {
+          "step": 4,
+          "title": "CI/CD-Integration & Automatisierung",
+          "description": "Wir integrieren Terraform in Ihre bestehenden CI/CD-Pipelines und automatisieren die Infrastrukturbereitstellung, -aktualisierungen und -zerstörung. Dies ermöglicht die kontinuierliche Bereitstellung von Infrastrukturänderungen mit automatisierten Tests und Validierungen."
+        },
+        {
+          "step": 5,
+          "title": "Sicherheit, Compliance & Optimierung",
+          "description": "Wir betten Sicherheitsrichtlinien und Compliance-Prüfungen direkt in Ihren Terraform-Code ein, indem wir Tools wie tfsec und Checkov verwenden. Wir implementieren auch Kostenoptimierungsstrategien und Überwachung, um eine effiziente Ressourcennutzung sicherzustellen."
+        },
+        {
+          "step": 6,
+          "title": "Schulung & Übergabe",
+          "description": "Nach Abschluss bieten wir Ihrem Team eine umfassende Schulung zur Verwaltung und Erweiterung der Terraform-Infrastruktur an. Wir gewährleisten eine reibungslose Übergabe mit detaillierter Dokumentation und fortlaufenden Support-Optionen."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist Infrastruktur als Code (IaC) mit Terraform?",
+          "answer": "IaC mit Terraform bedeutet, Ihre Infrastrukturressourcen (Server, Datenbanken, Netzwerke) in menschenlesbaren Konfigurationsdateien zu definieren, anstatt sie manuell zu konfigurieren. Dies ermöglicht es Ihnen, Ihre Infrastrukturbereitstellungen zu versionieren, zu überprüfen und zu automatisieren, indem Sie sie wie Anwendungscode behandeln."
+        },
+        {
+          "question": "Warum sollte ich Terraform gegenüber Cloud-nativen IaC-Tools verwenden?",
+          "answer": "Terraform bietet Multi-Cloud- und Hybrid-Cloud-Funktionen, mit denen Sie die Infrastruktur über AWS, Azure, GCP und On-Premise-Umgebungen mit einem einzigen Tool verwalten können. Dies bietet Flexibilität und vermeidet Anbieterbindung, was ein erheblicher Vorteil gegenüber Cloud-spezifischen Tools wie CloudFormation oder ARM-Vorlagen ist."
+        },
+        {
+          "question": "Wie handhabt Terraform das State Management?",
+          "answer": "Terraform verwendet eine State-Datei, um reale Ressourcen Ihrer Konfiguration zuzuordnen und Metadaten zu verfolgen. Wir implementieren sichere Remote-State-Backends (z. B. S3, Azure Blob Storage, Terraform Cloud) mit Sperrung, um Konflikte zu vermeiden und Konsistenz in Teamumgebungen zu gewährleisten."
+        },
+        {
+          "question": "Kann Terraform bestehende Infrastruktur verwalten?",
+          "answer": "Ja, Terraform kann bestehende Infrastrukturressourcen in seine State-Datei importieren, sodass Sie Ihr aktuelles Setup unter IaC-Verwaltung bringen können. Dieser Prozess erfordert eine sorgfältige Planung, um eine genaue Zuordnung sicherzustellen und unbeabsichtigte Änderungen zu vermeiden."
+        },
+        {
+          "question": "Was ist Terraform-Drift und wie verhindern Sie ihn?",
+          "answer": "Terraform-Drift tritt auf, wenn manuelle Änderungen an der Infrastruktur außerhalb von Terraform vorgenommen werden, wodurch der tatsächliche Zustand vom definierten Zustand abweicht. Wir implementieren Drift-Erkennungstools und CI/CD-Prozesse, um Drift zu identifizieren und zu beheben und sicherzustellen, dass Ihre Infrastruktur immer Ihrem Code entspricht."
+        },
+        {
+          "question": "Wie lange dauert ein typisches Terraform-Implementierungsprojekt?",
+          "answer": "Projektzeitpläne variieren je nach Infrastrukturkomplexität und vorhandenem Automatisierungsgrad, typischerweise zwischen 4 und 12 Wochen für eine mittelgroße Umgebung. Ein kleines, Greenfield-Projekt könnte schneller sein, während große Migrationen länger dauern. Nach unserer ersten Bewertung erstellen wir einen detaillierten Fahrplan."
+        },
+        {
+          "question": "Welche Sicherheitsauswirkungen hat IaC?",
+          "answer": "IaC verbessert die Sicherheit erheblich, indem es Richtlinien konsistent durchsetzt und menschliche Fehler reduziert. Wir integrieren Sicherheitsscanning-Tools (tfsec, Checkov) in Ihre CI/CD-Pipeline, um Schwachstellen und Fehlkonfigurationen vor der Bereitstellung zu identifizieren und so Compliance und eine starke Sicherheitslage zu gewährleisten."
+        },
+        {
+          "question": "Bieten Sie fortlaufenden Support und Wartung für Terraform-Infrastruktur an?",
+          "answer": "Ja, PakSoft bietet umfassenden Support nach der Implementierung, einschließlich Überwachung, Fehlerbehebung und kontinuierlicher Optimierung Ihrer Terraform-Konfigurationen. Wir können auch bei Modul-Updates, Provider-Upgrades und der Anpassung an sich entwickelnde Cloud-Dienste behilflich sein."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        },
+        {
+          "name": "Terraform Cloud",
+          "icon": "terraform"
+        },
+        {
+          "name": "Terragrunt",
+          "icon": "terragrunt"
+        },
+        {
+          "name": "tfsec",
+          "icon": "tfsec"
+        },
+        {
+          "name": "Checkov",
+          "icon": "checkov"
+        },
+        {
+          "name": "Atlantis",
+          "icon": "atlantis"
+        },
+        {
+          "name": "AWS",
+          "icon": "aws"
+        },
+        {
+          "name": "Azure",
+          "icon": "azure"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "ٹیرافارم انفراسٹرکچر بطور کوڈ",
+    "shortDescription": "ٹیرافارم کے ساتھ اپنے کلاؤڈ انفراسٹرکچر کی تعریف، فراہمی اور انتظام کریں تاکہ بے مثال مستقل مزاجی، آٹومیشن اور اسکیل ایبلٹی حاصل ہو۔ ہماری ماہر IaC خدمات کے ساتھ قابل پیشن گوئی تعیناتیوں کو حاصل کریں اور آپریشنل اوور ہیڈ کو کم کریں۔",
+    "fullDescription": "اپنے پورے کلاؤڈ انفراسٹرکچر کو کوڈ کے طور پر بیان کرنے کے لیے ٹیرافارم کا فائدہ اٹھائیں، ہر ماحول میں قابل تکرار، مستقل اور ورژن کنٹرول شدہ تعیناتیوں کو یقینی بنائیں۔ ہماری خدمات ابتدائی ماڈیول کی ترقی اور ملٹی کلاؤڈ حکمت عملی سے لے کر مضبوط اسٹیٹ مینجمنٹ اور CI/CD انٹیگریشن تک ہر چیز کا احاطہ کرتی ہیں۔ ہم آپ کو فراہمی کو خودکار بنانے، کنفیگریشن ڈرفٹ کا پتہ لگانے اور اسے ٹھیک کرنے، اور سیکیورٹی اور تعمیل کو براہ راست آپ کی انفراسٹرکچر کی تعریفوں میں شامل کرنے میں مدد کرتے ہیں۔ یہ نقطہ نظر دستی غلطیوں کو نمایاں طور پر کم کرتا ہے، تعیناتی کے چکروں کو تیز کرتا ہے، اور تمام انفراسٹرکچر تبدیلیوں کے لیے ایک واضح آڈٹ ٹریل فراہم کرتا ہے، جس سے زیادہ مستحکم اور لاگت سے موثر آپریشنز ہوتے ہیں۔ اپنے انفراسٹرکچر مینجمنٹ کو تبدیل کرنے کے لیے پاک سافٹ کے ساتھ شراکت کریں۔",
+    "features": [
+      "کسٹم ٹیرافارم ماڈیول ڈویلپمنٹ",
+      "ملٹی کلاؤڈ اور ہائبرڈ کلاؤڈ پروویژننگ",
+      "ایڈوانسڈ ٹیرافارم اسٹیٹ مینجمنٹ",
+      "IaC کے لیے خودکار CI/CD انٹیگریشن",
+      "انفراسٹرکچر ڈرفٹ کا پتہ لگانا اور اصلاح",
+      "کوڈ کے طور پر سیکیورٹی اور تعمیل کا نفاذ",
+      "ٹیرافارم کے ساتھ کلاؤڈ لاگت کی اصلاح",
+      "دستی انفراسٹرکچر سے IaC میں منتقلی"
+    ],
+    "benefits": [
+      "بہتر انفراسٹرکچر مستقل مزاجی",
+      "تیز، غلطی سے پاک تعیناتیاں",
+      "کم آپریشنل لاگت",
+      "بہتر سیکیورٹی پوزیشن",
+      "اسکیل ایبل اور لچکدار کلاؤڈ ماحول",
+      "تبدیلیوں کے لیے واضح آڈٹ ٹریلز"
+    ],
+    "metaTitle": "ٹیرافارم انفراسٹرکچر بطور کوڈ سروسز | PakSoft",
+    "metaDescription": "ٹیرافارم IaC کے ساتھ اپنے کلاؤڈ انفراسٹرکچر کی فراہمی کو خودکار بنائیں۔ مستقل مزاجی کو یقینی بنائیں، غلطیوں کو کم کریں، اور ملٹی کلاؤڈ ماحول میں تعیناتیوں کو تیز کریں۔ ماہر حل کے لیے پاک سافٹ سے رابطہ کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "انفراسٹرکچر کی تشخیص",
+          "description": "ہم آپ کے موجودہ انفراسٹرکچر، ایپلیکیشنز اور کاروباری ضروریات کا مکمل تجزیہ کرکے آغاز کرتے ہیں۔ یہ ہمیں آپ کی موجودہ حالت کو سمجھنے، مشکلات کی نشاندہی کرنے اور IaC کو اپنانے کے لیے واضح اہداف کی وضاحت کرنے میں مدد کرتا ہے۔"
+        },
+        {
+          "step": 2,
+          "title": "ٹیرافارم ڈیزائن اور منصوبہ بندی",
+          "description": "ہمارے ماہرین ایک مضبوط ٹیرافارم آرکیٹیکچر ڈیزائن کرتے ہیں، جس میں ماڈیول کی ساخت، اسٹیٹ مینجمنٹ کی حکمت عملی، اور فراہم کنندہ کی کنفیگریشنز شامل ہیں۔ ہم اسکیل ایبلٹی، سیکیورٹی اور دیکھ بھال کے لیے منصوبہ بندی کرتے ہیں، جو آپ کی مستقبل کی ترقی کے مطابق ہو۔"
+        },
+        {
+          "step": 3,
+          "title": "ماڈیول کی ترقی اور نفاذ",
+          "description": "ہم آپ کی مخصوص ضروریات کے مطابق اپنی مرضی کے مطابق، دوبارہ قابل استعمال ٹیرافارم ماڈیولز تیار کرتے ہیں، جو دوبارہ استعمال اور دیکھ بھال کے لیے بہترین طریقوں کو یقینی بناتے ہیں۔ اس مرحلے میں HCL کوڈ لکھنا اور ابتدائی انفراسٹرکچر وسائل کو ترتیب دینا شامل ہے۔"
+        },
+        {
+          "step": 4,
+          "title": "CI/CD انٹیگریشن اور آٹومیشن",
+          "description": "ہم ٹیرافارم کو آپ کی موجودہ CI/CD پائپ لائنز میں ضم کرتے ہیں، انفراسٹرکچر کی فراہمی، اپ ڈیٹس اور تباہی کو خودکار بناتے ہیں۔ یہ خودکار جانچ اور توثیق کے ساتھ انفراسٹرکچر کی تبدیلیوں کی مسلسل فراہمی کو ممکن بناتا ہے۔"
+        },
+        {
+          "step": 5,
+          "title": "سیکیورٹی، تعمیل اور اصلاح",
+          "description": "ہم tfsec اور Checkov جیسے ٹولز کا استعمال کرتے ہوئے سیکیورٹی پالیسیوں اور تعمیل کی جانچ کو براہ راست آپ کے ٹیرافارم کوڈ میں شامل کرتے ہیں۔ ہم موثر وسائل کے استعمال کو یقینی بنانے کے لیے لاگت کی اصلاح کی حکمت عملیوں اور نگرانی کو بھی نافذ کرتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "تربیت اور ہینڈ اوور",
+          "description": "تکمیل کے بعد، ہم آپ کی ٹیم کو ٹیرافارم انفراسٹرکچر کا انتظام اور توسیع کرنے کے بارے میں جامع تربیت فراہم کرتے ہیں۔ ہم تفصیلی دستاویزات اور جاری معاونت کے اختیارات کے ساتھ ہموار ہینڈ اوور کو یقینی بناتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "ٹیرافارم کے ساتھ انفراسٹرکچر بطور کوڈ (IaC) کیا ہے؟",
+          "answer": "ٹیرافارم کے ساتھ IaC کا مطلب ہے کہ آپ اپنے انفراسٹرکچر کے وسائل (سرورز، ڈیٹا بیس، نیٹ ورکس) کو دستی طور پر کنفیگر کرنے کے بجائے انسانی پڑھنے کے قابل کنفیگریشن فائلوں میں بیان کریں۔ یہ آپ کو اپنے انفراسٹرکچر کی تعیناتیوں کو ورژن کنٹرول کرنے، جائزہ لینے اور خودکار بنانے کی اجازت دیتا ہے، اسے ایپلیکیشن کوڈ کی طرح سمجھا جاتا ہے۔"
+        },
+        {
+          "question": "مجھے کلاؤڈ-نیٹیو IaC ٹولز کے بجائے ٹیرافارم کیوں استعمال کرنا چاہیے؟",
+          "answer": "ٹیرافارم ملٹی کلاؤڈ اور ہائبرڈ کلاؤڈ کی صلاحیتیں پیش کرتا ہے، جس سے آپ AWS، Azure، GCP اور آن پریمیس ماحول میں ایک ہی ٹول کے ساتھ انفراسٹرکچر کا انتظام کر سکتے ہیں۔ یہ لچک فراہم کرتا ہے اور وینڈر لاک ان سے بچتا ہے، جو CloudFormation یا ARM ٹیمپلیٹس جیسے کلاؤڈ کے مخصوص ٹولز پر ایک اہم فائدہ ہے۔"
+        },
+        {
+          "question": "ٹیرافارم اسٹیٹ مینجمنٹ کو کیسے ہینڈل کرتا ہے؟",
+          "answer": "ٹیرافارم حقیقی دنیا کے وسائل کو آپ کی کنفیگریشن سے نقشہ بنانے اور میٹا ڈیٹا کو ٹریک کرنے کے لیے ایک اسٹیٹ فائل کا استعمال کرتا ہے۔ ہم تنازعات کو روکنے اور ٹیم کے ماحول میں مستقل مزاجی کو یقینی بنانے کے لیے لاکنگ کے ساتھ محفوظ ریموٹ اسٹیٹ بیک اینڈز (مثلاً S3، Azure Blob Storage، Terraform Cloud) کو نافذ کرتے ہیں۔"
+        },
+        {
+          "question": "کیا ٹیرافارم موجودہ انفراسٹرکچر کا انتظام کر سکتا ہے؟",
+          "answer": "ہاں، ٹیرافارم موجودہ انفراسٹرکچر کے وسائل کو اپنی اسٹیٹ فائل میں درآمد کر سکتا ہے، جس سے آپ اپنے موجودہ سیٹ اپ کو IaC مینجمنٹ کے تحت لا سکتے ہیں۔ اس عمل کے لیے درست نقشہ سازی کو یقینی بنانے اور غیر ارادی تبدیلیوں سے بچنے کے لیے محتاط منصوبہ بندی کی ضرورت ہوتی ہے۔"
+        },
+        {
+          "question": "ٹیرافارم ڈرفٹ کیا ہے اور آپ اسے کیسے روکتے ہیں؟",
+          "answer": "ٹیرافارم ڈرفٹ اس وقت ہوتا ہے جب ٹیرافارم کے باہر انفراسٹرکچر میں دستی تبدیلیاں کی جاتی ہیں، جس کی وجہ سے اصل حالت بیان کردہ حالت سے ہٹ جاتی ہے۔ ہم ڈرفٹ کا پتہ لگانے اور اسے ٹھیک کرنے کے لیے ڈرفٹ ڈیٹیکشن ٹولز اور CI/CD عمل کو نافذ کرتے ہیں، اس بات کو یقینی بناتے ہوئے کہ آپ کا انفراسٹرکچر ہمیشہ آپ کے کوڈ سے مماثل ہو۔"
+        },
+        {
+          "question": "ایک عام ٹیرافارم نفاذ پروجیکٹ میں کتنا وقت لگتا ہے؟",
+          "answer": "پروجیکٹ کی ٹائم لائنز انفراسٹرکچر کی پیچیدگی اور موجودہ آٹومیشن کی سطحوں کی بنیاد پر مختلف ہوتی ہیں، عام طور پر درمیانے درجے کے ماحول کے لیے 4 سے 12 ہفتوں تک ہوتی ہیں۔ ایک چھوٹا، گرین فیلڈ پروجیکٹ تیز ہو سکتا ہے، جبکہ بڑے پیمانے پر منتقلی میں زیادہ وقت لگتا ہے۔ ہم اپنی ابتدائی تشخیص کے بعد ایک تفصیلی روڈ میپ فراہم کرتے ہیں۔"
+        },
+        {
+          "question": "IaC کے سیکیورٹی مضمرات کیا ہیں؟",
+          "answer": "IaC پالیسیوں کو مستقل طور پر نافذ کرکے اور انسانی غلطی کو کم کرکے سیکیورٹی کو نمایاں طور پر بڑھاتا ہے۔ ہم سیکیورٹی اسکیننگ ٹولز (tfsec، Checkov) کو آپ کی CI/CD پائپ لائن میں ضم کرتے ہیں تاکہ تعیناتی سے پہلے کمزوریوں اور غلط کنفیگریشنز کی نشاندہی کی جا سکے، تعمیل اور ایک مضبوط سیکیورٹی پوزیشن کو یقینی بنایا جا سکے۔"
+        },
+        {
+          "question": "کیا آپ ٹیرافارم انفراسٹرکچر کے لیے جاری معاونت اور دیکھ بھال فراہم کرتے ہیں؟",
+          "answer": "ہاں، پاک سافٹ نفاذ کے بعد جامع معاونت پیش کرتا ہے، جس میں آپ کے ٹیرافارم کنفیگریشنز کی نگرانی، خرابیوں کا سراغ لگانا، اور مسلسل اصلاح شامل ہے۔ ہم ماڈیول اپ ڈیٹس، فراہم کنندہ اپ گریڈز، اور ابھرتی ہوئی کلاؤڈ خدمات کے مطابق ڈھالنے میں بھی مدد کر سکتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        },
+        {
+          "name": "Terraform Cloud",
+          "icon": "terraform"
+        },
+        {
+          "name": "Terragrunt",
+          "icon": "terragrunt"
+        },
+        {
+          "name": "tfsec",
+          "icon": "tfsec"
+        },
+        {
+          "name": "Checkov",
+          "icon": "checkov"
+        },
+        {
+          "name": "Atlantis",
+          "icon": "atlantis"
+        },
+        {
+          "name": "AWS",
+          "icon": "aws"
+        },
+        {
+          "name": "Azure",
+          "icon": "azure"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "البنية التحتية كرمز باستخدام Terraform",
+    "shortDescription": "حدد، وفر، وادِر بنيتك التحتية السحابية باستخدام Terraform لتحقيق اتساق لا مثيل له، وأتمتة، وقابلية للتوسع. حقق عمليات نشر يمكن التنبؤ بها وقلل من الأعباء التشغيلية مع خدمات IaC الخبيرة لدينا.",
+    "fullDescription": "استفد من Terraform لتعريف بنيتك التحتية السحابية بالكامل كرمز، مما يضمن عمليات نشر قابلة للتكرار، ومتسقة، ومتحكم بها بالإصدارات عبر أي بيئة. تغطي خدماتنا كل شيء بدءًا من تطوير الوحدات الأولية واستراتيجية السحابة المتعددة وصولاً إلى إدارة الحالة القوية وتكامل CI/CD. نساعدك على أتمتة التوفير، واكتشاف ومعالجة انحراف التكوين، وتضمين الأمان والامتثال مباشرة في تعريفات البنية التحتية الخاصة بك. يقلل هذا النهج بشكل كبير من الأخطاء اليدوية، ويسرع دورات النشر، ويوفر مسار تدقيق واضحًا لجميع تغييرات البنية التحتية، مما يؤدي إلى عمليات أكثر استقرارًا وفعالية من حيث التكلفة. شارك مع PakSoft لتحويل إدارة بنيتك التحتية.",
+    "features": [
+      "تطوير وحدات Terraform مخصصة",
+      "توفير السحابة المتعددة والسحابة الهجينة",
+      "إدارة حالة Terraform المتقدمة",
+      "تكامل CI/CD الآلي لـ IaC",
+      "اكتشاف ومعالجة انحراف البنية التحتية",
+      "تطبيق الأمان والامتثال كرمز",
+      "تحسين تكلفة السحابة باستخدام Terraform",
+      "ترحيل البنية التحتية القديمة إلى IaC"
+    ],
+    "benefits": [
+      "تعزيز اتساق البنية التحتية",
+      "عمليات نشر أسرع وخالية من الأخطاء",
+      "تقليل التكاليف التشغيلية",
+      "تحسين الوضع الأمني",
+      "بيئات سحابية قابلة للتوسع ومرنة",
+      "مسارات تدقيق واضحة للتغييرات"
+    ],
+    "metaTitle": "خدمات البنية التحتية كرمز Terraform | PakSoft",
+    "metaDescription": "أتمتة توفير بنيتك التحتية السحابية باستخدام Terraform IaC. ضمان الاتساق، تقليل الأخطاء، وتسريع عمليات النشر عبر بيئات السحابة المتعددة. اتصل بـ PakSoft للحصول على حلول الخبراء.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تقييم البنية التحتية",
+          "description": "نبدأ بتحليل شامل لبنيتك التحتية الحالية وتطبيقاتك ومتطلبات عملك. يساعدنا هذا على فهم وضعك الحالي، وتحديد نقاط الضعف، وتحديد أهداف واضحة لاعتماد IaC."
+        },
+        {
+          "step": 2,
+          "title": "تصميم وتخطيط Terraform",
+          "description": "يقوم خبراؤنا بتصميم بنية Terraform قوية، بما في ذلك هيكل الوحدة، واستراتيجية إدارة الحالة، وتكوينات المزود. نخطط لقابلية التوسع والأمان وقابلية الصيانة، بما يتماشى مع نموك المستقبلي."
+        },
+        {
+          "step": 3,
+          "title": "تطوير الوحدات والتنفيذ",
+          "description": "نقوم بتطوير وحدات Terraform مخصصة وقابلة لإعادة الاستخدام مصممة خصيصًا لاحتياجاتك، مما يضمن أفضل الممارسات لإعادة الاستخدام وقابلية الصيانة. تتضمن هذه المرحلة كتابة كود HCL وإعداد موارد البنية التحتية الأولية."
+        },
+        {
+          "step": 4,
+          "title": "تكامل وأتمتة CI/CD",
+          "description": "نقوم بدمج Terraform في خطوط أنابيب CI/CD الحالية لديك، مما يؤدي إلى أتمتة توفير البنية التحتية وتحديثاتها وتدميرها. يتيح ذلك التسليم المستمر لتغييرات البنية التحتية مع الاختبار والتحقق الآلي."
+        },
+        {
+          "step": 5,
+          "title": "الأمان والامتثال والتحسين",
+          "description": "نقوم بتضمين سياسات الأمان وفحوصات الامتثال مباشرة في كود Terraform الخاص بك باستخدام أدوات مثل tfsec و Checkov. كما نقوم بتطبيق استراتيجيات تحسين التكلفة والمراقبة لضمان الاستخدام الفعال للموارد."
+        },
+        {
+          "step": 6,
+          "title": "التدريب والتسليم",
+          "description": "عند الانتهاء، نقدم تدريبًا شاملاً لفريقك حول إدارة وتوسيع بنية Terraform التحتية. نضمن تسليمًا سلسًا مع وثائق مفصلة وخيارات دعم مستمرة."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما هي البنية التحتية كرمز (IaC) باستخدام Terraform؟",
+          "answer": "تعني IaC باستخدام Terraform تعريف موارد البنية التحتية الخاصة بك (الخوادم، قواعد البيانات، الشبكات) في ملفات تكوين قابلة للقراءة البشرية بدلاً من تكوينها يدويًا. يتيح لك ذلك التحكم في إصدارات عمليات نشر البنية التحتية الخاصة بك ومراجعتها وأتمتتها، والتعامل معها كرمز تطبيق."
+        },
+        {
+          "question": "لماذا يجب أن أستخدم Terraform بدلاً من أدوات IaC السحابية الأصلية؟",
+          "answer": "تقدم Terraform إمكانيات السحابة المتعددة والسحابة الهجينة، مما يتيح لك إدارة البنية التحتية عبر بيئات AWS و Azure و GCP والبيئات المحلية باستخدام أداة واحدة. يوفر هذا المرونة ويتجنب الاعتماد على بائع معين، وهو ميزة كبيرة على الأدوات الخاصة بالسحابة مثل CloudFormation أو قوالب ARM."
+        },
+        {
+          "question": "كيف تتعامل Terraform مع إدارة الحالة؟",
+          "answer": "تستخدم Terraform ملف حالة لربط الموارد الواقعية بتكوينك وتتبع البيانات الوصفية. نقوم بتطبيق خلفيات حالة بعيدة آمنة (مثل S3، Azure Blob Storage، Terraform Cloud) مع قفل لمنع التعارضات وضمان الاتساق في بيئات الفريق."
+        },
+        {
+          "question": "هل يمكن لـ Terraform إدارة البنية التحتية الموجودة؟",
+          "answer": "نعم، يمكن لـ Terraform استيراد موارد البنية التحتية الموجودة إلى ملف حالتها، مما يتيح لك إحضار إعدادك الحالي تحت إدارة IaC. تتطلب هذه العملية تخطيطًا دقيقًا لضمان التعيين الدقيق وتجنب التغييرات غير المقصودة."
+        },
+        {
+          "question": "ما هو انحراف Terraform وكيف تمنعه؟",
+          "answer": "يحدث انحراف Terraform عندما يتم إجراء تغييرات يدوية على البنية التحتية خارج Terraform، مما يتسبب في اختلاف الحالة الفعلية عن الحالة المحددة. نقوم بتطبيق أدوات اكتشاف الانحراف وعمليات CI/CD لتحديد ومعالجة الانحراف، مما يضمن أن بنيتك التحتية تتطابق دائمًا مع الكود الخاص بك."
+        },
+        {
+          "question": "كم يستغرق مشروع تنفيذ Terraform النموذجي؟",
+          "answer": "تختلف الجداول الزمنية للمشروع بناءً على تعقيد البنية التحتية ومستويات الأتمتة الحالية، وتتراوح عادةً من 4 إلى 12 أسبوعًا لبيئة متوسطة الحجم. قد يكون المشروع الصغير الجديد أسرع، بينما تستغرق عمليات الترحيل واسعة النطاق وقتًا أطول. نقدم خارطة طريق مفصلة بعد تقييمنا الأولي."
+        },
+        {
+          "question": "ما هي الآثار الأمنية لـ IaC؟",
+          "answer": "تعزز IaC الأمان بشكل كبير من خلال فرض السياسات باستمرار وتقليل الأخطاء البشرية. نقوم بدمج أدوات فحص الأمان (tfsec، Checkov) في خط أنابيب CI/CD الخاص بك لتحديد نقاط الضعف والتكوينات الخاطئة قبل النشر، مما يضمن الامتثال ووضعًا أمنيًا قويًا."
+        },
+        {
+          "question": "هل تقدمون دعمًا وصيانة مستمرة لبنية Terraform التحتية؟",
+          "answer": "نعم، تقدم PakSoft دعمًا شاملاً بعد التنفيذ، بما في ذلك المراقبة واستكشاف الأخطاء وإصلاحها والتحسين المستمر لتكوينات Terraform الخاصة بك. يمكننا أيضًا المساعدة في تحديثات الوحدات، وترقيات المزود، والتكيف مع خدمات السحابة المتطورة."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        },
+        {
+          "name": "Terraform Cloud",
+          "icon": "terraform"
+        },
+        {
+          "name": "Terragrunt",
+          "icon": "terragrunt"
+        },
+        {
+          "name": "tfsec",
+          "icon": "tfsec"
+        },
+        {
+          "name": "Checkov",
+          "icon": "checkov"
+        },
+        {
+          "name": "Atlantis",
+          "icon": "atlantis"
+        },
+        {
+          "name": "AWS",
+          "icon": "aws"
+        },
+        {
+          "name": "Azure",
+          "icon": "azure"
+        }
+      ]
+    }
+  }
+}

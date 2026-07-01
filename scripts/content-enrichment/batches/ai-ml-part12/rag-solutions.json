@@ -1,0 +1,638 @@
+{
+  "slug": "rag-solutions",
+  "en": {
+    "name": "RAG Solutions",
+    "shortDescription": "Build AI assistants that answer accurately using your internal data. We construct custom Retrieval-Augmented Generation solutions with citation tracking and semantic search.",
+    "fullDescription": "Large language models are powerful but prone to hallucinating facts when answering company-specific questions. We build custom Retrieval-Augmented Generation (RAG) solutions that connect LLMs to your private data sources, ensuring answers are 100% accurate and fully cited. By integrating vector databases like Pinecone, Weaviate, or Chroma with frameworks like LangChain and LlamaIndex, we build pipelines that automatically ingest, parse, chunk, and index corporate documents. Our hybrid search setups combine keyword matching with semantic vector search to fetch the most relevant contexts in milliseconds. We integrate strict metadata tracking to display clickable source citations for every answer, giving users total confidence in the output.",
+    "features": [
+      "Document Ingestion & Chunking Pipelines",
+      "Vector Database Setup (Pinecone, Weaviate)",
+      "Semantic Vector and Keyword Hybrid Search",
+      "Automated Source Citation & Page Tracking",
+      "Secure Multi-Source Knowledge Connections",
+      "Advanced Query Rewriting & Expansion",
+      "Strict Access Permissions and Data Privacy",
+      "Automatic Real-Time Database Index Sync"
+    ],
+    "benefits": [
+      "Eliminate AI hallucinations by grounding responses in data",
+      "Ensure answers are verified with clickable citations",
+      "Index millions of pages for millisecond search speed",
+      "Protect data privacy with role-based retrieval filters",
+      "Keep knowledge bases synced with storage directories",
+      "Connect Slack, Google Drive, and databases to AI"
+    ],
+    "metaTitle": "Custom RAG Solutions | Retrieval-Augmented Gen | PakSoft",
+    "metaDescription": "Build secure AI systems that answer questions using your own data. We design custom RAG pipelines with Weaviate and LangChain. Get a quote.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Data Sources Audit",
+          "description": "We review your company's data sources, formats, and API connections to plan the ingestion workflow."
+        },
+        {
+          "step": 2,
+          "title": "Ingestion & Processing Setup",
+          "description": "We configure secure extractors to read, clean, and split files (PDF, DOCX, CSV) into semantic chunks."
+        },
+        {
+          "step": 3,
+          "title": "Vector Ingest & Index",
+          "description": "We convert document chunks into high-quality vector embeddings and index them inside Pinecone or Weaviate."
+        },
+        {
+          "step": 4,
+          "title": "Hybrid Search Setup",
+          "description": "We implement hybrid search algorithms, combining BM25 keyword matching with dense vector retrieval for high relevance."
+        },
+        {
+          "step": 5,
+          "title": "Context Synthesis & LLM Setup",
+          "description": "We configure LangChain prompt templates to pass retrieved contexts to a secure LLM, showing clear citations."
+        },
+        {
+          "step": 6,
+          "title": "Evaluation & Sync Setup",
+          "description": "We run RAGAS evaluation tests to verify response truthfulness and set up cron jobs to sync updated files."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is RAG (Retrieval-Augmented Generation)?",
+          "answer": "RAG is a technique that retrieves relevant context from your company's private documents and feeds it to an LLM, ensuring the model answers based on factual data rather than generic public knowledge."
+        },
+        {
+          "question": "How do you guarantee that the AI won't hallucinate?",
+          "answer": "We enforce strict system prompt guardrails. If the retrieved context does not contain the answer, the AI is instructed to reply that it cannot find the information, preventing false claims."
+        },
+        {
+          "question": "What vector databases do you support?",
+          "answer": "We deploy solutions on Pinecone for managed cloud setups, Weaviate for hybrid enterprise environments, and Pgvector (PostgreSQL) or Chroma for local, lightweight deployments."
+        },
+        {
+          "question": "Can it index documents stored in Google Drive or SharePoint?",
+          "answer": "Yes, we build automated connector pipelines that pull documents from Google Drive, SharePoint, Notion, Confluence, and corporate databases securely."
+        },
+        {
+          "question": "How are source citations displayed?",
+          "answer": "We track document metadata throughout retrieval. Every generated answer includes numbered footnotes linking to the exact document name, page number, and original file link."
+        },
+        {
+          "question": "How do you handle document security and user permissions?",
+          "answer": "We implement retrieval-time filtering. The system checks the user's active permissions group (e.g., via OAuth) and only retrieves context from documents the user is authorized to read."
+        },
+        {
+          "question": "Do you support hybrid search?",
+          "answer": "Yes, we combine sparse keyword search (BM25) with dense semantic vector search. This ensures search queries find both exact matches (like serial numbers) and conceptual matches."
+        },
+        {
+          "question": "How often is the vector index updated?",
+          "answer": "We set up webhook endpoints that listen for document changes in real time, or run incremental synchronization tasks every hour to ensure the search index is always updated."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Pinecone",
+          "icon": "pinecone"
+        },
+        {
+          "name": "Weaviate",
+          "icon": "weaviate"
+        },
+        {
+          "name": "LangChain",
+          "icon": "langchain"
+        },
+        {
+          "name": "LlamaIndex",
+          "icon": "llamaindex"
+        },
+        {
+          "name": "OpenAI Embeddings",
+          "icon": "openai"
+        },
+        {
+          "name": "Chroma DB",
+          "icon": "chroma"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "RAG Çözümleri",
+    "shortDescription": "Kendi verilerinizi kullanarak doğru yanıtlar veren yapay zeka asistanları oluşturun. Atıf takibi ve anlamsal arama içeren özel RAG (Retrieval-Augmented Generation) çözümleri kuruyoruz.",
+    "fullDescription": "Büyük dil modelleri güçlüdür ancak şirkete özel soruları yanıtlarken gerçekleri uydurmaya (halüsinasyon) eğilimlidirler. LLM'leri özel veri kaynaklarınıza bağlayan, yanıtların %100 doğru ve kaynak atıflı olmasını sağlayan özel RAG (Retrieval-Augmented Generation) çözümleri oluşturuyoruz. Pinecone, Weaviate veya Chroma gibi vektör veritabanlarını LangChain ve LlamaIndex gibi çerçevelerle entegre ederek kurumsal belgeleri otomatik olarak alan, ayrıştıran, bölümlere ayıran ve indeksleyen veri hatları kuruyoruz. Hibrit arama sistemlerimiz, en alakalı bağlamları milisaniyeler içinde getirmek için anahtar kelime eşleştirmesini anlamsal vektör aramasıyla birleştirir. Her yanıt için tıklanabilir kaynak atıfları göstermek amacıyla katı meta veri takibi entegre ederek kullanıcıların çıktılara tam güven duymasını sağlıyoruz.",
+    "features": [
+      "Belge Alımı ve Bölümleme Veri Hatları",
+      "Vektör Veritabanı Kurulumu (Pinecone, Weaviate)",
+      "Anlamsal Vektör ve Anahtar Kelime Hibrit Araması",
+      "Otomatik Kaynak Atıf ve Sayfa Takibi",
+      "Güvenli Çok Kaynaklı Bilgi Bağlantıları",
+      "Gelişmiş Sorgu Yeniden Yazma ve Genişletme",
+      "Katı Erişim İzinleri ve Veri Gizliliği",
+      "Otomatik Real-Time Veri Dizini Senkronizasyonu"
+    ],
+    "benefits": [
+      "Yanıtları verilere dayandırarak yapay zeka halüsinasyonlarını ortadan kaldırın",
+      "Yanıtların tıklanabilir atıflarla doğrulandığından emin olun",
+      "Milisaniye düzeyinde arama hızı için milyonlarca sayfayı indeksleyin",
+      "Rol tabanlı erişim filtreleriyle veri gizliliğini koruyun",
+      "Bilgi bankalarını depolama dizinleriyle senkronize tutun",
+      "Slack, Google Drive ve veritabanlarını yapay zekaya bağlayın"
+    ],
+    "metaTitle": "Özel RAG Çözümleri | Retrieval-Augmented Gen | PakSoft",
+    "metaDescription": "Kendi verilerinizi kullanarak soruları yanıtlayan güvenli yapay zeka sistemleri kurun. Weaviate ve LangChain ile özel RAG hatları tasarlıyoruz. Teklif alın.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Veri Kaynakları Denetimi",
+          "description": "Veri alımı iş akışını planlamak için şirketinizin veri kaynaklarını, formatlarını ve API bağlantılarını inceliyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Veri Alımı & İşleme Kurulumu",
+          "description": "Dosyaları (PDF, DOCX, CSV) okumak, temizlemek ve anlamsal bölümlere ayırmak için güvenli çıkarıcılar yapılandırıyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Vektör Alımı & İndeksleme",
+          "description": "Belge bölümlerini yüksek kaliteli vektör gömmelerine dönüştürüyor ve bunları Pinecone veya Weaviate içinde indeksliyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Hibrit Arama Kurulumu",
+          "description": "Yüksek alaka düzeyi elde etmek amacıyla BM25 anahtar kelime eşleştirmesini yoğun vektör getirmeyle birleştiren hibrit arama algoritmaları uyguluyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Bağlam Sentezi & LLM Kurulumu",
+          "description": "Getirilen bağlamları güvenli bir LLM'ye iletmek ve net atıflar göstermek için LangChain prompt şablonlarını yapılandırıyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Değerlendirme & Eşitleme Kurulumu",
+          "description": "Yanıtlardaki doğruluğu teyit etmek için RAGAS değerlendirme testleri yapıyor ve güncellenen dosyaları eşitlemek için zamanlanmış görevler kuruyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "RAG (Retrieval-Augmented Generation) nedir?",
+          "answer": "RAG, şirketinizin özel belgelerinden ilgili bağlamı alan ve bunu bir LLM'ye besleyen bir tekniktir; modelin genel genel bilgilere güvenmek yerine gerçek verilere dayanarak yanıt vermesini sağlar."
+        },
+        {
+          "question": "Yapay zekanın halüsinasyon görmeyeceğini nasıl garanti ediyorsunuz?",
+          "answer": "Katı sistem promptu kuralları uyguluyoruz. Getirilen bağlam cevabı içermiyorsa, yapay zekaya bilgiyi bulamadığını yanıtlaması talimatı verilir, böylece yanlış iddialar önlenir."
+        },
+        {
+          "question": "Hangi vektör veritabanlarını destekliyorsunuz?",
+          "answer": "Yönetilen bulut kurulumları için Pinecone, hibrit kurumsal ortamlar için Weaviate ve yerel, hafif dağıtımlar için Pgvector (PostgreSQL) veya Chroma çözümleri sunuyoruz."
+        },
+        {
+          "question": "Google Drive veya SharePoint'te depolanan belgeleri indeksleyebilir mi?",
+          "answer": "Evet, belgeleri Google Drive, SharePoint, Notion, Confluence ve kurumsal veritabanlarından güvenli bir şekilde çeken otomatik konnektör hatları oluşturuyoruz."
+        },
+        {
+          "question": "Kaynak atıfları nasıl görüntüleniyor?",
+          "answer": "Geri getirme sırasında belge meta verilerini takip ediyoruz. Üretilen her yanıt, ilgili belge adına, sayfa numarasına ve orijinal dosya bağlantısına bağlanan numaralandırılmış dipnotlar içerir."
+        },
+        {
+          "question": "Belge güvenliğini ve kullanıcı izinlerini nasıl yönetiyorsunuz?",
+          "answer": "Geri getirme sırasında filtreleme uyguluyoruz. Sistem, kullanıcının aktif izinler grubunu (örneğin OAuth aracılığıyla) kontrol eder ve yalnızca kullanıcının okuma yetkisi olan belgelerden bağlam getirir."
+        },
+        {
+          "question": "Hibrit aramayı destekliyor musunuz?",
+          "answer": "Evet, seyrek anahtar kelime aramasını (BM25) yoğun anlamsal vektör aramasıyla birleştiriyoruz. Bu, arama sorgularının hem tam eşleşmeleri (seri numaraları gibi) hem de kavramsal eşleşmeleri bulmasını sağlar."
+        },
+        {
+          "question": "Vektör indeksi ne sıklıkla güncelleniyor?",
+          "answer": "Belge değişikliklerini gerçek zamanlı olarak dinleyen web kancası uç noktaları kuruyoruz veya arama indeksinin her zaman güncel olmasını sağlamak için her saat başı artımlı eşitleme görevleri çalıştırıyoruz."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Pinecone",
+          "icon": "pinecone"
+        },
+        {
+          "name": "Weaviate",
+          "icon": "weaviate"
+        },
+        {
+          "name": "LangChain",
+          "icon": "langchain"
+        },
+        {
+          "name": "LlamaIndex",
+          "icon": "llamaindex"
+        },
+        {
+          "name": "OpenAI Embeddings",
+          "icon": "openai"
+        },
+        {
+          "name": "Chroma DB",
+          "icon": "chroma"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "RAG-Lösungen",
+    "shortDescription": "Bauen Sie KI-Assistenten auf, die basierend auf Ihren eigenen Daten präzise antworten. Wir entwickeln kundenorientierte RAG-Systeme mit semantischer Suche.",
+    "fullDescription": "Große Sprachmodelle sind leistungsstark, neigen jedoch bei unternehmensspezifischen Fragen zu Halluzinationen. Wir entwickeln RAG-Lösungen (Retrieval-Augmented Generation), die LLMs mit Ihren privaten Datenquellen verbinden. So stellen wir sicher, dass Antworten zu 100% korrekt und belegbar sind. Durch die Einbindung von Vektordatenbanken wie Pinecone, Weaviate oder Chroma in Frameworks wie LangChain und LlamaIndex bauen wir Pipelines zur automatischen Datenaufnahme und -indexierung auf. Unsere hybride Suche kombiniert Schlüsselwort- und Vektorsuchen, um den passenden Kontext in Millisekunden abzurufen. Quellenangaben geben den Benutzern volles Vertrauen in die Antworten.",
+    "features": [
+      "Pipelines zur Datenaufnahme & -segmentierung",
+      "Vektordatenbank-Setup (Pinecone, Weaviate)",
+      "Hybride Suche (semantische Suche + Keyword BM25)",
+      "Automatisierte Quellennachweise & Seitentracking",
+      "Sichere Anbindung verschiedener Datenquellen",
+      "Erweiterte Algorithmen zur Abfrage-Optimierung",
+      "Strikte Zugriffsrechte & Datenschutzfilter",
+      "Automatische Echtzeit-Indexsynchronisation"
+    ],
+    "benefits": [
+      "KI-Halluzinationen durch Verankerung der Antworten in Daten ausschließen",
+      "Nachvollziehbarkeit der Antworten durch anklickbare Zitate sichern",
+      "Millionen Seiten in Millisekundenschnelle durchsuchen",
+      "Datenschutz durch rollenbasierte Abfragefilter wahren",
+      "Datenbestand der Wissensdatenbank stets synchron halten",
+      "Slack, Google Drive und Datenbanken an die KI anbinden"
+    ],
+    "metaTitle": "Maßgeschneiderte RAG-Lösungen | AI Search | PakSoft",
+    "metaDescription": "Bauen Sie sichere KI-Systeme auf, die Fragen anhand Ihrer eigenen Daten beantworten. Wir entwerfen RAG-Pipelines mit Weaviate und LangChain. Angebot anfordern.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Datenquellen-Audit",
+          "description": "Wir analysieren Ihre Datenquellen, Dateiformate und API-Schnittstellen, um den Ingestion-Workflow zu konzipieren."
+        },
+        {
+          "step": 2,
+          "title": "Setup von Ingestion & Verarbeitung",
+          "description": "Wir konfigurieren Konnektoren, um Dateien (PDF, DOCX, CSV) einzulesen, zu bereinigen und in Textabschnitte zu unterteilen."
+        },
+        {
+          "step": 3,
+          "title": "Vektorisierung & Indexierung",
+          "description": "Wir überführen Textabschnitte in Vektor-Embeddings und indexieren diese in Pinecone oder Weaviate."
+        },
+        {
+          "step": 4,
+          "title": "Hybride Suche konfigurieren",
+          "description": "Wir implementieren hybride Suchalgorithmen, die BM25-Schlüsselwortsuche mit Vektor-Abfragen für hohe Relevanz kombinieren."
+        },
+        {
+          "step": 5,
+          "title": "Kontextsynthese & LLM-Setup",
+          "description": "Wir entwerfen LangChain-Prompts zur Übergabe der abgerufenen Kontexte an ein sicheres LLM und formatieren Quellennachweise."
+        },
+        {
+          "step": 6,
+          "title": "Evaluierung & Sync-Setup",
+          "description": "Wir führen RAGAS-Qualitätstests durch, um die Korrektheit der Antworten zu prüfen, und richten automatische Sync-Cron-Jobs ein."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist RAG (Retrieval-Augmented Generation)?",
+          "answer": "RAG ist ein Verfahren, bei dem relevante Textpassagen aus privaten Unternehmensdokumenten abgerufen und an das LLM übergeben werden, damit die Antwort auf Fakten und nicht auf angelerntem Allgemeinwissen basiert."
+        },
+        {
+          "question": "Wie verhindern Sie, dass die KI falsche Antworten erfindet (halluziniert)?",
+          "answer": "Wir konfigurieren strikte Guardrails im System-Prompt. Wenn der abgerufene Kontext die Antwort nicht enthält, teilt die KI dem Benutzer dies mit, statt Fakten zu erfinden."
+        },
+        {
+          "question": "Welche Vektordatenbanken unterstützen Sie?",
+          "answer": "Wir nutzen Pinecone für cloudbasierte Lösungen, Weaviate für hybride Unternehmensumgebungen sowie Pgvector (PostgreSQL) oder Chroma für lokale, schlanke Installationen."
+        },
+        {
+          "question": "Können Dokumente aus Google Drive oder SharePoint eingebunden werden?",
+          "answer": "Ja, wir entwickeln automatisierte Konnektoren, die Dokumente aus Google Drive, SharePoint, Notion, Confluence und Ihren internen Datenbanken sicher synchronisieren."
+        },
+        {
+          "question": "Wie werden die Quellennachweise angezeigt?",
+          "answer": "Wir protokollieren die Metadaten während des Abrufs. Jede generierte Antwort enthält Fußnoten, die direkt auf den Dokumentennamen, die Seitenzahl und den Original-Link verweisen."
+        },
+        {
+          "question": "Wie wird der Datenschutz bei der Dokumentensuche gewahrt?",
+          "answer": "Wir filtern die Vektorsuche zur Laufzeit. Das System gleicht die Benutzerrechte (z. B. via OAuth) ab und ruft nur Kontexte aus Dokumenten ab, für die der Benutzer leseberechtigt ist."
+        },
+        {
+          "question": "Unterstützen Sie hybride Suchen?",
+          "answer": "Ja, wir kombinieren die klassische Keyword-Suche (BM25) mit semantischer Vektorsuche. So werden sowohl exakte Begriffe (wie Seriennummern) als auch thematische Übereinstimmungen gefunden."
+        },
+        {
+          "question": "Wie oft wird der Vektorindex aktualisiert?",
+          "answer": "Wir richten Webhooks ein, die bei Änderungen an Dokumenten sofort reagieren, oder konfigurieren stündliche Synchronisationsjobs, um den Suchindex aktuell zu halten."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Pinecone",
+          "icon": "pinecone"
+        },
+        {
+          "name": "Weaviate",
+          "icon": "weaviate"
+        },
+        {
+          "name": "LangChain",
+          "icon": "langchain"
+        },
+        {
+          "name": "LlamaIndex",
+          "icon": "llamaindex"
+        },
+        {
+          "name": "OpenAI Embeddings",
+          "icon": "openai"
+        },
+        {
+          "name": "Chroma DB",
+          "icon": "chroma"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "RAG سلوشنز (RAG Solutions)",
+    "shortDescription": "اپنے کاروباری ڈیٹا کو استعمال کر کے جوابات دینے والے اے آئی اسسٹنٹس بنائیں۔ ہم حوالہ جات اور سمانٹک سرچ کے ساتھ RAG سسٹمز بناتے ہیں۔",
+    "fullDescription": "بڑے زبان کے ماڈلز طاقتور تو ہیں لیکن کمپنی کے نجی سوالات پر غلط معلومات (hallucinations) دینے کی طرف مائل رہتے ہیں۔ ہم کسٹم Retrieval-Augmented Generation (RAG) کے سلوشنز بناتے ہیں جو LLMs کو آپ کے نجی ڈیٹا سے جوڑتے ہیں، جس سے سو فیصد درست اور حوالہ جات کے ساتھ جواب حاصل ہوتا ہے۔ Pinecone، Weaviate، یا Chroma جیسے ویکٹر ڈیٹا بیسز کو LangChain اور LlamaIndex کے ساتھ مربوط کر کے ہم ایسی خودکار پائپ لائنز بناتے ہیں جو کمپنی کی فائلوں کو سنکرونائز اور انڈیکس کرتی ہیں۔ ہمارا ہائبرڈ سرچ سسٹم سمانٹک سرچ اور کی ورڈ سرچ کو یکجا کر کے ملی سیکنڈز میں جواب لاتا ہے۔ ہر جواب کے نیچے فائل کا نام اور صفحہ نمبر بطور حوالہ دکھایا جاتا ہے۔",
+    "features": [
+      "دستاویزات کو اکٹھا اور اسکین کرنے کی پائپ لائنز",
+      "ویکٹر ڈیٹا بیس سیٹ اپ (Pinecone, Weaviate)",
+      "سمانٹک ویکٹر اور کی ورڈ ہائبرڈ سرچ",
+      "خودکار ذرائع کے حوالہ جات اور پیج ٹریکنگ",
+      "محفوظ ملٹی سورس نالج کنکشنز",
+      "جدید کیوری ری رائٹنگ اور توسیع",
+      "سخت رسائی کنٹرول اور ڈیٹا پرائیویسی",
+      "ریئل ٹائم ڈیٹا بیس انڈیکس سنکرونائزیشن"
+    ],
+    "benefits": [
+      "نجی ڈیٹا کا استعمال کر کے اے آئی کی غلط بیانی کو مکمل طور پر ختم کریں",
+      "کلک کرنے کے قابل حوالہ جات کے ساتھ جوابات کی تصدیق کریں",
+      "ملی سیکنڈز کی رفتار پر لاکھوں صفحات کی سرچ کو فعال کریں",
+      "صارف کی اجازتوں کے مطابق سرچ کے نتائج کو فلٹر کریں",
+      "نالج بیس کو کمپنی کے ڈیٹا فولڈرز سے اپ ٹو ڈیٹ رکھیں",
+      "سلیک، گوگل ڈرائیو اور ڈیٹا بیسز کو اے آئی سے جوڑیں"
+    ],
+    "metaTitle": "کسٹم RAG سلوشنز | اے آئی سرچ سسٹمز | PakSoft",
+    "metaDescription": "محفوظ اے آئی سسٹمز بنائیں جو آپ کے اپنے ڈیٹا سے سوالات کے جوابات دیں۔ ہم Weaviate اور LangChain کے ذریعے RAG پائپ لائنز بناتے ہیں۔ رابطہ کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "ڈیٹا ذرائع کا آڈٹ",
+          "description": "ہم فائل فارمیٹس اور APIs کا جائزہ لیتے ہیں تاکہ ڈیٹا اکٹھا کرنے کا فلو ڈیزائن کیا جا سکے۔"
+        },
+        {
+          "step": 2,
+          "title": "پروسیسنگ اور صفائی",
+          "description": "ہم فائلوں (PDF, DOCX) کو پڑھنے، صاف کرنے اور ان کے متنی ٹکڑے کرنے کے لیے ایکسٹریکٹرز سیٹ اپ کرتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "ویکٹر انڈیکسنگ",
+          "description": "ہم متنی ٹکڑوں کو ایمبیڈنگز میں تبدیل کرتے ہیں اور انہیں Pinecone یا Weaviate میں انڈیکس کرتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "ہائبرڈ سرچ کی تشکیل",
+          "description": "ہم BM25 کی ورڈ سرچ اور ویکٹر سرچ کو یکجا کرتے ہیں تاکہ انتہائی متعلقہ معلومات حاصل کی جا سکیں۔"
+        },
+        {
+          "step": 5,
+          "title": "ایل ایل ایم اور چیٹ انٹیگریشن",
+          "description": "ہم LangChain پرامپٹ ٹیمپلیٹس بناتے ہیں جو حاصل کردہ معلومات کو حوالہ جات کے ساتھ پیش کرتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "ٹیسٹنگ اور سنکرونائزیشن",
+          "description": "ہم جوابات کی درستگی ناپنے کے لیے ٹیسٹ چلاتے ہیں اور فائلوں کو اپ ڈیٹ کرنے کے لیے شیڈول سیٹ کرتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "آر اے جی (RAG) کیا ہے؟",
+          "answer": "RAG ایک ایسی تکنیک ہے جو کمپنی کی نجی دستاویزات سے متعلقہ معلومات حاصل کر کے ماڈل کو دیتی ہے، تاکہ ماڈل عام معلومات کے بجائے آپ کی دستاویزات کی بنیاد پر جواب دے۔"
+        },
+        {
+          "question": "آپ اس بات کی ضمانت کیسے دیتے ہیں کہ اے آئی غلط معلومات نہیں دے گا؟",
+          "answer": "ہم پرامپٹ میں سخت قوانین نافذ کرتے ہیں۔ اگر دستاویزات میں جواب موجود نہ ہو تو اے آئی واضح طور پر بتا دیتا ہے کہ معلومات دستیاب نہیں ہیں، جس سے غلط بیانی ختم ہو جاتی ہے۔"
+        },
+        {
+          "question": "آپ کن ویکٹر ڈیٹا بیسز کو سپورٹ کرتے ہیں؟",
+          "answer": "ہم کلاؤڈ کے لیے Pinecone، کمپنی کے سرورز کے لیے Weaviate، اور لوکل ہوسٹنگ کے لیے Pgvector یا Chroma کو سپورٹ کرتے ہیں۔"
+        },
+        {
+          "question": "کیا یہ گوگل ڈرائیو اور شیئر پوائنٹ سے جڑ سکتا ہے؟",
+          "answer": "جی ہاں، ہم خودکار کنیکٹرز بناتے ہیں جو گوگل ڈرائیو، شیئر پوائنٹ، نوشن اور کارپورٹ ڈیٹا بیس سے فائلیں سنکرونائز کرتے ہیں۔"
+        },
+        {
+          "question": "ذرائع کے حوالہ جات کیسے نظر آتے ہیں؟",
+          "answer": "ہر جواب کے نیچے نمبرز لکھے ہوتے ہیں جن پر کلک کر کے صارف اصل فائل کا نام، صفحہ نمبر اور اس کا لنک دیکھ سکتا ہے۔"
+        },
+        {
+          "question": "آپ ڈیٹا کی سیکیورٹی اور فائل کی اجازتوں کو کیسے سنبھالتے ہیں؟",
+          "answer": "ہم سرچ کے دوران فلٹر لگاتے ہیں۔ سسٹم صارف کے رول (جیسے OAuth کے ذریعے) کو چیک کرتا ہے اور صرف ان فائلوں سے معلومات لاتا ہے جنہیں دیکھنے کی صارف کو اجازت حاصل ہے۔"
+        },
+        {
+          "question": "کیا آپ ہائبرڈ سرچ کو سپورٹ کرتے ہیں؟",
+          "answer": "جی ہاں، ہم کی ورڈ سرچ (BM25) اور سمانٹک سرچ دونوں کو یکجا کرتے ہیں تاکہ فقروں کے ساتھ ساتھ کوڈز یا سیریل نمبرز کی تلاش بھی درست ہو۔"
+        },
+        {
+          "question": "ویکٹر انڈیکس کتنی بار اپ ڈیٹ ہوتا ہے؟",
+          "answer": "ہم ایسے سسٹمز بناتے ہیں جو فائل تبدیل ہونے پر فوری طور پر یا ہر گھنٹے بعد خود بخود انڈیکس کو اپ ڈیٹ کر دیتے ہیں تاکہ نئی معلومات دستیاب رہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Pinecone",
+          "icon": "pinecone"
+        },
+        {
+          "name": "Weaviate",
+          "icon": "weaviate"
+        },
+        {
+          "name": "LangChain",
+          "icon": "langchain"
+        },
+        {
+          "name": "LlamaIndex",
+          "icon": "llamaindex"
+        },
+        {
+          "name": "OpenAI Embeddings",
+          "icon": "openai"
+        },
+        {
+          "name": "Chroma DB",
+          "icon": "chroma"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "حلول توليد الاسترجاع المعزز RAG",
+    "shortDescription": "ابنِ مساعدي ذكاء اصطناعي يجيبون بدقة باستخدام بياناتك الداخلية. ننشئ حلول RAG مخصصة مع تتبع الاستشهادات بالمصادر والبحث الدلالي.",
+    "fullDescription": "النماذج اللغوية الكبيرة قوية ولكنها تميل إلى هلوسة الحقائق عند الإجابة عن أسئلة خاصة بالشركة. نحن نبني حلول توليد الاسترجاع المعزز (RAG) المخصصة التي تربط النماذج اللغوية بمصادر بياناتك الخاصة، مما يضمن دقة الإجابات بنسبة 100٪ ونسبها لمصادرها بالكامل. من خلال دمج قواعد البيانات المتجهة مثل Pinecone أو Weaviate أو Chroma مع أطر عمل مثل LangChain و LlamaIndex، نبني مسارات عمل تستورد المستندات وتحللها وتفهرسها تلقائياً. تجمع أنظمة البحث الهجين لدينا بين مطابقة الكلمات الرئيسية والبحث المتجه الدلالي لجلب السياق ذي الصلة في أجزاء من الثانية. ندمج تتبعاً صارماً للبيانات الوصفية لعرض استشهادات المصادر القابلة للنقر.",
+    "features": [
+      "مسارات استيراد وتقسيم المستندات تلقائياً",
+      "إعداد وتهيئة قواعد البيانات المتجهة (Pinecone, Weaviate)",
+      "بحث هجين يجمع بين الكلمات الرئيسية والمتجهات",
+      "تتبع آلية الاستشهادات وأرقام الصفحات للمصادر",
+      "توصيل آمن للمعلومات متعددة المصادر للأنظمة",
+      "إعادة كتابة وتوسيع الاستعلامات لتحسين النتائج",
+      "أذونات وصول صارمة وخصوصية كاملة للبيانات",
+      "مزامنة تلقائية وفورية لفهرس قواعد البيانات"
+    ],
+    "benefits": [
+      "القضاء على هلوسة الذكاء الاصطناعي بتأسيس الإجابات على البيانات",
+      "ضمان التحقق من صحة الإجابات عبر استشهادات قابلة للنقر",
+      "فهرسة ملايين الصفحات لسرعة بحث فائقة بأجزاء من الثانية",
+      "حماية خصوصية البيانات باستخدام فلاتر استرجاع قائمة على الأدوار",
+      "إبقاء قواعد المعرفة متزامنة تماماً مع مجلدات التخزين",
+      "ربط Slack و Google Drive وقواعد البيانات بالذكاء الاصطناعي"
+    ],
+    "metaTitle": "حلول RAG المخصصة | توليد الاسترجاع المعزز | PakSoft",
+    "metaDescription": "ابنِ أنظمة ذكاء اصطناعي آمنة تجيب عن الأسئلة باستخدام بياناتك الخاصة. نصمم مسارات RAG مع Weaviate و LangChain. احصل على عرض سعر.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تدقيق مصادر البيانات",
+          "description": "نراجع مصادر بيانات شركتك وتنسيقاتها واتصالات واجهات برمجة التطبيقات لتخطيط مسار الاستيراد."
+        },
+        {
+          "step": 2,
+          "title": "إعداد الاستيراد والمعالجة",
+          "description": "نقوم بتهيئة أدوات استخراج آمنة لقراءة الملفات وتنظيفها وتقسيمها (PDF, DOCX, CSV) إلى أجزاء دلالية."
+        },
+        {
+          "step": 3,
+          "title": "استيراد وفهرسة المتجهات",
+          "description": "نحول أجزاء المستندات إلى تمثيلات متجهية عالية الجودة ونفهرسها داخل Pinecone أو Weaviate."
+        },
+        {
+          "step": 4,
+          "title": "إعداد البحث الهجين",
+          "description": "ننفذ خوارزميات البحث الهجين، لدمج مطابقة الكلمات الرئيسية BM25 مع الاسترجاع المتجه الدلالي لضمان الدقة."
+        },
+        {
+          "step": 5,
+          "title": "صياغة السياق وإعداد نموذج اللغة",
+          "description": "نقوم بتهيئة قوالب مطالبات LangChain لتمرير السياقات المسترجعة إلى نموذج لغوي آمن مع إبراز الاستشهادات."
+        },
+        {
+          "step": 6,
+          "title": "التقييم وإعداد المزامنة",
+          "description": "نجري اختبارات تقييم RAGAS للتحقق من صدق الإجابات ونعد مهام دورية لمزامنة الملفات المحدثة."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما هو RAG (توليد الاسترجاع المعزز)؟",
+          "answer": "RAG هي تقنية تسترجع السياق ذي الصلة من مستندات شركتك الخاصة وتغذيها بنموذج لغوي كبير، مما يضمن إجابة النموذج بناءً على البيانات الفعلية وليس المعرفة العامة."
+        },
+        {
+          "question": "كيف تضمن عدم قيام الذكاء الاصطناعي بالهلوسة؟",
+          "answer": "نحن نفرض حواجز حماية صارمة لمطالبات النظام. إذا لم يحتوِ السياق المسترجع على الإجابة، يتم توجيه الذكاء الاصطناعي للإجابة بأنه لا يمكنه العثور على المعلومات."
+        },
+        {
+          "question": "ما هي قواعد البيانات المتجهة التي تدعمونها؟",
+          "answer": "ننشر الحلول على Pinecone للإعدادات السحابية المدارة، و Weaviate للمؤسسات الهجينة، و Pgvector (PostgreSQL) أو Chroma لعمليات النشر المحلية خفيفة الوزن."
+        },
+        {
+          "question": "هل يمكنه فهرسة المستندات المخزنة في Google Drive أو SharePoint؟",
+          "answer": "نعم، نبني مسارات موصلات تلقائية تسحب المستندات من Google Drive و SharePoint و Notion و Confluence وقواعد بيانات المؤسسة بأمان."
+        },
+        {
+          "question": "كيف يتم عرض الاستشهادات بالمصادر؟",
+          "answer": "نتتبع البيانات الوصفية للمستندات طوال عملية الاسترجاع. تتضمن كل إجابة يتم إنشاؤها حواشي سفلية مرقمة تربط باسم المستند الدقيق ورقم الصفحة والملف الأصلي."
+        },
+        {
+          "question": "كيف تتعامل مع أمان المستندات وصلاحيات المستخدمين؟",
+          "answer": "ننفذ التصفية أثناء وقت الاسترجاع. يتحقق النظام من مجموعة صلاحيات المستخدم النشطة (على سبيل المثال عبر OAuth) ويسترجع السياق فقط من المستندات المصرح له بقراءتها."
+        },
+        {
+          "question": "هل تدعمون البحث الهجين؟",
+          "answer": "نعم، نجمع بين البحث عن الكلمات الرئيسية (BM25) والبحث المتجه الدلالي الكثيف. يضمن ذلك عثور الاستعلامات على المطابقات التامة (مثل الأرقام التسلسلية) والمطابقات المفاهيمية."
+        },
+        {
+          "question": "كم مرة يتم تحديث الفهرس المتجه؟",
+          "answer": "نقوم بإعداد نقاط نهاية خطافات الويب (Webhooks) التي تستمع لتغييرات المستندات في الوقت الفعلي، أو تشغيل مهام مزامنة تدريجية كل ساعة لضمان تحديث الفهرس دائماً."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Pinecone",
+          "icon": "pinecone"
+        },
+        {
+          "name": "Weaviate",
+          "icon": "weaviate"
+        },
+        {
+          "name": "LangChain",
+          "icon": "langchain"
+        },
+        {
+          "name": "LlamaIndex",
+          "icon": "llamaindex"
+        },
+        {
+          "name": "OpenAI Embeddings",
+          "icon": "openai"
+        },
+        {
+          "name": "Chroma DB",
+          "icon": "chroma"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        }
+      ]
+    }
+  }
+}

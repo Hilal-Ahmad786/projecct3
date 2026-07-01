@@ -1,0 +1,638 @@
+{
+  "slug": "whatsapp-bots",
+  "en": {
+    "name": "WhatsApp Bots",
+    "shortDescription": "Engage global customers, automate support workflows, and drive direct sales on the world's most popular messaging platform using intelligent AI assistants fully integrated with your business APIs.",
+    "fullDescription": "WhatsApp bots bring conversational commerce and automated support directly to your customers' favorite app. We design and build enterprise-grade AI assistants that connect securely to the WhatsApp Business Platform (Cloud API). Utilizing large language models and conversational frameworks, our bots do more than reply with static menu templates—they understand free-form questions, resolve customer inquiries in real time, and process transactions. We link bots directly to your inventory databases, CRM, payment gateways, and shipping APIs to enable automated order tracking, appointment booking, and instant support. We implement human agent handoff logic so complex queries escalate seamlessly to your live team, improving customer satisfaction.",
+    "features": [
+      "Official WhatsApp Business Cloud API Integration",
+      "Interactive Message Templates & Quick Replies",
+      "AI Intent Parsing & Free-Form Conversational Logic",
+      "Seamless Live Agent Handoff Protocols",
+      "Database & CRM Synchronization (Salesforce, HubSpot)",
+      "Automated Payment Link & Checkout Integration",
+      "Multi-Media Support (Images, PDFs, Audio, Location)",
+      "Analytics Dashboards & Conversation Metrics"
+    ],
+    "benefits": [
+      "Reach customers instantly on the application they use daily",
+      "Reduce customer support call volumes by automating FAQ resolution",
+      "Increase sales conversions with automated product catalog browsing",
+      "Send high-engagement transaction updates like order confirmations",
+      "Ensure secure conversations with WhatsApp end-to-end encryption",
+      "Scale customer interactions 24/7 without adding support agents"
+    ],
+    "metaTitle": "WhatsApp Bot Development & AI Chatbots | PakSoft",
+    "metaDescription": "Automate support and sales. We build custom AI-powered WhatsApp bots integrated with your CRM and APIs. Contact us for a consultation today.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "API Account Setup",
+          "description": "We assist you in registering and verifying your WhatsApp Business Platform account through the Meta Developer Console. The sandbox environment is prepared for secure development."
+        },
+        {
+          "step": 2,
+          "title": "CRM & API Connection",
+          "description": "We link the messaging server to your internal CRM, databases, and transactional APIs. This ensures the bot can retrieve real-time customer data during chats."
+        },
+        {
+          "step": 3,
+          "title": "Flow Design & Prompting",
+          "description": "We map the conversational pathways, interactive buttons, and template messages for common user journeys. AI agents are prompted to handle free-text inputs professionally."
+        },
+        {
+          "step": 4,
+          "title": "Handoff Logic Integration",
+          "description": "We integrate human-in-the-loop fallback mechanisms with customer desk platforms like Zendesk or Twilio Flex. Complex queries escalate to live agents with full history logs."
+        },
+        {
+          "step": 5,
+          "title": "Testing & Compliance",
+          "description": "We test the conversational flows against edge inputs, language variations, and media uploads. We verify compliance with WhatsApp commerce policies and security standards."
+        },
+        {
+          "step": 6,
+          "title": "Launch & Optimization",
+          "description": "We deploy the webhook server to handle high-volume production traffic securely. Conversations are monitored via dashboards to refine prompts and improve automated resolution rates."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the difference between WhatsApp Business App and WhatsApp Business API?",
+          "answer": "The WhatsApp Business App is designed for small local businesses, running on a single phone with limited manual tools. The WhatsApp Business API is built for larger organizations, allowing custom software integrations, multiple agent logins, automated AI bot flows, and high-volume messaging. We specialize exclusively in deploying and integrating the official Business API."
+        },
+        {
+          "question": "Do we need our own server to host the WhatsApp bot?",
+          "answer": "We deploy the bot application on secure cloud servers using containerized microservices. You do not need to host any physical hardware on-premise to run the bot. We configure the webhook integrations so that Meta servers push customer messages directly to our secure cloud runtime environment."
+        },
+        {
+          "question": "Can the WhatsApp bot accept payments from customers?",
+          "answer": "Yes, we can integrate payment gateways like Stripe or local payment providers directly into the conversational flow. The bot can generate secure, dynamic checkout links or utilize WhatsApp's native payment features where available. This allows customers to browse, select, and pay for services within the chat."
+        },
+        {
+          "question": "How does the bot hand over a conversation to a human agent?",
+          "answer": "We build seamless handoff logic that monitors user intent or specific triggers, such as clicking a 'Talk to human' button. When triggered, the bot pauses its automated responses and routes the conversation to your customer service platform. Your live agents receive the complete chat transcript for context."
+        },
+        {
+          "question": "What are Meta's messaging fees for the WhatsApp Business API?",
+          "answer": "Meta charges for WhatsApp API usage based on 24-hour conversational sessions, categorizing them into utility, marketing, authentication, and service templates. The first 1,000 service conversations per month are completely free of charge. We help you optimize your conversation flows and template choices to minimize monthly Meta costs."
+        },
+        {
+          "question": "Can the bot send broadcast marketing messages to our customers?",
+          "answer": "Yes, you can send broadcast notifications to opted-in customers using pre-approved Meta message templates. These templates can contain personalized text, images, and quick-reply buttons to drive high engagement. We configure your campaigns to strictly adhere to WhatsApp's anti-spam policies to protect your business number."
+        },
+        {
+          "question": "How secure is the data processed by the WhatsApp bot?",
+          "answer": "Data processed by the bot is highly secure, leveraging WhatsApp's end-to-end encryption for all communication between the user and Meta. Our webhook servers process the messages using secure HTTPS protocols and encrypt sensitive customer data in transit. We ensure full compliance with standard GDPR data protection regulations."
+        },
+        {
+          "question": "How long does it take to get a WhatsApp bot live?",
+          "answer": "A standard WhatsApp bot taking care of FAQs and basic routing can be deployed within 4 to 6 weeks, including Meta account verification. More complex bots with deep database integrations and payment processing can take 8 to 12 weeks. We assist you through the entire Meta registration process."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "whatsapp",
+          "name": "WhatsApp Business API"
+        },
+        {
+          "icon": "nodedotjs",
+          "name": "Node.js"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        },
+        {
+          "icon": "redis",
+          "name": "Redis"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "Amazon Web Services"
+        },
+        {
+          "icon": "twilio",
+          "name": "Twilio"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "WhatsApp Botları",
+    "shortDescription": "Şirket API'lerinizle tam entegre akıllı yapay zeka asistanlarını kullanarak dünyanın en popüler mesajlaşma platformunda küresel müşterilerle etkileşim kurun, destek iş akışlarını otomatikleştirin ve satışları doğrudan artırın.",
+    "fullDescription": "WhatsApp botları, konuşmalı ticareti ve otomatik desteği doğrudan müşterilerinizin en sevdiği uygulamaya taşır. WhatsApp Business Platformuna (Bulut API) güvenli bir şekilde bağlanan kurumsal düzeyde yapay zeka asistanları tasarlıyor ve geliştiriyoruz. Büyük dil modellerini ve konuşma çerçevelerini kullanan botlarımız, yalnızca statik menü şablonlarıyla yanıt vermekle kalmaz; serbest metin sorularını anlar, müşteri sorularını gerçek zamanlı çözer ve işlemleri yürütür. Sipariş takibi, randevu alma ve anında destek sağlamak için botları doğrudan envanter veritabanlarınıza, CRM, ödeme geçitleri ve kargo API'lerinize bağlıyoruz. Canlı ekibinize sorunsuz aktarım için insan temsilciye geçiş mantığı uyguluyoruz.",
+    "features": [
+      "Resmi WhatsApp Business Bulut API Entegrasyonu",
+      "Etkileşimli Mesaj Şablonları ve Hızlı Yanıtlar",
+      "Yapay Zeka Niyet Analizi ve Serbest Metin Konuşma Mantığı",
+      "Sorunsuz Canlı Temsilciye Geçiş Protokolleri",
+      "Veritabanı ve CRM Senkronizasyonu (Salesforce, HubSpot)",
+      "Otomatik Ödeme Bağlantısı ve Kasa Entegrasyonu",
+      "Çoklu Ortam Desteği (Görsel, PDF, Ses, Konum)",
+      "Analitik Gösterge Panelleri ve Konuşma Metrikleri"
+    ],
+    "benefits": [
+      "Müşterilere günlük kullandıkları uygulama üzerinden anında ulaşın",
+      "Sıkça sorulan soruların çözümünü otomatikleştirerek çağrı yükünü azaltın",
+      "Otomatik ürün kataloğu tarama ile satış dönüşümlerini artırın",
+      "Sipariş onayları gibi yüksek etkileşimli işlem güncellemeleri gönderin",
+      "WhatsApp uçtan uca şifrelemesiyle güvenli konuşmalar sağlayın",
+      "Destek temsilcisi eklemeden müşteri etkileşimlerini 7/24 ölçeklendirin"
+    ],
+    "metaTitle": "WhatsApp Bot Geliştirme ve Yapay Zeka Chatbotları | PakSoft",
+    "metaDescription": "Destek ve satışları otomatikleştirin. CRM ve API'lerinizle entegre, yapay zeka destekli özel WhatsApp botları kuruyoruz. Bugün bizimle iletişime geçin.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "API Hesap Kurulumu",
+          "description": "Meta Developer Console üzerinden WhatsApp Business Platform hesabınızı kaydetmenize ve doğrulamanıza yardımcı oluyoruz. Sandbox ortamı güvenli geliştirme için hazırlanır."
+        },
+        {
+          "step": 2,
+          "title": "CRM ve API Bağlantısı",
+          "description": "Mesajlaşma sunucusunu dahili CRM, veritabanları ve işlem API'lerinize bağlıyoruz. Bu, botun sohbet sırasında gerçek zamanlı müşteri verilerini alabilmesini sağlar."
+        },
+        {
+          "step": 3,
+          "title": "Akış Tasarımı ve Yönlendirme",
+          "description": "Ortak kullanıcı yolculukları için konuşma yollarını, etkileşimli butonları ve şablon mesajları tasarlıyoruz. Yapay zeka ajanları, serbest metin girdilerini profesyonelce yönetecek şekilde yönlendirilir."
+        },
+        {
+          "step": 4,
+          "title": "Temsilciye Geçiş Entegrasyonu",
+          "description": "Zendesk veya Twilio Flex gibi müşteri masası platformlarıyla canlı temsilciye geçiş mekanizmaları kuruyoruz. Karmaşık sorular, tüm sohbet geçmişiyle birlikte canlı temsilcilere aktarılır."
+        },
+        {
+          "step": 5,
+          "title": "Test ve Uyumluluk",
+          "description": "Konuşma akışlarını uç girdilere, dil varyasyonlarına ve medya yüklemelerine karşı test ediyoruz. WhatsApp ticaret politikalarına ve güvenlik standartlarına uygunluğu doğrularız."
+        },
+        {
+          "step": 6,
+          "title": "Lansman ve Optimizasyon",
+          "description": "Yüksek hacimli üretim trafiğini güvenli bir şekilde yönetmek için webhook sunucusunu kuruyoruz. Konuşmalar, yönlendirmeleri iyileştirmek ve otomatik çözüm oranlarını artırmak için izlenir."
+        }
+      ],
+      "faq": [
+        {
+          "question": "WhatsApp Business Uygulaması ile WhatsApp Business API arasındaki fark nedir?",
+          "answer": "WhatsApp Business Uygulaması, sınırlı manuel araçlarla tek bir telefonda çalışan küçük yerel işletmeler için tasarlanmıştır. WhatsApp Business API ise özel yazılım entegrasyonlarına, çoklu temsilci girişlerine, otomatik yapay zeka bot akışlarına ve yüksek hacimli mesajlaşmaya izin veren daha büyük kuruluşlar için tasarlanmıştır. Biz sadece resmi Business API kurulumu yapıyoruz."
+        },
+        {
+          "question": "WhatsApp botunu barındırmak için kendi sunucumuza ihtiyacımız var mı?",
+          "answer": "Bot uygulamasını, konteynerli mikro hizmetler kullanarak güvenli bulut sunucularında barındırıyoruz. Botu çalıştırmak için şirketinizde herhangi bir fiziksel donanım barındırmanıza gerek yoktur. Meta sunucularının müşteri mesajlarını doğrudan güvenli bulut çalışma zamanı ortamımıza iletmesi için webhook entegrasyonlarını yapılandırıyoruz."
+        },
+        {
+          "question": "WhatsApp botu müşterilerden ödeme kabul edebilir mi?",
+          "answer": "Evet, Stripe veya yerel ödeme sağlayıcıları gibi ödeme geçitlerini doğrudan konuşma akışına entegre edebiliriz. Bot, güvenli ve dinamik ödeme bağlantıları oluşturabilir veya varsa WhatsApp'ın yerel ödeme özelliklerini kullanabilir. Bu, müşterilerin sohbet içinde hizmetleri aramasına, seçmesine ve ödeme yapmasına olanak tanır."
+        },
+        {
+          "question": "Bot bir konuşmayı insan temsilciye nasıl aktarır?",
+          "answer": "Kullanıcı niyetini veya 'Müşteri temsilcisiyle konuş' butonuna tıklamak gibi belirli tetikleyicileri izleyen sorunsuz bir geçiş mantığı oluşturuyoruz. Tetiklendiğinde, bot otomatik yanıtlarını durdurur ve konuşmayı müşteri hizmetleri platformunuza yönlendirir. Canlı temsilcileriniz bağlam için tüm sohbet geçmişini alır."
+        },
+        {
+          "question": "WhatsApp Business API için Meta'nın mesajlaşma ücretleri nelerdir?",
+          "answer": "Meta, WhatsApp API kullanımı için 24 saatlik konuşma oturumlarına göre ücret alır ve bunları hizmet, pazarlama, ve doğrulama şablonları olarak sınıflandırır. Her ay ilk 1.000 hizmet konuşması tamamen ücretsizdir. Aylık Meta maliyetlerini en aza indirmek için konuşma akışlarınızı ve şablon seçimlerinizi optimize etmenize yardımcı oluyoruz."
+        },
+        {
+          "question": "Bot, müşterilerimize toplu pazarlama mesajları gönderebilir mi?",
+          "answer": "Evet, önceden onaylanmış Meta mesaj şablonlarını kullanarak izin veren müşterilere toplu bildirimler gönderebilirsiniz. Bu şablonlar, etkileşimi artırmak için kişiselleştirilmiş metinler, görseller ve hızlı yanıt butonları içerebilir. İş numaranızı korumak için kampanyalarınızı WhatsApp'ın spam önleme politikalarına sıkı sıkıya uyacak şekilde yapılandırıyoruz."
+        },
+        {
+          "question": "WhatsApp botu tarafından işlenen veriler ne kadar güvenlidir?",
+          "answer": "Bot tarafından işlenen veriler, kullanıcı ile Meta arasındaki tüm iletişim için WhatsApp'ın uçtan uca şifrelemesini kullanarak son derece güvenlidir. Webhook sunucularımız mesajları güvenli HTTPS protokollerini kullanarak işler ve hassas müşteri verilerini aktarım sırasında şifreler. Standart GDPR ve KVKK veri koruma yönetmeliklerine tam uyum sağlıyoruz."
+        },
+        {
+          "question": "Bir WhatsApp botunun canlıya geçmesi ne kadar sürer?",
+          "answer": "SSS ve temel yönlendirmeleri yöneten standart bir WhatsApp botu, Meta hesap doğrulaması dahil 4 ila 6 hafta içinde devreye alınabilir. Derin veritabanı entegrasyonlarına ve ödeme işlemlerine sahip daha karmaşık botlar 8 ila 12 hafta sürebilir. Tüm Meta kayıt süreci boyunca size yardımcı oluyoruz."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "whatsapp",
+          "name": "WhatsApp Business API"
+        },
+        {
+          "icon": "nodedotjs",
+          "name": "Node.js"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        },
+        {
+          "icon": "redis",
+          "name": "Redis"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "Amazon Web Services"
+        },
+        {
+          "icon": "twilio",
+          "name": "Twilio"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "WhatsApp-Bots",
+    "shortDescription": "Binden Sie globale Kunden ein, automatisieren Sie Support-Workflows und steigern Sie den Umsatz auf der weltweit beliebtesten Messaging-Plattform mit intelligenten, API-integrierten KI-Assistenten.",
+    "fullDescription": "WhatsApp-Bots bringen Conversational Commerce und automatisierten Support direkt auf die bevorzugte App Ihrer Kunden. Wir entwerfen und bauen professionelle KI-Assistenten, die sich sicher mit der WhatsApp Business Platform (Cloud API) verbinden. Mithilfe großer Sprachmodelle und Konversations-Frameworks verstehen unsere Bots freiformulierte Fragen, lösen Kundenanfragen in Echtzeit und wickeln Transaktionen ab. Wir verknüpfen Bots direkt mit Ihren Bestandsdatenbanken, CRM, Zahlungsgateways und Versand-APIs, um eine automatische Bestellverfolgung, Terminbuchung und sofortigen Support zu ermöglichen. Zudem implementieren wir eine Übergabelogik an menschliche Agenten, damit komplexe Anfragen nahtlos an Ihr Live-Team weitergeleitet werden, was die Kundenzufriedenheit erheblich steigert.",
+    "features": [
+      "Offizielle WhatsApp Business Cloud API Integration",
+      "Interaktive Nachrichtenvorlagen & Quick Replies",
+      "KI-Intent-Parsing & Freitext-Konversationslogik",
+      "Nahtlose Übergabeprotokolle an Live-Agenten",
+      "Datenbank- & CRM-Synchronisation (Salesforce, HubSpot)",
+      "Automatisierte Zahlungslink- & Checkout-Integration",
+      "Multimedia-Support (Bilder, PDFs, Audio, Standort)",
+      "Analytik-Dashboards & Konversations-Metriken"
+    ],
+    "benefits": [
+      "Kunden sofort auf der täglich genutzten Anwendung erreichen",
+      "Supportanrufe durch automatisierte FAQ-Beantwortung reduzieren",
+      "Umsatzkonversionen durch automatisiertes Durchsuchen von Katalogen steigern",
+      "Transaktions-Updates mit hoher Interaktionsrate versenden",
+      "Sichere Konversationen durch WhatsApp-Ende-zu-Ende-Verschlüsselung garantieren",
+      "Kundeninteraktionen rund um die Uhr ohne zusätzliches Personal skalieren"
+    ],
+    "metaTitle": "WhatsApp-Bot-Entwicklung & KI-Chatbots | PakSoft",
+    "metaDescription": "Support und Vertrieb automatisieren. Wir bauen KI-gestützte WhatsApp-Bots mit CRM- und API-Anbindung. Kontaktieren Sie uns für ein Angebot.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "API-Konto-Einrichtung",
+          "description": "Wir unterstützen Sie bei der Registrierung und Verifizierung Ihres WhatsApp-Business-Kontos über die Meta Developer Console. Die Sandbox-Umgebung wird für eine sichere Entwicklung vorbereitet."
+        },
+        {
+          "step": 2,
+          "title": "CRM- & API-Verbindung",
+          "description": "Wir verbinden den Messaging-Server mit Ihrem internen CRM, Ihren Datenbanken und Transaktions-APIs. Dies stellt sicher, dass der Bot während des Chats Echtzeit-Kundendaten abrufen kann."
+        },
+        {
+          "step": 3,
+          "title": "Ablaufdesign & Prompting",
+          "description": "Wir entwerfen die Gesprächspfade, interaktiven Schaltflächen und Vorlagen für gängige Benutzerreisen. Die KI-Agenten werden so programmiert, dass sie Freitext-Eingaben professionell und kontextgerecht beantworten."
+        },
+        {
+          "step": 4,
+          "title": "Übergabelogik-Integration",
+          "description": "Wir integrieren Übergabemechanismen an Kundenservice-Plattformen wie Zendesk oder Twilio Flex. Komplexe Anfragen werden mit vollständigen Chat-Protokollen nahtlos an Live-Mitarbeiter übergeben."
+        },
+        {
+          "step": 5,
+          "title": "Testing & Compliance",
+          "description": "Wir testen die Konversationsabläufe auf Randfälle, Sprachvariationen und Medien-Uploads. Wir überprüfen die Einhaltung der WhatsApp-Handelsrichtlinien und der erforderlichen Sicherheitsstandards."
+        },
+        {
+          "step": 6,
+          "title": "Launch & Optimierung",
+          "description": "Wir stellen den Webhook-Server bereit, um ein hohes Produktionsvolumen sicher zu bewältigen. Die Gespräche werden über Dashboards überwacht, um Prompts zu verfeinern und Lösungsraten zu erhöhen."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist der Unterschied zwischen der WhatsApp Business App und der WhatsApp Business API?",
+          "answer": "Die WhatsApp Business App ist für kleine Unternehmen gedacht und läuft auf einem einzelnen Smartphone mit eingeschränkten manuellen Tools. Die WhatsApp Business API ist für größere Organisationen konzipiert und ermöglicht individuelle Software-Integrationen, mehrere Agenten-Logins, automatisierte KI-Bot-Abläufe und ein hohes Nachrichtenvolumen. Wir sind ausschließlich auf die offizielle API spezialisiert."
+        },
+        {
+          "question": "Benötigen wir einen eigenen Server, um den WhatsApp-Bot zu hosten?",
+          "answer": "Wir betreiben die Bot-Anwendung auf sicheren Cloud-Servern mittels containerisierter Mikrodienste. Sie müssen keine physische Hardware vor Ort bereitstellen, um den Bot auszuführen. Wir konfigurieren die Webhook-Integrationen so, dass die Meta-Server die Kundennachrichten direkt an unsere sichere Cloud-Laufzeitumgebung weiterleiten."
+        },
+        {
+          "question": "Kann der WhatsApp-Bot Zahlungen von Kunden akzeptieren?",
+          "answer": "Ja, wir können Zahlungsgateways wie Stripe oder lokale Zahlungsanbieter direkt in den Konversationsfluss einbinden. Der Bot kann sichere, dynamische Checkout-Links generieren oder die nativen Zahlungsfunktionen von WhatsApp nutzen, sofern diese verfügbar sind. Dadurch können Kunden Dienstleistungen direkt im Chat suchen, auswählen und bezahlen."
+        },
+        {
+          "question": "Wie übergibt der Bot ein Gespräch an einen menschlichen Mitarbeiter?",
+          "answer": "Wir entwickeln eine nahtlose Übergabelogik, die die Benutzerabsicht oder bestimmte Auslöser überwacht, wie das Klicken auf die Schaltfläche 'Mit Mitarbeiter sprechen'. Bei Auslösung stoppt der Bot die automatischen Antworten und leitet den Chat an Ihre Kundenservice-Plattform weiter. Ihre Live-Mitarbeiter erhalten den vollständigen Chatverlauf als Kontext."
+        },
+        {
+          "question": "Wie hoch sind die Messaging-Gebühren von Meta für die WhatsApp Business API?",
+          "answer": "Meta berechnet die Nutzung der WhatsApp API basierend auf 24-stündigen Konversationssitzungen, unterteilt in Marketing-, Hilfs-, Authentifizierungs- und Servicekategorien. Die ersten 1.000 Service-Konversationen pro Monat sind völlig kostenlos. Wir helfen Ihnen, Ihre Konversationsabläufe und Vorlagen zu optimieren, um die monatlichen Meta-Gebühren zu minimieren."
+        },
+        {
+          "question": "Kann der Bot Broadcast-Marketingnachrichten an unsere Kunden senden?",
+          "answer": "Ja, Sie können Broadcast-Benachrichtigungen an Kunden, die dem Empfang zugestimmt haben, über vorab genehmigte Meta-Nachrichtenvorlagen senden. Diese Vorlagen können personalisierten Text, Bilder und Schnellantwort-Schaltflächen enthalten, um die Interaktion zu maximieren. Wir konfigurieren Ihre Kampagnen streng nach den Anti-Spam-Richtlinien von WhatsApp, um Ihre Nummer zu schützen."
+        },
+        {
+          "question": "Wie sicher sind die vom WhatsApp-Bot verarbeiteten Daten?",
+          "answer": "Die vom Bot verarbeiteten Daten sind äußerst sicher, da WhatsApp eine Ende-zu-Ende-Verschlüsselung für die gesamte Kommunikation zwischen dem Benutzer und Meta nutzt. Unsere Webhook-Server verarbeiten die Nachrichten über sichere HTTPS-Protokolle und verschlüsseln sensible Kundendaten bei der Übertragung. Wir garantieren die vollständige Einhaltung der DSGVO-Datenschutzbestimmungen."
+        },
+        {
+          "question": "Wie lange dauert es, bis ein WhatsApp-Bot live geht?",
+          "answer": "Ein Standard-WhatsApp-Bot zur Beantwortung von FAQs und einfachen Weiterleitungen kann innerhalb von 4 bis 6 Wochen bereitgestellt werden, einschließlich der Verifizierung des Meta-Kontos. Komplexere Bots mit tiefen Datenbankintegrationen und Zahlungsabwicklungen dauern 8 bis 12 Wochen. Wir unterstützen Sie während des gesamten Meta-Registrierungsprozesses."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "whatsapp",
+          "name": "WhatsApp Business API"
+        },
+        {
+          "icon": "nodedotjs",
+          "name": "Node.js"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        },
+        {
+          "icon": "redis",
+          "name": "Redis"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "Amazon Web Services"
+        },
+        {
+          "icon": "twilio",
+          "name": "Twilio"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "واٹس ایپ بوٹس",
+    "shortDescription": "کاروباری APIs کے ساتھ مربوط ذہین AI اسسٹنٹس کا استعمال کرتے ہوئے دنیا کے سب سے مقبول میسجنگ پلیٹ فارم پر عالمی صارفین کو راغب کریں، سپورٹ ورک فلوز کو خودکار بنائیں اور براہ راست فروخت بڑھائیں۔",
+    "fullDescription": "واٹس ایپ بوٹس گفتگو پر مبنی تجارت اور خودکار سپورٹ کو براہ راست آپ کے صارفین کی پسندیدہ ایپ پر لاتے ہیں۔ ہم انٹرپرائز گریڈ AI اسسٹنٹس ڈیزائن اور بناتے ہیں جو واٹس ایپ بزنس پلیٹ فارم (Cloud API) سے محفوظ طریقے سے جڑتے ہیں۔ بڑے لسانی ماڈلز اور گفتگو کے فریم ورکس کا استعمال کرتے ہوئے، ہمارے بوٹس مینو شابلونز سے ہٹ کر آزادانہ سوالات کو سمجھتے ہیں، کسٹمر کے مسائل کو ریئل ٹائم میں حل کرتے ہیں، اور لین دین کو مکمل کرتے ہیں۔ ہم بوٹس کو براہ راست آپ کے انوینٹری ڈیٹا بیسز، CRM، پیمنٹ گیٹ ویز اور شپنگ APIs سے جوڑتے ہیں تاکہ خودکار آرڈر ٹریکنگ، اپائنٹمنٹ بکنگ اور فوری سپورٹ ممکن ہو۔ ہم لائیو ایجنٹ ہینڈ اوور لاجک لاگو کرتے ہیں تاکہ پیچیدہ سوالات خودکار طور پر آپ کی لائیو ٹیم کو منتقل ہو جائیں۔",
+    "features": [
+      "سرکاری واٹس ایپ بزنس کلاؤڈ API انٹیگریشن",
+      "انٹرایکٹو میسج ٹیمپلیٹس اور کوئک ریپلائز",
+      "AI نیت کا تجزیہ اور آزاد گفتگو کی لاجک",
+      "لائیو ایجنٹ کو گفتگو کی منتقلی کے پروٹوکولز",
+      "ڈیٹا بیس اور CRM سنکرونائزیشن (Salesforce, HubSpot)",
+      "خودکار پیمنٹ لنک اور چیک آؤٹ انٹیگریشن",
+      "ملٹی میڈیا سپورٹ (تصاویر، PDFs، آڈیو، لوکیشن)",
+      "اینالیٹکس ڈیش بورڈز اور کنورسیشن میٹرکس"
+    ],
+    "benefits": [
+      "روزمرہ استعمال ہونے والی ایپلی کیشن پر صارفین تک فوری رسائی حاصل کریں",
+      "SSS کو خودکار حل کر کے کسٹمر سپورٹ کالز کے دباؤ کو کم کریں",
+      "خودکار مصنوعات کے کیٹلاگ کے ذریعے فروخت کو فروغ دیں",
+      "آرڈر کی تصدیق جیسے اعلیٰ مشغولیت والے پیغامات بھیجیں",
+      "واٹس ایپ اینڈ ٹو اینڈ انکرپشن کے ساتھ محفوظ گفتگو یقینی بنائیں",
+      "اضافی عملے کے بغیر کسٹمر سپورٹ کو 24/7 اسکیل کریں"
+    ],
+    "metaTitle": "واٹس ایپ بوٹ ڈیولپمنٹ اور AI چیٹ بوٹس | PakSoft",
+    "metaDescription": "سپورٹ اور فروخت کو خودکار بنائیں۔ ہم CRM اور APIs کے ساتھ مربوط کسٹم AI واٹس ایپ بوٹس بناتے ہیں۔ مشاورت کے لیے آج ہی ہم سے رابطہ کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "API اکاؤنٹ سیٹ اپ",
+          "description": "ہم Meta Developer Console کے ذریعے واٹس ایپ بزنس پلیٹ فارم اکاؤنٹ کو رجسٹر اور ویریفائی کرنے میں مدد کرتے ہیں۔ محفوظ ڈیولپمنٹ کے لیے سینڈ باکس تیار کیا جاتا ہے۔"
+        },
+        {
+          "step": 2,
+          "title": "CRM اور API کنکشن",
+          "description": "ہم میسجنگ سرور کو آپ کے اندرونی CRM، ڈیٹا بیس اور ٹرانزیکشنل APIs سے جوڑتے ہیں۔ یہ یقینی بناتا ہے کہ بوٹ گفتگو کے دوران ریئل ٹائم کسٹمر ڈیٹا حاصل کر سکے۔"
+        },
+        {
+          "step": 3,
+          "title": "فلو ڈیزائن اور پرامپٹنگ",
+          "description": "ہم عام صارفین کے لیے گفتگو کے راستے، بٹنز اور شیمپلیٹس ڈیزائن کرتے ہیں۔ AI ایجنٹس کو اس طرح پرامپٹ کیا جاتا ہے کہ وہ آزادانہ سوالات کا پیشہ ورانہ جواب دیں۔"
+        },
+        {
+          "step": 4,
+          "title": "ہینڈ اوور لاجک انٹیگریشن",
+          "description": "ہم Zendesk یا Twilio Flex gibi کسٹمر ڈیسک پلیٹ فارمز کے ساتھ انسانی ایجنٹ کی منتقلی کا نظام مربوط کرتے ہیں۔ پیچیدہ سوالات گفتگو کی ہسٹری کے ساتھ منتقل ہوتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "ٹیسٹنگ اور تعمیل",
+          "description": "ہم گفتگو کے فلو کو مختلف زبانوں، لہجوں اور میڈیا فائلز پر ٹیسٹ کرتے ہیں۔ ہم واٹس ایپ کی تجارتی پالیسیوں اور سیکیورٹی معیارات کی تعمیل کی تصدیق کرتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "لانچ اور آپٹیمائزیشن",
+          "description": "ہم بھاری ٹریفک کو محفوظ طریقے سے سنبھالنے کے لیے ویب ہک سرور قائم کرتے ہیں۔ گفتگو کی کارکردگی اور خودکار حل کی شرح کو ڈیش بورڈز سے مانیٹر کیا جاتا ہے۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "واٹس ایپ بزنس ایپ اور واٹس ایپ بزنس API میں کیا فرق ہے؟",
+          "answer": "واٹس ایپ بزنس ایپ چھوٹے کاروباروں کے لیے ہے، جو محدود ٹولز کے ساتھ ایک فون پر چلتی ہے۔ واٹس ایپ بزنس API بڑی تنظیموں کے لیے ہے، جو کسٹم سافٹ ویئر انٹیگریشنز، متعدد ایجنٹ لاگ انز، خودکار AI بوٹ فلو اور بھاری پیغامات بھیجنے کی سہولت فراہم کرتی ہے۔ ہم صرف سرکاری Business API پر کام کرتے ہیں۔"
+        },
+        {
+          "question": "کیا ہمیں واٹس ایپ بوٹ کی میزبانی کے لیے اپنے سرور کی ضرورت ہے؟",
+          "answer": "ہم کنٹینرائزڈ مائیکرو سروسز کا استعمال کرتے ہوئے محفوظ کلاؤڈ سرورز پر بوٹ کو ہوسٹ کرتے ہیں۔ آپ کو اپنے پاس کسی فزیکل ہارڈ ویئر کی ضرورت نہیں ہے۔ ہم ویب ہک انٹیگریشنز کو اس طرح ترتیب دیتے ہیں کہ Meta سرورز صارفین کے پیغامات کو ہمارے محفوظ کلاؤڈ انوائرمنٹ میں بھیجیں۔"
+        },
+        {
+          "question": "کیا واٹس ایپ بوٹ صارفین سے ادائیگیاں قبول کر سکتا ہے؟",
+          "answer": "جی ہاں، ہم گفتگو کے بہاؤ میں Stripe یا مقامی ادائیگی کے ذرائع کو مربوط کر سکتے ہیں۔ بوٹ محفوظ اور متحرک چیک آؤٹ لنکس بنا سکتا ہے یا واٹس ایپ کی اپنی ادائیگی کی خصوصیات استعمال کر سکتا ہے۔ اس سے صارفین چیٹ کے اندر ہی خدمات دیکھ اور خرید سکتے ہیں۔"
+        },
+        {
+          "question": "بوٹ گفتگو کو انسانی نمائندے کو کیسے منتقل کرتا ہے؟",
+          "answer": "ہم ایک بہترین ہینڈ اوور لاجک بناتے ہیں جو صارف کی نیت یا بٹن پر کلک کرنے کو مانیٹر کرتی ہے۔ متحرک ہونے پر، بوٹ اپنی گفتگو کو روک دیتا ہے اور چیٹ کو آپ کے کسٹمر سپورٹ پلیٹ فارم پر بھیج دیتا ہے۔ آپ کے لائیو ایجنٹس کو گفتگو کا ریکارڈ فراہم کیا جاتا ہے۔"
+        },
+        {
+          "question": "واٹس ایپ بزنس API کے لیے Meta کی فیسیں کیا ہیں؟",
+          "answer": "Meta واٹس ایپ API کے استعمال کے لیے 24 گھنٹے کے سیشن کی بنیاد پر فیس چارج کرتا ہے، جس میں سروس، مارکیٹنگ، اور تصدیقی پیغامات شامل ہیں۔ ہر ماہ پہلی 1,000 سروس گفتگو بالکل مفت ہوتی ہے۔ ہم ماہانہ اخراجات کو کم کرنے کے لیے آپ کے گفتگو کے بہاؤ کو بہتر کرتے ہیں۔"
+        },
+        {
+          "question": "کیا بوٹ ہمارے گاہکوں کو مارکیٹنگ کے پیغامات بھیج سکتا ہے؟",
+          "answer": "جی ہاں، آپ پہلے سے منظور شدہ Meta میسج ٹیمپلیٹس کا استعمال کرتے ہوئے منتخب صارفین کو نوٹیفیکیشنز بھیج سکتے ہیں۔ ان ٹیمپلیٹس میں تصاویر اور فوری جواب کے بٹن شامل ہو سکتے ہیں۔ ہم آپ کی مہمات کو واٹس ایپ کی پالیسیوں کے مطابق ترتیب دیتے ہیں تاکہ آپ کا نمبر محفوظ رہے۔"
+        },
+        {
+          "question": "واٹس ایپ بوٹ کے ذریعے پروسیس ہونے والا ڈیٹا کتنا محفوظ ہے؟",
+          "answer": "بٹ کے ذریعے پروسیس ہونے والا ڈیٹا واٹس ایپ کی اینڈ ٹو اینڈ انکرپشن کی وجہ سے انتہائی محفوظ ہوتا ہے۔ ہمارے ویب ہک سرورز پیغامات کو محفوظ HTTPS پروٹوکول کے ذریعے منتقل کرتے ہیں اور کسٹمر ڈیٹا کو انکرپٹ کرتے ہیں۔ ہم تمام حفاظتی اور GDPR قوانین کی مکمل تعمیل کو یقینی بناتے ہیں۔"
+        },
+        {
+          "question": "واٹس ایپ بوٹ کو لائیو کرنے میں کتنا وقت لگتا ہے؟",
+          "answer": "SSS اور temel yönlendirmeleri yöneten standart bir WhatsApp botu, Meta hesap doğrulaması dahil 4 ila 6 hafta içinde devreye alınabilir. Derin veritabanı entegrasyonlarına ve ödeme işlemlerine sahip daha karmaşık botlar 8 ila 12 hafta sürebilir. Tüm Meta kayıt süreci boyunca size yardımcı oluyoruz."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "whatsapp",
+          "name": "WhatsApp Business API"
+        },
+        {
+          "icon": "nodedotjs",
+          "name": "Node.js"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        },
+        {
+          "icon": "redis",
+          "name": "Redis"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "Amazon Web Services"
+        },
+        {
+          "icon": "twilio",
+          "name": "Twilio"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "بوتات واتساب",
+    "shortDescription": "تفاعل مع العملاء العالميين، وأتمت عمليات الدعم، وزد من المبيعات المباشرة على منصة المراسلة الأكثر شعبية في العالم باستخدام مساعدين أذكياء مدمجين بالكامل مع واجهات برمجة التطبيقات الخاصة بمؤسستك.",
+    "fullDescription": "تجلب بوتات واتساب التجارة التفاعلية والدعم المؤتمت مباشرة إلى التطبيق المفضل لعملائك. نحن نصمم ونبني مساعدين أذكياء على مستوى المؤسسات يتصلون بأمان مع منصة واتساب للأعمال (Cloud API). باستخدام نماذج اللغة الكبيرة وأطر عمل المحادثة، تقوم البوتات بفهم الأسئلة الحرة وحل استفسارات العملاء في الوقت الفعلي وإتمام المعاملات. نربط البوتات مباشرة بقواعد بيانات المخزون، ونظام CRM، وبوابات الدفع، وواجهات برمجة تطبيقات الشحن لتمكين تتبع الطلبات، وحجز المواعيد. ندمج منطق نقل المحادثات إلى الموظفين البشريين بحيث يتم تصعيد الاستفسارات المعقدة بسلاسة إلى فريقك المباشر، مما يعزز رضا العملاء.",
+    "features": [
+      "التكامل الرسمي مع واجهة واتساب للأعمال (Cloud API)",
+      "قوالب الرسائل التفاعلية والردود السريعة المخصصة",
+      "تحليل النوايا بالذكاء الاصطناعي ومنطق المحادثة الحرة",
+      "بروتوكولات نقل المحادثات السلسة للموظفين البشريين",
+      "مزامنة البيانات ونظام CRM (Salesforce, HubSpot)",
+      "تكامل روابط الدفع المؤتمتة وعمليات الخروج",
+      "دعم الوسائط المتعددة (الصور، PDFs، الصوت، الموقع)",
+      "لوحات تحكم التحليلات ومقاييس المحادثات النشطة"
+    ],
+    "benefits": [
+      "الوصول إلى العملاء فوراً على التطبيق الذي يستخدمونه يومياً",
+      "تقليل ضغط المكالمات عبر أتمتة حل الأسئلة الشائعة",
+      "زيادة مبيعاتك من خلال تصفح كتالوج المنتجات المؤتمت",
+      "إرسال تحديثات المعاملات مثل تأكيدات الطلبات تلقائياً",
+      "ضمان أمن المحادثات باستخدام تشفير واتساب بين الطرفين",
+      "توسيع تفاعلات العملاء على مدار الساعة دون زيادة موظفي الدعم"
+    ],
+    "metaTitle": "تطوير بوتات واتساب وروبوتات الدردشة | PakSoft",
+    "metaDescription": "أتمت الدعم والمبيعات. نحن نبني بوتات واتساب مخصصة بالذكاء الاصطناعي مدمجة مع نظام CRM وواجهات برمجة التطبيقات الخاصة بك. اتصل بنا اليوم للحصول على استشارة.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "إعداد حساب الـ API",
+          "description": "نساعدك في تسجيل وتوثيق حساب منصة واتساب للأعمال عبر Meta Developer Console. يتم إعداد بيئة التطوير التجريبية لبدء البرمجة الآمنة."
+        },
+        {
+          "step": 2,
+          "title": "الاتصال بـ CRM وقواعد البيانات",
+          "description": "نربط خادم المراسلة بنظام CRM الداخلي وقواعد البيانات وواجهات العمليات. يضمن ذلك قدرة البوت على استرداد بيانات العملاء المحدثة أثناء الدردشة."
+        },
+        {
+          "step": 3,
+          "title": "تصميم التدفق والتوجيه",
+          "description": "نحدد مسارات المحادثة والأزرار التفاعلية وقوالب الرسائل لرحلات المستخدم الشائعة. يتم توجيه وكلاء الذكاء الاصطناعي للتعامل مع النصوص الحرة باحترافية."
+        },
+        {
+          "step": 4,
+          "title": "تكامل منطق النقل للموظفين",
+          "description": "ندمج آليات التصعيد للموظفين البشريين مع منصات خدمة العملاء مثل Zendesk أو Twilio Flex. يتم نقل الاستفسارات المعقدة مع سجل المحادثات الكامل."
+        },
+        {
+          "step": 5,
+          "title": "الاختبار والامتثال",
+          "description": "نختبر تدفقات المحادثة ضد المدخلات غير المتوقعة واختلافات اللغات وتحميل الوسائط. نتحقق من الامتثال لسياسات واتساب التجارية ومعايير الأمن المعتمدة."
+        },
+        {
+          "step": 6,
+          "title": "الإطلاق والتحسين",
+          "description": "ننشر خادم الويب لاستقبال حركة مرور البيانات الكثيفة في بيئة الإنتاج بأمان. تتم مراقبة المحادثات لتحسين التوجيهات وزيادة معدلات الحل التلقائي."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما الفرق بين تطبيق واتساب للأعمال وواجهة واتساب للأعمال (WhatsApp Business API)؟",
+          "answer": "تم تصميم تطبيق واتساب للأعمال للمشاريع المحلية الصغيرة، حيث يعمل على هاتف واحد بأدوات يدوية محدودة. أما واجهة واتساب للأعمال فتستهدف المؤسسات الكبيرة، وتتيح تكامل البرمجيات، وتسجيل دخول موظفين متعددين، وتشغيل بوتات الذكاء الاصطناعي التلقائية، وإرسال الرسائل الكثيفة. نحن متخصصون فقط في واجهة برمجة التطبيقات الرسمية."
+        },
+        {
+          "question": "هل نحتاج إلى خادم خاص بنا لاستضافة بوت واتساب؟",
+          "answer": "نحن ننشر تطبيق البوت على خوادم سحابية آمنة باستخدام خدمات برمجية مصغرة ومعبأة. لا تحتاج إلى استضافة أي أجهزة مادية في موقعك لتشغيل البوت. نقوم بتهيئة تكاملات ويب هوك بحيث تقوم خوادم Meta بإرسال رسائل العملاء مباشرة إلى خوادمنا السحابية الآمنة."
+        },
+        {
+          "question": "هل يمكن لبوت واتساب قبول المدفوعات من العملاء؟",
+          "answer": "نعم، يمكننا دمج بوابات الدفع مثل Stripe أو موفري الدفع المحليين مباشرة في تدفق المحادثة. يمكن للبوت إنشاء روابط دفع آمنة وديناميكية أو استخدام ميزات الدفع الأصلية في واتساب إذا كانت متوفرة. يتيح ذلك للعملاء تصفح الخدمات واختيارها والدفع داخل الشات."
+        },
+        {
+          "question": "كيف ينقل البوت المحادثة إلى موظف بشري؟",
+          "answer": "نبني منطق نقل سلس يراقب نية المستخدم أو محفزات محددة مثل النقر فوق زر 'التحدث إلى موظف'. عند التفعيل، يوقف البوت ردوده التلقائية ويوجه المحادثة إلى منصة خدمة العملاء الخاصة بك. يتلقى موظفوك سجل الدردشة الكامل لفهم السياق."
+        },
+        {
+          "question": "ما هي رسوم المراسلة الخاصة بشركة Meta لواجهة واتساب للأعمال؟",
+          "answer": "تحتسب شركة Meta رسوماً بناءً على جلسات المحادثة لمدة 24 ساعة، وتصنفها إلى فئات مثل التسويق، والخدمات، والمصادقة. أول 1,000 محادثة خدمة شهرياً مجانية تماماً. نساعدك في تحسين تدفقات المحادثة واختيار القوالب لتقليل التكاليف الشهرية المدفوعة لشركة Meta."
+        },
+        {
+          "question": "هل يمكن للبوت إرسال رسائل تسويقية جماعية لعملائنا؟",
+          "answer": "نعم، يمكنك إرسال إشعارات جماعية للعملاء المشتركين باستخدام قوالب رسائل معتمدة مسبقاً من Meta. يمكن أن تحتوي هذه القوالب على نصوص وصور وأزرار ردود سريعة لزيادة التفاعل. نقوم بتهيئة حملاتك للالتزام بسياسات واتساب لمكافحة الرسائل المزعجة لحماية رقمك."
+        },
+        {
+          "question": "ما مدى أمان البيانات التي يتم معالجتها بواسطة البوت؟",
+          "answer": "البيانات التي يعالجها البوت آمنة للغاية، حيث تستخدم تشفير واتساب بين الطرفين لجميع الاتصالات بين المستخدم و Meta. تقوم خوادم الويب هوك الخاصة بنا بمعالجة الرسائل باستخدام بروتوكولات HTTPS الآمنة وتشفير بيانات العملاء الحساسة أثناء النقل. نحن نضمن الامتثال الكامل لقوانين GDPR."
+        },
+        {
+          "question": "كم من الوقت يستغرق إطلاق بوت واتساب بالكامل؟",
+          "answer": "يمكن نشر بوت واتساب قياسي يجيب على الأسئلة الشائعة ويوجه العملاء في غضون 4 إلى 6 أسابيع، بما في ذلك توثيق حساب Meta. قد تستغرق البوتات الأكثر تعقيداً ذات التكاملات العميقة والمدفوعات من 8 إلى 12 أسبوعاً. نحن نساعدك طوال عملية التسجيل."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "whatsapp",
+          "name": "WhatsApp Business API"
+        },
+        {
+          "icon": "nodedotjs",
+          "name": "Node.js"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        },
+        {
+          "icon": "redis",
+          "name": "Redis"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "Amazon Web Services"
+        },
+        {
+          "icon": "twilio",
+          "name": "Twilio"
+        }
+      ]
+    }
+  }
+}

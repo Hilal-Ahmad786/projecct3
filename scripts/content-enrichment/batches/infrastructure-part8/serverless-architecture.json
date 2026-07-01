@@ -1,0 +1,278 @@
+{
+  "slug": "serverless-architecture",
+  "en": {
+    "name": "Serverless Architecture",
+    "shortDescription": "Build scalable, cost-effective applications with serverless. Using AWS Lambda, Vercel, and edge computing, we ship apps that auto-scale from zero to millions of requests and bill only for what you use.",
+    "fullDescription": "Serverless lets you ship features instead of managing servers. We design and build applications on AWS Lambda, Vercel Edge Functions, Cloudflare Workers, and managed services that scale automatically from zero to millions of requests, with no idle capacity to pay for. Done well, serverless slashes operational overhead and cost; done badly, it brings cold starts, runaway bills, and debugging pain. We bring the architecture discipline that avoids those traps: right-sized functions, event-driven design, managed data stores, observability from day one, and guardrails on cost and concurrency. Whether you are building a new product, an API backend, or moving spiky workloads off always-on servers, we deliver a serverless system that is fast, resilient, and genuinely cheaper to run.",
+    "features": [
+      "AWS Lambda & edge function development",
+      "Event-driven and API backend design",
+      "Auto-scaling from zero to peak load",
+      "Managed data stores (DynamoDB, RDS, S3)",
+      "Cold-start mitigation and performance tuning",
+      "Infrastructure as Code (Serverless Framework, CDK)",
+      "Cost monitoring and concurrency guardrails",
+      "Observability, tracing, and structured logging"
+    ],
+    "benefits": [
+      "Pay only for actual usage, not idle servers",
+      "Scale to traffic spikes automatically",
+      "Eliminate server patching and maintenance",
+      "Ship features faster with less infrastructure code",
+      "Improve resilience with managed, redundant services",
+      "Lower total cost of ownership for spiky workloads"
+    ],
+    "metaTitle": "Serverless Architecture Services | PakSoft",
+    "metaDescription": "Build scalable, cost-effective serverless apps with AWS Lambda, Vercel & edge computing. Auto-scaling, pay-per-use, and no servers to manage. Start building today.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Workload Assessment", "description": "We analyse your traffic shape, latency needs, and state requirements. This tells us where serverless is a clear win and where a container fits better." },
+        { "step": 2, "title": "Architecture Design", "description": "We design functions, events, queues, and data stores around clear boundaries. Good event-driven design is what keeps a serverless system simple as it grows." },
+        { "step": 3, "title": "Build & Integrate", "description": "We develop functions and wire them to managed services and APIs. Everything is defined as Infrastructure as Code so environments are reproducible." },
+        { "step": 4, "title": "Performance & Cold Starts", "description": "We tune memory, runtimes, and provisioned concurrency to minimise cold starts. Performance work ensures users never feel the serverless tradeoffs." },
+        { "step": 5, "title": "Observability & Cost Guardrails", "description": "We add tracing, structured logging, and budget alarms. Guardrails on concurrency and spend prevent the surprise bills serverless is infamous for." },
+        { "step": 6, "title": "Deploy & Iterate", "description": "We ship through automated CI/CD with safe rollouts and rollbacks. Fast, low-risk deploys let you iterate on the product rather than the plumbing." }
+      ],
+      "faq": [
+        { "question": "Will serverless really be cheaper for us?", "answer": "For spiky or low-to-medium traffic it usually is, because you pay nothing when idle. For sustained high-volume workloads, containers can be cheaper, so we model your traffic before recommending an approach." },
+        { "question": "What about cold starts?", "answer": "Cold starts are real but manageable. We use lighter runtimes, right-sized memory, and provisioned concurrency on critical paths, which keeps latency low for user-facing endpoints." },
+        { "question": "Can serverless handle our database needs?", "answer": "Yes, with the right choices. We pair functions with serverless-friendly stores like DynamoDB or use connection pooling and proxies for relational databases to avoid exhausting connections." },
+        { "question": "Is serverless suitable for long-running jobs?", "answer": "For short tasks it is ideal. For long or heavy jobs we use orchestration like Step Functions, batch services, or containers, choosing the right tool rather than forcing everything into a function." },
+        { "question": "Does serverless lock us into one cloud provider?", "answer": "There is some coupling to provider services, but we mitigate it with clean architecture and Infrastructure as Code. We can also use portable frameworks where avoiding lock-in is a priority." },
+        { "question": "How do you prevent runaway costs?", "answer": "We set concurrency limits, budget alarms, and per-function cost monitoring from day one. This catches misconfigurations or abuse before they turn into a large bill." },
+        { "question": "Can you migrate our existing app to serverless?", "answer": "Often yes, incrementally. We typically peel off suitable endpoints and background jobs first, proving the model and cost savings before moving more of the application." },
+        { "question": "How do we debug a serverless system?", "answer": "We instrument everything with distributed tracing and structured logs, so you can follow a request across functions and services and pinpoint failures quickly." }
+      ],
+      "technologies": [
+        { "name": "AWS Lambda", "icon": "aws-lambda" },
+        { "name": "Vercel", "icon": "vercel" },
+        { "name": "Cloudflare Workers", "icon": "cloudflare-workers" },
+        { "name": "API Gateway", "icon": "aws-api-gateway" },
+        { "name": "DynamoDB", "icon": "dynamodb" },
+        { "name": "Serverless Framework", "icon": "serverless" },
+        { "name": "Step Functions", "icon": "aws-step-functions" },
+        { "name": "Netlify", "icon": "netlify" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Serverless Mimari",
+    "shortDescription": "Serverless ile ölçeklenebilir, uygun maliyetli uygulamalar kurun. AWS Lambda, Vercel ve uç bilişimi kullanarak sıfırdan milyonlarca isteğe otomatik ölçeklenen ve yalnızca kullandığınız kadar faturalandıran uygulamalar geliştiririz.",
+    "fullDescription": "Serverless, sunucu yönetmek yerine özellik yayınlamanızı sağlar. AWS Lambda, Vercel Edge Functions, Cloudflare Workers ve yönetilen hizmetler üzerinde sıfırdan milyonlarca isteğe otomatik ölçeklenen, atıl kapasite ödemesi olmayan uygulamalar tasarlar ve geliştiririz. İyi yapıldığında serverless operasyonel yükü ve maliyeti büyük ölçüde azaltır; kötü yapıldığında soğuk başlangıçlar, kontrolden çıkan faturalar ve hata ayıklama zorluğu getirir. Bu tuzaklardan kaçınan mimari disiplini sağlarız: doğru boyutlanmış fonksiyonlar, olay tabanlı tasarım, yönetilen veri depoları, ilk günden gözlemlenebilirlik ve maliyet ile eşzamanlılık üzerinde koruyucu sınırlar. İster yeni bir ürün, ister bir API arka ucu kurun, ister ani yük dalgalarını sürekli açık sunuculardan taşıyın; hızlı, dayanıklı ve gerçekten daha ucuz çalışan bir serverless sistem sunarız.",
+    "features": [
+      "AWS Lambda ve uç fonksiyon geliştirme",
+      "Olay tabanlı ve API arka uç tasarımı",
+      "Sıfırdan zirve yüke otomatik ölçekleme",
+      "Yönetilen veri depoları (DynamoDB, RDS, S3)",
+      "Soğuk başlangıç azaltma ve performans ayarı",
+      "Kod olarak altyapı (Serverless Framework, CDK)",
+      "Maliyet izleme ve eşzamanlılık sınırları",
+      "Gözlemlenebilirlik, izleme ve yapısal günlükleme"
+    ],
+    "benefits": [
+      "Atıl sunucular için değil, gerçek kullanım için ödeyin",
+      "Trafik artışlarına otomatik ölçeklenin",
+      "Sunucu yamalama ve bakımını ortadan kaldırın",
+      "Daha az altyapı koduyla daha hızlı yayınlayın",
+      "Yönetilen, yedekli hizmetlerle dayanıklılığı artırın",
+      "Dalgalı yükler için toplam sahip olma maliyetini düşürün"
+    ],
+    "metaTitle": "Serverless Mimari Hizmetleri | PakSoft",
+    "metaDescription": "AWS Lambda, Vercel ve uç bilişim ile ölçeklenebilir, uygun maliyetli serverless uygulamalar kurun. Otomatik ölçekleme, kullandıkça öde ve sunucu yok. Hemen başlayın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "İş Yükü Değerlendirmesi", "description": "Trafik şeklinizi, gecikme ihtiyaçlarınızı ve durum gereksinimlerinizi analiz ederiz. Bu, serverless'ın net kazanç olduğu ve bir konteynerin daha uygun olduğu yerleri gösterir." },
+        { "step": 2, "title": "Mimari Tasarımı", "description": "Fonksiyonları, olayları, kuyrukları ve veri depolarını net sınırlar etrafında tasarlarız. İyi olay tabanlı tasarım, bir serverless sistemi büyürken basit tutan şeydir." },
+        { "step": 3, "title": "Geliştirme ve Entegrasyon", "description": "Fonksiyonları geliştirir ve yönetilen hizmetlere ve API'lere bağlarız. Her şey kod olarak altyapı şeklinde tanımlanır, böylece ortamlar yeniden üretilebilir." },
+        { "step": 4, "title": "Performans ve Soğuk Başlangıçlar", "description": "Soğuk başlangıçları en aza indirmek için belleği, çalışma zamanlarını ve provisioned concurrency'yi ayarlarız. Performans çalışması kullanıcıların serverless ödünleşimlerini hiç hissetmemesini sağlar." },
+        { "step": 5, "title": "Gözlemlenebilirlik ve Maliyet Sınırları", "description": "İzleme, yapısal günlükleme ve bütçe alarmları ekleriz. Eşzamanlılık ve harcama üzerindeki sınırlar serverless'ın kötü ünlü olduğu sürpriz faturaları önler." },
+        { "step": 6, "title": "Dağıtım ve Yineleme", "description": "Güvenli yayınlar ve geri almalarla otomatik CI/CD üzerinden yayınlarız. Hızlı, düşük riskli dağıtımlar tesisat yerine ürün üzerinde yinelemenizi sağlar." }
+      ],
+      "faq": [
+        { "question": "Serverless bizim için gerçekten daha ucuz mu olacak?", "answer": "Dalgalı ya da düşük-orta trafikte genellikle öyledir, çünkü boştayken hiçbir şey ödemezsiniz. Sürekli yüksek hacimli yüklerde konteynerler daha ucuz olabilir, bu yüzden bir yaklaşım önermeden önce trafiğinizi modelleriz." },
+        { "question": "Soğuk başlangıçlar ne olacak?", "answer": "Soğuk başlangıçlar gerçektir ama yönetilebilir. Daha hafif çalışma zamanları, doğru boyutlu bellek ve kritik yollarda provisioned concurrency kullanırız; bu, kullanıcıya dönük uç noktalarda gecikmeyi düşük tutar." },
+        { "question": "Serverless veritabanı ihtiyaçlarımızı karşılayabilir mi?", "answer": "Evet, doğru seçimlerle. Fonksiyonları DynamoDB gibi serverless dostu depolarla eşleştirir ya da ilişkisel veritabanları için bağlantı havuzlama ve proxy'ler kullanarak bağlantıların tükenmesini önleriz." },
+        { "question": "Serverless uzun süren işler için uygun mu?", "answer": "Kısa görevler için idealdir. Uzun veya ağır işler için Step Functions gibi orkestrasyon, batch hizmetleri veya konteynerler kullanırız; her şeyi bir fonksiyona zorlamak yerine doğru aracı seçeriz." },
+        { "question": "Serverless bizi tek bir bulut sağlayıcısına kilitler mi?", "answer": "Sağlayıcı hizmetlerine bir miktar bağımlılık vardır, ancak bunu temiz mimari ve kod olarak altyapı ile azaltırız. Kilitlenmeden kaçınmanın öncelik olduğu yerlerde taşınabilir çerçeveler de kullanabiliriz." },
+        { "question": "Kontrolden çıkan maliyetleri nasıl önlüyorsunuz?", "answer": "İlk günden eşzamanlılık sınırları, bütçe alarmları ve fonksiyon bazında maliyet izleme kurarız. Bu, yanlış yapılandırmaları veya kötüye kullanımı büyük bir faturaya dönüşmeden yakalar." },
+        { "question": "Mevcut uygulamamızı serverless'a taşıyabilir misiniz?", "answer": "Çoğu zaman evet, kademeli olarak. Genellikle uygun uç noktaları ve arka plan işlerini önce ayırır, modeli ve maliyet tasarrufunu kanıtladıktan sonra uygulamanın daha fazlasını taşırız." },
+        { "question": "Serverless bir sistemde hata ayıklamayı nasıl yaparız?", "answer": "Her şeyi dağıtık izleme ve yapısal günlüklerle donatırız; böylece bir isteği fonksiyonlar ve hizmetler boyunca takip edebilir ve hataları hızla saptayabilirsiniz." }
+      ],
+      "technologies": [
+        { "name": "AWS Lambda", "icon": "aws-lambda" },
+        { "name": "Vercel", "icon": "vercel" },
+        { "name": "Cloudflare Workers", "icon": "cloudflare-workers" },
+        { "name": "API Gateway", "icon": "aws-api-gateway" },
+        { "name": "DynamoDB", "icon": "dynamodb" },
+        { "name": "Serverless Framework", "icon": "serverless" },
+        { "name": "Step Functions", "icon": "aws-step-functions" },
+        { "name": "Netlify", "icon": "netlify" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Serverless-Architektur",
+    "shortDescription": "Bauen Sie skalierbare, kosteneffiziente Anwendungen mit Serverless. Mit AWS Lambda, Vercel und Edge Computing liefern wir Apps, die von null auf Millionen Requests autoskalieren und nur nach Nutzung abrechnen.",
+    "fullDescription": "Serverless lässt Sie Features liefern, statt Server zu verwalten. Wir entwerfen und bauen Anwendungen auf AWS Lambda, Vercel Edge Functions, Cloudflare Workers und Managed Services, die von null auf Millionen Requests automatisch skalieren – ohne Leerlaufkapazität zu bezahlen. Gut gemacht senkt Serverless den Betriebsaufwand und die Kosten drastisch; schlecht gemacht bringt es Cold Starts, ausufernde Rechnungen und Debugging-Schmerzen. Wir bringen die Architekturdisziplin, die diese Fallen vermeidet: richtig dimensionierte Funktionen, ereignisgesteuertes Design, Managed Data Stores, Observability ab Tag eins und Leitplanken bei Kosten und Concurrency. Ob neues Produkt, API-Backend oder das Verlagern sprunghafter Workloads von Always-on-Servern – wir liefern ein Serverless-System, das schnell, resilient und wirklich günstiger im Betrieb ist.",
+    "features": [
+      "AWS Lambda- & Edge-Funktionsentwicklung",
+      "Ereignisgesteuertes und API-Backend-Design",
+      "Autoskalierung von null bis zur Spitzenlast",
+      "Managed Data Stores (DynamoDB, RDS, S3)",
+      "Cold-Start-Minderung und Performance-Tuning",
+      "Infrastructure as Code (Serverless Framework, CDK)",
+      "Kostenüberwachung und Concurrency-Leitplanken",
+      "Observability, Tracing und strukturiertes Logging"
+    ],
+    "benefits": [
+      "Zahlen Sie nur für echte Nutzung, nicht für Leerlauf",
+      "Skalieren Sie automatisch zu Traffic-Spitzen",
+      "Eliminieren Sie Server-Patching und -Wartung",
+      "Liefern Sie Features schneller mit weniger Infra-Code",
+      "Erhöhen Sie Resilienz mit Managed, redundanten Diensten",
+      "Senken Sie die Gesamtkosten für sprunghafte Workloads"
+    ],
+    "metaTitle": "Serverless-Architektur-Services | PakSoft",
+    "metaDescription": "Bauen Sie skalierbare, kosteneffiziente Serverless-Apps mit AWS Lambda, Vercel & Edge Computing. Autoskalierung, Pay-per-Use, keine Server. Jetzt mit dem Bau starten.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Workload-Assessment", "description": "Wir analysieren Traffic-Form, Latenzbedarf und State-Anforderungen. Das zeigt, wo Serverless ein klarer Gewinn ist und wo ein Container besser passt." },
+        { "step": 2, "title": "Architektur-Design", "description": "Wir entwerfen Funktionen, Events, Queues und Data Stores entlang klarer Grenzen. Gutes ereignisgesteuertes Design hält ein Serverless-System einfach, während es wächst." },
+        { "step": 3, "title": "Bau & Integration", "description": "Wir entwickeln Funktionen und verdrahten sie mit Managed Services und APIs. Alles wird als Infrastructure as Code definiert, damit Umgebungen reproduzierbar sind." },
+        { "step": 4, "title": "Performance & Cold Starts", "description": "Wir tunen Memory, Runtimes und Provisioned Concurrency, um Cold Starts zu minimieren. Performance-Arbeit sorgt dafür, dass Nutzer die Serverless-Tradeoffs nie spüren." },
+        { "step": 5, "title": "Observability & Kosten-Leitplanken", "description": "Wir ergänzen Tracing, strukturiertes Logging und Budget-Alarme. Leitplanken bei Concurrency und Ausgaben verhindern die Überraschungsrechnungen, für die Serverless berüchtigt ist." },
+        { "step": 6, "title": "Deploy & Iterieren", "description": "Wir liefern über automatisiertes CI/CD mit sicheren Rollouts und Rollbacks. Schnelle, risikoarme Deploys lassen Sie am Produkt statt an der Verrohrung iterieren." }
+      ],
+      "faq": [
+        { "question": "Wird Serverless für uns wirklich günstiger?", "answer": "Bei sprunghaftem oder niedrigem bis mittlerem Traffic meist ja, weil Sie im Leerlauf nichts zahlen. Bei dauerhaft hohem Volumen können Container günstiger sein, daher modellieren wir Ihren Traffic vor einer Empfehlung." },
+        { "question": "Was ist mit Cold Starts?", "answer": "Cold Starts sind real, aber beherrschbar. Wir nutzen leichtere Runtimes, richtig dimensioniertes Memory und Provisioned Concurrency auf kritischen Pfaden, was die Latenz für nutzerseitige Endpunkte niedrig hält." },
+        { "question": "Kann Serverless unsere Datenbankbedürfnisse abdecken?", "answer": "Ja, mit den richtigen Entscheidungen. Wir kombinieren Funktionen mit serverless-freundlichen Stores wie DynamoDB oder nutzen Connection Pooling und Proxys für relationale Datenbanken, um Verbindungen nicht zu erschöpfen." },
+        { "question": "Eignet sich Serverless für langlaufende Jobs?", "answer": "Für kurze Tasks ist es ideal. Für lange oder schwere Jobs nutzen wir Orchestrierung wie Step Functions, Batch-Dienste oder Container und wählen das richtige Werkzeug, statt alles in eine Funktion zu zwingen." },
+        { "question": "Bindet uns Serverless an einen Cloud-Anbieter?", "answer": "Es gibt eine gewisse Kopplung an Anbieterdienste, die wir aber mit sauberer Architektur und Infrastructure as Code mindern. Wo Lock-in-Vermeidung Priorität hat, nutzen wir auch portable Frameworks." },
+        { "question": "Wie verhindern Sie ausufernde Kosten?", "answer": "Wir setzen ab Tag eins Concurrency-Limits, Budget-Alarme und Kostenüberwachung pro Funktion. Das fängt Fehlkonfigurationen oder Missbrauch ab, bevor sie zu einer großen Rechnung werden." },
+        { "question": "Können Sie unsere bestehende App zu Serverless migrieren?", "answer": "Oft ja, schrittweise. Wir lösen typischerweise zuerst geeignete Endpunkte und Hintergrundjobs heraus und beweisen Modell und Kostenersparnis, bevor wir mehr der Anwendung verschieben." },
+        { "question": "Wie debuggen wir ein Serverless-System?", "answer": "Wir instrumentieren alles mit verteiltem Tracing und strukturierten Logs, sodass Sie eine Anfrage über Funktionen und Dienste hinweg verfolgen und Fehler schnell lokalisieren können." }
+      ],
+      "technologies": [
+        { "name": "AWS Lambda", "icon": "aws-lambda" },
+        { "name": "Vercel", "icon": "vercel" },
+        { "name": "Cloudflare Workers", "icon": "cloudflare-workers" },
+        { "name": "API Gateway", "icon": "aws-api-gateway" },
+        { "name": "DynamoDB", "icon": "dynamodb" },
+        { "name": "Serverless Framework", "icon": "serverless" },
+        { "name": "Step Functions", "icon": "aws-step-functions" },
+        { "name": "Netlify", "icon": "netlify" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "سرور لیس فن تعمیر",
+    "shortDescription": "Serverless کے ساتھ scalable، کم لاگت ایپلی کیشنز بنائیں۔ AWS Lambda، Vercel اور edge computing استعمال کر کے ہم ایسی ایپس بناتے ہیں جو صفر سے لاکھوں requests تک خود بخود scale ہوتی ہیں اور صرف استعمال کے مطابق bill کرتی ہیں۔",
+    "fullDescription": "Serverless آپ کو سرور سنبھالنے کے بجائے features بھیجنے دیتا ہے۔ ہم AWS Lambda، Vercel Edge Functions، Cloudflare Workers اور managed services پر ایسی ایپلی کیشنز ڈیزائن اور تیار کرتے ہیں جو صفر سے لاکھوں requests تک خود بخود scale ہوتی ہیں، اور بے کار پڑی صلاحیت کی کوئی قیمت نہیں۔ اچھی طرح کیا جائے تو serverless operational بوجھ اور لاگت کو بہت کم کر دیتا ہے؛ غلط کیا جائے تو cold starts، بے قابو bills اور debugging کی مشکل لاتا ہے۔ ہم وہ architectural نظم لاتے ہیں جو ان جالوں سے بچاتا ہے: درست سائز کے functions، event-driven ڈیزائن، managed data stores، پہلے دن سے observability، اور لاگت و concurrency پر guardrails۔ چاہے آپ کوئی نیا product بنا رہے ہوں، API backend ہو، یا spiky workloads کو ہمیشہ آن رہنے والے سرورز سے ہٹا رہے ہوں؛ ہم ایک ایسا serverless سسٹم دیتے ہیں جو تیز، مضبوط اور واقعی چلانے میں سستا ہے۔",
+    "features": [
+      "AWS Lambda اور edge function ڈیولپمنٹ",
+      "Event-driven اور API backend ڈیزائن",
+      "صفر سے peak load تک auto-scaling",
+      "Managed data stores (DynamoDB، RDS، S3)",
+      "Cold-start کمی اور performance ٹیوننگ",
+      "Infrastructure as Code (Serverless Framework، CDK)",
+      "Cost monitoring اور concurrency guardrails",
+      "Observability، tracing اور structured logging"
+    ],
+    "benefits": [
+      "بے کار سرورز نہیں، حقیقی استعمال کی قیمت ادا کریں",
+      "ٹریفک کے اضافے پر خود بخود scale کریں",
+      "سرور patching اور maintenance ختم کریں",
+      "کم infrastructure کوڈ کے ساتھ تیز features بھیجیں",
+      "managed، redundant services سے مضبوطی بڑھائیں",
+      "spiky workloads کے لیے مجموعی ملکیتی لاگت کم کریں"
+    ],
+    "metaTitle": "Serverless Architecture خدمات | PakSoft",
+    "metaDescription": "AWS Lambda، Vercel اور edge computing کے ساتھ scalable، کم لاگت serverless ایپس بنائیں۔ Auto-scaling، pay-per-use اور کوئی سرور نہیں۔ آج ہی بنانا شروع کریں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Workload کا جائزہ", "description": "ہم آپ کے ٹریفک کی شکل، latency کی ضروریات اور state تقاضوں کا تجزیہ کرتے ہیں۔ یہ بتاتا ہے کہ serverless کہاں واضح فائدہ ہے اور کہاں container بہتر بیٹھتا ہے۔" },
+        { "step": 2, "title": "فن تعمیر کا ڈیزائن", "description": "ہم functions، events، queues اور data stores کو واضح حدود کے گرد ڈیزائن کرتے ہیں۔ اچھا event-driven ڈیزائن ہی serverless سسٹم کو بڑھنے کے باوجود سادہ رکھتا ہے۔" },
+        { "step": 3, "title": "تعمیر اور انضمام", "description": "ہم functions تیار کر کے انہیں managed services اور APIs سے جوڑتے ہیں۔ ہر چیز Infrastructure as Code کے طور پر بیان ہوتی ہے تاکہ environments دوبارہ قابلِ تخلیق ہوں۔" },
+        { "step": 4, "title": "Performance اور Cold Starts", "description": "ہم cold starts کم کرنے کے لیے memory، runtimes اور provisioned concurrency ٹیون کرتے ہیں۔ Performance کا کام یقینی بناتا ہے کہ صارفین serverless کے tradeoffs کبھی محسوس نہ کریں۔" },
+        { "step": 5, "title": "Observability اور Cost Guardrails", "description": "ہم tracing، structured logging اور budget alarms شامل کرتے ہیں۔ concurrency اور خرچ پر guardrails وہ غیر متوقع bills روکتے ہیں جن کے لیے serverless بدنام ہے۔" },
+        { "step": 6, "title": "Deploy اور Iterate", "description": "ہم محفوظ rollouts اور rollbacks کے ساتھ automated CI/CD کے ذریعے بھیجتے ہیں۔ تیز، کم خطرے والے deploys آپ کو plumbing کے بجائے product پر iterate کرنے دیتے ہیں۔" }
+      ],
+      "faq": [
+        { "question": "کیا serverless ہمارے لیے واقعی سستا ہوگا؟", "answer": "spiky یا کم تا درمیانے ٹریفک کے لیے عام طور پر ہاں، کیونکہ idle ہونے پر آپ کچھ ادا نہیں کرتے۔ مستقل زیادہ حجم کے workloads میں containers سستے ہو سکتے ہیں، اس لیے کوئی نقطہ نظر تجویز کرنے سے پہلے ہم آپ کے ٹریفک کو ماڈل کرتے ہیں۔" },
+        { "question": "Cold starts کا کیا ہوگا؟", "answer": "Cold starts حقیقی مگر قابلِ انتظام ہیں۔ ہم ہلکے runtimes، درست سائز memory اور اہم راستوں پر provisioned concurrency استعمال کرتے ہیں، جو user-facing endpoints کے لیے latency کم رکھتا ہے۔" },
+        { "question": "کیا serverless ہماری ڈیٹابیس ضروریات سنبھال سکتا ہے؟", "answer": "جی ہاں، درست انتخاب کے ساتھ۔ ہم functions کو DynamoDB جیسے serverless دوست stores کے ساتھ جوڑتے ہیں یا relational ڈیٹابیسز کے لیے connection pooling اور proxies استعمال کر کے connections کے ختم ہونے سے بچتے ہیں۔" },
+        { "question": "کیا serverless طویل دورانیے کے کاموں کے لیے موزوں ہے؟", "answer": "مختصر tasks کے لیے یہ مثالی ہے۔ طویل یا بھاری کاموں کے لیے ہم Step Functions جیسی orchestration، batch services یا containers استعمال کرتے ہیں، ہر چیز کو function میں ٹھونسنے کے بجائے درست ٹول منتخب کرتے ہیں۔" },
+        { "question": "کیا serverless ہمیں ایک cloud provider میں قید کر دیتا ہے؟", "answer": "provider services سے کچھ وابستگی ہوتی ہے، مگر ہم اسے صاف architecture اور Infrastructure as Code سے کم کرتے ہیں۔ جہاں lock-in سے بچنا ترجیح ہو وہاں ہم portable frameworks بھی استعمال کر سکتے ہیں۔" },
+        { "question": "آپ بے قابو لاگت کیسے روکتے ہیں؟", "answer": "ہم پہلے دن سے concurrency limits، budget alarms اور فی function cost monitoring مقرر کرتے ہیں۔ یہ غلط configurations یا غلط استعمال کو بڑے bill میں بدلنے سے پہلے پکڑ لیتا ہے۔" },
+        { "question": "کیا آپ ہماری موجودہ ایپ کو serverless پر منتقل کر سکتے ہیں؟", "answer": "اکثر جی ہاں، بتدریج۔ ہم عموماً پہلے موزوں endpoints اور background jobs الگ کرتے ہیں، ماڈل اور لاگت کی بچت ثابت کرنے کے بعد ایپلی کیشن کا مزید حصہ منتقل کرتے ہیں۔" },
+        { "question": "ہم serverless سسٹم میں debug کیسے کریں؟", "answer": "ہم ہر چیز کو distributed tracing اور structured logs سے آراستہ کرتے ہیں، تاکہ آپ کسی request کو functions اور services کے آر پار فالو کر کے ناکامیوں کا تیزی سے تعین کر سکیں۔" }
+      ],
+      "technologies": [
+        { "name": "AWS Lambda", "icon": "aws-lambda" },
+        { "name": "Vercel", "icon": "vercel" },
+        { "name": "Cloudflare Workers", "icon": "cloudflare-workers" },
+        { "name": "API Gateway", "icon": "aws-api-gateway" },
+        { "name": "DynamoDB", "icon": "dynamodb" },
+        { "name": "Serverless Framework", "icon": "serverless" },
+        { "name": "Step Functions", "icon": "aws-step-functions" },
+        { "name": "Netlify", "icon": "netlify" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "البنية بلا خوادم (Serverless)",
+    "shortDescription": "ابنِ تطبيقات قابلة للتوسّع وفعّالة التكلفة مع Serverless. باستخدام AWS Lambda وVercel والحوسبة الطرفية، نطلق تطبيقات تتوسّع تلقائياً من الصفر إلى ملايين الطلبات وتُحاسب على الاستخدام فقط.",
+    "fullDescription": "تتيح لك البنية بلا خوادم إطلاق الميزات بدل إدارة الخوادم. نصمّم ونبني تطبيقات على AWS Lambda وVercel Edge Functions وCloudflare Workers وخدمات مُدارة تتوسّع تلقائياً من الصفر إلى ملايين الطلبات، دون دفع مقابل سعة خاملة. عند إتقانها، تخفض Serverless العبء التشغيلي والتكلفة بشكل كبير؛ وعند سوء تنفيذها تجلب البدايات الباردة والفواتير الجامحة وآلام التصحيح. نأتي بانضباط معماري يتجنّب هذه الفخاخ: دوال بحجم مناسب، وتصميم مدفوع بالأحداث، ومخازن بيانات مُدارة، وقابلية مراقبة من اليوم الأول، وحواجز على التكلفة والتزامن. سواء كنت تبني منتجاً جديداً أو واجهة API خلفية أو تنقل أحمالاً متذبذبة عن خوادم تعمل دائماً، نقدّم نظام Serverless سريعاً ومرناً وأرخص تشغيلاً بالفعل.",
+    "features": [
+      "تطوير AWS Lambda والدوال الطرفية",
+      "تصميم مدفوع بالأحداث وواجهة API خلفية",
+      "توسّع تلقائي من الصفر إلى ذروة الحِمل",
+      "مخازن بيانات مُدارة (DynamoDB، RDS، S3)",
+      "تخفيف البدايات الباردة وضبط الأداء",
+      "البنية ككود (Serverless Framework، CDK)",
+      "مراقبة التكلفة وحواجز التزامن",
+      "قابلية المراقبة والتتبّع والتسجيل المنظّم"
+    ],
+    "benefits": [
+      "ادفع مقابل الاستخدام الفعلي لا الخوادم الخاملة",
+      "توسّع تلقائياً مع ذروات حركة المرور",
+      "تخلّص من ترقيع الخوادم وصيانتها",
+      "أطلق الميزات أسرع بكود بنية أقل",
+      "عزّز المرونة بخدمات مُدارة ومتكررة",
+      "اخفض التكلفة الإجمالية للأحمال المتذبذبة"
+    ],
+    "metaTitle": "خدمات البنية بلا خوادم | PakSoft",
+    "metaDescription": "ابنِ تطبيقات serverless قابلة للتوسّع وفعّالة التكلفة مع AWS Lambda وVercel والحوسبة الطرفية. توسّع تلقائي ودفع حسب الاستخدام وبلا خوادم. ابدأ البناء اليوم.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "تقييم عبء العمل", "description": "نحلّل شكل حركة المرور واحتياجات الكُمون ومتطلبات الحالة لديك. هذا يبيّن أين تكون Serverless مكسباً واضحاً وأين تناسب الحاوية أكثر." },
+        { "step": 2, "title": "تصميم البنية", "description": "نصمّم الدوال والأحداث والطوابير ومخازن البيانات حول حدود واضحة. التصميم الجيد المدفوع بالأحداث هو ما يُبقي نظام Serverless بسيطاً مع نموه." },
+        { "step": 3, "title": "البناء والتكامل", "description": "نطوّر الدوال ونربطها بالخدمات المُدارة وواجهات API. يُعرّف كل شيء كبنية ككود لتكون البيئات قابلة لإعادة الإنتاج." },
+        { "step": 4, "title": "الأداء والبدايات الباردة", "description": "نضبط الذاكرة وبيئات التشغيل والتزامن المُهيّأ لتقليل البدايات الباردة. عمل الأداء يضمن ألا يشعر المستخدمون أبداً بمقايضات Serverless." },
+        { "step": 5, "title": "قابلية المراقبة وحواجز التكلفة", "description": "نضيف التتبّع والتسجيل المنظّم وتنبيهات الميزانية. تمنع الحواجز على التزامن والإنفاق الفواتير المفاجئة التي اشتهرت بها Serverless." },
+        { "step": 6, "title": "النشر والتكرار", "description": "ننشر عبر CI/CD مؤتمت بطرح آمن وتراجع سهل. عمليات النشر السريعة منخفضة المخاطر تتيح لك التكرار على المنتج بدل السباكة." }
+      ],
+      "faq": [
+        { "question": "هل ستكون Serverless أرخص لنا فعلاً؟", "answer": "بالنسبة لحركة المرور المتذبذبة أو المنخفضة إلى المتوسطة عادةً نعم، لأنك لا تدفع شيئاً عند الخمول. أما الأحمال العالية المستمرة فقد تكون الحاويات أرخص فيها، لذا ننمذج حركة مرورك قبل التوصية بنهج." },
+        { "question": "ماذا عن البدايات الباردة؟", "answer": "البدايات الباردة حقيقية لكنها قابلة للإدارة. نستخدم بيئات تشغيل أخف وذاكرة بحجم مناسب وتزامناً مُهيّأً على المسارات الحرجة، ما يُبقي الكُمون منخفضاً لنقاط النهاية المواجهة للمستخدم." },
+        { "question": "هل تستطيع Serverless تلبية احتياجات قاعدة بياناتنا؟", "answer": "نعم، بالخيارات الصحيحة. نقرن الدوال بمخازن صديقة لـ Serverless مثل DynamoDB أو نستخدم تجميع الاتصالات والوكلاء لقواعد البيانات العلائقية لتجنّب استنزاف الاتصالات." },
+        { "question": "هل تناسب Serverless المهام طويلة التشغيل؟", "answer": "للمهام القصيرة هي مثالية. أما المهام الطويلة أو الثقيلة فنستخدم التنسيق مثل Step Functions أو خدمات الدُفعات أو الحاويات، ونختار الأداة الصحيحة بدل حشر كل شيء في دالة." },
+        { "question": "هل تقيّدنا Serverless بمزوّد سحابي واحد؟", "answer": "هناك بعض الارتباط بخدمات المزوّد، لكننا نخفّفه ببنية نظيفة وبنية ككود. وحيث يكون تجنّب التقييد أولوية، نستخدم أطراً قابلة للنقل أيضاً." },
+        { "question": "كيف تمنعون التكاليف الجامحة؟", "answer": "نضع حدود تزامن وتنبيهات ميزانية ومراقبة تكلفة لكل دالة من اليوم الأول. هذا يكتشف الإعدادات الخاطئة أو إساءة الاستخدام قبل أن تتحول إلى فاتورة كبيرة." },
+        { "question": "هل يمكنكم ترحيل تطبيقنا الحالي إلى Serverless؟", "answer": "غالباً نعم، بشكل تدريجي. نفصل عادةً نقاط النهاية والمهام الخلفية المناسبة أولاً، ونثبت النموذج وتوفير التكلفة قبل نقل المزيد من التطبيق." },
+        { "question": "كيف نصحّح نظام Serverless؟", "answer": "نُجهّز كل شيء بالتتبّع الموزّع والسجلات المنظّمة، لتتمكن من تتبّع طلب عبر الدوال والخدمات وتحديد الأعطال بسرعة." }
+      ],
+      "technologies": [
+        { "name": "AWS Lambda", "icon": "aws-lambda" },
+        { "name": "Vercel", "icon": "vercel" },
+        { "name": "Cloudflare Workers", "icon": "cloudflare-workers" },
+        { "name": "API Gateway", "icon": "aws-api-gateway" },
+        { "name": "DynamoDB", "icon": "dynamodb" },
+        { "name": "Serverless Framework", "icon": "serverless" },
+        { "name": "Step Functions", "icon": "aws-step-functions" },
+        { "name": "Netlify", "icon": "netlify" }
+      ]
+    }
+  }
+}

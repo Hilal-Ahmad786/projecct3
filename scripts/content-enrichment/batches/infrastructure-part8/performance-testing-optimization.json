@@ -1,0 +1,278 @@
+{
+  "slug": "performance-testing-optimization",
+  "en": {
+    "name": "Performance Testing & Optimization",
+    "shortDescription": "Load testing, stress testing, and end-to-end optimization that keeps your application fast and stable under real traffic. We find the bottleneck, prove the fix, and prepare you to scale.",
+    "fullDescription": "Slow and unstable applications quietly cost you conversions, search rankings, and customer trust. We run realistic load and stress tests that model your actual traffic patterns, then trace every bottleneck across the stack: database queries, N+1 patterns, inefficient code, missing caches, and infrastructure limits. Using tools like k6, JMeter, and Gatling alongside APM platforms such as Grafana, New Relic, and Datadog, we measure throughput, latency percentiles, and error rates under pressure. Then we optimise where it matters, validate the improvement with a re-test, and give you a capacity plan with concrete headroom numbers, so your next traffic spike, product launch, or seasonal peak does not become an outage.",
+    "features": [
+      "Load, stress, soak & spike testing",
+      "Realistic traffic and user-journey modelling",
+      "Database and query performance tuning",
+      "Caching strategy (Redis, CDN, HTTP)",
+      "APM tracing and bottleneck root-cause analysis",
+      "Frontend Core Web Vitals optimization",
+      "Capacity planning and scaling recommendations",
+      "Before/after benchmarks with re-test validation"
+    ],
+    "benefits": [
+      "Survive traffic spikes without downtime",
+      "Lower infrastructure costs by removing waste",
+      "Improve conversions with faster page loads",
+      "Know your real capacity before launch day",
+      "Reduce error rates and timeouts under load",
+      "Make data-driven scaling decisions with confidence"
+    ],
+    "metaTitle": "Performance Testing & Optimization | PakSoft",
+    "metaDescription": "Load testing, stress testing, and optimization to keep your app fast and stable under real traffic. Find bottlenecks, prove fixes, and scale safely. Get started today.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Goals & Baseline", "description": "We define performance targets such as response time and concurrent users, then measure your current baseline. This gives a clear yardstick to optimise against." },
+        { "step": 2, "title": "Test Design & Scripting", "description": "We script realistic user journeys and traffic mixes rather than naive request floods. Accurate scenarios are what make load-test results trustworthy." },
+        { "step": 3, "title": "Load & Stress Execution", "description": "We run load, stress, soak, and spike tests to reveal limits and failure modes. Each test type exposes a different class of weakness in your system." },
+        { "step": 4, "title": "Bottleneck Analysis", "description": "We trace slow paths through APM tooling down to the query, cache, or code line. Root-cause analysis prevents us from treating symptoms instead of causes." },
+        { "step": 5, "title": "Optimization", "description": "We apply targeted fixes across database, code, caching, and infrastructure. Changes are prioritised by impact so you get the biggest gains first." },
+        { "step": 6, "title": "Re-test & Capacity Plan", "description": "We re-run the tests to prove the improvement with hard numbers. You receive a capacity plan showing how much headroom you now have." }
+      ],
+      "faq": [
+        { "question": "What is the difference between load, stress, and soak testing?", "answer": "Load testing checks behaviour under expected traffic, stress testing pushes past limits to find the breaking point, and soak testing runs sustained load for hours to expose memory leaks and gradual degradation." },
+        { "question": "How do you model realistic traffic?", "answer": "We base scenarios on your analytics and access logs, replicating real user journeys, think-times, and request mixes. A flood of identical requests does not reflect production and produces misleading results." },
+        { "question": "Which metrics matter most in performance testing?", "answer": "We focus on latency percentiles like p95 and p99, throughput, error rate, and resource saturation. Averages hide the slow experiences that actually frustrate users." },
+        { "question": "Can you optimise without rewriting our whole application?", "answer": "Usually yes. Most large gains come from indexing, query tuning, caching, and configuration changes rather than rewrites, and we always prioritise the highest-impact, lowest-risk fixes first." },
+        { "question": "Do you test the frontend as well as the backend?", "answer": "Yes. We profile Core Web Vitals, bundle sizes, and render performance on the frontend, because perceived speed depends on both server response and client-side rendering." },
+        { "question": "What tools do you use?", "answer": "We use k6, JMeter, and Gatling for load generation and APM platforms such as Grafana, New Relic, and Datadog for tracing. We pick the stack that fits your environment and budget." },
+        { "question": "How much faster can our application realistically get?", "answer": "It depends on the current state, but it is common to cut response times by 30 to 70 percent and dramatically raise sustainable throughput once the main bottlenecks are removed." },
+        { "question": "Will optimization reduce our hosting costs?", "answer": "Often yes. Removing wasteful queries and right-sizing resources lets the same hardware serve more users, which frequently lowers cloud bills while improving performance." }
+      ],
+      "technologies": [
+        { "name": "k6", "icon": "k6" },
+        { "name": "Apache JMeter", "icon": "apache-jmeter" },
+        { "name": "Gatling", "icon": "gatling" },
+        { "name": "Locust", "icon": "locust" },
+        { "name": "Grafana", "icon": "grafana" },
+        { "name": "New Relic", "icon": "new-relic" },
+        { "name": "Lighthouse", "icon": "lighthouse" },
+        { "name": "Datadog", "icon": "datadog" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Performans Testi ve Optimizasyonu",
+    "shortDescription": "Uygulamanızı gerçek trafik altında hızlı ve kararlı tutan yük testi, stres testi ve uçtan uca optimizasyon. Darboğazı buluruz, çözümü kanıtlarız ve sizi ölçeklenmeye hazırlarız.",
+    "fullDescription": "Yavaş ve kararsız uygulamalar sessizce dönüşümlerinize, arama sıralamalarınıza ve müşteri güveninize mal olur. Gerçek trafik desenlerinizi modelleyen gerçekçi yük ve stres testleri yürütür, ardından tüm yığında her darboğazı izleriz: veritabanı sorguları, N+1 desenleri, verimsiz kod, eksik önbellekler ve altyapı sınırları. k6, JMeter ve Gatling gibi araçları Grafana, New Relic ve Datadog gibi APM platformlarıyla birlikte kullanarak baskı altında verimi, gecikme yüzdeliklerini ve hata oranlarını ölçeriz. Sonra önemli yerlerde optimize eder, iyileşmeyi yeniden testle doğrular ve somut kapasite payı rakamlarıyla bir kapasite planı veririz; böylece bir sonraki trafik artışınız, ürün lansmanınız veya sezonsal zirveniz bir kesintiye dönüşmez.",
+    "features": [
+      "Yük, stres, dayanıklılık ve ani artış testi",
+      "Gerçekçi trafik ve kullanıcı yolculuğu modelleme",
+      "Veritabanı ve sorgu performansı ayarı",
+      "Önbellekleme stratejisi (Redis, CDN, HTTP)",
+      "APM izleme ve darboğaz kök neden analizi",
+      "Frontend Core Web Vitals optimizasyonu",
+      "Kapasite planlama ve ölçeklendirme önerileri",
+      "Yeniden testle öncesi/sonrası kıyaslama"
+    ],
+    "benefits": [
+      "Trafik artışlarını kesinti olmadan atlatın",
+      "İsrafı kaldırarak altyapı maliyetini düşürün",
+      "Daha hızlı sayfalarla dönüşümleri artırın",
+      "Lansman gününden önce gerçek kapasitenizi bilin",
+      "Yük altında hata ve zaman aşımlarını azaltın",
+      "Veriye dayalı ölçeklendirme kararları alın"
+    ],
+    "metaTitle": "Performans Testi ve Optimizasyon | PakSoft",
+    "metaDescription": "Uygulamanızı gerçek trafik altında hızlı ve kararlı tutan yük testi, stres testi ve optimizasyon. Darboğazları bulun, çözümleri kanıtlayın, güvenle ölçeklenin.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Hedefler ve Temel Ölçüm", "description": "Yanıt süresi ve eşzamanlı kullanıcı gibi performans hedeflerini belirler, ardından mevcut temelinizi ölçeriz. Bu, optimize edilecek net bir ölçüt sağlar." },
+        { "step": 2, "title": "Test Tasarımı ve Betikleme", "description": "Saf istek selleri yerine gerçekçi kullanıcı yolculukları ve trafik karışımları betikleriz. Doğru senaryolar, yük testi sonuçlarını güvenilir kılan şeydir." },
+        { "step": 3, "title": "Yük ve Stres Yürütme", "description": "Sınırları ve hata modlarını ortaya çıkarmak için yük, stres, dayanıklılık ve ani artış testleri yürütürüz. Her test türü farklı bir zayıflık sınıfını açığa çıkarır." },
+        { "step": 4, "title": "Darboğaz Analizi", "description": "Yavaş yolları APM araçlarıyla sorguya, önbelleğe veya kod satırına kadar izleriz. Kök neden analizi, nedenler yerine belirtileri tedavi etmemizi önler." },
+        { "step": 5, "title": "Optimizasyon", "description": "Veritabanı, kod, önbellekleme ve altyapı genelinde hedefli düzeltmeler uygularız. Değişiklikler etkiye göre önceliklendirilir, en büyük kazanımları önce alırsınız." },
+        { "step": 6, "title": "Yeniden Test ve Kapasite Planı", "description": "İyileşmeyi somut sayılarla kanıtlamak için testleri yeniden çalıştırırız. Artık ne kadar kapasite payınız olduğunu gösteren bir kapasite planı alırsınız." }
+      ],
+      "faq": [
+        { "question": "Yük, stres ve dayanıklılık testi arasındaki fark nedir?", "answer": "Yük testi beklenen trafik altındaki davranışı ölçer, stres testi kırılma noktasını bulmak için sınırların ötesine iter, dayanıklılık testi ise bellek sızıntılarını ortaya çıkarmak için yükü saatlerce sürdürür." },
+        { "question": "Gerçekçi trafiği nasıl modelliyorsunuz?", "answer": "Senaryoları analizlerinize ve erişim günlüklerinize dayandırır, gerçek kullanıcı yolculuklarını, bekleme sürelerini ve istek karışımlarını çoğaltırız. Aynı isteklerin seli üretimi yansıtmaz ve yanıltıcı sonuçlar verir." },
+        { "question": "Performans testinde en önemli metrikler hangileri?", "answer": "p95 ve p99 gibi gecikme yüzdeliklerine, verime, hata oranına ve kaynak doygunluğuna odaklanırız. Ortalamalar, kullanıcıları gerçekten rahatsız eden yavaş deneyimleri gizler." },
+        { "question": "Tüm uygulamayı yeniden yazmadan optimize edebilir misiniz?", "answer": "Genellikle evet. Büyük kazanımların çoğu yeniden yazımdan değil indeksleme, sorgu ayarı, önbellekleme ve yapılandırma değişikliklerinden gelir; her zaman en yüksek etkili, en düşük riskli düzeltmeleri önceliklendiririz." },
+        { "question": "Backend kadar frontend'i de test ediyor musunuz?", "answer": "Evet. Frontend'de Core Web Vitals, paket boyutları ve render performansını profilleriz; çünkü algılanan hız hem sunucu yanıtına hem de istemci tarafı render'a bağlıdır." },
+        { "question": "Hangi araçları kullanıyorsunuz?", "answer": "Yük üretimi için k6, JMeter ve Gatling; izleme için Grafana, New Relic ve Datadog gibi APM platformları kullanırız. Ortamınıza ve bütçenize uygun yığını seçeriz." },
+        { "question": "Uygulamamız gerçekçi olarak ne kadar hızlanabilir?", "answer": "Mevcut duruma bağlıdır, ancak ana darboğazlar kaldırıldığında yanıt sürelerini yüzde 30 ila 70 azaltmak ve sürdürülebilir verimi belirgin biçimde yükseltmek yaygındır." },
+        { "question": "Optimizasyon barındırma maliyetlerimizi düşürür mü?", "answer": "Çoğu zaman evet. İsrafçı sorguları kaldırmak ve kaynakları doğru boyutlandırmak aynı donanımın daha fazla kullanıcıya hizmet vermesini sağlar; bu da genellikle bulut faturalarını düşürür." }
+      ],
+      "technologies": [
+        { "name": "k6", "icon": "k6" },
+        { "name": "Apache JMeter", "icon": "apache-jmeter" },
+        { "name": "Gatling", "icon": "gatling" },
+        { "name": "Locust", "icon": "locust" },
+        { "name": "Grafana", "icon": "grafana" },
+        { "name": "New Relic", "icon": "new-relic" },
+        { "name": "Lighthouse", "icon": "lighthouse" },
+        { "name": "Datadog", "icon": "datadog" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Performance-Testing & Optimierung",
+    "shortDescription": "Last-, Stress- und End-to-End-Optimierung, die Ihre Anwendung unter echtem Traffic schnell und stabil hält. Wir finden den Engpass, beweisen den Fix und bereiten Sie aufs Skalieren vor.",
+    "fullDescription": "Langsame und instabile Anwendungen kosten Sie still Conversions, Suchrankings und Kundenvertrauen. Wir führen realistische Last- und Stresstests durch, die Ihre tatsächlichen Traffic-Muster abbilden, und verfolgen dann jeden Engpass über den gesamten Stack: Datenbankabfragen, N+1-Muster, ineffizienten Code, fehlende Caches und Infrastrukturgrenzen. Mit Tools wie k6, JMeter und Gatling sowie APM-Plattformen wie Grafana, New Relic und Datadog messen wir Durchsatz, Latenz-Perzentile und Fehlerraten unter Druck. Anschließend optimieren wir dort, wo es zählt, validieren die Verbesserung mit einem Retest und liefern einen Kapazitätsplan mit konkreten Reservezahlen, damit Ihre nächste Traffic-Spitze, Ihr Produktlaunch oder saisonale Peak nicht zum Ausfall wird.",
+    "features": [
+      "Last-, Stress-, Dauer- und Spike-Tests",
+      "Realistische Traffic- und User-Journey-Modellierung",
+      "Datenbank- und Query-Performance-Tuning",
+      "Caching-Strategie (Redis, CDN, HTTP)",
+      "APM-Tracing und Engpass-Ursachenanalyse",
+      "Frontend-Optimierung der Core Web Vitals",
+      "Kapazitätsplanung und Skalierungsempfehlungen",
+      "Vorher/Nachher-Benchmarks mit Retest"
+    ],
+    "benefits": [
+      "Traffic-Spitzen ohne Ausfall überstehen",
+      "Infrastrukturkosten durch weniger Verschwendung senken",
+      "Conversions durch schnellere Ladezeiten steigern",
+      "Echte Kapazität schon vor dem Launch kennen",
+      "Fehlerraten und Timeouts unter Last reduzieren",
+      "Datenbasierte Skalierungsentscheidungen treffen"
+    ],
+    "metaTitle": "Performance-Testing & Optimierung | PakSoft",
+    "metaDescription": "Last-, Stresstests und Optimierung, die Ihre App unter echtem Traffic schnell und stabil halten. Engpässe finden, Fixes beweisen, sicher skalieren. Jetzt starten.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Ziele & Baseline", "description": "Wir definieren Performance-Ziele wie Antwortzeit und gleichzeitige Nutzer und messen Ihre aktuelle Baseline. Das schafft einen klaren Maßstab für die Optimierung." },
+        { "step": 2, "title": "Testdesign & Skripting", "description": "Wir skripten realistische User-Journeys und Traffic-Mischungen statt naiver Request-Fluten. Genaue Szenarien machen Lasttest-Ergebnisse vertrauenswürdig." },
+        { "step": 3, "title": "Last- & Stressausführung", "description": "Wir führen Last-, Stress-, Dauer- und Spike-Tests durch, um Grenzen und Fehlerzustände aufzudecken. Jeder Testtyp legt eine andere Schwachstellenklasse offen." },
+        { "step": 4, "title": "Engpassanalyse", "description": "Wir verfolgen langsame Pfade per APM bis zur Query, zum Cache oder zur Codezeile. Ursachenanalyse verhindert, dass wir Symptome statt Ursachen behandeln." },
+        { "step": 5, "title": "Optimierung", "description": "Wir setzen gezielte Fixes über Datenbank, Code, Caching und Infrastruktur um. Änderungen werden nach Wirkung priorisiert, sodass Sie die größten Gewinne zuerst erhalten." },
+        { "step": 6, "title": "Retest & Kapazitätsplan", "description": "Wir wiederholen die Tests, um die Verbesserung mit harten Zahlen zu belegen. Sie erhalten einen Kapazitätsplan, der Ihre neue Reserve zeigt." }
+      ],
+      "faq": [
+        { "question": "Was ist der Unterschied zwischen Last-, Stress- und Dauertest?", "answer": "Der Lasttest prüft das Verhalten bei erwartetem Traffic, der Stresstest überschreitet die Grenzen, um den Bruchpunkt zu finden, und der Dauertest läuft stundenlang, um Memory-Leaks und schleichende Verschlechterung aufzudecken." },
+        { "question": "Wie modellieren Sie realistischen Traffic?", "answer": "Wir stützen Szenarien auf Ihre Analytics und Zugriffsprotokolle und replizieren echte User-Journeys, Think-Times und Request-Mischungen. Eine Flut identischer Requests spiegelt die Produktion nicht wider und liefert irreführende Ergebnisse." },
+        { "question": "Welche Metriken sind beim Performance-Testing am wichtigsten?", "answer": "Wir konzentrieren uns auf Latenz-Perzentile wie p95 und p99, Durchsatz, Fehlerrate und Ressourcensättigung. Durchschnitte verbergen die langsamen Erlebnisse, die Nutzer wirklich frustrieren." },
+        { "question": "Können Sie ohne komplette Neuentwicklung optimieren?", "answer": "Meist ja. Die größten Gewinne stammen aus Indexierung, Query-Tuning, Caching und Konfiguration statt aus Rewrites, und wir priorisieren stets die wirkungsvollsten, risikoärmsten Fixes zuerst." },
+        { "question": "Testen Sie Frontend und Backend?", "answer": "Ja. Wir profilieren Core Web Vitals, Bundle-Größen und Render-Performance im Frontend, denn die wahrgenommene Geschwindigkeit hängt von Serverantwort und clientseitigem Rendering ab." },
+        { "question": "Welche Tools verwenden Sie?", "answer": "Wir nutzen k6, JMeter und Gatling für die Lasterzeugung sowie APM-Plattformen wie Grafana, New Relic und Datadog fürs Tracing. Wir wählen den Stack passend zu Umgebung und Budget." },
+        { "question": "Wie viel schneller kann unsere Anwendung realistisch werden?", "answer": "Das hängt vom Ausgangszustand ab, aber es ist üblich, Antwortzeiten um 30 bis 70 Prozent zu senken und den nachhaltigen Durchsatz deutlich zu steigern, sobald die Hauptengpässe beseitigt sind." },
+        { "question": "Senkt Optimierung unsere Hosting-Kosten?", "answer": "Oft ja. Das Entfernen verschwenderischer Queries und das Right-Sizing der Ressourcen lassen dieselbe Hardware mehr Nutzer bedienen, was die Cloud-Kosten häufig senkt." }
+      ],
+      "technologies": [
+        { "name": "k6", "icon": "k6" },
+        { "name": "Apache JMeter", "icon": "apache-jmeter" },
+        { "name": "Gatling", "icon": "gatling" },
+        { "name": "Locust", "icon": "locust" },
+        { "name": "Grafana", "icon": "grafana" },
+        { "name": "New Relic", "icon": "new-relic" },
+        { "name": "Lighthouse", "icon": "lighthouse" },
+        { "name": "Datadog", "icon": "datadog" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "پرفارمنس ٹیسٹنگ اور آپٹیمائزیشن",
+    "shortDescription": "Load testing، stress testing اور end-to-end آپٹیمائزیشن جو آپ کی ایپلی کیشن کو حقیقی ٹریفک کے تحت تیز اور مستحکم رکھتی ہے۔ ہم bottleneck ڈھونڈتے ہیں، حل ثابت کرتے ہیں اور آپ کو scale کے لیے تیار کرتے ہیں۔",
+    "fullDescription": "سست اور غیر مستحکم ایپلی کیشنز خاموشی سے آپ کی conversions، سرچ رینکنگ اور کسٹمر کے اعتماد کو نقصان پہنچاتی ہیں۔ ہم حقیقت پسندانہ load اور stress ٹیسٹ چلاتے ہیں جو آپ کے اصل ٹریفک پیٹرنز کی نقل کرتے ہیں، پھر پورے stack میں ہر bottleneck کا کھوج لگاتے ہیں: database queries، N+1 patterns، غیر مؤثر کوڈ، غائب caches اور انفراسٹرکچر کی حدود۔ k6، JMeter اور Gatling جیسے ٹولز کو Grafana، New Relic اور Datadog جیسے APM پلیٹ فارمز کے ساتھ استعمال کر کے ہم دباؤ کے تحت throughput، latency percentiles اور error rates ناپتے ہیں۔ پھر ہم وہاں آپٹیمائز کرتے ہیں جہاں اہم ہو، بہتری کو retest سے ثابت کرتے ہیں، اور آپ کو ٹھوس headroom اعداد کے ساتھ ایک capacity plan دیتے ہیں، تاکہ آپ کا اگلا ٹریفک اضافہ، پروڈکٹ launch یا موسمی peak outage میں نہ بدلے۔",
+    "features": [
+      "Load، stress، soak اور spike ٹیسٹنگ",
+      "حقیقت پسندانہ ٹریفک اور user-journey ماڈلنگ",
+      "Database اور query performance ٹیوننگ",
+      "Caching حکمتِ عملی (Redis، CDN، HTTP)",
+      "APM tracing اور bottleneck root-cause تجزیہ",
+      "Frontend Core Web Vitals آپٹیمائزیشن",
+      "Capacity planning اور scaling تجاویز",
+      "retest کے ساتھ before/after benchmarks"
+    ],
+    "benefits": [
+      "ٹریفک کے اضافے کو بغیر downtime برداشت کریں",
+      "ضیاع ختم کر کے انفراسٹرکچر لاگت کم کریں",
+      "تیز صفحات سے conversions بڑھائیں",
+      "launch سے پہلے اپنی حقیقی صلاحیت جانیں",
+      "load کے تحت errors اور timeouts کم کریں",
+      "اعتماد کے ساتھ data پر مبنی scaling فیصلے کریں"
+    ],
+    "metaTitle": "Performance Testing اور Optimization | PakSoft",
+    "metaDescription": "Load testing، stress testing اور optimization جو آپ کی ایپ کو حقیقی ٹریفک میں تیز اور مستحکم رکھے۔ bottlenecks ڈھونڈیں، حل ثابت کریں اور محفوظ طریقے سے scale کریں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "اہداف اور Baseline", "description": "ہم response time اور concurrent users جیسے performance اہداف طے کرتے ہیں، پھر آپ کی موجودہ baseline ناپتے ہیں۔ یہ آپٹیمائز کرنے کے لیے ایک واضح پیمانہ دیتا ہے۔" },
+        { "step": 2, "title": "ٹیسٹ ڈیزائن اور Scripting", "description": "ہم سادہ request floods کے بجائے حقیقت پسندانہ user journeys اور ٹریفک مکس کو script کرتے ہیں۔ درست منظرنامے ہی load-test نتائج کو قابلِ اعتماد بناتے ہیں۔" },
+        { "step": 3, "title": "Load اور Stress عملدرآمد", "description": "ہم حدود اور failure modes ظاہر کرنے کے لیے load، stress، soak اور spike ٹیسٹ چلاتے ہیں۔ ہر ٹیسٹ قسم ایک مختلف نوعیت کی کمزوری بے نقاب کرتی ہے۔" },
+        { "step": 4, "title": "Bottleneck تجزیہ", "description": "ہم APM tooling کے ذریعے سست راستوں کو query، cache یا کوڈ لائن تک ٹریس کرتے ہیں۔ Root-cause تجزیہ ہمیں اسباب کے بجائے علامات کا علاج کرنے سے روکتا ہے۔" },
+        { "step": 5, "title": "Optimization", "description": "ہم database، کوڈ، caching اور انفراسٹرکچر میں ہدفی اصلاحات لاگو کرتے ہیں۔ تبدیلیاں اثر کے مطابق ترجیح دی جاتی ہیں، تاکہ آپ کو سب سے بڑے فوائد پہلے ملیں۔" },
+        { "step": 6, "title": "Retest اور Capacity Plan", "description": "ہم بہتری کو ٹھوس اعداد سے ثابت کرنے کے لیے ٹیسٹ دوبارہ چلاتے ہیں۔ آپ کو ایک capacity plan ملتا ہے جو دکھاتا ہے کہ اب آپ کے پاس کتنا headroom ہے۔" }
+      ],
+      "faq": [
+        { "question": "Load، stress اور soak testing میں کیا فرق ہے؟", "answer": "Load testing متوقع ٹریفک کے تحت رویہ جانچتی ہے، stress testing breaking point ڈھونڈنے کے لیے حدود سے آگے دھکیلتی ہے، اور soak testing memory leaks اور بتدریج زوال ظاہر کرنے کے لیے گھنٹوں مسلسل load چلاتی ہے۔" },
+        { "question": "آپ حقیقت پسندانہ ٹریفک کیسے ماڈل کرتے ہیں؟", "answer": "ہم منظرناموں کی بنیاد آپ کے analytics اور access logs پر رکھتے ہیں، اور حقیقی user journeys، think-times اور request مکس کی نقل کرتے ہیں۔ ایک جیسی requests کا سیلاب production کی عکاسی نہیں کرتا اور گمراہ کن نتائج دیتا ہے۔" },
+        { "question": "Performance testing میں کون سی metrics سب سے اہم ہیں؟", "answer": "ہم p95 اور p99 جیسی latency percentiles، throughput، error rate اور resource saturation پر توجہ دیتے ہیں۔ اوسط اعداد ان سست تجربات کو چھپا دیتے ہیں جو حقیقت میں صارفین کو پریشان کرتے ہیں۔" },
+        { "question": "کیا آپ پوری ایپلی کیشن دوبارہ لکھے بغیر آپٹیمائز کر سکتے ہیں؟", "answer": "عام طور پر جی ہاں۔ زیادہ تر بڑے فوائد rewrites کے بجائے indexing، query tuning، caching اور configuration تبدیلیوں سے آتے ہیں، اور ہم ہمیشہ سب سے زیادہ اثر اور کم خطرے والی اصلاحات کو پہلے ترجیح دیتے ہیں۔" },
+        { "question": "کیا آپ backend کے ساتھ frontend بھی ٹیسٹ کرتے ہیں؟", "answer": "جی ہاں۔ ہم frontend پر Core Web Vitals، bundle sizes اور render performance کا profile بناتے ہیں، کیونکہ محسوس ہونے والی رفتار سرور کے جواب اور client-side rendering دونوں پر منحصر ہے۔" },
+        { "question": "آپ کون سے ٹولز استعمال کرتے ہیں؟", "answer": "ہم load پیدا کرنے کے لیے k6، JMeter اور Gatling اور tracing کے لیے Grafana، New Relic اور Datadog جیسے APM پلیٹ فارمز استعمال کرتے ہیں۔ ہم آپ کے ماحول اور بجٹ کے مطابق stack منتخب کرتے ہیں۔" },
+        { "question": "ہماری ایپلی کیشن حقیقت میں کتنی تیز ہو سکتی ہے؟", "answer": "یہ موجودہ حالت پر منحصر ہے، مگر اہم bottlenecks ہٹنے کے بعد response times میں 30 سے 70 فیصد کمی اور قابلِ برداشت throughput میں نمایاں اضافہ عام بات ہے۔" },
+        { "question": "کیا optimization ہماری hosting لاگت کم کرے گی؟", "answer": "اکثر جی ہاں۔ ضیاع کرنے والی queries ہٹانا اور resources کو درست سائز دینا ایک ہی hardware کو زیادہ صارفین کی خدمت کے قابل بناتا ہے، جو اکثر cloud bills کم کرتا ہے۔" }
+      ],
+      "technologies": [
+        { "name": "k6", "icon": "k6" },
+        { "name": "Apache JMeter", "icon": "apache-jmeter" },
+        { "name": "Gatling", "icon": "gatling" },
+        { "name": "Locust", "icon": "locust" },
+        { "name": "Grafana", "icon": "grafana" },
+        { "name": "New Relic", "icon": "new-relic" },
+        { "name": "Lighthouse", "icon": "lighthouse" },
+        { "name": "Datadog", "icon": "datadog" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "اختبار الأداء وتحسينه",
+    "shortDescription": "اختبار حِمل وإجهاد وتحسين شامل يبقي تطبيقك سريعاً ومستقراً تحت حركة المرور الحقيقية. نكتشف عنق الزجاجة، ونثبت الإصلاح، ونهيئك للتوسّع.",
+    "fullDescription": "التطبيقات البطيئة وغير المستقرة تكلّفك بصمت معدلات التحويل وترتيب البحث وثقة العملاء. نُجري اختبارات حِمل وإجهاد واقعية تحاكي أنماط حركة المرور الفعلية لديك، ثم نتتبع كل عنق زجاجة عبر المنظومة: استعلامات قواعد البيانات، وأنماط N+1، والشيفرة غير الفعّالة، والتخزين المؤقت المفقود، وحدود البنية التحتية. باستخدام أدوات مثل k6 وJMeter وGatling إلى جانب منصات APM مثل Grafana وNew Relic وDatadog، نقيس الإنتاجية ونِسب الكُمون ومعدلات الأخطاء تحت الضغط. ثم نُحسّن حيث يهم، ونتحقق من التحسّن بإعادة اختبار، ونمنحك خطة سعة بأرقام هامش ملموسة، حتى لا تتحول ذروة حركة المرور القادمة أو إطلاق المنتج أو الموسم إلى انقطاع في الخدمة.",
+    "features": [
+      "اختبار الحِمل والإجهاد والتحمّل والذروة",
+      "نمذجة واقعية لحركة المرور ورحلات المستخدم",
+      "ضبط أداء قواعد البيانات والاستعلامات",
+      "استراتيجية تخزين مؤقت (Redis، CDN، HTTP)",
+      "تتبّع APM وتحليل الأسباب الجذرية للاختناقات",
+      "تحسين Core Web Vitals في الواجهة الأمامية",
+      "تخطيط السعة وتوصيات التوسّع",
+      "قياسات قبل/بعد مع إعادة اختبار للتحقق"
+    ],
+    "benefits": [
+      "اجتَز ذروات حركة المرور دون انقطاع",
+      "اخفض تكاليف البنية التحتية بإزالة الهدر",
+      "ارفع التحويلات بصفحات أسرع تحميلاً",
+      "اعرف سعتك الحقيقية قبل يوم الإطلاق",
+      "قلّل معدلات الأخطاء والمهلات تحت الحِمل",
+      "اتخذ قرارات توسّع مبنية على البيانات بثقة"
+    ],
+    "metaTitle": "اختبار الأداء وتحسينه | PakSoft",
+    "metaDescription": "اختبار حِمل وإجهاد وتحسين يبقي تطبيقك سريعاً ومستقراً تحت حركة مرور حقيقية. اكتشف الاختناقات وأثبت الإصلاحات وتوسّع بأمان. ابدأ اليوم.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "الأهداف وخط الأساس", "description": "نحدد أهداف الأداء مثل زمن الاستجابة وعدد المستخدمين المتزامنين، ثم نقيس خط الأساس الحالي لديك. هذا يوفر مقياساً واضحاً للتحسين." },
+        { "step": 2, "title": "تصميم الاختبار وكتابة السيناريو", "description": "نكتب سيناريوهات لرحلات مستخدم واقعية ومزيج حركة مرور بدلاً من سيول طلبات ساذجة. السيناريوهات الدقيقة هي ما يجعل نتائج اختبار الحِمل جديرة بالثقة." },
+        { "step": 3, "title": "تنفيذ الحِمل والإجهاد", "description": "نُجري اختبارات حِمل وإجهاد وتحمّل وذروة لكشف الحدود وأنماط الفشل. كل نوع اختبار يكشف فئة مختلفة من نقاط الضعف في نظامك." },
+        { "step": 4, "title": "تحليل الاختناقات", "description": "نتتبع المسارات البطيئة عبر أدوات APM حتى الاستعلام أو ذاكرة التخزين المؤقت أو سطر الشيفرة. تحليل السبب الجذري يمنعنا من معالجة الأعراض بدل الأسباب." },
+        { "step": 5, "title": "التحسين", "description": "نطبّق إصلاحات موجّهة عبر قاعدة البيانات والشيفرة والتخزين المؤقت والبنية التحتية. تُرتّب التغييرات حسب الأثر لتحصل على أكبر المكاسب أولاً." },
+        { "step": 6, "title": "إعادة الاختبار وخطة السعة", "description": "نعيد تشغيل الاختبارات لإثبات التحسّن بأرقام قاطعة. تحصل على خطة سعة تبيّن مقدار الهامش المتاح لديك الآن." }
+      ],
+      "faq": [
+        { "question": "ما الفرق بين اختبار الحِمل والإجهاد والتحمّل؟", "answer": "يفحص اختبار الحِمل السلوك تحت حركة المرور المتوقعة، ويتجاوز اختبار الإجهاد الحدود لإيجاد نقطة الانهيار، ويعمل اختبار التحمّل بحِمل مستمر لساعات لكشف تسريبات الذاكرة والتدهور التدريجي." },
+        { "question": "كيف تنمذجون حركة المرور الواقعية؟", "answer": "نبني السيناريوهات على تحليلاتك وسجلات الوصول، ونحاكي رحلات المستخدم الحقيقية وأوقات التفكير ومزيج الطلبات. سيل من الطلبات المتطابقة لا يعكس الإنتاج ويعطي نتائج مضللة." },
+        { "question": "ما المقاييس الأهم في اختبار الأداء؟", "answer": "نركّز على نِسب الكُمون مثل p95 وp99 والإنتاجية ومعدل الأخطاء وتشبّع الموارد. المتوسطات تخفي التجارب البطيئة التي تُحبط المستخدمين فعلاً." },
+        { "question": "هل يمكنكم التحسين دون إعادة كتابة تطبيقنا بالكامل؟", "answer": "عادةً نعم. تأتي معظم المكاسب الكبيرة من الفهرسة وضبط الاستعلامات والتخزين المؤقت وتغييرات الإعداد بدل إعادة الكتابة، ونعطي الأولوية دائماً للإصلاحات الأكثر أثراً والأقل خطورة أولاً." },
+        { "question": "هل تختبرون الواجهة الأمامية كما الخلفية؟", "answer": "نعم. نحلّل Core Web Vitals وأحجام الحِزم وأداء العرض في الواجهة الأمامية، لأن السرعة المُدركة تعتمد على استجابة الخادم والعرض في جانب العميل معاً." },
+        { "question": "ما الأدوات التي تستخدمونها؟", "answer": "نستخدم k6 وJMeter وGatling لتوليد الحِمل، ومنصات APM مثل Grafana وNew Relic وDatadog للتتبّع. نختار الحزمة المناسبة لبيئتك وميزانيتك." },
+        { "question": "كم يمكن أن يصبح تطبيقنا أسرع واقعياً؟", "answer": "يعتمد ذلك على الحالة الراهنة، لكن من الشائع خفض أزمنة الاستجابة بنسبة 30 إلى 70 بالمئة ورفع الإنتاجية المستدامة بشكل كبير بمجرد إزالة الاختناقات الرئيسية." },
+        { "question": "هل سيخفّض التحسين تكاليف الاستضافة لدينا؟", "answer": "غالباً نعم. إزالة الاستعلامات المهدِرة وضبط حجم الموارد يتيح للعتاد نفسه خدمة مزيد من المستخدمين، ما يقلّل عادةً فواتير السحابة مع تحسين الأداء." }
+      ],
+      "technologies": [
+        { "name": "k6", "icon": "k6" },
+        { "name": "Apache JMeter", "icon": "apache-jmeter" },
+        { "name": "Gatling", "icon": "gatling" },
+        { "name": "Locust", "icon": "locust" },
+        { "name": "Grafana", "icon": "grafana" },
+        { "name": "New Relic", "icon": "new-relic" },
+        { "name": "Lighthouse", "icon": "lighthouse" },
+        { "name": "Datadog", "icon": "datadog" }
+      ]
+    }
+  }
+}

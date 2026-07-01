@@ -1,0 +1,618 @@
+{
+  "slug": "docker-kubernetes",
+  "en": {
+    "name": "Docker & Kubernetes Orchestration",
+    "shortDescription": "Containerize your legacy or modern applications and orchestrate them seamlessly with Kubernetes to achieve automated scaling, high availability, and zero-downtime deployments across multi-cloud environments.",
+    "fullDescription": "Transform your software delivery pipeline with our enterprise-grade Docker and Kubernetes orchestration services. We containerize your monolithic or microservices applications, ensuring consistent environments from local development to production. By designing and deploying production-ready Kubernetes clusters on AWS, Azure, or Google Cloud, we enable your systems to auto-scale dynamically based on real-time traffic. Our team configures advanced ingress controllers, service meshes like Istio, and Helm charts for package management. This setup guarantees 99.99% uptime, rapid disaster recovery, and optimized cloud spend, allowing your engineering team to focus entirely on writing code rather than managing infrastructure.",
+    "features": [
+      "Application Containerization",
+      "Production-Ready Kubernetes Clusters",
+      "Helm Chart Package Management",
+      "Service Mesh (Istio/Linkerd) Integration",
+      "Horizontal & Vertical Auto-Scaling",
+      "Container Security & Vulnerability Scanning",
+      "Multi-Cloud & Hybrid Deployments",
+      "Persistent Storage Configuration"
+    ],
+    "benefits": [
+      "Eliminate environmental drift completely",
+      "Achieve 99.99% application uptime",
+      "Reduce cloud infrastructure costs by 30-40%",
+      "Enable seamless zero-downtime deployments",
+      "Accelerate developer onboarding and velocity",
+      "Simplify complex microservices management"
+    ],
+    "metaTitle": "Docker & Kubernetes Orchestration | PakSoft",
+    "metaDescription": "Containerize and orchestrate your applications with Docker and Kubernetes. Achieve auto-scaling, high availability, and zero-downtime. Contact PakSoft today!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Assessment & Strategy",
+          "description": "We analyze your existing application architecture and infrastructure to identify containerization candidates. Our team then designs a tailored migration roadmap and cluster architecture."
+        },
+        {
+          "step": 2,
+          "title": "Containerization",
+          "description": "We write optimized Dockerfiles and build secure, lightweight container images for your services. These images are scanned for vulnerabilities and stored in private registries."
+        },
+        {
+          "step": 3,
+          "title": "Cluster Provisioning",
+          "description": "Our engineers provision highly available Kubernetes clusters using Infrastructure as Code tools. We configure secure networking, access controls, and persistent storage volumes."
+        },
+        {
+          "step": 4,
+          "title": "Orchestration & Helm",
+          "description": "We package your applications using Helm charts for standardized, repeatable deployments. This ensures configuration management is clean and easily version-controlled."
+        },
+        {
+          "step": 5,
+          "title": "Monitoring & Service Mesh",
+          "description": "We integrate Prometheus and Grafana for deep observability into cluster health. A service mesh is deployed to manage secure microservices communication."
+        },
+        {
+          "step": 6,
+          "title": "Handover & Support",
+          "description": "We conduct thorough testing, including simulated node failures and load tests. Finally, we train your team and provide ongoing maintenance support."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the difference between Docker and Kubernetes?",
+          "answer": "Docker is used to package your application and its dependencies into a single container image. Kubernetes is the orchestration platform that manages, scales, and schedules those containers across a cluster of physical or virtual machines."
+        },
+        {
+          "question": "How does Kubernetes help reduce our monthly cloud bill?",
+          "answer": "Kubernetes optimizes resource utilization through bin-packing, placing containers efficiently on virtual machines. It also auto-scales nodes down during low-traffic periods, ensuring you only pay for the exact compute power you need."
+        },
+        {
+          "question": "Can you migrate our legacy monolithic application to Kubernetes?",
+          "answer": "Yes, we can containerize legacy monoliths to run on Kubernetes as a first step toward modernization. Over time, we can help you break down that monolith into smaller, more manageable microservices."
+        },
+        {
+          "question": "How do you handle security within Kubernetes clusters?",
+          "answer": "We implement multi-layered security including role-based access control (RBAC), network policies, and automated container image scanning. We also ensure secrets are encrypted at rest and during transit."
+        },
+        {
+          "question": "What is a Service Mesh and do we need one?",
+          "answer": "A service mesh like Istio manages secure, observable communication between microservices without changing application code. It is highly recommended for complex microservices architectures but may be overkill for simpler setups."
+        },
+        {
+          "question": "How do you ensure zero-downtime deployments?",
+          "answer": "We configure rolling updates, canary deployments, or blue-green strategies within Kubernetes. This ensures new versions are deployed incrementally, and traffic is only routed to healthy containers."
+        },
+        {
+          "question": "Which cloud providers do you support for Kubernetes?",
+          "answer": "We support all major cloud providers including AWS (EKS), Google Cloud (GKE), and Microsoft Azure (AKS). We can also set up hybrid or on-premises Kubernetes clusters using Rancher or OpenShift."
+        },
+        {
+          "question": "How long does a typical Kubernetes migration take?",
+          "answer": "A basic migration and cluster setup typically takes 4 to 6 weeks depending on application complexity. More complex microservices architectures with advanced CI/CD pipelines may take 8 to 12 weeks."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Kubernetes",
+          "icon": "kubernetes"
+        },
+        {
+          "name": "Helm",
+          "icon": "helm"
+        },
+        {
+          "name": "Istio",
+          "icon": "istio"
+        },
+        {
+          "name": "Prometheus",
+          "icon": "prometheus"
+        },
+        {
+          "name": "Grafana",
+          "icon": "grafana"
+        },
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Docker ve Kubernetes Yönetimi",
+    "shortDescription": "Mevcut veya yeni uygulamalarınızı konteynerleştirin ve otomatik ölçeklendirme, yüksek kullanılabilirlik ve sıfır kesinti süresi elde etmek için Kubernetes ile sorunsuz bir şekilde yönetin.",
+    "fullDescription": "Kurumsal düzeydeki Docker ve Kubernetes yönetim hizmetlerimizle yazılım dağıtım sürecinizi dönüştürün. Monolitik veya mikro hizmet uygulamalarınızı konteynerleştirerek yerel geliştirmeden üretime kadar tutarlı ortamlar sağlıyoruz. AWS, Azure veya Google Cloud üzerinde üretime hazır Kubernetes kümeleri kurarak sistemlerinizin gerçek zamanlı trafiğe göre dinamik olarak ölçeklenmesini sağlıyoruz. Ekibimiz, gelişmiş giriş denetleyicileri, Istio gibi servis ağları ve Helm grafiklerini yapılandırır. Bu kurulum %99,99 çalışma süresi, hızlı felaket kurtarma ve optimize edilmiş bulut harcaması sağlayarak mühendislik ekibinizin altyapı yönetimi yerine tamamen kod yazmaya odaklanmasına olanak tanır.",
+    "features": [
+      "Uygulama Konteynerleştirme",
+      "Üretime Hazır Kubernetes Kümeleri",
+      "Helm Grafiği Paket Yönetimi",
+      "Servis Ağı (Istio/Linkerd) Entegrasyonu",
+      "Yatay ve Dikey Otomatik Ölçeklendirme",
+      "Konteyner Güvenliği ve Açık Tarama",
+      "Çoklu Bulut ve Hibrit Dağıtımlar",
+      "Kalıcı Depolama Yapılandırması"
+    ],
+    "benefits": [
+      "Ortam farklılıklarını tamamen ortadan kaldırın",
+      "99,99% uygulama çalışma süresi elde edin",
+      "Bulut altyapı maliyetlerini %30-40 oranında azaltın",
+      "Kesintisiz sıfır kesinti süreli dağıtımlar sağlayın",
+      "Geliştiricilerin işe alım ve üretim hızını artırın",
+      "Karmaşık mikro hizmet yönetimini basitleştirin"
+    ],
+    "metaTitle": "Docker ve Kubernetes Yönetimi | PakSoft",
+    "metaDescription": "Uygulamalarınızı Docker ve Kubernetes ile konteynerleştirin ve yönetin. Otomatik ölçeklendirme ve sıfır kesinti süresi elde edin. PakSoft ile iletişime geçin!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Değerlendirme ve Strateji",
+          "description": "Konteynerleştirmeye uygun bileşenleri belirlemek için mevcut uygulama mimarinizi ve altyapınızı analiz ediyoruz. Ardından ekibimiz size özel bir geçiş yol haritası ve küme mimarisi tasarlıyor."
+        },
+        {
+          "step": 2,
+          "title": "Konteynerleştirme",
+          "description": "Hizmetleriniz için optimize edilmiş Dockerfile dosyaları yazıyor ve güvenli, hafif konteyner imajları oluşturuyoruz. Bu imajlar güvenlik açıklarına karşı taranır ve özel kayıt defterlerinde saklanır."
+        },
+        {
+          "step": 3,
+          "title": "Küme Kurulumu",
+          "description": "Mühendislerimiz, Kod Olarak Altyapı (IaC) araçlarını kullanarak yüksek düzeyde kullanılabilir Kubernetes kümeleri kurarlar. Güvenli ağ iletişimi, erişim kontrolleri ve kalıcı depolama birimleri yapılandırıyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Yönetim ve Helm",
+          "description": "Standartlaştırılmış ve tekrarlanabilir dağıtımlar için uygulamalarınızı Helm grafiklerini kullanarak paketliyoruz. Bu, yapılandırma yönetiminin temiz ve kolayca sürüm kontrollü olmasını sağlar."
+        },
+        {
+          "step": 5,
+          "title": "İzleme ve Servis Ağı",
+          "description": "Küme sağlığına ilişkin derinlemesine görünürlük elde etmek için Prometheus ve Grafana entegrasyonu yapıyoruz. Mikro hizmetler arasında güvenli iletişimi yönetmek için bir servis ağı kuruyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Teslimat ve Destek",
+          "description": "Simüle edilmiş düğüm arızaları ve yük testleri dahil olmak üzere kapsamlı testler gerçekleştiriyoruz. Son olarak ekibinizi eğitiyor ve sürekli bakım desteği sağlıyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Docker ve Kubernetes arasındaki fark nedir?",
+          "answer": "Docker, uygulamanızı ve bağımlılıklarını tek bir konteyner imajında paketlemek için kullanılır. Kubernetes ise bu konteynerleri fiziksel veya sanal makinelerden oluşan bir kümede yöneten, ölçeklendiren ve planlayan yönetim platformudur."
+        },
+        {
+          "question": "Kubernetes aylık bulut faturamızı düşürmeye nasıl yardımcı olur?",
+          "answer": "Kubernetes, konteynerleri sanal makinelere verimli bir şekilde yerleştirerek kaynak kullanımını optimize eder. Ayrıca düşük trafikli dönemlerde düğümleri otomatik olarak küçülterek yalnızca ihtiyacınız olan işlem gücü için ödeme yapmanızı sağlar."
+        },
+        {
+          "question": "Eski monolitik uygulamamızı Kubernetes'e taşıyabilir misiniz?",
+          "answer": "Evet, modernizasyonun ilk adımı olarak eski monolitleri Kubernetes üzerinde çalışacak şekilde konteynerleştirme işlemi yapabiliriz. Zamanla, bu monoliti daha küçük ve yönetilebilir mikro hizmetlere ayırmanıza yardımcı olabiliriz."
+        },
+        {
+          "question": "Kubernetes kümelerinde güvenliği nasıl sağlıyorsunuz?",
+          "answer": "Rol tabanlı erişim kontrolü (RBAC), ağ politikaları ve otomatik konteyner imajı taraması dahil olmak üzere çok katmanlı güvenlik uyguluyoruz. Ayrıca hassas verilerin şifrelenmesini sağlıyoruz."
+        },
+        {
+          "question": "Servis Ağı (Service Mesh) nedir ve buna ihtiyacımız var mı?",
+          "answer": "Istio gibi bir servis ağı, uygulama kodunu değiştirmeden mikro hizmetler arasındaki güvenli ve izlenebilir iletişimi yönetir. Karmaşık mikro hizmet mimarileri için şiddetle tavsiye edilir ancak basit kurulumlar için gereksiz olabilir."
+        },
+        {
+          "question": "Sıfır kesinti süreli dağıtımları nasıl sağlıyorsunuz?",
+          "answer": "Kubernetes içinde aşamalı güncellemeler, canary dağıtımları veya mavi-yeşil stratejileri yapılandırıyoruz. Bu, yeni sürümlerin kademeli olarak dağıtılmasını ve trafiğin yalnızca sağlıklı konteynerlere yönlendirilmesini sağlar."
+        },
+        {
+          "question": "Kubernetes için hangi bulut sağlayıcılarını destekliyorsunuz?",
+          "answer": "AWS (EKS), Google Cloud (GKE) ve Microsoft Azure (AKS) dahil olmak üzere tüm büyük bulut sağlayıcılarını destekliyoruz. Ayrıca Rancher veya OpenShift kullanarak hibrit veya şirket içi Kubernetes kümeleri de kurabiliriz."
+        },
+        {
+          "question": "Tipik bir Kubernetes geçişi ne kadar sürer?",
+          "answer": "Temel bir geçiş ve küme kurulumu, uygulama karmaşıklığına bağlı olarak genellikle 4 ila 6 hafta sürer. Gelişmiş CI/CD boru hatlarına sahip daha karmaşık mikro hizmet mimarileri 8 ila 12 hafta sürebilir."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Kubernetes",
+          "icon": "kubernetes"
+        },
+        {
+          "name": "Helm",
+          "icon": "helm"
+        },
+        {
+          "name": "Istio",
+          "icon": "istio"
+        },
+        {
+          "name": "Prometheus",
+          "icon": "prometheus"
+        },
+        {
+          "name": "Grafana",
+          "icon": "grafana"
+        },
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Docker & Kubernetes Orchestrierung",
+    "shortDescription": "Containerisieren Sie Ihre Anwendungen und orchestrieren Sie sie nahtlos mit Kubernetes, um automatisierte Skalierung, hohe Verfügbarkeit und Zero-Downtime-Deployments in Multi-Cloud-Umgebungen zu erreichen.",
+    "fullDescription": "Transformieren Sie Ihre Softwarebereitstellung mit unseren professionellen Docker- und Kubernetes-Orchestrierungsdiensten. Wir containerisieren Ihre monolithischen oder Microservices-Anwendungen und sorgen für konsistente Umgebungen von der lokalen Entwicklung bis zur Produktion. Durch die Bereitstellung produktionsbereiter Kubernetes-Cluster auf AWS, Azure oder Google Cloud ermöglichen wir eine dynamische automatische Skalierung basierend auf dem Echtzeit-Traffic. Unser Team konfiguriert Ingress-Controller, Service-Meshes wie Istio und Helm-Charts für das Paketmanagement. Dieses Setup garantiert eine Betriebszeit von 99,99 %, schnelle Disaster Recovery und optimierte Cloud-Kosten, sodass sich Ihr Team ganz auf die Softwareentwicklung konzentrieren kann.",
+    "features": [
+      "Anwendungs-Containerisierung",
+      "Produktionsbereite Kubernetes-Cluster",
+      "Helm-Chart Paketmanagement",
+      "Service-Mesh (Istio/Linkerd) Integration",
+      "Horizontale & vertikale Autoskalierung",
+      "Containersicherheit & Schwachstellen-Scans",
+      "Multi-Cloud & Hybrid-Deployments",
+      "Konfiguration von persistentem Speicher"
+    ],
+    "benefits": [
+      "Umgebungsunterschiede vollständig eliminieren",
+      "99,99 % Anwendungsbetriebszeit erreichen",
+      "Cloud-Infrastrukturkosten um 30-40 % senken",
+      "Nahtlose Zero-Downtime-Deployments ermöglichen",
+      "Onboarding und Geschwindigkeit der Entwickler steigern",
+      "Komplexes Microservices-Management vereinfachen"
+    ],
+    "metaTitle": "Docker & Kubernetes Orchestrierung | PakSoft",
+    "metaDescription": "Containerisieren und orchestrieren Sie Ihre Anwendungen mit Docker und Kubernetes. Erreichen Sie Autoskalierung und Zero-Downtime. Jetzt PakSoft kontaktieren!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Bewertung & Strategie",
+          "description": "Wir analysieren Ihre bestehende Anwendungsarchitektur und Infrastruktur, um geeignete Komponenten für die Containerisierung zu identifizieren. Unser Team entwirft dann eine maßgeschneiderte Migrations-Roadmap."
+        },
+        {
+          "step": 2,
+          "title": "Containerisierung",
+          "description": "Wir schreiben optimierte Dockerfiles und erstellen sichere, leichtgewichtige Container-Images für Ihre Dienste. Diese Images werden auf Schwachstellen gescannt und in privaten Registries gespeichert."
+        },
+        {
+          "step": 3,
+          "title": "Cluster-Bereitstellung",
+          "description": "Unsere Ingenieure stellen hochverfügbare Kubernetes-Cluster mithilfe von Infrastructure as Code (IaC) bereit. Wir konfigurieren sichere Netzwerke, Zugriffskontrollen und persistente Speichervolumen."
+        },
+        {
+          "step": 4,
+          "title": "Orchestrierung & Helm",
+          "description": "Wir paketieren Ihre Anwendungen mit Helm-Charts für standardisierte, wiederholbare Bereitstellungen. Dies stellt sicher, dass das Konfigurationsmanagement sauber und versionierbar bleibt."
+        },
+        {
+          "step": 5,
+          "title": "Überwachung & Service-Mesh",
+          "description": "Wir integrieren Prometheus und Grafana für eine tiefe Beobachtbarkeit des Cluster-Zustands. Ein Service-Mesh wird implementiert, um die sichere Kommunikation zwischen Microservices zu steuern."
+        },
+        {
+          "step": 6,
+          "title": "Übergabe & Support",
+          "description": "Wir führen gründliche Tests durch, einschließlich simulierter Knotenausfälle und Lasttests. Schließlich schulen wir Ihr Team und bieten fortlaufenden Wartungssupport an."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist der Unterschied zwischen Docker und Kubernetes?",
+          "answer": "Docker wird verwendet, um Ihre Anwendung und deren Abhängigkeiten in einem einzigen Container-Image zu verpacken. Kubernetes ist die Orchestrierungsplattform, die diese Container über ein Cluster von physischen oder virtuellen Maschinen verwaltet und skaliert."
+        },
+        {
+          "question": "Wie hilft Kubernetes, unsere monatlichen Cloud-Kosten zu senken?",
+          "answer": "Kubernetes optimiert die Ressourcenauslastung durch effiziente Platzierung von Containern auf virtuellen Maschinen. Zudem skaliert es die Knoten in verkehrsarmen Zeiten automatisch herunter, sodass Sie nur für die tatsächlich benötigte Leistung zahlen."
+        },
+        {
+          "question": "Können Sie unsere bestehende monolithische Anwendung auf Kubernetes migrieren?",
+          "answer": "Ja, wir können monolithische Altanwendungen containerisieren, um sie als ersten Schritt zur Modernisierung auf Kubernetes auszuführen. Im Laufe der Zeit helfen wir Ihnen, diesen Monolithen in kleinere Microservices aufzuteilen."
+        },
+        {
+          "question": "Wie handhaben Sie die Sicherheit in Kubernetes-Clustern?",
+          "answer": "Wir implementieren eine mehrschichtige Sicherheit, einschließlich rollenbasierter Zugriffskontrolle (RBAC), Netzwerkrichtlinien und automatisierter Container-Image-Scans. Zudem stellen wir sicher, dass sensible Daten verschlüsselt übertragen und gespeichert werden."
+        },
+        {
+          "question": "Was ist ein Service-Mesh und benötigen wir eines?",
+          "answer": "Ein Service-Mesh wie Istio verwaltet die sichere und beobachtbare Kommunikation zwischen Microservices, ohne den Anwendungscode zu ändern. Es wird für komplexe Microservices-Architekturen dringend empfohlen, kann für einfachere Setups jedoch überdimensioniert sein."
+        },
+        {
+          "question": "Wie stellen Sie Zero-Downtime-Deployments sicher?",
+          "answer": "Wir konfigurieren Rolling Updates, Canary-Deployments oder Blue-Green-Strategien in Kubernetes. Dies stellt sicher, dass neue Versionen schrittweise bereitgestellt werden und der Datenverkehr nur an fehlerfreie Container geleitet wird."
+        },
+        {
+          "question": "Welche Cloud-Anbieter unterstützen Sie für Kubernetes?",
+          "answer": "Wir unterstützen alle großen Cloud-Anbieter wie AWS (EKS), Google Cloud (GKE) und Microsoft Azure (AKS). Wir können auch hybride oder On-Premises-Kubernetes-Cluster mit Rancher oder OpenShift einrichten."
+        },
+        {
+          "question": "Wie lange dauert eine typische Kubernetes-Migration?",
+          "answer": "Eine grundlegende Migration und Cluster-Einrichtung dauert je nach Komplexität der Anwendung in der Regel 4 bis 6 Wochen. Komplexere Microservices-Architekturen mit erweiterten CI/CD-Pipelines können 8 bis 12 Wochen in Anspruch nehmen."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Kubernetes",
+          "icon": "kubernetes"
+        },
+        {
+          "name": "Helm",
+          "icon": "helm"
+        },
+        {
+          "name": "Istio",
+          "icon": "istio"
+        },
+        {
+          "name": "Prometheus",
+          "icon": "prometheus"
+        },
+        {
+          "name": "Grafana",
+          "icon": "grafana"
+        },
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "ڈاکر اور کبرنیٹس آرکیسٹریشن",
+    "shortDescription": "اپنے روایتی یا جدید ایپلی کیشنز کو کنٹینرائز کریں اور کبرنیٹس کے ذریعے خودکار اسکیلنگ، ہائی اویلیبلٹی اور زیرو ڈاؤن ٹائم حاصل کرنے کے لیے انہیں بغیر کسی رکاوٹ کے منظم کریں۔",
+    "fullDescription": "ہماری انٹرپرائز گریڈ Docker اور Kubernetes آرکیسٹریشن سروسز کے ساتھ اپنے سافٹ ویئر ڈیلیوری پائپ لائن کو تبدیل کریں۔ ہم آپ کے مونو لیتھک یا مائیکرو سروسز ایپلی کیشنز کو کنٹینرائز کرتے ہیں، جس سے لوکل ڈویلپمنٹ سے لے کر پروڈکشن تک یکساں ماحول یقینی بنتا ہے۔ AWS، Azure، یا Google Cloud پر پروڈکشن کے لیے تیار Kubernetes کلسٹرز کو ترتیب دے کر، ہم آپ کے سسٹمز کو حقیقی وقت کے ٹریفک کی بنیاد پر متحرک طور پر خودکار اسکیل کرنے کے قابل بناتے ہیں۔ ہماری ٹیم ایڈوانسڈ انگریس کنٹرولرز، Istio جیسے سروس میشز، اور Helm چارٹس کو کنفیگر کرتی ہے۔ یہ سیٹ اپ 99.99% اپ ٹائم، تیز رفتار ڈیزاسٹر ریکوری، اور کلاؤڈ اخراجات میں بچت کی ضمانت دیتا ہے، جس سے آپ کی ٹیم انفراسٹرکچر کے بجائے کوڈ لکھنے پر توجہ مرکوز کر سکتی ہے۔",
+    "features": [
+      "ایپلی کیشن کنٹینرائزیشن",
+      "پروڈکشن ریڈی کبرنیٹس کلسٹرز",
+      "ہیلم چارٹ پیکیج مینجمنٹ",
+      "سروس میش (Istio/Linkerd) انٹیگریشن",
+      "ہوریزونٹل اور ورٹیکل آٹو اسکیلنگ",
+      "کنٹینر سیکیورٹی اور کمزوریوں کی اسکیننگ",
+      "ملٹی کلاؤڈ اور ہائبرڈ ڈیپلائمنٹس",
+      "پرسسٹنٹ اسٹوریج کنفیگریشن"
+    ],
+    "benefits": [
+      "ماحولیاتی اختلافات کو مکمل طور پر ختم کریں",
+      "99.99% ایپلی کیشن اپ ٹائم حاصل کریں",
+      "کلاؤڈ انفراسٹرکچر کے اخراجات میں 30-40٪ کمی لائیں",
+      "بغیر کسی رکاوٹ کے زیرو ڈاؤن ٹائم ڈیپلائمنٹس کو فعال کریں",
+      "ڈویلپرز کی آن بورڈنگ اور رفتار کو تیز کریں",
+      "پیچیدہ مائیکرو سروسز کے انتظام کو آسان بنائیں"
+    ],
+    "metaTitle": "ڈاکر اور کبرنیٹس آرکیسٹریشن | PakSoft",
+    "metaDescription": "ڈاکر اور کبرنیٹس کے ساتھ اپنی ایپلی کیشنز کو کنٹینرائز اور منظم کریں۔ خودکار اسکیلنگ اور زیرو ڈاؤن ٹائم حاصل کریں۔ پاک سافٹ سے رابطہ کریں!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تشخیص اور حکمت عملی",
+          "description": "ہم کنٹینرائزیشن کے لیے موزوں اجزاء کی شناخت کے لیے آپ کے موجودہ ایپلی کیشن آرکیٹیکچر اور انفراسٹرکچر کا تجزیہ کرتے ہیں۔ ہماری ٹیم پھر ایک حسب ضرورت مائیگریشن روڈ میپ اور کلسٹر آرکیٹیکچر ڈیزائن کرتی ہے۔"
+        },
+        {
+          "step": 2,
+          "title": "کنٹینرائزیشن",
+          "description": "ہم آپ کی سروسز کے لیے موزوں Dockerfiles لکھتے ہیں اور محفوظ، ہلکے وزن والے کنٹینر امیجز بناتے ہیں۔ ان امیجز کو سیکیورٹی کے خطرات کے لیے اسکین کیا جاتا ہے اور پرائیویٹ رجسٹریوں میں محفوظ کیا جاتا ہے۔"
+        },
+        {
+          "step": 3,
+          "title": "کلسٹر پروویژننگ",
+          "description": "ہمارے انجینئرز انفراسٹرکچر بطور کوڈ (IaC) ٹولز کا استعمال کرتے ہوئے انتہائی دستیاب کبرنیٹس کلسٹرز فراہم کرتے ہیں۔ ہم محفوظ نیٹ ورکنگ، رسائی کے کنٹرول، اور مستقل اسٹوریج والیوم کو کنفیگر کرتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "آرکیسٹریشن اور ہیلم",
+          "description": "ہم معیاری اور دہرائے جانے والے ڈیپلائمنٹس کے لیے ہیلم چارٹس کا استعمال کرتے ہوئے آپ کی ایپلی کیشنز کو پیکیج کرتے ہیں۔ یہ یقینی بناتا ہے کہ کنفیگریشن مینجمنٹ صاف اور آسانی سے ورژن کنٹرولڈ ہو۔"
+        },
+        {
+          "step": 5,
+          "title": "مانیٹرنگ اور سروس میش",
+          "description": "ہم کلسٹر کی صحت کے بارے میں گہری معلومات حاصل کرنے کے لیے Prometheus اور Grafana کو مربوط کرتے ہیں۔ مائیکرو سروسز کے درمیان محفوظ مواصلات کو منظم کرنے کے لیے ایک سروس میش نافذ کیا جاتا ہے۔"
+        },
+        {
+          "step": 6,
+          "title": "ہینڈ اوور اور سپورٹ",
+          "description": "ہم مکمل ٹیسٹنگ کرتے ہیں، بشمول مصنوعی نوڈ کی ناکامی اور لوڈ ٹیسٹ. آخر میں، ہم آپ کی ٹیم کو تربیت دیتے ہیں اور جاری دیکھ بھال کی مدد فراہم کرتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "ڈاکر اور کبرنیٹس میں کیا فرق ہے؟",
+          "answer": "ڈاکر کا استعمال آپ کی ایپلی کیشن اور اس کے انحصار کو ایک ہی کنٹینر امیج میں پیک کرنے کے لیے کیا جاتا ہے۔ کبرنیٹس وہ آرکیسٹریشن پلیٹ فارم ہے جو ان کنٹینرز کو فزیکل یا ورچوئل مشینوں کے کلسٹر میں منظم، اسکیل اور شیڈول کرتا ہے۔"
+        },
+        {
+          "question": "کبرنیٹس ہمارے ماہانہ کلاؤڈ بل کو کم کرنے میں کیسے مدد کرتا ہے؟",
+          "answer": "کبرنیٹس ورچوئل مشینوں پر کنٹینرز کو مؤثر طریقے سے رکھ کر وسائل کے استعمال کو بہتر بناتا ہے۔ یہ کم ٹریفک کے ادوار کے دوران نوڈس کو خود بخود کم بھی کرتا ہے، جس سے یہ یقینی بنتا ہے کہ آپ صرف اسی کمپیوٹ پاور کے لیے ادائیگی کریں جس کی آپ کو ضرورت ہے۔"
+        },
+        {
+          "question": "کیا آپ ہماری پرانی مونو لیتھک ایپلی کیشن کو کبرنیٹس میں منتقل کر سکتے ہیں؟",
+          "answer": "جی ہاں، ہم جدید کاری کے پہلے قدم کے طور پر کبرنیٹس پر چلانے کے لیے پرانے مونو لیتھس کو کنٹینرائز کر سکتے ہیں۔ وقت کے ساتھ، ہم اس مونو لیتھ کو چھوٹی اور زیادہ قابل انتظام مائیکرو سروسز میں تقسیم کرنے میں آپ کی مدد کر سکتے ہیں۔"
+        },
+        {
+          "question": "آپ کبرنیٹس کلسٹرز کے اندر سیکیورٹی کو کیسے سنبھالتے ہیں؟",
+          "answer": "ہم رول پر مبنی رسائی کنٹرول (RBAC)، نیٹ ورک پالیسیوں، اور خودکار کنٹینر امیج اسکیننگ سمیت کثیر جہتی سیکیورٹی کو نافذ کرتے ہیں۔ ہم یہ بھی یقینی بناتے ہیں کہ حساس ڈیٹا کو محفوظ طریقے سے انکرپٹ کیا جائے۔"
+        },
+        {
+          "question": "سروس میش کیا ہے اور کیا ہمیں اس کی ضرورت ہے؟",
+          "answer": "Istio جیسا سروس میش ایپلی کیشن کوڈ کو تبدیل کیے بغیر مائیکرو سروسز کے درمیان محفوظ اور قابل مشاہدہ مواصلات کا انتظام کرتا ہے۔ یہ پیچیدہ مائیکرو سروسز آرکیٹیکچرز کے لیے انتہائی تجویز کردہ ہے لیکن سادہ سیٹ اپس کے لیے غیر ضروری ہو سکتا ہے۔"
+        },
+        {
+          "question": "آپ زیرو ڈاؤن ٹائم ڈیپلائمنٹس کو کیسے یقینی بناتے ہیں؟",
+          "answer": "ہم کبرنیٹس کے اندر رولنگ اپ ڈیٹس، کینری ڈیپلائمنٹس، یا بلیو گرین حکمت عملیوں کو کنفیگر کرتے ہیں۔ یہ یقینی بناتا ہے کہ نئے ورژن بتدریج ڈیپلائے کیے جائیں اور ٹریفک صرف صحت مند کنٹینرز کی طرف منتقل ہو۔"
+        },
+        {
+          "question": "کبرنیٹس کے لیے آپ کن کلاؤڈ فراہم کنندگان کو سپورٹ کرتے ہیں؟",
+          "answer": "ہم AWS (EKS)، Google Cloud (GKE)، اور Microsoft Azure (AKS) سمیت تمام بڑے کلاؤڈ فراہم کنندگان کو سپورٹ کرتے ہیں۔ ہم Rancher یا OpenShift کا استعمال کرتے ہوئے ہائبرڈ یا آن پریمیسس کبرنیٹس کلسٹرز بھی ترتیب دے سکتے ہیں۔"
+        },
+        {
+          "question": "ایک عام کبرنیٹس مائیگریشن میں کتنا وقت لگتا ہے؟",
+          "answer": "ایپلی کیشن کی پیچیدگی پر منحصر ہے، ایک بنیادی مائیگریشن اور کلسٹر سیٹ اپ میں عام طور پر 4 سے 6 ہفتے لگتے ہیں۔ ایڈوانسڈ CI/CD پائپ لائنز کے ساتھ زیادہ پیچیدہ مائیکرو سروسز آرکیٹیکچرز میں 8 سے 12 ہفتے لگ سکتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Kubernetes",
+          "icon": "kubernetes"
+        },
+        {
+          "name": "Helm",
+          "icon": "helm"
+        },
+        {
+          "name": "Istio",
+          "icon": "istio"
+        },
+        {
+          "name": "Prometheus",
+          "icon": "prometheus"
+        },
+        {
+          "name": "Grafana",
+          "icon": "grafana"
+        },
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "إدارة وتنسيق Docker و Kubernetes",
+    "shortDescription": "قم بتحويل تطبيقاتك إلى حاويات وتنسيقها بسلاسة باستخدام Kubernetes لتحقيق التوسع التلقائي، والتوافر العالي، وعمليات النشر الخالية من فترات التوقف عبر البيئات السحابية المتعددة.",
+    "fullDescription": "قم بتحويل عملية تسليم البرامج الخاصة بك من خلال خدمات تنسيق Docker و Kubernetes الاحترافية من فئة المؤسسات. نقوم بتحويل تطبيقاتك المتجانسة أو القائمة على الخدمات المصغرة إلى حاويات، مما يضمن بيئات متسقة من التطوير المحلي إلى الإنتاج. من خلال نشر مجموعات Kubernetes الجاهزة للإنتاج على AWS أو Azure أو Google Cloud، نمكّن أنظمتك من التوسع تلقائيًا وديناميكيًا بناءً على حركة المرور في الوقت الفعلي. يقوم فريقنا بتكوين وحدات التحكم في الإدخال المتقدمة، وشبكات الخدمة مثل Istio، ومخططات Helm لإدارة الحزم. يضمن هذا الإعداد وقت تشغيل بنسبة 99.99%، واستردادًا سريعًا للكوارث، وتحسين الإنفاق السحابي، مما يسمح لفريقك بالتركيز بالكامل على كتابة التعليمات البرمجية.",
+    "features": [
+      "تحويل التطبيقات إلى حاويات",
+      "مجموعات Kubernetes جاهزة للإنتاج",
+      "إدارة الحزم باستخدام مخططات Helm",
+      "تكامل شبكة الخدمة (Istio/Linkerd)",
+      "التوسع التلقائي الأفقي والعمودي",
+      "أمان الحاويات وفحص الثغرات الأمنية",
+      "عمليات النشر السحابية المتعددة والهجينة",
+      "تكوين التخزين المستمر"
+    ],
+    "benefits": [
+      "القضاء التام على الاختلافات بين البيئات",
+      "تحقيق وقت تشغيل للتطبيقات بنسبة 99.99%",
+      "تقليل تكاليف البنية التحتية السحابية بنسبة 30-40%",
+      "تمكين عمليات النشر السلسة بدون فترات توقف",
+      "تسريع عملية دمج المطورين وزيادة إنتاجيتهم",
+      "تبسيط إدارة الخدمات المصغرة المعقدة"
+    ],
+    "metaTitle": "إدارة وتنسيق Docker و Kubernetes | PakSoft",
+    "metaDescription": "قم بتحويل تطبيقاتك إلى حاويات وتنسيقها باستخدام Docker و Kubernetes. حقق التوسع التلقائي والتشغيل المستمر بدون فترات توقف. اتصل بـ PakSoft الآن!",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "التقييم والاستراتيجية",
+          "description": "نقوم بتحليل بنية التطبيق الحالية والبنية التحتية لتحديد المكونات المناسبة للتحويل إلى حاويات. ثم يقوم فريقنا بتصميم خارطة طريق مخصصة للهجرة وبنية المجموعات."
+        },
+        {
+          "step": 2,
+          "title": "التحويل إلى حاويات",
+          "description": "نكتب ملفات Dockerfile المحسّنة وننشئ صور حاويات آمنة وخفيفة الوزن لخدماتك. يتم فحص هذه الصور بحثًا عن الثغرات الأمنية وتخزينها في سجلات خاصة."
+        },
+        {
+          "step": 3,
+          "title": "تهيئة المجموعات",
+          "description": "يقوم مهندسونا بتهيئة مجموعات Kubernetes عالية التوافر باستخدام أدوات البنية التحتية كتعليمات برمجية (IaC). نقوم بتكوين الشبكات الآمنة، وضوابط الوصول، وأحجام التخزين المستمرة."
+        },
+        {
+          "step": 4,
+          "title": "التنسيق وإدارة Helm",
+          "description": "نقوم بحزم تطبيقاتك باستخدام مخططات Helm لعمليات نشر موحدة وقابلة للتكرار. يضمن ذلك أن تكون إدارة التكوين نظيفة وسهلة التحكم في الإصدارات."
+        },
+        {
+          "step": 5,
+          "title": "المراقبة وشبكة الخدمة",
+          "description": "نقوم بدمج Prometheus و Grafana للحصول على رؤية عميقة لحالة المجموعة. يتم نشر شبكة خدمة لإدارة الاتصالات الآمنة بين الخدمات المصغرة."
+        },
+        {
+          "step": 6,
+          "title": "التسليم والدعم",
+          "description": "نجري اختبارات شاملة، بما في ذلك محاكاة فشل العقد واختبارات الحمل. أخيرًا، نقوم بتدريب فريقك وتقديم دعم الصيانة المستمر."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما الفرق بين Docker و Kubernetes؟",
+          "answer": "يُستخدم Docker لتعبئة تطبيقك وتبعياته في صورة حاوية واحدة. بينما يعد Kubernetes النظام الأساسي للتنسيق الذي يدير هذه الحاويات ويوسعها ويجدولها عبر مجموعة من الأجهزة المادية أو الافتراضية."
+        },
+        {
+          "question": "كيف يساعد Kubernetes في تقليل فاتورتنا السحابية الشهرية؟",
+          "answer": "يعمل Kubernetes على تحسين استخدام الموارد من خلال وضع الحاويات بكفاءة على الأجهزة الافتراضية. كما أنه يقوم بتقليص العقد تلقائيًا خلال فترات حركة المرور المنخفضة، مما يضمن أنك تدفع فقط مقابل قوة الحوسبة التي تحتاجها بالفعل."
+        },
+        {
+          "question": "هل يمكنك ترحيل تطبيقنا المتجانس القديم إلى Kubernetes؟",
+          "answer": "نعم، يمكننا تحويل التطبيقات المتجانسة القديمة إلى حاويات لتشغيلها على Kubernetes كخطوة أولى نحو التحديث. بمرور الوقت، يمكننا مساعدتك في تقسيم هذا التطبيق المتجانس إلى خدمات مصغرة أصغر وأسهل في الإدارة."
+        },
+        {
+          "question": "كيف تتعاملون مع الأمان داخل مجموعات Kubernetes؟",
+          "answer": "نحن نطبق أمانًا متعدد الطبقات بما في ذلك التحكم في الوصول المستند إلى الأدوار (RBAC)، وسياسات الشبكة، والفحص التلقائي لصور الحاويات. كما نضمن تشفير البيانات الحساسة أثناء النقل والسكون."
+        },
+        {
+          "question": "ما هي شبكة الخدمة (Service Mesh) وهل نحتاج إليها؟",
+          "answer": "تدير شبكة الخدمة مثل Istio الاتصالات الآمنة والقابلة للمراقبة بين الخدمات المصغرة دون تغيير رمز التطبيق. يوصى بها بشدة لبنيات الخدمات المصغرة المعقدة ولكنها قد تكون زائدة عن الحاجة للإعدادات الأبسط."
+        },
+        {
+          "question": "كيف تضمنون عمليات النشر بدون فترات توقف؟",
+          "answer": "نقوم بتكوين التحديثات المتجددة، أو عمليات النشر التدريجية (Canary)، أو استراتيجيات الأزرق والأخضر داخل Kubernetes. يضمن ذلك نشر الإصدارات الجديدة تدريجيًا وتوجيه حركة المرور فقط إلى الحاويات السليمة."
+        },
+        {
+          "question": "ما هي موفري الخدمات السحابية الذين تدعمونهم لـ Kubernetes؟",
+          "answer": "نحن ندعم جميع موفري الخدمات السحابية الرئيسيين بما في ذلك AWS (EKS) و Google Cloud (GKE) و Microsoft Azure (AKS). يمكننا أيضًا إعداد مجموعات Kubernetes هجينة أو محلية باستخدام Rancher أو OpenShift."
+        },
+        {
+          "question": "كم من الوقت تستغرق عملية الترحيل النموذجية إلى Kubernetes؟",
+          "answer": "تستغرق عملية الترحيل الأساسية وإعداد المجموعة عادةً من 4 إلى 6 أسابيع اعتمادًا على تعقيد التطبيق. قد تستغرق بنيات الخدمات المصغرة الأكثر تعقيدًا مع خطوط أنابيب CI/CD المتقدمة من 8 إلى 12 أسبوعًا."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Kubernetes",
+          "icon": "kubernetes"
+        },
+        {
+          "name": "Helm",
+          "icon": "helm"
+        },
+        {
+          "name": "Istio",
+          "icon": "istio"
+        },
+        {
+          "name": "Prometheus",
+          "icon": "prometheus"
+        },
+        {
+          "name": "Grafana",
+          "icon": "grafana"
+        },
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        }
+      ]
+    }
+  }
+}

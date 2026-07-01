@@ -1,0 +1,598 @@
+{
+  "slug": "design-systems",
+  "en": {
+    "name": "Design Systems",
+    "shortDescription": "Build centralized, scalable design systems that bridge the gap between design and development. We establish a single source of technical truth for your product portfolios.",
+    "fullDescription": "As product portfolios grow, inconsistent user interfaces and repetitive design cycles often increase software production costs and dilute brand identity. We design and build comprehensive design systems that establish unified UI components, standardized spacing frameworks, and cohesive typography sets. Our design team creates robust Figma libraries featuring tokenized styles, variables, and flexible auto-layout assets. We construct detailed guidelines documenting use cases, component states, and digital accessibility compliance standards. By establishing a shared language between design and engineering, we eliminate operational waste, accelerate developer onboarding, and ensure consistent brand experiences across all applications.",
+    "features": [
+      "Centralized Component Library Development",
+      "Design Token Architecture and Management",
+      "Flexible Auto-Layout Component Assets",
+      "Comprehensive Spacing and Grid Frameworks",
+      "Accessibility Contrast and Interaction Checklists",
+      "Interactive Figma Component State Mapping",
+      "Code-Aligned Design Guidelines Documentation",
+      "Cross-Platform Style Sync Configurations"
+    ],
+    "benefits": [
+      "Accelerate product development speed up to fifty percent",
+      "Ensure absolute visual consistency across all applications",
+      "Reduce time spent coding repetitive interface elements",
+      "Simplify developer onboarding with documented components",
+      "Enable design updates to scale automatically across codebases",
+      "Build an accessible experience following global regulations"
+    ],
+    "metaTitle": "Design Systems & UI Pattern Library Services | PakSoft",
+    "metaDescription": "Build centralized, scalable design systems. We create unified UI libraries, tokenized designs, and code-aligned documentation. Contact us today.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Interface Auditing & Scoping",
+          "description": "We audit your existing software applications to identify UI inconsistencies and redundant design patterns. This review defines the system requirements clearly."
+        },
+        {
+          "step": 2,
+          "title": "Visual Style & Tokens",
+          "description": "We define core design tokens including typography sets, color variables, spacing scales, and shadow styles. This step establishes the system's foundational layer."
+        },
+        {
+          "step": 3,
+          "title": "Core Component Architecture",
+          "description": "We design primary interface components like buttons, input fields, checkboxes, and navigation elements. This build focuses on creating modular, reusable layouts."
+        },
+        {
+          "step": 4,
+          "title": "Complex Patterns Design",
+          "description": "We construct larger, compound patterns including data tables, cards, modal dialogs, and dashboard elements. This phase ensures consistency across complex page layouts."
+        },
+        {
+          "step": 5,
+          "title": "Documentation & Guidelines",
+          "description": "We write complete design guidelines detailing component usage, interaction states, and accessibility standards. This documentation provides a single source of truth."
+        },
+        {
+          "step": 6,
+          "title": "Handoff & Developer Sync",
+          "description": "We align the design system components with developer framework structures like React or Next.js. This step guarantees a seamless handoff between teams."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is a design system?",
+          "answer": "A design system is a centralized repository of reusable components, guidelines, and style tokens that serves as a single source of truth. It helps product teams build consistent interfaces quickly."
+        },
+        {
+          "question": "How does a design system benefit our business?",
+          "answer": "It reduces redundant work, accelerates development time-to-market, and ensures a cohesive brand experience across all platforms. Developers can copy ready-to-use components rather than building them from scratch."
+        },
+        {
+          "question": "Do you build the code components as well?",
+          "answer": "We focus on designing the UI component libraries, style guides, and design tokens in Figma. However, we document them to match frameworks like React, Next.js, and TailwindCSS."
+        },
+        {
+          "question": "What are design tokens?",
+          "answer": "Design tokens are the atomic values of a design system, such as color hex codes, font sizes, and spacing parameters. They are stored as data to ensure automated style updates across platforms."
+        },
+        {
+          "question": "How long does it take to build a design system?",
+          "answer": "A comprehensive design system project takes between eight to twelve weeks to complete, depending on the complexity of your product portfolio and number of platforms."
+        },
+        {
+          "question": "How do you handle updates and versions in the design system?",
+          "answer": "We use Figma's native library publishing and version history features to manage updates. We set up clear versioning policies and hold update reviews with your design teams."
+        },
+        {
+          "question": "Is the design system built to support accessibility?",
+          "answer": "Yes, we integrate accessibility guidelines into the core design of every component. We verify color contrast ratios, click target sizes, and focus state indicators to ensure compliance."
+        },
+        {
+          "question": "Can our existing design system be audited and improved?",
+          "answer": "Absolutely. We frequently audit legacy UI kits to organize messy files, implement modern Figma features like auto-layout, and align styles with developer codebases."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Figma",
+          "icon": "figma"
+        },
+        {
+          "name": "Storybook",
+          "icon": "storybook"
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "tailwindcss"
+        },
+        {
+          "name": "React",
+          "icon": "react"
+        },
+        {
+          "name": "Next.js",
+          "icon": "nextjs"
+        },
+        {
+          "name": "CSS",
+          "icon": "css"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Tasarım Sistemleri",
+    "shortDescription": "Tasarım ve geliştirme arasındaki boşluğu dolduran merkezi, ölçeklenebilir tasarım sistemleri oluşturun. Ürün portföyleriniz için teknik bir doğruluk kaynağı kuruyoruz.",
+    "fullDescription": "Ürün portföyleri büyüdükçe, tutarsız kullanıcı arayüzleri ve tekrarlayan tasarım döngüleri genellikle yazılım üretim maliyetlerini artırır ve marka kimliğini zayıflatır. Birleşik kullanıcı arayüzü bileşenleri, standartlaştırılmış boşluk çerçeveleri ve uyumlu tipografi setleri oluşturan kapsamlı tasarım sistemleri tasarlıyor ve inşa ediyoruz. Tasarım ekibimiz, stiller, değişkenler ve esnek otomatik düzen varlıkları içeren güçlü Figma kütüphaneleri oluşturur. Kullanım durumlarını, bileşen durumlarını ve dijital erişilebilirlik uyumluluk standartlarını belgeleyen ayrıntılı yönergeler oluşturuyoruz. Tasarım ve yazılım arasında ortak bir dil oluşturarak israfı önlüyoruz.",
+    "features": [
+      "Merkezi Bileşen Kütüphanesi Geliştirme",
+      "Tasarım Belirteçleri (Tokens) Mimarisi",
+      "Esnek Otomatik Düzen (Auto-Layout) Bileşenleri",
+      "Kapsamlı Boşluk ve Izgara Çerçeveleri",
+      "Erişilebilirlik Kontrast ve Etkileşim Listeleri",
+      "Etkileşimli Figma Bileşen Durumu Haritalama",
+      "Koda Uyumlu Tasarım Yönergeleri Belgelendirmesi",
+      "Çoklu Platform Stil Eşitleme Yapılandırmaları"
+    ],
+    "benefits": [
+      "Ürün geliştirme hızını yüzde elliye kadar artırın",
+      "Tüm uygulamalarda mutlak görsel tutarlılık sağlayın",
+      "Tekrarlayan arayüz öğelerini kodlama süresini azaltın",
+      "Belgelenmiş bileşenlerle yazılımcı uyumunu kolaylaştırın",
+      "Tasarım güncellemelerinin otomatik olarak koda yansımasını sağlayın",
+      "Küresel düzenlemelere uygun erişilebilir bir deneyim sunun"
+    ],
+    "metaTitle": "Tasarım Sistemleri Tasarımı Hizmetleri | PakSoft",
+    "metaDescription": "Merkezi ve ölçeklenebilir tasarım sistemleri kurun. Figma kütüphaneleri, tasarım belirteçleri ve koda uyumlu belgeler oluşturuyoruz. İletişime geçin.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Arayüz Denetimi ve Kapsam",
+          "description": "UI tutarsızlıklarını ve gereksiz tasarım kalıplarını belirlemek için mevcut uygulamalarınızı denetliyoruz. Bu inceleme sistem gereksinimlerini netleştirir."
+        },
+        {
+          "step": 2,
+          "title": "Görsel Stil ve Belirteçler",
+          "description": "Tipografi setleri, renk değişkenleri ve boşluk ölçekleri dahil olmak üzere temel tasarım belirteçlerini tanımlıyoruz. Bu adım temel katmanı oluşturur."
+        },
+        {
+          "step": 3,
+          "title": "Temel Bileşen Mimarisi",
+          "description": "Düğmeler, giriş alanları, onay kutuları ve gezinme öğeleri gibi birincil arayüz bileşenlerini tasarlıyoruz. Bu aşama modüler düzenlere odaklanır."
+        },
+        {
+          "step": 4,
+          "title": "Karmaşık Kalıpların Tasarımı",
+          "description": "Veri tabloları, kartlar, modal pencereler ve gösterge paneli öğeleri gibi daha büyük kalıplar oluşturuyoruz. Bu aşama sayfa düzenlerinde tutarlılık sağlar."
+        },
+        {
+          "step": 5,
+          "title": "Belgelendirme ve Kılavuzlar",
+          "description": "Bileşen kullanımını, etkileşim durumlarını ve erişilebilirlik standartlarını detaylandıran kılavuzlar yazıyoruz. Bu belgeler tek bir kaynak sağlar."
+        },
+        {
+          "step": 6,
+          "title": "Yazılım Entegrasyonu",
+          "description": "Tasarım sistemi bileşenlerini React veya Next.js gibi yazılımcı çerçeveleriyle uyumlu hale getiriyoruz. Bu adım ekipler arasında sorunsuz geçiş sağlar."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Tasarım sistemi nedir?",
+          "answer": "Tasarım sistemi; yeniden kullanılabilir bileşenlerin, kılavuzların ve stil belirteçlerinin tek bir merkezde toplandığı bir kaynaktır. Ekiplerin tutarlı arayüzleri hızla oluşturmasını sağlar."
+        },
+        {
+          "question": "Tasarım sisteminin işletmemize faydası nedir?",
+          "answer": "Tekrarlayan işleri azaltır, geliştirme sürecini hızlandırır ve tüm platformlarda tutarlı bir marka deneyimi sağlar. Yazılımcılar bileşenleri sıfırdan oluşturmak yerine hazır yapıları kopyalayabilir."
+        },
+        {
+          "question": "Kod bileşenlerini de oluşturuyor musunuz?",
+          "answer": "Biz Figma'daki kullanıcı arayüzü bileşen kütüphanelerini, stil kılavuzlarını ve tasarım belirteçlerini tasarlamaya odaklanıyoruz. Ara katmanda React, Next.js ve TailwindCSS gibi çerçevelere uygun yapılandırıyoruz."
+        },
+        {
+          "question": "Tasarım belirteçleri (design tokens) nedir?",
+          "answer": "Tasarım belirteçleri; renk kodları, yazı boyutları ve boşluk parametreleri gibi bir tasarım sisteminin atomik değerleridir. Platformlar arasında otomatik güncellemeler sağlamak için veri olarak saklanırlar."
+        },
+        {
+          "question": "Bir tasarım sistemi oluşturmak ne kadar sürer?",
+          "answer": "Kapsamlı bir tasarım sistemi projesi, ürün portföyünüzün karmaşıklığına ve platform sayısına bağlı olarak genellikle sekiz ila on iki hafta sürer."
+        },
+        {
+          "question": "Tasarım sistemindeki güncellemeleri ve sürümleri nasıl yönetiyorsunuz?",
+          "answer": "Güncellemeleri yönetmek için Figma'nın kütüphane yayınlama ve sürüm geçmişi özelliklerini kullanıyoruz. Net sürüm politikaları belirliyor ve ekibinizle incelemeler yapıyoruz."
+        },
+        {
+          "question": "Tasarım sistemi erişilebilirliği destekleyecek şekilde mi oluşturuluyor?",
+          "answer": "Evet, her bileşenin temel tasarımına erişilebilirlik kurallarını entegre ediyoruz. Uyumluluğu sağlamak için renk kontrast oranlarını, tıklama hedef boyutlarını ve odak durumlarını doğruluyoruz."
+        },
+        {
+          "question": "Mevcut tasarım sistemimiz denetlenebilir ve iyileştirilebilir mi?",
+          "answer": "Kesinlikle. Karışık dosyaları düzenlemek, otomatik düzen gibi modern Figma özelliklerini uygulamak ve stilleri yazılım kod tabanlarıyla uyumlu hale getirmek için mevcut sistemleri denetliyoruz."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Figma",
+          "icon": "figma"
+        },
+        {
+          "name": "Storybook",
+          "icon": "storybook"
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "tailwindcss"
+        },
+        {
+          "name": "React",
+          "icon": "react"
+        },
+        {
+          "name": "Next.js",
+          "icon": "nextjs"
+        },
+        {
+          "name": "CSS",
+          "icon": "css"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Design-Systeme",
+    "shortDescription": "Entwickeln Sie zentralisierte, skalierbare Design-Systeme, die die Lücke zwischen Design und Entwicklung schließen. Wir etablieren eine einheitliche technische Basis.",
+    "fullDescription": "Mit wachsenden Produktportfolios führen inkonsistente Benutzeroberflächen und redundante Designzyklen oft zu steigenden Software-Produktionskosten und verwässern die Markenidentität. Wir entwerfen und entwickeln umfassende Design-Systeme mit einheitlichen UI-Komponenten, standardisierten Abstandsrastern und harmonischen Schriftartensets. Unser Designteam erstellt robuste Figma-Bibliotheken mit Design-Tokens, Variablen und flexiblen Auto-Layout-Assets. Wir verfassen detaillierte Richtlinien zur Dokumentation von Anwendungsfällen, Komponentenzuständen und Barrierefreiheitsstandards. Durch die Etablierung einer gemeinsamen Sprache zwischen Design und Technik minimieren wir Aufwände und sichern konsistente Markenauftritte.",
+    "features": [
+      "Entwicklung zentralisierter UI-Komponentenbibliotheken",
+      "Konzeption moderner Design-Token-Architekturen",
+      "Erstellung flexibler Figma Auto-Layout-Komponenten",
+      "Strukturierung einheitlicher Abstands- und Layout-Raster",
+      "Barrierefreiheits-Checklisten für Kontrast und Interaktion",
+      "Visualisierung interaktiver Figma Komponentenzustände",
+      "Dokumentation entwicklungskonformer Design-Richtlinien",
+      "Konfiguration plattformübergreifender Stil-Synchronisierungen"
+    ],
+    "benefits": [
+      "Die Geschwindigkeit der Produktentwicklung um bis zu fünfzig Prozent steigern",
+      "Absolute visuelle Konsistenz über alle Softwareprodukte hinweg sichern",
+      "Entwicklungsaufwand für sich wiederholende Webelemente drastisch reduzieren",
+      "Einarbeitung neuer Entwickler durch dokumentierte Komponenten beschleunigen",
+      "Designänderungen automatisiert in alle verbundenen Codebases übertragen",
+      "Konforme, barrierefreie Nutzungserlebnisse nach globalen Standards schaffen"
+    ],
+    "metaTitle": "Design-Systeme & UI-Bibliotheken | PakSoft",
+    "metaDescription": "Bauen Sie skalierbare Design-Systeme auf. Wir erstellen Figma-Komponenten Bibliotheken, Design-Tokens und detaillierte Leitfäden für Entwickler. Kontakt.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Interface-Audit & Scoping",
+          "description": "Wir prüfen Ihre bestehenden Webanwendungen auf Konsistenzmängel und redundante Layout-Muster. Diese Analyse definiert den konkreten Systemumfang."
+        },
+        {
+          "step": 2,
+          "title": "Visueller Stil & Tokens",
+          "description": "Wir definieren zentrale Design-Tokens wie Farben, Schriftgrößen, Abstände und Schatteneffekte. Das bildet das unverzichtbare Fundament unseres Systems."
+        },
+        {
+          "step": 3,
+          "title": "Kernkomponenten-Design",
+          "description": "Wir entwerfen grundlegende UI-Elemente wie Buttons, Eingabefelder und Auswahllisten. Dieser Schritt fokussiert sich auf modulare, wiederverwendbare Strukturen."
+        },
+        {
+          "step": 4,
+          "title": "Entwurf komplexer Patterns",
+          "description": "Wir erstellen größere Verbundkomponenten wie Datentabellen, Dashboards und Modal-Dialoge. Das sichert eine durchgängige Konsistenz komplexer Layouts."
+        },
+        {
+          "step": 5,
+          "title": "Leitfäden & Dokumentation",
+          "description": "Wir verfassen umfassende Dokumentationen zur Komponentennutzung, Interaktionszuständen und Barrierefreiheitsstandards. So entsteht Ihre verlässliche Wissensbasis."
+        },
+        {
+          "step": 6,
+          "title": "Übergabe & Developer-Sync",
+          "description": "Wir stimmen die Designkomponenten mit den Ziel-Frameworks der Entwicklung wie React oder Next.js ab. Dies garantiert einen vollkommen reibungslosen Workflow."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist ein Design-System?",
+          "answer": "Ein Design-System ist eine zentrale Bibliothek wiederverwendbarer UI-Komponenten, Gestaltungsrichtlinien und Stil-Tokens. Es dient Produktteams als einheitliche Wissensquelle zur schnellen Oberflächenerstellung."
+        },
+        {
+          "question": "Welche Vorteile bietet ein Design-System?",
+          "answer": "Es spart Zeit, reduziert redundante Arbeitsschritte und sichert ein einheitliches Nutzungserlebnis. Entwickler können fertige Module kopieren, statt Elemente bei jedem Projekt neu zu codieren."
+        },
+        {
+          "question": "Erstellen Sie auch den fertigen Code für die Komponenten?",
+          "answer": "Wir gestalten die visuellen Komponentenbibliotheken und Tokens in Figma und dokumentieren diese. Der Code wird so aufbereitet, dass er perfekt zu React, Next.js und TailwindCSS passt."
+        },
+        {
+          "question": "Was versteht man unter Design-Tokens?",
+          "answer": "Design-Tokens sind atomare Werte eines Design-Systems, etwa Farbwerte oder Abstandsmaße. Sie werden als strukturierte Daten abgelegt, um plattformübergreifend automatisierte Stil-Updates zu ermöglichen."
+        },
+        {
+          "question": "Wie lange dauert der Aufbau eines Design-Systems?",
+          "answer": "Ein solches Projekt dauert je nach Produktumfang und Zielplattformen typischerweise acht bis zwölf Wochen. Das umfasst den gesamten Ablauf von Konzeption bis Übergabe."
+        },
+        {
+          "question": "Wie werden Updates im Design-System verwaltet?",
+          "answer": "Wir nutzen die Figma-Bibliotheksfreigabe und Versionsverwaltung. Wir etablieren klare Freigabeprozesse und führen regelmäßige Abstimmungs-Reviews mit Ihren Produktteams durch."
+        },
+        {
+          "question": "Werden Barrierefreiheits-Kriterien berücksichtigt?",
+          "answer": "Ja, Barrierefreiheit ist integraler Bestandteil jedes Elements. Wir prüfen Farbkontraste, Mindestgrößen für Klickziele und Fokuszustände nach WCAG-Richtlinien auf Konformität."
+        },
+        {
+          "question": "Kann ein bestehendes Design-System überarbeitet werden?",
+          "answer": "Absolut. Wir analysieren bestehende UI-Kits, bereinigen veraltete Strukturen, implementieren moderne Figma Auto-Layouts und richten die Elemente an den Codebases Ihrer Entwickler aus."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Figma",
+          "icon": "figma"
+        },
+        {
+          "name": "Storybook",
+          "icon": "storybook"
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "tailwindcss"
+        },
+        {
+          "name": "React",
+          "icon": "react"
+        },
+        {
+          "name": "Next.js",
+          "icon": "nextjs"
+        },
+        {
+          "name": "CSS",
+          "icon": "css"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "ڈیزائن سسٹم",
+    "shortDescription": "مرکزی اور اسکیل ایبل ڈیزائن سسٹم تیار کریں جو ڈیزائنرز اور ڈویلپرز کے درمیان ہم آہنگی پیدا کرے۔ ہم پروڈکٹس کے لیے ایک مشترکہ تکنیکی بنیاد بناتے ہیں۔",
+    "fullDescription": "جیسے جیسے پروڈکٹ کا دائرہ بڑھتا ہے، غیر مستقل انٹرفیسز اور بار بار ہونے والے ڈیزائن سائیکل اکثر سافٹ ویئر بنانے کے اخراجات بڑھاتے ہیں اور برانڈ کی شناخت کو نقصان پہنچاتے ہیں۔ ہم جامع ڈیزائن سسٹم ڈیزائن کرتے ہیں جو مربوط UI اجزاء، مخصوص اسپییسنگ فریم ورکس اور یکساں ٹائپوگرافی قائم کرتے ہیں۔ ہماری ٹیم بہترین Figma لائبریریز بناتی ہے جس میں ویری ایبلز اور لچکدار آٹو لے آؤٹ ڈیزائنز شامل ہوتے ہیں۔ ہم تمام استعمال کے طریقوں، بٹن کی حالتوں اور ڈیجیٹل ایکسیسبیلٹی کے اصولوں پر مشتمل تفصیلی گائیڈز تیار کرتے ہیں۔ ڈیزائن اور سافٹ ویئر کے درمیان مشترکہ زبان قائم کر کے ہم نقصان دہ کاموں کو ختم کرتے ہیں۔",
+    "features": [
+      "مرکزی لے آؤٹ لائبریری کی تیاری",
+      "ڈیزائن ٹوکنز آرکیٹیکچر کا سیٹ اپ",
+      "لچکدار آٹو لے آؤٹ کے ڈیزائن اثاثے",
+      "جامع اسپییسنگ اور گرڈ فریم ورکس",
+      "ایکسیسبیلٹی اور کنٹراسٹ کی چیک لسٹ",
+      "انٹرایکٹو Figma اجزاء کا نقشہ",
+      "کوڈ کے مطابق ڈیزائن گائیڈ لائنز",
+      "ملٹی پلیٹ فارم اسٹائل سنک کی ترتیب"
+    ],
+    "benefits": [
+      "پروڈکٹ ڈویلپمنٹ کی رفتار میں پچاس فیصد تک اضافہ کریں",
+      "جامع سسٹمز اور ایپس میں مکمل یکسانیت یقینی بنائیں",
+      "بار بار ایک ہی چیز کوڈ کرنے کا وقت بچائیں",
+      "تفصیلی دستاویزات سے نئے ڈویلپرز کا کام آسان کریں",
+      "ڈیزائن کی تبدیلیاں خودکار طور پر کوڈ میں سنک کریں",
+      "عالمی قوانین کے مطابق ایکسیسبیلٹی ڈیزائن بنائیں"
+    ],
+    "metaTitle": "ڈیزائن سسٹم اور انٹرفیس لائبریری سروسز | PakSoft",
+    "metaDescription": "پیشہ ورانہ اور اسکیل ایبل ڈیزائن سسٹم بنائیں۔ ہم Figma لائبریریز، ڈیزائن ٹوکنز اور کوڈ کے مطابق دستاویزات بناتے ہیں۔ رابطہ کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "انٹرفیس آڈٹ اور اسکوپنگ",
+          "description": "ہم انٹرفیس میں غیر مستقل چیزوں اور فالتو ڈیزائن پیٹرنز کو جانچنے کے لیے موجودہ ایپس کا جائزہ لیتے ہیں۔ یہ عمل سسٹمز کی ضروریات طے کرتا ہے۔"
+        },
+        {
+          "step": 2,
+          "title": "اسٹائل اور ڈیزائن ٹوکنز",
+          "description": "ہم رنگوں کے ویری ایبلز، ٹائپوگرافی سائز اور اسپییسنگ سمیت ڈیزائن ٹوکنز کی وضاحت کرتے ہیں۔ یہ مرحلہ سسٹم کی بنیادی بنیاد قائم کرتا ہے۔"
+        },
+        {
+          "step": 3,
+          "title": "بنیادی اجزاء کا آرکیٹیکچر",
+          "description": "ہم بٹنز، ان پٹ فیلڈز اور مینو بارز جیسے اہم ڈیزائن اجزاء تیار کرتے ہیں۔ اس عمل کا مرکز دوبارہ استعمال کے قابل لے آؤٹس بنانا ہے۔"
+        },
+        {
+          "step": 4,
+          "title": "پیچیدہ پیٹرنز کا ڈیزائن",
+          "description": "ہم ڈیٹا ٹیبلز، کارڈز اور پاپ اپ ونڈوز جیسے بڑے اجزاء تیار کرتے ہیں۔ یہ مرحلہ پیچیدہ صفحات کے لے آؤٹس میں مستقل مزاجی لاتا ہے۔"
+        },
+        {
+          "step": 5,
+          "title": "دستاویزات اور رہنما اصول",
+          "description": "ہم اجزاء کے استعمال، اینیمیشن کی حالتوں اور ایکسیسبیلٹی معیارات پر مشتمل تفصیلی دستاویزات لکھتے ہیں۔ یہ تمام معلومات کو ایک جگہ جمع کرتا ہے۔"
+        },
+        {
+          "step": 6,
+          "title": "ہینڈ اوور اور ڈویلپر سنک",
+          "description": "ہم ڈیزائن سسٹم کے اجزاء کو React یا Next.js جیسے کوڈنگ فریم ورکس کے ساتھ ہم آہنگ کرتے ہیں۔ یہ قدم ٹیموں کے درمیان کام کو آسان بناتا ہے۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "ڈیزائن سسٹم (design system) کیا ہے؟",
+          "answer": "یہ دوبارہ استعمال کے قابل اجزاء، گائیڈ لائنز اور اسٹائل ٹوکنز کا ایک مرکزی ذخیرہ ہے جو معلومات کے واحد ذریعے کے طور پر کام کرتا ہے۔ یہ ٹیموں کو تیزی سے انٹرفیس بنانے میں مدد دیتا ہے۔"
+        },
+        {
+          "question": "ڈیزائن سسٹم ہمارے کاروبار کو کیسے فائدہ پہنچاتا ہے؟",
+          "answer": "یہ فالتو کاموں کو ختم کرتا ہے، پروجیکٹ لانچ کرنے کا وقت بچاتا ہے اور تمام سسٹمز پر برانڈ کا ایک جیسا اثر رکھتا ہے۔ ڈویلپرز ہر چیز نئے سرے سے بنانے کے بجائے تیار کوڈ استعمال کرتے ہیں۔"
+        },
+        {
+          "question": "کیا آپ کوڈ کے اجزاء بھی خود بناتے ہیں؟",
+          "answer": "ہم Figma میں UI لائبریریز، اسٹائل گائیڈز اور ڈیزائن ٹوکنز بنانے पर توجہ دیتے ہیں۔ تاہم، ہم ان کی دستاویزات کو اس طرح بناتے ہیں جو React، Next.js اور TailwindCSS سے ہم آہنگ ہوں۔"
+        },
+        {
+          "question": "ڈیزائن ٹوکنز (design tokens) کیا ہیں؟",
+          "answer": "یہ ڈیزائن سسٹم کی بنیادی اقدار ہیں جیسے رنگوں کے ہیکس کوڈز، فونٹ کے سائز اور اسپییسنگ۔ انہیں ڈیٹا کے طور پر رکھا جاتا ہے تاکہ تمام پلیٹ فارمز پر اسٹائل خودکار اپ ڈیٹ ہو سکے۔"
+        },
+        {
+          "question": "ڈیزائن سسٹم بنانے میں کتنا وقت لگتا ہے؟",
+          "answer": "پروڈکٹس کی تعداد اور پلیٹ فارمز کی پیچیدگی کے لحاظ سے، ایک بہترین ڈیزائن سسٹم بنانے میں عام طور پر اٹھ سے بارہ ہفتے لگتے ہیں۔"
+        },
+        {
+          "question": "آپ سسٹم میں تبدیلیوں اور ورژنز کو کیسے سنبھالتے ہیں? ",
+          "answer": "ہم اپ ڈیٹس کو منظم کرنے کے لیے Figma کی لائبریری پبلشنگ اور ورژن کی ہسٹری کا استعمال کرتے ہیں۔ ہم تبدیلیوں کے قوانین طے کرتے ہیں اور ڈیزائن ٹیم کے ساتھ جائزے لیتے ہیں۔"
+        },
+        {
+          "question": "کیا یہ سسٹم ایکسیسبیلٹی کو سپورٹ کرنے کے لیے بنایا گیا ہے؟",
+          "answer": "جی ہاں، ہم ہر ڈیزائن کے اندر ایکسیسبیلٹی قوانین لاگو کرتے ہیں۔ ہم رنگوں کے کنٹراسٹ، کلک کے ایریاز اور بٹن کی حالتوں کو سیکیور کرتے ہیں تاکہ ہر صارف اسے استعمال کر سکے۔"
+        },
+        {
+          "question": "کیا ہمارے پرانے ڈیزائن سسٹم کو بہتر کیا جا سکتا ہے؟",
+          "answer": "جی بالکل، ہم پرانے UI کٹس کا جائزہ لے کر فائلیں ترتیب دیتے ہیں، آٹو لے آؤٹ جیسے جدید Figma فیچرز شامل کرتے ہیں اور اسٹائلز کو ڈویلپر کے کوڈ بیس سے جوڑتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Figma",
+          "icon": "figma"
+        },
+        {
+          "name": "Storybook",
+          "icon": "storybook"
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "tailwindcss"
+        },
+        {
+          "name": "React",
+          "icon": "react"
+        },
+        {
+          "name": "Next.js",
+          "icon": "nextjs"
+        },
+        {
+          "name": "CSS",
+          "icon": "css"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "نظم التصميم",
+    "shortDescription": "ابنِ نظماً تصميمية مركزية وقابلة للتوسع تسد الفجوة بين التصميم والتطوير البرمجي. نؤسس مصدراً تقنياً موحداً لجميع تطبيقاتك ومنتجاتك الرقمية.",
+    "fullDescription": "مع نمو محفظة المنتجات الرقمية، تؤدي واجهات المستخدم غير المتسقة ودورات التصميم المتكررة غالباً إلى زيادة تكاليف إنتاج البرمجيات وإضعاف هوية العلامة التجارية. نحن نصمم ونبني نظماً تصميمية شاملة تؤسس لمكونات واجهة مستخدم موحدة، وأطر عمل قياسية للأبعاد، ومجموعات نصوص متناسقة. يبتكر فريق التصميم لدينا مكتبات Figma قوية تتميز بأنماط وقيم مشفرة، ومتغيرات، وعناصر تخطيط تلقائية مرنة. نضع إرشادات تفصيلية توثق حالات المكونات المختلفة ومعايير الامتثال لسهولة الوصول الرقمي. من خلال تأسيس لغة مشتركة بين التصميم والهندسة، نقضي تماماً على الهدر التشغيلي.",
+    "features": [
+      "تطوير مكتبة مكونات واجهات المستخدم المركزية",
+      "هندسة وإدارة قيم التصميم المشفرة Tokens",
+      "بناء أصول مكونات التخطيط التلقائي المرن Figma",
+      "هيكلية متكاملة لأطر عمل الأبعاد والشبكات",
+      "قوائم فحص تباين الألوان وسهولة الوصول الرقمي",
+      "تخطيط حالات المكونات التفاعلية في مكتبة التصميم",
+      "توثيق إرشادات التصميم المتوافقة تماماً مع الكود",
+      "إعدادات مزامنة المظهر عبر المنصات المتعددة"
+    ],
+    "benefits": [
+      "تسريع سرعة تطوير المنتجات بنسب تصل لخمسين بالمئة",
+      "ضمان الاتساق البصري المطلق عبر جميع تطبيقاتك الرقمية",
+      "تقليل الوقت المستغرق في كتابة كود العناصر المتكررة",
+      "تبسيط دمج المطورين الجدد بمكتبات المكونات الموثقة",
+      "تمكين تحديثات التصميم لتنتشر تلقائياً في الكود البرمجي",
+      "بناء تجربة مستخدم متوافقة مع لوائح سهولة الوصول العالمية"
+    ],
+    "metaTitle": "خدمات تصميم نظم التصميم ومكتبات UI | PakSoft",
+    "metaDescription": "ابنِ نظماً تصميمية مركزية وقابلة للتوسع. نصمم مكتبات واجهات مستخدم، وقيم مشفرة، وإرشادات موثقة للمطورين بالتنسيق مع الكود. اتصل بنا.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تدقيق الواجهات وتحديد النطاق",
+          "description": "نراجع تطبيقاتك البرمجية الحالية لتحديد عدم الاتساق في الواجهات والمكونات المتكررة. يوضح هذا الفحص متطلبات النظام بوضوح."
+        },
+        {
+          "step": 2,
+          "title": "الأنماط البصرية والقيم المشفرة",
+          "description": "نحدد قيم التصميم الأساسية مثل مجموعات النصوص، والألوان، والأبعاد، والظلال. تؤسس هذه الخطوة الطبقة التحتية للنظام."
+        },
+        {
+          "step": 3,
+          "title": "هندسة المكونات الأساسية",
+          "description": "نصمم مكونات الواجهة الرئيسية مثل الأزرار، وحقول الإدخال، وعناصر القوائم. يركز هذا العمل على إنشاء تخطيطات قابلة لإعادة الاستخدام."
+        },
+        {
+          "step": 4,
+          "title": "تصميم الأنماط المركبة",
+          "description": "نبني المكونات الأكبر والأكثر تعقيداً مثل جداول البيانات، والبطاقات، والنوافذ المنبثقة. تضمن هذه المرحلة اتساق التخطيطات المعقدة."
+        },
+        {
+          "step": 5,
+          "title": "التوثيق وإرشادات الاستخدام",
+          "description": "نكتب إرشادات شاملة توضح طرق استخدام المكونات، وحالات التفاعل، ومعايير سهولة الوصول. يوفر هذا التوثيق مرجعاً موحداً."
+        },
+        {
+          "step": 6,
+          "title": "التسليم ومزامنة المطورين",
+          "description": "ننسق مكونات نظام التصميم مع أطر عمل المطورين مثل React أو Next.js لضمان انتقال سلس للمشاريع دون أخطاء أو تأخير."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما هو نظام التصميم؟",
+          "answer": "نظام التصميم هو مكتبة مركزية من المكونات القابلة لإعادة الاستخدام، والإرشادات، والقيم المشفرة التي تمثل مرجعاً موحداً. يساعد الفرق البرمجية في بناء واجهات متسقة بسرعة."
+        },
+        {
+          "question": "كيف يفيد نظام التصميم أعمالنا التجارية؟",
+          "answer": "يقضي على الأعمال المتكررة، ويسرع طرح المنتجات في السوق، ويضمن تجربة بصرية متسقة تماماً. يمكن للمطورين استخدام مكونات جاهزة دون الحاجة لكتابتها من الصفر."
+        },
+        {
+          "question": "هل تقومون ببرمجة المكونات أيضاً؟",
+          "answer": "نحن نركز على تصميم مكتبات المكونات، وأدلة الأنماط، وقيم التصميم في Figma. ومع ذلك، نوثقها لتتوافق تماماً مع أطر العمل مثل React وNext.js وTailwindCSS."
+        },
+        {
+          "question": "ما هي قيم التصميم المشفرة (design tokens)؟",
+          "answer": "هي القيم الذرية للنظام مثل رموز الألوان، وأحجام الخطوط، وأبعاد المسافات. يتم تخزينها كبيانات لضمان تحديثات المظهر التلقائية عبر المنصات المتنوعة."
+        },
+        {
+          "question": "كم من الوقت يستغرق بناء نظام التصميم؟",
+          "answer": "يستغرق بناء نظام تصميم شامل ما بين ثمانية إلى اثني عشر أسبوعاً، اعتماداً على حجم محفظة منتجاتك الرقمية وتنوع المنصات المستهدفة."
+        },
+        {
+          "question": "كيف تتعاملون مع التحديثات والإصدارات في نظام التصميم؟",
+          "answer": "نستخدم ميزات نشر المكتبات وتتبع الإصدارات في Figma لإدارة التحديثات. نضع سياسات مراجعة واضحة ونعقد اجتماعات دورية مع فريق التصميم لديك."
+        },
+        {
+          "question": "هل يتم بناء نظام التصميم ليدعم سهولة الوصول؟",
+          "answer": "نعم، ندمج معايير سهولة الوصول في التصميم الأساسي لكل مكون. نتحقق من نسب تباين الألوان، ومساحات النقر، وحالات التركيز لضمان مطابقة اللوائح العالمية."
+        },
+        {
+          "question": "هل يمكن تدقيق وتحسين نظام التصميم الحالي لدينا؟",
+          "answer": "بالتأكيد. نراجع بانتظام الملفات القديمة لتنظيمها، ونطبق ميزات Figma الحديثة مثل التنسيق التلقائي، وننسق الأنماط لتتوافق مع الكود البرمجي للمطورين."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Figma",
+          "icon": "figma"
+        },
+        {
+          "name": "Storybook",
+          "icon": "storybook"
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "tailwindcss"
+        },
+        {
+          "name": "React",
+          "icon": "react"
+        },
+        {
+          "name": "Next.js",
+          "icon": "nextjs"
+        },
+        {
+          "name": "CSS",
+          "icon": "css"
+        }
+      ]
+    }
+  }
+}

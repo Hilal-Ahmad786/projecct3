@@ -1,0 +1,1553 @@
+{
+  "mlops-model-deployment": {
+    "en": {
+      "name": "MLOps & Model Deployment",
+      "shortDescription": "Automate the lifecycle of your machine learning models. We build robust MLOps pipelines for automated deployment, registry, experiment tracking, and real-time model monitoring.",
+      "fullDescription": "Deploying machine learning models to production is only half the battle; maintaining their performance over time is where projects often fail. We design and implement end-to-end MLOps solutions that automate the deployment, scaling, and monitoring of ML models. Utilizing frameworks like MLflow, Kubeflow, and AWS SageMaker, we construct structured retraining pipelines, track experiments, and secure model registers. We integrate continuous model monitoring to track data drift, concept drift, and prediction latency, alerting your team before models degrade in value. From setting up automated A/B testing frameworks to managing high-throughput feature stores, our MLOps engineering ensures your production models remain stable, scalable, and cost-efficient.",
+      "features": [
+        "Automated Model Training Pipelines",
+        "Structured Experiment Tracking with Weights & Biases",
+        "Centralized Model Registry and Versioning",
+        "Automated CI/CD Model Deployment",
+        "Dynamic A/B Testing & Canary Deployments",
+        "Real-Time Prediction Monitoring & Alerting",
+        "Automated Data & Concept Drift Detection",
+        "Unified Feature Store Design & Optimization"
+      ],
+      "benefits": [
+        "Reduce model deployment time from months to minutes",
+        "Prevent prediction degradation using automated drift alerts",
+        "Compare model performance easily via structured registries",
+        "Scale model hosting automatically as traffic spikes",
+        "Ensure strict reproducibility of model training runs",
+        "Minimize server hosting costs with optimized inference engines"
+      ],
+      "metaTitle": "MLOps & Model Deployment Services | Custom AI | PakSoft",
+      "metaDescription": "Automate and monitor your machine learning models in production. We build robust MLOps pipelines using MLflow, Kubeflow, and SageMaker. Contact us.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "MLOps Infrastructure Audit",
+            "description": "We audit your existing model pipelines, cloud resources, and deployment needs to design a custom MLOps blueprint."
+          },
+          {
+            "step": 2,
+            "title": "Pipeline Construction",
+            "description": "We build automated training and validation pipelines using Kubeflow or Airflow to compile models reliably."
+          },
+          {
+            "step": 3,
+            "title": "Registry & Tracking Setup",
+            "description": "We configure MLflow or Weights & Biases to log parameters, metrics, and manage model versions securely."
+          },
+          {
+            "step": 4,
+            "title": "Automated Deployment Setup",
+            "description": "We design CI/CD pipelines to pack models in Docker containers and deploy them to Kubernetes clusters automatically."
+          },
+          {
+            "step": 5,
+            "title": "Monitoring & Alerting",
+            "description": "We implement Prometheus dashboards to monitor input data drift, concept drift, and inference latency in real time."
+          },
+          {
+            "step": 6,
+            "title": "Feedback Loops Setup",
+            "description": "We build automated retraining loops that trigger when drift alerts fire, updating production models automatically."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is MLOps and why is it important?",
+            "answer": "MLOps (Machine Learning Operations) applies DevOps principles to ML models. It automates model training, testing, registry, and deployment, ensuring models perform accurately in production over time."
+          },
+          {
+            "question": "How do you detect when a model is failing?",
+            "answer": "We track statistical metrics comparing production input data with training datasets. When statistical drift is detected, the system sends alert flags and can trigger automatic retraining."
+          },
+          {
+            "question": "Which cloud platforms do you support for deployment?",
+            "answer": "We support all major cloud providers, deploying models on Amazon SageMaker, Google Vertex AI, Azure ML, or private Kubernetes clusters (EKS, GKE) using Docker."
+          },
+          {
+            "question": "What is a model registry?",
+            "answer": "A model registry is a central repository storing model versions, artifacts, metadata, and stage transitions (e.g., Staging to Production), ensuring clear model governance."
+          },
+          {
+            "question": "Do you support A/B testing for models?",
+            "answer": "Yes, we build routing configurations that split production traffic between models (e.g., 90% to Champion, 10% to Challenger) to compare real-world performance safely."
+          },
+          {
+            "question": "How do you optimize model query speeds?",
+            "answer": "We use inference serving frameworks like vLLM, Triton, or ONNX Runtime to compile models, reducing CPU/GPU memory footprint and query latency."
+          },
+          {
+            "question": "What is a feature store?",
+            "answer": "A feature store is a centralized database storing normalized inputs (features) for ML models, ensuring the same features are used for training and real-time prediction."
+          },
+          {
+            "question": "How long does it take to implement a complete MLOps pipeline?",
+            "answer": "A basic MLOps training and registry setup takes 4 to 6 weeks, while a complete pipeline with drift monitoring and Kubernetes serving takes 8 to 12 weeks."
+          }
+        ],
+        "technologies": [
+          { "name": "MLflow", "icon": "mlflow" },
+          { "name": "Kubeflow", "icon": "kubeflow" },
+          { "name": "AWS SageMaker", "icon": "aws" },
+          { "name": "Weights & Biases", "icon": "wandb" },
+          { "name": "Kubernetes", "icon": "kubernetes" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "Python", "icon": "python" },
+          { "name": "Prometheus", "icon": "prometheus" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "MLOps ve Model Yayına Alma",
+      "shortDescription": "Makine öğrenimi modellerinizin yaşam döngüsünü otomatikleştirin. Otomatik dağıtım, model kaydı, deney takibi ve gerçek zamanlı izleme için sağlam MLOps hatları kuruyoruz.",
+      "fullDescription": "Makine öğrenimi modellerini üretim ortamına almak işin sadece yarısıdır; zaman içindeki performanslarını korumak, projelerin genellikle başarısız olduğu yerdir. ML modellerinin dağıtımını, ölçeklendirilmesini ve izlenmesini otomatikleştiren uçtan uca MLOps çözümleri tasarlıyor ve uyguluyoruz. MLflow, Kubeflow ve AWS SageMaker gibi çerçeveleri kullanarak yapılandırılmış yeniden eğitim veri hatları oluşturuyor, deneyleri izliyor ve model kayıtlarını güvence altına alıyoruz. Veri kayması (data drift), kavram kayması (concept drift) ve tahmin gecikmesini izlemek için sürekli model izleme özellikleri entegre ederek, modeller değer kaybetmeden önce ekibinizi uyarıyoruz. Otomatik A/B testi sistemleri kurmaktan yüksek performanslı özellik depoları (feature stores) yönetmeye kadar, MLOps mühendisliğimiz üretim modellerinizin kararlı, ölçeklenebilir ve uygun maliyetli kalmasını sağlar.",
+      "features": [
+        "Otomatik Model Eğitim Veri Hatları",
+        "Weights & Biases ile Yapılandırılmış Deney Takibi",
+        "Merkezi Model Kaydı ve Sürüm Kontrolü",
+        "Otomatik CI/CD Model Dağıtımı",
+        "Dinamik A/B Testleri ve Canary Dağıtımları",
+        "Gerçek Zamanlı Tahmin İzleme ve Uyarılar",
+        "Otomatik Veri ve Kavram Kayması Tespiti",
+        "Birleşik Özellik Deposu Tasarımı ve Optimizasyonu"
+      ],
+      "benefits": [
+        "Model yayına alma süresini aylardan dakikalara indirin",
+        "Otomatik kayma uyarılarıyla tahmin kalitesindeki düşüşleri önleyin",
+        "Yapılandırılmış kayıtlar aracılığıyla model performansını kolayca karşılaştırın",
+        "Trafik arttıkça model barındırma sistemlerini otomatik ölçeklendirin",
+        "Model eğitim süreçlerinin sıkı bir şekilde tekrarlanabilirliğini sağlayın",
+        "Optimize edilmiş çıkarım motorlarıyla sunucu barındırma maliyetlerini en aza indirin"
+      ],
+      "metaTitle": "MLOps & Model Dağıtım Hizmetleri | Custom AI | PakSoft",
+      "metaDescription": "Üretimdeki makine öğrenimi modellerinizi otomatikleştirin ve izleyin. MLflow, Kubeflow ve SageMaker kullanarak sağlam MLOps hatları kuruyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "MLOps Altyapı Denetimi",
+            "description": "Özel bir MLOps yol haritası tasarlamak için mevcut model hatlarınızı, bulut kaynaklarınızı ve dağıtım ihtiyaçlarınızı inceliyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Veri Hattının Oluşturulması",
+            "description": "Modelleri güvenilir bir şekilde derlemek için Kubeflow veya Airflow kullanarak otomatik eğitim ve doğrulama hatları kuruyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Kayıt & Takip Kurulumu",
+            "description": "Parametreleri, metrikleri kaydetmek ve model sürümlerini güvenli bir şekilde yönetmek için MLflow veya Weights & Biases yapılandırıyoruz."
+          },
+          {
+            "step": 4,
+            "title": "Otomatik Dağıtım Kurulumu",
+            "description": "Modelleri Docker konteynerlerinde paketlemek ve bunları Kubernetes kümelerine otomatik olarak dağıtmak için CI/CD hatları tasarlıyoruz."
+          },
+          {
+            "step": 5,
+            "title": "İzleme ve Uyarı Sistemleri",
+            "description": "Girdi verisi kaymasını, kavram kaymasını ve çıkarım gecikmesini gerçek zamanlı izlemek için Prometheus panelleri kuruyoruz."
+          },
+          {
+            "step": 6,
+            "title": "Geri Bildirim Döngüleri",
+            "description": "Kayma uyarıları tetiklendiğinde çalışan ve üretim modellerini otomatik güncelleyen otomatik yeniden eğitim döngüleri oluşturuyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "MLOps nedir ve neden önemlidir?",
+            "answer": "MLOps (Makine Öğrenimi Operasyonları), DevOps ilkelerini ML modellerine uygular. Model eğitimini, test edilmesini, kaydedilmesini ve dağıtılmasını otomatikleştirerek modellerin üretimde zaman içinde doğru performans göstermesini sağlar."
+          },
+          {
+            "question": "Bir modelin başarısız olduğunu nasıl tespit ediyorsunuz?",
+            "answer": "Üretim girdi verilerini eğitim veri kümeleriyle karşılaştıran istatistiksel metrikleri izliyoruz. İstatistiksel kayma (drift) tespit edildiğinde, sistem uyarı gönderir ve otomatik yeniden eğitimi tetikleyebilir."
+          },
+          {
+            "question": "Dağıtım için hangi bulut platformlarını destekliyorsunuz?",
+            "answer": "Amazon SageMaker, Google Vertex AI, Azure ML veya Docker kullanan özel Kubernetes kümeleri (EKS, GKE) üzerinde modelleri devreye alarak tüm büyük bulut sağlayıcılarını destekliyoruz."
+          },
+          {
+            "question": "Model kaydı (model registry) nedir?",
+            "answer": "Model kaydı; model sürümlerini, çıktıları, meta verileri ve aşama geçişlerini (örn. Testten Üretime) depolayan, net model yönetimi sağlayan merkezi bir depodur."
+          },
+          {
+            "question": "Modeller için A/B testini destekliyor musunuz?",
+            "answer": "Evet, gerçek dünya performansını güvenli bir şekilde karşılaştırmak amacıyla üretim trafiğini modeller arasında bölen (örn. %90 Şampiyon modele, %10 Aday modele) yönlendirme yapılandırmaları oluşturuyoruz."
+          },
+          {
+            "question": "Model sorgu hızlarını nasıl optimize ediyorsunuz?",
+            "answer": "Modelleri derlemek için vLLM, Triton veya ONNX Runtime gibi çıkarım sunum çerçevelerini kullanarak CPU/GPU bellek kullanımını ve sorgu gecikmesini azaltıyoruz."
+          },
+          {
+            "question": "Özellik deposu (feature store) nedir?",
+            "answer": "Özellik deposu, ML modelleri için normalleştirilmiş girdileri (özellikleri) depolayan ve hem eğitim hem de gerçek zamanlı tahmin için aynı özelliklerin kullanılmasını sağlayan merkezi bir veritabanıdır."
+          },
+          {
+            "question": "Eksiksiz bir MLOps veri hattını uygulamak ne kadar sürer?",
+            "answer": "Temel bir MLOps eğitimi ve kayıt kurulumu 4 ila 6 hafta sürerken; kayma izleme ve Kubernetes sunumu içeren eksiksiz bir veri hattı 8 ila 12 hafta gerektirir."
+          }
+        ],
+        "technologies": [
+          { "name": "MLflow", "icon": "mlflow" },
+          { "name": "Kubeflow", "icon": "kubeflow" },
+          { "name": "AWS SageMaker", "icon": "aws" },
+          { "name": "Weights & Biases", "icon": "wandb" },
+          { "name": "Kubernetes", "icon": "kubernetes" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "Python", "icon": "python" },
+          { "name": "Prometheus", "icon": "prometheus" }
+        ]
+      }
+    },
+    "de": {
+      "name": "MLOps & Model Deployment",
+      "shortDescription": "Automatisieren Sie den Lebenszyklus Ihrer Machine-Learning-Modelle. Wir bauen MLOps-Pipelines für automatisiertes Deployment, Registrierung, Experiment-Tracking und Monitoring.",
+      "fullDescription": "Das Deployment von Modellen in die Produktion ist erst der Anfang. Die Aufrechterhaltung der Performance im Laufe der Zeit ist die eigentliche Herausforderung. Wir entwickeln und implementieren MLOps-Lösungen, die das Deployment, die Skalierung und das Monitoring von ML-Modellen automatisieren. Mit Frameworks wie MLflow, Kubeflow und AWS SageMaker bauen wir strukturierte Retraining-Pipelines auf, verfolgen Experimente und sichern Model-Register. Wir integrieren kontinuierliches Monitoring, um Data Drift, Concept Drift und Antwortlatenzen zu überwachen und Ihr Team rechtzeitig bei Qualitätsverlusten zu alarmieren. Unser Service stellt sicher, dass Ihre produktiven Modelle stabil, skalierbar und kosteneffizient bleiben.",
+      "features": [
+        "Automatisierte Pipelines zum Modelltraining",
+        "Strukturiertes Experiment-Tracking mit Weights & Biases",
+        "Zentrales Model-Register und Versionierung",
+        "Automatisches CI/CD-Modell-Deployment",
+        "Dynamische A/B-Tests & Canary-Deployments",
+        "Echtzeit-Performance-Monitoring & Alarmierung",
+        "Erkennung von Data- & Concept-Drift",
+        "Konzeption und Optimierung von Feature-Stores"
+      ],
+      "benefits": [
+        "Modell-Deploymentzeiten von Monaten auf Minuten reduzieren",
+        "Qualitätsverlusten durch automatische Drift-Warnungen vorbeugen",
+        "Modell-Performance über strukturierte Register leicht vergleichen",
+        "Modell-Hosting bei Traffic-Spitzen automatisch skalieren",
+        "Strikte Reproduzierbarkeit von Trainingsläufen sicherstellen",
+        "Serverkosten durch optimierte Inferenz-Engines minimieren"
+      ],
+      "metaTitle": "MLOps & Model-Deployment Services | Custom AI | PakSoft",
+      "metaDescription": "Automatisieren und überwachen Sie Ihre ML-Modelle in der Produktion. Wir bauen MLOps-Pipelines mit MLflow, Kubeflow und SageMaker. Kontakt aufnehmen.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "MLOps-Infrastruktur-Audit",
+            "description": "Wir analysieren Ihre vorhandenen Modell-Pipelines, Cloud-Ressourcen und Deployment-Ziele für ein MLOps-Konzept."
+          },
+          {
+            "step": 2,
+            "title": "Pipeline-Konstruktion",
+            "description": "Wir bauen automatisierte Trainings- und Validierungs-Pipelines mit Kubeflow oder Airflow für verlässliche Modelle."
+          },
+          {
+            "step": 3,
+            "title": "Registry- & Tracking-Setup",
+            "description": "Wir konfigurieren MLflow oder Weights & Biases, um Parameter und Metriken zu protokollieren und Modellversionen zu verwalten."
+          },
+          {
+            "step": 4,
+            "title": "Automatisiertes Deployment",
+            "description": "Wir entwickeln CI/CD-Pipelines, um Modelle in Docker-Containern zu paketieren und automatisch auf Kubernetes zu verteilen."
+          },
+          {
+            "step": 5,
+            "title": "Monitoring & Alarmierung",
+            "description": "Wir implementieren Prometheus-Dashboards zur Echtzeit-Überwachung von Datendrift, Konzeptdrift und Latenzen."
+          },
+          {
+            "step": 6,
+            "title": "Feedback-Schleifen-Setup",
+            "description": "Wir bauen automatisierte Retraining-Schleifen, die bei Drift-Alarmen ausgelöst werden und Produktivmodelle selbsttätig aktualisieren."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Was ist MLOps und warum ist es wichtig?",
+            "answer": "MLOps (Machine Learning Operations) wendet DevOps-Prinzipien auf ML-Modelle an. Es automatisiert Modelltraining, Tests, Registrierung und Deployment, damit Modelle in der Produktion langfristig verlässlich funktionieren."
+          },
+          {
+            "question": "Wie erkennen Sie, ob ein Modell schlechter wird?",
+            "answer": "Wir vergleichen die statistischen Merkmale der produktiven Eingabedaten mit den Trainingsdaten. Bei statistischem Drift sendet das System Warnungen und kann ein automatisches Retraining anstoßen."
+          },
+          {
+            "question": "Welche Cloud-Plattformen unterstützen Sie für das Deployment?",
+            "answer": "Wir unterstützen alle großen Cloud-Anbieter und stellen Modelle auf Amazon SageMaker, Google Vertex AI, Azure ML oder privaten Kubernetes-Clustern (EKS, GKE) mittels Docker bereit."
+          },
+          {
+            "question": "Was ist ein Model Register?",
+            "answer": "Ein Model Register ist ein zentraler Speicherort für Modellversionen, Artefakte, Metadaten und Phasenübergänge (z. B. Staging zu Produktion) für eine transparente Modellverwaltung."
+          },
+          {
+            "question": "Unterstützen Sie A/B-Tests für Modelle?",
+            "answer": "Ja, wir konfigurieren Routing-Regeln, die den Produktiv-Traffic aufteilen (z. B. 90% auf das etablierte Modell, 10% auf das Testmodell), um die reale Performance sicher zu vergleichen."
+          },
+          {
+            "question": "Wie optimieren Sie die Abfragegeschwindigkeit der Modelle?",
+            "answer": "Wir nutzen Serving-Frameworks wie vLLM, Triton oder ONNX Runtime, um Modelle zu kompilieren. Das reduziert den CPU/GPU-Speicherbedarf und senkt Latenzzeiten."
+          },
+          {
+            "question": "Was ist ein Feature Store?",
+            "answer": "Ein Feature Store ist eine zentrale Datenbank, die normalisierte Eingabedaten (Features) für ML-Modelle speichert, damit im Training und in der Echtzeit-Vorhersage identische Features genutzt werden."
+          },
+          {
+            "question": "Wie lange dauert die Implementierung einer MLOps-Pipeline?",
+            "answer": "Ein grundlegendes Setup für Training und Registrierung dauert 4 bis 6 Wochen, während eine vollständige Pipeline mit Drift-Monitoring und Kubernetes-Serving 8 bis 12 Wochen erfordert."
+          }
+        ],
+        "technologies": [
+          { "name": "MLflow", "icon": "mlflow" },
+          { "name": "Kubeflow", "icon": "kubeflow" },
+          { "name": "AWS SageMaker", "icon": "aws" },
+          { "name": "Weights & Biases", "icon": "wandb" },
+          { "name": "Kubernetes", "icon": "kubernetes" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "Python", "icon": "python" },
+          { "name": "Prometheus", "icon": "prometheus" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "ایم ایل اوپس اور ماڈل ہوسٹنگ",
+      "shortDescription": "مشین لرننگ ماڈلز کے لائف سائیکل کو خودکار بنائیں۔ ہم ماڈل رجسٹری، تجربات کی ٹریکنگ اور مانیٹرنگ کے لیے MLOps پائپ لائنز بناتے ہیں۔",
+      "fullDescription": "مشین لرننگ ماڈلز کو پروڈکشن میں لانا صرف آدھی کامیابی ہے؛ وقت کے ساتھ ان کی کارکردگی کو برقرار رکھنا وہ مرحلہ ہے جہاں پروجیکٹس اکثر ناکام ہو جاتے ہیں۔ ہم اینڈ ٹو اینڈ MLOps سلوشنز ڈیزائن اور نافذ کرتے ہیں جو ML ماڈلز کی ہوسٹنگ، اسکیلنگ اور نگرانی کو خودکار بناتے ہیں۔ MLflow، Kubeflow، اور AWS SageMaker جیسے فریم ورکس کی مدد سے، ہم خودکار ٹریننگ پائپ لائنز بناتے ہیں اور ماڈل ورژن کو محفوظ کرتے ہیں۔ ہم ڈیٹا کی تبدیلی (drift) اور ماڈل کی رفتار پر مسلسل نظر رکھتے ہیں تاکہ کارکردگی خراب ہونے سے پہلے الرٹس حاصل ہو سکیں۔ A/B ٹیسٹنگ فریم ورکس سے لے کر فیچر اسٹورز تک، ہماری انجینئرنگ ماڈلز کو مستقل اور سستا رکھتی ہے۔",
+      "features": [
+        "خودکار ماڈل ٹریننگ پائپ لائنز",
+        "Weights & Biases کے ذریعے منظم ٹریکنگ",
+        "مرکزی ماڈل رجسٹری اور ورژن کنٹرول",
+        "خودکار CI/CD ماڈل ہوسٹنگ پائپ لائنز",
+        "ڈينامک A/B ٹیسٹنگ اور کینری ہوسٹنگ",
+        "ریئل ٹائم ماڈل مانیٹرنگ اور الرٹس کا نظام",
+        "خودکار ڈیٹا اور کنسیپٹ ڈرفٹ کی شناخت",
+        "مرکزی فیچر اسٹور ڈیزائن اور اصلاح"
+      ],
+      "benefits": [
+        "ماڈل ہوسٹ کرنے کے وقت کو مہینوں سے منٹوں میں لائیں",
+        "خودکار الرٹس کی مدد سے ماڈل کی کارکردگی خراب ہونے سے بچائیں",
+        "مرکزی رجسٹری کے ذریعے مختلف ماڈلز کا موازنہ کریں",
+        "ٹریفک بڑھنے پر سرورز کو خودکار طور پر وسعت دیں",
+        "ماڈل ٹریننگ کے عمل کو ہمیشہ دوبارہ بنانے کے قابل رکھیں",
+        "بہترین سرونگ انجنز سے سرورز کے اخراجات کم سے کم کریں"
+      ],
+      "metaTitle": "ایم ایل اوپس اور ماڈل ہوسٹنگ سروسز | PakSoft",
+      "metaDescription": "اپنے مشین لرننگ ماڈلز کی ہوسٹنگ اور مانیٹرنگ کو خودکار بنائیں۔ ہم MLflow، Kubeflow اور SageMaker کے ذریعے MLOps پائپ لائنز بناتے ہیں۔ رابطہ کریں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "البتہ بنیادی ڈھانچے کا جائزہ",
+            "description": "ہم آپ کے موجودہ ماڈل پائپ لائنز اور ہوسٹنگ کی ضروریات کا جائزہ لے کر ایک منصوبہ تیار کرتے ہیں۔"
+          },
+          {
+            "step": 2,
+            "title": "پائپ لائن کی تعمیر",
+            "description": "ہم ماڈلز کو قابل بھروسہ بنانے کے لیے Kubeflow یا Airflow کے ذریعے خودکار ٹریننگ اور توثیقی پائپ لائنز بناتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "رجسٹری اور ٹریکنگ سیٹ اپ",
+            "description": "ہم ماڈل کے پیرامیٹرز اور ورژن کو محفوظ کرنے کے لیے MLflow یا Weights & Biases کو ترتیب دیتے ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "خودکار ہوسٹنگ",
+            "description": "ہم CI/CD پائپ لائنز بناتے ہیں جو ماڈلز کو Docker کنٹینرز میں پیک کر کے Kubernetes پر خود بخود ہوسٹ کرتی ہیں۔"
+          },
+          {
+            "step": 5,
+            "title": "نگرانی اور الرٹس",
+            "description": "ہم ریئل ٹائم میں ڈیٹا ڈرفٹ اور پروسیسنگ وقت کی نگرانی کے لیے Prometheus ڈیش بورڈز بناتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "دوبارہ ٹریننگ کے لوپس",
+            "description": "ہم ایسے خودکار لوپس سیٹ کرتے ہیں جو کارکردگی خراب ہونے پر ماڈل کو خود بخود دوبارہ ٹرین کر کے لائیو کر دیتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "ایم ایل اوپس (MLOps) کیا ہے اور یہ کیوں ضروری ہے؟",
+            "answer": "ایم ایل اوپس مشین لرننگ ماڈلز پر سافٹ ویئر ڈیولپمنٹ (DevOps) کے اصول لاگو کرتا ہے۔ یہ ماڈل کی ٹریننگ، ٹیسٹنگ اور ہوسٹنگ کو خودکار بناتا ہے تاکہ وہ لائیو سرورز پر ہمیشہ درست نتائج دیں۔"
+          },
+          {
+            "question": "آپ کو کیسے معلوم ہوتا ہے کہ ماڈل کی کارکردگی خراب ہو رہی ہے؟",
+            "answer": "ہم لائیو آنے والے ڈیٹا کا موازنہ ٹریننگ ڈیٹا سے کرتے ہیں۔ جب لائیو ڈیٹا کی خصوصیات بدلتی ہیں (جسے ڈرفٹ کہا جاتا ہے)، تو سسٹم الرٹ بھیجتا ہے اور خودکار ٹریننگ شروع ہو سکتی ہے۔"
+          },
+          {
+            "question": "آپ ہوسٹنگ کے لیے کن کلاؤڈ پلیٹ فارمز کو سپورٹ کرتے ہیں؟",
+            "answer": "ہم تمام بڑے کلاؤڈ سسٹمز جیسے Amazon SageMaker، Google Vertex AI، Azure ML، اور Docker پر مبنی نجی Kubernetes سرورز کو سپورٹ کرتے ہیں۔"
+          },
+          {
+            "question": "ماڈل رجسٹری (model registry) کیا ہے؟",
+            "answer": "ماڈل رجسٹری ایک مرکزی جگہ ہے جہاں ماڈل کے تمام ورژن، ان کی فائلیں اور معلومات محفوظ کی جاتی ہیں تاکہ معلوم رہے کہ لائیو سرور پر کون سا ورژن چل رہا ہے۔"
+          },
+          {
+            "question": "کیا آپ ماڈلز کی A/B ٹیسٹنگ کو سپورٹ کرتے ہیں؟",
+            "answer": "جی ہاں، ہم سرور کو اس طرح ترتیب دیتے ہیں کہ لائیو ٹریفک کا کچھ حصہ نئے ماڈل کو بھیجا جائے (جیسے 10 فیصد) تاکہ بغیر کسی خطرے کے اس کی کارکردگی کی جانچ کی جا سکے۔"
+          },
+          {
+            "question": "آپ ماڈل کی پروسیسنگ رفتار کو کیسے بڑھاتے ہیں؟",
+            "answer": "ہم vLLM، Triton، یا ONNX Runtime جیسے انجنز کا استعمال کرتے ہیں جو ماڈل کی فائلز کو کمپریس اور تیز کرتے ہیں، جس سے سرور کی میموری کم استعمال ہوتی ہے۔"
+          },
+          {
+            "question": "فیچر اسٹور (feature store) کیا ہے؟",
+            "answer": "فیچر اسٹور ایک مرکزی ڈیٹا بیس ہے جو ماڈل کے لیے تیار کردہ معلومات (features) کو محفوظ رکھتا ہے، تاکہ ٹریننگ اور لائیو سروس کے دوران ایک ہی قسم کا ڈیٹا استعمال ہو۔"
+          },
+          {
+            "question": "مکمل ایم ایل اوپس پائپ لائن بنانے میں کتنا وقت لگتا ہے؟",
+            "answer": "بنیادی ٹریننگ اور رجسٹری سیٹ اپ میں 4 سے 6 ہفتے لگتے ہیں، جبکہ مانیٹرنگ اور Kubernetes ہوسٹنگ کے ساتھ مکمل پائپ لائن بنانے میں 8 سے 12 ہفتے درکار ہوتے ہیں۔"
+          }
+        ],
+        "technologies": [
+          { "name": "MLflow", "icon": "mlflow" },
+          { "name": "Kubeflow", "icon": "kubeflow" },
+          { "name": "AWS SageMaker", "icon": "aws" },
+          { "name": "Weights & Biases", "icon": "wandb" },
+          { "name": "Kubernetes", "icon": "kubernetes" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "Python", "icon": "python" },
+          { "name": "Prometheus", "icon": "prometheus" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "إدارة تشغيل ونشر نماذج التعلم الآلي MLOps",
+      "shortDescription": "قم بأتمتة دورة حياة نماذج التعلم الآلي الخاصة بك. نحن نبني مسارات MLOps قوية للنشر الآلي، وتسجيل النماذج، وتتبع التجارب، والمراقبة في الوقت الفعلي.",
+      "fullDescription": "نشر نماذج التعلم الآلي في البيئة الفعلية هو نصف المعركة فقط؛ حيث تفشل المشاريع غالباً في الحفاظ على أدائها بمرور الوقت. نحن نصمم وننفذ حلول MLOps شاملة تعمل على أتمتة نشر نماذج التعلم الآلي وتوسيع نطاقها ومراقبتها. باستخدام أطر عمل مثل MLflow و Kubeflow و AWS SageMaker، نقوم ببناء مسارات إعادة تدريب منظمة، وتتبع التجارب، وتأمين سجلات النماذج. ندمج المراقبة المستمرة لتتبع انحراف البيانات (data drift) وزمن استجابة التنبؤ، وتنبيه فريقك قبل أن تتراجع دقة النماذج. من إعداد أطر اختبارات A/B التلقائية إلى إدارة مستودعات الميزات، تضمن هندستنا بقاء نماذجك مستقرة وقابلة للتطوير.",
+      "features": [
+        "مسارات تدريب تلقائية لنماذج التعلم الآلي",
+        "تتبع منظم للتجارب باستخدام Weights & Biases",
+        "سجل مركزي للنماذج وتتبع الإصدارات",
+        "نشر تلقائي للنماذج عبر مسارات CI/CD",
+        "اختبارات A/B الديناميكية وعمليات نشر Canary",
+        "مراقبة التنبؤات وتنبيهات الأخطاء في الوقت الفعلي",
+        "اكتشاف تلقائي لانحراف البيانات والمفاهيم",
+        "تصميم وتحسين مستودعات الميزات الموحدة"
+      ],
+      "benefits": [
+        "تقليل وقت نشر النماذج من أشهر إلى دقائق معدودة",
+        "منع تدهور التنبؤات باستخدام تنبيهات الانحراف الآلية",
+        "مقارنة أداء النماذج بسهولة عبر السجلات المنظمة",
+        "توسيع نطاق استضافة النماذج تلقائياً مع زيادة حركة المرور",
+        "ضمان إمكانية إعادة إنتاج عمليات تدريب النماذج بدقة",
+        "تقليل تكاليف الاستضافة باستخدام محركات استدلال محسنة"
+      ],
+      "metaTitle": "خدمات MLOps ونشر النماذج | ذكاء اصطناعي | PakSoft",
+      "metaDescription": "قم بأتمتة ومراقبة نماذج التعلم الآلي في الإنتاج. نبني مسارات MLOps قوية باستخدام MLflow و Kubeflow و SageMaker. اتصل بنا.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تدقيق البنية التحتية لـ MLOps",
+            "description": "نراجع مسارات النماذج الحالية وموارد السحابة واحتياجات النشر لتصميم مخطط MLOps مخصص لشركتك."
+          },
+          {
+            "step": 2,
+            "title": "بناء مسارات التدريب",
+            "description": "نبني مسارات تدريب وتحقق تلقائية باستخدام Kubeflow أو Airflow لتجميع النماذج بشكل موثوق."
+          },
+          {
+            "step": 3,
+            "title": "إعداد السجل والتتبع",
+            "description": "نقوم بتهيئة MLflow أو Weights & Biases لتسجيل المعلمات والمقاييس وإدارة إصدارات النماذج بشكل آمن."
+          },
+          {
+            "step": 4,
+            "title": "إعداد النشر التلقائي",
+            "description": "تصميم مسارات CI/CD لتعبئة النماذج في حاويات Docker ونشرها تلقائياً على مجموعات Kubernetes."
+          },
+          {
+            "step": 5,
+            "title": "المراقبة والتنبيه",
+            "description": "ننفذ لوحات تحكم Prometheus لمراقبة انحراف البيانات وزمن انتقال الاستدلال في الوقت الفعلي."
+          },
+          {
+            "step": 6,
+            "title": "حلقات التغذية الراجعة",
+            "description": "نبني حلقات إعادة تدريب تلقائية يتم تشغيلها عند صدور تنبيهات الانحراف، لتحديث النماذج لترقيتها تلقائياً."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما هو MLOps ولماذا يعد مهماً؟",
+            "answer": "يطبق MLOps مبادئ DevOps على نماذج التعلم الآلي. يقوم بأتمتة تدريب النماذج واختبارها وتسجيلها ونشرها، مما يضمن أداء النماذج بدقة وثبات في الإنتاج بمرور الوقت."
+          },
+          {
+            "question": "كيف تكتشف تراجع أداء النموذج؟",
+            "answer": "نتتبع المقاييس الإحصائية التي تقارن بيانات المدخلات الفعلية بالإنتاج مع مجموعات بيانات التدريب. عند اكتشاف انحراف إحصائي، يرسل النظام تنبيهات ويمكنه بدء إعادة التدريب تلقائياً."
+          },
+          {
+            "question": "ما هي السحابات التي تدعمونها لنشر النماذج؟",
+            "answer": "نحن ندعم جميع موفري السحاب الرئيسيين، وننشر النماذج على Amazon SageMaker أو Google Vertex AI أو Azure ML أو مجموعات Kubernetes الخاصة باستخدام Docker."
+          },
+          {
+            "question": "ما هو سجل النماذج (Model Registry)؟",
+            "answer": "سجل النماذج هو مستودع مركزي يخزن إصدارات النماذج، والأصول، والبيانات الوصفية، وانتقالات المراحل (مثل الانتقال من مرحلة الاختبار إلى الإنتاج)."
+          },
+          {
+            "question": "هل تدعمون اختبارات A/B للنماذج؟",
+            "answer": "نعم، نبني تكوينات توجيه تقسم حركة مرور الإنتاج بين النماذج (مثل 90٪ للنموذج الأساسي، و 10٪ للنموذج المنافس) لمقارنة الأداء الفعلي بأمان."
+          },
+          {
+            "question": "كيف تحسن سرعة استعلام النماذج؟",
+            "answer": "نستخدم أطر عمل لخدمة الاستدلال مثل vLLM أو Triton أو ONNX Runtime لتجميع النماذج، مما يقلل من استخدام ذاكرة CPU/GPU وزمن استجابة الاستعلام."
+          },
+          {
+            "question": "ما هو مستودع الميزات (Feature Store)؟",
+            "answer": "مستودع الميزات هو قاعدة بيانات مركزية تخزن المدخلات المنظمة لنماذج التعلم الآلي، مما يضمن استخدام نفس الميزات للتدريب والتنبؤ في الوقت الفعلي."
+          },
+          {
+            "question": "كم يستغرق تنفيذ مسار MLOps كامل؟",
+            "answer": "يستغرق إعداد التدريب الأساسي والسجل من 4 إلى 6 أسابيع، بينما يستغرق المسار الكامل مع مراقبة الانحراف والتشغيل على Kubernetes من 8 إلى 12 أسبوعاً."
+          }
+        ],
+        "technologies": [
+          { "name": "MLflow", "icon": "mlflow" },
+          { "name": "Kubeflow", "icon": "kubeflow" },
+          { "name": "AWS SageMaker", "icon": "aws" },
+          { "name": "Weights & Biases", "icon": "wandb" },
+          { "name": "Kubernetes", "icon": "kubernetes" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "Python", "icon": "python" },
+          { "name": "Prometheus", "icon": "prometheus" }
+        ]
+      }
+    }
+  },
+  "multi-agent-systems": {
+    "en": {
+      "name": "Multi-Agent Systems",
+      "shortDescription": "Build cooperative networks of AI agents that collaborate to solve complex tasks. We design multi-agent systems with role specialization, memory, and human guardrails.",
+      "fullDescription": "Single-agent AI systems struggle with complex, multi-departmental business workflows. We design and build advanced Multi-Agent Systems where specialized AI agents cooperate to solve complex, multi-step tasks. Utilizing modern frameworks like CrewAI, AutoGen, and LangGraph, we define custom roles, communication protocols, and conflict resolution mechanisms for each agent (e.g., an analyst agent collaborating with a writer agent and a checker agent). We equip the network with shared memory systems and tool integrations, allowing agents to execute API calls, access databases, and search the web. By incorporating human-in-the-loop gates for sensitive steps, we ensure that the system executes tasks with human oversight, delivering reliable automation for complex operations.",
+      "features": [
+        "Agent Orchestration and Routing Logic",
+        "Specialized Agent Roles and Persona Definition",
+        "Secure Agent-to-Agent Communication Protocols",
+        "Automated Conflict Resolution and Voting",
+        "Shared Context and Short/Long-Term Memory",
+        "Collaborative Task Distribution Pipelines",
+        "Human-in-the-Loop Gates for Sensitive Actions",
+        "Comprehensive Agent Path Logging and Tracing"
+      ],
+      "benefits": [
+        "Automate complex, non-linear workflows with high reliability",
+        "Scale operations without increasing headcount proportionately",
+        "Execute multi-step reasoning tasks beyond single-model capacity",
+        "Provide full audit logs of every agent action and choice",
+        "Combine specialized models for cost-efficient task execution",
+        "Maintain strict control with human approval checkpoints"
+      ],
+      "metaTitle": "Multi-Agent System Development | AI Crew | PakSoft",
+      "metaDescription": "Build collaborative networks of specialized AI agents. We construct multi-agent workflows using CrewAI, AutoGen, and LangGraph. Learn more.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Workflow Mapping",
+            "description": "We analyze your business workflow, breaking it down into distinct tasks and identifying which parts require AI reasoning."
+          },
+          {
+            "step": 2,
+            "title": "Agent Persona Design",
+            "description": "We design individual agents, defining their personas, roles, specialized skills, and tools they are allowed to access."
+          },
+          {
+            "step": 3,
+            "title": "Communication Architecture",
+            "description": "We set up agent-to-agent communication protocols and state management using LangGraph to control execution flow."
+          },
+          {
+            "step": 4,
+            "title": "Tool and API Integration",
+            "description": "We connect agents to external APIs, databases, web search utilities, and document parsers securely."
+          },
+          {
+            "step": 5,
+            "title": "Human-in-the-Loop Setup",
+            "description": "We build approval gates for sensitive actions (like sending emails or writing to databases) requiring human verification."
+          },
+          {
+            "step": 6,
+            "title": "Testing & Observability Setup",
+            "description": "We test the agent network across edge cases, logging pathways in LangSmith to trace reasoning steps and costs."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is a multi-agent system?",
+            "answer": "A multi-agent system is a network of specialized AI agents working together to achieve a goal. Each agent has specific roles, rules, and tools, allowing them to solve tasks by collaborating."
+          },
+          {
+            "question": "Why is a multi-agent system better than a single prompt?",
+            "answer": "A single prompt is limited by context window and reasoning depth. Multi-agent systems break complex tasks into smaller pieces, allowing agents to peer-review each other and correct errors dynamically."
+          },
+          {
+            "question": "What frameworks do you use to build multi-agent systems?",
+            "answer": "We build using LangGraph for cyclic agent graphs, CrewAI for structured role-based orchestration, and Microsoft AutoGen for conversational agent workflows, depending on the project structure."
+          },
+          {
+            "question": "Can agents perform actions in our systems?",
+            "answer": "Yes, we build secure API integrations enabling agents to write database rows, send Slack alerts, or draft emails, always protected by human approval gates."
+          },
+          {
+            "question": "How do you prevent agents from looping infinitely?",
+            "answer": "We set strict maximum step counts and timeout limits for agent chains. We also implement loop detection logic in LangGraph to exit loops and alert humans when loops occur."
+          },
+          {
+            "question": "How is the memory managed between agents?",
+            "answer": "We implement short-term memory (shared during a single run context) and long-term memory (persisted in vector databases) so agents remember past interactions and user choices."
+          },
+          {
+            "question": "What is human-in-the-loop?",
+            "answer": "Human-in-the-loop means the agent pauses execution when it reaches a critical decision point and waits for a human to review, edit, or approve the next step before continuing."
+          },
+          {
+            "question": "How do we monitor agent reasoning paths?",
+            "answer": "We integrate observability platforms like LangSmith or Phoenix, giving your engineering team a complete visual trace of every model call, tool use, and cost per execution."
+          }
+        ],
+        "technologies": [
+          { "name": "CrewAI", "icon": "crewai" },
+          { "name": "AutoGen", "icon": "autogen" },
+          { "name": "LangGraph", "icon": "langgraph" },
+          { "name": "LangSmith", "icon": "langsmith" },
+          { "name": "OpenAI API", "icon": "openai" },
+          { "name": "Python", "icon": "python" },
+          { "name": "FastAPI", "icon": "fastapi" },
+          { "name": "Docker", "icon": "docker" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Çoklu Ajan Sistemleri",
+      "shortDescription": "Karmaşık görevleri çözmek için iş birliği yapan yapay zeka ajanlarından oluşan ağlar kurun. Rol uzmanlığı, bellek ve insan denetimi içeren çoklu ajan sistemleri tasarlıyoruz.",
+      "fullDescription": "Tek bir yapay zeka ajanı, karmaşık ve çok departmanlı kurumsal iş akışlarında zorlanır. Özel yapay zeka ajanlarının karmaşık, çok adımlı görevleri çözmek için iş birliği yaptığı gelişmiş Çoklu Ajan Sistemleri tasarlıyor ve kuruyoruz. CrewAI, AutoGen ve LangGraph gibi modern çerçeveleri kullanarak her bir ajan için özel roller, iletişim protokolleri ve çatışma çözme mekanizmaları tanımlıyoruz (örneğin, bir yazar ajan ve kontrolör ajan ile iş birliği yapan bir analist ajanı). Ağı, paylaşılan bellek sistemleri ve araç entegrasyonlarıyla donatarak ajanların API çağrıları yapmasına, veritabanlarına erişmesine ve web'de arama yapmasına olanak tanıyoruz. Hassas adımlar için insan onay mekanizmaları (human-in-the-loop) ekleyerek, sistemin insan gözetiminde çalışmasını ve karmaşık süreçlerde güvenilir otomasyon sağlamasını garanti ediyoruz.",
+      "features": [
+        "Ajan Yönetimi ve Yönlendirme Mantığı",
+        "Özel Ajan Rolleri ve Persona Tanımlama",
+        "Güvenli Ajanlar Arası İletişim Protokolleri",
+        "Otomatik Çatışma Çözme ve Oylama",
+        "Paylaşılan Bağlam ve Kısa/Uzun Vadeli Bellek",
+        "İş Birliğine Dayalı Görev Dağıtım Hatları",
+        "Hassas Eylemler İçin İnsan Onay Geçitleri",
+        "Kapsamlı Ajan Karar Yolu Günlüğü ve İzleme"
+      ],
+      "benefits": [
+        "Karmaşık, doğrusal olmayan iş akışlarını yüksek güvenilirlikle otomatikleştirin",
+        "Operasyonları, personel sayısını orantılı olarak artırmadan ölçeklendirin",
+        "Tek bir modelin kapasitesini aşan çok adımlı akıl yürütme görevlerini yürütün",
+        "Her ajan eyleminin ve seçiminin tam denetim günlüklerini sağlayın",
+        "Maliyet etkin görev yürütme için özel modelleri birleştirin",
+        "İnsan onay kontrol noktalarıyla süreçler üzerinde tam kontrol sağlayın"
+      ],
+      "metaTitle": "Çoklu Ajan Sistemi Geliştirme | AI Crew | PakSoft",
+      "metaDescription": "Özel yapay zeka ajanlarından oluşan iş birliği ağları kurun. CrewAI, AutoGen ve LangGraph kullanarak çoklu ajan iş akışları oluşturuyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "İş Akışı Haritalama",
+            "description": "İş akışınızı analiz ederek ayrı görevlere bölüyor ve hangi bölümlerin yapay zeka mantığı gerektirdiğini belirliyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Ajan Persona Tasarımı",
+            "description": "Ajanları tasarlıyor; personalarını, rollerini, özel becerilerini ve erişmelerine izin verilen araçları tanımlıyoruz."
+          },
+          {
+            "step": 3,
+            "title": "İletişim Mimarisi",
+            "description": "Yürütme akışını kontrol etmek için LangGraph kullanarak ajanlar arası iletişim protokollerini ve durum yönetimini kuruyoruz."
+          },
+          {
+            "step": 4,
+            "title": "Araç ve API Entegrasyonu",
+            "description": "Ajanları harici API'lere, veritabanlarına, web arama araçlarına ve belge ayrıştırıcılara güvenli bir şekilde bağlıyoruz."
+          },
+          {
+            "step": 5,
+            "title": "İnsan Onay Mekanizması Kurulumu",
+            "description": "E-posta gönderme veya veritabanına yazma gibi hassas eylemler için insan doğrulaması gerektiren onay geçitleri oluşturuyoruz."
+          },
+          {
+            "step": 6,
+            "title": "Test & Gözlemlenebilirlik Kurulumu",
+            "description": "Ajan ağını uç durumlar altında test ediyor, mantık adımlarını ve maliyetleri izlemek için LangSmith'te günlükler oluşturuyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Çoklu ajan sistemi nedir?",
+            "answer": "Çoklu ajan sistemi, bir hedefe ulaşmak için birlikte çalışan özel yapay zeka ajanlarından oluşan bir ağdır. Her ajanın belirli rolleri ve araçları vardır; bu da onların iş birliği yaparak görevleri çözmesini sağlar."
+          },
+          {
+            "question": "Çoklu ajan sistemi neden tek bir prompttan daha iyidir?",
+            "answer": "Tek bir prompt, bağlam penceresi ve akıl yürütme derinliği ile sınırlıdır. Çoklu ajan sistemleri karmaşık görevleri daha küçük parçalara bölerek ajanların birbirlerini denetlemesini ve hataları dinamik olarak düzeltmesini sağlar."
+          },
+          {
+            "question": "Çoklu ajan sistemleri oluşturmak için hangi çerçeveleri kullanıyorsunuz?",
+            "answer": "Proje yapısına bağlı olarak döngüsel ajan grafikleri için LangGraph, rol tabanlı yönetim için CrewAI ve konuşkan ajan akışları için Microsoft AutoGen kullanıyoruz."
+          },
+          {
+            "question": "Ajanlar sistemlerimizde eylemler gerçekleştirebilir mi?",
+            "answer": "Evet, ajanların veritabanı satırları yazmasına, Slack uyarıları göndermesine veya e-posta taslakları hazırlamasına olanak tanıyan güvenli API entegrasyonları oluşturuyoruz; bunlar her zaman insan onayına tabidir."
+          },
+          {
+            "question": "Ajanların sonsuz döngüye girmesini nasıl önlüyorsunuz?",
+            "answer": "Ajan zincirleri için katı maksimum adım sayıları ve zaman aşımı sınırları belirliyoruz. Ayrıca döngüleri sonlandırmak ve insanları uyarmak için LangGraph'te döngü algılama mantığı uyguluyoruz."
+          },
+          {
+            "question": "Ajanlar arasında bellek nasıl yönetilir?",
+            "answer": "Ajanların geçmiş etkileşimleri ve kullanıcı seçimlerini hatırlaması için kısa vadeli bellek (tek bir çalışma bağlamında paylaşılan) ve uzun vadeli bellek (vektör veritabanlarında saklanan) uyguluyoruz."
+          },
+          {
+            "question": "İnsan onaylı süreç (human-in-the-loop) nedir?",
+            "answer": "İnsan onaylı süreç, ajanın kritik bir karar noktasına ulaştığında yürütmeyi durdurması ve devam etmeden önce bir insanın sonraki adımı gözden geçirmesini, düzenlemesini veya onaylamasını beklemesidir."
+          },
+          {
+            "question": "Ajanların karar yollarını nasıl izleyebiliriz?",
+            "answer": "LangSmith veya Phoenix gibi gözlemlenebilirlik platformlarını entegre ederek mühendislik ekibinize her model çağrısının, araç kullanımının ve yürütme başına maliyetin tam görsel izini sunuyoruz."
+          }
+        ],
+        "technologies": [
+          { "name": "CrewAI", "icon": "crewai" },
+          { "name": "AutoGen", "icon": "autogen" },
+          { "name": "LangGraph", "icon": "langgraph" },
+          { "name": "LangSmith", "icon": "langsmith" },
+          { "name": "OpenAI API", "icon": "openai" },
+          { "name": "Python", "icon": "python" },
+          { "name": "FastAPI", "icon": "fastapi" },
+          { "name": "Docker", "icon": "docker" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Multi-Agenten-Systeme",
+      "shortDescription": "Bauen Sie kooperative Netzwerke aus spezialisierten KI-Agenten auf. Wir entwickeln Multi-Agenten-Systeme mit Rollenverteilung, Memory und Guardrails.",
+      "fullDescription": "Einzelne KI-Agenten stoßen bei komplexen, abteilungsübergreifenden Geschäftsprozessen oft an Grenzen. Wir entwerfen und bauen Multi-Agenten-Systeme, in denen spezialisierte KI-Agenten zusammenarbeiten, um komplexe, mehrstufige Aufgaben zu lösen. Mit Frameworks wie CrewAI, AutoGen und LangGraph definieren wir Rollen, Kommunikationsprotokolle und Konfliktlösungsmechanismen für die Agenten (z. B. ein Analysten-Agent arbeitet mit einem Texter- und Prüfer-Agenten zusammen). Wir statten das Netzwerk mit Shared-Memory-Systemen und API-Schnittstellen aus. Durch die Integration von Freigabeprozessen (Human-in-the-Loop) stellen wir sicher, dass sensible Schritte unter menschlicher Aufsicht bleiben.",
+      "features": [
+        "Agenten-Orchestrierung & Routing-Logik",
+        "Spezifische Rollen- und Persona-Definitionen",
+        "Sichere Agent-to-Agent-Protokolle",
+        "Automatisierte Konfliktlösung und Abstimmung",
+        "Shared Context & Kurz-/Langzeitgedächtnis",
+        "Kollaborative Aufgabenverteilung in Pipelines",
+        "Human-in-the-Loop-Freigaben für kritische Schritte",
+        "Ausführliches Tracing & Logging der Agenten-Pfade"
+      ],
+      "benefits": [
+        "Komplexe, nicht-lineare Workflows hochgradig verlässlich automatisieren",
+        "Skalierung der Prozesse ohne proportionalen Personalaufwand",
+        "Mehrstufige Denkprozesse jenseits von Single-Prompting umsetzen",
+        "Vollständige Audit-Logs jeder Agenten-Entscheidung sichern",
+        "Nutzung spezialisierter Modelle für kosteneffizientes Arbeiten",
+        "Prozesskontrolle durch integrierte Prüfschritte wahren"
+      ],
+      "metaTitle": "Entwicklung von Multi-Agenten-Systemen | AI Crew | PakSoft",
+      "metaDescription": "Bauen Sie kooperative KI-Netzwerke aus spezialisierten Agenten auf. Wir entwickeln Workflows mit CrewAI, AutoGen und LangGraph. Erfahren Sie mehr.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Workflow-Mapping",
+            "description": "Wir analysieren Ihre Geschäftsprozesse, zerlegen sie in Teilaufgaben und identifizieren Bereiche für KI-Entscheidungen."
+          },
+          {
+            "step": 2,
+            "title": "Agent-Persona-Design",
+            "description": "Wir konzipieren die Agenten und definieren deren Personas, Rollen, Fähigkeiten und erlaubte IT-Werkzeuge."
+          },
+          {
+            "step": 3,
+            "title": "Kommunikationsarchitektur",
+            "description": "Wir konfigurieren Kommunikationsprotokolle und das State-Management mit LangGraph zur Steuerung des Prozessflusses."
+          },
+          {
+            "step": 4,
+            "title": "Werkzeug- & API-Integration",
+            "description": "Wir verbinden die Agenten sicher mit externen Schnittstellen, Datenbanken, Websuchen und Dokumenten-Parsern."
+          },
+          {
+            "step": 5,
+            "title": "Human-in-the-Loop-Setup",
+            "description": "Wir integrieren Prüfpunkte für kritische Aktionen (z. B. E-Mail-Versand, Datenbank-Schreibrechte), die eine menschliche Freigabe erfordern."
+          },
+          {
+            "step": 6,
+            "title": "Testing & Observability",
+            "description": "Wir testen das Agenten-Netzwerk unter extremen Bedingungen und protokollieren die Entscheidungspfade in LangSmith zur Optimierung."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Was ist ein Multi-Agenten-System?",
+            "answer": "Ein Multi-Agenten-System ist ein Verbund spezialisierter KI-Agenten, die kooperieren, um ein Ziel zu erreichen. Jeder Agent hat feste Rollen und Werkzeuge, wodurch Aufgaben arbeitsteilig gelöst werden."
+          },
+          {
+            "question": "Warum ist ein Multi-Agenten-System besser als ein einzelner Prompt?",
+            "answer": "Ein einzelner Prompt stößt bei Kontext und Logik an Grenzen. Multi-Agenten-Systeme zerlegen Aufgaben, sodass sich Agenten gegenseitig korrigieren und Ergebnisse validieren können."
+          },
+          {
+            "question": "Welche Frameworks nutzen Sie für den Bau solcher Systeme?",
+            "answer": "Wir nutzen LangGraph für zyklische Abläufe, CrewAI für rollenbasierte Orchestrierungen und Microsoft AutoGen für dialogbasierte Workflows, je nach Projektstruktur."
+          },
+          {
+            "question": "Können Agenten Aktionen in unseren internen Systemen ausführen?",
+            "answer": "Ja, wir entwickeln sichere API-Konnektoren, mit denen Agenten Datenbankeinträge vornehmen oder Slack-Nachrichten senden können — abgesichert durch Freigabeprozesse."
+          },
+          {
+            "question": "Wie verhindern Sie Endlosschleifen der Agenten?",
+            "answer": "Wir definieren Obergrenzen für Prozessschritte und Timeouts. In LangGraph implementieren wir eine Loop-Detection, um Endlosschleifen abzubrechen und Warnungen zu senden."
+          },
+          {
+            "question": "Wie wird das Gedächtnis der Agenten gesteuert?",
+            "answer": "Wir nutzen Kurzzeitgedächtnisse (Shared Context innerhalb eines Laufs) und Langzeitgedächtnisse mittels Vektordatenbanken, damit Agenten Präferenzen im Verlauf behalten."
+          },
+          {
+            "question": "Was bedeutet Human-in-the-Loop?",
+            "answer": "Es bedeutet, dass der Agent an kritischen Entscheidungspunkten pausiert und wartet, bis ein menschlicher Prüfer den Schritt freigibt oder anpasst, bevor der Prozess fortgesetzt wird."
+          },
+          {
+            "question": "Wie können wir die Entscheidungsschritte der Agenten nachvollziehen?",
+            "answer": "Wir integrieren Plattformen wie LangSmith oder Phoenix. Diese bieten Ihrem Team eine lückenlose Visualisierung aller Modellaufrufe, Werkzeugnutzungen und Kosten."
+          }
+        ],
+        "technologies": [
+          { "name": "CrewAI", "icon": "crewai" },
+          { "name": "AutoGen", "icon": "autogen" },
+          { "name": "LangGraph", "icon": "langgraph" },
+          { "name": "LangSmith", "icon": "langsmith" },
+          { "name": "OpenAI API", "icon": "openai" },
+          { "name": "Python", "icon": "python" },
+          { "name": "FastAPI", "icon": "fastapi" },
+          { "name": "Docker", "icon": "docker" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "ملٹی ایجنٹ اے آئی سسٹمز",
+      "shortDescription": "مخصوص اے آئی ایجنٹوں کے نیٹ ورکس بنائیں جو مل کر پیچیدہ کاموں کو حل کریں۔ ہم رول اسپیشلائزیشن اور انسدادِ لوپ سسٹمز بناتے ہیں۔",
+      "fullDescription": "اکیلا اے آئی ماڈل اکثر طویل اور کثیر الجہتی کاروباری کاموں کو سنبھالنے میں ناکام رہتا ہے۔ ہم ملٹی ایجنٹ سسٹمز ڈیزائن کرتے ہیں جہاں مختلف کاموں کے ماہر اے آئی ایجنٹس ایک ٹیم کی طرح مل کر کام کرتے ہیں۔ CrewAI، AutoGen، اور LangGraph جیسے فریم ورکس کی مدد سے ہم ہر ایجنٹ کا کردار اور ذمہ داریاں طے کرتے ہیں (جیسے ایک ریسرچ ایجنٹ، ایک رائٹر ایجنٹ اور ایک ایڈیٹر ایجنٹ)۔ ہم ایجنٹس کو ڈیٹا بیسز، انٹرنیٹ اور دیگر APIs کے استعمال کی صلاحیت فراہم کرتے ہیں۔ حساس کاموں جیسے ای میل بھیجنا یا ڈیٹا بیس میں لکھنا کے لیے ہم انسانی منظوری کا نظام (human-in-the-loop) نافذ کرتے ہیں تاکہ نتائج پر مکمل کنٹرول رہے۔",
+      "features": [
+        "ایجنٹ آرکیسٹریشن اور راؤٹنگ لاجک",
+        "ایجنٹس کے مخصوص کردار اور پرسنل ڈیزائن",
+        "محفوظ ایجنٹ ٹو ایجنٹ کمیونیکیشن",
+        "خودکار تنازعات کا حل اور ووٹنگ سسٹم",
+        "کولا بوریٹو مختصر اور طویل مدتی میموری",
+        "ایجنٹس کے درمیان خودکار کام کی تقسیم",
+        "حساس کاموں کے لیے انسانی منظوری کے گیٹس",
+        "ایجنٹ کے فیصلے کے راستے کی تفصیلی مانیٹرنگ"
+      ],
+      "benefits": [
+        "پیچیدہ اور غیر لکیری کاموں کو محفوظ طریقے سے خودکار بنائیں",
+        "اضافی عملے کے بغیر کاروباری سرگرمیوں کو وسعت دیں",
+        "ایک ہی ماڈل کی صلاحیت سے زیادہ بڑے کام حل کریں",
+        "ایجنٹ کی تمام سرگرمیوں کے مکمل لاگز حاصل کریں",
+        "اخراجات کو کم رکھنے کے لیے سستے ماڈلز کا استعمال کریں",
+        "اہم مراحل پر انسانی کنٹرول اور نگرانی برقرار رکھیں"
+      ],
+      "metaTitle": "ملٹی ایجنٹ اے آئی سسٹمز کی تیاری | PakSoft",
+      "metaDescription": "ماہر اے آئی ایجنٹس کی مدد سے کاروباری کاموں کو خودکار بنائیں۔ ہم CrewAI اور LangGraph کے ذریعے ملٹی ایجنٹ سسٹمز بناتے ہیں۔ معلومات حاصل کریں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "کام کے بہاؤ کا نقشہ",
+            "description": "ہم آپ کے کاروباری کام کا تجزیہ کرتے ہیں اور اسے چھوٹے حصوں میں تقسیم کر کے ایجنٹوں کے لیے فلو ڈیزائن کرتے ہیں۔"
+          },
+          {
+            "step": 2,
+            "title": "ایجنٹ پرسنل ڈیزائن",
+            "description": "ہم ہر ایجنٹ کا کردار، لہجہ اور اس کے لیے مخصوص سیکیورٹی قوانین اور ٹولز طے کرتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "کمیونیکیشن آرکیٹیکچر",
+            "description": "ہم ایجنٹوں کے درمیان ڈیٹا کے تبادلے کے لیے LangGraph کے ذریعے محفوظ مواصلاتی قوانین بناتے ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "ٹولز اور اے پی آئی انٹیگریشن",
+            "description": "ہم ایجنٹوں کو ڈیٹا بیسز، کلاؤڈ فائلز اور بیرونی سروسز کے استعمال کے لیے APIs فراہم کرتے ہیں۔"
+          },
+          {
+            "step": 5,
+            "title": "انسانی منظوری کا نظام",
+            "description": "ہم اہم اقدامات کے لیے منظوری کے چیک پوائنٹس بناتے ہیں جہاں سسٹم انسانی منظوری کا انتظار کرتا ہے۔"
+          },
+          {
+            "step": 6,
+            "title": "ٹیسٹنگ اور نگرانی",
+            "description": "ہم مختلف کیسز پر ایجنٹ نیٹ ورک کی جانچ کرتے ہیں اور LangSmith کے ذریعے کارکردگی مانیٹر کرتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "ملٹی ایجنٹ سسٹم کیا ہے؟",
+            "answer": "ملٹی ایجنٹ سسٹم مختلف ماہر اے آئی ایجنٹوں کا ایک نیٹ ورک ہوتا ہے جو کسی ایک ہدف کو حاصل کرنے کے لیے مل کر کام کرتے ہیں۔ ہر ایجنٹ کا اپنا ایک کردار اور ٹول ہوتا ہے۔"
+          },
+          {
+            "question": "یہ سسٹم ایک عام اے آئی پرامپٹ سے بہتر کیوں ہے؟",
+            "answer": "ایک عام پرامپٹ محدود معلومات سنبھال سکتا ہے۔ ملٹی ایجنٹ سسٹم بڑے کام کو حصوں میں بانٹتا ہے اور ایجنٹس ایک دوسرے کی غلطیوں کی خود کار اصلاح کر سکتے ہیں۔"
+          },
+          {
+            "question": "آپ ملٹی ایجنٹ سسٹم بنانے کے لیے کون سے فریم ورکس استعمال کرتے ہیں؟",
+            "answer": "ہم پیچیدہ کاموں کے لیے LangGraph، کرداروں کے انتظام کے لیے CrewAI اور بات چیت پر مبنی ایجنٹوں کے لیے Microsoft AutoGen کا استعمال کرتے ہیں۔"
+          },
+          {
+            "question": "کیا ایجنٹ ہمارے سسٹمز میں کام کر سکتے ہیں؟",
+            "answer": "جی ہاں، ہم سیکیورٹی APIs بناتے ہیں جن کی مدد سے ایجنٹ ڈیٹا بیس میں لکھ سکتے ہیں یا سلیک پر الرٹس بھیج سکتے ہیں، مگر یہ عمل ہمیشہ انسانی نگرانی میں ہوتا ہے۔"
+          },
+          {
+            "question": "آپ ایجنٹوں کو بار بار ایک ہی کام دہرانے (looping) سے کیسے روکتے ہیں؟",
+            "answer": "ہم ایجنٹ کی سرگرمی پر زیادہ سے زیادہ اقدامات کی حد مقرر کرتے ہیں اور LangGraph کے اندر لوپ کا پتہ لگا کر اسے خود بخود بند کرنے کا نظام بناتے ہیں۔"
+          },
+          {
+            "question": "ایجنٹوں کے درمیان یادداشت (memory) کا انتظام کیسے ہوتا ہے؟",
+            "answer": "ہم مختصر یادداشت (ایک سیشن کے لیے) اور طویل یادداشت (ڈیٹا بیس میں محفوظ) دونوں کو مربوط کرتے ہیں تاکہ ایجنٹس پرانی سرگرمیوں کو یاد رکھ سکیں۔"
+          },
+          {
+            "question": "انسانی منظوری کا نظام (human-in-the-loop) کیسے کام کرتا ہے؟",
+            "answer": "اس کا مطلب یہ ہے کہ جب ایجنٹ کوئی اہم فیصلہ کرنے لگتا ہے، تو وہ وہیں رک جاتا ہے اور سیکیورٹی کی خاطر کسی انسان کی منظوری ملنے پر ہی آگے بڑھتا ہے۔"
+          },
+          {
+            "question": "ہم ایجنٹوں کے فیصلے کے راستے کو کیسے دیکھ سکتے ہیں؟",
+            "answer": "ہم LangSmith یا Phoenix جیسے ٹولز کو مربوط کرتے ہیں جو آپ کی انجینئرنگ ٹیم کو ایجنٹ کے ہر قدم، ماڈل کے استعمال اور اخراجات کا تفصیلی نقشہ فراہم کرتے ہیں۔"
+          }
+        ],
+        "technologies": [
+          { "name": "CrewAI", "icon": "crewai" },
+          { "name": "AutoGen", "icon": "autogen" },
+          { "name": "LangGraph", "icon": "langgraph" },
+          { "name": "LangSmith", "icon": "langsmith" },
+          { "name": "OpenAI API", "icon": "openai" },
+          { "name": "Python", "icon": "python" },
+          { "name": "FastAPI", "icon": "fastapi" },
+          { "name": "Docker", "icon": "docker" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "أنظمة الوكلاء المتعددين",
+      "shortDescription": "ابنِ شبكات تعاونية من وكلاء الذكاء الاصطناعي المتخصصين للعمل معاً لحل المهام المعقدة. نصمم أنظمة بوكلاء متعددين مع تخصص الأدوار وضوابط حماية.",
+      "fullDescription": "تواجه أنظمة الوكيل الواحد صعوبة في التعامل مع مسارات العمل المؤسسية المعقدة الممتدة عبر أقسام متعددة. نحن نصمم ونبني أنظمة الوكلاء المتعددين المتقدمة حيث يتعاون وكلاء ذكاء اصطناعي متخصصون لحل المهام المعقدة متعددة الخطوات. باستخدام أطر عمل حديثة مثل CrewAI و AutoGen و LangGraph، نحدد أدواراً مخصصة وبروتوكولات اتصال وآليات لحل النزاعات لكل وكيل (مثل وكيل محلل يتعاون مع وكيل كاتب ووكيل مدقق). نقوم بتزويد الشبكة بأنظمة ذاكرة مشتركة وتكاملات للأدوات تتيح للوكلاء إجراء استدعاءات API والوصول لقواعد البيانات والبحث في الويب، مع إدراج بوابات موافقة بشرية للخطوات الحساسة لضمان الأمان والموثوقية.",
+      "features": [
+        "تنسيق الوكلاء ومنطق توجيه مسارات العمل",
+        "تحديد أدوار الوكلاء المتخصصين وبناء الشخصيات",
+        "بروتوكولات اتصال آمنة ومباشرة بين الوكلاء",
+        "آليات تلقائية لحل النزاعات والتصويت الداخلي",
+        "سياق مشترك وذاكرة قصيرة وطويلة المدى للأنظمة",
+        "مسارات توزيع المهام التعاونية بين الوكلاء",
+        "بوابات موافقة بشرية للإجراءات الحساسة",
+        "تسجيل وتتبع شامل لمسارات قرارات الوكلاء"
+      ],
+      "benefits": [
+        "أتمتة مسارات العمل المعقدة وغير الخطية بموثوقية عالية",
+        "توسيع العمليات دون الحاجة لزيادة عدد الموظفين بشكل طردي",
+        "تنفيذ مهام استدلالية متعددة الخطوات تفوق قدرة النموذج الواحد",
+        "توفير سجلات تدقيق كاملة لجميع إجراءات وخيارات الوكلاء",
+        "الجمع بين نماذج متخصصة لتنفيذ المهام بكفاءة عالية للتكلفة",
+        "الحفاظ على تحكم صارم بفضل نقاط مراجعة الموافقات البشرية"
+      ],
+      "metaTitle": "تطوير أنظمة الوكلاء المتعددين | AI Crew | PakSoft",
+      "metaDescription": "ابنِ شبكات تعاونية من وكلاء الذكاء الاصطناعي المتخصصين. ننشئ مسارات عمل الوكلاء باستخدام CrewAI و AutoGen و LangGraph. اعرف المزيد.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "رسم خريطة العمل",
+            "description": "نحلل مسار عملك ونقسمه إلى مهام منفصلة ونحدد الأجزاء التي تتطلب استدلالاً بالذكاء الاصطناعي."
+          },
+          {
+            "step": 2,
+            "title": "تصميم شخصيات الوكلاء",
+            "description": "نصمم الوكلاء الأفراد ونحدد شخصياتهم وأدوارهم ومهاراتهم الخاصة والأدوات المسموح لهم بالوصول إليها."
+          },
+          {
+            "step": 3,
+            "title": "بنية الاتصالات",
+            "description": "نعد بروتوكولات الاتصال بين الوكلاء وإدارة الحالة باستخدام LangGraph للتحكم في تدفق التنفيذ."
+          },
+          {
+            "step": 4,
+            "title": "تكامل الأدوات والواجهات",
+            "description": "نربط الوكلاء بالواجهات الخارجية وقواعد البيانات وأدوات البحث وقارئات المستندات بشكل آمن."
+          },
+          {
+            "step": 5,
+            "title": "إعداد بوابات الموافقة البشرية",
+            "description": "نبني بوابات موافقة للإجراءات الحساسة (مثل إرسال البريد الإلكتروني أو الكتابة في قواعد البيانات) تتطلب التحقق البشري."
+          },
+          {
+            "step": 6,
+            "title": "الاختبار وتتبع الأداء",
+            "description": "نختبر شبكة الوكلاء في حالات طرفية متعددة، ونسجل المسارات في LangSmith لتتبع خطوات الاستدلال والتكاليف."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما هو نظام الوكلاء المتعددين؟",
+            "answer": "نظام الوكلاء المتعددين هو شبكة من وكلاء الذكاء الاصطناعي المتخصصين الذين يعملون معاً لتحقيق هدف محدد. كل وكيل له أدوار وأدوات محددة، مما يسمح لهم بحل المهام بالتعاون."
+          },
+          {
+            "question": "لماذا يعد نظام الوكلاء المتعددين أفضل من مطالبة واحدة؟",
+            "answer": "تقتصر المطالبة الواحدة على نافذة سياق وعمق استدلال محدودين. تقسم أنظمة الوكلاء المتعددين المهام المعقدة إلى أجزاء أصغر، مما يسمح للوكلاء بمراجعة وتعديل أخطاء بعضهم البعض ديناميكياً."
+          },
+          {
+            "question": "ما هي الأطر التي تستخدمونها لبناء أنظمة الوكلاء المتعددين؟",
+            "answer": "نبني الحلول باستخدام LangGraph للرسوم البيانية الدورية للوكلاء، و CrewAI للتنسيق الهيكلي القائم على الأدوار، و AutoGen لمسارات عمل الوكلاء الحوارية."
+          },
+          {
+            "question": "هل يمكن للوكلاء تنفيذ إجراءات في أنظمتنا؟",
+            "answer": "نعم، نبني تكاملات آمنة تتيح للوكلاء الكتابة في قواعد البيانات، أو إرسال تنبيهات Slack، أو صياغة رسائل البريد، وتكون دائماً محمية ببوابات موافقة بشرية."
+          },
+          {
+            "question": "كيف تمنع الوكلاء من الدخول في حلقات مفرغة لا نهائية؟",
+            "answer": "نضع حدوداً صارمة للخطوات القصوى والمهل الزمنية لسلاسل الوكلاء، وننفذ منطق اكتشاف الحلقات المفرغة في LangGraph لإنهاء المهام وتنبيه المشرف البشري."
+          },
+          {
+            "question": "كيف يتم إدارة الذاكرة بين الوكلاء؟",
+            "answer": "ننفذ ذاكرة قصيرة المدى (تتم مشاركتها أثناء تشغيل سياق واحد) وذاكرة طويلة المدى (يتم حفظها في قواعد بيانات متجهة) ليتذكر الوكلاء التفاعلات السابقة وخيارات المستخدمين."
+          },
+          {
+            "question": "ما هي بوابات الموافقة البشرية (Human-in-the-loop)؟",
+            "answer": "تعني أن الوكيل يوقف التنفيذ مؤقتاً عندما يصل إلى نقطة قرار حرجة وينتظر أن يقوم مراجع بشري بمراجعة الخطوة التالية أو تعديلها أو الموافقة عليها قبل المتابعة."
+          },
+          {
+            "question": "كيف يمكننا مراقبة مسارات قرارات الوكلاء؟",
+            "answer": "ندمج منصات التتبع والمراقبة مثل LangSmith أو Phoenix، مما يمنح فريقك الهندسي تتبعاً مرئياً كاملاً لكل مكالمة نموذج، واستخدام أداة، والتكلفة لكل تشغيل."
+          }
+        ],
+        "technologies": [
+          { "name": "CrewAI", "icon": "crewai" },
+          { "name": "AutoGen", "icon": "autogen" },
+          { "name": "LangGraph", "icon": "langgraph" },
+          { "name": "LangSmith", "icon": "langsmith" },
+          { "name": "OpenAI API", "icon": "openai" },
+          { "name": "Python", "icon": "python" },
+          { "name": "FastAPI", "icon": "fastapi" },
+          { "name": "Docker", "icon": "docker" }
+        ]
+      }
+    }
+  },
+  "ocr-document-processing": {
+    "en": {
+      "name": "OCR & Document Processing",
+      "shortDescription": "Extract structured text and data from scanned files, invoices, and images. We build intelligent OCR pipelines that automate data entry with high accuracy.",
+      "fullDescription": "Processing paper documents, scanned PDFs, and receipts manually drains operational resources. We build intelligent OCR & Document Processing solutions that automate text extraction and structure raw document data into clean database records. Using state-of-the-art tools like Tesseract, Azure Form Recognizer, and AWS Textract, we parse complex document layouts, identify tabular data, recognize handwriting, and classify forms by type. We implement automated validation rules to cross-check extracted figures (like totals on invoices), minimizing false extractions. Our systems handle multi-language documents and output structured JSON data, integrating seamlessly into your ERP, CRM, or document management platforms. By replacing manual entry, our OCR pipelines accelerate your document workflows while reducing errors.",
+      "features": [
+        "Automated Document Text Extraction",
+        "Structured Form and Layout Processing",
+        "Complex Table and Grid Detection",
+        "Intelligent Handwriting Recognition (ICR)",
+        "Multi-Language Processing and Support",
+        "Automated Data Validation and Cross-Checking",
+        "Granular Document Classification & Tagging",
+        "Secure Local or Cloud Integration APIs"
+      ],
+      "benefits": [
+        "Reduce document processing costs by up to 85%",
+        "Eliminate manual data entry errors completely",
+        "Speed up invoice and receipt processing times",
+        "Index scanned archives for easy search retrieval",
+        "Integrate extracted data directly into core ERP systems",
+        "Ensure high data validation rates via automated rules"
+      ],
+      "metaTitle": "AI OCR & Document Processing Solutions | PakSoft",
+      "metaDescription": "Extract data from scanned PDFs, invoices, and receipts automatically. We build custom OCR pipelines using Azure and AWS Textract. Contact us.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Document Layout Analysis",
+            "description": "We analyze your target forms, receipts, or files to map out key-value pairs, tables, and handwritten zones."
+          },
+          {
+            "step": 2,
+            "title": "OCR Engine Configuration",
+            "description": "We configure OCR engines like Tesseract, AWS Textract, or Azure Document Intelligence to process high-resolution files."
+          },
+          {
+            "step": 3,
+            "title": "Preprocessing & Cleaning",
+            "description": "We build preprocessing scripts that deskew, binarize, and clean image noise to maximize text extraction accuracy."
+          },
+          {
+            "step": 4,
+            "title": "Data Extraction & Parsing",
+            "description": "We run parsing scripts to extract tabular details and structure raw text strings into organized JSON formats."
+          },
+          {
+            "step": 5,
+            "title": "Validation & Rules Cross-Check",
+            "description": "We execute custom validation scripts to check math (e.g., adding line items to match total balance) and raise flags on anomalies."
+          },
+          {
+            "step": 6,
+            "title": "API Integration & Export",
+            "description": "We connect the processed output to your database, ERP, or CMS, enabling automated ingestion without manual typing."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Can the OCR system read handwritten text?",
+            "answer": "Yes, we integrate intelligent ICR (Intelligent Character Recognition) engines from AWS and Azure that can parse block handwriting and signatures with high accuracy."
+          },
+          {
+            "question": "How do you validate the accuracy of extracted numbers?",
+            "answer": "We write custom programmatic verification checks (e.g., verifying that item prices add up to the total invoice balance). If checks fail, the file is flagged for human review."
+          },
+          {
+            "question": "What document formats do you support?",
+            "answer": "We process PDF documents, JPEG/PNG images, scanned invoices, TIFF files, and multi-page documents in both digital and physical scans."
+          },
+          {
+            "question": "Is the system secure for sensitive financial records?",
+            "answer": "Yes, we deploy pipelines on your private clouds or on-premise hardware. Data is encrypted, and credentials are managed securely without sharing records with third parties."
+          },
+          {
+            "question": "How do you handle tables or spreadsheets in PDFs?",
+            "answer": "We configure table detection models that extract the grid structures of tables, mapping columns and rows accurately into CSV or database tables."
+          },
+          {
+            "question": "Can it process documents in multiple languages?",
+            "answer": "Yes, our OCR engines support over 50 languages and can process files containing mixed languages simultaneously without losing character fidelity."
+          },
+          {
+            "question": "What is the processing time per document?",
+            "answer": "A standard page takes between 1 and 3 seconds to preprocess, run OCR, validate data, and export, enabling high-speed automated batch runs."
+          },
+          {
+            "question": "Can this integrate into our existing SAP or ERP system?",
+            "answer": "Yes, we wrap the entire OCR engine in a secure REST API or configure database triggers that feed clean, extracted JSON records directly into your ERP."
+          }
+        ],
+        "technologies": [
+          { "name": "Tesseract OCR", "icon": "tesseract" },
+          { "name": "Azure Document Intelligence", "icon": "azure" },
+          { "name": "AWS Textract", "icon": "aws" },
+          { "name": "OpenCV", "icon": "opencv" },
+          { "name": "Python", "icon": "python" },
+          { "name": "FastAPI", "icon": "fastapi" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "PostgreSQL", "icon": "postgresql" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "OCR ve Belge İşleme",
+      "shortDescription": "Taranmış dosyalardan, faturalardan ve görsellerden yapılandırılmış metin ve verileri ayıklayın. Veri girişini yüksek doğrulukla otomatikleştiren akıllı OCR hatları kuruyoruz.",
+      "fullDescription": "Kağıt belgeleri, taranmış PDF'leri ve makbuzları manuel olarak işlemek operasyonel kaynakları tüketir. Metin ayıklamayı otomatikleştiren ve ham belge verilerini temiz veritabanı kayıtlarına dönüştüren akıllı OCR ve Belge İşleme çözümleri kuruyoruz. Tesseract, Azure Belge Zekası ve AWS Textract gibi en son teknoloji araçları kullanarak karmaşık belge düzenlerini ayrıştırıyor, tablo verilerini tanımlıyor, el yazısını tanıyor ve formları türüne göre sınıflandırıyoruz. Hatalı ayıklamaları en aza indirmek için çıkarılan tutarları (faturalardaki toplamlar gibi) çapraz kontrol eden otomatik doğrulama kuralları uyguluyoruz. Sistemlerimiz çok dilli belgeleri işler ve yapılandırılmış JSON verileri üreterek ERP, CRM veya belge yönetim platformlarınıza sorunsuz bir şekilde entegre olur. OCR veri hatlarımız, manuel girişi ortadan kaldırarak belge işleme süreçlerinizi hızlandırır ve hataları azaltır.",
+      "features": [
+        "Otomatik Belge Metni Ayıklama",
+        "Yapılandırılmış Form ve Düzen İşleme",
+        "Karmaşık Tablo ve Izgara Algılama",
+        "Akıllı El Yazısı Tanıma (ICR)",
+        "Çok Dilli İşleme ve Karakter Desteği",
+        "Otomatik Veri Doğrulama ve Çapraz Kontrol",
+        "Ayrıntılı Belge Sınıflandırma ve Etiketleme",
+        "Güvenli Yerel veya Bulut Entegrasyon API'leri"
+      ],
+      "benefits": [
+        "Belge işleme maliyetlerini %85'e varan oranda azaltın",
+        "Manuel veri girişi hatalarını tamamen ortadan kaldırın",
+        "Fatura ve makbuz işleme sürelerini hızlandırın",
+        "Kolay arama ve erişim için taranmış arşivleri indeksleyin",
+        "Çıkarılan verileri doğrudan temel ERP sistemlerine entegre edin",
+        "Otomatik kurallarla yüksek veri doğrulama oranları sağlayın"
+      ],
+      "metaTitle": "Yapay Zeka OCR ve Belge İşleme Çözümleri | PakSoft",
+      "metaDescription": "Taranmış PDF'lerden, faturalardan ve makbuzlardan verileri otomatik olarak ayıklayın. Azure ve AWS Textract kullanarak özel OCR hatları kuruyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Belge Düzeni Analizi",
+            "description": "Anahtar-değer çiftlerini, tabloları ve el yazısı alanlarını haritalandırmak için formlarınızı, makbuzlarınızı veya dosyalarınızı inceliyoruz."
+          },
+          {
+            "step": 2,
+            "title": "OCR Motoru Yapılandırması",
+            "description": "Yüksek çözünürlüklü dosyaları işlemek için Tesseract, AWS Textract veya Azure Belge Zekası gibi OCR motorlarını yapılandırıyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Ön İşleme & Temizleme",
+            "description": "Metin ayıklama doğruluğunu en üst düzeye çıkarmak için görsel eğriliğini düzelten ve parazitleri temizleyen ön işleme kodları yazıyoruz."
+          },
+          {
+            "step": 4,
+            "title": "Veri Ayıklama & Ayrıştırma",
+            "description": "Tablo ayrıntılarını ayıklamak ve ham metin dizelerini düzenli JSON formatlarına dönüştürmek için ayrıştırma kodları çalıştırıyoruz."
+          },
+          {
+            "step": 5,
+            "title": "Doğrulama & Çapraz Kontrol",
+            "description": "Matematiksel işlemleri kontrol etmek (örn. kalem tutarlarını toplayarak faturadaki genel toplamla eşleştirmek) için otomatik doğrulama yazıyoruz."
+          },
+          {
+            "step": 6,
+            "title": "API Entegrasyonu & Aktarım",
+            "description": "İşlenen çıktıları veritabanınıza, ERP'nize veya CMS'nize bağlayarak manuel yazma gerektirmeden otomatik veri aktarımı sağlıyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "OCR sistemi el yazısı metinleri okuyabilir mi?",
+            "answer": "Evet, el yazısı blokları ve imzaları yüksek doğrulukla ayrıştırabilen AWS ve Azure'un akıllı ICR (Akıllı Karakter Tanıma) motorlarını entegre ediyoruz."
+          },
+          {
+            "question": "Çıkarılan sayıların doğruluğunu nasıl teyit ediyorsunuz?",
+            "answer": "Özel yazılımsal doğrulama kontrolleri yazıyoruz (örneğin, ürün fiyatlarının toplam fatura tutarına eşit olduğunu doğrulamak). Kontroller başarısız olursa, dosya manuel inceleme için işaretlenir."
+          },
+          {
+            "question": "Hangi belge formatlarını destekliyorsunuz?",
+            "answer": "PDF belgelerini, JPEG/PNG görsellerini, taranmış faturaları, TIFF dosyalarını ve hem dijital hem de fiziksel taramalardaki çok sayfalı belgeleri işliyoruz."
+          },
+          {
+            "question": "Sistem hassas finansal kayıtlar için güvenli mi?",
+            "answer": "Evet, veri hatlarını özel bulutunuzda veya yerel donanımınızda barındırıyoruz. Veriler şifrelenir ve kimlik bilgileri, kayıtlar üçüncü taraflarla paylaşılmadan güvenli bir şekilde yönetilir."
+          },
+          {
+            "question": "PDF'lerdeki tabloları veya elektronik tabloları nasıl işliyorsunuz?",
+            "answer": "Tabloların ızgara yapılarını çıkaran, sütunları ve satırları CSV veya veritabanı tablolarına doğru şekilde eşleyen tablo algılama modellerini yapılandırıyoruz."
+          },
+          {
+            "question": "Birden fazla dilde yazılmış belgeleri işleyebilir mi?",
+            "answer": "Evet, OCR motorlarımız 50'den fazla dili destekler ve karakter doğruluğunu kaybetmeden karışık diller içeren dosyaları aynı anda işleyebilir."
+          },
+          {
+            "question": "Belge başına işlem süresi nedir?",
+            "answer": "Standart bir sayfanın ön işleme tabi tutulması, OCR'den geçirilmesi, verilerin doğrulanması ve dışa aktarılması 1 ila 3 saniye sürer, bu da yüksek hızlı otomatik toplu işlemleri mümkün kılar."
+          },
+          {
+            "question": "Bu sistem mevcut SAP veya ERP sistemimizle entegre olabilir mi?",
+            "answer": "Evet, tüm OCR motorunu güvenli bir REST API ile sarmalıyor veya temiz, ayıklanmış JSON kayıtlarını doğrudan ERP'nize aktaran veritabanı tetikleyicileri yapılandırıyoruz."
+          }
+        ],
+        "technologies": [
+          { "name": "Tesseract OCR", "icon": "tesseract" },
+          { "name": "Azure Document Intelligence", "icon": "azure" },
+          { "name": "AWS Textract", "icon": "aws" },
+          { "name": "OpenCV", "icon": "opencv" },
+          { "name": "Python", "icon": "python" },
+          { "name": "FastAPI", "icon": "fastapi" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "PostgreSQL", "icon": "postgresql" }
+        ]
+      }
+    },
+    "de": {
+      "name": "OCR & Belegverarbeitung",
+      "shortDescription": "Extrahieren Sie strukturierten Text und Daten aus gescannten Dokumenten, Rechnungen und Bildern. Wir automatisieren Ihre Datenerfassung mit OCR-Systemen.",
+      "fullDescription": "Die manuelle Bearbeitung von Papierdokumenten, gescannten PDFs und Quittungen bindet wertvolle Ressourcen. Wir entwickeln intelligente OCR- und Dokumentenverarbeitungslösungen, die die Textextraktion automatisieren und Rohdaten in strukturierte Datenbankeinträge übersetzen. Mit modernen Systemen wie Tesseract, Azure Document Intelligence und AWS Textract analysieren wir komplexe Dokumenten-Layouts, identifizieren Tabellendaten, lesen Handschriften und klassifizieren Belege. Durch automatische Validierungsregeln (z. B. Abgleich der Zwischensummen mit dem Gesamtbetrag) minimieren wir Auslesefehler. Unsere Systeme übergeben strukturierte JSON-Daten direkt an Ihr ERP, CRM oder Dokumentenmanagementsystem.",
+      "features": [
+        "Automatisierte Textextraktion aus Dokumenten",
+        "Strukturierte Formular- und Layoutverarbeitung",
+        "Erkennung komplexer Tabellenstrukturen",
+        "Intelligente Handschrifterkennung (ICR)",
+        "Mehrsprachige Verarbeitung und Zeichensatz-Support",
+        "Automatisierte Datenvalidierung & Plausibilitätsprüfungen",
+        "Granulare Dokumentenklassifizierung & Tagging",
+        "Sichere lokale oder Cloud-Integrations-Schnittstellen"
+      ],
+      "benefits": [
+        "Kosten für die Dokumentenverarbeitung um bis zu 85% senken",
+        "Manuelle Datenerfassungsfehler vollständig ausschließen",
+        "Rechnungs- und Belegdurchlaufzeiten massiv verkürzen",
+        "Gescannte Archive für die digitale Volltextsuche indexieren",
+        "Ausgelesene Daten direkt in ERP-Systeme übergeben",
+        "Hohe Datenqualität durch automatisierte Prüfregeln sichern"
+      ],
+      "metaTitle": "KI OCR & Belegverarbeitungslösungen | PakSoft",
+      "metaDescription": "Extrahieren Sie Daten aus gescannten PDFs, Rechnungen und Quittungen automatisch. Wir bauen OCR-Pipelines mit Azure und AWS Textract. Kontakt aufnehmen.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Dokumenten-Layoutanalyse",
+            "description": "Wir analysieren Ihre Formulare, Quittungen und Dateien, um Schlüssel-Wert-Paare, Tabellen und Handschriftzonen zu definieren."
+          },
+          {
+            "step": 2,
+            "title": "OCR-Engine Konfiguration",
+            "description": "Wir richten OCR-Engines wie Tesseract, AWS Textract oder Azure Document Intelligence ein, um hochauflösende Scans zu verarbeiten."
+          },
+          {
+            "step": 3,
+            "title": "Vorverarbeitung & Bereinigung",
+            "description": "Wir entwickeln Skripte zur Bildoptimierung (Binarisierung, Ausrichtung, Rauschminderung), um die Auslesegenauigkeit zu maximieren."
+          },
+          {
+            "step": 4,
+            "title": "Datenextraktion & Parsing",
+            "description": "Wir führen Parser-Skripte aus, um Tabellenwerte zu extrahieren und Rohdaten in strukturierte JSON-Formate zu überführen."
+          },
+          {
+            "step": 5,
+            "title": "Validierungs- & Plausibilitätsprüfung",
+            "description": "Wir implementieren Prüfskripte, die mathematische Berechnungen verifizieren (z. B. Summe der Einzelpositionen gegen den Gesamtbetrag) und Fehler melden."
+          },
+          {
+            "step": 6,
+            "title": "Schnittstellenintegration & Export",
+            "description": "Wir übergeben die extrahierten Daten an Ihre Datenbank, Ihr ERP oder CRM, um manuelle Erfassungsprozesse vollständig zu ersetzen."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Kann das OCR-System handschriftlichen Text lesen?",
+            "answer": "Ja, wir integrieren intelligente ICR-Systeme (Intelligent Character Recognition) von AWS und Azure, die gedruckte Handschrift und Unterschriften mit hoher Präzision erfassen."
+          },
+          {
+            "question": "Wie wird die Richtigkeit der ausgelesenen Zahlen geprüft?",
+            "answer": "Wir programmieren Validierungsprüfungen (z. B. Aufsummieren der Einzelpreise zum Rechnungsbetrag). Schlägt diese Prüfung fehl, wird das Dokument zur manuellen Kontrolle markiert."
+          },
+          {
+            "question": "Welche Dateiformate werden unterstützt?",
+            "answer": "Wir verarbeiten PDFs, Bilder (JPEG, PNG), gescannte Belege, TIFF-Dateien sowie mehrseitige digitale und physische Dokumentenscans."
+          },
+          {
+            "question": "Ist das System für sensible Finanzdaten geeignet?",
+            "answer": "Ja, wir deployen die Pipelines in Ihrer privaten Cloud oder lokal. Die Daten werden verschlüsselt und Zugangsdaten sicher verwaltet, ohne Dokumente an Dritte weiterzugeben."
+          },
+          {
+            "question": "Wie werden Tabellen in PDFs ausgelesen?",
+            "answer": "Wir konfigurieren Tabellenerkennungsmodelle, die Zeilen- und Spaltenstrukturen erfassen und diese exakt in CSV-Dateien oder Datenbanktabellen abbilden."
+          },
+          {
+            "question": "Können Dokumente in unterschiedlichen Sprachen verarbeitet werden?",
+            "answer": "Ja, unsere OCR-Engines unterstützen über 50 Sprachen und können Dokumente mit gemischten Sprachen verarbeiten, ohne dass Sonderzeichen verloren gehen."
+          },
+          {
+            "question": "Wie lange dauert die Verarbeitung eines Dokuments?",
+            "answer": "Eine Standardseite benötigt zwischen 1 und 3 Sekunden für Vorverarbeitung, Texterkennung, Datenvalidierung und Export, was schnelle Stapelverarbeitungen ermöglicht."
+          },
+          {
+            "question": "Lässt sich das System in SAP oder ERP anbinden?",
+            "answer": "Ja, wir stellen die OCR-Engine als sichere REST-API bereit oder konfigurieren Datenbank-Trigger, die ausgelesene JSON-Daten direkt an Ihr ERP übergeben."
+          }
+        ],
+        "technologies": [
+          { "name": "Tesseract OCR", "icon": "tesseract" },
+          { "name": "Azure Document Intelligence", "icon": "azure" },
+          { "name": "AWS Textract", "icon": "aws" },
+          { "name": "OpenCV", "icon": "opencv" },
+          { "name": "Python", "icon": "python" },
+          { "name": "FastAPI", "icon": "fastapi" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "PostgreSQL", "icon": "postgresql" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "او سی آر اور دستاویزی پروسیسنگ",
+      "shortDescription": "اسکین شدہ فائلوں، بلوں اور تصاویر سے منظم متن اور ڈیٹا نکالیں۔ ہم خودکار ڈیٹا انٹری کے لیے ذہین او سی آر سسٹمز بناتے ہیں۔",
+      "fullDescription": "کاغذی دستاویزات، اسکین شدہ پی ڈی ایف اور رسیدوں کو دستی طور پر پروسیس کرنا وقت اور کاروباری وسائل کا زیاں ہے۔ ہم ذہین او سی آر اور دستاویزی پروسیسنگ سلوشنز بناتے ہیں جو خودکار طریقے سے متن نکال کر خام فائلز کو صاف ڈیٹا بیس ریکارڈز میں تبدیل کرتے ہیں۔ Tesseract، Azure اور AWS Textract جیسے ٹولز کی مدد سے، ہم دستاویز کے لے آؤٹس، جدولوں (tables) اور ہاتھ کی تحریر کو پہچانتے ہیں اور فارمز کی درجہ بندی کرتے ہیں۔ ہم خودکار توثیقی قوانین لاگو کرتے ہیں تاکہ بلوں کے مجموعی بیلنس کا خود بخود موازنہ کیا جا سکے۔ یہ سسٹمز کثیر لسانی دستاویزات کو سپورٹ کرتے ہیں اور ڈیٹا کو منظم JSON فارمیٹ میں نکال کر آپ کے ERP یا CRM سسٹمز میں شامل کرتے ہیں۔",
+      "features": [
+        "دستاویزات سے خودکار متنی مواد نکالنا",
+        "منظم فارمز اور لے آؤٹ پروسیسنگ",
+        "جدولوں اور گریڈز کا پیچیدہ پتہ لگانا",
+        "ہاتھ کی تحریر کو پہچاننے کا عمل (ICR)",
+        "کثیر لسانی پروسیسنگ اور کیریکٹر سپورٹ",
+        "خودکار ڈیٹا کی توثیق اور موازنہ",
+        "فائلوں کی درجہ بندی اور خودکار ٹیگنگ",
+        "محفوظ لوکل یا کلاؤڈ انٹیگریشن APIs"
+      ],
+      "benefits": [
+        "دستاویزی پروسیسنگ کے اخراجات میں 85 فیصد تک بچت کریں",
+        "دستی ڈیٹا انٹری کی غلطیوں کو مکمل طور پر ختم کریں",
+        "بلوں اور رسیدوں کو پروسیس کرنے کی رفتار تیز کریں",
+        "اسکین شدہ فائلز کو سرچ کے قابل بنانے کے لیے انڈیکس کریں",
+        "نکالے گئے ڈیٹا کو براہ راست کمپنی کے سسٹمز میں منتقل کریں",
+        "خودکار سیکیورٹی قوانین سے ڈیٹا کی درستگی یقینی بنائیں"
+      ],
+      "metaTitle": "اے آئی او سی آر اور دستاویزی پروسیسنگ | PakSoft",
+      "metaDescription": "اسکین شدہ پی ڈی ایف اور بلوں سے خودکار ڈیٹا حاصل کریں۔ ہم Azure اور AWS Textract کے ذریعے کسٹم OCR پائپ لائنز بناتے ہیں۔ رابطہ کریں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "دستاویز لے آؤٹ تجزیہ",
+            "description": "ہم فائلوں اور رسیدوں کا تجزیہ کرتے ہیں تاکہ ان کے جدولوں، فیلڈز اور تحریر کے حصوں کا نقشہ بنایا جا سکے۔"
+          },
+          {
+            "step": 2,
+            "title": "او سی آر انجن کی تشکیل",
+            "description": "ہم اسکین فائلوں کو پروسیس کرنے کے لیے Tesseract، AWS Textract یا Azure Document Intelligence کو سیٹ اپ کرتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "تصویر کی صفائی اور تیاری",
+            "description": "ہم تصاویر کی خرابیوں کو دور کرنے اور دھندلا پن صاف کرنے کے لیے اسکرپٹس بناتے ہیں تاکہ پڑھنے میں کوئی غلطی نہ ہو۔"
+          },
+          {
+            "step": 4,
+            "title": "ڈیٹا نکالنے کا عمل",
+            "description": "ہم ٹیکسٹ اور ٹیبلز نکالنے کے لیے اسکرپٹس چلاتے ہیں اور اسے منظم JSON فارمیٹ میں تبدیل کرتے ہیں۔"
+          },
+          {
+            "step": 5,
+            "title": "توثیق اور کراس چیک",
+            "description": "ہم خودکار چیکس چلاتے ہیں جو قیمتوں کو جمع کر کے بل کے کل ٹرانسفر بیلنس سے موازنہ کرتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "سسٹم انٹیگریشن",
+            "description": "ہم پروسیس شدہ ڈیٹا کو بغیر کسی دستی ٹائپنگ کے آپ کے ڈیٹا بیس یا ERP سسٹم سے مربوط کرتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "کیا او سی آر سسٹم ہاتھ سے لکھی تحریر پڑھ سکتا ہے؟",
+            "answer": "جی ہاں، ہم AWS اور Azure کے ذہین ICR (Intelligent Character Recognition) انجنز کو مربوط کرتے ہیں جو ہاتھ سے لکھی تحریر اور دستخطوں کو بھی پڑھ سکتے ہیں۔"
+          },
+          {
+            "question": "آپ نکالے گئے نمبروں کی درستگی کو کیسے چیک کرتے ہیں؟",
+            "answer": "ہم ریاضی کے خودکار قوانین بناتے ہیں (جیسے الگ الگ قیمتوں کا مجموعہ فائنل ٹوٹل کے برابر ہونا)۔ تصدیق نہ ہونے پر فائل کو دستی چیک کے لیے فلیگ کیا جاتا ہے۔"
+          },
+          {
+            "question": "کون سے دستاویز فارمیٹس سپورٹڈ ہیں؟",
+            "answer": "ہم پی ڈی ایف (PDF)، تصاویر (JPEG/PNG)، اسکین شدہ بلوں، اور کثیر صفحات والی فائلوں کی پروسیسنگ کو سپورٹ کرتے ہیں۔"
+          },
+          {
+            "question": "کیا یہ سسٹم مالی دستاویزات کے لیے محفوظ ہے؟",
+            "answer": "جی ہاں، ہم پائپ لائنز کو آپ کے نجی سرورز پر چلاتے ہیں۔ ڈیٹا کو انکرپٹ کیا جاتا ہے اور کسی بھی تیسرے فریق کو ڈیٹا بھیجے بغیر کام مکمل ہوتا ہے۔"
+          },
+          {
+            "question": "آپ پی ڈی ایف کے اندر بنے ٹیبلز کو کیسے پروسیس کرتے ہیں؟",
+            "answer": "ہم ٹیبل ماڈلز ترتیب دیتے ہیں جو جدولوں کی قطاروں اور کالموں کا پتہ لگاتے ہیں اور انہیں درست ڈیٹا بیس ٹیبلز میں نقشہ بناتے ہیں۔"
+          },
+          {
+            "question": "کیا یہ متعدد زبانوں کی فائلوں کو پڑھ سکتا ہے؟",
+            "answer": "جی ہاں، ہمارے او سی آر انجنز 50 سے زیادہ زبانوں کو سپورٹ کرتے ہیں اور ایک ہی فائل میں لکھی گئی مختلف زبانوں کو پڑھ سکتے ہیں۔"
+          },
+          {
+            "question": "ایک صفحے کو پروسیس کرنے میں کتنا وقت لگتا ہے؟",
+            "answer": "تصویر کی صفائی، او سی آر چلانے، ڈیٹا کی توثیق اور فائل ایکسپورٹ میں عام طور پر 1 سے 3 سیکنڈ کا وقت لگتا ہے، جو بہت تیز رفتار سروس ہے۔"
+          },
+          {
+            "question": "کیا ہم اسے اپنے SAP یا ERP سسٹم سے جوڑ سکتے ہیں؟",
+            "answer": "جی ہاں، ہم پورے سسٹم کو ایک محفوظ REST API کے ساتھ جوڑتے ہیں جو نکالا گیا ڈیٹا براہ راست آپ کے ERP سسٹمز میں فیڈ کر دیتا ہے۔"
+          }
+        ],
+        "technologies": [
+          { "name": "Tesseract OCR", "icon": "tesseract" },
+          { "name": "Azure Document Intelligence", "icon": "azure" },
+          { "name": "AWS Textract", "icon": "aws" },
+          { "name": "OpenCV", "icon": "opencv" },
+          { "name": "Python", "icon": "python" },
+          { "name": "FastAPI", "icon": "fastapi" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "PostgreSQL", "icon": "postgresql" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "التعرف الضوئي على الحروف ومعالجة المستندات",
+      "shortDescription": "استخرج النصوص والبيانات المنظمة من الملفات والفواتير والصور الممسوحة ضوئياً. نبني مسارات OCR ذكية تؤتمت إدخال البيانات بدقة عالية.",
+      "fullDescription": "تستنزف المعالجة اليدوية للمستندات الورقية، وملفات PDF الممسوحة ضوئياً، والإيصالات الكثير من الموارد التشغيلية للمؤسسة. نحن نبني حلولاً ذكية للتعرف الضوئي على الحروف ومعالجة المستندات تؤتمت استخراج النصوص وتحول بيانات المستندات الخام إلى سجلات نظيفة في قاعدة البيانات. باستخدام أدوات متطورة مثل Tesseract و Azure Document Intelligence و AWS Textract، نقوم بتحليل تنسيقات المستندات المعقدة، وتحديد بيانات الجداول، وقراءة الخطوط المكتوبة بخط اليد، وتصنيف النماذج حسب النوع. نطبق قواعد تحقق تلقائية لمطابقة الأرقام المستخرجة (مثل المجاميع في الفواتير) للحد من الأخطاء والملفات التالفة، وتتكامل مخرجاتنا المنظمة JSON بسلاسة مع أنظمة ERP أو CRM.",
+      "features": [
+        "استخراج تلقائي للنصوص والكلمات من المستندات",
+        "معالجة النماذج وتنسيقات الجداول المنظمة",
+        "اكتشاف وتحديد الجداول والشبكات المعقدة",
+        "التعرف الذكي على الخطوط المكتوبة يدوياً (ICR)",
+        "دعم ومعالجة المستندات متعددة اللغات",
+        "فحوصات تحقق تلقائية ومطابقة البيانات رياضياً",
+        "تصنيف المستندات وتوسيمها بدقة تشغيلية عالية",
+        "واجهات برمجية آمنة للتكامل المحلي أو السحابي"
+      ],
+      "benefits": [
+        "تقليل تكاليف معالجة المستندات بنسبة تصل إلى 85٪",
+        "القضاء التام على أخطاء إدخال البيانات اليدوية",
+        "تسريع أوقات معالجة الفواتير والإيصالات المالية",
+        "فهرسة الأرشيفات الممسوحة ضوئياً لتسهيل البحث عنها",
+        "دمج البيانات المستخرجة مباشرة في أنظمة ERP الأساسية",
+        "ضمان معدلات تحقق عالية للبيانات عبر القواعد الآلية"
+      ],
+      "metaTitle": "حلول التعرف الضوئي على الحروف ومعالجة المستندات | PakSoft",
+      "metaDescription": "استخرج البيانات من ملفات PDF الممسوحة ضوئياً والفواتير تلقائياً. نبني مسارات OCR مخصصة باستخدام Azure و AWS Textract. اتصل بنا الآن.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تحليل تخطيط المستند",
+            "description": "نحلل النماذج أو الإيصالات أو الملفات المستهدفة لرسم خريطة لمواقع الجداول والنصوص والخطوط اليدوية."
+          },
+          {
+            "step": 2,
+            "title": "تهيئة محرك OCR",
+            "description": "نقوم بتهيئة محركات OCR مثل Tesseract أو AWS Textract أو Azure لمعالجة الملفات عالية الدقة."
+          },
+          {
+            "step": 3,
+            "title": "المعالجة المسبقة والتنظيف",
+            "description": "نبني برامج معالجة مسبقة تعمل على تعديل انحراف الصور وإزالة الضوضاء لزيادة دقة استخراج النصوص."
+          },
+          {
+            "step": 4,
+            "title": "استخراج وتحليل البيانات",
+            "description": "ننفذ برامج التحليل لاستخراج تفاصيل الجداول وتحويل النصوص الخام إلى تنسيقات JSON منظمة ومحسنة."
+          },
+          {
+            "step": 5,
+            "title": "التحقق والتدقيق المتبادل",
+            "description": "نجري فحوصات تحقق تلقائية لمطابقة الحسابات الرياضية (مثل جمع العناصر لمطابقة الرصيد الإجمالي للفاتورة) وإصدار تنبيهات بالأخطاء."
+          },
+          {
+            "step": 6,
+            "title": "التكامل البرمجي والتصدير",
+            "description": "نربط المخرجات بقواعد بياناتك أو نظام ERP أو إدارة المحتوى، مما يتيح الاستيراد التلقائي دون الحاجة لإدخال يدوي."
+          }
+        ],
+        "faq": [
+          {
+            "question": "هل يمكن لنظام OCR قراءة النصوص المكتوبة بخط اليد؟",
+            "answer": "نعم، ندمج محركات ICR (التعرف الذكي على الحروف) من AWS و Azure والتي يمكنها تحليل النصوص المكتوبة بخط اليد والتوقيعات بدقة عالية."
+          },
+          {
+            "question": "كيف تتحقق من دقة الأرقام المستخرجة؟",
+            "answer": "نكتب عمليات تحقق برمجية مخصصة (مثل التأكد من أن مجموع أسعار العناصر يساوي إجمالي الفاتورة). إذا فشلت هذه الفحوصات، يتم إرسال الملف لمراجعة يدوية."
+          },
+          {
+            "question": "ما هي تنسيقات المستندات المدعومة؟",
+            "answer": "نعالج مستندات PDF وصور JPEG/PNG والفواتير الممسوحة ضوئياً وملفات TIFF والمستندات متعددة الصفحات، سواء كانت رقمية أو ممسوحة يدوياً."
+          },
+          {
+            "question": "هل النظام آمن للتعامل مع السجلات المالية الحساسة؟",
+            "answer": "نعم، ننشر مسارات العمل على خوادمك المحلية أو سحابتك الخاصة. يتم تشفير البيانات بالكامل، وتتم إدارة بيانات الاعتماد بأمان ودون مشاركة أي بيانات خارج نظامك."
+          },
+          {
+            "question": "كيف تتعامل مع الجداول أو جداول البيانات في ملفات PDF؟",
+            "answer": "نقوم بتهيئة نماذج اكتشاف الجداول التي تستخرج تخطيطات الصفوف والأعمدة بدقة، وترسم خريطة لها داخل ملفات CSV أو جداول قواعد البيانات الخاصة بك."
+          },
+          {
+            "question": "هل يمكن للنظام معالجة مستندات بلغات متعددة؟",
+            "answer": "نعم، تدعم محركاتنا أكثر من 50 لغة مختلفة، ويمكنها معالجة ملفات تحتوي على لغات مختلطة في نفس الوقت دون فقدان دقة الحروف."
+          },
+          {
+            "question": "ما هو وقت المعالجة لكل مستند؟",
+            "answer": "تستغرق الصفحة القياسية ما بين 1 و 3 ثوانٍ فقط لإجراء المعالجة المسبقة، وتشغيل محرك OCR، والتحقق من البيانات، وتصديرها، مما يتيح معالجة دفعات ضخمة بسرعة عالية."
+          },
+          {
+            "question": "هل يمكن دمج هذا النظام مع أنظمة SAP أو ERP الحالية لدينا؟",
+            "answer": "نعم، نغلف محرك OCR بالكامل في واجهة REST API آمنة أو نقوم بتهيئة محفزات قاعدة البيانات لتغذية سجلات JSON المستخرجة مباشرة في نظام ERP الخاص بك."
+          }
+        ],
+        "technologies": [
+          { "name": "Tesseract OCR", "icon": "tesseract" },
+          { "name": "Azure Document Intelligence", "icon": "azure" },
+          { "name": "AWS Textract", "icon": "aws" },
+          { "name": "OpenCV", "icon": "opencv" },
+          { "name": "Python", "icon": "python" },
+          { "name": "FastAPI", "icon": "fastapi" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "PostgreSQL", "icon": "postgresql" }
+        ]
+      }
+    }
+  }
+}

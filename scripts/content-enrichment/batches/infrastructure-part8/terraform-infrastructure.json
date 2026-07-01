@@ -1,0 +1,278 @@
+{
+  "slug": "terraform-infrastructure",
+  "en": {
+    "name": "Terraform Infrastructure",
+    "shortDescription": "Define and provision cloud infrastructure as code with Terraform. We bring version control, automation, and consistency to your AWS, Azure, and GCP environments, so every change is reviewable and repeatable.",
+    "fullDescription": "Click-ops infrastructure is impossible to audit, hard to reproduce, and a single mistake away from an outage. We help you adopt Terraform so your infrastructure becomes code: version-controlled, peer-reviewed, and applied through automated pipelines. We build reusable modules, set up remote state with locking, structure multi-environment workspaces, and integrate Terraform into CI/CD with plan reviews and policy checks. Whether you are starting greenfield or importing years of manually built resources, we make your AWS, Azure, or GCP estate reproducible and auditable. The payoff is fewer surprises, faster and safer changes, easy disaster recovery, and an infrastructure that any engineer on your team can understand and evolve with confidence.",
+    "features": [
+      "Reusable, versioned Terraform modules",
+      "Multi-cloud support (AWS, Azure, GCP)",
+      "Remote state with locking and encryption",
+      "Multi-environment workspace structure",
+      "CI/CD integration with plan reviews",
+      "Policy as Code and drift detection",
+      "Import of existing manual infrastructure",
+      "Documentation and team enablement"
+    ],
+    "benefits": [
+      "Reproduce any environment in minutes",
+      "Review infrastructure changes like code",
+      "Eliminate configuration drift and snowflakes",
+      "Recover from disasters with a single apply",
+      "Reduce human error with automated pipelines",
+      "Onboard engineers faster with clear, coded infrastructure"
+    ],
+    "metaTitle": "Terraform Infrastructure as Code | PakSoft",
+    "metaDescription": "Provision cloud infrastructure as code with Terraform across AWS, Azure & GCP. Reusable modules, CI/CD, and drift detection for consistent, auditable infra. Get started.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Assessment & Strategy", "description": "We review your current infrastructure and cloud accounts to plan a Terraform adoption path. This decides module structure, state strategy, and how to handle existing resources." },
+        { "step": 2, "title": "Foundation & State", "description": "We set up remote state with locking, encryption, and access controls. A solid state foundation prevents the conflicts and corruption that derail Terraform projects." },
+        { "step": 3, "title": "Module Development", "description": "We build reusable, parameterised modules for your common building blocks. Modules turn repeated patterns into tested, consistent infrastructure components." },
+        { "step": 4, "title": "Environment Structure", "description": "We model dev, staging, and production as isolated workspaces sharing the same modules. This keeps environments consistent while allowing safe, independent changes." },
+        { "step": 5, "title": "Pipeline & Policy", "description": "We integrate Terraform into CI/CD with plan reviews and policy checks. Automated guardrails catch risky changes before they ever reach production." },
+        { "step": 6, "title": "Handover & Enablement", "description": "We document the setup and train your team to operate it confidently. Enablement ensures Terraform becomes a capability you own, not a dependency on us." }
+      ],
+      "faq": [
+        { "question": "What is Infrastructure as Code, and why use Terraform?", "answer": "Infrastructure as Code means defining servers, networks, and services in version-controlled files instead of clicking in a console. Terraform is the leading tool because it is cloud-agnostic, declarative, and has a huge ecosystem of providers and modules." },
+        { "question": "Can Terraform manage our existing infrastructure?", "answer": "Yes. We import existing resources into Terraform state so they become managed as code, letting you adopt Terraform gradually without rebuilding everything from scratch." },
+        { "question": "Does Terraform lock us into one cloud?", "answer": "No, the opposite. Terraform uses provider plugins for AWS, Azure, GCP, and many others, so the same workflow and skills apply across clouds and even SaaS platforms." },
+        { "question": "What is Terraform state and why does it matter?", "answer": "State is Terraform's record of what it has provisioned. We store it remotely with locking so teams can collaborate safely without overwriting each other or corrupting the source of truth." },
+        { "question": "What is configuration drift?", "answer": "Drift happens when someone changes infrastructure manually, so reality no longer matches the code. We set up drift detection so these changes are caught and reconciled instead of causing silent surprises." },
+        { "question": "Should we use Terraform modules?", "answer": "Yes. Modules package a pattern, such as a standard VPC or service, into a reusable unit. They reduce duplication, enforce standards, and make large infrastructures far easier to maintain." },
+        { "question": "How do you prevent dangerous changes in production?", "answer": "We require plan reviews in pull requests and enforce Policy as Code, so destructive or non-compliant changes are flagged or blocked before anyone runs apply against production." },
+        { "question": "Is Terraform better than CloudFormation or the cloud console?", "answer": "For multi-cloud or vendor-neutral teams, Terraform is usually the better fit thanks to its ecosystem and consistent workflow. We help you choose based on your clouds, team skills, and goals." }
+      ],
+      "technologies": [
+        { "name": "Terraform", "icon": "terraform" },
+        { "name": "Terragrunt", "icon": "terragrunt" },
+        { "name": "AWS", "icon": "aws" },
+        { "name": "Azure", "icon": "azure" },
+        { "name": "Google Cloud", "icon": "google-cloud" },
+        { "name": "GitHub Actions", "icon": "github-actions" },
+        { "name": "Terraform Cloud", "icon": "terraform-cloud" },
+        { "name": "Atlantis", "icon": "atlantis" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Terraform Altyapısı",
+    "shortDescription": "Bulut altyapısını Terraform ile kod olarak tanımlayın ve sağlayın. AWS, Azure ve GCP ortamlarınıza sürüm kontrolü, otomasyon ve tutarlılık getiririz; böylece her değişiklik incelenebilir ve tekrarlanabilir olur.",
+    "fullDescription": "Konsolda tıklayarak yönetilen altyapı denetlenemez, yeniden üretilmesi zordur ve tek bir hata bir kesintiye yol açabilir. Terraform'u benimsemenize yardım ederiz; böylece altyapınız koda dönüşür: sürüm kontrollü, akran incelemeli ve otomatik hatlardan uygulanan. Yeniden kullanılabilir modüller kurar, kilitlemeli uzak durum oluşturur, çok ortamlı workspace'ler yapılandırır ve Terraform'u plan incelemeleri ve politika kontrolleriyle CI/CD'ye entegre ederiz. İster sıfırdan başlayın ister yıllarca elle kurulmuş kaynakları içe aktarın, AWS, Azure veya GCP varlığınızı yeniden üretilebilir ve denetlenebilir hale getiririz. Kazancınız daha az sürpriz, daha hızlı ve güvenli değişiklikler, kolay felaket kurtarma ve ekibinizdeki herhangi bir mühendisin güvenle anlayıp geliştirebileceği bir altyapıdır.",
+    "features": [
+      "Yeniden kullanılabilir, sürümlenmiş Terraform modülleri",
+      "Çoklu bulut desteği (AWS, Azure, GCP)",
+      "Kilitleme ve şifreleme ile uzak durum",
+      "Çok ortamlı workspace yapısı",
+      "Plan incelemeleriyle CI/CD entegrasyonu",
+      "Kod olarak politika ve sapma tespiti",
+      "Mevcut elle kurulu altyapının içe aktarımı",
+      "Dokümantasyon ve ekip yetkinlendirme"
+    ],
+    "benefits": [
+      "Herhangi bir ortamı dakikalar içinde yeniden üretin",
+      "Altyapı değişikliklerini kod gibi inceleyin",
+      "Yapılandırma sapmasını ve tekil yapıları ortadan kaldırın",
+      "Felaketlerden tek bir apply ile kurtulun",
+      "Otomatik hatlarla insan hatasını azaltın",
+      "Açık, kodlanmış altyapıyla mühendisleri daha hızlı entegre edin"
+    ],
+    "metaTitle": "Terraform ile Kod Olarak Altyapı | PakSoft",
+    "metaDescription": "Bulut altyapısını AWS, Azure ve GCP genelinde Terraform ile kod olarak sağlayın. Yeniden kullanılabilir modüller, CI/CD ve sapma tespiti ile tutarlı altyapı. Başlayın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Değerlendirme ve Strateji", "description": "Bir Terraform benimseme yolu planlamak için mevcut altyapınızı ve bulut hesaplarınızı inceleriz. Bu, modül yapısına, durum stratejisine ve mevcut kaynakların nasıl ele alınacağına karar verir." },
+        { "step": 2, "title": "Temel ve Durum", "description": "Kilitleme, şifreleme ve erişim kontrolleriyle uzak durum kurarız. Sağlam bir durum temeli, Terraform projelerini rayından çıkaran çatışma ve bozulmaları önler." },
+        { "step": 3, "title": "Modül Geliştirme", "description": "Ortak yapı taşlarınız için yeniden kullanılabilir, parametreli modüller kurarız. Modüller tekrarlanan desenleri test edilmiş, tutarlı altyapı bileşenlerine dönüştürür." },
+        { "step": 4, "title": "Ortam Yapısı", "description": "Dev, staging ve production'ı aynı modülleri paylaşan izole workspace'ler olarak modelleriz. Bu, güvenli ve bağımsız değişikliklere izin verirken ortamları tutarlı tutar." },
+        { "step": 5, "title": "Hat ve Politika", "description": "Terraform'u plan incelemeleri ve politika kontrolleriyle CI/CD'ye entegre ederiz. Otomatik koruyucu sınırlar riskli değişiklikleri production'a ulaşmadan yakalar." },
+        { "step": 6, "title": "Devir ve Yetkinlendirme", "description": "Kurulumu belgeler ve ekibinizi onu güvenle işletmek üzere eğitiriz. Yetkinlendirme, Terraform'un bize bağımlılık değil, sahip olduğunuz bir yetenek olmasını sağlar." }
+      ],
+      "faq": [
+        { "question": "Kod Olarak Altyapı nedir ve neden Terraform?", "answer": "Kod Olarak Altyapı, sunucuları, ağları ve hizmetleri bir konsolda tıklamak yerine sürüm kontrollü dosyalarda tanımlamaktır. Terraform öncü araçtır çünkü bulut bağımsız, bildirimseldir ve devasa bir sağlayıcı ile modül ekosistemine sahiptir." },
+        { "question": "Terraform mevcut altyapımızı yönetebilir mi?", "answer": "Evet. Mevcut kaynakları Terraform durumuna içe aktarırız, böylece kod olarak yönetilir hale gelirler ve her şeyi sıfırdan kurmadan Terraform'u kademeli benimseyebilirsiniz." },
+        { "question": "Terraform bizi tek bir buluta kilitler mi?", "answer": "Hayır, tam tersi. Terraform AWS, Azure, GCP ve daha pek çoğu için sağlayıcı eklentileri kullanır; böylece aynı iş akışı ve beceriler bulutlar ve hatta SaaS platformları genelinde geçerlidir." },
+        { "question": "Terraform durumu nedir ve neden önemlidir?", "answer": "Durum, Terraform'un neyi sağladığına dair kaydıdır. Ekiplerin birbirinin üzerine yazmadan veya doğruluk kaynağını bozmadan güvenle iş birliği yapabilmesi için onu kilitlemeyle uzakta saklarız." },
+        { "question": "Yapılandırma sapması nedir?", "answer": "Sapma, biri altyapıyı elle değiştirdiğinde olur ve gerçeklik artık kodla eşleşmez. Bu değişikliklerin sessiz sürprizlere yol açmak yerine yakalanıp uzlaştırılması için sapma tespiti kurarız." },
+        { "question": "Terraform modüllerini kullanmalı mıyız?", "answer": "Evet. Modüller, standart bir VPC veya hizmet gibi bir deseni yeniden kullanılabilir bir birime paketler. Tekrarı azaltır, standartları dayatır ve büyük altyapıların bakımını çok daha kolay hale getirir." },
+        { "question": "Production'da tehlikeli değişiklikleri nasıl önlüyorsunuz?", "answer": "Pull request'lerde plan incelemesi şart koşar ve Kod Olarak Politikayı uygularız; böylece yıkıcı veya uyumsuz değişiklikler production'a apply çalıştırılmadan önce işaretlenir veya engellenir." },
+        { "question": "Terraform, CloudFormation veya bulut konsolundan daha mı iyi?", "answer": "Çoklu bulut veya satıcıdan bağımsız ekipler için Terraform genellikle ekosistemi ve tutarlı iş akışı sayesinde daha iyi bir seçimdir. Bulutlarınıza, ekip becerilerinize ve hedeflerinize göre seçmenize yardım ederiz." }
+      ],
+      "technologies": [
+        { "name": "Terraform", "icon": "terraform" },
+        { "name": "Terragrunt", "icon": "terragrunt" },
+        { "name": "AWS", "icon": "aws" },
+        { "name": "Azure", "icon": "azure" },
+        { "name": "Google Cloud", "icon": "google-cloud" },
+        { "name": "GitHub Actions", "icon": "github-actions" },
+        { "name": "Terraform Cloud", "icon": "terraform-cloud" },
+        { "name": "Atlantis", "icon": "atlantis" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Terraform-Infrastruktur",
+    "shortDescription": "Definieren und provisionieren Sie Cloud-Infrastruktur als Code mit Terraform. Wir bringen Versionskontrolle, Automatisierung und Konsistenz in Ihre AWS-, Azure- und GCP-Umgebungen – jede Änderung wird prüfbar und wiederholbar.",
+    "fullDescription": "Click-Ops-Infrastruktur lässt sich nicht auditieren, ist schwer reproduzierbar und nur einen Fehler von einem Ausfall entfernt. Wir helfen Ihnen, Terraform einzuführen, sodass Ihre Infrastruktur zu Code wird: versionskontrolliert, peer-reviewed und über automatisierte Pipelines angewendet. Wir bauen wiederverwendbare Module, richten Remote State mit Locking ein, strukturieren Multi-Environment-Workspaces und integrieren Terraform mit Plan-Reviews und Policy-Checks in CI/CD. Ob Sie auf der grünen Wiese starten oder jahrelang manuell gebaute Ressourcen importieren – wir machen Ihr AWS-, Azure- oder GCP-Estate reproduzierbar und auditierbar. Der Nutzen: weniger Überraschungen, schnellere und sicherere Änderungen, einfaches Disaster Recovery und eine Infrastruktur, die jeder Ingenieur in Ihrem Team mit Zuversicht verstehen und weiterentwickeln kann.",
+    "features": [
+      "Wiederverwendbare, versionierte Terraform-Module",
+      "Multi-Cloud-Support (AWS, Azure, GCP)",
+      "Remote State mit Locking und Verschlüsselung",
+      "Multi-Environment-Workspace-Struktur",
+      "CI/CD-Integration mit Plan-Reviews",
+      "Policy as Code und Drift-Erkennung",
+      "Import bestehender manueller Infrastruktur",
+      "Dokumentation und Team-Enablement"
+    ],
+    "benefits": [
+      "Reproduzieren Sie jede Umgebung in Minuten",
+      "Prüfen Sie Infrastrukturänderungen wie Code",
+      "Eliminieren Sie Konfigurations-Drift und Snowflakes",
+      "Erholen Sie sich von Katastrophen mit einem Apply",
+      "Reduzieren Sie menschliche Fehler durch Pipelines",
+      "Onboarden Sie Ingenieure schneller mit codierter Infrastruktur"
+    ],
+    "metaTitle": "Terraform Infrastructure as Code | PakSoft",
+    "metaDescription": "Provisionieren Sie Cloud-Infrastruktur als Code mit Terraform über AWS, Azure & GCP. Wiederverwendbare Module, CI/CD und Drift-Erkennung für konsistente Infra.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Assessment & Strategie", "description": "Wir prüfen Ihre aktuelle Infrastruktur und Cloud-Accounts, um einen Terraform-Einführungspfad zu planen. Das entscheidet über Modulstruktur, State-Strategie und den Umgang mit bestehenden Ressourcen." },
+        { "step": 2, "title": "Fundament & State", "description": "Wir richten Remote State mit Locking, Verschlüsselung und Zugriffskontrollen ein. Ein solides State-Fundament verhindert die Konflikte und Korruption, die Terraform-Projekte entgleisen lassen." },
+        { "step": 3, "title": "Modulentwicklung", "description": "Wir bauen wiederverwendbare, parametrisierte Module für Ihre gängigen Bausteine. Module verwandeln wiederkehrende Muster in getestete, konsistente Infrastrukturkomponenten." },
+        { "step": 4, "title": "Umgebungsstruktur", "description": "Wir modellieren Dev, Staging und Production als isolierte Workspaces, die dieselben Module teilen. Das hält Umgebungen konsistent und erlaubt sichere, unabhängige Änderungen." },
+        { "step": 5, "title": "Pipeline & Policy", "description": "Wir integrieren Terraform mit Plan-Reviews und Policy-Checks in CI/CD. Automatisierte Leitplanken fangen riskante Änderungen ab, bevor sie Production erreichen." },
+        { "step": 6, "title": "Übergabe & Enablement", "description": "Wir dokumentieren das Setup und schulen Ihr Team, es sicher zu betreiben. Enablement stellt sicher, dass Terraform eine Fähigkeit wird, die Ihnen gehört, keine Abhängigkeit von uns." }
+      ],
+      "faq": [
+        { "question": "Was ist Infrastructure as Code, und warum Terraform?", "answer": "Infrastructure as Code bedeutet, Server, Netzwerke und Dienste in versionskontrollierten Dateien zu definieren, statt in einer Konsole zu klicken. Terraform ist das führende Tool, weil es cloud-agnostisch und deklarativ ist und ein riesiges Ökosystem an Providern und Modulen hat." },
+        { "question": "Kann Terraform unsere bestehende Infrastruktur verwalten?", "answer": "Ja. Wir importieren bestehende Ressourcen in den Terraform-State, sodass sie als Code verwaltet werden und Sie Terraform schrittweise einführen können, ohne alles neu aufzubauen." },
+        { "question": "Bindet uns Terraform an eine Cloud?", "answer": "Nein, im Gegenteil. Terraform nutzt Provider-Plugins für AWS, Azure, GCP und viele andere, sodass derselbe Workflow und dieselben Fähigkeiten über Clouds und sogar SaaS-Plattformen hinweg gelten." },
+        { "question": "Was ist Terraform-State und warum ist er wichtig?", "answer": "State ist Terraforms Aufzeichnung dessen, was es provisioniert hat. Wir speichern ihn remote mit Locking, damit Teams sicher zusammenarbeiten, ohne sich gegenseitig zu überschreiben oder die Wahrheitsquelle zu beschädigen." },
+        { "question": "Was ist Konfigurations-Drift?", "answer": "Drift entsteht, wenn jemand Infrastruktur manuell ändert, sodass die Realität nicht mehr dem Code entspricht. Wir richten Drift-Erkennung ein, damit diese Änderungen erkannt und abgeglichen werden, statt stille Überraschungen zu verursachen." },
+        { "question": "Sollten wir Terraform-Module verwenden?", "answer": "Ja. Module verpacken ein Muster, etwa eine Standard-VPC oder einen Dienst, in eine wiederverwendbare Einheit. Sie reduzieren Duplizierung, erzwingen Standards und erleichtern die Pflege großer Infrastrukturen erheblich." },
+        { "question": "Wie verhindern Sie gefährliche Änderungen in Production?", "answer": "Wir verlangen Plan-Reviews in Pull Requests und erzwingen Policy as Code, sodass destruktive oder nicht-konforme Änderungen markiert oder blockiert werden, bevor jemand Apply gegen Production ausführt." },
+        { "question": "Ist Terraform besser als CloudFormation oder die Cloud-Konsole?", "answer": "Für Multi-Cloud- oder anbieterneutrale Teams passt Terraform meist besser, dank Ökosystem und konsistentem Workflow. Wir helfen Ihnen, basierend auf Ihren Clouds, Team-Skills und Zielen zu wählen." }
+      ],
+      "technologies": [
+        { "name": "Terraform", "icon": "terraform" },
+        { "name": "Terragrunt", "icon": "terragrunt" },
+        { "name": "AWS", "icon": "aws" },
+        { "name": "Azure", "icon": "azure" },
+        { "name": "Google Cloud", "icon": "google-cloud" },
+        { "name": "GitHub Actions", "icon": "github-actions" },
+        { "name": "Terraform Cloud", "icon": "terraform-cloud" },
+        { "name": "Atlantis", "icon": "atlantis" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "Terraform انفراسٹرکچر",
+    "shortDescription": "Cloud انفراسٹرکچر کو Terraform کے ساتھ بطور کوڈ متعین اور provision کریں۔ ہم آپ کے AWS، Azure اور GCP environments میں version control، automation اور یکسانیت لاتے ہیں، تاکہ ہر تبدیلی قابلِ جائزہ اور قابلِ تکرار ہو۔",
+    "fullDescription": "Console میں کلک کر کے بنایا گیا انفراسٹرکچر آڈٹ کرنا ناممکن، دوبارہ بنانا مشکل اور صرف ایک غلطی کے فاصلے پر outage کا شکار ہوتا ہے۔ ہم آپ کو Terraform اپنانے میں مدد دیتے ہیں تاکہ آپ کا انفراسٹرکچر کوڈ بن جائے: version-controlled، peer-reviewed اور automated pipelines سے apply ہونے والا۔ ہم reusable modules بناتے ہیں، locking کے ساتھ remote state قائم کرتے ہیں، multi-environment workspaces ترتیب دیتے ہیں، اور Terraform کو plan reviews اور policy checks کے ساتھ CI/CD میں مربوط کرتے ہیں۔ چاہے آپ بالکل نئے سرے سے شروع کریں یا برسوں سے دستی طور پر بنائے گئے resources کو import کریں، ہم آپ کے AWS، Azure یا GCP estate کو قابلِ تکرار اور قابلِ آڈٹ بنا دیتے ہیں۔ فائدہ یہ ہے کہ کم سرپرائز، تیز اور محفوظ تبدیلیاں، آسان disaster recovery، اور ایک ایسا انفراسٹرکچر جسے آپ کی ٹیم کا کوئی بھی انجینئر اعتماد سے سمجھ اور آگے بڑھا سکے۔",
+    "features": [
+      "Reusable، versioned Terraform modules",
+      "Multi-cloud سپورٹ (AWS، Azure، GCP)",
+      "locking اور encryption کے ساتھ remote state",
+      "Multi-environment workspace ساخت",
+      "Plan reviews کے ساتھ CI/CD انضمام",
+      "Policy as Code اور drift detection",
+      "موجودہ دستی انفراسٹرکچر کا import",
+      "دستاویزات اور ٹیم کی اہلیت سازی"
+    ],
+    "benefits": [
+      "کوئی بھی environment منٹوں میں دوبارہ بنائیں",
+      "انفراسٹرکچر تبدیلیوں کا کوڈ کی طرح جائزہ لیں",
+      "configuration drift اور انوکھے سیٹ اپ ختم کریں",
+      "آفات سے ایک ہی apply کے ساتھ بحال ہوں",
+      "automated pipelines سے انسانی غلطی کم کریں",
+      "واضح، کوڈ شدہ انفراسٹرکچر سے انجینئرز کو تیزی سے شامل کریں"
+    ],
+    "metaTitle": "Terraform Infrastructure as Code | PakSoft",
+    "metaDescription": "Cloud انفراسٹرکچر کو AWS، Azure اور GCP میں Terraform سے بطور کوڈ provision کریں۔ Reusable modules، CI/CD اور drift detection کے ساتھ یکساں، قابلِ آڈٹ infra۔ شروع کریں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "جائزہ اور حکمتِ عملی", "description": "ہم Terraform اپنانے کا راستہ بنانے کے لیے آپ کے موجودہ انفراسٹرکچر اور cloud accounts کا جائزہ لیتے ہیں۔ یہ module ساخت، state حکمتِ عملی اور موجودہ resources کو سنبھالنے کا فیصلہ کرتا ہے۔" },
+        { "step": 2, "title": "بنیاد اور State", "description": "ہم locking، encryption اور access controls کے ساتھ remote state قائم کرتے ہیں۔ ایک مضبوط state بنیاد ان تنازعات اور خرابیوں کو روکتی ہے جو Terraform منصوبوں کو پٹری سے اتار دیتی ہیں۔" },
+        { "step": 3, "title": "Module ڈیولپمنٹ", "description": "ہم آپ کے عام building blocks کے لیے reusable، parameterised modules بناتے ہیں۔ Modules دہرائے جانے والے patterns کو آزمودہ، یکساں انفراسٹرکچر اجزاء میں بدل دیتے ہیں۔" },
+        { "step": 4, "title": "Environment ساخت", "description": "ہم dev، staging اور production کو ایک ہی modules شیئر کرنے والے الگ workspaces کے طور پر ماڈل کرتے ہیں۔ یہ محفوظ، آزاد تبدیلیوں کی اجازت دیتے ہوئے environments کو یکساں رکھتا ہے۔" },
+        { "step": 5, "title": "Pipeline اور Policy", "description": "ہم Terraform کو plan reviews اور policy checks کے ساتھ CI/CD میں مربوط کرتے ہیں۔ Automated guardrails خطرناک تبدیلیوں کو production تک پہنچنے سے پہلے پکڑ لیتے ہیں۔" },
+        { "step": 6, "title": "حوالگی اور اہلیت سازی", "description": "ہم سیٹ اپ کو دستاویز کرتے اور آپ کی ٹیم کو اعتماد سے چلانے کی تربیت دیتے ہیں۔ اہلیت سازی یقینی بناتی ہے کہ Terraform ہم پر انحصار نہیں بلکہ آپ کی اپنی صلاحیت بن جائے۔" }
+      ],
+      "faq": [
+        { "question": "Infrastructure as Code کیا ہے، اور Terraform کیوں؟", "answer": "Infrastructure as Code کا مطلب ہے servers، networks اور services کو console میں کلک کرنے کے بجائے version-controlled فائلوں میں متعین کرنا۔ Terraform سرِفہرست ٹول ہے کیونکہ یہ cloud-agnostic، declarative ہے اور providers و modules کا وسیع ecosystem رکھتا ہے۔" },
+        { "question": "کیا Terraform ہمارے موجودہ انفراسٹرکچر کا انتظام کر سکتا ہے؟", "answer": "جی ہاں۔ ہم موجودہ resources کو Terraform state میں import کرتے ہیں تاکہ وہ بطور کوڈ منظم ہو جائیں، جس سے آپ سب کچھ نئے سرے سے بنائے بغیر Terraform کو بتدریج اپنا سکتے ہیں۔" },
+        { "question": "کیا Terraform ہمیں ایک cloud میں قید کر دیتا ہے؟", "answer": "نہیں، اس کے برعکس۔ Terraform AWS، Azure، GCP اور بہت سوں کے لیے provider plugins استعمال کرتا ہے، تاکہ وہی workflow اور مہارتیں مختلف clouds اور حتیٰ کہ SaaS پلیٹ فارمز پر لاگو ہوں۔" },
+        { "question": "Terraform state کیا ہے اور یہ کیوں اہم ہے؟", "answer": "State وہ ریکارڈ ہے جو Terraform نے provision کیا۔ ہم اسے locking کے ساتھ remotely محفوظ رکھتے ہیں تاکہ ٹیمیں ایک دوسرے کو overwrite کیے یا source of truth خراب کیے بغیر محفوظ تعاون کر سکیں۔" },
+        { "question": "Configuration drift کیا ہے؟", "answer": "Drift اس وقت ہوتا ہے جب کوئی انفراسٹرکچر کو دستی طور پر بدلتا ہے، تو حقیقت اب کوڈ سے میل نہیں کھاتی۔ ہم drift detection قائم کرتے ہیں تاکہ یہ تبدیلیاں خاموش سرپرائز پیدا کرنے کے بجائے پکڑی اور reconcile کی جائیں۔" },
+        { "question": "کیا ہمیں Terraform modules استعمال کرنے چاہئیں؟", "answer": "جی ہاں۔ Modules کسی pattern، جیسے ایک معیاری VPC یا service، کو ایک reusable یونٹ میں پیک کرتے ہیں۔ یہ تکرار کم کرتے، معیارات نافذ کرتے اور بڑے انفراسٹرکچر کی دیکھ بھال کہیں آسان بناتے ہیں۔" },
+        { "question": "آپ production میں خطرناک تبدیلیاں کیسے روکتے ہیں؟", "answer": "ہم pull requests میں plan review لازمی کرتے اور Policy as Code نافذ کرتے ہیں، تاکہ تباہ کن یا غیر مطابق تبدیلیاں کسی کے production پر apply چلانے سے پہلے flag یا block ہو جائیں۔" },
+        { "question": "کیا Terraform، CloudFormation یا cloud console سے بہتر ہے؟", "answer": "Multi-cloud یا vendor-neutral ٹیموں کے لیے Terraform عام طور پر اپنے ecosystem اور یکساں workflow کی بدولت بہتر بیٹھتا ہے۔ ہم آپ کے clouds، ٹیم مہارت اور اہداف کی بنیاد پر منتخب کرنے میں مدد دیتے ہیں۔" }
+      ],
+      "technologies": [
+        { "name": "Terraform", "icon": "terraform" },
+        { "name": "Terragrunt", "icon": "terragrunt" },
+        { "name": "AWS", "icon": "aws" },
+        { "name": "Azure", "icon": "azure" },
+        { "name": "Google Cloud", "icon": "google-cloud" },
+        { "name": "GitHub Actions", "icon": "github-actions" },
+        { "name": "Terraform Cloud", "icon": "terraform-cloud" },
+        { "name": "Atlantis", "icon": "atlantis" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "بنية Terraform التحتية",
+    "shortDescription": "عرّف وجهّز البنية السحابية ككود باستخدام Terraform. نُدخل التحكم بالإصدارات والأتمتة والاتساق إلى بيئات AWS وAzure وGCP لديك، فتصبح كل تغييرة قابلة للمراجعة والتكرار.",
+    "fullDescription": "البنية المُدارة بالنقر يستحيل تدقيقها، ويصعب إعادة إنتاجها، وتبعد خطأً واحداً عن انقطاع الخدمة. نساعدك على تبنّي Terraform لتصبح بنيتك كوداً: خاضعاً للتحكم بالإصدارات، ومراجَعاً من الأقران، ومُطبّقاً عبر خطوط مؤتمتة. نبني وحدات قابلة لإعادة الاستخدام، ونُعدّ حالة بعيدة مع قفل، ونهيكل مساحات عمل متعددة البيئات، وندمج Terraform في CI/CD مع مراجعات الخطط وفحوصات السياسات. سواء بدأت من الصفر أو استوردت موارد بُنيت يدوياً على مدى سنوات، نجعل منظومتك على AWS أو Azure أو GCP قابلة لإعادة الإنتاج والتدقيق. والعائد: مفاجآت أقل، وتغييرات أسرع وأكثر أماناً، وتعافٍ سهل من الكوارث، وبنية يستطيع أي مهندس في فريقك فهمها وتطويرها بثقة.",
+    "features": [
+      "وحدات Terraform قابلة لإعادة الاستخدام ومُؤرّخة",
+      "دعم متعدد السحابات (AWS، Azure، GCP)",
+      "حالة بعيدة مع قفل وتشفير",
+      "هيكل مساحات عمل متعددة البيئات",
+      "تكامل CI/CD مع مراجعات الخطط",
+      "السياسة ككود وكشف الانحراف",
+      "استيراد البنية اليدوية القائمة",
+      "توثيق وتمكين الفريق"
+    ],
+    "benefits": [
+      "أعد إنتاج أي بيئة خلال دقائق",
+      "راجِع تغييرات البنية كما تراجع الكود",
+      "تخلّص من انحراف الإعدادات والحالات الفريدة",
+      "تعافَ من الكوارث بأمر apply واحد",
+      "قلّل الخطأ البشري عبر الخطوط المؤتمتة",
+      "دمّج المهندسين أسرع ببنية واضحة ومُكوَّدة"
+    ],
+    "metaTitle": "بنية Terraform التحتية ككود | PakSoft",
+    "metaDescription": "جهّز البنية السحابية ككود باستخدام Terraform عبر AWS وAzure وGCP. وحدات قابلة لإعادة الاستخدام وCI/CD وكشف الانحراف لبنية متسقة وقابلة للتدقيق. ابدأ الآن.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "التقييم والاستراتيجية", "description": "نراجع بنيتك الحالية وحساباتك السحابية لرسم مسار تبنّي Terraform. هذا يحدّد هيكل الوحدات واستراتيجية الحالة وكيفية التعامل مع الموارد القائمة." },
+        { "step": 2, "title": "الأساس والحالة", "description": "نُعدّ حالة بعيدة مع قفل وتشفير وضوابط وصول. أساس الحالة المتين يمنع التعارضات والفساد التي تُخرج مشاريع Terraform عن مسارها." },
+        { "step": 3, "title": "تطوير الوحدات", "description": "نبني وحدات قابلة لإعادة الاستخدام ومُعلّمة لكتلك البنائية الشائعة. تحوّل الوحدات الأنماط المتكررة إلى مكونات بنية مختبَرة ومتسقة." },
+        { "step": 4, "title": "هيكل البيئات", "description": "ننمذج dev وstaging وproduction كمساحات عمل معزولة تشترك في الوحدات نفسها. هذا يُبقي البيئات متسقة مع السماح بتغييرات آمنة ومستقلة." },
+        { "step": 5, "title": "الخط والسياسة", "description": "ندمج Terraform في CI/CD مع مراجعات الخطط وفحوصات السياسات. الحواجز المؤتمتة تلتقط التغييرات الخطرة قبل وصولها إلى الإنتاج." },
+        { "step": 6, "title": "التسليم والتمكين", "description": "نوثّق الإعداد وندرّب فريقك على تشغيله بثقة. التمكين يضمن أن يصبح Terraform قدرة تملكها، لا اعتماداً علينا." }
+      ],
+      "faq": [
+        { "question": "ما البنية ككود، ولماذا Terraform؟", "answer": "البنية ككود تعني تعريف الخوادم والشبكات والخدمات في ملفات خاضعة للتحكم بالإصدارات بدل النقر في وحدة تحكم. Terraform هي الأداة الرائدة لأنها محايدة تجاه السحابة وتصريحية ولها منظومة ضخمة من المزوّدين والوحدات." },
+        { "question": "هل يستطيع Terraform إدارة بنيتنا القائمة؟", "answer": "نعم. نستورد الموارد القائمة إلى حالة Terraform لتُدار ككود، ما يتيح لك تبنّي Terraform تدريجياً دون إعادة بناء كل شيء من الصفر." },
+        { "question": "هل يقيّدنا Terraform بسحابة واحدة؟", "answer": "لا، بل العكس. يستخدم Terraform إضافات مزوّدين لـ AWS وAzure وGCP وكثير غيرها، فتنطبق نفس سير العمل والمهارات عبر السحابات وحتى منصات SaaS." },
+        { "question": "ما حالة Terraform ولماذا تهم؟", "answer": "الحالة هي سجل Terraform لما جهّزه. نخزّنها بعيداً مع قفل ليتمكن الفِرق من التعاون بأمان دون أن يطمس أحدهم عمل الآخر أو يُفسد مصدر الحقيقة." },
+        { "question": "ما هو انحراف الإعدادات؟", "answer": "يحدث الانحراف حين يغيّر أحدهم البنية يدوياً، فلا يعود الواقع مطابقاً للكود. نُعدّ كشف الانحراف لالتقاط هذه التغييرات والتوفيق بينها بدل التسبب بمفاجآت صامتة." },
+        { "question": "هل ينبغي أن نستخدم وحدات Terraform؟", "answer": "نعم. تغلّف الوحدات نمطاً، مثل VPC قياسية أو خدمة، في وحدة قابلة لإعادة الاستخدام. تقلّل التكرار وتفرض المعايير وتجعل صيانة البُنى الكبيرة أسهل بكثير." },
+        { "question": "كيف تمنعون التغييرات الخطرة في الإنتاج؟", "answer": "نشترط مراجعات الخطط في طلبات الدمج ونفرض السياسة ككود، فتُعلَّم التغييرات المدمّرة أو غير المتوافقة أو تُحظر قبل أن يشغّل أحد apply على الإنتاج." },
+        { "question": "هل Terraform أفضل من CloudFormation أو وحدة تحكم السحابة؟", "answer": "للفِرق متعددة السحابات أو المحايدة تجاه المورّدين، يكون Terraform عادةً الأنسب بفضل منظومته وسير عمله المتسق. نساعدك على الاختيار بناءً على سحاباتك ومهارات فريقك وأهدافك." }
+      ],
+      "technologies": [
+        { "name": "Terraform", "icon": "terraform" },
+        { "name": "Terragrunt", "icon": "terragrunt" },
+        { "name": "AWS", "icon": "aws" },
+        { "name": "Azure", "icon": "azure" },
+        { "name": "Google Cloud", "icon": "google-cloud" },
+        { "name": "GitHub Actions", "icon": "github-actions" },
+        { "name": "Terraform Cloud", "icon": "terraform-cloud" },
+        { "name": "Atlantis", "icon": "atlantis" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,598 @@
+{
+  "slug": "tech-stack-assessment",
+  "en": {
+    "name": "Tech Stack Assessment",
+    "shortDescription": "Evaluate your technology stack for performance, security, and scalability. We deliver actionable recommendations to eliminate technical debt and optimize cloud infrastructure costs.",
+    "fullDescription": "Outdated software dependencies, poor database design, and sub-optimal cloud hosting choices can quietly drain your company's budgets and stall product development. Our comprehensive tech stack assessment evaluates your current architecture, code quality, deployment pipelines, and database configurations. We identify critical bottlenecks, security vulnerabilities, and licensing compliance issues. Our senior engineers deliver a detailed technical report that outlines immediate performance optimizations, long-term migration strategies, and cloud cost reduction opportunities. Whether you are prepping for an investor due diligence audit, scaling for high traffic, or refactoring legacy applications, we provide the technical clarity you need to succeed.",
+    "features": [
+      "Comprehensive Source Code Quality Auditing",
+      "Database Query Performance Analysis",
+      "Cloud Architecture Cost Optimization Reviews",
+      "Dependency Security Vulnerability Scanning",
+      "API Security and Performance Profiling",
+      "CI/CD Pipeline Efficiency Audits",
+      "Software License Compliance Audits",
+      "Technical Due Diligence Blueprinting"
+    ],
+    "benefits": [
+      "Identify and fix hidden security vulnerabilities instantly",
+      "Reduce cloud hosting costs by removing redundant resources",
+      "Improve application speed and response time bottlenecks",
+      "Eliminate technical debt to accelerate development speed",
+      "Prepare technical assets for investor due diligence reviews",
+      "Establish clear scalability paths for user growth"
+    ],
+    "metaTitle": "Tech Stack Assessment & Code Audit Services | PakSoft",
+    "metaDescription": "Get a comprehensive technology stack assessment. We audit source code, analyze databases, and optimize cloud costs to improve performance. Contact us.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Access Provisioning & Scoping",
+          "description": "We obtain secure, read-only access to your code repositories, cloud environments, and database monitoring systems. This initial setup defines the audit boundaries clearly."
+        },
+        {
+          "step": 2,
+          "title": "Static Code Analysis",
+          "description": "Our team scans the repository for security flaws, code smells, and outdated package dependencies. This review identifies structural issues that impact software maintainability."
+        },
+        {
+          "step": 3,
+          "title": "Database & Query Analysis",
+          "description": "We profile your database configurations, slow queries, indexing strategies, and connection pool behaviors. This step pinpoints performance bottlenecks that cause slow response times."
+        },
+        {
+          "step": 4,
+          "title": "Infrastructure & Cloud Review",
+          "description": "We audit your cloud resources, deployment scripts, auto-scaling rules, and monthly billing statements. This review uncovers redundant systems and cost-saving opportunities."
+        },
+        {
+          "step": 5,
+          "title": "CI/CD Pipeline Assessment",
+          "description": "We check your build scripts, automated test coverage, deployment workflows, and container configurations. This evaluation helps speed up the software delivery cycle."
+        },
+        {
+          "step": 6,
+          "title": "Deliverable Assessment Report",
+          "description": "We deliver a detailed report containing prioritized recommendations, code refactoring examples, and cost-saving steps. We hold a walkthrough meeting to explain findings."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is a tech stack assessment?",
+          "answer": "A tech stack assessment is an in-depth evaluation of your software systems, databases, APIs, code quality, and cloud hosting infrastructure. It identifies security issues, performance bottlenecks, and cost-reduction opportunities."
+        },
+        {
+          "question": "How long does a technology assessment take?",
+          "answer": "A standard tech stack assessment takes between three to six weeks to complete. The exact timeframe depends on the size of your codebases and the complexity of your cloud deployment systems."
+        },
+        {
+          "question": "Do you need write access to our code or databases?",
+          "answer": "No, we only require secure, read-only access to perform our audit. We never modify your production systems, code, or databases during the assessment process."
+        },
+        {
+          "question": "What deliverables do we receive at the end?",
+          "answer": "You receive a comprehensive technical report detailing our findings, categorized by severity. It includes actionable code refactoring suggestions, cloud architecture diagrams, and a clear roadmap for modernization."
+        },
+        {
+          "question": "Can this assessment help prepare us for due diligence?",
+          "answer": "Yes, we frequently perform audits for startups preparing for investment rounds or acquisitions. Our report meets the standards expected by venture capital firms and technical auditors."
+        },
+        {
+          "question": "How can an assessment reduce our cloud hosting costs?",
+          "answer": "We analyze your resource utilization patterns to identify over-provisioned servers, unused databases, and inefficient database queries. Our recommendations help you reduce hosting costs by up to forty percent."
+        },
+        {
+          "question": "What types of technologies do you assess?",
+          "answer": "We evaluate a wide range of frontend and backend technologies, including JavaScript, TypeScript, Python, Ruby, Java, PHP, PostgreSQL, MySQL, AWS, Azure, and Google Cloud platforms."
+        },
+        {
+          "question": "What is the cost of a tech stack assessment?",
+          "answer": "The pricing depends on the size of the codebase, number of applications, and complexity of the cloud infrastructure. We provide custom quotes after a quick discovery call."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "GitHub",
+          "icon": "github"
+        },
+        {
+          "name": "AWS",
+          "icon": "aws"
+        },
+        {
+          "name": "Google Cloud",
+          "icon": "googlecloud"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "SonarQube",
+          "icon": "sonarqube"
+        },
+        {
+          "name": "Prisma",
+          "icon": "prisma"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Teknoloji Yığını Değerlendirmesi",
+    "shortDescription": "Performans, güvenlik ve ölçeklenebilirlik için teknoloji yığınınızı değerlendirin. Teknik borçları ortadan kaldırmak ve bulut altyapı maliyetlerini optimize etmek için uygulanabilir öneriler sunuyoruz.",
+    "fullDescription": "Güncel olmayan yazılım bağımlılıkları, zayıf veritabanı tasarımı ve optimize edilmemiş bulut barındırma seçimleri, şirketinizin bütçelerini sessizce tüketebilir ve ürün geliştirmeyi durdurabilir. Kapsamlı teknoloji yığını değerlendirmemiz mevcut mimarinizi, kod kalitenizi, dağıtım hatlarınızı ve veritabanı yapılandırmalarınızı derinlemesine analiz eder. Kritik darboğazları, güvenlik açıklarını ve lisans uyumluluk sorunlarını hızlıca belirliyoruz. Kıdemli mühendislerimiz performans iyileştirmelerini, uzun vadeli geçiş stratejilerini ve bulut maliyet azaltma fırsatlarını özetleyen ayrıntılı bir teknik rapor sunar. Sisteminizin güvenle büyümesini sağlamak ve operasyonel verimliliği artırmak için ihtiyacınız olan tüm teknik netliği sağlıyoruz.",
+    "features": [
+      "Kapsamlı Kaynak Kod Kalite Denetimi",
+      "Veritabanı Sorgu Performans Analizi",
+      "Bulut Mimarisi Maliyet Optimizasyonu İncelemesi",
+      "Bağımlılık Güvenlik Açığı Taraması",
+      "API Güvenliği ve Performans Profili Oluşturma",
+      "CI/CD Dağıtım Hattı Verimlilik Denetimleri",
+      "Yazılım Lisans Uyumluluğu Denetimi",
+      "Teknik Durum Tespiti (Due Diligence) Planı"
+    ],
+    "benefits": [
+      "Gizli güvenlik açıklarını anında tespit edin ve giderin",
+      "Gereksiz kaynakları kaldırarak bulut maliyetlerini azaltın",
+      "Uygulama hızı ve yanıt süresi darboğazlarını iyileştirin",
+      "Geliştirme hızını artırmak için teknik borçları ortadan kaldırın",
+      "Yatırımcı teknik incelemeleri için teknik varlıkları hazırlayın",
+      "Kullanıcı büyümesi için net ölçeklenebilirlik yolları belirleyin"
+    ],
+    "metaTitle": "Teknoloji Yığını Değerlendirme Hizmetleri | PakSoft",
+    "metaDescription": "Kapsamlı teknoloji yığını değerlendirmesi alın. Performansı artırmak için kaynak kodlerini denetliyor, veritabanlarını analiz ediyoruz. İletişime geçin.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Erişim Sağlama ve Kapsam Belirleme",
+          "description": "Kod depolarınıza, bulut ortamlarınıza ve veritabanı izleme sistemlerinize salt okunur erişim sağlıyoruz. Bu kurulum denetim sınırlarını netleştirir."
+        },
+        {
+          "step": 2,
+          "title": "Statik Kod Analizi",
+          "description": "Ekibimiz güvenlik kusurlarını ve güncel olmayan paket bağımlılıklarını tarar. Bu inceleme yazılım sürdürülebilirliğini etkileyen yapısal sorunları belirler."
+        },
+        {
+          "step": 3,
+          "title": "Veritabanı ve Sorgu Analizi",
+          "description": "Veritabanı yapılandırmalarınızı ve yavaş sorguları analiz ediyoruz. Bu adım yavaş yanıt sürelerine neden olan performans darboğazlarını tespit eder."
+        },
+        {
+          "step": 4,
+          "title": "Altyapı ve Bulut İncelemesi",
+          "description": "Bulut kaynaklarınızı, dağıtım betiklerinizi ve faturalarınızı denetliyoruz. Bu inceleme gereksiz sistemleri ve tasarruf fırsatlarını ortaya çıkarır."
+        },
+        {
+          "step": 5,
+          "title": "CI/CD Süreç Değerlendirmesi",
+          "description": "Derleme betiklerinizi, test kapsamınızı ve konteyner yapılandırmalarınızı kontrol ediyoruz. Bu değerlendirme yazılım teslim döngüsünü hızlandırmaya yardımcı olur."
+        },
+        {
+          "step": 6,
+          "title": "Değerlendirme Raporunun Sunulması",
+          "description": "Öncelikli önerileri ve kod yeniden yapılandırma örneklerini içeren ayrıntılı bir rapor sunuyoruz. Bulguları açıklamak için bir toplantı düzenliyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Teknoloji yığını değerlendirmesi nedir?",
+          "answer": "Yazılım sistemlerinizin, veritabanlarınızın, API'lerinizin, kod kalitenizin ve bulut altyapınızın derinlemesine değerlendirilmesidir. Güvenlik sorunlarını, performans darboğazlarını ve maliyet tasarrufu fırsatlarını belirler."
+        },
+        {
+          "question": "Teknoloji değerlendirmesi ne kadar sürer?",
+          "answer": "Standart bir değerlendirme projesi genellikle üç ila altı hafta sürer. Tam süre, kod tabanlarınızın boyutuna ve bulut sistemlerinizin karmaşıklığına bağlıdır."
+        },
+        {
+          "question": "Kodumuza veya veritabanımıza yazma erişimine ihtiyacınız var mı?",
+          "answer": "Hayır, denetimimizi gerçekleştirmek için yalnızca salt okunur erişime ihtiyacımız var. Değerlendirme sürecinde üretim sistemlerinizi, kodunuzu veya veritabanınızı asla değiştirmeyiz."
+        },
+        {
+          "question": "Süreç sonunda hangi belgeleri alıyoruz?",
+          "answer": "Bulgularımızı önem derecesine göre listeleyen kapsamlı bir rapor alırsınız. Bu rapor kod yeniden yapılandırma önerilerini, mimari diyagramları ve modernizasyon planını içerir."
+        },
+        {
+          "question": "Bu değerlendirme bizi yatırımcı denetimine hazırlayabilir mi?",
+          "answer": "Evet, yatırım turlarına hazırlanan startuplar için sıkça denetimler yapıyoruz. Raporumuz girişim sermayesi firmalarının ve teknik denetçilerin beklediği standartları karşılar."
+        },
+        {
+          "question": "Değerlendirme bulut maliyetlerimizi nasıl azaltabilir?",
+          "answer": "Gereksiz sunucuları ve verimsiz veritabanı sorgularını belirlemek için kaynak kullanım modellerinizi analiz ediyoruz. Önerilerimiz barındırma maliyetlerini yüzde kırka kadar azaltmaya yardımcı olur."
+        },
+        {
+          "question": "Hangi teknolojileri değerlendiriyorsunuz?",
+          "answer": "JavaScript, TypeScript, Python, Ruby, Java, PHP, PostgreSQL, MySQL, AWS, Azure ve Google Cloud dahil olmak üzere geniş bir yelpazedeki teknolojileri değerlendiriyoruz."
+        },
+        {
+          "question": "Teknoloji yığını değerlendirmesinin maliyeti nedir?",
+          "answer": "Fiyatlandırma kod tabanının boyutuna, uygulama sayısına ve bulut altyapısının karmaşıklığına bağlıdır. Hızlı bir keşif görüşmesinden sonra özel teklifler sunuyoruz."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "GitHub",
+          "icon": "github"
+        },
+        {
+          "name": "AWS",
+          "icon": "aws"
+        },
+        {
+          "name": "Google Cloud",
+          "icon": "googlecloud"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "SonarQube",
+          "icon": "sonarqube"
+        },
+        {
+          "name": "Prisma",
+          "icon": "prisma"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Technologie-Stack-Bewertung",
+    "shortDescription": "Bewerten Sie Ihren Technologie-Stack auf Leistung, Sicherheit und Skalierbarkeit. Wir liefern konkrete Empfehlungen zum Abbau von technischen Schulden und zur Kostenoptimierung.",
+    "fullDescription": "Veraltete Software-Abhängigkeiten, ein unstrukturiertes Datenbankdesign und suboptimale Cloud-Hosting-Entscheidungen können die Budgets Ihres Unternehmens unbemerkt belasten und die Produktentwicklung hemmen. Unsere umfassende Technologie-Stack-Bewertung analysiert Ihre gesamte Architektur, die Codequalität, Ihre CI/CD-Pipelines und alle Datenbankkonfigurationen bis ins kleinste Detail. Wir identifizieren kritische Leistungsengpässe, versteckte Sicherheitslücken und potenzielle Lizenzkonformitätsprobleme. Unsere Senior-Entwickler liefern Ihnen einen detaillierten technischen Bericht mit sofortigen Optimierungsvorschlägen, langfristigen Migrationsstrategien und klaren Cloud-Kostensenkungspotenzialen. Wir sorgen für die nötige technische Klarheit, damit Ihr System stabil und sicher skaliert werden kann.",
+    "features": [
+      "Umfassendes Audit der Quellcode-Qualität",
+      "Leistungsanalyse von Datenbank-Abfragen",
+      "Kostenoptimierungs-Reviews der Cloud-Architektur",
+      "Sicherheits-Scans von Software-Abhängigkeiten",
+      "Sicherheits- und Performance-Profiling von APIs",
+      "Effizienz-Audits von CI/CD-Pipelines",
+      "Überprüfung der Software-Lizenzkonformität",
+      "Erstellung von Plänen für die technische Due Diligence"
+    ],
+    "benefits": [
+      "Sicherheitslücken in Ihren Systemen sofort aufdecken",
+      "Cloud-Kosten durch entfernen ungenutzter Ressourcen senken",
+      "Die Geschwindigkeit und Antwortzeit Ihrer Anwendungen verbessern",
+      "Technische Schulden abbauen, um die Entwicklung zu beschleunigen",
+      "Technische Assets optimal auf Due-Diligence-Prüfungen vorbereiten",
+      "Einen klaren Skalierungspfad für wachsende Nutzerzahlen festlegen"
+    ],
+    "metaTitle": "Technologie-Stack-Bewertung & Code-Audits | PakSoft",
+    "metaDescription": "Erhalten Sie ein umfassendes Technologie-Stack-Audit. Wir bewerten Quellcode, analysieren Datenbanken und senken Cloud-Kosten nachhaltig. Kontakt.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Bereitstellung & Scoping",
+          "description": "Wir richten einen sicheren, lesenden Zugriff auf Ihre Code-Repositories, Cloud-Umgebungen und Datenbanken ein. Das stellt sicher, dass die Audit-Grenzen klar definiert sind."
+        },
+        {
+          "step": 2,
+          "title": "Statische Code-Analyse",
+          "description": "Unser Team scannt den Quellcode auf Sicherheitsrisiken und veraltete Bibliotheken. Diese Überprüfung zeigt strukturelle Schwachstellen auf, die die Wartbarkeit beeinträchtigen."
+        },
+        {
+          "step": 3,
+          "title": "Datenbank- & Abfrageanalyse",
+          "description": "Wir analysieren Datenbankkonfigurationen, langsame Abfragen und Indexierungsstrategien. Dieser Schritt lokalisiert Leistungsengpässe, die Verzögerungen verursachen."
+        },
+        {
+          "step": 4,
+          "title": "Infrastruktur- & Cloud-Review",
+          "description": "Wir prüfen Ihre Cloud-Ressourcen, Deployment-Skripte und monatlichen Abrechnungen. Diese Analyse deckt ungenutzte Server und Einsparpotenziale auf."
+        },
+        {
+          "step": 5,
+          "title": "CI/CD-Pipeline-Audit",
+          "description": "Wir testen Ihre Build-Prozesse, automatisierte Testabdeckung und Containerkonfigurationen. Diese Evaluierung hilft, den Release-Zyklus Ihrer Software zu beschleunigen."
+        },
+        {
+          "step": 6,
+          "title": "Ergebnisbericht & Präsentation",
+          "description": "Wir übergeben einen detaillierten Bericht mit priorisierten Empfehlungen und Refactoring-Beispielen. In einem Abschlussgespräch erläutern wir alle Ergebnisse."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist eine Technologie-Stack-Bewertung?",
+          "answer": "Es ist eine eingehende Analyse Ihrer Softwarearchitektur, Datenbanken, Schnittstellen, Codequalität und Cloud-Infrastruktur. Sie hilft, Sicherheitslücken, Engpässe und Kostenpotenziale aufzudecken."
+        },
+        {
+          "question": "Wie lange dauert eine Technologie-Bewertung?",
+          "answer": "Ein Standard-Audit dauert in der Regel drei bis sechs Wochen. Die genaue Projektdauer hängt vom Umfang Ihres Codes und der Komplexität der Cloud-Infrastruktur ab."
+        },
+        {
+          "question": "Benötigen Sie Schreibrechte auf unseren Code oder unsere Datenbanken?",
+          "answer": "Nein, für das gesamte Audit benötigen wir ausschließlich lesenden Zugriff. Wir nehmen während der Analyse keinerlei Änderungen an Ihren Live-Systemen oder Ihrem Code vor."
+        },
+        {
+          "question": "Welche Ergebnisse erhalten wir am Ende?",
+          "answer": "Sie erhalten einen detaillierten Bericht, der Mängel nach Priorität sortiert auflistet. Er enthält konkrete Refactoring-Tipps, Cloud-Diagramme und einen Modernisierungsfahrplan."
+        },
+        {
+          "question": "Hilft uns diese Bewertung bei einer Due Diligence?",
+          "answer": "Ja, wir führen regelmäßig technische Audits für Startups vor Finanzierungsrunden oder Übernahmen durch. Unser Bericht erfüllt die Standards von Venture-Capital-Investoren."
+        },
+        {
+          "question": "Wie kann die Bewertung unsere Cloud-Hostingkosten senken?",
+          "answer": "Wir identifizieren überdimensionierte Server, ungenutzte Datenbanken und ineffiziente Abfragen. Unsere Empfehlungen helfen Ihnen, die Hosting-Kosten um bis zu vierzig Prozent zu senken."
+        },
+        {
+          "question": "Welche Technologien können bewertet werden?",
+          "answer": "Wir analysieren viele gängige Frontend- und Backend-Technologien, darunter JavaScript, TypeScript, Python, Java, PHP, PostgreSQL, MySQL sowie AWS, Azure und Google Cloud."
+        },
+        {
+          "question": "Wie viel kostet ein solches Audit?",
+          "answer": "Die Kosten hängen vom Umfang des Quellcodes und der Komplexität der Cloud-Strukturen ab. Nach einem kurzen Erstgespräch erstellen wir Ihnen ein individuelles Angebot."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "GitHub",
+          "icon": "github"
+        },
+        {
+          "name": "AWS",
+          "icon": "aws"
+        },
+        {
+          "name": "Google Cloud",
+          "icon": "googlecloud"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "SonarQube",
+          "icon": "sonarqube"
+        },
+        {
+          "name": "Prisma",
+          "icon": "prisma"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "ٹیکنالوجی اسٹیک کا جائزہ",
+    "shortDescription": "کارکردگی، سیکیورٹی اور اسکیل ایبلٹی کے لیے اپنے ٹیکنالوجی اسٹیک کا جائزہ لیں۔ ہم ٹیکنیکل ڈیٹ کو ختم کرنے اور کلاؤڈ لاگت کو بہتر بنانے کے لیے عملی مشورے دیتے ہیں۔",
+    "fullDescription": "پرانی سافٹ ویئر لائبریریز، ڈیٹا بیس کا ناقص ڈیزائن اور غیر مناسب کلاؤڈ ہوسٹنگ کمپنی کا بجٹ ضائع کر سکتی ہیں اور پروڈکٹ کی ترقی کو روک سکتی ہیں۔ ہماری جامع ٹیکنالوجی اسٹیک اسیسمنٹ سروس آپ کے موجودہ آرکیٹیکچر، کوڈ کی کوالٹی، اور ڈیٹا بیس کنفیگریشنز کا تفصیلی تجزیہ کرتی ہے۔ ہم کارکردگی کی رکاوٹیں، سیکیورٹی خطرات اور لائسنس کے مسائل تلاش کرتے ہیں۔ ہمارے تجربہ کار انجینئرز ایک تفصیلی رپورٹ فراہم کرتے ہیں جس میں کارکردگی کی بہتری اور کلاؤڈ لاگت میں کمی کے طریقے شامل ہوتے ہیں۔ ہم سسٹمز کو جدید بنانے کے لیے ٹیکنیکل وضاحت دیتے ہیں۔",
+    "features": [
+      "سورس کوڈ کی کوالٹی کا جامع آڈٹ",
+      "ڈیٹا بیس کیوریز کی کارکردگی کا تجزیہ",
+      "کلاؤڈ آرکیٹیکچر کی لاگت کا جائزہ",
+      "لائبریری سیکیورٹی خطرات کی اسکیننگ",
+      "API سیکیورٹی اور کارکردگی کا پروفائلنگ",
+      "CI/CD پائپ لائنز کی کارکردگی کا آڈٹ",
+      "سافٹ ویئر لائسنس کی تعمیل کا آڈٹ",
+      "ٹیکنیکل ڈیو ڈیلیجنس کا تفصیلی خاکہ"
+    ],
+    "benefits": [
+      "سسٹمز کے پوشیدہ سیکیورٹی خطرات کو فوری ختم کریں",
+      "فالتو کلاؤڈ سسٹمز کو ہٹا کر ماہانہ اخراجات کم کریں",
+      "ایپلی کیشن کی رفتار اور رسپانس ٹائم کو بہتر بنائیں",
+      "ڈویلپمنٹ کی رفتار بڑھانے کے لیے ٹیکنیکل ڈیٹ ختم کریں",
+      "سرمایہ کاروں کے جائزے کے لیے ٹیکنیکل اثاثے تیار کریں",
+      "صاورفین کی بڑھتی ہوئی تعداد کے لیے اسکیلنگ کی پلاننگ کریں"
+    ],
+    "metaTitle": "ٹیکنالوجی اسٹیک آڈٹ اور کوڈ اسیسمنٹ سروسز | PakSoft",
+    "metaDescription": "اپنے ٹیکنالوجی اسٹیک کا آڈٹ کروائیں۔ ہم سورس کوڈ کا جائزہ لیتے ہیں، ڈیٹا بیس کا تجزیہ کرتے ہیں اور کلاؤڈ لاگت کو کم کرتے ہیں۔ رابطہ کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "رسائی اور اسکوپنگ کا سیٹ اپ",
+          "description": "ہم آپ کے کوڈ ریپوزٹریز، کلاؤڈ اور ڈیٹا بیس مانیٹرنگ سسٹمز تک محفوظ، ریڈ اونلی رسائی حاصل کرتے ہیں۔ یہ سیٹ اپ آڈٹ کے حدود کو واضح کرتا ہے۔"
+        },
+        {
+          "step": 2,
+          "title": "اسٹیٹک کوڈ کا تجزیہ",
+          "description": "ہماری ٹیم کوڈ میں سیکیورٹی کے مسائل اور پرانے پیکیجز کو اسکین کرتی ہے۔ یہ جائزہ سافٹ ویئر کی دیکھ بھال کو متاثر کرنے والے مسائل بتاتا ہے۔"
+        },
+        {
+          "step": 3,
+          "title": "ڈیٹا بیس اور کیوریز کا جائزہ",
+          "description": "ہم ڈیٹا بیس کنفیگریشنs، سست رفتار کیوریز اور انڈیکسنگ کا موازنہ کرتے ہیں۔ یہ مرحلہ کارکردگی کے مسائل کی درست نشاندہی کرتا ہے۔"
+        },
+        {
+          "step": 4,
+          "title": "انفراسٹرکچر اور کلاؤڈ آڈٹ",
+          "description": "ہم آپ کے کلاؤڈ سرورز، ڈپلائیمنٹ اسکرپٹس اور بلنگ اسٹیٹمنٹس کا جائزہ لیتے ہیں۔ یہ ریویو فالتو اخراجات اور بچت کے طریقے تلاش کرتا ہے۔"
+        },
+        {
+          "step": 5,
+          "title": "CI/CD پائپ لائن کا جائزہ",
+          "description": "ہم آپ کے خودکار ٹیسٹنگ اور کنٹینر سسٹمز का معائنہ کرتے ہیں۔ یہ تجزیہ سافٹ ویئر لانچ کرنے کے عمل کو تیز کرنے میں مدد دیتا ہے۔"
+        },
+        {
+          "step": 6,
+          "title": "حتمی رپورٹ اور بریفنگ سیشن",
+          "description": "ہم تفصیلی سفارشات اور ری فیکٹرنگ کوڈ کی مثالوں پر مشتمل رپورٹ دیتے ہیں۔ ہم نتائج کی وضاحت کے لیے ایک میٹنگ بھی کرتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "ٹیکنالوجی اسٹیک اسیسمنٹ (tech stack assessment) کیا ہے؟",
+          "answer": "یہ آپ کے سافٹ ویئر سسٹمز، ڈیٹا بیسز، APIs، کوڈ کی کوالٹی اور کلاؤڈ ہوسٹنگ انفراسٹرکچر کا ایک تفصیلی جائزہ ہے۔ یہ سیکیورٹی خطرات, کارکردگی کے مسائل اور لاگت میں کمی کے مواقع تلاش کرتا ہے۔"
+        },
+        {
+          "question": "ٹیکنالوجی آڈٹ کے پروجیکٹ میں کتنا وقت لگتا ہے؟",
+          "answer": "ایک عام ٹیکنالوجی اسٹیک اسیسمنٹ کو مکمل ہونے میں تین سے چھ ہفتے لگتے ہیں۔ اس کا انحصار آپ کے کوڈ بیس اور کلاؤڈ سسٹمز کی پیچیدگی پر ہوتا ہے۔"
+        },
+        {
+          "question": "کیا آپ کو ہمارے کوڈ یا ڈیٹا بیس تک لکھنے کی رسائی چاہیے؟",
+          "answer": "نہیں، ہمیں آڈٹ کے کاموں کے لیے صرف محفوظ، ریڈ اونلی (read-only) رسائی کی ضرورت ہوتی ہے۔ ہم جائزہ لینے کے دوران آپ کے لائیو سسٹمز یا کوڈ میں کوئی تبدیلی نہیں کرتے۔"
+        },
+        {
+          "question": "ہمیں آڈٹ کے آخر میں کیا ملے گا؟",
+          "answer": "آپ کو ایک جامع رپورٹ ملے گی جس میں مسائل کو ان کی سنگینی کے لحاظ سے ترتیب دیا گیا ہو گا۔ اس رپورٹ میں کوڈ ری فیکٹرنگ کی تجاویز اور سسٹمز کو بہتر بنانے کا روڈ میپ شامل ہو گا۔"
+        },
+        {
+          "question": "کیا یہ جائزہ ہمیں سرمایہ کاروں کے لیے تیار کر سکتا ہے؟",
+          "answer": "جی ہاں، ہم اکثر ان اسٹارٹ اپس کے لیے آڈٹ کرتے ہیں جو فنڈنگ یا حصولیابی کی تیاری کر رہے ہوتے ہیں۔ ہماری رپورٹ سرمایہ کاروں کے طے شدہ معیارات کے مطابق ہوتی ہے۔"
+        },
+        {
+          "question": "یہ جائزہ ہمارے کلاؤڈ ہوسٹنگ اخراجات کو کیسے کم کر سکتا ہے؟",
+          "answer": "ہم فالتو سرورز اور کارکردگی کے مسائل والی ڈیٹا بیس کیوریز کا پتہ لگاتے ہیں۔ ہماری تجاویز پر عمل کر کے آپ کلاؤڈ اخراجات میں چالیس فیصد تک کمی لا سکتے ہیں۔"
+        },
+        {
+          "question": "آپ کن ٹیکنالوجیز کا جائزہ لیتے ہیں؟",
+          "answer": "ہم وسیع پیمانے پر ٹیکنالوجیز کا جائزہ لیتے ہیں، بشمول JavaScript، TypeScript، Python، PHP, PostgreSQL، MySQL، AWS، Azure اور Google Cloud سسٹمز۔"
+        },
+        {
+          "question": "ٹیکنالوجی اسٹیک اسیسمنٹ کی فیس کتنی ہے؟",
+          "answer": "اس کی قیمت کوڈ کی لمبائی، ایپلی کیشنز کی تعداد اور کلاؤڈ انفراسٹرکچر کی پیچیدگی پر منحصر ہوتی ہے۔ ہم میٹرکس طے کرنے کے بعد تفصیلی کوٹیشن فراہم کرتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "GitHub",
+          "icon": "github"
+        },
+        {
+          "name": "AWS",
+          "icon": "aws"
+        },
+        {
+          "name": "Google Cloud",
+          "icon": "googlecloud"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "SonarQube",
+          "icon": "sonarqube"
+        },
+        {
+          "name": "Prisma",
+          "icon": "prisma"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تقييم البنية التكنولوجية",
+    "shortDescription": "قم بتقييم البنية التكنولوجية الحالية لعملك من حيث الأداء والأمان والتوسع. نقدم توصيات عملية للتخلص من الديون التقنية وتحسين تكاليف الاستضافة السحابية.",
+    "fullDescription": "يمكن للاعتماد على تبعيات برمجية قديمة وتصميم قواعد البيانات السيئ واختيارات الاستضافة السحابية غير المناسبة استنزاف ميزانيات شركتك دون علمك وتعطيل تطوير منتجاتك. يقيم تقييمنا الشامل للبنية التكنولوجية جودة الكود البرمجي الحالي، وقواعد البيانات، ومسارات النشر والتشغيل، والبنية التحتية. نحدد العقبات الحرجة، والثغرات الأمنية، ومشكلات الامتثال لتراخيص البرمجيات. يقدم مهندسونا تقريراً فنياً تفصيلياً يوضح تحسينات الأداء الفورية، واستراتيجيات الهجرة طويلة المدى، وفرص توفير التكاليف السحابية. نحن نوفر الوضوح الفني الكامل لتحسين أنظمتك بنجاح.",
+    "features": [
+      "تدقيق شامل لجودة الكود البرمجي المصدري",
+      "تحليل شامل لأداء استعلامات قواعد البيانات",
+      "مراجعة وتحسين تكاليف البنية السحابية",
+      "فحص شامل للثغرات الأمنية في التبعيات",
+      "تحليل أداء وأمان واجهات التطبيقات APIs",
+      "تدقيق كفاءة مسارات النشر الآلي CI/CD",
+      "مراجعة الامتثال لتراخيص البرمجيات والأنظمة",
+      "تخطيط الفحص الفني النافي للجهالة للمستثمرين"
+    ],
+    "benefits": [
+      "تحديد الثغرات الأمنية المخفية وإصلاحها فوراً",
+      "تقليل تكاليف الاستضافة عن طريق إزالة الموارد المكررة",
+      "تحسين سرعة التطبيق وحل مشكلات أوقات الاستجابة",
+      "التخلص من الديون التقنية لتسريع عمليات التطوير",
+      "تهيئة الأصول الفنية للمراجعة والتدقيق من المستثمرين",
+      "تحديد مسارات توسع واضحة لتلبية نمو المستخدمين"
+    ],
+    "metaTitle": "تقييم البنية التكنولوجية وتدقيق الكود | PakSoft",
+    "metaDescription": "احصل على تقييم شامل للبنية التكنولوجية. ندقق الكود المصدري، ونحلل قواعد البيانات، ونحسن التكاليف السحابية لتعزيز الأداء. اتصل بنا.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "توفير الصلاحيات وتحديد النطاق",
+          "description": "نحصل على وصول آمن للقراءة فقط إلى مستودعات الكود، والبيئات السحابية، وأنظمة مراقبة قواعد البيانات. يحدد هذا الإجراء حدود التدقيق بدقة."
+        },
+        {
+          "step": 2,
+          "title": "تحليل الكود المصدري الساكن",
+          "description": "يفحص فريقنا الكود بحثاً عن العيوب الأمنية والتبعيات القديمة. تحدد هذه المراجعة المشكلات الهيكلية التي تؤثر على سهولة صيانة البرمجيات."
+        },
+        {
+          "step": 3,
+          "title": "تحليل قواعد البيانات والاستعلامات",
+          "description": "نراجع إعدادات قواعد البيانات، والاستعلامات البطيئة، واستراتيجيات الفهرسة. تحدد هذه الخطوة الاختناقات التي تسبب بطء الاستجابة في التطبيقات."
+        },
+        {
+          "step": 4,
+          "title": "مراجعة البنية التحتية والسحابة",
+          "description": "ندقق الموارد السحابية، ونصوص النشر، والتقارير المالية الشهرية للاستضافة. تكشف هذه المراجعة عن الأنظمة الزائدة عن الحاجة وفرص التوفير المتاحة."
+        },
+        {
+          "step": 5,
+          "title": "تقييم مسارات النشر الآلي",
+          "description": "نتحقق من نصوص بناء البرمجيات، وتغطية الاختبارات التلقائية، وإعدادات الحاويات. يساعد هذا التقييم في تسريع دورة تسليم البرمجيات للمستخدمين."
+        },
+        {
+          "step": 6,
+          "title": "تسليم تقرير التقييم الفني",
+          "description": "نقدم تقريراً مفصلاً يحتوي على توصيات مرتبة حسب الأهمية وأمثلة لإعادة هيكلة الكود. نعقد اجتماعاً لمناقشة النتائج وشرح التوصيات."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما هو تقييم البنية التكنولوجية؟",
+          "answer": "هو فحص دقيق وشامل للأنظمة البرمجية، وقواعد البيانات، وواجهات التطبيقات، وجودة الكود، والبنية التحتية السحابية. يهدف إلى تحديد الثغرات الأمنية، واختناقات الأداء، وفرص خفض التكاليف."
+        },
+        {
+          "question": "كم من الوقت يستغرق تقييم البنية التكنولوجية؟",
+          "answer": "يستغرق التقييم القياسي ما بين ثلاثة إلى ستة أسابيع للانتهاء منه. يعتمد الوقت المحدد على حجم مشاريعك البرمجية ومدى تعقيد بيئتك السحابية."
+        },
+        {
+          "question": "هل تحتاجون إلى صلاحية الكتابة في الكود أو قواعد البيانات الخاصة بنا؟",
+          "answer": "لا، نحتاج فقط إلى صلاحيات القراءة فقط للقيام بعملنا بأمان تام. لن نقوم بتعديل أنظمة الإنتاج الحية أو الكود الخاص بك أثناء التقييم."
+        },
+        {
+          "question": "ما هي المخرجات التي نحصل عليها في النهاية؟",
+          "answer": "تحصل على تقرير فني شامل يفصل النتائج التي توصلنا إليها، مصنفة حسب الأهمية. يتضمن مقترحات عملية لإعادة هيكلة الكود، ومخططات سحابية، وخريطة طريق للتحديث."
+        },
+        {
+          "question": "هل يساعدنا هذا التقييم في الاستعداد لعمليات التدقيق والتحقق للمستثمرين؟",
+          "answer": "نعم، نجري بانتظام عمليات تدقيق للشركات الناشئة التي تستعد لجولات استثمارية أو عمليات استحواذ. يلبي تقريرنا المعايير المتوقعة من المستثمرين والمدققين الفنيين."
+        },
+        {
+          "question": "كيف يمكن للتقييم أن يقلل من تكاليف الاستضافة السحابية؟",
+          "answer": "نحلل أنماط استخدام الموارد لتحديد الخوادم الزائدة عن الحاجة وقواعد البيانات غير المستغلة. تساعدك توصياتنا في تقليل تكاليف الاستضافة بنسب تصل إلى أربعين بالمئة."
+        },
+        {
+          "question": "ما هي أنواع التقنيات التي تقومون بتقييمها؟",
+          "answer": "نحن نقيم مجموعة واسعة من تقنيات الواجهات الأمامية والخلفية، بما في ذلك JavaScript وTypeScript وPython وPHP وPostgreSQL وMySQL وAWS وAzure وGoogle Cloud."
+        },
+        {
+          "question": "ما هي تكلفة تقييم البنية التكنولوجية للشركات؟",
+          "answer": "تعتمد التكلفة على حجم الكود البرمجي، وعدد التطبيقات، ومدى تعقيد البنية السحابية. نقدم عرض سعر مخصص بعد مكالمة استكشافية سريعة مع فريقكم."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "GitHub",
+          "icon": "github"
+        },
+        {
+          "name": "AWS",
+          "icon": "aws"
+        },
+        {
+          "name": "Google Cloud",
+          "icon": "googlecloud"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "SonarQube",
+          "icon": "sonarqube"
+        },
+        {
+          "name": "Prisma",
+          "icon": "prisma"
+        }
+      ]
+    }
+  }
+}

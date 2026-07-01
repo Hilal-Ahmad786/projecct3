@@ -1,0 +1,638 @@
+{
+  "slug": "multi-agent-systems",
+  "en": {
+    "name": "Multi-Agent Systems",
+    "shortDescription": "Build cooperative networks of AI agents that collaborate to solve complex tasks. We design multi-agent systems with role specialization, memory, and human guardrails.",
+    "fullDescription": "Single-agent AI systems struggle with complex, multi-departmental business workflows. We design and build advanced Multi-Agent Systems where specialized AI agents cooperate to solve complex, multi-step tasks. Utilizing modern frameworks like CrewAI, AutoGen, and LangGraph, we define custom roles, communication protocols, and conflict resolution mechanisms for each agent (e.g., an analyst agent collaborating with a writer agent and a checker agent). We equip the network with shared memory systems and tool integrations, allowing agents to execute API calls, access databases, and search the web. By incorporating human-in-the-loop gates for sensitive steps, we ensure that the system executes tasks with human oversight, delivering reliable automation for complex operations.",
+    "features": [
+      "Agent Orchestration and Routing Logic",
+      "Specialized Agent Roles and Persona Definition",
+      "Secure Agent-to-Agent Communication Protocols",
+      "Automated Conflict Resolution and Voting",
+      "Shared Context and Short/Long-Term Memory",
+      "Collaborative Task Distribution Pipelines",
+      "Human-in-the-Loop Gates for Sensitive Actions",
+      "Comprehensive Agent Path Logging and Tracing"
+    ],
+    "benefits": [
+      "Automate complex, non-linear workflows with high reliability",
+      "Scale operations without increasing headcount proportionately",
+      "Execute multi-step reasoning tasks beyond single-model capacity",
+      "Provide full audit logs of every agent action and choice",
+      "Combine specialized models for cost-efficient task execution",
+      "Maintain strict control with human approval checkpoints"
+    ],
+    "metaTitle": "Multi-Agent System Development | AI Crew | PakSoft",
+    "metaDescription": "Build collaborative networks of specialized AI agents. We construct multi-agent workflows using CrewAI, AutoGen, and LangGraph. Learn more.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Workflow Mapping",
+          "description": "We analyze your business workflow, breaking it down into distinct tasks and identifying which parts require AI reasoning."
+        },
+        {
+          "step": 2,
+          "title": "Agent Persona Design",
+          "description": "We design individual agents, defining their personas, roles, specialized skills, and tools they are allowed to access."
+        },
+        {
+          "step": 3,
+          "title": "Communication Architecture",
+          "description": "We set up agent-to-agent communication protocols and state management using LangGraph to control execution flow."
+        },
+        {
+          "step": 4,
+          "title": "Tool and API Integration",
+          "description": "We connect agents to external APIs, databases, web search utilities, and document parsers securely."
+        },
+        {
+          "step": 5,
+          "title": "Human-in-the-Loop Setup",
+          "description": "We build approval gates for sensitive actions (like sending emails or writing to databases) requiring human verification."
+        },
+        {
+          "step": 6,
+          "title": "Testing & Observability Setup",
+          "description": "We test the agent network across edge cases, logging pathways in LangSmith to trace reasoning steps and costs."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is a multi-agent system?",
+          "answer": "A multi-agent system is a network of specialized AI agents working together to achieve a goal. Each agent has specific roles, rules, and tools, allowing them to solve tasks by collaborating."
+        },
+        {
+          "question": "Why is a multi-agent system better than a single prompt?",
+          "answer": "A single prompt is limited by context window and reasoning depth. Multi-agent systems break complex tasks into smaller pieces, allowing agents to peer-review each other and correct errors dynamically."
+        },
+        {
+          "question": "What frameworks do you use to build multi-agent systems?",
+          "answer": "We build using LangGraph for cyclic agent graphs, CrewAI for structured role-based orchestration, and Microsoft AutoGen for conversational agent workflows, depending on the project structure."
+        },
+        {
+          "question": "Can agents perform actions in our systems?",
+          "answer": "Yes, we build secure API integrations enabling agents to write database rows, send Slack alerts, or draft emails, always protected by human approval gates."
+        },
+        {
+          "question": "How do you prevent agents from looping infinitely?",
+          "answer": "We set strict maximum step counts and timeout limits for agent chains. We also implement loop detection logic in LangGraph to exit loops and alert humans when loops occur."
+        },
+        {
+          "question": "How is the memory managed between agents?",
+          "answer": "We implement short-term memory (shared during a single run context) and long-term memory (persisted in vector databases) so agents remember past interactions and user choices."
+        },
+        {
+          "question": "What is human-in-the-loop?",
+          "answer": "Human-in-the-loop means the agent pauses execution when it reaches a critical decision point and waits for a human to review, edit, or approve the next step before continuing."
+        },
+        {
+          "question": "How do we monitor agent reasoning paths?",
+          "answer": "We integrate observability platforms like LangSmith or Phoenix, giving your engineering team a complete visual trace of every model call, tool use, and cost per execution."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "CrewAI",
+          "icon": "crewai"
+        },
+        {
+          "name": "AutoGen",
+          "icon": "autogen"
+        },
+        {
+          "name": "LangGraph",
+          "icon": "langgraph"
+        },
+        {
+          "name": "LangSmith",
+          "icon": "langsmith"
+        },
+        {
+          "name": "OpenAI API",
+          "icon": "openai"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "FastAPI",
+          "icon": "fastapi"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Çoklu Ajan Sistemleri",
+    "shortDescription": "Karmaşık görevleri çözmek için iş birliği yapan yapay zeka ajanlarından oluşan ağlar kurun. Rol uzmanlığı, bellek ve insan denetimi içeren çoklu ajan sistemleri tasarlıyoruz.",
+    "fullDescription": "Tek bir yapay zeka ajanı, karmaşık ve çok departmanlı kurumsal iş akışlarında zorlanır. Özel yapay zeka ajanlarının karmaşık, çok adımlı görevleri çözmek için iş birliği yaptığı gelişmiş Çoklu Ajan Sistemleri tasarlıyor ve kuruyoruz. CrewAI, AutoGen ve LangGraph gibi modern çerçeveleri kullanarak her bir ajan için özel roller, iletişim protokolleri ve çatışma çözme mekanizmaları tanımlıyoruz (örneğin, bir yazar ajan ve kontrolör ajan ile iş birliği yapan bir analist ajanı). Ağı, paylaşılan bellek sistemleri ve araç entegrasyonlarıyla donatarak ajanların API çağrıları yapmasına, veritabanlarına erişmesine ve web'de arama yapmasına olanak tanıyoruz. Hassas adımlar için insan onay mekanizmaları (human-in-the-loop) ekleyerek, sistemin insan gözetiminde çalışmasını ve karmaşık süreçlerde güvenilir otomasyon sağlamasını garanti ediyoruz.",
+    "features": [
+      "Ajan Yönetimi ve Yönlendirme Mantığı",
+      "Özel Ajan Rolleri ve Persona Tanımlama",
+      "Güvenli Ajanlar Arası İletişim Protokolleri",
+      "Otomatik Çatışma Çözme ve Oylama",
+      "Paylaşılan Bağlam ve Kısa/Uzun Vadeli Bellek",
+      "İş Birliğine Dayalı Görev Dağıtım Hatları",
+      "Hassas Eylemler İçin İnsan Onay Geçitleri",
+      "Kapsamlı Ajan Karar Yolu Günlüğü ve İzleme"
+    ],
+    "benefits": [
+      "Karmaşık, doğrusal olmayan iş akışlarını yüksek güvenilirlikle otomatikleştirin",
+      "Operasyonları, personel sayısını orantılı olarak artırmadan ölçeklendirin",
+      "Tek bir modelin kapasitesini aşan çok adımlı akıl yürütme görevlerini yürütün",
+      "Her ajan eyleminin ve seçiminin tam denetim günlüklerini sağlayın",
+      "Maliyet etkin görev yürütme için özel modelleri birleştirin",
+      "İnsan onay kontrol noktalarıyla süreçler üzerinde tam kontrol sağlayın"
+    ],
+    "metaTitle": "Çoklu Ajan Sistemi Geliştirme | AI Crew | PakSoft",
+    "metaDescription": "Özel yapay zeka ajanlarından oluşan iş birliği ağları kurun. CrewAI, AutoGen ve LangGraph kullanarak çoklu ajan iş akışları oluşturuyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "İş Akışı Haritalama",
+          "description": "İş akışınızı analiz ederek ayrı görevlere bölüyor ve hangi bölümlerin yapay zeka mantığı gerektirdiğini belirliyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Ajan Persona Tasarımı",
+          "description": "Ajanları tasarlıyor; personalarını, rollerini, özel becerilerini ve erişmelerine izin verilen araçları tanımlıyoruz."
+        },
+        {
+          "step": 3,
+          "title": "İletişim Mimarisi",
+          "description": "Yürütme akışını kontrol etmek için LangGraph kullanarak ajanlar arası iletişim protokollerini ve durum yönetimini kuruyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Araç ve API Entegrasyonu",
+          "description": "Ajanları harici API'lere, veritabanlarına, web arama araçlarına ve belge ayrıştırıcılara güvenli bir şekilde bağlıyoruz."
+        },
+        {
+          "step": 5,
+          "title": "İnsan Onay Mekanizması Kurulumu",
+          "description": "E-posta gönderme veya veritabanına yazma gibi hassas eylemler için insan doğrulaması gerektiren onay geçitleri oluşturuyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Test & Gözlemlenebilirlik Kurulumu",
+          "description": "Ajan ağını uç durumlar altında test ediyor, mantık adımlarını ve maliyetleri izlemek için LangSmith'te günlükler oluşturuyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Çoklu ajan sistemi nedir?",
+          "answer": "Çoklu ajan sistemi, bir hedefe ulaşmak için birlikte çalışan özel yapay zeka ajanlarından oluşan bir ağdır. Her ajanın belirli rolleri ve araçları vardır; bu da onların iş birliği yaparak görevleri çözmesini sağlar."
+        },
+        {
+          "question": "Çoklu ajan sistemi neden tek bir prompttan daha iyidir?",
+          "answer": "Tek bir prompt, bağlam penceresi ve akıl yürütme derinliği ile sınırlıdır. Çoklu ajan sistemleri karmaşık görevleri daha küçük parçalara bölerek ajanların birbirlerini denetlemesini ve hataları dinamik olarak düzeltmesini sağlar."
+        },
+        {
+          "question": "Çoklu ajan sistemleri oluşturmak için hangi çerçeveleri kullanıyorsunuz?",
+          "answer": "Proje yapısına bağlı olarak döngüsel ajan grafikleri için LangGraph, rol tabanlı yönetim için CrewAI ve konuşkan ajan akışları için Microsoft AutoGen kullanıyoruz."
+        },
+        {
+          "question": "Ajanlar sistemlerimizde eylemler gerçekleştirebilir mi?",
+          "answer": "Evet, ajanların veritabanı satırları yazmasına, Slack uyarıları göndermesine veya e-posta taslakları hazırlamasına olanak tanıyan güvenli API entegrasyonları oluşturuyoruz; bunlar her zaman insan onayına tabidir."
+        },
+        {
+          "question": "Ajanların sonsuz döngüye girmesini nasıl önlüyorsunuz?",
+          "answer": "Ajan zincirleri için katı maksimum adım sayıları ve zaman aşımı sınırları belirliyoruz. Ayrıca döngüleri sonlandırmak ve insanları uyarmak için LangGraph'te döngü algılama mantığı uyguluyoruz."
+        },
+        {
+          "question": "Ajanlar arasında bellek nasıl yönetilir?",
+          "answer": "Ajanların geçmiş etkileşimleri ve kullanıcı seçimlerini hatırlaması için kısa vadeli bellek (tek bir çalışma bağlamında paylaşılan) ve uzun vadeli bellek (vektör veritabanlarında saklanan) uyguluyoruz."
+        },
+        {
+          "question": "İnsan onaylı süreç (human-in-the-loop) nedir?",
+          "answer": "İnsan onaylı süreç, ajanın kritik bir karar noktasına ulaştığında yürütmeyi durdurması ve devam etmeden önce bir insanın sonraki adımı gözden geçirmesini, düzenlemesini veya onaylamasını beklemesidir."
+        },
+        {
+          "question": "Ajanların karar yollarını nasıl izleyebiliriz?",
+          "answer": "LangSmith veya Phoenix gibi gözlemlenebilirlik platformlarını entegre ederek mühendislik ekibinize her model çağrısının, araç kullanımının ve yürütme başına maliyetin tam görsel izini sunuyoruz."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "CrewAI",
+          "icon": "crewai"
+        },
+        {
+          "name": "AutoGen",
+          "icon": "autogen"
+        },
+        {
+          "name": "LangGraph",
+          "icon": "langgraph"
+        },
+        {
+          "name": "LangSmith",
+          "icon": "langsmith"
+        },
+        {
+          "name": "OpenAI API",
+          "icon": "openai"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "FastAPI",
+          "icon": "fastapi"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Multi-Agenten-Systeme",
+    "shortDescription": "Bauen Sie kooperative Netzwerke aus spezialisierten KI-Agenten auf. Wir entwickeln Multi-Agenten-Systeme mit Rollenverteilung, Memory und Guardrails.",
+    "fullDescription": "Einzelne KI-Agenten stoßen bei komplexen, abteilungsübergreifenden Geschäftsprozessen oft an Grenzen. Wir entwerfen und bauen Multi-Agenten-Systeme, in denen spezialisierte KI-Agenten zusammenarbeiten, um komplexe, mehrstufige Aufgaben zu lösen. Mit Frameworks wie CrewAI, AutoGen und LangGraph definieren wir Rollen, Kommunikationsprotokolle und Konfliktlösungsmechanismen für die Agenten (z. B. ein Analysten-Agent arbeitet mit einem Texter- und Prüfer-Agenten zusammen). Wir statten das Netzwerk mit Shared-Memory-Systemen und API-Schnittstellen aus. Durch die Integration von Freigabeprozessen (Human-in-the-Loop) stellen wir sicher, dass sensible Schritte unter menschlicher Aufsicht bleiben.",
+    "features": [
+      "Agenten-Orchestrierung & Routing-Logik",
+      "Spezifische Rollen- und Persona-Definitionen",
+      "Sichere Agent-to-Agent-Protokolle",
+      "Automatisierte Konfliktlösung und Abstimmung",
+      "Shared Context & Kurz-/Langzeitgedächtnis",
+      "Kollaborative Aufgabenverteilung in Pipelines",
+      "Human-in-the-Loop-Freigaben für kritische Schritte",
+      "Ausführliches Tracing & Logging der Agenten-Pfade"
+    ],
+    "benefits": [
+      "Komplexe, nicht-lineare Workflows hochgradig verlässlich automatisieren",
+      "Skalierung der Prozesse ohne proportionalen Personalaufwand",
+      "Mehrstufige Denkprozesse jenseits von Single-Prompting umsetzen",
+      "Vollständige Audit-Logs jeder Agenten-Entscheidung sichern",
+      "Nutzung spezialisierter Modelle für kosteneffizientes Arbeiten",
+      "Prozesskontrolle durch integrierte Prüfschritte wahren"
+    ],
+    "metaTitle": "Entwicklung von Multi-Agenten-Systemen | AI Crew | PakSoft",
+    "metaDescription": "Bauen Sie kooperative KI-Netzwerke aus spezialisierten Agenten auf. Wir entwickeln Workflows mit CrewAI, AutoGen und LangGraph. Erfahren Sie mehr.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Workflow-Mapping",
+          "description": "Wir analysieren Ihre Geschäftsprozesse, zerlegen sie in Teilaufgaben und identifizieren Bereiche für KI-Entscheidungen."
+        },
+        {
+          "step": 2,
+          "title": "Agent-Persona-Design",
+          "description": "Wir konzipieren die Agenten und definieren deren Personas, Rollen, Fähigkeiten und erlaubte IT-Werkzeuge."
+        },
+        {
+          "step": 3,
+          "title": "Kommunikationsarchitektur",
+          "description": "Wir konfigurieren Kommunikationsprotokolle und das State-Management mit LangGraph zur Steuerung des Prozessflusses."
+        },
+        {
+          "step": 4,
+          "title": "Werkzeug- & API-Integration",
+          "description": "Wir verbinden die Agenten sicher mit externen Schnittstellen, Datenbanken, Websuchen und Dokumenten-Parsern."
+        },
+        {
+          "step": 5,
+          "title": "Human-in-the-Loop-Setup",
+          "description": "Wir integrieren Prüfpunkte für kritische Aktionen (z. B. E-Mail-Versand, Datenbank-Schreibrechte), die eine menschliche Freigabe erfordern."
+        },
+        {
+          "step": 6,
+          "title": "Testing & Observability",
+          "description": "Wir testen das Agenten-Netzwerk unter extremen Bedingungen und protokollieren die Entscheidungspfade in LangSmith zur Optimierung."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist ein Multi-Agenten-System?",
+          "answer": "Ein Multi-Agenten-System ist ein Verbund spezialisierter KI-Agenten, die kooperieren, um ein Ziel zu erreichen. Jeder Agent hat feste Rollen und Werkzeuge, wodurch Aufgaben arbeitsteilig gelöst werden."
+        },
+        {
+          "question": "Warum ist ein Multi-Agenten-System besser als ein einzelner Prompt?",
+          "answer": "Ein einzelner Prompt stößt bei Kontext und Logik an Grenzen. Multi-Agenten-Systeme zerlegen Aufgaben, sodass sich Agenten gegenseitig korrigieren und Ergebnisse validieren können."
+        },
+        {
+          "question": "Welche Frameworks nutzen Sie für den Bau solcher Systeme?",
+          "answer": "Wir nutzen LangGraph für zyklische Abläufe, CrewAI für rollenbasierte Orchestrierungen und Microsoft AutoGen für dialogbasierte Workflows, je nach Projektstruktur."
+        },
+        {
+          "question": "Können Agenten Aktionen in unseren internen Systemen ausführen?",
+          "answer": "Ja, wir entwickeln sichere API-Konnektoren, mit denen Agenten Datenbankeinträge vornehmen oder Slack-Nachrichten senden können — abgesichert durch Freigabeprozesse."
+        },
+        {
+          "question": "Wie verhindern Sie Endlosschleifen der Agenten?",
+          "answer": "Wir definieren Obergrenzen für Prozessschritte und Timeouts. In LangGraph implementieren wir eine Loop-Detection, um Endlosschleifen abzubrechen und Warnungen zu senden."
+        },
+        {
+          "question": "Wie wird das Gedächtnis der Agenten gesteuert?",
+          "answer": "Wir nutzen Kurzzeitgedächtnisse (Shared Context innerhalb eines Laufs) und Langzeitgedächtnisse mittels Vektordatenbanken, damit Agenten Präferenzen im Verlauf behalten."
+        },
+        {
+          "question": "Was bedeutet Human-in-the-Loop?",
+          "answer": "Es bedeutet, dass der Agent an kritischen Entscheidungspunkten pausiert und wartet, bis ein menschlicher Prüfer den Schritt freigibt oder anpasst, bevor der Prozess fortgesetzt wird."
+        },
+        {
+          "question": "Wie können wir die Entscheidungsschritte der Agenten nachvollziehen?",
+          "answer": "Wir integrieren Plattformen wie LangSmith oder Phoenix. Diese bieten Ihrem Team eine lückenlose Visualisierung aller Modellaufrufe, Werkzeugnutzungen und Kosten."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "CrewAI",
+          "icon": "crewai"
+        },
+        {
+          "name": "AutoGen",
+          "icon": "autogen"
+        },
+        {
+          "name": "LangGraph",
+          "icon": "langgraph"
+        },
+        {
+          "name": "LangSmith",
+          "icon": "langsmith"
+        },
+        {
+          "name": "OpenAI API",
+          "icon": "openai"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "FastAPI",
+          "icon": "fastapi"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "ملٹی ایجنٹ اے آئی سسٹمز",
+    "shortDescription": "مخصوص اے آئی ایجنٹوں کے نیٹ ورکس بنائیں جو مل کر پیچیدہ کاموں کو حل کریں۔ ہم رول اسپیشلائزیشن اور انسدادِ لوپ سسٹمز بناتے ہیں۔",
+    "fullDescription": "اکیلا اے آئی ماڈل اکثر طویل اور کثیر الجہتی کاروباری کاموں کو سنبھالنے میں ناکام رہتا ہے۔ ہم ملٹی ایجنٹ سسٹمز ڈیزائن کرتے ہیں جہاں مختلف کاموں کے ماہر اے آئی ایجنٹس ایک ٹیم کی طرح مل کر کام کرتے ہیں۔ CrewAI، AutoGen، اور LangGraph جیسے فریم ورکس کی مدد سے ہم ہر ایجنٹ کا کردار اور ذمہ داریاں طے کرتے ہیں (جیسے ایک ریسرچ ایجنٹ، ایک رائٹر ایجنٹ اور ایک ایڈیٹر ایجنٹ)۔ ہم ایجنٹس کو ڈیٹا بیسز، انٹرنیٹ اور دیگر APIs کے استعمال کی صلاحیت فراہم کرتے ہیں۔ حساس کاموں جیسے ای میل بھیجنا یا ڈیٹا بیس میں لکھنا کے لیے ہم انسانی منظوری کا نظام (human-in-the-loop) نافذ کرتے ہیں تاکہ نتائج پر مکمل کنٹرول رہے۔",
+    "features": [
+      "ایجنٹ آرکیسٹریشن اور راؤٹنگ لاجک",
+      "ایجنٹس کے مخصوص کردار اور پرسنل ڈیزائن",
+      "محفوظ ایجنٹ ٹو ایجنٹ کمیونیکیشن",
+      "خودکار تنازعات کا حل اور ووٹنگ سسٹم",
+      "کولا بوریٹو مختصر اور طویل مدتی میموری",
+      "ایجنٹس کے درمیان خودکار کام کی تقسیم",
+      "حساس کاموں کے لیے انسانی منظوری کے گیٹس",
+      "ایجنٹ کے فیصلے کے راستے کی تفصیلی مانیٹرنگ"
+    ],
+    "benefits": [
+      "پیچیدہ اور غیر لکیری کاموں کو محفوظ طریقے سے خودکار بنائیں",
+      "اضافی عملے کے بغیر کاروباری سرگرمیوں کو وسعت دیں",
+      "ایک ہی ماڈل کی صلاحیت سے زیادہ بڑے کام حل کریں",
+      "ایجنٹ کی تمام سرگرمیوں کے مکمل لاگز حاصل کریں",
+      "اخراجات کو کم رکھنے کے لیے سستے ماڈلز کا استعمال کریں",
+      "اہم مراحل پر انسانی کنٹرول اور نگرانی برقرار رکھیں"
+    ],
+    "metaTitle": "ملٹی ایجنٹ اے آئی سسٹمز کی تیاری | PakSoft",
+    "metaDescription": "ماہر اے آئی ایجنٹس کی مدد سے کاروباری کاموں کو خودکار بنائیں۔ ہم CrewAI اور LangGraph کے ذریعے ملٹی ایجنٹ سسٹمز بناتے ہیں۔ معلومات حاصل کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "کام کے بہاؤ کا نقشہ",
+          "description": "ہم آپ کے کاروباری کام کا تجزیہ کرتے ہیں اور اسے چھوٹے حصوں میں تقسیم کر کے ایجنٹوں کے لیے فلو ڈیزائن کرتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "ایجنٹ پرسنل ڈیزائن",
+          "description": "ہم ہر ایجنٹ کا کردار، لہجہ اور اس کے لیے مخصوص سیکیورٹی قوانین اور ٹولز طے کرتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "کمیونیکیشن آرکیٹیکچر",
+          "description": "ہم ایجنٹوں کے درمیان ڈیٹا کے تبادلے کے لیے LangGraph کے ذریعے محفوظ مواصلاتی قوانین بناتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "ٹولز اور اے پی آئی انٹیگریشن",
+          "description": "ہم ایجنٹوں کو ڈیٹا بیسز، کلاؤڈ فائلز اور بیرونی سروسز کے استعمال کے لیے APIs فراہم کرتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "انسانی منظوری کا نظام",
+          "description": "ہم اہم اقدامات کے لیے منظوری کے چیک پوائنٹس بناتے ہیں جہاں سسٹم انسانی منظوری کا انتظار کرتا ہے۔"
+        },
+        {
+          "step": 6,
+          "title": "ٹیسٹنگ اور نگرانی",
+          "description": "ہم مختلف کیسز پر ایجنٹ نیٹ ورک کی جانچ کرتے ہیں اور LangSmith کے ذریعے کارکردگی مانیٹر کرتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "ملٹی ایجنٹ سسٹم کیا ہے؟",
+          "answer": "ملٹی ایجنٹ سسٹم مختلف ماہر اے آئی ایجنٹوں کا ایک نیٹ ورک ہوتا ہے جو کسی ایک ہدف کو حاصل کرنے کے لیے مل کر کام کرتے ہیں۔ ہر ایجنٹ کا اپنا ایک کردار اور ٹول ہوتا ہے۔"
+        },
+        {
+          "question": "یہ سسٹم ایک عام اے آئی پرامپٹ سے بہتر کیوں ہے؟",
+          "answer": "ایک عام پرامپٹ محدود معلومات سنبھال سکتا ہے۔ ملٹی ایجنٹ سسٹم بڑے کام کو حصوں میں بانٹتا ہے اور ایجنٹس ایک دوسرے کی غلطیوں کی خود کار اصلاح کر سکتے ہیں۔"
+        },
+        {
+          "question": "آپ ملٹی ایجنٹ سسٹم بنانے کے لیے کون سے فریم ورکس استعمال کرتے ہیں؟",
+          "answer": "ہم پیچیدہ کاموں کے لیے LangGraph، کرداروں کے انتظام کے لیے CrewAI اور بات چیت پر مبنی ایجنٹوں کے لیے Microsoft AutoGen کا استعمال کرتے ہیں۔"
+        },
+        {
+          "question": "کیا ایجنٹ ہمارے سسٹمز میں کام کر سکتے ہیں؟",
+          "answer": "جی ہاں، ہم سیکیورٹی APIs بناتے ہیں جن کی مدد سے ایجنٹ ڈیٹا بیس میں لکھ سکتے ہیں یا سلیک پر الرٹس بھیج سکتے ہیں، مگر یہ عمل ہمیشہ انسانی نگرانی میں ہوتا ہے۔"
+        },
+        {
+          "question": "آپ ایجنٹوں کو بار بار ایک ہی کام دہرانے (looping) سے کیسے روکتے ہیں؟",
+          "answer": "ہم ایجنٹ کی سرگرمی پر زیادہ سے زیادہ اقدامات کی حد مقرر کرتے ہیں اور LangGraph کے اندر لوپ کا پتہ لگا کر اسے خود بخود بند کرنے کا نظام بناتے ہیں۔"
+        },
+        {
+          "question": "ایجنٹوں کے درمیان یادداشت (memory) کا انتظام کیسے ہوتا ہے؟",
+          "answer": "ہم مختصر یادداشت (ایک سیشن کے لیے) اور طویل یادداشت (ڈیٹا بیس میں محفوظ) دونوں کو مربوط کرتے ہیں تاکہ ایجنٹس پرانی سرگرمیوں کو یاد رکھ سکیں۔"
+        },
+        {
+          "question": "انسانی منظوری کا نظام (human-in-the-loop) کیسے کام کرتا ہے؟",
+          "answer": "اس کا مطلب یہ ہے کہ جب ایجنٹ کوئی اہم فیصلہ کرنے لگتا ہے، تو وہ وہیں رک جاتا ہے اور سیکیورٹی کی خاطر کسی انسان کی منظوری ملنے پر ہی آگے بڑھتا ہے۔"
+        },
+        {
+          "question": "ہم ایجنٹوں کے فیصلے کے راستے کو کیسے دیکھ سکتے ہیں؟",
+          "answer": "ہم LangSmith یا Phoenix جیسے ٹولز کو مربوط کرتے ہیں جو آپ کی انجینئرنگ ٹیم کو ایجنٹ کے ہر قدم، ماڈل کے استعمال اور اخراجات کا تفصیلی نقشہ فراہم کرتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "CrewAI",
+          "icon": "crewai"
+        },
+        {
+          "name": "AutoGen",
+          "icon": "autogen"
+        },
+        {
+          "name": "LangGraph",
+          "icon": "langgraph"
+        },
+        {
+          "name": "LangSmith",
+          "icon": "langsmith"
+        },
+        {
+          "name": "OpenAI API",
+          "icon": "openai"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "FastAPI",
+          "icon": "fastapi"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "أنظمة الوكلاء المتعددين",
+    "shortDescription": "ابنِ شبكات تعاونية من وكلاء الذكاء الاصطناعي المتخصصين للعمل معاً لحل المهام المعقدة. نصمم أنظمة بوكلاء متعددين مع تخصص الأدوار وضوابط حماية.",
+    "fullDescription": "تواجه أنظمة الوكيل الواحد صعوبة في التعامل مع مسارات العمل المؤسسية المعقدة الممتدة عبر أقسام متعددة. نحن نصمم ونبني أنظمة الوكلاء المتعددين المتقدمة حيث يتعاون وكلاء ذكاء اصطناعي متخصصون لحل المهام المعقدة متعددة الخطوات. باستخدام أطر عمل حديثة مثل CrewAI و AutoGen و LangGraph، نحدد أدواراً مخصصة وبروتوكولات اتصال وآليات لحل النزاعات لكل وكيل (مثل وكيل محلل يتعاون مع وكيل كاتب ووكيل مدقق). نقوم بتزويد الشبكة بأنظمة ذاكرة مشتركة وتكاملات للأدوات تتيح للوكلاء إجراء استدعاءات API والوصول لقواعد البيانات والبحث في الويب، مع إدراج بوابات موافقة بشرية للخطوات الحساسة لضمان الأمان والموثوقية.",
+    "features": [
+      "تنسيق الوكلاء ومنطق توجيه مسارات العمل",
+      "تحديد أدوار الوكلاء المتخصصين وبناء الشخصيات",
+      "بروتوكولات اتصال آمنة ومباشرة بين الوكلاء",
+      "آليات تلقائية لحل النزاعات والتصويت الداخلي",
+      "سياق مشترك وذاكرة قصيرة وطويلة المدى للأنظمة",
+      "مسارات توزيع المهام التعاونية بين الوكلاء",
+      "بوابات موافقة بشرية للإجراءات الحساسة",
+      "تسجيل وتتبع شامل لمسارات قرارات الوكلاء"
+    ],
+    "benefits": [
+      "أتمتة مسارات العمل المعقدة وغير الخطية بموثوقية عالية",
+      "توسيع العمليات دون الحاجة لزيادة عدد الموظفين بشكل طردي",
+      "تنفيذ مهام استدلالية متعددة الخطوات تفوق قدرة النموذج الواحد",
+      "توفير سجلات تدقيق كاملة لجميع إجراءات وخيارات الوكلاء",
+      "الجمع بين نماذج متخصصة لتنفيذ المهام بكفاءة عالية للتكلفة",
+      "الحفاظ على تحكم صارم بفضل نقاط مراجعة الموافقات البشرية"
+    ],
+    "metaTitle": "تطوير أنظمة الوكلاء المتعددين | AI Crew | PakSoft",
+    "metaDescription": "ابنِ شبكات تعاونية من وكلاء الذكاء الاصطناعي المتخصصين. ننشئ مسارات عمل الوكلاء باستخدام CrewAI و AutoGen و LangGraph. اعرف المزيد.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "رسم خريطة العمل",
+          "description": "نحلل مسار عملك ونقسمه إلى مهام منفصلة ونحدد الأجزاء التي تتطلب استدلالاً بالذكاء الاصطناعي."
+        },
+        {
+          "step": 2,
+          "title": "تصميم شخصيات الوكلاء",
+          "description": "نصمم الوكلاء الأفراد ونحدد شخصياتهم وأدوارهم ومهاراتهم الخاصة والأدوات المسموح لهم بالوصول إليها."
+        },
+        {
+          "step": 3,
+          "title": "بنية الاتصالات",
+          "description": "نعد بروتوكولات الاتصال بين الوكلاء وإدارة الحالة باستخدام LangGraph للتحكم في تدفق التنفيذ."
+        },
+        {
+          "step": 4,
+          "title": "تكامل الأدوات والواجهات",
+          "description": "نربط الوكلاء بالواجهات الخارجية وقواعد البيانات وأدوات البحث وقارئات المستندات بشكل آمن."
+        },
+        {
+          "step": 5,
+          "title": "إعداد بوابات الموافقة البشرية",
+          "description": "نبني بوابات موافقة للإجراءات الحساسة (مثل إرسال البريد الإلكتروني أو الكتابة في قواعد البيانات) تتطلب التحقق البشري."
+        },
+        {
+          "step": 6,
+          "title": "الاختبار وتتبع الأداء",
+          "description": "نختبر شبكة الوكلاء في حالات طرفية متعددة، ونسجل المسارات في LangSmith لتتبع خطوات الاستدلال والتكاليف."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما هو نظام الوكلاء المتعددين؟",
+          "answer": "نظام الوكلاء المتعددين هو شبكة من وكلاء الذكاء الاصطناعي المتخصصين الذين يعملون معاً لتحقيق هدف محدد. كل وكيل له أدوار وأدوات محددة، مما يسمح لهم بحل المهام بالتعاون."
+        },
+        {
+          "question": "لماذا يعد نظام الوكلاء المتعددين أفضل من مطالبة واحدة؟",
+          "answer": "تقتصر المطالبة الواحدة على نافذة سياق وعمق استدلال محدودين. تقسم أنظمة الوكلاء المتعددين المهام المعقدة إلى أجزاء أصغر، مما يسمح للوكلاء بمراجعة وتعديل أخطاء بعضهم البعض ديناميكياً."
+        },
+        {
+          "question": "ما هي الأطر التي تستخدمونها لبناء أنظمة الوكلاء المتعددين؟",
+          "answer": "نبني الحلول باستخدام LangGraph للرسوم البيانية الدورية للوكلاء، و CrewAI للتنسيق الهيكلي القائم على الأدوار، و AutoGen لمسارات عمل الوكلاء الحوارية."
+        },
+        {
+          "question": "هل يمكن للوكلاء تنفيذ إجراءات في أنظمتنا؟",
+          "answer": "نعم، نبني تكاملات آمنة تتيح للوكلاء الكتابة في قواعد البيانات، أو إرسال تنبيهات Slack، أو صياغة رسائل البريد، وتكون دائماً محمية ببوابات موافقة بشرية."
+        },
+        {
+          "question": "كيف تمنع الوكلاء من الدخول في حلقات مفرغة لا نهائية؟",
+          "answer": "نضع حدوداً صارمة للخطوات القصوى والمهل الزمنية لسلاسل الوكلاء، وننفذ منطق اكتشاف الحلقات المفرغة في LangGraph لإنهاء المهام وتنبيه المشرف البشري."
+        },
+        {
+          "question": "كيف يتم إدارة الذاكرة بين الوكلاء؟",
+          "answer": "ننفذ ذاكرة قصيرة المدى (تتم مشاركتها أثناء تشغيل سياق واحد) وذاكرة طويلة المدى (يتم حفظها في قواعد بيانات متجهة) ليتذكر الوكلاء التفاعلات السابقة وخيارات المستخدمين."
+        },
+        {
+          "question": "ما هي بوابات الموافقة البشرية (Human-in-the-loop)؟",
+          "answer": "تعني أن الوكيل يوقف التنفيذ مؤقتاً عندما يصل إلى نقطة قرار حرجة وينتظر أن يقوم مراجع بشري بمراجعة الخطوة التالية أو تعديلها أو الموافقة عليها قبل المتابعة."
+        },
+        {
+          "question": "كيف يمكننا مراقبة مسارات قرارات الوكلاء؟",
+          "answer": "ندمج منصات التتبع والمراقبة مثل LangSmith أو Phoenix، مما يمنح فريقك الهندسي تتبعاً مرئياً كاملاً لكل مكالمة نموذج، واستخدام أداة، والتكلفة لكل تشغيل."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "CrewAI",
+          "icon": "crewai"
+        },
+        {
+          "name": "AutoGen",
+          "icon": "autogen"
+        },
+        {
+          "name": "LangGraph",
+          "icon": "langgraph"
+        },
+        {
+          "name": "LangSmith",
+          "icon": "langsmith"
+        },
+        {
+          "name": "OpenAI API",
+          "icon": "openai"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "FastAPI",
+          "icon": "fastapi"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        }
+      ]
+    }
+  }
+}

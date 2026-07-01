@@ -1,0 +1,1553 @@
+{
+  "data-visualization": {
+    "en": {
+      "name": "Data Visualization",
+      "shortDescription": "Transform complex raw data into interactive, real-time dashboards and visual stories. We design custom business intelligence views that help your team make faster, smarter, and data-driven decisions.",
+      "fullDescription": "Raw enterprise data is only valuable if your team can interpret it quickly. We build custom data visualization solutions and interactive dashboards that turn complex, multi-source datasets into clear, actionable business insights. Using modern tools like Tableau, Power BI, and custom D3.js libraries, we design responsive visual interfaces tailored to your specific workflows and KPIs. Our services cover everything from setting up real-time streaming data feeds to embedding analytical dashboards directly into your existing SaaS products and internal portals. By emphasizing intuitive UI/UX and structured data storytelling, we ensure that non-technical stakeholders can easily identify trends, spot anomalies, and make informed operational decisions without needing manual reports.",
+      "features": [
+        "Interactive Dashboard Design & Layouts",
+        "Real-Time Data Streaming Integration",
+        "Custom Chart and Widget Development",
+        "Multi-Source Data Aggregation & ETL",
+        "Embedded Analytics for SaaS Applications",
+        "Automated Reporting and Email Scheduling",
+        "Role-Based Access Control and Security",
+        "Mobile-Optimized Responsive Visualizations"
+      ],
+      "benefits": [
+        "Identify operational trends and anomalies instantly",
+        "Reduce time spent creating manual reports by 90%",
+        "Enable self-service data exploration for business teams",
+        "Improve decision-making speed across all departments",
+        "Increase user engagement with embedded interactive charts",
+        "Consolidate scattered data sources into a single view"
+      ],
+      "metaTitle": "Data Visualization & Dashboards | PakSoft",
+      "metaDescription": "Turn complex data into interactive, real-time dashboards. We build custom Tableau, Power BI, and D3.js visualization solutions. Contact us today.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Requirement Analysis",
+            "description": "We collaborate with your business team to define target KPIs, user roles, data sources, and specific performance needs."
+          },
+          {
+            "step": 2,
+            "title": "Data Engineering",
+            "description": "We clean, structure, and connect your database sources to establish stable, optimized query pipelines for fast data loading."
+          },
+          {
+            "step": 3,
+            "title": "UI/UX & Wireframing",
+            "description": "We design clean dashboard layouts and wireframes, prioritizing clarity, user interaction, and easy data readability."
+          },
+          {
+            "step": 4,
+            "title": "Visualization Development",
+            "description": "We build the dashboards using Tableau, Power BI, or custom D3.js code, integrating live data feeds seamlessly."
+          },
+          {
+            "step": 5,
+            "title": "Testing & Integration",
+            "description": "We test loading times, data accuracy, and responsive layout scaling before embedding views into your systems securely."
+          },
+          {
+            "step": 6,
+            "title": "Training & Optimization",
+            "description": "We train your team on how to customize dashboard views and continually optimize dashboard query speed for large datasets."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Which data visualization tools do you recommend?",
+            "answer": "We recommend tools based on your budget and hosting preferences. Tableau and Power BI are excellent for enterprise analytics, while custom libraries like D3.js are ideal for embedding unique charts directly into SaaS products."
+          },
+          {
+            "question": "Can you connect dashboards to databases in real time?",
+            "answer": "Yes, we build live data pipelines connecting to PostgreSQL, MySQL, Snowflake, and MongoDB. We set up WebSockets or configured caching mechanisms to show real-time changes without overloading your databases."
+          },
+          {
+            "question": "Do you build custom charts from scratch?",
+            "answer": "Absolutely. When standard charts in Tableau or Power BI do not fit your reporting needs, we write custom JavaScript using D3.js or Chart.js to build bespoke widgets tailored to your workflows."
+          },
+          {
+            "question": "How do you ensure data security in embedded analytics?",
+            "answer": "We implement secure authentication tokens and role-based row-level security. This ensures that users only see the specific data they are authorized to view when dashboards are embedded into external applications."
+          },
+          {
+            "question": "Is training provided for our staff?",
+            "answer": "Yes, we provide comprehensive training sessions and video documentation. We teach your business analysts how to create custom reports, filter views, and interpret advanced data visualizations independently."
+          },
+          {
+            "question": "Can dashboards be viewed on mobile devices?",
+            "answer": "Yes, all our custom dashboards are designed using responsive layout principles. We create optimized mobile views in Power BI, Tableau, and custom web apps to ensure readable charts on all screen sizes."
+          },
+          {
+            "question": "How do you optimize slow-loading dashboards?",
+            "answer": "We optimize performance at the database layer by writing efficient SQL queries, building materialized views, and implementing caching. This ensures your dashboard renders in seconds, even with millions of rows."
+          },
+          {
+            "question": "Can we export reports to PDF or Excel?",
+            "answer": "Yes, we integrate export features allowing users to download complete dashboards as PDF files, or export raw underlying data directly into CSV or Excel files with a single click."
+          }
+        ],
+        "technologies": [
+          { "name": "Tableau", "icon": "tableau" },
+          { "name": "Power BI", "icon": "powerbi" },
+          { "name": "D3.js", "icon": "d3js" },
+          { "name": "Looker", "icon": "looker" },
+          { "name": "Metabase", "icon": "metabase" },
+          { "name": "Apache Superset", "icon": "superset" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "Python", "icon": "python" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Veri Görselleştirme",
+      "shortDescription": "Karmaşık ham verileri etkileşimli, gerçek zamanlı panolara ve görsel hikayelere dönüştürün. Ekibinizin daha hızlı ve veriye dayalı kararlar almasına yardımcı olan özel iş zekası görünümleri tasarlıyoruz.",
+      "fullDescription": "Ham kurumsal veriler, yalnızca ekibiniz bunları hızlı bir şekilde yorumlayabildiğinde değerlidir. Karmaşık ve çok kaynaklı veri kümelerini net, eyleme dönüştürülebilir iş içgörülerine dönüştüren özel veri görselleştirme çözümleri ve etkileşimli panolar oluşturuyoruz. Tableau, Power BI ve özel D3.js kütüphaneleri gibi modern araçları kullanarak, özel iş akışlarınıza ve KPI'larınıza göre uyarlanmış duyarlı görsel arayüzler tasarlıyoruz. Hizmetlerimiz, gerçek zamanlı veri akışlarının kurulmasından analitik panoların doğrudan mevcut SaaS ürünlerinize ve iç portallarınıza gömülmesine kadar her şeyi kapsar. Sezgisel kullanıcı arayüzü ve yapılandırılmış veri hikayeleştirmesine önem vererek, teknik olmayan paydaşların manuel raporlara ihtiyaç duymadan eğilimleri kolayca belirlemesini, anormallikleri fark etmesini ve bilinçli kararlar almasını sağlıyoruz.",
+      "features": [
+        "Etkileşimli Panel Tasarımı ve Düzenleri",
+        "Gerçek Zamanlı Veri Akışı Entegrasyonu",
+        "Özel Grafik ve Bileşen Geliştirme",
+        "Çok Kaynaklı Veri Entegrasyonu ve ETL",
+        "SaaS Uygulamaları İçin Gömülü Analitik",
+        "Otomatik Raporlama ve E-posta Zamanlama",
+        "Rol Tabanlı Erişim Kontrolü ve Güvenlik",
+        "Mobil Uyumlu Esnek Görselleştirmeler"
+      ],
+      "benefits": [
+        "Operasyonel eğilimleri ve anormallikleri anında belirleyin",
+        "Manuel rapor oluşturmak için harcanan süreyi %90 azaltın",
+        "İş ekipleri için self-servis veri keşfi sağlayın",
+        "Tüm departmanlarda karar alma hızını artırın",
+        "Gömülü etkileşimli grafiklerle kullanıcı katılımını artırın",
+        "Dağınık veri kaynaklarını tek bir görünümde birleştirin"
+      ],
+      "metaTitle": "Veri Görselleştirme ve Panolar | PakSoft",
+      "metaDescription": "Karmaşık verileri etkileşimli panolara dönüştürün. Özel Tableau, Power BI ve D3.js görselleştirme çözümleri sunuyoruz. Bilgi almak için hemen ulaşın.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Gereksinim Analizi",
+            "description": "Hedef KPI'ları, kullanıcı rollerini, veri kaynaklarını ve performans ihtiyaçlarını belirlemek için iş ekibinizle birlikte çalışıyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Veri Mühendisliği",
+            "description": "Hızlı veri yüklemesi sağlamak için veritabanı kaynaklarınızı temizliyor, yapılandırıyor ve optimize sorgu yolları oluşturmak üzere bağlıyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Kullanıcı Deneyimi & Taslak Çizim",
+            "description": "Netliği, kullanıcı etkileşimini ve veri okunabilirliğini ön planda tutan temiz panel düzenleri ve taslak çizimleri tasarlıyoruz."
+          },
+          {
+            "step": 4,
+            "title": "Görselleştirme Geliştirme",
+            "description": "Canlı veri akışlarını sorunsuz bir şekilde entegre ederek Tableau, Power BI veya özel D3.js kodlarıyla panoları oluşturuyoruz."
+          },
+          {
+            "step": 5,
+            "title": "Test ve Entegrasyon",
+            "description": "Görünümleri sistemlerinize güvenli bir şekilde yerleştirmeden önce yükleme sürelerini, veri doğruluğunu ve esnek düzen ölçeklendirmesini test ediyoruz."
+          },
+          {
+            "step": 6,
+            "title": "Eğitim ve Optimizasyon",
+            "description": "Ekibinize panel görünümlerini nasıl özelleştireceklerini öğretiyor ve büyük veri kümeleri için sorgu hızlarını sürekli olarak optimize ediyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Hangi veri görselleştirme araçlarını öneriyorsunuz?",
+            "answer": "Bütçenize ve barındırma tercihlerinize göre araçlar öneriyoruz. Tableau ve Power BI kurumsal analizler için mükemmeldir; D3.js gibi özel kütüphaneler ise SaaS ürünlerine özel grafikler yerleştirmek için idealdir."
+          },
+          {
+            "question": "Panoları gerçek zamanlı olarak veritabanlarına bağlayabilir misiniz?",
+            "answer": "Evet, PostgreSQL, MySQL, Snowflake ve MongoDB'ye bağlanan canlı veri yolları kuruyoruz. Veritabanlarınızı aşırı yüklemeden gerçek zamanlı değişiklikleri göstermek için WebSockets veya önbellekleme mekanizmaları kuruyoruz."
+          },
+          {
+            "question": "Sıfırdan özel grafikler oluşturuyor musunuz?",
+            "answer": "Kesinlikle. Tableau veya Power BI'daki standart grafikler raporlama ihtiyaçlarınızı karşılamadığında, iş akışlarınıza özel bileşenler oluşturmak için D3.js veya Chart.js kullanarak özel JavaScript yazıyoruz."
+          },
+          {
+            "question": "Gömülü analizlerde veri güvenliğini nasıl sağlıyorsunuz?",
+            "answer": "Güvenli kimlik doğrulama belirteçleri ve rol tabanlı satır düzeyinde güvenlik uyguluyoruz. Bu, panolar harici uygulamalara yerleştirildiğinde kullanıcıların yalnızca yetkili oldukları verileri görmelerini sağlar."
+          },
+          {
+            "question": "Personelimiz için eğitim veriliyor mu?",
+            "answer": "Evet, kapsamlı eğitim oturumları ve video belgeleri sağlıyoruz. İş analistlerinize bağımsız olarak özel raporlar oluşturmayı, görünümleri filtrelemeyi ve gelişmiş veri görselleştirmelerini yorumlamayı öğretiyoruz."
+          },
+          {
+            "question": "Panolar mobil cihazlarda görüntülenebilir mi?",
+            "answer": "Evet, tüm özel panolarımız duyarlı tasarım ilkelerine göre tasarlanmıştır. Grafikleri tüm ekran boyutlarında okunabilir kılmak için Power BI, Tableau ve özel web uygulamalarında optimize edilmiş mobil görünümler oluşturuyoruz."
+          },
+          {
+            "question": "Yavaş yüklenen panoları nasıl optimize ediyorsunuz?",
+            "answer": "Etkin SQL sorguları yazarak, somutlaştırılmış görünümler (materialized views) oluşturarak ve önbelleğe alma uygulayarak veritabanı katmanında performansı optimize ediyoruz. Bu, milyonlarca satırda bile panonuzun saniyeler içinde yüklenmesini sağlar."
+          },
+          {
+            "question": "Raporları PDF veya Excel olarak dışa aktarabilir miyiz?",
+            "answer": "Evet, kullanıcıların tüm panoları PDF olarak indirmesine veya ham verileri tek bir tıklamayla doğrudan CSV veya Excel dosyalarına aktarmasına olanak tanıyan dışa aktarma özellikleri entegre ediyoruz."
+          }
+        ],
+        "technologies": [
+          { "name": "Tableau", "icon": "tableau" },
+          { "name": "Power BI", "icon": "powerbi" },
+          { "name": "D3.js", "icon": "d3js" },
+          { "name": "Looker", "icon": "looker" },
+          { "name": "Metabase", "icon": "metabase" },
+          { "name": "Apache Superset", "icon": "superset" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "Python", "icon": "python" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Datenvisualisierung",
+      "shortDescription": "Verwandeln Sie komplexe Rohdaten in interaktive Echtzeit-Dashboards und visuelle Berichte. Wir entwickeln maßgeschneiderte Business-Intelligence-Ansichten für datengesteuerte Entscheidungen.",
+      "fullDescription": "Rohdaten sind nur dann wertvoll, wenn Ihr Team sie schnell interpretieren kann. Wir entwickeln maßgeschneiderte Datenvisualisierungslösungen und interaktive Dashboards, die komplexe Daten aus mehreren Quellen in klare, umsetzbare Geschäftserkenntnisse verwandeln. Mit modernen Tools wie Tableau, Power BI und maßgeschneiderten D3.js-Bibliotheken entwerfen wir responsive visuelle Schnittstellen, die auf Ihre spezifischen Workflows und KPIs abgestimmt sind. Unsere Dienstleistungen umfassen alles von der Einrichtung von Echtzeit-Datenströmen bis hin zur Einbettung von Analyse-Dashboards in Ihre SaaS-Produkte und internen Portale. Durch intuitive Benutzeroberflächen und strukturiertes Data Storytelling stellen wir sicher, dass auch nicht-technische Stakeholder Trends leicht erkennen und fundierte operative Entscheidungen ohne manuelle Berichte treffen können.",
+      "features": [
+        "Interaktives Dashboard-Design & Layouts",
+        "Integration von Echtzeit-Datenströmen",
+        "Entwicklung maßgeschneiderter Diagramme & Widgets",
+        "Datenaggregation aus mehreren Quellen & ETL",
+        "Embedded Analytics für SaaS-Anwendungen",
+        "Automatisierte Berichterstellung & E-Mail-Planung",
+        "Rollenbasierte Zugriffskontrolle und Sicherheit",
+        "Für Mobilgeräte optimierte responsive Layouts"
+      ],
+      "benefits": [
+        "Operative Trends und Anomalien sofort erkennen",
+        "Zeitaufwand für manuelle Berichte um 90% reduzieren",
+        "Self-Service-Datenanalyse für Geschäftsteams ermöglichen",
+        "Entscheidungsfindung in allen Abteilungen beschleunigen",
+        "Benutzerinteraktion durch eingebettete Diagramme steigern",
+        "Verteilte Datenquellen in einer einzigen Ansicht konsolidieren"
+      ],
+      "metaTitle": "Datenvisualisierung & Dashboards | PakSoft",
+      "metaDescription": "Verwandeln Sie komplexe Daten in interaktive Echtzeit-Dashboards. Wir bauen maßgeschneiderte Tableau-, Power BI- und D3.js-Lösungen. Kontaktieren Sie uns.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Anforderungsanalyse",
+            "description": "Wir arbeiten mit Ihrem Business-Team zusammen, um Ziel-KPIs, Benutzerrollen, Datenquellen und spezifische Performance-Bedürfnisse zu definieren."
+          },
+          {
+            "step": 2,
+            "title": "Data Engineering",
+            "description": "Wir bereinigen, strukturieren und verbinden Ihre Datenbankquellen, um stabile, optimierte Abfrage-Pipelines für schnelles Laden aufzubauen."
+          },
+          {
+            "step": 3,
+            "title": "UI/UX & Wireframing",
+            "description": "Wir entwerfen übersichtliche Dashboard-Layouts und Wireframes, bei denen Klarheit, Interaktion und einfache Lesbarkeit im Vordergrund stehen."
+          },
+          {
+            "step": 4,
+            "title": "Visualisierungsentwicklung",
+            "description": "Wir erstellen die Dashboards mit Tableau, Power BI oder benutzerdefiniertem D3.js-Code und integrieren Live-Datenfeeds nahtlos."
+          },
+          {
+            "step": 5,
+            "title": "Testen & Integration",
+            "description": "Wir testen Ladezeiten, Datengenauigkeit und responsive Layoutskalierung, bevor wir die Ansichten sicher in Ihre Systeme einbetten."
+          },
+          {
+            "step": 6,
+            "title": "Schulung & Optimierung",
+            "description": "Wir schulen Ihr Team in der Anpassung der Dashboard-Ansichten und optimieren kontinuierlich die Abfragegeschwindigkeit für große Datensätze."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Welche Datenvisualisierungs-Tools empfehlen Sie?",
+            "answer": "Wir empfehlen Tools basierend auf Ihrem Budget und Ihren Hosting-Präferenzen. Tableau und Power BI sind hervorragend für Unternehmensanalysen geeignet, während D3.js ideal für die Einbettung in SaaS-Produkte ist."
+          },
+          {
+            "question": "Können Sie Dashboards in Echtzeit mit Datenbanken verbinden?",
+            "answer": "Ja, wir bauen Live-Daten-Pipelines zu PostgreSQL, MySQL, Snowflake und MongoDB. Wir richten WebSockets oder Caching ein, um Echtzeit-Updates anzuzeigen, ohne Ihre Datenbanken zu überlasten."
+          },
+          {
+            "question": "Erstellen Sie maßgeschneiderte Diagramme von Grund auf?",
+            "answer": "Absolut. Wenn Standarddiagramme in Tableau oder Power BI nicht ausreichen, schreiben wir benutzerdefinierten JavaScript-Code mit D3.js oder Chart.js, um Diagramme genau für Ihre Workflows zu erstellen."
+          },
+          {
+            "question": "Wie gewährleisten Sie die Datensicherheit bei Embedded Analytics?",
+            "answer": "Wir implementieren sichere Authentifizierungs-Token und rollenbasierte Sicherheit auf Zeilenebene. Dies stellt sicher, dass Benutzer nur Daten sehen, für die sie eine Autorisierung besitzen."
+          },
+          {
+            "question": "Wird eine Schulung für unsere Mitarbeiter angeboten?",
+            "answer": "Ja, wir bieten umfassende Schulungen und Video-Dokumentationen an. Wir zeigen Ihren Analysten, wie sie Berichte erstellen, Ansichten filtern und fortgeschrittene Visualisierungen eigenständig nutzen."
+          },
+          {
+            "question": "Können Dashboards auf Mobilgeräten angezeigt werden?",
+            "answer": "Ja, alle unsere Dashboards sind responsive gestaltet. Wir erstellen optimierte mobile Ansichten in Power BI, Tableau und Web-Apps, damit Diagramme auf allen Bildschirmgrößen gut lesbar sind."
+          },
+          {
+            "question": "Wie optimieren Sie langsam ladende Dashboards?",
+            "answer": "Wir optimieren die Datenbankebene durch effiziente SQL-Abfragen, Materialized Views und Caching. So stellen wir sicher, dass Ihr Dashboard auch bei Millionen Zeilen in Sekundenschnelle geladen wird."
+          },
+          {
+            "question": "Können wir Berichte als PDF oder Excel exportieren?",
+            "answer": "Ja, wir integrieren Exportfunktionen, mit denen Benutzer Dashboards als PDF herunterladen oder Rohdaten mit einem Klick in CSV- oder Excel-Dateien exportieren können."
+          }
+        ],
+        "technologies": [
+          { "name": "Tableau", "icon": "tableau" },
+          { "name": "Power BI", "icon": "powerbi" },
+          { "name": "D3.js", "icon": "d3js" },
+          { "name": "Looker", "icon": "looker" },
+          { "name": "Metabase", "icon": "metabase" },
+          { "name": "Apache Superset", "icon": "superset" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "Python", "icon": "python" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "ڈیٹا ویزولائزیشن",
+      "shortDescription": "پیچیدہ خام ڈیٹا کو انٹرایکٹو، ریئل ٹائم ڈیش بورڈز اور بصری کہانیوں میں تبدیل کریں۔ ہم اپنی مرضی کے مطابق ایسے بزنس انٹیلی جنس ویوز ڈیزائن کرتے ہیں جو آپ کی ٹیم کو تیزی سے فیصلے کرنے میں مدد دیتے ہیں۔",
+      "fullDescription": "ادارے کا خام ڈیٹا صرف اسی صورت میں قیمتی ہوتا ہے جب آپ کی ٹیم اس کی تیزی سے تشریح کر سکے۔ ہم کسٹم ڈیٹا ویزولائزیشن سلوشنز اور انٹرایکٹو ڈیش بورڈز بناتے ہیں جو پیچیدہ، کثیر الجہتی ڈیٹا سیٹس کو واضح اور قابلِ عمل کاروباری بصیرت میں تبدیل کرتے ہیں۔ Tableau، Power BI اور کسٹم D3.js لائبریریوں جیسے جدید ٹولز کا استعمال کرتے ہوئے، ہم آپ کے مخصوص کام کے بہاؤ اور KPIs کے مطابق لچکدار بصری انٹرفیس ڈیزائن کرتے ہیں۔ ہماری خدمات ریئل ٹائم ڈیٹا فیڈز ترتیب دینے سے لے کر براہ راست آپ کے موجودہ SaaS مصنوعات اور اندرونی پورٹلز میں ڈیش بورڈز کو ضم کرنے تک ہر چیز کا احاطہ کرتی ہیں۔ آسان ڈیزائن اور منظم ڈیٹا اسٹوری ٹیلنگ پر توجہ دے کر، ہم اس بات کو یقینی بناتے ہیں کہ غیر تکنیکی عملہ بھی دستی رپورٹوں کی ضرورت کے بغیر رجحانات اور انحرافات کی آسانی سے شناخت کر سکے۔",
+      "features": [
+        "انٹرایکٹو ڈیش بورڈ ڈیزائن اور لے آؤٹ",
+        "ریئل ٹائم ڈیٹا اسٹریمنگ انٹیگریشن",
+        "کسٹم چارٹ اور وجیٹ کی تیاری",
+        "ملٹی سورس ڈیٹا ایگریگیشن اور ETL",
+        "ایس اے اے ایس ایپس کے لیے ایمبیڈڈ اینالیٹکس",
+        "خودکار رپورٹنگ اور ای میل شیڈولنگ",
+        "رول پر مبنی رسائی کنٹرول اور سیکیورٹی",
+        "موبائل کے لیے موزوں ریسپانسیو لے آؤٹس"
+      ],
+      "benefits": [
+        "آپریشنل رجحانات اور انحرافات کی فوری شناخت کریں",
+        "دستی رپورٹیں بنانے میں لگنے والے وقت کو 90 فیصد تک کم کریں",
+        "کاروباری ٹیموں کے لیے خود کار ڈیٹا ایکسپلوریشن کو فعال کریں",
+        "تمام محکموں میں فیصلہ سازی کی رفتار کو بہتر بنائیں",
+        "ایمبیڈڈ انٹرایکٹو چارٹس کے ساتھ صارفین کی مصروفیت بڑھائیں",
+        "پھیلے ہوئے ڈیٹا ذرائع کو ایک واحد منظر میں یکجا کریں"
+      ],
+      "metaTitle": "ڈیٹا ویزولائزیشن اور ڈیش بورڈز | PakSoft",
+      "metaDescription": "پیچیدہ ڈیٹا کو ریئل ٹائم ڈیش بورڈز میں تبدیل کریں۔ ہم Tableau، Power BI اور D3.js کے کسٹم ڈیٹا ویزولائزیشن سلوشنز بناتے ہیں۔ آج ہی رابطہ کریں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "ضروریات کا تجزیہ",
+            "description": "ہم ہدف KPIs، صارف کے کردار، ڈیٹا کے ذرائع، اور کارکردگی کی ضروریات کی وضاحت کے لیے آپ کے کاروباری عملے کے ساتھ تعاون کرتے ہیں۔"
+          },
+          {
+            "step": 2,
+            "title": "ڈیٹا انجینئرنگ",
+            "description": "تیزی سے ڈیٹا لوڈ کرنے کے لیے ہم مستحکم اور بہتر کیوری پائپ لائنز کے قیام کے لیے آپ کے ڈیٹا بیس کے ذرائع کو صاف اور مربوط کرتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "ڈیش بورڈ لے آؤٹ ڈیزائن",
+            "description": "ہم ڈیش بورڈز کے واضح ڈیزائن بناتے ہیں، جس میں معلومات کی آسانی اور ڈیٹا کو پڑھنے کی ترجیح دی جاتی ہے۔"
+          },
+          {
+            "step": 4,
+            "title": "ویزولائزیشن کی تیاری",
+            "description": "ہم لائیو ڈیٹا فیڈز کو یکجا کرتے ہوئے Tableau، Power BI یا کسٹم D3.js کوڈز کے ذریعے ڈیش بورڈز تیار کرتے ہیں۔"
+          },
+          {
+            "step": 5,
+            "title": "ٹیسٹنگ اور انٹیگریشن",
+            "description": "ہم ڈیش بورڈز کو آپ کے سسٹم میں ایمبیڈ کرنے سے پہلے ڈیٹا کی درستگی اور لوڈنگ کی رفتار کو جانچتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "تربیت اور اصلاح",
+            "description": "ہم آپ کی ٹیم کو ڈیش بورڈ ویوز کو اپنی مرضی کے مطابق بنانے کی تربیت دیتے ہیں اور کارکردگی کو بہتر بناتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "آپ ڈیٹا ویزولائزیشن کے کن ٹولز کی سفارش کرتے ہیں؟",
+            "answer": "ہم آپ کے بجٹ اور ہوسٹنگ کی ترجیحات کی بنیاد پر ٹولز کی سفارش کرتے ہیں۔ ٹیبلو (Tableau) اور پاور بی آئی (Power BI) کاروباری تجزیات کے لیے بہترین ہیں، جبکہ کسٹم لائبریریاں جیسے D3.js ساس (SaaS) مصنوعات میں چارٹس شامل کرنے کے لیے بہترین ہیں۔"
+          },
+          {
+            "question": "کیا آپ ڈیش بورڈز کو ریئل ٹائم میں ڈیٹا بیس سے جوڑ سکتے ہیں؟",
+            "answer": "جی ہاں، ہم لائیو ڈیٹا پائپ لائنز بناتے ہیں جو PostgreSQL، MySQL، Snowflake، اور MongoDB سے جڑتی ہیں۔ ہم ویب ساکٹس یا کیشنگ کا استعمال کرتے ہوئے ڈیٹا بیس پر بوجھ ڈالے بغیر ریئل ٹائم تبدیلیاں دکھاتے ہیں۔"
+          },
+          {
+            "question": "کیا آپ بالکل شروع سے کسٹم چارٹ بناتے ہیں؟",
+            "answer": "بالکل۔ جب ٹیبلو یا پاور بی آئی کے معیاری چارٹس آپ کی ضروریات کو پورا نہیں کرتے، تو ہم D3.js یا Chart.js کا استعمال کرتے ہوئے کسٹم جاوا اسکرپٹ لکھتے ہیں تاکہ آپ کی کاروباری ضروریات کے مطابق ویجٹس تیار کیے جا سکیں۔"
+          },
+          {
+            "question": "آپ ایمبیڈڈ اینالیٹکس میں ڈیٹا کی سیکیورٹی کو کیسے یقینی بناتے ہیں؟",
+            "answer": "ہم محفوظ توثیقی ٹوکنز اور رول پر مبنی رو لیول سیکیورٹی نافذ کرتے ہیں۔ یہ یقینی بناتا ہے کہ جب ڈیش بورڈز کو بیرونی ایپلی کیشنز میں شامل کیا جائے تو صارفین صرف وہی ڈیٹا دیکھ سکیں جس کی انہیں اجازت حاصل ہے۔"
+          },
+          {
+            "question": "کیا ہمارے عملے کے لیے کوئی تربیت فراہم کی جاتی ہے؟",
+            "answer": "جی ہاں، ہم مکمل تربیتی سیشنز اور ویڈیو دستاویزات فراہم کرتے ہیں۔ ہم آپ کے کاروباری تجزیہ کاروں کو سکھاتے ہیں کہ کس طرح وہ آزادانہ طور پر کسٹم رپورٹس تیار کریں، ڈیٹا کو فلٹر کریں اور بصری نتائج اخذ کریں۔"
+          },
+          {
+            "question": "کیا ڈیش بورڈز کو موبائل آلات پر دیکھا جا سکتا ہے؟",
+            "answer": "جی ہاں، ہمارے تمام کسٹم ڈیش بورڈز ریسپانسیو ڈیزائن پر مبنی ہیں۔ ہم موبائل کے لیے موزوں ویوز بناتے ہیں تاکہ تمام اسکرینوں پر چارٹس واضح اور پڑھنے کے قابل ہوں۔"
+          },
+          {
+            "question": "آپ سست رفتار سے لوڈ ہونے والے ڈیش بورڈز کو کیسے بہتر بناتے ہیں؟",
+            "answer": "ہم ڈیٹا بیس کی سطح پر کارکردگی کو بہتر بنانے کے لیے موثر SQL کیوریز لکھتے ہیں اور کیشنگ کا نظام نافذ کرتے ہیں۔ اس سے ڈیش بورڈز لاکھوں لائنوں کا ڈیٹا بھی سیکنڈوں میں لوڈ کر لیتے ہیں۔"
+          },
+          {
+            "question": "کیا ہم رپورٹوں کو پی ڈی ایف یا ایکسل میں ایکسپورٹ کر سکتے ہیں؟",
+            "answer": "جی ہاں، ہم ایسے فیچرز شامل کرتے ہیں جس سے صارفین مکمل ڈیش بورڈز کو پی ڈی ایف کے طور پر ڈاؤن لوڈ کر سکتے ہیں، یا خام ڈیٹا کو ایک کلک سے CSV یا ایکسل فارمیٹ میں ایکسپورٹ کر سکتے ہیں۔"
+          }
+        ],
+        "technologies": [
+          { "name": "Tableau", "icon": "tableau" },
+          { "name": "Power BI", "icon": "powerbi" },
+          { "name": "D3.js", "icon": "d3js" },
+          { "name": "Looker", "icon": "looker" },
+          { "name": "Metabase", "icon": "metabase" },
+          { "name": "Apache Superset", "icon": "superset" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "Python", "icon": "python" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "تصور البيانات",
+      "shortDescription": "حول البيانات الخام المعقدة إلى لوحات معلومات تفاعلية وتفاعلية في الوقت الفعلي. نصمم واجهات مخصصة لذكاء الأعمال تساعد فريقك على اتخاذ قرارات أسرع وموجهة بالبيانات.",
+      "fullDescription": "بيانات المؤسسة الخام تكون قيمة فقط إذا تمكن فريقك من تفسيرها بسرعة. نحن نبني حلولاً مخصصة لتصور البيانات ولوحات معلومات تفاعلية تحول مجموعات البيانات المعقدة متعددة المصادر إلى رؤى تجارية واضحة وقابلة للتنفيذ. باستخدام أدوات حديثة مثل Tableau و Power BI ومكتبات D3.js المخصصة، نصمم واجهات مرئية سريعة الاستجابة ومصممة خصيصاً لسير العمل والمؤشرات الرئيسية الخاصة بك. تغطي خدماتنا كل شيء بدءاً من إعداد تدفقات البيانات المباشرة في الوقت الفعلي إلى تضمين لوحات التحليل مباشرة في منتجات SaaS الحالية وبواباتك الداخلية. من خلال التركيز على واجهة مستخدم سهلة وسرد قصص البيانات المنظم، نضمن إمكانية تحديد الاتجاهات واكتشاف الشذوذ واتخاذ القرارات التشغيلية المستنيرة دون الحاجة لتقارير يدوية.",
+      "features": [
+        "تصميم وتخطيط لوحات المعلومات التفاعلية",
+        "تكامل تدفق البيانات في الوقت الفعلي",
+        "تطوير المخططات والأدوات المخصصة",
+        "تجميع البيانات من مصادر متعددة وعمليات ETL",
+        "التحليلات المضمنة لتطبيقات SaaS والمواقع",
+        "جدولة التقارير التلقائية وإرسالها بالبريد",
+        "التحكم في الوصول والأمان بناءً على الأدوار",
+        "تخطيطات مرئية متجاوبة ومحسنة للهواتف"
+      ],
+      "benefits": [
+        "تحديد الاتجاهات التشغيلية والشذوذ على الفور",
+        "تقليل الوقت المستغرق في إعداد التقارير اليدوية بنسبة 90٪",
+        "تمكين فرق العمل من استكشاف البيانات ذاتياً",
+        "تسريع وتيرة اتخاذ القرار في جميع الأقسام",
+        "زيادة تفاعل المستخدمين مع المخططات التفاعلية المضمنة",
+        "دمج مصادر البيانات المشتتة في عرض موحد واحد"
+      ],
+      "metaTitle": "تصور البيانات ولوحات المعلومات | PakSoft",
+      "metaDescription": "حول البيانات المعقدة إلى لوحات معلومات تفاعلية في الوقت الفعلي. نبني حلول تصور مخصصة باستخدام Tableau و Power BI و D3.js. اتصل بنا الآن.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تحليل المتطلبات",
+            "description": "نتعاون مع فريق العمل الخاص بك لتحديد مؤشرات الأداء الرئيسية المستهدفة وأدوار المستخدمين ومصادر البيانات واحتياجات الأداء."
+          },
+          {
+            "step": 2,
+            "title": "هندسة البيانات",
+            "description": "نقوم بتنظيف وهيكلة وتوصيل مصادر قاعدة البيانات الخاصة بك لإنشاء مسارات استعلام مستقرة ومحسنة لتسهيل التحميل السريع."
+          },
+          {
+            "step": 3,
+            "title": "تصميم واجهة المستخدم والتخطيط",
+            "description": "صمم مخططات لوحة معلومات واضحة وجذابة، مع إعطاء الأولوية للوضوح وتفاعل المستخدم وسهولة قراءة البيانات."
+          },
+          {
+            "step": 4,
+            "title": "تطوير لوحات المعلومات",
+            "description": "نقوم ببناء لوحات المعلومات باستخدام Tableau أو Power BI أو كود D3.js المخصص مع دمج البيانات المباشرة بسلاسة."
+          },
+          {
+            "step": 5,
+            "title": "الاختبار والتكامل",
+            "description": "نختبر أوقات التحميل ودقة البيانات ونسب التجاوب للمخططات قبل تضمينها بالكامل وبشكل آمن في أنظمتك التشغيلية."
+          },
+          {
+            "step": 6,
+            "title": "التدريب والتحسين",
+            "description": "ندرب فريقك على كيفية تخصيص طرق عرض لوحة المعلومات ونعمل باستمرار على تحسين سرعة معالجة البيانات للمجموعات الكبيرة."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما هي أدوات تصور البيانات التي توصون بها؟",
+            "answer": "نوصي بالأدوات بناءً على ميزانيتك وتفضيلات الاستضافة الخاصة بك. يعد Tableau و Power BI خيارين ممتازين لتحليلات المؤسسات، بينما تعد المكتبات المخصصة مثل D3.js مثالية لتضمين مخططات فريدة في منتجات SaaS."
+          },
+          {
+            "question": "هل يمكنك ربط لوحات المعلومات بقواعد البيانات في الوقت الفعلي؟",
+            "answer": "نعم، نحن نبني مسارات بيانات مباشرة تتصل بقواعد مثل PostgreSQL و MySQL و Snowflake و MongoDB. نقوم بإعداد WebSockets أو تكوين آليات التخزين المؤقت لعرض التغييرات الفورية دون إرهاق قواعد البيانات."
+          },
+          {
+            "question": "هل تقومون ببناء مخططات مخصصة من الصفر؟",
+            "answer": "بالتأكيد. عندما لا تلبي المخططات القياسية في Tableau أو Power BI احتياجات التقارير الخاصة بك، فإننا نكتب كود JavaScript مخصصاً باستخدام D3.js أو Chart.js لبناء أدوات فريدة تتناسب تماماً مع سير عملك."
+          },
+          {
+            "question": "كيف تضمن أمن البيانات في التحليلات المضمنة؟",
+            "answer": "نحن ننفذ رموز مصادقة آمنة وأماناً على مستوى الصف بناءً على الأدوار. يضمن ذلك عدم تمكن المستخدمين من رؤية سوى البيانات المحددة المصرح لهم بعرضها عند تضمين لوحات المعلومات في تطبيقات خارجية."
+          },
+          {
+            "question": "هل يتوفر تدريب لموظفينا؟",
+            "answer": "نعم، نحن نقدم جلسات تدريبية شاملة وتوثيق فيديو تفصيلي. نعلم محللي الأعمال لديك كيفية إنشاء تقارير مخصصة وتصفية طرق العرض وتفسير تصورات البيانات المتقدمة بشكل مستقل."
+          },
+          {
+            "question": "هل يمكن عرض لوحات المعلومات على الأجهزة المحمولة؟",
+            "answer": "نعم، تم تصميم جميع لوحات المعلومات المخصصة لدينا وفقاً لمبادئ التصميم المتجاوب. نقوم بإنشاء طرق عرض محسنة للجوال في Power BI و Tableau وتطبيقات الويب المخصصة لضمان قراءة المخططات على جميع الشاشات."
+          },
+          {
+            "question": "كيف تقوم بتحسين لوحات المعلومات بطيئة التحميل؟",
+            "answer": "نحن نعمل على تحسين الأداء في طبقة قاعدة البيانات من خلال كتابة استعلامات SQL فعالة وبناء طرق عرض مادية (materialized views) وتنفيذ التخزين المؤقت. يضمن ذلك تحميل لوحة التحكم في ثوانٍ حتى مع ملايين الصفوف."
+          },
+          {
+            "question": "هل يمكننا تصدير التقارير إلى PDF أو Excel؟",
+            "answer": "نعم، نقوم بدمج ميزات التصدير التي تتيح للمستخدمين تنزيل لوحات معلومات كاملة كملفات PDF، أو تصدير البيانات الخام الأساسية مباشرة إلى ملفات CSV أو Excel بنقرة واحدة."
+          }
+        ],
+        "technologies": [
+          { "name": "Tableau", "icon": "tableau" },
+          { "name": "Power BI", "icon": "powerbi" },
+          { "name": "D3.js", "icon": "d3js" },
+          { "name": "Looker", "icon": "looker" },
+          { "name": "Metabase", "icon": "metabase" },
+          { "name": "Apache Superset", "icon": "superset" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "Python", "icon": "python" }
+        ]
+      }
+    }
+  },
+  "document-qa": {
+    "en": {
+      "name": "Document Q&A",
+      "shortDescription": "Extract instant, accurate answers and summaries from your enterprise documents. We build intelligent document Q&A pipelines with citation tracking and secure context awareness.",
+      "fullDescription": "Managing scattered manuals, PDFs, and corporate policies is a significant operational burden. We develop advanced Document Q&A solutions using Retrieval-Augmented Generation (RAG) that allow employees and clients to ask natural language questions and get immediate answers with exact source citations. By integrating LlamaIndex, OpenAI, and vector databases like Weaviate, our systems parse, chunk, and index multi-format documents (PDFs, Word docs, slides, HTML) securely. We ensure strict data privacy so your sensitive corporate knowledge never leaks to public models. With built-in memory for follow-up questions, multi-document comparison capabilities, and semantic search, our document Q&A engines transform passive documentation into an active conversation partner.",
+      "features": [
+        "Multi-Document Input & Q&A Pipelines",
+        "Automated Source Citations and Links",
+        "Multi-Format Ingestion (PDF, DOCX, CSV)",
+        "Context-Aware Semantic Vector Search",
+        "Structured Output and Summary Generation",
+        "Built-in Chat Conversational Memory",
+        "Strict Access Control and Data Privacy",
+        "Automatic Indexing of New Documentation"
+      ],
+      "benefits": [
+        "Find critical information in seconds instead of hours",
+        "Reduce internal support tickets for policy inquiries",
+        "Onboard new employees faster with self-service knowledge",
+        "Ensure high accuracy with source-attributed answers",
+        "Keep sensitive corporate data fully secure and private",
+        "Analyze and compare multiple documents simultaneously"
+      ],
+      "metaTitle": "AI Document Q&A Systems | Custom RAG | PakSoft",
+      "metaDescription": "Ask questions and get instant answers from your documents. We build custom Document Q&A engines with citations and high privacy. Learn more.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Document Audit",
+            "description": "We review your target documents, file formats, and security requirements to determine the optimal parsing and indexing approach."
+          },
+          {
+            "step": 2,
+            "title": "Data Ingestion & Chunking",
+            "description": "We build data ingestion pipelines that extract clean text from multi-format files and split it into semantic chunks."
+          },
+          {
+            "step": 3,
+            "title": "Embedding & Vector Indexing",
+            "description": "We convert text chunks into high-dimensional vector embeddings and index them inside a secure database like Weaviate."
+          },
+          {
+            "step": 4,
+            "title": "Retrieval & LLM Setup",
+            "description": "We configure search retrieval algorithms to fetch relevant document snippets and feed them into a secure LLM for generation."
+          },
+          {
+            "step": 5,
+            "title": "Interface Development",
+            "description": "We build clean chat or search interfaces, showing source citations and enabling download of relevant reference materials."
+          },
+          {
+            "step": 6,
+            "title": "Evaluation & Tuning",
+            "description": "We run automated evaluation tests to ensure accuracy, eliminate hallucinations, and keep search retrieval speed under one second."
+          }
+        ],
+        "faq": [
+          {
+            "question": "How does the AI know where it found the answer?",
+            "answer": "Our systems use Retrieval-Augmented Generation (RAG). Before answering, the system retrieves the most relevant paragraphs from your documents and shows them as clickable citations with page numbers."
+          },
+          {
+            "question": "Is our sensitive corporate data safe with the AI?",
+            "answer": "Yes, security is our top priority. We use secure enterprise APIs or open-source models deployed locally on your servers, ensuring no data is used to train public models."
+          },
+          {
+            "question": "What document formats are supported?",
+            "answer": "We support a wide variety of formats, including PDFs, Microsoft Word (DOCX), PowerPoint presentations (PPTX), Excel sheets, CSV, text files, and HTML web pages."
+          },
+          {
+            "question": "Can the AI handle scanned PDF documents?",
+            "answer": "Yes, we integrate Optical Character Recognition (OCR) engines like Tesseract or AWS Textract to extract clean text from scanned images and PDFs before indexing."
+          },
+          {
+            "question": "Can it compare information across multiple files?",
+            "answer": "Absolutely. The system can retrieve context from multiple files simultaneously, allowing users to ask questions like 'What are the differences between Project A and Project B contract terms?'"
+          },
+          {
+            "question": "How does it handle updated documents?",
+            "answer": "We set up automated synchronization pipelines. When a file is modified or added to your storage (like Google Drive or S3), it is re-indexed automatically in real time."
+          },
+          {
+            "question": "What happens if the answer is not in the documents?",
+            "answer": "We configure strict guardrails. If the system cannot find the answer in the provided documents, it will reply that the information is unavailable, preventing untruthful hallucinations."
+          },
+          {
+            "question": "How many documents can the system index?",
+            "answer": "Our vector database architecture is designed for scale. It can index thousands of large manuals and millions of pages, delivering search results in milliseconds."
+          }
+        ],
+        "technologies": [
+          { "name": "LlamaIndex", "icon": "llamaindex" },
+          { "name": "OpenAI API", "icon": "openai" },
+          { "name": "Weaviate", "icon": "weaviate" },
+          { "name": "Python", "icon": "python" },
+          { "name": "LangChain", "icon": "langchain" },
+          { "name": "Pinecone", "icon": "pinecone" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "FastAPI", "icon": "fastapi" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Belge Soru-Cevap",
+      "shortDescription": "Kurumsal belgelerinizden anında, doğru yanıtlar ve özetler alın. Atıf takibi ve güvenli bağlam farkındalığına sahip akıllı belge soru-cevap sistemleri kuruyoruz.",
+      "fullDescription": "Dağınık kılavuzları, PDF'leri ve kurumsal politikaları yönetmek büyük bir operasyonel yüktür. Çalışanların ve müşterilerin doğal dilde sorular sormasına ve kesin kaynak atıflarıyla anında yanıtlar almasına olanak tanıyan, Retrieval-Augmented Generation (RAG) kullanan gelişmiş Belge Soru-Cevap çözümleri geliştiriyoruz. LlamaIndex, OpenAI ve Weaviate gibi vektör veritabanlarını entegre ederek, sistemlerimiz çok formatlı belgeleri (PDF, Word belgeleri, sunumlar, HTML) güvenli bir şekilde ayrıştırır, bölümlere ayırır ve indeksler. Hassas kurumsal bilgilerinizin kamuya açık modellere sızmaması için sıkı veri gizliliği sağlıyoruz. Takip soruları için yerleşik bellek, çoklu belge karşılaştırma yetenekleri ve anlamsal arama ile belge soru-cevap motorlarımız pasif belgeleri aktif bir konuşma ortağına dönüştürür.",
+      "features": [
+        "Çoklu Belge Girişi ve Soru-Cevap Hatları",
+        "Otomatik Kaynak Atıfları ve Bağlantıları",
+        "Çoklu Format Alma (PDF, DOCX, CSV)",
+        "Bağlam Duyarlı Anlamsal Vektör Araması",
+        "Yapılandırılmış Çıktı ve Özet Oluşturma",
+        "Yerleşik Sohbet Konuşma Belleği",
+        "Katı Erişim Kontrolü ve Veri Gizliliği",
+        "Yeni Belgelerin Otomatik İndekslenmesi"
+      ],
+      "benefits": [
+        "Kritik bilgileri saatler yerine saniyeler içinde bulun",
+        "Politika soruları için dahili destek taleplerini azaltın",
+        "Self-servis bilgi ile yeni çalışanları daha hızlı işe alıştırın",
+        "Kaynak odaklı yanıtlarla yüksek doğruluğu garanti edin",
+        "Hassas kurumsal verileri tamamen güvenli ve gizli tutun",
+        "Birden fazla belgeyi aynı anda analiz edin ve karşılaştırın"
+      ],
+      "metaTitle": "Yapay Zeka Belge Soru-Cevap | Özel RAG | PakSoft",
+      "metaDescription": "Sorular sorun ve belgelerinizden anında yanıtlar alın. Kaynak atıflı ve yüksek gizlilikli belge soru-cevap motorları kuruyoruz. Detaylı bilgi edinin.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Belge Denetimi",
+            "description": "En uygun ayrıştırma ve indeksleme yaklaşımını belirlemek için hedef belgelerinizi, dosya formatlarını ve güvenlik gereksinimlerini inceliyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Veri Alma & Bölümleme",
+            "description": "Çok formatlı dosyalardan temiz metin çıkaran ve bunları anlamsal bölümlere ayıran veri alma hatları oluşturuyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Gömme & Vektör İndeksleme",
+            "description": "Metin bölümlerini yüksek boyutlu vektör gömmelerine dönüştürüyor ve bunları Weaviate gibi güvenli bir veritabanında indeksliyoruz."
+          },
+          {
+            "step": 4,
+            "title": "Geri Getirme & LLM Kurulumu",
+            "description": "İlgili belge parçalarını getirmek ve üretim için güvenli bir LLM'ye beslemek üzere arama geri getirme algoritmalarını yapılandırıyoruz."
+          },
+          {
+            "step": 5,
+            "title": "Arayüz Geliştirme",
+            "description": "Kaynak atıflarını gösteren ve ilgili referans materyallerinin indirilmesini sağlayan temiz sohbet veya arama arayüzleri oluşturuyoruz."
+          },
+          {
+            "step": 6,
+            "title": "Değerlendirme & İnce Ayar",
+            "description": "Doğruluğu sağlamak, halüsinasyonları ortadan kaldırmak ve arama geri getirme hızını bir saniyenin altında tutmak için otomatik değerlendirme testleri yapıyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Yapay zeka cevabı nerede bulduğunu nasıl biliyor?",
+            "answer": "Sistemlerimiz Retrieval-Augmented Generation (RAG) kullanır. Cevap vermeden önce, sistem belgelerinizden en ilgili paragrafları getirir ve bunları sayfa numaralarıyla tıklanabilir atıflar olarak gösterir."
+          },
+          {
+            "question": "Hassas kurumsal verilerimiz yapay zeka ile güvende mi?",
+            "answer": "Evet, güvenlik en büyük önceliğimizdir. Güvenli kurumsal API'ler veya sunucularınızda yerel olarak barındırılan açık kaynaklı modeller kullanıyoruz, böylece hiçbir veri kamuya açık modelleri eğitmek için kullanılmaz."
+          },
+          {
+            "question": "Hangi belge formatları destekleniyor?",
+            "answer": "PDF, Microsoft Word (DOCX), PowerPoint sunumları (PPTX), Excel tabloları, CSV, metin dosyaları ve HTML web sayfaları dahil olmak üzere çok çeşitli formatları destekliyoruz."
+          },
+          {
+            "question": "Yapay zeka taranmış PDF belgelerini işleyebilir mi?",
+            "answer": "Evet, indekslemeden önce taranmış görüntülerden ve PDF'lerden temiz metin çıkarmak için Tesseract veya AWS Textract gibi Optik Karakter Tanıma (OCR) motorlarını entegre ediyoruz."
+          },
+          {
+            "question": "Birden fazla dosyadaki bilgileri karşılaştırabilir mi?",
+            "answer": "Kesinlikle. Sistem, aynı anda birden fazla dosyadan bağlam getirebilir; bu da kullanıcıların 'Proje A ile Proje B sözleşme şartları arasındaki farklar nelerdir?' gibi sorular sormasına olanak tanır."
+          },
+          {
+            "question": "Güncellenen belgeleri nasıl işliyor?",
+            "answer": "Otomatik senkronizasyon hatları kuruyoruz. Depolama alanınıza (Google Drive veya S3 gibi) bir dosya eklendiğinde veya değiştirildiğinde, gerçek zamanlı olarak otomatik olarak yeniden indekslenir."
+          },
+          {
+            "question": "Cevap belgelerde yoksa ne olur?",
+            "answer": "Sıkı koruma sınırları yapılandırıyoruz. Sistem sağlanan belgelerde cevabı bulamazsa, bilginin mevcut olmadığını belirterek gerçeğe aykırı halüsinasyonları önler."
+          },
+          {
+            "question": "Sistem kaç belgeyi indeksleyebilir?",
+            "answer": "Vektör veritabanı mimarimiz ölçeklenebilir şekilde tasarlanmıştır. Binlerce büyük kılavuzu ve milyonlarca sayfayı indeksleyebilir, arama sonuçlarını milisaniyeler içinde sunabilir."
+          }
+        ],
+        "technologies": [
+          { "name": "LlamaIndex", "icon": "llamaindex" },
+          { "name": "OpenAI API", "icon": "openai" },
+          { "name": "Weaviate", "icon": "weaviate" },
+          { "name": "Python", "icon": "python" },
+          { "name": "LangChain", "icon": "langchain" },
+          { "name": "Pinecone", "icon": "pinecone" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "FastAPI", "icon": "fastapi" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Dokumenten-Q&A",
+      "shortDescription": "Erhalten Sie sofortige, präzise Antworten und Zusammenfassungen aus Ihren Unternehmensdokumenten. Wir bauen intelligente Dokumenten-Q&A-Systeme mit Quellennachweis und Sicherheitskontrollen.",
+      "fullDescription": "Die Verwaltung verstreuter Handbücher, PDFs und Unternehmensrichtlinien stellt eine erhebliche operative Belastung dar. Wir entwickeln fortschrittliche Dokumenten-Q&A-Lösungen unter Verwendung von Retrieval-Augmented Generation (RAG), die es Mitarbeitern und Kunden ermöglichen, Fragen in natürlicher Sprache zu stellen und sofort Antworten mit genauen Quellennachweisen zu erhalten. Durch die Integration von LlamaIndex, OpenAI und Vektordatenbanken wie Weaviate parsen, segmentieren und indexieren unsere Systeme Dokumente verschiedener Formate (PDF, Word, Präsentationen, HTML) sicher. Wir gewährleisten strengen Datenschutz, sodass Ihr internes Unternehmenswissen niemals in öffentliche Modelle einfließt. Mit integriertem Gesprächsgedächtnis und semantischer Suche machen unsere Q&A-Engines Ihre Dokumentation interaktiv nutzbar.",
+      "features": [
+        "Multi-Dokumenten-Q&A-Pipelines",
+        "Automatisierte Quellennachweise & Links",
+        "Multi-Format Ingestion (PDF, DOCX, CSV)",
+        "Kontextsensitive semantische Vektorsuche",
+        "Strukturierte Ausgabe & Zusammenfassung",
+        "Integriertes Konversationsgedächtnis",
+        "Strikte Zugriffskontrolle & Datenschutz",
+        "Automatische Indexierung neuer Dokumente"
+      ],
+      "benefits": [
+        "Kritische Informationen in Sekunden statt Stunden finden",
+        "Interne Support-Tickets zu Richtlinien um 80% reduzieren",
+        "Neue Mitarbeiter durch Self-Service-Wissen schneller einarbeiten",
+        "Hohe Genauigkeit durch quellenbasierte Antworten garantieren",
+        "Sensible Unternehmensdaten absolut sicher und privat halten",
+        "Mehrere Dokumente gleichzeitig analysieren und vergleichen"
+      ],
+      "metaTitle": "KI Dokumenten-Q&A Systeme | RAG Lösungen | PakSoft",
+      "metaDescription": "Stellen Sie Fragen und erhalten Sie sofortige Antworten aus Ihren Dokumenten. Wir bauen kundenorientierte Q&A-Systeme mit Quellenangaben. Mehr erfahren.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Dokumenten-Audit",
+            "description": "Wir analysieren Ihre Zieldokumente, Dateiformate und Sicherheitsanforderungen, um die beste Parsing- und Indexierungsstrategie festzulegen."
+          },
+          {
+            "step": 2,
+            "title": "Ingestion & Chunking",
+            "description": "Wir bauen Pipelines zur Datenaufnahme, die sauberen Text aus verschiedenen Formaten extrahieren und in semantische Abschnitte unterteilen."
+          },
+          {
+            "step": 3,
+            "title": "Embedding & Vektorindexierung",
+            "description": "Wir konvertieren die Textabschnitte in hochdimensionale Vektoren und speichern sie in einer sicheren Vektordatenbank wie Weaviate."
+          },
+          {
+            "step": 4,
+            "title": "Retrieval & LLM-Setup",
+            "description": "Wir konfigurieren Suchalgorithmen, um die relevantesten Textpassagen abzurufen und sie für die präzise Antwortgenerierung an ein sicheres LLM zu senden."
+          },
+          {
+            "step": 5,
+            "title": "Interface-Entwicklung",
+            "description": "Wir entwickeln benutzerfreundliche Chat- oder Suchoberflächen, die Quellennachweise anzeigen und das Herunterladen der Referenzdateien ermöglichen."
+          },
+          {
+            "step": 6,
+            "title": "Evaluierung & Tuning",
+            "description": "Wir führen automatisierte Tests durch, um die Antwortqualität zu bewerten, Halluzinationen zu vermeiden und die Antwortzeit unter einer Sekunde zu halten."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Woher weiß die KI, wo sie die Antwort gefunden hat?",
+            "answer": "Unsere Systeme nutzen Retrieval-Augmented Generation (RAG). Vor der Antwortabgabe sucht das System nach den relevantesten Abschnitten in Ihren Dokumenten und zeigt diese als anklickbare Zitate mit Seitenzahlen an."
+          },
+          {
+            "question": "Sind unsere sensiblen Unternehmensdaten bei der KI sicher?",
+            "answer": "Ja, Sicherheit steht für uns an erster Stelle. Wir nutzen dedizierte Enterprise-APIs oder Open-Source-Modelle, die lokal auf Ihren eigenen Servern gehostet werden, sodass keine Daten für das Training öffentlicher Modelle verwendet werden."
+          },
+          {
+            "question": "Welche Dokumentenformate werden unterstützt?",
+            "answer": "Wir unterstützen eine Vielzahl von Formaten, darunter PDFs, Microsoft Word (DOCX), PowerPoint-Präsentationen (PPTX), Excel-Tabellen, CSV-Dateien, Textdateien und HTML-Seiten."
+          },
+          {
+            "question": "Kann die KI gescannte PDF-Dokumente lesen?",
+            "answer": "Ja, wir integrieren OCR-Systeme (Optical Character Recognition) wie Tesseract oder AWS Textract, um Text aus gescannten Dokumenten und Bildern vor der Indexierung lesbar zu machen."
+          },
+          {
+            "question": "Können Informationen aus verschiedenen Dateien verglichen werden?",
+            "answer": "Absolut. Das System kann Informationen aus mehreren Dokumenten gleichzeitig abrufen, was Vergleiche ermöglicht, wie beispielsweise zwischen verschiedenen Vertragsentwürfen."
+          },
+          {
+            "question": "Wie werden aktualisierte Dokumente verarbeitet?",
+            "answer": "Wir richten automatische Synchronisations-Pipelines ein. Wenn eine Datei in Ihrem Cloud-Speicher (z. B. Google Drive oder AWS S3) geändert wird, wird sie sofort automatisch neu indexiert."
+          },
+          {
+            "question": "Was passiert, wenn die Antwort nicht im Dokument steht?",
+            "answer": "Wir richten Sicherheitsregeln ein. Wenn die Information in den bereitgestellten Dokumenten nicht existiert, teilt das System dies dem Benutzer mit, anstatt falsche Fakten zu erfinden."
+          },
+          {
+            "question": "Wie viele Dokumente kann das System verarbeiten?",
+            "answer": "Unsere Vektordatenbank-Architektur ist beliebig skalierbar. Sie kann Tausende von Handbüchern und Millionen von Seiten indexieren und Suchergebnisse in Millisekunden liefern."
+          }
+        ],
+        "technologies": [
+          { "name": "LlamaIndex", "icon": "llamaindex" },
+          { "name": "OpenAI API", "icon": "openai" },
+          { "name": "Weaviate", "icon": "weaviate" },
+          { "name": "Python", "icon": "python" },
+          { "name": "LangChain", "icon": "langchain" },
+          { "name": "Pinecone", "icon": "pinecone" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "FastAPI", "icon": "fastapi" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "دستاویزی سوال جواب",
+      "shortDescription": "اپنی کاروباری دستاویزات سے فوری، درست جوابات اور خلاصے حاصل کریں۔ ہم حوالہ جات کی ٹریکنگ اور سیکیورٹی خصوصیات کے ساتھ ذہین دستاویز سوال و جواب کا نظام بناتے ہیں۔",
+      "fullDescription": "مختلف پی ڈی ایف، مینوئلز اور کمپنی کی پالیسیوں کا انتظام کرنا ایک بڑا آپریشنل بوجھ ہوتا ہے۔ ہم ریٹریول آگمنٹڈ جنریشن (RAG) کا استعمال کرتے ہوئے جدید دستاویزی سوال و جواب کے سلوشنز تیار کرتے ہیں جو ملازمین اور صارفین کو قدرتی زبان میں سوالات پوچھنے اور حوالہ جات کے ساتھ فوری جواب حاصل کرنے کی اجازت دیتے ہیں۔ LlamaIndex، OpenAI اور Weaviate جیسے ویکٹر ڈیٹا بیسز کو مربوط کر کے، ہمارا سسٹم کثیر فارمیٹ کی دستاویزات کو محفوظ طریقے سے پارس، اسکین اور انڈیکس کرتا ہے۔ ہم سخت سیکیورٹی فراہم کرتے ہیں تاکہ آپ کا حساس ڈیٹا عوامی ماڈلز پر کبھی لیک نہ ہو۔ گفتگو کو یاد رکھنے کی صلاحیت اور جدید سرچ انجن کے ساتھ، ہمارے دستاویزی سوال و جواب کے سسٹمز آپ کی فائلوں کو ایک ذہین گفتگو کے ساتھی میں تبدیل کر دیتے ہیں۔",
+      "features": [
+        "ملٹی ڈاکومنٹ ان پٹ اور سوال و جواب پائپ لائنز",
+        "خودکار ذرائع کے حوالہ جات اور لنکس",
+        "کثیر فارمیٹ فائل انڈیکسنگ (PDF, DOCX, CSV)",
+        "سیاق و سباق کے مطابق انوکھا ویکٹر سرچ",
+        "منظم آؤٹ پٹ اور خلاصہ جنریشن",
+        "گفتگو کو یاد رکھنے کی صلاحیت",
+        "سخت رسائی کنٹرول اور ڈیٹا پرائیویسی",
+        "نئی دستاویزات کی خودکار انڈیکسنگ"
+      ],
+      "benefits": [
+        "گھنٹوں کے بجائے سیکنڈوں میں اہم معلومات تلاش کریں",
+        "کمپنی کی پالیسی کے سوالات کے لیے سپورٹ ٹکٹوں میں کمی لائیں",
+        "نئے ملازمین کو آسانی سے کمپنی کے کام سے واقف کرائیں",
+        "حوالہ جات کے ساتھ تصدیق شدہ جوابات حاصل کریں",
+        "حساس کاروباری ڈیٹا کو مکمل طور پر محفوظ اور نجی رکھیں",
+        "ایک ہی وقت میں متعدد دستاویزات کا موازنہ کریں"
+      ],
+      "metaTitle": "دستاویزی سوال جواب سسٹم | کسٹم RAG | PakSoft",
+      "metaDescription": "اپنی دستاویزات سے سوالات پوچھیں اور فوری جوابات حاصل کریں۔ ہم محفوظ اور تصدیق شدہ دستاویزی سوال و جواب کے سسٹمز بناتے ہیں۔ معلومات حاصل کریں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "دستاویز کا آڈٹ",
+            "description": "ہم فائل فارمیٹس اور سیکیورٹی کی ضروریات کا تجزیہ کرتے ہیں تاکہ ڈیٹا کو پارس کرنے کا بہترین طریقہ کار منتخب کیا جا سکے۔"
+          },
+          {
+            "step": 2,
+            "title": "ڈیٹا انڈیکسنگ",
+            "description": "ہم ایسے خودکار سسٹمز بناتے ہیں جو متعدد فارمیٹس کی فائلوں سے صاف متنی مواد نکال کر ان کے ٹکڑے کرتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "ویکٹر انڈیکسنگ",
+            "description": "ہم نکالے گئے متنی ٹکڑوں کو ویکٹرز میں تبدیل کر کے Weaviate جیسے محفوظ ڈیٹا بیس میں محفوظ کرتے ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "سرچ اور LLM انٹیگریشن",
+            "description": "ہم تلاش کے الگورتھم کو ترتیب دیتے ہیں تاکہ متعلقہ ڈیٹا حاصل کر کے محفوظ طریقے سے LLM ماڈل کو بھیجا جا سکے۔"
+          },
+          {
+            "step": 5,
+            "title": "انٹرفیس کی تیاری",
+            "description": "ہم صاف چیٹ یا سرچ انٹرفیس تیار کرتے ہیں جو ذرائع کے حوالہ جات اور صفحات کے نمبر واضح طور پر دکھاتا ہے۔"
+          },
+          {
+            "step": 6,
+            "title": "ٹیسٹنگ اور اصلاح",
+            "description": "ہم خودکار جانچ کرتے ہیں تاکہ جوابات میں کسی بھی قسم کی غلطی نہ ہو اور نتائج ایک سیکنڈ سے پہلے حاصل ہوں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "اے آئی کو کیسے معلوم ہوتا ہے کہ جواب کہاں سے ملا ہے؟",
+            "answer": "ہمارا سسٹم ریٹریول آگمنٹڈ جنریشن (RAG) استعمال کرتا ہے۔ جواب دینے سے پہلے، سسٹم آپ کی دستاویزات سے موزوں ترین پیراگراف لاتا ہے اور انہیں صفحہ نمبر کے ساتھ حوالے کے طور پر دکھاتا ہے۔"
+          },
+          {
+            "question": "کیا ہمارا حساس ڈیٹا اے آئی کے پاس محفوظ رہتا ہے؟",
+            "answer": "جی ہاں، سیکیورٹی ہماری اولین ترجیح ہے۔ ہم محفوظ کاروباری APIs یا آپ کے اپنے سرورز پر ہوسٹ کیے گئے ماڈلز استعمال کرتے ہیں، جس سے کوئی بھی ڈیٹا پبلک ماڈلز کی تربیت کے لیے استعمال نہیں ہو سکتا۔"
+          },
+          {
+            "question": "کون سے دستاویز فارمیٹس سپورٹڈ ہیں؟",
+            "answer": "ہم پی ڈی ایف (PDF)، ورڈ (DOCX)، پاور پوائنٹ (PPTX)، ایکسل شیٹس، سی ایس وی (CSV)، ٹیکسٹ فائلز، اور ایچ ٹی ایم ایل (HTML) صفحات کو سپورٹ کرتے ہیں۔"
+          },
+          {
+            "question": "کیا اے آئی اسکین شدہ پی ڈی ایف فائلوں کو پڑھ سکتا ہے؟",
+            "answer": "جی ہاں، ہم اسکین شدہ فائلوں اور تصاویر سے متن نکالنے کے لیے Tesseract یا AWS Textract جیسے OCR ٹولز کا استعمال کرتے ہیں تاکہ انہیں سرچ کے قابل بنایا جا سکے۔"
+          },
+          {
+            "question": "کیا یہ ایک سے زیادہ فائلوں کی معلومات کا موازنہ کر سکتا ہے؟",
+            "answer": "جی ہاں۔ سسٹم ایک وقت میں متعدد دستاویزات سے معلومات حاصل کر سکتا ہے، جس سے آپ مختلف فائلوں کی شرائط کا موازنہ آسانی سے کر سکتے ہیں۔"
+          },
+          {
+            "question": "نئی دستاویزات شامل کرنے پر کیا عمل ہوتا ہے؟",
+            "answer": "ہم خودکار سنکرونائزیشن پائپ لائنز بناتے ہیں۔ جب آپ اپنے کلاؤڈ اسٹوریج (جیسے Google Drive) میں کوئی فائل شامل کرتے ہیں تو وہ خود بخود سسٹم میں شامل ہو جاتی ہے۔"
+          },
+          {
+            "question": "اگر مطلوبہ معلومات دستاویزات میں نہ ہوں تو کیا ہوتا ہے؟",
+            "answer": "ہم سخت قوانین نافذ کرتے ہیں۔ اگر سسٹم کو دستاویزات میں جواب نہیں ملتا تو وہ غلط معلومات دینے کے بجائے واضح طور پر بتا دیتا ہے کہ معلومات دستیاب نہیں ہیں۔"
+          },
+          {
+            "question": "سسٹم کتنی دستاویزات کو انڈیکس کر سکتا ہے؟",
+            "answer": "ہمارا ویکٹر ڈیٹا بیس کا نظام لامحدود فائلیں سنبھالنے کے لیے ڈیزائن کیا گیا ہے۔ یہ لاکھوں صفحات کو انڈیکس کر کے ملی سیکنڈز میں جواب فراہم کر سکتا ہے۔"
+          }
+        ],
+        "technologies": [
+          { "name": "LlamaIndex", "icon": "llamaindex" },
+          { "name": "OpenAI API", "icon": "openai" },
+          { "name": "Weaviate", "icon": "weaviate" },
+          { "name": "Python", "icon": "python" },
+          { "name": "LangChain", "icon": "langchain" },
+          { "name": "Pinecone", "icon": "pinecone" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "FastAPI", "icon": "fastapi" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "الأسئلة والأجوبة حول المستندات",
+      "shortDescription": "استخرج إجابات وملخصات فورية ودقيقة من مستندات مؤسستك. نحن نبني مسارات أسئلة وأجوبة ذكية للمستندات مع تتبع الاستشهادات والوعي الآمن بالسياق.",
+      "fullDescription": "تمثل إدارة الكتالوجات، والملفات بصيغة PDF، والسياسات المؤسسية المشتتة عبئاً تشغيلياً كبيراً. نحن نطور حلولاً متقدمة للأسئلة والأجوبة حول المستندات باستخدام توليد الاسترجاع المعزز (RAG) والتي تتيح للموظفين والعملاء طرح أسئلة بلغة طبيعية والحصول على إجابات فورية مع استشهادات دقيقة بمصادر المعلومات. من خلال دمج LlamaIndex و OpenAI وقواعد البيانات المتجهة مثل Weaviate، تقوم أنظمتنا بتحليل وتقسيم وفهرسة المستندات متعددة التنسيقات (PDF و Word والعروض التقديمية و HTML) بشكل آمن. نضمن خصوصية صارمة للبيانات حتى لا تتسرب معرفة شركتك الحساسة أبداً إلى النماذج العامة. بفضل الذاكرة المدمجة للأسئلة المتابعة والبحث الدلالي، تحول محركاتنا المستندات السلبية إلى شريك حوار نشط.",
+      "features": [
+        "مسارات مدخلات وأسئلة متعددة المستندات",
+        "استشهادات وروابط آلية للمصادر والصفحات",
+        "استيعاب ملفات بتنسيقات متعددة (PDF, DOCX, CSV)",
+        "بحث متجه دلالي واعٍ تماماً بالسياق",
+        "توليد مخرجات منظمة وملخصات دقيقة",
+        "ذاكرة مدمجة للمحادثات وسياق الحوار",
+        "تحكم صارم في الوصول وخصوصية كاملة للبيانات",
+        "فهرسة تلقائية لأي مستندات جديدة مضافة"
+      ],
+      "benefits": [
+        "العثور على المعلومات الهامة في ثوانٍ بدلاً من ساعات",
+        "تقليل تذاكر الدعم الداخلي للاستفسار عن السياسات",
+        "تهيئة الموظفين الجدد بشكل أسرع عبر المعرفة الذاتية",
+        "ضمان دقة عالية من خلال إجابات منسوبة لمصادرها",
+        "الحفاظ على خصوصية وأمان بيانات الشركة بالكامل",
+        "تحليل ومقارنة مستندات متعددة في نفس الوقت بسهولة"
+      ],
+      "metaTitle": "أنظمة أسئلة وأجوبة للمستندات | حلول RAG | PakSoft",
+      "metaDescription": "اطرح الأسئلة واحصل على إجابات فورية من مستنداتك. نبني محركات أسئلة مخصصة مع الاستشهادات بالمصادر وأمان عالٍ للبيانات. اعرف المزيد.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تدقيق المستندات",
+            "description": "نراجع المستندات المستهدفة وتنسيقات الملفات ومتطلبات الأمان لتحديد النهج الأمثل للتحليل والفهرسة."
+          },
+          {
+            "step": 2,
+            "title": "استيراد البيانات وتقسيمها",
+            "description": "نبني مسارات استيراد البيانات التي تستخرج النصوص النظيفة من الملفات متعددة التنسيقات وتقسمها إلى أجزاء دلالية."
+          },
+          {
+            "step": 3,
+            "title": "التمثيل المتجهي والفهرسة",
+            "description": "نحول أجزاء النص إلى تمثيلات متجهية (embeddings) عالية الأبعاد ونفهرسها داخل قاعدة بيانات آمنة مثل Weaviate."
+          },
+          {
+            "step": 4,
+            "title": "الاسترجاع وإعداد نموذج اللغة",
+            "description": "نقوم بتكوين خوارزميات استرجاع البحث لجلب مقتطفات المستندات ذات الصلة وتغذيتها في نموذج لغوي آمن."
+          },
+          {
+            "step": 5,
+            "title": "تطوير واجهة الاستخدام",
+            "description": "نبني واجهات محادثة أو بحث نظيفة وسهلة، تعرض الاستشهادات بالمصادر وتتيح تحميل المواد المرجعية ذات الصلة."
+          },
+          {
+            "step": 6,
+            "title": "التقييم والضبط الدقيق",
+            "description": "نجري اختبارات تقييم تلقائية لضمان الدقة، والقضاء على الهلوسة، وإبقاء سرعة استرجاع البحث أقل من ثانية واحدة."
+          }
+        ],
+        "faq": [
+          {
+            "question": "كيف يعرف الذكاء الاصطناعي أين وجد الإجابة؟",
+            "answer": "تستخدم أنظمتنا توليد الاسترجاع المعزز (RAG). قبل الإجابة، يسترجع النظام الفقرات الأكثر صلة من مستنداتك ويعرضها كاستشهادات قابلة للنقر مع أرقام الصفحات."
+          },
+          {
+            "question": "هل بيانات شركتنا الحساسة آمنة مع الذكاء الاصطناعي؟",
+            "answer": "نعم، الأمان هو أولويتنا القصوى. نحن نستخدم واجهات برمجة تطبيقات آمنة للمؤسسات أو نماذج مفتوحة المصدر يتم نشرها محلياً على خوادمك الخاصة لضمان عدم تدريب النماذج العامة عليها."
+          },
+          {
+            "question": "ما هي تنسيقات المستندات المدعومة؟",
+            "answer": "نحن ندعم مجموعة واسعة من التنسيقات، بما في ذلك ملفات PDF، ومستندات Microsoft Word (DOCX)، وعروض PowerPoint (PPTX)، وجداول Excel، وملفات CSV، والملفات النصية، وصفحات الويب HTML."
+          },
+          {
+            "question": "هل يمكن للذكاء الاصطناعي معالجة مستندات PDF الممسوحة ضوئياً؟",
+            "answer": "نعم، نحن ندمج محركات التعرف الضوئي على الحروف (OCR) مثل Tesseract أو AWS Textract لاستخراج النصوص النظيفة من الصور وملفات PDF الممسوحة ضوئياً قبل فهرستها."
+          },
+          {
+            "question": "هل يمكن للنظام مقارنة المعلومات عبر ملفات متعددة؟",
+            "answer": "بالتأكيد. يمكن للنظام استرجاع السياق من مستندات متعددة في نفس الوقت، مما يتيح للمستخدمين طرح أسئلة للمقارنة مثل شروط العقود المختلفة."
+          },
+          {
+            "question": "كيف يتعامل النظام مع المستندات المحدثة؟",
+            "answer": "نقوم بإعداد مسارات مزامنة تلقائية. عندما يتم تعديل ملف أو إضافته إلى وحدة التخزين الخاصة بك (مثل Google Drive أو S3)، يتمت إعادة فهرسته تلقائياً في الوقت الفعلي."
+          },
+          {
+            "question": "ماذا يحدث إذا لم تكن الإجابة موجودة في المستندات؟",
+            "answer": "نضع حواجز حماية صارمة للأنظمة. إذا لم يجد النظام الإجابة في المستندات المقدمة، فسوف يجيب بأن المعلومات غير متوفرة، مما يمنع حدوث الهلوسة الكاذبة."
+          },
+          {
+            "question": "كم عدد المستندات التي يمكن للنظام فهرستها؟",
+            "answer": "تم تصميم بنية قاعدة البيانات المتجهة لدينا لتناسب الأحجام الضخمة. يمكنها فهرسة آلاف الكتيبات وملايين الصفحات، وتقديم نتائج البحث في أجزاء من الثانية."
+          }
+        ],
+        "technologies": [
+          { "name": "LlamaIndex", "icon": "llamaindex" },
+          { "name": "OpenAI API", "icon": "openai" },
+          { "name": "Weaviate", "icon": "weaviate" },
+          { "name": "Python", "icon": "python" },
+          { "name": "LangChain", "icon": "langchain" },
+          { "name": "Pinecone", "icon": "pinecone" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "FastAPI", "icon": "fastapi" }
+        ]
+      }
+    }
+  },
+  "enterprise-search-ai": {
+    "en": {
+      "name": "Enterprise Search AI",
+      "shortDescription": "Unified, AI-powered semantic search across all your corporate databases, clouds, and applications. Connect all data sources in a single secure window.",
+      "fullDescription": "Enterprise knowledge is often scattered across email, chat, cloud storage, and databases, making it difficult to find. We build custom Enterprise Search AI solutions that connect all your tools in a single, unified search interface. Using semantic search, advanced vector embeddings, and Elasticsearch, our systems understand the user's intent rather than matching keywords. Whether a user is looking for a technical specification, a client email, or a sales report, our search engine retrieves the exact information across all integrated systems. We integrate secure access controls, ensuring that employees can only search files they have permission to view. This drastically reduces time wasted searching for files and boosts overall enterprise productivity.",
+      "features": [
+        "Unified Search Across Multi-Systems",
+        "Semantic and Intent-Based Matching",
+        "Connector Library for Slack, Drive, SQL",
+        "Role-Based Search Access Control",
+        "Personalized Search Result Ranking",
+        "Advanced Query Analytics Dashboard",
+        "Auto-Autocomplete and Query Suggestion",
+        "Secure Local or Cloud Deployment"
+      ],
+      "benefits": [
+        "Locate information across all systems in under a second",
+        "Break down data silos across different departments",
+        "Improve productivity by eliminating manual document search",
+        "Ensure data privacy with granular permission mapping",
+        "Analyze search trends to discover knowledge gaps",
+        "Adapt dynamically to new corporate jargon and slang"
+      ],
+      "metaTitle": "Enterprise Search AI Solutions | Semantic Search | PakSoft",
+      "metaDescription": "Build unified, semantic AI search across Google Drive, Slack, databases, and internal tools. Secure, role-based, and extremely fast. Contact us.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Systems Audit",
+            "description": "We map out your company's active software tools, databases, cloud storage, and document permissions to design the search scope."
+          },
+          {
+            "step": 2,
+            "title": "Connector Configuration",
+            "description": "We configure APIs and secure webhooks to read data from Slack, Google Drive, databases, and intranets safely."
+          },
+          {
+            "step": 3,
+            "title": "Data Normalization & Indexing",
+            "description": "We clean, tokenize, and normalize text from various sources, indexing it into a centralized Elasticsearch cluster."
+          },
+          {
+            "step": 4,
+            "title": "Semantic Model Integration",
+            "description": "We deploy vector embedding models to capture context and intent, combining keyword and semantic search together."
+          },
+          {
+            "step": 5,
+            "title": "Security Mapping",
+            "description": "We synchronize your existing Active Directory or OAuth permissions so users only search files they have access to."
+          },
+          {
+            "step": 6,
+            "title": "Deployment & Optimization",
+            "description": "We launch the search bar, monitor query latency, and use user search analytics to continuously refine relevancy of results."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Which platforms can your search engine connect to?",
+            "answer": "We build connectors for popular tools like Google Drive, Slack, Jira, Confluence, Microsoft 365, SQL/NoSQL databases, and custom company intranets via secure APIs."
+          },
+          {
+            "question": "How does semantic search differ from keyword search?",
+            "answer": "Keyword search only matches exact words. Semantic search understands synonyms, context, and intent. For example, searching 'client refund' will find documents discussing 'customer return policy' or 'money-back terms'."
+          },
+          {
+            "question": "Can employees see files they don't have access to?",
+            "answer": "Absolutely not. We integrate with your existing identity provider (like Okta or Active Directory) to inherit file permissions, ensuring search results only show files the user is authorized to read."
+          },
+          {
+            "question": "Is the data copied to a third-party server?",
+            "answer": "No. We can deploy the search engine and vector databases entirely on your private cloud (AWS, Azure, GCP) or on-premise servers to maintain complete data ownership."
+          },
+          {
+            "question": "How fast are the search results returned?",
+            "answer": "Using optimized Elasticsearch and vector indexing, the system can search through millions of records across multiple platforms and return results in less than 500 milliseconds."
+          },
+          {
+            "question": "Does it update automatically when files change?",
+            "answer": "Yes. We set up real-time webhooks and incremental synchronization cron jobs so any newly created or edited file is indexed and searchable within minutes."
+          },
+          {
+            "question": "Can it search within images or scanned documents?",
+            "answer": "Yes, we integrate optical character recognition (OCR) pipelines to extract and index text from PDFs, scanned invoices, drawings, and images stored in your folders."
+          },
+          {
+            "question": "What analytical tools do you provide for search?",
+            "answer": "We provide an analytics dashboard showing popular search terms, failed queries (queries with no results), and search success rates to help you identify internal documentation gaps."
+          }
+        ],
+        "technologies": [
+          { "name": "Elasticsearch", "icon": "elasticsearch" },
+          { "name": "OpenAI API", "icon": "openai" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "REST APIs", "icon": "api" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "Python", "icon": "python" },
+          { "name": "Kubernetes", "icon": "kubernetes" },
+          { "name": "AWS", "icon": "aws" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Kurumsal Arama Yapay Zekası",
+      "shortDescription": "Tüm kurumsal veritabanlarınızda, bulutlarınızda ve uygulamalarınızda birleşik, yapay zeka destekli anlamsal arama. Tüm veri kaynaklarını tek bir güvenli pencerede bağlayın.",
+      "fullDescription": "Kurumsal bilgi genellikle e-posta, sohbet, bulut depolama ve veritabanlarına dağılmış durumdadır ve bulunması zordur. Tüm araçlarınızı tek bir birleşik arama arayüzünde bağlayan özel Kurumsal Arama Yapay Zekası çözümleri oluşturuyoruz. Anlamsal arama, gelişmiş vektör gömmeleri ve Elasticsearch kullanan sistemlerimiz, anahtar kelimeleri eşleştirmek yerine kullanıcının niyetini anlar. Bir kullanıcı ister teknik bir şartname, ister bir müşteri e-postası veya bir satış raporu arıyor olsun, arama motorumuz entegre tüm sistemlerde tam bilgiyi bulur. Çalışanların yalnızca görme iznine sahip oldukları dosyaları arayabilmelerini sağlamak için güvenli erişim kontrollerini entegre ediyoruz. Bu, dosya aramak için harcanan zamanı büyük ölçüde azaltır ve genel kurumsal verimliliği artırır.",
+      "features": [
+        "Çoklu Sistemler Arasında Birleşik Arama",
+        "Anlamsal ve Niyet Tabanlı Eşleştirme",
+        "Slack, Drive, SQL İçin Konnektör Kitaplığı",
+        "Rol Tabanlı Arama Erişim Kontrolü",
+        "Kişiselleştirilmiş Arama Sonucu Sıralaması",
+        "Gelişmiş Sorgu Analitiği Paneli",
+        "Otomatik Tamamlama ve Sorgu Önerisi",
+        "Güvenli Yerel veya Bulut Dağıtımı"
+      ],
+      "benefits": [
+        "Tüm sistemlerdeki bilgileri bir saniyenin altında bulun",
+        "Farklı departmanlar arasındaki veri silolarını ortadan kaldırın",
+        "Manuel belge aramayı ortadan kaldırarak verimliliği artırın",
+        "Ayrıntılı izin eşlemesi ile veri gizliliğini sağlayın",
+        "Bilgi açıklarını keşfetmek için arama eğilimlerini analiz edin",
+        "Yeni kurumsal terimlere ve sektörel jargonlara dinamik olarak uyum sağlayın"
+      ],
+      "metaTitle": "Kurumsal Arama Yapay Zekası | Arama Motoru | PakSoft",
+      "metaDescription": "Google Drive, Slack, veritabanları ve dahili araçlar arasında birleşik, anlamsal yapay zeka araması kurun. Güvenli, rol tabanlı ve son derece hızlı.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Sistem Denetimi",
+            "description": "Arama kapsamını tasarlamak için şirketinizin aktif yazılım araçlarını, veritabanlarını, bulut depolama alanlarını ve belge izinlerini haritalandırıyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Konnektör Yapılandırması",
+            "description": "Slack, Google Drive, veritabanları ve intranetlerden verileri güvenli bir şekilde okumak için API'leri ve güvenli web kancalarını yapılandırıyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Veri Normalleştirme & İndeksleme",
+            "description": "Çeşitli kaynaklardan gelen metinleri temizliyor, belirteçlere ayırıyor, normalleştiriyor ve merkezi bir Elasticsearch kümesinde indeksliyoruz."
+          },
+          {
+            "step": 4,
+            "title": "Anlamsal Model Entegrasyonu",
+            "description": "Anahtar kelime ve anlamsal aramayı bir arada birleştirmek, bağlamı ve niyeti yakalamak için vektör gömme modellerini uyguluyoruz."
+          },
+          {
+            "step": 5,
+            "title": "Güvenlik Eşleştirmesi",
+            "description": "Kullanıcıların yalnızca erişim iznine sahip oldukları dosyaları araması için mevcut Active Directory veya OAuth izinlerinizi senkronize ediyoruz."
+          },
+          {
+            "step": 6,
+            "title": "Yayına Alma & Optimizasyon",
+            "description": "Arama çubuğunu başlatıyor, sorgu gecikmesini izliyor ve sonuçların alakasını sürekli olarak geliştirmek için kullanıcı arama analitiğini kullanıyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Arama motorunuz hangi platformlara bağlanabilir?",
+            "answer": "Google Drive, Slack, Jira, Confluence, Microsoft 365, SQL/NoSQL veritabanları ve güvenli API'ler aracılığıyla özel şirket intranetleri gibi popüler araçlar için konnektörler oluşturuyoruz."
+          },
+          {
+            "question": "Anlamsal aramanın anahtar kelime aramasından farkı nedir?",
+            "answer": "Anahtar kelime araması yalnızca tam kelimeleri eşleştirir. Anlamsal arama ise eşanlamlıları, bağlamı ve niyeti anlar. Örneğin, 'müşteri iadesi' araması yapmak, 'para iade koşulları' veya 'iade politikası' konularını tartışan belgeleri de bulur."
+          },
+          {
+            "question": "Çalışanlar erişim izinleri olmayan dosyaları görebilir mi?",
+            "answer": "Kesinlikle hayır. Dosya izinlerini devralmak için mevcut kimlik sağlayıcınızla (Okta veya Active Directory gibi) entegre oluyoruz ve arama sonuçlarının yalnızca kullanıcının okuma yetkisi olan dosyaları göstermesini sağlıyoruz."
+          },
+          {
+            "question": "Veriler üçüncü taraf bir sunucuya kopyalanıyor mu?",
+            "answer": "Hayır. Tam veri sahipliğini korumak için arama motorunu ve vektör veritabanlarını tamamen özel bulutunuzda (AWS, Azure, GCP) veya yerel (on-premise) sunucularınızda barındırabiliriz."
+          },
+          {
+            "question": "Arama sonuçları ne kadar hızlı dönüyor?",
+            "answer": "Optimize edilmiş Elasticsearch ve vektör indeksleme kullanarak sistem, birden fazla platformdaki milyonlarca kayıt arasında arama yapabilir ve sonuçları 500 milisaniyeden daha kısa sürede döndürebilir."
+          },
+          {
+            "question": "Dosyalar değiştiğinde otomatik olarak güncelleniyor mu?",
+            "answer": "Evet. Gerçek zamanlı web kancaları ve artımlı senkronizasyon zamanlanmış görevleri (cron jobs) kuruyoruz; böylece yeni oluşturulan veya düzenlenen herhangi bir dosya dakikalar içinde indekslenir ve aranabilir hale gelir."
+          },
+          {
+            "question": "Görüntüler veya taranmış belgeler içinde arama yapabilir mi?",
+            "answer": "Evet, klasörlerinizde depolanan PDF'lerden, taranmış faturalardan, çizimlerden ve görüntülerden metin çıkarmak ve indekslemek için optik karakter tanıma (OCR) hatlarını entegre ediyoruz."
+          },
+          {
+            "question": "Arama için hangi analitik araçları sağlıyorsunuz?",
+            "answer": "Dahili belge eksikliklerini belirlemenize yardımcı olmak için popüler arama terimlerini, başarısız sorguları (sonuçsuz sorgular) ve arama başarı oranlarını gösteren bir analitik paneli sunuyoruz."
+          }
+        ],
+        "technologies": [
+          { "name": "Elasticsearch", "icon": "elasticsearch" },
+          { "name": "OpenAI API", "icon": "openai" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "REST APIs", "icon": "api" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "Python", "icon": "python" },
+          { "name": "Kubernetes", "icon": "kubernetes" },
+          { "name": "AWS", "icon": "aws" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Enterprise Search AI",
+      "shortDescription": "Einheitliche, KI-gestützte semantische Suche über alle Ihre Unternehmensdatenbanken, Clouds und Anwendungen hinweg. Verbinden Sie alle Datenquellen in einem sicheren Fenster.",
+      "fullDescription": "Unternehmenswissen ist oft über E-Mails, Chats, Cloud-Speicher und Datenbanken verstreut, was das Auffinden erschwert. Wir entwickeln maßgeschneiderte Enterprise Search AI-Lösungen, die alle Ihre Tools in einer einzigen, einheitlichen Suchoberfläche verbinden. Durch semantische Suche, fortschrittliche Vektor-Embeddings und Elasticsearch verstehen unsere Systeme die Absicht des Benutzers, anstatt nur Schlüsselwörter abzugleichen. Unabhängig davon, ob ein Benutzer nach einer technischen Spezifikation, einer Kunden-E-Mail oder einem Verkaufsbericht sucht, findet unsere Suchmaschine die genauen Informationen in allen integrierten Systemen. Wir integrieren sichere Zugriffskontrollen, um sicherzustellen, dass Mitarbeiter nur nach Dateien suchen können, für die sie eine Berechtigung besitzen. Dies reduziert den Zeitaufwand für die Dateisuche drastisch und steigert die Produktivität.",
+      "features": [
+        "Einheitliche Suche über mehrere Systeme",
+        "Semantischer und absichtsbasierter Abgleich",
+        "Konnektoren-Bibliothek (Slack, Drive, SQL)",
+        "Rollenbasierte Suchzugriffskontrolle",
+        "Personalisierte Suchergebnis-Rangliste",
+        "Dashboard für erweiterte Abfrageanalysen",
+        "Auto-Vervollständigung & Abfragevorschläge",
+        "Sichere lokale oder Cloud-Bereitstellung"
+      ],
+      "benefits": [
+        "Informationen in allen Systemen in unter einer Sekunde finden",
+        "Datensilos zwischen verschiedenen Abteilungen abbauen",
+        "Produktivität durch Wegfall der manuellen Dateisuche steigern",
+        "Datenschutz durch granulare Berechtigungszuweisung sichern",
+        "Suchtrends analysieren, um Wissenslücken aufzudecken",
+        "Dynamische Anpassung an neue Fachbegriffe im Unternehmen"
+      ],
+      "metaTitle": "Enterprise Search AI Lösungen | Semantische Suche | PakSoft",
+      "metaDescription": "Bauen Sie eine einheitliche, semantische KI-Suche über Google Drive, Slack, Datenbanken und interne Tools auf. Sicher, rollenbasiert und extrem schnell.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "System-Audit",
+            "description": "Wir erfassen die aktiven Software-Tools, Datenbanken, Cloud-Speicher und Dokumentenberechtigungen Ihres Unternehmens, um den Suchbereich zu entwerfen."
+          },
+          {
+            "step": 2,
+            "title": "Konnektor-Konfiguration",
+            "description": "Wir konfigurieren APIs und sichere Webhooks, um Daten aus Slack, Google Drive, Datenbanken und Intranets sicher auszulesen."
+          },
+          {
+            "step": 3,
+            "title": "Daten-Normalisierung & Indexierung",
+            "description": "Wir bereinigen, tokenisieren und normalisieren Text aus verschiedenen Quellen und indexieren ihn in einem zentralen Elasticsearch-Cluster."
+          },
+          {
+            "step": 4,
+            "title": "Integration semantischer Modelle",
+            "description": "Wir implementieren Vektor-Embedding-Modelle, um Kontext und Absicht zu erfassen und Keyword- und semantische Suche zu kombinieren."
+          },
+          {
+            "step": 5,
+            "title": "Sicherheits-Mapping",
+            "description": "Wir synchronisieren Ihr bestehendes Active Directory oder Ihre OAuth-Berechtigungen, damit Benutzer nur berechtigte Dateien durchsuchen können."
+          },
+          {
+            "step": 6,
+            "title": "Bereitstellung & Optimierung",
+            "description": "Wir starten die Suchleiste, überwachen die Latenzzeiten und nutzen Suchanalysen, um die Relevanz der Ergebnisse kontinuierlich zu verbessern."
+          }
+        ],
+        "faq": [
+          {
+            "question": "An welche Plattformen kann Ihre Suchmaschine angebunden werden?",
+            "answer": "Wir erstellen Konnektoren für gängige Tools wie Google Drive, Slack, Jira, Confluence, Microsoft 365, SQL/NoSQL-Datenbanken und maßgeschneiderte Unternehmens-Intranets über sichere APIs."
+          },
+          {
+            "question": "Wie unterscheidet sich die semantische Suche von der Keyword-Suche?",
+            "answer": "Die Keyword-Suche gleicht nur exakte Wörter ab. Die semantische Suche versteht Synonyme, Kontext und Absicht. Die Suche nach 'Rückerstattung' findet beispielsweise auch Dokumente zu 'Geld-zurück-Garantie' oder 'Rückgaberecht'."
+          },
+          {
+            "question": "Können Mitarbeiter Dateien sehen, auf die sie keinen Zugriff haben?",
+            "answer": "Auf keinen Fall. Wir integrieren uns in Ihren bestehenden Identity Provider (wie Okta oder Active Directory), um Berechtigungen zu übernehmen und sicherzustellen, dass Suchergebnisse nur autorisierte Dateien anzeigen."
+          },
+          {
+            "question": "Werden die Daten auf einen Drittserver kopiert?",
+            "answer": "Nein. Wir können die Suchmaschine und die Vektordatenbanken vollständig in Ihrer privaten Cloud (AWS, Azure, GCP) oder auf On-Premise-Servern bereitstellen, um die volle Datenhoheit zu behalten."
+          },
+          {
+            "question": "Wie schnell werden die Suchergebnisse zurückgegeben?",
+            "answer": "Durch optimiertes Elasticsearch und Vektorindexierung kann das System Millionen von Datensätzen auf mehreren Plattformen durchsuchen und Ergebnisse in weniger als 500 Millisekunden liefern."
+          },
+          {
+            "question": "Aktualisiert sich die Suche automatisch, wenn sich Dateien ändern?",
+            "answer": "Ja. Wir richten Echtzeit-Webhooks und inkrementelle Synchronisations-Cron-Jobs ein, sodass jede neu erstellte oder bearbeitete Datei innerhalb von Minuten indexiert und durchsuchbar ist."
+          },
+          {
+            "question": "Kann die Suche auch in Bildern oder gescannten Dokumenten suchen?",
+            "answer": "Ja, wir integrieren OCR-Pipelines (Optical Character Recognition), um Text aus PDFs, gescannten Rechnungen, Zeichnungen und Bildern zu extrahieren und zu indexieren."
+          },
+          {
+            "question": "Welche Analysetools stellen Sie für die Suche bereit?",
+            "answer": "Wir bieten ein Dashboard an, das beliebte Suchbegriffe, fehlgeschlagene Abfragen und die Sucherfolgsquote anzeigt, um Wissenslücken in Ihrer Dokumentation aufzudecken."
+          }
+        ],
+        "technologies": [
+          { "name": "Elasticsearch", "icon": "elasticsearch" },
+          { "name": "OpenAI API", "icon": "openai" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "REST APIs", "icon": "api" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "Python", "icon": "python" },
+          { "name": "Kubernetes", "icon": "kubernetes" },
+          { "name": "AWS", "icon": "aws" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "انٹرپرائز سرچ اے آئی",
+      "shortDescription": "آپ کے تمام کاروباری ڈیٹا بیسز، کلاؤڈز اور ایپلی کیشنز میں ایک ہی محفوظ ونڈو میں مربوط، اے آئی سے چلنے والی انوکھی سمانٹک سرچ۔",
+      "fullDescription": "انٹرپرائز کی معلومات اکثر ای میل، چیٹ، کلاؤڈ اسٹوریج، اور ڈیٹا بیسز میں بکھری ہوتی ہیں، جس سے ان کا تلاش کرنا مشکل ہو جاتا ہے۔ ہم کسٹم انٹرپرائز سرچ اے آئی سلوشنز بناتے ہیں جو آپ کے تمام ٹولز کو ایک ہی سرچ انٹرفیس میں جوڑ دیتے ہیں۔ سمانٹک سرچ، جدید ویکٹر ایمبیڈنگز اور Elasticsearch کا استعمال کرتے ہوئے، ہمارے سسٹمز محض الفاظ کے ملاپ کے بجائے صارف کے ارادے اور مقصد کو سمجھتے ہیں۔ چاہے صارف کوئی تکنیکی وضاحت تلاش کر رہا ہو، کلائنٹ کی ای میل، یا سیلز رپورٹ، ہمارا سرچ انجن تمام مربوط سسٹمز سے درست معلومات نکال لاتا ہے۔ ہم رسائی کے سیکیورٹی کنٹرولز فراہم کرتے ہیں، تاکہ ملازمین صرف وہی فائلیں تلاش کر سکیں جن کو دیکھنے کی ان کے پاس اجازت ہے۔ یہ دستاویزات کی تلاش میں ضائع ہونے والے وقت کو بچاتا ہے۔",
+      "features": [
+        "کثیر سسٹمز میں مربوط تلاش",
+        "سمانٹک اور مقصد پر مبنی سرچ ملاپ",
+        "سلیک، گوگل ڈرائیو اور ایس کیو ایل کنکٹرز",
+        "رول پر مبنی رسائی کنٹرول سیکیورٹی",
+        "ذاتی نوعیت کے نتائج کی درجہ بندی",
+        "جدید سرچ اینالیٹکس ڈیش بورڈ",
+        "آٹو کمپلیٹ اور تلاش کے مشورے",
+        "محفوظ لوکل یا کلاؤڈ ہوسٹنگ سہولت"
+      ],
+      "benefits": [
+        "سیکنڈ سے بھی کم وقت میں تمام سسٹمز سے معلومات تلاش کریں",
+        "مختلف محکموں کے درمیان معلومات کے فرق کو ختم کریں",
+        "دستی دستاویزات کی تلاش کو ختم کر کے کارکردگی بڑھائیں",
+        "سخت اجازت ناموں کے ساتھ ڈیٹا پرائیویسی کو یقینی بنائیں",
+        "اندرونی معلومات کے خلا کو سمجھنے کے لیے سرچ رجحانات جانیں",
+        "نئی کاروباری اصطلاحات کے مطابق خود کو خود کار ڈھالیں"
+      ],
+      "metaTitle": "انٹرپرائز سرچ اے آئی سلوشنز | سمانٹک سرچ | PakSoft",
+      "metaDescription": "گوگل ڈرائیو، سلیک، ڈیٹا بیسز اور دیگر ٹولز میں مربوط، سمانٹک اے آئی سرچ بنائیں۔ محفوظ، تیز اور رول پر مبنی رسائی۔ رابطہ کریں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "سسٹمز کا آڈٹ",
+            "description": "ہم کمپنی کے فعال سافٹ ویئر ٹولز، ڈیٹا بیسز، کلاؤڈ اسٹوریج اور فائلوں کی اجازتوں کا تجزیہ کرتے ہیں تاکہ تلاش کا دائرہ کار ڈیزائن کیا جا سکے۔"
+          },
+          {
+            "step": 2,
+            "title": "کونیکٹرز کی تشکیل",
+            "description": "ہم سلیک، گوگل ڈرائیو، ڈیٹا بیسز اور دیگر ذرائع سے محفوظ طریقے سے ڈیٹا حاصل کرنے کے لیے APIs کو ترتیب دیتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "ڈیٹا نارملائزیشن اور انڈیکسنگ",
+            "description": "ہم مختلف ذرائع سے حاصل کردہ ڈیٹا کو صاف اور درست کر کے مرکزی Elasticsearch کلسٹر میں انڈیکس کرتے ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "سمانٹک ماڈل انٹیگریشن",
+            "description": "ہم تلاش کے ارادے کو سمجھنے کے لیے ویکٹر ایمبیڈنگ ماڈلز نافذ کرتے ہیں جو عام الفاظ اور سمانٹک سرچ کو یکجا کرتے ہیں۔"
+          },
+          {
+            "step": 5,
+            "title": "سیکیورٹی میپنگ",
+            "description": "ہم آپ کی ایکٹو ڈائریکٹری یا OAuth اجازتوں کو سنکرونائز کرتے ہیں تاکہ ملازمین صرف وہی فائلیں تلاش کر سکیں جن کی انہیں اجازت حاصل ہے۔"
+          },
+          {
+            "step": 6,
+            "title": "لانچ اور اصلاح",
+            "description": "ہم سرچ بار کو فعال کرتے ہیں، کارکردگی اور رفتار کی نگرانی کرتے ہیں اور نتائج کی درستگی کو بہتر بناتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "آپ کا سرچ انجن کن پلیٹ فارمز سے جڑ سکتا ہے؟",
+            "answer": "ہم مقبول ٹولز جیسے کہ گوگل ڈرائیو، سلیک، جیرا، کنفلوئنس، مائیکروسافٹ 365، SQL/NoSQL ڈیٹا بیسز، اور کسٹم کمپنی انٹرا نیٹس کے لیے محفوظ APIs کے ذریعے کنیکٹرز بناتے ہیں۔"
+          },
+          {
+            "question": "سمانٹک سرچ اور کی ورڈ سرچ میں کیا فرق ہے؟",
+            "answer": "کی ورڈ سرچ صرف عین الفاظ کا ملاپ کرتی ہے۔ جبکہ سمانٹک سرچ مترادفات، سیاق و سباق اور ارادے کو سمجھتی ہے۔ مثال کے طور پر 'کسٹمر ریفنڈ' سرچ کرنے سے وہ دستاویزات بھی مل جائیں گی جن میں 'رقم کی واپسی کی شرائط' کا ذکر ہو گا۔"
+          },
+          {
+            "question": "کیا ملازمین وہ فائلیں دیکھ سکتے ہیں جن کی ان کے پاس اجازت نہیں ہے؟",
+            "answer": "بالکل نہیں۔ ہم فائل کی اجازتوں کو برقرار رکھنے کے لیے آپ کے موجودہ شناختی فراہم کنندہ (جیسے Okta یا Active Directory) کے ساتھ مربوط ہوتے ہیں، تاکہ سرچ کے نتائج میں صرف وہی فائلیں نظر آئیں جنہیں دیکھنے کا صارف مجاز ہے۔"
+          },
+          {
+            "question": "کیا ڈیٹا کسی تیسرے فریق کے سرور پر کاپی کیا جاتا ہے؟",
+            "answer": "نہیں، ڈیٹا کے مالکانہ حقوق برقرار رکھنے کے لیے ہم سرچ انجن اور ویکٹر ڈیٹا بیسز کو مکمل طور پر آپ کے نجی کلاؤڈ (AWS, Azure, GCP) یا کمپنی کے اپنے لوکل سرورز پر انسٹال کر سکتے ہیں۔"
+          },
+          {
+            "question": "تلاش کے نتائج کتنی تیزی سے حاصل ہوتے ہیں؟",
+            "answer": "بہترین بنائی گئی Elasticsearch اور ویکٹر انڈیکسنگ کی مدد سے، یہ سسٹم مختلف پلیٹ فارمز پر موجود لاکھوں ریکارڈز کو اسکین کر کے 500 ملی سیکنڈ سے بھی کم وقت میں نتائج پیش کر دیتا ہے۔"
+          },
+          {
+            "question": "کیا فائلز میں تبدیلی پر سرچ خود بخود اپ ڈیٹ ہو جاتی ہے؟",
+            "answer": "جی ہاں۔ ہم ریئل ٹائم ویب ہکس اور سنکرونائزیشن شیڈولز سیٹ کرتے ہیں تاکہ کوئی بھی نئی یا تبدیل شدہ فائل چند منٹوں میں سرچ میں شامل ہو جائے۔"
+          },
+          {
+            "question": "کیا یہ تصاویر یا اسکین شدہ دستاویزات کے اندر بھی سرچ کر سکتا ہے؟",
+            "answer": "جی ہاں، ہم پی ڈی ایف، اسکین شدہ بلوں، اور تصاویر سے متنی مواد نکال کر انڈیکس کرنے کے لیے او سی آر (OCR) سسٹم کو مربوط کرتے ہیں۔"
+          },
+          {
+            "question": "آپ سرچ کی کارکردگی جاننے کے لیے کیا تجزیاتی ٹولز فراہم کرتے ہیں؟",
+            "answer": "ہم ایک اینالیٹکس ڈیش بورڈ فراہم کرتے ہیں جو اکثر سرچ کیے جانے والے الفاظ اور ناکام سرچز (جن کا کوئی نتیجہ نہ نکلا ہو) دکھاتا ہے، جس سے آپ کو کمپنی کے معلوماتی ریکارڈز کو بہتر بنانے میں مدد ملتی ہے۔"
+          }
+        ],
+        "technologies": [
+          { "name": "Elasticsearch", "icon": "elasticsearch" },
+          { "name": "OpenAI API", "icon": "openai" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "REST APIs", "icon": "api" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "Python", "icon": "python" },
+          { "name": "Kubernetes", "icon": "kubernetes" },
+          { "name": "AWS", "icon": "aws" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "البحث الذكي للمؤسسات",
+      "shortDescription": "بحث دلالي موحد مدعوم بالذكاء الاصطناعي عبر جميع قواعد بيانات شركتك وسحاباتها وتطبيقاتها. اربط جميع مصادر البيانات في نافذة آمنة واحدة.",
+      "fullDescription": "غالباً ما تكون المعرفة التشغيلية للمؤسسة مشتتة بين البريد الإلكتروني والمحادثات والتخزين السحابي وقواعد البيانات، مما يجعل العثور عليها صعباً للغاية. نحن نبني حلولاً مخصصة للبحث الذكي للمؤسسات التي تربط جميع أدواتك في واجهة بحث موحدة وديناميكية واحدة. باستخدام البحث الدلالي والتمثيلات المتجهة المتقدمة ومحرك Elasticsearch، تفهم أنظمتنا نية المستخدم بدلاً من مطابقة الكلمات الرئيسية فقط. سواء كان المستخدم يبحث عن مواصفات فنية أو بريد عميل أو تقرير مبيعات، فإن محركنا يسترجع المعلومات الصحيحة من جميع الأنظمة المدمجة. نقوم بدمج ضوابط الوصول الآمنة لضمان ألا يتمكن الموظفون إلا من البحث في الملفات التي لديهم إذن صريح بعرضها، مما يعزز الإنتاجية العامة.",
+      "features": [
+        "بحث موحد متكامل عبر أنظمة متعددة",
+        "مطابقة دلالية مبنية على السياق والنية",
+        "مكتبة موصلات كاملة (Slack, Drive, SQL)",
+        "تحكم صارم في صلاحيات الوصول للبحث",
+        "ترتيب مخصص ومبسط لنتائج البحث المعروضة",
+        "لوحة تحليلات متقدمة لعمليات البحث والاستعلام",
+        "الإكمال التلقائي الذكي واقتراحات البحث المتنوعة",
+        "نشر سحابي آمن أو محلي بالكامل للبيانات"
+      ],
+      "benefits": [
+        "تحديد موقع المعلومات عبر جميع الأنظمة في أقل من ثانية",
+        "القضاء على جزر البيانات المنعزلة بين أقسام الشركة",
+        "تحسين الإنتاجية عن طريق إلغاء البحث اليدوي عن المستندات",
+        "ضمان خصوصية البيانات من خلال ربط الصلاحيات الحالية",
+        "تحليل اتجاهات البحث لتحديد مجالات نقص المعلومات",
+        "التكيف ديناميكياً مع المصطلحات والصيغ الجديدة للشركة"
+      ],
+      "metaTitle": "حلول البحث الذكي للمؤسسات | بحث دلالي | PakSoft",
+      "metaDescription": "ابنِ نظام بحث موحد ودلالي بالذكاء الاصطناعي عبر Google Drive و Slack وقواعد البيانات. آمن، ويعتمد على الصلاحيات وسريع للغاية.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تدقيق الأنظمة",
+            "description": "نقوم بمسح وتحديد أدوات البرمجيات النشطة لشركتك وقواعد البيانات والتخزين السحابي وأذونات الملفات لتصميم نطاق البحث."
+          },
+          {
+            "step": 2,
+            "title": "إعداد وتكوين الموصلات",
+            "description": "نعد واجهات برمجة التطبيقات وخطافات الويب (Webhooks) الآمنة لقراءة البيانات من Slack و Google Drive وقواعد البيانات بأمان."
+          },
+          {
+            "step": 3,
+            "title": "تنظيف وفهرسة البيانات",
+            "description": "نقوم بتنظيف النصوص وتحويلها إلى رموز مميزة وتوحيدها من مصادر مختلفة، وفهرستها في مجموعة Elasticsearch مركزية."
+          },
+          {
+            "step": 4,
+            "title": "تكامل النموذج الدلالي",
+            "description": "ننشر نماذج تمثيل متجهي لالتقاط السياق والنية، مع دمج البحث عن الكلمات الرئيسية والبحث الدلالي معاً."
+          },
+          {
+            "step": 5,
+            "title": "ربط ومزامنة الأمان",
+            "description": "نظامن البحث مع أذونات Active Directory أو OAuth الحالية لضمان ألا تظهر نتائج البحث إلا ما يحق للمستخدم رؤيته."
+          },
+          {
+            "step": 6,
+            "title": "النشر والتحسين المستمر",
+            "description": "نطلق شريط البحث للمستخدمين، ونراقب سرعة الاستعلامات، ونستخدم التحليلات لتحسين وتعديل صلة النتائج بمرور الوقت."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما هي المنصات التي يمكن لمحرك البحث الاتصال بها؟",
+            "answer": "نقوم ببناء موصلات للأدوات الشائعة مثل Google Drive و Slack و Jira و Confluence و Microsoft 365 وقواعد بيانات SQL/NoSQL، بالإضافة إلى بوابات الإنترانت الخاصة بالشركة عبر واجهات برمجة تطبيقات آمنة."
+          },
+          {
+            "question": "كيف يختلف البحث الدلالي عن البحث بالكلمات الرئيسية؟",
+            "answer": "يطابق البحث بالكلمات الرئيسية الكلمات المحددة فقط. بينما يفهم البحث الدلالي المرادفات والسياق والنية. على سبيل المثال، فإن البحث عن 'استرداد أموال العميل' سيعثر على المستندات التي تتحدث عن 'سياسة الإرجاع' أو 'شروط رد المبالغ المدفوعة'."
+          },
+          {
+            "question": "هل يمكن للموظفين رؤية ملفات ليس لديهم إذن للوصول إليها؟",
+            "answer": "بالتأكيد لا. نحن نتكامل مع موفر الهوية الحالي لديك (مثل Okta أو Active Directory) لوراثة أذونات الملفات، مما يضمن أن نتائج البحث تعرض فقط الملفات المصرح للمستخدم بقراءتها."
+          },
+          {
+            "question": "هل يتم نسخ البيانات إلى خادم طرف ثالث؟",
+            "answer": "لا. يمكننا نشر محرك البحث وقواعد البيانات المتجهة بالكامل على سحابتك الخاصة (AWS, Azure, GCP) أو خوادمك المحلية للحفاظ على الملكية الكاملة للبيانات."
+          },
+          {
+            "question": "ما هي سرعة إرجاع نتائج البحث؟",
+            "answer": "باستخدام Elasticsearch المحسن والفهرسة المتجهة، يمكن للنظام البحث في ملايين السجلات عبر منصات متعددة وإرجاع النتائج في أقل من 500 مللي ثانية."
+          },
+          {
+            "question": "هل يتحدث محرك البحث تلقائياً عند تغيير الملفات؟",
+            "answer": "نعم. نقوم بإعداد خطافات الويب (Webhooks) في الوقت الفعلي ووظائف المزامنة التلقائية الدورية بحيث يتم فهرسة أي ملف جديد أو معدل ويكون قابلاً للبحث في غضون دقائق."
+          },
+          {
+            "question": "هل يمكنه البحث داخل الصور أو المستندات الممسوحة ضوئياً؟",
+            "answer": "نعم، نحن ندمج مسارات التعرف الضوئي على الحروف (OCR) لاستخراج وفهرسة النصوص من ملفات PDF والفواتير الممسوحة ضوئياً والمخططات والصور المخزنة في مجلداتك."
+          },
+          {
+            "question": "ما هي الأدوات التحليلية التي تقدمونها للبحث؟",
+            "answer": "نحن نقدم لوحة تحكم تحليلية تعرض مصطلحات البحث الشائعة، والاستعلامات الفاشلة (التي لم تسفر عن نتائج)، ومعدلات نجاح البحث لمساعدتك على تحديد فجوات الوثائق الداخلية."
+          }
+        ],
+        "technologies": [
+          { "name": "Elasticsearch", "icon": "elasticsearch" },
+          { "name": "OpenAI API", "icon": "openai" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "REST APIs", "icon": "api" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "Python", "icon": "python" },
+          { "name": "Kubernetes", "icon": "kubernetes" },
+          { "name": "AWS", "icon": "aws" }
+        ]
+      }
+    }
+  }
+}

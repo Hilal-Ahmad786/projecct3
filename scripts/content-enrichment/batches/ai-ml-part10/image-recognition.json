@@ -1,0 +1,638 @@
+{
+  "slug": "image-recognition",
+  "en": {
+    "name": "Image Recognition",
+    "shortDescription": "Identify objects, scenes, faces, and text in images with high precision. We build custom computer vision models to automate visual classification and search workflows.",
+    "fullDescription": "Manual inspection of visual assets or real-world images is slow and prone to errors. We design and build custom Image Recognition solutions that automate visual analysis for e-commerce, manufacturing, and security applications. Utilizing advanced deep learning frameworks like PyTorch and TensorFlow, alongside custom YOLO and OpenCV pipelines, we train models to detect specific objects, classify images by category, perform facial recognition, and extract text via OCR. We tune our models to achieve high accuracy and minimal latency, preparing them for cloud deployment or edge processing on IoT devices. From identifying defects on production lines to auto-tagging product catalogs, our image recognition engines scale your business operations visually.",
+    "features": [
+      "Object Detection & Image Classification",
+      "Real-Time Scene & Pattern Understanding",
+      "Custom Model Training & Transfer Learning",
+      "Facial Detection and Matching Systems",
+      "High-Accuracy OCR & Data Extraction",
+      "Low-Latency Edge AI & IoT Deployment",
+      "Flexible API Wrapper and Cloud Integration",
+      "Automatic Visual Search Indexing Systems"
+    ],
+    "benefits": [
+      "Automate visual inspections and quality check tasks",
+      "Reduce catalog tagging time from days to seconds",
+      "Enhance security with fast facial recognition checks",
+      "Process visual assets at scale in real time",
+      "Minimize operational costs using low-power edge AI devices",
+      "Improve data entry speed through automated visual extraction"
+    ],
+    "metaTitle": "Custom Image Recognition Services | AI Vision | PakSoft",
+    "metaDescription": "Build custom image recognition and classification solutions. We train YOLO and PyTorch models for defect detection, tagging, and search. Contact us.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Use Case Assessment",
+          "description": "We analyze your visual data, lighting conditions, and target categories to select the best camera hardware and model types."
+        },
+        {
+          "step": 2,
+          "title": "Dataset Preparation",
+          "description": "We collect, clean, and annotate target images using bounding boxes or segmentation masks to build high-quality training sets."
+        },
+        {
+          "step": 3,
+          "title": "Model Selection & Custom Training",
+          "description": "We choose appropriate neural network architectures and train them using PyTorch, optimizing parameters to prevent overfitting."
+        },
+        {
+          "step": 4,
+          "title": "Inference Optimization",
+          "description": "We convert trained models into TensorRT or ONNX formats to maximize frame rate and reduce processing latency."
+        },
+        {
+          "step": 5,
+          "title": "System Integration",
+          "description": "We wrap the model in a microservice API and connect it to your database, CMS, or security system cameras."
+        },
+        {
+          "step": 6,
+          "title": "Deployment & Monitoring",
+          "description": "We deploy the vision pipeline to the cloud or edge devices, tracking accuracy and setting up logs for model improvements."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the difference between image recognition and object detection?",
+          "answer": "Image recognition identifies the overall category of an image (e.g., 'car'). Object detection identifies individual items in an image and provides their exact locations using coordinate bounding boxes."
+        },
+        {
+          "question": "How much labeled data do we need to train a model?",
+          "answer": "For simple object detection, we usually need 500 to 1,000 labeled images per category. For highly complex inspections, we utilize transfer learning to achieve high accuracy with smaller datasets."
+        },
+        {
+          "question": "Can image recognition run locally on-premise?",
+          "answer": "Yes, we can deploy models on local servers with NVIDIA GPUs or on compact edge hardware like NVIDIA Jetson devices to run offline without internet connectivity."
+        },
+        {
+          "question": "How accurate can the system get?",
+          "answer": "Under consistent lighting and camera angles, our custom-trained models routinely achieve over 95% classification and detection accuracy, exceeding typical human inspection rates."
+        },
+        {
+          "question": "How long does it take to train and deploy a model?",
+          "answer": "A standard project with custom training and system integration takes 6 to 10 weeks, depending on data availability and the complexity of target categories."
+        },
+        {
+          "question": "Can the system read text from images?",
+          "answer": "Yes, we integrate OCR technology alongside image recognition to locate, read, and extract text from labels, signs, invoices, and documents automatically."
+        },
+        {
+          "question": "Do you support video stream analysis?",
+          "answer": "Yes, we build video analytics pipelines using OpenCV and deep learning models that process real-time RTSP camera streams at 30+ frames per second."
+        },
+        {
+          "question": "How do you handle changes in visual items over time?",
+          "answer": "We build continuous learning pipelines. If a new product variant is introduced, we add a small batch of images to the dataset and retrain the model."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "PyTorch",
+          "icon": "pytorch"
+        },
+        {
+          "name": "TensorFlow",
+          "icon": "tensorflow"
+        },
+        {
+          "name": "YOLO",
+          "icon": "yolo"
+        },
+        {
+          "name": "OpenCV",
+          "icon": "opencv"
+        },
+        {
+          "name": "TensorRT",
+          "icon": "tensorrt"
+        },
+        {
+          "name": "AWS Rekognition",
+          "icon": "aws"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Görüntü Tanıma",
+    "shortDescription": "Görsellerdeki nesneleri, sahneleri, yüzleri ve metinleri yüksek hassasiyetle tanımlayın. Görsel sınıflandırma ve arama iş akışlarını otomatikleştirmek için özel bilgisayarlı görü modelleri oluşturuyoruz.",
+    "fullDescription": "Görsel varlıkların veya gerçek dünya görüntülerinin manuel olarak incelenmesi yavaştır ve hatalara açıktır. E-ticaret, üretim ve güvenlik uygulamaları için görsel analizleri otomatikleştiren özel Görüntü Tanıma çözümleri tasarlıyor ve oluşturuyoruz. PyTorch ve TensorFlow gibi gelişmiş derin öğrenme çerçevelerinin yanı sıra özel YOLO ve OpenCV veri hatlarını kullanarak, modelleri belirli nesneleri tespit etmek, görselleri kategorilere göre sınıflandırmak, yüz tanıma gerçekleştirmek ve OCR yoluyla metin çıkarmak üzere eğitiyoruz. Modellerimizi yüksek doğruluk ve minimum gecikme süresi elde edecek şekilde optimize ederek bulut dağıtımına veya IoT cihazlarında uç (edge) işlemeye hazırlıyoruz. Üretim hatlarındaki kusurları belirlemekten ürün kataloglarını otomatik etiketlemeye kadar, görüntü tanıma motorlarımız iş süreçlerinizi görsel olarak ölçeklendirir.",
+    "features": [
+      "Nesne Tespiti ve Görüntü Sınıflandırma",
+      "Gerçek Zamanlı Sahne ve Örüntü Anlama",
+      "Özel Model Eğitimi ve Aktarımlı Öğrenme",
+      "Yüz Algılama ve Eşleştirme Sistemleri",
+      "Yüksek Hassasiyetli OCR ve Veri Çıkarımı",
+      "Düşük Gecikmeli Edge AI ve IoT Dağıtımı",
+      "Esnek API Sarmalayıcı ve Bulut Entegrasyonu",
+      "Otomatik Görsel Arama İndeksleme Sistemleri"
+    ],
+    "benefits": [
+      "Görsel incelemeleri ve kalite kontrol görevlerini otomatikleştirin",
+      "Katalog etiketleme süresini günlerden saniyelere indirin",
+      "Hızlı yüz tanıma kontrolleriyle güvenliği artırın",
+      "Görsel varlıkları gerçek zamanlı olarak ölçekli bir şekilde işleyin",
+      "Düşük güçlü edge AI cihazları kullanarak operasyonel maliyetleri en aza indirin",
+      "Otomatik görsel çıkarım yoluyla veri giriş hızını artırın"
+    ],
+    "metaTitle": "Özel Görüntü Tanıma Hizmetleri | AI Vision | PakSoft",
+    "metaDescription": "Özel görüntü tanıma ve sınıflandırma çözümleri oluşturun. Kusur tespiti, etiketleme ve arama için YOLO ve PyTorch modelleri eğitiyoruz. Bizimle iletişime geçin.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Kullanım Durumu Değerlendirmesi",
+          "description": "En iyi kamera donanımını ve model türlerini seçmek için görsel verilerinizi, aydınlatma koşullarını ve hedef kategorileri analiz ediyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Veri Kümesi Hazırlığı",
+          "description": "Yüksek kaliteli eğitim setleri oluşturmak için hedef görselleri sınırlayıcı kutular (bounding boxes) veya bölümleme maskeleri kullanarak topluyor, temizliyor ve etiketliyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Model Seçimi ve Özel Eğitim",
+          "description": "Uygun sinir ağı mimarilerini seçiyor ve aşırı öğrenmeyi (overfitting) önlemek için parametreleri optimize ederek PyTorch kullanarak eğitiyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Çıkarım Optimizasyonu",
+          "description": "Kare hızını (FPS) en üst düzeye çıkarmak ve işlem gecikmesini azaltmak için eğitilmiş modelleri TensorRT veya ONNX formatlarına dönüştürüyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Sistem Entegrasyonu",
+          "description": "Modeli bir mikro hizmet API'si ile sarmalıyor ve veritabanınıza, CMS'nize veya güvenlik sistemi kameralarınıza bağlıyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Yayına Alma ve İzleme",
+          "description": "Görüntü işleme hattını buluta veya uç cihazlara dağıtıyor, doğruluğu izliyor ve model geliştirmeleri için günlükler ayarlıyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Görüntü tanıma ile nesne tespiti arasındaki fark nedir?",
+          "answer": "Görüntü tanıma bir görselin genel kategorisini tanımlar (örneğin, 'araba'). Nesne tespiti ise görseldeki tek tek öğeleri belirler ve koordinat kutuları kullanarak bunların tam konumlarını sağlar."
+        },
+        {
+          "question": "Bir modeli eğitmek için ne kadar etiketli veriye ihtiyacımız var?",
+          "answer": "Basit nesne tespiti için genellikle kategori başına 500 ila 1.000 etiketli görsel gerekir. Çok karmaşık denetimler için, daha küçük veri kümeleriyle yüksek doğruluk elde etmek üzere aktarımlı öğrenme (transfer learning) kullanıyoruz."
+        },
+        {
+          "question": "Görüntü tanıma yerel olarak (on-premise) çalışabilir mi?",
+          "answer": "Evet, internet bağlantısı olmadan çevrimdışı çalışabilmek için modelleri NVIDIA GPU'lu yerel sunucularda veya NVIDIA Jetson gibi kompakt uç donanımlarda barındırabiliriz."
+        },
+        {
+          "question": "Sistem ne kadar doğru çalışabilir?",
+          "answer": "Tutarlı aydınlatma ve kamera açısı altında, özel olarak eğitilmiş modellerimiz rutin olarak %95'in üzerinde sınıflandırma ve tespit doğruluğuna ulaşarak standart insan denetim oranlarını aşar."
+        },
+        {
+          "question": "Bir modeli eğitmek ve yayına almak ne kadar sürer?",
+          "answer": "Özel eğitim ve sistem entegrasyonuna sahip standart bir proje, veri kullanılabilirliğine ve hedef kategorilerin karmaşıklığına bağlı olarak 6 ila 10 hafta sürer."
+        },
+        {
+          "question": "Sistem görsellerdeki metinleri okuyabilir mi?",
+          "answer": "Evet, etiketlerden, tabelalardan, faturalardan ve belgelerden metinleri otomatik olarak bulmak, okumak ve çıkarmak için görüntü tanımanın yanı sıra OCR teknolojisini de entegre ediyoruz."
+        },
+        {
+          "question": "Video akışı analizini destekliyor musunuz?",
+          "answer": "Evet, saniyede 30 kare ve üzeri hızlarda gerçek zamanlı RTSP kamera akışlarını işleyen OpenCV ve derin öğrenme modellerini kullanan video analitiği veri hatları kuruyoruz."
+        },
+        {
+          "question": "Görsel öğeler zamanla değiştiğinde bunu nasıl yönetiyorsunuz?",
+          "answer": "Sürekli öğrenme hatları kuruyoruz. Yeni bir ürün varyasyonu eklendiğinde, veri kümesine küçük bir grup yeni görsel ekliyor ve modeli yeniden eğitiyoruz."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "PyTorch",
+          "icon": "pytorch"
+        },
+        {
+          "name": "TensorFlow",
+          "icon": "tensorflow"
+        },
+        {
+          "name": "YOLO",
+          "icon": "yolo"
+        },
+        {
+          "name": "OpenCV",
+          "icon": "opencv"
+        },
+        {
+          "name": "TensorRT",
+          "icon": "tensorrt"
+        },
+        {
+          "name": "AWS Rekognition",
+          "icon": "aws"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Bilderkennung",
+    "shortDescription": "Identifizieren Sie Objekte, Szenen, Gesichter und Text in Bildern mit hoher Präzision. Wir bauen maßgeschneiderte Computer-Vision-Modelle für automatisierte Klassifizierung.",
+    "fullDescription": "Die manuelle Überprüfung von Bildern oder visuellen Assets ist zeitaufwändig und fehleranfällig. Wir entwerfen und bauen maßgeschneiderte Bilderkennungslösungen, die visuelle Analysen für E-Commerce, Fertigung und Sicherheitssysteme automatisieren. Unter Verwendung moderner Deep-Learning-Frameworks wie PyTorch und TensorFlow sowie YOLO und OpenCV trainieren wir Modelle zur Erkennung spezifischer Objekte, zur Klassifizierung von Bildern nach Kategorien, zur Gesichtserkennung und zur Textextraktion mittels OCR. Wir optimieren unsere Modelle für maximale Genauigkeit und minimale Latenzzeiten auf Cloud-Systemen oder Edge-Hardware (IoT). Von der automatisierten Fehlererkennung in der Produktion bis zur automatischen Verschlagwortung von Produktkatalogen skalieren unsere Bilderkennungs-Systeme Ihre Prozesse.",
+    "features": [
+      "Objekterkennung & Bildklassifizierung",
+      "Szenen- und Mustererkennung in Echtzeit",
+      "Custom Model Training & Transfer Learning",
+      "Gesichtserkennungs- und Abgleichsysteme",
+      "Präzise Textextraktion (OCR)",
+      "Edge-AI- & IoT-Deployment mit geringer Latenz",
+      "Flexible API-Wrapper & Cloud-Integration",
+      "Automatische visuelle Suchindexierung"
+    ],
+    "benefits": [
+      "Visuelle Qualitätskontrollen vollautomatisch durchführen",
+      "Verschlagwortung von Produktkatalogen drastisch beschleunigen",
+      "Sicherheit durch schnellen Gesichtsabgleich erhöhen",
+      "Visuelle Assets in Echtzeit und großem Maßstab verarbeiten",
+      "Betriebskosten durch den Einsatz energiesparender Edge-KI-Geräte senken",
+      "Datenerfassung durch automatische visuelle Textextraktion beschleunigen"
+    ],
+    "metaTitle": "Maßgeschneiderte Bilderkennung | Computer Vision | PakSoft",
+    "metaDescription": "Wir entwickeln Bilderkennungs- und Klassifizierungslösungen. Wir trainieren YOLO- und PyTorch-Modelle zur Fehlerprüfung, Verschlagwortung und Suche.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Use-Case-Analyse",
+          "description": "Wir analysieren Ihre Bilddaten, Lichtverhältnisse und Zielkategorien, um die geeignete Kamera-Hardware und Modelltypen auszuwählen."
+        },
+        {
+          "step": 2,
+          "title": "Datenvorbereitung",
+          "description": "Wir sammeln, bereinigen und annotieren Bilder mit Bounding Boxes oder Segmentierungsmasken, um qualitativ hochwertige Trainingsdaten zu erstellen."
+        },
+        {
+          "step": 3,
+          "title": "Modellauswahl & Training",
+          "description": "Wir wählen die passende neuronale Netzarchitektur aus und trainieren das Modell mit PyTorch unter Vermeidung von Overfitting."
+        },
+        {
+          "step": 4,
+          "title": "Inferenzoptimierung",
+          "description": "Wir konvertieren die trainierten Modelle in TensorRT- oder ONNX-Formate, um die Framerate zu maximieren und Latenzen zu minimieren."
+        },
+        {
+          "step": 5,
+          "title": "Systemintegration",
+          "description": "Wir stellen das Modell als API-Mikroservice bereit und binden es in Ihre Datenbank, Ihr CMS oder Ihre Kamerasysteme ein."
+        },
+        {
+          "step": 6,
+          "title": "Deployment & Monitoring",
+          "description": "Wir verteilen die Pipeline in der Cloud oder auf Edge-Geräten, überwachen die Genauigkeit und protokollieren Daten für zukünftige Optimierungen."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist der Unterschied zwischen Bilderkennung und Objekterkennung?",
+          "answer": "Die Bilderkennung weist einem gesamten Bild eine Kategorie zu (z. B. 'Auto'). Die Objekterkennung hingegen identifiziert einzelne Objekte im Bild und liefert deren genaue Position mithilfe von Koordinaten-Boxen."
+        },
+        {
+          "question": "Wie viele annotierte Bilder werden für das Training benötigt?",
+          "answer": "Für einfache Objekterkennungen benötigen wir meist 500 bis 1.000 annotierte Bilder pro Kategorie. Bei komplexeren Anforderungen nutzen wir Transfer Learning für hohe Präzision bei kleineren Datensätzen."
+        },
+        {
+          "question": "Kann die Bilderkennung auch offline (lokal) betrieben werden?",
+          "answer": "Ja, wir können die Modelle auf lokalen GPU-Servern oder kompakter Edge-Hardware wie NVIDIA-Jetson-Geräten installieren, um sie offline ohne Internetverbindung auszuführen."
+        },
+        {
+          "question": "Wie hoch ist die typische Erkennungsgenauigkeit?",
+          "answer": "Unter stabilen Lichtverhältnissen und Kamerawinkeln erreichen unsere speziell trainierten Modelle regelmäßig eine Genauigkeit von über 95%, was die typische Fehlerquote menschlicher Prüfer unterschreitet."
+        },
+        {
+          "question": "Wie lange dauert die Entwicklung eines Bilderkennungsmodells?",
+          "answer": "Ein typisches Projekt inklusive individuellem Training und Systemintegration dauert ca. 6 bis 10 Wochen, je nach Datenverfügbarkeit und der Komplexität der Aufgabenstellung."
+        },
+        {
+          "question": "Kann das System auch Text aus Bildern auslesen?",
+          "answer": "Ja, wir integrieren OCR-Technologie in die Bilderkennung, um Texte auf Etiketten, Schildern, Rechnungen und Dokumenten automatisch zu erfassen und zu digitalisieren."
+        },
+        {
+          "question": "Unterstützen Sie die Analyse von Live-Videostreams?",
+          "answer": "Ja, wir entwickeln Videoanalyselösungen auf Basis von OpenCV und Deep-Learning-Modellen, die Echtzeit-RTSP-Kamerastreams mit über 30 Bildern pro Sekunde (FPS) verarbeiten können."
+        },
+        {
+          "question": "Wie reagiert das System auf neue Produktvarianten?",
+          "answer": "Wir implementieren Pipelines für kontinuierliches Lernen. Bei neuen Varianten erweitern wir den Trainingsdatensatz um einige Bilder und trainieren das Modell automatisch nach."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "PyTorch",
+          "icon": "pytorch"
+        },
+        {
+          "name": "TensorFlow",
+          "icon": "tensorflow"
+        },
+        {
+          "name": "YOLO",
+          "icon": "yolo"
+        },
+        {
+          "name": "OpenCV",
+          "icon": "opencv"
+        },
+        {
+          "name": "TensorRT",
+          "icon": "tensorrt"
+        },
+        {
+          "name": "AWS Rekognition",
+          "icon": "aws"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "گروہ اور تصویر کی پہچان",
+    "shortDescription": "تصاویر میں موجود اشیاء، مناظر، چہروں اور متن کی اعلیٰ درستگی کے ساتھ پہچان کریں۔ ہم کسٹم کمپیوٹر وژن ماڈلز بناتے ہیں۔",
+    "fullDescription": "تصویری اثاثوں یا حقیقی دنیا کی تصاویر کا دستی معائنہ سست ہوتا ہے اور اس میں غلطیوں کا امکان رہتا ہے۔ ہم اپنی مرضی کے مطابق تصویر کی پہچان (Image Recognition) کے سلوشنز ڈیزائن اور بناتے ہیں جو ای کامرس، مینوفیکچرنگ اور سیکیورٹی ایپلی کیشنز کے لیے خودکار بصری تجزیہ فراہم کرتے ہیں۔ PyTorch اور TensorFlow جیسے جدید ڈیپ لرننگ فریم ورکس اور YOLO اور OpenCV کا استعمال کرتے ہوئے، ہم ماڈلز کو مخصوص اشیاء کا پتہ لگانے، کیٹیگریز کی درجہ بندی کرنے، چہروں کی شناخت کرنے اور OCR کے ذریعے متن نکالنے کی تربیت دیتے ہیں۔ ہم کارکردگی کو تیز اور درست بنانے کے لیے ماڈلز کو بہتر بناتے ہیں تاکہ انہیں کلاؤڈ یا IoT آلات پر چلایا جا سکے۔ فیکٹریوں میں ناقص پروڈکٹس کی نشاندہی سے لے کر مصنوعات کے کیٹلاگ کو خودکار ٹیگ کرنے تک، ہمارے سسٹمز کارآمد ثابت ہوتے ہیں۔",
+    "features": [
+      "اشیاء کی شناخت اور تصاویر کی درجہ بندی",
+      "ریئل ٹائم منظر اور پیٹرن کی سمجھ",
+      "کسٹم ماڈل ٹریننگ اور ٹرانسفر لرننگ",
+      "چہروں کا پتہ لگانے اور میچ کرنے کے سسٹمز",
+      "اعلیٰ درستگی والا OCR اور ڈیٹا نکالنے کا عمل",
+      "تیز رفتار Edge AI اور IoT ہوسٹنگ",
+      "لچکدار اے پی آئی اور کلاؤڈ انٹیگریشن",
+      "خودکار بصری سرچ انڈیکسنگ سسٹمز"
+    ],
+    "benefits": [
+      "بصری معائنہ اور کوالٹی چیک کے کاموں کو خودکار بنائیں",
+      "کیٹلاگ ٹیگ کرنے کے وقت کو دنوں سے سیکنڈوں میں لائیں",
+      "تیز چہروں کی پہچان کے ذریعے سیکیورٹی بہتر بنائیں",
+      "بڑی تعداد میں تصاویر کو ریئل ٹائم میں پروسیس کریں",
+      "کم بجلی استعمال کرنے والے ڈیوائسز سے اخراجات بچائیں",
+      "خودکار ڈیٹا نکالنے کے عمل سے ڈیٹا انٹری تیز کریں"
+    ],
+    "metaTitle": "کسٹم امیج ریکگنیشن سروسز | AI وژن | PakSoft",
+    "metaDescription": "تصویر کی پہچان اور درجہ بندی کے کسٹم سلوشنز بنائیں۔ ہم ناقص مصنوعات کی شناخت اور سرچ کے لیے ماڈلز تیار کرتے ہیں۔ رابطہ کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "ضروریات کا جائزہ",
+          "description": "ہم بہترین کیمرہ ہارڈویئر اور ماڈل منتخب کرنے کے لیے تصویر کے معیار اور روشنی کے حالات کا تجزیہ کرتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "ڈیٹا سیٹ کی تیاری",
+          "description": "ہم تصاویر کو اکٹھا کرتے ہیں اور اعلیٰ معیار کی ٹریننگ فائلز بنانے کے لیے ان پر باؤنڈنگ باکسز کی مدد سے نشان لگاتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "ماڈل کی تربیت",
+          "description": "ہم مناسب نیورل نیٹ ورک ڈیزائن منتخب کرتے ہیں اور PyTorch کی مدد سے ماڈل کو اوور فٹنگ سے بچاتے ہوئے تربیت دیتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "رفتار کی اصلاح",
+          "description": "ہم ماڈل کو TensorRT یا ONNX فارمیٹ میں تبدیل کرتے ہیں تاکہ پروسیسنگ کا وقت کم سے کم ہو سکے۔"
+        },
+        {
+          "step": 5,
+          "title": "سسٹم انٹیگریشن",
+          "description": "ہم ماڈل کو اے پی آئی مائیکرو سروس میں تبدیل کرتے ہیں اور اسے آپ کے کیمروں یا ڈیٹا بیس سے جوڑ دیتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "لانچ اور نگرانی",
+          "description": "ہم سسٹم کو کلاؤڈ یا لوکل ڈیوائسز پر لانچ کرتے ہیں اور اس کی درستگی کی نگرانی جاری رکھتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "تصویر کی پہچان اور آبجیکٹ ڈیٹیکشن میں کیا فرق ہے؟",
+          "answer": "تصویر کی پہچان مجموعی طور پر پوری تصویر کی شناخت کرتی ہے (جیسے 'کار')۔ جبکہ آبجیکٹ ڈیٹیکشن تصویر کے اندر موجود مخصوص چیزوں کی نشاندہی کرتی ہے اور ان کے گرد باؤنڈنگ باکس بناتی ہے۔"
+        },
+        {
+          "question": "ماڈل کی تربیت کے لیے کتنی تصاویر کی ضرورت ہوتی ہے؟",
+          "answer": "معمولی آبجیکٹ ڈیٹیکشن کے لیے ہمیں عام طور پر فی کیٹیگری 500 سے 1000 تصاویر درکار ہوتی ہیں۔ پیچیدہ معائنے کے لیے ہم کم تصاویر کے ساتھ بھی بہترین نتائج حاصل کرنے کے لیے ٹرانسفر لرننگ استعمال کرتے ہیں۔"
+        },
+        {
+          "question": "کیا تصویر کی پہچان کا ماڈل انٹرنیٹ کے بغیر چل سکتا ہے؟",
+          "answer": "جی ہاں، ہم انٹرنیٹ کے بغیر چلانے کے لیے ماڈلز کو کمپنی کے لوکل سرورز پر یا NVIDIA Jetson جیسے آلات پر انسٹال کر سکتے ہیں۔"
+        },
+        {
+          "question": "سسٹم کتنی درستگی کے ساتھ کام کرتا ہے؟",
+          "answer": "بہتر روشنی اور کیمرے کی مناسب پوزیشن کے ساتھ، ہمارے ماڈلز 95 فیصد سے زیادہ درست نتائج فراہم کرتے ہیں جو کہ انسانی کارکردگی سے بھی بہتر ہے۔"
+        },
+        {
+          "question": "ماڈل تیار کرنے میں کتنا وقت لگتا ہے؟",
+          "answer": "ڈیٹا کی دستیابی اور کام کی پیچیدگی کے لحاظ سے کسٹم ٹریننگ اور سسٹم کی تیاری میں 6 سے 10 ہفتے لگتے ہیں۔"
+        },
+        {
+          "question": "کیا سسٹم تصویروں سے متن پڑھ سکتا ہے؟",
+          "answer": "جی ہاں، ہم تصاویر، بلوں، دستاویزات یا بورڈز سے متن نکالنے کے لیے امیج ریکگنیشن کے ساتھ او سی آر (OCR) ٹیکنالوجی کو مربوط کرتے ہیں۔"
+        },
+        {
+          "question": "کیا آپ ویڈیو لائیو اسٹریم کو سپورٹ کرتے ہیں؟",
+          "answer": "جی ہاں، ہم ایسے ویڈیو اینالیٹکس سسٹمز بناتے ہیں جو کیمرے سے حاصل ہونے والے لائیو ویڈیو اسٹریم کا 30 فریم فی سیکنڈ سے زیادہ کی رفتار پر تجزیہ کر سکتے ہیں۔"
+        },
+        {
+          "question": "مصنوعات تبدیل ہونے پر ماڈل کو کیسے اپ ڈیٹ کیا جاتا ہے؟",
+          "answer": "ہم ماڈل کی مسلسل اپ ڈیٹ کا انتظام کرتے ہیں۔ جب کوئی نئی پروڈکٹ آتی ہے، تو ہم اس کی چند تصاویر لے کر ماڈل کو دوبارہ تربیت دے دیتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "PyTorch",
+          "icon": "pytorch"
+        },
+        {
+          "name": "TensorFlow",
+          "icon": "tensorflow"
+        },
+        {
+          "name": "YOLO",
+          "icon": "yolo"
+        },
+        {
+          "name": "OpenCV",
+          "icon": "opencv"
+        },
+        {
+          "name": "TensorRT",
+          "icon": "tensorrt"
+        },
+        {
+          "name": "AWS Rekognition",
+          "icon": "aws"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "التعرف على الصور",
+    "shortDescription": "حدد الأشياء، والمشاهد، والوجوه، والنصوص في الصور بدقة عالية. نحن نبني نماذج رؤية حاسوبية مخصصة لأتمتة عمليات التصنيف والبحث المرئي.",
+    "fullDescription": "يعد الفحص اليدوي للأصول المرئية أو الصور الواقعية بطيئاً وعرضة للأخطاء. نحن نصمم ونبني حلولاً مخصصة للتعرف على الصور تعمل على أتمتة التحليل المرئي لتطبيقات التجارة الإلكترونية، والتصنيع، والأمن. باستخدام أطر التعلم العميق المتقدمة مثل PyTorch و TensorFlow، إلى جانب مسارات YOLO و OpenCV المخصصة، نقوم بتدريب النماذج على اكتشاف أشياء معينة، وتصنيف الصور حسب الفئة، وإجراء التعرف على الوجوه، واستخراج النصوص عبر OCR. نقوم بضبط نماذجنا لتحقيق دقة عالية والحد الأدنى من زمن الوصول، وإعدادها للنشر السحابي أو المعالجة الطرفية على أجهزة IoT. من تحديد العيوب في خطوط الإنتاج إلى وضع العلامات التلقائية على كتالوجات المنتجات، تعمل محركاتنا على توسيع نطاق أعمالك بصرياً.",
+    "features": [
+      "اكتشاف الأشياء وتصنيف الصور بدقة",
+      "فهم المشاهد والأنماط البصرية في الوقت الفعلي",
+      "تدريب مخصص للنماذج والتعلم الانتقالي",
+      "أنظمة اكتشاف الوجوه والمطابقة الأمنية",
+      "استخراج النصوص بدقة عالية عبر OCR",
+      "نشر أنظمة الذكاء الاصطناعي الطرفية IoT",
+      "تكامل سحابي مرن وواجهات برمجية خفيفة",
+      "أنظمة فهرسة وبحث مرئي تلقائية بالكامل"
+    ],
+    "benefits": [
+      "أتمتة الفحص البصري ومهام مراقبة الجودة",
+      "تقليل وقت تصنيف المنتجات من أيام إلى ثوانٍ",
+      "تعزيز الأمن من خلال فحوصات التعرف السريع على الوجوه",
+      "معالجة الأصول المرئية على نطاق واسع وفي الوقت الفعلي",
+      "تقليل التكاليف التشغيلية باستخدام أجهزة معالجة طرفية موفرة للطاقة",
+      "تحسين سرعة إدخال البيانات من خلال الاستخراج البصري الآلي"
+    ],
+    "metaTitle": "خدمات التعرف على الصور | الرؤية الحاسوبية | PakSoft",
+    "metaDescription": "ابنِ حلولاً مخصصة للتعرف على الصور وتصنيفها. ندرب نماذج YOLO و PyTorch للكشف عن العيوب والتصنيف والبحث المتقدم. اتصل بنا.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تقييم حالة الاستخدام",
+          "description": "نحلل بياناتك المرئية وظروف الإضاءة والفئات المستهدفة لاختيار أفضل أجهزة الكاميرا وأنواع النماذج."
+        },
+        {
+          "step": 2,
+          "title": "إعداد مجموعة البيانات",
+          "description": "نجمع الصور المستهدفة وننظفها ونضع عليها علامات توضيحية باستخدام صناديق التحديد أو أقنعة التقسيم لبناء مجموعات تدريب عالية الجودة."
+        },
+        {
+          "step": 3,
+          "title": "اختيار النموذج والتدريب المخصص",
+          "description": "نختار بنيات الشبكات العصبية المناسبة وندربها باستخدام PyTorch، مع تحسين المعلمات لمنع الإفراط في التجهيز (overfitting)."
+        },
+        {
+          "step": 4,
+          "title": "تحسين عمليات الاستدلال",
+          "description": "نحول النماذج المدربة إلى تنسيقات TensorRT أو ONNX لزيادة معدل الإطارات وتقليل زمن معالجة الصور."
+        },
+        {
+          "step": 5,
+          "title": "دمج وتكامل الأنظمة",
+          "description": "نغلف النموذج في واجهة برمجية للخدمات المصغرة ونربطه بقاعدة البيانات الخاصة بك، أو نظام إدارة المحتوى، أو كاميرات الأمن."
+        },
+        {
+          "step": 6,
+          "title": "النشر والمراقبة الفعالة",
+          "description": "ننشر مسار الرؤية الحاسوبية في السحاب أو الأجهزة الطرفية، مع تتبع الدقة وإعداد سجلات لتحسين أداء النماذج مستقبلاً."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما الفرق بين التعرف على الصور واكتشاف الأشياء؟",
+          "answer": "يحدد التعرف على الصور الفئة العامة للصورة (مثل 'سيارة'). بينما يحدد اكتشاف الأشياء العناصر الفردية داخل الصورة ويوفر مواقعها الدقيقة باستخدام صناديق تحديد إحداثية."
+        },
+        {
+          "question": "كم عدد الصور المطلوبة لتدريب نموذج مخصص؟",
+          "answer": "لاكتشاف الأشياء البسيطة، نحتاج عادةً من 500 إلى 1,000 صورة لكل فئة. للفحوصات شديدة التعقيد، نستخدم التعلم الانتقالي (transfer learning) لتحقيق دقة عالية بمجموعات بيانات أصغر."
+        },
+        {
+          "question": "هل يمكن تشغيل نظام التعرف على الصور محلياً؟",
+          "answer": "نعم، يمكننا نشر النماذج على خوادم محلية مزودة بوحدات معالجة الرسومات NVIDIA أو على أجهزة طرفية مدمجة مثل أجهزة NVIDIA Jetson للتشغيل دون الحاجة إلى إنترنت."
+        },
+        {
+          "question": "ما مدى دقة عمل هذا النظام؟",
+          "answer": "تحت ظروف إضاءة وزوايا كاميرا متسقة، تحقق نماذجنا المدربة بشكل مخصص دقة تصنيف واكتشاف تتجاوز 95٪، متفوقة على معدلات الفحص البشري المعتادة."
+        },
+        {
+          "question": "كم من الوقت يستغرق تدريب ونشر نموذج رؤية؟",
+          "answer": "يستغرق المشروع القياسي الذي يتضمن التدريب المخصص وتكامل النظام من 6 إلى 10 أسابيع، اعتماداً على توفر البيانات وتعقيد الفئات المستهدفة."
+        },
+        {
+          "question": "هل يمكن للنظام قراءة النصوص من الصور؟",
+          "answer": "نعم، نحن ندمج تقنية OCR إلى جانب التعرف على الصور لتحديد وتفسير واستخراج النصوص من الملصقات، واللوحات، والفواتير، والمستندات تلقائياً."
+        },
+        {
+          "question": "هل تدعمون تحليل بث الفيديو المباشر؟",
+          "answer": "نعم، نبني مسارات تحليل فيديو باستخدام OpenCV ونماذج التعلم العميق التي تعالج بث كاميرات RTSP في الوقت الفعلي بمعدل 30 إطاراً أو أكثر في الثانية."
+        },
+        {
+          "question": "كيف تتعامل مع التغيرات في العناصر المرئية بمرور الوقت؟",
+          "answer": "نبني مسارات تعلم مستمر. إذا تم تقديم منتج جديد أو شكل مختلف، نضيف مجموعة صغيرة من الصور الجديدة إلى قاعدة البيانات ونعيد تدريب النموذج."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "PyTorch",
+          "icon": "pytorch"
+        },
+        {
+          "name": "TensorFlow",
+          "icon": "tensorflow"
+        },
+        {
+          "name": "YOLO",
+          "icon": "yolo"
+        },
+        {
+          "name": "OpenCV",
+          "icon": "opencv"
+        },
+        {
+          "name": "TensorRT",
+          "icon": "tensorrt"
+        },
+        {
+          "name": "AWS Rekognition",
+          "icon": "aws"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        }
+      ]
+    }
+  }
+}

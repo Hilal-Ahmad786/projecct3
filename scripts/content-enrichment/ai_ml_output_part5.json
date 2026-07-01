@@ -1,0 +1,1036 @@
+{
+  "custom-llm-development": {
+    "en": {
+      "name": "Custom LLM Development",
+      "shortDescription": "Build custom large language models tailored to your industry. We design, train, and optimize domain-specific LLMs for private, secure, and highly specialized enterprise workflows.",
+      "fullDescription": "Generic language models fail when confronted with highly specialized industry terminology, proprietary datasets, and strict security requirements. We build custom language models engineered specifically for your domain, whether in finance, medicine, legal, or manufacturing. Our team curates high-quality training datasets, performs pre-training or domain adaptation, and uses parameter-efficient fine-tuning (PEFT) methods like LoRA to adapt open-source models (like Llama and Mistral) to your workflows. We deploy these customized models on secure, private infrastructures using optimized serving engines like vLLM, reducing latency and operational costs while guaranteeing data privacy. Most custom model deployments reach production in 8 to 12 weeks.",
+      "features": [
+        "Domain-Specific Pre-training",
+        "Parameter-Efficient Fine-Tuning",
+        "Proprietary Dataset Curation",
+        "RLHF & DPO Alignment",
+        "Quantization & Model Compression",
+        "High-Performance Serving (vLLM)",
+        "Custom Tokenizer Training",
+        "Private Cloud & On-Premises Hosting"
+      ],
+      "benefits": [
+        "Complete ownership of model weights and data",
+        "Unmatched accuracy on domain-specific terminology",
+        "Eliminate recurring third-party API subscription costs",
+        "Strict compliance with enterprise data privacy standards",
+        "Significant reduction in model latency and footprint",
+        "Avoid vendor lock-in with open-source foundations"
+      ],
+      "metaTitle": "Custom LLM Development Services | PakSoft",
+      "metaDescription": "Build and deploy custom large language models tailored to your business domain. Secure, private, and highly optimized LLM solutions. Contact us today.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Data Auditing & Curation",
+            "description": "We identify, clean, and structure your proprietary datasets to construct a high-quality training corpus. This process includes deduplication, filtering, and synthetic data generation to ensure optimal model performance."
+          },
+          {
+            "step": 2,
+            "title": "Base Model Selection",
+            "description": "We evaluate and select the best open-source foundation model based on parameters, licensing, and latency goals. We match your compute budget with the appropriate model size for your task."
+          },
+          {
+            "step": 3,
+            "title": "Domain-Specific Training",
+            "description": "We perform supervised fine-tuning or full parameter pre-training depending on the complexity of your requirements. We use parameter-efficient techniques to keep compute costs manageable."
+          },
+          {
+            "step": 4,
+            "title": "Alignment & Hardening",
+            "description": "We implement reinforcement learning from human feedback or direct preference optimization to align model behaviors. This stage introduces strict safety guardrails and system prompts."
+          },
+          {
+            "step": 5,
+            "title": "Evaluation & Benchmarking",
+            "description": "We test the model against custom validation sets to measure accuracy, hallucinations, and domain knowledge. We benchmark throughput and latency under simulated production loads."
+          },
+          {
+            "step": 6,
+            "title": "Optimization & Deployment",
+            "description": "We apply quantization techniques to reduce the hardware footprint and deploy the model using vLLM. The deployment is fully integrated with your secure enterprise infrastructure."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Why should we build a custom LLM instead of using OpenAI?",
+            "answer": "Generic APIs like OpenAI are excellent for general tasks, but they lack knowledge of your proprietary data, specialized industry terms, and raise severe data privacy concerns. Building a custom LLM gives you 100% ownership of your model weights, eliminates recurring API licensing costs, and ensures your data never leaves your private cloud. It also allows you to tune the model for specific, high-accuracy workflows."
+          },
+          {
+            "question": "How much data is required to train a custom language model?",
+            "answer": "For domain adaptation and fine-tuning, we typically need between 10,000 and 100,000 high-quality instruction pairs or several gigabytes of raw, clean domain text. If your proprietary dataset is smaller, we can use advanced synthetic data generation techniques to bootstrap the training corpus. We audit your existing data during discovery to recommend the best training approach."
+          },
+          {
+            "question": "What are the hardware requirements for hosting a custom LLM?",
+            "answer": "Hosting requirements depend entirely on model size and throughput needs. A quantized 7-billion parameter model can run efficiently on a single consumer-grade GPU like an NVIDIA RTX 4090 or A10G, costing very little. Larger models (e.g., 70-billion parameters) require multi-GPU nodes (like 8x H100s) for high-concurrent production environments, which we can host on private cloud providers."
+          },
+          {
+            "question": "Can you train a custom LLM to understand multiple languages?",
+            "answer": "Yes, we can perform multilingual alignment on base models. We curate training datasets in English, Turkish, German, Urdu, Arabic, and other target languages to ensure the custom model retains its reasoning capability across all of them. This is particularly useful for global companies operating across different markets."
+          },
+          {
+            "question": "How long does the entire custom LLM development lifecycle take?",
+            "answer": "A standard custom LLM project takes between 8 and 12 weeks to go from initial data auditing to a production-ready model. The first 4 weeks are focused on data preparation and model selection, followed by 3 weeks of training, and the final weeks are dedicated to evaluation, quantization, and deployment."
+          },
+          {
+            "question": "How do you evaluate if the custom model is performing well?",
+            "answer": "We design a custom evaluation benchmark containing representative test questions and tasks specific to your business. We combine automated metric evaluations (like BERTScore and MMLU) with human-in-the-loop review. This dual-layer evaluation ensures the model is not only statistically sound but also practically useful for your team."
+          },
+          {
+            "question": "What is PEFT and how does it save costs?",
+            "answer": "Parameter-Efficient Fine-Tuning (PEFT) techniques, such as LoRA, freeze the majority of the base model weights and only train a small adapter layer. This reduces the GPU memory required during training by up to 90%, meaning we can train models on much cheaper hardware in a fraction of the time. The final model retains all base capabilities while learning new specialized skills."
+          },
+          {
+            "question": "Is our business data safe during model training?",
+            "answer": "Absolutely. We conduct all data processing and training within your secure, private cloud environment (AWS, Azure, Google Cloud, or on-premises). Your raw datasets never leave your infrastructure, and we do not use public APIs that could expose your intellectual property. Once trained, the model weights belong entirely to you."
+          }
+        ],
+        "technologies": [
+          { "name": "Hugging Face", "icon": "huggingface" },
+          { "name": "PyTorch", "icon": "pytorch" },
+          { "name": "vLLM", "icon": "vllm" },
+          { "name": "DeepSpeed", "icon": "deepspeed" },
+          { "name": "Python", "icon": "python" },
+          { "name": "Kubernetes", "icon": "kubernetes" },
+          { "name": "Weights & Biases", "icon": "wandb" },
+          { "name": "Docker", "icon": "docker" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Özel LLM Geliştirme",
+      "shortDescription": "Sektörünüze özel büyük dil modelleri oluşturun. Güvenli, gizli ve son derece özelleştirilmiş kurumsal iş akışları için alana özgü LLM'ler tasarlıyor, eğitiyor ve optimize ediyoruz.",
+      "fullDescription": "Genel dil modelleri, son derece uzmanlaşmış sektör terminolojisi, özel veri kümeleri ve katı güvenlik gereksinimleriyle karşılaştığında yetersiz kalır. Finans, tıp, hukuk veya üretim gibi alanlarda, doğrudan sizin sektörünüze uygun olarak yapılandırılmış özel dil modelleri geliştiriyoruz. Ekibimiz yüksek kaliteli eğitim verileri hazırlar, alan adaptasyonu gerçekleştirir ve açık kaynaklı modelleri (Llama ve Mistral gibi) iş akışlarınıza uyarlamak için LoRA gibi parametre verimli ince ayar (PEFT) yöntemlerini kullanır. Bu özel modelleri vLLM gibi optimize edilmiş sunum motorlarıyla güvenli, özel altyapılarda yayına alarak gecikmeyi ve işletme maliyetlerini düşürürken veri gizliliğini garanti ederiz. İlk kurulumlar 8-12 haftada üretime hazır hale gelir.",
+      "features": [
+        "Alana Özgü Ön Eğitim",
+        "Parametre Verimli İnce Ayar (PEFT)",
+        "Özel Veri Kümesi Hazırlama",
+        "RLHF ve DPO Hizalama",
+        "Kuantizasyon ve Model Sıkıştırma",
+        "Yüksek Performanslı Sunum (vLLM)",
+        "Özel Tokenizer Eğitimi",
+        "Özel Bulut ve Yerinde (On-Premises) Barındırma"
+      ],
+      "benefits": [
+        "Model ağırlıkları ve veriler üzerinde tam mülkiyet",
+        "Sektöre özel terminolojide rakipsiz doğruluk oranı",
+        "Tekrarlayan üçüncü taraf API abonelik maliyetlerinin sıfırlanması",
+        "Kurumsal veri gizliliği standartlarına tam uyumluluk",
+        "Model gecikme süresinde ve boyutunda önemli azalma",
+        "Açık kaynaklı temel modellerle tedarikçi bağımlılığını önleme"
+      ],
+      "metaTitle": "Özel LLM Geliştirme Hizmetleri | PakSoft",
+      "metaDescription": "İş alanınıza özel büyük dil modelleri oluşturun ve yayına alın. Güvenli, özel ve yüksek düzeyde optimize edilmiş LLM çözümleri için bize ulaşın.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Veri Denetimi ve Düzenleme",
+            "description": "Yüksek kaliteli bir eğitim kümesi oluşturmak için tescilli verilerinizi tanımlar, temizler ve yapılandırırız. Bu süreç, model performansını optimize etmek amacıyla veri tekilleştirme, filtreleme ve sentetik veri üretimini içerir."
+          },
+          {
+            "step": 2,
+            "title": "Temel Model Seçimi",
+            "description": "Parametreler, lisanslama ve gecikme hedeflerine göre en iyi açık kaynaklı temel modeli değerlendirip seçeriz. Donanım bütçenizi göreviniz için en uygun model boyutuyla eşleştiririz."
+          },
+          {
+            "step": 3,
+            "title": "Alana Özgü Eğitim",
+            "description": "Gereksinimlerinizin karmaşıklığına bağlı olarak denetimli ince ayar veya tam parametreli ön eğitim gerçekleştiririz. Hesaplama maliyetlerini yönetilebilir tutmak için parametre verimli teknikler kullanırız."
+          },
+          {
+            "step": 4,
+            "title": "Hizalama ve Sağlamlaştırma",
+            "description": "Model davranışlarını hizalamak için insan geri bildiriminden takviyeli öğrenme (RLHF) veya doğrudan tercih optimizasyonu (DPO) uygularız. Bu aşamada katı güvenlik bariyerleri ve sistem promptları entegre edilir."
+          },
+          {
+            "step": 5,
+            "title": "Değerlendirme ve Kıyaslama",
+            "description": "Modeli doğruluğunu, halüsinasyonlarını ve alan bilgisini ölçmek için özel test setleriyle deneriz. Simüle edilmiş üretim yükleri altında işlem hacmini ve gecikme süresini ölçeriz."
+          },
+          {
+            "step": 6,
+            "title": "Optimizasyon ve Yayına Alma",
+            "description": "Donanım boyutunu azaltmak için kuantizasyon teknikleri uygular ve modeli vLLM kullanarak yayına alırız. Dağıtım, güvenli kurumsal altyapınızla tamamen entegre edilir."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Neden OpenAI kullanmak yerine özel bir LLM geliştirmeliyiz?",
+            "answer": "OpenAI gibi genel API'ler genel görevler için mükemmeldir, ancak tescilli verileriniz ve uzmanlık gerektiren terminolojiniz hakkında bilgiye sahip değildirler ve ciddi veri gizliliği endişeleri yaratırlar. Özel bir LLM geliştirmek, model ağırlıklarınızın %100 mülkiyetini size verir, sürekli API lisanslama maliyetlerini ortadan kaldırır ve verilerinizin asla özel bulutunuzdan çıkmamasını sağlar. Ayrıca modeli yüksek doğruluklu iş akışları için ayarlamanıza olanak tanır."
+          },
+          {
+            "question": "Özel bir dil modelini eğitmek için ne kadar veri gereklidir?",
+            "answer": "Alan adaptasyonu ve ince ayar için genellikle 10.000 ila 100.000 yüksek kaliteli talimat çiftine veya birkaç gigabaytlık temiz metne ihtiyaç duyarız. Veri kümeniz daha küçükse, eğitim kümesini zenginleştirmek için gelişmiş sentetik veri üretimi teknikleri kullanabiliriz. En iyi eğitim yaklaşımını önermek için keşif aşamasında mevcut verilerinizi denetleriz."
+          },
+          {
+            "question": "Özel bir LLM'yi barındırmak için donanım gereksinimleri nelerdir?",
+            "answer": "Barındırma gereksinimleri tamamen model boyutuna ve trafik ihtiyaçlarına bağlıdır. Kuantize edilmiş 7 milyar parametreli bir model, NVIDIA RTX 4090 veya A10G gibi tek bir GPU üzerinde düşük maliyetle çalışabilir. Daha büyük modeller (örn. 70 milyar parametre), yüksek eşzamanlı üretim ortamları için çoklu GPU düğümleri (8x H100 gibi) gerektirir ve bunları özel bulut sağlayıcılarında barındırabiliriz."
+          },
+          {
+            "question": "Özel bir LLM'yi birden fazla dili anlayacak şekilde eğitebilir misiniz?",
+            "answer": "Evet, temel modeller üzerinde çok dilli hizalama yapabiliriz. Özel modelin tüm hedef dillerde akıl yürütme yeteneğini korumasını sağlamak için Türkçe, İngilizce, Almanca, Urduca ve Arapça dillerinde eğitim verileri hazırlarız. Bu, farklı pazarlarda faaliyet gösteren küresel şirketler için özellikle yararlıdır."
+          },
+          {
+            "question": "Özel LLM geliştirme süreci ne kadar sürer?",
+            "answer": "Standart bir özel LLM projesinin ilk veri denetiminden üretime hazır modele ulaşması 8 ila 12 hafta sürer. İlk 4 hafta veri hazırlama ve model seçimine odaklanılır, ardından 3 hafta eğitim sürer ve son haftalar değerlendirme, kuantizasyon ve dağıtıma ayrılır."
+          },
+          {
+            "question": "Özel modelin performansını nasıl değerlendiriyorsunuz?",
+            "answer": "İşletmenize özel test soruları ve görevlerinden oluşan özel bir değerlendirme kıyaslaması tasarlıyoruz. BERTScore ve MMLU gibi otomatik metrik değerlendirmelerini insan denetimiyle birleştiririz. Bu çift katmanlı değerlendirme, modelin hem istatistiksel olarak sağlam hem de ekibiniz için pratik olarak yararlı olmasını sağlar."
+          },
+          {
+            "question": "PEFT nedir ve nasıl maliyet tasarrufu sağlar?",
+            "answer": "LoRA gibi Parametre Verimli İnce Ayar (PEFT) teknikleri, temel model ağırlıklarının çoğunu dondurur ve yalnızca küçük bir adaptör katmanını eğitir. Bu, eğitim sırasında gereken GPU belleğini %90'a kadar azaltır, yani modelleri çok daha ucuz donanımlarda çok daha kısa sürede eğitebiliriz. Nihai model yeni uzmanlık becerileri kazanırken temel yeteneklerini korur."
+          },
+          {
+            "question": "Model eğitimi sırasında işletme verilerimiz güvende mi?",
+            "answer": "Kesinlikle. Tüm veri işleme ve eğitim süreçlerini güvenli, özel bulut ortamınızda (AWS, Azure, Google Cloud veya yerinde) yürütürüz. Ham veri kümeleriniz asla altyapınızdan çıkmaz ve fikri mülkiyetinizi açığa çıkarabilecek genel API'leri kullanmayız. Eğitildikten sonra model ağırlıkları tamamen size ait olur."
+          }
+        ],
+        "technologies": [
+          { "name": "Hugging Face", "icon": "huggingface" },
+          { "name": "PyTorch", "icon": "pytorch" },
+          { "name": "vLLM", "icon": "vllm" },
+          { "name": "DeepSpeed", "icon": "deepspeed" },
+          { "name": "Python", "icon": "python" },
+          { "name": "Kubernetes", "icon": "kubernetes" },
+          { "name": "Weights & Biases", "icon": "wandb" },
+          { "name": "Docker", "icon": "docker" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Individuelle LLM-Entwicklung",
+      "shortDescription": "Entwickeln Sie maßgeschneiderte große Sprachmodelle für Ihre Branche. Wir entwerfen, trainieren und optimieren domänenspezifische LLMs für private, sichere und hochspezialisierte Workflows.",
+      "fullDescription": "Generische Sprachmodelle scheitern oft an hochspezialisierter Fachterminologie, proprietären Datensätzen und strengen Sicherheitsanforderungen. Wir bauen maßgeschneiderte Sprachmodelle, die speziell für Ihre Domäne entwickelt wurden – sei es in der Finanzbranche, Medizin, Recht oder Fertigung. Unser Team bereitet hochwertige Trainingsdaten auf, führt Domänenanpassungen durch und nutzt parametereffiziente Fine-Tuning-Methoden (PEFT) wie LoRA, um Open-Source-Modelle (wie Llama und Mistral) an Ihre Workflows anzupassen. Wir stellen diese optimierten Modelle auf sicheren, privaten Infrastrukturen mit Serving-Engines wie vLLM bereit, um Latenzen und Betriebskosten zu senken und gleichzeitig die Datensicherheit zu garantieren. Die meisten Implementierungen sind in 8 bis 12 Wochen einsatzbereit.",
+      "features": [
+        "Domänenspezifisches Pre-training",
+        "Parametereffizientes Fine-Tuning (PEFT)",
+        "Kuration proprietärer Datensätze",
+        "RLHF- & DPO-Modellierung",
+        "Quantisierung & Modellkompression",
+        "Hochleistungs-Serving via vLLM",
+        "Training individueller Tokenizer",
+        "Private-Cloud- & On-Premises-Hosting"
+      ],
+      "benefits": [
+        "Vollständiges Eigentum an Modellgewichten und Daten",
+        "Herausragende Genauigkeit bei Fachterminologie",
+        "Keine wiederkehrenden Gebühren für Drittanbieter-APIs",
+        "Strikte Einhaltung von Datenschutzstandards",
+        "Deutliche Reduzierung von Latenzzeit und Ressourcenverbrauch",
+        "Vermeidung von Vendor-Lock-in durch Open-Source-Basis"
+      ],
+      "metaTitle": "Individuelle LLM-Entwicklung | PakSoft",
+      "metaDescription": "Wir entwickeln und implementieren maßgeschneiderte große Sprachmodelle für Ihre Geschäftsdomäne. Sicher, privat und hochoptimiert. Jetzt anfragen.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Datenprüfung & -kuration",
+            "description": "Wir identifizieren, bereinigen und strukturieren Ihre proprietären Daten, um einen hochwertigen Trainingskorpus zu erstellen. Dieser Prozess umfasst Deduplizierung, Filterung und synthetische Datengenerierung zur Optimierung der Performance."
+          },
+          {
+            "step": 2,
+            "title": "Modellauswahl",
+            "description": "Wir bewerten und wählen das am besten geeignete Open-Source-Basismodell basierend auf Parametern, Lizenzierung und Latenzzielen aus. Wir passen Ihr Hardware-Budget an die optimale Modellgröße an."
+          },
+          {
+            "step": 3,
+            "title": "Domänenspezifisches Training",
+            "description": "Wir führen überwachtes Fine-Tuning oder ein vollständiges Pre-training durch, je nach Komplexität Ihrer Anforderungen. Dabei nutzen wir PEFT-Methoden, um die Rechenkosten niedrig zu halten."
+          },
+          {
+            "step": 4,
+            "title": "Alignment & Härtung",
+            "description": "Wir nutzen Reinforcement Learning aus menschlichem Feedback (RLHF) oder Direct Preference Optimization (DPO), um das Modellverhalten auszurichten. In dieser Phase integrieren wir Sicherheitsbarrieren und System-Prompts."
+          },
+          {
+            "step": 5,
+            "title": "Evaluation & Benchmarking",
+            "description": "Wir testen das Modell an Validierungssets, um Genauigkeit, Halluzinationen und Fachwissen zu messen. Zudem benchmarken wir Durchsatz und Latenz unter simulierten Produktionslasten."
+          },
+          {
+            "step": 6,
+            "title": "Optimierung & Deployment",
+            "description": "Wir wenden Quantisierungstechniken an, um den Hardware-Bedarf zu reduzieren, und stellen das Modell via vLLM bereit. Die Bereitstellung wird vollständig in Ihre sichere Unternehmensinfrastruktur integriert."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Warum sollten wir ein eigenes LLM entwickeln, statt OpenAI zu nutzen?",
+            "answer": "Generische APIs wie OpenAI sind hervorragend für allgemeine Aufgaben, kennen jedoch weder Ihre internen Daten noch Ihre spezifische Fachterminologie und bergen erhebliche Datenschutzrisiken. Mit einem maßgeschneiderten LLM behalten Sie das vollständige Eigentum an den Modellgewichten, eliminieren Lizenzkosten und stellen sicher, dass Daten Ihre Private Cloud nie verlassen. Zudem lässt es sich exakt auf hochpräzise Workflows zuschneiden."
+          },
+          {
+            "question": "Wie viele Daten werden benötigt, um ein eigenes Modell zu trainieren?",
+            "answer": "Für die Domänenanpassung und das Fine-Tuning benötigen wir typischerweise zwischen 10.000 und 100.000 hochwertige Instruktionspaare oder einige Gigabyte an sauberem Text. Wenn Ihre Datenmenge geringer ist, können wir synthetische Datengenerierung nutzen, um den Trainingskorpus zu erweitern. Wir prüfen Ihre Bestandsdaten in der Discovery-Phase, um den besten Ansatz zu empfehlen."
+          },
+          {
+            "question": "Welche Hardware-Voraussetzungen gelten für das Hosting eines eigenen LLMs?",
+            "answer": "Die Anforderungen hängen stark von der Modellgröße und dem Durchsatz ab. Ein quantisiertes Modell mit 7 Milliarden Parametern läuft effizient auf einer einzelnen GPU wie der NVIDIA RTX 4090 oder A10G. Größere Modelle (z. B. 70 Milliarden Parameter) erfordern Multi-GPU-Nodes (wie 8x H100) für Produktionsumgebungen mit hohem Datenverkehr, die wir in Ihrer Private Cloud einrichten."
+          },
+          {
+            "question": "Kann ein maßgeschneidertes LLM mehrsprachig trainiert werden?",
+            "answer": "Ja, wir können ein mehrsprachiges Alignment auf Basismodellen durchführen. Wir stellen Trainingsdaten in Deutsch, Englisch, Türkisch, Urdu, Arabisch und anderen Zielsprachen zusammen, um sicherzustellen, dass das Modell seine logischen Fähigkeiten in allen Sprachen beibehält. Dies ist ideal für global agierende Unternehmen."
+          },
+          {
+            "question": "Wie lange dauert der Entwicklungszyklus für ein eigenes LLM?",
+            "answer": "Ein typisches Projekt dauert 8 bis 12 Wochen von der ersten Datenprüfung bis zum produktionsreifen Modell. Die ersten 4 Wochen entfallen auf Datenvorbereitung und Modellauswahl, gefolgt von 3 Wochen Training sowie abschließender Evaluation, Quantisierung und Bereitstellung."
+          },
+          {
+            "question": "Wie wird die Qualität des maßgeschneiderten Modells evaluiert?",
+            "answer": "Wir entwerfen ein individuelles Evaluations-Benchmark mit repräsentativen Testfragen aus Ihrer täglichen Praxis. Wir kombinieren automatisierte Metriken (wie BERTScore und MMLU) mit menschlicher Überprüfung (Human-in-the-Loop). Diese zweistufige Evaluierung stellt sicher, dass das Modell statistisch präzise arbeitet und einen echten Mehrwert bietet."
+          },
+          {
+            "question": "Was ist PEFT und wie spart es Kosten?",
+            "answer": "Parameter-Efficient Fine-Tuning (PEFT) wie LoRA friert die Gewichte des Basismodells ein und trainiert nur einen kleinen Adapter. Dies reduziert den GPU-Speicherbedarf beim Training um bis zu 90 %, wodurch wir Modelle auf deutlich günstigerer Hardware und in kürzerer Zeit trainieren können. Das Modell behält seine Fähigkeiten bei und lernt neue Spezialisierungen."
+          },
+          {
+            "question": "Sind unsere Unternehmensdaten beim Modelltraining sicher?",
+            "answer": "Ja, absolut. Wir führen die gesamte Datenverarbeitung und das Training in Ihrer sicheren Private Cloud (AWS, Azure, Google Cloud oder On-Premises) durch. Ihre Rohdaten verlassen niemals Ihre Infrastruktur. Wir nutzen keine öffentlichen APIs, die Ihr geistiges Eigentum gefährden könnten. Nach dem Training gehören die Modellgewichte vollständig Ihnen."
+          }
+        ],
+        "technologies": [
+          { "name": "Hugging Face", "icon": "huggingface" },
+          { "name": "PyTorch", "icon": "pytorch" },
+          { "name": "vLLM", "icon": "vllm" },
+          { "name": "DeepSpeed", "icon": "deepspeed" },
+          { "name": "Python", "icon": "python" },
+          { "name": "Kubernetes", "icon": "kubernetes" },
+          { "name": "Weights & Biases", "icon": "wandb" },
+          { "name": "Docker", "icon": "docker" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "کسٹم LLM ڈیولپمنٹ",
+      "shortDescription": "اپنی انڈسٹری کے مطابق کسٹم بڑے زبان کے ماڈلز (LLMs) بنوائیں۔ ہم نجی، محفوظ اور انتہائی مخصوص کاروباری ورک فلوز کے لیے ماڈلز ڈیزائن، ٹرین اور بہتر بناتے ہیں۔",
+      "fullDescription": "جب بات انتہائی مخصوص صنعتی اصطلاحات، ملکیتی ڈیٹا اور سخت سیکیورٹی کی ہو تو عمومی زبان کے ماڈلز ناکام ہو جاتے ہیں۔ ہم خاص طور پر آپ کے شعبے (جیسه فنانس، میڈیسن، قانون یا مینوفیکچرنگ) کے لیے تیار کردہ زبان کے ماڈلز بناتے ہیں۔ ہماری ٹیم اعلیٰ معیار کا تربیتی ڈیٹا تیار کرتی ہے، ڈومین ایڈاپٹیشن کرتی ہے اور اوپن سورس ماڈلز (جیسے Llama اور Mistral) کو آپ کے کاموں کے مطابق ڈھالنے کے لیے LoRA جیسی PEFT تکنیکیں استعمال کرتی ہے۔ ہم ان ماڈلز کو vLLM جیسے انجنوں کے ساتھ نجی کلاؤڈ یا لوکل سرورز پر چلاتے ہیں تاکہ رفتار تیز ہو، لاگت کم ہو اور ڈیٹا کی مکمل رازداری برقرار رہے۔ زیادہ تر پروجیکٹس 8 سے 12 ہفتوں میں لائیو ہو جاتے ہیں۔",
+      "features": [
+        "ڈومین کے مطابق پری ٹریننگ",
+        "پیرامیٹر ایفیشنٹ فائن ٹیوننگ (PEFT)",
+        "ملکیتی ڈیٹا سیٹ کی کیوریشن",
+        "RLHF اور DPO الائنمنٹ",
+        "کوانٹائزیشن اور ماڈل کمپریشن",
+        "ہائی پرفارمنس سرونگ (vLLM)",
+        "کسٹم ٹوکنائزر ٹریننگ",
+        "پرائیویٹ کلاؤڈ اور لوکل سرورز پر ہوسٹنگ"
+      ],
+      "benefits": [
+        "ماڈل کے وزن (weights) اور ڈیٹا پر مکمل مالکانہ حقوق",
+        "مخصوص صنعتی اصطلاحات پر بہترین درستگی",
+        "تیسرے فریق کی API فیسوں اور سبسکرپشنز کا خاتمہ",
+        "کاروباری ڈیٹا کی رازداری کے سخت قوانین کی تعمیل",
+        "ماڈل کی رفتار میں اضافہ اور سرور لاگت میں بڑی کمی",
+        "اوپن سورس بنیاد کے ذریعے کسی ایک سروس پر انحصار کا خاتمہ"
+      ],
+      "metaTitle": "کسٹم LLM ڈیولپمنٹ سروسز | PakSoft",
+      "metaDescription": "اپنے کاروبار کے مطابق کسٹم بڑے زبان کے ماڈلز تیار اور تعینات کریں۔ محفوظ، نجی اور انتہائی بہتر LLM سلوشنز۔ آج ہی ہم سے رابطہ کریں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "ڈیٹا کا جائزہ اور تیاری",
+            "description": "ہم آپ کے ملکیتی ڈیٹا کا تجزیہ کرتے ہیں، اسے صاف کرتے ہیں اور تربیتی کارپس تیار کرتے ہیں۔ اس مرحلے میں ڈیٹا کو صاف کرنا اور ماڈل کی کارکردگی کے لیے مصنوعی ڈیٹا بنانا شامل ہے۔"
+          },
+          {
+            "step": 2,
+            "title": "بنیادی ماڈل کا انتخاب",
+            "description": "ہم لائسنس، سائز اور رفتار کے مطابق بہترین اوپن سورس ماڈل کا انتخاب کرتے ہیں۔ ہم آپ کے بجٹ کو مدِ نظر رکھتے ہوئے کام کے لیے مناسب ترین ماڈل سائز تجویز کرتے۔"
+          },
+          {
+            "step": 3,
+            "title": "ڈومین کے مطابق ٹریننگ",
+            "description": "ہم آپ کی ضروریات کے مطابق سپروائزڈ فائن ٹیوننگ یا مکمل پیرامیٹر ٹریننگ انجام دیتے ہیں۔ ہم کمپیوٹ لاگت کو قابو میں رکھنے کے لیے جدید ترین PEFT تکنیکیں استعمال کرتے ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "بہتری اور حفاظت",
+            "description": "ہم ماڈل کے رویے کو درست سمت میں رکھنے کے لیے انسانی فیڈ بیک سے تقویت یافتہ لرننگ (RLHF) یا DPO لاگو کرتے ہیں۔ اس مرحلے میں سیکیورٹی گارڈریلز اور حفاظتی پرامپٹس شامل کیے جاتے ہیں۔"
+          },
+          {
+            "step": 5,
+            "title": "جانچ اور بینچ مارکنگ",
+            "description": "ہم ماڈل کو مخصوص سوالات کے سیٹ پر ٹیسٹ کر کے درستگی اور معلومات کا جائزہ لیتے ہیں۔ ہم بیک وقت کئی صارفین کے بوجھ کے تحت ماڈل کی رفتار اور کارکردگی ناپتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "کمپریشن اور لانچ",
+            "description": "ہم ماڈل کا سائز چھوٹا کرنے کے لیے کوانٹائزیشن کرتے ہیں اور اسے vLLM کے ذریعے فعال کرتے ہیں۔ یہ سیٹ اپ آپ کے محفوظ نیٹ ورک کے ساتھ مکمل طور پر جوڑ دیا جاتا ہے۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "ہمیں OpenAI کے بجائے کسٹم LLM کیوں بنانا چاہیے؟",
+            "answer": "عمومی APIs جیسے OpenAI عام کاموں کے لیے بہترین ہیں، لیکن انہیں آپ کے ملکیتی ڈیٹا کا علم نہیں ہوتا، اور ان میں ڈیٹا کی رازداری کے سنگین مسائل ہوتے ہیں۔ کسٹم LLM بنانے سے آپ کو ماڈل پر 100% کنٹرول ملتا ہے، مسلسل فیسوں سے نجات ملتی ہے اور آپ کا ڈیٹا محفوظ رہتا ہے۔ اس کے علاوہ، آپ اسے مخصوص اور حساس کاموں کے لیے بالکل درست کر سکتے ہیں۔"
+          },
+          {
+            "question": "کسٹم ماڈل کی ٹریننگ کے لیے کتنے ڈیٹا کی ضرورت ہوتی ہے؟",
+            "answer": "ڈومین ایڈاپٹیشن اور فائن ٹیوننگ کے لیے ہمیں عام طور پر 10,000 سے 100,000 تک اچھے انسٹرکشن پیئرز یا کچھ گیگا بائٹس صاف ٹیکسٹ ڈیٹا درکار ہوتا ہے۔ اگر آپ کے پاس ڈیٹا کم ہے، تو ہم مصنوعی ڈیٹا جنریشن تکنیکیں استعمال کر کے ٹریننگ کارپس کو بڑھا سکتے ہیں۔ ہم آغاز میں آپ کے ڈیٹا کا آڈٹ کرتے ہیں۔"
+          },
+          {
+            "question": "کسٹم LLM ہوسٹ کرنے کے لیے کون سے سرورز درکار ہوتے ہیں؟",
+            "answer": "یہ ماڈل کے سائز اور ٹریفک پر منحصر ہے۔ ایک چھوٹا 7-billion پیرامیٹر ماڈل سنگل کسٹمر گریڈ GPU (جیسے NVIDIA RTX 4090 یا A10G) پر سستی سے چل سکتا ہے۔ بڑے ماڈلز (جیسے 70-billion پیرامیٹرز) کے لیے زیادہ ٹریفک سنبھالنے کے لیے ملٹی GPU نوڈس (جیسے 8x H100s) درکار ہوتے ہیں جو ہم کلاؤڈ پر سیٹ کر سکتے ہیں۔"
+          },
+          {
+            "question": "کیا کسٹم LLM کو ایک سے زیادہ زبانیں سمجھنے کی تربیت دی جا سکتی ہے؟",
+            "answer": "جی ہاں، ہم بنیادی ماڈلز پر ملٹی لینگول الائنمنٹ کر سکتے ہیں۔ ہم اردو، انگریزی، ترکی، جرمن اور عربی جیسی زبانوں میں ڈیٹا تیار کرتے ہیں تاکہ کسٹم ماڈل تمام زبانوں میں یکساں سوچنے اور سمجھنے کی صلاحیت برقرار رکھے۔ یہ خصوصیت عالمی سطح پر کام کرنے والے اداروں کے لیے بہت فائدہ مند ہے۔"
+          },
+          {
+            "question": "کسٹم LLM بنانے میں کتنا وقت لگتا ہے؟",
+            "answer": "ایک عام کسٹم LLM پروجیکٹ کو ڈیٹا کی جانچ سے لے کر فائنل لانچ تک 8 سے 12 ہفتے لگتے ہیں۔ پہلے 4 ہفتے ڈیٹا کی تیاری اور ماڈل سلیکشن پر لگتے ہیں، اس کے بعد 3 ہفتے ٹریننگ ہوتی ہے، اور آخری ہفتوں میں ماڈل کی جانچ، سائز کی کمی اور سرور پر تعیناتی کی جاتی ہے۔"
+          },
+          {
+            "question": "ہم کیسے جانچتے ہیں کہ کسٹم ماڈل صحیح کام کر رہا ہے؟",
+            "answer": "ہم آپ کے کاروبار کے مخصوص سوالات اور کاموں پر مشتمل ایک کسٹم بینچ مارک ٹیسٹ تیار کرتے ہیں۔ ہم خودکار میٹرکس (جیسے BERTScore اور MMLU) کے ساتھ ساتھ انسانی جائزے کا امتزاج استعمال کرتے ہیں۔ یہ دوہرا نظام یقینی بناتا ہے کہ ماڈل نہ صرف ریاضیاتی طور پر درست ہو بلکہ عملی طور پر بھی کارآمد ہو۔"
+          },
+          {
+            "question": "PEFT کیا ہے اور یہ کیسے لاگت بچاتا ہے؟",
+            "answer": "پیرامیٹر ایفیشنٹ فائن ٹیوننگ (PEFT) جیسے کہ LoRA، بنیادی ماڈل کو تبدیل کیے بغیر صرف ایک چھوٹی پرت کو ٹرین کرتی ہے۔ اس سے ٹریننگ کے دوران GPU میموری کی ضرورت 90% تک کم ہو جاتی ہے، جس کا مطلب ہے کہ ہم بہت سستے سرورز پر کم وقت میں ماڈل ٹرین کر سکتے ہیں، اور ماڈل تمام بنیادی صلاحیتیں برقرار رکھتا ہے۔"
+          },
+          {
+            "question": "کیا ماڈل ٹریننگ کے دوران ہمارا ڈیٹا محفوظ رہتا ہے؟",
+            "answer": "بالکل۔ ہم تمام ڈیٹا پروسیسنگ اور ٹریننگ آپ کے محفوظ، نجی کلاؤڈ ماحول (AWS، Azure، Google Cloud یا لوکل سرورز) میں کرتے ہیں۔ آپ کا اصل ڈیٹا کبھی بھی آپ کے نیٹ ورک سے باہر نہیں جاتا، اور ہم پبلک APIs استعمال نہیں کرتے جو آپ کی معلومات کو پبلک کر سکیں۔ ٹریننگ کے بعد ماڈل مکمل آپ کا ہوتا ہے۔"
+          }
+        ],
+        "technologies": [
+          { "name": "Hugging Face", "icon": "huggingface" },
+          { "name": "PyTorch", "icon": "pytorch" },
+          { "name": "vLLM", "icon": "vllm" },
+          { "name": "DeepSpeed", "icon": "deepspeed" },
+          { "name": "Python", "icon": "python" },
+          { "name": "Kubernetes", "icon": "kubernetes" },
+          { "name": "Weights & Biases", "icon": "wandb" },
+          { "name": "Docker", "icon": "docker" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "تطوير نماذج LLM المخصصة",
+      "shortDescription": "ابنوا نماذج لغوية كبيرة مخصصة ومصممة خصيصاً لمجال عملكم. نصمم ونقود تدريب وتحسين نماذج LLM لخدمة مسارات العمل المؤسسية الخاصة والآمنة للغاية.",
+      "fullDescription": "تفشل النماذج اللغوية العامة عندما تواجه مصطلحات متخصصة للغاية، وبيانات ملكية خاصة، ومتطلبات أمنية صارمة. نحن نبني نماذج لغوية مخصصة ومصممة خصيصاً لمجال عملكم، سواء كان ذلك في التمويل أو الطب أو القانون أو التصنيع. يقوم فريقنا بتنظيم مجموعات بيانات تدريبية عالية الجودة، وإجراء التكيف مع المجال، واستخدام تقنيات الضبط الدقيق بكفاءة المعلمات (PEFT) مثل LoRA لتكييف النماذج مفتوحة المصدر (مثل Llama و Mistral) مع مسارات عملكم. ننشر هذه النماذج على بنية تحتية خاصة وآمنة باستخدام محركات استضافة محسّنة مثل vLLM، مما يقلل من زمن الاستجابة وتكاليف التشغيل مع ضمان خصوصية البيانات الكاملة. تدخل معظم المشاريع حيز الإنتاج خلال 8 إلى 12 أسبوعاً.",
+      "features": [
+        "الضبط المسبق للمجال الخاص",
+        "الضبط الدقيق بكفاءة المعلمات (PEFT)",
+        "تنظيم مجموعات البيانات المملوكة",
+        "المحاذاة باستخدام RLHF و DPO",
+        "تقنيات التكميم وضغط النماذج",
+        "الاستضافة عالية الأداء عبر vLLM",
+        "تدريب المرمز المخصص (Tokenizer)",
+        "الاستضافة السحابية الخاصة والمحلية"
+      ],
+      "benefits": [
+        "الملكية الكاملة لأوزان النموذج والبيانات",
+        "دقة لا مثيل لها في المصطلحات المتخصصة",
+        "التخلص من رسوم الاشتراكات المتكررة لواجهات API الخارجية",
+        "الامتثال الصارم لمعايير خصوصية بيانات الشركات",
+        "تقليل كبير في زمن الاستجابة وحجم البنية التحتية",
+        "تجنب الاحتكار من قبل الموردين بفضل الأساس المفتوح"
+      ],
+      "metaTitle": "تطوير نماذج LLM مخصصة | PakSoft",
+      "metaDescription": "ابنوا وانشروا نماذج لغوية كبيرة مخصصة لمجال عملكم. حلول LLM آمنة وخاصة ومحسّنة بالكامل. تواصلوا معنا اليوم.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تدقيق البيانات وتنظيمها",
+            "description": "نحدد بياناتكم المملوكة وننظفها ونبنيها لإنشاء مجموعة تدريبية عالية الجودة. تشمل هذه العملية إزالة التكرار والتصفية وتوليد البيانات الاصطناعية لضمان أداء النموذج الأمثل."
+          },
+          {
+            "step": 2,
+            "title": "اختيار النموذج الأساسي",
+            "description": "نقيم ونختار أفضل نموذج أساسي مفتوح المصدر بناءً على المعلمات والترخيص وأهداف زمن الاستجابة. نطابق ميزانية الحوسبة الخاصة بكم مع حجم النموذج المناسب للمهمة."
+          },
+          {
+            "step": 3,
+            "title": "التدريب المخصص للمجال",
+            "description": "نقوم بالضبط الدقيق الخاضع للإشراف أو التدريب الكامل للمعلمات وفقاً لتعقيد متطلباتكم. نستخدم تقنيات موفرة للمعلمات للحفاظ على تكاليف الحوسبة منخفضة."
+          },
+          {
+            "step": 4,
+            "title": "المحاذاة والتقوية",
+            "description": "نطبق التعلم المعزز من التغذية الراجعة البشرية (RLHF) أو تحسين التفضيل المباشر (DPO) لمحاذاة سلوك النموذج. تقدم هذه المرحلة ضوابط أمان صارمة ومطالبات نظام واضحة."
+          },
+          {
+            "step": 5,
+            "title": "التقييم والمقارنة المرجعية",
+            "description": "نختبر النموذج مقابل مجموعات تحقق مخصصة لقياس الدقة والهلوسة والمعرفة بالمجال. نقيس الإنتاجية وزمن الاستجابة تحت أعباء إنتاج تحاكي الواقع."
+          },
+          {
+            "step": 6,
+            "title": "التحسين والنشر",
+            "description": "نطبق تقنيات التكميم لتقليل متطلبات الأجهزة وننشر النموذج باستخدام vLLM. يتم دمج النشر بالكامل مع البنية التحتية الآمنة لشركتكم."
+          }
+        ],
+        "faq": [
+          {
+            "question": "لماذا يجب أن نبني نموذج LLM مخصصاً بدلاً من استخدام OpenAI؟",
+            "answer": "واجهات برمجة التطبيقات العامة مثل OpenAI ممتازة للمهام العامة، ولكنها تفتقر إلى المعرفة ببياناتكم الخاصة ومصطلحاتكم المتخصصة، وتثير مخاوف جدية بشأن خصوصية البيانات. يمنحكم بناء نموذج LLM مخصص ملكية 100% لأوزان النموذج الخاص بكم، ويلغي تكاليف الترخيص المتكررة، ويضمن عدم خروج بياناتكم من سحابتكم الخاصة. كما يتيح لكم ضبط النموذج لمهام محددة وعالية الدقة."
+          },
+          {
+            "question": "ما هي كمية البيانات المطلوبة لتدريب نموذج لغوي مخصص؟",
+            "answer": "للتكيف مع المجال والضبط الدقيق، نحتاج عادةً إلى ما بين 10,000 و 100,000 زوج من التعليمات عالية الجودة أو عدة غيغابايت من النصوص النظيفة. إذا كانت مجموعة بياناتكم أصغر، يمكننا استخدام تقنيات متقدمة لتوليد البيانات الاصطناعية لدعم التدريب. نقوم بتدقيق بياناتكم الحالية أثناء مرحلة الاكتشاف للتوصية بأفضل طريقة."
+          },
+          {
+            "question": "ما هي متطلبات الأجهزة لاستضافة نموذج LLM مخصص؟",
+            "answer": "تعتمد متطلبات الاستضافة تماماً على حجم النموذج ومتطلبات الإنتاجية. يمكن لنموذج مكمم بحجم 7 مليارات معلمة أن يعمل بكفاءة على وحدة معالجة رسومات فردية مثل NVIDIA RTX 4090 أو A10G بتكلفة منخفضة جداً. تتطلب النماذج الأكبر (مثل 70 مليار معلمة) عقدًا متعددة المعالجات (مثل 8x H100) لبيئات الإنتاج عالية الحركة، والتي يمكننا استضافتها على سحابة خاصة."
+          },
+          {
+            "question": "هل يمكن تدريب نموذج LLM مخصص لفهم لغات متعددة؟",
+            "answer": "نعم، يمكننا إجراء محاذاة متعددة اللغات على النماذج الأساسية. ننظم مجموعات بيانات التدريب باللغات العربية والإنجليزية والتركية والألمانية والأردية وغيرها لضمان احتفاظ النموذج بقدرته على الاستدلال عبر جميع اللغات. هذا مفيد بشكل خاص للشركات العالمية التي تعمل في أسواق مختلفة."
+          },
+          {
+            "question": "كم من الوقت تستغرق دورة تطوير نموذج LLM مخصص بالكامل؟",
+            "answer": "يستغرق مشروع LLM المخصص القياسي ما بين 8 إلى 12 أسبوعاً للانتقال من التدقيق الأولي للبيانات إلى نموذج جاهز للإنتاج. تركز الأسابيع الأربعة الأولى على إعداد البيانات واختيار النموذج، تليها 3 أسابيع من التدريب، وتُخصص الأسابيع الأخيرة للتقييم والتكميم والنشر."
+          },
+          {
+            "question": "كيف تقيمون ما إذا كان النموذج المخصص يعمل بشكل جيد؟",
+            "answer": "نصمم مقياس تقييم مخصصاً يحتوي على أسئلة ومهام اختبارية ممثلة ومحددة لعملكم. نجمع بين تقييمات المقاييس الآلية (مثل BERTScore و MMLU) ومراجعة العنصر البشري. يضمن هذا التقييم المزدوج الطبقة أن النموذج ليس سليماً إحصائياً فحسب، بل مفيد عملياً لفريقكم."
+          },
+          {
+            "question": "ما هي تقنية PEFT وكيف توفر التكاليف؟",
+            "answer": "تعمل تقنيات الضبط الدقيق الموفرة للمعلمات (PEFT)، مثل LoRA، على تجميد غالبية أوزان النموذج الأساسي وتدريب طبقة مهايئ صغيرة فقط. يقلل هذا من ذاكرة وحدة معالجة الرسومات المطلوبة أثناء التدريب بنسبة تصل إلى 90%، مما يعني أنه يمكننا تدريب النماذج على أجهزة أرخص بكثير وفي وقت أقل. يحتفظ النموذج النهائي بقدراته الأساسية مع تعلم مهارات متخصصة جديدة."
+          },
+          {
+            "question": "هل بيانات عملنا آمنة أثناء تدريب النموذج؟",
+            "answer": "بالتأكيد. نجري جميع عمليات معالجة البيانات والتدريب داخل بيئتكم السحابية الخاصة والآمنة (AWS أو Azure أو Google Cloud أو محلياً). لا تغادر مجموعات بياناتكم الخام بنيتكم التحتية أبداً، ولا نستخدم واجهات برمجة التطبيقات العامة التي قد تكشف عن ملكيتكم الفكرية. بمجرد التدريب، تنتمي أوزان النموذج إليكم بالكامل."
+          }
+        ],
+        "technologies": [
+          { "name": "Hugging Face", "icon": "huggingface" },
+          { "name": "PyTorch", "icon": "pytorch" },
+          { "name": "vLLM", "icon": "vllm" },
+          { "name": "DeepSpeed", "icon": "deepspeed" },
+          { "name": "Python", "icon": "python" },
+          { "name": "Kubernetes", "icon": "kubernetes" },
+          { "name": "Weights & Biases", "icon": "wandb" },
+          { "name": "Docker", "icon": "docker" }
+        ]
+      }
+    }
+  },
+  "customer-service-ai": {
+    "en": {
+      "name": "Customer Service AI",
+      "shortDescription": "Transform your customer support with intelligent AI automation. We deploy smart routing, sentiment analysis, and context-aware auto-responses to resolve tickets faster.",
+      "fullDescription": "Customer support teams are often overwhelmed by high ticket volumes, leading to long response times and agent burnout. We build custom Customer Service AI systems that integrate directly with your existing helpdesk platforms like Zendesk or Intercom. By utilizing advanced natural language processing (NLP) and large language models (LLMs), our solutions automatically categorize incoming queries, perform real-time sentiment analysis, and route complex cases to the right department. We implement automated response drafting and agent-assist tools that suggest relevant knowledge base articles, cutting average handle times by 30% to 50%. The result is a faster support workflow that maintains high CSAT scores. Most customer service integrations go live in 4 to 6 weeks.",
+      "features": [
+        "Omnichannel Helpdesk Integration",
+        "Intent Recognition & Ticket Categorization",
+        "Automated Multi-lingual Support",
+        "Real-Time Sentiment Tracking",
+        "Smart Agent-Assist Drafts",
+        "Automated Knowledge Base Sync",
+        "Dynamic Escalation Routing",
+        "Analytics & CSAT Forecasting"
+      ],
+      "benefits": [
+        "Reduce support ticket resolution times by up to 50%",
+        "Automate up to 70% of routine customer inquiries",
+        "Scale customer support 24/7 without adding staff",
+        "Improve agent satisfaction by removing repetitive tasks",
+        "Maintain high customer satisfaction with instant replies",
+        "Gain deep insights into customer sentiment trends"
+      ],
+      "metaTitle": "Customer Service AI Solutions | PakSoft",
+      "metaDescription": "Automate your support workflows with Customer Service AI. Integrate smart routing, sentiment analysis, and auto-responses. Contact PakSoft today.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Support Workflow Audit",
+            "description": "We analyze your historical support ticket data, identifying repetitive queries and routing inefficiencies. Together we determine which workflows are suitable for automation and which require human touch."
+          },
+          {
+            "step": 2,
+            "title": "Helpdesk API Integration",
+            "description": "We securely connect our AI engine with your existing ticketing platforms (e.g., Zendesk, Intercom, Salesforce). We establish read and write channels for real-time ticket ingestion and response delivery."
+          },
+          {
+            "step": 3,
+            "title": "Classifier & Prompt Design",
+            "description": "We build and train custom intent classification models to accurately tag incoming tickets. We design prompt templates for response generation that match your company's tone and brand voice."
+          },
+          {
+            "step": 4,
+            "title": "Knowledge Integration",
+            "description": "We sync the AI engine with your internal knowledge base and documentation portals. This ensures the AI drafts accurate, source-cited answers to complex technical or policy queries."
+          },
+          {
+            "step": 5,
+            "title": "Agent-in-the-Loop Pilot",
+            "description": "We launch the system in a restricted pilot phase where the AI drafts responses for human review before sending. We gather agent feedback to refine model prompts and routing logic."
+          },
+          {
+            "step": 6,
+            "title": "Full Automation & Monitoring",
+            "description": "We enable automatic replies for high-confidence queries and deploy real-time analytics dashboards. We monitor CSAT, resolution times, and system logs to continuously improve the models."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Can Customer Service AI integrate with our existing CRM?",
+            "answer": "Yes. Our AI engine is designed to connect seamlessly with major helpdesk platforms and CRMs, including Zendesk, Intercom, Salesforce, Hubspot, and Freshdesk via secure REST APIs. We construct webhook connections that trigger the AI analysis instantly when a new ticket is created. This ensures your agents do not need to change their existing tools or interface to benefit from the AI."
+          },
+          {
+            "question": "How does the AI handle customer languages other than English?",
+            "answer": "The system is fully multilingual, supporting automatic detection and response generation in English, Turkish, German, Urdu, Arabic, and over 50 other languages. It translates incoming tickets internally, matches them against localized knowledge bases, and drafts responses in the customer's native language. This allows you to serve a global customer base without hiring multilingual agents."
+          },
+          {
+            "question": "Will the AI make mistakes and send incorrect answers to customers?",
+            "answer": "To prevent incorrect answers (hallucinations), we implement strict confidence thresholds and guardrails. If the AI's confidence score falls below 85% or requires complex reasoning, it routes the ticket to a human agent instead of replying automatically. For the pilot phase, we use an agent-assist model where every AI draft must be approved by a human before sending."
+          },
+          {
+            "question": "What percentage of customer queries can actually be automated?",
+            "answer": "Typically, customer service operations see between 50% and 70% of routine, repetitive queries automated within the first three months. These include common requests like password resets, order tracking, shipping updates, and basic policy questions. By automating these routine queries, your agents can focus their time on solving complex cases that require human empathy."
+          },
+          {
+            "question": "How does the system ensure customer data remains private and secure?",
+            "answer": "We take data privacy extremely seriously. We encrypt all transit and static data and comply with GDPR and local data protection regulations. The AI engine can be deployed within your private cloud environment, ensuring that customer conversations and personal information are never used to train public models or shared with unauthorized third parties."
+          },
+          {
+            "question": "What is the difference between agent-assist and full automation?",
+            "answer": "Agent-assist drafts responses in the background and presents them to human agents, who can edit, approve, or reject them with a single click. Full automation allows the AI to send replies directly to customers for highly confident, routine intents without any human intervention. We usually start with agent-assist and gradually transition to full automation."
+          },
+          {
+            "question": "How long does it take to deploy a customer service AI system?",
+            "answer": "A standard integration using existing APIs and basic classification templates takes about 4 to 6 weeks. More complex setups involving deep integration with custom databases, legacy ticketing systems, or advanced fine-tuning on custom support logs can take between 8 and 12 weeks. We provide clear milestone timelines during the planning phase."
+          },
+          {
+            "question": "How does the system track customer satisfaction (CSAT)?",
+            "answer": "The system monitors post-interaction CSAT surveys and correlates them with the AI's response confidence, topic category, and handle time. Additionally, our sentiment analysis engine scans customer replies in real time to detect frustration or satisfaction. This data is displayed on a centralized dashboard, helping you identify areas for content improvement."
+          }
+        ],
+        "technologies": [
+          { "name": "OpenAI", "icon": "openai" },
+          { "name": "Zendesk API", "icon": "zendesk" },
+          { "name": "Intercom API", "icon": "intercom" },
+          { "name": "Python", "icon": "python" },
+          { "name": "LangChain", "icon": "langchain" },
+          { "name": "Redis", "icon": "redis" },
+          { "name": "Node.js", "icon": "nodejs" },
+          { "name": "FastAPI", "icon": "fastapi" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Müşteri Hizmetleri Yapay Zekası",
+      "shortDescription": "Müşteri desteğinizi akıllı yapay zeka otomasyonu ile dönüştürün. Destek taleplerini daha hızlı çözmek için akıllı yönlendirme, duygu analizi ve otomatik yanıtlar uyguluyoruz.",
+      "fullDescription": "Müşteri destek ekipleri, genellikle yüksek talep hacimleri nedeniyle bunalır; bu durum uzun yanıt sürelerine ve çalışan tükenmişliğine yol açar. Zendesk veya Intercom gibi mevcut yardım masası platformlarınızla doğrudan entegre olan özel Müşteri Hizmetleri Yapay Zekası sistemleri kuruyoruz. Gelişmiş doğal dil işleme (NLP) ve büyük dil modelleri (LLM) kullanarak, gelen talepleri otomatik olarak kategorize ediyor, gerçek zamanlı duygu analizi yapıyor ve karmaşık durumları doğru departmana yönlendiriyoruz. Ortalama işlem sürelerini %30 ila %50 oranında azaltan otomatik yanıt taslakları ve müşteri temsilcisi asistan araçları uyguluyoruz. Sonuç, yüksek müşteri memnuniyeti (CSAT) skorlarını koruyan daha hızlı bir destek akışıdır. Sistemler 4-6 haftada devreye girer.",
+      "features": [
+        "Çok Kanallı Yardım Masası Entegrasyonu",
+        "Niyet Tanımlama ve Talep Kategorizasyonu",
+        "Otomatik Çok Dilli Desteği",
+        "Gerçek Zamanlı Duygu Takibi",
+        "Akıllı Temsilci Asistanı Taslakları",
+        "Otomatik Bilgi Bankası Senkronizasyonu",
+        "Dinamik Eskalasyon Yönlendirmesi",
+        "Analitik ve CSAT Tahminleme"
+      ],
+      "benefits": [
+        "Destek talebi çözüm sürelerini %50'ye kadar azaltın",
+        "Rutin müşteri sorularının %70'ine kadarını otomatikleştirin",
+        "Ek personel almadan 7/24 müşteri desteği sağlayın",
+        "Tekrarlayan görevleri kaldırarak temsilci memnuniyetini artırın",
+        "Anında yanıtlarla yüksek müşteri memnuniyetini koruyun",
+        "Müşteri duygu eğilimleri hakkında derinlemesine bilgi edinin"
+      ],
+      "metaTitle": "Müşteri Hizmetleri Yapay Zekası | PakSoft",
+      "metaDescription": "Müşteri Hizmetleri Yapay Zekası ile destek süreçlerinizi otomatikleştirin. Akıllı yönlendirme, duygu analizi ve otomatik yanıtları entegre edin.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Destek Akışı Denetimi",
+            "description": "Geçmiş destek talebi verilerinizi analiz ederek tekrarlayan soruları ve yönlendirme verimsizliklerini belirleriz. Hangi iş akışlarının otomasyona uygun olduğunu, hangilerinin insan müdahalesi gerektirdiğini birlikte tanımlarız."
+          },
+          {
+            "step": 2,
+            "title": "Yardım Masası API Entegrasyonu",
+            "description": "Yapay zeka motorumuzu mevcut destek platformlarınıza (Zendesk, Intercom, Salesforce vb.) güvenli bir şekilde bağlarız. Gerçek zamanlı talep alımı ve yanıt iletimi için okuma/yazma kanalları oluştururuz."
+          },
+          {
+            "step": 3,
+            "title": "Sınıflandırıcı ve Prompt Tasarımı",
+            "description": "Gelen talepleri doğru şekilde etiketlemek için özel niyet sınıflandırma modelleri oluşturur ve eğitiriz. Şirketinizin tonuna ve marka sesine uygun yanıt üretimi için prompt şablonları tasarlarız."
+          },
+          {
+            "step": 4,
+            "title": "Bilgi Entegrasyonu",
+            "description": "Yapay zeka motorunu dahili bilgi bankanız ve dokümantasyon portallarınızla senkronize ederiz. Bu, yapay zekanın karmaşık teknik veya politika sorularına kaynak gösterilmiş, doğru yanıtlar hazırlamasını sağlar."
+          },
+          {
+            "step": 5,
+            "title": "İnsan Denetimli Pilot Aşama",
+            "description": "Sistemi, yapay zekanın göndermeden önce insan incelemesi için yanıt taslakları hazırladığı sınırlı bir pilot fazda başlatırız. Model promptlarını ve yönlendirme mantığını iyileştirmek için geri bildirim toplarız."
+          },
+          {
+            "step": 6,
+            "title": "Tam Otomasyon ve İzleme",
+            "description": "Güven skoru yüksek sorgular için otomatik yanıtları etkinleştirir ve gerçek zamanlı analiz panellerini yayına alırız. Modelleri sürekli iyileştirmek için CSAT, çözüm süreleri ve sistem günlüklerini izleriz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Müşteri Hizmetleri Yapay Zekası mevcut CRM sistemimizle entegre olabilir mi?",
+            "answer": "Evet. Yapay zeka motorumuz Zendesk, Intercom, Salesforce, Hubspot ve Freshdesk gibi büyük yardım masası platformları ve CRM'lerle güvenli REST API'ler aracılığıyla sorunsuz bir şekilde bağlanacak şekilde tasarlanmıştır. Yeni bir destek talebi oluşturulduğunda yapay zeka analizini anında tetikleyen webhook bağlantıları kurarız. Bu sayede temsilcilerinizin yapay zekadan yararlanmak için mevcut araçlarını veya arayüzlerini değiştirmesi gerekmez."
+          },
+          {
+            "question": "Yapay zeka İngilizce dışındaki müşteri dilleriyle nasıl başa çıkıyor?",
+            "answer": "Sistem tamamen çok dillidir; Türkçe, İngilizce, Almanca, Urduca, Arapça ve 50'den fazla dilde otomatik algılama ve yanıt üretimini destekler. Gelen talepleri dahili olarak çevirir, yerelleştirilmiş bilgi bankalarıyla eşleştirir ve yanıtları müşterinin ana dilinde taslak haline getirir. Bu, çok dilli temsilciler işe almadan küresel bir müşteri tabanına hizmet etmenizi sağlar."
+          },
+          {
+            "question": "Yapay zeka hata yapıp müşterilere yanlış cevaplar gönderir mi?",
+            "answer": "Yanlış cevapları (halüsinasyonları) önlemek için katı güven eşikleri ve koruma sınırları uyguluyoruz. Yapay zekanın güven skoru %85'in altına düşerse veya karmaşık bir muhakeme gerektirirse, otomatik yanıt vermek yerine talebi bir insan temsilciye yönlendirir. Pilot aşama için, her yapay zeka taslağının gönderilmeden önce bir insan tarafından onaylanması gereken temsilci destekli bir model kullanıyoruz."
+          },
+          {
+            "question": "Müşteri sorularının yüzde kaçı fiilen otomatikleştirilebilir?",
+            "answer": "Genellikle müşteri hizmetleri operasyonlarında, ilk üç ay içinde rutin ve tekrarlayan soruların %50 ila %70'inin otomatikleştirildiği görülür. Bunlar arasında şifre sıfırlama, sipariş takibi, kargo güncellemeleri ve temel politika soruları gibi yaygın talepler yer alır. Bu rutin sorguları otomatikleştirerek temsilcilerinizin insan empati ve muhakemesi gerektiren karmaşık vakaları çözmeye odaklanmasını sağlarsınız."
+          },
+          {
+            "question": "Sistem müşteri verilerinin gizli ve güvenli kalmasını nasıl sağlıyor?",
+            "answer": "Veri gizliliğini son derece ciddiye alıyoruz. Tüm transit ve statik verileri şifreliyor, KVKK, GDPR ve yerel veri koruma düzenlemelerine uyum sağlıyoruz. Yapay zeka motoru, müşteri konuşmalarının ve kişisel bilgilerin asla genel modelleri eğitmek için kullanılmamasını veya yetkisiz üçüncü taraflarla paylaşılmamasını sağlamak amacıyla özel bulut ortamınıza kurulabilir."
+          },
+          {
+            "question": "Temsilci asistanı ile tam otomasyon arasındaki fark nedir?",
+            "answer": "Temsilci asistanı, arka planda yanıt taslakları hazırlar ve bunları insan temsilcilere sunar; onlar da tek bir tıklamayla bunları düzenleyebilir, onaylayabilir veya reddedebilir. Tam otomasyon ise yapay zekanın yüksek güvene sahip rutin niyetler için insan müdahalesi olmadan doğrudan müşterilere yanıt göndermesine olanak tanır. Genellikle temsilci asistanı ile başlar ve kademeli olarak tam otomasyona geçeriz."
+          },
+          {
+            "question": "Bir müşteri hizmetleri yapay zeka sistemini kurmak ne kadar sürer?",
+            "answer": "Mevcut API'leri ve temel sınıflandırma şablonlarını kullanan standart bir entegrasyon yaklaşık 4 ila 6 hafta sürer. Özel veri tabanlarıyla derin entegrasyon, eski biletleme sistemleri veya özel destek günlükleri üzerinde gelişmiş ince ayar gerektiren daha karmaşık kurulumlar 8 ila 12 hafta arasında sürebilir. Planlama aşamasında net kilometre taşları sunarız."
+          },
+          {
+            "question": "Sistem müşteri memnuniyetini (CSAT) nasıl takip ediyor?",
+            "answer": "Sistem etkileşim sonrası CSAT anketlerini izler ve bunları yapay zekanın yanıt güveni, konu kategorisi ve işlem süresiyle ilişkilendirir. Ek olarak, duygu analizi motorumuz müşteri yanıtlarını gerçek zamanlı olarak tarayarak memnuniyetsizlik veya memnuniyeti tespit eder. Bu veriler merkezi bir panelde görüntülenerek içerik geliştirme alanlarını belirlemenize yardımcı olur."
+          }
+        ],
+        "technologies": [
+          { "name": "OpenAI", "icon": "openai" },
+          { "name": "Zendesk API", "icon": "zendesk" },
+          { "name": "Intercom API", "icon": "intercom" },
+          { "name": "Python", "icon": "python" },
+          { "name": "LangChain", "icon": "langchain" },
+          { "name": "Redis", "icon": "redis" },
+          { "name": "Node.js", "icon": "nodejs" },
+          { "name": "FastAPI", "icon": "fastapi" }
+        ]
+      }
+    },
+    "de": {
+      "name": "KI im Kundenservice",
+      "shortDescription": "Transformieren Sie Ihren Kundenservice mit intelligenter KI-Automatisierung. Wir implementieren intelligentes Routing, Sentiment-Analysen und automatische Antworten für schnellere Lösungen.",
+      "fullDescription": "Kundenservice-Teams sind oft durch hohe Ticketvolumen überlastet, was zu langen Antwortzeiten und Mitarbeiter-Burnout führt. Wir bauen maßgeschneiderte Kundenservice-KI-Systeme, die sich direkt in Ihre bestehenden Helpdesk-Plattformen wie Zendesk oder Intercom integrieren lassen. Durch den Einsatz moderner natürlicher Sprachverarbeitung (NLP) und großer Sprachmodelle (LLMs) kategorisieren unsere Lösungen eingehende Anfragen automatisch, führen Sentiment-Analysen in Echtzeit durch und leiten komplexe Fälle an die richtige Abteilung weiter. Wir implementieren automatische Antwortentwürfe und Agent-Assist-Tools, die passende Wissensdatenbank-Artikel vorschlagen und so die durchschnittliche Bearbeitungszeit um 30 % bis 50 % senken. Das Ergebnis ist ein schnellerer Support-Workflow bei konstant hohen CSAT-Werten. Die meisten Integrationen gehen in 4 bis 6 Wochen live.",
+      "features": [
+        "Omnichannel-Helpdesk-Integration",
+        "Intent-Erkennung & Ticket-Klassifizierung",
+        "Automatischer mehrsprachiger Support",
+        "Echtzeit-Sentiment-Tracking",
+        "Intelligente Agent-Assist-Entwürfe",
+        "Automatischer Wissensdatenbank-Sync",
+        "Dynamisches Eskalations-Routing",
+        "Analytics & CSAT-Prognosen"
+      ],
+      "benefits": [
+        "Reduzierung der Ticketbearbeitungszeit um bis zu 50 %",
+        "Automatisierung von bis zu 70 % der Routineanfragen",
+        "Skalierung des Supports rund um die Uhr ohne Personalaufbau",
+        "Steigerung der Mitarbeiterzufriedenheit durch Entlastung",
+        "Sicherung hoher Kundenzufriedenheit dank Sofortantworten",
+        "Tiefe Einblicke in Stimmungen und Trends der Kunden"
+      ],
+      "metaTitle": "KI im Kundenservice | PakSoft",
+      "metaDescription": "Automatisieren Sie Ihren Kundenservice mit KI. Integrieren Sie intelligentes Routing, Sentiment-Analysen und Autoreply. Jetzt anfragen bei PakSoft.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Support-Workflow-Audit",
+            "description": "Wir analysieren Ihre historischen Ticketdaten, um wiederkehrende Anfragen und Ineffizienzen im Routing zu identifizieren. Gemeinsam legen wir fest, welche Workflows sich für die Automatisierung eignen."
+          },
+          {
+            "step": 2,
+            "title": "Helpdesk-API-Integration",
+            "description": "Wir verbinden unsere KI-Engine sicher mit Ihren bestehenden Ticketing-Plattformen (z. B. Zendesk, Intercom). Wir richten Lese- und Schreibkanäle für die Ticketverarbeitung in Echtzeit ein."
+          },
+          {
+            "step": 3,
+            "title": "Klassifikator- & Prompt-Design",
+            "description": "Wir entwickeln und trainieren maßgeschneiderte Intent-Klassifikationsmodelle, um eingehende Tickets präzise zu taggen. Wir entwerfen Prompt-Vorlagen, die dem Tonfall Ihrer Marke entsprechen."
+          },
+          {
+            "step": 4,
+            "title": "Wissens-Integration",
+            "description": "Wir synchronisieren die KI-Engine mit Ihrer internen Wissensdatenbank und Dokumentation. Dies stellt sicher, dass die KI präzise, quellengestützte Antworten auf komplexe Anfragen entwirft."
+          },
+          {
+            "step": 5,
+            "title": "Agent-in-the-Loop-Pilot",
+            "description": "Wir starten das System in einer Pilotphase, in der die KI Antwortentwürfe zur Freigabe durch menschliche Agenten erstellt. Wir sammeln Feedback, um Prompts und Routing-Logik zu verfeinern."
+          },
+          {
+            "step": 6,
+            "title": "Vollautomatisierung & Monitoring",
+            "description": "Wir aktivieren automatische Antworten für eindeutige Intents und stellen Dashboards bereit. Wir überwachen CSAT, Bearbeitungszeiten und Systemprotokolle, um das System kontinuierlich zu verbessern."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Kann die Kundenservice-KI in unser bestehendes CRM integriert werden?",
+            "answer": "Ja. Unsere KI-Engine ist so konzipiert, dass sie sich über sichere REST-APIs nahtlos in gängige Helpdesk-Plattformen und CRMs wie Zendesk, Intercom, Salesforce, Hubspot und Freshdesk integrieren lässt. Wir erstellen Webhook-Verbindungen, die die KI-Analyse sofort nach Ticketeingang starten. Dadurch müssen Ihre Agenten ihre gewohnten Tools nicht verlassen."
+          },
+          {
+            "question": "Wie geht die KI mit anderen Sprachen als Englisch um?",
+            "answer": "Das System arbeitet vollkommen mehrsprachig und unterstützt die automatische Erkennung und Antwortgenerierung auf Deutsch, Englisch, Türkisch, Urdu, Arabisch und über 50 weiteren Sprachen. Eingehende Tickets werden intern übersetzt, mit der lokalen Wissensdatenbank abgeglichen und in der Sprache des Kunden beantwortet. So bedienen Sie globale Märkte ohne fremdsprachiges Personal."
+          },
+          {
+            "question": "Kann die KI Fehler machen und falsche Antworten an Kunden senden?",
+            "answer": "Um Falschantworten (Halluzinationen) zu vermeiden, nutzen wir strenge Konfidenzschwellen. Liegt der Konfidenzwert der KI unter 85 % oder erfordert die Anfrage komplexes Abwägen, wird das Ticket ohne automatische Antwort an einen Agenten übergeben. In der Pilotphase nutzen wir ein Agent-Assist-Modell, bei dem jeder Entwurf erst von einem Menschen freigegeben werden muss."
+          },
+          {
+            "question": "Wie viel Prozent der Kundenanfragen können automatisiert werden?",
+            "answer": "In der Praxis automatisieren Kundenservice-Abteilungen innerhalb der ersten drei Monate zwischen 50 % und 70 % der Routineanfragen. Dazu gehören Passwörtrücksetzungen, Bestellverfolgung, Versand-Updates und einfache Richtlinienfragen. Durch diese Entlastung können sich Ihre Mitarbeiter auf komplexe Fälle konzentrieren, die menschliche Empathie erfordern."
+          },
+          {
+            "question": "Wie wird die Sicherheit und Vertraulichkeit der Kundendaten gewährleistet?",
+            "answer": "Wir nehmen Datenschutz sehr ernst. Wir verschlüsseln alle Daten bei der Übertragung und Speicherung und erfüllen die Vorgaben der DSGVO. Die KI-Engine kann in Ihrer eigenen Private Cloud bereitgestellt werden. So stellen wir sicher, dass Kundengespräche und sensible Daten niemals für das Training öffentlicher Modelle verwendet werden."
+          },
+          {
+            "question": "Was ist der Unterschied zwischen Agent-Assist und Vollautomatisierung?",
+            "answer": "Agent-Assist entwirft Antworten im Hintergrund und schlägt diese den menschlichen Agenten vor, die sie mit einem Klick bearbeiten, senden oder verwerfen können. Die Vollautomatisierung erlaubt es der KI, Antworten bei sehr hoher Konfidenz ohne menschliches Zutun direkt an den Kunden zu senden. Wir starten meist mit Agent-Assist und steigern die Autonomie schrittweise."
+          },
+          {
+            "question": "Wie lange dauert die Implementierung eines solchen KI-Systems?",
+            "answer": "Eine Standard-Integration mit vorhandenen APIs und grundlegenden Klassifizierungsvorlagen dauert etwa 4 bis 6 Wochen. Komplexere Setups mit tiefen Datenbankintegrationen, Altsystemen oder speziellem Fine-Tuning auf alten Supportprotokollen benötigen 8 bis 12 Wochen. Wir stellen Ihnen während der Planung einen detaillierten Zeitplan zur Verfügung."
+          },
+          {
+            "question": "Wie misst das System die Kundenzufriedenheit (CSAT)?",
+            "answer": "Das System wertet CSAT-Umfragen nach der Interaktion aus und setzt sie in Relation zu Antwortkonfidenz, Themenkategorie und Bearbeitungszeit. Zudem analysiert unsere Sentiment-Engine Kundenantworten in Echtzeit, um Frustration oder Zufriedenheit zu erkennen. Diese Daten werden auf einem Dashboard visualisiert, damit Sie Optimierungspotenziale sofort erkennen."
+          }
+        ],
+        "technologies": [
+          { "name": "OpenAI", "icon": "openai" },
+          { "name": "Zendesk API", "icon": "zendesk" },
+          { "name": "Intercom API", "icon": "intercom" },
+          { "name": "Python", "icon": "python" },
+          { "name": "LangChain", "icon": "langchain" },
+          { "name": "Redis", "icon": "redis" },
+          { "name": "Node.js", "icon": "nodejs" },
+          { "name": "FastAPI", "icon": "fastapi" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "کسٹمر سروس AI",
+      "shortDescription": "اپنے کسٹمر سپورٹ کو ذہین AI آٹومیشن کے ذریعے جدید بنائیں۔ سپورٹ ٹکٹس کو تیزی سے حل کرنے کے لیے اسمارٹ روٹنگ، جذبات کا تجزیہ اور خودکار جوابات نافذ کریں۔",
+      "fullDescription": "کسٹمر سپورٹ ٹیمیں اکثر ٹکٹس کے زیادہ حجم کی وجہ سے دباؤ کا شکار رہتی ہیں، جس سے جواب میں تاخیر ہوتی ہے اور عملہ تھکاوٹ کا شکار ہو جاتا ہے۔ ہم کسٹمر سروس AI سسٹمز بناتے ہیں جو آپ کے موجودہ ہیلپ ڈیسک پلیٹ فارمز (جیسے Zendesk یا Intercom) کے ساتھ براہِ راست مربوط ہو جاتے ہیں۔ جدید طبیعی زبان کی پروسیسنگ (NLP) اور بڑے زبان کے ماڈلز (LLMs) کا استعمال کرتے ہوئے، ہمارا سسٹم خودکار طور پر ٹکٹس کی درجہ بندی کرتا ہے، ان کا جذبات کے لحاظ سے تجزیہ کرتا ہے، اور پیچیدہ کیسز کو متعلقہ شعبے میں بھیجتا ہے۔ ہم ایسے ٹولز فراہم کرتے ہیں جو خودکار طور پر جواب کے مسودے تیار کرتے ہیں اور سپورٹ ایجنٹ کی مدد کرتے ہیں، جس سے ٹکٹ حل کرنے کا وقت 30% سے 50% تک کم ہو جاتا ہے۔ اس سے CSAT سکور بلند رہتا ہے۔ زیادہ تر پروجیکٹس 4 سے 6 ہفتوں میں لائیو ہو جاتے ہیں۔",
+      "features": [
+        "اومنی چینل ہیلپ ڈیسک انٹیگریشن",
+        "نیت کی شناخت اور ٹکٹ کی درجہ بندی",
+        "خودکار کثیر لسانی سپورٹ",
+        "ریئل ٹائم کسٹمر جذبات کی نگرانی",
+        "ایجنٹ کی مدد کے لیے اسمارٹ ڈرافٹس",
+        "خودکار نالج بیس سنکرونائزیشن",
+        "ڈائنامک اسکیلیشن روٹنگ",
+        "سپورٹ تجزیات اور CSAT کی پیشگوئی"
+      ],
+      "benefits": [
+        "سپورٹ ٹکٹ حل کرنے کے وقت میں 50% تک کمی لائیں",
+        "معمول کے 70% کسٹمر سوالات کو خودکار بنائیں",
+        "عملہ بڑھائے بغیر 24/7 کسٹمر سپورٹ فراہم کریں",
+        "دہرائے جانے والے کاموں کو ختم کر کے عملے کی کارکردگی بڑھائیں",
+        "فوری جوابات کے ذریعے کسٹمرز کا اعتماد برقرار رکھیں",
+        "کسٹمرز کے رویوں اور رجحانات کی گہری معلومات حاصل کریں"
+      ],
+      "metaTitle": "کسٹمر سروس AI سلوشنز | PakSoft",
+      "metaDescription": "کسٹمر سروس AI کے ساتھ اپنے سپورٹ ورک فلوز کو خودکار بنائیں۔ اسمارٹ روٹنگ، جذبات کا تجزیہ اور خودکار جوابات لاگو کریں۔ ابھی رابطہ کریں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "سپورٹ ورک فلو کا آڈٹ",
+            "description": "ہم آپ کے ماضی کے سپورٹ ٹکٹس کے ڈیٹا کا تجزیہ کرتے ہیں تاکہ دہرائے جانے والے سوالات اور روٹنگ کی خامیوں کو سمجھیں۔ ہم مل کر طے کرتے ہیں کہ کون سے کام خودکار کیے جا سکتے ہیں۔"
+          },
+          {
+            "step": 2,
+            "title": "API کے ذریعے ہیلپ ڈیسک کنکشن",
+            "description": "ہم آپ کے موجودہ ہیلپ ڈیسک سسٹمز (جیسے Zendesk، Intercom) کو اپنے AI انجن سے محفوظ طریقے سے جوڑتے ہیں۔ ہم ٹکٹس حاصل کرنے اور جوابات بھیجنے کے لیے لائیو چینل بناتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "درجہ بندی اور پرامپٹ ڈیزائن",
+            "description": "ہم کسٹمر کی نیت کو درست جانچنے کے لیے کسٹم کلاسیفائر ماڈلز بناتے ہیں۔ ہم برانڈ کے لہجے کے مطابق جواب تیار کرنے کے لیے پرامپٹ ٹیمپلیٹس تیار کرتے ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "نالج بیس کا انضمام",
+            "description": "ہم AI انجن کو آپ کے داخلی نالج بیس اور دستاویزات سے جوڑتے ہیں۔ اس سے یہ یقینی ہوتا ہے کہ AI پیچیدہ تکنیکی سوالات کے بھی درست اور حوالہ جات کے ساتھ جواب دے۔"
+          },
+          {
+            "step": 5,
+            "title": "ایجنٹ کی نگرانی میں ٹیسٹنگ",
+            "description": "ہم سسٹم کو ایک محدود پائلٹ فیز میں چلاتے ہیں جہاں AI کے بنائے گئے جوابات پہلے انسانی ایجنٹس چیک کرتے ہیں۔ ہم ماڈل کو مزید بہتر بنانے کے لیے عملے سے فیڈ بیک لیتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "مکمل آٹومیشن اور مانیٹرنگ",
+            "description": "ہم آسان سوالات کے براہِ راست خودکار جوابات فعال کرتے ہیں اور تجزیاتی ڈیش بورڈز لائیو کرتے ہیں۔ ہم کارکردگی بہتر رکھنے کے لیے مسلسل CSAT اور حل کے وقت کی نگرانی کرتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "کیا کسٹمر سروس AI ہمارے موجودہ CRM سے جڑ سکتا ہے؟",
+            "answer": "جی ہاں۔ ہمارا AI انجن تمام بڑے ہیلپ ڈیسک سسٹمز اور CRMs جیسے کہ Zendesk، Intercom، Salesforce، Hubspot اور Freshdesk کے ساتھ محفوظ REST APIs کے ذریعے جڑنے کے لیے ڈیزائن کیا گیا ہے۔ ہم ویب ہکس بناتے ہیں جو نیا ٹکٹ بننے پر فوراً AI تجزیہ شروع کر دیتے ہیں، تاکہ آپ کے ایجنٹس کو اپنا پرانا انٹرفیس تبدیل کرنے کی ضرورت نہ پڑے۔"
+          },
+          {
+            "question": "یہ سسٹم انگریزی کے علاوہ دوسری زبانوں کے کسٹمرز کو کیسے سنبھالتا ہے؟",
+            "answer": "یہ سسٹم مکمل طور پر کثیر لسانی ہے اور اردو، انگریزی، ترکی، جرمن، عربی اور 50 سے زائد دیگر زبانوں کو خودکار طور پر پہچاننے اور جواب دینے کی صلاحیت رکھتا ہے۔ یہ آنے والے ٹکٹ کا ترجمہ کرتا ہے، اسے مقامی دستاویزات سے ملاتا ہے اور گاہک کی اپنی زبان میں جواب تیار کرتا ہے، تاکہ آپ کو الگ سے عملہ نہ رکھنا پڑے۔"
+          },
+          {
+            "question": "کیا AI غلطیاں کر کے کسٹمرز کو غلط جوابات بھیج سکتا ہے؟",
+            "answer": "غلط جوابات کو روکنے کے لیے ہم نے سخت حفاظتی قوانین اور اعتماد کی حد مقرر کی ہے۔ اگر AI کا اعتماد 85% سے کم ہو یا سوال پیچیدہ ہو، تو وہ خودکار جواب دینے کے بجائے ٹکٹ فوراً انسانی ایجنٹ کو بھیج دیتا ہے۔ پائلٹ مرحلے میں، ہر جواب پہلے انسان کی منظوری سے ہی کسٹمر کو بھیجا جاتا ہے۔"
+          },
+          {
+            "question": "کسٹمرز کے کتنے فیصد سوالات کو خودکار بنایا جا سکتا ہے؟",
+            "answer": "عام طور پر، پہلے تین مہینوں میں روزمرہ کے 50% سے 70% تک سوالات خودکار ہو جاتے ہیں۔ ان میں پاس ورڈ ری سیٹ، آرڈر ٹریکنگ، شپنگ اپ ڈیٹس اور بنیادی پالیسی کے سوالات شامل ہیں۔ ان معمول کے سوالات کو خودکار بنا کر، آپ کے ایجنٹس اپنا وقت پیچیدہ اور اہم کیسز حل کرنے میں لگا سکتے ہیں۔"
+          },
+          {
+            "question": "یہ سسٹم کسٹمر کے ڈیٹا کی سیکیورٹی کیسے یقینی بناتا ہے؟",
+            "answer": "ہم ڈیٹا کی سیکیورٹی کو انتہائی سنجیدگی سے لیتے ہیں۔ تمام ڈیٹا منتقلی اور اسٹوریج کے دوران انکرپٹڈ ہوتا ہے اور ہم GDPR اور مقامی ڈیٹا تحفظ کے قوانین کی تعمیل کرتے ہیں۔ AI انجن کو آپ کے نجی کلاؤڈ سرور پر لگایا جا سکتا ہے تاکہ کسٹمر کی معلومات محفوظ رہیں اور کسی تیسرے فریق کو نہ ملیں۔"
+          },
+          {
+            "question": "ایجنٹ اسسٹ اور مکمل آٹومیشن میں کیا فرق ہے؟",
+            "answer": "ایجنٹ اسسٹ (Agent-assist) بیک گراؤنڈ میں جواب کا مسودہ تیار کر کے انسان کو دکھاتا ہے، جسے وہ ایک کلک سے تبدیل یا بھیج سکتا ہے۔ مکمل آٹومیشن (Full automation) میں ماڈل آسان اور واضح سوالات کا جواب بغیر کسی انسانی مداخلت کے براہِ راست کسٹمر کو بھیج دیتا ہے۔ ہم آغاز ایجنٹ اسسٹ سے کرتے ہیں۔"
+          },
+          {
+            "question": "کسٹمر سروس AI سسٹم کو لگانے میں کتنا وقت لگتا ہے؟",
+            "answer": "موجودہ APIs اور بنیادی ٹیمپلیٹس کے ساتھ ایک عام انٹیگریشن 4 سے 6 ہفتے لیتی ہے۔ اگر آپ کے پاس کسٹم ڈیٹا بیسز، پرانے سسٹمز یا کسٹم سپورٹ لاگز پر گہری فائن ٹیوننگ درکار ہو، تو اس میں 8 سے 12 ہفتے لگ سکتے ہیں۔ ہم پروجیکٹ کے آغاز میں ہی مکمل ٹائم لائن فراہم کرتے ہیں۔"
+          },
+          {
+            "question": "سسٹم کسٹمر کی تسلی (CSAT) کو کیسے ٹریک کرتا ہے؟",
+            "answer": "سسٹم چیٹ کے بعد کسٹمر سروے کے نتائج کو جمع کرتا ہے اور ان کا موازنہ AI کی کارکردگی اور حل کے وقت سے کرتا ہے۔ اس کے علاوہ ہمارا جذبات کا تجزیہ کرنے والا انجن گاہک کے پیغامات کو لائیو اسکین کر کے غصے یا اطمینان کا اندازہ لگاتا ہے، اور یہ تمام ڈیٹا ڈیش بورڈ پر ظاہر ہوتا ہے۔"
+          }
+        ],
+        "technologies": [
+          { "name": "OpenAI", "icon": "openai" },
+          { "name": "Zendesk API", "icon": "zendesk" },
+          { "name": "Intercom API", "icon": "intercom" },
+          { "name": "Python", "icon": "python" },
+          { "name": "LangChain", "icon": "langchain" },
+          { "name": "Redis", "icon": "redis" },
+          { "name": "Node.js", "icon": "nodejs" },
+          { "name": "FastAPI", "icon": "fastapi" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "الذكاء الاصطناعي في خدمة العملاء",
+      "shortDescription": "حدثوا دعم العملاء لديكم بأتمتة ذكية تعتمد على الذكاء الاصطناعي. نطبق التوجيه الذكي وتحليل المشاعر والاستجابات التلقائية لحل التذاكر بشكل أسرع.",
+      "fullDescription": "غالباً ما تعاني فرق دعم العملاء من ضغط العمل بسبب حجم التذاكر الكبير، مما يؤدي إلى تأخر الاستجابة وإرهاق الموظفين. نحن نبني أنظمة ذكاء اصطناعي مخصصة لخدمة العملاء تتكامل مباشرة مع منصات الدعم الحالية لديكم مثل Zendesk أو Intercom. باستخدام المعالجة المتقدمة للغة الطبيعية (NLP) والنماذج اللغوية الكبيرة (LLMs)، تصنف حلولنا التذاكر الواردة تلقائياً، وتجري تحليلاً للمشاعر في الوقت الفعلي، وتوجه الحالات المعقدة إلى القسم المناسب. نطبق أدوات صياغة الردود الآلية ومساعد الوكيل التي تقترح المقالات المناسبة من قاعدة المعرفة، مما يقلل وقت المعالجة بنسبة 30% إلى 50%. النتيجة هي سير عمل دعم أسرع يحافظ على رضا العملاء (CSAT) المرتفع. يتم التشغيل خلال 4 إلى 6 أسابيع.",
+      "features": [
+        "التكامل مع منصات الدعم متعددة القنوات",
+        "التعرف على النوايا وتصنيف التذاكر",
+        "الدعم الآلي متعدد اللغات",
+        "تتبع مشاعر العملاء في الوقت الفعلي",
+        "صياغة ردود ذكية لمساعدة الوكلاء",
+        "المزامنة الآلية لقاعدة المعرفة",
+        "التوجيه الديناميكي للتصعيد",
+        "تحليلات الدعم والتنبؤ برضا العملاء"
+      ],
+      "benefits": [
+        "تقليل وقت حل تذاكر الدعم بنسبة تصل إلى 50%",
+        "أتمتة ما يصل إلى 70% من استفسارات العملاء الروتينية",
+        "تقديم دعم عملاء على مدار الساعة دون زيادة الموظفين",
+        "تحسين رضا الموظفين عن طريق إلغاء المهام المتكررة",
+        "الحفاظ على رضا العملاء المرتفع بفضل الاستجابات الفورية",
+        "الحصول على رؤى عميقة حول اتجاهات مشاعر العملاء"
+      ],
+      "metaTitle": "الذكاء الاصطناعي لخدمة العملاء | PakSoft",
+      "metaDescription": "أتمتوا مسارات عمل الدعم مع الذكاء الاصطناعي لخدمة العملاء. ندمج التوجيه الذكي وتحليل المشاعر والرد التلقائي. تواصلوا معنا.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تدقيق مسار عمل الدعم",
+            "description": "نحلل بيانات تذاكر الدعم التاريخية لديكم لتحديد الاستفسارات المتكررة وعدم الكفاءة في التوجيه. نحدد معاً العمليات المناسبة للأتمتة وتلك التي تتطلب تدخلاً بشرياً."
+          },
+          {
+            "step": 2,
+            "title": "التكامل مع واجهات منصة الدعم",
+            "description": "نربط محرك الذكاء الاصطناعي الخاص بنا بأمان مع منصات التذاكر الحالية لديكم (مثل Zendesk أو Intercom). ننشئ قنوات قراءة وكتابة لاستلام التذاكر وإرسال الردود."
+          },
+          {
+            "step": 3,
+            "title": "تصميم المصنف والمطالبات",
+            "description": "نبني ونربط نماذج مخصصة لتصنيف النوايا لتحديد نوع التذاكر الواردة بدقة. نصمم قوالب مطالبات لإنشاء ردود تطابق نبرة شركتكم وصوت علامتها التجارية."
+          },
+          {
+            "step": 4,
+            "title": "تكامل المعرفة",
+            "description": "نربط محرك الذكاء الاصطناعي بقاعدة المعرفة الداخلية وبوابات الوثائق لديكم. يضمن ذلك أن يصوغ الذكاء الاصطناعي ردوداً دقيقة مدعومة بالمصادر للاستفسارات التقنية."
+          },
+          {
+            "step": 5,
+            "title": "مرحلة تجريبية بإشراف الوكيل",
+            "description": "نطلق النظام في مرحلة تجريبية محدودة حيث يصوغ الذكاء الاصطناعي الردود ليراجعها الموظفون البشريون قبل إرسالها. نجمع ملاحظاتهم لتحسين المطالبات وتوجيه التذاكر."
+          },
+          {
+            "step": 6,
+            "title": "الأتمتة الكاملة والمراقبة",
+            "description": "نفعل الردود التلقائية للاستفسارات ذات الثقة العالية وننشر لوحات تحليلات تفاعلية. نراقب رضا العملاء وأوقات الحل وسجلات النظام لتحسين النماذج باستمرار."
+          }
+        ],
+        "faq": [
+          {
+            "question": "هل يمكن للذكاء الاصطناعي لخدمة العملاء التكامل مع نظام CRM الحالي لدينا؟",
+            "answer": "نعم. تم تصميم محرك الذكاء الاصطناعي الخاص بنا ليتكامل بسلاسة مع منصات الدعم الكبرى وأنظمة إدارة علاقات العملاء (CRM) مثل Zendesk و Intercom و Salesforce و Hubspot و Freshdesk عبر واجهات REST API آمنة. ننشئ اتصالات webhook تبدأ تحليل الذكاء الاصطناعي فور إنشاء تذكرة جديدة، مما يعني أن الموظفين لا يحتاجون لتغيير أدواتهم للاستفادة من النظام."
+          },
+          {
+            "question": "كيف يتعامل الذكاء الاصطناعي مع لغات العملاء غير الإنجليزية؟",
+            "answer": "النظام متعدد اللغات بالكامل، ويدعم الكشف التلقائي وإنشاء الردود باللغات العربية والإنجليزية والتركية والألمانية والأردية وأكثر من 50 لغة أخرى. يترجم النظام التذاكر الواردة داخلياً، ويطابقها مع قواعد المعرفة المحلية، ويصوغ الردود بلغة العميل الأم، مما يتيح لكم خدمة عملاء عالميين دون الحاجة لتوظيف موظفين يتحدثون لغات متعددة."
+          },
+          {
+            "question": "هل سيرتكب الذكاء الاصطناعي أخطاءً ويرسل إجابات غير صحيحة للعملاء؟",
+            "answer": "لمنع الإجابات غير الصحيحة (الهلوسة)، نضع معايير ثقة وضوابط صارمة. إذا كانت درجة ثقة الذكاء الاصطناعي أقل من 85% أو كانت العملية تتطلب تفكيراً معقداً، يتم توجيه التذكرة إلى موظف بشري بدلاً من الرد التلقائي. خلال المرحلة التجريبية، نستخدم نموذج مساعد الوكيل حيث يجب على الإنسان مراجعة كل مسودة قبل إرسالها للعميل."
+          },
+          {
+            "question": "ما هي نسبة استفسارات العملاء التي يمكن أتمتتها بالفعل؟",
+            "answer": "عادةً ما تشهد عمليات خدمة العملاء أتمتة تتراوح بين 50% و 70% من الاستفسارات الروتينية والمتكررة خلال الأشهر الثلاثة الأولى. تشمل هذه الطلبات الشائعة إعادة تعيين كلمات المرور، وتتبع الطلبات، وتحديثات الشحن، وأسئلة السياسة الأساسية. تتيح هذه الأتمتة لموظفيكم التركيز على حل القضايا المعقدة التي تتطلب تعاطفاً بشرياً."
+          },
+          {
+            "question": "كيف يضمن النظام الحفاظ على خصوصية وأمن بيانات العملاء؟",
+            "answer": "نحن نأخذ خصوصية البيانات على محمل الجد. نقوم بتشفير جميع البيانات أثناء النقل والتخزين ونلتزم بالقوانين المحلية لحماية البيانات واللائحة العامة لحماية البيانات (GDPR). يمكن نشر محرك الذكاء الاصطناعي داخل بيئتكم السحابية الخاصة لضمان عدم استخدام محادثات العملاء وتفاصيلهم الشخصية لتدريب النماذج العامة."
+          },
+          {
+            "question": "ما الفرق بين نموذج مساعد الوكيل والأتمتة الكاملة؟",
+            "answer": "يعمل نموذج مساعد الوكيل (Agent-assist) على صياغة الردود في الخلفية وتقديمها للموظفين البشريين لمراجعتها أو تعديلها أو إرسالها بنقرة واحدة. أما الأتمتة الكاملة (Full automation) فتسمح للذكاء الاصطناعي بإرسال الردود مباشرة إلى العملاء في الاستفسارات الروتينية ذات الثقة العالية دون أي تدخل بشري. نبدأ عادة بمساعد الوكيل قبل الانتقال للأتمتة."
+          },
+          {
+            "question": "كم من الوقت يستغرق نشر نظام الذكاء الاصطناعي لخدمة العملاء؟",
+            "answer": "يستغرق التكامل القياسي باستخدام واجهات برمجة التطبيقات الحالية وقوالب التصنيف الأساسية حوالي 4 إلى 6 أسابيع. أما الإعدادات الأكثر تعقيداً التي تتضمن تكاملاً عميقاً مع قواعد البيانات المخصصة، أو أنظمة التذاكر القديمة، أو الضبط الدقيق المتقدم على سجلات الدعم التاريخية فتستغرق ما بين 8 إلى 12 أسبوعاً، ونقدم جدولاً زمنياً واضحاً للمشروع."
+          },
+          {
+            "question": "كيف يتتبع النظام مستوى رضا العملاء (CSAT)؟",
+            "answer": "يراقب النظام استطلاعات رضا العملاء بعد كل تفاعل ويربطها بمدى ثقة ردود الذكاء الاصطناعي وفئة الموضوع ووقت الحل. بالإضافة إلى ذلك، يقوم محرك تحليل المشاعر بمسح ردود العملاء في الوقت الفعلي للكشف عن الغضب أو الرضا، ويتم عرض كل هذه البيانات في لوحة تحكم مركزية لتحديد نقاط التحسين."
+          }
+        ],
+        "technologies": [
+          { "name": "OpenAI", "icon": "openai" },
+          { "name": "Zendesk API", "icon": "zendesk" },
+          { "name": "Intercom API", "icon": "intercom" },
+          { "name": "Python", "icon": "python" },
+          { "name": "LangChain", "icon": "langchain" },
+          { "name": "Redis", "icon": "redis" },
+          { "name": "Node.js", "icon": "nodejs" },
+          { "name": "FastAPI", "icon": "fastapi" }
+        ]
+      }
+    }
+  }
+}

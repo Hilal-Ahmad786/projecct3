@@ -1,0 +1,278 @@
+{
+  "slug": "web-scraping",
+  "en": {
+    "name": "Web Scraping",
+    "shortDescription": "Extract valuable web data at scale with reliable, maintainable scrapers. We collect product data, pricing, reviews, and competitive intelligence, then deliver it as clean, structured feeds your systems can use.",
+    "fullDescription": "The web is the largest dataset in the world, but it is messy, rate-limited, and constantly changing. We build robust web scraping systems that turn that chaos into clean, structured data you can act on: pricing and stock from competitors, product catalogs, reviews, leads, market signals, and more. Using Scrapy, Playwright, and headless browsers, we handle JavaScript-heavy sites, pagination, logins, and anti-bot defences with rotating proxies and smart throttling. Just as important, we build for resilience and ethics: respecting robots.txt and rate limits, monitoring for layout changes, validating output, and delivering data via API, database, or scheduled exports. The result is a dependable pipeline that keeps flowing even as target sites evolve.",
+    "features": [
+      "Scalable scrapers for JavaScript-heavy sites",
+      "Pricing, stock, and competitor monitoring",
+      "Product, review, and catalog extraction",
+      "Proxy rotation and anti-bot handling",
+      "Automatic data cleaning and validation",
+      "Scheduled runs with change monitoring",
+      "Delivery via API, database, or CSV/JSON",
+      "Compliant, rate-limited, ethical crawling"
+    ],
+    "benefits": [
+      "Turn public web data into a business advantage",
+      "Track competitor pricing and stock automatically",
+      "Replace manual copy-paste with reliable feeds",
+      "Feed clean data straight into your systems",
+      "Scale collection to millions of pages",
+      "Stay running even when target sites change"
+    ],
+    "metaTitle": "Web Scraping & Data Extraction | PakSoft",
+    "metaDescription": "Reliable, scalable web scraping for pricing, products, reviews, and competitive intelligence. Clean, structured data via API or database. Start extracting data today.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Requirements & Sources", "description": "We define exactly which data points you need and which sites hold them. Clear targets and output schemas prevent scope creep and wasted crawling." },
+        { "step": 2, "title": "Feasibility & Compliance", "description": "We assess each site's structure, defences, and terms, plus relevant legal limits. This keeps the project both technically viable and ethically sound." },
+        { "step": 3, "title": "Scraper Development", "description": "We build scrapers with Scrapy or headless browsers to handle dynamic content and pagination. Robust selectors and retries keep extraction accurate and stable." },
+        { "step": 4, "title": "Anti-Bot & Scaling", "description": "We add proxy rotation, throttling, and session handling to crawl reliably at scale. Respectful rate limits keep us unblocked and the target site healthy." },
+        { "step": 5, "title": "Cleaning & Validation", "description": "We normalise, deduplicate, and validate the data against expected schemas. Validation catches silent breakages before bad data reaches your systems." },
+        { "step": 6, "title": "Delivery & Monitoring", "description": "We deliver data via API, database, or scheduled exports and monitor for site changes. Alerts let us fix broken scrapers before the feed goes stale." }
+      ],
+      "faq": [
+        { "question": "Is web scraping legal?", "answer": "Scraping publicly available data is generally permissible, but it depends on the data, the site's terms, and your jurisdiction. We design crawls to respect robots.txt, rate limits, and applicable law, and we advise you on grey areas." },
+        { "question": "Can you scrape sites that need a login or run heavy JavaScript?", "answer": "Yes. We use headless browsers like Playwright to render JavaScript and handle authenticated sessions where you have the right to access that data, replicating real user behaviour reliably." },
+        { "question": "How do you handle anti-bot protection?", "answer": "We use rotating residential proxies, realistic request patterns, and careful throttling. The goal is respectful, low-impact crawling that stays unblocked rather than aggressive hammering." },
+        { "question": "What happens when the target website changes its layout?", "answer": "We monitor scrapers and validate output, so layout changes trigger alerts rather than silently corrupting data. We then update the selectors quickly to restore the feed." },
+        { "question": "In what format do we receive the data?", "answer": "However suits your systems best: a REST API, a direct database load, or scheduled CSV/JSON exports. We match the delivery method to your existing pipelines." },
+        { "question": "Can you scrape on a schedule and keep data fresh?", "answer": "Yes. We run scrapers on schedules from minutes to daily, depending on how fast the source changes, so your data stays as current as your use case requires." },
+        { "question": "How do you ensure data quality?", "answer": "We clean, deduplicate, and validate every record against an expected schema, flagging anomalies. This prevents partial or malformed scrapes from polluting your dataset." },
+        { "question": "Can you scrape at large scale?", "answer": "Yes. We design distributed, queue-based crawlers that handle millions of pages while staying within polite rate limits, scaling horizontally as your needs grow." }
+      ],
+      "technologies": [
+        { "name": "Python", "icon": "python" },
+        { "name": "Scrapy", "icon": "scrapy" },
+        { "name": "Playwright", "icon": "playwright" },
+        { "name": "Puppeteer", "icon": "puppeteer" },
+        { "name": "BeautifulSoup", "icon": "beautifulsoup" },
+        { "name": "Selenium", "icon": "selenium" },
+        { "name": "Bright Data", "icon": "bright-data" },
+        { "name": "PostgreSQL", "icon": "postgresql" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Web Veri Kazıma",
+    "shortDescription": "Güvenilir, bakımı kolay kazıyıcılarla değerli web verisini ölçekte çıkarın. Ürün verisi, fiyatlandırma, yorumlar ve rekabet istihbaratı toplar, sonra bunu sistemlerinizin kullanabileceği temiz, yapılandırılmış akışlar olarak sunarız.",
+    "fullDescription": "Web dünyanın en büyük veri kümesidir, ama dağınık, hız sınırlı ve sürekli değişendir. Bu kaosu üzerinde işlem yapabileceğiniz temiz, yapılandırılmış veriye dönüştüren sağlam web kazıma sistemleri kurarız: rakiplerden fiyat ve stok, ürün katalogları, yorumlar, müşteri adayları, pazar sinyalleri ve daha fazlası. Scrapy, Playwright ve başsız tarayıcılar kullanarak JavaScript ağırlıklı siteleri, sayfalamayı, oturum açmayı ve anti-bot savunmalarını dönen proxy'ler ve akıllı throttling ile ele alırız. Aynı derecede önemlisi, dayanıklılık ve etik için tasarlarız: robots.txt ve hız sınırlarına saygı, düzen değişikliklerini izleme, çıktı doğrulama ve veriyi API, veritabanı veya zamanlanmış dışa aktarımlarla teslim etme. Sonuç, hedef siteler geliştikçe bile akmaya devam eden güvenilir bir hattır.",
+    "features": [
+      "JavaScript ağırlıklı siteler için ölçeklenebilir kazıyıcılar",
+      "Fiyat, stok ve rakip izleme",
+      "Ürün, yorum ve katalog çıkarımı",
+      "Proxy rotasyonu ve anti-bot yönetimi",
+      "Otomatik veri temizleme ve doğrulama",
+      "Değişiklik izlemeyle zamanlanmış çalıştırmalar",
+      "API, veritabanı veya CSV/JSON ile teslim",
+      "Uyumlu, hız sınırlı, etik tarama"
+    ],
+    "benefits": [
+      "Herkese açık web verisini iş avantajına çevirin",
+      "Rakip fiyat ve stoğunu otomatik takip edin",
+      "Manuel kopyala-yapıştırı güvenilir akışlarla değiştirin",
+      "Temiz veriyi doğrudan sistemlerinize besleyin",
+      "Toplamayı milyonlarca sayfaya ölçekleyin",
+      "Hedef siteler değişse bile çalışmaya devam edin"
+    ],
+    "metaTitle": "Web Veri Kazıma ve Çıkarımı | PakSoft",
+    "metaDescription": "Fiyat, ürün, yorum ve rekabet istihbaratı için güvenilir, ölçeklenebilir web kazıma. API veya veritabanı ile temiz, yapılandırılmış veri. Veri çıkarmaya bugün başlayın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Gereksinimler ve Kaynaklar", "description": "Tam olarak hangi veri noktalarına ihtiyacınız olduğunu ve hangi sitelerin bunları barındırdığını tanımlarız. Net hedefler ve çıktı şemaları kapsam kaymasını ve boşa taramayı önler." },
+        { "step": 2, "title": "Fizibilite ve Uyumluluk", "description": "Her sitenin yapısını, savunmalarını ve şartlarını ilgili yasal sınırlarla birlikte değerlendiririz. Bu, projeyi hem teknik olarak uygulanabilir hem de etik açıdan sağlam tutar." },
+        { "step": 3, "title": "Kazıyıcı Geliştirme", "description": "Dinamik içeriği ve sayfalamayı ele almak için Scrapy veya başsız tarayıcılarla kazıyıcılar kurarız. Sağlam seçiciler ve yeniden denemeler çıkarımı doğru ve kararlı tutar." },
+        { "step": 4, "title": "Anti-Bot ve Ölçekleme", "description": "Ölçekte güvenilir tarama için proxy rotasyonu, throttling ve oturum yönetimi ekleriz. Saygılı hız sınırları bizi engellenmemiş ve hedef siteyi sağlıklı tutar." },
+        { "step": 5, "title": "Temizleme ve Doğrulama", "description": "Veriyi beklenen şemalara göre normalleştirir, tekilleştirir ve doğrularız. Doğrulama, kötü veri sistemlerinize ulaşmadan sessiz bozulmaları yakalar." },
+        { "step": 6, "title": "Teslim ve İzleme", "description": "Veriyi API, veritabanı veya zamanlanmış dışa aktarımlarla teslim eder ve site değişikliklerini izleriz. Uyarılar, akış bayatlamadan bozuk kazıyıcıları düzeltmemizi sağlar." }
+      ],
+      "faq": [
+        { "question": "Web kazıma yasal mı?", "answer": "Herkese açık veriyi kazımak genellikle kabul edilebilir, ancak bu veriye, sitenin şartlarına ve yargı bölgenize bağlıdır. Taramaları robots.txt, hız sınırları ve geçerli yasaya saygılı tasarlar ve gri alanlar konusunda size danışmanlık veririz." },
+        { "question": "Oturum açma gerektiren veya ağır JavaScript çalıştıran siteleri kazıyabilir misiniz?", "answer": "Evet. JavaScript'i render etmek için Playwright gibi başsız tarayıcılar kullanır ve o veriye erişim hakkınız olan yerlerde kimlik doğrulamalı oturumları yönetir, gerçek kullanıcı davranışını güvenilir biçimde taklit ederiz." },
+        { "question": "Anti-bot korumasını nasıl ele alıyorsunuz?", "answer": "Dönen konut proxy'leri, gerçekçi istek desenleri ve dikkatli throttling kullanırız. Amaç, agresif zorlama yerine engellenmeden kalan, saygılı ve düşük etkili taramadır." },
+        { "question": "Hedef web sitesi düzenini değiştirince ne olur?", "answer": "Kazıyıcıları izler ve çıktıyı doğrularız; böylece düzen değişiklikleri veriyi sessizce bozmak yerine uyarı tetikler. Ardından seçicileri hızla güncelleyip akışı geri getiririz." },
+        { "question": "Veriyi hangi formatta alırız?", "answer": "Sistemlerinize en uygun şekilde: bir REST API, doğrudan veritabanı yüklemesi veya zamanlanmış CSV/JSON dışa aktarımları. Teslim yöntemini mevcut hatlarınıza uyarlarız." },
+        { "question": "Zamanlanmış kazıma yapıp veriyi taze tutabilir misiniz?", "answer": "Evet. Kaynağın ne kadar hızlı değiştiğine bağlı olarak kazıyıcıları dakikalardan günlüğe kadar zamanlarda çalıştırırız, böylece veriniz kullanım senaryonuzun gerektirdiği kadar güncel kalır." },
+        { "question": "Veri kalitesini nasıl sağlıyorsunuz?", "answer": "Her kaydı temizler, tekilleştirir ve beklenen bir şemaya göre doğrular, anormallikleri işaretleriz. Bu, kısmi veya bozuk kazımaların veri kümenizi kirletmesini önler." },
+        { "question": "Büyük ölçekte kazıma yapabilir misiniz?", "answer": "Evet. Nazik hız sınırları içinde kalırken milyonlarca sayfayı ele alan dağıtık, kuyruk tabanlı tarayıcılar tasarlarız ve ihtiyaçlarınız büyüdükçe yatay ölçekleriz." }
+      ],
+      "technologies": [
+        { "name": "Python", "icon": "python" },
+        { "name": "Scrapy", "icon": "scrapy" },
+        { "name": "Playwright", "icon": "playwright" },
+        { "name": "Puppeteer", "icon": "puppeteer" },
+        { "name": "BeautifulSoup", "icon": "beautifulsoup" },
+        { "name": "Selenium", "icon": "selenium" },
+        { "name": "Bright Data", "icon": "bright-data" },
+        { "name": "PostgreSQL", "icon": "postgresql" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Web Scraping",
+    "shortDescription": "Extrahieren Sie wertvolle Webdaten skalierbar mit zuverlässigen, wartbaren Scrapern. Wir sammeln Produktdaten, Preise, Bewertungen und Wettbewerbsdaten und liefern sie als saubere, strukturierte Feeds, die Ihre Systeme nutzen können.",
+    "fullDescription": "Das Web ist der größte Datensatz der Welt, aber unübersichtlich, ratenbegrenzt und ständig in Veränderung. Wir bauen robuste Web-Scraping-Systeme, die dieses Chaos in saubere, strukturierte Daten verwandeln, mit denen Sie handeln können: Preise und Bestände von Wettbewerbern, Produktkataloge, Bewertungen, Leads, Marktsignale und mehr. Mit Scrapy, Playwright und Headless-Browsern bewältigen wir JavaScript-lastige Seiten, Paginierung, Logins und Anti-Bot-Abwehr mit rotierenden Proxys und intelligentem Throttling. Ebenso wichtig: Wir bauen auf Resilienz und Ethik, respektieren robots.txt und Rate-Limits, überwachen Layout-Änderungen, validieren die Ausgabe und liefern Daten per API, Datenbank oder geplanten Exporten. Das Ergebnis ist eine verlässliche Pipeline, die weiterläuft, selbst wenn sich Zielseiten weiterentwickeln.",
+    "features": [
+      "Skalierbare Scraper für JavaScript-lastige Seiten",
+      "Preis-, Bestands- und Wettbewerbsüberwachung",
+      "Produkt-, Bewertungs- und Katalogextraktion",
+      "Proxy-Rotation und Anti-Bot-Handling",
+      "Automatische Datenbereinigung und -validierung",
+      "Geplante Läufe mit Änderungsüberwachung",
+      "Lieferung per API, Datenbank oder CSV/JSON",
+      "Konformes, ratenbegrenztes, ethisches Crawling"
+    ],
+    "benefits": [
+      "Verwandeln Sie öffentliche Webdaten in einen Vorteil",
+      "Verfolgen Sie Wettbewerberpreise und Bestände automatisch",
+      "Ersetzen Sie manuelles Copy-Paste durch verlässliche Feeds",
+      "Speisen Sie saubere Daten direkt in Ihre Systeme",
+      "Skalieren Sie die Erfassung auf Millionen Seiten",
+      "Bleiben Sie lauffähig, auch wenn Zielseiten sich ändern"
+    ],
+    "metaTitle": "Web Scraping & Datenextraktion | PakSoft",
+    "metaDescription": "Zuverlässiges, skalierbares Web Scraping für Preise, Produkte, Bewertungen und Wettbewerbsdaten. Saubere, strukturierte Daten per API oder Datenbank. Jetzt starten.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Anforderungen & Quellen", "description": "Wir definieren genau, welche Datenpunkte Sie brauchen und welche Seiten sie enthalten. Klare Ziele und Ausgabeschemata verhindern Scope Creep und unnötiges Crawling." },
+        { "step": 2, "title": "Machbarkeit & Compliance", "description": "Wir bewerten Struktur, Abwehr und Bedingungen jeder Seite sowie relevante rechtliche Grenzen. Das hält das Projekt technisch machbar und ethisch sauber." },
+        { "step": 3, "title": "Scraper-Entwicklung", "description": "Wir bauen Scraper mit Scrapy oder Headless-Browsern, um dynamische Inhalte und Paginierung zu bewältigen. Robuste Selektoren und Retries halten die Extraktion genau und stabil." },
+        { "step": 4, "title": "Anti-Bot & Skalierung", "description": "Wir ergänzen Proxy-Rotation, Throttling und Session-Handling, um zuverlässig in großem Maßstab zu crawlen. Respektvolle Rate-Limits halten uns unblockiert und die Zielseite gesund." },
+        { "step": 5, "title": "Bereinigung & Validierung", "description": "Wir normalisieren, deduplizieren und validieren die Daten gegen erwartete Schemata. Validierung fängt stille Brüche ab, bevor schlechte Daten Ihre Systeme erreichen." },
+        { "step": 6, "title": "Lieferung & Monitoring", "description": "Wir liefern Daten per API, Datenbank oder geplanten Exporten und überwachen Site-Änderungen. Alerts lassen uns defekte Scraper reparieren, bevor der Feed veraltet." }
+      ],
+      "faq": [
+        { "question": "Ist Web Scraping legal?", "answer": "Das Scrapen öffentlich verfügbarer Daten ist meist zulässig, hängt aber von den Daten, den Seitenbedingungen und Ihrer Jurisdiktion ab. Wir gestalten Crawls so, dass sie robots.txt, Rate-Limits und geltendes Recht respektieren, und beraten Sie bei Graubereichen." },
+        { "question": "Können Sie Seiten mit Login oder viel JavaScript scrapen?", "answer": "Ja. Wir nutzen Headless-Browser wie Playwright, um JavaScript zu rendern und authentifizierte Sessions zu handhaben, sofern Sie ein Zugriffsrecht auf diese Daten haben, und replizieren echtes Nutzerverhalten zuverlässig." },
+        { "question": "Wie gehen Sie mit Anti-Bot-Schutz um?", "answer": "Wir nutzen rotierende Residential-Proxys, realistische Request-Muster und sorgfältiges Throttling. Ziel ist respektvolles, wirkungsarmes Crawling, das unblockiert bleibt, statt aggressiven Dauerbeschuss." },
+        { "question": "Was passiert, wenn die Zielseite ihr Layout ändert?", "answer": "Wir überwachen Scraper und validieren die Ausgabe, sodass Layout-Änderungen Alerts auslösen, statt Daten still zu beschädigen. Anschließend aktualisieren wir die Selektoren schnell, um den Feed wiederherzustellen." },
+        { "question": "In welchem Format erhalten wir die Daten?", "answer": "Wie es Ihren Systemen am besten passt: eine REST-API, ein direkter Datenbank-Load oder geplante CSV/JSON-Exporte. Wir passen die Liefermethode an Ihre bestehenden Pipelines an." },
+        { "question": "Können Sie geplant scrapen und Daten frisch halten?", "answer": "Ja. Wir lassen Scraper in Intervallen von Minuten bis täglich laufen, je nachdem, wie schnell sich die Quelle ändert, sodass Ihre Daten so aktuell bleiben, wie Ihr Use Case es verlangt." },
+        { "question": "Wie sichern Sie die Datenqualität?", "answer": "Wir bereinigen, deduplizieren und validieren jeden Datensatz gegen ein erwartetes Schema und markieren Anomalien. Das verhindert, dass partielle oder fehlerhafte Scrapes Ihren Datensatz verunreinigen." },
+        { "question": "Können Sie in großem Maßstab scrapen?", "answer": "Ja. Wir entwerfen verteilte, queue-basierte Crawler, die Millionen Seiten bewältigen und dabei höfliche Rate-Limits einhalten, und skalieren horizontal, wenn Ihr Bedarf wächst." }
+      ],
+      "technologies": [
+        { "name": "Python", "icon": "python" },
+        { "name": "Scrapy", "icon": "scrapy" },
+        { "name": "Playwright", "icon": "playwright" },
+        { "name": "Puppeteer", "icon": "puppeteer" },
+        { "name": "BeautifulSoup", "icon": "beautifulsoup" },
+        { "name": "Selenium", "icon": "selenium" },
+        { "name": "Bright Data", "icon": "bright-data" },
+        { "name": "PostgreSQL", "icon": "postgresql" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "ویب اسکریپنگ",
+    "shortDescription": "قابلِ اعتماد، قابلِ دیکھ بھال scrapers کے ساتھ قیمتی web data کو پیمانے پر نکالیں۔ ہم پروڈکٹ ڈیٹا، قیمتیں، reviews اور competitive intelligence جمع کرتے ہیں، پھر اسے صاف، structured feeds کے طور پر دیتے ہیں جنہیں آپ کے سسٹمز استعمال کر سکیں۔",
+    "fullDescription": "ویب دنیا کا سب سے بڑا dataset ہے، مگر یہ بکھرا ہوا، rate-limited اور مسلسل بدلتا رہتا ہے۔ ہم مضبوط web scraping سسٹمز بناتے ہیں جو اس انتشار کو صاف، structured ڈیٹا میں بدل دیتے ہیں جس پر آپ عمل کر سکیں: حریفوں سے قیمت اور stock، پروڈکٹ catalogs، reviews، leads، مارکیٹ signals اور بہت کچھ۔ Scrapy، Playwright اور headless browsers استعمال کر کے ہم JavaScript سے بھرپور سائٹس، pagination، logins اور anti-bot دفاعوں کو rotating proxies اور ذہین throttling کے ساتھ سنبھالتے ہیں۔ اتنا ہی اہم یہ کہ ہم مضبوطی اور اخلاقیات کے لیے ڈیزائن کرتے ہیں: robots.txt اور rate limits کا احترام، layout تبدیلیوں کی نگرانی، output کی validation، اور ڈیٹا کو API، database یا scheduled exports کے ذریعے فراہم کرنا۔ نتیجہ ایک قابلِ اعتماد pipeline ہے جو target سائٹس کے بدلتے رہنے کے باوجود بہتی رہتی ہے۔",
+    "features": [
+      "JavaScript سے بھرپور سائٹس کے لیے scalable scrapers",
+      "قیمت، stock اور حریف کی نگرانی",
+      "پروڈکٹ، review اور catalog نکالنا",
+      "Proxy rotation اور anti-bot ہینڈلنگ",
+      "خودکار data cleaning اور validation",
+      "تبدیلی کی نگرانی کے ساتھ scheduled runs",
+      "API، database یا CSV/JSON کے ذریعے فراہمی",
+      "Compliant، rate-limited، اخلاقی crawling"
+    ],
+    "benefits": [
+      "عوامی web data کو کاروباری برتری میں بدلیں",
+      "حریف کی قیمت اور stock خودکار طور پر ٹریک کریں",
+      "دستی copy-paste کی جگہ قابلِ اعتماد feeds لائیں",
+      "صاف ڈیٹا براہِ راست اپنے سسٹمز میں ڈالیں",
+      "جمع کرنے کو لاکھوں صفحات تک scale کریں",
+      "target سائٹس بدلنے پر بھی چلتے رہیں"
+    ],
+    "metaTitle": "Web Scraping اور Data Extraction | PakSoft",
+    "metaDescription": "قیمت، پروڈکٹس، reviews اور competitive intelligence کے لیے قابلِ اعتماد، scalable web scraping۔ API یا database کے ذریعے صاف، structured data۔ آج ہی نکالنا شروع کریں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "تقاضے اور ذرائع", "description": "ہم بالکل واضح کرتے ہیں کہ آپ کو کون سے data points چاہئیں اور کون سی سائٹس انہیں رکھتی ہیں۔ واضح اہداف اور output schemas scope creep اور بے کار crawling کو روکتے ہیں۔" },
+        { "step": 2, "title": "Feasibility اور Compliance", "description": "ہم ہر سائٹ کی ساخت، دفاعوں اور شرائط کے ساتھ متعلقہ قانونی حدود کا جائزہ لیتے ہیں۔ یہ منصوبے کو تکنیکی طور پر قابلِ عمل اور اخلاقی طور پر درست رکھتا ہے۔" },
+        { "step": 3, "title": "Scraper ڈیولپمنٹ", "description": "ہم dynamic content اور pagination سنبھالنے کے لیے Scrapy یا headless browsers سے scrapers بناتے ہیں۔ مضبوط selectors اور retries نکالنے کو درست اور مستحکم رکھتے ہیں۔" },
+        { "step": 4, "title": "Anti-Bot اور Scaling", "description": "ہم پیمانے پر قابلِ اعتماد crawling کے لیے proxy rotation، throttling اور session handling شامل کرتے ہیں۔ بامروت rate limits ہمیں un-blocked اور target سائٹ کو صحت مند رکھتے ہیں۔" },
+        { "step": 5, "title": "Cleaning اور Validation", "description": "ہم ڈیٹا کو متوقع schemas کے مطابق normalise، deduplicate اور validate کرتے ہیں۔ Validation خراب ڈیٹا کے آپ کے سسٹمز تک پہنچنے سے پہلے خاموش خرابیوں کو پکڑ لیتی ہے۔" },
+        { "step": 6, "title": "فراہمی اور نگرانی", "description": "ہم ڈیٹا کو API، database یا scheduled exports کے ذریعے دیتے اور سائٹ تبدیلیوں کی نگرانی کرتے ہیں۔ Alerts ہمیں feed باسی ہونے سے پہلے ٹوٹے scrapers ٹھیک کرنے دیتے ہیں۔" }
+      ],
+      "faq": [
+        { "question": "کیا web scraping قانونی ہے؟", "answer": "عوامی طور پر دستیاب ڈیٹا کو scrape کرنا عموماً جائز ہے، مگر یہ ڈیٹا، سائٹ کی شرائط اور آپ کے دائرہ اختیار پر منحصر ہے۔ ہم crawls کو robots.txt، rate limits اور قابلِ اطلاق قانون کا احترام کرتے ہوئے ڈیزائن کرتے اور grey areas پر آپ کو مشورہ دیتے ہیں۔" },
+        { "question": "کیا آپ login مانگنے والی یا بھاری JavaScript چلانے والی سائٹس scrape کر سکتے ہیں؟", "answer": "جی ہاں۔ ہم JavaScript render کرنے کے لیے Playwright جیسے headless browsers استعمال کرتے اور جہاں آپ کو اس ڈیٹا تک رسائی کا حق ہو وہاں authenticated sessions سنبھالتے ہیں، حقیقی صارف رویے کی قابلِ اعتماد نقل کرتے ہوئے۔" },
+        { "question": "آپ anti-bot تحفظ کو کیسے سنبھالتے ہیں؟", "answer": "ہم rotating residential proxies، حقیقت پسندانہ request patterns اور محتاط throttling استعمال کرتے ہیں۔ مقصد جارحانہ ہتھوڑے کے بجائے بامروت، کم اثر crawling ہے جو un-blocked رہے۔" },
+        { "question": "جب target ویب سائٹ اپنا layout بدلتی ہے تو کیا ہوتا ہے؟", "answer": "ہم scrapers کی نگرانی اور output کی validation کرتے ہیں، تاکہ layout تبدیلیاں ڈیٹا کو خاموشی سے خراب کرنے کے بجائے alerts trigger کریں۔ پھر ہم selectors کو تیزی سے اپڈیٹ کر کے feed بحال کرتے ہیں۔" },
+        { "question": "ہمیں ڈیٹا کس فارمیٹ میں ملتا ہے؟", "answer": "جو آپ کے سسٹمز کے لیے بہترین ہو: ایک REST API، براہِ راست database load، یا scheduled CSV/JSON exports۔ ہم فراہمی کا طریقہ آپ کی موجودہ pipelines کے مطابق کرتے ہیں۔" },
+        { "question": "کیا آپ scheduled scraping کر کے ڈیٹا تازہ رکھ سکتے ہیں؟", "answer": "جی ہاں۔ ہم scrapers کو منٹوں سے روزانہ تک کے اوقات پر چلاتے ہیں، اس پر منحصر کہ ذریعہ کتنی جلدی بدلتا ہے، تاکہ آپ کا ڈیٹا اتنا تازہ رہے جتنا آپ کے use case کو درکار ہو۔" },
+        { "question": "آپ ڈیٹا کا معیار کیسے یقینی بناتے ہیں؟", "answer": "ہم ہر record کو clean، deduplicate اور ایک متوقع schema کے مطابق validate کرتے ہیں اور anomalies کو flag کرتے ہیں۔ یہ ادھورے یا خراب scrapes کو آپ کے dataset کو آلودہ کرنے سے روکتا ہے۔" },
+        { "question": "کیا آپ بڑے پیمانے پر scraping کر سکتے ہیں؟", "answer": "جی ہاں۔ ہم distributed، queue پر مبنی crawlers ڈیزائن کرتے ہیں جو بامروت rate limits کے اندر رہتے ہوئے لاکھوں صفحات سنبھالتے ہیں، اور آپ کی ضروریات بڑھنے پر horizontally scale کرتے ہیں۔" }
+      ],
+      "technologies": [
+        { "name": "Python", "icon": "python" },
+        { "name": "Scrapy", "icon": "scrapy" },
+        { "name": "Playwright", "icon": "playwright" },
+        { "name": "Puppeteer", "icon": "puppeteer" },
+        { "name": "BeautifulSoup", "icon": "beautifulsoup" },
+        { "name": "Selenium", "icon": "selenium" },
+        { "name": "Bright Data", "icon": "bright-data" },
+        { "name": "PostgreSQL", "icon": "postgresql" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تجريف الويب",
+    "shortDescription": "استخرج بيانات الويب القيّمة على نطاق واسع عبر أدوات تجريف موثوقة وقابلة للصيانة. نجمع بيانات المنتجات والأسعار والمراجعات والاستخبارات التنافسية، ثم نسلّمها كتغذيات نظيفة ومُهيكلة تستطيع أنظمتك استخدامها.",
+    "fullDescription": "الويب أكبر مجموعة بيانات في العالم، لكنه فوضوي ومحدود المعدل ودائم التغيّر. نبني أنظمة تجريف ويب متينة تحوّل تلك الفوضى إلى بيانات نظيفة ومُهيكلة يمكنك التصرف بناءً عليها: الأسعار والمخزون من المنافسين، وكتالوجات المنتجات، والمراجعات، والعملاء المحتملين، وإشارات السوق وغيرها. باستخدام Scrapy وPlaywright والمتصفحات بلا واجهة، نتعامل مع المواقع المعتمدة على JavaScript والتقسيم لصفحات وتسجيلات الدخول ودفاعات مكافحة الروبوتات عبر وكلاء متناوبين وتحكّم ذكي بالمعدل. ولا يقل أهمية أننا نصمّم للمرونة والأخلاقيات: احترام robots.txt وحدود المعدل، ومراقبة تغييرات التصميم، والتحقق من المخرجات، وتسليم البيانات عبر API أو قاعدة بيانات أو تصديرات مجدولة. والنتيجة خط موثوق يستمر بالتدفق حتى مع تطوّر المواقع المستهدفة.",
+    "features": [
+      "أدوات تجريف قابلة للتوسّع للمواقع المعتمدة على JavaScript",
+      "مراقبة الأسعار والمخزون والمنافسين",
+      "استخراج المنتجات والمراجعات والكتالوجات",
+      "تدوير الوكلاء والتعامل مع مكافحة الروبوتات",
+      "تنظيف البيانات والتحقق منها تلقائياً",
+      "تشغيلات مجدولة مع مراقبة التغييرات",
+      "التسليم عبر API أو قاعدة بيانات أو CSV/JSON",
+      "زحف متوافق ومحدود المعدل وأخلاقي"
+    ],
+    "benefits": [
+      "حوّل بيانات الويب العامة إلى ميزة تجارية",
+      "تتبّع أسعار المنافسين ومخزونهم تلقائياً",
+      "استبدل النسخ واللصق اليدوي بتغذيات موثوقة",
+      "غذِّ بيانات نظيفة مباشرة إلى أنظمتك",
+      "وسّع الجمع إلى ملايين الصفحات",
+      "ابقَ عاملاً حتى عندما تتغيّر المواقع المستهدفة"
+    ],
+    "metaTitle": "تجريف الويب واستخراج البيانات | PakSoft",
+    "metaDescription": "تجريف ويب موثوق وقابل للتوسّع للأسعار والمنتجات والمراجعات والاستخبارات التنافسية. بيانات نظيفة ومُهيكلة عبر API أو قاعدة بيانات. ابدأ استخراج البيانات اليوم.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "المتطلبات والمصادر", "description": "نحدّد بدقة نقاط البيانات التي تحتاجها والمواقع التي تحويها. الأهداف الواضحة ومخططات المخرجات تمنع تضخّم النطاق والزحف المهدور." },
+        { "step": 2, "title": "الجدوى والامتثال", "description": "نقيّم بنية كل موقع ودفاعاته وشروطه إلى جانب الحدود القانونية ذات الصلة. هذا يُبقي المشروع قابلاً للتنفيذ تقنياً وسليماً أخلاقياً." },
+        { "step": 3, "title": "تطوير أداة التجريف", "description": "نبني أدوات تجريف بـ Scrapy أو متصفحات بلا واجهة للتعامل مع المحتوى الديناميكي والتقسيم لصفحات. المحدِّدات المتينة وإعادة المحاولة تُبقي الاستخراج دقيقاً ومستقراً." },
+        { "step": 4, "title": "مكافحة الروبوتات والتوسّع", "description": "نضيف تدوير الوكلاء والتحكم بالمعدل وإدارة الجلسات للزحف الموثوق على نطاق واسع. حدود المعدل المحترمة تُبقينا غير محظورين والموقع المستهدف سليماً." },
+        { "step": 5, "title": "التنظيف والتحقق", "description": "نُطبّع البيانات ونزيل التكرار ونتحقق منها مقابل المخططات المتوقعة. التحقق يلتقط الأعطال الصامتة قبل أن تصل البيانات السيئة إلى أنظمتك." },
+        { "step": 6, "title": "التسليم والمراقبة", "description": "نسلّم البيانات عبر API أو قاعدة بيانات أو تصديرات مجدولة ونراقب تغييرات الموقع. التنبيهات تتيح لنا إصلاح أدوات التجريف المعطلة قبل تقادم التغذية." }
+      ],
+      "faq": [
+        { "question": "هل تجريف الويب قانوني؟", "answer": "تجريف البيانات المتاحة للعموم مقبول عموماً، لكنه يعتمد على البيانات وشروط الموقع واختصاصك القضائي. نصمّم عمليات الزحف لتحترم robots.txt وحدود المعدل والقانون المعمول به، ونرشدك في المناطق الرمادية." },
+        { "question": "هل يمكنكم تجريف مواقع تتطلب تسجيل دخول أو تعتمد على JavaScript كثيف؟", "answer": "نعم. نستخدم متصفحات بلا واجهة مثل Playwright لعرض JavaScript وإدارة الجلسات المُصادَق عليها حيث يحق لك الوصول إلى تلك البيانات، ونحاكي سلوك المستخدم الحقيقي بموثوقية." },
+        { "question": "كيف تتعاملون مع حماية مكافحة الروبوتات؟", "answer": "نستخدم وكلاء سكنيين متناوبين وأنماط طلبات واقعية وتحكّماً دقيقاً بالمعدل. الهدف زحف محترم ومنخفض الأثر يبقى غير محظور بدل الإلحاح العدواني." },
+        { "question": "ماذا يحدث عندما يغيّر الموقع المستهدف تصميمه؟", "answer": "نراقب أدوات التجريف ونتحقق من المخرجات، فتُطلق تغييرات التصميم تنبيهات بدل إفساد البيانات بصمت. ثم نحدّث المحدِّدات بسرعة لاستعادة التغذية." },
+        { "question": "بأي تنسيق نستلم البيانات؟", "answer": "بما يناسب أنظمتك أكثر: واجهة REST API أو تحميل مباشر إلى قاعدة البيانات أو تصديرات CSV/JSON مجدولة. نطابق طريقة التسليم مع خطوطك القائمة." },
+        { "question": "هل يمكنكم التجريف وفق جدول والحفاظ على حداثة البيانات؟", "answer": "نعم. نشغّل أدوات التجريف بجداول من الدقائق إلى يومياً، حسب سرعة تغيّر المصدر، لتبقى بياناتك حديثة بقدر ما تتطلبه حالة استخدامك." },
+        { "question": "كيف تضمنون جودة البيانات؟", "answer": "ننظّف كل سجل ونزيل تكراره ونتحقق منه مقابل مخطط متوقّع ونُعلّم الشذوذ. هذا يمنع عمليات التجريف الجزئية أو المشوّهة من تلويث مجموعة بياناتك." },
+        { "question": "هل يمكنكم التجريف على نطاق واسع؟", "answer": "نعم. نصمّم زواحف موزّعة قائمة على الطوابير تتعامل مع ملايين الصفحات مع البقاء ضمن حدود معدل مهذّبة، ونتوسّع أفقياً مع نمو احتياجاتك." }
+      ],
+      "technologies": [
+        { "name": "Python", "icon": "python" },
+        { "name": "Scrapy", "icon": "scrapy" },
+        { "name": "Playwright", "icon": "playwright" },
+        { "name": "Puppeteer", "icon": "puppeteer" },
+        { "name": "BeautifulSoup", "icon": "beautifulsoup" },
+        { "name": "Selenium", "icon": "selenium" },
+        { "name": "Bright Data", "icon": "bright-data" },
+        { "name": "PostgreSQL", "icon": "postgresql" }
+      ]
+    }
+  }
+}

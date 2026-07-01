@@ -1,0 +1,638 @@
+{
+  "slug": "fraud-detection-systems",
+  "en": {
+    "name": "Fraud Detection Systems",
+    "shortDescription": "Protect your business with real-time, ML-powered fraud detection. We build intelligent scoring engines that analyze transactions and user behavior to stop fraud instantly.",
+    "fullDescription": "Financial loss and security breaches from fraudulent activities can devastate a business. We implement custom machine learning-powered fraud detection systems that analyze transactions, user behavior, and device fingerprinting in real time. Using advanced ML algorithms like XGBoost and PyTorch, we build scoring engines that detect anomalies, prevent account takeovers, and stop fraudulent transactions before they are processed. We combine rule-based engines with predictive models to minimize false positives, ensuring legitimate customers face no friction. Our systems also feature a back-office case management dashboard with detailed model explainability, allowing your security team to audit flagged events and continually improve detection accuracy.",
+    "features": [
+      "Real-Time Transaction Scoring Engine",
+      "Behavioral Biometrics and Anomaly Detection",
+      "Advanced Device Fingerprinting Integration",
+      "Network and Graph Analysis with Neo4j",
+      "Custom Rule Engine with Dynamic Controls",
+      "Case Management Dashboard for Security Teams",
+      "Model Explainability and Localized Audits",
+      "Continuous Model Retraining & MLOps Pipelines"
+    ],
+    "benefits": [
+      "Reduce financial losses from fraudulent transactions significantly",
+      "Stop account takeover attempts in real time",
+      "Minimize customer friction with low false-positive rates",
+      "Explain and justify every flagged event during audits",
+      "Detect complex, organized fraud rings automatically",
+      "Secure your payment and authentication portals completely"
+    ],
+    "metaTitle": "AI Fraud Detection Systems | Custom ML | PakSoft",
+    "metaDescription": "Prevent financial loss with real-time, ML-powered fraud detection. We integrate transaction scoring and behavioral biometrics. Contact us.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Risk Assessment",
+          "description": "We analyze historical transaction records and common fraud patterns in your industry to define primary risk indicators."
+        },
+        {
+          "step": 2,
+          "title": "Data Pipeline Setup",
+          "description": "We establish secure, low-latency data pipelines using Kafka to stream transaction and user event logs into the ML model."
+        },
+        {
+          "step": 3,
+          "title": "Model Training",
+          "description": "We train anomaly detection and classification models using XGBoost, PyTorch, and historical dataset logs."
+        },
+        {
+          "step": 4,
+          "title": "Rule Engine Integration",
+          "description": "We integrate the ML scoring model with a dynamic rule engine, allowing your team to block or flag specific patterns manually."
+        },
+        {
+          "step": 5,
+          "title": "Dashboard Development",
+          "description": "We design a secure back-office case management portal featuring detailed risk scoring details and explanation layers."
+        },
+        {
+          "step": 6,
+          "title": "Deployment & Retraining",
+          "description": "We deploy the system to production with continuous shadow testing and set up auto-retraining pipelines to adapt to new fraud tactics."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How fast does the system evaluate a transaction?",
+          "answer": "Using highly optimized C++ wrappers and Redis in-memory lookup, our scoring engines evaluate transaction and behavioral logs in under 50 milliseconds, ensuring zero checkout friction."
+        },
+        {
+          "question": "How do you minimize false positives for legitimate buyers?",
+          "answer": "We combine historical customer behavior baselines with dynamic thresholds. By analyzing localized patterns and device fingerprints, we ensure legitimate buyers experience zero checkout delays."
+        },
+        {
+          "question": "What algorithms do you use to detect fraud?",
+          "answer": "We utilize supervised classification algorithms like XGBoost and Random Forests for known patterns, and unsupervised neural networks like Autoencoders for discovering new, undocumented anomaly structures."
+        },
+        {
+          "question": "Can the system detect organized fraud rings?",
+          "answer": "Yes, we integrate graph databases like Neo4j to map relationships between accounts, IPs, card numbers, and devices, detecting complex network patterns associated with organized syndicates."
+        },
+        {
+          "question": "How does model explainability work?",
+          "answer": "We integrate SHAP or LIME explanation models. This provides security auditors with a clear breakdown of which specific factors contributed to a transaction score being flagged."
+        },
+        {
+          "question": "Can your system integrate with third-party payment gateways?",
+          "answer": "Yes, our scoring engine runs via lightweight API webhooks that can be integrated into Stripe, Adyen, PayPal, or custom financial transaction portals easily."
+        },
+        {
+          "question": "Does the model update automatically as fraud trends evolve?",
+          "answer": "Yes, we set up continuous MLOps pipelines that automatically retrain models on newly flagged fraud cases, keeping the classification accuracy high against changing patterns."
+        },
+        {
+          "question": "What is device fingerprinting?",
+          "answer": "Device fingerprinting gathers non-private hardware and software characteristics from a browser or app, generating a unique identifier to spot users using multiple accounts on one device."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "XGBoost",
+          "icon": "xgboost"
+        },
+        {
+          "name": "PyTorch",
+          "icon": "pytorch"
+        },
+        {
+          "name": "Apache Kafka",
+          "icon": "kafka"
+        },
+        {
+          "name": "Redis",
+          "icon": "redis"
+        },
+        {
+          "name": "Neo4j",
+          "icon": "neo4j"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "FastAPI",
+          "icon": "fastapi"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Dolandırıcılık Tespit Sistemleri",
+    "shortDescription": "İşletmenizi gerçek zamanlı, yapay zeka destekli dolandırıcılık tespiti ile koruyun. Dolandırıcılığı anında durdurmak için işlemleri ve kullanıcı davranışlarını analiz eden akıllı puanlama motorları kuruyoruz.",
+    "fullDescription": "Dolandırıcılık faaliyetlerinden kaynaklanan mali kayıplar ve güvenlik ihlalleri bir işletmeye ciddi zarar verebilir. İşlemleri, kullanıcı davranışlarını ve cihaz parmak izlerini gerçek zamanlı olarak analiz eden yapay zeka destekli özel dolandırıcılık tespit sistemleri uyguluyoruz. XGBoost ve PyTorch gibi gelişmiş makine öğrenimi algoritmalarını kullanarak, anormallikleri tespit eden, hesap ele geçirme girişimlerini önleyen ve şüpheli işlemleri henüz işlenmeden durduran puanlama motorları oluşturuyoruz. Hatalı tespitleri (false positives) en aza indirmek için kural tabanlı sistemleri tahmin modelleriyle birleştiriyor, böylece gerçek müşterilerinizin kesintisiz hizmet almasını sağlıyoruz. Sistemlerimiz ayrıca, güvenlik ekibinizin işaretlenen olayları denetlemesine ve tespit doğruluğunu sürekli iyileştirmesine olanak tanıyan ayrıntılı açıklanabilirlik özelliklerine sahip bir vaka yönetim paneli içerir.",
+    "features": [
+      "Gerçek Zamanlı İşlem Puanlama Motoru",
+      "Davranışsal Biyometri ve Anormallik Tespiti",
+      "Gelişmiş Cihaz Parmak İzi Entegrasyonu",
+      "Neo4j ile Ağ ve Grafik Analizi",
+      "Dinamik Kontrollü Özel Kural Motoru",
+      "Güvenlik Ekipleri İçin Vaka Yönetim Paneli",
+      "Denetimler İçin Açıklanabilir Model Arayüzü",
+      "Sürekli Model Yeniden Eğitimi ve MLOps Hatları"
+    ],
+    "benefits": [
+      "Şüpheli işlemlerden kaynaklanan mali kayıpları önemli ölçüde azaltın",
+      "Hesap ele geçirme girişimlerini gerçek zamanlı olarak durdurun",
+      "Düşük hatalı tespit oranlarıyla müşteri memnuniyetini koruyun",
+      "Denetimler sırasında işaretlenen her olayı kolayca gerekçelendirin",
+      "Organize dolandırıcılık şebekelerini otomatik olarak tespit edin",
+      "Ödeme ve kimlik doğrulama portallarınızı tamamen güvenceye alın"
+    ],
+    "metaTitle": "Yapay Zeka Dolandırıcılık Tespit Sistemleri | PakSoft",
+    "metaDescription": "Gerçek zamanlı, yapay zeka destekli dolandırıcılık tespiti ile mali kayıpları önleyin. İşlem puanlama ve davranışsal biyometri entegre ediyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Risk Değerlendirmesi",
+          "description": "Birincil risk göstergelerini tanımlamak için geçmiş işlem kayıtlarını ve sektörünüzdeki yaygın dolandırıcılık kalıplarını analiz ediyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Veri Hattı Kurulumu",
+          "description": "İşlem ve kullanıcı olay günlüklerini ML modeline aktarmak için Kafka kullanarak güvenli, düşük gecikmeli veri hatları kuruyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Model Eğitimi",
+          "description": "XGBoost, PyTorch ve geçmiş veri kayıtlarını kullanarak anormallik tespiti ve sınıflandırma modellerini eğitiyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Kural Motoru Entegrasyonu",
+          "description": "ML puanlama modelini dinamik bir kural motoruyla birleştirerek ekibinizin belirli kalıpları manuel olarak engellemesini veya işaretlemesini sağlıyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Panel Geliştirme",
+          "description": "Ayrıntılı risk puanlama ayrıntılarını ve model açıklama katmanlarını içeren güvenli bir vaka yönetim portalı tasarlıyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Canlıya Geçiş & Yeniden Eğitim",
+          "description": "Sistemi gölge testlerle canlıya alıyor ve yeni dolandırıcılık taktiklerine uyum sağlamak için otomatik yeniden eğitim hatları kuruyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Sistem bir işlemi ne kadar hızlı değerlendirir?",
+          "answer": "Yüksek düzeyde optimize edilmiş C++ sarmalayıcıları ve Redis bellek içi sorgulama kullanarak, puanlama motorlarımız işlem ve davranış günlüklerini 50 milisaniyenin altında değerlendirir."
+        },
+        {
+          "question": "Meşru alıcılar için hatalı tespitleri nasıl en aza indiriyorsunuz?",
+          "answer": "Geçmiş müşteri davranışı temel çizgilerini dinamik eşiklerle birleştiriyoruz. Yerel kalıpları ve cihaz parmak izlerini analiz ederek gerçek alıcıların ödeme sürecinde gecikme yaşamamasını sağlıyoruz."
+        },
+        {
+          "question": "Dolandırıcılığı tespit etmek için hangi algoritmaları kullanıyorsunuz?",
+          "answer": "Bilinen kalıplar için XGBoost ve Random Forests gibi denetimli sınıflandırma algoritmalarını; yeni, belgelenmemiş anormallikleri keşfetmek için Autoencoders gibi denetimsiz yapay sinir ağlarını kullanıyoruz."
+        },
+        {
+          "question": "Sistem organize dolandırıcılık şebekelerini tespit edebilir mi?",
+          "answer": "Evet, hesaplar, IP'ler, kart numaraları ve cihazlar arasındaki ilişkileri haritalandırmak için Neo4j gibi grafik veritabanlarını entegre ederek organize şebekelerle ilişkili karmaşık ağ yapılarını tespit ediyoruz."
+        },
+        {
+          "question": "Model açıklanabilirliği nasıl çalışır?",
+          "answer": "SHAP veya LIME açıklama modellerini entegre ediyoruz. Bu, güvenlik denetçilerine bir işlem puanının işaretlenmesine hangi faktörlerin katkıda bulunduğunun net bir dökümünü sunar."
+        },
+        {
+          "question": "Sisteminiz üçüncü taraf ödeme geçitleriyle entegre olabilir mi?",
+          "answer": "Evet, puanlama motorumuz Stripe, Adyen, PayPal veya özel finansal işlem portallarına kolayca entegre edilebilen hafif API web kancaları aracılığıyla çalışır."
+        },
+        {
+          "question": "Dolandırıcılık eğilimleri geliştikçe model otomatik olarak güncelleniyor mu?",
+          "answer": "Evet, yeni işaretlenen vakalarda modelleri otomatik olarak yeniden eğiten sürekli MLOps hatları kurarak sınıflandırma doğruluğunu değişen yöntemlere karşı yüksek tutuyoruz."
+        },
+        {
+          "question": "Cihaz parmak izi nedir?",
+          "answer": "Cihaz parmak izi, bir tarayıcıdan veya uygulamadan kişisel olmayan donanım ve yazılım özelliklerini toplayarak, tek bir cihazda birden fazla hesap kullanan kullanıcıları tespit etmek için benzersiz bir kimlik oluşturur."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "XGBoost",
+          "icon": "xgboost"
+        },
+        {
+          "name": "PyTorch",
+          "icon": "pytorch"
+        },
+        {
+          "name": "Apache Kafka",
+          "icon": "kafka"
+        },
+        {
+          "name": "Redis",
+          "icon": "redis"
+        },
+        {
+          "name": "Neo4j",
+          "icon": "neo4j"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "FastAPI",
+          "icon": "fastapi"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Betrugserkennungssysteme",
+    "shortDescription": "Schützen Sie Ihr Unternehmen mit KI-gestützter Betrugserkennung in Echtzeit. Wir bauen Scoring-Engines zur Verhaltensanalyse von Transaktionen zur Schadensvermeidung.",
+    "fullDescription": "Finanzielle Verluste und Sicherheitsverletzungen durch betrügerische Aktivitäten können Unternehmen ruinieren. Wir implementieren maßgeschneiderte, auf maschinellem Lernen basierende Betrugserkennungssysteme, die Transaktionen, Benutzerverhalten und Geräte-Fingerabdrücke in Echtzeit analysieren. Mithilfe moderner ML-Algorithmen wie XGBoost und PyTorch entwickeln wir Scoring-Engines, die Anomalien erkennen, Account-Takeover verhindern und betrügerische Transaktionen stoppen, noch bevor sie verarbeitet werden. Wir kombinieren regelbasierte Systeme mit prädiktiven Modellen, um Fehlalarme (False Positives) zu minimieren und einen reibungslosen Ablauf für ehrliche Kunden zu sichern. Unsere Systeme verfügen über ein übersichtliches Case-Management-Dashboard mit detaillierter Erklärbarkeit des Modells für Sicherheitsaudits.",
+    "features": [
+      "Echtzeit-Scoring-Engine für Transaktionen",
+      "Verhaltensbiometrie & Anomalieerkennung",
+      "Fortgeschrittene Device-Fingerprinting-Integration",
+      "Netzwerk- und Graphanalysen mit Neo4j",
+      "Benutzerdefinierte regelbasierte Entscheidungs-Engine",
+      "Case-Management-Dashboard für Sicherheitsteams",
+      "Erklärbarkeit von ML-Entscheidungen (SHAP/LIME)",
+      "Automatisierte MLOps-Pipelines zur Modellpflege"
+    ],
+    "benefits": [
+      "Finanzielle Verluste durch Betrugsfälle signifikant senken",
+      "Kontoübernahme-Versuche (Account Takeover) in Echtzeit blockieren",
+      "Kundenreibung durch niedrige Fehlalarm-Raten minimieren",
+      "Jede blockierte Transaktion bei Audits präzise begründen können",
+      "Komplexe, organisierte Betrügerringe automatisch aufdecken",
+      "Zahlungs- und Login-Portale lückenlos absichern"
+    ],
+    "metaTitle": "KI Betrugserkennungssysteme | Custom ML | PakSoft",
+    "metaDescription": "Schützen Sie sich vor Betrug mit Echtzeit-Transaktions-Scoring und Verhaltensbiometrie auf ML-Basis. Wir bauen maßgeschneiderte Sicherheitslösungen.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Risikobewertung",
+          "description": "Wir analysieren historische Transaktionsdaten und typische Betrugsmuster Ihrer Branche, um die wichtigsten Risikoindikatoren zu definieren."
+        },
+        {
+          "step": 2,
+          "title": "Daten-Pipeline-Setup",
+          "description": "Wir richten sichere Echtzeit-Daten-Pipelines mit Kafka ein, um Transaktionsdaten direkt in das ML-Modell zu streamen."
+        },
+        {
+          "step": 3,
+          "title": "Modell-Training",
+          "description": "Wir trainieren Klassifizierungs- und Anomalieerkennungsmodelle auf Basis von XGBoost, PyTorch und historischen Logs."
+        },
+        {
+          "step": 4,
+          "title": "Integration der Regel-Engine",
+          "description": "Wir verbinden das ML-Modell mit einer dynamischen Regel-Engine, damit Ihr Team bestimmte Muster manuell sperren oder freigeben kann."
+        },
+        {
+          "step": 5,
+          "title": "Dashboard-Entwicklung",
+          "description": "Wir entwerfen ein sicheres Case-Management-Portal für Ihr Team mit Risikobewertung und Erklärbarkeits-Visualisierungen."
+        },
+        {
+          "step": 6,
+          "title": "Deployment & Retraining",
+          "description": "Wir nehmen das System in Betrieb und etablieren MLOps-Pipelines zur automatischen Modellaktualisierung bei neuen Betrugsmethoden."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie schnell bewertet das System eine Transaktion?",
+          "answer": "Dank hochgradig optimierter C++-Wrapper und In-Memory-Abfragen in Redis bewerten unsere Scoring-Engines Transaktionen und Logdaten in unter 50 Millisekunden."
+        },
+        {
+          "question": "Wie minimieren Sie Fehlalarme bei legitimen Käufern?",
+          "answer": "Wir kombinieren historische Verhaltensmuster der Kunden mit dynamischen Grenzwerten. Durch die Analyse lokaler Muster und Geräte-Fingerabdrücke vermeiden wir Verzögerungen beim Checkout."
+        },
+        {
+          "question": "Welche Algorithmen nutzen Sie zur Betrugserkennung?",
+          "answer": "Wir verwenden überwachtes Lernen (supervised) wie XGBoost und Random Forests für bekannte Muster sowie unüberwachte neuronale Netze (Autoencoder) für neuartige Anomalien."
+        },
+        {
+          "question": "Kann das System organisierte Betrugsringe aufdecken?",
+          "answer": "Ja, wir integrieren Graphdatenbanken wie Neo4j, um Beziehungen zwischen Konten, IPs, Kreditkarten und Geräten zu visualisieren und komplexe Netzwerke krimineller Gruppen aufzudecken."
+        },
+        {
+          "question": "Wie funktioniert die Erklärbarkeit des Modells?",
+          "answer": "Wir integrieren SHAP- oder LIME-Erklärungsmodelle. Dies bietet Prüfern eine klare Aufschlüsselung der Faktoren, die dazu führten, dass eine Transaktion gesperrt wurde."
+        },
+        {
+          "question": "Kann das System an externe Zahlungsanbieter angebunden werden?",
+          "answer": "Ja, unsere Scoring-Engine arbeitet über leichtgewichtige Webhooks und lässt sich nahtlos in Stripe, Adyen, PayPal oder kundeneigene Zahlungsportale integrieren."
+        },
+        {
+          "question": "Aktualisiert sich das Modell bei neuen Betrugstrends automatisch?",
+          "answer": "Ja, wir richten MLOps-Pipelines ein, die die Modelle automatisch mit neu verifizierten Betrugsfällen trainieren, um die Erkennungsrate dauerhaft hoch zu halten."
+        },
+        {
+          "question": "Was versteht man unter Device Fingerprinting?",
+          "answer": "Dabei werden nicht-private Hard- und Softwaremerkmale von Browser oder App analysiert, um eine eindeutige Geräte-ID zu erstellen und Mehrfachregistrierungen aufzudecken."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "XGBoost",
+          "icon": "xgboost"
+        },
+        {
+          "name": "PyTorch",
+          "icon": "pytorch"
+        },
+        {
+          "name": "Apache Kafka",
+          "icon": "kafka"
+        },
+        {
+          "name": "Redis",
+          "icon": "redis"
+        },
+        {
+          "name": "Neo4j",
+          "icon": "neo4j"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "FastAPI",
+          "icon": "fastapi"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "دھوکہ دہی کی شناخت کے سسٹمز",
+    "shortDescription": "ریئل ٹائم، اے آئی سے چلنے والے فراڈ ڈیٹیکشن سسٹمز کے ساتھ اپنے کاروبار کو محفوظ رکھیں۔ ہم ٹرانزیکشنز کا تجزیہ کرنے والے ذہین سسٹمز بناتے ہیں۔",
+    "fullDescription": "دھوکہ دہی کی سرگرمیوں سے ہونے والا مالی نقصان اور سیکیورٹی کی خلاف ورزیاں کاروبار کو تباہ کر سکتی ہیں۔ ہم کسٹم مشین لرننگ سے چلنے والے فراڈ ڈیٹیکشن سسٹمز نافذ کرتے ہیں جو ٹرانزیکشنز، صارف کے رویے، اور ڈیوائس کی فنگر پرنٹنگ کا ریئل ٹائم میں تجزیہ کرتے ہیں۔ XGBoost اور PyTorch جیسے جدید الگورتھمز کا استعمال کرتے ہوئے، ہم ایسے اسکورنگ انجن بناتے ہیں جو غیر معمولی سرگرمیوں کا پتہ لگاتے ہیں اور ٹرانزیکشن پروسیس ہونے سے پہلے ہی مشکوک سرگرمی کو روک دیتے ہیں۔ ہم جائز صارفین کی سہولت کو یقینی بنانے کے لیے رول پر مبنی سسٹمز اور مشین لرننگ ماڈلز کو یکجا کرتے ہیں۔ ہمارے سسٹمز کے اندر ایک محفوظ پورٹل بھی شامل ہے جو سیکیورٹی ٹیم کو فلیگ کی گئی سرگرمیوں کی تفصیلی وجوہات فراہم کرتا ہے۔",
+    "features": [
+      "ریئل ٹائم ٹرانزیکشن اسکورنگ انجن",
+      "صارف کا رویہ اور انحرافات کی شناخت",
+      "ڈیوائس فنگر پرنٹنگ انٹیگریشن",
+      "گراف ڈیٹا بیس Neo4j کے ساتھ نیٹ ورک کا تجزیہ",
+      "ڈينامک کنٹرولز کے ساتھ کسٹم رول انجن",
+      "سیکیورٹی ٹیموں کے لیے فراڈ کیس پورٹل",
+      "آڈٹ کے لیے ماڈل کی وضاحت اور وجوہات",
+      "جدید MLOps اور مسلسل ماڈل ٹریننگ"
+    ],
+    "benefits": [
+      "فراڈ ٹرانزیکشنز سے ہونے والے مالی نقصانات میں خاطر خواہ کمی لائیں",
+      "ریئل ٹائم میں اکاؤنٹس کے ہیک ہونے کی کوششوں کو ناکام بنائیں",
+      "صارفین کے کام میں بغیر کسی رکاوٹ کے سیکیورٹی فراہم کریں",
+      "فلیگ کی گئی ہر سرگرمی کی تفصیلی وجوہات آڈٹ کے لیے پیش کریں",
+      "آرگنائزڈ فراڈ گروپس کا خودکار اور فوری پتہ لگائیں",
+      "اپنے ادائیگی کے گیٹ ویز کو مکمل طور پر محفوظ بنائیں"
+    ],
+    "metaTitle": "اے آئی فراڈ ڈیٹیکشن سسٹمز | کسٹم ML | PakSoft",
+    "metaDescription": "ریئل ٹائم، اے آئی کی مدد سے مالی نقصان کو روکیں۔ ہم ٹرانزیکشن اسکورنگ اور صارف کے رویے کے تجزیے کے سسٹمز بناتے ہیں۔ رابطہ کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "خطرہ کی تشخیص",
+          "description": "ہم بنیادی خطرے کے اشارے کی وضاحت کرنے کے لیے ماضی کے ریکارڈز اور فراڈ کے عام طریقوں کا تجزیہ کرتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "ڈیٹا پائپ لائن کی ترتیب",
+          "description": "ہم Kafka کا استعمال کرتے ہوئے ٹرانزیکشن ڈیٹا کو سیکیورٹی ماڈل میں بھیجنے کے لیے تیز رفتار پائپ لائنز بناتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "ماڈل کی تربیت",
+          "description": "ہم ماضی کے ڈیٹا اور ٹرانزیکشن لاگز کا استعمال کرتے ہوئے XGBoost اور PyTorch کی مدد سے ماڈلز کی تربیت کرتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "رول انجن انٹیگریشن",
+          "description": "ہم اسکورنگ ماڈل کو کسٹم رولز کے ساتھ مربوط کرتے ہیں تاکہ مخصوص پیٹرنز کو دستی طور پر بلاک کیا جا سکے۔"
+        },
+        {
+          "step": 5,
+          "title": "پورٹل کی تیاری",
+          "description": "ہم سیکیورٹی ٹیم کے لیے ایک پورٹل بناتے ہیں جو فلیگ کی گئی سرگرمی کی تفصیلی وجوہات فراہم کرتا ہے۔"
+        },
+        {
+          "step": 6,
+          "title": "لانچ اور اپ ڈیٹس",
+          "description": "ہم سسٹم کو لائیو کرتے ہیں اور بدلتے ہوئے فراڈ کے طریقوں سے نمٹنے کے لیے ماڈلز کی مسلسل اپ ڈیٹ کا انتظام کرتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "یہ سسٹم کتنی جلدی ٹرانزیکشن کا تجزیہ کرتا ہے؟",
+          "answer": "ہماری اسکورنگ انجن ٹرانزیکشن اور صارف کی سرگرمی کے لاگز کا تجزیہ 50 ملی سیکنڈ سے بھی کم وقت میں کرتی ہے، جس سے صارف کی ادائیگی میں کوئی تاخیر نہیں ہوتی۔"
+        },
+        {
+          "question": "آپ جائز خریداروں کے لیے غلط فلیگز کو کیسے کم کرتے ہیں؟",
+          "answer": "ہم صارفین کے ماضی کے رویے اور ڈیوائس فنگر پرنٹس کا موازنہ کرتے ہیں۔ اس سے ہم بغیر کسی رکاوٹ کے صرف مشکوک سرگرمیوں کو بلاک کرتے ہیں۔"
+        },
+        {
+          "question": "آپ دھاندلی کا پتہ لگانے کے لیے کون سے الگورتھم استعمال کرتے ہیں؟",
+          "answer": "ہم معلوم فراڈ کے طریقوں کے لیے XGBoost اور Random Forests کا استعمال کرتے ہیں، جبکہ غیر دستاویزی انحرافات کا پتہ لگانے کے لیے Autoencoders نیورل نیٹ ورکس استعمال کرتے ہیں۔"
+        },
+        {
+          "question": "کیا سسٹم منظم فراڈ گروپس کا پتہ لگا سکتا ہے؟",
+          "answer": "جی ہاں، ہم نیٹ ورک کے تعلقات کا نقشہ بنانے کے لیے Neo4j ڈیٹا بیس کو مربوط کرتے ہیں جس سے اکاؤنٹس، IPs، اور کارڈز کے خفیہ لنکس کا پتہ چلتا ہے۔"
+        },
+        {
+          "question": "ماڈل کی وضاحت کا عمل کیسے کام کرتا ہے؟",
+          "answer": "ہم SHAP یا LIME ماڈلز کا استعمال کرتے ہیں، جو یہ واضح طور پر دکھاتے ہیں کہ کن وجوہات کی بنا پر کسی ٹرانزیکشن کو بلاک یا فلیگ کیا گیا ہے۔"
+        },
+        {
+          "question": "کیا یہ سسٹم ادائیگی کے بیرونی گیٹ ویز سے مربوط ہو سکتا ہے؟",
+          "answer": "جی ہاں، ہمارا سسٹم ہلکے وزن والے APIs کے ذریعے چلتا ہے جسے Stripe، Adyen، یا پے پال (PayPal) کے ساتھ آسانی سے جوڑا جا سکتا ہے۔"
+        },
+        {
+          "question": "کیا نئے فراڈ پیٹرنز پر ماڈل خود بخود اپ ڈیٹ ہوتا ہے؟",
+          "answer": "جی ہاں، ہم MLOps پائپ لائنز ترتیب دیتے ہیں جو نئے رپورٹ ہونے والے کیسز کی بنیاد پر ماڈلز کو مسلسل تربیت دیتی رہتی ہیں۔"
+        },
+        {
+          "question": "ڈیوائس فنگر پرنٹنگ کیا ہے؟",
+          "answer": "ڈیوائس فنگر پرنٹنگ صارف کے ہارڈ ویئر اور سافٹ ویئر کی معلومات کو اکٹھا کرتی ہے، جس سے ایک منفرد آئی ڈی بنتی ہے تاکہ ایک ہی فون سے کئی اکاؤنٹس چلانے والوں کا پتہ لگایا جا سکے۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "XGBoost",
+          "icon": "xgboost"
+        },
+        {
+          "name": "PyTorch",
+          "icon": "pytorch"
+        },
+        {
+          "name": "Apache Kafka",
+          "icon": "kafka"
+        },
+        {
+          "name": "Redis",
+          "icon": "redis"
+        },
+        {
+          "name": "Neo4j",
+          "icon": "neo4j"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "FastAPI",
+          "icon": "fastapi"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "أنظمة كشف الاحتيال",
+    "shortDescription": "احمِ عملك من خلال الكشف عن الاحتيال في الوقت الفعلي والمدعوم بالذكاء الاصطناعي. نبني محركات تسجيل ذكية تحلل المعاملات وسلوك المستخدمين لوقف الاحتيال فوراً.",
+    "fullDescription": "الخسائر المالية والاختراقات الأمنية الناتجة عن الأنشطة الاحتيالية يمكن أن تدمر الأعمال التجارية بالكامل. نحن ننفذ أنظمة كشف احتيال مخصصة مدعومة بالتعلم الآلي تحلل المعاملات وسلوك المستخدمين وبصمات الأجهزة في الوقت الفعلي. باستخدام خوارزميات متقدمة مثل XGBoost و PyTorch، نبني محركات تسجيل تكتشف الأنماط الشاذة وتمنع الاستيلاء على الحسابات وتوقف المعاملات الاحتيالية قبل معالجتها. نجمع بين الأنظمة القائمة على القواعد والنماذج التنبؤية لتقليل التنبيهات الكاذبة، مما يضمن تمتع عملائك الحقيقيين بتجربة سلسة وخالية من العوائق. تتميز أنظمتنا أيضاً بلوحة إدارة حالات تحتوي على تفاصيل تفسير قرارات النماذج لمساعدة مراجعي الأمن.",
+    "features": [
+      "محرك تسجيل المعاملات في الوقت الفعلي",
+      "المقاييس الحيوية السلوكية واكتشاف الشذوذ",
+      "تكامل متقدم لبصمات الأجهزة والبرمجيات",
+      "تحليل الشبكات والعلاقات باستخدام Neo4j",
+      "محرك قواعد مخصص مع ضوابط ديناميكية",
+      "لوحة إدارة الحالات لفرق الأمن والمراجعة",
+      "قابلية تفسير النماذج للتدقيق الداخلي",
+      "مسارات إعادة تدريب النماذج المستمرة MLOps"
+    ],
+    "benefits": [
+      "تقليل الخسائر المالية من المعاملات الاحتيالية بشكل كبير",
+      "إيقاف محاولات الاستيلاء على الحسابات في الوقت الفعلي",
+      "تقليل العقبات أمام العملاء من خلال خفض الإنذارات الكاذبة",
+      "تفسير وتبرير كل إجراء فحص وتجميد أثناء التدقيق",
+      "كشف شبكات الاحتيال المنظم والمعقد تلقائياً",
+      "تأمين بوابات الدفع والمصادقة الخاصة بك بالكامل"
+    ],
+    "metaTitle": "أنظمة كشف الاحتيال بالذكاء الاصطناعي | PakSoft",
+    "metaDescription": "امنع الخسائر المالية بكشف الاحتيال في الوقت الفعلي والمدعوم بالتعلم الآلي. ندمج تسجيل المعاملات والتحليل السلوكي للأجهزة. اتصل بنا.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تقييم المخاطر",
+          "description": "نحلل سجلات المعاملات التاريخية وأنماط الاحتيال الشائعة في قطاع عملك لتحديد مؤشرات الخطر الرئيسية."
+        },
+        {
+          "step": 2,
+          "title": "إعداد مسار البيانات",
+          "description": "ننشئ مسارات بيانات آمنة ومنخفضة زمن الانتقال باستخدام Kafka لبث المعاملات وسجلات أحداث المستخدمين إلى نموذج التعلم الآلي."
+        },
+        {
+          "step": 3,
+          "title": "تدريب النماذج",
+          "description": "نقوم بتدريب نماذج تصنيف وكشف الشذوذ باستخدام XGBoost و PyTorch بالاعتماد على سجلات البيانات التاريخية المتاحة."
+        },
+        {
+          "step": 4,
+          "title": "تكامل محرك القواعد",
+          "description": "ندمج نموذج تسجيل النقاط مع محرك قواعد ديناميكي، مما يسمح لفريقك بحظر أو فحص أنماط معينة يدوياً."
+        },
+        {
+          "step": 5,
+          "title": "تطوير لوحة التحكم",
+          "description": "نصمم بوابة آمنة لإدارة الحالات تتميز بتقديم تفاصيل تقييم المخاطر وتفسير قرارات النماذج بوضوح تام."
+        },
+        {
+          "step": 6,
+          "title": "النشر وإعادة التدريب",
+          "description": "ننشر النظام في البيئة الفعلية مع إجراء اختبارات ظل مستمرة، ونعد مسارات إعادة التدريب التلقائي للتكيف مع أساليب الاحتيال المتطورة."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما مدى سرعة تقييم النظام للمعاملة؟",
+          "answer": "باستخدام مجمعات C++ المحسنة للغاية والاستعلام داخل الذاكرة في Redis، تقيم محركاتنا المعاملات والأنشطة السلوكية في أقل من 50 مللي ثانية."
+        },
+        {
+          "question": "كيف تقلل التنبيهات الكاذبة للمشترين الشرعيين؟",
+          "answer": "نحن نجمع بين سلوك العميل التاريخي والحدود الديناميكية. من خلال تحليل الأنماط المحلية وبصمات الأصابع للأجهزة، نضمن عدم تعرض المشترين الحقيقيين لأي تأخير."
+        },
+        {
+          "question": "ما هي الخوارزميات التي تستخدمها لكشف الاحتيال؟",
+          "answer": "نحن نستخدم خوارزميات التصنيف الخاضعة للإشراف مثل XGBoost و Random Forests للأنماط المعروفة، والشبكات العصبية غير الخاضعة للإشراف مثل Autoencoders لاكتشاف الأنماط غير الموثقة."
+        },
+        {
+          "question": "هل يمكن للنظام كشف شبكات الاحتيال المنظمة؟",
+          "answer": "نعم، نحن ندمج قواعد البيانات الرسومية مثل Neo4j لرسم خريطة العلاقات بين الحسابات وعناوين IP وبطاقات الائتمان والأجهزة، لكشف شبكات الاحتيال المعقدة."
+        },
+        {
+          "question": "كيف يعمل تفسير قرارات النموذج؟",
+          "answer": "نحن ندمج نماذج تفسير SHAP أو LIME. يوفر هذا لمراجعي الأمن تفصيلاً واضحاً للعوامل المحددة التي ساهمت في فحص المعاملة أو حظرها."
+        },
+        {
+          "question": "هل يمكن لنظامكم التكامل مع بوابات الدفع التابعة لجهات خارجية؟",
+          "answer": "نعم، يعمل محرك تسجيل النقاط لدينا عبر واجهات API خفيفة يمكن دمجها بسهولة في Stripe أو Adyen أو PayPal أو بوابات المعاملات المخصصة."
+        },
+        {
+          "question": "هل يتحدث النموذج تلقائياً مع تطور أساليب الاحتيال؟",
+          "answer": "نعم، نقوم بإعداد مسارات MLOps مستمرة تعيد تدريب النماذج تلقائياً على حالات الاحتيال المكتشفة حديثاً، مما يحافظ على دقة التصنيف عالية دائماً."
+        },
+        {
+          "question": "ما هي بصمة الجهاز (Device Fingerprinting)؟",
+          "answer": "تجمع بصمة الجهاز خصائص الأجهزة والبرمجيات غير الخاصة من المتصفح أو التطبيق لإنشاء معرّف فريد لاكتشاف من يستخدم حسابات متعددة على جهاز واحد."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "XGBoost",
+          "icon": "xgboost"
+        },
+        {
+          "name": "PyTorch",
+          "icon": "pytorch"
+        },
+        {
+          "name": "Apache Kafka",
+          "icon": "kafka"
+        },
+        {
+          "name": "Redis",
+          "icon": "redis"
+        },
+        {
+          "name": "Neo4j",
+          "icon": "neo4j"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "FastAPI",
+          "icon": "fastapi"
+        }
+      ]
+    }
+  }
+}

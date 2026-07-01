@@ -1,0 +1,278 @@
+{
+  "slug": "website-speed-optimization",
+  "en": {
+    "name": "Website Speed Optimization",
+    "shortDescription": "Make your website lightning fast. We optimise images, code, caching, and delivery to slash load times, ace Core Web Vitals, and turn faster pages into higher conversions and better rankings.",
+    "fullDescription": "Every extra second of load time costs you conversions and search visibility. We run a deep performance audit with Lighthouse and WebPageTest, then fix what actually moves the needle: oversized images, render-blocking scripts, bloated JavaScript bundles, slow servers, and missing caching. We optimise across the whole delivery path, from image formats like WebP and AVIF, code splitting and lazy loading, to CDN configuration, edge caching, and compression with Brotli. Our north star is Core Web Vitals, the loading, interactivity, and visual-stability metrics Google uses for ranking. You get measurable before-and-after numbers, a faster site your visitors feel instantly, and an improvement that pays for itself in conversions, SEO, and lower bounce rates.",
+    "features": [
+      "Lighthouse & WebPageTest performance audit",
+      "Core Web Vitals (LCP, INP, CLS) optimization",
+      "Image optimization (WebP, AVIF, lazy loading)",
+      "JavaScript and CSS bundle reduction",
+      "Caching and CDN edge configuration",
+      "Compression (Brotli, Gzip) and HTTP/2/3",
+      "Server response time and TTFB tuning",
+      "Before/after benchmarks and monitoring"
+    ],
+    "benefits": [
+      "Convert more visitors with faster pages",
+      "Rank higher with strong Core Web Vitals",
+      "Reduce bounce rates and abandoned sessions",
+      "Improve mobile experience on slow networks",
+      "Lower bandwidth and infrastructure costs",
+      "Delight users with an instantly responsive site"
+    ],
+    "metaTitle": "Website Speed Optimization Services | PakSoft",
+    "metaDescription": "Make your website lightning fast with image, code, caching, and CDN optimization. Ace Core Web Vitals, boost conversions, and rank higher. Get a speed audit today.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Performance Audit", "description": "We measure your site with Lighthouse, WebPageTest, and real-user data. This pinpoints exactly which assets and scripts are slowing pages down." },
+        { "step": 2, "title": "Prioritised Plan", "description": "We rank fixes by impact on load time and Core Web Vitals versus effort. You get the biggest speed gains first instead of random tweaks." },
+        { "step": 3, "title": "Asset Optimization", "description": "We compress and convert images, defer offscreen media, and trim fonts. Media is usually the heaviest payload, so this delivers fast, visible wins." },
+        { "step": 4, "title": "Code & Bundle Optimization", "description": "We split bundles, remove dead code, and eliminate render-blocking resources. Lean JavaScript is what makes pages interactive quickly." },
+        { "step": 5, "title": "Caching & Delivery", "description": "We configure browser caching, a CDN, edge rules, and compression. Serving assets from the edge cuts latency for users everywhere." },
+        { "step": 6, "title": "Verify & Monitor", "description": "We re-test to prove the gains and set up ongoing monitoring. Continuous checks catch regressions before they hurt rankings again." }
+      ],
+      "faq": [
+        { "question": "What are Core Web Vitals and why do they matter?", "answer": "Core Web Vitals are Google's metrics for loading (LCP), interactivity (INP), and visual stability (CLS). They directly influence search rankings and reflect how fast and stable your site feels to real users." },
+        { "question": "How much faster can you make our site?", "answer": "It depends on the starting point, but cutting load times by 40 to 70 percent and moving a failing Lighthouse score into the 90s is common once the main bottlenecks are fixed." },
+        { "question": "Will faster pages really improve conversions?", "answer": "Yes. Studies consistently show that even a one-second delay reduces conversions and increases bounce rates, so speed improvements usually pay back directly in revenue." },
+        { "question": "Do I need to rebuild my website to make it fast?", "answer": "Rarely. Most gains come from optimising images, caching, code, and delivery on your existing site. We only recommend deeper changes when the platform itself is the real bottleneck." },
+        { "question": "Does this work on WordPress, Shopify, and custom sites?", "answer": "Yes. The principles are universal, and we apply platform-specific techniques, from WordPress caching plugins and Shopify theme tuning to custom framework optimisation." },
+        { "question": "What is the biggest cause of slow websites?", "answer": "Usually oversized, unoptimised images and heavy, render-blocking JavaScript. Missing caching and slow server response times are the next most common culprits, all of which we address." },
+        { "question": "How do you measure the improvement?", "answer": "We use lab tools like Lighthouse and WebPageTest plus real-user field data, giving you clear before-and-after numbers on load time and Core Web Vitals rather than vague claims." },
+        { "question": "Will the speed gains last over time?", "answer": "We set up monitoring and guidelines so new content and code do not silently erode performance. Ongoing checks let us catch and fix regressions early." }
+      ],
+      "technologies": [
+        { "name": "Lighthouse", "icon": "lighthouse" },
+        { "name": "WebPageTest", "icon": "webpagetest" },
+        { "name": "Cloudflare", "icon": "cloudflare" },
+        { "name": "Next.js", "icon": "nextjs" },
+        { "name": "Redis", "icon": "redis" },
+        { "name": "Cloudinary", "icon": "cloudinary" },
+        { "name": "Nginx", "icon": "nginx" },
+        { "name": "Brotli", "icon": "brotli" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Web Sitesi Hız Optimizasyonu",
+    "shortDescription": "Web sitenizi şimşek hızında yapın. Görselleri, kodu, önbelleği ve teslimatı optimize ederek yükleme sürelerini düşürür, Core Web Vitals'ı geçer ve daha hızlı sayfaları daha yüksek dönüşüm ve daha iyi sıralamaya dönüştürürüz.",
+    "fullDescription": "Her ek yükleme saniyesi size dönüşüm ve arama görünürlüğü kaybettirir. Lighthouse ve WebPageTest ile derin bir performans denetimi yürütür, ardından gerçekten fark yaratan şeyleri düzeltiriz: büyük görseller, render engelleyen betikler, şişkin JavaScript paketleri, yavaş sunucular ve eksik önbellek. WebP ve AVIF gibi görsel formatlarından kod bölme ve tembel yüklemeye, CDN yapılandırması, uç önbellekleme ve Brotli ile sıkıştırmaya kadar tüm teslimat yolunu optimize ederiz. Kuzey yıldızımız, Google'ın sıralama için kullandığı yükleme, etkileşim ve görsel kararlılık metrikleri olan Core Web Vitals'tır. Ölçülebilir öncesi-sonrası rakamlar, ziyaretçilerinizin anında hissettiği daha hızlı bir site ve dönüşüm, SEO ile düşük hemen çıkma oranlarında kendini amorti eden bir iyileşme elde edersiniz.",
+    "features": [
+      "Lighthouse ve WebPageTest performans denetimi",
+      "Core Web Vitals (LCP, INP, CLS) optimizasyonu",
+      "Görsel optimizasyonu (WebP, AVIF, tembel yükleme)",
+      "JavaScript ve CSS paket küçültme",
+      "Önbellek ve CDN uç yapılandırması",
+      "Sıkıştırma (Brotli, Gzip) ve HTTP/2/3",
+      "Sunucu yanıt süresi ve TTFB ayarı",
+      "Öncesi/sonrası kıyaslama ve izleme"
+    ],
+    "benefits": [
+      "Daha hızlı sayfalarla daha fazla ziyaretçiyi dönüştürün",
+      "Güçlü Core Web Vitals ile daha yüksek sıralayın",
+      "Hemen çıkma oranlarını ve terk edilen oturumları azaltın",
+      "Yavaş ağlarda mobil deneyimi iyileştirin",
+      "Bant genişliği ve altyapı maliyetlerini düşürün",
+      "Anında yanıt veren bir siteyle kullanıcıları memnun edin"
+    ],
+    "metaTitle": "Web Sitesi Hız Optimizasyonu | PakSoft",
+    "metaDescription": "Web sitenizi görsel, kod, önbellek ve CDN optimizasyonuyla şimşek hızında yapın. Core Web Vitals'ı geçin, dönüşümleri artırın ve üst sıralara çıkın. Hız denetimi alın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Performans Denetimi", "description": "Sitenizi Lighthouse, WebPageTest ve gerçek kullanıcı verileriyle ölçeriz. Bu, hangi varlıkların ve betiklerin sayfaları yavaşlattığını tam olarak saptar." },
+        { "step": 2, "title": "Önceliklendirilmiş Plan", "description": "Düzeltmeleri yükleme süresi ve Core Web Vitals üzerindeki etkiye karşı efora göre sıralarız. Rastgele ince ayarlar yerine en büyük hız kazanımlarını önce alırsınız." },
+        { "step": 3, "title": "Varlık Optimizasyonu", "description": "Görselleri sıkıştırır ve dönüştürür, ekran dışı medyayı erteler ve fontları kısarız. Medya genellikle en ağır yüktür, bu yüzden bu hızlı, görünür kazanımlar sağlar." },
+        { "step": 4, "title": "Kod ve Paket Optimizasyonu", "description": "Paketleri böler, ölü kodu kaldırır ve render engelleyen kaynakları yok ederiz. Yalın JavaScript, sayfaları hızla etkileşimli yapan şeydir." },
+        { "step": 5, "title": "Önbellek ve Teslimat", "description": "Tarayıcı önbelleği, bir CDN, uç kuralları ve sıkıştırma yapılandırırız. Varlıkları uçtan sunmak, her yerdeki kullanıcılar için gecikmeyi azaltır." },
+        { "step": 6, "title": "Doğrulama ve İzleme", "description": "Kazanımları kanıtlamak için yeniden test eder ve sürekli izleme kurarız. Sürekli kontroller, gerilemeleri sıralamayı tekrar zedelemeden yakalar." }
+      ],
+      "faq": [
+        { "question": "Core Web Vitals nedir ve neden önemlidir?", "answer": "Core Web Vitals, Google'ın yükleme (LCP), etkileşim (INP) ve görsel kararlılık (CLS) için kullandığı metriklerdir. Arama sıralamalarını doğrudan etkiler ve sitenizin gerçek kullanıcılara ne kadar hızlı ve kararlı hissettirdiğini yansıtır." },
+        { "question": "Sitemizi ne kadar hızlandırabilirsiniz?", "answer": "Başlangıç noktasına bağlıdır, ancak ana darboğazlar düzeltildiğinde yükleme sürelerini yüzde 40 ila 70 azaltmak ve başarısız bir Lighthouse skorunu 90'lara taşımak yaygındır." },
+        { "question": "Daha hızlı sayfalar dönüşümleri gerçekten artırır mı?", "answer": "Evet. Çalışmalar tutarlı biçimde, bir saniyelik gecikmenin bile dönüşümleri azaltıp hemen çıkma oranlarını artırdığını gösterir; bu yüzden hız iyileştirmeleri genellikle doğrudan gelir olarak geri döner." },
+        { "question": "Hızlı olması için sitemi yeniden kurmam gerekir mi?", "answer": "Nadiren. Kazanımların çoğu mevcut sitenizde görselleri, önbelleği, kodu ve teslimatı optimize etmekten gelir. Yalnızca platformun kendisi gerçek darboğaz olduğunda daha derin değişiklikler öneririz." },
+        { "question": "Bu WordPress, Shopify ve özel sitelerde işe yarar mı?", "answer": "Evet. İlkeler evrenseldir ve WordPress önbellek eklentilerinden Shopify tema ayarına ve özel framework optimizasyonuna kadar platforma özgü teknikler uygularız." },
+        { "question": "Yavaş web sitelerinin en büyük nedeni nedir?", "answer": "Genellikle büyük, optimize edilmemiş görseller ve ağır, render engelleyen JavaScript. Eksik önbellek ve yavaş sunucu yanıt süreleri sonraki en yaygın sorumlulardır; hepsini ele alırız." },
+        { "question": "İyileşmeyi nasıl ölçüyorsunuz?", "answer": "Lighthouse ve WebPageTest gibi laboratuvar araçlarını gerçek kullanıcı saha verileriyle birlikte kullanır; size belirsiz iddialar yerine yükleme süresi ve Core Web Vitals üzerinde net öncesi-sonrası rakamları veririz." },
+        { "question": "Hız kazanımları zamanla kalıcı olur mu?", "answer": "Yeni içerik ve kodun performansı sessizce aşındırmaması için izleme ve yönergeler kurarız. Sürekli kontroller, gerilemeleri erken yakalayıp düzeltmemizi sağlar." }
+      ],
+      "technologies": [
+        { "name": "Lighthouse", "icon": "lighthouse" },
+        { "name": "WebPageTest", "icon": "webpagetest" },
+        { "name": "Cloudflare", "icon": "cloudflare" },
+        { "name": "Next.js", "icon": "nextjs" },
+        { "name": "Redis", "icon": "redis" },
+        { "name": "Cloudinary", "icon": "cloudinary" },
+        { "name": "Nginx", "icon": "nginx" },
+        { "name": "Brotli", "icon": "brotli" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Website-Geschwindigkeitsoptimierung",
+    "shortDescription": "Machen Sie Ihre Website blitzschnell. Wir optimieren Bilder, Code, Caching und Auslieferung, um Ladezeiten zu senken, Core Web Vitals zu meistern und schnellere Seiten in mehr Conversions und bessere Rankings zu verwandeln.",
+    "fullDescription": "Jede zusätzliche Sekunde Ladezeit kostet Sie Conversions und Sichtbarkeit in der Suche. Wir führen ein tiefes Performance-Audit mit Lighthouse und WebPageTest durch und beheben dann, was wirklich zählt: überdimensionierte Bilder, render-blockierende Skripte, aufgeblähte JavaScript-Bundles, langsame Server und fehlendes Caching. Wir optimieren über den gesamten Auslieferungspfad, von Bildformaten wie WebP und AVIF über Code-Splitting und Lazy Loading bis hin zu CDN-Konfiguration, Edge-Caching und Komprimierung mit Brotli. Unser Nordstern sind die Core Web Vitals, die Lade-, Interaktivitäts- und visuellen Stabilitätsmetriken, die Google fürs Ranking nutzt. Sie erhalten messbare Vorher-Nachher-Zahlen, eine schnellere Website, die Ihre Besucher sofort spüren, und eine Verbesserung, die sich in Conversions, SEO und geringeren Absprungraten auszahlt.",
+    "features": [
+      "Lighthouse- & WebPageTest-Performance-Audit",
+      "Core-Web-Vitals-Optimierung (LCP, INP, CLS)",
+      "Bildoptimierung (WebP, AVIF, Lazy Loading)",
+      "Reduktion von JavaScript- und CSS-Bundles",
+      "Caching- und CDN-Edge-Konfiguration",
+      "Komprimierung (Brotli, Gzip) und HTTP/2/3",
+      "Server-Antwortzeit- und TTFB-Tuning",
+      "Vorher/Nachher-Benchmarks und Monitoring"
+    ],
+    "benefits": [
+      "Konvertieren Sie mehr Besucher mit schnelleren Seiten",
+      "Ranken Sie höher mit starken Core Web Vitals",
+      "Senken Sie Absprungraten und abgebrochene Sessions",
+      "Verbessern Sie das Mobil-Erlebnis in langsamen Netzen",
+      "Senken Sie Bandbreiten- und Infrastrukturkosten",
+      "Begeistern Sie Nutzer mit einer sofort reagierenden Seite"
+    ],
+    "metaTitle": "Website-Geschwindigkeitsoptimierung | PakSoft",
+    "metaDescription": "Machen Sie Ihre Website mit Bild-, Code-, Caching- und CDN-Optimierung blitzschnell. Core Web Vitals meistern, Conversions steigern, höher ranken. Speed-Audit holen.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Performance-Audit", "description": "Wir messen Ihre Seite mit Lighthouse, WebPageTest und Echtnutzerdaten. Das lokalisiert genau, welche Assets und Skripte Seiten verlangsamen." },
+        { "step": 2, "title": "Priorisierter Plan", "description": "Wir ordnen Fixes nach Wirkung auf Ladezeit und Core Web Vitals im Verhältnis zum Aufwand. Sie erhalten die größten Geschwindigkeitsgewinne zuerst statt zufälliger Anpassungen." },
+        { "step": 3, "title": "Asset-Optimierung", "description": "Wir komprimieren und konvertieren Bilder, verzögern Offscreen-Medien und kürzen Fonts. Medien sind meist die schwerste Last, daher liefert das schnelle, sichtbare Erfolge." },
+        { "step": 4, "title": "Code- & Bundle-Optimierung", "description": "Wir splitten Bundles, entfernen toten Code und eliminieren render-blockierende Ressourcen. Schlankes JavaScript macht Seiten schnell interaktiv." },
+        { "step": 5, "title": "Caching & Auslieferung", "description": "Wir konfigurieren Browser-Caching, ein CDN, Edge-Regeln und Komprimierung. Assets vom Edge auszuliefern senkt die Latenz für Nutzer überall." },
+        { "step": 6, "title": "Verifizieren & Monitoring", "description": "Wir testen erneut, um die Gewinne zu belegen, und richten laufendes Monitoring ein. Kontinuierliche Checks fangen Regressionen ab, bevor sie Rankings erneut schaden." }
+      ],
+      "faq": [
+        { "question": "Was sind Core Web Vitals und warum sind sie wichtig?", "answer": "Core Web Vitals sind Googles Metriken für Laden (LCP), Interaktivität (INP) und visuelle Stabilität (CLS). Sie beeinflussen Suchrankings direkt und spiegeln wider, wie schnell und stabil sich Ihre Seite für echte Nutzer anfühlt." },
+        { "question": "Wie viel schneller können Sie unsere Seite machen?", "answer": "Das hängt vom Ausgangspunkt ab, aber Ladezeiten um 40 bis 70 Prozent zu senken und einen durchfallenden Lighthouse-Score in die 90er zu heben, ist üblich, sobald die Hauptengpässe behoben sind." },
+        { "question": "Verbessern schnellere Seiten wirklich Conversions?", "answer": "Ja. Studien zeigen konsistent, dass schon eine Sekunde Verzögerung Conversions senkt und Absprungraten erhöht, daher zahlen sich Geschwindigkeitsverbesserungen meist direkt im Umsatz aus." },
+        { "question": "Muss ich meine Website neu bauen, damit sie schnell wird?", "answer": "Selten. Die meisten Gewinne stammen aus dem Optimieren von Bildern, Caching, Code und Auslieferung auf Ihrer bestehenden Seite. Tiefere Änderungen empfehlen wir nur, wenn die Plattform selbst der eigentliche Engpass ist." },
+        { "question": "Funktioniert das bei WordPress, Shopify und Custom-Sites?", "answer": "Ja. Die Prinzipien sind universell, und wir wenden plattformspezifische Techniken an, von WordPress-Caching-Plugins über Shopify-Theme-Tuning bis zur Optimierung eigener Frameworks." },
+        { "question": "Was ist die größte Ursache langsamer Websites?", "answer": "Meist überdimensionierte, nicht optimierte Bilder und schweres, render-blockierendes JavaScript. Fehlendes Caching und langsame Server-Antwortzeiten sind die nächsthäufigen Ursachen, die wir alle angehen." },
+        { "question": "Wie messen Sie die Verbesserung?", "answer": "Wir nutzen Laborwerkzeuge wie Lighthouse und WebPageTest plus Echtnutzer-Felddaten und geben Ihnen klare Vorher-Nachher-Zahlen zu Ladezeit und Core Web Vitals statt vager Behauptungen." },
+        { "question": "Halten die Geschwindigkeitsgewinne über die Zeit?", "answer": "Wir richten Monitoring und Richtlinien ein, damit neue Inhalte und Code die Performance nicht still erodieren. Laufende Checks lassen uns Regressionen früh erkennen und beheben." }
+      ],
+      "technologies": [
+        { "name": "Lighthouse", "icon": "lighthouse" },
+        { "name": "WebPageTest", "icon": "webpagetest" },
+        { "name": "Cloudflare", "icon": "cloudflare" },
+        { "name": "Next.js", "icon": "nextjs" },
+        { "name": "Redis", "icon": "redis" },
+        { "name": "Cloudinary", "icon": "cloudinary" },
+        { "name": "Nginx", "icon": "nginx" },
+        { "name": "Brotli", "icon": "brotli" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "ویب سائٹ اسپیڈ آپٹیمائزیشن",
+    "shortDescription": "اپنی ویب سائٹ کو بجلی کی رفتار جیسا بنائیں۔ ہم images، کوڈ، caching اور delivery کو optimize کر کے load times گھٹاتے ہیں، Core Web Vitals پاس کرتے ہیں، اور تیز صفحات کو زیادہ conversions اور بہتر رینکنگ میں بدلتے ہیں۔",
+    "fullDescription": "ہر اضافی سیکنڈ کا load time آپ کو conversions اور سرچ visibility کا نقصان دیتا ہے۔ ہم Lighthouse اور WebPageTest کے ساتھ ایک گہرا performance audit چلاتے ہیں، پھر وہ چیزیں ٹھیک کرتے ہیں جو واقعی فرق ڈالتی ہیں: حد سے بڑی images، render-blocking scripts، پھولے ہوئے JavaScript bundles، سست servers اور غائب caching۔ ہم پوری delivery path کو optimize کرتے ہیں، WebP اور AVIF جیسے image formats، code splitting اور lazy loading سے لے کر CDN configuration، edge caching اور Brotli کے ساتھ compression تک۔ ہمارا قطب ستارہ Core Web Vitals ہے، یعنی loading، interactivity اور visual stability کے وہ metrics جو Google رینکنگ کے لیے استعمال کرتا ہے۔ آپ کو قابلِ پیمائش before-and-after اعداد، ایک تیز سائٹ جو آپ کے وزیٹرز فوراً محسوس کریں، اور ایک ایسی بہتری ملتی ہے جو conversions، SEO اور کم bounce rates میں اپنی قیمت پوری کر دیتی ہے۔",
+    "features": [
+      "Lighthouse اور WebPageTest performance audit",
+      "Core Web Vitals (LCP، INP، CLS) آپٹیمائزیشن",
+      "Image optimization (WebP، AVIF، lazy loading)",
+      "JavaScript اور CSS bundle میں کمی",
+      "Caching اور CDN edge configuration",
+      "Compression (Brotli، Gzip) اور HTTP/2/3",
+      "سرور response time اور TTFB ٹیوننگ",
+      "Before/after benchmarks اور نگرانی"
+    ],
+    "benefits": [
+      "تیز صفحات سے زیادہ وزیٹرز کو convert کریں",
+      "مضبوط Core Web Vitals سے زیادہ اوپر رینک کریں",
+      "Bounce rates اور ادھوری sessions کم کریں",
+      "سست نیٹ ورکس پر موبائل تجربہ بہتر بنائیں",
+      "Bandwidth اور انفراسٹرکچر لاگت کم کریں",
+      "فوری جواب دینے والی سائٹ سے صارفین کو خوش کریں"
+    ],
+    "metaTitle": "Website Speed Optimization | PakSoft",
+    "metaDescription": "اپنی ویب سائٹ کو image، کوڈ، caching اور CDN optimization سے بجلی کی رفتار جیسا بنائیں۔ Core Web Vitals پاس کریں، conversions بڑھائیں اور اوپر رینک کریں۔ اسپیڈ آڈٹ لیں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Performance Audit", "description": "ہم آپ کی سائٹ کو Lighthouse، WebPageTest اور real-user ڈیٹا سے ناپتے ہیں۔ یہ بالکل واضح کرتا ہے کہ کون سے assets اور scripts صفحات کو سست کر رہے ہیں۔" },
+        { "step": 2, "title": "ترجیحی منصوبہ", "description": "ہم اصلاحات کو load time اور Core Web Vitals پر اثر بمقابلہ محنت کے مطابق درجہ دیتے ہیں۔ آپ کو بے ترتیب tweaks کے بجائے سب سے بڑے speed فوائد پہلے ملتے ہیں۔" },
+        { "step": 3, "title": "Asset Optimization", "description": "ہم images کو compress اور convert کرتے، offscreen media کو defer کرتے اور fonts کو کم کرتے ہیں۔ Media عام طور پر سب سے بھاری payload ہوتی ہے، اس لیے یہ تیز، نظر آنے والے فوائد دیتی ہے۔" },
+        { "step": 4, "title": "کوڈ اور Bundle Optimization", "description": "ہم bundles split کرتے، dead code ہٹاتے اور render-blocking resources ختم کرتے ہیں۔ ہلکا JavaScript ہی صفحات کو تیزی سے interactive بناتا ہے۔" },
+        { "step": 5, "title": "Caching اور Delivery", "description": "ہم browser caching، ایک CDN، edge rules اور compression configure کرتے ہیں۔ assets کو edge سے فراہم کرنا ہر جگہ کے صارفین کے لیے latency کم کرتا ہے۔" },
+        { "step": 6, "title": "تصدیق اور نگرانی", "description": "ہم فوائد ثابت کرنے کے لیے دوبارہ ٹیسٹ کرتے اور مسلسل نگرانی قائم کرتے ہیں۔ مسلسل جانچ regressions کو رینکنگ دوبارہ متاثر کرنے سے پہلے پکڑ لیتی ہے۔" }
+      ],
+      "faq": [
+        { "question": "Core Web Vitals کیا ہیں اور یہ کیوں اہم ہیں؟", "answer": "Core Web Vitals Google کے metrics ہیں جو loading (LCP)، interactivity (INP) اور visual stability (CLS) کے لیے ہیں۔ یہ سرچ رینکنگ پر براہِ راست اثر ڈالتے اور ظاہر کرتے ہیں کہ آپ کی سائٹ حقیقی صارفین کو کتنی تیز اور مستحکم محسوس ہوتی ہے۔" },
+        { "question": "آپ ہماری سائٹ کو کتنا تیز کر سکتے ہیں؟", "answer": "یہ آغاز کے نقطے پر منحصر ہے، مگر اہم bottlenecks ٹھیک ہونے کے بعد load times کو 40 سے 70 فیصد گھٹانا اور ایک ناکام Lighthouse score کو 90 کی دہائی میں لے جانا عام ہے۔" },
+        { "question": "کیا تیز صفحات واقعی conversions بہتر کرتے ہیں؟", "answer": "جی ہاں۔ مطالعات مستقل طور پر دکھاتے ہیں کہ ایک سیکنڈ کی تاخیر بھی conversions کم اور bounce rates زیادہ کرتی ہے، اس لیے speed بہتری عام طور پر براہِ راست آمدنی میں واپس آتی ہے۔" },
+        { "question": "کیا تیز بنانے کے لیے مجھے اپنی ویب سائٹ دوبارہ بنانی ہوگی؟", "answer": "شاذ و نادر۔ زیادہ تر فوائد آپ کی موجودہ سائٹ پر images، caching، کوڈ اور delivery کو optimize کرنے سے آتے ہیں۔ ہم گہری تبدیلیاں صرف اس وقت تجویز کرتے ہیں جب platform خود اصل bottleneck ہو۔" },
+        { "question": "کیا یہ WordPress، Shopify اور custom سائٹس پر کام کرتا ہے؟", "answer": "جی ہاں۔ اصول عالمگیر ہیں، اور ہم platform-مخصوص تکنیکیں لاگو کرتے ہیں، WordPress caching plugins اور Shopify theme tuning سے لے کر custom framework optimization تک۔" },
+        { "question": "سست ویب سائٹس کی سب سے بڑی وجہ کیا ہے؟", "answer": "عام طور پر حد سے بڑی، غیر optimized images اور بھاری، render-blocking JavaScript۔ غائب caching اور سست سرور response times اگلی سب سے عام وجوہات ہیں، جن سب کو ہم سنبھالتے ہیں۔" },
+        { "question": "آپ بہتری کیسے ناپتے ہیں؟", "answer": "ہم Lighthouse اور WebPageTest جیسے lab tools کو real-user field data کے ساتھ استعمال کرتے ہیں، آپ کو مبہم دعوؤں کے بجائے load time اور Core Web Vitals پر واضح before-and-after اعداد دیتے ہیں۔" },
+        { "question": "کیا speed فوائد وقت کے ساتھ برقرار رہیں گے؟", "answer": "ہم نگرانی اور رہنما اصول قائم کرتے ہیں تاکہ نیا content اور کوڈ performance کو خاموشی سے زائل نہ کرے۔ مسلسل جانچ ہمیں regressions جلد پکڑ کر ٹھیک کرنے دیتی ہے۔" }
+      ],
+      "technologies": [
+        { "name": "Lighthouse", "icon": "lighthouse" },
+        { "name": "WebPageTest", "icon": "webpagetest" },
+        { "name": "Cloudflare", "icon": "cloudflare" },
+        { "name": "Next.js", "icon": "nextjs" },
+        { "name": "Redis", "icon": "redis" },
+        { "name": "Cloudinary", "icon": "cloudinary" },
+        { "name": "Nginx", "icon": "nginx" },
+        { "name": "Brotli", "icon": "brotli" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تحسين سرعة المواقع",
+    "shortDescription": "اجعل موقعك سريعاً كالبرق. نُحسّن الصور والشيفرة والتخزين المؤقت والتوصيل لخفض أزمنة التحميل واجتياز Core Web Vitals وتحويل الصفحات الأسرع إلى تحويلات أعلى وترتيب أفضل.",
+    "fullDescription": "كل ثانية إضافية في التحميل تكلّفك تحويلات وظهوراً في البحث. نُجري تدقيق أداء عميقاً بـ Lighthouse وWebPageTest، ثم نُصلح ما يُحدث الفرق فعلاً: الصور المفرطة الحجم، والنصوص البرمجية الحاجبة للعرض، وحِزم JavaScript المتضخمة، والخوادم البطيئة، والتخزين المؤقت المفقود. نُحسّن عبر مسار التوصيل بالكامل، من صيغ الصور مثل WebP وAVIF وتقسيم الشيفرة والتحميل الكسول إلى إعداد CDN والتخزين المؤقت الطرفي والضغط بـ Brotli. نجمتنا القطبية هي Core Web Vitals، أي مقاييس التحميل والتفاعلية والاستقرار البصري التي يستخدمها Google للترتيب. تحصل على أرقام قبل/بعد قابلة للقياس، وموقع أسرع يشعر به زوّارك فوراً، وتحسين يردّ تكلفته في التحويلات وتحسين محركات البحث وانخفاض معدلات الارتداد.",
+    "features": [
+      "تدقيق أداء بـ Lighthouse وWebPageTest",
+      "تحسين Core Web Vitals (LCP، INP، CLS)",
+      "تحسين الصور (WebP، AVIF، التحميل الكسول)",
+      "تقليص حِزم JavaScript وCSS",
+      "إعداد التخزين المؤقت وحافة CDN",
+      "الضغط (Brotli، Gzip) وHTTP/2/3",
+      "ضبط زمن استجابة الخادم وTTFB",
+      "قياسات قبل/بعد ومراقبة"
+    ],
+    "benefits": [
+      "حوّل مزيداً من الزوار بصفحات أسرع",
+      "ارتقِ في الترتيب بـ Core Web Vitals قوية",
+      "قلّل معدلات الارتداد والجلسات المهجورة",
+      "حسّن تجربة الجوال على الشبكات البطيئة",
+      "اخفض تكاليف النطاق الترددي والبنية التحتية",
+      "أبهج المستخدمين بموقع يستجيب فوراً"
+    ],
+    "metaTitle": "خدمات تحسين سرعة المواقع | PakSoft",
+    "metaDescription": "اجعل موقعك سريعاً كالبرق عبر تحسين الصور والشيفرة والتخزين المؤقت وCDN. اجتَز Core Web Vitals وعزّز التحويلات وارتقِ في الترتيب. احصل على تدقيق سرعة اليوم.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "تدقيق الأداء", "description": "نقيس موقعك بـ Lighthouse وWebPageTest وبيانات المستخدمين الحقيقيين. هذا يحدّد بدقة أي الأصول والنصوص تُبطئ الصفحات." },
+        { "step": 2, "title": "خطة مرتبة بالأولوية", "description": "نرتّب الإصلاحات حسب الأثر على زمن التحميل وCore Web Vitals مقابل الجهد. تحصل على أكبر مكاسب السرعة أولاً بدل التعديلات العشوائية." },
+        { "step": 3, "title": "تحسين الأصول", "description": "نضغط الصور ونحوّلها، ونؤجّل الوسائط خارج الشاشة، ونقلّص الخطوط. الوسائط عادةً أثقل حِمل، فيمنح ذلك مكاسب سريعة وظاهرة." },
+        { "step": 4, "title": "تحسين الشيفرة والحِزم", "description": "نقسّم الحِزم ونزيل الشيفرة الميتة ونلغي الموارد الحاجبة للعرض. JavaScript الرشيقة هي ما يجعل الصفحات تفاعلية بسرعة." },
+        { "step": 5, "title": "التخزين المؤقت والتوصيل", "description": "نُعدّ التخزين المؤقت للمتصفح وCDN وقواعد الحافة والضغط. تقديم الأصول من الحافة يخفض الكُمون للمستخدمين في كل مكان." },
+        { "step": 6, "title": "التحقق والمراقبة", "description": "نعيد الاختبار لإثبات المكاسب ونُعدّ مراقبة مستمرة. الفحوصات المستمرة تلتقط التراجعات قبل أن تضرّ الترتيب مجدداً." }
+      ],
+      "faq": [
+        { "question": "ما Core Web Vitals ولماذا تهم؟", "answer": "Core Web Vitals هي مقاييس Google للتحميل (LCP) والتفاعلية (INP) والاستقرار البصري (CLS). تؤثر مباشرة في ترتيب البحث وتعكس مدى سرعة واستقرار موقعك بالنسبة للمستخدمين الحقيقيين." },
+        { "question": "كم يمكنكم جعل موقعنا أسرع؟", "answer": "يعتمد ذلك على نقطة البداية، لكن خفض أزمنة التحميل بنسبة 40 إلى 70 بالمئة ورفع درجة Lighthouse الراسبة إلى التسعينيات أمر شائع بمجرد إصلاح الاختناقات الرئيسية." },
+        { "question": "هل تحسّن الصفحات الأسرع التحويلات فعلاً؟", "answer": "نعم. تُظهر الدراسات باستمرار أن تأخيراً بثانية واحدة يخفض التحويلات ويرفع معدلات الارتداد، لذا تردّ تحسينات السرعة عادةً تكلفتها مباشرة في الإيرادات." },
+        { "question": "هل أحتاج إلى إعادة بناء موقعي ليصبح سريعاً؟", "answer": "نادراً. تأتي معظم المكاسب من تحسين الصور والتخزين المؤقت والشيفرة والتوصيل على موقعك الحالي. نوصي بتغييرات أعمق فقط عندما تكون المنصة نفسها هي الاختناق الفعلي." },
+        { "question": "هل يعمل هذا على WordPress وShopify والمواقع المخصصة؟", "answer": "نعم. المبادئ عامة، ونطبّق تقنيات خاصة بكل منصة، من إضافات التخزين المؤقت في WordPress وضبط قوالب Shopify إلى تحسين الأطر المخصصة." },
+        { "question": "ما أكبر سبب لبطء المواقع؟", "answer": "عادةً الصور المفرطة الحجم وغير المُحسّنة وJavaScript الثقيلة الحاجبة للعرض. التخزين المؤقت المفقود وأزمنة استجابة الخادم البطيئة هما السببان الأكثر شيوعاً بعدها، ونعالجها جميعاً." },
+        { "question": "كيف تقيسون التحسّن؟", "answer": "نستخدم أدوات معملية مثل Lighthouse وWebPageTest إلى جانب بيانات ميدانية للمستخدمين الحقيقيين، فنمنحك أرقام قبل/بعد واضحة لزمن التحميل وCore Web Vitals بدل ادعاءات مبهمة." },
+        { "question": "هل تدوم مكاسب السرعة مع الوقت؟", "answer": "نُعدّ مراقبة وإرشادات حتى لا يُضعف المحتوى والشيفرة الجديدة الأداء بصمت. الفحوصات المستمرة تتيح لنا التقاط التراجعات وإصلاحها مبكراً." }
+      ],
+      "technologies": [
+        { "name": "Lighthouse", "icon": "lighthouse" },
+        { "name": "WebPageTest", "icon": "webpagetest" },
+        { "name": "Cloudflare", "icon": "cloudflare" },
+        { "name": "Next.js", "icon": "nextjs" },
+        { "name": "Redis", "icon": "redis" },
+        { "name": "Cloudinary", "icon": "cloudinary" },
+        { "name": "Nginx", "icon": "nginx" },
+        { "name": "Brotli", "icon": "brotli" }
+      ]
+    }
+  }
+}

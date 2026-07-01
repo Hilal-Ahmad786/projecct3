@@ -1,0 +1,638 @@
+{
+  "slug": "object-detection",
+  "en": {
+    "name": "Object Detection",
+    "shortDescription": "Detect, locate, and classify visual objects in real-time. We build custom object detection models for surveillance, inventory tracking, manufacturing, and autonomous systems.",
+    "fullDescription": "Image classification tells you what is in an image; object detection tells you exactly where it is. We build high-speed, accurate Object Detection systems using state-of-the-art frameworks like YOLOv8, Faster R-CNN, and SSD. We train models to detect custom objects, draw precise bounding boxes, and output confidence scores. Our solutions run efficiently on edge hardware, cloud servers, or mobile devices, optimizing parameters to balance latency and precision. We implement these systems for critical applications: automated defect detection in factory assembly lines, product counting on retail shelves, traffic analysis for smart cities, and security monitoring. By integrating with pipeline video streams, we convert visual inputs into actionable data events.",
+    "features": [
+      "Real-Time Visual Object Detection",
+      "Custom Class Model Training (YOLO)",
+      "Precise Bounding Box Localization",
+      "Multi-Object Tracking in Video",
+      "Edge Device Optimization (OpenVINO)",
+      "High-Accuracy Defect Detection",
+      "Automatic Annotation Pipelines",
+      "Overlay Visualisation Over API"
+    ],
+    "benefits": [
+      "Automate manual inspections in manufacturing pipelines",
+      "Track and count inventory items instantly and accurately",
+      "Monitor security feeds for specific objects or intrusion",
+      "Speed up processing times by deploying models at the edge",
+      "Reduce human errors in visual verification processes",
+      "Generate structured spatial data from unstructured media"
+    ],
+    "metaTitle": "Object Detection & Real-Time Computer Vision | PakSoft",
+    "metaDescription": "Detect and locate objects in real-time. We build high-performance object detection systems with YOLOv8 and Faster R-CNN for edge and cloud. Request a pilot.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Camera & Input Audit",
+          "description": "We analyze your image and video sources, evaluating camera placement, lighting, resolution, and frame rates. We define the target object classes and accuracy requirements."
+        },
+        {
+          "step": 2,
+          "title": "Dataset Annotation",
+          "description": "Our team collects representative images and applies precise bounding-box labels using annotation tools. We perform data augmentation to train models on different lighting and angles."
+        },
+        {
+          "step": 3,
+          "title": "Model Architecture Selection",
+          "description": "We select the optimal model architecture, comparing YOLOv8 for real-time edge processing with Faster R-CNN for high-precision cloud deployments. We configure hyperparameter baselines."
+        },
+        {
+          "step": 4,
+          "title": "Model Training",
+          "description": "We train the object detection model on GPU clusters, monitoring precision, recall, and mean average precision (mAP). We refine weights to minimize false positive detections."
+        },
+        {
+          "step": 5,
+          "title": "Optimization & Porting",
+          "description": "We compile the model for target hardware using tools like TensorRT or OpenVINO. This step maximizes inference speed and minimizes memory usage on edge devices."
+        },
+        {
+          "step": 6,
+          "title": "Integration & Deployment",
+          "description": "We deploy the detection system, connecting the API to your video feeds or factory sensors. We build real-time dashboards to display detection events and statistics."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the difference between image classification and object detection?",
+          "answer": "Image classification assigns a single label to an entire image (e.g., 'forklift'). Object detection identifies individual objects within the image, predicts their coordinates, and labels them (e.g., 'forklift at coordinates X, Y'). This allows you to count items, locate positions, and analyze spatial relationships between multiple objects in the frame."
+        },
+        {
+          "question": "Which models do you use for object detection?",
+          "answer": "We primarily work with the YOLO (You Only Look Once) family, particularly YOLOv8 and YOLOv9, due to their incredible speed and accuracy in real-time applications. For complex tasks requiring maximum precision where latency is less critical, we utilize Faster R-CNN or Mask R-CNN. We select the model based on your hardware."
+        },
+        {
+          "question": "Can object detection models run on low-power edge devices?",
+          "answer": "Yes. We specialize in optimizing models for edge hardware such as NVIDIA Jetson, Raspberry Pi, and industrial smart cameras. Using quantization and compilation frameworks like OpenVINO, ONNX, and TensorRT, we reduce model size and resource usage, allowing real-time inference (30+ frames per second) directly on local hardware without cloud latency."
+        },
+        {
+          "question": "How much training data is required to detect a custom object?",
+          "answer": "For a simple object with consistent appearance, a few hundred annotated images can suffice. For complex objects under varying lighting, angles, and backgrounds, we typically recommend 1,000 to 5,000 labeled instances per class. We also use data augmentation and synthetic image generation to expand your dataset artificially."
+        },
+        {
+          "question": "How do you handle overlapping or partially hidden objects?",
+          "answer": "We handle occlusions by training models on datasets that intentionally contain partially hidden objects. We also configure advanced non-maximum suppression (NMS) thresholds during inference, which prevents duplicate boxes for overlapping items. For video feeds, we add tracking algorithms that maintain an object's ID even when it is temporarily blocked."
+        },
+        {
+          "question": "What is the difference between 2D and 3D object detection?",
+          "answer": "2D object detection estimates bounding boxes in flat pixel coordinates (X, Y, width, height). 3D object detection predicts a 3D bounding box (X, Y, Z, depth, width, height, and rotation) in physical space. We deploy 3D detection for autonomous vehicles, robotics, and spatial layouts where depth perception is essential."
+        },
+        {
+          "question": "Can your systems detect objects in low-light or bad weather?",
+          "answer": "Yes, by utilizing specialized camera hardware (like infrared, thermal, or HDR sensors) and training models on diverse weather conditions. We also apply image enhancement pre-processing steps, such as contrast adjustment and noise reduction, to improve visibility and help the model identify targets in challenging environmental conditions."
+        },
+        {
+          "question": "How long does it take to deploy a custom object detection system?",
+          "answer": "A pilot system using pre-labeled general classes takes 3 to 5 weeks. Designing, annotating, training, and optimizing a custom model for specialized industrial parts or proprietary packaging takes 8 to 12 weeks. This includes extensive onsite testing and calibration for camera angles and lighting setups."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "opencv",
+          "name": "OpenCV"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch"
+        },
+        {
+          "icon": "tensorflow",
+          "name": "TensorFlow"
+        },
+        {
+          "icon": "nvidia",
+          "name": "NVIDIA TensorRT"
+        },
+        {
+          "icon": "python",
+          "name": "YOLO"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "kubernetes",
+          "name": "Kubernetes"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Nesne Tespiti (Object Detection)",
+    "shortDescription": "Görsel nesneleri gerçek zamanlı olarak tespit edin, konumlandırın ve sınıflandırın. Gözetim, envanter takibi, üretim ve otonom sistemler için özel modeller geliştiriyoruz.",
+    "fullDescription": "Görüntü sınıflandırma bir görüntüde ne olduğunu söyler; nesne tespiti ise onun tam olarak nerede olduğunu gösterir. YOLOv8, Faster R-CNN ve SSD gibi en son teknolojileri kullanarak hızlı ve yüksek doğrulukta Nesne Tespiti sistemleri kuruyoruz. Modellerimizi özel nesneleri algılamak, hassas sınır kutuları (bounding boxes) çizmek ve doğruluk skorları üretmek üzere eğitiyoruz. Çözümlerimiz, sınır donanımlarda (edge), bulut sunucularında veya mobil cihazlarda düşük gecikme süresi ile yüksek doğruluk dengesi kurarak verimli çalışır. Bu sistemleri, fabrikalarda otomatik hata tespitinden perakende raflarında ürün sayımına kadar kritik uygulamalar için entegre ediyoruz. Video akışlarını eyleme dönüştürülebilir veri olaylarına dönüştürüyoruz.",
+    "features": [
+      "Gerçek Zamanlı Görsel Nesne Tespiti",
+      "Özel Sınıf Model Eğitimi (YOLO)",
+      "Hassas Sınır Kutusu Konumlandırması",
+      "Videoda Çoklu Nesne Takibi",
+      "Sınır Cihaz Optimizasyonu (OpenVINO)",
+      "Yüksek Doğruluklu Hata Tespiti",
+      "Otomatik Etiketleme Boru Hatları",
+      "API Üzerinden Görsel Bindirme (Overlay)"
+    ],
+    "benefits": [
+      "Üretim hatlarında manuel denetimleri otomatikleştirin",
+      "Envanter kalemlerini anında ve doğru şekilde sayıp takip edin",
+      "Güvenlik kameralarını belirli nesneler veya sızmalar için izleyin",
+      "Modelleri uçta (edge) çalıştırarak işlem sürelerini hızlandırın",
+      "Görsel doğrulama süreçlerinde insan hatalarını azaltın",
+      "Yapılandırılmamış medyadan yapılandırılmış konumsal veriler üretin"
+    ],
+    "metaTitle": "Nesne Tespiti ve Bilgisayarlı Görü Çözümleri | PakSoft",
+    "metaDescription": "Gerçek zamanlı nesne tespiti sistemleri kuruyoruz. YOLOv8 ve Faster R-CNN kullanarak uç cihazlarda ve bulutta yüksek performanslı çözümler alın. İletişim.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Kamera ve Giriş Denetimi",
+          "description": "Görüntü ve video kaynaklarınızı analiz ederek kamera yerleşimi, ışıklandırma, çözünürlük ve kare hızlarını değerlendiririz. Hedef nesne sınıflarını belirleriz."
+        },
+        {
+          "step": 2,
+          "title": "Veri Kümesi Etiketleme",
+          "description": "Temsili görüntüleri toplar ve etiketleme araçlarını kullanarak hassas sınır kutusu etiketleri uygularız. Modelleri farklı ışık ve açılarda eğitmek için veri zenginleştirme yaparız."
+        },
+        {
+          "step": 3,
+          "title": "Model Mimarisi Seçimi",
+          "description": "Gerçek zamanlı uç cihaz işlemeleri için YOLOv8 ile yüksek hassasiyetli bulut dağıtımları için Faster R-CNN'i karşılaştırarak en iyi modeli seçeriz. Parametreleri belirleriz."
+        },
+        {
+          "step": 4,
+          "title": "Model Eğitimi",
+          "description": "Nesne tespiti modelini GPU kümeleri üzerinde eğitir; hassasiyet, geri çağırma ve ortalama doğruluk değerlerini (mAP) izleriz. Hatalı tespitleri en aza indirgeriz."
+        },
+        {
+          "step": 5,
+          "title": "Optimizasyon & Taşıma",
+          "description": "Modeli TensorRT veya OpenVINO kullanarak hedef donanım için derleriz. Bu adım, çıkarım hızını en üst düzeye çıkarırken uç cihazlardaki bellek kullanımını azaltır."
+        },
+        {
+          "step": 6,
+          "title": "Entegrasyon & Canlıya Alma",
+          "description": "Algılama sistemini dağıtır, API'yi video akışlarınıza veya fabrika sensörlerinize bağlarız. Algılama olaylarını görüntülemek için gerçek zamanlı paneller oluştururuz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Görüntü sınıflandırma ile nesne tespiti arasındaki fark nedir?",
+          "answer": "Görüntü sınıflandırma, görüntünün tamamına tek bir etiket atar (örneğin 'forklift'). Nesne tespiti ise görüntü içindeki nesneleri tek tek tanımlar, konum koordinatlarını belirler ve bunları etiketler (örneğin 'X, Y koordinatlarında forklift'). Bu sayede nesneleri sayabilir ve konum analizleri yapabilirsiniz."
+        },
+        {
+          "question": "Nesne tespiti için hangi modelleri kullanıyorsunuz?",
+          "answer": "Gerçek zamanlı uygulamalardaki yüksek hızları ve doğrulukları nedeniyle öncelikle YOLO (YOLOv8, YOLOv9) ailesiyle çalışıyoruz. Latans süresinin daha az kritik olduğu ve maksimum doğruluk gerektiren karmaşık işlerde ise Faster R-CNN veya Mask R-CNN modellerini tercih ediyoruz."
+        },
+        {
+          "question": "Nesne tespiti modelleri düşük güçlü uç (edge) cihazlarda çalışabilir mi?",
+          "answer": "Evet. Modelleri NVIDIA Jetson, Raspberry Pi ve endüstriyel akıllı kameralar gibi uç donanımlar için optimize etme konusunda uzmanız. OpenVINO, ONNX ve TensorRT gibi derleme altyapılarıyla model boyutunu küçülterek bulut gecikmesi olmadan gerçek zamanlı çıkarım (30+ FPS) sağlıyoruz."
+        },
+        {
+          "question": "Özel bir nesneyi algılamak için ne kadar eğitim verisi gereklidir?",
+          "answer": "Biçimi tutarlı ve basit nesneler için birkaç yüz etiketli görsel yeterli olabilir. Değişken ışık, açı ve arka planlara sahip karmaşık nesneler için sınıf başına 1.000 ila 5.000 etiketli görsel öneriyoruz. Veri kümesini genişletmek için veri artırımı ve sentetik görüntü üretimi kullanırız."
+        },
+        {
+          "question": "Üst üste binen veya kısmen gizlenmiş nesneleri nasıl ele alıyorsunuz?",
+          "answer": "Modelleri bilerek kısmen gizlenmiş nesneler içeren veri kümeleriyle eğiterek bu sorunu çözüyoruz. Çıkarım sırasında, üst üste binen nesneler için mükerrer kutuları engelleyen gelişmiş NMS (non-maximum suppression) eşikleri yapılandırıyoruz. Video akışları için ise nesne takibi algoritmaları ekleriz."
+        },
+        {
+          "question": "2D ve 3D nesne tespiti arasındaki fark nedir?",
+          "answer": "2D nesne tespiti, sınır kutularını düz piksel koordinatlarında (X, Y, genişlik, yükseklik) tahmin eder. 3D nesne tespiti ise fiziksel alanda 3D sınır kutusu (X, Y, Z derinlik, genişlik, yükseklik ve yönelim) tahmin eder. 3D tespiti otonom araçlar ve robotik sistemler için kuruyoruz."
+        },
+        {
+          "question": "Sistemleriniz düşük ışıkta veya kötü hava koşullarında çalışabilir mi?",
+          "answer": "Evet, kızılötesi, termal veya HDR kameralar gibi özel donanımlar kullanarak ve modelleri farklı hava koşullarında eğiterek bunu sağlıyoruz. Kontrast ayarı ve parazit giderme gibi görüntü iyileştirme ön işlemleri uygulayarak modelin zorlu ortamlarda hedefleri algılamasına yardımcı oluruz."
+        },
+        {
+          "question": "Özel bir nesne tespit sistemini devreye almak ne kadar sürer?",
+          "answer": "Hazır nesne sınıflarını kullanan pilot sistemler 3 ila 5 hafta sürer. Özel endüstriyel parçalar veya tescilli ambalajlar için özel bir modeli tasarlamak, etiketlemek, eğitmek ve optimize etmek ise 8 ila 12 hafta alır. Bu sürece kamera açısı ve ışık kalibrasyonları dahildir."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "opencv",
+          "name": "OpenCV"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch"
+        },
+        {
+          "icon": "tensorflow",
+          "name": "TensorFlow"
+        },
+        {
+          "icon": "nvidia",
+          "name": "NVIDIA TensorRT"
+        },
+        {
+          "icon": "python",
+          "name": "YOLO"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "kubernetes",
+          "name": "Kubernetes"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Objekterkennung (Object Detection)",
+    "shortDescription": "Erkennen, lokalisieren und klassifizieren Sie visuelle Objekte in Echtzeit. Wir entwickeln Objekterkennungs-Modelle für Überwachung, Logistik, Fertigung und autonome Systeme.",
+    "fullDescription": "Die Bildklassifizierung sagt Ihnen, was auf einem Bild zu sehen ist; die Objekterkennung zeigt Ihnen, wo genau es sich befindet. Wir bauen schnelle und präzise Systeme mit modernen Frameworks wie YOLOv8, Faster R-CNN und SSD. Wir trainieren Modelle darauf, benutzerdefinierte Objekte zu erkennen, Begrenzungsrahmen (Bounding Boxes) zu zeichnen und Konfidenzwerte auszugeben. Unsere Lösungen laufen effizient auf Edge-Hardware, Cloud-Servern oder Mobilgeräten, indem wir Latenz und Präzision optimal ausbalancieren. Wir implementieren diese Systeme für kritische Anwendungen: automatisierte Fehlererkennung in Fabriken, Produktzählung in Regalen, Verkehrsanalysen für Smart Cities und Sicherheitsüberwachung. Wir verwandeln Videostreams in strukturierte Datenereignisse.",
+    "features": [
+      "Visuelle Objekterkennung in Echtzeit",
+      "Custom-Modell-Training (YOLO)",
+      "Präzise Begrenzungsrahmen-Lokalisierung",
+      "Multi-Objekt-Tracking in Videos",
+      "Edge-Geräte-Optimierung (OpenVINO)",
+      "Fehlererkennung mit hoher Genauigkeit",
+      "Automatisierte Annotations-Pipelines",
+      "Visuelle Overlays über API-Schnittstellen"
+    ],
+    "benefits": [
+      "Manuelle Inspektionen in Produktionslinien vollständig automatisieren",
+      "Lagerbestände und Inventar sofort und präzise zählen und verfolgen",
+      "Sicherheits-Feeds gezielt auf vordefinierte Objekte oder Einbrüche prüfen",
+      "Verarbeitungszeiten durch Deployment direkt auf Edge-Geräten minimieren",
+      "Fehlerraten bei visuellen Verifikationsprozessen drastisch senken",
+      "Strukturierte räumliche Daten aus unstrukturierten Medien generieren"
+    ],
+    "metaTitle": "Objekterkennung & Echtzeit Computer Vision | PakSoft",
+    "metaDescription": "Erkennen und lokalisieren Sie Objekte in Echtzeit. Wir bauen performante Objekterkennungs-Systeme mit YOLOv8 für Edge und Cloud. Pilot anfordern.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Kamera- & Input-Audit",
+          "description": "Wir analysieren Ihre Bild- und Videoquellen und bewerten Kamera-Platzierung, Lichtverhältnisse, Auflösung und Frameraten. Wir definieren die Zielklassen und Genauigkeiten."
+        },
+        {
+          "step": 2,
+          "title": "Datensatz-Annotation",
+          "description": "Unser Team sammelt repräsentative Bilder und labelt Bounding Boxes mit Annotationswerkzeugen. Wir nutzen Datenaugmentation für unterschiedliche Lichtverhältnisse und Winkel."
+        },
+        {
+          "step": 3,
+          "title": "Modellarchitektur-Auswahl",
+          "description": "Wir wählen die optimale Modellarchitektur aus und vergleichen YOLOv8 für Echtzeit-Edge-Processing mit Faster R-CNN für präzise Cloud-Deployments. Wir konfigurieren Hyperparameter."
+        },
+        {
+          "step": 4,
+          "title": "Modelltraining",
+          "description": "Wir trainieren das Erkennungsmodell auf GPU-Clustern und überwachen Precision, Recall sowie mAP. Wir verfeinern die Gewichte, um Falsch-Positiv-Erkennungen zu minimieren."
+        },
+        {
+          "step": 5,
+          "title": "Optimierung & Portierung",
+          "description": "Wir kompilieren das Modell für die Zielhardware mittels TensorRT oder OpenVINO. Dies maximiert die Inferenzgeschwindigkeit und minimiert den Speicherbedarf auf Edge-Geräten."
+        },
+        {
+          "step": 6,
+          "title": "Integration & Deployment",
+          "description": "Wir stellen das System bereit und verbinden die API mit Ihren Video-Feeds oder Sensoren. Wir bauen Dashboards, um Erkennungsereignisse in Echtzeit anzuzeigen."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist der Unterschied zwischen Bildklassifizierung und Objekterkennung?",
+          "answer": "Die Bildklassifizierung ordnet einem gesamten Bild ein einzelnes Label zu (z. B. 'Gabelstapler'). Die Objekterkennung identifiziert einzelne Objekte im Bild, berechnet deren Koordinaten und labelt sie einzeln (z. B. 'Gabelstapler bei Position X, Y'). Dies ermöglicht das Zählen und Verfolgen von Positionen im Bildausschnitt."
+        },
+        {
+          "question": "Welche Modelle nutzen Sie für die Objekterkennung?",
+          "answer": "Wir arbeiten hauptsächlich mit der YOLO-Familie (insbesondere YOLOv8 und YOLOv9) wegen ihrer enormen Geschwindigkeit bei Echtzeitanwendungen. Für komplexe Aufgaben, die maximale Präzision erfordern und bei denen Latenz weniger kritisch ist, nutzen wir Faster R-CNN oder Mask R-CNN je nach Zielplattform."
+        },
+        {
+          "question": "Können Objekterkennungs-Modelle auf stromsparenden Edge-Geräten laufen?",
+          "answer": "Ja. Wir sind darauf spezialisiert, Modelle für Edge-Hardware wie NVIDIA Jetson, Raspberry Pi und industrielle Smart-Kameras zu optimieren. Über Quantisierung und Compiler-Tools wie OpenVINO, ONNX und TensorRT minimieren wir die Modellgröße für Echtzeit-Inferenzen (30+ FPS) ohne Cloud-Latenz."
+        },
+        {
+          "question": "Wie viele Trainingsdaten sind für die Erkennung eines neuen Objekts nötig?",
+          "answer": "Für einfache Objekte mit konstantem Aussehen genügen oft einige hundert annotierte Bilder. Für komplexe Objekte unter wechselndem Licht, Winkeln und Hintergründen empfehlen wir 1.000 bis 5.000 Labels pro Klasse. Wir nutzen auch synthetische Datengenerierung zur künstlichen Erweiterung."
+        },
+        {
+          "question": "Wie gehen Sie mit überlappenden oder verdeckten Objekten um?",
+          "answer": "Wir trainieren die Modelle mit Datensätzen, die bewusst teilweise verdeckte Objekte enthalten. Beim Deployment konfigurieren wir NMS-Schwellenwerte (Non-Maximum Suppression), um doppelte Boxen zu vermeiden. Für Video-Feeds implementieren wir Tracking-Algorithmen, die Objekt-IDs bei Verdeckung halten."
+        },
+        {
+          "question": "Was unterscheidet 2D- von 3D-Objekterkennung?",
+          "answer": "2D-Objekterkennung berechnet Begrenzungsrahmen in flachen Pixelkoordinaten (X, Y, Breite, Höhe). 3D-Objekterkennung prognostiziert 3D-Bounding-Boxes (X, Y, Z, Tiefe, Breite, Höhe, Rotation) im physischen Raum. Wir setzen 3D-Erkennung für autonome Fahrzeuge und Robotik ein."
+        },
+        {
+          "question": "Erkennen Ihre Systeme Objekte bei schlechtem Licht oder Unwetter?",
+          "answer": "Ja, durch den Einsatz spezialisierter Kameras (z. B. Infrarot, Thermo oder HDR-Sensoren) und das Training auf Datensätzen mit widrigen Wetterbedingungen. Wir schalten Vorverarbeitungsschritte vor, wie Kontrasterhöhung und Rauschreduzierung, um die Sichtbarkeit der Objekte zu verbessern."
+        },
+        {
+          "question": "Wie lange dauert die Bereitstellung eines Objekterkennungssystems?",
+          "answer": "Ein Pilotsystem mit vortrainierten Standardklassen dauert 3 bis 5 Wochen. Die Entwicklung, Annotation, das Training und die Optimierung eines Custom-Modells für spezielle Industrieteile oder proprietäre Verpackungen benötigt typischerweise 8 bis 12 Wochen inklusive Tests vor Ort."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "opencv",
+          "name": "OpenCV"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch"
+        },
+        {
+          "icon": "tensorflow",
+          "name": "TensorFlow"
+        },
+        {
+          "icon": "nvidia",
+          "name": "NVIDIA TensorRT"
+        },
+        {
+          "icon": "python",
+          "name": "YOLO"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "kubernetes",
+          "name": "Kubernetes"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "آبجیکٹ ڈیٹیکشن (Object Detection)",
+    "shortDescription": "ریئل ٹائم میں بصری اشیاء کا پتہ لگائیں، ان کا مقام معلوم کریں اور درجہ بندی کریں۔ ہم مینوفیکچرنگ اور خودمختار سسٹمز کے لیے کسٹم ماڈلز بناتے ہیں۔",
+    "fullDescription": "تصویر کی درجہ بندی بتاتی ہے کہ تصویر میں کیا ہے؛ آبجیکٹ ڈیٹیکشن یہ بتاتا ہے کہ وہ چیز بالکل کہاں واقع ہے۔ ہم YOLOv8، Faster R-CNN اور SSD جیسے جدید فریم ورکس کا استعمال کرتے ہوئے تیز رفتار اور درست آبجیکٹ ڈیٹیکشن سسٹمز بناتے ہیں۔ ہم ماڈلز کو کسٹم اشیاء کا پتہ لگانے، درست باؤنڈنگ باکسز بنانے اور درستگی کے اسکور آؤٹ پٹ کرنے کے لیے ٹرین کرتے ہیں۔ ہماری پروڈکٹس کلاؤڈ سرورز یا موبائل ڈیوائسز پر آسانی سے چل سکتی ہیں۔ ہم ان سسٹمز کو فیکٹری اسمبلی لائنوں میں خامیاں تلاش کرنے، اسٹورز پر مصنوعات کی گنتی کرنے اور سیکیورٹی مانیٹرنگ کے لیے نافذ کرتے ہیں۔ ہم ویڈیو اسٹریمز کو ڈیٹا ایونٹس میں تبدیل کرتے ہیں۔",
+    "features": [
+      "ریئل ٹائم بصری آبجیکٹ ڈیٹیکشن",
+      "کسٹم کلاس ماڈل ٹریننگ (YOLO)",
+      "درست باؤنڈنگ باکس لوکلائزیشن",
+      "ویڈیو میں ملٹی آبجیکٹ ٹریکنگ",
+      "ایج ڈیوائس آپٹیمائزیشن (OpenVINO)",
+      "اعلیٰ درستگی کے ساتھ نقص کا پتہ لگانا",
+      "خودکار اینوٹیشن پائپ لائنز",
+      "API کے ذریعے بصری اوورلے (Overlay)"
+    ],
+    "benefits": [
+      "مینوفیکچرنگ پائپ لائنز میں دستی معائنہ خودکار بنائیں",
+      "انوینٹری اشیاء کو فوری اور درست طریقے سے ٹریک اور کاؤنٹ کریں",
+      "مخصوص اشیاء یا دراندازی کے لیے سیکیورٹی فیڈز کی نگرانی کریں",
+      "ماڈلز کو ایج پر چلا کر پروسیسنگ کے اوقات کو تیز کریں",
+      "بصری تصدیق کے عمل میں انسانی غلطیوں کو کم کریں",
+      "غیر منظم میڈیا سے منظم فضائی ڈیٹا حاصل کریں"
+    ],
+    "metaTitle": "آبجیکٹ ڈیٹیکشن اور کمپیوٹر ویژن سلوشنز | PakSoft",
+    "metaDescription": "ریئل ٹائم میں اشیاء کا پتہ لگائیں۔ ہم YOLOv8 اور Faster R-CNN کے ساتھ کلاؤڈ اور ایج ڈیوائسز کے لیے آبجیکٹ ڈیٹیکشن سسٹمز بناتے ہیں۔ ابھی رابطہ کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "کیمرہ اور ان پٹ کا جائزہ",
+          "description": "ہم آپ کے ویڈیو اور تصویر کے ذرائع کا تجزیہ کرتے ہیں، کیمرے کی جگہ، لائٹنگ اور فریم ریٹس کا جائزہ لیتے ہیں۔ ہم مطلوبہ اہداف اور درستگی کی حد طے کرتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "ڈیٹا سیٹ کی لیبلنگ",
+          "description": "ہماری ٹیم تصاویر جمع کرتی ہے اور ان پر درست باؤنڈنگ باکسز بناتی ہے۔ ہم ماڈل کو مختلف روشنیوں اور زاویوں پر ٹرین کرنے کے لیے ڈیٹا بڑھاتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "ماڈل فن تعمیر کا انتخاب",
+          "description": "ہم تیز پروسیسنگ کے لیے YOLOv8 اور کلاؤڈ ڈپلائمنٹ کے لیے Faster R-CNN کا موازنہ کرتے ہوئے موزوں ماڈل منتخب کرتے ہیں۔ ہم پیرامیٹرز طے کرتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "ماڈل ٹریننگ",
+          "description": "ہم GPU کلسٹرز پر ماڈل کو ٹرین کرتے ہیں، اور درستگی کی میٹرکس (mAP) کی نگرانی کرتے ہیں۔ ہم غلطیوں کو کم کرنے کے لیے ماڈل کے وزن کو درست کرتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "آپٹیمائزیشن اور پورٹنگ",
+          "description": "ہم TensorRT یا OpenVINO جیسے ٹولز استعمال کرتے ہوئے ماڈل کو مخصوص ہارڈ ویئر کے لیے تیار کرتے ہیں۔ یہ قدم ماڈل کی رفتار کو تیز اور میموری کم کرتا ہے۔"
+        },
+        {
+          "step": 6,
+          "title": "انٹیگریشن اور ڈپلائمنٹ",
+          "description": "ہم سسٹم کو نافذ کرتے ہیں، اور API کو کیمرہ فیڈز یا فیکٹری سینسرز سے جوڑ دیتے ہیں۔ ہم لائیو مانیٹرنگ کے لیے ریئل ٹائم ڈیش بورڈز بناتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "تصویر کی درجہ بندی (classification) اور آبجیکٹ ڈیٹیکشن میں کیا فرق ہے؟",
+          "answer": "تصویر کی درجہ بندی پوری تصویر کو ایک نام یا لیبل دیتی ہے (مثلاً 'فورک لفٹ')۔ آبجیکٹ ڈیٹیکشن تصویر کے اندر موجود مخصوص اشیاء کی شناخت کرتا ہے، ان کے کوآرڈینیٹس معلوم کرتا ہے اور ان پر باؤنڈنگ باکس بناتا ہے۔ یہ آپ کو اشیاء کی تعداد، مقام اور باہمی تعلق جاننے کی سہولت دیتا ہے۔"
+        },
+        {
+          "question": "آپ آبجیکٹ ڈیٹیکشن کے لیے کون سے ماڈلز استعمال کرتے ہیں؟",
+          "answer": "ہم بنیادی طور پر YOLO (You Only Look Once) فیملی خصوصاً YOLOv8 اور YOLOv9 استعمال کرتے ہیں کیونکہ یہ ریئل ٹائم کاموں میں انتہائی تیز اور درست ہیں۔ اگر رفتار سے زیادہ درستگی اہم ہو تو ہم Faster R-CNN یا Mask R-CNN استعمال کرتے ہیں جو کلاؤڈ پر بہترین چلتے ہیں۔"
+        },
+        {
+          "question": "کیا یہ ماڈلز کم پاور والے ایج (edge) ڈیوائسز پر چل سکتے ہیں؟",
+          "answer": "جی ہاں۔ ہم NVIDIA Jetson، Raspberry Pi اور انڈسٹریل اسمارٹ کیمروں جیسے ایج ہارڈ ویئر کے لیے ماڈلز کو بہتر بنانے میں مہارت رکھتے ہیں۔ ہم OpenVINO، ONNX اور TensorRT فریم ورکس استعمال کر کے ماڈل کا سائز کم کرتے ہیں تا کہ انٹرنیٹ کے بغیر مقامی طور پر ریئل ٹائم انفرنس مل سکے۔"
+        },
+        {
+          "question": "ایک کسٹم آبجیکٹ کو پہچاننے کے لیے کتنے ڈیٹا کی ضرورت ہوتی ہے؟",
+          "answer": "اگر کوئی چیز دیکھنے میں سادہ اور واضح ہو تو چند سو تصاویر کافی ہوتی ہیں۔ تاہم، مختلف روشنی، زاویوں اور پس منظر میں پیچیدہ اشیاء کو پہچاننے کے لیے ہم ہر کلاس کے لیے 1,000 سے 5,000 لیبل شدہ تصاویر تجویز کرتے ہیں۔ ہم ڈیٹا بڑھانے کی تکنیکیں بھی استعمال کرتے ہیں۔"
+        },
+        {
+          "question": "آپ ایک دوسرے کے اوپر یا جزوی طور پر چھپی ہوئی اشیاء کو کیسے سنبھالتے ہیں؟",
+          "answer": "ہم ماڈلز کو ایسے ڈیٹا پر ٹرین کرتے ہیں جس میں اشیاء جان بوجھ کر آدھی چھپی ہوئی دکھائی گئی ہوں۔ ہم NMS تھریش ہولڈز کو ترتیب دیتے ہیں جو ایک ہی چیز پر ڈبل باکس بننے سے روکتا ہے۔ ویڈیو فیڈز کے لیے ہم ٹریکنگ الگورتھم لگاتے ہیں جو چیز کے عارضی چھپنے پر بھی اس کا آئی ڈی برقرار رکھتا ہے۔"
+        },
+        {
+          "question": "2D اور 3D آبجیکٹ ڈیٹیکشن میں کیا فرق ہے؟",
+          "answer": "2D آبجیکٹ ڈیٹیکشن تصویر پر چپٹی شکل (چوڑائی، اونچائی) میں باکس بناتا ہے۔ 3D آبجیکٹ ڈیٹیکشن حقیقی دنیا کے مطابق لمبائی، چوڑائی، اونچائی اور گہرائی (Z-axis) کا اندازہ لگا کر تھری ڈی باکس بناتا ہے۔ ہم اسے روبوٹکس اور خودکار گاڑیوں میں استعمال کرتے ہیں۔"
+        },
+        {
+          "question": "کیا آپ کا سسٹم اندھیرے یا خراب موسم میں کام کر سکتا ہے؟",
+          "answer": "جی ہاں، ہم اس کے لیے انفراریڈ (infrared)، تھرمل یا ایچ ڈی آر کیمرے استعمال کرتے ہیں اور ماڈل کو خراب موسمی حالات کے ڈیٹا پر ٹرین کرتے ہیں۔ ہم تصویر کو بہتر بنانے والے فلٹرز بھی استعمال کرتے ہیں جو دھند یا اندھیرے کو صاف کرتے ہیں تا کہ ماڈل اپنے ہدف کو آسانی سے پہچان سکے۔"
+        },
+        {
+          "question": "ایک کسٹم آبجیکٹ ڈیٹیکشن سسٹم تیار کرنے میں کتنا وقت لگتا ہے؟",
+          "answer": "پہلے سے طے شدہ کلاسز کے لیے ایک پائلٹ سسٹم 3 سے 5 ہفتوں میں تیار ہو سکتا ہے۔ تاہم، کارخانے کے کسی مخصوص پرزے یا مصنوعات کے لیے کسٹم ماڈل کو ڈیزائن کرنے، لیبل کرنے، ٹرین اور فائن ٹیون کرنے میں 8 سے 12 ہفتے لگتے ہیں۔ اس میں کیمرہ زاویوں کی ایڈجسٹمنٹ بھی شامل ہے۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "opencv",
+          "name": "OpenCV"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch"
+        },
+        {
+          "icon": "tensorflow",
+          "name": "TensorFlow"
+        },
+        {
+          "icon": "nvidia",
+          "name": "NVIDIA TensorRT"
+        },
+        {
+          "icon": "python",
+          "name": "YOLO"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "kubernetes",
+          "name": "Kubernetes"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "كشف وتحديد الأجسام (Object Detection)",
+    "shortDescription": "اكتشف الأجسام المرئية وحدد موقعها وصنفها في الوقت الفعلي. نبني نماذج مخصصة لكشف الأجسام لأنظمة المراقبة، وتتبع المخزون، والتصنيع، والأنظمة المستقلة.",
+    "fullDescription": "يخبرك تصنيف الصور بما يوجد في الصورة، بينما يخبرك كشف وتحديد الأجسام (Object Detection) بمكانه بدقة. نحن نبني أنظمة كشف أجسام سريعة ودقيقة باستخدام أطر عمل رائدة مثل YOLOv8 و Faster R-CNN و SSD. ندرب النماذج على اكتشاف كائنات مخصصة، ورسم مربعات إحاطة (bounding boxes) دقيقة، وإخراج درجات الثقة. تعمل حلولنا بكفاءة على الأجهزة الطرفية (edge) أو خوادم السحاب أو الأجهزة المحمولة، مما يحقق التوازن بين السرعة والدقة. نقوم بتطبيق هذه الأنظمة في مجالات التصنيع للكشف عن العيوب، وعد السلع في المتاجر، وتحليل حركة المرور، والمراقبة الأمنية. نحن نحول تدفقات الفيديو إلى أحداث بيانات قابلة للتنفيذ الفوري.",
+    "features": [
+      "كشف الأجسام المرئية بالوقت الفعلي",
+      "تدريب نماذج مخصصة للفئات (YOLO)",
+      "تحديد دقيق لموقع مربعات الإحاطة",
+      "تتبع كائنات متعددة في مقاطع الفيديو",
+      "تحسين الأجهزة الطرفية (OpenVINO)",
+      "كشف العيوب في التصنيع بدقة عالية",
+      "مسارات أوتوماتيكية لتسمية البيانات",
+      "تراكبات مرئية للمخرجات عبر API"
+    ],
+    "benefits": [
+      "أتمتة الفحص اليدوي في خطوط الإنتاج والتصنيع",
+      "تتبع سلع ومواد المخزون وعدها فوراً وبدقة",
+      "مراقبة تغذية الكاميرات بحثاً عن أجسام أو اختراقات",
+      "تسريع أوقات المعالجة بنشر النماذج محلياً (Edge)",
+      "تقليل الأخطاء البشرية في عمليات التحقق البصري",
+      "إنشاء بيانات مكانية منظمة من الوسائط غير المهيكلة"
+    ],
+    "metaTitle": "حلول كشف الأجسام والرؤية الحاسوبية بالوقت الفعلي | PakSoft",
+    "metaDescription": "اكتشف وحدد مواقع الأجسام في الوقت الفعلي. نبني أنظمة كشف أجسام عالية الأداء باستخدام YOLOv8 للنشر السحابي والمحلي. تواصل معنا للمزيد.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "مراجعة الكاميرات والمدخلات",
+          "description": "نحن نحلل مصادر الصور والفيديو لديك، ونقيم مواقع الكاميرات والإضاءة والدقة ومعدلات الإطارات. نحدد فئات الأجسام المستهدفة ومستويات الدقة."
+        },
+        {
+          "step": 2,
+          "title": "ترميز وتسمية البيانات",
+          "description": "يجمع فريقنا عينات الصور ويطبق تسميات مربعات الإحاطة الدقيقة باستخدام أدوات الترميز. نجري زيادة البيانات لتدريب النماذج في ظروف إضاءة وزوايا مختلفة."
+        },
+        {
+          "step": 3,
+          "title": "اختيار بنية النموذج المناسب",
+          "description": "نختار بنية النموذج المثلى، مقارنين بين YOLOv8 للمعالجة محلياً بالوقت الفعلي ونموذج Faster R-CNN للنشر السحابي عالي الدقة. نضبط معلمات البداية."
+        },
+        {
+          "step": 4,
+          "title": "تدريب نموذج الكشف",
+          "description": "نقوم بتدريب نموذج كشف الأجسام على مجموعات GPU، ومراقبة الدقة والاسترجاع ومتوسط الدقة (mAP). نعدل الأوزان لتقليل القراءات الخاطئة."
+        },
+        {
+          "step": 5,
+          "title": "التحسين والنقل للأجهزة",
+          "description": "نجمع النموذج للعمل على الأجهزة المستهدفة باستخدام أدوات مثل TensorRT أو OpenVINO. تزيد هذه الخطوة سرعة الاستدلال وتقلل استهلاك الذاكرة."
+        },
+        {
+          "step": 6,
+          "title": "الدمج والنشر النهائي",
+          "description": "ننشر نظام الكشف، ونربط واجهة برمجة التطبيقات (API) بتغذية الفيديو أو مستشعرات المصنع. نبني لوحات معلومات لعرض أحداث الكشف بالوقت الفعلي."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما الفرق بين تصنيف الصور وكشف وتحديد الأجسام؟",
+          "answer": "يحدد تصنيف الصور اسماً أو فئة واحدة للصورة بأكملها (مثل 'رافعة شوكية'). أما كشف الأجسام فيتعرف على كل جسم في الصورة على حدة، ويتنبأ بإحداثياته الجغرافية، ويضع علامة عليه (مثل 'رافعة شوكية عند الإحداثيات X, Y'). يتيح لك ذلك عد العناصر وتحديد مواقعها الفراغية."
+        },
+        {
+          "question": "ما هي النماذج التي تستخدمونها لكشف وتحديد الأجسام؟",
+          "answer": "نحن نعمل بشكل أساسي مع عائلة YOLO (لا سيما YOLOv8 و YOLOv9) بسبب سرعتها الكبيرة ودقتها العالية في تطبيقات الوقت الفعلي. بالنسبة للمهام المعقدة التي تتطلب أقصى قدر من الدقة وحيث لا يمثل زمن الاستجابة عائقاً، نستخدم Faster R-CNN أو Mask R-CNN."
+        },
+        {
+          "question": "هل يمكن لنماذج كشف الأجسام العمل على أجهزة طرفية (edge) منخفضة الطاقة؟",
+          "answer": "نعم. نحن متخصصون في تحسين النماذج لتعمل على أجهزة طرفية مثل NVIDIA Jetson و Raspberry Pi والكاميرات الذكية الصناعية. باستخدام أطر التحسين مثل OpenVINO و ONNX و TensorRT، نقلل حجم النموذج واستهلاك الموارد، مما يتيح الاستدلال في الوقت الفعلي (30+ إطاراً في الثانية) محلياً دون الحاجة للسحابة."
+        },
+        {
+          "question": "ما هي كمية البيانات المطلوبة لتدريب النموذج على كشف جسم مخصص؟",
+          "answer": "بالنسبة للأجسام البسيطة ذات المظهر الثابت، يمكن لبضع مئات من الصور المرمزة أن تكفي. أما للأجسام المعقدة تحت ظروف إضاءة وزوايا وخلفيات متنوعة، فإننا نوصي بـ 1,000 إلى 5,000 صورة لكل فئة. نستخدم أيضاً تقنيات توليد الصور الاصطناعية لزيادة حجم البيانات."
+        },
+        {
+          "question": "كيف تتعاملون مع الأجسام المتداخلة أو المخفية جزئياً؟",
+          "answer": "نتعامل مع حالات الاختفاء بتدريب النماذج على مجموعات بيانات تحتوي عمداً على أجسام مخفية جزئياً. كما نقوم بتهيئة عتبات قمع غير الحد الأقصى (NMS) المتقدمة أثناء الاستدلال، مما يمنع ظهور مربعات إحاطة مكررة لنفس الجسم. في تغذية الفيديو، نضيف خوارزميات تتبع تحافظ على هوية الكائن حتى لو اختفى مؤقتاً."
+        },
+        {
+          "question": "ما الفرق بين كشف الأجسام ثنائي الأبعاد وثلاثي الأبعاد؟",
+          "answer": "يقدر كشف الأجسام ثنائي الأبعاد (2D) مربعات الإحاطة في إحداثيات بكسل مسطحة (العرض، الارتفاع، X، Y). أما كشف الأجسام ثلاثي الأبعاد (3D) فيتنبأ بصندوق ثلاثي الأبعاد (العرض، الارتفاع، العمق، الدوران، والموقع الفراغي X, Y, Z) في الفضاء الفعلي. نستخدم الكشف ثلاثي الأبعاد للمركبات ذاتية القيادة والروبوتات."
+        },
+        {
+          "question": "هل يمكن لأنظمتكم كشف الأجسام في ظروف الإضاءة الضعيفة أو الطقس السيئ؟",
+          "answer": "نعم، باستخدام كاميرات متخصصة (مثل كاميرات الأشعة تحت الحمراء أو الكاميرات الحرارية أو مستشعرات HDR) وتدريب النماذج على ظروف طقس متنوعة. نطبق أيضاً خطوات معالجة أولية لتحسين جودة الصور، مثل تعديل التباين وتقليل الضوضاء لمساعدة النموذج في التعرف على الأهداف بدقة."
+        },
+        {
+          "question": "كم من الوقت يستغرق نشر نظام كشف أجسام مخصص بالكامل؟",
+          "answer": "يستغرق النظام التجريبي الذي يستخدم فئات عامة مدربة مسبقاً من 3 إلى 5 أسابيع. أما تصميم نموذج مخصص وترميز بياناته وتدريبه وتحسينه لقطع صناعية متخصصة أو عبوات تجارية مملوكة فيستغرق من 8 إلى 12 أسبوعاً، ويشمل ذلك اختبارات ميدانية مكثفة ومعايرة زوايا الكاميرات والإضاءة."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "opencv",
+          "name": "OpenCV"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch"
+        },
+        {
+          "icon": "tensorflow",
+          "name": "TensorFlow"
+        },
+        {
+          "icon": "nvidia",
+          "name": "NVIDIA TensorRT"
+        },
+        {
+          "icon": "python",
+          "name": "YOLO"
+        },
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "kubernetes",
+          "name": "Kubernetes"
+        }
+      ]
+    }
+  }
+}

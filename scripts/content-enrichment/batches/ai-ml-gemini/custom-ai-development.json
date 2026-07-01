@@ -1,0 +1,638 @@
+{
+  "slug": "custom-ai-development",
+  "en": {
+    "name": "Custom AI Development",
+    "shortDescription": "We architect and develop bespoke AI systems, from proprietary machine learning models to enterprise-scale AI infrastructures tailored to your unique data.",
+    "fullDescription": "Off-the-shelf AI tools are great for generic tasks, but true competitive advantage comes from AI that is deeply integrated into your proprietary data and unique business logic. Our Custom AI Development service is for organizations that have outgrown standard APIs and need bespoke machine learning solutions built from the ground up. Whether you need a sophisticated pricing optimization engine, a custom recommendation algorithm, or a proprietary Large Language Model fine-tuned on your internal archives, we handle the entire lifecycle. We bridge the gap between data science and software engineering. We don't just build models in Jupyter notebooks; we engineer robust data pipelines, select the right architectures (PyTorch, TensorFlow), train the models on high-performance GPU clusters, and deploy them as scalable, secure microservices that integrate flawlessly into your existing enterprise software.",
+    "features": [
+      "Bespoke Neural Network Architecture Design",
+      "Proprietary Dataset Curation & Engineering",
+      "Custom Model Training & Fine-Tuning (LoRA, PEFT)",
+      "End-to-End MLOps Pipeline Development",
+      "High-Performance GPU Cluster Orchestration",
+      "Model Optimization for Production (ONNX, TensorRT)",
+      "Secure API Microservice Deployment",
+      "Continuous Model Monitoring & Drift Detection"
+    ],
+    "benefits": [
+      "Gain a competitive edge with AI that your competitors cannot simply buy",
+      "Solve complex, niche business problems that off-the-shelf APIs cannot handle",
+      "Maintain 100% ownership of your proprietary models and intellectual property",
+      "Ensure maximum data security by training and hosting models within your VPC",
+      "Deploy models that are optimized for speed, latency, and cost-efficiency",
+      "Transition seamlessly from experimental data science to production software"
+    ],
+    "metaTitle": "Custom AI Development Services | Machine Learning | PakSoft",
+    "metaDescription": "Build bespoke AI systems tailored to your data. We engineer custom machine learning models, from deep learning architectures to enterprise AI deployment.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Discovery & Feasibility",
+          "description": "We dive deep into your business problem and evaluate your available data. We determine if AI is actually the right solution, what kind of model is needed, and define the success metrics."
+        },
+        {
+          "step": 2,
+          "title": "Data Engineering",
+          "description": "Custom AI lives and dies by data. We build pipelines to extract, clean, and format your proprietary data, creating the high-quality datasets required for effective model training."
+        },
+        {
+          "step": 3,
+          "title": "Architecture Selection",
+          "description": "Our data scientists select the optimal model architecture—whether it's a Transformer for NLP, a CNN for vision, or XGBoost for structured tabular data—balancing accuracy with computational cost."
+        },
+        {
+          "step": 4,
+          "title": "Model Training & Tuning",
+          "description": "We train the model iteratively. We utilize cloud GPU clusters (AWS EC2, RunPod) to process massive datasets, applying hyperparameter tuning to squeeze out maximum performance."
+        },
+        {
+          "step": 5,
+          "title": "Optimization & API Creation",
+          "description": "A trained model is bulky. We compress and optimize the model (using techniques like quantization) and wrap it in a fast, secure FastAPI microservice ready for production traffic."
+        },
+        {
+          "step": 6,
+          "title": "MLOps Deployment",
+          "description": "We deploy the system using Docker and Kubernetes. We set up monitoring to track 'model drift' (when accuracy drops over time), ensuring the system can be automatically retrained as new data arrives."
+        }
+      ],
+      "faq": [
+        {
+          "question": "When should we choose custom AI development over an API like OpenAI?",
+          "answer": "You need custom AI when: 1) You have highly proprietary data (like specific financial or medical records) that standard models don't understand. 2) Data privacy laws prevent you from sending data to cloud APIs. 3) You need a highly specific, lightweight model that runs cheaply at scale, rather than paying per-token API costs. 4) You are dealing with non-text data, like custom sensor data or specific image formats."
+        },
+        {
+          "question": "Who owns the intellectual property of the custom model?",
+          "answer": "You do. When we build a custom AI solution from scratch and train it on your proprietary data, you own 100% of the model weights, the architecture, and the surrounding source code."
+        },
+        {
+          "question": "What if our data is currently messy or unstructured?",
+          "answer": "That is very common. The first phase of our development involves rigorous Data Engineering. We build scripts and pipelines to clean your data, handle missing values, and structure it into a usable format before any AI training begins."
+        },
+        {
+          "question": "How long does it take to develop a custom AI model?",
+          "answer": "Custom AI is a significant engineering effort. A standard predictive model on structured tabular data might take 6–8 weeks. A complex Deep Learning project involving unstructured data (images, complex text) and custom architectures usually takes 3–6 months from discovery to production deployment."
+        },
+        {
+          "question": "Will we need to buy expensive servers to run the AI?",
+          "answer": "Not necessarily. During training, we rent cloud GPUs (like AWS EC2 P4 instances) by the hour, so you don't need upfront capital. For running the model in production (inference), we optimize the model heavily so it can often run on standard, cheaper cloud servers or even on edge devices, depending on the latency requirements."
+        },
+        {
+          "question": "What is 'Model Drift' and how do you handle it?",
+          "answer": "Model Drift happens when the real world changes but your model doesn't (e.g., a pricing model trained before COVID-19 would fail during the pandemic). We implement MLOps monitoring to detect when predictions start losing accuracy. When drift is detected, the system triggers a pipeline to retrain the model on the newest data."
+        },
+        {
+          "question": "Do you only build neural networks and deep learning?",
+          "answer": "No. We are pragmatic. If a simpler machine learning algorithm like Random Forest or XGBoost solves your problem faster, cheaper, and with better explainability than a Deep Neural Network, we will always recommend the simpler, more robust approach."
+        },
+        {
+          "question": "Can you take a model our internal data scientists built and put it into production?",
+          "answer": "Yes. This is a common service we provide. Data scientists often build brilliant models in Jupyter Notebooks that aren't ready for live web traffic. Our software engineers take those models, optimize them, wrap them in secure APIs, containerize them with Docker, and deploy them to scalable Kubernetes clusters."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch / TensorFlow"
+        },
+        {
+          "icon": "fastapi",
+          "name": "FastAPI"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker / Kubernetes"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS SageMaker"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Vertex AI"
+        },
+        {
+          "icon": "nvidia",
+          "name": "CUDA / NVIDIA GPUs"
+        },
+        {
+          "icon": "github",
+          "name": "MLflow / MLOps"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Özel Yapay Zeka (Custom AI) Geliştirme",
+    "shortDescription": "Size özel makine öğrenimi modellerinden, benzersiz verilerinize göre uyarlanmış kurumsal ölçekli yapay zeka altyapılarına kadar ısmarlama yapay zeka sistemleri tasarlıyor ve geliştiriyoruz.",
+    "fullDescription": "Hazır yapay zeka araçları genel görevler için harikadır, ancak gerçek rekabet avantajı, tescilli verilerinize ve benzersiz iş mantığınıza derinden entegre edilmiş yapay zekadan gelir. Özel Yapay Zeka Geliştirme hizmetimiz, standart API'leri aşmış ve sıfırdan oluşturulmuş, ısmarlama makine öğrenimi çözümlerine ihtiyaç duyan kuruluşlar içindir. Gelişmiş bir fiyatlandırma optimizasyon motoruna, özel bir öneri algoritmasına veya dahili arşivleriniz üzerinde eğitilmiş size ait bir Büyük Dil Modeline (LLM) ihtiyacınız olsun, tüm yaşam döngüsünü biz yönetiyoruz. Veri bilimi ile yazılım mühendisliği arasındaki köprüyü kuruyoruz. Modelleri sadece Jupyter not defterlerinde oluşturup bırakmıyoruz; sağlam veri hatları (pipelines) tasarlıyor, doğru mimarileri (PyTorch, TensorFlow) seçiyor, modelleri yüksek performanslı GPU kümelerinde eğitiyor ve bunları mevcut kurumsal yazılımınıza kusursuz bir şekilde entegre olan ölçeklenebilir, güvenli mikro hizmetler olarak devreye alıyoruz.",
+    "features": [
+      "Ismarlama Sinir Ağı Mimarisi Tasarımı",
+      "Tescilli Veri Seti Hazırlama (Curation) ve Mühendisliği",
+      "Özel Model Eğitimi ve İnce Ayar (LoRA, PEFT)",
+      "Uçtan Uca MLOps Pipeline Geliştirme",
+      "Yüksek Performanslı GPU Küme (Cluster) Orkestrasyonu",
+      "Üretim Ortamı (Production) İçin Model Optimizasyonu (ONNX, TensorRT)",
+      "Güvenli API Mikro Hizmet Dağıtımı",
+      "Sürekli Model İzleme ve Kayma (Drift) Tespiti"
+    ],
+    "benefits": [
+      "Rakiplerinizin basitçe satın alamayacağı bir yapay zeka ile rekabet avantajı elde edin",
+      "Hazır API'lerin üstesinden gelemeyeceği karmaşık ve niş iş problemlerini çözün",
+      "Tescilli modellerinizin ve fikri mülkiyetinizin %100 sahipliğini koruyun",
+      "Modelleri kendi bulutunuzda (VPC) eğitip barındırarak maksimum veri güvenliği sağlayın",
+      "Hız, gecikme süresi (latency) ve maliyet verimliliği için optimize edilmiş modeller yayınlayın",
+      "Deneysel veri biliminden üretim sınıfı (production) yazılıma sorunsuzca geçiş yapın"
+    ],
+    "metaTitle": "Özel Yapay Zeka Geliştirme | Makine Öğrenimi | PakSoft",
+    "metaDescription": "Verilerinize özel yapay zeka sistemleri kurun. Derin öğrenme mimarilerinden kurumsal yapay zeka dağıtımına kadar özel makine öğrenimi modelleri geliştiriyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Keşif ve Fizibilite",
+          "description": "İş probleminizin derinliklerine iniyor ve mevcut verilerinizi değerlendiriyoruz. Yapay zekanın gerçekten doğru çözüm olup olmadığını, ne tür bir modele ihtiyaç duyulduğunu ve başarı metriklerini belirliyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Veri Mühendisliği",
+          "description": "Özel yapay zeka verilerle yaşar ve ölür. Etkili model eğitimi için gereken yüksek kaliteli veri setlerini oluşturmak üzere verilerinizi çıkaran, temizleyen ve biçimlendiren işlem hatları kuruyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Mimari Seçimi",
+          "description": "Veri bilimcilerimiz, doğruluğu hesaplama maliyetiyle dengeleyerek; NLP için bir Transformer, görüntü için bir CNN veya yapılandırılmış veriler için XGBoost gibi en uygun model mimarisini seçer."
+        },
+        {
+          "step": 4,
+          "title": "Model Eğitimi ve Ayarlama",
+          "description": "Modeli tekrarlamalı (iterative) olarak eğitiyoruz. Devasa veri setlerini işlemek için bulut GPU kümelerini kullanıyor ve maksimum performansı elde etmek için hiperparametre ayarlaması yapıyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Optimizasyon ve API Oluşturma",
+          "description": "Eğitilmiş bir model hantaldır. Modeli (kuantizasyon gibi teknikler kullanarak) sıkıştırıp optimize ediyor ve canlı trafik için hazır, hızlı ve güvenli bir FastAPI mikro hizmeti içine sarıyoruz."
+        },
+        {
+          "step": 6,
+          "title": "MLOps ve Yayına Alma",
+          "description": "Sistemi Docker ve Kubernetes kullanarak dağıtıyoruz. 'Model kaymasını' (zamanla doğruluk düştüğünde) takip etmek için izleme kuruyor, yeni veriler geldikçe sistemin otomatik olarak yeniden eğitilmesini sağlıyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Neden OpenAI gibi bir API yerine Özel Yapay Zeka geliştirmeyi seçmeliyiz?",
+          "answer": "Şu durumlarda özel yapay zekaya ihtiyacınız vardır: 1) Standart modellerin anlamadığı son derece tescilli (finansal veya tıbbi kayıtlar gibi) verileriniz varsa. 2) Veri gizliliği yasaları verileri bulut API'lerine göndermenizi engelliyorsa. 3) Token başına API maliyeti ödemek yerine, ölçekli olarak ucuza çalışan, son derece spesifik ve hafif bir modele ihtiyacınız varsa. 4) Sensör verileri veya belirli görüntü biçimleri gibi metin dışı verilerle uğraşıyorsanız."
+        },
+        {
+          "question": "Özel modelin fikri mülkiyeti (IP) kime ait olacak?",
+          "answer": "Size ait. Sıfırdan özel bir yapay zeka çözümü oluşturduğumuzda ve bunu sizin tescilli verilerinizle eğittiğimizde, model ağırlıklarının (weights), mimarinin ve etrafındaki kaynak kodunun %100 sahibi siz olursunuz."
+        },
+        {
+          "question": "Verilerimiz şu anda dağınık veya yapılandırılmamışsa ne olur?",
+          "answer": "Bu çok yaygın bir durum. Geliştirmemizin ilk aşaması titiz bir Veri Mühendisliği içerir. Herhangi bir yapay zeka eğitimi başlamadan önce verilerinizi temizlemek, eksik değerleri ele almak ve kullanılabilir bir formata sokmak için komut dosyaları (scripts) ve işlem hatları oluşturuyoruz."
+        },
+        {
+          "question": "Özel bir yapay zeka modeli geliştirmek ne kadar sürer?",
+          "answer": "Özel yapay zeka, önemli bir mühendislik çabasıdır. Yapılandırılmış tablo (tabular) verileri üzerindeki standart bir tahmine dayalı (predictive) model 6-8 hafta sürebilir. Yapılandırılmamış verileri (görüntüler, karmaşık metin) ve özel mimarileri içeren karmaşık bir Derin Öğrenme projesi, keşiften üretime kadar genellikle 3-6 ay sürer."
+        },
+        {
+          "question": "Yapay zekayı çalıştırmak için pahalı sunucular satın almamız gerekecek mi?",
+          "answer": "Şart değil. Eğitim sırasında, bulut GPU'larını (AWS EC2 P4 örnekleri gibi) saatlik olarak kiralıyoruz, böylece önceden sermayeye ihtiyacınız olmaz. Modeli üretimde çalıştırmak (çıkarım - inference) için modeli büyük ölçüde optimize ediyoruz, böylece gecikme (latency) gereksinimlerine bağlı olarak genellikle standart, daha ucuz bulut sunucularında veya hatta uç (edge) cihazlarda çalışabilir."
+        },
+        {
+          "question": "'Model Kayması' (Model Drift) nedir ve bununla nasıl başa çıkıyorsunuz?",
+          "answer": "Model Kayması, gerçek dünya değiştiğinde ancak modeliniz değişmediğinde ortaya çıkar (örneğin, COVID-19'dan önce eğitilmiş bir fiyatlandırma modeli pandemi sırasında başarısız olurdu). Tahminlerin doğruluğu düşmeye başladığında bunu tespit etmek için MLOps izleme sistemleri uyguluyoruz. Kayma tespit edildiğinde, sistem modeli en yeni verilerle yeniden eğitmek için bir işlem hattını tetikler."
+        },
+        {
+          "question": "Sadece sinir ağları ve derin öğrenme (Deep Learning) mi geliştiriyorsunuz?",
+          "answer": "Hayır. Biz pragmatiğiz. Random Forest veya XGBoost gibi daha basit bir makine öğrenimi algoritması sorununuzu Derin Sinir Ağından (Deep Neural Network) daha hızlı, daha ucuz ve daha iyi bir açıklanabilirlikle çözüyorsa, her zaman daha basit ve daha sağlam olan yaklaşımı önereceğiz."
+        },
+        {
+          "question": "Kendi veri bilimcilerimizin oluşturduğu bir modeli alıp üretim ortamına (production) taşıyabilir misiniz?",
+          "answer": "Evet. Bu, sağladığımız yaygın bir hizmettir. Veri bilimcileri genellikle Jupyter Not Defterlerinde canlı web trafiğine hazır olmayan parlak modeller oluştururlar. Yazılım mühendislerimiz bu modelleri alır, optimize eder, güvenli API'lere sarar, Docker ile konteynerize eder ve ölçeklenebilir Kubernetes kümelerine dağıtır."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch / TensorFlow"
+        },
+        {
+          "icon": "fastapi",
+          "name": "FastAPI"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker / Kubernetes"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS SageMaker"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Vertex AI"
+        },
+        {
+          "icon": "nvidia",
+          "name": "CUDA / NVIDIA GPUs"
+        },
+        {
+          "icon": "github",
+          "name": "MLflow / MLOps"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Custom AI Development",
+    "shortDescription": "Wir konzipieren und entwickeln maßgeschneiderte KI-Systeme, von proprietären Machine-Learning-Modellen bis zu unternehmensweiten, auf Ihre Daten abgestimmten KI-Infrastrukturen.",
+    "fullDescription": "Fertige KI-Tools ('Off-the-shelf') eignen sich hervorragend für Standardaufgaben. Ein echter Wettbewerbsvorteil entsteht jedoch erst durch KI, die tief in Ihre proprietären Daten und individuelle Geschäftslogik integriert ist. Unser Service für maßgeschneiderte KI-Entwicklung richtet sich an Unternehmen, die über Standard-APIs hinausgewachsen sind und von Grund auf neu erstellte Machine-Learning-Lösungen benötigen. Egal, ob Sie eine komplexe Engine zur Preisoptimierung, einen individuellen Empfehlungsalgorithmus oder ein eigenes, auf Ihren internen Archiven feinabgestimmtes Large Language Model (LLM) benötigen — wir übernehmen den gesamten Lebenszyklus. Wir schließen die Lücke zwischen Data Science und Software Engineering. Wir bauen Modelle nicht nur in Jupyter Notebooks; wir entwickeln robuste Datenpipelines, wählen die passenden Architekturen (PyTorch, TensorFlow), trainieren Modelle auf Hochleistungs-GPU-Clustern und stellen sie als skalierbare, sichere Microservices bereit, die sich nahtlos in Ihre Enterprise-Software integrieren.",
+    "features": [
+      "Design maßgeschneiderter neuronaler Netzwerk-Architekturen",
+      "Kuration & Engineering proprietärer Datensätze",
+      "Custom Model Training & Fine-Tuning (LoRA, PEFT)",
+      "End-to-End MLOps Pipeline-Entwicklung",
+      "Orchestrierung von Hochleistungs-GPU-Clustern",
+      "Modell-Optimierung für Produktion (ONNX, TensorRT)",
+      "Sicheres API-Microservice-Deployment",
+      "Kontinuierliches Modell-Monitoring & Drift-Detection"
+    ],
+    "benefits": [
+      "Sichern Sie sich einen Wettbewerbsvorteil durch KI, die die Konkurrenz nicht einfach kaufen kann",
+      "Lösen Sie komplexe Nischen-Geschäftsprobleme, an denen Standard-APIs scheitern",
+      "Behalten Sie 100% der Eigentumsrechte an Ihren Modellen und IP",
+      "Gewährleisten Sie maximale Datensicherheit durch Training und Hosting in Ihrer VPC",
+      "Nutzen Sie Modelle, die auf Geschwindigkeit, Latenz und Kosteneffizienz optimiert sind",
+      "Überführen Sie experimentelle Data Science nahtlos in Produktionssoftware"
+    ],
+    "metaTitle": "Custom AI Development Services | Machine Learning | PakSoft",
+    "metaDescription": "Bauen Sie maßgeschneiderte KI-Systeme. Wir entwickeln individuelle Machine-Learning-Modelle, von Deep Learning bis zu Enterprise-KI-Deployments.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Discovery & Machbarkeit",
+          "description": "Wir analysieren Ihr Geschäftsproblem und die verfügbaren Daten. Wir prüfen, ob KI die richtige Lösung ist, welches Modell benötigt wird und definieren Erfolgskriterien."
+        },
+        {
+          "step": 2,
+          "title": "Data Engineering",
+          "description": "Individuelle KI steht und fällt mit Daten. Wir bauen Pipelines, um Ihre Daten zu extrahieren, zu bereinigen und in hochwertige Datensätze für das Modelltraining zu überführen."
+        },
+        {
+          "step": 3,
+          "title": "Architektur-Auswahl",
+          "description": "Unsere Data Scientists wählen die optimale Architektur — Transformer für NLP, CNNs für Vision, XGBoost für Tabellendaten — und balancieren dabei Genauigkeit und Rechenkosten aus."
+        },
+        {
+          "step": 4,
+          "title": "Modelltraining & Tuning",
+          "description": "Wir trainieren iterativ auf Cloud-GPU-Clustern, um riesige Datensätze zu verarbeiten, und wenden Hyperparameter-Tuning an, um maximale Performance herauszuholen."
+        },
+        {
+          "step": 5,
+          "title": "Optimierung & API-Erstellung",
+          "description": "Ein trainiertes Modell ist oft massig. Wir komprimieren das Modell (z.B. durch Quantisierung) und verpacken es in einen schnellen, sicheren FastAPI-Microservice für Produktionstraffic."
+        },
+        {
+          "step": 6,
+          "title": "MLOps Deployment",
+          "description": "Wir deployen das System mit Docker/Kubernetes. Wir richten Monitoring für 'Model Drift' ein, um automatisches Retraining anzustoßen, sobald Genauigkeit sinkt und neue Daten vorliegen."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wann sollten wir eine maßgeschneiderte KI statt einer API wie OpenAI wählen?",
+          "answer": "Wenn: 1) Sie hochspezifische Daten (z.B. medizinisch/finanziell) haben, die Standardmodelle nicht verstehen. 2) Datenschutzgesetze Cloud-APIs verbieten. 3) Sie ein leichtgewichtiges Modell brauchen, das skaliert günstig läuft, statt pro Token zu zahlen. 4) Sie nicht mit Text, sondern mit Sensordaten oder speziellen Bildern arbeiten."
+        },
+        {
+          "question": "Wem gehört das geistige Eigentum (IP) des maßgeschneiderten Modells?",
+          "answer": "Ihnen. Wenn wir eine Custom-KI-Lösung von Grund auf bauen und mit Ihren proprietären Daten trainieren, besitzen Sie zu 100 % die Modellgewichte, die Architektur und den zugehörigen Quellcode."
+        },
+        {
+          "question": "Was ist, wenn unsere Daten aktuell unstrukturiert oder fehlerhaft sind?",
+          "answer": "Das ist sehr häufig. Die erste Entwicklungsphase ist rigoroses Data Engineering. Wir bauen Skripte und Pipelines, um Ihre Daten zu bereinigen und zu strukturieren, bevor irgendein KI-Training beginnt."
+        },
+        {
+          "question": "Wie lange dauert die Entwicklung eines maßgeschneiderten KI-Modells?",
+          "answer": "Ein Standard-Vorhersagemodell für strukturierte Daten dauert ca. 6–8 Wochen. Komplexe Deep-Learning-Projekte mit unstrukturierten Daten (Bilder, Text) dauern meist 3–6 Monate von der Discovery bis zum Go-Live."
+        },
+        {
+          "question": "Müssen wir teure Server kaufen, um die KI zu betreiben?",
+          "answer": "Nicht unbedingt. Für das Training mieten wir Cloud-GPUs stundenweise, Sie brauchen also kein Vorabkapital. Für den laufenden Betrieb (Inferenz) optimieren wir das Modell stark, sodass es oft auf Standard-Cloud-Servern oder sogar am Edge läuft."
+        },
+        {
+          "question": "Was ist 'Model Drift' und wie gehen Sie damit um?",
+          "answer": "Model Drift passiert, wenn sich die reale Welt ändert, das Modell aber nicht (z. B. scheitert ein Vor-COVID-Preismodell in der Pandemie). Wir implementieren MLOps-Monitoring, das sinkende Genauigkeit erkennt und automatisch einen Pipeline-Lauf zum Retraining mit neuen Daten anstößt."
+        },
+        {
+          "question": "Bauen Sie ausschließlich neuronale Netze und Deep Learning?",
+          "answer": "Nein. Wir sind pragmatisch. Wenn ein simpleres Machine-Learning-Verfahren (wie Random Forest oder XGBoost) Ihr Problem schneller, günstiger und nachvollziehbarer löst als ein tiefes neuronales Netz, empfehlen wir immer diesen Ansatz."
+        },
+        {
+          "question": "Können Sie Modelle unserer internen Data Scientists in die Produktion bringen?",
+          "answer": "Ja. Data Scientists bauen oft geniale Modelle in Jupyter Notebooks, die aber nicht bereit für Live-Traffic sind. Unsere Software Engineers nehmen diese Modelle, optimieren sie, packen sie in sichere APIs (Docker/Kubernetes) und machen sie skalierbar."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch / TensorFlow"
+        },
+        {
+          "icon": "fastapi",
+          "name": "FastAPI"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker / Kubernetes"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS SageMaker"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Vertex AI"
+        },
+        {
+          "icon": "nvidia",
+          "name": "CUDA / NVIDIA GPUs"
+        },
+        {
+          "icon": "github",
+          "name": "MLflow / MLOps"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "کسٹم AI ڈیولپمنٹ",
+    "shortDescription": "ہم آپ کے منفرد ڈیٹا کے مطابق ملکیتی مشین لرننگ ماڈلز سے لے کر انٹرپرائز لیول کے AI سسٹمز تک کی منصوبہ بندی اور ڈیولپمنٹ کرتے ہیں۔",
+    "fullDescription": "تیار شدہ (Off-the-shelf) AI ٹولز عام کاموں کے لیے بہت اچھے ہیں، لیکن حقیقی مسابقتی برتری اس AI سے حاصل ہوتی ہے جو آپ کے اپنے ڈیٹا اور منفرد کاروباری منطق میں گہرائی سے شامل ہو۔ ہماری کسٹم AI ڈیولپمنٹ سروس ان تنظیموں کے لیے ہے جو معیاری APIs سے آگے بڑھ چکی ہیں اور انہیں شروع سے بنائے گئے مخصوص مشین لرننگ سلوشنز کی ضرورت ہے۔ چاہے آپ کو قیمتوں کے تعین کا ایک جدید انجن چاہیے، تجاویز دینے کا کسٹم الگورتھم، یا آپ کے اندرونی ریکارڈز پر فائن ٹیون کیا گیا اپنا لارج لینگویج ماڈل، ہم پورے عمل کو سنبھالتے ہیں۔ ہم ڈیٹا سائنس اور سافٹ ویئر انجینئرنگ کے درمیان خلیج کو پُر کرتے ہیں۔ ہم صرف Jupyter نوٹ بکس میں ماڈلز بنا کر نہیں چھوڑتے؛ ہم مضبوط ڈیٹا پائپ لائنز بناتے ہیں، درست آرکیٹیکچر (PyTorch, TensorFlow) منتخب کرتے ہیں، ماڈلز کو ہائی پرفارمنس GPU کلسٹرز پر تربیت دیتے ہیں، اور انہیں قابل توسیع، محفوظ مائیکرو سروسز کے طور پر تعینات کرتے ہیں جو آپ کے موجودہ انٹرپرائز سافٹ ویئر میں بغیر کسی رکاوٹ کے ضم ہو جاتے ہیں۔",
+    "features": [
+      "مخصوص نیورل نیٹ ورک آرکیٹیکچر ڈیزائن",
+      "اپنے ملکیتی ڈیٹاسیٹ کی تیاری اور انجینئرنگ",
+      "کسٹم ماڈل ٹریننگ اور فائن ٹیوننگ (LoRA, PEFT)",
+      "اینڈ ٹو اینڈ MLOps پائپ لائن ڈیولپمنٹ",
+      "ہائی پرفارمنس GPU کلسٹر آرکیسٹریشن",
+      "پروڈکشن کے لیے ماڈل کی آپٹیمائزیشن (ONNX, TensorRT)",
+      "محفوظ API مائیکرو سروس ڈیپلائمنٹ",
+      "ماڈل کی مسلسل نگرانی اور ڈرفٹ ڈیٹیکشن (Drift Detection)"
+    ],
+    "benefits": [
+      "ایک ایسے AI کے ساتھ مسابقتی برتری حاصل کریں جسے آپ کے حریف آسانی سے خرید نہیں سکتے",
+      "کاروبار کے ان پیچیدہ مسائل کو حل کریں جنہیں عام APIs نہیں سنبھال سکتیں",
+      "اپنے ماڈلز اور دانشورانہ املاک (IP) کی 100% ملکیت برقرار رکھیں",
+      "ماڈلز کو اپنے VPC کے اندر تربیت دے کر ڈیٹا کی زیادہ سے زیادہ سیکیورٹی یقینی بنائیں",
+      "ایسے ماڈلز تعینات کریں جو رفتار، کم تاخیر، اور لاگت کے لحاظ سے بہترین ہوں",
+      "تجرباتی ڈیٹا سائنس سے پروڈکشن سافٹ ویئر میں بغیر کسی رکاوٹ کے منتقلی کریں"
+    ],
+    "metaTitle": "کسٹم AI ڈیولپمنٹ سروسز | مشین لرننگ | PakSoft",
+    "metaDescription": "اپنے ڈیٹا کے مطابق کسٹم AI سسٹمز بنائیں۔ ہم ڈیپ لرننگ آرکیٹیکچر سے لے کر انٹرپرائز AI ڈیپلائمنٹ تک اپنی مرضی کے مشین لرننگ ماڈلز تیار کرتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "دریافت اور فزیبلٹی",
+          "description": "ہم آپ کے کاروباری مسئلے کا گہرائی سے جائزہ لیتے ہیں اور آپ کے دستیاب ڈیٹا کا اندازہ لگاتے ہیں۔ ہم فیصلہ کرتے ہیں کہ آیا AI واقعی صحیح حل ہے، کس قسم کا ماڈل درکار ہے، اور کامیابی کے معیار کیا ہوں گے۔"
+        },
+        {
+          "step": 2,
+          "title": "ڈیٹا انجینئرنگ",
+          "description": "کسٹم AI ڈیٹا کی بنیاد پر چلتا ہے۔ ہم آپ کے ڈیٹا کو نکالنے، صاف کرنے اور فارمیٹ کرنے کے لیے پائپ لائنز بناتے ہیں، تاکہ مؤثر ماڈل ٹریننگ کے لیے اعلیٰ معیار کے ڈیٹا سیٹس تیار کیے جا سکیں۔"
+        },
+        {
+          "step": 3,
+          "title": "آرکیٹیکچر کا انتخاب",
+          "description": "ہمارے ڈیٹا سائنسدان بہترین ماڈل آرکیٹیکچر منتخب کرتے ہیں—چاہے NLP کے لیے Transformer ہو، وژن کے لیے CNN ہو، یا ڈیٹا کے لیے XGBoost—درستگی اور لاگت میں توازن برقرار رکھتے ہوئے۔"
+        },
+        {
+          "step": 4,
+          "title": "ماڈل ٹریننگ اور ٹیوننگ",
+          "description": "ہم بڑے ڈیٹاسیٹس پر کارروائی کرنے کے لیے کلاؤڈ GPU کلسٹرز استعمال کرتے ہوئے ماڈل کو ٹرین کرتے ہیں، اور زیادہ سے زیادہ کارکردگی نکالنے کے لیے ہائپر پیرامیٹر ٹیوننگ لاگو کرتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "آپٹیمائزیشن اور API کی تخلیق",
+          "description": "تربیت یافتہ ماڈل بھاری ہوتا ہے۔ ہم اسے کمپریس اور آپٹیمائز کرتے ہیں اور اسے پروڈکشن کے لیے تیار تیز اور محفوظ FastAPI مائیکرو سروس میں تبدیل کر دیتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "MLOps کی تعیناتی",
+          "description": "ہم Docker اور Kubernetes کا استعمال کرتے ہوئے سسٹم تعینات کرتے ہیں۔ 'ماڈل ڈرفٹ' (وقت کے ساتھ درستگی میں کمی) کو ٹریک کرنے کے لیے نگرانی قائم کرتے ہیں، تاکہ نیا ڈیٹا آنے پر سسٹم خود بخود دوبارہ تربیت حاصل کر سکے۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "ہمیں OpenAI جیسی API کے بجائے کسٹم AI ڈیولپمنٹ کا انتخاب کب کرنا چاہیے؟",
+          "answer": "آپ کو کسٹم AI کی ضرورت تب ہوتی ہے جب: 1) آپ کے پاس انتہائی مخصوص ڈیٹا ہو (جیسے میڈیکل ریکارڈز) جسے معیاری ماڈل نہیں سمجھتے۔ 2) پرائیویسی قوانین ڈیٹا کو کلاؤڈ پر بھیجنے سے روکتے ہوں۔ 3) آپ کو فی ٹوکن ادائیگی کے بجائے بڑے پیمانے پر سستا چلنے والا مخصوص ماڈل درکار ہو۔ 4) آپ سینسر ڈیٹا یا تصویر کے فارمیٹس جیسے نان ٹیکسٹ ڈیٹا کے ساتھ کام کر رہے ہوں۔"
+        },
+        {
+          "question": "کسٹم ماڈل کی دانشورانہ املاک (IP) کا مالک کون ہے؟",
+          "answer": "آپ۔ جب ہم صفر سے کوئی کسٹم AI سلوشن بناتے ہیں اور اسے آپ کے ڈیٹا پر ٹرین کرتے ہیں، تو آپ ماڈل کے وزن (weights)، آرکیٹیکچر، اور اس کے سورس کوڈ کے 100% مالک ہوتے ہیں۔"
+        },
+        {
+          "question": "کیا ہوگا اگر ہمارا موجودہ ڈیٹا غیر منظم یا خراب ہو؟",
+          "answer": "یہ بہت عام بات ہے۔ ہماری ڈیولپمنٹ کے پہلے مرحلے میں ڈیٹا انجینئرنگ شامل ہے۔ ہم AI ٹریننگ شروع ہونے سے پہلے آپ کے ڈیٹا کو صاف کرنے، غائب ویلیوز کو سنبھالنے اور اسے قابل استعمال فارمیٹ میں لانے کے لیے اسکرپٹس اور پائپ لائنز بناتے ہیں۔"
+        },
+        {
+          "question": "کسٹم AI ماڈل تیار کرنے میں کتنا وقت لگتا ہے؟",
+          "answer": "یہ ایک بڑی انجینئرنگ کوشش ہے۔ ساختہ (structured) ڈیٹا پر ایک معیاری ماڈل میں 6-8 ہفتے لگ سکتے ہیں۔ ایک پیچیدہ ڈیپ لرننگ پروجیکٹ جس میں غیر ساختہ ڈیٹا (تصاویر، ٹیکسٹ) شامل ہو، اسے مکمل ہونے میں عام طور پر 3-6 ماہ لگتے ہیں۔"
+        },
+        {
+          "question": "کیا ہمیں AI چلانے کے لیے مہنگے سرور خریدنے پڑیں گے؟",
+          "answer": "ضروری نہیں۔ ٹریننگ کے دوران، ہم کلاؤڈ GPUs گھنٹے کے حساب سے کرائے پر لیتے ہیں۔ پروڈکشن میں ماڈل چلانے کے لیے، ہم اسے اتنا آپٹیمائز کر دیتے ہیں کہ وہ اکثر سستے کلاؤڈ سرورز یا ایج ڈیوائسز پر آسانی سے چل سکتا ہے۔"
+        },
+        {
+          "question": "'ماڈل ڈرفٹ' کیا ہے اور آپ اسے کیسے سنبھالتے ہیں؟",
+          "answer": "یہ تب ہوتا ہے جب حقیقی دنیا بدل جائے لیکن ماڈل نہ بدلے (جیسے کووڈ سے پہلے کا ماڈل وبا کے دوران فیل ہو جائے)۔ جب پیشین گوئی کی درستگی کم ہونے لگتی ہے تو ہمارا MLOps مانیٹرنگ سسٹم اسے پکڑ لیتا ہے اور نئے ڈیٹا کے ساتھ ماڈل کو دوبارہ ٹرین کرنے کا عمل شروع کر دیتا ہے۔"
+        },
+        {
+          "question": "کیا آپ صرف ڈیپ لرننگ ماڈلز بناتے ہیں؟",
+          "answer": "نہیں۔ اگر کوئی سادہ مشین لرننگ الگورتھم جیسے Random Forest ڈیپ نیورل نیٹ ورک سے زیادہ تیزی، سستے اور بہتر طریقے سے آپ کا مسئلہ حل کرتا ہے، تو ہم ہمیشہ سادہ اور زیادہ مضبوط طریقہ ہی تجویز کریں گے۔"
+        },
+        {
+          "question": "کیا آپ ہمارے اندرونی ڈیٹا سائنسدانوں کے بنائے ہوئے ماڈل کو پروڈکشن میں ڈال سکتے ہیں؟",
+          "answer": "جی ہاں۔ ڈیٹا سائنسدان اکثر ایسے شاندار ماڈلز بناتے ہیں جو لائیو ویب ٹریفک کے لیے تیار نہیں ہوتے۔ ہمارے سافٹ ویئر انجینئرز ان ماڈلز کو آپٹیمائز کرتے ہیں، محفوظ APIs میں لپیٹتے ہیں، اور انہیں اسکیل ایبل Kubernetes کلسٹرز پر تعینات کرتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch / TensorFlow"
+        },
+        {
+          "icon": "fastapi",
+          "name": "FastAPI"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker / Kubernetes"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS SageMaker"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Vertex AI"
+        },
+        {
+          "icon": "nvidia",
+          "name": "CUDA / NVIDIA GPUs"
+        },
+        {
+          "icon": "github",
+          "name": "MLflow / MLOps"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تطوير الذكاء الاصطناعي المخصص (Custom AI)",
+    "shortDescription": "نقوم بتصميم وتطوير أنظمة ذكاء اصطناعي مخصصة، بدءاً من نماذج التعلم الآلي الخاصة إلى البنية التحتية للذكاء الاصطناعي على مستوى المؤسسات والمصممة خصيصاً لبياناتك الفريدة.",
+    "fullDescription": "أدوات الذكاء الاصطناعي الجاهزة (Off-the-shelf) رائعة للمهام العامة، لكن الميزة التنافسية الحقيقية تأتي من الذكاء الاصطناعي المدمج بعمق في بياناتك الخاصة ومنطق عملك الفريد. خدمة تطوير الذكاء الاصطناعي المخصص لدينا موجهة للمؤسسات التي تجاوزت واجهات برمجة التطبيقات (APIs) القياسية وتحتاج إلى حلول تعلم آلي مصممة خصيصاً من الصفر. سواء كنت بحاجة إلى محرك متطور لتحسين التسعير، أو خوارزمية توصية مخصصة، أو نموذج لغة كبير (LLM) خاص تم ضبطه بدقة على أرشيفك الداخلي، فإننا نتعامل مع دورة الحياة بأكملها. نحن نسد الفجوة بين علوم البيانات وهندسة البرمجيات. نحن لا نبني النماذج في دفاتر Jupyter ونتركها فحسب؛ بل نصمم مسارات بيانات قوية، ونختار البنيات الصحيحة (PyTorch, TensorFlow)، وندرب النماذج على مجموعات GPU عالية الأداء، وننشرها كخدمات مصغرة (Microservices) قابلة للتطوير وآمنة تتكامل بسلاسة مع برامج مؤسستك الحالية.",
+    "features": [
+      "تصميم بنية شبكة عصبية مخصصة",
+      "تنسيق وهندسة مجموعات البيانات الخاصة",
+      "تدريب وضبط النماذج المخصصة بدقة (LoRA, PEFT)",
+      "تطوير مسارات MLOps من البداية للنهاية",
+      "تنسيق مجموعات GPU عالية الأداء",
+      "تحسين النماذج للإنتاج (ONNX, TensorRT)",
+      "نشر خدمات API المصغرة الآمنة",
+      "المراقبة المستمرة للنموذج واكتشاف الانحراف (Drift Detection)"
+    ],
+    "benefits": [
+      "اكتساب ميزة تنافسية من خلال ذكاء اصطناعي لا يمكن لمنافسيك شراؤه ببساطة",
+      "حل مشاكل الأعمال المعقدة والمتخصصة التي لا تستطيع APIs الجاهزة التعامل معها",
+      "الاحتفاظ بملكية 100% لنماذجك الخاصة وحقوق الملكية الفكرية",
+      "ضمان أقصى درجات أمان البيانات من خلال تدريب واستضافة النماذج داخل سحابتك الخاصة (VPC)",
+      "نشر نماذج محسنة من حيث السرعة وزمن الانتقال وكفاءة التكلفة",
+      "الانتقال بسلاسة من علوم البيانات التجريبية إلى برمجيات جاهزة للإنتاج"
+    ],
+    "metaTitle": "خدمات تطوير الذكاء الاصطناعي المخصص | التعلم الآلي | PakSoft",
+    "metaDescription": "ابنِ أنظمة ذكاء اصطناعي مخصصة لبياناتك. نصمم نماذج تعلم آلي مخصصة، من بنيات التعلم العميق إلى نشر الذكاء الاصطناعي للمؤسسات.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "الاستكشاف والجدوى",
+          "description": "نتعمق في مشكلة عملك ونقيم بياناتك المتاحة. نحدد ما إذا كان الذكاء الاصطناعي هو الحل الصحيح حقاً، ونوع النموذج المطلوب، ونحدد مقاييس النجاح."
+        },
+        {
+          "step": 2,
+          "title": "هندسة البيانات",
+          "description": "الذكاء الاصطناعي المخصص ينجح أو يفشل بناءً على البيانات. نبني مسارات لاستخراج بياناتك الخاصة وتنظيفها وتنسيقها، وإنشاء مجموعات بيانات عالية الجودة مطلوبة لتدريب النموذج الفعال."
+        },
+        {
+          "step": 3,
+          "title": "اختيار البنية المعمارية",
+          "description": "يختار علماء البيانات لدينا بنية النموذج المثلى — سواء كانت Transformer للغة (NLP)، أو CNN للرؤية، أو XGBoost للبيانات المهيكلة — مع الموازنة بين الدقة والتكلفة الحسابية."
+        },
+        {
+          "step": 4,
+          "title": "تدريب النموذج وضبطه",
+          "description": "نقوم بتدريب النموذج بشكل تكراري. نستخدم مجموعات GPU السحابية لمعالجة مجموعات البيانات الضخمة، مع تطبيق ضبط المعلمات الفائقة (Hyperparameter tuning) للحصول على أقصى أداء."
+        },
+        {
+          "step": 5,
+          "title": "التحسين وإنشاء API",
+          "description": "غالباً ما يكون النموذج المدرب ضخماً. نقوم بضغط النموذج وتحسينه (باستخدام تقنيات مثل التكميم - Quantization) وتغليفه في خدمة FastAPI مصغرة سريعة وآمنة وجاهزة لحركة مرور الإنتاج."
+        },
+        {
+          "step": 6,
+          "title": "نشر MLOps",
+          "description": "ننشر النظام باستخدام Docker و Kubernetes. نُعد المراقبة لتتبع 'انحراف النموذج' (Model drift)، مما يضمن إمكانية إعادة تدريب النظام تلقائياً عند وصول بيانات جديدة."
+        }
+      ],
+      "faq": [
+        {
+          "question": "متى يجب أن نختار تطوير الذكاء الاصطناعي المخصص بدلاً من واجهة برمجة تطبيقات (API) مثل OpenAI؟",
+          "answer": "تحتاج إلى ذكاء اصطناعي مخصص عندما: 1) يكون لديك بيانات خاصة للغاية (مثل السجلات المالية أو الطبية) لا تفهمها النماذج القياسية. 2) تمنعك قوانين خصوصية البيانات من إرسال البيانات إلى السحابة. 3) تحتاج إلى نموذج خفيف ومحدد للعمل بتكلفة منخفضة على نطاق واسع بدلاً من الدفع لكل Token. 4) تتعامل مع بيانات غير نصية كبيانات المستشعرات."
+        },
+        {
+          "question": "من يمتلك الملكية الفكرية (IP) للنموذج المخصص؟",
+          "answer": "أنت المالك. عندما نبني حل ذكاء اصطناعي مخصصاً من الصفر وندربه على بياناتك الخاصة، فإنك تمتلك 100% من أوزان النموذج (Weights)، والبنية المعمارية، والكود المصدري المحيط به."
+        },
+        {
+          "question": "ماذا لو كانت بياناتنا الحالية فوضوية أو غير مهيكلة؟",
+          "answer": "هذا أمر شائع جداً. تتضمن المرحلة الأولى من تطورنا هندسة بيانات صارمة. نبني نصوصاً برمجية ومسارات لتنظيف بياناتك، والتعامل مع القيم المفقودة، وهيكلتها في تنسيق قابل للاستخدام قبل بدء أي تدريب للذكاء الاصطناعي."
+        },
+        {
+          "question": "كم من الوقت يستغرق تطوير نموذج ذكاء اصطناعي مخصص؟",
+          "answer": "يمثل الذكاء الاصطناعي المخصص جهداً هندسياً كبيراً. قد يستغرق النموذج التنبؤي القياسي على بيانات مهيكلة من 6 إلى 8 أسابيع. أما مشاريع التعلم العميق المعقدة التي تتضمن بيانات غير مهيكلة فغريباً ما تستغرق 3-6 أشهر."
+        },
+        {
+          "question": "هل سنحتاج إلى شراء خوادم باهظة الثمن لتشغيل الذكاء الاصطناعي؟",
+          "answer": "ليس بالضرورة. أثناء التدريب، نستأجر وحدات GPU سحابية بالساعة، لذا لا تحتاج إلى رأس مال مقدم. أما لتشغيل النموذج في الإنتاج، فإننا نحسن النموذج بشكل كبير بحيث يمكنه غالباً العمل على خوادم سحابية قياسية أرخص، أو حتى أجهزة طرفية."
+        },
+        {
+          "question": "ما هو 'انحراف النموذج' (Model Drift) وكيف تتعاملون معه؟",
+          "answer": "يحدث انحراف النموذج عندما يتغير العالم الحقيقي ولا يتغير نموذجك (مثل نموذج تسعير تم تدريبه قبل كورونا سيفشل أثناء الوباء). نحن نطبق مراقبة MLOps لاكتشاف متى تبدأ التنبؤات في فقدان دقتها، ليقوم النظام تلقائياً بإعادة التدريب على أحدث البيانات."
+        },
+        {
+          "question": "هل تبنون فقط الشبكات العصبية والتعلم العميق؟",
+          "answer": "لا. نحن عمليون. إذا كانت خوارزمية تعلم آلي أبسط مثل Random Forest تحل مشكلتك بشكل أسرع وأرخص وبقابلية تفسير أفضل من الشبكة العصبية العميقة، فسوف نوصي دائماً بالنهج الأبسط والأكثر قوة."
+        },
+        {
+          "question": "هل يمكنكم أخذ نموذج صممه علماء البيانات الداخليون لدينا ووضعه في الإنتاج؟",
+          "answer": "نعم. هذه خدمة شائعة نقدمها. غالباً ما يبني علماء البيانات نماذج رائعة في دفاتر Jupyter غير الجاهزة لحركة مرور الويب الحية. يأخذ مهندسو البرمجيات لدينا تلك النماذج، ويحسنونها، ويغلفونها في APIs آمنة (Docker/Kubernetes) قابلة للتطوير."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch / TensorFlow"
+        },
+        {
+          "icon": "fastapi",
+          "name": "FastAPI"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker / Kubernetes"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS SageMaker"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Vertex AI"
+        },
+        {
+          "icon": "nvidia",
+          "name": "CUDA / NVIDIA GPUs"
+        },
+        {
+          "icon": "github",
+          "name": "MLflow / MLOps"
+        }
+      ]
+    }
+  }
+}

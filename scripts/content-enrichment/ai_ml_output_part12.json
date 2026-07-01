@@ -1,0 +1,1553 @@
+{
+  "predictive-analytics": {
+    "en": {
+      "name": "Predictive Analytics",
+      "shortDescription": "Forecast business trends, predict customer churn, and optimize pricing with predictive models. We design custom ML algorithms that turn historical data into proactive insights.",
+      "fullDescription": "Looking back at historical data is no longer enough to stay competitive. We build custom Predictive Analytics solutions that use advanced machine learning models to anticipate future outcomes and customer behavior. Utilizing frameworks like scikit-learn, XGBoost, and TensorFlow, we train predictive engines for demand forecasting, customer churn prevention, predictive maintenance, and lead scoring. We handle the entire data science workflow on platforms like Databricks, from data cleaning and feature engineering to deployment with MLflow. By integrating predictive scores directly into your CRM, ERP, or marketing software, we enable your team to take proactive actions, optimizing inventory and pricing dynamically.",
+      "features": [
+        "Demand & Sales Forecasting Models",
+        "Customer Churn Prediction and Prevention",
+        "Predictive Maintenance for Machinery",
+        "Credit and Risk Scoring Algorithms",
+        "Dynamic Price Optimization Engines",
+        "Automated High-Quality Lead Scoring",
+        "Anomaly Detection for Operational Safety",
+        "Centralized MLOps Deployment with MLflow"
+      ],
+      "benefits": [
+        "Anticipate market changes and consumer demand accurately",
+        "Reduce customer churn through targeted retention campaigns",
+        "Minimize equipment downtime with predictive maintenance",
+        "Increase revenue using data-driven price optimizations",
+        "Prioritize sales outreach to high-converting leads",
+        "Automate data workflows on secure Databricks clusters"
+      ],
+      "metaTitle": "Custom Predictive Analytics Services | AI & ML | PakSoft",
+      "metaDescription": "Forecast business trends and customer churn using custom machine learning models. We build predictive solutions with XGBoost and scikit-learn. Contact us.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Business Objectives Discovery",
+            "description": "We analyze your business processes and historical dataset availability to identify high-value prediction targets."
+          },
+          {
+            "step": 2,
+            "title": "Data Preparation",
+            "description": "We clean, merge, and structure raw database records, engineering key predictive features on Databricks clusters."
+          },
+          {
+            "step": 3,
+            "title": "Model Training",
+            "description": "We train and evaluate multiple models (XGBoost, Random Forests, LSTM) to select the most accurate algorithm."
+          },
+          {
+            "step": 4,
+            "title": "Pipeline Integration",
+            "description": "We wrap the predictive model in a pipeline to automate daily or real-time scoring updates."
+          },
+          {
+            "step": 5,
+            "title": "System Connection",
+            "description": "We import model scores directly into your CRM (like Salesforce) or ERP database for team action."
+          },
+          {
+            "step": 6,
+            "title": "Monitoring & Drift Audit",
+            "description": "We track model accuracy using MLflow, setting up retrain alerts when input patterns diverge from training sets."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What kind of data is required for predictive analytics?",
+            "answer": "We require historical records of the events you want to predict, such as sales records, customer interaction logs, or sensor data, ideally covering at least 1 to 2 years."
+          },
+          {
+            "question": "How do you evaluate model accuracy?",
+            "answer": "We split your data into training and test sets. We measure performance using standard metrics like MSE (Mean Squared Error) for regression or F1-Score for classification models."
+          },
+          {
+            "question": "Can this help reduce customer churn?",
+            "answer": "Yes, we build classification models that score each customer's likelihood to churn. This helps your marketing team target high-risk clients before they leave."
+          },
+          {
+            "question": "What is predictive maintenance?",
+            "answer": "Predictive maintenance analyzes temperature, vibration, and usage logs from machinery to predict equipment failures, helping you schedule repairs before breakdowns occur."
+          },
+          {
+            "question": "How do you deploy predictive models?",
+            "answer": "We deploy models as secure microservice APIs using Docker and MLflow, or write prediction outputs directly into your main SQL database at scheduled intervals."
+          },
+          {
+            "question": "Is my company data secure during analysis?",
+            "answer": "Absolutely. We run all training and data preparation tasks inside your private cloud environment or on local Databricks clusters, ensuring total data privacy."
+          },
+          {
+            "question": "Can you predict pricing demand?",
+            "answer": "Yes, we design dynamic pricing engines that analyze historical sales, competitor pricing, and seasonality to recommend the optimal price that maximizes revenue."
+          },
+          {
+            "question": "How long does it take to deploy a predictive model?",
+            "answer": "A standard predictive analytics project, from data exploration and model training to ERP integration, typically takes 8 to 12 weeks."
+          }
+        ],
+        "technologies": [
+          { "name": "scikit-learn", "icon": "scikitlearn" },
+          { "name": "XGBoost", "icon": "xgboost" },
+          { "name": "Facebook Prophet", "icon": "prophet" },
+          { "name": "TensorFlow", "icon": "tensorflow" },
+          { "name": "MLflow", "icon": "mlflow" },
+          { "name": "Databricks", "icon": "databricks" },
+          { "name": "Python", "icon": "python" },
+          { "name": "PostgreSQL", "icon": "postgresql" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Tahminleyici Analitik",
+      "shortDescription": "Tahminleyici modellerle iş trendlerini öngörün, müşteri kaybını tahmin edin ve fiyatlandırmayı optimize edin. Geçmiş verileri proaktif içgörülere dönüştüren özel ML algoritmaları tasarlıyoruz.",
+      "fullDescription": "Rekabetçi kalabilmek için sadece geçmiş verilere bakmak artık yeterli değil. Gelecekteki sonuçları ve müşteri davranışlarını öngörmek için gelişmiş makine öğrenimi modellerini kullanan özel Tahminleyici Analitik çözümleri kuruyoruz. scikit-learn, XGBoost ve TensorFlow gibi çerçeveleri kullanarak talep tahmini, müşteri kaybı önleme, tahminleyici bakım ve aday müşteri puanlama için tahmin motorları eğitiyoruz. Temizleme ve özellik mühendisliğinden MLflow ile dağıtıma kadar tüm veri bilimi iş akışını Databricks gibi platformlarda yönetiyoruz. Tahmin puanlarını doğrudan CRM, ERP veya pazarlama yazılımınıza entegre ederek ekibinizin proaktif adımlar atmasını sağlıyor, envanter ve fiyatlandırmayı dinamik olarak optimize ediyoruz.",
+      "features": [
+        "Talep ve Satış Tahmin Modelleri",
+        "Müşteri Kaybı Tahmini ve Önlenmesi",
+        "Makineler İçin Tahminleyici Bakım",
+        "Kredi ve Risk Puanlama Algoritmaları",
+        "Dinamik Fiyat Optimizasyonu Motorları",
+        "Yüksek Kaliteli Aday Müşteri Puanlama",
+        "Operasyonel Güvenlik İçin Anormallik Tespiti",
+        "MLflow ile Merkezi MLOps Dağıtımı"
+      ],
+      "benefits": [
+        "Pazar değişikliklerini ve tüketici talebini doğru bir şekilde öngörün",
+        "Hedefli elde tutma kampanyalarıyla müşteri kaybını azaltın",
+        "Tahminleyici bakımla ekipman duruş sürelerini en aza indirin",
+        "Veriye dayalı fiyat optimizasyonlarıyla geliri artırın",
+        "Satış ekibinin dönüşüm olasılığı yüksek adaylara odaklanmasını sağlayın",
+        "Güvenli Databricks kümelerinde veri iş akışlarını otomatikleştirin"
+      ],
+      "metaTitle": "Tahminleyici Analitik Hizmetleri | AI & ML | PakSoft",
+      "metaDescription": "Özel makine öğrenimi modelleriyle iş trendlerini ve müşteri kaybını öngörün. XGBoost ve scikit-learn ile tahmin çözümleri sunuyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "İş Hedeflerinin Belirlenmesi",
+            "description": "Yüksek değerli tahmin hedeflerini belirlemek için iş süreçlerinizi ve geçmiş veri kümesi kullanılabilirliğini analiz ediyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Veri Hazırlığı",
+            "description": "Ham veritabanı kayıtlarını temizliyor, birleştiriyor ve yapılandırarak Databricks üzerinde tahminleyici özellikler geliştiriyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Model Eğitimi",
+            "description": "En doğru algoritmayı seçmek amacıyla birden fazla modeli (XGBoost, Random Forests, LSTM) eğitiyor ve değerlendiriyoruz."
+          },
+          {
+            "step": 4,
+            "title": "Veri Hattı Entegrasyonu",
+            "description": "Günlük veya gerçek zamanlı puanlama güncellemelerini otomatikleştirmek için tahmin modelini bir veri hattı (pipeline) içine alıyoruz."
+          },
+          {
+            "step": 5,
+            "title": "Sistem Bağlantısı",
+            "description": "Ekibin aksiyon alabilmesi için model puanlarını doğrudan CRM (Salesforce gibi) veya ERP veritabanınıza aktarıyoruz."
+          },
+          {
+            "step": 6,
+            "title": "İzleme & Sapma Denetimi",
+            "description": "MLflow kullanarak model doğruluğunu izliyor, girdiler eğitim setlerinden saptığında yeniden eğitim uyarıları kuruyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Tahminleyici analitik için ne tür verilere ihtiyaç vardır?",
+            "answer": "Tahmin etmek istediğiniz olayların (örneğin satış kayıtları, müşteri etkileşim günlükleri veya sensör verileri) geçmiş kayıtlarına ihtiyaç duyarız; bu verilerin en az 1-2 yılı kapsaması idealdir."
+          },
+          {
+            "question": "Model doğruluğunu nasıl değerlendiriyorsunuz?",
+            "answer": "Verilerinizi eğitim ve test setleri olarak ayırıyoruz. Performansı, regresyon modelleri için MSE (Ortalama Kare Hata) veya sınıflandırma modelleri için F1-Skoru gibi standart metriklerle ölçüyoruz."
+          },
+          {
+            "question": "Bu sistem müşteri kaybını (churn) azaltmaya yardımcı olabilir mi?",
+            "answer": "Evet, her müşterinin sistemden ayrılma olasılığını puanlayan sınıflandırma modelleri oluşturuyoruz. Bu, pazarlama ekibinizin risk altındaki müşterileri kaybetmeden önce hedeflemesini sağlar."
+          },
+          {
+            "question": "Tahminleyici bakım nedir?",
+            "answer": "Tahminleyici bakım, ekipman arızalarını öngörmek için makinelerden alınan sıcaklık, titreşim ve kullanım günlüklerini analiz ederek arızalar oluşmadan önce onarım planlamanıza yardımcı olur."
+          },
+          {
+            "question": "Tahminleyici modelleri nasıl yayına alıyorsunuz?",
+            "answer": "Modelleri Docker ve MLflow kullanarak güvenli mikro hizmet API'leri olarak dağıtıyoruz veya tahmin çıktılarını planlanan aralıklarla doğrudan ana SQL veritabanınıza yazıyoruz."
+          },
+          {
+            "question": "Analiz sırasında şirket verilerim güvende mi?",
+            "answer": "Kesinlikle. Tüm eğitim ve veri hazırlama görevlerini özel bulut ortamınızda veya yerel Databricks kümelerinizde çalıştırarak tam veri gizliliği sağlıyoruz."
+          },
+          {
+            "question": "Fiyatlandırma talebini tahmin edebilir misiniz?",
+            "answer": "Evet, geliri en üst düzeye çıkaran en uygun fiyatı önermek için geçmiş satışları, rakip fiyatlarını ve mevsimselliği analiz eden dinamik fiyatlandırma motorları tasarlıyoruz."
+          },
+          {
+            "question": "Bir tahminleyici modeli yayına almak ne kadar sürer?",
+            "answer": "Veri keşfi ve model eğitiminden ERP entegrasyonuna kadar standart bir tahminleyici analitik projesi genellikle 8 ila 12 hafta sürer."
+          }
+        ],
+        "technologies": [
+          { "name": "scikit-learn", "icon": "scikitlearn" },
+          { "name": "XGBoost", "icon": "xgboost" },
+          { "name": "Facebook Prophet", "icon": "prophet" },
+          { "name": "TensorFlow", "icon": "tensorflow" },
+          { "name": "MLflow", "icon": "mlflow" },
+          { "name": "Databricks", "icon": "databricks" },
+          { "name": "Python", "icon": "python" },
+          { "name": "PostgreSQL", "icon": "postgresql" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Prädiktive Analytik",
+      "shortDescription": "Prognostizieren Sie Geschäftstrends, Kundenabwanderung und optimieren Sie Preise mit prädiktiven Modellen. Wir bauen ML-Algorithmen zur Nutzung historischer Daten.",
+      "fullDescription": "Der Blick auf historische Daten reicht heute nicht mehr aus. Wir entwickeln maßgeschneiderte Predictive-Analytics-Lösungen, die moderne Machine-Learning-Modelle nutzen, um zukünftige Ergebnisse und Kundenverhalten vorherzusagen. Mit Bibliotheken wie scikit-learn, XGBoost und TensorFlow trainieren wir Vorhersagemodelle für Nachfrageprognosen, Kundenabwanderung (Churn), vorausschauende Wartung (Predictive Maintenance) und Lead-Scoring. Wir steuern den gesamten Data-Science-Prozess auf Databricks-Systemen, von der Datenbereinigung bis zum Deployment mit MLflow. Durch die Einbindung der Ergebnisse in Ihre CRM- und ERP-Systeme ermöglichen wir datenbasierte, zukunftsorientierte Entscheidungen.",
+      "features": [
+        "Bedarfs- & Umsatzprognosemodelle",
+        "Kundenabwanderungs-Prognose & Prävention",
+        "Vorausschauende Wartung (Predictive Maintenance)",
+        "Kredit- und Risikobewertungsalgorithmen",
+        "Dynamische Preisoptimierungs-Systeme",
+        "Automatisches, qualifiziertes Lead-Scoring",
+        "Anomalieerkennung im operativen Betrieb",
+        "Zentrales MLOps-Deployment mit MLflow"
+      ],
+      "benefits": [
+        "Marktveränderungen und Nachfragen präzise antizipieren",
+        "Kundenabwanderung durch gezielte Kampagnen reduzieren",
+        "Ausfallzeiten durch vorausschauende Wartung minimieren",
+        "Umsätze durch datengestützte Preisoptimierung steigern",
+        "Vertriebsaktivitäten auf vielversprechende Leads fokussieren",
+        "Daten-Workflows auf sicheren Databricks-Clustern automatisieren"
+      ],
+      "metaTitle": "Predictive Analytics Services | AI & ML | PakSoft",
+      "metaDescription": "Prognostizieren Sie Geschäftstrends und Churn mit Machine Learning. Wir bauen prädiktive Lösungen mit XGBoost und scikit-learn. Kontaktieren Sie uns.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Definition der Business-Ziele",
+            "description": "Wir analysieren Ihre Geschäftsprozesse und historischen Datensätze, um vielversprechende Prognoseziele zu identifizieren."
+          },
+          {
+            "step": 2,
+            "title": "Datenvorbereitung",
+            "description": "Wir bereinigen, verknüpfen und strukturieren Ihre Daten und entwickeln relevante Features auf Databricks-Clustern."
+          },
+          {
+            "step": 3,
+            "title": "Modell-Training",
+            "description": "Wir trainieren und evaluieren verschiedene Modelle (XGBoost, Random Forests, LSTM), um den präzisesten Algorithmus zu ermitteln."
+          },
+          {
+            "step": 4,
+            "title": "Pipeline-Integration",
+            "description": "Wir binden das Vorhersagemodell in eine Pipeline ein, um tägliche oder Echtzeit-Berechnungen zu automatisieren."
+          },
+          {
+            "step": 5,
+            "title": "Systemanbindung",
+            "description": "Wir exportieren die Prognosewerte direkt in Ihr CRM (z. B. Salesforce) oder ERP-System zur Nutzung durch Ihr Team."
+          },
+          {
+            "step": 6,
+            "title": "Monitoring & Drift-Audit",
+            "description": "Wir überwachen die Genauigkeit mit MLflow und richten Warnungen für automatische Trainingsläufe bei Datenveränderungen ein."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Welche Daten werden für prädiktive Analysen benötigt?",
+            "answer": "Wir benötigen historische Daten der Ereignisse, die Sie vorhersagen möchten (z. B. Verkaufsdaten, Kundenkontaktverläufe oder Maschinensensordaten) über einen Zeitraum von mindestens 1 bis 2 Jahren."
+          },
+          {
+            "question": "Wie bewerten Sie die Genauigkeit der Modelle?",
+            "answer": "Wir teilen Ihre Daten in Trainings- und Testdatensätze auf. Wir messen die Qualität anhand von Standardmetriken wie MSE (Mean Squared Error) für Regressionen oder dem F1-Score für Klassifikationen."
+          },
+          {
+            "question": "Kann dies helfen, Kundenabwanderung (Churn) zu reduzieren?",
+            "answer": "Ja, wir entwickeln Klassifizierungsmodelle, die die Kündigungswahrscheinlichkeit jedes Kunden berechnen. So kann Ihr Marketing gefährdete Kunden gezielt ansprechen, bevor sie abwandern."
+          },
+          {
+            "question": "Was versteht man unter Predictive Maintenance?",
+            "answer": "Dabei werden Temperatur-, Vibrations- und Nutzungsdaten von Maschinen analysiert, um Ausfälle vorherzusagen. So können Reparaturen geplant werden, bevor ein ungeplanter Stillstand entsteht."
+          },
+          {
+            "question": "Wie werden prädiktive Modelle bereitgestellt?",
+            "answer": "Wir deployen Modelle als sichere Microservice-APIs mit Docker und MLflow oder schreiben die Vorhersageergebnisse in regelmäßigen Intervallen direkt in Ihre SQL-Datenbank."
+          },
+          {
+            "question": "Sind unsere Unternehmensdaten während der Analyse sicher?",
+            "answer": "Absolut. Wir führen alle Trainings- und Aufbereitungsschritte innerhalb Ihrer privaten Cloud oder auf lokalen Databricks-Clustern aus, was maximalen Datenschutz sichert."
+          },
+          {
+            "question": "Können Sie Nachfrage und Preise prognostizieren?",
+            "answer": "Ja, wir entwickeln Preisoptimierungs-Systeme, die Verkaufsdaten, Wettbewerberpreise und Saisonalitäten analysieren, um den optimalen Preis zur Umsatzmaximierung vorzuschlagen."
+          },
+          {
+            "question": "Wie lange dauert ein prädiktives Analyseprojekt?",
+            "answer": "Ein typisches Projekt von der Datenanalyse über das Modelltraining bis zur Einbindung in Ihre Systeme (ERP/CRM) dauert meist 8 bis 12 Wochen."
+          }
+        ],
+        "technologies": [
+          { "name": "scikit-learn", "icon": "scikitlearn" },
+          { "name": "XGBoost", "icon": "xgboost" },
+          { "name": "Facebook Prophet", "icon": "prophet" },
+          { "name": "TensorFlow", "icon": "tensorflow" },
+          { "name": "MLflow", "icon": "mlflow" },
+          { "name": "Databricks", "icon": "databricks" },
+          { "name": "Python", "icon": "python" },
+          { "name": "PostgreSQL", "icon": "postgresql" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "تخمیناتی تجزیات (Predictive Analytics)",
+      "shortDescription": "کاروباری رجحانات، صارفین کے چھوڑ جانے اور قیمتوں کے اتار چڑھاؤ کی پیشین گوئی کریں۔ ہم ماضی کے ڈیٹا کو کارآمد معلومات میں بدلنے والے ماڈلز بناتے ہیں۔",
+      "fullDescription": "مارکیٹ میں مسابقت برقرار رکھنے کے لیے صرف ماضی کے ڈیٹا پر نظر رکھنا کافی نہیں ہے۔ ہم کسٹم تخمیناتی تجزیات (Predictive Analytics) کے سلوشنز بناتے ہیں جو مستقبل کے نتائج اور صارفین کے رویے کی پیشین گوئی کرنے کے لیے مشین لرننگ کے جدید ماڈلز کا استعمال کرتے ہیں۔ scikit-learn، XGBoost، اور TensorFlow جیسے فریم ورکس کی مدد سے، ہم مصنوعات کی طلب، کسٹمر چرن (churn) اور مشینری کی خرابیوں کی پیشین گوئی کرنے والے سسٹمز تیار کرتے ہیں۔ ہم ڈیٹا کی صفائی سے لے کر MLflow کے ذریعے لانچنگ تک کا سارا عمل Databricks پر سرانجام دیتے ہیں۔ ان نتائج کو براہ راست آپ کے CRM یا ERP سسٹم سے جوڑا جاتا ہے تاکہ کمپنی کے سیلز اور آپریشنز کے فیصلے تیز ہو سکیں۔",
+      "features": [
+        "مصنوعات کی طلب اور سیلز پیشین گوئی ماڈلز",
+        "صارفین کے چھوڑ جانے کی شناخت اور روک تھام",
+        "مشینری کی خرابیوں کی پیشین گوئی (Predictive Maintenance)",
+        "کریڈٹ اور کاروباری رسک اسکورنگ الگورتھمز",
+        "ڈينامک پرائسنگ اور قیمتوں کی اصلاح کا نظام",
+        "بہترین لیڈز کی خودکار اور فوری اسکورنگ",
+        "آپریشنل سیکیورٹی کے لیے انحرافات کا پتہ لگانا",
+        "MLflow کے ذریعے مرکزی ماڈل ہوسٹنگ"
+      ],
+      "benefits": [
+        "مارکیٹ کی تبدیلیوں اور صارفین کی طلب کا پہلے سے درست اندازہ لگائیں",
+        "صارفین کے چھوڑ جانے کی شرح کو خاصی حد تک کم کریں",
+        "مشینری کے خراب ہونے سے پہلے مرمت کا شیڈول بنا کر وقت بچائیں",
+        "ڈیٹا کی مدد سے بہترین قیمتیں طے کر کے منافع بڑھائیں",
+        "اپنی سیلز ٹیم کو زیادہ منافع بخش لیڈز پر فوکس کروائیں",
+        "محفوظ Databricks سرورز پر ڈیٹا پروسیسنگ خودکار بنائیں"
+      ],
+      "metaTitle": "تخمیناتی تجزیات کی سروسز | AI اور ML | PakSoft",
+      "metaDescription": "کاروباری رجحانات اور کسٹمر چرن کی پیشین گوئی کریں۔ ہم XGBoost اور scikit-learn کی مدد سے تجزیاتی ماڈلز بناتے ہیں۔ رابطہ کریں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "کاروباری مقاصد کی شناخت",
+            "description": "ہم اہم کاروباری مقاصد اور ماضی کے دستیاب ڈیٹا کا تجزیہ کرتے ہیں تاکہ پیشین گوئی کے اہداف طے کیے جا سکیں۔"
+          },
+          {
+            "step": 2,
+            "title": "ڈیٹا کی تیاری",
+            "description": "ہم خام ریکارڈز کو صاف اور ترتیب دیتے ہیں اور Databricks پر ماڈل کے لیے اہم فیچرز تیار کرتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "ماڈل کی تربیت",
+            "description": "ہم بہترین کارکردگی حاصل کرنے کے لیے متعدد ماڈلز (XGBoost, LSTM, Random Forests) کی تربیت اور موازنہ کرتے ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "پائپ لائن انٹیگریشن",
+            "description": "ہم تربیت یافتہ ماڈل کو پائپ لائن میں تبدیل کرتے ہیں تاکہ روزانہ کی بنیاد پر خودکار پیشین گوئیاں حاصل کی جا سکیں۔"
+          },
+          {
+            "step": 5,
+            "title": "سسٹمز سے جوڑنا",
+            "description": "ہم پیشین گوئی کے نتائج کو براہ راست آپ کے CRM (Salesforce) یا ERP ڈیٹا بیس میں منتقل کرتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "نگرانی اور کارکردگی کی جانچ",
+            "description": "ہم MLflow کے ذریعے ماڈل کی درستگی مانیٹر کرتے ہیں اور ڈیٹا تبدیل ہونے پر دوبارہ تربیت کے الرٹس لگاتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "تخمیناتی تجزیات کے لیے کس قسم کے ڈیٹا کی ضرورت ہوتی ہے؟",
+            "answer": "ہمیں ان سرگرمیوں کے ماضی کے ریکارڈز کی ضرورت ہوتی ہے جن کی آپ پیشین گوئی کرنا چاہتے ہیں، جیسے پچھلے 1 سے 2 سال کے سیلز لاگز، کسٹمر سپورٹ ہسٹری یا مشینوں کے سینسر کا ڈیٹا۔"
+          },
+          {
+            "question": "آپ ماڈل کی درستگی کو کیسے چیک کرتے ہیں؟",
+            "answer": "ہم ڈیٹا کو ٹریننگ اور ٹیسٹنگ حصوں میں تقسیم کرتے ہیں۔ ہم درستگی کی پیمائش کے لیے MSE (Mean Squared Error) یا F1-Score جیسے معیاری طریقے استعمال کرتے ہیں۔"
+          },
+          {
+            "question": "کیا یہ سسٹم صارفین کے چھوڑ جانے (churn) کو کم کرنے میں مدد کر سکتا ہے؟",
+            "answer": "جی ہاں، ہم ایسے ماڈلز بناتے ہیں جو ہر کسٹمر کے کمپنی چھوڑنے کے امکان کا اسکور تیار کرتے ہیں۔ اس سے مارکیٹنگ ٹیم بروقت کارروائی کر کے صارفین کو روک سکتی ہے۔"
+          },
+          {
+            "question": "پریڈیکٹیو مینٹیننس (predictive maintenance) کیا ہے؟",
+            "answer": "یہ مشینوں کے درجہ حرارت، وائبریشن اور استعمال کا تجزیہ کرتی ہے تاکہ مشین کے خراب ہونے سے پہلے ہی اس کی مرمت کا وقت بتایا جا سکے، جس سے کام بند ہونے کا خطرہ ختم ہو جاتا ہے۔"
+          },
+          {
+            "question": "آپ پیشین گوئی کرنے والے ماڈلز کو کیسے ہوسٹ کرتے ہیں؟",
+            "answer": "ہم ماڈلز کو Docker اور MLflow کے ذریعے محفوظ APIs کے طور پر لانچ کرتے ہیں یا مقررہ وقت پر نتائج کو براہ راست آپ کے SQL ڈیٹا بیس میں منتقل کرتے ہیں۔"
+          },
+          {
+            "question": "کیا پروسیسنگ کے دوران ہمارا ڈیٹا محفوظ رہتا ہے؟",
+            "answer": "بالکل۔ ہم ٹریننگ اور ڈیٹا کی پروسیسنگ کا سارا کام آپ کے اپنے نجی کلاؤڈ یا لوکل Databricks سرورز پر کرتے ہیں، جس سے ڈیٹا کی پرائیویسی سو فیصد یقینی رہتی ہے۔"
+          },
+          {
+            "question": "کیا آپ مصنوعات کی قیمتوں کی طلب کی پیشین گوئی کر سکتے ہیں؟",
+            "answer": "جی ہاں، ہم ڈينامک پرائسنگ سسٹمز ڈیزائن کرتے ہیں جو سیلز، حریفوں کی قیمتوں اور موسم کا تجزیہ کر کے ایسی قیمت بتاتے ہیں جس سے زیادہ منافع حاصل ہو سکے۔"
+          },
+          {
+            "question": "ایک پیشین گوئی کا ماڈل تیار کرنے میں کتنا وقت لگتا ہے؟",
+            "answer": "ڈیٹا کی صفائی، ماڈل ٹریننگ اور اسے ERP سسٹم کے ساتھ مربوط کرنے کے مکمل پروجیکٹ میں عام طور پر 8 سے 12 ہفتے لگتے ہیں۔"
+          }
+        ],
+        "technologies": [
+          { "name": "scikit-learn", "icon": "scikitlearn" },
+          { "name": "XGBoost", "icon": "xgboost" },
+          { "name": "Facebook Prophet", "icon": "prophet" },
+          { "name": "TensorFlow", "icon": "tensorflow" },
+          { "name": "MLflow", "icon": "mlflow" },
+          { "name": "Databricks", "icon": "databricks" },
+          { "name": "Python", "icon": "python" },
+          { "name": "PostgreSQL", "icon": "postgresql" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "التحليلات التنبؤية",
+      "shortDescription": "تنبأ باتجاهات الأعمال، وسلوك العملاء، وحجم الطلب باستخدام النماذج التنبؤية. نصمم خوارزميات تعلم آلي مخصصة تحول البيانات التاريخية إلى رؤى استباقية.",
+      "fullDescription": "النظر إلى البيانات التاريخية لم يعد كافياً للبقاء في دائرة المنافسة. نحن نبني حلول التحليلات التنبؤية المخصصة التي تستخدم نماذج التعلم الآلي المتقدمة لاستباق النتائج المستقبلية وسلوك العملاء. باستخدام أطر عمل مثل scikit-learn و XGBoost و TensorFlow، نقوم بتدريب محركات التنبؤ للتنبؤ بالطلب، ومنع مغادرة العملاء، والصيانة التنبؤية، وتصنيف العملاء المحتملين. نتعامل مع سير عمل علم البيانات بالكامل على منصات مثل Databricks، من تنظيف البيانات وهندسة الميزات إلى النشر مع MLflow. ومن خلال دمج درجات التنبؤ مباشرة في أنظمة إدارة العملاء أو تخطيط الموارد، نمكن فريقك من اتخاذ إجراءات استباقية.",
+      "features": [
+        "نماذج التنبؤ بالطلب والمبيعات المستقبلية",
+        "التنبؤ بمغادرة العملاء والحد منها",
+        "الصيانة التنبؤية للآلات والمعدات الصناعية",
+        "خوارزميات تقييم المخاطر والائتمان المالي",
+        "محركات تحسين الأسعار الديناميكية الذكية",
+        "تصنيف تلقائي وعالي الجودة للعملاء المحتملين",
+        "اكتشاف الأنماط الشاذة لسلامة العمليات التشغيلية",
+        "نشر MLOps مركزي للنماذج باستخدام MLflow"
+      ],
+      "benefits": [
+        "توقع تغيرات السوق وطلب المستهلكين بدقة تامة",
+        "الحد من مغادرة العملاء عبر حملات استهداف استباقية",
+        "تقليل وقت توقف المعدات بفضل الصيانة التنبؤية",
+        "زيادة الإيرادات باستخدام تحسينات الأسعار الموجهة بالبيانات",
+        "تركيز جهود المبيعات على العملاء المحتملين الأكثر تحويلاً",
+        "أتمتة سير عمل البيانات على خوادم Databricks الآمنة"
+      ],
+      "metaTitle": "خدمات التحليلات التنبؤية المخصصة | ذكاء اصطناعي | PakSoft",
+      "metaDescription": "تنبأ باتجاهات الأعمال ومغادرة العملاء باستخدام نماذج التعلم الآلي المخصصة. نبني حلولاً تنبؤية باستخدام XGBoost و scikit-learn. اتصل بنا.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "اكتشاف أهداف العمل",
+            "description": "نحلل عمليات عملك وتوفر سجلات البيانات التاريخية لتحديد أهداف التنبؤ ذات القيمة العالية."
+          },
+          {
+            "step": 2,
+            "title": "تجهيز وتحضير البيانات",
+            "description": "نقوم بتنظيف ودمج وهيكلة سجلات قاعدة البيانات، وهندسة الميزات التنبؤية الرئيسية على خوادم Databricks."
+          },
+          {
+            "step": 3,
+            "title": "تدريب النماذج وتقييمها",
+            "description": "ندرب ونقيم نماذج متعددة (XGBoost, Random Forests, LSTM) لاختيار الخوارزمية الأكثر دقة للتشغيل."
+          },
+          {
+            "step": 4,
+            "title": "تكامل مسار العمل",
+            "description": "نغلف النموذج التنبؤي في مسار عمل لأتمتة تحديثات التنبؤ اليومية أو الفورية."
+          },
+          {
+            "step": 5,
+            "title": "توصيل الأنظمة",
+            "description": "نستورد درجات التنبؤ من النماذج مباشرة إلى نظام CRM (مثل Salesforce) أو قواعد بيانات ERP لتسهيل اتخاذ القرار."
+          },
+          {
+            "step": 6,
+            "title": "المراقبة وتدقيق الانحراف",
+            "description": "نتتبع دقة النموذج باستخدام MLflow، ونضع تنبيهات لإعادة التدريب عندما تنحرف أنماط البيانات الواردة."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما نوع البيانات المطلوبة للتحليلات التنبؤية؟",
+            "answer": "نحن بحاجة إلى سجلات تاريخية للأحداث التي ترغب في التنبؤ بها، مثل سجلات المبيعات، أو سجلات تفاعل العملاء، أو بيانات مستشعرات الآلات، ويفضل أن تغطي فترة تتراوح بين عام وعامين على الأقل."
+          },
+          {
+            "question": "كيف تقيم دقة النموذج التنبؤي؟",
+            "answer": "نقوم بتقسيم بياناتك إلى مجموعات تدريب واختبار. ونقيس الأداء باستخدام المقاييس القياسية مثل MSE (متوسط الخطأ المربع) لل회帰 أو F1-Score لنماذج التصنيف."
+          },
+          {
+            "question": "هل يمكن أن يساعد هذا في تقليل مغادرة العملاء (churn)؟",
+            "answer": "نعم، نحن نبني نماذج تصنيف تسجل احتمالية مغادرة كل عميل، مما يساعد فريق التسويق لديك على استهداف العملاء المعرضين للمغادرة قبل حدوث ذلك."
+          },
+          {
+            "question": "ما هي الصيانة التنبؤية؟",
+            "answer": "تحلل الصيانة التنبؤية درجات الحرارة والاهتزازات وسجلات الاستخدام من الآلات للتنبؤ بالأعطال والمشكلات، مما يساعدك على جدولة الإصلاحات قبل حدوث الأعطال."
+          },
+          {
+            "question": "كيف تنشر النماذج التنبؤية؟",
+            "answer": "ننشر النماذج كواجهات برمجة تطبيقات للخدمات المصغرة باستخدام Docker و MLflow، أو نكتب مخرجات التنبؤ مباشرة في قاعدة بيانات SQL الرئيسية الخاصة بك على فترات مجدولة."
+          },
+          {
+            "question": "هل بيانات شركتي آمنة أثناء التحليل؟",
+            "answer": "بالتأكيد. نقوم بتشغيل جميع مهام التدريب وإعداد البيانات داخل بيئة السحابة الخاصة بك أو على خوادم Databricks المحلية، مما يضمن الخصوصية الكاملة للبيانات."
+          },
+          {
+            "question": "هل يمكنك التنبؤ بطلب الأسعار؟",
+            "answer": "نعم، نحن نصمم محركات تسعير ديناميكية تحلل المبيعات التاريخية وأسعار المنافسين والمواسم للتوصية بالسعر الأمثل الذي يعظم الأرباح."
+          },
+          {
+            "question": "كم من الوقت يستغرق نشر نموذج تنبؤي؟",
+            "answer": "يستغرق مشروع التحليلات التنبؤية القياسي، بدءاً من استكشاف البيانات وتدريب النماذج إلى التكامل مع أنظمة تخطيط الموارد، عادةً من 8 إلى 12 أسبوعاً."
+          }
+        ],
+        "technologies": [
+          { "name": "scikit-learn", "icon": "scikitlearn" },
+          { "name": "XGBoost", "icon": "xgboost" },
+          { "name": "Facebook Prophet", "icon": "prophet" },
+          { "name": "TensorFlow", "icon": "tensorflow" },
+          { "name": "MLflow", "icon": "mlflow" },
+          { "name": "Databricks", "icon": "databricks" },
+          { "name": "Python", "icon": "python" },
+          { "name": "PostgreSQL", "icon": "postgresql" }
+        ]
+      }
+    }
+  },
+  "prompt-engineering": {
+    "en": {
+      "name": "Prompt Engineering",
+      "shortDescription": "Maximize the output quality of LLMs with custom prompt systems. We build structured prompt pipelines with few-shot optimizations, testing, and output validation.",
+      "fullDescription": "Raw prompts often yield unpredictable, off-brand, or malformed outputs in production applications. We offer expert Prompt Engineering services to design, build, and optimize prompt systems that guarantee consistent, structured AI outputs (like JSON or XML). Using advanced techniques like Chain-of-Thought, few-shot prompting, and zero-shot reasoning, we maximize model performance for specialized tasks while keeping token costs low. We integrate validation libraries like Guardrails AI and construct automated testing pipelines using PromptFoo and LangSmith to audit prompt reliability across edge cases. From chatbot personas to complex document summarizers, our prompt engineering ensures your AI features are safe, predictable, and production-ready.",
+      "features": [
+        "Prompt System Architecture Design",
+        "Chain-of-Thought Reasoning Templates",
+        "Few-Shot and Zero-Shot Optimization",
+        "Structured JSON/XML Output Guardrails",
+        "Automated Prompt Evaluation with PromptFoo",
+        "Trace & Cost Monitoring in LangSmith",
+        "Prompt Injection & Security Protection",
+        "Production-Ready Dynamic Prompt Pipelines"
+      ],
+      "benefits": [
+        "Guarantee consistent, structured outputs from LLMs",
+        "Reduce token consumption costs by up to 40%",
+        "Prevent prompt injection and jailbreak vulnerabilities",
+        "Iterate and test prompt changes safely in sandbox",
+        "Optimize AI performance without expensive model training",
+        "Maintain strict brand compliance across all generations"
+      ],
+      "metaTitle": "Prompt Engineering Services | AI Optimization | PakSoft",
+      "metaDescription": "Maximize LLM output quality. We design secure, optimized prompt templates with Chain-of-Thought, few-shot tuning, and strict guardrails. Learn more.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Use Case Discovery",
+            "description": "We analyze your AI goals, models used, and required output schemas (like JSON or CSV) to define prompt requirements."
+          },
+          {
+            "step": 2,
+            "title": "System Prompt Design",
+            "description": "We draft base system instructions and configure guidelines to restrict model behavior and match your target tone."
+          },
+          {
+            "step": 3,
+            "title": "Optimization & Tuning",
+            "description": "We apply Chain-of-Thought templates, few-shot examples, and cache-friendly prompt ordering to reduce latency and costs."
+          },
+          {
+            "step": 4,
+            "title": "Guardrails Setup",
+            "description": "We integrate libraries like Guardrails AI or NeMo Guardrails to intercept inappropriate outputs or jailbreak attempts."
+          },
+          {
+            "step": 5,
+            "title": "Evaluation & Testing",
+            "description": "We build automated test suites in PromptFoo, running thousands of variants to ensure outputs are reliable."
+          },
+          {
+            "step": 6,
+            "title": "Monitoring & Tuning",
+            "description": "We monitor live prompt logs in LangSmith, using analytics to continually refine prompts for performance and cost."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is prompt engineering?",
+            "answer": "Prompt engineering is the practice of designing, structuring, and optimizing inputs (prompts) to ensure large language models produce accurate, reliable, and properly formatted outputs."
+          },
+          {
+            "question": "Why can't we just write basic prompts?",
+            "answer": "Basic prompts often lead to hallucinations, inconsistent formats, or off-brand responses in production. Prompt engineering builds structured systems that handle edge cases and guarantee stable outputs."
+          },
+          {
+            "question": "What is Chain-of-Thought prompting?",
+            "answer": "Chain-of-Thought prompting directs the LLM to write down its step-by-step reasoning before outputting the final answer, which drastically improves accuracy on complex logical or mathematical tasks."
+          },
+          {
+            "question": "How do you protect against prompt injection attacks?",
+            "answer": "We set up input sanitization layers, define strict system instructions separating user input from system rules, and implement output guardrails to check for leaked instructions."
+          },
+          {
+            "question": "How do you test prompt changes before launching?",
+            "answer": "We use framework tools like PromptFoo to run automated tests across hundreds of test cases, comparing the new prompt's outputs against the old prompt's results to prevent regressions."
+          },
+          {
+            "question": "Can prompt engineering reduce API token costs?",
+            "answer": "Yes, we structure prompts to be concise, remove redundant instructions, use prompt caching, and implement semantic caching to prevent querying the LLM for identical questions."
+          },
+          {
+            "question": "Which LLM models do you support?",
+            "answer": "We support all major models, including OpenAI GPT-4, Anthropic Claude 3, Google Gemini, and open-source models like Llama 3 and Mistral, tuning prompts specifically to each model's strengths."
+          },
+          {
+            "question": "What are output guardrails?",
+            "answer": "Output guardrails are verification layers (using tools like Guardrails AI) that check model outputs against specific rules, ensuring they are valid JSON, free of inappropriate content, and factually correct."
+          }
+        ],
+        "technologies": [
+          { "name": "OpenAI API", "icon": "openai" },
+          { "name": "Anthropic Claude", "icon": "anthropic" },
+          { "name": "LangChain", "icon": "langchain" },
+          { "name": "PromptFoo", "icon": "promptfoo" },
+          { "name": "LangSmith", "icon": "langsmith" },
+          { "name": "Guardrails AI", "icon": "guardrails" },
+          { "name": "Python", "icon": "python" },
+          { "name": "LlamaIndex", "icon": "llamaindex" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Prompt Mühendisliği",
+      "shortDescription": "Özel prompt sistemleri ile LLM'lerin çıktı kalitesini en üst düzeye çıkarın. Örnekli optimizasyonlar, testler ve çıktı denetimi içeren yapılandırılmış prompt hatları kuruyoruz.",
+      "fullDescription": "Ham promptlar (komutlar), üretim uygulamalarında genellikle öngörülemeyen, marka dışı veya hatalı biçimlendirilmiş çıktılara yol açar. Tutarlı ve yapılandırılmış (JSON veya XML gibi) yapay zeka çıktıları garanti eden prompt sistemleri tasarlamak, oluşturmak ve optimize etmek için uzman Prompt Mühendisliği hizmetleri sunuyoruz. Chain-of-Thought, few-shot prompting ve zero-shot reasoning gibi gelişmiş teknikleri kullanarak, token maliyetlerini düşük tutarken özel görevler için model performansını en üst düzeye çıkarıyoruz. Edge durumlarında prompt güvenilirliğini denetlemek için Guardrails AI gibi doğrulama kütüphanelerini entegre ediyor ve PromptFoo ile LangSmith kullanarak otomatik test veri hatları oluşturuyoruz. Sohbet robotu personalarından karmaşık belge özetleyicilere kadar prompt mühendisliğimiz, yapay zeka özelliklerinizin güvenli, öngörülebilir ve üretime hazır olmasını sağlar.",
+      "features": [
+        "Prompt Sistem Mimarisi Tasarımı",
+        "Chain-of-Thought Akıl Yürütme Şablonları",
+        "Few-Shot ve Zero-Shot Optimizasyonu",
+        "Yapılandırılmış JSON/XML Çıktı Sınırları",
+        "PromptFoo ile Otomatik Prompt Değerlendirmesi",
+        "LangSmith'te İzleme ve Maliyet Denetimi",
+        "Prompt Enjeksiyonu ve Güvenlik Koruması",
+        "Üretime Hazır Dinamik Prompt Hatları"
+      ],
+      "benefits": [
+        "LLM'lerden tutarlı ve yapılandırılmış çıktılar almayı garanti edin",
+        "Token tüketim maliyetlerini %40'a varan oranda azaltın",
+        "Prompt enjeksiyonu ve jailbreak güvenlik açıklarını önleyin",
+        "Prompt değişikliklerini güvenli bir test ortamında test edin",
+        "Maliyetli model eğitimi yapmadan yapay zeka performansını optimize edin",
+        "Üretilen tüm içeriklerde katı marka uyumluluğu sağlayın"
+      ],
+      "metaTitle": "Prompt Mühendisliği Hizmetleri | AI Optimizasyon | PakSoft",
+      "metaDescription": "LLM çıktı kalitesini en üst düzeye çıkarın. Chain-of-Thought, few-shot ayarlama ve katı denetimlerle güvenli prompt şablonları tasarlıyoruz. Detaylı bilgi edinin.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Kullanım Durumu Keşfi",
+            "description": "Prompt gereksinimlerini tanımlamak için yapay zeka hedeflerinizi, kullanılan modelleri ve gerekli çıktı şemalarını (JSON veya CSV gibi) analiz ediyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Sistem Prompt Tasarımı",
+            "description": "Model davranışını sınırlamak ve hedef tonunuza uyum sağlamak için temel sistem talimatlarını yazıyor ve kuralları yapılandırıyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Optimizasyon & Ayarlama",
+            "description": "Gecikmeyi ve maliyetleri azaltmak için Chain-of-Thought şablonları, few-shot örnekleri ve önbellek dostu prompt sıralaması uyguluyoruz."
+          },
+          {
+            "step": 4,
+            "title": "Güvenlik Sınırları Kurulumu",
+            "description": "Uygunsuz çıktıları veya jailbreak girişimlerini engellemek için Guardrails AI veya NeMo Guardrails gibi kütüphaneleri entegre ediyoruz."
+          },
+          {
+            "step": 5,
+            "title": "Değerlendirme & Test",
+            "description": "Çıktıların güvenilir olmasını sağlamak amacıyla binlerce varyasyonu çalıştırarak PromptFoo'da otomatik test paketleri oluşturuyoruz."
+          },
+          {
+            "step": 6,
+            "title": "İzleme & İnce Ayar",
+            "description": "LangSmith'teki canlı prompt günlüklerini izliyor, performansı ve maliyeti sürekli optimize etmek için analitiği kullanıyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Prompt mühendisliği nedir?",
+            "answer": "Prompt mühendisliği; büyük dil modellerinin doğru, güvenilir ve uygun biçimde yapılandırılmış çıktılar üretmesini sağlamak için girdileri (promptları) tasarlama, yapılandırma ve optimize etme sürecidir."
+          },
+          {
+            "question": "Neden sadece temel promptlar yazamıyoruz?",
+            "answer": "Temel promptlar üretim ortamında sıklıkla halüsinasyonlara, tutarsız formatlara veya marka dışı yanıtlara yol açar. Prompt mühendisliği, uç durumları ele alan ve kararlı çıktılar sunan yapılandırılmış sistemler oluşturur."
+          },
+          {
+            "question": "Chain-of-Thought prompting nedir?",
+            "answer": "Chain-of-Thought prompting, LLM'nin nihai yanıtı vermeden önce adım adım akıl yürütme sürecini yazmasını sağlar; bu, karmaşık mantıksal veya matematiksel görevlerde doğruluğu önemli ölçüde artırır."
+          },
+          {
+            "question": "Prompt enjeksiyonu saldırılarına karşı nasıl koruma sağlıyorsunuz?",
+            "answer": "Girdi temizleme katmanları kuruyoruz, kullanıcı girdisini sistem kurallarından ayıran katı sistem talimatları tanımlıyoruz ve sızdırılan talimatları kontrol etmek için çıktı güvenlik sınırları uyguluyoruz."
+          },
+          {
+            "question": "Prompt değişikliklerini yayına almadan önce nasıl test ediyorsunuz?",
+            "answer": "Gelişmeleri izlemek ve hataları önlemek için yeni promptun çıktılarını eski promptun sonuçlarıyla karşılaştıran, yüzlerce test senaryosunda çalışan PromptFoo gibi araçlar kullanıyoruz."
+          },
+          {
+            "question": "Prompt mühendisliği API token maliyetlerini düşürebilir mi?",
+            "answer": "Evet, promptları kısa olacak şekilde yapılandırıyoruz, gereksiz talimatları kaldırıyoruz, prompt önbelleğe alma kullanıyoruz ve aynı sorular için LLM'ye tekrar gitmeyi önlemek adına anlamsal önbelleğe alma uyguluyoruz."
+          },
+          {
+            "question": "Hangi LLM modellerini destekliyorsunuz?",
+            "answer": "OpenAI GPT-4, Anthropic Claude 3, Google Gemini ve açık kaynaklı Llama 3 ile Mistral dahil tüm büyük modelleri destekliyor, promptları her modelin güçlü yönlerine göre özelleştiriyoruz."
+          },
+          {
+            "question": "Çıktı güvenlik sınırları (output guardrails) nedir?",
+            "answer": "Çıktı güvenlik sınırları, model çıktılarını belirli kurallara karşı kontrol eden (Guardrails AI gibi araçlar kullanarak) doğrulama katmanlarıdır; çıktıların geçerli JSON olmasını, uygunsuz içerik barındırmamasını ve gerçekçi olmasını sağlar."
+          }
+        ],
+        "technologies": [
+          { "name": "OpenAI API", "icon": "openai" },
+          { "name": "Anthropic Claude", "icon": "anthropic" },
+          { "name": "LangChain", "icon": "langchain" },
+          { "name": "PromptFoo", "icon": "promptfoo" },
+          { "name": "LangSmith", "icon": "langsmith" },
+          { "name": "Guardrails AI", "icon": "guardrails" },
+          { "name": "Python", "icon": "python" },
+          { "name": "LlamaIndex", "icon": "llamaindex" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Prompt-Engineering",
+      "shortDescription": "Maximieren Sie die Ausgabequalität von LLMs mit strukturierten Prompt-Systemen. Wir entwickeln optimierte Prompt-Pipelines mit Testing und Guardrails.",
+      "fullDescription": "Einfache Prompts führen in produktiven Anwendungen oft zu unvorhersehbaren oder fehlerhaft formatierten Ergebnissen. Wir bieten professionelles Prompt-Engineering an, um Prompt-Systeme zu entwerfen, die konsistente und strukturierte KI-Ausgaben (wie JSON oder XML) garantieren. Durch Techniken wie Chain-of-Thought, Few-Shot-Prompting und zielgerichtetes Reasoning maximieren wir die Modellleistung für Ihre Fachaufgaben und senken gleichzeitig die Token-Kosten. Wir integrieren Validierungs-Bibliotheken wie Guardrails AI und etablieren automatisierte Testumgebungen mit PromptFoo und LangSmith, um die Verlässlichkeit der Prompts abzusichern.",
+      "features": [
+        "Konzeption von Prompt-Systemarchitekturen",
+        "Chain-of-Thought Logik-Vorlagen",
+        "Few-Shot & Zero-Shot Prompt-Optimierung",
+        "Strukturierte JSON/XML-Ausgabe-Guardrails",
+        "Automatisierte Prompt-Evaluation mit PromptFoo",
+        "Monitoring von Latenzen & Kosten in LangSmith",
+        "Schutz vor Prompt-Injection & Sicherheits-Hacks",
+        "Produktionsbereite dynamische Prompt-Pipelines"
+      ],
+      "benefits": [
+        "Konsistente, strukturierte Ausgaben von LLMs garantieren",
+        "Token-Verbrauch und Kosten um bis zu 40% reduzieren",
+        "Prompt-Injection und Jailbreak-Sicherheitslücken verhindern",
+        "Prompt-Änderungen gefahrlos in Sandboxen testen",
+        "KI-Leistung ohne teures Modelltraining optimieren",
+        "Strikte Einhaltung der Marken-Compliance sichern"
+      ],
+      "metaTitle": "Prompt-Engineering Services | KI-Optimierung | PakSoft",
+      "metaDescription": "Maximieren Sie die Qualität von LLM-Antworten. Wir entwickeln sichere, optimierte Prompt-Templates mit Chain-of-Thought, Few-Shot-Tuning und Guardrails.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Use-Case-Analyse",
+            "description": "Wir analysieren Ihre KI-Ziele, genutzten Modelle und Zielformate (z. B. JSON, CSV), um Prompt-Anforderungen zu definieren."
+          },
+          {
+            "step": 2,
+            "title": "System-Prompt-Design",
+            "description": "Wir entwerfen Systemanweisungen und Verhaltensregeln, um das Modell abzusichern und Ihre Tonalität zu wahren."
+          },
+          {
+            "step": 3,
+            "title": "Optimierung & Tuning",
+            "description": "Wir implementieren Chain-of-Thought-Vorlagen, Few-Shot-Beispiele und cache-optimierte Prompts, um Kosten zu senken."
+          },
+          {
+            "step": 4,
+            "title": "Guardrails-Setup",
+            "description": "Wir integrieren Bibliotheken wie Guardrails AI oder NeMo Guardrails, um unpassende Ausgaben oder Angriffe abzufangen."
+          },
+          {
+            "step": 5,
+            "title": "Evaluierung & Testing",
+            "description": "Wir bauen automatisierte Test-Suiten in PromptFoo auf, um die Verlässlichkeit über Hunderte Szenarien zu prüfen."
+          },
+          {
+            "step": 6,
+            "title": "Monitoring & Feinjustierung",
+            "description": "Wir überwachen die Prompts live in LangSmith und nutzen Analysen, um Leistung und Kosten kontinuierlich zu optimieren."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Was ist Prompt-Engineering?",
+            "answer": "Prompt-Engineering bezeichnet das gezielte Entwerfen, Strukturieren und Optimieren von Eingabeanweisungen (Prompts), damit große Sprachmodelle präzise, verlässliche und richtig formatierte Ausgaben liefern."
+          },
+          {
+            "question": "Warum reichen einfache Prompts in Anwendungen nicht aus?",
+            "answer": "Einfache Prompts führen in der Produktion oft zu Halluzinationen, fehlerhaften Formaten oder unpassenden Antworten. Prompt-Engineering sorgt für Stabilität und fängt Fehler ab."
+          },
+          {
+            "question": "Was versteht man unter Chain-of-Thought Prompting?",
+            "answer": "Dabei wird das LLM angewiesen, seine logischen Zwischenschritte schriftlich darzulegen, bevor die endgültige Antwort ausgegeben wird. Das erhöht die Genauigkeit bei komplexen Aufgaben deutlich."
+          },
+          {
+            "question": "Wie schützen Sie Systeme vor Prompt-Injection?",
+            "answer": "Wir nutzen Filter für Benutzereingaben, trennen Anweisungen strikt von den Eingaben im System-Prompt und etablieren Guardrails zur Überprüfung der Ausgaben."
+          },
+          {
+            "question": "Wie werden Prompt-Änderungen vor dem Launch getestet?",
+            "answer": "Wir nutzen Tools wie PromptFoo für automatisierte Vergleichstests über Hunderte Fälle, um sicherzustellen, dass neue Prompts keine Verschlechterungen (Regresssions) verursachen."
+          },
+          {
+            "question": "Kann Prompt-Engineering die API-Kosten senken?",
+            "answer": "Ja, wir optimieren die Länge der Prompts, nutzen Caching-Möglichkeiten der APIs und implementieren semantisches Caching, um redundante Abfragen zu vermeiden."
+          },
+          {
+            "question": "Welche LLMs unterstützen Sie?",
+            "answer": "Wir unterstützen alle großen Modelle wie OpenAI GPT-4, Anthropic Claude 3, Google Gemini sowie Open-Source-Modelle wie Llama 3 und Mistral, wobei wir Prompts gezielt auf die Stärken des jeweiligen Modells abstimmen."
+          },
+          {
+            "question": "Was sind Output Guardrails?",
+            "answer": "Das sind Validierungsfilter (z. B. mit Guardrails AI), die Modellantworten vor der Auslieferung prüfen, um z. B. gültiges JSON, Faktenkonsistenz und inhaltliche Sicherheit zu garantieren."
+          }
+        ],
+        "technologies": [
+          { "name": "OpenAI API", "icon": "openai" },
+          { "name": "Anthropic Claude", "icon": "anthropic" },
+          { "name": "LangChain", "icon": "langchain" },
+          { "name": "PromptFoo", "icon": "promptfoo" },
+          { "name": "LangSmith", "icon": "langsmith" },
+          { "name": "Guardrails AI", "icon": "guardrails" },
+          { "name": "Python", "icon": "python" },
+          { "name": "LlamaIndex", "icon": "llamaindex" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "پرامپٹ انجینئرنگ",
+      "shortDescription": "پرامپٹ سسٹمز کی مدد سے ایل ایل ایمز (LLMs) کی آؤٹ پٹ کو بہتر بنائیں۔ ہم منظم ٹیمپلیٹس، ٹیسٹنگ اور آؤٹ پٹ سیکیورٹی کا نظام بناتے ہیں۔",
+      "fullDescription": "پروڈکشن ایپلی کیشنز میں عام پرامپٹس اکثر غیر متوقع، غلط فارمیٹ یا غیر مناسب جوابات کا سبب بنتے ہیں۔ ہم ماہر پرامپٹ انجینئرنگ سروسز فراہم کرتے ہیں تاکہ ایسے پرامپٹ سسٹمز ڈیزائن اور تیار کیے جائیں جو مستقل اور منظم جوابات (جیسے JSON یا XML) کو یقینی بنائیں۔ Chain-of-Thought، few-shot prompting اور zero-shot reasoning جیسی جدید تکنیکوں کا استعمال کرتے ہوئے ہم ٹوکنز کی لاگت کم رکھتے ہوئے ماڈل کی کارکردگی بڑھاتے ہیں۔ ہم سیکیورٹی کے لیے Guardrails AI کو مربوط کرتے ہیں اور PromptFoo اور LangSmith کے ذریعے خودکار ٹیسٹنگ پائپ لائنز بناتے ہیں تاکہ تمام حالات میں ماڈل کی کارکردگی مستحکم رہے۔",
+      "features": [
+        "پرامپٹ سسٹم آرکیٹیکچر ڈیزائن",
+        "Chain-of-Thought استدلال ٹیمپلیٹس",
+        "Few-Shot اور Zero-Shot کارکردگی کی اصلاح",
+        "منظم JSON/XML آؤٹ پٹ سیکیورٹی گارڈز",
+        "PromptFoo کے ذریعے خودکار پرامپٹ ٹیسٹنگ",
+        "LangSmith میں کارکردگی اور لاگت کی نگرانی",
+        "پرامپٹ انجیکشن اور ہیکنگ سے تحفظ",
+        "پروڈکشن کے لیے متحرک پرامپٹ پائپ لائنز"
+      ],
+      "benefits": [
+        "ایل ایل ایم سے مستقل اور منظم جوابات حاصل کریں",
+        "ٹوکن استعمال کرنے کے اخراجات میں 40 فیصد تک بچت کریں",
+        "پرامپٹ انجیکشن اور سیکیورٹی حملوں کو روکیں",
+        "پرامپٹ میں تبدیلیوں کو لائیو کرنے سے پہلے ٹیسٹ کریں",
+        "مہنگے ماڈل ٹریننگ کے بغیر کارکردگی بہتر بنائیں",
+        "کمپنی کی پالیسی کے مطابق جوابات کو یقینی بنائیں"
+      ],
+      "metaTitle": "پرامپٹ انجینئرنگ سروسز | اے آئی اصلاح | PakSoft",
+      "metaDescription": "ایل ایل ایمز کی آؤٹ پٹ کو بہتر بنائیں۔ ہم Chain-of-Thought، اور سیکیورٹی قوانین کے ساتھ پرامپٹ شبیہہ ڈیزائن کرتے ہیں۔ معلومات حاصل کریں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "ضروریات کا جائزہ",
+            "description": "ہم پرامپٹ کی ضروریات کو طے کرنے کے لیے آپ کے اہداف، منتخب کردہ ماڈل اور مطلوبہ آؤٹ پٹ فارمیٹس کا جائزہ لیتے ہیں۔"
+          },
+          {
+            "step": 2,
+            "title": "سسٹم پرامپٹ ڈیزائن",
+            "description": "ہم بنیادی سسٹم ہدایات لکھتے ہیں تاکہ ماڈل کے رویے کو کنٹرول کیا جا سکے اور وہ برانڈ کے لہجے میں بات کرے۔"
+          },
+          {
+            "step": 3,
+            "title": "رفتار اور لاگت کی اصلاح",
+            "description": "ہم ٹوکنز کا خرچ اور پروسیسنگ وقت کم کرنے کے لیے Chain-of-Thought اور کیشنگ فرینڈلی پرامپٹس بناتے ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "سیکیورٹی گارڈز کی تنصیب",
+            "description": "ہم Guardrails AI جیسی لائبریریاں مربوط کرتے ہیں تاکہ ہیکنگ اور غیر مناسب جوابات کو روکا جا سکے۔"
+          },
+          {
+            "step": 5,
+            "title": "خودکار ٹیسٹنگ",
+            "description": "ہم PromptFoo کے اندر خودکار ٹیسٹ اسکرپٹس چلاتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ جوابات ہر حال میں درست ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "مانیٹرنگ اور فائن ٹیوننگ",
+            "description": "ہم LangSmith کے ذریعے لائیو پرامپٹ لاگز کو مانیٹر کرتے ہیں اور لاگت اور کارکردگی کو مزید بہتر بناتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "پرامپٹ انجینئرنگ کیا ہے؟",
+            "answer": "پرامپٹ انجینئرنگ بڑے زبان کے ماڈلز (LLMs) سے درست، قابل بھروسہ اور مطلوبہ فارمیٹ میں جواب حاصل کرنے کے لیے ان پٹ (پرامپٹس) کو ڈیزائن اور بہتر بنانے کا عمل ہے۔"
+          },
+          {
+            "question": "ہم خود عام پرامپٹ کیوں نہیں لکھ سکتے؟",
+            "answer": "عام پرامپٹس اکثر غلط معلومات، غیر مستقل فارمیٹ یا غلط لہجے کا سبب بنتے ہیں۔ پرامپٹ انجینئرنگ ایسے منظم سسٹمز بناتی ہے جو تمام حالات کو سنبھال سکتے ہیں۔"
+          },
+          {
+            "question": "Chain-of-Thought پرامپٹنگ کیا ہے؟",
+            "answer": "یہ ماڈل کو ہدایت دیتی ہے کہ وہ جواب دینے سے پہلے اپنے سوچنے کا عمل قدم بہ قدم لکھے۔ اس سے منطقی اور ریاضیاتی سوالات کے نتائج بہت بہتر ہوتے ہیں۔"
+          },
+          {
+            "question": "آپ پرامپٹ انجیکشن حملوں سے کیسے بچاتے ہیں؟",
+            "answer": "ہم ان پٹ فلٹرز بناتے ہیں، صارف کے سوالات کو ماڈل کے بنیادی قوانین سے الگ رکھتے ہیں اور آؤٹ پٹ کو چیک کرنے کے لیے سیکیورٹی گارڈز لگاتے ہیں۔"
+          },
+          {
+            "question": "آپ پرامپٹ تبدیل کرنے سے پہلے اس کی جانچ کیسے کرتے ہیں؟",
+            "answer": "ہم PromptFoo جیسے ٹولز استعمال کرتے ہیں جو نئے پرامپٹ کے جوابات کا پرانے پرامپٹ کے ساتھ موازنہ کر کے کارکردگی کا فرق واضح کرتے ہیں۔"
+          },
+          {
+            "question": "کیا پرامپٹ انجینئرنگ سے لاگت کم ہو سکتی ہے؟",
+            "answer": "جی ہاں، ہم پرامپٹس کو مختصر بناتے ہیں، غیر ضروری باتیں نکالتے ہیں اور کیشنگ کا نظام نافذ کرتے ہیں تاکہ بار بار ایک ہی سوال پر ایل ایل ایم کو کیوری نہ بھیجنی پڑے۔"
+          },
+          {
+            "question": "آپ کن ماڈلز کو سپورٹ کرتے ہیں؟",
+            "answer": "ہم تمام بڑے ماڈلز بشمول OpenAI GPT-4، Anthropic Claude 3، Google Gemini، اور اوپن سورس Llama 3 اور Mistral کو سپورٹ کرتے ہیں اور پرامپٹ ڈیزائن کرتے ہیں۔"
+          },
+          {
+            "question": "آؤٹ پٹ گارڈز (output guardrails) کیا ہیں؟",
+            "answer": "یہ ایسے سیکیورٹی فلٹرز ہیں (جیسے Guardrails AI) جو ماڈل کے جواب کو چیک کرتے ہیں کہ وہ درست JSON ہے یا نہیں اور اس میں کوئی غلط معلومات شامل تو نہیں ہیں۔"
+          }
+        ],
+        "technologies": [
+          { "name": "OpenAI API", "icon": "openai" },
+          { "name": "Anthropic Claude", "icon": "anthropic" },
+          { "name": "LangChain", "icon": "langchain" },
+          { "name": "PromptFoo", "icon": "promptfoo" },
+          { "name": "LangSmith", "icon": "langsmith" },
+          { "name": "Guardrails AI", "icon": "guardrails" },
+          { "name": "Python", "icon": "python" },
+          { "name": "LlamaIndex", "icon": "llamaindex" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "هندسة المطالبات",
+      "shortDescription": "عظم جودة مخرجات النماذج اللغوية الكبيرة مع أنظمة المطالبات المخصصة. نبني مسارات مطالبات منظمة ومحسنة مع التقييم وحواجز الأمان.",
+      "fullDescription": "غالباً ما تؤدي المطالبات الكلاسيكية البسيطة إلى مخرجات غير متوقعة أو غير متوافقة مع العلامة التجارية في التطبيقات الفعلية. نحن نقدم خدمات هندسة المطالبات الاحترافية لتصميم وبناء وتحسين أنظمة المطالبات التي تضمن الحصول على مخرجات تفاعلية منظمة (مثل JSON أو XML) بثبات وموثوقية. باستخدام تقنيات متقدمة مثل سلسلة الأفكار (Chain-of-Thought)، والمطالبات بالأمثلة (few-shot)، نستخلص أفضل أداء من النماذج للمهام المتخصصة مع خفض تكاليف الرموز. ندمج مكتبات التحقق مثل Guardrails AI وننشئ مسارات اختبار مؤتمتة باستخدام PromptFoo و LangSmith لضمان الموثوقية.",
+      "features": [
+        "تصميم وبنية أنظمة المطالبات المتكاملة",
+        "قوالب التفكير وسلسلة الأفكار (Chain-of-Thought)",
+        "تحسين المطالبات بالأمثلة والمطالبات الفورية",
+        "حواجز أمان للمخرجات المنظمة JSON/XML",
+        "تقييم تلقائي للمطالبات باستخدام PromptFoo",
+        "تتبع التكاليف وزمن الاستجابة في LangSmith",
+        "الحماية من هجمات حقن المطالبات واختراقها",
+        "مسارات مطالبات ديناميكية جاهزة للإنتاج"
+      ],
+      "benefits": [
+        "ضمان الحصول على مخرجات منظمة ومتسقة من النماذج اللغوية",
+        "تقليل تكاليف استهلاك الرموز (tokens) بنسبة تصل إلى 40٪",
+        "منع ثغرات حقن المطالبات ومحاولات كسر الحماية (jailbreak)",
+        "تجربة واختبار تغييرات المطالبات بأمان في بيئة تجريبية",
+        "تحسين أداء الذكاء الاصطناعي دون الحاجة لتدريب النماذج المكلف",
+        "الحفاظ على توافق صارم مع هوية العلامة التجارية في جميع المخرجات"
+      ],
+      "metaTitle": "خدمات هندسة المطالبات | تحسين الذكاء الاصطناعي | PakSoft",
+      "metaDescription": "عظم جودة مخرجات نماذج اللغة. نصمم قوالب مطالبات آمنة ومحسنة مع سلسلة الأفكار، والضبط بالأمثلة، وحواجز الأمان الصارمة. اعرف المزيد.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "اكتشاف متطلبات الاستخدام",
+            "description": "نحلل أهداف الذكاء الاصطناعي لديك، والنماذج المستخدمة، ومخططات المخرجات المطلوبة (مثل JSON أو CSV) لتحديد متطلبات المطالبة."
+          },
+          {
+            "step": 2,
+            "title": "تصميم مطالبات النظام",
+            "description": "نصيغ تعليمات النظام الأساسية ونقوم بتكوين إرشادات للتحكم بسلوك النموذج ومطابقة النبرة المستهدفة."
+          },
+          {
+            "step": 3,
+            "title": "التحسين والضبط الدقيق",
+            "description": "نطبق قوالب سلسلة الأفكار، وأمثلة few-shot، وترتيب المطالبات الملائم للتخزين المؤقت لتقليل التكاليف وزمن الاستجابة."
+          },
+          {
+            "step": 4,
+            "title": "إعداد حواجز الأمان",
+            "description": "ندمج مكتبات مثل Guardrails AI أو NeMo Guardrails لتعقب وحظر المخرجات غير اللائقة أو محاولات كسر الأمان."
+          },
+          {
+            "step": 5,
+            "title": "التقييم والاختبار التلقائي",
+            "description": "نبني مجموعات اختبار مؤتمتة في PromptFoo، وننفذ آلاف السيناريوهات للتأكد من موثوقية المخرجات وثباتها."
+          },
+          {
+            "step": 6,
+            "title": "المراقبة والضبط المستمر",
+            "description": "نراقب سجلات المطالبات الحية في LangSmith، ونستخدم التحليلات لتحسين وتعديل المطالبات باستمرار للأداء والتكلفة."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما هي هندسة المطالبات؟",
+            "answer": "هندسة المطالبات هي ممارسة تصميم وبناء وتحسين المدخلات (المطالبات) لضمان إنتاج نماذج اللغة الكبيرة لمخرجات دقيقة وموثوقة ومنسقة بشكل صحيح."
+          },
+          {
+            "question": "لماذا لا يمكننا كتابة مطالبات بسيطة فقط؟",
+            "answer": "تؤدي المطالبات البسيطة غالباً إلى حدوث الهلوسة، أو تنسيقات غير متسقة، أو استجابات غير متوافقة مع العلامة. تبني هندسة المطالبات أنظمة منظمة تتعامل مع الحالات الطرفية."
+          },
+          {
+            "question": "ما هي مطالبات سلسلة الأفكار (Chain-of-Thought)؟",
+            "answer": "توجه مطالبات سلسلة الأفكار النموذج لكتابة خطوات تفكيره المنطقي بالتفصيل قبل صياغة الإجابة النهائية، مما يحسن الدقة بشكل كبير في المهام الرياضية أو المنطقية."
+          },
+          {
+            "question": "كيف تحمي النظام من هجمات حقن المطالبات؟",
+            "answer": "نضع طبقات لتنظيف المدخلات، ونحدد تعليمات نظام صارمة تفصل مدخلات المستخدم عن قواعد النظام، ونطبق حواجز مخرجات لفحص تسرب التعليمات."
+          },
+          {
+            "question": "كيف تختبر تغييرات المطالبة قبل الإطلاق الفعلي؟",
+            "answer": "نستخدم أدوات مثل PromptFoo لتشغيل اختبارات تلقائية عبر مئات الحالات، ومقارنة مخرجات المطالبة الجديدة بالنتائج السابقة لمنع أي تراجع في الأداء."
+          },
+          {
+            "question": "هل يمكن لهندسة المطالبات تقليل تكاليف رموز API؟",
+            "answer": "نعم، نقوم بصياغة مطالبات موجزة، وإزالة التعليمات المتكررة، واستخدام التخزين المؤقت للمطالبات، والتخزين المؤقت الدلالي لتجنب الاستعلام المتكرر للأسئلة المتطابقة."
+          },
+          {
+            "question": "ما هي النماذج اللغوية التي تدعمونها؟",
+            "answer": "ندعم جميع النماذج الرئيسية بما في ذلك OpenAI GPT-4 و Anthropic Claude 3 و Google Gemini والنماذج مفتوحة المصدر مثل Llama 3 و Mistral، مع ضبط المطالبات وفقاً لنقاط قوة كل نموذج."
+          },
+          {
+            "question": "ما هي حواجز حماية المخرجات (Output Guardrails)؟",
+            "answer": "حواجز حماية المخرجات هي طبقات تحقق (باستخدام أدوات مثل Guardrails AI) تفحص مخرجات النموذج للتأكد من أنها بتنسيق JSON صالح، وخالية من المحتوى غير اللائق، ودقيقة حقائقياً."
+          }
+        ],
+        "technologies": [
+          { "name": "OpenAI API", "icon": "openai" },
+          { "name": "Anthropic Claude", "icon": "anthropic" },
+          { "name": "LangChain", "icon": "langchain" },
+          { "name": "PromptFoo", "icon": "promptfoo" },
+          { "name": "LangSmith", "icon": "langsmith" },
+          { "name": "Guardrails AI", "icon": "guardrails" },
+          { "name": "Python", "icon": "python" },
+          { "name": "LlamaIndex", "icon": "llamaindex" }
+        ]
+      }
+    }
+  },
+  "rag-solutions": {
+    "en": {
+      "name": "RAG Solutions",
+      "shortDescription": "Build AI assistants that answer accurately using your internal data. We construct custom Retrieval-Augmented Generation solutions with citation tracking and semantic search.",
+      "fullDescription": "Large language models are powerful but prone to hallucinating facts when answering company-specific questions. We build custom Retrieval-Augmented Generation (RAG) solutions that connect LLMs to your private data sources, ensuring answers are 100% accurate and fully cited. By integrating vector databases like Pinecone, Weaviate, or Chroma with frameworks like LangChain and LlamaIndex, we build pipelines that automatically ingest, parse, chunk, and index corporate documents. Our hybrid search setups combine keyword matching with semantic vector search to fetch the most relevant contexts in milliseconds. We integrate strict metadata tracking to display clickable source citations for every answer, giving users total confidence in the output.",
+      "features": [
+        "Document Ingestion & Chunking Pipelines",
+        "Vector Database Setup (Pinecone, Weaviate)",
+        "Semantic Vector and Keyword Hybrid Search",
+        "Automated Source Citation & Page Tracking",
+        "Secure Multi-Source Knowledge Connections",
+        "Advanced Query Rewriting & Expansion",
+        "Strict Access Permissions and Data Privacy",
+        "Automatic Real-Time Database Index Sync"
+      ],
+      "benefits": [
+        "Eliminate AI hallucinations by grounding responses in data",
+        "Ensure answers are verified with clickable citations",
+        "Index millions of pages for millisecond search speed",
+        "Protect data privacy with role-based retrieval filters",
+        "Keep knowledge bases synced with storage directories",
+        "Connect Slack, Google Drive, and databases to AI"
+      ],
+      "metaTitle": "Custom RAG Solutions | Retrieval-Augmented Gen | PakSoft",
+      "metaDescription": "Build secure AI systems that answer questions using your own data. We design custom RAG pipelines with Weaviate and LangChain. Get a quote.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Data Sources Audit",
+            "description": "We review your company's data sources, formats, and API connections to plan the ingestion workflow."
+          },
+          {
+            "step": 2,
+            "title": "Ingestion & Processing Setup",
+            "description": "We configure secure extractors to read, clean, and split files (PDF, DOCX, CSV) into semantic chunks."
+          },
+          {
+            "step": 3,
+            "title": "Vector Ingest & Index",
+            "description": "We convert document chunks into high-quality vector embeddings and index them inside Pinecone or Weaviate."
+          },
+          {
+            "step": 4,
+            "title": "Hybrid Search Setup",
+            "description": "We implement hybrid search algorithms, combining BM25 keyword matching with dense vector retrieval for high relevance."
+          },
+          {
+            "step": 5,
+            "title": "Context Synthesis & LLM Setup",
+            "description": "We configure LangChain prompt templates to pass retrieved contexts to a secure LLM, showing clear citations."
+          },
+          {
+            "step": 6,
+            "title": "Evaluation & Sync Setup",
+            "description": "We run RAGAS evaluation tests to verify response truthfulness and set up cron jobs to sync updated files."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is RAG (Retrieval-Augmented Generation)?",
+            "answer": "RAG is a technique that retrieves relevant context from your company's private documents and feeds it to an LLM, ensuring the model answers based on factual data rather than generic public knowledge."
+          },
+          {
+            "question": "How do you guarantee that the AI won't hallucinate?",
+            "answer": "We enforce strict system prompt guardrails. If the retrieved context does not contain the answer, the AI is instructed to reply that it cannot find the information, preventing false claims."
+          },
+          {
+            "question": "What vector databases do you support?",
+            "answer": "We deploy solutions on Pinecone for managed cloud setups, Weaviate for hybrid enterprise environments, and Pgvector (PostgreSQL) or Chroma for local, lightweight deployments."
+          },
+          {
+            "question": "Can it index documents stored in Google Drive or SharePoint?",
+            "answer": "Yes, we build automated connector pipelines that pull documents from Google Drive, SharePoint, Notion, Confluence, and corporate databases securely."
+          },
+          {
+            "question": "How are source citations displayed?",
+            "answer": "We track document metadata throughout retrieval. Every generated answer includes numbered footnotes linking to the exact document name, page number, and original file link."
+          },
+          {
+            "question": "How do you handle document security and user permissions?",
+            "answer": "We implement retrieval-time filtering. The system checks the user's active permissions group (e.g., via OAuth) and only retrieves context from documents the user is authorized to read."
+          },
+          {
+            "question": "Do you support hybrid search?",
+            "answer": "Yes, we combine sparse keyword search (BM25) with dense semantic vector search. This ensures search queries find both exact matches (like serial numbers) and conceptual matches."
+          },
+          {
+            "question": "How often is the vector index updated?",
+            "answer": "We set up webhook endpoints that listen for document changes in real time, or run incremental synchronization tasks every hour to ensure the search index is always updated."
+          }
+        ],
+        "technologies": [
+          { "name": "Pinecone", "icon": "pinecone" },
+          { "name": "Weaviate", "icon": "weaviate" },
+          { "name": "LangChain", "icon": "langchain" },
+          { "name": "LlamaIndex", "icon": "llamaindex" },
+          { "name": "OpenAI Embeddings", "icon": "openai" },
+          { "name": "Chroma DB", "icon": "chroma" },
+          { "name": "Python", "icon": "python" },
+          { "name": "PostgreSQL", "icon": "postgresql" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "RAG Çözümleri",
+      "shortDescription": "Kendi verilerinizi kullanarak doğru yanıtlar veren yapay zeka asistanları oluşturun. Atıf takibi ve anlamsal arama içeren özel RAG (Retrieval-Augmented Generation) çözümleri kuruyoruz.",
+      "fullDescription": "Büyük dil modelleri güçlüdür ancak şirkete özel soruları yanıtlarken gerçekleri uydurmaya (halüsinasyon) eğilimlidirler. LLM'leri özel veri kaynaklarınıza bağlayan, yanıtların %100 doğru ve kaynak atıflı olmasını sağlayan özel RAG (Retrieval-Augmented Generation) çözümleri oluşturuyoruz. Pinecone, Weaviate veya Chroma gibi vektör veritabanlarını LangChain ve LlamaIndex gibi çerçevelerle entegre ederek kurumsal belgeleri otomatik olarak alan, ayrıştıran, bölümlere ayıran ve indeksleyen veri hatları kuruyoruz. Hibrit arama sistemlerimiz, en alakalı bağlamları milisaniyeler içinde getirmek için anahtar kelime eşleştirmesini anlamsal vektör aramasıyla birleştirir. Her yanıt için tıklanabilir kaynak atıfları göstermek amacıyla katı meta veri takibi entegre ederek kullanıcıların çıktılara tam güven duymasını sağlıyoruz.",
+      "features": [
+        "Belge Alımı ve Bölümleme Veri Hatları",
+        "Vektör Veritabanı Kurulumu (Pinecone, Weaviate)",
+        "Anlamsal Vektör ve Anahtar Kelime Hibrit Araması",
+        "Otomatik Kaynak Atıf ve Sayfa Takibi",
+        "Güvenli Çok Kaynaklı Bilgi Bağlantıları",
+        "Gelişmiş Sorgu Yeniden Yazma ve Genişletme",
+        "Katı Erişim İzinleri ve Veri Gizliliği",
+        "Otomatik Real-Time Veri Dizini Senkronizasyonu"
+      ],
+      "benefits": [
+        "Yanıtları verilere dayandırarak yapay zeka halüsinasyonlarını ortadan kaldırın",
+        "Yanıtların tıklanabilir atıflarla doğrulandığından emin olun",
+        "Milisaniye düzeyinde arama hızı için milyonlarca sayfayı indeksleyin",
+        "Rol tabanlı erişim filtreleriyle veri gizliliğini koruyun",
+        "Bilgi bankalarını depolama dizinleriyle senkronize tutun",
+        "Slack, Google Drive ve veritabanlarını yapay zekaya bağlayın"
+      ],
+      "metaTitle": "Özel RAG Çözümleri | Retrieval-Augmented Gen | PakSoft",
+      "metaDescription": "Kendi verilerinizi kullanarak soruları yanıtlayan güvenli yapay zeka sistemleri kurun. Weaviate ve LangChain ile özel RAG hatları tasarlıyoruz. Teklif alın.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Veri Kaynakları Denetimi",
+            "description": "Veri alımı iş akışını planlamak için şirketinizin veri kaynaklarını, formatlarını ve API bağlantılarını inceliyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Veri Alımı & İşleme Kurulumu",
+            "description": "Dosyaları (PDF, DOCX, CSV) okumak, temizlemek ve anlamsal bölümlere ayırmak için güvenli çıkarıcılar yapılandırıyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Vektör Alımı & İndeksleme",
+            "description": "Belge bölümlerini yüksek kaliteli vektör gömmelerine dönüştürüyor ve bunları Pinecone veya Weaviate içinde indeksliyoruz."
+          },
+          {
+            "step": 4,
+            "title": "Hibrit Arama Kurulumu",
+            "description": "Yüksek alaka düzeyi elde etmek amacıyla BM25 anahtar kelime eşleştirmesini yoğun vektör getirmeyle birleştiren hibrit arama algoritmaları uyguluyoruz."
+          },
+          {
+            "step": 5,
+            "title": "Bağlam Sentezi & LLM Kurulumu",
+            "description": "Getirilen bağlamları güvenli bir LLM'ye iletmek ve net atıflar göstermek için LangChain prompt şablonlarını yapılandırıyoruz."
+          },
+          {
+            "step": 6,
+            "title": "Değerlendirme & Eşitleme Kurulumu",
+            "description": "Yanıtlardaki doğruluğu teyit etmek için RAGAS değerlendirme testleri yapıyor ve güncellenen dosyaları eşitlemek için zamanlanmış görevler kuruyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "RAG (Retrieval-Augmented Generation) nedir?",
+            "answer": "RAG, şirketinizin özel belgelerinden ilgili bağlamı alan ve bunu bir LLM'ye besleyen bir tekniktir; modelin genel genel bilgilere güvenmek yerine gerçek verilere dayanarak yanıt vermesini sağlar."
+          },
+          {
+            "question": "Yapay zekanın halüsinasyon görmeyeceğini nasıl garanti ediyorsunuz?",
+            "answer": "Katı sistem promptu kuralları uyguluyoruz. Getirilen bağlam cevabı içermiyorsa, yapay zekaya bilgiyi bulamadığını yanıtlaması talimatı verilir, böylece yanlış iddialar önlenir."
+          },
+          {
+            "question": "Hangi vektör veritabanlarını destekliyorsunuz?",
+            "answer": "Yönetilen bulut kurulumları için Pinecone, hibrit kurumsal ortamlar için Weaviate ve yerel, hafif dağıtımlar için Pgvector (PostgreSQL) veya Chroma çözümleri sunuyoruz."
+          },
+          {
+            "question": "Google Drive veya SharePoint'te depolanan belgeleri indeksleyebilir mi?",
+            "answer": "Evet, belgeleri Google Drive, SharePoint, Notion, Confluence ve kurumsal veritabanlarından güvenli bir şekilde çeken otomatik konnektör hatları oluşturuyoruz."
+          },
+          {
+            "question": "Kaynak atıfları nasıl görüntüleniyor?",
+            "answer": "Geri getirme sırasında belge meta verilerini takip ediyoruz. Üretilen her yanıt, ilgili belge adına, sayfa numarasına ve orijinal dosya bağlantısına bağlanan numaralandırılmış dipnotlar içerir."
+          },
+          {
+            "question": "Belge güvenliğini ve kullanıcı izinlerini nasıl yönetiyorsunuz?",
+            "answer": "Geri getirme sırasında filtreleme uyguluyoruz. Sistem, kullanıcının aktif izinler grubunu (örneğin OAuth aracılığıyla) kontrol eder ve yalnızca kullanıcının okuma yetkisi olan belgelerden bağlam getirir."
+          },
+          {
+            "question": "Hibrit aramayı destekliyor musunuz?",
+            "answer": "Evet, seyrek anahtar kelime aramasını (BM25) yoğun anlamsal vektör aramasıyla birleştiriyoruz. Bu, arama sorgularının hem tam eşleşmeleri (seri numaraları gibi) hem de kavramsal eşleşmeleri bulmasını sağlar."
+          },
+          {
+            "question": "Vektör indeksi ne sıklıkla güncelleniyor?",
+            "answer": "Belge değişikliklerini gerçek zamanlı olarak dinleyen web kancası uç noktaları kuruyoruz veya arama indeksinin her zaman güncel olmasını sağlamak için her saat başı artımlı eşitleme görevleri çalıştırıyoruz."
+          }
+        ],
+        "technologies": [
+          { "name": "Pinecone", "icon": "pinecone" },
+          { "name": "Weaviate", "icon": "weaviate" },
+          { "name": "LangChain", "icon": "langchain" },
+          { "name": "LlamaIndex", "icon": "llamaindex" },
+          { "name": "OpenAI Embeddings", "icon": "openai" },
+          { "name": "Chroma DB", "icon": "chroma" },
+          { "name": "Python", "icon": "python" },
+          { "name": "PostgreSQL", "icon": "postgresql" }
+        ]
+      }
+    },
+    "de": {
+      "name": "RAG-Lösungen",
+      "shortDescription": "Bauen Sie KI-Assistenten auf, die basierend auf Ihren eigenen Daten präzise antworten. Wir entwickeln kundenorientierte RAG-Systeme mit semantischer Suche.",
+      "fullDescription": "Große Sprachmodelle sind leistungsstark, neigen jedoch bei unternehmensspezifischen Fragen zu Halluzinationen. Wir entwickeln RAG-Lösungen (Retrieval-Augmented Generation), die LLMs mit Ihren privaten Datenquellen verbinden. So stellen wir sicher, dass Antworten zu 100% korrekt und belegbar sind. Durch die Einbindung von Vektordatenbanken wie Pinecone, Weaviate oder Chroma in Frameworks wie LangChain und LlamaIndex bauen wir Pipelines zur automatischen Datenaufnahme und -indexierung auf. Unsere hybride Suche kombiniert Schlüsselwort- und Vektorsuchen, um den passenden Kontext in Millisekunden abzurufen. Quellenangaben geben den Benutzern volles Vertrauen in die Antworten.",
+      "features": [
+        "Pipelines zur Datenaufnahme & -segmentierung",
+        "Vektordatenbank-Setup (Pinecone, Weaviate)",
+        "Hybride Suche (semantische Suche + Keyword BM25)",
+        "Automatisierte Quellennachweise & Seitentracking",
+        "Sichere Anbindung verschiedener Datenquellen",
+        "Erweiterte Algorithmen zur Abfrage-Optimierung",
+        "Strikte Zugriffsrechte & Datenschutzfilter",
+        "Automatische Echtzeit-Indexsynchronisation"
+      ],
+      "benefits": [
+        "KI-Halluzinationen durch Verankerung der Antworten in Daten ausschließen",
+        "Nachvollziehbarkeit der Antworten durch anklickbare Zitate sichern",
+        "Millionen Seiten in Millisekundenschnelle durchsuchen",
+        "Datenschutz durch rollenbasierte Abfragefilter wahren",
+        "Datenbestand der Wissensdatenbank stets synchron halten",
+        "Slack, Google Drive und Datenbanken an die KI anbinden"
+      ],
+      "metaTitle": "Maßgeschneiderte RAG-Lösungen | AI Search | PakSoft",
+      "metaDescription": "Bauen Sie sichere KI-Systeme auf, die Fragen anhand Ihrer eigenen Daten beantworten. Wir entwerfen RAG-Pipelines mit Weaviate und LangChain. Angebot anfordern.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Datenquellen-Audit",
+            "description": "Wir analysieren Ihre Datenquellen, Dateiformate und API-Schnittstellen, um den Ingestion-Workflow zu konzipieren."
+          },
+          {
+            "step": 2,
+            "title": "Setup von Ingestion & Verarbeitung",
+            "description": "Wir konfigurieren Konnektoren, um Dateien (PDF, DOCX, CSV) einzulesen, zu bereinigen und in Textabschnitte zu unterteilen."
+          },
+          {
+            "step": 3,
+            "title": "Vektorisierung & Indexierung",
+            "description": "Wir überführen Textabschnitte in Vektor-Embeddings und indexieren diese in Pinecone oder Weaviate."
+          },
+          {
+            "step": 4,
+            "title": "Hybride Suche konfigurieren",
+            "description": "Wir implementieren hybride Suchalgorithmen, die BM25-Schlüsselwortsuche mit Vektor-Abfragen für hohe Relevanz kombinieren."
+          },
+          {
+            "step": 5,
+            "title": "Kontextsynthese & LLM-Setup",
+            "description": "Wir entwerfen LangChain-Prompts zur Übergabe der abgerufenen Kontexte an ein sicheres LLM und formatieren Quellennachweise."
+          },
+          {
+            "step": 6,
+            "title": "Evaluierung & Sync-Setup",
+            "description": "Wir führen RAGAS-Qualitätstests durch, um die Korrektheit der Antworten zu prüfen, und richten automatische Sync-Cron-Jobs ein."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Was ist RAG (Retrieval-Augmented Generation)?",
+            "answer": "RAG ist ein Verfahren, bei dem relevante Textpassagen aus privaten Unternehmensdokumenten abgerufen und an das LLM übergeben werden, damit die Antwort auf Fakten und nicht auf angelerntem Allgemeinwissen basiert."
+          },
+          {
+            "question": "Wie verhindern Sie, dass die KI falsche Antworten erfindet (halluziniert)?",
+            "answer": "Wir konfigurieren strikte Guardrails im System-Prompt. Wenn der abgerufene Kontext die Antwort nicht enthält, teilt die KI dem Benutzer dies mit, statt Fakten zu erfinden."
+          },
+          {
+            "question": "Welche Vektordatenbanken unterstützen Sie?",
+            "answer": "Wir nutzen Pinecone für cloudbasierte Lösungen, Weaviate für hybride Unternehmensumgebungen sowie Pgvector (PostgreSQL) oder Chroma für lokale, schlanke Installationen."
+          },
+          {
+            "question": "Können Dokumente aus Google Drive oder SharePoint eingebunden werden?",
+            "answer": "Ja, wir entwickeln automatisierte Konnektoren, die Dokumente aus Google Drive, SharePoint, Notion, Confluence und Ihren internen Datenbanken sicher synchronisieren."
+          },
+          {
+            "question": "Wie werden die Quellennachweise angezeigt?",
+            "answer": "Wir protokollieren die Metadaten während des Abrufs. Jede generierte Antwort enthält Fußnoten, die direkt auf den Dokumentennamen, die Seitenzahl und den Original-Link verweisen."
+          },
+          {
+            "question": "Wie wird der Datenschutz bei der Dokumentensuche gewahrt?",
+            "answer": "Wir filtern die Vektorsuche zur Laufzeit. Das System gleicht die Benutzerrechte (z. B. via OAuth) ab und ruft nur Kontexte aus Dokumenten ab, für die der Benutzer leseberechtigt ist."
+          },
+          {
+            "question": "Unterstützen Sie hybride Suchen?",
+            "answer": "Ja, wir kombinieren die klassische Keyword-Suche (BM25) mit semantischer Vektorsuche. So werden sowohl exakte Begriffe (wie Seriennummern) als auch thematische Übereinstimmungen gefunden."
+          },
+          {
+            "question": "Wie oft wird der Vektorindex aktualisiert?",
+            "answer": "Wir richten Webhooks ein, die bei Änderungen an Dokumenten sofort reagieren, oder konfigurieren stündliche Synchronisationsjobs, um den Suchindex aktuell zu halten."
+          }
+        ],
+        "technologies": [
+          { "name": "Pinecone", "icon": "pinecone" },
+          { "name": "Weaviate", "icon": "weaviate" },
+          { "name": "LangChain", "icon": "langchain" },
+          { "name": "LlamaIndex", "icon": "llamaindex" },
+          { "name": "OpenAI Embeddings", "icon": "openai" },
+          { "name": "Chroma DB", "icon": "chroma" },
+          { "name": "Python", "icon": "python" },
+          { "name": "PostgreSQL", "icon": "postgresql" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "RAG سلوشنز (RAG Solutions)",
+      "shortDescription": "اپنے کاروباری ڈیٹا کو استعمال کر کے جوابات دینے والے اے آئی اسسٹنٹس بنائیں۔ ہم حوالہ جات اور سمانٹک سرچ کے ساتھ RAG سسٹمز بناتے ہیں۔",
+      "fullDescription": "بڑے زبان کے ماڈلز طاقتور تو ہیں لیکن کمپنی کے نجی سوالات پر غلط معلومات (hallucinations) دینے کی طرف مائل رہتے ہیں۔ ہم کسٹم Retrieval-Augmented Generation (RAG) کے سلوشنز بناتے ہیں جو LLMs کو آپ کے نجی ڈیٹا سے جوڑتے ہیں، جس سے سو فیصد درست اور حوالہ جات کے ساتھ جواب حاصل ہوتا ہے۔ Pinecone، Weaviate، یا Chroma جیسے ویکٹر ڈیٹا بیسز کو LangChain اور LlamaIndex کے ساتھ مربوط کر کے ہم ایسی خودکار پائپ لائنز بناتے ہیں جو کمپنی کی فائلوں کو سنکرونائز اور انڈیکس کرتی ہیں۔ ہمارا ہائبرڈ سرچ سسٹم سمانٹک سرچ اور کی ورڈ سرچ کو یکجا کر کے ملی سیکنڈز میں جواب لاتا ہے۔ ہر جواب کے نیچے فائل کا نام اور صفحہ نمبر بطور حوالہ دکھایا جاتا ہے۔",
+      "features": [
+        "دستاویزات کو اکٹھا اور اسکین کرنے کی پائپ لائنز",
+        "ویکٹر ڈیٹا بیس سیٹ اپ (Pinecone, Weaviate)",
+        "سمانٹک ویکٹر اور کی ورڈ ہائبرڈ سرچ",
+        "خودکار ذرائع کے حوالہ جات اور پیج ٹریکنگ",
+        "محفوظ ملٹی سورس نالج کنکشنز",
+        "جدید کیوری ری رائٹنگ اور توسیع",
+        "سخت رسائی کنٹرول اور ڈیٹا پرائیویسی",
+        "ریئل ٹائم ڈیٹا بیس انڈیکس سنکرونائزیشن"
+      ],
+      "benefits": [
+        "نجی ڈیٹا کا استعمال کر کے اے آئی کی غلط بیانی کو مکمل طور پر ختم کریں",
+        "کلک کرنے کے قابل حوالہ جات کے ساتھ جوابات کی تصدیق کریں",
+        "ملی سیکنڈز کی رفتار پر لاکھوں صفحات کی سرچ کو فعال کریں",
+        "صارف کی اجازتوں کے مطابق سرچ کے نتائج کو فلٹر کریں",
+        "نالج بیس کو کمپنی کے ڈیٹا فولڈرز سے اپ ٹو ڈیٹ رکھیں",
+        "سلیک، گوگل ڈرائیو اور ڈیٹا بیسز کو اے آئی سے جوڑیں"
+      ],
+      "metaTitle": "کسٹم RAG سلوشنز | اے آئی سرچ سسٹمز | PakSoft",
+      "metaDescription": "محفوظ اے آئی سسٹمز بنائیں جو آپ کے اپنے ڈیٹا سے سوالات کے جوابات دیں۔ ہم Weaviate اور LangChain کے ذریعے RAG پائپ لائنز بناتے ہیں۔ رابطہ کریں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "ڈیٹا ذرائع کا آڈٹ",
+            "description": "ہم فائل فارمیٹس اور APIs کا جائزہ لیتے ہیں تاکہ ڈیٹا اکٹھا کرنے کا فلو ڈیزائن کیا جا سکے۔"
+          },
+          {
+            "step": 2,
+            "title": "پروسیسنگ اور صفائی",
+            "description": "ہم فائلوں (PDF, DOCX) کو پڑھنے، صاف کرنے اور ان کے متنی ٹکڑے کرنے کے لیے ایکسٹریکٹرز سیٹ اپ کرتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "ویکٹر انڈیکسنگ",
+            "description": "ہم متنی ٹکڑوں کو ایمبیڈنگز میں تبدیل کرتے ہیں اور انہیں Pinecone یا Weaviate میں انڈیکس کرتے ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "ہائبرڈ سرچ کی تشکیل",
+            "description": "ہم BM25 کی ورڈ سرچ اور ویکٹر سرچ کو یکجا کرتے ہیں تاکہ انتہائی متعلقہ معلومات حاصل کی جا سکیں۔"
+          },
+          {
+            "step": 5,
+            "title": "ایل ایل ایم اور چیٹ انٹیگریشن",
+            "description": "ہم LangChain پرامپٹ ٹیمپلیٹس بناتے ہیں جو حاصل کردہ معلومات کو حوالہ جات کے ساتھ پیش کرتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "ٹیسٹنگ اور سنکرونائزیشن",
+            "description": "ہم جوابات کی درستگی ناپنے کے لیے ٹیسٹ چلاتے ہیں اور فائلوں کو اپ ڈیٹ کرنے کے لیے شیڈول سیٹ کرتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "آر اے جی (RAG) کیا ہے؟",
+            "answer": "RAG ایک ایسی تکنیک ہے جو کمپنی کی نجی دستاویزات سے متعلقہ معلومات حاصل کر کے ماڈل کو دیتی ہے، تاکہ ماڈل عام معلومات کے بجائے آپ کی دستاویزات کی بنیاد پر جواب دے۔"
+          },
+          {
+            "question": "آپ اس بات کی ضمانت کیسے دیتے ہیں کہ اے آئی غلط معلومات نہیں دے گا؟",
+            "answer": "ہم پرامپٹ میں سخت قوانین نافذ کرتے ہیں۔ اگر دستاویزات میں جواب موجود نہ ہو تو اے آئی واضح طور پر بتا دیتا ہے کہ معلومات دستیاب نہیں ہیں، جس سے غلط بیانی ختم ہو جاتی ہے۔"
+          },
+          {
+            "question": "آپ کن ویکٹر ڈیٹا بیسز کو سپورٹ کرتے ہیں؟",
+            "answer": "ہم کلاؤڈ کے لیے Pinecone، کمپنی کے سرورز کے لیے Weaviate، اور لوکل ہوسٹنگ کے لیے Pgvector یا Chroma کو سپورٹ کرتے ہیں۔"
+          },
+          {
+            "question": "کیا یہ گوگل ڈرائیو اور شیئر پوائنٹ سے جڑ سکتا ہے؟",
+            "answer": "جی ہاں، ہم خودکار کنیکٹرز بناتے ہیں جو گوگل ڈرائیو، شیئر پوائنٹ، نوشن اور کارپورٹ ڈیٹا بیس سے فائلیں سنکرونائز کرتے ہیں۔"
+          },
+          {
+            "question": "ذرائع کے حوالہ جات کیسے نظر آتے ہیں؟",
+            "answer": "ہر جواب کے نیچے نمبرز لکھے ہوتے ہیں جن پر کلک کر کے صارف اصل فائل کا نام، صفحہ نمبر اور اس کا لنک دیکھ سکتا ہے۔"
+          },
+          {
+            "question": "آپ ڈیٹا کی سیکیورٹی اور فائل کی اجازتوں کو کیسے سنبھالتے ہیں؟",
+            "answer": "ہم سرچ کے دوران فلٹر لگاتے ہیں۔ سسٹم صارف کے رول (جیسے OAuth کے ذریعے) کو چیک کرتا ہے اور صرف ان فائلوں سے معلومات لاتا ہے جنہیں دیکھنے کی صارف کو اجازت حاصل ہے۔"
+          },
+          {
+            "question": "کیا آپ ہائبرڈ سرچ کو سپورٹ کرتے ہیں؟",
+            "answer": "جی ہاں، ہم کی ورڈ سرچ (BM25) اور سمانٹک سرچ دونوں کو یکجا کرتے ہیں تاکہ فقروں کے ساتھ ساتھ کوڈز یا سیریل نمبرز کی تلاش بھی درست ہو۔"
+          },
+          {
+            "question": "ویکٹر انڈیکس کتنی بار اپ ڈیٹ ہوتا ہے؟",
+            "answer": "ہم ایسے سسٹمز بناتے ہیں جو فائل تبدیل ہونے پر فوری طور پر یا ہر گھنٹے بعد خود بخود انڈیکس کو اپ ڈیٹ کر دیتے ہیں تاکہ نئی معلومات دستیاب رہیں۔"
+          }
+        ],
+        "technologies": [
+          { "name": "Pinecone", "icon": "pinecone" },
+          { "name": "Weaviate", "icon": "weaviate" },
+          { "name": "LangChain", "icon": "langchain" },
+          { "name": "LlamaIndex", "icon": "llamaindex" },
+          { "name": "OpenAI Embeddings", "icon": "openai" },
+          { "name": "Chroma DB", "icon": "chroma" },
+          { "name": "Python", "icon": "python" },
+          { "name": "PostgreSQL", "icon": "postgresql" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "حلول توليد الاسترجاع المعزز RAG",
+      "shortDescription": "ابنِ مساعدي ذكاء اصطناعي يجيبون بدقة باستخدام بياناتك الداخلية. ننشئ حلول RAG مخصصة مع تتبع الاستشهادات بالمصادر والبحث الدلالي.",
+      "fullDescription": "النماذج اللغوية الكبيرة قوية ولكنها تميل إلى هلوسة الحقائق عند الإجابة عن أسئلة خاصة بالشركة. نحن نبني حلول توليد الاسترجاع المعزز (RAG) المخصصة التي تربط النماذج اللغوية بمصادر بياناتك الخاصة، مما يضمن دقة الإجابات بنسبة 100٪ ونسبها لمصادرها بالكامل. من خلال دمج قواعد البيانات المتجهة مثل Pinecone أو Weaviate أو Chroma مع أطر عمل مثل LangChain و LlamaIndex، نبني مسارات عمل تستورد المستندات وتحللها وتفهرسها تلقائياً. تجمع أنظمة البحث الهجين لدينا بين مطابقة الكلمات الرئيسية والبحث المتجه الدلالي لجلب السياق ذي الصلة في أجزاء من الثانية. ندمج تتبعاً صارماً للبيانات الوصفية لعرض استشهادات المصادر القابلة للنقر.",
+      "features": [
+        "مسارات استيراد وتقسيم المستندات تلقائياً",
+        "إعداد وتهيئة قواعد البيانات المتجهة (Pinecone, Weaviate)",
+        "بحث هجين يجمع بين الكلمات الرئيسية والمتجهات",
+        "تتبع آلية الاستشهادات وأرقام الصفحات للمصادر",
+        "توصيل آمن للمعلومات متعددة المصادر للأنظمة",
+        "إعادة كتابة وتوسيع الاستعلامات لتحسين النتائج",
+        "أذونات وصول صارمة وخصوصية كاملة للبيانات",
+        "مزامنة تلقائية وفورية لفهرس قواعد البيانات"
+      ],
+      "benefits": [
+        "القضاء على هلوسة الذكاء الاصطناعي بتأسيس الإجابات على البيانات",
+        "ضمان التحقق من صحة الإجابات عبر استشهادات قابلة للنقر",
+        "فهرسة ملايين الصفحات لسرعة بحث فائقة بأجزاء من الثانية",
+        "حماية خصوصية البيانات باستخدام فلاتر استرجاع قائمة على الأدوار",
+        "إبقاء قواعد المعرفة متزامنة تماماً مع مجلدات التخزين",
+        "ربط Slack و Google Drive وقواعد البيانات بالذكاء الاصطناعي"
+      ],
+      "metaTitle": "حلول RAG المخصصة | توليد الاسترجاع المعزز | PakSoft",
+      "metaDescription": "ابنِ أنظمة ذكاء اصطناعي آمنة تجيب عن الأسئلة باستخدام بياناتك الخاصة. نصمم مسارات RAG مع Weaviate و LangChain. احصل على عرض سعر.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تدقيق مصادر البيانات",
+            "description": "نراجع مصادر بيانات شركتك وتنسيقاتها واتصالات واجهات برمجة التطبيقات لتخطيط مسار الاستيراد."
+          },
+          {
+            "step": 2,
+            "title": "إعداد الاستيراد والمعالجة",
+            "description": "نقوم بتهيئة أدوات استخراج آمنة لقراءة الملفات وتنظيفها وتقسيمها (PDF, DOCX, CSV) إلى أجزاء دلالية."
+          },
+          {
+            "step": 3,
+            "title": "استيراد وفهرسة المتجهات",
+            "description": "نحول أجزاء المستندات إلى تمثيلات متجهية عالية الجودة ونفهرسها داخل Pinecone أو Weaviate."
+          },
+          {
+            "step": 4,
+            "title": "إعداد البحث الهجين",
+            "description": "ننفذ خوارزميات البحث الهجين، لدمج مطابقة الكلمات الرئيسية BM25 مع الاسترجاع المتجه الدلالي لضمان الدقة."
+          },
+          {
+            "step": 5,
+            "title": "صياغة السياق وإعداد نموذج اللغة",
+            "description": "نقوم بتهيئة قوالب مطالبات LangChain لتمرير السياقات المسترجعة إلى نموذج لغوي آمن مع إبراز الاستشهادات."
+          },
+          {
+            "step": 6,
+            "title": "التقييم وإعداد المزامنة",
+            "description": "نجري اختبارات تقييم RAGAS للتحقق من صدق الإجابات ونعد مهام دورية لمزامنة الملفات المحدثة."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما هو RAG (توليد الاسترجاع المعزز)؟",
+            "answer": "RAG هي تقنية تسترجع السياق ذي الصلة من مستندات شركتك الخاصة وتغذيها بنموذج لغوي كبير، مما يضمن إجابة النموذج بناءً على البيانات الفعلية وليس المعرفة العامة."
+          },
+          {
+            "question": "كيف تضمن عدم قيام الذكاء الاصطناعي بالهلوسة؟",
+            "answer": "نحن نفرض حواجز حماية صارمة لمطالبات النظام. إذا لم يحتوِ السياق المسترجع على الإجابة، يتم توجيه الذكاء الاصطناعي للإجابة بأنه لا يمكنه العثور على المعلومات."
+          },
+          {
+            "question": "ما هي قواعد البيانات المتجهة التي تدعمونها؟",
+            "answer": "ننشر الحلول على Pinecone للإعدادات السحابية المدارة، و Weaviate للمؤسسات الهجينة، و Pgvector (PostgreSQL) أو Chroma لعمليات النشر المحلية خفيفة الوزن."
+          },
+          {
+            "question": "هل يمكنه فهرسة المستندات المخزنة في Google Drive أو SharePoint؟",
+            "answer": "نعم، نبني مسارات موصلات تلقائية تسحب المستندات من Google Drive و SharePoint و Notion و Confluence وقواعد بيانات المؤسسة بأمان."
+          },
+          {
+            "question": "كيف يتم عرض الاستشهادات بالمصادر؟",
+            "answer": "نتتبع البيانات الوصفية للمستندات طوال عملية الاسترجاع. تتضمن كل إجابة يتم إنشاؤها حواشي سفلية مرقمة تربط باسم المستند الدقيق ورقم الصفحة والملف الأصلي."
+          },
+          {
+            "question": "كيف تتعامل مع أمان المستندات وصلاحيات المستخدمين؟",
+            "answer": "ننفذ التصفية أثناء وقت الاسترجاع. يتحقق النظام من مجموعة صلاحيات المستخدم النشطة (على سبيل المثال عبر OAuth) ويسترجع السياق فقط من المستندات المصرح له بقراءتها."
+          },
+          {
+            "question": "هل تدعمون البحث الهجين؟",
+            "answer": "نعم، نجمع بين البحث عن الكلمات الرئيسية (BM25) والبحث المتجه الدلالي الكثيف. يضمن ذلك عثور الاستعلامات على المطابقات التامة (مثل الأرقام التسلسلية) والمطابقات المفاهيمية."
+          },
+          {
+            "question": "كم مرة يتم تحديث الفهرس المتجه؟",
+            "answer": "نقوم بإعداد نقاط نهاية خطافات الويب (Webhooks) التي تستمع لتغييرات المستندات في الوقت الفعلي، أو تشغيل مهام مزامنة تدريجية كل ساعة لضمان تحديث الفهرس دائماً."
+          }
+        ],
+        "technologies": [
+          { "name": "Pinecone", "icon": "pinecone" },
+          { "name": "Weaviate", "icon": "weaviate" },
+          { "name": "LangChain", "icon": "langchain" },
+          { "name": "LlamaIndex", "icon": "llamaindex" },
+          { "name": "OpenAI Embeddings", "icon": "openai" },
+          { "name": "Chroma DB", "icon": "chroma" },
+          { "name": "Python", "icon": "python" },
+          { "name": "PostgreSQL", "icon": "postgresql" }
+        ]
+      }
+    }
+  }
+}

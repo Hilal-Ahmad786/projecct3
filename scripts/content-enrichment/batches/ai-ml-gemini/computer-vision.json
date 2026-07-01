@@ -1,0 +1,638 @@
+{
+  "slug": "computer-vision",
+  "en": {
+    "name": "Computer Vision Services",
+    "shortDescription": "Extract actionable intelligence from images and video streams using advanced deep learning and neural network models.",
+    "fullDescription": "The physical world is overflowing with visual data—from security camera feeds on a factory floor to satellite imagery of agricultural land. Our Computer Vision services transform this unstructured visual data into structured, actionable intelligence. We build and deploy advanced neural networks (CNNs, Vision Transformers) that can 'see' and interpret images and video streams in real-time. Whether you need to count inventory on retail shelves, detect microscopic defects in manufacturing assembly lines, or track the movement of vehicles across a logistics hub, we create models that outperform human accuracy and speed. We don't just provide raw models; we build end-to-end vision pipelines that include edge deployment (running AI directly on cameras via TensorRT or ONNX) to ensure low latency and high security, even in environments with poor internet connectivity.",
+    "features": [
+      "Real-Time Object Detection & Tracking",
+      "Image Classification & Semantic Segmentation",
+      "Facial Recognition & Biometric Authentication",
+      "Pose Estimation & Human Action Recognition",
+      "Automated Quality Control & Defect Detection",
+      "Optical Character Recognition (OCR) in the Wild",
+      "Video Analytics (People Counting, Heatmaps)",
+      "Edge AI Deployment (TensorRT, NVIDIA Jetson)"
+    ],
+    "benefits": [
+      "Automate visual inspection tasks with higher accuracy than human operators",
+      "Process thousands of hours of video footage in a fraction of the time",
+      "Detect manufacturing defects immediately, reducing waste and recalls",
+      "Operate AI models directly on local cameras for absolute data privacy",
+      "Extract structured text and data from messy, unstructured real-world images",
+      "Gain real-time insights into physical spaces like retail stores or factories"
+    ],
+    "metaTitle": "Computer Vision Services | Object Detection & AI | PakSoft",
+    "metaDescription": "Transform visual data into insights. We build custom computer vision models for object detection, quality control, and real-time video analytics.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Visual Data Assessment",
+          "description": "We analyze your camera hardware, lighting conditions, and the visual data you want to process. We define the exact objects, actions, or defects the AI needs to recognize."
+        },
+        {
+          "step": 2,
+          "title": "Data Collection & Annotation",
+          "description": "Vision models require high-quality labeled data. We help collect training images/video and use professional annotation teams to accurately draw bounding boxes or segmentation masks."
+        },
+        {
+          "step": 3,
+          "title": "Model Selection & Architecture",
+          "description": "We select the right underlying architecture. For real-time mobile detection, we might use YOLOv9; for highly detailed medical image segmentation, we might use U-Net or Vision Transformers."
+        },
+        {
+          "step": 4,
+          "title": "Model Training & Validation",
+          "description": "We train the model using GPU clusters, employing techniques like data augmentation to ensure the AI recognizes objects under different lighting, angles, and occlusions."
+        },
+        {
+          "step": 5,
+          "title": "Optimization & Edge Compilation",
+          "description": "Large models run slowly on standard cameras. We optimize and quantize the trained model (using TensorRT or ONNX) so it can run smoothly at 30+ FPS on edge devices or affordable hardware."
+        },
+        {
+          "step": 6,
+          "title": "Deployment & System Integration",
+          "description": "We deploy the vision pipeline and integrate its outputs (like 'Defect Detected' or 'Person Count: 42') directly into your existing ERP, security system, or BI dashboards."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Do we need to buy expensive new 4K cameras?",
+          "answer": "Usually, no. Modern computer vision models are designed to be robust. While higher resolution helps for tiny details (like micro-scratches on glass), standard 1080p or even 720p security cameras are often perfectly sufficient for object tracking, people counting, and standard defect detection."
+        },
+        {
+          "question": "What is 'Edge Deployment' and why is it important?",
+          "answer": "Edge deployment means running the AI model directly on a local device (like an NVIDIA Jetson attached to the camera) instead of sending the video feed to the cloud. This is critical for 3 reasons: 1) Zero latency (instant decisions), 2) Privacy (no video leaves your building), and 3) Bandwidth (you don't crash your network uploading 4K video 24/7)."
+        },
+        {
+          "question": "How much training data is required to build a custom model?",
+          "answer": "It depends on the complexity of the task. Thanks to 'Transfer Learning', we don't start from scratch. We take a model that already knows how to 'see' and retrain it on your specific objects. This usually requires between 500 and 5,000 annotated images per object category to achieve high accuracy."
+        },
+        {
+          "question": "Can computer vision work in low light or poor weather conditions?",
+          "answer": "Yes, but it requires specific training. If the model needs to operate at night, we train it on nighttime imagery or infrared/thermal camera feeds. We also use data augmentation to simulate rain, fog, and glare during the training phase so the AI isn't confused by bad weather."
+        },
+        {
+          "question": "What is the difference between Object Detection and Segmentation?",
+          "answer": "Object Detection draws a rectangular 'bounding box' around an object (e.g., 'There is a car in this box'). Image Segmentation is much more precise; it colors in the exact pixels of the object, tracing its exact outline. Segmentation is heavier to process but essential for tasks like medical imaging or precise defect measurement."
+        },
+        {
+          "question": "Can you extract text from blurry or curved surfaces?",
+          "answer": "Yes. Traditional OCR (like reading a flat PDF) struggles in the real world. We use deep-learning-based OCR in the wild, which can read text on curved bottles, moving license plates, or slightly blurry shipping labels by combining object detection with text recognition."
+        },
+        {
+          "question": "How do you handle privacy concerns with facial recognition?",
+          "answer": "If facial recognition is not the primary goal (e.g., you just want to count people in a store), we configure the AI at the edge to immediately blur faces or convert people into anonymous stick figures (Pose Estimation) before the data is saved or sent to the dashboard, ensuring full GDPR/CCPA compliance."
+        },
+        {
+          "question": "How long does it take to train and deploy a custom vision model?",
+          "answer": "A standard object detection model (like recognizing safety helmets on a construction site) takes about 4-6 weeks, including data annotation. Complex projects, such as microscopic defect detection with custom edge hardware, can take 3-4 months."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch / TensorFlow"
+        },
+        {
+          "icon": "opencv",
+          "name": "OpenCV"
+        },
+        {
+          "icon": "nvidia",
+          "name": "NVIDIA TensorRT"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS Rekognition"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Vision AI"
+        },
+        {
+          "icon": "javascript",
+          "name": "YOLO (You Only Look Once)"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Bilgisayarlı Görü (Computer Vision) Hizmetleri",
+    "shortDescription": "Gelişmiş derin öğrenme ve sinir ağı modellerini kullanarak görüntülerden ve video akışlarından eyleme dönüştürülebilir istihbarat çıkarın.",
+    "fullDescription": "Fiziksel dünya görsel verilerle dolup taşıyor; bir fabrika zeminindeki güvenlik kamerası görüntülerinden tarım arazilerinin uydu görüntülerine kadar. Bilgisayarlı Görü (Computer Vision) hizmetlerimiz, bu yapılandırılmamış görsel verileri yapılandırılmış, eyleme dönüştürülebilir istihbarata dönüştürür. Görüntüleri ve video akışlarını gerçek zamanlı olarak 'görebilen' ve yorumlayabilen gelişmiş sinir ağları (CNN'ler, Vision Transformer'lar) kuruyor ve devreye alıyoruz. İster perakende raflarındaki envanteri saymanız, ister üretim montaj hatlarındaki mikroskobik kusurları tespit etmeniz veya lojistik bir merkezdeki araçların hareketini izlemeniz gereksin; insan doğruluğunu ve hızını aşan modeller oluşturuyoruz. Sadece ham modeller sunmuyoruz; internet bağlantısının zayıf olduğu ortamlarda bile düşük gecikme ve yüksek güvenlik sağlamak için uç (edge) dağıtımı (yapay zekayı TensorRT veya ONNX aracılığıyla doğrudan kameralar üzerinde çalıştırma) içeren uçtan uca görüntü hatları (pipelines) kuruyoruz.",
+    "features": [
+      "Gerçek Zamanlı Nesne Tespiti ve Takibi",
+      "Görüntü Sınıflandırma ve Anlamsal Segmentasyon",
+      "Yüz Tanıma ve Biyometrik Kimlik Doğrulama",
+      "Poz Tahmini (Pose Estimation) ve İnsan Eylemi Tanıma",
+      "Otomatik Kalite Kontrolü ve Kusur Tespiti",
+      "Gerçek Dünya Ortamlarında (In the Wild) OCR",
+      "Video Analitiği (Kişi Sayma, Isı Haritaları)",
+      "Uç Yapay Zeka (Edge AI) Dağıtımı (TensorRT, NVIDIA Jetson)"
+    ],
+    "benefits": [
+      "Görsel denetim görevlerini insan operatörlerden daha yüksek doğrulukla otomatikleştirin",
+      "Binlerce saatlik video kaydını çok kısa sürede işleyin",
+      "Üretim kusurlarını anında tespit ederek israfı ve geri çağırmaları azaltın",
+      "Mutlak veri gizliliği için yapay zeka modellerini doğrudan yerel kameralarda çalıştırın",
+      "Dağınık, yapılandırılmamış gerçek dünya görüntülerinden yapılandırılmış metin ve veri çıkarın",
+      "Perakende mağazaları veya fabrikalar gibi fiziksel alanlara dair gerçek zamanlı içgörüler elde edin"
+    ],
+    "metaTitle": "Bilgisayarlı Görü Hizmetleri | Nesne Tespiti ve Yapay Zeka | PakSoft",
+    "metaDescription": "Görsel verilerinizi içgörüye dönüştürün. Nesne tespiti, kalite kontrol ve gerçek zamanlı video analitiği için özel bilgisayarlı görü modelleri inşa ediyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Görsel Veri Değerlendirmesi",
+          "description": "Kamera donanımınızı, aydınlatma koşullarınızı ve işlemek istediğiniz görsel verileri analiz ediyoruz. Yapay zekanın tanıması gereken nesneleri, eylemleri veya kusurları tam olarak tanımlıyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Veri Toplama ve Etiketleme (Annotation)",
+          "description": "Görme (Vision) modelleri yüksek kaliteli etiketlenmiş veri gerektirir. Eğitim görüntüleri/videoları toplamaya yardımcı oluyor ve sınırlayıcı kutuları veya segmentasyon maskelerini doğru bir şekilde çizmek için profesyonel etiketleme ekiplerini kullanıyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Model Seçimi ve Mimari",
+          "description": "Doğru temel mimariyi seçiyoruz. Gerçek zamanlı mobil tespit için YOLOv9 kullanabilirken; son derece ayrıntılı tıbbi görüntü segmentasyonu için U-Net veya Vision Transformers kullanabiliriz."
+        },
+        {
+          "step": 4,
+          "title": "Model Eğitimi ve Doğrulama",
+          "description": "Yapay zekanın nesneleri farklı aydınlatma, açı ve engeller altında tanımasını sağlamak için veri artırma (data augmentation) gibi teknikler kullanarak modeli GPU kümeleriyle eğitiyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Optimizasyon ve Uç (Edge) Derleme",
+          "description": "Büyük modeller standart kameralarda yavaş çalışır. Eğitilmiş modeli (TensorRT veya ONNX kullanarak) optimize ediyor ve kuantize ediyoruz, böylece uç cihazlarda veya uygun fiyatlı donanımlarda 30+ FPS'de sorunsuz çalışabilir."
+        },
+        {
+          "step": 6,
+          "title": "Yayına Alma ve Sistem Entegrasyonu",
+          "description": "Görüntü (vision) hattını devreye alıyor ve çıktılarını ('Kusur Tespit Edildi' veya 'Kişi Sayısı: 42' gibi) doğrudan mevcut ERP, güvenlik sistemi veya BI gösterge panellerinize entegre ediyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Pahalı yeni 4K kameralar almamız gerekiyor mu?",
+          "answer": "Genellikle hayır. Modern bilgisayarlı görü modelleri sağlam olacak şekilde tasarlanmıştır. Yüksek çözünürlük küçük ayrıntılar (camdaki mikro çizikler gibi) için yardımcı olsa da, standart 1080p veya hatta 720p güvenlik kameraları genellikle nesne takibi, kişi sayımı ve standart kusur tespiti için tamamen yeterlidir."
+        },
+        {
+          "question": "'Uç Dağıtım' (Edge Deployment) nedir ve neden önemlidir?",
+          "answer": "Uç dağıtım, yapay zeka modelini video akışını buluta göndermek yerine doğrudan yerel bir cihazda (kameraya bağlı bir NVIDIA Jetson gibi) çalıştırmak anlamına gelir. Bu 3 nedenden dolayı kritik önem taşır: 1) Sıfır gecikme (anlık kararlar), 2) Gizlilik (hiçbir video binanızı terk etmez) ve 3) Bant Genişliği (7/24 4K video yükleyerek ağınızı çökertmezsiniz)."
+        },
+        {
+          "question": "Özel bir model oluşturmak için ne kadar eğitim verisi gereklidir?",
+          "answer": "Görevin karmaşıklığına bağlıdır. 'Transfer Öğrenimi' (Transfer Learning) sayesinde sıfırdan başlamıyoruz. Zaten 'görmeyi' bilen bir modeli alıp sizin belirli nesneleriniz üzerinde yeniden eğitiyoruz. Bu genellikle yüksek doğruluk elde etmek için nesne kategorisi başına 500 ila 5.000 etiketlenmiş görüntü gerektirir."
+        },
+        {
+          "question": "Bilgisayarlı görü düşük ışıkta veya kötü hava koşullarında çalışabilir mi?",
+          "answer": "Evet, ancak özel bir eğitim gerektirir. Modelin gece çalışması gerekiyorsa, onu gece görüntüleri veya kızılötesi/termal kamera akışları üzerinde eğitiriz. Ayrıca yapay zekanın kötü hava koşullarında kafasının karışmaması için eğitim aşamasında yağmur, sis ve parlamayı simüle etmek için veri artırma (data augmentation) kullanıyoruz."
+        },
+        {
+          "question": "Nesne Tespiti (Object Detection) ile Segmentasyon arasındaki fark nedir?",
+          "answer": "Nesne Tespiti, bir nesnenin etrafına dikdörtgen bir 'sınırlayıcı kutu' çizer (örneğin, 'Bu kutunun içinde bir araba var'). Görüntü Segmentasyonu ise çok daha hassastır; tam dış hatlarını çizerek nesnenin tam piksellerini renklendirir. Segmentasyonun işlenmesi daha ağırdır ancak tıbbi görüntüleme veya hassas kusur ölçümü gibi görevler için gereklidir."
+        },
+        {
+          "question": "Bulanık veya kavisli yüzeylerden metin çıkarabilir misiniz?",
+          "answer": "Evet. Geleneksel OCR (düz bir PDF okumak gibi) gerçek dünyada zorlanır. Nesne tespitini metin tanımayla birleştirerek kavisli şişelerdeki, hareketli plakalardaki veya hafif bulanık kargo etiketlerindeki metinleri okuyabilen, gerçek dünyada derin öğrenme tabanlı OCR kullanıyoruz."
+        },
+        {
+          "question": "Yüz tanıma ile ilgili gizlilik endişelerini nasıl ele alıyorsunuz?",
+          "answer": "Yüz tanıma birincil hedef değilse (örneğin, sadece bir mağazadaki insanları saymak istiyorsanız), veriler kaydedilmeden veya kontrol paneline gönderilmeden önce yapay zekayı uç noktada yüzleri hemen bulanıklaştıracak veya insanları anonim çöp adamlara (Poz Tahmini) dönüştürecek şekilde yapılandırıyoruz, böylece tam KVKK/GDPR uyumluluğu sağlıyoruz."
+        },
+        {
+          "question": "Özel bir görü (vision) modelini eğitmek ve yayına almak ne kadar sürer?",
+          "answer": "Standart bir nesne tespiti modeli (bir şantiyedeki güvenlik baretlerini tanımak gibi), veri etiketleme dahil yaklaşık 4-6 hafta sürer. Özel uç (edge) donanımıyla mikroskobik kusur tespiti gibi karmaşık projeler 3-4 ay sürebilir."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch / TensorFlow"
+        },
+        {
+          "icon": "opencv",
+          "name": "OpenCV"
+        },
+        {
+          "icon": "nvidia",
+          "name": "NVIDIA TensorRT"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS Rekognition"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Vision AI"
+        },
+        {
+          "icon": "javascript",
+          "name": "YOLO (You Only Look Once)"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Computer Vision Services",
+    "shortDescription": "Extrahieren Sie verwertbare Informationen aus Bildern und Video-Streams mithilfe fortschrittlicher Deep-Learning- und neuronaler Netzwerk-Modelle.",
+    "fullDescription": "Die physische Welt ist überflutet mit visuellen Daten — von Überwachungskameras in einer Fabrikhalle bis hin zu Satellitenbildern landwirtschaftlicher Flächen. Unsere Computer Vision-Dienste verwandeln diese unstrukturierten visuellen Daten in strukturierte, verwertbare Intelligenz. Wir bauen und deployen fortschrittliche neuronale Netze (CNNs, Vision Transformers), die Bilder und Video-Streams in Echtzeit 'sehen' und interpretieren können. Ob Sie Lagerbestände in Verkaufsregalen zählen, mikroskopische Fehler an Produktionslinien erkennen oder die Bewegung von Fahrzeugen in einem Logistikzentrum verfolgen müssen — wir erstellen Modelle, die menschliche Genauigkeit und Geschwindigkeit übertreffen. Wir liefern nicht nur rohe Modelle; wir bauen End-to-End-Vision-Pipelines, die Edge-Deployment (Ausführen von KI direkt auf Kameras über TensorRT oder ONNX) umfassen, um niedrige Latenz und hohe Sicherheit zu gewährleisten, selbst in Umgebungen mit schlechter Internetverbindung.",
+    "features": [
+      "Echtzeit-Objekterkennung & Tracking",
+      "Bildklassifizierung & semantische Segmentierung",
+      "Gesichtserkennung & biometrische Authentifizierung",
+      "Pose Estimation & Erkennung menschlicher Handlungen",
+      "Automatisierte Qualitätskontrolle & Defekterkennung",
+      "Optical Character Recognition (OCR) 'in the wild'",
+      "Video Analytics (Personenzählung, Heatmaps)",
+      "Edge AI-Deployment (TensorRT, NVIDIA Jetson)"
+    ],
+    "benefits": [
+      "Automatisieren Sie visuelle Inspektionsaufgaben mit höherer Genauigkeit als Menschen",
+      "Verarbeiten Sie Tausende von Stunden Videomaterial in einem Bruchteil der Zeit",
+      "Erkennen Sie Produktionsfehler sofort und reduzieren Sie Ausschuss und Rückrufe",
+      "Betreiben Sie KI-Modelle direkt auf lokalen Kameras für absoluten Datenschutz",
+      "Extrahieren Sie strukturierten Text und Daten aus unordentlichen Real-World-Bildern",
+      "Gewinnen Sie Echtzeit-Einblicke in physische Räume wie Geschäfte oder Fabriken"
+    ],
+    "metaTitle": "Computer Vision Services | Objekterkennung & KI | PakSoft",
+    "metaDescription": "Verwandeln Sie visuelle Daten in Insights. Wir bauen maßgeschneiderte Computer-Vision-Modelle für Objekterkennung, Qualitätskontrolle und Echtzeit-Videoanalyse.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Bewertung der visuellen Daten",
+          "description": "Wir analysieren Ihre Kamera-Hardware, Lichtverhältnisse und die zu verarbeitenden Daten. Wir definieren die exakten Objekte, Handlungen oder Defekte, die die KI erkennen soll."
+        },
+        {
+          "step": 2,
+          "title": "Datenerfassung & Annotation",
+          "description": "Vision-Modelle benötigen hochwertige gelabelte Daten. Wir helfen bei der Sammlung von Trainingsmaterial und nutzen professionelle Annotationsteams für Bounding Boxes und Masken."
+        },
+        {
+          "step": 3,
+          "title": "Modellauswahl & Architektur",
+          "description": "Wir wählen die richtige Architektur. Für mobile Echtzeiterkennung nutzen wir z.B. YOLOv9; für hochdetaillierte medizinische Segmentierung U-Net oder Vision Transformers."
+        },
+        {
+          "step": 4,
+          "title": "Modelltraining & Validierung",
+          "description": "Wir trainieren das Modell auf GPU-Clustern mit Techniken wie Data Augmentation, damit die KI Objekte unter verschiedenen Lichtverhältnissen, Winkeln und Verdeckungen erkennt."
+        },
+        {
+          "step": 5,
+          "title": "Optimierung & Edge-Kompilierung",
+          "description": "Große Modelle laufen langsam auf Standardkameras. Wir optimieren und quantisieren das trainierte Modell (mit TensorRT/ONNX) für flüssige 30+ FPS auf Edge-Geräten."
+        },
+        {
+          "step": 6,
+          "title": "Deployment & Systemintegration",
+          "description": "Wir deployen die Vision-Pipeline und integrieren die Outputs (wie 'Defekt erkannt' oder 'Personenzahl: 42') direkt in Ihr ERP, Sicherheitssystem oder BI-Dashboard."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Müssen wir teure neue 4K-Kameras kaufen?",
+          "answer": "Meistens nicht. Moderne Computer Vision-Modelle sind robust gebaut. Zwar hilft eine hohe Auflösung bei winzigen Details (Mikrokratzer auf Glas), aber für Objektracking, Personenzählung und Standard-Defekterkennung reichen handelsübliche 1080p- oder sogar 720p-Kameras völlig aus."
+        },
+        {
+          "question": "Was ist 'Edge Deployment' und warum ist es wichtig?",
+          "answer": "Edge Deployment bedeutet, dass das KI-Modell direkt auf einem lokalen Gerät (wie einem NVIDIA Jetson an der Kamera) läuft, anstatt das Video in die Cloud zu senden. Das ist kritisch für: 1) Null Latenz (sofortige Entscheidungen), 2) Privatsphäre (kein Video verlässt das Gebäude) und 3) Bandbreite (kein Netzwerk-Crash durch 24/7 4K-Video-Uploads)."
+        },
+        {
+          "question": "Wie viele Trainingsdaten werden für ein benutzerdefiniertes Modell benötigt?",
+          "answer": "Das hängt von der Komplexität ab. Dank 'Transfer Learning' fangen wir nicht bei Null an. Wir nehmen ein Modell, das bereits 'sehen' kann, und trainieren es auf Ihre speziellen Objekte um. Dafür reichen oft 500 bis 5.000 annotierte Bilder pro Objektkategorie für eine hohe Genauigkeit."
+        },
+        {
+          "question": "Funktioniert Computer Vision auch bei schlechtem Licht oder Wetter?",
+          "answer": "Ja, erfordert aber spezifisches Training. Muss das Modell nachts arbeiten, trainieren wir es mit Nachtaufnahmen oder Infrarot-Feeds. Wir nutzen Data Augmentation, um Regen, Nebel und Blendung beim Training zu simulieren, damit die KI nicht verwirrt wird."
+        },
+        {
+          "question": "Was ist der Unterschied zwischen Object Detection und Segmentierung?",
+          "answer": "Object Detection zeichnet eine rechteckige Box ('Bounding Box') um ein Objekt ('Hier ist ein Auto'). Bildsegmentierung ist viel präziser; sie färbt exakt die Pixel des Objekts ein und zeichnet die genauen Umrisse nach. Segmentierung ist rechenintensiver, aber essenziell für z.B. medizinische Bilder oder exakte Fehlervermessung."
+        },
+        {
+          "question": "Können Sie Text von verschwommenen oder gekrümmten Oberflächen extrahieren?",
+          "answer": "Ja. Herkömmliche OCR (wie beim Lesen von PDFs) scheitert in der realen Welt. Wir nutzen Deep-Learning-basierte 'OCR in the wild', die Text auf gekrümmten Flaschen, fahrenden Nummernschildern oder leicht verschwommenen Versandetiketten lesen kann."
+        },
+        {
+          "question": "Wie gehen Sie mit Datenschutz bei der Gesichtserkennung um?",
+          "answer": "Ist Gesichtserkennung nicht das Hauptziel (z.B. nur Personenzählung im Geschäft), konfigurieren wir die KI am Edge so, dass Gesichter sofort unscharf gemacht oder Personen in anonyme Strichmännchen (Pose Estimation) verwandelt werden, bevor Daten gespeichert werden (DSGVO-konform)."
+        },
+        {
+          "question": "Wie lange dauert es, ein Custom-Vision-Modell zu trainieren und zu deployen?",
+          "answer": "Ein Standard-Modell zur Objekterkennung (z.B. Schutzhelme auf dem Bau) dauert inkl. Daten-Annotation ca. 4-6 Wochen. Komplexe Projekte wie mikroskopische Fehlererkennung mit spezieller Edge-Hardware können 3-4 Monate in Anspruch nehmen."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch / TensorFlow"
+        },
+        {
+          "icon": "opencv",
+          "name": "OpenCV"
+        },
+        {
+          "icon": "nvidia",
+          "name": "NVIDIA TensorRT"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS Rekognition"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Vision AI"
+        },
+        {
+          "icon": "javascript",
+          "name": "YOLO (You Only Look Once)"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "کمپیوٹر وژن سروسز",
+    "shortDescription": "اعلیٰ درجے کی ڈیپ لرننگ اور نیورل نیٹ ورک ماڈلز کا استعمال کرتے ہوئے تصاویر اور ویڈیو اسٹریمز سے قابلِ عمل معلومات (Intelligence) حاصل کریں۔",
+    "fullDescription": "طبعی دنیا بصری ڈیٹا سے بھری پڑی ہے—فیکٹری کے فرش پر لگے سیکیورٹی کیمروں سے لے کر زرعی زمینوں کی سیٹلائٹ تصاویر تک۔ ہماری کمپیوٹر وژن سروسز اس بے ترتیب بصری ڈیٹا کو منظم، قابلِ عمل معلومات میں تبدیل کرتی ہیں۔ ہم ایسے جدید نیورل نیٹ ورکس (CNNs, Vision Transformers) بناتے اور تعینات کرتے ہیں جو ریئل ٹائم میں تصاویر اور ویڈیو اسٹریمز کو 'دیکھ' اور سمجھ سکتے ہیں۔ چاہے آپ کو ریٹیل شیلفز پر انوینٹری گننی ہو، مینوفیکچرنگ لائنز میں مائیکروسکوپک نقص کا پتہ لگانا ہو، یا کسی لاجسٹک مرکز میں گاڑیوں کی نقل و حرکت کو ٹریک کرنا ہو، ہم ایسے ماڈلز بناتے ہیں جو انسانی درستگی اور رفتار کو مات دے دیتے ہیں۔ ہم صرف خام ماڈلز فراہم نہیں کرتے؛ ہم اینڈ ٹو اینڈ وژن پائپ لائنز بناتے ہیں جن میں ایج ڈیپلائمنٹ (Edge Deployment) شامل ہوتی ہے (یعنی AI کو براہ راست کیمروں پر چلانا) تاکہ انٹرنیٹ کنکشن خراب ہونے کی صورت میں بھی کم تاخیر اور ہائی سیکیورٹی یقینی بنائی جا سکے۔",
+    "features": [
+      "ریئل ٹائم آبجیکٹ ڈیٹیکشن اور ٹریکنگ",
+      "امیج کی درجہ بندی اور سیمنٹک سیگمنٹیشن",
+      "چہرے کی پہچان (Facial Recognition) اور بائیو میٹرک تصدیق",
+      "پوز کا اندازہ لگانا (Pose Estimation) اور انسانی عمل کی پہچان",
+      "خودکار کوالٹی کنٹرول اور نقص کا پتہ لگانا (Defect Detection)",
+      "حقیقی دنیا کے ماحول میں آپٹیکل کریکٹر ریکگنیشن (OCR)",
+      "ویڈیو اینالیٹکس (لوگوں کی گنتی، ہیٹ میپس)",
+      "ایج AI ڈیپلائمنٹ (TensorRT, NVIDIA Jetson)"
+    ],
+    "benefits": [
+      "انسانی آپریٹرز کے مقابلے میں زیادہ درستگی کے ساتھ بصری معائنے کے کاموں کو خودکار بنائیں",
+      "ہزاروں گھنٹوں کی ویڈیو فوٹیج کو کچھ ہی وقت میں پروسیس کریں",
+      "مینوفیکچرنگ کے نقص کو فوری طور پر تلاش کریں، فضلہ اور ری کالز کو کم کریں",
+      "ڈیٹا کی مکمل رازداری کے لیے AI ماڈلز کو براہ راست مقامی کیمروں پر چلائیں",
+      "بے ترتیب اور غیر منظم حقیقی دنیا کی تصاویر سے منظم ٹیکسٹ اور ڈیٹا نکالیں",
+      "ریٹیل اسٹورز یا فیکٹریوں جیسی طبعی جگہوں کے بارے میں ریئل ٹائم بصیرت حاصل کریں"
+    ],
+    "metaTitle": "کمپیوٹر وژن سروسز | آبجیکٹ ڈیٹیکشن اور AI | PakSoft",
+    "metaDescription": "بصری ڈیٹا کو بصیرت میں تبدیل کریں۔ ہم آبجیکٹ ڈیٹیکشن، کوالٹی کنٹرول، اور ریئل ٹائم ویڈیو اینالیٹکس کے لیے کسٹم کمپیوٹر وژن ماڈلز بناتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "بصری ڈیٹا کی جانچ",
+          "description": "ہم آپ کے کیمرے کے ہارڈویئر، روشنی کے حالات، اور اس بصری ڈیٹا کا تجزیہ کرتے ہیں جس پر آپ کارروائی کرنا چاہتے ہیں۔ ہم ان مخصوص اشیاء، اعمال، یا نقائص کی وضاحت کرتے ہیں جنہیں AI کو پہچاننا ضروری ہے۔"
+        },
+        {
+          "step": 2,
+          "title": "ڈیٹا کلیکشن اور اینوٹیشن (Annotation)",
+          "description": "وژن ماڈلز کو اعلیٰ معیار کے لیبل شدہ ڈیٹا کی ضرورت ہوتی ہے۔ ہم ٹریننگ کی تصاویر/ویڈیوز اکٹھا کرنے میں مدد کرتے ہیں اور باؤنڈنگ باکسز کھینچنے کے لیے پیشہ ور ٹیموں کا استعمال کرتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "ماڈل کا انتخاب اور آرکیٹیکچر",
+          "description": "ہم مناسب ترین بنیادی آرکیٹیکچر کا انتخاب کرتے ہیں۔ ریئل ٹائم موبائل ڈیٹیکشن کے لیے ہم YOLOv9 استعمال کر سکتے ہیں؛ انتہائی تفصیلی میڈیکل امیج سیگمنٹیشن کے لیے U-Net کا استعمال کیا جا سکتا ہے۔"
+        },
+        {
+          "step": 4,
+          "title": "ماڈل کی ٹریننگ اور توثیق",
+          "description": "ہم GPU کلسٹرز کا استعمال کرتے ہوئے ماڈل کو ٹرین کرتے ہیں، تاکہ AI مختلف روشنی، زاویوں، اور رکاوٹوں کے تحت اشیاء کو پہچان سکے۔"
+        },
+        {
+          "step": 5,
+          "title": "آپٹیمائزیشن اور ایج (Edge) کمپائلیشن",
+          "description": "بڑے ماڈلز عام کیمروں پر آہستہ چلتے ہیں۔ ہم ٹرین شدہ ماڈل کو (TensorRT کا استعمال کرتے ہوئے) آپٹیمائز کرتے ہیں تاکہ یہ ایج ڈیوائسز پر 30+ FPS پر آسانی سے چل سکے۔"
+        },
+        {
+          "step": 6,
+          "title": "تعیناتی اور سسٹم کا انضمام",
+          "description": "ہم وژن پائپ لائن کو تعینات کرتے ہیں اور اس کے نتائج (جیسے 'نقص کا پتہ چلا' یا 'لوگوں کی تعداد: 42') کو براہ راست آپ کے ERP، سیکیورٹی سسٹم، یا BI ڈیش بورڈز میں ضم کرتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "کیا ہمیں مہنگے نئے 4K کیمرے خریدنے کی ضرورت ہے؟",
+          "answer": "عام طور پر، نہیں۔ جدید کمپیوٹر وژن ماڈلز کو مضبوط ہونے کے لیے ڈیزائن کیا گیا ہے۔ اگرچہ زیادہ ریزولوشن چھوٹی تفصیلات (جیسے شیشے پر مائیکرو اسکریچز) کے لیے مددگار ہے، لیکن آبجیکٹ ٹریکنگ، لوگوں کی گنتی اور عام نقص کا پتہ لگانے کے لیے 1080p یا یہاں تک کہ 720p سیکیورٹی کیمرے اکثر بالکل کافی ہوتے ہیں۔"
+        },
+        {
+          "question": "'ایج ڈیپلائمنٹ' (Edge Deployment) کیا ہے اور یہ کیوں اہم ہے؟",
+          "answer": "ایج ڈیپلائمنٹ کا مطلب ہے کہ AI ماڈل کو ویڈیو فیڈ کلاؤڈ پر بھیجنے کے بجائے براہ راست مقامی ڈیوائس پر چلانا۔ یہ 3 وجوہات کی بناء پر اہم ہے: 1) صفر تاخیر (فوری فیصلے)، 2) پرائیویسی (کوئی ویڈیو آپ کی عمارت سے باہر نہیں جاتی)، اور 3) بینڈوڈتھ کی بچت (آپ کو مسلسل 4K ویڈیو اپ لوڈ نہیں کرنی پڑتی)۔"
+        },
+        {
+          "question": "کسٹم ماڈل بنانے کے لیے کتنا ٹریننگ ڈیٹا درکار ہے؟",
+          "answer": "یہ کام کی پیچیدگی پر منحصر ہے۔ 'ٹرانسفر لرننگ' کی بدولت، ہم صفر سے شروعات نہیں کرتے۔ ہم ایک ایسا ماڈل لیتے ہیں جو پہلے سے ہی 'دیکھنا' جانتا ہے اور اسے آپ کی مخصوص چیزوں پر دوبارہ تربیت دیتے ہیں۔ اعلیٰ درستگی کے لیے عام طور پر ہر کیٹیگری کی 500 سے 5,000 لیبل شدہ تصاویر کی ضرورت ہوتی ہے۔"
+        },
+        {
+          "question": "کیا کمپیوٹر وژن کم روشنی یا خراب موسم میں کام کر سکتا ہے؟",
+          "answer": "ہاں، لیکن اس کے لیے مخصوص تربیت کی ضرورت ہوتی ہے۔ اگر ماڈل کو رات کے وقت کام کرنا ہے، تو ہم اسے رات کی تصاویر یا تھرمل کیمرے کے ڈیٹا پر تربیت دیتے ہیں۔ ہم بارش، دھند اور چکاچوند کی نقل کرنے کے لیے بھی ٹریننگ ڈیٹا میں تبدیلیاں کرتے ہیں تاکہ AI خراب موسم میں کنفیوز نہ ہو۔"
+        },
+        {
+          "question": "آبجیکٹ ڈیٹیکشن اور سیگمنٹیشن میں کیا فرق ہے؟",
+          "answer": "آبجیکٹ ڈیٹیکشن کسی چیز کے ارد گرد ایک مستطیل 'باؤنڈنگ باکس' کھینچتا ہے (مثلاً، 'اس باکس میں ایک کار ہے')۔ امیج سیگمنٹیشن بہت زیادہ قطعی ہے؛ یہ آبجیکٹ کے عین مطابق پکسلز کو رنگین کرتی ہے، اس کی قطعی خاکہ نگاری کرتی ہے۔ سیگمنٹیشن پروسیسنگ میں بھاری ہے لیکن طبی امیجنگ جیسے کاموں کے لیے ضروری ہے۔"
+        },
+        {
+          "question": "کیا آپ دھندلی یا خم دار (curved) سطحوں سے متن نکال سکتے ہیں؟",
+          "answer": "ہاں۔ روایتی OCR (جیسے سیدھا PDF پڑھنا) حقیقی دنیا میں مشکل کا شکار ہوتا ہے۔ ہم ڈیپ لرننگ پر مبنی OCR استعمال کرتے ہیں، جو خمیدہ بوتلوں، چلتی ہوئی لائسنس پلیٹوں، یا قدرے دھندلے شپنگ لیبلز پر آبجیکٹ ڈیٹیکشن اور ٹیکسٹ ریکگنیشن کو ملا کر متن پڑھ سکتا ہے۔"
+        },
+        {
+          "question": "آپ چہرے کی پہچان (Facial Recognition) کے ساتھ پرائیویسی کے مسائل کو کیسے سنبھالتے ہیں؟",
+          "answer": "اگر چہرے کی پہچان بنیادی مقصد نہیں ہے (مثلاً، آپ صرف ایک اسٹور میں لوگوں کو گننا چاہتے ہیں)، تو ہم ڈیٹا کے محفوظ ہونے یا ڈیش بورڈ پر بھیجے جانے سے پہلے چہروں کو فوری طور پر دھندلا (blur) کرنے کے لیے AI کو ایج پر ترتیب دیتے ہیں، تاکہ رازداری کے قوانین کی مکمل پابندی کو یقینی بنایا جا سکے۔"
+        },
+        {
+          "question": "ایک کسٹم وژن ماڈل کو ٹرین کرنے اور تعینات کرنے میں کتنا وقت لگتا ہے؟",
+          "answer": "ایک معیاری آبجیکٹ ڈیٹیکشن ماڈل (جیسے تعمیراتی سائٹ پر حفاظتی ہیلمٹ پہچاننا) میں ڈیٹا اینوٹیشن سمیت تقریباً 4-6 ہفتے لگتے ہیں۔ پیچیدہ منصوبوں، جیسے کہ مخصوص ہارڈویئر کے ساتھ خوردبینی خرابی کا پتہ لگانے میں 3-4 ماہ لگ سکتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch / TensorFlow"
+        },
+        {
+          "icon": "opencv",
+          "name": "OpenCV"
+        },
+        {
+          "icon": "nvidia",
+          "name": "NVIDIA TensorRT"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS Rekognition"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Vision AI"
+        },
+        {
+          "icon": "javascript",
+          "name": "YOLO (You Only Look Once)"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "خدمات الرؤية الحاسوبية (Computer Vision)",
+    "shortDescription": "استخرج معلومات استخباراتية قابلة للتنفيذ من الصور ومقاطع الفيديو باستخدام التعلم العميق ونماذج الشبكات العصبية المتقدمة.",
+    "fullDescription": "العالم المادي يفيض بالبيانات المرئية — من لقطات كاميرات المراقبة في أرضية المصنع إلى صور الأقمار الصناعية للأراضي الزراعية. تعمل خدمات الرؤية الحاسوبية لدينا على تحويل هذه البيانات المرئية غير المنظمة إلى ذكاء مهيكل وقابل للتنفيذ. نحن نبني وننشر شبكات عصبية متقدمة (مثل CNNs و Vision Transformers) يمكنها 'رؤية' وتفسير الصور ومقاطع الفيديو في الوقت الفعلي. سواء كنت بحاجة إلى حساب المخزون على أرفف البيع بالتجزئة، أو اكتشاف العيوب المجهرية في خطوط تجميع التصنيع، أو تتبع حركة المركبات عبر مركز لوجستي، فإننا ننشئ نماذج تتفوق على الدقة والسرعة البشرية. نحن لا نقدم مجرد نماذج خام؛ بل نبني مسارات رؤية (Vision Pipelines) متكاملة تتضمن النشر الطرفي (Edge Deployment - تشغيل الذكاء الاصطناعي مباشرة على الكاميرات عبر TensorRT أو ONNX) لضمان زمن انتقال منخفض وأمان عالٍ، حتى في البيئات ذات الاتصال الضعيف بالإنترنت.",
+    "features": [
+      "اكتشاف وتتبع الكائنات في الوقت الفعلي (Object Detection)",
+      "تصنيف الصور والتجزئة الدلالية (Semantic Segmentation)",
+      "التعرف على الوجه والمصادقة البيومترية",
+      "تقدير الوضع (Pose Estimation) والتعرف على الفعل البشري",
+      "مراقبة الجودة الآلية واكتشاف العيوب",
+      "التعرف البصري على الحروف (OCR) في البيئات الحقيقية",
+      "تحليلات الفيديو (عد الأشخاص، الخرائط الحرارية)",
+      "نشر الذكاء الاصطناعي الطرفي (TensorRT, NVIDIA Jetson)"
+    ],
+    "benefits": [
+      "أتمتة مهام الفحص البصري بدقة أعلى من المشغلين البشريين",
+      "معالجة آلاف الساعات من لقطات الفيديو في جزء بسيط من الوقت",
+      "اكتشاف عيوب التصنيع فوراً، مما يقلل من الهدر وسحب المنتجات",
+      "تشغيل نماذج الذكاء الاصطناعي مباشرة على الكاميرات المحلية للحصول على خصوصية بيانات مطلقة",
+      "استخراج النصوص والبيانات المهيكلة من الصور العشوائية وغير المنظمة في العالم الحقيقي",
+      "الحصول على رؤى في الوقت الفعلي حول المساحات المادية مثل متاجر البيع بالتجزئة أو المصانع"
+    ],
+    "metaTitle": "خدمات الرؤية الحاسوبية | اكتشاف الكائنات والذكاء الاصطناعي | PakSoft",
+    "metaDescription": "حول البيانات المرئية إلى رؤى. نبني نماذج رؤية حاسوبية مخصصة لاكتشاف الكائنات، ومراقبة الجودة، وتحليلات الفيديو في الوقت الفعلي.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تقييم البيانات المرئية",
+          "description": "نحلل أجهزة الكاميرا الخاصة بك، وظروف الإضاءة، والبيانات المرئية التي تريد معالجتها. نحدد الكائنات أو الإجراءات أو العيوب الدقيقة التي يحتاج الذكاء الاصطناعي إلى التعرف عليها."
+        },
+        {
+          "step": 2,
+          "title": "جمع البيانات والتعليق التوضيحي (Annotation)",
+          "description": "تتطلب نماذج الرؤية بيانات مصنفة عالية الجودة. نساعد في جمع صور/فيديوهات التدريب ونستخدم فرق توضيح محترفة لرسم المربعات المحيطة (Bounding boxes) أو أقنعة التجزئة بدقة."
+        },
+        {
+          "step": 3,
+          "title": "اختيار النموذج والبنية",
+          "description": "نختار البنية الأساسية الصحيحة. بالنسبة للاكتشاف المحمول في الوقت الفعلي، قد نستخدم YOLOv9؛ بالنسبة لتجزئة الصور الطبية عالية التفاصيل، قد نستخدم U-Net أو Vision Transformers."
+        },
+        {
+          "step": 4,
+          "title": "تدريب النموذج والتحقق منه",
+          "description": "نقوم بتدريب النموذج باستخدام مجموعات GPU، مع توظيف تقنيات مثل زيادة البيانات (Data Augmentation) لضمان تعرف الذكاء الاصطناعي على الكائنات تحت إضاءة وزوايا وانسدادات مختلفة."
+        },
+        {
+          "step": 5,
+          "title": "التحسين والتجميع الطرفي (Edge Compilation)",
+          "description": "النماذج الكبيرة تعمل ببطء على الكاميرات القياسية. نقوم بتحسين النموذج المدرب (باستخدام TensorRT أو ONNX) بحيث يمكن تشغيله بسلاسة بمعدل يزيد عن 30 إطاراً في الثانية على أجهزة الحافة."
+        },
+        {
+          "step": 6,
+          "title": "النشر وتكامل النظام",
+          "description": "ننشر مسار الرؤية وندمج مخرجاته (مثل 'تم اكتشاف عيب' أو 'عدد الأشخاص: 42') مباشرة في نظام ERP الحالي، أو نظام الأمان، أو لوحات معلومات BI الخاصة بك."
+        }
+      ],
+      "faq": [
+        {
+          "question": "هل نحتاج إلى شراء كاميرات 4K جديدة ومكلفة؟",
+          "answer": "عادةً، لا. تم تصميم نماذج الرؤية الحاسوبية الحديثة لتكون قوية. في حين أن الدقة الأعلى تساعد في التفاصيل الدقيقة (مثل الخدوش الدقيقة على الزجاج)، فإن الكاميرات الأمنية القياسية بدقة 1080p أو حتى 720p غالباً ما تكون كافية تماماً لتتبع الكائنات، وعد الأشخاص، واكتشاف العيوب القياسية."
+        },
+        {
+          "question": "ما هو 'النشر الطرفي' (Edge Deployment) ولماذا هو مهم؟",
+          "answer": "يعني النشر الطرفي تشغيل نموذج الذكاء الاصطناعي مباشرة على جهاز محلي (مثل NVIDIA Jetson متصل بالكاميرا) بدلاً من إرسال تغذية الفيديو إلى السحابة. هذا مهم لـ 3 أسباب: 1) زمن انتقال صفري (قرارات فورية)، 2) الخصوصية (لا يغادر الفيديو المبنى الخاص بك)، و 3) النطاق الترددي (Bandwidth)."
+        },
+        {
+          "question": "كم مقدار بيانات التدريب المطلوبة لبناء نموذج مخصص؟",
+          "answer": "يعتمد ذلك على تعقيد المهمة. بفضل 'التعلم النقل' (Transfer Learning)، لا نبدأ من الصفر. نأخذ نموذجاً يعرف بالفعل كيف 'يرى' ونعيد تدريبه على كائناتك المحددة. يتطلب هذا عادةً ما بين 500 و 5000 صورة مشروحة (Annotated) لكل فئة كائن لتحقيق دقة عالية."
+        },
+        {
+          "question": "هل يمكن للرؤية الحاسوبية العمل في ظروف الإضاءة المنخفضة أو الطقس السيئ؟",
+          "answer": "نعم، ولكنها تتطلب تدريباً محدداً. إذا كان النموذج بحاجة إلى العمل في الليل، نقوم بتدريبه على صور ليلية أو تغذية كاميرا الأشعة تحت الحمراء/الحرارية. كما نستخدم زيادة البيانات (Data Augmentation) لمحاكاة المطر والضباب خلال التدريب حتى لا يرتبك الذكاء الاصطناعي."
+        },
+        {
+          "question": "ما الفرق بين اكتشاف الكائنات (Object Detection) والتجزئة (Segmentation)؟",
+          "answer": "يرسم اكتشاف الكائنات 'مربعاً محيطاً' مستطيلاً حول الكائن (مثل، 'توجد سيارة في هذا المربع'). تجزئة الصور أكثر دقة؛ حيث يتم تلوين وحدات البكسل الدقيقة للكائن، وتتبع مخططه الدقيق. التجزئة أثقل في المعالجة ولكنها ضرورية لمهام مثل التصوير الطبي أو قياس العيوب بدقة."
+        },
+        {
+          "question": "هل يمكنك استخراج النص من الأسطح المنحنية أو الضبابية؟",
+          "answer": "نعم. يعاني الـ OCR التقليدي (مثل قراءة ملف PDF مسطح) في العالم الحقيقي. نستخدم OCR القائم على التعلم العميق في البيئات الحقيقية، والذي يمكنه قراءة النص على الزجاجات المنحنية، أو لوحات الترخيص المتحركة من خلال دمج اكتشاف الكائنات مع التعرف على النص."
+        },
+        {
+          "question": "كيف تتعاملون مع مخاوف الخصوصية في التعرف على الوجه؟",
+          "answer": "إذا لم يكن التعرف على الوجه هو الهدف الأساسي (مثلاً، تريد فقط عد الأشخاص في متجر)، فإننا نقوم بتهيئة الذكاء الاصطناعي على مستوى الجهاز الطرفي (Edge) لطمس الوجوه فوراً أو تحويل الأشخاص إلى أشكال عصوية مجهولة (Pose Estimation) قبل حفظ البيانات، مما يضمن الامتثال الكامل للخصوصية."
+        },
+        {
+          "question": "كم من الوقت يستغرق تدريب ونشر نموذج رؤية مخصص؟",
+          "answer": "يستغرق نموذج اكتشاف الكائنات القياسي (مثل التعرف على خوذات السلامة في موقع بناء) حوالي 4-6 أسابيع، بما في ذلك التعليق التوضيحي للبيانات. المشاريع المعقدة، مثل اكتشاف العيوب المجهرية باستخدام أجهزة طرفية مخصصة، قد تستغرق من 3 إلى 4 أشهر."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "pytorch",
+          "name": "PyTorch / TensorFlow"
+        },
+        {
+          "icon": "opencv",
+          "name": "OpenCV"
+        },
+        {
+          "icon": "nvidia",
+          "name": "NVIDIA TensorRT"
+        },
+        {
+          "icon": "amazonwebservices",
+          "name": "AWS Rekognition"
+        },
+        {
+          "icon": "docker",
+          "name": "Docker"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Vision AI"
+        },
+        {
+          "icon": "javascript",
+          "name": "YOLO (You Only Look Once)"
+        }
+      ]
+    }
+  }
+}

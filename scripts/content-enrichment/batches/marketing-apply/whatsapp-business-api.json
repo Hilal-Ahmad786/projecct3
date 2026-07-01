@@ -1,0 +1,597 @@
+{
+  "slug": "whatsapp-business-api",
+  "en": {
+    "name": "WhatsApp Business API Integration",
+    "shortDescription": "Scale your customer communication. We integrate the WhatsApp Business API to enable automated notifications, multi-agent support, and massive broadcast capabilities.",
+    "fullDescription": "The standard WhatsApp Business App is insufficient for growing enterprises. It is limited to a single device, lacks automation, and restricts broadcast messaging. To unlock WhatsApp's full potential as an enterprise communication channel, you need the WhatsApp Business API. Our service handles the complex technical setup and approval process of the WhatsApp Cloud API. We integrate the API directly into your existing CRM (Salesforce, HubSpot, Zendesk) or build a custom dashboard. This allows multiple customer service agents to reply from a single official company number. We automate transactional notifications—such as order confirmations, shipping updates, and appointment reminders—triggered directly from your backend systems. We also guide you through Meta's strict Message Template approval process to ensure your automated outbound messages are compliant and never blocked.",
+    "features": [
+      "WhatsApp Cloud API Setup & Number Verification",
+      "CRM & Helpdesk Integration (Zendesk, HubSpot, etc.)",
+      "Multi-Agent Shared Inbox Configuration",
+      "Automated Transactional Notifications (Orders, Shipping)",
+      "Meta Message Template Creation & Approval",
+      "Interactive Messages (Quick Replies, List Messages)",
+      "Chatbot & Automated Routing Integration",
+      "Opt-in Management & Compliance Verification"
+    ],
+    "benefits": [
+      "Provide 24/7 support by enabling multiple agents to use one official WhatsApp number",
+      "Achieve 98% open rates on critical notifications like order updates and flight changes",
+      "Reduce customer support costs by automating answers to frequently asked questions",
+      "Earn the official WhatsApp 'Green Tick' badge to establish brand trust and authenticity",
+      "Centralize all customer communications by linking WhatsApp directly into your CRM",
+      "Scale your messaging infrastructure to handle thousands of concurrent conversations securely"
+    ],
+    "metaTitle": "WhatsApp Business API Integration | WhatsApp Automation | PakSoft",
+    "metaDescription": "Scale your communications with WhatsApp Business API. We offer API integration, CRM syncing, multi-agent inbox setup, and automated transactional messaging.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Business Verification & API Access",
+          "description": "We navigate Meta's Business Manager verification process, secure a dedicated phone number, and provision your WhatsApp Cloud API environment."
+        },
+        {
+          "step": 2,
+          "title": "System Integration & Webhooks",
+          "description": "Our developers build secure API connections and webhooks to link WhatsApp with your backend ERP, CRM, or custom software for real-time data exchange."
+        },
+        {
+          "step": 3,
+          "title": "Message Template Approval",
+          "description": "We write, format, and submit Highly Structured Message (HSM) templates (for alerts, OTPs, etc.) to Meta, ensuring they comply with strict formatting rules for rapid approval."
+        },
+        {
+          "step": 4,
+          "title": "Automation & Routing Logic",
+          "description": "We configure intelligent routing rules to send incoming chats to the right human department or trigger a chatbot flow based on keyword recognition."
+        },
+        {
+          "step": 5,
+          "title": "Multi-Agent Inbox Setup",
+          "description": "We deploy a shared team inbox solution (like Respond.io or Zendesk), training your agents on how to handle tickets, tag conversations, and transfer chats."
+        },
+        {
+          "step": 6,
+          "title": "Go-Live & Compliance Monitoring",
+          "description": "We launch the integration and continuously monitor your phone number's 'Quality Rating' to prevent Meta from restricting your messaging limits."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the difference between the WhatsApp Business App and the API?",
+          "answer": "The App is free and meant for small local businesses (1-2 users). The API has no user interface out-of-the-box, is built for enterprises, supports unlimited users/agents, allows mass automated broadcasting, and integrates with software."
+        },
+        {
+          "question": "How much does the WhatsApp API cost?",
+          "answer": "Meta charges per 'conversation' (a 24-hour window), not per message. Prices vary by country and conversation category (Marketing vs. Utility/Service). You will also pay a monthly fee for the Inbox software (like Zendesk)."
+        },
+        {
+          "question": "Can I send promotional messages to my entire contact list?",
+          "answer": "Yes, but with strict rules. You must use a Meta-approved 'Marketing Template', and the user must have explicitly opted-in to receive WhatsApp messages from you. Spamming will result in your number being banned."
+        },
+        {
+          "question": "How do I get the Green Tick (Official Business Account)?",
+          "answer": "The Green Tick is granted by Meta only to notable, well-known brands with substantial organic news coverage. While we guide you through the application process, Meta holds the final decision."
+        },
+        {
+          "question": "Can I use my existing landline or toll-free number?",
+          "answer": "Yes. We can register existing landlines or 1-800 numbers with the WhatsApp API, provided the number can receive a phone call for verification purposes."
+        },
+        {
+          "question": "What happens if a customer replies to an automated message?",
+          "answer": "This opens a 'Service Window'. The chat is routed to your shared inbox where a human agent can take over the conversation and reply freely for the next 24 hours without needing a pre-approved template."
+        },
+        {
+          "question": "How long does it take to set up the WhatsApp API?",
+          "answer": "For most businesses, setup and verification take a few days to two weeks, depending on how quickly Meta approves your Business Manager and how complex your integrations are."
+        },
+        {
+          "question": "Can the WhatsApp API integrate with my CRM?",
+          "answer": "Yes. We connect the API to CRMs and helpdesks like HubSpot, Zendesk, or your custom system, so conversations, contacts, and order data stay synchronized across your tools."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "message-circle",
+          "name": "WhatsApp Cloud API"
+        },
+        {
+          "icon": "meta",
+          "name": "Meta Business Manager"
+        },
+        {
+          "icon": "code",
+          "name": "REST APIs & Webhooks"
+        },
+        {
+          "icon": "server",
+          "name": "Node.js / Python"
+        },
+        {
+          "icon": "layout",
+          "name": "Zendesk / Respond.io"
+        },
+        {
+          "icon": "database",
+          "name": "HubSpot / Salesforce"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "WhatsApp Business API Entegrasyonu",
+    "shortDescription": "Müşteri iletişiminizi ölçeklendirin. Otomatik bildirimleri, çoklu temsilci (multi-agent) desteğini ve devasa toplu mesajlaşma (broadcast) yeteneklerini etkinleştirmek için WhatsApp Business API'yi entegre ediyoruz.",
+    "fullDescription": "Standart WhatsApp Business Uygulaması büyüyen işletmeler için yetersizdir. Tek bir cihazla sınırlıdır, otomasyondan yoksundur ve toplu mesajlaşmayı (broadcast) kısıtlar. WhatsApp'ın kurumsal bir iletişim kanalı olarak tam potansiyelini ortaya çıkarmak için WhatsApp Business API'ye ihtiyacınız vardır. Hizmetimiz, WhatsApp Cloud API'nin karmaşık teknik kurulum ve onay sürecini yönetir. API'yi doğrudan mevcut CRM'inize (Salesforce, HubSpot, Zendesk) entegre ediyor veya özel bir gösterge paneli oluşturuyoruz. Bu, birden fazla müşteri hizmetleri temsilcisinin tek bir resmi şirket numarasından yanıt vermesine olanak tanır. Sipariş onayları, kargo güncellemeleri ve randevu hatırlatıcıları gibi işlemsel bildirimleri doğrudan arka uç (backend) sistemlerinizden tetiklenerek otomatikleştiriyoruz. Ayrıca, otomatik giden mesajlarınızın uyumlu olmasını ve asla engellenmemesini sağlamak için Meta'nın katı Mesaj Şablonu (Message Template) onay sürecinde size rehberlik ediyoruz.",
+    "features": [
+      "WhatsApp Cloud API Kurulumu ve Numara Doğrulama",
+      "CRM ve Yardım Masası Entegrasyonu (Zendesk, HubSpot vb.)",
+      "Çoklu Temsilci (Multi-Agent) Ortak Gelen Kutusu Yapılandırması",
+      "Otomatik İşlemsel Bildirimler (Siparişler, Kargo, OTP)",
+      "Meta Mesaj Şablonu (Template) Oluşturma ve Onaylatma",
+      "Etkileşimli Mesajlar (Hızlı Yanıtlar, Liste Mesajları)",
+      "Chatbot ve Otomatik Yönlendirme (Routing) Entegrasyonu",
+      "İzin (Opt-in) Yönetimi ve KVKK/GDPR Uyumluluk Doğrulaması"
+    ],
+    "benefits": [
+      "Birden fazla temsilcinin tek bir resmi WhatsApp numarasını kullanmasını sağlayarak 7/24 destek sunun",
+      "Sipariş güncellemeleri ve uçuş değişiklikleri gibi kritik bildirimlerde %98 açılma oranlarına ulaşın",
+      "Sık sorulan sorulara verilen yanıtları otomatikleştirerek müşteri destek maliyetlerini azaltın",
+      "Marka güveni ve özgünlüğü (authenticity) tesis etmek için resmi WhatsApp 'Yeşil Tik' rozetini kazanın",
+      "WhatsApp'ı doğrudan CRM'inize bağlayarak tüm müşteri iletişimlerini merkezileştirin",
+      "Mesajlaşma altyapınızı aynı anda binlerce eşzamanlı görüşmeyi güvenli bir şekilde yönetecek şekilde ölçeklendirin"
+    ],
+    "metaTitle": "WhatsApp Business API Entegrasyonu | WhatsApp Otomasyonu | PakSoft",
+    "metaDescription": "WhatsApp Business API ile iletişiminizi ölçeklendirin. API entegrasyonu, CRM senkronizasyonu, çoklu temsilci gelen kutusu ve otomatik işlemsel mesajlaşma sunuyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "İşletme Doğrulaması ve API Erişimi",
+          "description": "Meta'nın Business Manager doğrulama sürecini yönetiyor, özel bir telefon numarası güvenceye alıyor ve WhatsApp Cloud API ortamınızı hazırlıyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Sistem Entegrasyonu ve Webhook'lar",
+          "description": "Geliştiricilerimiz, gerçek zamanlı veri alışverişi için WhatsApp'ı arka uç (backend) ERP, CRM veya özel yazılımınıza bağlamak üzere güvenli API bağlantıları ve webhook'lar oluşturur."
+        },
+        {
+          "step": 3,
+          "title": "Mesaj Şablonu (Template) Onayı",
+          "description": "Uyarılar, OTP'ler vb. için Yüksek Yapılandırılmış Mesaj (HSM) şablonlarını yazar, biçimlendirir ve hızlı onay için katı kurallara uymalarını sağlayarak Meta'ya sunarız."
+        },
+        {
+          "step": 4,
+          "title": "Otomasyon ve Yönlendirme Mantığı",
+          "description": "Gelen sohbetleri doğru insan departmanına göndermek veya anahtar kelime tanımasına dayalı bir sohbet robotu (chatbot) akışını tetiklemek için akıllı yönlendirme kuralları yapılandırıyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Çoklu Temsilci Ortak Gelen Kutusu Kurulumu",
+          "description": "Temsilcilerinizi biletleri (tickets) nasıl ele alacakları, konuşmaları nasıl etiketleyecekleri ve sohbetleri nasıl aktaracakları konusunda eğiterek paylaşımlı bir ekip gelen kutusu (Respond.io veya Zendesk gibi) çözümü kuruyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Canlıya Alma ve Uyumluluk İzleme",
+          "description": "Entegrasyonu başlatıyor ve Meta'nın mesajlaşma sınırlarınızı kısıtlamasını önlemek için telefon numaranızın 'Kalite Puanı'nı (Quality Rating) sürekli izliyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "WhatsApp Business Uygulaması ile API arasındaki fark nedir?",
+          "answer": "Uygulama (App) ücretsizdir ve küçük yerel işletmeler (1-2 kullanıcı) içindir. API'nin kullanıma hazır bir arayüzü yoktur, kurumsal işletmeler için oluşturulmuştur, sınırsız kullanıcıyı/temsilciyi destekler, toplu otomatik yayına (broadcast) izin verir ve yazılımlarla entegre olur."
+        },
+        {
+          "question": "WhatsApp API'nin maliyeti nedir?",
+          "answer": "Meta, mesaj başına değil, 'görüşme' (24 saatlik bir pencere) başına ücret alır. Fiyatlar ülkeye ve görüşme kategorisine (Pazarlama ve Fayda/Hizmet) göre değişir. Ayrıca Gelen Kutusu (Inbox) yazılımı (Zendesk gibi) için aylık bir ücret ödeyeceksiniz."
+        },
+        {
+          "question": "Tüm kişi listeme promosyon mesajları gönderebilir miyim?",
+          "answer": "Evet, ancak katı kurallarla. Meta onaylı bir 'Pazarlama Şablonu' kullanmalısınız ve kullanıcı sizden WhatsApp mesajları almayı açıkça (opt-in) kabul etmiş olmalıdır. Spam yapmak numaranızın yasaklanmasına neden olacaktır."
+        },
+        {
+          "question": "Yeşil Tik'i (Resmi İşletme Hesabı) nasıl alırım?",
+          "answer": "Yeşil Tik, Meta tarafından yalnızca önemli organik haber kapsamına sahip dikkate değer, tanınmış markalara verilir. Başvuru sürecinde size rehberlik etsek de, nihai karar Meta'ya aittir."
+        },
+        {
+          "question": "Mevcut sabit hattımı veya ücretsiz numaramı kullanabilir miyim?",
+          "answer": "Evet. Numaranın doğrulama amacıyla telefon çağrısı alabilmesi koşuluyla, mevcut sabit hatları veya 0850'li numaraları WhatsApp API'ye kaydedebiliriz."
+        },
+        {
+          "question": "Bir müşteri otomatik bir mesaja yanıt verirse ne olur?",
+          "answer": "Bu, bir 'Hizmet Penceresi' (Service Window) açar. Sohbet, bir insan temsilcinin görüşmeyi devralabileceği ve önceden onaylanmış bir şablona ihtiyaç duymadan önümüzdeki 24 saat boyunca serbestçe yanıt verebileceği paylaşılan gelen kutunuza yönlendirilir."
+        },
+        {
+          "question": "WhatsApp API kurulumu ne kadar sürer?",
+          "answer": "Çoğu işletme için kurulum ve doğrulama, Meta’nın Business Manager’ınızı ne kadar hızlı onayladığına ve entegrasyonlarınızın karmaşıklığına bağlı olarak birkaç gün ile iki hafta arasında sürer."
+        },
+        {
+          "question": "WhatsApp API CRM’imle entegre olabilir mi?",
+          "answer": "Evet. API’yi HubSpot, Zendesk gibi CRM ve yardım masalarına ya da özel sisteminize bağlarız; böylece görüşmeler, kişiler ve sipariş verileri araçlarınız arasında senkronize kalır."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "message-circle",
+          "name": "WhatsApp Cloud API"
+        },
+        {
+          "icon": "meta",
+          "name": "Meta Business Manager"
+        },
+        {
+          "icon": "code",
+          "name": "REST APIs & Webhooks"
+        },
+        {
+          "icon": "server",
+          "name": "Node.js / Python"
+        },
+        {
+          "icon": "layout",
+          "name": "Zendesk / Respond.io"
+        },
+        {
+          "icon": "database",
+          "name": "HubSpot / Salesforce"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "WhatsApp Business API Integration",
+    "shortDescription": "Skalieren Sie Ihre Kundenkommunikation. Wir integrieren die WhatsApp Business API für automatisierte Benachrichtigungen, Multi-Agenten-Support und Massen-Broadcasts.",
+    "fullDescription": "Die Standard-WhatsApp-Business-App reicht für wachsende Unternehmen nicht aus. Sie ist auf ein Gerät beschränkt, bietet keine Automatisierung und schränkt den Massenversand ein. Um WhatsApp als echten Unternehmenskanal zu nutzen, benötigen Sie die WhatsApp Business API. Wir kümmern uns um das komplexe technische Setup und den Genehmigungsprozess der WhatsApp Cloud API. Wir integrieren die API direkt in Ihr bestehendes CRM (Salesforce, HubSpot, Zendesk) oder eine maßgeschneiderte Inbox-Lösung. Dies ermöglicht es mehreren Mitarbeitern, über eine einzige offizielle Firmennummer zu antworten. Wir automatisieren transaktionale Benachrichtigungen – wie Bestellbestätigungen oder Termin-Erinnerungen –, die direkt aus Ihrem Backend getriggert werden. Wir navigieren Sie sicher durch Metas strenge Richtlinien für Nachrichtenvorlagen.",
+    "features": [
+      "WhatsApp Cloud API Setup & Nummernverifizierung",
+      "CRM- & Helpdesk-Integration (Zendesk, HubSpot etc.)",
+      "Multi-Agent Shared Inbox Konfiguration",
+      "Automatisierte transaktionale Benachrichtigungen (Versand, OTP)",
+      "Erstellung & Genehmigung von Meta Message Templates",
+      "Interaktive Nachrichten (Quick Replies, List Messages)",
+      "Chatbot & Automated Routing Integration",
+      "Opt-in Management & Compliance-Sicherung"
+    ],
+    "benefits": [
+      "Bieten Sie 24/7-Support durch Multi-Agenten-Zugriff auf eine WhatsApp-Nummer",
+      "Erreichen Sie 98 % Öffnungsraten bei kritischen Benachrichtigungen wie Updates",
+      "Senken Sie Support-Kosten durch Automatisierung von Standardfragen (FAQs)",
+      "Erhalten Sie den 'Grünen Haken' (Green Tick), um Markenvertrauen aufzubauen",
+      "Zentralisieren Sie die Kundenkommunikation durch direkte CRM-Anbindung",
+      "Skalieren Sie Ihre Infrastruktur, um Tausende Chats gleichzeitig zu verwalten"
+    ],
+    "metaTitle": "WhatsApp Business API Integration | WhatsApp Automation | PakSoft",
+    "metaDescription": "Skalieren Sie Ihre Kommunikation. Wir bieten WhatsApp Cloud API Integration, CRM-Anbindung, Multi-Agent Inbox und automatisierte Transaktionsnachrichten.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Business-Verifizierung & API-Zugang",
+          "description": "Wir durchlaufen Metas Business-Manager-Verifizierungsprozess, sichern eine dedizierte Rufnummer und richten Ihre API-Umgebung ein."
+        },
+        {
+          "step": 2,
+          "title": "Systemintegration & Webhooks",
+          "description": "Unsere Entwickler bauen sichere API-Verbindungen (Webhooks), um WhatsApp in Echtzeit mit Ihrem ERP, CRM oder Shop-System zu verknüpfen."
+        },
+        {
+          "step": 3,
+          "title": "Message Template Genehmigung",
+          "description": "Wir schreiben, formatieren und reichen strukturierte Vorlagen (HSM) bei Meta ein, um eine schnelle Genehmigung für Ihre Alerts zu gewährleisten."
+        },
+        {
+          "step": 4,
+          "title": "Automatisierung & Routing",
+          "description": "Wir konfigurieren intelligente Routing-Regeln, um Chats an die richtige Abteilung zu leiten oder keywordbasierte Chatbots auszulösen."
+        },
+        {
+          "step": 5,
+          "title": "Multi-Agent Inbox Setup",
+          "description": "Wir implementieren eine Shared-Inbox-Lösung (wie Respond.io) und schulen Ihr Team im Umgang mit Tickets und der Übergabe von Chats."
+        },
+        {
+          "step": 6,
+          "title": "Go-Live & Qualitätsüberwachung",
+          "description": "Wir überwachen nach dem Launch kontinuierlich das 'Quality Rating' Ihrer Rufnummer, um Einschränkungen durch Meta zu verhindern."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist der Unterschied zwischen der Business App und der API?",
+          "answer": "Die App ist für kleine, lokale Firmen (1-2 Nutzer). Die API ist für Großunternehmen, unterstützt unbegrenzt viele Agenten, automatisierten Massenversand, Integrationen in Software und hat keine eigene Benutzeroberfläche."
+        },
+        {
+          "question": "Was kostet die WhatsApp API?",
+          "answer": "Meta berechnet Kosten pro 'Unterhaltung' (24-Stunden-Fenster), nicht pro Nachricht. Preise variieren nach Land und Art der Unterhaltung (Marketing vs. Service). Zusätzlich fallen Kosten für die Inbox-Software an."
+        },
+        {
+          "question": "Kann ich Werbenachrichten an alle meine Kontakte senden?",
+          "answer": "Ja, aber unter strengen Auflagen. Sie müssen ein genehmigtes 'Marketing-Template' verwenden und ein explizites Opt-in des Nutzers haben. Spam führt zur Sperrung der Nummer."
+        },
+        {
+          "question": "Wie bekomme ich den grünen Haken (Official Business Account)?",
+          "answer": "Der Grüne Haken wird von Meta nur an bekannte Marken mit substanzieller organischer Medienpräsenz vergeben. Wir begleiten den Antrag, aber die finale Entscheidung liegt bei Meta."
+        },
+        {
+          "question": "Kann ich meine bestehende Festnetznummer verwenden?",
+          "answer": "Ja. Wir können bestehende Festnetznummern für die WhatsApp API registrieren, sofern die Nummer einen Anruf zur Verifizierung empfangen kann."
+        },
+        {
+          "question": "Was passiert, wenn ein Kunde auf eine automatisierte Nachricht antwortet?",
+          "answer": "Das öffnet ein 'Service-Fenster'. Der Chat wird in die Shared Inbox geleitet, wo ein Mitarbeiter das Gespräch übernehmen und für 24 Stunden frei (ohne Template) antworten kann."
+        },
+        {
+          "question": "Wie lange dauert die Einrichtung der WhatsApp-API?",
+          "answer": "Für die meisten Unternehmen dauern Einrichtung und Verifizierung einige Tage bis zwei Wochen, je nachdem, wie schnell Meta Ihren Business Manager genehmigt und wie komplex Ihre Integrationen sind."
+        },
+        {
+          "question": "Kann die WhatsApp-API in mein CRM integriert werden?",
+          "answer": "Ja. Wir verbinden die API mit CRMs und Helpdesks wie HubSpot, Zendesk oder Ihrem individuellen System, sodass Konversationen, Kontakte und Bestelldaten über Ihre Tools hinweg synchron bleiben."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "message-circle",
+          "name": "WhatsApp Cloud API"
+        },
+        {
+          "icon": "meta",
+          "name": "Meta Business Manager"
+        },
+        {
+          "icon": "code",
+          "name": "REST APIs & Webhooks"
+        },
+        {
+          "icon": "server",
+          "name": "Node.js / Python"
+        },
+        {
+          "icon": "layout",
+          "name": "Zendesk / Respond.io"
+        },
+        {
+          "icon": "database",
+          "name": "HubSpot / Salesforce"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "واٹس ایپ بزنس API انٹیگریشن",
+    "shortDescription": "اپنی کسٹمر کمیونیکیشن کو وسیع کریں۔ ہم خودکار اطلاعات، ملٹی ایجنٹ سپورٹ، اور بڑے پیمانے پر براڈکاسٹ کی صلاحیتوں کو فعال کرنے کے لیے WhatsApp Business API کو مربوط کرتے ہیں۔",
+    "fullDescription": "معیاری WhatsApp بزنس ایپ بڑھتی ہوئی کمپنیوں کے لیے ناکافی ہے۔ یہ ایک ڈیوائس تک محدود ہے، اور اس میں آٹومیشن نہیں ہے۔ واٹس ایپ کی مکمل صلاحیت کو کھولنے کے لیے، آپ کو واٹس ایپ بزنس API کی ضرورت ہے۔ ہم واٹس ایپ کلاؤڈ API کے پیچیدہ تکنیکی سیٹ اپ کو سنبھالتے ہیں۔ ہم API کو براہ راست آپ کے موجودہ CRM (جیسے Salesforce، Zendesk) میں ضم کرتے ہیں تاکہ کئی ایجنٹس ایک ہی سرکاری نمبر سے جواب دے سکیں۔ ہم بیک اینڈ سسٹمز سے خودکار اطلاعات (جیسے آرڈر کی تصدیق) کو بھیجتے ہیں۔",
+    "features": [
+      "WhatsApp Cloud API کا سیٹ اپ اور نمبر کی تصدیق",
+      "CRM اور ہیلپ ڈیسک انٹیگریشن",
+      "ملٹی ایجنٹ مشترکہ ان باکس کنفیگریشن",
+      "خودکار لین دین کی اطلاعات (آرڈرز، شپنگ)",
+      "Meta کے میسج ٹیمپلیٹس کی تخلیق اور منظوری",
+      "انٹرایکٹو پیغامات (فوری جوابات، فہرستیں)",
+      "چیٹ بوٹ اور خودکار روٹنگ (Routing)",
+      "Opt-in اور پرائیویسی کا انتظام"
+    ],
+    "benefits": [
+      "متعدد ایجنٹوں کو ایک ہی واٹس ایپ نمبر استعمال کرنے کی اجازت دے کر 24/7 سپورٹ فراہم کریں",
+      "آرڈر اپ ڈیٹس جیسی اہم اطلاعات پر 98% اوپن ریٹ حاصل کریں",
+      "عمومی سوالات کے جوابات کو خودکار کر کے سپورٹ لاگت کو کم کریں",
+      "صارفین کے ساتھ برانڈ کا اعتماد قائم کرنے کے لیے 'گرین ٹک' بیج حاصل کریں",
+      "واٹس ایپ کو اپنے CRM سے جوڑ کر تمام کسٹمر مواصلات کو مرکزی بنائیں"
+    ],
+    "metaTitle": "واٹس ایپ بزنس API انٹیگریشن ایجنسی | PakSoft",
+    "metaDescription": "WhatsApp Business API کے ساتھ اپنے مواصلات کو اسکیل کریں۔ ہم API انٹیگریشن، CRM سنک، ملٹی ایجنٹ ان باکس، اور خودکار میسجنگ پیش کرتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "کاروبار کی تصدیق اور API تک رسائی",
+          "description": "ہم Meta کے بزنس مینیجر کی تصدیق کا عمل مکمل کرتے ہیں اور آپ کے لیے واٹس ایپ کلاؤڈ API کا ماحول تیار کرتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "سسٹم انٹیگریشن اور ویب ہکس (Webhooks)",
+          "description": "ہمارے ڈیولپرز واٹس ایپ کو آپ کے ERP یا CRM کے ساتھ جوڑنے کے لیے محفوظ API کنکشن بناتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "میسج ٹیمپلیٹ کی منظوری",
+          "description": "ہم الرٹس اور OTPs کے لیے میسج ٹیمپلیٹس لکھتے ہیں اور Meta سے ان کی فوری منظوری کو یقینی بناتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "آٹومیشن اور روٹنگ",
+          "description": "ہم ذہین روٹنگ کے اصول مرتب کرتے ہیں تاکہ چیٹس کو صحیح محکمہ یا چیٹ بوٹ کی طرف بھیجا جا سکے۔"
+        },
+        {
+          "step": 5,
+          "title": "ملٹی ایجنٹ ان باکس سیٹ اپ",
+          "description": "ہم ایک مشترکہ ٹیم ان باکس سلوشن نافذ کرتے ہیں اور آپ کے ایجنٹوں کو اس کے استعمال کی تربیت دیتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "کوالٹی مانیٹرنگ",
+          "description": "انٹیگریشن کے بعد، ہم آپ کے نمبر کی 'کوالٹی ریٹنگ' کی مسلسل نگرانی کرتے ہیں تاکہ میٹا کی پابندیوں سے بچا جا سکے۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "واٹس ایپ بزنس ایپ اور API میں کیا فرق ہے؟",
+          "answer": "ایپ چھوٹے کاروباری اداروں (1-2 صارفین) کے لیے ہے اور مفت ہے۔ API بڑے اداروں کے لیے ہے، اس میں لامحدود صارفین کی حمایت ہوتی ہے، اور سافٹ ویئر انٹیگریشن کی اجازت ہے۔"
+        },
+        {
+          "question": "واٹس ایپ API کی قیمت کیا ہے؟",
+          "answer": "Meta فی 'گفتگو' (24 گھنٹے کے دورانیے) چارج کرتا ہے، فی پیغام نہیں۔ قیمتیں زمرے (جیسے مارکیٹنگ یا سروس) کے لحاظ سے مختلف ہوتی ہیں۔"
+        },
+        {
+          "question": "کیا میں پروموشنل پیغامات بھیج سکتا ہوں؟",
+          "answer": "ہاں، لیکن صارف کی اجازت (Opt-in) لازمی ہے، اور آپ کو Meta سے منظور شدہ مارکیٹنگ ٹیمپلیٹ استعمال کرنا ہوگا۔"
+        },
+        {
+          "question": "گرین ٹک (Green Tick) کیسے ملتا ہے؟",
+          "answer": "میٹا گرین ٹک صرف مشہور برانڈز کو دیتا ہے جن کی خبروں میں نامیاتی موجودگی ہو۔ ہم আবেদন میں مدد کرتے ہیں، لیکن حتمی فیصلہ Meta کا ہوتا ہے۔"
+        },
+        {
+          "question": "کیا میں اپنا موجودہ landline یا toll-free نمبر استعمال کر سکتا ہوں؟",
+          "answer": "جی ہاں۔ ہم موجودہ landlines یا 1-800 نمبرز کو WhatsApp API کے ساتھ رجسٹر کر سکتے ہیں، بشرطیکہ وہ نمبر verification کے لیے فون کال وصول کر سکے۔ اس سے آپ اپنی پہچانی ہوئی شناخت برقرار رکھتے ہیں۔"
+        },
+        {
+          "question": "اگر کوئی گاہک خودکار پیغام کا جواب دے تو کیا ہوتا ہے؟",
+          "answer": "اس سے ایک Service Window کھل جاتی ہے۔ چیٹ آپ کے shared inbox میں منتقل ہو جاتی ہے جہاں ایک انسانی agent اگلے 24 گھنٹوں تک بغیر کسی pre-approved template کے آزادانہ جواب دے سکتا ہے۔"
+        },
+        {
+          "question": "WhatsApp API سیٹ اپ کرنے میں کتنا وقت لگتا ہے؟",
+          "answer": "زیادہ تر کاروباروں کے لیے سیٹ اپ اور verification میں چند دن سے دو ہفتے لگتے ہیں، اس پر منحصر کہ Meta آپ کا Business Manager کتنی جلدی منظور کرتا ہے اور آپ کے integrations کتنے پیچیدہ ہیں۔"
+        },
+        {
+          "question": "کیا WhatsApp API میرے CRM کے ساتھ مربوط ہو سکتا ہے؟",
+          "answer": "جی ہاں۔ ہم API کو HubSpot، Zendesk جیسے CRMs اور helpdesks یا آپ کے custom سسٹم سے جوڑتے ہیں، تاکہ گفتگو، رابطے اور آرڈر ڈیٹا آپ کے تمام ٹولز میں ہم آہنگ رہے۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "message-circle",
+          "name": "WhatsApp Cloud API"
+        },
+        {
+          "icon": "meta",
+          "name": "Meta Business Manager"
+        },
+        {
+          "icon": "code",
+          "name": "REST APIs & Webhooks"
+        },
+        {
+          "icon": "server",
+          "name": "Node.js / Python"
+        },
+        {
+          "icon": "layout",
+          "name": "Zendesk / Respond.io"
+        },
+        {
+          "icon": "database",
+          "name": "HubSpot / Salesforce"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تكامل WhatsApp Business API",
+    "shortDescription": "توسيع نطاق تواصلك مع العملاء. نقوم بدمج WhatsApp Business API لتمكين الإشعارات التلقائية، ودعم الوكلاء المتعددين (Multi-agent)، وإمكانيات البث الضخمة.",
+    "fullDescription": "تطبيق WhatsApp Business القياسي غير كافٍ للشركات النامية. فهو يقتصر على جهاز واحد، ويفتقر إلى الأتمتة، ويقيد رسائل البث. لإطلاق العنان لإمكانات WhatsApp الكاملة كقناة اتصال مؤسسية، تحتاج إلى WhatsApp Business API. تتعامل خدمتنا مع الإعداد الفني المعقد وعملية الموافقة الخاصة بـ WhatsApp Cloud API. نحن ندمج واجهة برمجة التطبيقات (API) مباشرة في نظام إدارة علاقات العملاء الحالي لديك (Salesforce، HubSpot، Zendesk) أو نبني لوحة معلومات مخصصة. يتيح ذلك للعديد من وكلاء خدمة العملاء الرد من رقم شركة رسمي واحد. نقوم بأتمتة الإشعارات الخاصة بالمعاملات - مثل تأكيدات الطلبات، وتحديثات الشحن، وتذكيرات المواعيد - والتي يتم تشغيلها مباشرة من أنظمتك الخلفية. كما نرشدك عبر عملية الموافقة الصارمة على قوالب رسائل Meta لضمان توافق رسائلك الصادرة الآلية وعدم حظرها أبداً.",
+    "features": [
+      "إعداد WhatsApp Cloud API والتحقق من الرقم",
+      "التكامل مع أنظمة CRM ومكاتب المساعدة (Zendesk، HubSpot، إلخ)",
+      "تكوين صندوق وارد مشترك لوكلاء متعددين (Multi-Agent)",
+      "إشعارات المعاملات الآلية (الطلبات، الشحن، OTP)",
+      "إنشاء والموافقة على قوالب رسائل (Templates) من Meta",
+      "الرسائل التفاعلية (الردود السريعة، ورسائل القوائم)",
+      "روبوتات الدردشة (Chatbot) وتكامل التوجيه الآلي",
+      "إدارة الموافقة (Opt-in) والتحقق من الامتثال لسياسات الخصوصية"
+    ],
+    "benefits": [
+      "توفير دعم على مدار الساعة طوال أيام الأسبوع بتمكين عدة وكلاء من استخدام رقم واتساب رسمي واحد",
+      "تحقيق معدلات فتح بنسبة 98% على الإشعارات الهامة مثل تحديثات الطلبات وتغييرات الرحلات",
+      "تقليل تكاليف دعم العملاء من خلال أتمتة الإجابات على الأسئلة الشائعة",
+      "الحصول على شارة 'العلامة الخضراء' (Green Tick) الرسمية لترسيخ ثقة العلامة التجارية وأصالتها",
+      "مركزية جميع اتصالات العملاء عن طريق ربط WhatsApp مباشرة في نظام CRM الخاص بك",
+      "توسيع نطاق بنية المراسلة التحتية الخاصة بك للتعامل مع آلاف المحادثات المتزامنة بأمان"
+    ],
+    "metaTitle": "وكالة دمج WhatsApp Business API | أتمتة الواتساب | PakSoft",
+    "metaDescription": "قم بتوسيع نطاق اتصالاتك عبر WhatsApp Business API. نقدم تكامل API، ومزامنة CRM، وإعداد صندوق وارد متعدد الوكلاء، والمراسلة الآلية.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "التحقق من النشاط التجاري والوصول إلى API",
+          "description": "نجتاز عملية التحقق من Meta Business Manager، ونؤمن رقم هاتف مخصصاً، ونوفر بيئة WhatsApp Cloud API الخاصة بك."
+        },
+        {
+          "step": 2,
+          "title": "تكامل النظام و Webhooks",
+          "description": "يقوم مطورونا ببناء اتصالات API و webhooks آمنة لربط WhatsApp مع ERP الخلفي أو CRM الخاص بك لتبادل البيانات في الوقت الفعلي."
+        },
+        {
+          "step": 3,
+          "title": "الموافقة على قوالب الرسائل",
+          "description": "نقوم بكتابة وتنسيق وإرسال قوالب الرسائل عالية الهيكلة (للتنبيهات وغيرها) إلى Meta، لضمان امتثالها لقواعد التنسيق الصارمة للموافقة السريعة."
+        },
+        {
+          "step": 4,
+          "title": "الأتمتة ومنطق التوجيه (Routing)",
+          "description": "نقوم بتكوين قواعد توجيه ذكية لإرسال الدردشات الواردة إلى القسم البشري المناسب أو تشغيل تدفق روبوت الدردشة بناءً على الكلمات الرئيسية."
+        },
+        {
+          "step": 5,
+          "title": "إعداد البريد الوارد متعدد الوكلاء",
+          "description": "ننشر حلاً لصندوق الوارد المشترك للفريق (مثل Respond.io أو Zendesk)، وندرب وكلاءك على كيفية التعامل مع التذاكر وتحويل الدردشات."
+        },
+        {
+          "step": 6,
+          "title": "الانطلاق ومراقبة الامتثال",
+          "description": "نطلق عملية الدمج ونراقب باستمرار 'تقييم الجودة' لرقم هاتفك لمنع Meta من تقييد حدود المراسلة الخاصة بك."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما الفرق بين تطبيق WhatsApp Business و WhatsApp API؟",
+          "answer": "التطبيق مجاني ومخصص للشركات المحلية الصغيرة (مستخدم واحد أو مستخدمين). لا تحتوي واجهة برمجة التطبيقات (API) على واجهة مستخدم جاهزة، وهي مصممة للمؤسسات، وتدعم عدداً غير محدود من المستخدمين / الوكلاء، وتسمح بالبث الآلي الشامل، وتتكامل مع البرامج الأخرى."
+        },
+        {
+          "question": "كم تكلفة WhatsApp API؟",
+          "answer": "تفرض Meta رسوماً على أساس 'المحادثة' (نافذة مدتها 24 ساعة)، وليس على كل رسالة. تختلف الأسعار حسب البلد وفئة المحادثة (التسويق مقابل الخدمة). ستدفع أيضاً رسوماً شهرية لبرنامج صندوق الوارد (مثل Zendesk)."
+        },
+        {
+          "question": "هل يمكنني إرسال رسائل ترويجية إلى قائمة جهات الاتصال الخاصة بي بالكامل؟",
+          "answer": "نعم، ولكن بقواعد صارمة. يجب عليك استخدام 'قالب تسويق' معتمد من Meta، ويجب أن يكون المستخدم قد وافق صراحة (Opt-in) على تلقي رسائل WhatsApp منك. سيؤدي إرسال رسائل غير مرغوب فيها إلى حظر رقمك."
+        },
+        {
+          "question": "كيف أحصل على العلامة الخضراء (حساب تجاري رسمي)؟",
+          "answer": "تُمنح العلامة الخضراء (Green Tick) من Meta فقط للعلامات التجارية البارزة والمعروفة والتي تحظى بتغطية إخبارية عضوية كبيرة. بينما نرشدك خلال عملية التقديم، فإن Meta هي من تتخذ القرار النهائي."
+        },
+        {
+          "question": "هل يمكنني استخدام رقم الخط الأرضي أو الرقم المجاني الحالي الخاص بي؟",
+          "answer": "نعم. يمكننا تسجيل الخطوط الأرضية الحالية أو أرقام 1-800 باستخدام WhatsApp API، شريطة أن يتمكن الرقم من تلقي مكالمة هاتفية لأغراض التحقق."
+        },
+        {
+          "question": "ماذا يحدث إذا رد العميل على رسالة آلية؟",
+          "answer": "يفتح هذا 'نافذة خدمة' (Service Window). يتم توجيه الدردشة إلى صندوق الوارد المشترك الخاص بك حيث يمكن لوكيل بشري تولي المحادثة والرد بحرية لمدة 24 ساعة القادمة دون الحاجة إلى قالب معتمد مسبقاً."
+        },
+        {
+          "question": "كم يستغرق إعداد واجهة WhatsApp API؟",
+          "answer": "بالنسبة لمعظم الشركات، يستغرق الإعداد والتحقق من بضعة أيام إلى أسبوعين، حسب سرعة موافقة Meta على Business Manager الخاص بك ومدى تعقيد عمليات الدمج لديك."
+        },
+        {
+          "question": "هل يمكن دمج واجهة WhatsApp API مع نظام CRM لدي؟",
+          "answer": "نعم. نربط الواجهة بأنظمة CRM ومكاتب المساعدة مثل HubSpot وZendesk أو نظامك المخصص، لتبقى المحادثات وجهات الاتصال وبيانات الطلبات متزامنة عبر أدواتك."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "message-circle",
+          "name": "WhatsApp Cloud API"
+        },
+        {
+          "icon": "meta",
+          "name": "Meta Business Manager"
+        },
+        {
+          "icon": "code",
+          "name": "REST APIs & Webhooks"
+        },
+        {
+          "icon": "server",
+          "name": "Node.js / Python"
+        },
+        {
+          "icon": "layout",
+          "name": "Zendesk / Respond.io"
+        },
+        {
+          "icon": "database",
+          "name": "HubSpot / Salesforce"
+        }
+      ]
+    }
+  }
+}

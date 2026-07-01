@@ -1,0 +1,638 @@
+{
+  "slug": "data-visualization",
+  "en": {
+    "name": "Data Visualization",
+    "shortDescription": "Transform complex raw data into interactive, real-time dashboards and visual stories. We design custom business intelligence views that help your team make faster, smarter, and data-driven decisions.",
+    "fullDescription": "Raw enterprise data is only valuable if your team can interpret it quickly. We build custom data visualization solutions and interactive dashboards that turn complex, multi-source datasets into clear, actionable business insights. Using modern tools like Tableau, Power BI, and custom D3.js libraries, we design responsive visual interfaces tailored to your specific workflows and KPIs. Our services cover everything from setting up real-time streaming data feeds to embedding analytical dashboards directly into your existing SaaS products and internal portals. By emphasizing intuitive UI/UX and structured data storytelling, we ensure that non-technical stakeholders can easily identify trends, spot anomalies, and make informed operational decisions without needing manual reports.",
+    "features": [
+      "Interactive Dashboard Design & Layouts",
+      "Real-Time Data Streaming Integration",
+      "Custom Chart and Widget Development",
+      "Multi-Source Data Aggregation & ETL",
+      "Embedded Analytics for SaaS Applications",
+      "Automated Reporting and Email Scheduling",
+      "Role-Based Access Control and Security",
+      "Mobile-Optimized Responsive Visualizations"
+    ],
+    "benefits": [
+      "Identify operational trends and anomalies instantly",
+      "Reduce time spent creating manual reports by 90%",
+      "Enable self-service data exploration for business teams",
+      "Improve decision-making speed across all departments",
+      "Increase user engagement with embedded interactive charts",
+      "Consolidate scattered data sources into a single view"
+    ],
+    "metaTitle": "Data Visualization & Dashboards | PakSoft",
+    "metaDescription": "Turn complex data into interactive, real-time dashboards. We build custom Tableau, Power BI, and D3.js visualization solutions. Contact us today.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Requirement Analysis",
+          "description": "We collaborate with your business team to define target KPIs, user roles, data sources, and specific performance needs."
+        },
+        {
+          "step": 2,
+          "title": "Data Engineering",
+          "description": "We clean, structure, and connect your database sources to establish stable, optimized query pipelines for fast data loading."
+        },
+        {
+          "step": 3,
+          "title": "UI/UX & Wireframing",
+          "description": "We design clean dashboard layouts and wireframes, prioritizing clarity, user interaction, and easy data readability."
+        },
+        {
+          "step": 4,
+          "title": "Visualization Development",
+          "description": "We build the dashboards using Tableau, Power BI, or custom D3.js code, integrating live data feeds seamlessly."
+        },
+        {
+          "step": 5,
+          "title": "Testing & Integration",
+          "description": "We test loading times, data accuracy, and responsive layout scaling before embedding views into your systems securely."
+        },
+        {
+          "step": 6,
+          "title": "Training & Optimization",
+          "description": "We train your team on how to customize dashboard views and continually optimize dashboard query speed for large datasets."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Which data visualization tools do you recommend?",
+          "answer": "We recommend tools based on your budget and hosting preferences. Tableau and Power BI are excellent for enterprise analytics, while custom libraries like D3.js are ideal for embedding unique charts directly into SaaS products."
+        },
+        {
+          "question": "Can you connect dashboards to databases in real time?",
+          "answer": "Yes, we build live data pipelines connecting to PostgreSQL, MySQL, Snowflake, and MongoDB. We set up WebSockets or configured caching mechanisms to show real-time changes without overloading your databases."
+        },
+        {
+          "question": "Do you build custom charts from scratch?",
+          "answer": "Absolutely. When standard charts in Tableau or Power BI do not fit your reporting needs, we write custom JavaScript using D3.js or Chart.js to build bespoke widgets tailored to your workflows."
+        },
+        {
+          "question": "How do you ensure data security in embedded analytics?",
+          "answer": "We implement secure authentication tokens and role-based row-level security. This ensures that users only see the specific data they are authorized to view when dashboards are embedded into external applications."
+        },
+        {
+          "question": "Is training provided for our staff?",
+          "answer": "Yes, we provide comprehensive training sessions and video documentation. We teach your business analysts how to create custom reports, filter views, and interpret advanced data visualizations independently."
+        },
+        {
+          "question": "Can dashboards be viewed on mobile devices?",
+          "answer": "Yes, all our custom dashboards are designed using responsive layout principles. We create optimized mobile views in Power BI, Tableau, and custom web apps to ensure readable charts on all screen sizes."
+        },
+        {
+          "question": "How do you optimize slow-loading dashboards?",
+          "answer": "We optimize performance at the database layer by writing efficient SQL queries, building materialized views, and implementing caching. This ensures your dashboard renders in seconds, even with millions of rows."
+        },
+        {
+          "question": "Can we export reports to PDF or Excel?",
+          "answer": "Yes, we integrate export features allowing users to download complete dashboards as PDF files, or export raw underlying data directly into CSV or Excel files with a single click."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Tableau",
+          "icon": "tableau"
+        },
+        {
+          "name": "Power BI",
+          "icon": "powerbi"
+        },
+        {
+          "name": "D3.js",
+          "icon": "d3js"
+        },
+        {
+          "name": "Looker",
+          "icon": "looker"
+        },
+        {
+          "name": "Metabase",
+          "icon": "metabase"
+        },
+        {
+          "name": "Apache Superset",
+          "icon": "superset"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Veri Görselleştirme",
+    "shortDescription": "Karmaşık ham verileri etkileşimli, gerçek zamanlı panolara ve görsel hikayelere dönüştürün. Ekibinizin daha hızlı ve veriye dayalı kararlar almasına yardımcı olan özel iş zekası görünümleri tasarlıyoruz.",
+    "fullDescription": "Ham kurumsal veriler, yalnızca ekibiniz bunları hızlı bir şekilde yorumlayabildiğinde değerlidir. Karmaşık ve çok kaynaklı veri kümelerini net, eyleme dönüştürülebilir iş içgörülerine dönüştüren özel veri görselleştirme çözümleri ve etkileşimli panolar oluşturuyoruz. Tableau, Power BI ve özel D3.js kütüphaneleri gibi modern araçları kullanarak, özel iş akışlarınıza ve KPI'larınıza göre uyarlanmış duyarlı görsel arayüzler tasarlıyoruz. Hizmetlerimiz, gerçek zamanlı veri akışlarının kurulmasından analitik panoların doğrudan mevcut SaaS ürünlerinize ve iç portallarınıza gömülmesine kadar her şeyi kapsar. Sezgisel kullanıcı arayüzü ve yapılandırılmış veri hikayeleştirmesine önem vererek, teknik olmayan paydaşların manuel raporlara ihtiyaç duymadan eğilimleri kolayca belirlemesini, anormallikleri fark etmesini ve bilinçli kararlar almasını sağlıyoruz.",
+    "features": [
+      "Etkileşimli Panel Tasarımı ve Düzenleri",
+      "Gerçek Zamanlı Veri Akışı Entegrasyonu",
+      "Özel Grafik ve Bileşen Geliştirme",
+      "Çok Kaynaklı Veri Entegrasyonu ve ETL",
+      "SaaS Uygulamaları İçin Gömülü Analitik",
+      "Otomatik Raporlama ve E-posta Zamanlama",
+      "Rol Tabanlı Erişim Kontrolü ve Güvenlik",
+      "Mobil Uyumlu Esnek Görselleştirmeler"
+    ],
+    "benefits": [
+      "Operasyonel eğilimleri ve anormallikleri anında belirleyin",
+      "Manuel rapor oluşturmak için harcanan süreyi %90 azaltın",
+      "İş ekipleri için self-servis veri keşfi sağlayın",
+      "Tüm departmanlarda karar alma hızını artırın",
+      "Gömülü etkileşimli grafiklerle kullanıcı katılımını artırın",
+      "Dağınık veri kaynaklarını tek bir görünümde birleştirin"
+    ],
+    "metaTitle": "Veri Görselleştirme ve Panolar | PakSoft",
+    "metaDescription": "Karmaşık verileri etkileşimli panolara dönüştürün. Özel Tableau, Power BI ve D3.js görselleştirme çözümleri sunuyoruz. Bilgi almak için hemen ulaşın.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Gereksinim Analizi",
+          "description": "Hedef KPI'ları, kullanıcı rollerini, veri kaynaklarını ve performans ihtiyaçlarını belirlemek için iş ekibinizle birlikte çalışıyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Veri Mühendisliği",
+          "description": "Hızlı veri yüklemesi sağlamak için veritabanı kaynaklarınızı temizliyor, yapılandırıyor ve optimize sorgu yolları oluşturmak üzere bağlıyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Kullanıcı Deneyimi & Taslak Çizim",
+          "description": "Netliği, kullanıcı etkileşimini ve veri okunabilirliğini ön planda tutan temiz panel düzenleri ve taslak çizimleri tasarlıyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Görselleştirme Geliştirme",
+          "description": "Canlı veri akışlarını sorunsuz bir şekilde entegre ederek Tableau, Power BI veya özel D3.js kodlarıyla panoları oluşturuyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Test ve Entegrasyon",
+          "description": "Görünümleri sistemlerinize güvenli bir şekilde yerleştirmeden önce yükleme sürelerini, veri doğruluğunu ve esnek düzen ölçeklendirmesini test ediyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Eğitim ve Optimizasyon",
+          "description": "Ekibinize panel görünümlerini nasıl özelleştireceklerini öğretiyor ve büyük veri kümeleri için sorgu hızlarını sürekli olarak optimize ediyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Hangi veri görselleştirme araçlarını öneriyorsunuz?",
+          "answer": "Bütçenize ve barındırma tercihlerinize göre araçlar öneriyoruz. Tableau ve Power BI kurumsal analizler için mükemmeldir; D3.js gibi özel kütüphaneler ise SaaS ürünlerine özel grafikler yerleştirmek için idealdir."
+        },
+        {
+          "question": "Panoları gerçek zamanlı olarak veritabanlarına bağlayabilir misiniz?",
+          "answer": "Evet, PostgreSQL, MySQL, Snowflake ve MongoDB'ye bağlanan canlı veri yolları kuruyoruz. Veritabanlarınızı aşırı yüklemeden gerçek zamanlı değişiklikleri göstermek için WebSockets veya önbellekleme mekanizmaları kuruyoruz."
+        },
+        {
+          "question": "Sıfırdan özel grafikler oluşturuyor musunuz?",
+          "answer": "Kesinlikle. Tableau veya Power BI'daki standart grafikler raporlama ihtiyaçlarınızı karşılamadığında, iş akışlarınıza özel bileşenler oluşturmak için D3.js veya Chart.js kullanarak özel JavaScript yazıyoruz."
+        },
+        {
+          "question": "Gömülü analizlerde veri güvenliğini nasıl sağlıyorsunuz?",
+          "answer": "Güvenli kimlik doğrulama belirteçleri ve rol tabanlı satır düzeyinde güvenlik uyguluyoruz. Bu, panolar harici uygulamalara yerleştirildiğinde kullanıcıların yalnızca yetkili oldukları verileri görmelerini sağlar."
+        },
+        {
+          "question": "Personelimiz için eğitim veriliyor mu?",
+          "answer": "Evet, kapsamlı eğitim oturumları ve video belgeleri sağlıyoruz. İş analistlerinize bağımsız olarak özel raporlar oluşturmayı, görünümleri filtrelemeyi ve gelişmiş veri görselleştirmelerini yorumlamayı öğretiyoruz."
+        },
+        {
+          "question": "Panolar mobil cihazlarda görüntülenebilir mi?",
+          "answer": "Evet, tüm özel panolarımız duyarlı tasarım ilkelerine göre tasarlanmıştır. Grafikleri tüm ekran boyutlarında okunabilir kılmak için Power BI, Tableau ve özel web uygulamalarında optimize edilmiş mobil görünümler oluşturuyoruz."
+        },
+        {
+          "question": "Yavaş yüklenen panoları nasıl optimize ediyorsunuz?",
+          "answer": "Etkin SQL sorguları yazarak, somutlaştırılmış görünümler (materialized views) oluşturarak ve önbelleğe alma uygulayarak veritabanı katmanında performansı optimize ediyoruz. Bu, milyonlarca satırda bile panonuzun saniyeler içinde yüklenmesini sağlar."
+        },
+        {
+          "question": "Raporları PDF veya Excel olarak dışa aktarabilir miyiz?",
+          "answer": "Evet, kullanıcıların tüm panoları PDF olarak indirmesine veya ham verileri tek bir tıklamayla doğrudan CSV veya Excel dosyalarına aktarmasına olanak tanıyan dışa aktarma özellikleri entegre ediyoruz."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Tableau",
+          "icon": "tableau"
+        },
+        {
+          "name": "Power BI",
+          "icon": "powerbi"
+        },
+        {
+          "name": "D3.js",
+          "icon": "d3js"
+        },
+        {
+          "name": "Looker",
+          "icon": "looker"
+        },
+        {
+          "name": "Metabase",
+          "icon": "metabase"
+        },
+        {
+          "name": "Apache Superset",
+          "icon": "superset"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Datenvisualisierung",
+    "shortDescription": "Verwandeln Sie komplexe Rohdaten in interaktive Echtzeit-Dashboards und visuelle Berichte. Wir entwickeln maßgeschneiderte Business-Intelligence-Ansichten für datengesteuerte Entscheidungen.",
+    "fullDescription": "Rohdaten sind nur dann wertvoll, wenn Ihr Team sie schnell interpretieren kann. Wir entwickeln maßgeschneiderte Datenvisualisierungslösungen und interaktive Dashboards, die komplexe Daten aus mehreren Quellen in klare, umsetzbare Geschäftserkenntnisse verwandeln. Mit modernen Tools wie Tableau, Power BI und maßgeschneiderten D3.js-Bibliotheken entwerfen wir responsive visuelle Schnittstellen, die auf Ihre spezifischen Workflows und KPIs abgestimmt sind. Unsere Dienstleistungen umfassen alles von der Einrichtung von Echtzeit-Datenströmen bis hin zur Einbettung von Analyse-Dashboards in Ihre SaaS-Produkte und internen Portale. Durch intuitive Benutzeroberflächen und strukturiertes Data Storytelling stellen wir sicher, dass auch nicht-technische Stakeholder Trends leicht erkennen und fundierte operative Entscheidungen ohne manuelle Berichte treffen können.",
+    "features": [
+      "Interaktives Dashboard-Design & Layouts",
+      "Integration von Echtzeit-Datenströmen",
+      "Entwicklung maßgeschneiderter Diagramme & Widgets",
+      "Datenaggregation aus mehreren Quellen & ETL",
+      "Embedded Analytics für SaaS-Anwendungen",
+      "Automatisierte Berichterstellung & E-Mail-Planung",
+      "Rollenbasierte Zugriffskontrolle und Sicherheit",
+      "Für Mobilgeräte optimierte responsive Layouts"
+    ],
+    "benefits": [
+      "Operative Trends und Anomalien sofort erkennen",
+      "Zeitaufwand für manuelle Berichte um 90% reduzieren",
+      "Self-Service-Datenanalyse für Geschäftsteams ermöglichen",
+      "Entscheidungsfindung in allen Abteilungen beschleunigen",
+      "Benutzerinteraktion durch eingebettete Diagramme steigern",
+      "Verteilte Datenquellen in einer einzigen Ansicht konsolidieren"
+    ],
+    "metaTitle": "Datenvisualisierung & Dashboards | PakSoft",
+    "metaDescription": "Verwandeln Sie komplexe Daten in interaktive Echtzeit-Dashboards. Wir bauen maßgeschneiderte Tableau-, Power BI- und D3.js-Lösungen. Kontaktieren Sie uns.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Anforderungsanalyse",
+          "description": "Wir arbeiten mit Ihrem Business-Team zusammen, um Ziel-KPIs, Benutzerrollen, Datenquellen und spezifische Performance-Bedürfnisse zu definieren."
+        },
+        {
+          "step": 2,
+          "title": "Data Engineering",
+          "description": "Wir bereinigen, strukturieren und verbinden Ihre Datenbankquellen, um stabile, optimierte Abfrage-Pipelines für schnelles Laden aufzubauen."
+        },
+        {
+          "step": 3,
+          "title": "UI/UX & Wireframing",
+          "description": "Wir entwerfen übersichtliche Dashboard-Layouts und Wireframes, bei denen Klarheit, Interaktion und einfache Lesbarkeit im Vordergrund stehen."
+        },
+        {
+          "step": 4,
+          "title": "Visualisierungsentwicklung",
+          "description": "Wir erstellen die Dashboards mit Tableau, Power BI oder benutzerdefiniertem D3.js-Code und integrieren Live-Datenfeeds nahtlos."
+        },
+        {
+          "step": 5,
+          "title": "Testen & Integration",
+          "description": "Wir testen Ladezeiten, Datengenauigkeit und responsive Layoutskalierung, bevor wir die Ansichten sicher in Ihre Systeme einbetten."
+        },
+        {
+          "step": 6,
+          "title": "Schulung & Optimierung",
+          "description": "Wir schulen Ihr Team in der Anpassung der Dashboard-Ansichten und optimieren kontinuierlich die Abfragegeschwindigkeit für große Datensätze."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Welche Datenvisualisierungs-Tools empfehlen Sie?",
+          "answer": "Wir empfehlen Tools basierend auf Ihrem Budget und Ihren Hosting-Präferenzen. Tableau und Power BI sind hervorragend für Unternehmensanalysen geeignet, während D3.js ideal für die Einbettung in SaaS-Produkte ist."
+        },
+        {
+          "question": "Können Sie Dashboards in Echtzeit mit Datenbanken verbinden?",
+          "answer": "Ja, wir bauen Live-Daten-Pipelines zu PostgreSQL, MySQL, Snowflake und MongoDB. Wir richten WebSockets oder Caching ein, um Echtzeit-Updates anzuzeigen, ohne Ihre Datenbanken zu überlasten."
+        },
+        {
+          "question": "Erstellen Sie maßgeschneiderte Diagramme von Grund auf?",
+          "answer": "Absolut. Wenn Standarddiagramme in Tableau oder Power BI nicht ausreichen, schreiben wir benutzerdefinierten JavaScript-Code mit D3.js oder Chart.js, um Diagramme genau für Ihre Workflows zu erstellen."
+        },
+        {
+          "question": "Wie gewährleisten Sie die Datensicherheit bei Embedded Analytics?",
+          "answer": "Wir implementieren sichere Authentifizierungs-Token und rollenbasierte Sicherheit auf Zeilenebene. Dies stellt sicher, dass Benutzer nur Daten sehen, für die sie eine Autorisierung besitzen."
+        },
+        {
+          "question": "Wird eine Schulung für unsere Mitarbeiter angeboten?",
+          "answer": "Ja, wir bieten umfassende Schulungen und Video-Dokumentationen an. Wir zeigen Ihren Analysten, wie sie Berichte erstellen, Ansichten filtern und fortgeschrittene Visualisierungen eigenständig nutzen."
+        },
+        {
+          "question": "Können Dashboards auf Mobilgeräten angezeigt werden?",
+          "answer": "Ja, alle unsere Dashboards sind responsive gestaltet. Wir erstellen optimierte mobile Ansichten in Power BI, Tableau und Web-Apps, damit Diagramme auf allen Bildschirmgrößen gut lesbar sind."
+        },
+        {
+          "question": "Wie optimieren Sie langsam ladende Dashboards?",
+          "answer": "Wir optimieren die Datenbankebene durch effiziente SQL-Abfragen, Materialized Views und Caching. So stellen wir sicher, dass Ihr Dashboard auch bei Millionen Zeilen in Sekundenschnelle geladen wird."
+        },
+        {
+          "question": "Können wir Berichte als PDF oder Excel exportieren?",
+          "answer": "Ja, wir integrieren Exportfunktionen, mit denen Benutzer Dashboards als PDF herunterladen oder Rohdaten mit einem Klick in CSV- oder Excel-Dateien exportieren können."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Tableau",
+          "icon": "tableau"
+        },
+        {
+          "name": "Power BI",
+          "icon": "powerbi"
+        },
+        {
+          "name": "D3.js",
+          "icon": "d3js"
+        },
+        {
+          "name": "Looker",
+          "icon": "looker"
+        },
+        {
+          "name": "Metabase",
+          "icon": "metabase"
+        },
+        {
+          "name": "Apache Superset",
+          "icon": "superset"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "ڈیٹا ویزولائزیشن",
+    "shortDescription": "پیچیدہ خام ڈیٹا کو انٹرایکٹو، ریئل ٹائم ڈیش بورڈز اور بصری کہانیوں میں تبدیل کریں۔ ہم اپنی مرضی کے مطابق ایسے بزنس انٹیلی جنس ویوز ڈیزائن کرتے ہیں جو آپ کی ٹیم کو تیزی سے فیصلے کرنے میں مدد دیتے ہیں۔",
+    "fullDescription": "ادارے کا خام ڈیٹا صرف اسی صورت میں قیمتی ہوتا ہے جب آپ کی ٹیم اس کی تیزی سے تشریح کر سکے۔ ہم کسٹم ڈیٹا ویزولائزیشن سلوشنز اور انٹرایکٹو ڈیش بورڈز بناتے ہیں جو پیچیدہ، کثیر الجہتی ڈیٹا سیٹس کو واضح اور قابلِ عمل کاروباری بصیرت میں تبدیل کرتے ہیں۔ Tableau، Power BI اور کسٹم D3.js لائبریریوں جیسے جدید ٹولز کا استعمال کرتے ہوئے، ہم آپ کے مخصوص کام کے بہاؤ اور KPIs کے مطابق لچکدار بصری انٹرفیس ڈیزائن کرتے ہیں۔ ہماری خدمات ریئل ٹائم ڈیٹا فیڈز ترتیب دینے سے لے کر براہ راست آپ کے موجودہ SaaS مصنوعات اور اندرونی پورٹلز میں ڈیش بورڈز کو ضم کرنے تک ہر چیز کا احاطہ کرتی ہیں۔ آسان ڈیزائن اور منظم ڈیٹا اسٹوری ٹیلنگ پر توجہ دے کر، ہم اس بات کو یقینی بناتے ہیں کہ غیر تکنیکی عملہ بھی دستی رپورٹوں کی ضرورت کے بغیر رجحانات اور انحرافات کی آسانی سے شناخت کر سکے۔",
+    "features": [
+      "انٹرایکٹو ڈیش بورڈ ڈیزائن اور لے آؤٹ",
+      "ریئل ٹائم ڈیٹا اسٹریمنگ انٹیگریشن",
+      "کسٹم چارٹ اور وجیٹ کی تیاری",
+      "ملٹی سورس ڈیٹا ایگریگیشن اور ETL",
+      "ایس اے اے ایس ایپس کے لیے ایمبیڈڈ اینالیٹکس",
+      "خودکار رپورٹنگ اور ای میل شیڈولنگ",
+      "رول پر مبنی رسائی کنٹرول اور سیکیورٹی",
+      "موبائل کے لیے موزوں ریسپانسیو لے آؤٹس"
+    ],
+    "benefits": [
+      "آپریشنل رجحانات اور انحرافات کی فوری شناخت کریں",
+      "دستی رپورٹیں بنانے میں لگنے والے وقت کو 90 فیصد تک کم کریں",
+      "کاروباری ٹیموں کے لیے خود کار ڈیٹا ایکسپلوریشن کو فعال کریں",
+      "تمام محکموں میں فیصلہ سازی کی رفتار کو بہتر بنائیں",
+      "ایمبیڈڈ انٹرایکٹو چارٹس کے ساتھ صارفین کی مصروفیت بڑھائیں",
+      "پھیلے ہوئے ڈیٹا ذرائع کو ایک واحد منظر میں یکجا کریں"
+    ],
+    "metaTitle": "ڈیٹا ویزولائزیشن اور ڈیش بورڈز | PakSoft",
+    "metaDescription": "پیچیدہ ڈیٹا کو ریئل ٹائم ڈیش بورڈز میں تبدیل کریں۔ ہم Tableau، Power BI اور D3.js کے کسٹم ڈیٹا ویزولائزیشن سلوشنز بناتے ہیں۔ آج ہی رابطہ کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "ضروریات کا تجزیہ",
+          "description": "ہم ہدف KPIs، صارف کے کردار، ڈیٹا کے ذرائع، اور کارکردگی کی ضروریات کی وضاحت کے لیے آپ کے کاروباری عملے کے ساتھ تعاون کرتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "ڈیٹا انجینئرنگ",
+          "description": "تیزی سے ڈیٹا لوڈ کرنے کے لیے ہم مستحکم اور بہتر کیوری پائپ لائنز کے قیام کے لیے آپ کے ڈیٹا بیس کے ذرائع کو صاف اور مربوط کرتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "ڈیش بورڈ لے آؤٹ ڈیزائن",
+          "description": "ہم ڈیش بورڈز کے واضح ڈیزائن بناتے ہیں، جس میں معلومات کی آسانی اور ڈیٹا کو پڑھنے کی ترجیح دی جاتی ہے۔"
+        },
+        {
+          "step": 4,
+          "title": "ویزولائزیشن کی تیاری",
+          "description": "ہم لائیو ڈیٹا فیڈز کو یکجا کرتے ہوئے Tableau، Power BI یا کسٹم D3.js کوڈز کے ذریعے ڈیش بورڈز تیار کرتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "ٹیسٹنگ اور انٹیگریشن",
+          "description": "ہم ڈیش بورڈز کو آپ کے سسٹم میں ایمبیڈ کرنے سے پہلے ڈیٹا کی درستگی اور لوڈنگ کی رفتار کو جانچتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "تربیت اور اصلاح",
+          "description": "ہم آپ کی ٹیم کو ڈیش بورڈ ویوز کو اپنی مرضی کے مطابق بنانے کی تربیت دیتے ہیں اور کارکردگی کو بہتر بناتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "آپ ڈیٹا ویزولائزیشن کے کن ٹولز کی سفارش کرتے ہیں؟",
+          "answer": "ہم آپ کے بجٹ اور ہوسٹنگ کی ترجیحات کی بنیاد پر ٹولز کی سفارش کرتے ہیں۔ ٹیبلو (Tableau) اور پاور بی آئی (Power BI) کاروباری تجزیات کے لیے بہترین ہیں، جبکہ کسٹم لائبریریاں جیسے D3.js ساس (SaaS) مصنوعات میں چارٹس شامل کرنے کے لیے بہترین ہیں۔"
+        },
+        {
+          "question": "کیا آپ ڈیش بورڈز کو ریئل ٹائم میں ڈیٹا بیس سے جوڑ سکتے ہیں؟",
+          "answer": "جی ہاں، ہم لائیو ڈیٹا پائپ لائنز بناتے ہیں جو PostgreSQL، MySQL، Snowflake، اور MongoDB سے جڑتی ہیں۔ ہم ویب ساکٹس یا کیشنگ کا استعمال کرتے ہوئے ڈیٹا بیس پر بوجھ ڈالے بغیر ریئل ٹائم تبدیلیاں دکھاتے ہیں۔"
+        },
+        {
+          "question": "کیا آپ بالکل شروع سے کسٹم چارٹ بناتے ہیں؟",
+          "answer": "بالکل۔ جب ٹیبلو یا پاور بی آئی کے معیاری چارٹس آپ کی ضروریات کو پورا نہیں کرتے، تو ہم D3.js یا Chart.js کا استعمال کرتے ہوئے کسٹم جاوا اسکرپٹ لکھتے ہیں تاکہ آپ کی کاروباری ضروریات کے مطابق ویجٹس تیار کیے جا سکیں۔"
+        },
+        {
+          "question": "آپ ایمبیڈڈ اینالیٹکس میں ڈیٹا کی سیکیورٹی کو کیسے یقینی بناتے ہیں؟",
+          "answer": "ہم محفوظ توثیقی ٹوکنز اور رول پر مبنی رو لیول سیکیورٹی نافذ کرتے ہیں۔ یہ یقینی بناتا ہے کہ جب ڈیش بورڈز کو بیرونی ایپلی کیشنز میں شامل کیا جائے تو صارفین صرف وہی ڈیٹا دیکھ سکیں جس کی انہیں اجازت حاصل ہے۔"
+        },
+        {
+          "question": "کیا ہمارے عملے کے لیے کوئی تربیت فراہم کی جاتی ہے؟",
+          "answer": "جی ہاں، ہم مکمل تربیتی سیشنز اور ویڈیو دستاویزات فراہم کرتے ہیں۔ ہم آپ کے کاروباری تجزیہ کاروں کو سکھاتے ہیں کہ کس طرح وہ آزادانہ طور پر کسٹم رپورٹس تیار کریں، ڈیٹا کو فلٹر کریں اور بصری نتائج اخذ کریں۔"
+        },
+        {
+          "question": "کیا ڈیش بورڈز کو موبائل آلات پر دیکھا جا سکتا ہے؟",
+          "answer": "جی ہاں، ہمارے تمام کسٹم ڈیش بورڈز ریسپانسیو ڈیزائن پر مبنی ہیں۔ ہم موبائل کے لیے موزوں ویوز بناتے ہیں تاکہ تمام اسکرینوں پر چارٹس واضح اور پڑھنے کے قابل ہوں۔"
+        },
+        {
+          "question": "آپ سست رفتار سے لوڈ ہونے والے ڈیش بورڈز کو کیسے بہتر بناتے ہیں؟",
+          "answer": "ہم ڈیٹا بیس کی سطح پر کارکردگی کو بہتر بنانے کے لیے موثر SQL کیوریز لکھتے ہیں اور کیشنگ کا نظام نافذ کرتے ہیں۔ اس سے ڈیش بورڈز لاکھوں لائنوں کا ڈیٹا بھی سیکنڈوں میں لوڈ کر لیتے ہیں۔"
+        },
+        {
+          "question": "کیا ہم رپورٹوں کو پی ڈی ایف یا ایکسل میں ایکسپورٹ کر سکتے ہیں؟",
+          "answer": "جی ہاں، ہم ایسے فیچرز شامل کرتے ہیں جس سے صارفین مکمل ڈیش بورڈز کو پی ڈی ایف کے طور پر ڈاؤن لوڈ کر سکتے ہیں، یا خام ڈیٹا کو ایک کلک سے CSV یا ایکسل فارمیٹ میں ایکسپورٹ کر سکتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Tableau",
+          "icon": "tableau"
+        },
+        {
+          "name": "Power BI",
+          "icon": "powerbi"
+        },
+        {
+          "name": "D3.js",
+          "icon": "d3js"
+        },
+        {
+          "name": "Looker",
+          "icon": "looker"
+        },
+        {
+          "name": "Metabase",
+          "icon": "metabase"
+        },
+        {
+          "name": "Apache Superset",
+          "icon": "superset"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تصور البيانات",
+    "shortDescription": "حول البيانات الخام المعقدة إلى لوحات معلومات تفاعلية وتفاعلية في الوقت الفعلي. نصمم واجهات مخصصة لذكاء الأعمال تساعد فريقك على اتخاذ قرارات أسرع وموجهة بالبيانات.",
+    "fullDescription": "بيانات المؤسسة الخام تكون قيمة فقط إذا تمكن فريقك من تفسيرها بسرعة. نحن نبني حلولاً مخصصة لتصور البيانات ولوحات معلومات تفاعلية تحول مجموعات البيانات المعقدة متعددة المصادر إلى رؤى تجارية واضحة وقابلة للتنفيذ. باستخدام أدوات حديثة مثل Tableau و Power BI ومكتبات D3.js المخصصة، نصمم واجهات مرئية سريعة الاستجابة ومصممة خصيصاً لسير العمل والمؤشرات الرئيسية الخاصة بك. تغطي خدماتنا كل شيء بدءاً من إعداد تدفقات البيانات المباشرة في الوقت الفعلي إلى تضمين لوحات التحليل مباشرة في منتجات SaaS الحالية وبواباتك الداخلية. من خلال التركيز على واجهة مستخدم سهلة وسرد قصص البيانات المنظم، نضمن إمكانية تحديد الاتجاهات واكتشاف الشذوذ واتخاذ القرارات التشغيلية المستنيرة دون الحاجة لتقارير يدوية.",
+    "features": [
+      "تصميم وتخطيط لوحات المعلومات التفاعلية",
+      "تكامل تدفق البيانات في الوقت الفعلي",
+      "تطوير المخططات والأدوات المخصصة",
+      "تجميع البيانات من مصادر متعددة وعمليات ETL",
+      "التحليلات المضمنة لتطبيقات SaaS والمواقع",
+      "جدولة التقارير التلقائية وإرسالها بالبريد",
+      "التحكم في الوصول والأمان بناءً على الأدوار",
+      "تخطيطات مرئية متجاوبة ومحسنة للهواتف"
+    ],
+    "benefits": [
+      "تحديد الاتجاهات التشغيلية والشذوذ على الفور",
+      "تقليل الوقت المستغرق في إعداد التقارير اليدوية بنسبة 90٪",
+      "تمكين فرق العمل من استكشاف البيانات ذاتياً",
+      "تسريع وتيرة اتخاذ القرار في جميع الأقسام",
+      "زيادة تفاعل المستخدمين مع المخططات التفاعلية المضمنة",
+      "دمج مصادر البيانات المشتتة في عرض موحد واحد"
+    ],
+    "metaTitle": "تصور البيانات ولوحات المعلومات | PakSoft",
+    "metaDescription": "حول البيانات المعقدة إلى لوحات معلومات تفاعلية في الوقت الفعلي. نبني حلول تصور مخصصة باستخدام Tableau و Power BI و D3.js. اتصل بنا الآن.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تحليل المتطلبات",
+          "description": "نتعاون مع فريق العمل الخاص بك لتحديد مؤشرات الأداء الرئيسية المستهدفة وأدوار المستخدمين ومصادر البيانات واحتياجات الأداء."
+        },
+        {
+          "step": 2,
+          "title": "هندسة البيانات",
+          "description": "نقوم بتنظيف وهيكلة وتوصيل مصادر قاعدة البيانات الخاصة بك لإنشاء مسارات استعلام مستقرة ومحسنة لتسهيل التحميل السريع."
+        },
+        {
+          "step": 3,
+          "title": "تصميم واجهة المستخدم والتخطيط",
+          "description": "صمم مخططات لوحة معلومات واضحة وجذابة، مع إعطاء الأولوية للوضوح وتفاعل المستخدم وسهولة قراءة البيانات."
+        },
+        {
+          "step": 4,
+          "title": "تطوير لوحات المعلومات",
+          "description": "نقوم ببناء لوحات المعلومات باستخدام Tableau أو Power BI أو كود D3.js المخصص مع دمج البيانات المباشرة بسلاسة."
+        },
+        {
+          "step": 5,
+          "title": "الاختبار والتكامل",
+          "description": "نختبر أوقات التحميل ودقة البيانات ونسب التجاوب للمخططات قبل تضمينها بالكامل وبشكل آمن في أنظمتك التشغيلية."
+        },
+        {
+          "step": 6,
+          "title": "التدريب والتحسين",
+          "description": "ندرب فريقك على كيفية تخصيص طرق عرض لوحة المعلومات ونعمل باستمرار على تحسين سرعة معالجة البيانات للمجموعات الكبيرة."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما هي أدوات تصور البيانات التي توصون بها؟",
+          "answer": "نوصي بالأدوات بناءً على ميزانيتك وتفضيلات الاستضافة الخاصة بك. يعد Tableau و Power BI خيارين ممتازين لتحليلات المؤسسات، بينما تعد المكتبات المخصصة مثل D3.js مثالية لتضمين مخططات فريدة في منتجات SaaS."
+        },
+        {
+          "question": "هل يمكنك ربط لوحات المعلومات بقواعد البيانات في الوقت الفعلي؟",
+          "answer": "نعم، نحن نبني مسارات بيانات مباشرة تتصل بقواعد مثل PostgreSQL و MySQL و Snowflake و MongoDB. نقوم بإعداد WebSockets أو تكوين آليات التخزين المؤقت لعرض التغييرات الفورية دون إرهاق قواعد البيانات."
+        },
+        {
+          "question": "هل تقومون ببناء مخططات مخصصة من الصفر؟",
+          "answer": "بالتأكيد. عندما لا تلبي المخططات القياسية في Tableau أو Power BI احتياجات التقارير الخاصة بك، فإننا نكتب كود JavaScript مخصصاً باستخدام D3.js أو Chart.js لبناء أدوات فريدة تتناسب تماماً مع سير عملك."
+        },
+        {
+          "question": "كيف تضمن أمن البيانات في التحليلات المضمنة؟",
+          "answer": "نحن ننفذ رموز مصادقة آمنة وأماناً على مستوى الصف بناءً على الأدوار. يضمن ذلك عدم تمكن المستخدمين من رؤية سوى البيانات المحددة المصرح لهم بعرضها عند تضمين لوحات المعلومات في تطبيقات خارجية."
+        },
+        {
+          "question": "هل يتوفر تدريب لموظفينا؟",
+          "answer": "نعم، نحن نقدم جلسات تدريبية شاملة وتوثيق فيديو تفصيلي. نعلم محللي الأعمال لديك كيفية إنشاء تقارير مخصصة وتصفية طرق العرض وتفسير تصورات البيانات المتقدمة بشكل مستقل."
+        },
+        {
+          "question": "هل يمكن عرض لوحات المعلومات على الأجهزة المحمولة؟",
+          "answer": "نعم، تم تصميم جميع لوحات المعلومات المخصصة لدينا وفقاً لمبادئ التصميم المتجاوب. نقوم بإنشاء طرق عرض محسنة للجوال في Power BI و Tableau وتطبيقات الويب المخصصة لضمان قراءة المخططات على جميع الشاشات."
+        },
+        {
+          "question": "كيف تقوم بتحسين لوحات المعلومات بطيئة التحميل؟",
+          "answer": "نحن نعمل على تحسين الأداء في طبقة قاعدة البيانات من خلال كتابة استعلامات SQL فعالة وبناء طرق عرض مادية (materialized views) وتنفيذ التخزين المؤقت. يضمن ذلك تحميل لوحة التحكم في ثوانٍ حتى مع ملايين الصفوف."
+        },
+        {
+          "question": "هل يمكننا تصدير التقارير إلى PDF أو Excel؟",
+          "answer": "نعم، نقوم بدمج ميزات التصدير التي تتيح للمستخدمين تنزيل لوحات معلومات كاملة كملفات PDF، أو تصدير البيانات الخام الأساسية مباشرة إلى ملفات CSV أو Excel بنقرة واحدة."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Tableau",
+          "icon": "tableau"
+        },
+        {
+          "name": "Power BI",
+          "icon": "powerbi"
+        },
+        {
+          "name": "D3.js",
+          "icon": "d3js"
+        },
+        {
+          "name": "Looker",
+          "icon": "looker"
+        },
+        {
+          "name": "Metabase",
+          "icon": "metabase"
+        },
+        {
+          "name": "Apache Superset",
+          "icon": "superset"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        }
+      ]
+    }
+  }
+}

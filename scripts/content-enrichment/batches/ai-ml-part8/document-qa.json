@@ -1,0 +1,638 @@
+{
+  "slug": "document-qa",
+  "en": {
+    "name": "Document Q&A",
+    "shortDescription": "Extract instant, accurate answers and summaries from your enterprise documents. We build intelligent document Q&A pipelines with citation tracking and secure context awareness.",
+    "fullDescription": "Managing scattered manuals, PDFs, and corporate policies is a significant operational burden. We develop advanced Document Q&A solutions using Retrieval-Augmented Generation (RAG) that allow employees and clients to ask natural language questions and get immediate answers with exact source citations. By integrating LlamaIndex, OpenAI, and vector databases like Weaviate, our systems parse, chunk, and index multi-format documents (PDFs, Word docs, slides, HTML) securely. We ensure strict data privacy so your sensitive corporate knowledge never leaks to public models. With built-in memory for follow-up questions, multi-document comparison capabilities, and semantic search, our document Q&A engines transform passive documentation into an active conversation partner.",
+    "features": [
+      "Multi-Document Input & Q&A Pipelines",
+      "Automated Source Citations and Links",
+      "Multi-Format Ingestion (PDF, DOCX, CSV)",
+      "Context-Aware Semantic Vector Search",
+      "Structured Output and Summary Generation",
+      "Built-in Chat Conversational Memory",
+      "Strict Access Control and Data Privacy",
+      "Automatic Indexing of New Documentation"
+    ],
+    "benefits": [
+      "Find critical information in seconds instead of hours",
+      "Reduce internal support tickets for policy inquiries",
+      "Onboard new employees faster with self-service knowledge",
+      "Ensure high accuracy with source-attributed answers",
+      "Keep sensitive corporate data fully secure and private",
+      "Analyze and compare multiple documents simultaneously"
+    ],
+    "metaTitle": "AI Document Q&A Systems | Custom RAG | PakSoft",
+    "metaDescription": "Ask questions and get instant answers from your documents. We build custom Document Q&A engines with citations and high privacy. Learn more.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Document Audit",
+          "description": "We review your target documents, file formats, and security requirements to determine the optimal parsing and indexing approach."
+        },
+        {
+          "step": 2,
+          "title": "Data Ingestion & Chunking",
+          "description": "We build data ingestion pipelines that extract clean text from multi-format files and split it into semantic chunks."
+        },
+        {
+          "step": 3,
+          "title": "Embedding & Vector Indexing",
+          "description": "We convert text chunks into high-dimensional vector embeddings and index them inside a secure database like Weaviate."
+        },
+        {
+          "step": 4,
+          "title": "Retrieval & LLM Setup",
+          "description": "We configure search retrieval algorithms to fetch relevant document snippets and feed them into a secure LLM for generation."
+        },
+        {
+          "step": 5,
+          "title": "Interface Development",
+          "description": "We build clean chat or search interfaces, showing source citations and enabling download of relevant reference materials."
+        },
+        {
+          "step": 6,
+          "title": "Evaluation & Tuning",
+          "description": "We run automated evaluation tests to ensure accuracy, eliminate hallucinations, and keep search retrieval speed under one second."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How does the AI know where it found the answer?",
+          "answer": "Our systems use Retrieval-Augmented Generation (RAG). Before answering, the system retrieves the most relevant paragraphs from your documents and shows them as clickable citations with page numbers."
+        },
+        {
+          "question": "Is our sensitive corporate data safe with the AI?",
+          "answer": "Yes, security is our top priority. We use secure enterprise APIs or open-source models deployed locally on your servers, ensuring no data is used to train public models."
+        },
+        {
+          "question": "What document formats are supported?",
+          "answer": "We support a wide variety of formats, including PDFs, Microsoft Word (DOCX), PowerPoint presentations (PPTX), Excel sheets, CSV, text files, and HTML web pages."
+        },
+        {
+          "question": "Can the AI handle scanned PDF documents?",
+          "answer": "Yes, we integrate Optical Character Recognition (OCR) engines like Tesseract or AWS Textract to extract clean text from scanned images and PDFs before indexing."
+        },
+        {
+          "question": "Can it compare information across multiple files?",
+          "answer": "Absolutely. The system can retrieve context from multiple files simultaneously, allowing users to ask questions like 'What are the differences between Project A and Project B contract terms?'"
+        },
+        {
+          "question": "How does it handle updated documents?",
+          "answer": "We set up automated synchronization pipelines. When a file is modified or added to your storage (like Google Drive or S3), it is re-indexed automatically in real time."
+        },
+        {
+          "question": "What happens if the answer is not in the documents?",
+          "answer": "We configure strict guardrails. If the system cannot find the answer in the provided documents, it will reply that the information is unavailable, preventing untruthful hallucinations."
+        },
+        {
+          "question": "How many documents can the system index?",
+          "answer": "Our vector database architecture is designed for scale. It can index thousands of large manuals and millions of pages, delivering search results in milliseconds."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "LlamaIndex",
+          "icon": "llamaindex"
+        },
+        {
+          "name": "OpenAI API",
+          "icon": "openai"
+        },
+        {
+          "name": "Weaviate",
+          "icon": "weaviate"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "LangChain",
+          "icon": "langchain"
+        },
+        {
+          "name": "Pinecone",
+          "icon": "pinecone"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "FastAPI",
+          "icon": "fastapi"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Belge Soru-Cevap",
+    "shortDescription": "Kurumsal belgelerinizden anında, doğru yanıtlar ve özetler alın. Atıf takibi ve güvenli bağlam farkındalığına sahip akıllı belge soru-cevap sistemleri kuruyoruz.",
+    "fullDescription": "Dağınık kılavuzları, PDF'leri ve kurumsal politikaları yönetmek büyük bir operasyonel yüktür. Çalışanların ve müşterilerin doğal dilde sorular sormasına ve kesin kaynak atıflarıyla anında yanıtlar almasına olanak tanıyan, Retrieval-Augmented Generation (RAG) kullanan gelişmiş Belge Soru-Cevap çözümleri geliştiriyoruz. LlamaIndex, OpenAI ve Weaviate gibi vektör veritabanlarını entegre ederek, sistemlerimiz çok formatlı belgeleri (PDF, Word belgeleri, sunumlar, HTML) güvenli bir şekilde ayrıştırır, bölümlere ayırır ve indeksler. Hassas kurumsal bilgilerinizin kamuya açık modellere sızmaması için sıkı veri gizliliği sağlıyoruz. Takip soruları için yerleşik bellek, çoklu belge karşılaştırma yetenekleri ve anlamsal arama ile belge soru-cevap motorlarımız pasif belgeleri aktif bir konuşma ortağına dönüştürür.",
+    "features": [
+      "Çoklu Belge Girişi ve Soru-Cevap Hatları",
+      "Otomatik Kaynak Atıfları ve Bağlantıları",
+      "Çoklu Format Alma (PDF, DOCX, CSV)",
+      "Bağlam Duyarlı Anlamsal Vektör Araması",
+      "Yapılandırılmış Çıktı ve Özet Oluşturma",
+      "Yerleşik Sohbet Konuşma Belleği",
+      "Katı Erişim Kontrolü ve Veri Gizliliği",
+      "Yeni Belgelerin Otomatik İndekslenmesi"
+    ],
+    "benefits": [
+      "Kritik bilgileri saatler yerine saniyeler içinde bulun",
+      "Politika soruları için dahili destek taleplerini azaltın",
+      "Self-servis bilgi ile yeni çalışanları daha hızlı işe alıştırın",
+      "Kaynak odaklı yanıtlarla yüksek doğruluğu garanti edin",
+      "Hassas kurumsal verileri tamamen güvenli ve gizli tutun",
+      "Birden fazla belgeyi aynı anda analiz edin ve karşılaştırın"
+    ],
+    "metaTitle": "Yapay Zeka Belge Soru-Cevap | Özel RAG | PakSoft",
+    "metaDescription": "Sorular sorun ve belgelerinizden anında yanıtlar alın. Kaynak atıflı ve yüksek gizlilikli belge soru-cevap motorları kuruyoruz. Detaylı bilgi edinin.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Belge Denetimi",
+          "description": "En uygun ayrıştırma ve indeksleme yaklaşımını belirlemek için hedef belgelerinizi, dosya formatlarını ve güvenlik gereksinimlerini inceliyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Veri Alma & Bölümleme",
+          "description": "Çok formatlı dosyalardan temiz metin çıkaran ve bunları anlamsal bölümlere ayıran veri alma hatları oluşturuyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Gömme & Vektör İndeksleme",
+          "description": "Metin bölümlerini yüksek boyutlu vektör gömmelerine dönüştürüyor ve bunları Weaviate gibi güvenli bir veritabanında indeksliyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Geri Getirme & LLM Kurulumu",
+          "description": "İlgili belge parçalarını getirmek ve üretim için güvenli bir LLM'ye beslemek üzere arama geri getirme algoritmalarını yapılandırıyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Arayüz Geliştirme",
+          "description": "Kaynak atıflarını gösteren ve ilgili referans materyallerinin indirilmesini sağlayan temiz sohbet veya arama arayüzleri oluşturuyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Değerlendirme & İnce Ayar",
+          "description": "Doğruluğu sağlamak, halüsinasyonları ortadan kaldırmak ve arama geri getirme hızını bir saniyenin altında tutmak için otomatik değerlendirme testleri yapıyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Yapay zeka cevabı nerede bulduğunu nasıl biliyor?",
+          "answer": "Sistemlerimiz Retrieval-Augmented Generation (RAG) kullanır. Cevap vermeden önce, sistem belgelerinizden en ilgili paragrafları getirir ve bunları sayfa numaralarıyla tıklanabilir atıflar olarak gösterir."
+        },
+        {
+          "question": "Hassas kurumsal verilerimiz yapay zeka ile güvende mi?",
+          "answer": "Evet, güvenlik en büyük önceliğimizdir. Güvenli kurumsal API'ler veya sunucularınızda yerel olarak barındırılan açık kaynaklı modeller kullanıyoruz, böylece hiçbir veri kamuya açık modelleri eğitmek için kullanılmaz."
+        },
+        {
+          "question": "Hangi belge formatları destekleniyor?",
+          "answer": "PDF, Microsoft Word (DOCX), PowerPoint sunumları (PPTX), Excel tabloları, CSV, metin dosyaları ve HTML web sayfaları dahil olmak üzere çok çeşitli formatları destekliyoruz."
+        },
+        {
+          "question": "Yapay zeka taranmış PDF belgelerini işleyebilir mi?",
+          "answer": "Evet, indekslemeden önce taranmış görüntülerden ve PDF'lerden temiz metin çıkarmak için Tesseract veya AWS Textract gibi Optik Karakter Tanıma (OCR) motorlarını entegre ediyoruz."
+        },
+        {
+          "question": "Birden fazla dosyadaki bilgileri karşılaştırabilir mi?",
+          "answer": "Kesinlikle. Sistem, aynı anda birden fazla dosyadan bağlam getirebilir; bu da kullanıcıların 'Proje A ile Proje B sözleşme şartları arasındaki farklar nelerdir?' gibi sorular sormasına olanak tanır."
+        },
+        {
+          "question": "Güncellenen belgeleri nasıl işliyor?",
+          "answer": "Otomatik senkronizasyon hatları kuruyoruz. Depolama alanınıza (Google Drive veya S3 gibi) bir dosya eklendiğinde veya değiştirildiğinde, gerçek zamanlı olarak otomatik olarak yeniden indekslenir."
+        },
+        {
+          "question": "Cevap belgelerde yoksa ne olur?",
+          "answer": "Sıkı koruma sınırları yapılandırıyoruz. Sistem sağlanan belgelerde cevabı bulamazsa, bilginin mevcut olmadığını belirterek gerçeğe aykırı halüsinasyonları önler."
+        },
+        {
+          "question": "Sistem kaç belgeyi indeksleyebilir?",
+          "answer": "Vektör veritabanı mimarimiz ölçeklenebilir şekilde tasarlanmıştır. Binlerce büyük kılavuzu ve milyonlarca sayfayı indeksleyebilir, arama sonuçlarını milisaniyeler içinde sunabilir."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "LlamaIndex",
+          "icon": "llamaindex"
+        },
+        {
+          "name": "OpenAI API",
+          "icon": "openai"
+        },
+        {
+          "name": "Weaviate",
+          "icon": "weaviate"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "LangChain",
+          "icon": "langchain"
+        },
+        {
+          "name": "Pinecone",
+          "icon": "pinecone"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "FastAPI",
+          "icon": "fastapi"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Dokumenten-Q&A",
+    "shortDescription": "Erhalten Sie sofortige, präzise Antworten und Zusammenfassungen aus Ihren Unternehmensdokumenten. Wir bauen intelligente Dokumenten-Q&A-Systeme mit Quellennachweis und Sicherheitskontrollen.",
+    "fullDescription": "Die Verwaltung verstreuter Handbücher, PDFs und Unternehmensrichtlinien stellt eine erhebliche operative Belastung dar. Wir entwickeln fortschrittliche Dokumenten-Q&A-Lösungen unter Verwendung von Retrieval-Augmented Generation (RAG), die es Mitarbeitern und Kunden ermöglichen, Fragen in natürlicher Sprache zu stellen und sofort Antworten mit genauen Quellennachweisen zu erhalten. Durch die Integration von LlamaIndex, OpenAI und Vektordatenbanken wie Weaviate parsen, segmentieren und indexieren unsere Systeme Dokumente verschiedener Formate (PDF, Word, Präsentationen, HTML) sicher. Wir gewährleisten strengen Datenschutz, sodass Ihr internes Unternehmenswissen niemals in öffentliche Modelle einfließt. Mit integriertem Gesprächsgedächtnis und semantischer Suche machen unsere Q&A-Engines Ihre Dokumentation interaktiv nutzbar.",
+    "features": [
+      "Multi-Dokumenten-Q&A-Pipelines",
+      "Automatisierte Quellennachweise & Links",
+      "Multi-Format Ingestion (PDF, DOCX, CSV)",
+      "Kontextsensitive semantische Vektorsuche",
+      "Strukturierte Ausgabe & Zusammenfassung",
+      "Integriertes Konversationsgedächtnis",
+      "Strikte Zugriffskontrolle & Datenschutz",
+      "Automatische Indexierung neuer Dokumente"
+    ],
+    "benefits": [
+      "Kritische Informationen in Sekunden statt Stunden finden",
+      "Interne Support-Tickets zu Richtlinien um 80% reduzieren",
+      "Neue Mitarbeiter durch Self-Service-Wissen schneller einarbeiten",
+      "Hohe Genauigkeit durch quellenbasierte Antworten garantieren",
+      "Sensible Unternehmensdaten absolut sicher und privat halten",
+      "Mehrere Dokumente gleichzeitig analysieren und vergleichen"
+    ],
+    "metaTitle": "KI Dokumenten-Q&A Systeme | RAG Lösungen | PakSoft",
+    "metaDescription": "Stellen Sie Fragen und erhalten Sie sofortige Antworten aus Ihren Dokumenten. Wir bauen kundenorientierte Q&A-Systeme mit Quellenangaben. Mehr erfahren.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Dokumenten-Audit",
+          "description": "Wir analysieren Ihre Zieldokumente, Dateiformate und Sicherheitsanforderungen, um die beste Parsing- und Indexierungsstrategie festzulegen."
+        },
+        {
+          "step": 2,
+          "title": "Ingestion & Chunking",
+          "description": "Wir bauen Pipelines zur Datenaufnahme, die sauberen Text aus verschiedenen Formaten extrahieren und in semantische Abschnitte unterteilen."
+        },
+        {
+          "step": 3,
+          "title": "Embedding & Vektorindexierung",
+          "description": "Wir konvertieren die Textabschnitte in hochdimensionale Vektoren und speichern sie in einer sicheren Vektordatenbank wie Weaviate."
+        },
+        {
+          "step": 4,
+          "title": "Retrieval & LLM-Setup",
+          "description": "Wir konfigurieren Suchalgorithmen, um die relevantesten Textpassagen abzurufen und sie für die präzise Antwortgenerierung an ein sicheres LLM zu senden."
+        },
+        {
+          "step": 5,
+          "title": "Interface-Entwicklung",
+          "description": "Wir entwickeln benutzerfreundliche Chat- oder Suchoberflächen, die Quellennachweise anzeigen und das Herunterladen der Referenzdateien ermöglichen."
+        },
+        {
+          "step": 6,
+          "title": "Evaluierung & Tuning",
+          "description": "Wir führen automatisierte Tests durch, um die Antwortqualität zu bewerten, Halluzinationen zu vermeiden und die Antwortzeit unter einer Sekunde zu halten."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Woher weiß die KI, wo sie die Antwort gefunden hat?",
+          "answer": "Unsere Systeme nutzen Retrieval-Augmented Generation (RAG). Vor der Antwortabgabe sucht das System nach den relevantesten Abschnitten in Ihren Dokumenten und zeigt diese als anklickbare Zitate mit Seitenzahlen an."
+        },
+        {
+          "question": "Sind unsere sensiblen Unternehmensdaten bei der KI sicher?",
+          "answer": "Ja, Sicherheit steht für uns an erster Stelle. Wir nutzen dedizierte Enterprise-APIs oder Open-Source-Modelle, die lokal auf Ihren eigenen Servern gehostet werden, sodass keine Daten für das Training öffentlicher Modelle verwendet werden."
+        },
+        {
+          "question": "Welche Dokumentenformate werden unterstützt?",
+          "answer": "Wir unterstützen eine Vielzahl von Formaten, darunter PDFs, Microsoft Word (DOCX), PowerPoint-Präsentationen (PPTX), Excel-Tabellen, CSV-Dateien, Textdateien und HTML-Seiten."
+        },
+        {
+          "question": "Kann die KI gescannte PDF-Dokumente lesen?",
+          "answer": "Ja, wir integrieren OCR-Systeme (Optical Character Recognition) wie Tesseract oder AWS Textract, um Text aus gescannten Dokumenten und Bildern vor der Indexierung lesbar zu machen."
+        },
+        {
+          "question": "Können Informationen aus verschiedenen Dateien verglichen werden?",
+          "answer": "Absolut. Das System kann Informationen aus mehreren Dokumenten gleichzeitig abrufen, was Vergleiche ermöglicht, wie beispielsweise zwischen verschiedenen Vertragsentwürfen."
+        },
+        {
+          "question": "Wie werden aktualisierte Dokumente verarbeitet?",
+          "answer": "Wir richten automatische Synchronisations-Pipelines ein. Wenn eine Datei in Ihrem Cloud-Speicher (z. B. Google Drive oder AWS S3) geändert wird, wird sie sofort automatisch neu indexiert."
+        },
+        {
+          "question": "Was passiert, wenn die Antwort nicht im Dokument steht?",
+          "answer": "Wir richten Sicherheitsregeln ein. Wenn die Information in den bereitgestellten Dokumenten nicht existiert, teilt das System dies dem Benutzer mit, anstatt falsche Fakten zu erfinden."
+        },
+        {
+          "question": "Wie viele Dokumente kann das System verarbeiten?",
+          "answer": "Unsere Vektordatenbank-Architektur ist beliebig skalierbar. Sie kann Tausende von Handbüchern und Millionen von Seiten indexieren und Suchergebnisse in Millisekunden liefern."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "LlamaIndex",
+          "icon": "llamaindex"
+        },
+        {
+          "name": "OpenAI API",
+          "icon": "openai"
+        },
+        {
+          "name": "Weaviate",
+          "icon": "weaviate"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "LangChain",
+          "icon": "langchain"
+        },
+        {
+          "name": "Pinecone",
+          "icon": "pinecone"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "FastAPI",
+          "icon": "fastapi"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "دستاویزی سوال جواب",
+    "shortDescription": "اپنی کاروباری دستاویزات سے فوری، درست جوابات اور خلاصے حاصل کریں۔ ہم حوالہ جات کی ٹریکنگ اور سیکیورٹی خصوصیات کے ساتھ ذہین دستاویز سوال و جواب کا نظام بناتے ہیں۔",
+    "fullDescription": "مختلف پی ڈی ایف، مینوئلز اور کمپنی کی پالیسیوں کا انتظام کرنا ایک بڑا آپریشنل بوجھ ہوتا ہے۔ ہم ریٹریول آگمنٹڈ جنریشن (RAG) کا استعمال کرتے ہوئے جدید دستاویزی سوال و جواب کے سلوشنز تیار کرتے ہیں جو ملازمین اور صارفین کو قدرتی زبان میں سوالات پوچھنے اور حوالہ جات کے ساتھ فوری جواب حاصل کرنے کی اجازت دیتے ہیں۔ LlamaIndex، OpenAI اور Weaviate جیسے ویکٹر ڈیٹا بیسز کو مربوط کر کے، ہمارا سسٹم کثیر فارمیٹ کی دستاویزات کو محفوظ طریقے سے پارس، اسکین اور انڈیکس کرتا ہے۔ ہم سخت سیکیورٹی فراہم کرتے ہیں تاکہ آپ کا حساس ڈیٹا عوامی ماڈلز پر کبھی لیک نہ ہو۔ گفتگو کو یاد رکھنے کی صلاحیت اور جدید سرچ انجن کے ساتھ، ہمارے دستاویزی سوال و جواب کے سسٹمز آپ کی فائلوں کو ایک ذہین گفتگو کے ساتھی میں تبدیل کر دیتے ہیں۔",
+    "features": [
+      "ملٹی ڈاکومنٹ ان پٹ اور سوال و جواب پائپ لائنز",
+      "خودکار ذرائع کے حوالہ جات اور لنکس",
+      "کثیر فارمیٹ فائل انڈیکسنگ (PDF, DOCX, CSV)",
+      "سیاق و سباق کے مطابق انوکھا ویکٹر سرچ",
+      "منظم آؤٹ پٹ اور خلاصہ جنریشن",
+      "گفتگو کو یاد رکھنے کی صلاحیت",
+      "سخت رسائی کنٹرول اور ڈیٹا پرائیویسی",
+      "نئی دستاویزات کی خودکار انڈیکسنگ"
+    ],
+    "benefits": [
+      "گھنٹوں کے بجائے سیکنڈوں میں اہم معلومات تلاش کریں",
+      "کمپنی کی پالیسی کے سوالات کے لیے سپورٹ ٹکٹوں میں کمی لائیں",
+      "نئے ملازمین کو آسانی سے کمپنی کے کام سے واقف کرائیں",
+      "حوالہ جات کے ساتھ تصدیق شدہ جوابات حاصل کریں",
+      "حساس کاروباری ڈیٹا کو مکمل طور پر محفوظ اور نجی رکھیں",
+      "ایک ہی وقت میں متعدد دستاویزات کا موازنہ کریں"
+    ],
+    "metaTitle": "دستاویزی سوال جواب سسٹم | کسٹم RAG | PakSoft",
+    "metaDescription": "اپنی دستاویزات سے سوالات پوچھیں اور فوری جوابات حاصل کریں۔ ہم محفوظ اور تصدیق شدہ دستاویزی سوال و جواب کے سسٹمز بناتے ہیں۔ معلومات حاصل کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "دستاویز کا آڈٹ",
+          "description": "ہم فائل فارمیٹس اور سیکیورٹی کی ضروریات کا تجزیہ کرتے ہیں تاکہ ڈیٹا کو پارس کرنے کا بہترین طریقہ کار منتخب کیا جا سکے۔"
+        },
+        {
+          "step": 2,
+          "title": "ڈیٹا انڈیکسنگ",
+          "description": "ہم ایسے خودکار سسٹمز بناتے ہیں جو متعدد فارمیٹس کی فائلوں سے صاف متنی مواد نکال کر ان کے ٹکڑے کرتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "ویکٹر انڈیکسنگ",
+          "description": "ہم نکالے گئے متنی ٹکڑوں کو ویکٹرز میں تبدیل کر کے Weaviate جیسے محفوظ ڈیٹا بیس میں محفوظ کرتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "سرچ اور LLM انٹیگریشن",
+          "description": "ہم تلاش کے الگورتھم کو ترتیب دیتے ہیں تاکہ متعلقہ ڈیٹا حاصل کر کے محفوظ طریقے سے LLM ماڈل کو بھیجا جا سکے۔"
+        },
+        {
+          "step": 5,
+          "title": "انٹرفیس کی تیاری",
+          "description": "ہم صاف چیٹ یا سرچ انٹرفیس تیار کرتے ہیں جو ذرائع کے حوالہ جات اور صفحات کے نمبر واضح طور پر دکھاتا ہے۔"
+        },
+        {
+          "step": 6,
+          "title": "ٹیسٹنگ اور اصلاح",
+          "description": "ہم خودکار جانچ کرتے ہیں تاکہ جوابات میں کسی بھی قسم کی غلطی نہ ہو اور نتائج ایک سیکنڈ سے پہلے حاصل ہوں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "اے آئی کو کیسے معلوم ہوتا ہے کہ جواب کہاں سے ملا ہے؟",
+          "answer": "ہمارا سسٹم ریٹریول آگمنٹڈ جنریشن (RAG) استعمال کرتا ہے۔ جواب دینے سے پہلے، سسٹم آپ کی دستاویزات سے موزوں ترین پیراگراف لاتا ہے اور انہیں صفحہ نمبر کے ساتھ حوالے کے طور پر دکھاتا ہے۔"
+        },
+        {
+          "question": "کیا ہمارا حساس ڈیٹا اے آئی کے پاس محفوظ رہتا ہے؟",
+          "answer": "جی ہاں، سیکیورٹی ہماری اولین ترجیح ہے۔ ہم محفوظ کاروباری APIs یا آپ کے اپنے سرورز پر ہوسٹ کیے گئے ماڈلز استعمال کرتے ہیں، جس سے کوئی بھی ڈیٹا پبلک ماڈلز کی تربیت کے لیے استعمال نہیں ہو سکتا۔"
+        },
+        {
+          "question": "کون سے دستاویز فارمیٹس سپورٹڈ ہیں؟",
+          "answer": "ہم پی ڈی ایف (PDF)، ورڈ (DOCX)، پاور پوائنٹ (PPTX)، ایکسل شیٹس، سی ایس وی (CSV)، ٹیکسٹ فائلز، اور ایچ ٹی ایم ایل (HTML) صفحات کو سپورٹ کرتے ہیں۔"
+        },
+        {
+          "question": "کیا اے آئی اسکین شدہ پی ڈی ایف فائلوں کو پڑھ سکتا ہے؟",
+          "answer": "جی ہاں، ہم اسکین شدہ فائلوں اور تصاویر سے متن نکالنے کے لیے Tesseract یا AWS Textract جیسے OCR ٹولز کا استعمال کرتے ہیں تاکہ انہیں سرچ کے قابل بنایا جا سکے۔"
+        },
+        {
+          "question": "کیا یہ ایک سے زیادہ فائلوں کی معلومات کا موازنہ کر سکتا ہے؟",
+          "answer": "جی ہاں۔ سسٹم ایک وقت میں متعدد دستاویزات سے معلومات حاصل کر سکتا ہے، جس سے آپ مختلف فائلوں کی شرائط کا موازنہ آسانی سے کر سکتے ہیں۔"
+        },
+        {
+          "question": "نئی دستاویزات شامل کرنے پر کیا عمل ہوتا ہے؟",
+          "answer": "ہم خودکار سنکرونائزیشن پائپ لائنز بناتے ہیں۔ جب آپ اپنے کلاؤڈ اسٹوریج (جیسے Google Drive) میں کوئی فائل شامل کرتے ہیں تو وہ خود بخود سسٹم میں شامل ہو جاتی ہے۔"
+        },
+        {
+          "question": "اگر مطلوبہ معلومات دستاویزات میں نہ ہوں تو کیا ہوتا ہے؟",
+          "answer": "ہم سخت قوانین نافذ کرتے ہیں۔ اگر سسٹم کو دستاویزات میں جواب نہیں ملتا تو وہ غلط معلومات دینے کے بجائے واضح طور پر بتا دیتا ہے کہ معلومات دستیاب نہیں ہیں۔"
+        },
+        {
+          "question": "سسٹم کتنی دستاویزات کو انڈیکس کر سکتا ہے؟",
+          "answer": "ہمارا ویکٹر ڈیٹا بیس کا نظام لامحدود فائلیں سنبھالنے کے لیے ڈیزائن کیا گیا ہے۔ یہ لاکھوں صفحات کو انڈیکس کر کے ملی سیکنڈز میں جواب فراہم کر سکتا ہے۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "LlamaIndex",
+          "icon": "llamaindex"
+        },
+        {
+          "name": "OpenAI API",
+          "icon": "openai"
+        },
+        {
+          "name": "Weaviate",
+          "icon": "weaviate"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "LangChain",
+          "icon": "langchain"
+        },
+        {
+          "name": "Pinecone",
+          "icon": "pinecone"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "FastAPI",
+          "icon": "fastapi"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "الأسئلة والأجوبة حول المستندات",
+    "shortDescription": "استخرج إجابات وملخصات فورية ودقيقة من مستندات مؤسستك. نحن نبني مسارات أسئلة وأجوبة ذكية للمستندات مع تتبع الاستشهادات والوعي الآمن بالسياق.",
+    "fullDescription": "تمثل إدارة الكتالوجات، والملفات بصيغة PDF، والسياسات المؤسسية المشتتة عبئاً تشغيلياً كبيراً. نحن نطور حلولاً متقدمة للأسئلة والأجوبة حول المستندات باستخدام توليد الاسترجاع المعزز (RAG) والتي تتيح للموظفين والعملاء طرح أسئلة بلغة طبيعية والحصول على إجابات فورية مع استشهادات دقيقة بمصادر المعلومات. من خلال دمج LlamaIndex و OpenAI وقواعد البيانات المتجهة مثل Weaviate، تقوم أنظمتنا بتحليل وتقسيم وفهرسة المستندات متعددة التنسيقات (PDF و Word والعروض التقديمية و HTML) بشكل آمن. نضمن خصوصية صارمة للبيانات حتى لا تتسرب معرفة شركتك الحساسة أبداً إلى النماذج العامة. بفضل الذاكرة المدمجة للأسئلة المتابعة والبحث الدلالي، تحول محركاتنا المستندات السلبية إلى شريك حوار نشط.",
+    "features": [
+      "مسارات مدخلات وأسئلة متعددة المستندات",
+      "استشهادات وروابط آلية للمصادر والصفحات",
+      "استيعاب ملفات بتنسيقات متعددة (PDF, DOCX, CSV)",
+      "بحث متجه دلالي واعٍ تماماً بالسياق",
+      "توليد مخرجات منظمة وملخصات دقيقة",
+      "ذاكرة مدمجة للمحادثات وسياق الحوار",
+      "تحكم صارم في الوصول وخصوصية كاملة للبيانات",
+      "فهرسة تلقائية لأي مستندات جديدة مضافة"
+    ],
+    "benefits": [
+      "العثور على المعلومات الهامة في ثوانٍ بدلاً من ساعات",
+      "تقليل تذاكر الدعم الداخلي للاستفسار عن السياسات",
+      "تهيئة الموظفين الجدد بشكل أسرع عبر المعرفة الذاتية",
+      "ضمان دقة عالية من خلال إجابات منسوبة لمصادرها",
+      "الحفاظ على خصوصية وأمان بيانات الشركة بالكامل",
+      "تحليل ومقارنة مستندات متعددة في نفس الوقت بسهولة"
+    ],
+    "metaTitle": "أنظمة أسئلة وأجوبة للمستندات | حلول RAG | PakSoft",
+    "metaDescription": "اطرح الأسئلة واحصل على إجابات فورية من مستنداتك. نبني محركات أسئلة مخصصة مع الاستشهادات بالمصادر وأمان عالٍ للبيانات. اعرف المزيد.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تدقيق المستندات",
+          "description": "نراجع المستندات المستهدفة وتنسيقات الملفات ومتطلبات الأمان لتحديد النهج الأمثل للتحليل والفهرسة."
+        },
+        {
+          "step": 2,
+          "title": "استيراد البيانات وتقسيمها",
+          "description": "نبني مسارات استيراد البيانات التي تستخرج النصوص النظيفة من الملفات متعددة التنسيقات وتقسمها إلى أجزاء دلالية."
+        },
+        {
+          "step": 3,
+          "title": "التمثيل المتجهي والفهرسة",
+          "description": "نحول أجزاء النص إلى تمثيلات متجهية (embeddings) عالية الأبعاد ونفهرسها داخل قاعدة بيانات آمنة مثل Weaviate."
+        },
+        {
+          "step": 4,
+          "title": "الاسترجاع وإعداد نموذج اللغة",
+          "description": "نقوم بتكوين خوارزميات استرجاع البحث لجلب مقتطفات المستندات ذات الصلة وتغذيتها في نموذج لغوي آمن."
+        },
+        {
+          "step": 5,
+          "title": "تطوير واجهة الاستخدام",
+          "description": "نبني واجهات محادثة أو بحث نظيفة وسهلة، تعرض الاستشهادات بالمصادر وتتيح تحميل المواد المرجعية ذات الصلة."
+        },
+        {
+          "step": 6,
+          "title": "التقييم والضبط الدقيق",
+          "description": "نجري اختبارات تقييم تلقائية لضمان الدقة، والقضاء على الهلوسة، وإبقاء سرعة استرجاع البحث أقل من ثانية واحدة."
+        }
+      ],
+      "faq": [
+        {
+          "question": "كيف يعرف الذكاء الاصطناعي أين وجد الإجابة؟",
+          "answer": "تستخدم أنظمتنا توليد الاسترجاع المعزز (RAG). قبل الإجابة، يسترجع النظام الفقرات الأكثر صلة من مستنداتك ويعرضها كاستشهادات قابلة للنقر مع أرقام الصفحات."
+        },
+        {
+          "question": "هل بيانات شركتنا الحساسة آمنة مع الذكاء الاصطناعي؟",
+          "answer": "نعم، الأمان هو أولويتنا القصوى. نحن نستخدم واجهات برمجة تطبيقات آمنة للمؤسسات أو نماذج مفتوحة المصدر يتم نشرها محلياً على خوادمك الخاصة لضمان عدم تدريب النماذج العامة عليها."
+        },
+        {
+          "question": "ما هي تنسيقات المستندات المدعومة؟",
+          "answer": "نحن ندعم مجموعة واسعة من التنسيقات، بما في ذلك ملفات PDF، ومستندات Microsoft Word (DOCX)، وعروض PowerPoint (PPTX)، وجداول Excel، وملفات CSV، والملفات النصية، وصفحات الويب HTML."
+        },
+        {
+          "question": "هل يمكن للذكاء الاصطناعي معالجة مستندات PDF الممسوحة ضوئياً؟",
+          "answer": "نعم، نحن ندمج محركات التعرف الضوئي على الحروف (OCR) مثل Tesseract أو AWS Textract لاستخراج النصوص النظيفة من الصور وملفات PDF الممسوحة ضوئياً قبل فهرستها."
+        },
+        {
+          "question": "هل يمكن للنظام مقارنة المعلومات عبر ملفات متعددة؟",
+          "answer": "بالتأكيد. يمكن للنظام استرجاع السياق من مستندات متعددة في نفس الوقت، مما يتيح للمستخدمين طرح أسئلة للمقارنة مثل شروط العقود المختلفة."
+        },
+        {
+          "question": "كيف يتعامل النظام مع المستندات المحدثة؟",
+          "answer": "نقوم بإعداد مسارات مزامنة تلقائية. عندما يتم تعديل ملف أو إضافته إلى وحدة التخزين الخاصة بك (مثل Google Drive أو S3)، يتمت إعادة فهرسته تلقائياً في الوقت الفعلي."
+        },
+        {
+          "question": "ماذا يحدث إذا لم تكن الإجابة موجودة في المستندات؟",
+          "answer": "نضع حواجز حماية صارمة للأنظمة. إذا لم يجد النظام الإجابة في المستندات المقدمة، فسوف يجيب بأن المعلومات غير متوفرة، مما يمنع حدوث الهلوسة الكاذبة."
+        },
+        {
+          "question": "كم عدد المستندات التي يمكن للنظام فهرستها؟",
+          "answer": "تم تصميم بنية قاعدة البيانات المتجهة لدينا لتناسب الأحجام الضخمة. يمكنها فهرسة آلاف الكتيبات وملايين الصفحات، وتقديم نتائج البحث في أجزاء من الثانية."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "LlamaIndex",
+          "icon": "llamaindex"
+        },
+        {
+          "name": "OpenAI API",
+          "icon": "openai"
+        },
+        {
+          "name": "Weaviate",
+          "icon": "weaviate"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "LangChain",
+          "icon": "langchain"
+        },
+        {
+          "name": "Pinecone",
+          "icon": "pinecone"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "FastAPI",
+          "icon": "fastapi"
+        }
+      ]
+    }
+  }
+}

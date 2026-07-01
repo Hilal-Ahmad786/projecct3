@@ -1,0 +1,638 @@
+{
+  "slug": "predictive-analytics",
+  "en": {
+    "name": "Predictive Analytics",
+    "shortDescription": "Forecast business trends, predict customer churn, and optimize pricing with predictive models. We design custom ML algorithms that turn historical data into proactive insights.",
+    "fullDescription": "Looking back at historical data is no longer enough to stay competitive. We build custom Predictive Analytics solutions that use advanced machine learning models to anticipate future outcomes and customer behavior. Utilizing frameworks like scikit-learn, XGBoost, and TensorFlow, we train predictive engines for demand forecasting, customer churn prevention, predictive maintenance, and lead scoring. We handle the entire data science workflow on platforms like Databricks, from data cleaning and feature engineering to deployment with MLflow. By integrating predictive scores directly into your CRM, ERP, or marketing software, we enable your team to take proactive actions, optimizing inventory and pricing dynamically.",
+    "features": [
+      "Demand & Sales Forecasting Models",
+      "Customer Churn Prediction and Prevention",
+      "Predictive Maintenance for Machinery",
+      "Credit and Risk Scoring Algorithms",
+      "Dynamic Price Optimization Engines",
+      "Automated High-Quality Lead Scoring",
+      "Anomaly Detection for Operational Safety",
+      "Centralized MLOps Deployment with MLflow"
+    ],
+    "benefits": [
+      "Anticipate market changes and consumer demand accurately",
+      "Reduce customer churn through targeted retention campaigns",
+      "Minimize equipment downtime with predictive maintenance",
+      "Increase revenue using data-driven price optimizations",
+      "Prioritize sales outreach to high-converting leads",
+      "Automate data workflows on secure Databricks clusters"
+    ],
+    "metaTitle": "Custom Predictive Analytics Services | AI & ML | PakSoft",
+    "metaDescription": "Forecast business trends and customer churn using custom machine learning models. We build predictive solutions with XGBoost and scikit-learn. Contact us.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Business Objectives Discovery",
+          "description": "We analyze your business processes and historical dataset availability to identify high-value prediction targets."
+        },
+        {
+          "step": 2,
+          "title": "Data Preparation",
+          "description": "We clean, merge, and structure raw database records, engineering key predictive features on Databricks clusters."
+        },
+        {
+          "step": 3,
+          "title": "Model Training",
+          "description": "We train and evaluate multiple models (XGBoost, Random Forests, LSTM) to select the most accurate algorithm."
+        },
+        {
+          "step": 4,
+          "title": "Pipeline Integration",
+          "description": "We wrap the predictive model in a pipeline to automate daily or real-time scoring updates."
+        },
+        {
+          "step": 5,
+          "title": "System Connection",
+          "description": "We import model scores directly into your CRM (like Salesforce) or ERP database for team action."
+        },
+        {
+          "step": 6,
+          "title": "Monitoring & Drift Audit",
+          "description": "We track model accuracy using MLflow, setting up retrain alerts when input patterns diverge from training sets."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What kind of data is required for predictive analytics?",
+          "answer": "We require historical records of the events you want to predict, such as sales records, customer interaction logs, or sensor data, ideally covering at least 1 to 2 years."
+        },
+        {
+          "question": "How do you evaluate model accuracy?",
+          "answer": "We split your data into training and test sets. We measure performance using standard metrics like MSE (Mean Squared Error) for regression or F1-Score for classification models."
+        },
+        {
+          "question": "Can this help reduce customer churn?",
+          "answer": "Yes, we build classification models that score each customer's likelihood to churn. This helps your marketing team target high-risk clients before they leave."
+        },
+        {
+          "question": "What is predictive maintenance?",
+          "answer": "Predictive maintenance analyzes temperature, vibration, and usage logs from machinery to predict equipment failures, helping you schedule repairs before breakdowns occur."
+        },
+        {
+          "question": "How do you deploy predictive models?",
+          "answer": "We deploy models as secure microservice APIs using Docker and MLflow, or write prediction outputs directly into your main SQL database at scheduled intervals."
+        },
+        {
+          "question": "Is my company data secure during analysis?",
+          "answer": "Absolutely. We run all training and data preparation tasks inside your private cloud environment or on local Databricks clusters, ensuring total data privacy."
+        },
+        {
+          "question": "Can you predict pricing demand?",
+          "answer": "Yes, we design dynamic pricing engines that analyze historical sales, competitor pricing, and seasonality to recommend the optimal price that maximizes revenue."
+        },
+        {
+          "question": "How long does it take to deploy a predictive model?",
+          "answer": "A standard predictive analytics project, from data exploration and model training to ERP integration, typically takes 8 to 12 weeks."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "scikit-learn",
+          "icon": "scikitlearn"
+        },
+        {
+          "name": "XGBoost",
+          "icon": "xgboost"
+        },
+        {
+          "name": "Facebook Prophet",
+          "icon": "prophet"
+        },
+        {
+          "name": "TensorFlow",
+          "icon": "tensorflow"
+        },
+        {
+          "name": "MLflow",
+          "icon": "mlflow"
+        },
+        {
+          "name": "Databricks",
+          "icon": "databricks"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Tahminleyici Analitik",
+    "shortDescription": "Tahminleyici modellerle iş trendlerini öngörün, müşteri kaybını tahmin edin ve fiyatlandırmayı optimize edin. Geçmiş verileri proaktif içgörülere dönüştüren özel ML algoritmaları tasarlıyoruz.",
+    "fullDescription": "Rekabetçi kalabilmek için sadece geçmiş verilere bakmak artık yeterli değil. Gelecekteki sonuçları ve müşteri davranışlarını öngörmek için gelişmiş makine öğrenimi modellerini kullanan özel Tahminleyici Analitik çözümleri kuruyoruz. scikit-learn, XGBoost ve TensorFlow gibi çerçeveleri kullanarak talep tahmini, müşteri kaybı önleme, tahminleyici bakım ve aday müşteri puanlama için tahmin motorları eğitiyoruz. Temizleme ve özellik mühendisliğinden MLflow ile dağıtıma kadar tüm veri bilimi iş akışını Databricks gibi platformlarda yönetiyoruz. Tahmin puanlarını doğrudan CRM, ERP veya pazarlama yazılımınıza entegre ederek ekibinizin proaktif adımlar atmasını sağlıyor, envanter ve fiyatlandırmayı dinamik olarak optimize ediyoruz.",
+    "features": [
+      "Talep ve Satış Tahmin Modelleri",
+      "Müşteri Kaybı Tahmini ve Önlenmesi",
+      "Makineler İçin Tahminleyici Bakım",
+      "Kredi ve Risk Puanlama Algoritmaları",
+      "Dinamik Fiyat Optimizasyonu Motorları",
+      "Yüksek Kaliteli Aday Müşteri Puanlama",
+      "Operasyonel Güvenlik İçin Anormallik Tespiti",
+      "MLflow ile Merkezi MLOps Dağıtımı"
+    ],
+    "benefits": [
+      "Pazar değişikliklerini ve tüketici talebini doğru bir şekilde öngörün",
+      "Hedefli elde tutma kampanyalarıyla müşteri kaybını azaltın",
+      "Tahminleyici bakımla ekipman duruş sürelerini en aza indirin",
+      "Veriye dayalı fiyat optimizasyonlarıyla geliri artırın",
+      "Satış ekibinin dönüşüm olasılığı yüksek adaylara odaklanmasını sağlayın",
+      "Güvenli Databricks kümelerinde veri iş akışlarını otomatikleştirin"
+    ],
+    "metaTitle": "Tahminleyici Analitik Hizmetleri | AI & ML | PakSoft",
+    "metaDescription": "Özel makine öğrenimi modelleriyle iş trendlerini ve müşteri kaybını öngörün. XGBoost ve scikit-learn ile tahmin çözümleri sunuyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "İş Hedeflerinin Belirlenmesi",
+          "description": "Yüksek değerli tahmin hedeflerini belirlemek için iş süreçlerinizi ve geçmiş veri kümesi kullanılabilirliğini analiz ediyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Veri Hazırlığı",
+          "description": "Ham veritabanı kayıtlarını temizliyor, birleştiriyor ve yapılandırarak Databricks üzerinde tahminleyici özellikler geliştiriyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Model Eğitimi",
+          "description": "En doğru algoritmayı seçmek amacıyla birden fazla modeli (XGBoost, Random Forests, LSTM) eğitiyor ve değerlendiriyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Veri Hattı Entegrasyonu",
+          "description": "Günlük veya gerçek zamanlı puanlama güncellemelerini otomatikleştirmek için tahmin modelini bir veri hattı (pipeline) içine alıyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Sistem Bağlantısı",
+          "description": "Ekibin aksiyon alabilmesi için model puanlarını doğrudan CRM (Salesforce gibi) veya ERP veritabanınıza aktarıyoruz."
+        },
+        {
+          "step": 6,
+          "title": "İzleme & Sapma Denetimi",
+          "description": "MLflow kullanarak model doğruluğunu izliyor, girdiler eğitim setlerinden saptığında yeniden eğitim uyarıları kuruyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Tahminleyici analitik için ne tür verilere ihtiyaç vardır?",
+          "answer": "Tahmin etmek istediğiniz olayların (örneğin satış kayıtları, müşteri etkileşim günlükleri veya sensör verileri) geçmiş kayıtlarına ihtiyaç duyarız; bu verilerin en az 1-2 yılı kapsaması idealdir."
+        },
+        {
+          "question": "Model doğruluğunu nasıl değerlendiriyorsunuz?",
+          "answer": "Verilerinizi eğitim ve test setleri olarak ayırıyoruz. Performansı, regresyon modelleri için MSE (Ortalama Kare Hata) veya sınıflandırma modelleri için F1-Skoru gibi standart metriklerle ölçüyoruz."
+        },
+        {
+          "question": "Bu sistem müşteri kaybını (churn) azaltmaya yardımcı olabilir mi?",
+          "answer": "Evet, her müşterinin sistemden ayrılma olasılığını puanlayan sınıflandırma modelleri oluşturuyoruz. Bu, pazarlama ekibinizin risk altındaki müşterileri kaybetmeden önce hedeflemesini sağlar."
+        },
+        {
+          "question": "Tahminleyici bakım nedir?",
+          "answer": "Tahminleyici bakım, ekipman arızalarını öngörmek için makinelerden alınan sıcaklık, titreşim ve kullanım günlüklerini analiz ederek arızalar oluşmadan önce onarım planlamanıza yardımcı olur."
+        },
+        {
+          "question": "Tahminleyici modelleri nasıl yayına alıyorsunuz?",
+          "answer": "Modelleri Docker ve MLflow kullanarak güvenli mikro hizmet API'leri olarak dağıtıyoruz veya tahmin çıktılarını planlanan aralıklarla doğrudan ana SQL veritabanınıza yazıyoruz."
+        },
+        {
+          "question": "Analiz sırasında şirket verilerim güvende mi?",
+          "answer": "Kesinlikle. Tüm eğitim ve veri hazırlama görevlerini özel bulut ortamınızda veya yerel Databricks kümelerinizde çalıştırarak tam veri gizliliği sağlıyoruz."
+        },
+        {
+          "question": "Fiyatlandırma talebini tahmin edebilir misiniz?",
+          "answer": "Evet, geliri en üst düzeye çıkaran en uygun fiyatı önermek için geçmiş satışları, rakip fiyatlarını ve mevsimselliği analiz eden dinamik fiyatlandırma motorları tasarlıyoruz."
+        },
+        {
+          "question": "Bir tahminleyici modeli yayına almak ne kadar sürer?",
+          "answer": "Veri keşfi ve model eğitiminden ERP entegrasyonuna kadar standart bir tahminleyici analitik projesi genellikle 8 ila 12 hafta sürer."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "scikit-learn",
+          "icon": "scikitlearn"
+        },
+        {
+          "name": "XGBoost",
+          "icon": "xgboost"
+        },
+        {
+          "name": "Facebook Prophet",
+          "icon": "prophet"
+        },
+        {
+          "name": "TensorFlow",
+          "icon": "tensorflow"
+        },
+        {
+          "name": "MLflow",
+          "icon": "mlflow"
+        },
+        {
+          "name": "Databricks",
+          "icon": "databricks"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Prädiktive Analytik",
+    "shortDescription": "Prognostizieren Sie Geschäftstrends, Kundenabwanderung und optimieren Sie Preise mit prädiktiven Modellen. Wir bauen ML-Algorithmen zur Nutzung historischer Daten.",
+    "fullDescription": "Der Blick auf historische Daten reicht heute nicht mehr aus. Wir entwickeln maßgeschneiderte Predictive-Analytics-Lösungen, die moderne Machine-Learning-Modelle nutzen, um zukünftige Ergebnisse und Kundenverhalten vorherzusagen. Mit Bibliotheken wie scikit-learn, XGBoost und TensorFlow trainieren wir Vorhersagemodelle für Nachfrageprognosen, Kundenabwanderung (Churn), vorausschauende Wartung (Predictive Maintenance) und Lead-Scoring. Wir steuern den gesamten Data-Science-Prozess auf Databricks-Systemen, von der Datenbereinigung bis zum Deployment mit MLflow. Durch die Einbindung der Ergebnisse in Ihre CRM- und ERP-Systeme ermöglichen wir datenbasierte, zukunftsorientierte Entscheidungen.",
+    "features": [
+      "Bedarfs- & Umsatzprognosemodelle",
+      "Kundenabwanderungs-Prognose & Prävention",
+      "Vorausschauende Wartung (Predictive Maintenance)",
+      "Kredit- und Risikobewertungsalgorithmen",
+      "Dynamische Preisoptimierungs-Systeme",
+      "Automatisches, qualifiziertes Lead-Scoring",
+      "Anomalieerkennung im operativen Betrieb",
+      "Zentrales MLOps-Deployment mit MLflow"
+    ],
+    "benefits": [
+      "Marktveränderungen und Nachfragen präzise antizipieren",
+      "Kundenabwanderung durch gezielte Kampagnen reduzieren",
+      "Ausfallzeiten durch vorausschauende Wartung minimieren",
+      "Umsätze durch datengestützte Preisoptimierung steigern",
+      "Vertriebsaktivitäten auf vielversprechende Leads fokussieren",
+      "Daten-Workflows auf sicheren Databricks-Clustern automatisieren"
+    ],
+    "metaTitle": "Predictive Analytics Services | AI & ML | PakSoft",
+    "metaDescription": "Prognostizieren Sie Geschäftstrends und Churn mit Machine Learning. Wir bauen prädiktive Lösungen mit XGBoost und scikit-learn. Kontaktieren Sie uns.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Definition der Business-Ziele",
+          "description": "Wir analysieren Ihre Geschäftsprozesse und historischen Datensätze, um vielversprechende Prognoseziele zu identifizieren."
+        },
+        {
+          "step": 2,
+          "title": "Datenvorbereitung",
+          "description": "Wir bereinigen, verknüpfen und strukturieren Ihre Daten und entwickeln relevante Features auf Databricks-Clustern."
+        },
+        {
+          "step": 3,
+          "title": "Modell-Training",
+          "description": "Wir trainieren und evaluieren verschiedene Modelle (XGBoost, Random Forests, LSTM), um den präzisesten Algorithmus zu ermitteln."
+        },
+        {
+          "step": 4,
+          "title": "Pipeline-Integration",
+          "description": "Wir binden das Vorhersagemodell in eine Pipeline ein, um tägliche oder Echtzeit-Berechnungen zu automatisieren."
+        },
+        {
+          "step": 5,
+          "title": "Systemanbindung",
+          "description": "Wir exportieren die Prognosewerte direkt in Ihr CRM (z. B. Salesforce) oder ERP-System zur Nutzung durch Ihr Team."
+        },
+        {
+          "step": 6,
+          "title": "Monitoring & Drift-Audit",
+          "description": "Wir überwachen die Genauigkeit mit MLflow und richten Warnungen für automatische Trainingsläufe bei Datenveränderungen ein."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Welche Daten werden für prädiktive Analysen benötigt?",
+          "answer": "Wir benötigen historische Daten der Ereignisse, die Sie vorhersagen möchten (z. B. Verkaufsdaten, Kundenkontaktverläufe oder Maschinensensordaten) über einen Zeitraum von mindestens 1 bis 2 Jahren."
+        },
+        {
+          "question": "Wie bewerten Sie die Genauigkeit der Modelle?",
+          "answer": "Wir teilen Ihre Daten in Trainings- und Testdatensätze auf. Wir messen die Qualität anhand von Standardmetriken wie MSE (Mean Squared Error) für Regressionen oder dem F1-Score für Klassifikationen."
+        },
+        {
+          "question": "Kann dies helfen, Kundenabwanderung (Churn) zu reduzieren?",
+          "answer": "Ja, wir entwickeln Klassifizierungsmodelle, die die Kündigungswahrscheinlichkeit jedes Kunden berechnen. So kann Ihr Marketing gefährdete Kunden gezielt ansprechen, bevor sie abwandern."
+        },
+        {
+          "question": "Was versteht man unter Predictive Maintenance?",
+          "answer": "Dabei werden Temperatur-, Vibrations- und Nutzungsdaten von Maschinen analysiert, um Ausfälle vorherzusagen. So können Reparaturen geplant werden, bevor ein ungeplanter Stillstand entsteht."
+        },
+        {
+          "question": "Wie werden prädiktive Modelle bereitgestellt?",
+          "answer": "Wir deployen Modelle als sichere Microservice-APIs mit Docker und MLflow oder schreiben die Vorhersageergebnisse in regelmäßigen Intervallen direkt in Ihre SQL-Datenbank."
+        },
+        {
+          "question": "Sind unsere Unternehmensdaten während der Analyse sicher?",
+          "answer": "Absolut. Wir führen alle Trainings- und Aufbereitungsschritte innerhalb Ihrer privaten Cloud oder auf lokalen Databricks-Clustern aus, was maximalen Datenschutz sichert."
+        },
+        {
+          "question": "Können Sie Nachfrage und Preise prognostizieren?",
+          "answer": "Ja, wir entwickeln Preisoptimierungs-Systeme, die Verkaufsdaten, Wettbewerberpreise und Saisonalitäten analysieren, um den optimalen Preis zur Umsatzmaximierung vorzuschlagen."
+        },
+        {
+          "question": "Wie lange dauert ein prädiktives Analyseprojekt?",
+          "answer": "Ein typisches Projekt von der Datenanalyse über das Modelltraining bis zur Einbindung in Ihre Systeme (ERP/CRM) dauert meist 8 bis 12 Wochen."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "scikit-learn",
+          "icon": "scikitlearn"
+        },
+        {
+          "name": "XGBoost",
+          "icon": "xgboost"
+        },
+        {
+          "name": "Facebook Prophet",
+          "icon": "prophet"
+        },
+        {
+          "name": "TensorFlow",
+          "icon": "tensorflow"
+        },
+        {
+          "name": "MLflow",
+          "icon": "mlflow"
+        },
+        {
+          "name": "Databricks",
+          "icon": "databricks"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "تخمیناتی تجزیات (Predictive Analytics)",
+    "shortDescription": "کاروباری رجحانات، صارفین کے چھوڑ جانے اور قیمتوں کے اتار چڑھاؤ کی پیشین گوئی کریں۔ ہم ماضی کے ڈیٹا کو کارآمد معلومات میں بدلنے والے ماڈلز بناتے ہیں۔",
+    "fullDescription": "مارکیٹ میں مسابقت برقرار رکھنے کے لیے صرف ماضی کے ڈیٹا پر نظر رکھنا کافی نہیں ہے۔ ہم کسٹم تخمیناتی تجزیات (Predictive Analytics) کے سلوشنز بناتے ہیں جو مستقبل کے نتائج اور صارفین کے رویے کی پیشین گوئی کرنے کے لیے مشین لرننگ کے جدید ماڈلز کا استعمال کرتے ہیں۔ scikit-learn، XGBoost، اور TensorFlow جیسے فریم ورکس کی مدد سے، ہم مصنوعات کی طلب، کسٹمر چرن (churn) اور مشینری کی خرابیوں کی پیشین گوئی کرنے والے سسٹمز تیار کرتے ہیں۔ ہم ڈیٹا کی صفائی سے لے کر MLflow کے ذریعے لانچنگ تک کا سارا عمل Databricks پر سرانجام دیتے ہیں۔ ان نتائج کو براہ راست آپ کے CRM یا ERP سسٹم سے جوڑا جاتا ہے تاکہ کمپنی کے سیلز اور آپریشنز کے فیصلے تیز ہو سکیں۔",
+    "features": [
+      "مصنوعات کی طلب اور سیلز پیشین گوئی ماڈلز",
+      "صارفین کے چھوڑ جانے کی شناخت اور روک تھام",
+      "مشینری کی خرابیوں کی پیشین گوئی (Predictive Maintenance)",
+      "کریڈٹ اور کاروباری رسک اسکورنگ الگورتھمز",
+      "ڈينامک پرائسنگ اور قیمتوں کی اصلاح کا نظام",
+      "بہترین لیڈز کی خودکار اور فوری اسکورنگ",
+      "آپریشنل سیکیورٹی کے لیے انحرافات کا پتہ لگانا",
+      "MLflow کے ذریعے مرکزی ماڈل ہوسٹنگ"
+    ],
+    "benefits": [
+      "مارکیٹ کی تبدیلیوں اور صارفین کی طلب کا پہلے سے درست اندازہ لگائیں",
+      "صارفین کے چھوڑ جانے کی شرح کو خاصی حد تک کم کریں",
+      "مشینری کے خراب ہونے سے پہلے مرمت کا شیڈول بنا کر وقت بچائیں",
+      "ڈیٹا کی مدد سے بہترین قیمتیں طے کر کے منافع بڑھائیں",
+      "اپنی سیلز ٹیم کو زیادہ منافع بخش لیڈز پر فوکس کروائیں",
+      "محفوظ Databricks سرورز پر ڈیٹا پروسیسنگ خودکار بنائیں"
+    ],
+    "metaTitle": "تخمیناتی تجزیات کی سروسز | AI اور ML | PakSoft",
+    "metaDescription": "کاروباری رجحانات اور کسٹمر چرن کی پیشین گوئی کریں۔ ہم XGBoost اور scikit-learn کی مدد سے تجزیاتی ماڈلز بناتے ہیں۔ رابطہ کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "کاروباری مقاصد کی شناخت",
+          "description": "ہم اہم کاروباری مقاصد اور ماضی کے دستیاب ڈیٹا کا تجزیہ کرتے ہیں تاکہ پیشین گوئی کے اہداف طے کیے جا سکیں۔"
+        },
+        {
+          "step": 2,
+          "title": "ڈیٹا کی تیاری",
+          "description": "ہم خام ریکارڈز کو صاف اور ترتیب دیتے ہیں اور Databricks پر ماڈل کے لیے اہم فیچرز تیار کرتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "ماڈل کی تربیت",
+          "description": "ہم بہترین کارکردگی حاصل کرنے کے لیے متعدد ماڈلز (XGBoost, LSTM, Random Forests) کی تربیت اور موازنہ کرتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "پائپ لائن انٹیگریشن",
+          "description": "ہم تربیت یافتہ ماڈل کو پائپ لائن میں تبدیل کرتے ہیں تاکہ روزانہ کی بنیاد پر خودکار پیشین گوئیاں حاصل کی جا سکیں۔"
+        },
+        {
+          "step": 5,
+          "title": "سسٹمز سے جوڑنا",
+          "description": "ہم پیشین گوئی کے نتائج کو براہ راست آپ کے CRM (Salesforce) یا ERP ڈیٹا بیس میں منتقل کرتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "نگرانی اور کارکردگی کی جانچ",
+          "description": "ہم MLflow کے ذریعے ماڈل کی درستگی مانیٹر کرتے ہیں اور ڈیٹا تبدیل ہونے پر دوبارہ تربیت کے الرٹس لگاتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "تخمیناتی تجزیات کے لیے کس قسم کے ڈیٹا کی ضرورت ہوتی ہے؟",
+          "answer": "ہمیں ان سرگرمیوں کے ماضی کے ریکارڈز کی ضرورت ہوتی ہے جن کی آپ پیشین گوئی کرنا چاہتے ہیں، جیسے پچھلے 1 سے 2 سال کے سیلز لاگز، کسٹمر سپورٹ ہسٹری یا مشینوں کے سینسر کا ڈیٹا۔"
+        },
+        {
+          "question": "آپ ماڈل کی درستگی کو کیسے چیک کرتے ہیں؟",
+          "answer": "ہم ڈیٹا کو ٹریننگ اور ٹیسٹنگ حصوں میں تقسیم کرتے ہیں۔ ہم درستگی کی پیمائش کے لیے MSE (Mean Squared Error) یا F1-Score جیسے معیاری طریقے استعمال کرتے ہیں۔"
+        },
+        {
+          "question": "کیا یہ سسٹم صارفین کے چھوڑ جانے (churn) کو کم کرنے میں مدد کر سکتا ہے؟",
+          "answer": "جی ہاں، ہم ایسے ماڈلز بناتے ہیں جو ہر کسٹمر کے کمپنی چھوڑنے کے امکان کا اسکور تیار کرتے ہیں۔ اس سے مارکیٹنگ ٹیم بروقت کارروائی کر کے صارفین کو روک سکتی ہے۔"
+        },
+        {
+          "question": "پریڈیکٹیو مینٹیننس (predictive maintenance) کیا ہے؟",
+          "answer": "یہ مشینوں کے درجہ حرارت، وائبریشن اور استعمال کا تجزیہ کرتی ہے تاکہ مشین کے خراب ہونے سے پہلے ہی اس کی مرمت کا وقت بتایا جا سکے، جس سے کام بند ہونے کا خطرہ ختم ہو جاتا ہے۔"
+        },
+        {
+          "question": "آپ پیشین گوئی کرنے والے ماڈلز کو کیسے ہوسٹ کرتے ہیں؟",
+          "answer": "ہم ماڈلز کو Docker اور MLflow کے ذریعے محفوظ APIs کے طور پر لانچ کرتے ہیں یا مقررہ وقت پر نتائج کو براہ راست آپ کے SQL ڈیٹا بیس میں منتقل کرتے ہیں۔"
+        },
+        {
+          "question": "کیا پروسیسنگ کے دوران ہمارا ڈیٹا محفوظ رہتا ہے؟",
+          "answer": "بالکل۔ ہم ٹریننگ اور ڈیٹا کی پروسیسنگ کا سارا کام آپ کے اپنے نجی کلاؤڈ یا لوکل Databricks سرورز پر کرتے ہیں، جس سے ڈیٹا کی پرائیویسی سو فیصد یقینی رہتی ہے۔"
+        },
+        {
+          "question": "کیا آپ مصنوعات کی قیمتوں کی طلب کی پیشین گوئی کر سکتے ہیں؟",
+          "answer": "جی ہاں، ہم ڈينامک پرائسنگ سسٹمز ڈیزائن کرتے ہیں جو سیلز، حریفوں کی قیمتوں اور موسم کا تجزیہ کر کے ایسی قیمت بتاتے ہیں جس سے زیادہ منافع حاصل ہو سکے۔"
+        },
+        {
+          "question": "ایک پیشین گوئی کا ماڈل تیار کرنے میں کتنا وقت لگتا ہے؟",
+          "answer": "ڈیٹا کی صفائی، ماڈل ٹریننگ اور اسے ERP سسٹم کے ساتھ مربوط کرنے کے مکمل پروجیکٹ میں عام طور پر 8 سے 12 ہفتے لگتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "scikit-learn",
+          "icon": "scikitlearn"
+        },
+        {
+          "name": "XGBoost",
+          "icon": "xgboost"
+        },
+        {
+          "name": "Facebook Prophet",
+          "icon": "prophet"
+        },
+        {
+          "name": "TensorFlow",
+          "icon": "tensorflow"
+        },
+        {
+          "name": "MLflow",
+          "icon": "mlflow"
+        },
+        {
+          "name": "Databricks",
+          "icon": "databricks"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "التحليلات التنبؤية",
+    "shortDescription": "تنبأ باتجاهات الأعمال، وسلوك العملاء، وحجم الطلب باستخدام النماذج التنبؤية. نصمم خوارزميات تعلم آلي مخصصة تحول البيانات التاريخية إلى رؤى استباقية.",
+    "fullDescription": "النظر إلى البيانات التاريخية لم يعد كافياً للبقاء في دائرة المنافسة. نحن نبني حلول التحليلات التنبؤية المخصصة التي تستخدم نماذج التعلم الآلي المتقدمة لاستباق النتائج المستقبلية وسلوك العملاء. باستخدام أطر عمل مثل scikit-learn و XGBoost و TensorFlow، نقوم بتدريب محركات التنبؤ للتنبؤ بالطلب، ومنع مغادرة العملاء، والصيانة التنبؤية، وتصنيف العملاء المحتملين. نتعامل مع سير عمل علم البيانات بالكامل على منصات مثل Databricks، من تنظيف البيانات وهندسة الميزات إلى النشر مع MLflow. ومن خلال دمج درجات التنبؤ مباشرة في أنظمة إدارة العملاء أو تخطيط الموارد، نمكن فريقك من اتخاذ إجراءات استباقية.",
+    "features": [
+      "نماذج التنبؤ بالطلب والمبيعات المستقبلية",
+      "التنبؤ بمغادرة العملاء والحد منها",
+      "الصيانة التنبؤية للآلات والمعدات الصناعية",
+      "خوارزميات تقييم المخاطر والائتمان المالي",
+      "محركات تحسين الأسعار الديناميكية الذكية",
+      "تصنيف تلقائي وعالي الجودة للعملاء المحتملين",
+      "اكتشاف الأنماط الشاذة لسلامة العمليات التشغيلية",
+      "نشر MLOps مركزي للنماذج باستخدام MLflow"
+    ],
+    "benefits": [
+      "توقع تغيرات السوق وطلب المستهلكين بدقة تامة",
+      "الحد من مغادرة العملاء عبر حملات استهداف استباقية",
+      "تقليل وقت توقف المعدات بفضل الصيانة التنبؤية",
+      "زيادة الإيرادات باستخدام تحسينات الأسعار الموجهة بالبيانات",
+      "تركيز جهود المبيعات على العملاء المحتملين الأكثر تحويلاً",
+      "أتمتة سير عمل البيانات على خوادم Databricks الآمنة"
+    ],
+    "metaTitle": "خدمات التحليلات التنبؤية المخصصة | ذكاء اصطناعي | PakSoft",
+    "metaDescription": "تنبأ باتجاهات الأعمال ومغادرة العملاء باستخدام نماذج التعلم الآلي المخصصة. نبني حلولاً تنبؤية باستخدام XGBoost و scikit-learn. اتصل بنا.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "اكتشاف أهداف العمل",
+          "description": "نحلل عمليات عملك وتوفر سجلات البيانات التاريخية لتحديد أهداف التنبؤ ذات القيمة العالية."
+        },
+        {
+          "step": 2,
+          "title": "تجهيز وتحضير البيانات",
+          "description": "نقوم بتنظيف ودمج وهيكلة سجلات قاعدة البيانات، وهندسة الميزات التنبؤية الرئيسية على خوادم Databricks."
+        },
+        {
+          "step": 3,
+          "title": "تدريب النماذج وتقييمها",
+          "description": "ندرب ونقيم نماذج متعددة (XGBoost, Random Forests, LSTM) لاختيار الخوارزمية الأكثر دقة للتشغيل."
+        },
+        {
+          "step": 4,
+          "title": "تكامل مسار العمل",
+          "description": "نغلف النموذج التنبؤي في مسار عمل لأتمتة تحديثات التنبؤ اليومية أو الفورية."
+        },
+        {
+          "step": 5,
+          "title": "توصيل الأنظمة",
+          "description": "نستورد درجات التنبؤ من النماذج مباشرة إلى نظام CRM (مثل Salesforce) أو قواعد بيانات ERP لتسهيل اتخاذ القرار."
+        },
+        {
+          "step": 6,
+          "title": "المراقبة وتدقيق الانحراف",
+          "description": "نتتبع دقة النموذج باستخدام MLflow، ونضع تنبيهات لإعادة التدريب عندما تنحرف أنماط البيانات الواردة."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما نوع البيانات المطلوبة للتحليلات التنبؤية؟",
+          "answer": "نحن بحاجة إلى سجلات تاريخية للأحداث التي ترغب في التنبؤ بها، مثل سجلات المبيعات، أو سجلات تفاعل العملاء، أو بيانات مستشعرات الآلات، ويفضل أن تغطي فترة تتراوح بين عام وعامين على الأقل."
+        },
+        {
+          "question": "كيف تقيم دقة النموذج التنبؤي؟",
+          "answer": "نقوم بتقسيم بياناتك إلى مجموعات تدريب واختبار. ونقيس الأداء باستخدام المقاييس القياسية مثل MSE (متوسط الخطأ المربع) لل회帰 أو F1-Score لنماذج التصنيف."
+        },
+        {
+          "question": "هل يمكن أن يساعد هذا في تقليل مغادرة العملاء (churn)؟",
+          "answer": "نعم، نحن نبني نماذج تصنيف تسجل احتمالية مغادرة كل عميل، مما يساعد فريق التسويق لديك على استهداف العملاء المعرضين للمغادرة قبل حدوث ذلك."
+        },
+        {
+          "question": "ما هي الصيانة التنبؤية؟",
+          "answer": "تحلل الصيانة التنبؤية درجات الحرارة والاهتزازات وسجلات الاستخدام من الآلات للتنبؤ بالأعطال والمشكلات، مما يساعدك على جدولة الإصلاحات قبل حدوث الأعطال."
+        },
+        {
+          "question": "كيف تنشر النماذج التنبؤية؟",
+          "answer": "ننشر النماذج كواجهات برمجة تطبيقات للخدمات المصغرة باستخدام Docker و MLflow، أو نكتب مخرجات التنبؤ مباشرة في قاعدة بيانات SQL الرئيسية الخاصة بك على فترات مجدولة."
+        },
+        {
+          "question": "هل بيانات شركتي آمنة أثناء التحليل؟",
+          "answer": "بالتأكيد. نقوم بتشغيل جميع مهام التدريب وإعداد البيانات داخل بيئة السحابة الخاصة بك أو على خوادم Databricks المحلية، مما يضمن الخصوصية الكاملة للبيانات."
+        },
+        {
+          "question": "هل يمكنك التنبؤ بطلب الأسعار؟",
+          "answer": "نعم، نحن نصمم محركات تسعير ديناميكية تحلل المبيعات التاريخية وأسعار المنافسين والمواسم للتوصية بالسعر الأمثل الذي يعظم الأرباح."
+        },
+        {
+          "question": "كم من الوقت يستغرق نشر نموذج تنبؤي؟",
+          "answer": "يستغرق مشروع التحليلات التنبؤية القياسي، بدءاً من استكشاف البيانات وتدريب النماذج إلى التكامل مع أنظمة تخطيط الموارد، عادةً من 8 إلى 12 أسبوعاً."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "scikit-learn",
+          "icon": "scikitlearn"
+        },
+        {
+          "name": "XGBoost",
+          "icon": "xgboost"
+        },
+        {
+          "name": "Facebook Prophet",
+          "icon": "prophet"
+        },
+        {
+          "name": "TensorFlow",
+          "icon": "tensorflow"
+        },
+        {
+          "name": "MLflow",
+          "icon": "mlflow"
+        },
+        {
+          "name": "Databricks",
+          "icon": "databricks"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        }
+      ]
+    }
+  }
+}

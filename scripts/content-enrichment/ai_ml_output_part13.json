@@ -1,0 +1,1026 @@
+{
+  "recommendation-systems": {
+    "en": {
+      "name": "Recommendation Systems",
+      "shortDescription": "Deliver personalized user experiences, increase average order value, and boost customer retention with custom recommendation engines. We build collaborative filtering and deep learning recommendation systems for your business.",
+      "fullDescription": "Generic storefronts and static content displays fail to convert modern consumers. We design custom Recommendation Systems that analyze user behavior, purchase history, and content interactions in real time to deliver highly relevant suggestions. Using frameworks like TensorFlow Recommenders, LightFM, and AWS Personalize, we build collaborative filtering, content-based, and hybrid recommendation pipelines. We integrate these models with low-latency Redis caches to serve product or content recommendations in milliseconds. By deploying our custom engines directly to your e-commerce platform or mobile application, we help you maximize user engagement, increase click-through rates, and elevate customer lifetime value with personalized suggestions.",
+      "features": [
+        "Real-Time Collaborative Filtering Models",
+        "Content-Based Suggestion Algorithms",
+        "Hybrid Recommendation System Architecture",
+        "Low-Latency Redis Recommendations Cache",
+        "Advanced Deep Learning Ranking Models",
+        "Automated User Profile Vector Ingestion",
+        "Continuous A/B Testing Framework Integration",
+        "AWS Personalize Pipeline Orchestration"
+      ],
+      "benefits": [
+        "Increase average order value and cross-sales significantly",
+        "Boost user engagement and session duration on platforms",
+        "Deliver highly personalized experiences in under 50ms",
+        "Automate product suggestions based on live browser actions",
+        "Reduce content bounce rates through relevant suggestions",
+        "Scale recommendations to millions of active catalog items"
+      ],
+      "metaTitle": "Custom Recommendation Systems Services | PakSoft",
+      "metaDescription": "Boost sales and engagement with custom recommendation systems. We build deep learning engines using TensorFlow Recommenders and LightFM. Contact us.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Behavioral Data Discovery",
+            "description": "We analyze your historical user interaction logs, search queries, and catalog metadata to identify recommendation patterns."
+          },
+          {
+            "step": 2,
+            "title": "Data Pipeline Architecture",
+            "description": "We construct automated pipelines on Apache Spark to clean and process user clicks, views, and transaction histories."
+          },
+          {
+            "step": 3,
+            "title": "Model Training & Selection",
+            "description": "We train collaborative filtering, matrix factorization, and deep learning ranking models using TensorFlow Recommenders."
+          },
+          {
+            "step": 4,
+            "title": "Low-Latency Cache Setup",
+            "description": "We store precomputed recommendation vectors in Redis caches, ensuring suggestions are retrieved within milliseconds."
+          },
+          {
+            "step": 5,
+            "title": "API Integration & Deploy",
+            "description": "We wrap the recommendation models into secure REST APIs, connecting them to your front-end apps."
+          },
+          {
+            "step": 6,
+            "title": "A/B Testing & Optimization",
+            "description": "We deploy live A/B tests to monitor click-through rates, optimizing model hyperparameters to maximize overall conversion."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is a recommendation system?",
+            "answer": "A recommendation system is an information filtering tool that uses machine learning to predict and display products or content that a specific user is highly likely to interact with."
+          },
+          {
+            "question": "What is the difference between collaborative and content-based filtering?",
+            "answer": "Collaborative filtering suggests items based on similar users' behaviors, whereas content-based filtering recommends items that share characteristics with products the user has previously interacted with or liked."
+          },
+          {
+            "question": "How do you achieve low latency for recommendations?",
+            "answer": "We run model inference offline or asynchronously, storing the calculated recommendation tables or user embeddings in Redis caches to fetch them instantly when a user loads a page."
+          },
+          {
+            "question": "Can a recommendation system work for small catalogs?",
+            "answer": "Yes, recommendation systems can be tailored for smaller catalogs by focusing on content-based filtering and rule-based associations, ensuring users still receive relevant options without needing massive datasets."
+          },
+          {
+            "question": "What is the cold start problem?",
+            "answer": "The cold start problem occurs when new users or items have no historical interaction data. We solve this by using demographic rules, popularity scores, or content-based heuristics initially."
+          },
+          {
+            "question": "How do you measure recommendation success?",
+            "answer": "We track conversion rate, click-through rate, average order value, and user retention. We run automated A/B tests to compare different algorithms against a baseline storefront layout."
+          },
+          {
+            "question": "Can we integrate this with Shopify or custom e-commerce?",
+            "answer": "Yes, we build our recommendation engines as decoupled microservice APIs, which can be connected to Shopify, WooCommerce, Magento, or any custom-built frontend database system."
+          },
+          {
+            "question": "What technologies do you use to build recommendation models?",
+            "answer": "We primarily use TensorFlow Recommenders, LightFM, and Scikit-learn for model building, Redis for fast caching, and Databricks or Apache Spark for processing massive amounts of interaction logs."
+          }
+        ],
+        "technologies": [
+          { "name": "TensorFlow Recommenders", "icon": "tensorflow" },
+          { "name": "AWS Personalize", "icon": "aws" },
+          { "name": "LightFM", "icon": "python" },
+          { "name": "Redis", "icon": "redis" },
+          { "name": "Apache Spark", "icon": "apachespark" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "Python", "icon": "python" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Öneri Sistemleri",
+      "shortDescription": "Özel öneri motorlarıyla kişiselleştirilmiş kullanıcı deneyimleri sunun, ortalama sipariş değerini artırın ve müşteri elde tutma oranını yükseltin. İşletmeniz için özel öneri sistemleri oluşturuyoruz.",
+      "fullDescription": "Genel mağaza vitrinleri ve statik içerik gösterimleri günümüz tüketicilerini dönüştürmekte yetersiz kalıyor. Son derece alakalı öneriler sunmak için kullanıcı davranışlarını, satın alma geçmişini ve içerik etkileşimlerini gerçek zamanlı olarak analiz eden özel Öneri Sistemleri tasarlıyoruz. TensorFlow Recommenders, LightFM ve AWS Personalize gibi çerçeveleri kullanarak işbirlikçi filtreleme, içerik tabanlı ve hibrit öneri hatları kuruyoruz. Ürün veya içerik önerilerini milisaniyeler içinde sunmak için bu modelleri düşük gecikmeli Redis önbellekleriyle entegre ediyoruz. Özel motorlarımızı doğrudan e-ticaret platformunuza veya mobil uygulamanıza dağıtarak kullanıcı katılımını en üst düzeye çıkarmanıza, tıklama oranlarını artırmanıza ve kişiselleştirilmiş önerilerle müşteri yaşam boyu değerini yükseltmenize yardımcı oluyoruz.",
+      "features": [
+        "Gerçek Zamanlı İşbirlikçi Filtreleme Modelleri",
+        "İçerik Tabanlı Öneri Algoritmaları",
+        "Hibrit Öneri Sistemi Mimarisi",
+        "Düşük Gecikmeli Redis Önerileri Önbelleği",
+        "Gelişmiş Derin Öğrenme Sıralama Modelleri",
+        "Otomatik Kullanıcı Profili Vektör Alımı",
+        "Sürekli A/B Testi Çerçevesi Entegrasyonu",
+        "AWS Personalize Veri Hattı Düzenlemesi"
+      ],
+      "benefits": [
+        "Ortalama sipariş değerini ve çapraz satışları önemli ölçüde artırın",
+        "Platformlardaki kullanıcı etkileşimini ve oturum süresini yükseltin",
+        "50 ms'nin altında son derece kişiselleştirilmiş deneyimler sunun",
+        "Canlı tarayıcı eylemlerine göre ürün önerilerini otomatikleştirin",
+        "Alakalı önerilerle içerikten hemen çıkma oranlarını azaltın",
+        "Önerileri milyonlarca aktif katalog öğesine ölçeklendirin"
+      ],
+      "metaTitle": "Özel Öneri Sistemleri Hizmetleri | PakSoft",
+      "metaDescription": "Özel öneri sistemleri ile satışları ve katılımı artırın. TensorFlow Recommenders ve LightFM kullanarak derin öğrenme motorları kuruyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Davranışsal Veri Keşfi",
+            "description": "Öneri modellerini belirlemek için geçmiş kullanıcı etkileşim günlüklerinizi, arama sorgularınızı ve katalog meta verilerinizi analiz ediyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Veri Hattı Mimarisi",
+            "description": "Kullanıcı tıklamalarını, görüntülemelerini ve işlem geçmişlerini temizlemek ve işlemek için Apache Spark üzerinde otomatik veri hatları kuruyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Model Eğitimi & Seçimi",
+            "description": "TensorFlow Recommenders kullanarak işbirlikçi filtreleme, matris ayrıştırma ve derin öğrenme sıralama modellerini eğitiyoruz."
+          },
+          {
+            "step": 4,
+            "title": "Düşük Gecikmeli Önbellek Kurulumu",
+            "description": "Önerilerin milisaniyeler içinde getirilmesini sağlamak için önceden hesaplanmış öneri vektörlerini Redis önbelleklerinde saklıyoruz."
+          },
+          {
+            "step": 5,
+            "title": "API Entegrasyonu & Dağıtım",
+            "description": "Öneri modellerini güvenli REST API'lerine dönüştürerek ön uç uygulamalarınıza bağlıyoruz."
+          },
+          {
+            "step": 6,
+            "title": "A/B Testi & Optimizasyon",
+            "description": "Tıklama oranlarını izlemek için canlı A/B testleri dağıtıyor, genel dönüşümü en üst düzeye çıkarmak için model hiperparametrelerini optimize ediyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Öneri sistemi nedir?",
+            "answer": "Öneri sistemi, belirli bir kullanıcının etkileşime girme olasılığı yüksek olan ürünleri veya içerikleri tahmin etmek ve görüntülemek için makine öğrenimini kullanan bir bilgi filtreleme aracıdır."
+          },
+          {
+            "question": "İşbirlikçi filtreleme ile içerik tabanlı filtreleme arasındaki fark nedir?",
+            "answer": "İşbirlikçi filtreleme, benzer kullanıcıların davranışlarına dayanarak ürünler önerirken, içerik tabanlı filtreleme, kullanıcının daha önce etkileşimde bulunduğu veya beğendiği ürünlerle benzer özelliklere sahip ürünleri önerir."
+          },
+          {
+            "question": "Öneriler için düşük gecikmeyi nasıl sağlıyorsunuz?",
+            "answer": "Model çıkarımını çevrimdışı veya asenkron olarak çalıştırıyor, hesaplanan öneri tablolarını veya kullanıcı gömmelerini Redis önbelleğinde saklıyor ve kullanıcı sayfayı yüklediğinde anında getiriyoruz."
+          },
+          {
+            "question": "Öneri sistemi küçük kataloglar için çalışabilir mi?",
+            "answer": "Evet, öneri sistemleri içerik tabanlı filtreleme ve kural tabanlı ilişkilendirmelere odaklanarak küçük kataloglar için uyarlanabilir, böylece kullanıcıların büyük veri kümelerine ihtiyaç duymadan alakalı seçenekler alması sağlanır."
+          },
+          {
+            "question": "Soğuk başlangıç (cold start) problemi nedir?",
+            "answer": "Soğuk başlangıç problemi, yeni kullanıcıların veya ürünlerin geçmiş etkileşim verilerinin bulunmaması durumunda ortaya çıkar. Bunu başlangıçta demografik kurallar, popülerlik puanları veya içerik tabanlı algoritmalarla çözüyoruz."
+          },
+          {
+            "question": "Öneri başarısını nasıl ölçüyorsunuz?",
+            "answer": "Dönüşüm oranını, tıklama oranını, ortalama sipariş değerini ve kullanıcıyı elde tutma oranını takip ediyoruz. Farklı algoritmaları temel mağaza düzeniyle karşılaştırmak için otomatik A/B testleri yürütüyoruz."
+          },
+          {
+            "question": "Bunu Shopify veya özel e-ticaret siteleri ile entegre edebilir miyiz?",
+            "answer": "Evet, öneri motorlarımızı bağımsız mikro hizmet API'leri olarak oluşturuyoruz; bunları Shopify, WooCommerce, Magento veya herhangi bir özel yapım ön uç veritabanı sistemine bağlayabiliriz."
+          },
+          {
+            "question": "Öneri modelleri oluşturmak için hangi teknolojileri kullanıyorsunuz?",
+            "answer": "Model oluşturma için öncelikle TensorFlow Recommenders, LightFM ve Scikit-learn, hızlı önbellekleme için Redis ve büyük miktarda etkileşim günlüğünü işlemek için Databricks veya Apache Spark kullanıyoruz."
+          }
+        ],
+        "technologies": [
+          { "name": "TensorFlow Recommenders", "icon": "tensorflow" },
+          { "name": "AWS Personalize", "icon": "aws" },
+          { "name": "LightFM", "icon": "python" },
+          { "name": "Redis", "icon": "redis" },
+          { "name": "Apache Spark", "icon": "apachespark" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "Python", "icon": "python" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Empfehlungssysteme",
+      "shortDescription": "Bieten Sie personalisierte Benutzererfahrungen, erhöhen Sie den durchschnittlichen Bestellwert und steigern Sie die Kundenbindung mit maßgeschneiderten Empfehlungs-Engines. Wir entwickeln moderne Deep-Learning- und kollaborative Empfehlungssysteme für Ihr Unternehmen.",
+      "fullDescription": "Statische Produktpräsentationen und generische Webseiten konvertieren moderne Kunden nicht ausreichend. Wir entwickeln maßgeschneiderte Empfehlungssysteme, die das Benutzerverhalten, die Kaufhistorie und Interaktionen in Echtzeit analysieren, um hochrelevante Vorschläge zu liefern. Unter Verwendung von Frameworks wie TensorFlow Recommenders, LightFM und AWS Personalize bauen wir kollaborative, inhaltsbasierte und hybride Pipelines auf. Wir integrieren diese Modelle mit ultraschnellen Redis-Datenbanken, um Produkt- oder Inhaltsempfehlungen in wenigen Millisekunden bereitzustellen. Durch die direkte Integration in Ihr E-Commerce-System oder Ihre App helfen wir Ihnen, die Interaktionsrate zu maximieren, die Klickrate zu steigern und den Kundenwert durch personalisierte Vorschläge nachhaltig zu erhöhen.",
+      "features": [
+        "Kollaborative Echtzeit-Filtermodelle",
+        "Inhaltsbasierte Empfehlungsalgorithmen",
+        "Hybride Architektur für Empfehlungssysteme",
+        "Ultraschneller Redis-Empfehlungscache",
+        "Moderne Deep-Learning-Ranking-Modelle",
+        "Automatisierte Vektorisierung von Benutzerprofilen",
+        "Integration von Systemen für kontinuierliche A/B-Tests",
+        "AWS Personalize Pipeline-Orchestrierung"
+      ],
+      "benefits": [
+        "Den durchschnittlichen Bestellwert und Cross-Selling-Umsätze steigern",
+        "Die Benutzerinteraktion und Sitzungsdauer signifikant erhöhen",
+        "Hochgradig personalisierte Ergebnisse in weniger als 50ms liefern",
+        "Produktvorschläge basierend auf Live-Klicks automatisch anpassen",
+        "Die Absprungrate durch relevantere Inhaltsempfehlungen senken",
+        "Empfehlungen für Millionen von Katalogeinträgen skalieren"
+      ],
+      "metaTitle": "Custom Recommendation Systems Services | PakSoft",
+      "metaDescription": "Steigern Sie Umsatz und Interaktion mit maßgeschneiderten Empfehlungssystemen. Wir entwickeln Deep-Learning-Modelle mit TensorFlow Recommenders.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Analyse von Benutzerdaten",
+            "description": "Wir analysieren Ihre historischen Interaktionsprotokolle, Suchanfragen und Katalog-Metadaten, um vielversprechende Empfehlungsmuster zu identifizieren."
+          },
+          {
+            "step": 2,
+            "title": "Aufbau der Daten-Pipelines",
+            "description": "Wir entwickeln automatisierte Daten-Pipelines auf Apache Spark zur Bereinigung und Verarbeitung von Klicks, Aufrufen und Transaktionsdaten."
+          },
+          {
+            "step": 3,
+            "title": "Modell-Training & Auswahl",
+            "description": "Wir trainieren kollaborative Filter, Matrix-Faktorisierung und Deep-Learning-Ranking-Modelle unter Verwendung von TensorFlow Recommenders."
+          },
+          {
+            "step": 4,
+            "title": "Setup von Low-Latency-Caches",
+            "description": "Wir speichern vorberechnete Empfehlungsvektoren in Redis-Datenbanken, um Vorschläge in Millisekunden abzurufen."
+          },
+          {
+            "step": 5,
+            "title": "API-Integration & Deployment",
+            "description": "Wir stellen die Empfehlungs-Engines als sichere REST-APIs bereit und binden diese an Ihre Anwendungen an."
+          },
+          {
+            "step": 6,
+            "title": "A/B-Tests & Optimierung",
+            "description": "Wir führen A/B-Tests durch, um Klickraten zu überwachen und Modell-Hyperparameter zur Maximierung der Conversion-Rate anzupassen."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Was ist ein Empfehlungssystem?",
+            "answer": "Ein Empfehlungssystem ist ein Informationsfiltersystem, das mithilfe von Machine Learning vorhersagt und anzeigt, für welche Produkte oder Inhalte sich ein bestimmter Nutzer am ehesten interessiert."
+          },
+          {
+            "question": "Was ist der Unterschied zwischen kollaborativem und inhaltsbasiertem Filtern?",
+            "answer": "Kollaboratives Filtern empfiehlt Artikel basierend auf dem Verhalten ähnlicher Nutzer. Inhaltsbasiertes Filtern empfiehlt Artikel, die ähnliche Eigenschaften wie die vom Nutzer zuvor bevorzugten Produkte aufweisen."
+          },
+          {
+            "question": "Wie erreichen Sie eine geringe Latenz bei den Empfehlungen?",
+            "answer": "Wir berechnen Empfehlungen offline oder asynchron und speichern die Ergebnisse oder Nutzer-Embeddings in schnellen Redis-Caches, um sie beim Laden der Seite verzögerungsfrei abzurufen."
+          },
+          {
+            "question": "Funktioniert ein Empfehlungssystem auch bei kleinen Produktkatalogen?",
+            "answer": "Ja, Systeme können für kleine Kataloge angepasst werden, indem der Fokus auf inhaltsbasiertes Filtern und regelbasierte Verknüpfungen gelegt wird, um relevante Vorschläge ohne riesige Datenmengen zu liefern."
+          },
+          {
+            "question": "Was ist das Cold-Start-Problem?",
+            "answer": "Es tritt auf, wenn für neue Nutzer oder Produkte keine historischen Daten vorliegen. Wir lösen dies anfangs durch demografische Regeln, Beliebtheitswerte oder inhaltsbasierte Heuristiken."
+          },
+          {
+            "question": "Wie messen Sie den Erfolg eines Empfehlungssystems?",
+            "answer": "Wir überwachen Conversion-Rate, Klickrate, durchschnittlichen Bestellwert und Nutzerbindung. Durch A/B-Tests vergleichen wir verschiedene Algorithmen direkt mit dem Standardlayout Ihrer Plattform."
+          },
+          {
+            "question": "Kann dies in Shopify oder maßgeschneiderte E-Commerce-Systeme integriert werden?",
+            "answer": "Ja, wir konzipieren unsere Empfehlungs-Engines als entkoppelte Microservice-APIs, die problemlos mit Shopify, WooCommerce, Magento oder jeder individuellen Frontend-Datenbank kommunizieren können."
+          },
+          {
+            "question": "Welche Technologien nutzen Sie zum Aufbau der Empfehlungsmodelle?",
+            "answer": "Wir nutzen hauptsächlich TensorFlow Recommenders, LightFM und Scikit-learn für den Modellaufbau, Redis für schnelles Caching sowie Databricks oder Apache Spark für die Verarbeitung großer Interaktionsdaten."
+          }
+        ],
+        "technologies": [
+          { "name": "TensorFlow Recommenders", "icon": "tensorflow" },
+          { "name": "AWS Personalize", "icon": "aws" },
+          { "name": "LightFM", "icon": "python" },
+          { "name": "Redis", "icon": "redis" },
+          { "name": "Apache Spark", "icon": "apachespark" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "Python", "icon": "python" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "سفارشاتی سسٹمز (Recommendation Systems)",
+      "shortDescription": "سفارشاتی سسٹمز کے ذریعے صارفین کے تجربات کو ذاتی بنائیں، اوسط آرڈر ویلیو میں اضافہ کریں، اور کسٹمرز کو برقرار رکھیں۔ ہم آپ کے کاروبار کے لیے بہترین سفارشاتی ماڈلز بناتے ہیں۔",
+      "fullDescription": "عام اسٹور فرنٹ اور جامد مواد جدید صارفین کو اپنی طرف راغب کرنے میں ناکام رہتے ہیں۔ ہم ایسے کسٹم سفارشاتی سسٹمز (Recommendation Systems) تیار کرتے ہیں جو مصنوعات یا مواد کی بہترین تجاویز فراہم کرنے کے لیے صارفین کے رویے، خریداری کی تاریخ اور انٹرایکشنز کا ریئل ٹائم تجزیہ کرتے ہیں۔ TensorFlow Recommenders، LightFM، اور AWS Personalize جیسے فریم ورکس کا استعمال کرتے ہوئے، ہم کولیبوریٹو فلٹرنگ اور ہائبرڈ ماڈلز تیار کرتے ہیں۔ ہم ان سسٹمز کو Redis کے ساتھ جوڑتے ہیں تاکہ ملی سیکنڈز میں صارفین کو تجاویز دکھائی جا سکیں۔ ان سسٹمز کو براہ راست آپ کی ای کامرس ایپ یا ویب سائٹ پر لاگو کر کے ہم کلک کی شرح اور فروخت بڑھانے میں مدد کرتے ہیں۔",
+      "features": [
+        "ریئل ٹائم کولیبوریٹو فلٹرنگ ماڈلز",
+        "انفرادی پسند پر مبنی سفارشاتی الگورتھمز",
+        "ہائبرڈ سفارشاتی سسٹم آرکیٹیکچر کا سیٹ اپ",
+        "انتہائی تیز رفتار Redis سفارشاتی کیشے",
+        "جدید ڈیپ لرننگ رینکنگ سسٹمز",
+        "صارفین کے پروفائل ویکٹرز کی خودکار تیاری",
+        "مسلسل A/B ٹیسٹنگ فریم ورک انٹیگریشن",
+        "AWS Personalize ڈیٹا پائپ لائنز"
+      ],
+      "benefits": [
+        "کاروبار کی اوسط آرڈر ویلیو اور کراس سیلز میں اضافہ کریں",
+        "پلیٹ فارم پر صارف کی مصروفیت اور وقت کو بڑھائیں",
+        "50 ملی سیکنڈ سے کم وقت میں ذاتی نوعیت کی تجاویز دکھائیں",
+        "صارف کی لائیو سرگرمیوں کے مطابق خودکار تجاویز دیں",
+        "متعلقہ مواد دکھا کر باؤنس ریٹ کو واضح طور پر کم کریں",
+        "لاکھوں مصنوعات پر مشتمل کیٹلاگ کے لیے تجاویز کو فعال کریں"
+      ],
+      "metaTitle": "سفارشاتی سسٹمز کی سروسز | اے آئی سلوشنز | PakSoft",
+      "metaDescription": "کسٹم سفارشاتی سسٹمز کے ذریعے سیلز اور کسٹمر انگیجمنٹ بڑھائیں۔ ہم TensorFlow Recommenders کی مدد سے ڈیپ لرننگ ماڈلز بناتے ہیں۔ رابطہ کریں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "صارفین کے ڈیٹا کا تجزیہ",
+            "description": "ہم سفارشاتی پیٹرن تلاش کرنے کے لیے آپ کے ماضی کے یوزر لاگز، سرچ ہسٹری اور مصنوعات کے ڈیٹا کا گہرا جائزہ لیتے ہیں۔"
+          },
+          {
+            "step": 2,
+            "title": "ڈیٹا پائپ لائن کا قیام",
+            "description": "ہم صارفین کے کلکس، ویوز اور خریداریوں کو صاف اور پروسیس کرنے کے لیے Apache Spark پر خودکار ڈیٹا پائپ لائنز ڈیزائن کرتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "ماڈل کی تربیت اور انتخاب",
+            "description": "ہم TensorFlow Recommenders کا استعمال کرتے ہوئے کولیبوریٹو فلٹرنگ اور رینکنگ ماڈلز کی تربیت اور موازنہ کرتے."
+          },
+          {
+            "step": 4,
+            "title": "تیز رفتار کیشے کا سیٹ اپ",
+            "description": "ہم تیار شدہ سفارشات کو Redis کیشے میں محفوظ کرتے ہیں تاکہ ہر صارف کو سیکنڈ کے آسانویں حصے میں نتائج مل سکیں۔"
+          },
+          {
+            "step": 5,
+            "title": "اے پی آئی انٹیگریشن",
+            "description": "ہم سفارشاتی ماڈلز کو محفوظ REST APIs میں تبدیل کر کے آپ کی موبائل ایپ یا ویب سائٹ کے ساتھ مربوط کرتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "ٹیسٹنگ اور مسلسل بہتری",
+            "description": "ہم کلک تھرو ریٹ کو مانیٹر کرنے کے لیے لائیو A/B ٹیسٹ چلاتے ہیں اور الگورتھم کو بہتر بنانے کے لیے پیرامیٹرز ایڈجسٹ کرتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "سفارشاتی سسٹم (recommendation system) کیا ہے؟",
+            "answer": "یہ ایک مشین لرننگ سسٹم ہے جو صارفین کی پسند اور ہسٹری کا تجزیہ کر کے ایسی مصنوعات یا مواد پیش کرتا ہے جن میں ان کی دلچسپی کا امکان زیادہ ہو۔"
+          },
+          {
+            "question": "کولیبوریٹو فلٹرنگ اور کنٹینٹ بیسڈ فلٹرنگ میں کیا فرق ہے؟",
+            "answer": "کولیبوریٹو فلٹرنگ دیگر ملتے جلتے صارفین کے رویوں کی بنیاد پر مصنوعات تجویز کرتی ہے، جبکہ کنٹینٹ بیسڈ فلٹرنگ ان مصنوعات سے ملتی جلتی چیزیں تجویز کرتی ہے جنہیں صارف نے خود پسند کیا ہو۔"
+          },
+          {
+            "question": "تیز رفتار سفارشات کے لیے آپ کیا طریقہ استعمال کرتے ہیں؟",
+            "answer": "ہم سفارشات کے ڈیٹا کو پہلے سے کیلکولیٹ کرتے ہیں اور انہیں Redis جیسے انتہائی تیز ڈیٹا بیس میں محفوظ کرتے ہیں، تاکہ ہوم پیج لوڈ ہوتے ہی تجاویز فوراً ظاہر ہو جائیں۔"
+          },
+          {
+            "question": "کیا سفارشاتی سسٹم چھوٹی دکانوں یا کیٹلاگز کے لیے کارآمد ہے؟",
+            "answer": "جی ہاں، چھوٹے کیٹلاگز کے لیے ہم رول بیسڈ اور کنٹینٹ بیسڈ سسٹمز استعمال کرتے ہیں تاکہ بڑے ڈیٹا کے بغیر بھی صارفین کو بہترین اور متعلقہ مصنوعات تجویز کی جا سکیں۔"
+          },
+          {
+            "question": "کولڈ اسٹارٹ (Cold Start) کا مسئلہ کیا ہے اور اسے کیسے حل کیا جاتا ہے؟",
+            "answer": "کولڈ اسٹارٹ تب ہوتا ہے جب نئے صارف یا پروڈکٹ کا کوئی پرانا ریکارڈ نہ ہو۔ ہم اسے مقبول ترین پروڈکٹس دکھا کر یا بنیادی کیٹیگریز کے ذریعے حل کرتے ہیں۔"
+          },
+          {
+            "question": "سفارشاتی سسٹم کی کامیابی کی پیمائش کیسے کی جاتی ہے؟",
+            "answer": "ہم کلک تھرو ریٹ، آرڈر کی اوسط مالیت، اور کسٹمر ریٹینشن کو ٹریک کرتے ہیں اور لائیو A/B ٹیسٹنگ کے ذریعے نئے اور پرانے سسٹم کی کارکردگی کا موازنہ کرتے ہیں۔"
+          },
+          {
+            "question": "کیا ہم اسے شاپائف (Shopify) یا اپنی کسٹم ویب سائٹ سے جوڑ سکتے ہیں؟",
+            "answer": "جی ہاں، ہم اپنے سفارشاتی انجن کو آزاد APIs کے طور پر تیار کرتے ہیں، جنہیں آسانی سے Shopify، WooCommerce، یا کسی بھی کسٹم ویب سائٹ کے ڈیٹا بیس سے جوڑا جا سکتا ہے۔"
+          },
+          {
+            "question": "سفارشاتی ماڈلز بنانے کے لیے آپ کون سی ٹیکنالوجیز استعمال کرتے ہیں؟",
+            "answer": "ہم عام طور پر ماڈل بنانے کے لیے TensorFlow Recommenders، LightFM اور Scikit-learn، تیز کیشنگ کے لیے Redis اور ڈیٹا پروسیسنگ کے لیے Apache Spark اور Databricks استعمال کرتے ہیں۔"
+          }
+        ],
+        "technologies": [
+          { "name": "TensorFlow Recommenders", "icon": "tensorflow" },
+          { "name": "AWS Personalize", "icon": "aws" },
+          { "name": "LightFM", "icon": "python" },
+          { "name": "Redis", "icon": "redis" },
+          { "name": "Apache Spark", "icon": "apachespark" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "Python", "icon": "python" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "أنظمة التوصية",
+      "shortDescription": "قدم تجارب مستخدم مخصصة، وزد من متوسط قيمة الطلبات، وعزز ولاء العملاء باستخدام محركات التوصية المخصصة. نبني أنظمة توصية متقدمة تعتمد على التعلم العميق لعملك.",
+      "fullDescription": "تفشل واجهات المتاجر التقليدية وعرض المحتوى الثابت في تحويل الزوار الحديثين إلى عملاء دائمين. نحن نصمم أنظمة توصية مخصصة تحلل سلوك المستخدم، وتاريخ الشراء، وتفاعلات المحتوى في الوقت الفعلي لتقديم اقتراحات دقيقة للغاية. باستخدام أطر عمل مثل TensorFlow Recommenders و LightFM و AWS Personalize، نبني مسارات تصفية تعاونية وتصفية قائمة على المحتوى ونماذج هجينة. ندمج هذه النماذج مع قواعد بيانات Redis لخدمة توصيات المنتجات في أجزاء من الثانية. من خلال نشر محركاتنا المخصصة مباشرة في منصة التجارة الإلكترونية أو تطبيق الهاتف الخاص بك، نساعدك على زيادة تفاعل المستخدمين ومعدلات النقر وإثراء قيمة العميل.",
+      "features": [
+        "نماذج التصفية التعاونية في الوقت الفعلي",
+        "خوارزميات التوصية القائمة على المحتوى",
+        "بنية أنظمة التوصية الهجينة المتقدمة",
+        "ذاكرة تخزين مؤقت Redis للتوصيات فائقة السرعة",
+        "نماذج تصنيف متقدمة تعتمد على التعلم العميق",
+        "استيراد تلقائي لمتجهات ملف تعريف المستخدم",
+        "تكامل إطار عمل اختبارات A/B المستمرة",
+        "أتمتة وإدارة مسارات عمل AWS Personalize"
+      ],
+      "benefits": [
+        "زيادة متوسط قيمة الطلب والمبيعات المتبادلة بشكل كبير",
+        "تعزيز تفاعل المستخدمين ومدة الجلسة على المنصات",
+        "تقديم تجارب مخصصة للغاية في أقل من 50 مللي ثانية",
+        "أتمتة اقتراحات المنتجات بناءً على تصفح المستخدم المباشر",
+        "تقليل معدلات الارتداد من خلال توصيات محتوى ذات صلة",
+        "توسيع نطاق التوصيات لتشمل ملايين المنتجات النشطة"
+      ],
+      "metaTitle": "خدمات أنظمة التوصية المخصصة | ذكاء اصطناعي | PakSoft",
+      "metaDescription": "عزز المبيعات وتفاعل المستخدمين باستخدام أنظمة التوصية المخصصة. نبني محركات تعلم عميق باستخدام TensorFlow Recommenders. اتصل بنا.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "اكتشاف البيانات السلوكية",
+            "description": "نحلل سجلات تفاعل المستخدمين التاريخية واستعلامات البحث وبيانات الكتالوج لتحديد أنماط التوصية المناسبة."
+          },
+          {
+            "step": 2,
+            "title": "بناء مسارات البيانات",
+            "description": "ننشئ مسارات بيانات مؤتمتة على Apache Spark لتنظيف ومعالجة نقرات المستخدمين والمشاهدات وتاريخ المعاملات."
+          },
+          {
+            "step": 3,
+            "title": "تدريب واختيار النماذج",
+            "description": "ندرب نماذج التصفية التعاونية وتحليل المصفوفات ونماذج التصنيف بالتعلم العميق باستخدام TensorFlow Recommenders."
+          },
+          {
+            "step": 4,
+            "title": "إعداد التخزين المؤقت السريع",
+            "description": "نخزن متجهات التوصية المحسوبة مسبقاً في ذاكرة تخزين Redis، مما يضمن استرداد الاقتراحات في أجزاء من الثانية."
+          },
+          {
+            "step": 5,
+            "title": "تكامل واجهات التطبيقات",
+            "description": "نغلف نماذج التوصية في واجهات برمجة تطبيقات REST آمنة، ونربطها مباشرة بتطبيقاتك وواجهاتك الأمامية."
+          },
+          {
+            "step": 6,
+            "title": "اختبار A/B والتحسين المستمر",
+            "description": "ننشر اختبارات A/B مباشرة لمراقبة معدلات النقر، وتحسين المعاملات الفائقة للنموذج لتعظيم التحويل الإجمالي."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما هو نظام التوصية؟",
+            "answer": "نظام التوصية هو أداة لتصفية المعلومات تستخدم التعلم الآلي للتنبؤ بالمنتجات أو المحتوى الذي يفضل مستخدم معين التفاعل معه وعرضه."
+          },
+          {
+            "question": "ما الفرق بين التصفية التعاونية والتصفية القائمة على المحتوى؟",
+            "answer": "تقترح التصفية التعاونية المنتجات بناءً على سلوكيات المستخدمين المشابهين، بينما تقترح التصفية القائمة على المحتوى عناصر تشارك نفس الخصائص مع المنتجات المفضلة للمستخدم."
+          },
+          {
+            "question": "كيف تحققون سرعة استجابة فائقة للتوصيات؟",
+            "answer": "نقوم بتشغيل استدلال النموذج بشكل غير متزامن، ونخزن جداول التوصيات المحسوبة أو متجهات المستخدمين في ذاكرة Redis لاستردادها فوراً عند تحميل الصفحة."
+          },
+          {
+            "question": "هل يمكن لنظام التوصية العمل مع كتالوجات صغيرة؟",
+            "answer": "نعم، يمكن تخصيص أنظمة التوصية للكتالوجات الصغيرة بالتركيز على التصفية القائمة على المحتوى والعلاقات المحددة، مما يضمن حصول المستخدمين على خيارات ذات صلة."
+          },
+          {
+            "question": "ما هي مشكلة البداية الباردة (Cold Start)؟",
+            "answer": "تحدث هذه المشكلة عندما لا تتوفر بيانات تاريخية للمستخدمين أو المنتجات الجديدة. نحل ذلك باستخدام قواعد ديموغرافية، أو إبراز المنتجات الأكثر شعبية."
+          },
+          {
+            "question": "كيف تقيسون نجاح نظام التوصية المطبق؟",
+            "answer": "نتتبع معدل التحويل، ومعدل النقر، ومتوسط قيمة الطلب، والاحتفاظ بالمستخدمين. نجري اختبارات A/B لمقارنة الخوارزميات المختلفة مع تخطيط المتجر الافتراضي."
+          },
+          {
+            "question": "هل يمكننا دمج هذا النظام مع Shopify أو المتاجر المخصصة؟",
+            "answer": "نعم، نبني محركات التوصية لدينا كواجهات برمجة تطبيقات منفصلة، ويمكن ربطها بـ Shopify أو WooCommerce أو Magento أو أي نظام قاعدة بيانات مخصص."
+          },
+          {
+            "question": "ما التقنيات المستخدمة لبناء نماذج التوصية؟",
+            "answer": "نستخدم بشكل أساسي TensorFlow Recommenders و LightFM و Scikit-learn لبناء النماذج، و Redis للتخزين المؤقت السريع، و Apache Spark لمعالجة سجلات التفاعل الكبيرة."
+          }
+        ],
+        "technologies": [
+          { "name": "TensorFlow Recommenders", "icon": "tensorflow" },
+          { "name": "AWS Personalize", "icon": "aws" },
+          { "name": "LightFM", "icon": "python" },
+          { "name": "Redis", "icon": "redis" },
+          { "name": "Apache Spark", "icon": "apachespark" },
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "Python", "icon": "python" }
+        ]
+      }
+    }
+  },
+  "rpa-solutions": {
+    "en": {
+      "name": "RPA Solutions",
+      "shortDescription": "Automate repetitive tasks, reduce human error, and streamline operational workflows with custom Robotic Process Automation solutions. We design intelligent software bots that run seamlessly across your business systems.",
+      "fullDescription": "Manual data entry, invoice processing, and repetitive administrative tasks drain employee productivity and increase operational costs. We develop custom Robotic Process Automation (RPA) solutions using leading platforms like UiPath, Automation Anywhere, and custom Python scripts. Our software bots mimic human actions, interacting with desktop applications, web portals, and legacy systems to extract data, generate reports, and sync records. We integrate optical character recognition (OCR) and computer vision to enable bots to read unstructured documents and handle complex decision logic. By automating these workflows, we help your business achieve 24/7 processing speeds, eliminate transcription errors, and free your workforce for high-value strategic tasks.",
+      "features": [
+        "UiPath Workflow Design & Custom Bots",
+        "Automation Anywhere Enterprise Deployments",
+        "Custom Python & Selenium Automation Scripts",
+        "Intelligent Document Ingestion with OCR",
+        "Legacy System Desktop Integration Bots",
+        "Automated Reporting and Email Workflows",
+        "Centralized Orchestrator Management Setup",
+        "Error Handling and Exception Alerts Logging"
+      ],
+      "benefits": [
+        "Reduce operational costs by automating manual data processing",
+        "Eliminate human data entry errors and typos completely",
+        "Ensure continuous processing with bots running twenty-four seven",
+        "Deploy automation without changing legacy software codebases",
+        "Accelerate document processing times by up to eighty percent",
+        "Free human resources to focus on customer-facing tasks"
+      ],
+      "metaTitle": "Custom RPA Solutions | Robotic Process Automation | PakSoft",
+      "metaDescription": "Automate manual workflows and reduce errors with custom Robotic Process Automation. We build intelligent bots using UiPath and Python. Get a quote.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Process Assessment",
+            "description": "We analyze your administrative tasks and document processing routines to identify workflows suitable for automation."
+          },
+          {
+            "step": 2,
+            "title": "Bot Design & Mapping",
+            "description": "We map step-by-step user interactions and document data dependencies to structure the automation path."
+          },
+          {
+            "step": 3,
+            "title": "Workflow Development",
+            "description": "We write custom Python script orchestrations and build visual workflows inside UiPath or Automation Anywhere."
+          },
+          {
+            "step": 4,
+            "title": "Exception Setup",
+            "description": "We configure strict error-handling rules and construct notification pipelines when files fail formatting validations."
+          },
+          {
+            "step": 5,
+            "title": "Orchestrator Setup",
+            "description": "We deploy bots to a central orchestrator platform to schedule tasks, monitor runs, and manage licensing."
+          },
+          {
+            "step": 6,
+            "title": "Testing & Support",
+            "description": "We run extensive end-to-end sandbox tests, ensuring the bots execute correctly under varying system loads."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is Robotic Process Automation (RPA)?",
+            "answer": "RPA is a technology that uses software bots to automate repetitive, rules-based tasks typically performed by humans, such as data entry or report generation."
+          },
+          {
+            "question": "Do we need to replace our old legacy systems to use RPA?",
+            "answer": "No, RPA bots interact with the user interface of your existing systems just like a human operator, avoiding the need for expensive software replacements."
+          },
+          {
+            "question": "What is the difference between attended and unattended bots?",
+            "answer": "Attended bots run on a user's machine and require human triggers or input, while unattended bots run on remote servers automatically based on schedules."
+          },
+          {
+            "question": "How do RPA bots handle unstructured data like PDFs?",
+            "answer": "We integrate optical character recognition (OCR) and computer vision systems to read, extract, and convert text from unstructured documents into structured tables."
+          },
+          {
+            "question": "What happens if a bot encounters an unexpected error?",
+            "answer": "We build exception-handling rules. The bot stops the affected transaction, logs the error, and alerts a human operator to review the issue manually."
+          },
+          {
+            "question": "Is RPA secure for handling sensitive financial data?",
+            "answer": "Yes, we implement strict credential vaults and encrypted connections, ensuring bots access databases securely and all actions are recorded in audit logs."
+          },
+          {
+            "question": "How do we choose between UiPath and custom Python scripts?",
+            "answer": "We recommend UiPath for complex enterprise workflows involving multiple legacy desktop apps, and lightweight Python scripts for web scraping or API integrations."
+          },
+          {
+            "question": "What processes are best suited for RPA?",
+            "answer": "Processes that are highly repetitive, rules-based, require high volume, and use digital inputs (like Excel files, emails, or databases) are ideal for RPA."
+          }
+        ],
+        "technologies": [
+          { "name": "UiPath", "icon": "uipath" },
+          { "name": "Automation Anywhere", "icon": "automationanywhere" },
+          { "name": "Python", "icon": "python" },
+          { "name": "Selenium", "icon": "selenium" },
+          { "name": "Power Automate", "icon": "microsoft" },
+          { "name": "OpenCV", "icon": "opencv" },
+          { "name": "Node.js", "icon": "nodejs" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "RPA Çözümleri",
+      "shortDescription": "Özel Robotik Süreç Otomasyonu çözümleriyle tekrarlanan görevleri otomatikleştirin, insan hatasını azaltın ve operasyonel iş akışlarını kolaylaştırın. İş sistemlerinizde sorunsuz çalışan akıllı yazılım botları tasarlıyoruz.",
+      "fullDescription": "Manuel veri girişi, fatura işleme ve tekrarlayan idari görevler çalışan verimliliğini düşürür ve operasyonel maliyetleri artırır. UiPath, Automation Anywhere gibi lider platformları ve özel Python betiklerini kullanarak özel Robotik Süreç Otomasyonu (RPA) çözümleri geliştiriyoruz. Yazılım botlarımız, verileri ayıklamak, raporlar oluşturmak ve kayıtları senkronize etmek için masaüstü uygulamaları, web portalları ve eski sistemlerle etkileşime girerek insan eylemlerini taklit eder. Botların yapılandırılmamış belgeleri okumasını ve karmaşık karar mantıklarını işlemesini sağlamak için optik karakter tanıma (OCR) ve bilgisayarlı görü entegre ediyoruz. Bu iş akışlarını otomatikleştirerek işletmenizin 7/24 işlem hızına ulaşmasına yardımcı oluyoruz.",
+      "features": [
+        "UiPath İş Akışı Tasarımı ve Özel Botlar",
+        "Automation Anywhere Kurumsal Dağıtımları",
+        "Özel Python ve Selenium Otomasyon Betikleri",
+        "OCR ile Akıllı Belge Alımı Sistemleri",
+        "Eski Sistemler İçin Masaüstü Entegrasyon Botları",
+        "Otomatik Raporlama ve E-posta İş Akışları",
+        "Merkezi Orkestratör Yönetim Kurulumu",
+        "Hata Yönetimi ve İstisna Bildirimleri Günlüğü"
+      ],
+      "benefits": [
+        "Manuel veri işlemeyi otomatikleştirerek operasyonel maliyetleri azaltın",
+        "İnsan kaynaklı veri girişi hatalarını ve yazım hatalarını tamamen önleyin",
+        "7/24 çalışan botlarla işlemlerin kesintisiz devam etmesini sağlayın",
+        "Eski yazılımların kodlarını değiştirmeden otomasyonu devreye alın",
+        "Belge işleme sürelerini yüzde seksen oranına kadar hızlandırın",
+        "İnsan kaynaklarının müşteri odaklı görevlere odaklanmasını sağlayın"
+      ],
+      "metaTitle": "Özel RPA Çözümleri | Robotik Süreç Otomasyonu | PakSoft",
+      "metaDescription": "Özel Robotik Süreç Otomasyonu ile manuel iş akışlarını otomatikleştirin ve hataları azaltın. UiPath ve Python kullanarak akıllı botlar oluşturuyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Süreç Değerlendirmesi",
+            "description": "Otomasyona uygun iş akışlarını belirlemek için idari görevlerinizi ve belge işleme rutinlerinizi analiz ediyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Bot Tasarımı & Haritalama",
+            "description": "Otomasyon yolunu yapılandırmak için adım adım kullanıcı etkileşimlerini ve belge veri bağımlılıklarını haritalandırıyoruz."
+          },
+          {
+            "step": 3,
+            "title": "İş Akışı Geliştirme",
+            "description": "Özel Python komut dizisi orkestrasyonları yazıyor ve UiPath veya Automation Anywhere içinde görsel iş akışları oluşturuyoruz."
+          },
+          {
+            "step": 4,
+            "title": "İstisna Yönetimi Kurulumu",
+            "description": "Dosyalar biçimlendirme doğrulamalarından geçemediğinde katı hata yönetimi kuralları yapılandırıyor ve bildirim hatları oluşturuyoruz."
+          },
+          {
+            "step": 5,
+            "title": "Orkestratör Kurulumu",
+            "description": "Görevleri planlamak, çalışmaları izlemek ve lisansları yönetmek için botları merkezi bir orkestratör platformuna dağıtıyoruz."
+          },
+          {
+            "step": 6,
+            "title": "Test & Destek",
+            "description": "Botların değişen sistem yükleri altında doğru şekilde çalışmasını sağlamak için kapsamlı uçtan uca korumalı alan testleri yapıyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Robotik Süreç Otomasyonu (RPA) nedir?",
+            "answer": "RPA, veri girişi veya rapor oluşturma gibi normalde insanlar tarafından gerçekleştirilen tekrarlayan, kural tabanlı görevleri otomatikleştirmek için yazılım botlarını kullanan bir teknolojidir."
+          },
+          {
+            "question": "RPA kullanmak için eski sistemlerimizi değiştirmemiz gerekiyor mu?",
+            "answer": "Hayır, RPA botları mevcut sistemlerinizin kullanıcı arayüzüyle tıpkı bir insan operatör gibi etkileşime girerek pahalı yazılım değişiklikleri ihtiyacını ortadan kaldırır."
+          },
+          {
+            "question": "Katılımlı (attended) ve katılımsız (unattended) botlar arasındaki fark nedir?",
+            "answer": "Katılımlı botlar kullanıcının makinesinde çalışır ve insan tetiklemesi veya girdisi gerektirir; katılımsız botlar ise planlamalara göre uzak sunucularda otomatik olarak çalışır."
+          },
+          {
+            "question": "RPA botları PDF gibi yapılandırılmamış verileri nasıl işler?",
+            "answer": "Yapılandırılmamış belgelerdeki metinleri okumak, ayıklamak ve yapılandırılmış tablolara dönüştürmek için optik karakter tanıma (OCR) ve bilgisayarlı görü sistemlerini entegre ediyoruz."
+          },
+          {
+            "question": "Bot beklenmeyen bir hatayla karşılaşırsa ne olur?",
+            "answer": "İstisna işleme kuralları oluşturuyoruz. Bot etkilenen işlemi durdurur, hatayı günlüğe kaydeder ve bir insan operatörü sorunu manuel olarak incelemesi için uyarır."
+          },
+          {
+            "question": "RPA, hassas finansal verileri işlemek için güvenli midir?",
+            "answer": "Evet, botların veritabanlarına güvenli bir şekilde erişmesini ve tüm eylemlerin denetim günlüklerine kaydedilmesini sağlamak için katı kimlik bilgisi kasaları ve şifreli bağlantılar uyguluyoruz."
+          },
+          {
+            "question": "UiPath ile özel Python betikleri arasında nasıl seçim yaparız?",
+            "answer": "Birden fazla eski masaüstü uygulamasını içeren karmaşık kurumsal iş akışları için UiPath'i, web kazıma veya API entegrasyonları için ise hafif Python betiklerini öneriyoruz."
+          },
+          {
+            "question": "Hangi süreçler RPA için en uygundur?",
+            "answer": "Yüksek düzeyde tekrarlanan, kural tabanlı, yüksek hacim gerektiren ve dijital girdiler (Excel dosyaları, e-postalar veya veritabanları gibi) kullanan süreçler RPA için idealdir."
+          }
+        ],
+        "technologies": [
+          { "name": "UiPath", "icon": "uipath" },
+          { "name": "Automation Anywhere", "icon": "automationanywhere" },
+          { "name": "Python", "icon": "python" },
+          { "name": "Selenium", "icon": "selenium" },
+          { "name": "Power Automate", "icon": "microsoft" },
+          { "name": "OpenCV", "icon": "opencv" },
+          { "name": "Node.js", "icon": "nodejs" }
+        ]
+      }
+    },
+    "de": {
+      "name": "RPA-Lösungen",
+      "shortDescription": "Automatisieren Sie wiederkehrende Aufgaben, reduzieren Sie menschliche Fehler und optimieren Sie Betriebsabläufe mit maßgeschneiderten Robotic-Process-Automation-Lösungen. Wir entwickeln intelligente Software-Bots, die sich nahtlos in Ihre bestehenden Geschäftssysteme einfügen.",
+      "fullDescription": "Manuelle Dateneingabe, Rechnungsverarbeitung und wiederkehrende administrative Aufgaben belasten die Produktivität Ihrer Mitarbeiter und erhöhen die Betriebskosten. Wir entwickeln maßgeschneiderte Robotic-Process-Automation-Lösungen (RPA) mit führenden Plattformen wie UiPath, Automation Anywhere und individuellen Python-Skripten. Unsere Software-Bots imitieren menschliche Aktionen und interagieren mit Desktop-Anwendungen, Webportalen und Altsystemen, um Daten zu extrahieren, Berichte zu erstellen und Datensätze zu synchronisieren. Wir integrieren optische Zeichenerkennung (OCR) und Computer Vision, damit Bots unstrukturierte Dokumente lesen und komplexe Entscheidungslogiken verarbeiten können. Durch die Automatisierung dieser Arbeitsabläufe helfen wir Ihrem Unternehmen, eine Bearbeitung rund um die Uhr zu realisieren, Übertragungsfehler zu eliminieren und Ihr Team für strategische Aufgaben freizusetzen.",
+      "features": [
+        "UiPath Workflow-Design & kundenorientierte Bots",
+        "Automation Anywhere Enterprise-Bereitstellungen",
+        "Individuelle Python- & Selenium-Automatisierungsskripte",
+        "Intelligente Dokumentenerfassung mit OCR-Integration",
+        "Desktop-Integrations-Bots für ältere Systeme",
+        "Automatisierte Berichterstellung & E-Mail-Workflows",
+        "Setup für zentrales Orchestrator-Management",
+        "Fehlerbehandlung & detailliertes Exception-Logging"
+      ],
+      "benefits": [
+        "Betriebskosten durch Automatisierung manueller Prozesse senken",
+        "Menschliche Fehler bei der Dateneingabe vollständig eliminieren",
+        "Kontinuierliche Verarbeitung durch rund um die Uhr aktive Bots",
+        "Automatisierung ohne Änderungen an alten Codebasen bereitstellen",
+        "Dokumentenbearbeitungszeiten um bis zu achtzig Prozent verkürzen",
+        "Mitarbeiter entlasten, damit sie sich auf Kunden fokussieren"
+      ],
+      "metaTitle": "Custom RPA Solutions | Robotic Process Automation | PakSoft",
+      "metaDescription": "Automatisieren Sie manuelle Workflows mit Robotic Process Automation. Wir bauen intelligente Bots mit UiPath und Python. Jetzt anfragen.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Prozessanalyse",
+            "description": "Wir analysieren Ihre administrativen Aufgaben und Dokumenten-Workflows, um für die Automatisierung geeignete Abläufe zu identifizieren."
+          },
+          {
+            "step": 2,
+            "title": "Bot-Design & Mapping",
+            "description": "Wir zeichnen die Interaktionen und Datenbeziehungen der Benutzer Schritt für Schritt auf, um den Automatisierungspfad zu strukturieren."
+          },
+          {
+            "step": 3,
+            "title": "Workflow-Entwicklung",
+            "description": "Wir schreiben maßgeschneiderte Python-Skripte und erstellen visuelle Workflows in UiPath oder Automation Anywhere."
+          },
+          {
+            "step": 4,
+            "title": "Exception-Setup",
+            "description": "Wir konfigurieren Regeln zur Fehlerbehandlung und richten Benachrichtigungen ein, falls Formatierungsprüfungen von Dokumenten fehlschlagen."
+          },
+          {
+            "step": 5,
+            "title": "Orchestrator-Setup",
+            "description": "Wir binden die Bots in eine zentrale Orchestrator-Plattform ein, um Aufgaben zu planen, Läufe zu überwachen und Lizenzen zu steuern."
+          },
+          {
+            "step": 6,
+            "title": "Testbetrieb & Support",
+            "description": "Wir führen umfangreiche End-to-End-Tests in Sandbox-Umgebungen durch, um das Verhalten unter wechselnden Systemlasten abzusichern."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Was ist Robotic Process Automation (RPA)?",
+            "answer": "RPA ist eine Technologie, bei der Software-Bots eingesetzt werden, um sich wiederholende, regelbasierte Aufgaben wie Dateneingaben oder Berichterstellungen automatisch auszuführen."
+          },
+          {
+            "question": "Müssen wir unsere alten Altsysteme für RPA ersetzen?",
+            "answer": "Nein, RPA-Bots interagieren mit der Benutzeroberfläche Ihrer bestehenden Systeme genau wie ein menschlicher Mitarbeiter. Teure Software-Neuanschaffungen entfallen dadurch."
+          },
+          {
+            "question": "Was ist der Unterschied zwischen Attended- und Unattended-Bots?",
+            "answer": "Attended-Bots laufen auf dem Rechner des Nutzers und erfordern manuelle Interaktionen, während Unattended-Bots vollautomatisch nach Zeitplänen auf Remote-Servern ausgeführt werden."
+          },
+          {
+            "question": "Wie verarbeiten RPA-Bots unstrukturierte Daten wie PDFs?",
+            "answer": "Wir binden OCR (optische Zeichenerkennung) und Computer Vision ein, um Texte aus Dokumenten auszulesen, zu interpretieren und in strukturierte Tabellen zu überführen."
+          },
+          {
+            "question": "Was passiert, wenn ein Bot auf einen unerwarteten Fehler stößt?",
+            "answer": "Wir programmieren Regeln zur Ausnahmebehandlung. Der Bot stoppt die Transaktion, protokolliert den Fehler und benachrichtigt einen menschlichen Operator zur manuellen Überprüfung."
+          },
+          {
+            "question": "Ist RPA für sensible Finanzdaten sicher?",
+            "answer": "Ja, wir implementieren verschlüsselte Verbindungen und sichere Tresore für Zugangsdaten. Alle Aktionen des Bots werden lückenlos in Audit-Logs aufgezeichnet."
+          },
+          {
+            "question": "Wie entscheidet man zwischen UiPath und individuellen Python-Skripten?",
+            "answer": "Wir empfehlen UiPath für komplexe Unternehmens-Workflows mit mehreren Desktop-Anwendungen und schlanke Python-Skripte für Web-Scraping oder einfache API-Integrationsaufgaben."
+          },
+          {
+            "question": "Welche Prozesse eignen sich am besten für RPA?",
+            "answer": "Ideal sind Prozesse, die hochgradig repetitiv und regelbasiert sind, ein hohes Datenvolumen aufweisen und digitale Eingaben (wie Excel, E-Mails oder Datenbanken) nutzen."
+          }
+        ],
+        "technologies": [
+          { "name": "UiPath", "icon": "uipath" },
+          { "name": "Automation Anywhere", "icon": "automationanywhere" },
+          { "name": "Python", "icon": "python" },
+          { "name": "Selenium", "icon": "selenium" },
+          { "name": "Power Automate", "icon": "microsoft" },
+          { "name": "OpenCV", "icon": "opencv" },
+          { "name": "Node.js", "icon": "nodejs" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "آر پی اے سلوشنز (RPA Solutions)",
+      "shortDescription": "روبوٹک پروسیس آٹومیشن کے ذریعے دفتری کاموں کو خودکار بنائیں، انسانی غلطیوں کو ختم کریں، اور کاروباری کام کی رفتار کو تیز کریں۔ ہم سسٹمز کے لیے ہوشیار سافٹ ویئر بوٹس بناتے ہیں۔",
+      "fullDescription": "دستی ڈیٹا انٹری، فلیٹ فائل پروسیسنگ اور بار بار کیے جانے والے انتظامی کام ملازمین کی پیداوری کو کم کرتے ہیں اور کاروباری اخراجات میں اضافہ کرتے ہیں۔ ہم UiPath، Automation Anywhere، اور کسٹم Python اسکرپٹس کا استعمال کرتے ہوئے کسٹم روبوٹک پروسیس آٹومیشن (RPA) سلوشنز تیار کرتے ہیں۔ ہمارے سافٹ ویئر بوٹس انسانی اعمال کی نقل کرتے ہوئے ڈیٹا نکالنے، رپورٹیں بنانے اور ریکارڈز کو سنکرونائز کرنے کے لیے ڈیسک ٹاپ ایپلی کیشنز، ویب پورٹلز اور پرانے سسٹمز کے ساتھ تعامل کرتے ہیں۔ ہم ان بوٹس میں OCR اور کمپیوٹر ویژن کو شامل کرتے ہیں تاکہ یہ غیر ترتیب شدہ فائلز (جیسے تصاویر اور پی ڈی ایف) کو پڑھ سکیں۔ ان سسٹمز کی مدد سے ہم 24/7 کام کی رفتار حاصل کرنے میں مدد کرتے ہیں۔",
+      "features": [
+        "UiPath ورک فلو ڈیزائن اور کسٹم بوٹس کی تیاری",
+        "Automation Anywhere کمپنی لیول کی لانچنگ",
+        "کسٹم Python اور Selenium آٹومیشن اسکرپٹس",
+        "OCR ٹیکنالوجی کے ذریعے سمارٹ دستاویزات کی پروسیسنگ",
+        "پرانے سسٹمز کے لیے ڈیسک ٹاپ انٹیگریشن بوٹس",
+        "خودکار رپورٹنگ اور ای میل ورک فلو کا قیام",
+        "مرکزی آرکیسٹریٹر مینجمنٹ کا سیٹ اپ",
+        "مسائل کی نشاندہی اور سسٹم ایرر لاگنگ"
+      ],
+      "benefits": [
+        "دستی ڈیٹا پروسیسنگ کو خودکار بنا کر اخراجات کو کم کریں",
+        "ڈیٹا انٹری کے دوران ٹائپنگ کی غلطیوں کو سو فیصد ختم کریں",
+        "24/7 کام کرنے والے بوٹس کے ذریعے مسلسل پروسیسنگ یقینی بنائیں",
+        "پرانے سسٹمز کے کوڈز کو تبدیل کیے بغیر آٹومیشن لاگو کریں",
+        "دستاویزات کی پروسیسنگ کی رفتار اسی فیصد تک تیز کریں",
+        "کارکنوں کو فارغ کریں تاکہ وہ کلائنٹ ہینڈلنگ پر توجہ دے سکیں"
+      ],
+      "metaTitle": "کسٹم RPA سلوشنز | روبوٹک پروسیس آٹومیشن | PakSoft",
+      "metaDescription": "دستی کاموں کو خودکار بنائیں اور غلطیوں کو ختم کریں۔ ہم UiPath اور Python کی مدد سے انٹیلیجنٹ بوٹس بناتے ہیں۔ رابطہ کریں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "عمل کی جانچ اور تشخیص",
+            "description": "ہم آپ کے دفتری کاموں اور دستاویزات کے ورک فلو کا جائزہ لیتے ہیں تاکہ آٹومیشن کے لیے موزوں عمل کا انتخاب کیا جا سکے۔"
+          },
+          {
+            "step": 2,
+            "title": "بوٹ ڈیزائن اور میپنگ",
+            "description": "ہم آٹومیشن پاتھ کو ترتیب دینے کے لیے صارفین کی سرگرمیوں اور دستاویز کے ڈیٹا کے ربط کا مرحلہ وار نقشہ تیار کرتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "ورک فلو ڈویلپمنٹ",
+            "description": "ہم کسٹم Python اسکرپٹس لکھتے ہیں اور UiPath یا Automation Anywhere کے اندر ویژول آٹومیشن ورک فلو تیار کرتے ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "ایرر ہینڈلنگ سیٹ اپ",
+            "description": "ہم غلطیوں کو سنبھالنے کے اصول وضع کرتے ہیں اور ڈیٹا فارمیٹنگ خراب ہونے کی صورت میں نوٹیفکیشن پائپ لائنز بناتے ہیں۔"
+          },
+          {
+            "step": 5,
+            "title": "آرکیسٹریٹر کی تشکیل",
+            "description": "ہم کاموں کو شیڈول کرنے، رنز کی نگرانی کرنے اور لائسنس کے انتظام کے لیے بوٹس کو مرکزی پلیٹ فارم پر ہوسٹ کرتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "ٹیسٹنگ اور سپورٹ",
+            "description": "ہم سینڈ باکس ٹیسٹنگ چلاتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ بوٹس مختلف بوجھ کے تحت بھی درست کارکردگی دکھائیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "روبوٹک پروسیس آٹومیشن (RPA) کیا ہے؟",
+            "answer": "یہ ایک ایسی ٹیکنالوجی ہے جو بار بار کیے جانے والے اور قوانین پر مبنی کاموں (جیسے ڈیٹا انٹری یا رپورٹس بنانا) کو سافٹ ویئر بوٹس کے ذریعے خودکار بناتی ہے۔"
+          },
+          {
+            "question": "کیا آر پی اے (RPA) استعمال کرنے کے لیے پرانے سسٹمز کو بدلنا ضروری ہے؟",
+            "answer": "جی نہیں، بوٹس آپ کے موجودہ سسٹمز کے ساتھ بالکل اسی طرح کام کرتے ہیں جیسے کوئی انسان کرتا ہے، اس لیے مہنگے سسٹمز کو بدلنے کی ضرورت نہیں ہوتی۔"
+          },
+          {
+            "question": "اٹینڈڈ (attended) اور ان اٹینڈڈ (unattended) بوٹس میں کیا فرق ہے؟",
+            "answer": "اٹینڈڈ بوٹس صارف کے کمپیوٹر پر چلتے ہیں اور انہیں انسانی اشارے کی ضرورت ہوتی ہے، جبکہ ان اٹینڈڈ بوٹس بیک اینڈ سرورز پر خودکار شیڈول کے تحت چلتے ہیں۔"
+          },
+          {
+            "question": "بوٹس پی ڈی ایف (PDF) جیسے غیر ترتیب شدہ ڈیٹا کو کیسے سنبھالتے ہیں؟",
+            "answer": "ہم بوٹس کے ساتھ او سی آر (OCR) اور کمپیوٹر ویژن کو جوڑتے ہیں جو دستاویز سے تحریر پڑھ کر اسے ایک منظم ٹیبلر فارمیٹ میں تبدیل کر دیتے ہیں۔"
+          },
+          {
+            "question": "اگر بوٹ کو کام کے دوران کوئی نامعلوم ایرر پیش آئے تو کیا ہوتا ہے؟",
+            "answer": "ہم بوٹ میں ایرر ہینڈلنگ سیٹ کرتے ہیں۔ بوٹ اس ٹرانزیکشن کو روکتا ہے، لاگ فائل بناتا ہے اور انسانی آپریٹر کو مطلع کرتا ہے تاکہ وہ اسے دستی طور پر چیک کرے۔"
+          },
+          {
+            "question": "کیا حساس مالیاتی ڈیٹا کے لیے آر پی اے (RPA) محفوظ ہے؟",
+            "answer": "جی ہاں، ہم سیکیورٹی کے لیے کرپٹوگرافک والٹس اور انکرپٹڈ سیشنز استعمال کرتے ہیں۔ بوٹ کی ہر سرگرمی کو آڈٹ لاگز میں محفوظ کیا جاتا ہے تاکہ مکمل شفافیت رہے۔"
+          },
+          {
+            "question": "ہمیں یو آئی پاتھ (UiPath) اور پائتھن (Python) میں سے کس کا انتخاب کرنا چاہیے؟",
+            "answer": "کئی ڈیسک ٹاپ ایپس پر مشتمل بڑے کاموں کے لیے ہم UiPath اور ویب سکریپنگ یا ہلکے کاموں کے لیے کسٹم پائتھن اسکرپٹس تجویز کرتے ہیں۔"
+          },
+          {
+            "question": "روبوٹک آٹومیشن کے لیے کس قسم کے کام سب سے زیادہ مناسب ہیں؟",
+            "answer": "ایسے تمام کام جو روزانہ کی بنیاد پر ایک ہی جیسے قوانین کے تحت کیے جاتے ہوں اور ان کا ان پٹ ڈیجیٹل (جیسے ایکسل شیٹ یا ای میل) ہو، آٹومیشن کے لیے بہترین ہیں۔"
+          }
+        ],
+        "technologies": [
+          { "name": "UiPath", "icon": "uipath" },
+          { "name": "Automation Anywhere", "icon": "automationanywhere" },
+          { "name": "Python", "icon": "python" },
+          { "name": "Selenium", "icon": "selenium" },
+          { "name": "Power Automate", "icon": "microsoft" },
+          { "name": "OpenCV", "icon": "opencv" },
+          { "name": "Node.js", "icon": "nodejs" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "حلول أتمتة العمليات الروبوتية RPA",
+      "shortDescription": "أتمت العمليات الإدارية المتكررة، وقلل الأخطاء البشرية، وبسط تدفقات العمل التشغيلية باستخدام حلول RPA المخصصة. نصمم برامج روبوتية ذكية تعمل بسلاسة وكفاءة تامة عبر أنظمة عملك المختلفة.",
+      "fullDescription": "يتسبب إدخال البيانات يدوياً، ومعالجة الفواتير، والمهام الإدارية المتكررة في تقليل إنتاجية الموظفين وزيادة التكاليف التشغيلية. نحن نطور حلول أتمتة العمليات الروبوتية (RPA) المخصصة باستخدام منصات رائدة مثل UiPath و Automation Anywhere والبرمجة النصية المخصصة بلغة Python. تحاكي الروبوتات البرمجية لدينا تصرفات البشر، حيث تتفاعل مع تطبيقات سطح المكتب، وبوابات الويب، والأنظمة القديمة لاستخراج البيانات وإنشاء التقارير ومزامنة السجلات. ندمج تقنيات التعرف الضوئي على الحروف (OCR) والرؤية الحاسوبية لتمكين الروبوتات من قراءة المستندات غير المهيكلة والتعامل مع منطق القرار المعقد. ومن خلال أتمتة هذه التدفقات، نساعد عملك على العمل على مدار الساعة 24/7.",
+      "features": [
+        "تصميم سير العمل في UiPath والروبوتات المخصصة",
+        "نشر وإعداد منصة Automation Anywhere للمؤسسات",
+        "برمجة نصوص الأتمتة المخصصة بلغة Python و Selenium",
+        "استيراد المستندات الذكي المدعوم بتقنية OCR",
+        "روبوتات التكامل مع تطبيقات سطح المكتب والأنظمة القديمة",
+        "أتمتة إعداد التقارير البريدية وسير عمل البريد الإلكتروني",
+        "إعداد وإدارة النظام المركزي للمراقبة والتشغيل Orchestrator",
+        "تتبع الأخطاء البرمجية وتسجيل الاستثناءات التشغيلية تلقائياً"
+      ],
+      "benefits": [
+        "تقليل التكاليف التشغيلية عن طريق أتمتة معالجة البيانات اليدوية",
+        "القضاء التام على أخطاء إدخال البيانات البشرية والأخطاء الإملائية",
+        "ضمان المعالجة المستمرة بفضل الروبوتات التي تعمل على مدار الساعة",
+        "نشر الأتمتة دون الحاجة إلى تغيير التعليمات البرمجية للأنظمة القديمة",
+        "تسريع أوقات معالجة المستندات بنسبة تصل إلى ثمانين بالمائة",
+        "تمكين الموارد البشرية من التركيز على المهام الموجهة للعملاء"
+      ],
+      "metaTitle": "حلول RPA المخصصة | أتمتة العمليات الروبوتية | PakSoft",
+      "metaDescription": "أتمت سير العمل اليدوي وقلل الأخطاء التشغيلية باستخدام أتمتة العمليات الروبوتية. نبني روبوتات ذكية باستخدام UiPath و Python. اتصل بنا.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تقييم العمليات التشغيلية",
+            "description": "نحلل مهامك الإدارية وروتين معالجة المستندات لتحديد تدفقات العمل الأكثر ملاءمة للأتمتة."
+          },
+          {
+            "step": 2,
+            "title": "تصميم ورسم مسار الروبوت",
+            "description": "نرسم تفاعلات المستخدم خطوة بخطوة وتدفق البيانات للمستندات لبناء هيكل مسار الأتمتة الصحيح."
+          },
+          {
+            "step": 3,
+            "title": "تطوير سير العمل البرمجي",
+            "description": "نكتب سيناريوهات برمجية مخصصة بلغة Python ونبني تدفقات عمل مرئية داخل UiPath أو Automation Anywhere."
+          },
+          {
+            "step": 4,
+            "title": "إعداد الاستثناءات البرمجية",
+            "description": "نهيئ قواعد صارمة للتعامل مع الأخطاء وننشئ مسارات تنبيه عند فشل التحقق من صحة تنسيق الملفات."
+          },
+          {
+            "step": 5,
+            "title": "تهيئة نظام التشغيل Orchestrator",
+            "description": "ننشر الروبوتات على منصة إدارة مركزية لجدولة المهام، ومراقبة عمليات التشغيل، وإدارة التراخيص اللازمة."
+          },
+          {
+            "step": 6,
+            "title": "الاختبار الشامل والدعم",
+            "description": "نجري اختبارات شاملة في بيئات اختبارية معزولة، للتأكد من تشغيل الروبوتات بشكل صحيح تحت أحمال تشغيل مختلفة."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما هي أتمتة العمليات الروبوتية (RPA)؟",
+            "answer": "RPA هي تقنية تستخدم روبوتات برمجية لأتمتة المهام المتكررة القائمة على القواعد والتي يؤديها البشر عادةً، مثل إدخال البيانات أو إنشاء التقارير."
+          },
+          {
+            "question": "هل نحتاج إلى استبدال أنظمتنا القديمة لاستخدام تقنية RPA؟",
+            "answer": "لا، تتفاعل روبوتات RPA مع واجهة المستخدم لأنظمتك الحالية تماماً مثل الموظف البشري، مما يلغي الحاجة إلى عمليات استبدال البرامج المكلفة."
+          },
+          {
+            "question": "ما الفرق بين الروبوتات الموجهة (Attended) وغير الموجهة (Unattended)؟",
+            "answer": "تعمل الروبوتات الموجهة على جهاز المستخدم وتتطلب تحفيزاً أو مدخلات بشرية، بينما تعمل الروبوتات غير الموجهة على خوادم بعيدة تلقائياً بناءً على جداول زمنية محددة."
+          },
+          {
+            "question": "كيف تتعامل روبوتات RPA مع البيانات غير المهيكلة مثل ملفات PDF؟",
+            "answer": "ندمج أنظمة التعرف الضوئي على الحروف (OCR) والرؤية الحاسوبية لقراءة واستخراج وتحويل النصوص من المستندات غير المهيكلة إلى جداول بيانات مهيكلة."
+          },
+          {
+            "question": "ماذا يحدث إذا واجه الروبوت خطأً غير متوقع أثناء العمل؟",
+            "answer": "نبني قواعد لمعالجة الاستثناءات. يوقف الروبوت المعاملة المتأثرة، ويسجل الخطأ في ملف السجل، وينبه المشغل البشري لمراجعة المشكلة يدوياً."
+          },
+          {
+            "question": "هل تقنية RPA آمنة للتعامل مع البيانات المالية الحساسة؟",
+            "answer": "نعم، نحن نطبق خزائن بيانات اعتماد صارمة واتصالات مشفرة، مما يضمن وصول الروبوتات إلى قواعد البيانات بأمان، وتسجيل كافة الإجراءات في سجلات التدقيق."
+          },
+          {
+            "question": "كيف نختار بين UiPath والبرمجة النصية المخصصة بلغة Python؟",
+            "answer": "نوصي بـ UiPath لتدفقات العمل المعقدة التي تشمل تطبيقات سطح مكتب قديمة متعددة، ونوصي ببرامج Python النصية البسيطة لعمليات كشط الويب أو تكامل واجهات التطبيقات."
+          },
+          {
+            "question": "ما هي العمليات الأكثر ملاءمة للأتمتة باستخدام RPA؟",
+            "answer": "العمليات المثالية هي تلك المتكررة للغاية، والقائمة على القواعد، والتي تتطلب حجماً كبيراً من المعالجة، وتستخدم مدخلات رقمية مثل ملفات Excel أو رسائل البريد."
+          }
+        ],
+        "technologies": [
+          { "name": "UiPath", "icon": "uipath" },
+          { "name": "Automation Anywhere", "icon": "automationanywhere" },
+          { "name": "Python", "icon": "python" },
+          { "name": "Selenium", "icon": "selenium" },
+          { "name": "Power Automate", "icon": "microsoft" },
+          { "name": "OpenCV", "icon": "opencv" },
+          { "name": "Node.js", "icon": "nodejs" }
+        ]
+      }
+    }
+  }
+}

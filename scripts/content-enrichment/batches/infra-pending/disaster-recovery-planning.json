@@ -1,0 +1,598 @@
+{
+  "slug": "disaster-recovery-planning",
+  "en": {
+    "name": "Disaster Recovery Planning",
+    "shortDescription": "Protect your business from catastrophic data loss and downtime with automated multi-region failover, robust backup architectures, and rapid recovery strategies tailored for cloud and hybrid environments.",
+    "fullDescription": "Unplanned downtime costs modern enterprises thousands of dollars per minute. Our Disaster Recovery Planning services ensure your business remains resilient against hardware failures, cyberattacks, and natural disasters. We design, implement, and test comprehensive disaster recovery strategies that define strict Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO). By leveraging automated multi-region failover, immutable backup architectures, and secure ransomware recovery protocols, we guarantee your critical workloads are restored within minutes. Our team builds automated runbooks and conducts regular non-disruptive DR drills, ensuring your infrastructure is prepared for any scenario without impacting daily operations.",
+    "features": [
+      "DR Strategy & Planning",
+      "Backup Architecture Design",
+      "Multi-Region Failover",
+      "RTO/RPO Definition",
+      "Automated Recovery Pipelines",
+      "DR Testing & Drills",
+      "Runbook Development",
+      "Ransomware Recovery & Isolation"
+    ],
+    "benefits": [
+      "Minimize costly business downtime",
+      "Prevent critical data loss",
+      "Ensure strict regulatory compliance",
+      "Rapid recovery from ransomware",
+      "Continuous operational readiness",
+      "Enhanced stakeholder confidence"
+    ],
+    "metaTitle": "Disaster Recovery Planning Services | PakSoft",
+    "metaDescription": "Protect your business from downtime with automated multi-region failover and robust backup architectures. Contact PakSoft today for a resilient DR plan.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Assessment",
+          "description": "We analyze your current infrastructure, data flows, and business dependencies. This helps us identify critical assets and potential single points of failure."
+        },
+        {
+          "step": 2,
+          "title": "RTO/RPO Definition",
+          "description": "Our team collaborates with your stakeholders to define realistic recovery objectives. We align these metrics with your business continuity requirements and budget."
+        },
+        {
+          "step": 3,
+          "title": "Architecture Design",
+          "description": "We design a custom multi-region or hybrid cloud disaster recovery architecture. This includes setting up secure, immutable backup vaults and replication paths."
+        },
+        {
+          "step": 4,
+          "title": "Automation & Scripting",
+          "description": "We write Infrastructure as Code to automate the entire failover and recovery process. This minimizes human error during high-stress disaster scenarios."
+        },
+        {
+          "step": 5,
+          "title": "Testing & Drills",
+          "description": "We conduct rigorous, non-disruptive disaster recovery drills to validate the setup. This ensures that failover mechanisms trigger correctly under simulated failure conditions."
+        },
+        {
+          "step": 6,
+          "title": "Handover & Maintenance",
+          "description": "Our engineers deliver comprehensive runbooks and train your internal teams. We also set up continuous monitoring to alert you of backup anomalies."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the difference between RTO and RPO?",
+          "answer": "RTO, or Recovery Time Objective, is the maximum acceptable duration of downtime after a failure. RPO, or Recovery Point Objective, measures the maximum tolerable data loss window. We help you balance these metrics against infrastructure costs to find the optimal strategy."
+        },
+        {
+          "question": "How do you protect backups from ransomware attacks?",
+          "answer": "We implement immutable backups and write-once-read-many (WORM) storage policies. This prevents ransomware from encrypting or deleting your historical backup data. Additionally, we isolate recovery environments to prevent lateral malware spread during restoration."
+        },
+        {
+          "question": "Can we test our disaster recovery plan without disrupting production?",
+          "answer": "Yes, we design non-disruptive testing environments using isolated virtual private clouds (VPCs). This allows us to run full failover simulations without affecting live users or production databases. Regular testing ensures your runbooks remain accurate and effective."
+        },
+        {
+          "question": "What technologies do you use for multi-region failover?",
+          "answer": "We utilize advanced cloud-native tools like AWS Route 53, Azure Site Recovery, and Terraform for infrastructure automation. These tools allow us to redirect traffic globally and spin up replica environments in minutes. We select the stack based on your existing cloud provider."
+        },
+        {
+          "question": "How often should we update our disaster recovery plan?",
+          "answer": "We recommend reviewing and updating your DR plan at least twice a year or whenever major infrastructure changes occur. Regular updates ensure that new applications and data stores are captured in the backup scope. Our automated runbooks make updating these plans straightforward."
+        },
+        {
+          "question": "Do you support hybrid cloud disaster recovery?",
+          "answer": "Absolutely, we specialize in bridging on-premise data centers with public cloud environments like AWS and Azure. We set up secure VPNs or dedicated lines to replicate local workloads to the cloud. This provides a cost-effective failover target without maintaining duplicate physical hardware."
+        },
+        {
+          "question": "What is a disaster recovery runbook?",
+          "answer": "A runbook is a detailed, step-by-step document that guides your team through the recovery process during an outage. It contains contact lists, system dependencies, manual verification steps, and automated script execution commands. We keep these documents updated and easily accessible."
+        },
+        {
+          "question": "How does automated failover work?",
+          "answer": "Automated failover uses continuous health checks to monitor your primary systems. If a critical failure is detected, DNS routing automatically shifts traffic to the secondary region. Simultaneously, automated scripts spin up necessary compute resources and mount the latest replicated databases."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "AWS Backup",
+          "icon": "aws-backup"
+        },
+        {
+          "name": "Azure Site Recovery",
+          "icon": "azure-site-recovery"
+        },
+        {
+          "name": "Veeam",
+          "icon": "veeam"
+        },
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        },
+        {
+          "name": "AWS Route 53",
+          "icon": "aws-route53"
+        },
+        {
+          "name": "Velero",
+          "icon": "velero"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Felaket Kurtarma Planlaması",
+    "shortDescription": "Bulut ve hibrit ortamlar için tasarlanmış otomatik çoklu bölge yük devretme, güçlü yedekleme mimarileri ve hızlı kurtarma stratejileriyle işletmenizi veri kaybından koruyun.",
+    "fullDescription": "Planlanmayan kesintiler modern işletmelere dakika başına binlerce dolar zarar verebilir. Felaket Kurtarma Planlaması hizmetlerimiz, donanım arızalarına, siber saldırılara ve doğal afetlere karşı altyapınızın dayanıklı kalmasını sağlar. Kurtarma Süresi Hedefi (RTO) ve Kurtarma Noktası Hedefi (RPO) metriklerini belirleyerek kapsamlı felaket kurtarma stratejileri tasarlıyor ve uyguluyoruz. Otomatik çoklu bölge yük devretme, değiştirilemez yedekleme mimarileri ve güvenli fidye yazılımı kurtarma protokolleri sayesinde kritik iş yüklerinizin dakikalar içinde geri yüklenmesini garanti ediyoruz. Ekibimiz, günlük operasyonlarınızı etkilemeden düzenli DR tatbikatları gerçekleştirir.",
+    "features": [
+      "DR Stratejisi ve Planlama",
+      "Yedekleme Mimarisi Tasarımı",
+      "Çoklu Bölge Yük Devretme",
+      "RTO/RPO Tanımlama",
+      "Otomatik Kurtarma İş Hatları",
+      "DR Testleri ve Tatbikatları",
+      "Runbook (Uygulama Kılavuzu) Geliştirme",
+      "Fidye Yazılımı Kurtarma ve İzolasyon"
+    ],
+    "benefits": [
+      "Maliyetli kesinti sürelerini en aza indirin",
+      "Kritik veri kayıplarını önleyin",
+      "Sıkı yasal uyumluluk sağlayın",
+      "Fidye yazılımlarından hızla kurtulun",
+      "Sürekli operasyonel hazırlık elde edin",
+      "Paydaş güvenini artırın"
+    ],
+    "metaTitle": "Felaket Kurtarma Planlaması | PakSoft",
+    "metaDescription": "Otomatik çoklu bölge yük devretme ve güçlü yedekleme mimarileriyle işletmenizi koruyun. Güvenilir bir DR planı için PakSoft ile iletişime geçin.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Değerlendirme",
+          "description": "Mevcut altyapınızı, veri akışlarınızı ve iş bağımlılıklarınızı analiz ediyoruz. Bu analiz, kritik varlıkları ve olası tek hata noktalarını belirlememize yardımcı olur."
+        },
+        {
+          "step": 2,
+          "title": "RTO/RPO Tanımlama",
+          "description": "Gerçekçi kurtarma hedefleri belirlemek için paydaşlarınızla birlikte çalışıyoruz. Bu metrikleri iş sürekliliği gereksinimleriniz ve bütçenizle uyumlu hale getiriyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Mimari Tasarım",
+          "description": "Özel bir çoklu bölge veya hibrit bulut felaket kurtarma mimarisi tasarlıyoruz. Bu süreç, güvenli ve değiştirilemez yedekleme kasalarının oluşturulmasını içerir."
+        },
+        {
+          "step": 4,
+          "title": "Otomasyon ve Kodlama",
+          "description": "Tüm yük devretme ve kurtarma sürecini otomatikleştirmek için Infrastructure as Code (IaC) yazıyoruz. Bu sayede yüksek stresli felaket anlarında insan hatasını en aza indiriyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Test ve Tatbikatlar",
+          "description": "Kurulumu doğrulamak için kesintisiz felaket kurtarma tatbikatları gerçekleştiriyoruz. Bu tatbikatlar, yük devretme mekanizmalarının simüle edilmiş hata koşullarında doğru çalışmasını sağlar."
+        },
+        {
+          "step": 6,
+          "title": "Teslimat ve Bakım",
+          "description": "Mühendislerimiz kapsamlı runbook belgeleri sunar ve ekiplerinizi eğitir. Ayrıca yedekleme anomalilerini anında tespit etmek için sürekli izleme sistemleri kuruyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "RTO ve RPO arasındaki fark nedir?",
+          "answer": "RTO (Kurtarma Süresi Hedefi), bir arızadan sonra kabul edilebilir maksimum kesinti süresidir. RPO (Kurtarma Noktası Hedefi) ise tolere edilebilir maksimum veri kaybı süresini ölçer. Altyapı maliyetlerinizi optimize etmek için bu iki metriği dengeliyoruz."
+        },
+        {
+          "question": "Yedekleri fidye yazılımı (ransomware) saldırılarından nasıl koruyorsunuz?",
+          "answer": "Değiştirilemez (immutable) yedeklemeler ve bir kez yaz-çok oku (WORM) depolama politikaları uyguluyoruz. Bu yöntem, fidye yazılımlarının geçmiş yedek verilerinizi şifrelemesini veya silmesini engeller. Ayrıca kurtarma sırasında zararlı yazılımların yayılmasını önlemek için izole ortamlar kullanıyoruz."
+        },
+        {
+          "question": "Üretim ortamını kesintiye uğratmadan DR planımızı test edebilir miyiz?",
+          "answer": "Evet, izole edilmiş sanal özel bulutlar (VPC) kullanarak kesintisiz test ortamları tasarlıyoruz. Bu sayede canlı kullanıcıları veya üretim veritabanlarını etkilemeden tam yük devretme simülasyonları gerçekleştirebilirsiniz. Düzenli testler, kurtarma planlarınızın güncelliğini korur."
+        },
+        {
+          "question": "Çoklu bölge yük devretme için hangi teknolojileri kullanıyorsunuz?",
+          "answer": "Altyapı otomasyonu için AWS Route 53, Azure Site Recovery ve Terraform gibi gelişmiş bulut yerel araçlarını kullanıyoruz. Bu araçlar, trafiği küresel olarak yönlendirmemize ve yedek ortamları dakikalar içinde ayağa kaldırmamıza olanak tanır. Teknolojileri mevcut bulut sağlayıcınıza göre seçiyoruz."
+        },
+        {
+          "question": "Felaket kurtarma planımızı ne sıklıkla güncellemeliyiz?",
+          "answer": "DR planınızı yılda en az iki kez veya altyapınızda büyük değişiklikler yapıldığında güncellemenizi öneririz. Düzenli güncellemeler, yeni uygulamaların ve veri depolarının yedekleme kapsamına alınmasını sağlar. Otomatik runbook'larımız bu güncellemeleri oldukça kolaylaştırır."
+        },
+        {
+          "question": "Hibrit bulut felaket kurtarmayı destekliyor musunuz?",
+          "answer": "Kesinlikle, yerel veri merkezlerinizi AWS ve Azure gibi genel bulut ortamlarıyla entegre etme konusunda uzmanız. Yerel iş yüklerini buluta kopyalamak için güvenli VPN'ler veya özel hatlar kuruyoruz. Bu, fiziksel donanım maliyetlerini artırmadan ekonomik bir yük devretme çözümü sunar."
+        },
+        {
+          "question": "Felaket kurtarma runbook'u nedir?",
+          "answer": "Runbook, bir kesinti sırasında ekibinize kurtarma sürecinde rehberlik eden adım adım yazılmış detaylı bir belgedir. İletişim listelerini, sistem bağımlılıklarını, manuel doğrulama adımlarını ve otomatik komut dosyalarını içerir. Bu belgeleri her zaman güncel ve erişilebilir tutuyoruz."
+        },
+        {
+          "question": "Otomatik yük devretme (failover) nasıl çalışır?",
+          "answer": "Otomatik yük devretme, ana sistemlerinizi izlemek için sürekli sağlık kontrolleri (health checks) kullanır. Kritik bir hata tespit edildiğinde, DNS yönlendirmesi trafiği otomatik olarak ikincil bölgeye aktarır. Aynı zamanda otomatik betikler gerekli bilgi işlem kaynaklarını başlatır ve yedeklenen veritabanlarını bağlar."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "AWS Backup",
+          "icon": "aws-backup"
+        },
+        {
+          "name": "Azure Site Recovery",
+          "icon": "azure-site-recovery"
+        },
+        {
+          "name": "Veeam",
+          "icon": "veeam"
+        },
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        },
+        {
+          "name": "AWS Route 53",
+          "icon": "aws-route53"
+        },
+        {
+          "name": "Velero",
+          "icon": "velero"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Disaster-Recovery-Planung",
+    "shortDescription": "Schützen Sie Ihr Unternehmen vor Datenverlust und Ausfallzeiten mit automatisiertem Multi-Region-Failover, robusten Backup-Architekturen und schnellen Wiederherstellungsstrategien für Cloud- und Hybrid-Umgebungen.",
+    "fullDescription": "Ungeplante Ausfallzeiten kosten moderne Unternehmen Tausende von Dollar pro Minute. Unsere Disaster-Recovery-Planung stellt sicher, dass Ihre Infrastruktur gegen Hardwareausfälle, Cyberangriffe und Naturkatastrophen resistent bleibt. Wir entwerfen, implementieren und testen umfassende DR-Strategien mit präzisen RTO- (Recovery Time Objective) und RPO-Zielen (Recovery Point Objective). Durch den Einsatz von automatisiertem Multi-Region-Failover, unveränderlichen Backup-Architekturen und sicheren Ransomware-Wiederherstellungsprotokollen garantieren wir die Wiederherstellung Ihrer kritischen Workloads innerhalb von Minuten. Unser Team erstellt automatisierte Runbooks und führt regelmäßige, zerstörungsfreie DR-Tests durch, um die Betriebsbereitschaft ohne Beeinträchtigung des laufenden Betriebs zu gewährleisten.",
+    "features": [
+      "DR-Strategie & Planung",
+      "Backup-Architektur-Design",
+      "Multi-Region-Failover",
+      "RTO/RPO-Definition",
+      "Automatisierte Recovery-Pipelines",
+      "DR-Tests & Simulationen",
+      "Runbook-Entwicklung",
+      "Ransomware-Schutz & Isolation"
+    ],
+    "benefits": [
+      "Kostspielige Ausfallzeiten minimieren",
+      "Kritischen Datenverlust verhindern",
+      "Strikte Compliance-Vorgaben erfüllen",
+      "Schnelle Wiederherstellung nach Ransomware",
+      "Kontinuierliche Betriebsbereitschaft sichern",
+      "Vertrauen der Stakeholder stärken"
+    ],
+    "metaTitle": "Disaster-Recovery-Planung | PakSoft",
+    "metaDescription": "Schützen Sie Ihr Unternehmen mit automatisiertem Multi-Region-Failover und robusten Backups. Kontaktieren Sie PakSoft für ein sicheres DR-Konzept.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Bewertung",
+          "description": "Wir analysieren Ihre bestehende Infrastruktur, Datenflüsse und geschäftlichen Abhängigkeiten. Dies hilft uns, kritische Systeme und potenzielle Single Points of Failure zu identifizieren."
+        },
+        {
+          "step": 2,
+          "title": "RTO/RPO-Definition",
+          "description": "Unser Team arbeitet eng mit Ihren Stakeholdern zusammen, um realistische Wiederherstellungsziele zu definieren. Wir stimmen diese Kennzahlen mit Ihren Geschäftsanforderungen und Ihrem Budget ab."
+        },
+        {
+          "step": 3,
+          "title": "Architektur-Design",
+          "description": "Wir entwerfen eine maßgeschneiderte Multi-Region- oder Hybrid-Cloud-DR-Architektur. Dazu gehört die Einrichtung sicherer, unveränderlicher Backup-Tresore und Replikationspfade."
+        },
+        {
+          "step": 4,
+          "title": "Automatisierung & Scripting",
+          "description": "Wir schreiben Infrastructure as Code (IaC), um den gesamten Failover- und Wiederherstellungsprozess zu automatisieren. Dies minimiert menschliche Fehler in stressigen Ausfallszenarien."
+        },
+        {
+          "step": 5,
+          "title": "Tests & Simulationen",
+          "description": "Wir führen regelmäßige, zerstörungsfreie DR-Tests durch, um die Konfiguration zu validieren. Dies stellt sicher, dass die Failover-Mechanismen unter simulierten Bedingungen einwandfrei funktionieren."
+        },
+        {
+          "step": 6,
+          "title": "Übergabe & Wartung",
+          "description": "Unsere Ingenieure übergeben detaillierte Runbooks und schulen Ihre internen Teams. Zudem richten wir ein kontinuierliches Monitoring ein, um Backup-Anomalien sofort zu melden."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist der Unterschied zwischen RTO und RPO?",
+          "answer": "RTO (Recovery Time Objective) ist die maximal akzeptable Ausfallzeit nach einem Systemfehler. RPO (Recovery Point Objective) misst den maximal tolerierbaren Datenverlustzeitraum. Wir helfen Ihnen, diese Werte optimal auf Ihr Budget abzustimmen."
+        },
+        {
+          "question": "Wie schützen Sie Backups vor Ransomware-Angriffen?",
+          "answer": "Wir implementieren unveränderliche Backups (Immutable Backups) und WORM-Speicherrichtlinien (Write Once, Read Many). Dies verhindert, dass Ransomware Ihre historischen Backups verschlüsselt oder löscht. Zudem isolieren wir Wiederherstellungsumgebungen, um eine Ausbreitung zu verhindern."
+        },
+        {
+          "question": "Können wir den DR-Plan ohne Unterbrechung des Live-Betriebs testen?",
+          "answer": "Ja, wir entwerfen zerstörungsfreie Testumgebungen in isolierten Virtual Private Clouds (VPCs). Dadurch können wir vollständige Failover-Simulationen durchführen, ohne Live-Benutzer oder Produktionsdatenbanken zu beeinträchtigen. Regelmäßige Tests halten Ihre Runbooks aktuell."
+        },
+        {
+          "question": "Welche Technologien nutzen Sie für das Multi-Region-Failover?",
+          "answer": "Wir nutzen Cloud-native Tools wie AWS Route 53, Azure Site Recovery und Terraform für die Automatisierung. Diese Tools ermöglichen eine globale Traffic-Umleitung und den schnellen Aufbau von Replika-Umgebungen. Die Auswahl erfolgt passend zu Ihrer Cloud-Infrastruktur."
+        },
+        {
+          "question": "Wie oft sollte ein Disaster-Recovery-Plan aktualisiert werden?",
+          "answer": "Wir empfehlen, den DR-Plan mindestens zweimal im Jahr oder bei jeder größeren Infrastrukturänderung zu aktualisieren. Regelmäßige Updates stellen sicher, dass neue Anwendungen und Datenspeicher abgedeckt sind. Unsere automatisierten Runbooks vereinfachen diesen Prozess erheblich."
+        },
+        {
+          "question": "Unterstützen Sie auch hybride Disaster-Recovery-Szenarien?",
+          "answer": "Absolut, wir sind darauf spezialisiert, On-Premise-Rechenzentren mit Public-Cloud-Umgebungen wie AWS und Azure zu verbinden. Wir richten sichere VPNs oder dedizierte Leitungen zur Replikation lokaler Workloads ein. Dies bietet ein kostengünstiges Failover-Ziel ohne doppelte Hardware."
+        },
+        {
+          "question": "Was ist ein Disaster-Recovery-Runbook?",
+          "answer": "Ein Runbook ist ein detailliertes, schrittweises Dokument, das Ihr Team im Ernstfall durch den Wiederherstellungsprozess führt. Es enthält Kontaktlisten, Systemabhängigkeiten, manuelle Prüfschritte und automatisierte Skriptbefehle. Wir halten diese Dokumente stets aktuell und griffbereit."
+        },
+        {
+          "question": "Wie funktioniert ein automatisches Failover?",
+          "answer": "Ein automatisches Failover nutzt kontinuierliche Health-Checks zur Überwachung Ihrer Primärsysteme. Bei einem kritischen Fehler leitet das DNS den Datenverkehr automatisch in die sekundäre Region um. Gleichzeitig starten automatisierte Skripte die benötigten Compute-Ressourcen."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "AWS Backup",
+          "icon": "aws-backup"
+        },
+        {
+          "name": "Azure Site Recovery",
+          "icon": "azure-site-recovery"
+        },
+        {
+          "name": "Veeam",
+          "icon": "veeam"
+        },
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        },
+        {
+          "name": "AWS Route 53",
+          "icon": "aws-route53"
+        },
+        {
+          "name": "Velero",
+          "icon": "velero"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "ڈیزاسٹر ریکوری پلاننگ",
+    "shortDescription": "کلاؤڈ اور ہائبرڈ ماحول کے لیے تیار کردہ خودکار ملٹی ریجن فیل اوور، مضبوط بیک اپ آرکیٹیکچر، اور تیز رفتار ریکوری حکمت عملیوں کے ساتھ اپنے ڈیٹا کو محفوظ بنائیں۔",
+    "fullDescription": "غیر متوقع ڈاؤن ٹائم جدید کاروباری اداروں کو ہر منٹ میں ہزاروں ڈالرز کا نقصان پہنچا سکتا ہے۔ ہماری ڈیزاسٹر ریکوری پلاننگ سروسز اس بات کو یقینی بناتی ہیں کہ آپ کا انفراسٹرکچر ہارڈ ویئر کی خرابیوں، سائبر حملوں اور قدرتی آفات کے خلاف مضبوط رہے۔ ہم RTO (ریکوری ٹائم آبجیکٹو) اور RPO (ریکوری پوائنٹ آبجیکٹو) کے سخت معیارات کے مطابق جامع ڈیزاسٹر ریکوری حکمت عملی ڈیزائن اور نافذ کرتے ہیں۔ خودکار ملٹی ریجن فیل اوور، ناقابل تبدیل (immutable) بیک اپ آرکیٹیکچر، اور محفوظ رینسم ویئر ریکوری پروٹوکولز کے ذریعے ہم آپ کے اہم کاموں کی منٹوں میں بحالی کی ضمانت دیتے ہیں۔ ہماری ٹیم روزمرہ کے کاموں کو متاثر کیے بغیر باقاعدہ DR مشقیں کرتی ہے۔",
+    "features": [
+      "DR حکمت عملی اور منصوبہ بندی",
+      "بیک اپ آرکیٹیکچر ڈیزائن",
+      "ملٹی ریجن فیل اوور",
+      "RTO/RPO کی تعریف",
+      "خودکار ریکوری پائپ لائنز",
+      "DR ٹیسٹنگ اور مشقیں",
+      "رن بک (Runbook) کی تیاری",
+      "رینسم ویئر ریکوری اور تنہائی"
+    ],
+    "benefits": [
+      "مہنگے ڈاؤن ٹائم کو کم سے کم کریں",
+      "اہم ڈیٹا کے نقصان کو روکیں",
+      "سخت ریگولیٹری تعمیل کو یقینی بنائیں",
+      "رینسم ویئر سے تیز رفتار بحالی",
+      "مسلسل آپریشنل تیاری حاصل کریں",
+      "اسٹیک ہولڈرز کا اعتماد بڑھائیں"
+    ],
+    "metaTitle": "ڈیزاسٹر ریکوری پلاننگ | PakSoft",
+    "metaDescription": "خودکار ملٹی ریجن فیل اوور اور مضبوط بیک اپ کے ساتھ اپنے کاروبار کو محفوظ بنائیں۔ ایک قابل اعتماد DR پلان کے لیے آج ہی PakSoft سے رابطہ کریں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تشخیص",
+          "description": "ہم آپ کے موجودہ انفراسٹرکچر، ڈیٹا کے بہاؤ، اور کاروباری انحصار کا تجزیہ کرتے ہیں۔ یہ ہمیں اہم اثاثوں اور ممکنہ سنگل پوائنٹس آف فیلر کی شناخت کرنے میں مدد دیتا ہے۔"
+        },
+        {
+          "step": 2,
+          "title": "RTO/RPO کی تعریف",
+          "description": "ہماری ٹیم حقیقت پسندانہ ریکوری کے اہداف کی وضاحت کے لیے آپ کے اسٹیک ہولڈرز کے ساتھ تعاون کرتی ہے۔ ہم ان میٹرکس کو آپ کے کاروباری تسلسل کی ضروریات اور بجٹ کے ساتھ ہم آہنگ کرتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "آرکیٹیکچر ڈیزائن",
+          "description": "ہم ایک کسٹم ملٹی ریجن یا ہائبرڈ کلاؤڈ ڈیزاسٹر ریکوری آرکیٹیکچر ڈیزائن کرتے ہیں۔ اس میں محفوظ، ناقابل تبدیل بیک اپ والٹس اور ریپلیکیشن پاتھ قائم کرنا شامل ہے۔"
+        },
+        {
+          "step": 4,
+          "title": "آٹومیشن اور اسکرپٹنگ",
+          "description": "ہم فیل اوور اور ریکوری کے پورے عمل کو خودکار بنانے کے لیے Infrastructure as Code لکھتے ہیں۔ یہ انتہائی دباؤ والے ڈیزاسٹر منظرناموں کے دوران انسانی غلطی کو کم کرتا ہے۔"
+        },
+        {
+          "step": 5,
+          "title": "ٹیسٹنگ اور مشقیں",
+          "description": "ہم سیٹ اپ کی توثیق کرنے کے لیے سخت، غیر خلل انگیز ڈیزاسٹر ریکوری مشقیں کرتے ہیں۔ یہ یقینی بناتا ہے کہ فیل اوور میکانزم نقلی خرابی کے حالات میں درست طریقے سے کام کریں۔"
+        },
+        {
+          "step": 6,
+          "title": "حوالگی اور دیکھ بھال",
+          "description": "ہمارے انجینئرز جامع رن بکس فراہم کرتے ہیں اور آپ کی اندرونی ٹیموں کو تربیت دیتے ہیں۔ ہم بیک اپ کی بے ضابطگیوں سے آگاہ کرنے کے لیے مسلسل مانیٹرنگ بھی قائم کرتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "RTO اور RPO میں کیا فرق ہے؟",
+          "answer": "RTO سے مراد وہ زیادہ سے زیادہ وقت ہے جس کے اندر خرابی کے بعد سسٹم کو بحال ہونا چاہیے۔ RPO سے مراد ڈیٹا کے نقصان کی وہ حد ہے جسے کاروبار برداشت کر سکتا ہے۔ ہم ان دونوں میٹرکس کو آپ کے بجٹ کے مطابق متوازن کرتے ہیں۔"
+        },
+        {
+          "question": "آپ بیک اپس کو رینسم ویئر حملوں سے کیسے محفوظ رکھتے ہیں؟",
+          "answer": "ہم ناقابل تبدیل (immutable) بیک اپ اور WORM اسٹوریج پالیسیاں نافذ کرتے ہیں۔ یہ رینسم ویئر کو آپ کے تاریخی بیک اپ ڈیٹا کو انکرپٹ یا ڈیلیٹ کرنے سے روکتا ہے۔ مزید برآں، ہم بحالی کے دوران مالویئر کے پھیلاؤ کو روکنے کے لیے ریکوری ماحول کو الگ تھلگ رکھتے ہیں۔"
+        },
+        {
+          "question": "کیا ہم پروڈکشن کو متاثر کیے بغیر اپنے DR پلان کی جانچ کر سکتے ہیں؟",
+          "answer": "جی ہاں، ہم الگ تھلگ ورچوئل پرائیویٹ کلاؤڈز (VPCs) کا استعمال کرتے ہوئے غیر خلل انگیز ٹیسٹنگ ماحول ڈیزائن کرتے ہیں۔ یہ ہمیں لائیو صارفین یا پروڈکشن ڈیٹا بیس کو متاثر کیے بغیر مکمل فیل اوور سمیلیشنز چلانے کی اجازت دیتا ہے۔ باقاعدہ ٹیسٹنگ آپ کے رن بکس کو اپ ٹو ڈیٹ رکھتی ہے۔"
+        },
+        {
+          "question": "ملٹی ریجن فیل اوور کے لیے آپ کون سی ٹیکنالوجیز استعمال کرتے ہیں؟",
+          "answer": "ہم انفراسٹرکچر آٹومیشن کے لیے AWS Route 53، Azure Site Recovery، اور Terraform جیسے جدید کلاؤڈ نیٹیو ٹولز استعمال کرتے ہیں۔ یہ ٹولز ہمیں عالمی سطح پر ٹریفک کو ری ڈائریکٹ کرنے اور منٹوں میں متبادل ماحول تیار کرنے کی اجازت دیتے ہیں۔ ہم آپ کے موجودہ کلاؤڈ فراہم کنندہ کی بنیاد پر اسٹیک کا انتخاب کرتے ہیں۔"
+        },
+        {
+          "question": "ہمیں اپنے ڈیزاسٹر ریکوری پلان کو کتنی بار اپ ڈیٹ کرنا چاہیے؟",
+          "answer": "ہم سال میں کم از کم دو بار یا جب بھی انفراسٹرکچر میں بڑی تبدیلیاں ہوں، DR پلان کو اپ ڈیٹ کرنے کی سفارش کرتے ہیں۔ باقاعدہ اپ ڈیٹس یقینی بناتی ہیں کہ نئی ایپلی کیشنز اور ڈیٹا اسٹورز بیک اپ کے دائرے میں شامل رہیں۔ ہماری خودکار رن بکس اس عمل کو انتہائی آسان بناتی ہیں۔"
+        },
+        {
+          "question": "کیا آپ ہائبرڈ کلاؤڈ ڈیزاسٹر ریکوری کو سپورٹ کرتے ہیں؟",
+          "answer": "بالکل، ہم آپ کے مقامی ڈیٹا سینٹرز کو AWS اور Azure جیسے پبلک کلاؤڈ ماحول کے ساتھ جوڑنے میں مہارت رکھتے ہیں۔ ہم مقامی کام کے بوجھ کو کلاؤڈ پر منتقل کرنے کے لیے محفوظ VPNs یا وقف شدہ لائنیں قائم کرتے ہیں۔ یہ اضافی فزیکل ہارڈ ویئر کے بغیر ایک سستا فیل اوور حل فراہم کرتا ہے۔"
+        },
+        {
+          "question": "ڈیزاسٹر ریکوری رن بک (Runbook) کیا ہے؟",
+          "answer": "رن بک ایک تفصیلی، مرحلہ وار دستاویز ہے جو بندش کے دوران بحالی کے عمل میں آپ کی ٹیم کی رہنمائی کرتی ہے۔ اس میں رابطے کی فہرستیں، سسٹم کے انحصار، دستی تصدیق کے مراحل، اور خودکار اسکرپٹ کمانڈز شامل ہوتے ہیں۔ ہم ان دستاویزات کو ہمیشہ اپ ڈیٹ اور قابل رسائی رکھتے ہیں۔"
+        },
+        {
+          "question": "خودکار فیل اوور (failover) کیسے کام کرتا ہے؟",
+          "answer": "خودکار فیل اوور آپ کے بنیادی سسٹمز کی نگرانی کے لیے مسلسل ہیلتھ چیکس کا استعمال کرتا ہے۔ اگر کوئی سنگین خرابی پائی جاتی ہے، تو DNS روٹنگ خود بخود ٹریفک کو ثانوی ریجن میں منتقل کر دیتی ہے۔ اس کے ساتھ ہی، خودکار اسکرپٹس ضروری کمپیوٹ وسائل کو شروع کرتی ہیں اور ڈیٹا بیس کو ماؤنٹ کرتی ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "AWS Backup",
+          "icon": "aws-backup"
+        },
+        {
+          "name": "Azure Site Recovery",
+          "icon": "azure-site-recovery"
+        },
+        {
+          "name": "Veeam",
+          "icon": "veeam"
+        },
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        },
+        {
+          "name": "AWS Route 53",
+          "icon": "aws-route53"
+        },
+        {
+          "name": "Velero",
+          "icon": "velero"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "التخطيط للتعافي من الكوارث",
+    "shortDescription": "احمِ عملك من فقدان البيانات ووقت التوقف عن العمل من خلال تجاوز الفشل التلقائي متعدد المناطق، وبنيات النسخ الاحتياطي القوية، واستراتيجيات التعافي السريع للبيئات السحابية والهجينة.",
+    "fullDescription": "يكلف وقت التوقف غير المخطط له المؤسسات الحديثة آلاف الدولارات في الدقيقة الواحدة. تضمن خدمات التخطيط للتعافي من الكوارث لدينا بقاء بنيتك التحتية مرنة ضد أعطال الأجهزة والهجمات السيبرانية والكوارث الطبيعية. نقوم بتصميم وتنفيذ واختبار استراتيجيات شاملة للتعافي من الكوارث تحدد أهداف وقت التعافي (RTO) وأهداف نقطة التعافي (RPO) الصارمة. من خلال الاستفادة من تجاوز الفشل التلقائي متعدد المناطق، وبنيات النسخ الاحتياطي غير القابلة للتغيير، وبروتوكولات التعافي الآمن من برامج الفدية، نضمن استعادة أعباء العمل الحرجة لديك في غضون دقائق. يقوم فريقنا ببناء أدلة تشغيل مؤتمتة وإجراء تدريبات دورية غير مخلة بالعمل لضمان الجاهزية التامة.",
+    "features": [
+      "استراتيجية والتخطيط للتعافي من الكوارث",
+      "تصميم بنية النسخ الاحتياطي",
+      "تجاوز الفشل متعدد المناطق",
+      "تحديد معايير RTO/RPO",
+      "مسارات التعافي المؤتمتة",
+      "اختبار وتدريبات التعافي",
+      "تطوير أدلة التشغيل (Runbooks)",
+      "التعافي من برامج الفدية وعزلها"
+    ],
+    "benefits": [
+      "تقليل وقت التوقف المكلف للعمل",
+      "منع فقدان البيانات الحساسة",
+      "ضمان الامتثال التنظيمي الصارم",
+      "التعافي السريع من برامج الفدية",
+      "تحقيق الجاهزية التشغيلية المستمرة",
+      "تعزيز ثقة أصحاب المصلحة"
+    ],
+    "metaTitle": "التخطيط للتعافي من الكوارث | PakSoft",
+    "metaDescription": "احمِ عملك من التوقف عن العمل من خلال تجاوز الفشل التلقائي متعدد المناطق وبنيات النسخ الاحتياطي القوية. اتصل بـ PakSoft للحصول على خطة تعافي مرنة.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "التقييم",
+          "description": "نقوم بتحليل بنيتك التحتية الحالية، وتدفقات البيانات، والاعتمادات التشغيلية. يساعدنا هذا في تحديد الأصول الحيوية ونقاط الفشل الفردية المحتملة."
+        },
+        {
+          "step": 2,
+          "title": "تحديد RTO/RPO",
+          "description": "يتعاون فريقنا مع أصحاب المصلحة لديك لتحديد أهداف تعافي واقعية. نقوم بمواءمة هذه المقاييس مع متطلبات استمرارية عملك وميزانيتك المتاحة."
+        },
+        {
+          "step": 3,
+          "title": "تصميم البنية التحتية",
+          "description": "نقوم بتصميم بنية مخصصة للتعافي من الكوارث متعددة المناطق أو السحابية الهجينة. يتضمن ذلك إعداد خزائن نسخ احتياطي آمنة وغير قابلة للتغيير ومسارات نسخ متماثل."
+        },
+        {
+          "step": 4,
+          "title": "الأتمتة والبرمجة",
+          "description": "نكتب البنية التحتية كرمز (IaC) لأتمتة عملية تجاوز الفشل والتعافي بالكامل. يقلل هذا من الأخطاء البشرية أثناء سيناريوهات الكوارث عالية الضغط."
+        },
+        {
+          "step": 5,
+          "title": "الاختبار والتدريبات",
+          "description": "نجري تدريبات صارمة وغير مخلة بالعمل للتعافي من الكوارث للتحقق من الإعداد. يضمن ذلك عمل آليات تجاوز الفشل بشكل صحيح في ظل ظروف الفشل المحاكاة."
+        },
+        {
+          "step": 6,
+          "title": "التسليم والصيانة",
+          "description": "يقدم مهندسونا أدلة تشغيل شاملة ويقومون بتدريب فرقك الداخلية. كما نقوم بإعداد مراقبة مستمرة لتنبيهك بأي شذوذ في النسخ الاحتياطي."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما الفرق بين RTO و RPO؟",
+          "answer": "يشير RTO (هدف وقت التعافي) إلى الحد الأقصى المقبول لوقت التوقف بعد الفشل. بينما يقيس RPO (هدف نقطة التعافي) الحد الأقصى المقبول لفقدان البيانات. نساعدك على موازنة هذه المقاييس مقابل تكاليف البنية التحتية."
+        },
+        {
+          "question": "كيف تحمون النسخ الاحتياطية من هجمات برامج الفدية (Ransomware)؟",
+          "answer": "نطبق نسخًا احتياطية غير قابلة للتغيير وسياسات تخزين WORM (الكتابة لمرة واحدة والقراءة المتعددة). يمنع هذا برامج الفدية من تشفير أو حذف بيانات النسخ الاحتياطي التاريخية. بالإضافة إلى ذلك، نقوم بعزل بيئات التعافي لمنع انتشار البرامج الضارة."
+        },
+        {
+          "question": "هل يمكننا اختبار خطة التعافي دون تعطيل الإنتاج؟",
+          "answer": "نعم، نحن نصمم بيئات اختبار غير مخلة بالعمل باستخدام شبكات سحابية خاصة معزولة (VPCs). يتيح لنا ذلك تشغيل محاكاة كاملة لتجاوز الفشل دون التأثير على المستخدمين الفعليين أو قواعد البيانات النشطة. تحافظ الاختبارات المنتظمة على دقة أدلة التشغيل."
+        },
+        {
+          "question": "ما هي التقنيات التي تستخدمونها لتجاوز الفشل متعدد المناطق؟",
+          "answer": "نستخدم أدوات سحابية متقدمة مثل AWS Route 53 و Azure Site Recovery و Terraform لأتمتة البنية التحتية. تتيح لنا هذه الأدوات إعادة توجيه حركة المرور عالميًا وتشغيل بيئات بديلة في دقائق. نختار التقنيات بناءً على مزود السحابة الحالي لديك."
+        },
+        {
+          "question": "كم مرة يجب أن نحدث خطة التعافي من الكوارث؟",
+          "answer": "نوصي بمراجعة وتحديث خطة التعافي مرتين سنويًا على الأقل أو عند حدوث تغييرات كبيرة في البنية التحتية. تضمن التحديثات المنتظمة إدراج التطبيقات ومخازن البيانات الجديدة في نطاق النسخ الاحتياطي. تسهل أدلة التشغيل المؤتمتة لدينا هذه العملية."
+        },
+        {
+          "question": "هل تدعمون التعافي من الكوارث للسحابة الهجينة؟",
+          "answer": "بالتأكيد، نحن متخصصون في ربط مراكز البيانات المحلية بالبيئات السحابية العامة مثل AWS و Azure. نقوم بإعداد شبكات VPN آمنة أو خطوط مخصصة لنسخ أعباء العمل المحلية إلى السحابة. يوفر هذا حلاً اقتصاديًا لتجاوز الفشل دون الحاجة لأجهزة مادية مكررة."
+        },
+        {
+          "question": "ما هو دليل تشغيل التعافي من الكوارث (Runbook)؟",
+          "answer": "دليل التشغيل هو وثيقة مفصلة خطوة بخطوة توجه فريقك خلال عملية التعافي أثناء الانقطاع. يحتوي على قوائم الاتصال، واعتمادات النظام، وخطوات التحقق اليدوي، وأوامر تشغيل البرامج النصية المؤتمتة. نحافظ على هذه الوثائق محدثة وسهلة الوصول."
+        },
+        {
+          "question": "كيف يعمل تجاوز الفشل التلقائي (Failover)؟",
+          "answer": "يستخدم تجاوز الفشل التلقائي فحوصات صحة مستمرة لمراقبة أنظمتك الأساسية. إذا تم اكتشاف فشل فادح، يقوم توجيه DNS تلقائيًا بنقل حركة المرور إلى المنطقة الثانوية. بالتزامن مع ذلك، تقوم البرامج النصية المؤتمتة بتشغيل موارد الحوسبة اللازمة وتثبيت قواعد البيانات."
+        }
+      ],
+      "technologies": [
+        {
+          "name": "AWS Backup",
+          "icon": "aws-backup"
+        },
+        {
+          "name": "Azure Site Recovery",
+          "icon": "azure-site-recovery"
+        },
+        {
+          "name": "Veeam",
+          "icon": "veeam"
+        },
+        {
+          "name": "Terraform",
+          "icon": "terraform"
+        },
+        {
+          "name": "AWS Route 53",
+          "icon": "aws-route53"
+        },
+        {
+          "name": "Velero",
+          "icon": "velero"
+        }
+      ]
+    }
+  }
+}
