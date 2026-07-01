@@ -14,8 +14,10 @@ import {
   ClockIcon,
 } from '@heroicons/react/24/outline';
 import { StarIcon } from '@heroicons/react/24/solid';
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
+import nextDynamic from 'next/dynamic';
+
+// Code-split react-markdown + remark-gfm into their own chunk
+const MarkdownContent = nextDynamic(() => import('./MarkdownContent'));
 
 interface BlogTranslation {
   locale: string;
@@ -339,7 +341,7 @@ export default function BlogPostView() {
               className="blog-article max-w-none"
               dir={isRTL ? 'rtl' : 'ltr'}
             >
-              <ReactMarkdown remarkPlugins={[remarkGfm]}>{content.content}</ReactMarkdown>
+              <MarkdownContent content={content.content} />
             </motion.article>
 
             {/* Bottom CTA */}

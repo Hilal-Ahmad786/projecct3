@@ -12,8 +12,6 @@ import {
   WrenchScrewdriverIcon,
 } from '@heroicons/react/24/outline';
 
-export const dynamic = 'force-dynamic';
-
 const translations: Record<string, Record<string, string>> = {
   title: {
     en: 'Free Tools & Calculators',

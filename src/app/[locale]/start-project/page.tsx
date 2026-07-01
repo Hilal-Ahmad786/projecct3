@@ -14,8 +14,6 @@ import {
 } from '@heroicons/react/24/outline';
 import ProjectRequestForm from '@/components/forms/ProjectRequestForm';
 
-export const dynamic = 'force-dynamic';
-
 const translations: Record<string, Record<string, string>> = {
   title: {
     en: 'Start Your Project',
