@@ -1097,10 +1097,7 @@ export default function Navbar() {
                                     return { slug: s.slug, children: self && kids.length === 0 ? (s.children || []) : kids };
                                   })
                                   .filter(Boolean) as { slug: string; children: string[] }[]
-                              // Browsing shows top-level services only — the ~220 child
-                              // pages stay reachable via search here and via their parent
-                              // service pages; listing them all made the menu overwhelming.
-                              : cat.services.map(s => ({ slug: s.slug, children: [] as string[] })));
+                              : cat.services.map(s => ({ slug: s.slug, children: s.children || [] })));
                             if (groups.length === 0) return null;
                             return (
                               <div key={catKey} className="mb-8 last:mb-0">
