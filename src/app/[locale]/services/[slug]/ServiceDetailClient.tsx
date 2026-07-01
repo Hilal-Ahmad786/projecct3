@@ -504,7 +504,7 @@ function HeroSection({
   const parentService = service.parentService;
 
   return (
-    <section className="relative overflow-hidden bg-white pt-[140px] pb-20 lg:pt-[160px] lg:pb-28">
+    <section className="relative overflow-hidden bg-white pt-[calc(var(--navbar-h,64px)+1.5rem)] pb-20 lg:pt-[calc(var(--navbar-h,64px)+2.5rem)] lg:pb-28">
       {/* Background */}
       <div className="absolute inset-0 z-0">
         {hasAnimation && <BgPatternRenderer pattern={animation.bgPattern} />}
