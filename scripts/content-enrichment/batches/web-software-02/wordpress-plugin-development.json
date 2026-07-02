@@ -1,0 +1,518 @@
+{
+  "slug": "wordpress-plugin-development",
+  "en": {
+    "name": "WordPress Plugin Development",
+    "shortDescription": "Extend WordPress with custom plugins built on a clean hooks-and-filters architecture — secure, update-safe, and performance-tested, so your site gains exactly the functionality your business needs without bloat or plugin conflicts.",
+    "fullDescription": "Off-the-shelf plugins rarely fit real business processes — they add bloat, conflict with each other, and lock you into someone else's roadmap. PakSoft builds custom WordPress plugins on a clean hooks-and-filters architecture, so your functionality survives core, theme, and WooCommerce updates without patching. We follow the official WordPress coding standards, sanitize and escape every input and output, and put each release through a dedicated security review covering nonces, capability checks, and SQL injection vectors. Performance is engineered in from day one: conditional asset loading, object caching, and profiled database queries keep your site fast under load. Whether you need a WooCommerce extension, custom Gutenberg blocks, a REST API integration, or a refactor of legacy plugin code, you receive documented, tested, update-safe software that you fully own.",
+    "features": [
+      "Custom Plugin Architecture (Hooks & Filters)",
+      "WooCommerce Extension Development",
+      "Custom Gutenberg Block Development",
+      "REST API & Third-Party Integrations",
+      "Plugin Security Audits & Hardening",
+      "Legacy Plugin Refactoring & Modernization",
+      "Performance Profiling & Query Optimization",
+      "Ongoing Maintenance & Update Compatibility"
+    ],
+    "benefits": [
+      "Functionality tailored exactly to your workflows — no compromises, no bloat",
+      "Update-safe code that survives WordPress, theme, and WooCommerce releases",
+      "Hardened security that protects customer data and your reputation",
+      "Faster pages through lean, profiled code and conditional asset loading",
+      "Full code ownership with documentation — no vendor lock-in",
+      "Lower long-term costs by replacing stacks of licensed plugins with one solution"
+    ],
+    "metaTitle": "WordPress Plugin Development Services | PakSoft",
+    "metaDescription": "Custom WordPress plugin development: WooCommerce extensions, Gutenberg blocks, REST API integrations — secure, update-safe code built to WordPress standards.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Discovery & Requirements",
+          "description": "We map your business processes, audit your current plugin stack and theme, and define precise functional, technical, and compatibility requirements for the new plugin."
+        },
+        {
+          "step": 2,
+          "title": "Architecture & Technical Design",
+          "description": "We design the plugin around WordPress hooks and filters, plan database tables, REST endpoints, and admin screens, and document how it stays update-safe."
+        },
+        {
+          "step": 3,
+          "title": "Development",
+          "description": "We build the plugin in short iterations following the WordPress coding standards, with code reviews, version control, and demo builds you can test on staging."
+        },
+        {
+          "step": 4,
+          "title": "Security & Quality Review",
+          "description": "Every release passes a dedicated security review — nonces, capability checks, input sanitization, output escaping, prepared statements — plus automated PHPUnit tests and static analysis."
+        },
+        {
+          "step": 5,
+          "title": "Staging Tests & Compatibility Checks",
+          "description": "We test the plugin on a staging copy of your site against your theme, PHP version, WooCommerce, and other active plugins before anything touches production."
+        },
+        {
+          "step": 6,
+          "title": "Launch & Ongoing Maintenance",
+          "description": "We deploy to production, monitor logs and performance, and keep the plugin compatible with future WordPress, PHP, and WooCommerce releases under a maintenance plan."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How much does custom WordPress plugin development cost?",
+          "answer": "Cost depends on scope: the number of features, admin UI complexity, third-party integrations, WooCommerce involvement, and testing depth. A focused single-purpose plugin starts at a modest fixed price; complex extensions with payment or ERP integrations cost more. After a short discovery call we provide a fixed, itemized quote so there are no surprises."
+        },
+        {
+          "question": "How long does it take to build a custom plugin?",
+          "answer": "A small utility plugin typically takes two to three weeks including testing. A WooCommerce extension or a plugin with custom Gutenberg blocks and REST API endpoints usually takes six to ten weeks. We share a milestone plan up front and deliver testable staging builds every one to two weeks."
+        },
+        {
+          "question": "Will the plugin break when WordPress or WooCommerce updates?",
+          "answer": "No — that is precisely what our architecture prevents. We never modify core files or themes; all functionality attaches through official hooks, filters, and APIs. We pin against documented interfaces, test each major WordPress and WooCommerce release on staging, and maintenance clients receive compatibility updates before problems reach production."
+        },
+        {
+          "question": "How do you secure the plugins you build?",
+          "answer": "Every plugin follows WordPress security best practices: nonce verification on all forms and AJAX calls, capability checks on every privileged action, sanitized inputs, escaped outputs, and prepared SQL statements. Before release we run a dedicated security review plus static analysis, and we handle secrets and API keys through safe, non-logged storage."
+        },
+        {
+          "question": "Who owns the plugin code and the license?",
+          "answer": "You do. Upon final payment you receive the full source code, documentation, and repository access, and the intellectual property is assigned to you. Because WordPress itself is GPL, distributed plugins inherit GPL-compatible licensing, but for private business plugins this changes nothing in practice — nobody else receives your code, and there are no recurring license fees to us."
+        },
+        {
+          "question": "Do you provide maintenance after launch?",
+          "answer": "Yes. Our maintenance plans include compatibility testing against every major WordPress, PHP, and WooCommerce release, security patches, error-log monitoring, performance checks, and a bug-fix SLA. You can also book improvement sprints for new features. Maintenance is optional — the documented code can be handed to any competent WordPress developer."
+        },
+        {
+          "question": "Can you take over, fix, or migrate an existing plugin?",
+          "answer": "Absolutely. We start with a code audit that scores security, performance, and standards compliance, then propose either targeted refactoring or a clean rebuild with data migration. Existing settings, custom post types, and database records are migrated with rollback-tested scripts, so switching over causes no data loss and minimal downtime."
+        },
+        {
+          "question": "Why build a custom plugin instead of buying one off the shelf?",
+          "answer": "Buy off-the-shelf when a well-maintained plugin covers ninety percent of your need. Go custom when your workflow is genuinely specific: you avoid stacking five overlapping plugins, eliminate unused code that slows your site, escape recurring license fees, and own software that evolves with your business instead of a vendor's roadmap. We advise honestly on which path fits."
+        }
+      ],
+      "technologies": [
+        { "name": "PHP 8", "icon": "" },
+        { "name": "WordPress Plugin API", "icon": "" },
+        { "name": "Gutenberg / React", "icon": "" },
+        { "name": "WooCommerce", "icon": "" },
+        { "name": "WordPress REST API", "icon": "" },
+        { "name": "MySQL", "icon": "" },
+        { "name": "Composer", "icon": "" },
+        { "name": "PHPUnit", "icon": "" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "WordPress Eklenti Geliştirme",
+    "shortDescription": "WordPress sitenizi temiz bir hook ve filter mimarisi üzerine kurulu özel eklentilerle genişletin — güvenli, güncelleme dostu ve performansı test edilmiş kodla siteniz gereksiz yük ve eklenti çakışması olmadan tam ihtiyacınız olan işlevselliğe kavuşur.",
+    "fullDescription": "Hazır eklentiler gerçek iş süreçlerinize nadiren tam oturur; siteyi şişirir, birbirleriyle çakışır ve sizi başkasının yol haritasına mahkûm eder. PakSoft, özel WordPress eklentilerini temiz bir hook ve filter mimarisi üzerine inşa eder; böylece işlevleriniz çekirdek, tema ve WooCommerce güncellemelerinden yama gerektirmeden sağ çıkar. Resmî WordPress kodlama standartlarına uyar, her girdiyi temizler, her çıktıyı kaçış karakterleriyle güvenceye alır ve her sürümü nonce doğrulaması, yetki kontrolleri ve SQL enjeksiyonu vektörlerini kapsayan özel bir güvenlik incelemesinden geçiririz. Performans ilk günden tasarımın parçasıdır: koşullu varlık yükleme, nesne önbellekleme ve profillenmiş veritabanı sorguları sitenizi yük altında da hızlı tutar. WooCommerce eklentisi, özel Gutenberg blokları, REST API entegrasyonu veya eski eklenti kodunun yeniden yapılandırılması — sonuçta belgelenmiş, test edilmiş ve tamamen size ait, güncelleme dostu bir yazılım teslim alırsınız.",
+    "features": [
+      "Özel Eklenti Mimarisi (Hook & Filter)",
+      "WooCommerce Eklenti Geliştirme",
+      "Özel Gutenberg Blok Geliştirme",
+      "REST API ve Üçüncü Taraf Entegrasyonları",
+      "Eklenti Güvenlik Denetimi ve Sıkılaştırma",
+      "Eski Eklenti Kodunun Yeniden Yapılandırılması",
+      "Performans Profilleme ve Sorgu Optimizasyonu",
+      "Sürekli Bakım ve Güncelleme Uyumluluğu"
+    ],
+    "benefits": [
+      "İş akışlarınıza birebir uyan işlevsellik — taviz yok, gereksiz yük yok",
+      "WordPress, tema ve WooCommerce sürümlerinde bozulmayan güncelleme dostu kod",
+      "Müşteri verilerini ve itibarınızı koruyan sıkılaştırılmış güvenlik",
+      "Yalın, profillenmiş kod ve koşullu varlık yükleme sayesinde daha hızlı sayfalar",
+      "Belgeleriyle birlikte kodun tam mülkiyeti — tedarikçiye bağımlılık yok",
+      "Lisanslı eklenti yığınlarını tek çözümle değiştirerek uzun vadede daha düşük maliyet"
+    ],
+    "metaTitle": "WordPress Eklenti Geliştirme Hizmeti | PakSoft",
+    "metaDescription": "Özel WordPress eklenti geliştirme: WooCommerce eklentileri, Gutenberg blokları, REST API entegrasyonları — güvenli, güncelleme dostu, standartlara uygun kod.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Keşif ve Gereksinim Analizi",
+          "description": "İş süreçlerinizi haritalar, mevcut eklenti yığınınızı ve temanızı denetler, yeni eklenti için işlevsel, teknik ve uyumluluk gereksinimlerini net biçimde tanımlarız."
+        },
+        {
+          "step": 2,
+          "title": "Mimari ve Teknik Tasarım",
+          "description": "Eklentiyi WordPress hook ve filter yapısı etrafında tasarlar; veritabanı tablolarını, REST uç noktalarını ve yönetim ekranlarını planlar, güncelleme güvenliğini nasıl koruyacağını belgeleriz."
+        },
+        {
+          "step": 3,
+          "title": "Geliştirme",
+          "description": "Eklentiyi WordPress kodlama standartlarına uygun kısa iterasyonlarla geliştirir; kod incelemeleri, sürüm kontrolü ve staging ortamında test edebileceğiniz demo sürümlerle ilerleriz."
+        },
+        {
+          "step": 4,
+          "title": "Güvenlik ve Kalite İncelemesi",
+          "description": "Her sürüm özel bir güvenlik incelemesinden geçer: nonce doğrulaması, yetki kontrolleri, girdi temizleme, çıktı kaçışı, hazırlanmış SQL ifadeleri; ayrıca otomatik PHPUnit testleri ve statik analiz uygulanır."
+        },
+        {
+          "step": 5,
+          "title": "Staging Testleri ve Uyumluluk Kontrolleri",
+          "description": "Eklentiyi sitenizin staging kopyasında temanız, PHP sürümünüz, WooCommerce ve diğer aktif eklentilerle birlikte test ederiz; canlıya hiçbir şey test edilmeden çıkmaz."
+        },
+        {
+          "step": 6,
+          "title": "Yayına Alma ve Sürekli Bakım",
+          "description": "Eklentiyi canlıya alır, logları ve performansı izler; bakım planı kapsamında gelecekteki WordPress, PHP ve WooCommerce sürümleriyle uyumluluğunu sürekli koruruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Özel WordPress eklenti geliştirme ne kadara mal olur?",
+          "answer": "Maliyet kapsama bağlıdır: özellik sayısı, yönetim arayüzünün karmaşıklığı, üçüncü taraf entegrasyonları, WooCommerce'in dahil olup olmaması ve test derinliği fiyatı belirler. Tek amaçlı odaklı bir eklenti makul bir sabit fiyattan başlar; ödeme veya ERP entegrasyonlu karmaşık eklentiler daha maliyetlidir. Kısa bir keşif görüşmesinin ardından kalem kalem yazılmış sabit bir teklif sunarız."
+        },
+        {
+          "question": "Özel bir eklentinin geliştirilmesi ne kadar sürer?",
+          "answer": "Küçük bir yardımcı eklenti testler dahil genellikle iki-üç hafta sürer. Bir WooCommerce eklentisi ya da özel Gutenberg blokları ve REST API uç noktaları içeren bir eklenti çoğunlukla altı ila on hafta alır. Baştan bir kilometre taşı planı paylaşır, her bir-iki haftada bir staging ortamında test edilebilir sürümler teslim ederiz."
+        },
+        {
+          "question": "WordPress veya WooCommerce güncellenince eklenti bozulur mu?",
+          "answer": "Hayır — mimarimiz tam olarak bunu önlemek için kurulur. Çekirdek dosyalara veya temalara asla dokunmayız; tüm işlevler resmî hook, filter ve API'ler üzerinden bağlanır. Belgelenmiş arayüzlere göre geliştirir, her büyük WordPress ve WooCommerce sürümünü staging ortamında test ederiz; bakım müşterileri uyumluluk güncellemelerini sorun canlıya yansımadan alır."
+        },
+        {
+          "question": "Geliştirdiğiniz eklentilerin güvenliğini nasıl sağlıyorsunuz?",
+          "answer": "Her eklenti WordPress güvenlik pratiklerine uyar: tüm form ve AJAX çağrılarında nonce doğrulaması, her yetkili işlemde yetki kontrolü, temizlenmiş girdiler, kaçış uygulanmış çıktılar ve hazırlanmış SQL ifadeleri. Yayın öncesi özel bir güvenlik incelemesi ve statik analiz yapar; API anahtarlarını ve gizli bilgileri loglanmayan güvenli depolamayla yönetiriz."
+        },
+        {
+          "question": "Eklenti kodunun ve lisansın sahibi kim olur?",
+          "answer": "Siz olursunuz. Son ödemeyle birlikte tüm kaynak kodu, dokümantasyonu ve depo erişimini teslim alırsınız; fikri mülkiyet size devredilir. WordPress GPL lisanslı olduğundan dağıtılan eklentiler GPL uyumlu lisansa tabidir; ancak işletmenize özel eklentilerde bu pratikte hiçbir şeyi değiştirmez — kodunuz kimseyle paylaşılmaz ve bize ödenen tekrarlayan lisans ücreti yoktur."
+        },
+        {
+          "question": "Yayın sonrası bakım hizmeti veriyor musunuz?",
+          "answer": "Evet. Bakım planlarımız her büyük WordPress, PHP ve WooCommerce sürümüne karşı uyumluluk testlerini, güvenlik yamalarını, hata logu izlemeyi, performans kontrollerini ve hata düzeltme SLA'sını kapsar. Yeni özellikler için geliştirme sprintleri de planlayabilirsiniz. Bakım isteğe bağlıdır; belgelenmiş kod, yetkin herhangi bir WordPress geliştiricisine devredilebilir."
+        },
+        {
+          "question": "Mevcut bir eklentiyi devralabilir, düzeltebilir veya taşıyabilir misiniz?",
+          "answer": "Kesinlikle. Önce güvenlik, performans ve standart uyumunu puanlayan bir kod denetimi yapar; ardından hedefli yeniden yapılandırma ya da veri taşımalı temiz bir yeniden inşa öneririz. Mevcut ayarlar, özel içerik türleri ve veritabanı kayıtları geri alma senaryoları test edilmiş betiklerle taşınır; geçiş veri kaybı olmadan ve minimum kesintiyle tamamlanır."
+        },
+        {
+          "question": "Hazır bir eklenti almak yerine neden özel eklenti geliştirmeliyim?",
+          "answer": "İhtiyacınızın yüzde doksanını iyi bakılan hazır bir eklenti karşılıyorsa onu kullanın. İş akışınız gerçekten kendine özgüyse özel geliştirme mantıklıdır: birbiriyle örtüşen beş eklentiyi üst üste yığmaktan kurtulur, siteyi yavaşlatan kullanılmayan koddan arınır, tekrarlayan lisans ücretlerinden kaçınır ve tedarikçinin değil işinizin yol haritasıyla gelişen bir yazılıma sahip olursunuz. Hangi yolun size uyduğunu dürüstçe söyleriz."
+        }
+      ],
+      "technologies": [
+        { "name": "PHP 8", "icon": "" },
+        { "name": "WordPress Plugin API", "icon": "" },
+        { "name": "Gutenberg / React", "icon": "" },
+        { "name": "WooCommerce", "icon": "" },
+        { "name": "WordPress REST API", "icon": "" },
+        { "name": "MySQL", "icon": "" },
+        { "name": "Composer", "icon": "" },
+        { "name": "PHPUnit", "icon": "" }
+      ]
+    }
+  },
+  "de": {
+    "name": "WordPress-Plugin-Entwicklung",
+    "shortDescription": "Erweitern Sie WordPress mit individuellen Plugins auf sauberer Hooks-und-Filter-Architektur — sicher, update-fest und performancegeprüft, damit Ihre Website exakt die Funktionen erhält, die Ihr Geschäft braucht, ohne Ballast und Plugin-Konflikte.",
+    "fullDescription": "Plugins von der Stange passen selten zu realen Geschäftsprozessen — sie blähen die Website auf, kollidieren miteinander und binden Sie an die Roadmap eines Fremdanbieters. PakSoft entwickelt individuelle WordPress-Plugins auf einer sauberen Hooks-und-Filter-Architektur, sodass Ihre Funktionen Core-, Theme- und WooCommerce-Updates ohne Nachbessern überstehen. Wir arbeiten nach den offiziellen WordPress-Coding-Standards, validieren jede Eingabe, escapen jede Ausgabe und unterziehen jedes Release einem dedizierten Security-Review mit Nonces, Berechtigungsprüfungen und SQL-Injection-Vektoren. Performance ist von Anfang an eingeplant: bedingtes Laden von Assets, Object Caching und profilierte Datenbankabfragen halten Ihre Website auch unter Last schnell. Ob WooCommerce-Erweiterung, individuelle Gutenberg-Blöcke, REST-API-Integration oder das Refactoring von Legacy-Plugin-Code — Sie erhalten dokumentierte, getestete, update-feste Software, die vollständig Ihnen gehört.",
+    "features": [
+      "Individuelle Plugin-Architektur (Hooks & Filter)",
+      "Entwicklung von WooCommerce-Erweiterungen",
+      "Entwicklung individueller Gutenberg-Blöcke",
+      "REST-API- und Drittanbieter-Integrationen",
+      "Plugin-Security-Audits und Härtung",
+      "Refactoring und Modernisierung von Legacy-Plugins",
+      "Performance-Profiling und Query-Optimierung",
+      "Laufende Wartung und Update-Kompatibilität"
+    ],
+    "benefits": [
+      "Funktionen, die exakt zu Ihren Abläufen passen — ohne Kompromisse, ohne Ballast",
+      "Update-fester Code, der WordPress-, Theme- und WooCommerce-Releases übersteht",
+      "Gehärtete Sicherheit, die Kundendaten und Ihren Ruf schützt",
+      "Schnellere Seiten durch schlanken, profilierten Code und bedingtes Asset-Loading",
+      "Volles Eigentum am Code inklusive Dokumentation — kein Vendor-Lock-in",
+      "Geringere Langzeitkosten, weil ein Plugin ganze Lizenz-Stapel ersetzt"
+    ],
+    "metaTitle": "WordPress-Plugin-Entwicklung | PakSoft",
+    "metaDescription": "Individuelle WordPress-Plugin-Entwicklung: WooCommerce-Erweiterungen, Gutenberg-Blöcke, REST-API-Integrationen — sicher, update-fest, nach WP-Standards.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Discovery & Anforderungsanalyse",
+          "description": "Wir erfassen Ihre Geschäftsprozesse, auditieren Ihren bestehenden Plugin-Stack und Ihr Theme und definieren präzise funktionale, technische und Kompatibilitätsanforderungen für das neue Plugin."
+        },
+        {
+          "step": 2,
+          "title": "Architektur & technisches Design",
+          "description": "Wir entwerfen das Plugin rund um WordPress-Hooks und -Filter, planen Datenbanktabellen, REST-Endpunkte und Admin-Oberflächen und dokumentieren, wie es update-fest bleibt."
+        },
+        {
+          "step": 3,
+          "title": "Entwicklung",
+          "description": "Wir entwickeln das Plugin in kurzen Iterationen nach den WordPress-Coding-Standards — mit Code-Reviews, Versionskontrolle und Demo-Builds, die Sie auf einer Staging-Umgebung testen können."
+        },
+        {
+          "step": 4,
+          "title": "Security- & Qualitäts-Review",
+          "description": "Jedes Release durchläuft ein dediziertes Security-Review — Nonces, Berechtigungsprüfungen, Eingabevalidierung, Output-Escaping, Prepared Statements — sowie automatisierte PHPUnit-Tests und statische Analyse."
+        },
+        {
+          "step": 5,
+          "title": "Staging-Tests & Kompatibilitätsprüfung",
+          "description": "Wir testen das Plugin auf einer Staging-Kopie Ihrer Website gegen Ihr Theme, Ihre PHP-Version, WooCommerce und andere aktive Plugins, bevor irgendetwas in Produktion geht."
+        },
+        {
+          "step": 6,
+          "title": "Launch & laufende Wartung",
+          "description": "Wir deployen in die Produktion, überwachen Logs und Performance und halten das Plugin im Rahmen eines Wartungsvertrags mit künftigen WordPress-, PHP- und WooCommerce-Releases kompatibel."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was kostet die Entwicklung eines individuellen WordPress-Plugins?",
+          "answer": "Die Kosten hängen vom Umfang ab: Anzahl der Funktionen, Komplexität der Admin-Oberfläche, Drittanbieter-Integrationen, WooCommerce-Beteiligung und Testtiefe. Ein fokussiertes Einzweck-Plugin beginnt bei einem überschaubaren Festpreis; komplexe Erweiterungen mit Payment- oder ERP-Integrationen kosten mehr. Nach einem kurzen Discovery-Gespräch erhalten Sie ein festes, transparent aufgeschlüsseltes Angebot ohne Überraschungen."
+        },
+        {
+          "question": "Wie lange dauert die Entwicklung eines individuellen Plugins?",
+          "answer": "Ein kleines Utility-Plugin dauert inklusive Tests typischerweise zwei bis drei Wochen. Eine WooCommerce-Erweiterung oder ein Plugin mit individuellen Gutenberg-Blöcken und REST-API-Endpunkten benötigt meist sechs bis zehn Wochen. Wir teilen vorab einen Meilensteinplan und liefern alle ein bis zwei Wochen testbare Staging-Builds."
+        },
+        {
+          "question": "Geht das Plugin bei WordPress- oder WooCommerce-Updates kaputt?",
+          "answer": "Nein — genau das verhindert unsere Architektur. Wir verändern niemals Core-Dateien oder Themes; sämtliche Funktionalität dockt über offizielle Hooks, Filter und APIs an. Wir entwickeln gegen dokumentierte Schnittstellen, testen jedes größere WordPress- und WooCommerce-Release auf Staging, und Wartungskunden erhalten Kompatibilitäts-Updates, bevor Probleme die Produktion erreichen."
+        },
+        {
+          "question": "Wie sichern Sie die Plugins ab, die Sie entwickeln?",
+          "answer": "Jedes Plugin folgt den WordPress-Security-Best-Practices: Nonce-Verifizierung bei allen Formularen und AJAX-Aufrufen, Berechtigungsprüfungen bei jeder privilegierten Aktion, validierte Eingaben, escapte Ausgaben und Prepared Statements. Vor jedem Release führen wir ein dediziertes Security-Review plus statische Analyse durch; Secrets und API-Keys werden sicher und ohne Logging verwaltet."
+        },
+        {
+          "question": "Wem gehören der Plugin-Code und die Lizenz?",
+          "answer": "Ihnen. Mit der Schlusszahlung erhalten Sie den vollständigen Quellcode, die Dokumentation und Repository-Zugriff; die Nutzungsrechte gehen an Sie über. Da WordPress selbst GPL-lizenziert ist, unterliegen verbreitete Plugins GPL-kompatiblen Lizenzen — für private Business-Plugins ändert das praktisch nichts: Ihr Code wird nicht weitergegeben, und es fallen keine wiederkehrenden Lizenzgebühren an uns an."
+        },
+        {
+          "question": "Bieten Sie nach dem Launch Wartung an?",
+          "answer": "Ja. Unsere Wartungsverträge umfassen Kompatibilitätstests bei jedem größeren WordPress-, PHP- und WooCommerce-Release, Sicherheitspatches, Error-Log-Monitoring, Performance-Checks und ein Bugfix-SLA. Für neue Funktionen lassen sich zusätzlich Weiterentwicklungs-Sprints buchen. Die Wartung ist optional — der dokumentierte Code kann an jeden kompetenten WordPress-Entwickler übergeben werden."
+        },
+        {
+          "question": "Können Sie ein bestehendes Plugin übernehmen, reparieren oder migrieren?",
+          "answer": "Selbstverständlich. Wir beginnen mit einem Code-Audit, das Sicherheit, Performance und Standardkonformität bewertet, und schlagen dann gezieltes Refactoring oder einen sauberen Neubau mit Datenmigration vor. Bestehende Einstellungen, Custom Post Types und Datenbankeinträge werden mit rollback-getesteten Skripten migriert — der Umstieg erfolgt ohne Datenverlust und mit minimaler Ausfallzeit."
+        },
+        {
+          "question": "Warum ein individuelles Plugin statt einer fertigen Lösung?",
+          "answer": "Kaufen Sie fertig, wenn ein gut gepflegtes Plugin neunzig Prozent Ihres Bedarfs abdeckt. Entwickeln Sie individuell, wenn Ihr Workflow wirklich spezifisch ist: Sie vermeiden fünf sich überlappende Plugins, entfernen ungenutzten Code, der die Website bremst, sparen wiederkehrende Lizenzgebühren und besitzen Software, die sich mit Ihrem Geschäft weiterentwickelt statt mit der Roadmap eines Anbieters. Wir beraten ehrlich, welcher Weg passt."
+        }
+      ],
+      "technologies": [
+        { "name": "PHP 8", "icon": "" },
+        { "name": "WordPress Plugin API", "icon": "" },
+        { "name": "Gutenberg / React", "icon": "" },
+        { "name": "WooCommerce", "icon": "" },
+        { "name": "WordPress REST API", "icon": "" },
+        { "name": "MySQL", "icon": "" },
+        { "name": "Composer", "icon": "" },
+        { "name": "PHPUnit", "icon": "" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "ورڈپریس پلگ ان ڈیولپمنٹ",
+    "shortDescription": "صاف ہکس اور فلٹرز آرکیٹیکچر پر بنے حسبِ ضرورت پلگ انز کے ذریعے ورڈپریس کو وسعت دیں — محفوظ، اپڈیٹ سے متاثر نہ ہونے والا اور کارکردگی کے لحاظ سے آزمودہ کوڈ، تاکہ آپ کی سائٹ کو بغیر کسی اضافی بوجھ اور پلگ ان تصادم کے بالکل وہی فیچرز ملیں جن کی آپ کے کاروبار کو ضرورت ہے۔",
+    "fullDescription": "بازار میں دستیاب تیار پلگ انز حقیقی کاروباری عمل پر شاذ و نادر ہی پورے اترتے ہیں — وہ سائٹ کو بھاری کر دیتے ہیں، آپس میں ٹکراتے ہیں اور آپ کو کسی اور کے روڈ میپ کا پابند بنا دیتے ہیں۔ پاک سافٹ حسبِ ضرورت ورڈپریس پلگ انز کو صاف ہکس اور فلٹرز آرکیٹیکچر پر تعمیر کرتا ہے، تاکہ کور، تھیم اور WooCommerce کی اپڈیٹس کے بعد بھی آپ کے فیچرز بغیر کسی مرمت کے کام کرتے رہیں۔ ہم سرکاری ورڈپریس کوڈنگ اسٹینڈرڈز پر عمل کرتے ہیں، ہر اِن پٹ کو سینیٹائز اور ہر آؤٹ پٹ کو ایسکیپ کرتے ہیں، اور ہر ریلیز کو nonce تصدیق، اختیارات کی جانچ اور SQL انجیکشن جیسے خطرات پر مشتمل خصوصی سیکیورٹی ریویو سے گزارتے ہیں۔ کارکردگی پہلے دن سے ڈیزائن کا حصہ ہے: مشروط ایسیٹ لوڈنگ، آبجیکٹ کیشنگ اور پروفائل شدہ ڈیٹابیس کوئریز سائٹ کو تیز رکھتی ہیں۔ WooCommerce ایکسٹینشن ہو، حسبِ ضرورت Gutenberg بلاکس، REST API انٹیگریشن یا پرانے پلگ ان کوڈ کی ری فیکٹرنگ — آپ کو دستاویزی، آزمودہ اور مکمل طور پر آپ کی ملکیت والا سافٹ ویئر ملتا ہے۔",
+    "features": [
+      "حسبِ ضرورت پلگ ان آرکیٹیکچر (ہکس اور فلٹرز)",
+      "WooCommerce ایکسٹینشن ڈیولپمنٹ",
+      "حسبِ ضرورت Gutenberg بلاک ڈیولپمنٹ",
+      "REST API اور تھرڈ پارٹی انٹیگریشنز",
+      "پلگ ان سیکیورٹی آڈٹ اور ہارڈننگ",
+      "پرانے پلگ انز کی ری فیکٹرنگ اور جدید کاری",
+      "پرفارمنس پروفائلنگ اور کوئری آپٹیمائزیشن",
+      "مسلسل مینٹیننس اور اپڈیٹ مطابقت"
+    ],
+    "benefits": [
+      "آپ کے ورک فلو پر بالکل پورا اترنے والے فیچرز — نہ سمجھوتہ، نہ فالتو بوجھ",
+      "ایسا کوڈ جو ورڈپریس، تھیم اور WooCommerce کی نئی ریلیزز میں بھی خراب نہیں ہوتا",
+      "مضبوط سیکیورٹی جو صارفین کے ڈیٹا اور آپ کی ساکھ کی حفاظت کرتی ہے",
+      "ہلکے، پروفائل شدہ کوڈ اور مشروط ایسیٹ لوڈنگ سے تیز رفتار صفحات",
+      "دستاویزات سمیت کوڈ کی مکمل ملکیت — کسی وینڈر کی محتاجی نہیں",
+      "لائسنس شدہ پلگ انز کے ڈھیر کی جگہ ایک حل — طویل مدت میں کم لاگت"
+    ],
+    "metaTitle": "ورڈپریس پلگ ان ڈیولپمنٹ سروسز | PakSoft",
+    "metaDescription": "حسبِ ضرورت ورڈپریس پلگ ان ڈیولپمنٹ: WooCommerce ایکسٹینشنز، Gutenberg بلاکس، REST API انٹیگریشنز — محفوظ، اپڈیٹ فرینڈلی اور معیاری کوڈ۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "دریافت اور تقاضوں کا تعین",
+          "description": "ہم آپ کے کاروباری عمل کو سمجھتے ہیں، موجودہ پلگ انز اور تھیم کا جائزہ لیتے ہیں، اور نئے پلگ ان کے لیے فنکشنل، تکنیکی اور مطابقت کے تقاضے واضح طور پر طے کرتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "آرکیٹیکچر اور تکنیکی ڈیزائن",
+          "description": "ہم پلگ ان کو ورڈپریس کے ہکس اور فلٹرز کے گرد ڈیزائن کرتے ہیں، ڈیٹابیس ٹیبلز، REST اینڈ پوائنٹس اور ایڈمن اسکرینز کی منصوبہ بندی کرتے ہیں، اور اپڈیٹ سے محفوظ رہنے کا طریقہ دستاویز کرتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "ڈیولپمنٹ",
+          "description": "ہم ورڈپریس کوڈنگ اسٹینڈرڈز کے مطابق مختصر مراحل میں پلگ ان تیار کرتے ہیں — کوڈ ریویوز، ورژن کنٹرول اور اسٹیجنگ پر آزمائے جانے والے ڈیمو بلڈز کے ساتھ۔"
+        },
+        {
+          "step": 4,
+          "title": "سیکیورٹی اور کوالٹی ریویو",
+          "description": "ہر ریلیز ایک خصوصی سیکیورٹی ریویو سے گزرتی ہے — nonce تصدیق، اختیارات کی جانچ، اِن پٹ سینیٹائزیشن، آؤٹ پٹ ایسکیپنگ، prepared statements — نیز خودکار PHPUnit ٹیسٹ اور اسٹیٹک اینالسس بھی کیے جاتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "اسٹیجنگ ٹیسٹ اور مطابقت کی جانچ",
+          "description": "لائیو سائٹ پر کچھ بھی جانے سے پہلے ہم پلگ ان کو آپ کی سائٹ کی اسٹیجنگ کاپی پر تھیم، PHP ورژن، WooCommerce اور دیگر فعال پلگ انز کے ساتھ آزماتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "لانچ اور مسلسل مینٹیننس",
+          "description": "ہم پلگ ان کو پروڈکشن پر لگاتے ہیں، لاگز اور کارکردگی کی نگرانی کرتے ہیں، اور مینٹیننس پلان کے تحت آئندہ ورڈپریس، PHP اور WooCommerce ریلیزز کے ساتھ مطابقت برقرار رکھتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "حسبِ ضرورت ورڈپریس پلگ ان بنوانے کی لاگت کتنی ہوتی ہے؟",
+          "answer": "لاگت کا انحصار دائرہ کار پر ہے: فیچرز کی تعداد، ایڈمن انٹرفیس کی پیچیدگی، تھرڈ پارٹی انٹیگریشنز، WooCommerce کی شمولیت اور ٹیسٹنگ کی گہرائی قیمت طے کرتی ہے۔ ایک سادہ، ایک مقصد والا پلگ ان مناسب مقررہ قیمت سے شروع ہوتا ہے؛ پیمنٹ یا ERP انٹیگریشن والے پیچیدہ پلگ انز مہنگے ہوتے ہیں۔ مختصر ابتدائی ملاقات کے بعد ہم مکمل تفصیل کے ساتھ مقررہ قیمت کی پیشکش دیتے ہیں۔"
+        },
+        {
+          "question": "حسبِ ضرورت پلگ ان تیار ہونے میں کتنا وقت لگتا ہے؟",
+          "answer": "ایک چھوٹا یوٹیلیٹی پلگ ان ٹیسٹنگ سمیت عموماً دو سے تین ہفتوں میں تیار ہو جاتا ہے۔ WooCommerce ایکسٹینشن یا حسبِ ضرورت Gutenberg بلاکس اور REST API اینڈ پوائنٹس والا پلگ ان عام طور پر چھ سے دس ہفتے لیتا ہے۔ ہم شروع میں ہی سنگِ میل کا منصوبہ دیتے ہیں اور ہر ایک دو ہفتے بعد اسٹیجنگ پر قابلِ آزمائش بلڈ فراہم کرتے ہیں۔"
+        },
+        {
+          "question": "کیا ورڈپریس یا WooCommerce کی اپڈیٹ پر پلگ ان خراب ہو جائے گا؟",
+          "answer": "نہیں — ہمارا آرکیٹیکچر بالکل اسی مسئلے کو روکنے کے لیے بنایا جاتا ہے۔ ہم کبھی کور فائلوں یا تھیمز میں ردوبدل نہیں کرتے؛ ساری فنکشنیلٹی سرکاری ہکس، فلٹرز اور APIs کے ذریعے جڑتی ہے۔ ہم دستاویزی انٹرفیسز کے مطابق کوڈ لکھتے ہیں، ہر بڑی ریلیز کو اسٹیجنگ پر آزماتے ہیں، اور مینٹیننس کلائنٹس کو مسئلہ لائیو سائٹ تک پہنچنے سے پہلے ہی مطابقت کی اپڈیٹس مل جاتی ہیں۔"
+        },
+        {
+          "question": "آپ اپنے بنائے ہوئے پلگ انز کی سیکیورٹی کیسے یقینی بناتے ہیں؟",
+          "answer": "ہر پلگ ان ورڈپریس سیکیورٹی کے بہترین اصولوں پر عمل کرتا ہے: تمام فارمز اور AJAX کالز پر nonce تصدیق، ہر مخصوص اختیار والے عمل پر capability چیک، سینیٹائز شدہ اِن پٹ، ایسکیپ شدہ آؤٹ پٹ اور prepared SQL statements۔ ریلیز سے پہلے خصوصی سیکیورٹی ریویو اور اسٹیٹک اینالسس ہوتا ہے، اور API کیز اور خفیہ معلومات محفوظ، لاگ نہ ہونے والے طریقے سے رکھی جاتی ہیں۔"
+        },
+        {
+          "question": "پلگ ان کے کوڈ اور لائسنس کا مالک کون ہوتا ہے؟",
+          "answer": "آپ۔ آخری ادائیگی کے ساتھ آپ کو مکمل سورس کوڈ، دستاویزات اور ریپوزٹری تک رسائی مل جاتی ہے اور دانشورانہ ملکیت آپ کے نام منتقل ہوتی ہے۔ چونکہ ورڈپریس خود GPL لائسنس پر ہے، تقسیم کیے جانے والے پلگ انز GPL سے ہم آہنگ لائسنس کے تابع ہوتے ہیں؛ مگر نجی کاروباری پلگ انز میں عملاً کچھ نہیں بدلتا — آپ کا کوڈ کسی کو نہیں دیا جاتا اور ہمیں کوئی بار بار کی لائسنس فیس ادا نہیں کرنی پڑتی۔"
+        },
+        {
+          "question": "کیا لانچ کے بعد آپ مینٹیننس فراہم کرتے ہیں؟",
+          "answer": "جی ہاں۔ ہمارے مینٹیننس پلانز میں ہر بڑی ورڈپریس، PHP اور WooCommerce ریلیز کے ساتھ مطابقت کی جانچ، سیکیورٹی پیچز، ایرر لاگ مانیٹرنگ، کارکردگی کے معائنے اور بگ فکس SLA شامل ہیں۔ نئے فیچرز کے لیے ڈیولپمنٹ سپرنٹس بھی بُک کیے جا سکتے ہیں۔ مینٹیننس اختیاری ہے — دستاویزی کوڈ کسی بھی ماہر ورڈپریس ڈیولپر کے حوالے کیا جا سکتا ہے۔"
+        },
+        {
+          "question": "کیا آپ کسی موجودہ پلگ ان کو سنبھال، درست یا منتقل کر سکتے ہیں؟",
+          "answer": "بالکل۔ ہم پہلے ایک کوڈ آڈٹ کرتے ہیں جو سیکیورٹی، کارکردگی اور معیارات کی پابندی کو جانچتا ہے، پھر یا تو ہدف شدہ ری فیکٹرنگ یا ڈیٹا مائیگریشن کے ساتھ نئے سرے سے صاف تعمیر تجویز کرتے ہیں۔ موجودہ سیٹنگز، کسٹم پوسٹ ٹائپس اور ڈیٹابیس ریکارڈز rollback آزمودہ اسکرپٹس سے منتقل ہوتے ہیں، اس لیے منتقلی میں نہ ڈیٹا ضائع ہوتا ہے اور نہ ہی قابلِ ذکر تعطل آتا ہے۔"
+        },
+        {
+          "question": "تیار پلگ ان خریدنے کے بجائے حسبِ ضرورت پلگ ان کیوں بنوائیں؟",
+          "answer": "اگر کوئی اچھی طرح مینٹین شدہ تیار پلگ ان آپ کی نوے فیصد ضرورت پوری کرتا ہے تو وہی خریدیں۔ لیکن اگر آپ کا ورک فلو واقعی منفرد ہے تو حسبِ ضرورت پلگ ان بہتر ہے: آپ پانچ ملتے جلتے پلگ انز کے ڈھیر سے بچتے ہیں، سائٹ کو سست کرنے والے غیر استعمال شدہ کوڈ سے نجات پاتے ہیں، بار بار کی لائسنس فیس سے آزاد ہوتے ہیں، اور ایسا سافٹ ویئر پاتے ہیں جو کسی وینڈر کے نہیں بلکہ آپ کے کاروبار کے ساتھ آگے بڑھتا ہے۔ کون سا راستہ آپ کے لیے موزوں ہے، ہم دیانتداری سے بتاتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        { "name": "PHP 8", "icon": "" },
+        { "name": "WordPress Plugin API", "icon": "" },
+        { "name": "Gutenberg / React", "icon": "" },
+        { "name": "WooCommerce", "icon": "" },
+        { "name": "WordPress REST API", "icon": "" },
+        { "name": "MySQL", "icon": "" },
+        { "name": "Composer", "icon": "" },
+        { "name": "PHPUnit", "icon": "" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تطوير إضافات ووردبريس",
+    "shortDescription": "وسِّع موقع ووردبريس بإضافات مخصصة مبنية على معمارية نظيفة من الـ Hooks والـ Filters — كود آمن ومتوافق مع التحديثات ومُختبَر الأداء، ليحصل موقعك على الوظائف التي يحتاجها عملك بالضبط دون حشوٍ زائد أو تعارض بين الإضافات.",
+    "fullDescription": "الإضافات الجاهزة نادراً ما تناسب سير العمل الحقيقي — فهي تُثقل الموقع وتتعارض فيما بينها وتقيّدك بخارطة طريق طرفٍ آخر. تبني باك سوفت إضافات ووردبريس مخصصة على معمارية نظيفة من الـ Hooks والـ Filters، بحيث تصمد وظائفك أمام تحديثات النواة والقوالب و WooCommerce دون الحاجة إلى ترقيع. نلتزم بمعايير الترميز الرسمية لووردبريس، ونعقّم كل مدخل ونؤمّن كل مخرج، ونُخضع كل إصدار لمراجعة أمنية مخصصة تشمل التحقق من الـ nonce وفحص الصلاحيات وثغرات حقن SQL. الأداء جزء من التصميم منذ اليوم الأول: تحميل شرطي للأصول، وتخزين مؤقت للكائنات، واستعلامات قاعدة بيانات مُحلَّلة الأداء تُبقي موقعك سريعاً تحت الضغط. سواء احتجت امتداد WooCommerce أو بلوكات Gutenberg مخصصة أو تكامل REST API أو إعادة هيكلة كود إضافة قديمة، تحصل على برمجية موثقة ومُختبرة ومتوافقة مع التحديثات وتملكها بالكامل.",
+    "features": [
+      "معمارية إضافات مخصصة (Hooks و Filters)",
+      "تطوير امتدادات WooCommerce",
+      "تطوير بلوكات Gutenberg مخصصة",
+      "تكاملات REST API والأنظمة الخارجية",
+      "تدقيق أمني للإضافات وتحصينها",
+      "إعادة هيكلة الإضافات القديمة وتحديثها",
+      "تحليل الأداء وتحسين الاستعلامات",
+      "صيانة مستمرة وتوافق مع التحديثات"
+    ],
+    "benefits": [
+      "وظائف مفصّلة على سير عملك بدقة — بلا تنازلات ولا حشو زائد",
+      "كود متوافق مع التحديثات يصمد أمام إصدارات ووردبريس والقوالب و WooCommerce",
+      "أمان محصّن يحمي بيانات عملائك وسمعتك",
+      "صفحات أسرع بفضل كود رشيق مُحلَّل الأداء وتحميل شرطي للأصول",
+      "ملكية كاملة للكود مع التوثيق — دون ارتباط قسري بمورّد",
+      "تكاليف أقل على المدى الطويل باستبدال أكوام الإضافات المرخّصة بحل واحد"
+    ],
+    "metaTitle": "خدمات تطوير إضافات ووردبريس | PakSoft",
+    "metaDescription": "تطوير إضافات ووردبريس مخصصة: امتدادات WooCommerce وبلوكات Gutenberg وتكاملات REST API — كود آمن متوافق مع التحديثات ووفق معايير ووردبريس.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "الاستكشاف وتحديد المتطلبات",
+          "description": "نرسم خريطة عمليات عملك، وندقق الإضافات الحالية والقالب المستخدم، ونحدد بدقة المتطلبات الوظيفية والتقنية ومتطلبات التوافق للإضافة الجديدة."
+        },
+        {
+          "step": 2,
+          "title": "المعمارية والتصميم التقني",
+          "description": "نصمم الإضافة حول Hooks و Filters في ووردبريس، ونخطط جداول قاعدة البيانات ونقاط REST وشاشات الإدارة، ونوثّق كيف تبقى متوافقة مع التحديثات."
+        },
+        {
+          "step": 3,
+          "title": "التطوير",
+          "description": "نطوّر الإضافة في دورات قصيرة وفق معايير الترميز الرسمية لووردبريس، مع مراجعات للكود وإدارة إصدارات ونسخ تجريبية يمكنك اختبارها على بيئة staging."
+        },
+        {
+          "step": 4,
+          "title": "المراجعة الأمنية ومراجعة الجودة",
+          "description": "يمر كل إصدار بمراجعة أمنية مخصصة — التحقق من الـ nonce وفحص الصلاحيات وتعقيم المدخلات وتأمين المخرجات واستخدام prepared statements — إضافة إلى اختبارات PHPUnit آلية وتحليل ساكن."
+        },
+        {
+          "step": 5,
+          "title": "اختبارات staging وفحوص التوافق",
+          "description": "نختبر الإضافة على نسخة staging من موقعك مع قالبك وإصدار PHP لديك و WooCommerce وبقية الإضافات النشطة قبل أن يصل أي شيء إلى بيئة الإنتاج."
+        },
+        {
+          "step": 6,
+          "title": "الإطلاق والصيانة المستمرة",
+          "description": "ننشر الإضافة في الإنتاج، ونراقب السجلات والأداء، ونحافظ ضمن خطة الصيانة على توافقها مع إصدارات ووردبريس و PHP و WooCommerce القادمة."
+        }
+      ],
+      "faq": [
+        {
+          "question": "كم تبلغ تكلفة تطوير إضافة ووردبريس مخصصة؟",
+          "answer": "تعتمد التكلفة على النطاق: عدد الميزات، وتعقيد واجهة الإدارة، والتكاملات مع الأنظمة الخارجية، ومدى تدخل WooCommerce، وعمق الاختبارات. تبدأ الإضافة البسيطة أحادية الغرض بسعر ثابت معقول، بينما تكلف الامتدادات المعقدة مع تكاملات الدفع أو أنظمة ERP أكثر. بعد جلسة استكشاف قصيرة نقدم عرض سعر ثابتاً ومفصّلاً بنداً بنداً دون مفاجآت."
+        },
+        {
+          "question": "كم يستغرق بناء إضافة مخصصة؟",
+          "answer": "تستغرق الإضافة الصغيرة عادةً أسبوعين إلى ثلاثة أسابيع شاملة الاختبارات. أما امتداد WooCommerce أو إضافة تتضمن بلوكات Gutenberg مخصصة ونقاط REST API فتحتاج غالباً من ستة إلى عشرة أسابيع. نشارككم خطة مراحل واضحة منذ البداية ونسلّم نسخاً قابلة للاختبار على staging كل أسبوع أو أسبوعين."
+        },
+        {
+          "question": "هل تتعطل الإضافة عند تحديث ووردبريس أو WooCommerce؟",
+          "answer": "لا — هذا بالضبط ما تمنعه معماريتنا. لا نعدّل ملفات النواة أو القوالب أبداً؛ فكل الوظائف ترتبط عبر الـ Hooks والـ Filters وواجهات الـ API الرسمية. نبني وفق الواجهات الموثقة، ونختبر كل إصدار رئيسي من ووردبريس و WooCommerce على staging، ويحصل عملاء الصيانة على تحديثات التوافق قبل أن تصل أي مشكلة إلى الإنتاج."
+        },
+        {
+          "question": "كيف تؤمّنون الإضافات التي تطورونها؟",
+          "answer": "تلتزم كل إضافة بأفضل ممارسات أمان ووردبريس: التحقق من الـ nonce في جميع النماذج ونداءات AJAX، وفحص الصلاحيات عند كل إجراء حساس، وتعقيم المدخلات، وتأمين المخرجات، واستخدام prepared statements في استعلامات SQL. قبل كل إصدار نجري مراجعة أمنية مخصصة وتحليلاً ساكناً، وندير المفاتيح والأسرار عبر تخزين آمن لا يُسجَّل في السجلات."
+        },
+        {
+          "question": "من يملك كود الإضافة والترخيص؟",
+          "answer": "أنت. مع الدفعة الأخيرة تستلم كامل الكود المصدري والتوثيق وصلاحية الوصول إلى المستودع، وتنتقل الملكية الفكرية إليك. ولأن ووردبريس نفسه مرخّص بـ GPL، تخضع الإضافات الموزَّعة لتراخيص متوافقة مع GPL؛ لكن هذا لا يغيّر شيئاً عملياً في الإضافات الخاصة بعملك — فكودك لا يُسلَّم لأحد، ولا توجد رسوم ترخيص متكررة تدفعها لنا."
+        },
+        {
+          "question": "هل تقدمون صيانة بعد الإطلاق؟",
+          "answer": "نعم. تشمل خطط الصيانة لدينا اختبارات التوافق مع كل إصدار رئيسي من ووردبريس و PHP و WooCommerce، والتصحيحات الأمنية، ومراقبة سجلات الأخطاء، وفحوص الأداء، واتفاقية مستوى خدمة لإصلاح الأعطال. ويمكنك أيضاً حجز دورات تطوير لميزات جديدة. الصيانة اختيارية — فالكود الموثق يمكن تسليمه لأي مطوّر ووردبريس كفء."
+        },
+        {
+          "question": "هل يمكنكم تولي إضافة قائمة أو إصلاحها أو ترحيلها؟",
+          "answer": "بالتأكيد. نبدأ بتدقيق للكود يقيّم الأمان والأداء والالتزام بالمعايير، ثم نقترح إما إعادة هيكلة موجهة أو إعادة بناء نظيفة مع ترحيل البيانات. تُنقل الإعدادات الحالية وأنواع المحتوى المخصصة وسجلات قاعدة البيانات عبر سكربتات مُختبرة مع إمكانية التراجع، فيتم الانتقال دون فقدان بيانات وبأقل توقف ممكن."
+        },
+        {
+          "question": "لماذا أطوّر إضافة مخصصة بدلاً من شراء إضافة جاهزة؟",
+          "answer": "اشترِ الجاهز إذا كانت إضافة جيدة الصيانة تغطي تسعين بالمئة من حاجتك. أما إذا كان سير عملك خاصاً فعلاً فالتخصيص هو الأجدى: تتجنب تكديس خمس إضافات متداخلة، وتتخلص من كود غير مستخدم يبطئ موقعك، وتوفر رسوم التراخيص المتكررة، وتملك برمجية تتطور مع عملك لا مع خارطة طريق مورّد. ونحن ننصحك بصدق بالمسار الأنسب لحالتك."
+        }
+      ],
+      "technologies": [
+        { "name": "PHP 8", "icon": "" },
+        { "name": "WordPress Plugin API", "icon": "" },
+        { "name": "Gutenberg / React", "icon": "" },
+        { "name": "WooCommerce", "icon": "" },
+        { "name": "WordPress REST API", "icon": "" },
+        { "name": "MySQL", "icon": "" },
+        { "name": "Composer", "icon": "" },
+        { "name": "PHPUnit", "icon": "" }
+      ]
+    }
+  }
+}

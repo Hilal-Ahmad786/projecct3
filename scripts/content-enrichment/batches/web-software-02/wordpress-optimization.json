@@ -1,0 +1,518 @@
+{
+  "slug": "wordpress-optimization",
+  "en": {
+    "name": "WordPress Optimization",
+    "shortDescription": "Make your WordPress site load in under two seconds with expert Core Web Vitals tuning, layered caching, and database cleanup — so visitors stay longer, rankings climb, and conversions grow.",
+    "fullDescription": "A slow WordPress site quietly costs you traffic, rankings, and revenue. PakSoft's optimization service starts with a full performance audit: we measure Core Web Vitals in the field and in the lab, pinpoint what drags LCP past 2.5 seconds, and document a baseline you can hold us to. Then we act — layered caching (page, object, and browser cache plus CDN edge delivery), database cleanup that removes years of revision and transient bloat, next-gen WebP image conversion, and a plugin audit that eliminates redundant or query-heavy plugins. We tune PHP-FPM and hosting configuration, harden security, and set up continuous monitoring so regressions are caught early. Every engagement ends with a before/after report showing exactly how much faster your site became and what that means for SEO and conversions.",
+    "features": [
+      "Core Web Vitals audit and LCP/CLS/INP tuning",
+      "Full-page, object, and browser caching setup",
+      "CDN configuration and global edge delivery",
+      "Database cleanup and slow-query optimization",
+      "WebP/AVIF image compression with lazy loading",
+      "Plugin audit and bloat removal",
+      "Hosting, PHP-FPM, and MySQL server tuning",
+      "Security hardening and uptime monitoring"
+    ],
+    "benefits": [
+      "Pages that load in under two seconds on real devices",
+      "Higher Google rankings by passing Core Web Vitals",
+      "Lower bounce rates and measurably better conversions",
+      "Reduced hosting costs through leaner resource usage",
+      "A hardened site that resists attacks and downtime",
+      "Transparent before/after metrics for every change we make"
+    ],
+    "metaTitle": "WordPress Optimization & Speed Services | PakSoft",
+    "metaDescription": "Slow WordPress site? PakSoft delivers Core Web Vitals tuning, caching, CDN, database cleanup and image optimization with measurable before/after results.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Performance Audit & Baseline",
+          "description": "We profile your site with Lighthouse, real-user Core Web Vitals data, and server-side monitoring to pinpoint every bottleneck and document a measurable baseline."
+        },
+        {
+          "step": 2,
+          "title": "Optimization Roadmap",
+          "description": "You receive a prioritized action plan ranking each fix by expected speed gain, risk, and effort, so we tackle the highest-impact improvements first."
+        },
+        {
+          "step": 3,
+          "title": "Caching & CDN Setup",
+          "description": "We implement page, object, and browser caching, configure a CDN for global edge delivery, and tune cache invalidation so your content always stays fresh."
+        },
+        {
+          "step": 4,
+          "title": "Database & Media Optimization",
+          "description": "We remove years of revision and transient bloat, optimize slow queries and tables, convert images to WebP, and enable lazy loading across the entire site."
+        },
+        {
+          "step": 5,
+          "title": "Plugin Audit & Server Tuning",
+          "description": "We identify redundant or resource-hungry plugins, replace or remove them safely, and tune PHP-FPM, MySQL, and hosting settings for consistently fast responses."
+        },
+        {
+          "step": 6,
+          "title": "Verification & Monitoring",
+          "description": "We re-test against the original baseline, deliver a before/after report, harden security, and set up continuous monitoring with alerts to catch any regression early."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How much faster will my WordPress site actually get?",
+          "answer": "Most sites we optimize see load times drop by 50–80%, with LCP falling from 4–8 seconds to under 2.5 seconds. The exact gain depends on your starting point, theme, and hosting, which is why we always measure a baseline first and report the improvement in hard numbers."
+        },
+        {
+          "question": "How much does WordPress optimization cost?",
+          "answer": "A one-time optimization project typically costs between $500 and $3,000 depending on site size, plugin complexity, and hosting constraints. We quote a fixed price after a free initial audit, so you know the full cost before any work begins — no open-ended hourly billing."
+        },
+        {
+          "question": "How long does the optimization process take?",
+          "answer": "A standard optimization takes one to two weeks from audit to final report. Simple brochure sites can be done in a few days, while large WooCommerce stores with heavy databases and many plugins may need three weeks. We work on a staging copy, so your live site stays online throughout."
+        },
+        {
+          "question": "Will I have to change my theme or plugins?",
+          "answer": "Usually not. Most performance problems are fixed through caching, image optimization, database cleanup, and configuration — not redesign. If a specific plugin or theme feature is a proven bottleneck, we show you the measured impact and propose a lighter alternative, but the decision always stays with you."
+        },
+        {
+          "question": "Do I need to switch hosting providers?",
+          "answer": "Only if your current hosting is genuinely the limiting factor. We first squeeze the maximum out of your existing environment through PHP-FPM, MySQL, and cache tuning. If server response times (TTFB) remain poor, we recommend proven WordPress hosts, help you compare costs, and handle the migration for you."
+        },
+        {
+          "question": "Does site speed really affect SEO rankings?",
+          "answer": "Yes — Core Web Vitals are a confirmed Google ranking signal, and slow pages also hurt SEO indirectly through higher bounce rates and reduced crawl efficiency. Clients who pass Core Web Vitals after our optimization typically see improved rankings and more organic traffic within one to three months."
+        },
+        {
+          "question": "Do I need ongoing maintenance after the optimization?",
+          "answer": "The initial gains are permanent, but WordPress sites drift: new plugins, content growth, and updates gradually reintroduce bloat. We offer optional monthly care plans with performance monitoring, database maintenance, security updates, and quarterly re-audits so your site stays fast — or we hand you a checklist to manage it yourself."
+        },
+        {
+          "question": "Do you guarantee results, and how do you measure them?",
+          "answer": "We commit to concrete, measurable targets agreed before the project starts — typically passing Core Web Vitals and a defined LCP threshold. Results are verified with Lighthouse, Google's field data (CrUX), and real-user monitoring. If we miss the agreed targets, we keep working at no extra charge until they are met."
+        }
+      ],
+      "technologies": [
+        { "name": "WP Rocket", "icon": "" },
+        { "name": "Cloudflare", "icon": "" },
+        { "name": "Redis", "icon": "" },
+        { "name": "MySQL", "icon": "" },
+        { "name": "PHP-FPM", "icon": "" },
+        { "name": "ImageMagick / WebP", "icon": "" },
+        { "name": "Google Lighthouse", "icon": "" },
+        { "name": "New Relic", "icon": "" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "WordPress Optimizasyonu",
+    "shortDescription": "WordPress sitenizi Core Web Vitals iyileştirmeleri, katmanlı önbellekleme ve veritabanı temizliğiyle iki saniyenin altında açılır hale getiriyoruz — ziyaretçiler sitede daha uzun kalır, sıralamalar yükselir ve dönüşümler artar.",
+    "fullDescription": "Yavaş bir WordPress sitesi size sessizce trafik, sıralama ve ciro kaybettirir. PakSoft'un optimizasyon hizmeti kapsamlı bir performans denetimiyle başlar: Core Web Vitals değerlerini hem sahada hem laboratuvar ortamında ölçer, LCP'yi 2,5 saniyenin üzerine çıkaran nedenleri tespit eder ve bizden hesap sorabileceğiniz bir başlangıç ölçümü belgeleriz. Ardından harekete geçeriz — katmanlı önbellekleme (sayfa, nesne ve tarayıcı önbelleği artı CDN uç dağıtımı), yılların revizyon ve transient şişkinliğini temizleyen veritabanı bakımı, yeni nesil WebP görsel dönüşümü ve gereksiz ya da sorgu yükü ağır eklentileri eleyen bir eklenti denetimi. PHP-FPM ve hosting yapılandırmasını ince ayarlar, güvenliği sıkılaştırır ve gerilemeleri erken yakalayan sürekli izleme kurarız. Her proje, sitenizin tam olarak ne kadar hızlandığını ve bunun SEO ile dönüşümler için ne anlama geldiğini gösteren bir öncesi/sonrası raporuyla tamamlanır.",
+    "features": [
+      "Core Web Vitals denetimi ve LCP/CLS/INP iyileştirmesi",
+      "Tam sayfa, nesne ve tarayıcı önbellekleme kurulumu",
+      "CDN yapılandırması ve küresel uç dağıtım",
+      "Veritabanı temizliği ve yavaş sorgu optimizasyonu",
+      "Lazy loading ile WebP/AVIF görsel sıkıştırma",
+      "Eklenti denetimi ve gereksiz yük temizliği",
+      "Hosting, PHP-FPM ve MySQL sunucu ince ayarı",
+      "Güvenlik sıkılaştırma ve kesintisizlik izleme"
+    ],
+    "benefits": [
+      "Gerçek cihazlarda iki saniyenin altında açılan sayfalar",
+      "Core Web Vitals'ı geçerek daha yüksek Google sıralamaları",
+      "Daha düşük hemen çıkma oranı ve ölçülebilir dönüşüm artışı",
+      "Daha verimli kaynak kullanımıyla azalan hosting maliyetleri",
+      "Saldırılara ve kesintilere dirençli, sıkılaştırılmış bir site",
+      "Yaptığımız her değişiklik için şeffaf öncesi/sonrası metrikleri"
+    ],
+    "metaTitle": "WordPress Hız ve Performans Optimizasyonu | PakSoft",
+    "metaDescription": "WordPress siteniz mi yavaş? PakSoft; Core Web Vitals, önbellekleme, CDN, veritabanı temizliği ve görsel optimizasyonunu ölçülebilir sonuçlarla sunar.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Performans Denetimi ve Başlangıç Ölçümü",
+          "description": "Sitenizi Lighthouse, gerçek kullanıcı Core Web Vitals verileri ve sunucu tarafı izlemeyle analiz eder, her darboğazı tespit eder ve ölçülebilir bir başlangıç noktası belgeleriz."
+        },
+        {
+          "step": 2,
+          "title": "Optimizasyon Yol Haritası",
+          "description": "Her iyileştirmeyi beklenen hız kazancı, risk ve efora göre sıralayan öncelikli bir eylem planı alırsınız; böylece en yüksek etkili işlerden başlarız."
+        },
+        {
+          "step": 3,
+          "title": "Önbellekleme ve CDN Kurulumu",
+          "description": "Sayfa, nesne ve tarayıcı önbelleklemesini uygular, küresel uç dağıtım için CDN yapılandırır ve içeriğiniz her zaman güncel kalsın diye önbellek geçersiz kılmayı ince ayarlarız."
+        },
+        {
+          "step": 4,
+          "title": "Veritabanı ve Medya Optimizasyonu",
+          "description": "Yılların revizyon ve transient şişkinliğini temizler, yavaş sorguları ve tabloları optimize eder, görselleri WebP'ye dönüştürür ve tüm sitede lazy loading'i etkinleştiririz."
+        },
+        {
+          "step": 5,
+          "title": "Eklenti Denetimi ve Sunucu İnce Ayarı",
+          "description": "Gereksiz veya kaynak tüketen eklentileri belirler, güvenle değiştirir ya da kaldırır; tutarlı hızlı yanıtlar için PHP-FPM, MySQL ve hosting ayarlarını ince ayarlarız."
+        },
+        {
+          "step": 6,
+          "title": "Doğrulama ve İzleme",
+          "description": "Başlangıç ölçümüne göre yeniden test eder, öncesi/sonrası raporu teslim eder, güvenliği sıkılaştırır ve her gerilemeyi erken yakalayan uyarılı sürekli izleme kurarız."
+        }
+      ],
+      "faq": [
+        {
+          "question": "WordPress sitem gerçekte ne kadar hızlanır?",
+          "answer": "Optimize ettiğimiz sitelerin çoğunda yüklenme süreleri %50–80 oranında düşer; LCP genellikle 4–8 saniyeden 2,5 saniyenin altına iner. Kesin kazanç başlangıç durumunuza, temanıza ve hostinginize bağlıdır; bu yüzden önce bir başlangıç ölçümü yapar ve iyileşmeyi somut rakamlarla raporlarız."
+        },
+        {
+          "question": "WordPress optimizasyonunun maliyeti nedir?",
+          "answer": "Tek seferlik bir optimizasyon projesi; site büyüklüğüne, eklenti karmaşıklığına ve hosting kısıtlarına göre genellikle 15.000 ile 100.000 TL arasında değişir. Ücretsiz ön denetimden sonra sabit bir fiyat teklifi veririz; böylece iş başlamadan toplam maliyeti bilirsiniz, ucu açık saatlik faturalama yoktur."
+        },
+        {
+          "question": "Optimizasyon süreci ne kadar sürer?",
+          "answer": "Standart bir optimizasyon, denetimden nihai rapora kadar bir ila iki hafta sürer. Basit tanıtım siteleri birkaç günde tamamlanabilirken; ağır veritabanlı ve çok eklentili büyük WooCommerce mağazaları üç hafta gerektirebilir. Staging kopyası üzerinde çalıştığımız için canlı siteniz süreç boyunca yayında kalır."
+        },
+        {
+          "question": "Temamı veya eklentilerimi değiştirmem gerekir mi?",
+          "answer": "Genellikle hayır. Performans sorunlarının çoğu yeniden tasarımla değil; önbellekleme, görsel optimizasyonu, veritabanı temizliği ve yapılandırmayla çözülür. Belirli bir eklenti veya tema özelliği kanıtlanmış bir darboğazsa, ölçülen etkisini size gösterir ve daha hafif bir alternatif öneririz; ancak karar her zaman sizindir."
+        },
+        {
+          "question": "Hosting sağlayıcımı değiştirmem gerekir mi?",
+          "answer": "Yalnızca mevcut hostinginiz gerçekten sınırlayıcı faktörse. Önce PHP-FPM, MySQL ve önbellek ince ayarlarıyla mevcut ortamınızdan alınabilecek en yüksek performansı çıkarırız. Sunucu yanıt süreleri (TTFB) yine de kötü kalırsa, kendini kanıtlamış WordPress hostinglerini önerir, maliyet karşılaştırmasında yardımcı olur ve taşımayı sizin için üstleniriz."
+        },
+        {
+          "question": "Site hızı SEO sıralamalarını gerçekten etkiler mi?",
+          "answer": "Evet — Core Web Vitals, Google'ın doğrulanmış bir sıralama sinyalidir; yavaş sayfalar ayrıca yüksek hemen çıkma oranı ve düşük tarama verimliliği üzerinden SEO'ya dolaylı zarar verir. Optimizasyonumuzdan sonra Core Web Vitals'ı geçen müşteriler, genellikle bir ila üç ay içinde daha iyi sıralamalar ve daha fazla organik trafik görür."
+        },
+        {
+          "question": "Optimizasyondan sonra sürekli bakıma ihtiyacım olur mu?",
+          "answer": "İlk kazanımlar kalıcıdır; ancak WordPress siteleri zamanla bozulur: yeni eklentiler, büyüyen içerik ve güncellemeler şişkinliği yavaş yavaş geri getirir. Performans izleme, veritabanı bakımı, güvenlik güncellemeleri ve üç aylık yeniden denetimler içeren isteğe bağlı aylık bakım planları sunarız — dilerseniz kendiniz yönetmeniz için bir kontrol listesi de teslim ederiz."
+        },
+        {
+          "question": "Sonuç garantisi veriyor musunuz ve nasıl ölçüyorsunuz?",
+          "answer": "Proje başlamadan önce üzerinde anlaşılan somut ve ölçülebilir hedeflere bağlı kalırız — genellikle Core Web Vitals'ın geçilmesi ve tanımlı bir LCP eşiği. Sonuçlar Lighthouse, Google saha verileri (CrUX) ve gerçek kullanıcı izlemesiyle doğrulanır. Anlaşılan hedeflere ulaşamazsak, ek ücret almadan hedefler karşılanana kadar çalışmaya devam ederiz."
+        }
+      ],
+      "technologies": [
+        { "name": "WP Rocket", "icon": "" },
+        { "name": "Cloudflare", "icon": "" },
+        { "name": "Redis", "icon": "" },
+        { "name": "MySQL", "icon": "" },
+        { "name": "PHP-FPM", "icon": "" },
+        { "name": "ImageMagick / WebP", "icon": "" },
+        { "name": "Google Lighthouse", "icon": "" },
+        { "name": "New Relic", "icon": "" }
+      ]
+    }
+  },
+  "de": {
+    "name": "WordPress-Optimierung",
+    "shortDescription": "Wir bringen Ihre WordPress-Website mit gezieltem Core-Web-Vitals-Tuning, mehrschichtigem Caching und Datenbankbereinigung auf Ladezeiten unter zwei Sekunden — damit Besucher länger bleiben, Rankings steigen und Conversions wachsen.",
+    "fullDescription": "Eine langsame WordPress-Website kostet Sie still und leise Traffic, Rankings und Umsatz. PakSofts Optimierungsservice beginnt mit einem vollständigen Performance-Audit: Wir messen die Core Web Vitals im Feld und im Labor, ermitteln, was den LCP über 2,5 Sekunden treibt, und dokumentieren eine Baseline, an der Sie uns messen können. Dann handeln wir — mehrschichtiges Caching (Page-, Object- und Browser-Cache plus CDN-Edge-Auslieferung), eine Datenbankbereinigung, die jahrelangen Revisions- und Transient-Ballast entfernt, moderne WebP-Bildkonvertierung und ein Plugin-Audit, das überflüssige oder abfragelastige Plugins eliminiert. Wir optimieren PHP-FPM und Hosting-Konfiguration, härten die Sicherheit und richten kontinuierliches Monitoring ein, damit Regressionen früh erkannt werden. Jedes Projekt endet mit einem Vorher-nachher-Bericht, der genau zeigt, wie viel schneller Ihre Website geworden ist und was das für SEO und Conversions bedeutet.",
+    "features": [
+      "Core-Web-Vitals-Audit und LCP/CLS/INP-Tuning",
+      "Einrichtung von Page-, Object- und Browser-Caching",
+      "CDN-Konfiguration und globale Edge-Auslieferung",
+      "Datenbankbereinigung und Optimierung langsamer Queries",
+      "WebP/AVIF-Bildkomprimierung mit Lazy Loading",
+      "Plugin-Audit und Entfernung von Ballast",
+      "Feintuning von Hosting, PHP-FPM und MySQL",
+      "Sicherheitshärtung und Uptime-Monitoring"
+    ],
+    "benefits": [
+      "Seiten, die auf echten Geräten in unter zwei Sekunden laden",
+      "Bessere Google-Rankings durch bestandene Core Web Vitals",
+      "Niedrigere Absprungraten und messbar mehr Conversions",
+      "Geringere Hosting-Kosten durch effizientere Ressourcennutzung",
+      "Eine gehärtete Website, die Angriffen und Ausfällen standhält",
+      "Transparente Vorher-nachher-Kennzahlen für jede Änderung"
+    ],
+    "metaTitle": "WordPress-Optimierung & Ladezeit-Tuning | PakSoft",
+    "metaDescription": "Langsame WordPress-Seite? PakSoft liefert Core-Web-Vitals-Tuning, Caching, CDN, Datenbankbereinigung und Bildoptimierung mit messbaren Ergebnissen.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Performance-Audit & Baseline",
+          "description": "Wir analysieren Ihre Website mit Lighthouse, echten Core-Web-Vitals-Nutzerdaten und serverseitigem Monitoring, identifizieren jeden Engpass und dokumentieren eine messbare Ausgangsbasis."
+        },
+        {
+          "step": 2,
+          "title": "Optimierungs-Roadmap",
+          "description": "Sie erhalten einen priorisierten Maßnahmenplan, der jede Verbesserung nach erwartetem Geschwindigkeitsgewinn, Risiko und Aufwand einstuft — die wirkungsvollsten Schritte kommen zuerst."
+        },
+        {
+          "step": 3,
+          "title": "Caching- & CDN-Einrichtung",
+          "description": "Wir implementieren Page-, Object- und Browser-Caching, konfigurieren ein CDN für globale Edge-Auslieferung und stimmen die Cache-Invalidierung so ab, dass Ihre Inhalte stets aktuell bleiben."
+        },
+        {
+          "step": 4,
+          "title": "Datenbank- & Medienoptimierung",
+          "description": "Wir entfernen jahrelangen Revisions- und Transient-Ballast, optimieren langsame Queries und Tabellen, konvertieren Bilder zu WebP und aktivieren Lazy Loading auf der gesamten Website."
+        },
+        {
+          "step": 5,
+          "title": "Plugin-Audit & Server-Tuning",
+          "description": "Wir identifizieren überflüssige oder ressourcenhungrige Plugins, ersetzen oder entfernen sie sicher und optimieren PHP-FPM, MySQL und Hosting-Einstellungen für konstant schnelle Antwortzeiten."
+        },
+        {
+          "step": 6,
+          "title": "Verifizierung & Monitoring",
+          "description": "Wir testen erneut gegen die ursprüngliche Baseline, liefern einen Vorher-nachher-Bericht, härten die Sicherheit und richten kontinuierliches Monitoring mit Alerts ein, um jede Regression früh zu erkennen."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie viel schneller wird meine WordPress-Website tatsächlich?",
+          "answer": "Bei den meisten von uns optimierten Websites sinken die Ladezeiten um 50–80 %, der LCP fällt von 4–8 Sekunden auf unter 2,5 Sekunden. Der genaue Gewinn hängt von Ausgangslage, Theme und Hosting ab — deshalb messen wir immer zuerst eine Baseline und weisen die Verbesserung in harten Zahlen nach."
+        },
+        {
+          "question": "Was kostet eine WordPress-Optimierung?",
+          "answer": "Ein einmaliges Optimierungsprojekt kostet je nach Größe der Website, Plugin-Komplexität und Hosting-Rahmenbedingungen typischerweise zwischen 500 und 3.000 Euro. Nach einem kostenlosen Erst-Audit erhalten Sie ein Festpreisangebot — Sie kennen also die vollen Kosten, bevor die Arbeit beginnt, ohne offene Stundenabrechnung."
+        },
+        {
+          "question": "Wie lange dauert der Optimierungsprozess?",
+          "answer": "Eine Standard-Optimierung dauert vom Audit bis zum Abschlussbericht ein bis zwei Wochen. Einfache Unternehmensseiten sind in wenigen Tagen fertig, große WooCommerce-Shops mit schweren Datenbanken und vielen Plugins können drei Wochen benötigen. Wir arbeiten auf einer Staging-Kopie, Ihre Live-Website bleibt durchgehend erreichbar."
+        },
+        {
+          "question": "Muss ich mein Theme oder meine Plugins wechseln?",
+          "answer": "In der Regel nicht. Die meisten Performance-Probleme lösen wir über Caching, Bildoptimierung, Datenbankbereinigung und Konfiguration — nicht über ein Redesign. Ist ein bestimmtes Plugin oder Theme-Feature nachweislich ein Engpass, zeigen wir Ihnen die gemessene Auswirkung und schlagen eine leichtere Alternative vor; die Entscheidung liegt aber immer bei Ihnen."
+        },
+        {
+          "question": "Muss ich meinen Hosting-Anbieter wechseln?",
+          "answer": "Nur wenn Ihr aktuelles Hosting tatsächlich der limitierende Faktor ist. Zuerst holen wir mit PHP-FPM-, MySQL- und Cache-Tuning das Maximum aus Ihrer bestehenden Umgebung heraus. Bleiben die Server-Antwortzeiten (TTFB) trotzdem schlecht, empfehlen wir bewährte WordPress-Hoster, vergleichen mit Ihnen die Kosten und übernehmen die Migration."
+        },
+        {
+          "question": "Beeinflusst die Ladegeschwindigkeit wirklich die SEO-Rankings?",
+          "answer": "Ja — Core Web Vitals sind ein bestätigtes Google-Rankingsignal, und langsame Seiten schaden der SEO zusätzlich indirekt durch höhere Absprungraten und geringere Crawl-Effizienz. Kunden, die nach unserer Optimierung die Core Web Vitals bestehen, sehen typischerweise innerhalb von ein bis drei Monaten bessere Rankings und mehr organischen Traffic."
+        },
+        {
+          "question": "Brauche ich nach der Optimierung laufende Wartung?",
+          "answer": "Die anfänglichen Gewinne sind dauerhaft, aber WordPress-Websites verändern sich: neue Plugins, wachsende Inhalte und Updates bringen den Ballast schleichend zurück. Wir bieten optionale monatliche Care-Pläne mit Performance-Monitoring, Datenbankpflege, Sicherheitsupdates und vierteljährlichen Re-Audits — oder übergeben Ihnen eine Checkliste, mit der Sie es selbst verwalten."
+        },
+        {
+          "question": "Garantieren Sie Ergebnisse, und wie messen Sie diese?",
+          "answer": "Wir verpflichten uns auf konkrete, messbare Ziele, die vor Projektbeginn vereinbart werden — typischerweise das Bestehen der Core Web Vitals und ein definierter LCP-Schwellenwert. Die Ergebnisse werden mit Lighthouse, Googles Felddaten (CrUX) und Real-User-Monitoring verifiziert. Verfehlen wir die vereinbarten Ziele, arbeiten wir ohne Mehrkosten weiter, bis sie erreicht sind."
+        }
+      ],
+      "technologies": [
+        { "name": "WP Rocket", "icon": "" },
+        { "name": "Cloudflare", "icon": "" },
+        { "name": "Redis", "icon": "" },
+        { "name": "MySQL", "icon": "" },
+        { "name": "PHP-FPM", "icon": "" },
+        { "name": "ImageMagick / WebP", "icon": "" },
+        { "name": "Google Lighthouse", "icon": "" },
+        { "name": "New Relic", "icon": "" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "ورڈپریس آپٹیمائزیشن",
+    "shortDescription": "ماہرانہ Core Web Vitals ٹیوننگ، تہہ دار کیشنگ اور ڈیٹابیس کی صفائی کے ذریعے ہم آپ کی ورڈپریس ویب سائٹ کو دو سیکنڈ سے کم میں لوڈ ہونے والا بناتے ہیں — تاکہ وزیٹرز زیادہ دیر رکیں، رینکنگ بہتر ہو اور کنورژنز بڑھیں۔",
+    "fullDescription": "سست ورڈپریس سائٹ خاموشی سے آپ کا ٹریفک، رینکنگ اور آمدنی کھا جاتی ہے۔ PakSoft کی آپٹیمائزیشن سروس ایک مکمل پرفارمنس آڈٹ سے شروع ہوتی ہے: ہم Core Web Vitals کو فیلڈ اور لیب دونوں میں ماپتے ہیں، یہ معلوم کرتے ہیں کہ LCP کو 2.5 سیکنڈ سے آگے کون سی چیز دھکیل رہی ہے، اور ایک بنیادی پیمائش (بیس لائن) دستاویز کرتے ہیں جس پر آپ ہم سے جواب طلبی کر سکیں۔ پھر ہم عمل کرتے ہیں — تہہ دار کیشنگ (پیج، آبجیکٹ اور براؤزر کیش مع CDN ایج ڈیلیوری)، برسوں کے ریویژن اور ٹرانزیئنٹ بوجھ کو ختم کرنے والی ڈیٹابیس صفائی، جدید WebP امیج کنورژن، اور ایک پلگ اِن آڈٹ جو فالتو یا بھاری کوئری والے پلگ اِنز کو نکال دیتا ہے۔ ہم PHP-FPM اور ہوسٹنگ کنفیگریشن کو ٹیون کرتے ہیں، سکیورٹی مضبوط بناتے ہیں اور مسلسل مانیٹرنگ قائم کرتے ہیں۔ ہر پروجیکٹ ایک قبل/بعد رپورٹ پر ختم ہوتا ہے جو دکھاتی ہے کہ آپ کی سائٹ کتنی تیز ہوئی اور SEO اور کنورژنز کے لیے اس کا کیا مطلب ہے۔",
+    "features": [
+      "Core Web Vitals آڈٹ اور LCP/CLS/INP ٹیوننگ",
+      "فل پیج، آبجیکٹ اور براؤزر کیشنگ کا سیٹ اپ",
+      "CDN کنفیگریشن اور عالمی ایج ڈیلیوری",
+      "ڈیٹابیس کی صفائی اور سست کوئریز کی آپٹیمائزیشن",
+      "لیزی لوڈنگ کے ساتھ WebP/AVIF امیج کمپریشن",
+      "پلگ اِن آڈٹ اور فالتو بوجھ کا خاتمہ",
+      "ہوسٹنگ، PHP-FPM اور MySQL سرور ٹیوننگ",
+      "سکیورٹی ہارڈننگ اور اپ ٹائم مانیٹرنگ"
+    ],
+    "benefits": [
+      "حقیقی ڈیوائسز پر دو سیکنڈ سے کم میں کھلنے والے صفحات",
+      "Core Web Vitals پاس کر کے گوگل رینکنگ میں بہتری",
+      "کم باؤنس ریٹ اور قابلِ پیمائش بہتر کنورژنز",
+      "کم وسائل کے استعمال سے ہوسٹنگ اخراجات میں کمی",
+      "حملوں اور ڈاؤن ٹائم کے خلاف مضبوط اور محفوظ سائٹ",
+      "ہر تبدیلی کے لیے شفاف قبل/بعد کے اعداد و شمار"
+    ],
+    "metaTitle": "ورڈپریس آپٹیمائزیشن اور اسپیڈ سروسز | PakSoft",
+    "metaDescription": "ورڈپریس سائٹ سست ہے؟ PakSoft فراہم کرتا ہے Core Web Vitals ٹیوننگ، کیشنگ، CDN، ڈیٹابیس صفائی اور امیج آپٹیمائزیشن — قابلِ پیمائش نتائج کے ساتھ۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "پرفارمنس آڈٹ اور بیس لائن",
+          "description": "ہم Lighthouse، حقیقی صارفین کے Core Web Vitals ڈیٹا اور سرور سائیڈ مانیٹرنگ سے آپ کی سائٹ کا تجزیہ کرتے ہیں، ہر رکاوٹ کی نشاندہی کرتے ہیں اور قابلِ پیمائش بیس لائن دستاویز کرتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "آپٹیمائزیشن روڈ میپ",
+          "description": "آپ کو ایک ترجیحی ایکشن پلان ملتا ہے جو ہر اصلاح کو متوقع رفتار کے فائدے، خطرے اور محنت کے لحاظ سے درجہ بندی کرتا ہے، تاکہ سب سے زیادہ اثر والے کام پہلے ہوں۔"
+        },
+        {
+          "step": 3,
+          "title": "کیشنگ اور CDN سیٹ اپ",
+          "description": "ہم پیج، آبجیکٹ اور براؤزر کیشنگ نافذ کرتے ہیں، عالمی ایج ڈیلیوری کے لیے CDN کنفیگر کرتے ہیں اور کیش انویلیڈیشن کو اس طرح ٹیون کرتے ہیں کہ آپ کا مواد ہمیشہ تازہ رہے۔"
+        },
+        {
+          "step": 4,
+          "title": "ڈیٹابیس اور میڈیا آپٹیمائزیشن",
+          "description": "ہم برسوں کے ریویژن اور ٹرانزیئنٹ بوجھ کو صاف کرتے ہیں، سست کوئریز اور ٹیبلز کو بہتر بناتے ہیں، تصاویر کو WebP میں بدلتے ہیں اور پوری سائٹ پر لیزی لوڈنگ فعال کرتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "پلگ اِن آڈٹ اور سرور ٹیوننگ",
+          "description": "ہم فالتو یا وسائل کھانے والے پلگ اِنز کی نشاندہی کرتے ہیں، انہیں محفوظ طریقے سے بدلتے یا ہٹاتے ہیں، اور مستقل تیز ردعمل کے لیے PHP-FPM، MySQL اور ہوسٹنگ سیٹنگز ٹیون کرتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "تصدیق اور مانیٹرنگ",
+          "description": "ہم اصل بیس لائن کے مقابلے میں دوبارہ ٹیسٹ کرتے ہیں، قبل/بعد رپورٹ فراہم کرتے ہیں، سکیورٹی مضبوط بناتے ہیں اور الرٹس کے ساتھ مسلسل مانیٹرنگ قائم کرتے ہیں تاکہ کوئی بھی خرابی جلد پکڑی جائے۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "میری ورڈپریس سائٹ حقیقتاً کتنی تیز ہو جائے گی؟",
+          "answer": "ہماری آپٹیمائز کی گئی زیادہ تر سائٹس کے لوڈنگ اوقات میں 50 سے 80 فیصد کمی آتی ہے، اور LCP عام طور پر 4–8 سیکنڈ سے گھٹ کر 2.5 سیکنڈ سے نیچے آ جاتا ہے۔ اصل فائدہ آپ کی موجودہ حالت، تھیم اور ہوسٹنگ پر منحصر ہے، اسی لیے ہم پہلے بیس لائن ماپتے ہیں اور بہتری کو ٹھوس اعداد میں رپورٹ کرتے ہیں۔"
+        },
+        {
+          "question": "ورڈپریس آپٹیمائزیشن کی قیمت کتنی ہے؟",
+          "answer": "ایک بار کا آپٹیمائزیشن پروجیکٹ سائٹ کے حجم، پلگ اِن کی پیچیدگی اور ہوسٹنگ کی حدود کے لحاظ سے عموماً 500 سے 3,000 ڈالر کے درمیان ہوتا ہے۔ مفت ابتدائی آڈٹ کے بعد ہم مقررہ قیمت کا کوٹ دیتے ہیں، تاکہ کام شروع ہونے سے پہلے آپ کو کل لاگت معلوم ہو — کوئی غیر متعین گھنٹہ وار بلنگ نہیں۔"
+        },
+        {
+          "question": "آپٹیمائزیشن کے عمل میں کتنا وقت لگتا ہے؟",
+          "answer": "معیاری آپٹیمائزیشن آڈٹ سے حتمی رپورٹ تک ایک سے دو ہفتے لیتی ہے۔ سادہ تعارفی سائٹس چند دنوں میں مکمل ہو سکتی ہیں، جبکہ بھاری ڈیٹابیس اور بہت سے پلگ اِنز والے بڑے WooCommerce اسٹورز کو تین ہفتے لگ سکتے ہیں۔ ہم اسٹیجنگ کاپی پر کام کرتے ہیں، اس لیے آپ کی لائیو سائٹ پورے عمل کے دوران آن لائن رہتی ہے۔"
+        },
+        {
+          "question": "کیا مجھے اپنی تھیم یا پلگ اِنز بدلنا پڑیں گے؟",
+          "answer": "عام طور پر نہیں۔ زیادہ تر پرفارمنس مسائل کیشنگ، امیج آپٹیمائزیشن، ڈیٹابیس صفائی اور کنفیگریشن سے حل ہو جاتے ہیں، نئے ڈیزائن سے نہیں۔ اگر کوئی مخصوص پلگ اِن یا تھیم فیچر ثابت شدہ رکاوٹ ہو تو ہم اس کا ماپا ہوا اثر دکھاتے ہیں اور ہلکا متبادل تجویز کرتے ہیں، مگر فیصلہ ہمیشہ آپ کا ہوتا ہے۔"
+        },
+        {
+          "question": "کیا مجھے اپنا ہوسٹنگ فراہم کنندہ تبدیل کرنا ہوگا؟",
+          "answer": "صرف اس صورت میں جب آپ کی موجودہ ہوسٹنگ واقعی رکاوٹ ہو۔ پہلے ہم PHP-FPM، MySQL اور کیش ٹیوننگ کے ذریعے آپ کے موجودہ ماحول سے زیادہ سے زیادہ کارکردگی نکالتے ہیں۔ اگر سرور رسپانس ٹائم (TTFB) پھر بھی خراب رہے تو ہم آزمودہ ورڈپریس ہوسٹس تجویز کرتے ہیں، لاگت کا موازنہ کراتے ہیں اور منتقلی خود سنبھالتے ہیں۔"
+        },
+        {
+          "question": "کیا سائٹ کی رفتار واقعی SEO رینکنگ پر اثر ڈالتی ہے؟",
+          "answer": "جی ہاں — Core Web Vitals گوگل کا تصدیق شدہ رینکنگ سگنل ہیں، اور سست صفحات زیادہ باؤنس ریٹ اور کم کرال ایفیشنسی کے ذریعے بالواسطہ طور پر بھی SEO کو نقصان پہنچاتے ہیں۔ ہماری آپٹیمائزیشن کے بعد Core Web Vitals پاس کرنے والے کلائنٹس عموماً ایک سے تین ماہ میں بہتر رینکنگ اور زیادہ آرگینک ٹریفک دیکھتے ہیں۔"
+        },
+        {
+          "question": "کیا آپٹیمائزیشن کے بعد مجھے مسلسل دیکھ بھال کی ضرورت ہوگی؟",
+          "answer": "ابتدائی فوائد مستقل ہوتے ہیں، مگر ورڈپریس سائٹس وقت کے ساتھ بدلتی رہتی ہیں: نئے پلگ اِنز، بڑھتا ہوا مواد اور اپڈیٹس آہستہ آہستہ بوجھ واپس لے آتے ہیں۔ ہم اختیاری ماہانہ کیئر پلانز پیش کرتے ہیں جن میں پرفارمنس مانیٹرنگ، ڈیٹابیس دیکھ بھال، سکیورٹی اپڈیٹس اور سہ ماہی دوبارہ آڈٹ شامل ہیں — یا آپ کو ایک چیک لسٹ دے دیتے ہیں تاکہ آپ خود اسے سنبھال سکیں۔"
+        },
+        {
+          "question": "کیا آپ نتائج کی ضمانت دیتے ہیں اور انہیں کیسے ماپتے ہیں؟",
+          "answer": "ہم پروجیکٹ شروع ہونے سے پہلے طے شدہ ٹھوس اور قابلِ پیمائش اہداف کے پابند ہوتے ہیں — عموماً Core Web Vitals پاس کرنا اور ایک متعین LCP حد۔ نتائج کی تصدیق Lighthouse، گوگل کے فیلڈ ڈیٹا (CrUX) اور حقیقی صارف مانیٹرنگ سے کی جاتی ہے۔ اگر ہم طے شدہ اہداف حاصل نہ کر سکیں تو بغیر اضافی معاوضے کے اس وقت تک کام جاری رکھتے ہیں جب تک وہ پورے نہ ہو جائیں۔"
+        }
+      ],
+      "technologies": [
+        { "name": "WP Rocket", "icon": "" },
+        { "name": "Cloudflare", "icon": "" },
+        { "name": "Redis", "icon": "" },
+        { "name": "MySQL", "icon": "" },
+        { "name": "PHP-FPM", "icon": "" },
+        { "name": "ImageMagick / WebP", "icon": "" },
+        { "name": "Google Lighthouse", "icon": "" },
+        { "name": "New Relic", "icon": "" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تحسين ووردبريس",
+    "shortDescription": "نجعل موقع ووردبريس الخاص بك يُحمَّل في أقل من ثانيتين عبر ضبط احترافي لـ Core Web Vitals وتخزين مؤقت متعدد الطبقات وتنظيف قاعدة البيانات — ليبقى الزوار مدة أطول وترتفع ترتيباتك وتزداد التحويلات.",
+    "fullDescription": "الموقع البطيء على ووردبريس يستنزف زياراتك وترتيبك وإيراداتك بصمت. تبدأ خدمة التحسين لدى PakSoft بتدقيق أداء شامل: نقيس Core Web Vitals ميدانيًا ومخبريًا، ونحدد ما الذي يدفع مؤشر LCP فوق 2.5 ثانية، ونوثّق خط أساس يمكنك محاسبتنا عليه. ثم ننفّذ — تخزين مؤقت متعدد الطبقات (كاش الصفحات والكائنات والمتصفح مع توصيل CDN عبر الحافة)، وتنظيف قاعدة البيانات من تراكمات سنوات من المراجعات والبيانات المؤقتة، وتحويل الصور إلى صيغة WebP الحديثة، وتدقيق للإضافات يستبعد الإضافات الزائدة أو الثقيلة على الاستعلامات. كما نضبط PHP-FPM وإعدادات الاستضافة، ونحصّن الأمان، وننشئ مراقبة مستمرة لاكتشاف أي تراجع مبكرًا. ينتهي كل مشروع بتقرير قبل/بعد يوضح بدقة مدى تسارع موقعك وما يعنيه ذلك لتحسين محركات البحث والتحويلات.",
+    "features": [
+      "تدقيق Core Web Vitals وضبط LCP/CLS/INP",
+      "إعداد التخزين المؤقت للصفحات والكائنات والمتصفح",
+      "تهيئة CDN والتوصيل العالمي عبر الحافة",
+      "تنظيف قاعدة البيانات وتحسين الاستعلامات البطيئة",
+      "ضغط الصور بصيغ WebP/AVIF مع التحميل الكسول",
+      "تدقيق الإضافات وإزالة الحمولة الزائدة",
+      "ضبط الاستضافة وPHP-FPM وخادم MySQL",
+      "تحصين الأمان ومراقبة زمن التشغيل"
+    ],
+    "benefits": [
+      "صفحات تُحمَّل في أقل من ثانيتين على الأجهزة الحقيقية",
+      "ترتيب أعلى في جوجل باجتياز Core Web Vitals",
+      "معدل ارتداد أقل وتحويلات أفضل قابلة للقياس",
+      "تكاليف استضافة أقل بفضل استهلاك موارد أكثر كفاءة",
+      "موقع محصّن يقاوم الهجمات والانقطاعات",
+      "مقاييس شفافة قبل/بعد لكل تغيير نجريه"
+    ],
+    "metaTitle": "تحسين سرعة وأداء ووردبريس | PakSoft",
+    "metaDescription": "موقع ووردبريس بطيء؟ تقدّم PakSoft ضبط Core Web Vitals والتخزين المؤقت وCDN وتنظيف قاعدة البيانات وتحسين الصور بنتائج قابلة للقياس قبل وبعد.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تدقيق الأداء وخط الأساس",
+          "description": "نحلل موقعك باستخدام Lighthouse وبيانات Core Web Vitals من المستخدمين الحقيقيين والمراقبة من جهة الخادم، لنحدد كل اختناق ونوثّق خط أساس قابلًا للقياس."
+        },
+        {
+          "step": 2,
+          "title": "خارطة طريق التحسين",
+          "description": "تحصل على خطة عمل مرتّبة حسب الأولوية تصنّف كل إصلاح وفق مكسب السرعة المتوقع والمخاطر والجهد، لنبدأ بالتحسينات الأعلى أثرًا أولًا."
+        },
+        {
+          "step": 3,
+          "title": "إعداد التخزين المؤقت وCDN",
+          "description": "ننفّذ التخزين المؤقت للصفحات والكائنات والمتصفح، ونهيّئ شبكة CDN للتوصيل العالمي عبر الحافة، ونضبط إبطال الكاش بحيث يبقى محتواك محدّثًا دائمًا."
+        },
+        {
+          "step": 4,
+          "title": "تحسين قاعدة البيانات والوسائط",
+          "description": "نزيل تراكمات سنوات من المراجعات والبيانات المؤقتة، ونحسّن الاستعلامات والجداول البطيئة، ونحوّل الصور إلى WebP، ونفعّل التحميل الكسول في الموقع بأكمله."
+        },
+        {
+          "step": 5,
+          "title": "تدقيق الإضافات وضبط الخادم",
+          "description": "نحدد الإضافات الزائدة أو المستهلكة للموارد ونستبدلها أو نزيلها بأمان، ونضبط PHP-FPM وMySQL وإعدادات الاستضافة لاستجابات سريعة وثابتة."
+        },
+        {
+          "step": 6,
+          "title": "التحقق والمراقبة",
+          "description": "نعيد الاختبار مقارنةً بخط الأساس الأصلي، ونسلّم تقرير قبل/بعد، ونحصّن الأمان، وننشئ مراقبة مستمرة مع تنبيهات لاكتشاف أي تراجع مبكرًا."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما مقدار السرعة التي سيكتسبها موقعي فعليًا؟",
+          "answer": "تشهد معظم المواقع التي نحسّنها انخفاضًا في أزمنة التحميل بنسبة 50–80%، حيث ينخفض LCP عادةً من 4–8 ثوانٍ إلى ما دون 2.5 ثانية. يعتمد المكسب الدقيق على وضعك الحالي والقالب والاستضافة، ولهذا نقيس دائمًا خط أساس أولًا ونوثّق التحسّن بأرقام ملموسة."
+        },
+        {
+          "question": "كم تكلفة تحسين ووردبريس؟",
+          "answer": "يتراوح مشروع التحسين لمرة واحدة عادةً بين 500 و3,000 دولار حسب حجم الموقع وتعقيد الإضافات وقيود الاستضافة. نقدّم عرض سعر ثابتًا بعد تدقيق أولي مجاني، فتعرف التكلفة الكاملة قبل بدء أي عمل — دون فوترة ساعية مفتوحة."
+        },
+        {
+          "question": "كم يستغرق مشروع التحسين من الوقت؟",
+          "answer": "يستغرق التحسين القياسي من أسبوع إلى أسبوعين من التدقيق حتى التقرير النهائي. يمكن إنجاز المواقع التعريفية البسيطة خلال أيام قليلة، بينما قد تحتاج متاجر WooCommerce الكبيرة ذات قواعد البيانات الثقيلة والإضافات الكثيرة إلى ثلاثة أسابيع. نعمل على نسخة تجريبية (Staging)، لذا يبقى موقعك المباشر متاحًا طوال الوقت."
+        },
+        {
+          "question": "هل سأضطر إلى تغيير القالب أو الإضافات؟",
+          "answer": "غالبًا لا. تُحل معظم مشكلات الأداء عبر التخزين المؤقت وتحسين الصور وتنظيف قاعدة البيانات والضبط، لا عبر إعادة التصميم. وإذا ثبت أن إضافة أو ميزة معينة في القالب تشكّل اختناقًا، نعرض عليك أثرها المقاس ونقترح بديلًا أخف، لكن القرار يبقى لك دائمًا."
+        },
+        {
+          "question": "هل أحتاج إلى تغيير مزوّد الاستضافة؟",
+          "answer": "فقط إذا كانت استضافتك الحالية هي العامل المحدّد فعلًا. نستخرج أولًا أقصى أداء ممكن من بيئتك الحالية عبر ضبط PHP-FPM وMySQL والكاش. وإذا بقيت أزمنة استجابة الخادم (TTFB) ضعيفة، نوصي باستضافات ووردبريس مجرّبة ونساعدك في مقارنة التكاليف ونتولى عملية النقل بالكامل."
+        },
+        {
+          "question": "هل تؤثر سرعة الموقع حقًا على ترتيب SEO؟",
+          "answer": "نعم — مؤشرات Core Web Vitals إشارة ترتيب مؤكدة لدى جوجل، كما تضر الصفحات البطيئة بتحسين محركات البحث بشكل غير مباشر عبر ارتفاع معدل الارتداد وانخفاض كفاءة الزحف. عملاؤنا الذين يجتازون Core Web Vitals بعد التحسين يلاحظون عادةً ترتيبًا أفضل وزيارات عضوية أكثر خلال شهر إلى ثلاثة أشهر."
+        },
+        {
+          "question": "هل أحتاج إلى صيانة مستمرة بعد التحسين؟",
+          "answer": "المكاسب الأولية دائمة، لكن مواقع ووردبريس تتغير مع الوقت: الإضافات الجديدة ونمو المحتوى والتحديثات تعيد الحمولة الزائدة تدريجيًا. نقدّم خطط عناية شهرية اختيارية تشمل مراقبة الأداء وصيانة قاعدة البيانات وتحديثات الأمان وإعادة تدقيق ربع سنوية — أو نسلّمك قائمة تحقق لتديرها بنفسك."
+        },
+        {
+          "question": "هل تضمنون النتائج، وكيف تقيسونها؟",
+          "answer": "نلتزم بأهداف ملموسة وقابلة للقياس يُتفق عليها قبل بدء المشروع — عادةً اجتياز Core Web Vitals وبلوغ حد محدد لمؤشر LCP. تُتحقق النتائج عبر Lighthouse وبيانات جوجل الميدانية (CrUX) ومراقبة المستخدمين الحقيقيين. وإذا لم نبلغ الأهداف المتفق عليها، نواصل العمل دون أي تكلفة إضافية حتى تتحقق."
+        }
+      ],
+      "technologies": [
+        { "name": "WP Rocket", "icon": "" },
+        { "name": "Cloudflare", "icon": "" },
+        { "name": "Redis", "icon": "" },
+        { "name": "MySQL", "icon": "" },
+        { "name": "PHP-FPM", "icon": "" },
+        { "name": "ImageMagick / WebP", "icon": "" },
+        { "name": "Google Lighthouse", "icon": "" },
+        { "name": "New Relic", "icon": "" }
+      ]
+    }
+  }
+}
