@@ -868,6 +868,7 @@ export default function Navbar() {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeMegaCat, setActiveMegaCat] = useState('webSoftware');
   const servicesRef = useRef<HTMLLIElement>(null);
+  const sectionBarRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
   const router = useRouter();
 
@@ -913,6 +914,15 @@ export default function Navbar() {
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
+
+  // Keep the active service-section link visible in the second header row
+  useEffect(() => {
+    const bar = sectionBarRef.current;
+    if (!bar) return;
+    const active = bar.querySelector<HTMLElement>('[data-active]');
+    if (!active) return;
+    bar.scrollTo({ left: active.offsetLeft - bar.clientWidth / 2 + active.clientWidth / 2 });
+  }, [pathname]);
 
   // Close services dropdown when clicking outside
   useEffect(() => {
@@ -998,9 +1008,9 @@ export default function Navbar() {
           </Link>
 
           <nav className="hidden lg:flex items-center">
-            <ul className={`flex items-center ${isServicePage ? 'gap-5' : 'gap-8'}`}>
-              {/* Home Link — hidden on service pages */}
-              {!isServicePage && (
+            <ul className="flex items-center gap-8">
+              {/* Home Link */}
+              {(
                 <li className="relative">
                   <Link
                     href={`/${locale}`}
@@ -1020,8 +1030,8 @@ export default function Navbar() {
                 </li>
               )}
 
-              {/* Services Mega Dropdown — hidden on service pages */}
-              {!isServicePage && (
+              {/* Services Mega Dropdown */}
+              {(
                 <li className="relative" ref={servicesRef}>
                   <button
                     onClick={() => { setServicesOpen(!servicesOpen); setSearchQuery(''); }}
@@ -1168,24 +1178,8 @@ export default function Navbar() {
                 </li>
               )}
 
-              {/* Service page links OR remaining main links */}
-              {isServicePage ? (
-                servicePageLinks.map(({ label, href }) => {
-                  const isActive = pathname === href;
-                  return (
-                    <li key={href} className="relative">
-                      <Link
-                        href={href}
-                        onClick={handleLinkClick}
-                        className={`text-sm font-medium tracking-wide transition-colors duration-250 ${isActive ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
-                      >
-                        {label}
-                      </Link>
-                      {isActive && <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gray-900" />}
-                    </li>
-                  );
-                })
-              ) : (
+              {/* Remaining main links — the primary nav never swaps */}
+              {(
                 mainLinks.slice(1).map(({ label, href, localizedHref }) => {
                   const isActive = pathname.endsWith(localizedHref);
                   return (
@@ -1290,6 +1284,34 @@ export default function Navbar() {
             </button>
           </div>
         </div>
+
+        {/* ── Service section bar — slim second header row, all viewports.
+              Lives INSIDE the fixed header so it shares its hide-on-scroll,
+              background, and --navbar-h measurement. ── */}
+        {isServicePage && (
+          <div className={`border-t border-gray-200/60 ${scrolled ? 'mt-3 -mb-3' : 'mt-4 -mb-4'}`}>
+            <div
+              ref={sectionBarRef}
+              className="container mx-auto flex items-center gap-0.5 overflow-x-auto scrollbar-none"
+              style={{ scrollbarWidth: 'none' }}
+            >
+              {servicePageLinks.map(({ label, href }) => {
+                const isActive = pathname === href;
+                return (
+                  <Link
+                    key={href}
+                    href={href}
+                    data-active={isActive || undefined}
+                    className={`relative flex items-center h-10 px-3 text-[13px] font-medium whitespace-nowrap transition-colors ${isActive ? 'text-heritage-turquoise-deep' : 'text-gray-500 hover:text-gray-900'}`}
+                  >
+                    {label}
+                    {isActive && <span className="absolute bottom-0 left-3 right-3 h-[2px] rounded-full bg-heritage-turquoise" />}
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        )}
       </header>
 
       {/* Mobile Menu */}
@@ -1314,23 +1336,30 @@ export default function Navbar() {
 
               <div className="flex-1 px-6 py-6">
                 <ul className="space-y-2">
-                  {/* Service page: show page routing links */}
-                  {isServicePage ? (
-                    servicePageLinks.map(({ label, href }) => {
-                      const isActive = pathname === href;
-                      return (
-                        <li key={href}>
-                          <Link
-                            href={href}
-                            onClick={() => setOpen(false)}
-                            className={`block px-4 py-3 text-sm font-medium transition-colors border-l-2 ${isActive ? 'text-gray-900 border-gray-900 bg-gray-50' : 'text-gray-600 border-transparent hover:text-gray-900 hover:border-gray-300'}`}
-                          >
-                            {label}
-                          </Link>
-                        </li>
-                      );
-                    })
-                  ) : (
+                  {/* Service pages: page-local sections first, then the global links */}
+                  {isServicePage && (
+                    <li className="mb-4 pb-4 border-b border-gray-200">
+                      <div className={`px-4 pb-2 text-[11px] font-bold uppercase tracking-widest text-heritage-turquoise`}>
+                        {t('serviceNav.onThisPage') || 'On this page'}
+                      </div>
+                      <ul className="grid grid-cols-2 gap-x-2">
+                        {servicePageLinks.map(({ label, href }) => {
+                          const isActive = pathname === href;
+                          return (
+                            <li key={href}>
+                              <Link
+                                href={href}
+                                onClick={() => setOpen(false)}
+                                className={`block px-4 py-2 text-sm font-medium transition-colors border-l-2 ${isActive ? 'text-heritage-turquoise-deep border-heritage-turquoise bg-heritage-turquoise/5' : 'text-gray-600 border-transparent hover:text-gray-900 hover:border-gray-300'}`}
+                              >
+                                {label}
+                              </Link>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </li>
+                  )}
                   <>
                   {/* Home */}
                   <li>
@@ -1499,7 +1528,6 @@ export default function Navbar() {
                     );
                   })}
                   </>
-                  )}
                 </ul>
 
                 <div className="mt-8 pt-6 border-t border-gray-200">
