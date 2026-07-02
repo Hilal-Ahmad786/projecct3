@@ -862,14 +862,18 @@ export default function Navbar() {
   const lastScrollY = useRef(0);
   const headerRef = useRef<HTMLElement>(null);
 
-  // Keep --navbar-h in sync with the header's actual rendered height
+  // Keep --navbar-h in sync with the header's actual rendered height.
+  // Must be the BORDER-BOX height: contentRect excludes the header's py-3/4
+  // padding, which under-reported the height and let page content (e.g.
+  // breadcrumbs) slide under the service-section row.
   useEffect(() => {
     const el = headerRef.current;
     if (!el) return;
-    const obs = new ResizeObserver(([entry]) => {
-      document.documentElement.style.setProperty('--navbar-h', `${entry.contentRect.height}px`);
+    const obs = new ResizeObserver(() => {
+      document.documentElement.style.setProperty('--navbar-h', `${el.offsetHeight}px`);
     });
     obs.observe(el);
+    document.documentElement.style.setProperty('--navbar-h', `${el.offsetHeight}px`);
     return () => obs.disconnect();
   }, []);
 
