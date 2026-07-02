@@ -29,10 +29,10 @@ export const servicesByCategory: Record<string, ServiceEntry[]> = {
     { slug: 'python-automation', children: ['web-scraping', 'workflow-automation', 'data-pipeline-automation', 'rpa-solutions'] },
   ],
   marketing: [
-    { slug: 'digital-marketing', children: ['affiliate-marketing-systems', 'email-marketing-automation', 'social-media-integration'] },
-    { slug: 'seo', children: ['technical-seo', 'local-seo', 'international-seo', 'link-building', 'ecommerce-seo', 'geo-ai-search-optimization', 'conversion-rate-optimization'] },
     { slug: 'google-ads', children: ['google-search-ads', 'google-display-ads', 'youtube-ads', 'google-shopping', 'performance-max'] },
+    { slug: 'seo', children: ['technical-seo', 'local-seo', 'international-seo', 'link-building', 'ecommerce-seo', 'geo-ai-search-optimization', 'conversion-rate-optimization'] },
     { slug: 'meta-ads', children: ['facebook-ads', 'instagram-ads', 'advantage-plus-campaigns'] },
+    { slug: 'digital-marketing', children: ['affiliate-marketing-systems', 'email-marketing-automation', 'social-media-integration'] },
     { slug: 'social-media-marketing', children: ['social-media-management', 'influencer-marketing', 'community-management', 'social-commerce'] },
     { slug: 'tiktok-marketing', children: ['tiktok-ads', 'tiktok-shop', 'tiktok-content'] },
     { slug: 'linkedin-marketing', children: ['linkedin-ads', 'linkedin-lead-gen', 'company-page-management'] },
