@@ -940,6 +940,7 @@ export default function Navbar() {
     { label: t('serviceNav.features'),     href: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/features`, locale)}` },
     { label: t('serviceNav.technologies'), href: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/technologies`, locale)}` },
     { label: t('serviceNav.process'),      href: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/process`, locale)}` },
+    { label: t('serviceNav.portfolio'),    href: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/portfolio`, locale)}` },
     { label: t('serviceNav.pricing'),      href: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/pricing`, locale)}` },
     { label: t('serviceNav.blog'),         href: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/blog`, locale)}` },
     { label: t('serviceNav.faq'),          href: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/faq`, locale)}` },
