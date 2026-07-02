@@ -158,7 +158,7 @@ export default function WebDevHero({ serviceName, description }: { serviceName: 
           {/* ── Right: unique animated visual ── */}
           <motion.div
             {...(prefersReducedMotion ? {} : { initial: { opacity: 0, x: isRTL ? -40 : 40 }, animate: { opacity: 1, x: 0 }, transition: { duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] } })}
-            className="relative hidden lg:block will-change-transform lg:-mt-16"
+            className="relative will-change-transform w-full max-w-lg mx-auto mt-12 lg:max-w-none lg:-mt-16"
           >
             <WebDevHeroVisual />
           </motion.div>
