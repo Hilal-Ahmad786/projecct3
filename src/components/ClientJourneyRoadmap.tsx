@@ -5,9 +5,8 @@ import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import SectionHeader from '@/components/SectionHeader';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { initGSAP } from '@/lib/gsap';
+// gsap is loaded dynamically inside the scroll-animation effect so its
+// ~205KB never blocks the homepage's initial JS payload (mobile LCP).
 import {
   ChatBubbleOvalLeftIcon,
   PencilSquareIcon,
@@ -533,7 +532,17 @@ export default function ClientJourneyRoadmap() {
     if (isLoading || prefersReducedMotion) return;
     if (!sectionRef.current || !leftColRef.current || !svgRef.current || !lineRef.current) return;
 
-    initGSAP();
+    let cancelled = false;
+    let ctx: { revert(): void } | undefined;
+    let ro: ResizeObserver | undefined;
+
+    (async () => {
+      const [{ gsap }, { ScrollTrigger }] = await Promise.all([
+        import('gsap'),
+        import('gsap/ScrollTrigger'),
+      ]);
+      gsap.registerPlugin(ScrollTrigger);
+      if (cancelled || !sectionRef.current || !leftColRef.current || !svgRef.current || !lineRef.current) return;
 
     const setupLine = () => {
       if (!leftColRef.current || !svgRef.current || !lineRef.current) return;
@@ -549,7 +558,7 @@ export default function ClientJourneyRoadmap() {
     const totalLength = lineRef.current.getTotalLength();
     if (totalLength === 0) return;
 
-    const ctx = gsap.context(() => {
+    ctx = gsap.context(() => {
       gsap.set(lineRef.current, {
         strokeDasharray: totalLength,
         strokeDashoffset: totalLength,
@@ -584,12 +593,14 @@ export default function ClientJourneyRoadmap() {
       });
     }, sectionRef);
 
-    const ro = new ResizeObserver(setupLine);
-    ro.observe(leftColRef.current!);
+      ro = new ResizeObserver(setupLine);
+      ro.observe(leftColRef.current!);
+    })();
 
     return () => {
-      ctx.revert();
-      ro.disconnect();
+      cancelled = true;
+      ctx?.revert();
+      ro?.disconnect();
     };
   }, [isLoading, prefersReducedMotion]);
 

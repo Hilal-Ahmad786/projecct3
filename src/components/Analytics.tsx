@@ -179,7 +179,7 @@ export default function Analytics() {
       {GOOGLE_OPTIMIZE_ID && analyticsAllowed && (
         <Script
           src={`https://www.googleoptimize.com/optimize.js?id=${GOOGLE_OPTIMIZE_ID}`}
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
       )}
 
@@ -187,7 +187,7 @@ export default function Analytics() {
       {FB_PIXEL_ID && marketingAllowed && (
         <Script
           id="fb-pixel"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               !function(f,b,e,v,n,t,s)
@@ -210,7 +210,7 @@ export default function Analytics() {
         <>
           <Script
             id="linkedin-insight"
-            strategy="afterInteractive"
+            strategy="lazyOnload"
             dangerouslySetInnerHTML={{
               __html: `
                 _linkedin_partner_id = "${LINKEDIN_PARTNER_ID}";
@@ -221,7 +221,7 @@ export default function Analytics() {
           />
           <Script
             id="linkedin-insight-script"
-            strategy="afterInteractive"
+            strategy="lazyOnload"
             dangerouslySetInnerHTML={{
               __html: `
                 (function(l) {
@@ -243,7 +243,7 @@ export default function Analytics() {
       {TIKTOK_PIXEL_ID && marketingAllowed && (
         <Script
           id="tiktok-pixel"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               !function (w, d, t) {
@@ -260,7 +260,7 @@ export default function Analytics() {
       {CLARITY_ID && analyticsAllowed && (
         <Script
           id="clarity-script"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               (function(c,l,a,r,i,t,y){
@@ -277,7 +277,7 @@ export default function Analytics() {
       {HOTJAR_ID && analyticsAllowed && (
         <Script
           id="hotjar"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               (function(h,o,t,j,a,r){
