@@ -60,7 +60,7 @@ export default function ServiceFeaturesPage({
   const colors = colorMap[accentColor] || colorMap.purple;
 
   return (
-    <main className="min-h-screen pt-[140px] pb-20 bg-white relative overflow-hidden">
+    <main className="min-h-screen pt-[calc(var(--navbar-h,64px)+2.5rem)] pb-20 bg-white relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className={`absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br ${colors.gradient} rounded-full opacity-5 blur-3xl`} />

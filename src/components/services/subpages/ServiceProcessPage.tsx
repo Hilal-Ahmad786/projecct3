@@ -172,7 +172,7 @@ export default function ServiceProcessPage({ serviceSlug, accentColor }: Service
       {/* ── Hero ─────────────────────────────────────────────────────── */}
       <section
         ref={heroRef}
-        className="relative overflow-hidden pt-[140px] pb-24"
+        className="relative overflow-hidden pt-[calc(var(--navbar-h,64px)+2.5rem)] pb-24"
         style={{ background: 'linear-gradient(180deg, #fafafa 0%, #ffffff 100%)' }}
       >
         {/* Dot grid */}
