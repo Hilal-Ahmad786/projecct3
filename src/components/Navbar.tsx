@@ -1276,14 +1276,16 @@ export default function Navbar() {
             </Link>
 
             <button
+              type="button"
               onClick={() => setOpen(!open)}
-              className="lg:hidden p-2 text-gray-600 hover:text-gray-900 border border-gray-200 rounded-sm hover:border-gray-300 transition-colors"
+              className="lg:hidden p-2.5 text-gray-600 hover:text-gray-900 border border-gray-200 rounded-sm hover:border-gray-300 active:bg-gray-100 transition-colors"
+              style={{ touchAction: 'manipulation' }}
               aria-label={`${tCommon('menu')}`}
             >
               {open ? (
-                <XMarkIcon className="h-5 w-5" />
+                <XMarkIcon className="h-6 w-6" />
               ) : (
-                <Bars3Icon className="h-5 w-5" />
+                <Bars3Icon className="h-6 w-6" />
               )}
             </button>
           </div>
@@ -1298,7 +1300,7 @@ export default function Navbar() {
             onClick={() => setOpen(false)}
           />
 
-          <div className={`absolute ${dir === 'rtl' ? 'left-0' : 'right-0'} top-0 h-full w-80 glass-strong border-l border-glass shadow-2xl overflow-y-auto`}>
+          <div className={`absolute ${dir === 'rtl' ? 'left-0' : 'right-0'} top-0 h-full w-[min(92vw,380px)] glass-strong border-l border-glass shadow-2xl overflow-y-auto`}>
             <div className="flex flex-col h-full">
               <div className="flex items-center justify-between p-6 border-b border-gray-200">
                 <h2 className="text-lg font-medium text-gray-900">{tCommon('menu')}</h2>
@@ -1379,7 +1381,7 @@ export default function Navbar() {
 
                         {/* Category pills */}
                         {!mobileSearchQuery.trim() && (
-                          <div className="flex gap-1.5 overflow-x-auto pb-1 scrollbar-none">
+                          <div className="flex flex-wrap gap-1.5 pb-1">
                             {Object.entries(serviceCategories).map(([catKey, cat]) => {
                               const CatIcon = cat.icon;
                               const isActive = mobileActiveCat === catKey;
@@ -1388,7 +1390,7 @@ export default function Navbar() {
                                 <button
                                   key={catKey}
                                   onClick={() => setMobileActiveCat(catKey)}
-                                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all border flex-shrink-0 ${isActive ? 'bg-heritage-turquoise text-white border-heritage-turquoise shadow-sm' : 'bg-white text-gray-600 border-gray-200'}`}
+                                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all border ${isActive ? 'bg-heritage-turquoise text-white border-heritage-turquoise shadow-sm' : 'bg-white text-gray-600 border-gray-200'}`}
                                 >
                                   <CatIcon className="w-3.5 h-3.5" />
                                   {tServices(cat.key)}
@@ -1420,15 +1422,16 @@ export default function Navbar() {
                               : cat.services.map(s => ({ slug: s.slug, children: s.children || [] })));
                             if (groups.length === 0) return null;
                             return (
-                              <div key={catKey} className="space-y-4">
+                              <div key={catKey}>
                                 {q && (
-                                  <div className={`flex items-center gap-2 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
+                                  <div className={`flex items-center gap-2 mb-3 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
                                     <span className="text-[11px] font-bold uppercase tracking-widest text-heritage-turquoise">{tServices(cat.key)}</span>
                                     <span className="h-px flex-1 bg-gray-100" />
                                   </div>
                                 )}
+                                <div className="columns-2 gap-x-4">
                                 {groups.map(group => (
-                                  <div key={group.slug}>
+                                  <div key={group.slug} className="break-inside-avoid mb-4">
                                     <Link
                                       href={getServicePath(group.slug)}
                                       onClick={handleLinkClick}
@@ -1453,6 +1456,7 @@ export default function Navbar() {
                                     )}
                                   </div>
                                 ))}
+                                </div>
                               </div>
                             );
                           });
