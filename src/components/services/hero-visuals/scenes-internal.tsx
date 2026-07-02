@@ -352,3 +352,66 @@ export function FaqScene({ accent = H.turquoise }: { accent?: string }) {
     </Scene>
   );
 }
+
+/* ── portfolio: project-card mosaic with result badge ─────────────── */
+export function PortfolioScene({ accent = H.turquoise }: { accent?: string }) {
+  const tiles = [
+    { w: 'w-24', h: 'h-16', d: 0.35 },
+    { w: 'w-20', h: 'h-16', d: 0.5 },
+    { w: 'w-20', h: 'h-14', d: 0.65 },
+    { w: 'w-24', h: 'h-14', d: 0.8 },
+  ];
+  return (
+    <Scene glow={accent}>
+      <GirihHalo color={accent} opacity={0.18} />
+      <HeritageParticles count={8} colors={[accent, H.saffron, H.terracotta]} />
+      <div className="absolute inset-0 flex items-center justify-center">
+        <motion.div
+          initial={{ opacity: 0, y: 30, scale: 0.92 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="rounded-2xl shadow-xl p-5 w-60"
+          style={{ background: H.white, border: `1px solid ${H.sand}` }}
+        >
+          {/* header with girih seal */}
+          <div className="flex items-center gap-2 mb-4">
+            <svg viewBox="0 0 24 24" className="w-7 h-7">
+              <polygon points={starPoints(12, 12, 9, 5)} fill={accent} opacity={0.9} />
+            </svg>
+            <div className="h-2.5 rounded-full flex-1" style={{ background: H.sand }} />
+          </div>
+          {/* project tiles mosaic */}
+          <div className="flex flex-wrap gap-2">
+            {tiles.map((t, i) => (
+              <motion.div
+                key={i}
+                {...riseIn(t.d)}
+                className={`${t.w} ${t.h} rounded-lg relative overflow-hidden`}
+                style={{ background: i === 0 ? `${accent}22` : H.ivory, border: `1px solid ${H.sand}` }}
+              >
+                <div className="absolute bottom-1.5 left-1.5 right-1.5 space-y-1">
+                  <div className="h-1.5 rounded-full w-3/4" style={{ background: i === 0 ? `${accent}66` : H.sand }} />
+                  <div className="h-1 rounded-full w-1/2" style={{ background: H.sand }} />
+                </div>
+                {i === 0 && (
+                  <svg viewBox="0 0 12 12" className="absolute top-1.5 left-1.5 w-3 h-3">
+                    <polygon points={starPoints(6, 6, 5, 2.6)} fill={accent} />
+                  </svg>
+                )}
+              </motion.div>
+            ))}
+          </div>
+          {/* result badge */}
+          <motion.div
+            {...popIn(1.2)}
+            className="mt-4 inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[9px] font-bold"
+            style={{ background: H.saffron, color: H.white }}
+          >
+            <svg viewBox="0 0 12 12" className="w-2.5 h-2.5"><polygon points={starPoints(6, 6, 5, 2.6)} fill={H.white} /></svg>
+            Shipped
+          </motion.div>
+        </motion.div>
+      </div>
+    </Scene>
+  );
+}

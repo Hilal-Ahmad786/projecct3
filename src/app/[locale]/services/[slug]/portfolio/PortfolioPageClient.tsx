@@ -1,8 +1,9 @@
 'use client';
 
 import { useState, useRef } from 'react';
-import Breadcrumbs from '@/components/Breadcrumbs';
-import { motion, AnimatePresence, useScroll, useTransform, useInView } from 'framer-motion';
+import InternalPageHero from '@/components/services/InternalPageHero';
+import { PortfolioScene } from '@/components/services/hero-visuals/scenes-internal';
+import { motion, AnimatePresence, useInView } from 'framer-motion';
 import LocalizedLink from '@/components/LocalizedLink';
 import Image from 'next/image';
 import { ArrowRightIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
@@ -32,18 +33,9 @@ export default function PortfolioPageClient({
   locale
 }: PortfolioPageClientProps) {
   const { t } = useTranslations();
-  const containerRef = useRef<HTMLDivElement>(null);
   const gridRef = useRef<HTMLDivElement>(null);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ['start start', 'end start']
-  });
-
-  const heroOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0]);
-  const heroY = useTransform(scrollYProgress, [0, 0.3], [0, -50]);
 
   const isGridInView = useInView(gridRef, { once: true, margin: '-100px' });
 
@@ -57,171 +49,21 @@ export default function PortfolioPageClient({
     : portfolio;
 
   return (
-    <div ref={containerRef} className="min-h-screen bg-white">
-      {/* Hero Section - Swiss Minimalist */}
-      <section className="relative min-h-[80vh] pt-[140px] pb-24 overflow-hidden">
-        {/* Swiss Cross Pattern Background */}
-        <div className="absolute inset-0 opacity-[0.03]">
-          <svg width="100%" height="100%">
-            <defs>
-              <pattern id="cross-pattern" width="64" height="64" patternUnits="userSpaceOnUse">
-                <path d="M32 24v16M24 32h16" stroke="#1a1a1a" strokeWidth="1" fill="none" />
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#cross-pattern)" />
-          </svg>
-        </div>
-
-        {/* Floating Diamond Shapes - Portfolio Unique */}
-        <motion.div
-          animate={{ rotate: 45, y: [0, -20, 0] }}
-          transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute top-48 right-[12%] w-24 h-24 border border-gray-200 hidden lg:block"
-        />
-        <motion.div
-          animate={{ rotate: 45, y: [0, 15, 0] }}
-          transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-          className="absolute top-72 right-[25%] w-16 h-16 border border-gray-100 hidden lg:block"
-        />
-        <motion.div
-          animate={{ rotate: 45, scale: [1, 1.1, 1] }}
-          transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute bottom-40 right-[18%] w-8 h-8 hidden lg:block"
-          style={{ backgroundColor: accentColor + '15' }}
-        />
-
-        {/* Image Frame Decorations */}
-        <div className="absolute right-[8%] top-1/3 hidden xl:block">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.3 }}
-            className="relative"
-          >
-            {/* Stacked Frames Effect */}
-            {[0, 1, 2].map((i) => (
-              <motion.div
-                key={i}
-                animate={{ y: [0, -5, 0] }}
-                transition={{ duration: 3 + i, repeat: Infinity, delay: i * 0.3 }}
-                className="absolute border border-gray-200 bg-white"
-                style={{
-                  width: 160 - i * 20,
-                  height: 120 - i * 15,
-                  top: i * 12,
-                  left: i * 12,
-                  zIndex: 3 - i,
-                }}
-              >
-                <div className="absolute inset-4 bg-gray-50 flex items-center justify-center">
-                  <motion.div
-                    animate={{ opacity: [0.3, 0.6, 0.3] }}
-                    transition={{ duration: 2, repeat: Infinity, delay: i * 0.5 }}
-                    className="w-8 h-1"
-                    style={{ backgroundColor: accentColor }}
-                  />
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-
-        {/* Vertical Line Accent */}
-        <motion.div
-          initial={{ height: 0 }}
-          animate={{ height: 120 }}
-          transition={{ duration: 1, delay: 0.5 }}
-          className="absolute left-[8%] top-48 w-px bg-gray-200 hidden lg:block"
-        />
-
-        {/* Breadcrumb - Outside fading container */}
-        <div className="container mx-auto px-4 relative z-20 mb-8">
-          <Breadcrumbs items={[
-            { label: t('navbar.home') as string, href: '/' },
-            { label: t('services.detail.breadcrumb.services') as string, href: '/services' },
-            { label: serviceName, href: `/services/${serviceSlug}` },
-            { label: t('services.detail.breadcrumb.portfolio') as string },
-          ]} />
-        </div>
-
-        <motion.div
-          style={{ opacity: heroOpacity, y: heroY }}
-          className="container mx-auto px-4 relative z-10"
-        >
-          <div className="max-w-3xl">
-            {/* Eyebrow */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="flex items-center gap-3 mb-6"
-            >
-              <motion.div
-                animate={{ rotate: [0, 45, 0] }}
-                transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-                className="w-10 h-10 border flex items-center justify-center"
-                style={{ borderColor: accentColor }}
-              >
-                <div className="w-3 h-3" style={{ backgroundColor: accentColor }} />
-              </motion.div>
-              <span className="text-xs font-medium uppercase tracking-widest" style={{ color: accentColor }}>
-                {t('services.detail.portfolio.eyebrow')}
-              </span>
-            </motion.div>
-
-            {/* Title */}
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-display font-light text-gray-900 mb-8 leading-none"
-            >
-              {t('services.detail.portfolio.heroTitle')}
-              <br />
-              <span className="font-semibold" style={{ color: accentColor }}>{t('services.detail.portfolio.heroTitleAccent')}</span>
-            </motion.h1>
-
-            {/* Description */}
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-xl text-gray-500 max-w-2xl leading-relaxed mb-12"
-            >
-              {t('services.detail.portfolio.heroDescription')}
-            </motion.p>
-
-            {/* Stats */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex gap-16 border-t border-gray-100 pt-8"
-            >
-              <div>
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ type: 'spring', delay: 0.5 }}
-                  className="text-5xl font-light"
-                  style={{ color: accentColor }}
-                >
-                  {portfolio.length}
-                </motion.div>
-                <div className="text-sm text-gray-400 mt-1">{t('services.detail.portfolio.stats.projects')}</div>
-              </div>
-              <div>
-                <div className="text-5xl font-light text-gray-900">{categories.length}</div>
-                <div className="text-sm text-gray-400 mt-1">{t('services.detail.portfolio.stats.categories')}</div>
-              </div>
-              <div>
-                <div className="text-5xl font-light text-gray-900">100%</div>
-                <div className="text-sm text-gray-400 mt-1">{t('services.detail.portfolio.stats.satisfaction')}</div>
-              </div>
-            </motion.div>
-          </div>
-        </motion.div>
-      </section>
+    <div className="min-h-screen bg-white">
+      {/* Shared internal-page hero — same design language as the other subpages */}
+      <InternalPageHero
+        serviceName={serviceName}
+        accentWord={t('services.detail.breadcrumb.portfolio') as string}
+        subtitle={t('services.detail.portfolio.heroDescription') as string}
+        accentHex={accentColor}
+        crumbs={[
+          { label: t('navbar.home') as string, href: '/' },
+          { label: t('services.detail.breadcrumb.services') as string, href: '/services' },
+          { label: serviceName, href: `/services/${serviceSlug}` },
+          { label: t('services.detail.breadcrumb.portfolio') as string },
+        ]}
+        scene={<PortfolioScene accent={accentColor} />}
+      />
 
       {/* Portfolio Grid Section */}
       <section className="py-32 bg-gray-50">
@@ -368,8 +210,7 @@ export default function PortfolioPageClient({
                               {item.link && (
                                 <a
                                   href={item.link}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
+                                  {...(item.link.startsWith('/') ? {} : { target: '_blank', rel: 'noopener noreferrer' })}
                                   className="inline-flex items-center gap-2 text-sm transition-colors"
                                   style={{ color: accentColor }}
                                 >
@@ -559,7 +400,7 @@ export default function PortfolioPageClient({
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <LocalizedLink
-                href="/contact"
+                href="/start-project"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-white font-bold transition-all hover:scale-105"
                 style={{ backgroundColor: accentColor }}
               >

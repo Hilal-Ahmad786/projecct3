@@ -50,7 +50,23 @@ export default async function ServicePortfolioPage({ params }: PageProps) {
   }
 
   const content = service.content as any || {};
-  const portfolio = content.portfolio || [];
+  let portfolio = content.portfolio || [];
+
+  // Content fallback: services without their own portfolio show real featured
+  // projects (Project table) instead of an empty "coming soon" state, enriched
+  // with description/technologies and linked to the project page.
+  if (portfolio.length === 0) {
+    const { getFeaturedProjects } = await import('@/lib/database/public-queries');
+    const projects = await getFeaturedProjects(locale);
+    portfolio = (projects || []).slice(0, 6).map((p: any) => ({
+      title: p.name,
+      category: p.industry || p.category || '',
+      image: p.thumbnail || '',
+      description: p.description || undefined,
+      technologies: p.technologies?.length ? p.technologies : undefined,
+      link: `/${locale}/projects/${p.slug}`,
+    }));
+  }
 
   return (
     <PortfolioPageClient
