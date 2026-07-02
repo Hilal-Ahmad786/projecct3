@@ -575,8 +575,8 @@ function HeroSection({
             transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
             className="space-y-8"
           >
-            {/* Breadcrumb */}
-            <nav className="flex items-center gap-2 text-sm text-gray-400">
+            {/* Breadcrumb — mt keeps a small gap below the fixed header on mobile */}
+            <nav className="flex items-center gap-2 text-sm text-gray-400 mt-3 lg:mt-0">
               <LocalizedLink href="/services" className="hover:text-gray-900 transition-colors">
                 {t('services.detail.breadcrumb.services')}
               </LocalizedLink>
