@@ -1381,7 +1381,7 @@ export default function Navbar() {
 
                         {/* Category pills */}
                         {!mobileSearchQuery.trim() && (
-                          <div className="grid grid-cols-2 gap-1.5 pb-1">
+                          <div className="grid grid-cols-2 gap-1 pb-1">
                             {Object.entries(serviceCategories).map(([catKey, cat]) => {
                               const CatIcon = cat.icon;
                               const isActive = mobileActiveCat === catKey;
@@ -1390,7 +1390,7 @@ export default function Navbar() {
                                 <button
                                   key={catKey}
                                   onClick={() => setMobileActiveCat(catKey)}
-                                  className={`flex items-center justify-center gap-1.5 px-2.5 py-2 rounded-full text-xs font-semibold whitespace-nowrap transition-all border ${isActive ? 'bg-heritage-turquoise text-white border-heritage-turquoise shadow-sm' : 'bg-white text-gray-600 border-gray-200'}`}
+                                  className={`flex items-center justify-center gap-1 px-2 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all border ${isActive ? 'bg-heritage-turquoise text-white border-heritage-turquoise shadow-sm' : 'bg-white text-gray-600 border-gray-200'}`}
                                 >
                                   <CatIcon className="w-3.5 h-3.5" />
                                   {tServices(cat.key)}
