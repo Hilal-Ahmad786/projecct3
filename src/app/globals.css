@@ -36,6 +36,29 @@
   .hero-float-a, .hero-float-b { animation: none; }
 }
 
+/* Hero entrance — pure CSS so the hero is VISIBLE in the server HTML and
+   animates as soon as styles parse, instead of rendering opacity:0 inline
+   styles that wait for framer-motion to hydrate (≈12s blank hero on slow
+   mobile connections). Stagger via inline animation-delay. */
+@keyframes heroEnterUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes heroEnterChar {
+  from { opacity: 0; transform: rotateX(90deg) translateZ(-60px); }
+  to   { opacity: 1; transform: rotateX(0deg) translateZ(0); }
+}
+@keyframes heroEnterSide {
+  from { opacity: 0; transform: translateX(var(--hero-side-x, 32px)); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+.hero-enter      { animation: heroEnterUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.hero-enter-char { display: inline-block; transform-origin: 50% 50% -30px; animation: heroEnterChar 0.5s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.hero-enter-side { animation: heroEnterSide 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.35s both; }
+@media (prefers-reduced-motion: reduce) {
+  .hero-enter, .hero-enter-char, .hero-enter-side { animation: none; }
+}
+
 /* FloatingButtons (global FAB) — CSS replacements for the framer-motion
    animations that used to load on every page. */
 @keyframes fabItemIn {

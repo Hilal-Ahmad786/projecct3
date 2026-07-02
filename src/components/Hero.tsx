@@ -8,23 +8,15 @@ import HomeHeroOrbit from '@/components/HomeHeroOrbit'
 import MagneticButton from '@/components/MagneticButton'
 import Button from '@/components/Button'
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations'
-import { smoothSpring, snappySpring, useCountUp, useInViewOnce } from '@/lib/animations'
+import { snappySpring, useCountUp, useInViewOnce } from '@/lib/animations'
 
 // ─── Spring config for scroll (stiffness/damping only — no 'type') ───
 const SCROLL_SPRING = { stiffness: 80, damping: 24 }
 
 // ─── Per-character 3D reveal ──────────────────────────────────────────
-function SplitText3D({
-  text,
-  mounted,
-  prefersReducedMotion,
-  dir = 'ltr',
-}: {
-  text: string
-  mounted: boolean
-  prefersReducedMotion: boolean | null
-  dir?: string
-}) {
+// Pure CSS (.hero-enter / .hero-enter-char) so the heading is present and
+// animating in the server HTML, before any JS loads.
+function SplitText3D({ text, dir = 'ltr' }: { text: string; dir?: string }) {
   const isRTL = dir === 'rtl'
 
   if (isRTL) {
@@ -33,19 +25,13 @@ function SplitText3D({
     return (
       <>
         {words.map((word, i) => (
-          <motion.span
+          <span
             key={i}
-            style={{ display: 'inline-block', willChange: 'transform' }}
-            initial={prefersReducedMotion ? {} : { opacity: 0, y: 16 }}
-            animate={mounted ? { opacity: 1, y: 0 } : {}}
-            transition={
-              prefersReducedMotion
-                ? { duration: 0 }
-                : { duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: i * 0.08 }
-            }
+            className="hero-enter"
+            style={{ display: 'inline-block', animationDelay: `${i * 0.08}s` }}
           >
             {word}{i < words.length - 1 ? ' ' : ''}
-          </motion.span>
+          </span>
         ))}
       </>
     )
@@ -55,23 +41,9 @@ function SplitText3D({
   return (
     <>
       {chars.map((char, i) => (
-        <motion.span
-          key={i}
-          style={{
-            display: 'inline-block',
-            willChange: 'transform',
-            transformOrigin: '50% 50% -30px',
-          }}
-          initial={prefersReducedMotion ? {} : { rotateX: 90, opacity: 0, z: -60 }}
-          animate={mounted ? { rotateX: 0, opacity: 1, z: 0 } : {}}
-          transition={
-            prefersReducedMotion
-              ? { duration: 0 }
-              : { ...snappySpring, delay: i * 0.03 }
-          }
-        >
+        <span key={i} className="hero-enter-char" style={{ animationDelay: `${i * 0.03}s` }}>
           {char === ' ' ? ' ' : char}
-        </motion.span>
+        </span>
       ))}
     </>
   )
@@ -82,6 +54,10 @@ function SplitText3D({
 function CountUpStat({ value, label }: { value: string; label: string }) {
   const { ref, isInView } = useInViewOnce('-100px')
   const prefersReducedMotion = useReducedMotion()
+  // SSR/pre-hydration shows the final value; the count-up only takes over
+  // after hydration so slow connections never see "0+".
+  const [hydrated, setHydrated] = useState(false)
+  useEffect(() => { setHydrated(true) }, [])
 
   const match = value.match(/^(\d+)(.*)$/)
   const target = match ? parseInt(match[1], 10) : 0
@@ -91,37 +67,12 @@ function CountUpStat({ value, label }: { value: string; label: string }) {
 
   return (
     <div ref={ref} className="text-center sm:text-start">
-      <motion.div
-        className="text-2xl font-light text-gray-900 mb-1"
-        style={{ willChange: 'transform', perspective: '400px' }}
-        initial={prefersReducedMotion ? {} : { rotateY: -90, opacity: 0 }}
-        animate={isInView ? { rotateY: 0, opacity: 1 } : {}}
-        transition={prefersReducedMotion ? { duration: 0 } : snappySpring}
-      >
-        {match ? `${count}${suffix}` : value}
-      </motion.div>
+      <div className="text-2xl font-light text-gray-900 mb-1">
+        {match && hydrated ? `${count}${suffix}` : value}
+      </div>
       <div className="text-caption text-gray-500">{label}</div>
     </div>
   )
-}
-
-// ─── Container variant for staggered entrance ─────────────────────────
-const leftContainerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { staggerChildren: 0.1, delayChildren: 0.05 },
-  },
-}
-
-const fadeUpItem = {
-  hidden: { opacity: 0, y: 28 },
-  visible: { opacity: 1, y: 0, transition: smoothSpring },
-}
-
-const lineDrawItem = {
-  hidden: { scaleX: 0 },
-  visible: { scaleX: 1, transition: { ...snappySpring, delay: 0.1 } },
 }
 
 export default function Hero() {
@@ -129,7 +80,6 @@ export default function Hero() {
   const titleRef = useRef<HTMLSpanElement>(null)
   const serviceWordRef = useRef<HTMLSpanElement>(null)
 
-  const [mounted, setMounted] = useState(false)
   const [currentIndex, setCurrentIndex] = useState(0)
   const prefersReducedMotion = useReducedMotion()
 
@@ -162,9 +112,7 @@ export default function Hero() {
   const crescentTopY    = useSpring(rawTopY,    SCROLL_SPRING)
   const crescentBotY    = useSpring(rawBotY,    SCROLL_SPRING)
 
-  // ── Mount + service word rotation ──────────────────────────────────
-  useEffect(() => { setMounted(true) }, [])
-
+  // ── Service word rotation ───────────────────────────────────────────
   useEffect(() => {
     if (prefersReducedMotion) return
     const interval = setInterval(() => {
@@ -213,10 +161,6 @@ export default function Hero() {
 
           {/* Left Column — staggered entrance + scroll parallax */}
           <motion.div
-            variants={prefersReducedMotion ? undefined : leftContainerVariants}
-            initial={prefersReducedMotion ? { opacity: 0 } : 'hidden'}
-            animate={mounted ? (prefersReducedMotion ? { opacity: 1 } : 'visible') : undefined}
-            transition={prefersReducedMotion ? { duration: 0 } : undefined}
             style={{
               y:       prefersReducedMotion ? 0 : parallaxY,
               scale:   prefersReducedMotion ? 1 : parallaxScale,
@@ -226,12 +170,8 @@ export default function Hero() {
             className="space-y-8"
           >
             {/* Overline */}
-            <motion.div
-              variants={prefersReducedMotion ? undefined : fadeUpItem}
-              className="flex items-center gap-3"
-            >
-              <motion.div
-                variants={prefersReducedMotion ? undefined : lineDrawItem}
+            <div className="hero-enter flex items-center gap-3" style={{ animationDelay: '0.05s' }}>
+              <div
                 className="w-8 h-0.5 origin-left"
                 style={{ background: 'var(--heritage-turquoise)' }}
               />
@@ -241,24 +181,16 @@ export default function Hero() {
               >
                 {t('eyebrow')}
               </span>
-            </motion.div>
+            </div>
 
             {/* Main Heading — 3D char reveal + GSAP float */}
-            <motion.div
-              variants={prefersReducedMotion ? undefined : fadeUpItem}
-              className="space-y-4"
-            >
+            <div className="hero-enter space-y-4" style={{ animationDelay: '0.12s' }}>
               <h1
                 className="text-display font-light text-gray-900 leading-none"
                 style={{ perspective: '800px' }}
               >
                 <span ref={titleRef} className="hero-float-a" style={{ display: 'inline-block' }}>
-                  <SplitText3D
-                    text={t('title') as string}
-                    mounted={mounted}
-                    prefersReducedMotion={prefersReducedMotion}
-                    dir={dir}
-                  />
+                  <SplitText3D text={t('title') as string} dir={dir} />
                 </span>
                 <br />
                 <span
@@ -266,7 +198,7 @@ export default function Hero() {
                   className="relative inline-block overflow-hidden hero-float-b"
                   style={{ minHeight: '1.2em' }}
                 >
-                  <AnimatePresence mode="wait">
+                  <AnimatePresence mode="wait" initial={false}>
                     <motion.span
                       key={currentIndex}
                       className="inline-block"
@@ -293,21 +225,15 @@ export default function Hero() {
                   />
                 </span>
               </h1>
-            </motion.div>
+            </div>
 
             {/* Description */}
-            <motion.p
-              variants={prefersReducedMotion ? undefined : fadeUpItem}
-              className="text-body text-gray-600 max-w-lg leading-relaxed"
-            >
+            <p className="hero-enter text-body text-gray-600 max-w-lg leading-relaxed" style={{ animationDelay: '0.2s' }}>
               {t('description')}
-            </motion.p>
+            </p>
 
             {/* Action Buttons — magnetic hover */}
-            <motion.div
-              variants={prefersReducedMotion ? undefined : fadeUpItem}
-              className="flex flex-col sm:flex-row gap-4"
-            >
+            <div className="hero-enter flex flex-col sm:flex-row gap-4" style={{ animationDelay: '0.28s' }}>
               <MagneticButton>
                 <Button
                   href="/services"
@@ -339,13 +265,10 @@ export default function Hero() {
                   {t('ourWork')}
                 </Button>
               </MagneticButton>
-            </motion.div>
+            </div>
 
             {/* Stats — 3D flip entrance */}
-            <motion.div
-              variants={prefersReducedMotion ? undefined : fadeUpItem}
-              className="grid grid-cols-3 gap-8 pt-8 border-t border-gray-200"
-            >
+            <div className="hero-enter grid grid-cols-3 gap-8 pt-8 border-t border-gray-200" style={{ animationDelay: '0.36s' }}>
               {[
                 { value: tStats('projects100'), label: t('stats.projects') },
                 { value: tStats('clients50'),   label: t('stats.clients')  },
@@ -357,18 +280,16 @@ export default function Hero() {
                   label={typeof stat.label === 'string' ? stat.label : String(stat.label)}
                 />
               ))}
-            </motion.div>
+            </div>
           </motion.div>
 
           {/* Right Column */}
-          <motion.div
-            initial={{ opacity: 0, x: dir === 'rtl' ? -32 : 32 }}
-            animate={{ opacity: mounted ? 1 : 0, x: mounted ? 0 : (dir === 'rtl' ? -32 : 32) }}
-            transition={prefersReducedMotion ? { duration: 0 } : { ...smoothSpring, delay: 0.35 }}
-            className="relative"
+          <div
+            className="hero-enter-side relative"
+            style={{ '--hero-side-x': dir === 'rtl' ? '-32px' : '32px' } as React.CSSProperties}
           >
             <HomeHeroOrbit />
-          </motion.div>
+          </div>
         </div>
       </div>
 
