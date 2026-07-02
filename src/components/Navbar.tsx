@@ -809,17 +809,17 @@ const serviceCategories: Record<string, { key: string; icon: React.ElementType; 
     gradient: 'from-blue-500 to-blue-600',
     services: servicesByCategory.web,
   },
-  aiData: {
-    key: 'aiData',
-    icon: CpuChipIcon,
-    gradient: 'from-violet-500 to-violet-600',
-    services: servicesByCategory.ai,
-  },
   marketing: {
     key: 'marketing',
     icon: MegaphoneIcon,
     gradient: 'from-green-500 to-green-600',
     services: servicesByCategory.marketing,
+  },
+  aiData: {
+    key: 'aiData',
+    icon: CpuChipIcon,
+    gradient: 'from-violet-500 to-violet-600',
+    services: servicesByCategory.ai,
   },
   design: {
     key: 'design',
@@ -862,6 +862,8 @@ export default function Navbar() {
   const [languageOpen, setLanguageOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const [mobileActiveCat, setMobileActiveCat] = useState('webSoftware');
+  const [mobileSearchQuery, setMobileSearchQuery] = useState('');
   const [activeTab, setActiveTab] = useState<string>('webSoftware');
   const [searchQuery, setSearchQuery] = useState('');
   const [activeMegaCat, setActiveMegaCat] = useState('webSoftware');
@@ -958,6 +960,7 @@ export default function Navbar() {
     setOpen(false);
     setServicesOpen(false);
     setSearchQuery('');
+    setMobileSearchQuery('');
   };
 
   // Get localized service path based on locale
@@ -1361,43 +1364,99 @@ export default function Navbar() {
                     </button>
 
                     {mobileServicesOpen && (
-                      <div className="mt-2 ml-4 space-y-4 pb-4">
-                        {Object.entries(serviceCategories).map(([catKey, cat]) => {
-                          const CatIcon = cat.icon;
-                          return (
-                            <div key={catKey}>
-                              <div className="flex items-center gap-2 mb-2 px-2">
-                                <div className={`w-6 h-6 rounded-md bg-gradient-to-br ${cat.gradient} flex items-center justify-center`}>
-                                  <CatIcon className="w-3 h-3 text-white" />
-                                </div>
-                                <h4 className="text-xs font-semibold text-gray-700 uppercase tracking-wider">
+                      <div className="mt-3 space-y-3 pb-4">
+                        {/* Search — same behavior as the desktop mega menu */}
+                        <div className="relative">
+                          <MagnifyingGlassIcon className={`absolute ${dir === 'rtl' ? 'right-3' : 'left-3'} top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 pointer-events-none`} />
+                          <input
+                            type="text"
+                            value={mobileSearchQuery}
+                            onChange={(e) => setMobileSearchQuery(e.target.value)}
+                            placeholder={tServices('searchPlaceholder') as string}
+                            className={`w-full bg-white rounded-full py-2 ${dir === 'rtl' ? 'pr-9 pl-3' : 'pl-9 pr-3'} border border-gray-200 focus:border-accent-emerald focus:ring-1 focus:ring-accent-emerald outline-none transition-all text-sm placeholder:text-gray-400`}
+                          />
+                        </div>
+
+                        {/* Category pills */}
+                        {!mobileSearchQuery.trim() && (
+                          <div className="flex gap-1.5 overflow-x-auto pb-1 scrollbar-none">
+                            {Object.entries(serviceCategories).map(([catKey, cat]) => {
+                              const CatIcon = cat.icon;
+                              const isActive = mobileActiveCat === catKey;
+                              const count = cat.services.reduce((n, s) => n + 1 + (s.children?.length || 0), 0);
+                              return (
+                                <button
+                                  key={catKey}
+                                  onClick={() => setMobileActiveCat(catKey)}
+                                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all border flex-shrink-0 ${isActive ? 'bg-heritage-turquoise text-white border-heritage-turquoise shadow-sm' : 'bg-white text-gray-600 border-gray-200'}`}
+                                >
+                                  <CatIcon className="w-3.5 h-3.5" />
                                   {tServices(cat.key)}
-                                </h4>
+                                  <span className={`text-[10px] font-bold px-1 py-0.5 rounded-full ${isActive ? 'bg-white/20 text-white' : 'bg-gray-100 text-gray-500'}`}>{count}</span>
+                                </button>
+                              );
+                            })}
+                          </div>
+                        )}
+
+                        {/* Catalog — parents with children, desktop mega-menu styling */}
+                        {(() => {
+                          const q = mobileSearchQuery.trim().toLowerCase();
+                          const svcLabel = (slug: string) => String(tServices(`services.${slug}`)).toLowerCase();
+                          const matchesQ = (slug: string) => slug.replace(/-/g, ' ').includes(q) || svcLabel(slug).includes(q);
+                          const cats = q
+                            ? Object.entries(serviceCategories)
+                            : Object.entries(serviceCategories).filter(([k]) => k === mobileActiveCat);
+                          return cats.map(([catKey, cat]) => {
+                            const groups = (q
+                              ? cat.services
+                                  .map(s => {
+                                    const kids = (s.children || []).filter(matchesQ);
+                                    const self = matchesQ(s.slug);
+                                    if (!self && kids.length === 0) return null;
+                                    return { slug: s.slug, children: self && kids.length === 0 ? (s.children || []) : kids };
+                                  })
+                                  .filter(Boolean) as { slug: string; children: string[] }[]
+                              : cat.services.map(s => ({ slug: s.slug, children: s.children || [] })));
+                            if (groups.length === 0) return null;
+                            return (
+                              <div key={catKey} className="space-y-4">
+                                {q && (
+                                  <div className={`flex items-center gap-2 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
+                                    <span className="text-[11px] font-bold uppercase tracking-widest text-heritage-turquoise">{tServices(cat.key)}</span>
+                                    <span className="h-px flex-1 bg-gray-100" />
+                                  </div>
+                                )}
+                                {groups.map(group => (
+                                  <div key={group.slug}>
+                                    <Link
+                                      href={getServicePath(group.slug)}
+                                      onClick={handleLinkClick}
+                                      className={`block font-semibold text-[13px] text-gray-900 mb-1.5 ${dir === 'rtl' ? 'border-r-2 border-l-0 pr-2' : 'border-l-2 pl-2'} border-heritage-turquoise hover:text-heritage-turquoise transition-colors leading-tight`}
+                                    >
+                                      {tServices(`services.${group.slug}`)}
+                                    </Link>
+                                    {group.children.length > 0 && (
+                                      <ul className={`flex flex-col gap-1 ${dir === 'rtl' ? 'pr-2.5' : 'pl-2.5'}`}>
+                                        {group.children.map(childSlug => (
+                                          <li key={childSlug}>
+                                            <Link
+                                              href={getServicePath(childSlug)}
+                                              onClick={handleLinkClick}
+                                              className="text-[12px] text-gray-500 hover:text-heritage-turquoise transition-colors leading-snug block py-0.5"
+                                            >
+                                              {tServices(`services.${childSlug}`)}
+                                            </Link>
+                                          </li>
+                                        ))}
+                                      </ul>
+                                    )}
+                                  </div>
+                                ))}
                               </div>
-                              <ul className="space-y-0.5">
-                                {cat.services.map((service) => {
-                                  const IconComponent = serviceIcons[service.slug] || CpuChipIcon;
-                                  const iconColor = serviceIconColors[service.slug];
-                                  return (
-                                    <li key={service.slug}>
-                                      <Link
-                                        href={getServicePath(service.slug)}
-                                        onClick={() => setOpen(false)}
-                                        className="flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-gray-900 px-2 py-1.5 hover:bg-gray-50 rounded-lg transition-colors"
-                                      >
-                                        <IconComponent className={`w-4 h-4 ${iconColor}`} />
-                                        <span>{tServices(`services.${service.slug}`)}</span>
-                                      </Link>
-                                      {/* Child sub-services intentionally not listed here —
-                                          ~220 links made the mobile drawer unusable; they
-                                          remain reachable from each parent service page. */}
-                                    </li>
-                                  );
-                                })}
-                              </ul>
-                            </div>
-                          );
-                        })}
+                            );
+                          });
+                        })()}
 
                         {/* View All */}
                         <Link
