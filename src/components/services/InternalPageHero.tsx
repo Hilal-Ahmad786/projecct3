@@ -31,7 +31,7 @@ export default function InternalPageHero({
   const { dir } = useTranslations();
 
   return (
-    <section className="relative pt-[calc(var(--navbar-h,64px)+2.5rem)] pb-16 overflow-hidden girih-bg girih-bg-fade" dir={dir}>
+    <section className="relative pt-[calc(var(--navbar-h,64px)+1.25rem)] pb-16 overflow-hidden girih-bg girih-bg-fade" dir={dir}>
       {/* heritage washes */}
       <div className={`absolute top-0 w-[480px] h-[480px] rounded-full blur-[120px] opacity-40 pointer-events-none ${dir === 'rtl' ? 'right-0' : 'left-0'}`} style={{ background: 'var(--accent-emerald-light)' }} />
       <div className={`absolute bottom-0 w-[380px] h-[380px] rounded-full blur-[100px] opacity-40 pointer-events-none ${dir === 'rtl' ? 'left-0' : 'right-0'}`} style={{ background: 'var(--heritage-sand)' }} />
