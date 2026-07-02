@@ -1,7 +1,7 @@
 // src/components/ProjectsGallerySection.tsx
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
 import SectionHeader from '@/components/SectionHeader';
@@ -42,8 +42,16 @@ export default function ProjectsGallerySection({ projects, locale }: ProjectsGal
   const t = useSectionTranslations('projects.gallery');
   const tCommon = useSectionTranslations('common');
 
+  const PAGE_SIZE = 9;
   const [activeCategory, setActiveCategory] = useState('all');
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
+
+  // Reset how many cards are shown whenever the active filter changes so the
+  // user always lands at the top of a fresh, short list instead of a huge one.
+  useEffect(() => {
+    setVisibleCount(PAGE_SIZE);
+  }, [activeCategory]);
 
   if (isLoading) {
     return (
@@ -66,46 +74,69 @@ export default function ProjectsGallerySection({ projects, locale }: ProjectsGal
     };
   };
 
-  // Extract unique categories, deduplicating case-insensitively
+  // Canonicalize a raw category value to a single stable key so casing/spelling
+  // variants (e.g. "Web" vs "web-development", "E-Commerce" vs "e-commerce")
+  // collapse into ONE filter chip instead of appearing twice.
+  const CATEGORY_ALIASES: Record<string, string> = {
+    web: 'web-development',
+    ecommerce: 'e-commerce',
+    mobile: 'mobile-apps',
+    ai: 'ai-solutions',
+  };
+  const canon = (cat: string) => {
+    const key = cat.toLowerCase().trim().replace(/[\s_]+/g, '-');
+    return CATEGORY_ALIASES[key] || key;
+  };
+
+  const translateCategory = (cat: string) => {
+    const key = canon(cat);
+    const translated = t(`categories.${key}`) as string;
+    if (translated && !translated.startsWith('projects.')) return translated;
+    // Slug-like value with no translation → title-case it (e.g.
+    // "desktop-application" → "Desktop Application"). Free-text industry
+    // phrases (with spaces) are returned unchanged.
+    if (/^[a-z0-9]+(-[a-z0-9]+)*$/.test(cat.toLowerCase().trim())) {
+      return canon(cat)
+        .split('-')
+        .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+        .join(' ');
+    }
+    return cat;
+  };
+
+  // Extract unique categories, deduplicating by canonical key
   const uniqueCategories = Array.from(
     new Map(
       projects
         .map((p) => p.category)
         .filter(Boolean)
-        .map((cat: string) => [cat.toLowerCase().replace(/[\s-]+/g, ''), cat])
+        .map((cat: string) => [canon(cat), cat])
     ).values()
   ) as string[];
-
-  const translateCategory = (cat: string) => {
-    const key = cat.toLowerCase().replace(/[\s_]+/g, '-');
-    const translated = t(`categories.${key}`) as string;
-    // t() returns the full key path when not found — detect miss and fall back
-    return translated && !translated.startsWith('projects.') ? translated : cat;
-  };
 
   const categories = [
     { key: 'all', label: (t('categories.all') as string) || 'All Projects' },
     ...uniqueCategories.map((cat) => ({
-      key: cat.toLowerCase().replace(/\s+/g, '-'),
+      key: canon(cat),
       label: translateCategory(cat),
     })),
   ];
 
-  // Filter projects by category
+  // Filter projects by category (canonical comparison)
   const filteredProjects =
     activeCategory === 'all'
       ? projects
-      : projects.filter(
-          (project) =>
-            project.category?.toLowerCase().replace(/\s+/g, '-') === activeCategory
-        );
+      : projects.filter((project) => project.category && canon(project.category) === activeCategory);
+
+  const visibleProjects = filteredProjects.slice(0, visibleCount);
+  const hasMore = filteredProjects.length > visibleCount;
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1,
+        staggerChildren: 0.06,
       },
     },
   };
@@ -179,7 +210,7 @@ export default function ProjectsGallerySection({ projects, locale }: ProjectsGal
             animate="visible"
             className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
-            {filteredProjects.map((project) => {
+            {visibleProjects.map((project) => {
               const localizedProject = getLocalizedProject(project);
               const hasImageError = imageErrors[project.id];
 
@@ -298,13 +329,37 @@ export default function ProjectsGallerySection({ projects, locale }: ProjectsGal
           </div>
         )}
 
-        {/* Load More / Contact CTA */}
+        {/* Load More */}
+        {filteredProjects.length > PAGE_SIZE && (
+          <div className="flex flex-col items-center gap-4 mt-14">
+            <p className="text-sm text-gray-500">
+              {(t('showingCount') as string)?.startsWith('projects.')
+                ? `Showing ${visibleProjects.length} of ${filteredProjects.length}`
+                : (t('showingCount') as string)
+                    ?.replace('{shown}', String(visibleProjects.length))
+                    .replace('{total}', String(filteredProjects.length)) ||
+                  `Showing ${visibleProjects.length} of ${filteredProjects.length}`}
+            </p>
+            {hasMore && (
+              <button
+                onClick={() => setVisibleCount((c) => c + PAGE_SIZE)}
+                className="px-8 py-3 text-sm font-medium border border-gray-900 text-gray-900 rounded-sm hover:bg-gray-900 hover:text-white transition-all duration-250"
+              >
+                {(t('loadMore') as string)?.startsWith('projects.')
+                  ? 'Load More Projects'
+                  : (t('loadMore') as string) || 'Load More Projects'}
+              </button>
+            )}
+          </div>
+        )}
+
+        {/* Contact CTA */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
-          className="text-center mt-12"
+          className="text-center mt-16 pt-12 border-t border-gray-100"
         >
           <Button href="/contact" variant="secondary" size="lg">
             {t('startProject') || 'Start Your Project'}
