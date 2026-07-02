@@ -1289,12 +1289,13 @@ export default function Navbar() {
               Lives INSIDE the fixed header so it shares its hide-on-scroll,
               background, and --navbar-h measurement. ── */}
         {isServicePage && (
-          <div className={`border-t border-gray-200/60 ${scrolled ? 'mt-3 -mb-3' : 'mt-4 -mb-4'}`}>
+          <div className={`hidden lg:block border-t border-gray-200/60 ${scrolled ? 'mt-3 -mb-3' : 'mt-4 -mb-4'}`}>
             <div
               ref={sectionBarRef}
-              className="container mx-auto flex items-center gap-0.5 overflow-x-auto scrollbar-none"
+              className="container mx-auto overflow-x-auto scrollbar-none"
               style={{ scrollbarWidth: 'none' }}
             >
+              <div className="flex items-center justify-center gap-0.5 min-w-max mx-auto">
               {servicePageLinks.map(({ label, href }) => {
                 const isActive = pathname === href;
                 return (
@@ -1309,6 +1310,7 @@ export default function Navbar() {
                   </Link>
                 );
               })}
+              </div>
             </div>
           </div>
         )}
