@@ -480,10 +480,9 @@ body {
   padding: 0 var(--space-md);
 }
 
-.grid {
-  display: grid;
-  gap: var(--space-lg);
-}
+/* NOTE: no custom `.grid` rule here — it would collide with Tailwind's
+   `grid` utility and force a global gap onto every grid on the site,
+   overriding per-element `gap-*` utilities (broke the mobile menu pills). */
 
 .grid-2 {
   grid-template-columns: repeat(2, 1fr);
