@@ -37,7 +37,7 @@ export default function Breadcrumbs({ items, className = '' }: { items: Crumb[];
       <motion.nav
         aria-label="Breadcrumb"
         {...(prefersReducedMotion ? {} : { initial: { opacity: 0, y: -6 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.3 } })}
-        className={`flex items-center flex-wrap gap-1.5 text-xs text-gray-400 mt-3 lg:mt-0 ${className}`}
+        className={`flex items-center flex-wrap gap-1.5 text-xs text-gray-400 mt-3 lg:mt-5 ${className}`}
         dir={dir}
       >
         {items.map((item, i) => (

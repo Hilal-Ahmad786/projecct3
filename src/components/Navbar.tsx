@@ -1295,7 +1295,7 @@ export default function Navbar() {
               className="container mx-auto overflow-x-auto scrollbar-none"
               style={{ scrollbarWidth: 'none' }}
             >
-              <div className="flex items-center justify-center gap-0.5 min-w-max mx-auto">
+              <div className="flex items-center gap-0.5 min-w-max">
               {servicePageLinks.map(({ label, href }) => {
                 const isActive = pathname === href;
                 return (
