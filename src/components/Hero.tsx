@@ -8,6 +8,7 @@ import HomeHeroOrbit from '@/components/HomeHeroOrbit'
 import MagneticButton from '@/components/MagneticButton'
 import Button from '@/components/Button'
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations'
+import { useIsMobile } from '@/hooks/useIsMobile'
 import { snappySpring, useCountUp, useInViewOnce } from '@/lib/animations'
 
 // ─── Spring config for scroll (stiffness/damping only — no 'type') ───
@@ -82,6 +83,10 @@ export default function Hero() {
 
   const [currentIndex, setCurrentIndex] = useState(0)
   const prefersReducedMotion = useReducedMotion()
+  const isMobile = useIsMobile()
+  // Scroll-linked springs write transforms every scroll frame — fine on
+  // desktop, main-thread jank on phones. Static there.
+  const still = prefersReducedMotion || isMobile
 
   const { dir } = useTranslations()
   const t = useSectionTranslations('hero')
@@ -132,25 +137,25 @@ export default function Hero() {
     >
       {/* Heritage gradient washes */}
       <div
-        className={`absolute top-0 w-[500px] h-[500px] rounded-full blur-[120px] opacity-50 pointer-events-none ${dir === 'rtl' ? 'right-0' : 'left-0'}`}
+        className={`hidden lg:block absolute top-0 w-[500px] h-[500px] rounded-full blur-[120px] opacity-50 pointer-events-none ${dir === 'rtl' ? 'right-0' : 'left-0'}`}
         style={{ background: 'var(--accent-emerald-light)' }}
       />
       <div
-        className={`absolute bottom-0 w-[400px] h-[400px] rounded-full blur-[100px] opacity-40 pointer-events-none ${dir === 'rtl' ? 'left-0' : 'right-0'}`}
+        className={`hidden lg:block absolute bottom-0 w-[400px] h-[400px] rounded-full blur-[100px] opacity-40 pointer-events-none ${dir === 'rtl' ? 'left-0' : 'right-0'}`}
         style={{ background: 'var(--heritage-sand)' }}
       />
 
       {/* Crescent Elements — scroll-parallax */}
       <motion.div
         className={`absolute top-32 w-32 h-32 ${dir === 'rtl' ? 'left-20' : 'right-20'}`}
-        style={{ y: prefersReducedMotion ? 0 : crescentTopY, willChange: 'transform', color: 'var(--heritage-turquoise)' }}
+        style={{ y: still ? 0 : crescentTopY, willChange: 'transform', color: 'var(--heritage-turquoise)' }}
       >
         <div className={`crescent ${dir === 'rtl' ? 'crescent-left' : 'crescent-right'} crescent-medium`} />
       </motion.div>
 
       <motion.div
         className={`absolute bottom-32 w-24 h-24 ${dir === 'rtl' ? 'right-16' : 'left-16'}`}
-        style={{ y: prefersReducedMotion ? 0 : crescentBotY, willChange: 'transform', color: 'var(--heritage-saffron)' }}
+        style={{ y: still ? 0 : crescentBotY, willChange: 'transform', color: 'var(--heritage-saffron)' }}
       >
         <div className={`crescent ${dir === 'rtl' ? 'crescent-right' : 'crescent-left'} crescent-medium`} />
       </motion.div>
@@ -162,9 +167,9 @@ export default function Hero() {
           {/* Left Column — staggered entrance + scroll parallax */}
           <motion.div
             style={{
-              y:       prefersReducedMotion ? 0 : parallaxY,
-              scale:   prefersReducedMotion ? 1 : parallaxScale,
-              opacity: prefersReducedMotion ? 1 : parallaxOpacity,
+              y:       still ? 0 : parallaxY,
+              scale:   still ? 1 : parallaxScale,
+              opacity: still ? 1 : parallaxOpacity,
               willChange: 'transform, opacity',
             }}
             className="space-y-8"

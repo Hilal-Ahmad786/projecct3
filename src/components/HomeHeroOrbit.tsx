@@ -6,6 +6,7 @@
 
 import React from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
+import { useIsMobile } from '@/hooks/useIsMobile';
 import { H, GirihHalo, HeritageParticles, starPoints, popIn } from '@/components/services/hero-visuals/primitives';
 import { HERO_NODES, HeroIcon } from '@/components/heritage/hero-nodes';
 
@@ -17,7 +18,12 @@ function nodePos(angle: number) {
 }
 
 export default function HomeHeroOrbit() {
-  const reduced = useReducedMotion();
+  const prefersReduced = useReducedMotion();
+  const isMobile = useIsMobile();
+  // Infinite SVG rotations repaint every frame — a constant main-thread
+  // cost that makes mid-range phones feel like they're hanging. Render
+  // the scene statically on mobile (and for reduced-motion users).
+  const reduced = prefersReduced || isMobile;
 
   return (
     <div className="relative w-[320px] sm:w-[380px] md:w-[460px] max-w-full mx-auto aspect-square">
@@ -26,7 +32,7 @@ export default function HomeHeroOrbit() {
         style={{ background: H.turquoise, opacity: 0.1 }}
       />
       <GirihHalo size={460} color={H.saffron} opacity={0.2} />
-      <HeritageParticles count={14} />
+      {!reduced && <HeritageParticles count={14} />}
 
       <svg viewBox="0 0 400 400" className="absolute inset-0 w-full h-full" aria-hidden="true">
         {/* static orbit ring */}

@@ -309,6 +309,17 @@
   box-shadow: var(--glass-shadow);
 }
 
+/* backdrop-filter is repainted continuously while content moves under it —
+   one of the biggest scroll-jank sources on phones. Below lg, swap glass
+   for a near-opaque background. */
+@media (max-width: 1023px) {
+  .glass, .glass-strong, .glass-subtle {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(255, 255, 255, 0.96);
+  }
+}
+
 /* Colored Glass Variants */
 .glass-emerald {
   background: linear-gradient(135deg, var(--glass-bg) 0%, var(--glass-emerald) 100%);

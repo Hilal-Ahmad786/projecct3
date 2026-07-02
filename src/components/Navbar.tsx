@@ -976,7 +976,7 @@ export default function Navbar() {
         className={`
           fixed inset-x-0 top-0 z-50 transition-all duration-300 will-change-transform
           ${scrolled
-            ? 'bg-white/80 backdrop-blur-md border-b border-gray-200/60 shadow-sm py-3'
+            ? 'bg-white/95 lg:bg-white/80 lg:backdrop-blur-md border-b border-gray-200/60 shadow-sm py-3'
             : 'bg-transparent border-b border-transparent py-4'
           }
           ${navVisible ? 'translate-y-0' : '-translate-y-full'}
