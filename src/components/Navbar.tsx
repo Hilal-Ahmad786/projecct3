@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { servicesByCategory, type ServiceEntry } from '@/data/serviceHierarchy';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import {
   XMarkIcon,
@@ -860,21 +860,21 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [navVisible, setNavVisible] = useState(true);
   const lastScrollY = useRef(0);
-  const headerRef = useRef<HTMLElement>(null);
-
-  // Keep --navbar-h in sync with the header's actual rendered height.
-  // Must be the BORDER-BOX height: contentRect excludes the header's py-3/4
-  // padding, which under-reported the height and let page content (e.g.
-  // breadcrumbs) slide under the service-section row.
-  useEffect(() => {
-    const el = headerRef.current;
+  // Keep --navbar-h in sync with the header's actual border-box height.
+  // Callback ref (NOT useRef + effect): the previous ref was never attached
+  // to <header>, so the measurement silently never ran and every page
+  // laid out against the 64px fallback. A callback ref fires exactly when
+  // the element attaches, so this cannot be missed again.
+  const headerRO = useRef<ResizeObserver | null>(null);
+  const measureHeader = useCallback((el: HTMLElement | null) => {
+    headerRO.current?.disconnect();
+    headerRO.current = null;
     if (!el) return;
-    const obs = new ResizeObserver(() => {
+    const apply = () =>
       document.documentElement.style.setProperty('--navbar-h', `${el.offsetHeight}px`);
-    });
-    obs.observe(el);
-    document.documentElement.style.setProperty('--navbar-h', `${el.offsetHeight}px`);
-    return () => obs.disconnect();
+    apply();
+    headerRO.current = new ResizeObserver(apply);
+    headerRO.current.observe(el);
   }, []);
 
   const [open, setOpen] = useState(false);
@@ -1002,6 +1002,7 @@ export default function Navbar() {
   return (
     <>
       <header
+        ref={measureHeader}
         className={`
           fixed inset-x-0 top-0 z-50 transition-all duration-300 will-change-transform
           ${scrolled

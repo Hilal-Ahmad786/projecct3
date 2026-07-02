@@ -184,6 +184,11 @@
 }
 
 :root {
+  /* Fixed-header height. JS (Navbar callback ref) keeps this exact; these
+     defaults keep pre-hydration layout close so nothing hides under the
+     header even before any JS runs. */
+  --navbar-h: 88px;
+
   /* Primary Color System - Monochromatic Approach */
   --primary-dark: #1a1a1a;
   /* Almost black for text */
