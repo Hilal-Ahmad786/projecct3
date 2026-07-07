@@ -12,7 +12,7 @@ import TechApproachSection from '@/components/TechApproachSection';
 import SuccessMetricsSection from '@/components/SuccessMetricsSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import CtaBanner from '@/components/CtaBanner';
-import { getProjects } from '@/lib/admin/database/queries';
+import { getProjectsForGallery } from '@/lib/database/public-queries';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -70,11 +70,7 @@ export default async function ProjectsPage({ params }: PageProps) {
   // a DB error must not crash the build/deploy — degrade to an empty gallery.
   let projects: any[] = [];
   try {
-    const res = await getProjects(
-      { status: 'published' },
-      { limit: 50, sortBy: 'createdAt', sortOrder: 'desc' }
-    );
-    projects = res.data;
+    projects = await getProjectsForGallery(50);
   } catch (err) {
     console.error('[projects/page] DB error fetching projects:', err);
   }

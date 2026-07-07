@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 import { localizeFullPath } from '@/lib/routes';
 import { Locale } from '@/lib/i18n';
-import { getPublishedServices } from '@/lib/database/public-queries';
+import { getServicesForSitemap } from '@/lib/database/public-queries';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 const allLocales: Locale[] = ['en', 'tr', 'de', 'ar', 'ur'];
@@ -147,7 +147,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // sub-pages that actually have content. Replaces the old hardcoded ~24 slugs.
   let services: Record<string, unknown>[] = [];
   try {
-    services = (await getPublishedServices()) as Record<string, unknown>[];
+    services = (await getServicesForSitemap()) as Record<string, unknown>[];
   } catch {
     services = [];
   }

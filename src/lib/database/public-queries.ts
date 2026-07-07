@@ -1,5 +1,11 @@
 import { getPrisma } from '@/lib/db/prisma';
 import { unstable_cache } from 'next/cache';
+import {
+  fallbackServices,
+  fallbackProjects,
+  fallbackServiceBySlug,
+  fallbackSubServices,
+} from './_fallback';
 
 const getPrismaClient = () => getPrisma();
 
@@ -34,10 +40,11 @@ export const getPublishedServices = unstable_cache(
         },
         orderBy: { order: 'asc' },
       });
+      if (!services.length) return fallbackServices;
       return services.map((service) => mergeServiceTranslation(service, locale));
     } catch (err) {
       dbError('getPublishedServices', err);
-      return [];
+      return fallbackServices;
     }
   },
   ['public:services-all'],
@@ -55,13 +62,51 @@ export const getFeaturedServices = unstable_cache(
         },
         orderBy: { order: 'asc' },
       });
+      if (!services.length) return fallbackServices.filter((s) => s.featured);
       return services.map((service) => mergeServiceTranslation(service, locale));
     } catch (err) {
       dbError('getFeaturedServices', err);
-      return [];
+      return fallbackServices.filter((s) => s.featured);
     }
   },
   ['public:services-featured'],
+  CACHE_OPTS,
+);
+
+// Trimmed sitemap query. The sitemap only needs: slug + updatedAt (for the URL
+// and lastmod) and enough to decide which sub-pages exist (features / content
+// sub-arrays / whether any pricing package exists). Previously it called
+// getPublishedServices(), which additionally pulls each service's name, long
+// descriptions, benefits, meta fields and FULL pricing-package rows for ~270
+// services on every (re)generation — all discarded. We keep `content` because
+// subPagesFor() inspects it, but drop the rest and reduce pricing to a bare
+// existence check, cutting the transfer without losing any sitemap URLs.
+export const getServicesForSitemap = unstable_cache(
+  async () => {
+    try {
+      return await getPrismaClient().service.findMany({
+        where: { status: { in: ['published', 'active'] } },
+        select: {
+          slug: true,
+          updatedAt: true,
+          features: true,
+          content: true,
+          pricingPackages: { select: { id: true }, take: 1 },
+        },
+        orderBy: { order: 'asc' },
+      });
+    } catch (err) {
+      dbError('getServicesForSitemap', err);
+      return fallbackServices.map((s) => ({
+        slug: s.slug,
+        updatedAt: s.updatedAt,
+        features: s.features,
+        content: s.content,
+        pricingPackages: (s.pricingPackages ?? []).slice(0, 1).map((p: any) => ({ id: p.id })),
+      }));
+    }
+  },
+  ['public:services-sitemap'],
   CACHE_OPTS,
 );
 
@@ -77,11 +122,11 @@ export const getPublishedServiceBySlug = unstable_cache(
           },
         },
       });
-      if (!service) return null;
+      if (!service) return fallbackServiceBySlug(slug);
       return mergeServiceTranslation(service, locale);
     } catch (err) {
       dbError('getPublishedServiceBySlug', err);
-      return null;
+      return fallbackServiceBySlug(slug);
     }
   },
   ['public:service-by-slug'],
@@ -127,10 +172,11 @@ export const getSubServices = unstable_cache(
         },
         orderBy: { order: 'asc' },
       });
+      if (!services.length) return fallbackSubServices(parentSlug);
       return services.map((service) => mergeServiceTranslation(service, locale));
     } catch (err) {
       dbError('getSubServices', err);
-      return [];
+      return fallbackSubServices(parentSlug);
     }
   },
   ['public:sub-services'],
@@ -146,12 +192,14 @@ export const getParentService = unstable_cache(
           translations: locale ? { where: { locale } } : false,
         },
       });
-      if (!service) return null;
-      const merged = mergeServiceTranslation(service, locale);
+      const src = service ?? fallbackServiceBySlug(slug);
+      if (!src) return null;
+      const merged = mergeServiceTranslation(src, locale);
       return { name: merged.name, slug: merged.slug, icon: merged.icon, color: merged.color };
     } catch (err) {
       dbError('getParentService', err);
-      return null;
+      const s = fallbackServiceBySlug(slug);
+      return s ? { name: s.name, slug: s.slug, icon: s.icon, color: s.color } : null;
     }
   },
   ['public:parent-service'],
@@ -173,12 +221,68 @@ export async function getPublishedProjects(locale?: string, category?: string) {
       orderBy: { createdAt: 'desc' },
     });
 
+    if (!projects.length) return fallbackProjectList(locale, category);
     return projects.map((project) => mergeProjectTranslation(project, locale));
   } catch (err) {
     dbError('getPublishedProjects', err);
-    return [];
+    return fallbackProjectList(locale, category);
   }
 }
+
+// Merge a baked fallback project down to a single locale, reusing the same
+// translation-merge logic the DB path uses.
+function fallbackProjectList(locale?: string, category?: string) {
+  let list = fallbackProjects;
+  if (category) list = list.filter((p) => p.category === category);
+  return list.map((p) => mergeProjectTranslation(fallbackForLocale(p, locale), locale));
+}
+
+function fallbackForLocale(p: any, locale?: string) {
+  return {
+    ...p,
+    translations: locale ? (p.translations ?? []).filter((t: any) => t.locale === locale) : [],
+  };
+}
+
+// Lightweight gallery query for the public /projects page. Selects only the
+// fields the project grid actually renders and EXCLUDES the heavy detail-only
+// fields (content JSON, fullDescription, challenge, solution, images) on both the
+// project row and its 5 translations. The previous path (admin getProjects with
+// `include: { translations: true }`) pulled full localized content for every card,
+// which was the main data-transfer drain. Cached for 1h like the other public reads.
+export const getProjectsForGallery = unstable_cache(
+  async (limit = 50) => {
+    try {
+      const rows = await getPrismaClient().project.findMany({
+        where: { status: { in: ['published', 'PUBLISHED', 'active'] } },
+        select: {
+          id: true,
+          name: true,
+          slug: true,
+          client: true,
+          category: true,
+          industry: true,
+          description: true,
+          thumbnail: true,
+          technologies: true,
+          projectUrl: true,
+          results: true,
+          translations: {
+            select: { locale: true, name: true, description: true },
+          },
+        },
+        orderBy: { createdAt: 'desc' },
+        take: limit,
+      });
+      return rows.length ? rows : fallbackProjects.slice(0, limit);
+    } catch (err) {
+      dbError('getProjectsForGallery', err);
+      return fallbackProjects.slice(0, limit);
+    }
+  },
+  ['public:projects-gallery'],
+  { revalidate: 3600, tags: ['projects'] },
+);
 
 export async function getFeaturedProjects(locale?: string) {
   try {
@@ -190,10 +294,13 @@ export async function getFeaturedProjects(locale?: string) {
       orderBy: { createdAt: 'desc' },
     });
 
+    if (!projects.length) {
+      return fallbackProjects.filter((p) => p.featured).map((p) => mergeProjectTranslation(fallbackForLocale(p, locale), locale));
+    }
     return projects.map((project) => mergeProjectTranslation(project, locale));
   } catch (err) {
     dbError('getFeaturedProjects', err);
-    return [];
+    return fallbackProjects.filter((p) => p.featured).map((p) => mergeProjectTranslation(fallbackForLocale(p, locale), locale));
   }
 }
 
@@ -206,12 +313,16 @@ export async function getPublishedProjectBySlug(slug: string, locale?: string) {
       },
     });
 
-    if (!project) return null;
+    if (!project) {
+      const fb = fallbackProjects.find((p) => p.slug === slug);
+      return fb ? mergeProjectTranslation(fallbackForLocale(fb, locale), locale) : null;
+    }
 
     return mergeProjectTranslation(project, locale);
   } catch (err) {
     dbError('getPublishedProjectBySlug', err);
-    return null;
+    const fb = fallbackProjects.find((p) => p.slug === slug);
+    return fb ? mergeProjectTranslation(fallbackForLocale(fb, locale), locale) : null;
   }
 }
 
@@ -245,26 +356,47 @@ export async function getPublicPricingPackages(serviceSlug?: string) {
     where.service = { status: { in: ['published', 'active'] } };
   }
 
-  const packages = await getPrismaClient().pricingPackage.findMany({
-    where,
-    include: {
-      service: {
-        select: { id: true, name: true, slug: true, icon: true, color: true },
+  try {
+    const packages = await getPrismaClient().pricingPackage.findMany({
+      where,
+      include: {
+        service: {
+          select: { id: true, name: true, slug: true, icon: true, color: true },
+        },
       },
-    },
-    orderBy: [{ service: { order: 'asc' } }, { tier: 'asc' }],
-  });
+      orderBy: [{ service: { order: 'asc' } }, { tier: 'asc' }],
+    });
 
-  // Group by service
-  const grouped: Record<string, { service: any; packages: any[] }> = {};
-  for (const pkg of packages) {
-    const key = pkg.service.slug;
-    if (!grouped[key]) {
-      grouped[key] = { service: pkg.service, packages: [] };
+    if (!packages.length) return fallbackPricingPackages(serviceSlug);
+
+    // Group by service
+    const grouped: Record<string, { service: any; packages: any[] }> = {};
+    for (const pkg of packages) {
+      const key = pkg.service.slug;
+      if (!grouped[key]) {
+        grouped[key] = { service: pkg.service, packages: [] };
+      }
+      const { service, ...pkgData } = pkg;
+      grouped[key].packages.push(pkgData);
     }
-    const { service, ...pkgData } = pkg;
-    grouped[key].packages.push(pkgData);
-  }
 
-  return Object.values(grouped);
+    return Object.values(grouped);
+  } catch (err) {
+    dbError('getPublicPricingPackages', err);
+    return fallbackPricingPackages(serviceSlug);
+  }
+}
+
+// Rebuild the grouped pricing structure from the baked service snapshot (each
+// fallback service carries its pricingPackages inline).
+function fallbackPricingPackages(serviceSlug?: string) {
+  const services = serviceSlug
+    ? fallbackServices.filter((s) => s.slug === serviceSlug)
+    : fallbackServices;
+  return services
+    .filter((s) => Array.isArray(s.pricingPackages) && s.pricingPackages.length)
+    .map((s) => ({
+      service: { id: s.id, name: s.name, slug: s.slug, icon: s.icon, color: s.color },
+      packages: s.pricingPackages,
+    }));
 }
