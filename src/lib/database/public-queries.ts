@@ -208,26 +208,30 @@ export const getParentService = unstable_cache(
 
 // ==================== PROJECT QUERIES ====================
 
-export async function getPublishedProjects(locale?: string, category?: string) {
-  const where: Record<string, unknown> = { status: { in: ['published', 'PUBLISHED', 'active'] } };
-  if (category) where.category = category;
+export const getPublishedProjects = unstable_cache(
+  async (locale?: string, category?: string) => {
+    const where: Record<string, unknown> = { status: { in: ['published', 'PUBLISHED', 'active'] } };
+    if (category) where.category = category;
 
-  try {
-    const projects = await getPrismaClient().project.findMany({
-      where,
-      include: {
-        translations: locale ? { where: { locale } } : false,
-      },
-      orderBy: { createdAt: 'desc' },
-    });
+    try {
+      const projects = await getPrismaClient().project.findMany({
+        where,
+        include: {
+          translations: locale ? { where: { locale } } : false,
+        },
+        orderBy: { createdAt: 'desc' },
+      });
 
-    if (!projects.length) return fallbackProjectList(locale, category);
-    return projects.map((project) => mergeProjectTranslation(project, locale));
-  } catch (err) {
-    dbError('getPublishedProjects', err);
-    return fallbackProjectList(locale, category);
-  }
-}
+      if (!projects.length) return fallbackProjectList(locale, category);
+      return projects.map((project) => mergeProjectTranslation(project, locale));
+    } catch (err) {
+      dbError('getPublishedProjects', err);
+      return fallbackProjectList(locale, category);
+    }
+  },
+  ['public:projects-all'],
+  { revalidate: 3600, tags: ['projects'] },
+);
 
 // Merge a baked fallback project down to a single locale, reusing the same
 // translation-merge logic the DB path uses.
@@ -284,47 +288,55 @@ export const getProjectsForGallery = unstable_cache(
   { revalidate: 3600, tags: ['projects'] },
 );
 
-export async function getFeaturedProjects(locale?: string) {
-  try {
-    const projects = await getPrismaClient().project.findMany({
-      where: { status: { in: ['published', 'PUBLISHED', 'active'] }, featured: true },
-      include: {
-        translations: locale ? { where: { locale } } : false,
-      },
-      orderBy: { createdAt: 'desc' },
-    });
+export const getFeaturedProjects = unstable_cache(
+  async (locale?: string) => {
+    try {
+      const projects = await getPrismaClient().project.findMany({
+        where: { status: { in: ['published', 'PUBLISHED', 'active'] }, featured: true },
+        include: {
+          translations: locale ? { where: { locale } } : false,
+        },
+        orderBy: { createdAt: 'desc' },
+      });
 
-    if (!projects.length) {
+      if (!projects.length) {
+        return fallbackProjects.filter((p) => p.featured).map((p) => mergeProjectTranslation(fallbackForLocale(p, locale), locale));
+      }
+      return projects.map((project) => mergeProjectTranslation(project, locale));
+    } catch (err) {
+      dbError('getFeaturedProjects', err);
       return fallbackProjects.filter((p) => p.featured).map((p) => mergeProjectTranslation(fallbackForLocale(p, locale), locale));
     }
-    return projects.map((project) => mergeProjectTranslation(project, locale));
-  } catch (err) {
-    dbError('getFeaturedProjects', err);
-    return fallbackProjects.filter((p) => p.featured).map((p) => mergeProjectTranslation(fallbackForLocale(p, locale), locale));
-  }
-}
+  },
+  ['public:projects-featured'],
+  { revalidate: 3600, tags: ['projects'] },
+);
 
-export async function getPublishedProjectBySlug(slug: string, locale?: string) {
-  try {
-    const project = await getPrismaClient().project.findFirst({
-      where: { slug, status: { in: ['published', 'PUBLISHED', 'active'] } },
-      include: {
-        translations: locale ? { where: { locale } } : false,
-      },
-    });
+export const getPublishedProjectBySlug = unstable_cache(
+  async (slug: string, locale?: string) => {
+    try {
+      const project = await getPrismaClient().project.findFirst({
+        where: { slug, status: { in: ['published', 'PUBLISHED', 'active'] } },
+        include: {
+          translations: locale ? { where: { locale } } : false,
+        },
+      });
 
-    if (!project) {
+      if (!project) {
+        const fb = fallbackProjects.find((p) => p.slug === slug);
+        return fb ? mergeProjectTranslation(fallbackForLocale(fb, locale), locale) : null;
+      }
+
+      return mergeProjectTranslation(project, locale);
+    } catch (err) {
+      dbError('getPublishedProjectBySlug', err);
       const fb = fallbackProjects.find((p) => p.slug === slug);
       return fb ? mergeProjectTranslation(fallbackForLocale(fb, locale), locale) : null;
     }
-
-    return mergeProjectTranslation(project, locale);
-  } catch (err) {
-    dbError('getPublishedProjectBySlug', err);
-    const fb = fallbackProjects.find((p) => p.slug === slug);
-    return fb ? mergeProjectTranslation(fallbackForLocale(fb, locale), locale) : null;
-  }
-}
+  },
+  ['public:project-by-slug'],
+  { revalidate: 3600, tags: ['projects'] },
+);
 
 function mergeProjectTranslation(project: any, locale?: string) {
   const translation = project.translations?.[0];
@@ -348,44 +360,48 @@ function mergeProjectTranslation(project: any, locale?: string) {
 
 // ==================== PRICING QUERIES ====================
 
-export async function getPublicPricingPackages(serviceSlug?: string) {
-  const where: Record<string, unknown> = {};
-  if (serviceSlug) {
-    where.service = { slug: serviceSlug, status: { in: ['published', 'active'] } };
-  } else {
-    where.service = { status: { in: ['published', 'active'] } };
-  }
-
-  try {
-    const packages = await getPrismaClient().pricingPackage.findMany({
-      where,
-      include: {
-        service: {
-          select: { id: true, name: true, slug: true, icon: true, color: true },
-        },
-      },
-      orderBy: [{ service: { order: 'asc' } }, { tier: 'asc' }],
-    });
-
-    if (!packages.length) return fallbackPricingPackages(serviceSlug);
-
-    // Group by service
-    const grouped: Record<string, { service: any; packages: any[] }> = {};
-    for (const pkg of packages) {
-      const key = pkg.service.slug;
-      if (!grouped[key]) {
-        grouped[key] = { service: pkg.service, packages: [] };
-      }
-      const { service, ...pkgData } = pkg;
-      grouped[key].packages.push(pkgData);
+export const getPublicPricingPackages = unstable_cache(
+  async (serviceSlug?: string) => {
+    const where: Record<string, unknown> = {};
+    if (serviceSlug) {
+      where.service = { slug: serviceSlug, status: { in: ['published', 'active'] } };
+    } else {
+      where.service = { status: { in: ['published', 'active'] } };
     }
 
-    return Object.values(grouped);
-  } catch (err) {
-    dbError('getPublicPricingPackages', err);
-    return fallbackPricingPackages(serviceSlug);
-  }
-}
+    try {
+      const packages = await getPrismaClient().pricingPackage.findMany({
+        where,
+        include: {
+          service: {
+            select: { id: true, name: true, slug: true, icon: true, color: true },
+          },
+        },
+        orderBy: [{ service: { order: 'asc' } }, { tier: 'asc' }],
+      });
+
+      if (!packages.length) return fallbackPricingPackages(serviceSlug);
+
+      // Group by service
+      const grouped: Record<string, { service: any; packages: any[] }> = {};
+      for (const pkg of packages) {
+        const key = pkg.service.slug;
+        if (!grouped[key]) {
+          grouped[key] = { service: pkg.service, packages: [] };
+        }
+        const { service, ...pkgData } = pkg;
+        grouped[key].packages.push(pkgData);
+      }
+
+      return Object.values(grouped);
+    } catch (err) {
+      dbError('getPublicPricingPackages', err);
+      return fallbackPricingPackages(serviceSlug);
+    }
+  },
+  ['public:pricing-packages'],
+  { revalidate: 3600, tags: ['pricing', 'services'] },
+);
 
 // Rebuild the grouped pricing structure from the baked service snapshot (each
 // fallback service carries its pricingPackages inline).
