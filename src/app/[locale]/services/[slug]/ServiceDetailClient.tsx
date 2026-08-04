@@ -8,7 +8,7 @@ import { motion, AnimatePresence, useInView } from 'framer-motion';
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
 import {
   PlusIcon, MinusIcon, ChevronRightIcon, ArrowRightIcon,
-  StarIcon, UserGroupIcon, ClockIcon, TrophyIcon,
+  StarIcon, UserGroupIcon, TrophyIcon,
   ShieldCheckIcon, BoltIcon, ChatBubbleLeftRightIcon, CpuChipIcon,
   CodeBracketIcon, DevicePhoneMobileIcon, GlobeAltIcon, SparklesIcon,
   PaintBrushIcon, MegaphoneIcon, ShoppingCartIcon, CloudIcon,
@@ -16,7 +16,9 @@ import {
 } from '@heroicons/react/24/outline';
 import Button from '@/components/Button';
 import ServicePortfolio from '@/components/services/ServicePortfolio';
-import ServiceRequestCTA from '@/components/services/ServiceRequestCTA';
+import ServiceFinalCTA from '@/components/services/ServiceFinalCTA';
+import StickyMobileCTA from '@/components/services/StickyMobileCTA';
+import WhatsAppButton from '@/components/services/WhatsAppButton';
 import {
   TestimonialsSection, CaseStudySection, ComparisonSection, PricingMetaPanel,
   type TestimonialItem, type CaseStudyData, type ComparisonData, type PricingMetaData,
@@ -313,8 +315,11 @@ export default function ServiceDetailClient({
       {/* ── 10. Social proof — trust signals before the ask ─────────── */}
       {show('cta') && <SocialProofBanner variant="combined" />}
 
-      {/* ── 11. CTA with project request modal ──────────────────────── */}
-      {show('cta') && <ServiceRequestCTA serviceType={service.slug} />}
+      {/* ── 11. Final CTA band (dark panel, quote + WhatsApp) ───────── */}
+      {show('cta') && <ServiceFinalCTA serviceSlug={service.slug} />}
+
+      {/* ── 12. Sticky mobile CTA bar (appears after the hero) ──────── */}
+      {show('cta') && !hideHero && <StickyMobileCTA serviceSlug={service.slug} />}
     </>
   );
 }
@@ -323,43 +328,34 @@ export default function ServiceDetailClient({
 // ── STATS BAR ────────────────────────────────────────────────────────
 // ═══════════════════════════════════════════════════════════════════════
 const STATS = [
-  { icon: TrophyIcon,    value: COMPANY_STATS.projects,     labelKey: 'projectsDelivered', fallback: 'Projects Delivered' },
-  { icon: UserGroupIcon, value: COMPANY_STATS.clients,      labelKey: 'happyClients',      fallback: 'Happy Clients'      },
-  { icon: StarIcon,      value: COMPANY_STATS.satisfaction, labelKey: 'satisfactionRate',  fallback: 'Satisfaction Rate'  },
-  { icon: ClockIcon,     value: COMPANY_STATS.years,        labelKey: 'yearsExpertise',    fallback: 'Years of Expertise' },
+  { value: COMPANY_STATS.projects,     labelKey: 'projectsDelivered', fallback: 'Projects Delivered' },
+  { value: COMPANY_STATS.clients,      labelKey: 'happyClients',      fallback: 'Happy Clients'      },
+  { value: COMPANY_STATS.satisfaction, labelKey: 'satisfactionRate',  fallback: 'Satisfaction Rate'  },
+  { value: COMPANY_STATS.years,        labelKey: 'yearsExpertise',    fallback: 'Years of Expertise' },
 ];
 
+// Slim, quiet proof strip — supports the hero rather than shouting.
+// Static markup (no framer) so it is SSR-visible and adds zero JS work.
 function StatsBar({ accent }: { accent: AccentColor }) {
   const colors = accentColors[accent];
   const { t } = useTranslations();
 
   return (
-    <div className="w-full bg-gray-950 border-y border-gray-800/60">
-      <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-2 md:grid-cols-4">
-          {STATS.map(({ icon: Icon, value, labelKey, fallback }, i) => {
+    <div className="w-full bg-white border-y border-gray-100">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-2 sm:flex sm:items-center sm:justify-center">
+          {STATS.map(({ value, labelKey, fallback }, i) => {
             const translated = t(`services.detail.stats.${labelKey}`);
             const label = typeof translated === 'string' && !translated.startsWith('services.') ? translated : fallback;
             return (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className={`flex flex-col items-center justify-center py-6 px-4 text-center
-                ${i < 3 ? 'md:border-r border-gray-800/60' : ''}
-                ${i === 0 ? 'border-r border-gray-800/60 md:border-r' : ''}
-                ${i === 1 ? 'md:border-r border-gray-800/60' : ''}
-                ${i === 2 ? 'border-r border-gray-800/60 md:border-r' : ''}
-              `}
-            >
-              <div className={`w-9 h-9 rounded-xl ${colors.blob1} flex items-center justify-center mb-3`}>
-                <Icon className={`w-4 h-4 ${colors.eyebrow}`} />
+              <div
+                key={i}
+                className={`flex items-baseline justify-center gap-2 py-4 px-3 sm:px-10
+                  ${i > 0 ? 'sm:border-s sm:border-gray-100' : ''}`}
+              >
+                <span className={`text-lg sm:text-xl font-semibold ${colors.eyebrow} leading-none`}>{value}</span>
+                <span className="text-[10px] sm:text-[11px] text-gray-400 uppercase tracking-wider font-medium">{label}</span>
               </div>
-              <div className={`text-3xl font-bold ${colors.eyebrow} leading-none mb-1`}>{value}</div>
-              <div className="text-xs text-gray-500 uppercase tracking-wider font-medium mt-1">{label}</div>
-            </motion.div>
             );
           })}
         </div>
@@ -386,10 +382,21 @@ function CapabilitiesSection({
   const subtitle = jsonContent?.subtitle || t('services.detail.features.description');
   const eyebrow = jsonContent?.eyebrow;
 
+  // Filler detection: seeded content often repeats the exact same description
+  // ("Built with precision and scalability in mind.") across items. When 2+
+  // items share a description string, drop descriptions entirely and render
+  // title-only cards — less clutter, no fake copy.
+  const descCounts = new Map<string, number>();
+  for (const item of items) {
+    const d = (item.description || '').trim();
+    if (d) descCounts.set(d, (descCounts.get(d) || 0) + 1);
+  }
+  const hasFillerDescriptions = Array.from(descCounts.values()).some((c) => c >= 2);
+
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-16 md:py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-12">
           {eyebrow && (
             <div className="flex items-center justify-center gap-3 mb-4">
               <div className="w-8 h-0.5 bg-gray-400" />
@@ -401,26 +408,34 @@ function CapabilitiesSection({
           {subtitle && <p className="text-lg text-gray-600 font-light">{subtitle}</p>}
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {items.map((item, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.08 }}
-              className="bg-white rounded-2xl p-6 border border-gray-100 hover:border-gray-300 hover:shadow-lg transition-all duration-300 group flex flex-col"
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{ duration: 0.45, delay: index * 0.06 }}
+              className="bg-white rounded-2xl p-5 border border-gray-200/70 hover:border-heritage-turquoise/40
+                hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 group flex flex-col"
             >
-              <div className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <CpuChipIcon className="w-5 h-5 text-white" />
+              <div className="flex items-center justify-between mb-4">
+                <div className="w-9 h-9 bg-gray-900 rounded-lg flex items-center justify-center group-hover:bg-heritage-turquoise transition-colors duration-300">
+                  <CpuChipIcon className="w-4.5 h-4.5 text-white" />
+                </div>
+                <span className="text-[10px] font-semibold tracking-[0.15em] text-gray-300 group-hover:text-heritage-turquoise/60 transition-colors">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
-              <p className="text-gray-500 text-sm leading-relaxed mb-4 flex-1">{item.description}</p>
+              <h3 className="text-base font-semibold text-gray-900 mb-1.5">{item.title}</h3>
+              {!hasFillerDescriptions && item.description && (
+                <p className="text-gray-500 text-sm leading-relaxed mb-3 flex-1">{item.description}</p>
+              )}
               {item.features && item.features.length > 0 && (
-                <ul className="space-y-1.5 mt-auto pt-4 border-t border-gray-100">
+                <ul className="space-y-1.5 mt-auto pt-3 border-t border-gray-100">
                   {item.features.map((f, fi) => (
                     <li key={fi} className="flex items-start gap-2 text-sm text-gray-600">
-                      <CheckCircleIcon className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5" />
+                      <CheckCircleIcon className="w-4 h-4 text-heritage-turquoise flex-shrink-0 mt-0.5" />
                       {f}
                     </li>
                   ))}
@@ -437,27 +452,24 @@ function CapabilitiesSection({
 // ═══════════════════════════════════════════════════════════════════════
 // ── BENEFITS SECTION (simple checklist, fallback) ────────────────────
 // ═══════════════════════════════════════════════════════════════════════
+// Compact checklist band (2-col on desktop) — quiet, low vertical footprint.
+// Static markup: benefits are short one-liners, no per-item animation needed.
 function BenefitsSection({ benefits, t }: { benefits: string[]; t: (key: string) => string }) {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-12 md:py-14 bg-white border-b border-gray-100">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-headline text-gray-900 mb-4">{t('services.detail.benefits.title')}</h2>
-        </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
-          {benefits.map((benefit, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, x: -10 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.06 }}
-              className="flex items-start gap-3 p-4 rounded-xl bg-gray-50 border border-gray-100"
-            >
-              <CheckCircleIcon className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
-              <span className="text-gray-700 text-sm leading-relaxed">{benefit}</span>
-            </motion.div>
-          ))}
+        <div className="max-w-5xl mx-auto md:flex md:items-start md:gap-12">
+          <h2 className="text-lg font-semibold text-gray-900 leading-snug mb-6 md:mb-0 md:w-60 md:flex-shrink-0">
+            {t('services.detail.benefits.title')}
+          </h2>
+          <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-3 flex-1">
+            {benefits.map((benefit, index) => (
+              <li key={index} className="flex items-start gap-2.5 text-sm text-gray-700 leading-relaxed">
+                <CheckCircleIcon className="w-5 h-5 text-heritage-turquoise flex-shrink-0 mt-px" />
+                {benefit}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
@@ -480,6 +492,9 @@ const DEFAULT_WHY_US_BENEFITS: WhyUsBenefit[] = [
 interface WhyUsBenefit { title: string; description: string }
 interface WhyUsJsonMeta { eyebrow?: string; title?: string; titleAccent?: string; subtitle?: string }
 
+// Compressed to a single slim band: this content is identical on all ~270
+// service pages, so it earns one quiet strip, not a full viewport. Body copy
+// is intentionally not rendered (kept as a native tooltip via `title`).
 function WhyUsSection({
   benefits,
   jsonContent,
@@ -489,42 +504,27 @@ function WhyUsSection({
 }) {
   const { t } = useTranslations();
   const title = jsonContent?.title || t('services.detail.whyUs.title') || 'Why Choose Us';
-  const subtitle = jsonContent?.subtitle;
-  const eyebrow = jsonContent?.eyebrow;
 
   return (
-    <section className="py-24 bg-gray-900 text-white">
+    <section className="py-10 md:py-12 bg-gray-950 text-white">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          {eyebrow && (
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <div className="w-8 h-0.5 bg-gray-600" />
-              <span className="text-xs font-medium text-gray-400 uppercase tracking-wide">{eyebrow}</span>
-              <div className="w-8 h-0.5 bg-gray-600" />
-            </div>
-          )}
-          <h2 className="text-headline text-white mb-4">{title}</h2>
-          {subtitle && <p className="text-lg text-gray-400 font-light">{subtitle}</p>}
-        </div>
-
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {benefits.map((benefit, index) => {
+        <h2 className="text-center text-sm font-semibold uppercase tracking-[0.15em] text-gray-400 mb-8">
+          {title}
+        </h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-6 gap-y-5 max-w-6xl mx-auto">
+          {benefits.slice(0, 6).map((benefit, index) => {
             const Icon = WHY_US_ICONS[index % WHY_US_ICONS.length];
             return (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.08 }}
-                className="bg-gray-800/60 rounded-2xl p-6 border border-gray-700/50 hover:border-gray-600 transition-colors group"
+                title={benefit.description}
+                className="flex items-center gap-3 lg:flex-col lg:text-center lg:gap-2.5"
               >
-                <div className="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center mb-4 group-hover:bg-emerald-600 transition-colors">
-                  <Icon className="w-5 h-5 text-gray-300 group-hover:text-white transition-colors" />
-                </div>
-                <h3 className="text-base font-semibold text-white mb-2">{benefit.title}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">{benefit.description}</p>
-              </motion.div>
+                <span className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0">
+                  <Icon className="w-4.5 h-4.5 text-heritage-turquoise-soft" />
+                </span>
+                <span className="text-xs font-medium text-gray-300 leading-snug">{benefit.title}</span>
+              </div>
             );
           })}
         </div>
@@ -536,6 +536,17 @@ function WhyUsSection({
 // ═══════════════════════════════════════════════════════════════════════
 // ── HERO SECTION ─────────────────────────────────────────────────────
 // ═══════════════════════════════════════════════════════════════════════
+
+// New string — inline 5-locale map (pattern used for strings not yet in the
+// central i18n files).
+const RESPONSE_MICROCOPY: Record<string, string> = {
+  en: 'We reply within 24 hours',
+  tr: '24 saat içinde yanıt veriyoruz',
+  de: 'Antwort innerhalb von 24 Stunden',
+  ur: 'ہم 24 گھنٹوں میں جواب دیتے ہیں',
+  ar: 'نرد خلال 24 ساعة',
+};
+
 function HeroSection({
   service,
   colors,
@@ -549,13 +560,14 @@ function HeroSection({
   process: ProcessStep[];
   animation?: ServiceAnimation;
 }) {
-  const { t } = useTranslations();
+  const { t, locale } = useTranslations();
   const HeroIcon: HeroIconComponent = heroIconMap[service.icon || ''] || WrenchScrewdriverIcon;
   const hasAnimation = !!animation;
   const parentService = service.parentService;
+  const responseMicrocopy = RESPONSE_MICROCOPY[locale] || RESPONSE_MICROCOPY.en;
 
   return (
-    <section className="relative overflow-hidden bg-white pt-[var(--navbar-h,64px)] pb-20 lg:pt-[var(--navbar-h,64px)] lg:pb-28">
+    <section className="relative overflow-hidden bg-white pt-[var(--navbar-h,64px)] pb-16 lg:pt-[var(--navbar-h,64px)] lg:pb-24">
       {/* Background */}
       <div className="absolute inset-0 z-0">
         {hasAnimation && <BgPatternRenderer pattern={animation.bgPattern} />}
@@ -586,7 +598,7 @@ function HeroSection({
               paint, no JS needed. */}
           <motion.div
             initial={false}
-            className="hero-enter space-y-8"
+            className="hero-enter space-y-6"
           >
             {/* Breadcrumb — mt keeps a small gap below the fixed header on mobile */}
             <nav className="flex items-center gap-2 text-sm text-gray-400 mt-3 lg:mt-5">
@@ -645,25 +657,30 @@ function HeroSection({
               {service.shortDescription || service.fullDescription || service.description}
             </p>
 
-            {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                href="/contact"
-                variant="primary"
-                size="lg"
-                rightIcon={
-                  <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
-                }
-              >
-                {t('services.detail.hero.startProject')}
-              </Button>
-              {process.length > 0 && (
-                <Button href={`/services/${service.slug}/process`} variant="secondary" size="lg">
-                  {t('services.detail.hero.howWeWork')}
+            {/* CTAs — primary "Start Your Project" + WhatsApp side by side */}
+            <div className="space-y-3 pt-1">
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Button
+                  href="/contact"
+                  variant="primary"
+                  size="lg"
+                  rightIcon={
+                    <svg className="h-4 w-4 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  }
+                >
+                  {t('services.detail.hero.startProject')}
                 </Button>
-              )}
+                <WhatsAppButton source="service_hero" variant="outline" size="lg" />
+              </div>
+              {/* Response-time microcopy */}
+              <p className="flex items-center gap-1.5 text-sm text-gray-400">
+                <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                {responseMicrocopy}
+              </p>
             </div>
           </motion.div>
 
@@ -817,13 +834,17 @@ function TechStrip({ technologies }: { technologies: Technology[] }) {
 // ═══════════════════════════════════════════════════════════════════════
 function FeaturesSection({ features, featureStyle }: { features: string[]; featureStyle?: string }) {
   const { t } = useTranslations();
-  const style = featureStyle || 'icon-top';
+  // `featureStyle` kept in the signature for data-contract compatibility; the
+  // refreshed cards use one intentional look. Per-card body copy was the same
+  // translated filler sentence on every card (2+ identical descriptions), so
+  // cards are title-only now: number eyebrow + icon + title.
+  void featureStyle;
 
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-16 md:py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-headline text-gray-900 mb-4 sm:mb-6">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <h2 className="text-headline text-gray-900 mb-4">
             {t('services.detail.features.title')}
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 font-light">
@@ -831,54 +852,24 @@ function FeaturesSection({ features, featureStyle }: { features: string[]; featu
           </p>
         </div>
 
-        <div className={`grid gap-4 sm:gap-6 md:gap-8 ${style === 'icon-left' ? 'sm:grid-cols-2' : 'sm:grid-cols-2 lg:grid-cols-3'}`}>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {features.map((feature, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`bg-white rounded-2xl transition-all duration-300 group hover:shadow-lg ${
-                style === 'bordered' ? 'p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-gray-400' :
-                style === 'gradient-border' ? 'p-4 sm:p-6 md:p-8 border border-gray-100 hover:border-transparent hover:ring-2 hover:ring-emerald-200' :
-                style === 'minimal' ? 'p-4 sm:p-6 border-0 shadow-none hover:bg-gray-50' :
-                'p-4 sm:p-6 md:p-8 border border-gray-100 hover:border-gray-300'
-              }`}
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{ duration: 0.45, delay: index * 0.05 }}
+              className="bg-white rounded-2xl p-5 border border-gray-200/70 hover:border-heritage-turquoise/40
+                hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 group flex items-center gap-4"
             >
-              {style === 'icon-left' ? (
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-gray-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-gray-900 transition-colors duration-300">
-                    <CheckCircleIcon className="w-5 h-5 text-gray-600 group-hover:text-white transition-colors duration-300" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-medium text-gray-900 mb-1">{feature}</h3>
-                    <p className="text-gray-500 text-sm leading-relaxed">{t('services.detail.features.featureDescription')}</p>
-                  </div>
-                </div>
-              ) : style === 'numbered' ? (
-                <>
-                  <div className="text-3xl font-bold text-gray-100 mb-4 group-hover:text-gray-200 transition-colors">
-                    {String(index + 1).padStart(2, '0')}
-                  </div>
-                  <h3 className="text-xl font-medium text-gray-900 mb-3">{feature}</h3>
-                  <p className="text-gray-500 leading-relaxed">{t('services.detail.features.featureDescription')}</p>
-                </>
-              ) : style === 'minimal' ? (
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 rounded-full bg-gray-900 flex-shrink-0" />
-                  <h3 className="text-lg font-medium text-gray-900">{feature}</h3>
-                </div>
-              ) : (
-                /* icon-top (default), bordered, gradient-border */
-                <>
-                  <div className="w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-gray-900 transition-colors duration-300">
-                    <CheckCircleIcon className="w-6 h-6 text-gray-600 group-hover:text-white transition-colors duration-300" />
-                  </div>
-                  <h3 className="text-xl font-medium text-gray-900 mb-3">{feature}</h3>
-                  <p className="text-gray-500 leading-relaxed">{t('services.detail.features.featureDescription')}</p>
-                </>
-              )}
+              <span className="text-[10px] font-semibold tracking-[0.15em] text-gray-300 group-hover:text-heritage-turquoise/60 transition-colors flex-shrink-0">
+                {String(index + 1).padStart(2, '0')}
+              </span>
+              <div className="w-9 h-9 bg-gray-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-heritage-turquoise transition-colors duration-300">
+                <CheckCircleIcon className="w-5 h-5 text-gray-500 group-hover:text-white transition-colors duration-300" />
+              </div>
+              <h3 className="text-base font-medium text-gray-900 leading-snug">{feature}</h3>
             </motion.div>
           ))}
         </div>
@@ -888,256 +879,32 @@ function FeaturesSection({ features, featureStyle }: { features: string[]; featu
 }
 
 // ═══════════════════════════════════════════════════════════════════════
-// ── PROCESS STEP ILLUSTRATIONS ───────────────────────────────────────
-// ═══════════════════════════════════════════════════════════════════════
-
-function DiscoveryIllustration({ active }: { active: boolean }) {
-  return (
-    <svg viewBox="0 0 80 56" className="w-full h-full" fill="none">
-      {/* Document */}
-      <rect x="16" y="4" width="34" height="44" rx="3" stroke="#d1d5db" strokeWidth="1.5" fill="white" />
-      <rect x="16" y="4" width="34" height="8" rx="3" fill="#f3f4f6" />
-      {/* Checkbox rows */}
-      {[0, 1, 2].map((i) => (
-        <g key={i}>
-          <rect x="22" y={18 + i * 10} width="6" height="6" rx="1" stroke="#9ca3af" strokeWidth="1" fill="white" />
-          <motion.path
-            d={`M23.5 ${21 + i * 10} l2 2 3 -3`}
-            stroke="#111827" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"
-            initial={{ pathLength: 0, opacity: 0 }}
-            animate={active ? { pathLength: 1, opacity: 1 } : { pathLength: 0, opacity: 0 }}
-            transition={{ duration: 0.3, delay: 0.4 + i * 0.25 }}
-          />
-          <motion.rect
-            x="32" y={20 + i * 10} width={i === 0 ? 12 : i === 1 ? 9 : 11} height="2" rx="1" fill="#d1d5db"
-            initial={{ scaleX: 0, originX: 0 }} style={{ transformOrigin: '32px center' }}
-            animate={active ? { scaleX: 1 } : { scaleX: 0 }}
-            transition={{ duration: 0.3, delay: 0.3 + i * 0.25 }}
-          />
-        </g>
-      ))}
-      {/* Magnifier */}
-      <motion.g
-        initial={{ opacity: 0, scale: 0.5, x: 8, y: -4 }}
-        animate={active ? { opacity: 1, scale: 1, x: 0, y: 0 } : { opacity: 0 }}
-        transition={{ duration: 0.4, delay: 0.1 }}
-        style={{ transformOrigin: '58px 22px' }}
-      >
-        <circle cx="58" cy="22" r="10" stroke="#374151" strokeWidth="1.5" fill="white" />
-        <circle cx="58" cy="22" r="5" stroke="#6b7280" strokeWidth="1" fill="#f9fafb" />
-        <line x1="65" y1="29" x2="70" y2="34" stroke="#374151" strokeWidth="2" strokeLinecap="round" />
-      </motion.g>
-    </svg>
-  );
-}
-
-function DesignIllustration({ active }: { active: boolean }) {
-  const boxes = [
-    { x: 12, y: 6, w: 56, h: 12 },   // header bar
-    { x: 12, y: 22, w: 22, h: 26 },  // sidebar
-    { x: 38, y: 22, w: 30, h: 12 },  // main top
-    { x: 38, y: 38, w: 30, h: 10 },  // main bottom
-  ];
-  return (
-    <svg viewBox="0 0 80 56" className="w-full h-full" fill="none">
-      {boxes.map((b, i) => (
-        <motion.rect
-          key={i}
-          x={b.x} y={b.y} width={b.w} height={b.h} rx="2"
-          fill={i === 0 ? '#f3f4f6' : 'white'} stroke="#d1d5db" strokeWidth="1"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={active ? { opacity: 1, scale: 1 } : { opacity: 0 }}
-          transition={{ duration: 0.35, delay: 0.2 + i * 0.15 }}
-          style={{ transformOrigin: `${b.x + b.w / 2}px ${b.y + b.h / 2}px` }}
-        />
-      ))}
-      {/* Pencil */}
-      <motion.g
-        initial={{ opacity: 0, rotate: -20 }}
-        animate={active ? { opacity: 1, rotate: 0 } : { opacity: 0 }}
-        transition={{ duration: 0.4, delay: 0.8 }}
-        style={{ transformOrigin: '66px 10px' }}
-      >
-        <rect x="60" y="4" width="4" height="14" rx="1" fill="#374151" transform="rotate(30 64 10)" />
-        <path d="M62 17 l-2 4 4-1 z" fill="#6b7280" transform="rotate(30 64 10)" />
-      </motion.g>
-      {/* Color dots */}
-      {['#60a5fa', '#34d399', '#f472b6'].map((c, i) => (
-        <motion.circle
-          key={c} cx={16 + i * 7} cy={52} r="3" fill={c}
-          initial={{ scale: 0 }} animate={active ? { scale: 1 } : { scale: 0 }}
-          transition={{ delay: 0.9 + i * 0.08, type: 'spring', bounce: 0.5 }}
-          style={{ transformOrigin: `${16 + i * 7}px 52px` }}
-        />
-      ))}
-    </svg>
-  );
-}
-
-function DevelopIllustration({ active }: { active: boolean }) {
-  const lines = [
-    { y: 14, w: 52, color: '#c792ea', indent: 0 },
-    { y: 22, w: 38, color: '#82aaff', indent: 8 },
-    { y: 30, w: 44, color: '#c3e88d', indent: 8 },
-    { y: 38, w: 28, color: '#ff9d00', indent: 16 },
-    { y: 46, w: 20, color: '#82aaff', indent: 8 },
-  ];
-  return (
-    <svg viewBox="0 0 80 56" className="w-full h-full" fill="none">
-      {/* Editor window */}
-      <rect x="4" y="4" width="72" height="48" rx="3" fill="#0f111a" />
-      <rect x="4" y="4" width="72" height="9" rx="3" fill="#181926" />
-      {['#ef4444', '#f59e0b', '#22c55e'].map((c, i) => (
-        <circle key={c} cx={11 + i * 7} cy="8.5" r="2.5" fill={c} opacity="0.7" />
-      ))}
-      {lines.map((l, i) => (
-        <motion.rect
-          key={i} x={8 + l.indent} y={l.y} rx="1"
-          height="4" fill={l.color}
-          initial={{ width: 0 }}
-          animate={active ? { width: l.w - l.indent } : { width: 0 }}
-          transition={{ duration: 0.4, delay: 0.3 + i * 0.18, ease: 'easeOut' }}
-        />
-      ))}
-      {/* Cursor blink */}
-      {active && (
-        <motion.rect x="10" y="46" width="1.5" height="6" rx="0.5" fill="white"
-          animate={{ opacity: [1, 0, 1] }} transition={{ duration: 0.8, repeat: Infinity }}
-        />
-      )}
-    </svg>
-  );
-}
-
-function DeployIllustration({ active }: { active: boolean }) {
-  return (
-    <svg viewBox="0 0 80 56" className="w-full h-full" fill="none">
-      {/* Server blocks */}
-      {[0, 1, 2].map((i) => (
-        <g key={i}>
-          <rect x="8" y={8 + i * 14} width="40" height="10" rx="2" fill="white" stroke="#e5e7eb" strokeWidth="1" />
-          <motion.circle
-            cx="16" cy={13 + i * 14} r="3"
-            fill={i === 0 ? '#22c55e' : '#d1d5db'}
-            initial={{ fill: '#d1d5db' }}
-            animate={active ? { fill: i === 0 ? '#22c55e' : i === 1 ? '#22c55e' : '#22c55e' } : {}}
-            transition={{ delay: 0.4 + i * 0.4, duration: 0.3 }}
-          />
-          <motion.rect
-            x="22" y={11 + i * 14} height="2" rx="1" fill="#e5e7eb"
-            initial={{ width: 0 }}
-            animate={active ? { width: 20 } : { width: 0 }}
-            transition={{ delay: 0.3 + i * 0.3, duration: 0.4 }}
-          />
-        </g>
-      ))}
-      {/* Live badge */}
-      <motion.g
-        initial={{ opacity: 0, scale: 0.7 }}
-        animate={active ? { opacity: 1, scale: 1 } : { opacity: 0 }}
-        transition={{ delay: 1.4, type: 'spring', bounce: 0.4 }}
-        style={{ transformOrigin: '62px 20px' }}
-      >
-        <rect x="52" y="12" width="22" height="14" rx="7" fill="#111827" />
-        <motion.circle cx="60" cy="19" r="3" fill="#22c55e"
-          animate={active ? { opacity: [1, 0.3, 1] } : {}}
-          transition={{ duration: 1.2, repeat: Infinity, delay: 1.6 }}
-        />
-        <text x="65" y="22" fontSize="5" fontWeight="700" fill="white" fontFamily="monospace">LIVE</text>
-      </motion.g>
-      {/* Arrow up trend */}
-      <motion.path
-        d="M56 48 L60 40 L65 44 L70 34"
-        stroke="#22c55e" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"
-        fill="none"
-        initial={{ pathLength: 0 }}
-        animate={active ? { pathLength: 1 } : { pathLength: 0 }}
-        transition={{ delay: 1.6, duration: 0.6 }}
-      />
-    </svg>
-  );
-}
-
-const STEP_ILLUSTRATIONS = [DiscoveryIllustration, DesignIllustration, DevelopIllustration, DeployIllustration];
-
-function ProcessStepCard({ step, index, total }: { step: ProcessStep; index: number; total: number }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true, margin: '-60px 0px' });
-  const IllustrationComp = STEP_ILLUSTRATIONS[index % STEP_ILLUSTRATIONS.length];
-  const num = String(step.step).padStart(2, '0');
-
-  return (
-    <div ref={ref} className="relative flex-1 min-w-0">
-      {/* Connecting arrow — right side, hidden on last item */}
-      {index < total - 1 && (
-        <div className="hidden md:flex absolute top-[52px] -right-px z-10 items-center">
-          <motion.div
-            className="h-px bg-gray-300 origin-left"
-            initial={{ scaleX: 0 }}
-            animate={isInView ? { scaleX: 1 } : {}}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            style={{ width: '100%' }}
-          />
-          <svg className="w-3 h-3 text-gray-300 -ml-1 flex-shrink-0" viewBox="0 0 12 12" fill="currentColor">
-            <path d="M4 2l5 4-5 4V2z" />
-          </svg>
-        </div>
-      )}
-
-      {/* Card */}
-      <motion.div
-        initial={{ opacity: 0, y: 24 }}
-        animate={isInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.55, delay: index * 0.12, ease: [0.22, 1, 0.36, 1] }}
-        className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-md hover:border-gray-300 transition-all duration-300 group h-full flex flex-col"
-      >
-        {/* Illustration area */}
-        <div className="relative bg-gray-50 border-b border-gray-100 px-4 pt-4 pb-3" style={{ height: 88 }}>
-          <IllustrationComp active={isInView} />
-          {/* Step number badge */}
-          <div className="absolute top-3 right-3 w-7 h-7 rounded-full bg-white border border-gray-200 flex items-center justify-center shadow-sm">
-            <span className="text-[11px] font-bold text-gray-700">{num}</span>
-          </div>
-        </div>
-
-        {/* Text */}
-        <div className="p-5 flex flex-col gap-2 flex-1">
-          <h3 className="text-base font-semibold text-gray-900 leading-snug group-hover:text-gray-700 transition-colors">
-            {step.title}
-          </h3>
-          <p className="text-sm text-gray-500 leading-relaxed">
-            {step.description}
-          </p>
-        </div>
-      </motion.div>
-    </div>
-  );
-}
-
-// ═══════════════════════════════════════════════════════════════════════
-// ── PROCESS SECTION ──────────────────────────────────────────────────
+// ── PROCESS SECTION (vertical timeline with heritage accent) ─────────
 // ═══════════════════════════════════════════════════════════════════════
 function ProcessSection({ steps, processLayout }: { steps: ProcessStep[]; processLayout?: string }) {
   const { t } = useTranslations();
   const headerRef = useRef<HTMLDivElement>(null);
   const headerInView = useInView(headerRef, { once: true });
+  // `processLayout` kept for data-contract compatibility; the timeline is the
+  // single intentional layout now.
+  void processLayout;
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-16 md:py-20 bg-white">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div ref={headerRef} className="text-center mb-12 md:mb-16">
+        <div ref={headerRef} className="text-center mb-10 md:mb-12">
           <motion.div
             className="flex items-center justify-center gap-3 mb-4"
             initial={{ opacity: 0, y: 10 }}
             animate={headerInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
           >
-            <div className="w-8 h-px bg-gray-300" />
-            <span className="text-xs font-semibold uppercase tracking-widest text-gray-400">
+            <div className="w-8 h-px bg-heritage-turquoise/40" />
+            <span className="text-xs font-semibold uppercase tracking-widest text-heritage-turquoise">
               {t('services.detail.process.eyebrow') || 'How We Work'}
             </span>
-            <div className="w-8 h-px bg-gray-300" />
+            <div className="w-8 h-px bg-heritage-turquoise/40" />
           </motion.div>
           <motion.h2
             className="text-headline text-gray-900 mb-3"
@@ -1157,11 +924,38 @@ function ProcessSection({ steps, processLayout }: { steps: ProcessStep[]; proces
           </motion.p>
         </div>
 
-        {/* Steps — responsive flex/grid */}
-        <div className="flex flex-col md:flex-row gap-4 md:gap-3 lg:gap-5 items-stretch">
-          {steps.map((step, i) => (
-            <ProcessStepCard key={i} step={step} index={i} total={steps.length} />
-          ))}
+        {/* Timeline — numbered rail, logical (RTL-safe) offsets */}
+        <div className="max-w-3xl mx-auto">
+          <ol className="relative border-s-2 border-gray-100 ms-5">
+            {steps.map((step, i) => (
+              <motion.li
+                key={i}
+                initial={{ opacity: 0, y: 14 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.15 }}
+                transition={{ duration: 0.45, delay: i * 0.05 }}
+                className="relative ps-10 sm:ps-12 pb-10 last:pb-0"
+              >
+                {/* Node: icon in a heritage-ringed circle sitting on the rail */}
+                <span
+                  aria-hidden
+                  className="absolute -start-5 top-0 -translate-x-px rtl:translate-x-px w-10 h-10 rounded-full bg-white
+                    border-2 border-heritage-turquoise/30 text-heritage-turquoise flex items-center justify-center shadow-sm"
+                >
+                  <ProcessIcon step={step.step} />
+                </span>
+                <div className="pt-1">
+                  <div className="flex items-baseline gap-2.5 mb-1.5">
+                    <span className="text-[11px] font-bold tracking-[0.15em] text-heritage-turquoise">
+                      {String(step.step).padStart(2, '0')}
+                    </span>
+                    <h3 className="text-base sm:text-lg font-semibold text-gray-900 leading-snug">{step.title}</h3>
+                  </div>
+                  <p className="text-sm text-gray-500 leading-relaxed max-w-xl">{step.description}</p>
+                </div>
+              </motion.li>
+            ))}
+          </ol>
         </div>
       </div>
     </section>
@@ -1176,47 +970,57 @@ function FAQSection({ faq }: { faq: FAQItem[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-12 sm:py-16 md:py-24 bg-gray-50">
+    <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
       <div className="container mx-auto px-4 max-w-3xl">
-        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+        <div className="text-center mb-8 sm:mb-10 md:mb-12">
           <h2 className="text-headline text-gray-900 mb-4">
             {t('services.detail.faq.title')}
           </h2>
         </div>
 
-        <div className="space-y-3 sm:space-y-4">
-          {faq.map((item, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-xl border border-gray-200 overflow-hidden"
-            >
-              <button
-                onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full flex items-center justify-between p-4 sm:p-6 text-left hover:bg-gray-50 transition-colors"
+        <div className="space-y-3">
+          {faq.map((item, index) => {
+            const isOpen = openIndex === index;
+            return (
+              <div
+                key={index}
+                className={`bg-white rounded-xl border overflow-hidden transition-colors duration-300 ${
+                  isOpen ? 'border-heritage-turquoise/40 shadow-sm' : 'border-gray-200 hover:border-gray-300'
+                }`}
               >
-                <span className="font-medium text-gray-900 text-base sm:text-lg pr-4">{item.question}</span>
-                {openIndex === index ? (
-                  <MinusIcon className="w-5 h-5 text-gray-900 flex-shrink-0" />
-                ) : (
-                  <PlusIcon className="w-5 h-5 text-gray-400 flex-shrink-0" />
-                )}
-              </button>
-              <AnimatePresence>
-                {openIndex === index && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: 'auto', opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <div className="p-6 pt-0 text-gray-600 leading-relaxed border-t border-gray-100">
-                      {item.answer}
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-          ))}
+                <button
+                  onClick={() => setOpenIndex(isOpen ? null : index)}
+                  aria-expanded={isOpen}
+                  className="w-full flex items-center justify-between gap-4 p-4 sm:p-5 text-start hover:bg-gray-50/60 transition-colors"
+                >
+                  <span className={`font-medium text-base sm:text-lg transition-colors ${
+                    isOpen ? 'text-heritage-turquoise-deep' : 'text-gray-900'
+                  }`}>
+                    {item.question}
+                  </span>
+                  {isOpen ? (
+                    <MinusIcon className="w-5 h-5 text-heritage-turquoise flex-shrink-0" />
+                  ) : (
+                    <PlusIcon className="w-5 h-5 text-gray-400 flex-shrink-0" />
+                  )}
+                </button>
+                <AnimatePresence>
+                  {isOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <div className="px-4 sm:px-5 pb-5 text-sm sm:text-base text-gray-600 leading-relaxed border-t border-heritage-turquoise/10 pt-4">
+                        {item.answer}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
@@ -1303,15 +1107,15 @@ function SubServicesSection({ subServices }: { subServices: SubServiceItem[] }) 
   const { t } = useTranslations();
 
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-16 md:py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-8 h-0.5 bg-gray-900" />
-            <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">
+            <div className="w-8 h-0.5 bg-heritage-turquoise/50" />
+            <span className="text-xs font-semibold text-heritage-turquoise uppercase tracking-wide">
               {t('services.detail.specializedServices')}
             </span>
-            <div className="w-8 h-0.5 bg-gray-900" />
+            <div className="w-8 h-0.5 bg-heritage-turquoise/50" />
           </div>
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
             {t('services.detail.exploreSubServices')}
@@ -1321,7 +1125,7 @@ function SubServicesSection({ subServices }: { subServices: SubServiceItem[] }) 
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
           {subServices.map((sub, index) => {
             const SubIcon: HeroIconComponent = heroIconMap[sub.icon || ''] || WrenchScrewdriverIcon;
             const subAccent: AccentColor = colorMap[sub.color || ''] || 'emerald';
@@ -1329,29 +1133,35 @@ function SubServicesSection({ subServices }: { subServices: SubServiceItem[] }) 
             return (
               <motion.div
                 key={sub.slug}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.08 }}
+                viewport={{ once: true, amount: 0.1 }}
+                transition={{ duration: 0.45, delay: index * 0.06 }}
+                className="h-full"
               >
                 <LocalizedLink
                   href={`/services/${sub.slug}`}
-                  className="flex flex-col bg-white p-6 rounded-2xl border border-gray-100 hover:border-gray-200 hover:shadow-lg transition-all duration-300 group h-full"
+                  className="flex flex-col bg-white p-6 rounded-2xl border border-gray-200/70
+                    hover:border-heritage-turquoise/40 hover:shadow-lg hover:-translate-y-1
+                    transition-all duration-300 group h-full"
                 >
-                  <div className={`w-11 h-11 rounded-xl ${subColors.blob1} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                    <SubIcon className={`w-5 h-5 ${subColors.eyebrow}`} />
+                  <div className={`w-12 h-12 rounded-xl ${subColors.blob1} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                    <SubIcon className={`w-5.5 h-5.5 ${subColors.eyebrow}`} />
                   </div>
-                  <h3 className={`text-base font-semibold text-gray-900 mb-2 group-hover:${subColors.titleAccent} transition-colors`}>
+                  <h3 className="text-base font-semibold text-gray-900 mb-1.5 group-hover:text-heritage-turquoise-deep transition-colors">
                     {sub.name}
                   </h3>
                   {sub.shortDescription && (
-                    <p className="text-gray-500 text-sm leading-relaxed mb-4 flex-1 line-clamp-2">
+                    <p className="text-gray-500 text-sm leading-relaxed mb-5 flex-1 line-clamp-2">
                       {sub.shortDescription}
                     </p>
                   )}
-                  <div className={`flex items-center gap-1.5 text-xs font-semibold text-gray-400 group-hover:${subColors.eyebrow} transition-colors mt-auto`}>
+                  {/* Explicit arrow-link affordance */}
+                  <div className="flex items-center gap-2 text-xs font-semibold text-gray-500 group-hover:text-heritage-turquoise transition-colors mt-auto">
                     {t('services.detail.learnMore')}
-                    <ArrowRightIcon className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                    <span className="w-6 h-6 rounded-full bg-gray-100 text-gray-500 group-hover:bg-heritage-turquoise group-hover:text-white flex items-center justify-center transition-colors duration-300">
+                      <ArrowRightIcon className="w-3.5 h-3.5 rtl:rotate-180 group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5 transition-transform" />
+                    </span>
                   </div>
                 </LocalizedLink>
               </motion.div>

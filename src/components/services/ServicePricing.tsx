@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { CheckIcon } from '@heroicons/react/24/solid';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 import Button from '@/components/Button';
+import { richColorMap } from '@/lib/heritage-accents';
 
 export interface PricingPackage {
   name: string;
@@ -21,116 +22,24 @@ interface ServicePricingProps {
   accentColor?: 'purple' | 'blue' | 'emerald' | 'orange' | 'red' | 'violet' | 'cyan' | 'amber' | 'rose' | 'indigo';
 }
 
-const colorClasses = {
-  purple: {
-    bg: 'bg-purple-600',
-    bgHover: 'hover:bg-purple-700',
-    bgLight: 'bg-purple-50',
-    text: 'text-purple-600',
-    textLight: 'text-purple-100',
-    textLighter: 'text-purple-50',
-    textHighlight: 'text-purple-200',
-    ring: 'ring-purple-300',
-    border: 'border-purple-600',
+// ── Localized UI labels (en/tr/de/ur/ar) ─────────────────────────────
+type Loc = 'en' | 'tr' | 'de' | 'ur' | 'ar';
+const L: Record<string, Record<Loc, string>> = {
+  popular: { en: 'Most Popular', tr: 'En Popüler', de: 'Am beliebtesten', ur: 'سب سے مقبول', ar: 'الأكثر شيوعاً' },
+  startProject: { en: 'Start Your Project', tr: 'Projenizi Başlatın', de: 'Projekt starten', ur: 'اپنا پروجیکٹ شروع کریں', ar: 'ابدأ مشروعك' },
+  customTitle: {
+    en: 'Need a Custom Solution?',
+    tr: 'Özel Bir Çözüme mi İhtiyacınız Var?',
+    de: 'Brauchen Sie eine individuelle Lösung?',
+    ur: 'حسبِ ضرورت حل درکار ہے؟',
+    ar: 'هل تحتاج إلى حل مخصص؟',
   },
-  blue: {
-    bg: 'bg-blue-600',
-    bgHover: 'hover:bg-blue-700',
-    bgLight: 'bg-blue-50',
-    text: 'text-blue-600',
-    textLight: 'text-blue-100',
-    textLighter: 'text-blue-50',
-    textHighlight: 'text-blue-200',
-    ring: 'ring-blue-300',
-    border: 'border-blue-600',
-  },
-  emerald: {
-    bg: 'bg-emerald-600',
-    bgHover: 'hover:bg-emerald-700',
-    bgLight: 'bg-emerald-50',
-    text: 'text-emerald-600',
-    textLight: 'text-emerald-100',
-    textLighter: 'text-emerald-50',
-    textHighlight: 'text-emerald-200',
-    ring: 'ring-emerald-300',
-    border: 'border-emerald-600',
-  },
-  orange: {
-    bg: 'bg-orange-600',
-    bgHover: 'hover:bg-orange-700',
-    bgLight: 'bg-orange-50',
-    text: 'text-orange-600',
-    textLight: 'text-orange-100',
-    textLighter: 'text-orange-50',
-    textHighlight: 'text-orange-200',
-    ring: 'ring-orange-300',
-    border: 'border-orange-600',
-  },
-  red: {
-    bg: 'bg-red-600',
-    bgHover: 'hover:bg-red-700',
-    bgLight: 'bg-red-50',
-    text: 'text-red-600',
-    textLight: 'text-red-100',
-    textLighter: 'text-red-50',
-    textHighlight: 'text-red-200',
-    ring: 'ring-red-300',
-    border: 'border-red-600',
-  },
-  violet: {
-    bg: 'bg-violet-600',
-    bgHover: 'hover:bg-violet-700',
-    bgLight: 'bg-violet-50',
-    text: 'text-violet-600',
-    textLight: 'text-violet-100',
-    textLighter: 'text-violet-50',
-    textHighlight: 'text-violet-200',
-    ring: 'ring-violet-300',
-    border: 'border-violet-600',
-  },
-  cyan: {
-    bg: 'bg-cyan-600',
-    bgHover: 'hover:bg-cyan-700',
-    bgLight: 'bg-cyan-50',
-    text: 'text-cyan-600',
-    textLight: 'text-cyan-100',
-    textLighter: 'text-cyan-50',
-    textHighlight: 'text-cyan-200',
-    ring: 'ring-cyan-300',
-    border: 'border-cyan-600',
-  },
-  amber: {
-    bg: 'bg-amber-600',
-    bgHover: 'hover:bg-amber-700',
-    bgLight: 'bg-amber-50',
-    text: 'text-amber-600',
-    textLight: 'text-amber-100',
-    textLighter: 'text-amber-50',
-    textHighlight: 'text-amber-200',
-    ring: 'ring-amber-300',
-    border: 'border-amber-600',
-  },
-  rose: {
-    bg: 'bg-rose-600',
-    bgHover: 'hover:bg-rose-700',
-    bgLight: 'bg-rose-50',
-    text: 'text-rose-600',
-    textLight: 'text-rose-100',
-    textLighter: 'text-rose-50',
-    textHighlight: 'text-rose-200',
-    ring: 'ring-rose-300',
-    border: 'border-rose-600',
-  },
-  indigo: {
-    bg: 'bg-indigo-600',
-    bgHover: 'hover:bg-indigo-700',
-    bgLight: 'bg-indigo-50',
-    text: 'text-indigo-600',
-    textLight: 'text-indigo-100',
-    textLighter: 'text-indigo-50',
-    textHighlight: 'text-indigo-200',
-    ring: 'ring-indigo-300',
-    border: 'border-indigo-600',
+  customDesc: {
+    en: 'Contact us for a tailored solution that fits your specific requirements and budget.',
+    tr: 'Gereksinimlerinize ve bütçenize uygun, size özel bir çözüm için bizimle iletişime geçin.',
+    de: 'Kontaktieren Sie uns für eine Lösung, die zu Ihren Anforderungen und Ihrem Budget passt.',
+    ur: 'اپنی مخصوص ضروریات اور بجٹ کے مطابق حل کے لیے ہم سے رابطہ کریں۔',
+    ar: 'تواصل معنا للحصول على حل مصمم يناسب متطلباتك وميزانيتك.',
   },
 };
 
@@ -139,11 +48,18 @@ export default function ServicePricing({
   packages: customPackages,
   accentColor = 'purple',
 }: ServicePricingProps) {
-  const { dir, isLoading } = useTranslations();
+  const { dir, locale, isLoading } = useTranslations();
   const t = useSectionTranslations(translationKey);
   const tCommon = useSectionTranslations('common');
+  const loc = (['en', 'tr', 'de', 'ur', 'ar'].includes(locale) ? locale : 'en') as Loc;
+  const l = (key: keyof typeof L) => L[key][loc];
+  // Missing keys come back as the key path — fall back to the inline label.
+  const tSafe = (key: string, fallback: string) => {
+    const v = t(key);
+    return typeof v === 'string' && v && !v.includes(key) ? v : fallback;
+  };
 
-  const colors = colorClasses[accentColor];
+  const colors = richColorMap[accentColor] || richColorMap.emerald;
 
   if (isLoading) {
     return (
@@ -190,94 +106,101 @@ export default function ServicePricing({
   return (
     <main className="min-h-screen pt-32 pb-20 bg-gray-50" dir={dir}>
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="max-w-4xl mx-auto text-center mb-16"
-        >
-          <span className={`${colors.text} font-medium tracking-wider uppercase text-sm mb-4 block`}>
-            {t('eyebrow')}
+        {/* Header — above the fold, no initial opacity:0 */}
+        <div className="max-w-4xl mx-auto text-center mb-16">
+          <span className="inline-flex items-center gap-3 mb-4">
+            <span className={`w-8 h-px ${colors.bg} opacity-40`} />
+            <span className={`${colors.text} font-semibold tracking-widest uppercase text-xs`}>
+              {t('eyebrow')}
+            </span>
+            <span className={`w-8 h-px ${colors.bg} opacity-40`} />
           </span>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
             {t('title')}
           </h1>
           <p className="text-xl text-gray-600 leading-relaxed">
             {t('subtitle')}
           </p>
-        </motion.div>
+        </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto items-stretch">
           {packagesData.map((pkg, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-              className={`p-8 rounded-2xl ${
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{ duration: 0.5, delay: index * 0.08 }}
+              className={`relative flex flex-col p-8 rounded-2xl bg-white transition-shadow duration-300 ${
                 pkg.highlighted
-                  ? `${colors.bg} text-white ring-4 ${colors.ring}`
-                  : 'bg-white border border-gray-200'
+                  ? `border-2 ${colors.border} shadow-xl md:-mt-4 md:mb-[-1rem]`
+                  : 'border border-gray-200 hover:shadow-lg'
               }`}
             >
-              <h3
-                className={`text-2xl font-bold mb-2 ${
-                  pkg.highlighted ? 'text-white' : 'text-gray-900'
-                }`}
-              >
+              {/* Popular badge */}
+              {pkg.highlighted && (
+                <span className={`absolute -top-3.5 start-1/2 -translate-x-1/2 rtl:translate-x-1/2 px-4 py-1.5 rounded-full text-xs font-bold text-white ${colors.bg} shadow-sm whitespace-nowrap`}>
+                  {l('popular')}
+                </span>
+              )}
+
+              <h3 className="text-xl font-bold mb-2 text-gray-900">
                 {pkg.name}
               </h3>
-              <div
-                className={`text-4xl font-bold mb-4 ${
-                  pkg.highlighted ? 'text-white' : colors.text
-                }`}
-              >
+              <div className={`text-4xl font-bold mb-3 tracking-tight ${colors.text}`}>
                 {pkg.price}
               </div>
-              <p className={`mb-6 ${pkg.highlighted ? colors.textLight : 'text-gray-600'}`}>
+              <p className="mb-6 text-sm text-gray-600 leading-relaxed">
                 {pkg.description}
               </p>
               <ul className="space-y-3 mb-8">
                 {pkg.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-center gap-3">
-                    <CheckIcon
-                      className={`w-5 h-5 flex-shrink-0 ${
-                        pkg.highlighted ? colors.textHighlight : colors.text
-                      }`}
-                    />
-                    <span className={pkg.highlighted ? colors.textLighter : 'text-gray-700'}>
+                  <li key={idx} className="flex items-start gap-3">
+                    <span className={`w-5 h-5 rounded-full ${colors.bgLight} flex items-center justify-center shrink-0 mt-0.5`}>
+                      <CheckIcon className={`w-3.5 h-3.5 ${colors.text}`} />
+                    </span>
+                    <span className="text-sm text-gray-700 leading-relaxed">
                       {feature}
                     </span>
                   </li>
                 ))}
               </ul>
-              <Button
-                href={pkg.ctaHref || '/contact'}
-                variant={pkg.highlighted ? 'secondary' : 'primary'}
-                size="lg"
-                className="w-full"
-              >
-                {pkg.ctaText || t('cta') || tCommon('getQuote')}
-              </Button>
+              <div className="mt-auto">
+                <Button
+                  href={pkg.ctaHref || '/start-project'}
+                  variant={pkg.highlighted ? 'primary' : 'secondary'}
+                  size="lg"
+                  className="w-full"
+                >
+                  {pkg.ctaText || l('startProject')}
+                </Button>
+              </div>
             </motion.div>
           ))}
         </div>
 
         {/* Custom solution CTA */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-          className="mt-16 text-center max-w-2xl mx-auto"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="mt-16 max-w-3xl mx-auto"
         >
-          <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-            {t('customTitle') || 'Need a Custom Solution?'}
-          </h3>
-          <p className="text-gray-600 mb-6">
-            {t('customDescription') || 'Contact us for a tailored solution that fits your specific requirements and budget.'}
-          </p>
-          <Button href="/contact" variant="primary" size="lg">
-            {t('customCta') || tCommon('contactUs')}
-          </Button>
+          <div className="relative overflow-hidden rounded-2xl bg-gray-900 px-6 py-10 md:px-12 text-center">
+            <div className={`absolute -top-24 -end-24 w-64 h-64 rounded-full bg-gradient-to-br ${colors.gradient} opacity-20 blur-3xl pointer-events-none`} />
+            <h3 className="relative z-10 text-2xl font-bold text-white mb-3 tracking-tight">
+              {tSafe('customTitle', l('customTitle'))}
+            </h3>
+            <p className="relative z-10 text-gray-300 mb-6 max-w-xl mx-auto leading-relaxed">
+              {tSafe('customDescription', l('customDesc'))}
+            </p>
+            <div className="relative z-10">
+              <Button href="/contact" variant="primary" size="lg" className="bg-white text-gray-900 border-white hover:bg-gray-100 hover:border-gray-100">
+                {tSafe('customCta', tCommon('contactUs') as string)}
+              </Button>
+            </div>
+          </div>
         </motion.div>
       </div>
     </main>

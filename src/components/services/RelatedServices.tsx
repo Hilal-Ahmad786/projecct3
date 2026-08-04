@@ -32,6 +32,7 @@ export default function RelatedServices({ items, locale }: { items: RelatedItem[
   return (
     <section className="py-20 bg-gray-50 border-t border-gray-100" dir={isRTL ? 'rtl' : 'ltr'}>
       <div className="container mx-auto px-4 max-w-6xl">
+        <span className="block w-10 h-1 rounded-full bg-heritage-turquoise mb-4" aria-hidden="true" />
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">{t('heading')}</h2>
         <p className="text-gray-500 mt-2 mb-8">{t('subtitle')}</p>
 
@@ -40,9 +41,9 @@ export default function RelatedServices({ items, locale }: { items: RelatedItem[
             <Link
               key={s.slug}
               href={`/${locale}${localizeFullPath(`/services/${s.slug}`, locale)}`}
-              className="group flex flex-col bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-lg hover:border-gray-300 transition-all duration-300"
+              className="group flex flex-col bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-lg hover:border-heritage-turquoise/40 hover:-translate-y-0.5 transition-all duration-300"
             >
-              <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-emerald-600 transition-colors">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-heritage-turquoise transition-colors">
                 {s.name}
               </h3>
               {s.shortDescription && (
@@ -50,9 +51,9 @@ export default function RelatedServices({ items, locale }: { items: RelatedItem[
                   {s.shortDescription}
                 </p>
               )}
-              <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-600 mt-auto">
+              <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-heritage-turquoise mt-auto">
                 {t('cta')}
-                <ArrowRightIcon className={`w-4 h-4 transition-transform group-hover:translate-x-0.5 ${isRTL ? 'rotate-180' : ''}`} />
+                <ArrowRightIcon className={`w-4 h-4 transition-transform group-hover:translate-x-0.5 ${isRTL ? 'rotate-180 group-hover:-translate-x-0.5 group-hover:translate-x-0' : ''}`} />
               </span>
             </Link>
           ))}

@@ -41,15 +41,14 @@ export default function ServicePortfolioPage({
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        {/* Hero Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          className="max-w-4xl mx-auto text-center mb-16"
-        >
-          <span className={`${colors.text} font-medium tracking-wider uppercase text-sm mb-4 block`}>
-            {subtitle}
+        {/* Hero Header — no initial opacity:0, this is above the fold */}
+        <div className="max-w-4xl mx-auto text-center mb-16">
+          <span className="inline-flex items-center gap-3 mb-4">
+            <span className={`w-8 h-px ${colors.bg} opacity-40`} />
+            <span className={`${colors.text} font-semibold tracking-widest uppercase text-xs`}>
+              {subtitle}
+            </span>
+            <span className={`w-8 h-px ${colors.bg} opacity-40`} />
           </span>
           <h1 className="text-display font-light text-gray-900 leading-none mb-6">
             {headline}
@@ -57,30 +56,25 @@ export default function ServicePortfolioPage({
           <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
             {description}
           </p>
-        </motion.div>
+        </div>
 
         {/* Filter tabs */}
         {industries.length > 2 && (
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="flex flex-wrap justify-center gap-3 mb-12"
-          >
+          <div className="flex flex-wrap justify-center gap-2 mb-12">
             {industries.map((industry) => (
               <button
                 key={industry}
                 onClick={() => setActiveFilter(industry)}
-                className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                className={`px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 border ${
                   activeFilter === industry
-                    ? `${colors.bg} text-white shadow-lg`
-                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                    ? `${colors.bg} text-white border-transparent shadow-sm`
+                    : 'bg-white text-gray-600 border-gray-200 hover:text-gray-900 hover:border-gray-300'
                 }`}
               >
                 {industry}
               </button>
             ))}
-          </motion.div>
+          </div>
         )}
 
         {/* Portfolio grid */}
@@ -162,7 +156,7 @@ export default function ServicePortfolioPage({
 
                     {/* Stats */}
                     {project.stats.length > 0 && (
-                      <div className={`grid grid-cols-${Math.min(project.stats.length, 3)} gap-4 pt-6 border-t border-gray-100`}>
+                      <div className={`grid ${project.stats.length >= 3 ? 'grid-cols-3' : project.stats.length === 2 ? 'grid-cols-2' : 'grid-cols-1'} gap-4 pt-6 border-t border-gray-100`}>
                         {project.stats.map((stat, i) => (
                           <div key={i} className="text-center">
                             <div className={`text-xl font-bold ${colors.text}`}>{stat.value}</div>

@@ -31,7 +31,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const validLocale = locales.includes(locale) ? locale : defaultLocale
   const t = createTranslator(validLocale)
 
-  const title = t('services.hero.title') + ' | PakSoft'
+  // hero.title is only the first word ("Digital"); the accent word completes
+  // it ("Solutions") — without it the tab title read "Digital | PakSoft".
+  const title = [t('services.hero.title'), t('services.hero.titleAccent')].filter(Boolean).join(' ') + ' | PakSoft'
   const description = t('services.hero.description')
 
   return {

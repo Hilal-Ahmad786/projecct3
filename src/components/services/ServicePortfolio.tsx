@@ -27,9 +27,9 @@ export default function ServicePortfolio({ portfolio }: { portfolio: PortfolioIt
     if (!portfolio || portfolio.length === 0) return null
 
     return (
-        <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
+        <section className="py-16 md:py-20 bg-gradient-to-b from-gray-50 to-white">
             <div className="container mx-auto px-4">
-                <div className="text-center mb-14">
+                <div className="text-center mb-12">
                     <motion.div
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -92,8 +92,8 @@ function PortfolioCard({ project, index }: { project: PortfolioItem; index: numb
             onClick={handleClick}
             className={`group ${project.url ? 'cursor-pointer' : 'cursor-default'}`}
         >
-            {/* Image / gradient thumbnail */}
-            <div className="relative aspect-[16/9] overflow-hidden rounded-2xl mb-4 shadow-md group-hover:shadow-xl transition-shadow duration-400">
+            {/* Image / gradient thumbnail — subtle lift + shadow on hover */}
+            <div className="relative aspect-[16/9] overflow-hidden rounded-2xl mb-4 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all duration-300">
                 {!imageError && project.image ? (
                     <Image
                         src={project.image}
@@ -122,7 +122,7 @@ function PortfolioCard({ project, index }: { project: PortfolioItem; index: numb
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <span className="text-white text-sm font-medium flex items-center gap-2">
                         {t('services.detail.portfolio.viewProject') || 'View Project'}
-                        <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <svg className="w-4 h-4 transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                         </svg>
                     </span>
@@ -130,7 +130,7 @@ function PortfolioCard({ project, index }: { project: PortfolioItem; index: numb
             </div>
 
             {/* Text below card */}
-            <h3 className="text-lg font-semibold text-gray-900 mb-0.5 leading-snug group-hover:text-blue-600 transition-colors duration-200">
+            <h3 className="text-lg font-semibold text-gray-900 mb-0.5 leading-snug group-hover:text-heritage-turquoise-deep transition-colors duration-200">
                 {project.title}
             </h3>
             <p className="text-sm text-gray-400 font-medium">{project.category}</p>

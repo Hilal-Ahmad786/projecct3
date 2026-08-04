@@ -59,6 +59,16 @@ export default function ServiceFeaturesPage({
 
   const colors = colorMap[accentColor] || colorMap.purple;
 
+  // Identical-filler-description rule: when 2+ features share the exact same
+  // description string it is template filler — render clean title-only cards.
+  const descCounts = featureItems.reduce((acc: Record<string, number>, f: any) => {
+    if (f?.description) acc[f.description] = (acc[f.description] || 0) + 1;
+    return acc;
+  }, {});
+  const hasFillerDescriptions = featureItems.some(
+    (f: any) => f?.description && descCounts[f.description] > 1
+  );
+
   return (
     <main className="min-h-screen pt-[calc(var(--navbar-h,64px)+2.5rem)] pb-20 bg-white relative overflow-hidden">
       {/* Background decorative elements */}
@@ -68,79 +78,96 @@ export default function ServiceFeaturesPage({
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        {/* Hero Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          className="max-w-4xl mx-auto text-center mb-20"
-        >
-          <motion.span
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className={`${colors.text} font-medium tracking-wider uppercase text-sm mb-4 block`}
-          >
-            {subtitle}
-          </motion.span>
+        {/* Hero Header — no initial opacity:0, this is above the fold */}
+        <div className="max-w-4xl mx-auto text-center mb-20">
+          <span className="inline-flex items-center gap-3 mb-4">
+            <span className={`w-8 h-px ${colors.bg} opacity-40`} />
+            <span className={`${colors.text} font-semibold tracking-widest uppercase text-xs`}>
+              {subtitle}
+            </span>
+            <span className={`w-8 h-px ${colors.bg} opacity-40`} />
+          </span>
           <h1 className="text-display font-light text-gray-900 leading-none mb-6">
             {headline}
           </h1>
           <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
             {description}
           </p>
-        </motion.div>
+        </div>
 
         {/* Features Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {featureItems.map((feature: any, index: number) => {
-            const isFeatured = index === 0;
-            return (
+        {hasFillerDescriptions ? (
+          /* Title-only compact cards when descriptions are duplicated filler */
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
+            {featureItems.map((feature: any, index: number) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-50px' }}
-                transition={{ duration: 0.5, delay: index * 0.08 }}
-                className={`group relative p-8 bg-white rounded-2xl border border-gray-100 ${colors.hoverBorder} hover:shadow-xl transition-all duration-500 ${isFeatured ? 'lg:col-span-2 lg:flex lg:items-start lg:gap-8' : ''
-                  }`}
+                viewport={{ once: true, amount: 0.1 }}
+                transition={{ duration: 0.4, delay: Math.min(index, 8) * 0.04 }}
+                className={`group flex items-center gap-4 p-5 bg-white rounded-2xl border border-gray-100 ${colors.hoverBorder} hover:shadow-md transition-all duration-300`}
               >
-                {/* Icon */}
-                <div className={`w-12 h-12 rounded-xl ${colors.bgLight} flex items-center justify-center flex-shrink-0 group-hover:${colors.bg} group-hover:text-white transition-all duration-300 ${colors.text} mb-4 lg:mb-0`}>
+                <div className={`w-11 h-11 rounded-xl ${colors.bgLight} ${colors.text} flex items-center justify-center flex-shrink-0`}>
                   {getIcon(feature.icon)}
                 </div>
-
-                <div className="flex-1">
-                  <h3 className="font-bold text-xl text-gray-900 mb-3 group-hover:translate-x-1 transition-transform duration-300">
-                    {feature.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    {feature.description}
-                  </p>
-
-                  {/* Detail list - reveals on hover */}
-                  {feature.details?.length > 0 && (
-                    <div className="max-h-0 overflow-hidden group-hover:max-h-96 transition-all duration-500 ease-in-out">
-                      <ul className="space-y-2 pt-4 border-t border-gray-100">
-                        {feature.details.map((detail, i) => (
-                          <li key={i} className="flex items-start gap-2 text-sm text-gray-500">
-                            <svg className={`w-4 h-4 ${colors.text} flex-shrink-0 mt-0.5`} fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
-                            </svg>
-                            {detail}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                </div>
-
-                {/* Hover accent line */}
-                <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${colors.gradient} rounded-b-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
+                <h3 className="font-semibold text-base text-gray-900 leading-snug">
+                  {feature.title}
+                </h3>
               </motion.div>
-            );
-          })}
-        </div>
+            ))}
+          </div>
+        ) : (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {featureItems.map((feature: any, index: number) => {
+              const isFeatured = index === 0;
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.1 }}
+                  transition={{ duration: 0.5, delay: Math.min(index, 8) * 0.06 }}
+                  className={`group relative p-8 bg-white rounded-2xl border border-gray-100 ${colors.hoverBorder} hover:shadow-xl transition-all duration-500 ${isFeatured ? 'lg:col-span-2 lg:flex lg:items-start lg:gap-8' : ''
+                    }`}
+                >
+                  {/* Icon */}
+                  <div className={`w-12 h-12 rounded-xl ${colors.bgLight} flex items-center justify-center flex-shrink-0 transition-all duration-300 ${colors.text} mb-4 lg:mb-0`}>
+                    {getIcon(feature.icon)}
+                  </div>
+
+                  <div className="flex-1">
+                    <h3 className="font-bold text-xl text-gray-900 mb-3">
+                      {feature.title}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed mb-4">
+                      {feature.description}
+                    </p>
+
+                    {/* Detail list - reveals on hover */}
+                    {feature.details?.length > 0 && (
+                      <div className="max-h-0 overflow-hidden group-hover:max-h-96 transition-all duration-500 ease-in-out">
+                        <ul className="space-y-2 pt-4 border-t border-gray-100">
+                          {feature.details.map((detail, i) => (
+                            <li key={i} className="flex items-start gap-2 text-sm text-gray-500">
+                              <svg className={`w-4 h-4 ${colors.text} flex-shrink-0 mt-0.5`} fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
+                              </svg>
+                              {detail}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Hover accent line */}
+                  <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${colors.gradient} rounded-b-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
+                </motion.div>
+              );
+            })}
+          </div>
+        )}
 
         {/* Stats Bar */}
         {stats && stats.length > 0 && (

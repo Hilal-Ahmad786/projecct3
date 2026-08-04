@@ -32,27 +32,30 @@ function AccordionItem({
 }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 16 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.4, delay: index * 0.05 }}
-      className={`border ${isOpen ? colors.border : 'border-gray-200'} rounded-xl overflow-hidden transition-colors duration-300 ${isOpen ? colors.bgLight : 'bg-white'}`}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 0.4, delay: Math.min(index, 6) * 0.04 }}
+      className={`border rounded-2xl overflow-hidden transition-colors duration-300 ${isOpen ? `${colors.border} ${colors.bgLight} shadow-sm` : 'border-gray-200 bg-white hover:border-gray-300'}`}
     >
       <button
         onClick={onToggle}
-        className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50/50 transition-colors"
+        aria-expanded={isOpen}
+        className="w-full flex items-center justify-between gap-4 p-5 md:p-6 text-start transition-colors"
       >
-        <span className="font-semibold text-lg text-gray-900 pr-4">{item.question}</span>
-        <motion.svg
-          animate={{ rotate: isOpen ? 180 : 0 }}
-          transition={{ duration: 0.3 }}
-          className={`w-5 h-5 flex-shrink-0 ${isOpen ? colors.text : 'text-gray-400'} transition-colors`}
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-        </motion.svg>
+        <span className="font-semibold text-base md:text-lg text-gray-900 leading-snug">{item.question}</span>
+        <span className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-colors ${isOpen ? `${colors.bg} text-white` : 'bg-gray-100 text-gray-500'}`}>
+          <motion.svg
+            animate={{ rotate: isOpen ? 180 : 0 }}
+            transition={{ duration: 0.3 }}
+            className="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          </motion.svg>
+        </span>
       </button>
       <AnimatePresence>
         {isOpen && (
@@ -62,9 +65,9 @@ function AccordionItem({
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
-            <div className="px-6 pb-6">
+            <div className="px-5 md:px-6 pb-6">
               <div className={`w-12 h-0.5 bg-gradient-to-r ${colors.gradient} mb-4`} />
-              <p className="text-gray-600 leading-relaxed">{item.answer}</p>
+              <p className="text-gray-600 text-[15px] md:text-base leading-7 md:leading-8">{item.answer}</p>
             </div>
           </motion.div>
         )}
@@ -110,15 +113,14 @@ export default function ServiceFAQPage({
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        {/* Hero Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          className="max-w-4xl mx-auto text-center mb-12"
-        >
-          <span className={`${colors.text} font-medium tracking-wider uppercase text-sm mb-4 block`}>
-            {subtitle}
+        {/* Hero Header — no initial opacity:0, this is above the fold */}
+        <div className="max-w-4xl mx-auto text-center mb-12">
+          <span className="inline-flex items-center gap-3 mb-4">
+            <span className={`w-8 h-px ${colors.bg} opacity-40`} />
+            <span className={`${colors.text} font-semibold tracking-widest uppercase text-xs`}>
+              {subtitle}
+            </span>
+            <span className={`w-8 h-px ${colors.bg} opacity-40`} />
           </span>
           <h1 className="text-display font-light text-gray-900 leading-none mb-6">
             {headline}
@@ -126,17 +128,12 @@ export default function ServiceFAQPage({
           <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
             {description}
           </p>
-        </motion.div>
+        </div>
 
         {/* Search */}
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
-          className="max-w-2xl mx-auto mb-10"
-        >
+        <div className="max-w-2xl mx-auto mb-10">
           <div className="relative">
-            <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg className="absolute start-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
             </svg>
             <input
@@ -144,19 +141,14 @@ export default function ServiceFAQPage({
               placeholder={t('serviceSubpages.common.searchQuestions')}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-12 pr-4 py-4 bg-white rounded-xl border border-gray-200 focus:border-gray-300 focus:ring-2 focus:ring-gray-200 outline-none transition-all text-gray-900 placeholder:text-gray-400"
+              className="w-full ps-12 pe-4 py-4 bg-white rounded-2xl border border-gray-200 focus:border-gray-300 focus:ring-2 focus:ring-gray-200 outline-none transition-all text-gray-900 placeholder:text-gray-400"
             />
           </div>
-        </motion.div>
+        </div>
 
         {/* Category tabs */}
         {categories.length > 1 && (
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="flex flex-wrap justify-center gap-3 mb-10"
-          >
+          <div className="flex flex-wrap justify-center gap-2 mb-10">
             {categories.map((category) => (
               <button
                 key={category}
@@ -165,16 +157,16 @@ export default function ServiceFAQPage({
                   setOpenIndex(0);
                   setSearchQuery('');
                 }}
-                className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
+                className={`px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 border ${
                   activeCategory === category
-                    ? `${colors.bg} text-white shadow-lg`
-                    : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200'
+                    ? `${colors.bg} text-white border-transparent shadow-sm`
+                    : 'bg-white text-gray-600 border-gray-200 hover:text-gray-900 hover:border-gray-300'
                 }`}
               >
                 {category}
               </button>
             ))}
-          </motion.div>
+          </div>
         )}
 
         {/* FAQ List */}

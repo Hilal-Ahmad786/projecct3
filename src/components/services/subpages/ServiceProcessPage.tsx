@@ -13,6 +13,60 @@ interface ServiceProcessPageProps {
 
 import { processColorMap as colorMap } from '@/lib/heritage-accents';
 
+// ── Localized UI labels (en/tr/de/ur/ar) ─────────────────────────────
+type Loc = 'en' | 'tr' | 'de' | 'ur' | 'ar';
+const L: Record<string, Record<Loc, string>> = {
+  step:          { en: 'Step',            tr: 'Adım',              de: 'Schritt',            ur: 'مرحلہ',            ar: 'خطوة' },
+  definedPhases: { en: 'Defined phases',  tr: 'Tanımlı aşama',     de: 'Definierte Phasen',  ur: 'متعین مراحل',      ar: 'مراحل محددة' },
+  methodology:   { en: 'Methodology',     tr: 'Metodoloji',        de: 'Methodik',           ur: 'طریقہ کار',        ar: 'المنهجية' },
+  agile:         { en: 'Agile',           tr: 'Çevik',             de: 'Agil',               ur: 'ایجائل',           ar: 'أجايل' },
+  transparency:  { en: 'Transparency',    tr: 'Şeffaflık',         de: 'Transparenz',        ur: 'شفافیت',           ar: 'الشفافية' },
+  scroll:        { en: 'Scroll',          tr: 'Kaydır',            de: 'Scrollen',           ur: 'سکرول',            ar: 'مرّر' },
+  phaseByPhase:  { en: 'Phase by phase',  tr: 'Aşama aşama',       de: 'Phase für Phase',    ur: 'مرحلہ وار',        ar: 'مرحلة بمرحلة' },
+  comingSoon:    { en: 'Process steps coming soon.', tr: 'Süreç adımları yakında.', de: 'Prozessschritte folgen in Kürze.', ur: 'عمل کے مراحل جلد آ رہے ہیں۔', ar: 'خطوات العملية قريباً.' },
+  workingWithUs: { en: 'Working with us', tr: 'Bizimle çalışmak',  de: 'Zusammenarbeit mit uns', ur: 'ہمارے ساتھ کام کرنا', ar: 'العمل معنا' },
+  expectTitle:   { en: 'What you can expect', tr: 'Neler bekleyebilirsiniz', de: 'Was Sie erwarten können', ur: 'آپ کیا توقع کر سکتے ہیں', ar: 'ما يمكنك توقعه' },
+  expectDesc:    {
+    en: 'Every engagement is built on clear communication, agreed milestones, and zero surprises. You stay in the loop at every phase.',
+    tr: 'Her iş birliği net iletişim, üzerinde anlaşılmış kilometre taşları ve sürprizsiz bir süreç üzerine kurulur. Her aşamada bilgilendirilirsiniz.',
+    de: 'Jede Zusammenarbeit basiert auf klarer Kommunikation, vereinbarten Meilensteinen und null Überraschungen. Sie bleiben in jeder Phase informiert.',
+    ur: 'ہر منصوبہ واضح رابطے، طے شدہ سنگِ میل اور بغیر کسی حیرت کے اصولوں پر مبنی ہے۔ آپ ہر مرحلے میں باخبر رہتے ہیں۔',
+    ar: 'كل تعاون مبني على تواصل واضح ومراحل متفق عليها وبلا مفاجآت. تبقى على اطلاع في كل مرحلة.',
+  },
+  e1Title: { en: 'Weekly updates',      tr: 'Haftalık güncellemeler', de: 'Wöchentliche Updates',   ur: 'ہفتہ وار اپڈیٹس',      ar: 'تحديثات أسبوعية' },
+  e1Desc:  {
+    en: 'Progress reports every week — delivered to your inbox or Slack.',
+    tr: 'Her hafta ilerleme raporları — e-postanıza veya Slack’e iletilir.',
+    de: 'Wöchentliche Fortschrittsberichte — per E-Mail oder Slack.',
+    ur: 'ہر ہفتے پیش رفت رپورٹس — آپ کے ان باکس یا Slack پر۔',
+    ar: 'تقارير تقدم أسبوعية — تصل إلى بريدك أو Slack.',
+  },
+  e2Title: { en: 'Direct access',       tr: 'Doğrudan erişim',        de: 'Direkter Kontakt',       ur: 'براہ راست رسائی',      ar: 'تواصل مباشر' },
+  e2Desc:  {
+    en: 'Speak directly with the lead developer, not a middleman.',
+    tr: 'Aracı değil, doğrudan baş geliştirici ile görüşürsünüz.',
+    de: 'Sie sprechen direkt mit dem Lead-Entwickler, ohne Umwege.',
+    ur: 'کسی واسطے کے بغیر براہ راست لیڈ ڈویلپر سے بات کریں۔',
+    ar: 'تحدث مباشرة مع المطور الرئيسي دون وسيط.',
+  },
+  e3Title: { en: 'Milestone sign-off',  tr: 'Aşama onayı',            de: 'Meilenstein-Freigabe',   ur: 'سنگِ میل کی منظوری',   ar: 'اعتماد المراحل' },
+  e3Desc:  {
+    en: 'You approve each phase before we move forward — full control.',
+    tr: 'İlerlemeden önce her aşamayı siz onaylarsınız — tam kontrol.',
+    de: 'Sie geben jede Phase frei, bevor es weitergeht — volle Kontrolle.',
+    ur: 'آگے بڑھنے سے پہلے آپ ہر مرحلے کی منظوری دیتے ہیں — مکمل کنٹرول۔',
+    ar: 'توافق على كل مرحلة قبل المتابعة — تحكم كامل.',
+  },
+  e4Title: { en: 'Full documentation',  tr: 'Eksiksiz dokümantasyon', de: 'Vollständige Doku',      ur: 'مکمل دستاویزات',       ar: 'توثيق كامل' },
+  e4Desc:  {
+    en: 'Handover includes source code, architecture docs, and runbooks.',
+    tr: 'Teslimat kaynak kodu, mimari dokümanlar ve kılavuzları içerir.',
+    de: 'Übergabe inkl. Quellcode, Architektur-Doku und Runbooks.',
+    ur: 'حوالگی میں سورس کوڈ، آرکیٹیکچر دستاویزات اور رن بکس شامل ہیں۔',
+    ar: 'يشمل التسليم الكود المصدري ووثائق البنية وأدلة التشغيل.',
+  },
+};
+
 const STEP_ICONS: Record<string, React.ReactElement> = {
   search:    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>,
   document:  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>,
@@ -31,11 +85,12 @@ function getIcon(name: string) {
 }
 
 // A single step row — reveals on scroll
-function StepRow({ step, index, colors, isLast }: {
+function StepRow({ step, index, colors, isLast, stepLabel }: {
   step: { title: string; description: string; details: string[]; icon: string };
   index: number;
   colors: (typeof colorMap)[string];
   isLast: boolean;
+  stepLabel: string;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: '-80px 0px' });
@@ -94,7 +149,7 @@ function StepRow({ step, index, colors, isLast }: {
               {getIcon(step.icon)}
             </div>
             <span className={`text-xs font-semibold uppercase tracking-widest ${colors.text}`}>
-              Step {num}
+              {stepLabel} {num}
             </span>
             {step.details.length > 0 && (
               <motion.svg
@@ -150,16 +205,25 @@ function StepRow({ step, index, colors, isLast }: {
 }
 
 export default function ServiceProcessPage({ serviceSlug, accentColor }: ServiceProcessPageProps) {
-  const { translations } = useTranslations();
+  const { translations, locale, dir } = useTranslations();
+  const loc = (['en', 'tr', 'de', 'ur', 'ar'].includes(locale) ? locale : 'en') as Loc;
+  const l = (key: keyof typeof L) => L[key][loc];
   const data = translations?.serviceSubpages?.[serviceSlug];
   const processData = data?.process;
   const serviceName = data?.serviceName || serviceSlug;
-  const headline = processData?.headline || 'Our Process';
-  const subtitle = processData?.subtitle || 'How We Work';
-  const description = processData?.description || 'A structured approach from discovery to launch.';
+  const headline = processData?.headline || '';
+  const subtitle = processData?.subtitle || '';
+  const description = processData?.description || '';
   const steps: { title: string; description: string; details: string[]; icon: string }[] = processData?.steps || [];
 
   const colors = colorMap[accentColor] || colorMap.blue;
+
+  const expectItems = [
+    { title: l('e1Title'), desc: l('e1Desc') },
+    { title: l('e2Title'), desc: l('e2Desc') },
+    { title: l('e3Title'), desc: l('e3Desc') },
+    { title: l('e4Title'), desc: l('e4Desc') },
+  ];
 
   const heroRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress: heroScroll } = useScroll({ target: heroRef, offset: ['start start', 'end start'] });
@@ -167,7 +231,7 @@ export default function ServiceProcessPage({ serviceSlug, accentColor }: Service
   const heroOpacity = useTransform(heroScroll, [0, 0.6], [1, 0]);
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white" dir={dir}>
 
       {/* ── Hero ─────────────────────────────────────────────────────── */}
       <section
@@ -192,62 +256,37 @@ export default function ServiceProcessPage({ serviceSlug, accentColor }: Service
 
         <motion.div style={{ y: heroY, opacity: heroOpacity }} className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
-            {/* Eyebrow */}
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="flex items-center gap-3 mb-6"
-            >
+            {/* Eyebrow — above the fold, no initial opacity:0 */}
+            <div className="flex items-center gap-3 mb-6">
               <div className="w-8 h-px bg-gray-300" />
               <span className={`text-xs font-semibold uppercase tracking-widest ${colors.text}`}>
                 {subtitle}
               </span>
-            </motion.div>
+            </div>
 
             {/* Headline */}
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-display font-light text-gray-900 leading-none mb-6"
-            >
+            <h1 className="text-display font-light text-gray-900 leading-none mb-6">
               {headline}
-            </motion.h1>
+            </h1>
 
             {/* Description */}
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-lg text-gray-500 leading-relaxed max-w-2xl mb-12"
-            >
+            <p className="text-lg text-gray-500 leading-relaxed max-w-2xl mb-12">
               {description}
-            </motion.p>
+            </p>
 
             {/* Stats strip */}
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex flex-wrap gap-10 border-t border-gray-200 pt-8"
-            >
+            <div className="flex flex-wrap gap-10 border-t border-gray-200 pt-8">
               {[
-                { value: steps.length.toString(), label: 'Defined phases' },
-                { value: 'Agile', label: 'Methodology' },
-                { value: '100%', label: 'Transparency' },
-              ].map((stat, i) => (
-                <motion.div
-                  key={stat.label}
-                  initial={{ opacity: 0, y: 12 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: 0.4 + i * 0.08 }}
-                >
+                { value: steps.length.toString(), label: l('definedPhases') },
+                { value: l('agile'), label: l('methodology') },
+                { value: '100%', label: l('transparency') },
+              ].map((stat) => (
+                <div key={stat.label}>
                   <p className={`text-4xl font-bold ${colors.text}`}>{stat.value}</p>
                   <p className="text-sm text-gray-400 mt-1">{stat.label}</p>
-                </motion.div>
+                </div>
               ))}
-            </motion.div>
+            </div>
           </div>
         </motion.div>
 
@@ -258,7 +297,7 @@ export default function ServiceProcessPage({ serviceSlug, accentColor }: Service
           transition={{ delay: 1.2 }}
           className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5"
         >
-          <span className="text-[10px] uppercase tracking-widest text-gray-300 font-semibold">Scroll</span>
+          <span className="text-[10px] uppercase tracking-widest text-gray-300 font-semibold">{l('scroll')}</span>
           <motion.div
             className="w-5 h-8 border-2 border-gray-200 rounded-full flex justify-center pt-1.5"
           >
@@ -283,13 +322,13 @@ export default function ServiceProcessPage({ serviceSlug, accentColor }: Service
           >
             <div className="w-8 h-px bg-gray-300" />
             <span className="text-xs font-semibold uppercase tracking-widest text-gray-400">
-              Phase by phase
+              {l('phaseByPhase')}
             </span>
           </motion.div>
 
           {steps.length === 0 ? (
             <div className="text-center py-20 text-gray-400">
-              <p className="text-lg">Process steps coming soon.</p>
+              <p className="text-lg">{l('comingSoon')}</p>
             </div>
           ) : (
             <div className="max-w-3xl mx-auto">
@@ -300,6 +339,7 @@ export default function ServiceProcessPage({ serviceSlug, accentColor }: Service
                   index={i}
                   colors={colors}
                   isLast={i === steps.length - 1}
+                  stepLabel={l('step')}
                 />
               ))}
             </div>
@@ -319,7 +359,7 @@ export default function ServiceProcessPage({ serviceSlug, accentColor }: Service
                 className="flex items-center gap-3 mb-6"
               >
                 <div className="w-8 h-px bg-gray-300" />
-                <span className="text-xs font-semibold uppercase tracking-widest text-gray-400">Working with us</span>
+                <span className="text-xs font-semibold uppercase tracking-widest text-gray-400">{l('workingWithUs')}</span>
               </motion.div>
               <motion.h2
                 initial={{ opacity: 0, y: 16 }}
@@ -328,7 +368,7 @@ export default function ServiceProcessPage({ serviceSlug, accentColor }: Service
                 transition={{ delay: 0.1 }}
                 className="text-headline text-gray-900 mb-4"
               >
-                What you can expect
+                {l('expectTitle')}
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 16 }}
@@ -337,17 +377,12 @@ export default function ServiceProcessPage({ serviceSlug, accentColor }: Service
                 transition={{ delay: 0.2 }}
                 className="text-gray-500 leading-relaxed"
               >
-                Every engagement is built on clear communication, agreed milestones, and zero surprises. You stay in the loop at every phase.
+                {l('expectDesc')}
               </motion.p>
             </div>
 
             <div className="grid sm:grid-cols-2 gap-4">
-              {[
-                { title: 'Weekly updates', desc: 'Progress reports every Friday — delivered to your inbox or Slack.' },
-                { title: 'Direct access', desc: 'Speak directly with the lead developer, not a project manager middleman.' },
-                { title: 'Milestone sign-off', desc: 'You approve each phase before we move forward — full control.' },
-                { title: 'Full documentation', desc: 'Handover includes source code, architecture docs, and runbooks.' },
-              ].map((item, i) => (
+              {expectItems.map((item, i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 20 }}

@@ -65,9 +65,9 @@ export function TestimonialsSection({ testimonials }: { testimonials: Testimonia
   if (!testimonials?.length) return null;
 
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-16 md:py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="w-8 h-0.5 bg-gray-400" />
             <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">
@@ -80,15 +80,15 @@ export function TestimonialsSection({ testimonials }: { testimonials: Testimonia
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-5 max-w-5xl mx-auto">
           {testimonials.slice(0, 3).map((item, i) => (
             <motion.figure
               key={i}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col"
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{ duration: 0.45, delay: i * 0.08 }}
+              className="bg-white rounded-2xl p-6 border border-gray-200/70 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 flex flex-col"
             >
               <div className="flex gap-0.5 mb-4" aria-hidden>
                 {Array.from({ length: item.rating ?? 5 }).map((_, s) => (
@@ -120,7 +120,7 @@ export function CaseStudySection({ caseStudy }: { caseStudy: CaseStudyData }) {
   if (!caseStudy?.title) return null;
 
   return (
-    <section className="py-24 bg-gray-950">
+    <section className="py-16 md:py-20 bg-gray-950">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-3 mb-4">
@@ -191,7 +191,7 @@ export function CaseStudySection({ caseStudy }: { caseStudy: CaseStudyData }) {
 
 // ── Comparison table ─────────────────────────────────────────────────
 function ComparisonCell({ value }: { value: string | boolean }) {
-  if (value === true) return <CheckIcon className="w-5 h-5 text-emerald-500 mx-auto" aria-label="yes" />;
+  if (value === true) return <CheckIcon className="w-5 h-5 text-heritage-turquoise mx-auto" aria-label="yes" />;
   if (value === false) return <XMarkIcon className="w-5 h-5 text-gray-300 mx-auto" aria-label="no" />;
   return <span className="text-sm text-gray-600">{value}</span>;
 }
@@ -202,9 +202,9 @@ export function ComparisonSection({ comparison }: { comparison: ComparisonData }
   const highlight = comparison.highlightColumn ?? 1;
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-16 md:py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-10">
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="w-8 h-0.5 bg-gray-400" />
             <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">
@@ -272,9 +272,9 @@ export function PricingMetaPanel({ pricingMeta, serviceSlug }: { pricingMeta: Pr
   if (!pricingMeta?.startingFrom && !pricingMeta?.factors?.length) return null;
 
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-16 md:py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto rounded-2xl bg-white border border-gray-200 p-8 md:p-10 text-center shadow-sm">
+        <div className="max-w-3xl mx-auto rounded-2xl bg-white border border-gray-200/70 p-8 md:p-10 text-center shadow-sm">
           {pricingMeta.startingFrom && (
             <>
               <div className="text-sm text-gray-500 mb-1">

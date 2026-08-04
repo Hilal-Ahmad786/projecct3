@@ -180,6 +180,56 @@ const icons: Record<string, React.ElementType> = {
 
 
 
+// ─── Per-category heritage accents (Modern Heritage palette) ────────
+interface CategoryAccent {
+  text: string;        // accent text color
+  hoverText: string;   // group-hover accent text
+  bg: string;          // solid accent bg (active chips)
+  soft: string;        // light accent bg (icon chips, pills)
+  hoverBorder: string; // card hover border accent
+  wash: string;        // gradient wash start color
+  dot: string;         // bullet dot
+}
+
+const CATEGORY_ACCENTS: Record<string, CategoryAccent> = {
+  web: {
+    text: 'text-heritage-turquoise', hoverText: 'group-hover:text-heritage-turquoise',
+    bg: 'bg-heritage-turquoise', soft: 'bg-heritage-turquoise-light',
+    hoverBorder: 'hover:border-heritage-turquoise/40', wash: 'from-heritage-turquoise/[0.06]',
+    dot: 'bg-heritage-turquoise',
+  },
+  ai: {
+    text: 'text-heritage-lapis', hoverText: 'group-hover:text-heritage-lapis',
+    bg: 'bg-heritage-lapis', soft: 'bg-heritage-lapis-light',
+    hoverBorder: 'hover:border-heritage-lapis/40', wash: 'from-heritage-lapis/[0.06]',
+    dot: 'bg-heritage-lapis',
+  },
+  marketing: {
+    text: 'text-heritage-saffron', hoverText: 'group-hover:text-heritage-saffron',
+    bg: 'bg-heritage-saffron-bright', soft: 'bg-heritage-saffron-light',
+    hoverBorder: 'hover:border-heritage-saffron-bright/40', wash: 'from-heritage-saffron-bright/[0.07]',
+    dot: 'bg-heritage-saffron-bright',
+  },
+  design: {
+    text: 'text-heritage-terracotta', hoverText: 'group-hover:text-heritage-terracotta',
+    bg: 'bg-heritage-terracotta', soft: 'bg-heritage-terracotta-light',
+    hoverBorder: 'hover:border-heritage-terracotta/40', wash: 'from-heritage-terracotta/[0.06]',
+    dot: 'bg-heritage-terracotta',
+  },
+  infrastructure: {
+    text: 'text-heritage-lapis', hoverText: 'group-hover:text-heritage-lapis',
+    bg: 'bg-heritage-lapis', soft: 'bg-heritage-lapis-light',
+    hoverBorder: 'hover:border-heritage-lapis/40', wash: 'from-heritage-lapis/[0.06]',
+    dot: 'bg-heritage-lapis',
+  },
+  consulting: {
+    text: 'text-heritage-turquoise', hoverText: 'group-hover:text-heritage-turquoise',
+    bg: 'bg-heritage-turquoise', soft: 'bg-heritage-turquoise-light',
+    hoverBorder: 'hover:border-heritage-turquoise/40', wash: 'from-heritage-turquoise/[0.06]',
+    dot: 'bg-heritage-turquoise',
+  },
+};
+
 // ─── Component ──────────────────────────────────────────────────────
 export default function ServicesSection() {
   const { locale, dir, isLoading } = useTranslations();
@@ -251,79 +301,94 @@ export default function ServicesSection() {
               <div className="flex flex-wrap justify-center gap-2 mb-12 lg:mb-16">
                 {categories.map((category) => {
                   const TabIcon = category.icon;
+                  const a = CATEGORY_ACCENTS[category.key] || CATEGORY_ACCENTS.web;
                   return (
                     <button
                       key={category.key}
                       onClick={() => setExpandedCategory(category.key)}
-                      className="relative px-5 py-2.5 text-sm font-bold rounded-xl transition-all duration-300 flex items-center gap-2.5 group overflow-hidden border bg-white shadow-sm border-gray-100 hover:shadow-md text-gray-600 hover:text-gray-900 hover:border-gray-200"
+                      className={`relative px-4 py-2 text-sm font-semibold rounded-full transition-all duration-300 flex items-center gap-2 group border bg-white border-gray-200 text-gray-600 hover:text-gray-900 ${a.hoverBorder} hover:shadow-sm`}
                     >
-                      <TabIcon className="w-4 h-4 relative z-10 text-gray-400 group-hover:text-gray-900 transition-colors" />
-                      <span className="relative z-10">{category.label}</span>
+                      <TabIcon className={`w-4 h-4 text-gray-400 ${a.hoverText} transition-colors`} />
+                      <span>{category.label}</span>
                     </button>
                   );
                 })}
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-                {categories.map((cat, idx) => {
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+                {categories.map((cat) => {
                   const Icon = cat.icon;
+                  const a = CATEGORY_ACCENTS[cat.key] || CATEGORY_ACCENTS.web;
                   return (
                     <motion.button
                       key={cat.key}
                       onClick={() => setExpandedCategory(cat.key)}
-                      whileHover={prefersReducedMotion ? {} : { y: -8 }}
+                      whileHover={prefersReducedMotion ? {} : { y: -4 }}
                       transition={smoothSpring}
-                      className="glass bg-white flex flex-col items-start text-left p-8 md:p-10 hover:bg-gray-50 border border-white hover:border-gray-200 rounded-[2rem] group overflow-hidden relative shadow-[0_8px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] w-full text-left focus:outline-none"
+                      className={`bg-white flex flex-col items-start text-start p-6 md:p-7 border border-gray-100 ${a.hoverBorder} rounded-2xl group overflow-hidden relative shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.07)] transition-[box-shadow,border-color] duration-300 w-full focus:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2`}
                     >
-                      <div className="flex items-center gap-4 mb-6">
-                        <div className="w-16 h-16 bg-accent-emerald-light rounded-2xl flex items-center justify-center relative z-10 group-hover:scale-110 group-hover:bg-primary transition-all duration-500 border border-gray-100 shadow-sm shrink-0">
-                           <Icon className="w-8 h-8 text-primary group-hover:text-white transition-colors duration-500" />
+                      {/* Subtle per-category gradient wash */}
+                      <div className={`absolute inset-0 bg-gradient-to-br ${a.wash} via-transparent to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none`} />
+
+                      {/* Icon chip + count pill */}
+                      <div className="relative z-10 flex items-center justify-between w-full mb-5">
+                        <div className={`w-12 h-12 ${a.soft} rounded-xl flex items-center justify-center shrink-0`}>
+                          <Icon className={`w-6 h-6 ${a.text}`} />
                         </div>
-                        <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 relative z-10 tracking-tight leading-tight group-hover:text-primary transition-colors duration-300 text-left">
-                          {cat.label}
-                        </h3>
+                        <span className={`px-3 py-1 rounded-full text-xs font-bold ${a.soft} ${a.text}`}>
+                          {(t('majorServices') as string).replace('{count}', String(servicesByCategory[cat.key]?.length ?? 0))}
+                        </span>
                       </div>
-                      
-                      {/* Short Description added back */}
-                      <p className="text-sm lg:text-base text-gray-600 font-medium mb-6 relative z-10 leading-relaxed text-left line-clamp-2">
+
+                      <h3 className={`relative z-10 text-xl lg:text-2xl font-bold text-gray-900 tracking-tight leading-tight ${a.hoverText} transition-colors duration-300 text-start mb-2`}>
+                        {cat.label}
+                      </h3>
+
+                      <p className="relative z-10 text-sm text-gray-600 font-medium mb-5 leading-relaxed text-start line-clamp-2">
                          {cat.desc}
                       </p>
 
-                      {/* Important bullet points fetched from top 3 features */}
-                      <div className="space-y-2 mb-8 relative z-10 w-full">
-                         {servicesByCategory[cat.key]?.slice(0, 3).map((s, i) => ( 
-                            <div key={i} className={`flex items-start gap-3 ${dir === 'rtl' ? 'flex-row-reverse text-right' : ''}`}>
-                              <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0 opacity-70 group-hover:opacity-100 transition-opacity" />
-                              <span className="text-sm font-medium text-gray-600 leading-snug group-hover:text-gray-900 transition-colors text-left">
+                      {/* Top services preview */}
+                      <div className="space-y-1.5 mb-6 relative z-10 w-full">
+                         {servicesByCategory[cat.key]?.slice(0, 3).map((s, i) => (
+                            <div key={i} className="flex items-start gap-2.5">
+                              <div className={`w-1.5 h-1.5 rounded-full ${a.dot} mt-[7px] shrink-0 opacity-60 group-hover:opacity-100 transition-opacity`} />
+                              <span className="text-sm font-medium text-gray-600 leading-snug group-hover:text-gray-900 transition-colors text-start">
                                  {tServices(`${toKey(s.slug)}.title`)}
                               </span>
                             </div>
                          ))}
                       </div>
-                      
-                      <div className="mt-auto pt-6 border-t border-gray-100/50 flex items-center justify-between w-full relative z-10 group-hover:border-primary/20 transition-colors">
-                         <span className="text-xs sm:text-sm font-bold tracking-widest uppercase text-gray-500 group-hover:text-gray-900 transition-colors">
-                           {(t('majorServices') as string).replace('{count}', String(servicesByCategory[cat.key]?.length ?? 0))}
+
+                      <div className="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between w-full relative z-10">
+                         <span className={`text-xs font-bold tracking-widest uppercase text-gray-500 ${a.hoverText} transition-colors`}>
+                           {t('exploreDetails') as string}
                          </span>
-                         <div className={`w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-white scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-0 ${dir === 'rtl' ? 'translate-x-4' : '-translate-x-4'}`}>
+                         <span className={`w-8 h-8 rounded-full ${a.soft} flex items-center justify-center ${a.text} opacity-0 group-hover:opacity-100 transition-all duration-300 transform ${dir === 'rtl' ? 'translate-x-2 group-hover:translate-x-0' : '-translate-x-2 group-hover:translate-x-0'}`}>
                             <svg className={`w-4 h-4 ${dir === 'rtl' ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                             </svg>
-                         </div>
+                         </span>
                       </div>
-                      
-                      {/* Massive absolute subtle background decorative icon overlay */}
-                      <Icon className={`absolute -bottom-16 w-64 h-64 text-gray-900/[0.03] group-hover:text-primary/10 group-hover:-rotate-12 group-hover:scale-110 transition-all duration-700 pointer-events-none ${dir === 'rtl' ? '-left-16' : '-right-16'}`} />
                     </motion.button>
                   );
                 })}
               </div>
 
-              {/* Bottom CTA */}
-              <div className="mt-16 sm:mt-24 text-center pb-8">
-                 <Button href="/contact" variant="primary" size="lg">
-                    {t('startProject')}
-                 </Button>
+              {/* Bottom CTA band */}
+              <div className="mt-16 sm:mt-20 pb-8">
+                <div className={`relative overflow-hidden rounded-2xl bg-gray-900 px-6 py-10 md:px-12 flex flex-col md:flex-row items-center justify-between gap-6 text-center ${dir === 'rtl' ? 'md:text-right' : 'md:text-left'}`}>
+                  <div className={`absolute -top-24 w-72 h-72 rounded-full bg-heritage-turquoise/20 blur-3xl pointer-events-none ${dir === 'rtl' ? '-left-24' : '-right-24'}`} />
+                  <div className="relative z-10">
+                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 tracking-tight">{t('readyToStart')}</h3>
+                    <p className="text-gray-300 max-w-xl leading-relaxed">{t('readyDescription')}</p>
+                  </div>
+                  <div className="relative z-10 shrink-0">
+                    <Button href="/start-project" variant="primary" size="lg" className="bg-white text-gray-900 border-white hover:bg-gray-100 hover:border-gray-100">
+                      {t('startProject')}
+                    </Button>
+                  </div>
+                </div>
               </div>
 
             </motion.div>
@@ -367,31 +432,32 @@ export default function ServicesSection() {
                   {categories.map((category) => {
                     const isActive = expandedCategory === category.key;
                     const TabIcon = category.icon;
+                    const chipAccent = CATEGORY_ACCENTS[category.key] || CATEGORY_ACCENTS.web;
                     return (
                       <button
                         key={category.key}
                         onClick={() => setExpandedCategory(category.key)}
                         className={`
-                          relative px-4 py-2.5 text-sm font-bold rounded-xl transition-all duration-300 flex items-center gap-2.5 group overflow-hidden border
+                          relative px-4 py-2 text-sm font-semibold rounded-full transition-all duration-300 flex items-center gap-2 group overflow-hidden border
                           ${isActive
-                            ? 'text-white border-transparent shadow-[0_4px_15px_rgba(26,26,26,0.15)]'
-                            : 'bg-white shadow-sm border-gray-100 hover:shadow-md text-gray-600 hover:text-gray-900 hover:border-gray-200'
+                            ? 'text-white border-transparent shadow-sm'
+                            : `bg-white border-gray-200 text-gray-600 hover:text-gray-900 ${chipAccent.hoverBorder}`
                           }
                         `}
                       >
                         {isActive && !prefersReducedMotion && (
                           <motion.div
                             layoutId="activeCategoryPillDetail"
-                            className="absolute inset-0 bg-gray-900"
+                            className={`absolute inset-0 ${chipAccent.bg}`}
                             transition={smoothSpring}
                             style={{ zIndex: -1 }}
                           />
                         )}
                         {isActive && prefersReducedMotion && (
-                          <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
+                          <div className={`absolute inset-0 ${chipAccent.bg}`} style={{ zIndex: -1 }} />
                         )}
-                        
-                        <TabIcon className={`w-4 h-4 relative z-10 ${isActive ? 'text-white' : 'text-gray-400 group-hover:text-gray-900'} transition-colors`} />
+
+                        <TabIcon className={`w-4 h-4 relative z-10 ${isActive ? 'text-white' : `text-gray-400 ${chipAccent.hoverText}`} transition-colors`} />
                         <span className="relative z-10">{category.label}</span>
                       </button>
                     );
@@ -399,66 +465,45 @@ export default function ServicesSection() {
                 </div>
               </div>
 
-              {/* The Details Grid mapped with current services */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+              {/* Scannable service directory */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
                 {currentServices.map((service, idx) => {
                   const tKey = toKey(service.slug);
                   const Icon = icons[service.slug] || CpuChipIcon;
                   const hasChildren = service.children && service.children.length > 0;
+                  const a = (expandedCategory && CATEGORY_ACCENTS[expandedCategory]) || CATEGORY_ACCENTS.web;
 
                   return (
                     <motion.div
                       key={service.slug}
-                      initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 30 }}
+                      initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 16 }}
                       animate={{ opacity: 1, y: 0 }}
-                      transition={prefersReducedMotion ? { duration: 0 } : { ...smoothSpring, delay: idx * 0.05 }}
-                      className="glass bg-white/80 backdrop-blur-xl border border-white hover:border-gray-200 rounded-[2rem] overflow-hidden group flex flex-col shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.06)] transition-all duration-500 min-h-[400px] relative"
+                      transition={prefersReducedMotion ? { duration: 0 } : { ...smoothSpring, delay: Math.min(idx, 12) * 0.03 }}
                     >
-                      <Link href={`/${locale}/services/${service.slug}`} className="absolute inset-0 z-20"><span className="sr-only">{tCommon('learnMore')}</span></Link>
-
-                      <div className="p-8 md:p-10 pb-0 flex-1 relative">
-                        {/* Huge modern Icon Box */}
-                        <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center border border-gray-100 shadow-sm mb-6 group-hover:scale-105 group-hover:-rotate-3 transition-transform duration-500 relative overflow-hidden">
-                           <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                           <Icon className="h-8 w-8 text-primary/80 group-hover:text-primary transition-colors" />
+                      <Link
+                        href={`/${locale}/services/${service.slug}`}
+                        className={`flex items-center gap-4 min-h-[72px] bg-white border border-gray-100 ${a.hoverBorder} rounded-2xl px-4 py-3.5 md:px-5 group shadow-[0_1px_6px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-[box-shadow,border-color] duration-300`}
+                      >
+                        <div className={`w-11 h-11 ${a.soft} rounded-xl flex items-center justify-center shrink-0`}>
+                          <Icon className={`w-[22px] h-[22px] ${a.text}`} />
                         </div>
-                        
-                        <h3 className={`text-2xl font-bold text-gray-900 mb-4 tracking-tight group-hover:text-primary transition-colors ${dir === 'rtl' ? 'text-right' : 'text-left'}`}>
-                          {tServices(`${tKey}.title`)}
-                        </h3>
-                        <p className={`text-base text-gray-600 mb-8 font-medium leading-relaxed ${dir === 'rtl' ? 'text-right' : 'text-left'}`}>
-                          {tServices(`${tKey}.description`)}
-                        </p>
-
-                        {/* Top Features */}
-                        <div className="space-y-3 mb-8">
-                          {(() => {
-                            const features = tServices(`${tKey}.features`);
-                            const arr: string[] = Array.isArray(features) ? features : (typeof features === 'string' ? [features] : []);
-                            return arr.slice(0, 3).map((feature, i) => ( 
-                              <div key={i} className={`flex items-start gap-3 ${dir === 'rtl' ? 'flex-row-reverse text-right' : ''}`}>
-                                <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0 opacity-70 group-hover:opacity-100 transition-opacity" />
-                                <span className="text-sm font-medium text-gray-600 leading-snug group-hover:text-gray-900 transition-colors">{feature}</span>
-                              </div>
-                            ));
-                          })()}
-                        </div>
-                      </div>
-
-                      {/* Specialized Services Bar */}
-                      <div className={`mt-auto px-8 md:px-10 py-6 bg-gray-50/80 border-t border-gray-100 flex items-center justify-between group-hover:bg-gray-900 transition-colors duration-300 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
-                         <span className="text-xs sm:text-sm font-bold text-gray-500 group-hover:text-white transition-colors uppercase tracking-widest">
+                        <div className="flex-1 min-w-0 text-start">
+                          <h3 className={`text-[15px] font-semibold text-gray-900 ${a.hoverText} transition-colors leading-snug truncate`}>
+                            {tServices(`${tKey}.title`)}
+                          </h3>
+                          <p className="text-xs text-gray-500 truncate mt-0.5">
                             {hasChildren
                               ? (t('specialties') as string).replace('{count}', String(service.children?.length ?? 0))
-                              : (t('exploreDetails') as string)}
-                         </span>
-                         <div className="w-10 h-10 rounded-full bg-white border border-gray-200 group-hover:border-transparent shadow-sm flex items-center justify-center group-hover:scale-110 transition-transform">
-                            <svg className={`w-5 h-5 text-gray-900 ${dir === 'rtl' ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
-                         </div>
-                      </div>
-                      
+                              : (tServices(`${tKey}.description`) as string)}
+                          </p>
+                        </div>
+                        <svg
+                          className={`w-4 h-4 shrink-0 text-gray-300 ${a.hoverText} transition-all duration-300 ${dir === 'rtl' ? 'rotate-180 group-hover:-translate-x-0.5' : 'group-hover:translate-x-0.5'}`}
+                          fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </Link>
                     </motion.div>
                   );
                 })}
