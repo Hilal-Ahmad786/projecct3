@@ -21,7 +21,7 @@ const features = [
     },
     {
         title: 'Enterprise Security',
-        description: 'SOC 2 compliant infrastructure with end-to-end encryption for sensitive conversations.',
+        description: 'Secure infrastructure with end-to-end encryption for sensitive conversations.',
         icon: ShieldCheckIcon,
     },
     {

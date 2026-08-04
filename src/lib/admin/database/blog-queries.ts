@@ -286,17 +286,22 @@ function buildBlogWhereClause(filters: BlogPostFilters) {
 export async function getPublishedBlogPosts(
   locale: string = 'en',
   pagination: PaginationParams = {},
-  category?: string
+  category?: string,
+  excludeCategories?: string[]
 ) {
   const { page = 1, limit = 10 } = pagination;
   const skip = (page - 1) * limit;
 
   // Category partitions the publication: 'general' = company-wide blog,
   // a service slug = that service's own blog. Omit to fetch across all.
+  // excludeCategories lets the company blog show every post EXCEPT the
+  // per-service ones (posts are seeded with topical categories like 'ai'
+  // or 'marketing', so an exact category='general' match returns nothing).
   const where = {
     status: 'PUBLISHED' as BlogStatus,
     publishedAt: { lte: new Date() },
     ...(category ? { category } : {}),
+    ...(excludeCategories?.length ? { category: { notIn: excludeCategories } } : {}),
   };
 
   const [posts, total] = await Promise.all([

@@ -26,6 +26,7 @@ export async function POST(request: NextRequest) {
     const { tool, name, email, company, data } = validation.data;
 
     // Try to save to database
+    let dbOk = true;
     try {
       const { getPrisma } = await import('@/lib/db/prisma');
       const prisma = getPrisma();
@@ -69,8 +70,34 @@ export async function POST(request: NextRequest) {
         },
       });
     } catch (dbError) {
-      // Log error but don't fail - we still want to respond to user
-      console.error('Database error (continuing anyway):', dbError);
+      console.error('Tool lead DB write failed:', dbError);
+      dbOk = false;
+    }
+
+    // Alert the admin (bell + email). These are the highest-intent leads on
+    // the site (visitor completed a tool AND left contact details) — if the
+    // DB write failed, the admin email is the only place the lead survives,
+    // so an unreachable admin means we must NOT claim success.
+    const { alertAdminOfLead, leadDetailsHtml } = await import('@/lib/lead-alert');
+    const alerted = await alertAdminOfLead({
+      title: `New Tool Lead: ${tool}`,
+      message: `${name} (${email}) completed the ${tool} tool`,
+      emailSubject: `New tool lead (${tool}): ${name}${dbOk ? '' : ' — ⚠️ DB DOWN, not saved'}`,
+      emailHtml: `<h2>New lead from the ${tool} tool</h2>
+        ${dbOk ? '' : '<p><strong>⚠️ The database write failed — this lead exists ONLY in this email.</strong></p>'}
+        ${leadDetailsHtml({ Name: name, Email: email, Company: company, Tool: tool, Data: JSON.stringify(data, null, 2) })}`,
+      metadata: { source: `tool:${tool}` },
+    });
+
+    if (!dbOk && !alerted) {
+      return NextResponse.json(
+        {
+          success: false,
+          message:
+            'We could not process your request right now. Please reach us on WhatsApp (+90 552 567 71 64) — we respond quickly.',
+        },
+        { status: 503 }
+      );
     }
 
     return NextResponse.json({

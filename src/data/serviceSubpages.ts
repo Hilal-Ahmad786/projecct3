@@ -370,7 +370,7 @@ export const serviceSubpageData: Record<string, ServiceSubpageData> = {
             },
             {
               question: 'How do you ensure AI model security and data privacy?',
-              answer: 'Security is built into every layer. We use encrypted data pipelines, role-based access controls, and private VPC deployments. For sensitive industries, we support federated learning and differential privacy techniques that train models without exposing raw data. All our processes are SOC 2 and GDPR compliant.',
+              answer: 'Security is built into every layer. We use encrypted data pipelines, role-based access controls, and private VPC deployments. For sensitive industries, we support federated learning and differential privacy techniques that train models without exposing raw data. All our processes are GDPR compliant.',
             },
             {
               question: 'What happens when model performance degrades over time?',

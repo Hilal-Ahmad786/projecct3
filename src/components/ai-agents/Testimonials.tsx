@@ -3,8 +3,12 @@
 import { motion } from 'framer-motion';
 import { useSectionTranslations } from '@/hooks/useTranslations';
 
+const SHOW_TESTIMONIALS = false; // fabricated placeholder quotes removed 2026-08; set true after adding real client quotes to the locale files
+
 export default function Testimonials() {
     const t = useSectionTranslations('aiServices.aiAgents');
+
+    if (!SHOW_TESTIMONIALS) return null;
 
     const getTestimonials = () => {
         try {

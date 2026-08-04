@@ -207,12 +207,13 @@ const translations: Record<string, Record<string, string>> = {
     ur: 'مفت مشاورت شیڈول کریں',
     ar: 'حجز استشارة مجانية',
   },
+  // Honest copy: no report is auto-emailed; the team follows up personally.
   reportSent: {
-    en: 'Report sent to your email!',
-    tr: 'Rapor e-postanıza gönderildi!',
-    de: 'Bericht an Ihre E-Mail gesendet!',
-    ur: 'رپورٹ آپ کی ای میل پر بھیج دی گئی!',
-    ar: 'تم إرسال التقرير إلى بريدك الإلكتروني!',
+    en: 'Request received!',
+    tr: 'Talebiniz alındı!',
+    de: 'Anfrage erhalten!',
+    ur: 'آپ کی درخواست موصول ہو گئی!',
+    ar: 'تم استلام طلبك!',
   },
   contextWindow: {
     en: 'Context Window',
@@ -682,11 +683,11 @@ export default function LLMCalculatorPage() {
                   <CheckCircleSolid className="w-16 h-16 mx-auto mb-4 text-emerald-500" />
                   <h3 className="text-2xl font-bold mb-2">{t('reportSent')}</h3>
                   <p className="text-gray-400 mb-6">
-                    {locale === 'en' && 'Our team will reach out within 24 hours with your personalized report.'}
-                    {locale === 'tr' && 'Ekibimiz 24 saat içinde kişiselleştirilmiş raporunuzla size ulaşacak.'}
-                    {locale === 'de' && 'Unser Team wird sich innerhalb von 24 Stunden mit Ihrem personalisierten Bericht bei Ihnen melden.'}
-                    {locale === 'ur' && 'ہماری ٹیم 24 گھنٹوں میں آپ کی ذاتی رپورٹ کے ساتھ رابطہ کرے گی۔'}
-                    {locale === 'ar' && 'سيتواصل معك فريقنا خلال 24 ساعة مع تقريرك الشخصي.'}
+                    {locale === 'en' && 'Our team will review your results and reach out within 24 hours.'}
+                    {locale === 'tr' && 'Ekibimiz sonuçlarınızı inceleyip 24 saat içinde size ulaşacak.'}
+                    {locale === 'de' && 'Unser Team prüft Ihre Ergebnisse und meldet sich innerhalb von 24 Stunden bei Ihnen.'}
+                    {locale === 'ur' && 'ہماری ٹیم آپ کے نتائج کا جائزہ لے کر 24 گھنٹوں میں رابطہ کرے گی۔'}
+                    {locale === 'ar' && 'سيراجع فريقنا نتائجك ويتواصل معك خلال 24 ساعة.'}
                   </p>
                   <a
                     href={`/${locale}/contact`}

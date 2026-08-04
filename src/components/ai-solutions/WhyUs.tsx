@@ -11,7 +11,7 @@ export default function WhyUs() {
         },
         {
             title: 'Proven Track Record',
-            description: 'Successfully delivered 100+ AI projects across healthcare, finance, retail, and manufacturing industries.',
+            description: 'Successfully delivered AI projects across healthcare, finance, retail, and manufacturing industries.',
         },
         {
             title: 'Scalable Solutions',

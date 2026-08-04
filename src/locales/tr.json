@@ -7985,7 +7985,7 @@
               },
               {
                 "question": "Yapay zeka model guvenligini ve veri gizliligini nasil sagliyorsunuz?",
-                "answer": "Guvenlik her katmana yerlestirilmistir. Sifrelenmis veri hatlari, rol tabanli erisim kontrolleri ve ozel VPC dagitimlari kullaniyoruz. Hassas sektorler icin ham veriyi ifsa etmeden modelleri egiten federatif ogrenme ve diferansiyel gizlilik tekniklerini destekliyoruz. Tum sureclerimiz SOC 2 ve GDPR uyumludur."
+                "answer": "Guvenlik her katmana yerlestirilmistir. Sifrelenmis veri hatlari, rol tabanli erisim kontrolleri ve ozel VPC dagitimlari kullaniyoruz. Hassas sektorler icin ham veriyi ifsa etmeden modelleri egiten federatif ogrenme ve diferansiyel gizlilik tekniklerini destekliyoruz. Tum sureclerimiz GDPR uyumludur."
               },
               {
                 "question": "Model performansi zamanla duserse ne olur?",
@@ -11542,26 +11542,24 @@
     "title": "Dünya genelinde önde gelen şirketler tarafından tercih edilen",
     "stats": [
       {
-        "value": "500+",
+        "value": "50+",
         "label": "Tamamlanan Proje"
       },
       {
-        "value": "200+",
+        "value": "30+",
         "label": "Mutlu Müşteri"
       },
       {
-        "value": "15+",
+        "value": "5+",
         "label": "Yıl Deneyim"
       },
       {
-        "value": "50+",
+        "value": "10+",
         "label": "Ekip Üyesi"
       }
     ],
     "badges": [
-      "ISO 27001 Sertifikalı",
-      "GDPR Uyumlu",
-      "SOC 2 Tip II"
+      "GDPR Uyumlu"
     ]
   },
   "sceneLabels": {

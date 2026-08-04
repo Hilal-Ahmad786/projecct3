@@ -504,6 +504,16 @@ export const getPublicBlogPosts = unstable_cache(
   async (locale: string = 'en', page: number = 1, limit: number = 10, category?: string) => {
     try {
       const { getPublishedBlogPosts } = await import('@/lib/admin/database/blog-queries');
+      // 'general' = the company-wide blog. Posts carry topical categories
+      // ('ai', 'marketing', ...), so an exact category='general' match used to
+      // return ZERO posts and the public blog rendered empty. The company blog
+      // is defined as "everything that is not a per-service blog post", i.e.
+      // exclude categories that are published service slugs.
+      if (category === 'general') {
+        const services = await getServicesIndex();
+        const serviceSlugs = services.map((s: { slug: string }) => s.slug);
+        return await getPublishedBlogPosts(locale, { page, limit }, undefined, serviceSlugs);
+      }
       return await getPublishedBlogPosts(locale, { page, limit }, category);
     } catch (err) {
       dbError('getPublicBlogPosts', err);

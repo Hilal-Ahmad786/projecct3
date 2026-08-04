@@ -7984,7 +7984,7 @@
               },
               {
                 "question": "Wie gewährleisten Sie KI-Modellsicherheit und Datenschutz?",
-                "answer": "Sicherheit ist in jede Schicht eingebaut. Wir verwenden verschlüsselte Datenpipelines, rollenbasierte Zugriffskontrollen und private VPC-Deployments. Für sensible Branchen unterstützen wir Federated Learning und Differential-Privacy-Techniken, die Modelle trainieren, ohne Rohdaten offenzulegen. Alle unsere Prozesse sind SOC 2 und DSGVO-konform."
+                "answer": "Sicherheit ist in jede Schicht eingebaut. Wir verwenden verschlüsselte Datenpipelines, rollenbasierte Zugriffskontrollen und private VPC-Deployments. Für sensible Branchen unterstützen wir Federated Learning und Differential-Privacy-Techniken, die Modelle trainieren, ohne Rohdaten offenzulegen. Alle unsere Prozesse sind DSGVO-konform."
               },
               {
                 "question": "Was passiert, wenn sich die Modellleistung im Laufe der Zeit verschlechtert?",
@@ -13763,26 +13763,24 @@
     "title": "Von führenden Unternehmen weltweit vertraut",
     "stats": [
       {
-        "value": "500+",
+        "value": "50+",
         "label": "Abgeschlossene Projekte"
       },
       {
-        "value": "200+",
+        "value": "30+",
         "label": "Zufriedene Kunden"
       },
       {
-        "value": "15+",
+        "value": "5+",
         "label": "Jahre Erfahrung"
       },
       {
-        "value": "50+",
+        "value": "10+",
         "label": "Teammitglieder"
       }
     ],
     "badges": [
-      "ISO 27001 Zertifiziert",
-      "DSGVO-Konform",
-      "SOC 2 Typ II"
+      "DSGVO-Konform"
     ]
   },
   "sceneLabels": {

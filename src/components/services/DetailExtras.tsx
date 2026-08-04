@@ -4,6 +4,11 @@
 // comparison table, related-services strip, and the "starting from"
 // pricing panel. All data comes from the service's `content` JSON —
 // no DB migration needed. Sections render nothing when data is absent.
+//
+// NOTE (2026-08): TestimonialsSection and CaseStudySection were seeded with
+// DRAFT placeholder content (invented people/metrics). Their call site in
+// ServiceDetailClient.tsx gates them on `content.trustApproved === true` —
+// the owner sets that flag per-service after replacing with real content.
 
 import { motion } from 'framer-motion';
 import { StarIcon } from '@heroicons/react/24/solid';

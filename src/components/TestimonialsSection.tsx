@@ -7,11 +7,15 @@ import BackgroundBlobs from '@/components/BackgroundBlobs'
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations'
 import { smoothSpring } from '@/lib/animations'
 
+const SHOW_TESTIMONIALS = false; // fabricated placeholder quotes removed 2026-08; set true after adding real client quotes to the locale files
+
 export default function TestimonialsSection() {
   const { dir, isLoading } = useTranslations()
   const t = useSectionTranslations('testimonials')
   const tStats = useSectionTranslations('stats')
   const prefersReducedMotion = useReducedMotion()
+
+  if (!SHOW_TESTIMONIALS) return null
 
   if (isLoading) {
     return (
@@ -36,12 +40,8 @@ export default function TestimonialsSection() {
     } catch (error) {
       console.error('Error parsing testimonials:', error);
     }
-    return [
-      { author: 'Sarah Johnson', role: 'CEO', company: 'TechStart Solutions', text: 'PakSoft delivered exactly what we needed. Their attention to detail, proactive communication, and deeply professional approach made our project a complete success from day one.', rating: 5 },
-      { author: 'Lisa Thompson', role: 'Founder', company: 'EcoSmart', text: 'From concept to launch, they guided us through every step. Our e-commerce platform exceeded all expectations. Fantastic UI design.', rating: 5 },
-      { author: 'James Park', role: 'Operations Manager', company: 'LogiTech Pro', text: 'The AI solutions they implemented have transformed how we handle customer inquiries. Impressive technical expertise and fast rollout.', rating: 5 },
-      { author: 'Ahmed Hassan', role: 'CTO', company: 'InnovateDX', text: 'Stunning workflow automation. Our internal processes are 50% more efficient now thanks to their customized Python enterprise integration solutions.', rating: 5 },
-    ];
+    // Hardcoded fallback of invented testimonials removed 2026-08 — never ship fabricated quotes.
+    return [];
   };
 
   const testimonials = getTestimonials() as { author: string, role: string, company: string, text: string, rating: number }[];

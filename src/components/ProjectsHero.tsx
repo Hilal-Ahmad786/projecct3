@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import Button from '@/components/Button';
 import ProjectsHeroAnimation from '@/components/animations/ProjectsHeroAnimation';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
+import { COMPANY_STATS } from '@/config/companyStats';
 
 export default function ProjectsHero() {
   const { dir, isLoading, t: tGlobal, t: tNav } = useTranslations();
@@ -102,9 +103,9 @@ export default function ProjectsHero() {
             {/* Project Stats */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-gray-200">
               {[
-                { value: tStats('projects150'), label: t('stats.projects') },
-                { value: tStats('clients50'), label: t('stats.clients') },
-                { value: tStats('successRate98'), label: t('stats.successRate') },
+                { value: COMPANY_STATS.projects, label: t('stats.projects') },
+                { value: COMPANY_STATS.clients, label: t('stats.clients') },
+                { value: COMPANY_STATS.satisfaction, label: t('stats.successRate') },
                 { value: tStats('support247'), label: t('stats.support') }
               ].map((stat, index) => (
                 <motion.div

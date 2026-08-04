@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { StarIcon } from '@heroicons/react/24/solid';
 import { useSectionTranslations } from '@/hooks/useTranslations';
 
+const SHOW_TESTIMONIALS = false; // fabricated placeholder quotes removed 2026-08; set true after adding real client quotes to the locale files
+
 export default function SecurityTestimonials() {
     const t = useSectionTranslations('cybersecurity');
 
@@ -12,27 +14,11 @@ export default function SecurityTestimonials() {
             const items = t('testimonials.items');
             if (Array.isArray(items) && items.length > 0) return items;
         } catch (e) { /* fallback */ }
-        return [
-            {
-                quote: 'Their penetration testing uncovered critical vulnerabilities we had missed for years. The remediation support was exceptional, and our security posture has improved dramatically.',
-                author: 'Michael Chen',
-                role: 'CTO, FinanceHub Inc.',
-                rating: 5
-            },
-            {
-                quote: 'The 24/7 SOC monitoring has been a game-changer. We detected and stopped a ransomware attack within minutes. Their incident response team was professional and thorough.',
-                author: 'Sarah Johnson',
-                role: 'CISO, HealthCare Systems',
-                rating: 5
-            },
-            {
-                quote: 'Achieving SOC 2 compliance seemed daunting until we partnered with them. Their expertise streamlined the entire process and we were certified ahead of schedule.',
-                author: 'David Martinez',
-                role: 'VP of Engineering, CloudScale',
-                rating: 5
-            }
-        ];
+        // Hardcoded fallback of invented testimonials removed 2026-08 — never ship fabricated quotes.
+        return [];
     };
+
+    if (!SHOW_TESTIMONIALS) return null;
 
     const testimonials = getTestimonials();
     const eyebrow = t('testimonials.eyebrow') || 'Client Success Stories';

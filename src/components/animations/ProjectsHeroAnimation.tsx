@@ -3,6 +3,7 @@
 
 import { motion, useReducedMotion } from 'framer-motion';
 import { useTranslations } from '@/hooks/useTranslations';
+import { COMPANY_STATS } from '@/config/companyStats';
 
 export default function ProjectsHeroAnimation() {
   const prefersReducedMotion = useReducedMotion();
@@ -98,7 +99,7 @@ export default function ProjectsHeroAnimation() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
             >
-              100+
+              {COMPANY_STATS.projects}
             </motion.span>
             <span className="text-[10px] text-emerald-600 font-medium mb-1">Delivered</span>
           </div>

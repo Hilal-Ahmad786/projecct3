@@ -4,6 +4,7 @@
 import { motion } from 'framer-motion';
 import SectionHeader from '@/components/SectionHeader';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
+import { COMPANY_STATS } from '@/config/companyStats';
 import {
   RocketLaunchIcon,
   BoltIcon,
@@ -76,8 +77,8 @@ export default function OurStoryTimeline() {
       const statsData = t('stats');
       if (statsData && typeof statsData === 'object') {
         return [
-          { value: statsData.yearsJourney || "5+", label: statsData.yearsJourney || "Years Journey" },
-          { value: statsData.projectsDelivered || "50+", label: statsData.projectsDelivered || "Projects Delivered" },
+          { value: statsData.yearsJourney || COMPANY_STATS.years, label: statsData.yearsJourney || "Years Journey" },
+          { value: statsData.projectsDelivered || COMPANY_STATS.projects, label: statsData.projectsDelivered || "Projects Delivered" },
           { value: statsData.majorMilestones || "5", label: statsData.majorMilestones || "Major Milestones" },
           { value: statsData.marketExpansions || "2", label: statsData.marketExpansions || "Market Expansions" }
         ];
@@ -88,8 +89,8 @@ export default function OurStoryTimeline() {
 
     // Fallback stats
     return [
-      { value: "5+", label: "Years Journey" },
-      { value: "50+", label: "Projects Delivered" },
+      { value: COMPANY_STATS.years, label: "Years Journey" },
+      { value: COMPANY_STATS.projects, label: "Projects Delivered" },
       { value: "5", label: "Major Milestones" },
       { value: "2", label: "Market Expansions" }
     ];

@@ -26,7 +26,7 @@ export default function MLFAQ() {
         },
         {
             question: 'How do you ensure the security of our data?',
-            answer: 'Data security is paramount. We implement strict access controls, encryption at rest and in transit, and follow industry compliance standards (GDPR, HIPAA, SOC2). We can also work with anonymized data or implement federated learning approaches for sensitive applications.'
+            answer: 'Data security is paramount. We implement strict access controls, encryption at rest and in transit, and follow industry compliance standards (GDPR, HIPAA). We can also work with anonymized data or implement federated learning approaches for sensitive applications.'
         },
         {
             question: 'What happens after the model is deployed?',

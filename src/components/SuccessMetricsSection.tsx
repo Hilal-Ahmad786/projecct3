@@ -14,11 +14,15 @@ import {
 } from '@heroicons/react/24/outline';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
+const SHOW_SUCCESS_METRICS = false; // fabricated metrics ($2M+ revenue, 300% ROI, invented client quotes) removed 2026-08; set true after replacing the locale successMetrics/stats values with real, defensible numbers
+
 export default function SuccessMetricsSection() {
   const { dir, isLoading } = useTranslations();
   const t = useSectionTranslations('projects.successMetrics');
   const tStats = useSectionTranslations('stats');
   const tCommon = useSectionTranslations('common');
+
+  if (!SHOW_SUCCESS_METRICS) return null;
 
   if (isLoading) {
     return (

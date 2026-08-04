@@ -11,12 +11,13 @@ import {
   ClockIcon,
   ArrowTrendingUpIcon,
 } from '@heroicons/react/24/outline';
+import { COMPANY_STATS } from '@/config/companyStats';
 
 const BENEFITS = [
   {
     Icon: TrophyIcon,
     title: 'Proven Delivery',
-    description: '500+ projects shipped across 30+ countries with measurable outcomes and zero compromises on quality.',
+    description: `${COMPANY_STATS.projects} projects shipped across ${COMPANY_STATS.countries} countries with measurable outcomes and zero compromises on quality.`,
   },
   {
     Icon: BoltIcon,

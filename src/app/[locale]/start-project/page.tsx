@@ -164,18 +164,11 @@ export default function StartProjectPage() {
 
                 {/* Trust indicators */}
                 <div className="mt-10 pt-8 border-t border-gray-200">
+                  {/* ISO 27001 / SOC 2 badges removed 2026-08 — only list certifications PakSoft actually holds. */}
                   <div className="flex items-center gap-4 text-sm text-gray-500">
                     <div className="flex items-center gap-1">
                       <CheckCircleIcon className="w-4 h-4 text-green-500" />
-                      <span>ISO 27001</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <CheckCircleIcon className="w-4 h-4 text-green-500" />
                       <span>GDPR</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <CheckCircleIcon className="w-4 h-4 text-green-500" />
-                      <span>SOC 2</span>
                     </div>
                   </div>
                 </div>

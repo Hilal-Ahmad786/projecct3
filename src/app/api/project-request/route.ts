@@ -41,6 +41,7 @@ export async function POST(request: NextRequest) {
 
     // Try to use Prisma if available, otherwise store in memory/log
     let savedRequest;
+    let dbOk = true;
 
     try {
       // Dynamic import to avoid build errors if Prisma isn't configured
@@ -100,21 +101,57 @@ export async function POST(request: NextRequest) {
         },
       });
     } catch (dbError) {
-      // Database not available - log to console for now
-      console.log('Project Request (DB not available):', validatedData);
-      savedRequest = {
-        id: `temp_${Date.now()}`,
-        ...validatedData,
-        createdAt: new Date().toISOString(),
-      };
+      // Database unavailable (e.g. Neon over quota). Previously this swallowed
+      // the error and returned success — the lead was silently lost. Now: try
+      // to reach the admin by email with the full payload; only report success
+      // if that worked, otherwise tell the visitor honestly.
+      console.error('Project Request DB write failed:', dbError);
+      const { sendEmail, leadDetailsHtml } = await import('@/lib/lead-alert');
+      const rescued = await sendEmail(
+        process.env.ADMIN_EMAIL || 'paksoft3@gmail.com',
+        `⚠️ Project request (DB DOWN — not saved): ${validatedData.serviceType}`,
+        `<h2>Project request received while the database was unavailable</h2>
+         <p><strong>This lead exists ONLY in this email — it was not saved.</strong></p>
+         ${leadDetailsHtml({
+           Name: validatedData.name,
+           Email: validatedData.email,
+           Phone: validatedData.phone,
+           Company: validatedData.company,
+           Service: validatedData.serviceType,
+           Budget: validatedData.budgetRange,
+           Timeline: validatedData.timeline,
+           Description: validatedData.description,
+         })}`
+      );
+      if (!rescued) {
+        return NextResponse.json(
+          {
+            success: false,
+            message:
+              'We could not save your request right now. Please reach us directly on WhatsApp (+90 552 567 71 64) or email paksoft3@gmail.com — we respond quickly.',
+          },
+          { status: 503 }
+        );
+      }
+      savedRequest = { id: `email_${Date.now()}` };
+      dbOk = false;
     }
 
-    // Send email notification
+    // Alert admin (bell + email) and confirm to the user. Skipped when the
+    // lead was already rescued via the DB-down admin email above.
     try {
-      await sendProjectRequestNotification(validatedData);
+      const { alertAdminOfLead } = await import('@/lib/lead-alert');
+      if (dbOk) await alertAdminOfLead({
+        title: 'New Project Request',
+        message: `${validatedData.name} (${validatedData.email}) — ${validatedData.serviceType}, budget ${validatedData.budgetRange}`,
+        emailSubject: `New Project Request: ${validatedData.serviceType}`,
+        emailHtml: buildAdminEmailHtml(validatedData),
+        metadata: { source: 'project_request', requestId: savedRequest.id },
+      });
+      await sendUserConfirmation(validatedData);
     } catch (emailError) {
-      console.error('Failed to send email notification:', emailError);
-      // Don't fail the request if email fails
+      console.error('Failed to send notifications:', emailError);
+      // Don't fail the request — the lead is already stored.
     }
 
     return NextResponse.json(
@@ -156,89 +193,61 @@ export async function GET() {
   );
 }
 
-// Email notification helper function
-async function sendProjectRequestNotification(data: {
+type RequestData = {
   name: string;
   email: string;
+  phone?: string;
   serviceType: string;
   budgetRange: string;
   timeline: string;
   description: string;
   company?: string;
-}) {
-  const resendApiKey = process.env.RESEND_API_KEY;
+};
 
-  if (!resendApiKey) {
-    console.log('Email service not configured. Skipping notifications.');
-    return;
-  }
+function buildAdminEmailHtml(data: RequestData) {
+  return `
+    <h2>New Project Request Received</h2>
+    <table style="border-collapse: collapse; width: 100%;">
+      <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Name</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.name}</td></tr>
+      <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Email</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.email}</td></tr>
+      ${data.company ? `<tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Company</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.company}</td></tr>` : ''}
+      <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Service Type</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.serviceType}</td></tr>
+      <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Budget</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.budgetRange}</td></tr>
+      <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Timeline</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.timeline}</td></tr>
+    </table>
+    <h3>Project Description</h3>
+    <p style="background: #f5f5f5; padding: 15px; border-radius: 5px;">${data.description.replace(/\n/g, '<br>')}</p>
+    <hr>
+    <p style="color: #666; font-size: 12px;">This request was submitted from the PakSoft website.</p>
+  `;
+}
 
-  const adminEmail = process.env.ADMIN_EMAIL || 'paksoft3@gmail.com';
-
-  // Send notification to admin
-  await fetch('https://api.resend.com/emails', {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${resendApiKey}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      // TODO: switch to noreply@paksofts.com once the domain is verified with the email provider
-      from: 'PakSoft <noreply@paksoft.com.tr>',
-      to: [adminEmail],
-      subject: `New Project Request: ${data.serviceType}`,
-      html: `
-        <h2>New Project Request Received</h2>
-        <table style="border-collapse: collapse; width: 100%;">
-          <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Name</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.name}</td></tr>
-          <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Email</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.email}</td></tr>
-          ${data.company ? `<tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Company</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.company}</td></tr>` : ''}
-          <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Service Type</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.serviceType}</td></tr>
-          <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Budget</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.budgetRange}</td></tr>
-          <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Timeline</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.timeline}</td></tr>
-        </table>
-        <h3>Project Description</h3>
-        <p style="background: #f5f5f5; padding: 15px; border-radius: 5px;">${data.description.replace(/\n/g, '<br>')}</p>
-        <hr>
-        <p style="color: #666; font-size: 12px;">This request was submitted from the PakSoft website.</p>
-      `,
-    }),
-  });
-
-  // Send confirmation to user
-  await fetch('https://api.resend.com/emails', {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${resendApiKey}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      // TODO: switch to noreply@paksofts.com once the domain is verified with the email provider
-      from: 'PakSoft <noreply@paksoft.com.tr>',
-      to: [data.email],
-      subject: 'We received your project request - PakSoft',
-      html: `
-        <h2>Thank you for your project request, ${data.name}!</h2>
-        <p>We have received your project request and our team will review it within 24-48 hours.</p>
-        <h3>What happens next?</h3>
-        <ol>
-          <li>Our team will review your requirements</li>
-          <li>We'll prepare a preliminary proposal and estimate</li>
-          <li>We'll schedule a call to discuss your project in detail</li>
-        </ol>
-        <p><strong>Your project summary:</strong></p>
-        <ul>
-          <li>Service Type: ${data.serviceType}</li>
-          <li>Budget Range: ${data.budgetRange}</li>
-          <li>Timeline: ${data.timeline}</li>
-        </ul>
-        <hr>
-        <p>Best regards,<br>The PakSoft Team</p>
-        <p style="color: #666; font-size: 12px;">
-          PakSoft - Modern Digital Solutions<br>
-          <a href="https://www.paksofts.com">paksofts.com</a>
-        </p>
-      `,
-    }),
-  });
+async function sendUserConfirmation(data: RequestData) {
+  const { sendEmail } = await import('@/lib/lead-alert');
+  await sendEmail(
+    data.email,
+    'We received your project request - PakSoft',
+    `
+      <h2>Thank you for your project request, ${data.name}!</h2>
+      <p>We have received your project request and our team will review it within 24-48 hours.</p>
+      <h3>What happens next?</h3>
+      <ol>
+        <li>Our team will review your requirements</li>
+        <li>We'll prepare a preliminary proposal and estimate</li>
+        <li>We'll schedule a call to discuss your project in detail</li>
+      </ol>
+      <p><strong>Your project summary:</strong></p>
+      <ul>
+        <li>Service Type: ${data.serviceType}</li>
+        <li>Budget Range: ${data.budgetRange}</li>
+        <li>Timeline: ${data.timeline}</li>
+      </ul>
+      <hr>
+      <p>Best regards,<br>The PakSoft Team</p>
+      <p style="color: #666; font-size: 12px;">
+        PakSoft - Modern Digital Solutions<br>
+        <a href="https://www.paksofts.com">paksofts.com</a>
+      </p>
+    `
+  );
 }

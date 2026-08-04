@@ -10,6 +10,7 @@ import Button from '@/components/Button'
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations'
 import { useIsMobile } from '@/hooks/useIsMobile'
 import { snappySpring, useCountUp, useInViewOnce } from '@/lib/animations'
+import { COMPANY_STATS } from '@/config/companyStats'
 
 // ─── Spring config for scroll (stiffness/damping only — no 'type') ───
 const SCROLL_SPRING = { stiffness: 80, damping: 24 }
@@ -90,7 +91,6 @@ export default function Hero() {
 
   const { dir } = useTranslations()
   const t = useSectionTranslations('hero')
-  const tStats = useSectionTranslations('stats')
 
   const services = [
     t('services.0'),
@@ -275,13 +275,13 @@ export default function Hero() {
             {/* Stats — 3D flip entrance */}
             <div className="hero-enter grid grid-cols-3 gap-8 pt-8 border-t border-gray-200" style={{ animationDelay: '0.36s' }}>
               {[
-                { value: tStats('projects100'), label: t('stats.projects') },
-                { value: tStats('clients50'),   label: t('stats.clients')  },
-                { value: tStats('years5'),       label: t('stats.years')    },
+                { value: COMPANY_STATS.projects, label: t('stats.projects') },
+                { value: COMPANY_STATS.clients,  label: t('stats.clients')  },
+                { value: COMPANY_STATS.years,    label: t('stats.years')    },
               ].map(stat => (
                 <CountUpStat
                   key={stat.label as string}
-                  value={typeof stat.value === 'string' ? stat.value : String(stat.value)}
+                  value={stat.value}
                   label={typeof stat.label === 'string' ? stat.label : String(stat.label)}
                 />
               ))}

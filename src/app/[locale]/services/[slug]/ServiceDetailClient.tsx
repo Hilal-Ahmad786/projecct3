@@ -24,6 +24,7 @@ import {
 import { HeroVisual, BgPatternRenderer, DecorationRenderer, type ServiceAnimation } from '@/components/services/hero-visuals';
 import { useTranslations } from '@/hooks/useTranslations';
 import { formatPrice } from '@/lib/currency';
+import { COMPANY_STATS } from '@/config/companyStats';
 
 // ── Types ────────────────────────────────────────────────────────────
 interface ProcessStep {
@@ -90,6 +91,10 @@ export interface ServiceDetailData {
     caseStudy?: CaseStudyData;
     comparison?: ComparisonData;
     pricingMeta?: PricingMetaData;
+    /** Owner-set flag: testimonials/caseStudy were seeded as DRAFT placeholders with
+     *  invented names/metrics — they only render once real content is in place and
+     *  the owner sets trustApproved=true on the service's content JSON. */
+    trustApproved?: boolean;
   };
   pricingPackages?: PricingPackage[];
   isParent?: boolean;
@@ -262,7 +267,9 @@ export default function ServiceDetailClient({
       )}
 
       {/* ── 5b. Mini case study — story with numbers ────────────────── */}
-      {show('caseStudy') && service.content.caseStudy && (
+      {/* Gated on trustApproved: seeded caseStudy content is DRAFT placeholder
+          data with invented clients/metrics — only render once verified. */}
+      {show('caseStudy') && service.content.trustApproved === true && service.content.caseStudy && (
         <CaseStudySection caseStudy={service.content.caseStudy} />
       )}
 
@@ -275,7 +282,10 @@ export default function ServiceDetailClient({
       )}
 
       {/* ── 6b. Testimonials ────────────────────────────────────────── */}
-      {show('testimonials') && (service.content.testimonials?.length ?? 0) > 0 && (
+      {/* Gated on trustApproved: seeded testimonials are DRAFT placeholder
+          quotes with invented people — only render once verified. */}
+      {show('testimonials') && service.content.trustApproved === true &&
+        (service.content.testimonials?.length ?? 0) > 0 && (
         <TestimonialsSection testimonials={service.content.testimonials!} />
       )}
 
@@ -313,10 +323,10 @@ export default function ServiceDetailClient({
 // ── STATS BAR ────────────────────────────────────────────────────────
 // ═══════════════════════════════════════════════════════════════════════
 const STATS = [
-  { icon: TrophyIcon,    value: '500+', labelKey: 'projectsDelivered', fallback: 'Projects Delivered' },
-  { icon: UserGroupIcon, value: '300+', labelKey: 'happyClients',      fallback: 'Happy Clients'      },
-  { icon: StarIcon,      value: '98%',  labelKey: 'satisfactionRate',  fallback: 'Satisfaction Rate'  },
-  { icon: ClockIcon,     value: '5+',   labelKey: 'yearsExpertise',    fallback: 'Years of Expertise' },
+  { icon: TrophyIcon,    value: COMPANY_STATS.projects,     labelKey: 'projectsDelivered', fallback: 'Projects Delivered' },
+  { icon: UserGroupIcon, value: COMPANY_STATS.clients,      labelKey: 'happyClients',      fallback: 'Happy Clients'      },
+  { icon: StarIcon,      value: COMPANY_STATS.satisfaction, labelKey: 'satisfactionRate',  fallback: 'Satisfaction Rate'  },
+  { icon: ClockIcon,     value: COMPANY_STATS.years,        labelKey: 'yearsExpertise',    fallback: 'Years of Expertise' },
 ];
 
 function StatsBar({ accent }: { accent: AccentColor }) {

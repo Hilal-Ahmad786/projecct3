@@ -59,8 +59,11 @@ export const trackLanguageChange = (fromLang: string, toLang: string) => {
 // Google Ads Conversion Tracking Functions
 // ==========================================
 
-const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || 'AW-XXXXXXXXXX';
-const GOOGLE_ADS_CONVERSION_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_ID || 'XXXXXXXXXX';
+// No placeholder fallbacks: firing conversions at a fake "AW-XXXXXXXXXX" tag
+// silently discards every conversion signal. When the env vars are unset we
+// skip the Ads ping entirely (GA4 events below still fire).
+const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || '';
+const GOOGLE_ADS_CONVERSION_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_ID || '';
 
 /**
  * Track a Google Ads conversion
@@ -73,6 +76,7 @@ export const trackGoogleAdsConversion = (
   value?: number,
   currency: string = 'USD'
 ) => {
+  if (!GOOGLE_ADS_ID || !conversionLabel) return;
   if (typeof window !== 'undefined' && (window as any).gtag) {
     (window as any).gtag('event', 'conversion', {
       send_to: `${GOOGLE_ADS_ID}/${conversionLabel}`,

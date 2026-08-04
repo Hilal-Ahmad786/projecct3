@@ -7955,7 +7955,7 @@
               },
               {
                 "question": "How do you ensure AI model security and data privacy?",
-                "answer": "Security is built into every layer. We use encrypted data pipelines, role-based access controls, and private VPC deployments. For sensitive industries, we support federated learning and differential privacy techniques that train models without exposing raw data. All our processes are SOC 2 and GDPR compliant."
+                "answer": "Security is built into every layer. We use encrypted data pipelines, role-based access controls, and private VPC deployments. For sensitive industries, we support federated learning and differential privacy techniques that train models without exposing raw data. All our processes are GDPR compliant."
               },
               {
                 "question": "What happens when model performance degrades over time?",
@@ -13751,26 +13751,24 @@
     "title": "Trusted by leading companies worldwide",
     "stats": [
       {
-        "value": "500+",
+        "value": "50+",
         "label": "Projects Completed"
       },
       {
-        "value": "200+",
+        "value": "30+",
         "label": "Happy Clients"
       },
       {
-        "value": "15+",
+        "value": "5+",
         "label": "Years Experience"
       },
       {
-        "value": "50+",
+        "value": "10+",
         "label": "Team Members"
       }
     ],
     "badges": [
-      "ISO 27001 Certified",
-      "GDPR Compliant",
-      "SOC 2 Type II"
+      "GDPR Compliant"
     ]
   },
   "sceneLabels": {

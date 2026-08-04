@@ -62,12 +62,20 @@ export async function POST(request: NextRequest) {
       leadId: lead.id,
     });
 
-    // Send email notification (if email service is configured)
+    // Alert the admin (bell notification + email) and confirm to the user.
     try {
-      await sendEmailNotifications(name, email, subject, message);
+      const { alertAdminOfLead, sendEmail, leadDetailsHtml } = await import('@/lib/lead-alert');
+      await alertAdminOfLead({
+        title: 'New Contact Message',
+        message: `${name} (${email}) — ${subject}`,
+        emailSubject: `New Contact Form Submission: ${subject}`,
+        emailHtml: `<h2>New Contact Form Submission</h2>${leadDetailsHtml({ Name: name, Email: email, Phone: phone, Subject: subject, Message: message })}`,
+        metadata: { source: 'contact_form', messageId: contactMessage.id },
+      });
+      await sendUserConfirmation(sendEmail, name, email, subject, message);
     } catch (emailError) {
-      console.error('Failed to send email notifications:', emailError);
-      // Don't fail the request if email fails
+      console.error('Failed to send notifications:', emailError);
+      // Don't fail the request — the message is already stored.
     }
 
     return NextResponse.json(
@@ -93,74 +101,30 @@ export async function POST(request: NextRequest) {
   }
 }
 
-// Email notification helper function
-async function sendEmailNotifications(
+// Confirmation email back to the visitor (no-ops until RESEND_API_KEY +
+// verified paksofts.com sender domain are configured in Resend).
+async function sendUserConfirmation(
+  sendEmail: (to: string, subject: string, html: string) => Promise<boolean>,
   name: string,
   email: string,
   subject: string,
   message: string
 ) {
-  // Check if email service is configured
-  const resendApiKey = process.env.RESEND_API_KEY;
-
-  if (!resendApiKey) {
-    console.log('Email service not configured. Skipping email notifications.');
-    return;
-  }
-
-  const adminEmail = process.env.ADMIN_EMAIL || 'paksoft3@gmail.com';
-
-  // Send notification to admin
-  await fetch('https://api.resend.com/emails', {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${resendApiKey}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      // TODO: switch to noreply@paksofts.com once the domain is verified with the email provider
-      from: 'PakSoft <noreply@paksoft.com.tr>',
-      to: [adminEmail],
-      subject: `New Contact Form Submission: ${subject}`,
-      html: `
-        <h2>New Contact Form Submission</h2>
-        <p><strong>From:</strong> ${name} (${email})</p>
-        <p><strong>Subject:</strong> ${subject}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message.replace(/\n/g, '<br>')}</p>
-        <hr>
-        <p style="color: #666; font-size: 12px;">
-          This message was sent from the PakSoft contact form.
-        </p>
-      `,
-    }),
-  });
-
-  // Send confirmation to user
-  await fetch('https://api.resend.com/emails', {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${resendApiKey}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      // TODO: switch to noreply@paksofts.com once the domain is verified with the email provider
-      from: 'PakSoft <noreply@paksoft.com.tr>',
-      to: [email],
-      subject: 'We received your message - PakSoft',
-      html: `
-        <h2>Thank you for contacting us, ${name}!</h2>
-        <p>We have received your message and will get back to you within 24 hours.</p>
-        <p><strong>Your message summary:</strong></p>
-        <p><em>Subject:</em> ${subject}</p>
-        <p><em>Message:</em> ${message.substring(0, 200)}${message.length > 200 ? '...' : ''}</p>
-        <hr>
-        <p>Best regards,<br>The PakSoft Team</p>
-        <p style="color: #666; font-size: 12px;">
-          PakSoft - Modern Digital Solutions<br>
-          <a href="https://www.paksofts.com">paksofts.com</a>
-        </p>
-      `,
-    }),
-  });
+  await sendEmail(
+    email,
+    'We received your message - PakSoft',
+    `
+      <h2>Thank you for contacting us, ${name}!</h2>
+      <p>We have received your message and will get back to you within 24 hours.</p>
+      <p><strong>Your message summary:</strong></p>
+      <p><em>Subject:</em> ${subject}</p>
+      <p><em>Message:</em> ${message.substring(0, 200)}${message.length > 200 ? '...' : ''}</p>
+      <hr>
+      <p>Best regards,<br>The PakSoft Team</p>
+      <p style="color: #666; font-size: 12px;">
+        PakSoft - Modern Digital Solutions<br>
+        <a href="https://www.paksofts.com">paksofts.com</a>
+      </p>
+    `
+  );
 }

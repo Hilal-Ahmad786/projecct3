@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 import { Locale, locales, defaultLocale } from '@/lib/i18n';
 import { ArticleJsonLd, BreadcrumbJsonLd } from '@/components/seo/JsonLd';
 import BlogPostView from './BlogPostView';
@@ -63,6 +64,10 @@ export default async function BlogPostPage({ params }: PageProps) {
   const { slug, locale } = await params;
   const validLocale = locales.includes(locale) ? locale : defaultLocale;
   const post = await getPost(slug, validLocale);
+
+  // Real 404 for unknown slugs — previously this rendered an empty page with
+  // HTTP 200 (a soft-404 that Google indexes and demotes).
+  if (!post) notFound();
 
   const l = post ? localized(post, validLocale) : null;
   const url = `${baseUrl}/${validLocale}/blog/${slug}`;

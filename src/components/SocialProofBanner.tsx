@@ -4,6 +4,7 @@ import { motion, useReducedMotion } from 'framer-motion';
 import Image from 'next/image';
 import { smoothSpring, snappySpring, useCountUp, useInViewOnce } from '@/lib/animations';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
+import { COMPANY_STATS } from '@/config/companyStats';
 
 interface TrustBadge {
   name: string;
@@ -73,10 +74,10 @@ export default function SocialProofBanner({
       if (Array.isArray(raw)) return raw as Array<{ value: string; label: string }>;
     } catch {}
     return [
-      { value: '500+', label: 'Projects Completed' },
-      { value: '200+', label: 'Happy Clients' },
-      { value: '15+',  label: 'Years Experience' },
-      { value: '50+',  label: 'Team Members' },
+      { value: COMPANY_STATS.projects,    label: 'Projects Completed' },
+      { value: COMPANY_STATS.clients,     label: 'Happy Clients' },
+      { value: COMPANY_STATS.years,       label: 'Years Experience' },
+      { value: COMPANY_STATS.teamMembers, label: 'Team Members' },
     ];
   })();
 
@@ -85,10 +86,9 @@ export default function SocialProofBanner({
       const raw = t('badges');
       if (Array.isArray(raw)) return (raw as string[]).map((name) => ({ name }));
     } catch {}
+    // Certification badges removed 2026-08: only list certifications PakSoft actually holds.
     return [
-      { name: 'ISO 27001 Certified' },
       { name: 'GDPR Compliant' },
-      { name: 'SOC 2 Type II' },
     ];
   })();
 
