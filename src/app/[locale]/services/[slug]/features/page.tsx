@@ -1,8 +1,9 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { Locale, locales, defaultLocale } from '@/lib/i18n';
-import { generateAlternateLinks } from '@/lib/seo';
+import { generateAlternateLinks, getServiceSubPageMeta } from '@/lib/seo';
 import { localizeFullPath } from '@/lib/routes';
+import { serviceRobots } from '@/lib/service-quality';
 import FeaturesPageClient from './FeaturesPageClient';
 
 import { SITE_URL as baseUrl } from '@/config/site';
@@ -28,9 +29,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const path = `/services/${slug}/features`;
   const localizedPath = localizeFullPath(path, validLocale);
 
+  const { title, description } = getServiceSubPageMeta('features', validLocale, service.name);
+
   return {
-    title: `${service.name} Features & Capabilities | PakSoft`,
-    description: `Explore the key features and capabilities of our ${service.name} service. Discover what makes our solutions stand out.`,
+    title,
+    description,
+    robots: serviceRobots(service),
     alternates: {
       canonical: `${baseUrl}/${validLocale}${localizedPath}`,
       languages: generateAlternateLinks(path),

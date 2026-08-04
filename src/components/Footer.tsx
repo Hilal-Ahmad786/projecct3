@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import Image from 'next/image';
 import LocalizedLink from '@/components/LocalizedLink';
 import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline';
@@ -151,6 +152,33 @@ export default function Footer() {
   const { dir } = useTranslations();
   const t = useSectionTranslations('footer');
 
+  // Newsletter signup state
+  const [newsletterEmail, setNewsletterEmail] = useState('');
+  const [newsletterStatus, setNewsletterStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (newsletterStatus === 'loading') return;
+    setNewsletterStatus('loading');
+    try {
+      const res = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: newsletterEmail }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setNewsletterStatus('success');
+        setNewsletterEmail('');
+      } else {
+        setNewsletterStatus('error');
+      }
+    } catch (error) {
+      console.error('Newsletter signup failed:', error);
+      setNewsletterStatus('error');
+    }
+  };
+
   const year = new Date().getFullYear();
   const copyright = (t('copyright') as string).replace('{year}', String(year));
 
@@ -272,20 +300,47 @@ export default function Footer() {
               <p className="text-[14px] text-gray-400 leading-relaxed mb-6">
                 {t('newsletter.description') as string}
               </p>
-              <form onSubmit={(e) => e.preventDefault()} aria-label="Newsletter signup" className="space-y-3">
-                <input
-                  type="email"
-                  placeholder={t('newsletter.placeholder') as string}
-                  required
-                  className="w-full px-4 py-3 text-[14px] bg-white/5 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-accent-emerald transition-colors"
-                />
-                <button
-                  type="submit"
-                  className="w-full px-4 py-3 text-[14px] font-semibold bg-accent-emerald text-white rounded-lg hover:bg-emerald-600 transition-colors"
+              {newsletterStatus === 'success' ? (
+                <div
+                  role="status"
+                  className="flex items-center gap-3 px-4 py-3 bg-accent-emerald/10 border border-accent-emerald/40 rounded-lg"
                 >
-                  {t('newsletter.submit') as string}
-                </button>
-              </form>
+                  <svg className="w-5 h-5 text-accent-emerald flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-[14px] text-accent-emerald">
+                    {t('newsletter.success') as string}
+                  </span>
+                </div>
+              ) : (
+                <form onSubmit={handleNewsletterSubmit} aria-label="Newsletter signup" className="space-y-3">
+                  <input
+                    type="email"
+                    name="email"
+                    autoComplete="email"
+                    placeholder={t('newsletter.placeholder') as string}
+                    required
+                    value={newsletterEmail}
+                    onChange={(e) => setNewsletterEmail(e.target.value)}
+                    dir="ltr"
+                    className="w-full px-4 py-3 text-[14px] bg-white/5 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-accent-emerald transition-colors"
+                  />
+                  {newsletterStatus === 'error' && (
+                    <p role="alert" className="text-[13px] text-red-400">
+                      {t('newsletter.error') as string}
+                    </p>
+                  )}
+                  <button
+                    type="submit"
+                    disabled={newsletterStatus === 'loading'}
+                    className="w-full px-4 py-3 text-[14px] font-semibold bg-accent-emerald text-white rounded-lg hover:bg-emerald-600 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                  >
+                    {newsletterStatus === 'loading'
+                      ? (t('newsletter.sending') as string)
+                      : (t('newsletter.submit') as string)}
+                  </button>
+                </form>
+              )}
               <p className="text-[12px] text-gray-500 mt-4">
                 {t('newsletter.disclaimer') as string}
               </p>

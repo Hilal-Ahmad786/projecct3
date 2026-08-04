@@ -110,9 +110,9 @@ export default function SocialProofBanner({
                 initial={prefersReducedMotion ? {} : {
                   opacity: 0,
                   x: index % 2 === 0 ? -30 : 30,
-                  filter: 'blur(6px)',
+                  
                 }}
-                whileInView={{ opacity: 1, x: 0, filter: 'blur(0px)' }}
+                whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={prefersReducedMotion ? { duration: 0 } : { ...smoothSpring, delay: index * 0.08 }}
                 className="grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100"

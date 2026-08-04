@@ -1,11 +1,12 @@
 'use client';
 
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useForm, UseFormRegister, FieldErrors } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import Button from '@/components/Button';
+import ReCaptcha, { useReCaptcha } from '@/components/ReCaptcha';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 import FileUpload from './FileUpload';
 import BudgetCalculator, { BudgetEstimate } from './BudgetCalculator';
@@ -14,38 +15,80 @@ import { trackContactFormConversion, trackQuoteConversion } from '@/lib/analytic
 // Storage key for form progress
 const FORM_STORAGE_KEY = 'paksoft_project_request_draft';
 
-// Form validation schema
-const projectRequestSchema = z.object({
-  // Step 1: Contact Info
-  name: z.string().min(2, 'Name must be at least 2 characters'),
-  email: z.string().email('Please enter a valid email address'),
-  phone: z.string().optional(),
-  company: z.string().optional(),
-  website: z.string().url().optional().or(z.literal('')),
+// Localized client-side validation messages (site locales: en/tr/de/ur/ar)
+const VALIDATION_MESSAGES: Record<string, { nameMin: string; emailInvalid: string; websiteInvalid: string; serviceRequired: string; descriptionMin: string }> = {
+  en: {
+    nameMin: 'Name must be at least 2 characters',
+    emailInvalid: 'Please enter a valid email address',
+    websiteInvalid: 'Please enter a valid URL (e.g. https://example.com)',
+    serviceRequired: 'Please select a service',
+    descriptionMin: 'Please provide at least 50 characters',
+  },
+  tr: {
+    nameMin: 'İsim en az 2 karakter olmalıdır',
+    emailInvalid: 'Lütfen geçerli bir e-posta adresi girin',
+    websiteInvalid: 'Lütfen geçerli bir URL girin (örn. https://ornek.com)',
+    serviceRequired: 'Lütfen bir hizmet seçin',
+    descriptionMin: 'Lütfen en az 50 karakter girin',
+  },
+  de: {
+    nameMin: 'Der Name muss mindestens 2 Zeichen lang sein',
+    emailInvalid: 'Bitte geben Sie eine gültige E-Mail-Adresse ein',
+    websiteInvalid: 'Bitte geben Sie eine gültige URL ein (z. B. https://beispiel.de)',
+    serviceRequired: 'Bitte wählen Sie eine Dienstleistung aus',
+    descriptionMin: 'Bitte geben Sie mindestens 50 Zeichen ein',
+  },
+  ur: {
+    nameMin: 'نام کم از کم 2 حروف کا ہونا چاہیے',
+    emailInvalid: 'براہ کرم درست ای میل ایڈریس درج کریں',
+    websiteInvalid: 'براہ کرم درست URL درج کریں (مثلاً https://example.com)',
+    serviceRequired: 'براہ کرم ایک سروس منتخب کریں',
+    descriptionMin: 'براہ کرم کم از کم 50 حروف درج کریں',
+  },
+  ar: {
+    nameMin: 'يجب أن يتكون الاسم من حرفين على الأقل',
+    emailInvalid: 'يرجى إدخال بريد إلكتروني صحيح',
+    websiteInvalid: 'يرجى إدخال رابط صحيح (مثل https://example.com)',
+    serviceRequired: 'يرجى اختيار خدمة',
+    descriptionMin: 'يرجى إدخال 50 حرفًا على الأقل',
+  },
+};
 
-  // Step 2: Project Type
-  serviceType: z.string().min(1, 'Please select a service'),
-  projectTitle: z.string().optional(),
+// Form validation schema (messages localized per site locale)
+function makeProjectRequestSchema(locale: string) {
+  const m = VALIDATION_MESSAGES[locale] ?? VALIDATION_MESSAGES.en;
+  return z.object({
+    // Step 1: Contact Info
+    name: z.string().min(2, m.nameMin),
+    email: z.string().email(m.emailInvalid),
+    phone: z.string().optional(),
+    company: z.string().optional(),
+    website: z.string().url(m.websiteInvalid).optional().or(z.literal('')),
 
-  // Step 3: Project Details
-  description: z.string().min(50, 'Please provide at least 50 characters'),
-  goals: z.string().optional(),
-  targetAudience: z.string().optional(),
+    // Step 2: Project Type
+    serviceType: z.string().min(1, m.serviceRequired),
+    projectTitle: z.string().optional(),
 
-  // Step 4: Technical Requirements
-  techPreferences: z.string().optional(),
-  integrations: z.string().optional(),
-  performanceReqs: z.string().optional(),
+    // Step 3: Project Details
+    description: z.string().min(50, m.descriptionMin),
+    goals: z.string().optional(),
+    targetAudience: z.string().optional(),
 
-  // Step 5: Budget & Timeline
-  budgetRange: z.enum(['SMALL', 'MEDIUM', 'LARGE', 'ENTERPRISE', 'CUSTOM']),
-  timeline: z.enum(['URGENT', 'STANDARD', 'FLEXIBLE', 'LONG_TERM']),
-  urgencyLevel: z.enum(['LOW', 'NORMAL', 'HIGH', 'CRITICAL']).default('NORMAL'),
-  preferredStartDate: z.string().optional(),
-  additionalNotes: z.string().optional(),
-});
+    // Step 4: Technical Requirements
+    techPreferences: z.string().optional(),
+    integrations: z.string().optional(),
+    performanceReqs: z.string().optional(),
 
-type FormData = z.infer<typeof projectRequestSchema>;
+    // Step 5: Budget & Timeline
+    budgetRange: z.enum(['SMALL', 'MEDIUM', 'LARGE', 'ENTERPRISE', 'CUSTOM']),
+    timeline: z.enum(['URGENT', 'STANDARD', 'FLEXIBLE', 'LONG_TERM']),
+    urgencyLevel: z.enum(['LOW', 'NORMAL', 'HIGH', 'CRITICAL']).default('NORMAL'),
+    preferredStartDate: z.string().optional(),
+    additionalNotes: z.string().optional(),
+  });
+}
+
+type FormData = z.infer<ReturnType<typeof makeProjectRequestSchema>>;
 
 interface ProjectRequestFormProps {
   prefilledService?: string;
@@ -55,28 +98,29 @@ interface ProjectRequestFormProps {
 
 const TOTAL_STEPS = 5;
 
-const services = [
-  { value: 'web-development', label: 'Web Development' },
-  { value: 'mobile-development', label: 'Mobile App Development' },
-  { value: 'ai-solutions', label: 'AI Solutions' },
-  { value: 'machine-learning', label: 'Machine Learning' },
-  { value: 'data-analytics', label: 'Data Analytics' },
-  { value: 'python-automation', label: 'Python Automation' },
-  { value: 'digital-marketing', label: 'Digital Marketing' },
-  { value: 'ui-ux-design', label: 'UI/UX Design' },
-  { value: 'api-development', label: 'API Development' },
-  { value: 'e-commerce', label: 'E-Commerce Solutions' },
-  { value: 'devops-cloud', label: 'DevOps & Cloud' },
-  { value: 'cybersecurity', label: 'Cybersecurity' },
-  { value: 'conversational-ai', label: 'Conversational AI' },
+// Service-type labels localized for all 5 site locales (en/tr/de/ur/ar)
+const SERVICE_LABELS: { value: string; labels: Record<string, string> }[] = [
+  { value: 'web-development', labels: { en: 'Web Development', tr: 'Web Geliştirme', de: 'Webentwicklung', ur: 'ویب ڈویلپمنٹ', ar: 'تطوير الويب' } },
+  { value: 'mobile-development', labels: { en: 'Mobile App Development', tr: 'Mobil Uygulama Geliştirme', de: 'Mobile-App-Entwicklung', ur: 'موبائل ایپ ڈویلپمنٹ', ar: 'تطوير تطبيقات الجوال' } },
+  { value: 'ai-solutions', labels: { en: 'AI Solutions', tr: 'Yapay Zeka Çözümleri', de: 'KI-Lösungen', ur: 'AI حل', ar: 'حلول الذكاء الاصطناعي' } },
+  { value: 'machine-learning', labels: { en: 'Machine Learning', tr: 'Makine Öğrenmesi', de: 'Maschinelles Lernen', ur: 'مشین لرننگ', ar: 'تعلم الآلة' } },
+  { value: 'data-analytics', labels: { en: 'Data Analytics', tr: 'Veri Analitiği', de: 'Datenanalyse', ur: 'ڈیٹا اینالیٹکس', ar: 'تحليلات البيانات' } },
+  { value: 'python-automation', labels: { en: 'Python Automation', tr: 'Python Otomasyonu', de: 'Python-Automatisierung', ur: 'پائتھن آٹومیشن', ar: 'أتمتة بايثون' } },
+  { value: 'digital-marketing', labels: { en: 'Digital Marketing', tr: 'Dijital Pazarlama', de: 'Digitales Marketing', ur: 'ڈیجیٹل مارکیٹنگ', ar: 'التسويق الرقمي' } },
+  { value: 'ui-ux-design', labels: { en: 'UI/UX Design', tr: 'UI/UX Tasarımı', de: 'UI/UX-Design', ur: 'UI/UX ڈیزائن', ar: 'تصميم UI/UX' } },
+  { value: 'api-development', labels: { en: 'API Development', tr: 'API Geliştirme', de: 'API-Entwicklung', ur: 'API ڈویلپمنٹ', ar: 'تطوير API' } },
+  { value: 'e-commerce', labels: { en: 'E-Commerce Solutions', tr: 'E-Ticaret Çözümleri', de: 'E-Commerce-Lösungen', ur: 'ای کامرس حل', ar: 'حلول التجارة الإلكترونية' } },
+  { value: 'devops-cloud', labels: { en: 'DevOps & Cloud', tr: 'DevOps ve Bulut', de: 'DevOps & Cloud', ur: 'DevOps اور کلاؤڈ', ar: 'DevOps والسحابة' } },
+  { value: 'cybersecurity', labels: { en: 'Cybersecurity', tr: 'Siber Güvenlik', de: 'Cybersicherheit', ur: 'سائبر سیکیورٹی', ar: 'الأمن السيبراني' } },
+  { value: 'conversational-ai', labels: { en: 'Conversational AI', tr: 'Konuşma Yapay Zekası', de: 'Konversations-KI', ur: 'کنورسیشنل AI', ar: 'الذكاء الاصطناعي الحواري' } },
   // New AI Services
-  { value: 'prompt-engineering', label: 'Prompt Engineering' },
-  { value: 'ai-agents', label: 'AI Agents Development' },
-  { value: 'rag-solutions', label: 'RAG Solutions' },
-  { value: 'mlops-deployment', label: 'MLOps & Deployment' },
-  { value: 'computer-vision', label: 'Computer Vision' },
-  { value: 'llm-finetuning', label: 'LLM Fine-tuning' },
-  { value: 'other', label: 'Other' },
+  { value: 'prompt-engineering', labels: { en: 'Prompt Engineering', tr: 'Prompt Mühendisliği', de: 'Prompt-Engineering', ur: 'پرامپٹ انجینئرنگ', ar: 'هندسة الأوامر' } },
+  { value: 'ai-agents', labels: { en: 'AI Agents Development', tr: 'Yapay Zeka Ajanları Geliştirme', de: 'KI-Agenten-Entwicklung', ur: 'AI ایجنٹس ڈویلپمنٹ', ar: 'تطوير وكلاء الذكاء الاصطناعي' } },
+  { value: 'rag-solutions', labels: { en: 'RAG Solutions', tr: 'RAG Çözümleri', de: 'RAG-Lösungen', ur: 'RAG حل', ar: 'حلول RAG' } },
+  { value: 'mlops-deployment', labels: { en: 'MLOps & Deployment', tr: 'MLOps ve Dağıtım', de: 'MLOps & Deployment', ur: 'MLOps اور ڈیپلائمنٹ', ar: 'MLOps والنشر' } },
+  { value: 'computer-vision', labels: { en: 'Computer Vision', tr: 'Bilgisayarlı Görü', de: 'Computer Vision', ur: 'کمپیوٹر ویژن', ar: 'الرؤية الحاسوبية' } },
+  { value: 'llm-finetuning', labels: { en: 'LLM Fine-tuning', tr: 'LLM İnce Ayarı', de: 'LLM-Feinabstimmung', ur: 'LLM فائن ٹیوننگ', ar: 'الضبط الدقيق لنماذج LLM' } },
+  { value: 'other', labels: { en: 'Other', tr: 'Diğer', de: 'Sonstiges', ur: 'دیگر', ar: 'أخرى' } },
 ];
 
 interface UploadedFile {
@@ -103,8 +147,20 @@ export default function ProjectRequestForm({
   const [budgetEstimate, setBudgetEstimate] = useState<BudgetEstimate | null>(null);
   const [hasDraft, setHasDraft] = useState(false);
 
-  const { dir, isLoading } = useTranslations();
+  const { dir, isLoading, locale } = useTranslations();
   const t = useSectionTranslations('forms.projectRequest');
+  const { executeReCaptcha } = useReCaptcha();
+
+  // Localized service options + validation schema for the current locale
+  const services = useMemo(
+    () =>
+      SERVICE_LABELS.map(({ value, labels }) => ({
+        value,
+        label: labels[locale] ?? labels.en,
+      })),
+    [locale]
+  );
+  const projectRequestSchema = useMemo(() => makeProjectRequestSchema(locale), [locale]);
 
   // Load saved draft from localStorage
   const loadDraft = useCallback(() => {
@@ -230,8 +286,13 @@ export default function ProjectRequestForm({
 
     try {
       // Include uploaded files and budget estimate in submission
+      // Optional bot check — resolves to '' when reCAPTCHA isn't configured
+      // or failed to load, so it never blocks the submission.
+      const captchaToken = await executeReCaptcha('project_request');
+
       const submitData = {
         ...data,
+        ...(captchaToken ? { captchaToken } : {}),
         attachments: uploadedFiles.filter(f => f.status === 'complete').map(f => ({
           name: f.name,
           url: f.url,
@@ -316,6 +377,7 @@ export default function ProjectRequestForm({
 
   return (
     <div className="w-full max-w-2xl mx-auto" dir={dir}>
+      <ReCaptcha />
       {/* Draft Restoration Banner */}
       {hasDraft && (
         <motion.div
@@ -497,6 +559,7 @@ function Step1ContactInfo({ register, errors, dir, t }: StepProps) {
           <input
             {...register('name')}
             type="text"
+            autoComplete="name"
             className="form-input"
             placeholder={t('placeholders.name')}
             dir={dir}
@@ -511,6 +574,7 @@ function Step1ContactInfo({ register, errors, dir, t }: StepProps) {
           <input
             {...register('email')}
             type="email"
+            autoComplete="email"
             className="form-input"
             placeholder={t('placeholders.email')}
             dir="ltr"
@@ -523,6 +587,8 @@ function Step1ContactInfo({ register, errors, dir, t }: StepProps) {
           <input
             {...register('phone')}
             type="tel"
+            inputMode="tel"
+            autoComplete="tel"
             className="form-input"
             placeholder={t('placeholders.phone')}
             dir="ltr"
@@ -533,6 +599,7 @@ function Step1ContactInfo({ register, errors, dir, t }: StepProps) {
           <input
             {...register('company')}
             type="text"
+            autoComplete="organization"
             className="form-input"
             placeholder={t('placeholders.company')}
             dir={dir}
@@ -544,6 +611,7 @@ function Step1ContactInfo({ register, errors, dir, t }: StepProps) {
         <input
           {...register('website')}
           type="url"
+          autoComplete="url"
           className="form-input"
           placeholder="https://example.com"
           dir="ltr"

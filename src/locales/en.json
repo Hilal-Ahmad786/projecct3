@@ -3907,7 +3907,10 @@
       "description": "Weekly insights on AI, web development, and digital growth strategies — straight to your inbox.",
       "placeholder": "your@email.com",
       "submit": "Subscribe",
-      "disclaimer": "No spam · Unsubscribe anytime · GDPR compliant"
+      "disclaimer": "No spam · Unsubscribe anytime · GDPR compliant",
+      "sending": "Subscribing…",
+      "success": "Thanks! You're subscribed.",
+      "error": "Something went wrong. Please try again."
     },
     "servicesSection": {
       "heading": "All Services",

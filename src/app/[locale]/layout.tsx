@@ -11,6 +11,7 @@ import PageTransition from '@/components/PageTransition'
 import HeatmapTracker from '@/components/HeatmapTracker'
 import MotionProvider from '@/components/MotionProvider'
 import CookieConsent from '@/components/CookieConsent'
+import HtmlLangSync from '@/components/HtmlLangSync'
 
 interface LocaleLayoutProps {
   children: ReactNode
@@ -27,6 +28,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
 
   return (
     <div dir={dir} lang={validLocale}>
+      <HtmlLangSync locale={validLocale} dir={dir} />
       <TranslationsProvider locale={validLocale} translations={translations}>
         {/* MotionConfig(reducedMotion="user") makes all framer-motion
             animations in the app respect prefers-reduced-motion. */}

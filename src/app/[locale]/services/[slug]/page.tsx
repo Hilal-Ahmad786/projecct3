@@ -1,8 +1,9 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { Locale, locales, defaultLocale } from '@/lib/i18n';
-import { generateAlternateLinks } from '@/lib/seo';
+import { generateAlternateLinks, truncateAtWord } from '@/lib/seo';
 import { localizeFullPath } from '@/lib/routes';
+import { serviceRobots } from '@/lib/service-quality';
 import { ServiceJsonLd, BreadcrumbJsonLd, FAQJsonLd } from '@/components/seo/JsonLd';
 import ServiceDetailClient from './ServiceDetailClient';
 import type { ServiceDetailData } from './ServiceDetailClient';
@@ -79,14 +80,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: 'Service Not Found | PakSoft' };
   }
 
-  const title = `${service.name} | PakSoft`;
-  const description = (service.fullDescription || service.shortDescription || service.description || '').slice(0, 160);
+  // Prefer the hand-crafted meta fields (per-locale via mergeServiceTranslation),
+  // fall back to the generated defaults for services that don't have them yet.
+  const title = (service as { metaTitle?: string | null }).metaTitle || `${service.name} | PakSoft`;
+  const description =
+    (service as { metaDescription?: string | null }).metaDescription ||
+    truncateAtWord(service.fullDescription || service.shortDescription || service.description || '', 160);
   const path = `/services/${slug}`;
   const localizedPath = localizeFullPath(path, validLocale);
 
   return {
     title,
     description,
+    robots: serviceRobots(service),
     alternates: {
       canonical: `${baseUrl}/${validLocale}${localizedPath}`,
       languages: generateAlternateLinks(path),

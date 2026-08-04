@@ -13,13 +13,17 @@ export default function robots(): MetadataRoute.Robots {
                     '/api/*',
                     '/private',
                     '/private/*',
-                    '/*?*', // Disallow query parameters to prevent duplicate content
+                    // NOTE: do NOT blanket-disallow '/*?*' — it blocked every
+                    // UTM-tagged ad landing page ("indexed, blocked" results).
+                    // Canonical tags already handle parameter duplicates; only
+                    // the genuinely infinite parameter spaces are disallowed.
+                    '/*?q=*',
+                    '/*?search=*',
                 ],
             },
-            {
-                userAgent: 'GPTBot',
-                disallow: ['/'], // Block AI crawlers if desired
-            },
+            // GPTBot is deliberately ALLOWED: AI answer engines (ChatGPT etc.)
+            // are a growing referral channel, and PakSoft sells GEO/AI-search
+            // optimization — blocking them contradicted our own positioning.
         ],
         sitemap: `${SITE_URL}/sitemap.xml`,
         host: SITE_URL,

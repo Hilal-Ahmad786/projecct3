@@ -66,7 +66,7 @@ export default function DemoSection() {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.15 }}
         >
           {demoItems.map((item, index) => (
             <motion.div
@@ -76,12 +76,12 @@ export default function DemoSection() {
                 hidden: {
                   opacity: 0,
                   y: 24,
-                  filter: prefersReducedMotion ? 'blur(0px)' : 'blur(8px)',
+                  
                 },
                 visible: {
                   opacity: 1,
                   y: 0,
-                  filter: 'blur(0px)',
+                  
                   transition: prefersReducedMotion
                     ? { duration: 0 }
                     : { ...smoothSpring, delay: getDelay(index) },

@@ -224,15 +224,19 @@ export default function ServicesSection() {
 
       <div className="container mx-auto px-4 md:px-8 max-w-[1400px] relative z-10">
         
-        <AnimatePresence mode="wait">
+        {/* initial={false}: skip the first-mount animation so the grid is
+            visible in the server-rendered HTML before JS hydrates (it used to
+            arrive with inline opacity:0 — a blank page on slow devices).
+            Category expand/collapse transitions still animate. */}
+        <AnimatePresence mode="wait" initial={false}>
           {!expandedCategory ? (
             
             /* VIEW 1: THE BENTO GRID DASHBOARD */
             <motion.div
               key="grid-view"
-              initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, scale: 0.95, filter: 'blur(10px)' }}
-              animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
-              exit={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, scale: 0.95, filter: 'blur(10px)' }}
+              initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, scale: 0.98 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, scale: 0.98 }}
               transition={prefersReducedMotion ? { duration: 0 } : { duration: 0.5, ease: [0.23, 1, 0.32, 1] }}
             >
               <SectionHeader
@@ -329,9 +333,9 @@ export default function ServicesSection() {
             /* VIEW 2: THE EXPANDED CATEGORY DETAILS */
             <motion.div
               key="detail-view"
-              initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, scale: 1.05, filter: 'blur(10px)' }}
-              animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
-              exit={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, scale: 1.05, filter: 'blur(10px)' }}
+              initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, scale: 1.02 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, scale: 1.02 }}
               transition={prefersReducedMotion ? { duration: 0 } : { duration: 0.5, ease: [0.23, 1, 0.32, 1] }}
             >
               

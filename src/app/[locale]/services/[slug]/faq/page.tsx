@@ -1,8 +1,9 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { Locale, locales, defaultLocale } from '@/lib/i18n';
-import { generateAlternateLinks } from '@/lib/seo';
+import { generateAlternateLinks, getServiceSubPageMeta } from '@/lib/seo';
 import { localizeFullPath } from '@/lib/routes';
+import { serviceRobots } from '@/lib/service-quality';
 import { FAQJsonLd, BreadcrumbJsonLd } from '@/components/seo/JsonLd';
 import FAQPageClient from './FAQPageClient';
 
@@ -29,9 +30,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const path = `/services/${slug}/faq`;
   const localizedPath = localizeFullPath(path, validLocale);
 
+  const { title, description } = getServiceSubPageMeta('faq', validLocale, service.name);
+
   return {
-    title: `${service.name} FAQ - Frequently Asked Questions | PakSoft`,
-    description: `Find answers to frequently asked questions about our ${service.name} service. Get the information you need.`,
+    title,
+    description,
+    robots: serviceRobots(service),
     alternates: {
       canonical: `${baseUrl}/${validLocale}${localizedPath}`,
       languages: generateAlternateLinks(path),

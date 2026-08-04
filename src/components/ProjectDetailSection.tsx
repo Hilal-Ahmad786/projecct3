@@ -43,7 +43,7 @@ type ProcessStep = { step: string; title: string; desc: string }
 
 function ProcessStepsWithLine({ dir, steps }: { dir: string; steps: ProcessStep[] }) {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-100px' })
+  const isInView = useInView(ref, { once: true, margin: '-40px' })
   const prefersReducedMotion = useReducedMotion()
 
   return (

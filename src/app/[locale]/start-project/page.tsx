@@ -1,201 +1,42 @@
-'use client';
+// Server wrapper: exports localized metadata (title/description/canonical/hreflang)
+// while the interactive form page lives in StartProjectClient ('use client').
+import { Metadata } from 'next';
+import { Locale } from '@/lib/i18n';
+import { buildStaticPageMetadata } from '@/lib/seo';
+import StartProjectClient from './StartProjectClient';
 
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { useParams } from 'next/navigation';
-import Link from 'next/link';
-import {
-  RocketLaunchIcon,
-  CheckCircleIcon,
-  ClockIcon,
-  ShieldCheckIcon,
-  ChatBubbleLeftRightIcon,
-  ArrowLeftIcon,
-} from '@heroicons/react/24/outline';
-import ProjectRequestForm from '@/components/forms/ProjectRequestForm';
+interface PageProps {
+  params: Promise<{ locale: Locale }>;
+}
 
-const translations: Record<string, Record<string, string>> = {
-  title: {
-    en: 'Start Your Project',
-    tr: 'Projenizi Başlatın',
-    de: 'Starten Sie Ihr Projekt',
-    ur: 'اپنا پروجیکٹ شروع کریں',
-    ar: 'ابدأ مشروعك',
+const meta: Record<Locale, { title: string; description: string }> = {
+  en: {
+    title: 'Start Your Project | PakSoft',
+    description: 'Tell us about your project and get a tailored proposal within 48 hours — web, e-commerce, AI and digital marketing.',
   },
-  subtitle: {
-    en: 'Tell us about your vision and we\'ll bring it to life',
-    tr: 'Vizyonunuzu bize anlatın, biz hayata geçirelim',
-    de: 'Erzählen Sie uns von Ihrer Vision und wir setzen sie um',
-    ur: 'ہمیں اپنے وژن کے بارے میں بتائیں اور ہم اسے حقیقت بنائیں گے',
-    ar: 'أخبرنا عن رؤيتك وسنحولها إلى واقع',
+  tr: {
+    title: 'Projenizi Başlatın | PakSoft',
+    description: 'Projenizi bize anlatın, 48 saat içinde size özel bir teklif alın — web, e-ticaret, yapay zeka ve dijital pazarlama.',
   },
-  benefit1Title: {
-    en: 'Free Consultation',
-    tr: 'Ücretsiz Danışmanlık',
-    de: 'Kostenlose Beratung',
-    ur: 'مفت مشاورت',
-    ar: 'استشارة مجانية',
+  de: {
+    title: 'Starten Sie Ihr Projekt | PakSoft',
+    description: 'Erzählen Sie uns von Ihrem Projekt und erhalten Sie innerhalb von 48 Stunden ein individuelles Angebot — Web, E-Commerce, KI und digitales Marketing.',
   },
-  benefit1Desc: {
-    en: 'Get expert advice on your project requirements',
-    tr: 'Proje gereksinimleriniz için uzman tavsiyesi alın',
-    de: 'Erhalten Sie fachkundige Beratung zu Ihren Projektanforderungen',
-    ur: 'اپنے پروجیکٹ کی ضروریات پر ماہر مشورہ حاصل کریں',
-    ar: 'احصل على مشورة الخبراء لمتطلبات مشروعك',
+  ur: {
+    title: 'اپنا پروجیکٹ شروع کریں | PakSoft',
+    description: 'ہمیں اپنے پروجیکٹ کے بارے میں بتائیں اور 48 گھنٹوں میں خصوصی تجویز حاصل کریں — ویب، ای کامرس، اے آئی اور ڈیجیٹل مارکیٹنگ۔',
   },
-  benefit2Title: {
-    en: 'Quick Response',
-    tr: 'Hızlı Yanıt',
-    de: 'Schnelle Antwort',
-    ur: 'فوری جواب',
-    ar: 'استجابة سريعة',
-  },
-  benefit2Desc: {
-    en: 'We respond within 24 hours with a detailed proposal',
-    tr: 'Detaylı teklifle 24 saat içinde yanıt veriyoruz',
-    de: 'Wir antworten innerhalb von 24 Stunden mit einem detaillierten Angebot',
-    ur: 'ہم 24 گھنٹوں میں تفصیلی تجویز کے ساتھ جواب دیتے ہیں',
-    ar: 'نرد خلال 24 ساعة باقتراح مفصل',
-  },
-  benefit3Title: {
-    en: 'NDA Protected',
-    tr: 'NDA Korumalı',
-    de: 'NDA-geschützt',
-    ur: 'NDA محفوظ',
-    ar: 'محمي باتفاقية عدم إفشاء',
-  },
-  benefit3Desc: {
-    en: 'Your ideas are safe with confidentiality agreements',
-    tr: 'Fikirleriniz gizlilik anlaşmalarıyla güvende',
-    de: 'Ihre Ideen sind durch Vertraulichkeitsvereinbarungen geschützt',
-    ur: 'آپ کے خیالات رازداری کے معاہدوں کے ساتھ محفوظ ہیں',
-    ar: 'أفكارك آمنة مع اتفاقيات السرية',
-  },
-  benefit4Title: {
-    en: 'Dedicated Team',
-    tr: 'Özel Ekip',
-    de: 'Engagiertes Team',
-    ur: 'سرشار ٹیم',
-    ar: 'فريق متخصص',
-  },
-  benefit4Desc: {
-    en: 'Work directly with senior developers and designers',
-    tr: 'Kıdemli geliştiriciler ve tasarımcılarla doğrudan çalışın',
-    de: 'Arbeiten Sie direkt mit erfahrenen Entwicklern und Designern',
-    ur: 'سینیئر ڈویلپرز اور ڈیزائنرز کے ساتھ براہ راست کام کریں',
-    ar: 'اعمل مباشرة مع مطورين ومصممين ذوي خبرة',
-  },
-  backHome: {
-    en: 'Back to Home',
-    tr: 'Ana Sayfaya Dön',
-    de: 'Zurück zur Startseite',
-    ur: 'ہوم پیج پر واپس جائیں',
-    ar: 'العودة إلى الصفحة الرئيسية',
+  ar: {
+    title: 'ابدأ مشروعك | PakSoft',
+    description: 'أخبرنا عن مشروعك واحصل على عرض مخصص خلال 48 ساعة — الويب والتجارة الإلكترونية والذكاء الاصطناعي والتسويق الرقمي.',
   },
 };
 
-const benefits = [
-  { icon: ChatBubbleLeftRightIcon, titleKey: 'benefit1Title', descKey: 'benefit1Desc' },
-  { icon: ClockIcon, titleKey: 'benefit2Title', descKey: 'benefit2Desc' },
-  { icon: ShieldCheckIcon, titleKey: 'benefit3Title', descKey: 'benefit3Desc' },
-  { icon: CheckCircleIcon, titleKey: 'benefit4Title', descKey: 'benefit4Desc' },
-];
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+  return buildStaticPageMetadata(locale, '/start-project', meta);
+}
 
 export default function StartProjectPage() {
-  const params = useParams();
-  const locale = (params?.locale as string) || 'en';
-  const isRTL = locale === 'ar' || locale === 'ur';
-
-  const t = (key: string) => translations[key]?.[locale] || translations[key]?.en || key;
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50" dir={isRTL ? 'rtl' : 'ltr'}>
-      <div className="pt-24 pb-20">
-        <div className="container mx-auto px-4">
-          {/* Back link */}
-          <Link
-            href={`/${locale}`}
-            className="inline-flex items-center gap-2 text-gray-500 hover:text-gray-900 transition-colors mb-8"
-          >
-            <ArrowLeftIcon className={`w-4 h-4 ${isRTL ? 'rotate-180' : ''}`} />
-            {t('backHome')}
-          </Link>
-
-          <div className="grid lg:grid-cols-5 gap-12">
-            {/* Left Side - Benefits */}
-            <div className="lg:col-span-2">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="sticky top-32"
-              >
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-gray-900 flex items-center justify-center">
-                    <RocketLaunchIcon className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h1 className="text-2xl font-bold text-gray-900">{t('title')}</h1>
-                  </div>
-                </div>
-
-                <p className="text-lg text-gray-600 mb-8">
-                  {t('subtitle')}
-                </p>
-
-                <div className="space-y-6">
-                  {benefits.map((benefit, index) => (
-                    <motion.div
-                      key={benefit.titleKey}
-                      initial={{ opacity: 0, x: isRTL ? 20 : -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: 0.1 * index }}
-                      className="flex gap-4"
-                    >
-                      <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center flex-shrink-0">
-                        <benefit.icon className="w-5 h-5 text-gray-700" />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-gray-900 mb-1">{t(benefit.titleKey)}</h3>
-                        <p className="text-sm text-gray-600">{t(benefit.descKey)}</p>
-                      </div>
-                    </motion.div>
-                  ))}
-                </div>
-
-                {/* Trust indicators */}
-                <div className="mt-10 pt-8 border-t border-gray-200">
-                  {/* ISO 27001 / SOC 2 badges removed 2026-08 — only list certifications PakSoft actually holds. */}
-                  <div className="flex items-center gap-4 text-sm text-gray-500">
-                    <div className="flex items-center gap-1">
-                      <CheckCircleIcon className="w-4 h-4 text-green-500" />
-                      <span>GDPR</span>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-
-            {/* Right Side - Form */}
-            <div className="lg:col-span-3">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
-                className="bg-white rounded-2xl shadow-xl border border-gray-100 p-8"
-              >
-                <ProjectRequestForm
-                  onSuccess={() => {
-                    // Optionally redirect or show success
-                  }}
-                  onClose={() => {
-                    // Optionally handle close
-                  }}
-                />
-              </motion.div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+  return <StartProjectClient />;
 }

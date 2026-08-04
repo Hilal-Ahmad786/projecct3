@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { Locale, locales, defaultLocale } from '@/lib/i18n';
 import { createTranslator } from '@/lib/server-i18n';
 import { generateAlternateLinks } from '@/lib/seo';
+import { localizeFullPath } from '@/lib/routes';
 import Button from '@/components/Button';
 import { BreadcrumbJsonLd } from '@/components/seo/JsonLd';
 import {
@@ -43,18 +44,22 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const title = `${project.name} - Case Study | PakSoft`;
   const description = project.description || '';
   const path = `/projects/${slug}`;
+  // Canonical must use the LOCALIZED path (/tr/projeler/x, not /tr/projects/x)
+  // — the English-path canonical contradicted the hreflang alternates and the
+  // sitemap on every non-EN case study.
+  const localizedPath = localizeFullPath(path, validLocale);
 
   return {
     title,
     description,
     alternates: {
-      canonical: `${baseUrl}/${validLocale}${path}`,
+      canonical: `${baseUrl}/${validLocale}${localizedPath}`,
       languages: generateAlternateLinks(path),
     },
     openGraph: {
       title,
       description,
-      url: `${baseUrl}/${validLocale}${path}`,
+      url: `${baseUrl}/${validLocale}${localizedPath}`,
       siteName: 'PakSoft',
       locale: ogLocaleMap[validLocale],
       alternateLocale: locales.filter(l => l !== validLocale).map(l => ogLocaleMap[l]),

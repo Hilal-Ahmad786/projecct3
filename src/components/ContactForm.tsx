@@ -4,6 +4,7 @@
 import { useState } from 'react'
 import SectionHeader from '@/components/SectionHeader'
 import Button from '@/components/Button'
+import ReCaptcha, { useReCaptcha } from '@/components/ReCaptcha'
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations'
 import { trackContactFormConversion } from '@/lib/analytics'
 
@@ -20,7 +21,10 @@ export default function ContactForm() {
   })
   const [sending, setSending] = useState(false)
   const [sendToWhatsApp, setSendToWhatsApp] = useState(true)
+  const [submitted, setSubmitted] = useState(false)
+  const [submitError, setSubmitError] = useState<string | null>(null)
 
+  const { executeReCaptcha } = useReCaptcha()
   const { dir, isLoading } = useTranslations()
   const t = useSectionTranslations('contact.form')
   const notificationT = useSectionTranslations('notifications.success')
@@ -82,12 +86,17 @@ ${form.message}
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setSending(true)
+    setSubmitError(null)
 
     try {
+      // Optional bot check — resolves to '' when reCAPTCHA isn't configured
+      // or failed to load, so it never blocks the submission.
+      const captchaToken = await executeReCaptcha('contact_form')
+
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form)
+        body: JSON.stringify(captchaToken ? { ...form, captchaToken } : form)
       })
 
       const result = await response.json()
@@ -97,10 +106,10 @@ ${form.message}
         if (result.errors && Array.isArray(result.errors)) {
           const errorMessages = result.errors.map((err: { field: string; message: string }) =>
             `${err.field}: ${err.message}`
-          ).join('\n')
-          alert(errorMessages)
+          ).join(' · ')
+          setSubmitError(errorMessages)
         } else {
-          alert(result.message || errorT('general'))
+          setSubmitError(result.message || errorT('general'))
         }
         return
       }
@@ -113,11 +122,11 @@ ${form.message}
         sendViaWhatsApp()
       }
 
-      alert(notificationT('messageSent'))
+      setSubmitted(true)
       setForm({ name: '', email: '', phone: '', subject: '', message: '' })
     } catch (error) {
       console.error('Error sending message:', error)
-      alert(errorT('general'))
+      setSubmitError(errorT('general'))
     } finally {
       setSending(false)
     }
@@ -126,9 +135,10 @@ ${form.message}
   // Direct WhatsApp button handler
   const handleWhatsAppOnly = () => {
     if (!form.name || !form.email || !form.subject || !form.message) {
-      alert(t('fillAllFields'))
+      setSubmitError(t('fillAllFields'))
       return
     }
+    setSubmitError(null)
     sendViaWhatsApp()
   }
 
@@ -145,8 +155,51 @@ ${form.message}
     { value: 'other', label: t('subjects.other') }
   ]
 
+  // Inline success panel replaces the form after a successful submission
+  if (submitted) {
+    return (
+      <section id="contact-form" className="py-16 bg-gray-50" dir={dir}>
+        <div className="container mx-auto px-6 lg:px-8 max-w-xl">
+          <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 text-center">
+            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg
+                className="w-8 h-8 text-green-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+            </div>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+              {notificationT('messageSent')}
+            </h3>
+            <div className="space-y-2 text-sm text-gray-600 mb-8">
+              <p>• {t('nextStep1')}</p>
+              <p>• {t('nextStep2')}</p>
+              <p>• {t('nextStep3')}</p>
+            </div>
+            <Button
+              type="button"
+              variant="secondary"
+              onClick={() => setSubmitted(false)}
+            >
+              {t('sendMessage')}
+            </Button>
+          </div>
+        </div>
+      </section>
+    )
+  }
+
   return (
     <section id="contact-form" className="py-16 bg-gray-50" dir={dir}>
+      <ReCaptcha />
       <div className="container mx-auto px-6 lg:px-8 max-w-xl">
         <SectionHeader
           eyebrow=""
@@ -171,6 +224,7 @@ ${form.message}
                 id="name"
                 name="name"
                 type="text"
+                autoComplete="name"
                 required
                 placeholder={t('fullNamePlaceholder')}
                 className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-colors"
@@ -192,6 +246,7 @@ ${form.message}
                 id="email"
                 name="email"
                 type="email"
+                autoComplete="email"
                 required
                 placeholder={t('emailPlaceholder')}
                 className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-colors"
@@ -213,6 +268,8 @@ ${form.message}
                 id="phone"
                 name="phone"
                 type="tel"
+                inputMode="tel"
+                autoComplete="tel"
                 placeholder={t('phonePlaceholder')}
                 className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-colors"
                 value={form.phone}
@@ -289,6 +346,16 @@ ${form.message}
           <p className="text-sm text-gray-500 mt-4">
             * {t('requiredFields')}
           </p>
+
+          {/* Inline error banner */}
+          {submitError && (
+            <div
+              role="alert"
+              className="mt-4 p-4 bg-red-50 border border-red-200 rounded-lg text-red-700 text-sm whitespace-pre-line"
+            >
+              {submitError}
+            </div>
+          )}
 
           {/* Submit buttons */}
           <div className={`mt-6 flex flex-col sm:flex-row gap-3 ${dir === 'rtl' ? 'sm:flex-row-reverse' : ''}`}>

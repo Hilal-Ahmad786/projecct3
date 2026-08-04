@@ -81,6 +81,15 @@ const nextConfig = {
         permanent: true,
       },
       ...localizedServiceRedirects,
+      // Same for /projects: the rewrites alias both /tr/projects/x and
+      // /tr/projeler/x to the same page (duplicate 200s with conflicting
+      // signals) — redirect the English path to the localized canonical.
+      ...Object.entries({ tr: 'projeler', de: 'projekte', ur: 'mansoobay', ar: 'almasharie' }).flatMap(
+        ([loc, base]) => [
+          { source: `/${loc}/projects/:slug`, destination: `/${loc}/${base}/:slug`, permanent: true },
+          { source: `/${loc}/projects`, destination: `/${loc}/${base}`, permanent: true },
+        ]
+      ),
       // tech-stack → technologies (canonical sub-nav URL)
       { source: '/:locale/services/:slug/tech-stack', destination: '/:locale/services/:slug/technologies', permanent: true },
       // Turkish blog posts missing locale prefix (old Google-indexed URLs)

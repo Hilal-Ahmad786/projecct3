@@ -107,7 +107,7 @@ export function useCountUp(
 }
 
 // ─── useInViewOnce (convenience) ─────────────────────────────────
-export function useInViewOnce(margin: UseInViewOptions['margin'] = '-100px') {
+export function useInViewOnce(margin: UseInViewOptions['margin'] = '-40px') {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin })
   return { ref, isInView }

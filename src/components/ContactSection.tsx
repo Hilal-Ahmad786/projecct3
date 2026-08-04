@@ -19,10 +19,13 @@ export default function ContactSection() {
   const { dir, isLoading } = useTranslations();
   const t = useSectionTranslations('contact');
   const tNotifications = useSectionTranslations('notifications.success');
+  const tErrors = useSectionTranslations('notifications.error');
   const prefersReducedMotion = useReducedMotion();
 
   const [form, setForm] = useState({ name: '', email: '', message: '', subject: '' });
   const [sending, setSending] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   if (isLoading) {
     return (
@@ -42,13 +45,33 @@ export default function ContactSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSending(true);
+    setSubmitError(null);
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      alert(tNotifications('messageSent'));
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      const result = await response.json();
+
+      if (!result.success) {
+        if (result.errors && Array.isArray(result.errors)) {
+          setSubmitError(
+            result.errors
+              .map((err: { field: string; message: string }) => `${err.field}: ${err.message}`)
+              .join(' · ')
+          );
+        } else {
+          setSubmitError(result.message || tErrors('general'));
+        }
+        return;
+      }
+
+      setSubmitted(true);
       setForm({ name: '', email: '', message: '', subject: '' });
     } catch (error) {
       console.error('Error sending message:', error);
-      alert('An error occurred. Please try again.');
+      setSubmitError(tErrors('general'));
     } finally {
       setSending(false);
     }
@@ -193,6 +216,19 @@ export default function ContactSection() {
             transition={prefersReducedMotion ? { duration: 0 } : { ...smoothSpring, delay: 0.2 }}
             viewport={{ once: true }}
           >
+            {submitted ? (
+              <div className="glass-strong rounded-lg p-8 text-center">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <h3 className="text-title text-gray-900 mb-4">{tNotifications('messageSent')}</h3>
+                <Button type="button" variant="secondary" onClick={() => setSubmitted(false)}>
+                  {t('form.sendMessage')}
+                </Button>
+              </div>
+            ) : (
             <form onSubmit={handleSubmit} className="glass-strong rounded-lg p-8">
               <h3 className="text-title text-gray-900 mb-6">{t('form.title')}</h3>
 
@@ -205,7 +241,7 @@ export default function ContactSection() {
                   transition={prefersReducedMotion ? { duration: 0 } : { ...smoothSpring, delay: 0.3 }}
                 >
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">{t('form.fullName')} *</label>
-                  <input type="text" id="name" name="name" required value={form.name} onChange={handleChange}
+                  <input type="text" id="name" name="name" autoComplete="name" required value={form.name} onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-200 rounded-sm text-sm focus:outline-none focus:border-gray-400 transition-colors"
                     placeholder={t('form.fullNamePlaceholder')} dir={dir} />
                 </motion.div>
@@ -218,7 +254,7 @@ export default function ContactSection() {
                   transition={prefersReducedMotion ? { duration: 0 } : { ...smoothSpring, delay: 0.4 }}
                 >
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">{t('form.emailAddress')} *</label>
-                  <input type="email" id="email" name="email" required value={form.email} onChange={handleChange}
+                  <input type="email" id="email" name="email" autoComplete="email" required value={form.email} onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-200 rounded-sm text-sm focus:outline-none focus:border-gray-400 transition-colors"
                     placeholder={t('form.emailPlaceholder')} dir="ltr" />
                 </motion.div>
@@ -253,6 +289,16 @@ export default function ContactSection() {
                     placeholder={t('form.messagePlaceholder')} dir={dir} />
                 </motion.div>
 
+                {/* Inline error banner */}
+                {submitError && (
+                  <div
+                    role="alert"
+                    className="p-4 bg-red-50 border border-red-200 rounded-sm text-red-700 text-sm"
+                  >
+                    {submitError}
+                  </div>
+                )}
+
                 {/* Submit Button with hover glow */}
                 <div className={`flex items-center justify-between pt-4 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
                   <p className="text-xs text-gray-500">* {t('form.requiredFields')}</p>
@@ -283,6 +329,7 @@ export default function ContactSection() {
                 </div>
               </div>
             </form>
+            )}
 
             {/* Additional Info */}
             <div className="mt-6 glass rounded-lg p-6">

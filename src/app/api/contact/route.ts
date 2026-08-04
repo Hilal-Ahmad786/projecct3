@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
+import { verifyCaptchaToken } from '@/lib/captcha';
 
 // Force dynamic rendering to avoid build-time Prisma issues
 export const dynamic = 'force-dynamic';
@@ -19,6 +20,19 @@ export async function POST(request: NextRequest) {
     const { createContactMessage, createLead, getLeadByEmail } = await import('@/lib/admin/database/queries');
 
     const body = await request.json();
+
+    // reCAPTCHA check — only rejects when a token was sent AND positively
+    // failed verification; unset keys / missing token skip it entirely.
+    if (!(await verifyCaptchaToken(body.captchaToken))) {
+      return NextResponse.json(
+        {
+          success: false,
+          message:
+            'Your submission could not be verified. Please try again, or reach us directly on WhatsApp (+90 552 567 71 64).',
+        },
+        { status: 400 }
+      );
+    }
 
     // Validate the request body
     const validationResult = contactFormSchema.safeParse(body);

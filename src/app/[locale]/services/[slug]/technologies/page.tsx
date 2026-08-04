@@ -4,8 +4,9 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { Locale, locales, defaultLocale } from '@/lib/i18n';
-import { generateAlternateLinks } from '@/lib/seo';
+import { generateAlternateLinks, getServiceSubPageMeta } from '@/lib/seo';
 import { localizeFullPath } from '@/lib/routes';
+import { serviceRobots } from '@/lib/service-quality';
 import TechStackPageClient from '../tech-stack/TechStackPageClient';
 
 import { SITE_URL as baseUrl } from '@/config/site';
@@ -31,9 +32,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const path = `/services/${slug}/technologies`;
   const localizedPath = localizeFullPath(path, validLocale);
 
+  const { title, description } = getServiceSubPageMeta('technologies', validLocale, service.name);
+
   return {
-    title: `${service.name} Technologies & Tools | PakSoft`,
-    description: `Discover the cutting-edge technologies and tools we use for ${service.name}. Modern, scalable, and battle-tested solutions.`,
+    title,
+    description,
+    robots: serviceRobots(service),
     alternates: {
       canonical: `${baseUrl}/${validLocale}${localizedPath}`,
       languages: generateAlternateLinks(path),

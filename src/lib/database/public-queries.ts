@@ -109,6 +109,11 @@ export const getServicesForSitemap = unstable_cache(
           updatedAt: true,
           features: true,
           content: true,
+          // isParent + fullDescription feed the thin-content indexation gate
+          // (isSubstantialService) so the sitemap and the pages' robots meta
+          // stay in agreement about what is indexable.
+          isParent: true,
+          fullDescription: true,
           pricingPackages: { select: { id: true }, take: 1 },
         },
         orderBy: { order: 'asc' },
@@ -120,6 +125,8 @@ export const getServicesForSitemap = unstable_cache(
         updatedAt: s.updatedAt,
         features: s.features,
         content: s.content,
+        isParent: s.isParent,
+        fullDescription: s.fullDescription,
         pricingPackages: (s.pricingPackages ?? []).slice(0, 1).map((p: any) => ({ id: p.id })),
       }));
     }

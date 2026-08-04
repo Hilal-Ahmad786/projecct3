@@ -579,11 +579,14 @@ function HeroSection({
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Column – Content */}
+          {/* CSS entrance (hero-enter) instead of a framer mount animation:
+              framer's initial={{opacity:0}} is inlined into the SSR HTML, so
+              the hero — the LCP element of every service landing page — stayed
+              invisible until JS hydrated. The CSS animation plays at first
+              paint, no JS needed. */}
           <motion.div
-            initial={{ opacity: 0, x: -32 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
-            className="space-y-8"
+            initial={false}
+            className="hero-enter space-y-8"
           >
             {/* Breadcrumb — mt keeps a small gap below the fixed header on mobile */}
             <nav className="flex items-center gap-2 text-sm text-gray-400 mt-3 lg:mt-5">
@@ -666,10 +669,8 @@ function HeroSection({
 
           {/* Right Column – Visual Element */}
           <motion.div
-            initial={{ opacity: 0, x: 32 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: [0.4, 0, 0.2, 1] }}
-            className="relative"
+            initial={false}
+            className="hero-enter-side relative"
           >
             {hasAnimation ? (
               /* Parametric Hero Visual */

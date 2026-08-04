@@ -1,8 +1,9 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { Locale, locales, defaultLocale } from '@/lib/i18n';
-import { generateAlternateLinks } from '@/lib/seo';
+import { generateAlternateLinks, getServiceSubPageMeta } from '@/lib/seo';
 import { localizeFullPath } from '@/lib/routes';
+import { serviceRobots } from '@/lib/service-quality';
 import ProcessPageClient from './ProcessPageClient';
 
 import { SITE_URL as baseUrl } from '@/config/site';
@@ -28,9 +29,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const path = `/services/${slug}/process`;
   const localizedPath = localizeFullPath(path, validLocale);
 
+  const { title, description } = getServiceSubPageMeta('process', validLocale, service.name);
+
   return {
-    title: `${service.name} Process & Methodology | PakSoft`,
-    description: `Learn about our proven process and methodology for ${service.name}. From discovery to deployment, see how we deliver results.`,
+    title,
+    description,
+    robots: serviceRobots(service),
     alternates: {
       canonical: `${baseUrl}/${validLocale}${localizedPath}`,
       languages: generateAlternateLinks(path),

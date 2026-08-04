@@ -1,8 +1,9 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { Locale, locales, defaultLocale } from '@/lib/i18n';
-import { generateAlternateLinks } from '@/lib/seo';
+import { generateAlternateLinks, getServiceSubPageMeta } from '@/lib/seo';
 import { localizeFullPath } from '@/lib/routes';
+import { serviceRobots } from '@/lib/service-quality';
 import ServiceDetailClient from '../ServiceDetailClient';
 import PricingPageClient from './PricingPageClient';
 import { getServiceData, baseUrl } from '../_shared';
@@ -21,9 +22,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const path = `/services/${slug}/pricing`;
   const localizedPath = localizeFullPath(path, validLocale);
+  const { title, description } = getServiceSubPageMeta('pricing', validLocale, data.service.name);
+
   return {
-    title: `${data.service.name} Pricing & Packages | PakSoft`,
-    description: `Transparent pricing for ${data.service.name}. Choose a package or get a tailored, fixed-price proposal within 48 hours — no hidden fees.`,
+    title,
+    description,
+    robots: serviceRobots(data.service),
     alternates: {
       canonical: `${baseUrl}/${validLocale}${localizedPath}`,
       languages: generateAlternateLinks(path),

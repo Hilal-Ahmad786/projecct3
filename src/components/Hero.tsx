@@ -210,7 +210,10 @@ export default function Hero() {
                       style={{ color: 'var(--heritage-turquoise)' }}
                       initial={prefersReducedMotion ? {} : { opacity: 0, y: 20, filter: 'blur(8px)' }}
                       animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-                      exit={prefersReducedMotion ? {} : { opacity: 0, y: -20, filter: 'blur(8px)' }}
+                      // Fast exit: with AnimatePresence mode="wait" the headline
+                      // line is EMPTY for the whole exit duration — at 0.4s the
+                      // hero visibly read as just "Modern" between words.
+                      exit={prefersReducedMotion ? {} : { opacity: 0, y: -20, filter: 'blur(8px)', transition: { duration: 0.12 } }}
                       transition={
                         prefersReducedMotion
                           ? { duration: 0 }

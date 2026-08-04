@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
+import { verifyCaptchaToken } from '@/lib/captcha';
 
 // Validation schema
 const projectRequestSchema = z.object({
@@ -35,6 +36,19 @@ const projectRequestSchema = z.object({
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
+
+    // reCAPTCHA check — only rejects when a token was sent AND positively
+    // failed verification; unset keys / missing token skip it entirely.
+    if (!(await verifyCaptchaToken(body.captchaToken))) {
+      return NextResponse.json(
+        {
+          success: false,
+          message:
+            'Your submission could not be verified. Please try again, or reach us directly on WhatsApp (+90 552 567 71 64).',
+        },
+        { status: 400 }
+      );
+    }
 
     // Validate input
     const validatedData = projectRequestSchema.parse(body);

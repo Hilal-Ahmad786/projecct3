@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next';
 import { localizeFullPath } from '@/lib/routes';
 import { Locale } from '@/lib/i18n';
 import { getServicesForSitemap } from '@/lib/database/public-queries';
+import { isSubstantialService } from '@/lib/service-quality';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 const allLocales: Locale[] = ['en', 'tr', 'de', 'ar', 'ur'];
@@ -37,6 +38,7 @@ const mainRoutes = [
   { path: '/careers',   priority: PRIORITY.other,   changeFreq: 'monthly' as const, date: DATES.seoRefresh },
   { path: '/pricing',   priority: PRIORITY.other,   changeFreq: 'monthly' as const, date: DATES.seoRefresh },
   { path: '/blog',      priority: PRIORITY.blog,    changeFreq: 'daily'   as const, date: DATES.seoRefresh },
+  { path: '/start-project', priority: 0.8, changeFreq: 'monthly' as const, date: DATES.seoRefresh }, // conversion page
   { path: '/privacy-policy',   priority: PRIORITY.other, changeFreq: 'yearly' as const, date: DATES.seoRefresh },
   { path: '/terms-of-service', priority: PRIORITY.other, changeFreq: 'yearly' as const, date: DATES.seoRefresh },
   { path: '/cookie-policy',    priority: PRIORITY.other, changeFreq: 'yearly' as const, date: DATES.seoRefresh },
@@ -44,6 +46,7 @@ const mainRoutes = [
 
 // Free tools (same English path for all locales — no path-segment translation)
 const toolRoutes = [
+  { path: '/tools',                 priority: PRIORITY.tools, changeFreq: 'monthly' as const },
   { path: '/tools/llm-calculator',  priority: PRIORITY.tools, changeFreq: 'monthly' as const },
   { path: '/tools/cost-estimator',  priority: PRIORITY.tools, changeFreq: 'monthly' as const },
   { path: '/tools/ai-readiness',    priority: PRIORITY.tools, changeFreq: 'monthly' as const },
@@ -156,6 +159,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   services.forEach(svc => {
     const slug = typeof svc.slug === 'string' ? svc.slug : null;
     if (!slug) return;
+    // Thin long-tail services are noindexed (see src/lib/service-quality.ts);
+    // a sitemap must not advertise noindexed URLs, so skip them entirely.
+    if (!isSubstantialService(svc as Parameters<typeof isSubstantialService>[0])) return;
     const lastMod = svc.updatedAt ? new Date(svc.updatedAt as string) : DATES.seoRefresh;
     const base = `/services/${slug}`;
     allLocales.forEach(locale => {
@@ -168,18 +174,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     });
   });
 
-  // 5. Blog posts (live from DB) — under all locales so Google picks the right
-  // one via hreflang. Blog slugs are locale-agnostic (the API resolves per locale).
+  // 5. Blog posts (live from DB). Each post exists in ONE language (no
+  // translation rows), so advertising every slug under all 5 locales created
+  // 5 duplicate URLs per post with bogus hreflang. List each post once, under
+  // /en (the URL resolves regardless of the post's language), no alternates.
   const blogPosts = await getBlogPostsForSitemap();
   blogPosts.forEach(({ slug, date }) => {
-    const englishPath = `/blog/${slug}`;
-    allLocales.forEach(locale => {
-      entries.push(entry(locale, englishPath, {
-        priority: PRIORITY.blogPost,
-        changeFreq: 'weekly',
-        date,
-      }));
-    });
+    entries.push(entry('en', `/blog/${slug}`, {
+      priority: PRIORITY.blogPost,
+      changeFreq: 'weekly',
+      date,
+      includeAlternates: false,
+    }));
   });
 
   return entries;
