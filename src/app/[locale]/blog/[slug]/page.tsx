@@ -15,8 +15,10 @@ interface PageProps {
 }
 
 async function getPost(slug: string, locale: string) {
-  const { getBlogPostBySlug } = await import('@/lib/admin/database/blog-queries');
-  return getBlogPostBySlug(slug, locale);
+  // Cached public query (1h, tag 'blog') — generateMetadata and the page body
+  // share one cache entry instead of two raw Neon reads per render.
+  const { getPublicBlogPostBySlug } = await import('@/lib/database/public-queries');
+  return getPublicBlogPostBySlug(slug, locale);
 }
 
 // Resolve the right locale's title/excerpt/content off the post.
@@ -88,7 +90,10 @@ export default async function BlogPostPage({ params }: PageProps) {
           />
         </>
       )}
-      <BlogPostView />
+      {/* Pass the already-fetched post down so the client view doesn't
+          re-fetch it through the API (previously a second, uncached DB read
+          per pageview). */}
+      <BlogPostView initialPost={post ? (JSON.parse(JSON.stringify(post)) as never) : null} />
     </>
   );
 }

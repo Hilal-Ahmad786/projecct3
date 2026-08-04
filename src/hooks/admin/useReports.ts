@@ -14,7 +14,7 @@ export function useRecentReports(type?: string) {
   const { data, error, isLoading, mutate } = useSWR(
     `/api/admin/reports/generate?${params.toString()}`,
     fetcher,
-    { refreshInterval: 30000, revalidateOnFocus: false }
+    { refreshInterval: 120000, revalidateOnFocus: false }
   );
   return {
     reports: data?.data?.data ?? [],
@@ -27,7 +27,7 @@ export function useScheduledReports() {
   const { data, error, isLoading, mutate } = useSWR(
     '/api/admin/reports/schedule',
     fetcher,
-    { refreshInterval: 30000, revalidateOnFocus: false }
+    { refreshInterval: 120000, revalidateOnFocus: false }
   );
   return {
     scheduledReports: data?.data ?? [],

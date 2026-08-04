@@ -47,8 +47,11 @@ async function getParentServiceData(parentSlug: string, locale?: string) {
 // spreads internal-link equity across the catalog instead of one fixed hub.
 async function getRelatedServices(category: string | null | undefined, currentSlug: string, locale: string): Promise<RelatedItem[]> {
   if (!category) return [];
-  const { getPublishedServices } = await import('@/lib/database/public-queries');
-  const all = (await getPublishedServices(locale)) as Array<Record<string, unknown>>;
+  // getServicesIndex returns only the card fields (slug/name/shortDescription/
+  // category/isParent) — NOT the full 268-row catalog with content + pricing,
+  // which was the site's single biggest Neon data-transfer cost.
+  const { getServicesIndex } = await import('@/lib/database/public-queries');
+  const all = (await getServicesIndex(locale)) as Array<Record<string, unknown>>;
   const siblings = all.filter(
     s => s.category === category && s.slug !== currentSlug && !s.isParent && typeof s.slug === 'string'
   );

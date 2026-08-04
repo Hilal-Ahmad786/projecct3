@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { revalidateTag } from 'next/cache';
 import { z } from 'zod';
 
 // Force dynamic rendering to avoid build-time Prisma issues
@@ -83,6 +84,8 @@ export async function PATCH(
       );
     }
 
+    revalidateTag('services');
+
     return NextResponse.json({ success: true, data: service });
   } catch (error) {
     console.error('Error updating service:', error);
@@ -111,6 +114,8 @@ export async function DELETE(
         { status: 404 }
       );
     }
+
+    revalidateTag('services');
 
     return NextResponse.json({ success: true, message: 'Service deleted successfully' });
   } catch (error) {

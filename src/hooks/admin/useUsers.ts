@@ -13,7 +13,7 @@ export function useAdminUsers() {
   const { data, error, isLoading, mutate } = useSWR(
     '/api/admin/users',
     fetcher,
-    { refreshInterval: 30000 }
+    { refreshInterval: 120000 }
   );
 
   return {

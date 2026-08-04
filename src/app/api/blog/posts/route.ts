@@ -3,7 +3,8 @@ import { NextRequest, NextResponse } from 'next/server';
 // GET /api/blog/posts - Get published blog posts for public view
 export async function GET(request: NextRequest) {
   try {
-    const { getPublishedBlogPosts } = await import('@/lib/admin/database/blog-queries');
+    // Cached wrapper (1h, tag 'blog') — the raw admin query hit Neon per request.
+    const { getPublicBlogPosts } = await import('@/lib/database/public-queries');
 
     const { searchParams } = new URL(request.url);
     const page = parseInt(searchParams.get('page') || '1');
@@ -12,7 +13,7 @@ export async function GET(request: NextRequest) {
     // Optional partition: 'general' (company blog) or a service slug.
     const category = searchParams.get('category') || undefined;
 
-    const result = await getPublishedBlogPosts(locale, { page, limit }, category);
+    const result = await getPublicBlogPosts(locale, page, limit, category);
 
     return NextResponse.json({
       success: true,

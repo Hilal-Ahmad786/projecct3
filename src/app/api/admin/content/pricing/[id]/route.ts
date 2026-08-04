@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { revalidateTag } from 'next/cache';
 
 export const dynamic = 'force-dynamic';
 
@@ -20,6 +21,9 @@ export async function PATCH(
     }
 
     const updatedPackage = await updatePricingPackage(id, body);
+
+    revalidateTag('pricing');
+    revalidateTag('services');
 
     return NextResponse.json({ success: true, data: updatedPackage });
   } catch (error) {
@@ -48,6 +52,9 @@ export async function DELETE(
     }
 
     await deletePricingPackage(id);
+
+    revalidateTag('pricing');
+    revalidateTag('services');
 
     return NextResponse.json({ success: true, data: { id } });
   } catch (error) {

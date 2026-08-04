@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { revalidateTag } from 'next/cache';
 import { z } from 'zod';
 
 export const dynamic = 'force-dynamic';
@@ -62,6 +63,8 @@ export async function POST(
     const { locale, ...data } = validation.data;
     const translation = await upsertServiceTranslation(id, locale, data);
 
+    revalidateTag('services');
+
     return NextResponse.json({ success: true, data: translation });
   } catch (error) {
     console.error('Error upserting service translation:', error);
@@ -92,6 +95,8 @@ export async function DELETE(
     }
 
     await deleteServiceTranslation(id, locale);
+
+    revalidateTag('services');
 
     return NextResponse.json({
       success: true,

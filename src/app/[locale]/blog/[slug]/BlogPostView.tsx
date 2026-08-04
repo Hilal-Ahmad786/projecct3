@@ -116,20 +116,24 @@ function calculateReadingTime(content: string): number {
   return Math.ceil(words / wordsPerMinute);
 }
 
-export default function BlogPostView() {
+export default function BlogPostView({ initialPost = null }: { initialPost?: BlogPost | null }) {
   const params = useParams();
   const locale = (params?.locale as string) || 'en';
   const slug = params?.slug as string;
   const isRTL = locale === 'ar' || locale === 'ur';
 
-  const [post, setPost] = useState<BlogPost | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [post, setPost] = useState<BlogPost | null>(initialPost);
+  const [loading, setLoading] = useState(!initialPost);
   const [error, setError] = useState(false);
 
   const t = (key: string) => pageTranslations[key]?.[locale] || pageTranslations[key]?.en || key;
   const getCategoryLabel = (category: string) => categoryLabels[category]?.[locale] || categoryLabels[category]?.en || category;
 
   useEffect(() => {
+    // The server page already fetched the post (cached) and passed it down —
+    // only fall back to the API when no server data was provided, so a normal
+    // pageview costs zero extra requests.
+    if (initialPost) return;
     const fetchPost = async () => {
       setLoading(true);
       setError(false);
@@ -152,7 +156,7 @@ export default function BlogPostView() {
     if (slug) {
       fetchPost();
     }
-  }, [slug, locale]);
+  }, [slug, locale, initialPost]);
 
   const getPostContent = () => {
     if (!post) return { title: '', content: '', excerpt: '' };

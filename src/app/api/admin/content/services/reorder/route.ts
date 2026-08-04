@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { revalidateTag } from 'next/cache';
 import { z } from 'zod';
 
 export const dynamic = 'force-dynamic';
@@ -25,6 +26,8 @@ export async function POST(request: NextRequest) {
     }
 
     await reorderServices(validation.data.orders);
+
+    revalidateTag('services');
 
     return NextResponse.json({ success: true, message: 'Services reordered successfully' });
   } catch (error) {

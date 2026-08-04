@@ -105,7 +105,7 @@ export function useProjects(options: UseProjectsOptions = {}) {
     fetcher,
     {
       revalidateOnFocus: false,
-      refreshInterval: 30000,
+      refreshInterval: 120000,
       dedupingInterval: 5000,
     }
   );

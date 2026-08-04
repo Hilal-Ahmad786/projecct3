@@ -163,7 +163,7 @@ export function useRealtimeAnalytics() {
     fetcher,
     {
       revalidateOnFocus: false,
-      refreshInterval: 5000, // Refresh every 5 seconds
+      refreshInterval: 60000, // 60s — was 5s: admin polling was a top Neon data-transfer cost
     }
   );
 

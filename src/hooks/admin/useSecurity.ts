@@ -12,7 +12,7 @@ export function useSecuritySummary() {
   const { data, error, isLoading, mutate } = useSWR(
     '/api/admin/security/summary',
     fetcher,
-    { refreshInterval: 30000, revalidateOnFocus: false }
+    { refreshInterval: 120000, revalidateOnFocus: false }
   );
   return {
     summary: data?.data ?? null,
@@ -24,7 +24,7 @@ export function useSecurityThreats(days: number = 30) {
   const { data, error, isLoading, mutate } = useSWR(
     `/api/admin/security/threats?days=${days}`,
     fetcher,
-    { refreshInterval: 30000, revalidateOnFocus: false }
+    { refreshInterval: 120000, revalidateOnFocus: false }
   );
   return {
     threats: data?.data ?? [],
@@ -36,7 +36,7 @@ export function useBlockedIPs() {
   const { data, error, isLoading, mutate } = useSWR(
     '/api/admin/security/blocked',
     fetcher,
-    { refreshInterval: 30000, revalidateOnFocus: false }
+    { refreshInterval: 120000, revalidateOnFocus: false }
   );
   return {
     blockedIPs: data?.data ?? [],

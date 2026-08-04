@@ -32,7 +32,7 @@ export function useNotifications(options: { page?: number; limit?: number; type?
   const { data, error, isLoading, mutate } = useSWR(
     `/api/admin/notifications?${params.toString()}`,
     fetcher,
-    { refreshInterval: 15000, revalidateOnFocus: false }
+    { refreshInterval: 120000, revalidateOnFocus: false }
   );
 
   return {

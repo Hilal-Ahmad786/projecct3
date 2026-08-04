@@ -55,11 +55,13 @@ const serviceSubPages = ['/features', '/process', '/technologies', '/pricing', '
 // Blog posts are pulled live from the DB inside sitemap() (see below).
 async function getBlogPostsForSitemap(): Promise<{ slug: string; date: Date }[]> {
   try {
-    const { getPublishedBlogPosts } = await import('@/lib/admin/database/blog-queries');
-    const res = await getPublishedBlogPosts('en', { page: 1, limit: 1000 });
-    return (res.data || [])
+    // Cached, slug+dates-only query — the old path pulled every post's full
+    // markdown content and all translations, uncached, on each regeneration.
+    const { getBlogSlugsForSitemap } = await import('@/lib/database/public-queries');
+    const posts = await getBlogSlugsForSitemap();
+    return posts
       .filter((p: { slug?: string }) => !!p.slug)
-      .map((p: { slug: string; publishedAt?: Date | string; updatedAt?: Date | string }) => ({
+      .map((p: { slug: string; publishedAt?: Date | string | null; updatedAt?: Date | string }) => ({
         slug: p.slug,
         date: new Date(p.publishedAt || p.updatedAt || DATES.seoRefresh),
       }));

@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { revalidateTag } from 'next/cache';
 import { z } from 'zod';
 
 export const dynamic = 'force-dynamic';
@@ -104,6 +105,8 @@ export async function POST(request: NextRequest) {
         });
       }
     }
+
+    revalidateTag('blog');
 
     return NextResponse.json(
       { success: true, data: post },

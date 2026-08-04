@@ -1434,11 +1434,12 @@ export async function getActiveVisitors() {
   const fiveMinutesAgo = new Date();
   fiveMinutesAgo.setMinutes(fiveMinutesAgo.getMinutes() - 5);
 
+  // COUNT(DISTINCT) in SQL — the previous groupBy(sessionId) transferred one
+  // row per distinct session just to count them client-side.
   const [activeSessions, activePages] = await Promise.all([
-    getPrismaClient().analyticsEvent.groupBy({
-      by: ['sessionId'],
-      where: { createdAt: { gte: fiveMinutesAgo } },
-    }),
+    getPrismaClient().$queryRaw<[{ count: number }]>`
+      SELECT COUNT(DISTINCT "sessionId")::int AS count
+      FROM "AnalyticsEvent" WHERE "createdAt" >= ${fiveMinutesAgo}`,
     getPrismaClient().analyticsEvent.groupBy({
       by: ['page'],
       where: { eventType: 'pageview', createdAt: { gte: fiveMinutesAgo } },
@@ -1449,7 +1450,7 @@ export async function getActiveVisitors() {
   ]);
 
   return {
-    activeVisitors: activeSessions.length,
+    activeVisitors: activeSessions[0]?.count ?? 0,
     activePages: activePages.map(p => ({ page: p.page, visitors: p._count })),
   };
 }
@@ -1536,7 +1537,24 @@ export async function trackAnalyticsEvent(data: {
   country?: string;
   city?: string;
 }) {
-  return getPrismaClient().analyticsEvent.create({ data });
+  // select only the id — the default create() echoes the full inserted row
+  // (all 13 columns incl. metadata) back over the wire on every event, which
+  // is pure wasted Neon egress for fire-and-forget tracking.
+  return getPrismaClient().analyticsEvent.create({ data, select: { id: true } });
+}
+
+/** Batch insert for tracking events (heatmap click batches). One round-trip,
+ *  no rows echoed back — vs. one INSERT..RETURNING per point previously. */
+export async function trackAnalyticsEvents(events: Array<{
+  sessionId: string;
+  eventType: string;
+  eventName?: string;
+  page: string;
+  metadata?: Record<string, string | number | boolean | null>;
+  device?: string;
+}>) {
+  if (!events.length) return { count: 0 };
+  return getPrismaClient().analyticsEvent.createMany({ data: events });
 }
 
 // ── Click heatmap ────────────────────────────────────────────────────
@@ -1623,11 +1641,12 @@ export async function getVisitorStats(startDate: Date | number = 30, endDate?: D
     (startDate as Date).setDate((startDate as Date).getDate() - days);
   }
 
+  // COUNT(DISTINCT) in SQL — the previous groupBy(sessionId) over a 30-day
+  // window transferred thousands of rows per call just to count them.
   const [uniqueVisitors, totalPageViews, topReferrers] = await Promise.all([
-    getPrismaClient().analyticsEvent.groupBy({
-      by: ['sessionId'],
-      where: { createdAt: { gte: startDate } },
-    }),
+    getPrismaClient().$queryRaw<[{ count: number }]>`
+      SELECT COUNT(DISTINCT "sessionId")::int AS count
+      FROM "AnalyticsEvent" WHERE "createdAt" >= ${startDate as Date}`,
     getPrismaClient().analyticsEvent.count({
       where: { eventType: 'pageview', createdAt: { gte: startDate } },
     }),
@@ -1644,7 +1663,7 @@ export async function getVisitorStats(startDate: Date | number = 30, endDate?: D
   ]);
 
   return {
-    uniqueVisitors: uniqueVisitors.length,
+    uniqueVisitors: uniqueVisitors[0]?.count ?? 0,
     totalPageViews,
     topReferrers: topReferrers.map((r) => ({
       referrer: r.referrer,

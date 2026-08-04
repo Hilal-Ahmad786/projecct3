@@ -98,7 +98,7 @@ export function useServices(options: UseServicesOptions = {}) {
     fetcher,
     {
       revalidateOnFocus: false,
-      refreshInterval: 30000,
+      refreshInterval: 120000,
       dedupingInterval: 5000,
     }
   );

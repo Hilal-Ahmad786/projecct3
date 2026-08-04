@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { revalidateTag } from 'next/cache';
 
 export const dynamic = 'force-dynamic';
 
@@ -11,6 +12,9 @@ export async function POST(
 
     const { id } = await params;
     const duplicated = await duplicatePricingPackage(id);
+
+    revalidateTag('pricing');
+    revalidateTag('services');
 
     return NextResponse.json({ success: true, data: duplicated }, { status: 201 });
   } catch (error) {

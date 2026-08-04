@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { revalidateTag } from 'next/cache';
 import { z } from 'zod';
 
 export const dynamic = 'force-dynamic';
@@ -86,6 +87,8 @@ export async function PATCH(
       );
     }
 
+    revalidateTag('projects');
+
     return NextResponse.json({ success: true, data: project });
   } catch (error) {
     console.error('Error updating project:', error);
@@ -106,6 +109,8 @@ export async function DELETE(
 
     const { id } = await params;
     await deleteProject(id);
+
+    revalidateTag('projects');
 
     return NextResponse.json({
       success: true,

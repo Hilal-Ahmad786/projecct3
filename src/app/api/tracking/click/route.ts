@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
     const points = Array.isArray(body?.points) ? body.points : [];
     if (!page || points.length === 0) return NextResponse.json({ success: true });
 
-    const { trackAnalyticsEvent } = await import('@/lib/admin/database/queries');
+    const { trackAnalyticsEvents } = await import('@/lib/admin/database/queries');
     const sessionId = (typeof body?.sessionId === 'string' && body.sessionId) || `anon-${Date.now()}`;
     const device = typeof body?.device === 'string' ? body.device : undefined;
     const vw = Number.isFinite(body?.vw) ? body.vw : null;
@@ -24,17 +24,18 @@ export async function POST(request: NextRequest) {
         !!p && typeof (p as { xpct?: unknown }).xpct === 'number' && typeof (p as { ypct?: unknown }).ypct === 'number')
       .slice(0, MAX_POINTS);
 
-    await Promise.all(
-      clean.map(p =>
-        trackAnalyticsEvent({
-          sessionId,
-          eventType: 'click',
-          eventName: 'heatmap_click',
-          page,
-          metadata: { xpct: p.xpct, ypct: p.ypct, vw, tag: p.tag || null },
-          device,
-        })
-      )
+    // Single createMany round-trip (nothing echoed back) instead of one
+    // INSERT..RETURNING per point — the per-point path was a major share of
+    // the Neon data-transfer quota at ~50 rows per flush.
+    await trackAnalyticsEvents(
+      clean.map((p: { xpct: number; ypct: number; tag?: string }) => ({
+        sessionId,
+        eventType: 'click',
+        eventName: 'heatmap_click',
+        page,
+        metadata: { xpct: p.xpct, ypct: p.ypct, vw, tag: p.tag || null },
+        device,
+      }))
     );
 
     return NextResponse.json({ success: true });

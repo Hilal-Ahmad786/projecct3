@@ -65,7 +65,7 @@ export function usePricingPackages(serviceId?: string) {
     fetcher,
     {
       revalidateOnFocus: false,
-      refreshInterval: 30000,
+      refreshInterval: 120000,
       dedupingInterval: 5000,
     }
   );

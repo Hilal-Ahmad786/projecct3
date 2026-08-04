@@ -60,7 +60,7 @@ export function useDashboard() {
     fetcher,
     {
       revalidateOnFocus: true,
-      refreshInterval: 30000, // Refresh every 30 seconds
+      refreshInterval: 120000, // 2min — was 30s: admin polling was a top Neon data-transfer cost
       dedupingInterval: 10000,
     }
   );

@@ -15,7 +15,7 @@ export function useTrafficLive() {
   const { data, error, isLoading, mutate } = useSWR(
     '/api/admin/traffic/live',
     fetcher,
-    { refreshInterval: 5000, revalidateOnFocus: false }
+    { refreshInterval: 60000, revalidateOnFocus: false }
   );
   return {
     activeVisitors: data?.data?.activeVisitors ?? 0,
@@ -28,7 +28,7 @@ export function useTrafficSources(period: string = '7d') {
   const { data, error, isLoading, mutate } = useSWR(
     `/api/admin/traffic/sources?period=${period}`,
     fetcher,
-    { refreshInterval: 30000, revalidateOnFocus: false }
+    { refreshInterval: 120000, revalidateOnFocus: false }
   );
   return {
     sources: data?.data ?? [],
@@ -40,7 +40,7 @@ export function useTrafficGeographic(period: string = '7d') {
   const { data, error, isLoading, mutate } = useSWR(
     `/api/admin/traffic/geographic?period=${period}`,
     fetcher,
-    { refreshInterval: 30000, revalidateOnFocus: false }
+    { refreshInterval: 120000, revalidateOnFocus: false }
   );
   return {
     countries: data?.data ?? [],
@@ -52,7 +52,7 @@ export function useTrafficDevices(period: string = '7d') {
   const { data, error, isLoading, mutate } = useSWR(
     `/api/admin/traffic/devices?period=${period}`,
     fetcher,
-    { refreshInterval: 30000, revalidateOnFocus: false }
+    { refreshInterval: 120000, revalidateOnFocus: false }
   );
   return {
     devices: data?.data?.devices ?? [],
