@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
+import Image from 'next/image';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 import LocalizedLink from '@/components/LocalizedLink';
 import SplitHeading from '@/components/SplitHeading';
@@ -133,8 +134,13 @@ export default function ServiceBlogFeed({ category, placeholderPosts, viewAllHre
                 {/* Cover */}
                 <div className={`relative h-52 md:h-64 overflow-hidden bg-gradient-to-br ${(featured as PlaceholderPost).gradient ?? GRADIENTS[0]}`}>
                   {isLive(featured) && featured.coverImage ? (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img src={featured.coverImage} alt={featured.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <Image
+                      src={featured.coverImage}
+                      alt={featured.title}
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 640px"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
                   ) : (
                     <motion.div
                       className="absolute inset-0 flex items-center justify-center"
@@ -185,8 +191,13 @@ export default function ServiceBlogFeed({ category, placeholderPosts, viewAllHre
                   {/* Thumbnail */}
                   <div className={`w-20 h-20 rounded-xl flex-shrink-0 overflow-hidden bg-gradient-to-br ${(post as PlaceholderPost).gradient ?? GRADIENTS[(i + 1) % GRADIENTS.length]}`}>
                     {isLive(post) && post.coverImage ? (
-                      // eslint-disable-next-line @next/next/no-img-element
-                      <img src={post.coverImage} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                      <Image
+                        src={post.coverImage}
+                        alt={post.title}
+                        width={80}
+                        height={80}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
                     ) : null}
                   </div>
                   {/* Text */}

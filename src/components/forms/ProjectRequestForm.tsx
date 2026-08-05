@@ -8,7 +8,11 @@ import { z } from 'zod';
 import Button from '@/components/Button';
 import ReCaptcha, { useReCaptcha } from '@/components/ReCaptcha';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
-import FileUpload from './FileUpload';
+// NOTE: the file-upload UI was removed 2026-08 — it only SIMULATED uploads
+// (blob: URLs, nothing stored; the API stripped `attachments` anyway), so
+// prospects believed they'd sent documents that went nowhere. Re-add via
+// Vercel Blob (BLOB_READ_WRITE_TOKEN exists in env) when real storage is
+// wired end-to-end: see src/components/forms/FileUpload.tsx.
 import BudgetCalculator, { BudgetEstimate } from './BudgetCalculator';
 import { trackContactFormConversion, trackQuoteConversion } from '@/lib/analytics';
 
@@ -123,17 +127,6 @@ const SERVICE_LABELS: { value: string; labels: Record<string, string> }[] = [
   { value: 'other', labels: { en: 'Other', tr: 'Diğer', de: 'Sonstiges', ur: 'دیگر', ar: 'أخرى' } },
 ];
 
-interface UploadedFile {
-  id: string;
-  name: string;
-  size: number;
-  type: string;
-  url?: string;
-  status: 'uploading' | 'complete' | 'error';
-  progress: number;
-  error?: string;
-}
-
 export default function ProjectRequestForm({
   prefilledService,
   onSuccess,
@@ -143,7 +136,6 @@ export default function ProjectRequestForm({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [submitSuccess, setSubmitSuccess] = useState(false);
-  const [uploadedFiles, setUploadedFiles] = useState<UploadedFile[]>([]);
   const [budgetEstimate, setBudgetEstimate] = useState<BudgetEstimate | null>(null);
   const [hasDraft, setHasDraft] = useState(false);
 
@@ -293,12 +285,6 @@ export default function ProjectRequestForm({
       const submitData = {
         ...data,
         ...(captchaToken ? { captchaToken } : {}),
-        attachments: uploadedFiles.filter(f => f.status === 'complete').map(f => ({
-          name: f.name,
-          url: f.url,
-          type: f.type,
-          size: f.size,
-        })),
         budgetEstimate: budgetEstimate ? {
           min: budgetEstimate.minBudget,
           max: budgetEstimate.maxBudget,
@@ -488,8 +474,6 @@ export default function ProjectRequestForm({
                 errors={errors}
                 dir={dir}
                 t={t}
-                uploadedFiles={uploadedFiles}
-                onFilesChange={setUploadedFiles}
               />
             )}
             {currentStep === 5 && (
@@ -699,11 +683,9 @@ function Step3ProjectDetails({ register, errors, dir, t }: StepProps) {
 }
 
 interface Step4Props extends StepProps {
-  uploadedFiles: UploadedFile[];
-  onFilesChange: (files: UploadedFile[]) => void;
 }
 
-function Step4TechRequirements({ register, errors, dir, t, uploadedFiles, onFilesChange }: Step4Props) {
+function Step4TechRequirements({ register, errors, dir, t }: Step4Props) {
   return (
     <div className="space-y-6">
       <FormField label={t('fields.techPreferences')} error={errors.techPreferences?.message}>
@@ -736,16 +718,6 @@ function Step4TechRequirements({ register, errors, dir, t, uploadedFiles, onFile
         />
       </FormField>
 
-      {/* File Upload Section */}
-      <div className="pt-4 border-t border-gray-200">
-        <FileUpload
-          onFilesChange={onFilesChange}
-          maxFiles={5}
-          maxSizeMB={10}
-          label={t('fields.attachments') || 'Project Attachments (Optional)'}
-          hint={t('hints.attachments') || 'Upload RFP documents, mockups, wireframes, or reference materials'}
-        />
-      </div>
     </div>
   );
 }

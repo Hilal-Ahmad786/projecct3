@@ -553,7 +553,7 @@ export const getBlogSlugsForSitemap = unstable_cache(
     try {
       return await getPrismaClient().blogPost.findMany({
         where: { status: 'PUBLISHED', publishedAt: { lte: new Date() } },
-        select: { slug: true, publishedAt: true, updatedAt: true },
+        select: { slug: true, publishedAt: true, updatedAt: true, language: true },
         orderBy: { publishedAt: 'desc' },
         take: 1000,
       });

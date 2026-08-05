@@ -2,15 +2,23 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import SectionHeader from '@/components/SectionHeader';
 import Button from '@/components/Button';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
+
+// Hidden 2026-08: the featured case study's metrics (300% etc.) and story are
+// placeholder content, not a verifiable client result. Replace the
+// projects.caseStudy locale content with a REAL client project (the Projects
+// table has 12) and set this to true.
+const SHOW_CASE_STUDY = false;
 
 export default function FeaturedCaseStudySection() {
   const { dir, isLoading } = useTranslations();
   const t = useSectionTranslations('projects.caseStudy');
   const tStats = useSectionTranslations('stats');
   const tCommon = useSectionTranslations('common');
+  if (!SHOW_CASE_STUDY) return null;
 
   // Show loading state if translations are not ready
   if (isLoading) {
@@ -175,11 +183,13 @@ export default function FeaturedCaseStudySection() {
           >
             {/* Main Image */}
             <div className="relative">
-              <img
+              <Image
                 src="/images/Demo/ShopifyBot.png"
-                alt={t('title')}
-                className="w-full rounded-sm shadow-lg"
-                loading="lazy"
+                alt={(t('title') as string) || ''}
+                width={2880}
+                height={1392}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="w-full h-auto rounded-sm shadow-lg"
               />
               
               {/* Floating Metrics */}

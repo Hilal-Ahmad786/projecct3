@@ -2,6 +2,7 @@
 'use client'
 
 import { motion, useReducedMotion } from 'framer-motion'
+import Image from 'next/image'
 import SectionHeader from '@/components/SectionHeader'
 import Button from '@/components/Button'
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations'
@@ -94,16 +95,22 @@ export default function DemoSection() {
                 transition: { duration: 0.3 },
               }}
             >
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover"
-                />
+              <div className="relative h-48 overflow-hidden bg-gray-100">
+                {item.image ? (
+                  <Image
+                    src={item.image}
+                    alt={item.title || ''}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover"
+                  />
+                ) : null}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 text-white">
                   <h3 className="text-lg font-semibold">{item.title}</h3>
-                  {item.result && <p className="text-sm opacity-90">{item.result}</p>}
+                  {/* result claims removed 2026-08 — the demo items are
+                      showcases, and metrics like "300% sales increase" were
+                      invented, not measured client outcomes. */}
                 </div>
               </div>
               <div className="p-6 flex-grow flex flex-col justify-between">

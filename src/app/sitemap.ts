@@ -56,7 +56,7 @@ const toolRoutes = [
 const serviceSubPages = ['/features', '/process', '/technologies', '/pricing', '/faq'];
 
 // Blog posts are pulled live from the DB inside sitemap() (see below).
-async function getBlogPostsForSitemap(): Promise<{ slug: string; date: Date }[]> {
+async function getBlogPostsForSitemap(): Promise<{ slug: string; date: Date; language: string }[]> {
   try {
     // Cached, slug+dates-only query — the old path pulled every post's full
     // markdown content and all translations, uncached, on each regeneration.
@@ -64,9 +64,10 @@ async function getBlogPostsForSitemap(): Promise<{ slug: string; date: Date }[]>
     const posts = await getBlogSlugsForSitemap();
     return posts
       .filter((p: { slug?: string }) => !!p.slug)
-      .map((p: { slug: string; publishedAt?: Date | string | null; updatedAt?: Date | string }) => ({
+      .map((p: { slug: string; publishedAt?: Date | string | null; updatedAt?: Date | string; language?: string }) => ({
         slug: p.slug,
         date: new Date(p.publishedAt || p.updatedAt || DATES.seoRefresh),
+        language: p.language || 'en',
       }));
   } catch {
     return [];
@@ -174,13 +175,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     });
   });
 
-  // 5. Blog posts (live from DB). Each post exists in ONE language (no
-  // translation rows), so advertising every slug under all 5 locales created
-  // 5 duplicate URLs per post with bogus hreflang. List each post once, under
-  // /en (the URL resolves regardless of the post's language), no alternates.
+  // 5. Blog posts (live from DB). Each post exists in ONE language
+  // (BlogPost.language), so list it once under its own locale — advertising
+  // every slug under all 5 locales created duplicate URLs with bogus hreflang.
   const blogPosts = await getBlogPostsForSitemap();
-  blogPosts.forEach(({ slug, date }) => {
-    entries.push(entry('en', `/blog/${slug}`, {
+  blogPosts.forEach(({ slug, date, language }) => {
+    const loc = (allLocales as string[]).includes(language) ? (language as Locale) : 'en';
+    entries.push(entry(loc, `/blog/${slug}`, {
       priority: PRIORITY.blogPost,
       changeFreq: 'weekly',
       date,

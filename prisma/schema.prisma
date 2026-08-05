@@ -260,6 +260,9 @@ model BlogPost {
   id            String          @id @default(cuid())
   slug          String          @unique
   authorId      String?
+  // Language the base row is written in (posts are seeded single-language:
+  // en/tr/de/ar/ur). Drives per-locale canonicals + sitemap placement.
+  language      String          @default("en")
 
   // Default content (English)
   title         String

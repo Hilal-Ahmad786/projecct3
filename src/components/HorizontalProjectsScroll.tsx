@@ -9,6 +9,7 @@ import { initGSAP } from '@/lib/gsap';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 import { Locale } from '@/lib/i18n';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface ProjectTranslation {
   locale: string;
@@ -268,12 +269,13 @@ function ProjectCard({
       {/* Thumbnail */}
       <div className="relative flex-shrink-0 overflow-hidden bg-gray-100" style={{ height: '48%' }}>
         {project.thumbnail && !imgError ? (
-          <img
+          <Image
             src={project.thumbnail}
             alt={localizedName}
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            fill
+            sizes="(max-width: 768px) 100vw, 400px"
+            className="object-cover transition-transform duration-700 group-hover:scale-105"
             onError={() => setImgError(true)}
-            loading="lazy"
           />
         ) : (
           <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">

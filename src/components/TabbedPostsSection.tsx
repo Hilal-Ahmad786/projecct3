@@ -3,6 +3,7 @@
 
 import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import SectionHeader from '@/components/SectionHeader';
 import Button from '@/components/Button';
 import { CalendarIcon, EyeIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
@@ -297,11 +298,13 @@ export default function TabbedPostsSection() {
               className="card group"
             >
               {/* Post Image */}
-              <div className="relative mb-6 overflow-hidden rounded-sm bg-gray-100">
-                <img
+              <div className="relative mb-6 h-48 overflow-hidden rounded-sm bg-gray-100">
+                <Image
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>

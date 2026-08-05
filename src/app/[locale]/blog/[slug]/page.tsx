@@ -43,10 +43,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const description = (l.metaDescription || l.excerpt || `${l.title} — insights from the PakSoft team.`).slice(0, 200);
   const url = `${baseUrl}/${validLocale}/blog/${slug}`;
 
+  // Posts are single-language (BlogPost.language). When this URL's locale
+  // doesn't match the post's language and no translation row exists, the page
+  // serves the source-language content — canonicalize those duplicates to the
+  // source-language URL so only one version competes in search.
+  const postLanguage = (post as { language?: string }).language || 'en';
+  const hasTranslation =
+    validLocale === postLanguage ||
+    ((post as { translations?: { locale: string }[] }).translations || []).some(t => t.locale === validLocale);
+  const canonical = hasTranslation ? url : `${baseUrl}/${postLanguage}/blog/${slug}`;
+
   return {
     title,
     description,
-    alternates: { canonical: url },
+    alternates: { canonical },
     openGraph: {
       title,
       description,

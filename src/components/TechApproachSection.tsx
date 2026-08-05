@@ -2,6 +2,7 @@
 'use client';
 
 import { motion, Variants } from 'framer-motion';
+import Image from 'next/image';
 import SectionHeader from '@/components/SectionHeader';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
@@ -126,9 +127,11 @@ export default function TechApproachSection() {
                   className="group text-center"
                 >
                   <div className="w-16 h-16 bg-gray-50 border border-gray-200 rounded-sm mx-auto mb-3 flex items-center justify-center group-hover:bg-gray-100 transition-colors">
-                    <img
+                    <Image
                       src={tech.logo}
                       alt={tech.name}
+                      width={32}
+                      height={32}
                       className="w-8 h-8 object-contain"
                     />
                   </div>
