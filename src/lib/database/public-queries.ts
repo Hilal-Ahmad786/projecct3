@@ -519,9 +519,20 @@ export const getPublicBlogPosts = unstable_cache(
       if (category === 'general') {
         const services = await getServicesIndex();
         const serviceSlugs = services.map((s: { slug: string }) => s.slug);
-        return await getPublishedBlogPosts(locale, { page, limit }, undefined, serviceSlugs);
+        const result = await getPublishedBlogPosts(locale, { page, limit }, undefined, serviceSlugs);
+        // Locales with no posts in their language yet (e.g. ur) fall back to
+        // the English listing rather than an empty "no posts" page. The post
+        // pages themselves canonicalize to the source-language URL.
+        if (result.total === 0 && locale !== 'en') {
+          return await getPublishedBlogPosts('en', { page, limit }, undefined, serviceSlugs);
+        }
+        return result;
       }
-      return await getPublishedBlogPosts(locale, { page, limit }, category);
+      const result = await getPublishedBlogPosts(locale, { page, limit }, category);
+      if (result.total === 0 && locale !== 'en') {
+        return await getPublishedBlogPosts('en', { page, limit }, category);
+      }
+      return result;
     } catch (err) {
       dbError('getPublicBlogPosts', err);
       return { data: [], total: 0, page, limit, totalPages: 0 };

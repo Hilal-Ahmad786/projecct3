@@ -297,11 +297,20 @@ export async function getPublishedBlogPosts(
   // excludeCategories lets the company blog show every post EXCEPT the
   // per-service ones (posts are seeded with topical categories like 'ai'
   // or 'marketing', so an exact category='general' match returns nothing).
+  //
+  // Language filter: posts are single-language rows (BlogPost.language), so a
+  // locale's listing must only surface posts written in that language or
+  // carrying a translation for it — without this, Arabic posts appeared on
+  // the Turkish blog (and everywhere else).
   const where = {
     status: 'PUBLISHED' as BlogStatus,
     publishedAt: { lte: new Date() },
     ...(category ? { category } : {}),
     ...(excludeCategories?.length ? { category: { notIn: excludeCategories } } : {}),
+    OR: [
+      { language: locale },
+      { translations: { some: { locale } } },
+    ],
   };
 
   const [posts, total] = await Promise.all([
