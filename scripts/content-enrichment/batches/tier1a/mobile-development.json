@@ -1,0 +1,228 @@
+{
+  "slug": "mobile-development",
+  "en": {
+    "name": "Mobile App Development",
+    "shortDescription": "Native iOS and Android apps, or a single cross-platform codebase in React Native or Flutter, complete with the backend, payment and notification integrations, and store submission work a real launch demands.",
+    "fullDescription": "Mobile is where most of your customers already are, and a browser tab cannot send them a push notification. We build apps two ways: cross-platform with React Native or Flutter when one codebase should serve both stores, and fully native with Swift or Kotlin when the product depends on device performance, hardware access, or platform-specific behaviour. Either route includes the parts that decide whether an app succeeds — a real backend, secure authentication, offline handling, payment and notification integrations, and analytics that show what people actually do. We also prepare and manage App Store and Google Play submissions, respond to reviewer feedback, and stay on afterwards for the annual OS releases, SDK deprecations, and iteration every live app requires.",
+    "features": [
+      "Cross-Platform Development with React Native & Flutter",
+      "Native iOS (Swift) and Android (Kotlin) Engineering",
+      "API & Backend Development (Node.js, TypeScript, PostgreSQL)",
+      "Offline-First Storage and Background Data Sync",
+      "Push Notifications & In-App Messaging",
+      "In-App Purchases and Payment Gateway Integration",
+      "App Store & Google Play Submission and Release Management",
+      "Analytics, Crash Reporting and Over-the-Air Updates"
+    ],
+    "benefits": [
+      "One codebase reaching users on both iOS and Android",
+      "A direct channel to your customers that no ad platform sits in front of",
+      "Faster fixes through over-the-air updates and staged rollouts",
+      "Real visibility into activation, retention and crashes from day one",
+      "Full ownership of your source code, store accounts and user data",
+      "A backend that scales with the app instead of being rebuilt after launch"
+    ],
+    "metaTitle": "Mobile App Development — iOS & Android | PakSoft",
+    "metaDescription": "Native iOS and Android apps or one cross-platform React Native codebase — backend, payments, analytics and store launch included. Book a free app scoping call.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Discovery & Scope", "description": "We start from the job the app has to do — who opens it, how often, and what has to happen when they do. That produces a ranked feature list split into a first release and a backlog, so budget goes to the screens users touch on day one." },
+        { "step": 2, "title": "UX Flows & Interface Design", "description": "Core journeys are mapped as clickable screens before any production code exists, following iOS and Android interaction conventions rather than fighting them. You review the flows on a real device, which is where expensive misunderstandings surface cheaply." },
+        { "step": 3, "title": "Architecture & Backend", "description": "We commit to native or cross-platform based on your actual requirements, then design the API, data model and authentication behind the app. Offline behaviour, sync rules and third-party integrations are decided here instead of being patched in later." },
+        { "step": 4, "title": "Sprint Development & Test Builds", "description": "Features ship to TestFlight and Google Play internal testing as they are finished, so you use the app on your own phone while it is being built. Every sprint closes with a working build, a changelog and a short review call." },
+        { "step": 5, "title": "Store Submission & Launch", "description": "We prepare listings, screenshots, privacy declarations and signed release builds, then manage the review process and answer any rejection. Releases go out in stages so a problem reaches a small group first rather than your whole user base." },
+        { "step": 6, "title": "Support & Iteration", "description": "After launch we monitor crashes, performance and real usage, and turn that into a prioritised improvement queue. We also handle the unavoidable maintenance: annual OS releases, SDK deprecations and store policy changes." }
+      ],
+      "faq": [
+        { "question": "Should we build cross-platform or fully native?", "answer": "Cross-platform with React Native or Flutter is the right default for most business apps: one codebase, one team, and near-identical behaviour on both stores. We recommend native Swift or Kotlin when the product leans hard on device hardware, heavy graphics, sustained background processing, or the newest OS features on release day." },
+        { "question": "How long does a mobile app take to build?", "answer": "A focused first version with authentication, a handful of core journeys and a working backend is a matter of months rather than weeks. The timeline is driven by how many distinct user roles and screens exist and how much of your backend already works, so we give a phased schedule after scoping rather than a number over the phone." },
+        { "question": "Will Apple and Google approve our app?", "answer": "We build against the current App Store Review Guidelines and Google Play policies and prepare the privacy labels, data safety form and account deletion route reviewers look for. Rejections still happen, usually over metadata or permission usage; handling the response and resubmission is part of the launch, not an extra." },
+        { "question": "Do we need a backend, or can the app work on its own?", "answer": "Anything involving accounts, payments, content you update, or data shared between devices needs a backend. We build them with Node.js, TypeScript and PostgreSQL, or connect the app to the systems you already run through their APIs so your data stays in one place." },
+        { "question": "What does ongoing maintenance actually involve?", "answer": "iOS and Android ship major releases every year, SDKs are deprecated, and store policies change — an unmaintained app eventually stops being installable. A maintenance agreement covers OS compatibility, dependency and security updates, crash monitoring, and the store resubmissions those changes require." },
+        { "question": "What drives the cost of a mobile app?", "answer": "The number of distinct screens and user roles, backend complexity, third-party integrations such as payments or logistics, and whether you need one platform or both. Design polish and offline support are real engineering work, so we scope them explicitly instead of burying them in a single number." },
+        { "question": "Who owns the code and the store accounts?", "answer": "You do. The app is published under your own Apple Developer and Google Play accounts, and the source code lives in a repository you own from the first commit. Nothing in the build locks you into working with us afterwards." },
+        { "question": "Can we update the app without waiting for store review?", "answer": "Content, configuration and much of the JavaScript layer in a React Native app can be updated over the air, so copy fixes and small changes reach users in hours. Native code changes and anything that materially alters functionality still go through normal store review." },
+        { "question": "Can you take over an app someone else built?", "answer": "Yes, and it is common work. We start with an audit of the codebase, dependencies and store accounts, then give you an honest assessment of whether to continue, refactor or rebuild — we do not insist on a rewrite to get involved." }
+      ],
+      "technologies": [
+        { "name": "React Native", "icon": "react" },
+        { "name": "Expo", "icon": "expo" },
+        { "name": "Flutter", "icon": "flutter" },
+        { "name": "Swift (iOS)", "icon": "swift" },
+        { "name": "Kotlin (Android)", "icon": "kotlin" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Firebase", "icon": "firebase" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Mobil Uygulama Geliştirme",
+    "shortDescription": "iOS ve Android için native uygulamalar ya da React Native ile tek kod tabanı: tasarım, backend, ödeme ve bildirim entegrasyonları, mağaza yayın süreci ve yayın sonrası bakım dâhil uçtan uca geliştirme.",
+    "fullDescription": "Türkiye'de internet trafiğinin büyük bölümü mobilden geliyor; müşteriniz gün içinde telefonunu onlarca kez açıyor, tarayıcı sekmenizi ise nadiren. Mobil uygulama bu yüzden prestij işi değil, doğrudan bir satış ve sadakat kanalı. İki yolla geliştiriyoruz: tek kod tabanıyla hem App Store hem Google Play'de olmak isteyen işletmeler için React Native veya Flutter, cihaz donanımına ve performansa dayanan ürünler için Swift ve Kotlin ile native geliştirme. Her iki durumda da işin görünmeyen kısmını biz üstleniyoruz — API ve veritabanı, güvenli üyelik, çevrimdışı çalışma, push bildirim, yerel ödeme altyapıları ve analitik. Mağaza yayın süreçlerini, red gelirse itiraz ve düzeltmeleri, yayın sonrası çöküş takibini ve yıllık iOS ile Android güncellemelerine uyumu da biz yönetiyoruz.",
+    "features": [
+      "React Native ve Flutter ile Çapraz Platform Geliştirme",
+      "Swift (iOS) ve Kotlin (Android) ile Native Geliştirme",
+      "API ve Backend Geliştirme (Node.js, TypeScript, PostgreSQL)",
+      "Çevrimdışı Çalışma ve Arka Planda Veri Senkronizasyonu",
+      "Push Bildirim ve Uygulama İçi Mesajlaşma",
+      "Yerel Ödeme Altyapıları ve Uygulama İçi Satın Alma Entegrasyonu",
+      "App Store ve Google Play Yayın Süreçlerinin Yönetimi",
+      "Analitik, Çökme Takibi ve OTA (Anlık) Güncellemeler"
+    ],
+    "benefits": [
+      "Tek kod tabanıyla hem iOS hem Android kullanıcısına ulaşma",
+      "Reklam platformlarına bağımlı olmayan, doğrudan müşteri kanalı",
+      "OTA güncellemeler ve kademeli yayınla saatler içinde düzeltme imkânı",
+      "İlk günden itibaren kurulum, kullanım ve çökme verilerine hâkim olma",
+      "Kaynak kodun, mağaza hesaplarının ve kullanıcı verisinin tamamen sizde kalması",
+      "Yayın sonrası baştan yazılmayan, büyümeyle birlikte ölçeklenen bir backend"
+    ],
+    "metaTitle": "Mobil Uygulama Geliştirme — iOS & Android | PakSoft",
+    "metaDescription": "iOS ve Android mobil uygulama geliştirme: React Native, Flutter, native kod, backend, ödeme entegrasyonu ve mağaza yayını. Ücretsiz proje görüşmesi için yazın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Keşif ve Kapsam", "description": "Uygulamanın hangi işi çözeceğiyle başlıyoruz: kim açacak, ne sıklıkta açacak ve açtığında ne olmalı. Çıkan özellik listesini önceliklendirip ilk sürüm ve sonraki sürümler diye ayırıyoruz; böylece bütçe kullanıcının ilk gün dokunduğu ekranlara gidiyor." },
+        { "step": 2, "title": "Akış ve Arayüz Tasarımı", "description": "Ana kullanıcı akışlarını kod yazılmadan önce tıklanabilir ekranlar hâlinde kuruyoruz ve iOS ile Android'in kendi alışkanlıklarına uyuyoruz. Tasarımı gerçek bir telefonda inceliyorsunuz; pahalı yanlış anlaşılmalar en ucuz olduğu noktada burada ortaya çıkıyor." },
+        { "step": 3, "title": "Mimari ve Backend", "description": "Gereksinimlere bakarak native mi çapraz platform mu ilerleyeceğimize karar veriyor, ardından uygulamanın arkasındaki API, veri modeli ve üyelik altyapısını tasarlıyoruz. Çevrimdışı davranış, senkronizasyon kuralları ve üçüncü parti entegrasyonlar sonradan yamanmak yerine bu aşamada netleşiyor." },
+        { "step": 4, "title": "Sprint Geliştirme ve Test Sürümleri", "description": "Biten özellikler TestFlight ve Google Play dahili test kanallarına çıkıyor, yani uygulamayı geliştirme sürerken kendi telefonunuzda kullanıyorsunuz. Her sprint çalışan bir sürüm, değişiklik listesi ve kısa bir değerlendirme toplantısıyla kapanıyor." },
+        { "step": 5, "title": "Mağaza Yayını", "description": "Mağaza sayfalarını, ekran görüntülerini, gizlilik beyanlarını ve imzalı sürümleri hazırlayıp inceleme sürecini yönetiyoruz; red gelirse gerekçeyi karşılayıp yeniden gönderiyoruz. Yayını kademeli açıyoruz, böylece olası bir sorun tüm kullanıcıya değil küçük bir gruba ulaşıyor." },
+        { "step": 6, "title": "Bakım ve Geliştirme", "description": "Yayından sonra çökmeleri, performansı ve gerçek kullanım verisini izleyip bunu önceliklendirilmiş bir iyileştirme listesine dönüştürüyoruz. Kaçınılmaz bakımı da biz üstleniyoruz: yıllık işletim sistemi sürümleri, kullanımdan kalkan SDK'lar ve değişen mağaza politikaları." }
+      ],
+      "faq": [
+        { "question": "Çapraz platform mu, native mi geliştirmeliyiz?", "answer": "Çoğu işletme uygulaması için React Native veya Flutter ile çapraz platform doğru başlangıçtır: tek kod tabanı, tek ekip ve her iki mağazada neredeyse aynı deneyim. Ürün cihaz donanımına, ağır grafiğe, sürekli arka plan işlemine ya da çıktığı gün yeni işletim sistemi özelliklerine dayanıyorsa Swift veya Kotlin ile native geliştirmeyi öneriyoruz." },
+        { "question": "Mobil uygulama ne kadar sürede biter?", "answer": "Üyelik, birkaç temel akış ve çalışan bir backend içeren odaklı bir ilk sürüm haftalarla değil aylarla ölçülür. Süreyi belirleyen şey ekran ve kullanıcı rolü sayısı ile mevcut backend'inizin ne kadarının hazır olduğudur; bu yüzden telefonda tahmin vermek yerine kapsam çalışmasından sonra aşamalı bir takvim paylaşıyoruz." },
+        { "question": "App Store ve Google Play onayı sorun çıkarır mı?", "answer": "Uygulamayı güncel App Store inceleme kuralları ve Google Play politikalarına göre geliştiriyor; gizlilik etiketlerini, veri güvenliği formunu ve hesap silme akışını inceleme öncesinde hazırlıyoruz. Yine de red gelebiliyor, genelde açıklama metni veya izin kullanımı yüzünden; itiraz ve yeniden gönderim sürecini ek iş olarak değil yayının parçası olarak biz yürütüyoruz." },
+        { "question": "Uygulama içinden ödeme alabilir miyiz?", "answer": "Fiziksel ürün ve gerçek dünyada verilen hizmetlerin satışında kendi ödeme altyapınızı, yerel sanal POS ve ödeme sağlayıcılarını kullanabilirsiniz. Dijital içerik, abonelik veya uygulama içi özellik satıyorsanız Apple ve Google kendi uygulama içi satın alma sistemlerini zorunlu tutar; hangi modelin sizin işinize uyduğunu kapsam aşamasında netleştiriyoruz." },
+        { "question": "Kullanıcı verileri ve KVKK uyumu nasıl ele alınıyor?", "answer": "Toplanan her veri alanını gerekçesiyle listeliyor, aydınlatma metni ve açık rıza akışını uygulamanın içine yerleştiriyoruz; hesap silme talebi mağazaların da aradığı bir zorunluluk olduğu için baştan kuruluyor. Veriyi nerede sakladığınız sizin kararınız — sunucu ve veritabanı tercihini KVKK yükümlülüklerinizi konuşarak birlikte belirliyoruz." },
+        { "question": "Maliyeti belirleyen kalemler neler?", "answer": "Ekran ve kullanıcı rolü sayısı, backend'in karmaşıklığı, ödeme veya kargo gibi üçüncü parti entegrasyonlar ve tek platform mu iki platform mu istediğiniz. Tasarım inceliği ve çevrimdışı çalışma da gerçek mühendislik işidir; bunları tek bir rakamın içinde gizlemek yerine ayrı kalemler olarak açık şekilde fiyatlandırıyoruz." },
+        { "question": "Kod ve mağaza hesapları kime ait olacak?", "answer": "Tamamen size ait. Uygulama sizin Apple Developer ve Google Play hesaplarınız altında yayınlanır, kaynak kod ilk günden sizin sahibi olduğunuz depoda durur. Sizi bizimle çalışmaya mecbur bırakan kapalı bir katman kurmuyoruz." },
+        { "question": "Yayınlandıktan sonra bakım şart mı?", "answer": "Evet. iOS ve Android her yıl yeni sürüm çıkarıyor, kullanılan SDK'lar zamanla destekten düşüyor ve mağaza politikaları değişiyor; bakımsız bir uygulama bir noktada kurulamaz hâle geliyor. Bakım anlaşması işletim sistemi uyumunu, güvenlik ve bağımlılık güncellemelerini, çökme takibini ve gereken mağaza güncellemelerini kapsıyor." },
+        { "question": "Mağaza incelemesini beklemeden güncelleme yapabilir miyiz?", "answer": "React Native tarafında içerik, ayar ve JavaScript katmanının büyük bölümü OTA güncellemeyle anında dağıtılabiliyor; metin düzeltmeleri ve küçük hatalar kullanıcıya saatler içinde ulaşıyor. Native kod değişiklikleri ve işlevi esaslı biçimde değiştiren güncellemeler ise normal mağaza incelemesinden geçiyor." },
+        { "question": "Başkasının yazdığı mevcut uygulamamızı devralır mısınız?", "answer": "Evet, sık yaptığımız bir iş. Önce kod tabanını, bağımlılıkları ve mağaza hesaplarını inceliyor; devam etmek, yeniden düzenlemek veya sıfırdan yazmak arasında dürüst bir değerlendirme sunuyoruz. İşe başlamak için baştan yazma şartı koşmuyoruz." }
+      ],
+      "technologies": [
+        { "name": "React Native", "icon": "react" },
+        { "name": "Expo", "icon": "expo" },
+        { "name": "Flutter", "icon": "flutter" },
+        { "name": "Swift (iOS)", "icon": "swift" },
+        { "name": "Kotlin (Android)", "icon": "kotlin" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Firebase", "icon": "firebase" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Mobile App-Entwicklung",
+    "shortDescription": "Native iOS- und Android-Apps oder eine plattformübergreifende Codebasis mit React Native und Flutter — inklusive Backend, Zahlungs- und Benachrichtigungsanbindung, Store-Einreichung und Wartung nach dem Launch.",
+    "fullDescription": "Eine App ist kein Marketingprojekt, sondern ein Softwareprodukt mit Betriebspflichten: Sie muss Jahr für Jahr zu neuen iOS- und Android-Versionen passen, Store-Richtlinien einhalten und nachvollziehbar mit personenbezogenen Daten umgehen. Wir entwickeln plattformübergreifend mit React Native oder Flutter, wenn eine Codebasis beide Stores bedienen soll, und nativ mit Swift oder Kotlin, wenn Hardwarezugriff, Performance oder plattformspezifisches Verhalten den Ausschlag geben. Dazu gehören immer die Teile, die über den Erfolg entscheiden: ein belastbares Backend, sichere Authentifizierung, Offline-Verhalten, Zahlungs- und Push-Anbindung sowie Analytics. Aus Projekten für den deutschsprachigen Markt — etwa einem Kundenportal zur Auftragsverfolgung für einen Hersteller modularer Container — kennen wir die Anforderungen an Dokumentation, Datenschutz und saubere Übergaben.",
+    "features": [
+      "Plattformübergreifende Entwicklung mit React Native & Flutter",
+      "Native Entwicklung für iOS (Swift) und Android (Kotlin)",
+      "API- und Backend-Entwicklung (Node.js, TypeScript, PostgreSQL)",
+      "Offline-Fähigkeit und Datensynchronisation im Hintergrund",
+      "Push-Benachrichtigungen und In-App-Nachrichten",
+      "Anbindung von Zahlungsdienstleistern und In-App-Käufen",
+      "Einreichung und Release-Management für App Store und Google Play",
+      "Analytics, Crash-Reporting und Over-the-Air-Updates"
+    ],
+    "benefits": [
+      "Eine Codebasis erreicht Nutzer auf iOS und Android gleichermaßen",
+      "Ein direkter Kundenkanal ohne zwischengeschaltete Werbeplattform",
+      "Schnelle Korrekturen durch Over-the-Air-Updates und stufenweise Rollouts",
+      "Belastbare Zahlen zu Aktivierung, Nutzung und Abstürzen ab Tag eins",
+      "Volle Rechte an Quellcode, Store-Accounts und Nutzerdaten",
+      "Ein Backend, das mitwächst, statt nach dem Launch neu gebaut zu werden"
+    ],
+    "metaTitle": "Mobile App-Entwicklung — iOS & Android | PakSoft",
+    "metaDescription": "App-Entwicklung für iOS und Android: React Native, Flutter, nativer Code, Backend, DSGVO-konforme Datenflüsse und Store-Launch. Jetzt Erstgespräch vereinbaren.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Analyse & Scope", "description": "Wir beginnen bei der Aufgabe, die die App erfüllen soll: Wer öffnet sie, wie oft, und was muss danach passieren. Daraus entsteht eine priorisierte Funktionsliste, getrennt nach erstem Release und Backlog, damit das Budget in die Bildschirme fließt, die Nutzer täglich sehen." },
+        { "step": 2, "title": "Nutzerflüsse & Interface-Design", "description": "Die zentralen Abläufe entstehen als klickbare Screens, bevor Produktionscode geschrieben wird, und folgen den Interaktionsmustern von iOS und Android statt gegen sie zu arbeiten. Sie prüfen die Flows auf einem echten Gerät — dort werden teure Missverständnisse noch günstig sichtbar." },
+        { "step": 3, "title": "Architektur & Backend", "description": "Wir legen anhand der Anforderungen nativ oder plattformübergreifend fest und entwerfen anschließend API, Datenmodell und Authentifizierung hinter der App. Offline-Verhalten, Synchronisationsregeln und Drittsysteme werden hier entschieden, nicht nachträglich angeflickt." },
+        { "step": 4, "title": "Sprint-Entwicklung & Testbuilds", "description": "Fertige Funktionen gehen laufend in TestFlight und den internen Testkanal von Google Play, sodass Sie die App während der Entwicklung auf dem eigenen Gerät nutzen. Jeder Sprint endet mit einem lauffähigen Build, einem Changelog und einem kurzen Review-Termin." },
+        { "step": 5, "title": "Store-Einreichung & Launch", "description": "Wir erstellen Store-Einträge, Screenshots, Datenschutzangaben und signierte Release-Builds und begleiten das Prüfverfahren inklusive Antworten auf Ablehnungen. Der Rollout erfolgt stufenweise, damit ein Fehler zuerst eine kleine Gruppe trifft und nicht die gesamte Nutzerbasis." },
+        { "step": 6, "title": "Betrieb & Weiterentwicklung", "description": "Nach dem Launch beobachten wir Abstürze, Performance und tatsächliche Nutzung und leiten daraus eine priorisierte Verbesserungsliste ab. Ebenso übernehmen wir die unvermeidliche Wartung: jährliche OS-Releases, abgekündigte SDKs und geänderte Store-Richtlinien." }
+      ],
+      "faq": [
+        { "question": "Plattformübergreifend oder nativ entwickeln?", "answer": "Für die meisten Business-Apps ist React Native oder Flutter die sinnvolle Standardwahl: eine Codebasis, ein Team und nahezu identisches Verhalten in beiden Stores. Nativ mit Swift oder Kotlin empfehlen wir, wenn Hardwarezugriff, aufwendige Grafik, dauerhafte Hintergrundprozesse oder brandneue OS-Funktionen zum Kern des Produkts gehören." },
+        { "question": "Wie lange dauert die Entwicklung einer App?", "answer": "Eine fokussierte erste Version mit Authentifizierung, wenigen Kernabläufen und funktionierendem Backend bemisst sich in Monaten, nicht in Wochen. Ausschlaggebend sind die Zahl der Screens und Nutzerrollen sowie der Reifegrad Ihres bestehenden Backends — deshalb nennen wir einen Terminplan erst nach dem Scoping." },
+        { "question": "Wie stellen Sie DSGVO-Konformität sicher?", "answer": "Wir dokumentieren jedes erhobene Datenfeld mit Zweck und Rechtsgrundlage, setzen Einwilligungen und Löschfunktionen direkt in der App um und halten die Datenflüsse zu Drittdiensten wie Analytics oder Push nachvollziehbar fest. Auf Wunsch betreiben wir Backend und Datenbank in EU-Rechenzentren und liefern die Angaben, die Sie für Verarbeitungsverzeichnis und AV-Verträge benötigen." },
+        { "question": "Wird unsere App von Apple und Google freigegeben?", "answer": "Wir entwickeln gegen die aktuellen App Store Review Guidelines und Google-Play-Richtlinien und bereiten Datenschutzlabel, Data-Safety-Formular und Kontolöschung vor der Einreichung vor. Ablehnungen kommen dennoch vor, meist wegen Metadaten oder Berechtigungen; Antwort und erneute Einreichung gehören für uns zum Launch." },
+        { "question": "Brauchen wir ein eigenes Backend?", "answer": "Sobald Konten, Zahlungen, redaktionelle Inhalte oder geräteübergreifende Daten im Spiel sind, ja. Wir bauen es mit Node.js, TypeScript und PostgreSQL oder binden die App über Schnittstellen an vorhandene Systeme wie ERP oder Warenwirtschaft an, damit Ihre Daten an einer Stelle bleiben." },
+        { "question": "Was kostet eine App und wovon hängt das ab?", "answer": "Maßgeblich sind Anzahl der Screens und Nutzerrollen, Komplexität des Backends, Drittanbieter-Integrationen wie Zahlung oder Logistik sowie die Frage nach einer oder zwei Plattformen. Designtiefe und Offline-Fähigkeit sind echter Entwicklungsaufwand und werden bei uns als eigene Positionen ausgewiesen statt in einer Pauschale zu verschwinden." },
+        { "question": "Wem gehören Quellcode und Store-Accounts?", "answer": "Ihnen. Die Veröffentlichung erfolgt unter Ihrem eigenen Apple-Developer- und Google-Play-Konto, der Quellcode liegt ab dem ersten Commit in einem Repository Ihres Unternehmens. Es gibt keine proprietäre Zwischenschicht, die eine Zusammenarbeit erzwingt." },
+        { "question": "Warum ist laufende Wartung notwendig?", "answer": "iOS und Android veröffentlichen jährlich große Versionen, SDKs werden abgekündigt und Store-Richtlinien ändern sich; eine ungepflegte App ist irgendwann nicht mehr installierbar. Ein Wartungsvertrag deckt OS-Kompatibilität, Sicherheits- und Abhängigkeitsupdates, Crash-Monitoring und die daraus folgenden Store-Releases ab." },
+        { "question": "Können Sie eine bestehende App übernehmen?", "answer": "Ja, das ist Routine. Wir beginnen mit einem Audit von Codebasis, Abhängigkeiten und Store-Zugängen und geben eine ehrliche Einschätzung, ob Weiterentwicklung, Refactoring oder Neubau sinnvoll ist — eine Neuentwicklung ist keine Bedingung für die Zusammenarbeit." }
+      ],
+      "technologies": [
+        { "name": "React Native", "icon": "react" },
+        { "name": "Expo", "icon": "expo" },
+        { "name": "Flutter", "icon": "flutter" },
+        { "name": "Swift (iOS)", "icon": "swift" },
+        { "name": "Kotlin (Android)", "icon": "kotlin" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Firebase", "icon": "firebase" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تطوير تطبيقات الجوال",
+    "shortDescription": "تطبيقات native لنظامي iOS و Android، أو قاعدة كود واحدة عبر React Native و Flutter، مع الواجهة الخلفية وربط الدفع والإشعارات ودعم اللغة العربية وواجهات RTL وإدارة النشر في المتاجر.",
+    "fullDescription": "في دول الخليج يبدأ معظم العملاء رحلتهم من الهاتف، وصفحة الويب لا تستطيع إرسال إشعار إليهم. نبني تطبيقات الجوال بمسارين: قاعدة كود واحدة عبر React Native أو Flutter حين يكون المطلوب الحضور في المتجرين بفريق واحد، وتطوير native عبر Swift و Kotlin حين يعتمد المنتج على أداء الجهاز أو الوصول إلى عتاده. في الحالتين ننفّذ الأجزاء التي تحدد نجاح التطبيق فعلياً: واجهة خلفية حقيقية، تسجيل دخول آمن، عمل دون اتصال، ربط بوابات الدفع والإشعارات، وتحليلات تُظهر سلوك المستخدم. ونتولى كذلك دعم اللغة العربية وتخطيط RTL بالكامل، وإعداد صفحات المتجرين وإدارة مراجعة Apple و Google، ثم المتابعة بعد الإطلاق مع تحديثات أنظمة التشغيل السنوية.",
+    "features": [
+      "تطوير متعدد المنصات عبر React Native و Flutter",
+      "تطوير native لنظامي iOS بلغة Swift و Android بلغة Kotlin",
+      "تطوير الواجهة الخلفية وواجهات API عبر Node.js و TypeScript و PostgreSQL",
+      "دعم كامل للغة العربية وتخطيط الواجهات من اليمين إلى اليسار (RTL)",
+      "العمل دون اتصال ومزامنة البيانات في الخلفية",
+      "الإشعارات الفورية والرسائل داخل التطبيق",
+      "ربط بوابات الدفع والمشتريات داخل التطبيق",
+      "النشر في App Store و Google Play وإدارة الإصدارات والتحليلات"
+    ],
+    "benefits": [
+      "الوصول إلى مستخدمي iOS و Android بقاعدة كود واحدة",
+      "قناة مباشرة مع عملائك لا تتوسطها منصات الإعلانات",
+      "إصلاحات سريعة عبر تحديثات OTA والإطلاق التدريجي",
+      "تجربة عربية أصلية بواجهات RTL بدل ترجمة سطحية لواجهة إنجليزية",
+      "ملكية كاملة للكود المصدري وحسابات المتاجر وبيانات المستخدمين",
+      "واجهة خلفية تتوسع مع نمو الاستخدام بدل إعادة بنائها بعد الإطلاق"
+    ],
+    "metaTitle": "تطوير تطبيقات الجوال — iOS و Android | PakSoft",
+    "metaDescription": "تطوير تطبيقات iOS و Android عبر React Native و Flutter والتطوير native، مع واجهة خلفية ودعم عربي كامل ونشر في المتاجر. احجز استشارة مجانية لمشروعك الآن.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "الاستكشاف وتحديد النطاق", "description": "نبدأ من المهمة التي يفترض أن يؤديها التطبيق: من يفتحه، وكم مرة، وما الذي يجب أن يحدث بعد ذلك. ننتج قائمة مزايا مرتّبة حسب الأولوية ومقسّمة بين إصدار أول وقائمة لاحقة، لتذهب الميزانية إلى الشاشات التي يستخدمها العميل يومياً." },
+        { "step": 2, "title": "تصميم المسارات والواجهات", "description": "نرسم المسارات الأساسية كشاشات قابلة للنقر قبل كتابة أي كود إنتاجي، مع الالتزام بأنماط التفاعل المعتمدة في iOS و Android وباتجاه RTL الصحيح للعربية. تراجعون التصميم على جهاز حقيقي، وهنا تظهر سوء الفهم المكلف في أرخص مراحله." },
+        { "step": 3, "title": "البنية والواجهة الخلفية", "description": "نحدد بناءً على المتطلبات ما إذا كان المسار native أم متعدد المنصات، ثم نصمم واجهات API ونموذج البيانات ونظام تسجيل الدخول خلف التطبيق. يُحسم هنا سلوك العمل دون اتصال وقواعد المزامنة والتكامل مع الأنظمة الخارجية بدل معالجتها لاحقاً." },
+        { "step": 4, "title": "التطوير بدورات قصيرة ونسخ الاختبار", "description": "تُرفع المزايا المنجزة أولاً بأول إلى TestFlight وقناة الاختبار الداخلي في Google Play، فتستخدمون التطبيق على هواتفكم أثناء بنائه. تنتهي كل دورة بنسخة عاملة وسجل تغييرات واجتماع مراجعة قصير." },
+        { "step": 5, "title": "النشر في المتاجر", "description": "نجهّز صفحات المتجرين ولقطات الشاشة وإقرارات الخصوصية ونسخ الإصدار الموقّعة، وندير مراجعة Apple و Google ونردّ على أي رفض. يتم الإطلاق على مراحل حتى يصل أي خلل إلى مجموعة صغيرة أولاً لا إلى جميع المستخدمين." },
+        { "step": 6, "title": "الدعم والتطوير المستمر", "description": "بعد الإطلاق نراقب الأعطال والأداء والاستخدام الفعلي، ونحوّل ذلك إلى قائمة تحسينات مرتّبة حسب الأثر. كما نتولى الصيانة التي لا مفر منها: إصدارات أنظمة التشغيل السنوية، وحزم SDK التي يتوقف دعمها، وتغيّر سياسات المتاجر." }
+      ],
+      "faq": [
+        { "question": "هل نختار التطوير متعدد المنصات أم native؟", "answer": "لمعظم تطبيقات الأعمال يكون React Native أو Flutter الخيار الافتراضي الصحيح: قاعدة كود واحدة وفريق واحد وسلوك شبه متطابق في المتجرين. نوصي بـ Swift أو Kotlin حين يعتمد المنتج على عتاد الجهاز أو الرسوميات الثقيلة أو المعالجة المستمرة في الخلفية أو أحدث مزايا نظام التشغيل فور صدورها." },
+        { "question": "كيف تتعاملون مع اللغة العربية وواجهات RTL؟", "answer": "نبني التطبيق ثنائي اللغة من الأساس: اتجاه الواجهة ينعكس بالكامل، والخطوط والأرقام والتواريخ تُضبط للعربية، وتُختبر كل شاشة في الوضعين. هذا يختلف جوهرياً عن ترجمة واجهة إنجليزية جاهزة، حيث تنكسر التخطيطات والأيقونات عند التبديل." },
+        { "question": "كم يستغرق تطوير التطبيق؟", "answer": "الإصدار الأول المركّز، بتسجيل دخول وعدد محدود من المسارات الأساسية وواجهة خلفية عاملة، يُقاس بالأشهر لا بالأسابيع. يحدد المدة عدد الشاشات وأدوار المستخدمين ومدى جاهزية أنظمتكم الحالية، لذلك نقدّم جدولاً مرحلياً بعد دراسة النطاق لا قبله." },
+        { "question": "هل ستوافق Apple و Google على نشر التطبيق؟", "answer": "نطوّر وفق إرشادات مراجعة App Store وسياسات Google Play السارية، ونجهّز بطاقات الخصوصية ونموذج أمان البيانات ومسار حذف الحساب قبل الإرسال. يبقى الرفض وارداً وغالباً بسبب البيانات الوصفية أو الأذونات، وإدارة الرد وإعادة الإرسال جزء من الإطلاق لدينا." },
+        { "question": "هل نحتاج إلى واجهة خلفية خاصة بنا؟", "answer": "نعم متى وُجدت حسابات أو مدفوعات أو محتوى تحدّثونه أو بيانات مشتركة بين الأجهزة. نبنيها عبر Node.js و TypeScript و PostgreSQL، أو نربط التطبيق بأنظمتكم القائمة عبر واجهاتها البرمجية لتبقى البيانات في مكان واحد." },
+        { "question": "ما العوامل التي تحدد تكلفة التطبيق؟", "answer": "عدد الشاشات وأدوار المستخدمين، وتعقيد الواجهة الخلفية، والتكاملات الخارجية مثل الدفع والشحن، وما إذا كنتم تريدون منصة واحدة أم اثنتين. عمق التصميم والعمل دون اتصال جهد هندسي حقيقي، لذلك نعرضهما كبنود مستقلة بدل إخفائهما داخل رقم واحد." },
+        { "question": "لمن تعود ملكية الكود وحسابات المتاجر؟", "answer": "لكم بالكامل. يُنشر التطبيق تحت حساباتكم في Apple Developer و Google Play، ويبقى الكود المصدري في مستودع تملكونه منذ أول يوم. لا نضع طبقة مغلقة تجبركم على الاستمرار معنا." },
+        { "question": "لماذا الصيانة بعد الإطلاق ضرورية؟", "answer": "يصدر iOS و Android نسخاً رئيسية كل عام، وتتوقف حزم SDK عن الدعم، وتتغير سياسات المتاجر؛ والتطبيق غير المُصان يصبح مع الوقت غير قابل للتثبيت. تغطي اتفاقية الصيانة توافق أنظمة التشغيل والتحديثات الأمنية ومراقبة الأعطال وإصدارات المتاجر المترتبة على ذلك." },
+        { "question": "هل يمكنكم استلام تطبيق طوّرته جهة أخرى؟", "answer": "نعم، وهذا عمل معتاد لدينا. نبدأ بمراجعة الكود والاعتماديات وحسابات المتاجر، ثم نقدّم تقييماً صريحاً بين الاستمرار أو إعادة الهيكلة أو إعادة البناء، ولا نشترط إعادة كتابة التطبيق للبدء بالتعاون." }
+      ],
+      "technologies": [
+        { "name": "React Native", "icon": "react" },
+        { "name": "Expo", "icon": "expo" },
+        { "name": "Flutter", "icon": "flutter" },
+        { "name": "Swift (iOS)", "icon": "swift" },
+        { "name": "Kotlin (Android)", "icon": "kotlin" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Firebase", "icon": "firebase" }
+      ]
+    }
+  }
+}

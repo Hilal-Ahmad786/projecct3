@@ -1,0 +1,231 @@
+{
+  "slug": "seo",
+  "en": {
+    "name": "SEO",
+    "shortDescription": "Search visibility you can defend: a technically sound site, content matched to real search intent, and authority earned honestly — optimised for Google and for the AI answer engines buyers now ask first.",
+    "fullDescription": "SEO is three disciplines that only work together: a site search engines can crawl and render, content that answers what your market actually types, and credible signals from elsewhere on the web. We start with a technical and editorial audit, agree a keyword-to-page map with you, then work in monthly cycles — clearing crawl, indexation and Core Web Vitals problems, writing or rewriting pages, earning links through work worth citing, and reporting Search Console movement next to GA4 conversions and revenue. We run our own site in five languages with hreflang, localised URL structures and structured data, so international and multilingual search is familiar ground rather than an experiment. We make no ranking promises — you get a documented method and numbers you can verify.",
+    "features": [
+      "Technical SEO Audit — Crawl, Indexation & Rendering",
+      "Keyword Research & Search Intent Mapping",
+      "On-Page Optimisation & Internal Link Architecture",
+      "Content Production & Refresh Cycles",
+      "schema.org Structured Data & Rich Results",
+      "Core Web Vitals & Indexation Monitoring",
+      "International SEO — hreflang & Localised URLs",
+      "Digital PR & Editorial Link Acquisition"
+    ],
+    "benefits": [
+      "Traffic that keeps running when the ad budget stops",
+      "Visitors with buying intent, because pages are mapped to intent not volume",
+      "A faster, cleaner site that helps rankings and conversion at the same time",
+      "Falling blended acquisition cost as organic takes a larger share of leads",
+      "Presence in AI-generated answers, where more product research now begins",
+      "Transparent reporting — you always know what was done and what moved"
+    ],
+    "metaTitle": "SEO Services — Technical, Content & Links | PakSoft",
+    "metaDescription": "Technical SEO, intent-led content and earned links that grow organic traffic. No ranking guarantees — documented method and clear reporting. Book a free audit.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Audit & Baseline", "description": "We crawl the site with Screaming Frog, pull twelve months of Search Console and GA4 data, and map where you stand against the competitors actually ranking for your terms. You receive a prioritised issue list with the expected impact of each fix, not a 200-page PDF nobody reads." },
+        { "step": 2, "title": "Keyword & Page Strategy", "description": "We research the queries your buyers really use, cluster them by intent, and assign each cluster to one specific page — existing or new. The map is agreed with you before any production starts, so scope, priorities and expectations are explicit from day one." },
+        { "step": 3, "title": "Technical Foundation", "description": "We fix what blocks crawling, indexation and rendering: sitemaps, canonicals, redirect chains, pagination, JavaScript rendering and Core Web Vitals. schema.org markup is added so search engines can read your products, articles and business details without guessing." },
+        { "step": 4, "title": "Content & On-Page", "description": "We write or rewrite the pages in the map — titles, headings, body, internal links and markup — so each one answers its query completely rather than partially. Pages that already rank on positions 5–20 are refreshed first, because that is usually the fastest measurable gain." },
+        { "step": 5, "title": "Authority & Digital PR", "description": "We earn links by publishing material worth citing and pitching it to relevant publications, never by buying placements from link networks that eventually cost you a penalty. Every acquired link is reported with its target page and the reason it was pursued." },
+        { "step": 6, "title": "Measure & Iterate", "description": "Monthly reporting ties Search Console impressions, clicks and positions to GA4 sessions, leads and revenue, so search work is judged on business outcomes. In the review we keep what worked, drop what didn't, and re-prioritise the next cycle's backlog with you." }
+      ],
+      "faq": [
+        { "question": "How long before we see results from SEO?", "answer": "Technical fixes can surface in Search Console within days or weeks, but content and authority work in competitive markets typically needs three to six months to move meaningfully — longer in crowded verticals. From month one we report leading indicators such as indexed pages, impressions and average position, so you can see progress before rankings and revenue follow." },
+        { "question": "Do you guarantee first-page rankings?", "answer": "No, and we'd treat any agency that does with suspicion. Nobody controls Google's algorithm or what your competitors invest, so a guarantee is either meaningless or a sign of tactics that will eventually get the site penalised. What we commit to is a documented method, agreed monthly deliverables, and honest reporting of what changed." },
+        { "question": "What's included in a monthly SEO retainer?", "answer": "Usually a mix of technical fixes, content production or optimisation, internal linking, structured data and outreach for links, plus monthly reporting and a working session. The split depends on the audit: a site with indexation problems gets technical weight first, while a technically healthy site shifts budget toward content and authority." },
+        { "question": "How do you split technical, content and off-page work?", "answer": "As a rule of thumb technical is heaviest in the first two months, content dominates months two to six, and off-page grows once there are pages genuinely worth linking to. Building links to weak pages wastes budget, so we sequence deliberately instead of applying a fixed percentage every month." },
+        { "question": "What happens if we stop SEO?", "answer": "You keep the pages, the technical improvements and the links already earned, so rankings usually hold for a while rather than collapsing overnight. Over time competitors publish more and refresh their content, and positions erode gradually — SEO decays rather than disappearing, which is why it works best as a continuous programme." },
+        { "question": "Can you work in more than one language?", "answer": "Yes. We operate our own site in five languages with hreflang, localised URL structures and per-language metadata, and we apply the same setup for clients across Turkish, English, German and Arabic. Multilingual SEO means separate keyword research per market — translating an English keyword list is the most common and most expensive mistake." },
+        { "question": "How does AI search change SEO?", "answer": "AI overviews and chat-based search summarise sources instead of sending every query as a click, so being cited now matters alongside ranking. In practice that rewards clear, factual, well-structured content with schema markup and demonstrable expertise, which overlaps heavily with good classical SEO. We treat visibility in AI answers as an extension of the same work, not a separate product." },
+        { "question": "How do you report, and which tools do you use?", "answer": "You get a monthly report combining Google Search Console (queries, impressions, positions, indexation) with GA4 (sessions, conversions, assisted revenue) and rank tracking, plus a plain-language note on what we did and what it changed. Internally we work with Screaming Frog, Ahrefs and Semrush-class tools, and PageSpeed Insights and Core Web Vitals field data." },
+        { "question": "Do you handle e-commerce SEO?", "answer": "Yes, and catalogue sites have their own failure modes: thin or duplicated product copy, faceted-navigation URLs consuming crawl budget, out-of-stock handling, and missing Product and Offer markup. We run SEO and Google Ads for Canceviz Hurma, a dates e-commerce store on the ikas platform, so category and product-page search work is routine for us." },
+        { "question": "What access do you need from us?", "answer": "Search Console and GA4 access from the start, plus a way to ship changes — CMS access, or a developer contact who can implement the tickets we write. We can work purely as an advisory layer handing over specifications, but implementation speed is normally the single biggest factor in how quickly results arrive." }
+      ],
+      "technologies": [
+        { "icon": "google-search-console", "name": "Google Search Console" },
+        { "icon": "ga4", "name": "Google Analytics 4" },
+        { "icon": "screaming-frog", "name": "Screaming Frog" },
+        { "icon": "ahrefs", "name": "Ahrefs" },
+        { "icon": "semrush", "name": "Semrush" },
+        { "icon": "schema-org", "name": "schema.org" },
+        { "icon": "pagespeed", "name": "PageSpeed Insights" },
+        { "icon": "google-business-profile", "name": "Google Business Profile" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "SEO",
+    "shortDescription": "Google Türkiye'de kalıcı görünürlük: sağlam teknik altyapı, arama niyetine uygun içerik ve dürüst yöntemlerle kazanılan otorite. Reklam bütçesi bittiğinde durmayan, Google Haritalar'dan e-ticaret ürün sayfalarına kadar uzanan bir trafik kanalı kurarız.",
+    "fullDescription": "SEO üç işin birlikte yürümesidir: arama motorlarının sorunsuz tarayıp render edebildiği bir site, hedef kitlenizin gerçekten yazdığı aramalara karşılık veren içerik ve dışarıdan gelen güvenilir sinyaller. İşe teknik ve içerik denetimiyle başlar, anahtar kelime–sayfa haritasını sizinle onaylar, sonra aylık döngülerle ilerleriz: tarama ve indeksleme hatalarını gideririz, Core Web Vitals'ı düzeltiriz, sayfaları yazar veya yeniden yazarız, atıf almaya değer çalışmalarla bağlantı kazanırız ve Search Console verisini GA4'teki form, sipariş ve ciro verisiyle birlikte raporlarız. Kendi sitemizi beş dilde, hreflang ve yerelleştirilmiş URL yapısıyla yönetiyor; ikas altyapısındaki Canceviz Hurma için SEO ve Google Ads çalışmalarını yürütüyoruz. Sıralama garantisi vermeyiz; belgelenmiş bir yöntem ve doğrulayabileceğiniz sayılar veririz.",
+    "features": [
+      "Teknik SEO Denetimi — Tarama, İndeksleme, Render",
+      "Anahtar Kelime ve Arama Niyeti Analizi",
+      "Sayfa İçi Optimizasyon ve İç Bağlantı Mimarisi",
+      "İçerik Üretimi ve Güncelleme Döngüleri",
+      "schema.org Yapısal Verisi ve Zengin Sonuçlar",
+      "Core Web Vitals ve İndeksleme Takibi",
+      "Yerel SEO ve Google Business Profile Yönetimi",
+      "Dijital PR ve Doğal Backlink Kazanımı"
+    ],
+    "benefits": [
+      "Reklam bütçesi durduğunda kesilmeyen kalıcı trafik",
+      "Hacim değil niyet hedeflendiği için satın almaya yakın ziyaretçiler",
+      "Google Haritalar ve yerel aramalarda görünürlük, işletmeye gelen müşteri",
+      "Organik payı büyüdükçe düşen ortalama müşteri edinme maliyeti",
+      "Hem sıralamayı hem dönüşümü yükselten daha hızlı, daha temiz bir site",
+      "Ne yapıldığını ve neyin değiştiğini gizlemeyen şeffaf aylık raporlama"
+    ],
+    "metaTitle": "SEO Hizmetleri — Teknik, İçerik, Backlink | PakSoft",
+    "metaDescription": "Teknik SEO, arama niyetine uygun içerik ve doğal backlink ile kalıcı organik trafik. Garanti değil, şeffaf yöntem ve raporlama. Ücretsiz SEO analizi alın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Denetim ve Başlangıç Ölçümü", "description": "Siteyi Screaming Frog ile tarar, Search Console ve GA4'ün son on iki aylık verisini çıkarır, hedef kelimelerde gerçekten sıralanan rakiplere karşı konumunuzu haritalarız. Size iki yüz sayfalık bir PDF değil, beklenen etkisine göre önceliklendirilmiş bir aksiyon listesi teslim ederiz." },
+        { "step": 2, "title": "Anahtar Kelime ve Sayfa Stratejisi", "description": "Hedef kitlenizin Google'da gerçekten yazdığı aramaları çıkarır, bunları arama niyetine göre gruplar ve her grubu tek bir sayfaya bağlarız. Bu harita üretim başlamadan önce sizinle onaylanır; böylece kapsam, öncelik ve beklenti ilk günden nettir." },
+        { "step": 3, "title": "Teknik Altyapı", "description": "Taramayı, indekslemeyi ve render'ı engelleyen ne varsa düzeltiriz: site haritaları, canonical etiketleri, yönlendirme zincirleri, sayfalama ve JavaScript render sorunları ile Core Web Vitals. Ürün, makale ve işletme bilgilerinin doğru okunması için schema.org yapısal verisini ekleriz." },
+        { "step": 4, "title": "İçerik ve Sayfa İçi Çalışma", "description": "Haritadaki sayfaları yazar veya yeniden yazarız; başlık, ara başlıklar, metin, iç bağlantılar ve işaretleme aramayı eksiksiz karşılayacak biçimde kurgulanır. Beşinci ile yirminci sıra arasında takılı kalan sayfaları önce tazeleriz, çünkü ölçülebilir en hızlı kazanç genelde oradan gelir." },
+        { "step": 5, "title": "Otorite ve Yerel Sinyaller", "description": "Bağlantıları, atıf almaya değer içerikler üretip ilgili yayınlara sunarak kazanırız; link satan ağlarla çalışmayız, çünkü bedeli er geç ceza olarak geri döner. Yerel işletmelerde Google Business Profile, yorum yönetimi ve dizinlerdeki işletme bilgisi tutarlılığı aynı ciddiyetle ele alınır." },
+        { "step": 6, "title": "Ölçüm ve Aylık Döngü", "description": "Her ay Search Console'daki gösterim, tıklama ve pozisyon verisini GA4'teki oturum, form ve satış verisiyle birleştirip raporlarız; iş sonucuna bakmayan rapor yazmayız. Değerlendirme toplantısında işe yarayanı sürdürür, yaramayanı bırakır ve bir sonraki ayın önceliklerini birlikte belirleriz." }
+      ],
+      "faq": [
+        { "question": "SEO'da kaç ayda sonuç alırım?", "answer": "Teknik düzeltmelerin etkisi Search Console'da birkaç hafta içinde görülebilir; ancak rekabetin yoğun olduğu kelimelerde içerik ve otorite çalışmasının anlamlı sonuç vermesi genellikle üç ila altı ayı bulur, doymuş sektörlerde daha uzun sürer. İlk aydan itibaren indekslenen sayfa sayısı, gösterim ve ortalama pozisyon gibi öncü göstergeleri raporlarız; sıralama ve ciro etkisi bunların ardından gelir." },
+        { "question": "İlk sayfa garantisi veriyor musunuz?", "answer": "Hayır, vermiyoruz. Google'ın algoritmasını da rakiplerinizin bütçesini de kimse kontrol edemez; garanti veren ajanslar ya sözü boşa veriyordur ya da siteyi er geç cezaya sokacak yöntemler kullanıyordur. Bizim taahhüdümüz belgelenmiş bir yöntem, her ay üzerinde anlaşılmış çıktılar ve ne yapıldığını gizlemeyen raporlamadır." },
+        { "question": "Aylık SEO hizmetine neler dahil?", "answer": "Genellikle teknik düzeltmeler, içerik üretimi veya mevcut içeriğin optimizasyonu, iç bağlantı, yapısal veri ve bağlantı kazanımı çalışması ile aylık rapor ve değerlendirme toplantısı yer alır. Dağılım denetim sonucuna göre değişir: indeksleme sorunu olan bir sitede ağırlık önce teknik tarafa, teknik olarak sağlam bir sitede içerik ve otoriteye kayar." },
+        { "question": "İçerik üretiminin maliyeti bize mi ait?", "answer": "İçerik üretimi paketin içinde tanımlanır; ay bazında kaç makale, kategori veya ürün metni yazılacağı baştan yazılır, sonradan sürpriz kalem çıkmaz. Dilerseniz metinleri kendi ekibiniz yazar, biz brief, başlık yapısı ve yayın öncesi optimizasyon kontrolünü üstleniriz — bu genelde daha ekonomiktir ama sizin tarafınızda düzenli zaman ister." },
+        { "question": "Google Haritalar'da üst sıralara çıkabilir miyiz?", "answer": "Yerel sonuçlar organik sonuçlardan farklı çalışır: Google Business Profile'ın eksiksizliği, doğru kategori seçimi, yorum hacmi ve sürekliliği, güncel fotoğraflar ve işletme bilgilerinizin dizinlerde tutarlı olması belirleyicidir. Kullanıcının aradığı konuma olan mesafe de sonuçları etkilediği için hedefi il ve ilçe bazında gerçekçi belirler, gereksiz beklenti yaratmayız." },
+        { "question": "E-ticaret sitemizin ürün sayfaları indekslenmiyor, çözümü var mı?", "answer": "Bu tablo çoğunlukla ince veya kopya ürün açıklamaları, filtre URL'lerinin tarama bütçesini tüketmesi, tükenen ürünlerin yönetilmemesi ve hatalı canonical kurulumundan kaynaklanır. Kategori–ürün mimarisini, filtre URL kurallarını ve Product/Offer yapısal verisini düzenleriz. ikas altyapısındaki Canceviz Hurma'da SEO ve Google Ads çalışmalarını birlikte yürüttüğümüz için bu sorunlar bizim için günlük iş." },
+        { "question": "SEO çalışmasını bırakırsak ne olur?", "answer": "Kazanılan sayfalar, teknik iyileştirmeler ve alınan bağlantılar sizde kalır; sıralamalar bir gecede çökmez, bir süre korunur. Zamanla rakipler yeni içerik yayınlayıp mevcut sayfalarını tazeledikçe konumlar kademeli olarak geriler — SEO aniden yok olmaz, yavaşça erir. Bu yüzden en verimli çalışma biçimi kesintisiz bir programdır." },
+        { "question": "Birden fazla dilde çalışıyor musunuz?", "answer": "Evet. Kendi sitemizi Türkçe, İngilizce, Almanca, Arapça ve Urduca olmak üzere beş dilde, hreflang ve dile göre ayrılmış URL yapısıyla yönetiyoruz. Çok dilli SEO, İngilizce anahtar kelime listesinin çevrilmesi değildir; her pazar için ayrı arama araştırması ve o dilde, o pazarın diliyle yazılmış içerik gerektirir." },
+        { "question": "Yapay zekâ aramaları SEO'yu bitiriyor mu?", "answer": "Bitirmiyor, kuralları değiştiriyor. Yapay zekâ özetleri ve sohbet tabanlı arama her sorguyu tıklamaya çevirmediği için artık yalnızca sıralamak değil, kaynak olarak gösterilmek de önemli hale geldi. Bu da net, doğrulanabilir, yapısal veriyle işaretlenmiş ve gerçek uzmanlık taşıyan içeriği ödüllendiriyor; iyi yapılan klasik SEO ile büyük ölçüde örtüştüğü için bunu ayrı bir hizmet değil, işin doğal uzantısı olarak ele alıyoruz." },
+        { "question": "Sitemize ve hesaplarımıza erişim gerekiyor mu?", "answer": "Search Console ve GA4 erişimi baştan gereklidir; ayrıca değişiklikleri yayınlayabileceğimiz bir yol lazımdır — panel erişimi ya da hazırladığımız görevleri uygulayacak bir geliştirici. Yalnızca danışman olarak çalışıp teknik dokümanı ekibinize teslim edebiliriz; ancak sonucun ne kadar hızlı geleceğini en çok belirleyen etken, düzeltmelerin ne kadar çabuk uygulandığıdır." }
+      ],
+      "technologies": [
+        { "icon": "google-search-console", "name": "Google Search Console" },
+        { "icon": "ga4", "name": "Google Analytics 4" },
+        { "icon": "screaming-frog", "name": "Screaming Frog" },
+        { "icon": "ahrefs", "name": "Ahrefs" },
+        { "icon": "semrush", "name": "Semrush" },
+        { "icon": "schema-org", "name": "schema.org" },
+        { "icon": "pagespeed", "name": "PageSpeed Insights" },
+        { "icon": "google-business-profile", "name": "Google Business Profile" }
+      ]
+    }
+  },
+  "de": {
+    "name": "SEO",
+    "shortDescription": "Sichtbarkeit, die belastbar ist: saubere technische Basis, Inhalte entlang echter Suchintention und Autorität aus redaktioneller Arbeit — methodisch dokumentiert, DSGVO-konform gemessen und ohne Ranking-Versprechen, dafür mit prüfbaren Zahlen.",
+    "fullDescription": "SEO besteht aus drei Disziplinen, die nur gemeinsam wirken: eine Website, die Suchmaschinen crawlen und rendern können, Inhalte, die die tatsächlichen Suchanfragen Ihres Marktes beantworten, und glaubwürdige Signale von außen. Wir starten mit einem technischen und redaktionellen Audit, stimmen die Keyword-Seiten-Matrix mit Ihnen ab und arbeiten anschließend in Monatszyklen: Crawling-, Indexierungs- und Core-Web-Vitals-Probleme beheben, Seiten erstellen oder überarbeiten, Verlinkungen durch zitierfähige Arbeit verdienen und Fortschritte aus der Google Search Console zusammen mit Conversions aus einem DSGVO-konform konfigurierten Analytics-Setup berichten. Unsere eigene Website betreiben wir fünfsprachig mit hreflang, lokalisierten URL-Strukturen und strukturierten Daten — internationale Projekte sind für uns Routine statt Experiment. Ranking-Garantien geben wir nicht; Sie erhalten eine dokumentierte Methodik und prüfbare Zahlen.",
+    "features": [
+      "Technisches SEO-Audit — Crawling, Indexierung, Rendering",
+      "Keyword-Recherche & Analyse der Suchintention",
+      "OnPage-Optimierung & interne Verlinkungsarchitektur",
+      "Content-Erstellung & Aktualisierungszyklen",
+      "Strukturierte Daten nach schema.org & Rich Results",
+      "Core Web Vitals & Monitoring der Indexierung",
+      "Internationales SEO — hreflang & lokalisierte URLs",
+      "Digital PR & redaktioneller Linkaufbau"
+    ],
+    "benefits": [
+      "Reichweite, die bleibt — organischer Traffic endet nicht mit dem Mediabudget",
+      "Qualifizierte Anfragen statt Sichtbarkeit ohne Kaufabsicht",
+      "Nachvollziehbare Methodik: jede Maßnahme ist begründet und dokumentiert",
+      "Reporting auf Basis eines DSGVO-konform konfigurierten Analytics-Setups",
+      "Technisch saubere, schnellere Website — Ranking- und Conversion-Effekt zugleich",
+      "Sinkende Blended-Akquisekosten, je größer der organische Lead-Anteil wird"
+    ],
+    "metaTitle": "SEO-Agentur — Technik, Content, Linkaufbau | PakSoft",
+    "metaDescription": "Technisches SEO, Content entlang der Suchintention und redaktioneller Linkaufbau. Dokumentierte Methodik, DSGVO-konformes Reporting. Jetzt SEO-Audit anfragen.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Audit & Baseline", "description": "Wir crawlen die Website mit Screaming Frog, ziehen zwölf Monate Search-Console- und Analytics-Daten und stellen Ihre Position den Wettbewerbern gegenüber, die für Ihre Begriffe tatsächlich ranken. Sie erhalten eine nach erwarteter Wirkung priorisierte Maßnahmenliste statt eines 200-seitigen PDF-Berichts." },
+        { "step": 2, "title": "Keyword- & Seitenstrategie", "description": "Wir recherchieren die Suchanfragen Ihrer Zielgruppe, clustern sie nach Suchintention und ordnen jedem Cluster genau eine Seite zu — bestehend oder neu. Diese Matrix wird vor Produktionsbeginn mit Ihnen abgestimmt, damit Umfang, Priorität und Erwartung von Anfang an schriftlich feststehen." },
+        { "step": 3, "title": "Technisches Fundament", "description": "Wir beseitigen alles, was Crawling, Indexierung und Rendering behindert: Sitemaps, Canonicals, Weiterleitungsketten, Paginierung, JavaScript-Rendering und Core Web Vitals. Strukturierte Daten nach schema.org sorgen dafür, dass Produkte, Artikel und Unternehmensangaben eindeutig ausgelesen werden." },
+        { "step": 4, "title": "Content & OnPage", "description": "Wir erstellen oder überarbeiten die Seiten der Matrix — Titel, Überschriften, Fließtext, interne Links und Auszeichnung — sodass jede Seite ihre Suchanfrage vollständig beantwortet. Seiten auf Position 5 bis 20 überarbeiten wir zuerst, weil dort erfahrungsgemäß der schnellste messbare Effekt entsteht." },
+        { "step": 5, "title": "Autorität & Digital PR", "description": "Links verdienen wir, indem wir zitierfähige Inhalte veröffentlichen und sie relevanten Publikationen anbieten — nicht durch gekaufte Platzierungen in Linknetzwerken, die früher oder später eine Abstrafung kosten. Jeder gewonnene Link wird mit Zielseite und Begründung dokumentiert." },
+        { "step": 6, "title": "Messung & Iteration", "description": "Das Monatsreporting verknüpft Impressionen, Klicks und Positionen aus der Search Console mit Sitzungen, Leads und Umsatz aus dem Analytics-Setup. In der Review behalten wir, was gewirkt hat, verwerfen, was nicht funktioniert hat, und priorisieren das Backlog für den nächsten Zyklus gemeinsam." }
+      ],
+      "faq": [
+        { "question": "Wie lange dauert es, bis SEO wirkt?", "answer": "Technische Korrekturen zeigen sich oft schon nach Tagen oder Wochen in der Search Console, während Content- und Autoritätsarbeit in wettbewerbsintensiven Märkten üblicherweise drei bis sechs Monate braucht, um spürbar zu wirken. Ab dem ersten Monat berichten wir Frühindikatoren wie indexierte Seiten, Impressionen und Durchschnittsposition, damit der Fortschritt sichtbar ist, bevor Rankings und Umsatz folgen." },
+        { "question": "Garantieren Sie Platz 1 bei Google?", "answer": "Nein — und wir raten zur Vorsicht bei Anbietern, die das tun. Weder Googles Algorithmus noch das Budget Ihrer Wettbewerber lassen sich kontrollieren, deshalb ist eine solche Garantie entweder wertlos oder ein Hinweis auf Methoden, die die Domain langfristig gefährden. Wir garantieren stattdessen Methodik, vereinbarte monatliche Leistungen und ein Reporting, das auch unbequeme Zahlen zeigt." },
+        { "question": "Was ist in einem monatlichen SEO-Retainer enthalten?", "answer": "In der Regel eine Kombination aus technischen Korrekturen, Content-Erstellung oder -Optimierung, interner Verlinkung, strukturierten Daten und Outreach für Verlinkungen, dazu Reporting und ein monatlicher Arbeitstermin. Die Gewichtung ergibt sich aus dem Audit: Bei Indexierungsproblemen liegt der Schwerpunkt zunächst technisch, bei technisch sauberen Websites verschiebt er sich zu Content und Autorität." },
+        { "question": "Wie verteilen Sie Technik, Content und OffPage?", "answer": "Als Orientierung: In den ersten beiden Monaten dominiert die Technik, von Monat zwei bis sechs der Content, und OffPage wächst, sobald es Seiten gibt, die eine Verlinkung überhaupt verdienen. Links auf schwache Seiten zu setzen verbrennt Budget, deshalb arbeiten wir in einer bewussten Reihenfolge statt mit einer festen Monatsquote." },
+        { "question": "Wie berichten Sie, und ist das Tracking DSGVO-konform?", "answer": "Sie erhalten monatlich einen Bericht aus Google Search Console, Analytics und Rank-Tracking, ergänzt um eine verständliche Einordnung dessen, was umgesetzt wurde und was sich verändert hat. Das Analytics-Setup konfigurieren wir DSGVO-konform — mit Consent-Steuerung, IP-Anonymisierung und ohne unnötige personenbezogene Parameter; auf Wunsch arbeiten wir mit einer serverseitigen oder cookiefreien Alternative." },
+        { "question": "Was passiert, wenn wir SEO beenden?", "answer": "Die erstellten Seiten, die technischen Verbesserungen und die bereits gewonnenen Verlinkungen bleiben Ihnen erhalten, Rankings brechen also nicht über Nacht ein. Mit der Zeit veröffentlichen Wettbewerber neue Inhalte und aktualisieren bestehende, wodurch Positionen allmählich zurückgehen — SEO verfällt langsam, statt schlagartig zu verschwinden." },
+        { "question": "Arbeiten Sie international und mehrsprachig?", "answer": "Ja. Unsere eigene Website betreiben wir in fünf Sprachen mit hreflang, lokalisierten URL-Strukturen und sprachspezifischen Metadaten; dieselbe Struktur setzen wir für Kunden in Deutsch, Englisch, Türkisch und Arabisch um. Internationales SEO bedeutet eigene Keyword-Recherche je Markt — die Übersetzung einer deutschen Keyword-Liste führt regelmäßig an der tatsächlichen Nachfrage vorbei." },
+        { "question": "Wie verändert die KI-Suche das SEO?", "answer": "KI-Übersichten und dialogbasierte Suche fassen Quellen zusammen, statt jede Anfrage als Klick weiterzugeben — zitiert zu werden ist damit ebenso wichtig geworden wie zu ranken. Belohnt werden klar strukturierte, faktisch belastbare Inhalte mit sauberer Auszeichnung und nachweisbarer Fachkenntnis, was sich weitgehend mit gutem klassischem SEO deckt. Wir behandeln das als Erweiterung derselben Arbeit, nicht als separates Produkt." },
+        { "question": "Kaufen Sie Backlinks?", "answer": "Nein. Gekaufte Platzierungen in Linknetzwerken sind für Google gut erkennbar und verlagern das Risiko vollständig zu Ihnen. Wir setzen auf redaktionelle Verlinkungen aus Inhalten, die eine Erwähnung rechtfertigen, und dokumentieren jede gewonnene Verlinkung mit Quelle, Zielseite und Begründung — auch damit Sie die Arbeit prüfen können." },
+        { "question": "Welche Zugänge benötigen Sie von uns?", "answer": "Zum Start Zugriff auf Search Console und das Analytics-Konto sowie einen Weg, Änderungen zu veröffentlichen — CMS-Zugang oder eine technische Ansprechperson, die unsere Tickets umsetzt. Wir können auch rein beratend arbeiten und Spezifikationen übergeben; die Umsetzungsgeschwindigkeit ist erfahrungsgemäß der größte Einflussfaktor darauf, wie schnell Ergebnisse eintreten." }
+      ],
+      "technologies": [
+        { "icon": "google-search-console", "name": "Google Search Console" },
+        { "icon": "ga4", "name": "Google Analytics 4" },
+        { "icon": "screaming-frog", "name": "Screaming Frog" },
+        { "icon": "ahrefs", "name": "Ahrefs" },
+        { "icon": "semrush", "name": "Semrush" },
+        { "icon": "schema-org", "name": "schema.org" },
+        { "icon": "pagespeed", "name": "PageSpeed Insights" },
+        { "icon": "google-business-profile", "name": "Google Business Profile" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تحسين محركات البحث (SEO)",
+    "shortDescription": "ظهور يدوم في نتائج البحث: أساس تقني سليم، ومحتوى يطابق نية البحث الحقيقية لعملائكم، وسلطة تُبنى بطرق نظيفة. نعمل بالعربية والإنجليزية معاً، ونقيس كل شيء في Search Console وGA4 — بلا وعود بالترتيب.",
+    "fullDescription": "تحسين محركات البحث ثلاثة أعمال لا تنفع إلا مجتمعة: موقع تستطيع محركات البحث الزحف إليه وعرضه دون عوائق، ومحتوى يجيب عمّا يكتبه سوقكم فعلاً، وإشارات موثوقة من خارج الموقع. نبدأ بتدقيق تقني وتحريري، ثم نتفق معكم على خريطة تربط كل مجموعة كلمات مفتاحية بصفحة محددة، ونعمل بعدها بدورات شهرية: معالجة مشكلات الزحف والفهرسة وCore Web Vitals، وكتابة الصفحات أو إعادة صياغتها، وكسب الروابط عبر أعمال تستحق الاقتباس، ثم تقرير يربط بيانات Google Search Console بالتحويلات والإيرادات في GA4. ندير موقعنا بخمس لغات، منها العربية والإنجليزية، باستخدام hreflang وبنية روابط مترجمة وبيانات منظمة، لذا فالعمل ثنائي اللغة أرض مألوفة لنا لا تجربة جديدة. لا نعد بترتيب معيّن؛ نقدّم منهجية موثّقة وأرقاماً يمكنكم التحقق منها بأنفسكم.",
+    "features": [
+      "تدقيق تقني شامل — الزحف والفهرسة وعرض الصفحات",
+      "بحث الكلمات المفتاحية وتحليل نية البحث",
+      "تحسين الصفحات وبنية الروابط الداخلية",
+      "إنتاج المحتوى ودورات تحديثه",
+      "البيانات المنظمة schema.org والنتائج الغنية",
+      "Core Web Vitals ومراقبة حالة الفهرسة",
+      "SEO ثنائي اللغة عربي/إنجليزي مع hreflang",
+      "العلاقات الرقمية وبناء روابط تحريرية"
+    ],
+    "benefits": [
+      "زيارات لا تتوقف عند توقف ميزانية الإعلانات",
+      "زوّار قريبون من الشراء لأن الصفحات مبنية على نية البحث لا على حجمه",
+      "حضور بالعربية والإنجليزية معاً في سوق يبحث باللغتين",
+      "انخفاض متوسط تكلفة اكتساب العميل كلما زادت حصة القنوات المجانية",
+      "موقع أسرع وأنظف تقنياً — أثر مزدوج على الترتيب وعلى التحويل",
+      "تقارير شفافة توضّح ما نُفِّذ وما تغيّر فعلاً"
+    ],
+    "metaTitle": "خدمات تحسين محركات البحث SEO | PakSoft",
+    "metaDescription": "تحسين تقني ومحتوى يطابق نية البحث وروابط تُكتسب بنزاهة، بالعربية والإنجليزية. منهجية موثّقة وتقارير واضحة بلا وعود. اطلبوا تدقيق SEO مجاني الآن.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "التدقيق وخط الأساس", "description": "نزحف إلى الموقع عبر Screaming Frog، ونستخرج بيانات اثني عشر شهراً من Google Search Console وGA4، ونحدّد موقعكم مقارنةً بالمنافسين الذين يتصدرون كلماتكم فعلاً. تحصلون على قائمة إجراءات مرتّبة حسب الأثر المتوقع، لا تقريراً من مئتي صفحة لا يقرأه أحد." },
+        { "step": 2, "title": "استراتيجية الكلمات والصفحات", "description": "نبحث العبارات التي يكتبها عملاؤكم فعلاً بالعربية والإنجليزية، ونجمّعها حسب نية البحث، ثم نربط كل مجموعة بصفحة واحدة محددة قائمة أو جديدة. تُعتمد هذه الخريطة معكم قبل بدء التنفيذ، ليكون النطاق والأولويات والتوقعات واضحة منذ اليوم الأول." },
+        { "step": 3, "title": "الأساس التقني", "description": "نعالج كل ما يعيق الزحف والفهرسة والعرض: خرائط الموقع، وروابط canonical، وسلاسل إعادة التوجيه، والتقسيم إلى صفحات، وعرض JavaScript، ومؤشرات Core Web Vitals. ونضيف بيانات schema.org المنظمة ليقرأ محرك البحث منتجاتكم ومقالاتكم وبيانات نشاطكم دون تخمين." },
+        { "step": 4, "title": "المحتوى وتحسين الصفحات", "description": "نكتب صفحات الخريطة أو نعيد صياغتها — العنوان والعناوين الفرعية والنص والروابط الداخلية والترميز — لتجيب كل صفحة عن سؤالها بالكامل لا جزئياً. نبدأ بالصفحات المتوقفة بين المركزين الخامس والعشرين لأنها عادةً أسرع مكسب قابل للقياس." },
+        { "step": 5, "title": "السلطة والعلاقات الرقمية", "description": "نكسب الروابط بنشر أعمال تستحق الاقتباس وعرضها على المنصات المعنية، لا بشراء مواضع من شبكات روابط تنتهي بعقوبة على موقعكم. ونوثّق كل رابط مكتسب مع الصفحة المستهدفة وسبب السعي إليه، لتتمكنوا من مراجعة العمل." },
+        { "step": 6, "title": "القياس والدورة الشهرية", "description": "يربط التقرير الشهري مرات الظهور والنقرات والمراكز من Search Console بالجلسات والطلبات والإيرادات في GA4، فالحكم على العمل يكون بنتائج الأعمال لا بالمراكز وحدها. وفي جلسة المراجعة نُبقي ما نجح، ونوقف ما لم ينجح، ونحدّد أولويات الشهر التالي معكم." }
+      ],
+      "faq": [
+        { "question": "متى نبدأ برؤية نتائج تحسين محركات البحث؟", "answer": "قد تظهر آثار الإصلاحات التقنية في Search Console خلال أيام أو أسابيع، بينما يحتاج عمل المحتوى وبناء السلطة في الأسواق التنافسية من ثلاثة إلى ستة أشهر ليتحرك بشكل ملموس، وأطول في القطاعات المزدحمة. نرفع لكم منذ الشهر الأول مؤشرات مبكرة مثل عدد الصفحات المفهرسة ومرات الظهور ومتوسط المركز، لتروا التقدم قبل أن تتبعه المراكز والإيرادات." },
+        { "question": "هل تضمنون المركز الأول في Google؟", "answer": "لا، وننصحكم بالحذر من أي جهة تضمن ذلك. لا أحد يتحكم في خوارزمية Google ولا في ميزانيات منافسيكم، لذا فالضمان إما كلام بلا قيمة أو مؤشر على أساليب ستعرّض الموقع لعقوبة لاحقاً. ما نلتزم به هو منهجية موثّقة، ومخرجات شهرية متفق عليها، وتقارير لا تخفي الأرقام غير المريحة." },
+        { "question": "ماذا يشمل الاشتراك الشهري؟", "answer": "غالباً مزيج من الإصلاحات التقنية، وإنتاج المحتوى أو تحسين الموجود، والربط الداخلي، والبيانات المنظمة، والعمل على اكتساب الروابط، إضافة إلى تقرير شهري وجلسة مراجعة. وتتغير النسب حسب نتيجة التدقيق: الموقع الذي يعاني من مشكلات فهرسة يأخذ ثقلاً تقنياً أولاً، بينما يتحول الموقع السليم تقنياً نحو المحتوى والسلطة." },
+        { "question": "هل تعملون بالعربية والإنجليزية معاً؟", "answer": "نعم، وهذا جوهر عملنا في أسواق الخليج حيث يبحث الجمهور نفسه باللغتين حسب الموضوع. نبني نسخة عربية ونسخة إنجليزية مرتبطتين عبر hreflang ببنية روابط منفصلة ووسوم وصفية لكل لغة، مع مراجعة اتجاه العرض من اليمين إلى اليسار. ونجري بحث كلمات مفتاحية مستقلاً لكل لغة، لأن ترجمة قائمة إنجليزية لا تعكس ما يكتبه الناس بالعربية." },
+        { "question": "كيف تتعاملون مع خصوصية الكلمات المفتاحية العربية؟", "answer": "البحث بالعربية يحمل تحديات لا توجد في الإنجليزية: اختلاف الفصحى عن اللهجات المحلية، وكتابة الكلمات بحروف لاتينية أحياناً، وتباين الهمزات والتاء المربوطة والألف المقصورة في الكتابة اليومية. نجمع هذه الصيغ ونعالجها في المحتوى والترميز بدل تجاهلها، حتى تلتقط الصفحة الطلب الحقيقي مهما اختلفت طريقة كتابته." },
+        { "question": "كيف توزّعون العمل بين التقني والمحتوى والروابط؟", "answer": "كقاعدة تقريبية، يتصدر الجانب التقني الشهرين الأولين، ويهيمن المحتوى من الشهر الثاني إلى السادس، ثم ينمو العمل الخارجي حين تتوفر صفحات تستحق الربط إليها فعلاً. بناء روابط إلى صفحات ضعيفة إهدار للميزانية، لذلك نرتّب المراحل عمداً بدل تطبيق نسبة ثابتة كل شهر." },
+        { "question": "ماذا يحدث إذا أوقفنا العمل؟", "answer": "تبقى لكم الصفحات والتحسينات التقنية والروابط المكتسبة، ولا تنهار المراكز بين ليلة وضحاها. لكن مع الوقت ينشر المنافسون محتوى جديداً ويحدّثون صفحاتهم، فتتراجع مراكزكم تدريجياً — العمل يتآكل ببطء ولا يختفي فجأة، ولهذا يعطي أفضل نتائجه كبرنامج مستمر لا كحملة قصيرة." },
+        { "question": "كيف يغيّر البحث بالذكاء الاصطناعي قواعد SEO؟", "answer": "ملخصات الذكاء الاصطناعي ومحركات البحث الحوارية تلخّص المصادر بدل تحويل كل استعلام إلى نقرة، وبذلك صار أن تُذكر كمصدر لا يقل أهمية عن أن تتصدر النتائج. وهذا يكافئ المحتوى الواضح القابل للتحقق، المُرمَّز ببيانات منظمة والصادر عن خبرة حقيقية — وهي أمور تتقاطع كثيراً مع تحسين محركات البحث الجيد، لذا نتعامل معها كامتداد للعمل نفسه لا كخدمة منفصلة." },
+        { "question": "كيف تُعدّون التقارير وما الأدوات المستخدمة؟", "answer": "تحصلون شهرياً على تقرير يجمع Google Search Console (الاستعلامات ومرات الظهور والمراكز وحالة الفهرسة) مع GA4 (الجلسات والتحويلات والإيرادات) وتتبع المراكز، مع شرح بلغة واضحة لما نُفِّذ وما تغيّر نتيجة له. أما أدوات العمل اليومي فتشمل Screaming Frog وأدوات من فئة Ahrefs وSemrush إضافة إلى PageSpeed Insights وبيانات Core Web Vitals." },
+        { "question": "هل تعملون على المتاجر الإلكترونية؟", "answer": "نعم، ولصفحات المنتجات والفئات مشكلاتها الخاصة: أوصاف ضعيفة أو مكرّرة، وروابط الفلاتر التي تستهلك ميزانية الزحف، ومعالجة المنتجات غير المتوفرة، وغياب ترميز Product وOffer. ندير حالياً أعمال SEO وإعلانات Google لمتجر Canceviz Hurma للتمور على منصة ikas، فالعمل على كتالوجات المنتجات جزء من روتيننا اليومي." }
+      ],
+      "technologies": [
+        { "icon": "google-search-console", "name": "Google Search Console" },
+        { "icon": "ga4", "name": "Google Analytics 4" },
+        { "icon": "screaming-frog", "name": "Screaming Frog" },
+        { "icon": "ahrefs", "name": "Ahrefs" },
+        { "icon": "semrush", "name": "Semrush" },
+        { "icon": "schema-org", "name": "schema.org" },
+        { "icon": "pagespeed", "name": "PageSpeed Insights" },
+        { "icon": "google-business-profile", "name": "Google Business Profile" }
+      ]
+    }
+  }
+}

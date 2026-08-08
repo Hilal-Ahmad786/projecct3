@@ -1,0 +1,231 @@
+{
+  "slug": "web-development",
+  "en": {
+    "name": "Web Development",
+    "shortDescription": "Custom web development for companies whose site has to perform: Next.js and React front-ends, typed Node.js APIs and PostgreSQL data models, built to load fast, rank, and stay maintainable.",
+    "fullDescription": "Your website is where most buyers decide whether to take you seriously, so we build it like product software rather than a brochure. PakSoft handles the full path end to end: information architecture and interface design, a Next.js and React front-end, a typed Node.js API layer, and a PostgreSQL schema modelled on how your business actually works. We have delivered logistics and moving company sites, vehicle-buying sites, a verified psychologist directory, consultancy sites built around appointment and lead capture, and a customer order-tracking portal for a manufacturer selling into the German market. Multilingual content, structured data, and Core Web Vitals are treated as requirements from the first sprint. At handover the repository, domain, and hosting accounts are yours.",
+    "features": [
+      "Next.js & React Front-End Architecture",
+      "Typed Node.js APIs with Prisma & PostgreSQL",
+      "Custom Admin Panels & Headless CMS Integration",
+      "Multilingual & RTL-Ready Content Modelling",
+      "Lead Capture, Booking, CRM & WhatsApp Integrations",
+      "Core Web Vitals & Mobile Performance Engineering",
+      "Technical SEO, Structured Data & Sitemap Automation",
+      "Vercel Deployment, Preview Environments & Monitoring"
+    ],
+    "benefits": [
+      "Mobile visitors reach your content before they lose patience",
+      "Clean URLs, metadata and schema that search engines can read from day one",
+      "Your team edits content without booking developer time",
+      "One codebase serving every language and market you sell in",
+      "Full ownership of code, domain and hosting — no agency lock-in",
+      "Typed, documented code that makes next year's changes cheap"
+    ],
+    "metaTitle": "Custom Web Development Services | PakSoft",
+    "metaDescription": "Custom web development with Next.js, React, Node.js and PostgreSQL — fast, multilingual, SEO-ready sites you fully own. Tell us about your project today.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Discovery & Scope", "description": "We map your goals, your buyers, and the pages or flows that actually generate enquiries. The output is a written scope with a page inventory, an integration list, and a fixed delivery plan you can hold us to." },
+        { "step": 2, "title": "Architecture & Design", "description": "We design the interface and the data model together, so the content structure matches the pages you will really publish. You approve wireframes and visual design before a single line of production code is written." },
+        { "step": 3, "title": "Development", "description": "The front-end is built in Next.js and React with TypeScript, the API layer in Node.js against a PostgreSQL schema managed through Prisma. Every change ships to a preview URL, so you review progress continuously instead of at the end." },
+        { "step": 4, "title": "Integration & Content", "description": "We connect what your business runs on: forms and lead routing, CRM or WhatsApp handoff, analytics, payment or appointment providers. Content is loaded language by language and reviewed in context, not in a spreadsheet." },
+        { "step": 5, "title": "QA & Launch", "description": "We test on real devices and browsers, check accessibility and Core Web Vitals, and rehearse the DNS, SSL and redirect plan before go-live. Every old URL is mapped to its new home so existing rankings survive the switch." },
+        { "step": 6, "title": "Support & Iteration", "description": "After launch we watch errors, performance and traffic, and fix what the first weeks of real usage expose. From there you can keep us on a monthly retainer or move the codebase in-house — both paths are supported." }
+      ],
+      "faq": [
+        { "question": "How long does a website project take?", "answer": "A focused corporate or service website usually runs four to eight weeks from kickoff to launch, while portals with user accounts, dashboards or custom workflows take longer. The biggest variable is content readiness, so we start collecting copy, images and translations in week one." },
+        { "question": "What drives the cost of a project?", "answer": "Cost follows the number of unique page templates, the complexity of integrations, and how much custom back-end logic you need — not page count alone. Multilingual content, a custom admin panel and third-party integrations are the three items that move a quote most. Once scope is agreed we work to a fixed price and delivery plan." },
+        { "question": "Do I own the code and the accounts?", "answer": "Yes. The repository, domain, hosting and database accounts are registered in your name wherever possible, and all access is handed over at launch. We do not build on closed systems that only we can maintain, so you can continue with another team whenever you choose." },
+        { "question": "Can you rebuild my site without losing search rankings?", "answer": "Migration is a standard part of the work: we crawl the current site, keep the URL structure where it earns traffic, and 301-redirect every address we change. Titles, metadata and structured data move across with it, and we monitor Search Console for the first weeks after launch to catch anything that slips." },
+        { "question": "Will my team be able to update content ourselves?", "answer": "Yes. We build an admin panel or connect a headless CMS covering the parts you actually change — pages, blog posts, services, team and translations. Handover includes a short recorded walkthrough, and we stay reachable while your team settles in." },
+        { "question": "Which technologies do you use, and why those?", "answer": "Most projects run on Next.js, React and TypeScript, with a Node.js API layer, Prisma and PostgreSQL for data, Tailwind CSS for styling, and Vercel-class hosting for deployment. It is a mainstream stack with deep documentation and a large developer pool, which means the code is fast to extend and easy for anyone else to pick up later." },
+        { "question": "Do you build multilingual sites, including Arabic?", "answer": "Yes. Translation lives in the data model rather than in duplicated sites, so each language gets its own URLs, hreflang tags and indexable pages. For Arabic we build the interface right-to-left from the start, including layout, typography and form behaviour." },
+        { "question": "Do you also build online stores?", "answer": "Yes, though e-commerce is a separate service track — we build stores on ikas, Shopify and WooCommerce, or headless storefronts in Next.js. A corporate site and a store can be planned together so they share one brand system and one content workflow." },
+        { "question": "What happens after launch — do you offer maintenance?", "answer": "Our monthly maintenance covers dependency and security updates, uptime and error monitoring, backups, and an agreed number of change hours. If you prefer to maintain the site internally, we hand over documentation and infrastructure details and brief your developers instead." },
+        { "question": "Can you take over a site someone else built?", "answer": "Often yes. We start with a short audit of the codebase, dependencies and hosting, then tell you honestly whether continuing or rebuilding is the better investment. When we do take over, the first sprint usually goes to updates, backups and establishing a safe deployment process." }
+      ],
+      "technologies": [
+        { "icon": "nextjs", "name": "Next.js" },
+        { "icon": "react", "name": "React" },
+        { "icon": "typescript", "name": "TypeScript" },
+        { "icon": "nodejs", "name": "Node.js" },
+        { "icon": "prisma", "name": "Prisma" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "tailwindcss", "name": "Tailwind CSS" },
+        { "icon": "vercel", "name": "Vercel" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Web Geliştirme",
+    "shortDescription": "Kurumsal siteden müşteri paneline kadar Next.js ve React ile geliştirilen özel web projeleri: mobilde hızlı açılan, Google'da bulunan, çok dilli ve kodunun tamamı size ait olan altyapılar kuruyoruz.",
+    "fullDescription": "Web siteniz çoğu müşteri için firmanızla ilk temas noktasıdır; bu yüzden onu bir tanıtım broşürü gibi değil, bir yazılım projesi gibi ele alıyoruz. Bilgi mimarisi ve arayüz tasarımından Next.js ve React ile geliştirilen ön yüze, TypeScript ile yazılmış Node.js servislerine ve PostgreSQL veri modeline kadar süreci uçtan uca yürütüyoruz. Nakliyat ve lojistik siteleri, hasarlı araç alım siteleri, uzman doğrulamalı bir psikolog rehberi, randevu ve teklif formu odaklı danışmanlık siteleri ve üretici firmalar için sipariş takip panelleri geliştirdik. Türkiye'de trafiğin büyük bölümü mobilden geldiği için performansı, Core Web Vitals değerlerini ve teknik SEO'yu projenin sonunda değil ilk sprintinde ele alıyoruz. Teslimde kod deposu, alan adı ve sunucu hesapları sizin adınıza kalır.",
+    "features": [
+      "Next.js ve React ile Özel Ön Yüz Geliştirme",
+      "TypeScript, Node.js ve Prisma ile API Katmanı",
+      "PostgreSQL Veri Modeli ve Sorgu Optimizasyonu",
+      "Yönetim Paneli ve Headless CMS Entegrasyonu",
+      "Çok Dilli ve Sağdan Sola (RTL) Destekli İçerik Yapısı",
+      "Form, Randevu, WhatsApp ve CRM Entegrasyonları",
+      "Core Web Vitals ve Mobil Performans Optimizasyonu",
+      "Teknik SEO, Yapısal Veri (Schema) ve Otomatik Site Haritası"
+    ],
+    "benefits": [
+      "Mobil ziyaretçi sayfayı beklerken vazgeçmiyor",
+      "Google'ın okuyabildiği temiz URL, meta ve schema yapısı",
+      "İçeriği geliştirici beklemeden kendi ekibiniz güncelliyor",
+      "Tek kod tabanıyla Türkçe, İngilizce, Almanca ve Arapça yayın",
+      "Kod, alan adı ve sunucu hesapları sizde; ajansa bağımlılık yok",
+      "Tipli ve belgelenmiş kod sayesinde sonraki değişiklikler ucuz"
+    ],
+    "metaTitle": "Özel Web Sitesi ve Web Yazılım Geliştirme | PakSoft",
+    "metaDescription": "Next.js, React ve Node.js ile özel web sitesi ve web yazılımı: hızlı, çok dilli, SEO uyumlu ve kodu tamamen size ait. Ücretsiz ön görüşme için yazın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Keşif ve Kapsam", "description": "Hedeflerinizi, hedef kitlenizi ve gerçekten talep getiren sayfa ve akışları birlikte çıkarırız. Çıktı; sayfa listesi, entegrasyon listesi ve net teslim takvimi içeren yazılı bir kapsam dokümanıdır." },
+        { "step": 2, "title": "Mimari ve Tasarım", "description": "Arayüz ile veri modelini birlikte tasarlarız; böylece içerik yapısı gerçekten yayınlayacağınız sayfalarla birebir örtüşür. Tel çerçeve ve görsel tasarım onayınızdan geçmeden tek satır üretim kodu yazılmaz." },
+        { "step": 3, "title": "Geliştirme", "description": "Ön yüz Next.js, React ve TypeScript ile; API katmanı Node.js ile, veritabanı tarafı Prisma ve PostgreSQL üzerinde geliştirilir. Her değişiklik ayrı bir önizleme adresine çıkar, böylece süreci sonunda değil gün gün takip edersiniz." },
+        { "step": 4, "title": "Entegrasyon ve İçerik", "description": "İşinizi çalıştıran parçaları bağlarız: form ve talep yönlendirme, CRM veya WhatsApp aktarımı, analitik, ödeme ya da randevu sağlayıcıları. İçerik her dil için ayrı ayrı yüklenir ve tabloda değil, kendi sayfasında kontrol edilir." },
+        { "step": 5, "title": "Test ve Yayın", "description": "Gerçek cihaz ve tarayıcılarda test eder, erişilebilirlik ve Core Web Vitals değerlerini ölçer, yayın öncesi DNS, SSL ve yönlendirme planını prova ederiz. Eski adreslerin tamamı yeni karşılıklarına eşlenir; böylece mevcut sıralamalar geçişte kaybolmaz." },
+        { "step": 6, "title": "Destek ve İyileştirme", "description": "Yayından sonra hata, performans ve trafik verilerini izler, ilk haftalardaki gerçek kullanımın ortaya çıkardığı eksikleri gideririz. Sonrasında aylık bakım anlaşmasıyla devam edebilir ya da projeyi kendi ekibinize devralabilirsiniz." }
+      ],
+      "faq": [
+        { "question": "Bir web sitesi projesi ne kadar sürer?", "answer": "Kurumsal veya hizmet odaklı bir site genellikle başlangıçtan yayına 4–8 hafta sürer; üyelik, panel veya özel iş akışı içeren projeler daha uzun sürer. Süreyi en çok etkileyen unsur içeriktir, bu yüzden metin, görsel ve çevirileri ilk haftadan toplamaya başlarız." },
+        { "question": "Fiyatı belirleyen şey nedir?", "answer": "Fiyat, sayfa sayısından çok benzersiz şablon sayısına, entegrasyonların karmaşıklığına ve gereken özel yazılım miktarına bağlıdır. Çok dilli yapı, özel yönetim paneli ve üçüncü parti entegrasyonlar teklifi en çok değiştiren üç kalemdir. Kapsam netleştikten sonra sabit fiyat ve teslim planı veririz." },
+        { "question": "Kod ve alan adı bana mı ait olur?", "answer": "Evet. Kod deposu, alan adı, sunucu ve veritabanı hesapları mümkün olduğunca sizin adınıza açılır ve tüm erişimler teslimde devredilir. Yalnızca bizim sürdürebileceğimiz kapalı bir sistem kurmayız; dilediğiniz zaman başka bir ekiple yola devam edebilirsiniz." },
+        { "question": "Sitemi yenilersem Google sıralamalarımı kaybeder miyim?", "answer": "Doğru yürütüldüğünde hayır. Mevcut siteyi tarar, trafik getiren URL yapısını korur, değiştirdiğimiz her adres için 301 yönlendirmesi kurarız; başlık, meta ve yapısal veriler yeni siteye taşınır. Yayın sonrası ilk haftalarda Search Console'u izler, düşen sayfa olursa hızlıca müdahale ederiz." },
+        { "question": "İçeriği kendimiz güncelleyebilir miyiz?", "answer": "Evet. Gerçekten değiştirdiğiniz bölümler için — sayfalar, blog, hizmetler, ekip ve çeviriler — yönetim paneli kurar veya headless CMS bağlarız. Teslimde kısa bir eğitim videosu bırakır, alışma döneminde ekibinizin sorularını yanıtlarız." },
+        { "question": "Hangi teknolojileri kullanıyorsunuz?", "answer": "Projelerin çoğunu Next.js, React ve TypeScript ile geliştiriyoruz; API katmanında Node.js, veri tarafında Prisma ve PostgreSQL, arayüzde Tailwind CSS kullanıyor, yayını Vercel benzeri modern altyapılarda yapıyoruz. Bunlar yaygın kullanılan teknolojiler; yarın başka bir geliştirici projeyi zorlanmadan devralabilir." },
+        { "question": "Çok dilli site yapıyor musunuz?", "answer": "Evet. Çeviriyi her dil için ayrı site açarak değil, veri modelinin içinde çözeriz; her dilin kendi URL'i, hreflang etiketi ve indekslenebilir sayfaları olur. Arapça gibi sağdan sola yazılan dillerde arayüzü, tipografiyi ve form davranışını baştan RTL uyumlu kurarız." },
+        { "question": "E-ticaret sitesi de yapıyor musunuz?", "answer": "Evet, ancak e-ticaret ayrı bir hizmet başlığıdır: ikas, Shopify, WooCommerce veya headless mimariyle mağaza kuruyoruz. Kurumsal siteniz ile mağazanız aynı marka dilini ve tek içerik akışını paylaşacak şekilde birlikte planlanabilir." },
+        { "question": "Yayına aldıktan sonra bakım veriyor musunuz?", "answer": "Aylık bakım paketimiz güncellemeleri ve güvenlik yamalarını, yedeklemeyi, kesinti ve hata takibini ve anlaşılan saat kadar değişiklik hakkını kapsar. Bakımı iç ekibinizle yürütmek isterseniz dokümantasyonu ve altyapı bilgilerini teslim eder, geliştiricilerinizi bilgilendiririz." },
+        { "question": "Başka bir ajansın yaptığı siteyi devralır mısınız?", "answer": "Çoğu zaman evet. Önce kod, bağımlılıklar ve sunucu tarafında kısa bir inceleme yapar; devam etmenin mi yoksa yeniden yazmanın mı daha ekonomik olduğunu açıkça söyleriz. Devraldığımızda ilk iş genellikle güncellemeler, yedekleme ve güvenli bir yayın akışının kurulmasıdır." }
+      ],
+      "technologies": [
+        { "icon": "nextjs", "name": "Next.js" },
+        { "icon": "react", "name": "React" },
+        { "icon": "typescript", "name": "TypeScript" },
+        { "icon": "nodejs", "name": "Node.js" },
+        { "icon": "prisma", "name": "Prisma" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "tailwindcss", "name": "Tailwind CSS" },
+        { "icon": "vercel", "name": "Vercel" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Webentwicklung",
+    "shortDescription": "Individuelle Webentwicklung mit Next.js, React und TypeScript: performante, mehrsprachige Websites und Kundenportale mit sauberer Codebasis, dokumentierter Architektur und DSGVO-konformem Setup — im Eigentum Ihres Unternehmens statt als Mietlösung.",
+    "fullDescription": "Für die meisten Interessenten entscheidet Ihre Website, ob Ihr Unternehmen professionell arbeitet. Deshalb behandeln wir sie als Softwareprojekt und nicht als digitale Broschüre. Wir übernehmen den gesamten Weg: Informationsarchitektur und Interface-Design, ein Front-End mit Next.js und React, eine typisierte Node.js-API sowie ein PostgreSQL-Datenmodell, das Ihre realen Abläufe abbildet. Umgesetzt haben wir unter anderem Unternehmensauftritte für Logistik- und Fertigungsbetriebe, Beratungswebsites mit Termin- und Anfragestrecken sowie ein Kundenportal zur Auftragsverfolgung für einen Hersteller modularer Container im deutschsprachigen Markt. Mehrsprachigkeit, strukturierte Daten, Barrierefreiheit und Core Web Vitals sind ab dem ersten Sprint Anforderung, nicht Nacharbeit. Repository, Domain und Hosting-Konten gehören nach der Übergabe Ihnen.",
+    "features": [
+      "Front-End-Architektur mit Next.js & React",
+      "Typisierte Node.js-APIs mit Prisma & PostgreSQL",
+      "Individuelle Admin-Oberflächen & Headless-CMS-Anbindung",
+      "Mehrsprachigkeit inklusive RTL-fähiger Inhaltsmodelle",
+      "Formulare, Terminbuchung sowie CRM- und WhatsApp-Anbindung",
+      "Core Web Vitals, Performance & Barrierefreiheit (WCAG)",
+      "Technisches SEO, strukturierte Daten & automatisierte Sitemaps",
+      "Deployment, Preview-Umgebungen & Monitoring"
+    ],
+    "benefits": [
+      "Mobile Besucher sehen Inhalte, bevor sie abspringen",
+      "Saubere URLs, Metadaten und Schema-Auszeichnung ab dem ersten Tag",
+      "Ihr Team pflegt Inhalte ohne Entwicklerbudget",
+      "Eine Codebasis für alle Sprachen und Märkte",
+      "Volle Rechte an Code, Domain und Infrastruktur — kein Agentur-Lock-in",
+      "Typisierter, dokumentierter Code senkt die Wartungskosten dauerhaft"
+    ],
+    "metaTitle": "Webentwicklung: individuelle Websites | PakSoft",
+    "metaDescription": "Individuelle Webentwicklung mit Next.js, React und Node.js: schnell, mehrsprachig, DSGVO-konform und in Ihrem Eigentum. Jetzt unverbindlich anfragen.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Analyse & Scope", "description": "Wir klären Ziele, Zielgruppen und die Seiten oder Strecken, die tatsächlich Anfragen erzeugen. Ergebnis ist ein schriftlicher Scope mit Seiteninventar, Integrationsliste und verbindlichem Lieferplan." },
+        { "step": 2, "title": "Architektur & Design", "description": "Interface und Datenmodell entstehen gemeinsam, damit die Inhaltsstruktur zu den real geplanten Seiten passt. Wireframes und visuelles Design werden freigegeben, bevor die erste Zeile Produktionscode entsteht." },
+        { "step": 3, "title": "Entwicklung", "description": "Das Front-End entsteht mit Next.js, React und TypeScript, die API-Schicht in Node.js auf einem über Prisma verwalteten PostgreSQL-Schema. Jede Änderung landet auf einer Preview-URL, sodass Sie den Fortschritt laufend prüfen statt erst zum Abschluss." },
+        { "step": 4, "title": "Integration & Inhalte", "description": "Wir binden an, was Ihr Geschäft trägt: Formulare und Lead-Routing, CRM- oder WhatsApp-Übergabe, Analytics sowie Zahlungs- oder Terminanbieter. Inhalte werden sprachweise eingepflegt und im Seitenkontext geprüft, nicht in einer Tabelle." },
+        { "step": 5, "title": "QA & Go-live", "description": "Wir testen auf echten Geräten und Browsern, prüfen Barrierefreiheit und Core Web Vitals und proben DNS-, SSL- und Weiterleitungsplan vor dem Livegang. Jede alte URL erhält ihr neues Ziel, damit bestehende Rankings den Wechsel überstehen." },
+        { "step": 6, "title": "Betrieb & Weiterentwicklung", "description": "Nach dem Start überwachen wir Fehler, Performance und Traffic und beheben, was der reale Betrieb in den ersten Wochen zeigt. Danach betreuen wir die Website im Wartungsvertrag oder übergeben sie an Ihr internes Team." }
+      ],
+      "faq": [
+        { "question": "Wie lange dauert ein Website-Projekt?", "answer": "Eine fokussierte Unternehmens- oder Leistungswebsite braucht in der Regel vier bis acht Wochen von Kickoff bis Livegang; Portale mit Benutzerkonten, Dashboards oder eigenen Workflows dauern länger. Der größte Zeitfaktor sind die Inhalte, deshalb sammeln wir Texte, Bilder und Übersetzungen ab der ersten Woche." },
+        { "question": "Wovon hängt der Preis ab?", "answer": "Maßgeblich sind die Zahl eigenständiger Seitentemplates, die Komplexität der Integrationen und der Umfang individueller Backend-Logik — nicht die reine Seitenanzahl. Mehrsprachigkeit, ein eigenes Redaktionssystem und Drittanbieter-Schnittstellen verschieben Angebote am stärksten. Nach der Scope-Freigabe arbeiten wir zu Festpreis und festem Lieferplan." },
+        { "question": "Gehören Code und Zugänge mir?", "answer": "Ja. Repository, Domain, Hosting und Datenbank laufen soweit möglich auf Ihr Unternehmen, alle Zugänge werden bei Übergabe ausgehändigt. Wir bauen nichts auf geschlossenen Systemen, die nur wir pflegen können — ein Anbieterwechsel bleibt jederzeit möglich." },
+        { "question": "Verliere ich beim Relaunch meine Google-Rankings?", "answer": "Bei sauberer Durchführung nicht. Wir crawlen die bestehende Website, behalten tragende URL-Strukturen bei und richten für jede geänderte Adresse eine 301-Weiterleitung ein; Titel, Metadaten und strukturierte Daten wandern mit. In den ersten Wochen nach dem Livegang beobachten wir die Search Console und korrigieren Auffälligkeiten sofort." },
+        { "question": "Wie steht es um DSGVO und Barrierefreiheit?", "answer": "Wir setzen die technische Seite um: Consent-Management vor dem Laden von Tracking, datensparsame Formulare, Auftragsverarbeitung mit EU-Hosting-Optionen sowie Kontrast, Tastaturbedienung und Semantik nach WCAG. Die juristischen Texte wie Impressum, Datenschutzerklärung und Widerruf stimmen Sie mit Ihrer Rechtsberatung ab — wir binden sie korrekt ein." },
+        { "question": "Welche Technologien setzen Sie ein und warum?", "answer": "Die meisten Projekte laufen auf Next.js, React und TypeScript, mit Node.js für die API, Prisma und PostgreSQL für Daten, Tailwind CSS für das Styling und modernem Hosting für das Deployment. Dieser verbreitete Stack ist gut dokumentiert und hat einen großen Entwicklermarkt — Ihr Projekt bleibt also übernehmbar." },
+        { "question": "Können Redakteure Inhalte selbst pflegen?", "answer": "Ja. Wir bauen ein Admin-Interface oder binden ein Headless CMS für genau die Bereiche an, die Sie wirklich ändern: Seiten, Blog, Leistungen, Team und Übersetzungen. Zur Übergabe gehören eine kurze Videoeinführung und eine Einarbeitungsphase mit direkter Ansprechbarkeit." },
+        { "question": "Bauen Sie auch mehrsprachige Websites?", "answer": "Ja. Übersetzungen liegen im Datenmodell statt in duplizierten Websites, jede Sprache erhält eigene URLs, hreflang-Auszeichnung und indexierbare Seiten. Für Arabisch bauen wir Layout, Typografie und Formularverhalten von Beginn an rechtsläufig auf." },
+        { "question": "Bieten Sie Wartung nach dem Livegang?", "answer": "Unser Wartungsvertrag umfasst Abhängigkeits- und Sicherheitsupdates, Uptime- und Fehlermonitoring, Backups sowie ein vereinbartes Kontingent an Änderungsstunden. Wenn Sie intern warten möchten, übergeben wir Dokumentation und Infrastrukturdetails und briefen Ihre Entwickler." },
+        { "question": "Übernehmen Sie bestehende Projekte anderer Dienstleister?", "answer": "Häufig ja. Wir starten mit einem kurzen Audit von Codebasis, Abhängigkeiten und Hosting und sagen Ihnen offen, ob Weiterführen oder Neubau wirtschaftlicher ist. Bei einer Übernahme gehen die ersten Wochen meist in Updates, Backups und einen sicheren Deployment-Prozess." }
+      ],
+      "technologies": [
+        { "icon": "nextjs", "name": "Next.js" },
+        { "icon": "react", "name": "React" },
+        { "icon": "typescript", "name": "TypeScript" },
+        { "icon": "nodejs", "name": "Node.js" },
+        { "icon": "prisma", "name": "Prisma" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "tailwindcss", "name": "Tailwind CSS" },
+        { "icon": "vercel", "name": "Vercel" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تطوير الويب",
+    "shortDescription": "تطوير مواقع وتطبيقات ويب مخصّصة بواجهات Next.js وReact وواجهات برمجية بلغة Node.js وقواعد بيانات PostgreSQL: سرعة عالية على الهاتف، ودعم كامل للعربية من اليمين إلى اليسار، وملكية كاملة للشيفرة.",
+    "fullDescription": "يقرّر معظم العملاء جدّية شركتكم من موقعها الإلكتروني، لذلك نتعامل معه كمشروع برمجي لا كبروشور رقمي. نتولّى المسار كاملاً: هندسة المعلومات وتصميم الواجهة، ثم واجهة أمامية بـ Next.js وReact، وطبقة واجهات برمجية بلغة TypeScript فوق Node.js، ونموذج بيانات على PostgreSQL يعكس طريقة عمل نشاطكم فعلياً. نفّذنا مواقع لشركات النقل والخدمات اللوجستية، ومواقع شراء المركبات، ودليلاً موثّقاً للأخصائيين النفسيين، ومواقع استشارات قائمة على حجز المواعيد وجمع الطلبات، ولوحة لتتبّع الطلبات لعملاء إحدى شركات التصنيع. نتعامل مع تعدّد اللغات والبيانات المنظّمة ومؤشرات Core Web Vitals كمتطلبات من أول مرحلة. وعند التسليم تصبح الشيفرة والنطاق وحسابات الاستضافة باسمكم.",
+    "features": [
+      "بناء واجهات أمامية مخصّصة بـ Next.js وReact",
+      "طبقة واجهات برمجية بـ TypeScript وNode.js وPrisma",
+      "تصميم نماذج البيانات على PostgreSQL وتحسين الاستعلامات",
+      "لوحات تحكم مخصّصة وربط أنظمة إدارة محتوى Headless",
+      "بنية محتوى متعددة اللغات بدعم كامل للاتجاه من اليمين إلى اليسار",
+      "نماذج الطلبات وحجز المواعيد والربط مع CRM وواتساب",
+      "تحسين الأداء ومؤشرات Core Web Vitals على الأجهزة المحمولة",
+      "تحسين تقني لمحركات البحث وبيانات منظّمة وخرائط موقع تلقائية"
+    ],
+    "benefits": [
+      "زائر الهاتف يصل إلى المحتوى قبل أن ينفد صبره",
+      "روابط وبيانات وصفية ومخطط Schema تفهمه محركات البحث من اليوم الأول",
+      "فريقكم يحدّث المحتوى دون انتظار مطوّر",
+      "شيفرة واحدة تخدم العربية والإنجليزية وأي سوق تبيعون فيه",
+      "ملكية كاملة للشيفرة والنطاق والاستضافة دون ارتباط بالوكالة",
+      "شيفرة موثّقة تجعل تطويرات السنة القادمة أقل كلفة"
+    ],
+    "metaTitle": "خدمات تطوير الويب المخصّصة | PakSoft",
+    "metaDescription": "تطوير مواقع وتطبيقات ويب مخصّصة بـ Next.js وReact وNode.js: أداء سريع، دعم كامل للعربية، وملكية كاملة للشيفرة. تواصلوا معنا للحصول على عرض سعر.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "الاكتشاف وتحديد النطاق", "description": "نحدّد أهدافكم وجمهوركم والصفحات والمسارات التي تجلب الطلبات فعلاً. المخرَج وثيقة نطاق مكتوبة تتضمن قائمة الصفحات وقائمة عمليات الربط وخطة تسليم واضحة." },
+        { "step": 2, "title": "البنية والتصميم", "description": "نصمّم الواجهة ونموذج البيانات معاً حتى تتطابق بنية المحتوى مع الصفحات التي ستنشرونها بالفعل. لا تُكتب شيفرة إنتاجية قبل اعتمادكم للمخططات الأولية والتصميم البصري." },
+        { "step": 3, "title": "التطوير", "description": "تُبنى الواجهة الأمامية بـ Next.js وReact وTypeScript، وتُبنى طبقة الواجهات البرمجية بـ Node.js فوق قاعدة PostgreSQL تُدار عبر Prisma. يصدر كل تغيير على رابط معاينة مستقل لتتابعوا التقدّم أولاً بأول لا في النهاية." },
+        { "step": 4, "title": "الربط والمحتوى", "description": "نربط ما يشغّل عملكم: النماذج وتوجيه الطلبات، والتسليم إلى CRM أو واتساب، والتحليلات، ومزوّدي الدفع أو حجز المواعيد. يُدخل المحتوى لكل لغة على حدة ويُراجَع داخل صفحته لا في جدول بيانات." },
+        { "step": 5, "title": "الاختبار والإطلاق", "description": "نختبر على أجهزة ومتصفحات حقيقية، ونتحقق من إمكانية الوصول ومؤشرات Core Web Vitals، ونجرّب خطة النطاق والشهادات وإعادة التوجيه قبل الإطلاق. يُربط كل رابط قديم بمقابله الجديد حتى لا تفقدوا ترتيبكم في نتائج البحث." },
+        { "step": 6, "title": "الدعم والتحسين", "description": "بعد الإطلاق نراقب الأخطاء والأداء وحركة الزيارات ونعالج ما يكشفه الاستخدام الحقيقي في الأسابيع الأولى. بعدها يمكنكم الاستمرار بعقد صيانة شهري أو نقل المشروع إلى فريقكم الداخلي." }
+      ],
+      "faq": [
+        { "question": "كم يستغرق مشروع موقع إلكتروني؟", "answer": "يستغرق الموقع المؤسسي أو الخدمي المركّز عادةً من أربعة إلى ثمانية أسابيع من الانطلاق حتى الإطلاق، بينما تحتاج البوابات ذات الحسابات ولوحات التحكم ومسارات العمل المخصّصة وقتاً أطول. أكثر ما يؤثر في الجدول هو جاهزية المحتوى، لذلك نبدأ بجمع النصوص والصور والترجمات من الأسبوع الأول." },
+        { "question": "ما الذي يحدّد التكلفة؟", "answer": "تتحدّد التكلفة بعدد القوالب المختلفة للصفحات وتعقيد عمليات الربط وحجم المنطق البرمجي المخصّص، لا بعدد الصفحات وحده. تعدّد اللغات ولوحة التحكم المخصّصة والربط مع أنظمة خارجية هي أكثر ثلاثة بنود تغيّر العرض. وبعد اعتماد النطاق نعمل بسعر ثابت وخطة تسليم محددة." },
+        { "question": "هل تعود ملكية الشيفرة والحسابات إليّ؟", "answer": "نعم. يُسجَّل مستودع الشيفرة والنطاق والاستضافة وقاعدة البيانات باسم شركتكم قدر الإمكان، وتُسلَّم كل الصلاحيات عند الإطلاق. لا نبني على أنظمة مغلقة لا يستطيع صيانتها سوانا، فيبقى الانتقال إلى فريق آخر متاحاً في أي وقت." },
+        { "question": "هل سأفقد ترتيبي في جوجل عند إعادة بناء الموقع؟", "answer": "لا، إذا نُفّذت الهجرة بشكل صحيح. نفحص الموقع الحالي، ونحافظ على بنية الروابط التي تجلب الزيارات، ونضيف إعادة توجيه 301 لكل رابط نغيّره، مع نقل العناوين والبيانات الوصفية والبيانات المنظّمة. ونتابع Search Console في الأسابيع الأولى بعد الإطلاق لمعالجة أي تراجع فوراً." },
+        { "question": "هل يستطيع فريقنا تحديث المحتوى بنفسه؟", "answer": "نعم. نبني لوحة تحكم أو نربط نظام محتوى Headless يغطي ما تغيّرونه فعلاً: الصفحات والمدونة والخدمات وفريق العمل والترجمات. يتضمن التسليم شرحاً مصوّراً قصيراً، ونبقى متاحين للأسئلة خلال فترة الاعتياد." },
+        { "question": "ما التقنيات التي تستخدمونها ولماذا؟", "answer": "تعتمد معظم مشاريعنا على Next.js وReact وTypeScript، مع Node.js لطبقة الواجهات البرمجية، وPrisma مع PostgreSQL للبيانات، وTailwind CSS للتنسيق، واستضافة حديثة للنشر. هذه تقنيات واسعة الانتشار وموثّقة جيداً، ما يجعل تطوير المشروع سريعاً وتسليمه لأي مطوّر آخر ممكناً." },
+        { "question": "هل تدعمون المواقع متعددة اللغات والعربية بشكل صحيح؟", "answer": "نعم. نضع الترجمة داخل نموذج البيانات بدل تكرار الموقع لكل لغة، فيحصل كل سوق على روابطه ووسوم hreflang وصفحات قابلة للأرشفة. وفي العربية نبني التخطيط والخطوط وسلوك النماذج باتجاه من اليمين إلى اليسار منذ البداية." },
+        { "question": "هل تبنون المتاجر الإلكترونية أيضاً؟", "answer": "نعم، لكن التجارة الإلكترونية مسار خدمة مستقل: نبني المتاجر على ikas أو Shopify أو WooCommerce، أو كواجهات Headless بـ Next.js. ويمكن التخطيط للموقع المؤسسي والمتجر معاً ليتشاركا هوية واحدة وتدفّق محتوى واحداً." },
+        { "question": "هل تقدّمون صيانة بعد الإطلاق؟", "answer": "تشمل باقة الصيانة الشهرية تحديثات الاعتماديات والتحديثات الأمنية، ومراقبة التوافر والأخطاء، والنسخ الاحتياطي، وعدداً متفقاً عليه من ساعات التعديل. وإذا فضّلتم الصيانة داخلياً، نسلّم التوثيق وتفاصيل البنية التحتية ونوجّه مطوّريكم." },
+        { "question": "هل تستلمون مواقع طوّرتها جهة أخرى؟", "answer": "غالباً نعم. نبدأ بمراجعة سريعة للشيفرة والاعتماديات والاستضافة، ثم نخبركم بصراحة أيّهما أجدى: الاستمرار أم إعادة البناء. وعند الاستلام تذهب الأسابيع الأولى عادةً إلى التحديثات والنسخ الاحتياطي وبناء عملية نشر آمنة." }
+      ],
+      "technologies": [
+        { "icon": "nextjs", "name": "Next.js" },
+        { "icon": "react", "name": "React" },
+        { "icon": "typescript", "name": "TypeScript" },
+        { "icon": "nodejs", "name": "Node.js" },
+        { "icon": "prisma", "name": "Prisma" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "tailwindcss", "name": "Tailwind CSS" },
+        { "icon": "vercel", "name": "Vercel" }
+      ]
+    }
+  }
+}

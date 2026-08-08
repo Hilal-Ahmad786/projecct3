@@ -1,0 +1,228 @@
+{
+  "slug": "ai-solutions",
+  "en": {
+    "name": "AI Solutions",
+    "shortDescription": "Practical AI built around one job at a time: support agents grounded in your own data, assistants that read long documents, and automations wired into the systems your team already uses.",
+    "fullDescription": "AI only pays off when it is pointed at a specific job. We build the ones that earn their keep: support agents that answer from your own catalogue and policies, assistants that read long documents and return sourced answers, and automations that move work between the systems you already run. Our experience here is hands-on rather than theoretical — EidosUs, an AI reading assistant that turns academic papers into source-linked research notes, and a multi-tenant AI support agent for stores on the ikas e-commerce platform, with tool calling, retrieval over product and FAQ data, and web chat plus messaging channels. Every build includes retrieval grounded in your data, guardrails against invented answers, a clean handover to a human, and per-message cost tracking.",
+    "features": [
+      "AI Support Agents with Tool Calling and Live System Access",
+      "RAG Knowledge Bases Built on pgvector Embeddings",
+      "Document, Contract and Report Understanding",
+      "Workflow Automation Across Existing Business Systems",
+      "Multilingual Assistants (Turkish, English, German, Arabic)",
+      "Guardrails, Evaluation Sets and Refusal Testing",
+      "Human Handover, Full Conversation Logging and Audit Trails",
+      "Token and Cost Monitoring per Conversation"
+    ],
+    "benefits": [
+      "Repetitive questions answered around the clock without adding headcount",
+      "Answers grounded in your own documents rather than the open internet",
+      "Staff time moved from copy-paste work to decisions that need judgement",
+      "Clear visibility into what the AI said, to whom, and at what cost",
+      "A defined escalation path so hard cases reach a human quickly",
+      "An architecture you can extend as models improve, without a rebuild"
+    ],
+    "metaTitle": "AI Solutions — Agents, RAG & Automation | PakSoft",
+    "metaDescription": "Custom AI agents, RAG knowledge bases and workflow automation built on your own data, with guardrails and cost control. Book a free AI use-case assessment.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Use-Case Selection", "description": "We look at where your team repeats itself — the same questions, the same re-typing, the same document being summarised — and score candidates by volume, tolerance for error, and how measurable the outcome is. You leave this step with a shortlist and an honest note on anything AI is the wrong tool for." },
+        { "step": 2, "title": "Data & Knowledge Preparation", "description": "We gather the material the system must answer from: product data, policies, past tickets, manuals, contracts. It is cleaned, chunked, embedded into a vector index, and given an update path so the knowledge base does not silently go stale." },
+        { "step": 3, "title": "Prototype on Real Data", "description": "Within weeks you get a working prototype answering real questions from your real content, not a slide deck. Testing against your own material is the only reliable way to see where the model is strong and where retrieval needs work." },
+        { "step": 4, "title": "Guardrails & Evaluation", "description": "We build an evaluation set of questions with known correct answers, including ones the system should refuse, and measure every prompt change against it. Guardrails constrain scope, block disclosure of internals, and force the model to say it does not know rather than invent." },
+        { "step": 5, "title": "Integration & Launch", "description": "The assistant is connected to the channels and systems where the work actually happens — website chat, WhatsApp or Instagram, an internal dashboard, or your ERP and helpdesk through their APIs. We launch on a narrow scope first and widen it once the logs look clean." },
+        { "step": 6, "title": "Monitoring & Iteration", "description": "Conversations, escalations, refusals and token costs are logged and reviewed, and the gaps feed straight back into the knowledge base and prompts. Models change quickly, so we keep the system portable and re-test when a better or cheaper one appears." }
+      ],
+      "faq": [
+        { "question": "What data do we need before starting an AI project?", "answer": "Less than most companies expect. A working assistant usually needs your product or service data, your policies, and a sample of real questions customers or staff already ask — often exported from email, a helpdesk, or WhatsApp. You do not need a data warehouse or a labelled training set to get value." },
+        { "question": "How do you stop the AI from making things up?", "answer": "Three layers: retrieval, so answers are drawn from your documents rather than the model's memory; guardrails in the system prompt that require the model to say it does not know and hand over instead of guessing; and an evaluation set that we re-run whenever prompts or models change. We also log every answer so drift is visible rather than discovered by a customer." },
+        { "question": "What happens to our data, and who can see it?", "answer": "Your content stays in your own database, and we design the flow so only the passages relevant to a question are sent to the model provider for that request. Business-tier API access from major providers does not train on your data by default; we document exactly what leaves your systems so your privacy notice and processing records match reality." },
+        { "question": "Do we need to train our own model?", "answer": "Almost never. Modern hosted models combined with retrieval over your own content outperform a small custom model for the vast majority of business tasks, at a fraction of the cost and time. Fine-tuning becomes worth discussing only for narrow, high-volume, highly repetitive tasks with plenty of clean examples." },
+        { "question": "Can the AI work with our existing systems?", "answer": "Yes — that is what makes it useful rather than a novelty. Through tool calling, the assistant can query live data such as order status, stock or a customer record via your existing APIs, and return a grounded answer instead of a generic one. Where a system has no API, we discuss scheduled exports or a small integration layer." },
+        { "question": "What does it cost to run once it is live?", "answer": "Running costs are usage-based: model tokens per conversation plus hosting for the database and application. Short, retrieval-grounded answers are inexpensive, and we log cost per conversation so you can see the real figure instead of estimating. We also select model tiers per task, using a smaller model for classification and routing." },
+        { "question": "Is this realistic for a small business, not just a large one?", "answer": "Yes, and small teams often see the clearest benefit because one person is handling everything. The right scope is one high-volume task — answering product and delivery questions, qualifying incoming leads, drafting replies — rather than a company-wide platform. Starting narrow keeps the budget small and makes the result measurable." },
+        { "question": "When does the AI hand over to a person?", "answer": "We define handover rules with you: complaints, refunds, anything with a legal or financial edge, repeated failed answers, or a direct request for a human. The conversation transfers with full history so the customer never repeats themselves, and the assistant stops responding on that thread until the person is done." },
+        { "question": "How long before we see something working?", "answer": "A focused prototype answering questions from your real content typically takes a few weeks, not quarters. Production launch depends on how many systems it must integrate with and how much review your team wants before it faces customers — we deliberately start with an internal-facing pilot when the risk warrants it." }
+      ],
+      "technologies": [
+        { "name": "Anthropic Claude", "icon": "anthropic" },
+        { "name": "Python", "icon": "python" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "pgvector", "icon": "pgvector" },
+        { "name": "Prisma", "icon": "prisma" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Yapay Zeka Çözümleri",
+    "shortDescription": "Tek bir işi çözmek üzere kurgulanan uygulanabilir yapay zeka: kendi verinizle çalışan destek asistanları, uzun belgeleri okuyup özetleyen yardımcılar ve mevcut sistemlerinize bağlanan iş akışı otomasyonları.",
+    "fullDescription": "Yapay zeka ancak somut bir işe odaklandığında karşılığını veriyor. Biz de masraf çıkaran değil, kendini ödeyen kurguları geliştiriyoruz: kendi ürün verinizden ve politikalarınızdan cevap veren destek asistanları, uzun belgeleri okuyup kaynak göstererek özetleyen yardımcılar ve sistemleriniz arasında iş taşıyan otomasyonlar. Bu alandaki deneyimimiz teoriden değil sahadan geliyor — akademik makaleleri kaynağa bağlı araştırma notlarına dönüştüren yapay zeka okuma asistanı EidosUs ve ikas altyapısındaki e-ticaret mağazaları için geliştirdiğimiz, araç çağırma (tool calling), ürün ile SSS verisi üzerinde RAG ve web sohbet, WhatsApp, Instagram kanallarını kapsayan çok kiracılı yapay zeka destek asistanı. Her projede kendi verinize dayalı yanıt üretimi, uydurmayı engelleyen kısıtlar, temiz bir insana devir akışı ve mesaj başına maliyet takibi standarttır.",
+    "features": [
+      "Araç Çağırma ile Canlı Sisteme Bağlanan Yapay Zeka Destek Asistanları",
+      "pgvector Gömme Vektörleriyle Kurulan RAG Bilgi Bankası",
+      "Belge, Sözleşme ve Rapor Okuma ve Özetleme",
+      "Mevcut Sistemler Arasında İş Akışı Otomasyonu",
+      "Çok Dilli Asistanlar (Türkçe, İngilizce, Almanca, Arapça)",
+      "Kısıtlar, Değerlendirme Setleri ve Cevap Vermeme Testleri",
+      "İnsana Devir, Tam Konuşma Kaydı ve Denetim İzi",
+      "Konuşma Başına Token ve Maliyet Takibi"
+    ],
+    "benefits": [
+      "Tekrarlayan sorulara ekip büyütmeden 7/24 yanıt verilmesi",
+      "İnternetten değil, kendi belgelerinizden beslenen doğru cevaplar",
+      "Ekibin kopyala-yapıştır işten çıkıp karar gerektiren işe yönelmesi",
+      "Yapay zekanın ne dediğinin, kime dediğinin ve maliyetinin şeffaf olması",
+      "Zor vakaların hızla insana aktarıldığı tanımlı bir devir akışı",
+      "Modeller geliştikçe baştan yazılmadan genişleyebilen bir mimari"
+    ],
+    "metaTitle": "Yapay Zeka Çözümleri — AI Asistan & RAG | PakSoft",
+    "metaDescription": "Kendi verinizle çalışan yapay zeka asistanları, RAG bilgi bankası ve süreç otomasyonu; KVKK uyumlu kurgu ve maliyet kontrolü. Ücretsiz ön görüşme için yazın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Kullanım Senaryosunun Seçimi", "description": "Ekibinizin kendini tekrar ettiği yerlere bakıyoruz: aynı sorular, aynı yeniden yazma, aynı belgenin tekrar tekrar özetlenmesi. Adayları hacim, hata toleransı ve sonucun ölçülebilirliğine göre puanlıyor; yapay zekanın doğru araç olmadığı işleri de açıkça söylüyoruz." },
+        { "step": 2, "title": "Veri ve Bilgi Hazırlığı", "description": "Sistemin cevap üreteceği malzemeyi topluyoruz: ürün verisi, politikalar, geçmiş destek yazışmaları, kılavuzlar, sözleşmeler. İçerik temizlenip parçalara ayrılıyor, vektör dizinine gömülüyor ve bir güncelleme akışına bağlanıyor; böylece bilgi bankası sessizce eskimiyor." },
+        { "step": 3, "title": "Gerçek Veriyle Prototip", "description": "Birkaç hafta içinde sunum değil, sizin gerçek içeriğinizden gerçek sorulara cevap veren çalışan bir prototip görüyorsunuz. Modelin nerede güçlü olduğunu ve arama katmanının nerede geliştirilmesi gerektiğini anlamanın tek güvenilir yolu kendi verinizle test etmek." },
+        { "step": 4, "title": "Kısıtlar ve Değerlendirme", "description": "Doğru cevabı bilinen sorulardan ve sistemin cevaplamayı reddetmesi gereken örneklerden oluşan bir değerlendirme seti kuruyor, her prompt değişikliğini bu sete karşı ölçüyoruz. Kısıtlar konuyu daraltıyor, iç bilgilerin paylaşılmasını engelliyor ve modeli uydurmak yerine bilmiyorum demeye zorluyor." },
+        { "step": 5, "title": "Entegrasyon ve Yayın", "description": "Asistanı işin gerçekten yapıldığı yere bağlıyoruz: web sitesi sohbeti, WhatsApp veya Instagram, bir iç panel ya da API'leri üzerinden ERP ve destek sisteminiz. Yayına önce dar bir kapsamla çıkıyor, kayıtlar temiz göründükçe kapsamı genişletiyoruz." },
+        { "step": 6, "title": "İzleme ve İyileştirme", "description": "Konuşmalar, insana devirler, cevaplanamayan sorular ve token maliyetleri kayıt altına alınıp düzenli olarak inceleniyor; çıkan boşluklar doğrudan bilgi bankasına ve promptlara dönüyor. Modeller hızla değiştiği için sistemi taşınabilir tutuyor, daha iyi veya daha ucuz bir model çıktığında yeniden ölçüyoruz." }
+      ],
+      "faq": [
+        { "question": "Yapay zeka projesine başlamak için elimizde ne olmalı?", "answer": "Çoğu şirketin sandığından çok daha azı. Çalışan bir asistan için genelde ürün veya hizmet verisi, politikalarınız ve müşterilerin ya da ekibin zaten sorduğu gerçek sorulardan bir örneklem yeterli; bunlar çoğu zaman e-posta, destek sistemi veya WhatsApp yazışmalarından çıkarılıyor. Veri ambarına veya etiketlenmiş eğitim setine ihtiyacınız yok." },
+        { "question": "KVKK açısından müşteri verisi nasıl korunuyor?", "answer": "İçeriğiniz kendi veritabanınızda kalıyor; kurguyu, bir soruya cevap üretmek için yalnızca ilgili metin parçalarının model sağlayıcısına gitmesini sağlayacak şekilde tasarlıyoruz. Kurumsal API erişiminde sağlayıcılar verinizi varsayılan olarak model eğitiminde kullanmıyor; hangi verinin sistemden çıktığını belgeliyoruz ki aydınlatma metniniz ve veri işleme envanteriniz gerçeği yansıtsın." },
+        { "question": "Yapay zekanın uydurma cevap vermesini nasıl engelliyorsunuz?", "answer": "Üç katmanla: cevabın modelin ezberinden değil sizin belgelerinizden üretilmesini sağlayan arama katmanı; bilmediğinde tahmin etmek yerine bilmiyorum deyip devretmesini zorunlu kılan kısıtlar; ve prompt ya da model değiştiğinde yeniden çalıştırdığımız değerlendirme seti. Ayrıca her cevap kayıt altına alınıyor, böylece sapmayı müşteriden değil kayıtlardan öğreniyorsunuz." },
+        { "question": "Kendi modelimizi eğitmemiz gerekir mi?", "answer": "Neredeyse hiçbir zaman. Hazır güçlü modeller kendi içeriğiniz üzerinde arama ile birleştiğinde, iş süreçlerinin büyük çoğunluğunda küçük bir özel modelden çok daha iyi sonuç veriyor; hem maliyet hem süre kat kat düşük. İnce ayar (fine-tuning) ancak dar, çok tekrarlayan ve bolca temiz örneği olan işlerde konuşulmaya değer." },
+        { "question": "Mevcut sistemlerimizle entegre olabilir mi?", "answer": "Evet, zaten faydalı olmasını sağlayan şey bu. Araç çağırma sayesinde asistan sipariş durumu, stok veya müşteri kaydı gibi canlı veriyi mevcut API'leriniz üzerinden sorgulayıp genel geçer değil gerçek bir cevap üretebiliyor. API'si olmayan sistemler için zamanlanmış veri aktarımı veya küçük bir entegrasyon katmanı konuşuyoruz." },
+        { "question": "Yayına aldıktan sonra aylık maliyeti ne olur?", "answer": "İşletme maliyeti kullanıma bağlı: konuşma başına model kullanımı ile veritabanı ve uygulama barındırma. Kısa ve belgeye dayalı cevaplar ucuzdur; konuşma başına maliyeti kayıt altına aldığımız için tahmin yürütmek yerine gerçek rakamı görürsünüz. Ayrıca her işe uygun model seviyesini seçiyor, sınıflandırma ve yönlendirme gibi işlerde daha küçük modeller kullanıyoruz." },
+        { "question": "KOBİ ölçeğinde gerçekçi mi, yoksa büyük şirket işi mi?", "answer": "Fazlasıyla gerçekçi; hatta her işi birkaç kişinin çevirdiği ekiplerde fayda daha net görülüyor. Doğru kapsam şirket çapında bir platform değil, tek ve yüksek hacimli bir iş: ürün ve kargo sorularını yanıtlamak, gelen talepleri nitelemek, yanıt taslağı hazırlamak. Dar başlamak bütçeyi küçük, sonucu ölçülebilir tutuyor." },
+        { "question": "Hangi süreçleri otomatikleştirmek mantıklı?", "answer": "Kuralı belli, çok tekrar eden ve hatası telafi edilebilir işler: sık sorulan sorular, sipariş ve kargo durumu, teklif taslağı, gelen taleplerin sınıflandırılıp doğru kişiye yönlendirilmesi, uzun belgelerin özetlenmesi. Yasal sonucu olan, sezgi gerektiren veya nadir görülen kararları ise insanda bırakıyor, yapay zekayı orada yalnızca hazırlık aşamasında kullanıyoruz." },
+        { "question": "Asistan hangi durumda insana devrediyor?", "answer": "Devir kurallarını birlikte tanımlıyoruz: şikâyet, iade ve para iadesi, hukuki veya finansal sonucu olan konular, üst üste başarısız cevaplar ya da müşterinin doğrudan insan talep etmesi. Konuşma tüm geçmişiyle aktarılıyor, müşteri kendini tekrar etmiyor ve temsilci işi bitirene kadar asistan o konuşmada susuyor." },
+        { "question": "Ne kadar sürede çalışan bir sonuç görürüz?", "answer": "Kendi içeriğinizden cevap veren odaklı bir prototip genelde birkaç hafta sürüyor, aylar değil. Canlıya çıkış kaç sisteme bağlanacağına ve ekibinizin müşteri karşısına çıkmadan önce ne kadar kontrol istediğine göre değişiyor; risk gerektiriyorsa bilinçli olarak önce şirket içi bir pilotla başlıyoruz." }
+      ],
+      "technologies": [
+        { "name": "Anthropic Claude", "icon": "anthropic" },
+        { "name": "Python", "icon": "python" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "pgvector", "icon": "pgvector" },
+        { "name": "Prisma", "icon": "prisma" }
+      ]
+    }
+  },
+  "de": {
+    "name": "KI-Lösungen",
+    "shortDescription": "KI mit klarem Anwendungsfall und messbarem Nutzen: Support-Agenten, die aus Ihren eigenen Daten antworten, Assistenten für lange Dokumente und Automatisierungen, die an Ihre bestehenden Fachsysteme angebunden sind.",
+    "fullDescription": "KI zahlt sich aus, wenn sie auf eine konkrete Aufgabe gerichtet ist. Wir entwickeln genau solche Anwendungen: Support-Agenten, die aus Ihrem Katalog und Ihren Richtlinien antworten, Assistenten, die lange Dokumente lesen und mit Quellenangabe zusammenfassen, sowie Automatisierungen, die Vorgänge zwischen Ihren bestehenden Systemen bewegen. Unsere Erfahrung stammt aus der Umsetzung, nicht aus Folien — EidosUs, ein KI-Leseassistent, der wissenschaftliche Arbeiten in quellenverknüpfte Notizen überführt, und ein mandantenfähiger KI-Support-Agent für Shops auf der E-Commerce-Plattform ikas mit Tool Calling, Retrieval über Produkt- und FAQ-Daten sowie Web-Chat und Messaging-Kanälen. Jede Umsetzung enthält Antworten auf Basis Ihrer Daten, Leitplanken gegen erfundene Aussagen, eine saubere Übergabe an Mitarbeitende und nachvollziehbare Kosten je Konversation.",
+    "features": [
+      "KI-Support-Agenten mit Tool Calling und Zugriff auf Live-Daten",
+      "RAG-Wissensbasis auf Grundlage von pgvector-Embeddings",
+      "Verstehen von Dokumenten, Verträgen und Berichten",
+      "Prozessautomatisierung über bestehende Fachsysteme hinweg",
+      "Mehrsprachige Assistenten (Deutsch, Englisch, Türkisch, Arabisch)",
+      "Leitplanken, Evaluationssets und Tests auf korrektes Verweigern",
+      "Übergabe an Mitarbeitende, vollständige Protokolle und Audit-Trail",
+      "Token- und Kostenerfassung je Konversation"
+    ],
+    "benefits": [
+      "Wiederkehrende Anfragen rund um die Uhr beantwortet, ohne neues Personal",
+      "Antworten aus Ihren eigenen Dokumenten statt aus dem offenen Internet",
+      "Mitarbeitende arbeiten an Entscheidungen statt an Copy-and-paste",
+      "Nachvollziehbar, was die KI wem geantwortet hat und was es gekostet hat",
+      "Definierte Eskalation, damit kritische Fälle schnell bei Menschen landen",
+      "Eine Architektur, die mit besseren Modellen wächst statt neu gebaut zu werden"
+    ],
+    "metaTitle": "KI-Lösungen — Agenten, RAG & Automatisierung | PakSoft",
+    "metaDescription": "KI-Agenten, RAG-Wissensbasis und Prozessautomatisierung auf Basis Ihrer Daten — DSGVO-konform, mit Leitplanken und Kostenkontrolle. Erstgespräch jetzt anfragen.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Auswahl des Anwendungsfalls", "description": "Wir sehen uns an, wo sich Ihr Team wiederholt: dieselben Fragen, dasselbe Abtippen, dieselbe Zusammenfassung. Die Kandidaten werden nach Volumen, Fehlertoleranz und Messbarkeit bewertet — inklusive einer klaren Aussage dort, wo KI das falsche Werkzeug ist." },
+        { "step": 2, "title": "Daten- und Wissensaufbereitung", "description": "Wir sammeln das Material, aus dem das System antworten soll: Produktdaten, Richtlinien, frühere Tickets, Handbücher, Verträge. Die Inhalte werden bereinigt, segmentiert, als Embeddings indexiert und an einen Aktualisierungsprozess gehängt, damit die Wissensbasis nicht unbemerkt veraltet." },
+        { "step": 3, "title": "Prototyp mit echten Daten", "description": "Innerhalb weniger Wochen steht ein lauffähiger Prototyp, der echte Fragen aus Ihren echten Inhalten beantwortet — keine Präsentation. Nur der Test am eigenen Material zeigt zuverlässig, wo das Modell stark ist und wo das Retrieval nachgeschärft werden muss." },
+        { "step": 4, "title": "Leitplanken & Evaluation", "description": "Wir erstellen ein Evaluationsset aus Fragen mit bekannter Antwort sowie Fällen, die das System verweigern muss, und messen jede Prompt-Änderung dagegen. Leitplanken begrenzen den Themenraum, verhindern die Preisgabe interner Details und zwingen das Modell, Unwissen einzugestehen statt zu erfinden." },
+        { "step": 5, "title": "Integration & Inbetriebnahme", "description": "Der Assistent wird dort angebunden, wo die Arbeit stattfindet: Website-Chat, WhatsApp oder Instagram, ein internes Dashboard oder ERP und Helpdesk über deren Schnittstellen. Wir starten mit engem Themenumfang und weiten ihn aus, sobald die Protokolle sauber aussehen." },
+        { "step": 6, "title": "Betrieb & Weiterentwicklung", "description": "Konversationen, Eskalationen, Verweigerungen und Token-Kosten werden protokolliert und regelmäßig ausgewertet; erkannte Lücken fließen direkt in Wissensbasis und Prompts zurück. Da sich Modelle schnell ändern, halten wir das System portabel und prüfen neue Modelle gegen dasselbe Evaluationsset." }
+      ],
+      "faq": [
+        { "question": "Welche Daten brauchen wir für den Start?", "answer": "Deutlich weniger, als die meisten Unternehmen annehmen. Für einen funktionierenden Assistenten genügen meist Produkt- oder Leistungsdaten, Ihre Richtlinien und eine Stichprobe echter Fragen aus E-Mail, Helpdesk oder Messenger. Ein Data Warehouse oder ein gelabelter Trainingsdatensatz ist nicht erforderlich." },
+        { "question": "Wie stellen Sie DSGVO-Konformität sicher?", "answer": "Ihre Inhalte bleiben in Ihrer eigenen Datenbank, und pro Anfrage werden nur die relevanten Textabschnitte an den Modellanbieter übertragen. Wir dokumentieren jeden Datenfluss für Ihr Verarbeitungsverzeichnis, unterstützen bei den Auftragsverarbeitungsverträgen mit den eingesetzten Anbietern und richten Datenbank sowie Anwendung auf Wunsch in EU-Rechenzentren ein." },
+        { "question": "Bleiben unsere Daten beim Anbieter oder fließen sie ins Modelltraining?", "answer": "Bei den geschäftlichen API-Zugängen der großen Anbieter werden übermittelte Inhalte standardmäßig nicht für das Modelltraining verwendet, und Aufbewahrungsfristen sind vertraglich geregelt. Wir legen offen, welche Daten das System verlassen, protokollieren jede Anfrage und Antwort und schaffen damit die Nachweisbarkeit, die interne Richtlinien und Transparenzanforderungen wie im EU AI Act voraussetzen." },
+        { "question": "Wie verhindern Sie erfundene Antworten?", "answer": "Über drei Ebenen: Retrieval, damit Antworten aus Ihren Dokumenten und nicht aus dem Modellgedächtnis stammen; Leitplanken, die bei fehlendem Wissen eine Übergabe statt einer Vermutung erzwingen; und ein Evaluationsset, das bei jeder Prompt- oder Modelländerung erneut läuft. Jede Antwort wird protokolliert, sodass Abweichungen intern auffallen und nicht beim Kunden." },
+        { "question": "Müssen wir ein eigenes Modell trainieren?", "answer": "In aller Regel nein. Leistungsfähige gehostete Modelle in Kombination mit Retrieval auf Ihren Inhalten schlagen ein kleines Eigenmodell bei den meisten Geschäftsaufgaben deutlich — bei einem Bruchteil von Kosten und Zeit. Fine-Tuning lohnt sich nur bei eng umrissenen, sehr häufigen Aufgaben mit vielen sauberen Beispielen." },
+        { "question": "Lässt sich die KI an unsere bestehenden Systeme anbinden?", "answer": "Ja, und genau das macht sie im Betrieb wertvoll. Per Tool Calling fragt der Assistent Live-Daten wie Auftragsstatus, Bestand oder Kundendatensatz über Ihre Schnittstellen ab und antwortet konkret statt allgemein. Für Systeme ohne API sprechen wir über geplante Exporte oder eine schlanke Integrationsschicht." },
+        { "question": "Mit welchen laufenden Kosten müssen wir rechnen?", "answer": "Die Betriebskosten sind nutzungsabhängig: Modell-Token je Konversation plus Hosting für Datenbank und Anwendung. Kurze, quellenbasierte Antworten sind günstig, und wir erfassen die Kosten je Konversation, sodass Sie reale Zahlen statt Schätzungen sehen. Für Klassifikation und Routing setzen wir bewusst kleinere Modelle ein." },
+        { "question": "Wann übergibt der Assistent an einen Menschen?", "answer": "Die Regeln definieren wir gemeinsam: Beschwerden, Retouren und Erstattungen, rechtlich oder finanziell heikle Themen, wiederholt erfolglose Antworten oder der ausdrückliche Wunsch nach einer Person. Die Konversation wird mit vollständigem Verlauf übergeben, und der Assistent schweigt in diesem Vorgang, bis Ihre Mitarbeitenden abgeschlossen haben." },
+        { "question": "Wie schnell sehen wir ein Ergebnis?", "answer": "Ein fokussierter Prototyp, der Fragen aus Ihren echten Inhalten beantwortet, entsteht üblicherweise in wenigen Wochen. Der Produktivstart hängt davon ab, wie viele Systeme angebunden werden und wie viel Freigabe Ihr Team vor dem Kundenkontakt wünscht — bei erhöhtem Risiko starten wir bewusst mit einem internen Pilotbetrieb." }
+      ],
+      "technologies": [
+        { "name": "Anthropic Claude", "icon": "anthropic" },
+        { "name": "Python", "icon": "python" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "pgvector", "icon": "pgvector" },
+        { "name": "Prisma", "icon": "prisma" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "حلول الذكاء الاصطناعي",
+    "shortDescription": "ذكاء اصطناعي عملي موجّه لمهمة محددة: وكلاء دعم يجيبون بالعربية من بياناتكم أنتم، ومساعدون يقرأون المستندات الطويلة ويلخصونها، وأتمتة مرتبطة بالأنظمة التي يستخدمها فريقكم اليوم، مع ضوابط تمنع الإجابات المختلَقة.",
+    "fullDescription": "لا يعطي الذكاء الاصطناعي عائداً إلا حين يُوجَّه إلى مهمة محددة. لذلك نبني التطبيقات التي تسدّد كلفتها: وكلاء دعم يجيبون من كتالوجكم وسياساتكم، ومساعدون يقرأون المستندات الطويلة ويلخصونها مع الإشارة إلى المصدر، وأتمتة تنقل العمل بين أنظمتكم القائمة. خبرتنا هنا تنفيذية لا نظرية — EidosUs، وهو مساعد قراءة بالذكاء الاصطناعي يحوّل الأوراق الأكاديمية إلى ملاحظات بحثية موصولة بمصادرها، ووكيل دعم متعدد المستأجرين لمتاجر منصة ikas للتجارة الإلكترونية يعتمد على استدعاء الأدوات (tool calling) والاسترجاع فوق بيانات المنتجات والأسئلة الشائعة عبر الدردشة والقنوات الفورية. وكل تنفيذ يشمل إجابات مستندة إلى بياناتكم، وضوابط تمنع الإجابات المختلَقة، وتحويلاً سلساً إلى موظف بشري، وتتبعاً للتكلفة لكل محادثة.",
+    "features": [
+      "وكلاء دعم بالذكاء الاصطناعي مع استدعاء الأدوات والوصول إلى البيانات الحية",
+      "قاعدة معرفة RAG مبنية على تضمينات pgvector",
+      "دعم كامل للغة العربية إلى جانب الإنجليزية والتركية والألمانية",
+      "قراءة المستندات والعقود والتقارير وتلخيصها",
+      "أتمتة سير العمل بين الأنظمة القائمة لديكم",
+      "ضوابط وحُزم تقييم واختبارات للامتناع عن الإجابة عند اللزوم",
+      "التحويل إلى موظف بشري وتسجيل كامل للمحادثات ومسار تدقيق",
+      "تتبع استهلاك الرموز والتكلفة لكل محادثة"
+    ],
+    "benefits": [
+      "الإجابة عن الأسئلة المتكررة على مدار الساعة دون توسيع الفريق",
+      "إجابات مستندة إلى مستنداتكم أنتم لا إلى محتوى الإنترنت المفتوح",
+      "خدمة عربية طبيعية تعكس لهجة علامتكم التجارية وأسلوب خطابها",
+      "انتقال وقت الموظفين من النسخ واللصق إلى القرارات التي تحتاج خبرة",
+      "وضوح تام لما قاله النظام ولمن قاله وبأي تكلفة",
+      "مسار تصعيد محدد يضمن وصول الحالات الحساسة إلى إنسان بسرعة"
+    ],
+    "metaTitle": "حلول الذكاء الاصطناعي — وكلاء ذكيون | PakSoft",
+    "metaDescription": "وكلاء ذكاء اصطناعي وقواعد معرفة RAG وأتمتة تعمل على بياناتكم بدعم عربي كامل وضوابط وخصوصية. احجزوا جلسة مجانية لتقييم حالة الاستخدام الأنسب لكم.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "اختيار حالة الاستخدام", "description": "ننظر إلى المواضع التي يكرر فيها فريقكم نفسه: الأسئلة ذاتها، وإعادة الإدخال ذاتها، وتلخيص المستند نفسه مراراً. نقيّم المرشحين وفق الحجم وهامش الخطأ المقبول وقابلية قياس النتيجة، ونصارحكم بالمهام التي لا يكون الذكاء الاصطناعي أداتها الصحيحة." },
+        { "step": 2, "title": "تجهيز البيانات والمعرفة", "description": "نجمع المادة التي سيجيب منها النظام: بيانات المنتجات والسياسات وسجل الدعم السابق والأدلة والعقود. تُنظَّف هذه المادة وتُقسَّم وتُفهرس كتضمينات في قاعدة متجهات، وتُربط بآلية تحديث حتى لا تتقادم قاعدة المعرفة بصمت." },
+        { "step": 3, "title": "نموذج أولي على بيانات حقيقية", "description": "خلال أسابيع تحصلون على نموذج عامل يجيب عن أسئلة حقيقية من محتواكم الفعلي، لا على عرض تقديمي. الاختبار على مادتكم أنتم هو الطريقة الموثوقة الوحيدة لمعرفة مواطن قوة النموذج والمواضع التي يحتاج فيها الاسترجاع إلى ضبط." },
+        { "step": 4, "title": "الضوابط والتقييم", "description": "نبني حزمة تقييم من أسئلة معروفة الإجابة، ومن حالات يجب أن يمتنع النظام عن الرد فيها، ونقيس كل تعديل على التوجيهات مقابلها. تحصر الضوابط نطاق الحديث وتمنع كشف التفاصيل الداخلية وتلزم النموذج بقول لا أعرف بدل الاختلاق." },
+        { "step": 5, "title": "التكامل والإطلاق", "description": "نربط المساعد بالقنوات والأنظمة التي يجري فيها العمل فعلاً: دردشة الموقع، أو WhatsApp و Instagram، أو لوحة داخلية، أو أنظمة ERP والدعم عبر واجهاتها البرمجية. نطلق أولاً بنطاق ضيق ثم نوسّعه حين تبدو السجلات نظيفة." },
+        { "step": 6, "title": "المراقبة والتحسين", "description": "تُسجَّل المحادثات وحالات التصعيد والامتناع وتكاليف الرموز وتُراجَع دورياً، وتعود الثغرات مباشرة إلى قاعدة المعرفة وإلى التوجيهات. ولأن النماذج تتغير بسرعة، نُبقي النظام قابلاً للنقل ونعيد القياس عند ظهور نموذج أفضل أو أقل كلفة." }
+      ],
+      "faq": [
+        { "question": "ما البيانات التي نحتاجها قبل البدء؟", "answer": "أقل بكثير مما تتوقعه معظم الشركات. يكفي عادة بيانات منتجاتكم أو خدماتكم وسياساتكم وعيّنة من الأسئلة الحقيقية التي يطرحها العملاء أو الموظفون، وغالباً تُستخرج من البريد أو نظام الدعم أو محادثات WhatsApp. لا حاجة إلى مستودع بيانات ولا إلى مجموعة تدريب موسومة." },
+        { "question": "كيف تتعامل الحلول مع اللغة العربية ولهجات الخليج؟", "answer": "نضبط المساعد ليجيب بالعربية الفصحى المبسّطة بأسلوب علامتكم، مع فهم الأسئلة الواردة بالعامية أو بمزيج عربي-إنجليزي وهو الشائع في محادثات العملاء. نختبر الإجابات على أسئلة حقيقية من سوقكم قبل الإطلاق بدل الاكتفاء بترجمة نصوص إنجليزية." },
+        { "question": "أين تُخزَّن بياناتنا ومن يطّلع عليها؟", "answer": "يبقى محتواكم في قاعدة بياناتكم، ونصمم التدفق بحيث لا يُرسل إلى مزود النموذج سوى المقاطع المتعلقة بالسؤال المطروح. الاشتراكات المؤسسية لدى المزودين الكبار لا تستخدم بياناتكم في تدريب النماذج افتراضياً، ونوثق بدقة ما الذي يغادر أنظمتكم لتتطابق سياسة الخصوصية لديكم مع الواقع." },
+        { "question": "كيف تمنعون النظام من اختلاق الإجابات؟", "answer": "عبر ثلاث طبقات: الاسترجاع بحيث تأتي الإجابة من مستنداتكم لا من ذاكرة النموذج؛ وضوابط تُلزمه بقول لا أعرف والتحويل بدل التخمين؛ وحزمة تقييم نعيد تشغيلها مع كل تغيير في التوجيهات أو النموذج. كما تُسجَّل كل إجابة، فينكشف أي انحراف لديكم قبل أن يكتشفه العميل." },
+        { "question": "هل نحتاج إلى تدريب نموذج خاص بنا؟", "answer": "نادراً جداً. النماذج الجاهزة القوية مع الاسترجاع فوق محتواكم تتفوق على نموذج صغير مخصص في الغالبية العظمى من مهام الأعمال، وبكلفة ووقت أقل بكثير. أما الضبط الدقيق fine-tuning فيستحق النقاش فقط في مهام ضيقة عالية التكرار تتوفر لها أمثلة نظيفة كثيرة." },
+        { "question": "هل يمكن ربط الذكاء الاصطناعي بأنظمتنا الحالية؟", "answer": "نعم، وهذا ما يجعله مفيداً لا مجرد واجهة لطيفة. باستخدام استدعاء الأدوات يستعلم المساعد عن بيانات حية مثل حالة الطلب أو المخزون أو سجل العميل عبر واجهاتكم البرمجية ويجيب إجابة محددة. وللأنظمة التي لا تملك واجهة برمجية نناقش تصدير بيانات مجدولاً أو طبقة تكامل صغيرة." },
+        { "question": "ما التكلفة التشغيلية بعد الإطلاق؟", "answer": "التكلفة مرتبطة بالاستخدام: رموز النموذج لكل محادثة إضافة إلى استضافة قاعدة البيانات والتطبيق. الإجابات القصيرة المستندة إلى المصادر منخفضة الكلفة، ونسجل التكلفة لكل محادثة لتروا رقماً حقيقياً لا تقديراً. كما نختار مستوى النموذج حسب المهمة ونستخدم نماذج أصغر للتصنيف والتوجيه." },
+        { "question": "هل هذا مجدٍ لمنشأة صغيرة أم للشركات الكبيرة فقط؟", "answer": "مجدٍ تماماً، والفائدة غالباً أوضح في الفرق الصغيرة حيث يتولى شخص واحد كل شيء. النطاق الصحيح مهمة واحدة عالية التكرار — الرد على أسئلة المنتجات والشحن، أو فرز الطلبات الواردة، أو صياغة الردود — لا منصة تشمل الشركة كلها. البدء الضيق يبقي الميزانية صغيرة والنتيجة قابلة للقياس." },
+        { "question": "متى يحوّل المساعد المحادثة إلى موظف بشري؟", "answer": "نحدد قواعد التحويل معكم: الشكاوى والمرتجعات والاسترداد، وأي مسألة ذات أثر قانوني أو مالي، وتكرار الإجابات غير الموفقة، أو طلب العميل الصريح للتحدث مع إنسان. تُنقل المحادثة بسجلها الكامل فلا يعيد العميل كلامه، ويتوقف المساعد عن الرد في ذلك المسار حتى ينهي الموظف عمله." }
+      ],
+      "technologies": [
+        { "name": "Anthropic Claude", "icon": "anthropic" },
+        { "name": "Python", "icon": "python" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "pgvector", "icon": "pgvector" },
+        { "name": "Prisma", "icon": "prisma" }
+      ]
+    }
+  }
+}

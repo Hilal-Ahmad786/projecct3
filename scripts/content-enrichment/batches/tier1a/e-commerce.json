@@ -1,0 +1,233 @@
+{
+  "slug": "e-commerce",
+  "en": {
+    "name": "E-Commerce",
+    "shortDescription": "Online stores built to sell: ikas, Shopify, WooCommerce or headless storefronts, wired to the payment, invoicing, shipping and tracking systems your operation actually runs on, and tuned to convert on mobile.",
+    "fullDescription": "An online store is an operations problem as much as a design one — payments, stock, invoicing, shipping and returns all have to work on the morning your campaign goes live. We build stores on ikas, Shopify and WooCommerce, and headless storefronts in Next.js when catalogue logic or performance outgrows a template. The work covers product and variant modelling, checkout and payment setup including the installment options local buyers expect, e-invoicing and accounting integration, carrier and returns workflows, and the product feeds and conversion tracking that make ad spend measurable. We have delivered stores in dried fruit and food, heating and climate equipment, and other stock-driven retail categories, including platform migrations and post-launch Google and Meta campaign work.",
+    "features": [
+      "ikas, Shopify & WooCommerce Store Builds",
+      "Headless Commerce Storefronts in Next.js",
+      "Catalogue, Variant & Product Data Modelling",
+      "Payment Gateway, Wallet & Installment Setup",
+      "E-Invoicing, Accounting & ERP Integration",
+      "Carrier, Fulfilment & Returns Workflows",
+      "Marketplace & Multi-Channel Sales Sync",
+      "Checkout Optimization, Product Feeds & GA4 Conversion Tracking"
+    ],
+    "benefits": [
+      "A checkout that stops losing mobile buyers at the final step",
+      "Orders, stock and invoices in sync instead of reconciled by hand",
+      "The payment and installment options your local buyers expect",
+      "Product data structured for on-site search, feeds and marketplaces at once",
+      "Ad spend you can attribute down to product level",
+      "A store your team runs daily without booking developer time"
+    ],
+    "metaTitle": "E-Commerce Development: ikas, Shopify | PakSoft",
+    "metaDescription": "E-commerce development on ikas, Shopify, WooCommerce and headless Next.js — payments, invoicing, shipping and tracking included. Request your quote today.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Commercial Discovery", "description": "We start from commercial reality: catalogue size, variant complexity, margins, order volume, and who packs and ships. Those facts drive the platform decision far more than design preference does." },
+        { "step": 2, "title": "Platform Selection", "description": "We compare ikas, Shopify, WooCommerce and headless builds against your catalogue, required integrations and true monthly cost, then give you a written recommendation with the trade-offs stated. If your current platform is already the right one, we say so instead of selling you a migration." },
+        { "step": 3, "title": "Store Build & Design", "description": "We build storefront, category and product templates around how people actually browse your range, with product data modelled for variants, bundles and filters. Everything is designed mobile-first, because that is where most sessions and most abandonment happen." },
+        { "step": 4, "title": "Payments, Invoicing & Logistics", "description": "We connect payment providers and installment options, e-invoicing and accounting, shipping carriers and returns handling, plus ERP or marketplace channels where relevant. Every integration is proven with real test orders before launch rather than assumed to work." },
+        { "step": 5, "title": "Migration, QA & Launch", "description": "If you are moving platforms we migrate products, customers, orders and URLs, redirecting old addresses so search traffic follows you. Before go-live we run full checkout tests across devices, payment methods and edge cases such as out-of-stock items and partial refunds." },
+        { "step": 6, "title": "Growth After Launch", "description": "We set up product feeds, GA4 and ads conversion tracking so spend is attributable down to product level. From there the work becomes SEO, campaign structure and checkout improvements driven by what the data actually shows." }
+      ],
+      "faq": [
+        { "question": "Which platform should I choose — ikas, Shopify, WooCommerce or custom?", "answer": "For most small and mid-size retailers a hosted platform wins: ikas suits Turkish sellers because local payment, invoicing and shipping integrations come built in, Shopify is the safest route for international selling, and WooCommerce fits when you already run WordPress and need flexibility. Custom or headless builds earn their cost when catalogue logic, performance or a unique buying flow genuinely outgrows a template. We tell you which case you are in before quoting." },
+        { "question": "How long does it take to launch an online store?", "answer": "A well-scoped store on ikas, Shopify or WooCommerce typically launches in three to six weeks, provided product data and photography are available. Headless builds and complex ERP or marketplace integrations extend that. Preparing product data is usually the bottleneck, so we start it in parallel with design rather than after it." },
+        { "question": "Can you migrate my existing store without losing traffic?", "answer": "Yes — migrations are routine work for us. We move products, variants, customers and order history, then map every old URL to its new equivalent with 301 redirects so rankings and backlinks carry over. The old store stays reachable until the new one is verified, and we watch Search Console closely for the first weeks after the switch." },
+        { "question": "How do payment methods and installments work?", "answer": "We set up the providers your buyers expect in their market — card, wallet, bank transfer, cash on delivery, and installment plans where the local gateway supports them. Merchant account approval is between you and the provider; we handle the technical integration and test every method with live transactions before launch." },
+        { "question": "Can you connect invoicing, accounting and ERP systems?", "answer": "Yes. We integrate e-invoicing and accounting so orders produce invoices without manual re-entry, and connect ERP or warehouse systems for stock and order sync where you have them. Scope depends on the APIs your provider exposes, which we verify during discovery rather than promise blindly." },
+        { "question": "Do you handle marketplaces like Trendyol, Hepsiburada or Amazon?", "answer": "We connect marketplace channels so stock and orders stay in one system instead of being reconciled by hand. ikas and Shopify offer established marketplace integrations; where none exists we build the sync against the marketplace API. Listing strategy and pricing stay with your commercial team — we make sure the data feeding them is clean." },
+        { "question": "What does it cost to run the store after launch?", "answer": "Running cost has three parts: platform subscription, payment processing fees, and maintenance or development hours. Hosted platforms turn infrastructure into a predictable subscription, while headless builds cost more to operate but remove template limits. We put the expected monthly figure in the proposal so the total picture is clear before you commit." },
+        { "question": "Can my team manage products and orders without a developer?", "answer": "That is the point of the build. Product creation, stock, campaigns, content pages and order handling all live in the admin panel, and we train your team on the workflows they touch daily. We stay available for work that genuinely needs development, such as new integrations or template changes." },
+        { "question": "Do you also run ads and SEO for the store?", "answer": "Yes. We set up product feeds, conversion tracking and campaign structure for Google and Meta, and work on category and product page SEO — this is exactly what we do for stores we have built ourselves. Ads and SEO are quoted separately from the build so you decide the level of ongoing support." },
+        { "question": "Can the store sell in several languages and currencies?", "answer": "Yes. We build stores with translated product content, per-market pricing, correct tax display and currency handling for each market you sell into. For Arabic-speaking markets the storefront is built right-to-left from the start, not retrofitted with a stylesheet." },
+        { "question": "Will the store perform well on mobile?", "answer": "Mobile is where most e-commerce sessions and most abandonment happen, so templates are built mobile-first and tested on real devices. We optimise image delivery, keep the checkout as short as the payment provider allows, and measure Core Web Vitals during QA instead of after customers complain." }
+      ],
+      "technologies": [
+        { "icon": "ikas", "name": "ikas" },
+        { "icon": "shopify", "name": "Shopify" },
+        { "icon": "woocommerce", "name": "WooCommerce" },
+        { "icon": "nextjs", "name": "Next.js" },
+        { "icon": "typescript", "name": "TypeScript" },
+        { "icon": "stripe", "name": "Stripe" },
+        { "icon": "paypal", "name": "PayPal" },
+        { "icon": "ga4", "name": "Google Analytics 4" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "E-Ticaret",
+    "shortDescription": "Satış yapan e-ticaret altyapıları: ikas, Shopify, WooCommerce ya da headless mimari üzerinde; sanal POS ve taksit, e-Fatura, kargo ve pazaryeri entegrasyonlarıyla mobilde gerçekten dönüşen bir mağaza kuruyoruz.",
+    "fullDescription": "E-ticaret bir tasarım işi olduğu kadar bir operasyon işidir: kampanya yayına girdiği sabah ödeme, stok, fatura, kargo ve iade süreçlerinin aynı anda çalışması gerekir. Mağazalarınızı ikas, Shopify ve WooCommerce üzerinde kuruyor; katalog mantığı veya performans ihtiyacı hazır temayı aştığında Next.js ile headless vitrin geliştiriyoruz. Kapsam; ürün ve varyant modellemesinden sanal POS, taksit ve alternatif ödeme kurulumuna, e-Fatura ve e-Arşiv ile muhasebe entegrasyonundan kargo ve iade akışlarına, ürün feed'leri ve GA4 dönüşüm takibine kadar uzanıyor. Kuru meyve ve gıda ile ısıtma-soğutma ekipmanları gibi stok yoğun kategorilerde mağazalar teslim ettik; ikas üzerinde kurduğumuz bir markanın yayın sonrası Google ve Meta reklamlarını ve SEO çalışmasını da yürütüyoruz.",
+    "features": [
+      "ikas, Shopify ve WooCommerce Mağaza Kurulumu",
+      "Next.js ile Headless E-Ticaret Vitrini",
+      "Katalog, Varyant ve Ürün Verisi Modelleme",
+      "Sanal POS, Taksit ve Alternatif Ödeme Kurulumu",
+      "e-Fatura / e-Arşiv, Muhasebe ve ERP Entegrasyonu",
+      "Kargo, Sipariş Yönetimi ve İade Akışları",
+      "Trendyol, Hepsiburada ve Pazaryeri Senkronizasyonu",
+      "Ödeme Adımı Optimizasyonu, Ürün Feed'i ve GA4 Dönüşüm Takibi"
+    ],
+    "benefits": [
+      "Mobil kullanıcı son adımda sepeti terk etmiyor",
+      "Sipariş, stok ve fatura elle değil otomatik eşleşiyor",
+      "Türk alıcının beklediği taksit ve ödeme seçenekleri hazır geliyor",
+      "Ürün verisi hem site içi arama hem reklam feed'i için düzenli",
+      "Reklam bütçesinin hangi üründen döndüğü ürün bazında ölçülebiliyor",
+      "Mağazayı ekibiniz her gün geliştirici beklemeden yönetiyor"
+    ],
+    "metaTitle": "E-Ticaret Sitesi Kurulumu: ikas, Shopify | PakSoft",
+    "metaDescription": "ikas, Shopify, WooCommerce ve headless Next.js ile e-ticaret sitesi kurulumu: sanal POS, e-Fatura, kargo ve dönüşüm takibi dahil. Hemen teklif alın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Ticari Keşif", "description": "İşin ticari gerçeğinden başlarız: ürün sayısı, varyant karmaşıklığı, kâr marjları, sipariş hacmi ve paketleme–sevkiyatı kimin yaptığı. Platform kararını tasarım tercihinden çok bu veriler belirler." },
+        { "step": 2, "title": "Platform Seçimi", "description": "ikas, Shopify, WooCommerce ve headless kurguyu; katalog yapınız, ihtiyaç duyduğunuz entegrasyonlar ve gerçek aylık maliyet üzerinden karşılaştırır, artı ve eksileriyle yazılı bir öneri sunarız. Mevcut altyapınız zaten doğruysa migration satmak yerine bunu açıkça söyleriz." },
+        { "step": 3, "title": "Mağaza Kurulumu ve Tasarım", "description": "Vitrin, kategori ve ürün şablonlarını müşterilerinizin ürün gamınızı gerçekte nasıl gezdiğine göre kurar; ürün verisini varyant, set ve filtreleri destekleyecek biçimde modelleriz. Oturumların ve sepet terklerinin çoğu mobilde olduğu için tasarıma mobil öncelikli başlarız." },
+        { "step": 4, "title": "Ödeme, Fatura ve Lojistik", "description": "Sanal POS ve taksit seçeneklerini, e-Fatura ve muhasebe tarafını, kargo firmalarını ve iade akışını; gerekiyorsa ERP ve pazaryeri kanallarını bağlarız. Her entegrasyon 'çalışıyordur' varsayımıyla değil, yayın öncesi gerçek test siparişleriyle doğrulanır." },
+        { "step": 5, "title": "Taşıma, Test ve Yayın", "description": "Platform değiştiriyorsanız ürünleri, müşterileri, siparişleri ve URL yapısını taşır, eski adresleri yönlendirerek arama trafiğinin sizinle gelmesini sağlarız. Yayından önce farklı cihaz, ödeme yöntemi ve stok tükendi, kısmi iade gibi uç senaryolarda uçtan uca ödeme testleri yaparız." },
+        { "step": 6, "title": "Yayın Sonrası Büyüme", "description": "Ürün feed'lerini, GA4 ve reklam dönüşüm takibini kurar; harcamanın hangi üründen döndüğünü ölçülebilir hale getiririz. Sonrasında iş, verinin gösterdiği yere göre SEO, kampanya kurgusu ve ödeme adımı iyileştirmelerine döner." }
+      ],
+      "faq": [
+        { "question": "ikas mı, Shopify mi, WooCommerce mi, özel yazılım mı?", "answer": "KOBİ ölçeğindeki çoğu satıcı için hazır platform daha mantıklıdır: ikas, sanal POS, e-Fatura ve kargo entegrasyonları yerleşik geldiği için Türkiye'de satış yapanlara çok uyar; Shopify yurt dışı satışta en güvenli seçenektir; WooCommerce ise zaten WordPress kullanıyorsanız ve esneklik istiyorsanız anlamlıdır. Özel ya da headless kurgu, katalog mantığı veya performans ihtiyacı hazır temayı gerçekten aştığında masrafını çıkarır. Hangi durumda olduğunuzu teklif öncesinde net söyleriz." },
+        { "question": "Bir e-ticaret sitesi ne kadar sürede yayına girer?", "answer": "Kapsamı netleşmiş bir ikas, Shopify veya WooCommerce mağazası ürün verisi ve fotoğraflar hazırsa genellikle 3–6 haftada yayına girer. Headless kurgular ile karmaşık ERP veya pazaryeri entegrasyonları bu süreyi uzatır. Darboğaz çoğunlukla ürün verisidir; bu yüzden veri hazırlığını tasarımdan sonra değil, tasarımla eş zamanlı başlatırız." },
+        { "question": "Mevcut mağazamı trafiğimi kaybetmeden taşıyabilir misiniz?", "answer": "Evet, platform taşıma rutin işlerimizden biri. Ürünleri, varyantları, müşterileri ve sipariş geçmişini aktarır; ardından her eski adresi yeni karşılığına 301 ile yönlendirerek sıralamaların ve backlink değerinin korunmasını sağlarız. Yeni mağaza doğrulanana kadar eskisi erişilebilir kalır, geçişten sonraki ilk haftalarda Search Console'u yakından izleriz." },
+        { "question": "Sanal POS, taksit ve kapıda ödeme nasıl kurgulanıyor?", "answer": "Pazarınızda alıcının beklediği yöntemleri kurarız: kredi kartı ve taksit, banka havalesi, dijital cüzdanlar ve kapıda ödeme. iyzico, PayTR gibi ödeme kuruluşlarıyla ya da bankanızın sanal POS'uyla çalışabiliriz; üye iş yeri başvurusunun onayı sizinle kuruluş arasındadır, teknik entegrasyonu ve gerçek işlemle testi biz üstleniriz." },
+        { "question": "e-Fatura, muhasebe ve ERP entegrasyonu yapıyor musunuz?", "answer": "Evet. Siparişlerin elle veri girişi olmadan e-Fatura veya e-Arşiv faturasına dönüşmesi için entegratörünüzle bağlantıyı kurar; ön muhasebe programınızı ve varsa ERP ya da depo sisteminizi stok ve sipariş senkronizasyonu için bağlarız. Kapsam, kullandığınız yazılımın API imkânlarına bağlıdır; bunu söz vermeden önce keşif aşamasında doğrularız." },
+        { "question": "Trendyol, Hepsiburada gibi pazaryerlerine bağlanıyor musunuz?", "answer": "Evet. Amaç, stok ve siparişlerin elle eşleştirilmesi yerine tek yerden yönetilmesidir. ikas ve Shopify tarafında hazır pazaryeri entegrasyonları var; hazır çözüm bulunmayan kanallarda senkronizasyonu ilgili API üzerinden biz geliştiririz. Listeleme ve fiyat stratejisi sizin ticari ekibinizde kalır, biz onu besleyen verinin doğru olmasını sağlarız." },
+        { "question": "Yayına girdikten sonra aylık maliyet ne olur?", "answer": "Aylık maliyet üç kalemden oluşur: platform aboneliği, ödeme komisyonları ve bakım–geliştirme saatleri. Hazır platformlar altyapı maliyetini öngörülebilir bir aboneliğe çevirir; headless kurgular işletme maliyeti biraz daha yüksektir ama tema sınırlarını kaldırır. Beklenen aylık tutarı teklifte yazarız, sonradan sürpriz çıkmaz." },
+        { "question": "Ürünleri ve siparişleri ekibimiz geliştirici olmadan yönetebilir mi?", "answer": "Kurulumun amacı tam olarak bu. Ürün ekleme, stok, kampanya, içerik sayfaları ve sipariş yönetimi panel üzerinden yapılır; ekibinize her gün kullanacakları akışlar için eğitim veririz. Yeni entegrasyon veya şablon değişikliği gibi gerçekten geliştirme gerektiren işlerde ise yanınızdayız." },
+        { "question": "Reklam ve SEO tarafını da yönetiyor musunuz?", "answer": "Evet. Ürün feed'lerini, dönüşüm takibini ve Google ile Meta kampanya kurgusunu kurar; kategori ve ürün sayfası SEO'su üzerinde çalışırız — kendi kurduğumuz mağazalarda halihazırda yaptığımız iş budur. Reklam ve SEO, kurulum teklifinden ayrı fiyatlanır; böylece devam eden desteğin seviyesine siz karar verirsiniz." },
+        { "question": "Yurt dışına satış için çok dilli ve çok para birimli mağaza olur mu?", "answer": "Olur. Ürün içeriğinin çevirisi, pazara göre fiyatlandırma, doğru vergi gösterimi ve para birimi yönetimi ile satış yaptığınız her ülke için ayrı bir deneyim kurarız. Arapça konuşulan pazarlarda vitrin, sonradan CSS ile çevrilmiş değil, en baştan sağdan sola tasarlanır." },
+        { "question": "Mağaza mobilde hızlı çalışacak mı?", "answer": "Türkiye'de oturumların ve sepet terklerinin büyük bölümü mobilde gerçekleşiyor; bu yüzden şablonları mobil öncelikli kurar ve gerçek cihazlarda test ederiz. Görsel yükleme optimizasyonu yapar, ödeme adımını ödeme kuruluşunun izin verdiği kadar kısa tutar, Core Web Vitals değerlerini şikâyet gelmeden önce test aşamasında ölçeriz." }
+      ],
+      "technologies": [
+        { "icon": "ikas", "name": "ikas" },
+        { "icon": "shopify", "name": "Shopify" },
+        { "icon": "woocommerce", "name": "WooCommerce" },
+        { "icon": "nextjs", "name": "Next.js" },
+        { "icon": "typescript", "name": "TypeScript" },
+        { "icon": "stripe", "name": "Stripe" },
+        { "icon": "paypal", "name": "PayPal" },
+        { "icon": "ga4", "name": "Google Analytics 4" }
+      ]
+    }
+  },
+  "de": {
+    "name": "E-Commerce",
+    "shortDescription": "Onlineshops, die verkaufen: Shopify, WooCommerce oder Headless-Storefronts mit Next.js, sauber angebunden an Zahlungsarten, Buchhaltung, Versand, Retouren und Conversion-Tracking — DSGVO-konform umgesetzt und konsequent für mobile Käufer optimiert.",
+    "fullDescription": "Ein Onlineshop ist ebenso ein Operations- wie ein Designthema: Zahlung, Bestand, Rechnungsstellung, Versand und Retouren müssen an dem Morgen funktionieren, an dem Ihre Kampagne startet. Wir realisieren Shops auf Shopify und WooCommerce und bauen Headless-Storefronts mit Next.js, wenn Katalogtiefe oder Performance ein Template sprengen. Der Umfang reicht von Produkt- und Variantenmodellierung über Zahlungsarten wie Kreditkarte, PayPal, Klarna, SEPA und Rechnungskauf bis zu Buchhaltungs- und ERP-Anbindung, Versand- und Retourenprozessen sowie Produktdatenfeeds und Conversion-Tracking. Rechtliche Pflichtelemente wie Consent-Management, Preisangaben und Widerrufsprozess setzen wir technisch sauber um. Erfahrung bringen wir unter anderem aus bestandsgetriebenen Sortimenten wie Lebensmitteln sowie Heizungs- und Klimatechnik mit — inklusive Plattformmigrationen und Kampagnen-Setup nach dem Launch.",
+    "features": [
+      "Shop-Umsetzung auf Shopify & WooCommerce",
+      "Headless-Storefronts mit Next.js",
+      "Katalog-, Varianten- & Produktdatenmodellierung",
+      "Zahlungsarten inklusive PayPal, Klarna, SEPA & Rechnungskauf",
+      "Anbindung von Buchhaltung, Rechnungsstellung & ERP",
+      "Versand-, Fulfilment- & Retourenprozesse",
+      "Marktplatz- und Multi-Channel-Anbindung",
+      "Checkout-Optimierung, Produktfeeds & GA4-Conversion-Tracking"
+    ],
+    "benefits": [
+      "Ein Checkout, der mobile Käufer nicht im letzten Schritt verliert",
+      "Bestellungen, Bestände und Rechnungen synchron statt manuell abgeglichen",
+      "Zahlungsarten, die deutschsprachige Käufer erwarten",
+      "Produktdaten, die Shop-Suche, Feeds und Marktplätze zugleich bedienen",
+      "Werbebudget bis auf Produktebene nachvollziehbar",
+      "Ein Shop, den Ihr Team ohne Entwicklerstunden täglich betreibt"
+    ],
+    "metaTitle": "E-Commerce-Entwicklung: Shopify & Headless | PakSoft",
+    "metaDescription": "E-Commerce-Entwicklung mit Shopify, WooCommerce und Headless Next.js: Zahlung, Buchhaltung, Versand und Tracking inklusive. Jetzt Angebot anfordern.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Kaufmännische Analyse", "description": "Wir starten bei den kaufmännischen Fakten: Sortimentsgröße, Variantenlogik, Margen, Bestellvolumen und wer kommissioniert und versendet. Diese Angaben bestimmen die Plattformwahl stärker als jede Designpräferenz." },
+        { "step": 2, "title": "Plattformauswahl", "description": "Wir vergleichen Shopify, WooCommerce und Headless-Ansätze anhand von Sortiment, benötigten Schnittstellen und realen Betriebskosten und liefern eine schriftliche Empfehlung samt Nachteilen. Ist Ihre bestehende Plattform bereits die richtige, sagen wir das, statt eine Migration zu verkaufen." },
+        { "step": 3, "title": "Shop-Aufbau & Design", "description": "Storefront-, Kategorie- und Produkttemplates entstehen entlang des tatsächlichen Kaufverhaltens, mit Produktdaten für Varianten, Bundles und Filter. Der Aufbau ist mobile-first, denn dort finden die meisten Sitzungen und die meisten Abbrüche statt." },
+        { "step": 4, "title": "Zahlung, Buchhaltung & Logistik", "description": "Wir binden Zahlungsanbieter, Rechnungsstellung und Buchhaltung, Versanddienstleister und Retourenprozesse an, bei Bedarf auch ERP- oder Marktplatzkanäle. Jede Schnittstelle wird vor dem Livegang mit echten Testbestellungen nachgewiesen." },
+        { "step": 5, "title": "Migration, QA & Livegang", "description": "Bei einem Plattformwechsel migrieren wir Produkte, Kunden, Bestellungen und URLs und leiten alte Adressen weiter, damit der Suchtraffic mitkommt. Vor dem Start prüfen wir den Checkout auf allen Geräten, mit allen Zahlungsarten und in Sonderfällen wie Ausverkauf oder Teilerstattung." },
+        { "step": 6, "title": "Wachstum nach dem Launch", "description": "Wir richten Produktfeeds, GA4 und Conversion-Tracking ein, sodass Budget bis auf Produktebene zurechenbar wird. Danach verschiebt sich die Arbeit auf SEO, Kampagnenstruktur und Checkout-Optimierung entlang der tatsächlichen Daten." }
+      ],
+      "faq": [
+        { "question": "Shopify, WooCommerce oder Headless — was passt zu uns?", "answer": "Für die meisten mittelständischen Händler ist eine gehostete Plattform die wirtschaftlichste Wahl: Shopify punktet bei internationalem Verkauf und Betriebssicherheit, WooCommerce lohnt sich, wenn Sie ohnehin WordPress betreiben und Flexibilität brauchen. Headless mit Next.js rechnet sich, wenn Katalogtiefe, Performance oder ein eigener Kaufprozess die Template-Grenzen sprengen. Wir ordnen Ihren Fall vor dem Angebot ein und begründen die Empfehlung schriftlich." },
+        { "question": "Wie lange dauert der Aufbau eines Onlineshops?", "answer": "Ein klar abgegrenzter Shop auf Shopify oder WooCommerce geht meist in drei bis sechs Wochen live, sofern Produktdaten und Bilder vorliegen. Headless-Projekte sowie komplexe ERP- oder Marktplatzanbindungen verlängern den Zeitraum. Der Engpass sind fast immer die Produktdaten, deshalb starten wir deren Aufbereitung parallel zum Design." },
+        { "question": "Können Sie migrieren, ohne Rankings zu verlieren?", "answer": "Ja, Migrationen gehören zu unserem Tagesgeschäft. Wir übernehmen Produkte, Varianten, Kunden und Bestellhistorie und leiten jede alte URL per 301 auf ihr neues Ziel, sodass Rankings und Backlinks erhalten bleiben. Der alte Shop bleibt bis zur Verifizierung erreichbar, und wir beobachten die Search Console in den ersten Wochen nach dem Wechsel." },
+        { "question": "Welche Zahlungsarten binden Sie an?", "answer": "Wir richten die Verfahren ein, die Ihre Zielgruppe erwartet: Kreditkarte, PayPal, Klarna, SEPA-Lastschrift, Rechnungskauf und Wallets. Die Vertragsannahme läuft zwischen Ihnen und dem Zahlungsanbieter; die technische Integration sowie Tests mit echten Transaktionen vor dem Livegang übernehmen wir." },
+        { "question": "Wie steht es um DSGVO und rechtliche Pflichtangaben?", "answer": "Technisch setzen wir Consent-Management vor dem Laden von Tracking, datensparsame Datenflüsse und dokumentierte Auftragsverarbeitung um, ebenso Preisangaben, Versandkostenhinweise und den Widerrufsprozess im Checkout. Die juristischen Texte selbst stimmen Sie mit Ihrer Rechtsberatung ab — wir integrieren sie korrekt und prüfbar." },
+        { "question": "Lassen sich Buchhaltung, Rechnungsstellung und ERP anbinden?", "answer": "Ja. Bestellungen erzeugen Rechnungen ohne doppelte Datenerfassung, und Warenwirtschafts- oder ERP-Systeme lassen sich für Bestands- und Auftragssynchronisation anbinden. Der Umfang hängt von den verfügbaren Schnittstellen Ihres Systems ab, die wir in der Analysephase konkret prüfen, statt sie zuzusagen." },
+        { "question": "Was kostet der Betrieb nach dem Launch?", "answer": "Die laufenden Kosten bestehen aus Plattformabo, Transaktionsgebühren der Zahlungsanbieter sowie Wartungs- und Entwicklungsstunden. Gehostete Plattformen machen Infrastruktur planbar, Headless-Setups kosten im Betrieb mehr, entfernen dafür Template-Grenzen. Die erwartete monatliche Größenordnung steht im Angebot." },
+        { "question": "Kann unser Team Produkte und Bestellungen selbst verwalten?", "answer": "Genau darauf ist der Aufbau ausgelegt. Produktpflege, Bestände, Aktionen, Inhaltsseiten und Auftragsabwicklung laufen im Backend, und wir schulen Ihr Team auf den Abläufen, die es täglich nutzt. Für echte Entwicklungsthemen wie neue Schnittstellen oder Template-Änderungen bleiben wir ansprechbar." },
+        { "question": "Übernehmen Sie auch Ads und SEO für den Shop?", "answer": "Ja. Wir richten Produktfeeds, Conversion-Tracking und Kampagnenstruktur für Google und Meta ein und arbeiten an Kategorie- und Produktseiten-SEO — dieselbe Arbeit leisten wir für Shops aus eigener Umsetzung. Ads und SEO werden getrennt vom Aufbau angeboten, damit Sie den Umfang der laufenden Betreuung selbst bestimmen." },
+        { "question": "Sind mehrsprachige Shops mit mehreren Währungen möglich?", "answer": "Ja. Wir bauen Shops mit übersetzten Produktinhalten, marktspezifischen Preisen, korrekter Steuerdarstellung und Währungslogik für jeden Zielmarkt. Für arabischsprachige Märkte entsteht die Storefront von Anfang an rechtsläufig statt nachträglich per Stylesheet gespiegelt." }
+      ],
+      "technologies": [
+        { "icon": "shopify", "name": "Shopify" },
+        { "icon": "woocommerce", "name": "WooCommerce" },
+        { "icon": "nextjs", "name": "Next.js" },
+        { "icon": "typescript", "name": "TypeScript" },
+        { "icon": "stripe", "name": "Stripe" },
+        { "icon": "paypal", "name": "PayPal" },
+        { "icon": "ikas", "name": "ikas" },
+        { "icon": "ga4", "name": "Google Analytics 4" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "التجارة الإلكترونية",
+    "shortDescription": "متاجر إلكترونية مبنية للبيع فعلاً: على Shopify أو WooCommerce أو واجهات Headless بـ Next.js، مربوطة ببوابات الدفع والفوترة والشحن وتتبّع التحويلات، وبواجهة عربية من اليمين إلى اليسار تعمل بسرعة على الهاتف.",
+    "fullDescription": "المتجر الإلكتروني مسألة تشغيل بقدر ما هو مسألة تصميم: الدفع والمخزون والفوترة والشحن والإرجاع يجب أن تعمل جميعها في الصباح الذي تنطلق فيه حملتكم. نبني المتاجر على Shopify وWooCommerce وikas، ونطوّر واجهات Headless بـ Next.js حين يتجاوز حجم الكتالوج أو متطلبات الأداء حدود القوالب الجاهزة. يشمل العمل نمذجة المنتجات والخيارات، وإعداد بوابات الدفع والمحافظ الرقمية والدفع عند الاستلام والتقسيط، وربط الفوترة الإلكترونية والمحاسبة، ومسارات الشحن والإرجاع، إضافة إلى تغذية بيانات المنتجات وتتبّع التحويلات الذي يجعل الإنفاق الإعلاني قابلاً للقياس. لدينا خبرة في فئات تجزئة تعتمد على المخزون مثل الأغذية والتمور ومعدات التدفئة والتكييف، بما يشمل ترحيل المنصات وإدارة الحملات بعد الإطلاق.",
+    "features": [
+      "بناء المتاجر على Shopify وWooCommerce وikas",
+      "واجهات متاجر Headless بـ Next.js",
+      "نمذجة الكتالوج والخيارات وبيانات المنتجات",
+      "ربط بوابات الدفع والمحافظ والدفع عند الاستلام والتقسيط",
+      "ربط الفوترة الإلكترونية والمحاسبة وأنظمة ERP",
+      "مسارات الشحن وإدارة الطلبات والإرجاع",
+      "واجهة متجر عربية بالكامل من اليمين إلى اليسار وتعدّد العملات",
+      "تحسين خطوة الدفع وتغذية المنتجات وتتبّع التحويلات عبر GA4"
+    ],
+    "benefits": [
+      "خطوة دفع لا تُفقدكم مشتري الهاتف في اللحظة الأخيرة",
+      "الطلبات والمخزون والفواتير متزامنة بدل المطابقة اليدوية",
+      "خيارات الدفع التي يتوقعها المشتري في السوق الخليجي",
+      "بيانات منتجات منظّمة تخدم البحث الداخلي والإعلانات معاً",
+      "إنفاق إعلاني يمكن نسبه إلى المنتج نفسه",
+      "متجر يديره فريقكم يومياً دون الحاجة إلى مطوّر"
+    ],
+    "metaTitle": "تطوير المتاجر الإلكترونية: Shopify | PakSoft",
+    "metaDescription": "تطوير متاجر إلكترونية على Shopify وWooCommerce وikas وواجهات Next.js: الدفع والتقسيط والفوترة والشحن وتتبّع التحويلات ضمن الباقة. اطلبوا عرض السعر الآن.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "الاكتشاف التجاري", "description": "نبدأ من الواقع التجاري: حجم الكتالوج، وتعقيد الخيارات، وهوامش الربح، وحجم الطلبات، ومن يتولّى التغليف والشحن. هذه المعطيات تحدّد اختيار المنصة أكثر بكثير من التفضيل التصميمي." },
+        { "step": 2, "title": "اختيار المنصة", "description": "نقارن Shopify وWooCommerce وikas والبناء Headless وفق كتالوجكم وعمليات الربط المطلوبة والتكلفة الشهرية الحقيقية، ثم نقدّم توصية مكتوبة مع ذكر المقايضات بوضوح. وإذا كانت منصتكم الحالية مناسبة أصلاً، نقول ذلك بدل بيع عملية ترحيل لا تحتاجونها." },
+        { "step": 3, "title": "بناء المتجر والتصميم", "description": "نبني قوالب الواجهة والفئات والمنتجات وفق طريقة تصفّح عملائكم الحقيقية، مع نمذجة بيانات تدعم الخيارات والباقات وعوامل التصفية. نبدأ التصميم من الهاتف أولاً لأن معظم الجلسات ومعظم حالات ترك السلة تحدث هناك." },
+        { "step": 4, "title": "الدفع والفوترة والخدمات اللوجستية", "description": "نربط مزوّدي الدفع وخيارات التقسيط والدفع عند الاستلام، والفوترة الإلكترونية والمحاسبة، وشركات الشحن ومسار الإرجاع، إضافة إلى أنظمة ERP أو قنوات المتاجر الإلكترونية عند الحاجة. ويُختبر كل ربط بطلبات تجريبية حقيقية قبل الإطلاق لا بافتراض أنه يعمل." },
+        { "step": 5, "title": "الترحيل والاختبار والإطلاق", "description": "عند تغيير المنصة نرحّل المنتجات والعملاء والطلبات والروابط، ونعيد توجيه العناوين القديمة حتى تنتقل زيارات البحث معكم. وقبل الإطلاق نختبر مسار الشراء كاملاً على أجهزة متعددة وبطرق دفع مختلفة وفي حالات حرجة مثل نفاد المخزون والاسترداد الجزئي." },
+        { "step": 6, "title": "النمو بعد الإطلاق", "description": "نجهّز تغذية بيانات المنتجات وGA4 وتتبّع تحويلات الإعلانات ليصبح الإنفاق قابلاً للنسب حتى مستوى المنتج. بعدها يتحوّل العمل إلى تحسين محركات البحث وبنية الحملات وخطوة الدفع بحسب ما تُظهره البيانات فعلاً." }
+      ],
+      "faq": [
+        { "question": "أي منصة أختار: Shopify أم WooCommerce أم بناء مخصّص؟", "answer": "لمعظم تجار التجزئة الصغار والمتوسطين تكون المنصة المستضافة أوفر: Shopify هو الخيار الأكثر أماناً للبيع الدولي وسهولة التشغيل، وWooCommerce مناسب إذا كنتم تستخدمون WordPress وتحتاجون مرونة أكبر، وikas خيار قوي لمن يبيع في السوق التركي. أما البناء المخصّص أو Headless فيستحق كلفته حين يتجاوز الكتالوج أو الأداء أو مسار شراء خاص حدود القوالب. نحدّد حالتكم قبل تقديم العرض ونبرّر التوصية كتابةً." },
+        { "question": "كم يستغرق إطلاق متجر إلكتروني؟", "answer": "المتجر محدّد النطاق على Shopify أو WooCommerce يُطلق عادةً خلال ثلاثة إلى ستة أسابيع، بشرط توفّر بيانات المنتجات والصور. أما البناء Headless والربط المعقّد مع أنظمة ERP أو المتاجر الإلكترونية فيحتاج وقتاً أطول. تجهيز بيانات المنتجات هو عنق الزجاجة غالباً، لذلك نبدأه بالتوازي مع التصميم." },
+        { "question": "هل يمكن ترحيل متجري الحالي دون فقدان الزيارات؟", "answer": "نعم، الترحيل جزء اعتيادي من عملنا. ننقل المنتجات والخيارات والعملاء وسجل الطلبات، ثم نربط كل رابط قديم بمقابله الجديد عبر إعادة توجيه 301 حتى تنتقل الترتيبات والروابط الخلفية معكم. ويبقى المتجر القديم متاحاً حتى التحقق من الجديد، مع متابعة دقيقة لـ Search Console في الأسابيع الأولى." },
+        { "question": "ما طرق الدفع التي تدعمونها في السوق الخليجي؟", "answer": "نربط ما يتوقعه المشتري في سوقكم: البطاقات ومحافظ الدفع مثل Apple Pay، والتحويل البنكي، والدفع عند الاستلام، وخدمات التقسيط والشراء الآجل حيث تتوفر لدى البوابة المحلية. اعتماد حساب التاجر يتم بينكم وبين مزوّد الدفع، بينما نتولى نحن الربط التقني واختبار كل طريقة بعمليات حقيقية قبل الإطلاق." },
+        { "question": "هل تربطون الفوترة الإلكترونية والمحاسبة وأنظمة ERP؟", "answer": "نعم. نربط المتجر بنظام الفوترة لديكم حتى تُصدر الطلبات فواتيرها دون إدخال يدوي، ونصل أنظمة المحاسبة أو ERP أو المستودعات لمزامنة المخزون والطلبات. ويعتمد النطاق على واجهات البرمجة التي يتيحها مزوّدكم، ونتحقق منها في مرحلة الاكتشاف بدل الوعد بها مسبقاً." },
+        { "question": "كم تبلغ تكلفة تشغيل المتجر بعد الإطلاق؟", "answer": "تتكوّن التكلفة الجارية من ثلاثة بنود: اشتراك المنصة، ورسوم معالجة المدفوعات، وساعات الصيانة والتطوير. المنصات المستضافة تحوّل كلفة البنية التحتية إلى اشتراك يمكن التنبؤ به، بينما يكلّف البناء Headless أكثر في التشغيل مقابل إزالة قيود القوالب. ونضع الرقم الشهري المتوقع في العرض منذ البداية." },
+        { "question": "هل يستطيع فريقنا إدارة المنتجات والطلبات دون مطوّر؟", "answer": "هذا هو الهدف من طريقة البناء. إضافة المنتجات والمخزون والعروض وصفحات المحتوى ومعالجة الطلبات تتم كلها من لوحة التحكم، وندرّب فريقكم على المسارات التي يستخدمها يومياً. ونبقى متاحين لما يحتاج تطويراً فعلياً مثل ربط أنظمة جديدة أو تعديل القوالب." },
+        { "question": "هل تديرون الإعلانات وتحسين محركات البحث للمتجر؟", "answer": "نعم. نجهّز تغذية بيانات المنتجات وتتبّع التحويلات وبنية حملات Google وMeta، ونعمل على تحسين صفحات الفئات والمنتجات لمحركات البحث — وهو العمل نفسه الذي ننفّذه لمتاجر بنيناها بأنفسنا. وتُسعّر الإعلانات وتحسين محركات البحث بشكل منفصل عن البناء لتقرّروا مستوى الدعم المستمر." },
+        { "question": "هل يمكن للمتجر البيع بعدة لغات وعملات؟", "answer": "نعم. نبني متاجر بمحتوى منتجات مترجم، وتسعير لكل سوق، وعرض ضريبي صحيح، ومعالجة للعملات بحسب الدولة التي تبيعون فيها. وفي الأسواق العربية تُبنى الواجهة من اليمين إلى اليسار منذ البداية لا عبر عكس التنسيقات لاحقاً." },
+        { "question": "هل سيعمل المتجر بكفاءة على الهاتف؟", "answer": "معظم جلسات التسوق وحالات ترك السلة تحدث على الهاتف، لذلك نبني القوالب بمنهج الهاتف أولاً ونختبرها على أجهزة حقيقية. نحسّن تحميل الصور، ونبقي خطوة الدفع قصيرة بقدر ما يسمح مزوّد الدفع، ونقيس مؤشرات Core Web Vitals ضمن الاختبار لا بعد شكاوى العملاء." }
+      ],
+      "technologies": [
+        { "icon": "shopify", "name": "Shopify" },
+        { "icon": "woocommerce", "name": "WooCommerce" },
+        { "icon": "nextjs", "name": "Next.js" },
+        { "icon": "typescript", "name": "TypeScript" },
+        { "icon": "stripe", "name": "Stripe" },
+        { "icon": "paypal", "name": "PayPal" },
+        { "icon": "ikas", "name": "ikas" },
+        { "icon": "ga4", "name": "Google Analytics 4" }
+      ]
+    }
+  }
+}
