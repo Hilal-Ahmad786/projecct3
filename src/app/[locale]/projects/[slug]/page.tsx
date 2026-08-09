@@ -249,7 +249,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
           <p className="text-emerald-100 mb-8 max-w-2xl mx-auto">
             {t('projects.detail.cta.description')}
           </p>
-          <Button href="/contact" variant="secondary" size="lg" className="bg-white text-emerald-700 hover:bg-gray-100">
+          <Button href="/contact" variant="secondary" size="lg" className="!text-emerald-700 hover:!bg-gray-100">
             {t('projects.detail.cta.button')}
           </Button>
         </div>

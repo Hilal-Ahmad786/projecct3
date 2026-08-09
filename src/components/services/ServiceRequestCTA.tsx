@@ -63,7 +63,7 @@ export default function ServiceRequestCTA({
           <h3 className="text-xl font-semibold text-white mb-4">{t('compactTitle')}</h3>
           <p className="text-gray-300 mb-6">{t('compactDescription')}</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button variant="primary" onClick={openModal} className="bg-white text-gray-900 hover:bg-gray-100">
+            <Button variant="secondary" onClick={openModal}>
               {t('getQuote')}
             </Button>
             <WhatsAppLink locale={locale} className="text-emerald-400 hover:text-emerald-300" />
@@ -91,7 +91,7 @@ export default function ServiceRequestCTA({
             <p className="text-gray-300">{t('bannerDescription')}</p>
           </div>
           <div className="flex flex-col sm:flex-row items-center gap-4 shrink-0">
-            <Button variant="primary" size="lg" onClick={openModal} className="bg-white text-gray-900 hover:bg-gray-100 whitespace-nowrap">
+            <Button variant="secondary" size="lg" onClick={openModal} className="whitespace-nowrap">
               {t('startProject')}
             </Button>
             <WhatsAppLink locale={locale} className="text-emerald-400 hover:text-emerald-300 whitespace-nowrap" />

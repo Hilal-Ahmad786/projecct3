@@ -121,7 +121,9 @@ export default function AIServicePage({ serviceKey, accentColor = 'emerald' }: A
               <Button href="/contact" variant="primary" size="lg" className={colors.button}>
                 Get Started
               </Button>
-              <Button href="#process" variant="ghost" size="lg" className="text-white border-white hover:bg-white hover:text-gray-900">
+              {/* ! prefixes required: plain utilities can lose to the variant's
+                  own colors depending on CSS source order. */}
+              <Button href="#process" variant="ghost" size="lg" className="!text-white !border-white hover:!bg-white hover:!text-gray-900">
                 How It Works
               </Button>
             </div>

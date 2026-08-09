@@ -7,6 +7,14 @@ type ButtonProps = {
   variant?: 'primary' | 'secondary' | 'ghost' | 'emerald' | 'crimson' | 'outline';
   size?: 'sm' | 'md' | 'lg';
   children: React.ReactNode;
+  /**
+   * Extra classes. WARNING: colour utilities here do NOT reliably beat the
+   * variant's own colours — both are single-class utilities, so the winner is
+   * decided by CSS source order, not by position in this string. To recolour a
+   * button either pick the variant that already has the colours you want
+   * (`secondary` is white bg + dark text, for dark backgrounds), or prefix the
+   * overrides with `!` (`!bg-white !text-gray-900`).
+   */
   className?: string;
   loading?: boolean;
   disabled?: boolean;

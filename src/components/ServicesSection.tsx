@@ -384,7 +384,12 @@ export default function ServicesSection() {
                     <p className="text-gray-300 max-w-xl leading-relaxed">{t('readyDescription')}</p>
                   </div>
                   <div className="relative z-10 shrink-0">
-                    <Button href="/start-project" variant="primary" size="lg" className="bg-white text-gray-900 border-white hover:bg-gray-100 hover:border-gray-100">
+                    {/* secondary = white bg + dark text, correct on this dark
+                        band. Do NOT override primary's colors via className:
+                        equal-specificity Tailwind utilities resolve by CSS
+                        source order, not class order, so the variant can win
+                        and produce an unreadable button. */}
+                    <Button href="/start-project" variant="secondary" size="lg">
                       {t('startProject')}
                     </Button>
                   </div>

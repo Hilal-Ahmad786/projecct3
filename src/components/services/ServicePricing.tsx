@@ -196,7 +196,7 @@ export default function ServicePricing({
               {tSafe('customDescription', l('customDesc'))}
             </p>
             <div className="relative z-10">
-              <Button href="/contact" variant="primary" size="lg" className="bg-white text-gray-900 border-white hover:bg-gray-100 hover:border-gray-100">
+              <Button href="/contact" variant="secondary" size="lg">
                 {tSafe('customCta', tCommon('contactUs') as string)}
               </Button>
             </div>
