@@ -1,0 +1,479 @@
+{
+  "slug": "tiktok-marketing",
+  "en": {
+    "name": "TikTok Marketing",
+    "shortDescription": "Organic and paid TikTok run as one system: native creative built for the platform, Spark Ads on posts that already work, clean event tracking, and creator collaborations with proper disclosure.",
+    "fullDescription": "TikTok Marketing covers the organic account, the paid campaigns in TikTok Ads Manager and the creator collaborations that feed both. The one rule that decides success here is creative: content made for the platform outperforms repurposed television or Meta assets by a margin no bidding strategy can close, and the first two or three seconds decide whether anything after them is seen. So we work in volume rather than in hero productions, run Spark Ads on organic and creator posts that have already earned attention, and put the TikTok Pixel and Events API in place before scaling anything. TikTok Shop is not available in every country and its rules differ where it exists, so we verify it for your specific market first. Detail continues in TikTok Shop Setup & Optimization and TikTok Organic Content Strategy.",
+    "features": [
+      "Native Creative Production — Hooks, Formats and Sound Built for the Feed",
+      "TikTok Ads Manager Campaign Build, Objectives and Budget Structure",
+      "Spark Ads on Organic and Creator Posts With Authorisation Codes",
+      "TikTok Pixel, Events API and Conversion Tracking Before Scaling",
+      "Creator Sourcing, Briefing, Usage Rights and Paid-Partnership Disclosure",
+      "Organic Posting Cadence and Content Pipeline That Survives Fast Content Decay",
+      "TikTok Shop Eligibility Check and Setup Where the Market Supports It",
+      "Brand-Safety Controls, Comment Moderation and Reporting in GA4 and Looker Studio"
+    ],
+    "benefits": [
+      "Creative made for the platform instead of repurposed assets that get scrolled past",
+      "Paid budget put behind posts that have already proven they hold attention",
+      "Event tracking that gives the algorithm real signal rather than guesses",
+      "Creator work handled with clear usage rights and correct paid-partnership labelling",
+      "A production rhythm that keeps working as individual videos burn out within days",
+      "Full ownership — your Business Center, your ad account, your pixel, your content library"
+    ],
+    "metaTitle": "TikTok Marketing — Ads, Content & Shop | PakSoft",
+    "metaDescription": "TikTok marketing done natively: platform-first creative, Spark Ads, creator collaborations and clean tracking. Book a free TikTok account review today.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Fit & Market Check",
+          "description": "We look at whether your audience is genuinely on TikTok in your market and whether the product can be shown rather than explained, because TikTok rewards demonstration over argument. At the same time we check the practical constraints — TikTok Shop availability in your country, category restrictions and any advertising rules that apply to your sector."
+        },
+        {
+          "step": 2,
+          "title": "Tracking Setup",
+          "description": "We install the TikTok Pixel and, where the platform stack allows it, server-side events through the Events API, then verify that purchases, leads and add-to-carts actually arrive. Optimising a TikTok campaign against broken events wastes budget faster here than almost anywhere, because delivery is aggressive and volume builds quickly."
+        },
+        {
+          "step": 3,
+          "title": "Creative System",
+          "description": "We build a repeatable production system: a bank of hooks, several formats, and a shooting routine that can be run weekly on a phone rather than a set. Videos are structured so the first seconds carry the message, and every concept is tagged at launch so we can see which hook, not merely which ad group, produced the result."
+        },
+        {
+          "step": 4,
+          "title": "Organic Posting & Creator Layer",
+          "description": "Organic posts and creator collaborations run first, both to earn reach and to identify which content deserves paid support. Creators are briefed on the message but left to speak in their own voice, with usage rights agreed in writing and the paid-partnership disclosure applied properly rather than quietly omitted."
+        },
+        {
+          "step": 5,
+          "title": "Spark Ads & Scaling",
+          "description": "Posts that already hold attention become Spark Ads, which keep the original engagement and social proof instead of starting from zero as a fresh upload. We scale in steps the delivery system can absorb and rotate creative continuously, since a TikTok ad's useful life is measured in days or a few weeks, not months."
+        },
+        {
+          "step": 6,
+          "title": "Measure & Rebuild",
+          "description": "We report platform figures next to GA4 and your own order data, and we explain where they disagree rather than quoting the friendliest number. Each cycle feeds the next round of hooks, so the content pipeline improves from evidence instead of restarting from opinion."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the minimum monthly budget for TikTok ads?",
+          "answer": "TikTok enforces small daily minimums at campaign and ad-group level, but a workable budget is decided by your cost per result and how many creatives you need to test. In practice you need enough spend to run several concepts at once and enough conversions weekly for the system to optimise; a budget that only supports one video tells you nothing. We calculate the figure with you from your target cost per result and margin before anything launches."
+        },
+        {
+          "question": "Is the ad spend included in your fee?",
+          "answer": "No — media and management are always separate. The budget is charged by TikTok directly to your own payment method inside your own ad account, and TikTok invoices you for it; we never collect it or add a percentage. Our fee covers strategy, tracking setup, creative direction, campaign management, creator coordination and reporting."
+        },
+        {
+          "question": "Do we have to appear on camera ourselves?",
+          "answer": "No, though a recognisable face usually helps. Product-in-use footage, hands-only demonstrations, screen recordings, text-led edits and creator-made content all perform, and plenty of successful accounts never show the owner. If nobody in the business wants to be on camera we build the content system around creators and product footage instead, and we say honestly that this shifts more of the budget into production."
+        },
+        {
+          "question": "Can we just reuse our existing TV or Meta ads?",
+          "answer": "You can upload them, but they usually underperform badly. Polished, centred, brand-first video reads as an advertisement within the first second and gets scrolled past, whereas content shot natively for the feed keeps people watching. We do reuse footage as raw material — re-edited with a native hook, native pacing and platform-appropriate sound — rather than running the finished commercial as-is."
+        },
+        {
+          "question": "How long before we see results?",
+          "answer": "Delivery and engagement data arrive within days, and for lower-priced impulse products first sales can come quickly. A reliable read on which creative direction works usually takes four to eight weeks, because it depends on how many concepts you can test rather than on time alone. Considered purchases take longer, since TikTok often creates the awareness and the conversion happens later through search or direct visit."
+        },
+        {
+          "question": "What are Spark Ads and why do you prefer them?",
+          "answer": "Spark Ads promote an existing organic post — yours or, with an authorisation code, a creator's — so the ad keeps the original likes, comments, shares and profile link instead of starting cold. That social proof usually improves performance and sends engagement back to the real account rather than an ad that vanishes when the campaign stops. The creator has to issue the authorisation code, so usage terms need agreeing up front."
+        },
+        {
+          "question": "Is TikTok Shop available for our business?",
+          "answer": "That has to be checked market by market, because TikTok Shop is live in some countries and not in others, and eligibility also depends on your seller entity, category and fulfilment setup. We verify current availability for the market you actually sell into before planning anything around it — assuming it exists and discovering later that it does not is an expensive way to lose a quarter. Where it is not available we plan the funnel around your own store instead."
+        },
+        {
+          "question": "How do you work with creators, and who owns the content?",
+          "answer": "We source creators for fit rather than follower count, brief them on the message and the boundaries, and agree in writing what the content can be used for and for how long. Paid partnerships must be disclosed under both platform rules and advertising law in most markets, so the disclosure toggle and any local wording requirement are applied properly. Usage rights for Spark Ads or wider reuse are negotiated at the outset, not after a video succeeds."
+        },
+        {
+          "question": "How much content do we actually need?",
+          "answer": "More than most brands expect. Individual TikTok videos have a short useful life and creative fatigue arrives in days or weeks rather than months, so a steady output of several concepts per cycle beats one expensive production per quarter. This is why we set up a repeatable shooting routine instead of a campaign shoot — the system matters more than any single video."
+        },
+        {
+          "question": "What about brand safety?",
+          "answer": "Two things are worth separating: where your ads appear and what happens in your own comments. On the placement side we use the platform's inventory and category controls and review placements periodically. On the account side, comment moderation matters as much — a viral video attracts everything, and an unmoderated comment section can undo the impression the content created."
+        },
+        {
+          "question": "Who owns the ad account, pixel and content?",
+          "answer": "You do. We work inside your TikTok Business Center and your ad account with assigned access, so the account, pixel history, audiences, creative library and TikTok Shop setup where applicable all remain yours. When an engagement ends we hand over documentation and remove our own access, and your content library stays with you."
+        },
+        {
+          "question": "Do we need TikTok Shop Setup or TikTok Organic Content Strategy?",
+          "answer": "This page decides which, and often the answer is organic first. TikTok Organic Content Strategy covers the account, the content pipeline and the posting rhythm that gives paid something worth amplifying. TikTok Shop Setup & Optimization applies only where TikTok Shop operates in your market and covers catalogue, listings and in-app checkout — worth doing properly, but pointless without content that earns attention first."
+        }
+      ],
+      "technologies": [
+        { "name": "TikTok Ads Manager", "icon": "tiktok-ads-manager" },
+        { "name": "TikTok Business Center", "icon": "tiktok-business-center" },
+        { "name": "TikTok Pixel & Events API", "icon": "tiktok-pixel" },
+        { "name": "TikTok Shop", "icon": "tiktok-shop" },
+        { "name": "TikTok Creator Marketplace", "icon": "tiktok-creator-marketplace" },
+        { "name": "Google Analytics 4", "icon": "ga4" },
+        { "name": "Google Tag Manager", "icon": "google-tag-manager" },
+        { "name": "Looker Studio", "icon": "looker-studio" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "TikTok Pazarlama",
+    "shortDescription": "Organik ve reklamlı TikTok'u tek sistem olarak yürütürüz: platforma özel kreatif üretimi, tutan gönderiler üzerine Spark Ads, doğru kurulmuş olay ölçümü ve etiketi düzgün yapılmış içerik üretici iş birlikleri.",
+    "fullDescription": "TikTok Pazarlama; organik hesabı, TikTok Ads Manager'daki reklam kampanyalarını ve ikisini birden besleyen içerik üretici iş birliklerini kapsar. Burada sonucu belirleyen tek kural kreatiftir: platform için çekilmiş içerik, televizyon veya Meta için hazırlanmış materyalin uyarlanmasını hiçbir teklif stratejisinin kapatamayacağı bir farkla geçer ve ilk iki üç saniye, sonrasının izlenip izlenmeyeceğine karar verir. Bu yüzden tek bir büyük prodüksiyon yerine hacimle çalışır, zaten ilgi toplamış organik ve üretici gönderilerini Spark Ads'e çevirir, ölçeklemeden önce TikTok Pixel ve Events API kurulumunu tamamlarız. TikTok Shop her ülkede açık değildir ve açık olduğu yerlerde kuralları farklıdır; bu yüzden sizin pazarınız için durumu önce doğrularız. Detaylı çalışma TikTok Shop Setup & Optimization ve TikTok Organic Content Strategy sayfalarında devam eder.",
+    "features": [
+      "Platforma özel kreatif üretimi: hook bankası, format çeşitliliği ve ses kullanımı",
+      "TikTok Ads Manager kampanya kurulumu, hedef seçimi ve bütçe yapısı",
+      "Organik ve üretici gönderilerine yetkilendirme koduyla Spark Ads kurgusu",
+      "Ölçeklemeden önce TikTok Pixel, Events API ve dönüşüm ölçümü doğrulaması",
+      "İçerik üretici seçimi, brief, kullanım hakları ve ücretli iş birliği etiketlemesi",
+      "İçeriğin hızla eskimesine dayanacak organik yayın temposu ve üretim hattı",
+      "Pazarınızda destekleniyorsa TikTok Shop uygunluk kontrolü ve kurulumu",
+      "Marka güvenliği ayarları, yorum moderasyonu ve GA4 ile Looker Studio raporlaması"
+    ],
+    "benefits": [
+      "Kaydırılıp geçilen uyarlama reklam yerine akış için çekilmiş, izlenen içerik",
+      "Bütçenin, dikkati tuttuğu zaten kanıtlanmış gönderilerin arkasına konması",
+      "Algoritmaya tahmin değil gerçek sinyal veren olay ölçümü",
+      "Kullanım hakları yazılı, etiketi doğru yapılmış içerik üretici iş birlikleri",
+      "Tek tek videolar günler içinde tükenirken çalışmaya devam eden bir üretim ritmi",
+      "Business Center, reklam hesabı, pixel ve içerik arşivi sizde kalır"
+    ],
+    "metaTitle": "TikTok Pazarlama: Reklam, İçerik ve Shop | PakSoft",
+    "metaDescription": "TikTok pazarlama yönetimi: platforma özel kreatif, Spark Ads, üretici iş birlikleri ve doğru ölçüm kurulumu. Ücretsiz TikTok hesap analizi alın.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Uygunluk ve Pazar Kontrolü",
+          "description": "Hedef kitlenizin Türkiye'de gerçekten TikTok'ta olup olmadığına ve ürünün anlatılmak yerine gösterilebilir olup olmadığına bakarız; çünkü TikTok argümanı değil gösterimi ödüllendirir. Aynı anda pratik kısıtları da kontrol ederiz: TikTok Shop'un pazarınızdaki durumu, kategori kısıtları ve sektörünüze uygulanan reklam kuralları."
+        },
+        {
+          "step": 2,
+          "title": "Ölçüm Kurulumu",
+          "description": "TikTok Pixel'i kurar, altyapınız izin veriyorsa Events API ile sunucu taraflı olayları ekler ve satın alma, form ve sepete ekleme olaylarının gerçekten ulaştığını doğrularız. Bozuk ölçümle TikTok kampanyası optimize etmek bütçeyi başka çoğu kanaldan daha hızlı tüketir, çünkü yayın agresiftir ve hacim çok çabuk birikir."
+        },
+        {
+          "step": 3,
+          "title": "Kreatif Sistemi",
+          "description": "Tekrarlanabilir bir üretim düzeni kurarız: hook bankası, birkaç format ve set kurmadan telefonla haftalık işletilebilecek bir çekim rutini. Videolar ilk saniyelerin mesajı taşıyacağı şekilde kurgulanır ve her konsept yayına girerken etiketlenir; böylece sonucu hangi reklam grubunun değil, hangi hook'un getirdiğini görebiliriz."
+        },
+        {
+          "step": 4,
+          "title": "Organik Yayın ve Üretici Katmanı",
+          "description": "Organik gönderiler ve içerik üretici iş birlikleri önce çalışır; hem erişim kazandırır hem de hangi içeriğin reklam desteğini hak ettiğini gösterir. Üreticilere mesajı ve sınırları anlatırız ama kendi diliyle konuşmalarına karışmayız; kullanım hakları yazılı olarak belirlenir ve ücretli iş birliği etiketi sessizce atlanmaz, kurallara uygun biçimde uygulanır."
+        },
+        {
+          "step": 5,
+          "title": "Spark Ads ve Büyütme",
+          "description": "Dikkati tutan gönderiler Spark Ads'e dönüşür; böylece reklam sıfırdan yüklenen bir video gibi değil, mevcut beğeni, yorum ve sosyal kanıtla yayına girer. Yayın sisteminin sindirebileceği adımlarla büyütür, kreatifi sürekli döndürürüz; çünkü bir TikTok reklamının ömrü aylarla değil günler ya da birkaç haftayla ölçülür."
+        },
+        {
+          "step": 6,
+          "title": "Ölçme ve Yeniden Kurma",
+          "description": "Panel rakamlarını GA4 ve kendi sipariş verinizle yan yana raporlar, çeliştikleri yeri en olumlu rakamı seçmek yerine açıklarız. Her döngü bir sonraki hook setini besler; içerik hattı fikirle değil kanıtla gelişir."
+        }
+      ],
+      "faq": [
+        {
+          "question": "TikTok reklamları için aylık en az ne kadar bütçe gerekir?",
+          "answer": "TikTok kampanya ve reklam grubu düzeyinde küçük günlük alt sınırlar uygular, ama çalışan bütçeyi dönüşüm maliyetiniz ve test etmeniz gereken kreatif sayısı belirler. Pratikte aynı anda birkaç konsepti yayınlayacak ve sistemin optimize edebileceği kadar haftalık dönüşüm toplayacak bütçe gerekir; tek bir videoyu taşıyan bütçe size hiçbir şey öğretmez. Rakamı hedef dönüşüm maliyetiniz ve marjınızdan yola çıkarak yayın öncesinde birlikte hesaplarız."
+        },
+        {
+          "question": "Reklam bütçesi hizmet bedeline dahil mi?",
+          "answer": "Hayır, ikisi her zaman ayrıdır. Bütçe doğrudan TikTok'a, sizin reklam hesabınızdaki kendi ödeme yönteminizden gider ve faturasını TikTok keser; biz bu tutarı tahsil etmez, üzerine komisyon koymayız. Ücretimiz strateji, ölçüm kurulumu, kreatif yönetimi, kampanya yönetimi, üretici koordinasyonu ve raporlama karşılığıdır."
+        },
+        {
+          "question": "Kamera önüne kendimiz çıkmak zorunda mıyız?",
+          "answer": "Hayır, ama tanıdık bir yüz genelde işe yarar. Ürünün kullanım anı, sadece ellerin göründüğü gösterimler, ekran kaydı, metin ağırlıklı kurgular ve içerik üreticilerinin çektiği videolar da çalışır; başarılı pek çok hesapta işletme sahibi hiç görünmez. Şirkette kimse kamera önüne çıkmak istemiyorsa sistemi üreticiler ve ürün çekimleri üzerine kurarız, ama bunun bütçenin daha büyük kısmını prodüksiyona kaydırdığını açıkça söyleriz."
+        },
+        {
+          "question": "Mevcut Meta veya televizyon reklamlarımızı kullanamaz mıyız?",
+          "answer": "Yükleyebilirsiniz ama genelde kötü performans verir. Ortalanmış, cilalı, markayı öne koyan video ilk saniyede reklam olarak okunur ve kaydırılıp geçilir; akış için çekilmiş içerik ise izleten şeydir. Var olan görüntüleri ham malzeme olarak kullanırız — platforma uygun bir hook, ritim ve sesle yeniden kurgulayarak — ama bitmiş reklam filmini olduğu gibi yayınlamayız."
+        },
+        {
+          "question": "Ne kadar sürede sonuç alırım?",
+          "answer": "Gösterim ve etkileşim verisi günler içinde gelir; düşük fiyatlı, ani karar verilen ürünlerde ilk satışlar da hızlı gelebilir. Hangi kreatif yönün tuttuğuna dair güvenilir okuma genelde dört ila sekiz hafta sürer, çünkü bu süre zamandan çok kaç konsept test edebildiğinize bağlıdır. Karar süreci uzun ürünlerde daha geç sonuç alınır; TikTok çoğu zaman farkındalığı yaratır, dönüşüm sonradan aramadan ya da doğrudan girişten gelir."
+        },
+        {
+          "question": "Spark Ads nedir, neden tercih ediyorsunuz?",
+          "answer": "Spark Ads, var olan bir organik gönderiyi — sizinkini ya da yetkilendirme koduyla bir üreticininkini — reklama dönüştürür; böylece reklam mevcut beğeni, yorum, paylaşım ve profil bağlantısıyla yayına girer, sıfırdan başlamaz. Bu sosyal kanıt performansı genelde iyileştirir ve etkileşim, kampanya bitince yok olan bir reklama değil gerçek hesaba yazılır. Yetkilendirme kodunu üreticinin vermesi gerektiği için kullanım şartları baştan konuşulur."
+        },
+        {
+          "question": "TikTok Shop bizim için kullanılabilir mi?",
+          "answer": "Bunu pazar pazar kontrol etmek gerekir; TikTok Shop bazı ülkelerde açıktır, bazılarında değildir ve açık olduğu yerlerde de uygunluk satıcı statünüze, kategorinize ve teslimat kurgunuza bağlıdır. Planı üzerine kurmadan önce satış yaptığınız pazardaki güncel durumu doğrularız; var sayıp sonradan olmadığını görmek bir çeyreği kaybetmenin pahalı yoludur. Açık değilse hunileri kendi mağazanız üzerinden kurgularız."
+        },
+        {
+          "question": "İçerik üreticileriyle nasıl çalışıyorsunuz, içerik kimin oluyor?",
+          "answer": "Üreticileri takipçi sayısına göre değil markaya uygunluğuna göre seçer, mesajı ve sınırları anlatır, içeriğin nerede ve ne kadar süreyle kullanılabileceğini yazılı olarak belirleriz. Ücretli iş birliğinin hem platform kuralları hem de reklam mevzuatı gereği açıkça belirtilmesi zorunludur; etiketleme ve gerekli ifadeler düzgün uygulanır. Spark Ads veya daha geniş kullanım için haklar, video tuttuktan sonra değil en baştan konuşulur."
+        },
+        {
+          "question": "Gerçekte ne kadar içerik üretmemiz gerekiyor?",
+          "answer": "Çoğu markanın beklediğinden fazla. Tek bir TikTok videosunun ömrü kısadır ve kreatif yorgunluğu aylarla değil günler ya da haftalarla gelir; bu yüzden çeyrekte bir pahalı prodüksiyon yerine her döngüde birkaç konsept üretmek daha iyi sonuç verir. Kampanya çekimi değil tekrarlanabilir bir çekim rutini kurmamızın sebebi budur: sistem, tek bir videodan daha önemlidir."
+        },
+        {
+          "question": "Marka güvenliği tarafında ne yapıyorsunuz?",
+          "answer": "İki şeyi ayırmak gerekir: reklamınızın nerede göründüğü ve kendi yorum alanınızda ne olduğu. Yayın tarafında platformun envanter ve kategori kontrollerini kullanır, yerleşimleri düzenli olarak gözden geçiririz. Hesap tarafında yorum moderasyonu en az o kadar önemlidir; çok izlenen bir video her türlü yorumu çeker ve yönetilmeyen bir yorum alanı içeriğin yarattığı izlenimi tersine çevirebilir."
+        },
+        {
+          "question": "Reklam hesabı, pixel ve içerikler kime ait?",
+          "answer": "Size aittir. Çalışmayı sizin TikTok Business Center ve reklam hesabınız içinde yetkilendirilmiş erişimle yürütürüz; hesap, pixel geçmişi, hedef kitleler, kreatif arşivi ve varsa TikTok Shop kurulumu sizde kalır. Yollarımız ayrılırsa dokümantasyonu teslim eder, erişimimizi kaldırırız; içerik arşivi sizinle kalır."
+        },
+        {
+          "question": "TikTok Shop Setup mı yoksa TikTok Organic Content Strategy mi bize lazım?",
+          "answer": "Kararı bu sayfada veririz ve cevap çoğu zaman önce organiktir. TikTok Organic Content Strategy hesabı, içerik hattını ve yayın ritmini kapsar; reklamın destekleyeceği malzemeyi üreten taraf burasıdır. TikTok Shop Setup & Optimization ise yalnızca TikTok Shop'un pazarınızda açık olduğu durumda geçerlidir ve katalog, ürün sayfaları ile uygulama içi satın alma akışını kapsar — düzgün yapılmaya değer, ama dikkat çeken içerik olmadan anlamsızdır."
+        }
+      ],
+      "technologies": [
+        { "name": "TikTok Ads Manager", "icon": "tiktok-ads-manager" },
+        { "name": "TikTok Business Center", "icon": "tiktok-business-center" },
+        { "name": "TikTok Pixel & Events API", "icon": "tiktok-pixel" },
+        { "name": "TikTok Shop", "icon": "tiktok-shop" },
+        { "name": "TikTok Creator Marketplace", "icon": "tiktok-creator-marketplace" },
+        { "name": "Google Analytics 4", "icon": "ga4" },
+        { "name": "Google Tag Manager", "icon": "google-tag-manager" },
+        { "name": "Looker Studio", "icon": "looker-studio" }
+      ]
+    }
+  },
+  "de": {
+    "name": "TikTok Marketing",
+    "shortDescription": "Organisches und bezahltes TikTok aus einer Hand: plattformnative Creatives statt Zweitverwertung, Spark Ads auf Beiträgen, die bereits funktionieren, sauber implementiertes Tracking und Creator-Kooperationen mit korrekter Werbekennzeichnung.",
+    "fullDescription": "TikTok Marketing umfasst den organischen Kanal, die Kampagnen im TikTok Ads Manager und die Creator-Kooperationen, die beides speisen. Über den Erfolg entscheidet das Creative: Für die Plattform produzierte Inhalte schlagen wiederverwendetes TV- oder Meta-Material so deutlich, dass keine Gebotsstrategie den Abstand schließt, und die ersten zwei bis drei Sekunden entscheiden, ob der Rest überhaupt gesehen wird. Deshalb arbeiten wir mit Frequenz statt mit einzelnen Hochglanzproduktionen, machen aus organischen und Creator-Beiträgen, die bereits Aufmerksamkeit erzielt haben, Spark Ads, und richten TikTok Pixel und Events API ein, bevor skaliert wird. TikTok Shop ist nicht in jedem Land verfügbar; wir prüfen den Status für Ihren konkreten Markt zuerst. Vertieft wird das in TikTok Shop Setup & Optimization und TikTok Organic Content Strategy.",
+    "features": [
+      "Plattformnative Creative-Produktion: Hooks, Formate und Sound für den Feed",
+      "Kampagnenaufbau im TikTok Ads Manager mit klarer Ziel- und Budgetstruktur",
+      "Spark Ads auf organischen und Creator-Beiträgen inklusive Autorisierungscodes",
+      "TikTok Pixel, Events API und Conversion-Prüfung vor jeder Skalierung",
+      "Creator-Auswahl, Briefing, Nutzungsrechte und rechtssichere Werbekennzeichnung",
+      "Redaktionsrhythmus und Produktionspipeline gegen die schnelle Content-Ermüdung",
+      "Prüfung der TikTok-Shop-Verfügbarkeit und Einrichtung, wo der Markt sie zulässt",
+      "Brand-Safety-Einstellungen, Kommentarmoderation und Reporting in GA4 und Looker Studio"
+    ],
+    "benefits": [
+      "Creatives, die für den Feed gemacht sind, statt Zweitverwertung, die weggewischt wird",
+      "Mediabudget hinter Beiträgen, die ihre Aufmerksamkeitsleistung bereits bewiesen haben",
+      "Event-Tracking, das dem Algorithmus echtes Signal liefert statt Lücken",
+      "Creator-Zusammenarbeit mit schriftlichen Nutzungsrechten und korrekter Kennzeichnung",
+      "Ein Produktionsrhythmus, der trägt, obwohl einzelne Videos binnen Tagen ausbrennen",
+      "Volle Eigentümerschaft: Ihr Business Center, Ihr Werbekonto, Ihr Pixel, Ihre Inhalte"
+    ],
+    "metaTitle": "TikTok Marketing: Ads, Content & Creator | PakSoft",
+    "metaDescription": "TikTok Marketing mit nativen Creatives, Spark Ads, Creator-Kooperationen und sauberem Tracking. Jetzt kostenlose Analyse Ihres TikTok-Kanals anfordern.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Eignungs- und Marktprüfung",
+          "description": "Wir prüfen, ob Ihre Zielgruppe im DACH-Raum tatsächlich auf TikTok erreichbar ist und ob sich Ihr Produkt zeigen statt erklären lässt, denn die Plattform belohnt Demonstration mehr als Argumentation. Parallel klären wir die praktischen Rahmenbedingungen: Verfügbarkeit von TikTok Shop, Kategoriebeschränkungen und die Werberegeln Ihrer Branche."
+        },
+        {
+          "step": 2,
+          "title": "Tracking-Einrichtung",
+          "description": "Wir implementieren das TikTok Pixel über Ihr Consent-Management und, wo der Shop-Stack es zulässt, serverseitige Events über die Events API, und prüfen anschließend, ob Käufe, Leads und Warenkorb-Ereignisse wirklich ankommen. Eine Kampagne auf fehlerhafte Events zu optimieren verbrennt hier besonders schnell Budget, weil die Auslieferung aggressiv ist."
+        },
+        {
+          "step": 3,
+          "title": "Creative-System",
+          "description": "Wir bauen ein wiederholbares Produktionssystem: eine Sammlung von Hooks, mehrere Formate und eine Drehroutine, die wöchentlich mit dem Smartphone statt am Set läuft. Videos werden so aufgebaut, dass die ersten Sekunden die Botschaft tragen, und jedes Konzept wird beim Start getaggt, damit erkennbar bleibt, welcher Hook das Ergebnis gebracht hat."
+        },
+        {
+          "step": 4,
+          "title": "Organische Ebene und Creator",
+          "description": "Organische Beiträge und Creator-Kooperationen laufen zuerst, um Reichweite zu erzeugen und zu erkennen, welche Inhalte Mediabudget verdienen. Creator erhalten Botschaft und Leitplanken, sprechen aber in ihrer eigenen Sprache; Nutzungsrechte werden schriftlich vereinbart und die Werbekennzeichnung sauber gesetzt statt stillschweigend weggelassen."
+        },
+        {
+          "step": 5,
+          "title": "Spark Ads und Skalierung",
+          "description": "Beiträge mit nachgewiesener Aufmerksamkeit werden zu Spark Ads und behalten Likes, Kommentare und Shares, statt als kalter Upload zu starten. Wir skalieren in Schritten, die das Auslieferungssystem verarbeiten kann, und rotieren Creatives laufend, weil die Nutzungsdauer einer TikTok-Anzeige in Tagen oder wenigen Wochen gemessen wird."
+        },
+        {
+          "step": 6,
+          "title": "Messen und Nachschärfen",
+          "description": "Wir berichten Plattformzahlen neben GA4 und Ihren eigenen Auftragsdaten und erklären Abweichungen, statt die angenehmste Zahl zu zitieren. Jeder Zyklus liefert die Hooks für den nächsten, sodass sich die Pipeline aus Evidenz weiterentwickelt statt aus Meinungen."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie hoch muss das monatliche TikTok-Budget mindestens sein?",
+          "answer": "TikTok setzt kleine Tagesminima auf Kampagnen- und Anzeigengruppenebene, das arbeitsfähige Budget ergibt sich jedoch aus Ihren Zielkosten pro Ergebnis und der Zahl der zu testenden Creatives. Praktisch brauchen Sie genug Budget, um mehrere Konzepte parallel laufen zu lassen, und genug wöchentliche Conversions, damit das System optimieren kann. Wir rechnen die Zahl vor dem Start gemeinsam aus Zielkosten und Marge durch."
+        },
+        {
+          "question": "Ist das Mediabudget in Ihrem Honorar enthalten?",
+          "answer": "Nein, Media und Betreuung sind getrennt. Das Budget zahlen Sie direkt an TikTok über Ihre eigene Zahlungsmethode in Ihrem eigenen Werbekonto, und TikTok rechnet es Ihnen gegenüber ab; wir vereinnahmen es nicht und schlagen nichts auf. Unser Honorar deckt Strategie, Tracking, Creative-Steuerung, Kampagnenbetreuung, Creator-Koordination und Reporting ab."
+        },
+        {
+          "question": "Müssen wir selbst vor die Kamera?",
+          "answer": "Nein, auch wenn ein wiedererkennbares Gesicht meist hilft. Produktanwendungen, Aufnahmen nur mit Händen, Screen Recordings, textgeführte Schnitte und Creator-Content funktionieren ebenfalls, und viele erfolgreiche Kanäle zeigen die Inhaber nie. Will niemand im Unternehmen vor die Kamera, bauen wir das System um Creator und Produktaufnahmen — das verschiebt allerdings mehr Budget in die Produktion, und das sagen wir offen."
+        },
+        {
+          "question": "Können wir bestehende TV- oder Meta-Spots weiterverwenden?",
+          "answer": "Hochladen können Sie sie, meist mit schwachem Ergebnis. Hochglanzproduktionen mit Markenlogo am Anfang werden binnen einer Sekunde als Werbung erkannt und weggewischt, während nativ gedrehter Content weitergeschaut wird. Wir nutzen vorhandenes Material als Rohstoff und schneiden es mit nativem Hook, nativem Tempo und passendem Sound neu, statt den fertigen Spot unverändert auszuspielen."
+        },
+        {
+          "question": "Wie lange dauert es bis zu Ergebnissen?",
+          "answer": "Auslieferungs- und Interaktionsdaten liegen binnen Tagen vor, bei niedrigpreisigen Impulsprodukten kommen erste Verkäufe schnell. Eine belastbare Aussage darüber, welche Creative-Richtung funktioniert, braucht meist vier bis acht Wochen, weil sie von der Zahl getesteter Konzepte abhängt und nicht allein von der Zeit. Bei erklärungsbedürftigen Produkten dauert es länger, da TikTok oft die Aufmerksamkeit erzeugt und die Conversion später über Suche oder Direkteinstieg erfolgt."
+        },
+        {
+          "question": "Was sind Spark Ads und warum bevorzugen Sie sie?",
+          "answer": "Spark Ads bewerben einen bestehenden organischen Beitrag — Ihren eigenen oder, per Autorisierungscode, den eines Creators — sodass Likes, Kommentare, Shares und Profillink erhalten bleiben. Dieser Social Proof verbessert in der Regel die Leistung und schreibt die Interaktion dem echten Konto gut statt einer Anzeige, die mit Kampagnenende verschwindet. Da der Code vom Creator kommt, gehören die Nutzungsbedingungen vorab geklärt."
+        },
+        {
+          "question": "Wie steht es mit Datenschutz und DSGVO?",
+          "answer": "Pixel und Marketing-Tags werden ausschließlich über Ihr Consent-Management ausgespielt, sodass ohne Einwilligung nichts geladen wird, und die Einbindung dokumentieren wir nachvollziehbar. Datenschutzrechtliche Bewertungen zu Drittlandtransfers sind Sache Ihrer Rechtsberatung; manche Unternehmen im DACH-Raum entscheiden sich aus internen Richtlinien gegen den Kanal. Wir setzen technisch sauber um und weisen auf offene Punkte hin, statt sie zu übergehen."
+        },
+        {
+          "question": "Ist TikTok Shop für uns verfügbar?",
+          "answer": "Das muss marktspezifisch geprüft werden, denn TikTok Shop ist in einigen Ländern aktiv und in anderen nicht, und die Zulassung hängt zusätzlich von Verkäuferentität, Kategorie und Logistik ab. Wir prüfen den aktuellen Stand für Ihren Zielmarkt, bevor darauf geplant wird. Wo es nicht verfügbar ist, führt der Funnel in Ihren eigenen Shop."
+        },
+        {
+          "question": "Wie arbeiten Sie mit Creators und wem gehört der Content?",
+          "answer": "Wir wählen Creator nach Passung statt nach Followerzahl, briefen Botschaft und Leitplanken und halten schriftlich fest, wofür und wie lange der Content genutzt werden darf. Bezahlte Kooperationen sind kennzeichnungspflichtig; die Plattformfunktion und die im Markt übliche Formulierung setzen wir konsequent ein. Nutzungsrechte für Spark Ads oder weitere Verwendung werden zu Beginn verhandelt, nicht nachdem ein Video erfolgreich war."
+        },
+        {
+          "question": "Wie viel Content brauchen wir wirklich?",
+          "answer": "Mehr, als die meisten Marken einplanen. Einzelne Videos haben eine kurze Lebensdauer und Creative-Ermüdung tritt in Tagen bis Wochen ein, weshalb mehrere Konzepte je Zyklus besser wirken als eine teure Produktion pro Quartal. Deshalb bauen wir eine wiederholbare Drehroutine auf statt eines Kampagnendrehs — das System zählt mehr als das einzelne Video."
+        },
+        {
+          "question": "Wie halten Sie es mit Brand Safety?",
+          "answer": "Zwei Ebenen sind zu trennen: wo Ihre Anzeigen erscheinen und was in Ihren eigenen Kommentaren passiert. Auf Auslieferungsseite nutzen wir die Inventar- und Kategoriekontrollen der Plattform und prüfen Platzierungen regelmäßig. Auf Kontoseite ist Kommentarmoderation genauso wichtig, denn ein viraler Beitrag zieht alles an und ein unmoderierter Kommentarbereich kann den Eindruck des Videos zunichtemachen."
+        },
+        {
+          "question": "Brauchen wir TikTok Shop Setup oder TikTok Organic Content Strategy?",
+          "answer": "Diese Seite entscheidet das, und die Antwort lautet häufig: zuerst organisch. TikTok Organic Content Strategy umfasst Kanal, Content-Pipeline und Postingrhythmus und liefert das Material, das bezahlte Reichweite überhaupt verstärken kann. TikTok Shop Setup & Optimization greift nur dort, wo TikTok Shop im Markt verfügbar ist, und deckt Katalog, Produktseiten und In-App-Checkout ab."
+        }
+      ],
+      "technologies": [
+        { "name": "TikTok Ads Manager", "icon": "tiktok-ads-manager" },
+        { "name": "TikTok Business Center", "icon": "tiktok-business-center" },
+        { "name": "TikTok Pixel & Events API", "icon": "tiktok-pixel" },
+        { "name": "TikTok Shop", "icon": "tiktok-shop" },
+        { "name": "TikTok Creator Marketplace", "icon": "tiktok-creator-marketplace" },
+        { "name": "Google Analytics 4", "icon": "ga4" },
+        { "name": "Google Tag Manager", "icon": "google-tag-manager" },
+        { "name": "Looker Studio", "icon": "looker-studio" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "التسويق عبر TikTok",
+    "shortDescription": "إدارة TikTok العضوي والمدفوع كنظام واحد: محتوى مصنوع خصيصاً للمنصة، وإعلانات Spark على منشورات أثبتت نجاحها، وقياس أحداث سليم، وتعاون مع صنّاع محتوى بإفصاح واضح.",
+    "fullDescription": "التسويق عبر TikTok يشمل الحساب العضوي والحملات داخل TikTok Ads Manager والتعاون مع صنّاع المحتوى الذي يغذي الاثنين معاً. القاعدة التي تحسم النتيجة هنا هي المحتوى: ما يُصوَّر خصيصاً للمنصة يتفوق على إعادة استخدام إعلانات التلفزيون أو Meta بفارق لا تعوضه أي استراتيجية مزايدة، والثواني الثلاث الأولى تقرر إن كان بقية الفيديو سيُشاهد أصلاً. لذلك نعمل بالكم لا بالإنتاج الضخم الواحد، ونحوّل المنشورات العضوية ومنشورات صنّاع المحتوى التي حققت انتباهاً إلى إعلانات Spark، ونركّب TikTok Pixel وEvents API قبل أي توسع. أما TikTok Shop فليس متاحاً في كل دولة وتختلف شروطه حيث يوجد، لذا نتحقق من وضعه في سوقكم تحديداً أولاً. ويستمر التفصيل في صفحتي TikTok Shop Setup & Optimization وTikTok Organic Content Strategy.",
+    "features": [
+      "إنتاج محتوى أصلي للمنصة: مقدمات جاذبة وصيغ متعددة واستخدام صحيح للصوت",
+      "بناء الحملات في TikTok Ads Manager وضبط الأهداف وهيكل الميزانية",
+      "إعلانات Spark على المنشورات العضوية ومنشورات صنّاع المحتوى برموز التفويض",
+      "تركيب TikTok Pixel وEvents API والتحقق من التحويلات قبل التوسع",
+      "اختيار صنّاع المحتوى وإعداد الإحاطة وحقوق الاستخدام والإفصاح عن الشراكة المدفوعة",
+      "إنتاج بالعربية والإنجليزية مع مراعاة اللهجة المناسبة لجمهور كل سوق",
+      "التحقق من إتاحة TikTok Shop في السوق وإعداده حيث يكون متاحاً",
+      "ضبط أمان العلامة وإدارة التعليقات وتقارير في GA4 وLooker Studio"
+    ],
+    "benefits": [
+      "محتوى مصنوع للتغذية بدل مواد معاد استخدامها يتخطاها المستخدم فوراً",
+      "ميزانية مدفوعة تُوضع خلف منشورات أثبتت قدرتها على حجز الانتباه",
+      "قياس أحداث يمنح الخوارزمية إشارة حقيقية بدل تخمين",
+      "تعاون مع صنّاع المحتوى بحقوق استخدام مكتوبة وإفصاح صحيح عن الإعلان",
+      "إيقاع إنتاج يستمر رغم أن عمر الفيديو الواحد لا يتجاوز أياماً",
+      "ملكية كاملة: Business Center وحساب الإعلانات والبيكسل ومكتبة المحتوى تبقى لكم"
+    ],
+    "metaTitle": "التسويق عبر TikTok: إعلانات ومحتوى | PakSoft",
+    "metaDescription": "إدارة TikTok العضوي والمدفوع: محتوى أصلي للمنصة، إعلانات Spark، تعاون مع صنّاع المحتوى، وقياس دقيق للتحويلات. اطلبوا مراجعة مجانية لحسابكم اليوم.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "فحص الملاءمة والسوق",
+          "description": "ننظر أولاً إن كان جمهوركم موجوداً فعلاً على TikTok في سوقكم، وإن كان المنتج قابلاً للعرض لا للشرح، لأن المنصة تكافئ الإظهار أكثر من الإقناع اللفظي. وفي الوقت نفسه نتحقق من القيود العملية: إتاحة TikTok Shop في بلدكم، وقيود الفئة، وأي قواعد إعلانية تخص قطاعكم."
+        },
+        {
+          "step": 2,
+          "title": "إعداد القياس",
+          "description": "نركّب TikTok Pixel، ونضيف الأحداث من جهة الخادم عبر Events API حين تسمح منصتكم، ثم نتحقق أن أحداث الشراء والعملاء المحتملين وإضافة السلة تصل فعلاً. التحسين على أحداث مكسورة يستهلك الميزانية هنا أسرع من أي مكان آخر لأن العرض سريع والحجم يتراكم بسرعة."
+        },
+        {
+          "step": 3,
+          "title": "نظام المحتوى",
+          "description": "نبني نظام إنتاج قابلاً للتكرار: بنك مقدمات، وعدة صيغ، وروتين تصوير أسبوعي بالهاتف بدل استوديو كامل. تُبنى الفيديوهات بحيث تحمل الثواني الأولى الرسالة، ويوسم كل مفهوم عند الإطلاق حتى نعرف أي مقدمة حققت النتيجة لا أي مجموعة إعلانية أنفقت."
+        },
+        {
+          "step": 4,
+          "title": "النشر العضوي وطبقة صنّاع المحتوى",
+          "description": "يبدأ العمل بالمنشورات العضوية والتعاون مع صنّاع المحتوى، لكسب الوصول ولمعرفة أي محتوى يستحق دعماً مدفوعاً. نُطلع صانع المحتوى على الرسالة والحدود ونترك له لغته الخاصة، مع حقوق استخدام مكتوبة وإفصاح صحيح عن الشراكة المدفوعة بدل تجاهله بهدوء."
+        },
+        {
+          "step": 5,
+          "title": "إعلانات Spark والتوسع",
+          "description": "المنشورات التي تحجز الانتباه تتحول إلى إعلانات Spark فتحتفظ بالإعجابات والتعليقات والمشاركات بدل الانطلاق من الصفر كرفع جديد. نتوسع بخطوات يستوعبها نظام العرض ونبدّل المواد باستمرار، لأن العمر المفيد لإعلان TikTok يُقاس بالأيام أو بأسابيع قليلة لا بالأشهر."
+        },
+        {
+          "step": 6,
+          "title": "القياس وإعادة البناء",
+          "description": "نعرض أرقام المنصة بجانب GA4 وبيانات طلباتكم، ونشرح مواضع الاختلاف بدل اختيار الرقم الألطف. كل دورة تغذي مجموعة المقدمات التالية، فيتحسن خط الإنتاج بالأدلة لا بالآراء."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما الحد الأدنى للميزانية الشهرية على TikTok؟",
+          "answer": "تفرض المنصة حدوداً يومية صغيرة على مستوى الحملة والمجموعة الإعلانية، لكن الميزانية العملية تحددها تكلفة النتيجة المستهدفة وعدد المواد التي تحتاجون اختبارها. عملياً تحتاجون إنفاقاً يكفي لتشغيل عدة أفكار في وقت واحد، وتحويلات أسبوعية كافية كي يتمكن النظام من التحسين؛ ميزانية تكفي فيديو واحداً لا تعلّمكم شيئاً. نحسب الرقم معكم قبل الإطلاق انطلاقاً من التكلفة المستهدفة والهامش."
+        },
+        {
+          "question": "هل ميزانية الإعلانات ضمن أتعابكم؟",
+          "answer": "لا، الميزانية منفصلة دائماً. تُدفع مباشرة إلى TikTok من وسيلة الدفع الخاصة بكم داخل حساب إعلاناتكم، وTikTok هي من تصدر الفاتورة؛ لا نحصّلها ولا نضيف عليها نسبة. أتعابنا مقابل الاستراتيجية وإعداد القياس والإشراف الإبداعي وإدارة الحملات وتنسيق صنّاع المحتوى والتقارير."
+        },
+        {
+          "question": "هل يجب أن نظهر أمام الكاميرا بأنفسنا؟",
+          "answer": "لا، وإن كان الوجه المألوف يساعد عادةً. تنجح أيضاً لقطات استخدام المنتج والعروض التي تظهر فيها اليدان فقط وتسجيلات الشاشة والمونتاج المعتمد على النص ومحتوى صنّاع المحتوى، وكثير من الحسابات الناجحة لا يظهر فيها صاحب النشاط إطلاقاً. وإن لم يرغب أحد في الظهور نبني النظام حول صنّاع المحتوى ولقطات المنتج، مع مصارحتكم بأن ذلك ينقل جزءاً أكبر من الميزانية إلى الإنتاج."
+        },
+        {
+          "question": "هل يمكن إعادة استخدام إعلاناتنا التلفزيونية أو إعلانات Meta؟",
+          "answer": "يمكن رفعها، لكن أداءها عادةً ضعيف. الفيديو المصقول الذي يضع العلامة في المقدمة يُقرأ كإعلان خلال ثانية واحدة فيُتخطى، بينما المحتوى المصوَّر أصلاً للتغذية يُبقي المشاهد. نستخدم اللقطات الموجودة كمادة خام ونعيد مونتاجها بمقدمة وإيقاع وصوت مناسب للمنصة بدل بث الإعلان الجاهز كما هو."
+        },
+        {
+          "question": "كم يستغرق ظهور النتائج؟",
+          "answer": "تصل بيانات العرض والتفاعل خلال أيام، وقد تأتي المبيعات الأولى سريعاً في المنتجات منخفضة السعر ذات القرار السريع. أما القراءة الموثوقة لاتجاه المحتوى الناجح فتحتاج عادةً من أربعة إلى ثمانية أسابيع، لأنها ترتبط بعدد الأفكار المختبرة أكثر من ارتباطها بالوقت. المنتجات التي تحتاج تفكيراً أطول تستغرق أكثر، إذ يصنع TikTok الوعي بينما يحدث التحويل لاحقاً عبر البحث أو الدخول المباشر."
+        },
+        {
+          "question": "ما إعلانات Spark ولماذا تفضلونها؟",
+          "answer": "تعمل إعلانات Spark على ترويج منشور عضوي قائم — منشوركم أو منشور صانع محتوى برمز تفويض — فيحتفظ الإعلان بالإعجابات والتعليقات والمشاركات ورابط الحساب بدل أن يبدأ بارداً. هذا الدليل الاجتماعي يحسّن الأداء عادةً ويعيد التفاعل إلى الحساب الحقيقي بدل إعلان يختفي مع انتهاء الحملة. ولأن الرمز يصدر من صانع المحتوى، تُتفق شروط الاستخدام مسبقاً."
+        },
+        {
+          "question": "هل TikTok Shop متاح لنشاطنا؟",
+          "answer": "يجب التحقق من ذلك لكل سوق على حدة، فـTikTok Shop مفعّل في بعض الدول وغير متاح في غيرها، والأهلية تعتمد أيضاً على كيان البائع والفئة وترتيبات الشحن. نتحقق من الوضع الحالي في السوق الذي تبيعون فيه فعلاً قبل بناء أي خطة عليه؛ فافتراض توفره ثم اكتشاف العكس طريقة مكلفة لخسارة ربع سنة. وحيث لا يتوفر نبني المسار على متجركم الخاص."
+        },
+        {
+          "question": "هل تنتجون المحتوى بالعربية أم بالإنجليزية؟",
+          "answer": "بالاثنين، مع اختيار واعٍ للهجة. المحتوى القصير يعتمد على الإحساس بالقرب، ولهجة محكية قريبة من الجمهور غالباً تتفوق على عربية فصحى رسمية في هذا السياق، بينما تبقى الفصحى مناسبة لبعض الفئات والرسائل. نختبر النسخ على الجمهور نفسه بدل الافتراض، ونبقي أسماء المنصات والعلامات بحروف لاتينية كما يقرأها الناس."
+        },
+        {
+          "question": "كيف تتعاملون مع صنّاع المحتوى ولمن تعود ملكية المواد؟",
+          "answer": "نختار صانع المحتوى بحسب الملاءمة لا بعدد المتابعين، ونحدد الرسالة والحدود، ونتفق كتابياً على أوجه استخدام المحتوى ومدته. الإفصاح عن الشراكة المدفوعة مطلوب بموجب قواعد المنصة وأنظمة الإعلان في معظم الأسواق، لذا نطبّق خاصية الإفصاح والصياغة المطلوبة محلياً بشكل صحيح. وحقوق استخدام المادة في إعلانات Spark تُتفق في البداية لا بعد نجاح الفيديو."
+        },
+        {
+          "question": "كم محتوى نحتاج فعلاً؟",
+          "answer": "أكثر مما تتوقع معظم العلامات. عمر الفيديو الواحد قصير وإرهاق المحتوى يأتي خلال أيام أو أسابيع لا أشهر، لذا فإنتاج عدة أفكار في كل دورة يتفوق على إنتاج ضخم واحد كل ربع سنة. لهذا نبني روتين تصوير قابلاً للتكرار بدل حملة تصوير واحدة؛ النظام أهم من أي فيديو منفرد."
+        },
+        {
+          "question": "ماذا عن أمان العلامة التجارية؟",
+          "answer": "ينبغي الفصل بين أمرين: أين تظهر إعلاناتكم، وماذا يحدث في تعليقات حسابكم. على جانب العرض نستخدم أدوات ضبط المخزون والفئات في المنصة ونراجع المواضع دورياً. وعلى جانب الحساب، إدارة التعليقات لا تقل أهمية؛ فالفيديو واسع الانتشار يجذب كل شيء، وقسم تعليقات متروك بلا متابعة قد يهدم الانطباع الذي بناه المحتوى."
+        },
+        {
+          "question": "هل نحتاج TikTok Shop Setup أم TikTok Organic Content Strategy؟",
+          "answer": "هذه الصفحة هي التي تحدد ذلك، والجواب غالباً يبدأ بالعضوي. تغطي TikTok Organic Content Strategy الحساب وخط إنتاج المحتوى وإيقاع النشر، وهي التي توفر المادة التي يستحق الإعلان تضخيمها. أما TikTok Shop Setup & Optimization فتنطبق فقط حيث يكون TikTok Shop متاحاً في سوقكم وتغطي الكتالوج وصفحات المنتجات والشراء داخل التطبيق."
+        }
+      ],
+      "technologies": [
+        { "name": "TikTok Ads Manager", "icon": "tiktok-ads-manager" },
+        { "name": "TikTok Business Center", "icon": "tiktok-business-center" },
+        { "name": "TikTok Pixel & Events API", "icon": "tiktok-pixel" },
+        { "name": "TikTok Shop", "icon": "tiktok-shop" },
+        { "name": "TikTok Creator Marketplace", "icon": "tiktok-creator-marketplace" },
+        { "name": "Google Analytics 4", "icon": "ga4" },
+        { "name": "Google Tag Manager", "icon": "google-tag-manager" },
+        { "name": "Looker Studio", "icon": "looker-studio" }
+      ]
+    }
+  }
+}

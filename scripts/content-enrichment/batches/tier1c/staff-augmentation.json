@@ -1,0 +1,447 @@
+{
+  "slug": "staff-augmentation",
+  "en": {
+    "name": "Staff Augmentation",
+    "shortDescription": "Senior engineers embedded in your team, your repository and your process — named people you interview yourself, on a paid trial first, with IP, documentation and exit terms agreed before anyone writes code.",
+    "fullDescription": "Staff augmentation only works when the engineer becomes part of your team rather than a parallel one. Our people join your repository, your board, your standups and your review process, follow your conventions instead of importing ours, and write the same pull requests your own developers would be asked to write. We are deliberately a small senior team, so we do not present a bench or promise instant scaling: we introduce named engineers who have shipped production products, you interview them, and a short paid trial decides the rest. Working from Turkey, the day overlaps almost entirely with Central European hours, which is a practical advantage for teams in Germany, Austria and Switzerland. Where the work is a whole product with its own deadline, we will say so and propose a delivery-owned project instead.",
+    "features": [
+      "Engineers Embedded in Your Repository, Board, Standups and Code Review",
+      "Named Candidates You Interview Yourself — Never Anonymous Resource Slots",
+      "Short Paid Trial Period Before Any Longer Commitment",
+      "Near-Full Overlap With the Central European Working Day",
+      "IP Assignment, NDA and Contractor Terms Signed Before Work Starts",
+      "Your Conventions, Your Tooling, Your Definition of Done",
+      "Documentation, Runbooks and Handover Written Continuously, Not at the End",
+      "Agreed Direct-Hire Conversion Path and Notice Terms"
+    ],
+    "benefits": [
+      "Senior capacity added without committing to a permanent headcount",
+      "Real-time collaboration instead of a queue of overnight questions",
+      "A cheap, fast exit if the fit is wrong, decided during the trial",
+      "Unambiguous ownership of everything produced, from the first commit",
+      "No lock-in, because what the engineer knows ends up written down",
+      "An honest recommendation when a delivery-owned project would serve you better"
+    ],
+    "metaTitle": "Staff Augmentation — Senior Engineers | PakSoft",
+    "metaDescription": "Senior engineers embedded in your team, European workday overlap, paid trial, full IP transfer and clean exit. Talk to PakSoft about your open role today.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Requirement Call and Honest Fit Check",
+          "description": "We go through the actual work — the codebase, the stack, the seniority you need and whether the gap is capacity or missing expertise. If we do not have the right person available, or if what you are describing is really a project with a deadline rather than an extra pair of hands, we say so on that call rather than sell you the closest thing we have."
+        },
+        {
+          "step": 2,
+          "title": "Introduction and Your Own Technical Interview",
+          "description": "You meet the specific engineer who would join, review their background, and run your normal technical interview — including a code exercise if that is your process. Nobody is substituted afterwards without your agreement, and you are never asked to accept an unnamed profile chosen by an account manager."
+        },
+        {
+          "step": 3,
+          "title": "Contract, NDA and IP Assignment",
+          "description": "Before the first commit we sign the commercial terms, a mutual NDA and an explicit assignment of all intellectual property in the delivered work to you. The contract also fixes the boring but important details: rate, invoicing cycle, notice period, working hours, and how confidential data and access credentials are handled."
+        },
+        {
+          "step": 4,
+          "title": "Onboarding Into Your Process",
+          "description": "The engineer takes your onboarding, uses your repository, ticket system, CI and review rules, and joins your ceremonies at your times. We do not run a parallel project plan or a separate status report — your existing process is the source of truth, and progress is visible in the same place as everyone else's."
+        },
+        {
+          "step": 5,
+          "title": "Trial Review and Decision",
+          "description": "At the end of the agreed trial we sit down with the numbers and the pull requests and make an explicit decision to continue, change the person, or stop. Because the trial is short and paid, ending it costs you very little, which is the point — the decision should be based on real work rather than an interview impression."
+        },
+        {
+          "step": 6,
+          "title": "Steady State, Knowledge Transfer and Exit",
+          "description": "Throughout the engagement, decisions and setup live in your documentation rather than in one person's head, so nothing critical leaves when the engagement does. When you wind down, convert to a direct hire or move to a fuller arrangement — described on our Dedicated Teams and Developer Outsourcing pages — the handover is already most of the way written."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How quickly can someone start?",
+          "answer": "It depends entirely on who is free, and we will not pretend otherwise — we are a small senior team, not a staffing agency with a bench. When there is a match, introductions typically happen within days and a start follows once contracts and access are in place. If nobody suitable is available for the timeframe you need, we tell you at the first call so you can keep looking elsewhere."
+        },
+        {
+          "question": "What is the minimum engagement length?",
+          "answer": "We normally start with a short paid trial of around two weeks so both sides can judge the fit on real work, then continue in monthly periods with a notice period agreed in the contract. Very short engagements of a few days rarely pay off for either side, because onboarding into an unfamiliar codebase consumes most of that time. Part-time arrangements are possible where the work genuinely suits them."
+        },
+        {
+          "question": "Who owns the code that gets written?",
+          "answer": "You do. The contract assigns all intellectual property in the delivered work to your company, and it is signed before any code is written rather than negotiated at the end. Work happens in your repository under your accounts, so there is no stage at which output sits somewhere you cannot reach."
+        },
+        {
+          "question": "What happens if the developer is not a good fit?",
+          "answer": "That is exactly what the trial period exists for, and ending it is a normal outcome rather than a dispute. During the trial you can stop with immediate effect and pay only for the days worked; after it, the agreed notice period applies. Where it makes sense we will propose a different engineer, but we will not push a replacement just to keep the engagement alive."
+        },
+        {
+          "question": "How do you handle time zones?",
+          "answer": "We work from Turkey, which sits one to two hours ahead of Central European Time depending on the season, so the working day overlaps almost completely with teams in Germany, Austria, Switzerland and the Netherlands. In practice that means the engineer is in your standup and available for a call in your afternoon, not answering yesterday's questions. For clients in the Gulf the overlap is equally comfortable; for North America we agree fixed overlap hours in advance."
+        },
+        {
+          "question": "Can we hire the engineer directly later?",
+          "answer": "Yes, and we prefer to agree the terms at the start rather than treat it as a breach. A conversion arrangement — typically a notice period plus a transparent one-off fee that decreases the longer the engagement has run — is written into the contract from day one. We would rather someone joins a client permanently on good terms than be locked into an arrangement nobody wants."
+        },
+        {
+          "question": "How many engineers can you provide at once?",
+          "answer": "A small number, and we would rather say that plainly than imply a talent pool we do not have. We are a senior team that takes on a limited set of engagements, which is why we are selective about which ones we accept and why we will decline work we cannot staff well. If you need to scale a department quickly, a large vendor is a more honest fit than we are."
+        },
+        {
+          "question": "How does NDA, confidentiality and data access work?",
+          "answer": "A mutual NDA is signed before any access is granted, and access itself is scoped to what the work requires — your accounts, your permissions, revocable by you at any moment. Where production data contains personal information we work against anonymised or reduced datasets wherever the task allows. Credentials are never shared outside the named engineer, and access is removed on the last day of the engagement."
+        },
+        {
+          "question": "When is staff augmentation the wrong model?",
+          "answer": "When there is nobody on your side to own the direction. Augmentation assumes you have a technical lead who prioritises, reviews and decides; without that, an embedded engineer ends up guessing and you get the drawbacks of both models. If the goal is a defined outcome with a deadline and a scope, a delivery-owned project or a dedicated team with its own lead — see our Dedicated Teams page — is the better structure, and we will tell you which one we think fits."
+        },
+        {
+          "question": "What happens at the end of the engagement?",
+          "answer": "Nothing dramatic, because handover is written as the work happens rather than assembled in the final week. You get architecture and decision notes, runbooks for anything operational, open questions and known rough edges, and a walkthrough session with whoever takes over. Access credentials are revoked on the last day and we confirm in writing what was removed."
+        }
+      ],
+      "technologies": [
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "React", "icon": "react" },
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "React Native", "icon": "react" },
+        { "name": "Git", "icon": "git" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Ekip Takviyesi (Staff Augmentation)",
+    "shortDescription": "Kıdemli yazılımcıların kendi ekibinize, kendi reponuza ve kendi sürecinize dahil olması: adayı siz mülakata alırsınız, önce kısa ücretli deneme yapılır, fikri mülkiyet ve devir şartları kod yazılmadan önce imzalanır.",
+    "fullDescription": "Ekip takviyesi ancak yazılımcı sizin ekibinizin parçası olduğunda işe yarar; paralel bir ekip kurulduğunda değil. Bizim geliştiricilerimiz sizin reponuza, panonuza, günlük toplantınıza ve kod inceleme sürecinize dahil olur; kendi alışkanlıklarını dayatmak yerine sizin standartlarınıza uyar ve kendi geliştiricinizden bekleyeceğiniz kalitede pull request açar. Bilinçli olarak küçük ve kıdemli bir ekibiz; elimizde bekleyen yüzlerce geliştirici havuzu olduğunu ya da bir haftada ekip büyüteceğimizi söylemiyoruz. Size ismiyle tanıştırdığımız, gerçekten canlıya ürün çıkarmış mühendisleri önerir, mülakatı size bırakır ve gerisini kısa bir ücretli deneme sürecine bırakırız. İşin tanımı belli, teslim tarihi olan bütün bir proje ise bunu söyler ve teslim sorumluluğu bizde olan bir model öneririz.",
+    "features": [
+      "Sizin reponuzda, panonuzda, toplantınızda ve kod incelemenizde çalışan geliştirici",
+      "İsmiyle tanıştığınız ve kendi mülakatınızdan geçirdiğiniz adaylar",
+      "Uzun taahhütten önce kısa ve ücretli deneme dönemi",
+      "Avrupa mesai saatleriyle neredeyse tam örtüşen çalışma günü",
+      "Kod yazılmadan önce imzalanan gizlilik, sözleşme ve fikri mülkiyet devri",
+      "Sizin kod standartlarınız, sizin araçlarınız, sizin \"bitti\" tanımınız",
+      "Sonda toplanmayan, iş akarken yazılan dokümantasyon ve devir notları",
+      "Baştan yazılı hâle getirilmiş doğrudan istihdama geçiş koşulları"
+    ],
+    "benefits": [
+      "Kadroya kalıcı personel almadan kıdemli kapasite eklemek",
+      "Ertesi güne sarkan soru kuyruğu yerine aynı saat diliminde gerçek zamanlı çalışma",
+      "Uyum tutmazsa deneme döneminde ucuza ve hızlıca ayrılabilme",
+      "İlk taahhütten itibaren üretilen her şeyin mülkiyetinde tartışma olmaması",
+      "Bilgi tek kişinin kafasında kalmadığı için bağımlılık oluşmaması",
+      "Ekip takviyesi yanlış modelse bunu açıkça söyleyen bir muhatap"
+    ],
+    "metaTitle": "Ekip Takviyesi — Kıdemli Yazılımcı | PakSoft",
+    "metaDescription": "Kendi ekibinize dahil olan kıdemli yazılımcılar: ücretli deneme dönemi, tam fikri mülkiyet devri ve temiz devir. Açık pozisyonunuz için bizimle görüşün.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "İhtiyaç Görüşmesi ve Dürüst Uygunluk Kontrolü",
+          "description": "İşin kendisini konuşuruz: kod tabanı, kullanılan teknolojiler, aradığınız kıdem seviyesi ve eksik olanın kapasite mi yoksa belirli bir uzmanlık mı olduğu. Uygun kişi müsait değilse ya da anlattığınız şey aslında ek bir çift el değil, teslim tarihi olan bir projeyse bunu o görüşmede söyleriz; elimizdeki en yakın kişiyi size uydurmaya çalışmayız."
+        },
+        {
+          "step": 2,
+          "title": "Tanışma ve Sizin Teknik Mülakatınız",
+          "description": "Ekibinize katılacak kişiyle bizzat tanışır, geçmiş işlerini inceler ve kendi teknik mülakatınızı yaparsınız; süreciniz kod görevi içeriyorsa onu da uygularsınız. Sonrasında sizin onayınız olmadan kimse değiştirilmez ve bir müşteri temsilcisinin seçtiği isimsiz bir özgeçmişi kabul etmeniz istenmez."
+        },
+        {
+          "step": 3,
+          "title": "Sözleşme, Gizlilik ve Fikri Mülkiyet Devri",
+          "description": "İlk taahhütten önce ticari şartları, karşılıklı gizlilik sözleşmesini ve üretilen tüm işin fikri haklarının size devrini imzalarız. Sözleşme aynı zamanda sıkıcı ama kritik ayrıntıları netleştirir: ücret, faturalama dönemi, fesih ihbar süresi, çalışma saatleri ve gizli veri ile erişim bilgilerinin nasıl ele alınacağı."
+        },
+        {
+          "step": 4,
+          "title": "Sürecinize Dahil Olma",
+          "description": "Geliştirici sizin oryantasyonunuzdan geçer; sizin reponuzu, görev takip sisteminizi, CI kurallarınızı ve inceleme akışınızı kullanır, toplantılarınıza sizin saatlerinizde katılır. Paralel bir proje planı ya da ayrı bir durum raporu tutmayız; ilerleme herkesinkiyle aynı yerde ve aynı biçimde görünür."
+        },
+        {
+          "step": 5,
+          "title": "Deneme Dönemi Değerlendirmesi",
+          "description": "Kararlaştırılan deneme süresinin sonunda açılan pull request'lere ve gerçek çıktıya bakarak açık bir karar veririz: devam, kişi değişikliği veya bitiş. Deneme kısa ve ücretli olduğu için bitirmenin maliyeti düşüktür; amaç da budur — karar mülakat izlenimine değil, gerçek işe dayansın."
+        },
+        {
+          "step": 6,
+          "title": "Süreklilik, Bilgi Aktarımı ve Ayrılık",
+          "description": "Çalışma boyunca kararlar ve kurulum bilgileri tek kişinin aklında değil, sizin dokümantasyonunuzda birikir; böylece iş bittiğinde kritik hiçbir bilgi çıkıp gitmez. İster kadroya alın, ister durdurun, ister Adanmış Ekipler ve Yazılım Dış Kaynak sayfalarımızdaki daha kapsamlı modele geçin, devir dosyasının büyük kısmı zaten yazılmış olur."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Ne kadar sürede başlayabilirsiniz?",
+          "answer": "Tamamen kimin müsait olduğuna bağlı ve bunu olduğu gibi söylüyoruz: biz küçük ve kıdemli bir ekibiz, bekleyen geliştirici havuzu olan bir istihdam şirketi değiliz. Uygun eşleşme olduğunda tanışma genellikle birkaç gün içinde olur, başlangıç ise sözleşme ve erişimler tamamlanınca gelir. İhtiyacınız olan takvimde uygun kimse yoksa ilk görüşmede söyleriz ki başka yerde aramaya devam edin."
+        },
+        {
+          "question": "Minimum çalışma süresi nedir?",
+          "answer": "Genellikle iki hafta civarında kısa ve ücretli bir deneme dönemiyle başlarız; böylece uyum, mülakat izlenimiyle değil gerçek işle ölçülür. Sonrasında aylık dönemler ve sözleşmede belirlenen ihbar süresiyle devam ederiz. Birkaç günlük çok kısa işler iki taraf için de verimli olmuyor, çünkü yabancı bir kod tabanına adapte olmak bu sürenin çoğunu yiyor; işin yapısı uygunsa yarı zamanlı çalışma mümkün."
+        },
+        {
+          "question": "Yazılan kodun mülkiyeti kimde olur?",
+          "answer": "Sizde. Sözleşme, üretilen tüm işin fikri haklarını şirketinize devreder ve bu, iş bittikten sonra pazarlık edilen bir madde değil, ilk satır yazılmadan imzalanan bir maddedir. Çalışma sizin hesaplarınız altındaki sizin reponuzda ilerler; çıktının erişemediğiniz bir yerde durduğu hiçbir aşama olmaz."
+        },
+        {
+          "question": "Geliştirici ekibimize uyum sağlayamazsa ne olur?",
+          "answer": "Deneme dönemi tam olarak bunun için var ve bitirmek bir anlaşmazlık değil, normal bir sonuçtur. Deneme sırasında dilediğiniz an durdurabilir, yalnızca çalışılan günleri ödersiniz; sonrasında sözleşmedeki ihbar süresi işler. Mantıklıysa başka bir geliştirici öneririz, ama işi ayakta tutmak uğruna size uymayan bir ismi dayatmayız."
+        },
+        {
+          "question": "Saat farkı ve iletişim nasıl yürüyor?",
+          "answer": "Türkiye'den çalışıyoruz; mesai saatlerimiz Avrupa ile mevsime göre bir-iki saat farkla neredeyse tamamen örtüşüyor. Bu, Almanya, Avusturya ve Hollanda'daki ekipler için geliştiricinin günlük toplantıda hazır olması ve öğleden sonra telefonla ulaşılabilir olması anlamına geliyor; dünkü sorulara ertesi sabah cevap gelmiyor. Yurt içi müşterilerde zaten aynı saat dilimindeyiz, Körfez için de örtüşme rahat."
+        },
+        {
+          "question": "İleride geliştiriciyi doğrudan kendi kadromuza alabilir miyiz?",
+          "answer": "Evet ve bunu sonradan sorun etmek yerine baştan yazılı hâle getirmeyi tercih ederiz. Geçiş koşulları — ihbar süresi ve çalışma süresi uzadıkça azalan şeffaf bir defaya mahsus bedel — daha ilk gün sözleşmeye girer. Türkiye'de kıdemli geliştirici bulmanın zorluğunu biliyoruz; birinin iyi şartlarla müşterinin kadrosuna geçmesi, kimsenin istemediği bir bağımlılığı sürdürmekten iyidir."
+        },
+        {
+          "question": "Aynı anda kaç geliştirici verebilirsiniz?",
+          "answer": "Az sayıda ve bunu sahip olmadığımız bir havuz varmış gibi göstermektense açıkça söylüyoruz. Sınırlı sayıda iş alan kıdemli bir ekibiz; bu yüzden hangi işi kabul edeceğimiz konusunda seçiciyiz ve iyi çalışamayacağımız işi reddediyoruz. Kısa sürede bir departman büyütmeniz gerekiyorsa, büyük bir tedarikçi bizden daha dürüst bir seçenek olur."
+        },
+        {
+          "question": "Gizlilik, KVKK ve sistem erişimleri nasıl yönetiliyor?",
+          "answer": "Herhangi bir erişim verilmeden önce karşılıklı gizlilik sözleşmesi imzalanır; erişim ise yalnızca işin gerektirdiği kadar, sizin hesaplarınız üzerinden ve istediğiniz an geri alabileceğiniz şekilde tanımlanır. Canlı veride kişisel veri varsa, işin izin verdiği her yerde anonimleştirilmiş veya kısıtlanmış veri kümesiyle çalışırız. Erişim bilgileri ismi belli geliştirici dışında kimseyle paylaşılmaz ve çalışmanın son günü kapatılır."
+        },
+        {
+          "question": "Ekip takviyesi ne zaman yanlış modeldir?",
+          "answer": "Sizin tarafınızda yönü sahiplenecek kimse yoksa. Bu model, önceliklendiren, inceleyen ve karar veren bir teknik liderin sizde olduğunu varsayar; o kişi yoksa dahil olan geliştirici tahmin yürütmeye başlar ve her iki modelin de dezavantajını yaşarsınız. Hedef, kapsamı ve teslim tarihi belli bir sonuçsa, teslim sorumluluğu bizde olan bir proje ya da kendi lideri olan Adanmış Ekipler modeli daha doğrudur; hangisinin uyduğunu açıkça söyleriz."
+        },
+        {
+          "question": "Çalışma bittiğinde ne oluyor?",
+          "answer": "Dramatik bir şey olmuyor, çünkü devir son hafta toplanan bir dosya değil, iş akarken yazılan bir birikim. Mimari ve karar notlarını, operasyonel işler için çalıştırma talimatlarını, açık soruları ve bilinen sorunlu noktaları teslim eder, devralacak kişiyle birlikte bir anlatım oturumu yaparız. Erişim bilgileri son gün kapatılır ve neyin kaldırıldığını yazılı olarak teyit ederiz."
+        }
+      ],
+      "technologies": [
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "React", "icon": "react" },
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "React Native", "icon": "react" },
+        { "name": "Git", "icon": "git" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Staff Augmentation (Team-Verstärkung)",
+    "shortDescription": "Erfahrene Entwickler, die in Ihrem Team, Ihrem Repository und Ihrem Prozess arbeiten: namentlich vorgestellt, von Ihnen selbst interviewt, zunächst in einer bezahlten Probezeit, mit geklärter Rechteübertragung.",
+    "fullDescription": "Team-Verstärkung funktioniert nur, wenn die Entwicklerin Teil Ihres Teams wird und nicht ein zweites Team daneben entsteht. Unsere Leute arbeiten in Ihrem Repository, Ihrem Board, Ihren Dailys und Ihrem Review-Prozess, folgen Ihren Konventionen statt eigene mitzubringen, und liefern dieselben Pull Requests, die Sie von Ihren Festangestellten erwarten würden. Wir sind bewusst ein kleines Senior-Team: Wir werben nicht mit einer Bank verfügbarer Entwickler und versprechen keine kurzfristige Skalierung. Wir stellen namentlich Ingenieure vor, die produktive Software ausgeliefert haben, Sie führen das Gespräch, und eine kurze bezahlte Probezeit entscheidet den Rest. Aus der Türkei überschneidet sich unser Arbeitstag nahezu vollständig mit mitteleuropäischen Zeiten. Geht es in Wahrheit um ein Projekt mit Termin und Umfang, sagen wir das und schlagen eine Lieferverantwortung auf unserer Seite vor.",
+    "features": [
+      "Entwickler arbeiten in Ihrem Repository, Board, Daily und Code-Review",
+      "Namentlich vorgestellte Kandidaten, die Sie selbst interviewen",
+      "Kurze bezahlte Probezeit vor jeder längeren Bindung",
+      "Nahezu vollständige Überschneidung mit dem mitteleuropäischen Arbeitstag",
+      "NDA, Vertrag und Rechteübertragung unterschrieben, bevor Code entsteht",
+      "Ihre Konventionen, Ihre Werkzeuge, Ihre Definition of Done",
+      "Dokumentation und Übergabewissen entstehen laufend, nicht zum Schluss",
+      "Vorab geregelter Weg zur Direktanstellung samt Kündigungsfristen"
+    ],
+    "benefits": [
+      "Erfahrene Kapazität ohne eine dauerhafte Stellenentscheidung",
+      "Abstimmung in Echtzeit statt einer Warteschlange von Fragen über Nacht",
+      "Ein günstiger, schneller Ausstieg innerhalb der Probezeit, wenn es nicht passt",
+      "Eindeutige Rechtelage an allen Ergebnissen ab dem ersten Commit",
+      "Keine Abhängigkeit, weil das Wissen schriftlich in Ihrem Haus bleibt",
+      "Eine ehrliche Empfehlung, wenn ein liefernd verantwortetes Projekt besser passt"
+    ],
+    "metaTitle": "Staff Augmentation — Senior-Entwickler | PakSoft",
+    "metaDescription": "Erfahrene Entwickler in Ihrem Team: mitteleuropäische Arbeitszeiten, bezahlte Probezeit, volle Rechteübertragung, saubere Übergabe. Jetzt Bedarf besprechen.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Bedarfsgespräch und ehrliche Passung",
+          "description": "Wir sprechen über die konkrete Arbeit: Codebasis, Technologien, benötigte Seniorität und ob Ihnen Kapazität oder eine bestimmte Expertise fehlt. Ist niemand Passendes verfügbar, oder beschreiben Sie in Wahrheit ein Projekt mit Termin statt eine zusätzliche Arbeitskraft, sagen wir das in diesem Gespräch, statt Ihnen die nächstbeste Person zu verkaufen."
+        },
+        {
+          "step": 2,
+          "title": "Vorstellung und Ihr technisches Interview",
+          "description": "Sie lernen genau die Person kennen, die einsteigen würde, prüfen ihren Hintergrund und führen Ihr übliches technisches Interview, einschließlich Programmieraufgabe, falls das zu Ihrem Prozess gehört. Ein Austausch erfolgt später nie ohne Ihre Zustimmung, und Sie müssen kein anonymes Profil akzeptieren, das ein Vertrieb ausgewählt hat."
+        },
+        {
+          "step": 3,
+          "title": "Vertrag, NDA und Rechteübertragung",
+          "description": "Vor dem ersten Commit unterzeichnen wir die kaufmännischen Bedingungen, eine beidseitige Vertraulichkeitsvereinbarung und die ausdrückliche Übertragung sämtlicher Rechte an den Arbeitsergebnissen auf Sie. Ebenso festgehalten werden die unspektakulären, aber wichtigen Punkte: Satz, Abrechnungszyklus, Kündigungsfrist, Arbeitszeiten sowie der Umgang mit vertraulichen Daten und Zugängen. Wo wir personenbezogene Daten berühren, schließen wir zusätzlich einen Auftragsverarbeitungsvertrag."
+        },
+        {
+          "step": 4,
+          "title": "Einarbeitung in Ihren Prozess",
+          "description": "Die Entwicklerin durchläuft Ihr Onboarding, nutzt Ihr Repository, Ihr Ticketsystem, Ihre CI und Ihre Review-Regeln und nimmt zu Ihren Zeiten an Ihren Terminen teil. Wir führen keinen parallelen Projektplan und keinen separaten Statusbericht — Ihr bestehender Prozess ist die maßgebliche Quelle, und Fortschritt ist dort sichtbar, wo er für alle anderen auch sichtbar ist."
+        },
+        {
+          "step": 5,
+          "title": "Auswertung der Probezeit",
+          "description": "Am Ende der vereinbarten Probezeit treffen wir anhand der tatsächlichen Pull Requests eine ausdrückliche Entscheidung: fortsetzen, Person wechseln oder beenden. Weil die Probezeit kurz und bezahlt ist, kostet ein Abbruch wenig — genau darum geht es, denn die Entscheidung soll auf echter Arbeit beruhen und nicht auf einem Interviewgefühl."
+        },
+        {
+          "step": 6,
+          "title": "Regelbetrieb, Wissenstransfer und Ausstieg",
+          "description": "Während der gesamten Zusammenarbeit landen Entscheidungen und Setup in Ihrer Dokumentation und nicht im Kopf einer einzelnen Person, sodass beim Ende nichts Kritisches mitgeht. Ob Sie übernehmen, beenden oder auf das umfassendere Modell unserer Seiten Dedizierte Teams und Softwareentwicklung im Outsourcing wechseln — die Übergabe ist zum größten Teil bereits geschrieben."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie schnell kann jemand anfangen?",
+          "answer": "Das hängt vollständig davon ab, wer frei ist, und wir stellen es nicht anders dar: Wir sind ein kleines Senior-Team und keine Personalvermittlung mit Reservebank. Passt es, finden Vorstellungsgespräche meist innerhalb weniger Tage statt, der Start folgt, sobald Vertrag und Zugänge stehen. Ist für Ihren Zeitraum niemand Geeignetes verfügbar, sagen wir das im Erstgespräch, damit Sie weiter suchen können."
+        },
+        {
+          "question": "Wie lang ist die Mindestlaufzeit?",
+          "answer": "Wir starten in der Regel mit einer kurzen bezahlten Probezeit von rund zwei Wochen, damit beide Seiten die Passung an echter Arbeit beurteilen, und setzen danach in Monatsschritten mit vertraglich vereinbarter Kündigungsfrist fort. Sehr kurze Einsätze von wenigen Tagen lohnen sich selten, weil die Einarbeitung in eine fremde Codebasis den Großteil der Zeit beansprucht. Teilzeit ist möglich, wo die Aufgabe das wirklich hergibt."
+        },
+        {
+          "question": "Wem gehört der entstehende Code?",
+          "answer": "Ihnen. Der Vertrag überträgt sämtliche Rechte an den Arbeitsergebnissen auf Ihr Unternehmen und wird unterschrieben, bevor die erste Zeile entsteht, statt am Ende verhandelt zu werden. Gearbeitet wird in Ihrem Repository unter Ihren Konten, es gibt also keinen Zeitpunkt, zu dem Ergebnisse außerhalb Ihres Zugriffs liegen."
+        },
+        {
+          "question": "Was passiert, wenn die Person nicht passt?",
+          "answer": "Genau dafür gibt es die Probezeit, und ein Abbruch ist ein normaler Ausgang und kein Streitfall. Während der Probezeit können Sie mit sofortiger Wirkung beenden und zahlen nur die geleisteten Tage; danach greift die vereinbarte Frist. Wo es sinnvoll ist, schlagen wir eine andere Person vor, drängen Ihnen aber niemanden auf, nur um den Einsatz fortzuführen."
+        },
+        {
+          "question": "Wie funktioniert die Zusammenarbeit über Zeitzonen?",
+          "answer": "Wir arbeiten aus der Türkei, je nach Jahreszeit ein bis zwei Stunden vor mitteleuropäischer Zeit, sodass sich der Arbeitstag mit Teams in Deutschland, Österreich und der Schweiz nahezu vollständig überschneidet. Praktisch heißt das: Die Entwicklerin sitzt in Ihrem Daily und ist nachmittags für ein Gespräch erreichbar, statt am Folgetag auf gestrige Fragen zu antworten. Feste Kernzeiten halten wir bei Bedarf schriftlich fest."
+        },
+        {
+          "question": "Können wir die Person später fest anstellen?",
+          "answer": "Ja, und wir regeln die Bedingungen lieber zu Beginn, als daraus später einen Konflikt zu machen. Ein Übernahmemodell — üblicherweise eine Frist plus eine transparente einmalige Gebühr, die mit zunehmender Einsatzdauer sinkt — steht ab Tag eins im Vertrag. Uns ist ein sauberer Wechsel zu guten Bedingungen lieber als eine Bindung, die niemand möchte."
+        },
+        {
+          "question": "Wie viele Entwickler können Sie gleichzeitig stellen?",
+          "answer": "Wenige, und wir sagen das lieber deutlich, als einen Talentpool anzudeuten, den wir nicht haben. Wir sind ein erfahrenes Team mit einer begrenzten Zahl paralleler Einsätze, deshalb sind wir bei der Annahme wählerisch und lehnen ab, was wir nicht gut besetzen können. Wenn Sie kurzfristig eine ganze Abteilung aufbauen müssen, ist ein großer Anbieter für Sie die ehrlichere Wahl."
+        },
+        {
+          "question": "Wie sind Vertraulichkeit, DSGVO und Zugänge geregelt?",
+          "answer": "Vor jedem Zugang steht eine beidseitige Vertraulichkeitsvereinbarung, und der Zugang selbst wird auf das für die Aufgabe Notwendige beschränkt — in Ihren Konten, von Ihnen jederzeit widerrufbar. Berühren die Aufgaben personenbezogene Daten, schließen wir einen Auftragsverarbeitungsvertrag und arbeiten, wo fachlich möglich, mit anonymisierten oder reduzierten Datensätzen. Zugangsdaten verlassen die namentlich benannte Person nicht und werden am letzten Einsatztag entzogen."
+        },
+        {
+          "question": "Was ist mit Arbeitnehmerüberlassung und dem Betriebsrat?",
+          "answer": "Wir arbeiten als selbstständiger Dienstleister mit eigener fachlicher Verantwortung für die Ausführung, nicht als Zeitarbeitsunternehmen, und wir formulieren Verträge so, dass Aufgaben statt Weisungsverhältnisse beschrieben werden. Fragen der Eingliederung und Mitbestimmung beurteilen in Ihrem Haus die Rechtsabteilung und gegebenenfalls der Betriebsrat; wir liefern die dafür nötige Transparenz über Rolle, Ort der Leistungserbringung und Vertragsform. Das ist ausdrücklich keine Rechtsberatung."
+        },
+        {
+          "question": "Wann ist Team-Verstärkung das falsche Modell?",
+          "answer": "Wenn auf Ihrer Seite niemand die Richtung verantwortet. Das Modell setzt eine technische Leitung voraus, die priorisiert, reviewt und entscheidet; fehlt sie, rät die eingebundene Person und Sie erhalten die Nachteile beider Modelle. Geht es um ein definiertes Ergebnis mit Termin und Umfang, ist ein liefernd verantwortetes Projekt oder ein dediziertes Team mit eigener Leitung die bessere Struktur — wir sagen Ihnen, was aus unserer Sicht passt."
+        }
+      ],
+      "technologies": [
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "React", "icon": "react" },
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "React Native", "icon": "react" },
+        { "name": "Git", "icon": "git" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تعزيز الفريق (Staff Augmentation)",
+    "shortDescription": "مهندسون خبراء يعملون داخل فريقكم ومستودعكم وعمليتكم: تقابلونهم بالاسم وتجرون مقابلاتكم بأنفسكم، مع فترة تجربة قصيرة مدفوعة، ونقل كامل لحقوق الملكية قبل كتابة أي سطر.",
+    "fullDescription": "لا ينجح تعزيز الفريق إلا حين يصبح المهندس جزءاً من فريقكم لا فريقاً موازياً بجانبه. يعمل مهندسونا داخل مستودعكم ولوحة مهامكم واجتماعكم اليومي وعملية مراجعة الكود لديكم، ويلتزمون بمعاييركم بدل فرض عاداتهم، ويقدّمون طلبات دمج بالمستوى نفسه الذي تطلبونه من موظفيكم. نحن عن قصد فريق صغير من الخبراء: لا نروّج لمخزون مهندسين جاهز ولا نعد بتوسّع فوري. نرشّح لكم مهندسين بالاسم سبق لهم إطلاق منتجات فعلية في الإنتاج، وتُجرون أنتم المقابلة، وتحسم فترة تجربة قصيرة مدفوعة بقية القرار. ونعمل من تركيا، حيث يتداخل يوم العمل بالكامل تقريباً مع دوام الخليج وأوروبا. أما إذا كان المطلوب في حقيقته مشروعاً بنطاق وموعد تسليم، فنقولها ونقترح نموذجاً تكون فيه مسؤولية التسليم علينا.",
+    "features": [
+      "مهندسون يعملون داخل مستودعكم ولوحة مهامكم واجتماعاتكم ومراجعات الكود",
+      "مرشحون بالاسم تجرون مقابلاتهم بأنفسكم، لا ملفات مجهولة يختارها مندوب مبيعات",
+      "فترة تجربة قصيرة ومدفوعة قبل أي التزام طويل",
+      "تداخل شبه كامل مع ساعات العمل في الخليج وأوروبا",
+      "اتفاقية سرية وعقد ونقل لحقوق الملكية الفكرية قبل بدء العمل",
+      "معاييركم البرمجية وأدواتكم وتعريفكم أنتم لاكتمال المهمة",
+      "توثيق وأدلة تشغيل تُكتب أثناء العمل لا في الأسبوع الأخير",
+      "مسار متفق عليه مسبقاً للتوظيف المباشر مع مدد إشعار واضحة"
+    ],
+    "benefits": [
+      "إضافة قدرة هندسية خبيرة دون قرار توظيف دائم",
+      "تعاون في الوقت نفسه بدل انتظار إجابات إلى اليوم التالي",
+      "خروج سريع ومنخفض التكلفة خلال فترة التجربة إن لم يكن التوافق مناسباً",
+      "وضوح تام في ملكية كل ما يُنتَج منذ أول commit",
+      "لا ارتباط قسري بنا، لأن المعرفة تُوثَّق داخل شركتكم أولاً بأول",
+      "توصية صريحة حين يكون المشروع المُدار من طرفنا خياراً أفضل لكم"
+    ],
+    "metaTitle": "تعزيز الفريق — مهندسون خبراء | PakSoft",
+    "metaDescription": "مهندسون خبراء يندمجون في فريقكم، مع تداخل كامل في ساعات العمل وفترة تجربة مدفوعة ونقل كامل للملكية الفكرية. تواصلوا مع PakSoft لمناقشة احتياجكم.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "مكالمة تحديد الحاجة وتقييم التوافق بصراحة",
+          "description": "نناقش العمل نفسه: الكود القائم، والتقنيات المستخدمة، ومستوى الخبرة المطلوب، وما إذا كان النقص في الطاقة الاستيعابية أم في خبرة محددة. وإذا لم يكن لدينا الشخص المناسب متاحاً، أو تبيّن أن ما تصفونه مشروع بموعد تسليم لا يد عمل إضافية، نقول ذلك في المكالمة نفسها بدل بيع أقرب خيار متوفر لدينا."
+        },
+        {
+          "step": 2,
+          "title": "التعارف ومقابلتكم التقنية",
+          "description": "تقابلون المهندس المحدد الذي سينضم، وتراجعون أعماله السابقة، وتجرون مقابلتكم التقنية المعتادة بما فيها مهمة برمجية إن كانت جزءاً من عمليتكم. ولا يُستبدل أحد لاحقاً دون موافقتكم، ولا يُطلب منكم قبول ملف مجهول اختاره مسؤول حسابات."
+        },
+        {
+          "step": 3,
+          "title": "العقد واتفاقية السرية ونقل الملكية الفكرية",
+          "description": "قبل أول commit نوقّع الشروط التجارية واتفاقية سرية متبادلة ونقلاً صريحاً لكامل حقوق الملكية الفكرية في العمل المسلَّم إليكم. ويحدّد العقد كذلك التفاصيل غير اللافتة لكنها حاسمة: السعر، ودورة الفوترة، ومدة الإشعار، وساعات العمل، وطريقة التعامل مع البيانات السرية وبيانات الدخول."
+        },
+        {
+          "step": 4,
+          "title": "الاندماج في عمليتكم",
+          "description": "يمرّ المهندس ببرنامج التهيئة لديكم، ويستخدم مستودعكم ونظام المهام وقواعد التكامل المستمر وآلية المراجعة، ويحضر اجتماعاتكم في مواعيدكم. لا نضع خطة مشروع موازية ولا تقرير حالة منفصلاً؛ عمليتكم القائمة هي المرجع، ويظهر التقدّم في المكان نفسه الذي يظهر فيه عمل بقية الفريق."
+        },
+        {
+          "step": 5,
+          "title": "تقييم فترة التجربة",
+          "description": "في نهاية فترة التجربة المتفق عليها نجلس أمام طلبات الدمج والنتائج الفعلية ونتخذ قراراً صريحاً: الاستمرار، أو تغيير الشخص، أو التوقف. ولأن التجربة قصيرة ومدفوعة فإن إنهاءها يكلّفكم القليل، وهذا هو المقصود: أن يُبنى القرار على عمل حقيقي لا على انطباع مقابلة."
+        },
+        {
+          "step": 6,
+          "title": "الاستقرار ونقل المعرفة والخروج",
+          "description": "طوال فترة التعاون تُدوَّن القرارات وتفاصيل الإعداد في توثيقكم أنتم لا في ذهن شخص واحد، فلا يخرج شيء حسّاس مع انتهاء التعاقد. وسواء انتقلتم إلى التوظيف المباشر أو أوقفتم العمل أو انتقلتم إلى النموذج الأشمل في صفحتَي الفرق المخصصة وتعهيد التطوير، يكون ملف التسليم مكتوباً في معظمه سلفاً."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما السرعة التي يمكنكم البدء بها؟",
+          "answer": "الأمر يعتمد كلياً على من هو متاح، ولا نجمّل ذلك: نحن فريق صغير من مهندسين خبراء لا شركة توظيف لديها مخزون جاهز. عند وجود توافق تتم المقابلات عادةً خلال أيام، ويبدأ العمل فور اكتمال العقد والصلاحيات. وإذا لم يتوفر شخص مناسب ضمن جدولكم الزمني نخبركم في المكالمة الأولى كي تواصلوا البحث في مكان آخر."
+        },
+        {
+          "question": "ما الحد الأدنى لمدة التعاقد؟",
+          "answer": "نبدأ عادةً بفترة تجربة مدفوعة تقارب أسبوعين ليقيس الطرفان التوافق على عمل حقيقي، ثم نستمر بفترات شهرية مع مدة إشعار منصوص عليها في العقد. التعاقدات القصيرة جداً لبضعة أيام نادراً ما تفيد أحداً، لأن التعرّف على كود غير مألوف يستهلك معظم ذلك الوقت. والعمل بدوام جزئي ممكن حين تسمح طبيعة المهمة بذلك فعلاً."
+        },
+        {
+          "question": "لمن تعود ملكية الكود الذي يُكتب؟",
+          "answer": "لكم. ينقل العقد كامل حقوق الملكية الفكرية في العمل المسلَّم إلى شركتكم، ويُوقَّع قبل كتابة أول سطر لا بعد انتهاء العمل. ويجري العمل داخل مستودعكم وتحت حساباتكم، فلا توجد مرحلة يكون فيها الناتج في مكان لا تصلون إليه."
+        },
+        {
+          "question": "ماذا لو لم يكن المهندس مناسباً لفريقنا؟",
+          "answer": "هذا بالضبط سبب وجود فترة التجربة، وإنهاؤها نتيجة طبيعية لا خلاف. خلال التجربة يمكنكم التوقف فوراً ودفع أيام العمل المنفذة فقط، وبعدها تسري مدة الإشعار المتفق عليها. وحين يكون ذلك منطقياً نقترح مهندساً آخر، لكننا لا نفرض بديلاً لمجرد إبقاء التعاقد قائماً."
+        },
+        {
+          "question": "كيف تتعاملون مع فروق التوقيت؟",
+          "answer": "نعمل من تركيا، وتوقيتها يتقدّم على توقيت وسط أوروبا بساعة إلى ساعتين حسب الموسم، ويتداخل مع توقيت الخليج بفارق ساعة واحدة فقط. عملياً يعني ذلك أن المهندس حاضر في اجتماعكم الصباحي ومتاح لمكالمة بعد الظهر ضمن يوم عملكم، لا أن يجيب صباح الغد عن أسئلة الأمس. ونثبّت ساعات تداخل أساسية كتابةً عند الحاجة."
+        },
+        {
+          "question": "هل يمكننا توظيفه مباشرة لدينا لاحقاً؟",
+          "answer": "نعم، ونفضّل الاتفاق على الشروط من البداية بدل تحويلها إلى نزاع لاحق. يُدرَج مسار الانتقال في العقد منذ اليوم الأول: مدة إشعار ورسم واحد شفاف يقلّ كلما طالت مدة التعاون. انتقال شخص إلى فريق العميل بشروط واضحة أفضل من ارتباط لا يريده أحد."
+        },
+        {
+          "question": "كم عدد المهندسين الذين يمكنكم توفيرهم؟",
+          "answer": "عدد محدود، ونقولها صراحة بدل الإيحاء بوجود مخزون كبير لا نملكه. نحن فريق خبير يقبل عدداً محدوداً من التعاقدات المتزامنة، ولهذا نختار ما نقبله بعناية ونعتذر عن العمل الذي لا نستطيع تغطيته جيداً. وإذا كنتم تحتاجون إلى بناء قسم كامل بسرعة، فإن مورّداً كبيراً خيار أصدق لكم منّا."
+        },
+        {
+          "question": "كيف تُدار السرية وصلاحيات الوصول إلى الأنظمة؟",
+          "answer": "توقَّع اتفاقية سرية متبادلة قبل منح أي صلاحية، وتُحدَّد الصلاحية بما تتطلبه المهمة فقط، ضمن حساباتكم وقابلة للسحب في أي لحظة. وحين تتضمن بيانات الإنتاج معلومات شخصية نعمل على نسخ مجهّلة أو مختصرة كلما سمحت المهمة. ولا تُشارك بيانات الدخول مع أي شخص خارج المهندس المحدد بالاسم، وتُلغى في آخر يوم عمل."
+        },
+        {
+          "question": "متى يكون تعزيز الفريق نموذجاً خاطئاً؟",
+          "answer": "حين لا يوجد لديكم من يملك القرار الفني والاتجاه. يفترض هذا النموذج وجود قائد تقني عندكم يرتّب الأولويات ويراجع ويقرّر؛ وبغيابه يبدأ المهندس المنضم بالتخمين فتجتمع عليكم عيوب النموذجين معاً. وإذا كان الهدف نتيجة محددة بنطاق وموعد، فالأنسب مشروع بمسؤولية تسليم كاملة علينا أو فريق مخصص بقائد خاص به، ونخبركم بصراحة أيّهما نراه مناسباً."
+        },
+        {
+          "question": "ماذا يحدث عند انتهاء التعاقد؟",
+          "answer": "لا شيء مفاجئ، لأن التسليم يُكتب مع سير العمل لا يُجمَع في الأسبوع الأخير. تحصلون على ملاحظات المعمارية والقرارات، وأدلة تشغيل لكل ما هو تشغيلي، والأسئلة المفتوحة والنقاط المعروفة التي تحتاج إصلاحاً، وجلسة شرح مع من سيستلم العمل. وتُلغى الصلاحيات في اليوم الأخير مع تأكيد كتابي بما تم سحبه."
+        }
+      ],
+      "technologies": [
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "React", "icon": "react" },
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "React Native", "icon": "react" },
+        { "name": "Git", "icon": "git" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,459 @@
+{
+  "slug": "managed-services",
+  "en": {
+    "name": "Managed Services",
+    "shortDescription": "Ongoing operation of the software you already run: monitoring that catches problems before customers do, dependency and security patching, backups verified by actual restore, and a documented incident process — with every account staying in your name.",
+    "fullDescription": "Most outages are not exotic. They are an expired TLS certificate, a connection pool that filled up, a dependency that quietly broke on the last deploy, or a backup nobody ever restored. Managed services means somebody is accountable for those things between projects, not only during them. We agree in writing what is monitored, what counts as an emergency, and how quickly you can expect a person — scoped to hours we can genuinely staff rather than an SLA we could not honour. We operate our own production Next.js platform on Vercel with PostgreSQL on Neon through Prisma, and we run MenuQR Lab for paying customers, so this is how we treat our own systems. Depth lives in Continuous Monitoring & APM, Maintenance & Support, and Disaster Recovery & Business Continuity.",
+    "features": [
+      "Uptime, error-rate and response-time monitoring with alerts routed to a named human",
+      "Certificate, domain and dependency expiry tracked before it takes production down",
+      "Scheduled security and dependency patching, staged through preview before production",
+      "Backup verification by real restore into a scratch environment, not a green dashboard tick",
+      "Written runbooks for the failures your system is actually likely to have",
+      "Incident response with named contacts, status updates during the event and a written follow-up",
+      "Performance-regression watch on Core Web Vitals, error budgets and slow database queries",
+      "Plain-language monthly report: what changed, what broke, what we recommend next"
+    ],
+    "benefits": [
+      "Problems surface through monitoring rather than through a customer phoning you",
+      "Patching happens on a cadence instead of after an incident forces it",
+      "Backups you have actually restored, so recovery is a procedure rather than a hope",
+      "One accountable contact for the platform instead of three suppliers blaming each other",
+      "You keep ownership of every domain, repository, cloud account and database",
+      "An auditable monthly record, so the retainer is something you can inspect"
+    ],
+    "metaTitle": "Managed Services & Application Support | PakSoft",
+    "metaDescription": "Monitoring, patching, verified backups and incident response for the systems you already run — honestly scoped, accounts in your name. Book a platform review.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Inventory and Access Review",
+          "description": "We start by writing down what actually exists: domains and their registrars, DNS, hosting and cloud accounts, databases, third-party services, cron jobs, repositories and who holds the credentials for each. This inventory is usually the first time a client sees the whole estate on one page, and it regularly surfaces forgotten subdomains, unused paid services and an admin account belonging to someone who left."
+        },
+        {
+          "step": 2,
+          "title": "Monitoring and Alert Design",
+          "description": "We instrument uptime from outside your network, application errors from inside it, and the handful of business signals that matter more than either — checkout completions, form submissions, queue depth. Alerts are tuned so that a page only fires for something a human must act on; noisy monitoring gets ignored within two weeks, which is worse than no monitoring at all."
+        },
+        {
+          "step": 3,
+          "title": "Baseline Hardening and Backup Verification",
+          "description": "Before routine work begins we check the boring fundamentals: certificate and dependency expiry, exposed admin endpoints, secret handling, backup schedule and retention. Then we restore a backup into a scratch environment and confirm the data is complete and usable, because an untested backup is not a backup — it is a belief."
+        },
+        {
+          "step": 4,
+          "title": "Maintenance Cadence",
+          "description": "Dependency and security updates run on an agreed rhythm, grouped so that a failing update is easy to isolate, tested in a preview deployment, and shipped in a window you have approved. Framework and database major-version upgrades are planned separately with their own rollback path rather than folded into routine patching."
+        },
+        {
+          "step": 5,
+          "title": "Incident Response and Communication",
+          "description": "When something breaks, the priority order is restore service, then communicate, then diagnose. You get an acknowledgement, a plain description of impact, and updates at intervals agreed in the contract, followed by a written summary of cause and prevention once things are stable. Silence during an outage damages trust more than the outage itself."
+        },
+        {
+          "step": 6,
+          "title": "Reporting and Quarterly Review",
+          "description": "Each month you receive what was monitored, what was patched, which incidents occurred and how long they lasted, plus the risks we think deserve budget next. Quarterly we revisit scope: whether alert thresholds still match reality, whether retention still matches your obligations, and whether the retainer should grow, shrink or change shape."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What does the monthly fee actually cover?",
+          "answer": "It covers a defined scope written into the contract: the systems under monitoring, the patching cadence, backup verification, an agreed number of support hours, and incident response within agreed hours. Anything outside that — new features, redesigns, migrations, a third-party integration you decide to add — is quoted separately so the retainer does not quietly become an unlimited promise. We would rather have an argument about scope on day one than every month afterwards."
+        },
+        {
+          "question": "What counts as an emergency, and how fast do you respond?",
+          "answer": "We define it with you before signing, and the usual line is simple: the site is down, checkout or payments fail, data is at risk, or a security issue is live. Those get an immediate acknowledgement and work starts as soon as an engineer is reachable within the agreed coverage window; everything else is queued into the normal cadence. We are a small team and do not pretend otherwise — if you require guaranteed sub-hour response at three in the morning, you need a rota larger than ours and we will say so."
+        },
+        {
+          "question": "Do you offer 24/7 support?",
+          "answer": "Automated monitoring runs continuously and will alert us at any hour, but human response is scoped to hours we can honestly staff. For most SMEs that is the right trade: continuous detection, plus a documented rollback or failover path so that the automated response covers the first minutes. If your business genuinely cannot tolerate overnight downtime, we will design the system to fail over automatically rather than sell you an on-call promise we cannot keep."
+        },
+        {
+          "question": "Do you need access to our servers and accounts?",
+          "answer": "Yes, but as named users under your ownership, never as a shared password. You create accounts for us with the minimum permissions the work requires, and you can revoke them yourself at any moment without waiting for us. Production database credentials are treated separately and used through least-privilege roles, and we log the reason for any direct production access."
+        },
+        {
+          "question": "Can you work with our existing hosting provider?",
+          "answer": "Usually yes. We work regularly with Vercel, managed PostgreSQL such as Neon, and conventional VPS or shared hosting from local providers, and we do not require you to move to be a client. Where the current setup is the actual cause of your problems — no staging environment, no backups, no way to deploy without editing files on the server — we will say so and price the alternative, but moving is a recommendation, not a condition."
+        },
+        {
+          "question": "How do you handle backups, and how do you know they work?",
+          "answer": "Schedule, retention period and recovery point are agreed against how much data you could afford to lose, then verified by restoring into an isolated environment on a defined interval and checking that the restored data is actually complete. We also document who can trigger a restore and how long a full one takes, because during an incident nobody wants to discover that answer for the first time."
+        },
+        {
+          "question": "What happens to our data and access if we leave?",
+          "answer": "Nothing is held hostage, because it was never ours to hold. Domains, cloud accounts, repositories and databases are in your name from the start, so ending the contract means removing our user accounts. We hand over the runbooks, the monitoring configuration, the inventory document and a written summary of open risks, and we will brief your next provider."
+        },
+        {
+          "question": "Who is responsible when a third-party service causes the outage?",
+          "answer": "We are responsible for detecting it, telling you what is affected, applying whatever mitigation exists and chasing the provider — but we cannot fix another company's platform, and we will not pretend an upstream incident was ours to prevent. Where a single third party is a genuine single point of failure, we flag it during onboarding and propose an alternative or a degraded-mode fallback so the whole site does not fail with it."
+        },
+        {
+          "question": "Is this only maintenance, or can you build features too?",
+          "answer": "Both, but tracked separately. Keeping the platform healthy and building new functionality compete for the same hours, so mixing them into one number is how retainers quietly stop delivering maintenance. Development work is quoted and scheduled on its own, while the managed-services scope stays protected."
+        },
+        {
+          "question": "How is this different from the managed hosting our provider already sells?",
+          "answer": "Managed hosting looks after the machine — the operating system, the web server, sometimes the database process. It does not know whether your checkout is broken, whether a dependency upgrade introduced an error, or whether last night's backup contains complete data. We monitor and maintain the application and its data, and we are happy for your hosting company to keep doing their part underneath."
+        }
+      ],
+      "technologies": [
+        { "name": "Vercel", "icon": "vercel" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "Sentry", "icon": "sentry" },
+        { "name": "Grafana", "icon": "grafana" },
+        { "name": "GitHub Actions", "icon": "githubactions" },
+        { "name": "Cloudflare", "icon": "cloudflare" },
+        { "name": "Next.js", "icon": "nextdotjs" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Yönetilen Servisler",
+    "shortDescription": "Halihazırda çalışan yazılımınızın sürekli işletimi: müşteriden önce sorunu yakalayan izleme, bağımlılık ve güvenlik güncellemeleri, gerçekten geri yüklenerek doğrulanmış yedekler ve yazılı bir olay müdahale süreci — tüm hesaplar sizin adınıza kalır.",
+    "fullDescription": "Kesintilerin çoğu egzotik değildir: süresi dolmuş bir SSL sertifikası, dolan bir bağlantı havuzu, son dağıtımda sessizce bozulan bir bağımlılık ya da hiç geri yüklenmemiş bir yedek. Yönetilen servis, bu işlerden proje aralarında da birinin sorumlu olması demektir. Neyin izleneceğini, neyin acil sayılacağını ve size ne kadar sürede bir insanın döneceğini sözleşmede yazarız; gerçekten karşılayabileceğimiz saatlere göre, tutamayacağımız bir SLA vaadiyle değil. Kendi üretim ortamımızı Next.js ile Vercel üzerinde, veritabanını Prisma ile PostgreSQL (Neon) üzerinde işletiyoruz ve MenuQR Lab'ı müşterilerimiz adına biz yönetiyoruz; yani bu yaklaşımı önce kendi sistemimizde uyguluyoruz. Derinlemesine çalışma Sürekli İzleme & APM, Bakım & Destek ve Felaket Kurtarma & İş Sürekliliği sayfalarında devam ediyor.",
+    "features": [
+      "Erişilebilirlik, hata oranı ve yanıt süresi izleme; uyarılar isim isim belirlenmiş kişiye gider",
+      "Sertifika, alan adı ve bağımlılık son kullanma tarihleri üretimi durdurmadan önce takip edilir",
+      "Planlı güvenlik ve bağımlılık güncellemeleri, üretime çıkmadan önce önizleme ortamında test edilir",
+      "Yedeklerin panelde yeşil görünmesi değil, ayrı bir ortama gerçekten geri yüklenerek doğrulanması",
+      "Sisteminizin gerçekten yaşayabileceği arıza senaryoları için yazılı müdahale kılavuzları",
+      "Olay anında isimli iletişim noktası, süre boyunca durum bildirimi ve sonrasında yazılı özet",
+      "Core Web Vitals, hata bütçesi ve yavaş veritabanı sorgularında performans gerilemesi takibi",
+      "Sade Türkçe aylık rapor: ne değişti, ne bozuldu, bir sonraki adımda neyi önceliklendiriyoruz"
+    ],
+    "benefits": [
+      "Sorunları müşteriniz telefon açmadan önce izleme sistemi haber verir",
+      "Güncellemeler bir olay zorladığı için değil, belirlenmiş bir takvimle yapılır",
+      "Gerçekten geri yüklenmiş yedekler; kurtarma bir umut değil, tanımlı bir prosedür olur",
+      "Birbirini işaret eden üç tedarikçi yerine platformdan sorumlu tek muhatap",
+      "Alan adı, sunucu, depo ve veritabanı hesaplarının sahipliği sizde kalır",
+      "Denetlenebilir aylık kayıt: sözleşme karşılığında ne yapıldığını satır satır görürsünüz"
+    ],
+    "metaTitle": "Yönetilen Servisler ve Uygulama Bakımı | PakSoft",
+    "metaDescription": "İzleme, güncelleme, doğrulanmış yedek ve olay müdahalesi: kapsamı yazılı, hesaplar sizin adınıza. Sisteminiz için ücretsiz platform değerlendirmesi alın.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Envanter ve Erişim Denetimi",
+          "description": "İlk iş, elinizde gerçekte ne olduğunu yazılı hale getirmektir: alan adları ve kayıt firmaları, DNS, hosting ve bulut hesapları, veritabanları, üçüncü taraf servisler, zamanlanmış görevler, kod depoları ve her birinin şifresinin kimde olduğu. Bu envanter çoğu müşteride tüm yapının ilk kez tek sayfada görüldüğü andır ve genellikle unutulmuş alt alan adlarını, kullanılmayan ücretli abonelikleri ve işten ayrılmış birine ait yönetici hesaplarını ortaya çıkarır."
+        },
+        {
+          "step": 2,
+          "title": "İzleme ve Uyarı Tasarımı",
+          "description": "Erişilebilirliği ağınızın dışından, uygulama hatalarını içeriden ve bunların ikisinden de önemli olan birkaç iş sinyalini — tamamlanan siparişler, gönderilen formlar, kuyruk uzunluğu — ölçeriz. Uyarı eşikleri, yalnızca insan müdahalesi gereken durumlarda alarm çalacak şekilde ayarlanır; gürültülü izleme iki hafta içinde görmezden gelinmeye başlar ve bu, hiç izleme olmamasından daha kötüdür."
+        },
+        {
+          "step": 3,
+          "title": "Temel Sağlamlaştırma ve Yedek Doğrulama",
+          "description": "Rutin işe başlamadan önce sıkıcı ama belirleyici temelleri kontrol ederiz: sertifika ve bağımlılık süreleri, dışarı açık yönetim panelleri, gizli anahtarların saklanma biçimi, yedekleme sıklığı ve saklama süresi. Ardından bir yedeği ayrı bir ortama geri yükleyip verinin eksiksiz ve kullanılabilir olduğunu doğrularız; çünkü test edilmemiş yedek, yedek değil yalnızca bir inançtır."
+        },
+        {
+          "step": 4,
+          "title": "Bakım Takvimi",
+          "description": "Bağımlılık ve güvenlik güncellemeleri üzerinde anlaşılan bir ritimle, hangi güncellemenin sorun çıkardığı kolayca ayrıştırılabilecek gruplar halinde yapılır; önizleme ortamında denenir ve sizin onayladığınız bir zaman aralığında yayına alınır. Framework veya veritabanı ana sürüm yükseltmeleri rutin bakımın içine gizlenmez; kendi geri dönüş planıyla ayrı bir iş olarak planlanır."
+        },
+        {
+          "step": 5,
+          "title": "Olay Müdahalesi ve İletişim",
+          "description": "Bir şey bozulduğunda sıra nettir: önce hizmeti ayağa kaldır, sonra haber ver, sonra kök nedeni araştır. Size önce bir teyit, ardından etkinin sade bir tarifi ve sözleşmede belirlenen aralıklarla durum bilgisi gelir; sistem stabil hale geldikten sonra da nedenin ve alınacak önlemin yazılı özeti iletilir. Kesinti sırasındaki sessizlik, kesintinin kendisinden daha fazla güven kaybettirir."
+        },
+        {
+          "step": 6,
+          "title": "Raporlama ve Üç Aylık Gözden Geçirme",
+          "description": "Her ay neyin izlendiğini, hangi güncellemelerin yapıldığını, hangi olayların yaşandığını ve ne kadar sürdüğünü, bir de bir sonraki bütçeyi hak ettiğini düşündüğümüz riskleri raporlarız. Üç ayda bir kapsamı yeniden konuşuruz: uyarı eşikleri hâlâ gerçeği yansıtıyor mu, saklama süreleri yasal yükümlülüklerinize uyuyor mu ve sözleşmenin büyümesi, küçülmesi veya biçim değiştirmesi mi gerekiyor."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Aylık bedel tam olarak neyi kapsıyor?",
+          "answer": "Sözleşmeye yazılmış net bir kapsamı kapsar: izlenen sistemler, güncelleme sıklığı, yedek doğrulama, üzerinde anlaşılan destek saati ve belirlenen çalışma saatleri içinde olay müdahalesi. Yeni özellik geliştirme, tasarım yenileme, göç işleri veya sonradan eklemeye karar verdiğiniz bir entegrasyon ayrıca fiyatlanır; böylece sözleşme sessizce sınırsız bir vaade dönüşmez. Kapsam tartışmasını her ay değil, ilk gün yapmayı tercih ederiz."
+        },
+        {
+          "question": "Neye acil deniyor ve ne kadar sürede dönüyorsunuz?",
+          "answer": "Bunu imza öncesinde birlikte tanımlarız ve sınır genelde basittir: site kapalı, ödeme veya sipariş akışı çalışmıyor, veri risk altında ya da aktif bir güvenlik sorunu var. Bu durumlarda hemen teyit döner ve kapsamdaki çalışma saatleri içinde ulaşılabilir ilk mühendis işe başlar; diğer her şey normal sıraya girer. Küçük bir ekibiz ve bunu saklamıyoruz — gece üçte bir saatin altında garantili müdahale gerekiyorsa bizden büyük bir nöbet ekibine ihtiyacınız var ve bunu açıkça söyleriz."
+        },
+        {
+          "question": "7/24 destek veriyor musunuz?",
+          "answer": "Otomatik izleme kesintisiz çalışır ve bizi saat fark etmeksizin uyarır; ancak insan müdahalesi dürüstçe karşılayabileceğimiz saatlerle sınırlıdır. Çoğu KOBİ için doğru denge budur: kesintisiz tespit, artı ilk dakikaları otomatik olarak kapatan tanımlı bir geri alma veya yedeğe geçiş yolu. İşiniz gerçekten gece kesintisini kaldıramıyorsa, tutamayacağımız bir nöbet sözü satmak yerine sistemi otomatik devreye geçecek şekilde kurgulamayı öneririz."
+        },
+        {
+          "question": "Sunucularımıza ve hesaplarımıza erişim şart mı?",
+          "answer": "Evet, ancak ortak bir şifreyle değil, sizin sahipliğinizdeki hesaplar altında isimli kullanıcı olarak. Bize işin gerektirdiği en düşük yetkiyle kullanıcı açarsınız ve istediğiniz an bizden onay beklemeden kapatabilirsiniz. Üretim veritabanı erişimi ayrı tutulur, sınırlı yetkili rollerle kullanılır ve doğrudan üretime her müdahalenin gerekçesi kayıt altına alınır."
+        },
+        {
+          "question": "Mevcut hosting firmamızla çalışabilir misiniz?",
+          "answer": "Genellikle evet. Vercel, Neon gibi yönetilen PostgreSQL servisleri ve Türkiye'deki sağlayıcılardan alınan klasik VPS veya paylaşımlı hosting ortamlarıyla düzenli olarak çalışıyoruz; müşterimiz olmanız için taşınmanız gerekmiyor. Mevcut kurulum sorunların asıl kaynağıysa — test ortamı yok, yedek yok, sunucudaki dosyayı elle düzenlemeden yayın alınamıyorsa — bunu söyler ve alternatifi fiyatlarız, ama taşıma bir öneridir, şart değildir."
+        },
+        {
+          "question": "KVKK açısından verimiz nerede duruyor ve siz neye erişiyorsunuz?",
+          "answer": "Verinin hangi ülkede barındırıldığı, ne kadar süre saklandığı ve kimin eriştiği sözleşmede yazılır; barındırmayı yurt içinde tutmak isteyen müşteriler için bunu bir kurulum kararı olarak ele alırız. Biz hizmet sağlayıcı olarak yalnızca işin gerektirdiği veriye, gerektiği kadar erişiriz; kişisel veri içeren tabloları geliştirme ortamına kopyalamayız, gerekiyorsa maskelenmiş kopyayla çalışırız. Aydınlatma metni ve veri işleyen sıfatıyla yükümlülükler konusunda hukuk danışmanınızın metnine uyarız, onun yerine geçmeyiz."
+        },
+        {
+          "question": "Yedekleri nasıl alıyorsunuz ve çalıştıklarından nasıl emin oluyorsunuz?",
+          "answer": "Sıklık, saklama süresi ve kabul edilebilir veri kaybı süresi, işletmenizin ne kadarını kaybetmeyi göze alabileceğine göre belirlenir; sonra belirli aralıklarla ayrı bir ortama geri yüklenip verinin gerçekten eksiksiz olduğu kontrol edilir. Ayrıca geri yüklemeyi kimin başlatabileceğini ve tam bir kurtarmanın ne kadar süreceğini yazılı hale getiririz; kimse bu sorunun cevabını ilk kez kesinti sırasında öğrenmek istemez."
+        },
+        {
+          "question": "Ayrılırsak verilerimize ve erişimlerimize ne olur?",
+          "answer": "Hiçbir şey rehin tutulmaz, çünkü zaten bizim değil. Alan adları, bulut hesapları, kod deposu ve veritabanı ilk günden sizin adınızadır; sözleşme bitince yapılan tek şey kullanıcılarımızın kapatılmasıdır. Müdahale kılavuzlarını, izleme yapılandırmasını, envanter dokümanını ve açık riskleri özetleyen notu teslim eder, gerekirse yeni sağlayıcınıza devir görüşmesi yaparız."
+        },
+        {
+          "question": "Kesinti üçüncü taraf bir servisten kaynaklanırsa sorumluluk kimde?",
+          "answer": "Tespit etmek, hangi işlevin etkilendiğini size söylemek, varsa geçici çözümü uygulamak ve sağlayıcıyı takip etmek bizim işimizdir; ancak başka bir şirketin altyapısını biz onaramayız ve bunu engelleyebilirmişiz gibi de davranmayız. Tek bir üçüncü taraf gerçekten tek nokta arıza riski oluşturuyorsa bunu başlangıç denetiminde işaretler, alternatif ya da o servis olmadan da çalışan kısıtlı bir mod öneririz."
+        },
+        {
+          "question": "Daha önce sonuç vermeyen bir bakım sözleşmesinden çıktık; farkı ne olacak?",
+          "answer": "En yaygın şikâyet, karşılığında ne yapıldığının hiç görünmemesidir. Bu yüzden kapsam maddeler halinde yazılır, yapılan iş aylık raporda kalem kalem listelenir ve izleme panelleri size de açıktır; ayrıca izleme ile yedeklerin sizin hesaplarınızda kurulu olması sayesinde çalıştığını bizden bağımsız doğrulayabilirsiniz. Ölçülemeyen bir bakım vaadi, tanımı gereği denetlenemez bir vaattir."
+        },
+        {
+          "question": "Sadece bakım mı, yeni geliştirme de yapıyor musunuz?",
+          "answer": "İkisini de yaparız ama ayrı takip ederiz. Platformu sağlıklı tutmakla yeni özellik geliştirmek aynı saatler için yarışır; tek bir rakamda birleştirmek, bakımın sessizce yapılmaz hale gelmesinin en bilinen yoludur. Geliştirme işi ayrıca teklif edilip planlanır, yönetilen servis kapsamı korunur."
+        }
+      ],
+      "technologies": [
+        { "name": "Vercel", "icon": "vercel" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "Sentry", "icon": "sentry" },
+        { "name": "Grafana", "icon": "grafana" },
+        { "name": "GitHub Actions", "icon": "githubactions" },
+        { "name": "Cloudflare", "icon": "cloudflare" },
+        { "name": "Next.js", "icon": "nextdotjs" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Managed Services",
+    "shortDescription": "Laufender Betrieb Ihrer bestehenden Software: Monitoring, das Probleme vor Ihren Kunden bemerkt, planmäßiges Patchen von Abhängigkeiten, durch echte Wiederherstellung geprüfte Backups und ein dokumentierter Incident-Prozess — Konten bleiben auf Ihren Namen.",
+    "fullDescription": "Die meisten Ausfälle sind unspektakulär: ein abgelaufenes TLS-Zertifikat, ein voller Connection Pool, eine Abhängigkeit, die beim letzten Deployment still zerbrochen ist, oder ein Backup, das nie zurückgespielt wurde. Managed Services heißt, dass dafür jemand verantwortlich ist — auch zwischen den Projekten. Wir halten schriftlich fest, was überwacht wird, was als Notfall gilt und in welcher Zeit Sie einen Menschen erreichen: bezogen auf Zeiten, die wir tatsächlich besetzen können, statt auf ein SLA, das wir nicht einhalten könnten. Wir betreiben unsere eigene Next.js-Produktivplattform auf Vercel mit PostgreSQL (Neon) über Prisma und führen MenuQR Lab für zahlende Kunden. Vertiefend finden Sie Continuous Monitoring & APM, Wartung & Support sowie Disaster Recovery & Business Continuity.",
+    "features": [
+      "Monitoring von Verfügbarkeit, Fehlerrate und Antwortzeiten mit Alarmierung an benannte Personen",
+      "Ablaufüberwachung von Zertifikaten, Domains und Abhängigkeiten vor dem Produktionsausfall",
+      "Planmäßiges Security- und Dependency-Patching, vorab in einer Preview-Umgebung getestet",
+      "Backup-Nachweis durch echte Wiederherstellung in eine separate Umgebung, nicht durch ein grünes Häkchen",
+      "Dokumentierte Runbooks für die Störungen, die in Ihrem System realistisch auftreten",
+      "Incident-Bearbeitung mit benanntem Ansprechpartner, Statusmeldungen und schriftlicher Nachbereitung",
+      "Beobachtung von Performance-Regressionen bei Core Web Vitals und langsamen Datenbankabfragen",
+      "Monatsbericht in klarer Sprache: was geändert, was gestört, was als Nächstes empfohlen wird"
+    ],
+    "benefits": [
+      "Störungen fallen im Monitoring auf, nicht erst im Anruf eines Kunden",
+      "Patches folgen einem Zeitplan statt einem Vorfall",
+      "Nachweislich wiederhergestellte Backups — Recovery wird zur Prozedur statt zur Hoffnung",
+      "Ein verantwortlicher Ansprechpartner statt drei Dienstleister, die aufeinander zeigen",
+      "Domains, Cloud-Konten, Repositories und Datenbanken bleiben in Ihrem Eigentum",
+      "Prüfbare Monatsdokumentation, die den Retainer nachvollziehbar macht"
+    ],
+    "metaTitle": "Managed Services & Anwendungsbetrieb | PakSoft",
+    "metaDescription": "Monitoring, Patching, geprüfte Backups und Incident-Prozesse für Ihre bestehenden Systeme — klar abgegrenzt, DSGVO-konform. Jetzt Betriebsanalyse anfragen.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Inventar und Zugriffsprüfung",
+          "description": "Am Anfang steht eine schriftliche Bestandsaufnahme: Domains und Registrare, DNS, Hosting- und Cloud-Konten, Datenbanken, eingebundene Drittanbieter, Cron-Jobs, Repositories und die Frage, wer welche Zugangsdaten besitzt. Diese Übersicht zeigt vielen Kunden zum ersten Mal die gesamte Landschaft auf einer Seite und bringt regelmäßig vergessene Subdomains, ungenutzte kostenpflichtige Dienste und Administratorkonten ehemaliger Mitarbeiter zutage."
+        },
+        {
+          "step": 2,
+          "title": "Monitoring- und Alarmkonzept",
+          "description": "Wir messen Verfügbarkeit von außerhalb Ihres Netzes, Anwendungsfehler von innen und die wenigen fachlichen Signale, die wichtiger sind als beides — abgeschlossene Bestellungen, versendete Formulare, Warteschlangenlänge. Schwellenwerte werden so gesetzt, dass nur alarmiert wird, wenn ein Mensch handeln muss; ein lautes Monitoring wird binnen zwei Wochen ignoriert und ist damit schlechter als gar keines."
+        },
+        {
+          "step": 3,
+          "title": "Grundabsicherung und Backup-Nachweis",
+          "description": "Vor dem Regelbetrieb prüfen wir die unspektakulären Grundlagen: Zertifikats- und Abhängigkeitslaufzeiten, öffentlich erreichbare Administrationsbereiche, Umgang mit Secrets, Backup-Intervall und Aufbewahrungsfristen. Anschließend spielen wir ein Backup in eine isolierte Umgebung zurück und prüfen die Vollständigkeit der Daten — ein ungetestetes Backup ist kein Backup, sondern eine Annahme."
+        },
+        {
+          "step": 4,
+          "title": "Wartungsrhythmus",
+          "description": "Abhängigkeits- und Sicherheitsupdates laufen in einem vereinbarten Takt, gebündelt so, dass ein fehlerhaftes Update isolierbar bleibt, in einer Preview-Umgebung getestet und in einem von Ihnen freigegebenen Wartungsfenster ausgerollt. Major-Upgrades von Framework oder Datenbank planen wir getrennt mit eigenem Rollback-Pfad statt sie im Routine-Patching zu verstecken."
+        },
+        {
+          "step": 5,
+          "title": "Incident-Bearbeitung und Kommunikation",
+          "description": "Bei einer Störung gilt die Reihenfolge: Betrieb wiederherstellen, informieren, danach analysieren. Sie erhalten eine Eingangsbestätigung, eine verständliche Beschreibung der Auswirkung und Statusmeldungen in vertraglich vereinbarten Abständen, nach der Stabilisierung eine schriftliche Zusammenfassung von Ursache und Vorbeugung. Schweigen während eines Ausfalls beschädigt das Vertrauen stärker als der Ausfall selbst."
+        },
+        {
+          "step": 6,
+          "title": "Reporting und Quartalsreview",
+          "description": "Monatlich dokumentieren wir Überwachungsumfang, durchgeführte Updates, aufgetretene Vorfälle samt Dauer sowie die Risiken, die aus unserer Sicht als Nächstes Budget verdienen. Quartalsweise prüfen wir den Zuschnitt: ob Schwellenwerte noch zur Realität passen, ob Aufbewahrungsfristen Ihren Pflichten entsprechen und ob der Retainer wachsen, schrumpfen oder anders geschnitten werden sollte."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was genau deckt die monatliche Pauschale ab?",
+          "answer": "Sie deckt einen im Vertrag definierten Umfang ab: die überwachten Systeme, den Patch-Rhythmus, die Backup-Prüfung, ein vereinbartes Stundenkontingent und die Incident-Bearbeitung innerhalb der vereinbarten Servicezeiten. Neue Funktionen, Redesigns, Migrationen oder eine später hinzugefügte Integration werden separat angeboten, damit aus dem Retainer nicht stillschweigend ein unbegrenztes Versprechen wird. Wir klären den Umfang lieber einmal am Anfang als jeden Monat neu."
+        },
+        {
+          "question": "Was gilt als Notfall und wie schnell reagieren Sie?",
+          "answer": "Das definieren wir vor Vertragsschluss gemeinsam, und die Grenze ist meist eindeutig: Die Anwendung ist nicht erreichbar, Bestellung oder Zahlung schlägt fehl, Daten sind gefährdet oder es liegt ein akutes Sicherheitsproblem vor. Solche Fälle werden sofort bestätigt und innerhalb der vereinbarten Servicezeit bearbeitet, alles andere läuft im Regeltakt. Wir sind ein kleines Team und sagen das offen — wenn Sie garantierte Reaktion binnen einer Stunde um drei Uhr nachts benötigen, brauchen Sie eine größere Rufbereitschaft, als wir seriös anbieten können."
+        },
+        {
+          "question": "Bieten Sie 24/7-Support?",
+          "answer": "Das automatisierte Monitoring läuft rund um die Uhr und alarmiert uns zu jeder Zeit; die menschliche Reaktion ist auf Zeiten begrenzt, die wir ehrlich besetzen können. Für die meisten Mittelständler ist das die richtige Abwägung: durchgehende Erkennung plus ein dokumentierter Rollback- oder Failover-Pfad, der die ersten Minuten automatisch abfängt. Wenn Ihr Geschäft nächtliche Ausfälle wirklich nicht verträgt, konstruieren wir automatisches Failover, statt Ihnen eine Bereitschaft zu verkaufen, die wir nicht halten können."
+        },
+        {
+          "question": "Brauchen Sie Zugriff auf unsere Server und Konten?",
+          "answer": "Ja, aber als benannte Nutzer unter Ihrem Eigentum und niemals über ein geteiltes Passwort. Sie legen Konten mit den minimal nötigen Rechten an und können sie jederzeit eigenständig entziehen, ohne auf uns zu warten. Zugriffe auf Produktionsdatenbanken behandeln wir gesondert über Rollen mit eingeschränkten Rechten und protokollieren den Anlass jedes direkten Produktionszugriffs."
+        },
+        {
+          "question": "Wie sieht es mit DSGVO und Auftragsverarbeitung aus?",
+          "answer": "Wir arbeiten auf Basis eines Auftragsverarbeitungsvertrags mit dokumentierten technischen und organisatorischen Maßnahmen, benannten Unterauftragsverarbeitern und festgelegten Löschfristen. Wo EU-Datenresidenz gefordert ist, wählen wir Hosting- und Datenbankregionen entsprechend aus und halten das schriftlich fest, statt es mündlich zuzusichern. Produktionsdaten mit Personenbezug werden nicht in Entwicklungsumgebungen kopiert; dort arbeiten wir mit reduzierten oder maskierten Datensätzen."
+        },
+        {
+          "question": "Können Sie mit unserem bestehenden Hoster arbeiten?",
+          "answer": "In der Regel ja. Wir arbeiten regelmäßig mit Vercel, verwalteten PostgreSQL-Diensten wie Neon sowie klassischen VPS- und Shared-Hosting-Umgebungen europäischer Anbieter, und ein Umzug ist keine Voraussetzung für eine Zusammenarbeit. Wenn das bestehende Setup die eigentliche Ursache Ihrer Probleme ist — keine Staging-Umgebung, keine Backups, kein Deployment ohne manuelles Bearbeiten von Dateien auf dem Server — sagen wir das deutlich und kalkulieren die Alternative als Empfehlung, nicht als Bedingung."
+        },
+        {
+          "question": "Wie werden Backups gehandhabt und wie ist ihre Funktion nachgewiesen?",
+          "answer": "Intervall, Aufbewahrung und tolerierbarer Datenverlust werden daran ausgerichtet, wie viel Datenverlust Ihr Geschäft verkraftet, und anschließend in definierten Abständen durch Rückspielen in eine isolierte Umgebung überprüft. Wir dokumentieren zusätzlich, wer eine Wiederherstellung auslösen darf und wie lange eine vollständige Wiederherstellung dauert — diese Antwort möchte niemand erstmals während eines Vorfalls suchen. Die Prüfprotokolle stellen wir Ihnen als Nachweis zur Verfügung."
+        },
+        {
+          "question": "Was passiert mit unseren Daten und Zugängen, wenn wir kündigen?",
+          "answer": "Nichts wird zurückgehalten, weil nichts uns gehört. Domains, Cloud-Konten, Repositories und Datenbanken laufen von Beginn an auf Ihren Namen; das Vertragsende bedeutet lediglich das Entfernen unserer Benutzerkonten. Sie erhalten Runbooks, Monitoring-Konfiguration, das Inventardokument und eine schriftliche Übersicht offener Risiken, und wir übergeben auf Wunsch an Ihren nächsten Dienstleister."
+        },
+        {
+          "question": "Wer haftet, wenn ein Drittanbieter den Ausfall verursacht?",
+          "answer": "Wir sind dafür verantwortlich, den Ausfall zu erkennen, Ihnen die betroffenen Funktionen zu benennen, verfügbare Übergangslösungen zu aktivieren und den Anbieter nachzuhalten — die Plattform eines anderen Unternehmens können wir jedoch nicht reparieren und stellen es auch nicht so dar. Wenn ein einzelner Drittanbieter ein echter Single Point of Failure ist, weisen wir im Onboarding darauf hin und schlagen eine Alternative oder einen eingeschränkten Betriebsmodus vor."
+        },
+        {
+          "question": "Nur Wartung oder auch Weiterentwicklung?",
+          "answer": "Beides, aber getrennt geführt. Betriebsstabilität und Neuentwicklung konkurrieren um dieselben Stunden; beides in eine Zahl zu packen ist der bekannteste Weg, wie Wartung stillschweigend liegen bleibt. Entwicklungsleistungen werden eigenständig angeboten und terminiert, der Managed-Services-Umfang bleibt geschützt."
+        },
+        {
+          "question": "Worin unterscheidet sich das vom Managed Hosting unseres Providers?",
+          "answer": "Managed Hosting kümmert sich um die Maschine: Betriebssystem, Webserver, teilweise den Datenbankprozess. Es weiß nicht, ob Ihr Checkout fehlschlägt, ob ein Abhängigkeits-Upgrade einen Fehler eingeführt hat oder ob das nächtliche Backup vollständige Daten enthält. Wir betreuen die Anwendung und ihre Daten — Ihr Hoster kann seinen Teil darunter gern weiterhin übernehmen."
+        }
+      ],
+      "technologies": [
+        { "name": "Vercel", "icon": "vercel" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "Sentry", "icon": "sentry" },
+        { "name": "Grafana", "icon": "grafana" },
+        { "name": "GitHub Actions", "icon": "githubactions" },
+        { "name": "Cloudflare", "icon": "cloudflare" },
+        { "name": "Next.js", "icon": "nextdotjs" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "الخدمات المُدارة",
+    "shortDescription": "تشغيل مستمر للأنظمة التي تعمل لديكم فعلاً: مراقبة تكتشف العطل قبل عملائكم، وتحديثات أمنية منتظمة، ونسخ احتياطية مُتحقَّق منها باستعادة حقيقية، وإجراء مكتوب للاستجابة للحوادث — مع بقاء جميع الحسابات باسمكم.",
+    "fullDescription": "معظم الأعطال ليست معقّدة: شهادة TLS منتهية، أو تجمّع اتصالات امتلأ، أو حزمة تعطّلت بصمت في آخر إصدار، أو نسخة احتياطية لم يجرّب أحد استعادتها. الخدمات المُدارة تعني وجود جهة مسؤولة عن هذه التفاصيل بين المشاريع لا أثناءها فقط. نكتب في العقد ما الذي يُراقَب، وما الذي يُعدّ حالة طارئة، وخلال كم من الوقت تصلون إلى شخص حقيقي — ضمن ساعات نستطيع تغطيتها فعلاً، لا ضمن اتفاقية مستوى خدمة لا نقدر على الوفاء بها. نشغّل منصتنا الإنتاجية بـ Next.js على Vercel مع PostgreSQL على Neon عبر Prisma، وندير MenuQR Lab لعملاء يدفعون مقابلها. ويتوسّع العمل في صفحات المراقبة المستمرة و APM، والصيانة والدعم، والتعافي من الكوارث واستمرارية الأعمال.",
+    "features": [
+      "مراقبة التوفّر ومعدل الأخطاء وزمن الاستجابة مع تنبيهات تصل إلى شخص محدد بالاسم",
+      "تتبّع انتهاء الشهادات وأسماء النطاقات والحزم قبل أن يوقف ذلك بيئة الإنتاج",
+      "تحديثات أمنية ودورية مجدولة تُختبر في بيئة معاينة قبل الإطلاق",
+      "التحقق من النسخ الاحتياطية باستعادة فعلية إلى بيئة منفصلة، لا بعلامة خضراء في لوحة",
+      "أدلة تشغيل مكتوبة للأعطال المرجّح حدوثها في نظامكم تحديداً",
+      "استجابة للحوادث بجهة اتصال محددة، وتحديثات أثناء العطل، وتقرير مكتوب بعده",
+      "رصد تراجع الأداء في Core Web Vitals والاستعلامات البطيئة في قاعدة البيانات",
+      "تقرير شهري بلغة واضحة: ما الذي تغيّر، وما الذي تعطّل، وما نوصي به لاحقاً"
+    ],
+    "benefits": [
+      "اكتشاف الأعطال عبر المراقبة بدل اتصال هاتفي من عميل غاضب",
+      "تحديثات تجري وفق جدول بدل أن يفرضها حادث أمني",
+      "نسخ احتياطية جرّبتم استعادتها فعلاً، فيصبح التعافي إجراءً لا أملاً",
+      "جهة واحدة مسؤولة عن المنصة بدل ثلاثة موردين يحيل كل منهم إلى الآخر",
+      "ملكية النطاقات وحسابات الاستضافة والمستودعات وقواعد البيانات تبقى لكم",
+      "سجل شهري قابل للتدقيق يجعل قيمة العقد مرئية لا مفترضة"
+    ],
+    "metaTitle": "الخدمات المُدارة وتشغيل التطبيقات | PakSoft",
+    "metaDescription": "مراقبة وتحديثات ونسخ احتياطية مُتحقَّق منها واستجابة للحوادث لأنظمتكم القائمة، بنطاق مكتوب وحسابات باسمكم. اطلبوا مراجعة تشغيلية لمنصتكم اليوم.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "الجرد ومراجعة الصلاحيات",
+          "description": "نبدأ بتوثيق ما لديكم فعلاً: النطاقات وجهات تسجيلها، وسجلات DNS، وحسابات الاستضافة والسحابة، وقواعد البيانات، والخدمات الخارجية، والمهام المجدولة، والمستودعات، ومن يملك بيانات الدخول لكل منها. غالباً تكون هذه أول مرة يرى فيها العميل منظومته كاملة في صفحة واحدة، وكثيراً ما تكشف نطاقات فرعية منسية، واشتراكات مدفوعة غير مستخدمة، وحساب مدير يعود لموظف غادر الشركة."
+        },
+        {
+          "step": 2,
+          "title": "تصميم المراقبة والتنبيهات",
+          "description": "نقيس التوفّر من خارج شبكتكم، وأخطاء التطبيق من داخلها، وعدداً محدوداً من مؤشرات العمل الأهم من الاثنين معاً: الطلبات المكتملة، والنماذج المرسلة، وطول قائمة المهام المؤجلة. تُضبط عتبات التنبيه بحيث لا ينطلق إنذار إلا لأمر يستدعي تدخلاً بشرياً؛ فالمراقبة كثيرة الضجيج يجري تجاهلها خلال أسبوعين، وهذا أسوأ من غياب المراقبة أصلاً."
+        },
+        {
+          "step": 3,
+          "title": "التحصين الأساسي والتحقق من النسخ الاحتياطية",
+          "description": "قبل بدء العمل الدوري نفحص الأساسيات المملّة والحاسمة: مدد الشهادات والحزم، ولوحات الإدارة المكشوفة للإنترنت، وطريقة حفظ المفاتيح السرية، وجدول النسخ ومدة الاحتفاظ. ثم نستعيد نسخة احتياطية إلى بيئة معزولة ونتأكد أن البيانات كاملة وقابلة للاستخدام، لأن النسخة التي لم تُجرَّب ليست نسخة احتياطية بل مجرد افتراض."
+        },
+        {
+          "step": 4,
+          "title": "إيقاع الصيانة",
+          "description": "تجري تحديثات الحزم والتحديثات الأمنية بإيقاع متفق عليه، ومجمّعة بطريقة تسهّل عزل التحديث المسبِّب للخلل، وتُختبر في بيئة معاينة، ثم تُطلق ضمن نافذة زمنية توافقون عليها. أما الترقيات الكبرى لإطار العمل أو قاعدة البيانات فتُخطَّط بشكل منفصل ولها مسار تراجع خاص بها، لا تُدسّ داخل الصيانة الروتينية."
+        },
+        {
+          "step": 5,
+          "title": "الاستجابة للحوادث والتواصل",
+          "description": "عند وقوع عطل يكون الترتيب واضحاً: إعادة الخدمة أولاً، ثم إبلاغكم، ثم تحليل السبب. تصلكم رسالة استلام، ووصف مبسّط للأثر، وتحديثات على فترات محددة في العقد، ثم ملخص مكتوب للسبب وإجراءات المنع بعد استقرار الوضع. الصمت أثناء الانقطاع يضرّ بالثقة أكثر من الانقطاع نفسه."
+        },
+        {
+          "step": 6,
+          "title": "التقارير والمراجعة الربعية",
+          "description": "شهرياً تستلمون ما جرت مراقبته، وما جرى تحديثه، والحوادث التي وقعت ومدتها، إضافة إلى المخاطر التي نرى أنها تستحق ميزانية في المرحلة التالية. وكل ثلاثة أشهر نراجع النطاق: هل ما زالت عتبات التنبيه تعكس الواقع، وهل تتوافق مدد الاحتفاظ بالبيانات مع التزاماتكم، وهل ينبغي أن يتوسّع العقد أو يتقلّص أو يتغيّر شكله."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما الذي تغطيه الرسوم الشهرية فعلياً؟",
+          "answer": "تغطي نطاقاً مكتوباً في العقد: الأنظمة الخاضعة للمراقبة، وإيقاع التحديثات، والتحقق من النسخ الاحتياطية، وعدد ساعات دعم متفق عليه، والاستجابة للحوادث ضمن ساعات محددة. أما الميزات الجديدة وإعادة التصميم وعمليات الترحيل وأي تكامل تقررون إضافته لاحقاً فتُسعَّر بشكل منفصل، حتى لا يتحول العقد بصمت إلى وعد مفتوح. نفضّل نقاش النطاق مرة واحدة في البداية على تكراره كل شهر."
+        },
+        {
+          "question": "ما الذي يُعتبر حالة طارئة، وكم تستغرق استجابتكم؟",
+          "answer": "نحدد ذلك معكم قبل التوقيع، والحد الفاصل بسيط عادةً: الموقع متوقف، أو الدفع والطلبات لا تعمل، أو البيانات في خطر، أو هناك ثغرة أمنية مستغلّة الآن. هذه الحالات تُستلم فوراً ويبدأ العمل عليها فور توفّر مهندس ضمن نافذة التغطية المتفق عليها، وما عداها يدخل الدور الطبيعي. نحن فريق صغير ولا نخفي ذلك — إن كنتم تحتاجون استجابة مضمونة خلال أقل من ساعة في الثالثة فجراً فأنتم بحاجة إلى فريق مناوبة أكبر منا، وسنقول لكم ذلك بصراحة."
+        },
+        {
+          "question": "هل تقدّمون دعماً على مدار الساعة؟",
+          "answer": "المراقبة الآلية تعمل بلا انقطاع وتنبّهنا في أي ساعة، لكن الاستجابة البشرية محصورة بساعات نستطيع تغطيتها بصدق. لمعظم الشركات المتوسطة هذه هي المفاضلة الصحيحة: كشف مستمر، مع مسار تراجع أو تحويل تلقائي موثّق يغطي الدقائق الأولى. وإذا كان نشاطكم لا يحتمل توقفاً ليلياً فعلاً، فسنصمّم النظام ليتحوّل تلقائياً بدل أن نبيعكم وعد مناوبة لا نستطيع الوفاء به."
+        },
+        {
+          "question": "هل تحتاجون صلاحية على خوادمنا وحساباتنا؟",
+          "answer": "نعم، لكن كمستخدمين باسمائنا داخل حساباتكم أنتم، لا عبر كلمة مرور مشتركة. تنشئون لنا حسابات بأقل صلاحية يتطلبها العمل، ويمكنكم إلغاؤها في أي لحظة دون انتظار موافقتنا. أما الوصول إلى قاعدة بيانات الإنتاج فيُعامل بشكل منفصل عبر أدوار محدودة الصلاحيات، ويُسجَّل سبب كل وصول مباشر إلى الإنتاج."
+        },
+        {
+          "question": "أين تُستضاف بياناتنا ومَن يصل إليها؟",
+          "answer": "نحدد بلد الاستضافة ومدة الاحتفاظ والجهات التي تصل إلى البيانات كتابةً ضمن العقد، ونختار مناطق الاستضافة وقواعد البيانات وفق متطلبات إقامة البيانات في السوق الذي تعملون فيه، بما في ذلك تفضيل مناطق الخليج أو أوروبا حين يكون ذلك مطلوباً تنظيمياً أو لتقليل زمن الاستجابة. لا نَنسخ بيانات إنتاجية تحتوي معلومات شخصية إلى بيئات التطوير؛ نعمل هناك بنسخ مصغّرة أو مُقنّعة."
+        },
+        {
+          "question": "هل يمكنكم العمل مع مزوّد الاستضافة الحالي لدينا؟",
+          "answer": "غالباً نعم. نعمل بانتظام مع Vercel وخدمات PostgreSQL المُدارة مثل Neon، ومع خوادم VPS والاستضافة المشتركة التقليدية، ولا نشترط الانتقال لتصبحوا عملاء لدينا. وإذا كانت البنية الحالية هي السبب الحقيقي للمشاكل — لا توجد بيئة اختبار، ولا نسخ احتياطية، ولا سبيل للنشر دون تعديل ملفات يدوياً على الخادم — فسنقول ذلك ونسعّر البديل، لكنه يبقى توصية لا شرطاً."
+        },
+        {
+          "question": "كيف تُدار النسخ الاحتياطية وكيف تتأكدون أنها تعمل؟",
+          "answer": "يُحدَّد التكرار ومدة الاحتفاظ وحجم الفقد المقبول بناءً على ما يمكن لنشاطكم تحمّل خسارته، ثم يجري التحقق باستعادة النسخة إلى بيئة معزولة على فترات محددة والتأكد من اكتمال البيانات. ونوثّق أيضاً من يملك صلاحية بدء الاستعادة وكم تستغرق الاستعادة الكاملة، لأن أسوأ وقت لاكتشاف هذه الإجابة هو أثناء الحادث نفسه."
+        },
+        {
+          "question": "ماذا يحدث لبياناتنا وصلاحياتنا إذا أنهينا التعاقد؟",
+          "answer": "لا شيء يُحتجز، لأنه لم يكن ملكنا أصلاً. النطاقات وحسابات السحابة والمستودعات وقواعد البيانات باسمكم منذ اليوم الأول، وإنهاء العقد يعني ببساطة إلغاء حساباتنا نحن. نسلّمكم أدلة التشغيل، وإعدادات المراقبة، ووثيقة الجرد، وملخصاً مكتوباً بالمخاطر المفتوحة، ونجري جلسة تسليم لمزوّدكم الجديد عند الحاجة."
+        },
+        {
+          "question": "من المسؤول إذا كان سبب العطل خدمة طرف ثالث؟",
+          "answer": "مسؤوليتنا أن نكتشف العطل ونخبركم بما تأثر ونطبّق أي حل مؤقت متاح ونتابع المزوّد، لكننا لا نستطيع إصلاح منصة شركة أخرى ولن ندّعي أن منعها كان بيدنا. وحين يشكّل طرف ثالث واحد نقطة فشل حقيقية وحيدة، نشير إلى ذلك في مرحلة الإعداد ونقترح بديلاً أو وضع تشغيل مُخفَّض يبقي بقية الموقع يعمل."
+        },
+        {
+          "question": "هل هذه صيانة فقط أم تطوير أيضاً؟",
+          "answer": "الاثنان معاً، لكن بحسابين منفصلين. إبقاء المنصة سليمة وبناء ميزات جديدة يتنافسان على الساعات نفسها، ودمجهما في رقم واحد هو الطريقة الأشهر لتوقّف الصيانة بصمت. لذلك يُسعَّر التطوير ويُجدوَل بشكل مستقل، ويبقى نطاق الخدمات المُدارة محمياً."
+        },
+        {
+          "question": "ما الفرق بين هذا وبين الاستضافة المُدارة التي نشتريها أصلاً؟",
+          "answer": "الاستضافة المُدارة تهتم بالجهاز: نظام التشغيل وخادم الويب وأحياناً عملية قاعدة البيانات. وهي لا تعرف إن كانت صفحة الدفع لديكم معطّلة، ولا إن كان تحديث حزمة قد أدخل خطأً، ولا إن كانت نسخة الليلة الماضية تحتوي بيانات كاملة. نحن نراقب التطبيق وبياناته ونصونهما، ويمكن لمزوّد الاستضافة أن يواصل دوره في الطبقة الأدنى."
+        }
+      ],
+      "technologies": [
+        { "name": "Vercel", "icon": "vercel" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "Sentry", "icon": "sentry" },
+        { "name": "Grafana", "icon": "grafana" },
+        { "name": "GitHub Actions", "icon": "githubactions" },
+        { "name": "Cloudflare", "icon": "cloudflare" },
+        { "name": "Next.js", "icon": "nextdotjs" }
+      ]
+    }
+  }
+}

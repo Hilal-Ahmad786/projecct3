@@ -1,0 +1,459 @@
+{
+  "slug": "cybersecurity",
+  "en": {
+    "name": "Cybersecurity",
+    "shortDescription": "Practical security for web and e-commerce teams: realistic threat modelling, secure development practice, dependency and secret scanning, access control, tested backups and compliance gap work — risk reduced honestly, not guaranteed away.",
+    "fullDescription": "Breaches at small and mid-sized companies are rarely exotic. They are a reused admin password, a dependency that has been vulnerable for two years, a storage bucket left public, a staging site indexed by search engines, or an injection flaw in a form nobody has touched since launch. Our work is reducing those risks in the systems we understand deeply: web applications, e-commerce storefronts, APIs and the platforms they run on. We build secure by default and practise it on our own products — authenticated admin APIs, HMAC-signed sessions, encrypted credential storage, per-tenant isolation in a multi-tenant AI support agent, IP-hashed analytics and consent gating. We do not run a 24/7 monitoring centre or a red team, and where an accredited assessor or a specialist firm is the right answer, we say so and help you brief them.",
+    "features": [
+      "Threat Modelling Against Your Actual Application and Data Flows",
+      "Secure Development Practice: Review, Safe Defaults, Least Privilege",
+      "Dependency, Secret and Configuration Scanning Wired Into CI",
+      "Application-Level Security Testing of Web, API and Mobile Products",
+      "Authentication, MFA and Role-Based Access Control Review",
+      "Encryption in Transit and at Rest, With Sane Key Handling",
+      "Logging, Audit Trails and Backup Restore Testing",
+      "KVKK and GDPR Gap Assessment With a Prioritised Remediation Plan"
+    ],
+    "benefits": [
+      "A ranked list of real risks with effort and impact, instead of a 200-page scanner dump",
+      "Fixes that actually ship, because remediation arrives as engineering tickets",
+      "Fewer easy openings: exposed admin panels, stale dependencies, over-broad permissions",
+      "Backups you have restored from, which is what turns ransomware into an outage",
+      "The documentation and evidence that customer security questionnaires keep asking for",
+      "A clear line between what we can do and where you need an accredited specialist"
+    ],
+    "metaTitle": "Cybersecurity for Web & E-Commerce Teams | PakSoft",
+    "metaDescription": "Practical cybersecurity for web and e-commerce: threat modelling, secure development, dependency scanning and tested backups. Book a security review.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Scoping and Threat Modelling",
+          "description": "We start from what you would least like to lose — customer records, payment flows, admin access, uptime — and map how each could realistically be reached. That produces a scope with named systems and explicit exclusions, so nobody assumes a review of your storefront also covered the office network or your payment provider."
+        },
+        {
+          "step": 2,
+          "title": "Architecture, Code and Configuration Review",
+          "description": "We read the parts attackers read: authentication and session handling, authorisation checks on every endpoint rather than only in the UI, file upload paths, database access patterns, secrets in environment and repository, storage permissions, and what your admin surface exposes to the internet. Misconfiguration finds more real risk in SME systems than exotic vulnerabilities do."
+        },
+        {
+          "step": 3,
+          "title": "Application-Level Security Testing",
+          "description": "We test the running application both unauthenticated and as each user role: injection, cross-site scripting, broken access control between accounts, insecure direct object references, rate limiting and credential-stuffing resistance on login and checkout. Testing runs against staging with production-like data wherever possible, and destructive checks are agreed in writing before they are attempted."
+        },
+        {
+          "step": 4,
+          "title": "Prioritised Findings and Remediation Plan",
+          "description": "Every finding comes with evidence, an honest severity, the conditions required to exploit it and a concrete fix — not a scanner ID and a link. We rank by real exposure rather than raw score, so the report opens with the handful of items worth doing this month and is explicit about what can wait a quarter."
+        },
+        {
+          "step": 5,
+          "title": "Fix, Retest and Harden the Pipeline",
+          "description": "We either implement the fixes with your team or review theirs, then retest the specific findings so closure is demonstrated rather than claimed. At the same time we wire dependency, secret and configuration scanning into CI so the same class of problem is caught on the next pull request instead of in the next audit."
+        },
+        {
+          "step": 6,
+          "title": "Ongoing Practice: Access, Backups and Awareness",
+          "description": "Security decays quietly, so we leave behind the routines that hold: access reviews when people join or leave, MFA enforced on the accounts that matter, dependency updates on a schedule, log retention that supports an investigation, and a backup restore that is tested rather than assumed. Short, unglamorous phishing awareness for staff belongs here too."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Can you guarantee we will not be hacked?",
+          "answer": "No, and neither can anyone else — any supplier who promises it is selling you something. Security is risk reduction: raising the cost of an attack, removing the easy openings, and making sure you detect and recover when something does get through. What we can commit to is that the common paths into a system like yours are closed, documented, and retested after each change."
+        },
+        {
+          "question": "Do you hold ISO 27001 or SOC 2 certification?",
+          "answer": "No. We hold no such certificate, we are not a certification body, and we will not describe our processes as certified or aligned in a way that implies one. What we do is help you prepare: gap assessment against the framework, implementing the technical controls, and producing the evidence an assessor will ask for. The audit and the certificate come from an accredited third party, and that separation is the point."
+        },
+        {
+          "question": "What does your penetration testing actually cover?",
+          "answer": "We test at application level: web applications, APIs and mobile clients, both unauthenticated and across user roles, looking for injection, broken access control between accounts, session and authentication weaknesses, insecure file handling and misconfigured cloud storage. We do not sell red-team engagements, physical intrusion, social-engineering campaigns or industrial control system testing. For regulated scopes such as a formal PCI DSS test, an accredited specialist should do the work and we will help you scope and brief them."
+        },
+        {
+          "question": "We already have SSL. Is that not enough?",
+          "answer": "A valid certificate encrypts traffic between the browser and the server, which is necessary and no longer distinguishing — it says nothing about whether one logged-in customer can read another's orders. Most incidents we see happen over perfectly valid HTTPS: weak admin passwords, an outdated plugin, an API endpoint that never checks who is asking. Treat the certificate as a floor, not a security posture."
+        },
+        {
+          "question": "Will testing break our production site?",
+          "answer": "We work against staging with production-like data wherever one exists, precisely so that aggressive checks carry no business risk. When testing must touch production, we agree the window, the rate limits and the specific checks in writing first, and anything potentially destructive is either excluded or run under supervision. We would rather report a slightly narrower result than take your checkout down to prove a point."
+        },
+        {
+          "question": "What do we receive at the end of an engagement?",
+          "answer": "A findings report with reproducible evidence and honest severities, a prioritised remediation plan written as engineering tickets your team can pick up, a short summary for non-technical stakeholders, and a retest confirming what was closed. Where compliance work is in scope you also get the control documentation and the register of gaps still open, with owners against each one."
+        },
+        {
+          "question": "Who signs off that we are compliant with GDPR or KVKK?",
+          "answer": "Your legal counsel or data protection officer does, never us. We run the technical side — data mapping, retention, access control, encryption, logging, processor agreements at a technical level, and a gap list with remediation steps — and hand over documentation your lawyers can rely on. Compliance is a legal determination about your business, and any agency that claims to certify it is overreaching. That work is detailed on our GDPR Compliance & Data Privacy page."
+        },
+        {
+          "question": "How often should we test?",
+          "answer": "Once a year is a reasonable baseline for a stable site, but the more useful trigger is change: a significant release, a new payment or login flow, a platform migration, or a new integration with access to customer data. Continuous checks matter more than the annual event — dependency and secret scanning in CI catch a large share of what would otherwise be found months later."
+        },
+        {
+          "question": "What is the realistic threat to an online store like ours?",
+          "answer": "Almost never a targeted attacker. It is automated: credential stuffing against your login with passwords leaked elsewhere, bots probing for known vulnerabilities in outdated plugins and packages, card testing against your checkout, and phishing aimed at whoever holds the admin account. That shapes the priorities — MFA on admin accounts, rate limiting, patching discipline and monitoring beat exotic defences for this profile."
+        },
+        {
+          "question": "What about ransomware and backups?",
+          "answer": "Backup is the control that decides whether ransomware is a disaster or an outage, and it only counts if you have restored from it. We check that backups exist for every system that matters, that at least one copy is isolated from the credentials that could delete it, that retention covers the time it typically takes to notice a compromise, and that a restore has been performed end to end with the duration recorded."
+        },
+        {
+          "question": "Where do the more specialised areas sit?",
+          "answer": "This page is the overview; the depth lives in the children. Security Audits & Compliance covers framework-driven reviews and evidence, Cybersecurity Auditing the technical audit of systems and configuration, Penetration Testing the hands-on application testing, Identity & Access Management single sign-on, roles and MFA, and GDPR Compliance & Data Privacy the data protection work. Most engagements start with an audit and pick up from there."
+        }
+      ],
+      "technologies": [
+        { "name": "OWASP ZAP", "icon": "owaspzap" },
+        { "name": "Burp Suite", "icon": "burpsuite" },
+        { "name": "Dependabot", "icon": "github" },
+        { "name": "Snyk", "icon": "snyk" },
+        { "name": "Cloudflare", "icon": "cloudflare" },
+        { "name": "HashiCorp Vault", "icon": "hashicorpvault" },
+        { "name": "Auth0 / Okta", "icon": "okta" },
+        { "name": "PostgreSQL", "icon": "postgresql" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Siber Güvenlik",
+    "shortDescription": "Web ve e-ticaret ekipleri için uygulanabilir güvenlik: gerçekçi tehdit modeli, güvenli geliştirme pratiği, bağımlılık ve gizli anahtar taraması, erişim kontrolü, geri yüklemesi denenmiş yedekler ve KVKK boşluk analizi. Riski azaltırız, sıfır risk vaat etmeyiz.",
+    "fullDescription": "KOBİ'lerde yaşanan olayların çok azı egzotik saldırılardır. Genellikle tekrar kullanılmış bir yönetici parolası, iki yıldır güncellenmemiş bir bağımlılık, herkese açık kalmış bir depolama alanı, arama motorlarına düşmüş bir test sitesi ya da yayına alındığından beri kimsenin dokunmadığı bir formdaki enjeksiyon açığıdır. Bizim işimiz, derinlemesine bildiğimiz sistemlerde bu riskleri azaltmaktır: web uygulamaları, e-ticaret siteleri, API'ler ve bunların çalıştığı platformlar. Güvenliği varsayılan haline getiririz ve bunu önce kendi ürünlerimizde uygularız; kimlik doğrulamalı yönetim API'leri, HMAC imzalı oturumlar, şifrelenmiş kimlik bilgisi saklama, çok kiracılı yapay zeka destek asistanımızda kiracı bazında veri izolasyonu, IP'si hash'lenmiş analitik ve onay temelli ölçüm. 7/24 izleme merkezimiz veya kırmızı takımımız yok; yetkili bir denetim kuruluşu ya da uzman bir firma gereken yerde bunu açıkça söyler, brief hazırlamanıza yardım ederiz.",
+    "features": [
+      "Kendi uygulamanız ve veri akışlarınız üzerinden gerçekçi tehdit modeli",
+      "Güvenli geliştirme pratiği: kod incelemesi, güvenli varsayılanlar, en az yetki",
+      "CI hattına bağlanmış bağımlılık, gizli anahtar ve yapılandırma taraması",
+      "Web, API ve mobil ürünlerde uygulama seviyesinde güvenlik testi",
+      "Kimlik doğrulama, çok faktörlü doğrulama (MFA) ve rol bazlı erişim incelemesi",
+      "Aktarımda ve durağan halde şifreleme ile makul anahtar yönetimi",
+      "Loglama, denetim izi ve yedekten geri yükleme tatbikatı",
+      "KVKK ve GDPR boşluk analizi ve önceliklendirilmiş iyileştirme planı"
+    ],
+    "benefits": [
+      "200 sayfalık tarayıcı çıktısı değil, efor ve etkisiyle sıralanmış gerçek risk listesi",
+      "İyileştirmeler geliştirme görevi olarak yazıldığı için gerçekten hayata geçen düzeltmeler",
+      "Kolay açıkların kapanması: dışarıya açık yönetim panelleri, eski bağımlılıklar, gereğinden geniş yetkiler",
+      "Fidye yazılımını felaketten kesintiye çeviren, gerçekten geri yüklenmiş yedekler",
+      "Kurumsal müşteri güvenlik formlarının sürekli istediği belge ve kanıtlar",
+      "Bizim yapabildiklerimiz ile yetkili bir uzmana ihtiyaç duyulan yer arasında net bir sınır"
+    ],
+    "metaTitle": "Siber Güvenlik ve KVKK Uyum Hizmetleri | PakSoft",
+    "metaDescription": "Web ve e-ticaret için siber güvenlik: tehdit modeli, güvenli geliştirme, bağımlılık taraması, erişim kontrolü ve KVKK boşluk analizi. Ücretsiz ön görüşme alın.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Kapsam Belirleme ve Tehdit Modeli",
+          "description": "En kaybetmek istemeyeceğiniz şeyden başlarız: müşteri kayıtları, ödeme akışı, yönetici erişimi, siteyi ayakta tutmak. Her birine gerçekçi olarak nasıl ulaşılabileceğini çıkarır, sistemleri adıyla yazılmış ve nelerin kapsam dışı olduğunu açıkça söyleyen bir kapsam belgesi hazırlarız; böylece mağaza incelemesinin ofis ağını da kapsadığı sanılmaz."
+        },
+        {
+          "step": 2,
+          "title": "Mimari, Kod ve Yapılandırma İncelemesi",
+          "description": "Saldırganın baktığı yerlere bakarız: kimlik doğrulama ve oturum yönetimi, yetki kontrolünün sadece arayüzde değil her uç noktada yapılıp yapılmadığı, dosya yükleme yolları, veritabanı erişim desenleri, ortam değişkenlerinde ve depoda unutulmuş gizli anahtarlar, depolama izinleri ve yönetim panelinin internete ne kadar açık olduğu. KOBİ sistemlerinde gerçek riski en çok yanlış yapılandırma üretir."
+        },
+        {
+          "step": 3,
+          "title": "Uygulama Seviyesinde Güvenlik Testi",
+          "description": "Çalışan uygulamayı hem kimliksiz hem de her kullanıcı rolüyle test ederiz: enjeksiyon, XSS, hesaplar arası yetki aşımı, doğrudan nesne referansı açıkları, giriş ve ödeme akışında hız sınırlama ile kimlik bilgisi doldurma saldırılarına dayanıklılık. Testler mümkün olduğunda üretime benzer veriyle test ortamında koşar, zarar verebilecek denemeler ise önceden yazılı olarak mutabık kalınır."
+        },
+        {
+          "step": 4,
+          "title": "Önceliklendirilmiş Bulgular ve İyileştirme Planı",
+          "description": "Her bulgu kanıtı, dürüst bir kritiklik seviyesi, sömürülmesi için gereken koşullar ve somut bir çözümle gelir; tarayıcı numarası ve bağlantı değil. Sıralamayı ham puana göre değil gerçek maruziyete göre yaparız; rapor bu ay yapılması gereken birkaç maddeyle açılır ve nelerin bir çeyrek bekleyebileceğini açıkça yazar."
+        },
+        {
+          "step": 5,
+          "title": "Düzeltme, Yeniden Test ve Hattın Sıkılaştırılması",
+          "description": "Düzeltmeleri ya ekibinizle birlikte uygular ya da onların çözümünü inceleriz; ardından ilgili bulguları yeniden test ederek kapanışı iddia değil kanıt haline getiririz. Aynı anda bağımlılık, gizli anahtar ve yapılandırma taramasını CI hattına bağlarız; böylece aynı tür sorun bir sonraki denetimde değil bir sonraki pull request'te yakalanır."
+        },
+        {
+          "step": 6,
+          "title": "Sürdürülebilir Pratik: Erişim, Yedek ve Farkındalık",
+          "description": "Güvenlik sessizce eskir, bu yüzden ayakta kalan rutinleri bırakırız: işe giriş ve çıkışlarda erişim gözden geçirme, kritik hesaplarda zorunlu MFA, planlı bağımlılık güncellemeleri, bir incelemeyi destekleyecek kadar log saklama ve varsayılan değil denenmiş bir geri yükleme. Personel için kısa ve süslemesiz oltalama farkındalığı da buraya girer."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Hacklenmeyeceğimizi garanti eder misiniz?",
+          "answer": "Hayır ve bunu kimse edemez; garanti veren bir tedarikçi size bir şey satıyordur. Güvenlik risk azaltmadır: saldırının maliyetini yükseltmek, kolay açıkları kapatmak ve bir şey içeri sızdığında fark edip geri dönebilmek. Taahhüt edebileceğimiz şey, sizinkine benzer bir sisteme giden bilinen yolların kapatılmış, belgelenmiş ve her değişiklikten sonra yeniden test edilmiş olmasıdır."
+        },
+        {
+          "question": "ISO 27001 veya SOC 2 belgeniz var mı?",
+          "answer": "Hayır. Böyle bir belgemiz yok, belgelendirme kuruluşu da değiliz ve süreçlerimizi bu izlenimi verecek şekilde sertifikalı ya da uyumlu diye tanıtmayız. Yaptığımız iş hazırlıktır: ilgili çerçeveye göre boşluk analizi, teknik kontrollerin kurulması ve denetçinin isteyeceği kanıtların üretilmesi. Denetimi ve belgeyi yetkili bağımsız bir kuruluş verir; bu ayrımın kendisi işin özüdür."
+        },
+        {
+          "question": "Sitemizde SSL var, bu yeterli değil mi?",
+          "answer": "Geçerli bir sertifika tarayıcı ile sunucu arasındaki trafiği şifreler; gereklidir ama artık ayırt edici değildir ve giriş yapmış bir müşterinin başka bir müşterinin siparişlerini görüp göremeyeceği hakkında hiçbir şey söylemez. Gördüğümüz olayların çoğu gayet geçerli HTTPS üzerinden yaşanır: zayıf yönetici parolası, güncellenmemiş bir eklenti, kimin sorduğunu hiç kontrol etmeyen bir API ucu. Sertifikayı güvenlik duruşu değil, taban çizgisi olarak görün."
+        },
+        {
+          "question": "Sızma testi tam olarak neyi kapsıyor?",
+          "answer": "Testi uygulama seviyesinde yaparız: web uygulamaları, API'ler ve mobil istemciler; hem kimliksiz hem de farklı kullanıcı rolleriyle. Enjeksiyon, hesaplar arası yetki aşımı, oturum ve kimlik doğrulama zayıflıkları, güvensiz dosya işleme ve yanlış yapılandırılmış bulut depolama başlıca konulardır. Kırmızı takım tatbikatı, fiziksel sızma, sosyal mühendislik kampanyası veya endüstriyel kontrol sistemi testi satmıyoruz. PCI DSS gibi düzenlemeye tabi kapsamlarda işi yetkili bir uzman yapmalıdır; kapsamı belirlemenize ve firmayı brieflemenize yardımcı oluruz."
+        },
+        {
+          "question": "Test canlı sitemizi bozar mı?",
+          "answer": "Mümkün olan her yerde üretime benzer veriye sahip test ortamında çalışırız; amaç agresif kontrollerin ticari risk taşımamasıdır. Test canlı ortama dokunmak zorundaysa pencereyi, hız sınırlarını ve yapılacak kontrolleri önceden yazılı olarak belirleriz; zarar verme ihtimali olan denemeler ya kapsam dışında bırakılır ya da gözetim altında yapılır. Bir noktayı kanıtlamak için ödeme akışınızı durdurmaktansa biraz daha dar bir sonuç raporlamayı tercih ederiz."
+        },
+        {
+          "question": "Çalışma sonunda elimize ne geçiyor?",
+          "answer": "Tekrarlanabilir kanıtlar ve dürüst kritiklik seviyeleriyle bir bulgu raporu, ekibinizin doğrudan alabileceği geliştirme görevleri biçiminde yazılmış önceliklendirilmiş iyileştirme planı, teknik olmayan paydaşlar için kısa bir özet ve neyin kapandığını doğrulayan bir yeniden test. Uyum çalışması kapsamdaysa kontrol dokümantasyonu ile hâlâ açık olan boşlukların sahipli listesini de alırsınız."
+        },
+        {
+          "question": "KVKK uyumunu kim onaylıyor? VERBİS kaydı gerekiyor mu?",
+          "answer": "Uyum değerlendirmesini ve VERBİS kayıt yükümlülüğünüzün olup olmadığını hukuk danışmanınız veya veri sorumlusu olarak siz belirlersiniz; bu bir hukuki değerlendirmedir ve biz hukuki görüş vermeyiz. Bizim tarafımız tekniktir: hangi kişisel verinin nerede tutulduğunun çıkarılması, saklama süreleri, erişim kontrolü, şifreleme, loglama ve teknik tedbirlerin belgelenmesi. Bu çalışmanın ayrıntısı GDPR ve KVKK Uyumluluğu sayfamızdadır."
+        },
+        {
+          "question": "Ne sıklıkla test yaptırmalıyız?",
+          "answer": "İstikrarlı bir site için yılda bir makul bir taban; ama asıl tetikleyici takvim değil değişikliktir: önemli bir sürüm, yeni bir ödeme veya giriş akışı, platform geçişi ya da müşteri verisine erişen yeni bir entegrasyon. Yıllık etkinlikten çok sürekli kontroller iş görür; CI hattındaki bağımlılık ve gizli anahtar taraması, aksi halde aylar sonra bulunacak sorunların büyük kısmını erkenden yakalar."
+        },
+        {
+          "question": "Bizim gibi bir e-ticaret sitesine gerçek tehdit ne?",
+          "answer": "Neredeyse hiçbir zaman size özel bir saldırgan değil. Tehdit otomatiktir: başka sitelerden sızmış parolalarla giriş sayfanıza yapılan deneme saldırıları, güncellenmemiş eklenti ve paketlerdeki bilinen açıkları tarayan botlar, ödeme sayfanızda kart deneme trafiği ve yönetici hesabını kullanan kişiye gönderilen oltalama e-postaları. Öncelikler de buna göre belirlenir: yönetici hesaplarında MFA, hız sınırlama, düzenli güncelleme disiplini ve izleme, bu profil için egzotik savunmalardan çok daha etkilidir."
+        },
+        {
+          "question": "Fidye yazılımı ve yedekler konusunda ne yapmalıyız?",
+          "answer": "Fidye yazılımının felaket mi yoksa kesinti mi olacağına karar veren kontrol yedeklemedir ve yedek ancak geri yüklediyseniz sayılır. Önem taşıyan her sistem için yedek olup olmadığını, en az bir kopyanın onu silebilecek kimlik bilgilerinden yalıtılmış olup olmadığını, saklama süresinin bir ihlalin fark edilmesi için gereken zamanı kapsayıp kapsamadığını kontrol eder ve uçtan uca bir geri yüklemeyi süresini kaydederek yaptırırız."
+        },
+        {
+          "question": "Daha uzman konular hangi sayfalarda?",
+          "answer": "Bu sayfa genel çerçevedir, derinlik alt sayfalardadır. Güvenlik Denetimleri ve Uyumluluk çerçeve odaklı incelemeleri ve kanıt üretimini, Siber Güvenlik Denetimi sistem ve yapılandırmanın teknik denetimini, Sızma Testleri uygulama üzerinde yapılan pratik testleri, Kimlik ve Erişim Yönetimi tekil oturum açma ile rol ve MFA kurgusunu, GDPR ve KVKK Uyumluluğu ise kişisel veri tarafını kapsar. Çalışmaların çoğu bir denetimle başlar ve oradan dallanır."
+        }
+      ],
+      "technologies": [
+        { "name": "OWASP ZAP", "icon": "owaspzap" },
+        { "name": "Burp Suite", "icon": "burpsuite" },
+        { "name": "Dependabot", "icon": "github" },
+        { "name": "Snyk", "icon": "snyk" },
+        { "name": "Cloudflare", "icon": "cloudflare" },
+        { "name": "HashiCorp Vault", "icon": "hashicorpvault" },
+        { "name": "Auth0 / Okta", "icon": "okta" },
+        { "name": "PostgreSQL", "icon": "postgresql" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Cybersicherheit",
+    "shortDescription": "Pragmatische Absicherung für Web- und E-Commerce-Teams: realistische Bedrohungsmodellierung, sichere Entwicklung, Abhängigkeits- und Secret-Scanning, Zugriffskontrolle, geprüfte Backups und Gap-Analysen zur DSGVO — Risiko wird gesenkt, nicht wegversprochen.",
+    "fullDescription": "Sicherheitsvorfälle im Mittelstand sind selten spektakulär. Es sind wiederverwendete Administratorpasswörter, eine seit zwei Jahren verwundbare Abhängigkeit, ein öffentlich erreichbarer Speicher, eine von Suchmaschinen indexierte Staging-Umgebung oder eine Injection-Lücke in einem Formular, das seit dem Launch niemand angefasst hat. Unsere Arbeit ist die Reduktion genau dieser Risiken in Systemen, die wir gründlich verstehen: Webanwendungen, Onlineshops, APIs und die Plattformen darunter. Sichere Voreinstellungen setzen wir zuerst in eigenen Produkten um — authentifizierte Admin-APIs, HMAC-signierte Sessions, verschlüsselte Zugangsdaten, mandantengetrennte Datenhaltung in einem mehrmandantenfähigen KI-Support-Agenten, IP-gehashte Analytics und einwilligungsgesteuerte Messung. Wir betreiben kein 24/7-Lagezentrum und kein Red Team; wo eine akkreditierte Prüfstelle oder ein Spezialanbieter die richtige Antwort ist, sagen wir es und unterstützen Sie bei der Beauftragung.",
+    "features": [
+      "Bedrohungsmodellierung entlang Ihrer realen Anwendung und Datenflüsse",
+      "Sichere Entwicklung: Review, sichere Voreinstellungen, minimale Rechte",
+      "Abhängigkeits-, Secret- und Konfigurationsscanning in der CI-Pipeline",
+      "Sicherheitstests auf Anwendungsebene für Web, API und Mobile",
+      "Prüfung von Authentifizierung, MFA und rollenbasierter Zugriffskontrolle",
+      "Verschlüsselung bei Übertragung und Speicherung mit sauberem Schlüsselumgang",
+      "Protokollierung, Audit-Trails und getestete Wiederherstellung aus Backups",
+      "Gap-Analyse zu DSGVO Art. 32 mit priorisiertem Maßnahmenplan"
+    ],
+    "benefits": [
+      "Eine nach Aufwand und Wirkung sortierte Liste realer Risiken statt eines 200-seitigen Scanner-Exports",
+      "Maßnahmen, die tatsächlich umgesetzt werden, weil sie als Entwicklungstickets formuliert sind",
+      "Weniger einfache Einstiege: offene Admin-Oberflächen, veraltete Abhängigkeiten, zu breite Rechte",
+      "Backups, aus denen zurückgespielt wurde — der Unterschied zwischen Betriebsstörung und Katastrophe",
+      "Dokumentation und Nachweise, nach denen Sicherheitsfragebögen von Kunden regelmäßig verlangen",
+      "Eine klare Grenze zwischen unserem Leistungsumfang und dem, was eine akkreditierte Stelle übernehmen muss"
+    ],
+    "metaTitle": "Cybersicherheit für Web & E-Commerce | PakSoft",
+    "metaDescription": "Cybersicherheit mit Substanz: Bedrohungsmodellierung, sichere Entwicklung, Scanning, Zugriffskontrolle, geprüfte Backups, DSGVO-Gap-Analyse. Jetzt anfragen.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Scoping und Bedrohungsmodellierung",
+          "description": "Wir beginnen bei dem, was Sie am wenigsten verlieren möchten: Kundendaten, Zahlungsstrecke, administrative Zugänge, Verfügbarkeit. Für jeden dieser Punkte modellieren wir realistische Angriffswege und halten den Umfang mit benannten Systemen und ausdrücklichen Ausschlüssen fest, damit niemand annimmt, die Shop-Prüfung habe auch das Büronetz abgedeckt."
+        },
+        {
+          "step": 2,
+          "title": "Architektur-, Code- und Konfigurationsreview",
+          "description": "Wir sehen uns an, was auch Angreifer ansehen: Authentifizierung und Session-Handling, Autorisierungsprüfungen an jedem Endpunkt statt nur in der Oberfläche, Upload-Pfade, Datenbankzugriffe, Secrets in Umgebung und Repository, Speicherberechtigungen und die Frage, was Ihre Administrationsoberfläche öffentlich preisgibt. Fehlkonfiguration erzeugt in mittelständischen Systemen mehr reales Risiko als exotische Schwachstellen."
+        },
+        {
+          "step": 3,
+          "title": "Sicherheitstests auf Anwendungsebene",
+          "description": "Wir testen die laufende Anwendung unauthentifiziert und in jeder Nutzerrolle: Injection, Cross-Site-Scripting, fehlerhafte Zugriffskontrolle zwischen Konten, unsichere Objektreferenzen sowie Rate-Limiting und Widerstandsfähigkeit gegen Credential Stuffing an Login und Checkout. Getestet wird, wo möglich, in einer Staging-Umgebung mit produktionsnahen Daten; potenziell destruktive Prüfungen werden vorab schriftlich vereinbart."
+        },
+        {
+          "step": 4,
+          "title": "Priorisierte Befunde und Maßnahmenplan",
+          "description": "Jeder Befund enthält Nachweis, eine ehrliche Einstufung, die zur Ausnutzung nötigen Bedingungen und einen konkreten Lösungsvorschlag statt einer Scanner-ID mit Link. Priorisiert wird nach tatsächlicher Exposition, nicht nach Rohwert, sodass der Bericht mit den wenigen Punkten beginnt, die diesen Monat zählen, und benennt, was ein Quartal warten kann."
+        },
+        {
+          "step": 5,
+          "title": "Behebung, Nachtest und Härtung der Pipeline",
+          "description": "Wir setzen die Maßnahmen mit Ihrem Team um oder prüfen dessen Umsetzung und testen anschließend die betroffenen Befunde erneut, damit der Abschluss belegt und nicht behauptet ist. Parallel binden wir Abhängigkeits-, Secret- und Konfigurationsscanning in die CI ein, damit dieselbe Fehlerklasse beim nächsten Pull Request auffällt und nicht erst beim nächsten Audit."
+        },
+        {
+          "step": 6,
+          "title": "Dauerhafte Praxis: Zugriffe, Backups, Awareness",
+          "description": "Sicherheit verfällt unbemerkt, deshalb hinterlassen wir Routinen, die tragen: Zugriffsprüfungen bei Ein- und Austritten, MFA für die Konten, auf die es ankommt, planmäßige Aktualisierung von Abhängigkeiten, eine Protokollaufbewahrung, die eine Untersuchung überhaupt trägt, und eine getestete Wiederherstellung. Kurze, unspektakuläre Phishing-Sensibilisierung für Mitarbeitende gehört ebenfalls dazu."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Können Sie garantieren, dass wir nicht gehackt werden?",
+          "answer": "Nein, und niemand sonst kann das — wer es zusagt, verkauft Ihnen etwas. Sicherheit ist Risikoreduktion: die Kosten eines Angriffs erhöhen, die einfachen Einstiege schließen und sicherstellen, dass Sie einen Vorfall bemerken und sich davon erholen. Zusagen können wir, dass die bekannten Wege in ein System wie Ihres geschlossen, dokumentiert und nach jeder Änderung erneut geprüft sind."
+        },
+        {
+          "question": "Sind Sie nach ISO 27001 oder SOC 2 zertifiziert?",
+          "answer": "Nein. Wir halten kein solches Zertifikat, wir sind keine Zertifizierungsstelle, und wir beschreiben unsere Abläufe auch nicht als zertifiziert oder konform in einer Weise, die das nahelegt. Was wir leisten, ist die Vorbereitung: Gap-Analyse gegen das jeweilige Rahmenwerk, Umsetzung der technischen Maßnahmen und Erstellung der Nachweise, die eine Prüfstelle sehen will. Audit und Zertifikat kommen von einer akkreditierten dritten Partei."
+        },
+        {
+          "question": "Was deckt ein Penetrationstest bei Ihnen ab?",
+          "answer": "Wir testen auf Anwendungsebene: Webanwendungen, APIs und mobile Clients, unauthentifiziert und über alle Rollen hinweg, mit Blick auf Injection, fehlerhafte Zugriffskontrolle zwischen Konten, Schwächen in Session und Authentifizierung, unsichere Dateiverarbeitung und fehlkonfigurierte Cloud-Speicher. Red-Team-Übungen, physische Zutrittstests, Social-Engineering-Kampagnen oder Prüfungen industrieller Steuerungen bieten wir nicht an. Für regulierte Prüfungen wie PCI DSS gehört die Arbeit zu einem akkreditierten Anbieter, und wir helfen Ihnen beim Zuschnitt und der Beauftragung."
+        },
+        {
+          "question": "Wir haben ein SSL-Zertifikat. Genügt das nicht?",
+          "answer": "Ein gültiges Zertifikat verschlüsselt die Übertragung zwischen Browser und Server. Das ist notwendig, aber längst kein Unterscheidungsmerkmal und sagt nichts darüber aus, ob ein angemeldeter Kunde die Bestellungen eines anderen einsehen kann. Die meisten Vorfälle, die wir sehen, laufen über einwandfreies HTTPS: schwache Administratorpasswörter, ein veraltetes Plugin, ein Endpunkt ohne Berechtigungsprüfung. Das Zertifikat ist die Untergrenze, nicht die Sicherheitslage."
+        },
+        {
+          "question": "Bleiben unsere Daten in der EU, und wie steht es um Auftragsverarbeitung?",
+          "answer": "Datenresidenz behandeln wir als Architekturvorgabe: EU-Regionen für Anwendung, Datenbank und Backups, dokumentierte Datenflüsse und eine nachvollziehbare Liste eingesetzter Dienste. Zu den technischen und organisatorischen Maßnahmen nach DSGVO Art. 32 liefern wir Beschreibung und Nachweise, die Sie Ihren Auftragsverarbeitungsverträgen beilegen können. Die rechtliche Bewertung der Verträge selbst trifft Ihre Rechtsberatung, nicht wir."
+        },
+        {
+          "question": "Betrifft uns NIS2?",
+          "answer": "Das kann sein, und die Einordnung nimmt Ihre Rechtsberatung vor — abhängig von Sektor, Größe und Ihrer Rolle in der Lieferkette Ihrer Kunden. Für uns ist NIS2 Kontext, keine zugesicherte Leistung: Wir setzen technische Maßnahmen um, die in solchen Anforderungskatalogen üblicherweise verlangt werden, etwa Zugriffskontrolle, Protokollierung, Patch-Prozesse, Backup und Wiederherstellung, und dokumentieren sie prüffähig. Eine Konformitätszusage geben wir nicht."
+        },
+        {
+          "question": "Was erhalten wir am Ende?",
+          "answer": "Einen Befundbericht mit reproduzierbaren Nachweisen und ehrlicher Einstufung, einen priorisierten Maßnahmenplan in Form von Entwicklungstickets, eine kurze Zusammenfassung für nicht-technische Beteiligte und einen Nachtest, der die Schließung belegt. Ist Compliance im Umfang, kommen die Maßnahmendokumentation und ein Register der offenen Lücken mit benannten Verantwortlichen hinzu."
+        },
+        {
+          "question": "Wie oft sollten wir prüfen lassen?",
+          "answer": "Einmal jährlich ist für eine stabile Anwendung eine vertretbare Grundlinie, der bessere Auslöser ist jedoch Veränderung: ein größeres Release, eine neue Zahlungs- oder Anmeldestrecke, eine Plattformmigration oder eine neue Integration mit Zugriff auf Kundendaten. Laufende Prüfungen wiegen schwerer als der jährliche Termin, denn Scanning in der CI fängt einen großen Teil dessen ab, was sonst erst Monate später auffällt."
+        },
+        {
+          "question": "Wie realistisch ist die Bedrohung für einen Onlineshop unserer Größe?",
+          "answer": "Gezielte Angreifer sind die Ausnahme, automatisierte Angriffe die Regel: Credential Stuffing mit anderswo geleakten Passwörtern, Bots auf der Suche nach bekannten Lücken in veralteten Plugins und Paketen, Kartentests im Checkout und Phishing gegen die Person mit dem Administratorzugang. Daraus folgen die Prioritäten — MFA für Administratoren, Rate Limiting, Patch-Disziplin und Protokollierung wirken hier deutlich stärker als exotische Abwehrmechanismen."
+        },
+        {
+          "question": "Wo liegen die spezialisierten Themen?",
+          "answer": "Diese Seite gibt den Überblick, die Tiefe steht in den Unterseiten. Sicherheitsaudits & Compliance behandelt rahmenwerksgetriebene Prüfungen und Nachweise, Cybersecurity-Auditierung den technischen Audit von Systemen und Konfiguration, Penetrationstests die praktische Prüfung der Anwendung, Identitäts- und Zugriffsmanagement Single Sign-on, Rollen und MFA, GDPR-Konformität & Datenschutz die datenschutzrechtliche Umsetzung. Die meisten Projekte beginnen mit einem Audit."
+        }
+      ],
+      "technologies": [
+        { "name": "OWASP ZAP", "icon": "owaspzap" },
+        { "name": "Burp Suite", "icon": "burpsuite" },
+        { "name": "Dependabot", "icon": "github" },
+        { "name": "Snyk", "icon": "snyk" },
+        { "name": "Cloudflare", "icon": "cloudflare" },
+        { "name": "HashiCorp Vault", "icon": "hashicorpvault" },
+        { "name": "Auth0 / Okta", "icon": "okta" },
+        { "name": "PostgreSQL", "icon": "postgresql" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "الأمن السيبراني",
+    "shortDescription": "أمن عملي لفرق الويب والتجارة الإلكترونية: نمذجة تهديدات واقعية، وممارسات تطوير آمن، وفحص للاعتماديات والأسرار، وضبط للصلاحيات، ونسخ احتياطية مُختبرة، وتحليل فجوات الامتثال. نخفّض المخاطر بصدق ولا نَعِد بإلغائها.",
+    "fullDescription": "الحوادث التي تصيب الشركات الصغيرة والمتوسطة نادراً ما تكون معقّدة. غالباً هي كلمة مرور إدارية مُعاد استخدامها، أو اعتمادية بقيت مكشوفة سنتين، أو مساحة تخزين تُركت عامة، أو بيئة اختبار فهرستها محركات البحث، أو ثغرة حقن في نموذج لم يمسّه أحد منذ الإطلاق. عملنا هو تقليل هذه المخاطر في الأنظمة التي نعرفها بعمق: تطبيقات الويب والمتاجر الإلكترونية وواجهات API والمنصات التي تعمل فوقها. نطبّق الإعدادات الآمنة افتراضياً في منتجاتنا أولاً: واجهات إدارة محمية بمصادقة، وجلسات موقّعة بـ HMAC، وتخزين مشفّر لبيانات الاعتماد، وعزل بيانات لكل مستأجر في وكيل دعم ذكي متعدد المستأجرين، وتحليلات تُخزَّن فيها عناوين IP مُجزّأة، وقياس مشروط بموافقة الزائر. لا نشغّل مركز مراقبة على مدار الساعة ولا فريق اختراق هجومي، وحين تكون جهة تدقيق معتمدة أو شركة متخصصة هي الجواب الصحيح نقول ذلك ونساعدكم في تحديد النطاق.",
+    "features": [
+      "نمذجة تهديدات مبنية على تطبيقكم الفعلي ومسارات بياناتكم",
+      "ممارسات تطوير آمن: مراجعة الشيفرة، إعدادات افتراضية آمنة، أقل صلاحية ممكنة",
+      "فحص الاعتماديات والأسرار والإعدادات ضمن خط التكامل المستمر (CI)",
+      "اختبار أمني على مستوى التطبيق للويب وواجهات API وتطبيقات الجوال",
+      "مراجعة المصادقة والتحقق متعدد العوامل (MFA) والصلاحيات المبنية على الأدوار",
+      "التشفير أثناء النقل وفي حالة السكون مع إدارة سليمة للمفاتيح",
+      "السجلات ومسارات التدقيق واختبار الاستعادة من النسخ الاحتياطية",
+      "تحليل فجوات الخصوصية وخطة معالجة مرتّبة حسب الأولوية"
+    ],
+    "benefits": [
+      "قائمة مخاطر حقيقية مرتّبة بالجهد والأثر بدل تقرير فاحص من مئتي صفحة",
+      "إصلاحات تُنفَّذ فعلاً لأنها مكتوبة كمهام هندسية جاهزة للتنفيذ",
+      "إغلاق المداخل السهلة: لوحات إدارة مكشوفة، اعتماديات قديمة، صلاحيات أوسع من اللازم",
+      "نسخ احتياطية جرت استعادتها فعلياً، وهي ما يحوّل برامج الفدية من كارثة إلى انقطاع",
+      "الوثائق والأدلة التي تطلبها استبيانات الأمن لدى عملائكم من الشركات",
+      "خط واضح بين ما ننفّذه نحن وما يحتاج إلى جهة معتمدة متخصصة"
+    ],
+    "metaTitle": "الأمن السيبراني للويب والتجارة الإلكترونية | PakSoft",
+    "metaDescription": "أمن سيبراني عملي: نمذجة تهديدات، تطوير آمن، فحص اعتماديات، ضبط صلاحيات، نسخ احتياطية مُختبرة، وتحليل فجوات الامتثال. احجزوا مراجعة أمنية مجانية اليوم.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تحديد النطاق ونمذجة التهديدات",
+          "description": "نبدأ مما لا تحتملون خسارته: سجلات العملاء، ومسار الدفع، وصلاحيات الإدارة، واستمرار الخدمة. نرسم لكل منها المسارات الواقعية التي قد يُوصل بها إليه، ونخرج بوثيقة نطاق تسمّي الأنظمة صراحةً وتذكر ما هو خارج النطاق، حتى لا يُفترض أن مراجعة المتجر شملت شبكة المكتب أيضاً."
+        },
+        {
+          "step": 2,
+          "title": "مراجعة البنية والشيفرة والإعدادات",
+          "description": "ننظر إلى ما ينظر إليه المهاجم: المصادقة وإدارة الجلسات، والتحقق من الصلاحية عند كل نقطة نهاية لا في الواجهة فقط، ومسارات رفع الملفات، وأنماط الوصول إلى قاعدة البيانات، والأسرار المنسية في متغيرات البيئة والمستودع، وصلاحيات التخزين، وما تكشفه لوحة الإدارة للإنترنت. سوء الإعداد يولّد في أنظمة الشركات المتوسطة مخاطر أكثر من الثغرات النادرة."
+        },
+        {
+          "step": 3,
+          "title": "الاختبار الأمني على مستوى التطبيق",
+          "description": "نختبر التطبيق أثناء عمله بلا مصادقة وبكل دور من أدوار المستخدمين: الحقن، والبرمجة عبر المواقع، وتجاوز الصلاحيات بين الحسابات، والإشارة المباشرة غير الآمنة للكائنات، وتحديد معدل المحاولات ومقاومة هجمات حشو بيانات الاعتماد على صفحتي الدخول والدفع. نعمل قدر الإمكان على بيئة اختبار ببيانات شبيهة بالإنتاج، وأي فحص قد يسبب ضرراً يُتفق عليه كتابةً مسبقاً."
+        },
+        {
+          "step": 4,
+          "title": "نتائج مرتّبة بالأولوية وخطة معالجة",
+          "description": "كل نتيجة تأتي بدليل قابل للتكرار، وتصنيف خطورة صادق، والشروط اللازمة لاستغلالها، وحل ملموس، لا برقم من أداة فحص ورابط. نرتّب حسب التعرّض الفعلي لا حسب الدرجة الخام، فيبدأ التقرير بالبنود القليلة التي تستحق العمل هذا الشهر ويقول صراحةً ما يمكن تأجيله."
+        },
+        {
+          "step": 5,
+          "title": "الإصلاح وإعادة الاختبار وتحصين خط الإنتاج",
+          "description": "ننفّذ الإصلاحات مع فريقكم أو نراجع ما نفّذه، ثم نعيد اختبار النتائج المعنية ليكون الإغلاق مُثبتاً لا مُدّعى. وبالتوازي نربط فحص الاعتماديات والأسرار والإعدادات بخط التكامل المستمر، فتُلتقط المشكلة نفسها عند طلب الدمج التالي بدل أن تظهر في التدقيق القادم."
+        },
+        {
+          "step": 6,
+          "title": "ممارسة مستمرة: الصلاحيات والنسخ والوعي",
+          "description": "الأمن يتآكل بصمت، لذلك نترك خلفنا روتيناً يصمد: مراجعة الصلاحيات عند التحاق الموظفين ومغادرتهم، وفرض MFA على الحسابات المهمة، وتحديث الاعتماديات وفق جدول، ومدة حفظ سجلات تكفي لإجراء تحقيق، واستعادة من نسخة احتياطية مُختبرة لا مفترضة. والتوعية المختصرة بالتصيّد للموظفين جزء من هذا أيضاً."
+        }
+      ],
+      "faq": [
+        {
+          "question": "هل تضمنون ألا نتعرّض للاختراق؟",
+          "answer": "لا، ولا يستطيع أحد ضمان ذلك؛ ومن يَعِد به فهو يبيعكم شيئاً. الأمن تقليل مخاطر: رفع كلفة الهجوم، وإغلاق المداخل السهلة، وضمان قدرتكم على الاكتشاف والتعافي حين ينجح شيء ما. ما نلتزم به هو أن المسارات المعروفة إلى نظام مثل نظامكم مغلقة وموثّقة ويُعاد اختبارها بعد كل تغيير."
+        },
+        {
+          "question": "هل لديكم شهادة ISO 27001 أو SOC 2؟",
+          "answer": "لا. لا نحمل شهادة من هذا النوع، ولسنا جهة مانحة للشهادات، ولا نصف عملياتنا بأنها معتمدة أو متوافقة بصيغة توحي بذلك. ما نقدّمه هو التحضير: تحليل الفجوات مقابل الإطار المطلوب، وتنفيذ الضوابط التقنية، وإعداد الأدلة التي سيطلبها المدقق. أما التدقيق والشهادة فيصدران عن جهة معتمدة مستقلة، وهذا الفصل هو جوهر المسألة."
+        },
+        {
+          "question": "ماذا يغطي اختبار الاختراق لديكم؟",
+          "answer": "نختبر على مستوى التطبيق: تطبيقات الويب وواجهات API وتطبيقات الجوال، بلا مصادقة وعبر مختلف الأدوار، بحثاً عن الحقن وتجاوز الصلاحيات بين الحسابات وضعف الجلسات والمصادقة والتعامل غير الآمن مع الملفات وسوء إعداد التخزين السحابي. لا نقدّم عمليات فريق أحمر ولا اختراقاً مادياً ولا حملات هندسة اجتماعية ولا اختبار أنظمة تحكم صناعي. وفي النطاقات الخاضعة للتنظيم مثل اختبار PCI DSS الرسمي، ينبغي أن تتولاه جهة معتمدة، ونساعدكم في تحديد النطاق والتعاقد."
+        },
+        {
+          "question": "لدينا شهادة SSL، أليس ذلك كافياً؟",
+          "answer": "الشهادة الصالحة تشفّر الحركة بين المتصفح والخادم، وهي ضرورية لكنها لم تعد ميزة تمييزية، ولا تقول شيئاً عمّا إذا كان عميل مسجّل الدخول يستطيع قراءة طلبات عميل آخر. معظم الحوادث التي نراها تجري فوق HTTPS سليم تماماً: كلمة مرور إدارية ضعيفة، إضافة قديمة، نقطة API لا تتحقق ممن يسأل. اعتبروا الشهادة الحد الأدنى لا وضعاً أمنياً."
+        },
+        {
+          "question": "هل يعطّل الاختبار موقعنا الحيّ؟",
+          "answer": "نعمل قدر الإمكان على بيئة اختبار ببيانات شبيهة بالإنتاج تحديداً كي لا تحمل الفحوص الصارمة أي مخاطرة تجارية. وإذا لزم لمس بيئة الإنتاج نتفق كتابةً مسبقاً على النافذة الزمنية وحدود المعدل والفحوص المحددة، وأي إجراء قد يسبب ضرراً يُستبعد أو يُنفَّذ تحت إشراف. نفضّل تقريراً أضيق قليلاً على إيقاف مسار الدفع لإثبات نقطة."
+        },
+        {
+          "question": "أين تُخزَّن بياناتنا، وماذا عن أنظمة حماية البيانات في المنطقة؟",
+          "answer": "نتعامل مع موقع تخزين البيانات كقيد تصميمي: نختار مناطق سحابية تناسب متطلباتكم، ونوثّق مسارات البيانات وقوائم الخدمات المستخدمة ومدد الحفظ. الأنظمة المعمول بها في السعودية والإمارات ودول الخليج الأخرى تفرض التزامات على المتحكم بالبيانات، وتحديد ما ينطبق عليكم قرار قانوني يتخذه مستشاركم. دورنا تنفيذ الضوابط التقنية وتوفير الوثائق التي يستند إليها."
+        },
+        {
+          "question": "ماذا نستلم في نهاية المشروع؟",
+          "answer": "تقرير نتائج بأدلة قابلة للتكرار وتصنيفات خطورة صادقة، وخطة معالجة مرتّبة بالأولوية مكتوبة كمهام هندسية يستطيع فريقكم البدء بها فوراً، وملخصاً قصيراً لغير التقنيين، وإعادة اختبار تؤكد ما أُغلق. وإذا شمل النطاق أعمال الامتثال، تُضاف وثائق الضوابط وسجل الفجوات المفتوحة مع مسؤول محدد لكل بند."
+        },
+        {
+          "question": "كم مرة ينبغي أن نُجري اختباراً؟",
+          "answer": "مرة سنوياً أساس معقول لموقع مستقر، لكن المحفّز الأهم هو التغيير: إصدار كبير، أو مسار دفع أو تسجيل دخول جديد، أو ترحيل للمنصة، أو تكامل جديد يصل إلى بيانات العملاء. الفحوص المستمرة أهم من الحدث السنوي، إذ يلتقط فحص الاعتماديات والأسرار داخل خط CI جزءاً كبيراً مما كان سيُكتشف بعد أشهر."
+        },
+        {
+          "question": "ما التهديد الواقعي لمتجر إلكتروني بحجمنا؟",
+          "answer": "نادراً ما يكون مهاجماً يستهدفكم بعينكم، بل هجمات آلية: حشو بيانات اعتماد بكلمات مرور تسرّبت من مواقع أخرى، وروبوتات تبحث عن ثغرات معروفة في إضافات وحزم قديمة، ومحاولات اختبار بطاقات على صفحة الدفع، ورسائل تصيّد موجّهة لمن يملك حساب الإدارة. وهذا يحدّد الأولويات: MFA لحسابات الإدارة، وتحديد معدل المحاولات، وانضباط التحديث، والمراقبة، أنفع بكثير من دفاعات معقّدة لهذا النمط."
+        },
+        {
+          "question": "وماذا عن برامج الفدية والنسخ الاحتياطية؟",
+          "answer": "النسخ الاحتياطي هو الضابط الذي يقرر إن كانت الفدية كارثة أم انقطاعاً، ولا يُحتسب إلا إذا استعدتم منه فعلاً. نتحقق من وجود نسخ لكل نظام مهم، ومن أن نسخة واحدة على الأقل معزولة عن بيانات الاعتماد التي قد تحذفها، ومن أن مدة الحفظ تغطي الفترة التي يُكتشف خلالها الاختراق عادةً، ومن تنفيذ استعادة كاملة مع تسجيل المدة التي استغرقتها."
+        },
+        {
+          "question": "أين تقع الموضوعات الأكثر تخصصاً؟",
+          "answer": "هذه الصفحة إطار عام، والتفصيل في الصفحات الفرعية. تدقيقات الأمن والامتثال تغطي المراجعات المبنية على الأطر وإنتاج الأدلة، وتدقيق الأمن السيبراني يغطي التدقيق التقني للأنظمة والإعدادات، واختبار الاختراق يغطي الاختبار العملي على التطبيق، وإدارة الهوية والوصول تغطي الدخول الموحّد والأدوار وMFA، والامتثال للائحة GDPR يغطي جانب حماية البيانات. ومعظم المشاريع تبدأ بتدقيق ثم تتفرّع."
+        }
+      ],
+      "technologies": [
+        { "name": "OWASP ZAP", "icon": "owaspzap" },
+        { "name": "Burp Suite", "icon": "burpsuite" },
+        { "name": "Dependabot", "icon": "github" },
+        { "name": "Snyk", "icon": "snyk" },
+        { "name": "Cloudflare", "icon": "cloudflare" },
+        { "name": "HashiCorp Vault", "icon": "hashicorpvault" },
+        { "name": "Auth0 / Okta", "icon": "okta" },
+        { "name": "PostgreSQL", "icon": "postgresql" }
+      ]
+    }
+  }
+}

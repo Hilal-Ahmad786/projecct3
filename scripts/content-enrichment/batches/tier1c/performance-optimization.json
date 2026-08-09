@@ -1,0 +1,455 @@
+{
+  "slug": "performance-optimization",
+  "en": {
+    "name": "Performance Optimization",
+    "shortDescription": "Making sites measurably faster for the people who actually use them: field data first, then the specific fixes that move LCP, INP and CLS — images, fonts, JavaScript, caching and the database queries hiding behind a slow page.",
+    "fullDescription": "Performance work goes wrong when it starts with a score instead of a measurement. We begin with field data from real visitors — which pages, which devices, which connections — and compare it against lab tests, because a site that scores well on a fast desktop can still be painful on a mid-range Android phone over mobile data. From there the work is specific rather than general: what delays the largest element, what blocks interaction, what shifts the layout, and how much of the delay is actually a slow database query or an uncached response rather than front-end weight. We have fixed exactly that on our own platform, including client-side hydration that left above-the-fold content invisible until JavaScript arrived. Deeper work continues in Website Speed Optimization, Core Web Vitals Optimization and Server Optimization.",
+    "features": [
+      "Field-data analysis from real users, segmented by device, connection and template",
+      "Lab profiling with throttled CPU and network to reproduce what visitors actually experience",
+      "LCP work: server response time, render-blocking resources, image priority and preloading",
+      "INP work: long tasks, hydration cost, third-party scripts and main-thread contention",
+      "CLS work: reserved dimensions for images, ads and embeds, plus font-swap behaviour",
+      "Image and font strategy: modern formats, correct sizing, subsetting and self-hosting",
+      "Caching design across CDN, server and application layers with deliberate invalidation",
+      "Database and API profiling, because many slow pages are slow queries wearing a front-end costume"
+    ],
+    "benefits": [
+      "Improvements measured against real visitor data, not just a lab score",
+      "Faster pages on mid-range phones, where most e-commerce traffic actually is",
+      "Fewer abandoned sessions caused by pages that look broken while loading",
+      "Lower infrastructure and data-transfer cost as a side effect of caching properly",
+      "A prioritised list where the biggest bottleneck is fixed first, not everything at once",
+      "A documented baseline so the next regression is obvious instead of invisible"
+    ],
+    "metaTitle": "Website Performance Optimization | PakSoft",
+    "metaDescription": "Measure first, then fix: field data, Core Web Vitals, caching, images and slow queries — honest performance work with a documented baseline. Request an audit.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Baseline From Real Users",
+          "description": "We collect field data — Core Web Vitals as experienced by actual visitors — and break it down by page template, device class, country and connection type, then reconcile it with analytics and Search Console. This is the step most often skipped, and skipping it is why teams spend weeks optimising a page that was already fast for the people who mattered."
+        },
+        {
+          "step": 2,
+          "title": "Lab Reproduction and Profiling",
+          "description": "Once we know which templates hurt, we reproduce the problem under throttled CPU and network conditions that resemble a mid-range Android phone rather than a developer laptop. Waterfall analysis, long-task traces and server timing tell us how much of the delay is network, how much is main-thread work and how much happened before a single byte was sent."
+        },
+        {
+          "step": 3,
+          "title": "Server and Data Layer First",
+          "description": "If the server takes a second to respond, no amount of image compression will rescue the page, so we look upstream first: response time, rendering strategy, cache hit rate and the queries behind the page. On our own platform, replacing full-table reads with narrow projections, batching inserts and moving per-row round-trips into aggregate SQL cut both response time and data transfer substantially."
+        },
+        {
+          "step": 4,
+          "title": "Front-End Payload and Rendering",
+          "description": "Next we attack what the browser must download and execute: JavaScript that ships but is never used, hydration that blocks interaction, fonts that delay text, and images that are larger than the box they land in. Above-the-fold content should be visible from the server response, not appear only after a client bundle finishes — a failure mode we have found and fixed in production."
+        },
+        {
+          "step": 5,
+          "title": "Caching and Invalidation Design",
+          "description": "We define what can be cached at the CDN edge, what belongs in a server or application cache, what can be statically regenerated, and — the part that gets skipped — exactly how each layer is invalidated when content changes. Caching without a deliberate invalidation strategy produces the second-worst outcome in web engineering: fast pages showing wrong data."
+        },
+        {
+          "step": 6,
+          "title": "Verify, Document and Monitor",
+          "description": "After deployment we wait for field data to catch up, because real-user metrics move over weeks rather than minutes, then compare against the baseline and report what changed and what did not. We leave behind performance budgets and monitoring so the next regression is caught in a deploy rather than in a ranking drop three months later."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How fast can a slow site realistically get?",
+          "answer": "That depends on what is causing the slowness, and we will not quote a number before profiling. A site whose server responds in over a second, ships megabytes of unused JavaScript and serves uncompressed images usually has large, obvious gains available; a site that is already well built may only improve at the margins, and we will tell you that rather than sell an engagement. What we can commit to is a measured baseline, a prioritised list, and honest before-and-after numbers from real users."
+        },
+        {
+          "question": "Will optimisation break anything?",
+          "answer": "It can, if done carelessly — aggressive caching that serves stale prices, removed JavaScript that a tracking script depended on, or lazy loading applied to the hero image, which makes the main metric worse. We work in small reviewable changes, test on a preview deployment, keep analytics and conversion tracking under explicit verification, and roll back one change rather than a whole release when something misbehaves."
+        },
+        {
+          "question": "Why is our PageSpeed score high but the site still feels slow?",
+          "answer": "Because a lab score is a simulation on one synthetic device, while what your visitors feel is field data across their real phones, networks and cache states. A page can score well and still have a slow interaction response, a font that delays visible text, or a first visit that is far heavier than the repeat visit the test measured. We optimise for the field numbers and use lab tools only to diagnose."
+        },
+        {
+          "question": "Do we have to rebuild the site to make it fast?",
+          "answer": "Usually not. Most sites carry a handful of dominant problems — an unoptimised hero image, render-blocking third-party scripts, an uncached database query, a page-builder shipping code for components that are not on the page — and fixing those delivers most of the available gain. A rebuild becomes the honest recommendation when the platform itself makes the fixes impossible, and in that case we say so with the profiling data attached."
+        },
+        {
+          "question": "Does performance actually affect sales and search rankings?",
+          "answer": "It affects both, though not in a way that can be reduced to a promised percentage. Slow pages lose visitors before they see anything, and mobile users on constrained networks abandon quickest, so speed is closest to a revenue issue on exactly the traffic most businesses depend on. Core Web Vitals are also a ranking signal, but a secondary one — speed will not rescue weak content, it removes a handicap."
+        },
+        {
+          "question": "How does the database affect page speed?",
+          "answer": "More than most teams expect. A page that runs one query per item in a list, reads every column of a wide table, or repeats the same lookup on each request can spend most of its response time waiting on data before rendering begins. We profile the actual queries behind slow templates and fix them with narrower selects, proper indexes, aggregate SQL and a caching layer — work we have done on our own production database, where it reduced both latency and data transfer."
+        },
+        {
+          "question": "What about third-party scripts we cannot remove?",
+          "answer": "Chat widgets, ad pixels, review platforms and tag managers are frequently the single largest cost on the main thread, and they belong to teams who are not measuring your INP. Where a script cannot be removed for business reasons, we defer it, load it on interaction, load it only on the pages that need it, or move what we can server-side. We also quantify each one so the decision to keep it is made with its price visible."
+        },
+        {
+          "question": "How long does the work take and when do we see results?",
+          "answer": "The audit and profiling phase typically takes days rather than weeks, and the first high-impact fixes usually ship shortly after. Lab measurements confirm improvements immediately, but field data updates on a rolling window, so the numbers Google reports move over several weeks — anyone showing you a corrected field score the day after deployment is showing you a lab test."
+        },
+        {
+          "question": "Will the site stay fast after you finish?",
+          "answer": "Only if regressions are made visible, which is why we leave performance budgets, monitoring and a documented baseline behind. Sites usually slow down again gradually: a new marketing tag, an uncompressed banner, a component that pulls in a heavy library. Catching that in a deploy check costs minutes; discovering it months later costs another engagement."
+        },
+        {
+          "question": "What access do you need to do this?",
+          "answer": "Analytics and Search Console for field data, a staging or preview environment for changes, repository access if we are implementing rather than advising, and someone who can answer why a particular script is on the page. Read access to the database or query logs is extremely useful when server response time is the bottleneck, and we can work with masked or non-production data for that."
+        }
+      ],
+      "technologies": [
+        { "name": "PageSpeed Insights", "icon": "pagespeed" },
+        { "name": "Lighthouse", "icon": "lighthouse" },
+        { "name": "Google Search Console", "icon": "googlesearchconsole" },
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "Vercel", "icon": "vercel" },
+        { "name": "Cloudflare", "icon": "cloudflare" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Google Analytics 4", "icon": "ga4" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Performans Optimizasyonu",
+    "shortDescription": "Siteyi puan tablosunda değil, gerçek kullanıcıda hızlandırmak: önce saha verisi, sonra LCP, INP ve CLS'i gerçekten hareket ettiren müdahaleler — görseller, fontlar, JavaScript, önbellek ve yavaş sayfanın arkasına saklanan veritabanı sorguları.",
+    "fullDescription": "Performans işi, ölçümle değil puanla başladığında yanlış yere gider. Biz gerçek ziyaretçilerden gelen saha verisiyle başlarız: hangi sayfa, hangi cihaz, hangi bağlantı. Ardından bunu laboratuvar testleriyle karşılaştırırız; çünkü masaüstünde iyi puan alan bir site, orta segment bir Android telefonda mobil veriyle hâlâ acı verici olabilir ve Türkiye'de trafiğin büyük kısmı tam olarak orada. Sonrası genel tavsiye değil, spesifik iş: en büyük öğeyi ne geciktiriyor, etkileşimi ne bloke ediyor, düzeni ne kaydırıyor ve gecikmenin ne kadarı aslında yavaş bir veritabanı sorgusu ya da önbelleğe alınmamış bir yanıt. Bunu kendi platformumuzda da yaşadık: JavaScript yüklenene kadar ekranın üst kısmını görünmez bırakan istemci tarafı hidrasyon sorununu tespit edip düzelttik. Derinlemesine çalışma Web Sitesi Hız Optimizasyonu, Core Web Vitals Optimizasyonu ve Sunucu Optimizasyonu sayfalarında sürüyor.",
+    "features": [
+      "Gerçek kullanıcı saha verisinin cihaz, bağlantı ve sayfa şablonuna göre ayrıştırılması",
+      "İşlemci ve ağın kısıtlandığı laboratuvar profillemesiyle kullanıcının yaşadığı deneyimin taklidi",
+      "LCP çalışması: sunucu yanıt süresi, render'ı bloke eden kaynaklar, görsel önceliklendirme ve ön yükleme",
+      "INP çalışması: uzun görevler, hidrasyon maliyeti, üçüncü taraf scriptler ve ana iş parçacığı yükü",
+      "CLS çalışması: görsel, reklam ve gömülü içerik için ayrılmış alan, font geçiş davranışı",
+      "Görsel ve font stratejisi: modern formatlar, doğru boyutlandırma, alt küme ve kendi sunucunuzdan servis",
+      "CDN, sunucu ve uygulama katmanlarında önbellek tasarımı ve bilinçli geçersiz kılma kurgusu",
+      "Veritabanı ve API profillemesi; çünkü yavaş sayfaların çoğu aslında ön yüz kılığına girmiş yavaş sorgudur"
+    ],
+    "benefits": [
+      "İyileşme laboratuvar puanıyla değil, gerçek ziyaretçi verisiyle kanıtlanır",
+      "E-ticaret trafiğinin gerçekte bulunduğu orta segment telefonlarda belirgin hızlanma",
+      "Yüklenirken bozuk görünen sayfalar yüzünden kaybedilen oturumların azalması",
+      "Doğru önbellekleme sayesinde altyapı ve veri transferi maliyetinde düşüş",
+      "Her şeyi birden değil, en büyük darboğazı önce çözen önceliklendirilmiş liste",
+      "Belgelenmiş bir başlangıç ölçümü: bir sonraki yavaşlama görünmez değil, fark edilir olur"
+    ],
+    "metaTitle": "Web Sitesi Performans Optimizasyonu | PakSoft",
+    "metaDescription": "Önce ölçüm, sonra müdahale: saha verisi, Core Web Vitals, önbellek, görseller ve yavaş sorgular. Sitenizin performans denetimi için hemen bizimle görüşün.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Gerçek Kullanıcıdan Başlangıç Ölçümü",
+          "description": "Gerçek ziyaretçilerin yaşadığı Core Web Vitals değerlerini toplar; sayfa şablonu, cihaz sınıfı, ülke ve bağlantı tipine göre ayrıştırır, analitik ve Search Console verisiyle karşılaştırırız. Bu adım en sık atlanan adımdır ve atlanması yüzünden ekipler haftalarca, önemli kullanıcı kitlesi için zaten hızlı olan bir sayfayı optimize eder."
+        },
+        {
+          "step": 2,
+          "title": "Laboratuvarda Yeniden Üretme ve Profilleme",
+          "description": "Hangi şablonların sorunlu olduğunu bildikten sonra, geliştirici bilgisayarını değil orta segment bir Android telefonu andıran kısıtlı işlemci ve ağ koşullarında sorunu yeniden üretiriz. Şelale analizi, uzun görev izleri ve sunucu zamanlaması gecikmenin ne kadarının ağdan, ne kadarının ana iş parçacığındaki işten ve ne kadarının daha ilk bayt gönderilmeden önce oluştuğunu gösterir."
+        },
+        {
+          "step": 3,
+          "title": "Önce Sunucu ve Veri Katmanı",
+          "description": "Sunucu yanıt vermesi bir saniye sürüyorsa hiçbir görsel sıkıştırma sayfayı kurtarmaz; bu yüzden önce yukarıya bakarız: yanıt süresi, render stratejisi, önbellek isabet oranı ve sayfanın arkasındaki sorgular. Kendi platformumuzda tam tablo okumalarını dar projeksiyonlarla değiştirmek, kayıtları toplu eklemek ve satır satır gidip gelen sorguları tek bir toplu SQL'e taşımak hem yanıt süresini hem de veri transferini belirgin şekilde düşürdü."
+        },
+        {
+          "step": 4,
+          "title": "Ön Yüz Yükü ve Render",
+          "description": "Sonraki hedef tarayıcının indirmek ve çalıştırmak zorunda kaldığı her şeydir: hiç kullanılmadığı halde gönderilen JavaScript, etkileşimi bloke eden hidrasyon, metni geciktiren fontlar ve yerleştiği kutudan çok daha büyük görseller. Ekranın üst kısmındaki içerik sunucu yanıtıyla birlikte görünmeli, istemci paketi bitince belirmemelidir; bu hatayı üretimde bulup düzelttik."
+        },
+        {
+          "step": 5,
+          "title": "Önbellek ve Geçersiz Kılma Tasarımı",
+          "description": "Neyin CDN kenarında, neyin sunucu veya uygulama önbelleğinde tutulacağını, neyin statik olarak yeniden üretilebileceğini ve çoğu projede atlanan kısmı — içerik değiştiğinde her katmanın tam olarak nasıl temizleneceğini — tanımlarız. Geçersiz kılma stratejisi olmayan önbellek, web mühendisliğinin ikinci en kötü sonucunu üretir: yanlış veriyi çok hızlı gösteren sayfalar."
+        },
+        {
+          "step": 6,
+          "title": "Doğrulama, Belgeleme ve İzleme",
+          "description": "Yayına aldıktan sonra saha verisinin yetişmesini bekleriz; çünkü gerçek kullanıcı metrikleri dakikalarla değil haftalarla hareket eder. Ardından başlangıç ölçümüyle karşılaştırıp neyin değiştiğini ve neyin değişmediğini raporlarız. Geriye performans bütçeleri ve izleme bırakırız; böylece bir sonraki gerileme üç ay sonra sıralama düşüşüyle değil, o günkü yayında fark edilir."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Yavaş bir site gerçekçi olarak ne kadar hızlanabilir?",
+          "answer": "Bu, yavaşlığın kaynağına bağlıdır ve profilleme yapmadan rakam vermeyiz. Sunucusu bir saniyenin üzerinde yanıt veren, megabaytlarca kullanılmayan JavaScript gönderen ve sıkıştırılmamış görsel servis eden bir sitede genelde büyük ve bariz kazanımlar vardır; zaten iyi kurgulanmış bir sitede ise iyileşme sınırlı kalabilir ve bunu iş yaratmak için gizlemeyiz. Taahhüt edebileceğimiz şey ölçülmüş bir başlangıç, önceliklendirilmiş bir liste ve gerçek kullanıcıdan alınmış dürüst öncesi-sonrası verisidir."
+        },
+        {
+          "question": "Optimizasyon bir şeyleri bozar mı?",
+          "answer": "Dikkatsiz yapılırsa bozabilir: eski fiyatı gösteren agresif önbellek, bir takip scriptinin bağlı olduğu JavaScript'in kaldırılması ya da ana görsele uygulanan tembel yükleme ki bu doğrudan LCP'yi kötüleştirir. Bu yüzden küçük ve gözden geçirilebilir değişikliklerle çalışır, önizleme ortamında test eder, analitik ve dönüşüm takibini ayrıca doğrular ve bir şey ters gittiğinde tüm sürümü değil yalnızca o değişikliği geri alırız."
+        },
+        {
+          "question": "PageSpeed puanımız yüksek ama site yine de yavaş hissettiriyor, neden?",
+          "answer": "Çünkü laboratuvar puanı tek bir sanal cihazda yapılan bir simülasyondur; ziyaretçinin hissettiği ise kendi telefonu, kendi şebekesi ve kendi önbellek durumuyla oluşan saha verisidir. Bir sayfa yüksek puan alırken etkileşim yanıtı yavaş olabilir, font metni geciktiriyor olabilir ya da testin ölçtüğü tekrar ziyaretin aksine ilk ziyaret çok daha ağır olabilir. Biz saha verisine göre optimize ederiz, laboratuvar araçlarını yalnızca teşhis için kullanırız."
+        },
+        {
+          "question": "Hızlanmak için siteyi baştan yazmak gerekir mi?",
+          "answer": "Genellikle hayır. Çoğu sitede baskın birkaç sorun vardır: optimize edilmemiş bir kapak görseli, render'ı bloke eden üçüncü taraf scriptler, önbelleğe alınmamış bir veritabanı sorgusu, sayfada bulunmayan bileşenlerin kodunu bile gönderen bir sayfa kurucu eklenti. Bunları düzeltmek kazanımın büyük kısmını verir. Yeniden yazım, ancak platformun kendisi bu düzeltmeleri imkânsız kıldığında dürüst öneri olur ve o zaman da profil verisini ekleyerek söyleriz."
+        },
+        {
+          "question": "Hız gerçekten satışa ve SEO'ya etki ediyor mu?",
+          "answer": "İkisine de etki eder, ama sözü verilebilir bir yüzdeye indirgenemez. Yavaş sayfalar ziyaretçiyi daha içeriği görmeden kaybeder ve mobil şebekedeki kullanıcılar en hızlı vazgeçenlerdir; Türkiye'de trafiğin ağırlıklı olarak mobil olduğu düşünülürse hız doğrudan bir ciro meselesidir. Core Web Vitals aynı zamanda bir sıralama sinyalidir ancak ikincil bir sinyaldir: hız zayıf içeriği kurtarmaz, yalnızca bir engeli ortadan kaldırır."
+        },
+        {
+          "question": "Sunucumuz yurt dışında; barındırmayı Türkiye'ye taşımak hızlandırır mı?",
+          "answer": "Coğrafi mesafe ilk bayt süresine ölçülebilir şekilde etki eder, ancak taşınma tek başına sihir değildir. Statik içerik ve görseller CDN üzerinden zaten kullanıcıya yakın bir noktadan servis edilebilir; asıl fark, önbelleğe alınamayan dinamik istekler ile uygulama ve veritabanı arasındaki gidiş-gelişlerde ortaya çıkar. Uygulama sunucusu ile veritabanının aynı bölgede olması genellikle ülkeyi değiştirmekten daha önemlidir; kararı ölçtükten sonra veriyle veririz."
+        },
+        {
+          "question": "Veritabanı sayfa hızını nasıl etkiliyor?",
+          "answer": "Çoğu ekibin beklediğinden çok daha fazla. Listedeki her öğe için ayrı sorgu çalıştıran, geniş bir tablonun tüm sütunlarını okuyan ya da aynı sorguyu her istekte tekrarlayan bir sayfa, render başlamadan önce yanıt süresinin büyük kısmını veri beklemekle geçirir. Yavaş şablonların arkasındaki gerçek sorguları profilleyip dar seçimler, doğru indeksler, toplu SQL ve önbellek katmanıyla düzeltiriz; bu işi kendi üretim veritabanımızda da yaptık ve hem gecikme hem veri transferi düştü."
+        },
+        {
+          "question": "Kaldıramayacağımız üçüncü taraf scriptler için ne yapıyorsunuz?",
+          "answer": "Canlı destek widget'ları, reklam pikselleri, yorum platformları ve etiket yöneticileri çoğu zaman ana iş parçacığındaki en büyük tek maliyettir ve bu scriptleri yazan ekipler sizin INP değerinizi ölçmüyor. İş gereği kaldırılamayan bir scripti erteler, kullanıcı etkileşiminde yükler, yalnızca ihtiyaç duyulan sayfalarda çalıştırır veya mümkün olanı sunucu tarafına taşırız. Ayrıca her birinin maliyetini ölçeriz ki tutma kararı fiyatı görünürken verilsin."
+        },
+        {
+          "question": "Çalışma ne kadar sürer, sonucu ne zaman görürüz?",
+          "answer": "Denetim ve profilleme aşaması genellikle haftalar değil günler sürer ve yüksek etkili ilk düzeltmeler kısa süre sonra yayına alınır. Laboratuvar ölçümleri iyileşmeyi anında doğrular, ancak saha verisi kayan bir pencerede güncellendiği için Google'ın raporladığı değerler birkaç hafta içinde hareket eder. Yayından bir gün sonra düzelmiş bir saha skoru gösteren biri size aslında laboratuvar testi gösteriyordur."
+        },
+        {
+          "question": "Siz bitirdikten sonra site hızlı kalır mı?",
+          "answer": "Yalnızca gerilemeler görünür kılınırsa. Bu yüzden geriye performans bütçeleri, izleme ve belgelenmiş bir başlangıç ölçümü bırakırız. Siteler genellikle yavaş yavaş ağırlaşır: yeni bir pazarlama etiketi, sıkıştırılmamış bir kampanya görseli, ağır bir kütüphaneyi de beraberinde getiren bir bileşen. Bunu yayın kontrolünde yakalamak dakikalar, aylar sonra fark etmek yeni bir proje maliyetindedir."
+        },
+        {
+          "question": "Bu iş için bizden ne gerekiyor?",
+          "answer": "Saha verisi için analitik ve Search Console erişimi, değişiklikler için bir test veya önizleme ortamı, uygulamayı biz yapacaksak kod deposu erişimi ve sayfadaki belirli bir scriptin neden orada olduğunu yanıtlayabilecek bir muhatap. Sunucu yanıt süresi darboğazsa veritabanına veya sorgu kayıtlarına okuma erişimi çok değerlidir; bunun için maskelenmiş ya da üretim dışı veriyle de çalışabiliriz."
+        }
+      ],
+      "technologies": [
+        { "name": "PageSpeed Insights", "icon": "pagespeed" },
+        { "name": "Lighthouse", "icon": "lighthouse" },
+        { "name": "Google Search Console", "icon": "googlesearchconsole" },
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "Vercel", "icon": "vercel" },
+        { "name": "Cloudflare", "icon": "cloudflare" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Google Analytics 4", "icon": "ga4" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Performance-Optimierung",
+    "shortDescription": "Messbar schnellere Seiten für Ihre realen Nutzer: zuerst Felddaten, dann die konkreten Maßnahmen, die LCP, INP und CLS bewegen — Bilder, Schriften, JavaScript, Caching und die Datenbankabfragen hinter einer langsamen Seite.",
+    "fullDescription": "Performance-Arbeit läuft schief, wenn sie mit einem Score beginnt statt mit einer Messung. Wir starten mit Felddaten echter Besucher: welche Seiten, welche Geräte, welche Verbindungen. Anschließend vergleichen wir sie mit Labortests, denn eine Seite, die auf einem schnellen Desktop gut abschneidet, kann auf einem Mittelklasse-Android im Mobilfunknetz weiterhin unbrauchbar wirken. Danach wird die Arbeit konkret: Was verzögert das größte Element, was blockiert die Interaktion, was verschiebt das Layout — und welcher Anteil der Verzögerung ist in Wahrheit eine langsame Datenbankabfrage oder eine nicht gecachte Antwort statt Frontend-Gewicht. Genau das haben wir auf unserer eigenen Plattform behoben, einschließlich einer Client-Hydration, die Inhalte oberhalb der Falz erst nach dem JavaScript sichtbar machte. Vertiefend: Website-Speed-Optimierung, Core-Web-Vitals-Optimierung und Server-Optimierung.",
+    "features": [
+      "Auswertung von Felddaten echter Nutzer, segmentiert nach Gerät, Verbindung und Seitentyp",
+      "Laborprofiling mit gedrosselter CPU und Netzwerkverbindung statt Entwickler-Hardware",
+      "LCP: Serverantwortzeit, renderblockierende Ressourcen, Bildpriorisierung und Preloading",
+      "INP: lange Tasks, Hydration-Kosten, Drittanbieter-Skripte und Last auf dem Main Thread",
+      "CLS: reservierte Abmessungen für Bilder, Werbung und Embeds sowie Verhalten beim Font-Swap",
+      "Bild- und Schriftstrategie: moderne Formate, korrekte Größen, Subsetting und Self-Hosting",
+      "Caching-Konzept über CDN, Server und Applikation mit definierter Invalidierung",
+      "Profiling von Datenbank und APIs, denn viele langsame Seiten sind langsame Abfragen im Frontend-Kostüm"
+    ],
+    "benefits": [
+      "Verbesserungen belegt an realen Nutzerdaten statt an einem Laborwert",
+      "Schnellere Seiten auf Mittelklasse-Smartphones, wo der Großteil des Traffics liegt",
+      "Weniger Abbrüche durch Seiten, die während des Ladens defekt wirken",
+      "Geringere Infrastruktur- und Transferkosten als Nebeneffekt sauberen Cachings",
+      "Priorisierte Reihenfolge: zuerst der größte Engpass, nicht alles gleichzeitig",
+      "Dokumentierte Baseline, damit die nächste Verschlechterung sofort auffällt"
+    ],
+    "metaTitle": "Website-Performance-Optimierung | PakSoft",
+    "metaDescription": "Erst messen, dann optimieren: Felddaten, Core Web Vitals, Caching, Bilder und langsame Abfragen mit dokumentierter Baseline. Jetzt Performance-Audit anfragen.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Baseline aus realen Nutzerdaten",
+          "description": "Wir erheben Felddaten — Core Web Vitals so, wie echte Besucher sie erleben — und schlüsseln sie nach Seitentyp, Geräteklasse, Land und Verbindungsart auf, abgeglichen mit Analytics und der Search Console. Dieser Schritt wird am häufigsten übersprungen, und genau deshalb optimieren Teams wochenlang eine Seite, die für die relevante Zielgruppe längst schnell war."
+        },
+        {
+          "step": 2,
+          "title": "Reproduktion im Labor und Profiling",
+          "description": "Sobald die problematischen Seitentypen feststehen, reproduzieren wir das Verhalten unter gedrosselter CPU und Netzwerkverbindung, die einem Mittelklasse-Android entsprechen und nicht dem Entwicklerlaptop. Wasserfallanalyse, Long-Task-Traces und Server-Timing zeigen, welcher Anteil der Verzögerung auf das Netzwerk, welcher auf den Main Thread und welcher auf die Zeit vor dem ersten gesendeten Byte entfällt."
+        },
+        {
+          "step": 3,
+          "title": "Zuerst Server und Datenschicht",
+          "description": "Wenn der Server eine Sekunde für die Antwort braucht, rettet keine Bildkomprimierung die Seite; deshalb schauen wir zuerst nach oben: Antwortzeit, Rendering-Strategie, Cache-Trefferquote und die Abfragen hinter der Seite. Auf unserer eigenen Plattform senkte der Wechsel von Volltabellen-Lesevorgängen zu schmalen Projektionen, gebündelten Inserts und aggregierendem SQL sowohl Antwortzeit als auch Datentransfer deutlich."
+        },
+        {
+          "step": 4,
+          "title": "Frontend-Payload und Rendering",
+          "description": "Anschließend nehmen wir uns vor, was der Browser laden und ausführen muss: ausgeliefertes, aber nie genutztes JavaScript, Hydration, die Interaktion blockiert, Schriften, die Text verzögern, und Bilder, die größer sind als ihr Container. Inhalte oberhalb der Falz sollten bereits aus der Serverantwort sichtbar sein und nicht erst nach dem Client-Bundle erscheinen — ein Fehlerbild, das wir in Produktion gefunden und behoben haben."
+        },
+        {
+          "step": 5,
+          "title": "Caching- und Invalidierungskonzept",
+          "description": "Wir legen fest, was am CDN-Edge, was im Server- oder Applikations-Cache liegt, was statisch regeneriert werden kann — und den meist übersprungenen Teil: wie jede Ebene bei Inhaltsänderungen exakt invalidiert wird. Caching ohne bewusste Invalidierung erzeugt das zweitschlechteste Ergebnis im Web-Engineering: schnelle Seiten mit falschen Daten."
+        },
+        {
+          "step": 6,
+          "title": "Verifikation, Dokumentation und Monitoring",
+          "description": "Nach dem Rollout warten wir, bis die Felddaten nachziehen, denn Real-User-Metriken bewegen sich über Wochen statt Minuten, und vergleichen dann gegen die Baseline. Zurück bleiben Performance-Budgets und Monitoring, damit die nächste Verschlechterung im Deployment auffällt und nicht drei Monate später im Ranking."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie schnell kann eine langsame Seite realistisch werden?",
+          "answer": "Das hängt von der Ursache ab, und wir nennen vor dem Profiling keine Zahl. Eine Seite, deren Server über eine Sekunde benötigt, megabyteweise ungenutztes JavaScript ausliefert und unkomprimierte Bilder ausspielt, hat meist große und offensichtliche Potenziale; eine bereits sauber gebaute Seite verbessert sich womöglich nur am Rand, und das sagen wir Ihnen, statt ein Projekt zu verkaufen. Zusagen können wir eine gemessene Baseline, eine priorisierte Liste und ehrliche Vorher-Nachher-Werte aus Felddaten."
+        },
+        {
+          "question": "Kann durch die Optimierung etwas kaputtgehen?",
+          "answer": "Ja, wenn unsauber gearbeitet wird — zu aggressives Caching, das veraltete Preise ausliefert, entferntes JavaScript, von dem ein Tracking-Skript abhing, oder Lazy Loading auf dem Hero-Bild, was die Hauptmetrik verschlechtert. Wir arbeiten in kleinen, prüfbaren Änderungen, testen in einer Preview-Umgebung, verifizieren Analytics und Conversion-Tracking ausdrücklich und rollen im Zweifel eine einzelne Änderung zurück statt eines ganzen Releases."
+        },
+        {
+          "question": "Warum ist unser PageSpeed-Wert gut, die Seite fühlt sich aber langsam an?",
+          "answer": "Weil ein Laborwert eine Simulation auf einem synthetischen Gerät ist, während Ihre Besucher Felddaten auf echten Telefonen, Netzen und Cache-Zuständen erleben. Eine Seite kann gut abschneiden und trotzdem träge auf Eingaben reagieren, Text durch Schriftladung verzögern oder beim Erstbesuch deutlich schwerer sein als beim gemessenen Wiederbesuch. Wir optimieren auf die Feldwerte und nutzen Labortools ausschließlich zur Diagnose."
+        },
+        {
+          "question": "Müssen wir die Website neu bauen, damit sie schnell wird?",
+          "answer": "Meistens nicht. Die meisten Seiten haben wenige dominante Probleme — ein unoptimiertes Hero-Bild, renderblockierende Drittanbieter-Skripte, eine ungecachte Datenbankabfrage, ein Page-Builder, der Code für gar nicht vorhandene Komponenten ausliefert — und deren Behebung bringt den Großteil des Potenzials. Ein Neubau ist die ehrliche Empfehlung erst dann, wenn die Plattform selbst die Korrekturen unmöglich macht; in dem Fall legen wir die Profiling-Daten dazu."
+        },
+        {
+          "question": "Wirkt sich Performance wirklich auf Umsatz und Rankings aus?",
+          "answer": "Auf beides, aber nicht in Form eines versprochenen Prozentwerts. Langsame Seiten verlieren Besucher, bevor überhaupt etwas sichtbar ist, und Nutzer in Mobilfunknetzen brechen am schnellsten ab. Core Web Vitals sind zudem ein Rankingsignal, allerdings ein nachrangiges: Geschwindigkeit rettet schwache Inhalte nicht, sie beseitigt lediglich einen Nachteil."
+        },
+        {
+          "question": "Wie wirkt sich die Datenbank auf die Seitengeschwindigkeit aus?",
+          "answer": "Stärker als die meisten Teams erwarten. Eine Seite, die pro Listeneintrag eine Abfrage ausführt, alle Spalten einer breiten Tabelle liest oder denselben Lookup bei jedem Request wiederholt, verbringt den Großteil ihrer Antwortzeit mit Warten, bevor überhaupt gerendert wird. Wir profilieren die tatsächlichen Abfragen hinter langsamen Seitentypen und beheben sie mit schmaleren Selects, passenden Indizes, aggregierendem SQL und einer Cache-Schicht — Arbeit, die wir auf unserer eigenen Produktivdatenbank durchgeführt haben."
+        },
+        {
+          "question": "Was ist mit Drittanbieter-Skripten, die wir nicht entfernen dürfen?",
+          "answer": "Chat-Widgets, Werbepixel, Bewertungsplattformen und Tag-Manager sind häufig der größte Einzelposten auf dem Main Thread, und die verantwortlichen Anbieter messen Ihr INP nicht. Wo ein Skript aus geschäftlichen Gründen bleiben muss, verzögern wir es, laden es erst bei Interaktion, beschränken es auf die Seiten, die es brauchen, oder verlagern serverseitig, was möglich ist. Zusätzlich beziffern wir die Kosten jedes Skripts, damit die Entscheidung mit sichtbarem Preis fällt."
+        },
+        {
+          "question": "Wie lange dauert das und wann sehen wir Ergebnisse?",
+          "answer": "Audit und Profiling dauern in der Regel Tage statt Wochen, und die ersten wirksamen Korrekturen gehen kurz darauf live. Labormessungen bestätigen Verbesserungen sofort, Felddaten werden jedoch in einem rollierenden Zeitfenster aktualisiert, sodass die von Google berichteten Werte sich über mehrere Wochen bewegen. Wer Ihnen einen Tag nach dem Rollout korrigierte Feldwerte zeigt, zeigt Ihnen einen Labortest."
+        },
+        {
+          "question": "Bleibt die Seite nach dem Projekt schnell?",
+          "answer": "Nur wenn Verschlechterungen sichtbar werden, deshalb hinterlassen wir Performance-Budgets, Monitoring und eine dokumentierte Baseline. Seiten werden meist schleichend langsamer: ein neues Marketing-Tag, ein unkomprimiertes Banner, eine Komponente, die eine schwere Bibliothek mitzieht. Das im Deployment-Check zu bemerken kostet Minuten, es Monate später zu entdecken kostet ein weiteres Projekt."
+        },
+        {
+          "question": "Welche Zugänge benötigen Sie dafür?",
+          "answer": "Analytics und Search Console für Felddaten, eine Staging- oder Preview-Umgebung für Änderungen, Repository-Zugriff, falls wir umsetzen statt nur beraten, sowie eine Ansprechperson, die erklären kann, warum ein bestimmtes Skript eingebunden ist. Lesezugriff auf Datenbank oder Query-Logs ist sehr hilfreich, wenn die Serverantwortzeit der Engpass ist; dafür genügen maskierte oder nicht-produktive Daten."
+        }
+      ],
+      "technologies": [
+        { "name": "PageSpeed Insights", "icon": "pagespeed" },
+        { "name": "Lighthouse", "icon": "lighthouse" },
+        { "name": "Google Search Console", "icon": "googlesearchconsole" },
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "Vercel", "icon": "vercel" },
+        { "name": "Cloudflare", "icon": "cloudflare" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Google Analytics 4", "icon": "ga4" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تحسين الأداء",
+    "shortDescription": "جعل الموقع أسرع فعلياً لمن يستخدمه لا لأداة قياس: نبدأ ببيانات المستخدمين الحقيقيين، ثم نعالج ما يحرّك LCP و INP و CLS تحديداً — الصور والخطوط وJavaScript وطبقات التخزين المؤقت والاستعلامات البطيئة خلف الصفحة.",
+    "fullDescription": "يخطئ العمل على الأداء حين يبدأ من درجة تقييم لا من قياس. نبدأ ببيانات ميدانية من زوار حقيقيين: أي صفحات، وأي أجهزة، وأي شبكات. ثم نقارنها باختبارات المختبر، لأن موقعاً يحقق درجة ممتازة على حاسب سريع قد يبقى مرهقاً على هاتف Android متوسط عبر بيانات الجوال. بعدها يصبح العمل محدداً لا عاماً: ما الذي يؤخّر أكبر عنصر مرئي، وما الذي يعطّل التفاعل، وما الذي يزيح التخطيط، وكم من هذا التأخير سببه فعلياً استعلام بطيء في قاعدة البيانات أو استجابة غير مخزّنة مؤقتاً لا ثِقل الواجهة. عالجنا هذا في منصتنا الخاصة، بما في ذلك مشكلة hydration جعلت محتوى أعلى الصفحة غير مرئي حتى وصول JavaScript. ويتعمّق العمل في صفحات تسريع المواقع، وتحسين Core Web Vitals، وتحسين الخوادم.",
+    "features": [
+      "تحليل بيانات ميدانية من مستخدمين حقيقيين مقسّمة حسب الجهاز والشبكة ونوع الصفحة",
+      "قياس مخبري بتقييد المعالج والشبكة لمحاكاة ما يعيشه الزائر فعلاً لا ما يراه المطوّر",
+      "معالجة LCP: زمن استجابة الخادم، والموارد المعطِّلة للعرض، وأولوية الصور والتحميل المسبق",
+      "معالجة INP: المهام الطويلة، وكلفة hydration، ونصوص الطرف الثالث، وازدحام الخيط الرئيسي",
+      "معالجة CLS: حجز أبعاد الصور والإعلانات والعناصر المضمّنة، وضبط سلوك تبديل الخطوط",
+      "استراتيجية للصور والخطوط: صيغ حديثة، وأحجام صحيحة، وتقليم المحارف، والاستضافة الذاتية",
+      "تصميم التخزين المؤقت عبر CDN والخادم والتطبيق مع خطة واضحة لإبطال الذاكرة المؤقتة",
+      "قياس أداء قاعدة البيانات وواجهات API، فكثير من الصفحات البطيئة هي استعلامات بطيئة بثوب واجهة"
+    ],
+    "benefits": [
+      "تحسّن مُثبت ببيانات الزوار الحقيقيين لا بدرجة اختبار مخبري",
+      "سرعة أعلى على الهواتف متوسطة الفئة حيث يوجد معظم زوار المتاجر فعلياً",
+      "انخفاض الجلسات المهجورة بسبب صفحات تبدو معطّلة أثناء التحميل",
+      "خفض كلفة البنية التحتية ونقل البيانات كأثر جانبي للتخزين المؤقت الصحيح",
+      "قائمة مرتّبة تعالج أكبر اختناق أولاً بدل معالجة كل شيء دفعة واحدة",
+      "خط أساس موثّق يجعل أي تراجع لاحق مرئياً بدل أن يمرّ دون ملاحظة"
+    ],
+    "metaTitle": "تحسين أداء المواقع وسرعتها | PakSoft",
+    "metaDescription": "نقيس أولاً ثم نعالج: بيانات ميدانية، Core Web Vitals، تخزين مؤقت، صور واستعلامات بطيئة، مع خط أساس موثّق وأرقام قبل وبعد. اطلبوا تدقيق أداء لموقعكم الآن.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "خط أساس من المستخدمين الحقيقيين",
+          "description": "نجمع البيانات الميدانية، أي قيم Core Web Vitals كما يعيشها الزوار فعلاً، ونصنّفها حسب نوع الصفحة وفئة الجهاز والدولة ونوع الاتصال، ثم نطابقها مع التحليلات و Search Console. هذه الخطوة هي الأكثر تخطّياً، وتخطّيها هو سبب إنفاق فرق كاملة أسابيع في تحسين صفحة كانت أصلاً سريعة لدى الجمهور المهم."
+        },
+        {
+          "step": 2,
+          "title": "إعادة الإنتاج المخبري والتحليل",
+          "description": "بعد تحديد الصفحات المتضررة نعيد إنتاج المشكلة تحت تقييد للمعالج والشبكة يشبه هاتف Android متوسط الفئة لا حاسب مطوّر. يكشف تحليل مخطط التحميل، وتتبّع المهام الطويلة، وتوقيت الخادم كم من التأخير سببه الشبكة، وكم سببه العمل على الخيط الرئيسي، وكم منه وقع قبل إرسال أول بايت أصلاً."
+        },
+        {
+          "step": 3,
+          "title": "الخادم وطبقة البيانات أولاً",
+          "description": "إذا استغرق الخادم ثانية كاملة للرد فلن ينقذ الصفحة أي ضغط للصور، لذلك ننظر إلى الأعلى أولاً: زمن الاستجابة، واستراتيجية العرض، ونسبة إصابة الذاكرة المؤقتة، والاستعلامات خلف الصفحة. في منصتنا الخاصة، أدى استبدال قراءة الجداول كاملة بإسقاطات ضيّقة، وتجميع عمليات الإدخال دفعةً واحدة، ونقل الرحلات المتكررة لكل صف إلى استعلام SQL تجميعي، إلى خفض واضح في زمن الاستجابة وفي حجم البيانات المنقولة."
+        },
+        {
+          "step": 4,
+          "title": "حِمل الواجهة والعرض",
+          "description": "ثم نعالج ما يضطر المتصفح لتنزيله وتنفيذه: شيفرة JavaScript تُرسل ولا تُستخدم، وhydration تعطّل التفاعل، وخطوط تؤخّر ظهور النص، وصور أكبر بكثير من المساحة التي ستظهر فيها. يجب أن يكون محتوى أعلى الصفحة مرئياً من استجابة الخادم نفسها، لا أن يظهر بعد اكتمال حزمة العميل — وهو خلل واجهناه في الإنتاج وأصلحناه."
+        },
+        {
+          "step": 5,
+          "title": "تصميم التخزين المؤقت وإبطاله",
+          "description": "نحدد ما يمكن تخزينه على حافة الـ CDN، وما مكانه ذاكرة الخادم أو التطبيق، وما يمكن توليده ثابتاً وتحديثه دورياً، ثم الجزء الذي يُهمَل غالباً: كيف تُبطَل كل طبقة بدقة عند تغيّر المحتوى. التخزين المؤقت بلا خطة إبطال ينتج ثاني أسوأ نتيجة في هندسة الويب: صفحات سريعة تعرض بيانات خاطئة."
+        },
+        {
+          "step": 6,
+          "title": "التحقق والتوثيق والمراقبة",
+          "description": "بعد الإطلاق ننتظر لحاق البيانات الميدانية، لأن مؤشرات المستخدمين الحقيقيين تتحرك خلال أسابيع لا دقائق، ثم نقارنها بخط الأساس ونوضّح ما تحسّن وما لم يتحسّن. ونترك خلفنا ميزانيات أداء ومراقبة، حتى يُكتشف التراجع القادم عند الإصدار لا بعد ثلاثة أشهر عبر هبوط في الترتيب."
+        }
+      ],
+      "faq": [
+        {
+          "question": "كم يمكن أن يتسارع موقع بطيء واقعياً؟",
+          "answer": "يعتمد ذلك على سبب البطء، ولن نعطي رقماً قبل التحليل. الموقع الذي يستغرق خادمه أكثر من ثانية، ويرسل ميغابايتات من JavaScript غير المستخدم، ويقدّم صوراً غير مضغوطة، لديه عادةً مكاسب كبيرة وواضحة؛ أما الموقع المبني جيداً أصلاً فقد يتحسن على الهامش فقط، وسنقول ذلك بدل بيع مشروع. ما نلتزم به هو خط أساس مقيس، وقائمة أولويات، وأرقام صادقة قبل وبعد من بيانات المستخدمين."
+        },
+        {
+          "question": "هل قد يعطّل التحسين شيئاً في الموقع؟",
+          "answer": "نعم إن جرى بإهمال: تخزين مؤقت مبالغ فيه يعرض أسعاراً قديمة، أو حذف شيفرة كان نص تتبّع يعتمد عليها، أو تحميل كسول مطبّق على صورة الغلاف فيسوء المؤشر الأساسي بدل أن يتحسن. لذلك نعمل بتغييرات صغيرة قابلة للمراجعة، ونختبرها في بيئة معاينة، ونتحقق صراحةً من التحليلات وتتبّع التحويلات، ونتراجع عن تغيير واحد بعينه لا عن الإصدار كله عند أي خلل."
+        },
+        {
+          "question": "درجتنا في PageSpeed مرتفعة لكن الموقع يبدو بطيئاً، لماذا؟",
+          "answer": "لأن درجة المختبر محاكاة على جهاز افتراضي واحد، بينما ما يشعر به زوارك هو بيانات ميدانية على هواتفهم وشبكاتهم وحالات التخزين المؤقت لديهم. قد تحصل الصفحة على درجة جيدة بينما استجابتها للتفاعل بطيئة، أو الخط يؤخّر ظهور النص، أو الزيارة الأولى أثقل بكثير من الزيارة المتكررة التي قاسها الاختبار. نحن نحسّن وفق أرقام الميدان ونستخدم أدوات المختبر للتشخيص فقط."
+        },
+        {
+          "question": "هل نحتاج إعادة بناء الموقع كي يصبح سريعاً؟",
+          "answer": "غالباً لا. معظم المواقع تعاني من مشكلات قليلة مهيمنة: صورة غلاف غير محسّنة، ونصوص طرف ثالث تعطّل العرض، واستعلام غير مخزّن مؤقتاً، وإضافة بناء صفحات ترسل شيفرة مكوّنات غير موجودة أصلاً في الصفحة. معالجة هذه يحقق معظم المكسب المتاح. وتصبح إعادة البناء توصية صادقة فقط حين تجعل المنصة نفسها هذه الإصلاحات مستحيلة، وحينها نقولها مرفقة ببيانات القياس."
+        },
+        {
+          "question": "هل يؤثر الأداء فعلاً على المبيعات وترتيب البحث؟",
+          "answer": "يؤثر في الاثنين، لكن ليس بنسبة مئوية يمكن وعدكم بها. الصفحات البطيئة تفقد الزائر قبل أن يرى شيئاً، ومستخدمو شبكات الجوال هم الأسرع مغادرةً، ما يجعل السرعة مسألة إيراد على الشريحة التي يعتمد عليها معظم النشاط التجاري. كما أن Core Web Vitals إشارة ترتيب، لكنها إشارة ثانوية: السرعة لا تنقذ محتوىً ضعيفاً، بل ترفع عائقاً فقط."
+        },
+        {
+          "question": "خوادمنا بعيدة عن عملائنا في الخليج، هل نقلها يحلّ المشكلة؟",
+          "answer": "المسافة الجغرافية تؤثر بشكل قابل للقياس على زمن أول بايت، لكن النقل وحده ليس حلاً سحرياً. المحتوى الثابت والصور يمكن تقديمها من نقطة قريبة عبر CDN، والفارق الحقيقي يظهر في الطلبات الديناميكية غير القابلة للتخزين المؤقت وفي الرحلات المتكررة بين التطبيق وقاعدة البيانات. عادةً يكون وجود التطبيق وقاعدة البيانات في المنطقة نفسها أهم من تغيير الدولة، ونتخذ القرار بعد القياس لا قبله، مع مراعاة متطلبات إقامة البيانات لديكم."
+        },
+        {
+          "question": "كيف تؤثر قاعدة البيانات على سرعة الصفحة؟",
+          "answer": "أكثر مما تتوقع معظم الفرق. الصفحة التي تنفّذ استعلاماً لكل عنصر في قائمة، أو تقرأ كل أعمدة جدول عريض، أو تكرر الاستعلام نفسه مع كل طلب، تقضي معظم زمن استجابتها في انتظار البيانات قبل أن يبدأ العرض. نحلل الاستعلامات الفعلية خلف الصفحات البطيئة ونعالجها بإسقاطات أضيق وفهارس مناسبة واستعلامات تجميعية وطبقة تخزين مؤقت، وهو عمل نفّذناه على قاعدة بياناتنا الإنتاجية وخفّض زمن الاستجابة وحجم النقل معاً."
+        },
+        {
+          "question": "ماذا عن نصوص الطرف الثالث التي لا نستطيع إزالتها؟",
+          "answer": "أدوات الدردشة وبكسلات الإعلانات ومنصات التقييمات ومديرو الوسوم هي غالباً أكبر بند منفرد على الخيط الرئيسي، والفرق التي تكتبها لا تقيس مؤشر INP الخاص بكم. حين يتعذّر حذف نص لأسباب تجارية، نؤجّل تحميله، أو نحمّله عند أول تفاعل، أو نقصره على الصفحات التي تحتاجه، أو ننقل ما يمكن نقله إلى الخادم. ونقيس كلفة كل واحد منها ليكون قرار الإبقاء عليه مبنياً على ثمن مرئي."
+        },
+        {
+          "question": "كم يستغرق العمل ومتى نرى النتيجة؟",
+          "answer": "مرحلة التدقيق والتحليل تستغرق أياماً لا أسابيع عادةً، وتُطلق الإصلاحات الأعلى أثراً بعدها بوقت قصير. تؤكد قياسات المختبر التحسّن فوراً، لكن البيانات الميدانية تُحدَّث ضمن نافذة متحركة، فتتحرك الأرقام التي تعرضها Google خلال أسابيع. ومن يعرض عليكم درجة ميدانية مصحّحة بعد يوم من الإطلاق فهو في الحقيقة يعرض اختبار مختبر."
+        },
+        {
+          "question": "هل سيبقى الموقع سريعاً بعد انتهاء عملكم؟",
+          "answer": "فقط إذا صار التراجع مرئياً، ولهذا نترك ميزانيات أداء ومراقبة وخط أساس موثّقاً. المواقع تبطؤ تدريجياً في العادة: وسم تسويقي جديد، أو صورة حملة غير مضغوطة، أو مكوّن يجرّ معه مكتبة ثقيلة. اكتشاف ذلك في فحص الإصدار يكلّف دقائق، واكتشافه بعد أشهر يكلّف مشروعاً جديداً."
+        },
+        {
+          "question": "ما الصلاحيات التي تحتاجونها؟",
+          "answer": "التحليلات و Search Console للبيانات الميدانية، وبيئة اختبار أو معاينة لتطبيق التغييرات، وصلاحية على المستودع إن كنا سننفّذ لا نستشير فقط، وشخص يستطيع الإجابة عن سبب وجود نص معيّن في الصفحة. وصلاحية قراءة على قاعدة البيانات أو سجلات الاستعلامات مفيدة جداً حين يكون زمن استجابة الخادم هو الاختناق، ويمكننا العمل ببيانات مُقنّعة أو غير إنتاجية لهذا الغرض."
+        }
+      ],
+      "technologies": [
+        { "name": "PageSpeed Insights", "icon": "pagespeed" },
+        { "name": "Lighthouse", "icon": "lighthouse" },
+        { "name": "Google Search Console", "icon": "googlesearchconsole" },
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "Vercel", "icon": "vercel" },
+        { "name": "Cloudflare", "icon": "cloudflare" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Google Analytics 4", "icon": "ga4" }
+      ]
+    }
+  }
+}

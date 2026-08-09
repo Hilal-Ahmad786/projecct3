@@ -1,0 +1,451 @@
+{
+  "slug": "cloud-migration",
+  "en": {
+    "name": "Cloud Migration",
+    "shortDescription": "Moving web and SaaS workloads off shared hosting, a single VPS or ageing servers onto managed cloud platforms — with dependency mapping, a rehearsed data migration, low-downtime cutover and a costed before-and-after.",
+    "fullDescription": "Most migrations we take on are not datacentre exits. They are a web application that has outgrown shared hosting, a database on a single VPS whose backup has never been restored, or a PHP-era site that needs to become something maintainable. That is the work we do well: mapping what actually depends on what, choosing between rehost, replatform and refactor per component rather than for the whole estate, rehearsing the data migration until the rollback is boring, and cutting over with DNS, TLS and scheduled jobs handled on the same checklist. We run our own production workloads on Vercel with managed PostgreSQL on Neon and move schema and data through Prisma migrations, so the trade-offs we describe are ones we live with. Where a workload is cheaper or safer where it already is, we say so before you spend anything.",
+    "features": [
+      "Inventory and Dependency Mapping Before Anything Moves",
+      "Rehost, Replatform or Refactor Decided Per Workload",
+      "Database Migration with Rehearsed Restore and Rollback",
+      "Low-Downtime Cutover Covering DNS, TLS, Sessions and Cron",
+      "Side-by-Side Cost Model of the Current and Target Setup",
+      "Right-Sizing, Scaling Limits and Egress Cost Review",
+      "Infrastructure as Code and Reproducible Environments",
+      "Post-Migration Monitoring, Alerting and Verified Backups"
+    ],
+    "benefits": [
+      "A cutover date you can plan around, with a rollback that has been tested rather than assumed",
+      "A cost picture before you commit, including the line items that usually surprise people",
+      "Fewer moving parts to maintain once managed services replace hand-built servers",
+      "Deploys that stop being an event, because environments are reproducible",
+      "Backups you have actually restored from, not merely configured",
+      "An honest recommendation when part of your estate should stay exactly where it is"
+    ],
+    "metaTitle": "Cloud Migration for Web & SaaS Workloads | PakSoft",
+    "metaDescription": "Cloud migration done properly: dependency mapping, rehost or replatform, rehearsed data moves, low-downtime cutover and honest cost modelling. Book a review.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Discovery and Dependency Mapping",
+          "description": "We inventory what you run, what it talks to and what would break if it moved: services, cron jobs, file uploads, third-party callbacks, hard-coded addresses and the DNS records nobody remembers creating. The output is a dependency map plus a short, blunt list of the things that will actually make this migration difficult."
+        },
+        {
+          "step": 2,
+          "title": "Target Architecture and Cost Model",
+          "description": "We design the destination — managed database, application hosting, object storage, background jobs — and price it against your current bill, including the items people forget: egress, backups, log retention and non-production environments. Cloud is not automatically cheaper, and if the model says your current setup wins on cost, you get the numbers rather than a sales answer."
+        },
+        {
+          "step": 3,
+          "title": "Strategy Per Workload: Rehost, Replatform, Refactor",
+          "description": "Rehost is fastest and changes least; replatform swaps self-managed components such as your own database server for managed equivalents; refactor reshapes parts of the application to suit the platform. We decide per workload rather than for the estate as a whole, because paying for a refactor on a stable back-office tool is how migration budgets disappear."
+        },
+        {
+          "step": 4,
+          "title": "Data Migration Rehearsal and Rollback",
+          "description": "Schema and data move into the target with repeatable scripts — Prisma migrations where the stack allows — and we run the whole load against a copy first to measure how long the real cut will take. The rollback is written, timed and tested before a date is agreed, because a plan nobody has rehearsed is not a plan."
+        },
+        {
+          "step": 5,
+          "title": "Cutover: DNS, TLS and Traffic Switching",
+          "description": "We lower DNS TTLs in advance, issue and validate certificates on the new platform, run both environments in parallel where the data model allows, and switch traffic inside a defined window with writes frozen only for as long as strictly necessary. Sessions, webhooks, scheduled jobs and outbound mail are re-pointed as part of the same checklist rather than discovered afterwards."
+        },
+        {
+          "step": 6,
+          "title": "Post-Migration Tuning, Cost Review and Handover",
+          "description": "For the first weeks we watch error rates, latency, database connections and spend, then right-size instances and caching once real traffic has shown what the workload needs. We restore from a backup to prove it works, and hand over runbooks for deploys, rollbacks and incidents so your team can operate the platform without us."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Will our site go down during the migration?",
+          "answer": "For most web and SaaS workloads the visible interruption is minutes rather than hours, and close to zero for read-only traffic. We lower DNS TTLs in advance, run old and new in parallel, and keep the write freeze as short as the data move genuinely requires. Where a database cannot be replicated live, we schedule the cut in your quietest window and tell you the honest expected duration before you approve the date."
+        },
+        {
+          "question": "Will the cloud cost us more than what we pay now?",
+          "answer": "Sometimes it will, and anyone promising a saving before seeing your workload is guessing. A small, steady site on cheap shared hosting is often cheaper exactly where it is; the real gains usually come from removing server maintenance, absorbing traffic spikes without permanent over-provisioning, and retiring capacity you no longer use. We build the cost model before the migration so the comparison is a number you can check line by line."
+        },
+        {
+          "question": "Can you migrate if our previous developer or host will not cooperate?",
+          "answer": "Usually yes. With administrative access to the hosting panel, the domain registrar and the database, we can inventory and move a site without the previous provider's help, and this is common on older PHP and WordPress-era projects. The genuine blockers are missing credentials and source code that exists only on the live server, so the first thing we check is what you actually hold."
+        },
+        {
+          "question": "Which cloud should we choose — AWS, Azure or Google Cloud?",
+          "answer": "It depends far less on feature lists than on what your team already runs and hires for. Microsoft-centric organisations tend to land better with Azure Migration, data and analytics-heavy teams often prefer Google Cloud Migration, and AWS Migration remains the broadest default. For many web and SaaS products, a managed application platform plus a managed PostgreSQL provider is simpler and cheaper than any of the three, and we will say so when that is the honest answer."
+        },
+        {
+          "question": "Do you hold cloud or security certifications?",
+          "answer": "We hold no certification we could point at, and we are not a certification body — we will not imply otherwise. The cloud providers are certified for their own infrastructure, which covers the platform layer but says nothing about how your application is configured on top of it. We implement controls and produce the documentation assessors ask for; the certificate itself is issued by an accredited third party, never by us."
+        },
+        {
+          "question": "Should everything move to the cloud?",
+          "answer": "No, and a migration plan that says otherwise deserves scrutiny. Workloads with heavy constant compute, strict data-residency constraints, or licences tied to physical hardware can cost more in a cloud than on machines you already own. We flag those during discovery and recommend leaving them, deferring them, or splitting the estate — a partial migration is a legitimate and often correct outcome."
+        },
+        {
+          "question": "How long does a migration take?",
+          "answer": "A single web application with a modest database is typically a few weeks from discovery to cutover, and most of that time goes on mapping, rehearsal and testing rather than the move itself. Estates with several interlinked systems, file storage and third-party integrations take longer, and we stage them so each cut is small enough to reverse. We commit to a cutover date only after the rehearsal has shown how long the data move really takes."
+        },
+        {
+          "question": "What about our old WordPress or PHP site?",
+          "answer": "Legacy sites are a large share of this work and they are rarely a clean lift. The realistic options are rehosting on managed infrastructure to buy time, or re-platforming onto a modern stack with content, URLs and redirects migrated so search rankings survive. We audit the PHP version and plugin dependencies first, because an end-of-life runtime or an abandoned plugin is a security problem that moving it elsewhere does not fix."
+        },
+        {
+          "question": "What are egress costs, and why do you keep raising them?",
+          "answer": "Egress is what a provider charges to send data out of its network: images, video, API responses, backups leaving the region. It is the single line item that most often makes a cloud estimate wrong, particularly for media-heavy sites, and it also makes leaving later more expensive than arriving. We model it from your real traffic and, where it dominates, put a CDN in front or pick a provider whose pricing suits your traffic shape."
+        },
+        {
+          "question": "What do we actually get at the end?",
+          "answer": "A running environment, infrastructure defined as code where practical, a documented architecture with the cost model behind it, monitoring and alerting with an owner against each alert, backups verified by a real restore, and runbooks for deploys, rollbacks and incidents. If you want us to stay on for operations we can, but the handover is written on the assumption that you might not."
+        }
+      ],
+      "technologies": [
+        { "name": "AWS", "icon": "aws" },
+        { "name": "Microsoft Azure", "icon": "azure" },
+        { "name": "Google Cloud", "icon": "googlecloud" },
+        { "name": "Vercel", "icon": "vercel" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Neon", "icon": "neon" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "Terraform", "icon": "terraform" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Bulut Geçişi",
+    "shortDescription": "Paylaşımlı hostingden, tek sunucudan veya yaşlanan altyapıdan yönetilen bulut platformlarına geçiş: bağımlılık haritası, provası yapılmış veri taşıma, kesintiyi dakikalara indiren devreye alma ve geçiş öncesi ile sonrasının gerçek maliyet karşılaştırması.",
+    "fullDescription": "Türkiye'de karşımıza gelen bulut geçişi işlerinin çoğu veri merkezi kapatma projesi değildir: paylaşımlı hostinge sığmayan bir web uygulaması, yedeği hiç geri yüklenmemiş tek sunucudaki bir veritabanı ya da yıllardır güncellenmeyen bir PHP veya WordPress sitesi. İyi yaptığımız iş tam olarak budur. Neyin neye bağlı olduğunu çıkarır, rehost, replatform ve refactor kararını bütün sistem için değil her bileşen için ayrı veririz. Veri taşımayı, geri dönüş senaryosu sıkıcı hale gelene kadar prova ederiz; DNS, TLS, oturumlar ve zamanlanmış işleri aynı kontrol listesinde ele alırız. Kendi üretim yüklerimizi Vercel üzerinde yönetilen PostgreSQL (Neon) ile çalıştırıyor, şema ve veri taşımalarını Prisma migration'ları ile yapıyoruz; anlattığımız ödünleşimleri kendimiz de yaşıyoruz. Bir iş yükü bulunduğu yerde daha ucuz veya daha güvenliyse, siz para harcamadan önce bunu söyleriz.",
+    "features": [
+      "Taşımadan önce envanter ve bağımlılık haritası çıkarma",
+      "Her iş yükü için ayrı rehost, replatform veya refactor kararı",
+      "Provası ve geri dönüşü test edilmiş veritabanı taşıma",
+      "DNS, TLS, oturum ve cron'u kapsayan düşük kesintili devreye alma",
+      "Mevcut ve hedef kurulumun yan yana maliyet modeli",
+      "Doğru boyutlandırma, ölçek sınırları ve veri çıkışı (egress) maliyeti analizi",
+      "Kod olarak altyapı (IaC) ve tekrar üretilebilir ortamlar",
+      "Geçiş sonrası izleme, alarm ve geri yüklemesi denenmiş yedekler"
+    ],
+    "benefits": [
+      "Planlanabilir bir geçiş tarihi ve varsayılan değil, gerçekten denenmiş bir geri dönüş planı",
+      "Taahhüt öncesinde net bir maliyet tablosu; sürpriz kalemler dahil",
+      "El yordamıyla kurulmuş sunucular yerine yönetilen servislerle daha az bakım yükü",
+      "Ortamlar tekrar üretilebilir olduğu için olay olmaktan çıkan yayına alma süreçleri",
+      "Sadece yapılandırılmış değil, gerçekten geri yüklenmiş yedekler",
+      "Sisteminizin bir kısmı olduğu yerde kalmalıysa bunu açıkça söyleyen bir öneri"
+    ],
+    "metaTitle": "Bulut Geçişi ve Cloud Migration Hizmeti | PakSoft",
+    "metaDescription": "Paylaşımlı hosting veya tek sunucudan buluta geçiş: bağımlılık analizi, provalı veri taşıma, düşük kesintili devreye alma ve gerçek maliyet karşılaştırması.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Envanter ve Bağımlılık Analizi",
+          "description": "Neyi çalıştırdığınızı, neyle konuştuğunu ve taşınırsa neyin bozulacağını çıkarırız: servisler, zamanlanmış görevler, dosya yüklemeleri, üçüncü taraf geri bildirimleri, koda gömülü adresler ve kimsenin ne zaman açtığını hatırlamadığı DNS kayıtları. Çıktı bir bağımlılık haritası ve bu geçişi asıl zorlaştıracak maddelerin kısa, süslemesiz bir listesidir."
+        },
+        {
+          "step": 2,
+          "title": "Hedef Mimari ve Maliyet Modeli",
+          "description": "Hedefi tasarlarız: yönetilen veritabanı, uygulama barındırma, nesne depolama, arka plan işleri. Bunu mevcut faturanızla karşılaştırırken çoğu teklifin atladığı kalemleri de koyarız; veri çıkışı, yedekler, log saklama ve test ortamları. Bulut kendiliğinden ucuz değildir ve model mevcut kurulumunuzun daha ucuz olduğunu gösteriyorsa, satış cevabı yerine rakamları veririz."
+        },
+        {
+          "step": 3,
+          "title": "İş Yükü Bazında Strateji: Rehost, Replatform, Refactor",
+          "description": "Rehost en hızlısıdır ve en az şeyi değiştirir; replatform kendi kurduğunuz veritabanı gibi bileşenleri yönetilen muadilleriyle değiştirir; refactor uygulamanın bir kısmını platforma uygun biçimde yeniden şekillendirir. Kararı tüm sistem için değil her iş yükü için ayrı veririz, çünkü sorunsuz çalışan bir arka ofis aracına refactor bütçesi ayırmak geçiş bütçelerinin eridiği yerdir."
+        },
+        {
+          "step": 4,
+          "title": "Veri Taşıma Provası ve Geri Dönüş Planı",
+          "description": "Şema ve veri hedefe tekrarlanabilir betiklerle taşınır; yığın uygun olduğunda Prisma migration'ları kullanırız. Gerçek kesintinin ne kadar süreceğini ölçmek için tüm yükü önce bir kopya üzerinde koştururuz. Geri dönüş planı tarih verilmeden önce yazılır, süresi ölçülür ve denenir; çünkü prova edilmemiş plan plan değildir."
+        },
+        {
+          "step": 5,
+          "title": "Devreye Alma: DNS, TLS ve Trafiğin Aktarılması",
+          "description": "DNS TTL değerlerini önceden düşürür, yeni platformda sertifikaları üretip doğrular, veri modeli izin verdiğinde iki ortamı paralel çalıştırır ve trafiği belirlenmiş bir pencerede aktarırız; yazma işlemleri yalnızca gerçekten gerektiği kadar kısa süre durur. Oturumlar, webhook'lar, zamanlanmış görevler ve giden e-posta ayarları sonradan fark edilen sürprizler değil, aynı kontrol listesinin maddeleridir."
+        },
+        {
+          "step": 6,
+          "title": "Geçiş Sonrası İyileştirme, Maliyet Kontrolü ve Devir",
+          "description": "İlk haftalarda hata oranlarını, gecikmeyi, veritabanı bağlantılarını ve harcamayı izler; gerçek trafik iş yükünün ne istediğini gösterdikten sonra kaynakları ve önbelleği doğru boyuta çekeriz. Yedeklerden gerçekten geri yükleme yapıp çalıştığını kanıtlar, yayına alma, geri alma ve olay müdahalesi için çalışma kılavuzlarını ekibinize devrederiz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Geçiş sırasında sitemiz kapanacak mı?",
+          "answer": "Çoğu web ve SaaS iş yükünde görünen kesinti saatler değil dakikalar düzeyindedir, salt okunur trafikte ise çoğu zaman fark edilmez. DNS TTL değerlerini önceden düşürür, eski ve yeni ortamı bir süre paralel çalıştırır ve yazma işlemlerini yalnızca veri taşımanın gerçekten gerektirdiği kadar durdururuz. Veritabanı canlı kopyalanamıyorsa geçişi en sakin saatinize planlar ve tarihi onaylamadan önce beklenen süreyi olduğu gibi söyleriz."
+        },
+        {
+          "question": "Bulut bize şu an ödediğimizden pahalı mı gelir?",
+          "answer": "Bazen gelir; iş yükünüzü görmeden tasarruf vaat eden herkes tahmin yürütüyordur. Ucuz paylaşımlı hostingdeki küçük ve istikrarlı bir site çoğu zaman olduğu yerde daha ucuzdur. Asıl kazanç sunucu bakımının ortadan kalkması, yoğunluk anlarını sürekli fazla kapasite taşımadan karşılamak ve kullanılmayan kaynakları kapatabilmektir. Maliyet modelini geçişten önce çıkarırız ki karşılaştırma satır satır kontrol edebileceğiniz bir tablo olsun."
+        },
+        {
+          "question": "Faturalar dolar bazlı; kur riskini nasıl yönetiyoruz?",
+          "answer": "Bu Türkiye'deki en gerçek itirazlardan biri ve göz ardı etmiyoruz. Bulut faturaları çoğunlukla döviz cinsindendir, dolayısıyla maliyet modelini yalnızca bugünkü kurla değil makul bir kur bandıyla kurar, sabit ve değişken kalemleri ayırırız. Öngörülebilir yükleri rezervasyon veya taahhütlü fiyatlandırmayla sabitlemek, medya trafiğini CDN'e almak ve test ortamlarını mesai dışında kapatmak faturayı en çok düşüren üç kalemdir."
+        },
+        {
+          "question": "Verilerimiz yurt dışına çıkacak mı? KVKK açısından sorun olur mu?",
+          "answer": "Buna baştan karar veririz. Veriyi Türkiye'de tutmak isteyen müşteriler için yurt içi bölgeleri veya yurt içi sağlayıcıları değerlendirir, yurt dışına aktarım gerekiyorsa KVKK'nın öngördüğü aktarım mekanizmalarını ve sözleşmeleri gündeme getiririz. Biz teknik tarafı kurar ve hangi verinin nerede durduğunu belgeleriz; hukuki değerlendirmeyi ve nihai kararı sizin hukuk danışmanınız verir, bu konuda hukuki görüş vermeyiz."
+        },
+        {
+          "question": "Eski geliştiricimiz veya hosting firmamız yardımcı olmuyor; yine de taşıyabilir misiniz?",
+          "answer": "Genellikle evet. Hosting paneline, alan adı kaydına ve veritabanına yönetici erişimimiz varsa envanteri çıkarıp taşımayı önceki sağlayıcının desteği olmadan yapabiliriz; eski PHP ve WordPress projelerinde bu sık karşılaşılan bir durumdur. Gerçek engeller kayıp erişim bilgileri ve yalnızca canlı sunucuda duran kaynak kodudur, o yüzden ilk iş elinizde tam olarak ne olduğunu kontrol etmektir."
+        },
+        {
+          "question": "AWS, Azure, Google Cloud: hangisini seçmeliyiz?",
+          "answer": "Karar özellik listelerinden çok ekibinizin bugün ne kullandığına ve kimi işe alabildiğinize bağlıdır. Microsoft ağırlıklı kurumlar genelde Azure Geçişi tarafında daha rahat eder, veri ve analitik yoğun ekipler Google Cloud Geçişi'ni tercih eder, AWS Geçişi ise en geniş varsayılan seçenek olmayı sürdürür. Pek çok web ve SaaS ürünü içinse yönetilen bir uygulama platformu ile yönetilen PostgreSQL kombinasyonu üçünden de basit ve ucuzdur; durum buysa bunu açıkça söyleriz."
+        },
+        {
+          "question": "Sertifikanız var mı?",
+          "answer": "Gösterebileceğimiz bir sertifikamız yok ve bir sertifikasyon kuruluşu değiliz; aksini ima etmeyiz. Bulut sağlayıcıları kendi altyapıları için denetlenir, bu platform katmanını kapsar ama uygulamanızın o platformda nasıl yapılandırıldığı hakkında hiçbir şey söylemez. Biz kontrolleri kurar ve denetçilerin istediği belgeleri hazırlarız; sertifikayı yetkili bir bağımsız denetim kuruluşu verir, biz vermeyiz."
+        },
+        {
+          "question": "Her şeyi buluta taşımalı mıyız?",
+          "answer": "Hayır ve aksini söyleyen bir geçiş planı sorgulanmayı hak eder. Sürekli yüksek işlem gücü isteyen, veri yerleşimi konusunda katı kısıtları olan veya lisansı fiziksel donanıma bağlı iş yükleri, sahip olduğunuz makinelerde kalmaya devam ederse daha ucuza gelebilir. Bunları analiz aşamasında işaretler; bırakmayı, ertelemeyi ya da sistemi bölmeyi öneririz. Kısmi geçiş meşru ve çoğu zaman doğru sonuçtur."
+        },
+        {
+          "question": "Geçiş ne kadar sürer?",
+          "answer": "Orta ölçekli bir veritabanı olan tek bir web uygulaması için analizden devreye almaya kadar genellikle birkaç hafta konuşuruz ve bu sürenin çoğu taşımanın kendisine değil haritalama, prova ve teste gider. Birbirine bağlı birden çok sistem, dosya depolama ve entegrasyon varsa süre uzar; bu durumda her adımı geri alınabilecek kadar küçük parçalara böleriz. Kesin geçiş tarihini ancak prova gerçek süreyi gösterdikten sonra veririz."
+        },
+        {
+          "question": "Eski WordPress veya PHP sitemiz ne olacak?",
+          "answer": "Bu tür siteler işimizin önemli bir bölümünü oluşturur ve nadiren olduğu gibi kaldırılıp taşınır. Gerçekçi seçenekler ya zaman kazanmak için yönetilen altyapıya rehost etmek ya da içerik, URL yapısı ve yönlendirmeler korunarak modern bir yığına geçmektir; böylece arama sıralamalarınız zarar görmez. Önce PHP sürümünü ve eklenti bağımlılıklarını denetleriz, çünkü desteği bitmiş bir sürüm veya terk edilmiş bir eklenti, başka yere taşımakla çözülmeyen bir güvenlik sorunudur."
+        },
+        {
+          "question": "Sonunda elimize ne geçiyor?",
+          "answer": "Çalışan bir ortam, mümkün olan yerde kod olarak tanımlanmış altyapı, arkasındaki maliyet modeliyle birlikte belgelenmiş bir mimari, her alarmın sahibi belli olan izleme kurulumu, gerçek bir geri yüklemeyle doğrulanmış yedekler ve yayına alma, geri alma ile olay müdahalesi için çalışma kılavuzları. İşletmeye devam etmemizi isterseniz kalırız; ama devir dosyası, istemeyebileceğiniz varsayımıyla yazılır."
+        }
+      ],
+      "technologies": [
+        { "name": "AWS", "icon": "aws" },
+        { "name": "Microsoft Azure", "icon": "azure" },
+        { "name": "Google Cloud", "icon": "googlecloud" },
+        { "name": "Vercel", "icon": "vercel" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Neon", "icon": "neon" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "Terraform", "icon": "terraform" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Cloud-Migration",
+    "shortDescription": "Web- und SaaS-Workloads von Shared Hosting, einem einzelnen VPS oder alternder Hardware auf verwaltete Cloud-Plattformen bringen: Abhängigkeitsanalyse, geprobte Datenmigration, Umstellung mit minimaler Ausfallzeit und ein belastbarer Kostenvergleich vorher und nachher.",
+    "fullDescription": "Die Migrationen, die wir übernehmen, sind selten Rechenzentrumsausstiege. Es sind Webanwendungen, die dem Shared Hosting entwachsen sind, Datenbanken auf einem einzelnen VPS, deren Backup nie zurückgespielt wurde, oder Seiten aus der PHP-Ära, die wieder wartbar werden müssen. Genau diese Arbeit beherrschen wir: erfassen, was tatsächlich wovon abhängt, Rehost, Replatform und Refactor je Komponente entscheiden statt pauschal für die gesamte Landschaft, die Datenmigration so lange proben, bis das Rollback langweilig wird, und die Umstellung mit DNS, TLS, Sessions und geplanten Jobs auf einer gemeinsamen Checkliste durchführen. Unsere eigenen Produktivlasten betreiben wir auf Vercel mit verwaltetem PostgreSQL bei Neon, Schema- und Datenänderungen laufen über Prisma-Migrationen. Wenn ein Workload dort, wo er heute läuft, günstiger oder sicherer aufgehoben ist, sagen wir Ihnen das, bevor Budget fließt.",
+    "features": [
+      "Inventarisierung und Abhängigkeitsanalyse vor jeder Verschiebung",
+      "Rehost, Replatform oder Refactor je Workload entschieden",
+      "Datenbankmigration mit geprobtem Restore und getestetem Rollback",
+      "Umstellung mit minimaler Ausfallzeit inklusive DNS, TLS, Sessions und Cron",
+      "Kostenmodell von Ist- und Zielumgebung im direkten Vergleich",
+      "Right-Sizing, Skalierungsgrenzen und Bewertung der Egress-Kosten",
+      "Infrastructure as Code und reproduzierbare Umgebungen",
+      "Monitoring, Alarmierung und durch Restore verifizierte Backups nach der Migration"
+    ],
+    "benefits": [
+      "Ein planbarer Umstellungstermin mit einem Rollback, das getestet und nicht nur angenommen ist",
+      "Ein Kostenbild vor der Entscheidung, einschließlich der Positionen, die üblicherweise überraschen",
+      "Weniger Wartungsaufwand, sobald verwaltete Dienste handgepflegte Server ersetzen",
+      "Deployments, die kein Ereignis mehr sind, weil Umgebungen reproduzierbar sind",
+      "Backups, aus denen tatsächlich zurückgespielt wurde, statt nur konfigurierter Jobs",
+      "Eine ehrliche Empfehlung, wenn Teile Ihrer Landschaft besser bleiben, wo sie sind"
+    ],
+    "metaTitle": "Cloud-Migration für Web- und SaaS-Workloads | PakSoft",
+    "metaDescription": "Cloud-Migration mit Substanz: Abhängigkeitsanalyse, Rehost oder Replatform, geprobte Datenmigration, minimale Ausfallzeit, belastbare Kosten. Jetzt anfragen.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Bestandsaufnahme und Abhängigkeitsanalyse",
+          "description": "Wir erfassen, was Sie betreiben, womit es spricht und was beim Verschieben bricht: Dienste, Cronjobs, Datei-Uploads, Rückrufe Dritter, fest verdrahtete Adressen und DNS-Einträge, an deren Anlage sich niemand erinnert. Ergebnis ist eine Abhängigkeitskarte und eine kurze, unbeschönigte Liste der Punkte, die diese Migration wirklich schwierig machen."
+        },
+        {
+          "step": 2,
+          "title": "Zielarchitektur und Kostenmodell",
+          "description": "Wir entwerfen das Ziel — verwaltete Datenbank, Anwendungshosting, Objektspeicher, Hintergrundjobs — und stellen es Ihrer heutigen Rechnung gegenüber, inklusive der gern vergessenen Posten: Egress, Backups, Log-Aufbewahrung und Nicht-Produktivumgebungen. Cloud ist nicht automatisch günstiger, und wenn das Modell für Ihren Bestand spricht, bekommen Sie die Zahlen statt einer Vertriebsantwort."
+        },
+        {
+          "step": 3,
+          "title": "Strategie je Workload: Rehost, Replatform, Refactor",
+          "description": "Rehost ist am schnellsten und verändert am wenigsten, Replatform ersetzt selbst betriebene Komponenten wie den eigenen Datenbankserver durch verwaltete Dienste, Refactor passt Teile der Anwendung an die Plattform an. Wir entscheiden je Workload statt pauschal, denn ein Refactor für ein stabiles Backoffice-Werkzeug ist der klassische Weg, ein Migrationsbudget aufzubrauchen."
+        },
+        {
+          "step": 4,
+          "title": "Probelauf der Datenmigration und Rollback",
+          "description": "Schema und Daten wandern über wiederholbare Skripte ins Ziel, bei passendem Stack über Prisma-Migrationen, und der vollständige Durchlauf wird zunächst gegen eine Kopie gefahren, um die reale Umstellungsdauer zu messen. Das Rollback wird schriftlich festgehalten, zeitlich gemessen und getestet, bevor ein Termin vereinbart wird."
+        },
+        {
+          "step": 5,
+          "title": "Umstellung: DNS, TLS und Traffic-Wechsel",
+          "description": "Wir senken DNS-TTLs vorab, stellen Zertifikate auf der neuen Plattform aus und prüfen sie, betreiben beide Umgebungen parallel, soweit das Datenmodell es erlaubt, und schalten den Verkehr in einem definierten Fenster um. Schreibzugriffe pausieren nur so lange wie zwingend nötig; Sessions, Webhooks, geplante Jobs und ausgehende Mail stehen auf derselben Checkliste."
+        },
+        {
+          "step": 6,
+          "title": "Nachbetreuung, Kostenkontrolle und Übergabe",
+          "description": "In den ersten Wochen beobachten wir Fehlerraten, Latenz, Datenbankverbindungen und Kosten und passen Dimensionierung sowie Caching an, sobald echter Traffic zeigt, was der Workload braucht. Wir spielen ein Backup tatsächlich zurück, um es zu belegen, und übergeben Runbooks für Deployment, Rollback und Störungsfälle."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wird unsere Anwendung während der Migration nicht erreichbar sein?",
+          "answer": "Bei den meisten Web- und SaaS-Workloads liegt die sichtbare Unterbrechung im Minutenbereich, bei rein lesendem Verkehr oft nahe null. Wir senken DNS-TTLs vorab, betreiben alt und neu parallel und halten das Schreibfenster so kurz, wie die Datenmigration es tatsächlich erfordert. Lässt sich die Datenbank nicht live replizieren, legen wir die Umstellung in Ihr ruhigstes Zeitfenster und nennen die erwartete Dauer, bevor Sie den Termin freigeben."
+        },
+        {
+          "question": "Wird die Cloud teurer als unser heutiger Betrieb?",
+          "answer": "Das kann durchaus sein, und wer vor Sichtung des Workloads Einsparungen zusagt, rät. Eine kleine, gleichmäßig ausgelastete Seite auf günstigem Hosting bleibt häufig dort am billigsten. Der Gewinn entsteht meist durch entfallende Serverpflege, das Abfangen von Lastspitzen ohne dauerhafte Überdimensionierung und das Abschalten ungenutzter Kapazität. Wir erstellen das Kostenmodell vor der Migration, damit der Vergleich Position für Position nachvollziehbar ist."
+        },
+        {
+          "question": "Bleiben unsere Daten in der EU?",
+          "answer": "Wenn Sie das verlangen, wird es zur Randbedingung der Architektur und nicht zur nachträglichen Frage. AWS, Azure und Google Cloud betreiben EU-Regionen, ebenso die von uns eingesetzten verwalteten Datenbank- und Hosting-Dienste; wir wählen Region und Backup-Ziele entsprechend und dokumentieren, wo welche Daten liegen. Auftragsverarbeitungsverträge und die Liste der Unterauftragsverarbeiter gehören zur Übergabe; die datenschutzrechtliche Bewertung trifft Ihre Rechtsberatung."
+        },
+        {
+          "question": "Können Sie migrieren, wenn unser bisheriger Dienstleister nicht mitwirkt?",
+          "answer": "In der Regel ja. Mit administrativem Zugang zu Hosting-Panel, Domain-Registrar und Datenbank können wir eine Anwendung ohne Mitwirkung des Vorgängers erfassen und verschieben; bei älteren PHP- und WordPress-Projekten ist das Alltag. Echte Blocker sind fehlende Zugangsdaten und Quellcode, der nur auf dem Produktivserver existiert — deshalb prüfen wir zuerst, was Sie tatsächlich in der Hand haben."
+        },
+        {
+          "question": "Welche Cloud sollten wir wählen — AWS, Azure oder Google Cloud?",
+          "answer": "Die Entscheidung hängt weniger an Funktionslisten als daran, womit Ihr Team heute arbeitet und wen Sie einstellen können. Microsoft-geprägte Organisationen kommen meist mit Azure-Migration am weitesten, daten- und analytiklastige Teams bevorzugen häufig Google Cloud Migration, und AWS-Migration bleibt die breiteste Standardoption. Für viele Web- und SaaS-Produkte ist eine verwaltete Anwendungsplattform mit verwaltetem PostgreSQL einfacher und günstiger als alle drei, und das sagen wir dann auch."
+        },
+        {
+          "question": "Verfügen Sie über Zertifizierungen?",
+          "answer": "Wir führen keine Zertifikate, auf die wir verweisen könnten, und wir sind keine Zertifizierungsstelle — anderes werden wir auch nicht andeuten. Die Cloud-Anbieter sind für ihre eigene Infrastruktur auditiert, das betrifft die Plattformebene und sagt nichts darüber aus, wie Ihre Anwendung darauf konfiguriert ist. Wir setzen Maßnahmen um und erstellen die Nachweise, die Prüfer verlangen; das Zertifikat vergibt eine akkreditierte Stelle."
+        },
+        {
+          "question": "Sollte wirklich alles in die Cloud?",
+          "answer": "Nein, und ein Migrationsplan, der das behauptet, gehört hinterfragt. Workloads mit konstant hoher Rechenlast, strengen Anforderungen an den Speicherort oder Lizenzen, die an physische Hardware gebunden sind, können in der Cloud teurer werden als auf vorhandener Hardware. Wir markieren solche Fälle in der Analyse und empfehlen, sie zu belassen, zu verschieben oder die Landschaft zu teilen — eine Teilmigration ist ein legitimes Ergebnis."
+        },
+        {
+          "question": "Wie lange dauert eine Migration?",
+          "answer": "Eine einzelne Webanwendung mit überschaubarer Datenbank liegt meist bei einigen Wochen von der Analyse bis zur Umstellung, wobei der größte Teil auf Kartierung, Probelauf und Tests entfällt. Landschaften mit mehreren verzahnten Systemen, Dateiablagen und Integrationen dauern länger; wir schneiden sie so, dass jeder Schritt umkehrbar bleibt. Einen verbindlichen Termin nennen wir erst, wenn der Probelauf die reale Dauer gezeigt hat."
+        },
+        {
+          "question": "Was ist mit Egress-Kosten gemeint?",
+          "answer": "Egress ist das Entgelt dafür, Daten aus dem Netz des Anbieters heraus zu senden: Bilder, Video, API-Antworten, Backups, die die Region verlassen. Es ist der Posten, der Cloud-Schätzungen am häufigsten verzerrt, besonders bei medienlastigen Seiten, und er verteuert auch einen späteren Wechsel. Wir modellieren ihn aus Ihrem realen Traffic und setzen bei Bedarf ein CDN davor oder wählen einen Anbieter, dessen Preismodell zu Ihrem Lastprofil passt."
+        },
+        {
+          "question": "Was erhalten wir am Ende der Migration?",
+          "answer": "Eine laufende Umgebung, Infrastruktur wo sinnvoll als Code, eine dokumentierte Architektur mit dem zugehörigen Kostenmodell, Monitoring und Alarmierung mit benannter Zuständigkeit, durch echten Restore verifizierte Backups sowie Runbooks für Deployment, Rollback und Störungen. Wenn Sie den Betrieb an uns geben möchten, übernehmen wir ihn; die Übergabeunterlagen sind aber so geschrieben, dass Sie es nicht müssen."
+        }
+      ],
+      "technologies": [
+        { "name": "AWS", "icon": "aws" },
+        { "name": "Microsoft Azure", "icon": "azure" },
+        { "name": "Google Cloud", "icon": "googlecloud" },
+        { "name": "Vercel", "icon": "vercel" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Neon", "icon": "neon" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "Terraform", "icon": "terraform" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "ترحيل السحابة",
+    "shortDescription": "نقل تطبيقات الويب ومنتجات SaaS من الاستضافة المشتركة أو خادم VPS واحد أو بنية قديمة إلى منصات سحابية مُدارة، مع خريطة اعتماديات وبروفة كاملة لترحيل البيانات وتحويل بأقل انقطاع ومقارنة تكلفة صريحة قبل وبعد.",
+    "fullDescription": "معظم مشاريع الترحيل التي نتولاها ليست إغلاقاً لمركز بيانات. هي تطبيق ويب لم تعد الاستضافة المشتركة تكفيه، أو قاعدة بيانات على خادم واحد لم تُختبر استعادة نسختها الاحتياطية يوماً، أو موقع من حقبة PHP يحتاج أن يصبح قابلاً للصيانة من جديد. هذا تحديداً ما نتقنه: رسم ما يعتمد على ماذا فعلياً، واتخاذ قرار rehost أو replatform أو refactor لكل مكوّن على حدة بدل قرار واحد للمنظومة كلها، وتكرار بروفة ترحيل البيانات حتى تصبح خطة التراجع مملّة، ثم التحويل مع معالجة DNS وشهادات TLS والمهام المجدولة ضمن قائمة تحقّق واحدة. نشغّل أحمالنا الإنتاجية على Vercel مع PostgreSQL مُدار عبر Neon، وننفّذ تغييرات المخطط والبيانات عبر ترحيلات Prisma، فالمفاضلات التي نصفها نعيشها بأنفسنا. وإذا كان بقاء حمل عمل في مكانه الحالي أرخص أو أكثر أماناً، نقول ذلك قبل إنفاق أي مبلغ.",
+    "features": [
+      "جرد كامل وخريطة اعتماديات قبل نقل أي مكوّن",
+      "قرار rehost أو replatform أو refactor لكل حمل عمل على حدة",
+      "ترحيل قواعد البيانات ببروفة واستعادة وخطة تراجع مُختبرة",
+      "تحويل بأقل انقطاع يشمل DNS وشهادات TLS والجلسات والمهام المجدولة",
+      "نموذج تكلفة يقارن الوضع الحالي بالوضع المستهدف جنباً إلى جنب",
+      "ضبط الأحجام وحدود التوسّع ومراجعة تكاليف خروج البيانات (egress)",
+      "بنية تحتية معرّفة بالكود وبيئات قابلة لإعادة الإنشاء",
+      "مراقبة وتنبيهات بعد الترحيل ونسخ احتياطية تم التحقق منها بالاستعادة"
+    ],
+    "benefits": [
+      "موعد تحويل قابل للتخطيط مع خطة تراجع مُختبرة لا مفترضة",
+      "صورة تكلفة واضحة قبل الالتزام، بما فيها البنود التي تفاجئ الجميع عادةً",
+      "أعباء صيانة أقل حين تحل الخدمات المُدارة محل خوادم مبنية يدوياً",
+      "إصدارات نشر تتوقف عن كونها حدثاً، لأن البيئات قابلة لإعادة الإنشاء",
+      "نسخ احتياطية جرت استعادتها فعلياً لا مجرد مهام مُعدّة",
+      "توصية صريحة حين يكون بقاء جزء من منظومتكم في مكانه هو الخيار الأصح"
+    ],
+    "metaTitle": "ترحيل السحابة لتطبيقات الويب و SaaS | PakSoft",
+    "metaDescription": "ترحيل سحابي مدروس: خريطة اعتماديات، rehost أو replatform، بروفة لترحيل البيانات، تحويل بأقل انقطاع، ومقارنة تكلفة صريحة. احجزوا جلسة تقييم مجانية اليوم.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "الاستكشاف ورسم الاعتماديات",
+          "description": "نجرد ما تشغّلونه، وبماذا يتصل، وما الذي سينكسر إذا انتقل: الخدمات والمهام المجدولة ورفع الملفات واستدعاءات الأطراف الثالثة والعناوين المكتوبة داخل الكود وسجلات DNS التي لا يتذكر أحد من أنشأها. المخرج خريطة اعتماديات وقائمة قصيرة وصريحة بالبنود التي ستجعل هذا الترحيل صعباً فعلاً."
+        },
+        {
+          "step": 2,
+          "title": "البنية المستهدفة ونموذج التكلفة",
+          "description": "نصمّم الوجهة: قاعدة بيانات مُدارة، واستضافة للتطبيق، وتخزين كائنات، ومهام خلفية. ثم نسعّرها مقابل فاتورتكم الحالية شاملةً البنود التي تُنسى عادةً مثل خروج البيانات والنسخ الاحتياطي ومدة حفظ السجلات وبيئات الاختبار. السحابة ليست أرخص تلقائياً، وإذا رجّح النموذج وضعكم الحالي فستحصلون على الأرقام لا على إجابة مبيعات."
+        },
+        {
+          "step": 3,
+          "title": "استراتيجية لكل حمل عمل: rehost وreplatform وrefactor",
+          "description": "خيار rehost هو الأسرع والأقل تغييراً، وreplatform يستبدل مكوّنات تديرونها بأنفسكم مثل خادم قاعدة البيانات بخدمات مُدارة، وrefactor يعيد تشكيل أجزاء من التطبيق لتناسب المنصة. نقرر لكل حمل عمل على حدة لا للمنظومة كلها، لأن إنفاق ميزانية إعادة هيكلة على أداة إدارية مستقرة هو الطريق المعتاد لتبديد ميزانية الترحيل."
+        },
+        {
+          "step": 4,
+          "title": "بروفة ترحيل البيانات وخطة التراجع",
+          "description": "ينتقل المخطط والبيانات إلى الوجهة عبر نصوص قابلة للتكرار، ونستخدم ترحيلات Prisma حين تسمح البنية بذلك، ونشغّل العملية كاملة على نسخة أولاً لقياس المدة الحقيقية للتحويل. تُكتب خطة التراجع ويُقاس زمنها وتُختبر قبل الاتفاق على أي موعد، فالخطة التي لم تُجرَّب ليست خطة."
+        },
+        {
+          "step": 5,
+          "title": "التحويل: DNS وشهادات TLS ونقل الحركة",
+          "description": "نخفّض قيم TTL في DNS مسبقاً، ونصدر شهادات TLS على المنصة الجديدة ونتحقق منها، ونشغّل البيئتين بالتوازي حين يسمح نموذج البيانات، ثم ننقل الحركة ضمن نافذة محددة مع تجميد الكتابة للمدة الضرورية فقط. الجلسات وwebhooks والمهام المجدولة والبريد الصادر بنود في القائمة نفسها لا مفاجآت تُكتشف لاحقاً."
+        },
+        {
+          "step": 6,
+          "title": "ما بعد الترحيل: المراقبة وضبط التكلفة والتسليم",
+          "description": "في الأسابيع الأولى نراقب معدلات الأخطاء وزمن الاستجابة واتصالات قاعدة البيانات والإنفاق، ثم نضبط الأحجام والتخزين المؤقت بعد أن تكشف الحركة الحقيقية احتياج الحمل. نستعيد من نسخة احتياطية فعلياً لإثبات صلاحيتها، ونسلّم أدلة تشغيل للنشر والتراجع والتعامل مع الأعطال."
+        }
+      ],
+      "faq": [
+        {
+          "question": "هل سيتوقف موقعنا أثناء الترحيل؟",
+          "answer": "في معظم أحمال الويب وSaaS يكون الانقطاع الظاهر بالدقائق لا بالساعات، ويكاد يكون معدوماً لحركة القراءة. نخفّض قيم TTL مسبقاً، ونشغّل البيئتين القديمة والجديدة بالتوازي، ونبقي تجميد الكتابة بالحد الذي يفرضه ترحيل البيانات فعلاً. وإذا تعذّر النسخ الحي لقاعدة البيانات، نجدول التحويل في أهدأ أوقاتكم ونذكر المدة المتوقعة بصراحة قبل اعتماد الموعد."
+        },
+        {
+          "question": "هل ستكلّفنا السحابة أكثر مما ندفع اليوم؟",
+          "answer": "أحياناً نعم، ومن يَعِد بتوفير قبل الاطلاع على حمل عملكم فهو يخمّن. الموقع الصغير المستقر على استضافة رخيصة يبقى غالباً أرخص في مكانه. المكسب الحقيقي يأتي من زوال صيانة الخوادم، واستيعاب ذروات الحركة دون تضخيم دائم للسعة، وإطفاء الموارد غير المستخدمة. نبني نموذج التكلفة قبل الترحيل لتكون المقارنة رقماً تراجعونه بنداً بنداً."
+        },
+        {
+          "question": "أين ستُخزَّن بياناتنا؟ هل يمكن إبقاؤها داخل المنطقة؟",
+          "answer": "نعم، ونتعامل مع ذلك كقيد تصميمي من البداية لا كسؤال لاحق. يوفّر AWS وAzure وGoogle Cloud مناطق ضمن الخليج والشرق الأوسط، ونختار المنطقة ووجهات النسخ الاحتياطي وفق ما تطلبونه ثم نوثّق أين يستقر كل نوع من البيانات. التزامات أنظمة حماية البيانات في السعودية والإمارات وغيرها يقرّرها مستشاركم القانوني، ونحن ننفّذ الجانب التقني ونوفّر الوثائق التي يحتاجها."
+        },
+        {
+          "question": "هل يمكنكم الترحيل إذا رفض المزود أو المطوّر السابق التعاون؟",
+          "answer": "غالباً نعم. بوجود صلاحية إدارية على لوحة الاستضافة وسجل النطاق وقاعدة البيانات نستطيع الجرد والنقل دون مساعدة المزود السابق، وهذا شائع في مشاريع PHP وWordPress القديمة. العوائق الحقيقية هي بيانات الدخول المفقودة وشيفرة مصدرية لا توجد إلا على الخادم الحي، لذلك نتحقق أولاً مما تملكونه فعلاً."
+        },
+        {
+          "question": "أي سحابة نختار: AWS أم Azure أم Google Cloud؟",
+          "answer": "القرار مرتبط بما يستخدمه فريقكم اليوم وبمن تستطيعون توظيفه أكثر من ارتباطه بقوائم المزايا. المؤسسات المبنية على تقنيات Microsoft تستقر عادةً مع الترحيل إلى Azure، والفرق التي يغلب عليها العمل على البيانات والتحليلات تميل إلى ترحيل Google Cloud، ويبقى الترحيل إلى AWS الخيار الافتراضي الأوسع. ولكثير من منتجات الويب وSaaS تكون منصة تطبيقات مُدارة مع PostgreSQL مُدار أبسط وأرخص من الثلاثة جميعاً."
+        },
+        {
+          "question": "هل تحملون شهادات معتمدة؟",
+          "answer": "لا نملك شهادة نشير إليها، ولسنا جهة مانحة للشهادات، ولن نوحي بغير ذلك. مزودو السحابة مدقَّقون على بنيتهم التحتية، وهذا يغطي طبقة المنصة ولا يقول شيئاً عن كيفية إعداد تطبيقكم فوقها. نحن ننفّذ الضوابط ونجهّز الوثائق التي يطلبها المدققون، أما الشهادة نفسها فتصدر عن جهة تدقيق معتمدة مستقلة."
+        },
+        {
+          "question": "هل ينبغي نقل كل شيء إلى السحابة؟",
+          "answer": "لا، وأي خطة ترحيل تقول العكس تستحق التدقيق. الأحمال ذات المعالجة الثقيلة المستمرة، أو المقيّدة بمكان تخزين محدد، أو المرتبطة برخص على عتاد مادي، قد تكلّف في السحابة أكثر مما تكلّف على أجهزة تملكونها. نؤشّر عليها في مرحلة الاستكشاف ونوصي بإبقائها أو تأجيلها أو تقسيم المنظومة، والترحيل الجزئي نتيجة مشروعة وصحيحة في أحيان كثيرة."
+        },
+        {
+          "question": "كم يستغرق الترحيل؟",
+          "answer": "تطبيق ويب واحد بقاعدة بيانات متوسطة يستغرق عادةً بضعة أسابيع من الاستكشاف إلى التحويل، ومعظم المدة تذهب إلى الرسم والبروفة والاختبار لا إلى النقل نفسه. المنظومات المترابطة مع تخزين ملفات وتكاملات خارجية تحتاج وقتاً أطول، ونقسّمها إلى خطوات صغيرة قابلة للعكس. لا نلتزم بموعد نهائي إلا بعد أن تُظهر البروفة المدة الحقيقية."
+        },
+        {
+          "question": "ما المقصود بتكاليف خروج البيانات (egress)؟",
+          "answer": "هي ما يتقاضاه المزود مقابل إخراج البيانات من شبكته: الصور والفيديو واستجابات API والنسخ الاحتياطية التي تغادر المنطقة. وهي البند الذي يفسد تقديرات السحابة أكثر من غيره، خصوصاً في المواقع الغنية بالوسائط، ويجعل الانتقال لاحقاً أغلى أيضاً. نقدّرها من حركتكم الفعلية، وإذا كانت مسيطرة نضع CDN أمامها أو نختار مزوداً يناسب تسعيره شكل حركتكم."
+        },
+        {
+          "question": "ماذا نستلم في نهاية المشروع؟",
+          "answer": "بيئة تعمل، وبنية تحتية معرّفة بالكود حيث كان ذلك عملياً، ووثيقة معمارية مع نموذج التكلفة خلفها، ومراقبة وتنبيهات لكل منها مسؤول محدد، ونسخ احتياطية تم التحقق منها باستعادة فعلية، وأدلة تشغيل للنشر والتراجع والأعطال. وإن رغبتم أن نتولى التشغيل فنحن جاهزون، لكن ملف التسليم مكتوب على افتراض أنكم قد لا ترغبون."
+        }
+      ],
+      "technologies": [
+        { "name": "AWS", "icon": "aws" },
+        { "name": "Microsoft Azure", "icon": "azure" },
+        { "name": "Google Cloud", "icon": "googlecloud" },
+        { "name": "Vercel", "icon": "vercel" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Neon", "icon": "neon" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "Terraform", "icon": "terraform" }
+      ]
+    }
+  }
+}

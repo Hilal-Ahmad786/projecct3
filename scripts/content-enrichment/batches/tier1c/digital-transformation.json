@@ -1,0 +1,447 @@
+{
+  "slug": "digital-transformation",
+  "en": {
+    "name": "Digital Transformation",
+    "shortDescription": "Turning manual work into working software, one prioritised process at a time: current-state mapping, a ranked backlog based on hours and error cost, phased rollout, staff adoption, and before-and-after measurement.",
+    "fullDescription": "Digital transformation goes wrong in a predictable way. Somebody buys a platform, announces a launch date, and eighteen months later the spreadsheets are still running the business alongside a system nobody trusts. We work the other way round: map how the work is actually done today, score each process by how often it runs, how many hours it consumes and what an error costs, then digitise the top of that list and put it into production before touching the next one. Your accounting system stays the system of record — we integrate with it rather than replace it. Adoption is designed in, because software that staff route around is a cost, not an asset. Digital Strategy sets the direction and sequencing; Process Digitization builds the individual workflows.",
+    "features": [
+      "Current-State Process Mapping Across Spreadsheets, Paper, Email and Chat",
+      "Prioritisation Scoring by Frequency, Hours Consumed, Error Cost and Risk",
+      "Phased Rollout Plan — One Process Live Before the Next One Starts",
+      "Integration With Existing Accounting, ERP and Invoicing Systems",
+      "Data Migration and Cleanup Out of Spreadsheets and Legacy Tools",
+      "Internal Tools: Order Tracking, Approvals and Forms That Replace Paper",
+      "Staff Adoption: Pilot Users, Training Material and a Feedback Loop",
+      "Baseline and Post-Rollout Measurement of Time, Errors and Rework"
+    ],
+    "benefits": [
+      "Something working in production within weeks, not a launch date a year out",
+      "Staff who use the system because they helped shape it during the pilot",
+      "Your accounting and invoicing stay authoritative — no forced platform swap",
+      "A measured baseline, so the value of each phase can be checked afterwards",
+      "Transformation split into fundable steps you can pause between",
+      "Honest advice about the processes that are not worth digitising at all"
+    ],
+    "metaTitle": "Digital Transformation for Operations | PakSoft",
+    "metaDescription": "Digital transformation done in phases: process mapping, prioritised roadmap, ERP integration, staff adoption, measured results. Book a free process review call.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Baseline and Interviews",
+          "description": "We sit with the people who do the work — order entry, dispatch, invoicing, customer follow-up — and record what actually happens, including the workarounds nobody writes down. Before anything changes we capture a baseline: hours per week, error and rework rates, and where the queue builds up."
+        },
+        {
+          "step": 2,
+          "title": "Process Map and Scoring",
+          "description": "Each process is mapped end to end with its inputs, handoffs, systems and failure points, then scored on frequency, hours consumed, cost of an error and regulatory exposure. The scoring is deliberately boring arithmetic, because it stops the loudest department from setting the roadmap."
+        },
+        {
+          "step": 3,
+          "title": "Prioritised Roadmap With Integration Points",
+          "description": "You get a sequenced plan: what gets digitised first, what depends on what, which systems must exchange data, and what stays manual for now. Each phase is scoped so it can be funded, delivered and judged on its own without committing you to the whole programme."
+        },
+        {
+          "step": 4,
+          "title": "Build the First Workflow With Pilot Users",
+          "description": "We build the highest-scoring process as working software and put it in front of a small group of real users while it is still cheap to change. Their objections in week two are worth more than any requirements document, and the workflow is reshaped around them before wider rollout."
+        },
+        {
+          "step": 5,
+          "title": "Integrate, Migrate and Roll Out",
+          "description": "The workflow is connected to your accounting or ERP system so data is entered once and reconciled automatically, and historical records are migrated and cleaned as part of the phase rather than left for later. Rollout comes with short role-specific training material and a named person to escalate to in the first weeks."
+        },
+        {
+          "step": 6,
+          "title": "Measure, Correct, Then Take the Next Process",
+          "description": "Four to six weeks after rollout we compare against the baseline: hours spent, error rates, rework and where the queue moved to. That evidence decides whether the next process on the list is still the right one, and it is the number you show whoever approved the budget."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What do we get at the end of the first engagement?",
+          "answer": "A process map of how the work is done today, a scored and sequenced roadmap with rough effort per phase, the integration points to your existing systems, and a baseline measurement to judge results against. All of it is yours to keep, and it is specific enough that another supplier could execute from it if you preferred."
+        },
+        {
+          "question": "How long does this take?",
+          "answer": "The mapping and roadmap phase is typically two to four weeks depending on how many departments are involved. The first workflow in production usually follows within four to eight weeks after that. We deliberately avoid multi-year programmes — if a phase cannot show a result inside a quarter, it is scoped too large."
+        },
+        {
+          "question": "What does it cost?",
+          "answer": "The discovery and roadmap phase is a fixed fee quoted after a free review call, and each build phase is quoted separately once its scope is clear. Splitting it this way means you can stop after the roadmap with something useful in hand, and you are never asked to approve a budget for work that has not been scoped."
+        },
+        {
+          "question": "Do you also build the software, or only advise?",
+          "answer": "We build it. The mapping exists to decide what to build, and the same senior people carry the work through into production, which is why our estimates account for data migration and edge cases rather than the demo path. If you would rather build in-house, the roadmap is written to be executable by another team."
+        },
+        {
+          "question": "Do we have to replace our accounting or ERP system?",
+          "answer": "No, and we usually advise against it. Your accounting system is where the legally meaningful records live and it should stay the system of record; new workflows integrate with it so data is entered once. Replacing a working finance system at the same time as changing operational processes is how transformation programmes stall."
+        },
+        {
+          "question": "Our staff resist new systems. How is this handled?",
+          "answer": "By involving the people who do the work from the first interview and by piloting with a small group before any wide rollout. Most resistance is rational — the new tool adds steps, or it was designed by someone who has never done the job. We would rather find that in a pilot of five people than after a company-wide launch."
+        },
+        {
+          "question": "What if some of our processes should not be digitised?",
+          "answer": "Then the roadmap says so. A process that runs four times a year and takes an hour does not justify software, and some exception handling genuinely works better as a phone call between two people who know the customer. Removing weak candidates from the list is part of the value of the mapping phase."
+        },
+        {
+          "question": "What about our data in spreadsheets — is it usable?",
+          "answer": "Usually yes, after cleaning. Expect duplicates, inconsistent naming, free-text fields holding structured data and records that only make sense to the person who maintains the file. We treat migration and cleanup as explicit scope in the phase, because underestimating it is the most common reason a rollout slips."
+        },
+        {
+          "question": "How do we know whether it actually worked?",
+          "answer": "Because we measured before. The baseline captures hours per week on the process, error and rework rates and the queue at each handoff, and the same measurements are repeated four to six weeks after rollout. We do not publish target percentages up front — the honest promise is measurement, not a number chosen before the work started."
+        },
+        {
+          "question": "How does this relate to Digital Strategy and Process Digitization?",
+          "answer": "This page is the umbrella. Digital Strategy is the direction-setting work — priorities, sequencing, budget shape and what to leave alone. Process Digitization is the delivery of individual workflows into production. Most clients begin with a review call here and are routed to whichever of the two matches where they actually are."
+        }
+      ],
+      "technologies": [
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "React", "icon": "react" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "Docker", "icon": "docker" },
+        { "name": "Vercel", "icon": "vercel" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Dijital Dönüşüm",
+    "shortDescription": "Excel ve WhatsApp ile yürüyen işleri çalışan yazılıma çeviriyoruz: mevcut süreçlerin haritası, saat ve hata maliyetine göre önceliklendirme, aşamalı devreye alma, personel benimsemesi ve öncesi-sonrası ölçüm.",
+    "fullDescription": "Dijital dönüşüm çoğu KOBİ'de aynı şekilde tökezler: bir platform satın alınır, lansman tarihi duyurulur ve on sekiz ay sonra iş hâlâ Excel dosyalarıyla yürürken kimsenin güvenmediği bir sistem kenarda durur. Biz tersinden çalışıyoruz. Önce işin bugün gerçekte nasıl yapıldığını haritalıyor; her süreci ne sıklıkta tekrarlandığına, kaç saat yediğine ve bir hatanın neye mal olduğuna göre puanlıyoruz. Sonra listenin en üstündeki süreci yazılıma dönüştürüp canlıya alıyor, ancak ondan sonra sıradakine geçiyoruz. Muhasebe programınız ana kayıt olarak kalır; onu değiştirmez, ona bağlanırız. Personelin dolanarak kullanmadığı yazılım varlık değil maliyettir, bu yüzden benimseme baştan tasarlanır. Yönü ve sırayı Dijital Strateji belirler; tek tek akışları Süreç Dijitalleştirme kurar.",
+    "features": [
+      "Excel, kağıt, e-posta ve WhatsApp üzerindeki mevcut süreçlerin uçtan uca haritası",
+      "Tekrar sıklığı, harcanan saat, hata maliyeti ve risk üzerinden önceliklendirme puanı",
+      "Aşamalı devreye alma planı: bir süreç canlıya alınmadan diğerine başlanmaz",
+      "Mevcut muhasebe, ERP ve e-Fatura/e-Arşiv akışlarıyla entegrasyon",
+      "Excel ve eski programlardan veri göçü ile veri temizliği",
+      "Kağıdı kaldıran iç araçlar: sipariş takibi, onay akışları ve dijital formlar",
+      "Benimseme kurgusu: pilot kullanıcılar, kısa eğitim içerikleri ve geri bildirim döngüsü",
+      "Devreye alma öncesi ve sonrası süre, hata ve yeniden iş ölçümü"
+    ],
+    "benefits": [
+      "Bir yıl sonrasına verilmiş lansman tarihi değil, haftalar içinde canlıda çalışan iş",
+      "Pilotta fikri alındığı için sistemi gerçekten kullanan personel",
+      "Muhasebe ve fatura tarafı yerinde kalır; zorunlu program değişikliği dayatılmaz",
+      "Ölçülmüş bir başlangıç değeri sayesinde her aşamanın faydası sonradan denetlenebilir",
+      "Aralarında durabileceğiniz, ayrı ayrı bütçelenebilen aşamalar",
+      "Dijitalleştirmeye hiç değmeyen süreçler konusunda dürüst uyarı"
+    ],
+    "metaTitle": "Dijital Dönüşüm Danışmanlığı ve Uygulama | PakSoft",
+    "metaDescription": "Aşamalı dijital dönüşüm: süreç haritası, öncelikli yol haritası, muhasebe ve ERP entegrasyonu, personel benimsemesi, ölçülebilir sonuç. Ücretsiz görüşme.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Mevcut Durum ve Saha Görüşmeleri",
+          "description": "İşi fiilen yapan kişilerle oturuyoruz: sipariş girişi, sevkiyat, faturalama, müşteri takibi. Kimsenin yazmadığı kısayolları ve alışkanlıkları da kayda alıyor, hiçbir şey değişmeden önce haftalık harcanan saati, hata ile yeniden iş oranlarını ve işin nerede yığıldığını ölçüyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Süreç Haritası ve Puanlama",
+          "description": "Her süreç girdileri, el değiştirme noktaları, kullanılan sistemler ve hata kaynaklarıyla uçtan uca çiziliyor; ardından tekrar sıklığı, harcanan saat, hatanın maliyeti ve mevzuat riski üzerinden puanlanıyor. Puanlama bilinçli olarak sıkıcı bir aritmetiktir; çünkü yol haritasını sesi en gür çıkan departmanın belirlemesini engeller."
+        },
+        {
+          "step": 3,
+          "title": "Öncelikli Yol Haritası ve Entegrasyon Noktaları",
+          "description": "Elinize sıralanmış bir plan geçer: önce hangi süreç dijitalleşecek, hangi iş neye bağlı, hangi sistemler veri alışverişi yapacak ve şimdilik ne manuel kalacak. Her aşama tek başına bütçelenebilecek, teslim edilebilecek ve değerlendirilebilecek şekilde tanımlanır; tüm programa peşinen imza atmanız gerekmez."
+        },
+        {
+          "step": 4,
+          "title": "İlk Akışın Pilot Kullanıcılarla Kurulması",
+          "description": "En yüksek puanlı süreci çalışan bir yazılıma dönüştürüp, değişiklik hâlâ ucuzken küçük bir gerçek kullanıcı grubuna açıyoruz. İkinci haftada gelen itirazlar, en kalın analiz dokümanından daha değerlidir; akış yaygınlaştırmadan önce bu itirazlara göre yeniden şekillenir."
+        },
+        {
+          "step": 5,
+          "title": "Entegrasyon, Veri Göçü ve Yaygınlaştırma",
+          "description": "Akış muhasebe veya ERP sisteminize bağlanır; veri tek yerde girilir ve mutabakat otomatik yürür, geçmiş kayıtlar da aynı aşamada taşınıp temizlenir. Yaygınlaştırma role özel kısa eğitim içerikleriyle ve ilk haftalarda soru sorulacak isim belli bir kişiyle birlikte yapılır."
+        },
+        {
+          "step": 6,
+          "title": "Ölç, Düzelt, Sıradaki Sürece Geç",
+          "description": "Devreye almadan dört ila altı hafta sonra başlangıç değerleriyle karşılaştırıyoruz: harcanan saat, hata oranı, yeniden iş ve yığılmanın nereye kaydığı. Bu ölçüm hem listedeki sıradaki sürecin hâlâ doğru seçim olup olmadığına karar verir hem de bütçeyi onaylayan kişiye gösterilecek sayıdır."
+        }
+      ],
+      "faq": [
+        {
+          "question": "İlk aşamanın sonunda elimize ne geçiyor?",
+          "answer": "İşin bugün nasıl yürüdüğünü gösteren süreç haritası, puanlanmış ve sıralanmış bir yol haritası, aşama başına kaba efor tahmini, mevcut sistemlerinizle entegrasyon noktaları ve sonuçların karşılaştırılacağı başlangıç ölçümü. Tamamı sizindir ve dilerseniz başka bir tedarikçinin uygulayabileceği kadar somuttur."
+        },
+        {
+          "question": "Ne kadar sürer?",
+          "answer": "Haritalama ve yol haritası aşaması, kaç departmanın işin içinde olduğuna göre genellikle iki ila dört haftadır. İlk akışın canlıya çıkması bunun ardından dört ila sekiz haftayı bulur. Yıllara yayılan programlardan bilerek kaçınıyoruz; bir aşama üç ay içinde sonuç gösteremiyorsa kapsamı fazla geniş demektir."
+        },
+        {
+          "question": "Maliyeti nedir?",
+          "answer": "Keşif ve yol haritası aşaması, ücretsiz ön görüşmenin ardından sabit fiyatla verilir; her geliştirme aşaması ise kapsamı netleştikten sonra ayrı fiyatlanır. Bu ayrım sayesinde yol haritasından sonra durup elinizde işe yarar bir çıktıyla kalabilirsiniz ve kapsamı belirsiz bir işe bütçe onaylamanız istenmez."
+        },
+        {
+          "question": "Sadece danışmanlık mı, yazılımı da siz mi geliştiriyorsunuz?",
+          "answer": "Yazılımı da biz geliştiriyoruz. Haritalama zaten neyin geliştirileceğine karar vermek içindir ve işi aynı kıdemli ekip canlıya kadar taşır. Bu yüzden tahminlerimiz demo senaryosunu değil, veri göçünü ve istisna durumlarını da içerir. Geliştirmeyi içeride yapmayı tercih ederseniz yol haritası başka bir ekibin uygulayabileceği dilde yazılır."
+        },
+        {
+          "question": "Logo, Mikro veya Netsis programımızı değiştirmemiz gerekecek mi?",
+          "answer": "Hayır, genellikle değiştirmemenizi öneriyoruz. Muhasebe programınız yasal olarak anlamlı kayıtların tutulduğu yerdir ve ana kayıt olarak kalmalıdır; yeni akışlar ona bağlanır, böylece veri tek kez girilir. e-Fatura, e-Arşiv ve e-İrsaliye tarafı da mevcut entegratörünüz üzerinden yürümeye devam eder. Operasyonel süreçleri değiştirirken aynı anda çalışan muhasebe sistemini de değiştirmek, dönüşüm projelerinin tıkanma sebebidir."
+        },
+        {
+          "question": "Personelimiz yeni sistemlere direniyor, bunu nasıl aşıyorsunuz?",
+          "answer": "İşi yapan kişiyi ilk görüşmeden itibaren sürece dahil ederek ve yaygınlaştırmadan önce küçük bir grupla pilot yaparak. Direncin çoğu aslında haklıdır: yeni araç adım ekliyordur ya da o işi hiç yapmamış biri tarafından tasarlanmıştır. Bunu beş kişilik bir pilotta öğrenmek, şirket geneli lansmandan sonra öğrenmekten çok daha ucuzdur."
+        },
+        {
+          "question": "Bazı süreçlerin dijitalleştirilmemesi gerekiyorsa ne olur?",
+          "answer": "Yol haritasında bunu açıkça yazarız. Yılda dört kez tekrarlanan ve bir saat süren bir iş yazılımı hak etmez; bazı istisna durumları da müşteriyi tanıyan iki kişi arasındaki telefon görüşmesiyle gerçekten daha iyi çözülür. Zayıf adayları listeden çıkarmak, haritalama aşamasının en değerli çıktılarından biridir."
+        },
+        {
+          "question": "Excel dosyalarımızdaki veriler kullanılabilir mi?",
+          "answer": "Genellikle evet, temizlendikten sonra. Mükerrer kayıt, tutarsız isimlendirme, serbest metin alanına sıkıştırılmış yapısal veri ve yalnızca dosyayı tutan kişinin anladığı satırlar bekleyin. Veri göçü ve temizliği aşamanın açık kapsamı içinde ele alınır; çünkü bu işin küçümsenmesi, yaygınlaştırmanın gecikmesinin en sık sebebidir."
+        },
+        {
+          "question": "İşe yarayıp yaramadığını nasıl anlayacağız?",
+          "answer": "Önceden ölçtüğümüz için. Başlangıç ölçümü sürece haftada kaç saat harcandığını, hata ve yeniden iş oranlarını ve her el değiştirme noktasındaki yığılmayı kaydeder; aynı ölçüm devreye almadan dört ila altı hafta sonra tekrarlanır. Baştan yüzdelik hedefler vaat etmiyoruz; dürüst olan taahhüt ölçüm yapmaktır, iş başlamadan seçilmiş bir rakam değil."
+        },
+        {
+          "question": "KVKK ve devlet destek programları açısından durum nedir?",
+          "answer": "Kişisel verinin hangi akışta toplandığını, nerede saklandığını ve kimlerle paylaşıldığını süreç haritasının parçası olarak yazıyoruz; bu, KVKK envanteriniz ve aydınlatma metniniz için doğrudan kullanılabilir bir teknik zemindir. KOSGEB benzeri destek başvurularını biz yürütmüyoruz; ancak teknik kapsam ve aşama planı, bu başvuruları hazırlayan mali müşavir veya danışmanınızın ihtiyaç duyduğu ayrıntıdadır."
+        }
+      ],
+      "technologies": [
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "React", "icon": "react" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "Docker", "icon": "docker" },
+        { "name": "Vercel", "icon": "vercel" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Digitale Transformation",
+    "shortDescription": "Manuelle Arbeit wird zu laufender Software — Prozess für Prozess: Aufnahme des Ist-Zustands, Priorisierung nach Stunden und Fehlerkosten, stufenweiser Rollout, Anwenderakzeptanz und Messung vor und nach der Einführung.",
+    "fullDescription": "Digitalisierungsprogramme scheitern erstaunlich einheitlich: Eine Plattform wird gekauft, ein Starttermin verkündet, und achtzehn Monate später läuft das Geschäft weiterhin über Tabellen, während daneben ein System steht, dem niemand traut. Wir gehen umgekehrt vor. Zuerst nehmen wir auf, wie die Arbeit heute tatsächlich abläuft, bewerten jeden Prozess nach Häufigkeit, gebundenen Stunden und Fehlerkosten und bringen den erstplatzierten Prozess produktiv in Betrieb, bevor der nächste beginnt. Ihre Finanzbuchhaltung bleibt führendes System — wir binden sie an, statt sie zu ersetzen. Akzeptanz wird mitentwickelt, denn Software, die Mitarbeitende umgehen, ist Kostenstelle und nicht Vermögenswert. Digitalstrategie bestimmt Richtung und Reihenfolge, Prozessdigitalisierung baut die einzelnen Abläufe.",
+    "features": [
+      "Ist-Aufnahme der Prozesse über Tabellen, Papier, E-Mail und Messenger hinweg",
+      "Priorisierung nach Häufigkeit, gebundenen Stunden, Fehlerkosten und Risiko",
+      "Stufenplan: ein Prozess ist produktiv, bevor der nächste begonnen wird",
+      "Anbindung an bestehende Buchhaltung, ERP und Rechnungsprozesse",
+      "Datenmigration und Bereinigung aus Tabellen und Altsystemen",
+      "Interne Werkzeuge: Auftragsverfolgung, Freigaben und Formulare statt Papier",
+      "Akzeptanz: Pilotanwender, rollenbezogene Kurzschulungen, Rückmeldeschleife",
+      "Messung von Zeit, Fehlern und Nacharbeit vor und nach dem Rollout"
+    ],
+    "benefits": [
+      "Ein produktives Ergebnis in Wochen statt eines Starttermins in einem Jahr",
+      "Mitarbeitende, die das System nutzen, weil sie es im Pilot mitgeformt haben",
+      "Buchhaltung und Rechnungsstellung bleiben führend — kein erzwungener Systemwechsel",
+      "Eine gemessene Ausgangsbasis, an der sich jede Stufe nachträglich prüfen lässt",
+      "Transformation in einzeln budgetierbare Stufen mit Pausen dazwischen",
+      "Nachvollziehbare Dokumentation von Datenflüssen für Ihr Verarbeitungsverzeichnis"
+    ],
+    "metaTitle": "Digitale Transformation — Prozesse & Rollout | PakSoft",
+    "metaDescription": "Digitale Transformation in Stufen: Prozessaufnahme, priorisierte Roadmap, ERP-Anbindung, Anwenderakzeptanz, gemessene Ergebnisse. Jetzt Erstgespräch buchen.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Ausgangslage und Interviews",
+          "description": "Wir setzen uns mit den Menschen zusammen, die die Arbeit tun — Auftragserfassung, Versand, Fakturierung, Kundennachverfolgung — und halten fest, was tatsächlich passiert, inklusive der Umwege, die niemand dokumentiert. Vor jeder Änderung erfassen wir eine Ausgangsbasis: Stunden pro Woche, Fehler- und Nacharbeitsquoten sowie die Stellen, an denen sich Arbeit staut."
+        },
+        {
+          "step": 2,
+          "title": "Prozesslandkarte und Bewertung",
+          "description": "Jeder Prozess wird durchgängig mit Eingaben, Übergaben, beteiligten Systemen und Fehlerquellen abgebildet und anschließend nach Häufigkeit, gebundenen Stunden, Fehlerkosten und regulatorischer Relevanz bewertet. Die Bewertung ist bewusst nüchterne Arithmetik, damit nicht die lauteste Abteilung die Roadmap bestimmt."
+        },
+        {
+          "step": 3,
+          "title": "Priorisierte Roadmap mit Schnittstellen",
+          "description": "Sie erhalten einen Stufenplan: was zuerst digitalisiert wird, welche Abhängigkeiten bestehen, welche Systeme Daten austauschen müssen und was vorerst manuell bleibt. Jede Stufe ist so geschnitten, dass sie einzeln budgetiert, geliefert und bewertet werden kann."
+        },
+        {
+          "step": 4,
+          "title": "Erster Ablauf mit Pilotanwendern",
+          "description": "Der am höchsten bewertete Prozess wird als lauffähige Software gebaut und einer kleinen Gruppe echter Anwender vorgelegt, solange Änderungen noch günstig sind. Deren Einwände in Woche zwei sind wertvoller als jedes Lastenheft, und der Ablauf wird vor dem Rollout danach umgeformt."
+        },
+        {
+          "step": 5,
+          "title": "Anbindung, Migration und Rollout",
+          "description": "Der Ablauf wird an Buchhaltung oder ERP angebunden, sodass Daten einmal erfasst und automatisch abgeglichen werden; historische Datensätze werden in derselben Stufe migriert und bereinigt statt vertagt. Zum Rollout gehören rollenbezogene Kurzanleitungen und eine benannte Ansprechperson für die ersten Wochen."
+        },
+        {
+          "step": 6,
+          "title": "Messen, nachsteuern, nächsten Prozess ziehen",
+          "description": "Vier bis sechs Wochen nach dem Rollout vergleichen wir mit der Ausgangsbasis: aufgewendete Stunden, Fehlerquoten, Nacharbeit und wohin sich der Stau verschoben hat. Dieses Ergebnis entscheidet, ob der nächste Prozess auf der Liste noch der richtige ist, und es ist die Zahl für die Budgetfreigabe."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was erhalten wir am Ende der ersten Stufe?",
+          "answer": "Eine Prozesslandkarte des heutigen Ablaufs, eine bewertete und sortierte Roadmap mit grobem Aufwand je Stufe, die Schnittstellen zu Ihren bestehenden Systemen und eine Ausgangsmessung als Vergleichsmaßstab. Alles gehört Ihnen und ist konkret genug, dass ein anderer Dienstleister damit umsetzen könnte."
+        },
+        {
+          "question": "Wie lange dauert das?",
+          "answer": "Aufnahme und Roadmap dauern je nach Zahl der beteiligten Abteilungen typischerweise zwei bis vier Wochen. Der erste produktive Ablauf folgt meist vier bis acht Wochen danach. Mehrjährige Programme vermeiden wir bewusst: Wenn eine Stufe innerhalb eines Quartals kein Ergebnis zeigen kann, ist sie zu groß geschnitten."
+        },
+        {
+          "question": "Was kostet das?",
+          "answer": "Die Analyse- und Roadmap-Stufe wird nach einem kostenfreien Vorgespräch zum Festpreis kalkuliert, jede Umsetzungsstufe separat, sobald ihr Umfang klar ist. Dadurch können Sie nach der Roadmap mit einem verwertbaren Ergebnis aufhören und müssen kein Budget für unspezifizierte Arbeit freigeben."
+        },
+        {
+          "question": "Beraten Sie nur oder setzen Sie auch um?",
+          "answer": "Wir setzen um. Die Aufnahme dient dazu, die richtige Umsetzung zu bestimmen, und dieselben erfahrenen Leute bringen sie in den Produktivbetrieb — deshalb berücksichtigen unsere Schätzungen Datenmigration und Sonderfälle statt nur den Demopfad. Möchten Sie intern bauen, ist die Roadmap so formuliert, dass ein anderes Team sie ausführen kann."
+        },
+        {
+          "question": "Müssen wir unser ERP oder unsere Buchhaltung ablösen?",
+          "answer": "Nein, davon raten wir meist ab. In der Buchhaltung liegen die rechtlich maßgeblichen Aufzeichnungen, sie sollte führendes System bleiben; neue Abläufe binden sich an, sodass Daten nur einmal erfasst werden. Ein Finanzsystem gleichzeitig mit den operativen Prozessen zu wechseln, ist der häufigste Grund für stockende Programme."
+        },
+        {
+          "question": "Unsere Belegschaft ist skeptisch gegenüber neuen Systemen.",
+          "answer": "Deshalb beziehen wir die ausführenden Personen ab dem ersten Interview ein und pilotieren mit einer kleinen Gruppe vor jedem breiten Rollout. Widerstand ist meist rational: Das neue Werkzeug fügt Schritte hinzu oder wurde von jemandem entworfen, der die Aufgabe nie gemacht hat. Das im Pilot mit fünf Personen zu erfahren, ist deutlich günstiger als nach der unternehmensweiten Einführung."
+        },
+        {
+          "question": "Was, wenn ein Prozess nicht digitalisiert werden sollte?",
+          "answer": "Dann steht das in der Roadmap. Ein Ablauf, der viermal im Jahr eine Stunde kostet, rechtfertigt keine Software, und manche Ausnahmefälle löst ein Telefonat zwischen zwei Personen, die den Kunden kennen, tatsächlich besser. Schwache Kandidaten von der Liste zu streichen, gehört zum Nutzen der Aufnahmephase."
+        },
+        {
+          "question": "Wie steht es um DSGVO und Nachweisbarkeit?",
+          "answer": "Die Prozesslandkarte hält fest, an welcher Stelle personenbezogene Daten entstehen, wo sie gespeichert werden, an welche Auftragsverarbeiter sie fließen und wie lange sie aufbewahrt werden. Das ergibt eine prüfbare Grundlage für Ihr Verarbeitungsverzeichnis und für Löschkonzepte. Eine juristische Bewertung ersetzt es nicht, liefert Ihrem Datenschutzbeauftragten aber belastbare Fakten."
+        },
+        {
+          "question": "Woran erkennen wir, ob es gewirkt hat?",
+          "answer": "Daran, dass vorher gemessen wurde. Die Ausgangsbasis erfasst Wochenstunden je Prozess, Fehler- und Nacharbeitsquoten sowie den Rückstau an jeder Übergabe; dieselben Messungen werden vier bis sechs Wochen nach dem Rollout wiederholt. Prozentziele sagen wir vorab nicht zu — zugesichert wird die Messung, nicht eine vor Projektbeginn gewählte Zahl."
+        },
+        {
+          "question": "Wie verhält sich das zu Digitalstrategie und Prozessdigitalisierung?",
+          "answer": "Diese Seite ist die Klammer. Digitalstrategie bestimmt Richtung, Reihenfolge, Budgetrahmen und das, was bewusst unangetastet bleibt. Prozessdigitalisierung liefert die einzelnen Abläufe in den Produktivbetrieb. Die meisten Kunden starten hier mit einem Vorgespräch und werden dann derjenigen Leistung zugeordnet, die zu ihrer Lage passt."
+        }
+      ],
+      "technologies": [
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "React", "icon": "react" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "Docker", "icon": "docker" },
+        { "name": "Vercel", "icon": "vercel" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "التحول الرقمي",
+    "shortDescription": "تحويل العمل اليدوي إلى برمجيات تعمل فعلاً، عمليةً بعد أخرى: رسم الوضع الحالي، وترتيب الأولويات بحسب الساعات وكلفة الخطأ، وتنفيذ على مراحل، وتبنٍّ حقيقي من الموظفين، وقياس قبل وبعد.",
+    "fullDescription": "يفشل التحول الرقمي بطريقة متكررة: تُشترى منصّة، ويُعلَن موعد إطلاق، وبعد ثمانية عشر شهراً ما زالت جداول البيانات تدير العمل إلى جانب نظام لا يثق به أحد. نحن نعمل بالاتجاه المعاكس. نرسم أولاً كيف يُنجَز العمل اليوم فعلياً، ونمنح كل عملية درجة بحسب تكرارها والساعات التي تستهلكها وكلفة الخطأ فيها، ثم نحوّل أعلى العمليات في القائمة إلى برنامج يعمل في الإنتاج قبل الانتقال إلى التالية. يبقى نظامكم المحاسبي هو السجل المعتمد؛ نتكامل معه ولا نستبدله. ويُصمَّم التبنّي منذ البداية، لأن برنامجاً يلتفّ حوله الموظفون هو تكلفة لا أصل. تحدّد الاستراتيجية الرقمية الاتجاه والترتيب، وتبني رقمنة العمليات كل مسار على حدة.",
+    "features": [
+      "رسم الوضع الحالي للعمليات عبر جداول البيانات والورق والبريد والمحادثات",
+      "ترتيب الأولويات بدرجات: التكرار، والساعات المستهلكة، وكلفة الخطأ، والمخاطر",
+      "خطة تنفيذ على مراحل: عملية واحدة تعمل في الإنتاج قبل بدء التالية",
+      "التكامل مع أنظمة المحاسبة وتخطيط الموارد والفوترة القائمة لديكم",
+      "ترحيل البيانات وتنظيفها من جداول البيانات والأنظمة القديمة",
+      "أدوات داخلية: تتبّع الطلبات، ومسارات الاعتماد، ونماذج تُلغي الورق",
+      "التبنّي: مستخدمون تجريبيون، ومواد تدريب قصيرة حسب الدور، وحلقة تغذية راجعة",
+      "قياس الوقت والأخطاء وإعادة العمل قبل الإطلاق وبعده"
+    ],
+    "benefits": [
+      "نتيجة تعمل في الإنتاج خلال أسابيع، بدل موعد إطلاق بعد سنة",
+      "موظفون يستخدمون النظام لأنهم شاركوا في تشكيله خلال المرحلة التجريبية",
+      "بقاء المحاسبة والفوترة مرجعاً معتمداً دون فرض استبدال المنظومة",
+      "خط أساس مقيس يتيح التحقق من جدوى كل مرحلة بعد تنفيذها",
+      "تحوّل مقسّم إلى مراحل قابلة للتمويل يمكن التوقف بينها",
+      "رأي صريح في العمليات التي لا تستحق الرقمنة أصلاً"
+    ],
+    "metaTitle": "التحول الرقمي — رقمنة العمليات والتنفيذ | PakSoft",
+    "metaDescription": "تحوّل رقمي على مراحل: رسم العمليات، وخارطة طريق مرتبة بالأولوية، وتكامل مع أنظمة المحاسبة، وقياس النتائج. احجزوا جلسة مراجعة مجانية لعملياتكم اليوم.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "خط الأساس والمقابلات الميدانية",
+          "description": "نجلس مع من ينفّذون العمل فعلاً: إدخال الطلبات، والشحن، والفوترة، ومتابعة العملاء، ونسجّل ما يحدث حقيقةً بما في ذلك الحلول الالتفافية التي لا يوثّقها أحد. وقبل أي تغيير نلتقط خط أساس: الساعات الأسبوعية، ونسب الخطأ وإعادة العمل، ومواضع تراكم الطلبات."
+        },
+        {
+          "step": 2,
+          "title": "خريطة العمليات ومنح الدرجات",
+          "description": "تُرسم كل عملية من طرف إلى طرف بمدخلاتها ونقاط تسليمها وأنظمتها ومواضع الخلل فيها، ثم تُمنح درجة بحسب التكرار والساعات وكلفة الخطأ والمسؤولية التنظيمية. الحساب بسيط ومملّ عن قصد، لأنه يمنع القسم الأعلى صوتاً من رسم خارطة الطريق."
+        },
+        {
+          "step": 3,
+          "title": "خارطة طريق مرتّبة مع نقاط التكامل",
+          "description": "تحصلون على خطة مرتّبة: ما يُرقمَن أولاً، وما يعتمد على ماذا، وأي الأنظمة يجب أن تتبادل البيانات، وما يبقى يدوياً في الوقت الحالي. وكل مرحلة محدّدة بحيث يمكن تمويلها وتسليمها والحكم عليها وحدها دون الالتزام بالبرنامج كاملاً."
+        },
+        {
+          "step": 4,
+          "title": "بناء أول مسار مع مستخدمين تجريبيين",
+          "description": "نبني العملية الأعلى درجة كبرنامج يعمل، ونضعه أمام مجموعة صغيرة من المستخدمين الحقيقيين بينما التعديل ما زال رخيصاً. اعتراضاتهم في الأسبوع الثاني أثمن من أي وثيقة متطلبات، ويُعاد تشكيل المسار وفقها قبل التوسّع."
+        },
+        {
+          "step": 5,
+          "title": "التكامل والترحيل والتوسّع",
+          "description": "يُربط المسار بنظام المحاسبة أو تخطيط الموارد بحيث تُدخَل البيانات مرة واحدة وتُطابَق تلقائياً، وتُرحَّل السجلات التاريخية وتُنظَّف ضمن المرحلة نفسها لا لاحقاً. ويرافق التوسّع مواد تدريب قصيرة حسب الدور وشخص محدّد بالاسم للرجوع إليه في الأسابيع الأولى."
+        },
+        {
+          "step": 6,
+          "title": "القياس والتصحيح ثم العملية التالية",
+          "description": "بعد أربعة إلى ستة أسابيع من الإطلاق نقارن بخط الأساس: الساعات المصروفة، ونسب الخطأ، وإعادة العمل، وأين انتقل التراكم. هذه النتيجة تقرر ما إذا كانت العملية التالية في القائمة ما زالت الخيار الصحيح، وهي الرقم الذي يُعرض على من اعتمد الميزانية."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما الذي نحصل عليه بنهاية المرحلة الأولى؟",
+          "answer": "خريطة لعملياتكم كما تجري اليوم، وخارطة طريق مرتّبة بدرجات مع تقدير جهد تقريبي لكل مرحلة، ونقاط التكامل مع أنظمتكم القائمة، وقياس أساس تُقارَن به النتائج. كل ذلك ملك لكم، ومفصّل بما يكفي لأن ينفّذه مورّد آخر إن فضّلتم ذلك."
+        },
+        {
+          "question": "كم تستغرق المدة؟",
+          "answer": "مرحلة الرسم وخارطة الطريق تستغرق عادةً أسبوعين إلى أربعة بحسب عدد الأقسام المشاركة. ثم يظهر أول مسار في الإنتاج خلال أربعة إلى ثمانية أسابيع بعدها. نتجنّب عمداً البرامج الممتدة لسنوات: إذا تعذّر على مرحلة أن تُظهر نتيجة خلال ربع سنة فنطاقها أوسع مما ينبغي."
+        },
+        {
+          "question": "كم تبلغ الكلفة؟",
+          "answer": "مرحلة الاستكشاف وخارطة الطريق بسعر ثابت يُحدَّد بعد جلسة مراجعة مجانية، وكل مرحلة تنفيذ تُسعَّر منفصلة بعد وضوح نطاقها. هذا التقسيم يتيح لكم التوقف بعد خارطة الطريق ولديكم مخرج قابل للاستخدام، ولا يُطلب منكم اعتماد ميزانية لعمل غير محدّد النطاق."
+        },
+        {
+          "question": "هل تكتفون بالاستشارة أم تنفّذون البرمجيات؟",
+          "answer": "ننفّذ. الرسم موجود أصلاً لتحديد ما يجب بناؤه، والفريق نفسه يواصل العمل حتى الإنتاج، ولهذا تشمل تقديراتنا ترحيل البيانات والحالات الاستثنائية لا مسار العرض التوضيحي فقط. وإن فضّلتم البناء داخلياً، فخارطة الطريق مكتوبة بحيث ينفّذها فريق آخر."
+        },
+        {
+          "question": "هل سنضطر لاستبدال نظام المحاسبة أو تخطيط الموارد لدينا؟",
+          "answer": "لا، وغالباً ننصح بعكس ذلك. نظام المحاسبة هو موضع السجلات ذات الأثر النظامي ويجب أن يبقى المرجع المعتمد، وتتكامل معه المسارات الجديدة بحيث تُدخَل البيانات مرة واحدة، بما في ذلك متطلبات الفوترة الإلكترونية المعتمدة لديكم. استبدال نظام مالي يعمل بالتزامن مع تغيير العمليات التشغيلية هو السبب الأشهر لتعثّر برامج التحول."
+        },
+        {
+          "question": "موظفونا يقاومون الأنظمة الجديدة، كيف تعالجون ذلك؟",
+          "answer": "بإشراك من ينفّذ العمل منذ المقابلة الأولى، وبتجربة أولية مع مجموعة صغيرة قبل أي توسّع. معظم المقاومة منطقية: الأداة الجديدة تضيف خطوات، أو صمّمها شخص لم يمارس المهمة يوماً. اكتشاف ذلك في تجربة من خمسة أشخاص أرخص كثيراً من اكتشافه بعد إطلاق يشمل الشركة كلها."
+        },
+        {
+          "question": "ماذا لو كانت بعض عملياتنا لا تستحق الرقمنة؟",
+          "answer": "عندها تقول خارطة الطريق ذلك. عملية تتكرر أربع مرات في السنة وتستغرق ساعة لا تبرّر برمجيات، وبعض الحالات الاستثنائية تُحلّ فعلياً بمكالمة بين شخصين يعرفان العميل. شطب المرشحين الضعفاء من القائمة جزء أساسي من قيمة مرحلة الرسم."
+        },
+        {
+          "question": "هل بياناتنا في جداول البيانات صالحة للاستخدام؟",
+          "answer": "غالباً نعم بعد التنظيف. توقّعوا تكراراً في السجلات، وتسميات غير متسقة، وحقول نصّية حرة تحتوي بيانات مهيكلة، وسطوراً لا يفهمها إلا من يتولّى الملف. نتعامل مع الترحيل والتنظيف كنطاق معلن ضمن المرحلة، لأن الاستهانة به هي السبب الأكثر شيوعاً لتأخر الإطلاق."
+        },
+        {
+          "question": "كيف نعرف أن التغيير نجح فعلاً؟",
+          "answer": "لأننا قِسنا قبله. يسجّل خط الأساس الساعات الأسبوعية على العملية ونسب الخطأ وإعادة العمل والتراكم عند كل نقطة تسليم، وتُعاد القياسات نفسها بعد أربعة إلى ستة أسابيع من الإطلاق. لا نعد بنسب مئوية مسبقاً؛ الوعد الصادق هو القياس، لا رقم اختير قبل بدء العمل."
+        },
+        {
+          "question": "ما علاقة هذه الصفحة بالاستراتيجية الرقمية ورقمنة العمليات؟",
+          "answer": "هذه الصفحة هي المظلة. الاستراتيجية الرقمية تحدّد الاتجاه والترتيب وشكل الميزانية وما يُترك دون مساس. أما رقمنة العمليات فتسلّم المسارات الفردية إلى بيئة الإنتاج. يبدأ معظم العملاء بجلسة مراجعة هنا ثم يُوجَّهون إلى الخدمة الأنسب لوضعهم الفعلي."
+        }
+      ],
+      "technologies": [
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "React", "icon": "react" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "Docker", "icon": "docker" },
+        { "name": "Vercel", "icon": "vercel" }
+      ]
+    }
+  }
+}

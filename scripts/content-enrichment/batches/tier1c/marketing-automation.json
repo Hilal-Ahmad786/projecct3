@@ -1,0 +1,479 @@
+{
+  "slug": "marketing-automation",
+  "en": {
+    "name": "Marketing Automation",
+    "shortDescription": "Automation designed from the data model outwards: lifecycle stages, consent capture, deduplication, lead scoring, routing and nurture — built on HubSpot, Salesforce Marketing Cloud or custom code, whichever actually fits.",
+    "fullDescription": "Marketing Automation is a data project before it is a tool project. We start with the lifecycle — how a contact becomes a lead, a qualified lead, an opportunity and a customer — then define the fields, sources and consent records that make those stages mean the same thing to everyone. Only after that do we choose between HubSpot, Salesforce Marketing Cloud or a custom build on Node and TypeScript with webhooks, because the platform is the cheapest decision to change and the data model is the most expensive. We build automation ourselves as well as configure it: our own multi-tenant AI support agent for ikas stores routes WhatsApp and Instagram conversations into a lead pipeline and fires automated notifications, which is where a good deal of this experience comes from. Detail continues in HubSpot Implementation, Salesforce Marketing Cloud and Custom Marketing Automation.",
+    "features": [
+      "Lifecycle Stage Design and a Shared Definition of a Qualified Lead",
+      "Consent Capture, Storage and Audit Trail as the Foundation of Every Flow",
+      "Deduplication, Field Standardisation and Ongoing Data Hygiene Rules",
+      "Lead Scoring Based on Behaviour and Fit, Reviewed Against Real Outcomes",
+      "Routing and Sales Handoff Rules With Response-Time Expectations Agreed Up Front",
+      "Nurture and Lifecycle Email Flows Built Around Buying Stage, Not Send Calendar",
+      "Website, E-Commerce, Chat and WhatsApp Integrations via API and Webhooks",
+      "Reporting on Pipeline and Revenue in GA4, Looker Studio and the CRM Itself"
+    ],
+    "benefits": [
+      "A single, agreed definition of a lead that marketing and sales both work from",
+      "Clean, deduplicated records instead of three versions of the same customer",
+      "Consent recorded properly, so campaigns are defensible when someone asks",
+      "Leads reaching the right person quickly rather than sitting unactioned in an inbox",
+      "Follow-up that continues when the team is busy, on holiday or short-handed",
+      "Full ownership — your CRM, your contact data, your automations, documented and transferable"
+    ],
+    "metaTitle": "Marketing Automation & CRM Workflows | PakSoft",
+    "metaDescription": "Marketing automation built on a clean data model: lifecycle stages, consent, scoring, routing and nurture flows. Book a free automation audit today.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Process & Data Audit",
+          "description": "We map how leads actually arrive today, what happens to each one, where they are recorded and where they are lost, then look at the state of the existing data — duplicates, empty fields, contacts nobody can source. This stage frequently uncovers that the problem is a process gap rather than a missing tool, and automating a broken process only breaks it faster."
+        },
+        {
+          "step": 2,
+          "title": "Lifecycle & Definitions",
+          "description": "We agree the stages a contact moves through and, critically, what qualifies a lead to move between them — written down, not assumed. Marketing and sales having different definitions of a qualified lead is the most common reason automation projects produce arguments instead of revenue."
+        },
+        {
+          "step": 3,
+          "title": "Consent & Data Model",
+          "description": "We design where consent is captured, what exactly the person agreed to, when, and how that is stored so it can be produced later if anyone asks. Alongside it we set field standards, deduplication rules and source tracking, because scoring and segmentation built on inconsistent fields will quietly mislead everyone who reads the reports."
+        },
+        {
+          "step": 4,
+          "title": "Platform Decision",
+          "description": "Only now do we choose the tool: HubSpot when an integrated CRM and marketing suite fits the team, Salesforce Marketing Cloud in larger environments already standardised on Salesforce, custom Node and TypeScript services when the requirement is specific and licence costs outweigh the benefit. We give you the licence cost implications in writing so the decision is made with full numbers."
+        },
+        {
+          "step": 5,
+          "title": "Build & Integrate",
+          "description": "We build the flows — capture, scoring, routing, nurture, handoff, re-engagement — and connect the systems that feed them through APIs and webhooks: website forms, e-commerce, chat and messaging channels. Everything is built with test contacts first, because a misconfigured flow can email your entire database before anyone notices."
+        },
+        {
+          "step": 6,
+          "title": "Handover, Monitoring & Iteration",
+          "description": "You get documentation of every flow, field and integration, plus training for the people who will run it day to day. We then monitor deliverability, routing failures and stage conversion, and revise the scoring model once real outcomes show which signals actually predicted a sale."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Are HubSpot or Salesforce licence fees included in your price?",
+          "answer": "No. Platform subscriptions are billed by the vendor directly to you, under your own account, and the cost depends on the tier and contact volume you choose. Our fee covers audit, data model design, configuration, integration, testing, documentation and training. We tell you the expected licence tier before you commit, because discovering the real subscription cost after the design is finished is a bad surprise."
+        },
+        {
+          "question": "How long does an implementation take?",
+          "answer": "A focused build on a clean data set can be live in a few weeks; a migration involving messy records, several source systems and multiple teams usually runs one to three months. The variable is rarely the software — it is how quickly definitions get agreed and how much data cleaning is required. We sequence the work so the highest-value flows go live first rather than waiting for the whole system."
+        },
+        {
+          "question": "Our CRM is a mess. Do we have to clean it before we start?",
+          "answer": "Not before we start, but it has to be part of the project. We profile the data first — duplicates, conflicting fields, contacts with no recorded source or consent — and agree merge and standardisation rules rather than deleting anything unilaterally. Automation applied to a dirty database sends the wrong message to the wrong person at scale, which costs more trust than the project was worth."
+        },
+        {
+          "question": "Who owns the data, the automations and the account?",
+          "answer": "You do, in every case. The platform account is opened in your name, contact data belongs to you, and custom automation we write is delivered to your repository with documentation. If we hand over to another team or you bring it in-house, you get flow diagrams, field definitions and integration notes rather than a system only we understand."
+        },
+        {
+          "question": "Will automation replace part of our sales team?",
+          "answer": "No, and treating it that way tends to backfire. Automation is good at the parts humans do badly — reacting instantly, never forgetting a follow-up, routing consistently, keeping records — and poor at the parts humans do well, like judgement and handling an unusual objection. In practice it usually means the same team handles more leads with less admin, not fewer people."
+        },
+        {
+          "question": "What happens if the underlying process is broken?",
+          "answer": "It breaks faster and more visibly, which is the honest warning we give every client. If leads are currently ignored for two days, automation will deliver those ignored leads more efficiently; if nobody owns follow-up, no workflow assigns ownership by itself. Where we find a process gap we say so and fix the process definition first, even when that delays the build."
+        },
+        {
+          "question": "How do you handle consent and permission?",
+          "answer": "Consent is designed first, not retrofitted. We capture what a person agreed to, when and through which form, store it as a record that can be produced later, and build every flow so it only sends to contacts whose consent covers that message. Double opt-in is standard practice in several European markets, and we set it up wherever it is required or advisable rather than treating it as optional friction."
+        },
+        {
+          "question": "Can you connect our website, shop and messaging channels?",
+          "answer": "Yes — website forms, e-commerce platforms, chat widgets and messaging channels are connected through APIs and webhooks so a lead is recorded once, with its source intact. We have built this end to end ourselves: our multi-tenant AI support agent for ikas stores handles WhatsApp and Instagram conversations, pushes them into a lead pipeline and triggers automated notifications. Messaging platforms have their own template and opt-in rules, which we build around rather than ignore."
+        },
+        {
+          "question": "Do we need HubSpot, Salesforce Marketing Cloud or something custom?",
+          "answer": "That is what this page decides, and the answer follows your team, your existing stack and your budget. HubSpot Implementation suits organisations that want CRM and marketing in one place with fast setup; Salesforce Marketing Cloud fits larger environments already committed to Salesforce; Custom Marketing Automation makes sense when the requirement is specific, the volume is high or per-seat licence costs outweigh the benefit. We will recommend the cheapest option that meets the requirement."
+        },
+        {
+          "question": "How is lead scoring actually decided?",
+          "answer": "It starts as a hypothesis and becomes evidence. We set an initial model from fit criteria — company size, sector, role — and behavioural signals such as pricing page visits or repeat opens, then review it against the leads that actually closed. Scores that never get validated tend to reward busywork, so revising the model after the first cohort of real outcomes is part of the engagement, not an extra."
+        },
+        {
+          "question": "How do you measure whether automation is working?",
+          "answer": "By stage conversion and speed, not by email opens. We track how many contacts move between lifecycle stages, how long each transition takes, how quickly leads get a first human response, and what share of pipeline came from automated flows. Deliverability, bounce and unsubscribe rates are monitored too, because a flow that quietly damages your sending reputation costs far more than it earns."
+        },
+        {
+          "question": "Can you work with the team and tools we already have?",
+          "answer": "Usually yes, and we prefer it to a rebuild. If a platform is already in place and configured badly, an audit and repair is normally cheaper than migrating, and we say so even though a migration would be a larger project for us. Where a tool genuinely cannot do what you need, we explain precisely what it cannot do rather than arguing in generalities."
+        }
+      ],
+      "technologies": [
+        { "name": "HubSpot", "icon": "hubspot" },
+        { "name": "Salesforce Marketing Cloud", "icon": "salesforce-marketing-cloud" },
+        { "name": "Node.js", "icon": "nodejs" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Webhooks & REST APIs", "icon": "webhooks" },
+        { "name": "Google Analytics 4", "icon": "ga4" },
+        { "name": "Google Tag Manager", "icon": "google-tag-manager" },
+        { "name": "Looker Studio", "icon": "looker-studio" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Pazarlama Otomasyonu",
+    "shortDescription": "Otomasyonu araçtan değil veri modelinden başlatırız: yaşam döngüsü aşamaları, açık rıza kaydı, mükerrer temizliği, skorlama, yönlendirme ve besleme akışları. Araç HubSpot, Salesforce ya da özel yazılım olabilir.",
+    "fullDescription": "Pazarlama otomasyonu, araç projesi olmadan önce bir veri projesidir. İşe yaşam döngüsüyle başlarız: bir kişi hangi noktada aday, nitelikli aday, fırsat ve müşteri sayılır. Ardından bu aşamaların herkes için aynı anlama gelmesini sağlayan alanları, kaynakları ve rıza kayıtlarını tanımlarız. Araç kararını ancak bundan sonra veririz — HubSpot, Salesforce Marketing Cloud ya da Node ve TypeScript üzerine webhook'larla kurulan özel bir yapı — çünkü platform değiştirmesi en ucuz karardır, veri modeli ise en pahalısı. Otomasyonu yalnızca kurmuyor, geliştiriyoruz da: ikas mağazaları için yazdığımız çok kiracılı yapay zekâ destek asistanı WhatsApp ve Instagram konuşmalarını bir aday hattına taşıyor ve otomatik bildirim üretiyor. Türkiye'de ticari elektronik ileti göndermeyi planlıyorsanız KVKK açık rızası ve İYS kaydı akışın temelidir, sonradan eklenen bir madde değil. Detay HubSpot Implementation, Salesforce Marketing Cloud ve Custom Marketing Automation sayfalarında sürer.",
+    "features": [
+      "Yaşam döngüsü aşamalarının ve nitelikli aday tanımının yazılı olarak belirlenmesi",
+      "KVKK açık rızası ve İYS kaydını kapsayan izin yakalama, saklama ve denetim izi",
+      "Mükerrer kayıt temizliği, alan standardizasyonu ve sürekli veri hijyeni kuralları",
+      "Davranış ve uygunluk temelli skorlama, gerçek satış sonuçlarıyla düzenli revizyon",
+      "Yönlendirme, satışa devir kuralları ve baştan konuşulmuş ilk yanıt süresi hedefi",
+      "Takvime değil satın alma aşamasına göre kurulan besleme ve yaşam döngüsü akışları",
+      "Site formları, e-ticaret, canlı sohbet ve WhatsApp entegrasyonları (API ve webhook)",
+      "CRM, GA4 ve Looker Studio üzerinde pipeline ve ciro odaklı raporlama"
+    ],
+    "benefits": [
+      "Pazarlama ile satışın aynı anlamda kullandığı tek bir nitelikli aday tanımı",
+      "Aynı müşterinin üç ayrı kaydı yerine tekilleştirilmiş ve düzgün doldurulmuş veri",
+      "Denetim geldiğinde gösterilebilen, tarihli ve kaynağı belli rıza kayıtları",
+      "Gelen adayın kutuda beklemeden doğru kişiye hızla ulaşması",
+      "Ekip yoğunken, izindeyken ya da eksikken de duran değil devam eden takip",
+      "CRM, kişi verisi ve otomasyonlar sizde kalır; dokümante edilir ve devredilebilir"
+    ],
+    "metaTitle": "Pazarlama Otomasyonu ve CRM Akışları | PakSoft",
+    "metaDescription": "Pazarlama otomasyonu kurulumu: yaşam döngüsü, KVKK ve İYS uyumlu izin, skorlama, yönlendirme ve besleme akışları. Ücretsiz otomasyon analizi alın.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Süreç ve Veri Denetimi",
+          "description": "Adayların bugün gerçekte nereden geldiğini, her birine ne olduğunu, nereye kaydedildiğini ve nerede kaybolduğunu çıkarır; mevcut verinin durumuna bakarız — mükerrer kayıtlar, boş alanlar, kaynağı kimsenin bilmediği kişiler. Bu aşama çoğu zaman sorunun eksik bir araç değil eksik bir süreç olduğunu gösterir; bozuk bir süreci otomatikleştirmek onu yalnızca daha hızlı bozar."
+        },
+        {
+          "step": 2,
+          "title": "Yaşam Döngüsü ve Tanımlar",
+          "description": "Bir kişinin geçtiği aşamaları ve daha önemlisi aşamalar arasında geçmesi için gereken kriterleri birlikte belirler, varsayım olarak değil yazılı olarak sabitleriz. Pazarlama ile satışın nitelikli adaydan farklı şeyler anlaması, otomasyon projelerinin ciro yerine tartışma üretmesinin en yaygın sebebidir."
+        },
+        {
+          "step": 3,
+          "title": "İzin ve Veri Modeli",
+          "description": "Rızanın nerede alınacağını, kişinin tam olarak neye onay verdiğini, ne zaman verdiğini ve bunun sonradan ibraz edilebilecek şekilde nasıl saklanacağını tasarlarız; ticari elektronik ileti söz konusuysa İYS yükümlülüğünü de bu aşamada işaretleriz. Yanına alan standartlarını, tekilleştirme kurallarını ve kaynak takibini koyarız; tutarsız alanlar üzerine kurulmuş skorlama ve segmentasyon, raporu okuyan herkesi sessizce yanıltır."
+        },
+        {
+          "step": 4,
+          "title": "Araç Kararı",
+          "description": "Aracı ancak bu noktada seçeriz: ekibe entegre bir CRM ve pazarlama seti uyuyorsa HubSpot, Salesforce'a standardize olmuş büyük yapılarda Salesforce Marketing Cloud, ihtiyaç özel ve lisans maliyeti faydayı aşıyorsa Node ve TypeScript ile özel servisler. Lisans maliyetinin ne anlama geldiğini yazılı olarak veririz ki karar eksik rakamla verilmesin."
+        },
+        {
+          "step": 5,
+          "title": "Kurulum ve Entegrasyon",
+          "description": "Akışları kurarız — form yakalama, skorlama, yönlendirme, besleme, satışa devir, yeniden etkileşim — ve bunları besleyen sistemleri API ile webhook üzerinden bağlarız: site formları, e-ticaret altyapısı, canlı sohbet ve mesajlaşma kanalları. Her şey önce test kayıtlarıyla çalıştırılır, çünkü yanlış kurulmuş bir akış kimse fark etmeden tüm veri tabanınıza mesaj gönderebilir."
+        },
+        {
+          "step": 6,
+          "title": "Devir, İzleme ve İyileştirme",
+          "description": "Her akışın, alanın ve entegrasyonun dokümantasyonunu ve sistemi günlük kullanacak kişilere eğitimi teslim ederiz. Sonrasında teslim edilebilirlik, yönlendirme hataları ve aşama dönüşümlerini izler; gerçek satış sonuçları hangi sinyalin gerçekten işe yaradığını gösterdiğinde skorlama modelini yeniden yazarız."
+        }
+      ],
+      "faq": [
+        {
+          "question": "HubSpot veya Salesforce lisans bedeli fiyata dahil mi?",
+          "answer": "Hayır. Platform abonelikleri sağlayıcı tarafından doğrudan size, sizin hesabınız üzerinden faturalanır ve tutar seçtiğiniz paket ile kişi hacmine göre değişir. Bizim ücretimiz denetim, veri modeli tasarımı, kurulum, entegrasyon, test, dokümantasyon ve eğitim karşılığıdır. Beklenen lisans seviyesini karar öncesinde söyleriz; tasarım bittikten sonra gerçek abonelik maliyetini öğrenmek kötü bir sürprizdir."
+        },
+        {
+          "question": "Kurulum ne kadar sürer?",
+          "answer": "Verisi temiz, kapsamı net bir kurulum birkaç haftada canlıya alınabilir; dağınık kayıtlar, birden fazla kaynak sistem ve birden fazla ekip içeren bir geçiş genelde bir ila üç ay sürer. Belirleyici olan nadiren yazılımdır; tanımların ne kadar hızlı netleştiği ve ne kadar veri temizliği gerektiğidir. İşi, en değerli akışlar önce canlıya çıkacak şekilde sıralarız."
+        },
+        {
+          "question": "CRM'imiz dağınık. Başlamadan önce temizlememiz mi gerekiyor?",
+          "answer": "Başlamadan önce değil ama projenin parçası olarak evet. Önce veriyi profilleriz — mükerrer kayıtlar, çelişen alanlar, kaynağı ve rızası kayıtlı olmayan kişiler — sonra tek taraflı silmek yerine birleştirme ve standardizasyon kurallarını birlikte kararlaştırırız. Kirli bir veri tabanı üzerine kurulan otomasyon, yanlış mesajı yanlış kişiye ölçekli biçimde gönderir ve kaybedilen güven projenin getirisinden pahalıya gelir."
+        },
+        {
+          "question": "Veri, otomasyonlar ve hesap kime ait?",
+          "answer": "Hepsi size aittir. Platform hesabı sizin adınıza açılır, kişi verisi sizindir, yazdığımız özel otomasyon kodu dokümantasyonuyla birlikte sizin deponuza teslim edilir. Sistemi başka bir ekibe devretseniz ya da içeride yönetmeye başlasanız akış şemalarını, alan tanımlarını ve entegrasyon notlarını alırsınız; yalnızca bizim anladığımız bir sistem bırakmayız."
+        },
+        {
+          "question": "KVKK ve İYS tarafını nasıl kurguluyorsunuz?",
+          "answer": "İzin sonradan eklenen bir madde değil, tasarımın ilk adımıdır. Kişinin neye, ne zaman ve hangi form üzerinden onay verdiğini kayıt altına alır, her akışı yalnızca o mesajı kapsayan rızaya sahip kişilere gidecek şekilde kurarız. Toplu e-posta veya SMS ile ticari elektronik ileti gönderilecekse İYS kaydı ayrı bir yükümlülüktür; reklam formundaki bir onay tek başına ileti gönderme hakkı vermez ve bunu baştan işaretleriz."
+        },
+        {
+          "question": "Otomasyon satış ekibimizin yerini alır mı?",
+          "answer": "Almaz ve öyle kurgulandığında genelde geri teper. Otomasyon insanların kötü yaptığı işlerde iyidir: anında tepki vermek, takibi unutmamak, tutarlı yönlendirmek, kayıt tutmak. İnsanın iyi yaptığı işlerde — muhakeme, alışılmadık bir itirazı karşılamak — kötüdür. Pratikte sonuç genelde daha az kişi değil, aynı ekibin daha az idari yükle daha çok adayı taşıyabilmesidir."
+        },
+        {
+          "question": "Süreç zaten bozuksa ne olur?",
+          "answer": "Daha hızlı ve daha görünür şekilde bozulur; bunu her müşteriye baştan söyleriz. Adaylar bugün iki gün bekletiliyorsa otomasyon o bekletilen adayları daha verimli teslim eder; takibin sahibi belli değilse hiçbir iş akışı sahibi kendiliğinden atamaz. Süreçte boşluk gördüğümüzde bunu söyler, kurulum gecikse bile önce süreç tanımını düzeltiriz."
+        },
+        {
+          "question": "Sitemizi, e-ticaretimizi ve WhatsApp'ı bağlayabiliyor musunuz?",
+          "answer": "Evet. Site formları, e-ticaret altyapısı, canlı sohbet ve mesajlaşma kanalları API ve webhook üzerinden bağlanır; böylece aday tek kayıt olarak, kaynağı bozulmadan düşer. Bunu uçtan uca kendimiz de kurduk: ikas mağazaları için yazdığımız çok kiracılı yapay zekâ destek asistanı WhatsApp ve Instagram konuşmalarını aday hattına taşıyor ve otomatik bildirim üretiyor. Mesajlaşma platformlarının kendi şablon ve onay kuralları vardır; akışı bunları yok sayarak değil bunlara göre kurarız."
+        },
+        {
+          "question": "Bize HubSpot mı, Salesforce Marketing Cloud mu, özel yazılım mı lazım?",
+          "answer": "Kararı bu sayfada veririz ve cevap ekibinize, mevcut sisteminize ve bütçenize göre değişir. HubSpot Implementation, CRM ile pazarlamayı tek yerde ve hızlı kurmak isteyen yapılara uyar; Salesforce Marketing Cloud, Salesforce'a çoktan yerleşmiş büyük kurumlara; Custom Marketing Automation ise ihtiyaç çok özelse, hacim yüksekse ya da kullanıcı başına lisans maliyeti faydayı aşıyorsa mantıklıdır. İhtiyacı karşılayan en ucuz seçeneği öneririz."
+        },
+        {
+          "question": "Aylık bütçe olarak neye hazırlıklı olmalıyız?",
+          "answer": "İki kalemi ayırmak gerekir: bir defalık kurulum işi ve süregiden lisans maliyeti. KOBİ ölçeğinde çoğu zaman en büyük sürpriz lisanstır; kişi sayısı ve paket seviyesi büyüdükçe abonelik hızla artar ve dövize bağlı fiyatlandırma bunu Türkiye'de daha da hissettirir. Bu yüzden ihtiyacınız birkaç net akışsa, kurulumu HubSpot yerine kendi altyapınız üzerinde özel kodla yapmanın toplam maliyeti düşürdüğü durumları açıkça söyleriz."
+        },
+        {
+          "question": "Skorlama modeline nasıl karar veriliyor?",
+          "answer": "Hipotezle başlar, kanıtla devam eder. Firma büyüklüğü, sektör ve rol gibi uygunluk kriterleri ile fiyat sayfası ziyareti veya tekrar eden açılmalar gibi davranış sinyallerinden bir ilk model kurar, sonra bunu gerçekten kapanan satışlarla karşılaştırırız. Doğrulanmayan skorlar boş meşguliyeti ödüllendirmeye başlar; ilk gerçek sonuç grubundan sonra modeli revize etmek işin parçasıdır, ek iş değil."
+        },
+        {
+          "question": "Otomasyonun işe yaradığını nasıl ölçüyorsunuz?",
+          "answer": "E-posta açılma oranıyla değil, aşama dönüşümü ve hızıyla. Kaç kişinin aşamalar arasında ilerlediğini, her geçişin ne kadar sürdüğünü, adayın ilk insan yanıtını ne kadar sürede aldığını ve pipeline'ın ne kadarının otomatik akışlardan geldiğini izleriz. Teslim edilebilirlik, geri dönen e-posta ve abonelikten çıkma oranları da takip edilir; gönderim itibarınızı sessizce bozan bir akış kazandırdığından çok kaybettirir."
+        }
+      ],
+      "technologies": [
+        { "name": "HubSpot", "icon": "hubspot" },
+        { "name": "Salesforce Marketing Cloud", "icon": "salesforce-marketing-cloud" },
+        { "name": "Node.js", "icon": "nodejs" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Webhook ve REST API", "icon": "webhooks" },
+        { "name": "Google Analytics 4", "icon": "ga4" },
+        { "name": "Google Tag Manager", "icon": "google-tag-manager" },
+        { "name": "Looker Studio", "icon": "looker-studio" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Marketing Automation",
+    "shortDescription": "Automatisierung vom Datenmodell her gedacht: Lifecycle-Stufen, DSGVO-konforme Einwilligung, Dublettenbereinigung, Lead Scoring, Routing und Nurturing — umgesetzt in HubSpot, in Salesforce Marketing Cloud oder als eigene Entwicklung.",
+    "fullDescription": "Marketing Automation ist zuerst ein Datenprojekt und erst danach ein Werkzeugprojekt. Wir beginnen mit dem Lifecycle — wann ein Kontakt zum Lead, zum qualifizierten Lead, zur Opportunity und zum Kunden wird — und definieren anschließend die Felder, Quellen und Einwilligungsnachweise, die diesen Stufen für alle dieselbe Bedeutung geben. Erst dann fällt die Entscheidung zwischen HubSpot, Salesforce Marketing Cloud oder einer eigenen Lösung auf Node und TypeScript mit Webhooks, denn die Plattform lässt sich am günstigsten wechseln, das Datenmodell am teuersten. Im DACH-Raum bilden DSGVO-konforme Einwilligung und die übliche Double-Opt-in-Praxis die Grundlage jedes Flows, nicht eine spätere Ergänzung. Wir konfigurieren nicht nur, wir entwickeln auch selbst: Unser mandantenfähiger KI-Supportagent für ikas-Shops führt WhatsApp- und Instagram-Konversationen in eine Lead-Pipeline und löst automatische Benachrichtigungen aus. Vertieft wird das in HubSpot Implementation, Salesforce Marketing Cloud und Custom Marketing Automation.",
+    "features": [
+      "Definition der Lifecycle-Stufen und ein gemeinsames Verständnis des qualifizierten Leads",
+      "DSGVO-konforme Einwilligungserfassung inklusive Double Opt-in und Nachweisführung",
+      "Dublettenbereinigung, Feldstandards und dauerhafte Regeln zur Datenhygiene",
+      "Lead Scoring aus Fit- und Verhaltenssignalen, überprüft an realen Abschlüssen",
+      "Routing- und Übergaberegeln an den Vertrieb mit vereinbarter Reaktionszeit",
+      "Nurturing-Strecken entlang der Kaufphase statt entlang eines Sendekalenders",
+      "Anbindung von Website, Shop, Chat und Messaging über APIs und Webhooks",
+      "Reporting auf Pipeline und Umsatz in CRM, GA4 und Looker Studio"
+    ],
+    "benefits": [
+      "Eine verbindliche Lead-Definition, mit der Marketing und Vertrieb gleichermaßen arbeiten",
+      "Bereinigte Datensätze statt drei Varianten desselben Kontakts",
+      "Sauber dokumentierte Einwilligungen, die einer Nachfrage standhalten",
+      "Leads, die schnell bei der richtigen Person landen statt in einem Sammelpostfach",
+      "Nachfassen, das auch bei Urlaub, Krankheit und Hochbetrieb weiterläuft",
+      "Volle Eigentümerschaft: Ihr CRM, Ihre Kontaktdaten, Ihre Automationen, dokumentiert und übergabefähig"
+    ],
+    "metaTitle": "Marketing Automation & CRM-Workflows | PakSoft",
+    "metaDescription": "Marketing Automation auf sauberem Datenmodell: Lifecycle, DSGVO-Einwilligung, Scoring, Routing und Nurturing. Jetzt kostenloses Automations-Audit anfragen.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Prozess- und Datenaudit",
+          "description": "Wir erfassen, wie Leads heute tatsächlich hereinkommen, was mit jedem einzelnen geschieht, wo er erfasst wird und an welcher Stelle er verloren geht, und prüfen den Zustand der vorhandenen Daten: Dubletten, leere Pflichtfelder, Kontakte ohne nachvollziehbare Quelle. Häufig zeigt sich dabei eine Prozesslücke statt eines fehlenden Werkzeugs — und ein kaputter Prozess wird durch Automatisierung nur schneller kaputt."
+        },
+        {
+          "step": 2,
+          "title": "Lifecycle und Definitionen",
+          "description": "Wir legen die Stufen fest, die ein Kontakt durchläuft, und vor allem die Kriterien für den Übergang zwischen ihnen — schriftlich, nicht als stillschweigende Annahme. Unterschiedliche Vorstellungen von einem qualifizierten Lead in Marketing und Vertrieb sind der häufigste Grund, warum Automationsprojekte Diskussionen statt Umsatz erzeugen."
+        },
+        {
+          "step": 3,
+          "title": "Einwilligung und Datenmodell",
+          "description": "Wir definieren, wo die Einwilligung erhoben wird, wozu genau sie erteilt wurde, wann und wie sie nachweisbar gespeichert wird, inklusive Double Opt-in, wo es geboten ist. Parallel setzen wir Feldstandards, Dublettenregeln und Quellenerfassung, denn Scoring und Segmentierung auf uneinheitlichen Feldern führen jeden in die Irre, der später die Auswertung liest."
+        },
+        {
+          "step": 4,
+          "title": "Werkzeugentscheidung",
+          "description": "Erst jetzt wählen wir die Plattform: HubSpot, wenn CRM und Marketing in einem System zum Team passen; Salesforce Marketing Cloud in größeren, bereits auf Salesforce standardisierten Umgebungen; eigene Services auf Node und TypeScript, wenn die Anforderung speziell ist und Lizenzkosten den Nutzen übersteigen. Die zu erwartende Lizenzstufe legen wir schriftlich vor, damit die Entscheidung mit vollständigen Zahlen fällt."
+        },
+        {
+          "step": 5,
+          "title": "Aufbau und Integration",
+          "description": "Wir bauen die Strecken — Erfassung, Scoring, Routing, Nurturing, Übergabe, Reaktivierung — und binden die zuliefernden Systeme über APIs und Webhooks an: Formulare, Shop, Chat und Messaging-Kanäle. Alles läuft zuerst mit Testkontakten, weil ein falsch konfigurierter Flow die gesamte Datenbank anschreiben kann, bevor es jemand bemerkt."
+        },
+        {
+          "step": 6,
+          "title": "Übergabe, Monitoring und Iteration",
+          "description": "Sie erhalten die Dokumentation aller Strecken, Felder und Schnittstellen sowie eine Einweisung für die Personen, die das System täglich bedienen. Danach überwachen wir Zustellbarkeit, Routing-Fehler und Stufenkonversion und überarbeiten das Scoring, sobald reale Abschlüsse zeigen, welche Signale tatsächlich vorhersagekräftig waren."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Sind HubSpot- oder Salesforce-Lizenzen in Ihrem Preis enthalten?",
+          "answer": "Nein. Plattformlizenzen rechnet der Anbieter direkt mit Ihnen über Ihr eigenes Konto ab, und die Höhe hängt von Paketstufe und Kontaktvolumen ab. Unser Honorar deckt Audit, Datenmodell, Konfiguration, Integration, Test, Dokumentation und Schulung ab. Die voraussichtlich nötige Lizenzstufe nennen wir vor der Entscheidung, denn die tatsächlichen Abokosten erst nach dem Konzept zu erfahren ist eine unangenehme Überraschung."
+        },
+        {
+          "question": "Wie lange dauert eine Implementierung?",
+          "answer": "Ein klar umrissener Aufbau auf sauberen Daten kann in wenigen Wochen live gehen; eine Migration mit unsauberen Datensätzen, mehreren Quellsystemen und mehreren Abteilungen dauert meist ein bis drei Monate. Der Engpass ist selten die Software, sondern wie schnell Definitionen abgestimmt sind und wie viel Datenbereinigung nötig ist. Wir priorisieren so, dass die wertvollsten Strecken zuerst produktiv gehen."
+        },
+        {
+          "question": "Unser CRM ist unaufgeräumt. Müssen wir vorher aufräumen?",
+          "answer": "Nicht vorher, aber als Teil des Projekts. Wir erstellen zunächst ein Datenprofil — Dubletten, widersprüchliche Felder, Kontakte ohne Quelle oder Einwilligung — und vereinbaren Merge- und Standardisierungsregeln, statt eigenmächtig zu löschen. Automatisierung auf einer unsauberen Datenbasis verschickt die falsche Nachricht an die falsche Person in großem Maßstab, und der Vertrauensverlust kostet mehr als das Projekt einbringt."
+        },
+        {
+          "question": "Wem gehören Daten, Automationen und Konto?",
+          "answer": "Ihnen, in jedem Fall. Das Plattformkonto läuft auf Ihren Namen, die Kontaktdaten gehören Ihnen, und selbst entwickelte Automationen übergeben wir mit Dokumentation in Ihr Repository. Bei einem Wechsel zu einem anderen Dienstleister oder ins eigene Haus erhalten Sie Ablaufdiagramme, Felddefinitionen und Integrationsnotizen statt eines Systems, das nur wir verstehen."
+        },
+        {
+          "question": "Wie halten Sie es mit DSGVO und Double Opt-in?",
+          "answer": "Einwilligung wird zuerst konzipiert und nicht nachträglich angeflanscht. Wir erfassen, wozu, wann und über welches Formular eingewilligt wurde, speichern das nachweisbar und bauen jede Strecke so, dass sie nur Kontakte anspricht, deren Einwilligung die Nachricht abdeckt. Double Opt-in ist im deutschsprachigen Raum gängige und rechtlich empfohlene Praxis, deshalb setzen wir es standardmäßig um und dokumentieren Auftragsverarbeitung sowie Löschfristen."
+        },
+        {
+          "question": "Ersetzt Automatisierung Teile unseres Vertriebs?",
+          "answer": "Nein, und wer es so plant, erlebt meist das Gegenteil. Automatisierung ist gut in dem, was Menschen schlecht können: sofort reagieren, nie eine Wiedervorlage vergessen, konsistent zuordnen, sauber dokumentieren. Sie ist schlecht in dem, was Menschen gut können, etwa Urteilsvermögen und der Umgang mit ungewöhnlichen Einwänden. In der Praxis bearbeitet dasselbe Team mehr Anfragen mit weniger Verwaltungsaufwand."
+        },
+        {
+          "question": "Was passiert, wenn der zugrunde liegende Prozess nicht funktioniert?",
+          "answer": "Er scheitert schneller und sichtbarer — das ist die ehrliche Warnung, die wir jedem Kunden geben. Wenn Anfragen heute zwei Tage liegen bleiben, liefert Automatisierung diese liegen bleibenden Anfragen nur effizienter aus; wenn niemand für Nachfassen zuständig ist, weist kein Workflow von selbst Verantwortung zu. Wo wir eine Prozesslücke finden, benennen wir sie und klären erst die Definition, auch wenn sich der Aufbau dadurch verschiebt."
+        },
+        {
+          "question": "Können Sie Website, Shop und Messaging anbinden?",
+          "answer": "Ja. Formulare, Shopsysteme, Chat-Widgets und Messaging-Kanäle werden über APIs und Webhooks angebunden, sodass ein Lead genau einmal und mit erhaltener Quelle im System landet. Wir haben das selbst End-to-End gebaut: Unser mandantenfähiger KI-Supportagent für ikas-Shops verarbeitet WhatsApp- und Instagram-Konversationen, überführt sie in eine Lead-Pipeline und löst Benachrichtigungen aus. Messaging-Plattformen haben eigene Template- und Opt-in-Regeln, die wir einplanen statt zu umgehen."
+        },
+        {
+          "question": "Brauchen wir HubSpot, Salesforce Marketing Cloud oder eine Eigenentwicklung?",
+          "answer": "Genau das entscheiden wir auf dieser Seite, abhängig von Team, bestehender Systemlandschaft und Budget. HubSpot Implementation passt, wenn CRM und Marketing schnell in einem System stehen sollen; Salesforce Marketing Cloud, wenn Ihr Unternehmen bereits auf Salesforce standardisiert ist; Custom Marketing Automation, wenn die Anforderung speziell ist, das Volumen hoch oder Lizenzkosten pro Nutzer den Nutzen übersteigen. Wir empfehlen die günstigste Option, die die Anforderung erfüllt."
+        },
+        {
+          "question": "Wie entsteht das Lead Scoring?",
+          "answer": "Als Hypothese, die zur Evidenz wird. Wir starten mit Fit-Kriterien wie Unternehmensgröße, Branche und Rolle sowie Verhaltenssignalen wie Preisseitenbesuchen und gleichen das Modell danach mit den tatsächlich gewonnenen Abschlüssen ab. Nie überprüfte Scores belohnen mit der Zeit Aktivität statt Kaufabsicht, deshalb gehört die Überarbeitung nach der ersten Kohorte zum Projekt und nicht zum Nachtrag."
+        },
+        {
+          "question": "Woran messen Sie, ob die Automatisierung wirkt?",
+          "answer": "An Stufenkonversion und Geschwindigkeit, nicht an Öffnungsraten. Wir messen, wie viele Kontakte zwischen Lifecycle-Stufen wechseln, wie lange jeder Übergang dauert, wie schnell ein Lead die erste menschliche Reaktion erhält und welcher Pipeline-Anteil aus automatisierten Strecken stammt. Zustellbarkeit, Bounce- und Abmelderaten überwachen wir ebenfalls, weil ein Flow, der Ihre Versandreputation beschädigt, teurer ist als sein Nutzen."
+        },
+        {
+          "question": "Können Sie mit unseren bestehenden Tools weiterarbeiten?",
+          "answer": "In der Regel ja, und wir ziehen das einer Neuimplementierung vor. Ist eine Plattform bereits vorhanden, aber schlecht konfiguriert, ist Audit und Reparatur meist günstiger als eine Migration — das sagen wir auch dann, wenn die Migration für uns das größere Projekt wäre. Wo ein Werkzeug die Anforderung wirklich nicht erfüllt, benennen wir konkret, woran es scheitert, statt allgemein zu argumentieren."
+        }
+      ],
+      "technologies": [
+        { "name": "HubSpot", "icon": "hubspot" },
+        { "name": "Salesforce Marketing Cloud", "icon": "salesforce-marketing-cloud" },
+        { "name": "Node.js", "icon": "nodejs" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Webhooks & REST-APIs", "icon": "webhooks" },
+        { "name": "Google Analytics 4", "icon": "ga4" },
+        { "name": "Google Tag Manager", "icon": "google-tag-manager" },
+        { "name": "Looker Studio", "icon": "looker-studio" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "أتمتة التسويق",
+    "shortDescription": "أتمتة تبدأ من نموذج البيانات لا من الأداة: مراحل دورة حياة العميل، وتسجيل الموافقات، وتنظيف التكرارات، وتقييم العملاء وتوجيههم ورعايتهم، عبر HubSpot أو Salesforce Marketing Cloud أو تطوير مخصص.",
+    "fullDescription": "أتمتة التسويق مشروع بيانات قبل أن تكون مشروع أدوات. نبدأ من دورة الحياة: متى يصبح جهة الاتصال عميلاً محتملاً، ثم مؤهلاً، ثم فرصة، ثم عميلاً فعلياً. بعدها نحدد الحقول والمصادر وسجلات الموافقة التي تجعل هذه المراحل تعني الشيء نفسه لدى الجميع. وعند هذه النقطة فقط نختار بين HubSpot وSalesforce Marketing Cloud وبناء مخصص على Node وTypeScript عبر الـwebhooks، لأن تغيير المنصة هو أرخص قرار بينما تغيير نموذج البيانات هو الأغلى. ونحن لا نكتفي بالإعداد بل نطوّر أيضاً: وكيل الدعم الذكي متعدد المستأجرين الذي بنيناه لمتاجر ikas ينقل محادثات WhatsApp وInstagram إلى مسار عملاء محتملين ويُطلق إشعارات تلقائية. ويستمر التفصيل في صفحات HubSpot Implementation وSalesforce Marketing Cloud وCustom Marketing Automation.",
+    "features": [
+      "تصميم مراحل دورة الحياة وتعريف موحد ومكتوب للعميل المؤهل",
+      "تسجيل الموافقات وحفظها مع أثر تدقيق يمكن إبرازه لاحقاً",
+      "إزالة التكرارات وتوحيد الحقول وقواعد مستمرة لنظافة البيانات",
+      "تقييم العملاء المحتملين بالسلوك والملاءمة ومراجعته على الصفقات الفعلية",
+      "قواعد التوجيه والتسليم إلى المبيعات مع زمن استجابة متفق عليه مسبقاً",
+      "مسارات رعاية مبنية على مرحلة الشراء لا على تقويم إرسال ثابت",
+      "ربط الموقع والمتجر والدردشة وWhatsApp عبر واجهات API وwebhooks",
+      "تقارير على مسار الفرص والإيراد داخل CRM وGA4 وLooker Studio"
+    ],
+    "benefits": [
+      "تعريف واحد متفق عليه للعميل المؤهل يعمل به التسويق والمبيعات معاً",
+      "سجلات نظيفة بلا تكرار بدل ثلاث نسخ للعميل نفسه",
+      "موافقات موثقة بتاريخ ومصدر يمكن إبرازها عند أي مراجعة",
+      "وصول العميل المحتمل سريعاً إلى الشخص الصحيح بدل انتظاره في بريد مشترك",
+      "متابعة تستمر حين ينشغل الفريق أو يقل عدده أو يكون في إجازة",
+      "ملكية كاملة: نظام CRM وبيانات جهات الاتصال والأتمتة موثقة وقابلة للتسليم"
+    ],
+    "metaTitle": "أتمتة التسويق وتدفقات CRM | PakSoft",
+    "metaDescription": "أتمتة تسويق مبنية على نموذج بيانات نظيف: مراحل دورة الحياة، الموافقات، التقييم، التوجيه ومسارات الرعاية. اطلبوا تدقيقاً مجانياً لأتمتتكم اليوم.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تدقيق العملية والبيانات",
+          "description": "نرسم كيف تصل الطلبات فعلاً اليوم، وماذا يحدث لكل طلب، وأين يُسجَّل وأين يضيع، ثم ننظر في حالة البيانات القائمة: التكرارات والحقول الفارغة وجهات الاتصال التي لا يعرف أحد مصدرها. كثيراً ما تكشف هذه المرحلة أن المشكلة ثغرة في العملية لا أداة ناقصة، وأتمتة عملية مكسورة تجعلها تنكسر أسرع."
+        },
+        {
+          "step": 2,
+          "title": "دورة الحياة والتعريفات",
+          "description": "نتفق على المراحل التي يمر بها العميل، والأهم على المعايير التي تنقله من مرحلة إلى أخرى، مكتوبةً لا مفترضة. اختلاف التسويق والمبيعات في معنى العميل المؤهل هو السبب الأشيع في أن تنتج مشاريع الأتمتة جدالاً بدل إيراد."
+        },
+        {
+          "step": 3,
+          "title": "الموافقات ونموذج البيانات",
+          "description": "نصمم أين تُلتقط الموافقة، وعلى ماذا وافق الشخص بالضبط، ومتى، وكيف تُحفظ بحيث يمكن إبرازها لاحقاً. وإلى جانبها نضع معايير الحقول وقواعد إزالة التكرار وتتبع المصدر، لأن التقييم والتقسيم المبنيين على حقول غير متسقة يضللان كل من يقرأ التقارير لاحقاً."
+        },
+        {
+          "step": 4,
+          "title": "قرار المنصة",
+          "description": "الآن فقط نختار الأداة: HubSpot حين تناسب الفريق منظومة تجمع CRM والتسويق، وSalesforce Marketing Cloud في البيئات الكبيرة القائمة على Salesforce، وخدمات مخصصة على Node وTypeScript حين يكون المطلوب خاصاً وتكاليف التراخيص تفوق الفائدة. ونضع أثر تكلفة الترخيص كتابةً كي يُتخذ القرار بأرقام كاملة."
+        },
+        {
+          "step": 5,
+          "title": "البناء والتكامل",
+          "description": "نبني المسارات — الالتقاط والتقييم والتوجيه والرعاية والتسليم وإعادة التفعيل — ونربط الأنظمة التي تغذيها عبر API وwebhooks: نماذج الموقع والمتجر والدردشة وقنوات المراسلة. ويُختبر كل شيء أولاً بجهات اتصال تجريبية، لأن مساراً مضبوطاً بشكل خاطئ قد يراسل قاعدة بياناتكم بالكامل قبل أن ينتبه أحد."
+        },
+        {
+          "step": 6,
+          "title": "التسليم والمتابعة والتحسين",
+          "description": "تحصلون على توثيق لكل مسار وحقل وتكامل، إضافة إلى تدريب لمن سيشغّل النظام يومياً. ثم نراقب قابلية الوصول للبريد وأخطاء التوجيه ونسب التحول بين المراحل، ونعيد كتابة نموذج التقييم حين تُظهر النتائج الفعلية أي الإشارات كانت تتنبأ بالبيع حقاً."
+        }
+      ],
+      "faq": [
+        {
+          "question": "هل رسوم تراخيص HubSpot أو Salesforce ضمن سعركم؟",
+          "answer": "لا. اشتراكات المنصات يصدرها المزود مباشرة باسمكم وعلى حسابكم، وتعتمد قيمتها على مستوى الباقة وعدد جهات الاتصال. أتعابنا تغطي التدقيق وتصميم نموذج البيانات والإعداد والتكامل والاختبار والتوثيق والتدريب. ونذكر مستوى الترخيص المتوقع قبل الالتزام، لأن اكتشاف التكلفة الحقيقية بعد انتهاء التصميم مفاجأة غير سارة."
+        },
+        {
+          "question": "كم يستغرق التنفيذ؟",
+          "answer": "بناء محدد النطاق على بيانات نظيفة يمكن أن يعمل خلال أسابيع قليلة، أما الترحيل الذي يشمل سجلات مشوشة وعدة أنظمة مصدر وفرقاً متعددة فيستغرق عادةً من شهر إلى ثلاثة. العامل الحاسم نادراً ما يكون البرنامج، بل سرعة الاتفاق على التعريفات وحجم تنظيف البيانات المطلوب. ونرتب العمل بحيث تعمل المسارات الأعلى قيمة أولاً."
+        },
+        {
+          "question": "بياناتنا في CRM فوضوية، هل ننظفها قبل البدء؟",
+          "answer": "ليس قبل البدء، لكنها جزء أساسي من المشروع. نبدأ بتوصيف البيانات — التكرارات والحقول المتعارضة وجهات الاتصال بلا مصدر أو موافقة مسجلة — ثم نتفق على قواعد الدمج والتوحيد بدل الحذف من طرف واحد. الأتمتة فوق قاعدة بيانات غير نظيفة ترسل الرسالة الخاطئة للشخص الخاطئ على نطاق واسع، وثمن الثقة المفقودة أكبر من عائد المشروع."
+        },
+        {
+          "question": "لمن تعود ملكية البيانات والأتمتة والحساب؟",
+          "answer": "لكم في كل الأحوال. يُفتح حساب المنصة باسمكم، وبيانات جهات الاتصال ملككم، والأتمتة المخصصة التي نكتبها تُسلَّم إلى مستودعكم مع توثيقها. وإذا انتقل العمل إلى فريق آخر أو إلى داخل شركتكم، تحصلون على مخططات المسارات وتعريفات الحقول وملاحظات التكامل بدل نظام لا يفهمه سوانا."
+        },
+        {
+          "question": "كيف تتعاملون مع الموافقات وقواعد الخصوصية؟",
+          "answer": "تُصمم الموافقة أولاً ولا تُضاف لاحقاً. نسجل على ماذا وافق الشخص ومتى ومن أي نموذج، ونحفظ ذلك كسجل يمكن إبرازه، ونبني كل مسار بحيث لا يُرسل إلا لمن تغطي موافقته تلك الرسالة. وتختلف المتطلبات بين أسواق الخليج وأوروبا، كما تختلف أسئلة موقع استضافة البيانات بين المؤسسات، لذا نوثق هذه الخيارات بدل الاكتفاء بتطمينات شفهية."
+        },
+        {
+          "question": "هل ستحل الأتمتة محل جزء من فريق المبيعات؟",
+          "answer": "لا، ومعاملتها بهذا المنطق ترتد سلباً عادةً. الأتمتة جيدة فيما يجيده البشر أقل: الاستجابة الفورية، وعدم نسيان متابعة، والتوجيه المتسق، وحفظ السجل. وهي ضعيفة فيما يجيده البشر مثل التقدير والتعامل مع اعتراض غير مألوف. عملياً تكون النتيجة أن الفريق نفسه يخدم عدداً أكبر من العملاء بعبء إداري أقل."
+        },
+        {
+          "question": "ماذا لو كانت العملية نفسها مكسورة؟",
+          "answer": "ستنكسر أسرع وبشكل أوضح، وهذا تحذير نقوله لكل عميل. إذا كانت الطلبات تُترك يومين بلا رد اليوم، فالأتمتة ستوصل تلك الطلبات المهملة بكفاءة أعلى؛ وإذا لم يكن أحد مسؤولاً عن المتابعة فلن يعيّن أي تدفق مسؤولاً من تلقاء نفسه. وحين نجد ثغرة في العملية نقولها ونصلح التعريف أولاً حتى لو تأخر البناء."
+        },
+        {
+          "question": "هل يمكنكم ربط الموقع والمتجر وقنوات المراسلة؟",
+          "answer": "نعم. تُربط نماذج الموقع ومنصات التجارة الإلكترونية وأدوات الدردشة وقنوات المراسلة عبر API وwebhooks، فيُسجَّل العميل المحتمل مرة واحدة مع بقاء مصدره سليماً. وقد بنينا ذلك بأنفسنا من طرف إلى طرف: وكيل الدعم الذكي متعدد المستأجرين لمتاجر ikas يعالج محادثات WhatsApp وInstagram وينقلها إلى مسار العملاء المحتملين مع إشعارات تلقائية. ولمنصات المراسلة قواعدها الخاصة في القوالب والموافقة المسبقة، ونبني وفقها لا حولها."
+        },
+        {
+          "question": "هل نحتاج HubSpot أم Salesforce Marketing Cloud أم حلاً مخصصاً؟",
+          "answer": "هذا ما نقرره في هذه الصفحة، والجواب يتبع فريقكم وأنظمتكم الحالية وميزانيتكم. تناسب HubSpot Implementation من يريد CRM والتسويق في مكان واحد وبإعداد سريع، وتناسب Salesforce Marketing Cloud المؤسسات الكبيرة القائمة أصلاً على Salesforce، بينما تصبح Custom Marketing Automation منطقية حين تكون المتطلبات خاصة أو الأحجام كبيرة أو تكلفة الترخيص لكل مستخدم تفوق الفائدة. ونوصي بالخيار الأقل كلفة الذي يفي بالمطلوب."
+        },
+        {
+          "question": "كيف يُبنى نموذج تقييم العملاء المحتملين؟",
+          "answer": "يبدأ فرضيةً وينتهي دليلاً. نضع نموذجاً أولياً من معايير الملاءمة مثل حجم الشركة والقطاع والدور الوظيفي، ومن إشارات سلوكية مثل زيارة صفحة الأسعار أو تكرار الفتح، ثم نراجعه مقابل الصفقات التي أُغلقت فعلاً. النقاط التي لا تُراجَع تكافئ النشاط الشكلي، لذا فتعديل النموذج بعد أول دفعة نتائج حقيقية جزء من العمل لا إضافة عليه."
+        },
+        {
+          "question": "كيف تقيسون نجاح الأتمتة؟",
+          "answer": "بنسب التحول بين المراحل وبالسرعة، لا بمعدلات فتح البريد. نتابع عدد جهات الاتصال التي تنتقل بين المراحل، وزمن كل انتقال، وسرعة وصول أول رد بشري إلى العميل المحتمل، ونسبة مسار الفرص الآتية من المسارات المؤتمتة. ونراقب أيضاً قابلية التسليم ومعدلات الارتداد وإلغاء الاشتراك، لأن مساراً يضر بسمعة الإرسال يكلف أكثر مما يعطي."
+        },
+        {
+          "question": "هل تعملون بالعربية والإنجليزية داخل المسارات نفسها؟",
+          "answer": "نعم، ونعتبره متطلباً أساسياً في الخليج لا خياراً تجميلياً. نضبط لغة جهة الاتصال كحقل في نموذج البيانات منذ البداية، فتُرسل الرسائل بلغة الشخص بدل ترجمة القوالب لاحقاً بشكل مرتجل. وننتبه إلى سلامة عرض النص العربي من اليمين إلى اليسار في البريد والنماذج، مع إبقاء أسماء المنصات بحروف لاتينية."
+        }
+      ],
+      "technologies": [
+        { "name": "HubSpot", "icon": "hubspot" },
+        { "name": "Salesforce Marketing Cloud", "icon": "salesforce-marketing-cloud" },
+        { "name": "Node.js", "icon": "nodejs" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Webhooks & REST APIs", "icon": "webhooks" },
+        { "name": "Google Analytics 4", "icon": "ga4" },
+        { "name": "Google Tag Manager", "icon": "google-tag-manager" },
+        { "name": "Looker Studio", "icon": "looker-studio" }
+      ]
+    }
+  }
+}

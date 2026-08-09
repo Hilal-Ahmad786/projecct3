@@ -1,0 +1,447 @@
+{
+  "slug": "startup-services",
+  "en": {
+    "name": "Startup Services",
+    "shortDescription": "Product and technical leadership for founders: cutting v1 down to the one assumption worth testing, building it on proven technology, and handing over code and infrastructure you genuinely own.",
+    "fullDescription": "Most startup budgets die in the gap between what a founder wants to build and what a first version needs to prove. We work the other way round — name the assumption that kills the company if it is wrong, then build the smallest honest product that tests it. That means deliberately boring technology, a written list of what v1 leaves out, and no architecture designed for traffic you do not have yet. We shipped our own products this way: EidosUs, an AI reading assistant for academic papers; MenuQR Lab, a managed QR menu platform for restaurants; and a multi-tenant AI support agent for stores on the ikas platform. Without a technical co-founder, the same engineers work as your fractional CTO — reviewing vendor proposals, running technical due diligence, helping hire your first developers.",
+    "features": [
+      "Hypothesis-First MVP Scoping With a Written Cut List for v1",
+      "Clickable Prototype and Flow Review Before Any Production Code",
+      "Deliberately Proven Stack Selection Instead of Speculative Architecture",
+      "Repositories, Cloud Accounts and Domains Registered in Your Name From Day One",
+      "Fractional and Technical CTO Support for Non-Technical Founders",
+      "Technical Due Diligence on Existing Codebases and Vendor Proposals",
+      "First Engineering Hires: Role Definition, Take-Home Tasks, Interview Support",
+      "Product Analytics and Instrumentation That Answer the Investor Question"
+    ],
+    "benefits": [
+      "A v1 that answers one question clearly instead of a half-built product answering none",
+      "Budget spent on the risky assumption rather than on features nobody has asked for",
+      "Code, infrastructure and accounts in your name, so changing partner stays possible",
+      "Technical judgement in the room when you are negotiating with agencies or investors",
+      "A launch that can be extended rather than rewritten once traction appears",
+      "Honest pushback before you spend, including when the answer is not to build yet"
+    ],
+    "metaTitle": "Startup Services — MVP & Fractional CTO | PakSoft",
+    "metaDescription": "MVP scoping, build and fractional CTO support for founders. Proven stack, honest scope, full code ownership. Book a free scoping call with PakSoft today.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Hypothesis and Scope Session",
+          "description": "We start with the question your business actually rests on — will these people pay for this, will they come back, can this be delivered at a workable cost — and write it down in one sentence. Everything in the build is then judged against whether it helps you answer that sentence, which is what keeps a first version from quietly becoming a full product."
+        },
+        {
+          "step": 2,
+          "title": "The Cut List",
+          "description": "We produce two lists: what v1 contains and, more importantly, what it deliberately leaves out — admin panels, role systems, multi-language, native apps, integrations you can do by hand for the first fifty customers. The cut list is written down and agreed, so later feature requests are a conscious decision with a price rather than silent scope creep."
+        },
+        {
+          "step": 3,
+          "title": "Prototype and Stack Decision",
+          "description": "Before production code, you get clickable screens for the core flow, because it is far cheaper to argue about a screen than about a shipped feature. The stack choice follows the same logic: Next.js, PostgreSQL and managed hosting are chosen precisely because they are unremarkable, well documented and easy for a future employee to pick up."
+        },
+        {
+          "step": 4,
+          "title": "Build in Your Accounts",
+          "description": "The repository, the database, the hosting and the domain are created under your organisation and billing from the first commit, with us added as collaborators. This is deliberate: it removes the single most common trap founders describe, where the product works but the agency holds the keys and every change has to go through them."
+        },
+        {
+          "step": 5,
+          "title": "Launch, Instrument and Read the Result",
+          "description": "We ship to real users with the events that matter already instrumented — signup, activation, the one action that means the product worked, and where people drop out. That gives you evidence for the next decision and for investor conversations, instead of an anecdote about how a few friends liked the demo."
+        },
+        {
+          "step": 6,
+          "title": "Handover, Maintenance and What Comes Next",
+          "description": "Every engagement ends with a written handover: architecture notes, environment variables, deployment steps and the known rough edges we would fix next. From there you can keep us on a small maintenance arrangement, take it in-house with hiring support, or continue on the deeper build described on our Startup MVP Development page while a fractional Technical CTO stays involved."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What does an MVP actually cost?",
+          "answer": "It depends almost entirely on scope, and the honest framing is that an MVP is not a cheap version of a full product — it is a smaller product with fewer answers in it. A focused v1 with authentication, one core flow, payments and an admin view is a meaningful engagement measured in weeks of senior work, not days. We give a fixed range after the scoping session, with the cut list attached so you can see exactly what moves the number."
+        },
+        {
+          "question": "How quickly can you start?",
+          "answer": "We are a small senior team and take on a limited number of engagements at once, so start dates depend on what is already running. In practice a scoping session can usually happen within days, and that is where the real decisions are made anyway. If we cannot start when you need to, we will say so at the first call rather than hold the slot."
+        },
+        {
+          "question": "Who owns the code and the infrastructure?",
+          "answer": "You do, from the first commit. Repositories, cloud accounts, domains and third-party services are created under your organisation and your billing, and we work inside them as collaborators. The contract assigns all IP in the delivered work to you, and there is no proprietary framework of ours that you would need to keep licensing."
+        },
+        {
+          "question": "What should we deliberately leave out of version one?",
+          "answer": "Usually more than founders expect: granular permissions, multi-language, a native mobile app when a responsive web app would do, dashboards nobody has asked for, and any integration you can run manually while you have very few customers. Anything that only matters at scale is a candidate for removal, because building for scale you do not have is the most common way early money disappears."
+        },
+        {
+          "question": "We are not technical — how do we know we are being told the truth?",
+          "answer": "That is exactly what fractional CTO work is for, and we do it as a standalone service too. It means an experienced engineer sitting on your side of the table: reading vendor proposals and estimates critically, doing technical due diligence on an existing codebase before you buy or invest, and translating engineering trade-offs into business terms. It is described in full on our Technical CTO page."
+        },
+        {
+          "question": "Do we need to have raised funding first?",
+          "answer": "No, and for many ideas raising first is the wrong order. Investors at pre-seed increasingly want to see something working with real users rather than a deck, so a small self-funded v1 often improves the terms of the round rather than delaying it. What matters is being realistic: a modest budget buys a narrow product, and we would rather scope honestly to that than promise a platform."
+        },
+        {
+          "question": "What happens after launch?",
+          "answer": "Software does not stand still — dependencies age, providers change APIs, and real users find edges you did not plan for. We offer a small ongoing maintenance arrangement covering updates, monitoring and bug fixes, but it is optional by design, and the handover documentation is written so another team or your own first hire can take over. You should never be in a position where only we can keep your product running."
+        },
+        {
+          "question": "Can you help us hire our first engineers?",
+          "answer": "Yes, and it is often the most valuable thing we do for a founding team. That covers writing the role honestly, designing a short practical take-home task instead of a whiteboard quiz, sitting in on technical interviews, and giving you a clear read on whether a candidate can actually do the work. We also help structure the first months so a new hire inherits a documented codebase rather than a mystery."
+        },
+        {
+          "question": "We already have a codebase from another developer — can you take it over?",
+          "answer": "Often yes, but we start with a paid technical review rather than a promise. That review covers what the code does, how risky it is to change, what the security and data situation looks like, and whether continuing is cheaper than rebuilding the core. Sometimes the answer is to keep it and stabilise it; sometimes it is to rewrite one part while the rest keeps running, and we will tell you which."
+        },
+        {
+          "question": "Will you take equity instead of fees?",
+          "answer": "We are a small agency, not a fund, so our default is straightforward paid work with clear scope. Reduced fees combined with a small equity component are possible in rare cases where we know the sector well and believe in the founder, but we will not pitch it as a way to make an underfunded plan look affordable. If the budget does not cover a real v1, the better answer is a smaller v1."
+        }
+      ],
+      "technologies": [
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "React", "icon": "react" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "Vercel", "icon": "vercel" },
+        { "name": "React Native", "icon": "react" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Startup Hizmetleri",
+    "shortDescription": "Girişimciler için ürün ve teknik liderlik: v1'i test edilmeye değer tek varsayıma indirmek, kanıtlanmış teknolojiyle kurmak ve kodu, sunucuyu, hesapları gerçekten sizin adınıza teslim etmek.",
+    "fullDescription": "Girişim bütçelerinin çoğu, kurucunun hayal ettiği ürün ile ilk sürümün kanıtlaması gereken şey arasındaki boşlukta eriyor. Biz tersinden çalışıyoruz: yanlış çıkarsa şirketi bitirecek varsayımı tek cümleyle yazıyor, sonra onu sınayacak en küçük dürüst ürünü kuruyoruz. Bu, bilinçli olarak sıradan ve kanıtlanmış teknoloji, v1'e girmeyecek özelliklerin yazılı listesi ve henüz sahip olmadığınız trafiğe göre tasarlanmış mimariden kaçınmak demek. Kendi ürünlerimizi de böyle çıkardık: akademik makaleleri okuyup kaynaklandıran yapay zeka asistanı EidosUs, restoranlar için QR menü platformu MenuQR Lab ve ikas altyapısındaki mağazalar için geliştirdiğimiz çok kiracılı yapay zeka destek asistanı. Teknik kurucu ortağı olmayan girişimciler için aynı ekip yarı zamanlı teknik CTO olarak da çalışıyor: gelen ajans tekliflerini okumak, mevcut kodu incelemek ve ilk yazılımcı alımında yanınızda olmak.",
+    "features": [
+      "Tek varsayım üzerine kurulu MVP kapsamı ve yazılı \"v1'e girmeyecekler\" listesi",
+      "Kod yazılmadan önce tıklanabilir prototip ve akış onayı",
+      "Spekülatif mimari yerine bilinçli olarak kanıtlanmış teknoloji seçimi",
+      "Repo, sunucu, alan adı ve tüm hesapların ilk günden sizin adınıza açılması",
+      "Teknik kurucu ortağı olmayan girişimciler için yarı zamanlı teknik CTO desteği",
+      "Mevcut kod tabanı ve ajans tekliflerinin bağımsız teknik incelemesi",
+      "İlk yazılımcı alımı: ilan metni, uygulamalı vaka görevi ve mülakat desteği",
+      "Yatırımcı sorularını cevaplayan ürün analitiği ve olay ölçümlemesi"
+    ],
+    "benefits": [
+      "Hiçbir soruyu cevaplamayan yarım ürün yerine, tek soruyu net cevaplayan bir v1",
+      "Bütçenin kimsenin istemediği özelliklere değil, riskli varsayıma harcanması",
+      "Kod ve altyapının sizin adınıza olması sayesinde ajans değiştirebilme özgürlüğü",
+      "Ajansla veya yatırımcıyla masaya oturduğunuzda yanınızda teknik bir muhatap",
+      "Talep geldiğinde sıfırdan yazılmak yerine üzerine eklenebilen bir ilk sürüm",
+      "Para harcanmadan önce dürüst itiraz — gerekiyorsa \"şimdi yapmayın\" cevabı dahil"
+    ],
+    "metaTitle": "Startup Hizmetleri — MVP ve Teknik CTO | PakSoft",
+    "metaDescription": "Girişimciler için MVP kapsamlama, geliştirme ve yarı zamanlı teknik CTO desteği. Kod ve altyapı sizin adınıza. Ücretsiz ön görüşme için bize yazın.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Varsayım ve Kapsam Görüşmesi",
+          "description": "İşin gerçekten dayandığı soruyu tek cümleye indiririz: bu insanlar buna para öder mi, geri gelirler mi, bu iş sürdürülebilir maliyetle yapılabilir mi. Sonraki her karar bu cümleye hizmet edip etmediğine göre değerlendirilir; ilk sürümün sessizce tam ürüne dönüşmesini engelleyen şey tam olarak budur."
+        },
+        {
+          "step": 2,
+          "title": "Kapsam Dışı Listesi",
+          "description": "İki liste çıkarırız: v1'de olacaklar ve daha önemlisi bilinçli olarak dışarıda bırakılanlar — yetki rolleri, çok dillilik, mobil uygulama, ilk elli müşteride elle yürütülebilecek entegrasyonlar. Bu liste yazılı ve onaylı olduğu için sonradan gelen her talep, sessiz kapsam kaymasına dönüşmek yerine bedeli belli bilinçli bir karar hâline gelir."
+        },
+        {
+          "step": 3,
+          "title": "Prototip ve Teknoloji Kararı",
+          "description": "Kod yazılmadan önce ana akışın tıklanabilir ekranlarını görürsünüz; bir ekran üzerinde tartışmak, yayına alınmış bir özellik üzerinde tartışmaktan çok daha ucuzdur. Teknoloji seçimi de aynı mantıkla yapılır: Next.js, PostgreSQL ve yönetilen barındırma tam da sıradan, belgeleri bol ve ileride işe alacağınız yazılımcının hemen devralabileceği araçlar oldukları için seçilir."
+        },
+        {
+          "step": 4,
+          "title": "Sizin Hesaplarınızda Geliştirme",
+          "description": "Repo, veritabanı, barındırma ve alan adı ilk taahhütten itibaren sizin kurum hesabınız ve sizin ödeme yönteminizle açılır; biz oraya yetkili olarak ekleniriz. Bu bilinçli bir tercihtir: Türkiye'de kurucuların en sık anlattığı sorun, ürün çalışıyor olmasına rağmen anahtarların ajansta kalması ve her küçük değişiklik için o kapıya gitmek zorunda olmaktır."
+        },
+        {
+          "step": 5,
+          "title": "Yayına Alma ve Ölçümleme",
+          "description": "Gerçek kullanıcılara açarken önemli olan olaylar zaten ölçümlenmiş olur: kayıt, ilk değerli kullanım, ürünün işe yaradığını gösteren o tek aksiyon ve insanların nerede terk ettiği. Böylece bir sonraki karar da yatırımcı görüşmesi de \"birkaç arkadaşım beğendi\" anekdotuna değil, veriye dayanır."
+        },
+        {
+          "step": 6,
+          "title": "Devir, Bakım ve Sonrası",
+          "description": "Her iş yazılı devirle biter: mimari notları, ortam değişkenleri, yayına alma adımları ve sıradaki düzeltilmesi gerekenlerin listesi. Sonrasında küçük bir bakım anlaşmasıyla devam edebilir, işe alım desteğiyle içeride sürdürebilir ya da Startup MVP Geliştirme sayfamızdaki daha derin geliştirmeye geçerken Teknik CTO desteğini yanınızda tutabilirsiniz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bir MVP gerçekte ne kadara mal olur?",
+          "answer": "Tamamen kapsama bağlı; dürüst çerçeve şu: MVP, tam ürünün ucuz sürümü değildir — içinde daha az cevap olan daha küçük bir üründür. Üyelik, tek bir ana akış, ödeme ve basit bir yönetim ekranı içeren odaklı bir v1, günlerle değil kıdemli geliştirici haftalarıyla ölçülen ciddi bir iştir. Kapsam görüşmesinden sonra net bir aralık veririz ve yanına kapsam dışı listesini ekleriz; böylece rakamı neyin değiştirdiğini kalem kalem görürsünüz."
+        },
+        {
+          "question": "Ne kadar sürede başlayabilirsiniz?",
+          "answer": "Küçük ve kıdemli bir ekibiz, aynı anda sınırlı sayıda iş alıyoruz; dolayısıyla başlama tarihi o an devam eden işlere bağlı. Pratikte kapsam görüşmesini genellikle birkaç gün içinde yapabiliyoruz ve asıl kritik kararlar zaten orada veriliyor. İhtiyacınız olan tarihte başlayamayacaksak bunu ilk görüşmede söyleriz, yeri doldurmak için oyalamayız."
+        },
+        {
+          "question": "Kod ve altyapı kime ait olur?",
+          "answer": "İlk taahhütten itibaren size. Repo, bulut hesapları, alan adı ve üçüncü taraf servisler sizin kurum hesabınız ve sizin ödemenizle açılır, biz içeride yetkili kullanıcı olarak çalışırız. Sözleşme teslim edilen işin tüm haklarını size devreder; lisansını sürekli bize ödemeniz gereken kapalı bir altyapımız yoktur."
+        },
+        {
+          "question": "İlk sürümde neleri bilerek yapmamalıyız?",
+          "answer": "Genellikle kurucuların beklediğinden fazlasını: ayrıntılı yetki rolleri, çok dillilik, mobil web yeterken native uygulama, kimsenin istemediği raporlama ekranları ve müşteri sayınız azken elle yürütülebilecek her entegrasyon. Sadece ölçekte anlam kazanan her şey listeden çıkma adayıdır; çünkü henüz sahip olmadığınız ölçek için inşa etmek, erken paranın en sık eridiği yerdir."
+        },
+        {
+          "question": "Teknik bilgimiz yok, doğru söylendiğinden nasıl emin olacağız?",
+          "answer": "Yarı zamanlı teknik CTO hizmeti tam olarak bunun için var ve bunu tek başına da veriyoruz. Pratikte masanın sizin tarafınızda oturan deneyimli bir mühendis demek: gelen ajans tekliflerini ve tahminleri eleştirel okumak, satın alma veya yatırım öncesi mevcut kodu incelemek, mühendislik tercihlerini iş diline çevirmek. Ayrıntısı Teknik CTO sayfamızda."
+        },
+        {
+          "question": "Önce yatırım almamız gerekir mi?",
+          "answer": "Hayır, çoğu fikirde önce yatırım aramak yanlış sıra. Erken aşama yatırımcılar giderek daha fazla sunum yerine gerçek kullanıcısı olan çalışan bir ürün görmek istiyor; bu yüzden kendi kaynağınızla çıkardığınız küçük bir v1 turu geciktirmek yerine şartlarınızı iyileştiriyor. Önemli olan gerçekçi olmak: mütevazı bütçe dar bir ürün alır, biz de platform vaat etmek yerine o bütçeye dürüst bir kapsam yazmayı tercih ederiz."
+        },
+        {
+          "question": "Yayına aldıktan sonra ne oluyor, ortadan kaybolur musunuz?",
+          "answer": "Bu, Türkiye'de en sık duyduğumuz haklı şüphe, o yüzden yapıyı buna göre kuruyoruz. Yazılım yerinde durmaz: bağımlılıklar eskir, servisler API değiştirir, gerçek kullanıcılar planlanmamış durumlar bulur. Güncelleme, izleme ve hata düzeltmeyi kapsayan küçük bir bakım anlaşması sunuyoruz; ama bu isteğe bağlı ve devir dokümantasyonu, sizin ilk işe aldığınız yazılımcının ya da başka bir ekibin devralabileceği şekilde yazılıyor."
+        },
+        {
+          "question": "KVKK açısından nelere dikkat ediyorsunuz?",
+          "answer": "İlk sürümden itibaren hangi kişisel verinin neden toplandığını, nerede saklandığını ve ne kadar süre tutulduğunu yazılı hâle getiriyoruz; çünkü bunu sonradan eklemek baştan kurmaktan pahalıdır. Aydınlatma metni ve açık rıza akışlarının ürün içindeki yerini kurar, gereksiz veri toplamayı kapsamdan çıkarır ve yurt dışı aktarım gerektiren servisleri açıkça listeleriz. Bu bir hukuki danışmanlık değildir; avukatınızın soracağı soruların teknik cevabını hazır etmektir."
+        },
+        {
+          "question": "İlk yazılımcımızı işe almamıza yardım eder misiniz?",
+          "answer": "Evet ve çoğu zaman kurucu ekibe verdiğimiz en değerli destek bu oluyor. İlanı gerçekçi yazmak, tahta başında sorgu yerine kısa ve uygulamalı bir vaka görevi tasarlamak, teknik mülakatta bulunmak ve adayın işi gerçekten yapıp yapamayacağı konusunda net bir görüş vermek buna dahil. Türkiye'de kıdemli geliştirici maaşlarının ve rekabetin geldiği yeri konuşup, bütçenize göre hangi seviyede aday bulunabileceğine dair dürüst bir beklenti kurarız."
+        },
+        {
+          "question": "Elimizde başka bir geliştiriciden kalan kod var, devralır mısınız?",
+          "answer": "Çoğu zaman evet, ama söz vermeden önce ücretli bir teknik inceleme yaparız. İnceleme kodun ne yaptığını, değiştirmenin ne kadar riskli olduğunu, güvenlik ve veri durumunu ve devam etmenin çekirdeği yeniden yazmaktan ucuz olup olmadığını kapsar. Bazen cevap koruyup istikrara kavuşturmak, bazen de gerisi çalışmaya devam ederken tek bir parçayı yeniden yazmaktır; hangisi olduğunu açıkça söyleriz."
+        }
+      ],
+      "technologies": [
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "React", "icon": "react" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "Vercel", "icon": "vercel" },
+        { "name": "React Native", "icon": "react" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Startup-Services",
+    "shortDescription": "Produkt- und Technikführung für Gründerinnen und Gründer: die erste Version auf die eine prüfenswerte Annahme zuschneiden, auf bewährter Technik bauen und Code sowie Infrastruktur vollständig übergeben.",
+    "fullDescription": "Die meisten Startup-Budgets versickern in der Lücke zwischen dem, was Gründer bauen wollen, und dem, was eine erste Version belegen muss. Wir gehen umgekehrt vor: Wir formulieren die eine Annahme, an der das Geschäftsmodell scheitert, und bauen das kleinste ehrliche Produkt, das sie prüft. Das bedeutet bewusst unspektakuläre Technik, eine schriftliche Liste dessen, was v1 gerade nicht enthält, und keine Architektur für Lastspitzen, die es noch nicht gibt. Unsere eigenen Produkte sind so entstanden: EidosUs, ein KI-Leseassistent für wissenschaftliche Arbeiten, MenuQR Lab, eine verwaltete QR-Menüplattform für die Gastronomie, sowie ein mandantenfähiger KI-Support-Agent für Shops auf der Plattform ikas. Ohne technischen Mitgründer übernehmen dieselben Ingenieure die Rolle des CTO auf Zeit — Angebote prüfen, Due Diligence durchführen, die ersten Entwickler einstellen.",
+    "features": [
+      "MVP-Zuschnitt entlang einer einzigen Kernannahme, mit schriftlicher Streichliste",
+      "Klickbarer Prototyp und Ablaufabnahme vor der ersten Zeile Produktivcode",
+      "Bewusst bewährter Technologie-Stack statt spekulativer Architektur",
+      "Repositories, Cloud-Konten und Domains ab Tag eins auf Ihren Namen",
+      "CTO auf Zeit für Gründungsteams ohne technischen Mitgründer",
+      "Technische Due Diligence für bestehende Codebasen und Dienstleisterangebote",
+      "Erste Entwicklerbesetzung: Rollenprofil, Praxisaufgabe, Interviewbegleitung",
+      "Produktanalytik und Instrumentierung als Grundlage für Investorengespräche"
+    ],
+    "benefits": [
+      "Eine v1, die eine Frage klar beantwortet, statt eines halben Produkts ohne Antwort",
+      "Budget fließt in die riskante Annahme statt in Funktionen ohne Nachfrage",
+      "Code und Infrastruktur auf Ihren Namen — ein Partnerwechsel bleibt jederzeit möglich",
+      "Technisches Urteilsvermögen am Tisch, wenn Sie mit Dienstleistern oder Investoren verhandeln",
+      "Ein Start, der bei Traktion erweitert und nicht neu geschrieben werden muss",
+      "Ehrlicher Widerspruch vor der Ausgabe, notfalls auch die Empfehlung, noch nicht zu bauen"
+    ],
+    "metaTitle": "Startup-Services — MVP & CTO auf Zeit | PakSoft",
+    "metaDescription": "MVP-Zuschnitt, Entwicklung und CTO auf Zeit für Gründerteams: bewährter Stack, ehrlicher Umfang, volle Code-Rechte. Jetzt kostenloses Erstgespräch vereinbaren.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Annahme und Zuschnitt",
+          "description": "Wir beginnen mit der Frage, auf der Ihr Geschäftsmodell tatsächlich ruht — zahlen diese Menschen dafür, kommen sie wieder, lässt sich das zu tragfähigen Kosten liefern — und halten sie in einem Satz fest. Jede spätere Entscheidung wird daran gemessen, ob sie diesen Satz beantworten hilft; genau das verhindert, dass aus einer ersten Version unbemerkt ein Vollprodukt wird."
+        },
+        {
+          "step": 2,
+          "title": "Die Streichliste",
+          "description": "Wir erstellen zwei Listen: was in v1 enthalten ist und, wichtiger, was bewusst draußen bleibt — Rechte- und Rollensysteme, Mehrsprachigkeit, native Apps, Integrationen, die sich bei den ersten fünfzig Kunden von Hand erledigen lassen. Weil die Streichliste schriftlich vereinbart ist, wird jeder spätere Wunsch zu einer bewussten Entscheidung mit Preisschild statt zu stillem Scope Creep."
+        },
+        {
+          "step": 3,
+          "title": "Prototyp und Technologieentscheidung",
+          "description": "Vor dem Produktivcode sehen Sie klickbare Bildschirme für den Kernablauf, denn über einen Entwurf zu streiten ist erheblich günstiger als über eine ausgelieferte Funktion. Die Stack-Wahl folgt derselben Logik: Next.js, PostgreSQL und verwaltetes Hosting werden gerade deshalb gewählt, weil sie unspektakulär, gut dokumentiert und für eine spätere interne Besetzung leicht übernehmbar sind."
+        },
+        {
+          "step": 4,
+          "title": "Entwicklung in Ihren Konten",
+          "description": "Repository, Datenbank, Hosting und Domain laufen ab dem ersten Commit unter Ihrer Organisation und Ihrer Abrechnung, wir arbeiten als eingeladene Mitwirkende darin. Das ist Absicht: Es beseitigt die häufigste Falle, bei der das Produkt zwar läuft, die Schlüssel aber beim Dienstleister liegen und jede Änderung über ihn gehen muss."
+        },
+        {
+          "step": 5,
+          "title": "Launch, Messung und Auswertung",
+          "description": "Wir gehen mit den relevanten Ereignissen bereits instrumentiert live: Registrierung, Aktivierung, die eine Handlung, die belegt, dass das Produkt funktioniert, und die Stellen, an denen Nutzer abbrechen. Damit haben Sie Belege für die nächste Entscheidung und für Investorengespräche statt einer Anekdote über eine gelungene Demo."
+        },
+        {
+          "step": 6,
+          "title": "Übergabe, Wartung und nächste Schritte",
+          "description": "Jedes Projekt endet mit einer schriftlichen Übergabe: Architekturnotizen, Umgebungsvariablen, Deployment-Schritte und die bekannten Baustellen, die wir als Nächstes angehen würden. Danach können Sie eine kleine Wartungsvereinbarung behalten, mit Einstellungsunterstützung ins Haus holen oder den größeren Ausbau unserer Seite Startup-MVP-Entwicklung fortsetzen, während ein CTO auf Zeit begleitet."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was kostet ein MVP realistisch?",
+          "answer": "Das hängt fast vollständig vom Umfang ab, und die ehrliche Einordnung lautet: Ein MVP ist keine billige Version eines Vollprodukts, sondern ein kleineres Produkt mit weniger Antworten darin. Eine fokussierte v1 mit Anmeldung, einem Kernablauf, Zahlung und einer schlanken Verwaltung ist ein Projekt in der Größenordnung von Wochen erfahrener Entwicklungsarbeit, nicht von Tagen. Nach dem Zuschnitt-Termin nennen wir eine feste Spanne und legen die Streichliste bei."
+        },
+        {
+          "question": "Wie schnell können Sie beginnen?",
+          "answer": "Wir sind ein kleines, erfahrenes Team und nehmen bewusst nur wenige Projekte gleichzeitig an, der Starttermin hängt also vom laufenden Bestand ab. Ein Zuschnitt-Termin lässt sich in der Regel binnen weniger Tage ansetzen, und dort fallen ohnehin die wesentlichen Entscheidungen. Wenn wir zu Ihrem Wunschtermin nicht starten können, sagen wir das im Erstgespräch und blockieren keinen Platz."
+        },
+        {
+          "question": "Wem gehören Code und Infrastruktur?",
+          "answer": "Ihnen, ab dem ersten Commit. Repositories, Cloud-Konten, Domains und Drittanbieterdienste laufen auf Ihre Organisation und Ihre Abrechnung, wir arbeiten als berechtigte Mitwirkende darin. Der Vertrag überträgt Ihnen sämtliche Rechte an den erbrachten Leistungen; es gibt kein proprietäres Framework von uns, das Sie dauerhaft lizenzieren müssten."
+        },
+        {
+          "question": "Was gehört bewusst nicht in Version eins?",
+          "answer": "In der Regel mehr, als Gründerteams erwarten: feingliedrige Berechtigungen, Mehrsprachigkeit, eine native App, wo eine responsive Web-App genügt, Auswertungen, die niemand angefragt hat, und jede Integration, die sich bei kleiner Kundenzahl manuell erledigen lässt. Alles, was erst im Skalierungsfall zählt, ist ein Streichkandidat — für eine Last zu bauen, die es nicht gibt, ist der häufigste Weg, frühes Kapital zu verlieren."
+        },
+        {
+          "question": "Wie sieht es mit DSGVO und Auftragsverarbeitung aus?",
+          "answer": "Wir halten von Anfang an fest, welche personenbezogenen Daten aus welchem Grund erhoben, wo sie gespeichert und wie lange sie aufbewahrt werden, weil das nachträglich teurer ist als von Beginn an. Dazu gehören Einwilligungsflüsse im Produkt, die Reduktion überflüssiger Datenerhebung, eine Liste der eingesetzten Dienste samt Region und ein Auftragsverarbeitungsvertrag, wo wir selbst Daten verarbeiten. Das ist unsere Dokumentationspraxis und ersetzt keine Rechtsberatung."
+        },
+        {
+          "question": "Müssen wir zuerst Kapital eingeworben haben?",
+          "answer": "Nein, und bei vielen Ideen ist diese Reihenfolge falsch. Frühphaseninvestoren möchten zunehmend ein laufendes Produkt mit echten Nutzern sehen statt einer Präsentation, sodass eine kleine eigenfinanzierte v1 die Konditionen der Runde eher verbessert als die Runde verzögert. Entscheidend ist Realismus: Ein bescheidenes Budget kauft ein enges Produkt, und wir schneiden lieber ehrlich zu, als eine Plattform zu versprechen."
+        },
+        {
+          "question": "Was passiert nach dem Launch?",
+          "answer": "Software steht nicht still: Abhängigkeiten altern, Anbieter ändern Schnittstellen, echte Nutzer finden Sonderfälle. Wir bieten eine kleine laufende Wartungsvereinbarung für Aktualisierungen, Monitoring und Fehlerbehebung an, halten sie aber bewusst optional, und die Übergabedokumentation ist so geschrieben, dass ein anderes Team oder Ihre erste eigene Besetzung übernehmen kann. Sie sollen nie in der Lage sein, dass nur wir Ihr Produkt am Laufen halten können."
+        },
+        {
+          "question": "Unterstützen Sie uns bei den ersten Entwicklereinstellungen?",
+          "answer": "Ja, und für viele Gründungsteams ist das der wertvollste Teil. Dazu zählen ein ehrliches Rollenprofil, eine kurze praxisnahe Aufgabe statt Whiteboard-Rätseln, die Begleitung technischer Gespräche und eine klare Einschätzung, ob eine Kandidatin die Arbeit tatsächlich leisten kann. Ebenso strukturieren wir die ersten Monate so, dass die neue Besetzung eine dokumentierte Codebasis übernimmt und kein Rätsel."
+        },
+        {
+          "question": "Wir haben bereits Code von einem anderen Dienstleister — übernehmen Sie das?",
+          "answer": "Oft ja, aber wir beginnen mit einer bezahlten technischen Prüfung statt mit einem Versprechen. Diese Prüfung beschreibt, was der Code leistet, wie riskant Änderungen sind, wie es um Sicherheit und Daten steht und ob Weiterführen günstiger ist als der Neubau des Kerns. Manchmal lautet die Empfehlung, ihn zu stabilisieren, manchmal, einen Teil neu zu schreiben, während der Rest weiterläuft."
+        },
+        {
+          "question": "Arbeiten Sie gegen Beteiligung statt Honorar?",
+          "answer": "Wir sind eine kleine Agentur und kein Fonds, unser Standard ist deshalb bezahlte Arbeit mit klarem Umfang. Reduzierte Honorare mit kleinem Anteil sind in seltenen Fällen denkbar, wenn wir die Branche kennen und vom Team überzeugt sind; wir bieten es aber nicht an, um einen unterfinanzierten Plan bezahlbar erscheinen zu lassen. Reicht das Budget nicht für eine echte v1, ist die bessere Antwort eine kleinere v1."
+        }
+      ],
+      "technologies": [
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "React", "icon": "react" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "Vercel", "icon": "vercel" },
+        { "name": "React Native", "icon": "react" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "خدمات الشركات الناشئة",
+    "shortDescription": "قيادة تقنية ومنتجية للمؤسسين: تقليص النسخة الأولى إلى الافتراض الوحيد الجدير بالاختبار، وبناؤها بتقنيات مثبتة، وتسليم الكود والبنية التحتية باسمكم أنتم منذ اليوم الأول.",
+    "fullDescription": "تضيع أغلب ميزانيات الشركات الناشئة في المسافة بين ما يريد المؤسس بناءه وما تحتاج النسخة الأولى فعلاً إلى إثباته. نعمل بالاتجاه المعاكس: نصوغ في جملة واحدة الافتراض الذي يُسقط المشروع إن كان خاطئاً، ثم نبني أصغر منتج صادق يختبره. عملياً يعني ذلك تقنيات عادية ومثبتة، وقائمة مكتوبة بما لن تتضمنه النسخة الأولى، وتجنّب معمارية مصمّمة لأحمال لا تملكونها بعد. بهذه الطريقة أطلقنا منتجاتنا: EidosUs، مساعد قراءة أكاديمي بالذكاء الاصطناعي، وMenuQR Lab، منصة قوائم طعام بتقنية QR للمطاعم، ووكيل دعم متعدد المستأجرين لمتاجر منصة ikas. وللمؤسسين بلا شريك تقني، يعمل الفريق نفسه بدور المدير التقني بدوام جزئي: مراجعة عروض الموردين، والفحص التقني النافي للجهالة، والمساعدة في توظيف أول مهندس.",
+    "features": [
+      "تحديد نطاق MVP حول افتراض واحد، مع قائمة مكتوبة بما يُستبعد من النسخة الأولى",
+      "نموذج أولي قابل للنقر واعتماد المسار قبل كتابة أي كود إنتاجي",
+      "اختيار متعمد لتقنيات مثبتة بدل معمارية مبنية على توقعات غير مؤكدة",
+      "المستودعات وحسابات الاستضافة وأسماء النطاقات باسم شركتكم منذ اليوم الأول",
+      "مدير تقني بدوام جزئي للمؤسسين غير التقنيين",
+      "فحص تقني للكود القائم ولعروض الشركات والموردين قبل التوقيع",
+      "توظيف أول مهندس: وصف الدور، ومهمة عملية قصيرة، وحضور المقابلات التقنية",
+      "تحليلات المنتج وقياس الأحداث التي يسأل عنها المستثمرون"
+    ],
+    "benefits": [
+      "نسخة أولى تجيب عن سؤال واحد بوضوح بدل منتج نصف مكتمل بلا إجابة",
+      "إنفاق الميزانية على الافتراض عالي المخاطر لا على ميزات لم يطلبها أحد",
+      "الكود والبنية باسمكم، فيبقى تغيير الشريك التقني خياراً متاحاً دائماً",
+      "رأي هندسي مستقل بجانبكم عند التفاوض مع الموردين أو المستثمرين",
+      "إطلاق يمكن البناء فوقه عند ظهور الطلب بدل إعادة كتابته من الصفر",
+      "اعتراض صريح قبل الإنفاق، بما في ذلك نصيحة التأجيل حين تكون هي الصواب"
+    ],
+    "metaTitle": "خدمات الشركات الناشئة — MVP و CTO | PakSoft",
+    "metaDescription": "تحديد نطاق MVP وبناؤه ودعم مدير تقني بدوام جزئي للمؤسسين، مع ملكية كاملة للكود والبنية التحتية. احجزوا جلسة تقييم مجانية لفكرتكم مع PakSoft اليوم.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "جلسة الافتراض والنطاق",
+          "description": "نبدأ من السؤال الذي يقوم عليه المشروع فعلاً: هل يدفع هؤلاء الناس مقابل هذا، وهل يعودون، وهل يمكن تقديمه بتكلفة قابلة للاستمرار؟ نكتبه في جملة واحدة، ثم نقيس كل قرار لاحق بمدى مساهمته في الإجابة عنها، وهذا تحديداً ما يمنع النسخة الأولى من التحول بهدوء إلى منتج كامل."
+        },
+        {
+          "step": 2,
+          "title": "قائمة الاستبعاد",
+          "description": "نُخرج قائمتين: ما تتضمنه النسخة الأولى، والأهم ما نستبعده عمداً — أنظمة الصلاحيات التفصيلية، وتعدد اللغات، والتطبيقات الأصلية، وأي تكامل يمكن تنفيذه يدوياً مع أول خمسين عميلاً. ولأن القائمة مكتوبة ومتفق عليها، يصبح كل طلب لاحق قراراً واعياً له تكلفة معلنة بدل تمدد صامت في النطاق."
+        },
+        {
+          "step": 3,
+          "title": "النموذج الأولي وقرار التقنيات",
+          "description": "قبل كتابة كود الإنتاج تشاهدون شاشات قابلة للنقر للمسار الأساسي، لأن النقاش حول شاشة أرخص كثيراً من النقاش حول ميزة أُطلقت بالفعل. واختيار التقنيات يتبع المنطق نفسه: نختار Next.js وPostgreSQL والاستضافة المُدارة تحديداً لأنها شائعة وموثّقة ويسهل على موظف تعيّنونه لاحقاً استلامها."
+        },
+        {
+          "step": 4,
+          "title": "البناء داخل حساباتكم",
+          "description": "يُنشأ المستودع وقاعدة البيانات والاستضافة والنطاق تحت حساب شركتكم ووسيلة دفعكم منذ أول commit، ونُضاف نحن كمساهمين بصلاحيات. هذا اختيار مقصود: فهو يزيل أكثر المصائد شيوعاً، حيث يعمل المنتج بينما تبقى المفاتيح لدى المورّد ويمر كل تعديل صغير عبر بابه."
+        },
+        {
+          "step": 5,
+          "title": "الإطلاق والقياس",
+          "description": "نُطلق للمستخدمين الحقيقيين وقد جُهّزت الأحداث المهمة للقياس مسبقاً: التسجيل، والاستخدام الأول ذي القيمة، والإجراء الذي يثبت أن المنتج نجح، والنقاط التي يتوقف عندها الناس. بذلك يستند قراركم التالي وحديثكم مع المستثمرين إلى بيانات لا إلى انطباع عن عرض تجريبي أعجب بضعة أصدقاء."
+        },
+        {
+          "step": 6,
+          "title": "التسليم والصيانة وما بعدها",
+          "description": "ينتهي كل مشروع بتسليم مكتوب: ملاحظات المعمارية، ومتغيرات البيئة، وخطوات النشر، وقائمة بما نراه أولى بالإصلاح لاحقاً. بعدها يمكنكم الاستمرار باتفاق صيانة صغير، أو نقل العمل إلى فريق داخلي بدعم منّا في التوظيف، أو المضي في بناء أعمق كما هو موضّح في صفحة تطوير MVP للشركات الناشئة مع بقاء المدير التقني بدوام جزئي إلى جانبكم."
+        }
+      ],
+      "faq": [
+        {
+          "question": "كم تكلفة بناء MVP فعلياً؟",
+          "answer": "تعتمد التكلفة على النطاق بالكامل، والتأطير الصادق أن الـ MVP ليس نسخة رخيصة من منتج كامل، بل منتج أصغر يحمل إجابات أقل. نسخة أولى مركّزة تتضمن التسجيل ومساراً أساسياً واحداً والدفع وشاشة إدارة بسيطة تُقاس بأسابيع من عمل مهندس خبير لا بأيام. نعطيكم نطاقاً سعرياً محدداً بعد جلسة تحديد النطاق، مرفقاً بقائمة الاستبعاد لتروا ما الذي يحرّك الرقم."
+        },
+        {
+          "question": "متى يمكنكم البدء؟",
+          "answer": "نحن فريق صغير من مهندسين خبراء ونقبل عدداً محدوداً من المشاريع في الوقت نفسه، لذا يعتمد موعد البدء على ما هو قائم حالياً. عملياً يمكن ترتيب جلسة تحديد النطاق خلال أيام، وفيها تُتخذ القرارات الجوهرية أصلاً. وإن لم نستطع البدء في الموعد الذي تحتاجونه سنقولها في المكالمة الأولى بدل حجز مكان بلا التزام حقيقي."
+        },
+        {
+          "question": "لمن تعود ملكية الكود والبنية التحتية؟",
+          "answer": "لكم، منذ أول commit. تُنشأ المستودعات وحسابات السحابة والنطاقات وخدمات الطرف الثالث تحت اسم شركتكم وعلى وسيلة دفعكم، ونعمل نحن داخلها كمستخدمين مصرّح لهم. وينص العقد على انتقال كامل حقوق الملكية الفكرية للعمل المسلَّم إليكم، ولا يوجد إطار عمل مغلق خاص بنا تحتاجون إلى ترخيصه باستمرار."
+        },
+        {
+          "question": "ما الذي يجب استبعاده عمداً من النسخة الأولى؟",
+          "answer": "عادةً أكثر مما يتوقع المؤسسون: الصلاحيات التفصيلية، وتعدد اللغات، وتطبيق أصلي حيث يكفي موقع متجاوب، وشاشات تقارير لم يطلبها أحد، وأي تكامل يمكن تنفيذه يدوياً ما دام عدد العملاء صغيراً. كل ما لا يظهر أثره إلا عند التوسع هو مرشح للاستبعاد، لأن البناء لحجم لا تملكونه بعد هو أسرع طرق إهدار المال المبكر."
+        },
+        {
+          "question": "لسنا تقنيين، كيف نتأكد أننا نسمع الحقيقة؟",
+          "answer": "هذا بالضبط دور المدير التقني بدوام جزئي، ونقدّمه خدمةً مستقلة أيضاً. يعني عملياً وجود مهندس خبير يجلس في صفكم: يقرأ عروض الموردين وتقديراتهم بعين ناقدة، ويجري فحصاً تقنياً لكود قائم قبل الاستحواذ أو الاستثمار، ويترجم المفاضلات الهندسية إلى لغة أعمال. تجدون التفاصيل في صفحة المدير التقني."
+        },
+        {
+          "question": "هل يجب أن نحصل على تمويل أولاً؟",
+          "answer": "لا، وفي كثير من الأفكار يكون هذا ترتيباً خاطئاً. صار مستثمرو المراحل المبكرة في المنطقة يفضّلون رؤية منتج يعمل بمستخدمين حقيقيين بدل عرض تقديمي، لذا فإن نسخة أولى صغيرة ممولة ذاتياً غالباً ما تحسّن شروط الجولة بدل أن تؤخرها. المهم أن تكونوا واقعيين: الميزانية المتواضعة تشتري منتجاً ضيقاً، ونفضّل تحديد نطاق صادق على وعد بمنصة."
+        },
+        {
+          "question": "ماذا يحدث بعد الإطلاق؟",
+          "answer": "البرمجيات لا تبقى ساكنة: تتقادم المكتبات، ويغيّر المزوّدون واجهاتهم، ويجد المستخدمون الحقيقيون حالات لم تُخطَّط. نوفّر اتفاق صيانة صغيراً يغطي التحديثات والمراقبة وإصلاح الأعطال، لكنه اختياري بشكل متعمّد، وتوثيق التسليم مكتوب بحيث يستطيع فريق آخر أو أول موظف تقني لديكم استلامه. لا ينبغي أن تصلوا يوماً إلى وضع لا يستطيع فيه أحد سوانا تشغيل منتجكم."
+        },
+        {
+          "question": "هل تساعدوننا في توظيف أول مهندسينا؟",
+          "answer": "نعم، وغالباً ما يكون هذا أنفع ما نقدّمه لفريق مؤسس. يشمل ذلك كتابة وصف الوظيفة بواقعية، وتصميم مهمة عملية قصيرة بدل أسئلة نظرية على السبورة، وحضور المقابلات التقنية، وإعطاء رأي واضح في قدرة المرشح على أداء العمل فعلاً. كما ننظّم الأشهر الأولى بحيث يستلم الموظف الجديد كوداً موثّقاً لا لغزاً."
+        },
+        {
+          "question": "لدينا كود من مطوّر سابق، هل تستلمونه؟",
+          "answer": "غالباً نعم، لكننا نبدأ بمراجعة تقنية مدفوعة قبل أي وعد. تغطي المراجعة ما يفعله الكود، ومدى خطورة تعديله، ووضع الأمان والبيانات، وما إذا كان الاستمرار أرخص من إعادة بناء النواة. أحياناً تكون التوصية تثبيته وتحسينه، وأحياناً إعادة كتابة جزء واحد بينما يستمر الباقي في العمل، ونقول لكم أيهما بصراحة."
+        },
+        {
+          "question": "هل تعملون مقابل حصة في الشركة بدل الأتعاب؟",
+          "answer": "نحن وكالة صغيرة ولسنا صندوق استثمار، لذا الأصل لدينا عمل مدفوع بنطاق واضح. يمكن في حالات نادرة الجمع بين أتعاب مخفّضة وحصة صغيرة حين نعرف القطاع جيداً ونثق بالفريق، لكننا لا نطرحه وسيلةً لجعل خطة ناقصة التمويل تبدو ممكنة. إذا كانت الميزانية لا تكفي نسخة أولى حقيقية، فالجواب الأفضل نسخة أولى أصغر."
+        }
+      ],
+      "technologies": [
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "React", "icon": "react" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "Vercel", "icon": "vercel" },
+        { "name": "React Native", "icon": "react" }
+      ]
+    }
+  }
+}

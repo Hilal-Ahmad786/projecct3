@@ -1,0 +1,463 @@
+{
+  "slug": "database-services",
+  "en": {
+    "name": "Database Services",
+    "shortDescription": "Design, tuning and migration for the database your product depends on: schemas that survive change, indexes that match real queries, pooling that works under serverless, and migrations planned with a rollback rather than a hope.",
+    "fullDescription": "The database is usually the last thing a team looks at and the first thing that limits them. Slow pages, ballooning hosting bills, deploys that lock a table for ten minutes and reports that take a minute to load are almost always schema, index or query problems wearing different clothes. We work on all three layers: how the data is modelled, how it is queried, and how it is operated — including backup and point-in-time recovery, connection pooling limits that bite hard on serverless platforms, and data transfer, which is a real line item on managed Postgres. We run our own production PostgreSQL on Neon through Prisma and have cut both query latency and transfer volume on it. Deeper work continues in Database Design & Architecture, Database Optimization & Performance Tuning, and Database Migration.",
+    "features": [
+      "Schema design with explicit normalisation trade-offs, constraints and sane data types",
+      "Index strategy driven by the queries you actually run, including composite and partial indexes",
+      "Query analysis with execution plans to find sequential scans, N+1 patterns and missing indexes",
+      "Connection pooling sized for serverless and edge runtimes, where connection limits fail first",
+      "Data-transfer and storage cost review — egress is a real operating cost on managed Postgres",
+      "Migration planning with expand-and-contract steps, rollback path and low-downtime cutover",
+      "Backup, retention and point-in-time recovery verified by an actual restore",
+      "Multi-tenant data isolation patterns, including row-level security and per-tenant scoping"
+    ],
+    "benefits": [
+      "Pages and reports that stop waiting on the database before they render",
+      "Lower hosting bills where the cause was transfer volume rather than compute",
+      "Schema changes that ship without locking a production table during business hours",
+      "Migrations with a tested rollback, so the cutover is a decision instead of a gamble",
+      "Recovery you have rehearsed rather than a backup nobody has ever opened",
+      "Documentation your next developer can read, so the schema is not tribal knowledge"
+    ],
+    "metaTitle": "Database Services & PostgreSQL Consulting | PakSoft",
+    "metaDescription": "Schema design, index and query tuning, pooling, backups and low-downtime migrations for PostgreSQL and MySQL. Book a database review with our engineers.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Assessment and Query Profiling",
+          "description": "We start from evidence: slow-query logs, execution plans for the heaviest endpoints, table and index sizes, cache hit ratios, connection counts and where transfer volume is actually generated. This usually reveals a small number of queries responsible for most of the load, which is far more useful than a general audit of everything."
+        },
+        {
+          "step": 2,
+          "title": "Schema and Data-Model Review",
+          "description": "We check whether the model matches how the data is really used: where normalisation is protecting integrity, where a deliberate denormalisation would remove an expensive join, and where missing constraints or vague data types are quietly allowing bad rows in. Multi-tenant systems get extra scrutiny, because isolation must be enforced by the schema and not by remembering to add a filter."
+        },
+        {
+          "step": 3,
+          "title": "Indexing and Query Rewrites",
+          "description": "Indexes are added for queries that exist, not for columns that look important, and unused indexes are removed because each one costs write throughput and storage. Alongside that we fix the classic offenders: N+1 access patterns, reading every column of a wide table, per-row round-trips that belong in a single aggregate statement, and pagination that scans the whole table to reach page fifty."
+        },
+        {
+          "step": 4,
+          "title": "Connection Pooling and Access Patterns",
+          "description": "Serverless and edge deployments open connections in a way traditional pooling was never designed for, and the failure mode is a sudden wall of connection errors under load rather than a gradual slowdown. We size the pool, place a pooler correctly, keep transactions short, and move read-heavy work to cached or replicated paths where it makes sense."
+        },
+        {
+          "step": 5,
+          "title": "Migration Design and Rehearsal",
+          "description": "Schema and platform migrations are planned as reversible steps — add the new structure, write to both, backfill, switch reads, then remove the old — so there is always a way back. We rehearse on a copy with production-sized data, measure how long each step actually takes, and agree the cutover window and rollback trigger before anyone touches production."
+        },
+        {
+          "step": 6,
+          "title": "Operations, Backup and Handover",
+          "description": "We verify backup schedule, retention and point-in-time recovery by performing a real restore, then document the recovery procedure, the monitoring signals worth alerting on, and the schema itself. The goal is that your team can operate the database without us, and choose to keep us for the harder work rather than out of dependency."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How do you migrate a live database without downtime?",
+          "answer": "By making the change reversible and incremental rather than a single switch. The standard approach is expand-and-contract: add the new column, table or database alongside the old, write to both, backfill historical rows in batches that do not lock the table, move reads across once the data is verified, then remove the old structure in a later release. Truly zero downtime depends on your stack and constraints, so we quote a realistic short cutover window instead of promising zero and discovering otherwise at two in the morning."
+        },
+        {
+          "question": "Will optimisation break anything?",
+          "answer": "Index and query work is generally low risk when the changes are reviewed and applied one at a time, but there are real hazards: adding an index on a large table can lock writes if built the wrong way, and a query rewrite can subtly change results when NULLs or duplicates are involved. We test on a copy with production-sized data, apply index builds concurrently where the engine supports it, and compare query output before and after rather than assuming equivalence."
+        },
+        {
+          "question": "Do you need access to our production database?",
+          "answer": "For diagnosis we usually need far less than people expect — execution plans, slow-query logs, schema definitions and table statistics are often enough, and none of those require reading customer records. Where direct access is genuinely necessary, we work through a named read-only role, and for any work involving personal data we prefer a masked or reduced copy. Write access to production is granted for a specific migration window, not permanently."
+        },
+        {
+          "question": "Our hosting bill keeps rising but traffic has not. Why?",
+          "answer": "On managed Postgres platforms, data transfer and storage are often billed separately from compute, and an application that reads whole tables where it needs three columns, or refetches the same rows on every request, generates far more transfer than its traffic suggests. We have chased exactly this on our own platform and reduced it by replacing full-table reads with narrow projections, batching inserts, converting per-row round-trips into aggregate SQL, and adding a caching layer with deliberate invalidation."
+        },
+        {
+          "question": "We keep getting connection-limit errors after moving to serverless. What is wrong?",
+          "answer": "Serverless functions scale out horizontally, and each instance can hold its own connections, so a platform that comfortably served a single long-lived application server can exhaust its connection limit quickly. The fix is a properly placed connection pooler, a client configured for it, short transactions, and moving work that does not need a live connection out of the request path. This is a design issue rather than a capacity issue, and buying a bigger instance rarely solves it."
+        },
+        {
+          "question": "How do you decide between normalising and denormalising?",
+          "answer": "By what the data has to guarantee versus how it is read. Normalisation prevents contradictory data and is the right default for anything transactional; denormalisation is a deliberate performance decision that you pay for with update complexity and the risk of drift. We denormalise where a join is provably expensive on hot paths, keep the derived data maintained by the database or a single code path, and write down why it exists so nobody undoes it by accident."
+        },
+        {
+          "question": "How do you find missing indexes?",
+          "answer": "By looking at real workload rather than guessing: slow-query logs, execution plans showing sequential scans on large tables, and index-usage statistics that reveal both unused indexes and hot tables with no supporting index. Composite index column order matters as much as which columns are included, and partial indexes often outperform broad ones for filtered queries. We also check the write side, because every index makes inserts and updates more expensive."
+        },
+        {
+          "question": "What happens to our data if we stop working with you?",
+          "answer": "It stays where it always was — in your database, under your account. We do not host client production data on infrastructure we own unless you specifically ask us to, and we do not keep copies after an engagement ends beyond what is needed for an agreed handover. You receive the schema documentation, migration history, index rationale and recovery procedure, and we can brief whoever takes over."
+        },
+        {
+          "question": "Can you work with our existing hosting and database provider?",
+          "answer": "Yes. We work regularly with managed PostgreSQL such as Neon and comparable providers, with MySQL on conventional hosting, and with self-managed instances on a VPS, and we do not require a platform change to start. If the current platform is genuinely the constraint — no point-in-time recovery, no read replica option, a version that is out of support — we will document why and price the alternative rather than simply asserting it."
+        },
+        {
+          "question": "How are backups and point-in-time recovery handled?",
+          "answer": "We agree the acceptable data-loss window and recovery time first, because those two numbers determine everything else, then configure backups and retention to match and verify them with a real restore into a separate environment. We also document who can trigger recovery and how long a full restore actually takes on your data volume, since that measurement is worthless when taken for the first time during an incident."
+        },
+        {
+          "question": "Do you handle multi-tenant data isolation?",
+          "answer": "Yes, and we treat it as a schema concern rather than a coding discipline. Every tenant-scoped table carries a tenant key, access goes through queries that cannot omit it, and row-level security enforces the boundary at the database rather than relying on every developer remembering a WHERE clause. We built this pattern into a multi-tenant AI support platform for ikas stores, including per-tenant usage and cost tracking."
+        }
+      ],
+      "technologies": [
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "Neon", "icon": "neon" },
+        { "name": "MySQL", "icon": "mysql" },
+        { "name": "Redis", "icon": "redis" },
+        { "name": "pgvector", "icon": "pgvector" },
+        { "name": "MongoDB", "icon": "mongodb" },
+        { "name": "Docker", "icon": "docker" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Veritabanı Hizmetleri",
+    "shortDescription": "Ürününüzün dayandığı veritabanı için tasarım, iyileştirme ve göç: değişime dayanan şemalar, gerçekten çalışan sorgulara uygun indeksler, serverless ortamda çöken bağlantı havuzlarının doğru kurgusu ve geri dönüş planı olan migrasyonlar.",
+    "fullDescription": "Veritabanı çoğu ekibin en son baktığı, ama en önce sınırlarını çizen katmandır. Yavaş sayfalar, sürekli büyüyen hosting faturaları, tabloyu on dakika kilitleyen deploy'lar ve bir dakikada açılan raporlar neredeyse her zaman farklı kılıklara girmiş şema, indeks veya sorgu sorunlarıdır. Üç katmanda da çalışırız: verinin nasıl modellendiği, nasıl sorgulandığı ve nasıl işletildiği — yedekleme ve belirli bir ana geri dönüş (PITR), serverless platformlarda ilk çöken yer olan bağlantı limitleri ve yönetilen PostgreSQL'de gerçek bir fatura kalemi olan veri transferi dahil. Kendi üretim veritabanımızı Prisma ile Neon üzerinde PostgreSQL olarak işletiyoruz ve orada hem sorgu gecikmesini hem transfer hacmini düşürdük. Derinlemesine çalışma Veritabanı Tasarımı & Mimarisi, Veritabanı Optimizasyonu & Performans İyileştirme ve Veritabanı Migrasyonu sayfalarında sürüyor.",
+    "features": [
+      "Normalizasyon dengeleri açıkça konuşulmuş şema tasarımı; kısıtlar ve doğru veri tipleri",
+      "Gerçekte çalışan sorgulara göre indeks stratejisi; bileşik ve kısmi indeks kullanımı",
+      "Sorgu planlarıyla analiz: tam tablo taramaları, N+1 desenleri ve eksik indekslerin tespiti",
+      "Serverless ve edge çalışma zamanları için doğru boyutlandırılmış bağlantı havuzu",
+      "Veri transferi ve depolama maliyeti incelemesi; yönetilen PostgreSQL'de transfer gerçek bir gider kalemidir",
+      "Genişlet-daralt adımlarıyla migrasyon planı, geri dönüş yolu ve düşük kesintili geçiş",
+      "Yedekleme, saklama süresi ve PITR'ın gerçek bir geri yüklemeyle doğrulanması",
+      "Çok kiracılı (multi-tenant) veri izolasyonu; satır seviyesi güvenlik ve kiracı bazlı kapsam"
+    ],
+    "benefits": [
+      "Sayfa ve raporların render'a başlamadan önce veriyi beklemeyi bırakması",
+      "Sorunun işlem gücü değil transfer hacmi olduğu durumlarda düşen hosting faturası",
+      "Mesai saatlerinde üretim tablosunu kilitlemeden yayına alınabilen şema değişiklikleri",
+      "Test edilmiş geri dönüş planı olan migrasyonlar; geçiş kumar değil karar olur",
+      "Hiç açılmamış bir yedek yerine gerçekten prova edilmiş kurtarma prosedürü",
+      "Sonraki geliştiricinin okuyabileceği dokümantasyon; şema kişiye bağlı bilgi olmaktan çıkar"
+    ],
+    "metaTitle": "Veritabanı Hizmetleri ve PostgreSQL Desteği | PakSoft",
+    "metaDescription": "Şema tasarımı, indeks ve sorgu iyileştirme, bağlantı havuzu, yedekleme ve düşük kesintili migrasyon. Veritabanınız için ücretsiz inceleme talep edin.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Değerlendirme ve Sorgu Profillemesi",
+          "description": "İşe kanıtla başlarız: yavaş sorgu kayıtları, en ağır uç noktalar için çalıştırma planları, tablo ve indeks boyutları, önbellek isabet oranları, açık bağlantı sayısı ve transfer hacminin gerçekte nerede üretildiği. Bu inceleme genellikle yükün büyük kısmından sorumlu birkaç sorguyu ortaya çıkarır ki bu, her şeyi kapsayan genel bir denetimden çok daha işe yarar."
+        },
+        {
+          "step": 2,
+          "title": "Şema ve Veri Modeli İncelemesi",
+          "description": "Modelin verinin gerçek kullanımıyla örtüşüp örtüşmediğine bakarız: normalizasyonun bütünlüğü koruduğu yerler, bilinçli bir denormalizasyonun pahalı bir join'i ortadan kaldıracağı yerler ve eksik kısıtların ya da belirsiz veri tiplerinin sessizce hatalı kayıt girmesine izin verdiği yerler. Çok kiracılı sistemler ayrıca incelenir; çünkü izolasyon, filtre eklemeyi hatırlamakla değil şemayla güvence altına alınmalıdır."
+        },
+        {
+          "step": 3,
+          "title": "İndeksleme ve Sorgu Yeniden Yazımı",
+          "description": "İndeksler önemli görünen kolonlara değil, gerçekten çalışan sorgulara göre eklenir; kullanılmayan indeksler ise kaldırılır, çünkü her indeks yazma performansına ve depolamaya maliyet biner. Bunun yanında klasik sorunları düzeltiriz: N+1 erişim deseni, geniş bir tablonun tüm kolonlarının okunması, tek bir toplu ifadeye ait olması gereken satır satır gidiş-gelişler ve ellinci sayfaya ulaşmak için tüm tabloyu tarayan sayfalama."
+        },
+        {
+          "step": 4,
+          "title": "Bağlantı Havuzu ve Erişim Desenleri",
+          "description": "Serverless ve edge dağıtımları, klasik havuzlamanın hiç öngörmediği biçimde bağlantı açar; sonuç kademeli bir yavaşlama değil, yük altında aniden gelen bağlantı hatası duvarıdır. Havuzu doğru boyutlandırır, pooler'ı doğru katmana yerleştirir, işlemleri kısa tutar ve mantıklı olduğu yerde okuma ağırlıklı işi önbelleğe veya replikaya taşırız."
+        },
+        {
+          "step": 5,
+          "title": "Migrasyon Tasarımı ve Provası",
+          "description": "Şema ve platform geçişleri geri alınabilir adımlar halinde planlanır: yeni yapıyı ekle, ikisine birden yaz, geçmiş veriyi parça parça doldur, okumaları taşı, sonra eskisini kaldır. Böylece her aşamada geri dönüş yolu vardır. Üretim boyutundaki bir kopya üzerinde prova yapar, her adımın gerçekte ne kadar sürdüğünü ölçer ve geçiş penceresiyle geri dönüş kriterini üretime dokunmadan önce yazılı hale getiririz."
+        },
+        {
+          "step": 6,
+          "title": "İşletim, Yedekleme ve Devir",
+          "description": "Yedekleme takvimini, saklama süresini ve belirli bir ana geri dönüş yeteneğini gerçek bir geri yükleme yaparak doğrular; ardından kurtarma prosedürünü, alarm kurulmaya değer izleme sinyallerini ve şemanın kendisini belgeleriz. Hedef, ekibinizin veritabanını bizsiz de işletebilmesi ve bizi bağımlılıktan değil zor işler için tercih etmesidir."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Canlı bir veritabanını kesintisiz nasıl taşıyorsunuz?",
+          "answer": "Değişikliği tek bir anahtar çevirme anı olmaktan çıkarıp geri alınabilir ve kademeli hale getirerek. Standart yaklaşım genişlet-daralt yöntemidir: yeni kolonu, tabloyu veya veritabanını eskisinin yanına ekle, bir süre ikisine birden yaz, geçmiş kayıtları tabloyu kilitlemeyecek partiler halinde doldur, veri doğrulandıktan sonra okumaları taşı ve eski yapıyı sonraki bir sürümde kaldır. Gerçek anlamda sıfır kesinti kullandığınız teknolojiye bağlıdır; bu yüzden sıfır vaat edip gece ikide aksini keşfetmek yerine gerçekçi ve kısa bir geçiş penceresi veririz."
+        },
+        {
+          "question": "İyileştirme bir şeyleri bozar mı?",
+          "answer": "İndeks ve sorgu çalışması, değişiklikler tek tek gözden geçirilip uygulandığında genelde düşük risklidir; ancak gerçek tehlikeler vardır: büyük bir tabloya yanlış yöntemle indeks eklemek yazmaları kilitleyebilir, bir sorgunun yeniden yazımı ise NULL veya tekrar eden kayıtlar söz konusuysa sonucu fark ettirmeden değiştirebilir. Bu yüzden üretim boyutundaki bir kopyada test eder, motorun desteklediği yerde indeksi eşzamanlı (concurrently) oluşturur ve sonuçları eşdeğer varsaymak yerine öncesi-sonrası karşılaştırırız."
+        },
+        {
+          "question": "Üretim veritabanımıza erişmeniz şart mı?",
+          "answer": "Teşhis için genelde sanılandan çok daha azı yeterlidir: çalıştırma planları, yavaş sorgu kayıtları, şema tanımları ve tablo istatistikleri çoğu zaman iş görür ve bunların hiçbiri müşteri kayıtlarını okumayı gerektirmez. Doğrudan erişim gerçekten gerekiyorsa isimli ve yalnızca okuma yetkili bir rolle çalışırız; kişisel veri içeren işlerde ise maskelenmiş ya da küçültülmüş kopya tercih ederiz. Üretime yazma yetkisi kalıcı olarak değil, belirli bir migrasyon penceresi için verilir."
+        },
+        {
+          "question": "Trafiğimiz artmadığı halde hosting faturamız neden büyüyor?",
+          "answer": "Yönetilen PostgreSQL platformlarında veri transferi ve depolama çoğu zaman işlem gücünden ayrı faturalanır; üç kolona ihtiyaç duyduğu yerde tüm tabloyu okuyan ya da her istekte aynı satırları yeniden çeken bir uygulama, trafiğinin ima ettiğinden çok daha fazla transfer üretir. Bunu kendi platformumuzda birebir yaşadık: tam tablo okumalarını dar projeksiyonlarla değiştirerek, kayıtları toplu ekleyerek, satır satır sorguları toplu SQL'e çevirerek ve bilinçli geçersiz kılma kurgusu olan bir önbellek katmanı ekleyerek düşürdük."
+        },
+        {
+          "question": "Serverless'a geçtikten sonra sürekli bağlantı limiti hatası alıyoruz, sorun ne?",
+          "answer": "Serverless fonksiyonlar yatay olarak çoğalır ve her örnek kendi bağlantılarını tutabilir; tek bir uzun ömürlü uygulama sunucusuna rahatça yeten bir veritabanı bu durumda bağlantı limitini hızla tüketir. Çözüm doğru konumlandırılmış bir bağlantı havuzlayıcı, buna göre yapılandırılmış istemci, kısa tutulan işlemler ve canlı bağlantı gerektirmeyen işlerin istek yolundan çıkarılmasıdır. Bu bir kapasite değil tasarım sorunudur; daha büyük paket almak nadiren çözer."
+        },
+        {
+          "question": "Normalizasyon mu denormalizasyon mu, kararı neye göre veriyorsunuz?",
+          "answer": "Verinin neyi garanti etmesi gerektiğine ve nasıl okunduğuna göre. Normalizasyon çelişkili veriyi engeller ve işlemsel her şey için doğru varsayılandır; denormalizasyon ise bedeli güncelleme karmaşıklığı ve veri sapması riski olan bilinçli bir performans kararıdır. Sık kullanılan yollarda bir join'in pahalı olduğu ölçülerek gösterildiğinde denormalize eder, türetilmiş veriyi veritabanının ya da tek bir kod yolunun sorumluluğunda tutar ve neden böyle yapıldığını yazarız ki kimse yanlışlıkla geri almasın."
+        },
+        {
+          "question": "Eksik indeksleri nasıl buluyorsunuz?",
+          "answer": "Tahminle değil gerçek iş yüküne bakarak: yavaş sorgu kayıtları, büyük tablolarda sıralı tarama gösteren çalıştırma planları ve hem kullanılmayan indeksleri hem de indeksi olmayan sıcak tabloları ortaya çıkaran indeks kullanım istatistikleri. Bileşik indekslerde kolon sırası en az hangi kolonların dahil edildiği kadar önemlidir; filtreli sorgularda kısmi indeksler çoğu zaman geniş indekslerden daha iyi sonuç verir. Yazma tarafını da kontrol ederiz, çünkü her indeks ekleme ve güncellemeyi pahalılaştırır."
+        },
+        {
+          "question": "Sizinle çalışmayı bırakırsak verilerimize ne olur?",
+          "answer": "Zaten olduğu yerde, sizin hesabınızdaki veritabanında kalır. Özellikle talep etmediğiniz sürece müşteri üretim verisini bize ait bir altyapıda barındırmayız ve iş bittikten sonra devir için gerekenin ötesinde kopya tutmayız. Şema dokümantasyonunu, migrasyon geçmişini, indeks gerekçelerini ve kurtarma prosedürünü teslim eder, işi devralacak kişiye gerekirse aktarım toplantısı yaparız."
+        },
+        {
+          "question": "KVKK açısından verinin nerede tutulduğu nasıl ele alınıyor?",
+          "answer": "Verinin hangi bölgede barındırılacağı, ne kadar süre saklanacağı ve kimin eriştiği baştan yazılı olarak kararlaştırılır; yurt içi barındırma isteyen müşteriler için bunu bir mimari kısıt olarak ele alır, yedeklerin ve replikaların da aynı bölgede kalmasına dikkat ederiz. Geliştirme ve test ortamlarına kişisel veri kopyalamayız; oralarda maskelenmiş veya üretilmiş veriyle çalışırız. Aydınlatma yükümlülükleri ve saklama süreleri konusunda hukuk danışmanınızın belirlediği çerçeveye uyarız."
+        },
+        {
+          "question": "Yedekleme ve belirli bir ana geri dönüş nasıl kurgulanıyor?",
+          "answer": "Önce kabul edilebilir veri kaybı süresi ile hedef kurtarma süresini konuşuruz; çünkü diğer her şeyi bu iki rakam belirler. Ardından yedekleme ve saklama ayarlarını buna göre yapar, ayrı bir ortama gerçek bir geri yükleme yaparak doğrularız. Kurtarmayı kimin başlatabileceğini ve sizin veri hacminizde tam bir geri yüklemenin gerçekte ne kadar sürdüğünü de belgeleriz; bu ölçüm ilk kez olay anında yapılırsa hiçbir değeri kalmaz."
+        },
+        {
+          "question": "Çok kiracılı yapıda veri izolasyonu yapıyor musunuz?",
+          "answer": "Evet ve bunu geliştirici disiplini değil şema meselesi olarak ele alırız. Kiracıya bağlı her tablo bir kiracı anahtarı taşır, erişim bu anahtarı atlayamayan sorgular üzerinden yapılır ve sınır, her geliştiricinin WHERE koşulunu hatırlamasına bırakılmadan satır seviyesi güvenlikle veritabanında zorlanır. Bu deseni ikas mağazaları için geliştirdiğimiz çok kiracılı yapay zekâ destek platformunda kiracı bazlı kullanım ve maliyet takibiyle birlikte uyguladık."
+        }
+      ],
+      "technologies": [
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "Neon", "icon": "neon" },
+        { "name": "MySQL", "icon": "mysql" },
+        { "name": "Redis", "icon": "redis" },
+        { "name": "pgvector", "icon": "pgvector" },
+        { "name": "MongoDB", "icon": "mongodb" },
+        { "name": "Docker", "icon": "docker" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Datenbank-Services",
+    "shortDescription": "Design, Tuning und Migration für die Datenbank, auf der Ihr Produkt läuft: belastbare Schemata, Indizes passend zu den realen Abfragen, funktionierendes Connection Pooling unter Serverless und Migrationen mit geprüftem Rollback.",
+    "fullDescription": "Die Datenbank ist meist die letzte Schicht, die betrachtet wird, und die erste, die begrenzt. Langsame Seiten, wachsende Hosting-Rechnungen, Deployments, die eine Tabelle minutenlang sperren, und Auswertungen mit langer Ladezeit sind fast immer Schema-, Index- oder Abfrageprobleme in unterschiedlicher Verkleidung. Wir arbeiten auf allen drei Ebenen: wie Daten modelliert, wie sie abgefragt und wie sie betrieben werden — inklusive Backup und Point-in-Time-Recovery, Verbindungslimits, die unter Serverless zuerst brechen, und Datentransfer, der bei verwaltetem PostgreSQL ein realer Kostenposten ist. Wir betreiben unsere eigene Produktivdatenbank als PostgreSQL auf Neon über Prisma und haben dort Abfragelatenz wie Transfervolumen gesenkt. Vertiefend: Datenbankdesign & Architektur, Datenbankoptimierung & Performance-Tuning sowie Datenbankmigration.",
+    "features": [
+      "Schemadesign mit ausgesprochenen Normalisierungs-Kompromissen, Constraints und passenden Datentypen",
+      "Indexstrategie anhand der tatsächlich ausgeführten Abfragen, inklusive zusammengesetzter und partieller Indizes",
+      "Abfrageanalyse über Ausführungspläne: Sequential Scans, N+1-Muster und fehlende Indizes",
+      "Connection Pooling passend dimensioniert für Serverless- und Edge-Laufzeiten",
+      "Prüfung von Transfer- und Speicherkosten — Egress ist bei verwaltetem PostgreSQL ein echter Kostenblock",
+      "Migrationsplanung nach dem Expand-and-Contract-Prinzip mit Rollback-Pfad und kurzem Cutover",
+      "Backup, Aufbewahrung und Point-in-Time-Recovery, nachgewiesen durch echte Wiederherstellung",
+      "Mandantentrennung über Tenant-Schlüssel und Row-Level Security statt über Programmierdisziplin"
+    ],
+    "benefits": [
+      "Seiten und Auswertungen warten nicht länger auf die Datenbank, bevor sie rendern",
+      "Niedrigere Hosting-Kosten, wenn die Ursache Transfervolumen statt Rechenleistung war",
+      "Schemaänderungen ohne Sperre einer Produktionstabelle während der Geschäftszeit",
+      "Migrationen mit getestetem Rollback — der Cutover wird zur Entscheidung statt zum Risiko",
+      "Geprobte Wiederherstellung statt eines Backups, das nie geöffnet wurde",
+      "Dokumentation, die Ihre nächsten Entwickler lesen können, statt Wissen in Köpfen"
+    ],
+    "metaTitle": "Datenbank-Services & PostgreSQL-Beratung | PakSoft",
+    "metaDescription": "Schemadesign, Index- und Query-Tuning, Pooling, Backups und Migrationen mit kurzem Cutover für PostgreSQL und MySQL. Jetzt Datenbank-Review anfragen.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Bestandsaufnahme und Query-Profiling",
+          "description": "Wir beginnen bei den Fakten: Slow-Query-Logs, Ausführungspläne der teuersten Endpunkte, Tabellen- und Indexgrößen, Cache-Trefferquoten, Verbindungszahlen und die Frage, wo das Transfervolumen tatsächlich entsteht. In der Regel zeigt sich eine überschaubare Zahl von Abfragen, die den Großteil der Last verursachen — deutlich nützlicher als ein pauschales Audit über alles."
+        },
+        {
+          "step": 2,
+          "title": "Schema- und Datenmodell-Review",
+          "description": "Wir prüfen, ob das Modell zur realen Nutzung passt: wo Normalisierung die Integrität schützt, wo eine bewusste Denormalisierung einen teuren Join einspart und wo fehlende Constraints oder unscharfe Datentypen stillschweigend fehlerhafte Datensätze zulassen. Mandantenfähige Systeme betrachten wir gesondert, weil Trennung durch das Schema erzwungen werden muss und nicht dadurch, dass jemand an einen Filter denkt."
+        },
+        {
+          "step": 3,
+          "title": "Indizierung und Query-Rewrites",
+          "description": "Indizes entstehen für Abfragen, die es gibt, nicht für Spalten, die wichtig aussehen; ungenutzte Indizes entfernen wir, weil jeder Index Schreibdurchsatz und Speicher kostet. Parallel beheben wir die üblichen Verursacher: N+1-Zugriffe, das Lesen aller Spalten breiter Tabellen, zeilenweise Roundtrips, die in ein aggregierendes Statement gehören, und Pagination, die für Seite fünfzig die gesamte Tabelle durchläuft."
+        },
+        {
+          "step": 4,
+          "title": "Connection Pooling und Zugriffsmuster",
+          "description": "Serverless- und Edge-Deployments öffnen Verbindungen auf eine Weise, für die klassisches Pooling nie ausgelegt war; das Fehlerbild ist keine allmähliche Verlangsamung, sondern eine plötzliche Wand aus Verbindungsfehlern unter Last. Wir dimensionieren den Pool, platzieren einen Pooler korrekt, halten Transaktionen kurz und verlagern leselastige Arbeit auf gecachte oder replizierte Pfade, wo es sinnvoll ist."
+        },
+        {
+          "step": 5,
+          "title": "Migrationsdesign und Generalprobe",
+          "description": "Schema- und Plattformmigrationen planen wir als umkehrbare Schritte: neue Struktur anlegen, doppelt schreiben, historische Daten in Batches nachziehen, Lesezugriffe umstellen, alte Struktur später entfernen. Wir proben auf einer Kopie mit produktionsnaher Datenmenge, messen die tatsächliche Dauer jedes Schritts und legen Cutover-Fenster sowie Rollback-Kriterium fest, bevor jemand die Produktion anfasst."
+        },
+        {
+          "step": 6,
+          "title": "Betrieb, Backup und Übergabe",
+          "description": "Wir prüfen Backup-Intervall, Aufbewahrung und Point-in-Time-Recovery durch eine echte Wiederherstellung und dokumentieren anschließend die Recovery-Prozedur, die alarmwürdigen Monitoring-Signale und das Schema selbst. Ziel ist, dass Ihr Team die Datenbank auch ohne uns betreiben kann und uns für die schwierigen Aufgaben behält statt aus Abhängigkeit."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie migrieren Sie eine laufende Datenbank ohne Ausfall?",
+          "answer": "Indem die Änderung umkehrbar und schrittweise erfolgt statt als einmaliger Umschalter. Der Standardweg ist Expand-and-Contract: neue Spalte, Tabelle oder Datenbank neben der alten anlegen, eine Zeit lang doppelt schreiben, Bestandsdaten in Batches nachziehen, die keine Sperre erzeugen, nach Verifikation die Lesezugriffe umstellen und die alte Struktur in einem späteren Release entfernen. Echte Null-Ausfallzeit hängt von Ihrem Stack ab, deshalb nennen wir ein realistisch kurzes Cutover-Fenster, statt Null zu versprechen und es nachts um zwei anders zu erleben."
+        },
+        {
+          "question": "Kann durch die Optimierung etwas kaputtgehen?",
+          "answer": "Index- und Query-Arbeit ist bei einzeln geprüften Änderungen meist risikoarm, aber es gibt reale Gefahren: Ein Index auf einer großen Tabelle kann Schreibzugriffe sperren, wenn er falsch erzeugt wird, und ein umgeschriebenes Statement kann bei NULL-Werten oder Duplikaten unbemerkt andere Ergebnisse liefern. Wir testen auf einer Kopie mit produktionsnaher Datenmenge, erzeugen Indizes concurrently, wo die Engine es unterstützt, und vergleichen Ergebnismengen vorher und nachher, statt Gleichheit anzunehmen."
+        },
+        {
+          "question": "Benötigen Sie Zugriff auf unsere Produktionsdatenbank?",
+          "answer": "Für die Diagnose deutlich weniger, als viele annehmen: Ausführungspläne, Slow-Query-Logs, Schemadefinitionen und Tabellenstatistiken reichen häufig aus und erfordern kein Lesen personenbezogener Datensätze. Wo direkter Zugriff nötig ist, arbeiten wir über eine benannte Rolle mit reinem Lesezugriff, und für Arbeiten mit Personenbezug bevorzugen wir eine maskierte oder reduzierte Kopie. Schreibrechte in der Produktion werden für ein konkretes Migrationsfenster erteilt, nicht dauerhaft."
+        },
+        {
+          "question": "Unsere Hosting-Rechnung steigt, der Traffic aber nicht. Woran liegt das?",
+          "answer": "Bei verwalteten PostgreSQL-Diensten werden Datentransfer und Speicher oft getrennt von der Rechenleistung abgerechnet. Eine Anwendung, die ganze Tabellen liest, obwohl sie drei Spalten braucht, oder dieselben Zeilen bei jedem Request erneut lädt, erzeugt weit mehr Transfer, als der Traffic vermuten lässt. Genau das haben wir auf unserer eigenen Plattform verfolgt und durch schmale Projektionen, gebündelte Inserts, aggregierendes SQL statt zeilenweiser Roundtrips und eine Cache-Schicht mit definierter Invalidierung reduziert."
+        },
+        {
+          "question": "Seit dem Wechsel zu Serverless häufen sich Verbindungslimit-Fehler. Warum?",
+          "answer": "Serverless-Funktionen skalieren horizontal, und jede Instanz kann eigene Verbindungen halten; eine Datenbank, die einem einzelnen langlebigen Applikationsserver problemlos genügte, erschöpft ihr Verbindungslimit dann schnell. Die Lösung ist ein korrekt platzierter Connection Pooler, ein passend konfigurierter Client, kurze Transaktionen und die Verlagerung von Arbeit ohne Verbindungsbedarf aus dem Request-Pfad. Das ist ein Designproblem, kein Kapazitätsproblem — ein größerer Tarif löst es selten."
+        },
+        {
+          "question": "Wie entscheiden Sie zwischen Normalisierung und Denormalisierung?",
+          "answer": "Nach dem, was die Daten garantieren müssen, und danach, wie sie gelesen werden. Normalisierung verhindert widersprüchliche Daten und ist der richtige Standard für alles Transaktionale; Denormalisierung ist eine bewusste Performance-Entscheidung, die mit Update-Komplexität und Abweichungsrisiko bezahlt wird. Wir denormalisieren, wo ein Join auf heißen Pfaden nachweislich teuer ist, halten abgeleitete Daten über die Datenbank oder genau einen Codepfad konsistent und dokumentieren die Begründung."
+        },
+        {
+          "question": "Wie finden Sie fehlende Indizes?",
+          "answer": "Über die reale Last statt über Vermutungen: Slow-Query-Logs, Ausführungspläne mit Sequential Scans auf großen Tabellen und Index-Nutzungsstatistiken, die sowohl ungenutzte Indizes als auch stark beanspruchte Tabellen ohne passenden Index zeigen. Bei zusammengesetzten Indizes ist die Spaltenreihenfolge ebenso entscheidend wie die Spaltenauswahl, und partielle Indizes schlagen bei gefilterten Abfragen oft breite Indizes. Wir prüfen zusätzlich die Schreibseite, weil jeder Index Inserts und Updates verteuert."
+        },
+        {
+          "question": "Was passiert mit unseren Daten, wenn die Zusammenarbeit endet?",
+          "answer": "Sie bleiben, wo sie immer waren: in Ihrer Datenbank unter Ihrem Konto. Produktionsdaten von Kunden hosten wir nicht auf eigener Infrastruktur, sofern Sie das nicht ausdrücklich wünschen, und wir behalten nach Projektende keine Kopien über das für die Übergabe Vereinbarte hinaus. Sie erhalten Schemadokumentation, Migrationshistorie, Indexbegründungen und die Recovery-Prozedur, und wir übergeben auf Wunsch an Ihr nächstes Team."
+        },
+        {
+          "question": "Wie berücksichtigen Sie DSGVO und Datenresidenz?",
+          "answer": "Region, Aufbewahrungsfristen und Zugriffsberechtigungen werden vorab schriftlich festgelegt, und bei geforderter EU-Datenresidenz wählen wir Datenbank- und Backup-Regionen entsprechend, einschließlich Replikaten. Wir arbeiten auf Basis eines Auftragsverarbeitungsvertrags mit dokumentierten technischen und organisatorischen Maßnahmen und kopieren keine personenbezogenen Produktionsdaten in Entwicklungsumgebungen; dort kommen maskierte oder synthetische Datensätze zum Einsatz."
+        },
+        {
+          "question": "Wie werden Backups und Point-in-Time-Recovery gehandhabt?",
+          "answer": "Zuerst klären wir den akzeptablen Datenverlust und die angestrebte Wiederherstellungszeit, denn diese beiden Werte bestimmen alles Weitere; anschließend konfigurieren wir Backups und Aufbewahrung entsprechend und weisen sie durch eine echte Wiederherstellung in einer separaten Umgebung nach. Wir dokumentieren außerdem, wer eine Wiederherstellung auslösen darf und wie lange sie bei Ihrem Datenvolumen wirklich dauert — diese Messung ist wertlos, wenn sie erstmals im Störfall erfolgt."
+        },
+        {
+          "question": "Unterstützen Sie Mandantentrennung?",
+          "answer": "Ja, und wir behandeln sie als Schema-Thema statt als Frage der Programmierdisziplin. Jede mandantenbezogene Tabelle führt einen Tenant-Schlüssel, Zugriffe laufen über Abfragen, die ihn nicht auslassen können, und Row-Level Security erzwingt die Grenze in der Datenbank statt im Gedächtnis der Entwickler. Dieses Muster haben wir in eine mandantenfähige KI-Supportplattform für ikas-Shops eingebaut, inklusive Nutzungs- und Kostenerfassung je Mandant."
+        }
+      ],
+      "technologies": [
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "Neon", "icon": "neon" },
+        { "name": "MySQL", "icon": "mysql" },
+        { "name": "Redis", "icon": "redis" },
+        { "name": "pgvector", "icon": "pgvector" },
+        { "name": "MongoDB", "icon": "mongodb" },
+        { "name": "Docker", "icon": "docker" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "خدمات قواعد البيانات",
+    "shortDescription": "تصميم وضبط وترحيل لقاعدة البيانات التي يقوم عليها منتجكم: مخططات تتحمّل التغيير، وفهارس مبنية على الاستعلامات الحقيقية، وتجميع اتصالات يصمد في بيئات serverless، وترحيل مخطَّط له بمسار تراجع لا بالأمل.",
+    "fullDescription": "قاعدة البيانات هي آخر طبقة ينظر إليها الفريق عادةً، وأول طبقة تفرض عليه حدوده. الصفحات البطيئة، والفواتير المتصاعدة، وعمليات النشر التي تقفل جدولاً لدقائق، والتقارير التي تستغرق دقيقة كاملة، كلها في الغالب مشكلات مخطط أو فهارس أو استعلامات بأشكال مختلفة. نعمل على الطبقات الثلاث: كيف تُنمذَج البيانات، وكيف يجري الاستعلام عنها، وكيف تُشغَّل — بما في ذلك النسخ الاحتياطي والاستعادة إلى نقطة زمنية محددة، وحدود الاتصالات التي تنهار أولاً في بيئات serverless، ونقل البيانات الذي يمثّل بنداً حقيقياً في فاتورة PostgreSQL المُدارة. نشغّل قاعدة بياناتنا الإنتاجية على PostgreSQL عبر Neon و Prisma وخفّضنا فيها زمن الاستعلام وحجم النقل معاً. ويتعمّق العمل في صفحات تصميم قواعد البيانات ومعماريتها، وتحسين الأداء والضبط، وترحيل قواعد البيانات.",
+    "features": [
+      "تصميم مخطط بمقايضات تطبيع معلنة، وقيود سلامة، وأنواع بيانات دقيقة",
+      "استراتيجية فهرسة مبنية على الاستعلامات التي تعمل فعلاً، بما فيها الفهارس المركّبة والجزئية",
+      "تحليل الاستعلامات عبر خطط التنفيذ لكشف المسح المتسلسل وأنماط N+1 والفهارس المفقودة",
+      "ضبط تجميع الاتصالات بما يناسب بيئات serverless و edge حيث تنهار حدود الاتصال أولاً",
+      "مراجعة كلفة نقل البيانات والتخزين، فالنقل بند تشغيلي حقيقي في PostgreSQL المُدارة",
+      "تخطيط الترحيل بأسلوب التوسيع ثم التقليص، مع مسار تراجع ونافذة تحويل قصيرة",
+      "نسخ احتياطي ومدد احتفاظ واستعادة زمنية مُتحقَّق منها باستعادة فعلية لا بالإعدادات",
+      "عزل بيانات المستأجرين عبر مفتاح مستأجر وأمان على مستوى الصف لا عبر انضباط المطوّر"
+    ],
+    "benefits": [
+      "صفحات وتقارير تتوقف عن انتظار قاعدة البيانات قبل أن تبدأ بالعرض",
+      "فاتورة استضافة أقل حين يكون السبب حجم النقل لا قدرة المعالجة",
+      "تغييرات مخطط تُطلق دون قفل جدول إنتاجي في ساعات العمل",
+      "ترحيل بمسار تراجع مُختبر، فيصبح التحويل قراراً لا مجازفة",
+      "استعادة جرى التدرّب عليها بدل نسخة احتياطية لم يفتحها أحد قط",
+      "توثيق يستطيع مطوّركم القادم قراءته، فلا يبقى المخطط معرفة شخصية"
+    ],
+    "metaTitle": "خدمات قواعد البيانات واستشارات PostgreSQL | PakSoft",
+    "metaDescription": "تصميم المخططات وضبط الفهارس والاستعلامات وتجميع الاتصالات والنسخ الاحتياطي والترحيل بأقل توقف. احجزوا مراجعة لقاعدة بياناتكم مع مهندسينا اليوم.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "التقييم وتحليل الاستعلامات",
+          "description": "نبدأ من الأدلة: سجلات الاستعلامات البطيئة، وخطط التنفيذ لأثقل نقاط الوصول، وأحجام الجداول والفهارس، ونسب إصابة الذاكرة المؤقتة، وعدد الاتصالات المفتوحة، وأين يتولّد حجم النقل فعلياً. غالباً يكشف ذلك عدداً صغيراً من الاستعلامات مسؤولاً عن معظم الحمل، وهو أنفع بكثير من تدقيق عام يشمل كل شيء دون أولوية."
+        },
+        {
+          "step": 2,
+          "title": "مراجعة المخطط ونموذج البيانات",
+          "description": "نتحقق من تطابق النموذج مع الاستخدام الحقيقي للبيانات: أين يحمي التطبيع سلامة البيانات، وأين يزيل تفكيك مقصود عملية ربط مكلفة، وأين تسمح القيود الناقصة أو الأنواع الفضفاضة بدخول صفوف خاطئة بصمت. ونولي الأنظمة متعددة المستأجرين اهتماماً إضافياً، لأن العزل يجب أن يفرضه المخطط لا أن يعتمد على تذكّر إضافة شرط تصفية."
+        },
+        {
+          "step": 3,
+          "title": "الفهرسة وإعادة كتابة الاستعلامات",
+          "description": "تُضاف الفهارس للاستعلامات الموجودة فعلاً لا للأعمدة التي تبدو مهمة، وتُحذف الفهارس غير المستخدمة لأن كل فهرس يكلّف في سرعة الكتابة وفي التخزين. وبالتوازي نعالج الأخطاء الكلاسيكية: نمط N+1، وقراءة كل أعمدة جدول عريض، والرحلات المتكررة لكل صف التي مكانها استعلام تجميعي واحد، والتصفّح الذي يمسح الجدول كاملاً للوصول إلى الصفحة الخمسين."
+        },
+        {
+          "step": 4,
+          "title": "تجميع الاتصالات وأنماط الوصول",
+          "description": "تفتح بيئات serverless و edge الاتصالات بطريقة لم يُصمَّم لها التجميع التقليدي، وتظهر المشكلة كجدار مفاجئ من أخطاء الاتصال تحت الحِمل لا كتباطؤ تدريجي. نضبط حجم التجميع، ونضع الـ pooler في الموضع الصحيح، ونُبقي المعاملات قصيرة، وننقل الأعمال كثيفة القراءة إلى مسارات مخزّنة مؤقتاً أو نسخ قراءة حيث يكون ذلك منطقياً."
+        },
+        {
+          "step": 5,
+          "title": "تصميم الترحيل والتجربة المسبقة",
+          "description": "نخطّط ترحيل المخططات والمنصات كخطوات قابلة للعكس: أضف البنية الجديدة، واكتب في الاثنين معاً، وامْلأ البيانات القديمة على دفعات لا تقفل الجدول، ثم انقل القراءة، ثم احذف القديم لاحقاً. ونجري تجربة على نسخة بحجم بيانات الإنتاج، ونقيس المدة الفعلية لكل خطوة، ونتفق على نافذة التحويل وشرط التراجع قبل أن يلمس أحد بيئة الإنتاج."
+        },
+        {
+          "step": 6,
+          "title": "التشغيل والنسخ الاحتياطي والتسليم",
+          "description": "نتحقق من جدول النسخ الاحتياطي ومدة الاحتفاظ وإمكانية الاستعادة الزمنية عبر استعادة فعلية، ثم نوثّق إجراء التعافي، وإشارات المراقبة التي تستحق تنبيهاً، والمخطط نفسه. الهدف أن يتمكن فريقكم من تشغيل قاعدة البيانات دوننا، وأن يبقى التعاون معنا اختياراً للأعمال الأصعب لا نتيجة اعتماد إجباري."
+        }
+      ],
+      "faq": [
+        {
+          "question": "كيف تُرحّلون قاعدة بيانات حيّة دون توقف؟",
+          "answer": "بجعل التغيير قابلاً للعكس ومتدرجاً بدل أن يكون لحظة تبديل واحدة. الأسلوب المعتاد هو التوسيع ثم التقليص: أضف العمود أو الجدول أو قاعدة البيانات الجديدة بجانب القديمة، واكتب في الاثنين فترةً، وامْلأ السجلات التاريخية على دفعات لا تقفل الجدول، وانقل القراءة بعد التحقق من صحة البيانات، ثم احذف البنية القديمة في إصدار لاحق. أما التوقف الصفري الحقيقي فيعتمد على تقنياتكم، لذلك نعطي نافذة تحويل قصيرة وواقعية بدل وعد بصفر نكتشف عكسه في الثانية فجراً."
+        },
+        {
+          "question": "هل قد يُفسد التحسين شيئاً؟",
+          "answer": "عمل الفهارس والاستعلامات منخفض المخاطر عادةً حين تُراجَع التغييرات وتُطبَّق واحداً تلو الآخر، لكن هناك مخاطر حقيقية: إنشاء فهرس على جدول ضخم بالطريقة الخاطئة قد يقفل عمليات الكتابة، وإعادة كتابة استعلام قد تغيّر النتائج بصمت عند وجود قيم NULL أو صفوف مكررة. لذلك نختبر على نسخة بحجم بيانات الإنتاج، وننشئ الفهارس بشكل متزامن حيث يدعم المحرك ذلك، ونقارن مخرجات الاستعلام قبل وبعد بدل افتراض التطابق."
+        },
+        {
+          "question": "هل تحتاجون صلاحية على قاعدة بيانات الإنتاج؟",
+          "answer": "للتشخيص نحتاج عادةً أقل بكثير مما يُتوقع: خطط التنفيذ، وسجلات الاستعلامات البطيئة، وتعريفات المخطط، وإحصاءات الجداول تكفي في الغالب، ولا يتطلب أي منها قراءة سجلات العملاء. وحين يكون الوصول المباشر ضرورياً فعلاً نعمل عبر دور باسم محدد وصلاحية قراءة فقط، ونفضّل نسخة مُقنّعة أو مصغّرة في أي عمل يمسّ بيانات شخصية. أما صلاحية الكتابة على الإنتاج فتُمنح لنافذة ترحيل محددة لا بشكل دائم."
+        },
+        {
+          "question": "فاتورة الاستضافة ترتفع رغم ثبات عدد الزيارات، لماذا؟",
+          "answer": "في منصات PostgreSQL المُدارة يُحتسب نقل البيانات والتخزين غالباً بشكل منفصل عن المعالجة، والتطبيق الذي يقرأ جداول كاملة وهو يحتاج ثلاثة أعمدة، أو يعيد جلب الصفوف نفسها مع كل طلب، ينتج حجم نقل أكبر بكثير مما توحي به زياراته. تتبّعنا هذا بالضبط في منصتنا وخفّضناه باستبدال قراءة الجداول كاملة بإسقاطات ضيّقة، وتجميع عمليات الإدخال، وتحويل الرحلات المتكررة لكل صف إلى استعلام SQL تجميعي، وإضافة طبقة تخزين مؤقت بخطة إبطال واضحة."
+        },
+        {
+          "question": "بعد الانتقال إلى serverless تتكرر أخطاء حد الاتصالات، ما السبب؟",
+          "answer": "دوال serverless تتوسّع أفقياً، وكل نسخة قد تحتفظ باتصالاتها الخاصة، فقاعدة كانت تكفي خادم تطبيق واحداً طويل العمر تستنفد حد اتصالاتها سريعاً. الحل هو موزّع اتصالات (pooler) موضوع في المكان الصحيح، وعميل مهيّأ للتعامل معه، ومعاملات قصيرة، ونقل ما لا يحتاج اتصالاً حياً خارج مسار الطلب. هذه مشكلة تصميم لا مشكلة سعة، ونادراً ما تحلّها ترقية الباقة."
+        },
+        {
+          "question": "كيف تختارون بين التطبيع وتفكيكه؟",
+          "answer": "بحسب ما يجب أن تضمنه البيانات وكيفية قراءتها. التطبيع يمنع البيانات المتناقضة وهو الخيار الافتراضي الصحيح لكل ما هو معاملاتي، بينما التفكيك قرار أداء مقصود تدفعون ثمنه تعقيداً في التحديث وخطر انحراف البيانات. نفكّك حين يثبت بالقياس أن عملية الربط مكلفة على المسارات كثيفة الاستخدام، ونُبقي البيانات المشتقة تحت مسؤولية قاعدة البيانات أو مسار شيفرة واحد، ونوثّق السبب حتى لا يعكسه أحد بالخطأ."
+        },
+        {
+          "question": "كيف تكتشفون الفهارس المفقودة؟",
+          "answer": "بالنظر إلى الحمل الحقيقي لا بالتخمين: سجلات الاستعلامات البطيئة، وخطط التنفيذ التي تُظهر مسحاً متسلسلاً على جداول كبيرة، وإحصاءات استخدام الفهارس التي تكشف الفهارس غير المستخدمة والجداول المزدحمة بلا فهرس مناسب. وفي الفهارس المركّبة يهمّ ترتيب الأعمدة بقدر أهمية اختيارها، وكثيراً ما تتفوق الفهارس الجزئية على العريضة في الاستعلامات المفلترة. ونراجع جانب الكتابة أيضاً، لأن كل فهرس يزيد كلفة الإدخال والتحديث."
+        },
+        {
+          "question": "ماذا يحدث لبياناتنا إذا توقف التعاون؟",
+          "answer": "تبقى حيث كانت دائماً: في قاعدة بياناتكم وتحت حسابكم. لا نستضيف بيانات إنتاج العملاء على بنية نملكها إلا إذا طلبتم ذلك صراحةً، ولا نحتفظ بنسخ بعد انتهاء العمل بما يتجاوز ما يلزم للتسليم المتفق عليه. تستلمون توثيق المخطط، وسجل الترحيلات، ومبررات الفهارس، وإجراء التعافي، ونجري إحاطة لمن يتسلّم العمل بعدنا."
+        },
+        {
+          "question": "كيف تتعاملون مع متطلبات إقامة البيانات في أسواق الخليج؟",
+          "answer": "نحدد منطقة الاستضافة ومدة الاحتفاظ وصلاحيات الوصول كتابةً قبل البدء، ونختار مناطق قاعدة البيانات والنسخ الاحتياطية والنسخ القرائية بما يوافق متطلبات إقامة البيانات لدى الجهة التنظيمية في بلدكم أو سياسة شركتكم. اختيار المنطقة له أثر إضافي على زمن الاستجابة، إذ إن وجود التطبيق وقاعدة البيانات في المنطقة نفسها والقريبة من عملائكم يقلّل زمن الرحلات المتكررة. ولا نَنسخ بيانات شخصية إلى بيئات التطوير؛ نستخدم هناك نسخاً مُقنّعة أو مولّدة."
+        },
+        {
+          "question": "كيف تُدار النسخ الاحتياطية والاستعادة إلى نقطة زمنية؟",
+          "answer": "نتفق أولاً على حجم فقد البيانات المقبول وزمن التعافي المستهدف، لأن هذين الرقمين يحددان كل ما عداهما، ثم نضبط النسخ ومدد الاحتفاظ وفقهما ونتحقق منها باستعادة فعلية إلى بيئة منفصلة. ونوثّق كذلك من يملك صلاحية بدء الاستعادة وكم تستغرق الاستعادة الكاملة على حجم بياناتكم تحديداً، لأن هذا القياس بلا قيمة إن جرى للمرة الأولى أثناء حادث."
+        },
+        {
+          "question": "هل تدعمون عزل البيانات في الأنظمة متعددة المستأجرين؟",
+          "answer": "نعم، ونتعامل معه كمسألة مخطط لا كمسألة انضباط برمجي. كل جدول مرتبط بمستأجر يحمل مفتاح مستأجر، ويجري الوصول عبر استعلامات لا يمكنها إغفاله، ويفرض أمان مستوى الصف الحدّ داخل قاعدة البيانات بدل الاعتماد على تذكّر كل مطوّر لشرط التصفية. طبّقنا هذا النمط في منصة دعم بالذكاء الاصطناعي متعددة المستأجرين لمتاجر ikas، مع تتبّع الاستخدام والكلفة لكل مستأجر."
+        }
+      ],
+      "technologies": [
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "Neon", "icon": "neon" },
+        { "name": "MySQL", "icon": "mysql" },
+        { "name": "Redis", "icon": "redis" },
+        { "name": "pgvector", "icon": "pgvector" },
+        { "name": "MongoDB", "icon": "mongodb" },
+        { "name": "Docker", "icon": "docker" }
+      ]
+    }
+  }
+}

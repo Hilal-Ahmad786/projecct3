@@ -1,0 +1,447 @@
+{
+  "slug": "technology-consulting",
+  "en": {
+    "name": "Technology Consulting",
+    "shortDescription": "Independent technical advice from a senior team that also writes the code: stack choices with trade-offs written down, build-versus-buy analysis, architecture and legacy reviews, and an honest answer when changing nothing is right.",
+    "fullDescription": "Most technical advice fails in one of two ways: it arrives as a slide deck nobody can act on, or it comes from someone whose incentive is to sell you the rebuild. We are a small senior team that ships production software, so whoever writes the recommendation would have to live with it. Engagements start from the decision you actually face — which stack to standardise on, build or buy, whether a legacy system deserves a rewrite or a wrapper, whether a vendor proposal holds up. The judgement comes from delivery work across e-commerce, manufacturing, professional directories and AI products, not a methodology binder. You leave with written recommendations, diagrams and decision records you own. Tech Stack Assessment and Architecture Design go deeper when the question narrows.",
+    "features": [
+      "Technology Stack Selection With Written Trade-Offs, Not Just a Verdict",
+      "Build vs Buy vs Configure Analysis, Including Total Cost of Ownership",
+      "Architecture Review Against Your Real Load, Budget and Team Size",
+      "Legacy Assessment: What to Keep, What to Wrap, What to Replace",
+      "Technical Due Diligence for Acquisitions, Investments and Vendor Selection",
+      "Vendor and Agency Proposal Review — Scope, Lock-In and Exit Terms",
+      "Team Shape Advice: What to Staff In-House and What to Outsource",
+      "Architecture Decision Records and Diagrams You Own and Can Hand On"
+    ],
+    "benefits": [
+      "A written decision any future developer can pick up, not a slide deck",
+      "Fewer expensive rewrites, because we say when the current system is fine",
+      "Competing vendor quotes compared on the same terms and the same scope",
+      "A stack your team can realistically hire for and maintain",
+      "A clear split between what to fix now, what to defer and what to ignore",
+      "Advice from people who ship production software, not only diagrams"
+    ],
+    "metaTitle": "Technology Consulting for Founders & CTOs | PakSoft",
+    "metaDescription": "Independent technology consulting: stack selection, build-vs-buy, architecture and legacy reviews, documented recommendations you own. Book a free scoping call.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Frame the Actual Decision",
+          "description": "A free scoping call turns a broad worry into a decision with a deadline and an owner — which stack, which vendor, rewrite or refactor, hire or outsource. We write the question down and agree what a useful answer looks like before any billable work starts."
+        },
+        {
+          "step": 2,
+          "title": "Discovery Across Code, Infrastructure and People",
+          "description": "We read the codebase, the infrastructure bill, the deployment process and the ticket backlog, and we interview the developers and the operations staff who use the system daily. The gap between how a system is documented and how it actually behaves is usually where the real answer lives."
+        },
+        {
+          "step": 3,
+          "title": "Model the Options and Their Trade-Offs",
+          "description": "Each realistic option gets costed on the same terms: build effort, licence and hosting cost, hiring difficulty, migration risk, and what it costs to reverse the decision later. Doing nothing is always included as an option, because sometimes it wins."
+        },
+        {
+          "step": 4,
+          "title": "Written Recommendation and Decision Records",
+          "description": "You receive a recommendation document with the chosen option, the options rejected and why, architecture diagrams, and short decision records in the format engineers use. It is written to be handed to a developer who has never met us and still make sense in two years."
+        },
+        {
+          "step": 5,
+          "title": "Walkthrough and Challenge Session",
+          "description": "We present the findings to your team and to whoever holds the budget, and we invite the hardest objections rather than avoiding them. If someone in the room knows a constraint we missed, the recommendation gets corrected before you act on it."
+        },
+        {
+          "step": 6,
+          "title": "Optional Implementation or Oversight",
+          "description": "If you want us to build it, we quote the work separately so the advice is never a sales funnel in disguise. If you build it in-house or with another supplier, we can stay on as a light review layer at key milestones."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What do we actually get at the end?",
+          "answer": "A written recommendation document: the decision, the options we considered, the trade-offs behind each one, architecture diagrams where relevant, and short decision records explaining why. It belongs to you outright — no licence, no dependency on us, and it is written so a developer who has never met us can act on it."
+        },
+        {
+          "question": "How long does an engagement take?",
+          "answer": "A focused question — one stack decision, one architecture review — is usually one to two weeks. A broader legacy assessment or technical due diligence on a live system runs three to four weeks, and the timeline depends far more on how quickly we get access to code, infrastructure and the right people than on our side of the work."
+        },
+        {
+          "question": "How is it priced?",
+          "answer": "Fixed fee for a defined scope, quoted after a free scoping call, or a day rate for ongoing advisory where the questions keep coming. Price tracks the breadth of the question and the size of the system, not the number of consultants in the room. We do not quote before we understand what you are actually deciding."
+        },
+        {
+          "question": "Do you also build what you recommend?",
+          "answer": "Yes, and it is deliberate — advice from people who never ship tends to underestimate the boring parts. But it is not a condition. We are equally happy to hand the document to your own developers or to another agency, and we will review that agency's proposal on request. The recommendation does not change based on who builds it."
+        },
+        {
+          "question": "We already have a development team. Is this still useful?",
+          "answer": "Often more useful. Internal teams know the system better than any outsider will, but they rarely get uninterrupted time to evaluate options, and they are sometimes too close to the decision to break a deadlock. We act as a second opinion and a tie-breaker, and we write down the reasoning so it survives staff turnover."
+        },
+        {
+          "question": "What if your recommendation is not to do the project?",
+          "answer": "Then that is what the document says, and it has happened. If the current system is adequate for the next two years, if an off-the-shelf subscription covers the requirement, or if the real bottleneck is a process rather than software, saying so is the useful outcome. A short engagement that prevents a wrong six-figure build has already paid for itself."
+        },
+        {
+          "question": "Should we rewrite our legacy system?",
+          "answer": "Usually not all at once. Big-bang rewrites fail because the old system keeps changing while the new one is being built, and because the undocumented edge cases only surface at cutover. We look at which modules change often and which are stable and boring, then recommend wrapping the stable parts behind an interface and replacing the volatile ones incrementally."
+        },
+        {
+          "question": "Do you push a particular technology?",
+          "answer": "We build most often on Next.js, TypeScript, Node.js and PostgreSQL, and we say so up front rather than pretending to be neutral. But the correct stack is the one your team can hire for, maintain and afford to run. If that means keeping a working PHP or .NET system instead of moving it, that is what the recommendation will say."
+        },
+        {
+          "question": "Can you do technical due diligence before an acquisition or investment?",
+          "answer": "Yes — code quality and test coverage, dependency and licence risk, infrastructure cost and scaling headroom, key-person risk, security posture, and a realistic estimate of what it costs to keep the system running for the next two years. Findings are stated factually under NDA, without inflating risk to look thorough."
+        },
+        {
+          "question": "How does this relate to Tech Stack Assessment and Architecture Design?",
+          "answer": "This page is the entry point when you are not yet sure which question to ask. Tech Stack Assessment goes deep on evaluating and choosing the technologies themselves; Architecture Design produces the target system design — services, data model, integration points and deployment topology. Most clients start with a scoping call here and step into one of the two."
+        }
+      ],
+      "technologies": [
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "React", "icon": "react" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "Docker", "icon": "docker" },
+        { "name": "Vercel", "icon": "vercel" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Teknoloji Danışmanlığı",
+    "shortDescription": "Slayt değil, uygulanabilir karar üreten teknoloji danışmanlığı: yazılım yığını seçimi, yap ya da satın al analizi, mimari ve mevcut sistem incelemesi; gerektiğinde de açıkça mevcut sistemi değiştirmeyin cevabı.",
+    "fullDescription": "Türkiye'de danışmanlık kelimesi çoğu KOBİ sahibi için kötü bir hatıra taşır: kalın bir sunum gelir, kimse ne yapacağını bilmez ve altı ay sonra aynı sorun masadadır. Biz üretime çıkan yazılım geliştiren küçük ve kıdemli bir ekibiz; öneriyi yazan kişi, o öneriyle yaşamak zorunda kalacak kişidir. Çalışma somut bir kararla başlar: hangi teknoloji yığınında standartlaşmalı, hazır ürün mü alınmalı yoksa özel geliştirme mi yapılmalı, eldeki eski sistem baştan mı yazılmalı yoksa sarmalanmalı mı, gelen ajans teklifi gerçekçi mi. Değerlendirmemiz e-ticaret, üretim, sağlık dizinleri ve yapay zeka ürünlerinde bizzat teslim ettiğimiz işlerden gelir. Elinizde size ait yazılı öneri, mimari şema ve karar kayıtları kalır. Soru daralınca Teknoloji Yığını Değerlendirmesi ve Mimari Tasarım hizmetlerimiz devreye girer.",
+    "features": [
+      "Yazılım yığını seçimi: sadece sonuç değil, gerekçeler ve ödünleşimler yazılı",
+      "Yap, satın al veya hazır ürünü yapılandır analizi ve toplam sahip olma maliyeti",
+      "Gerçek trafiğiniz, bütçeniz ve ekip büyüklüğünüze göre mimari inceleme",
+      "Mevcut (legacy) sistem değerlendirmesi: ne korunur, ne sarmalanır, ne değişir",
+      "Satın alma, yatırım ve tedarikçi seçimi öncesi teknik due diligence",
+      "Ajans ve tedarikçi teklifi incelemesi: kapsam, bağımlılık ve çıkış şartları",
+      "Ekip kurgusu önerisi: hangi iş içeride, hangi iş dışarıda yapılmalı",
+      "Devredilebilir mimari karar kayıtları ve şemalar — tamamı size ait"
+    ],
+    "benefits": [
+      "Sunum değil, yeni gelen geliştiricinin de okuyup uygulayabileceği yazılı karar",
+      "Gereksiz sıfırdan yazımların önlenmesi; sistem yeterliyse bunu açıkça söyleriz",
+      "Farklı tedarikçi tekliflerinin aynı kapsam ve aynı ölçütlerle karşılaştırılması",
+      "Türkiye'de gerçekten eleman bulabileceğiniz ve sürdürebileceğiniz bir teknoloji seçimi",
+      "Şimdi çözülecek, sonraya bırakılacak ve hiç dokunulmayacak işlerin net ayrımı",
+      "Sadece şema çizen değil, üretime kod gönderen bir ekipten görüş"
+    ],
+    "metaTitle": "Teknoloji Danışmanlığı ve Mimari İnceleme | PakSoft",
+    "metaDescription": "Bağımsız teknoloji danışmanlığı: yazılım yığını seçimi, yap-satın al kararı, mimari ve mevcut sistem incelemesi, size ait yazılı rapor. Ücretsiz ön görüşme.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Kararı Netleştirme",
+          "description": "Ücretsiz ön görüşmede genel bir tedirginliği, sahibi ve tarihi belli somut bir karara dönüştürüyoruz: hangi teknoloji, hangi tedarikçi, baştan yazmak mı iyileştirmek mi, işe almak mı dışarıdan almak mı. Ücretli çalışma başlamadan önce soruyu ve iyi bir cevabın neye benzeyeceğini yazılı olarak mutabık kalıyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Kod, Altyapı ve İnsan Tarafında Keşif",
+          "description": "Kod tabanını, sunucu ve lisans faturalarını, yayına alma sürecini ve açık talep listesini inceliyor; sistemi her gün kullanan geliştiriciler ile operasyon ekibiyle ayrı ayrı görüşüyoruz. Sistemin belgelerde anlatıldığı hâli ile sahadaki hâli arasındaki fark, aradığımız cevabın çoğunlukla saklandığı yerdir."
+        },
+        {
+          "step": 3,
+          "title": "Seçeneklerin ve Ödünleşimlerin Modellenmesi",
+          "description": "Gerçekçi her seçenek aynı ölçütlerle fiyatlanır: geliştirme eforu, lisans ve barındırma maliyeti, eleman bulma zorluğu, veri göçü riski ve kararı ileride geri almanın bedeli. Hiçbir şey yapmamak da her zaman seçenekler arasındadır, çünkü bazen kazanan odur."
+        },
+        {
+          "step": 4,
+          "title": "Yazılı Öneri ve Karar Kayıtları",
+          "description": "Seçilen yolu, elenen seçenekleri ve eleme gerekçelerini, mimari şemaları ve kısa karar kayıtlarını içeren bir rapor teslim ediyoruz. Rapor, bizi hiç tanımayan bir geliştiricinin eline geçtiğinde bile iki yıl sonra anlaşılacak şekilde yazılır."
+        },
+        {
+          "step": 5,
+          "title": "Sunum ve İtiraz Oturumu",
+          "description": "Bulguları hem teknik ekibe hem de bütçeyi tutan kişiye anlatıyor, en sert itirazları savuşturmak yerine bilerek davet ediyoruz. Odadaki biri gözden kaçırdığımız bir kısıtı biliyorsa, siz harekete geçmeden önce öneri düzeltilir."
+        },
+        {
+          "step": 6,
+          "title": "İsteğe Bağlı Geliştirme veya Gözetim",
+          "description": "Geliştirmeyi bizim yapmamızı isterseniz bu işi ayrı teklif ediyoruz; böylece danışmanlık gizli bir satış kanalına dönüşmüyor. İşi kendi ekibinizle ya da başka bir tedarikçiyle yürütürseniz, kritik aşamalarda hafif bir kontrol katmanı olarak kalabiliriz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Sonunda elimize tam olarak ne geçiyor?",
+          "answer": "Kararı, değerlendirilen seçenekleri, her birinin ödünleşimlerini, gerekli yerlerde mimari şemaları ve gerekçeleri anlatan kısa karar kayıtlarını içeren yazılı bir rapor. Rapor tamamen sizindir: lisans yok, bize bağımlılık yok ve bizi hiç tanımayan bir geliştiricinin doğrudan uygulayabileceği dille yazılır."
+        },
+        {
+          "question": "Ne kadar sürer?",
+          "answer": "Tek bir teknoloji kararı veya tek bir mimari inceleme gibi dar kapsamlı sorular genellikle bir ila iki hafta sürer. Canlı bir sistemin bütününe bakan legacy değerlendirmesi veya teknik due diligence üç ila dört haftadır ve süreyi belirleyen asıl etken, koda, sunuculara ve doğru kişilere ne kadar hızlı erişebildiğimizdir."
+        },
+        {
+          "question": "Fiyat nasıl belirleniyor?",
+          "answer": "Kapsam netleştikten sonra ücretsiz ön görüşmenin ardından sabit fiyat veriyoruz; soruların sürekli geldiği uzun soluklu ilişkilerde ise günlük ücretle çalışıyoruz. Fiyatı belirleyen şey, toplantıya kaç kişi geldiğimiz değil, sorunun genişliği ve sistemin büyüklüğüdür. Neye karar vermeye çalıştığınızı anlamadan fiyat vermiyoruz."
+        },
+        {
+          "question": "Sadece rapor mu veriyorsunuz, geliştirmeyi de yapıyor musunuz?",
+          "answer": "İkisini de yapıyoruz ve bu bilinçli bir tercih: hiç kod göndermeyen danışmanlar işin sıkıcı kısmını sürekli hafife alır. Ancak geliştirmeyi bize vermeniz şart değildir. Raporu kendi ekibinize veya başka bir ajansa teslim etmekten memnuniyet duyarız, hatta talep ederseniz o ajansın teklifini de inceleriz. Öneri, işi kimin yapacağına göre değişmez."
+        },
+        {
+          "question": "Kendi yazılım ekibimiz var, yine de faydası olur mu?",
+          "answer": "Genellikle daha da fazla olur. İçerideki ekip sistemi herkesten iyi bilir ama seçenekleri karşılaştırmak için kesintisiz zaman bulamaz ve bazen karara fazla yakın olduğu için tıkanıklık uzar. Biz ikinci görüş ve tıkanan tartışmada hakem rolü üstlenir, gerekçeyi yazıya dökeriz; böylece karar, ekipteki değişikliklerden sonra da ayakta kalır."
+        },
+        {
+          "question": "Cevabınız bu projeyi yapmayın olursa ne olur?",
+          "answer": "Raporda aynen bu yazar; daha önce de oldu. Mevcut sistem önümüzdeki iki yıl için yeterliyse, ihtiyacı aylık abonelikli hazır bir ürün karşılıyorsa veya asıl darboğaz yazılım değil süreçse, bunu söylemek işin en değerli çıktısıdır. Yanlış bir yatırımı engelleyen kısa bir çalışma, bedelini fazlasıyla çıkarmıştır."
+        },
+        {
+          "question": "Eski sistemimizi sıfırdan yazmalı mıyız?",
+          "answer": "Genellikle hepsini birden değil. Sıfırdan yazım projeleri, yeni sistem geliştirilirken eskisinin değişmeye devam etmesi ve belgelenmemiş istisnaların ancak geçiş gecesinde ortaya çıkması yüzünden batar. Hangi modüllerin sık değiştiğine, hangilerinin yıllardır sessizce çalıştığına bakar; sakin olanları bir arayüzün arkasına alıp sık değişenleri parça parça yenilemeyi öneririz."
+        },
+        {
+          "question": "Belirli bir teknolojiyi mi dayatıyorsunuz?",
+          "answer": "En sık Next.js, TypeScript, Node.js ve PostgreSQL ile çalışıyoruz ve tarafsızmış gibi davranmak yerine bunu baştan söylüyoruz. Ama doğru teknoloji, Türkiye'de eleman bulabileceğiniz, ekibinizin sürdürebileceği ve işletme maliyetini karşılayabileceğiniz teknolojidir. Çalışan bir PHP veya .NET sistemini taşımamak daha doğruysa, raporda bu yazar."
+        },
+        {
+          "question": "Mevcut muhasebe ve ERP tarafını da değerlendiriyor musunuz?",
+          "answer": "Evet. Logo, Mikro, Netsis sınıfı muhasebe ve ERP yazılımları ile e-Fatura, e-Arşiv ve e-İrsaliye akışları, entegrasyon kararının merkezinde durur; bunları değiştirilecek değil, bağlanılacak sistemler olarak ele alıyoruz. Hangi verinin hangi sistemde ana kayıt olduğunu netleştirmeden hiçbir mimari öneri anlamlı değildir."
+        },
+        {
+          "question": "KVKK ve devlet destek programları konusunda ne yapıyorsunuz?",
+          "answer": "Mimari önerinin içinde kişisel verinin nerede tutulduğunu, hangi sistemlere aktığını ve nerede maskelenmesi gerektiğini yazıyoruz; bu, KVKK envanteriniz ve aydınlatma metniniz için kullanılabilir bir teknik zemin sağlar. Teşvik veya destek programı başvurusu yürütmüyoruz; ancak hazırladığımız teknik kapsam ve mimari dokümanı, bu tür başvuruları yürüten mali müşavir veya danışmanınızın kullanabileceği ayrıntıdadır."
+        }
+      ],
+      "technologies": [
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "React", "icon": "react" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "Docker", "icon": "docker" },
+        { "name": "Vercel", "icon": "vercel" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Technologieberatung",
+    "shortDescription": "Unabhängige technische Beratung von einem Senior-Team, das selbst produktiv entwickelt: Stack-Auswahl mit dokumentierten Abwägungen, Make-or-Buy, Architektur- und Legacy-Review — und ein klares Wort, wenn Nichtstun die beste Option ist.",
+    "fullDescription": "Technische Beratung scheitert meist auf zwei Arten: Sie kommt als Foliensatz, mit dem niemand arbeiten kann, oder von jemandem, dessen Geschäftsmodell die anschließende Neuentwicklung ist. Wir sind ein kleines Senior-Team, das produktive Software ausliefert — wer bei uns die Empfehlung schreibt, müsste mit ihr auch leben. Jedes Mandat beginnt bei der Entscheidung, vor der Sie tatsächlich stehen: welcher Stack als Standard, Eigenentwicklung oder Kauf, Neuschreiben oder Kapseln eines Altsystems, Belastbarkeit eines Dienstleisterangebots. Unser Urteil stammt aus ausgelieferten Projekten in E-Commerce, Fertigung, Fachverzeichnissen und KI-Produkten, nicht aus einem Methodenordner. Sie erhalten schriftliche Empfehlungen, Diagramme und Architecture Decision Records, die Ihnen gehören. Wird die Frage enger, führen Tech-Stack-Bewertung und Architektur-Design sie in die Tiefe.",
+    "features": [
+      "Stack-Auswahl mit dokumentierten Abwägungen statt bloßem Urteil",
+      "Make-or-Buy-Analyse inklusive Total Cost of Ownership über drei Jahre",
+      "Architektur-Review gemessen an realer Last, Budget und Teamgröße",
+      "Legacy-Bewertung: was bleibt, was gekapselt wird, was ersetzt gehört",
+      "Technische Due Diligence für Zukäufe, Investitionen und Anbieterauswahl",
+      "Prüfung von Dienstleisterangeboten: Umfang, Lock-in und Ausstiegsklauseln",
+      "Empfehlung zum Teamzuschnitt: was intern gehört und was ausgelagert wird",
+      "Architecture Decision Records und Diagramme in Ihrem Eigentum"
+    ],
+    "benefits": [
+      "Eine schriftliche Entscheidung, die jede künftige Entwicklerin aufgreifen kann",
+      "Weniger teure Neuentwicklungen, weil wir auch sagen, wenn das System trägt",
+      "Konkurrierende Angebote vergleichbar gemacht — gleicher Umfang, gleiche Kriterien",
+      "Ein Stack, für den Sie realistisch einstellen und den Sie halten können",
+      "Klare Trennung zwischen Sofortmaßnahmen, Später-Themen und Nicht-Themen",
+      "Nachvollziehbare Dokumentation, die auch einer Prüfung standhält"
+    ],
+    "metaTitle": "Technologieberatung — Stack & Architektur | PakSoft",
+    "metaDescription": "Unabhängige Technologieberatung: Stack-Auswahl, Make-or-Buy, Architektur- und Legacy-Review, dokumentierte Empfehlungen für Sie. Jetzt Erstgespräch vereinbaren.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Die Entscheidung präzisieren",
+          "description": "In einem kostenfreien Erstgespräch wird aus einem diffusen Unbehagen eine Entscheidung mit Termin und verantwortlicher Person: welcher Stack, welcher Anbieter, neu bauen oder sanieren, einstellen oder auslagern. Bevor ein bezahlter Aufwand beginnt, halten wir schriftlich fest, wie eine brauchbare Antwort aussehen muss."
+        },
+        {
+          "step": 2,
+          "title": "Analyse von Code, Infrastruktur und Organisation",
+          "description": "Wir sichten Codebasis, Infrastruktur- und Lizenzkosten, Deployment-Prozess und offene Tickets und sprechen mit den Entwicklern sowie den Fachbereichen, die täglich mit dem System arbeiten. Die Lücke zwischen dokumentiertem und tatsächlichem Verhalten enthält erfahrungsgemäß die eigentliche Antwort."
+        },
+        {
+          "step": 3,
+          "title": "Optionen und Abwägungen modellieren",
+          "description": "Jede realistische Option wird nach denselben Kriterien bewertet: Entwicklungsaufwand, Lizenz- und Hosting-Kosten, Verfügbarkeit von Fachkräften, Migrationsrisiko und der Preis einer späteren Umkehr. Die Option, nichts zu ändern, steht immer mit auf der Liste, weil sie gelegentlich gewinnt."
+        },
+        {
+          "step": 4,
+          "title": "Schriftliche Empfehlung und Decision Records",
+          "description": "Sie erhalten ein Dokument mit der empfohlenen Option, den verworfenen Alternativen samt Begründung, Architekturdiagrammen und kurzen Decision Records im üblichen Engineering-Format. Es ist so geschrieben, dass es auch in zwei Jahren für eine Entwicklerin verständlich ist, die uns nie getroffen hat."
+        },
+        {
+          "step": 5,
+          "title": "Präsentation und Einwände",
+          "description": "Wir stellen die Ergebnisse dem Team und der Budgetverantwortung vor und laden ausdrücklich zu den härtesten Einwänden ein. Kennt jemand im Raum eine Randbedingung, die uns entgangen ist, korrigieren wir die Empfehlung, bevor Sie danach handeln."
+        },
+        {
+          "step": 6,
+          "title": "Optionale Umsetzung oder Begleitung",
+          "description": "Sollen wir umsetzen, kalkulieren wir das getrennt, damit die Beratung kein verkappter Vertriebstrichter ist. Bauen Sie intern oder mit einem anderen Dienstleister, begleiten wir das auf Wunsch als schlanke Review-Instanz an den Meilensteinen."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was erhalten wir am Ende konkret?",
+          "answer": "Ein schriftliches Empfehlungsdokument: die Entscheidung, die geprüften Optionen, die jeweiligen Abwägungen, bei Bedarf Architekturdiagramme und kurze Decision Records mit Begründung. Es gehört vollständig Ihnen — ohne Lizenz, ohne Abhängigkeit von uns und so formuliert, dass eine externe Entwicklerin unmittelbar damit arbeiten kann."
+        },
+        {
+          "question": "Wie lange dauert ein Mandat?",
+          "answer": "Eine eng gefasste Frage — eine Stack-Entscheidung, ein Architektur-Review — liegt meist bei ein bis zwei Wochen. Eine umfassende Legacy-Bewertung oder technische Due Diligence an einem produktiven System dauert drei bis vier Wochen, wobei der Zeitplan stärker davon abhängt, wie schnell wir Zugang zu Code, Infrastruktur und den richtigen Ansprechpartnern erhalten."
+        },
+        {
+          "question": "Wie wird abgerechnet?",
+          "answer": "Festpreis für einen definierten Umfang, kalkuliert nach dem kostenfreien Erstgespräch, oder Tagessatz für eine laufende Begleitung, wenn regelmäßig Fragen anfallen. Der Preis richtet sich nach Breite der Fragestellung und Größe des Systems, nicht nach der Anzahl anwesender Berater. Vor dem Verständnis der Entscheidung nennen wir keine Zahl."
+        },
+        {
+          "question": "Setzen Sie auch um, was Sie empfehlen?",
+          "answer": "Ja, und das ist Absicht: Beratung von Leuten, die nichts ausliefern, unterschätzt regelmäßig die unspektakulären Teile. Bedingung ist es nicht. Wir übergeben das Dokument ebenso gern an Ihr Team oder an einen anderen Dienstleister und prüfen auf Wunsch dessen Angebot. Die Empfehlung ändert sich nicht danach, wer baut."
+        },
+        {
+          "question": "Wir haben ein eigenes Entwicklungsteam. Bringt das trotzdem etwas?",
+          "answer": "Häufig sogar mehr. Interne Teams kennen das System besser als jeder Externe, bekommen aber selten ungestörte Zeit für einen Optionsvergleich und stecken manchmal zu tief in der Diskussion, um sie zu beenden. Wir liefern die Zweitmeinung und lösen die Pattsituation — schriftlich begründet, damit die Entscheidung Personalwechsel überdauert."
+        },
+        {
+          "question": "Was, wenn Ihre Empfehlung lautet: nicht umsetzen?",
+          "answer": "Dann steht genau das im Dokument, und das ist vorgekommen. Trägt das bestehende System die nächsten zwei Jahre, deckt ein Standardprodukt die Anforderung ab oder liegt der Engpass im Prozess statt in der Software, ist diese Aussage das wertvollste Ergebnis. Ein kurzes Mandat, das eine falsche Investition verhindert, hat sich bereits gerechnet."
+        },
+        {
+          "question": "Sollen wir unser Altsystem neu schreiben?",
+          "answer": "In der Regel nicht auf einmal. Big-Bang-Neuentwicklungen scheitern daran, dass sich das Altsystem während der Bauzeit weiter verändert und undokumentierte Sonderfälle erst bei der Umstellung sichtbar werden. Wir unterscheiden häufig geänderte von stabilen Modulen und empfehlen, Stabiles hinter einer Schnittstelle zu kapseln und Volatiles schrittweise abzulösen."
+        },
+        {
+          "question": "Drängen Sie uns eine bestimmte Technologie auf?",
+          "answer": "Wir arbeiten am häufigsten mit Next.js, TypeScript, Node.js und PostgreSQL und sagen das offen, statt Neutralität zu behaupten. Der richtige Stack ist trotzdem der, für den Sie Personal finden, den Ihr Team pflegen und dessen Betrieb Sie tragen können. Wenn das heißt, ein funktionierendes .NET- oder PHP-System zu behalten, steht das so in der Empfehlung."
+        },
+        {
+          "question": "Wie berücksichtigen Sie DSGVO und Auditierbarkeit?",
+          "answer": "Die Empfehlung hält fest, wo personenbezogene Daten liegen, in welche Systeme sie fließen, welche Auftragsverarbeiter beteiligt sind und an welchen Stellen pseudonymisiert werden sollte. Das ergibt eine belastbare technische Grundlage für Ihr Verarbeitungsverzeichnis. Eine Rechtsberatung ersetzt es nicht — es liefert Ihrem Datenschutzbeauftragten die Fakten in prüfbarer Form."
+        },
+        {
+          "question": "Führen Sie technische Due Diligence vor Zukäufen durch?",
+          "answer": "Ja — Codequalität und Testabdeckung, Abhängigkeits- und Lizenzrisiken, Infrastrukturkosten und Skalierungsspielraum, Schlüsselpersonenrisiko, Sicherheitslage und eine realistische Schätzung der Betriebskosten für die nächsten zwei Jahre. Die Befunde werden unter NDA sachlich dargestellt, ohne Risiken aufzublasen, um gründlich zu wirken."
+        }
+      ],
+      "technologies": [
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "React", "icon": "react" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "Docker", "icon": "docker" },
+        { "name": "Vercel", "icon": "vercel" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "الاستشارات التقنية",
+    "shortDescription": "استشارات تقنية مستقلة من فريق أول يكتب الكود بنفسه: اختيار حزمة التقنيات مع توثيق المفاضلات، وتحليل البناء مقابل الشراء، ومراجعة البنية والأنظمة القديمة، ورأي صريح حين يكون الأصح ألا تغيّروا شيئاً.",
+    "fullDescription": "تفشل الاستشارة التقنية عادةً بإحدى طريقتين: إمّا أن تصل على هيئة عرض تقديمي لا يستطيع أحد التصرّف بناءً عليه، وإمّا أن تأتي من جهة مصلحتها أن تبيعكم إعادة البناء. نحن فريق صغير من المهندسين الأوائل يسلّم برمجيات تعمل في الإنتاج، أي أنّ من يكتب التوصية هو نفسه من سيتحمّل نتائجها. يبدأ العمل من القرار الفعلي أمامكم: أي حزمة تقنيات تُعتمد معياراً، البناء أم الشراء، إعادة كتابة النظام القديم أم تغليفه، ومدى واقعية عرض المورّد. خبرتنا مصدرها مشاريع سلّمناها في التجارة الإلكترونية والتصنيع والأدلة المهنية ومنتجات الذكاء الاصطناعي. تخرجون بتوصيات مكتوبة ومخططات وسجلات قرار تملكونها بالكامل. وعندما يضيق السؤال، تتعمّق خدمتا تقييم حزمة التقنيات وتصميم البنية المعمارية في كل شقّ منه.",
+    "features": [
+      "اختيار حزمة التقنيات مع توثيق المفاضلات لا مجرد إعلان النتيجة",
+      "تحليل البناء مقابل الشراء مقابل التهيئة، مع التكلفة الإجمالية للتملك",
+      "مراجعة البنية المعمارية قياساً على أحمالكم وميزانيتكم وحجم فريقكم",
+      "تقييم الأنظمة القديمة: ما يُبقى، وما يُغلَّف، وما يُستبدل",
+      "العناية التقنية الواجبة قبل الاستحواذ أو الاستثمار أو اختيار المورّد",
+      "مراجعة عروض الشركات المنفّذة: النطاق والارتباط بالمورّد وشروط الخروج",
+      "توصية بشكل الفريق: ما يُبنى داخلياً وما يُسنَد إلى جهة خارجية",
+      "سجلات قرارات معمارية ومخططات مملوكة لكم وقابلة للتسليم لأي فريق"
+    ],
+    "benefits": [
+      "قرار مكتوب يستطيع أي مطوّر لاحق البناء عليه، لا عرض شرائح",
+      "تجنّب إعادة البناء المكلفة، لأننا نقول أيضاً حين يكون النظام الحالي كافياً",
+      "مقارنة عروض المورّدين على النطاق نفسه والمعايير نفسها",
+      "حزمة تقنيات تستطيعون التوظيف عليها وصيانتها في سوقكم فعلياً",
+      "فصل واضح بين ما يُعالَج الآن وما يؤجَّل وما يُترك تماماً",
+      "توثيق منظّم يصلح للعرض على مجلس الإدارة أو جهة التدقيق"
+    ],
+    "metaTitle": "استشارات تقنية — البنية واختيار التقنيات | PakSoft",
+    "metaDescription": "استشارات تقنية مستقلة: اختيار حزمة التقنيات، البناء مقابل الشراء، مراجعة البنية والأنظمة القديمة، وتوصيات مكتوبة تملكونها. احجزوا جلسة تقييم مجانية اليوم.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تحديد القرار المطلوب",
+          "description": "تحوّل جلسة التقييم المجانية القلق العام إلى قرار له مالك وموعد: أي حزمة تقنيات، أي مورّد، إعادة بناء أم تحسين، توظيف أم إسناد خارجي. نكتب السؤال ونتفق على شكل الإجابة المفيدة قبل أن يبدأ أي عمل مدفوع."
+        },
+        {
+          "step": 2,
+          "title": "الاستكشاف في الكود والبنية التحتية والفريق",
+          "description": "نقرأ الشيفرة وفواتير الاستضافة والتراخيص وآلية النشر وقائمة الطلبات المفتوحة، ونجري مقابلات مع المطوّرين ومع موظفي التشغيل الذين يستخدمون النظام يومياً. الفجوة بين ما توثّقه المستندات وما يحدث فعلياً هي غالباً موضع الإجابة الحقيقية."
+        },
+        {
+          "step": 3,
+          "title": "نمذجة الخيارات ومفاضلاتها",
+          "description": "يُقيَّم كل خيار واقعي بالمعايير نفسها: جهد التطوير، وكلفة التراخيص والاستضافة، وصعوبة التوظيف، ومخاطر ترحيل البيانات، وثمن التراجع عن القرار لاحقاً. ويبقى خيار عدم تغيير شيء مطروحاً دائماً، لأنه يفوز أحياناً."
+        },
+        {
+          "step": 4,
+          "title": "التوصية المكتوبة وسجلات القرار",
+          "description": "تتسلّمون وثيقة تتضمّن الخيار الموصى به والخيارات المستبعدة وأسباب استبعادها ومخططات معمارية وسجلات قرار مختصرة بالصيغة الهندسية المعتادة. صيغت الوثيقة لتظلّ مفهومة بعد سنتين لمطوّر لم يلتقِ بنا قط."
+        },
+        {
+          "step": 5,
+          "title": "جلسة العرض والاعتراضات",
+          "description": "نعرض النتائج على الفريق التقني وعلى صاحب الميزانية، وندعو صراحةً إلى أقسى الاعتراضات بدل تفاديها. وإن كان أحد الحاضرين يعرف قيداً فاتنا، تُصحَّح التوصية قبل أن تتصرفوا بناءً عليها."
+        },
+        {
+          "step": 6,
+          "title": "تنفيذ أو إشراف اختياري",
+          "description": "إن رغبتم بأن ننفّذ، نسعّر التنفيذ بشكل منفصل حتى لا تتحوّل الاستشارة إلى قناة بيع مقنّعة. وإن نفّذتم داخلياً أو مع مورّد آخر، يمكننا البقاء طبقة مراجعة خفيفة عند المحطات الأساسية."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما الذي نحصل عليه في النهاية؟",
+          "answer": "وثيقة توصية مكتوبة تتضمّن القرار والخيارات التي دُرست ومفاضلات كل منها، ومخططات معمارية عند الحاجة، وسجلات قرار مختصرة تشرح الأسباب. الوثيقة ملك لكم بالكامل: بلا ترخيص وبلا ارتباط بنا، ومكتوبة بحيث يستطيع مطوّر لم يعمل معنا أن يبني عليها مباشرة."
+        },
+        {
+          "question": "كم يستغرق العمل؟",
+          "answer": "السؤال المحدّد — قرار حزمة تقنيات واحد أو مراجعة معمارية واحدة — يستغرق أسبوعاً إلى أسبوعين عادةً. أمّا تقييم نظام قديم بالكامل أو العناية التقنية الواجبة على نظام يعمل في الإنتاج فيمتد ثلاثة إلى أربعة أسابيع، والعامل الحاسم في المدة هو سرعة حصولنا على صلاحيات الوصول والأشخاص المعنيين."
+        },
+        {
+          "question": "كيف تُحدَّد الأتعاب؟",
+          "answer": "سعر ثابت لنطاق محدد بعد جلسة التقييم المجانية، أو أجر يومي في المتابعة المستمرة حين تتوالى الأسئلة. يتبع السعر اتساع السؤال وحجم النظام، لا عدد الاستشاريين الحاضرين في الاجتماع. ولا نعطي رقماً قبل أن نفهم ما تحاولون تقريره فعلاً."
+        },
+        {
+          "question": "هل تنفّذون ما توصون به؟",
+          "answer": "نعم، وهذا خيار مقصود: الاستشارة الصادرة عمّن لا يسلّم برمجيات تستهين دائماً بالتفاصيل المملّة. لكنه ليس شرطاً. يسعدنا تسليم الوثيقة لفريقكم الداخلي أو لشركة أخرى، بل ونراجع عرض تلك الشركة عند الطلب. التوصية لا تتغيّر تبعاً لهوية المنفّذ."
+        },
+        {
+          "question": "لدينا فريق تطوير بالفعل، فهل نحتاج ذلك؟",
+          "answer": "غالباً تكون الفائدة أكبر. الفريق الداخلي يعرف النظام أكثر من أي طرف خارجي، لكنه نادراً ما يجد وقتاً متصلاً لمقارنة الخيارات، وقد يكون أقرب إلى النقاش من أن يحسمه. نحن نقدّم الرأي الثاني ونحسم الجدل، ونوثّق المبرّرات كي يصمد القرار بعد تغيّر أفراد الفريق."
+        },
+        {
+          "question": "ماذا لو كانت توصيتكم ألا ننفّذ المشروع؟",
+          "answer": "عندها تقول الوثيقة ذلك حرفياً، وقد حدث سابقاً. إذا كان النظام الحالي كافياً لعامين، أو كان اشتراك جاهز يغطي الحاجة، أو كان الاختناق الحقيقي في الإجراء لا في البرمجيات، فإن قول ذلك هو أنفع مخرجات العمل. ارتباط قصير يمنع استثماراً خاطئاً يكون قد سدّد كلفته مسبقاً."
+        },
+        {
+          "question": "هل نعيد كتابة نظامنا القديم من الصفر؟",
+          "answer": "غالباً ليس دفعة واحدة. مشاريع إعادة الكتابة الشاملة تتعثّر لأن النظام القديم يستمر في التغيّر أثناء بناء الجديد، ولأن الحالات الاستثنائية غير الموثّقة لا تظهر إلا ليلة التحوّل. ننظر في الوحدات كثيرة التغيّر مقابل المستقرة، ثم نوصي بتغليف المستقر خلف واجهة واستبدال المتقلّب تدريجياً."
+        },
+        {
+          "question": "هل تفرضون تقنية بعينها؟",
+          "answer": "نعمل غالباً على Next.js و TypeScript و Node.js و PostgreSQL، ونقول ذلك مقدّماً بدل ادّعاء الحياد. غير أنّ الحزمة الصحيحة هي التي تستطيعون التوظيف عليها وصيانتها وتحمّل كلفة تشغيلها. وإن كان الأصح الإبقاء على نظام PHP أو ‎.NET يعمل بكفاءة، فهذا ما ستقوله التوصية."
+        },
+        {
+          "question": "هل تراعون متطلبات إقامة البيانات محلياً واللغتين العربية والإنجليزية؟",
+          "answer": "نعم، وكلاهما قرار معماري مبكّر لا تفصيل لاحق. نحدّد أين تُستضاف البيانات وأي مزوّدين يعالجونها وما الذي يجب أن يبقى داخل نطاقكم، وندوّن ذلك في التوصية. كما نتعامل مع دعم العربية من اليمين إلى اليسار وثنائية اللغة في الواجهة والتقارير كمتطلب أساسي، لأن إضافته لاحقاً تكلّف أضعاف تكلفة تصميمه من البداية."
+        },
+        {
+          "question": "ما علاقة هذه الصفحة بتقييم حزمة التقنيات وتصميم البنية المعمارية؟",
+          "answer": "هذه الصفحة نقطة الدخول حين لا تكونون متأكدين بعد من السؤال الصحيح. تقييم حزمة التقنيات يتعمّق في تقييم التقنيات واختيارها، بينما ينتج تصميم البنية المعمارية تصميم النظام المستهدف من نموذج بيانات ونقاط تكامل وطوبولوجيا نشر. يبدأ معظم العملاء بجلسة تقييم هنا ثم ينتقلون إلى إحداهما."
+        }
+      ],
+      "technologies": [
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "React", "icon": "react" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "Docker", "icon": "docker" },
+        { "name": "Vercel", "icon": "vercel" }
+      ]
+    }
+  }
+}

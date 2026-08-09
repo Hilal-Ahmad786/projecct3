@@ -1,0 +1,463 @@
+{
+  "slug": "ai-strategy",
+  "en": {
+    "name": "AI Strategy",
+    "shortDescription": "Deciding whether AI is worth it before you spend on it: use-case scoring, an honest data readiness check, build versus buy versus API, a pilot with success criteria agreed up front, and running-cost modelling.",
+    "fullDescription": "Most AI strategy work should end with a shorter list than it started with. We help you decide which problems are genuinely worth solving with a model, which an off-the-shelf subscription solves next week, and which are not AI problems at all. The blocker is almost never the model — it is data that lives in three systems, in inconsistent formats, with no clear owner. You can begin on your own with our free AI readiness assessment at /tools/ai-readiness, then bring the result to a scoping call. Our advice comes from running AI in production: a multi-tenant support agent for e-commerce stores with retrieval and cost tracking, and EidosUs, an AI academic reading assistant. AI Readiness Assessment and AI ROI Analysis go deeper on each side of the decision.",
+    "features": [
+      "Use-Case Inventory Scored on Volume, Error Tolerance and Measurability",
+      "Data Readiness Review — Where It Lives, How Clean, What Cannot Leave",
+      "Build vs Buy vs API Decision With Total Cost of Ownership",
+      "Off-the-Shelf Tool Evaluation Against Your Own Test Questions",
+      "Pilot Specification With Success and Kill Criteria Agreed Before Work Starts",
+      "Cost Model Including Ongoing Token, Inference and Human Review Spend",
+      "Risk and Governance Documentation: Data Flows, Retention, Human Oversight",
+      "Phased Roadmap Separating Do Now, Defer and Do Not Do"
+    ],
+    "benefits": [
+      "A decision on whether to invest, reached before the budget is committed",
+      "A shortlist ranked by value to the business rather than by novelty",
+      "A pilot with a defined finish line, including what failure would look like",
+      "A running-cost estimate that includes the bill that arrives every month",
+      "Documentation your board or auditor can read without a technical translator",
+      "Permission to say no, backed by reasoning you can defend internally"
+    ],
+    "metaTitle": "AI Strategy — Use Cases, Pilots & Cost | PakSoft",
+    "metaDescription": "AI strategy without hype: use-case scoring, data readiness, build vs buy, pilot design and real running costs. Start with our free AI readiness assessment.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Free Readiness Assessment and Intake",
+          "description": "Start with the free AI readiness assessment on our site, which takes a few minutes and gives you a structured read on data, process maturity and likely use cases. We use your result as the opening agenda for a scoping call rather than starting from a blank page."
+        },
+        {
+          "step": 2,
+          "title": "Use-Case Discovery Workshop",
+          "description": "In a working session with the people who do the job, we collect candidates from where the repetitive work actually is: questions answered the same way every day, documents somebody reads and summarises, data re-typed between systems. Every candidate is written as a task with a volume, an owner and a way to tell whether it was done well."
+        },
+        {
+          "step": 3,
+          "title": "Data Readiness Audit",
+          "description": "For each shortlisted use case we trace the data it depends on — which system holds it, how current it is, how consistent the formats are, and which fields must never be sent to an external provider. This is where most AI projects actually stall, so we report it plainly rather than assuming it can be sorted out later."
+        },
+        {
+          "step": 4,
+          "title": "Scoring, Shortlisting and the Build-Buy-API Decision",
+          "description": "Candidates are scored on business value, data availability, tolerance for a wrong answer and how measurable the outcome is. For the survivors we compare three routes honestly: an existing product you subscribe to, an integration on a hosted model API, or custom development — with the total cost of each over the first two years."
+        },
+        {
+          "step": 5,
+          "title": "Pilot Specification and Cost Model",
+          "description": "The recommended use case gets a written pilot spec: scope, evaluation questions, what counts as success, and the conditions under which we would stop. Alongside it comes a cost model that includes ongoing token or inference spend at your real volume, plus the human review time that a responsible rollout still needs."
+        },
+        {
+          "step": 6,
+          "title": "Risk, Governance and Roadmap Handover",
+          "description": "You receive documented data flows, retention and provider settings, refusal and escalation rules, and where a human stays in the loop for consequential decisions. The roadmap closes the engagement by separating what to start now, what to revisit in six months and what to drop entirely."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What do we get at the end?",
+          "answer": "A scored use-case shortlist with the reasoning behind each ranking, a data readiness report, a build-versus-buy-versus-API recommendation, a pilot specification with success criteria, a running-cost model and a governance document covering data flows and human oversight. It is written for a mixed audience, so your finance and operations leads can read it without a technical translator."
+        },
+        {
+          "question": "How long does an AI strategy engagement take?",
+          "answer": "Typically two to four weeks from the first workshop to the final documents, depending on how many departments contribute use cases and how quickly we can inspect the underlying data. The free readiness assessment shortens it, because the first conversation starts from your answers instead of general questions."
+        },
+        {
+          "question": "What does it cost?",
+          "answer": "A fixed fee quoted after a free scoping call, sized by the number of use cases in scope and the number of systems whose data we need to examine. Pilot development, if you decide to proceed, is quoted separately once the specification exists. We do not price the strategy work as a discount on a build we have not agreed to yet."
+        },
+        {
+          "question": "Do you also build the AI, or only advise?",
+          "answer": "We build it, which is precisely why the advice is cautious. Running AI in production teaches you what a demo never will: retrieval quality decides accuracy, evaluation sets decide whether you can change anything safely, and the monthly token bill is a real operating cost. You are free to take the strategy to another team — the recommendation would be identical."
+        },
+        {
+          "question": "What if the answer is that we do not need custom AI?",
+          "answer": "That is a common and completely legitimate outcome, and we say it plainly. Many businesses get more value from a well-configured off-the-shelf assistant subscription, better search over existing documents, or simply fixing a process, than from anything custom. Spending a few weeks to reach that conclusion is far cheaper than discovering it eighteen months into a build."
+        },
+        {
+          "question": "Would an off-the-shelf tool do the job instead?",
+          "answer": "Often, yes — for drafting, summarising, translation and general research, a per-seat subscription plus training beats anything bespoke. Custom work earns its place when the assistant must read your own private data, act inside your systems through tool calls, run inside your product for your customers, or operate at a volume where per-seat licensing stops making sense."
+        },
+        {
+          "question": "Our data is messy. Should we wait?",
+          "answer": "Not necessarily, but you should know what you are dealing with before committing. A narrow use case over one reasonably clean data source is a good first pilot, while a company-wide assistant over everything is not. The readiness audit tells you which parts are usable today and which need cleanup, so cleanup becomes a scoped task rather than an open-ended blocker."
+        },
+        {
+          "question": "How much does it cost to run each month?",
+          "answer": "Model usage is billed per token, so the honest answer is a range tied to your volume rather than a flat figure. We estimate from your real query volume and typical response length, then design in the levers that move the bill: routing simple requests to smaller models, caching repeated context, and capping retries. Human review time belongs in the same budget line."
+        },
+        {
+          "question": "We already have a data or IT team. What do you add?",
+          "answer": "An outside read on which use cases are worth defending to the board, and current production experience of what breaks. Internal teams usually know the data better than we ever will; what they rarely have is uninterrupted time to compare options and the freedom to recommend not building. We work with your team, not around it."
+        },
+        {
+          "question": "How do you handle risk and compliance documentation?",
+          "answer": "We document the practical layer: which data leaves your systems and to which provider, retention and training settings on those accounts, where personal data is masked, refusal and escalation rules, and where a human must approve. That gives your legal or compliance advisor concrete facts to assess. We document practice — we do not certify compliance, and you should be sceptical of anyone who claims to."
+        },
+        {
+          "question": "How does this relate to AI Readiness Assessment and AI ROI Analysis?",
+          "answer": "This page is the entry point and the free tool is the first step. AI Readiness Assessment goes deep on data, systems and organisational maturity — whether you can support AI at all. AI ROI Analysis takes a specific use case and models cost against benefit, including ongoing inference spend. Most clients need one of the two, not both."
+        }
+      ],
+      "technologies": [
+        { "name": "Anthropic Claude", "icon": "anthropic" },
+        { "name": "OpenAI API", "icon": "openai" },
+        { "name": "Python", "icon": "python" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "pgvector", "icon": "pgvector" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Yapay Zekâ Stratejisi",
+    "shortDescription": "Para harcamadan önce yapay zekânın işinize değip değmeyeceğine karar veriyoruz: kullanım senaryolarının puanlanması, dürüst bir veri hazırlık kontrolü, yap-satın al-API karşılaştırması, baştan ölçütü belirlenmiş pilot ve aylık işletme maliyeti modeli.",
+    "fullDescription": "İyi bir yapay zekâ stratejisi çalışması, genellikle başladığından daha kısa bir listeyle biter. Hangi sorunun gerçekten bir modelle çözülmeye değdiğini, hangisinin ekibinizin haftaya kullanmaya başlayabileceği hazır bir abonelikle kapanacağını, hangisinin ise zaten yapay zekâ sorunu olmadığını birlikte ayırıyoruz. Tıkanma noktası neredeyse hiç model değildir; üç ayrı sistemde, farklı formatlarda duran ve sahibi belli olmayan veridir. İşe kendi başınıza da başlayabilirsiniz: sitemizdeki ücretsiz yapay zekâ hazırlık testini (/tools/ai-readiness) doldurup sonucu ön görüşmeye getirin. Görüşümüz üretimde çalışan işlerden geliyor: e-ticaret mağazaları için geliştirdiğimiz, getirim ve maliyet takibi olan çok kiracılı destek asistanı ve akademik okuma asistanı EidosUs. Kararın iki tarafını Yapay Zekâ Hazırlık Değerlendirmesi ve Yapay Zekâ ROI Analizi derinleştirir.",
+    "features": [
+      "Kullanım senaryolarının hacim, hata toleransı ve ölçülebilirliğe göre puanlanması",
+      "Veri hazırlık incelemesi: veri nerede, ne kadar temiz, hangi alan dışarı çıkamaz",
+      "Yap, satın al veya hazır API kullan kararı ve toplam sahip olma maliyeti",
+      "Hazır araçların kendi gerçek sorularınızla test edilerek değerlendirilmesi",
+      "Başarı ve durdurma ölçütleri işe başlamadan yazılan pilot şartnamesi",
+      "Süregelen token, çıkarım ve insan kontrolü maliyetini içeren maliyet modeli",
+      "Risk ve yönetişim dokümanı: veri akışları, saklama süreleri, insan denetimi",
+      "Şimdi yap, ertele ve hiç yapma diye ayrılmış aşamalı yol haritası"
+    ],
+    "benefits": [
+      "Bütçe bağlanmadan önce yatırım yapılıp yapılmayacağına dair net bir karar",
+      "Modaya göre değil, işletmeye kattığı değere göre sıralanmış kısa liste",
+      "Bitiş çizgisi ve başarısızlık tanımı önceden belli bir pilot",
+      "Her ay gelecek faturayı da içeren gerçekçi işletme maliyeti tahmini",
+      "Ortaklara ve finans tarafına teknik tercüman olmadan okutulabilir doküman",
+      "Gerekirse hayır diyebilmek için içeride savunulabilir gerekçe"
+    ],
+    "metaTitle": "Yapay Zekâ Stratejisi ve Fizibilitesi | PakSoft",
+    "metaDescription": "Abartısız yapay zekâ stratejisi: senaryo puanlama, veri hazırlığı, yap-satın al kararı, pilot tasarımı ve gerçek maliyet. Ücretsiz hazırlık testini yapın.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Ücretsiz Hazırlık Testi ve Ön Bilgi",
+          "description": "Sitemizdeki ücretsiz yapay zekâ hazırlık testiyle başlıyoruz; birkaç dakika sürer ve veri durumunuz, süreç olgunluğunuz ile olası kullanım senaryolarınız hakkında derli toplu bir okuma verir. Ön görüşmeye boş sayfayla değil, sizin cevaplarınızın oluşturduğu gündemle oturuyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Kullanım Senaryosu Çalıştayı",
+          "description": "İşi fiilen yapan kişilerle yaptığımız oturumda adayları tekrar eden işin bulunduğu yerden topluyoruz: her gün aynı şekilde verilen cevaplar, birinin okuyup özetlediği belgeler, sistemler arasında elle yeniden yazılan veriler. Her aday; hacmi, sahibi ve iyi yapılıp yapılmadığının nasıl anlaşılacağı yazılmış bir görev olarak kaydedilir."
+        },
+        {
+          "step": 3,
+          "title": "Veri Hazırlık Denetimi",
+          "description": "Kısa listedeki her senaryo için dayandığı veriyi takip ediyoruz: hangi sistemde duruyor, ne kadar güncel, formatları ne kadar tutarlı ve hangi alanlar KVKK gereği dışarıya hiç çıkmamalı. Yapay zekâ projeleri asıl burada tıkanır; bu yüzden bunu sonra hallederiz demek yerine olduğu gibi raporluyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Puanlama, Kısa Liste ve Yap-Satın Al-API Kararı",
+          "description": "Adaylar iş değeri, verinin hazır oluşu, yanlış cevaba tolerans ve sonucun ölçülebilirliği üzerinden puanlanır. Elemeyi geçenler için üç yolu dürüstçe karşılaştırıyoruz: abone olacağınız hazır bir ürün, bulut model API'si üzerinde entegrasyon veya özel geliştirme; her birinin ilk iki yıldaki toplam maliyetiyle birlikte."
+        },
+        {
+          "step": 5,
+          "title": "Pilot Şartnamesi ve Maliyet Modeli",
+          "description": "Önerilen senaryo için yazılı bir pilot şartnamesi hazırlanır: kapsam, değerlendirme soruları, başarının tanımı ve hangi koşulda projeyi durduracağımız. Yanında, gerçek hacminizde süregelen token veya çıkarım maliyetini ve sorumlu bir yayının hâlâ gerektirdiği insan kontrolü süresini içeren bir maliyet modeli verilir."
+        },
+        {
+          "step": 6,
+          "title": "Risk, Yönetişim ve Yol Haritası Teslimi",
+          "description": "Belgelenmiş veri akışları, saklama süreleri ve sağlayıcı ayarları, reddetme ve insana devretme kuralları ile sonuç doğuran kararlarda insanın nerede devrede kalacağı size teslim edilir. Yol haritası, şimdi başlanacak, altı ay sonra tekrar bakılacak ve tamamen elenecek işleri ayırarak çalışmayı kapatır."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Sonunda elimize ne geçiyor?",
+          "answer": "Her sıralamanın gerekçesiyle birlikte puanlanmış kullanım senaryosu kısa listesi, veri hazırlık raporu, yap-satın al-API önerisi, başarı ölçütleri yazılmış pilot şartnamesi, işletme maliyeti modeli ve veri akışları ile insan denetimini kapsayan yönetişim dokümanı. Karma bir okuyucu kitlesi için yazılır; finans ve operasyon tarafı teknik tercüman olmadan okuyabilir."
+        },
+        {
+          "question": "Çalışma ne kadar sürer?",
+          "answer": "İlk çalıştaydan son dokümanlara kadar genellikle iki ila dört hafta; süreyi kaç departmanın senaryo önerdiği ve verilere ne kadar hızlı bakabildiğimiz belirler. Ücretsiz hazırlık testi bu süreyi kısaltır, çünkü ilk görüşme genel sorularla değil sizin cevaplarınızla başlar."
+        },
+        {
+          "question": "Maliyeti nedir?",
+          "answer": "Ücretsiz ön görüşmenin ardından sabit fiyat veriyoruz; fiyat, kapsamdaki senaryo sayısına ve verisini incelememiz gereken sistem sayısına göre belirlenir. Devam kararı verirseniz pilot geliştirmesi, şartname hazır olduktan sonra ayrıca fiyatlanır. Strateji çalışmasını, henüz üzerinde anlaşmadığımız bir geliştirmenin indirimi gibi fiyatlamıyoruz."
+        },
+        {
+          "question": "Sadece danışmanlık mı, geliştirmeyi de yapıyor musunuz?",
+          "answer": "Geliştirmeyi de yapıyoruz; tavsiyelerimizin temkinli olmasının sebebi tam olarak budur. Üretimde yapay zekâ çalıştırmak, demoların öğretemediğini öğretir: doğruluğu getirim kalitesi belirler, hiçbir şeyi güvenle değiştiremezsiniz eğer değerlendirme setiniz yoksa ve aylık token faturası gerçek bir işletme giderdir. Stratejiyi başka bir ekibe götürmekte özgürsünüz; öneri aynı olurdu."
+        },
+        {
+          "question": "Cevabınız özel yapay zekâya ihtiyacınız yok olursa ne olur?",
+          "answer": "Bu sık karşılaşılan ve tamamen meşru bir sonuçtur; açıkça söyleriz. Pek çok işletme için iyi yapılandırılmış hazır bir asistan aboneliği, mevcut belgeler üzerinde daha iyi bir arama veya doğrudan sürecin düzeltilmesi, özel geliştirmeden daha fazla değer üretir. Bu sonuca birkaç haftada varmak, on sekiz ay süren bir geliştirmenin ortasında fark etmekten çok daha ucuzdur."
+        },
+        {
+          "question": "Hazır araçlar işimizi görmez mi?",
+          "answer": "Çoğu zaman görür. Metin yazımı, özetleme, çeviri ve genel araştırma için kullanıcı başına abonelik artı kısa bir eğitim, özel geliştirmeyi rahatlıkla geçer. Özel iş; asistanın kendi özel verinizi okuması, araç çağırma ile sistemlerinizin içinde işlem yapması, kendi ürününüzün içinde müşterilerinize hizmet vermesi ya da kullanıcı başına lisansın mantıklı olmadığı hacimlerde anlam kazanır."
+        },
+        {
+          "question": "Verimiz dağınık, beklememiz mi gerekir?",
+          "answer": "Şart değil, ama neyle karşı karşıya olduğunuzu taahhüt vermeden önce bilmelisiniz. Makul derecede temiz tek bir veri kaynağı üzerinde dar bir senaryo iyi bir ilk pilottur; her şeyin üzerine kurulmuş şirket geneli bir asistan ise değildir. Hazırlık denetimi hangi parçanın bugün kullanılabilir olduğunu söyler, böylece temizlik ucu açık bir engel olmaktan çıkıp kapsamı belli bir işe dönüşür."
+        },
+        {
+          "question": "Aylık işletme maliyeti ne olur?",
+          "answer": "Model kullanımı token başına faturalanır; bu yüzden dürüst cevap sabit bir rakam değil, hacminize bağlı bir aralıktır. Gerçek soru hacminiz ve tipik cevap uzunluğunuzdan tahmin çıkarır, sonra faturayı asıl hareket ettiren kaldıraçları tasarıma koyarız: basit istekleri küçük modele yönlendirmek, tekrar eden bağlamı önbelleğe almak ve yeniden deneme sayısını sınırlamak. İnsan kontrol süresi de aynı bütçe kalemine yazılır."
+        },
+        {
+          "question": "KVKK açısından verimiz nereye gidiyor?",
+          "answer": "Stratejide hangi verinin hangi sağlayıcıya gittiğini, hangi alanların maskeleneceğini ve saklama sürelerinin nasıl ayarlanacağını yazıyoruz; büyük sağlayıcılar, API üzerinden gönderilen verinin model eğitiminde kullanılmadığı ticari şartlar sunar ve bunu açıkça yapılandırırız. Yurt dışına aktarımın hiç istenmediği durumlarda AB bölgesi uç noktaları veya kendi sunucunuzdaki açık ağırlıklı model seçeneklerini değerlendiririz. Biz uygulamayı belgeleriz; uyumluluk sertifikası vermiyoruz ve verdiğini iddia edene şüpheyle bakın."
+        },
+        {
+          "question": "Kendi yazılım ekibimiz var, siz ne katıyorsunuz?",
+          "answer": "Hangi senaryonun yönetim kurulunda savunulmaya değdiğine dair dışarıdan bir okuma ve üretimde neyin bozulduğuna dair güncel deneyim. İçerideki ekip veriyi bizden iyi bilir; nadiren sahip olduğu şey, seçenekleri karşılaştıracak kesintisiz zaman ve yapmayalım diyebilme rahatlığıdır. Ekibinizin yerine değil, ekibinizle çalışıyoruz."
+        },
+        {
+          "question": "Bu sayfa Hazırlık Değerlendirmesi ve ROI Analizi ile nasıl ilişkili?",
+          "answer": "Bu sayfa giriş noktası, ücretsiz test ise ilk adımdır. Yapay Zekâ Hazırlık Değerlendirmesi veri, sistem ve kurumsal olgunluğa derinlemesine bakar: yapay zekâyı taşıyabilecek durumda mısınız. Yapay Zekâ ROI Analizi ise belirli bir senaryoyu ele alıp süregelen çıkarım maliyeti dahil fayda-maliyet modeli kurar. Çoğu müşterinin ikisine birden değil, birine ihtiyacı olur."
+        }
+      ],
+      "technologies": [
+        { "name": "Anthropic Claude", "icon": "anthropic" },
+        { "name": "OpenAI API", "icon": "openai" },
+        { "name": "Python", "icon": "python" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "pgvector", "icon": "pgvector" }
+      ]
+    }
+  },
+  "de": {
+    "name": "KI-Strategie",
+    "shortDescription": "Vor der Investition klären, ob KI sich überhaupt lohnt: Bewertung der Anwendungsfälle, ehrliche Prüfung der Datenlage, Make-or-Buy-or-API, ein Pilot mit vorab vereinbarten Erfolgskriterien und ein belastbares Betriebskostenmodell.",
+    "fullDescription": "Gute KI-Strategiearbeit endet meist mit einer kürzeren Liste, als sie begonnen hat. Wir helfen Ihnen zu unterscheiden, welche Probleme ein Modell wirklich lösen sollte, welche ein konfiguriertes Standardprodukt nächste Woche erledigt und welche gar keine KI-Probleme sind. Der Engpass ist fast nie das Modell, sondern verteilte Daten in drei Systemen, in uneinheitlichen Formaten und ohne klare Verantwortung. Sie können selbst beginnen: mit unserer kostenfreien KI-Readiness-Erhebung unter /tools/ai-readiness, deren Ergebnis wir als Agenda für das Erstgespräch nutzen. Unsere Einschätzung stammt aus produktivem Betrieb — ein mandantenfähiger Support-Assistent für E-Commerce-Shops mit Retrieval und Kostenverfolgung sowie EidosUs, ein KI-Lesassistent für wissenschaftliche Texte. KI-Readiness-Assessment und KI-ROI-Analyse vertiefen jeweils eine Seite der Entscheidung.",
+    "features": [
+      "Inventar der Anwendungsfälle, bewertet nach Volumen, Fehlertoleranz, Messbarkeit",
+      "Datenreife-Prüfung: wo die Daten liegen, wie sauber sie sind, was nicht hinausgeht",
+      "Entscheidung Eigenentwicklung, Kauf oder API inklusive Total Cost of Ownership",
+      "Bewertung von Standardwerkzeugen anhand Ihrer eigenen Testfragen",
+      "Pilot-Spezifikation mit Erfolgs- und Abbruchkriterien vor Projektbeginn",
+      "Kostenmodell inklusive laufender Token-, Inferenz- und Prüfaufwände",
+      "Risiko- und Governance-Dokumentation: Datenflüsse, Aufbewahrung, Aufsicht",
+      "Stufenplan mit klarer Trennung von Jetzt, Später und Gar nicht"
+    ],
+    "benefits": [
+      "Eine Investitionsentscheidung, bevor Budget gebunden wird",
+      "Eine nach Geschäftsnutzen statt nach Neuigkeitswert sortierte Auswahlliste",
+      "Ein Pilot mit definierter Ziellinie samt Beschreibung des Scheiterns",
+      "Eine Kostenschätzung, die auch die monatlich wiederkehrende Rechnung enthält",
+      "Dokumentation, die Geschäftsführung und Prüfer ohne Übersetzung lesen können",
+      "Belastbare Argumente, um intern begründet Nein zu sagen"
+    ],
+    "metaTitle": "KI-Strategie — Use Cases, Piloten, Kosten | PakSoft",
+    "metaDescription": "KI-Strategie ohne Hype: Use-Case-Bewertung, Datenreife, Make-or-Buy, Pilotdesign und echte Betriebskosten. Starten Sie mit der kostenfreien Readiness-Erhebung.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Kostenfreie Readiness-Erhebung und Einstieg",
+          "description": "Sie beginnen mit der kostenfreien KI-Readiness-Erhebung auf unserer Website; sie dauert wenige Minuten und liefert eine strukturierte Einschätzung zu Daten, Prozessreife und wahrscheinlichen Anwendungsfällen. Ihr Ergebnis bildet die Agenda des Erstgesprächs, sodass wir nicht bei null anfangen."
+        },
+        {
+          "step": 2,
+          "title": "Workshop zu Anwendungsfällen",
+          "description": "In einer Arbeitssitzung mit den ausführenden Fachleuten sammeln wir Kandidaten dort, wo die Wiederholung tatsächlich sitzt: täglich gleich beantwortete Fragen, Dokumente, die jemand liest und zusammenfasst, Daten, die zwischen Systemen abgetippt werden. Jeder Kandidat wird als Aufgabe mit Volumen, Verantwortlichkeit und Erfolgsmaß notiert."
+        },
+        {
+          "step": 3,
+          "title": "Prüfung der Datenreife",
+          "description": "Für jeden Kandidaten der engeren Auswahl verfolgen wir die benötigten Daten: welches System sie hält, wie aktuell sie sind, wie einheitlich die Formate ausfallen und welche Felder einen externen Anbieter nie erreichen dürfen. Genau hier bleiben die meisten KI-Vorhaben stecken, deshalb berichten wir es nüchtern statt es zu vertagen."
+        },
+        {
+          "step": 4,
+          "title": "Bewertung, Auswahl und Make-or-Buy-or-API",
+          "description": "Die Kandidaten werden nach Geschäftsnutzen, Datenverfügbarkeit, Fehlertoleranz und Messbarkeit bewertet. Für die verbleibenden vergleichen wir drei Wege offen: ein bestehendes Produkt im Abonnement, eine Integration über eine gehostete Modell-API oder Individualentwicklung — jeweils mit den Gesamtkosten der ersten beiden Jahre."
+        },
+        {
+          "step": 5,
+          "title": "Pilot-Spezifikation und Kostenmodell",
+          "description": "Der empfohlene Anwendungsfall erhält eine schriftliche Pilot-Spezifikation: Umfang, Evaluationsfragen, Definition von Erfolg und die Bedingungen für einen Abbruch. Dazu kommt ein Kostenmodell mit laufendem Token- oder Inferenzaufwand bei Ihrem realen Volumen sowie der Prüfzeit, die ein verantwortlicher Betrieb weiterhin benötigt."
+        },
+        {
+          "step": 6,
+          "title": "Risiko, Governance und Übergabe der Roadmap",
+          "description": "Sie erhalten dokumentierte Datenflüsse, Aufbewahrungs- und Anbietereinstellungen, Verweigerungs- und Eskalationsregeln sowie die Festlegung, wo ein Mensch bei folgenreichen Entscheidungen eingebunden bleibt. Die Roadmap schließt das Mandat ab und trennt Sofortiges, in sechs Monaten erneut zu Prüfendes und endgültig Verworfenes."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was erhalten wir am Ende?",
+          "answer": "Eine bewertete Auswahlliste der Anwendungsfälle samt Begründung jeder Platzierung, einen Datenreife-Bericht, eine Empfehlung zu Eigenentwicklung, Kauf oder API, eine Pilot-Spezifikation mit Erfolgskriterien, ein Betriebskostenmodell und ein Governance-Dokument zu Datenflüssen und menschlicher Aufsicht. Alles ist so geschrieben, dass Finanz- und Fachbereiche es ohne Übersetzung lesen können."
+        },
+        {
+          "question": "Wie lange dauert das Mandat?",
+          "answer": "In der Regel zwei bis vier Wochen vom ersten Workshop bis zu den finalen Dokumenten, abhängig davon, wie viele Bereiche Anwendungsfälle beisteuern und wie schnell wir die zugrunde liegenden Daten einsehen können. Die kostenfreie Readiness-Erhebung verkürzt den Ablauf, weil das erste Gespräch bereits auf Ihren Antworten aufsetzt."
+        },
+        {
+          "question": "Was kostet das?",
+          "answer": "Ein Festpreis nach dem kostenfreien Erstgespräch, bemessen an der Anzahl der betrachteten Anwendungsfälle und der Systeme, deren Daten wir prüfen. Eine Pilotentwicklung wird, falls Sie fortfahren, separat kalkuliert, sobald die Spezifikation vorliegt. Wir rechnen die Strategiearbeit nicht als Rabatt auf eine noch gar nicht vereinbarte Umsetzung."
+        },
+        {
+          "question": "Beraten Sie nur oder entwickeln Sie auch?",
+          "answer": "Wir entwickeln auch, und genau deshalb fällt die Beratung zurückhaltend aus. Produktivbetrieb lehrt, was keine Demo zeigt: Die Retrieval-Qualität bestimmt die Genauigkeit, ohne Evaluationsset lässt sich nichts sicher ändern, und die monatliche Token-Rechnung ist echter Betriebsaufwand. Sie können die Strategie ebenso einem anderen Team übergeben — die Empfehlung wäre dieselbe."
+        },
+        {
+          "question": "Was, wenn wir gar keine individuelle KI brauchen?",
+          "answer": "Das ist ein häufiges und vollkommen legitimes Ergebnis, und wir sagen es deutlich. Viele Unternehmen gewinnen mehr durch ein gut konfiguriertes Standardabonnement, eine bessere Suche über vorhandene Dokumente oder schlicht durch eine Prozesskorrektur als durch Individualentwicklung. Wenige Wochen bis zu dieser Erkenntnis sind ungleich günstiger als achtzehn Monate Bauzeit."
+        },
+        {
+          "question": "Würde ein Standardwerkzeug ausreichen?",
+          "answer": "Häufig ja. Für Entwürfe, Zusammenfassungen, Übersetzung und allgemeine Recherche schlägt ein Abonnement je Arbeitsplatz plus Schulung jede Eigenentwicklung. Individuelle Arbeit rechtfertigt sich, wenn der Assistent Ihre eigenen, nicht öffentlichen Daten lesen, über Tool Calls in Ihren Systemen handeln, innerhalb Ihres Produkts für Ihre Kunden laufen oder in Volumina arbeiten muss, in denen Lizenzen je Arbeitsplatz unwirtschaftlich werden."
+        },
+        {
+          "question": "Unsere Daten sind unsauber. Sollen wir warten?",
+          "answer": "Nicht zwingend, aber Sie sollten die Lage kennen, bevor Sie sich festlegen. Ein enger Anwendungsfall über eine hinreichend saubere Quelle ist ein guter erster Pilot, ein unternehmensweiter Assistent über alles hingegen nicht. Die Datenreife-Prüfung zeigt, welche Bestände heute nutzbar sind, sodass Bereinigung eine kalkulierbare Aufgabe statt eines offenen Hindernisses wird."
+        },
+        {
+          "question": "Wie hoch sind die laufenden Kosten?",
+          "answer": "Modellnutzung wird pro Token abgerechnet, die ehrliche Antwort ist daher eine Bandbreite je nach Volumen und keine Pauschale. Wir schätzen aus Ihrem realen Anfragevolumen und der typischen Antwortlänge und legen die wirksamen Hebel gleich mit an: kleinere Modelle für einfache Anfragen, Caching wiederkehrender Kontexte, Begrenzung von Wiederholungen. Der menschliche Prüfaufwand gehört in dieselbe Budgetzeile."
+        },
+        {
+          "question": "Wie gehen Sie mit DSGVO und dem EU AI Act um?",
+          "answer": "Wir dokumentieren die praktische Ebene: welche Daten Ihr System verlassen und zu welchem Anbieter, welche Aufbewahrungs- und Trainingseinstellungen dort gewählt wurden, wo personenbezogene Felder pseudonymisiert werden, sowie Verweigerungs-, Eskalations- und Freigaberegeln. Dieselbe Dokumentation ist die Grundlage, auf der sich Anforderungen aus dem EU AI Act später beurteilen lassen. Wir dokumentieren Praxis und stellen keine Konformität fest — das obliegt Ihrer Rechts- und Datenschutzberatung."
+        },
+        {
+          "question": "Wir haben bereits ein Daten- oder IT-Team. Was kommt hinzu?",
+          "answer": "Eine Außensicht darauf, welche Anwendungsfälle vor der Geschäftsführung Bestand haben, und aktuelle Erfahrung damit, was im Betrieb bricht. Interne Teams kennen die Daten besser, als wir es je werden; was ihnen fehlt, ist ungestörte Zeit für den Optionsvergleich und die Freiheit, vom Bauen abzuraten. Wir arbeiten mit Ihrem Team, nicht an ihm vorbei."
+        },
+        {
+          "question": "Wie verhält sich das zu KI-Readiness-Assessment und KI-ROI-Analyse?",
+          "answer": "Diese Seite ist der Einstieg, die kostenfreie Erhebung der erste Schritt. Das KI-Readiness-Assessment vertieft Daten, Systeme und organisatorische Reife — also die Frage, ob Sie KI überhaupt tragen können. Die KI-ROI-Analyse nimmt einen konkreten Anwendungsfall und stellt Kosten inklusive laufender Inferenz dem Nutzen gegenüber. Die meisten Kunden benötigen eines von beiden."
+        }
+      ],
+      "technologies": [
+        { "name": "Anthropic Claude", "icon": "anthropic" },
+        { "name": "OpenAI API", "icon": "openai" },
+        { "name": "Python", "icon": "python" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "pgvector", "icon": "pgvector" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "استراتيجية الذكاء الاصطناعي",
+    "shortDescription": "أن تقرّروا جدوى الذكاء الاصطناعي قبل الإنفاق عليه: ترتيب حالات الاستخدام بالدرجات، وفحص صريح لجاهزية البيانات، والمفاضلة بين البناء والشراء وواجهات البرمجة، وتجربة أولية بمعايير نجاح متفق عليها مسبقاً، ونموذج للتكلفة التشغيلية.",
+    "fullDescription": "العمل الجيد على استراتيجية الذكاء الاصطناعي ينتهي عادةً بقائمة أقصر مما بدأ به. نساعدكم على التمييز بين المشكلات التي يستحق حلّها بنموذج فعلاً، وتلك التي يغطيها اشتراك جاهز يبدأ فريقكم باستخدامه الأسبوع المقبل، وتلك التي ليست مشكلات ذكاء اصطناعي أصلاً. العائق لا يكون النموذج تقريباً أبداً؛ بل بيانات موزّعة على ثلاثة أنظمة بصيغ غير متسقة وبلا مالك واضح. يمكنكم البدء بأنفسكم عبر أداة تقييم الجاهزية المجانية على موقعنا ‎/tools/ai-readiness ثم إحضار النتيجة إلى جلسة التقييم. ورأينا مصدره تشغيل فعلي في الإنتاج: مساعد دعم متعدد المستأجرين لمتاجر التجارة الإلكترونية مع استرجاع وتتبّع للتكلفة، ومنصّة EidosUs للقراءة الأكاديمية. وتتعمّق خدمتا تقييم الجاهزية للذكاء الاصطناعي وتحليل العائد على الاستثمار في طرفَي القرار.",
+    "features": [
+      "جرد حالات الاستخدام مع درجات للحجم وتحمّل الخطأ وقابلية القياس",
+      "مراجعة جاهزية البيانات: أين تقيم، وما مدى نظافتها، وما الذي لا يغادر أنظمتكم",
+      "قرار البناء أو الشراء أو استخدام واجهة برمجية مع التكلفة الإجمالية للتملك",
+      "تقييم الأدوات الجاهزة باستخدام أسئلتكم الحقيقية لا أمثلة المورّد",
+      "مواصفات تجربة أولية بمعايير نجاح وإيقاف متفق عليها قبل بدء العمل",
+      "نموذج تكلفة يشمل إنفاق الـ tokens والاستدلال ووقت المراجعة البشرية",
+      "توثيق المخاطر والحوكمة: مسارات البيانات، ومدد الاحتفاظ، والإشراف البشري",
+      "خارطة طريق تفصل بين ما يُنفَّذ الآن وما يؤجَّل وما يُستبعد نهائياً"
+    ],
+    "benefits": [
+      "قرار استثماري يُتخذ قبل ارتباط الميزانية",
+      "قائمة قصيرة مرتّبة بحسب القيمة للأعمال لا بحسب حداثة التقنية",
+      "تجربة أولية بخط نهاية محدد وتعريف واضح لما يعنيه الفشل",
+      "تقدير تشغيلي يشمل الفاتورة التي تصل كل شهر",
+      "توثيق يقرأه مجلس الإدارة أو المدقق دون وسيط تقني",
+      "مبرّر متين يتيح لكم قول لا حين يكون ذلك هو الصواب"
+    ],
+    "metaTitle": "استراتيجية الذكاء الاصطناعي وجدواها | PakSoft",
+    "metaDescription": "استراتيجية ذكاء اصطناعي بلا مبالغة: ترتيب حالات الاستخدام، جاهزية البيانات، البناء مقابل الشراء، وتكلفة تشغيل واقعية. ابدأوا بأداة تقييم الجاهزية المجانية.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تقييم الجاهزية المجاني ونقطة البداية",
+          "description": "نبدأ بأداة تقييم الجاهزية المجانية على موقعنا؛ تستغرق دقائق وتمنحكم قراءة منظّمة لحالة البيانات ونضج العمليات وحالات الاستخدام المرجّحة. ونستخدم نتيجتكم جدولاً لجلسة التقييم بدل الانطلاق من صفحة بيضاء."
+        },
+        {
+          "step": 2,
+          "title": "ورشة استكشاف حالات الاستخدام",
+          "description": "في جلسة عمل مع من ينفّذون المهام، نجمع المرشحين من حيث يوجد التكرار فعلاً: أسئلة تُجاب بالطريقة نفسها يومياً، ومستندات يقرؤها أحدهم ويلخّصها، وبيانات يُعاد إدخالها يدوياً بين الأنظمة. ويُكتب كل مرشح كمهمة لها حجم ومالك وطريقة للحكم على جودة إنجازها."
+        },
+        {
+          "step": 3,
+          "title": "تدقيق جاهزية البيانات",
+          "description": "لكل حالة في القائمة القصيرة نتتبّع البيانات التي تعتمد عليها: أي نظام يحتفظ بها، ومدى حداثتها، ومدى اتساق صيغها، وأي الحقول يجب ألّا تصل إلى مزوّد خارجي إطلاقاً. هنا تتعثّر معظم مشاريع الذكاء الاصطناعي فعلياً، لذا نعرض الحقيقة كما هي بدل تأجيلها."
+        },
+        {
+          "step": 4,
+          "title": "الترتيب بالدرجات وقرار البناء أو الشراء أو الواجهة البرمجية",
+          "description": "تُمنح الحالات درجات على القيمة التجارية وتوفّر البيانات وتحمّل الإجابة الخاطئة وقابلية قياس النتيجة. وللناجين نقارن ثلاثة مسارات بصراحة: منتج جاهز تشتركون فيه، أو تكامل فوق واجهة نموذج مستضاف، أو تطوير مخصص، مع التكلفة الإجمالية لكل مسار خلال أول سنتين."
+        },
+        {
+          "step": 5,
+          "title": "مواصفات التجربة الأولية ونموذج التكلفة",
+          "description": "تحصل الحالة الموصى بها على مواصفات مكتوبة: النطاق، وأسئلة التقييم، وتعريف النجاح، والشروط التي نوقف عندها العمل. ويرافقها نموذج تكلفة يشمل إنفاق الـ tokens أو الاستدلال عند حجمكم الحقيقي، إضافة إلى وقت المراجعة البشرية الذي يظلّ ضرورياً لأي إطلاق مسؤول."
+        },
+        {
+          "step": 6,
+          "title": "المخاطر والحوكمة وتسليم خارطة الطريق",
+          "description": "تتسلّمون توثيقاً لمسارات البيانات وإعدادات الاحتفاظ لدى المزوّد وقواعد الامتناع والتصعيد، ومواضع بقاء الإنسان في الحلقة عند القرارات ذات الأثر. وتختم خارطة الطريق العمل بفصل ما يبدأ الآن عمّا يُراجَع بعد ستة أشهر وعمّا يُستبعد تماماً."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما الذي نحصل عليه في النهاية؟",
+          "answer": "قائمة قصيرة مرتّبة بالدرجات مع مبرّر كل ترتيب، وتقرير جاهزية البيانات، وتوصية بالبناء أو الشراء أو الواجهة البرمجية، ومواصفات تجربة أولية بمعايير نجاح، ونموذج للتكلفة التشغيلية، ووثيقة حوكمة تغطي مسارات البيانات والإشراف البشري. وقد صيغت لجمهور مختلط، فيقرأها مسؤولو المالية والعمليات دون وسيط تقني."
+        },
+        {
+          "question": "كم يستغرق العمل؟",
+          "answer": "عادةً أسبوعان إلى أربعة من الورشة الأولى حتى الوثائق النهائية، بحسب عدد الأقسام التي تقترح حالات استخدام وسرعة اطّلاعنا على البيانات الأساسية. وتقييم الجاهزية المجاني يختصر المدة، لأن الحوار الأول ينطلق من إجاباتكم بدل الأسئلة العامة."
+        },
+        {
+          "question": "كم تبلغ الكلفة؟",
+          "answer": "سعر ثابت يُحدَّد بعد جلسة تقييم مجانية، ويقاس بعدد حالات الاستخدام ضمن النطاق وعدد الأنظمة التي نحتاج لفحص بياناتها. أما تطوير التجربة الأولية، إن قرّرتم المضي، فيُسعَّر منفصلاً بعد اكتمال المواصفات. ولا نسعّر العمل الاستراتيجي كخصم على تنفيذ لم نتفق عليه بعد."
+        },
+        {
+          "question": "هل تكتفون بالاستشارة أم تبنون الحل؟",
+          "answer": "نبني أيضاً، ولهذا تحديداً تأتي نصيحتنا متحفظة. التشغيل في الإنتاج يعلّم ما لا يظهره أي عرض توضيحي: جودة الاسترجاع هي ما يحدّد الدقة، ومن دون مجموعة تقييم لا يمكن تغيير أي شيء بأمان، وفاتورة الـ tokens الشهرية مصروف تشغيلي حقيقي. ويحق لكم أخذ الاستراتيجية إلى فريق آخر؛ التوصية ستبقى كما هي."
+        },
+        {
+          "question": "ماذا لو كانت النتيجة أننا لا نحتاج ذكاءً اصطناعياً مخصصاً؟",
+          "answer": "نتيجة شائعة ومشروعة تماماً، ونقولها بوضوح. كثير من الشركات تحصل على قيمة أكبر من اشتراك مساعد جاهز مضبوط الإعدادات، أو من بحث أفضل داخل مستنداتها الحالية، أو من إصلاح إجراء بسيط، مقارنةً بأي تطوير مخصص. وبضعة أسابيع للوصول إلى هذه النتيجة أرخص كثيراً من اكتشافها بعد ثمانية عشر شهراً من البناء."
+        },
+        {
+          "question": "ألا تكفي الأدوات الجاهزة؟",
+          "answer": "غالباً تكفي. في الصياغة والتلخيص والترجمة والبحث العام، يتفوّق اشتراك لكل مستخدم مع تدريب قصير على أي حل مخصص. ويصبح التطوير المخصص مبرّراً حين يحتاج المساعد إلى قراءة بياناتكم الخاصة، أو التصرّف داخل أنظمتكم عبر استدعاء الأدوات، أو العمل داخل منتجكم لخدمة عملائكم، أو التشغيل بحجم يفقد معه الترخيص لكل مستخدم جدواه."
+        },
+        {
+          "question": "بياناتنا غير مرتبة، فهل ننتظر؟",
+          "answer": "ليس بالضرورة، لكن يجب أن تعرفوا واقعكم قبل الالتزام. حالة استخدام ضيّقة فوق مصدر بيانات نظيف نسبياً تصلح تجربة أولى جيدة، بينما مساعد شامل يغطي كل شيء لا يصلح. ويحدّد تدقيق الجاهزية ما هو صالح اليوم وما يحتاج تنظيفاً، فيتحوّل التنظيف إلى مهمة محدّدة النطاق بدل عائق مفتوح."
+        },
+        {
+          "question": "كم تبلغ كلفة التشغيل شهرياً؟",
+          "answer": "تُحتسب كلفة النماذج لكل token، لذا فالإجابة الصادقة نطاق مرتبط بحجمكم لا رقم ثابت. نقدّرها من حجم الأسئلة الفعلي وطول الإجابة المعتاد، ثم نضع في التصميم الروافع التي تحرّك الفاتورة فعلاً: توجيه الطلبات البسيطة إلى نماذج أصغر، وتخزين السياق المتكرر مؤقتاً، وتحديد سقف لإعادة المحاولات. ووقت المراجعة البشرية يُدرَج في البند نفسه."
+        },
+        {
+          "question": "أين تُعالَج بياناتنا وهل تلتزمون بإقامة البيانات محلياً؟",
+          "answer": "نوثّق في الاستراتيجية أي البيانات تغادر أنظمتكم وإلى أي مزوّد، وإعدادات الاحتفاظ والتدريب على تلك الحسابات، والحقول التي تُخفى قبل الإرسال. وحين تفرض سياستكم أو جهة تنظيمية بقاء البيانات داخل نطاق جغرافي محدد، ندرس النقاط الإقليمية للمزوّدين أو نموذجاً مفتوح الأوزان تستضيفونه بأنفسكم مع ذكر المقايضات بصراحة. نحن نوثّق الممارسة ولا نمنح شهادة امتثال."
+        },
+        {
+          "question": "لدينا فريق بيانات أو تقنية معلومات، فماذا تضيفون؟",
+          "answer": "قراءة خارجية لأي حالات الاستخدام تستحق الدفاع عنها أمام الإدارة، وخبرة حديثة بما ينكسر في التشغيل الفعلي. الفريق الداخلي يعرف البيانات أفضل منّا دائماً؛ وما ينقصه عادةً وقت متصل لمقارنة الخيارات وحرية التوصية بعدم البناء. نعمل مع فريقكم لا من حوله."
+        },
+        {
+          "question": "ما علاقة هذه الصفحة بتقييم الجاهزية وتحليل العائد؟",
+          "answer": "هذه الصفحة نقطة الدخول، والأداة المجانية هي الخطوة الأولى. يتعمّق تقييم الجاهزية للذكاء الاصطناعي في البيانات والأنظمة والنضج المؤسسي، أي في سؤال: هل تحتملون الذكاء الاصطناعي أصلاً. أما تحليل العائد على الاستثمار فيأخذ حالة استخدام بعينها ويقابل كلفتها، بما فيها الاستدلال المستمر، بالمنفعة المتوقعة. ومعظم العملاء يحتاجون إحداهما لا كلتيهما."
+        }
+      ],
+      "technologies": [
+        { "name": "Anthropic Claude", "icon": "anthropic" },
+        { "name": "OpenAI API", "icon": "openai" },
+        { "name": "Python", "icon": "python" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "pgvector", "icon": "pgvector" }
+      ]
+    }
+  }
+}
