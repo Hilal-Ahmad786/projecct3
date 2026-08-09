@@ -1,0 +1,479 @@
+{
+  "slug": "email-marketing",
+  "en": {
+    "name": "Email Marketing",
+    "shortDescription": "Permission-based email that actually reaches the inbox: authenticated sending domains, clean and consented lists, segmented campaigns and lifecycle automation built to satisfy GDPR, İYS and the Gmail and Yahoo bulk-sender rules.",
+    "fullDescription": "Email is the one marketing channel you genuinely own, which is exactly why it fails quietly when the foundations are wrong. We authenticate your sending domain with aligned SPF, DKIM and DMARC, warm it properly, and enforce list hygiene and a sunset policy so engagement stays high and spam complaints stay well below the thresholds Gmail and Yahoo now apply to bulk senders. On top of that we build the programme: newsletter strategy and template design, lifecycle and abandoned-cart automation, and wider marketing automation wired into your store or CRM. Consent is non-negotiable — İYS and KVKK in Turkey, GDPR and ePrivacy in the EU — and we never work with purchased lists. Reporting ties sends to orders and pipeline, not to open rates.",
+    "features": [
+      "Sending Domain Authentication — Aligned SPF, DKIM & DMARC",
+      "Deliverability Diagnostics, Domain Warm-Up & IP Strategy",
+      "List Hygiene, Sunset Policy & Engagement-Based Sending",
+      "Newsletter Strategy, Template Design & Responsive Build",
+      "Email Automation — Welcome, Abandoned Cart, Post-Purchase, Win-Back",
+      "Marketing Automation Connected to Store and CRM Data",
+      "Segmentation, A/B Testing & Send-Time Governance",
+      "Consent & Compliance — İYS, KVKK, GDPR/ePrivacy, One-Click Unsubscribe"
+    ],
+    "benefits": [
+      "Campaigns that land in the inbox instead of the promotions pile or the spam folder",
+      "A channel you own outright, with no algorithm or ad auction between you and your customers",
+      "Revenue from automations that keep running without anyone pressing send",
+      "Lower list churn, because you stop mailing people who stopped caring",
+      "Reduced legal exposure: documented consent, working unsubscribe, auditable records",
+      "Reporting tied to orders and pipeline rather than opens inflated by privacy proxies"
+    ],
+    "metaTitle": "Email Marketing & Deliverability | PakSoft",
+    "metaDescription": "Permission-based email marketing: authentication, deliverability, newsletters and lifecycle automation under GDPR and İYS. Request a free deliverability check.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Deliverability & Authentication Audit",
+          "description": "We check your SPF, DKIM and DMARC records and whether they align with the visible From domain, review reputation in Google Postmaster Tools, and look for blocklist entries, hard-bounce build-up and dormant contacts. You get a prioritised list of what is actually keeping mail out of the inbox."
+        },
+        {
+          "step": 2,
+          "title": "Consent, Compliance & List Cleanup",
+          "description": "We establish where each contact came from and whether the consent behind it holds up under İYS and KVKK in Turkey or GDPR and ePrivacy in the EU, then remove role addresses, hard bounces and never-engaged contacts. Where consent cannot be evidenced we run a re-permission campaign rather than quietly keeping the addresses."
+        },
+        {
+          "step": 3,
+          "title": "Infrastructure & Domain Warm-Up",
+          "description": "We configure the sending platform on a dedicated subdomain, decide honestly between a shared and a dedicated IP based on your real volume, and ramp sending gradually starting with your most engaged contacts. One-click unsubscribe headers and complaint feedback loops are in place before the first campaign goes out."
+        },
+        {
+          "step": 4,
+          "title": "Newsletter & Template System",
+          "description": "We design a reusable template system that renders correctly in Outlook, Gmail and Apple Mail, in dark mode and on mobile, with a plain-text alternative and accessible contrast. RTL variants are built where you mail Arabic-speaking audiences, because right-to-left email breaks in ways web layouts do not."
+        },
+        {
+          "step": 5,
+          "title": "Lifecycle & Automation Programmes",
+          "description": "Welcome series, abandoned-cart and browse-abandonment flows, post-purchase and replenishment messages, and win-back sequences are built against your store or CRM data. These automations usually carry a disproportionate share of email revenue because they arrive when intent is highest."
+        },
+        {
+          "step": 6,
+          "title": "Measure, Prune & Iterate",
+          "description": "We report revenue and conversions per send, engagement by segment, and bounce and complaint rates against the limits mailbox providers enforce, using GA4 and platform data together. Underperforming segments are pruned rather than mailed harder, because sender reputation is the asset that protects everything else."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Can we email a list we already have?",
+          "answer": "Only if you can show where each contact came from and that they agreed to receive commercial email. We audit the source before anything is sent, and if consent cannot be evidenced we run a re-permission campaign to the salvageable portion rather than mailing the whole file. Purchased or scraped lists are not something we will send to at any price — they destroy sender reputation and create real legal exposure."
+        },
+        {
+          "question": "Why are our emails landing in spam?",
+          "answer": "Usually a combination of missing or misaligned authentication, a sending domain with no reputation, and a list that includes people who never engaged. Mailbox providers weigh complaints, bounces, deletions without reading and engagement history far more heavily than subject-line wording. Fixing SPF, DKIM and DMARC alignment plus cleaning the list resolves the majority of cases we see."
+        },
+        {
+          "question": "What do the Gmail and Yahoo bulk-sender rules require?",
+          "answer": "Since February 2024, senders above roughly 5,000 messages a day to Gmail must authenticate with SPF and DKIM, publish a DMARC policy with alignment, provide one-click unsubscribe honoured within two days, and keep spam complaints below 0.3% — Google advises staying under 0.1%. Yahoo applies equivalent rules and Microsoft has since introduced comparable requirements for Outlook.com. We configure all of this as a baseline, not an upgrade."
+        },
+        {
+          "question": "How often should we send?",
+          "answer": "Frequency follows what you have to say and how engaged the segment is, not a fixed calendar. For most B2B senders every two to four weeks is sustainable; e-commerce can support weekly if there is genuine merchandising news. We would rather send less to an engaged segment than more to a list that is quietly complaining."
+        },
+        {
+          "question": "What is İYS and do we have to register?",
+          "answer": "İYS (İleti Yönetim Sistemi) is Turkey's central registry for commercial electronic messages under Law 6563. Businesses sending commercial email or SMS to recipients in Turkey must be registered and must upload and maintain their consent and opt-out records there; consent is required for consumers, while registered traders can be contacted without prior consent but their opt-outs must still be honoured and recorded. Separately, KVKK governs how you process the underlying personal data."
+        },
+        {
+          "question": "What does GDPR require, and do we need double opt-in?",
+          "answer": "Under GDPR and ePrivacy you need a lawful basis and, in most cases, freely given consent that you can evidence — plus a clear unsubscribe in every message. Double opt-in is not universally mandated, but it is the practical standard in Germany and elsewhere because it produces the proof you need in a dispute. We set it up by default for EU-facing lists."
+        },
+        {
+          "question": "Do you design the templates?",
+          "answer": "Yes. We build a reusable template system in your brand, hand-coded or built in your platform's editor, and test rendering across Outlook, Gmail, Apple Mail, dark mode and mobile before launch. Every template ships with a plain-text alternative and a visible unsubscribe, and your team can produce campaigns from it without needing us."
+        },
+        {
+          "question": "Do we need a dedicated IP address?",
+          "answer": "Usually not. A dedicated IP starts with no reputation at all and needs consistent, sizeable volume to build one, so below that threshold a well-maintained shared pool at a reputable provider delivers better. We recommend a dedicated IP only when your volume and cadence genuinely justify a warm-up plan."
+        },
+        {
+          "question": "Are open rates still a useful metric?",
+          "answer": "Only as a rough trend. Apple's Mail Privacy Protection pre-loads tracking pixels, so a meaningful share of reported opens never involved a human, and other providers proxy images too. We optimise against clicks, conversions and revenue per recipient, and use opens only to compare like-for-like segments over time."
+        },
+        {
+          "question": "What happens if we stop sending for a few months?",
+          "answer": "Sender reputation is built on recent behaviour, so a long gap effectively resets it and the first campaign back often performs badly or filters heavily. If you need to pause, we recommend keeping a low-volume send to your most engaged contacts, and if a gap has already happened we treat the restart as a warm-up rather than a normal campaign."
+        },
+        {
+          "question": "Do we have to change our email platform?",
+          "answer": "Not unless it is the actual problem. We work with the mainstream campaign and transactional providers — Klaviyo, Mailchimp, Brevo, Amazon SES and similar — and we will tell you plainly if your current platform cannot support the segmentation or automation you need. Migration is a decision with a cost, so we only propose it when the case is clear."
+        },
+        {
+          "question": "How long until email starts producing revenue?",
+          "answer": "Automations often contribute within the first month or two because they meet existing intent, while campaign performance improves gradually as reputation, segmentation and content settle over a quarter or more. If your list is small or unengaged, expect the first phase to be about list quality and consent rather than immediate revenue."
+        }
+      ],
+      "technologies": [
+        { "name": "Klaviyo", "icon": "klaviyo" },
+        { "name": "Mailchimp", "icon": "mailchimp" },
+        { "name": "Brevo", "icon": "brevo" },
+        { "name": "Amazon SES", "icon": "aws-ses" },
+        { "name": "Google Postmaster Tools", "icon": "google-postmaster" },
+        { "name": "DMARC", "icon": "dmarc" },
+        { "name": "Google Analytics 4", "icon": "ga4" },
+        { "name": "ikas", "icon": "ikas" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "E-posta Pazarlama",
+    "shortDescription": "İzne dayalı ve gerçekten gelen kutusuna ulaşan e-posta: doğrulanmış gönderim alan adı, temiz ve onaylı liste, segmentli kampanyalar ve otomasyon — İYS, KVKK ve Gmail ile Yahoo'nun toplu gönderici kurallarına uygun.",
+    "fullDescription": "E-posta, gerçekten size ait olan tek pazarlama kanalı; teknik temeli yanlış kurulduğunda sessizce çalışmamasının nedeni de bu. Gönderim alan adınızı SPF, DKIM ve DMARC hizalamasıyla doğrular, alan adını kademeli olarak ısıtır, liste hijyeni ve pasif aboneleri devre dışı bırakma kuralı uygularız; böylece etkileşim yüksek, şikâyet oranı Gmail ve Yahoo'nun toplu göndericilere uyguladığı sınırların açık ara altında kalır. Üzerine programı kurarız: bülten stratejisi ve şablon tasarımı, hoş geldin ve sepet hatırlatma otomasyonları, mağaza veya CRM verinize bağlı pazarlama otomasyonu. İzin pazarlık konusu değildir — Türkiye'de İYS ve KVKK, Avrupa'da GDPR ve ePrivacy — ve satın alınmış listeye gönderim yapmayız. Raporlama açılma oranına değil siparişe bakar.",
+    "features": [
+      "Gönderim Alan Adı Doğrulaması — Hizalı SPF, DKIM ve DMARC",
+      "İletilebilirlik Teşhisi, Alan Adı Isıtma ve IP Stratejisi",
+      "Liste Hijyeni, Pasif Abone Politikası ve Etkileşime Göre Gönderim",
+      "Bülten Stratejisi, Şablon Tasarımı ve Mobil Uyumlu Kurulum",
+      "E-posta Otomasyonu — Hoş Geldin, Sepet Hatırlatma, Satış Sonrası, Geri Kazanım",
+      "Mağaza ve CRM Verisine Bağlı Pazarlama Otomasyonu",
+      "Segmentasyon, A/B Testi ve Gönderim Zamanı Yönetimi",
+      "İzin ve Uyum — İYS, KVKK, GDPR/ePrivacy, Tek Tıkla Abonelikten Çıkma"
+    ],
+    "benefits": [
+      "Spam klasörüne değil gelen kutusuna düşen kampanyalar",
+      "Tamamen size ait bir kanal: müşterinizle aranızda algoritma ya da reklam açık artırması yok",
+      "Kimse gönder'e basmadan çalışmaya devam eden otomasyonlardan gelen ciro",
+      "Daha düşük liste kaybı, çünkü ilgisini kesmiş kişilere göndermeyi bırakırsınız",
+      "Azalan hukuki risk: belgelenmiş izin, çalışan çıkış bağlantısı, denetlenebilir kayıt",
+      "Açılma oranı yerine sipariş ve talebe bağlanmış raporlama"
+    ],
+    "metaTitle": "E-posta Pazarlama ve İletilebilirlik | PakSoft",
+    "metaDescription": "İzinli e-posta pazarlama: SPF/DKIM/DMARC kurulumu, İYS ve KVKK uyumu, bülten tasarımı ve otomasyon. Ücretsiz iletilebilirlik kontrolü için bize yazın.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "İletilebilirlik ve Doğrulama Denetimi",
+          "description": "SPF, DKIM ve DMARC kayıtlarınızı ve bunların görünen gönderen alan adıyla hizalı olup olmadığını kontrol eder, Google Postmaster Tools'ta itibar geçmişine bakar, kara liste kayıtlarını, biriken kalıcı hataları ve uzun süredir hareketsiz kişileri tespit ederiz. Elinize e-postanızı gelen kutusundan gerçekten uzak tutan sorunların öncelikli listesi geçer."
+        },
+        {
+          "step": 2,
+          "title": "İzin, Uyum ve Liste Temizliği",
+          "description": "Her kaydın nereden geldiğini ve arkasındaki iznin İYS ile KVKK karşısında ayakta durup durmadığını netleştirir, kurumsal genel adresleri, kalıcı hata veren adresleri ve hiç etkileşime girmemiş kişileri listeden çıkarırız. İzni belgelenemeyen kısım için sessizce saklamak yerine yeniden izin kampanyası yürütürüz."
+        },
+        {
+          "step": 3,
+          "title": "Altyapı ve Alan Adı Isıtma",
+          "description": "Gönderim platformunu ayrı bir alt alan adı üzerinde kurar, gerçek hacminize bakarak paylaşımlı mı yoksa ayrılmış IP mi gerektiğine dürüstçe karar verir ve gönderimi en aktif kişilerden başlayarak kademeli artırırız. Tek tıkla abonelikten çıkma başlıkları ve şikâyet geri bildirim döngüleri ilk kampanyadan önce hazır olur."
+        },
+        {
+          "step": 4,
+          "title": "Bülten ve Şablon Sistemi",
+          "description": "Outlook, Gmail ve Apple Mail'de, karanlık modda ve mobilde doğru görünen, düz metin alternatifi ve erişilebilir kontrast içeren tekrar kullanılabilir bir şablon sistemi kurarız. Arapça kitleye gönderim yapıyorsanız sağdan sola varyantları da hazırlanır, çünkü RTL e-posta web sayfalarından farklı biçimde bozulur."
+        },
+        {
+          "step": 5,
+          "title": "Yaşam Döngüsü ve Otomasyon",
+          "description": "Hoş geldin serisi, sepet ve ürün inceleme terk akışları, satış sonrası ve yenileme mesajları ile geri kazanım dizileri mağaza veya CRM verinize bağlı olarak kurulur. Bu otomasyonlar genellikle e-posta cirosunun orantısız büyük bir bölümünü taşır, çünkü niyetin en yüksek olduğu anda ulaşırlar."
+        },
+        {
+          "step": 6,
+          "title": "Ölçüm, Budama ve İyileştirme",
+          "description": "Gönderim başına ciro ve dönüşümü, segment bazlı etkileşimi, hata ve şikâyet oranlarını sağlayıcıların uyguladığı sınırlarla birlikte GA4 ve platform verisiyle raporlarız. Performans düşen segmentlere daha çok göndermek yerine listeden çıkarırız, çünkü gönderen itibarı diğer her şeyi koruyan asıl varlıktır."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Elimizdeki listeye e-posta gönderebilir miyiz?",
+          "answer": "Yalnızca her kaydın nereden geldiğini ve ticari ileti almayı kabul ettiğini gösterebiliyorsanız. Gönderim öncesi kaynağı denetleriz; izin belgelenemiyorsa tüm listeye göndermek yerine kurtarılabilir kısma yeniden izin kampanyası yaparız. Satın alınmış veya toplanmış listelere hiçbir koşulda gönderim yapmayız — gönderen itibarını yok eder ve İYS ile KVKK açısından ciddi risk yaratır."
+        },
+        {
+          "question": "E-postalarımız neden spam'e düşüyor?",
+          "answer": "Genellikle üç sorunun birleşimi: eksik ya da hizalanmamış doğrulama kayıtları, itibarı olmayan bir gönderim alan adı ve hiç etkileşime girmemiş kişileri barındıran bir liste. Sağlayıcılar şikâyet, hata, okumadan silme ve etkileşim geçmişine, konu satırındaki kelimelerden çok daha fazla ağırlık verir. Gördüğümüz vakaların çoğu SPF, DKIM, DMARC hizalaması ve liste temizliğiyle çözülüyor."
+        },
+        {
+          "question": "İYS kaydı zorunlu mu, ne yapmamız gerekiyor?",
+          "answer": "İYS (İleti Yönetim Sistemi), 6563 sayılı kanun kapsamında ticari elektronik iletiler için tutulan merkezi kayıt sistemidir. Türkiye'deki alıcılara ticari e-posta veya SMS gönderen hizmet sağlayıcıların İYS'ye kayıtlı olması, onay ve ret kayıtlarını sisteme yüklemesi ve güncel tutması gerekir; tüketiciler için önceden onay şart, tacir ve esnaf için önceden onay aranmaz ancak ret hakkı mutlaka işletilmelidir. KVKK ise bu verilerin işlenmesini ayrıca düzenler."
+        },
+        {
+          "question": "Ne sıklıkta göndermeliyiz?",
+          "answer": "Sıklık takvimden değil, söyleyecek sözünüzden ve segmentin ilgisinden çıkar. B2B gönderenlerin çoğu için iki–dört haftada bir sürdürülebilir bir tempodur; e-ticarette gerçekten kampanya veya ürün haberi varsa haftalık gönderim taşınabilir. İlgisini kaybetmiş bir listeye daha çok göndermek yerine ilgili segmente daha az göndermeyi tercih ederiz."
+        },
+        {
+          "question": "E-posta mı WhatsApp mı? Türkiye'de e-posta hâlâ işe yarıyor mu?",
+          "answer": "Türkiye'de WhatsApp ve SMS açılma açısından e-postayı geride bırakır, bunu inkâr etmeyiz; ancak bu kanalların mesaj başına maliyeti ve şablon onayı gibi kısıtları vardır ve İYS yükümlülüğü onlarda da geçerlidir. E-posta uzun içerik, sipariş sonrası iletişim ve düşük maliyetli sürekli temas için hâlâ en ucuz kanaldır. Doğru kurulum genelde e-postayı temel katman, WhatsApp'ı seçili anlarda kullanılan tamamlayıcı katman yapmaktır."
+        },
+        {
+          "question": "Şablonları siz mi tasarlıyorsunuz?",
+          "answer": "Evet. Markanıza uygun, tekrar kullanılabilir bir şablon sistemi kurar; Outlook, Gmail, Apple Mail, karanlık mod ve mobilde görünümünü yayına almadan önce test ederiz. Her şablon düz metin alternatifi ve görünür bir abonelikten çıkma bağlantısıyla teslim edilir ve ekibiniz bize ihtiyaç duymadan kampanya hazırlayabilir."
+        },
+        {
+          "question": "Ayrılmış (dedicated) IP almalı mıyız?",
+          "answer": "Çoğu durumda hayır. Ayrılmış IP sıfır itibarla başlar ve itibar oluşturmak için düzenli ve yüksek hacim gerektirir; bu eşiğin altında iyi yönetilen paylaşımlı bir havuz daha iyi iletir. Ayrılmış IP'yi yalnızca hacminiz ve gönderim düzeniniz gerçek bir ısıtma planını hak ettiğinde öneririz."
+        },
+        {
+          "question": "Açılma oranı hâlâ anlamlı bir ölçüt mü?",
+          "answer": "Sadece kaba bir eğilim göstergesi olarak. Apple'ın Mail Privacy Protection özelliği takip piksellerini önceden yüklediği için raporlanan açılmaların önemli bir kısmının arkasında insan yoktur; başka sağlayıcılar da görselleri vekil sunucudan geçirir. Tıklama, dönüşüm ve alıcı başına ciroya göre optimize eder, açılma oranını yalnızca benzer segmentleri zaman içinde karşılaştırmak için kullanırız."
+        },
+        {
+          "question": "Bir süre göndermeyi bırakırsak ne olur?",
+          "answer": "Gönderen itibarı yakın dönemdeki davranışa dayanır; uzun bir ara pratikte itibarı sıfırlar ve dönüşteki ilk kampanya sıklıkla kötü performans gösterir veya filtrelenir. Ara vermeniz gerekiyorsa en aktif kişilere düşük hacimli gönderimi sürdürmenizi öneririz; ara zaten oluştuysa dönüşü normal kampanya gibi değil yeni bir ısıtma süreci gibi ele alırız."
+        },
+        {
+          "question": "Mevcut e-posta altyapımızı değiştirmemiz gerekir mi?",
+          "answer": "Sorunun kaynağı o değilse hayır. Klaviyo, Mailchimp, Brevo, Amazon SES gibi yaygın kampanya ve işlemsel gönderim platformlarıyla çalışırız ve mevcut platformunuz ihtiyacınız olan segmentasyonu veya otomasyonu kaldıramıyorsa bunu açıkça söyleriz. Geçiş maliyetli bir karardır, ancak gerekçesi netse öneririz."
+        },
+        {
+          "question": "E-posta ne zaman ciroya dönüşmeye başlar?",
+          "answer": "Otomasyonlar var olan niyeti yakaladığı için genelde ilk bir–iki ay içinde katkı vermeye başlar; kampanya performansı ise itibar, segmentasyon ve içerik oturdukça bir çeyrek ve üzeri bir sürede kademeli olarak iyileşir. Listeniz küçük veya pasifse ilk aşamanın hızlı ciro değil liste kalitesi ve izin çalışması olacağını baştan söyleriz."
+        },
+        {
+          "question": "E-ticaret sitemize entegre çalışabiliyor musunuz?",
+          "answer": "Evet. ikas altyapısında çalışan bir kuru gıda e-ticaret mağazasının pazarlama tarafını yürütüyoruz, dolayısıyla sipariş, sepet ve müşteri verisini gönderim segmentlerine bağlamak bizim için tanıdık bir iş. Sepet hatırlatma, satış sonrası ve yenileme akışları mağaza verisiyle tetiklenir, elle liste dışa aktarmayla değil."
+        }
+      ],
+      "technologies": [
+        { "name": "Klaviyo", "icon": "klaviyo" },
+        { "name": "Mailchimp", "icon": "mailchimp" },
+        { "name": "Brevo", "icon": "brevo" },
+        { "name": "Amazon SES", "icon": "aws-ses" },
+        { "name": "Google Postmaster Tools", "icon": "google-postmaster" },
+        { "name": "DMARC", "icon": "dmarc" },
+        { "name": "Google Analytics 4", "icon": "ga4" },
+        { "name": "ikas", "icon": "ikas" }
+      ]
+    }
+  },
+  "de": {
+    "name": "E-Mail-Marketing",
+    "shortDescription": "Einwilligungsbasiertes E-Mail-Marketing, das tatsächlich im Posteingang ankommt: authentifizierte Versanddomain, saubere Listen mit dokumentiertem Double-Opt-in, segmentierte Kampagnen und Automatisierung nach DSGVO und den Bulk-Sender-Regeln von Gmail und Yahoo.",
+    "fullDescription": "E-Mail ist der einzige Marketingkanal, der Ihnen wirklich gehört — und genau deshalb fällt er lautlos aus, wenn die technische Grundlage nicht stimmt. Wir richten SPF, DKIM und DMARC mit sauberer Ausrichtung ein, wärmen die Versanddomain kontrolliert auf und setzen Listenhygiene sowie eine Sunset-Regel durch, damit die Beschwerderate deutlich unter den Grenzwerten bleibt, die Gmail und Yahoo für Massenversender anwenden. Darauf bauen wir das Programm: Newsletter-Strategie und Templatesystem, Willkommens- und Warenkorbabbruch-Strecken sowie Marketing-Automation an Shop- oder CRM-Daten. Die Einwilligung ist nicht verhandelbar: DSGVO und ePrivacy, in Deutschland praktisch immer im Double-Opt-in-Verfahren mit Protokollierung. Gekaufte Adressen versenden wir grundsätzlich nicht. Berichtet werden Umsatz und Anfragen, nicht Öffnungsraten.",
+    "features": [
+      "Authentifizierung der Versanddomain — SPF, DKIM & DMARC mit Alignment",
+      "Zustellbarkeitsanalyse, Domain-Warm-up & IP-Strategie",
+      "Listenhygiene, Sunset-Regel & engagementbasierter Versand",
+      "Newsletter-Strategie, Templatesystem & responsives Rendering",
+      "E-Mail-Automation — Willkommen, Warenkorbabbruch, After-Sales, Reaktivierung",
+      "Marketing-Automation an Shop- und CRM-Daten",
+      "Segmentierung, A/B-Tests & Versandzeitsteuerung",
+      "Einwilligung & Compliance — DSGVO, ePrivacy, Double-Opt-in, One-Click-Abmeldung"
+    ],
+    "benefits": [
+      "Kampagnen, die im Posteingang landen statt im Spam-Ordner",
+      "Ein Kanal in Ihrem Eigentum — ohne Algorithmus oder Auktion zwischen Ihnen und Ihren Kunden",
+      "Umsatz aus Automationen, die weiterlaufen, ohne dass jemand auf Senden drückt",
+      "Weniger Listenverlust, weil Kontakte ohne Interesse nicht weiter angeschrieben werden",
+      "Geringeres rechtliches Risiko: dokumentierte Einwilligung, funktionierende Abmeldung, prüfbare Nachweise",
+      "Reporting auf Umsatz und Anfragen statt auf Öffnungsraten, die von Datenschutz-Proxys verzerrt sind"
+    ],
+    "metaTitle": "E-Mail-Marketing & Zustellbarkeit | PakSoft",
+    "metaDescription": "Einwilligungsbasiertes E-Mail-Marketing: SPF, DKIM, DMARC, Double-Opt-in, Newsletter und Automation nach DSGVO. Jetzt Zustellbarkeits-Check anfragen.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Zustellbarkeits- & Authentifizierungsaudit",
+          "description": "Wir prüfen SPF-, DKIM- und DMARC-Einträge samt Alignment zur sichtbaren Absenderdomain, sehen uns die Reputation in den Google Postmaster Tools an und suchen nach Blocklisteneinträgen, angestauten Hard Bounces und inaktiven Kontakten. Sie erhalten eine priorisierte Liste dessen, was Ihre Mails tatsächlich aus dem Posteingang hält."
+        },
+        {
+          "step": 2,
+          "title": "Einwilligung, Compliance & Listenbereinigung",
+          "description": "Wir klären für jeden Kontakt Herkunft und Nachweisbarkeit der Einwilligung nach DSGVO, ePrivacy und §7 UWG und entfernen Rollenadressen, Hard Bounces und nie aktive Empfänger. Fehlt der Nachweis, führen wir eine Re-Permission-Kampagne durch, statt die Adressen stillschweigend weiterzuverwenden."
+        },
+        {
+          "step": 3,
+          "title": "Infrastruktur & Domain-Warm-up",
+          "description": "Der Versand läuft über eine eigene Subdomain; ob eine dedizierte IP sinnvoll ist, entscheiden wir anhand Ihres realen Volumens und nicht aus Prinzip. Der Versand wird schrittweise hochgefahren, beginnend mit den aktivsten Kontakten, und One-Click-Abmeldung sowie Feedback Loops stehen vor der ersten Kampagne."
+        },
+        {
+          "step": 4,
+          "title": "Newsletter- & Templatesystem",
+          "description": "Wir bauen ein wiederverwendbares Templatesystem, das in Outlook, Gmail und Apple Mail, im Dark Mode und mobil korrekt rendert, mit Text-Alternative, barrierearmen Kontrasten und rechtssicherer Anbieterkennzeichnung im Footer. Ihr Team kann damit eigenständig Kampagnen erstellen."
+        },
+        {
+          "step": 5,
+          "title": "Lifecycle- & Automationsstrecken",
+          "description": "Willkommensstrecke, Warenkorb- und Browse-Abbruch, After-Sales- und Nachbestellungsmails sowie Reaktivierungsserien werden an Ihre Shop- oder CRM-Daten angebunden. Diese Strecken tragen erfahrungsgemäß einen überproportionalen Anteil des E-Mail-Umsatzes, weil sie zum Zeitpunkt höchster Kaufabsicht ankommen."
+        },
+        {
+          "step": 6,
+          "title": "Messen, Bereinigen & Nachschärfen",
+          "description": "Wir berichten Umsatz und Conversions je Versand, Engagement je Segment sowie Bounce- und Beschwerdequoten gegen die Grenzwerte der Provider, ausgewertet über GA4 und Plattformdaten. Schwache Segmente werden entfernt statt häufiger angeschrieben, denn die Absenderreputation ist das Gut, das alles Übrige schützt."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Dürfen wir eine bestehende Adressliste anschreiben?",
+          "answer": "Nur wenn Sie für jeden Kontakt Herkunft und Einwilligung nachweisen können — im deutschsprachigen Raum praktisch also ein protokolliertes Double-Opt-in. Fehlt der Nachweis, führen wir eine Re-Permission-Kampagne für den belastbaren Teil durch, statt die gesamte Datei anzuschreiben. Gekaufte oder gemietete Adressen versenden wir grundsätzlich nicht: Sie zerstören die Reputation und begründen ein reales Abmahnrisiko."
+        },
+        {
+          "question": "Warum landen unsere E-Mails im Spam?",
+          "answer": "Meist wirken drei Ursachen zusammen: fehlende oder nicht ausgerichtete Authentifizierung, eine Versanddomain ohne Reputation und eine Liste mit vielen inaktiven Empfängern. Mailbox-Provider gewichten Beschwerden, Bounces, ungelesenes Löschen und Interaktionshistorie weit stärker als einzelne Formulierungen in der Betreffzeile. In den meisten Fällen lösen korrektes SPF-, DKIM- und DMARC-Alignment plus Listenbereinigung das Problem."
+        },
+        {
+          "question": "Ist Double-Opt-in Pflicht?",
+          "answer": "Die DSGVO schreibt kein bestimmtes Verfahren vor, verlangt aber eine nachweisbare Einwilligung, und §7 UWG untersagt Werbe-E-Mails ohne vorherige ausdrückliche Einwilligung. In der deutschen Rechtspraxis ist das protokollierte Double-Opt-in deshalb der etablierte Nachweisweg, und wir richten es für Listen im DACH-Raum standardmäßig ein."
+        },
+        {
+          "question": "Was fordern die Bulk-Sender-Regeln von Gmail und Yahoo?",
+          "answer": "Seit Februar 2024 müssen Versender ab etwa 5.000 Nachrichten täglich an Gmail-Adressen mit SPF und DKIM authentifizieren, eine DMARC-Richtlinie mit Alignment veröffentlichen, eine innerhalb von zwei Tagen wirksame One-Click-Abmeldung anbieten und die Beschwerdequote unter 0,3 % halten — Google empfiehlt unter 0,1 %. Yahoo verlangt Gleichwertiges, Microsoft hat für Outlook.com nachgezogen. Wir richten das als Standard ein, nicht als Zusatzleistung."
+        },
+        {
+          "question": "Wie oft sollten wir versenden?",
+          "answer": "Die Frequenz ergibt sich aus dem, was Sie tatsächlich zu sagen haben, und aus dem Engagement des Segments — nicht aus einem festen Kalender. Für B2B-Versender sind zwei- bis vierwöchentliche Mailings meist tragfähig, im Handel funktioniert wöchentlich, wenn es echte Anlässe gibt. Lieber seltener an ein aktives Segment als häufiger an eine Liste, die still beschwert."
+        },
+        {
+          "question": "Übernehmen Sie das Template-Design?",
+          "answer": "Ja. Wir entwickeln ein wiederverwendbares Templatesystem in Ihrem Corporate Design und testen die Darstellung vor dem Livegang in Outlook, Gmail, Apple Mail, im Dark Mode und mobil. Jedes Template enthält eine Text-Alternative, eine sichtbare Abmeldung und die erforderliche Anbieterkennzeichnung."
+        },
+        {
+          "question": "Brauchen wir eine dedizierte IP-Adresse?",
+          "answer": "In der Regel nicht. Eine dedizierte IP startet ohne jede Reputation und benötigt konstantes, hohes Volumen, um eine aufzubauen; darunter stellt ein gepflegter Shared-Pool eines seriösen Anbieters zuverlässiger zu. Wir empfehlen eine dedizierte IP nur, wenn Volumen und Versandrhythmus einen Warm-up-Plan wirklich rechtfertigen."
+        },
+        {
+          "question": "Wie steht es um Auftragsverarbeitung und Datentransfer?",
+          "answer": "Ihr Versanddienstleister ist Auftragsverarbeiter, daher braucht es einen Vertrag nach Art. 28 DSGVO, ein Verzeichnis der Verarbeitungstätigkeiten und eine saubere Regelung für Drittlandtransfers, wenn der Anbieter außerhalb der EU verarbeitet. Wir benennen die relevanten Punkte und liefern die Konfiguration; die rechtliche Prüfung bleibt bei Ihrer Datenschutzberatung."
+        },
+        {
+          "question": "Sind Öffnungsraten noch aussagekräftig?",
+          "answer": "Nur als grober Trend. Apples Mail Privacy Protection lädt Trackingpixel vorab, sodass ein erheblicher Teil der gemeldeten Öffnungen ohne menschliche Beteiligung entsteht, und andere Anbieter proxen Bilder ebenfalls. Wir optimieren auf Klicks, Conversions und Umsatz je Empfänger und nutzen Öffnungen nur für den Vergleich vergleichbarer Segmente über die Zeit."
+        },
+        {
+          "question": "Was passiert, wenn wir den Versand pausieren?",
+          "answer": "Absenderreputation beruht auf jüngerem Verhalten, eine längere Pause setzt sie faktisch zurück, und die erste Kampagne danach wird häufig stark gefiltert. Wenn eine Pause nötig ist, empfehlen wir einen kleinen, regelmäßigen Versand an die aktivsten Kontakte; ist die Lücke bereits entstanden, behandeln wir den Neustart als Warm-up und nicht als normale Kampagne."
+        },
+        {
+          "question": "Müssen wir unser E-Mail-System wechseln?",
+          "answer": "Nur wenn es die eigentliche Ursache ist. Wir arbeiten mit den gängigen Kampagnen- und Transaktionsanbietern wie Klaviyo, Mailchimp, Brevo oder Amazon SES und sagen Ihnen klar, wenn Ihr System die benötigte Segmentierung oder Automation nicht abbildet. Eine Migration kostet Zeit und Geld, deshalb schlagen wir sie nur bei klarem Nutzen vor."
+        },
+        {
+          "question": "Wann trägt E-Mail messbar zum Umsatz bei?",
+          "answer": "Automationen liefern häufig schon im ersten oder zweiten Monat Beiträge, weil sie vorhandene Kaufabsicht abgreifen. Kampagnen verbessern sich schrittweise über ein Quartal und länger, während Reputation, Segmentierung und Inhalte sich einspielen. Bei kleiner oder inaktiver Liste geht es in der ersten Phase ehrlicherweise um Listenqualität und Einwilligung, nicht um sofortigen Umsatz."
+        }
+      ],
+      "technologies": [
+        { "name": "Klaviyo", "icon": "klaviyo" },
+        { "name": "Mailchimp", "icon": "mailchimp" },
+        { "name": "Brevo", "icon": "brevo" },
+        { "name": "Amazon SES", "icon": "aws-ses" },
+        { "name": "Google Postmaster Tools", "icon": "google-postmaster" },
+        { "name": "DMARC", "icon": "dmarc" },
+        { "name": "Google Analytics 4", "icon": "ga4" },
+        { "name": "ikas", "icon": "ikas" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "التسويق عبر البريد الإلكتروني",
+    "shortDescription": "بريد قائم على الإذن يصل فعلاً إلى صندوق الوارد: نطاق إرسال موثّق، وقوائم نظيفة بموافقة موثقة، وحملات مقسّمة وأتمتة لدورة حياة العميل، وفق متطلبات المرسلين بكميات كبيرة لدى Gmail وYahoo وأنظمة حماية البيانات المحلية.",
+    "fullDescription": "البريد الإلكتروني هو القناة التسويقية الوحيدة التي تملكونها فعلاً، ولهذا تتعطل بصمت حين تكون أسسها التقنية خاطئة. نوثّق نطاق الإرسال عبر SPF وDKIM وDMARC مع محاذاة صحيحة، ونسخّن النطاق تدريجياً، ونطبّق نظافة القوائم وسياسة إيقاف غير المتفاعلين، لتبقى نسبة الشكاوى أدنى بكثير من الحدود التي يفرضها Gmail وYahoo على المرسلين بكميات كبيرة. فوق ذلك نبني البرنامج: استراتيجية النشرة وتصميم القوالب، وأتمتة الترحيب والسلة المتروكة، وأتمتة تسويقية مربوطة ببيانات متجركم أو نظام إدارة العملاء. الموافقة شرط غير قابل للتفاوض، ولا نرسل إلى قوائم مشتراة. وتقاريرنا تربط الإرسال بالطلبات لا بنسبة الفتح.",
+    "features": [
+      "توثيق نطاق الإرسال — SPF وDKIM وDMARC مع محاذاة صحيحة",
+      "تشخيص قابلية التسليم وتسخين النطاق واستراتيجية عناوين IP",
+      "نظافة القوائم وسياسة إيقاف غير المتفاعلين والإرسال وفق التفاعل",
+      "استراتيجية النشرة البريدية وتصميم القوالب ودعم العرض من اليمين إلى اليسار",
+      "أتمتة البريد — الترحيب، السلة المتروكة، ما بعد الشراء، الاستعادة",
+      "أتمتة تسويقية مرتبطة ببيانات المتجر ونظام إدارة العملاء",
+      "التقسيم واختبارات A/B وضبط أوقات الإرسال",
+      "الموافقة والامتثال — إلغاء الاشتراك بنقرة واحدة وأنظمة حماية البيانات المحلية وGDPR"
+    ],
+    "benefits": [
+      "حملات تصل إلى صندوق الوارد بدل مجلد الرسائل غير المرغوبة",
+      "قناة تملكونها بالكامل، بلا خوارزمية ولا مزاد إعلاني بينكم وبين عملائكم",
+      "إيرادات من مسارات أتمتة تعمل دون أن يضغط أحد زر الإرسال",
+      "فقد أقل في القائمة، لأنكم تتوقفون عن مراسلة من فقد اهتمامه",
+      "مخاطر نظامية أقل: موافقة موثقة، وإلغاء اشتراك يعمل فعلاً، وسجلات قابلة للتدقيق",
+      "تقارير مرتبطة بالطلبات والفرص البيعية لا بنسب فتح تشوّهها وسائط الخصوصية"
+    ],
+    "metaTitle": "التسويق عبر البريد الإلكتروني | PakSoft",
+    "metaDescription": "بريد تسويقي بالإذن: توثيق SPF وDKIM وDMARC، وتحسين قابلية التسليم إلى صندوق الوارد، ونشرات وأتمتة بالعربية والإنجليزية. اطلبوا فحص قابلية تسليم مجاني.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تدقيق قابلية التسليم والتوثيق",
+          "description": "نفحص سجلات SPF وDKIM وDMARC ومدى محاذاتها مع نطاق المرسل الظاهر، ونراجع السمعة في Google Postmaster Tools، ونبحث عن إدراج في قوائم الحظر وتراكم الارتداد الدائم وجهات الاتصال الخاملة. تحصلون على قائمة مرتّبة بالأولوية لما يمنع بريدكم فعلياً من الوصول."
+        },
+        {
+          "step": 2,
+          "title": "الموافقة والامتثال وتنظيف القائمة",
+          "description": "نحدد مصدر كل جهة اتصال وما إذا كانت الموافقة خلفها قابلة للإثبات وفق الأنظمة المطبقة في سوقكم، ثم نزيل العناوين الوظيفية والارتدادات الدائمة ومن لم يتفاعل إطلاقاً. وحين يتعذر إثبات الموافقة نطلق حملة إعادة استئذان بدل الاحتفاظ بالعناوين بصمت."
+        },
+        {
+          "step": 3,
+          "title": "البنية التحتية وتسخين النطاق",
+          "description": "نهيّئ منصة الإرسال على نطاق فرعي مخصص، ونقرر بصدق بين عنوان IP مشترك ومخصص بناءً على حجمكم الحقيقي، ونرفع الإرسال تدريجياً بدءاً من الأكثر تفاعلاً. تُضبط ترويسات إلغاء الاشتراك بنقرة واحدة وحلقات تغذية الشكاوى قبل انطلاق أول حملة."
+        },
+        {
+          "step": 4,
+          "title": "نظام النشرة والقوالب",
+          "description": "نبني نظام قوالب قابلاً لإعادة الاستخدام يُعرض بشكل صحيح في Outlook وGmail وApple Mail وفي الوضع الداكن وعلى الجوال، مع نسخة نصية وتباين مقروء. نُعد نسخاً تعمل من اليمين إلى اليسار للحملات العربية، لأن البريد بالعربية ينكسر في Outlook بطرق لا تحدث في صفحات الويب."
+        },
+        {
+          "step": 5,
+          "title": "مسارات دورة حياة العميل والأتمتة",
+          "description": "نبني سلسلة الترحيب، ومسارات السلة المتروكة وتصفح المنتجات دون شراء، ورسائل ما بعد الشراء وإعادة الطلب، وسلاسل استعادة العملاء، مرتبطة ببيانات متجركم أو نظام إدارة العملاء. تحمل هذه المسارات عادة حصة كبيرة من إيراد البريد لأنها تصل في لحظة أعلى نية شرائية."
+        },
+        {
+          "step": 6,
+          "title": "القياس والتشذيب والتحسين",
+          "description": "نرفع الإيراد والتحويلات لكل إرسالية، والتفاعل بحسب الشريحة، ونسب الارتداد والشكاوى مقابل الحدود التي يفرضها مزودو البريد، باستخدام GA4 وبيانات المنصة معاً. نستبعد الشرائح الضعيفة بدل مراسلتها أكثر، لأن سمعة المرسل هي الأصل الذي يحمي كل ما عداه."
+        }
+      ],
+      "faq": [
+        {
+          "question": "هل يمكننا مراسلة قائمة لدينا بالفعل؟",
+          "answer": "فقط إذا كان بإمكانكم بيان مصدر كل جهة اتصال وموافقتها على تلقي رسائل تجارية. ندقق المصدر قبل أي إرسال، وإذا تعذر إثبات الموافقة نطلق حملة إعادة استئذان للجزء القابل للإنقاذ بدل مراسلة الملف كاملاً. أما القوائم المشتراة أو المجمّعة فلا نرسل إليها بأي حال، لأنها تدمر سمعة المرسل وتنشئ مخاطرة نظامية حقيقية."
+        },
+        {
+          "question": "لماذا تصل رسائلنا إلى مجلد الرسائل غير المرغوبة؟",
+          "answer": "غالباً بسبب اجتماع ثلاثة عوامل: توثيق ناقص أو غير محاذٍ، ونطاق إرسال بلا سمعة، وقائمة تضم أشخاصاً لم يتفاعلوا قط. يعطي مزودو البريد وزناً أكبر بكثير للشكاوى والارتداد والحذف دون قراءة وتاريخ التفاعل مقارنة بصياغة سطر الموضوع. ومعظم الحالات التي نراها تُحل بضبط محاذاة SPF وDKIM وDMARC مع تنظيف القائمة."
+        },
+        {
+          "question": "ما الذي تشترطه قواعد Gmail وYahoo للمرسلين بكميات كبيرة؟",
+          "answer": "منذ فبراير 2024، على من يرسل نحو 5000 رسالة يومياً أو أكثر إلى عناوين Gmail أن يوثّق عبر SPF وDKIM، وينشر سياسة DMARC مع محاذاة، ويوفر إلغاء اشتراك بنقرة واحدة يُنفَّذ خلال يومين، وأن يبقي نسبة الشكاوى دون 0.3% مع توصية Google بالبقاء دون 0.1%. وتطبق Yahoo قواعد مماثلة، وأضافت Microsoft متطلبات مقاربة لـ Outlook.com. نضبط ذلك كأساس لا كخدمة إضافية."
+        },
+        {
+          "question": "هل يمكنكم إدارة حملات بالعربية والإنجليزية معاً؟",
+          "answer": "نعم، وهو الوضع الطبيعي في أسواق الخليج حيث تخاطبون جمهوراً عربياً وإدارات تعمل بالإنجليزية. نبني القوالب بنسختين، ونقسّم القائمة حسب لغة التفضيل بدل إرسال رسالة مزدوجة اللغة تُقرأ بصعوبة، ونختبر عرض النسخة العربية من اليمين إلى اليسار قبل الإطلاق لأن Outlook تحديداً يكسر محاذاة الجداول."
+        },
+        {
+          "question": "ما وتيرة الإرسال المناسبة؟",
+          "answer": "تنبع الوتيرة مما لديكم فعلاً لتقولوه ومن مستوى تفاعل الشريحة، لا من تقويم ثابت. لمعظم مرسلي قطاع الأعمال تصلح رسالة كل أسبوعين إلى أربعة أسابيع، بينما تحتمل التجارة الإلكترونية إرسالاً أسبوعياً إذا وُجد جديد حقيقي. نفضّل إرسالاً أقل إلى شريحة متفاعلة على إرسال أكثر إلى قائمة تشتكي بصمت."
+        },
+        {
+          "question": "ما متطلبات الموافقة وحماية البيانات في منطقتنا؟",
+          "answer": "تشترط أنظمة حماية البيانات في دول الخليج، مثل نظام حماية البيانات الشخصية السعودي وقانون حماية البيانات الإماراتي، أساساً نظامياً واضحاً للمعالجة وموافقة يمكن إثباتها وحق انسحاب فعّال. وإذا كانت لديكم جهات اتصال في الاتحاد الأوروبي أو تركيا تنطبق إضافةً إلى ذلك GDPR وسجل İYS التركي. نوثّق الموافقات ونبقي إلغاء الاشتراك عاملاً، وتبقى المراجعة القانونية لدى مستشاركم."
+        },
+        {
+          "question": "هل تصممون القوالب؟",
+          "answer": "نعم. نبني نظام قوالب بهوية علامتكم قابلاً لإعادة الاستخدام، ونختبر عرضه قبل الإطلاق في Outlook وGmail وApple Mail وفي الوضع الداكن وعلى الجوال. يُسلَّم كل قالب مع نسخة نصية ورابط إلغاء اشتراك ظاهر، ويستطيع فريقكم إنتاج الحملات منه دون الحاجة إلينا."
+        },
+        {
+          "question": "هل نحتاج عنوان IP مخصصاً؟",
+          "answer": "غالباً لا. يبدأ العنوان المخصص بلا سمعة إطلاقاً ويحتاج حجماً كبيراً ومنتظماً لبنائها، ودون ذلك يكون المجمّع المشترك لدى مزود موثوق أفضل في التسليم. نوصي بعنوان مخصص فقط حين يبرر حجمكم وانتظام إرسالكم خطة تسخين حقيقية."
+        },
+        {
+          "question": "هل ما زالت نسبة الفتح مقياساً مفيداً؟",
+          "answer": "كمؤشر اتجاه تقريبي فقط. تحمّل خاصية Mail Privacy Protection من Apple بكسل التتبع مسبقاً، فجزء معتبر من عمليات الفتح المسجلة لم يقم بها إنسان، ومزودون آخرون يمررون الصور عبر وسيط. نحسّن على أساس النقرات والتحويلات والإيراد لكل مستلم، ونستخدم الفتح لمقارنة شرائح متماثلة عبر الزمن فقط."
+        },
+        {
+          "question": "ماذا يحدث إذا توقفنا عن الإرسال فترة؟",
+          "answer": "تُبنى سمعة المرسل على السلوك الحديث، لذا فإن انقطاعاً طويلاً يعيدها عملياً إلى الصفر، وغالباً ما تُفلتر أول حملة بعد العودة بشدة. إذا كان التوقف ضرورياً ننصح بإبقاء إرسال محدود للأكثر تفاعلاً، وإن حصل الانقطاع فعلاً نتعامل مع العودة كخطة تسخين جديدة لا كحملة اعتيادية."
+        },
+        {
+          "question": "هل علينا تغيير منصة البريد الحالية؟",
+          "answer": "ليس إلا إذا كانت هي المشكلة فعلاً. نعمل مع منصات الحملات والرسائل المعاملاتية الشائعة مثل Klaviyo وMailchimp وBrevo وAmazon SES، وسنقول لكم بوضوح إذا كانت منصتكم الحالية عاجزة عن التقسيم أو الأتمتة التي تحتاجونها. الانتقال قرار له تكلفة، فلا نقترحه إلا عند وجود مبرر واضح."
+        },
+        {
+          "question": "متى يبدأ البريد في تحقيق إيراد؟",
+          "answer": "تبدأ مسارات الأتمتة بالمساهمة عادة خلال الشهر الأول أو الثاني لأنها تلتقط نية شرائية قائمة، بينما يتحسن أداء الحملات تدريجياً خلال ربع سنة أو أكثر مع استقرار السمعة والتقسيم والمحتوى. وإذا كانت قائمتكم صغيرة أو خاملة فالمرحلة الأولى ستكون عن جودة القائمة والموافقة لا عن إيراد فوري."
+        }
+      ],
+      "technologies": [
+        { "name": "Klaviyo", "icon": "klaviyo" },
+        { "name": "Mailchimp", "icon": "mailchimp" },
+        { "name": "Brevo", "icon": "brevo" },
+        { "name": "Amazon SES", "icon": "aws-ses" },
+        { "name": "Google Postmaster Tools", "icon": "google-postmaster" },
+        { "name": "DMARC", "icon": "dmarc" },
+        { "name": "Google Analytics 4", "icon": "ga4" },
+        { "name": "ikas", "icon": "ikas" }
+      ]
+    }
+  }
+}

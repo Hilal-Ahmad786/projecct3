@@ -1,0 +1,459 @@
+{
+  "slug": "cro",
+  "en": {
+    "name": "Conversion Rate Optimization (CRO)",
+    "shortDescription": "Conversion work that starts with research rather than redesign: analytics, session recordings and user feedback decide what to test, and we report the tests that lose as plainly as the ones that win.",
+    "fullDescription": "CRO is a research discipline that happens to produce design changes. We begin by making sure the numbers are trustworthy — a GA4 and Google Tag Manager audit, consent handling, events that actually fire — then look for where people hesitate, using funnel drop-off, session recordings, on-site questions and support tickets. That evidence becomes a prioritised list of hypotheses, each with a defined success metric and guardrails such as revenue per session, refunds and support load. Where traffic supports it we run properly powered A/B tests through our A/B Testing service; where it does not, we say so and improve sequentially instead. Deeper work is split across Landing Page Optimization, Funnel Optimization and UX Analytics & User Behavior Tracking, all feeding the same backlog.",
+    "features": [
+      "Measurement Audit: GA4, Google Tag Manager, Consent and Event Integrity",
+      "Conversion Research From Funnel Data, Session Recordings and User Feedback",
+      "Hypothesis Backlog Prioritised by Evidence, Reach and Build Effort",
+      "A/B and Split Tests With Sample Size and Duration Calculated in Advance",
+      "Landing Page Rebuilds Aligned to Ad Message and Search Intent",
+      "Checkout and Funnel Analysis From First Click to Confirmed Order",
+      "Guardrail Metrics: Revenue per Session, Refund Rate, Support Volume",
+      "First-Party Click and Scroll Tracking Where Third-Party Scripts Are Blocked"
+    ],
+    "benefits": [
+      "More revenue from the traffic and ad budget you are already paying for",
+      "Decisions settled by evidence instead of the loudest opinion in the room",
+      "Tracking you can trust before anyone acts on a number",
+      "Losing tests documented and explained, so the same idea is not retried blind",
+      "Honest guidance for low-traffic sites instead of tests that can never conclude",
+      "A prioritised research backlog that outlives any single engagement"
+    ],
+    "metaTitle": "CRO — Conversion Rate Optimization | PakSoft",
+    "metaDescription": "Research-led CRO: analytics audits, session recordings and hypothesis-driven A/B tests with proper sample sizes and honest reporting. Book a conversion review.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Measurement Audit",
+          "description": "Before any test we verify that the data can carry the decision: GA4 configuration, Google Tag Manager containers, consent mode, duplicate or missing events, and whether reported conversions reconcile with your back office. Optimising against broken tracking is the most common and most expensive mistake in this field, so we fix it first."
+        },
+        {
+          "step": 2,
+          "title": "Quantitative and Qualitative Research",
+          "description": "We map where people leave — by step, device, traffic source and landing page — then watch what actually happens there through session recordings, click and scroll maps, and on-site questions asked at the moment of hesitation. Support tickets and sales objections go into the same pool, because customers usually state the problem in their own words long before analytics shows it."
+        },
+        {
+          "step": 3,
+          "title": "Hypothesis and Prioritisation",
+          "description": "Each finding becomes a written hypothesis: the observed problem, the proposed change, the expected effect and the metric that will judge it. We rank them by strength of evidence, how much traffic they touch and how much work they take, so the cheap high-confidence fixes ship immediately and only genuinely uncertain ideas go to a test."
+        },
+        {
+          "step": 4,
+          "title": "Build, QA and Launch the Test",
+          "description": "Variants are built to match your existing design system and checked across browsers, screen sizes and the slow mobile connections much of your traffic actually uses. We validate that the test does not cause visible flicker, does not break tracking and does not slow the page, then define the sample size and minimum run time before it goes live."
+        },
+        {
+          "step": 5,
+          "title": "Run to a Decision, Not to a Deadline",
+          "description": "Tests run through full business cycles — typically whole weeks, so weekday and weekend behaviour are both represented — and we do not stop early because a variant looks ahead on day three. Guardrail metrics are monitored throughout, and a test that harms revenue per session or refund rate is stopped even if the headline conversion rate improved."
+        },
+        {
+          "step": 6,
+          "title": "Decide, Document and Iterate",
+          "description": "Every test ends with a written result: winner, loser or inconclusive, the numbers behind it, and what we now believe about your customers. Losers stay in the log with a reason so nobody rebuilds the same idea next year, and each result reshapes the priority of everything still in the backlog."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How much traffic do we need before A/B testing makes sense?",
+          "answer": "It depends on your current conversion rate and the size of the effect you want to detect, not on a magic session count. As a rough guide, a page with a low single-digit conversion rate needs hundreds of conversions per variant to detect a realistic improvement, which many sites simply cannot supply in a reasonable window. If your numbers do not support a powered test, we will tell you and use qualitative research and sequential improvements instead — that is the honest answer, not a sales one."
+        },
+        {
+          "question": "How long does a single test run?",
+          "answer": "Long enough to reach the pre-calculated sample size and to cover complete business cycles, which in practice usually means two to four full weeks. Stopping the moment a result looks significant is one of the fastest ways to fool yourself, because early data swings wildly. We set the duration before launch and stick to it unless a guardrail metric is being harmed."
+        },
+        {
+          "question": "What happens if a test loses?",
+          "answer": "It gets documented and we keep the original. A substantial share of tests lose or come back inconclusive across the industry, and any agency showing you an unbroken run of winners is selecting what it reports. A losing test still buys you something real: it removes an expensive assumption and usually sharpens the next hypothesis."
+        },
+        {
+          "question": "Will you redesign our website?",
+          "answer": "Only where the evidence points there. Most conversion gains come from clarity, sequence and friction — what a page says first, what is asked for, what is missing at the moment of doubt — rather than from a new visual language. Where a full rebuild is genuinely the right answer we say so, but we would rather validate the change in pieces than gamble your revenue on one redesign launch."
+        },
+        {
+          "question": "How do you measure results honestly?",
+          "answer": "We agree the primary metric before the test, ideally revenue or qualified leads rather than a proxy like clicks, and we set guardrails so an improvement in one number cannot hide damage elsewhere. Results are reported with the sample size, the run time and the uncertainty attached. We also reconcile against your back office, because analytics and actual orders rarely match exactly once consent banners and ad blockers are in play."
+        },
+        {
+          "question": "How does CRO relate to our Google and Meta ad spend?",
+          "answer": "Directly — conversion rate is the multiplier on every click you buy. Improving the page a campaign lands on lowers cost per acquisition without touching bids, and better on-site conversion also feeds cleaner signals back to the ad platforms' optimisation. For most advertisers, fixing the destination is cheaper than raising the budget."
+        },
+        {
+          "question": "Which tools do we need to buy?",
+          "answer": "Usually less than expected. GA4, Google Tag Manager and Google Search Console cost nothing, and capable session-recording and heatmap tools have free tiers that carry most sites. A paid testing platform only becomes necessary once your volume genuinely supports frequent testing; where third-party scripts are restricted, we can capture click and scroll behaviour first-party instead."
+        },
+        {
+          "question": "Will testing slow our site or cause flicker?",
+          "answer": "It can if implemented carelessly, and that alone has ruined many tests by degrading the experience for the variant group. We prefer server-side or edge-rendered variants where the stack allows, keep the client-side payload minimal, and check Core Web Vitals for both variants before launch. If a test cannot be run without hurting performance, it is not worth running."
+        },
+        {
+          "question": "How soon will we see results?",
+          "answer": "The measurement audit and research phase typically produce actionable findings within the first few weeks, and some of those are straightforward fixes that ship without a test. Testing itself compounds slowly: value comes from a steady sequence of decisions over months, not from one dramatic win. Anyone promising a specific percentage uplift before seeing your data is guessing."
+        },
+        {
+          "question": "What do you need from us?",
+          "answer": "Analytics and tag manager access, a view of orders or leads so results can be reconciled, and someone on your side who can answer questions about customers and approve changes. Access to support conversations and sales calls is enormously valuable and usually overlooked. Beyond that, the main requirement is a willingness to let evidence overrule internal preference."
+        }
+      ],
+      "technologies": [
+        { "name": "Google Analytics 4", "icon": "ga4" },
+        { "name": "Google Tag Manager", "icon": "googletagmanager" },
+        { "name": "Microsoft Clarity", "icon": "microsoft-clarity" },
+        { "name": "Hotjar", "icon": "hotjar" },
+        { "name": "GrowthBook", "icon": "growthbook" },
+        { "name": "Looker Studio", "icon": "looker-studio" },
+        { "name": "PageSpeed Insights", "icon": "pagespeed" },
+        { "name": "Google Search Console", "icon": "google-search-console" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Dönüşüm Oranı Optimizasyonu (CRO)",
+    "shortDescription": "Tasarımdan değil araştırmadan başlayan dönüşüm çalışması: analitik veri, oturum kayıtları ve kullanıcı geri bildirimi neyin test edileceğini belirler; kazanan testler kadar kaybeden testleri de açıkça raporlarız.",
+    "fullDescription": "CRO, sonucunda tasarım değişikliği üreten bir araştırma disiplinidir. İşe rakamların güvenilir olduğundan emin olarak başlarız: GA4 ve Google Tag Manager denetimi, çerez onayı kurgusu, gerçekten tetiklenen olaylar. Ardından insanların nerede tereddüt ettiğine bakarız; huni terk oranları, oturum kayıtları, site içi kısa anketler ve destek yazışmaları. Bu kanıtlar, her biri tanımlı bir başarı metriği ve oturum başına ciro, iade oranı, destek yükü gibi koruyucu metriklerle yazılmış öncelikli bir hipotez listesine dönüşür. Trafik yeterliyse A/B Testi hizmetimizle istatistiksel gücü hesaplanmış testler kurarız; yeterli değilse bunu açıkça söyler, nitel araştırma ve sıralı iyileştirmelerle ilerleriz. Derinlemesine çalışma Landing Page Optimizasyonu, Huni Optimizasyonu ve UX Analitiği & Kullanıcı Davranışı Takibi sayfalarına ayrılır; hepsi aynı hipotez listesini besler.",
+    "features": [
+      "Ölçüm denetimi: GA4, Google Tag Manager, çerez onayı ve olay doğruluğu",
+      "Huni verisi, oturum kayıtları ve kullanıcı geri bildiriminden dönüşüm araştırması",
+      "Kanıt gücü, etki alanı ve iş yüküne göre önceliklendirilmiş hipotez listesi",
+      "Örneklem büyüklüğü ve süresi önceden hesaplanan A/B ve split testler",
+      "Reklam mesajı ve arama niyetiyle hizalanmış landing page yeniden kurgusu",
+      "İlk tıklamadan onaylı siparişe kadar sepet ve ödeme adımı analizi",
+      "Koruyucu metrikler: oturum başına ciro, iade oranı, destek talebi hacmi",
+      "Üçüncü taraf scriptler engellendiğinde birinci taraf tıklama ve kaydırma takibi"
+    ],
+    "benefits": [
+      "Zaten ödediğiniz trafik ve reklam bütçesinden daha fazla ciro",
+      "Toplantıdaki en yüksek sesin değil, kanıtın karar verdiği bir süreç",
+      "Rakamlara göre aksiyon almadan önce güvenilir hale getirilmiş ölçüm altyapısı",
+      "Kaybeden testlerin gerekçesiyle kayda geçmesi, aynı fikrin tekrar denenmemesi",
+      "Düşük trafikte sonuçlanamayacak test yerine dürüst yönlendirme",
+      "Tek bir proje döneminden uzun ömürlü, önceliklendirilmiş araştırma birikimi"
+    ],
+    "metaTitle": "CRO — Dönüşüm Oranı Optimizasyonu | PakSoft",
+    "metaDescription": "Araştırmaya dayalı CRO: GA4 denetimi, oturum kayıtları, hipotez temelli A/B testleri ve dürüst raporlama. Sitenizin dönüşüm incelemesi için hemen görüşelim.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Ölçüm Denetimi",
+          "description": "Herhangi bir test öncesinde verinin bu kararı taşıyabildiğini doğrularız: GA4 kurulumu, Google Tag Manager konteynerleri, çerez onayı (consent) davranışı, mükerrer veya hiç tetiklenmeyen olaylar ve raporlanan dönüşümlerin panelinizdeki gerçek siparişlerle tutarlılığı. Bozuk ölçümün üzerine optimizasyon yapmak bu işin en yaygın ve en pahalı hatasıdır; bu yüzden önce onu düzeltiriz."
+        },
+        {
+          "step": 2,
+          "title": "Nicel ve Nitel Araştırma",
+          "description": "İnsanların nerede çıktığını adım, cihaz, trafik kaynağı ve giriş sayfası kırılımında haritalarız; sonra orada gerçekte ne olduğunu oturum kayıtları, tıklama ve kaydırma haritaları ve tereddüt anında sorulan kısa site içi sorularla izleriz. WhatsApp ve Instagram üzerinden gelen destek mesajları da bu havuza girer, çünkü müşteri sorunu kendi cümleleriyle analitikte görünmesinden çok önce söyler."
+        },
+        {
+          "step": 3,
+          "title": "Hipotez ve Önceliklendirme",
+          "description": "Her bulgu yazılı bir hipoteze dönüşür: gözlenen sorun, önerilen değişiklik, beklenen etki ve bunu yargılayacak metrik. Kanıt gücü, etkilenen trafik hacmi ve geliştirme eforuna göre sıralarız; ucuz ve yüksek güvenli düzeltmeler test edilmeden hemen yayına alınır, yalnızca gerçekten belirsiz fikirler teste gider."
+        },
+        {
+          "step": 4,
+          "title": "Varyant Geliştirme, Kontrol ve Yayın",
+          "description": "Varyantlar mevcut tasarım sisteminize uygun kurulur ve tarayıcılar, ekran boyutları ve Türkiye trafiğinin büyük bölümünü oluşturan mobil ve yavaş bağlantı koşullarında test edilir. Görsel titreme (flicker) oluşturmadığını, ölçümü bozmadığını ve sayfayı yavaşlatmadığını doğrular, örneklem büyüklüğü ile asgari süreyi yayın öncesinde belirleriz."
+        },
+        {
+          "step": 5,
+          "title": "Takvime Değil Karara Kadar Çalıştırma",
+          "description": "Testler tam iş döngülerini kapsar; pratikte tam haftalar hâlinde çalışır ki hafta içi ve hafta sonu davranışı birlikte temsil edilsin. Üçüncü günde varyant önde görünüyor diye erken durdurmayız. Koruyucu metrikler süre boyunca izlenir; dönüşüm oranı yükselse bile oturum başına ciroyu veya iade oranını bozan bir test durdurulur."
+        },
+        {
+          "step": 6,
+          "title": "Karar, Belgeleme ve Yineleme",
+          "description": "Her test yazılı bir sonuçla biter: kazandı, kaybetti veya sonuçsuz kaldı; arkasındaki sayılarla birlikte ve müşterileriniz hakkında artık ne bildiğimizi anlatarak. Kaybeden testler gerekçesiyle kayda geçer ki aynı fikir bir yıl sonra yeniden inşa edilmesin; her sonuç listedeki diğer hipotezlerin önceliğini yeniden şekillendirir."
+        }
+      ],
+      "faq": [
+        {
+          "question": "A/B testi için ne kadar trafiğe ihtiyacımız var?",
+          "answer": "Sihirli bir ziyaret sayısı yok; belirleyici olan mevcut dönüşüm oranınız ve tespit etmek istediğiniz etkinin büyüklüğü. Kabaca söylemek gerekirse, dönüşüm oranı yüzde birkaç seviyesindeki bir sayfada gerçekçi bir iyileşmeyi görebilmek için varyant başına yüzlerce dönüşüm gerekir ve pek çok Türkiye sitesi bunu makul bir sürede üretemez. Rakamlarınız güçlü bir testi desteklemiyorsa bunu açıkça söyler, nitel araştırma ve sıralı iyileştirmeyle ilerleriz."
+        },
+        {
+          "question": "Aylık trafiğimiz düşük, o zaman CRO bize göre değil mi?",
+          "answer": "Tam tersi; sadece yöntem değişir. Düşük trafikte doğru yaklaşım A/B testi kurmak değil, oturum kayıtlarını izlemek, sepet terklerinin nedenini müşteriye doğrudan sormak, ödeme adımındaki sürtünmeyi ve mobil performansı düzeltmek ve kargo, iade, havale/EFT gibi belirsizlik yaratan noktaları netleştirmektir. Bunlar test edilemez değil, sadece istatistik yerine gözlem ve öncesi/sonrası takiple değerlendirilir."
+        },
+        {
+          "question": "Bir test ne kadar sürer?",
+          "answer": "Önceden hesaplanan örneklem büyüklüğüne ulaşacak ve tam iş döngülerini kapsayacak kadar; pratikte genellikle iki ila dört tam hafta. Sonuç anlamlı görünür görünmez testi durdurmak, kendinizi kandırmanın en hızlı yoludur, çünkü erken veriler çok oynaktır. Süreyi yayın öncesinde belirler ve koruyucu bir metrik zarar görmedikçe ona sadık kalırız."
+        },
+        {
+          "question": "Test kaybederse ne olur?",
+          "answer": "Kaydedilir ve mevcut sürüm yerinde kalır. Sektör genelinde testlerin ciddi bir bölümü kaybeder veya sonuçsuz kalır; size kesintisiz bir kazanan serisi gösteren ajans, neyi raporlayacağını seçiyordur. Kaybeden test de gerçek bir kazanım sağlar: pahalı bir varsayımı ortadan kaldırır ve genellikle bir sonraki hipotezi keskinleştirir."
+        },
+        {
+          "question": "Sitemizin tasarımını baştan değiştirecek misiniz?",
+          "answer": "Yalnızca kanıt oraya işaret ediyorsa. Dönüşüm kazanımlarının çoğu yeni bir görsel dilden değil; netlik, sıralama ve sürtünmeden gelir: sayfanın ilk söylediği şey, formda istenen alan sayısı, tereddüt anında eksik olan bilgi. Tam yenileme gerçekten doğru cevapsa bunu söyleriz, ancak değişikliği parça parça doğrulamayı, ciroyu tek bir lansmana bağlamaya tercih ederiz."
+        },
+        {
+          "question": "Sonuçları nasıl ölçüyorsunuz, KVKK ve çerez onayı ölçümü bozmuyor mu?",
+          "answer": "Birincil metriği test öncesinde birlikte belirleriz; mümkünse tıklama gibi bir vekil metrik yerine ciro veya nitelikli talep. Çerez onayını reddeden ziyaretçiler ve reklam engelleyiciler nedeniyle GA4 ile panelinizdeki gerçek sipariş sayısı hiçbir zaman birebir örtüşmez; bu yüzden sonuçları e-ticaret paneliniz veya ERP verinizle karşılaştırarak sapmayı ölçer, kararı iki kaynağı birlikte okuyarak veririz. Ölçüm kurgusunu aydınlatma metniniz ve onay yönetiminizle uyumlu olacak şekilde yapılandırırız."
+        },
+        {
+          "question": "CRO, Google ve Meta reklam bütçemizle nasıl ilişkili?",
+          "answer": "Doğrudan ilişkili; dönüşüm oranı satın aldığınız her tıklamanın çarpanıdır. Kampanyanın indiği sayfayı iyileştirmek, tekliflere dokunmadan edinme maliyetini düşürür ve site içi dönüşümün artması reklam platformlarının optimizasyonuna daha temiz sinyal gönderir. Çoğu reklamveren için varış noktasını düzeltmek, bütçeyi artırmaktan ucuzdur."
+        },
+        {
+          "question": "Hangi araçları satın almamız gerekiyor?",
+          "answer": "Beklediğinizden azını. GA4, Google Tag Manager ve Search Console ücretsizdir; oturum kaydı ve ısı haritası araçlarının ücretsiz katmanları çoğu KOBİ sitesinin hacmini rahatlıkla taşır. Ücretli bir test platformu ancak hacminiz sık testi gerçekten desteklediğinde gerekir; üçüncü taraf scriptlerin engellendiği durumlarda tıklama ve kaydırma verisini kendi altyapınızda birinci taraf olarak toplayabiliriz."
+        },
+        {
+          "question": "Test kurgusu siteyi yavaşlatır mı?",
+          "answer": "Özensiz kurulursa evet ve bu tek başına pek çok testi geçersiz kılar, çünkü varyant grubunun deneyimi bozulur. Altyapı izin verdiğinde sunucu tarafı veya edge tarafında render edilen varyantları tercih eder, istemci tarafındaki yükü asgaride tutar ve yayın öncesi her iki varyantın Core Web Vitals değerlerini kontrol ederiz. Performansı bozmadan çalıştırılamayan bir test çalıştırılmaya değmez."
+        },
+        {
+          "question": "Ne kadar sürede sonuç görürüz?",
+          "answer": "Ölçüm denetimi ve araştırma aşaması genellikle ilk birkaç hafta içinde uygulanabilir bulgular üretir; bunların bir kısmı test gerektirmeden yayına alınabilecek net düzeltmelerdir. Testin kendisi ise yavaş birikir: değer, tek bir çarpıcı zaferden değil aylara yayılan istikrarlı kararlar dizisinden gelir. Verinizi görmeden belirli bir yüzde artış vaat eden herkes tahmin yürütüyordur."
+        },
+        {
+          "question": "Bizden ne bekliyorsunuz?",
+          "answer": "GA4 ve Tag Manager erişimi, sonuçları karşılaştırabilmek için sipariş veya talep verisine görünürlük ve müşteriyi tanıyan, değişiklikleri onaylayabilen bir muhatap. Destek yazışmalarına ve satış görüşmelerine erişim çoğu zaman göz ardı edilir ama son derece değerlidir. Bunun ötesinde asıl gereken, kanıtın kurum içi tercihe üstün gelmesine izin verecek bir tutumdur."
+        }
+      ],
+      "technologies": [
+        { "name": "Google Analytics 4", "icon": "ga4" },
+        { "name": "Google Tag Manager", "icon": "googletagmanager" },
+        { "name": "Microsoft Clarity", "icon": "microsoft-clarity" },
+        { "name": "Hotjar", "icon": "hotjar" },
+        { "name": "GrowthBook", "icon": "growthbook" },
+        { "name": "Looker Studio", "icon": "looker-studio" },
+        { "name": "PageSpeed Insights", "icon": "pagespeed" },
+        { "name": "Google Search Console", "icon": "google-search-console" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Conversion-Rate-Optimierung (CRO)",
+    "shortDescription": "Conversion-Arbeit, die mit Recherche beginnt statt mit einem Redesign: Analytics, Session Recordings und Nutzerfeedback bestimmen, was getestet wird — und verlorene Tests berichten wir ebenso klar wie gewonnene.",
+    "fullDescription": "CRO ist eine Forschungsdisziplin, an deren Ende Designänderungen stehen. Wir beginnen damit, die Zahlen belastbar zu machen: Audit von GA4 und Google Tag Manager, Consent-Verarbeitung, tatsächlich auslösende Events, Abgleich mit Ihrem Backoffice. Danach suchen wir die Stellen, an denen Nutzer zögern — über Funnel-Abbrüche, Session Recordings, kurze Umfragen im Moment des Zweifels und Support-Anfragen. Daraus entsteht eine priorisierte Hypothesenliste, jede mit definierter Erfolgsmetrik und Leitplanken wie Umsatz pro Sitzung, Retourenquote und Supportaufkommen. Wo der Traffic es trägt, laufen statistisch ausreichend große A/B-Tests über unseren Bereich A/B-Testing; wo nicht, sagen wir das und verbessern sequenziell. Vertiefende Arbeit liegt in Landingpage-Optimierung, Funnel-Optimierung sowie UX-Analytics & Nutzerverhalten — alle speisen dieselbe Liste.",
+    "features": [
+      "Messaudit: GA4, Google Tag Manager, Consent-Handling und Event-Integrität",
+      "Conversion-Recherche aus Funnel-Daten, Session Recordings und Nutzerfeedback",
+      "Hypothesen-Backlog, priorisiert nach Evidenz, Reichweite und Aufwand",
+      "A/B- und Split-Tests mit vorab berechneter Stichprobengröße und Laufzeit",
+      "Landingpages ausgerichtet auf Anzeigenversprechen und Suchintention",
+      "Analyse von Funnel und Checkout vom ersten Klick bis zur bestätigten Bestellung",
+      "Leitplanken-Metriken: Umsatz pro Sitzung, Retourenquote, Supportaufkommen",
+      "First-Party-Erfassung von Klick- und Scrollverhalten ohne Drittanbieter-Skripte"
+    ],
+    "benefits": [
+      "Mehr Umsatz aus dem Traffic und Mediabudget, das Sie ohnehin bezahlen",
+      "Entscheidungen auf Basis von Evidenz statt der lautesten Meinung im Meeting",
+      "Belastbare Messung, bevor jemand auf eine Zahl hin handelt",
+      "Verlorene Tests dokumentiert samt Begründung — keine Wiederholung derselben Idee",
+      "Ehrliche Einordnung bei geringem Traffic statt Tests, die nie signifikant werden",
+      "Ein priorisierter Erkenntnisbestand, der über das einzelne Projekt hinaus trägt"
+    ],
+    "metaTitle": "CRO — Conversion-Rate-Optimierung | PakSoft",
+    "metaDescription": "Datengetriebene CRO: Messaudit, Nutzerforschung und hypothesenbasierte A/B-Tests mit sauberer Statistik und DSGVO-konformem Tracking. Jetzt Analyse anfragen.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Messaudit",
+          "description": "Vor jedem Test prüfen wir, ob die Daten die Entscheidung überhaupt tragen: GA4-Konfiguration, Container im Google Tag Manager, Consent Mode, doppelte oder fehlende Events und die Frage, ob gemeldete Conversions zu Ihren tatsächlichen Aufträgen passen. Optimierung auf defektem Tracking ist der häufigste und teuerste Fehler in diesem Feld, deshalb steht die Korrektur am Anfang."
+        },
+        {
+          "step": 2,
+          "title": "Quantitative und qualitative Recherche",
+          "description": "Wir kartieren die Absprünge nach Schritt, Endgerät, Kanal und Einstiegsseite und sehen uns anschließend an, was dort real passiert: Session Recordings, Klick- und Scrollverhalten sowie kurze Fragen im Moment des Zögerns. Support-Tickets und Vertriebseinwände fließen mit ein, weil Kunden das Problem meist in eigenen Worten benennen, lange bevor es in einer Kennzahl sichtbar wird."
+        },
+        {
+          "step": 3,
+          "title": "Hypothese und Priorisierung",
+          "description": "Jede Erkenntnis wird zu einer schriftlichen Hypothese: beobachtetes Problem, vorgeschlagene Änderung, erwartete Wirkung und die Metrik, die darüber entscheidet. Wir priorisieren nach Stärke der Evidenz, betroffener Reichweite und Umsetzungsaufwand, damit günstige und gut belegte Korrekturen sofort live gehen und nur wirklich unsichere Ideen in einen Test wandern."
+        },
+        {
+          "step": 4,
+          "title": "Umsetzung, QA und Start",
+          "description": "Varianten werden im Rahmen Ihres bestehenden Designsystems gebaut und über Browser, Bildschirmgrößen und langsame Mobilverbindungen geprüft. Wir stellen sicher, dass kein sichtbares Flackern entsteht, das Tracking intakt bleibt und die Ladezeit nicht leidet, und legen Stichprobengröße sowie Mindestlaufzeit vor dem Start verbindlich fest."
+        },
+        {
+          "step": 5,
+          "title": "Bis zur Entscheidung laufen lassen, nicht bis zum Termin",
+          "description": "Tests laufen über vollständige Geschäftszyklen, in der Praxis über ganze Wochen, damit Werktags- und Wochenendverhalten gleichermaßen enthalten sind. Wir stoppen nicht, weil eine Variante am dritten Tag vorn liegt. Leitplanken werden durchgehend überwacht; ein Test, der Umsatz pro Sitzung oder Retourenquote verschlechtert, wird beendet, auch wenn die Conversion Rate steigt."
+        },
+        {
+          "step": 6,
+          "title": "Entscheiden, dokumentieren, iterieren",
+          "description": "Jeder Test endet mit einem schriftlichen Ergebnis: Gewinner, Verlierer oder nicht eindeutig, mit den zugrunde liegenden Zahlen und dem, was wir daraus über Ihre Kunden gelernt haben. Verlierer bleiben mit Begründung im Protokoll, damit dieselbe Idee nicht in zwei Jahren erneut gebaut wird, und jedes Ergebnis verschiebt die Priorität der offenen Hypothesen."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie viel Traffic brauchen wir für A/B-Tests?",
+          "answer": "Entscheidend ist nicht eine magische Besucherzahl, sondern Ihre aktuelle Conversion Rate und die Effektgröße, die Sie erkennen wollen. Als grobe Orientierung braucht eine Seite mit niedriger einstelliger Conversion Rate mehrere hundert Conversions je Variante, um eine realistische Verbesserung überhaupt nachweisen zu können. Reicht Ihr Volumen dafür nicht, sagen wir das offen und arbeiten mit qualitativer Forschung und sequenziellen Verbesserungen weiter."
+        },
+        {
+          "question": "Wie lange läuft ein Test?",
+          "answer": "So lange, bis die vorab berechnete Stichprobe erreicht ist und vollständige Geschäftszyklen abgedeckt sind — in der Praxis meist zwei bis vier volle Wochen. Ein Test, der beim ersten signifikant aussehenden Zwischenstand gestoppt wird, führt systematisch in die Irre, weil frühe Daten stark schwanken. Die Laufzeit steht vor dem Start fest und wird nur bei Schaden an einer Leitplanke verkürzt."
+        },
+        {
+          "question": "Was passiert, wenn ein Test verliert?",
+          "answer": "Er wird dokumentiert, und die Ausgangsvariante bleibt bestehen. Branchenweit verliert ein erheblicher Teil aller Tests oder bleibt ohne klares Ergebnis; wer Ihnen eine lückenlose Serie von Gewinnern zeigt, wählt aus, was er berichtet. Auch ein verlorener Test liefert Ihnen etwas Reales: Er räumt eine teure Annahme aus und schärft in der Regel die nächste Hypothese."
+        },
+        {
+          "question": "Ist das Tracking DSGVO-konform?",
+          "answer": "Wir arbeiten mit Ihrer bestehenden Consent-Lösung und messen ausschließlich, was die erteilte Einwilligung deckt; Test-Zuweisungen lassen sich ohne personenbezogene Merkmale umsetzen. Für eingesetzte Dienste liegen Auftragsverarbeitungsverträge vor, und wo Daten die EU nicht verlassen sollen, nutzen wir server-seitiges Tagging, EU-Hosting oder eine selbst betriebene Testlösung. Wir dokumentieren die Konfiguration für Ihr Verarbeitungsverzeichnis — das ersetzt keine Rechtsberatung, macht die Prüfung durch Ihren Datenschutzbeauftragten aber deutlich einfacher."
+        },
+        {
+          "question": "Gestalten Sie unsere Website neu?",
+          "answer": "Nur dort, wohin die Evidenz zeigt. Die meisten Conversion-Gewinne entstehen durch Klarheit, Reihenfolge und weniger Reibung — was eine Seite zuerst sagt, wie viele Felder ein Formular verlangt, welche Information im Moment des Zweifels fehlt — und nicht durch eine neue Bildsprache. Ist ein Neubau tatsächlich richtig, sagen wir das, prüfen die Änderung aber lieber in Etappen, als Ihren Umsatz auf einen Relaunch zu setzen."
+        },
+        {
+          "question": "Wie messen Sie den Erfolg nachvollziehbar?",
+          "answer": "Die primäre Metrik wird vor dem Test festgelegt, möglichst Umsatz oder qualifizierte Anfragen statt eines Hilfsindikators wie Klicks, ergänzt um Leitplanken, damit eine Verbesserung an einer Stelle keinen Schaden an anderer verdeckt. Berichtet wird mit Stichprobengröße, Laufzeit und der verbleibenden Unsicherheit. Zusätzlich gleichen wir gegen Ihr Backoffice ab, da Analytics und tatsächliche Aufträge bei aktivem Consent-Banner nie exakt übereinstimmen."
+        },
+        {
+          "question": "Wie hängt CRO mit unserem Mediabudget zusammen?",
+          "answer": "Unmittelbar: Die Conversion Rate ist der Multiplikator auf jeden eingekauften Klick. Eine bessere Zielseite senkt die Akquisitionskosten, ohne dass Gebote steigen müssen, und höhere Abschlussraten liefern den Werbeplattformen sauberere Optimierungssignale. Für die meisten Werbetreibenden ist es günstiger, das Ziel zu reparieren, als das Budget zu erhöhen."
+        },
+        {
+          "question": "Welche Werkzeuge müssen wir beschaffen?",
+          "answer": "Meist weniger als erwartet. GA4, Google Tag Manager und die Search Console kosten nichts, und leistungsfähige Werkzeuge für Session Recording und Heatmaps decken über ihre kostenlosen Kontingente viele Websites ab. Eine kostenpflichtige Testplattform lohnt erst, wenn Ihr Volumen häufiges Testen wirklich trägt; sind Drittanbieter-Skripte ausgeschlossen, erfassen wir Klick- und Scrollverhalten first-party in Ihrer eigenen Infrastruktur."
+        },
+        {
+          "question": "Verlangsamt Testing unsere Seite?",
+          "answer": "Bei nachlässiger Umsetzung ja, und schon das entwertet viele Tests, weil die Variantengruppe eine schlechtere Erfahrung bekommt. Wo der Stack es zulässt, bevorzugen wir server- oder edge-seitig gerenderte Varianten, halten die Client-Last minimal und prüfen die Core Web Vitals beider Varianten vor dem Start. Ein Test, der ohne Performanceverlust nicht durchführbar ist, ist es nicht wert."
+        },
+        {
+          "question": "Wann sehen wir Ergebnisse?",
+          "answer": "Audit und Recherche liefern in der Regel innerhalb der ersten Wochen umsetzbare Erkenntnisse, von denen ein Teil ohne Test direkt live gehen kann. Das Testen selbst wirkt kumulativ: Der Wert entsteht aus einer stetigen Folge belegter Entscheidungen über Monate, nicht aus einem spektakulären Einzelergebnis. Wer Ihnen vor Sichtung der Daten eine konkrete Steigerung zusagt, rät."
+        },
+        {
+          "question": "Was brauchen Sie von uns?",
+          "answer": "Zugang zu Analytics und Tag Manager, Einblick in Aufträge oder Anfragen zum Abgleich sowie eine Ansprechperson, die Kundenfragen beantworten und Änderungen freigeben kann. Zugang zu Support-Verläufen und Vertriebsgesprächen wird fast immer unterschätzt und ist außerordentlich wertvoll. Darüber hinaus braucht es vor allem die Bereitschaft, Evidenz über interne Vorlieben zu stellen."
+        }
+      ],
+      "technologies": [
+        { "name": "Google Analytics 4", "icon": "ga4" },
+        { "name": "Google Tag Manager", "icon": "googletagmanager" },
+        { "name": "Microsoft Clarity", "icon": "microsoft-clarity" },
+        { "name": "Hotjar", "icon": "hotjar" },
+        { "name": "GrowthBook", "icon": "growthbook" },
+        { "name": "Looker Studio", "icon": "looker-studio" },
+        { "name": "PageSpeed Insights", "icon": "pagespeed" },
+        { "name": "Google Search Console", "icon": "google-search-console" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تحسين معدل التحويل (CRO)",
+    "shortDescription": "عمل على التحويل يبدأ بالبحث لا بإعادة التصميم: بيانات التحليلات وتسجيلات الجلسات وآراء المستخدمين هي التي تحدد ما يُختبر، ونعرض عليكم الاختبارات الخاسرة بالوضوح نفسه الذي نعرض به الرابحة.",
+    "fullDescription": "تحسين معدل التحويل تخصص بحثي ينتهي بتغييرات في التصميم، لا العكس. نبدأ بالتأكد من أن الأرقام تستحق الثقة: مراجعة إعداد GA4 و Google Tag Manager، ومعالجة موافقة الكوكيز، والتحقق من أن الأحداث تُطلق فعلاً وأن التحويلات المسجَّلة تطابق طلباتكم الحقيقية. ثم نبحث عن مواضع التردد عبر نقاط التسرّب في المسار، وتسجيلات الجلسات، وأسئلة قصيرة داخل الموقع، ورسائل الدعم. تتحول هذه الأدلة إلى قائمة فرضيات مرتّبة بالأولوية، لكل منها مقياس نجاح محدد ومقاييس حماية مثل الإيراد لكل جلسة ونسبة المرتجعات وحجم طلبات الدعم. حيث يسمح حجم الزيارات نشغّل اختبارات A/B محسوبة إحصائياً، وحيث لا يسمح نقولها بصراحة ونتقدّم بتحسينات متتابعة. ويتوزّع العمل المتعمّق على صفحات تحسين صفحات الهبوط وتحسين المسار وتحليلات تجربة المستخدم وتتبّع السلوك.",
+    "features": [
+      "مراجعة القياس: GA4 و Google Tag Manager وإدارة الموافقة وسلامة الأحداث",
+      "بحث تحويلي من بيانات المسار وتسجيلات الجلسات وآراء المستخدمين",
+      "قائمة فرضيات مرتّبة بحسب قوة الدليل وحجم الأثر وجهد التنفيذ",
+      "اختبارات A/B بحجم عيّنة ومدة محسوبين قبل الإطلاق",
+      "إعادة بناء صفحات الهبوط لتطابق وعد الإعلان ونية البحث",
+      "تحليل المسار وصفحة الدفع من أول نقرة حتى الطلب المؤكد",
+      "مقاييس حماية: الإيراد لكل جلسة، نسبة المرتجعات، حجم طلبات الدعم",
+      "تتبّع النقر والتمرير من طرف أول عند تعذّر تشغيل نصوص الطرف الثالث"
+    ],
+    "benefits": [
+      "إيراد أعلى من الزيارات وميزانية الإعلانات التي تدفعونها أصلاً",
+      "قرارات يحسمها الدليل بدل أعلى صوت في الاجتماع",
+      "قياس موثوق قبل أن يبني أحد قراراً على رقم",
+      "توثيق الاختبارات الخاسرة بأسبابها فلا تُعاد الفكرة نفسها لاحقاً",
+      "توجيه صادق للمواقع محدودة الزيارات بدل اختبارات لا تصل إلى نتيجة",
+      "رصيد بحثي مرتّب بالأولوية يبقى بعد انتهاء المشروع"
+    ],
+    "metaTitle": "CRO — تحسين معدل التحويل | PakSoft",
+    "metaDescription": "تحسين معدل التحويل بمنهج بحثي: مراجعة GA4، تسجيلات الجلسات، اختبارات A/B مدروسة إحصائياً وتقارير صادقة. احجزوا مراجعة تحويل مجانية لموقعكم الآن.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "مراجعة القياس",
+          "description": "قبل أي اختبار نتحقق من أن البيانات قادرة على حمل القرار: إعداد GA4، وحاويات Google Tag Manager، وسلوك موافقة الكوكيز، والأحداث المكررة أو التي لا تُطلق، ومدى تطابق التحويلات المسجَّلة مع الطلبات في نظامكم. البناء على قياس معطوب هو أكثر أخطاء هذا المجال شيوعاً وأغلاها ثمناً، لذلك نصلحه أولاً."
+        },
+        {
+          "step": 2,
+          "title": "بحث كمّي ونوعي",
+          "description": "نرسم خريطة لمواضع مغادرة الزوار بحسب الخطوة والجهاز ومصدر الزيارة وصفحة الدخول، ثم نراقب ما يحدث فعلاً هناك عبر تسجيلات الجلسات وخرائط النقر والتمرير وأسئلة قصيرة تُطرح في لحظة التردد. ندخل أيضاً رسائل الدعم على واتساب واعتراضات المبيعات في التحليل، لأن العميل يصف المشكلة بكلماته قبل أن تظهر في أي لوحة بيانات."
+        },
+        {
+          "step": 3,
+          "title": "الفرضية وترتيب الأولويات",
+          "description": "يتحول كل اكتشاف إلى فرضية مكتوبة: المشكلة الملاحَظة، والتغيير المقترح، والأثر المتوقع، والمقياس الذي سيحكم عليه. نرتّبها بحسب قوة الدليل وحجم الزيارات المتأثرة وجهد التنفيذ، فتُنشر الإصلاحات الرخيصة عالية اليقين فوراً، ولا يذهب إلى الاختبار سوى الأفكار غير المحسومة فعلاً."
+        },
+        {
+          "step": 4,
+          "title": "التنفيذ والفحص والإطلاق",
+          "description": "تُبنى النسخ البديلة ضمن نظام التصميم الحالي لديكم وتُفحص عبر المتصفحات وأحجام الشاشات وظروف الشبكة على الجوال، وهو المصدر الأكبر للزيارات في الخليج. نتأكد من عدم حدوث ارتجاف بصري ومن أن القياس لم ينكسر وأن سرعة الصفحة لم تتأثر، ونحدد حجم العيّنة والمدة الدنيا قبل الإطلاق."
+        },
+        {
+          "step": 5,
+          "title": "التشغيل حتى القرار لا حتى الموعد",
+          "description": "تعمل الاختبارات على دورات عمل كاملة، أي أسابيع كاملة عادةً، ليُمثَّل سلوك أيام الأسبوع ونهايته معاً، ونأخذ في الحسبان المواسم مثل رمضان والتخفيضات الكبرى لأنها تغيّر سلوك الشراء. لا نوقف الاختبار لأن نسخة تتقدم في اليوم الثالث، ونراقب مقاييس الحماية طوال المدة فنوقف أي اختبار يضر بالإيراد لكل جلسة أو بنسبة المرتجعات."
+        },
+        {
+          "step": 6,
+          "title": "القرار والتوثيق والتكرار",
+          "description": "ينتهي كل اختبار بنتيجة مكتوبة: رابح أو خاسر أو غير حاسم، مع الأرقام التي تدعمه وما صرنا نعرفه عن عملائكم. تبقى النتائج الخاسرة في السجل مع سببها كي لا يُعاد بناء الفكرة نفسها بعد سنة، وكل نتيجة تعيد ترتيب أولويات بقية الفرضيات."
+        }
+      ],
+      "faq": [
+        {
+          "question": "كم عدد الزيارات المطلوب حتى تصلح اختبارات A/B؟",
+          "answer": "لا يوجد رقم سحري للزيارات؛ المحدِّد هو معدل التحويل الحالي وحجم التحسن الذي تريدون رصده. كقاعدة تقريبية، صفحة معدل تحويلها نسبة مئوية أحادية منخفضة تحتاج مئات التحويلات لكل نسخة حتى يمكن إثبات تحسن واقعي، وكثير من المواقع لا تنتج ذلك خلال مدة معقولة. إذا لم تدعم أرقامكم اختباراً ذا قوة إحصائية كافية فسنقول ذلك صراحةً ونعمل بالبحث النوعي والتحسين المتتابع."
+        },
+        {
+          "question": "زياراتنا محدودة، هل يعني ذلك أن CRO لا يناسبنا؟",
+          "answer": "بل يناسبكم، لكن بأسلوب مختلف. مع الزيارات المحدودة يكون الصواب مشاهدة تسجيلات الجلسات، وسؤال العملاء مباشرةً عن سبب التخلي عن السلة، ومعالجة الاحتكاك في خطوة الدفع وسرعة الجوال، وتوضيح النقاط التي تصنع التردد مثل الشحن والاسترجاع وخيار الدفع عند الاستلام. هذه تحسينات تُقيَّم بالملاحظة والمقارنة قبل وبعد، لا بالإحصاء."
+        },
+        {
+          "question": "كم يستمر الاختبار الواحد؟",
+          "answer": "حتى يبلغ حجم العيّنة المحسوب مسبقاً ويغطي دورات عمل كاملة، وهو عملياً من أسبوعين إلى أربعة أسابيع كاملة. إيقاف الاختبار لحظة ظهور نتيجة تبدو دالة إحصائياً من أسرع طرق خداع النفس، لأن البيانات المبكرة شديدة التذبذب. نحدد المدة قبل الإطلاق ونلتزم بها ما لم يتضرر أحد مقاييس الحماية."
+        },
+        {
+          "question": "ماذا لو خسر الاختبار؟",
+          "answer": "يُوثَّق ونُبقي النسخة الأصلية. نسبة معتبرة من الاختبارات في هذا المجال تخسر أو تخرج بلا نتيجة حاسمة، وأي جهة تعرض عليكم سلسلة متصلة من النجاحات إنما تنتقي ما تعرضه. الاختبار الخاسر يمنحكم مكسباً حقيقياً أيضاً: يزيح افتراضاً مكلفاً ويجعل الفرضية التالية أدق."
+        },
+        {
+          "question": "هل ستغيّرون تصميم موقعنا؟",
+          "answer": "فقط حيث يشير الدليل. معظم مكاسب التحويل تأتي من الوضوح والترتيب وتقليل الاحتكاك — ما تقوله الصفحة أولاً، وعدد الحقول المطلوبة، والمعلومة الغائبة في لحظة الشك — لا من لغة بصرية جديدة. وإذا كانت إعادة البناء هي الجواب الصحيح فعلاً فسنقولها، لكننا نفضّل التحقق من التغيير على مراحل بدل المخاطرة بالإيراد في إطلاق واحد."
+        },
+        {
+          "question": "كيف تتعاملون مع الموقع ثنائي اللغة عربي وإنجليزي؟",
+          "answer": "نقيس كل نسخة لغوية على حدة، لأن سلوك الزائر العربي يختلف عن الإنجليزي في الصياغة وطول النص وترتيب العناصر، ودمج النتائج في رقم واحد يخفي الفروق. ننتبه أيضاً إلى تفاصيل الاتجاه من اليمين إلى اليسار في النماذج والأزرار وحقول الأرقام لأنها مصدر احتكاك متكرر. وعادةً ما تفوز فرضيات مختلفة في كل نسخة، وهذه معلومة مفيدة بحد ذاتها."
+        },
+        {
+          "question": "ما علاقة CRO بميزانية إعلاناتنا على Google و Meta؟",
+          "answer": "علاقة مباشرة، فمعدل التحويل هو المضاعِف على كل نقرة تشترونها. تحسين الصفحة التي تهبط عليها الحملة يخفض تكلفة اكتساب العميل دون رفع المزايدات، كما أن ارتفاع التحويل يرسل إشارات أنظف لخوارزميات التحسين لدى المنصات. لدى معظم المعلنين، إصلاح الوجهة أرخص من زيادة الميزانية."
+        },
+        {
+          "question": "ما الأدوات التي علينا شراؤها؟",
+          "answer": "أقل مما تتوقعون غالباً. GA4 و Google Tag Manager و Search Console مجانية، وأدوات تسجيل الجلسات والخرائط الحرارية تقدّم باقات مجانية تكفي أغلب المواقع. منصة اختبار مدفوعة تصبح ضرورية فقط حين يدعم حجمكم اختباراً متكرراً؛ وإذا كانت سياستكم تمنع نصوص الطرف الثالث فبإمكاننا جمع بيانات النقر والتمرير داخل بنيتكم كطرف أول."
+        },
+        {
+          "question": "هل يبطئ الاختبار موقعنا؟",
+          "answer": "نعم إذا نُفِّذ بإهمال، وهذا وحده أفسد اختبارات كثيرة لأنه يسيء تجربة مجموعة النسخة البديلة. نفضّل عند الإمكان توليد النسخ من الخادم أو من الحافة، ونُبقي الحمل على المتصفح في حده الأدنى، ونفحص مؤشرات Core Web Vitals للنسختين قبل الإطلاق. أي اختبار لا يمكن تشغيله دون الإضرار بالأداء لا يستحق التشغيل."
+        },
+        {
+          "question": "متى نرى النتائج؟",
+          "answer": "تنتج مرحلة مراجعة القياس والبحث عادةً نتائج قابلة للتطبيق خلال الأسابيع الأولى، وبعضها إصلاحات واضحة تُنشر دون اختبار. أما الاختبار فأثره تراكمي: القيمة تأتي من سلسلة قرارات موثّقة عبر أشهر لا من انتصار واحد لافت. ومن يَعِدكم بنسبة تحسّن محددة قبل أن يرى بياناتكم فهو يخمّن."
+        },
+        {
+          "question": "ماذا تحتاجون منّا؟",
+          "answer": "صلاحية الوصول إلى GA4 و Tag Manager، ورؤية لبيانات الطلبات أو الطلبات المحتملة لمطابقة النتائج، وشخص من طرفكم يعرف العملاء ويملك صلاحية اعتماد التغييرات. الوصول إلى محادثات الدعم ومكالمات المبيعات قيمته عالية ويُغفل عادةً. وما عدا ذلك، المطلوب أساساً هو الاستعداد لتقديم الدليل على التفضيل الداخلي."
+        }
+      ],
+      "technologies": [
+        { "name": "Google Analytics 4", "icon": "ga4" },
+        { "name": "Google Tag Manager", "icon": "googletagmanager" },
+        { "name": "Microsoft Clarity", "icon": "microsoft-clarity" },
+        { "name": "Hotjar", "icon": "hotjar" },
+        { "name": "GrowthBook", "icon": "growthbook" },
+        { "name": "Looker Studio", "icon": "looker-studio" },
+        { "name": "PageSpeed Insights", "icon": "pagespeed" },
+        { "name": "Google Search Console", "icon": "google-search-console" }
+      ]
+    }
+  }
+}

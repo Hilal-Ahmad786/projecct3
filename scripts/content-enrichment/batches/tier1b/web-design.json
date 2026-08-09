@@ -1,0 +1,479 @@
+{
+  "slug": "web-design",
+  "en": {
+    "name": "Web Design",
+    "shortDescription": "Web design judged by what it does, not how it looks: research, information architecture, wireframes, a reusable design system, accessible mobile-first layouts, and files developers can build from without guessing.",
+    "fullDescription": "Websites rarely fail because they are ugly; they fail because visitors cannot find what they came for, or the page needs six seconds on a mid-range Android. We work in that order: discovery and information architecture first, wireframes to settle structure before anyone argues about colour, then a design system of type scale, colour tokens and components that keeps pages consistent and fast to build. Accessibility targets — WCAG 2.2 AA contrast, visible focus, honest tap targets — and a performance budget for images and fonts are set during design, not patched after launch. Corporate sites, landing pages and e-commerce storefronts each need a different treatment, and we have designed all three, including Arabic RTL and German-market interfaces. Handover is a documented Figma file your developers can build from directly.",
+    "features": [
+      "Discovery, Competitor Teardown & Conversion Review",
+      "Information Architecture, User Flows, Wireframes & Figma Prototypes",
+      "Design System: Type Scale, Colour Tokens, Components & States",
+      "Mobile-First Responsive Layouts Designed at Real Breakpoints",
+      "WCAG 2.2 AA Accessibility: Contrast, Focus, Semantics & Tap Targets",
+      "Multilingual and Arabic RTL Layout Design",
+      "Performance-Budgeted Imagery, Icon Sets & Font Loading",
+      "Developer Handover: Specs, Tokens, Assets & Build QA"
+    ],
+    "benefits": [
+      "Visitors reach the page that answers their question in one or two clicks",
+      "Layouts hold up with real content, long product names and four languages",
+      "Pages ship faster because components repeat instead of being redrawn",
+      "Contrast, focus and tap targets that keep the site usable for everyone",
+      "One visual language across the site, landing pages and ad creative",
+      "A handover file developers can build from without a single guess"
+    ],
+    "metaTitle": "Conversion-Focused Web Design Services | PakSoft",
+    "metaDescription": "Web design that converts: research, information architecture, design systems, accessible mobile-first layouts and clean developer handover. Start your project.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Discovery & Goals",
+          "description": "We learn what the site has to achieve — enquiries, orders, applications, bookings — and who is arriving, on which device, from which channel. Existing analytics, competitor pages and your sales team's real objections all feed the brief, so design decisions have a reason behind them."
+        },
+        {
+          "step": 2,
+          "title": "Structure Before Pixels",
+          "description": "We map the information architecture, navigation and key user flows, then draw low-fidelity wireframes for each unique template. Settling structure in grey boxes is far cheaper than rearranging a finished visual design, and it is where most conversion problems are actually fixed."
+        },
+        {
+          "step": 3,
+          "title": "Visual Direction & Design System",
+          "description": "We agree a visual direction on two or three key screens, then turn it into a system: type scale, spacing, colour tokens, buttons, forms, cards and their hover, focus, error and empty states. From here every new page is assembled rather than invented."
+        },
+        {
+          "step": 4,
+          "title": "Page Design, Mobile First",
+          "description": "Each template is designed at mobile width first and then expanded, because that is how the majority of your traffic will see it. Corporate pages, landing pages and product or category screens each get the layout their job requires, along with the states that real content produces."
+        },
+        {
+          "step": 5,
+          "title": "Accessibility & Performance Review",
+          "description": "Before handover we check contrast ratios, focus order, heading semantics, tap target size and how the design behaves at 200% zoom. We also weigh the design itself: hero image formats, icon sets and font loading are trimmed to a performance budget so Core Web Vitals are not lost in the build."
+        },
+        {
+          "step": 6,
+          "title": "Handover & Build Support",
+          "description": "You receive the Figma file with components, tokens, exported assets and written specs for spacing, behaviour and breakpoints. We stay available through development and review the built pages against the design, whether our team or yours writes the code."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Do you build the site as well, or only design it?",
+          "answer": "Both are available, but they are deliberately separate services. Design ends with a Figma file, a design system and specs; our web development service takes that into Next.js, React and a typed back end. Plenty of clients hand our design file to their own developers, which is exactly why the handover is documented rather than a set of flat images."
+        },
+        {
+          "question": "Who owns the design files?",
+          "answer": "You do, on final payment. You get the working Figma file with editable components and tokens, not a flattened export, plus source assets and any licensed fonts or images identified so you can renew them. Nothing is held back to keep you dependent on us."
+        },
+        {
+          "question": "When is a template or theme good enough, and when do we need custom design?",
+          "answer": "A well-chosen theme is a sensible choice if your content is standard, your brand is still forming and speed matters more than differentiation. Custom design earns its cost when you have a specific conversion path, an unusual catalogue or service structure, several languages, or brand recognition you cannot afford to look generic against. We tell you which situation you are in before quoting."
+        },
+        {
+          "question": "What drives the cost of a web design project?",
+          "answer": "The number of unique templates, not the number of pages. Twenty pages built from five templates costs far less than eight pages that each need their own layout. Additional drivers are the number of languages, whether a design system has to be created from scratch or extended, and how many rounds of stakeholder review the process needs to absorb."
+        },
+        {
+          "question": "How long does the design phase take?",
+          "answer": "A corporate site typically takes three to five weeks from kickoff to handover, a focused landing page around one to two weeks, and an e-commerce design longer because category, product, cart and checkout screens each carry many states. Feedback speed on your side is usually the biggest variable in the schedule."
+        },
+        {
+          "question": "What do you need from us to start?",
+          "answer": "Your goals and target audience, any brand assets you already have — logo, fonts, colour, photography — plus access to analytics if the site exists, and one named decision maker who can approve. Real content, even in draft form, is the single most valuable thing you can supply, because designing around placeholder text hides problems that surface at launch."
+        },
+        {
+          "question": "How many rounds of revisions are included?",
+          "answer": "We work in structured review rounds — usually two per stage — rather than open-ended tweaking, and each stage is signed off before the next begins. That keeps changes cheap: a structural change during wireframes costs an hour, the same change after visual design costs days. Requests outside the agreed scope are quoted separately before any work starts."
+        },
+        {
+          "question": "Do you design mobile-first?",
+          "answer": "Yes, and not as a slogan. The majority of traffic on the sites we work on arrives from mobile, often on mid-range Android hardware over a mobile connection, so we design the narrow layout first and treat the desktop version as the expansion. Tap target sizes, thumb reach, form length and image weight are decided at that width."
+        },
+        {
+          "question": "What accessibility level do you design to?",
+          "answer": "We design to WCAG 2.2 AA as the working target: colour contrast for text and interface elements, visible focus states, a logical heading structure, labelled form fields and layouts that survive 200% zoom. Full conformance depends on the build and on your ongoing content, so we hand over the rules and check the implemented pages rather than claim a certificate."
+        },
+        {
+          "question": "Can you design Arabic or other right-to-left interfaces?",
+          "answer": "Yes. RTL is a layout and typography problem, not a translation problem: navigation, icons, form alignment, charts and numerals all need deliberate mirroring, and Arabic type needs its own size and line-height scale to sit correctly next to Latin text. We design the LTR and RTL versions as one system so a single build serves both."
+        },
+        {
+          "question": "We already have a site — can you redesign without losing our search traffic?",
+          "answer": "Yes, and it needs planning rather than good intentions. We keep the existing URL structure where it earns traffic, map redirects for anything that must change, and preserve the pages and headings that already rank while improving their layout. Search implications are reviewed during information architecture, which is the stage where a redesign usually loses rankings."
+        },
+        {
+          "question": "Will a heavier design slow the site down?",
+          "answer": "It can, which is why we set a performance budget during design instead of arguing about it after launch. Full-screen video, carousels, multiple font weights and large decorative imagery are the usual culprits, and we either justify their cost in load time or replace them. Core Web Vitals are treated as a design constraint alongside brand and layout."
+        }
+      ],
+      "technologies": [
+        { "name": "Figma", "icon": "figma" },
+        { "name": "Next.js", "icon": "nextjs" },
+        { "name": "React", "icon": "react" },
+        { "name": "Tailwind CSS", "icon": "tailwindcss" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "WCAG 2.2", "icon": "shield" },
+        { "name": "Lighthouse", "icon": "pagespeed" },
+        { "name": "Vercel", "icon": "vercel" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Web Tasarım",
+    "shortDescription": "Güzel görünen değil, iş yapan web tasarımı: keşif ve bilgi mimarisi, tel çerçeve, yeniden kullanılabilir tasarım sistemi, mobil öncelikli ve erişilebilir arayüzler, yazılımcının tahmin yürütmeden kodlayabileceği net bir teslim dosyası.",
+    "fullDescription": "Siteler çirkin oldukları için değil, ziyaretçi aradığı tek şeyi bulamadığı ya da sayfa orta segment bir Android'de altı saniyede açıldığı için başarısız olur. Biz de sırayı böyle kuruyoruz: önce keşif ve bilgi mimarisi, sonra renk tartışması başlamadan yapıyı oturtan tel çerçeveler, ardından tipografi ölçeği, renk token'ları ve bileşenlerden oluşan bir tasarım sistemi. Erişilebilirlik hedefleri (WCAG 2.2 AA kontrast, görünür odak, yeterli dokunma alanı) ve görsel ile font için performans bütçesi yayından sonra yamanmıyor, tasarım aşamasında belirleniyor. Kurumsal site, açılış sayfası ve e-ticaret vitrini birbirinden farklı ele alınır; üçünü de tasarladık, Almanya pazarına çalışan bir üretici sitesi ve Arapça sağdan sola arayüzler dahil. Teslim, ölçüleri ve token'ları yazılı bir Figma dosyasıdır; ister bizim ekibimiz ister sizinki doğrudan koda geçebilir.",
+    "features": [
+      "Keşif, Rakip Analizi ve Dönüşüm İncelemesi",
+      "Bilgi Mimarisi, Kullanıcı Akışları, Tel Çerçeve ve Figma Prototipi",
+      "Tasarım Sistemi: Tipografi Ölçeği, Renk Token'ları, Bileşenler ve Durumlar",
+      "Mobil Öncelikli Responsive Tasarım ve Gerçek Kırılım Noktaları",
+      "WCAG 2.2 AA Erişilebilirlik: Kontrast, Odak, Anlamsal Yapı, Dokunma Alanı",
+      "Çok Dilli ve Arapça Sağdan Sola (RTL) Arayüz Tasarımı",
+      "Performans Bütçesine Uygun Görsel, İkon ve Font Kurgusu",
+      "Yazılımcıya Teslim: Ölçü Dokümanı, Token'lar, Asset'ler ve Yayın Kontrolü"
+    ],
+    "benefits": [
+      "Ziyaretçi aradığı cevabın olduğu sayfaya bir iki tıkta ulaşıyor",
+      "Tasarım gerçek içerikle, uzun ürün adlarıyla ve dört dille bozulmuyor",
+      "Bileşenler tekrar kullanıldığı için yeni sayfalar çok daha hızlı yayına giriyor",
+      "Kontrast, odak ve dokunma alanı sayesinde site herkes için kullanılabilir kalıyor",
+      "Site, açılış sayfaları ve reklam görselleri aynı görsel dili konuşuyor",
+      "Yazılımcı tahmin yürütmeden, tartışmadan kodlayabileceği bir dosya alıyor"
+    ],
+    "metaTitle": "Dönüşüm Odaklı Web Sitesi Tasarımı | PakSoft",
+    "metaDescription": "Mobil öncelikli, hızlı ve erişilebilir web tasarımı: bilgi mimarisi, tasarım sistemi ve yazılıma hazır teslim. Projeniz için PakSoft'tan fiyat teklifi alın.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Keşif ve Hedefler",
+          "description": "Sitenin ne yapması gerektiğini netleştiriyoruz: teklif talebi, sipariş, başvuru, randevu. Kimin hangi cihazdan ve hangi kanaldan geldiğini, mevcut analitik verinizi, rakip sayfaları ve satış ekibinizin sahada duyduğu itirazları brife dahil ediyoruz ki her tasarım kararının bir gerekçesi olsun."
+        },
+        {
+          "step": 2,
+          "title": "Önce Yapı, Sonra Görsel",
+          "description": "Bilgi mimarisini, menü kurgusunu ve temel kullanıcı akışlarını çıkarıp her benzersiz şablon için tel çerçeve çiziyoruz. Yapıyı gri kutularla oturtmak, bitmiş bir tasarımı yeniden dizmekten kat kat ucuzdur ve dönüşüm sorunlarının çoğu tam da bu aşamada çözülür."
+        },
+        {
+          "step": 3,
+          "title": "Görsel Yön ve Tasarım Sistemi",
+          "description": "Görsel yönü iki üç kilit ekran üzerinde netleştirip sistemleştiriyoruz: tipografi ölçeği, boşluk düzeni, renk token'ları, buton, form ve kart bileşenleri ile bunların hover, odak, hata ve boş durumları. Bu noktadan sonra her yeni sayfa sıfırdan tasarlanmıyor, sistemden kuruluyor."
+        },
+        {
+          "step": 4,
+          "title": "Sayfa Tasarımı, Mobil Öncelikli",
+          "description": "Her şablonu önce mobil genişlikte tasarlıyor, sonra geniş ekrana açıyoruz; çünkü trafiğinizin büyük bölümü siteyi o genişlikte görecek. Kurumsal sayfa, açılış sayfası ve kategori/ürün ekranları işine göre farklı düzen alıyor, gerçek içerikle ortaya çıkan tüm durumlar da tasarlanıyor."
+        },
+        {
+          "step": 5,
+          "title": "Erişilebilirlik ve Performans Kontrolü",
+          "description": "Teslimden önce kontrast oranlarını, odak sırasını, başlık hiyerarşisini, dokunma alanı boyutlarını ve tasarımın %200 yakınlaştırmada nasıl davrandığını kontrol ediyoruz. Ayrıca tasarımın kendi ağırlığını tartıyoruz: kapak görseli formatı, ikon seti ve font yükleme kurgusu performans bütçesine göre kırpılıyor ki Core Web Vitals kodlama aşamasında kaybolmasın."
+        },
+        {
+          "step": 6,
+          "title": "Teslim ve Geliştirme Desteği",
+          "description": "Bileşenleri, token'ları, dışa aktarılmış asset'leri ve boşluk, davranış, kırılım noktası açıklamalarını içeren Figma dosyasını teslim ediyoruz. Geliştirme boyunca ulaşılabilir kalıyor, kodu ister biz ister sizin ekibiniz yazsın, çıkan sayfaları tasarımla karşılaştırarak kontrol ediyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Sadece tasarım mı yapıyorsunuz, siteyi de kodluyor musunuz?",
+          "answer": "İkisini de yapıyoruz ama bilinçli olarak ayrı hizmet olarak konumlandırıyoruz. Tasarım işi Figma dosyası, tasarım sistemi ve ölçü dokümanıyla biter; web geliştirme hizmetimiz bunu Next.js, React ve tip güvenli bir backend ile hayata geçirir. Birçok müşterimiz tasarımı kendi yazılımcısına verir; teslimi düz görsel yerine belgelenmiş bir dosya olarak hazırlamamızın sebebi tam olarak budur."
+        },
+        {
+          "question": "Tasarım dosyaları kime ait olur?",
+          "answer": "Son ödemeyle birlikte size ait olur. Düzleştirilmiş bir dışa aktarım değil, bileşenleri ve token'ları düzenlenebilir çalışan Figma dosyasını alırsınız; kaynak görseller ve lisanslı font/görsel varsa hangileri olduğu da listelenir, böylece lisansları kendiniz yenileyebilirsiniz. Sizi bize bağımlı tutmak için elimizde hiçbir şey tutmayız."
+        },
+        {
+          "question": "Hazır tema yeterli mi, özel tasarım şart mı?",
+          "answer": "İçeriğiniz standartsa, markanız henüz oturmamışsa ve hız farklılaşmadan önemliyse doğru seçilmiş bir tema mantıklıdır. Özel tasarım ise net bir dönüşüm akışınız, alışılmadık bir katalog veya hizmet yapınız, birden fazla diliniz ya da jenerik görünmeyi kaldıramayacak bir marka bilinirliğiniz varsa masrafını çıkarır. Hangi durumda olduğunuzu teklif vermeden önce açıkça söyleriz."
+        },
+        {
+          "question": "Web tasarım maliyetini ne belirliyor?",
+          "answer": "Sayfa sayısı değil, benzersiz şablon sayısı. Beş şablondan üretilen yirmi sayfa, her biri kendi düzenini isteyen sekiz sayfadan çok daha ucuza gelir. Diğer belirleyiciler; dil sayısı, tasarım sisteminin sıfırdan mı kurulacağı yoksa mevcut sistemin mi genişletileceği ve sürecin kaç onay merciini dolaşacağıdır."
+        },
+        {
+          "question": "Tasarım aşaması ne kadar sürer?",
+          "answer": "Kurumsal bir site için başlangıçtan teslime genellikle üç ile beş hafta, tek bir açılış sayfası için bir iki hafta sürer. E-ticaret daha uzundur; kategori, ürün, sepet ve ödeme ekranlarının her biri çok sayıda durum barındırır. Takvimdeki en büyük değişken hemen her projede geri bildirimin sizden ne kadar hızlı gelmesidir."
+        },
+        {
+          "question": "Başlamak için bizden ne istiyorsunuz?",
+          "answer": "Hedefleriniz ve hedef kitleniz, elinizde varsa logo, font, renk ve fotoğraf gibi marka varlıkları, site zaten yayındaysa analitik erişimi ve onay verebilecek tek bir karar verici. En değerlisi ise taslak hâlinde bile olsa gerçek içeriktir; çünkü lorem ipsum üzerinde çalışmak, yayın günü ortaya çıkacak sorunları gizler."
+        },
+        {
+          "question": "Kaç revizyon hakkımız var?",
+          "answer": "Ucu açık düzeltme yerine aşama başına genellikle iki yapılandırılmış revizyon turu çalışıyoruz ve her aşama bir sonrakine geçmeden onaylanıyor. Bu yaklaşım değişikliği ucuzlatır: tel çerçevede bir saat süren yapısal değişiklik, görsel tasarım bittikten sonra günlere mal olur. Kapsam dışı talepleri işe başlamadan önce ayrıca fiyatlandırırız."
+        },
+        {
+          "question": "Mobil öncelikli mi tasarlıyorsunuz?",
+          "answer": "Evet ve bu bizde slogan değil. Çalıştığımız sitelerde trafiğin büyük bölümü mobilden, çoğu zaman orta segment Android cihazlardan ve mobil bağlantıyla geliyor; bu yüzden önce dar ekranı tasarlar, masaüstünü onun genişlemesi olarak ele alırız. Dokunma alanı boyutu, başparmağın ulaştığı bölge, form uzunluğu ve görsel ağırlığı bu genişlikte kararlaştırılır."
+        },
+        {
+          "question": "Erişilebilirlikte hangi seviyeyi hedefliyorsunuz?",
+          "answer": "Çalışma hedefimiz WCAG 2.2 AA: metin ve arayüz öğelerinde yeterli kontrast, görünür odak durumları, mantıklı başlık hiyerarşisi, etiketlenmiş form alanları ve %200 yakınlaştırmada bozulmayan düzen. Tam uyum kodlamaya ve sonrasında eklediğiniz içeriğe de bağlı olduğundan sertifika vadetmez; kuralları teslim eder ve yayına giren sayfaları bu kurallara göre kontrol ederiz."
+        },
+        {
+          "question": "Arapça gibi sağdan sola arayüzler tasarlıyor musunuz?",
+          "answer": "Evet. RTL bir çeviri işi değil, düzen ve tipografi işidir: menü, ikonlar, form hizalaması, grafikler ve rakamların bilinçli olarak aynalanması gerekir; Arapça yazı da Latin metnin yanında doğru durabilmek için kendi punto ve satır yüksekliği ölçeğini ister. LTR ve RTL sürümlerini tek bir sistem olarak tasarlarız, böylece tek kod tabanı iki yönü de karşılar."
+        },
+        {
+          "question": "Mevcut sitemizi yenilerken Google'daki sıralamalarımızı kaybeder miyiz?",
+          "answer": "İyi niyetle değil planlamayla korunur. Trafik getiren URL yapısını olduğu gibi bırakır, değişmesi zorunlu adresler için yönlendirme haritası çıkarır, hâlihazırda sıralanan sayfa ve başlıkları koruyup düzenlerini iyileştiririz. Arama sonuçlarına etkisi bilgi mimarisi aşamasında değerlendirilir; çünkü yenileme projeleri sıralamayı genellikle tam da o aşamada kaybeder."
+        },
+        {
+          "question": "Ağır bir tasarım siteyi yavaşlatır mı?",
+          "answer": "Yavaşlatabilir; bu yüzden performans bütçesini yayından sonra tartışmak yerine tasarım aşamasında belirliyoruz. Tam ekran video, slider'lar, çok sayıda font ağırlığı ve büyük dekoratif görseller en sık suçlulardır; bunları ya yükleme süresine değdiğini gösterdiğimiz için tutar ya da değiştiririz. Core Web Vitals bizde marka ve düzen kadar bağlayıcı bir tasarım kısıtıdır."
+        }
+      ],
+      "technologies": [
+        { "name": "Figma", "icon": "figma" },
+        { "name": "Next.js", "icon": "nextjs" },
+        { "name": "React", "icon": "react" },
+        { "name": "Tailwind CSS", "icon": "tailwindcss" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "WCAG 2.2", "icon": "shield" },
+        { "name": "Lighthouse", "icon": "pagespeed" },
+        { "name": "Vercel", "icon": "vercel" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Webdesign",
+    "shortDescription": "Webdesign, das an seiner Wirkung gemessen wird: Analyse, Informationsarchitektur, Wireframes, ein wiederverwendbares Designsystem, barrierearme Mobile-First-Layouts und eine Übergabe, aus der Entwicklerinnen und Entwickler ohne Rückfragen bauen.",
+    "fullDescription": "Websites scheitern selten an der Optik. Sie scheitern daran, dass Besucher das Gesuchte nicht finden oder die Seite auf einem Mittelklasse-Smartphone sechs Sekunden zum Aufbau braucht. Wir arbeiten deshalb in dieser Reihenfolge: zuerst Analyse und Informationsarchitektur, dann Wireframes, die die Struktur klären, bevor über Farben diskutiert wird, anschließend ein Designsystem aus Typo-Skala, Farb-Tokens und Komponenten. Barrierefreiheitsziele nach WCAG 2.2 AA — Kontraste, sichtbarer Fokus, ausreichend große Schaltflächen — und ein Performance-Budget für Bilder und Schriften legen wir im Design fest und nicht nachträglich. Unternehmenswebsites, Landingpages und Shop-Oberflächen behandeln wir unterschiedlich; alle drei haben wir gestaltet, darunter eine Herstellerpräsenz für den deutschen Markt sowie arabische RTL-Oberflächen. Übergeben wird eine dokumentierte Figma-Datei mit Spezifikationen und Tokens, aus der unser oder Ihr Entwicklungsteam direkt bauen kann.",
+    "features": [
+      "Analyse, Wettbewerbsvergleich & Conversion-Review",
+      "Informationsarchitektur, Nutzerflüsse, Wireframes & Figma-Prototypen",
+      "Designsystem: Typo-Skala, Farb-Tokens, Komponenten & Zustände",
+      "Mobile-First-Layouts an realen Breakpoints gestaltet",
+      "Barrierefreiheit nach WCAG 2.2 AA: Kontrast, Fokus, Semantik, Zielgrößen",
+      "Mehrsprachige Layouts inklusive arabischer RTL-Oberflächen",
+      "Bild-, Icon- und Schriftkonzept innerhalb eines Performance-Budgets",
+      "Entwickler-Handover: Spezifikationen, Tokens, Assets & Umsetzungsprüfung"
+    ],
+    "benefits": [
+      "Besucher erreichen die passende Seite in ein bis zwei Klicks",
+      "Layouts funktionieren mit echten Inhalten, langen Bezeichnungen und mehreren Sprachen",
+      "Neue Seiten entstehen schneller, weil Komponenten wiederverwendet werden",
+      "Kontrast, Fokus und Zielgrößen halten die Website für alle bedienbar",
+      "Eine visuelle Sprache über Website, Landingpages und Werbemittel hinweg",
+      "Eine Übergabedatei, aus der ohne Interpretationsspielraum gebaut wird"
+    ],
+    "metaTitle": "Webdesign mit Fokus auf Conversion | PakSoft",
+    "metaDescription": "Webdesign, das wirkt: Informationsarchitektur, Designsystem, barrierearme Mobile-First-Layouts und saubere Entwicklerübergabe. Jetzt unverbindlich anfragen.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Analyse & Zieldefinition",
+          "description": "Wir klären, was die Website leisten soll — Anfragen, Bestellungen, Bewerbungen oder Termine — und wer über welches Gerät und welchen Kanal kommt. Vorhandene Analysedaten, Wettbewerbsseiten und die realen Einwände aus Ihrem Vertrieb fließen in das Briefing ein, damit jede Designentscheidung begründet ist."
+        },
+        {
+          "step": 2,
+          "title": "Struktur vor Gestaltung",
+          "description": "Wir erarbeiten Informationsarchitektur, Navigation und zentrale Nutzerflüsse und zeichnen für jedes eigenständige Template ein Wireframe. Strukturfragen in Graustufen zu klären ist deutlich günstiger, als ein fertiges Layout umzubauen — und genau dort werden die meisten Conversion-Probleme gelöst."
+        },
+        {
+          "step": 3,
+          "title": "Visuelle Richtung & Designsystem",
+          "description": "Die visuelle Richtung stimmen wir an zwei bis drei Schlüsselseiten ab und überführen sie anschließend in ein System aus Typo-Skala, Abständen, Farb-Tokens, Buttons, Formularen und Karten samt Hover-, Fokus-, Fehler- und Leerzuständen. Ab diesem Punkt werden Seiten zusammengesetzt statt neu erfunden."
+        },
+        {
+          "step": 4,
+          "title": "Seitendesign, Mobile First",
+          "description": "Jedes Template entsteht zuerst in Smartphone-Breite und wird danach auf größere Viewports erweitert, weil der Großteil Ihres Traffics es so sieht. Unternehmensseiten, Landingpages sowie Kategorie- und Produktansichten erhalten jeweils das Layout, das ihre Aufgabe verlangt, inklusive der Zustände, die echte Inhalte erzeugen."
+        },
+        {
+          "step": 5,
+          "title": "Barrierefreiheits- & Performance-Prüfung",
+          "description": "Vor der Übergabe prüfen wir Kontrastwerte, Fokusreihenfolge, Überschriftensemantik, Zielgrößen und das Verhalten bei 200 % Zoom. Zusätzlich wiegen wir das Design selbst: Bildformate, Icon-Sets und Schriftschnitte werden auf ein Performance-Budget reduziert, damit die Core Web Vitals in der Umsetzung nicht verloren gehen."
+        },
+        {
+          "step": 6,
+          "title": "Übergabe & Umsetzungsbegleitung",
+          "description": "Sie erhalten die Figma-Datei mit Komponenten, Tokens, exportierten Assets und schriftlichen Angaben zu Abständen, Verhalten und Breakpoints. Während der Entwicklung bleiben wir ansprechbar und prüfen die umgesetzten Seiten gegen das Design — unabhängig davon, ob unser oder Ihr Team programmiert."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Setzen Sie die Website auch technisch um oder gestalten Sie nur?",
+          "answer": "Beides ist möglich, wir halten es bewusst getrennt. Das Design endet mit Figma-Datei, Designsystem und Spezifikation; unsere Webentwicklung überführt das in Next.js, React und ein typisiertes Backend. Viele Kunden geben unsere Designdatei an ihr eigenes Entwicklungsteam — genau deshalb ist die Übergabe dokumentiert und besteht nicht aus flachen Bildern."
+        },
+        {
+          "question": "Wem gehören die Designdateien?",
+          "answer": "Mit der Schlussrechnung Ihnen. Sie erhalten die editierbare Figma-Datei mit Komponenten und Tokens, nicht nur einen Export, dazu Quelldateien sowie eine Auflistung lizenzierter Schriften und Bilder, damit Sie Lizenzen selbst verlängern können. Wir behalten nichts zurück, um eine Abhängigkeit zu erzeugen."
+        },
+        {
+          "question": "Wann genügt ein Template und wann lohnt individuelles Design?",
+          "answer": "Ein sorgfältig gewähltes Template ist wirtschaftlich sinnvoll, wenn Ihre Inhalte üblich sind, die Marke noch entsteht und Geschwindigkeit wichtiger ist als Differenzierung. Individuelles Design rechnet sich bei einem klar definierten Conversion-Pfad, einer ungewöhnlichen Sortiments- oder Leistungsstruktur, mehreren Sprachen oder einer Markenwahrnehmung, die generisch nicht tragbar ist. Wir ordnen Ihren Fall vor dem Angebot ein."
+        },
+        {
+          "question": "Wovon hängen die Kosten ab?",
+          "answer": "Von der Anzahl eigenständiger Templates, nicht von der Seitenzahl. Zwanzig Seiten aus fünf Templates sind deutlich günstiger als acht Seiten mit jeweils eigenem Layout. Weitere Treiber sind die Anzahl der Sprachen, ob ein Designsystem neu entsteht oder erweitert wird, und wie viele Abstimmungsschleifen die interne Freigabe erfordert."
+        },
+        {
+          "question": "Wie lange dauert die Designphase?",
+          "answer": "Eine Unternehmenswebsite benötigt üblicherweise drei bis fünf Wochen bis zur Übergabe, eine fokussierte Landingpage ein bis zwei Wochen. Shop-Designs dauern länger, weil Kategorie-, Produkt-, Warenkorb- und Checkout-Ansichten viele Zustände mitbringen. Der größte Zeitfaktor ist erfahrungsgemäß die Geschwindigkeit Ihrer Rückmeldungen."
+        },
+        {
+          "question": "Was benötigen Sie von uns zum Start?",
+          "answer": "Ihre Ziele und Zielgruppen, vorhandene Markenelemente wie Logo, Schriften, Farben und Bildmaterial, bei bestehender Website einen Zugang zu den Analysedaten sowie eine benannte Person mit Freigabebefugnis. Am wertvollsten sind echte Inhalte, auch im Entwurf: Blindtext verdeckt Probleme, die sonst erst zum Launch sichtbar werden."
+        },
+        {
+          "question": "Wie viele Korrekturschleifen sind enthalten?",
+          "answer": "Wir arbeiten mit strukturierten Feedbackrunden — in der Regel zwei je Phase — statt mit offenem Nachbessern, und jede Phase wird vor der nächsten freigegeben. Das hält Änderungen günstig: Eine Strukturänderung im Wireframe kostet eine Stunde, dieselbe Änderung nach dem visuellen Design mehrere Tage. Wünsche außerhalb des Umfangs kalkulieren wir vorab separat."
+        },
+        {
+          "question": "Gestalten Sie Mobile First?",
+          "answer": "Ja, und zwar konsequent. Der überwiegende Teil des Traffics kommt mobil, häufig über Mittelklassegeräte und Mobilfunkverbindungen, weshalb wir das schmale Layout zuerst entwerfen und die Desktopansicht als Erweiterung behandeln. Zielgrößen, Daumenreichweite, Formularlänge und Bildgewicht werden in dieser Breite entschieden."
+        },
+        {
+          "question": "Welches Barrierefreiheitsniveau streben Sie an?",
+          "answer": "Arbeitsziel ist WCAG 2.2 AA: ausreichende Kontraste für Text und Bedienelemente, sichtbare Fokuszustände, eine schlüssige Überschriftenhierarchie, beschriftete Formularfelder und Layouts, die 200 % Zoom standhalten. Vollständige Konformität hängt zusätzlich von der Umsetzung und Ihren laufenden Inhalten ab; wir übergeben daher die Regeln und prüfen die realisierten Seiten, statt ein Zertifikat zu versprechen."
+        },
+        {
+          "question": "Gestalten Sie auch arabische Oberflächen von rechts nach links?",
+          "answer": "Ja. RTL ist eine Layout- und Typografieaufgabe, keine Übersetzungsaufgabe: Navigation, Icons, Formularausrichtung, Diagramme und Ziffern müssen bewusst gespiegelt werden, und arabische Schrift braucht eine eigene Größen- und Zeilenhöhenskala neben lateinischem Text. Wir entwerfen LTR und RTL als ein System, sodass eine Codebasis beide Richtungen bedient."
+        },
+        {
+          "question": "Verlieren wir beim Relaunch unsere Sichtbarkeit bei Google?",
+          "answer": "Nicht, wenn der Relaunch geplant wird. Wir behalten die URL-Struktur bei, wo sie Traffic bringt, erstellen eine Weiterleitungskarte für unvermeidbare Änderungen und erhalten rankende Seiten samt Überschriften, während wir ihr Layout verbessern. Die Suchmaschinenwirkung wird während der Informationsarchitektur bewertet — genau dort verlieren Relaunches sonst ihre Rankings."
+        },
+        {
+          "question": "Macht ein aufwendiges Design die Seite langsam?",
+          "answer": "Das kann passieren, deshalb definieren wir das Performance-Budget im Design und nicht in der Diskussion nach dem Launch. Vollflächige Videos, Slider, viele Schriftschnitte und große dekorative Bilder sind die typischen Ursachen; wir belegen entweder ihren Nutzen im Verhältnis zur Ladezeit oder ersetzen sie. Core Web Vitals gelten bei uns als gestalterische Rahmenbedingung wie Marke und Layout."
+        }
+      ],
+      "technologies": [
+        { "name": "Figma", "icon": "figma" },
+        { "name": "Next.js", "icon": "nextjs" },
+        { "name": "React", "icon": "react" },
+        { "name": "Tailwind CSS", "icon": "tailwindcss" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "WCAG 2.2", "icon": "shield" },
+        { "name": "Lighthouse", "icon": "pagespeed" },
+        { "name": "Vercel", "icon": "vercel" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تصميم المواقع",
+    "shortDescription": "تصميم مواقع يُقاس بما يحقّقه لا بشكله: بحث وهندسة معلومات، ومخططات هيكلية، ونظام تصميم قابل لإعادة الاستخدام، وواجهات تبدأ من الهاتف وتلتزم بمعايير الوصول، وملف تسليم يبني منه المطوّر دون تخمين.",
+    "fullDescription": "نادراً ما تفشل المواقع لأنها غير جميلة، بل لأن الزائر لا يجد الشيء الذي جاء من أجله، أو لأن الصفحة تستغرق ست ثوانٍ لتظهر على هاتف Android متوسط. لذلك نعمل بهذا الترتيب: البحث وهندسة المعلومات أولاً، ثم مخططات هيكلية تحسم البنية قبل أن يبدأ النقاش حول الألوان، ثم نظام تصميم يضم مقياس الخطوط ورموز الألوان والمكوّنات وحالاتها. أهداف الوصول وفق WCAG 2.2 AA — التباين، ووضوح مؤشر التركيز، ومساحات لمس كافية — وميزانية أداء للصور والخطوط تُحدَّد أثناء التصميم لا بعد الإطلاق. المواقع المؤسسية وصفحات الهبوط وواجهات المتاجر لكل منها معالجة مختلفة، وقد صمّمنا الثلاثة، بما فيها واجهات عربية من اليمين إلى اليسار وواجهة موجّهة للسوق الألماني. التسليم ملف Figma موثّق بالمقاسات والرموز يبني منه فريقنا أو فريقكم مباشرة.",
+    "features": [
+      "بحث أولي وتحليل المنافسين ومراجعة مسار التحويل",
+      "هندسة المعلومات ومسارات المستخدم والمخططات الهيكلية ونماذج Figma الأولية",
+      "نظام تصميم: مقياس الخطوط ورموز الألوان والمكوّنات وحالاتها",
+      "واجهات تبدأ من الهاتف ومصمّمة على نقاط توقف واقعية",
+      "معايير الوصول WCAG 2.2 AA: التباين والتركيز والبنية الدلالية ومساحات اللمس",
+      "تصميم واجهات عربية كاملة من اليمين إلى اليسار ومتعدّدة اللغات",
+      "صور وأيقونات وخطوط ضمن ميزانية أداء محدّدة مسبقاً",
+      "تسليم للمطوّر: مواصفات ورموز وأصول ومراجعة التنفيذ"
+    ],
+    "benefits": [
+      "الزائر يصل إلى الصفحة التي تجيب سؤاله خلال نقرة أو نقرتين",
+      "التصميم يصمد أمام المحتوى الحقيقي والأسماء الطويلة وتعدّد اللغات",
+      "صفحات جديدة تُنجز أسرع لأن المكوّنات تتكرّر بدل إعادة رسمها",
+      "تباين وتركيز ومساحات لمس تُبقي الموقع صالحاً للاستخدام للجميع",
+      "لغة بصرية واحدة تجمع الموقع وصفحات الهبوط والمواد الإعلانية",
+      "ملف تسليم يبني منه المطوّر دون اجتهاد أو أسئلة معلّقة"
+    ],
+    "metaTitle": "تصميم مواقع يركّز على التحويل | PakSoft",
+    "metaDescription": "تصميم مواقع سريع يبدأ من الهاتف: هندسة معلومات ونظام تصميم ودعم كامل للعربية من اليمين إلى اليسار. تواصلوا مع PakSoft للحصول على عرض سعر لمشروعكم.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "البحث وتحديد الأهداف",
+          "description": "نحدّد ما يجب أن يحقّقه الموقع: طلب عرض سعر، أو شراء، أو تقديم طلب، أو حجز موعد، ومن يزوره ومن أي جهاز وقناة. ندخل في الملخص بيانات التحليلات الحالية وصفحات المنافسين والاعتراضات التي يسمعها فريق المبيعات فعلاً، حتى يكون لكل قرار تصميمي سبب واضح."
+        },
+        {
+          "step": 2,
+          "title": "البنية قبل الشكل",
+          "description": "نرسم هندسة المعلومات وبنية التنقل ومسارات المستخدم الأساسية، ثم مخططاً هيكلياً لكل قالب مستقل. حسم البنية بمربعات رمادية أرخص بكثير من إعادة ترتيب تصميم مكتمل، وفي هذه المرحلة تُحلّ معظم مشكلات التحويل فعلياً."
+        },
+        {
+          "step": 3,
+          "title": "الاتجاه البصري ونظام التصميم",
+          "description": "نتفق على الاتجاه البصري عبر شاشتين أو ثلاث شاشات مفصلية، ثم نحوّله إلى نظام: مقياس الخطوط والمسافات ورموز الألوان والأزرار والنماذج والبطاقات مع حالات التمرير والتركيز والخطأ والفراغ. بعد ذلك تُركّب الصفحات الجديدة من النظام بدل ابتكارها من الصفر."
+        },
+        {
+          "step": 4,
+          "title": "تصميم الصفحات بدءاً من الهاتف",
+          "description": "نصمّم كل قالب بعرض الهاتف أولاً ثم نوسّعه إلى الشاشات الأكبر، لأن معظم زياراتكم ستراه بهذا العرض. الصفحات المؤسسية وصفحات الهبوط وشاشات الأقسام والمنتجات ينال كل منها التخطيط الذي تتطلبه وظيفته، مع كل الحالات التي يفرضها المحتوى الحقيقي."
+        },
+        {
+          "step": 5,
+          "title": "مراجعة الوصول والأداء",
+          "description": "قبل التسليم نفحص نسب التباين وترتيب التركيز وبنية العناوين وأحجام مناطق اللمس وسلوك التصميم عند تكبير الصفحة إلى 200%. كما نزن التصميم نفسه: صيغ صور الواجهة ومجموعات الأيقونات وطريقة تحميل الخطوط تُختصر ضمن ميزانية أداء حتى لا تضيع مؤشرات Core Web Vitals أثناء البرمجة."
+        },
+        {
+          "step": 6,
+          "title": "التسليم ودعم مرحلة البرمجة",
+          "description": "تستلمون ملف Figma بالمكوّنات والرموز والأصول المصدَّرة ومواصفات مكتوبة للمسافات والسلوك ونقاط التوقف. ونبقى متاحين طوال مرحلة التطوير ونراجع الصفحات المنفَّذة مقابل التصميم، سواء كتب الشيفرة فريقنا أو فريقكم."
+        }
+      ],
+      "faq": [
+        {
+          "question": "هل تنفّذون الموقع برمجياً أم تصمّمونه فقط؟",
+          "answer": "نقدّم الخدمتين لكننا نفصل بينهما عن قصد. ينتهي عمل التصميم بملف Figma ونظام تصميم ومواصفات مكتوبة، بينما تتولى خدمة تطوير الويب لدينا تحويله إلى Next.js وReact وواجهة خلفية آمنة الأنواع. كثير من عملائنا يسلّمون ملف التصميم إلى فريقهم الداخلي، ولهذا السبب تحديداً نجعل التسليم موثّقاً لا مجرد صور مسطّحة."
+        },
+        {
+          "question": "لمن تعود ملكية ملفات التصميم؟",
+          "answer": "لكم عند سداد الدفعة الأخيرة. تستلمون ملف Figma العامل بمكوّناته ورموزه القابلة للتعديل لا نسخة مسطّحة، إضافة إلى الأصول المصدرية وقائمة بالخطوط والصور المرخّصة كي تتمكّنوا من تجديد تراخيصها بأنفسكم. لا نحتفظ بشيء لإبقائكم مرتبطين بنا."
+        },
+        {
+          "question": "متى يكفي قالب جاهز ومتى نحتاج تصميماً مخصّصاً؟",
+          "answer": "القالب المختار بعناية خيار عملي إذا كان محتواكم اعتيادياً وعلامتكم التجارية في طور التكوين والسرعة أهم من التمايز. أما التصميم المخصّص فيستحق كلفته حين يكون لديكم مسار تحويل محدّد أو كتالوج أو هيكل خدمات غير اعتيادي أو عدة لغات أو حضور تجاري لا يحتمل مظهراً نمطياً. نوضّح لكم أي الحالتين تنطبق قبل تقديم العرض."
+        },
+        {
+          "question": "ما الذي يحدّد تكلفة مشروع التصميم؟",
+          "answer": "عدد القوالب المستقلة وليس عدد الصفحات. عشرون صفحة مبنية على خمسة قوالب أقل كلفة بكثير من ثماني صفحات يحتاج كل منها تخطيطاً خاصاً. تدخل في الحساب أيضاً عدد اللغات، وما إذا كان نظام التصميم سيُبنى من الصفر أم سيُوسَّع، وعدد دورات المراجعة والاعتماد داخل مؤسستكم."
+        },
+        {
+          "question": "كم تستغرق مرحلة التصميم؟",
+          "answer": "الموقع المؤسسي يستغرق عادة من ثلاثة إلى خمسة أسابيع حتى التسليم، وصفحة الهبوط المركّزة من أسبوع إلى أسبوعين. تصميم المتاجر يستغرق وقتاً أطول لأن شاشات الأقسام والمنتج والسلة وإتمام الشراء تحمل حالات كثيرة. وأكبر متغيّر في الجدول الزمني عادةً هو سرعة ملاحظاتكم."
+        },
+        {
+          "question": "ماذا تحتاجون منا للبدء؟",
+          "answer": "أهدافكم وجمهوركم المستهدف، وما لديكم من عناصر هوية مثل الشعار والخطوط والألوان والصور، وصلاحية الوصول إلى التحليلات إن كان الموقع قائماً، وشخص واحد محدّد يملك صلاحية الاعتماد. الأهم على الإطلاق هو المحتوى الحقيقي ولو كان مسوّدة، لأن التصميم فوق نص وهمي يخفي مشكلات تظهر يوم الإطلاق."
+        },
+        {
+          "question": "كم عدد جولات التعديل المشمولة؟",
+          "answer": "نعمل بجولات مراجعة منظّمة، غالباً جولتان في كل مرحلة، بدل التعديل المفتوح، ويُعتمد كل طور قبل الانتقال إلى التالي. هذا يبقي التغيير رخيصاً: تعديل بنيوي في المخطط الهيكلي يستغرق ساعة، والتعديل نفسه بعد اكتمال التصميم البصري يكلّف أياماً. أما الطلبات خارج النطاق المتفق عليه فنسعّرها كتابةً قبل البدء."
+        },
+        {
+          "question": "هل تصمّمون للهاتف أولاً؟",
+          "answer": "نعم، وليس شعاراً. الغالبية العظمى من الزيارات في أسواق الخليج تأتي من الهاتف، وكثير منها عبر أجهزة متوسطة وشبكات بيانات، لذلك نصمّم العرض الضيّق أولاً ونتعامل مع نسخة سطح المكتب كتوسعة له. أحجام مناطق اللمس ومدى وصول الإبهام وطول النماذج ووزن الصور تُحسم عند هذا العرض."
+        },
+        {
+          "question": "ما مستوى إمكانية الوصول الذي تلتزمون به؟",
+          "answer": "هدفنا العملي هو WCAG 2.2 AA: تباين كافٍ للنصوص وعناصر الواجهة، ومؤشر تركيز مرئي، وتسلسل عناوين منطقي، وحقول نماذج موسومة، وتخطيط يصمد عند التكبير إلى 200%. الالتزام الكامل يعتمد كذلك على التنفيذ البرمجي وعلى المحتوى الذي تضيفونه لاحقاً، لذلك نسلّم القواعد ونفحص الصفحات المنفَّذة بدل ادّعاء شهادة."
+        },
+        {
+          "question": "هل تصميم الواجهات العربية من اليمين إلى اليسار تخصّص لديكم؟",
+          "answer": "نعم، ونتعامل معه كمسألة تخطيط وطباعة لا كمسألة ترجمة. التنقل والأيقونات ومحاذاة النماذج والرسوم البيانية والأرقام تحتاج انعكاساً مدروساً، والخط العربي يحتاج مقياس حجم وارتفاع سطر خاصاً به ليستقر بجانب النص اللاتيني. نصمّم النسختين العربية والإنجليزية كنظام واحد حتى تخدم قاعدة شيفرة واحدة الاتجاهين معاً."
+        },
+        {
+          "question": "لدينا موقع قائم، هل نفقد ترتيبنا في البحث عند إعادة التصميم؟",
+          "answer": "لا، إذا خُطّط لإعادة التصميم بدل الاكتفاء بحسن النية. نُبقي بنية الروابط كما هي حيث تجلب زيارات، ونعدّ خريطة إعادة توجيه لما يجب تغييره، ونحافظ على الصفحات والعناوين التي تحقّق ترتيباً بينما نحسّن تخطيطها. ونقيّم أثر ذلك على البحث أثناء مرحلة هندسة المعلومات، فهي المرحلة التي تفقد فيها مشاريع إعادة التصميم ترتيبها عادةً."
+        },
+        {
+          "question": "هل يُبطئ التصميم الثقيل الموقع؟",
+          "answer": "قد يفعل، ولهذا نضع ميزانية الأداء أثناء التصميم بدل مناقشتها بعد الإطلاق. الفيديو بملء الشاشة والشرائح المتحركة وتعدّد أوزان الخطوط والصور الزخرفية الكبيرة هي الأسباب المعتادة، وإمّا نبرّر كلفتها في زمن التحميل أو نستبدلها. نتعامل مع مؤشرات Core Web Vitals كقيد تصميمي ملزم شأنها شأن الهوية والتخطيط."
+        }
+      ],
+      "technologies": [
+        { "name": "Figma", "icon": "figma" },
+        { "name": "Next.js", "icon": "nextjs" },
+        { "name": "React", "icon": "react" },
+        { "name": "Tailwind CSS", "icon": "tailwindcss" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "WCAG 2.2", "icon": "shield" },
+        { "name": "Lighthouse", "icon": "pagespeed" },
+        { "name": "Vercel", "icon": "vercel" }
+      ]
+    }
+  }
+}

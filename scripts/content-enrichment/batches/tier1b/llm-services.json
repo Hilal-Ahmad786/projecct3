@@ -1,0 +1,447 @@
+{
+  "slug": "llm-services",
+  "en": {
+    "name": "LLM Services",
+    "shortDescription": "LLM work with the hype removed: retrieval grounded in your own data, tool calling into your systems, evaluation sets that catch regressions, and honest advice on when fine-tuning is not the answer.",
+    "fullDescription": "Most LLM projects fail on the unglamorous parts. The model answers confidently from nothing, nobody can prove whether last week's prompt change helped, and the monthly bill arrives as a surprise. We build the opposite: retrieval over your own catalogue, policies and documents so answers point at a source; tool calling so the assistant reads live records instead of guessing; evaluation sets run before any prompt or model change ships; and per-request token accounting that makes cost forecastable. Our experience is current, not theoretical: EidosUs, an AI reading assistant that turns academic papers into source-linked research notes, and a multi-tenant support agent for stores on the ikas e-commerce platform with RAG over product and FAQ data, web chat plus messaging channels, and guardrails against internal disclosure or cross-customer data.",
+    "features": [
+      "Retrieval-Augmented Generation (RAG) Over Your Own Documents and Catalogue",
+      "Tool and Function Calling Into Live Business Systems",
+      "Prompt Design, Versioning and Side-by-Side Comparison",
+      "Evaluation Sets and Regression Testing Before Every Release",
+      "Guardrails Against Invented Answers, Data Leakage and Internal Disclosure",
+      "Streaming Responses and Model-Tier Routing for Latency and Cost",
+      "Token and Cost Tracking per Request, User and Feature",
+      "Human-in-the-Loop Approval for High-Risk or Irreversible Actions"
+    ],
+    "benefits": [
+      "Answers your team can defend, because each one points at a source",
+      "A monthly model bill you can forecast instead of discover",
+      "Prompt and model changes shipped with evidence rather than impressions",
+      "Clear boundaries on which data leaves your systems and which never does",
+      "A path from one narrow use case to a wider rollout without a rebuild",
+      "Fewer bad escalations because the assistant hands over cleanly when unsure"
+    ],
+    "metaTitle": "LLM Services — RAG, Tool Calling & Evals | PakSoft",
+    "metaDescription": "LLM integration, RAG over your own data and custom model work — grounded answers, guardrails, evaluation sets, real cost control. Book a free LLM scoping call.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Use-Case and Feasibility Review",
+          "description": "We start from the job to be done — the questions your team answers repeatedly, the documents somebody reads and summarises, the re-typing nobody enjoys — and score each candidate by volume, tolerance for error and how you would measure success. Where a database lookup, a rule or a report would do the job better and cheaper, we say so before you spend money on a model."
+        },
+        {
+          "step": 2,
+          "title": "Grounding and Data Audit",
+          "description": "We map what the model must know: product and price data, policies, past support tickets, PDFs, internal wikis, and how often each source changes. That tells us what can be retrieved at query time, what needs cleaning first, and which fields must never be sent to a model provider at all."
+        },
+        {
+          "step": 3,
+          "title": "Prompt and Retrieval Prototype",
+          "description": "The first working version uses careful prompting plus retrieval over your own content with pgvector embeddings — deliberately no fine-tuning, because it is rarely the cheapest way to fix a wrong answer. You get a prototype you can interrogate with your own awkward questions in weeks, not quarters, and a clear read on whether the idea holds."
+        },
+        {
+          "step": 4,
+          "title": "Evaluation Set and Guardrails",
+          "description": "We write down what counts as a correct answer — a graded set of real questions with expected behaviour — and run it against every prompt, retrieval or model change. Guardrails land at the same time: citation of sources, refusal rules when evidence is missing, limits on what the assistant may reveal about its own workings, and hard blocks on returning another customer's data."
+        },
+        {
+          "step": 5,
+          "title": "Integration and Rollout",
+          "description": "Tool calling connects the assistant to live systems so it reads real orders, stock and records instead of guessing, and it ships where your users already are: a web widget, an internal dashboard, WhatsApp or Instagram. Irreversible actions stay behind human approval — the connection layer itself is covered in detail on our GPT & Claude API Integration page."
+        },
+        {
+          "step": 6,
+          "title": "Monitoring, Cost Control and Model Migration",
+          "description": "Every request is logged with tokens in and out, so cost per conversation and per feature is visible from the first day rather than at the first invoice. When a provider deprecates a model or releases a better one, we re-run the evaluation set on the candidate, compare quality and cost, and switch behind a configuration change with a rollback path."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Do we need to fine-tune a model?",
+          "answer": "Usually not, and almost never first. Most \"the model got it wrong\" problems are retrieval or prompt problems — the right information was never put in front of the model, so training it harder does not help. Fine-tuning earns its place when you need a consistent output format or a narrow house style at scale, and even then it sits on top of good retrieval; that scope belongs on our Custom LLM Development page."
+        },
+        {
+          "question": "How do you stop the model inventing answers?",
+          "answer": "Grounding, citation and refusal, in that order. The assistant answers from retrieved passages of your own content and shows where each claim came from, and we write explicit rules for what it does when nothing relevant is found: say so and hand over, rather than improvise. Nobody can honestly promise a hallucination rate of zero — what we can do is make wrong answers rare, visible and traceable to a source."
+        },
+        {
+          "question": "What data do you need from us to start?",
+          "answer": "Your product or service information, your policies, and a sample of the real questions people already ask — helpdesk exports, WhatsApp threads and email are ideal. You do not need a labelled training set or a data warehouse. Messy real questions are far more useful to us than a tidy FAQ page, because they show the phrasing your customers actually use."
+        },
+        {
+          "question": "What will it cost to run each month?",
+          "answer": "Model usage is billed per token, so the honest answer is a range tied to your volume, not a flat number. We estimate it from your real question volume and typical answer length, then track tokens per request in production so you can see cost by feature and set alerts. Routing simple queries to a smaller model tier and caching repeated context are the two levers that move the bill most."
+        },
+        {
+          "question": "Where does our data go, and is it used to train models?",
+          "answer": "Prompts and retrieved context go to whichever model provider you approve; your database stays with you. The major providers offer commercial API terms under which submitted data is not used to train their models, with retention windows that can be shortened or switched off — we configure that explicitly and write down what was chosen. If your policy rules out third-party processing entirely, we design around regional endpoints or an open-weight model you host yourself."
+        },
+        {
+          "question": "Can it read from our existing systems?",
+          "answer": "Yes — that is exactly what tool calling is for. Rather than copying your database into the model, the assistant calls narrow, permission-scoped functions: look up an order by number, check stock for a variant, fetch an invoice. We build those read-only by default, and anything that writes or changes state goes through an explicit confirmation step."
+        },
+        {
+          "question": "How long does a first version take?",
+          "answer": "A focused assistant with retrieval over your content is typically a few weeks to a usable internal prototype, and longer to a public launch once evaluation, guardrails and channel integration are finished. The timeline depends far more on how accessible and current your data is than on the model work itself. We sequence it so you can judge quality early, before the larger integration budget is committed."
+        },
+        {
+          "question": "What happens when the model we use is deprecated?",
+          "answer": "Providers retire models on a published schedule, so this is a planned migration rather than an emergency. Because we keep an evaluation set, moving means running the candidate model against known-good answers, comparing quality, latency and cost, then switching behind a config change. The provider wrapper is deliberately thin, so no application code is welded to one vendor."
+        },
+        {
+          "question": "How good is it in languages other than English?",
+          "answer": "Current frontier models handle Turkish, German and Arabic well for support, summarisation and classification, but quality varies by task and by how your own source content is written. We test in the languages you actually serve, using your own phrasing and product names, before anyone signs off. Where output reads stiff, the fix is usually the prompt and the source content rather than a different model."
+        },
+        {
+          "question": "Can we run the model on our own infrastructure?",
+          "answer": "Yes, with real trade-offs. Open-weight models on your own or an EU-region GPU host keep data inside your boundary, at the cost of infrastructure work, GPU spend and, on the hardest reasoning tasks, a quality gap against the leading hosted models. For most teams we recommend starting with a hosted API under strict retention settings and revisiting self-hosting when a policy requirement or sustained volume makes it pay."
+        }
+      ],
+      "technologies": [
+        { "name": "Anthropic Claude", "icon": "anthropic" },
+        { "name": "OpenAI API", "icon": "openai" },
+        { "name": "Python", "icon": "python" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "pgvector", "icon": "pgvector" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "LLM Hizmetleri (Büyük Dil Modelleri)",
+    "shortDescription": "Abartıdan arındırılmış LLM çalışması: kendi verinizle beslenen RAG, mevcut sistemlerinize bağlanan araç çağırma, her değişiklikten önce koşturulan test setleri ve token maliyetini öngörülebilir kılan ölçüm altyapısı; ince ayarın gerekmediği yerde bunu açıkça söyleriz.",
+    "fullDescription": "LLM projeleri çoğunlukla sıkıcı ayrıntılarda tökezler: model bilmediği şeyi kendinden emin bir dille uydurur, geçen hafta değiştirilen istemin işe yarayıp yaramadığını kimse kanıtlayamaz ve ay sonu faturası sürpriz olur. Biz tersini kuruyoruz. Kendi ürün verinize, politikalarınıza ve belgelerinize dayanan RAG ile her yanıt bir kaynağa işaret eder; araç çağırma sayesinde asistan tahmin yürütmek yerine canlı kayıtları okur; her istem veya model değişikliği yayına çıkmadan önce değerlendirme seti çalıştırılır; istek başına token muhasebesi tutulduğu için maliyet tahmin edilebilir bir sayıya dönüşür. Deneyimimiz güncel: akademik makaleleri kaynak bağlantılı araştırma notlarına çeviren yapay zeka okuma asistanı EidosUs ve ikas altyapısındaki e-ticaret mağazaları için geliştirdiğimiz, ürün ve SSS verisi üzerinde RAG çalıştıran, web sohbeti ile WhatsApp ve Instagram kanallarını kapsayan çok kiracılı destek asistanı.",
+    "features": [
+      "Kendi belgeleriniz ve ürün kataloğunuz üzerinde RAG (pgvector ile)",
+      "Canlı sistemlere bağlanan araç ve fonksiyon çağırma",
+      "İstem (prompt) tasarımı, sürümleme ve yan yana karşılaştırma",
+      "Her yayın öncesi değerlendirme seti ve regresyon testi",
+      "Uydurma yanıt, veri sızıntısı ve iç bilgi ifşasına karşı koruma kuralları",
+      "Akışkan (streaming) yanıt ve gecikme/maliyet için model kademesi yönlendirme",
+      "İstek, kullanıcı ve özellik bazında token ve maliyet takibi",
+      "Riskli veya geri alınamaz işlemlerde insan onayı adımı"
+    ],
+    "benefits": [
+      "Her yanıt bir kaynağa dayandığı için ekibinizin savunabileceği çıktılar",
+      "Ay sonunda öğrenilen değil, önceden öngörülebilen model maliyeti",
+      "İstem ve model değişikliklerinin izlenime değil ölçüme dayanarak yayınlanması",
+      "Hangi verinin sistem dışına çıktığının, hangisinin hiç çıkmadığının net sınırı",
+      "Tek bir kullanım senaryosundan geniş kullanıma sıfırdan yazmadan geçiş",
+      "Emin olmadığında düzgün devretmesi sayesinde daha az hatalı eskalasyon"
+    ],
+    "metaTitle": "LLM Hizmetleri — RAG, GPT & Claude API | PakSoft",
+    "metaDescription": "Kendi verinizle çalışan LLM çözümleri: RAG, GPT ve Claude API entegrasyonu, uydurma yanıt kontrolü, KVKK uyumlu kurgu ve maliyet takibi. Ücretsiz ön görüşme.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Kullanım Senaryosu ve Fizibilite",
+          "description": "İşin kendisinden başlarız: ekibin sürekli tekrar ettiği sorular, birinin okuyup özetlediği belgeler, kimsenin sevmediği veri girişi. Her adayı hacim, hata toleransı ve başarının nasıl ölçüleceği açısından puanlarız; sorunun basit bir sorgu, kural ya da raporla daha ucuza çözüleceğini görürsek, siz modele bütçe ayırmadan önce bunu söyleriz."
+        },
+        {
+          "step": 2,
+          "title": "Veri ve Dayanak Envanteri",
+          "description": "Modelin bilmesi gerekenleri çıkarırız: ürün ve fiyat verisi, iade ve kargo politikaları, geçmiş destek kayıtları, PDF'ler, iç wiki ve bunların ne sıklıkla değiştiği. Bu envanter, hangi bilginin soru anında getirileceğini, hangisinin önce temizlenmesi gerektiğini ve KVKK kapsamında hangi alanların hiçbir sağlayıcıya gönderilmeyeceğini belirler."
+        },
+        {
+          "step": 3,
+          "title": "İstem ve Getirim Prototipi",
+          "description": "İlk çalışan sürüm, dikkatli istem tasarımı ve kendi içeriğiniz üzerinde pgvector tabanlı getirim ile kurulur; bilinçli olarak ince ayar yapmayız, çünkü yanlış yanıtı düzeltmenin en ucuz yolu nadiren budur. Birkaç hafta içinde kendi zor sorularınızla sınayabileceğiniz bir prototip elinizde olur."
+        },
+        {
+          "step": 4,
+          "title": "Değerlendirme Seti ve Koruma Kuralları",
+          "description": "Doğru yanıtın ne olduğunu yazılı hale getiririz: gerçek sorulardan oluşan, beklenen davranışı tanımlanmış bir set. Her istem, getirim veya model değişikliğinde bu set yeniden koşar; aynı aşamada kaynak gösterme, kanıt yoksa reddetme, asistanın kendi iç yapısını açıklamaması ve başka bir müşterinin verisini asla döndürmemesi kuralları devreye alınır."
+        },
+        {
+          "step": 5,
+          "title": "Entegrasyon ve Yayına Alma",
+          "description": "Araç çağırma ile asistan gerçek sipariş, stok ve müşteri kayıtlarını okur; tahmin etmez. Kullanıcılarınızın zaten bulunduğu yerde yayına alırız: site içi sohbet balonu, iç panel, WhatsApp veya Instagram. Geri alınamaz işlemler insan onayına bağlı kalır; bağlantı katmanının ayrıntısı GPT & Claude API Entegrasyonu sayfamızdadır."
+        },
+        {
+          "step": 6,
+          "title": "İzleme, Maliyet Kontrolü ve Model Geçişi",
+          "description": "Her istek, giren ve çıkan token sayısıyla loglanır; böylece konuşma ve özellik başına maliyet ilk faturayı beklemeden görünür olur. Sağlayıcı bir modeli emekliye ayırdığında ya da daha iyisini yayınladığında, adayı değerlendirme setiyle sınar, kalite ve maliyeti karşılaştırır, geçişi geri alınabilir bir ayar değişikliğiyle yaparız."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Kendi modelimizi eğitmemiz (fine-tuning) gerekir mi?",
+          "answer": "Genellikle hayır ve neredeyse hiçbir zaman ilk adım olarak değil. \"Model yanlış cevap verdi\" şikayetlerinin çoğu aslında getirim veya istem sorunudur; doğru bilgi modelin önüne hiç konmamıştır, dolayısıyla daha çok eğitmek çözmez. İnce ayar, tutarlı bir çıktı formatına veya ölçekte belirli bir dil tonuna ihtiyaç duyduğunuzda anlam kazanır ve o zaman bile iyi bir getirim katmanının üzerine oturur; bu kapsam Özel LLM Geliştirme sayfamızda ele alınır."
+        },
+        {
+          "question": "Model uydurma bilgi verirse ne olur?",
+          "answer": "Sırasıyla dayandırma, kaynak gösterme ve reddetme kurallarıyla çalışırız. Asistan yanıtını kendi içeriğinizden getirilen pasajlara dayandırır ve hangi kaynaktan aldığını gösterir; ilgili bir kayıt bulunamadığında uydurmak yerine bilmediğini söyleyip insana devreder. Sıfır hata sözü veren kimseye inanmayın; yapılabilecek olan, yanlış yanıtı nadir, görünür ve kaynağına kadar izlenebilir kılmaktır."
+        },
+        {
+          "question": "KVKK açısından verilerimiz nerede işleniyor?",
+          "answer": "Yalnızca sizin onayladığınız sağlayıcıya, yalnızca yanıt için gereken istem ve getirilen bağlam gider; veritabanınız sizde kalır. Büyük sağlayıcılar, API üzerinden gönderilen verinin model eğitiminde kullanılmadığı ticari şartlar ve kısaltılabilir veya kapatılabilir saklama süreleri sunar; bunu açıkça yapılandırır ve aydınlatma metniniz ile envanterinize yazılabilecek şekilde belgeleriz. Kişisel veri alanlarını (ad, telefon, adres) mümkün olduğunca maskeleyerek gönderiyoruz; yurt dışı aktarımın hiç istenmediği durumlarda AB bölgesi uç noktaları veya kendi sunucunuzdaki açık ağırlıklı model seçeneklerini kurgularız."
+        },
+        {
+          "question": "Aylık maliyeti ne olur, bütçemizi nasıl planlarız?",
+          "answer": "Model kullanımı token başına faturalanır; dolayısıyla dürüst cevap sabit bir rakam değil, hacminize bağlı bir aralıktır. Gerçek soru hacminiz ve tipik yanıt uzunluğunuz üzerinden tahmin çıkarır, canlıda istek başına token takibi kurar, uyarı eşikleri tanımlarız. Basit soruları küçük ve ucuz bir model kademesine yönlendirmek ile tekrar eden bağlamı önbelleğe almak, faturayı en çok düşüren iki kaldıraçtır."
+        },
+        {
+          "question": "Türkçe yanıt kalitesi yeterli mi?",
+          "answer": "Güncel modeller destek, özetleme ve sınıflandırma işlerinde Türkçede iyi sonuç veriyor; ancak kalite göreve ve sizin içeriğinizin nasıl yazıldığına göre değişiyor. Türkçe çıktının bozulduğu yerler genellikle model değil, istem ve kaynak metin kaynaklıdır: ürün adları, ölçü birimleri ve kargo terimleri sizin kullandığınız biçimde tanımlanmadığında sonuç yapay okunur. Bu yüzden testleri gerçek müşteri mesajlarınızla, sizin dilinizle yapar, onay öncesi birlikte okuruz."
+        },
+        {
+          "question": "Mevcut sistemlerimize (ERP, e-ticaret paneli, CRM) bağlanabilir mi?",
+          "answer": "Evet, araç çağırma tam olarak bunun için var. Veritabanınızı modele kopyalamak yerine asistan dar kapsamlı ve yetkilendirilmiş fonksiyonlar çağırır: sipariş numarasıyla sipariş sorgula, varyant stoğunu kontrol et, fatura getir. Bu fonksiyonları varsayılan olarak salt okunur yazarız; yazma veya değiştirme gerektiren her işlem açık bir onay adımından geçer."
+        },
+        {
+          "question": "İlk sürüm ne kadar sürede yayına girer?",
+          "answer": "Kendi içeriğiniz üzerinde çalışan odaklı bir asistan için iç kullanıma açılabilir prototip tipik olarak birkaç haftadır; halka açık yayın, değerlendirme seti, koruma kuralları ve kanal entegrasyonu tamamlandıktan sonra gelir. Süreyi belirleyen şey model tarafındaki iş değil, verinizin ne kadar erişilebilir ve güncel olduğudur. Sıralamayı, büyük entegrasyon bütçesini taahhüt etmeden önce kaliteyi görebileceğiniz şekilde kurarız."
+        },
+        {
+          "question": "Kullandığımız model kapatılırsa ne olacak?",
+          "answer": "Sağlayıcılar modelleri ilan edilmiş takvimlerle emekliye ayırır; yani bu acil bir durum değil, planlanabilir bir geçiştir. Elimizde değerlendirme seti olduğu için geçiş, aday modeli bilinen doğru yanıtlarla sınamak, kalite, gecikme ve maliyeti karşılaştırmak ve ayar değişikliğiyle devreye almaktan ibarettir. Sağlayıcı sarmalayıcısını bilinçli olarak ince tutarız; uygulama kodunuz tek bir markaya kilitlenmez."
+        },
+        {
+          "question": "Modeli kendi sunucumuzda çalıştırabilir miyiz?",
+          "answer": "Evet, ama bedeli var. Açık ağırlıklı modeller kendi altyapınızda veya AB bölgesindeki bir GPU sağlayıcısında çalıştığında veri sınırınızın dışına çıkmaz; karşılığında altyapı işi, GPU maliyeti ve en zorlu akıl yürütme görevlerinde lider bulut modellerine göre kalite farkı gelir. Çoğu ekibe önce sıkı saklama ayarlarıyla bulut API'si öneririz; bir mevzuat gereksinimi veya süreklilik kazanmış hacim ortaya çıktığında kendi sunucunuzda çalıştırmayı yeniden değerlendiririz."
+        },
+        {
+          "question": "Küçük bir ekibiz, bu iş bize göre mi?",
+          "answer": "Genellikle evet, çünkü en net kazanç tekrar eden işte ortaya çıkıyor: aynı kargo sorusuna günde otuz kez cevap yazmak, aynı belgeden aynı özeti çıkarmak. KOBİ ölçeğinde doğru başlangıç, tek bir dar senaryoyu uçtan uca çalışır hale getirmek ve maliyetini ölçmektir; işe yaramazsa kaybınız birkaç haftalık çalışmayla sınırlı kalır. Büyük ve her şeyi kapsayan bir yapay zeka programı öneren teklife temkinli yaklaşın."
+        }
+      ],
+      "technologies": [
+        { "name": "Anthropic Claude", "icon": "anthropic" },
+        { "name": "OpenAI API", "icon": "openai" },
+        { "name": "Python", "icon": "python" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "pgvector", "icon": "pgvector" }
+      ]
+    }
+  },
+  "de": {
+    "name": "LLM-Services (Große Sprachmodelle)",
+    "shortDescription": "LLM-Projekte ohne Marketingnebel: Retrieval auf Ihren eigenen Daten, Tool Calling in Ihre Systeme, Evaluationssets vor jedem Release, dokumentierte Datenflüsse — und ein klares Wort dazu, wann Fine-Tuning schlicht nicht die richtige Antwort ist.",
+    "fullDescription": "LLM-Vorhaben scheitern selten am Modell und fast immer an den unspektakulären Details: Das System antwortet selbstbewusst ohne Grundlage, niemand kann belegen, ob die Prompt-Änderung der letzten Woche etwas verbessert hat, und die Rechnung am Monatsende ist eine Überraschung. Wir bauen das Gegenteil. Retrieval über Ihren eigenen Katalog, Ihre Richtlinien und Dokumente, sodass jede Aussage auf eine Quelle zeigt. Tool Calling, damit der Assistent echte Datensätze liest statt zu raten. Evaluationssets, die vor jeder Prompt- oder Modelländerung laufen. Und eine Token-Abrechnung pro Anfrage, die Kosten planbar macht. Unsere Erfahrung ist aktuell: EidosUs, ein KI-Leseassistent, der wissenschaftliche Arbeiten in quellenverknüpfte Notizen überführt, sowie ein mandantenfähiger Support-Agent für Shops auf der E-Commerce-Plattform ikas mit RAG über Produkt- und FAQ-Daten, Web-Chat sowie WhatsApp- und Instagram-Kanälen.",
+    "features": [
+      "Retrieval-Augmented Generation (RAG) auf Ihren Dokumenten und Ihrem Katalog",
+      "Tool- und Function-Calling in bestehende Fachsysteme",
+      "Prompt-Design, Versionierung und direkter Qualitätsvergleich",
+      "Evaluationssets und Regressionstests vor jedem Release",
+      "Leitplanken gegen erfundene Antworten, Datenabfluss und interne Offenlegung",
+      "Streaming-Antworten und Modellklassen-Routing für Latenz und Kosten",
+      "Token- und Kostenerfassung pro Anfrage, Nutzer und Funktion",
+      "Human-in-the-Loop-Freigabe bei risikoreichen oder irreversiblen Aktionen"
+    ],
+    "benefits": [
+      "Antworten, die Ihr Team vertreten kann, weil jede auf eine Quelle verweist",
+      "Planbare monatliche Modellkosten statt einer Überraschung auf der Rechnung",
+      "Änderungen an Prompt und Modell gehen mit Nachweis live, nicht nach Gefühl",
+      "Dokumentierte Grenze zwischen Daten, die Ihr System verlassen, und solchen, die bleiben",
+      "Ein Weg vom engen Erstanwendungsfall zum breiten Rollout ohne Neubau",
+      "Saubere Übergabe an Menschen, wenn die Datenlage nicht ausreicht"
+    ],
+    "metaTitle": "LLM-Services — RAG, Tool Calling, Evals | PakSoft",
+    "metaDescription": "LLM-Integration, RAG auf eigenen Daten und individuelle Modelle: belegte Antworten, Leitplanken, DSGVO-konforme Datenflüsse. Jetzt LLM-Erstgespräch vereinbaren.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Anwendungsfall und Machbarkeit",
+          "description": "Wir beginnen bei der eigentlichen Aufgabe: den Fragen, die Ihr Team immer wieder beantwortet, den Dokumenten, die jemand liest und zusammenfasst, den Daten, die von einem System ins nächste getippt werden. Jeden Kandidaten bewerten wir nach Volumen, Fehlertoleranz und Messbarkeit — und sagen es Ihnen, wenn eine Datenbankabfrage oder eine Regel die Aufgabe günstiger löst als ein Modell."
+        },
+        {
+          "step": 2,
+          "title": "Daten- und Grundlagenaufnahme",
+          "description": "Wir erfassen, was das Modell wissen muss: Produkt- und Preisdaten, Richtlinien, frühere Support-Vorgänge, PDFs, interne Wikis und deren Änderungsfrequenz. Daraus ergibt sich, was zur Laufzeit abgerufen wird, was zuvor bereinigt gehört und welche personenbezogenen Felder gar nicht erst an einen Anbieter übermittelt werden."
+        },
+        {
+          "step": 3,
+          "title": "Prototyp aus Prompt und Retrieval",
+          "description": "Die erste lauffähige Version arbeitet mit sorgfältigem Prompting und Retrieval über Ihre eigenen Inhalte via pgvector — bewusst ohne Fine-Tuning, weil das selten der günstigste Weg zu einer richtigen Antwort ist. Sie erhalten innerhalb weniger Wochen einen Prototyp, den Sie mit Ihren eigenen unangenehmen Fragen prüfen können."
+        },
+        {
+          "step": 4,
+          "title": "Evaluationsset und Leitplanken",
+          "description": "Wir halten schriftlich fest, was als korrekte Antwort gilt: ein bewertetes Set echter Fragen mit erwartetem Verhalten, das bei jeder Prompt-, Retrieval- oder Modelländerung erneut läuft. Parallel greifen die Leitplanken — Quellenangabe, Verweigerung bei fehlender Evidenz, keine Auskunft über die eigene Funktionsweise und eine harte Sperre gegen Daten anderer Kunden."
+        },
+        {
+          "step": 5,
+          "title": "Integration und Rollout",
+          "description": "Über Tool Calling liest der Assistent echte Bestellungen, Bestände und Datensätze statt zu raten, und er wird dort ausgeliefert, wo Ihre Nutzer bereits sind: Web-Widget, internes Dashboard, WhatsApp oder Instagram. Irreversible Aktionen bleiben hinter einer menschlichen Freigabe; die Anbindungsebene beschreiben wir ausführlich auf der Seite GPT- & Claude-API-Integration."
+        },
+        {
+          "step": 6,
+          "title": "Monitoring, Kostensteuerung und Modellwechsel",
+          "description": "Jede Anfrage wird mit ein- und ausgehenden Token protokolliert, sodass Kosten pro Konversation und pro Funktion vom ersten Tag an sichtbar sind. Stellt ein Anbieter ein Modell ab oder veröffentlicht ein besseres, prüfen wir den Kandidaten gegen das Evaluationsset, vergleichen Qualität, Latenz und Kosten und schalten über eine Konfigurationsänderung mit Rückfallweg um."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Brauchen wir ein fein abgestimmtes eigenes Modell?",
+          "answer": "In aller Regel nicht, und praktisch nie als ersten Schritt. Die meisten Fälle von \"das Modell hat falsch geantwortet\" sind Retrieval- oder Prompt-Probleme: Die richtige Information lag dem Modell nie vor, und mehr Training ändert daran nichts. Fine-Tuning lohnt sich bei konstanten Ausgabeformaten oder einer engen Hausschreibweise im Volumen — und sitzt auch dann auf gutem Retrieval auf; diesen Umfang behandeln wir unter Individuelle LLM-Entwicklung."
+        },
+        {
+          "question": "Wie verhindern Sie erfundene Antworten?",
+          "answer": "Durch Erdung, Quellenangabe und Verweigerung, in dieser Reihenfolge. Der Assistent antwortet aus abgerufenen Passagen Ihrer eigenen Inhalte und zeigt, woher eine Aussage stammt; findet er nichts Passendes, sagt er das und übergibt an einen Menschen, statt zu improvisieren. Eine Halluzinationsrate von null kann seriös niemand zusichern — erreichbar ist, dass Fehler selten, sichtbar und bis zur Quelle nachvollziehbar sind."
+        },
+        {
+          "question": "Wie sieht es mit DSGVO und Auftragsverarbeitung aus?",
+          "answer": "An den von Ihnen freigegebenen Anbieter gehen ausschließlich der Prompt und der abgerufene Kontext; Ihre Datenbank bleibt bei Ihnen. Für die großen Anbieter existieren Auftragsverarbeitungsverträge und kommerzielle API-Bedingungen, nach denen übermittelte Daten nicht zum Training verwendet werden und Aufbewahrungsfristen verkürzt oder deaktiviert werden können — wir konfigurieren das explizit und dokumentieren die Einstellung für Ihr Verarbeitungsverzeichnis. Personenbezogene Felder maskieren wir, wo es fachlich möglich ist; ist eine Übermittlung in Drittländer ausgeschlossen, planen wir mit EU-Regionen oder einem selbst gehosteten Open-Weight-Modell."
+        },
+        {
+          "question": "Wie dokumentieren Sie das System für Audits?",
+          "answer": "Zu jedem Release gehören eine Beschreibung der Datenflüsse, die eingesetzten Modelle und Regionen, die Aufbewahrungseinstellungen, das Evaluationsset mit Ergebnissen und die Protokollierung, wer wann welche Antwort erhalten hat. Vor dem Hintergrund der Transparenzerwartungen rund um den EU AI Act halten wir außerdem fest, wo Nutzer erkennbar mit einem KI-System sprechen und wie die Übergabe an Menschen funktioniert — das ist unsere Dokumentationspraxis, keine Rechtsberatung und keine Konformitätsbescheinigung."
+        },
+        {
+          "question": "Was kostet der Betrieb pro Monat?",
+          "answer": "Modellnutzung wird pro Token abgerechnet, die ehrliche Antwort ist deshalb eine Spanne in Abhängigkeit von Ihrem Volumen. Wir schätzen sie aus realem Anfragevolumen und typischer Antwortlänge, erfassen im Betrieb Token pro Anfrage und richten Schwellenwerte ein. Einfache Anfragen auf eine kleinere Modellklasse zu routen und wiederkehrenden Kontext zu cachen sind die beiden Hebel mit der größten Wirkung."
+        },
+        {
+          "question": "Lässt sich das an unsere bestehenden Systeme anbinden?",
+          "answer": "Ja, genau dafür gibt es Tool Calling. Statt Ihre Datenbank in das Modell zu kopieren, ruft der Assistent eng geschnittene, berechtigungsgeprüfte Funktionen auf: Bestellung per Nummer nachschlagen, Bestand einer Variante prüfen, Rechnung abrufen. Diese Funktionen bauen wir standardmäßig lesend; alles Schreibende läuft über eine ausdrückliche Bestätigung."
+        },
+        {
+          "question": "Wie lange dauert die erste Version?",
+          "answer": "Ein fokussierter Assistent mit Retrieval auf Ihren Inhalten erreicht typischerweise in wenigen Wochen einen intern nutzbaren Prototyp; bis zum öffentlichen Start kommen Evaluation, Leitplanken und Kanalintegration hinzu. Die Dauer hängt deutlich stärker davon ab, wie zugänglich und aktuell Ihre Daten sind, als von der Modellarbeit. Wir schneiden das Projekt so, dass Sie die Qualität beurteilen können, bevor das größere Integrationsbudget freigegeben wird."
+        },
+        {
+          "question": "Was passiert, wenn unser Modell abgekündigt wird?",
+          "answer": "Anbieter stellen Modelle nach veröffentlichtem Zeitplan ab, das ist ein planbarer Wechsel und kein Notfall. Da ein Evaluationsset existiert, besteht die Migration darin, das Kandidatenmodell gegen bekannte Sollantworten laufen zu lassen, Qualität, Latenz und Kosten zu vergleichen und per Konfiguration umzuschalten. Der Anbieter-Wrapper bleibt bewusst dünn, damit kein Anwendungscode an einen Hersteller gebunden ist."
+        },
+        {
+          "question": "Wie gut ist die Qualität auf Deutsch?",
+          "answer": "Aktuelle Spitzenmodelle arbeiten im Deutschen für Support, Zusammenfassung und Klassifikation zuverlässig, die Qualität hängt aber von der Aufgabe und von Ihren eigenen Quelltexten ab. Fachbegriffe, Produktbezeichnungen und die Ansprache prüfen wir gegen Ihre Terminologie, bevor etwas live geht. Wo Antworten hölzern klingen, liegt die Ursache meist im Prompt und in den Quelldaten, nicht im Modell."
+        },
+        {
+          "question": "Können wir das Modell selbst hosten?",
+          "answer": "Ja, mit klaren Abwägungen. Open-Weight-Modelle auf eigener Hardware oder bei einem GPU-Anbieter in der EU halten Daten innerhalb Ihrer Grenze, kosten dafür Betriebsaufwand und GPU-Budget und liegen bei anspruchsvollen Reasoning-Aufgaben hinter den führenden gehosteten Modellen. Für die meisten Häuser empfehlen wir zunächst eine gehostete API mit strengen Aufbewahrungseinstellungen und prüfen Self-Hosting erneut, wenn eine Richtlinie oder dauerhaftes Volumen es rechtfertigt."
+        }
+      ],
+      "technologies": [
+        { "name": "Anthropic Claude", "icon": "anthropic" },
+        { "name": "OpenAI API", "icon": "openai" },
+        { "name": "Python", "icon": "python" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "pgvector", "icon": "pgvector" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "خدمات نماذج اللغة الكبيرة (LLM)",
+    "shortDescription": "عمل على نماذج LLM بلا مبالغات تسويقية: استرجاع مبني على بياناتكم، واستدعاء أدوات يصل إلى أنظمتكم، ومجموعات تقييم تُشغَّل قبل كل إصدار، ورأي صريح في الحالات التي لا يكون فيها التدريب المخصص هو الحل.",
+    "fullDescription": "تتعثر مشاريع LLM عادةً في التفاصيل غير اللامعة: النموذج يجيب بثقة من دون مصدر، ولا أحد يستطيع إثبات ما إذا كان تعديل التعليمات الأسبوع الماضي قد حسّن النتيجة، وفاتورة نهاية الشهر تأتي مفاجئة. نحن نبني العكس. استرجاع فوق كتالوجكم وسياساتكم ومستنداتكم بحيث تشير كل إجابة إلى مصدرها، واستدعاء أدوات يجعل المساعد يقرأ السجلات الحيّة بدل التخمين، ومجموعات تقييم تُشغَّل قبل أي تغيير في التعليمات أو النموذج، ومحاسبة للـ tokens في كل طلب تجعل التكلفة رقماً يمكن التخطيط له. خبرتنا حالية وليست نظرية: EidosUs، مساعد قراءة أكاديمي يحوّل الأوراق البحثية إلى ملاحظات موثّقة بمصادرها، ووكيل دعم متعدد المستأجرين لمتاجر منصة ikas يعمل بـ RAG فوق بيانات المنتجات والأسئلة الشائعة عبر الدردشة والواتساب وإنستغرام.",
+    "features": [
+      "استرجاع معزّز بالتوليد (RAG) فوق مستنداتكم وكتالوج منتجاتكم عبر pgvector",
+      "استدعاء الأدوات والدوال للوصول إلى أنظمة العمل الحيّة",
+      "تصميم التعليمات وإدارة إصداراتها ومقارنتها جنباً إلى جنب",
+      "مجموعات تقييم واختبارات انحدار قبل كل إصدار",
+      "ضوابط تمنع الإجابات المختلَقة وتسرّب البيانات وكشف التفاصيل الداخلية",
+      "استجابات متدفقة وتوجيه بين فئات النماذج لضبط زمن الاستجابة والتكلفة",
+      "تتبّع الـ tokens والتكلفة لكل طلب ومستخدم وميزة",
+      "موافقة بشرية إلزامية قبل الإجراءات عالية المخاطر أو غير القابلة للتراجع"
+    ],
+    "benefits": [
+      "إجابات يستطيع فريقكم الدفاع عنها لأن لكل منها مصدراً واضحاً",
+      "تكلفة شهرية يمكن توقّعها مسبقاً بدل اكتشافها في الفاتورة",
+      "تغييرات التعليمات والنماذج تُنشر بناءً على قياس لا على انطباع",
+      "حدود واضحة بين البيانات التي تغادر أنظمتكم وتلك التي لا تغادرها أبداً",
+      "مسار من حالة استخدام واحدة ضيّقة إلى انتشار أوسع دون إعادة بناء",
+      "تحويل نظيف إلى موظف بشري عند نقص الأدلة بدل إجابة مضلِّلة"
+    ],
+    "metaTitle": "خدمات LLM — RAG وربط GPT و Claude | PakSoft",
+    "metaDescription": "حلول LLM مبنية على بياناتكم: تكامل GPT و Claude، استرجاع RAG، ضوابط ضد الإجابات المختلَقة، وتتبّع دقيق للتكلفة. احجزوا جلسة تقييم مجانية لحالتكم اليوم.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تحديد حالة الاستخدام ودراسة الجدوى",
+          "description": "نبدأ من العمل نفسه: الأسئلة التي يكرر فريقكم الإجابة عنها، والمستندات التي يقرأها أحدهم ويلخّصها، والبيانات التي تُنقل يدوياً بين نظامين. نقيّم كل حالة بحسب الحجم وهامش الخطأ المسموح وطريقة قياس النجاح، وإذا كان استعلام بسيط أو قاعدة عمل يحلّ المسألة بتكلفة أقل نقولها قبل أن تنفقوا على نموذج."
+        },
+        {
+          "step": 2,
+          "title": "جرد البيانات وأساس الإجابة",
+          "description": "نحصر ما يجب أن يعرفه النموذج: بيانات المنتجات والأسعار، وسياسات الشحن والاسترجاع، وسجلات الدعم السابقة، وملفات PDF، والويكي الداخلي، ومعدل تغيّر كل مصدر. يحدّد هذا الجرد ما يُسترجع لحظة السؤال، وما يحتاج تنظيفاً أولاً، وأي الحقول الشخصية لا تُرسل إلى أي مزوّد إطلاقاً."
+        },
+        {
+          "step": 3,
+          "title": "نموذج أولي بالتعليمات والاسترجاع",
+          "description": "النسخة العاملة الأولى تعتمد على تعليمات مصمّمة بعناية واسترجاع فوق محتواكم عبر تضمينات pgvector، وبلا تدريب مخصص عن قصد لأنه نادراً ما يكون أرخص طريقة لتصحيح إجابة خاطئة. تحصلون خلال أسابيع على نموذج أولي تختبرونه بأصعب أسئلتكم الحقيقية."
+        },
+        {
+          "step": 4,
+          "title": "مجموعة التقييم والضوابط",
+          "description": "نكتب صراحةً ما يُعدّ إجابة صحيحة: مجموعة مقيّمة من أسئلة حقيقية بسلوك متوقع تُعاد تشغيلها عند كل تغيير في التعليمات أو الاسترجاع أو النموذج. في المرحلة نفسها تُفعَّل الضوابط: ذكر المصدر، والامتناع عند غياب الدليل، ومنع الإفصاح عن البنية الداخلية، وحظر صارم لإظهار بيانات عميل آخر."
+        },
+        {
+          "step": 5,
+          "title": "التكامل والإطلاق",
+          "description": "يتيح استدعاء الأدوات للمساعد قراءة الطلبات والمخزون والسجلات الفعلية بدل التخمين، ويُطلق حيث يوجد عملاؤكم أصلاً: نافذة دردشة في الموقع، أو لوحة داخلية، أو واتساب وإنستغرام. تبقى الإجراءات غير القابلة للتراجع خلف موافقة بشرية، وتفاصيل طبقة الربط موضّحة في صفحة تكامل واجهات GPT و Claude."
+        },
+        {
+          "step": 6,
+          "title": "المراقبة وضبط التكلفة وتبديل النماذج",
+          "description": "يُسجَّل كل طلب بعدد الـ tokens الداخلة والخارجة، فتظهر تكلفة كل محادثة وكل ميزة من اليوم الأول لا مع أول فاتورة. وعندما يوقف المزوّد نموذجاً أو يصدر نموذجاً أفضل، نشغّل مجموعة التقييم على المرشّح ونقارن الجودة وزمن الاستجابة والتكلفة، ثم ننتقل عبر تغيير إعداد قابل للتراجع."
+        }
+      ],
+      "faq": [
+        {
+          "question": "هل نحتاج إلى تدريب نموذج خاص بنا (fine-tuning)؟",
+          "answer": "غالباً لا، ونادراً جداً كخطوة أولى. معظم شكاوى \"النموذج أجاب خطأً\" هي في الحقيقة مشكلات استرجاع أو تعليمات: المعلومة الصحيحة لم توضع أمام النموذج أصلاً، والتدريب الإضافي لا يعالج ذلك. يصبح التدريب المخصص منطقياً حين تحتاجون صيغة إخراج ثابتة أو أسلوباً محدداً على نطاق واسع، وحتى حينها يُبنى فوق استرجاع جيد، وهو نطاق نغطيه في صفحة تطوير نماذج LLM المخصصة."
+        },
+        {
+          "question": "كيف تمنعون النموذج من اختلاق المعلومات؟",
+          "answer": "عبر التأسيس على المصدر، ثم الاستشهاد به، ثم الامتناع. يجيب المساعد من مقاطع مسترجَعة من محتواكم ويُظهر مصدر كل معلومة، وإذا لم يجد ما يدعم الإجابة يقولها ويحوّل المحادثة إلى موظف بدل الارتجال. لا أحد يستطيع بصدق أن يعد بنسبة أخطاء صفرية؛ الممكن هو جعل الخطأ نادراً وظاهراً وقابلاً للتتبع حتى مصدره."
+        },
+        {
+          "question": "ما مستوى جودة اللغة العربية؟",
+          "answer": "النماذج الحديثة جيدة بالفصحى في الدعم والتلخيص والتصنيف، لكن التحدي الحقيقي في الخليج هو المدخلات: العميل يكتب بلهجته المحلية أو بالعربيزي (حروف لاتينية وأرقام)، وأحياناً يخلط العربية والإنجليزية في الرسالة نفسها. نختبر ذلك صراحةً برسائل حقيقية من قنواتكم، ونضبط التعليمات لتفهم اللهجة وتردّ بفصحى واضحة ومهذّبة، مع الحفاظ على أسماء المنتجات كما تكتبونها."
+        },
+        {
+          "question": "ما البيانات التي تحتاجونها منّا للبدء؟",
+          "answer": "بيانات منتجاتكم أو خدماتكم، وسياساتكم، وعيّنة من الأسئلة التي يطرحها الناس فعلاً: تصدير من نظام التذاكر أو محادثات واتساب أو البريد. لا تحتاجون إلى مجموعة بيانات مُعنونة ولا إلى مستودع بيانات. الأسئلة الحقيقية غير المرتبة أنفع لنا من صفحة أسئلة شائعة مرتبة، لأنها تُظهر الصياغة التي يستخدمها عملاؤكم."
+        },
+        {
+          "question": "أين تُعالَج بياناتنا وهل تُستخدم في تدريب النماذج؟",
+          "answer": "لا يغادر أنظمتكم سوى التعليمات والسياق المسترجَع، وإلى المزوّد الذي توافقون عليه فقط، بينما تبقى قاعدة بياناتكم لديكم. يوفّر كبار المزوّدين شروطاً تجارية لا تُستخدم فيها بيانات الـ API للتدريب، مع مدد احتفاظ يمكن تقصيرها أو إيقافها، ونضبط ذلك صراحةً ونوثّقه. وإذا كانت سياستكم أو متطلبات الجهة التنظيمية تمنع المعالجة خارج نطاق محدد، نصمّم على أساس نقاط وصول إقليمية أو نموذج مفتوح الأوزان تستضيفونه بأنفسكم."
+        },
+        {
+          "question": "هل يمكن ربطه بأنظمتنا الحالية؟",
+          "answer": "نعم، وهذا بالضبط دور استدعاء الأدوات. بدل نسخ قاعدة بياناتكم إلى النموذج، يستدعي المساعد دوالّ ضيّقة ومقيّدة بالصلاحيات: البحث عن طلب برقمه، أو التحقق من مخزون صنف، أو جلب فاتورة. نبنيها للقراءة فقط افتراضياً، وأي إجراء يكتب أو يغيّر بيانات يمرّ عبر خطوة تأكيد صريحة."
+        },
+        {
+          "question": "كم تبلغ التكلفة التشغيلية شهرياً؟",
+          "answer": "تُحتسب النماذج بحسب عدد الـ tokens، لذا الإجابة الصادقة نطاق مرتبط بحجم استخدامكم لا رقم ثابت. نقدّره من حجم أسئلتكم الفعلي وطول الإجابة المعتاد، ثم نتتبّع الاستهلاك لكل طلب في التشغيل مع حدود تنبيه. توجيه الأسئلة البسيطة إلى فئة نموذج أصغر وتخزين السياق المتكرر مؤقتاً هما أكثر ما يخفض الفاتورة عملياً."
+        },
+        {
+          "question": "كم يستغرق إطلاق النسخة الأولى؟",
+          "answer": "مساعد مركّز يعمل على محتواكم يصل عادةً إلى نموذج أولي صالح للاستخدام الداخلي خلال أسابيع، ويحتاج وقتاً إضافياً حتى الإطلاق العام بعد إتمام التقييم والضوابط وربط القنوات. الجدول الزمني يعتمد على مدى جاهزية بياناتكم أكثر من اعتماده على العمل على النموذج نفسه."
+        },
+        {
+          "question": "ماذا يحدث عند إيقاف النموذج الذي نستخدمه؟",
+          "answer": "يوقف المزوّدون النماذج وفق جداول معلنة مسبقاً، فالأمر انتقال مخطط له لا طارئ. ولأن لدينا مجموعة تقييم، يعني الانتقال تشغيل النموذج المرشّح على إجابات معروفة الصواب ومقارنة الجودة والتكلفة ثم التبديل عبر إعداد واحد. طبقة الاتصال بالمزوّد رقيقة عمداً، فلا يرتبط كود التطبيق بمزوّد بعينه."
+        },
+        {
+          "question": "هل يمكن تشغيل النموذج على بنيتنا الخاصة؟",
+          "answer": "نعم، مع مقايضات واضحة. النماذج مفتوحة الأوزان على خوادمكم أو لدى مزوّد GPU في نطاق تختارونه تُبقي البيانات داخل حدودكم، مقابل جهد تشغيلي وتكلفة عتاد وفجوة جودة أمام أفضل النماذج المستضافة في المهام الاستدلالية الصعبة. نوصي معظم الفرق بالبدء بواجهة مستضافة مع إعدادات احتفاظ صارمة، ثم إعادة تقييم الاستضافة الذاتية عند وجود متطلب تنظيمي أو حجم استخدام مستقر يبرّرها."
+        }
+      ],
+      "technologies": [
+        { "name": "Anthropic Claude", "icon": "anthropic" },
+        { "name": "OpenAI API", "icon": "openai" },
+        { "name": "Python", "icon": "python" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Node.js", "icon": "nodedotjs" },
+        { "name": "Next.js", "icon": "nextdotjs" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "pgvector", "icon": "pgvector" }
+      ]
+    }
+  }
+}

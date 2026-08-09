@@ -1,0 +1,483 @@
+{
+  "slug": "meta-ads",
+  "en": {
+    "name": "Meta Ads",
+    "shortDescription": "Facebook and Instagram advertising run as one system: correct Pixel and Conversions API tracking, catalog and lead campaigns, and a steady flow of creative tested against numbers you can audit.",
+    "fullDescription": "Meta Ads covers everything that runs inside Meta Ads Manager — Facebook Ads, Instagram Ads and Advantage+ campaigns — managed as one account rather than three competing budgets. Work starts with measurement: Meta Pixel plus the server-side Conversions API, domain verification and event prioritisation, because iOS App Tracking Transparency and browser cookie restrictions leave browser-only tracking badly under-reported. From there we build a deliberately simple account structure, connect your product catalog if you sell online, and run a continuous creative pipeline, since creative moves results far more than bid tweaks ever will. We report Meta figures next to GA4 and your own order data, explain where they disagree, and promise no return numbers.",
+    "features": [
+      "Account Structure & Campaign Strategy Across Facebook and Instagram",
+      "Meta Pixel + Conversions API — Server-Side Event Tracking & Deduplication",
+      "Advantage+ Campaigns & Broad-Targeting Test Programme",
+      "Product Catalog Setup & Dynamic Ads for E-Commerce",
+      "Creative Pipeline — Reels, Statics, Carousels & Hook Testing",
+      "Click-to-WhatsApp, Lead Form & Messaging Campaigns",
+      "Audience, Placement and Budget Testing With Clean Read-Outs",
+      "GA4, Google Tag Manager & Looker Studio Reporting Alongside Meta Attribution"
+    ],
+    "benefits": [
+      "Tracking that survives iOS ATT and cookie loss, so optimisation runs on real signal",
+      "One coordinated budget across Facebook and Instagram instead of campaigns bidding against each other",
+      "A creative pipeline that keeps producing, so performance does not die with ad fatigue",
+      "Catalog ads that scale with your product range without rebuilding campaigns",
+      "Reporting that reconciles Meta, GA4 and your back office instead of quoting the flattering number",
+      "Full ownership — your Business Manager, your ad account, your pixel, your history"
+    ],
+    "metaTitle": "Meta Ads — Facebook & Instagram Advertising | PakSoft",
+    "metaDescription": "Facebook and Instagram ads run end to end: Pixel and Conversions API tracking, catalog campaigns, creative testing, honest reporting. Book a free review.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Measurement Audit",
+          "description": "We check what your pixel actually records: event coverage, browser-to-server deduplication, domain verification and the prioritised events Aggregated Event Measurement allows. Nothing gets scaled on top of tracking we have not verified end to end, because optimising against broken events simply teaches the algorithm the wrong lesson faster."
+        },
+        {
+          "step": 2,
+          "title": "Offer, Objective & Account Structure",
+          "description": "We map what you sell and at what margin to the campaign objectives that can realistically deliver it — sales, leads or messaging. The account is kept deliberately small: few campaigns, consolidated budgets, so each ad set gathers enough events to exit the learning phase instead of starving in fragments."
+        },
+        {
+          "step": 3,
+          "title": "Creative System",
+          "description": "We build a production queue of hooks, formats and angles rather than one hero video, because creative fatigue is the usual cause of decline. Every concept is tagged at launch so we can tell which hook, format and message earned the result, not merely which ad set spent the money."
+        },
+        {
+          "step": 4,
+          "title": "Launch & Learning Phase",
+          "description": "Campaigns go live and are then left alone long enough to stabilise; each significant edit restarts the learning phase and discards data you have already paid for. We watch frequency, cost per result and creative-level breakdowns rather than reacting to a single bad day of spend."
+        },
+        {
+          "step": 5,
+          "title": "Scale, Catalog & Advantage+",
+          "description": "Once a concept proves itself we widen it: Advantage+ campaigns with broad targeting, catalog and dynamic ads where you sell online, retargeting only where the volume justifies a separate ad set. Budget increases are made in steps the learning phase can absorb without resetting."
+        },
+        {
+          "step": 6,
+          "title": "Reporting & Review",
+          "description": "You receive a Looker Studio dashboard and a monthly working session covering what was spent, what was produced, what we learned and what changes next. Meta figures sit next to GA4 and your own order data, with the attribution differences explained rather than quietly ignored."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the minimum monthly budget for Meta Ads?",
+          "answer": "There is no universal figure, and the floor comes from arithmetic rather than opinion. Meta's learning phase needs roughly fifty optimisation events per ad set per week, so a business whose leads cost ten euros needs materially more monthly spend than one whose leads cost two. We work the number out with you from your target cost per result and your margin before you commit, and we say plainly when a budget is too small to learn anything."
+        },
+        {
+          "question": "Is the ad spend included in your fee?",
+          "answer": "No — media spend and management are always separate. The budget goes directly to Meta from your own payment method inside your own ad account, and Meta invoices you for it; we never collect it or add a percentage on top. Our fee covers strategy, tracking implementation, build, creative direction, optimisation and reporting, and appears as its own line so you always know what you pay for management versus media."
+        },
+        {
+          "question": "How long before we see results?",
+          "answer": "You will see delivery data within days, but a decision-grade read usually takes four to eight weeks: the first weeks are spent leaving the learning phase and finding which creative angle works. High-consideration or B2B offers with long sales cycles take longer, because the conversion you care about happens well after the click. We report leading indicators from week one so progress is visible before revenue moves."
+        },
+        {
+          "question": "Who owns the ad account, the pixel and the data?",
+          "answer": "You do, without exception. We work inside your Meta Business Manager with assigned partner access, so the ad account, pixel, catalog, custom audiences and every day of historical data belong to you. If we stop working together we hand over documentation and remove our own access — you never have to rebuild a pixel or lose learning because an agency relationship ended."
+        },
+        {
+          "question": "Do you produce the creative, or do we?",
+          "answer": "We direct and produce statics, carousels and short-form video edits from your product photography, existing footage and offers, and we brief anything we cannot make in-house. Full studio production is quoted separately or run with your own team. For Meta specifically, volume and variety beat polish: a steady supply of decent concepts outperforms one expensive film every quarter."
+        },
+        {
+          "question": "How often do you report, and what is in the report?",
+          "answer": "You get a live Looker Studio dashboard you can open at any time, plus a monthly written summary and review call; during launch and learning phases we add a short weekly note. Reports cover spend, results, cost per result, creative-level performance and what we changed. Weeks that went badly are reported the same way as weeks that went well."
+        },
+        {
+          "question": "Why do Meta's numbers differ from GA4 and our back office?",
+          "answer": "Because they measure different things. Meta credits conversions to the ad within its attribution window — by default seven-day click and one-day view — and can follow a person across devices, while GA4 is session-based, largely last-click, and loses users who block cookies or arrive through in-app browsers. Neither is lying. We treat your back-office order count as the source of truth and use platform data for relative decisions between ads."
+        },
+        {
+          "question": "What happens if we pause the campaigns?",
+          "answer": "Delivery stops almost immediately, and so do the leads and orders it was producing — paid social is rented attention, not an owned asset. Restarting also means a new learning phase, so repeated stop-start cycles cost more per result than a steady lower budget. If cash flow is tight we would rather reduce spend and consolidate than switch everything off."
+        },
+        {
+          "question": "Should we use Advantage+ campaigns or manual audiences?",
+          "answer": "Advantage+ with broad targeting often outperforms hand-built interest stacks now that Meta's signal is aggregated, particularly for e-commerce accounts with a healthy catalog and clean events. But it needs conversion volume to work with, and on small budgets or niche B2B offers manual targeting and exclusions still earn their place. We test both and let the account decide rather than taking a side in advance."
+        },
+        {
+          "question": "Why do you not adjust the campaigns every day?",
+          "answer": "Because most meaningful edits — large budget jumps, new audiences, creative swapped inside a live ad set — can restart the learning phase and throw away the data you already paid for. Daily fiddling looks like diligence but usually makes results worse and makes cause and effect impossible to read. We change one variable at a time, on a schedule, and record what changed."
+        },
+        {
+          "question": "Do we need Facebook Ads, Instagram Ads or Advantage+ campaigns?",
+          "answer": "Usually all three together, because they are not separate channels: one budget and one pixel serve both Facebook and Instagram placements, and Advantage+ is a campaign type inside the same account. Our Facebook Ads, Instagram Ads Management and Advantage+ Campaigns pages go deeper into each. This page is where we decide the mix for your offer and margin."
+        },
+        {
+          "question": "Can you run click-to-WhatsApp and lead form campaigns?",
+          "answer": "Yes, and for many service businesses they convert better than sending traffic to a landing page. We set up click-to-WhatsApp and instant lead forms with qualifying questions, connect the resulting events back through the Conversions API so optimisation has something to learn from, and agree with you how quickly inbound conversations get answered — an unanswered lead costs the same as a wasted click."
+        }
+      ],
+      "technologies": [
+        { "name": "Meta Ads Manager", "icon": "meta-ads-manager" },
+        { "name": "Meta Business Suite", "icon": "meta-business-suite" },
+        { "name": "Meta Pixel", "icon": "meta-pixel" },
+        { "name": "Conversions API", "icon": "conversions-api" },
+        { "name": "Meta Commerce Manager", "icon": "meta-commerce-manager" },
+        { "name": "Google Analytics 4", "icon": "ga4" },
+        { "name": "Google Tag Manager", "icon": "google-tag-manager" },
+        { "name": "Looker Studio", "icon": "looker-studio" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Meta Reklamları",
+    "shortDescription": "Facebook ve Instagram reklamlarını tek hesapta yönetiyoruz: Pixel ve Conversions API ile doğru ölçüm, katalog ve tıkla-WhatsApp kampanyaları, sürekli kreatif üretimi ve doğrulayabileceğiniz raporlar. Reklam bütçesi sizde kalır, faturasını Meta keser.",
+    "fullDescription": "Meta Ads Manager içinde çalışan her şey — Facebook Ads, Instagram Ads ve Advantage+ kampanyaları — birbiriyle yarışan üç ayrı bütçe değil, tek bir hesap olarak yönetilir. İşe ölçümle başlarız: Meta Pixel'in yanına sunucu taraflı Conversions API'yi kurar, alan adı doğrulamasını ve öncelikli olay sıralamasını yaparız; çünkü iOS'taki App Tracking Transparency ve tarayıcı çerez kısıtları yalnızca tarayıcıya dayanan ölçümü ciddi biçimde eksik gösterir. Ardından sade bir hesap yapısı kurar, e-ticaret yapıyorsanız ürün kataloğunuzu bağlar ve kesintisiz bir kreatif üretim hattı işletiriz; sonucu teklif ayarlarından çok kreatif belirler. Türkiye'de satışın büyük kısmı WhatsApp'ta kapandığı için tıkla-WhatsApp kampanyalarını da bu yapının parçası olarak kurgularız. ikas altyapısındaki bir hurma ve kuruyemiş e-ticaretinde Meta ve Google reklamlarını biz yürütüyoruz. Meta'nın rakamlarını GA4 ve kendi sipariş verinizle yan yana raporlarız; ciro ya da ROAS garantisi vermeyiz.",
+    "features": [
+      "Facebook ve Instagram için hesap yapısı ve kampanya stratejisi",
+      "Meta Pixel + Conversions API kurulumu, sunucu taraflı olay ve tekilleştirme kontrolü",
+      "Advantage+ kampanyaları ve geniş hedefleme testleri",
+      "Ürün kataloğu kurulumu ve dinamik ürün reklamları (ikas, Shopify, WooCommerce)",
+      "Tıkla-WhatsApp ve anlık form (lead) kampanyaları",
+      "Reels, statik ve carousel kreatif üretimi ile hook testleri",
+      "KVKK'ya uygun izin akışı ve İYS gerektiren durumların işaretlenmesi",
+      "GA4, Google Tag Manager ve Looker Studio ile raporlama"
+    ],
+    "benefits": [
+      "iOS ve çerez kayıplarına rağmen çalışan ölçüm; optimizasyon gerçek veriyle yapılır",
+      "Facebook ve Instagram'ın birbirinin bütçesini yemediği tek ve sade bir hesap",
+      "Reklam yorgunluğunda performansın çökmemesi için sürekli akan kreatif",
+      "WhatsApp'a düşen, kaynağı belli ve takip edilebilir müşteri talepleri",
+      "Ürün sayısı arttıkça kampanyayı yeniden kurmayı gerektirmeyen katalog yapısı",
+      "Reklam hesabı, pixel ve veri sizde kalır; ajans değişse bile geçmişiniz kaybolmaz"
+    ],
+    "metaTitle": "Meta Reklamları — Facebook ve Instagram | PakSoft",
+    "metaDescription": "Facebook ve Instagram reklam yönetimi: Pixel ve Conversions API kurulumu, katalog ve WhatsApp kampanyaları, şeffaf raporlama. Ücretsiz hesap analizi alın.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Ölçüm Denetimi",
+          "description": "Pixel'inizin gerçekte ne kaydettiğine bakarız: hangi olaylar geliyor, tarayıcı ve sunucu olayları tekilleşiyor mu, alan adı doğrulaması yapılmış mı, öncelikli olay sıralaması doğru mu. Doğruluğunu uçtan uca teyit etmediğimiz bir ölçümün üzerine bütçe büyütmeyiz; bozuk veriyle optimizasyon, algoritmaya yanlış şeyi daha hızlı öğretmekten başka işe yaramaz."
+        },
+        {
+          "step": 2,
+          "title": "Teklif, Hedef ve Hesap Yapısı",
+          "description": "Ne sattığınızı ve hangi kâr marjıyla sattığınızı, bunu gerçekten getirebilecek kampanya hedefleriyle eşleriz: satış, form ya da mesaj. Hesabı bilinçli olarak sade tutarız — az sayıda kampanya, birleştirilmiş bütçe — ki her reklam seti öğrenme aşamasından çıkacak kadar veri toplasın, bütçe parça parça dağılıp aç kalmasın."
+        },
+        {
+          "step": 3,
+          "title": "Kreatif Üretim Hattı",
+          "description": "Tek bir gösterişli video yerine hook, format ve mesaj varyasyonlarından oluşan bir üretim sırası kurarız; çünkü performans düşüşünün başlıca sebebi kreatif yorgunluğudur. Her konsepti yayına verirken etiketleriz, böylece sonucu hangi açının getirdiğini görürüz — sadece hangi reklam setinin para harcadığını değil."
+        },
+        {
+          "step": 4,
+          "title": "Yayın ve Öğrenme Aşaması",
+          "description": "Kampanyalar yayına alınır ve oturması için yeterince rahat bırakılır; her ciddi düzenleme öğrenme aşamasını sıfırlar ve parasını ödediğiniz veriyi çöpe atar. Tek bir kötü güne tepki vermek yerine frekansı, sonuç başına maliyeti ve kreatif kırılımını izleriz."
+        },
+        {
+          "step": 5,
+          "title": "Ölçekleme, Katalog ve Advantage+",
+          "description": "Bir konsept kendini kanıtladığında alanı genişletiriz: geniş hedeflemeli Advantage+ kampanyaları, e-ticarette katalog ve dinamik ürün reklamları, hacim gerçekten gerektiriyorsa ayrı bir yeniden pazarlama seti. Bütçe artışlarını öğrenme aşamasının sindirebileceği kademelerle yaparız."
+        },
+        {
+          "step": 6,
+          "title": "Raporlama ve Değerlendirme",
+          "description": "İstediğiniz an açabileceğiniz bir Looker Studio panosu, aylık yazılı özet ve bir değerlendirme toplantısı alırsınız: ne harcandı, ne üretildi, ne öğrendik, sırada ne var. Meta'nın rakamları GA4 ve kendi sipariş verinizle yan yana durur, aradaki fark saklanmaz açıklanır."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Aylık en az ne kadar reklam bütçesi gerekir?",
+          "answer": "Herkese uyan tek bir rakam yok; taban, fikirden değil aritmetikten çıkar. Meta'nın öğrenme aşaması reklam seti başına haftada yaklaşık 50 dönüşüm ister, dolayısıyla müşteri edinme maliyeti düşük bir işletmeyle pahalı bir sektördeki işletmenin bütçe tabanı aynı olmaz. Hedef dönüşüm maliyetiniz ve kâr marjınızdan yola çıkarak bu hesabı görüşmede birlikte yaparız; bütçe öğrenmeye yetmiyorsa bunu baştan açıkça söyleriz."
+        },
+        {
+          "question": "Reklam bütçesi hizmet bedeline dahil mi?",
+          "answer": "Hayır, ikisi her zaman ayrıdır. Reklam bütçesi doğrudan Meta'ya, sizin reklam hesabınızdaki kendi ödeme yönteminizden gider ve faturasını Meta keser; biz bu tutarı ne tahsil ederiz ne de üzerine komisyon koyarız. Bizim ücretimiz strateji, ölçüm kurulumu, kampanya kurgusu, kreatif yönetimi, optimizasyon ve raporlama karşılığıdır ve sözleşmede ayrı kalem olarak görünür."
+        },
+        {
+          "question": "Ne kadar sürede sonuç alırım?",
+          "answer": "İlk günlerde gösterim ve tıklama verisi gelir, ama karar verilebilir bir okuma genelde dört ila sekiz haftayı bulur; ilk haftalar öğrenme aşamasından çıkmak ve hangi kreatif açısının tuttuğunu bulmakla geçer. Karar süreci uzun ürünlerde ve kurumsal satışta bu süre uzar, çünkü asıl dönüşüm tıklamadan çok sonra gerçekleşir. İlk haftadan itibaren öncü göstergeleri raporlarız."
+        },
+        {
+          "question": "Reklam hesabı, pixel ve veriler kime ait?",
+          "answer": "Hepsi size aittir. Çalışmayı sizin Meta Business Manager hesabınızın içinde, iş ortağı yetkisiyle yürütürüz; reklam hesabı, pixel, katalog, özel hedef kitleler ve geçmiş verinin tamamı sizde kalır. Yollarımız ayrılırsa dokümantasyonu teslim eder, kendi erişimimizi kaldırırız — ajans değiştirdiniz diye pixel geçmişinizi ya da öğrenmeyi sıfırdan kurmanız gerekmez."
+        },
+        {
+          "question": "Görselleri ve videoları siz mi hazırlıyorsunuz?",
+          "answer": "Ürün fotoğraflarınız, elinizdeki çekimler ve kampanya teklifleriniz üzerinden statik görsel, carousel ve kısa video kurguları üretir, yapamadıklarımız için brief hazırlarız. Profesyonel set çekimi ayrı teklifle ya da sizin ekibinizle yürür. Meta tarafında cila değil çeşitlilik kazandırır: çeyrekte bir pahalı film yerine düzenli akan makul kreatifler daha iyi çalışır."
+        },
+        {
+          "question": "Ne sıklıkta rapor alıyoruz?",
+          "answer": "İstediğiniz an açabileceğiniz canlı bir Looker Studio panosu, aylık yazılı özet ve bir değerlendirme görüşmesi alırsınız; yeni kampanya ve öğrenme dönemlerinde buna kısa haftalık not eklenir. Raporda harcama, sonuç, sonuç başına maliyet, kreatif bazlı performans ve o ay ne değiştirdiğimiz yer alır. Kötü geçen haftaları da aynı şekilde raporlarız."
+        },
+        {
+          "question": "Meta'nın rakamları neden GA4 ve panelimizle uyuşmuyor?",
+          "answer": "Çünkü farklı şeyleri ölçüyorlar. Meta, dönüşümü kendi atıf penceresi içinde reklama yazar — varsayılan olarak 7 gün tıklama, 1 gün görüntüleme — ve kişiyi cihazlar arasında takip edebilir; GA4 ise oturum tabanlıdır, ağırlıkla son tıklamaya yazar ve çerez engelleyen ya da uygulama içi tarayıcıdan gelen kullanıcıyı kaybeder. İkisi de yalan söylemiyor. Biz gerçek referans olarak kendi sipariş verinizi alır, Meta verisini reklamlar arası karşılaştırma için kullanırız."
+        },
+        {
+          "question": "Reklamları durdurursak ne olur?",
+          "answer": "Yayın anında durur, onunla birlikte gelen talep ve siparişler de durur; ücretli sosyal, sahip olduğunuz bir varlık değil kiraladığınız dikkattir. Yeniden başlatmak yeni bir öğrenme aşaması demektir, bu yüzden sık sık aç-kapa yapmak, düşük ama istikrarlı bir bütçeden daha pahalıya gelir. Nakit akışı sıkışıksa kapatmak yerine bütçeyi küçültüp kampanyaları birleştirmeyi öneririz."
+        },
+        {
+          "question": "Advantage+ mı, manuel hedefleme mi kullanmalıyız?",
+          "answer": "Meta'nın sinyali toplulaştırdığı bu dönemde geniş hedeflemeli Advantage+ kampanyaları, elle kurulan ilgi alanı yığınlarından çoğu zaman daha iyi çalışıyor; özellikle kataloğu ve olayları düzgün kurulmuş e-ticaret hesaplarında. Ama beslenecek dönüşüm hacmine ihtiyacı var; küçük bütçelerde ve dar niş kurumsal işlerde manuel hedefleme ve hariç tutmalar hâlâ yerini koruyor. Peşinen taraf tutmaz, ikisini de test ederiz."
+        },
+        {
+          "question": "Neden kampanyalara her gün müdahale etmiyorsunuz?",
+          "answer": "Çünkü anlamlı düzenlemelerin çoğu — büyük bütçe sıçramaları, yeni hedef kitle, yayındaki sete kreatif ekleme — öğrenme aşamasını yeniden başlatabilir ve parasını ödediğiniz veriyi çöpe atar. Her gün ayar çekmek çalışkanlık gibi görünür, pratikte sonucu kötüleştirir ve neyin neye yol açtığını okunamaz hale getirir. Değişiklikleri planlı biçimde, tek değişken üzerinden yapar ve kayıt altına alırız."
+        },
+        {
+          "question": "Facebook Ads mi, Instagram Ads mi, Advantage+ mı?",
+          "answer": "Genellikle üçü birlikte, çünkü bunlar ayrı kanallar değil: aynı bütçe ve aynı pixel hem Facebook hem Instagram yerleşimlerine hizmet eder, Advantage+ ise aynı hesabın içindeki bir kampanya türüdür. Türkiye'de ağırlık çoğu sektörde Instagram tarafındadır, ama Facebook yerleşimleri hâlâ ucuz erişim getirebilir. Facebook Ads, Instagram Reklam Yönetimi ve Advantage+ Kampanyaları sayfalarımız detaya iner; bu sayfa dağılımın nasıl kurulacağına karar verdiğimiz yerdir."
+        },
+        {
+          "question": "Tıkla-WhatsApp kampanyaları kuruyor musunuz?",
+          "answer": "Evet, hizmet işletmelerinin çoğunda açılış sayfasına trafik göndermekten daha iyi dönüşüyor. Tıkla-WhatsApp ve anlık form kampanyalarını eleyici sorularla kurar, oluşan olayları Conversions API üzerinden geri besleriz ki optimizasyonun öğrenecek verisi olsun. Gelen mesajların ne kadar sürede yanıtlanacağını da baştan konuşuruz: yanıtsız kalan bir talep, boşa giden tıklamayla aynı maliyettedir."
+        },
+        {
+          "question": "KVKK ve İYS açısından nelere dikkat ediyoruz?",
+          "answer": "Form ve WhatsApp üzerinden gelen kişisel veri sizin veri sorumluluğunuzda toplanır; formun altında KVKK aydınlatma metni ve açık rıza alanı bulunmasını sağlar, verinin hangi sistemlere aktığını belgeleriz. Bu kişilere sonradan SMS veya e-posta ile ticari ileti gönderecekseniz iznin İYS'ye kaydedilmesi gerekir; biz reklam tarafında bu gereklilikleri işaretleriz, hukuki metinlerin nihai onayı sizin hukuk danışmanınıza aittir."
+        }
+      ],
+      "technologies": [
+        { "name": "Meta Ads Manager", "icon": "meta-ads-manager" },
+        { "name": "Meta Business Suite", "icon": "meta-business-suite" },
+        { "name": "Meta Pixel", "icon": "meta-pixel" },
+        { "name": "Conversions API", "icon": "conversions-api" },
+        { "name": "Meta Commerce Manager", "icon": "meta-commerce-manager" },
+        { "name": "Google Analytics 4", "icon": "ga4" },
+        { "name": "Google Tag Manager", "icon": "google-tag-manager" },
+        { "name": "Looker Studio", "icon": "looker-studio" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Meta Ads",
+    "shortDescription": "Facebook- und Instagram-Kampagnen aus einer Hand: sauber implementiertes Tracking über Meta Pixel und Conversions API, Katalog- und Lead-Kampagnen, kontinuierliche Creative-Produktion und ein Reporting, das Sie nachrechnen können.",
+    "fullDescription": "Meta Ads umfasst alles, was im Meta Ads Manager läuft — Facebook Ads, Instagram Ads und Advantage+ Kampagnen — geführt als ein Werbekonto statt als drei konkurrierende Budgets. Wir beginnen mit der Messung: Meta Pixel plus serverseitige Conversions API, Domain-Verifizierung und priorisierte Events. Denn App Tracking Transparency unter iOS und die Cookie-Beschränkungen der Browser führen dazu, dass rein browserbasiertes Tracking deutlich zu wenig erfasst. Anschließend bauen wir eine bewusst schlanke Kontostruktur, binden bei Onlineshops Ihren Produktkatalog an und betreiben eine laufende Creative-Pipeline, weil Creatives das Ergebnis stärker bewegen als jede Gebotsanpassung. Alle Tracking-Komponenten werden über Ihr Consent-Management gesteuert. Meta-Zahlen berichten wir neben GA4 und Ihren eigenen Auftragsdaten — ohne Versprechen zu Umsatz oder ROAS.",
+    "features": [
+      "Kontostruktur & Kampagnenstrategie für Facebook und Instagram",
+      "Meta Pixel + Conversions API — serverseitiges Tracking mit Deduplizierung",
+      "Advantage+ Kampagnen & strukturierte Tests mit breitem Targeting",
+      "Produktkatalog-Anbindung & dynamische Anzeigen für E-Commerce",
+      "Creative-Produktion — Reels, Statics, Carousels und Hook-Tests",
+      "Lead-Formulare, Click-to-WhatsApp und Messaging-Kampagnen",
+      "Consent-gesteuertes Tracking-Setup, DSGVO-konform dokumentiert",
+      "Reporting mit GA4, Google Tag Manager und Looker Studio"
+    ],
+    "benefits": [
+      "Messbarkeit trotz iOS ATT und Cookie-Verlust — Optimierung auf belastbaren Signalen",
+      "Ein koordiniertes Budget für Facebook und Instagram statt Kampagnen, die sich gegenseitig überbieten",
+      "Eine Creative-Pipeline, die Ermüdungseffekte auffängt, bevor die Leistung einbricht",
+      "Katalogkampagnen, die mit dem Sortiment wachsen, ohne neu aufgebaut zu werden",
+      "Nachvollziehbares Reporting statt der jeweils schmeichelhaftesten Zahl",
+      "Volle Eigentümerschaft — Ihr Business Manager, Ihr Werbekonto, Ihr Pixel, Ihre Historie"
+    ],
+    "metaTitle": "Meta Ads — Facebook- & Instagram-Werbung | PakSoft",
+    "metaDescription": "Facebook- und Instagram-Kampagnen mit sauberem Tracking über Pixel und Conversions API, DSGVO-konform gemessen, transparent berichtet. Jetzt Analyse anfragen.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Mess-Audit",
+          "description": "Wir prüfen, was Ihr Pixel tatsächlich erfasst: Event-Abdeckung, Deduplizierung zwischen Browser und Server, Domain-Verifizierung sowie die priorisierten Events der Aggregated Event Measurement. Auf einem Tracking, das wir nicht Ende zu Ende verifiziert haben, skalieren wir kein Budget — fehlerhafte Events bringen dem Algorithmus nur schneller das Falsche bei."
+        },
+        {
+          "step": 2,
+          "title": "Angebot, Ziel & Kontostruktur",
+          "description": "Wir ordnen Ihr Angebot und dessen Marge den Kampagnenzielen zu, die es realistisch liefern können: Verkauf, Leads oder Nachrichten. Die Struktur bleibt bewusst schlank — wenige Kampagnen, konsolidierte Budgets — damit jede Anzeigengruppe genug Ereignisse sammelt, um die Lernphase zu verlassen, statt in Fragmenten auszuhungern."
+        },
+        {
+          "step": 3,
+          "title": "Creative-System",
+          "description": "Statt eines einzelnen Hero-Videos entsteht eine Produktionsschlange aus Hooks, Formaten und Argumentationslinien, denn Creative-Ermüdung ist die häufigste Ursache für nachlassende Leistung. Jedes Konzept wird beim Start getaggt, sodass erkennbar bleibt, welcher Hook und welche Botschaft das Ergebnis gebracht hat."
+        },
+        {
+          "step": 4,
+          "title": "Launch & Lernphase",
+          "description": "Kampagnen gehen live und bekommen dann genug Ruhe, um sich zu stabilisieren; jede wesentliche Änderung startet die Lernphase neu und verwirft bereits bezahlte Daten. Wir beobachten Frequenz, Kosten pro Ergebnis und die Auswertung auf Creative-Ebene, statt auf einen einzelnen schwachen Tag zu reagieren."
+        },
+        {
+          "step": 5,
+          "title": "Skalierung, Katalog & Advantage+",
+          "description": "Sobald sich ein Konzept bewährt, verbreitern wir es: Advantage+ Kampagnen mit breitem Targeting, Katalog- und dynamische Anzeigen im E-Commerce, Retargeting nur dort, wo das Volumen eine eigene Anzeigengruppe rechtfertigt. Budgeterhöhungen erfolgen in Schritten, die die Lernphase verkraftet."
+        },
+        {
+          "step": 6,
+          "title": "Reporting & Review",
+          "description": "Sie erhalten ein Looker-Studio-Dashboard sowie eine monatliche Zusammenfassung und einen Review-Termin: Ausgaben, Ergebnisse, produzierte Creatives, Erkenntnisse und die nächsten Änderungen. Meta-Zahlen stehen neben GA4 und Ihren Auftragsdaten, Abweichungen werden erklärt statt weggelassen."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie hoch muss das monatliche Werbebudget mindestens sein?",
+          "answer": "Eine allgemeingültige Zahl gibt es nicht; die Untergrenze ergibt sich aus Rechnung, nicht aus Meinung. Die Lernphase benötigt pro Anzeigengruppe etwa fünfzig Optimierungsereignisse je Woche — wer zehn Euro pro Lead zahlt, braucht folglich ein deutlich höheres Monatsbudget als ein Unternehmen mit zwei Euro pro Lead. Wir rechnen das vor Vertragsschluss gemeinsam mit Ihnen durch und sagen offen, wenn ein Budget zu klein ist, um überhaupt etwas zu lernen."
+        },
+        {
+          "question": "Ist das Mediabudget in Ihrem Honorar enthalten?",
+          "answer": "Nein, Media und Betreuung sind strikt getrennt. Das Budget fließt direkt an Meta über Ihre eigene Zahlungsmethode in Ihrem eigenen Werbekonto, und Meta rechnet es Ihnen gegenüber ab; wir vereinnahmen es nicht und schlagen keinen Prozentsatz auf. Unser Honorar deckt Strategie, Tracking-Implementierung, Aufbau, Creative-Steuerung, Optimierung und Reporting ab und ist als eigene Position ausgewiesen."
+        },
+        {
+          "question": "Wann sind erste Ergebnisse realistisch?",
+          "answer": "Auslieferungsdaten sehen Sie innerhalb weniger Tage, eine belastbare Entscheidungsgrundlage entsteht meist nach vier bis acht Wochen — die ersten Wochen gehen für das Verlassen der Lernphase und das Finden des tragfähigen Creative-Ansatzes drauf. Bei erklärungsbedürftigen B2B-Angeboten mit langen Zyklen dauert es länger, weil die relevante Conversion weit nach dem Klick liegt. Frühindikatoren berichten wir ab der ersten Woche."
+        },
+        {
+          "question": "Wem gehören Werbekonto, Pixel und Daten?",
+          "answer": "Ausschließlich Ihnen. Wir arbeiten mit Partnerzugriff in Ihrem Meta Business Manager, sodass Werbekonto, Pixel, Katalog, Custom Audiences und die gesamte Historie bei Ihnen bleiben. Bei Beendigung der Zusammenarbeit übergeben wir die Dokumentation und entziehen unseren eigenen Zugriff — Sie müssen kein Pixel neu aufsetzen und verlieren keine gelernten Daten."
+        },
+        {
+          "question": "Wie funktioniert das Tracking DSGVO-konform?",
+          "answer": "Pixel und Conversions API werden ausschließlich nach erteilter Einwilligung über Ihr Consent-Management ausgelöst; serverseitig übertragen wir nur die notwendigen, gehashten Parameter. Wichtig zur Einordnung: Meta ist hier kein reiner Auftragsverarbeiter, für Pixel und CAPI gilt gemeinsame Verantwortlichkeit mit entsprechendem Zusatz. Wir dokumentieren das Setup für Ihre Verarbeitungsübersicht; die rechtliche Endabnahme liegt bei Ihrer Datenschutzberatung."
+        },
+        {
+          "question": "Produzieren Sie die Creatives?",
+          "answer": "Wir konzipieren und produzieren Statics, Carousels und Kurzvideo-Schnitte aus Ihrem vorhandenen Bild- und Videomaterial und briefen alles, was wir nicht selbst herstellen. Aufwendige Produktionen werden separat angeboten oder mit Ihrem Team umgesetzt. Bei Meta zählt Varianz mehr als Hochglanz: eine stetige Zufuhr solider Konzepte schlägt einen teuren Film pro Quartal."
+        },
+        {
+          "question": "In welchem Rhythmus berichten Sie?",
+          "answer": "Sie haben jederzeit Zugriff auf ein Looker-Studio-Dashboard, dazu kommen eine monatliche schriftliche Zusammenfassung und ein Review-Gespräch; in Launch- und Lernphasen ergänzt eine kurze Wochennotiz. Berichtet werden Ausgaben, Ergebnisse, Kosten pro Ergebnis, Leistung auf Creative-Ebene und jede vorgenommene Änderung — schwache Zeiträume in derselben Ausführlichkeit wie starke."
+        },
+        {
+          "question": "Warum weichen die Meta-Zahlen von GA4 und unserem ERP ab?",
+          "answer": "Weil unterschiedliche Modelle gemessen werden. Meta schreibt Conversions innerhalb seines Attributionsfensters der Anzeige zu — standardmäßig sieben Tage Klick, ein Tag View — und erkennt Nutzer geräteübergreifend, während GA4 sitzungsbasiert und überwiegend Last-Click arbeitet und Nutzer ohne Einwilligung oder aus In-App-Browsern verliert. Wir behandeln Ihre Auftragsdaten als Referenz und nutzen Plattformzahlen für den relativen Vergleich zwischen Anzeigen."
+        },
+        {
+          "question": "Was passiert, wenn wir pausieren?",
+          "answer": "Die Auslieferung endet sofort, und damit auch die daraus resultierenden Anfragen und Bestellungen — bezahlte Reichweite ist gemietete Aufmerksamkeit, kein Bestand. Ein Neustart bedeutet zudem eine neue Lernphase, weshalb wiederholtes Ein- und Ausschalten teurer ist als ein konstant niedrigeres Budget. Bei angespannter Liquidität empfehlen wir Reduktion und Konsolidierung statt Abschaltung."
+        },
+        {
+          "question": "Advantage+ oder manuelles Targeting?",
+          "answer": "Advantage+ mit breitem Targeting schlägt handgebaute Interessen-Stacks häufig, seit Metas Signalverarbeitung stärker aggregiert arbeitet — besonders im E-Commerce mit gepflegtem Katalog und sauberen Events. Es braucht allerdings Conversion-Volumen; bei kleinen Budgets und engen B2B-Nischen behalten manuelles Targeting und Ausschlüsse ihre Berechtigung. Wir testen beides, statt uns vorab festzulegen."
+        },
+        {
+          "question": "Warum optimieren Sie nicht täglich?",
+          "answer": "Weil die meisten relevanten Eingriffe — große Budgetsprünge, neue Zielgruppen, Creative-Wechsel in laufenden Anzeigengruppen — die Lernphase zurücksetzen und bereits bezahlte Daten entwerten. Tägliches Nachjustieren wirkt fleißig, verschlechtert aber in der Regel das Ergebnis und macht Ursache und Wirkung unlesbar. Wir ändern geplant, jeweils eine Variable, und dokumentieren jede Änderung."
+        },
+        {
+          "question": "Brauchen wir Facebook Ads, Instagram Ads oder Advantage+ Kampagnen?",
+          "answer": "In der Regel im Zusammenspiel, denn es sind keine getrennten Kanäle: Ein Budget und ein Pixel bedienen die Platzierungen auf Facebook und Instagram, und Advantage+ ist ein Kampagnentyp im selben Konto. Im DACH-B2B liefert Facebook oft noch günstige Reichweite, während Instagram die jüngeren Entscheider erreicht. Unsere Seiten zu Facebook Ads, Instagram Ads Management und Advantage+ Kampagnen gehen ins Detail; hier legen wir den Mix fest."
+        }
+      ],
+      "technologies": [
+        { "name": "Meta Ads Manager", "icon": "meta-ads-manager" },
+        { "name": "Meta Business Suite", "icon": "meta-business-suite" },
+        { "name": "Meta Pixel", "icon": "meta-pixel" },
+        { "name": "Conversions API", "icon": "conversions-api" },
+        { "name": "Meta Commerce Manager", "icon": "meta-commerce-manager" },
+        { "name": "Google Analytics 4", "icon": "ga4" },
+        { "name": "Google Tag Manager", "icon": "google-tag-manager" },
+        { "name": "Looker Studio", "icon": "looker-studio" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "إعلانات Meta",
+    "shortDescription": "إدارة إعلانات Facebook وInstagram في حساب واحد: قياس دقيق عبر Meta Pixel وConversions API، وحملات كتالوج وواتساب، وإنتاج إبداعي متواصل بالعربية والإنجليزية، وتقارير يمكنكم مراجعتها بأنفسكم.",
+    "fullDescription": "إعلانات Meta تشمل كل ما يعمل داخل Meta Ads Manager — إعلانات Facebook وإعلانات Instagram وحملات Advantage+ — وندير ذلك كحساب واحد لا كثلاث ميزانيات تتنافس فيما بينها. نبدأ بالقياس: تركيب Meta Pixel إلى جانب Conversions API من جهة الخادم، وتوثيق النطاق، وترتيب الأحداث حسب الأولوية؛ لأن App Tracking Transparency في iOS وقيود ملفات الارتباط في المتصفحات تجعل القياس المعتمد على المتصفح وحده ناقصاً بدرجة كبيرة. بعدها نبني هيكل حساب بسيطاً عن قصد، ونربط كتالوج منتجاتكم إن كنتم تبيعون أونلاين، ونشغّل خط إنتاج إبداعي متواصل، فالإبداع يحرّك النتيجة أكثر من أي تعديل على المزايدة. ننتج المواد بالعربية والإنجليزية معاً لأن أسواق الخليج ثنائية اللغة فعلياً. نعرض أرقام Meta جنباً إلى جنب مع GA4 وبيانات طلباتكم، ولا نعد بعائد أو ROAS.",
+    "features": [
+      "هيكلة الحساب واستراتيجية الحملات على Facebook وInstagram",
+      "تركيب Meta Pixel وConversions API من جهة الخادم مع منع ازدواج الأحداث",
+      "حملات Advantage+ واختبار الاستهداف الواسع بشكل منهجي",
+      "إعداد كتالوج المنتجات والإعلانات الديناميكية للمتاجر الإلكترونية",
+      "حملات النقر للمحادثة على WhatsApp ونماذج جمع العملاء المحتملين",
+      "إنتاج إبداعي ثنائي اللغة — Reels وصور ثابتة وكاروسيل مع اختبار المقدمات",
+      "مواءمة التوقيت مع مواسم الخليج مثل رمضان والأعياد والجمعة البيضاء",
+      "تقارير عبر GA4 وGoogle Tag Manager وLooker Studio بجانب إسناد Meta"
+    ],
+    "benefits": [
+      "قياس يصمد أمام قيود iOS وفقدان ملفات الارتباط، فتعمل الخوارزمية على إشارة حقيقية",
+      "ميزانية واحدة منسّقة بين Facebook وInstagram بدل حملات تزايد على بعضها",
+      "خط إنتاج إبداعي مستمر يمنع انهيار الأداء بسبب إرهاق الإعلان",
+      "محتوى عربي وإنجليزي مفصول القياس، فتعرفون أي لغة تجلب الطلبات فعلاً",
+      "كتالوج ديناميكي يتوسّع مع تشكيلة منتجاتكم دون إعادة بناء الحملات",
+      "الملكية الكاملة لكم — Business Manager وحساب الإعلانات والبكسل وكامل السجل"
+    ],
+    "metaTitle": "إعلانات Meta — Facebook وInstagram | PakSoft",
+    "metaDescription": "إدارة إعلانات Facebook وInstagram: تركيب Pixel وConversions API، حملات كتالوج وواتساب، محتوى عربي وإنجليزي، وتقارير شفافة. اطلبوا مراجعة مجانية للحساب.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تدقيق القياس",
+          "description": "نفحص ما يسجّله البكسل فعلاً: تغطية الأحداث، ومنع الازدواج بين المتصفح والخادم، وتوثيق النطاق، وترتيب الأحداث ذات الأولوية ضمن Aggregated Event Measurement. لا نزيد ميزانية فوق قياس لم نتحقق منه من طرف إلى طرف، لأن الأحداث المعطوبة تعلّم الخوارزمية الشيء الخطأ بسرعة أكبر."
+        },
+        {
+          "step": 2,
+          "title": "العرض والهدف وهيكل الحساب",
+          "description": "نربط ما تبيعونه وهامش ربحه بأهداف الحملات القادرة على تحقيقه فعلياً: مبيعات أو عملاء محتملون أو محادثات. نبقي الهيكل بسيطاً عمداً — حملات قليلة وميزانيات مجمّعة — كي تجمع كل مجموعة إعلانية أحداثاً كافية للخروج من مرحلة التعلّم بدل تشتيت الميزانية."
+        },
+        {
+          "step": 3,
+          "title": "منظومة الإنتاج الإبداعي",
+          "description": "نبني قائمة إنتاج من المقدمات والصيغ وزوايا الرسالة بدل فيديو واحد كبير، لأن إرهاق الإبداع هو السبب المعتاد لتراجع الأداء. ننتج نسخاً بالعربية والإنجليزية ونضع لكل مفهوم وسماً عند الإطلاق، فنعرف أي مقدمة وأي لغة جاءت بالنتيجة."
+        },
+        {
+          "step": 4,
+          "title": "الإطلاق ومرحلة التعلّم",
+          "description": "تنطلق الحملات ثم تُترك مدة كافية كي تستقر؛ فكل تعديل جوهري يعيد تشغيل مرحلة التعلّم ويهدر بيانات دفعتم ثمنها. نراقب التكرار وتكلفة النتيجة والتفصيل على مستوى كل إعلان، بدل ردّ الفعل على يوم واحد ضعيف."
+        },
+        {
+          "step": 5,
+          "title": "التوسّع والكتالوج وAdvantage+",
+          "description": "حين يثبت مفهوم ما جدواه نوسّعه: حملات Advantage+ باستهداف واسع، وإعلانات الكتالوج الديناميكية للمتاجر، وإعادة الاستهداف فقط حين يبرر الحجم مجموعة مستقلة. تتم زيادات الميزانية على درجات تستوعبها مرحلة التعلّم دون إعادة ضبط."
+        },
+        {
+          "step": 6,
+          "title": "التقارير والمراجعة",
+          "description": "تحصلون على لوحة Looker Studio مفتوحة في أي وقت، وملخص شهري مكتوب، وجلسة مراجعة: ما أُنفق، وما أُنتج، وما تعلمناه، وما سيتغيّر. توضع أرقام Meta بجوار GA4 وبيانات طلباتكم، ونشرح سبب الاختلاف بدل تجاهله."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما الحد الأدنى للميزانية الشهرية؟",
+          "answer": "لا يوجد رقم واحد يناسب الجميع، والحد الأدنى يخرج من الحساب لا من الرأي. تحتاج مرحلة التعلّم في Meta إلى نحو خمسين حدث تحسين لكل مجموعة إعلانية أسبوعياً، لذا تختلف الميزانية جذرياً بين نشاط تكلفة العميل فيه منخفضة وآخر يعمل في قطاع مكلف. نحسب الرقم معكم انطلاقاً من التكلفة المستهدفة وهامش الربح قبل الالتزام، ونقولها صراحة إن كانت الميزانية أصغر من أن تتعلّم منها الحملة."
+        },
+        {
+          "question": "هل ميزانية الإعلانات ضمن أتعابكم؟",
+          "answer": "لا، الميزانية منفصلة دائماً. تُدفع مباشرة إلى Meta من وسيلة الدفع الخاصة بكم داخل حساب إعلاناتكم، وMeta هي التي تصدر فاتورتها؛ نحن لا نحصّلها ولا نضيف عليها نسبة. أتعابنا مقابل الاستراتيجية وتركيب القياس والبناء والإشراف الإبداعي والتحسين والتقارير، وتظهر كبند مستقل في العقد."
+        },
+        {
+          "question": "متى نرى نتائج؟",
+          "answer": "تظهر بيانات العرض والنقر خلال أيام، لكن القراءة الصالحة لاتخاذ القرار تحتاج عادة من أربعة إلى ثمانية أسابيع؛ فالأسابيع الأولى تمضي في الخروج من مرحلة التعلّم واكتشاف الزاوية الإبداعية التي تعمل. في العروض ذات دورة الشراء الطويلة أو البيع المؤسسي تطول المدة لأن التحويل المهم يقع بعد النقرة بوقت. نرفع المؤشرات المبكرة من الأسبوع الأول."
+        },
+        {
+          "question": "لمن تعود ملكية حساب الإعلانات والبكسل والبيانات؟",
+          "answer": "لكم بالكامل. نعمل داخل Meta Business Manager الخاص بكم بصلاحية شريك، فيبقى حساب الإعلانات والبكسل والكتالوج والجماهير المخصّصة وكل السجل التاريخي ملككم. وعند انتهاء التعاون نسلّم التوثيق ونزيل صلاحياتنا بأنفسنا — لن تضطروا إلى إعادة بناء بكسل أو خسارة تعلّم بسبب تغيير الوكالة."
+        },
+        {
+          "question": "هل تنتجون المواد الإعلانية بالعربية؟",
+          "answer": "نعم، ننتج الصور الثابتة والكاروسيل ومونتاج الفيديو القصير بنسختين عربية وإنجليزية انطلاقاً من صور منتجاتكم ولقطاتكم وعروضكم، ونكتب نصوصاً عربية أصلية لا ترجمة حرفية للإعلان الإنجليزي. التصوير الاحترافي الكامل يُسعّر بشكل منفصل أو يُنفّذ مع فريقكم. في Meta يهم التنوّع أكثر من اللمعان: تدفّق منتظم لأفكار جيدة يتفوّق على فيلم واحد مكلف كل ربع."
+        },
+        {
+          "question": "ما وتيرة التقارير؟",
+          "answer": "لوحة Looker Studio حيّة يمكنكم فتحها في أي لحظة، إضافة إلى ملخص شهري مكتوب وجلسة مراجعة؛ وفي فترات الإطلاق والتعلّم نضيف ملاحظة أسبوعية قصيرة. تشمل التقارير الإنفاق والنتائج وتكلفة النتيجة والأداء على مستوى كل إعلان وكل تغيير أجريناه — والأسابيع الضعيفة تُعرض بالتفصيل نفسه."
+        },
+        {
+          "question": "لماذا تختلف أرقام Meta عن GA4 ونظام الطلبات لدينا؟",
+          "answer": "لأن كلاً منها يقيس شيئاً مختلفاً. تنسب Meta التحويل للإعلان ضمن نافذة الإسناد الخاصة بها — افتراضياً سبعة أيام للنقر ويوم واحد للمشاهدة — وتتعرّف على المستخدم عبر أجهزة متعددة، بينما يعمل GA4 على مستوى الجلسة وبمنطق آخر نقرة، ويفقد من يحجب ملفات الارتباط أو يأتي من متصفح داخل التطبيق. لا أحد منهما يكذب. نعتمد بيانات طلباتكم مرجعاً، ونستخدم أرقام المنصة للمقارنة بين الإعلانات."
+        },
+        {
+          "question": "ماذا يحدث إن أوقفنا الحملات؟",
+          "answer": "يتوقف العرض فوراً، وتتوقف معه الطلبات والاستفسارات الناتجة عنه؛ فالإعلان المدفوع انتباه مستأجر لا أصل تملكونه. كما أن إعادة التشغيل تعني مرحلة تعلّم جديدة، لذا فالتشغيل والإيقاف المتكرر أغلى من ميزانية أقل لكنها ثابتة. إذا ضاق التدفق النقدي نفضّل خفض الميزانية ودمج الحملات بدل الإيقاف الكامل."
+        },
+        {
+          "question": "Advantage+ أم استهداف يدوي؟",
+          "answer": "تتفوّق حملات Advantage+ بالاستهداف الواسع غالباً على مجموعات الاهتمامات المبنية يدوياً، بعدما صارت إشارة Meta أكثر تجميعاً، خصوصاً في المتاجر التي لديها كتالوج منظّم وأحداث سليمة. لكنها تحتاج حجم تحويلات كافياً؛ وفي الميزانيات الصغيرة أو القطاعات المؤسسية الضيقة يبقى للاستهداف اليدوي والاستثناءات دور حقيقي. نختبر الأسلوبين بدل الانحياز مسبقاً."
+        },
+        {
+          "question": "لماذا لا تعدّلون الحملات يومياً؟",
+          "answer": "لأن معظم التعديلات المؤثرة — القفزات الكبيرة في الميزانية، وإضافة جماهير جديدة، وتبديل الإبداع داخل مجموعة تعمل — قد تعيد تشغيل مرحلة التعلّم وتُهدر بيانات مدفوعة الثمن. التعديل اليومي يبدو اجتهاداً لكنه يضرّ النتيجة عادة ويجعل ربط السبب بالنتيجة مستحيلاً. نغيّر وفق جدول، متغيّراً واحداً في كل مرة، ونوثّق ما غيّرناه."
+        },
+        {
+          "question": "هل نحتاج إعلانات Facebook أم Instagram أم حملات Advantage+؟",
+          "answer": "غالباً الثلاثة معاً، فهي ليست قنوات منفصلة: ميزانية واحدة وبكسل واحد يخدمان مواضع Facebook وInstagram، وAdvantage+ نوع حملة داخل الحساب نفسه. في الخليج يميل الثقل إلى Instagram في التجزئة، بينما تظل مواضع Facebook مصدر وصول منخفض التكلفة. صفحات Facebook Ads وإدارة إعلانات Instagram وحملات Advantage+ تدخل في التفاصيل، وهنا نقرّر التوزيع."
+        },
+        {
+          "question": "هل تشغّلون حملات النقر للمحادثة على WhatsApp؟",
+          "answer": "نعم، وهي في كثير من أنشطة الخدمات أفضل من إرسال الزيارات إلى صفحة هبوط، لأن الشراء في الخليج كثيراً ما يُغلق في محادثة. نُعدّ حملات النقر إلى WhatsApp والنماذج الفورية بأسئلة تصفية، ونعيد إرسال الأحداث عبر Conversions API كي يتعلّم منها التحسين. ونتفق معكم مسبقاً على سرعة الرد: الاستفسار الذي لا يُجاب عنه يكلّف مثل نقرة ضائعة تماماً."
+        }
+      ],
+      "technologies": [
+        { "name": "Meta Ads Manager", "icon": "meta-ads-manager" },
+        { "name": "Meta Business Suite", "icon": "meta-business-suite" },
+        { "name": "Meta Pixel", "icon": "meta-pixel" },
+        { "name": "Conversions API", "icon": "conversions-api" },
+        { "name": "Meta Commerce Manager", "icon": "meta-commerce-manager" },
+        { "name": "Google Analytics 4", "icon": "ga4" },
+        { "name": "Google Tag Manager", "icon": "google-tag-manager" },
+        { "name": "Looker Studio", "icon": "looker-studio" }
+      ]
+    }
+  }
+}

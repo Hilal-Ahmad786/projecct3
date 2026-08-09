@@ -1,0 +1,479 @@
+{
+  "slug": "whatsapp-marketing",
+  "en": {
+    "name": "WhatsApp Marketing",
+    "shortDescription": "WhatsApp Business Platform work end to end: Cloud API setup and verification, approved message templates, compliant opt-in, order and campaign flows, and an AI agent that answers inside your customers' inbox.",
+    "fullDescription": "WhatsApp is where most customers actually reply, and that makes it a channel with rules rather than a broadcast list. PakSoft builds on the WhatsApp Business Platform (Cloud API): number registration and business verification inside your own Meta Business Manager, message templates written and submitted for approval, opt-in capture with a consent record you can defend, and webhook-driven flows that connect the conversation to your orders, catalogue and CRM. We are currently building a multi-tenant AI support agent for ikas stores with a WhatsApp channel, so the automation is our own working code rather than a resold bulk panel. We will also tell you plainly what Meta permits, what it charges per message category, and where automation should hand the conversation to a person.",
+    "features": [
+      "WhatsApp Cloud API Setup, Number Registration & Business Verification",
+      "Message Template Writing, Categorisation & Meta Approval Handling",
+      "Opt-In Capture, Consent Records & One-Tap Opt-Out Management",
+      "Order, Shipping and Payment Notifications via Utility Templates",
+      "Segmented Campaign Sending Within Category and Rate Limits",
+      "Webhook-Driven Shared Inbox, Routing & Human Handover",
+      "AI Auto-Reply Agent Wired to Catalogue, Stock and Order Data",
+      "Catalogue, Cart and Checkout Links for WhatsApp Commerce"
+    ],
+    "benefits": [
+      "Messages land where customers actually read and reply, not in a spam folder",
+      "Order and shipping updates leave the support queue and run themselves",
+      "A consent record per contact, with source and timestamp, if you are ever asked",
+      "Conversation costs modelled by message category before you commit budget",
+      "Number quality and messaging limits protected instead of risked on bulk blasts",
+      "One thread per customer, shared by your team and the AI, with clean handover"
+    ],
+    "metaTitle": "WhatsApp Marketing & Business API Services | PakSoft",
+    "metaDescription": "WhatsApp Business Platform setup, Meta-approved templates, compliant opt-in and AI replies wired to store data. Talk to PakSoft about your WhatsApp channel.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Use Cases & Compliance Scoping",
+          "description": "We separate what you want to send into service replies, utility notifications and marketing campaigns, because each carries different rules and a different price. The output is a message map plus an honest list of the things Meta will not allow you to do."
+        },
+        {
+          "step": 2,
+          "title": "Platform Setup & Verification",
+          "description": "We register the number on the WhatsApp Business Platform, set the display name and complete business verification inside your own Meta Business Manager. The choice between the Cloud API directly and a solution partner is made here, with the cost and lock-in of each written down."
+        },
+        {
+          "step": 3,
+          "title": "Opt-In & Data Plumbing",
+          "description": "We build the places consent is actually collected — checkout, forms, ads, in-store QR codes — and store every opt-in with its source, wording and timestamp. Customer, order and CRM data is connected at the same time so messages can be personalised without manual exports."
+        },
+        {
+          "step": 4,
+          "title": "Templates & Conversation Flows",
+          "description": "We write the template set with the correct category and variables, submit it to Meta, and design the flows around it: order confirmed, shipped, delivered, review request, cart reminder, campaign. Each flow states explicitly what happens inside and outside the 24-hour window."
+        },
+        {
+          "step": 5,
+          "title": "Automation, Inbox & AI Agent",
+          "description": "Webhooks feed a shared inbox where your team and the AI agent work on the same thread, with routing rules and a clean handover to a human. The agent answers from your catalogue, stock and order data and stays quiet on anything it cannot verify."
+        },
+        {
+          "step": 6,
+          "title": "Launch, Quality Monitoring & Cost Review",
+          "description": "We start with a small send, watch the quality rating, delivery and opt-out rates, then scale volume only as messaging limits allow. Monthly reporting shows conversations by category against cost so you can see which flows pay for themselves."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the difference between the WhatsApp Business app and the WhatsApp Business Platform?",
+          "answer": "The free WhatsApp Business app runs on one phone and is fine for an owner replying personally. The WhatsApp Business Platform (Cloud API) is the version businesses integrate with: several agents on one number, automation, store and CRM connections, and template messaging at scale. A number can live on one or the other, not both, so we plan that switch before touching the number you already advertise."
+        },
+        {
+          "question": "Can we upload a purchased contact list and send a campaign to it?",
+          "answer": "No, and we will not build it. WhatsApp requires an opt-in from each recipient, collected somewhere they clearly agreed to hear from your business by name, and unsolicited bulk sending is the fastest route to a blocked number and a restricted Business Manager. The list that actually earns money is one you grew yourself from checkout, the website, ads and existing customers."
+        },
+        {
+          "question": "What is the 24-hour window, and when are approved templates required?",
+          "answer": "When a customer messages you, a 24-hour customer service window opens in which you can reply freely, including images and documents. Outside that window you may only send a message template that Meta approved in advance. That is why the template set is designed during the build rather than improvised after the first missed reply."
+        },
+        {
+          "question": "How long does template approval take and why do templates get rejected?",
+          "answer": "Approval is often minutes to a day, but rejections are common for templates that read as vague marketing, contain placeholder-only content, or are filed under the wrong category. We write templates with the variable structure and category — marketing, utility or authentication — that match their real purpose, and resubmit with corrections when Meta pushes back."
+        },
+        {
+          "question": "What does running WhatsApp actually cost?",
+          "answer": "There are two costs: what Meta charges for messaging, priced by message category and the recipient's country, and the build and maintenance on our side. Meta has revised this pricing model more than once, so we check the current rates for your markets and estimate a monthly range from your real volume before you commit. Customer-initiated service conversations are the cheap part; marketing templates are the expensive part."
+        },
+        {
+          "question": "Can you get us the green verified badge?",
+          "answer": "No agency can promise it. The green tick marks an Official Business Account and Meta grants it based on how notable and widely referenced your brand is; it cannot be purchased, and it is separate from the business verification required to send at scale. We complete display name and business verification properly, which is what actually unlocks messaging, and treat the badge as a maybe."
+        },
+        {
+          "question": "Can we keep our current phone number?",
+          "answer": "Usually yes. If that number is currently on the WhatsApp Business app, its chat history and app access do not carry over to the Cloud API, so we plan the migration with you before anything is registered. Some clients keep the familiar number for the API and move personal chats elsewhere; a landline or a fresh number can also be registered if you prefer to keep the two separate."
+        },
+        {
+          "question": "How does WhatsApp connect to our online store?",
+          "answer": "Through webhooks and your store's API. Order confirmations, shipping updates and cart reminders are triggered by store events, and incoming questions can be answered with live product, stock and order data. We work on ikas today for exactly this, and the same pattern applies to Shopify, WooCommerce or a custom back end."
+        },
+        {
+          "question": "Can AI answer customers instead of our team?",
+          "answer": "For a large share of repeat questions — price, stock, delivery time, order status, opening hours — yes, and that is the agent we are building for ikas stores. It answers from your catalogue and knowledge base rather than improvising, and hands over to a person the moment it meets a complaint, a refund or anything it cannot verify. You keep a per-channel switch to turn the AI off."
+        },
+        {
+          "question": "What happens if our quality rating drops?",
+          "answer": "Meta scores your number from user feedback such as blocks and reports, and lowers your daily messaging limit tier when quality falls. The practical remedy is fewer and better-targeted marketing templates, a visible opt-out in every campaign, and utility messages people genuinely want. We monitor the rating in Business Manager and pull sending back before a limit becomes a restriction."
+        },
+        {
+          "question": "How long does setup take?",
+          "answer": "A working Cloud API setup with verification, a first template set and store notifications is typically two to four weeks. Business verification is the least predictable step because it depends on Meta's review of your documents. Campaign segmentation and the AI agent usually run as a second phase once real conversations are flowing."
+        },
+        {
+          "question": "Who owns the number, the account and the data?",
+          "answer": "You do. The WhatsApp Business Account and the phone number sit inside your Meta Business Manager with us added as a partner, so our access can be removed at any time without you losing the asset. Conversation history and consent records live in your systems, and we hand over documentation for both at the end of the engagement."
+        }
+      ],
+      "technologies": [
+        { "name": "WhatsApp Business Platform", "icon": "whatsapp" },
+        { "name": "Meta Cloud API", "icon": "api" },
+        { "name": "Meta Business Manager", "icon": "meta" },
+        { "name": "Webhooks", "icon": "code" },
+        { "name": "Next.js", "icon": "nextjs" },
+        { "name": "Node.js", "icon": "nodejs" },
+        { "name": "ikas", "icon": "ikas" },
+        { "name": "Google Analytics 4", "icon": "ga4" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "WhatsApp Pazarlama",
+    "shortDescription": "WhatsApp Business Platform (Cloud API) kurulumundan onaylı şablon mesajlara, açık rızaya dayalı izin toplamadan sipariş bildirimlerine ve müşteriye anında yanıt veren yapay zekâ asistanına kadar uçtan uca WhatsApp altyapısı kuruyoruz.",
+    "fullDescription": "Türkiye'de müşteri sizi e-postadan değil WhatsApp'tan arıyor; bu yüzden WhatsApp bir yayın listesi değil, kuralları olan bir satış ve destek kanalıdır. Kurulumu WhatsApp Business Platform (Cloud API) üzerinde yapıyoruz: numara kaydı, kendi Meta Business Manager hesabınızda işletme doğrulaması, şablon mesajların yazılıp onaya gönderilmesi, izin kaydının kaynağı ve tarihiyle saklanması ve konuşmayı siparişe, ürün kataloğuna ve CRM'e bağlayan webhook akışları. Şu anda ikas mağazaları için WhatsApp kanalı olan çok kiracılı bir yapay zekâ destek asistanı geliştiriyoruz; yani otomasyon tarafı bayiliğini yaptığımız hazır bir panel değil, kendi yazdığımız kod. Meta'nın neye izin verdiğini, mesaj kategorisi başına ne ücretlendirdiğini ve otomasyonun nerede insana devretmesi gerektiğini baştan açıkça söyleriz.",
+    "features": [
+      "WhatsApp Cloud API Kurulumu, Numara Kaydı ve İşletme Doğrulaması",
+      "Şablon Mesaj Yazımı, Kategori Seçimi ve Meta Onay Süreci Yönetimi",
+      "Açık Rızaya Dayalı İzin Toplama, Onay Kaydı ve Çıkış (Opt-Out) Yönetimi",
+      "Sipariş, Kargo ve Ödeme Bildirimleri için Utility Şablon Akışları",
+      "Segmentli Kampanya Gönderimi ve Gönderim Limiti Yönetimi",
+      "Webhook Tabanlı Ortak Gelen Kutusu, Yönlendirme ve Temsilciye Devir",
+      "Ürün, Stok ve Sipariş Verisine Bağlı Yapay Zekâ Otomatik Yanıt",
+      "Katalog, Sepet ve Ödeme Linkleriyle WhatsApp Üzerinden Satış"
+    ],
+    "benefits": [
+      "Mesajınız müşterinin gerçekten okuduğu yere düşüyor, spam klasörüne değil",
+      "Kargo ve sipariş bildirimleri destek ekibinin üzerinden kalkıp kendi kendine işliyor",
+      "Her numara için kaynağı ve tarihi belli bir onay kaydı elinizde duruyor",
+      "Konuşma maliyeti bütçe ayırmadan önce mesaj kategorisi bazında hesaplanmış oluyor",
+      "Toplu gönderim panelleriyle numaranızı ve hesabınızı yakma riskine girmiyorsunuz",
+      "Müşteri başına tek konuşma; ekip ve yapay zekâ aynı ekranda devralıyor"
+    ],
+    "metaTitle": "WhatsApp Pazarlama ve WhatsApp Business API | PakSoft",
+    "metaDescription": "WhatsApp Business API kurulumu, Meta onaylı şablon mesajlar, izinli iletişim ve siparişe bağlı otomatik bildirimler. WhatsApp kanalınız için PakSoft'a yazın.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Kullanım Senaryosu ve Mevzuat Analizi",
+          "description": "Göndermek istediğiniz mesajları destek yanıtı, bilgilendirme (utility) ve pazarlama olarak ayırıyoruz; çünkü her birinin kuralı da fiyatı da farklı. Çıktı, bir mesaj haritası ve Meta'nın izin vermediği işlerin dürüst bir listesi oluyor."
+        },
+        {
+          "step": 2,
+          "title": "Platform Kurulumu ve Doğrulama",
+          "description": "Numarayı WhatsApp Business Platform üzerinde kaydediyor, görünen işletme adını ayarlıyor ve işletme doğrulamasını sizin Meta Business Manager hesabınızda tamamlıyoruz. Doğrudan Cloud API mi yoksa bir çözüm ortağı mı kullanılacağına da burada karar veriyor, maliyet ve bağımlılık farkını yazılı olarak sunuyoruz."
+        },
+        {
+          "step": 3,
+          "title": "İzin Toplama ve Veri Bağlantıları",
+          "description": "İznin gerçekten alındığı noktaları kuruyoruz: ödeme adımı, formlar, reklamlar, mağaza içi QR kodları; her onayı kaynağı, metni ve zaman damgasıyla saklıyoruz. Aynı aşamada müşteri, sipariş ve CRM verisini bağlıyoruz ki mesajlar elle Excel aktarmadan kişiselleşebilsin."
+        },
+        {
+          "step": 4,
+          "title": "Şablonlar ve Konuşma Akışları",
+          "description": "Şablon setini doğru kategori ve değişken yapısıyla yazıp Meta onayına gönderiyor, etrafına akışları kuruyoruz: sipariş alındı, kargolandı, teslim edildi, değerlendirme isteği, sepet hatırlatma, kampanya. Her akışta 24 saatlik pencerenin içinde ve dışında ne olacağı net yazıyor."
+        },
+        {
+          "step": 5,
+          "title": "Otomasyon, Gelen Kutusu ve Yapay Zekâ",
+          "description": "Webhook'lar, ekibinizle yapay zekâ asistanının aynı konuşma üzerinde çalıştığı ortak bir gelen kutusunu besliyor; yönlendirme kuralları ve temiz bir insana devir mekanizması kuruluyor. Asistan yanıtlarını kataloğunuzdan, stoktan ve sipariş verisinden üretiyor, doğrulayamadığı hiçbir şeyi uydurmuyor."
+        },
+        {
+          "step": 6,
+          "title": "Yayın, Kalite Takibi ve Maliyet Kontrolü",
+          "description": "Küçük bir gönderimle başlıyor; kalite puanını, iletim oranını ve çıkış (opt-out) oranını izliyor, hacmi ancak gönderim limitleri elverdikçe artırıyoruz. Aylık raporda konuşmalar kategori bazında maliyetle birlikte görünüyor, böylece hangi akışın kendini finanse ettiği ölçülebiliyor."
+        }
+      ],
+      "faq": [
+        {
+          "question": "WhatsApp Business uygulaması ile WhatsApp Business Platform arasındaki fark nedir?",
+          "answer": "Ücretsiz WhatsApp Business uygulaması tek telefonda çalışır ve işletme sahibinin bizzat yanıtladığı küçük işletmeler için yeterlidir. WhatsApp Business Platform (Cloud API) ise entegre edilen sürümdür: aynı numarada birden fazla temsilci, otomasyon, mağaza ve CRM bağlantısı, ölçekli şablon mesaj gönderimi. Bir numara ikisinden yalnızca birinde yaşayabilir; bu yüzden zaten reklamını yaptığınız numaraya dokunmadan önce geçişi planlarız."
+        },
+        {
+          "question": "Elimizdeki numara listesine toplu mesaj atabilir miyiz?",
+          "answer": "Hayır ve böyle bir kurgu kurmuyoruz. WhatsApp, her alıcıdan markanızın adının açıkça geçtiği bir noktada alınmış izin şartı arar; izinsiz toplu gönderim ise numaranın engellenmesi ve Business Manager hesabının kısıtlanması için en kısa yoldur. Ayrıca satın alınmış listeye ticari mesaj atmak KVKK açısından da savunulabilir değildir. Para kazandıran liste, ödeme adımından, siteden, reklamlardan ve mevcut müşterilerden kendi büyüttüğünüz listedir."
+        },
+        {
+          "question": "WhatsApp gönderimleri için İYS'ye kayıt gerekiyor mu?",
+          "answer": "İYS ve ticari elektronik ileti mevzuatı esas olarak SMS, e-posta ve arama kanalları için tanımlanmıştır; WhatsApp'ın bu kapsamda değerlendirilip değerlendirilmeyeceği tartışmalı ve uygulama gelişmeye devam ediyor. Bizim önerimiz riski dar tarafından okumak: açık rızayı metni, kaynağı ve tarihiyle kayıt altına almak, her mesajda kolay bir çıkış yolu sunmak ve nihai değerlendirmeyi kendi hukuk danışmanınızla teyit etmek. Teknik altyapıyı bu kayıtları üretecek şekilde kuruyoruz."
+        },
+        {
+          "question": "24 saat kuralı nedir, şablon mesaj ne zaman zorunlu olur?",
+          "answer": "Müşteri size yazdığı anda 24 saatlik bir destek penceresi açılır ve bu süre boyunca serbest metin, görsel, dosya gönderebilirsiniz. Pencere kapandıktan sonra yalnızca Meta'nın önceden onayladığı şablon mesajları gönderebilirsiniz. Şablon setini bu yüzden kurulum aşamasında tasarlıyoruz; ilk cevapsız kalan müşteride aceleye getirilen şablon genelde reddediliyor."
+        },
+        {
+          "question": "Şablon onayı ne kadar sürer, neden reddedilir?",
+          "answer": "Onay çoğu zaman birkaç dakika ile bir gün arasında sonuçlanır. Reddin en sık sebepleri: mesajın muğlak bir reklam gibi okunması, içeriğin sadece değişkenlerden ibaret olması ve şablonun yanlış kategoriye gönderilmesi. Biz şablonu gerçek amacına uyan kategoriyle (pazarlama, bilgilendirme, doğrulama) ve düzgün değişken yapısıyla yazar, Meta itiraz ederse düzeltip yeniden göndeririz."
+        },
+        {
+          "question": "WhatsApp'ın maliyeti ne olur?",
+          "answer": "İki ayrı kalem var: Meta'nın mesajlaşma için aldığı ücret ve bizim kurulum-bakım tarafımız. Meta'nın ücretlendirmesi mesaj kategorisine ve alıcının ülkesine göre değişir, üstelik bu model birkaç kez güncellendi; bu yüzden bütçe konuşmadan önce güncel tarifeyi kontrol edip sizin gerçek hacminize göre aylık bir aralık çıkarıyoruz. Müşterinin başlattığı destek konuşmaları en ucuz kısım, pazarlama şablonları ise pahalı kısımdır."
+        },
+        {
+          "question": "Yeşil tik (onaylı hesap) alabilir miyiz?",
+          "answer": "Bunu hiçbir ajans garanti edemez. Yeşil tik, Resmî İşletme Hesabı (Official Business Account) statüsünü gösterir ve Meta bunu markanın bilinirliğine ve basında ne kadar yer aldığına bakarak verir; satın alınamaz. Ölçekli gönderim için gereken şey işletme doğrulamasıdır ve o ayrı bir süreçtir. Biz görünen ad ve işletme doğrulamasını düzgün tamamlarız, tiki ise ihtimal olarak konuşuruz."
+        },
+        {
+          "question": "Mevcut numaramızı kullanabilir miyiz?",
+          "answer": "Genellikle evet. Ancak numara şu anda WhatsApp Business uygulamasındaysa, sohbet geçmişi ve uygulama erişimi Cloud API'ye taşınmaz; bu yüzden kaydı başlatmadan önce geçişi birlikte planlarız. Bazı müşterilerimiz bilinen numarayı API'ye alıp kişisel yazışmaları başka bir hatta taşımayı tercih ediyor; sabit hat ya da yeni bir numara da kaydedilebilir."
+        },
+        {
+          "question": "ikas veya diğer e-ticaret altyapılarıyla entegre oluyor mu?",
+          "answer": "Evet, webhook'lar ve mağazanızın API'si üzerinden. Sipariş onayı, kargo bilgisi ve sepet hatırlatması mağaza olaylarıyla tetiklenir; gelen sorular ise canlı ürün, stok ve sipariş verisiyle yanıtlanabilir. Bugün tam da bunun için ikas üzerinde çalışıyoruz; aynı kurgu Shopify, WooCommerce veya özel yazılım bir altyapı için de geçerli."
+        },
+        {
+          "question": "Yapay zekâ müşteriye ekibimizin yerine cevap verebilir mi?",
+          "answer": "Tekrar eden soruların büyük bölümünde evet: fiyat, stok, teslim süresi, sipariş durumu, çalışma saatleri. ikas mağazaları için geliştirdiğimiz asistan tam olarak bunu yapıyor; yanıtı kataloğunuzdan ve bilgi bankasından üretiyor, şikâyet, iade veya doğrulayamadığı bir konu geldiğinde konuşmayı insana devrediyor. Kanal bazında yapay zekâyı kapatma anahtarı sizde kalıyor."
+        },
+        {
+          "question": "Kalite puanımız düşerse ne olur?",
+          "answer": "Meta, numaranızı kullanıcı geri bildirimine (engelleme ve şikâyet) göre puanlar ve kalite düştüğünde günlük gönderim limiti kademenizi indirir. Pratik çözüm; daha az ama daha isabetli pazarlama şablonu, her kampanyada görünür bir çıkış seçeneği ve insanların gerçekten istediği bilgilendirme mesajlarıdır. Kalite puanını Business Manager üzerinden izler, limit kısıtlamaya dönüşmeden gönderimi geri çekeriz."
+        },
+        {
+          "question": "Kurulum ne kadar sürer ve numara kime ait olur?",
+          "answer": "Doğrulaması tamamlanmış çalışan bir Cloud API kurulumu, ilk şablon seti ve mağaza bildirimleri genellikle iki ile dört hafta arasında hazır olur; en öngörülemez adım, Meta'nın evraklarınızı incelediği işletme doğrulamasıdır. Numara ve WhatsApp Business hesabı sizin Meta Business Manager hesabınızda durur, biz yalnızca partner olarak ekleniriz; erişimimiz istediğiniz an kaldırılabilir ve varlık sizde kalır."
+        }
+      ],
+      "technologies": [
+        { "name": "WhatsApp Business Platform", "icon": "whatsapp" },
+        { "name": "Meta Cloud API", "icon": "api" },
+        { "name": "Meta Business Manager", "icon": "meta" },
+        { "name": "Webhooks", "icon": "code" },
+        { "name": "Next.js", "icon": "nextjs" },
+        { "name": "Node.js", "icon": "nodejs" },
+        { "name": "ikas", "icon": "ikas" },
+        { "name": "Google Analytics 4", "icon": "ga4" }
+      ]
+    }
+  },
+  "de": {
+    "name": "WhatsApp-Marketing",
+    "shortDescription": "WhatsApp Business Platform von der Einrichtung bis zum Betrieb: Cloud-API-Registrierung, Business-Verifizierung, genehmigte Nachrichtenvorlagen, dokumentiertes Opt-in, Bestell- und Kampagnenstrecken sowie ein KI-Agent mit Anbindung an Ihre Shopdaten.",
+    "fullDescription": "WhatsApp ist der Kanal, in dem Kundinnen und Kunden tatsächlich antworten — und genau deshalb ein regulierter Kanal und kein Verteiler. Wir arbeiten auf der WhatsApp Business Platform (Cloud API): Rufnummernregistrierung, Business-Verifizierung in Ihrem eigenen Meta Business Manager, Nachrichtenvorlagen, die wir schreiben und zur Genehmigung einreichen, eine dokumentierte Einwilligung samt Quelle und Zeitstempel sowie Webhook-Strecken, die das Gespräch mit Bestellungen, Katalog und CRM verbinden. Derzeit entwickeln wir einen mandantenfähigen KI-Support-Agenten für ikas-Shops mit WhatsApp-Kanal; die Automatisierung ist also unser eigener Code und kein weiterverkauftes Massenversand-Panel. Wir sagen Ihnen zudem klar, was Meta erlaubt, wie nach Nachrichtenkategorie abgerechnet wird und an welcher Stelle die Automatisierung an einen Menschen übergeben sollte.",
+    "features": [
+      "Einrichtung der Cloud API, Rufnummernregistrierung & Business-Verifizierung",
+      "Erstellung, Kategorisierung & Genehmigungsmanagement von Nachrichtenvorlagen",
+      "Rechtssicheres Opt-in, Einwilligungsdokumentation & Abmeldemanagement",
+      "Bestell-, Versand- und Zahlungsbenachrichtigungen über Utility-Vorlagen",
+      "Segmentierter Kampagnenversand innerhalb der Kategorie- und Ratenlimits",
+      "Webhook-gestützter Team-Posteingang, Routing & Übergabe an Mitarbeitende",
+      "KI-Agent mit Zugriff auf Katalog-, Bestands- und Bestelldaten",
+      "Katalog-, Warenkorb- und Checkout-Links für WhatsApp-Commerce"
+    ],
+    "benefits": [
+      "Nachrichten erreichen den Kanal, in dem tatsächlich gelesen und geantwortet wird",
+      "Bestell- und Versandinfos laufen automatisiert statt über Ihr Serviceteam",
+      "Für jeden Kontakt eine belastbare Einwilligung mit Quelle und Zeitstempel",
+      "Gesprächskosten je Nachrichtenkategorie kalkuliert, bevor Budget freigegeben wird",
+      "Nummernqualität und Versandlimits geschützt statt durch Massenversand riskiert",
+      "Ein Verlauf je Kundin oder Kunde, gemeinsam genutzt von Team und KI"
+    ],
+    "metaTitle": "WhatsApp-Marketing & WhatsApp Business API | PakSoft",
+    "metaDescription": "WhatsApp Business Platform: Cloud-API-Einrichtung, geprüfte Vorlagen, dokumentiertes Opt-in und Shop-Anbindung mit KI-Antworten. Jetzt unverbindlich anfragen.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Anwendungsfälle & Compliance-Rahmen",
+          "description": "Wir trennen Ihre geplanten Nachrichten in Serviceantworten, Utility-Benachrichtigungen und Marketingkampagnen, da für jede Kategorie andere Regeln und andere Preise gelten. Ergebnis sind eine Nachrichtenlandkarte und eine ehrliche Liste dessen, was Meta nicht zulässt."
+        },
+        {
+          "step": 2,
+          "title": "Einrichtung & Verifizierung",
+          "description": "Wir registrieren die Rufnummer auf der WhatsApp Business Platform, setzen den Anzeigenamen und schließen die Business-Verifizierung in Ihrem eigenen Meta Business Manager ab. Ob direkt über die Cloud API oder über einen Solution Partner gearbeitet wird, entscheiden wir hier — mit schriftlicher Gegenüberstellung von Kosten und Abhängigkeit."
+        },
+        {
+          "step": 3,
+          "title": "Opt-in & Datenanbindung",
+          "description": "Wir bauen die Stellen, an denen die Einwilligung real eingeholt wird: Checkout, Formulare, Anzeigen, QR-Codes am Point of Sale — jeweils mit Quelle, Wortlaut und Zeitstempel protokolliert. Parallel binden wir Kunden-, Bestell- und CRM-Daten an, damit Personalisierung ohne manuelle Exporte funktioniert."
+        },
+        {
+          "step": 4,
+          "title": "Vorlagen & Gesprächsstrecken",
+          "description": "Wir formulieren die Vorlagen mit passender Kategorie und Variablenstruktur, reichen sie bei Meta ein und bauen die Strecken darum herum: Bestellbestätigung, Versand, Zustellung, Bewertungsanfrage, Warenkorberinnerung, Kampagne. Für jede Strecke ist festgelegt, was innerhalb und was außerhalb des 24-Stunden-Fensters passiert."
+        },
+        {
+          "step": 5,
+          "title": "Automatisierung, Posteingang & KI-Agent",
+          "description": "Webhooks speisen einen gemeinsamen Posteingang, in dem Ihr Team und der KI-Agent am selben Verlauf arbeiten, inklusive Routing-Regeln und sauberer Übergabe an Menschen. Der Agent antwortet aus Katalog-, Bestands- und Bestelldaten und schweigt bei allem, was er nicht belegen kann."
+        },
+        {
+          "step": 6,
+          "title": "Start, Qualitätsüberwachung & Kostenkontrolle",
+          "description": "Wir starten mit kleinen Volumina, beobachten Qualitätsbewertung, Zustellung und Abmeldequote und skalieren erst, wenn die Versandlimits es zulassen. Das monatliche Reporting stellt Gespräche nach Kategorie den Kosten gegenüber, sodass sichtbar wird, welche Strecke sich rechnet."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Worin unterscheiden sich WhatsApp Business App und WhatsApp Business Platform?",
+          "answer": "Die kostenlose WhatsApp Business App läuft auf einem Telefon und genügt, wenn die Inhaberin oder der Inhaber persönlich antwortet. Die WhatsApp Business Platform (Cloud API) ist die integrierbare Variante: mehrere Mitarbeitende auf einer Nummer, Automatisierung, Shop- und CRM-Anbindung sowie Vorlagenversand im großen Stil. Eine Rufnummer kann nur in einer der beiden Welten liegen, deshalb planen wir den Wechsel, bevor wir Ihre beworbene Nummer anfassen."
+        },
+        {
+          "question": "Dürfen wir eine gekaufte oder gesammelte Liste anschreiben?",
+          "answer": "Nein, und wir setzen das auch nicht um. WhatsApp verlangt ein Opt-in jeder Empfängerin und jedes Empfängers, eingeholt an einer Stelle, an der Ihr Unternehmen namentlich genannt war. Unaufgeforderter Massenversand führt regelmäßig zur Sperrung der Nummer und zur Einschränkung des Business Managers — und ist bei Werbung per elektronischer Nachricht in Deutschland ohnehin einwilligungsbedürftig. Tragfähig ist nur eine selbst aufgebaute Liste."
+        },
+        {
+          "question": "Wie steht WhatsApp-Marketing zur DSGVO?",
+          "answer": "Werbliche Nachrichten setzen in der Regel eine nachweisbare, ausdrückliche Einwilligung voraus; wir protokollieren daher Wortlaut, Quelle und Zeitpunkt jeder Zustimmung und implementieren eine jederzeit nutzbare Abmeldung. Zusätzlich sind der Auftragsverarbeitungsvertrag mit Meta, die Information über die Datenverarbeitung in Ihrer Datenschutzerklärung und ein Löschkonzept für Gesprächsdaten zu klären. Die rechtliche Endabnahme gehört zu Ihrer Rechtsberatung, wir liefern die technische Umsetzung und die Nachweise."
+        },
+        {
+          "question": "Was ist das 24-Stunden-Fenster und wann sind Vorlagen Pflicht?",
+          "answer": "Sobald ein Kunde Ihnen schreibt, öffnet sich ein 24-stündiges Servicefenster, in dem Sie frei antworten dürfen, auch mit Bildern und Dokumenten. Danach sind ausschließlich von Meta vorab genehmigte Nachrichtenvorlagen zulässig. Deshalb entwerfen wir das Vorlagenset während der Umsetzung und nicht erst, wenn die erste Anfrage unbeantwortet abläuft."
+        },
+        {
+          "question": "Wie lange dauert die Genehmigung von Vorlagen?",
+          "answer": "Meist zwischen wenigen Minuten und einem Tag. Abgelehnt wird vor allem, was wie unbestimmte Werbung klingt, fast nur aus Platzhaltern besteht oder in der falschen Kategorie eingereicht wurde. Wir wählen Kategorie — Marketing, Utility oder Authentifizierung — und Variablenstruktur passend zum tatsächlichen Zweck und reichen bei Beanstandung korrigiert erneut ein."
+        },
+        {
+          "question": "Welche Kosten entstehen im Betrieb?",
+          "answer": "Es gibt zwei Blöcke: die Abrechnung durch Meta, die sich nach Nachrichtenkategorie und Land der Empfänger richtet, sowie Umsetzung und Wartung bei uns. Meta hat dieses Preismodell mehrfach angepasst, deshalb prüfen wir die aktuellen Sätze für Ihre Zielmärkte und rechnen aus Ihrem realen Volumen eine monatliche Spanne, bevor Sie sich festlegen. Von Kunden initiierte Servicegespräche sind der günstige Teil, Marketingvorlagen der teure."
+        },
+        {
+          "question": "Können Sie uns das grüne Verifizierungshäkchen besorgen?",
+          "answer": "Das kann keine Agentur zusagen. Das grüne Häkchen kennzeichnet ein Official Business Account und wird von Meta anhand der öffentlichen Bekanntheit einer Marke vergeben; es ist nicht käuflich und unabhängig von der Business-Verifizierung, die für den Versand erforderlich ist. Wir erledigen Anzeigename und Verifizierung sauber — das schaltet den Versand frei — und behandeln das Häkchen als Möglichkeit, nicht als Zusage."
+        },
+        {
+          "question": "Können wir unsere bestehende Rufnummer weiterverwenden?",
+          "answer": "In der Regel ja. Liegt die Nummer aktuell in der WhatsApp Business App, wandern Chatverlauf und App-Zugang jedoch nicht in die Cloud API mit, weshalb wir die Migration vorab gemeinsam planen. Häufig behalten Unternehmen die bekannte Nummer für die API und verlagern persönliche Chats; auch eine Festnetznummer oder eine neue Rufnummer lässt sich registrieren."
+        },
+        {
+          "question": "Wie wird unser Shop angebunden?",
+          "answer": "Über Webhooks und die API Ihres Shopsystems. Bestellbestätigungen, Versandmeldungen und Warenkorberinnerungen werden durch Shop-Ereignisse ausgelöst, eingehende Fragen lassen sich mit aktuellen Produkt-, Bestands- und Bestelldaten beantworten. Wir setzen das aktuell auf ikas um; dasselbe Muster funktioniert mit Shopify, WooCommerce oder einem individuellen Backend."
+        },
+        {
+          "question": "Kann eine KI statt unseres Teams antworten?",
+          "answer": "Bei wiederkehrenden Fragen zu Preis, Verfügbarkeit, Lieferzeit, Bestellstatus oder Öffnungszeiten ja — genau dafür entwickeln wir den Agenten für ikas-Shops. Er antwortet aus Katalog und Wissensdatenbank statt zu improvisieren und übergibt bei Reklamationen, Erstattungen oder ungesicherten Aussagen sofort an einen Menschen. Der Schalter, die KI je Kanal abzuschalten, bleibt bei Ihnen."
+        },
+        {
+          "question": "Was passiert bei sinkender Qualitätsbewertung?",
+          "answer": "Meta bewertet Ihre Nummer anhand von Nutzersignalen wie Blockierungen und Meldungen und senkt bei schlechter Bewertung Ihr tägliches Versandlimit. Wirksam gegensteuern lässt sich mit weniger, aber besser ausgesteuerten Marketingvorlagen, einer sichtbaren Abmeldeoption in jeder Kampagne und Utility-Nachrichten mit echtem Nutzen. Wir überwachen die Bewertung im Business Manager und drosseln, bevor aus einem Limit eine Sperre wird."
+        },
+        {
+          "question": "Wie lange dauert die Einrichtung und wem gehören Nummer und Daten?",
+          "answer": "Eine betriebsbereite Cloud-API-Einrichtung mit Verifizierung, erstem Vorlagenset und Shop-Benachrichtigungen ist üblicherweise in zwei bis vier Wochen nutzbar; am wenigsten planbar ist die Business-Verifizierung, weil sie von Metas Dokumentenprüfung abhängt. Rufnummer und WhatsApp Business Account liegen in Ihrem Meta Business Manager, wir sind lediglich als Partner hinterlegt und jederzeit entfernbar. Gesprächsdaten und Einwilligungsnachweise verbleiben in Ihren Systemen."
+        }
+      ],
+      "technologies": [
+        { "name": "WhatsApp Business Platform", "icon": "whatsapp" },
+        { "name": "Meta Cloud API", "icon": "api" },
+        { "name": "Meta Business Manager", "icon": "meta" },
+        { "name": "Webhooks", "icon": "code" },
+        { "name": "Next.js", "icon": "nextjs" },
+        { "name": "Node.js", "icon": "nodejs" },
+        { "name": "ikas", "icon": "ikas" },
+        { "name": "Google Analytics 4", "icon": "ga4" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "التسويق عبر WhatsApp",
+    "shortDescription": "عمل متكامل على WhatsApp Business Platform: تسجيل الرقم عبر Cloud API وتوثيق النشاط، وقوالب رسائل معتمدة من Meta، وأذونات موثّقة، ومسارات للطلبات والحملات، ووكيل ذكاء اصطناعي يجيب من بيانات متجركم مباشرة.",
+    "fullDescription": "WhatsApp هو المكان الذي يرد فيه العملاء فعلاً في الخليج، ولهذا فهو قناة لها قواعد وليست قائمة بث. نعمل على WhatsApp Business Platform عبر Cloud API: تسجيل الرقم، وتوثيق النشاط التجاري داخل حساب Meta Business Manager الخاص بكم، وكتابة قوالب الرسائل وتقديمها للاعتماد، وتسجيل كل إذن مع مصدره وتاريخه، ومسارات قائمة على Webhooks تربط المحادثة بالطلبات والكتالوج ونظام إدارة العملاء. نطوّر حالياً وكيل دعم بالذكاء الاصطناعي متعدد المستأجرين لمتاجر ikas مع قناة WhatsApp، أي أن جانب الأتمتة شيفرة نكتبها بأنفسنا لا لوحة إرسال جماعي معاد بيعها. ونوضّح لكم بصراحة ما تسمح به Meta، وكيف تُحتسب التكلفة حسب فئة الرسالة، وأين يجب أن تنتقل المحادثة إلى موظف بشري.",
+    "features": [
+      "إعداد Cloud API وتسجيل الرقم وتوثيق النشاط التجاري",
+      "كتابة قوالب الرسائل واختيار فئتها وإدارة اعتمادها لدى Meta",
+      "جمع الأذونات وتوثيق الموافقة وإدارة إلغاء الاشتراك",
+      "إشعارات الطلب والشحن والدفع عبر قوالب Utility",
+      "حملات مُقسَّمة حسب الشرائح ضمن حدود الفئات ومعدلات الإرسال",
+      "صندوق وارد مشترك يعمل بـ Webhooks مع التوجيه والتسليم لموظف",
+      "وكيل رد آلي مرتبط ببيانات الكتالوج والمخزون والطلبات",
+      "روابط الكتالوج والسلة وإتمام الشراء للبيع داخل WhatsApp"
+    ],
+    "benefits": [
+      "رسائلكم تصل إلى القناة التي يقرأ فيها العميل ويرد فعلاً",
+      "إشعارات الطلب والشحن تعمل تلقائياً بدل أن تشغل فريق الدعم",
+      "سجل إذن لكل رقم يوضّح المصدر والتاريخ عند أي مراجعة",
+      "تكلفة المحادثات محسوبة حسب فئة الرسالة قبل اعتماد الميزانية",
+      "حماية تقييم الرقم وحدود الإرسال بدل المخاطرة بالإرسال الجماعي",
+      "محادثة واحدة لكل عميل يتشاركها فريقكم والوكيل الذكي بتسليم واضح"
+    ],
+    "metaTitle": "التسويق عبر WhatsApp وواجهة Business API | PakSoft",
+    "metaDescription": "إعداد WhatsApp Business Platform وقوالب معتمدة من Meta وأذونات موثّقة وربط كامل بمتجركم وطلباتكم مع ردود ذكية. تواصلوا مع PakSoft لتفعيل قناة WhatsApp.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تحديد حالات الاستخدام والالتزام",
+          "description": "نفصل ما تريدون إرساله إلى ثلاثة أنواع: ردود خدمة، وإشعارات تشغيلية، وحملات تسويقية، لأن لكل نوع قواعده وسعره المختلف. المخرَج خريطة رسائل واضحة وقائمة صريحة بما لا تسمح به سياسات Meta."
+        },
+        {
+          "step": 2,
+          "title": "الإعداد والتوثيق",
+          "description": "نسجّل الرقم على WhatsApp Business Platform، ونضبط الاسم الظاهر، ونستكمل توثيق النشاط التجاري داخل حساب Meta Business Manager العائد لكم. وهنا نحسم الاختيار بين Cloud API مباشرة أو العمل عبر شريك حلول، مع بيان مكتوب للتكلفة ودرجة الارتباط في كل خيار."
+        },
+        {
+          "step": 3,
+          "title": "الأذونات وربط البيانات",
+          "description": "نبني النقاط التي يُجمع فيها الإذن فعلاً: خطوة الدفع، والنماذج، والإعلانات، ورموز QR داخل الفرع، ونحفظ كل إذن مع نصه ومصدره وتوقيته. وفي المرحلة نفسها نربط بيانات العملاء والطلبات ونظام إدارة العملاء حتى تصبح الرسائل مخصّصة دون تصدير يدوي."
+        },
+        {
+          "step": 4,
+          "title": "القوالب ومسارات المحادثة",
+          "description": "نكتب مجموعة القوالب بالفئة والمتغيرات الصحيحة ونقدّمها لاعتماد Meta، ثم نبني حولها المسارات: تأكيد الطلب، والشحن، والتسليم، وطلب التقييم، وتذكير السلة، والحملة الترويجية. ويحدّد كل مسار بوضوح ما يحدث داخل نافذة الأربع والعشرين ساعة وما يحدث خارجها."
+        },
+        {
+          "step": 5,
+          "title": "الأتمتة وصندوق الوارد والوكيل الذكي",
+          "description": "تغذّي Webhooks صندوق وارد مشتركاً يعمل فيه فريقكم والوكيل الذكي على المحادثة نفسها، مع قواعد توجيه وتسليم نظيف إلى موظف بشري. ويجيب الوكيل من الكتالوج والمخزون وبيانات الطلبات، ويمتنع عن أي معلومة لا يستطيع التحقق منها."
+        },
+        {
+          "step": 6,
+          "title": "الإطلاق ومتابعة الجودة ومراجعة التكلفة",
+          "description": "نبدأ بإرسال محدود ونراقب تقييم الجودة ونسب التسليم وإلغاء الاشتراك، ثم نوسّع الحجم بقدر ما تسمح به حدود الإرسال. ويعرض التقرير الشهري المحادثات حسب الفئة مقابل التكلفة، فتتضح المسارات التي تغطي كلفتها فعلاً."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما الفرق بين تطبيق WhatsApp Business ومنصة WhatsApp Business Platform؟",
+          "answer": "تطبيق WhatsApp Business المجاني يعمل على هاتف واحد ويكفي صاحب النشاط الذي يرد بنفسه. أما WhatsApp Business Platform عبر Cloud API فهي النسخة القابلة للربط: عدة موظفين على رقم واحد، وأتمتة، وربط بالمتجر ونظام العملاء، وإرسال قوالب على نطاق واسع. ولا يمكن للرقم أن يكون في الاثنين معاً، لذلك نخطط للانتقال قبل المساس بالرقم الذي تعلنون عنه."
+        },
+        {
+          "question": "هل يمكننا إرسال حملة إلى قائمة أرقام اشتريناها أو جمعناها؟",
+          "answer": "لا، ولا ننفّذ هذا النوع من العمل. تشترط سياسات WhatsApp إذناً مسبقاً من كل مستلم يُجمع في مكان ذُكر فيه اسم نشاطكم بوضوح، والإرسال الجماعي غير المطلوب هو أسرع طريق إلى حظر الرقم وتقييد حساب Business Manager. القائمة التي تحقّق مبيعات فعلاً هي التي تبنونها بأنفسكم من خطوة الدفع والموقع والإعلانات والعملاء الحاليين."
+        },
+        {
+          "question": "ما نافذة الأربع والعشرين ساعة ومتى تصبح القوالب إلزامية؟",
+          "answer": "عندما يراسلكم العميل تُفتح نافذة خدمة مدتها أربع وعشرون ساعة يمكنكم خلالها الرد بنص حر وصور وملفات. وبعد انتهائها لا يُسمح إلا بإرسال قالب اعتمدته Meta مسبقاً. لهذا نصمّم مجموعة القوالب أثناء التنفيذ لا بعد أول رسالة تنتهي مهلتها دون رد."
+        },
+        {
+          "question": "كم يستغرق اعتماد القوالب ولماذا تُرفض؟",
+          "answer": "غالباً ما يصدر القرار خلال دقائق إلى يوم واحد. وأشهر أسباب الرفض أن يبدو القالب إعلاناً غامضاً، أو أن يتكوّن من متغيرات فقط، أو أن يُقدَّم ضمن فئة خاطئة. نكتب القالب بالفئة المطابقة لغرضه الحقيقي — تسويقية أو تشغيلية أو مصادقة — وبهيكل متغيرات سليم، ونعيد التقديم بعد التصحيح عند الاعتراض."
+        },
+        {
+          "question": "كم تبلغ تكلفة التشغيل؟",
+          "answer": "هناك بندان: ما تحتسبه Meta على الرسائل وفق فئة الرسالة ودولة المستلم، وتكلفة التنفيذ والصيانة لدينا. وقد عدّلت Meta نموذج التسعير أكثر من مرة، لذلك نتحقق من الأسعار السارية في أسواقكم ونضع نطاقاً شهرياً مبنياً على حجمكم الحقيقي قبل أي التزام. المحادثات التي يبدأها العميل هي الجزء الأرخص، والقوالب التسويقية هي الجزء الأعلى كلفة."
+        },
+        {
+          "question": "هل يمكنكم الحصول لنا على العلامة الخضراء؟",
+          "answer": "لا تستطيع أي جهة أن تَعِد بذلك. العلامة الخضراء تدل على حساب تجاري رسمي وتمنحها Meta بناءً على شهرة العلامة التجارية وحضورها في المصادر العامة، وهي غير قابلة للشراء ومنفصلة عن توثيق النشاط المطلوب للإرسال. ننجز الاسم الظاهر وتوثيق النشاط بشكل صحيح لأن ذلك هو ما يفتح الإرسال فعلاً، ونتعامل مع العلامة كاحتمال لا كوعد."
+        },
+        {
+          "question": "هل نستطيع استخدام رقمنا الحالي؟",
+          "answer": "غالباً نعم. لكن إذا كان الرقم مستخدماً الآن على تطبيق WhatsApp Business فلن ينتقل سجل المحادثات ولا إمكانية استخدام التطبيق إلى Cloud API، لذلك نخطط للانتقال معكم قبل التسجيل. بعض العملاء يبقون الرقم المعروف على الواجهة البرمجية وينقلون المحادثات الشخصية إلى خط آخر، ويمكن كذلك تسجيل رقم أرضي أو رقم جديد."
+        },
+        {
+          "question": "كيف يرتبط WhatsApp بمتجرنا الإلكتروني؟",
+          "answer": "عبر Webhooks وواجهة برمجة متجركم. تنطلق تأكيدات الطلب وتحديثات الشحن وتذكير السلة من أحداث المتجر، ويمكن الرد على الأسئلة الواردة ببيانات حيّة عن المنتج والمخزون والطلب. نعمل اليوم على ikas لهذا الغرض تحديداً، والنمط نفسه ينطبق على Shopify أو WooCommerce أو نظام خلفي مخصّص."
+        },
+        {
+          "question": "هل يستطيع الذكاء الاصطناعي الرد بدل فريقنا؟",
+          "answer": "في جزء كبير من الأسئلة المتكررة نعم: السعر، والتوفر، ومدة التوصيل، وحالة الطلب، وساعات العمل. الوكيل الذي نطوّره لمتاجر ikas يجيب من الكتالوج وقاعدة المعرفة بدل الارتجال، ويسلّم المحادثة إلى موظف فور ظهور شكوى أو طلب استرجاع أو أي أمر لا يستطيع التحقق منه. ويبقى بيدكم مفتاح تعطيل الذكاء الاصطناعي لكل قناة على حدة."
+        },
+        {
+          "question": "ماذا يحدث إذا انخفض تقييم جودة الرقم؟",
+          "answer": "تقيّم Meta الرقم اعتماداً على تفاعل المستخدمين مثل الحظر والإبلاغ، وتخفض مستوى حد الإرسال اليومي عند تراجع الجودة. والعلاج العملي هو قوالب تسويقية أقل وأدق استهدافاً، وخيار إلغاء اشتراك ظاهر في كل حملة، ورسائل تشغيلية ذات فائدة حقيقية. نراقب التقييم داخل Business Manager ونخفّض الإرسال قبل أن يتحول الحد إلى تقييد."
+        },
+        {
+          "question": "ما المتطلبات النظامية المتعلقة بحماية البيانات لدينا؟",
+          "answer": "أنظمة حماية البيانات في السعودية والإمارات وبقية دول الخليج تشترط عموماً أساساً مشروعاً لمعالجة بيانات العملاء وإمكانية سحب الموافقة، إضافة إلى وضوح الغرض من الرسائل التسويقية. لذلك نبني تسجيل الإذن مع نصه ومصدره وتاريخه، ونضيف مساراً واضحاً لإلغاء الاشتراك، ونحدّد مدة الاحتفاظ ببيانات المحادثات. المراجعة القانونية النهائية تبقى لدى مستشاركم، ونحن نوفّر الأدلة التقنية."
+        },
+        {
+          "question": "كم يستغرق الإعداد ولمن تعود ملكية الرقم والبيانات؟",
+          "answer": "الإعداد التشغيلي على Cloud API مع التوثيق ومجموعة القوالب الأولى وإشعارات المتجر يجهز عادة خلال أسبوعين إلى أربعة أسابيع، وأقل الخطوات قابلية للتنبؤ هو توثيق النشاط لأنه يعتمد على مراجعة Meta لمستنداتكم. الرقم وحساب WhatsApp Business يبقيان داخل حساب Meta Business Manager الخاص بكم ونُضاف نحن كشريك يمكن إزالته في أي وقت، بينما تبقى بيانات المحادثات وسجلات الأذونات في أنظمتكم."
+        }
+      ],
+      "technologies": [
+        { "name": "WhatsApp Business Platform", "icon": "whatsapp" },
+        { "name": "Meta Cloud API", "icon": "api" },
+        { "name": "Meta Business Manager", "icon": "meta" },
+        { "name": "Webhooks", "icon": "code" },
+        { "name": "Next.js", "icon": "nextjs" },
+        { "name": "Node.js", "icon": "nodejs" },
+        { "name": "ikas", "icon": "ikas" },
+        { "name": "Google Analytics 4", "icon": "ga4" }
+      ]
+    }
+  }
+}
