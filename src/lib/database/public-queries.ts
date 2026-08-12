@@ -2,6 +2,7 @@ import { getPrisma } from '@/lib/db/prisma';
 import { unstable_cache } from 'next/cache';
 import {
   fallbackServices,
+  fallbackServicesLocalized,
   fallbackProjects,
   fallbackServiceBySlug,
   fallbackSubServices,
@@ -38,7 +39,7 @@ function dbError(scope: string, err: unknown) {
 
 export const getPublishedServices = unstable_cache(
   async (locale?: string) => {
-    if (forceBaked()) return fallbackServices;
+    if (forceBaked()) return fallbackServicesLocalized(locale);
     try {
       const services = await getPrismaClient().service.findMany({
         where: { status: { in: ['published', 'active'] } },
@@ -48,11 +49,11 @@ export const getPublishedServices = unstable_cache(
         },
         orderBy: { order: 'asc' },
       });
-      if (!services.length) return fallbackServices;
+      if (!services.length) return fallbackServicesLocalized(locale);
       return services.map((service) => mergeServiceTranslation(service, locale));
     } catch (err) {
       dbError('getPublishedServices', err);
-      return fallbackServices;
+      return fallbackServicesLocalized(locale);
     }
   },
   ['public:services-all'],
@@ -61,7 +62,7 @@ export const getPublishedServices = unstable_cache(
 
 export const getFeaturedServices = unstable_cache(
   async (locale?: string) => {
-    if (forceBaked()) return fallbackServices.filter((s) => s.featured);
+    if (forceBaked()) return fallbackServicesLocalized(locale).filter((s) => s.featured);
     try {
       const services = await getPrismaClient().service.findMany({
         where: { status: { in: ['published', 'active'] }, featured: true },
@@ -71,11 +72,11 @@ export const getFeaturedServices = unstable_cache(
         },
         orderBy: { order: 'asc' },
       });
-      if (!services.length) return fallbackServices.filter((s) => s.featured);
+      if (!services.length) return fallbackServicesLocalized(locale).filter((s) => s.featured);
       return services.map((service) => mergeServiceTranslation(service, locale));
     } catch (err) {
       dbError('getFeaturedServices', err);
-      return fallbackServices.filter((s) => s.featured);
+      return fallbackServicesLocalized(locale).filter((s) => s.featured);
     }
   },
   ['public:services-featured'],
@@ -138,7 +139,7 @@ export const getServicesForSitemap = unstable_cache(
 
 export const getPublishedServiceBySlug = unstable_cache(
   async (slug: string, locale?: string) => {
-    if (forceBaked()) return fallbackServiceBySlug(slug);
+    if (forceBaked()) return fallbackServiceBySlug(slug, locale);
     try {
       const service = await getPrismaClient().service.findFirst({
         where: { slug, status: { in: ['published', 'active'] } },
@@ -149,11 +150,11 @@ export const getPublishedServiceBySlug = unstable_cache(
           },
         },
       });
-      if (!service) return fallbackServiceBySlug(slug);
+      if (!service) return fallbackServiceBySlug(slug, locale);
       return mergeServiceTranslation(service, locale);
     } catch (err) {
       dbError('getPublishedServiceBySlug', err);
-      return fallbackServiceBySlug(slug);
+      return fallbackServiceBySlug(slug, locale);
     }
   },
   ['public:service-by-slug'],
@@ -191,7 +192,7 @@ function mergeServiceTranslation(service: any, locale?: string) {
 
 export const getSubServices = unstable_cache(
   async (parentSlug: string, locale?: string) => {
-    if (forceBaked()) return fallbackSubServices(parentSlug);
+    if (forceBaked()) return fallbackSubServices(parentSlug, locale);
     try {
       const services = await getPrismaClient().service.findMany({
         where: { parentSlug, status: { in: ['published', 'active'] } },
@@ -200,11 +201,11 @@ export const getSubServices = unstable_cache(
         },
         orderBy: { order: 'asc' },
       });
-      if (!services.length) return fallbackSubServices(parentSlug);
+      if (!services.length) return fallbackSubServices(parentSlug, locale);
       return services.map((service) => mergeServiceTranslation(service, locale));
     } catch (err) {
       dbError('getSubServices', err);
-      return fallbackSubServices(parentSlug);
+      return fallbackSubServices(parentSlug, locale);
     }
   },
   ['public:sub-services'],
@@ -214,7 +215,7 @@ export const getSubServices = unstable_cache(
 export const getParentService = unstable_cache(
   async (slug: string, locale?: string) => {
     if (forceBaked()) {
-      const s = fallbackServiceBySlug(slug);
+      const s = fallbackServiceBySlug(slug, locale);
       return s ? { name: s.name, slug: s.slug, icon: s.icon, color: s.color } : null;
     }
     try {
@@ -236,13 +237,12 @@ export const getParentService = unstable_cache(
         const localizedName = (service as any).translations?.[0]?.name || service.name;
         return { name: localizedName, slug: service.slug, icon: service.icon, color: service.color };
       }
-      const src = fallbackServiceBySlug(slug);
+      const src = fallbackServiceBySlug(slug, locale);
       if (!src) return null;
-      const merged = mergeServiceTranslation(src, locale);
-      return { name: merged.name, slug: merged.slug, icon: merged.icon, color: merged.color };
+      return { name: src.name, slug: src.slug, icon: src.icon, color: src.color };
     } catch (err) {
       dbError('getParentService', err);
-      const s = fallbackServiceBySlug(slug);
+      const s = fallbackServiceBySlug(slug, locale);
       return s ? { name: s.name, slug: s.slug, icon: s.icon, color: s.color } : null;
     }
   },
@@ -263,7 +263,7 @@ export const getServicesIndex = unstable_cache(
       category: s.category ?? null,
       isParent: !!s.isParent,
     });
-    if (forceBaked()) return fallbackServices.map(toIndex);
+    if (forceBaked()) return fallbackServicesLocalized(locale).map(toIndex);
     try {
       const services = await getPrismaClient().service.findMany({
         where: { status: { in: ['published', 'active'] } },
@@ -279,7 +279,7 @@ export const getServicesIndex = unstable_cache(
         },
         orderBy: { order: 'asc' },
       });
-      if (!services.length) return fallbackServices.map(toIndex);
+      if (!services.length) return fallbackServicesLocalized(locale).map(toIndex);
       return services.map((s: any) => ({
         ...toIndex(s),
         name: s.translations?.[0]?.name || s.name,
@@ -287,7 +287,7 @@ export const getServicesIndex = unstable_cache(
       }));
     } catch (err) {
       dbError('getServicesIndex', err);
-      return fallbackServices.map(toIndex);
+      return fallbackServicesLocalized(locale).map(toIndex);
     }
   },
   ['public:services-index'],
