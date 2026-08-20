@@ -32,10 +32,20 @@ const META: Record<Locale, { title: string; description: string; keywords: strin
     description: 'Custom web development with Next.js, React & TypeScript. PWAs, SaaS platforms, e-commerce — delivered with 95+ Lighthouse scores. Get a quote today.',
     keywords: 'web development, Next.js, React, TypeScript, PWA, SaaS development, e-commerce development, full-stack development',
   },
+  // Turkish leads with "web tasarım", not "web geliştirme".
+  //
+  // In 1,144 Keyword Planner keywords (Türkiye/Turkish) "web geliştirme" has no
+  // measurable volume, while "web tasarım" appears in 28 variants totalling
+  // 6,750/mo — and `web tasarım fiyatları` (5,000/mo) is the single
+  // highest-demand keyword in the entire set. The page was written in the
+  // builder's vocabulary rather than the buyer's.
+  //
+  // Next.js/React stay in the title: they qualify the tech-led long tail
+  // ("next.js web tasarım") without costing the head term.
   tr: {
-    title: 'Web Geliştirme Hizmetleri — Next.js, React ve TypeScript | PakSoft',
-    description: 'Next.js, React ve TypeScript ile özel web geliştirme. PWA, SaaS platformları, e-ticaret — 95+ Lighthouse skoru ile teslim edilir.',
-    keywords: 'web geliştirme, Next.js, React, TypeScript, PWA, SaaS geliştirme, e-ticaret, tam yığın geliştirme',
+    title: 'Web Tasarım ve Yazılım Geliştirme — Next.js, React | PakSoft',
+    description: 'Kurumsal web tasarım ve özel web yazılımı. Next.js ve React ile hızlı, mobil ve SEO uyumlu siteler. Web tasarım fiyatları için ücretsiz teklif alın.',
+    keywords: 'web tasarım, web tasarım fiyatları, kurumsal web sitesi, web sitesi yaptırma, özel web yazılımı, Next.js, React, e-ticaret',
   },
   de: {
     title: 'Webentwicklung — Next.js, React & TypeScript | PakSoft',
