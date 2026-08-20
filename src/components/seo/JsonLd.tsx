@@ -2,7 +2,7 @@
 // structured data lands in the initial server HTML (next/script's <Script>
 // defers JSON-LD to client injection, which crawlers see less reliably).
 import React from 'react';
-import { SITE_URL } from '@/config/site';
+import { SITE_URL, SOCIAL_PROFILE_URLS } from '@/config/site';
 
 // Organization Schema
 export interface OrganizationProps {
@@ -34,13 +34,7 @@ export function OrganizationJsonLd({
     addressLocality: 'Yozgat',
     addressCountry: 'Turkey',
   },
-  sameAs = [
-    'https://linkedin.com/company/paksoft',
-    'https://facebook.com/Paksoft',
-    'https://instagram.com/paksoft3',
-    'https://twitter.com/paksoft3',
-    'https://github.com/paksoft',
-  ],
+  sameAs = SOCIAL_PROFILE_URLS,
 }: OrganizationProps) {
   const schema = {
     '@context': 'https://schema.org',

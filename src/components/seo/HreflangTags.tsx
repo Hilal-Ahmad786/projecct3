@@ -1,3 +1,15 @@
+/**
+ * ⚠️ UNUSED — nothing imports this, and it should stay that way.
+ *
+ * It builds alternate URLs as `${baseUrl}/${locale}${path}` with the SAME path
+ * for every locale. That is wrong for this site: Turkish, German, Arabic and
+ * Urdu use translated slugs (/tr/hakkimizda, /de/uber-uns), so this would emit
+ * hreflang pointing at URLs that 404.
+ *
+ * The correct builders are `generateAlternateLinks` in @/lib/seo (page metadata)
+ * and `buildAlternates` in app/sitemap.ts — both run paths through
+ * `localizeFullPath` first. Use those. Delete this file when convenient.
+ */
 // src/components/seo/HreflangTags.tsx
 // Reusable hreflang link tags component for multilingual SEO
 

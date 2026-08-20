@@ -2,7 +2,17 @@
 export type Locale = 'en' | 'tr' | 'de' | 'ur' | 'ar';
 
 export const locales: Locale[] = ['en', 'tr', 'de', 'ur', 'ar'];
-export const defaultLocale: Locale = 'en';
+// PakSoft sells into Türkiye. This constant is the fallback for three
+// separate things, and English was wrong for all of them:
+//   1. middleware locale negotiation when the visitor sends no usable
+//      accept-language — which is exactly the case for Googlebot, so the
+//      crawler was being redirected to /en on every visit to the root.
+//   2. hreflang x-default (see lib/seo.ts) — the "show this when nothing
+//      else matches" signal was pointing at the English tree.
+//   3. <html lang> on the root layout.
+// Explicit language preferences still win: en-GB still resolves to /en,
+// de-DE to /de. Only the no-preference fallback changes.
+export const defaultLocale: Locale = 'tr';
 
 export const localeNames: Record<Locale, { name: string; nativeName: string; flag: string; dir: 'ltr' | 'rtl' }> = {
   en: { name: 'English', nativeName: 'English', flag: '🇺🇸', dir: 'ltr' },

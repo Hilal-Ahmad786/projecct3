@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 import { localizeFullPath } from '@/lib/routes';
-import { Locale } from '@/lib/i18n';
+import { Locale, defaultLocale } from '@/lib/i18n';
 import { getServicesForSitemap } from '@/lib/database/public-queries';
 import { isSubstantialService } from '@/lib/service-quality';
 
@@ -85,8 +85,13 @@ function buildAlternates(englishPath: string): Record<string, string> {
     const localizedPath = englishPath ? localizeFullPath(englishPath, locale) : '';
     languages[locale] = `${baseUrl}/${locale}${localizedPath}`;
   });
-  // x-default always points to the English canonical
-  languages['x-default'] = `${baseUrl}/en${englishPath}`;
+  // x-default must match the value the page itself emits (lib/seo.ts builds it
+  // from defaultLocale). Hardcoding /en here made the sitemap contradict the
+  // page-level tag once the default moved to Turkish — and Google discards a
+  // cluster whose signals disagree. It also has to use the *localized* path,
+  // because /tr uses Turkish slugs (/tr/hakkimizda, not /tr/about).
+  const defaultPath = englishPath ? localizeFullPath(englishPath, defaultLocale) : '';
+  languages['x-default'] = `${baseUrl}/${defaultLocale}${defaultPath}`;
   return languages;
 }
 

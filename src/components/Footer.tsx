@@ -6,6 +6,8 @@ import LocalizedLink from '@/components/LocalizedLink';
 import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline';
 import { FaLinkedin, FaXTwitter, FaGithub, FaInstagram, FaYoutube, FaFacebook } from 'react-icons/fa6';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
+import { SOCIAL_PROFILES, type SocialKey } from '@/config/site';
+import type { IconType } from 'react-icons';
 
 // ── Service columns ─────────────────────────────────────────────────────
 const SERVICE_COLS = [
@@ -115,14 +117,22 @@ const SERVICE_COLS = [
   },
 ];
 
-const SOCIAL = [
-  { Icon: FaLinkedin,  href: 'https://linkedin.com/company/paksoft',  label: 'LinkedIn'  },
-  { Icon: FaFacebook,  href: 'https://facebook.com/Paksoft',          label: 'Facebook'  },
-  { Icon: FaInstagram, href: 'https://instagram.com/paksoft3',        label: 'Instagram' },
-  { Icon: FaXTwitter,  href: 'https://twitter.com/paksoft3',          label: 'X'         },
-  { Icon: FaGithub,    href: 'https://github.com/paksoft',            label: 'GitHub'    },
-  { Icon: FaYoutube,   href: 'https://youtube.com/@paksoft3',         label: 'YouTube'   },
-];
+// Built from SOCIAL_PROFILES in config/site.ts so the footer and the
+// Organization `sameAs` can never drift apart. Only profiles listed there are
+// rendered — the hardcoded list this replaced pointed at six accounts, of which
+// one existed, so visitors clicking the icons hit dead pages.
+const SOCIAL_META: Record<SocialKey, { Icon: IconType; label: string }> = {
+  linkedin:  { Icon: FaLinkedin,  label: 'LinkedIn'  },
+  facebook:  { Icon: FaFacebook,  label: 'Facebook'  },
+  instagram: { Icon: FaInstagram, label: 'Instagram' },
+  x:         { Icon: FaXTwitter,  label: 'X'         },
+  github:    { Icon: FaGithub,    label: 'GitHub'    },
+  youtube:   { Icon: FaYoutube,   label: 'YouTube'   },
+};
+
+const SOCIAL = (Object.keys(SOCIAL_PROFILES) as SocialKey[])
+  .filter(key => Boolean(SOCIAL_PROFILES[key]))
+  .map(key => ({ ...SOCIAL_META[key], href: SOCIAL_PROFILES[key] as string }));
 
 const NAV_LINKS = [
   { key: 'home',     href: '/'         },
