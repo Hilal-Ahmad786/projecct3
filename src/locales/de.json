@@ -140,6 +140,40 @@
       }
     }
   },
+  "automationUseCases": {
+    "title": "Automatisieren Sie wiederkehrende Aufgaben",
+    "introduction": "Von Kundenanfragen bis zur Dokumentenverarbeitung entwickeln wir KI-, Automatisierungs- und Systemintegrationslösungen für zeitaufwendige Abläufe.",
+    "problemLabel": "Bedarf",
+    "workflowLabel": "Beispielhafter Ablauf",
+    "servicesLabel": "Passende Leistungen",
+    "cta": "Lassen Sie uns über Ihren Automatisierungsbedarf sprechen",
+    "cases": {
+      "leads": {
+        "title": "Kundenanfragen organisieren",
+        "problem": "Anfragen von der Website und anderen Kanälen manuell nachverfolgen.",
+        "workflow": ["Neue Anfrage", "CRM-Eintrag", "Zuständiges Team benachrichtigen"],
+        "services": ["CRM-Integration", "API-Integration", "Workflow-Automatisierung"]
+      },
+      "questions": {
+        "title": "Kundenfragen beantworten",
+        "problem": "Ähnliche Fragen immer wieder beantworten.",
+        "workflow": ["Kundenfrage", "Antwort anhand der Unternehmensinformationen", "Bei Bedarf an das Team übergeben"],
+        "services": ["Chatbot-Entwicklung", "WhatsApp-Bots", "Wissensdatenbank-Assistenten"]
+      },
+      "documents": {
+        "title": "Informationen aus Dokumenten übertragen",
+        "problem": "Informationen aus Dokumenten einzeln in Systeme eingeben.",
+        "workflow": ["Dokument hochladen", "Informationen extrahieren", "Prüfung durch Mitarbeitende", "In das System übertragen"],
+        "services": ["OCR", "Dokumentenverarbeitung", "Systemintegrationen"]
+      },
+      "orders": {
+        "title": "Bestellabläufe verbinden",
+        "problem": "Informationen zwischen Shop- und Betriebssystemen übertragen.",
+        "workflow": ["Neue Bestellung", "An relevante Systeme übertragen", "Status aktualisieren"],
+        "services": ["E-Commerce-Integrationen", "ERP-Anbindungen", "Individuelle Software"]
+      }
+    }
+  },
   "metadata": {
     "defaultTitle": "PakSoft – Moderne Digitallösungen",
     "defaultDescription": "Enterprise-Webentwicklung, E-Commerce, Automatisierungs-Bots und Digital-Marketing-Lösungen",

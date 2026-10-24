@@ -140,6 +140,40 @@
       }
     }
   },
+  "automationUseCases": {
+    "title": "Automate Repetitive Work",
+    "introduction": "From customer enquiries to document processing, we build AI, automation, and system integrations for time-consuming processes.",
+    "problemLabel": "Need",
+    "workflowLabel": "Example workflow",
+    "servicesLabel": "Related services",
+    "cta": "Let's Discuss Your Automation Needs",
+    "cases": {
+      "leads": {
+        "title": "Organize Customer Enquiries",
+        "problem": "Manually tracking enquiries from the website and other channels.",
+        "workflow": ["New enquiry", "CRM record", "Notify the relevant team"],
+        "services": ["CRM integration", "API integration", "Workflow automation"]
+      },
+      "questions": {
+        "title": "Answer Customer Questions",
+        "problem": "Answering similar questions repeatedly.",
+        "workflow": ["Customer question", "Answer based on business information", "Team handoff when needed"],
+        "services": ["Chatbot development", "WhatsApp bots", "Knowledge-base assistants"]
+      },
+      "documents": {
+        "title": "Transfer Information from Documents",
+        "problem": "Entering information from documents into systems one item at a time.",
+        "workflow": ["Upload document", "Extract information", "Staff review", "Transfer to system"],
+        "services": ["OCR", "Document processing", "System integrations"]
+      },
+      "orders": {
+        "title": "Connect Order Workflows",
+        "problem": "Moving information between store and operations systems.",
+        "workflow": ["New order", "Transfer to relevant systems", "Update status"],
+        "services": ["E-commerce integrations", "ERP connections", "Custom software"]
+      }
+    }
+  },
   "metadata": {
     "defaultTitle": "PakSoft – Modern Digital Solutions",
     "defaultDescription": "Enterprise web development, e-commerce, automation bots and digital marketing solutions",

@@ -140,6 +140,40 @@
       }
     }
   },
+  "automationUseCases": {
+    "title": "Tekrarlayan İşleri Otomatikleştirin",
+    "introduction": "Müşteri taleplerinden belge işlemeye kadar, zaman alan süreçler için yapay zeka, otomasyon ve sistem entegrasyonları geliştiriyoruz.",
+    "problemLabel": "İhtiyaç",
+    "workflowLabel": "Örnek iş akışı",
+    "servicesLabel": "İlgili hizmetler",
+    "cta": "Otomasyon İhtiyacınızı Konuşalım",
+    "cases": {
+      "leads": {
+        "title": "Müşteri Taleplerini Düzenleyin",
+        "problem": "Web sitesi ve farklı kanallardan gelen talepleri manuel olarak takip etmek.",
+        "workflow": ["Yeni talep", "CRM kaydı", "İlgili ekibe bildirim"],
+        "services": ["CRM entegrasyonu", "API entegrasyonu", "İş akışı otomasyonu"]
+      },
+      "questions": {
+        "title": "Müşteri Sorularını Yanıtlayın",
+        "problem": "Benzer soruları tekrar tekrar yanıtlamak.",
+        "workflow": ["Müşteri sorusu", "İşletme bilgilerine dayalı yanıt", "Gerektiğinde ekip devri"],
+        "services": ["Chatbot geliştirme", "WhatsApp botları", "Bilgi bankası asistanları"]
+      },
+      "documents": {
+        "title": "Belgelerden Bilgi Aktarın",
+        "problem": "Belgelerdeki bilgileri sistemlere tek tek girmek.",
+        "workflow": ["Belge yükleme", "Bilgi çıkarma", "Personel kontrolü", "Sisteme aktarım"],
+        "services": ["OCR", "Belge işleme", "Sistem entegrasyonları"]
+      },
+      "orders": {
+        "title": "Sipariş Akışlarını Bağlayın",
+        "problem": "Mağaza ve operasyon sistemleri arasında bilgi taşımak.",
+        "workflow": ["Yeni sipariş", "İlgili sistemlere aktarım", "Durum güncellemesi"],
+        "services": ["E-ticaret entegrasyonları", "ERP bağlantıları", "Özel yazılım"]
+      }
+    }
+  },
   "metadata": {
     "defaultTitle": "PakSoft – Modern Dijital Çözümler",
     "defaultDescription": "Kurumsal web geliştirme, e-ticaret, otomasyon botları ve dijital pazarlama çözümleri",
