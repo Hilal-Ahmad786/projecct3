@@ -78,6 +78,41 @@
       }
     }
   },
+  "businessSolutions": {
+    "title": "Web- und E-Commerce-Lösungen für Ihr Unternehmen",
+    "introduction": "Von der Website, die Ihr Unternehmen vorstellt, bis zum Onlineshop entwickeln wir digitale Lösungen passend zu Ihren Anforderungen.",
+    "realProjectLabel": "Ansicht eines realen Projekts",
+    "contextualLabel": "Passende Leistung:",
+    "corporateContextLink": "Corporate-Webdesign",
+    "shopifyContextLink": "Shopify-Entwicklung",
+    "ikasLabel": "ikas",
+    "corporate": {
+      "title": "Unternehmenswebsite",
+      "description": "Websites, die Ihre Marke vermitteln, Produkte und Leistungen präsentieren und Besuchern die Kontaktaufnahme erleichtern.",
+      "capabilities": [
+        "Individuelles Design für Ihre Marke",
+        "Mobiloptimierte Seiten",
+        "Mehrsprachige Inhalte",
+        "Produktkataloge und Angebotsformulare"
+      ],
+      "cta": "Webdesign-Lösungen ansehen",
+      "previewLabel": "Website von Ülkü Lojistik",
+      "previewAlt": "Screenshot der von PakSoft entwickelten Unternehmenswebsite von Ülkü Lojistik"
+    },
+    "ecommerce": {
+      "title": "E-Commerce-Shop",
+      "description": "Einrichtung, Gestaltung und Entwicklung von Onlineshops mit ikas, Shopify und bedarfsgerechten individuellen Plattformen.",
+      "capabilities": [
+        "ikas-Shop-Einrichtung und Theme-Anpassung",
+        "Shopify-Shop-Einrichtung und -Entwicklung",
+        "Zahlungs-, Versand- und Marktplatzintegrationen",
+        "Produktübertragung und Planung des Plattformwechsels"
+      ],
+      "cta": "E-Commerce-Lösungen ansehen",
+      "previewLabel": "Shopify-Shop von Termopazar",
+      "previewAlt": "Screenshot des von PakSoft entwickelten Shopify-Onlineshops von Termopazar"
+    }
+  },
   "metadata": {
     "defaultTitle": "PakSoft – Moderne Digitallösungen",
     "defaultDescription": "Enterprise-Webentwicklung, E-Commerce, Automatisierungs-Bots und Digital-Marketing-Lösungen",

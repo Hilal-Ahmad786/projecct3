@@ -9,6 +9,7 @@ import SocialProofBanner from '@/components/SocialProofBanner'
 import ServicesSection from '@/components/ServicesSection'
 import ProjectDetailSection from '@/components/ProjectDetailSection'
 import DemoSection from '@/components/DemoSection'
+import BusinessSolutionsSection from '@/components/BusinessSolutionsSection'
 import ClientJourneyRoadmap from '@/components/ClientJourneyRoadmap'
 import TestimonialsSection from '@/components/TestimonialsSection'
 import FAQSection from '@/components/FAQSection'
@@ -83,6 +84,7 @@ export default async function HomePage({ params }: PageProps) {
       <ServicesSection />
       <ProjectDetailSection />
       <DemoSection />
+      <BusinessSolutionsSection locale={validLocale} />
       <PatternDivider className="py-8" color="var(--heritage-saffron)" />
       <ClientJourneyRoadmap />
       <TestimonialsSection />

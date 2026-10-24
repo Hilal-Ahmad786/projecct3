@@ -78,6 +78,41 @@
       }
     }
   },
+  "businessSolutions": {
+    "title": "Web and E-Commerce Solutions for Your Business",
+    "introduction": "From a website that introduces your business to an online store, we develop digital solutions tailored to your needs.",
+    "realProjectLabel": "Real project view",
+    "contextualLabel": "Related service:",
+    "corporateContextLink": "Corporate website design",
+    "shopifyContextLink": "Shopify development",
+    "ikasLabel": "ikas",
+    "corporate": {
+      "title": "Corporate Website",
+      "description": "Websites that communicate your brand, present your products and services, and make it easy for visitors to contact you.",
+      "capabilities": [
+        "Design tailored to your brand",
+        "Mobile-friendly pages",
+        "Multilingual content",
+        "Product catalogues and quote forms"
+      ],
+      "cta": "Explore Web Design Solutions",
+      "previewLabel": "Ülkü Lojistik website",
+      "previewAlt": "Screenshot of the Ülkü Lojistik corporate website developed by PakSoft"
+    },
+    "ecommerce": {
+      "title": "E-Commerce Store",
+      "description": "Online store setup, design, and development with ikas, Shopify, and custom platforms selected for your needs.",
+      "capabilities": [
+        "ikas store setup and theme customization",
+        "Shopify store setup and development",
+        "Payment, shipping, and marketplace integrations",
+        "Product transfer and platform migration planning"
+      ],
+      "cta": "Explore E-Commerce Solutions",
+      "previewLabel": "Termopazar Shopify store",
+      "previewAlt": "Screenshot of the Termopazar Shopify e-commerce store developed by PakSoft"
+    }
+  },
   "metadata": {
     "defaultTitle": "PakSoft – Modern Digital Solutions",
     "defaultDescription": "Enterprise web development, e-commerce, automation bots and digital marketing solutions",
