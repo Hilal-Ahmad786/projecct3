@@ -10,6 +10,7 @@ import ServicesSection from '@/components/ServicesSection'
 import ProjectDetailSection from '@/components/ProjectDetailSection'
 import DemoSection from '@/components/DemoSection'
 import BusinessSolutionsSection from '@/components/BusinessSolutionsSection'
+import MarketingJourneySection from '@/components/MarketingJourneySection'
 import ClientJourneyRoadmap from '@/components/ClientJourneyRoadmap'
 import TestimonialsSection from '@/components/TestimonialsSection'
 import FAQSection from '@/components/FAQSection'
@@ -85,6 +86,7 @@ export default async function HomePage({ params }: PageProps) {
       <ProjectDetailSection />
       <DemoSection />
       <BusinessSolutionsSection locale={validLocale} />
+      <MarketingJourneySection locale={validLocale} />
       <PatternDivider className="py-8" color="var(--heritage-saffron)" />
       <ClientJourneyRoadmap />
       <TestimonialsSection />

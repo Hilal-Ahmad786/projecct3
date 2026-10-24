@@ -113,6 +113,33 @@
       "previewAlt": "Screenshot of the Termopazar Shopify e-commerce store developed by PakSoft"
     }
   },
+  "marketingJourney": {
+    "title": "Reach the Right Audience, Measure the Results",
+    "introduction": "We plan SEO, advertising, and conversion work around your business goals, then track performance to identify opportunities for improvement.",
+    "serviceLinkLabel": "Related services",
+    "illustrativeLabel": "Illustrative marketing workflow from visibility through measurement and improvement",
+    "cta": "Let's Discuss Your Marketing Goals",
+    "stages": {
+      "visibility": {
+        "eyebrow": "Visibility",
+        "title": "Make your business discoverable",
+        "description": "Help potential customers discover your business.",
+        "services": ["SEO", "Google Ads", "Instagram and Facebook ads"]
+      },
+      "conversion": {
+        "eyebrow": "Conversion",
+        "title": "Turn interest into action",
+        "description": "Make it easier for visitors to request a quote, get in touch, or complete a purchase.",
+        "services": ["Landing page design", "Form and checkout flow improvements", "Conversion rate optimization"]
+      },
+      "measurement": {
+        "eyebrow": "Measurement and Improvement",
+        "title": "Improve with evidence",
+        "description": "Track which activities generate enquiries and sales, then use that insight to plan the next steps.",
+        "services": ["Analytics setup", "Conversion tracking", "Performance reporting"]
+      }
+    }
+  },
   "metadata": {
     "defaultTitle": "PakSoft – Modern Digital Solutions",
     "defaultDescription": "Enterprise web development, e-commerce, automation bots and digital marketing solutions",

@@ -113,6 +113,33 @@
       "previewAlt": "PakSoft tarafından geliştirilen Termopazar Shopify e-ticaret mağazasının ekran görüntüsü"
     }
   },
+  "marketingJourney": {
+    "title": "Doğru Kitleye Ulaşın, Sonuçları Ölçün",
+    "introduction": "SEO, reklam ve dönüşüm çalışmalarını işletmenizin hedeflerine göre planlıyor; performansı takip ederek geliştirme alanlarını belirliyoruz.",
+    "serviceLinkLabel": "İlgili hizmetler",
+    "illustrativeLabel": "Görünürlükten ölçüm ve iyileştirmeye uzanan örnek pazarlama çalışma akışı",
+    "cta": "Pazarlama Hedeflerinizi Konuşalım",
+    "stages": {
+      "visibility": {
+        "eyebrow": "Görünürlük",
+        "title": "Keşfedilebilir olun",
+        "description": "Potansiyel müşterilerinizin işletmenizi keşfetmesine yardımcı olun.",
+        "services": ["SEO", "Google Ads", "Instagram ve Facebook reklamları"]
+      },
+      "conversion": {
+        "eyebrow": "Dönüşüm",
+        "title": "İlgiyi aksiyona dönüştürün",
+        "description": "Ziyaretçilerin teklif istemesini, iletişime geçmesini veya alışveriş yapmasını kolaylaştırın.",
+        "services": ["Açılış sayfası tasarımı", "Form ve satın alma akışlarının iyileştirilmesi", "Dönüşüm oranı optimizasyonu"]
+      },
+      "measurement": {
+        "eyebrow": "Ölçüm ve İyileştirme",
+        "title": "Veriye göre geliştirin",
+        "description": "Hangi çalışmaların başvuru ve satış getirdiğini takip ederek sonraki adımları planlayın.",
+        "services": ["Analitik kurulumu", "Dönüşüm takibi", "Performans raporlaması"]
+      }
+    }
+  },
   "metadata": {
     "defaultTitle": "PakSoft – Modern Dijital Çözümler",
     "defaultDescription": "Kurumsal web geliştirme, e-ticaret, otomasyon botları ve dijital pazarlama çözümleri",

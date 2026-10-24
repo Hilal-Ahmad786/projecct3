@@ -113,6 +113,33 @@
       "previewAlt": "Screenshot des von PakSoft entwickelten Shopify-Onlineshops von Termopazar"
     }
   },
+  "marketingJourney": {
+    "title": "Erreichen Sie die richtige Zielgruppe und messen Sie die Ergebnisse",
+    "introduction": "Wir richten SEO, Werbung und Conversion-Maßnahmen an Ihren Unternehmenszielen aus, verfolgen die Leistung und erkennen gezielt Verbesserungspotenziale.",
+    "serviceLinkLabel": "Passende Leistungen",
+    "illustrativeLabel": "Beispielhafter Marketingablauf von Sichtbarkeit bis Messung und Optimierung",
+    "cta": "Lassen Sie uns über Ihre Marketingziele sprechen",
+    "stages": {
+      "visibility": {
+        "eyebrow": "Sichtbarkeit",
+        "title": "Werden Sie auffindbar",
+        "description": "Helfen Sie potenziellen Kunden, Ihr Unternehmen zu entdecken.",
+        "services": ["SEO", "Google Ads", "Instagram- und Facebook-Werbung"]
+      },
+      "conversion": {
+        "eyebrow": "Conversion",
+        "title": "Machen Sie aus Interesse eine Handlung",
+        "description": "Erleichtern Sie Besuchern, ein Angebot anzufordern, Kontakt aufzunehmen oder einen Kauf abzuschließen.",
+        "services": ["Landingpage-Design", "Optimierung von Formular- und Kaufabläufen", "Conversion-Rate-Optimierung"]
+      },
+      "measurement": {
+        "eyebrow": "Messung und Optimierung",
+        "title": "Entwickeln Sie datenbasiert weiter",
+        "description": "Verfolgen Sie, welche Maßnahmen Anfragen und Verkäufe erzeugen, und planen Sie daraus die nächsten Schritte.",
+        "services": ["Analytics-Einrichtung", "Conversion-Tracking", "Performance-Berichte"]
+      }
+    }
+  },
   "metadata": {
     "defaultTitle": "PakSoft – Moderne Digitallösungen",
     "defaultDescription": "Enterprise-Webentwicklung, E-Commerce, Automatisierungs-Bots und Digital-Marketing-Lösungen",
