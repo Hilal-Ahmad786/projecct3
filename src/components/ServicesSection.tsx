@@ -231,7 +231,7 @@ const CATEGORY_ACCENTS: Record<string, CategoryAccent> = {
 };
 
 // ─── Component ──────────────────────────────────────────────────────
-export default function ServicesSection() {
+export default function ServicesSection({ heading }: { heading?: string }) {
   const { locale, dir, isLoading } = useTranslations();
   const t = useSectionTranslations('services.main');
   const tServices = useSectionTranslations('services.list');
@@ -291,7 +291,7 @@ export default function ServicesSection() {
             >
               <SectionHeader
                 eyebrow={t('eyebrow')}
-                title={t('title')}
+                title={heading ?? t('title')}
                 subtitle={t('subtitle')}
                 className="mb-8 md:mb-12"
                 centered={true}

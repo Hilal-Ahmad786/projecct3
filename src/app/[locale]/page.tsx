@@ -77,12 +77,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function HomePage({ params }: PageProps) {
   const { locale } = await params
   const validLocale = locales.includes(locale) ? locale : defaultLocale
+  const t = createTranslator(validLocale)
 
   return (
     <>
       <Hero />
       <FeaturedServices locale={validLocale} />
-      <ServicesSection />
+      <ServicesSection heading={t('servicesSection.heading')} />
       <SocialProofBanner variant="stats" />
       <PatternDivider className="py-8" />
       <DemoSection />
