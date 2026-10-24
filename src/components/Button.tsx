@@ -131,7 +131,7 @@ export default function Button({
       )}
       <span className="relative z-10">{children}</span>
       {!loading && rightIcon && (
-        <span className="flex-shrink-0 transition-transform duration-250 group-hover:translate-x-0.5" aria-hidden="true">
+        <span className="flex-shrink-0 transition-transform duration-250 group-hover:translate-x-0.5 motion-reduce:transform-none motion-reduce:transition-none" aria-hidden="true">
           {rightIcon}
         </span>
       )}
