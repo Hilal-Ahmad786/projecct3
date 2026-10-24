@@ -125,7 +125,7 @@
         { "label": "Google Ads Yönetimi", "href": "/services/google-ads" },
         { "label": "Meta Reklamları", "href": "/services/meta-ads" }
       ],
-      "visual": { "adLabel": "Reklam", "searchTitle": "İşletme web sitesi", "searchPlaceholder": "Talep veya alışveriş" }
+      "visual": { "primaryService": "Google Ads", "secondaryService": "Meta Reklamları", "searchTitle": "İşletme web sitesi", "searchPlaceholder": "Talep veya alışveriş" }
     },
     "seo": {
       "label": "SEO Hizmetleri",
@@ -134,7 +134,7 @@
       "capabilities": ["Teknik SEO ve site analizi", "Anahtar kelime ve içerik çalışmaları", "Yerel SEO ve e-ticaret SEO"],
       "cta": "SEO Hizmetlerini İncele",
       "illustrativeLabel": "Örnek gösterim",
-      "visual": { "searchTitle": "Arama sonucu önizlemesi", "searchDescription": "İşletme ürün ve hizmetleri", "searchPlaceholder": "Ürün veya hizmet arayın", "auditTitle": "Site kontrol listesi" }
+      "visual": { "primaryService": "Teknik SEO", "secondaryService": "İçerik ve Yerel SEO", "searchTitle": "Arama sonucu önizlemesi", "searchDescription": "İşletme ürün ve hizmetleri", "searchPlaceholder": "Ürün veya hizmet arayın", "auditTitle": "Site kontrol listesi" }
     }
   },
   "conversationalExplainers": {
@@ -147,6 +147,8 @@
       "illustrativeLabel": "Örnek konuşma",
       "contextualLinks": [{ "label": "WhatsApp Botları", "href": "/services/whatsapp-bots" }],
       "visual": {
+        "primaryService": "Web Chatbotu",
+        "secondaryService": "WhatsApp Botu",
         "customer": "Ürünleriniz hakkında bilgi alabilir miyim?",
         "assistant": "Elbette. Hangi ürün grubuyla ilgileniyorsunuz?"
       }
@@ -158,7 +160,7 @@
       "capabilities": ["Gelen talepleri inceleme ve sınıflandırma", "Belge özetleme ve taslak hazırlama", "CRM ve diğer sistemlerle bağlantılı görevler"],
       "cta": "Yapay Zeka Ajanlarını İncele",
       "illustrativeLabel": "Örnek iş akışı",
-      "visual": { "agentSteps": ["Yeni talep", "İhtiyaçların özeti", "Teklif taslağı", "Ekip onayı"] }
+      "visual": { "primaryService": "Yapay Zeka Ajanı", "secondaryService": "Ekip onayı", "agentSteps": ["Yeni talep", "İhtiyaçların özeti", "Teklif taslağı", "Ekip onayı"] }
     }
   },
   "ongoingSupport": {

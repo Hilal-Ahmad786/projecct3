@@ -125,7 +125,7 @@
         { "label": "Google Ads Management", "href": "/services/google-ads" },
         { "label": "Meta Ads", "href": "/services/meta-ads" }
       ],
-      "visual": { "adLabel": "Anzeige", "searchTitle": "Unternehmenswebsite", "searchPlaceholder": "Anfrage oder Kauf" }
+      "visual": { "primaryService": "Google Ads", "secondaryService": "Meta Ads", "searchTitle": "Unternehmenswebsite", "searchPlaceholder": "Anfrage oder Kauf" }
     },
     "seo": {
       "label": "SEO-Leistungen",
@@ -134,7 +134,7 @@
       "capabilities": ["Technisches SEO und Website-Analyse", "Keyword- und Inhaltsarbeit", "Lokales SEO und E-Commerce-SEO"],
       "cta": "SEO-Leistungen ansehen",
       "illustrativeLabel": "Beispielhafte Darstellung",
-      "visual": { "searchTitle": "Vorschau eines Suchergebnisses", "searchDescription": "Produkte und Leistungen des Unternehmens", "searchPlaceholder": "Produkt oder Leistung suchen", "auditTitle": "Website-Prüfliste" }
+      "visual": { "primaryService": "Technisches SEO", "secondaryService": "Content und lokales SEO", "searchTitle": "Vorschau eines Suchergebnisses", "searchDescription": "Produkte und Leistungen des Unternehmens", "searchPlaceholder": "Produkt oder Leistung suchen", "auditTitle": "Website-Prüfliste" }
     }
   },
   "conversationalExplainers": {
@@ -147,6 +147,8 @@
       "illustrativeLabel": "Beispielgespräch",
       "contextualLinks": [{ "label": "WhatsApp-Bots", "href": "/services/whatsapp-bots" }],
       "visual": {
+        "primaryService": "Web-Chatbot",
+        "secondaryService": "WhatsApp-Bot",
         "customer": "Kann ich Informationen zu Ihren Produkten bekommen?",
         "assistant": "Gerne. Für welche Produktgruppe interessieren Sie sich?"
       }
@@ -158,7 +160,7 @@
       "capabilities": ["Eingehende Anfragen prüfen und klassifizieren", "Dokumente zusammenfassen und Entwürfe vorbereiten", "Aufgaben mit CRM und weiteren Systemen verbinden"],
       "cta": "KI-Agenten ansehen",
       "illustrativeLabel": "Beispielhafter Ablauf",
-      "visual": { "agentSteps": ["Neue Anfrage", "Zusammenfassung des Bedarfs", "Angebotsentwurf", "Freigabe durch das Team"] }
+      "visual": { "primaryService": "KI-Agent", "secondaryService": "Freigabe durch das Team", "agentSteps": ["Neue Anfrage", "Zusammenfassung des Bedarfs", "Angebotsentwurf", "Freigabe durch das Team"] }
     }
   },
   "ongoingSupport": {

@@ -18,7 +18,8 @@ export type ExplainerCopy = {
   illustrativeLabel: string
   contextualLinks?: { label: string; href: string }[]
   visual: {
-    adLabel?: string
+    primaryService?: string
+    secondaryService?: string
     searchTitle?: string
     searchDescription?: string
     searchPlaceholder?: string
@@ -55,14 +56,17 @@ function Illustration({ copy, visualType, Icon }: Pick<Props, 'copy' | 'visualTy
 
       {visualType === 'marketing' && (
         <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-2 sm:gap-4" aria-hidden="true">
-          <div className="rounded-xl border border-heritage-saffron-bright/30 bg-heritage-saffron-light/60 p-4">
-            <span className="mb-3 inline-flex rounded-sm bg-heritage-saffron px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-white">{copy.visual.adLabel}</span>
+          <div className="service-visual-ad rounded-xl border border-heritage-turquoise/20 bg-heritage-turquoise-light/70 p-4">
+            <div className="mb-3 flex flex-col items-start gap-1.5">
+              <span className="service-visual-primary inline-flex rounded-md bg-heritage-turquoise px-2.5 py-1 text-[11px] font-bold text-white">{copy.visual.primaryService}</span>
+              <span className="service-visual-secondary inline-flex rounded-full bg-white px-2 py-1 text-[9px] font-semibold text-heritage-lapis shadow-sm">{copy.visual.secondaryService}</span>
+            </div>
             <div className="mb-2 h-2 w-4/5 rounded bg-gray-700/70" />
             <div className="h-2 w-3/5 rounded bg-gray-300" />
             <div className="mt-4 h-7 w-20 rounded-sm bg-gray-900" />
           </div>
-          <ArrowRightIcon className="h-5 w-5 text-gray-400 rtl:rotate-180" />
-          <div className="rounded-xl border border-gray-200 bg-gray-50 p-4">
+          <ArrowRightIcon className="service-visual-flow h-5 w-5 text-heritage-turquoise rtl:rotate-180" />
+          <div className="service-visual-destination rounded-xl border border-gray-200 bg-gray-50 p-4">
             <div className="mb-3 flex h-8 w-8 items-center justify-center rounded-lg bg-heritage-turquoise-light text-heritage-turquoise">
               <ArrowUpRightIcon className="h-4 w-4" aria-hidden="true" />
             </div>
@@ -77,7 +81,11 @@ function Illustration({ copy, visualType, Icon }: Pick<Props, 'copy' | 'visualTy
 
       {visualType === 'seo' && (
         <div className="grid gap-3 sm:grid-cols-[1fr_0.9fr]">
-          <div className="rounded-xl border border-gray-200 bg-gray-50 p-4">
+          <div className="service-visual-search rounded-xl border border-gray-200 bg-gray-50 p-4">
+            <div className="mb-3 flex flex-wrap items-center gap-2">
+              <span className="service-visual-primary inline-flex rounded-md bg-heritage-turquoise px-2.5 py-1 text-[10px] font-bold text-white">{copy.visual.primaryService}</span>
+              <span className="service-visual-secondary inline-flex rounded-full bg-heritage-lapis-light px-2 py-1 text-[9px] font-semibold text-heritage-lapis">{copy.visual.secondaryService}</span>
+            </div>
             <div className="mb-4 flex items-center gap-2 rounded-full border border-gray-200 bg-white px-3 py-2 text-xs text-gray-500">
               <span className="h-3 w-3 rounded-full border border-gray-400" />
               {copy.visual.searchPlaceholder}
@@ -87,11 +95,11 @@ function Illustration({ copy, visualType, Icon }: Pick<Props, 'copy' | 'visualTy
             <div className="mt-2 h-2 w-full rounded bg-gray-200" />
             <div className="mt-1.5 h-2 w-4/5 rounded bg-gray-200" />
           </div>
-          <div className="rounded-xl border border-gray-200 p-4">
+          <div className="service-visual-audit rounded-xl border border-gray-200 p-4">
             <p className="mb-3 text-xs font-bold text-gray-800">{copy.visual.auditTitle}</p>
             <div className="space-y-3" aria-hidden="true">
-              {['w-4/5', 'w-3/5', 'w-2/3'].map((width) => (
-                <div key={width} className="flex items-center gap-2">
+              {['w-4/5', 'w-3/5', 'w-2/3'].map((width, index) => (
+                <div key={width} style={{ animationDelay: `${index * 120}ms` }} className="service-visual-audit-row flex items-center gap-2">
                   <CheckIcon className="mt-0.5 h-3.5 w-3.5 shrink-0 text-heritage-turquoise" aria-hidden="true" />
                   <span className={`h-2 rounded bg-gray-200 ${width}`} />
                 </div>
@@ -103,10 +111,14 @@ function Illustration({ copy, visualType, Icon }: Pick<Props, 'copy' | 'visualTy
 
       {visualType === 'chatbot' && (
         <div className="space-y-4 rounded-xl bg-gray-50 p-4 sm:p-5">
-          <div className="ms-auto max-w-[88%] rounded-2xl rounded-ee-sm bg-heritage-turquoise px-4 py-3 text-sm leading-relaxed text-white shadow-sm">
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="service-visual-primary inline-flex rounded-md bg-heritage-turquoise px-2.5 py-1 text-[10px] font-bold text-white">{copy.visual.primaryService}</span>
+            <span className="service-visual-secondary inline-flex rounded-full bg-heritage-lapis-light px-2 py-1 text-[9px] font-semibold text-heritage-lapis">{copy.visual.secondaryService}</span>
+          </div>
+          <div className="service-visual-message ms-auto max-w-[88%] rounded-2xl rounded-ee-sm bg-heritage-turquoise px-4 py-3 text-sm leading-relaxed text-white shadow-sm">
             {copy.visual.customer}
           </div>
-          <div className="me-auto flex max-w-[92%] items-start gap-2">
+          <div className="service-visual-message-secondary me-auto flex max-w-[92%] items-start gap-2">
             <span className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-heritage-lapis-light text-heritage-lapis">
               <Icon className="h-4 w-4" aria-hidden="true" />
             </span>
@@ -118,16 +130,22 @@ function Illustration({ copy, visualType, Icon }: Pick<Props, 'copy' | 'visualTy
       )}
 
       {visualType === 'agent' && (
-        <ol className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-          {copy.visual.agentSteps?.map((step, index) => (
-            <li key={step} className="flex min-w-0 items-center gap-3 rounded-xl border border-gray-200 bg-gray-50 p-3">
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-heritage-lapis-light text-xs font-bold text-heritage-lapis">
-                {String(index + 1).padStart(2, '0')}
-              </span>
-              <span className="text-xs font-semibold leading-relaxed text-gray-700 sm:text-sm">{step}</span>
-            </li>
-          ))}
-        </ol>
+        <div>
+          <div className="mb-3 flex flex-wrap items-center gap-2">
+            <span className="service-visual-primary inline-flex rounded-md bg-heritage-turquoise px-2.5 py-1 text-[10px] font-bold text-white">{copy.visual.primaryService}</span>
+            <span className="service-visual-secondary inline-flex rounded-full bg-heritage-lapis-light px-2 py-1 text-[9px] font-semibold text-heritage-lapis">{copy.visual.secondaryService}</span>
+          </div>
+          <ol className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+            {copy.visual.agentSteps?.map((step, index) => (
+              <li key={step} style={{ animationDelay: `${index * 150}ms` }} className="service-visual-workflow-step flex min-w-0 items-center gap-3 rounded-xl border border-gray-200 bg-gray-50 p-3">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-heritage-lapis-light text-xs font-bold text-heritage-lapis">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+                <span className="text-xs font-semibold leading-relaxed text-gray-700 sm:text-sm">{step}</span>
+              </li>
+            ))}
+          </ol>
+        </div>
       )}
     </figure>
   )

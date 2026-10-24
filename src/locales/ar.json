@@ -125,7 +125,7 @@
         { "label": "إدارة Google Ads", "href": "/services/google-ads" },
         { "label": "إعلانات Meta", "href": "/services/meta-ads" }
       ],
-      "visual": { "adLabel": "إعلان", "searchTitle": "موقع النشاط التجاري", "searchPlaceholder": "طلب أو عملية شراء" }
+      "visual": { "primaryService": "Google Ads", "secondaryService": "إعلانات Meta", "searchTitle": "موقع النشاط التجاري", "searchPlaceholder": "طلب أو عملية شراء" }
     },
     "seo": {
       "label": "خدمات SEO",
@@ -134,7 +134,7 @@
       "capabilities": ["SEO تقني وتحليل الموقع", "الكلمات المفتاحية والمحتوى", "SEO محلي وSEO للتجارة الإلكترونية"],
       "cta": "استعرض خدمات SEO",
       "illustrativeLabel": "مثال توضيحي",
-      "visual": { "searchTitle": "معاينة نتيجة بحث", "searchDescription": "منتجات وخدمات النشاط التجاري", "searchPlaceholder": "ابحث عن منتج أو خدمة", "auditTitle": "قائمة فحص الموقع" }
+      "visual": { "primaryService": "SEO تقني", "secondaryService": "المحتوى وSEO المحلي", "searchTitle": "معاينة نتيجة بحث", "searchDescription": "منتجات وخدمات النشاط التجاري", "searchPlaceholder": "ابحث عن منتج أو خدمة", "auditTitle": "قائمة فحص الموقع" }
     }
   },
   "conversationalExplainers": {
@@ -147,6 +147,8 @@
       "illustrativeLabel": "محادثة توضيحية",
       "contextualLinks": [{ "label": "روبوتات WhatsApp", "href": "/services/whatsapp-bots" }],
       "visual": {
+        "primaryService": "روبوت محادثة للموقع",
+        "secondaryService": "روبوت WhatsApp",
         "customer": "هل يمكنني معرفة المزيد عن منتجاتكم؟",
         "assistant": "بالتأكيد. ما فئة المنتجات التي تهمك؟"
       }
@@ -158,7 +160,7 @@
       "capabilities": ["مراجعة الطلبات الواردة وتصنيفها", "تلخيص المستندات وإعداد المسودات", "مهام مرتبطة بـ CRM وأنظمة أخرى"],
       "cta": "استعرض وكلاء الذكاء الاصطناعي",
       "illustrativeLabel": "مثال توضيحي لسير العمل",
-      "visual": { "agentSteps": ["طلب جديد", "ملخص الاحتياجات", "مسودة عرض", "موافقة الفريق"] }
+      "visual": { "primaryService": "وكيل ذكاء اصطناعي", "secondaryService": "موافقة الفريق", "agentSteps": ["طلب جديد", "ملخص الاحتياجات", "مسودة عرض", "موافقة الفريق"] }
     }
   },
   "ongoingSupport": {

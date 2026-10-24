@@ -692,6 +692,47 @@ body {
   animation: float-subtle 4s ease-in-out infinite;
 }
 
+/* Small service-scene motions keep the homepage explainers in the same
+   illustrated style as the service heroes without adding client JS. */
+@keyframes serviceVisualFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+@keyframes serviceVisualEmphasis {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(14, 124, 123, 0); }
+  50% { box-shadow: 0 0 0 4px rgba(14, 124, 123, 0.12); }
+}
+@keyframes serviceVisualFlow {
+  0%, 100% { opacity: 0.65; transform: translateX(0); }
+  50% { opacity: 1; transform: translateX(3px); }
+}
+@keyframes serviceVisualReveal {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.service-visual-ad { animation: serviceVisualFloat 6s ease-in-out infinite; }
+.service-visual-primary { animation: serviceVisualEmphasis 4.8s ease-in-out infinite; }
+.service-visual-secondary { animation: serviceVisualReveal 0.65s ease-out 0.25s both; }
+.service-visual-flow { animation: serviceVisualFlow 2.4s ease-in-out infinite; }
+.service-visual-destination { animation: serviceVisualFloat 6s ease-in-out 0.7s infinite; }
+.service-visual-search { animation: serviceVisualFloat 7s ease-in-out infinite; }
+.service-visual-audit-row { animation: serviceVisualReveal 0.55s ease-out both; }
+.service-visual-message { animation: serviceVisualReveal 0.65s ease-out both; }
+.service-visual-message-secondary { animation: serviceVisualReveal 0.65s ease-out 0.35s both; }
+.service-visual-workflow-step { animation: serviceVisualReveal 0.55s ease-out both; }
+@media (prefers-reduced-motion: reduce) {
+  .service-visual-ad,
+  .service-visual-primary,
+  .service-visual-secondary,
+  .service-visual-flow,
+  .service-visual-destination,
+  .service-visual-search,
+  .service-visual-audit-row,
+  .service-visual-message,
+  .service-visual-message-secondary,
+  .service-visual-workflow-step { animation: none; }
+}
+
 /* Swiss Layout Utilities */
 .section {
   padding: var(--space-3xl) 0;

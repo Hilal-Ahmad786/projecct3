@@ -125,7 +125,7 @@
         { "label": "Google Ads مینجمنٹ", "href": "/services/google-ads" },
         { "label": "Meta اشتہارات", "href": "/services/meta-ads" }
       ],
-      "visual": { "adLabel": "اشتہار", "searchTitle": "کاروباری ویب سائٹ", "searchPlaceholder": "درخواست یا خریداری" }
+      "visual": { "primaryService": "Google Ads", "secondaryService": "Meta اشتہارات", "searchTitle": "کاروباری ویب سائٹ", "searchPlaceholder": "درخواست یا خریداری" }
     },
     "seo": {
       "label": "SEO خدمات",
@@ -134,7 +134,7 @@
       "capabilities": ["تکنیکی SEO اور سائٹ کا جائزہ", "کلیدی الفاظ اور مواد پر کام", "مقامی SEO اور ای کامرس SEO"],
       "cta": "SEO خدمات دیکھیں",
       "illustrativeLabel": "مثالی منظر",
-      "visual": { "searchTitle": "تلاش کے نتیجے کا پیش نظارہ", "searchDescription": "کاروبار کی مصنوعات اور خدمات", "searchPlaceholder": "مصنوعات یا خدمت تلاش کریں", "auditTitle": "ویب سائٹ جائزہ فہرست" }
+      "visual": { "primaryService": "تکنیکی SEO", "secondaryService": "مواد اور مقامی SEO", "searchTitle": "تلاش کے نتیجے کا پیش نظارہ", "searchDescription": "کاروبار کی مصنوعات اور خدمات", "searchPlaceholder": "مصنوعات یا خدمت تلاش کریں", "auditTitle": "ویب سائٹ جائزہ فہرست" }
     }
   },
   "conversationalExplainers": {
@@ -147,6 +147,8 @@
       "illustrativeLabel": "مثالی گفتگو",
       "contextualLinks": [{ "label": "WhatsApp بوٹس", "href": "/services/whatsapp-bots" }],
       "visual": {
+        "primaryService": "ویب چیٹ بوٹ",
+        "secondaryService": "WhatsApp بوٹ",
         "customer": "کیا میں آپ کی مصنوعات کے بارے میں معلومات لے سکتا ہوں؟",
         "assistant": "ضرور۔ آپ کس قسم کی مصنوعات میں دلچسپی رکھتے ہیں؟"
       }
@@ -158,7 +160,7 @@
       "capabilities": ["آنے والی درخواستوں کا جائزہ اور درجہ بندی", "دستاویزات کا خلاصہ اور مسودے تیار کرنا", "CRM اور دیگر سسٹمز سے منسلک کام"],
       "cta": "AI ایجنٹس دیکھیں",
       "illustrativeLabel": "مثالی ورک فلو",
-      "visual": { "agentSteps": ["نئی درخواست", "ضرورت کا خلاصہ", "پیشکش کا مسودہ", "ٹیم کی منظوری"] }
+      "visual": { "primaryService": "AI ایجنٹ", "secondaryService": "ٹیم کی منظوری", "agentSteps": ["نئی درخواست", "ضرورت کا خلاصہ", "پیشکش کا مسودہ", "ٹیم کی منظوری"] }
     }
   },
   "ongoingSupport": {
