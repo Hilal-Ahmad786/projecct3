@@ -82,13 +82,13 @@ export default async function HomePage({ params }: PageProps) {
     <>
       <Hero />
       <FeaturedServices locale={validLocale} />
+      <ServicesSection />
       <SocialProofBanner variant="stats" />
       <PatternDivider className="py-8" />
       <DemoSection />
       <BusinessSolutionsSection locale={validLocale} />
       <MarketingJourneySection locale={validLocale} />
       <AutomationUseCasesSection locale={validLocale} />
-      <ServicesSection />
       <PatternDivider className="py-8" color="var(--heritage-saffron)" />
       <ProjectDetailSection />
       <ClientJourneyRoadmap />
