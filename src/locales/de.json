@@ -113,65 +113,52 @@
       "previewAlt": "Screenshot des von PakSoft entwickelten Shopify-Onlineshops von Termopazar"
     }
   },
-  "marketingJourney": {
-    "title": "Erreichen Sie die richtige Zielgruppe und messen Sie die Ergebnisse",
-    "introduction": "Wir richten SEO, Werbung und Conversion-Maßnahmen an Ihren Unternehmenszielen aus, verfolgen die Leistung und erkennen gezielt Verbesserungspotenziale.",
-    "serviceLinkLabel": "Passende Leistungen",
-    "illustrativeLabel": "Beispielhafter Marketingablauf von Sichtbarkeit bis Messung und Optimierung",
-    "cta": "Lassen Sie uns über Ihre Marketingziele sprechen",
-    "stages": {
-      "visibility": {
-        "eyebrow": "Sichtbarkeit",
-        "title": "Werden Sie auffindbar",
-        "description": "Helfen Sie potenziellen Kunden, Ihr Unternehmen zu entdecken.",
-        "services": ["SEO", "Google Ads", "Instagram- und Facebook-Werbung"]
-      },
-      "conversion": {
-        "eyebrow": "Conversion",
-        "title": "Machen Sie aus Interesse eine Handlung",
-        "description": "Erleichtern Sie Besuchern, ein Angebot anzufordern, Kontakt aufzunehmen oder einen Kauf abzuschließen.",
-        "services": ["Landingpage-Design", "Optimierung von Formular- und Kaufabläufen", "Conversion-Rate-Optimierung"]
-      },
-      "measurement": {
-        "eyebrow": "Messung und Optimierung",
-        "title": "Entwickeln Sie datenbasiert weiter",
-        "description": "Verfolgen Sie, welche Maßnahmen Anfragen und Verkäufe erzeugen, und planen Sie daraus die nächsten Schritte.",
-        "services": ["Analytics-Einrichtung", "Conversion-Tracking", "Performance-Berichte"]
-      }
+  "marketingExplainers": {
+    "digitalMarketing": {
+      "label": "Digitales Marketing",
+      "title": "Bringen Sie Ihre Marke zur richtigen Zielgruppe",
+      "description": "Wir planen Google-, Instagram- und Facebook-Anzeigen passend zu Ihren Unternehmenszielen und verfolgen die Kampagnen, um Verbesserungsmöglichkeiten zu erkennen.",
+      "capabilities": ["Kampagnenmanagement für Google Ads", "Instagram- und Facebook-Anzeigen", "Conversion-Tracking und Performance-Berichte"],
+      "cta": "Leistungen im digitalen Marketing ansehen",
+      "illustrativeLabel": "Beispielhafte Darstellung",
+      "contextualLinks": [
+        { "label": "Google Ads Management", "href": "/services/google-ads" },
+        { "label": "Meta Ads", "href": "/services/meta-ads" }
+      ],
+      "visual": { "adLabel": "Anzeige", "searchTitle": "Unternehmenswebsite", "searchPlaceholder": "Anfrage oder Kauf" }
+    },
+    "seo": {
+      "label": "SEO-Leistungen",
+      "title": "Damit Kunden Sie bei Google finden",
+      "description": "Wir verbessern die technische Struktur und die Inhalte Ihrer Website, um die organische Sichtbarkeit Ihrer Produkte und Leistungen in der Suche zu unterstützen.",
+      "capabilities": ["Technisches SEO und Website-Analyse", "Keyword- und Inhaltsarbeit", "Lokales SEO und E-Commerce-SEO"],
+      "cta": "SEO-Leistungen ansehen",
+      "illustrativeLabel": "Beispielhafte Darstellung",
+      "visual": { "searchTitle": "Vorschau eines Suchergebnisses", "searchDescription": "Produkte und Leistungen des Unternehmens", "searchPlaceholder": "Produkt oder Leistung suchen", "auditTitle": "Website-Prüfliste" }
     }
   },
-  "automationUseCases": {
-    "title": "Automatisieren Sie wiederkehrende Aufgaben",
-    "introduction": "Von Kundenanfragen bis zur Dokumentenverarbeitung entwickeln wir KI-, Automatisierungs- und Systemintegrationslösungen für zeitaufwendige Abläufe.",
-    "problemLabel": "Bedarf",
-    "workflowLabel": "Beispielhafter Ablauf",
-    "servicesLabel": "Passende Leistungen",
-    "cta": "Lassen Sie uns über Ihren Automatisierungsbedarf sprechen",
-    "cases": {
-      "leads": {
-        "title": "Kundenanfragen organisieren",
-        "problem": "Anfragen von der Website und anderen Kanälen manuell nachverfolgen.",
-        "workflow": ["Neue Anfrage", "CRM-Eintrag", "Zuständiges Team benachrichtigen"],
-        "services": ["CRM-Integration", "API-Integration", "Workflow-Automatisierung"]
-      },
-      "questions": {
-        "title": "Kundenfragen beantworten",
-        "problem": "Ähnliche Fragen immer wieder beantworten.",
-        "workflow": ["Kundenfrage", "Antwort anhand der Unternehmensinformationen", "Bei Bedarf an das Team übergeben"],
-        "services": ["Chatbot-Entwicklung", "WhatsApp-Bots", "Wissensdatenbank-Assistenten"]
-      },
-      "documents": {
-        "title": "Informationen aus Dokumenten übertragen",
-        "problem": "Informationen aus Dokumenten einzeln in Systeme eingeben.",
-        "workflow": ["Dokument hochladen", "Informationen extrahieren", "Prüfung durch Mitarbeitende", "In das System übertragen"],
-        "services": ["OCR", "Dokumentenverarbeitung", "Systemintegrationen"]
-      },
-      "orders": {
-        "title": "Bestellabläufe verbinden",
-        "problem": "Informationen zwischen Shop- und Betriebssystemen übertragen.",
-        "workflow": ["Neue Bestellung", "An relevante Systeme übertragen", "Status aktualisieren"],
-        "services": ["E-Commerce-Integrationen", "ERP-Anbindungen", "Individuelle Software"]
+  "conversationalExplainers": {
+    "chatbots": {
+      "label": "Chatbots und WhatsApp-Bots",
+      "title": "Kundenfragen einfacher bearbeiten",
+      "description": "Wir entwickeln Chatbot-Lösungen, die Fragen von Ihrer Website und über WhatsApp beantworten, Anfragen erfassen und Gespräche bei Bedarf an Ihr Team übergeben.",
+      "capabilities": ["Antworten auf Basis Ihrer Unternehmensinformationen", "Anfrage- und Termindaten erfassen", "Bei Bedarf an Ihr Team übergeben"],
+      "cta": "Chatbot-Lösungen ansehen",
+      "illustrativeLabel": "Beispielgespräch",
+      "contextualLinks": [{ "label": "WhatsApp-Bots", "href": "/services/whatsapp-bots" }],
+      "visual": {
+        "customer": "Kann ich Informationen zu Ihren Produkten bekommen?",
+        "assistant": "Gerne. Für welche Produktgruppe interessieren Sie sich?"
       }
+    },
+    "agents": {
+      "label": "KI-Agenten",
+      "title": "Aufgabenorientierte KI für Ihre Abläufe",
+      "description": "Wir entwickeln KI-Agenten, die Informationen prüfen, festgelegte Schritte ausführen und Aktionen in verbundenen Systemen vorbereiten. Schritte mit Freigabebedarf bleiben unter der Kontrolle Ihres Teams.",
+      "capabilities": ["Eingehende Anfragen prüfen und klassifizieren", "Dokumente zusammenfassen und Entwürfe vorbereiten", "Aufgaben mit CRM und weiteren Systemen verbinden"],
+      "cta": "KI-Agenten ansehen",
+      "illustrativeLabel": "Beispielhafter Ablauf",
+      "visual": { "agentSteps": ["Neue Anfrage", "Zusammenfassung des Bedarfs", "Angebotsentwurf", "Freigabe durch das Team"] }
     }
   },
   "ongoingSupport": {

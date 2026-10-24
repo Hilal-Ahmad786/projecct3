@@ -113,65 +113,52 @@
       "previewAlt": "Screenshot of the Termopazar Shopify e-commerce store developed by PakSoft"
     }
   },
-  "marketingJourney": {
-    "title": "Reach the Right Audience, Measure the Results",
-    "introduction": "We plan SEO, advertising, and conversion work around your business goals, then track performance to identify opportunities for improvement.",
-    "serviceLinkLabel": "Related services",
-    "illustrativeLabel": "Illustrative marketing workflow from visibility through measurement and improvement",
-    "cta": "Let's Discuss Your Marketing Goals",
-    "stages": {
-      "visibility": {
-        "eyebrow": "Visibility",
-        "title": "Make your business discoverable",
-        "description": "Help potential customers discover your business.",
-        "services": ["SEO", "Google Ads", "Instagram and Facebook ads"]
-      },
-      "conversion": {
-        "eyebrow": "Conversion",
-        "title": "Turn interest into action",
-        "description": "Make it easier for visitors to request a quote, get in touch, or complete a purchase.",
-        "services": ["Landing page design", "Form and checkout flow improvements", "Conversion rate optimization"]
-      },
-      "measurement": {
-        "eyebrow": "Measurement and Improvement",
-        "title": "Improve with evidence",
-        "description": "Track which activities generate enquiries and sales, then use that insight to plan the next steps.",
-        "services": ["Analytics setup", "Conversion tracking", "Performance reporting"]
-      }
+  "marketingExplainers": {
+    "digitalMarketing": {
+      "label": "Digital Marketing",
+      "title": "Connect Your Brand with the Right Audience",
+      "description": "We plan Google, Instagram, and Facebook ads around your business goals, then track campaigns to identify ways to improve them.",
+      "capabilities": ["Google Ads campaign management", "Instagram and Facebook ads", "Conversion tracking and performance reporting"],
+      "cta": "Explore Digital Marketing Services",
+      "illustrativeLabel": "Illustrative example",
+      "contextualLinks": [
+        { "label": "Google Ads Management", "href": "/services/google-ads" },
+        { "label": "Meta Ads", "href": "/services/meta-ads" }
+      ],
+      "visual": { "adLabel": "Ad", "searchTitle": "Business website", "searchPlaceholder": "Enquiry or purchase" }
+    },
+    "seo": {
+      "label": "SEO Services",
+      "title": "Help Customers Find You on Google",
+      "description": "We improve your website's technical structure and content to support the organic visibility of your products and services in search.",
+      "capabilities": ["Technical SEO and site audits", "Keyword and content work", "Local SEO and e-commerce SEO"],
+      "cta": "Explore SEO Services",
+      "illustrativeLabel": "Illustrative example",
+      "visual": { "searchTitle": "Search result preview", "searchDescription": "Business products and services", "searchPlaceholder": "Search for a product or service", "auditTitle": "Website audit checklist" }
     }
   },
-  "automationUseCases": {
-    "title": "Automate Repetitive Work",
-    "introduction": "From customer enquiries to document processing, we build AI, automation, and system integrations for time-consuming processes.",
-    "problemLabel": "Need",
-    "workflowLabel": "Example workflow",
-    "servicesLabel": "Related services",
-    "cta": "Let's Discuss Your Automation Needs",
-    "cases": {
-      "leads": {
-        "title": "Organize Customer Enquiries",
-        "problem": "Manually tracking enquiries from the website and other channels.",
-        "workflow": ["New enquiry", "CRM record", "Notify the relevant team"],
-        "services": ["CRM integration", "API integration", "Workflow automation"]
-      },
-      "questions": {
-        "title": "Answer Customer Questions",
-        "problem": "Answering similar questions repeatedly.",
-        "workflow": ["Customer question", "Answer based on business information", "Team handoff when needed"],
-        "services": ["Chatbot development", "WhatsApp bots", "Knowledge-base assistants"]
-      },
-      "documents": {
-        "title": "Transfer Information from Documents",
-        "problem": "Entering information from documents into systems one item at a time.",
-        "workflow": ["Upload document", "Extract information", "Staff review", "Transfer to system"],
-        "services": ["OCR", "Document processing", "System integrations"]
-      },
-      "orders": {
-        "title": "Connect Order Workflows",
-        "problem": "Moving information between store and operations systems.",
-        "workflow": ["New order", "Transfer to relevant systems", "Update status"],
-        "services": ["E-commerce integrations", "ERP connections", "Custom software"]
+  "conversationalExplainers": {
+    "chatbots": {
+      "label": "Chatbots and WhatsApp Bots",
+      "title": "Handle Customer Questions More Easily",
+      "description": "We build chatbot solutions that answer questions from your website and WhatsApp, collect enquiries, and hand conversations to your team when needed.",
+      "capabilities": ["Answers based on your business information", "Collect enquiry and appointment details", "Handoff to your team when needed"],
+      "cta": "Explore Chatbot Solutions",
+      "illustrativeLabel": "Example conversation",
+      "contextualLinks": [{ "label": "WhatsApp Bots", "href": "/services/whatsapp-bots" }],
+      "visual": {
+        "customer": "Could I get some information about your products?",
+        "assistant": "Of course. Which product category are you interested in?"
       }
+    },
+    "agents": {
+      "label": "AI Agents",
+      "title": "Task-Focused AI for Your Workflows",
+      "description": "We build AI agents that review information, carry out defined steps, and prepare actions in connected systems. Your team stays in control of steps that require approval.",
+      "capabilities": ["Review and classify incoming enquiries", "Summarize documents and prepare drafts", "Tasks connected to CRM and other systems"],
+      "cta": "Explore AI Agents",
+      "illustrativeLabel": "Example workflow",
+      "visual": { "agentSteps": ["New enquiry", "Needs summary", "Quote draft", "Team approval"] }
     }
   },
   "ongoingSupport": {

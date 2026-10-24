@@ -113,65 +113,52 @@
       "previewAlt": "PakSoft tarafından geliştirilen Termopazar Shopify e-ticaret mağazasının ekran görüntüsü"
     }
   },
-  "marketingJourney": {
-    "title": "Doğru Kitleye Ulaşın, Sonuçları Ölçün",
-    "introduction": "SEO, reklam ve dönüşüm çalışmalarını işletmenizin hedeflerine göre planlıyor; performansı takip ederek geliştirme alanlarını belirliyoruz.",
-    "serviceLinkLabel": "İlgili hizmetler",
-    "illustrativeLabel": "Görünürlükten ölçüm ve iyileştirmeye uzanan örnek pazarlama çalışma akışı",
-    "cta": "Pazarlama Hedeflerinizi Konuşalım",
-    "stages": {
-      "visibility": {
-        "eyebrow": "Görünürlük",
-        "title": "Keşfedilebilir olun",
-        "description": "Potansiyel müşterilerinizin işletmenizi keşfetmesine yardımcı olun.",
-        "services": ["SEO", "Google Ads", "Instagram ve Facebook reklamları"]
-      },
-      "conversion": {
-        "eyebrow": "Dönüşüm",
-        "title": "İlgiyi aksiyona dönüştürün",
-        "description": "Ziyaretçilerin teklif istemesini, iletişime geçmesini veya alışveriş yapmasını kolaylaştırın.",
-        "services": ["Açılış sayfası tasarımı", "Form ve satın alma akışlarının iyileştirilmesi", "Dönüşüm oranı optimizasyonu"]
-      },
-      "measurement": {
-        "eyebrow": "Ölçüm ve İyileştirme",
-        "title": "Veriye göre geliştirin",
-        "description": "Hangi çalışmaların başvuru ve satış getirdiğini takip ederek sonraki adımları planlayın.",
-        "services": ["Analitik kurulumu", "Dönüşüm takibi", "Performans raporlaması"]
-      }
+  "marketingExplainers": {
+    "digitalMarketing": {
+      "label": "Dijital Pazarlama",
+      "title": "Markanızı Doğru Kitleyle Buluşturun",
+      "description": "Google, Instagram ve Facebook reklamlarını işletmenizin hedeflerine göre planlıyor, kampanyaları takip ederek geliştirme alanlarını belirliyoruz.",
+      "capabilities": ["Google Ads kampanya yönetimi", "Instagram ve Facebook reklamları", "Dönüşüm takibi ve performans raporlama"],
+      "cta": "Dijital Pazarlama Hizmetlerini İncele",
+      "illustrativeLabel": "Örnek gösterim",
+      "contextualLinks": [
+        { "label": "Google Ads Yönetimi", "href": "/services/google-ads" },
+        { "label": "Meta Reklamları", "href": "/services/meta-ads" }
+      ],
+      "visual": { "adLabel": "Reklam", "searchTitle": "İşletme web sitesi", "searchPlaceholder": "Talep veya alışveriş" }
+    },
+    "seo": {
+      "label": "SEO Hizmetleri",
+      "title": "Müşterileriniz Sizi Google’da Bulsun",
+      "description": "Web sitenizin teknik yapısını ve içeriklerini geliştirerek ürün ve hizmetlerinizin organik aramalarda görünürlüğünü artırmaya yönelik çalışmalar yürütüyoruz.",
+      "capabilities": ["Teknik SEO ve site analizi", "Anahtar kelime ve içerik çalışmaları", "Yerel SEO ve e-ticaret SEO"],
+      "cta": "SEO Hizmetlerini İncele",
+      "illustrativeLabel": "Örnek gösterim",
+      "visual": { "searchTitle": "Arama sonucu önizlemesi", "searchDescription": "İşletme ürün ve hizmetleri", "searchPlaceholder": "Ürün veya hizmet arayın", "auditTitle": "Site kontrol listesi" }
     }
   },
-  "automationUseCases": {
-    "title": "Tekrarlayan İşleri Otomatikleştirin",
-    "introduction": "Müşteri taleplerinden belge işlemeye kadar, zaman alan süreçler için yapay zeka, otomasyon ve sistem entegrasyonları geliştiriyoruz.",
-    "problemLabel": "İhtiyaç",
-    "workflowLabel": "Örnek iş akışı",
-    "servicesLabel": "İlgili hizmetler",
-    "cta": "Otomasyon İhtiyacınızı Konuşalım",
-    "cases": {
-      "leads": {
-        "title": "Müşteri Taleplerini Düzenleyin",
-        "problem": "Web sitesi ve farklı kanallardan gelen talepleri manuel olarak takip etmek.",
-        "workflow": ["Yeni talep", "CRM kaydı", "İlgili ekibe bildirim"],
-        "services": ["CRM entegrasyonu", "API entegrasyonu", "İş akışı otomasyonu"]
-      },
-      "questions": {
-        "title": "Müşteri Sorularını Yanıtlayın",
-        "problem": "Benzer soruları tekrar tekrar yanıtlamak.",
-        "workflow": ["Müşteri sorusu", "İşletme bilgilerine dayalı yanıt", "Gerektiğinde ekip devri"],
-        "services": ["Chatbot geliştirme", "WhatsApp botları", "Bilgi bankası asistanları"]
-      },
-      "documents": {
-        "title": "Belgelerden Bilgi Aktarın",
-        "problem": "Belgelerdeki bilgileri sistemlere tek tek girmek.",
-        "workflow": ["Belge yükleme", "Bilgi çıkarma", "Personel kontrolü", "Sisteme aktarım"],
-        "services": ["OCR", "Belge işleme", "Sistem entegrasyonları"]
-      },
-      "orders": {
-        "title": "Sipariş Akışlarını Bağlayın",
-        "problem": "Mağaza ve operasyon sistemleri arasında bilgi taşımak.",
-        "workflow": ["Yeni sipariş", "İlgili sistemlere aktarım", "Durum güncellemesi"],
-        "services": ["E-ticaret entegrasyonları", "ERP bağlantıları", "Özel yazılım"]
+  "conversationalExplainers": {
+    "chatbots": {
+      "label": "Chatbot ve WhatsApp Botları",
+      "title": "Müşteri Sorularını Daha Kolay Yönetin",
+      "description": "Web siteniz ve WhatsApp üzerinden gelen soruları yanıtlayan, talepleri toplayan ve gerektiğinde ekibinize yönlendiren chatbot çözümleri geliştiriyoruz.",
+      "capabilities": ["İşletme bilgilerine dayalı soru-cevap", "Talep ve randevu bilgisi toplama", "Gerektiğinde ekibinize yönlendirme"],
+      "cta": "Chatbot Çözümlerini İncele",
+      "illustrativeLabel": "Örnek konuşma",
+      "contextualLinks": [{ "label": "WhatsApp Botları", "href": "/services/whatsapp-bots" }],
+      "visual": {
+        "customer": "Ürünleriniz hakkında bilgi alabilir miyim?",
+        "assistant": "Elbette. Hangi ürün grubuyla ilgileniyorsunuz?"
       }
+    },
+    "agents": {
+      "label": "Yapay Zeka Ajanları",
+      "title": "İş Akışlarınız İçin Görev Odaklı Yapay Zeka",
+      "description": "Bilgileri inceleyen, belirlenen adımları yürüten ve bağlı sistemlerde işlem hazırlayan yapay zeka ajanları geliştiriyoruz. Onay gerektiren adımları ekibinizin kontrolünde tutuyoruz.",
+      "capabilities": ["Gelen talepleri inceleme ve sınıflandırma", "Belge özetleme ve taslak hazırlama", "CRM ve diğer sistemlerle bağlantılı görevler"],
+      "cta": "Yapay Zeka Ajanlarını İncele",
+      "illustrativeLabel": "Örnek iş akışı",
+      "visual": { "agentSteps": ["Yeni talep", "İhtiyaçların özeti", "Teklif taslağı", "Ekip onayı"] }
     }
   },
   "ongoingSupport": {
