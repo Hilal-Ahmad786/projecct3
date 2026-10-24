@@ -12,6 +12,8 @@ import DemoSection from '@/components/DemoSection'
 import BusinessSolutionsSection from '@/components/BusinessSolutionsSection'
 import MarketingJourneySection from '@/components/MarketingJourneySection'
 import AutomationUseCasesSection from '@/components/AutomationUseCasesSection'
+import ClientJourneyRoadmap from '@/components/ClientJourneyRoadmap'
+import TestimonialsSection from '@/components/TestimonialsSection'
 import OngoingSupportSection from '@/components/OngoingSupportSection'
 import FAQSection from '@/components/FAQSection'
 import ContactSection from '@/components/ContactSection'
@@ -89,6 +91,8 @@ export default async function HomePage({ params }: PageProps) {
       <ServicesSection />
       <PatternDivider className="py-8" color="var(--heritage-saffron)" />
       <ProjectDetailSection />
+      <ClientJourneyRoadmap />
+      <TestimonialsSection />
       <OngoingSupportSection locale={validLocale} />
       <PatternDivider className="py-8" />
       <FAQSection />
