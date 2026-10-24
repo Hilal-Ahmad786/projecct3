@@ -19,25 +19,7 @@ import {
   CogIcon
 } from '@heroicons/react/24/outline'
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations'
-import { smoothSpring, useCountUp, useInViewOnce } from '@/lib/animations'
-
-function CountUpStatItem({ value, label }: { value: string; label: string }) {
-  const { ref, isInView } = useInViewOnce()
-  const prefersReducedMotion = useReducedMotion()
-  const match = value.match(/^(\d+)(.*)$/)
-  const target = match ? parseInt(match[1], 10) : 0
-  const suffix = match ? match[2] : value
-  const count = useCountUp(target, prefersReducedMotion ? 0 : 2000, isInView)
-
-  return (
-    <div ref={ref} className="text-center">
-      <div className="text-3xl font-light text-gray-900 mb-2">
-        {match ? `${count}${suffix}` : value}
-      </div>
-      <div className="text-caption text-gray-500">{label}</div>
-    </div>
-  )
-}
+import { smoothSpring } from '@/lib/animations'
 
 type ProcessStep = { step: string; title: string; desc: string }
 
@@ -281,14 +263,6 @@ export default function ProjectDetailSection() {
     { icon: CogIcon, title: t('ongoingSupport.title'), description: t('ongoingSupport.description'), details: t('ongoingSupport.details') }
   ]
 
-  const statsRaw = t('stats')
-  const stats: { value: string; label: string }[] = Array.isArray(statsRaw) ? statsRaw as { value: string; label: string }[] : [
-    { value: '150+', label: 'Projects Completed' },
-    { value: '50+',  label: 'Satisfied Clients'  },
-    { value: '98%',  label: 'Success Rate'        },
-    { value: '24/7', label: 'Support Available'   },
-  ]
-
   const processStepsRaw = t('processSteps')
   const processSteps: ProcessStep[] = Array.isArray(processStepsRaw) ? processStepsRaw as ProcessStep[] : [
     { step: '01', title: 'Discovery & Planning',  desc: 'Understanding requirements and defining project scope' },
@@ -381,26 +355,13 @@ export default function ProjectDetailSection() {
           })}
         </motion.div>
 
-        {/* Stats Section with CountUp */}
-        <motion.div
-          initial={{ opacity: 0, y: 32 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={prefersReducedMotion ? { duration: 0 } : { ...smoothSpring, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-8 py-16 border-y border-gray-200"
-        >
-          {stats.map((stat) => (
-            <CountUpStatItem key={stat.label} value={stat.value} label={stat.label} />
-          ))}
-        </motion.div>
-
         {/* Process Overview */}
         <motion.div
           initial={{ opacity: 0, y: 32 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={prefersReducedMotion ? { duration: 0 } : { ...smoothSpring, delay: 0.4 }}
           viewport={{ once: true }}
-          className="mt-16"
+          className="border-t border-gray-200 pt-16"
         >
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className={dir === 'rtl' ? 'order-2' : 'order-1'}>

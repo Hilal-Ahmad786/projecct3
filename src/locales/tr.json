@@ -174,6 +174,17 @@
       }
     }
   },
+  "ongoingSupport": {
+    "title": "Yayın Sonrasında da Yanınızdayız",
+    "description": "Web sitenizin, yazılımınızın ve entegrasyonlarınızın bakım ve geliştirme ihtiyaçları için kapsamı birlikte belirlenen destek hizmetleri sunuyoruz.",
+    "items": [
+      "Bakım ve güncellemeler",
+      "Hız ve performans iyileştirmeleri",
+      "Hosting ve altyapı desteği",
+      "Entegrasyon ve otomasyon takibi"
+    ],
+    "cta": "Destek Hizmetlerini İncele"
+  },
   "metadata": {
     "defaultTitle": "PakSoft – Modern Dijital Çözümler",
     "defaultDescription": "Kurumsal web geliştirme, e-ticaret, otomasyon botları ve dijital pazarlama çözümleri",
@@ -4258,7 +4269,7 @@
       },
       {
         "question": "Devam eden destek ve bakım sağlıyor musunuz?",
-        "answer": "Evet, kapsamlı destek ve bakım paketleri sunuyoruz. Bu düzenli güncellemeler, güvenlik yamaları, performans izleme, hata düzeltmeleri ve özellik geliştirmeleri içerir. Ayrıca kritik sorunlar için 7/24 teknik destek sağlıyoruz."
+        "answer": "Evet, kapsamı ihtiyacınıza göre belirlenen bakım ve destek hizmetleri sunuyoruz. Bunlar düzenli güncellemeler, güvenlik yamaları, performans izleme, hata düzeltmeleri ve özellik geliştirmelerini içerebilir."
       },
       {
         "question": "Mevcut sistemlerle çalışabilir misiniz?",
@@ -4573,7 +4584,7 @@
       "title": "Devam Eden Destek",
       "description": "Sistemlerinizin sorunsuz çalışmasını sağlamak için kapsamlı bakım ve destek hizmetleri.",
       "details": [
-        "7/24 İzleme",
+        "Performans Takibi",
         "Düzenli Güncellemeler",
         "Hata Düzeltmeleri",
         "Özellik Geliştirmeleri"

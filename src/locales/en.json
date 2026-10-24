@@ -174,6 +174,17 @@
       }
     }
   },
+  "ongoingSupport": {
+    "title": "We Stay with You After Launch",
+    "description": "We provide support services with an agreed scope for the maintenance and development needs of your website, software, and integrations.",
+    "items": [
+      "Maintenance and updates",
+      "Speed and performance improvements",
+      "Hosting and infrastructure support",
+      "Integration and automation monitoring"
+    ],
+    "cta": "Explore Support Services"
+  },
   "metadata": {
     "defaultTitle": "PakSoft – Modern Digital Solutions",
     "defaultDescription": "Enterprise web development, e-commerce, automation bots and digital marketing solutions",
@@ -4258,7 +4269,7 @@
       },
       {
         "question": "Do you provide ongoing support and maintenance?",
-        "answer": "Yes, we offer comprehensive support and maintenance packages. This includes regular updates, security patches, performance monitoring, bug fixes, and feature enhancements. We also provide 24/7 technical support for critical issues."
+        "answer": "Yes. We provide maintenance and support services scoped around your needs. These may include regular updates, security patches, performance monitoring, bug fixes, and feature enhancements."
       },
       {
         "question": "Can you work with existing systems?",
@@ -5461,7 +5472,7 @@
       "title": "Ongoing Support",
       "description": "Comprehensive maintenance and support services to keep your systems running smoothly.",
       "details": [
-        "24/7 Monitoring",
+        "Performance Monitoring",
         "Regular Updates",
         "Bug Fixes",
         "Feature Enhancements"

@@ -174,6 +174,17 @@
       }
     }
   },
+  "ongoingSupport": {
+    "title": "Auch nach dem Launch an Ihrer Seite",
+    "description": "Für Wartung und Weiterentwicklung Ihrer Website, Software und Integrationen bieten wir Supportleistungen mit gemeinsam festgelegtem Umfang.",
+    "items": [
+      "Wartung und Updates",
+      "Geschwindigkeits- und Performance-Optimierung",
+      "Hosting- und Infrastruktur-Support",
+      "Betreuung von Integrationen und Automatisierungen"
+    ],
+    "cta": "Supportleistungen ansehen"
+  },
   "metadata": {
     "defaultTitle": "PakSoft – Moderne Digitallösungen",
     "defaultDescription": "Enterprise-Webentwicklung, E-Commerce, Automatisierungs-Bots und Digital-Marketing-Lösungen",
@@ -3967,7 +3978,7 @@
       },
       {
         "question": "Bieten Sie laufende Wartung und Support?",
-        "answer": "Ja. Wir bieten umfassende Wartungs- und Supportpakete: regelmäßige Updates, Sicherheitspatches, Performance-Monitoring, Bugfixes und Funktions-Erweiterungen. Für kritische Fälle gibt es 24/7-Support."
+        "answer": "Ja. Wir bieten Wartungs- und Supportleistungen mit einem auf Ihren Bedarf abgestimmten Umfang. Dazu können regelmäßige Updates, Sicherheitspatches, Performance-Monitoring, Bugfixes und Funktionserweiterungen gehören."
       },
       {
         "question": "Können Sie mit bestehenden Systemen arbeiten?",
@@ -4282,7 +4293,7 @@
       "title": "Kontinuierlicher Support",
       "description": "Umfassende Wartung & Support für reibungslose Systeme.",
       "details": [
-        "24/7-Monitoring",
+        "Performance-Monitoring",
         "Regelmäßige Updates",
         "Bugfixes",
         "Feature-Erweiterungen"

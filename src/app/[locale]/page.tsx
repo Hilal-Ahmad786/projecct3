@@ -12,8 +12,7 @@ import DemoSection from '@/components/DemoSection'
 import BusinessSolutionsSection from '@/components/BusinessSolutionsSection'
 import MarketingJourneySection from '@/components/MarketingJourneySection'
 import AutomationUseCasesSection from '@/components/AutomationUseCasesSection'
-import ClientJourneyRoadmap from '@/components/ClientJourneyRoadmap'
-import TestimonialsSection from '@/components/TestimonialsSection'
+import OngoingSupportSection from '@/components/OngoingSupportSection'
 import FAQSection from '@/components/FAQSection'
 import ContactSection from '@/components/ContactSection'
 import { PatternDivider } from '@/components/heritage'
@@ -83,15 +82,14 @@ export default async function HomePage({ params }: PageProps) {
       <FeaturedServices locale={validLocale} />
       <SocialProofBanner variant="stats" />
       <PatternDivider className="py-8" />
-      <ServicesSection />
-      <ProjectDetailSection />
       <DemoSection />
       <BusinessSolutionsSection locale={validLocale} />
       <MarketingJourneySection locale={validLocale} />
       <AutomationUseCasesSection locale={validLocale} />
+      <ServicesSection />
       <PatternDivider className="py-8" color="var(--heritage-saffron)" />
-      <ClientJourneyRoadmap />
-      <TestimonialsSection />
+      <ProjectDetailSection />
+      <OngoingSupportSection locale={validLocale} />
       <PatternDivider className="py-8" />
       <FAQSection />
       <ContactSection />
