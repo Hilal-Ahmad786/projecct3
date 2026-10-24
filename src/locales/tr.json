@@ -38,6 +38,46 @@
     "export": "Dışa Aktar",
     "import": "İçe Aktar"
   },
+  "featuredServices": {
+    "title": "Öne Çıkan Hizmetler",
+    "introduction": "İşletmenizin dijital ihtiyaçlarına uygun web, e-ticaret, pazarlama ve otomasyon çözümlerini keşfedin.",
+    "cardLinkLabel": "Hizmeti İncele",
+    "allServicesLabel": "Tüm Hizmetleri Keşfedin",
+    "items": {
+      "corporateWebDesign": {
+        "title": "Kurumsal Web Tasarım",
+        "description": "İşletmenize özel, hızlı ve mobil uyumlu kurumsal web siteleri."
+      },
+      "ecommerce": {
+        "title": "E-Ticaret Çözümleri",
+        "description": "Online mağaza kurulumu, tasarım, platform geçişi ve entegrasyon çözümleri."
+      },
+      "googleAds": {
+        "title": "Google Ads Yönetimi",
+        "description": "Ürün ve hizmetlerinizi arayan potansiyel müşterilere yönelik reklam kampanyaları."
+      },
+      "aiAutomation": {
+        "title": "Yapay Zeka ve İş Otomasyonu",
+        "description": "Tekrarlayan işleri azaltan, veri ve iş akışlarını birbirine bağlayan akıllı otomasyonlar."
+      },
+      "seo": {
+        "title": "SEO Hizmetleri",
+        "description": "Google’da organik görünürlüğünüzü geliştirmeye yönelik teknik SEO ve içerik çalışmaları."
+      },
+      "chatbotWhatsapp": {
+        "title": "Chatbot ve WhatsApp Otomasyonu",
+        "description": "Müşteri sorularını yanıtlayan, talepleri toplayan ve ekibinize yönlendiren dijital asistanlar."
+      },
+      "customSoftware": {
+        "title": "Özel Yazılım ve Entegrasyon",
+        "description": "İş süreçlerinize uygun web uygulamaları, yönetim panelleri ve sistem entegrasyonları."
+      },
+      "socialAds": {
+        "title": "Sosyal Medya Reklam Yönetimi",
+        "description": "Instagram ve Facebook’ta hedef kitlenize yönelik reklam ve yeniden pazarlama kampanyaları."
+      }
+    }
+  },
   "metadata": {
     "defaultTitle": "PakSoft – Modern Dijital Çözümler",
     "defaultDescription": "Kurumsal web geliştirme, e-ticaret, otomasyon botları ve dijital pazarlama çözümleri",

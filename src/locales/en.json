@@ -38,6 +38,46 @@
     "export": "Export",
     "import": "Import"
   },
+  "featuredServices": {
+    "title": "Featured Services",
+    "introduction": "Explore web, e-commerce, marketing, and automation solutions tailored to your business's digital needs.",
+    "cardLinkLabel": "Explore Service",
+    "allServicesLabel": "Explore All Services",
+    "items": {
+      "corporateWebDesign": {
+        "title": "Corporate Web Design",
+        "description": "Fast, mobile-friendly corporate websites tailored to your business."
+      },
+      "ecommerce": {
+        "title": "E-Commerce Solutions",
+        "description": "Online store setup, design, platform migration, and integration solutions."
+      },
+      "googleAds": {
+        "title": "Google Ads Management",
+        "description": "Advertising campaigns aimed at potential customers searching for your products and services."
+      },
+      "aiAutomation": {
+        "title": "AI and Business Automation",
+        "description": "Smart automations that reduce repetitive work and connect data with business workflows."
+      },
+      "seo": {
+        "title": "SEO Services",
+        "description": "Technical SEO and content work designed to improve your organic visibility on Google."
+      },
+      "chatbotWhatsapp": {
+        "title": "Chatbot and WhatsApp Automation",
+        "description": "Digital assistants that answer customer questions, collect requests, and route them to your team."
+      },
+      "customSoftware": {
+        "title": "Custom Software and Integration",
+        "description": "Web applications, management dashboards, and system integrations tailored to your business processes."
+      },
+      "socialAds": {
+        "title": "Social Media Ad Management",
+        "description": "Advertising and remarketing campaigns for your target audience on Instagram and Facebook."
+      }
+    }
+  },
   "metadata": {
     "defaultTitle": "PakSoft – Modern Digital Solutions",
     "defaultDescription": "Enterprise web development, e-commerce, automation bots and digital marketing solutions",

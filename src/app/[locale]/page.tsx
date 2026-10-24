@@ -4,6 +4,7 @@ import { Locale, locales, defaultLocale } from '@/lib/i18n'
 import { createTranslator } from '@/lib/server-i18n'
 import { generateAlternateLinks } from '@/lib/seo'
 import Hero from '@/components/Hero'
+import FeaturedServices from '@/components/FeaturedServices'
 import SocialProofBanner from '@/components/SocialProofBanner'
 import ServicesSection from '@/components/ServicesSection'
 import ProjectDetailSection from '@/components/ProjectDetailSection'
@@ -69,10 +70,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 }
 
-export default function HomePage() {
+export default async function HomePage({ params }: PageProps) {
+  const { locale } = await params
+  const validLocale = locales.includes(locale) ? locale : defaultLocale
+
   return (
     <>
       <Hero />
+      <FeaturedServices locale={validLocale} />
       <SocialProofBanner variant="stats" />
       <PatternDivider className="py-8" />
       <ServicesSection />

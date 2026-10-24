@@ -38,6 +38,46 @@
     "import": "Importieren",
     "getQuote": "Angebot anfordern"
   },
+  "featuredServices": {
+    "title": "Ausgewählte Leistungen",
+    "introduction": "Entdecken Sie Web-, E-Commerce-, Marketing- und Automatisierungslösungen, die zu den digitalen Anforderungen Ihres Unternehmens passen.",
+    "cardLinkLabel": "Leistung ansehen",
+    "allServicesLabel": "Alle Leistungen entdecken",
+    "items": {
+      "corporateWebDesign": {
+        "title": "Corporate Webdesign",
+        "description": "Schnelle, mobiloptimierte Unternehmenswebsites, individuell für Ihr Unternehmen entwickelt."
+      },
+      "ecommerce": {
+        "title": "E-Commerce-Lösungen",
+        "description": "Einrichtung und Gestaltung von Onlineshops sowie Plattformwechsel und Integrationen."
+      },
+      "googleAds": {
+        "title": "Google Ads Management",
+        "description": "Werbekampagnen für potenzielle Kunden, die nach Ihren Produkten und Leistungen suchen."
+      },
+      "aiAutomation": {
+        "title": "KI und Geschäftsautomatisierung",
+        "description": "Intelligente Automatisierungen, die Routineaufgaben reduzieren und Daten mit Arbeitsabläufen verbinden."
+      },
+      "seo": {
+        "title": "SEO-Leistungen",
+        "description": "Technische SEO und Content-Maßnahmen zur Verbesserung Ihrer organischen Sichtbarkeit bei Google."
+      },
+      "chatbotWhatsapp": {
+        "title": "Chatbot- und WhatsApp-Automatisierung",
+        "description": "Digitale Assistenten, die Kundenfragen beantworten, Anfragen erfassen und an Ihr Team weiterleiten."
+      },
+      "customSoftware": {
+        "title": "Individuelle Software und Integration",
+        "description": "Webanwendungen, Verwaltungsoberflächen und Systemintegrationen passend zu Ihren Geschäftsprozessen."
+      },
+      "socialAds": {
+        "title": "Social-Media-Anzeigenmanagement",
+        "description": "Werbe- und Remarketing-Kampagnen für Ihre Zielgruppe auf Instagram und Facebook."
+      }
+    }
+  },
   "metadata": {
     "defaultTitle": "PakSoft – Moderne Digitallösungen",
     "defaultDescription": "Enterprise-Webentwicklung, E-Commerce, Automatisierungs-Bots und Digital-Marketing-Lösungen",
