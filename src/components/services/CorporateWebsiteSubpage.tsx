@@ -344,9 +344,9 @@ function localizedHref(path: string, locale: SupportedLocale) {
 function PageSection({ title, children, tone = 'white', id }: { title: string; children: ReactNode; tone?: 'white' | 'gray' | 'ivory'; id?: string }) {
   const background = tone === 'gray' ? 'bg-background-gray' : tone === 'ivory' ? 'bg-heritage-ivory' : 'bg-white';
   return (
-    <section id={id} className={`${background} section-compact`}>
+    <section id={id} className={`${background} corporate-section-enter section-compact`}>
       <div className="container mx-auto max-w-[1200px] px-4">
-        <h2 className="text-headline font-medium text-gray-900">{title}</h2>
+        <h2 className="max-w-4xl text-headline font-medium leading-tight text-gray-900">{title}<span aria-hidden="true" className="mt-4 block h-1 w-12 rounded-full bg-heritage-turquoise" /></h2>
         <div className="mt-6">{children}</div>
       </div>
     </section>
@@ -386,12 +386,12 @@ export default function CorporateWebsiteSubpage({ page, locale }: { page: Corpor
       {page === 'features' && <>
         <PageSection title={p.title} tone="gray">
           <div className="grid gap-4 md:grid-cols-2">
-            {p.features.map((item: Feature) => <article key={item.title} className="rounded-xl border border-gray-200 bg-white p-5 md:p-6">
-              <h3 className="text-lg font-semibold text-gray-900">{item.title}</h3>
-              <dl className="mt-3 space-y-3 text-sm leading-6 text-gray-700">
-                <div><dt className="font-semibold text-heritage-turquoise-deep">{c.labels.what}</dt><dd>{item.what}</dd></div>
-                <div><dt className="font-semibold text-heritage-turquoise-deep">{c.labels.why}</dt><dd>{item.why}</dd></div>
-                <div><dt className="font-semibold text-gray-600">{c.labels.scope}</dt><dd>{item.scope}</dd></div>
+            {p.features.map((item: Feature, i: number) => <article key={item.title} style={{ animationDelay: `${i * 70}ms` }} className="corporate-info-card animate-fade-in flex h-full flex-col rounded-2xl border border-gray-200 border-t-2 border-t-heritage-turquoise bg-white p-5 shadow-sm md:p-6">
+              <div className="flex items-center gap-3"><span aria-hidden="true" className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-heritage-turquoise-light text-sm font-semibold text-heritage-turquoise-deep">0{i + 1}</span><h3 className="text-lg font-semibold text-gray-900">{item.title}</h3></div>
+              <dl className="mt-5 grid flex-1 gap-4 text-sm leading-6 text-gray-700">
+                <div><dt className="text-overline text-heritage-turquoise-deep">{c.labels.what}</dt><dd className="mt-1">{item.what}</dd></div>
+                <div><dt className="text-overline text-heritage-turquoise-deep">{c.labels.why}</dt><dd className="mt-1">{item.why}</dd></div>
+                <div className="rounded-lg bg-background-gray p-3"><dt className="text-overline text-gray-600">{c.labels.scope}</dt><dd className="mt-1">{item.scope}</dd></div>
               </dl>
             </article>)}
           </div>
@@ -399,7 +399,7 @@ export default function CorporateWebsiteSubpage({ page, locale }: { page: Corpor
         <PageSection title={p.scopeTitle}>
           <p className="max-w-3xl text-body text-gray-600">{p.scopeIntro}</p>
           <div className="mt-5 grid gap-3 md:grid-cols-3">
-            {p.scope.map((item: Fact, i: number) => <article key={item.title} className="border-t-2 border-heritage-turquoise pt-4">
+            {p.scope.map((item: Fact, i: number) => <article key={item.title} className="rounded-xl border border-heritage-sand bg-white p-5">
               <span className="text-overline text-heritage-turquoise-deep">0{i + 1}</span><h3 className="mt-2 font-semibold text-gray-900">{item.title}</h3><p className="mt-2 text-sm leading-6 text-gray-600">{item.detail}</p>
             </article>)}
           </div>
@@ -409,7 +409,7 @@ export default function CorporateWebsiteSubpage({ page, locale }: { page: Corpor
       {page === 'technologies' && <>
         <PageSection title={p.title} tone="gray"><div className="grid gap-8 lg:grid-cols-[.8fr_1.2fr]">
           <div><h3 className="text-title font-medium text-gray-900">{p.chooseTitle}</h3><p className="mt-3 text-body text-gray-600">{p.chooseIntro}</p><ul className="mt-5 space-y-4">{p.choose.map((item: Fact) => <li key={item.title} className="border-s-2 border-heritage-turquoise ps-4"><h4 className="font-semibold text-gray-900">{item.title}</h4><p className="mt-1 text-sm leading-6 text-gray-600">{item.detail}</p></li>)}</ul></div>
-          <div><h3 className="text-title font-medium text-gray-900">{p.platformsTitle}</h3><div className="mt-3 divide-y divide-gray-200 border-y border-gray-200">{p.platforms.map((item: { name: string; best: string; tradeoff: string }) => <article key={item.name} className="grid gap-3 py-4 sm:grid-cols-[9rem_1fr_1fr]"><h4 className="font-semibold text-heritage-turquoise-deep">{item.name}</h4><dl className="text-sm leading-6 text-gray-700"><dt className="font-semibold">{p.experienceLabel}</dt><dd>{item.best}</dd></dl><dl className="text-sm leading-6 text-gray-600"><dt className="font-semibold">{p.costsLabel}</dt><dd>{item.tradeoff}</dd></dl></article>)}</div></div>
+          <div><h3 className="text-title font-medium text-gray-900">{p.platformsTitle}</h3><div className="mt-3 grid gap-3">{p.platforms.map((item: { name: string; best: string; tradeoff: string }, i: number) => <article key={item.name} style={{ animationDelay: `${i * 70}ms` }} className="corporate-info-card animate-fade-in grid gap-3 rounded-xl border border-gray-200 bg-white p-4 sm:grid-cols-[9rem_1fr_1fr] sm:p-5"><h4 className="self-start font-semibold text-heritage-turquoise-deep">{item.name}</h4><dl className="text-sm leading-6 text-gray-700"><dt className="text-overline text-gray-500">{p.experienceLabel}</dt><dd className="mt-1">{item.best}</dd></dl><dl className="text-sm leading-6 text-gray-600"><dt className="text-overline text-gray-500">{p.costsLabel}</dt><dd className="mt-1">{item.tradeoff}</dd></dl></article>)}</div></div>
         </div></PageSection>
         <PageSection title={p.cmsTitle}>
           <div className="overflow-hidden rounded-xl border border-gray-200 bg-white">
@@ -424,8 +424,8 @@ export default function CorporateWebsiteSubpage({ page, locale }: { page: Corpor
 
       {page === 'process' && <>
         <PageSection title={p.title} tone="gray">
-          <ol className="space-y-3">{p.stages.map((stage: ProcessStage, i: number) => <li key={stage.title} className="grid gap-4 rounded-xl border border-gray-200 bg-white p-5 md:grid-cols-[4rem_1fr_1fr_1fr] md:p-6">
-            <span className="text-overline text-heritage-turquoise-deep">0{i + 1}</span><div><h3 className="font-semibold text-gray-900">{stage.title}</h3></div><div><h4 className="text-overline text-heritage-turquoise-deep">{c.labels.paksoft}</h4><p className="mt-2 text-sm leading-6 text-gray-700">{stage.paksoft}</p></div><div><h4 className="text-overline text-heritage-turquoise-deep">{c.labels.client}</h4><p className="mt-2 text-sm leading-6 text-gray-700">{stage.client}</p></div><div className="md:col-start-2 md:col-span-3"><h4 className="text-overline text-gray-500">{c.labels.approval}</h4><p className="mt-1 text-sm leading-6 text-gray-700">{stage.approval}</p></div>
+          <ol className="space-y-3">{p.stages.map((stage: ProcessStage, i: number) => <li key={stage.title} style={{ animationDelay: `${i * 65}ms` }} className="corporate-info-card animate-fade-in grid gap-x-5 gap-y-4 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm sm:grid-cols-[3.5rem_1fr_1fr] lg:grid-cols-[3.5rem_1fr_1fr_1fr] md:p-6">
+            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-heritage-turquoise-light text-sm font-semibold text-heritage-turquoise-deep">{String(i + 1).padStart(2, '0')}</span><div className="self-center"><h3 className="text-lg font-semibold text-gray-900">{stage.title}</h3></div><div><h4 className="text-overline text-heritage-turquoise-deep">{c.labels.paksoft}</h4><p className="mt-2 text-sm leading-6 text-gray-700">{stage.paksoft}</p></div><div><h4 className="text-overline text-heritage-turquoise-deep">{c.labels.client}</h4><p className="mt-2 text-sm leading-6 text-gray-700">{stage.client}</p></div><div className="rounded-lg bg-heritage-ivory p-3 sm:col-start-2 sm:col-span-2 lg:col-span-3"><h4 className="text-overline text-gray-600">{c.labels.approval}</h4><p className="mt-1 text-sm leading-6 text-gray-700">{stage.approval}</p></div>
           </li>)}</ol>
         </PageSection>
         <PageSection title={p.timingTitle}><p className="max-w-4xl text-body text-gray-600">{p.timing}</p></PageSection>
@@ -447,7 +447,7 @@ export default function CorporateWebsiteSubpage({ page, locale }: { page: Corpor
       </>}
 
       {page === 'pricing' && <>
-        <PageSection title={p.title} tone="gray"><p className="text-body text-gray-600">{p.optionsIntro}</p><div className="mt-5 grid gap-4 md:grid-cols-3">{p.options.map((item: Fact) => <article key={item.title} className="border-t-2 border-heritage-turquoise bg-white p-5"><h3 className="font-semibold text-gray-900">{item.title}</h3><p className="mt-2 text-sm leading-6 text-gray-600">{item.detail}</p></article>)}</div></PageSection>
+        <PageSection title={p.title} tone="gray"><p className="max-w-3xl text-body leading-relaxed text-gray-600">{p.optionsIntro}</p><div className="mt-5 grid gap-4 md:grid-cols-3">{p.options.map((item: Fact, i: number) => <article key={item.title} style={{ animationDelay: `${i * 80}ms` }} className="corporate-info-card animate-fade-in h-full rounded-2xl border border-gray-200 border-t-2 border-t-heritage-turquoise bg-white p-5 shadow-sm md:p-6"><span className="text-overline text-heritage-turquoise-deep">0{i + 1}</span><h3 className="mt-3 text-lg font-semibold text-gray-900">{item.title}</h3><p className="mt-2 text-sm leading-6 text-gray-600">{item.detail}</p></article>)}</div></PageSection>
         <PageSection title={p.driversTitle}><ul className="grid gap-x-8 md:grid-cols-2">{p.drivers.map((x: string) => <li key={x} className="flex gap-3 border-b border-gray-200 py-3 text-sm leading-6 text-gray-700"><CheckIcon className="mt-1 h-4 w-4 shrink-0 text-heritage-turquoise" aria-hidden="true"/>{x}</li>)}</ul></PageSection>
         <PageSection title={p.optionalTitle} tone="ivory"><ul className="grid gap-x-8 md:grid-cols-2">{p.optional.map((x: string) => <li key={x} className="border-b border-heritage-sand py-3 text-sm leading-6 text-gray-700">{x}</li>)}</ul></PageSection>
         <PageSection title={p.costsTitle}><p className="max-w-4xl text-body text-gray-600">{p.costs}</p></PageSection>
@@ -466,7 +466,7 @@ export default function CorporateWebsiteSubpage({ page, locale }: { page: Corpor
 
       {page === 'faq' && <>
         {p.groups.map((group: FaqGroup, i: number) => <PageSection key={group.title} title={group.title} tone={i % 2 ? 'white' : 'gray'}>
-          <dl className="max-w-4xl divide-y divide-gray-200 border-y border-gray-200">{group.items.map(([question, answer]) => <div key={question} className="py-4"><dt className="font-semibold text-gray-900">{question}</dt><dd className="mt-2 text-body leading-relaxed text-gray-600">{answer}</dd></div>)}</dl>
+          <dl className="grid max-w-5xl gap-3 md:grid-cols-2">{group.items.map(([question, answer], j) => <div key={question} style={{ animationDelay: `${j * 80}ms` }} className="corporate-info-card animate-fade-in rounded-xl border border-gray-200 bg-white p-5 md:p-6"><dt className="flex items-start gap-3 font-semibold leading-snug text-gray-900"><span aria-hidden="true" className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-heritage-turquoise-light text-sm text-heritage-turquoise-deep">?</span>{question}</dt><dd className="mt-3 ps-10 text-sm leading-6 text-gray-600">{answer}</dd></div>)}</dl>
         </PageSection>)}
         <FAQJsonLd faqs={p.groups.flatMap((group: FaqGroup) => group.items.map(([question, answer]) => ({ question, answer })))} />
       </>}
