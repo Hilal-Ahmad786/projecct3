@@ -82,8 +82,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   // Prefer the hand-crafted meta fields (per-locale via mergeServiceTranslation),
   // fall back to the generated defaults for services that don't have them yet.
-  const title = (service as { metaTitle?: string | null }).metaTitle || `${service.name} | PakSoft`;
-  const description =
+  const corporateMeta: Partial<Record<Locale, { title: string; description: string }>> = {
+    en: { title: 'Corporate Website Design & Development | PakSoft', description: 'Plan, design and develop a corporate website with clear content, enquiry tools and an agreed launch scope.' },
+    tr: { title: 'Kurumsal Web Tasarım ve Geliştirme | PakSoft', description: 'İşletmenizi anlatan, müşteri taleplerini kolaylaştıran ve içerik yönetimi sunan kurumsal web siteleri.' },
+  };
+  const revisedMeta = slug === 'corporate-website-design' ? corporateMeta[validLocale] : undefined;
+  const title = revisedMeta?.title || (service as { metaTitle?: string | null }).metaTitle || `${service.name} | PakSoft`;
+  const description = revisedMeta?.description ||
     (service as { metaDescription?: string | null }).metaDescription ||
     truncateAtWord(service.fullDescription || service.shortDescription || service.description || '', 160);
   const path = `/services/${slug}`;
@@ -159,6 +164,19 @@ export default async function ServicePage({ params }: PageProps) {
     }));
   }
 
+  let corporateProject: ServiceDetailData['corporateProject'];
+  if (slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) {
+    const { getPublishedProjectBySlug } = await import('@/lib/database/public-queries');
+    const project = await getPublishedProjectBySlug('sun-container', locale);
+    corporateProject = project ? {
+      client: project.client,
+      industry: project.industry,
+      challenge: project.challenge,
+      description: project.description,
+      solution: project.solution,
+    } : null;
+  }
+
   if (service.parentSlug) {
     parentService = await getParentServiceData(service.parentSlug, locale) as any;
   }
@@ -170,8 +188,19 @@ export default async function ServicePage({ params }: PageProps) {
   // The 'service' object already has merged translations from mergeServiceTranslation()
 
   // Use database content first, then JSON as fallback
-  const serviceName = service.name || jsonContent?.hero?.title || slug;
-  const serviceDescription = service.fullDescription || service.shortDescription || service.description || jsonContent?.hero?.description || '';
+  const corporateOverviewCopy = slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')
+    ? locale === 'tr'
+      ? {
+          name: 'Kurumsal Web Tasarım ve Geliştirme',
+          description: 'İşletmenizi doğru anlatan, müşteri taleplerini toplamanızı kolaylaştıran ve içeriklerinizi yönetmenize olanak tanıyan kurumsal web siteleri tasarlıyor ve geliştiriyoruz.',
+        }
+      : {
+          name: 'Corporate Website Design & Development',
+          description: 'We plan, design and develop corporate websites that present your business clearly, support customer enquiries and help your team manage content.',
+        }
+    : undefined;
+  const serviceName = corporateOverviewCopy?.name || service.name || jsonContent?.hero?.title || slug;
+  const serviceDescription = corporateOverviewCopy?.description || service.fullDescription || service.shortDescription || service.description || jsonContent?.hero?.description || '';
   // Concise variant for the hero (keeps it compact). Falls back to the full
   // description for services that don't have a dedicated shortDescription yet.
   const serviceShortDescription = service.shortDescription || jsonContent?.hero?.description || serviceDescription;
@@ -231,7 +260,7 @@ export default async function ServicePage({ params }: PageProps) {
     features,
     benefits,
     content: {
-      ...content,
+      ...content as ServiceDetailData['content'],
       process,
       faq: faqItems,
       technologies,
@@ -242,6 +271,7 @@ export default async function ServicePage({ params }: PageProps) {
     parentSlug: service.parentSlug || undefined,
     parentService: parentService || undefined,
     subServices: subServices.length > 0 ? subServices : undefined,
+    corporateProject,
     // Pass JSON content for components that need additional data
     _jsonContent: jsonContent as any,
   };
@@ -252,8 +282,8 @@ export default async function ServicePage({ params }: PageProps) {
     <main className="min-h-screen bg-white">
       {/* Structured Data (server-rendered for SEO) */}
       <ServiceJsonLd
-        name={service.name}
-        description={service.fullDescription || service.description || ''}
+        name={serviceName}
+        description={serviceDescription}
         url={`${baseUrl}/${locale}/services/${slug}`}
       />
       <BreadcrumbJsonLd items={breadcrumbItems} />
@@ -263,7 +293,8 @@ export default async function ServicePage({ params }: PageProps) {
       <ServiceDetailClient service={serviceData} />
 
       {/* Internal linking — same-category services (server-rendered <a> links) */}
-      <RelatedServices items={relatedServices} locale={locale} />
+      {!(slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) &&
+        <RelatedServices items={relatedServices} locale={locale} />}
     </main>
   );
 }

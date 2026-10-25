@@ -27,6 +27,7 @@ import { HeroVisual, BgPatternRenderer, DecorationRenderer, type ServiceAnimatio
 import { useTranslations } from '@/hooks/useTranslations';
 import { formatPrice } from '@/lib/currency';
 import { COMPANY_STATS } from '@/config/companyStats';
+import CorporateWebsiteOverview from '@/components/services/CorporateWebsiteOverview';
 
 // ── Types ────────────────────────────────────────────────────────────
 interface ProcessStep {
@@ -103,6 +104,7 @@ export interface ServiceDetailData {
   parentSlug?: string;
   parentService?: ParentServiceInfo;
   subServices?: SubServiceItem[];
+  corporateProject?: { client?: string; industry?: string; challenge?: string; description?: string; solution?: string } | null;
   // JSON content from locale files (if available)
   _jsonContent?: {
     hero?: { eyebrow?: string; title?: string; titleAccent?: string; description?: string; cta?: string; secondaryCta?: string };
@@ -220,6 +222,12 @@ export default function ServiceDetailClient({
     : DEFAULT_WHY_US_BENEFITS;
 
   const show = (key: SectionKey) => !showSections || showSections.includes(key);
+
+  // Keep the richer overview isolated to this service and its fully revised
+  // Turkish and English versions. Other locales retain their existing page.
+  if (service.slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) {
+    return <CorporateWebsiteOverview locale={locale} project={service.corporateProject} />;
+  }
 
   return (
     <>
