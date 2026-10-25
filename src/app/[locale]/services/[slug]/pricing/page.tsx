@@ -50,6 +50,7 @@ export default async function ServicePricingPage({ params }: PageProps) {
         serviceSlug={slug}
         serviceColor={data.service.color}
         hasPackages={hasPackages}
+        quoteDescription={data.service.content.pricingMeta?.note}
       />
       {/* 'pricing' also covers the "starting from" panel for quote-first services */}
       <ServiceDetailClient

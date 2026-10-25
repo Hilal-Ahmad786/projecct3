@@ -483,7 +483,8 @@
       "unity-game-development": "Unity Game Development",
       "unreal-engine-development": "Unreal Engine Development",
       "video-marketing": "Video Marketing",
-      "vr-development": "VR Development"
+      "vr-development": "VR Development",
+      "ikas-development": "ikas Development"
     },
     "subtitle": "Comprehensive digital solutions driving growth and efficiency.",
     "searchPlaceholder": "Search services...",
@@ -3057,6 +3058,16 @@
       "vrDevelopment": {
         "title": "VR Development",
         "description": "Build VR applications for Meta Quest, PSVR, and enterprise headsets."
+      },
+      "ikasDevelopment": {
+        "title": "ikas Development",
+        "description": "ikas store setup, customization, and integration services.",
+        "features": [
+          "Store setup",
+          "Theme customization",
+          "Platform integrations",
+          "Product migration"
+        ]
       }
     },
     "detail": {

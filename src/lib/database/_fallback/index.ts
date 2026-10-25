@@ -14,10 +14,14 @@
 // Re-run `node scripts/bake-fallback-content.mjs` after large content passes
 // so the snapshot tracks the DB.
 import servicesData from './services.json'
+import ikasDevelopmentData from './ikas-development.json'
 import projectsData from './projects.json'
 
 // The JSON is intentionally loosely typed (mirrors Prisma row shapes at runtime).
-const rawServices = servicesData as any[]
+const rawServices = [...servicesData] as any[]
+if (!rawServices.some((service) => service.slug === ikasDevelopmentData.slug)) {
+  rawServices.push(ikasDevelopmentData)
+}
 export const fallbackProjects = projectsData as any[]
 
 // Same merge semantics as mergeServiceTranslation in public-queries.ts:

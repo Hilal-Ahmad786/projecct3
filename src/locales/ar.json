@@ -2766,6 +2766,16 @@
       "vrDevelopment": {
         "title": "تطوير VR",
         "description": "أنشئ تجارب واقع افتراضي غامرة للتدريب والترفيه والمؤسسات."
+      },
+      "ikasDevelopment": {
+        "title": "تطوير متاجر ikas",
+        "description": "إعداد متاجر ikas وتخصيصها وربطها بالأنظمة المناسبة.",
+        "features": [
+          "إعداد المتجر",
+          "تخصيص القالب",
+          "تكامل الأنظمة",
+          "نقل المنتجات"
+        ]
       }
     },
     "detail": {
@@ -6070,7 +6080,8 @@
       "unity-game-development": "تطوير ألعاب Unity",
       "unreal-engine-development": "تطوير Unreal Engine",
       "video-marketing": "تسويق الفيديو",
-      "vr-development": "تطوير VR"
+      "vr-development": "تطوير VR",
+      "ikas-development": "تطوير متاجر ikas"
     },
     "subtitle": "حلول رقمية شاملة تدفع النمو وتعزز الكفاءة.",
     "searchPlaceholder": "ابحث عن الخدمات...",

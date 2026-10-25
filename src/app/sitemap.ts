@@ -133,7 +133,7 @@ function subPagesFor(svc: Record<string, unknown>): string[] {
   if (hasArr(c.process)) subs.push('/process');
   if (hasArr(c.technologies)) subs.push('/technologies');
   if (hasArr(c.faq)) subs.push('/faq');
-  if (hasArr(svc.pricingPackages)) subs.push('/pricing');
+  if (hasArr(svc.pricingPackages) || !!c.pricingMeta) subs.push('/pricing');
   return subs;
 }
 

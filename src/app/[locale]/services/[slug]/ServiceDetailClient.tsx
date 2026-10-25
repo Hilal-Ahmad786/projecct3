@@ -231,7 +231,32 @@ export default function ServiceDetailClient({
       )}
 
       {/* ── 1b. Stats bar — numbers before adjectives ────────────────── */}
-      {show('hero') && <StatsBar accent={accent} />}
+      {show('hero') && service.slug !== 'ikas-development' && <StatsBar accent={accent} />}
+
+      {service.slug === 'ikas-development' && !hideHero && (
+        <nav
+          aria-label={`${service.name} — ${t('services.detail.breadcrumb.services')}`}
+          className="border-y border-gray-100 bg-gray-50/70"
+        >
+          <div className="container mx-auto flex flex-wrap gap-2 px-4 py-4">
+            {[
+              ['features', t('services.detail.breadcrumb.features')],
+              ['process', t('services.detail.breadcrumb.process')],
+              ['technologies', t('services.detail.breadcrumb.techStack')],
+              ['faq', t('services.detail.breadcrumb.faq')],
+              ['pricing', t('services.detail.pricing.title')],
+            ].map(([path, label]) => (
+              <LocalizedLink
+                key={path}
+                href={`/services/${service.slug}/${path}`}
+                className="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:border-heritage-turquoise hover:text-heritage-turquoise focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2"
+              >
+                {label}
+              </LocalizedLink>
+            ))}
+          </div>
+        </nav>
+      )}
 
       {/* ── 2. Portfolio (Recent Projects) ───────────────────────────── */}
       {show('portfolio') && portfolio.length > 0 && <ServicePortfolio portfolio={portfolio} />}
@@ -313,7 +338,7 @@ export default function ServiceDetailClient({
       {show('subServices') && subServices.length > 0 && <SubServicesSection subServices={subServices} />}
 
       {/* ── 10. Social proof — trust signals before the ask ─────────── */}
-      {show('cta') && <SocialProofBanner variant="combined" />}
+      {show('cta') && service.slug !== 'ikas-development' && <SocialProofBanner variant="combined" />}
 
       {/* ── 11. Final CTA band (dark panel, quote + WhatsApp) ───────── */}
       {show('cta') && <ServiceFinalCTA serviceSlug={service.slug} />}
@@ -675,12 +700,14 @@ function HeroSection({
                 <WhatsAppButton source="service_hero" variant="outline" size="lg" />
               </div>
               {/* Response-time microcopy */}
-              <p className="flex items-center gap-1.5 text-sm text-gray-400">
-                <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                {responseMicrocopy}
-              </p>
+              {service.slug !== 'ikas-development' && (
+                <p className="flex items-center gap-1.5 text-sm text-gray-400">
+                  <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  {responseMicrocopy}
+                </p>
+              )}
             </div>
           </motion.div>
 

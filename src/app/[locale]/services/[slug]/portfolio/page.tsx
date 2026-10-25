@@ -56,6 +56,12 @@ export default async function ServicePortfolioPage({ params }: PageProps) {
   const content = service.content as any || {};
   let portfolio = content.portfolio || [];
 
+  // Do not present unrelated company projects as ikas case studies when we
+  // have no verified project content for this service yet.
+  if (slug === 'ikas-development' && portfolio.length === 0) {
+    notFound();
+  }
+
   // Content fallback: services without their own portfolio show real featured
   // projects (Project table) instead of an empty "coming soon" state, enriched
   // with description/technologies and linked to the project page.

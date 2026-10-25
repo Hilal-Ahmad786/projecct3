@@ -7,7 +7,7 @@ export type ServiceEntry = { slug: string; children?: string[] };
 export const servicesByCategory: Record<string, ServiceEntry[]> = {
   web: [
     { slug: 'web-development', children: ['frontend-development', 'backend-development', 'full-stack-development', 'progressive-web-apps', 'headless-cms-development', 'jamstack-development', 'accessibility-compliance', 'blockchain-development', 'code-review-refactoring', 'desktop-application-development', 'real-time-applications'] },
-    { slug: 'e-commerce', children: ['shopify-development', 'woocommerce-development', 'magento-development', 'custom-ecommerce', 'marketplace-development', 'b2b-ecommerce', 'headless-commerce', 'payment-gateway-integration'] },
+    { slug: 'e-commerce', children: ['shopify-development', 'ikas-development', 'woocommerce-development', 'magento-development', 'custom-ecommerce', 'marketplace-development', 'b2b-ecommerce', 'headless-commerce', 'payment-gateway-integration'] },
     { slug: 'mobile-development', children: ['ios-development', 'android-development', 'flutter-development', 'react-native-development', 'cross-platform-apps', 'ar-development', 'unity-game-development', 'unreal-engine-development', 'vr-development', 'ar-experiences', 'virtual-tours'] },
     { slug: 'api-development', children: ['rest-api-development', 'graphql-development', 'third-party-api-integration', 'api-gateway', 'api-rate-limiting-throttling', 'api-security-authentication', 'event-driven-architecture', 'graphql-api-development', 'microservices-architecture', 'technical-documentation'] },
     { slug: 'saas-development', children: ['mvp-development', 'multi-tenant-architecture', 'saas-migration'] },

@@ -2766,6 +2766,16 @@
       "vrDevelopment": {
         "title": "VR-Entwicklung",
         "description": "Erstellen Sie immersive VR-Erlebnisse für Training, Unterhaltung und Enterprise."
+      },
+      "ikasDevelopment": {
+        "title": "ikas Entwicklung",
+        "description": "Einrichtung, Anpassung und Integration von ikas-Shops.",
+        "features": [
+          "Shop-Einrichtung",
+          "Theme-Anpassung",
+          "Systemintegrationen",
+          "Produktübertragung"
+        ]
       }
     },
     "detail": {
@@ -5947,7 +5957,8 @@
       "unity-game-development": "Unity Spieleentwicklung",
       "unreal-engine-development": "Unreal Engine Entwicklung",
       "video-marketing": "Video Marketing",
-      "vr-development": "VR-Entwicklung"
+      "vr-development": "VR-Entwicklung",
+      "ikas-development": "ikas Entwicklung"
     },
     "subtitle": "Umfassende digitale Lösungen für Wachstum und Effizienz.",
     "searchPlaceholder": "Dienste suchen...",

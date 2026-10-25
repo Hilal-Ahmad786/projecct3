@@ -15,9 +15,10 @@ interface Props {
   serviceSlug: string;
   serviceColor?: string | null;
   hasPackages: boolean;
+  quoteDescription?: string;
 }
 
-export default function PricingPageClient({ serviceName, serviceSlug, serviceColor, hasPackages }: Props) {
+export default function PricingPageClient({ serviceName, serviceSlug, serviceColor, hasPackages, quoteDescription }: Props) {
   const { t, dir } = useTranslations();
   const accent = toHeritageHex(serviceColor || undefined);
   const tp = (key: string, fallback: string) => {
@@ -54,7 +55,7 @@ export default function PricingPageClient({ serviceName, serviceSlug, serviceCol
               style={{ borderColor: 'var(--heritage-sand)' }}
             >
               <h2 className="text-headline text-gray-900 mb-3">{tp('quoteTitle', 'Every project is unique')}</h2>
-              <p className="text-body text-gray-600 leading-relaxed mb-6">{tp('quoteDesc', 'Tell us your goals and we will send a detailed proposal within 48 hours.')}</p>
+              <p className="text-body text-gray-600 leading-relaxed mb-6">{quoteDescription || tp('quoteDesc', 'Tell us your goals and we will send a detailed proposal within 48 hours.')}</p>
               <ul className="space-y-3">
                 {['bullet1', 'bullet2', 'bullet3'].map((k, i) => (
                   <motion.li

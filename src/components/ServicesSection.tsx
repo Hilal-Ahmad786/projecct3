@@ -44,6 +44,7 @@ const icons: Record<string, React.ElementType> = {
   'jamstack-development': BoltIcon, 'accessibility-compliance': ShieldCheckIcon,
   'real-time-applications': SignalIcon,
   'e-commerce': ShoppingCartIcon, 'shopify-development': ShoppingCartIcon,
+  'ikas-development': ShoppingCartIcon,
   'woocommerce-development': ShoppingCartIcon, 'magento-development': ShoppingCartIcon,
   'custom-ecommerce': ShoppingCartIcon, 'marketplace-development': TagIcon,
   'b2b-ecommerce': CurrencyDollarIcon,

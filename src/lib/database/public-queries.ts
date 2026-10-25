@@ -25,6 +25,15 @@ const CACHE_OPTS = { revalidate: 86400, tags: ['services'] };
 // quota is nearly exhausted and you'd rather freeze content than go down.
 const forceBaked = () => process.env.FORCE_BAKED_CONTENT === '1';
 
+// ikas Development is maintained in the repository's curated fallback until
+// it is added to the live content database. Keep the public catalog complete
+// without replacing an owner-managed database record if one is created later.
+function withIkasFallback<T extends { slug?: string }>(services: T[], locale?: string): T[] {
+  if (services.some((service) => service.slug === 'ikas-development')) return services;
+  const ikasService = fallbackServiceBySlug('ikas-development', locale);
+  return ikasService ? [...services, ikasService as T] : services;
+}
+
 // Now that public pages are statically prerendered, a DB error at build time
 // would fail the whole deploy (previously these were dynamic, so DB errors were
 // isolated per-request 500s). These helpers swallow DB errors and return a safe
@@ -50,7 +59,7 @@ export const getPublishedServices = unstable_cache(
         orderBy: { order: 'asc' },
       });
       if (!services.length) return fallbackServicesLocalized(locale);
-      return services.map((service) => mergeServiceTranslation(service, locale));
+      return withIkasFallback(services.map((service) => mergeServiceTranslation(service, locale)), locale);
     } catch (err) {
       dbError('getPublishedServices', err);
       return fallbackServicesLocalized(locale);
@@ -103,7 +112,7 @@ export const getServicesForSitemap = unstable_cache(
       }));
     }
     try {
-      return await getPrismaClient().service.findMany({
+      const services = await getPrismaClient().service.findMany({
         where: { status: { in: ['published', 'active'] } },
         select: {
           slug: true,
@@ -120,6 +129,7 @@ export const getServicesForSitemap = unstable_cache(
         },
         orderBy: { order: 'asc' },
       });
+      return withIkasFallback(services);
     } catch (err) {
       dbError('getServicesForSitemap', err);
       return fallbackServices.map((s) => ({
@@ -202,7 +212,8 @@ export const getSubServices = unstable_cache(
         orderBy: { order: 'asc' },
       });
       if (!services.length) return fallbackSubServices(parentSlug, locale);
-      return services.map((service) => mergeServiceTranslation(service, locale));
+      const localizedServices = services.map((service) => mergeServiceTranslation(service, locale));
+      return parentSlug === 'e-commerce' ? withIkasFallback(localizedServices, locale) : localizedServices;
     } catch (err) {
       dbError('getSubServices', err);
       return fallbackSubServices(parentSlug, locale);
@@ -280,11 +291,11 @@ export const getServicesIndex = unstable_cache(
         orderBy: { order: 'asc' },
       });
       if (!services.length) return fallbackServicesLocalized(locale).map(toIndex);
-      return services.map((s: any) => ({
+      return withIkasFallback(services.map((s: any) => ({
         ...toIndex(s),
         name: s.translations?.[0]?.name || s.name,
         shortDescription: s.translations?.[0]?.shortDescription || s.shortDescription || null,
-      }));
+      })), locale);
     } catch (err) {
       dbError('getServicesIndex', err);
       return fallbackServicesLocalized(locale).map(toIndex);

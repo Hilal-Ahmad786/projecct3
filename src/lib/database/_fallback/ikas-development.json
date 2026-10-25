@@ -1,0 +1,727 @@
+{
+  "id": "static-ikas-development",
+  "name": "ikas Store Development",
+  "slug": "ikas-development",
+  "description": "ikas store setup, customization, and integration services.",
+  "shortDescription": "Set up and tailor an ikas store around your products, brand, and day-to-day operations.",
+  "fullDescription": "We help businesses plan and develop online stores on ikas, from initial setup and storefront configuration to theme customization and operational integrations. The work starts with your catalog, sales channels, and the way your team manages orders. We then configure the store, shape its visual presentation, and connect supported payment, shipping, marketplace, or business systems where the required access and platform capabilities are available. If you are moving from another platform, we review product data, URL structure, and the steps needed for a controlled transition. Scope is agreed around your existing setup and requirements; platform features and third-party services remain subject to their own terms and technical limits.",
+  "icon": "shopping-cart",
+  "heroImage": null,
+  "features": [
+    "ikas store setup and catalog configuration",
+    "Theme styling and storefront customization",
+    "Product, category, and content organization",
+    "Supported payment, shipping, and marketplace integrations",
+    "Product data transfer and platform transition planning",
+    "Store testing, handover, and agreed follow-up development"
+  ],
+  "benefits": [
+    "A store setup shaped around your catalog and sales process",
+    "A consistent storefront presentation aligned with your brand",
+    "Integration scope reviewed against available platform capabilities",
+    "A documented handover for the workflows configured in the project"
+  ],
+  "content": {
+    "process": [
+      {
+        "step": 1,
+        "title": "Store and needs review",
+        "description": "We review your catalog, goals, current setup, and the way your team handles orders."
+      },
+      {
+        "step": 2,
+        "title": "Scope and setup plan",
+        "description": "We agree on ikas settings, design needs, data to transfer, and integrations to assess."
+      },
+      {
+        "step": 3,
+        "title": "Store configuration and design",
+        "description": "We configure the store and arrange its theme, pages, categories, and product presentation to the agreed scope."
+      },
+      {
+        "step": 4,
+        "title": "Integrations and checks",
+        "description": "We connect systems with confirmed access and technical support, then test key shopping and order flows."
+      },
+      {
+        "step": 5,
+        "title": "Launch and handover",
+        "description": "We complete the agreed pre-launch checks and walk your team through the settings and workflows covered by the project."
+      }
+    ],
+    "technologies": [
+      {
+        "name": "ikas",
+        "icon": "shopping-cart"
+      },
+      {
+        "name": "HTML & CSS",
+        "icon": "code"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "code"
+      },
+      {
+        "name": "Payment and shipping services",
+        "icon": "credit-card"
+      },
+      {
+        "name": "Marketplace and business system integrations",
+        "icon": "link"
+      }
+    ],
+    "faq": [
+      {
+        "question": "What can be included in an ikas store setup?",
+        "answer": "Depending on scope, work can cover store settings, theme adjustments, pages, catalog structure, core shopping flows, and suitable integrations. We first clarify your needs and the platform capabilities available for the project."
+      },
+      {
+        "question": "Can you customize an existing ikas store?",
+        "answer": "Yes. We review the existing setup and available theme options, then plan visual changes or development within the current ikas features and agreed project scope."
+      },
+      {
+        "question": "Can you connect payment, shipping, or marketplace services?",
+        "answer": "We can help configure relevant services when the required access and technical support are available. Each provider controls its own terms, availability, and fees."
+      },
+      {
+        "question": "Can you move my products from another platform to ikas?",
+        "answer": "We review product and category data, then plan the transfer method and validation steps. URLs, images, variants, and export options in the existing platform can affect the scope."
+      },
+      {
+        "question": "Does ikas development include SEO work?",
+        "answer": "Depending on scope, we can review page titles, descriptions, redirect needs, and basic technical checks. Search visibility is not guaranteed, and existing URLs and content should be reviewed before a migration."
+      },
+      {
+        "question": "How long does an ikas store project take?",
+        "answer": "Timing depends on catalog size, content readiness, design requests, integrations, and any data transfer. We share a project plan after the scope and required materials are clear."
+      },
+      {
+        "question": "Can you help after the store launches?",
+        "answer": "Post-launch maintenance or development can be scoped separately. We agree on needs and working arrangements for content changes, new integrations, or platform updates."
+      },
+      {
+        "question": "How is ikas development priced?",
+        "answer": "Pricing depends on setup and design scope, product transfer, integrations, and custom development needs. We review the requirements before providing a project scope and quote."
+      }
+    ],
+    "animation": {
+      "heroVisual": "product-grid",
+      "bgPattern": "grid",
+      "decorations": "circles",
+      "motion": "float",
+      "featureStyle": "icon-top",
+      "processLayout": "timeline",
+      "particleCount": 18,
+      "glowIntensity": "low",
+      "colorScheme": "primary",
+      "animationSpeed": "normal",
+      "primaryColor": "#0F766E",
+      "secondaryColor": "#14B8A6",
+      "accentColor": "#0D9488"
+    },
+    "pricingMeta": {
+      "note": "Pricing is scoped to your store setup, design, catalog transfer, integrations, and any custom development. We confirm the scope before preparing a quote.",
+      "factors": [
+        "Store setup and theme changes",
+        "Catalog size and data transfer",
+        "Payment, shipping, and marketplace connections",
+        "Custom development and agreed support"
+      ]
+    }
+  },
+  "status": "published",
+  "featured": false,
+  "order": 97,
+  "color": "#0F766E",
+  "parentSlug": "e-commerce",
+  "category": "web-software",
+  "isParent": false,
+  "pricingPackages": [],
+  "translations": [
+    {
+      "locale": "tr",
+      "name": "ikas Geliştirme",
+      "shortDescription": "Ürünlerinize, markanıza ve günlük operasyonlarınıza uygun ikas mağazaları kurup özelleştiriyoruz.",
+      "fullDescription": "ikas üzerinde online mağaza kurulumundan tema özelleştirmeye ve operasyonel bağlantılara kadar e-ticaret geliştirme desteği sunuyoruz. Çalışmaya ürün kataloğunuzu, satış kanallarınızı ve ekibinizin sipariş süreçlerini anlayarak başlarız. Ardından mağaza ayarlarını yapılandırır, görsel sunumu markanıza göre düzenler ve gerekli erişim ile platform özellikleri uygunsa ödeme, kargo, pazaryeri veya iş sistemlerini bağlarız. Başka bir altyapıdan geçiş planlanıyorsa ürün verilerini, URL yapısını ve kontrollü aktarım adımlarını da inceleriz. Kapsamı mevcut kurulumunuza ve ihtiyaçlarınıza göre birlikte belirleriz; platform özellikleri ve üçüncü taraf hizmetler kendi koşul ve teknik sınırlarına tabidir.",
+      "features": [
+        "ikas mağaza kurulumu ve katalog yapılandırması",
+        "Tema düzenleme ve mağaza arayüzü özelleştirme",
+        "Ürün, kategori ve içerik organizasyonu",
+        "Uygun ödeme, kargo ve pazaryeri entegrasyonları",
+        "Ürün verisi aktarımı ve platform geçişi planlaması",
+        "Mağaza testleri, devir ve kararlaştırılan geliştirme desteği"
+      ],
+      "benefits": [
+        "Ürün kataloğunuza ve satış sürecinize göre şekillenen mağaza kurulumu",
+        "Markanızla uyumlu bir mağaza sunumu",
+        "Entegrasyon kapsamının platform özelliklerine göre değerlendirilmesi",
+        "Proje kapsamında yapılandırılan iş akışları için dokümante devir"
+      ],
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "İhtiyaç ve mağaza analizi",
+            "description": "Ürün yapınızı, hedeflerinizi, mevcut altyapınızı ve ekip iş akışınızı birlikte değerlendiririz."
+          },
+          {
+            "step": 2,
+            "title": "Kapsam ve kurulum planı",
+            "description": "ikas ayarlarını, tasarım ihtiyaçlarını, aktarılacak verileri ve gerekli entegrasyonları netleştiririz."
+          },
+          {
+            "step": 3,
+            "title": "Mağaza yapılandırma ve tasarım",
+            "description": "Mağaza yapısını kurar; tema, sayfalar, kategoriler ve ürün sunumunu kararlaştırılan kapsama göre düzenleriz."
+          },
+          {
+            "step": 4,
+            "title": "Entegrasyon ve kontrol",
+            "description": "Erişimi ve teknik uygunluğu doğrulanan sistemleri bağlar, temel alışveriş ve sipariş akışlarını test ederiz."
+          },
+          {
+            "step": 5,
+            "title": "Yayın ve devir",
+            "description": "Yayın öncesi kontrol listesini tamamlar, mağaza kullanımını ve proje kapsamında yapılan ayarları ekibinize aktarırız."
+          }
+        ],
+        "technologies": [
+          {
+            "name": "ikas",
+            "icon": "shopping-cart"
+          },
+          {
+            "name": "HTML & CSS",
+            "icon": "code"
+          },
+          {
+            "name": "JavaScript",
+            "icon": "code"
+          },
+          {
+            "name": "Ödeme ve kargo sistemleri",
+            "icon": "credit-card"
+          },
+          {
+            "name": "Pazaryeri ve iş sistemi entegrasyonları",
+            "icon": "link"
+          }
+        ],
+        "faq": [
+          {
+            "question": "ikas mağaza kurulumu kapsamında neler yapılabilir?",
+            "answer": "Kapsama göre mağaza ayarları, tema düzenlemeleri, sayfalar, kategori ve ürün yapısı, temel alışveriş akışları ve uygun entegrasyonlar ele alınabilir. Başlangıçta ihtiyaçları ve platform özelliklerini birlikte netleştiririz."
+          },
+          {
+            "question": "Mevcut bir ikas mağazasını özelleştirebilir misiniz?",
+            "answer": "Evet. Mevcut mağazanın yapısını ve erişilebilir tema seçeneklerini inceler, görsel düzenleme veya geliştirme ihtiyaçlarını mevcut ikas özellikleri ve proje kapsamı içinde planlarız."
+          },
+          {
+            "question": "ikas mağazama ödeme, kargo veya pazaryeri bağlantıları ekleyebilir misiniz?",
+            "answer": "Gerekli erişimler ve teknik destek mevcutsa ilgili ödeme, kargo ve pazaryeri bağlantılarının kurulumuna yardımcı olabiliriz. Her sağlayıcının koşulları, kullanılabilirliği ve ücretleri kendi hizmetine bağlıdır."
+          },
+          {
+            "question": "Ürünlerimi başka bir e-ticaret altyapısından ikas’a taşıyabilir misiniz?",
+            "answer": "Ürün ve kategori verilerini inceler, aktarım yöntemini ve doğrulama adımlarını planlarız. URL’ler, görseller, varyantlar ve eski sistemin dışa aktarma imkânları geçiş kapsamını etkileyebilir."
+          },
+          {
+            "question": "ikas mağaza çalışmaları SEO’yu kapsıyor mu?",
+            "answer": "Proje kapsamına göre sayfa başlıkları, açıklamalar, yönlendirme ihtiyaçları ve temel teknik kontrolleri gözden geçirebiliriz. Arama görünürlüğü garanti edilemez; geçiş öncesi mevcut URL ve içeriklerin incelenmesi önemlidir."
+          },
+          {
+            "question": "Bir ikas mağaza projesi ne kadar sürer?",
+            "answer": "Süre; ürün sayısı, içeriklerin hazır olması, tasarım talepleri, entegrasyonlar ve varsa veri aktarımına göre değişir. Kapsam netleştikten sonra proje planını ve gerekli hazırlıkları paylaşırız."
+          },
+          {
+            "question": "Mağaza yayınlandıktan sonra destek alabilir miyim?",
+            "answer": "Yayın sonrası bakım veya geliştirme desteği ayrıca kapsamlandırılabilir. İçerik güncellemeleri, yeni entegrasyonlar ve platform tarafındaki değişiklikler için ihtiyaçları ve çalışma biçimini önceden belirleriz."
+          },
+          {
+            "question": "ikas hizmeti için fiyatlandırma nasıl belirleniyor?",
+            "answer": "Ücret; kurulum ve tasarım kapsamına, ürün aktarımına, entegrasyonlara ve özel geliştirme ihtiyacına göre belirlenir. İhtiyaçları inceledikten sonra kapsamı ve teklifi ayrıca paylaşırız."
+          }
+        ],
+        "pricingMeta": {
+          "note": "Fiyat; mağaza kurulumu, tasarım, ürün aktarımı, entegrasyonlar ve özel geliştirme kapsamına göre belirlenir. Teklif öncesinde kapsamı birlikte netleştiririz.",
+          "factors": [
+            "Mağaza kurulumu ve tema düzenlemeleri",
+            "Ürün kataloğunun büyüklüğü ve veri aktarımı",
+            "Ödeme, kargo ve pazaryeri bağlantıları",
+            "Özel geliştirme ve kararlaştırılan destek"
+          ]
+        }
+      },
+      "metaTitle": "ikas Geliştirme ve Mağaza Kurulumu | PakSoft",
+      "metaDescription": "ikas mağaza kurulumu, tema özelleştirme, ürün aktarımı ve uygun sistem entegrasyonları için e-ticaret geliştirme hizmetleri."
+    },
+    {
+      "locale": "en",
+      "name": "ikas Development",
+      "shortDescription": "Set up and tailor an ikas store around your products, brand, and day-to-day operations.",
+      "fullDescription": "We help businesses plan and develop online stores on ikas, from initial setup and storefront configuration to theme customization and operational integrations. The work starts with your catalog, sales channels, and the way your team manages orders. We then configure the store, shape its visual presentation, and connect supported payment, shipping, marketplace, or business systems where the required access and platform capabilities are available. If you are moving from another platform, we review product data, URL structure, and the steps needed for a controlled transition. Scope is agreed around your existing setup and requirements; platform features and third-party services remain subject to their own terms and technical limits.",
+      "features": [
+        "ikas store setup and catalog configuration",
+        "Theme styling and storefront customization",
+        "Product, category, and content organization",
+        "Supported payment, shipping, and marketplace integrations",
+        "Product data transfer and platform transition planning",
+        "Store testing, handover, and agreed follow-up development"
+      ],
+      "benefits": [
+        "A store setup shaped around your catalog and sales process",
+        "A consistent storefront presentation aligned with your brand",
+        "Integration scope reviewed against available platform capabilities",
+        "A documented handover for the workflows configured in the project"
+      ],
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Store and needs review",
+            "description": "We review your catalog, goals, current setup, and the way your team handles orders."
+          },
+          {
+            "step": 2,
+            "title": "Scope and setup plan",
+            "description": "We agree on ikas settings, design needs, data to transfer, and integrations to assess."
+          },
+          {
+            "step": 3,
+            "title": "Store configuration and design",
+            "description": "We configure the store and arrange its theme, pages, categories, and product presentation to the agreed scope."
+          },
+          {
+            "step": 4,
+            "title": "Integrations and checks",
+            "description": "We connect systems with confirmed access and technical support, then test key shopping and order flows."
+          },
+          {
+            "step": 5,
+            "title": "Launch and handover",
+            "description": "We complete the agreed pre-launch checks and walk your team through the settings and workflows covered by the project."
+          }
+        ],
+        "technologies": [
+          {
+            "name": "ikas",
+            "icon": "shopping-cart"
+          },
+          {
+            "name": "HTML & CSS",
+            "icon": "code"
+          },
+          {
+            "name": "JavaScript",
+            "icon": "code"
+          },
+          {
+            "name": "Payment and shipping services",
+            "icon": "credit-card"
+          },
+          {
+            "name": "Marketplace and business system integrations",
+            "icon": "link"
+          }
+        ],
+        "faq": [
+          {
+            "question": "What can be included in an ikas store setup?",
+            "answer": "Depending on scope, work can cover store settings, theme adjustments, pages, catalog structure, core shopping flows, and suitable integrations. We first clarify your needs and the platform capabilities available for the project."
+          },
+          {
+            "question": "Can you customize an existing ikas store?",
+            "answer": "Yes. We review the existing setup and available theme options, then plan visual changes or development within the current ikas features and agreed project scope."
+          },
+          {
+            "question": "Can you connect payment, shipping, or marketplace services?",
+            "answer": "We can help configure relevant services when the required access and technical support are available. Each provider controls its own terms, availability, and fees."
+          },
+          {
+            "question": "Can you move my products from another platform to ikas?",
+            "answer": "We review product and category data, then plan the transfer method and validation steps. URLs, images, variants, and export options in the existing platform can affect the scope."
+          },
+          {
+            "question": "Does ikas development include SEO work?",
+            "answer": "Depending on scope, we can review page titles, descriptions, redirect needs, and basic technical checks. Search visibility is not guaranteed, and existing URLs and content should be reviewed before a migration."
+          },
+          {
+            "question": "How long does an ikas store project take?",
+            "answer": "Timing depends on catalog size, content readiness, design requests, integrations, and any data transfer. We share a project plan after the scope and required materials are clear."
+          },
+          {
+            "question": "Can you help after the store launches?",
+            "answer": "Post-launch maintenance or development can be scoped separately. We agree on needs and working arrangements for content changes, new integrations, or platform updates."
+          },
+          {
+            "question": "How is ikas development priced?",
+            "answer": "Pricing depends on setup and design scope, product transfer, integrations, and custom development needs. We review the requirements before providing a project scope and quote."
+          }
+        ],
+        "pricingMeta": {
+          "note": "Pricing is scoped to your store setup, design, catalog transfer, integrations, and any custom development. We confirm the scope before preparing a quote.",
+          "factors": [
+            "Store setup and theme changes",
+            "Catalog size and data transfer",
+            "Payment, shipping, and marketplace connections",
+            "Custom development and agreed support"
+          ]
+        }
+      },
+      "metaTitle": "ikas Store Setup and Development | PakSoft",
+      "metaDescription": "ikas store setup, theme customization, product transfer, and suitable system integration services for online businesses."
+    },
+    {
+      "locale": "de",
+      "name": "ikas Entwicklung",
+      "shortDescription": "Wir richten einen ikas-Shop passend zu Ihren Produkten, Ihrer Marke und Ihren Abläufen ein.",
+      "fullDescription": "Wir unterstützen Unternehmen bei Planung und Entwicklung von Online-Shops mit ikas – von der Einrichtung über die Gestaltung bis zu passenden Integrationen. Zu Beginn betrachten wir Ihr Sortiment, Ihre Vertriebskanäle und die Abläufe Ihres Teams. Danach konfigurieren wir den Shop, passen die Darstellung an Ihre Marke an und verbinden geeignete Zahlungs-, Versand-, Marktplatz- oder Geschäftssysteme, sofern Zugänge und Plattformfunktionen dies ermöglichen. Bei einem Plattformwechsel prüfen wir Produktdaten, URL-Struktur und die notwendigen Schritte für eine kontrollierte Übertragung. Der Umfang richtet sich nach Ihrem bestehenden Setup und Ihren Anforderungen; Plattformfunktionen und Drittanbieter unterliegen ihren eigenen Bedingungen und technischen Grenzen.",
+      "features": [
+        "Einrichtung des ikas-Shops und Sortiments",
+        "Gestaltung und Anpassung des Shop-Themes",
+        "Strukturierung von Produkten, Kategorien und Inhalten",
+        "Geeignete Zahlungs-, Versand- und Marktplatzintegrationen",
+        "Planung von Datenübertragung und Plattformwechsel",
+        "Tests, Übergabe und vereinbarte Weiterentwicklung"
+      ],
+      "benefits": [
+        "Shop-Einrichtung passend zu Sortiment und Verkaufsabläufen",
+        "Ein stimmiger Shop-Auftritt im Einklang mit Ihrer Marke",
+        "Prüfung der Integrationen anhand verfügbarer Plattformfunktionen",
+        "Dokumentierte Übergabe der im Projekt eingerichteten Abläufe"
+      ],
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Bedarf und Shop prüfen",
+            "description": "Wir betrachten Sortiment, Ziele, vorhandene Systeme und die Bestellabläufe Ihres Teams."
+          },
+          {
+            "step": 2,
+            "title": "Umfang und Einrichtung planen",
+            "description": "Wir stimmen ikas-Einstellungen, Gestaltungsbedarf, zu übertragende Daten und mögliche Integrationen ab."
+          },
+          {
+            "step": 3,
+            "title": "Shop gestalten und konfigurieren",
+            "description": "Wir richten den Shop ein und gestalten Theme, Seiten, Kategorien und Produktdarstellung gemäß dem vereinbarten Umfang."
+          },
+          {
+            "step": 4,
+            "title": "Integrationen und Tests",
+            "description": "Wir verbinden Systeme mit bestätigtem Zugang und technischer Unterstützung und testen wichtige Kauf- und Bestellabläufe."
+          },
+          {
+            "step": 5,
+            "title": "Veröffentlichung und Übergabe",
+            "description": "Wir führen die vereinbarten Prüfungen vor dem Start durch und erklären Ihrem Team die eingerichteten Einstellungen und Abläufe."
+          }
+        ],
+        "technologies": [
+          {
+            "name": "ikas",
+            "icon": "shopping-cart"
+          },
+          {
+            "name": "HTML & CSS",
+            "icon": "code"
+          },
+          {
+            "name": "JavaScript",
+            "icon": "code"
+          },
+          {
+            "name": "Zahlungs- und Versanddienste",
+            "icon": "credit-card"
+          },
+          {
+            "name": "Marktplatz- und Geschäftssystem-Integrationen",
+            "icon": "link"
+          }
+        ],
+        "faq": [
+          {
+            "question": "Was kann eine ikas-Shop-Einrichtung umfassen?",
+            "answer": "Je nach Umfang können Shop-Einstellungen, Theme-Anpassungen, Seiten, Sortimentsstruktur, wichtige Kaufabläufe und geeignete Integrationen enthalten sein. Zunächst klären wir Anforderungen und verfügbare Plattformfunktionen."
+          },
+          {
+            "question": "Können Sie einen bestehenden ikas-Shop anpassen?",
+            "answer": "Ja. Wir prüfen die vorhandene Einrichtung und verfügbaren Theme-Optionen und planen Gestaltung oder Entwicklung passend zu den ikas-Funktionen und dem vereinbarten Umfang."
+          },
+          {
+            "question": "Können Sie Zahlungs-, Versand- oder Marktplatzdienste verbinden?",
+            "answer": "Bei vorhandenem Zugang und technischer Unterstützung helfen wir bei der Einrichtung geeigneter Dienste. Bedingungen, Verfügbarkeit und Gebühren legt der jeweilige Anbieter fest."
+          },
+          {
+            "question": "Können Sie Produkte von einer anderen Plattform zu ikas übertragen?",
+            "answer": "Wir prüfen Produkt- und Kategoriedaten und planen Übertragungsmethode sowie Kontrollen. URLs, Bilder, Varianten und Exportmöglichkeiten des bisherigen Systems können den Umfang beeinflussen."
+          },
+          {
+            "question": "Gehört SEO zur ikas-Entwicklung?",
+            "answer": "Je nach Projekt können wir Seitentitel, Beschreibungen, Weiterleitungen und grundlegende technische Aspekte prüfen. Sichtbarkeit in Suchmaschinen ist nicht garantiert; bestehende URLs und Inhalte sollten vor einem Wechsel geprüft werden."
+          },
+          {
+            "question": "Wie lange dauert ein ikas-Projekt?",
+            "answer": "Die Dauer hängt von Sortiment, fertigen Inhalten, Gestaltungswünschen, Integrationen und einer möglichen Datenübertragung ab. Nach Klärung des Umfangs erstellen wir einen Projektplan."
+          },
+          {
+            "question": "Bieten Sie Unterstützung nach dem Start an?",
+            "answer": "Wartung oder Weiterentwicklung nach dem Start kann separat vereinbart werden. Wir legen den Bedarf und die Zusammenarbeit für Inhaltsänderungen, Integrationen oder Plattformupdates fest."
+          },
+          {
+            "question": "Wie wird ikas-Entwicklung kalkuliert?",
+            "answer": "Die Kosten hängen von Einrichtung und Gestaltung, Datenübertragung, Integrationen und individuellen Entwicklungen ab. Nach Prüfung des Bedarfs erstellen wir Umfang und Angebot."
+          }
+        ],
+        "pricingMeta": {
+          "note": "Der Preis richtet sich nach Shop-Einrichtung, Gestaltung, Datenübertragung, Integrationen und individuellen Entwicklungen. Vor einem Angebot stimmen wir den Umfang gemeinsam ab.",
+          "factors": [
+            "Shop-Einrichtung und Theme-Anpassungen",
+            "Umfang des Sortiments und Datenübertragung",
+            "Zahlungs-, Versand- und Marktplatzverbindungen",
+            "Individuelle Entwicklung und vereinbarte Unterstützung"
+          ]
+        }
+      },
+      "metaTitle": "ikas Shop-Einrichtung und Entwicklung | PakSoft",
+      "metaDescription": "Einrichtung und Anpassung von ikas-Shops, Produktübertragung und passende Systemintegrationen für Online-Unternehmen."
+    },
+    {
+      "locale": "ur",
+      "name": "ikas اسٹور ڈیولپمنٹ",
+      "shortDescription": "آپ کی مصنوعات، برانڈ اور روزمرہ کے کام کے مطابق ikas اسٹور قائم اور ترتیب دیں۔",
+      "fullDescription": "ہم کاروباروں کو ikas پر آن لائن اسٹور کی منصوبہ بندی اور ڈیولپمنٹ میں مدد دیتے ہیں، جس میں ابتدائی سیٹ اپ، اسٹور کی ترتیب، تھیم میں تبدیلی اور موزوں انضمام شامل ہو سکتے ہیں۔ پہلے ہم آپ کی مصنوعات، فروخت کے ذرائع اور آرڈر کے طریقۂ کار کو سمجھتے ہیں۔ پھر اسٹور ترتیب دیتے، برانڈ کے مطابق اس کی پیشکش بہتر کرتے اور دستیاب رسائی اور پلیٹ فارم کی سہولت کے مطابق ادائیگی، ترسیل، مارکیٹ پلیس یا کاروباری نظام جوڑتے ہیں۔ اگر آپ کسی دوسرے پلیٹ فارم سے منتقل ہو رہے ہوں تو مصنوعات کے ڈیٹا، یو آر ایل اور منتقلی کے مراحل کا جائزہ لیتے ہیں۔ دائرۂ کار آپ کے موجودہ سیٹ اپ اور ضروریات کے مطابق طے ہوتا ہے؛ پلیٹ فارم اور تیسرے فریق کی خدمات اپنی شرائط اور تکنیکی حدود کے تابع ہیں۔",
+      "features": [
+        "ikas اسٹور سیٹ اپ اور مصنوعات کی ترتیب",
+        "تھیم اور اسٹور کے ظاہری ڈیزائن میں تخصیص",
+        "مصنوعات، زمروں اور مواد کی تنظیم",
+        "موزوں ادائیگی، ترسیل اور مارکیٹ پلیس انضمام",
+        "ڈیٹا منتقلی اور پلیٹ فارم تبدیلی کی منصوبہ بندی",
+        "اسٹور کی جانچ، حوالگی اور طے شدہ مزید ڈیولپمنٹ"
+      ],
+      "benefits": [
+        "مصنوعات اور فروخت کے عمل کے مطابق اسٹور کی ترتیب",
+        "برانڈ سے ہم آہنگ اسٹور کی پیشکش",
+        "دستیاب پلیٹ فارم سہولت کے مطابق انضمام کا جائزہ",
+        "منصوبے میں ترتیب دیے گئے طریقۂ کار کی دستاویزی حوالگی"
+      ],
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "ضروریات اور اسٹور کا جائزہ",
+            "description": "ہم مصنوعات، اہداف، موجودہ نظام اور آرڈر کے طریقۂ کار کا جائزہ لیتے ہیں۔"
+          },
+          {
+            "step": 2,
+            "title": "دائرۂ کار اور سیٹ اپ کی منصوبہ بندی",
+            "description": "ہم ikas کی ترتیبات، ڈیزائن، منتقل کیے جانے والے ڈیٹا اور ممکنہ انضمام طے کرتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "اسٹور کی ترتیب اور ڈیزائن",
+            "description": "ہم متفقہ دائرۂ کار کے مطابق تھیم، صفحات، زمروں اور مصنوعات کی پیشکش ترتیب دیتے ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "انضمام اور جانچ",
+            "description": "مطلوبہ رسائی اور تکنیکی سہولت کی تصدیق کے بعد نظام جوڑ کر خریداری اور آرڈر کے اہم مراحل جانچتے ہیں۔"
+          },
+          {
+            "step": 5,
+            "title": "اشاعت اور حوالگی",
+            "description": "ہم طے شدہ اشاعت سے پہلے کی جانچ مکمل کرتے اور ٹیم کو ترتیب دیے گئے اسٹور اور طریقۂ کار سے آگاہ کرتے ہیں۔"
+          }
+        ],
+        "technologies": [
+          {
+            "name": "ikas",
+            "icon": "shopping-cart"
+          },
+          {
+            "name": "HTML & CSS",
+            "icon": "code"
+          },
+          {
+            "name": "JavaScript",
+            "icon": "code"
+          },
+          {
+            "name": "ادائیگی اور ترسیل کی خدمات",
+            "icon": "credit-card"
+          },
+          {
+            "name": "مارکیٹ پلیس اور کاروباری نظام کے انضمام",
+            "icon": "link"
+          }
+        ],
+        "faq": [
+          {
+            "question": "ikas اسٹور سیٹ اپ میں کیا شامل ہو سکتا ہے؟",
+            "answer": "دائرۂ کار کے مطابق اسٹور کی ترتیبات، تھیم میں تبدیلی، صفحات، مصنوعات اور زمروں کی ترتیب، خریداری کے بنیادی مراحل اور موزوں انضمام شامل ہو سکتے ہیں۔ پہلے ضروریات اور دستیاب پلیٹ فارم سہولت واضح کرتے ہیں۔"
+          },
+          {
+            "question": "کیا آپ موجودہ ikas اسٹور میں تبدیلی کر سکتے ہیں؟",
+            "answer": "جی ہاں۔ ہم موجودہ سیٹ اپ اور دستیاب تھیم کے اختیارات دیکھ کر ikas کی سہولت اور طے شدہ منصوبے کے مطابق ڈیزائن یا ڈیولپمنٹ کی منصوبہ بندی کرتے ہیں۔"
+          },
+          {
+            "question": "کیا ادائیگی، ترسیل یا مارکیٹ پلیس خدمات منسلک ہو سکتی ہیں؟",
+            "answer": "ضروری رسائی اور تکنیکی سہولت موجود ہو تو ہم متعلقہ خدمات ترتیب دینے میں مدد کر سکتے ہیں۔ ہر فراہم کنندہ اپنی شرائط، دستیابی اور فیس خود طے کرتا ہے۔"
+          },
+          {
+            "question": "کیا دوسری ویب سائٹ سے مصنوعات ikas میں منتقل ہو سکتی ہیں؟",
+            "answer": "ہم مصنوعات اور زمروں کے ڈیٹا کا جائزہ لے کر منتقلی اور تصدیق کے مراحل طے کرتے ہیں۔ یو آر ایل، تصاویر، اقسام اور پرانے نظام کے برآمدی اختیارات دائرۂ کار پر اثر انداز ہو سکتے ہیں۔"
+          },
+          {
+            "question": "کیا ikas ڈیولپمنٹ میں SEO شامل ہے؟",
+            "answer": "منصوبے کے مطابق ہم صفحے کے عنوانات، تفصیل، ری ڈائریکٹس اور بنیادی تکنیکی امور دیکھ سکتے ہیں۔ تلاش میں پوزیشن کی ضمانت نہیں دی جاتی؛ منتقلی سے پہلے موجودہ یو آر ایل اور مواد کا جائزہ ضروری ہے۔"
+          },
+          {
+            "question": "ikas اسٹور بنانے میں کتنا وقت لگتا ہے؟",
+            "answer": "وقت مصنوعات کی تعداد، مواد کی تیاری، ڈیزائن، انضمام اور ڈیٹا منتقلی کے مطابق بدلتا ہے۔ دائرۂ کار واضح ہونے کے بعد ہم منصوبہ اور درکار مواد بتاتے ہیں۔"
+          },
+          {
+            "question": "کیا اسٹور جاری ہونے کے بعد بھی مدد دستیاب ہے؟",
+            "answer": "جاری ہونے کے بعد دیکھ بھال یا مزید ڈیولپمنٹ الگ سے طے کی جا سکتی ہے۔ مواد کی تبدیلی، نئے انضمام یا پلیٹ فارم اپ ڈیٹس کے لیے ضرورت اور کام کا طریقہ پہلے واضح کیا جاتا ہے۔"
+          },
+          {
+            "question": "ikas ڈیولپمنٹ کی قیمت کیسے طے ہوتی ہے؟",
+            "answer": "قیمت سیٹ اپ اور ڈیزائن، مصنوعات کی منتقلی، انضمام اور مخصوص ڈیولپمنٹ کی ضرورت پر منحصر ہے۔ ضروریات دیکھنے کے بعد دائرۂ کار اور پیشکش فراہم کی جاتی ہے۔"
+          }
+        ],
+        "pricingMeta": {
+          "note": "قیمت اسٹور سیٹ اپ، ڈیزائن، مصنوعات کی منتقلی، انضمام اور مخصوص ڈیولپمنٹ کے دائرۂ کار کے مطابق طے ہوتی ہے۔ پیشکش سے پہلے ہم دائرۂ کار واضح کرتے ہیں۔",
+          "factors": [
+            "اسٹور سیٹ اپ اور تھیم میں تبدیلی",
+            "مصنوعات کی تعداد اور ڈیٹا کی منتقلی",
+            "ادائیگی، ترسیل اور مارکیٹ پلیس روابط",
+            "مخصوص ڈیولپمنٹ اور طے شدہ معاونت"
+          ]
+        }
+      },
+      "metaTitle": "ikas اسٹور سیٹ اپ اور ڈیولپمنٹ | PakSoft",
+      "metaDescription": "آن لائن کاروبار کے لیے ikas اسٹور سیٹ اپ، تھیم میں تخصیص، مصنوعات کی منتقلی اور موزوں نظاموں کا انضمام۔"
+    },
+    {
+      "locale": "ar",
+      "name": "تطوير متاجر ikas",
+      "shortDescription": "إعداد متجر ikas وتخصيصه بما يناسب منتجاتك وعلامتك التجارية وسير العمل اليومي.",
+      "fullDescription": "نساعد الشركات على تخطيط وتطوير المتاجر الإلكترونية باستخدام ikas، بدءًا من الإعداد الأولي وتكوين واجهة المتجر وصولًا إلى تخصيص القالب والتكاملات المناسبة. نبدأ بمراجعة المنتجات وقنوات البيع وطريقة إدارة فريقك للطلبات. ثم نهيئ المتجر ونضبط مظهره بما يلائم علامتك التجارية، ونربط خدمات الدفع أو الشحن أو الأسواق أو أنظمة الأعمال عندما تتوفر الصلاحيات وإمكانات المنصة اللازمة. وإذا كنت تنتقل من منصة أخرى، نراجع بيانات المنتجات وبنية الروابط وخطوات الانتقال المنظم. يُحدد النطاق وفق إعدادك الحالي واحتياجاتك؛ وتظل ميزات المنصة وخدمات الجهات الخارجية خاضعة لشروطها وحدودها التقنية.",
+      "features": [
+        "إعداد متجر ikas وتنظيم المنتجات",
+        "تنسيق القالب وتخصيص واجهة المتجر",
+        "تنظيم المنتجات والفئات والمحتوى",
+        "تكاملات الدفع والشحن والأسواق المتاحة",
+        "تخطيط نقل البيانات والانتقال بين المنصات",
+        "اختبار المتجر وتسليمه والتطوير المتفق عليه لاحقًا"
+      ],
+      "benefits": [
+        "إعداد متجر يتوافق مع المنتجات وآلية البيع",
+        "واجهة متجر منسجمة مع العلامة التجارية",
+        "تقييم التكاملات وفق إمكانات المنصة المتاحة",
+        "تسليم موثق لسير العمل الذي يشمله المشروع"
+      ],
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "مراجعة الاحتياجات والمتجر",
+            "description": "نراجع المنتجات والأهداف والأنظمة الحالية وطريقة إدارة الفريق للطلبات."
+          },
+          {
+            "step": 2,
+            "title": "تحديد النطاق وخطة الإعداد",
+            "description": "نتفق على إعدادات ikas واحتياجات التصميم والبيانات المطلوب نقلها والتكاملات المناسبة."
+          },
+          {
+            "step": 3,
+            "title": "تهيئة المتجر وتصميمه",
+            "description": "نعد المتجر وننظم القالب والصفحات والفئات وعرض المنتجات وفق النطاق المتفق عليه."
+          },
+          {
+            "step": 4,
+            "title": "التكامل والاختبار",
+            "description": "نربط الأنظمة بعد تأكيد الصلاحيات والدعم التقني، ثم نختبر مسارات الشراء والطلبات الأساسية."
+          },
+          {
+            "step": 5,
+            "title": "الإطلاق والتسليم",
+            "description": "نكمل الفحوصات المتفق عليها قبل الإطلاق ونشرح للفريق الإعدادات وسير العمل الذي شمله المشروع."
+          }
+        ],
+        "technologies": [
+          {
+            "name": "ikas",
+            "icon": "shopping-cart"
+          },
+          {
+            "name": "HTML & CSS",
+            "icon": "code"
+          },
+          {
+            "name": "JavaScript",
+            "icon": "code"
+          },
+          {
+            "name": "خدمات الدفع والشحن",
+            "icon": "credit-card"
+          },
+          {
+            "name": "تكاملات الأسواق وأنظمة الأعمال",
+            "icon": "link"
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما الذي يمكن أن يشمله إعداد متجر ikas؟",
+            "answer": "قد يشمل النطاق إعدادات المتجر وتعديلات القالب والصفحات وتنظيم المنتجات والفئات ومسارات الشراء الأساسية والتكاملات المناسبة. نحدد الاحتياجات وإمكانات المنصة المتاحة في البداية."
+          },
+          {
+            "question": "هل يمكنكم تخصيص متجر ikas قائم؟",
+            "answer": "نعم. نراجع الإعداد الحالي وخيارات القوالب المتاحة، ثم نخطط للتغييرات البصرية أو التطوير ضمن ميزات ikas ونطاق المشروع المتفق عليه."
+          },
+          {
+            "question": "هل يمكن ربط خدمات الدفع أو الشحن أو الأسواق؟",
+            "answer": "يمكننا المساعدة في إعداد الخدمات المناسبة عند توفر الصلاحيات والدعم التقني المطلوبين. يحدد كل مزود شروطه ومدى توفر الخدمة ورسومها."
+          },
+          {
+            "question": "هل يمكن نقل المنتجات من منصة أخرى إلى ikas؟",
+            "answer": "نراجع بيانات المنتجات والفئات ونخطط لطريقة النقل وخطوات التحقق. وقد تؤثر الروابط والصور والخيارات وإمكانات التصدير في النظام الحالي على النطاق."
+          },
+          {
+            "question": "هل يشمل تطوير ikas خدمات تحسين محركات البحث؟",
+            "answer": "يمكننا وفق نطاق المشروع مراجعة عناوين الصفحات والأوصاف والتحويلات والفحوصات التقنية الأساسية. لا نضمن ترتيبًا في نتائج البحث، ومن المهم مراجعة الروابط والمحتوى قبل الانتقال."
+          },
+          {
+            "question": "كم يستغرق مشروع متجر ikas؟",
+            "answer": "تعتمد المدة على حجم المنتجات وجاهزية المحتوى والتصميم والتكاملات وأي نقل للبيانات. نشارك خطة المشروع بعد توضيح النطاق والمواد المطلوبة."
+          },
+          {
+            "question": "هل تقدمون الدعم بعد إطلاق المتجر؟",
+            "answer": "يمكن الاتفاق بصورة منفصلة على الصيانة أو التطوير بعد الإطلاق. ونحدد الاحتياجات وطريقة العمل لتحديث المحتوى أو إضافة تكاملات أو متابعة تحديثات المنصة."
+          },
+          {
+            "question": "كيف تحدد تكلفة تطوير متجر ikas؟",
+            "answer": "تعتمد التكلفة على الإعداد والتصميم ونقل المنتجات والتكاملات وأعمال التطوير المخصصة. نراجع الاحتياجات ثم نقدم نطاق العمل والعرض."
+          }
+        ],
+        "pricingMeta": {
+          "note": "تتحدد التكلفة وفق إعداد المتجر والتصميم ونقل المنتجات والتكاملات وأعمال التطوير المخصصة. نتفق على النطاق قبل إعداد العرض.",
+          "factors": [
+            "إعداد المتجر وتعديلات القالب",
+            "حجم المنتجات ونقل البيانات",
+            "روابط الدفع والشحن والأسواق",
+            "التطوير المخصص والدعم المتفق عليه"
+          ]
+        }
+      },
+      "metaTitle": "إعداد وتطوير متجر ikas | PakSoft",
+      "metaDescription": "إعداد متاجر ikas وتخصيص القوالب ونقل المنتجات وربط الأنظمة المناسبة للأعمال عبر الإنترنت."
+    }
+  ],
+  "metaTitle": "ikas Store Setup and Development | PakSoft",
+  "metaDescription": "ikas store setup, theme customization, product transfer, and suitable system integrations for online businesses.",
+  "createdAt": "2026-10-25T00:00:00.000Z",
+  "updatedAt": "2026-10-25T00:00:00.000Z"
+}
