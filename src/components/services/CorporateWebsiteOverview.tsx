@@ -7,9 +7,7 @@ type Locale = 'en' | 'tr';
 
 const copy = {
   en: {
-    heroLabel: 'Corporate website design & development', heroTitle: 'Corporate Website Design & Development',
-    heroText: 'We plan, design and develop corporate websites that present your business clearly, support customer enquiries and help your team manage content.',
-    discuss: 'Discuss Your Project', work: 'Explore Our Work', preview: 'Illustrative website preview', previewTag: 'Company website', previewLine1: 'Solutions for your business', previewLine2: 'Explore products and request a quote.',
+    preview: 'Illustrative website preview',
     projects: 'Selected Website Projects', projectsIntro: 'A selection of published projects with documented requirements and functionality.',
     client: 'Client and sector', need: 'Business requirement', contribution: 'PakSoft contribution and functionality',
     sunName: 'Sun Container GmbH', sunSector: 'Modular containers and construction', sunNeed: 'Present configurable modular containers to German business and consumer audiences.', sunContribution: 'A product-focused website with product and application information, references, a configurator entry point and a separate order-tracking portal.', viewProject: 'View project',
@@ -32,9 +30,7 @@ const copy = {
     ], faqLink: 'Visit all FAQs', finalTitle: 'Tell Us About Your Website Project', finalText: 'Share what your business needs from its website and we can discuss a suitable scope.', finalCta: 'Discuss Your Project',
   },
   tr: {
-    heroLabel: 'Kurumsal web tasarım ve geliştirme', heroTitle: 'Kurumsal Web Tasarım ve Geliştirme',
-    heroText: 'İşletmenizi doğru anlatan, müşteri taleplerini toplamanızı kolaylaştıran ve içeriklerinizi yönetmenize olanak tanıyan kurumsal web siteleri tasarlıyor ve geliştiriyoruz.',
-    discuss: 'Projenizi Konuşalım', work: 'Projelerimizi İnceleyin', preview: 'Örnek gösterim: web sitesi ön izlemesi', previewTag: 'Kurumsal web sitesi', previewLine1: 'İşletmeniz için çözümler', previewLine2: 'Ürünleri inceleyin, teklif isteyin.',
+    preview: 'Örnek gösterim: web sitesi ön izlemesi',
     projects: 'Seçili Web Sitesi Projelerimiz', projectsIntro: 'Gereksinimleri ve işlevleri proje kayıtlarında belgelenmiş yayınlanmış çalışmalardan bir örnek.',
     client: 'Müşteri ve sektör', need: 'İşletme ihtiyacı', contribution: 'PakSoft katkısı ve işlevler', sunName: 'Sun Container GmbH', sunSector: 'Modüler konteyner ve inşaat', sunNeed: 'Modüler konteyner çözümlerini Almanya’daki işletme ve tüketicilere tanıtmak.', sunContribution: 'Ürün ve kullanım alanlarını tanıtan, referansları ve konfigüratöre geçişi sunan; ayrıca ayrı bir sipariş takip portalıyla desteklenen web sitesi.', viewProject: 'Projeyi inceleyin',
     redesignTitle: 'Yeni Bir Web Sitesi mi, Mevcut Sitenizin Yenilenmesi mi?', newTitle: 'Yeni web sitesi', newText: 'Site yapısını, marka sunumunu ve içerik planını belirleyip üzerinde anlaşılan sayfa ve işlevleri geliştiriyoruz.', redesignTitle2: 'Yenileme', redesignText: 'Mevcut içerikleri, kullanılabilirliği ve teknik gereksinimleri inceliyor; ardından iyileştirme ve geçiş kapsamını birlikte belirliyoruz.', migration: 'URL’ler değişecekse yönlendirmeler ve yayın sonrası takip, üzerinde anlaşılan geçiş kapsamına eklenebilir. Geçiş sırasında arama görünürlüğü değişebilir; belirli bir sonuç garanti edilemez.',
@@ -56,43 +52,19 @@ const copy = {
   },
 } satisfies Record<Locale, Record<string, any>>;
 
-type Project = { client?: string; industry?: string; challenge?: string; description?: string; solution?: string };
+type Project = { client?: string };
 
 export default function CorporateWebsiteOverview({ locale, project }: { locale: Locale; project?: Project | null }) {
   const c = copy[locale];
   const projectName = locale === 'tr' ? (project?.client || c.sunName) : c.sunName;
   const projectIndustry = c.sunSector;
-  const projectNeed = locale === 'tr' ? c.sunNeed : c.sunNeed;
-  const projectContribution = locale === 'tr' ? c.sunContribution : c.sunContribution;
+  const projectNeed = c.sunNeed;
+  const projectContribution = c.sunContribution;
   const sub = (name: string) => `/services/corporate-website-design/${name}`;
   const enquiry = '/start-project?service=corporate-website-design';
 
   return (
-    <main className="bg-white text-gray-900">
-      <section id="overview" className="relative overflow-hidden bg-gradient-to-br from-gray-50 via-white to-heritage-turquoise/10">
-        <div className="container mx-auto max-w-7xl px-4 pb-14 pt-[var(--navbar-h,64px)] sm:pb-20 lg:pb-24">
-          <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_.95fr]">
-          <div>
-            <p className="mb-3 text-sm font-semibold uppercase tracking-[.14em] text-heritage-turquoise-deep">{c.heroLabel}</p>
-            <h1 className="max-w-2xl text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">{c.heroTitle}</h1>
-            <p className="mt-5 max-w-xl text-lg leading-8 text-gray-600">{c.heroText}</p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <LocalizedLink href={enquiry} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-heritage-turquoise px-5 py-3 font-semibold text-white transition-colors motion-reduce:transition-none hover:bg-heritage-turquoise-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2">{c.discuss}<ArrowRightIcon className="h-4 w-4 rtl:rotate-180" aria-hidden="true" /></LocalizedLink>
-              <a href="#selected-projects" className="inline-flex min-h-12 items-center justify-center rounded-md border border-gray-300 bg-white px-5 py-3 font-semibold text-gray-800 transition-colors motion-reduce:transition-none hover:border-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2">{c.work}</a>
-            </div>
-          </div>
-          <div aria-label={c.preview} className="mx-auto w-full max-w-xl rounded-2xl border border-gray-200 bg-white p-3 shadow-xl shadow-gray-900/5">
-            <div className="flex items-center gap-1.5 border-b border-gray-100 px-2 pb-3"><span className="h-2.5 w-2.5 rounded-full bg-gray-200"/><span className="h-2.5 w-2.5 rounded-full bg-gray-200"/><span className="h-2.5 w-2.5 rounded-full bg-gray-200"/><span className="ms-2 flex-1 rounded bg-gray-50 px-3 py-1 text-xs text-gray-400">paksofts.com / {locale === 'tr' ? 'kurumsal' : 'company'}</span></div>
-            <div className="grid min-h-64 grid-cols-[1.05fr_.95fr] gap-4 p-5 sm:min-h-80 sm:p-8">
-              <div className="flex flex-col justify-center"><span className="h-2 w-20 rounded bg-heritage-turquoise/50"/><p className="mt-4 text-xl font-semibold leading-snug sm:text-2xl">{c.previewLine1}</p><p className="mt-2 text-sm leading-6 text-gray-500">{c.previewLine2}</p><span className="mt-5 h-8 w-28 rounded bg-heritage-turquoise"/></div>
-              <div className="flex flex-col justify-center gap-3 rounded-xl bg-gray-50 p-3"><span className="h-20 rounded-lg bg-gradient-to-br from-heritage-turquoise/20 to-heritage-saffron-bright/20"/><span className="h-2 w-4/5 rounded bg-gray-200"/><span className="h-2 w-2/3 rounded bg-gray-200"/><span className="mt-2 grid grid-cols-2 gap-2"><i className="h-10 rounded bg-white"/><i className="h-10 rounded bg-white"/></span></div>
-            </div>
-            <p className="px-2 pb-1 text-center text-xs text-gray-500">{c.preview}</p>
-          </div>
-          </div>
-        </div>
-      </section>
-
+    <>
       <section id="selected-projects" className="container mx-auto max-w-7xl px-4 py-14 sm:py-18">
         <div className="mb-7 max-w-2xl"><h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">{c.projects}</h2><p className="mt-3 leading-7 text-gray-600">{c.projectsIntro}</p></div>
         <article className="grid overflow-hidden rounded-2xl border border-gray-200 bg-white md:grid-cols-[.8fr_1.2fr]">
@@ -120,6 +92,6 @@ export default function CorporateWebsiteOverview({ locale, project }: { locale: 
       <section className="bg-gray-50"><div className="container mx-auto max-w-4xl px-4 py-14 sm:py-16"><h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">{c.faqTitle}</h2><dl className="mt-6 divide-y divide-gray-200 border-y border-gray-200">{c.questions.map(([q,a]:string[]) => <div key={q} className="py-4"><dt className="font-semibold">{q}</dt><dd className="max-w-3xl pt-2 leading-7 text-gray-600">{a}</dd></div>)}</dl><LocalizedLink href={sub('faq')} className="mt-5 inline-flex items-center gap-2 font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">{c.faqLink}<ArrowRightIcon className="h-4 w-4 rtl:rotate-180"/></LocalizedLink></div></section>
 
       <section className="bg-gray-950"><div className="container mx-auto max-w-5xl px-4 py-14 text-center sm:py-16"><h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">{c.finalTitle}</h2><p className="mx-auto mt-4 max-w-2xl leading-7 text-gray-300">{c.finalText}</p><LocalizedLink href={enquiry} className="mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-heritage-turquoise px-6 py-3 font-semibold text-white transition-colors motion-reduce:transition-none hover:bg-heritage-turquoise-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950">{c.finalCta}<ArrowRightIcon className="h-4 w-4 rtl:rotate-180"/></LocalizedLink></div></section>
-    </main>
+    </>
   );
 }
