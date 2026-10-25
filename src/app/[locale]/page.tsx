@@ -83,7 +83,7 @@ export default async function HomePage({ params }: PageProps) {
     <>
       <Hero />
       <FeaturedServices locale={validLocale} />
-      <ServicesSection heading={t('servicesSection.heading')} />
+      <ServicesSection heading={t('footer.servicesSection.heading')} />
       <SocialProofBanner variant="stats" />
       <PatternDivider className="py-8" />
       <DemoSection />
