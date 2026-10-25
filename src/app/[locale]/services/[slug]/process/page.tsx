@@ -5,6 +5,7 @@ import { generateAlternateLinks, getServiceSubPageMeta } from '@/lib/seo';
 import { localizeFullPath } from '@/lib/routes';
 import { serviceRobots } from '@/lib/service-quality';
 import ProcessPageClient from './ProcessPageClient';
+import CorporateWebsiteSubpage, { getCorporateWebsiteSubpageMeta } from '@/components/services/CorporateWebsiteSubpage';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -29,7 +30,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const path = `/services/${slug}/process`;
   const localizedPath = localizeFullPath(path, validLocale);
 
-  const { title, description } = getServiceSubPageMeta('process', validLocale, service.name);
+  const customMeta = slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
+    ? getCorporateWebsiteSubpageMeta('process', validLocale)
+    : null;
+  const { title, description } = customMeta || getServiceSubPageMeta('process', validLocale, service.name);
 
   return {
     title,
@@ -51,6 +55,10 @@ export default async function ServiceProcessPage({ params }: PageProps) {
 
   if (!service) {
     notFound();
+  }
+
+  if (slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) {
+    return <CorporateWebsiteSubpage page="process" locale={locale} />;
   }
 
   const content = service.content as any || {};

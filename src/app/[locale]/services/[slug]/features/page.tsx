@@ -5,6 +5,7 @@ import { generateAlternateLinks, getServiceSubPageMeta } from '@/lib/seo';
 import { localizeFullPath } from '@/lib/routes';
 import { serviceRobots } from '@/lib/service-quality';
 import FeaturesPageClient from './FeaturesPageClient';
+import CorporateWebsiteSubpage, { getCorporateWebsiteSubpageMeta } from '@/components/services/CorporateWebsiteSubpage';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -29,7 +30,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const path = `/services/${slug}/features`;
   const localizedPath = localizeFullPath(path, validLocale);
 
-  const { title, description } = getServiceSubPageMeta('features', validLocale, service.name);
+  const customMeta = slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
+    ? getCorporateWebsiteSubpageMeta('features', validLocale)
+    : null;
+  const { title, description } = customMeta || getServiceSubPageMeta('features', validLocale, service.name);
 
   return {
     title,
@@ -51,6 +55,10 @@ export default async function ServiceFeaturesPage({ params }: PageProps) {
 
   if (!service) {
     notFound();
+  }
+
+  if (slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) {
+    return <CorporateWebsiteSubpage page="features" locale={locale} />;
   }
 
   const features = service.features || [];

@@ -7,6 +7,7 @@ import { serviceRobots } from '@/lib/service-quality';
 import ServiceDetailClient from '../ServiceDetailClient';
 import PricingPageClient from './PricingPageClient';
 import { getServiceData, baseUrl } from '../_shared';
+import CorporateWebsiteSubpage, { getCorporateWebsiteSubpageMeta } from '@/components/services/CorporateWebsiteSubpage';
 
 export const revalidate = 3600;
 
@@ -22,7 +23,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const path = `/services/${slug}/pricing`;
   const localizedPath = localizeFullPath(path, validLocale);
-  const { title, description } = getServiceSubPageMeta('pricing', validLocale, data.service.name);
+  const customMeta = slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
+    ? getCorporateWebsiteSubpageMeta('pricing', validLocale)
+    : null;
+  const { title, description } = customMeta || getServiceSubPageMeta('pricing', validLocale, data.service.name);
 
   return {
     title,
@@ -40,6 +44,10 @@ export default async function ServicePricingPage({ params }: PageProps) {
   const validLocale = locales.includes(locale) ? locale : defaultLocale;
   const data = await getServiceData(slug, validLocale);
   if (!data) notFound();
+
+  if (slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')) {
+    return <CorporateWebsiteSubpage page="pricing" locale={validLocale} />;
+  }
 
   const hasPackages = (data.service.pricingPackages?.length ?? 0) > 0;
 

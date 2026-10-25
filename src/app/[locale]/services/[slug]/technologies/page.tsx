@@ -8,6 +8,7 @@ import { generateAlternateLinks, getServiceSubPageMeta } from '@/lib/seo';
 import { localizeFullPath } from '@/lib/routes';
 import { serviceRobots } from '@/lib/service-quality';
 import TechStackPageClient from '../tech-stack/TechStackPageClient';
+import CorporateWebsiteSubpage, { getCorporateWebsiteSubpageMeta } from '@/components/services/CorporateWebsiteSubpage';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -32,7 +33,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const path = `/services/${slug}/technologies`;
   const localizedPath = localizeFullPath(path, validLocale);
 
-  const { title, description } = getServiceSubPageMeta('technologies', validLocale, service.name);
+  const customMeta = slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
+    ? getCorporateWebsiteSubpageMeta('technologies', validLocale)
+    : null;
+  const { title, description } = customMeta || getServiceSubPageMeta('technologies', validLocale, service.name);
 
   return {
     title,
@@ -53,6 +57,10 @@ export default async function ServiceTechnologiesPage({ params }: PageProps) {
 
   if (!service) {
     notFound();
+  }
+
+  if (slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) {
+    return <CorporateWebsiteSubpage page="technologies" locale={locale} />;
   }
 
   const content = (service.content as Record<string, unknown>) || {};

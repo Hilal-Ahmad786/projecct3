@@ -5,6 +5,7 @@ import { generateAlternateLinks } from '@/lib/seo';
 import { localizeFullPath } from '@/lib/routes';
 import BlogPageClient from './BlogPageClient';
 import { getServiceData, baseUrl } from '../_shared';
+import CorporateWebsiteSubpage, { getCorporateWebsiteSubpageMeta } from '@/components/services/CorporateWebsiteSubpage';
 
 export const revalidate = 3600;
 
@@ -20,9 +21,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const path = `/services/${slug}/blog`;
   const localizedPath = localizeFullPath(path, validLocale);
+  const customMeta = slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
+    ? getCorporateWebsiteSubpageMeta('blog', validLocale)
+    : null;
   return {
-    title: `${data.service.name} — Articles & Insights | PakSoft`,
-    description: `Practical guides, deep-dives, and lessons learned about ${data.service.name} from the PakSoft team.`,
+    title: customMeta?.title || `${data.service.name} — Articles & Insights | PakSoft`,
+    description: customMeta?.description || `Practical guides, deep-dives, and lessons learned about ${data.service.name} from the PakSoft team.`,
     alternates: {
       canonical: `${baseUrl}/${validLocale}${localizedPath}`,
       languages: generateAlternateLinks(path),
@@ -35,6 +39,10 @@ export default async function ServiceBlogPage({ params }: PageProps) {
   const validLocale = locales.includes(locale) ? locale : defaultLocale;
   const data = await getServiceData(slug, validLocale);
   if (!data) notFound();
+
+  if (slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')) {
+    return <CorporateWebsiteSubpage page="blog" locale={validLocale} />;
+  }
 
   // Posts are categorized at the parent-service level; fall back to the
   // service's own slug, then its category.
