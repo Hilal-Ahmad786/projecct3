@@ -16,6 +16,9 @@ import { localizeFullPath } from '@/lib/routes';
 import { FAQJsonLd } from '@/components/seo/JsonLd';
 import BlogInternalLinksCta from '@/components/blog/BlogInternalLinksCta';
 import CorporateWebsiteGuideCards from '@/components/services/CorporateWebsiteGuideCards';
+import AnimatedVisual from '@/components/services/corporate-visuals/AnimatedVisual';
+import BeforeAfterCompare from '@/components/services/corporate-visuals/BeforeAfterCompare';
+import MultilingualDemo from '@/components/services/corporate-visuals/MultilingualDemo';
 import { corporateWebsiteArticlePath } from '@/data/corporate-website-article-cards';
 
 export type CorporateWebsiteSubpageKey = 'features' | 'technologies' | 'process' | 'portfolio' | 'pricing' | 'blog' | 'faq';
@@ -744,8 +747,9 @@ function TurkishProcessContent({ p }: { p: Record<string, any> }) {
     </PageSection>
 
     <PageSection title="Mevcut Web Sitesi Yenileniyorsa" tone="ivory">
+      <div className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-center"><div>
       <p className="max-w-4xl text-body leading-relaxed text-gray-700">Yenileme çalışmalarında mevcut yapıyı ve içeriği inceleyerek korunacak, geliştirilecek veya kaldırılacak öğeleri belirleriz. Geçiş planı proje gereksinimleriyle birlikte hazırlanır.</p>
-      <ul className="mt-4 grid gap-x-8 sm:grid-cols-2">{[
+      <ul className="mt-4 grid gap-x-8">{[
         'Mevcut sayfaların, içeriklerin ve önemli URL’lerin envanteri',
         'İçeriğin korunması, güncellenmesi veya kaldırılması kararı',
         'Değişen adresler için gerekli URL eşleştirmeleri ve yönlendirmeler',
@@ -754,16 +758,19 @@ function TurkishProcessContent({ p }: { p: Record<string, any> }) {
       ].map(item => <li key={item} className="border-b border-heritage-sand py-3 text-sm leading-6 text-gray-700">{item}</li>)}</ul>
       <p className="mt-4 text-sm leading-6 text-gray-600">Geçiş sırasında kısa süreli kesinti veya arama görünürlüğünde değişim yaşanabilir; bunların sıfır olacağı garanti edilemez.</p>
       <Link href={corporateWebsiteArticlePath('web-sitesi-yenileme')} className={`mt-5 inline-flex items-center gap-2 text-sm ${anchorClass}`}>İçerik envanteri, URL eşleştirme ve yayın kontrolleri için yenileme rehberini okuyun <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>
+      </div><BeforeAfterCompare /></div>
     </PageSection>
 
     <PageSection title="Yayından Sonra Ne Olur?">
+      <div className="grid gap-8 lg:grid-cols-[1.1fr_.9fr] lg:items-start"><div>
       <p className="max-w-4xl text-body text-gray-600">Yayın sonrasında devir ve düzenleme bilgilendirmesi üzerinde anlaşılan proje kapsamına göre tamamlanır. Sonraki işler, teslim kontrolü ve devam eden hizmetler olarak ayrı değerlendirilir.</p>
-      <dl className="mt-4 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-4">{[
+      <dl className="mt-4 grid gap-x-8 sm:grid-cols-2">{[
         ['Devir ve düzenleme', 'Kararlaştırılan erişim ve CMS kullanım bilgileri teslim kapsamına göre paylaşılır.'],
         ['Sorun bildirimi', 'Yayında fark edilen konular mevcut proje anlaşmasındaki teslim ve düzeltme koşullarına göre ele alınır.'],
         ['Bakım ve güncellemeler', 'Yayın sonrası bakım ayrıca kapsamlandırılır; her projede otomatik olarak bulunmaz.'],
         ['Yeni içerik ve pazarlama', 'İçerik geliştirme, ek işlevler, devam eden SEO ve reklam çalışmaları ayrı hizmet olarak planlanabilir.'],
       ].map(([title, description]) => <div key={title} className="border-b border-gray-200 py-3"><dt className="font-semibold text-gray-900">{title}</dt><dd className="mt-1 text-sm leading-6 text-gray-600">{description}</dd></div>)}</dl>
+      </div><figure className="m-0"><AnimatedVisual name="handover" labels={['Alan adı hesabı', 'Hosting hesabı', 'Yönetim paneli erişimi', 'Analitik erişimi', 'Kod ve tasarım dosyaları'].map((row, i) => ({ slot: `slot-row-${i + 1}`, text: row, delay: 0.25 + i * 0.1, className: 'font-medium text-gray-700' }))} /><figcaption className="mt-3 text-xs leading-5 text-gray-600">Örnek gösterim · Devredilecek erişimler teklif ve sözleşmede listelenir.</figcaption></figure></div>
       <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3 text-sm"><Link href={localizedHref('/services/corporate-website-design/technologies', 'tr')} className={anchorClass}>Altyapı ve yönetim seçenekleri <ArrowRightIcon className="inline h-4 w-4" aria-hidden="true" /></Link><Link href={localizedHref('/services/corporate-website-design/portfolio', 'tr')} className={anchorClass}>Belgelenmiş projeyi inceleyin <ArrowRightIcon className="inline h-4 w-4" aria-hidden="true" /></Link><Link href={localizedHref('/services/corporate-website-design/pricing', 'tr')} className={anchorClass}>Fiyatlandırma ve kapsam <ArrowRightIcon className="inline h-4 w-4" aria-hidden="true" /></Link></div>
     </PageSection>
 
@@ -827,9 +834,9 @@ function TurkishFeaturesContent() {
     </PageSection>
 
     <PageSection title="İşletmenizi Anlatan Sayfalar" tone="ivory">
-      <div className="grid gap-7 lg:grid-cols-[1.35fr_.65fr]">
+      <div className="grid gap-7 lg:grid-cols-[1.1fr_.9fr] lg:items-center">
         <dl className="grid gap-x-7 sm:grid-cols-2">{companyPages.map(([title, text]) => <div key={title} className="border-b border-heritage-sand py-3"><dt><h3 className="font-semibold text-gray-900">{title}</h3></dt><dd className="mt-2 text-sm leading-6 text-gray-700">{text}</dd></div>)}</dl>
-        <aside className="self-start rounded-xl border border-heritage-sand bg-white p-4 sm:p-5"><p className="text-overline text-heritage-turquoise-deep">Örnek sayfa yapısı</p><ul className="mt-3 divide-y divide-gray-200 text-sm text-gray-700"><li className="py-2 font-semibold text-gray-900">Kurumsal</li><li className="py-2 ps-4">Hakkımızda ve ekip</li><li className="py-2 ps-4">Hizmetler</li><li className="py-2 ps-4">Projeler ve referanslar</li><li className="py-2 ps-4">Haberler ve duyurular</li><li className="py-2 ps-4">İletişim ve teklif talebi</li></ul></aside>
+        <figure className="m-0 self-start rounded-xl border border-heritage-sand bg-white p-4 sm:p-5"><AnimatedVisual name="site-tree" labels={[{ slot: 'slot-root', text: <span className="text-white">Ana Sayfa</span>, delay: 0.3 }, ...['Hakkımızda', 'Hizmetler', 'Ürünler', 'Projeler', 'Duyurular', 'İletişim'].map((page, i) => ({ slot: `slot-${i + 1}`, text: page, delay: 0.95 + i * 0.12 }))]} /><figcaption className="mt-3 text-xs leading-5 text-gray-600">Örnek sayfa yapısı · Sayfalar işletmenin ihtiyacına göre belirlenir.</figcaption></figure>
       </div>
       <Link href={localizedHref('/services/corporate-website-design/portfolio', 'tr')} className={`mt-5 inline-flex items-center gap-2 text-sm ${anchorClass}`}>Belgelenmiş web sitesi projesini inceleyin <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>
     </PageSection>
@@ -876,9 +883,9 @@ function TurkishFeaturesContent() {
     </PageSection>
 
     <PageSection title="Çok Dilli Web Sitesi Özellikleri">
-      <div className="grid gap-6 lg:grid-cols-[1fr_.7fr]">
-        <div><p className="text-body leading-relaxed text-gray-600">Her dil için sayfa içeriği ve gezinme ayrı ele alınır. Yerelleştirilmiş formlar ve metadata planlanabilir; Arapça ve Urduca sürümlerde sağdan sola (RTL) metin yönü ve arayüz düzeni değerlendirilir.</p><ul className="mt-4 space-y-2 text-sm leading-6 text-gray-700"><li>İçeriklerin diller arasında nasıl güncelleneceği belirlenir.</li><li>Çeviri, içerik girişi, editoryal kontrol ve onay sorumlulukları paylaşılır.</li><li>Sonradan eklenecek diller için içerik yapısı ve teknik gereksinimler incelenir.</li></ul><p className="mt-3 text-sm leading-6 text-gray-600">Dil seçenekleri ve çeviri hizmetleri teklifte kararlaştırılır; otomatik olarak dahil değildir.</p><Link href={corporateWebsiteArticlePath('ihracat-firmalari-icin-cok-dilli-web-sitesi')} className={`mt-4 inline-flex items-center gap-2 text-sm ${anchorClass}`}>Hedef pazar, ürün içeriği ve RTL planlaması için ihracat rehberini okuyun <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link></div>
-        <aside className="rounded-xl border border-heritage-sand bg-heritage-ivory p-4"><p className="text-overline text-heritage-turquoise-deep">Dile göre planlanabilecek alanlar</p><ul className="mt-3 divide-y divide-heritage-sand text-sm text-gray-700">{['Sayfalar ve menüler', 'Form etiketleri ve bildirim metinleri', 'Sayfa başlıkları ve metadata', 'Arapça / Urduca RTL düzeni'].map(x => <li key={x} className="py-2">{x}</li>)}</ul></aside>
+      <div className="grid gap-8 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
+        <div><p className="text-body leading-relaxed text-gray-600">Her dil için sayfa içeriği ve gezinme ayrı ele alınır. Yerelleştirilmiş formlar ve metadata planlanabilir; Arapça ve Urduca sürümlerde sağdan sola (RTL) metin yönü ve arayüz düzeni değerlendirilir.</p><ul className="mt-4 space-y-2 text-sm leading-6 text-gray-700"><li>İçeriklerin diller arasında nasıl güncelleneceği belirlenir.</li><li>Çeviri, içerik girişi, editoryal kontrol ve onay sorumlulukları paylaşılır.</li><li>Sonradan eklenecek diller için içerik yapısı ve teknik gereksinimler incelenir.</li></ul><p className="mt-3 text-sm leading-6 text-gray-600">Dil seçenekleri ve çeviri hizmetleri teklifte kararlaştırılır; otomatik olarak dahil değildir.</p><Link href={corporateWebsiteArticlePath('ihracat-firmalari-icin-cok-dilli-web-sitesi')} className={`mt-4 inline-flex items-center gap-2 text-sm ${anchorClass}`}>Hedef pazar, ürün içeriği ve RTL planlaması için ihracat rehberini okuyun <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link><div className="mt-5 rounded-xl border border-heritage-sand bg-heritage-ivory p-4"><p className="text-overline text-heritage-turquoise-deep">Dile göre planlanabilecek alanlar</p><ul className="mt-3 divide-y divide-heritage-sand text-sm text-gray-700">{['Sayfalar ve menüler', 'Form etiketleri ve bildirim metinleri', 'Sayfa başlıkları ve metadata', 'Arapça / Urduca RTL düzeni'].map(x => <li key={x} className="py-2">{x}</li>)}</ul></div></div>
+        <MultilingualDemo />
       </div>
     </PageSection>
 
@@ -966,10 +973,12 @@ function TurkishPricingContent({ p }: { p: Record<string, any> }) {
     </PageSection>
 
     <PageSection title={p.quoteTitle} tone="gray">
+      <div className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-center"><div>
       <p className="max-w-4xl text-body text-gray-600">{p.quoteIntro}</p>
-      <ol className="mt-5 grid gap-3 sm:grid-cols-2">{p.quoteSteps.map((x: string, i: number) => <li key={x} className="flex gap-3 rounded-lg border border-gray-200 bg-white p-4 text-sm leading-6 text-gray-700"><span className="text-overline text-heritage-turquoise-deep">0{i + 1}</span>{x}</li>)}</ol>
+      <ol className="mt-5 grid gap-3">{p.quoteSteps.map((x: string, i: number) => <li key={x} className="flex gap-3 rounded-lg border border-gray-200 bg-white p-4 text-sm leading-6 text-gray-700"><span className="text-overline text-heritage-turquoise-deep">0{i + 1}</span>{x}</li>)}</ol>
       <h3 className="mt-6 font-semibold text-gray-900">Kapsamı anlamaya yardımcı bilgiler</h3>
-      <ul className="mt-3 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-3">{p.quote.map((x: string) => <li key={x} className="border-b border-gray-200 py-2 text-sm text-gray-700">{x}</li>)}</ul>
+      <ul className="mt-3 grid gap-x-8 sm:grid-cols-2">{p.quote.map((x: string) => <li key={x} className="border-b border-gray-200 py-2 text-sm text-gray-700">{x}</li>)}</ul>
+      </div><figure className="m-0 rounded-2xl border border-heritage-sand bg-white p-4 sm:p-5"><AnimatedVisual name="scope-builder" labels={['Şablonlar', 'Diller', 'CMS', 'Entegrasyon', 'İçerik', 'Hosting'].map((chip, i) => ({ slot: `slot-chip-${i + 1}`, text: chip, delay: 0.4 + i * 0.2, className: 'font-medium text-gray-700' }))} /><figcaption className="mt-3 text-xs leading-5 text-gray-600">Örnek gösterim · Teklif, kapsama alınan kalemlere göre şekillenir.</figcaption></figure></div>
     </PageSection>
 
     <PageSection title={p.faqTitle}>

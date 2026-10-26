@@ -1,0 +1,163 @@
+/* Corporate website section visuals — choreography for AnimatedVisual.
+   Generated timing table lives in this file only; see AnimatedVisual.tsx for
+   playback states. Without a data-state attribute (server HTML, no JS,
+   reduced motion) nothing animates and the artwork shows its final state. */
+
+.cv { container-type: inline-size; --cv-ease: cubic-bezier(0.22, 1, 0.36, 1); }
+.cv [data-part] { transform-box: fill-box; transform-origin: center; }
+.cv [pathLength] { stroke-dasharray: 1; }
+.cv[data-state="ready"] [data-part],
+.cv[data-state="ready"] .cv-label { animation-play-state: paused !important; }
+
+.cv-label {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: clamp(9px, 2.3cqi, 14px);
+  font-weight: 600;
+  line-height: 1.15;
+  color: #1a1a1a;
+  pointer-events: none;
+}
+.cv[data-state] .cv-label { animation: cv-in 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + var(--cv-label-delay, 0s)) both; }
+
+@keyframes cv-in { from { opacity: 0; } }
+@keyframes cv-rise { from { opacity: 0; transform: translateY(14px); } }
+@keyframes cv-pop { from { opacity: 0; transform: scale(0.5); } 70% { opacity: 1; transform: scale(1.06); } }
+@keyframes cv-grow-x { from { transform: scaleX(0); } }
+@keyframes cv-from-right { from { opacity: 0; transform: translateX(28px); } }
+@keyframes cv-from-left { from { opacity: 0; transform: translateX(-40px); } }
+@keyframes cv-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes cv-blink { 0%, 100% { opacity: 1; } 25%, 75% { opacity: 0; } 50% { opacity: 1; } }
+/* lock fades in with its row, holds, then opens */
+@keyframes cv-lock-out { 0% { opacity: 0; transform: none; } 20%, 70% { opacity: 1; transform: none; } 100% { opacity: 0; transform: scale(0.6); } }
+
+/* grow-from-left parts */
+.cv [data-part="field-fill"], .cv [data-part^="field-"], .cv-scope-builder [data-part^="line-"] { transform-origin: left center; }
+.cv-glyph-form [data-part="success-badge"], .cv-glyph-cms [data-part="publish-button"] { transform-origin: center; }
+
+/* final state: the handover locks are replaced by "handed over" badges */
+.cv-handover [data-part^="lock-"] { opacity: 0; }
+
+/* multilingual demo: switcher pill slides, content mirrors for RTL */
+.cv-multilingual-page [data-part="lang-active"] { transform-box: view-box; transition: transform 0.55s var(--cv-ease); }
+.cv-multilingual-page [data-part="content"] { transform-box: view-box; transform-origin: 280px 0; transition: transform 0.8s var(--cv-ease); }
+.cv-multilingual-page[data-rtl="true"] [data-part="content"] { transform: scaleX(-1); }
+.cv-multilingual-page .cv-label { justify-content: center; pointer-events: auto; transition: color 0.3s; }
+
+/* before/after compare: the "after" layer is clipped to the right of the handle */
+.cv-compare-after { clip-path: inset(0 0 0 var(--cv-split, 50%)); }
+.cv-compare[data-intro="true"] .cv-compare-after,
+.cv-compare[data-intro="true"] .cv-compare-handle { transition: clip-path 1.2s var(--cv-ease), left 1.2s var(--cv-ease); }
+
+@media (prefers-reduced-motion: reduce) {
+  .cv [data-part], .cv .cv-label { animation: none !important; transition: none !important; }
+}
+
+/* ── timing table ── */
+.cv-site-build[data-state] [data-part="browser-chrome"] { animation: cv-rise 0.6s var(--cv-ease) calc(var(--cv-delay, 0s) + 0s) both; }
+.cv-site-build[data-state] [data-part="wire-nav"] { animation: cv-in 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.25s) both; }
+.cv-site-build[data-state] [data-part="wire-hero"] { animation: cv-in 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.37s) both; }
+.cv-site-build[data-state] [data-part="wire-card-1"] { animation: cv-in 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.49s) both; }
+.cv-site-build[data-state] [data-part="wire-card-2"] { animation: cv-in 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.61s) both; }
+.cv-site-build[data-state] [data-part="wire-card-3"] { animation: cv-in 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.73s) both; }
+.cv-site-build[data-state] [data-part="wire-footer"] { animation: cv-in 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.85s) both; }
+.cv-site-build[data-state] [data-part="designed-nav"] { animation: cv-rise 0.6s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.15s) both; }
+.cv-site-build[data-state] [data-part="designed-hero"] { animation: cv-rise 0.6s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.3299999999999998s) both; }
+.cv-site-build[data-state] [data-part="designed-card-1"] { animation: cv-rise 0.6s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.5099999999999998s) both; }
+.cv-site-build[data-state] [data-part="designed-card-2"] { animation: cv-rise 0.6s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.69s) both; }
+.cv-site-build[data-state] [data-part="designed-card-3"] { animation: cv-rise 0.6s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.8699999999999999s) both; }
+.cv-site-build[data-state] [data-part="designed-footer"] { animation: cv-rise 0.6s var(--cv-ease) calc(var(--cv-delay, 0s) + 2.05s) both; }
+.cv-site-build[data-state] [data-part="accent-dots"] { animation: cv-pop 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 2.35s) both; }
+.cv-glyph-layout[data-state] [data-part="grid-frame"] { animation: cv-in 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 0s) both; }
+.cv-glyph-layout[data-state] [data-part="block-a"] { animation: cv-pop 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.2s) both; }
+.cv-glyph-layout[data-state] [data-part="block-b"] { animation: cv-pop 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.34s) both; }
+.cv-glyph-layout[data-state] [data-part="block-c"] { animation: cv-pop 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.48000000000000004s) both; }
+.cv-glyph-layout[data-state] [data-part="block-d"] { animation: cv-pop 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.6200000000000001s) both; }
+.cv-glyph-devices[data-state] [data-part="desktop"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0s) both; }
+.cv-glyph-devices[data-state] [data-part="screen-content-desktop"] { animation: cv-in 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.3s) both; }
+.cv-glyph-devices[data-state] [data-part="phone"] { animation: cv-from-right 0.55s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.55s) both; }
+.cv-glyph-devices[data-state] [data-part="screen-content-phone"] { animation: cv-in 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.9s) both; }
+.cv-glyph-cms[data-state] [data-part="panel"] { animation: cv-rise 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 0s) both; }
+.cv-glyph-cms[data-state] [data-part="field"] { animation: cv-in 0.35s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.15s) both; }
+.cv-glyph-cms[data-state] [data-part="field-fill"] { animation: cv-grow-x 0.8s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.3s) both; }
+.cv-glyph-cms[data-state] [data-part="cursor"] { animation: cv-blink 1.1s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.3s) both; }
+.cv-glyph-cms[data-state] [data-part="publish-button"] { animation: cv-pop 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.1s) both; }
+.cv-glyph-cms[data-state] [data-part="publish-check-path"] { animation: cv-draw 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.4s) both; }
+.cv-glyph-form[data-state] [data-part="form-card"] { animation: cv-rise 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 0s) both; }
+.cv-glyph-form[data-state] [data-part="field-1"] { animation: cv-grow-x 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.2s) both; }
+.cv-glyph-form[data-state] [data-part="field-2"] { animation: cv-grow-x 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.35s) both; }
+.cv-glyph-form[data-state] [data-part="field-3"] { animation: cv-grow-x 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.5s) both; }
+.cv-glyph-form[data-state] [data-part="submit"] { animation: cv-pop 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.75s) both; }
+.cv-glyph-form[data-state] [data-part="success-badge"] { animation: cv-pop 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.0s) both; }
+.cv-glyph-form[data-state] [data-part="success-check-path"] { animation: cv-draw 0.35s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.25s) both; }
+.cv-glyph-seo[data-state] [data-part="node-root"] { animation: cv-pop 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.05s) both; }
+.cv-glyph-seo[data-state] [data-part="link-1"] { animation: cv-draw 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.3s) both; }
+.cv-glyph-seo[data-state] [data-part="node-1"] { animation: cv-pop 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.6s) both; }
+.cv-glyph-seo[data-state] [data-part="link-2"] { animation: cv-draw 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.4s) both; }
+.cv-glyph-seo[data-state] [data-part="node-2"] { animation: cv-pop 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.7s) both; }
+.cv-glyph-seo[data-state] [data-part="link-3"] { animation: cv-draw 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.5s) both; }
+.cv-glyph-seo[data-state] [data-part="node-3"] { animation: cv-pop 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.8s) both; }
+.cv-glyph-seo[data-state] [data-part="magnifier"] { animation: cv-from-right 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.95s) both; }
+.cv-site-tree[data-state] [data-part="root-glow"] { animation: cv-in 0.8s var(--cv-ease) calc(var(--cv-delay, 0s) + 0s) both; }
+.cv-site-tree[data-state] [data-part="node-root"] { animation: cv-pop 0.55s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.1s) both; }
+.cv-site-tree[data-state] [data-part="link-1"] { animation: cv-draw 0.7s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.45s) both; }
+.cv-site-tree[data-state] [data-part="node-1"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.85s) both; }
+.cv-site-tree[data-state] [data-part="link-2"] { animation: cv-draw 0.7s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.5700000000000001s) both; }
+.cv-site-tree[data-state] [data-part="node-2"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.97s) both; }
+.cv-site-tree[data-state] [data-part="link-3"] { animation: cv-draw 0.7s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.69s) both; }
+.cv-site-tree[data-state] [data-part="node-3"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.0899999999999999s) both; }
+.cv-site-tree[data-state] [data-part="link-4"] { animation: cv-draw 0.7s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.81s) both; }
+.cv-site-tree[data-state] [data-part="node-4"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.21s) both; }
+.cv-site-tree[data-state] [data-part="link-5"] { animation: cv-draw 0.7s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.9299999999999999s) both; }
+.cv-site-tree[data-state] [data-part="node-5"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.33s) both; }
+.cv-site-tree[data-state] [data-part="link-6"] { animation: cv-draw 0.7s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.05s) both; }
+.cv-site-tree[data-state] [data-part="node-6"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.45s) both; }
+.cv-stage-1-analysis[data-state] [data-part="ring-active"] { animation: cv-pop 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0s) both; }
+.cv-stage-1-analysis[data-state] [data-part="icon-active"] { animation: cv-in 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.15s) both; }
+.cv-stage-2-design[data-state] [data-part="ring-active"] { animation: cv-pop 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0s) both; }
+.cv-stage-2-design[data-state] [data-part="icon-active"] { animation: cv-in 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.15s) both; }
+.cv-stage-3-development[data-state] [data-part="ring-active"] { animation: cv-pop 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0s) both; }
+.cv-stage-3-development[data-state] [data-part="icon-active"] { animation: cv-in 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.15s) both; }
+.cv-stage-4-testing[data-state] [data-part="ring-active"] { animation: cv-pop 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0s) both; }
+.cv-stage-4-testing[data-state] [data-part="icon-active"] { animation: cv-in 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.15s) both; }
+.cv-stage-5-launch[data-state] [data-part="ring-active"] { animation: cv-pop 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0s) both; }
+.cv-stage-5-launch[data-state] [data-part="icon-active"] { animation: cv-in 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.15s) both; }
+.cv-scope-builder[data-state] [data-part="proposal-doc"] { animation: cv-rise 0.6s var(--cv-ease) calc(var(--cv-delay, 0s) + 0s) both; }
+.cv-scope-builder[data-state] [data-part="chip-1"] { animation: cv-from-left 0.55s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.3s) both; }
+.cv-scope-builder[data-state] [data-part="line-1"] { animation: cv-grow-x 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.55s) both; }
+.cv-scope-builder[data-state] [data-part="chip-2"] { animation: cv-from-left 0.55s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.5s) both; }
+.cv-scope-builder[data-state] [data-part="line-2"] { animation: cv-grow-x 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.75s) both; }
+.cv-scope-builder[data-state] [data-part="chip-3"] { animation: cv-from-left 0.55s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.7s) both; }
+.cv-scope-builder[data-state] [data-part="line-3"] { animation: cv-grow-x 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.9500000000000001s) both; }
+.cv-scope-builder[data-state] [data-part="chip-4"] { animation: cv-from-left 0.55s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.9000000000000001s) both; }
+.cv-scope-builder[data-state] [data-part="line-4"] { animation: cv-grow-x 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.1500000000000001s) both; }
+.cv-scope-builder[data-state] [data-part="chip-5"] { animation: cv-from-left 0.55s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.1s) both; }
+.cv-scope-builder[data-state] [data-part="line-5"] { animation: cv-grow-x 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.35s) both; }
+.cv-scope-builder[data-state] [data-part="chip-6"] { animation: cv-from-left 0.55s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.3s) both; }
+.cv-scope-builder[data-state] [data-part="line-6"] { animation: cv-grow-x 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.55s) both; }
+.cv-scope-builder[data-state] [data-part="doc-check"] { animation: cv-pop 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.85s) both; }
+.cv-handover[data-state] [data-part="panel"] { animation: cv-in 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0s) both; }
+.cv-handover[data-state] [data-part="row-1"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.15s) both; }
+.cv-handover[data-state] [data-part="lock-1"] { animation: cv-lock-out 1.0s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.15s) both; }
+.cv-handover[data-state] [data-part="done-1"] { animation: cv-pop 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.0s) both; }
+.cv-handover[data-state] [data-part="done-check-1"] { animation: cv-draw 0.35s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.25s) both; }
+.cv-handover[data-state] [data-part="row-2"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.25s) both; }
+.cv-handover[data-state] [data-part="lock-2"] { animation: cv-lock-out 1.22s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.25s) both; }
+.cv-handover[data-state] [data-part="done-2"] { animation: cv-pop 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.22s) both; }
+.cv-handover[data-state] [data-part="done-check-2"] { animation: cv-draw 0.35s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.47s) both; }
+.cv-handover[data-state] [data-part="row-3"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.35s) both; }
+.cv-handover[data-state] [data-part="lock-3"] { animation: cv-lock-out 1.44s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.35s) both; }
+.cv-handover[data-state] [data-part="done-3"] { animation: cv-pop 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.44s) both; }
+.cv-handover[data-state] [data-part="done-check-3"] { animation: cv-draw 0.35s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.69s) both; }
+.cv-handover[data-state] [data-part="row-4"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.45000000000000007s) both; }
+.cv-handover[data-state] [data-part="lock-4"] { animation: cv-lock-out 1.6600000000000001s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.45000000000000007s) both; }
+.cv-handover[data-state] [data-part="done-4"] { animation: cv-pop 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.6600000000000001s) both; }
+.cv-handover[data-state] [data-part="done-check-4"] { animation: cv-draw 0.35s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.9100000000000001s) both; }
+.cv-handover[data-state] [data-part="row-5"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.55s) both; }
+.cv-handover[data-state] [data-part="lock-5"] { animation: cv-lock-out 1.88s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.55s) both; }
+.cv-handover[data-state] [data-part="done-5"] { animation: cv-pop 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.88s) both; }
+.cv-handover[data-state] [data-part="done-check-5"] { animation: cv-draw 0.35s var(--cv-ease) calc(var(--cv-delay, 0s) + 2.13s) both; }

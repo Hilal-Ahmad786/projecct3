@@ -4,7 +4,13 @@ import Image from 'next/image';
 import LocalizedLink from '@/components/LocalizedLink';
 import Link from 'next/link';
 import { ArrowRightIcon, CheckIcon } from '@heroicons/react/24/outline';
+import type { CSSProperties } from 'react';
 import CorporateWebsiteGuideCards from '@/components/services/CorporateWebsiteGuideCards';
+import AnimatedVisual, { useVisualPlayback } from '@/components/services/corporate-visuals/AnimatedVisual';
+import BeforeAfterCompare from '@/components/services/corporate-visuals/BeforeAfterCompare';
+import MultilingualDemo from '@/components/services/corporate-visuals/MultilingualDemo';
+import type { CorporateVisualName } from '@/components/services/corporate-visuals/svgData';
+import { GirihHalo, HeritageParticles, H } from '@/components/services/hero-visuals/primitives';
 import { corporateWebsiteArticlePath } from '@/data/corporate-website-article-cards';
 
 type Locale = 'en' | 'tr';
@@ -56,6 +62,13 @@ const copy = {
   },
 } satisfies Record<Locale, Record<string, any>>;
 
+// Section illustrations (Turkish overview). Order matches the content arrays.
+const capabilityGlyphs: CorporateVisualName[] = ['glyph-layout', 'glyph-devices', 'glyph-cms', 'glyph-form', 'glyph-seo'];
+const stageIcons: CorporateVisualName[] = ['stage-1-analysis', 'stage-2-design', 'stage-3-development', 'stage-4-testing', 'stage-5-launch'];
+export const sitemapPages = ['Hakkımızda', 'Hizmetler', 'Ürünler', 'Projeler', 'Haberler', 'İletişim'];
+const scopeChips = ['Şablonlar', 'Diller', 'CMS', 'Entegrasyon', 'İçerik', 'Hosting'];
+const handoverRows = ['Alan adı hesabı', 'Hosting hesabı', 'Yönetim paneli erişimi', 'Analitik erişimi', 'Kod ve tasarım dosyaları'];
+
 type Project = { client?: string; industry?: string; description?: string; challenge?: string; solution?: string };
 
 export default function CorporateWebsiteOverview({ locale, project }: { locale: Locale; project?: Project | null }) {
@@ -104,6 +117,7 @@ export default function CorporateWebsiteOverview({ locale, project }: { locale: 
 }
 
 function TurkishCorporateWebsiteOverview({ project }: { project?: Project | null }) {
+  const stagesPlayback = useVisualPlayback<HTMLOListElement>(0.3);
   const sub = (name: string) => `/services/corporate-website-design/${name}`;
   const projectName = project?.client || 'Sun Container GmbH';
   const capabilities = [
@@ -155,13 +169,14 @@ function TurkishCorporateWebsiteOverview({ project }: { project?: Project | null
     <>
       <section className="bg-background-gray">
         <div className="container mx-auto max-w-[1200px] px-4 section-compact">
-          <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-end">
+          <div className="grid gap-6 lg:grid-cols-[1.05fr_.95fr] lg:items-center lg:gap-10">
             <div className="max-w-3xl">
               <h2 className="reveal text-headline font-medium text-gray-900">İşletmenize Uygun Kurumsal Web Sitesi</h2>
               <p className="mt-4 text-body leading-relaxed text-gray-700">Kurumsal web sitesi; işletmenizin ne yaptığını, hangi ürün veya hizmetleri sunduğunu ve müşterilerin size nasıl ulaşabileceğini açık biçimde anlatır. Üreticiler, ihracatçılar, hizmet şirketleri ve kurumsal web sitesini yenilemek isteyen KOBİ’ler için ihtiyaçlara göre planlanabilir.</p>
               <p className="mt-3 text-body leading-relaxed text-gray-600">PakSoft yalnızca görsel taslak hazırlamaz; üzerinde anlaşılan tasarım, geliştirme ve yayına hazırlık çalışmalarını yürütür. Sayfalar, içerik yönetimi, formlar ve entegrasyonlar projenizin gereksinimlerine göre teklifte belirlenir.</p>
+              <LocalizedLink href="/services/web-design" className="inline-flex min-h-11 items-center gap-2 mt-6 rounded-sm border border-gray-300 bg-white px-4 py-3 text-sm font-semibold text-gray-800 transition-colors hover:border-heritage-turquoise hover:text-heritage-turquoise-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise motion-reduce:transition-none">Web Tasarım Hizmetlerini İnceleyin<ArrowRightIcon className="h-4 w-4 rtl:rotate-180" aria-hidden="true" /></LocalizedLink>
             </div>
-            <LocalizedLink href="/services/web-design" className="inline-flex min-h-11 items-center gap-2 self-start rounded-sm border border-gray-300 bg-white px-4 py-3 text-sm font-semibold text-gray-800 transition-colors hover:border-heritage-turquoise hover:text-heritage-turquoise-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise motion-reduce:transition-none lg:self-end">Web Tasarım Hizmetlerini İnceleyin<ArrowRightIcon className="h-4 w-4 rtl:rotate-180" aria-hidden="true" /></LocalizedLink>
+            <figure className="m-0"><AnimatedVisual name="site-build" className="mx-auto max-w-xl" /><figcaption className="sr-only">Örnek gösterim: kurumsal web sitesi taslağının tasarıma dönüşmesi</figcaption></figure>
           </div>
         </div>
       </section>
@@ -192,7 +207,7 @@ function TurkishCorporateWebsiteOverview({ project }: { project?: Project | null
           <h2 className="reveal text-headline font-medium text-gray-900">Kurumsal Web Sitesi Yapımında Neler Planlıyoruz?</h2>
           <p className="mt-3 max-w-3xl text-body leading-relaxed text-gray-600">Her projede aynı özellikler varsayılmaz. Aşağıdaki başlıkların kapsamı, işletmenizin ihtiyaçları ve seçilen altyapıya göre belirlenir.</p>
           <div className="reveal-group mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {capabilities.map((item, i) => <article key={item.title} className="rounded-xl border border-heritage-sand bg-white p-5 sm:p-6"><span className="flex h-9 w-9 items-center justify-center rounded-full bg-heritage-turquoise-light text-sm font-semibold text-heritage-turquoise-deep">0{i + 1}</span><h3 className="mt-4 text-lg font-semibold leading-snug text-gray-900">{item.title}</h3><p className="mt-2 text-sm leading-6 text-gray-600">{item.text}</p></article>)}
+            {capabilities.map((item, i) => <article key={item.title} data-cv-hover className="corporate-info-card rounded-xl border border-heritage-sand bg-white p-5 sm:p-6"><AnimatedVisual name={capabilityGlyphs[i]} replayOnHover className="w-16" /><h3 className="mt-4 text-lg font-semibold leading-snug text-gray-900">{item.title}</h3><p className="mt-2 text-sm leading-6 text-gray-600">{item.text}</p></article>)}
           </div>
           <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3">
             <LocalizedLink href={sub('features')} className="inline-flex items-center gap-2 font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Web sitesi özelliklerinin ayrıntılarını inceleyin<ArrowRightIcon className="h-4 w-4 rtl:rotate-180" aria-hidden="true" /></LocalizedLink>
@@ -204,31 +219,31 @@ function TurkishCorporateWebsiteOverview({ project }: { project?: Project | null
       <section className="container mx-auto max-w-[1200px] px-4 section-compact">
         <div className="grid gap-8 lg:grid-cols-[.85fr_1.15fr] lg:items-center">
           <div><h2 className="reveal text-headline font-medium text-gray-900">Kurumsal Web Sitesi Tasarımında Sayfalar ve İşlevler</h2><p className="mt-4 text-body leading-relaxed text-gray-600">Site haritası; işletmenizin sunduklarına, müşterilerinizin aradığı bilgilere ve içerikleri kimin yöneteceğine göre şekillenir. Aşağıdaki yapı örnek niteliğindedir.</p></div>
-          <div className="reveal rounded-2xl border border-heritage-sand bg-heritage-ivory p-5 sm:p-7"><p className="text-overline text-heritage-turquoise-deep">Örnek site yapısı</p><ul className="mt-3 grid grid-cols-2 gap-x-5">{['Hakkımızda ve ekip', 'Hizmetler', 'Ürünler veya teknik katalog', 'Projeler ve referanslar', 'Haberler veya blog', 'İletişim ve teklif talebi'].map(item => <li key={item} className="flex min-h-12 items-center border-b border-heritage-sand py-2 text-sm leading-snug text-gray-700">{item}</li>)}</ul><p className="mt-4 text-sm leading-6 text-gray-600">Kariyer sayfaları, şubeler, indirilebilir belgeler ve dış sistem entegrasyonları gereksinimlere göre ayrıca değerlendirilir.</p></div>
+          <figure className="m-0 rounded-2xl border border-heritage-sand bg-heritage-ivory p-4 sm:p-6"><AnimatedVisual name="site-tree" labels={[{ slot: 'slot-root', text: <span className="text-white">Ana Sayfa</span>, delay: 0.3 }, ...sitemapPages.map((page, i) => ({ slot: `slot-${i + 1}`, text: page, delay: 0.95 + i * 0.12 }))]} /><figcaption className="mt-4 text-sm leading-6 text-gray-600">Örnek site yapısı. Kariyer sayfaları, şubeler, indirilebilir belgeler ve dış sistem entegrasyonları gereksinimlere göre ayrıca değerlendirilir.</figcaption></figure>
         </div>
       </section>
 
       <section className="bg-background-gray">
         <div className="container mx-auto max-w-[1200px] px-4 section-compact">
           <h2 className="reveal max-w-3xl text-headline font-medium text-gray-900">Yeni Web Sitesi veya Mevcut Sitenizin Yenilenmesi</h2>
-          <div className="reveal-group mt-6 grid gap-5 md:grid-cols-2">
+          <div className="mt-6 grid gap-6 lg:grid-cols-[.9fr_1.1fr] lg:items-center"><div className="reveal-group grid gap-5">
             <article className="rounded-2xl border border-gray-200 border-t-4 border-t-heritage-turquoise bg-white p-5 sm:p-6"><h3 className="text-title font-semibold text-gray-900">Yeni Bir Kurumsal Web Sitesi Oluşturma</h3><p className="mt-3 text-body leading-relaxed text-gray-600">Sayfa yapısını ve içerik sorumluluklarını planlar, marka sunumunu tasarlar ve üzerinde anlaşılan sayfa ve işlevleri geliştiririz. İçerik hazırlığı, formlar ve içerik yönetimi kapsamı teklifte netleştirilir.</p></article>
             <article className="rounded-2xl border border-gray-200 border-t-4 border-t-heritage-saffron bg-white p-5 sm:p-6"><h3 className="text-title font-semibold text-gray-900">Mevcut Web Sitesini Yenileme</h3><p className="mt-3 text-body leading-relaxed text-gray-600">Mevcut içeriği, kullanılabilirliği ve teknik gereksinimleri inceler; iyileştirme ve geçiş kapsamını birlikte belirleriz. URL’ler değişiyorsa yönlendirmeler planlanabilir ve yayın sonrası kontroller yapılabilir. Arama görünürlüğünde sıfır kayıp garantisi verilmez.</p><Link href={corporateWebsiteArticlePath('web-sitesi-yenileme')} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Yenileme planlama rehberini okuyun<ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link></article>
-          </div>
+          </div><BeforeAfterCompare /></div>
         </div>
       </section>
 
       <section className="container mx-auto max-w-[1200px] px-4 section-compact">
         <div className="grid gap-8 lg:grid-cols-[1fr_.8fr] lg:items-center">
           <div><h2 className="reveal text-headline font-medium text-gray-900">Çok Dilli Kurumsal Web Sitesi Seçenekleri</h2><p className="mt-4 text-body leading-relaxed text-gray-600">Türkçe, İngilizce, Almanca, Arapça ve Urduca sayfalar planlanabilir. Her dil için içerik, menü ve formlar ayrı ele alınır. Arapça ve Urduca sürümlerde metin yönü ve sayfa düzeni RTL kullanımına göre kontrol edilir.</p><p className="mt-3 text-sm leading-6 text-gray-600">Çeviri, editoryal inceleme ve onay sorumlulukları proje kapsamına göre belirlenir; otomatik olarak dahil değildir. Ek diller, içerik miktarı ve kontrol ihtiyacına bağlı olarak kapsamı ve maliyeti etkiler.</p><div className="mt-5 flex flex-wrap gap-2">{['Türkçe', 'İngilizce', 'Almanca', 'Arapça', 'Urduca'].map(language => <span key={language} className="rounded-full border border-heritage-sand bg-heritage-ivory px-3 py-1.5 text-sm text-gray-700">{language}</span>)}</div><Link href={corporateWebsiteArticlePath('ihracat-firmalari-icin-cok-dilli-web-sitesi')} className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">İhracat firmaları için çok dilli site rehberi<ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link></div>
-          <div dir="ltr" aria-label="Çok dilli arayüz için örnek gösterim" className="reveal rounded-2xl border border-heritage-sand bg-heritage-ivory p-4 sm:p-6"><p className="text-overline text-heritage-turquoise-deep">Örnek gösterim</p><div className="mt-4 rounded-xl border border-heritage-sand bg-white p-4"><div className="flex flex-wrap items-center justify-between gap-3 border-b border-heritage-sand pb-3"><span className="font-medium">PakSoft</span><div className="flex gap-2 text-xs text-gray-500">TR　EN　DE　AR　UR</div></div><div className="grid gap-2 pt-4"><i className="h-2 w-1/2 rounded bg-heritage-sand"/><i className="h-2 w-4/5 rounded bg-heritage-ivory"/><div className="mt-2 flex justify-end"><div dir="rtl" className="rounded bg-heritage-turquoise-light px-3 py-2 text-sm text-gray-700">العربية · اردو</div></div></div></div></div>
+          <MultilingualDemo />
         </div>
       </section>
 
       <section className="bg-background-gray">
         <div className="container mx-auto max-w-[1200px] px-4 section-compact">
           <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end"><div><h2 className="reveal text-headline font-medium text-gray-900">Kurumsal Web Sitesi Yapımı Nasıl İlerler?</h2><p className="mt-3 max-w-3xl text-body leading-relaxed text-gray-600">Her aşamada ekiplerin sorumluluklarını ve onay noktalarını netleştiririz. Takvim; kapsam, içeriklerin hazır olması ve geri bildirim sürelerine bağlıdır.</p></div><LocalizedLink href={sub('process')} className="inline-flex items-center gap-2 font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Proje sürecinin ayrıntılarını inceleyin<ArrowRightIcon className="h-4 w-4 rtl:rotate-180" aria-hidden="true" /></LocalizedLink></div>
-          <ol className="reveal-group mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">{stages.map((stage, i) => <li key={stage.title} className="h-full rounded-xl border border-gray-200 bg-white p-4 sm:p-5"><span className="text-overline text-heritage-turquoise-deep">0{i + 1}</span><h3 className="mt-2 font-semibold leading-snug text-gray-900">{stage.title}</h3><p className="mt-3 text-sm leading-6 text-gray-700"><strong>PakSoft: </strong>{stage.team}</p><p className="mt-2 text-sm leading-6 text-gray-600"><strong>Müşteri: </strong>{stage.client}</p></li>)}</ol>
+          <ol ref={stagesPlayback.ref} className="reveal-group mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">{stages.map((stage, i) => <li key={stage.title} className="h-full rounded-xl border border-gray-200 bg-white p-4 sm:p-5"><div className="flex items-center justify-between"><AnimatedVisual name={stageIcons[i]} state={stagesPlayback.state} className="w-12" style={{ '--cv-delay': `${i * 0.35}s` } as CSSProperties} /><span className="text-overline text-heritage-turquoise-deep">0{i + 1}</span></div><h3 className="mt-2 font-semibold leading-snug text-gray-900">{stage.title}</h3><p className="mt-3 text-sm leading-6 text-gray-700"><strong>PakSoft: </strong>{stage.team}</p><p className="mt-2 text-sm leading-6 text-gray-600"><strong>Müşteri: </strong>{stage.client}</p></li>)}</ol>
         </div>
       </section>
 
@@ -241,12 +256,12 @@ function TurkishCorporateWebsiteOverview({ project }: { project?: Project | null
 
       <section className="bg-heritage-ivory">
         <div className="container mx-auto max-w-[1200px] px-4 section-compact">
-          <div className="grid gap-8 lg:grid-cols-2"><div><h2 className="reveal text-headline font-medium text-gray-900">Kurumsal Web Sitesi Fiyatını Neler Belirler?</h2><p className="mt-4 text-body leading-relaxed text-gray-600">Web sitesi yapım teklifi; gereken tasarım, geliştirme ve içerik çalışmasına göre hazırlanır. Başlıca etkenler şunlardır:</p><ul className="mt-4 grid gap-x-6 sm:grid-cols-2">{['Özel sayfa şablonları ve işlevler', 'Dil sayısı', 'İçerik yönetim sistemi gereksinimleri', 'İçerik hazırlığı veya aktarımı', 'Entegrasyonlar', 'Hosting, lisans ve bakım tercihleri'].map(item => <li key={item} className="border-b border-heritage-sand py-3 text-sm leading-6 text-gray-700">{item}</li>)}</ul><LocalizedLink href={sub('pricing')} className="mt-5 inline-flex items-center gap-2 font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Kurumsal Web Sitesi Fiyatları ve Kapsamı<ArrowRightIcon className="h-4 w-4 rtl:rotate-180" aria-hidden="true" /></LocalizedLink></div><aside className="reveal rounded-2xl border border-heritage-sand bg-white p-5 sm:p-6"><h3 className="text-title font-semibold text-gray-900">Proje ve devam eden giderler</h3><p className="mt-3 text-body leading-relaxed text-gray-600">Proje ücreti; alan adı, hosting, lisanslar ve devam eden bakım gibi düzenli giderlerden ayrı değerlendirilir. Projeniz için geçerli kalemler teklifte belirtilir; burada sabit fiyat veya paket varsayımı sunulmaz.</p></aside></div>
+          <div className="grid gap-8 lg:grid-cols-2"><div><h2 className="reveal text-headline font-medium text-gray-900">Kurumsal Web Sitesi Fiyatını Neler Belirler?</h2><p className="mt-4 text-body leading-relaxed text-gray-600">Web sitesi yapım teklifi; gereken tasarım, geliştirme ve içerik çalışmasına göre hazırlanır. Başlıca etkenler şunlardır:</p><ul className="mt-4 grid gap-x-6 sm:grid-cols-2">{['Özel sayfa şablonları ve işlevler', 'Dil sayısı', 'İçerik yönetim sistemi gereksinimleri', 'İçerik hazırlığı veya aktarımı', 'Entegrasyonlar', 'Hosting, lisans ve bakım tercihleri'].map(item => <li key={item} className="border-b border-heritage-sand py-3 text-sm leading-6 text-gray-700">{item}</li>)}</ul><LocalizedLink href={sub('pricing')} className="mt-5 inline-flex items-center gap-2 font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Kurumsal Web Sitesi Fiyatları ve Kapsamı<ArrowRightIcon className="h-4 w-4 rtl:rotate-180" aria-hidden="true" /></LocalizedLink></div><div className="space-y-5"><figure className="m-0 rounded-2xl border border-heritage-sand bg-white p-4 sm:p-5"><AnimatedVisual name="scope-builder" labels={scopeChips.map((chip, i) => ({ slot: `slot-chip-${i + 1}`, text: chip, delay: 0.4 + i * 0.2, className: 'font-medium text-gray-700' }))} /><figcaption className="mt-3 text-xs leading-5 text-gray-600">Örnek gösterim · Teklif, projeye alınan kalemlere göre şekillenir.</figcaption></figure><aside className="rounded-2xl border border-heritage-sand bg-white p-5 sm:p-6"><h3 className="text-title font-semibold text-gray-900">Proje ve devam eden giderler</h3><p className="mt-3 text-body leading-relaxed text-gray-600">Proje ücreti; alan adı, hosting, lisanslar ve devam eden bakım gibi düzenli giderlerden ayrı değerlendirilir. Projeniz için geçerli kalemler teklifte belirtilir; burada sabit fiyat veya paket varsayımı sunulmaz.</p></aside></div></div>
         </div>
       </section>
 
       <section className="container mx-auto max-w-[1200px] px-4 section-compact">
-        <div className="grid gap-8 lg:grid-cols-[.75fr_1.25fr]"><div><h2 className="reveal text-headline font-medium text-gray-900">Yayından Sonra İçerik Yönetimi ve Destek</h2><p className="mt-4 text-body leading-relaxed text-gray-600">İçerik düzenleme erişimi ve devir materyalleri proje kapsamında planlanabilir. Hesap erişimleri, teslimatlar, sahiplik, üçüncü taraf lisansları ve varsa devam eden destek teklif ve sözleşmede belgelenir.</p></div><ul className="reveal grid content-start gap-x-6 sm:grid-cols-2">{['İçerik düzenleme erişimi', 'Hesap ve hosting bilgileri', 'Devir materyalleri', 'Üçüncü taraf lisansları', 'Kararlaştırılan bakım seçenekleri'].map(item => <li key={item} className="flex gap-3 border-b border-gray-200 py-4 text-sm leading-6 text-gray-700"><CheckIcon className="mt-1 h-4 w-4 shrink-0 text-heritage-turquoise-deep" aria-hidden="true" />{item}</li>)}</ul></div>
+        <div className="grid gap-8 lg:grid-cols-[.75fr_1.25fr]"><div><h2 className="reveal text-headline font-medium text-gray-900">Yayından Sonra İçerik Yönetimi ve Destek</h2><p className="mt-4 text-body leading-relaxed text-gray-600">İçerik düzenleme erişimi ve devir materyalleri proje kapsamında planlanabilir. Hesap erişimleri, teslimatlar, sahiplik, üçüncü taraf lisansları ve varsa devam eden destek teklif ve sözleşmede belgelenir.</p><figure className="m-0 mt-6"><AnimatedVisual name="handover" labels={handoverRows.map((row, i) => ({ slot: `slot-row-${i + 1}`, text: row, delay: 0.25 + i * 0.1, className: 'font-medium text-gray-700' }))} /><figcaption className="mt-3 text-xs leading-5 text-gray-600">Örnek gösterim · Devredilecek erişim ve dosyalar teklif ve sözleşmede listelenir.</figcaption></figure></div><ul className="reveal grid content-start gap-x-6 sm:grid-cols-2">{['İçerik düzenleme erişimi', 'Hesap ve hosting bilgileri', 'Devir materyalleri', 'Üçüncü taraf lisansları', 'Kararlaştırılan bakım seçenekleri'].map(item => <li key={item} className="flex gap-3 border-b border-gray-200 py-4 text-sm leading-6 text-gray-700"><CheckIcon className="mt-1 h-4 w-4 shrink-0 text-heritage-turquoise-deep" aria-hidden="true" />{item}</li>)}</ul></div>
       </section>
 
       <section aria-labelledby="corporate-guides" className="bg-heritage-ivory">
@@ -294,7 +309,7 @@ function TurkishCorporateWebsiteOverview({ project }: { project?: Project | null
       </section>
 
       <section className="bg-gray-950">
-        <div className="container mx-auto max-w-5xl px-4 section-compact text-center"><h2 className="reveal text-headline font-medium text-white">Kurumsal Web Sitesi Projenizi Konuşalım</h2><p className="mx-auto mt-4 max-w-2xl text-body leading-relaxed text-gray-300">İşletmenizi, mevcut web sitenizi ve ihtiyaç duyduğunuz sayfa ve işlevleri paylaşın. Size uygun proje kapsamını birlikte değerlendirelim.</p><LocalizedLink href="/start-project?service=corporate-website-design" className="mt-6 inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-heritage-turquoise px-6 py-3 font-semibold text-white transition-colors motion-reduce:transition-none hover:bg-heritage-turquoise-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950">Projenizi Konuşalım<ArrowRightIcon className="h-4 w-4 rtl:rotate-180" aria-hidden="true" /></LocalizedLink></div>
+        <div className="relative isolate container mx-auto max-w-5xl overflow-hidden px-4 section-compact text-center"><div aria-hidden="true" className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[30rem] w-[30rem] -translate-x-1/2 -translate-y-1/2"><GirihHalo size={480} color={H.saffron} opacity={0.45} /><HeritageParticles count={10} colors={[H.turquoise, H.saffron, H.terracotta]} /></div><h2 className="reveal text-headline font-medium text-white">Kurumsal Web Sitesi Projenizi Konuşalım</h2><p className="mx-auto mt-4 max-w-2xl text-body leading-relaxed text-gray-300">İşletmenizi, mevcut web sitenizi ve ihtiyaç duyduğunuz sayfa ve işlevleri paylaşın. Size uygun proje kapsamını birlikte değerlendirelim.</p><LocalizedLink href="/start-project?service=corporate-website-design" className="mt-6 inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-heritage-turquoise px-6 py-3 font-semibold text-white transition-colors motion-reduce:transition-none hover:bg-heritage-turquoise-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950">Projenizi Konuşalım<ArrowRightIcon className="h-4 w-4 rtl:rotate-180" aria-hidden="true" /></LocalizedLink></div>
       </section>
     </>
   );
