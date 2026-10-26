@@ -1,7 +1,8 @@
 'use client';
 
+import Image from 'next/image';
 import LocalizedLink from '@/components/LocalizedLink';
-import { ArrowRightIcon, CheckIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
+import { ArrowRightIcon, CheckIcon } from '@heroicons/react/24/outline';
 
 type Locale = 'en' | 'tr';
 
@@ -60,6 +61,9 @@ export default function CorporateWebsiteOverview({ locale, project }: { locale: 
   const projectIndustry = c.sunSector;
   const projectNeed = c.sunNeed;
   const projectContribution = c.sunContribution;
+  const projectImageAlt = locale === 'tr'
+    ? 'Sun Container kurumsal web sitesinin ana sayfası ve konteyner çözümleri'
+    : 'Sun Container corporate website homepage featuring its container solutions';
   const sub = (name: string) => `/services/corporate-website-design/${name}`;
   const enquiry = '/start-project?service=corporate-website-design';
 
@@ -68,7 +72,7 @@ export default function CorporateWebsiteOverview({ locale, project }: { locale: 
       <section id="selected-projects" className="container mx-auto max-w-[1200px] px-4 section-compact">
         <div className="mb-7 max-w-2xl"><h2 className="text-headline font-medium text-gray-900">{c.projects}</h2><p className="mt-3 text-body leading-relaxed text-gray-600">{c.projectsIntro}</p></div>
         <article className="grid overflow-hidden rounded-2xl border border-gray-200 bg-white md:grid-cols-[.8fr_1.2fr]">
-          <div className="flex min-h-48 items-center justify-center bg-gradient-to-br from-heritage-ivory to-heritage-turquoise-light p-7"><div className="max-w-xs rounded-2xl border border-heritage-sand bg-white p-5 shadow-sm"><GlobeAltIcon className="h-7 w-7 text-heritage-turquoise-deep"/><p className="mt-4 text-title font-medium text-gray-900">{projectName}</p><p className="mt-1 text-sm text-gray-500">{projectIndustry}</p><div className="mt-4 h-2 w-2/3 rounded bg-heritage-sand"/><div className="mt-2 h-2 w-4/5 rounded bg-heritage-ivory"/></div></div>
+          <div className="relative aspect-[16/10] min-h-48 overflow-hidden bg-heritage-ivory md:aspect-auto md:min-h-[20rem]"><Image src="/images/portfolio/sun-container.png" alt={projectImageAlt} fill priority sizes="(max-width: 767px) 100vw, 40vw" className="object-cover object-top" /></div>
           <div className="grid gap-5 p-6 sm:grid-cols-3"><div><h3 className="text-overline text-heritage-turquoise-deep">{c.client}</h3><p className="mt-2 text-sm leading-6 text-gray-600">{projectName}<br/>{projectIndustry}</p></div><div><h3 className="text-overline text-heritage-turquoise-deep">{c.need}</h3><p className="mt-2 text-sm leading-6 text-gray-600">{projectNeed}</p></div><div><h3 className="text-overline text-heritage-turquoise-deep">{c.contribution}</h3><p className="mt-2 text-sm leading-6 text-gray-600">{projectContribution}</p><LocalizedLink href="/projects/sun-container" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">{c.viewProject}<ArrowRightIcon className="h-4 w-4 rtl:rotate-180"/></LocalizedLink></div></div>
         </article>
       </section>
