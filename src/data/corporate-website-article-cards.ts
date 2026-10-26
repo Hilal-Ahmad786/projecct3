@@ -1,3 +1,8 @@
+// Listing/teaser cards for the Turkish corporate website guides. Kept as a
+// small standalone list (rather than derived from corporate-website-articles/
+// tr.json) because the client-rendered service overview imports it — deriving
+// it would ship both full article bodies to the browser. Keep titles, excerpts
+// and covers in sync with tr.json when editing an article.
 export const corporateWebsiteArticleCards = [
   {
     slug: 'web-sitesi-yenileme',
@@ -16,3 +21,5 @@ export const corporateWebsiteArticleCards = [
     imageAlt: 'Farklı dil sürümlerini temsil eden ürün sayfaları, dünya küresi ve ihracat konteynerlerinin yer aldığı PakSoft illüstrasyonu.',
   },
 ] as const;
+
+export const corporateWebsiteArticlePath = (slug: string) => `/tr/hizmetler/corporate-website-design/blog/${slug}`;

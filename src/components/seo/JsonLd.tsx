@@ -25,7 +25,7 @@ export interface OrganizationProps {
 export function OrganizationJsonLd({
   name = 'PakSoft',
   url = SITE_URL,
-  logo = `${SITE_URL}/logo.png`,
+  logo = `${SITE_URL}/images/logo/logo.png`,
   description = 'Enterprise web development, AI solutions, e-commerce, automation and digital marketing services',
   email = 'paksoft3@gmail.com',
   telephone = '+90 552 567 71 64',
@@ -304,6 +304,7 @@ export interface ArticleJsonLdProps {
   authorName?: string;
   section?: string;
   keywords?: string[];
+  inLanguage?: string;
 }
 
 export function ArticleJsonLd({
@@ -316,6 +317,7 @@ export function ArticleJsonLd({
   authorName = 'PakSoft',
   section,
   keywords,
+  inLanguage,
 }: ArticleJsonLdProps) {
   const schema = {
     '@context': 'https://schema.org',
@@ -331,10 +333,11 @@ export function ArticleJsonLd({
     publisher: {
       '@type': 'Organization',
       name: 'PakSoft',
-      logo: { '@type': 'ImageObject', url: `${SITE_URL}/images/logo.png` },
+      logo: { '@type': 'ImageObject', url: `${SITE_URL}/images/logo/logo.png` },
     },
     ...(section ? { articleSection: section } : {}),
     ...(keywords && keywords.length ? { keywords: keywords.join(', ') } : {}),
+    ...(inLanguage ? { inLanguage } : {}),
   };
 
   return (

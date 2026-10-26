@@ -3,6 +3,7 @@ import { localizeFullPath } from '@/lib/routes';
 import { Locale, defaultLocale } from '@/lib/i18n';
 import { getServicesForSitemap } from '@/lib/database/public-queries';
 import { isSubstantialService } from '@/lib/service-quality';
+import corporateWebsiteArticles from '@/data/corporate-website-articles/tr.json';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 const allLocales: Locale[] = ['en', 'tr', 'de', 'ar', 'ur'];
@@ -197,11 +198,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Turkish-only editorial guides for the corporate website service. They use
   // nested service URLs rather than the database-backed /blog route and have
   // no translated counterparts, so do not emit hreflang alternates.
-  ['web-sitesi-yenileme', 'ihracat-firmalari-icin-cok-dilli-web-sitesi'].forEach((slug) => {
+  Object.values(corporateWebsiteArticles).forEach(({ slug, dateModified }) => {
     entries.push(entry('tr', `/services/corporate-website-design/blog/${slug}`, {
       priority: PRIORITY.blogPost,
       changeFreq: 'monthly',
-      date: new Date('2026-10-26'),
+      date: new Date(dateModified),
       includeAlternates: false,
     }));
   });

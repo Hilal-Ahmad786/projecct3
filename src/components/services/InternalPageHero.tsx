@@ -4,7 +4,6 @@
 // Breadcrumbs + standardized display typography + a page-type scene.
 
 import React from 'react';
-import { motion } from 'framer-motion';
 import Breadcrumbs, { type Crumb } from '@/components/Breadcrumbs';
 import { useTranslations } from '@/hooks/useTranslations';
 
@@ -47,48 +46,37 @@ export default function InternalPageHero({
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="max-w-xl">
+            {/* Entrance uses the shared CSS hero-enter classes (globals.css), like
+                the service landing hero: the text is visible in the server HTML
+                and animates at first paint; reduced motion disables it. */}
             {/* eyebrow */}
-            <motion.div
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-              className="flex items-center gap-3 mb-6"
-            >
+            <div className="hero-enter flex items-center gap-3 mb-6">
               <div className="w-8 h-0.5" style={{ background: accentHex }} />
               <span className="text-overline" style={{ color: accentHex }}>{accentWord}</span>
-            </motion.div>
+            </div>
 
             {/* title */}
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.55, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-              className="text-display font-light text-gray-900 leading-none mb-6"
+            <h1
+              className="hero-enter text-display font-light text-gray-900 leading-none mb-6"
+              style={{ animationDelay: '0.1s' }}
             >
               {heading ? heading : <>{serviceName}<br /><span className="font-semibold" style={{ color: accentHex }}>{accentWord}</span></>}
-            </motion.h1>
+            </h1>
 
-            <motion.p
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-              className="text-body text-gray-600 leading-relaxed"
+            <p
+              className="hero-enter text-body text-gray-600 leading-relaxed"
+              style={{ animationDelay: '0.2s' }}
             >
               {subtitle}
-            </motion.p>
+            </p>
 
-            {actions && <div className="mt-6 flex flex-wrap gap-3">{actions}</div>}
+            {actions && <div className="hero-enter mt-6 flex flex-wrap gap-3" style={{ animationDelay: '0.3s' }}>{actions}</div>}
           </div>
 
           {scene && (
-            <motion.div
-              initial={{ opacity: 0, scale: 0.94 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="hidden lg:block"
-            >
+            <div className="hero-enter-side hidden lg:block">
               {scene}
-            </motion.div>
+            </div>
           )}
         </div>
       </div>

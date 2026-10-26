@@ -31,22 +31,30 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (article) {
     const localizedPath = articlePath('tr', articleSlug);
     const canonical = `${SITE_URL}/tr${localizedPath}`;
+    const image = { url: `${SITE_URL}${article.image}`, width: 1672, height: 941, alt: article.imageAlt };
+    // Turkish-only articles: self-referencing canonical, no hreflang alternates.
     return {
       title: article.title,
       description: article.description,
       alternates: { canonical },
+      robots: { index: true, follow: true },
       openGraph: {
         type: 'article',
         url: canonical,
+        siteName: 'PakSoft',
+        locale: 'tr_TR',
         title: article.title,
         description: article.description,
-        images: [`${SITE_URL}/images/blog/${articleSlug === 'web-sitesi-yenileme' ? 'web-sitesi-yenileme-kapak' : 'ihracat-cok-dilli-web-sitesi-kapak'}.webp`],
+        publishedTime: article.datePublished,
+        modifiedTime: article.dateModified,
+        authors: ['PakSoft'],
+        images: [image],
       },
       twitter: {
         card: 'summary_large_image',
         title: article.title,
         description: article.description,
-        images: [`${SITE_URL}/images/blog/${articleSlug === 'web-sitesi-yenileme' ? 'web-sitesi-yenileme-kapak' : 'ihracat-cok-dilli-web-sitesi-kapak'}.webp`],
+        images: [image.url],
       },
     };
   }
