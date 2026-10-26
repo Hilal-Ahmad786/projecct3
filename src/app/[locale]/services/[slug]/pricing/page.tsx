@@ -32,6 +32,22 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title,
     description,
     robots: serviceRobots(data.service),
+    ...(customMeta && validLocale === 'tr' ? {
+      openGraph: {
+        type: 'website' as const,
+        locale: 'tr_TR',
+        url: `${baseUrl}/${validLocale}${localizedPath}`,
+        title,
+        description,
+        images: ['/images/og-image.jpg'],
+      },
+      twitter: {
+        card: 'summary_large_image' as const,
+        title,
+        description,
+        images: ['/images/twitter-image.jpg'],
+      },
+    } : {}),
     alternates: {
       canonical: `${baseUrl}/${validLocale}${localizedPath}`,
       languages: generateAlternateLinks(path),

@@ -145,7 +145,7 @@ const content = {
     nav: { home: 'Ana Sayfa', services: 'Hizmetler', overview: 'Kurumsal Web Tasarım' },
     pages: {
       features: {
-        hero: 'Özellikleri', intro: 'Ekibinizin ve müşterilerinizin ihtiyaç duyduğu sayfa ve araçları seçin. Her özellik işletmenize, içeriklerinize ve iş akışlarınıza göre kapsamlandırılır.',
+        hero: 'Özellikleri', intro: 'Kurumsal web sitenizin özelliklerini işletmenizin hedeflerine, içeriklerine ve çalışma biçimine göre planlıyoruz. Şirket tanıtımı, içerik yönetimi, ürün kataloğu ve teklif talepleri gibi ihtiyaçları değerlendirerek projenize uygun işlevleri belirliyoruz.',
         title: 'Web Sitenizde Neler Olabilir?',
         features: [
           { title: 'Kurumsal tanıtım', what: 'Şirketinizi, ekibinizi, şubelerinizi, sertifikalarınızı ve seçili projelerinizi anlaşılır bir sayfa yapısında sunar.', why: 'Ziyaretçiler ne yaptığınızı, nerede hizmet verdiğinizi ve deneyiminizin ihtiyaçlarıyla nasıl ilişkili olduğunu anlayabilir.', scope: 'Sayfa sayısı, sağlanacak içerikler ve sertifika ya da proje galerileri teklifte netleştirilir.' },
@@ -161,10 +161,10 @@ const content = {
           { title: 'İsteğe bağlı çalışmalar', detail: 'Ek diller, içerik hazırlığı, aktarım veya entegrasyonlar talep halinde eklenebilir.' },
           { title: 'Ayrıca fiyatlandırılacak işler', detail: 'Üçüncü taraf abonelikleri, kapsamlı veri girişi, özel entegrasyonlar veya anlaşılan kapsam dışındaki işler.' },
         ] as Fact[],
-        cta: 'İhtiyaç Duyduğunuz Özellikleri Konuşalım',
+        cta: 'Projenizi Konuşalım', ctaIntro: 'Yayınlamak istediğiniz içerikleri, yönetmek istediğiniz bilgileri ve ziyaretçilerinizden beklediğiniz işlemleri paylaşın. Projenizin işlevlerini birlikte netleştirelim.', ctaSecondary: 'Fiyatlandırma ve Kapsamı İnceleyin',
       },
       technologies: {
-        hero: 'Altyapısı', intro: 'Uygulama yaklaşımını önermeden önce içerik ihtiyaçlarını, düzenleme iş akışlarını, esnekliği ve devam eden giderleri karşılaştırıyoruz.',
+        hero: 'Teknolojiler', intro: 'Web sitenizin altyapısını içerik yönetimi, işlevler, entegrasyonlar ve bakım ihtiyaçlarına göre belirliyoruz. Seçenekleri yalnızca geliştirme aşaması için değil, sitenizi yayından sonra nasıl kullanacağınızı da dikkate alarak değerlendiriyoruz.',
         title: 'İşletmeniz İçin Hangi Altyapı Uygun?',
         chooseTitle: 'Altyapıyı Nasıl Seçiyoruz?', chooseIntro: 'Altyapı gereksinimlere göre belirlenir: siteyi kim düzenleyecek, içerikler nasıl değişecek, neler bağlanacak ve bakımını kim üstlenecek? Hiçbir platform tek başına hız veya arama görünürlüğü garantisi vermez.',
         choose: [
@@ -184,47 +184,86 @@ const content = {
         integrationsTitle: 'Entegrasyonlar ve Genişletilebilirlik', integrationsText: 'Dış sistemleri bağlamadan önce mevcut API’leri, kimlik doğrulamayı, veri sahipliğini ve sağlayıcı kısıtlarını inceliyoruz. Test ortamı erişimi ve üçüncü taraf onayları gerekebilir.',
         foundationsTitle: 'Performans ve Erişilebilirlik Yaklaşımı', foundations: ['Mobil uyumlu düzenler ve verimli varlık kullanımı', 'Anlamsal sayfa yapısı ve klavyeyle kullanılabilir kontroller', 'Form etiketleri, hata ve onay durumları', 'Üzerinde anlaşılan tarayıcı ve cihazlarda test'],
         ownershipTitle: 'Sahiplik, Taşınabilirlik ve Devam Eden Giderler', ownership: 'Hesap erişimleri, kaynak kod ve tasarım teslimatları, içerik sahipliği, devir, dışa aktarma seçenekleri ve seçilen platformların ya da üçüncü taraf lisanslarının kısıtları teklif ve sözleşmede belirtilir. Hosting, alan adı, CMS planı, eklentiler ve bakım ayrı gider kalemleridir; tutarlar sağlayıcı ve tercihlere bağlıdır.',
-        cta: 'İşletmeniz İçin Uygun Altyapıyı Konuşalım',
+        cta: 'Projenizi Konuşalım',
       },
       process: {
-        hero: 'Proje Süreci', intro: 'Kurumsal web sitesi projeleri, sorumluluklar ve onay adımları net olduğunda daha sağlıklı ilerler. Aşağıdaki aşamalar kararlaştırılan kapsama göre düzenlenir.',
-        title: 'Birlikte Nasıl Çalışacağız?',
+        hero: 'Proje Süreci', intro: 'Kurumsal web sitesi projesini ihtiyaç analizi, tasarım, geliştirme ve yayın aşamalarıyla planlıyoruz. Her aşamada hazırlanacak çalışmaları, sizden gereken bilgileri ve onay noktalarını netleştirerek projenin takibini kolaylaştırıyoruz.',
+        title: 'Kurumsal Web Sitesi Yapım Aşamaları',
         stages: [
-          { title: 'Keşif ve kapsam', paksoft: 'Hedefleri, kitleyi, mevcut sistemleri ve gereksinimleri inceler; kapsam dışı işleri belgeleriz.', client: 'İş önceliklerini, paydaşları ve mevcut materyalleri paylaşır.', approval: 'Teklif ve proje kapsamı üzerinde anlaşılır.' },
-          { title: 'Site haritası ve içerik planı', paksoft: 'Sayfa yapısını, dil sürümlerini ve içerik gereksinimlerini taslak haline getiririz.', client: 'Sayfa sorumlularını belirler; mevcut metin, görsel ve belgeleri sağlar.', approval: 'Site haritası ve içerik sorumlulukları onaylanır.' },
-          { title: 'Tasarım ve onay', paksoft: 'Anlaşılan arayüz yaklaşımını ve sayfa taslaklarını hazırlarız.', client: 'Tasarımı ihtiyaçlara göre inceler ve geri bildirimleri bir araya getirir.', approval: 'Geliştirme öncesinde kararlaştırılan tasarımlar onaylanır.' },
-          { title: 'Geliştirme ve CMS kurulumu', paksoft: 'Onaylı şablonları, kararlaştırılan işlevleri ve içerik yönetimi yapısını geliştiririz.', client: 'Uygulama sorularını yanıtlar; gerekli hesap ve erişimleri sağlar.', approval: 'Çalışan ön izleme anlaşılan kapsamla karşılaştırılır.' },
-          { title: 'İçerik hazırlığı veya aktarımı', paksoft: 'Kapsama alınan içerikleri ekler ya da taşır; kararlaştırılan dil bağlantılarını kurarız.', client: 'Son metinleri, çevirileri, görselleri ve kayıtları sağlar veya onaylar.', approval: 'İçeriklerin son testlere hazır olduğu onaylanır.' },
-          { title: 'Test', paksoft: 'Kararlaştırılan formları, mobil düzeni, bağlantıları, tarayıcıları ve teknik gereksinimleri kontrol ederiz.', client: 'İş açısından kritik akışları test eder, bulguları tek bir incelemede iletir.', approval: 'Onay veya üzerinde anlaşılan düzeltmeler kaydedilir.' },
-          { title: 'Yayın ve devir', paksoft: 'Kararlaştırılan yayını hazırlar; erişimleri ve devir kalemlerini belgeleriz.', client: 'Alan adı, hosting ve yayın onaylarının hazır olduğunu doğrular.', approval: 'Yayın yetkisi verilir ve devir teslimi teyit edilir.' },
-          { title: 'Yayın sonrası destek', paksoft: 'Yalnızca sözleşmede tanımlanan izleme veya bakım hizmetini sunarız.', client: 'Yeni talepleri üzerinde anlaşılan destek kanalından iletir.', approval: 'Devam eden bakım hizmeti ayrıca kararlaştırılır.' },
+          { title: 'İhtiyaç Analizi ve Kapsam', paksoft: 'İş hedeflerini, hedef kitleleri, gereksinimleri ve teknik bağımlılıkları değerlendirir; kapsam dışı işleri görünür hale getiririz.', client: 'İş önceliklerini, mevcut siteyi ve bilinen ihtiyaçları paylaşır.', approval: 'Teslimatlar, hariç tutulan işler ve teknik varsayımlar üzerinde anlaşılmış proje kapsamı.' },
+          { title: 'Sayfa Yapısı ve İçerik Planı', paksoft: 'Site haritasını, içerik türlerini, dilleri ve ziyaretçi akışlarını planlarız.', client: 'Mevcut içerik ve marka bilgilerini paylaşır; içerik sahiplerini belirlemeye yardımcı olur.', approval: 'Sayfa ve içerik planı ile içerik sorumluluklarının netleşmesi.' },
+          { title: 'Tasarım ve Geri Bildirim', paksoft: 'Markaya uygun, farklı ekranlara uyum sağlayan düzenleri hazırlarız.', client: 'Tasarımları inceleyip geri bildirimleri bir araya getirir ve onay verir.', approval: 'Üzerinde anlaşılan tasarım yönü ve sayfa düzenlerinin onayı.' },
+          { title: 'Geliştirme ve Yönetim Paneli', paksoft: 'Onaylanan düzenleri, kapsamdaki sayfaları ve işlevleri geliştirir; gerekiyorsa kararlaştırılan entegrasyonları kurarız.', client: 'Uygulama sorularını yanıtlar ve gerekli dış hesap ya da test erişimlerini sağlar.', approval: 'İncelenebilir geliştirme sürümünün kapsamla birlikte gözden geçirilmesi.' },
+          { title: 'İçerik Yerleşimi ve Dil Kontrolleri', paksoft: 'Kapsamdaki metin, görsel ve belgeleri yerleştirir; kararlaştırılan dil sürümlerini kontrol ederiz.', client: 'İçerikleri ve çevirileri sağlar veya onaylar; editoryal sorumlulukları yürütür.', approval: 'İçeriklerle doldurulmuş sayfaların incelemeye hazır olması.' },
+          { title: 'Test ve Yayın Öncesi Onay', paksoft: 'Önemli cihaz ve tarayıcılarda sayfaları, formları, bağlantıları, erişilebilirlik kontrollerini ve teknik SEO kurulumunu test ederiz.', client: 'Son içeriği ve iş açısından önemli akışları inceler; bulguları paylaşır.', approval: 'Yayın kontrol listesi ve üzerinde anlaşılan son onay.' },
+          { title: 'Yayın, Teslim ve Kullanım Bilgilendirmesi', paksoft: 'Alan adı ve hosting koordinasyonunu yapar, yayını gerçekleştirir ve üzerinde anlaşılan erişim/devir kalemlerini belgeleriz.', client: 'Gerekli hesap erişimlerini ve yayın onayını sağlar; teslimatı gözden geçirir.', approval: 'Yayındaki web sitesi ve teklifte tanımlanan teslim/devir kapsamı.' },
         ] as ProcessStage[],
-        timingTitle: 'Takvim ve Kapsam Değişiklikleri', timing: 'Takvim; proje kapsamına, içeriklerin hazır olmasına, üçüncü taraf erişimlerine ve inceleme adımlarına bağlıdır. Yeni bir talep onaylanan sayfa ya da işlevleri değiştiriyorsa etkisini belgeler, ek çalışmaya başlamadan önce yeni kapsam üzerinde anlaşırız.',
-        cta: 'Proje Sürecini Konuşalım',
+        timingTitle: 'Web Sitesi Projesinin Süresini Neler Etkiler?', timing: 'Süre; benzersiz sayfa düzenleri ve işlevler, içeriklerin hazır olması, dil ve çeviri çalışmaları, entegrasyonlar ile üçüncü taraf onayları, geri bildirim süreleri ve varsa mevcut siteden geçişin karmaşıklığına bağlıdır. Takvim, kapsam netleştikten sonra kararlaştırılır; burada sabit teslim süresi taahhüt edilmez.',
+        cta: 'Projenizi Konuşalım', ctaIntro: 'İşletmenizi, mevcut web sitenizi ve hedeflerinizi paylaşın. Gereksinimlerinizi değerlendirerek proje kapsamını ve sonraki adımları birlikte belirleyelim.',
       },
       portfolio: {
-        hero: 'Proje Örneği', intro: 'Burada belgelenmiş bir kurumsal web sitesi projesi yer alıyor. Örnek, şirket büyüklüğü veya performans iddiası için değil; işletme ihtiyacı ve teslim edilen işlevler için gösterilmiştir.',
-        title: 'İhtiyacınıza Yakın Bir Web Sitesi Projesi', project: 'Sun Container GmbH', sector: 'Modüler konteyner ve inşaat', needTitle: 'İşletme ihtiyacı', need: 'Modüler konteyner çözümlerini, ürün bilgilerini ve kullanım örneklerini Almanya’daki işletme ve tüketicilere tanıtmak.',
+        hero: 'Portföy', intro: 'Farklı işletmeler için hazırlanan web sitesi projelerini inceleyin. Her örnekte işletmenin ihtiyacını, PakSoft’un katkısını ve proje kapsamında geliştirilen sayfa ve işlevleri açıklıyoruz.',
+        title: 'Kurumsal Web Sitesi Örnekleri ve Projelerimiz', project: 'Sun Container GmbH', sector: 'Modüler konteyner ve inşaat', needTitle: 'İşletme ihtiyacı', need: 'Modüler konteyner çözümlerini, ürün bilgilerini ve kullanım örneklerini Almanya’daki işletme ve tüketicilere tanıtmak.',
         contributionTitle: 'PakSoft katkısı', contribution: 'Ürün ve kullanım alanlarını tanıtan, referansları ve konfigüratöre geçişi sunan; ayrıca ayrı bir sipariş takip portalıyla desteklenen web sitesi.',
         deliveredTitle: 'Belgelenmiş işlevler', delivered: ['Ürün ve kullanım alanı sayfaları', 'Referanslar ve konfigüratöre geçiş', 'Ayrı sipariş takip portalı'],
         imageAlt: 'Sun Container web sitesi ana sayfasında konteyner çözümleri tanıtılıyor', viewProject: 'Sun Container projesini inceleyin', moreTitle: 'Benzer Projelerde Nelere Bakabilirsiniz?', more: 'Bir web sitesi projesini incelerken işletme ihtiyacını, kararlaştırılan kapsamı, içerik modelini ve teslim edilen işlevleri karşılaştırın. Benzer görünen bir tasarım, başka bir işletmenin süreçlerine veya altyapısına doğrudan uymayabilir.',
-        cta: 'Benzer Bir Projeyi Konuşalım',
+        cta: 'Projenizi Konuşalım',
       },
       pricing: {
-        hero: 'Proje Fiyatlandırması', intro: 'Sayfaları, işlevleri, içerik sorumluluklarını ve teknik gereksinimleri anladıktan sonra projeye özel teklif hazırlarız.',
-        title: 'Proje Yatırımını Neler Belirler?',
-        optionsTitle: 'Yaygın Kapsam Örnekleri', optionsIntro: 'Bunlar sabit paket veya fiyat basamağı değil, projelerin ele alınabileceği kapsam türleridir.',
+        hero: 'Fiyatlandırma', intro: 'Kurumsal web sitesi fiyatları; tasarım kapsamına, sayfa yapısına, dil seçeneklerine ve ihtiyaç duyulan işlevlere göre değişir. PakSoft olarak projenizin gereksinimlerini belirleyip teslimatları, ek hizmetleri ve devam eden giderleri açıklayan bir teklif hazırlıyoruz.',
+        title: 'İhtiyacınıza Uygun Proje Kapsamları', optionsTitle: 'İhtiyacınıza Uygun Proje Kapsamları', optionsIntro: 'Aşağıdaki seçenekler sabit fiyatlı paketler değil, teklif kapsamını konuşmaya yardımcı olan proje türleridir.',
         options: [
-          { title: 'Kurumsal web sitesi', detail: 'Anlaşılan sayfa planına göre kurumsal sayfalar, hizmet bilgileri ve talep yolları.' },
-          { title: 'Çok dilli web sitesi', detail: 'Ek dil yapıları, yerelleştirilmiş içerik alanları ve dile özel meta veriler.' },
-          { title: 'Özel kurumsal çözüm', detail: 'Belirli bir işletme ihtiyacına göre tanımlanan kataloglar, portallar, iş akışları veya entegrasyonlar.' },
-        ] as Fact[],
-        driversTitle: 'Kapsamı ve Fiyatı Etkileyenler', drivers: ['Özel sayfa şablonları ve modül sayısı', 'Dil sayısı ve RTL gereksinimleri', 'CMS, kullanıcı rolleri ve düzenleme akışları', 'İçerik yazımı, çeviri veya aktarımı', 'Formlar, katalog karmaşıklığı ve entegrasyonlar', 'Test, yayın ve devir gereksinimleri'],
-        optionalTitle: 'İsteğe Bağlı Hizmetler', optional: ['Metin yazımı ve içerik hazırlığı', 'Çeviri ve editoryal kontrol', 'Fotoğraf veya illüstrasyon', 'Üçüncü taraf entegrasyonları', 'Hosting kurulumu ve devam eden bakım'],
-        costsTitle: 'Devam Eden ve Üçüncü Taraf Giderleri', costs: 'Alan adı, hosting, CMS planları, ücretli eklentiler, dış servisler, bakım ve devam eden SEO ayrı gider kalemleridir. Tutarlar sağlayıcılara, seçilen planlara ve proje tercihine bağlıdır; geçerli kalemler biliniyorsa ayrıca belirtilir.',
-        quoteTitle: 'Sağlıklı Bir Teklif İçin Gerekenler', quote: ['İşletme hedefleriniz ve hedef kitleler', 'Yaklaşık sayfa ve dil listesi', 'Gerekli formlar, kataloglar veya entegrasyonlar', 'Mevcut içerik ve aktarım ihtiyaçları', 'Kullanılan altyapı, hosting ve alan adı bilgileri'],
-        commercialTitle: 'Ticari Koşullar', commercial: 'Ödeme aşamaları, revizyon sınırları, değişiklik yönetimi ve devam eden hizmetler teklif ve sözleşmede kararlaştırılır. Burada sabit fiyat veya standart ticari taahhüt yayınlamıyoruz.',
-        cta: 'Proje Teklifi İsteyin',
+          { title: 'Kurumsal Tanıtım Sitesi', detail: 'Kimler için: Şirketini, hizmetlerini, referanslarını ve iletişim bilgilerini sunmak isteyen işletmeler. Kapsam: Temel kurumsal sayfalar, mobil uyumlu tasarım, talep formları ve içerik yönetimi ihtiyacı netleştirilir. Maliyeti etkileyenler: Sayfa şablonları, form yapısı ve içerik hazırlığı.', who: 'Şirketini, hizmetlerini, referanslarını ve iletişim bilgilerini sunmak isteyen işletmeler.', scope: 'Temel kurumsal sayfalar, mobil uyumlu tasarım, talep formları ve içerik yönetimi gereksinimleri belirlenir.', drivers: 'Sayfa şablonları, form yapısı ve içerik hazırlığı.', cta: 'Kapsama Göre Teklif' },
+          { title: 'Çok Dilli Kurumsal Web Sitesi', detail: 'Kimler için: Birden fazla dilde müşteri ve iş ortağına ulaşan işletmeler. Kapsam: Dil bazlı sayfa ve menüler, yerelleştirilmiş formlar ve meta veriler; çeviri ve içerik giriş sorumlulukları kararlaştırılır. Maliyeti etkileyenler: Dil sayısı, içerik hacmi ve Arapça/Urduca RTL gereksinimleri.', who: 'Birden fazla dilde müşteri ve iş ortağına ulaşan işletmeler.', scope: 'Dil bazlı sayfa ve menüler, formlar ve meta veriler; çeviri ile içerik giriş sorumlulukları kararlaştırılır.', drivers: 'Dil sayısı, içerik hacmi ve Arapça/Urduca RTL gereksinimleri.', cta: 'Kapsama Göre Teklif' },
+          { title: 'Özel İşlevli Kurumsal Web Sitesi', detail: 'Kimler için: Katalog, gelişmiş talep akışları veya iş sistemleri bağlantısı gereken işletmeler. Kapsam: Ürün/teknik kataloglar, gelişmiş teklif formları ve CRM/API bağlantıları ihtiyaçlara göre tanımlanır. Maliyeti etkileyenler: Veri yapısı, dış sistemler ve özel iş akışları.', who: 'Katalog, gelişmiş talep akışları veya iş sistemleri bağlantısı gereken işletmeler.', scope: 'Ürün veya teknik kataloglar, gelişmiş teklif formları ve CRM/API bağlantıları ihtiyaçlara göre belirlenir.', drivers: 'Veri yapısı, dış sistemler ve özel iş akışları.', cta: 'Kapsama Göre Teklif' },
+        ],
+        comparisonTitle: 'Kurumsal Web Sitesi Paketlerinde Neler Karşılaştırılmalı?',
+        comparison: [
+          ['Sayfalar ve şablonlar', 'İçerik sayısı ile farklı sayfa düzenlerinin sayısını ayırır.', 'Sayfa türleri ve benzersiz tasarım şablonları teklifte netleştirilir.'],
+          ['Özel tasarım', 'Marka materyalleri ve özgün arayüz hazırlığının kapsamını belirtir.', 'Mevcut marka dosyaları ve istenen özel tasarım düzeyi değerlendirilir.'],
+          ['CMS ve düzenleme', 'Ekibinizin güncelleyebileceği içerik türleri ve kullanıcı rolleri.', 'Platform, modüller ve izin düzeyleri teklifte netleştirilir.'],
+          ['Diller', 'Her dil için sayfalar, gezinme, formlar ve meta veriler.', 'Dil sayısı, RTL düzeni ve çeviri sorumluluğu kararlaştırılır.'],
+          ['Formlar ve entegrasyonlar', 'Talep toplama akışları ve dış sistem bağlantıları.', 'Alanlar, API erişimi ve üçüncü taraf bağımlılıkları incelenir.'],
+          ['İçerik hazırlığı', 'Metin, görsel ve kayıtların hazırlanması veya siteye girilmesi.', 'İçeriği kimin sağlayacağı ve giriş kapsamı belirtilir.'],
+          ['Mevcut siteden geçiş', 'İçerik aktarımı, değişen URL’ler ve yayın kontrolleri.', 'Taşınacak içerik ve gerekli yönlendirmeler kapsamlandırılır.'],
+          ['Eğitim ve devir', 'Erişimlerin, dokümanların ve yönetim bilgisinin aktarımı.', 'Teslimat ve rehberlik kalemleri teklifte netleştirilir.'],
+          ['Destek ve bakım', 'Yayın sonrası güncelleme ve bakım hizmetleri.', 'Varsa kapsamı ve süresi ayrı olarak kararlaştırılır.'],
+        ],
+        factorsTitle: 'Kurumsal Web Tasarım Fiyatlarını Neler Etkiler?', factors: [
+          ['Sayfa Sayısı ve Tasarım Şablonları', 'Sayfa sayısı içerik miktarını, şablon sayısı ise farklı düzen ve bileşenlerin tasarım/geliştirme ihtiyacını anlatır. Benzer sayfalar ortak şablon kullanabilir; kapsam bu ayrım üzerinden belirlenir.'],
+          ['Tasarım ve Marka Gereksinimleri', 'Mevcut logo, renk ve görsel kurallar kullanılabilir; özel arayüzler veya marka materyallerinin hazırlanması ayrıca planlanabilir. İhtiyaç duyulan hazırlık teklifte açıklanır.'],
+          ['Dil Sayısı ve İçerik Hazırlığı', 'Dil sürümlerinin kurulumu, çeviri, yerelleştirme, içerik girişi ve son onay farklı işlerdir. Her birinin sorumlusu ve kapsamı ayrı belirlenir.'],
+          ['Yönetim Paneli ve İşlevler', 'Düzenlenecek içerik türleri, kullanıcı rolleri ve ek modüller geliştirme kapsamını etkiler. Gerekli yönetim işlevleri proje gereksinimlerine göre seçilir.'],
+          ['Entegrasyonlar', 'CRM veya başka sistem bağlantıları API erişimi, veri biçimi, kimlik doğrulama ve üçüncü taraf koşullarına bağlıdır. Bu bağımlılıklar değerlendirilerek kapsamlandırılır.'],
+          ['Mevcut Sitenin Taşınması', 'İçerik ve kayıtların aktarımı, korunacak URL’ler, değişen adresler için yönlendirmeler ve yayın kontrolleri geçiş çalışmasının kapsamını belirler.'],
+        ],
+        costsTitle: 'Web Sitesinin Yıllık ve Devam Eden Maliyetleri', costRows: [
+          ['Alan adı', 'Web adresinin kaydı ve yenilenmesi.', 'Yinelenen; kayıt sağlayıcısı ve hesap sahipliği anlaşmaya göre belirlenir.'],
+          ['Hosting veya platform aboneliği', 'Sunucu, barındırma veya seçilen platform planı.', 'Plan ve kullanıma göre yinelenebilir; sağlayıcı hesabı ve ödeme sorumlusu kararlaştırılır.'],
+          ['Ücretli tema, eklenti veya yazılım lisansları', 'Üçüncü taraf ürünlerin kullanım lisansları.', 'Lisans koşuluna göre yinelenebilir veya tek seferlik; gerekli olup olmadığı projeye bağlıdır.'],
+          ['Bakım ve güncellemeler', 'Yazılım güncellemeleri ve üzerinde anlaşılan bakım işleri.', 'İsteğe bağlı devam eden hizmet; kapsam ve sorumluluk ayrıca belirlenir.'],
+          ['İçerik güncelleme desteği', 'Sayfa, ürün veya haber içeriklerinin güncellenmesi.', 'Talebe veya anlaşmaya göre değişebilir; her projede zorunlu değildir.'],
+          ['Ayrı kapsamlı SEO ve reklam hizmetleri', 'Yayından sonra yürütülen sürekli arama motoru optimizasyonu ve reklam yönetimi.', 'Web sitesi geliştirmesinden ayrı, isteğe bağlı hizmetlerdir.'],
+        ],
+        optionalTitle: 'Ek Hizmetler ve Teklif Kapsamı', optional: ['Metin yazımı', 'Çeviri ve yerelleştirme', 'Fotoğraf, video ve özel görseller', 'Ek dil veya modül', 'CRM ve diğer sistem entegrasyonları', 'Sürekli SEO çalışmaları', 'Yayın sonrası bakım'], optionalNote: 'Bu çalışmalar ihtiyaca göre ayrıca kapsamlandırılabilir. Yazılı teklif, proje ücretine dahil olanları ve kapsam dışı kalemleri açıklar.',
+        approachTitle: 'Hazır Altyapı ve Özel Geliştirme Fiyatı Nasıl Etkiler?', approaches: [
+          ['Platform kurulumu ve özelleştirme', 'Hazır altyapıda mevcut araçların kurulumu ve uyarlanması planlanır; özel geliştirmede ihtiyaç duyulan işlevler projeye göre oluşturulur.'],
+          ['Lisans ve devam eden giderler', 'Platform, tema veya eklentiler abonelik ya da lisans bedeli doğurabilir. Tutar ve koşullar ilgili sağlayıcıya bağlıdır.'],
+          ['Bakım, taşınabilirlik ve içerik yönetimi', 'Güncelleme sorumluluğu, içerik düzenleme kolaylığı ve dışa aktarma olanakları seçilen teknolojiye göre değişir. Bu gereksinimler seçim öncesinde karşılaştırılır.'],
+        ],
+        quoteTitle: 'Projeniz İçin Teklif Nasıl Hazırlanır?', quoteSteps: ['İşletmenizi ve hedeflerinizi öğreniyoruz.', 'Sayfa, dil ve işlev gereksinimlerini belirliyoruz.', 'İçerik ve teknik sorumlulukları netleştiriyoruz.', 'Kapsamı ve ticari koşulları yazılı teklif olarak sunuyoruz.'], quote: ['Mevcut web siteniz (varsa)', 'İhtiyaç duyduğunuz sayfalar veya içerik türleri', 'Diller', 'Entegrasyonlar', 'Hedef yayın tarihi', 'İsteğe bağlı bütçe aralığı'], quoteIntro: 'Ayrıntılı sayfa sayısı veya bütçe paylaşımı olmadan da görüşmeye başlayabilirsiniz. Mevcut site, diller, gerekli bağlantılar ve hedef tarih kapsamı anlamaya yardımcı olur.',
+        faqTitle: 'Kurumsal Web Sitesi Fiyatları Hakkında Sorular', faqs: [
+          ['Kurumsal web sitesi için neden tek bir fiyat yok?', 'Tasarım şablonları, diller, içerik, yönetim paneli ve entegrasyon gereksinimleri projeden projeye değişir. Bu nedenle önce kapsam belirlenir, ardından yazılı teklif hazırlanır.'],
+          ['Sayfa sayısı fiyatı nasıl etkiler?', 'Sayfaların sayısı kadar kaç farklı tasarım şablonu ve işlev gerektiği de önemlidir. Benzer içerik sayfaları ortak bir şablon kullanabilir; kesin kapsam teklif aşamasında belirlenir.'],
+          ['Alan adı ve hosting proje ücretine dahil mi?', 'Her proje için aynı varsayım geçerli değildir. Alan adı, hosting veya platform aboneliğinin kim tarafından sağlanacağı ve ödeneceği teklif ya da anlaşmada açıklanır.'],
+          ['Çok dilli web sitesi fiyatı nasıl belirlenir?', 'Dil sayısı, her dildeki içerik ve form kapsamı, çeviri/yerelleştirme sorumluluğu ve RTL düzeni gibi gereksinimler değerlendirilir. Çeviri otomatik olarak dahil kabul edilmez.'],
+          ['Mevcut siteyi yenilemek daha ekonomik olabilir mi?', 'Bu, mevcut altyapının kullanılabilirliğine, korunacak içeriklere ve gerekli değişikliklere bağlıdır. İçerik, URL’ler ve işlevler incelenmeden maliyet karşılaştırması yapılamaz.'],
+          ['SEO hizmeti web sitesi yapım ücretine dahil mi?', 'Teknik SEO temelleri ile sürekli SEO çalışmaları farklı kapsamlardır. Projede hangi teknik çalışmaların yer aldığı ve devam eden hizmet gerekip gerekmediği teklifte belirtilir.'],
+          ['Yayından sonra hangi giderler devam eder?', 'Alan adı yenilemesi, hosting/platform planı ve bazı lisanslar yinelenebilir. Bakım, içerik güncelleme ve SEO gibi hizmetler seçime ve ayrı anlaşmaya bağlıdır.'],
+          ['Proje sırasında yeni bir özellik istersek ne olur?', 'Yeni talebin mevcut kapsam ve takvime etkisi değerlendirilir. Ek çalışma, etkisi ve ticari koşulları üzerinde anlaşılınca planlanır.'],
+        ],
+        commercialTitle: 'Fiyatlandırma Notu', commercial: 'Repository’de bu hizmet için onaylanmış sabit fiyat veya paket tutarı bulunmuyor. Bu nedenle fiyat ya da paket taahhüdü yayınlamıyoruz; kapsam onaylandıktan sonra yazılı teklif sunuluyor.',
+        cta: 'Kurumsal Web Sitesi Projeniz İçin Teklif Alın', ctaIntro: 'İşletmenizi, mevcut web sitenizi ve ihtiyaç duyduğunuz özellikleri paylaşın. Projenizin kapsamını birlikte netleştirerek size uygun bir teklif hazırlayalım.',
       },
       blog: {
         hero: 'Rehberleri', intro: 'Kurumsal web sitesini planlama, yaptırma ve yönetme sürecine yönelik uygulanabilir öneriler. Her rehber karar vermenize yardımcı olacak sorular içerir.',
@@ -240,18 +279,47 @@ const content = {
         cta: 'Web Sitesi Projenizi Konuşalım',
       },
       faq: {
-        hero: 'Hakkında Sık Sorulanlar', intro: 'Kurumsal web sitesi projelerinde kapsam, içerik, sahiplik, teslimat ve devam eden giderlerle ilgili yanıtlar.',
-        title: 'Web Sitesi Ekibiyle Çalışmadan Önce Bilmeniz Gerekenler',
+        hero: 'Sık Sorulan Sorular', intro: 'Web sitesi projenize başlamadan önce kapsam, içerik hazırlığı, maliyet ve teslim süreci hakkında bilgi edinin. Buradaki yanıtlar genel yaklaşımımızı açıklar; projenize özel teslimatlar ve ticari koşullar teklifinizde netleştirilir.',
+        title: 'Kurumsal Web Sitesi Hakkında Sık Sorulan Sorular',
         groups: [
-          { title: 'Kapsam', items: [['Tasarım ve geliştirmeyi birlikte yapıyor musunuz?', 'Evet. Planlama, arayüz tasarımı ve web sitesi geliştirme tek bir proje kapsamında ele alınabilir. Teklifte projeniz için kararlaştırılan sayfalar, işlevler, teslimatlar ve sorumluluklar listelenir.'], ['Yeni site yapabilir veya mevcut sitemizi yenileyebilir misiniz?', 'Her iki çalışma da değerlendirilebilir. Yenileme öncesinde mevcut içerikleri, kullanılabilirliği, teknik kısıtları ve URL değişikliklerini inceler, ardından iyileştirme ve geçiş kapsamını belirleriz.']] },
-          { title: 'İçerik ve diller', items: [['Metin ve görselleri kim sağlar?', 'Son metin, görsel, belge ve içerik girişinin sorumluları teklifte kararlaştırılır. Metin yazımı veya aktarım yalnızca açıkça kapsamlandırıldıysa dahil edilir.'], ['Web sitesi birden fazla dili destekleyebilir mi?', 'Dillere özel sayfalar, menüler, formlar ve meta veriler planlanabilir. Çeviri, editoryal inceleme ve Arapça ya da Urduca RTL çalışmaları sorumlularıyla birlikte kapsamda belirlenir.']] },
-          { title: 'Düzenleme ve sahiplik', items: [['Ekibimiz web sitesini düzenleyebilir mi?', 'Seçilen CMS gerekli içerikleri destekliyorsa düzenleme iş akışı projeye eklenebilir. Düzenlenebilir alanlar, roller ve erişim proje için netleştirilir.'], ['Hangi erişim ve dosyaları teslim alacağız?', 'Hesap erişimleri, kod ve tasarım teslimatları, içerik sahipliği ve üçüncü taraf lisans kısıtları teklif ve sözleşmede belgelenir.']] },
-          { title: 'Takvim ve revizyonlar', items: [['Takvimi neler etkiler?', 'Kapsam, içeriklerin hazır olması, entegrasyonlar, üçüncü taraf erişimi ve inceleme döngüleri takvimi etkiler. Gereksinimler anlaşıldıktan sonra proje takvimi kararlaştırılır.'], ['Tasarım değişiklikleri nasıl ele alınır?', 'Geri bildirim ve onay aşamaları teklifte belirlenir. Onaylı kapsamı değiştiren talepler incelenir, belgelenir ve ek çalışmaya başlamadan önce kararlaştırılır.']] },
-          { title: 'SEO ve site geçişi', items: [['Hangi SEO çalışmaları dahil?', 'Web sitesinde açıklayıcı sayfa yapısı, meta veriler, taranabilir navigasyon ve mobil uyum gibi teknik temeller uygulanabilir. Sürekli SEO kampanyaları ayrı bir hizmettir.'], ['Değişen URL’leri nasıl ele alıyorsunuz?', 'URL’ler değişiyorsa yönlendirmeler hazırlanabilir ve anlaşılan geçiş kapsamına yayın sonrası izleme eklenebilir. Arama görünürlüğü değişebilir; sıfır kayıp garantisi verilmez.']] },
-          { title: 'Giderler ve destek', items: [['Yayın sonrasında hangi giderler olabilir?', 'Alan adı, hosting, CMS planı, ücretli eklentiler, üçüncü taraf servisleri ve isteğe bağlı bakım yinelenen giderler olabilir. Bilinen sağlayıcı ve kalemler ayrıca belirtilir.'], ['Yayın sonrası hangi destek veriliyor?', 'Yalnızca teklif ve sözleşmede yazılı destek veya bakım dahildir. Devam eden hizmetler ayrıca kapsamlandırılır.']] },
-          { title: 'Uluslararası çalışma', items: [['Uzaktan birlikte çalışabilir miyiz?', 'İletişim, inceleme sorumluları ve onay noktaları ekibinizin çalışma düzenine göre kararlaştırılabilir.'], ['Web sitesi hangi dilleri destekleyebilir?', 'İhtiyaca göre Türkçe, İngilizce, Almanca, Arapça ve Urduca sürümler planlanabilir. Çeviri sorumlulukları ile Arapça ve Urduca RTL kontrolleri kapsamda belirlenir.']] },
+          { title: 'Hizmet ve Proje Kapsamı', items: [
+            ['Kurumsal web sitesi kimler için uygundur?', 'Kurumsal web sitesi; şirketini, hizmetlerini, ürünlerini, referanslarını ve iletişim yollarını müşterilerine anlatmak isteyen işletmelere uygundur. Yerleşik KOBİ’ler, üreticiler, ihracatçılar ve hizmet şirketleri için sayfa ve işlevler işletme ihtiyacına göre planlanır; hizmet yalnızca büyük kurumlara yönelik değildir.'],
+            ['Tasarım ve geliştirme aynı hizmetin parçası mı?', 'Evet. PakSoft, planlama, arayüz tasarımı, web sitesinin geliştirilmesi ve yayın hazırlığını tek proje kapsamında ele alabilir. Hangi sayfaların, işlevlerin, içerik çalışmalarının ve teslimatların dahil olduğu teklifinizde açıklanır.'],
+            ['Mevcut web sitemizi yenileyebilir misiniz?', 'Evet. Önce mevcut içerik ve işlevleri, URL yapısını, kullanılan altyapıyı ve korunması gereken bağlantıları değerlendiririz. Bulgulara göre hedefli iyileştirme, yeniden tasarım veya daha kapsamlı geçiş için uygun kapsamı belirleriz.'],
+            ['Ürün kataloğu ile e-ticaret sitesi arasındaki fark nedir?', 'Ürün kataloğu, ürünleri ve teknik bilgileri tanıtır; teklif veya iletişim talebi toplayabilir. E-ticaret sitesi ise kapsamına göre sepet, ödeme ve sipariş yönetimi gibi satış akışlarını içerir. Çevrim içi satış ihtiyacı varsa bunu ayrı e-ticaret kapsamı olarak planlarız.'],
+          ] },
+          { title: 'Fiyatlandırma ve Devam Eden Giderler', items: [
+            ['Kurumsal web sitesi fiyatı nasıl belirlenir?', 'Teklif; benzersiz sayfa şablonlarını, gerekli işlevleri, dil sayısını, içerik hazırlığı veya aktarımını ve entegrasyonları dikkate alır. Bu unsurlar netleşince proje kapsamı ve ticari koşulları içeren yazılı teklif hazırlanır; burada sabit fiyat veya paket tutarı yayımlanmamıştır.'],
+            ['Alan adı ve hosting proje ücretine dahil mi?', 'Her proje için geçerli tek bir dahil olma koşulu bulunmuyor. Alan adı, hosting veya platform aboneliğinin mevcut hesabınızdan mı yönetileceği, yeni bir hizmet gerekip gerekmediği ve ilgili ücret sorumlulukları teklifte belirtilir.'],
+            ['Yayından sonra hangi giderler oluşabilir?', 'Alan adı yenilemesi, hosting veya platform aboneliği, ücretli lisanslar ve kullanıma bağlı üçüncü taraf servisleri yinelenen gider oluşturabilir. Bakım, içerik güncelleme desteği ve yeni geliştirmeler ise ihtiyaç ve anlaşmaya bağlıdır; her proje için hepsi gerekli değildir.'],
+            ['SEO çalışmaları proje ücretine dahil mi?', 'Web sitesi kapsamına açıklayıcı sayfa yapısı, metadata ve taranabilir gezinme gibi teknik temeller alınabilir. Sürekli SEO ve içerik çalışmaları ile reklam yönetimi ayrı hizmetlerdir; teklif hangi çalışmaların dahil olduğunu açıklar.'],
+          ] },
+          { title: 'İçerik ve Çok Dilli Yapı', items: [
+            ['Metinleri ve görselleri kim hazırlıyor?', 'İçerik sorumluluğu projeye göre kararlaştırılır. İşletme metin, logo, ürün bilgisi ve görselleri sağlayabilir; metin yazımı, çeviri, fotoğraf veya özel görsel üretimi gerekiyorsa bunlar teklif kapsamında ayrıca belirtilir. İçeriğin son doğruluğu ve onayı için sorumlu taraflar da netleştirilir.'],
+            ['İçeriklerimiz tamamen hazır olmadan başlayabilir miyiz?', 'Evet. İhtiyaç analizi ve sayfa planı mevcut bilgilerle başlayabilir; hazır olmayan içerikler ve bunlardan sorumlu kişiler not edilir. İçeriklerin geç gelmesi sayfa yerleşimi, inceleme ve yayın takvimini etkileyebileceğinden bu bağımlılık proje planında takip edilir.'],
+            ['Türkçe dışında başka dillerde site hazırlayabilir misiniz?', 'Evet. Türkçe, İngilizce, Almanca, Arapça ve Urduca sürümler ihtiyaca göre planlanabilir. Her dil için sayfalar, gezinme, formlar ve metadata değerlendirilir; çeviri, içerik girişi ve editoryal onay sorumlulukları teklifte kararlaştırılır.'],
+            ['Arapça ve Urduca sayfalarda sağdan sola tasarım yapılır mı?', 'Evet. Kapsama alındığında sağdan sola (RTL) yön, menüler, form düzeni, yazı tipi ve Türkçe ya da İngilizce terimler gibi çift yönlü metinler birlikte test edilir. RTL arayüz çalışması çeviri hizmetinin otomatik olarak dahil olduğu anlamına gelmez.'],
+          ] },
+          { title: 'Süreç, Takvim ve Değişiklikler', items: [
+            ['Kurumsal web sitesi yapımı ne kadar sürer?', 'Süre; sayfa ve işlev kapsamına, içeriklerin hazır olmasına, dil ve entegrasyon gereksinimlerine, üçüncü taraf erişimlerine ve onayların zamanlamasına bağlıdır. Takvim, gereksinimler netleşince kararlaştırılır; bu hizmet için genel bir sabit teslim süresi taahhüdü bulunmuyor.'],
+            ['Tasarımları yayından önce inceleyebilir miyiz?', 'Evet. Süreçte tasarım yönü ve sayfa düzenleri geliştirmeden önce incelenip onaylanır; geliştirme aşamasında da kapsam dahilindeki çalışan sürüm gözden geçirilebilir. Son içerik ve önemli kullanıcı akışları yayın öncesi kontrolde değerlendirilir. İnceleme noktaları proje kapsamına göre planlanır.'],
+            ['Kaç revizyon yapılabilir?', 'Tüm projeler için geçerli yayımlanmış sabit revizyon sayısı yoktur. Geri bildirim aşamaları ve revizyon sınırları teklifinizde belirtilir; böylece tasarım onayı ve sonrasındaki değişikliklerin nasıl ele alınacağı baştan anlaşılır.'],
+            ['Proje sırasında yeni bir özellik istersek ne olur?', 'Talebin mevcut kapsam, maliyet ve takvime etkisini değerlendiririz. Ek işlevin gerektirdiği çalışma ve ticari koşullar üzerinde anlaşmadan önce uygulamaya başlamayız; mutabık kalınan değişiklik proje planına eklenir.'],
+          ] },
+          { title: 'Yönetim, Sahiplik ve Erişim', items: [
+            ['Web sitesindeki içerikleri kendimiz güncelleyebilir miyiz?', 'Evet, seçilen platformda içerik yönetimi projeye alındıysa ekibiniz üzerinde anlaşılan alanları güncelleyebilir. Sayfa metni veya haber düzenlemek, sitenin işlevini ya da tüm sayfa yerleşimini değiştirmekle aynı şey değildir; düzenlenebilir alanlar ve izinler teklifte tanımlanır.'],
+            ['Yönetim paneli kullanımı hakkında bilgi veriyor musunuz?', 'Kullanım bilgilendirmesi ve teslim materyalleri proje kapsamına göre kararlaştırılır. Hangi erişimlerin verileceği, rehberliğin biçimi ve yönetim panelinde ele alınacak içerik türleri teklif veya anlaşmada netleştirilir.'],
+            ['Alan adı, içerik ve kaynak kodun sahipliği nasıl belirlenir?', 'Alan adı ve hosting hesapları, müşteri tarafından sağlanan içerikler, projeye özel kod ve tasarım ile üçüncü taraf yazılım ve varlık lisansları birbirinden ayrıdır. Erişim, devir, kullanım hakları ve lisans kısıtları teklif ve anlaşmada belgelenir; burada ayrıca belirtilmeyen mülkiyet hakkı varsayılmaz.'],
+            ['Başka bir sağlayıcıyla çalışmak istersek site taşınabilir mi?', 'Taşıma olanağı seçilen platforma, CMS verisinin dışa aktarılmasına, özel geliştirmelere, entegrasyonlara ve üçüncü taraf lisanslarına bağlıdır. Erişim ve taşınabilirlik seçenekleri proje sırasında netleştirilebilir; her platform işlevinin başka sisteme aynen aktarılacağı garanti edilmez.'],
+          ] },
+          { title: 'Teknik Altyapı ve Yayın Sonrası Destek', items: [
+            ['Mevcut alan adımızı ve hostingimizi kullanabilir miyiz?', 'Teknik gereksinimler uyumluysa mevcut hizmetleri kullanmak değerlendirilebilir. Sağlayıcı, platform gereksinimleri, hesap erişimleri ve DNS/yayın ayarları incelenir; gerekiyorsa ek kurulum veya geçiş kapsamı teklifte belirtilir.'],
+            ['Site mobil cihazlarda kullanılabilir mi?', 'Responsive tasarım ile sayfa ve temel işlemler farklı ekran boyutlarına uyarlanır. Yayın öncesi, üzerinde anlaşılan cihaz ve tarayıcılarda kontroller yapılır; tüm cihaz ve sürümlerde kusursuz çalışma garantisi verilmez.'],
+            ['Site yenilenirken Google sıralamalarımız korunur mu?', 'URL’ler değişiyorsa mevcut adresler eşleştirilir, gerekli yönlendirmeler planlanır ve üzerinde anlaşıldıysa yayın sonrası izleme yapılır. Buna rağmen arama sıralaması veya trafik değişiklikleri tamamen önlenemez ve sıfır kayıp garantisi verilmez.'],
+            ['Yayından sonra bakım ve destek nasıl sağlanır?', 'Yayın teslimi, varsa kapsam dahilindeki düzeltmeler ve devam eden bakım ayrı konulardır. Güncelleme, izleme, içerik desteği veya yeni geliştirmeler yalnızca teklif ve anlaşmada tanımlanan kapsamda sağlanır; süre ve yanıt taahhüdü belirtilmemişse varsayılmaz.'],
+          ] },
         ] as FaqGroup[],
-        cta: 'Web Sitesi Projenizi Konuşalım',
+        cta: 'Bize Sorun',
       },
     },
     labels: { what: 'Ne işe yarar?', why: 'Neden önemlidir?', scope: 'Kapsam notu', included: 'Anlaşılan kapsam', optional: 'İsteğe bağlı çalışma', separate: 'Ayrıca fiyatlandırılır', paksoft: 'PakSoft’un çalışması', client: 'Sizin katkınız', approval: 'Onay adımı', example: 'Örnek gösterim', ctaIntro: 'İhtiyaçlarınızı paylaşın, size uygun proje kapsamını birlikte değerlendirelim.', viewProject: 'Projeyi inceleyin', readGuide: 'Rehberi okuyun', moreGuides: 'Diğer rehberlerin tamamı aşağıda yer alıyor.' },
@@ -263,7 +331,7 @@ const titles: Record<SupportedLocale, Record<CorporateWebsiteSubpageKey, string>
     features: 'Corporate Website Features & Functionality | PakSoft', technologies: 'Corporate Website Platforms & CMS Options | PakSoft', process: 'Corporate Website Design & Development Process | PakSoft', portfolio: 'Corporate Website Project Portfolio | PakSoft', pricing: 'Corporate Website Project Pricing Factors | PakSoft', blog: 'Corporate Website Planning Guides | PakSoft', faq: 'Corporate Website Project FAQs | PakSoft',
   },
   tr: {
-    features: 'Kurumsal Web Sitesi Özellikleri | PakSoft', technologies: 'Kurumsal Web Sitesi Altyapısı ve CMS Seçenekleri | PakSoft', process: 'Kurumsal Web Sitesi Tasarım ve Geliştirme Süreci | PakSoft', portfolio: 'Kurumsal Web Sitesi Projeleri | PakSoft', pricing: 'Kurumsal Web Sitesi Proje Fiyatını Belirleyenler | PakSoft', blog: 'Kurumsal Web Sitesi Planlama Rehberleri | PakSoft', faq: 'Kurumsal Web Sitesi Proje Soruları | PakSoft',
+    features: 'Kurumsal Web Sitesi Özellikleri ve Modülleri | PakSoft', technologies: 'Kurumsal Web Sitesi Teknolojileri ve Altyapı Seçimi | PakSoft', process: 'Kurumsal Web Tasarım Süreci ve Proje Aşamaları | PakSoft', portfolio: 'Kurumsal Web Sitesi Örnekleri ve Projelerimiz | PakSoft', pricing: 'Kurumsal Web Sitesi Fiyatları ve Paketleri | PakSoft', blog: 'Kurumsal Web Sitesi Planlama Rehberleri | PakSoft', faq: 'Kurumsal Web Sitesi Hakkında Sık Sorulan Sorular | PakSoft',
   },
 };
 
@@ -278,13 +346,13 @@ const descriptions: Record<SupportedLocale, Record<CorporateWebsiteSubpageKey, s
     faq: 'Answers about corporate website scope, content, ownership, schedule, SEO migration, costs and support.',
   },
   tr: {
-    features: 'Kurumsal web sitesi sayfalarını, katalogları, talep araçlarını, içerik yönetimini, dilleri ve entegrasyonları inceleyin.',
-    technologies: 'WordPress, Webflow, React/Next.js ve headless CMS yaklaşımlarını düzenleme ihtiyacı, esneklik, hosting ve giderler açısından karşılaştırın.',
-    process: 'Kurumsal web sitesi projesinin keşif, planlama, tasarım, geliştirme, içerik, test, yayın ve devir aşamalarını inceleyin.',
-    portfolio: 'Sun Container kurumsal web sitesi projesinin belgelenmiş ihtiyacını, PakSoft katkısını ve teslim edilen işlevleri inceleyin.',
-    pricing: 'Kurumsal web sitesi teklifinde kapsamı, isteğe bağlı çalışmaları ve devam eden sağlayıcı giderlerini etkileyen unsurları öğrenin.',
+    features: 'Kurumsal web sitesi özelliklerini keşfedin: yönetim paneli, mobil uyumluluk, çok dilli yapı, ürün kataloğu ve teklif formları. Projenizin kapsamını belirleyin.',
+    technologies: 'Kurumsal web siteniz için platform, yönetim paneli ve hosting seçeneklerini değerlendirin. Bakım, lisans ve içerik yönetimi gereksinimlerini öğrenin.',
+    process: 'Kurumsal web sitesi projenizin analiz, tasarım, geliştirme, test ve yayın aşamalarını inceleyin. İçerik, onay ve teslim sorumluluklarını öğrenin.',
+    portfolio: 'PakSoft’un kurumsal web sitesi projelerini inceleyin. İşletme ihtiyaçları, içerik yapıları, çok dilli ekranlar ve proje kayıtlarında belirtilen işlevler hakkında bilgi alın.',
+    pricing: 'Kurumsal web sitesi fiyatlarını etkileyen kapsamı, paket seçeneklerini ve yıllık giderleri inceleyin. İhtiyaçlarınıza uygun proje teklifi alın.',
     blog: 'Kurumsal web sitesi planlama, fiyatlandırma, yenileme, CMS, çok dilli içerik ve devir konularında rehberler.',
-    faq: 'Kurumsal web sitesi kapsamı, içerik, sahiplik, takvim, SEO geçişi, giderler ve destek hakkında yanıtlar.',
+    faq: 'Kurumsal web sitesi yapımı hakkında sorularınızı yanıtlıyoruz: fiyat, süreç, içerik yönetimi, çok dilli yapı, sahiplik, hosting ve destek.',
   },
 };
 
@@ -353,19 +421,560 @@ function PageSection({ title, children, tone = 'white', id }: { title: string; c
   );
 }
 
-function CallToAction({ locale, label }: { locale: SupportedLocale; label: string }) {
+function CallToAction({ locale, label, intro, heading, secondaryLabel, secondaryHref }: { locale: SupportedLocale; label: string; intro?: string; heading?: string; secondaryLabel?: string; secondaryHref?: string }) {
   const c = content[locale];
   return (
     <section className="bg-gray-950 section-compact">
       <div className="container mx-auto max-w-[1200px] px-4 text-center">
-        <h2 className="text-headline font-medium text-white">{label}</h2>
-        <p className="text-body mx-auto mt-3 max-w-2xl text-gray-300">{c.labels.ctaIntro}</p>
-        <Link href={localizedHref('/start-project?service=corporate-website-design', locale)} className="mt-5 inline-flex min-h-11 items-center gap-2 rounded-sm bg-heritage-turquoise px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-heritage-turquoise-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950 motion-reduce:transition-none">
+        <h2 className="text-headline font-medium text-white">{heading || label}</h2>
+        <p className="text-body mx-auto mt-3 max-w-2xl text-gray-300">{intro || c.labels.ctaIntro}</p>
+        {secondaryLabel && secondaryHref ? <div className="mt-5 flex flex-wrap justify-center gap-3">
+          <Link href={localizedHref('/start-project?service=corporate-website-design', locale)} className="inline-flex min-h-11 items-center gap-2 rounded-sm bg-heritage-turquoise px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-heritage-turquoise-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950 motion-reduce:transition-none">
+            {label}<ArrowRightIcon className="h-4 w-4 rtl:rotate-180" aria-hidden="true" />
+          </Link>
+          <Link href={secondaryHref} className="inline-flex min-h-11 items-center gap-2 rounded-sm border border-gray-500 px-5 py-3 text-sm font-semibold text-white transition-colors hover:border-gray-300 hover:bg-gray-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950 motion-reduce:transition-none">{secondaryLabel}<ArrowRightIcon className="h-4 w-4 rtl:rotate-180" aria-hidden="true" /></Link>
+        </div> : <Link href={localizedHref('/start-project?service=corporate-website-design', locale)} className="mt-5 inline-flex min-h-11 items-center gap-2 rounded-sm bg-heritage-turquoise px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-heritage-turquoise-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950 motion-reduce:transition-none">
           {label}<ArrowRightIcon className="h-4 w-4 rtl:rotate-180" aria-hidden="true" />
-        </Link>
+        </Link>}
       </div>
     </section>
   );
+}
+
+function TurkishTechnologiesContent() {
+  const comparison = [
+    ['İçerik düzenleme', 'Yönetim panelinde seçilen sayfa ve içerik türleri düzenlenebilir.', 'Webflow ve Framer editörlerinde tanımlı içerik alanları düzenlenebilir.', 'Bağlı CMS veya özel yönetim arayüzünde projede tanımlanan alanlar düzenlenebilir.'],
+    ['Özel işlevler', 'Eklenti veya özel geliştirme ile kapsam dahilinde genişletilebilir.', 'Platformun sunduğu özellikler ve entegrasyonlarla sınırlı olabilir.', 'Özel işlevler geliştirilebilir; kapsam, süre ve bakım gereksinimi ayrıca belirlenir.'],
+    ['Çok dilli içerik', 'Seçilen eklenti ve içerik modeline göre planlanır.', 'Yerelleştirme özellikleri ve plan koşulları kontrol edilerek yapılandırılır.', 'CMS, dil ilişkileri ve arayüz desteği birlikte tasarlanır.'],
+    ['Entegrasyonlar', 'Eklenti, API veya özel bağlantı seçenekleri değerlendirilir.', 'Mevcut uygulamalar, gömülü araçlar veya API seçenekleri incelenir.', 'API ve diğer bağlantılar ihtiyaca göre geliştirilir.'],
+    ['Hosting ve bakım', 'Hosting sağlayıcısı, WordPress çekirdeği, tema ve eklenti güncellemeleri planlanır.', 'Yayın ve barındırma platform hesabı ve planına bağlıdır.', 'Uygun yayın ortamı, dağıtım, izleme ve teknik bakım kapsamı netleştirilir.'],
+    ['Lisans ve abonelik', 'Hosting, ücretli tema/eklentiler veya servisler ek maliyet doğurabilir.', 'Platform planı ve varsa ek servis ücretleri sağlayıcı koşullarına bağlıdır.', 'CMS, hosting, API veya diğer servislerin lisans ve kullanım ücretleri olabilir.'],
+    ['Dışa aktarma ve taşıma', 'Taşıma; tema, eklenti, veri ve özel geliştirmelerin uyumuna bağlıdır.', 'Dışa aktarma seçenekleri platforma ve kullanılan özelliklere göre değişir; CMS ve bazı işlevler dışa aktarılan kodla taşınmayabilir.', 'Kod ve içerik taşınabilirliği kullanılan CMS, servisler, mimari ve lisanslara göre değerlendirilir.'],
+  ];
+  const platformCards = [
+    { name: 'WordPress', body: 'Sayfalar, haberler ve medya gibi içeriklerin yönetim panelinden güncellenebildiği bir içerik yönetim sistemidir. İçerik türleri, tema ve eklentiler projeye göre yapılandırılır; her eklenti gerekli değildir. Hosting, lisanslı bileşenler, yedekleme ve çekirdek/eklenti güncellemelerinin sorumluluğu teklifte netleştirilir.', fit: 'İçeriğini düzenli güncelleyen ve tanımlı bir yönetim paneli isteyen işletmeler için değerlendirilebilir.', note: 'Eklentilerin uyumluluğu ve güncelleme takibi gerekir; taşıma çalışması kullanılan bileşenlere bağlıdır.' },
+    { name: 'Webflow', body: 'Görsel site oluşturma, içerik koleksiyonları ve düzenleme araçlarını aynı hizmet içinde sunar. İçerik ekibi belirlenen alanları düzenleyebilir; sayfa yapısında ne kadar değişiklik yapılacağı kullanıcı rolü ve proje düzenine bağlıdır. Özel alan adıyla yayınlama ve bazı özellikler Site planına bağlıdır.', fit: 'Görsel düzenleme deneyimi ve yapılandırılmış içerik yayını öncelikli olduğunda değerlendirilebilir.', note: 'Site planı ve platform hizmetleri sağlayıcının koşullarına bağlıdır. Kod dışa aktarımı CMS verisini ve bazı özellikleri içermez; dışarı taşıma öncesinde bağımlılıklar incelenmelidir.' },
+    { name: 'Framer', body: 'Sayfa tasarımı, yayın ve içerik düzenleme özellikleri bir arada sunulan barındırılan bir platformdur. Ekip, tanımlı CMS içeriklerini ve sayfadaki belirli metinleri düzenleyebilir; roller ve izinler seçilen planın sunduğu özelliklere göre yapılandırılır.', fit: 'Sayfa tasarımı ve yayın sürecini tek platformda yönetmek isteyen projelerde seçenek olabilir.', note: 'Özel alan adı, yayın ve bazı özellikler plan koşullarına bağlıdır. Hesap, abonelik ve platform erişimi için sorumluluklar önceden belirlenir.' },
+    { name: 'Next.js ve uygun CMS', body: 'Next.js web arayüzünü geliştirmek için kullanılan bir framework’tür; tek başına içerik yönetim paneli değildir. İçerik düzenleme için ayrıca bir CMS veya projeye özel yönetim arayüzü tasarlanıp bağlanır. Hangi sayfa ve alanların düzenlenebileceği bu yapıda belirlenir.', fit: 'Özel sayfa yapısı, iş akışı veya sistem bağlantısı gerektiğinde özel geliştirme yaklaşımı olarak değerlendirilebilir.', note: 'Yayın ortamı, CMS, dağıtım ve teknik bakım ayrıca planlanır. Özel geliştirme kendiliğinden sınırsız düzenleme veya sınırsız taşınabilirlik sağlamaz.' },
+  ];
+  const faq = [
+    ['Kurumsal web sitesi için WordPress zorunlu mu?', 'Hayır. WordPress, Webflow, Framer veya özel geliştirme seçenekleri içerik düzenleme, işlev, entegrasyon, bakım ve bütçe gereksinimleriyle karşılaştırılır. Uygun seçenek proje kapsamı belirlendikten sonra önerilir.'],
+    ['Özel yazılım bir sitede içerikleri kendimiz değiştirebilir miyiz?', 'Evet, düzenlenecek içerikler için bir CMS veya yönetim arayüzü projeye eklenebilir. Hangi sayfa ve alanların düzenlenebileceği, kullanıcı rolleri ve yayın adımları teklif kapsamında belirlenir.'],
+    ['Mevcut hostingimizi kullanabilir miyiz?', 'Mevcut hizmetin teknik gereksinimleri seçilen platformu destekliyorsa bu değerlendirilebilir. Erişim, yapılandırma, alan adı ve olası geçiş ihtiyaçları proje öncesinde kontrol edilir.'],
+    ['Sonradan başka bir altyapıya geçebilir miyiz?', 'Geçiş olanağı kullanılan platforma, içerik modeline, entegrasyonlara ve lisanslara bağlıdır. Taşınabilir içerik ve kod seçenekleri proje başında konuşulabilir; her platform özelliği aynı şekilde aktarılamayabilir.'],
+    ['Hangi lisans ve abonelik giderleri oluşabilir?', 'Hosting veya platform planı, ücretli tema ve eklentiler, CMS, API ve diğer üçüncü taraf hizmetleri gider oluşturabilir. Gereken sağlayıcılar ve kimin hesabından yönetileceği teklifte açıklanır.'],
+    ['Altyapı seçimi SEO sonuçlarını garanti eder mi?', 'Hayır. Platform tek başına sıralama veya trafik sonucu garanti etmez. Sayfa yapısı, içerik, teknik yapı ve yayın sonrası çalışmalar birlikte rol oynar; temel site yapılandırması sürekli SEO hizmetinden ayrıdır.'],
+  ];
+  const links = [
+    ['/services/corporate-website-design/features', 'Web sitesi özellikleri'],
+    ['/services/corporate-website-design/process', 'Proje süreci'],
+    ['/services/corporate-website-design/portfolio', 'Projeler'],
+    ['/services/corporate-website-design/pricing', 'Fiyatlandırma ve kapsam'],
+    ['/services/corporate-website-design/faq', 'Sık sorulan sorular'],
+  ];
+
+  return <>
+    <PageSection title="Teknoloji Seçimini Nasıl Yapıyoruz?" tone="gray">
+      <p className="max-w-4xl text-body text-gray-600">Seçimi tek bir teknoloji adına göre değil, sitenin günlük kullanımına göre yapıyoruz. İçeriği kimin yöneteceğini, hangi içerik türleri ve dillerin gerektiğini, işlevleri ve mevcut sistemleri, entegrasyonları, hosting ve bakım yaklaşımını, bütçeyi ve ilerideki genişleme ihtiyacını birlikte değerlendiriyoruz. Her işletme için geçerli tek bir en iyi platform yoktur.</p>
+      <ul className="mt-6 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-3">{['İçeriği kim yönetecek?', 'Hangi içerik ve diller yayınlanacak?', 'Hangi işlevler ve entegrasyonlar gerekli?', 'Mevcut sistemlerle bağlantı gerekiyor mu?', 'Hosting ve bakım sorumluluğu kimde olacak?', 'Bütçe ve gelecekteki genişleme ihtiyacı nedir?'].map((x, i) => <li key={x} className="flex gap-3 border-b border-gray-200 py-3 text-sm leading-6 text-gray-700"><span className="text-overline text-heritage-turquoise-deep">0{i + 1}</span>{x}</li>)}</ul>
+    </PageSection>
+
+    <PageSection title="Kurumsal Web Sitesi İçin Altyapı Seçenekleri">
+      <div className="grid gap-4 md:grid-cols-2">{platformCards.map((item, i) => <article key={item.name} className="corporate-info-card h-full rounded-xl border border-gray-200 border-t-2 border-t-heritage-turquoise bg-white p-5 md:p-6">
+        <div className="flex items-start gap-3"><span aria-hidden="true" className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-heritage-turquoise-light text-sm font-semibold text-heritage-turquoise-deep">0{i + 1}</span><h3 className="text-lg font-semibold text-gray-900">{item.name}</h3></div>
+        <p className="mt-4 text-sm leading-6 text-gray-700">{item.body}</p>
+        <dl className="mt-4 space-y-3 border-t border-gray-200 pt-4 text-sm leading-6"><div><dt className="font-semibold text-gray-900">Hangi durumda uygun olabilir?</dt><dd className="mt-1 text-gray-600">{item.fit}</dd></div><div><dt className="font-semibold text-gray-900">Dikkat edilmesi gerekenler</dt><dd className="mt-1 text-gray-600">{item.note}</dd></div></dl>
+      </article>)}</div>
+    </PageSection>
+
+    <PageSection title="Platformları Hangi Kriterlerle Karşılaştırmalısınız?" tone="gray" id="platform-comparison">
+      <p className="max-w-4xl text-body text-gray-600">Aşağıdaki tablo genel farkları özetler. Platformun yapılandırması, seçilen eklenti ve hizmet planı sonucu değiştirebilir; kesin kapsam proje gereksinimleri üzerinden belirlenir.</p>
+      <div className="mt-5 overflow-x-auto rounded-xl border border-gray-200 bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise" tabIndex={0} aria-label="Platform karşılaştırma tablosu, yatay kaydırılabilir">
+        <table className="w-full min-w-[760px] border-collapse text-left text-sm leading-6"><caption className="sr-only">WordPress, barındırılan görsel platformlar ve Next.js ile CMS yaklaşımının karşılaştırması</caption><thead className="bg-gray-950 text-white"><tr><th scope="col" className="w-40 px-4 py-3 font-semibold">Kriter</th><th scope="col" className="px-4 py-3 font-semibold">WordPress</th><th scope="col" className="px-4 py-3 font-semibold">Webflow / Framer</th><th scope="col" className="px-4 py-3 font-semibold">Next.js + CMS</th></tr></thead><tbody>{comparison.map(([criterion, wp, hosted, custom]) => <tr key={criterion} className="border-t border-gray-200 align-top even:bg-background-gray"><th scope="row" className="px-4 py-3 font-semibold text-gray-900">{criterion}</th><td className="px-4 py-3 text-gray-700">{wp}</td><td className="px-4 py-3 text-gray-700">{hosted}</td><td className="px-4 py-3 text-gray-700">{custom}</td></tr>)}</tbody></table>
+      </div>
+      <p className="mt-3 text-caption text-gray-600">Karşılaştırma genel bilgilendirmedir; özellik, dışa aktarma ve plan koşulları sağlayıcıya ve kullanılan sürüme göre değişebilir.</p>
+    </PageSection>
+
+    <PageSection title="Yönetim Paneli ve İçerik Güncelleme">
+      <div className="grid items-center gap-6 lg:grid-cols-[.9fr_1.1fr]">
+        <div className="rounded-xl border border-heritage-sand bg-heritage-ivory p-5 md:p-6"><p className="text-overline text-heritage-turquoise-deep">Örnek gösterim · CMS içerik alanları</p><div className="mt-4 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm"><div className="flex items-center justify-between border-b border-gray-200 bg-background-gray px-4 py-3"><span className="text-sm font-semibold text-gray-800">İçerik yönetimi</span><span className="rounded-full bg-heritage-turquoise-light px-2.5 py-1 text-xs font-semibold text-heritage-turquoise-deep">Taslak</span></div><div className="space-y-4 p-4"><div><span className="text-xs font-medium text-gray-600">Sayfa başlığı</span><div className="mt-1 rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-800">Hizmetlerimiz</div></div><div><span className="text-xs font-medium text-gray-600">Kısa açıklama</span><div className="mt-1 min-h-14 rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-500">İçerik alanı örneği</div></div><div className="flex justify-end"><span className="rounded-md bg-heritage-turquoise px-3 py-2 text-xs font-semibold text-white">Önizleme / Yayınla</span></div></div></div><p className="mt-3 text-xs leading-5 text-gray-600">Bu çizim açıklayıcı bir örnektir; çalışan bir PakSoft yönetim paneli ekranı değildir.</p></div>
+        <div><p className="text-body text-gray-600">Yönetim panelinde hangi içerik türlerinin değiştirilebileceği önceden belirlenir. Metin, görsel, hizmet, proje ve haber alanları düzenlenebilir; sayfa şablonunun tamamını serbestçe değiştirmek ayrı bir ihtiyaçtır ve her kurulumda bulunmaz.</p><ul className="mt-5 space-y-4 text-sm leading-6 text-gray-700"><li><strong className="text-gray-900">Düzenlenebilir içerik:</strong> Sayfalar, haberler, görseller ve diğer içerik türleri seçilen platforma göre tanımlanır.</li><li><strong className="text-gray-900">Kullanıcı rolleri:</strong> Farklı düzenleme ve yayın izinleri gerekiyorsa ayrıca planlanır.</li><li><strong className="text-gray-900">Önizleme ve yayın:</strong> Taslak, onay ve yayın adımları sistemin özellikleriyle ve proje gereksinimleriyle belirlenir.</li><li><strong className="text-gray-900">Teslim:</strong> Erişimler, kullanım bilgilendirmesi ve teslim materyalleri teklifte açıklanır.</li></ul><Link href={localizedHref('/services/corporate-website-design/features', 'tr')} className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">İçerik ve modül özelliklerini inceleyin <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link></div>
+      </div>
+    </PageSection>
+
+    <PageSection title="Tasarım Araçları ve Geliştirme Altyapısı Arasındaki Fark" tone="ivory">
+      <div className="grid gap-4 md:grid-cols-4">{[
+        ['Tasarım aracı', 'Figma gibi araçlar arayüz taslağı ve prototip oluşturur.'],
+        ['Platform veya framework', 'Webflow/WordPress yayın sistemi; Next.js ise web arayüzü geliştirme framework’üdür.'],
+        ['İçerik yönetimi', 'CMS, ekip üyelerinin tanımlı içerikleri düzenlemesini sağlar. Özel projede ayrıca kurulabilir.'],
+        ['Hosting', 'Site dosyalarının ve gerekli uygulamaların ziyaretçilere sunulduğu hizmettir.'],
+      ].map(([title, detail]) => <article key={title} className="border-s-2 border-heritage-turquoise ps-4"><h3 className="font-semibold text-gray-900">{title}</h3><p className="mt-2 text-sm leading-6 text-gray-600">{detail}</p></article>)}</div>
+      <p className="mt-5 text-sm leading-6 text-gray-700">Bir tasarım dosyası tek başına çalışan bir web sitesi değildir; uygulama, içerik yönetimi ve yayın ortamı ayrıca planlanır.</p>
+    </PageSection>
+
+    <PageSection title="Hosting, Alan Adı ve Üçüncü Taraf Hizmetler">
+      <p className="max-w-4xl text-body text-gray-600">Alan adı ve DNS ayarları, sitenin barındırılması ve e-posta gibi hizmetler farklı sağlayıcılar üzerinden yönetilebilir. Form iletimi, e-posta gönderimi veya API bağlantıları da ek hizmetlere bağlı olabilir. Kullanılacak hesaplar, faturalandırma ve erişim sorumlulukları teklif ve anlaşmada netleştirilir; hosting veya başka bir servis otomatik olarak dahil kabul edilmez.</p>
+      <ul className="mt-5 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-3">{['Alan adı kaydı ve DNS', 'Hosting veya platform aboneliği', 'Kurumsal e-posta', 'Form ve e-posta iletim hizmetleri', 'Harici API ve bağlı servisler', 'Sağlayıcı hesapları ve erişimler'].map(x => <li key={x} className="border-b border-gray-200 py-3 text-sm text-gray-700">{x}</li>)}</ul>
+    </PageSection>
+
+    <PageSection title="Performans, SEO ve Erişilebilirlik" tone="gray">
+      <p className="max-w-4xl text-body text-gray-600">Teknik altyapıda görsellerin uygun boyutta sunulması, gerekli durumlarda önbellekleme, taranabilir sayfa ve bağlantı yapısı, sayfa metaverisi ve dil yapılandırması değerlendirilir. Navigasyon ve formların klavye ile kullanılabilmesi, okunabilir etiketler ve yayın öncesi kontroller de kapsam doğrultusunda ele alınır. Sonuçlar uygulama ve içerik dahil birçok etkene bağlıdır; belirli sıralama, performans puanı veya yasal uygunluk garantisi verilmez.</p>
+      <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3 text-sm"><Link href={localizedHref('/services/seo', 'tr')} className="font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Sürekli SEO hizmetlerini inceleyin <ArrowRightIcon className="inline h-4 w-4" aria-hidden="true" /></Link><Link href={localizedHref('/services/corporate-website-design/features', 'tr')} className="font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Web sitesi özellikleri ve temel çalışmaları görün <ArrowRightIcon className="inline h-4 w-4" aria-hidden="true" /></Link></div>
+    </PageSection>
+
+    <PageSection title="Bakım, Lisanslar ve Devam Eden Maliyetler">
+      <p className="max-w-4xl text-body text-gray-600">Platform aboneliği, PakSoft’un bakım hizmetiyle aynı şey değildir. Güncelleme, uyumluluk kontrolü, yedekleme, izleme, teknik destek ve yeni geliştirme ihtiyaçlarının sorumluluğu ayrıca tanımlanır.</p>
+      <ul className="mt-5 grid gap-x-8 sm:grid-cols-2">{[
+        ['Hosting veya platform aboneliği', 'Sağlayıcının barındırma ve seçilen özellikler için belirlediği plan.'],
+        ['Ücretli eklenti ve lisanslar', 'Tema, eklenti, CMS veya başka yazılım bileşenlerinin lisans koşulları.'],
+        ['Güncelleme ve uyumluluk', 'WordPress çekirdeği, tema ve eklentiler gibi bileşenlerin takip edilmesi.'],
+        ['Yedekleme ve izleme', 'Hizmet kapsamına alınırsa sıklığı ve sorumlusu ayrıca belirlenir.'],
+        ['API veya servis kullanımı', 'Harici hizmetlerde kullanım hacmine bağlı ücret oluşabilir.'],
+        ['Bakım ve yeni geliştirme', 'PakSoft desteği ve sonraki işler ayrı kapsam ve ticari koşullarla belirlenir.'],
+      ].map(([title, detail]) => <li key={title} className="border-b border-gray-200 py-4"><h3 className="font-semibold text-gray-900">{title}</h3><p className="mt-1 text-sm leading-6 text-gray-600">{detail}</p></li>)}</ul>
+      <Link href={localizedHref('/services/corporate-website-design/pricing', 'tr')} className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Proje kapsamı ve fiyatlandırmayı inceleyin <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>
+    </PageSection>
+
+    <PageSection title="Sahiplik, Erişim ve Başka Bir Sisteme Taşınma" tone="ivory">
+      <p className="max-w-4xl text-body text-gray-700">Alan adı hesabı, hosting hesabı, web sitesi içeriği, projeye özel kod ve tasarım, üçüncü taraf yazılım ve varlık lisansları ile dışa aktarılabilir veriler ayrı ayrı değerlendirilir. Erişimler, devir kapsamı, kullanım hakları ve lisans kısıtları teklif ve anlaşmada belgelenir; üçüncü taraf fikri mülkiyet hakları ilgili lisanslara tabidir.</p>
+      <p className="mt-4 max-w-4xl text-body text-gray-700">Başka bir sisteme geçiş; içerik dışa aktarma olanaklarına, kullanılan platform özelliklerine, entegrasyonlara ve lisanslara bağlıdır. Platforma bağlı içerik veya işlevler taşınırken yeniden kurulmayı gerektirebilir; bu nedenle olası geçiş ihtiyaçlarını baştan değerlendirmek yararlıdır.</p>
+    </PageSection>
+
+    <PageSection title="Kullanılan Teknolojilere Göre Proje Örnekleri" tone="gray">
+      <div className="grid gap-5 lg:grid-cols-2">
+        <article className="overflow-hidden rounded-xl border border-gray-200 bg-white"><Image src="/images/portfolio/sun-container.png" alt="Sun Container kurumsal web sitesi ana sayfası" width={1200} height={675} sizes="(max-width: 1024px) 100vw, 50vw" className="aspect-[16/8] w-full object-cover object-top" /><div className="p-5"><p className="text-overline text-heritage-turquoise-deep">Kurumsal web sitesi · Almanya</p><h3 className="mt-2 text-lg font-semibold text-gray-900">Sun Container GmbH</h3><p className="mt-2 text-sm leading-6 text-gray-600">Proje kaydında modüler konteyner üreticisinin ürün bilgileri ve yapılandırıcı/teklif akışı ihtiyacı belgelenmiştir. Bu web sitesi için kaydedilen teknoloji yığını PHP, jQuery, Bootstrap ve LiteSpeed’dir. Bu örnek, projenin kayıtlı uygulamasını gösterir; genel platform önerisi değildir.</p><p className="mt-3 text-xs leading-5 text-gray-500">Kayıtlı teknolojiler: PHP, jQuery, Bootstrap, LiteSpeed</p><Link href={localizedHref('/projects/sun-container', 'tr')} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Sun Container projesini inceleyin <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link></div></article>
+        <article className="overflow-hidden rounded-xl border border-gray-200 bg-white"><Image src="/images/portfolio/sun-container-tracking.png" alt="Sun Container sipariş takip portalının ekran görüntüsü" width={1200} height={675} sizes="(max-width: 1024px) 100vw, 50vw" className="aspect-[16/8] w-full object-cover object-top" /><div className="p-5"><p className="text-overline text-heritage-turquoise-deep">Ayrı sipariş takip portalı</p><h3 className="mt-2 text-lg font-semibold text-gray-900">Sun Container Tracking</h3><p className="mt-2 text-sm leading-6 text-gray-600">Proje kaydında, sipariş durumunu e-posta ve takip numarasıyla sorgulatan özel bir müşteri portalı belgelenmiştir. Portal yığını Next.js, React, TypeScript, Cloudflare Turnstile ve Vercel olarak listelenmiştir. İçerik düzenleme paneli bu kayıtlı işlevin parçası olarak belirtilmediğinden burada CMS örneği sayılmamıştır.</p><p className="mt-3 text-xs leading-5 text-gray-500">Kayıtlı teknolojiler: Next.js, React, TypeScript, Cloudflare Turnstile, Vercel</p><Link href={localizedHref('/projects/sun-container-tracking', 'tr')} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Sipariş takip portalı projesini inceleyin <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link></div></article>
+      </div>
+    </PageSection>
+
+    <PageSection title="Altyapı Seçimi Hakkında Sorular">
+      <div className="grid max-w-5xl gap-4 md:grid-cols-2">{faq.map(([question, answer]) => <article key={question} className="rounded-xl border border-gray-200 bg-white p-5"><h3 className="font-semibold leading-snug text-gray-900">{question}</h3><p className="mt-3 text-sm leading-6 text-gray-600">{answer}</p></article>)}</div>
+      <Link href={localizedHref('/services/corporate-website-design/faq', 'tr')} className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Kurumsal web sitesi hakkında sık sorulan tüm sorular <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>
+      <nav aria-label="Kurumsal web sitesi hizmeti bağlantıları" className="mt-7 flex flex-wrap gap-x-5 gap-y-3 border-t border-gray-200 pt-5">{links.map(([href, label]) => <Link key={href} href={localizedHref(href, 'tr')} className="text-sm font-medium text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">{label} <ArrowRightIcon className="inline h-4 w-4" aria-hidden="true" /></Link>)}</nav>
+    </PageSection>
+  </>;
+}
+
+function TurkishPortfolioContent() {
+  const checklist = [
+    'Site, işletmenin ne sunduğunu anlaşılır biçimde anlatıyor mu?',
+    'Ziyaretçiler hizmet veya ürün bilgilerine kolayca ulaşabiliyor mu?',
+    'İletişim ve teklif talebi adımları görünür ve anlaşılır mı?',
+    'Mobil ekranda gezinmek ve önemli işlemleri tamamlamak kolay mı?',
+    'İçerik ve dil gereksinimleri karşılanmış mı?',
+    'İşletme, teslim sonrası üzerinde anlaşılan içerikleri yönetebiliyor mu?',
+  ];
+  const faqs = [
+    ['Portföydeki bir siteye benzer bir proje hazırlayabilir misiniz?', 'Bir örnek, ihtiyaçları konuşmak için başlangıç noktası olabilir. Yeni projede işletmenizin hedefleri, içerikleri ve işlevleri değerlendirilir; başka bir markanın korunan tasarımını veya varlıklarını kopyalamadan özgün bir kapsam belirlenir.'],
+    ['Projelerde PakSoft’un hangi işleri yaptığını nasıl öğrenebilirim?', 'Bu sayfada her örnek için proje kaydında yer alan işletme ihtiyacını, PakSoft’un belgelenmiş katkısını ve kayıtlı işlevleri ayrı ayrı açıklıyoruz. Belirli bir teslimatın kapsamını öğrenmek için proje görüşmesinde ilgili örneği paylaşabilirsiniz.'],
+    ['Kendi sektörümüzden bir örnek yoksa çalışabilir miyiz?', 'Evet. İlk görüşmede işletmenizin hedefleri, ziyaretçileri, içerik ve işlev gereksinimleri değerlendirilir. Benzer sektör deneyimi veya belirli bir uzmanlık hakkında bu portföyde belgelenmeyen bir iddiada bulunmuyoruz.'],
+    ['Mevcut web sitemizi yeniden tasarlayabilir misiniz?', 'Mevcut içerik, sayfa yapısı, kullanılan platform ve değişmesi gereken URL’ler incelenerek yenileme kapsamı belirlenebilir. Taşınacak içerik, yönlendirmeler ve yayın kontrolleri proje planında ele alınır.'],
+    ['Projemizin portföyde gösterilmesi zorunlu mu?', 'Portföyde kamuya açık sunum ve gizlilik koşulları müşteriyle yapılan anlaşmada netleştirilir. Burada her projeyi yayımlama hakkı veya zorunluluğu bulunduğunu varsaymıyoruz.'],
+  ];
+  const related = [
+    ['/services/corporate-website-design/features', 'Web sitesi özellikleri'],
+    ['/services/corporate-website-design/technologies', 'Teknoloji ve altyapı seçenekleri'],
+    ['/services/corporate-website-design/process', 'Proje süreci'],
+    ['/services/corporate-website-design/pricing', 'Fiyatlandırma ve kapsam'],
+    ['/services/corporate-website-design/faq', 'Sık sorulan sorular'],
+  ];
+  const projectHref = (slug: string) => localizedHref(`/projects/${slug}`, 'tr');
+
+  return <>
+    <PageSection title="Seçili Kurumsal Web Sitesi Projeleri" tone="gray" id="selected-projects">
+      <p className="max-w-4xl text-body text-gray-600">Kurumsal web sitesi örnekleri arasında proje ihtiyacı ve teslim edilen yapısı belgelenmiş çalışmaları öne çıkarıyoruz. Şu anda bu kapsamda ayrıntıları ve uygun ekran görüntüsü doğrulanabilen bir şirket sitesi bulunuyor.</p>
+      <article className="mt-6 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+        <Link href={projectHref('sun-container')} className="group block overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-heritage-turquoise" aria-label="Sun Container GmbH proje sayfasını açın">
+          <Image src="/images/portfolio/sun-container.png" alt="Sun Container kurumsal web sitesi; modüler konteyner ürünlerini, Almanca ve İngilizce dil seçeneklerini gösteren ana sayfa görüntüsü" width={1366} height={850} sizes="(max-width: 768px) 100vw, 1200px" priority className="h-auto w-full object-contain transition-transform duration-500 group-hover:scale-[1.01] motion-reduce:transition-none" />
+        </Link>
+        <div className="grid gap-6 p-5 md:grid-cols-[.75fr_1.25fr] md:p-7">
+          <div><p className="text-overline text-heritage-turquoise-deep">Modüler konteyner ve inşaat</p><h3 className="mt-2 text-title font-medium text-gray-900">Sun Container GmbH</h3><p className="mt-3 text-sm leading-6 text-gray-600">Almanya pazarında modüler konteyner ürünlerini ve kullanım seçeneklerini tanıtan şirket web sitesi. Görselde Almanca ve İngilizce dil seçimi de yer alıyor.</p></div>
+          <div><p className="text-overline text-gray-600">Proje kaydında belgelenen kapsam</p><p className="mt-2 text-sm leading-6 text-gray-700">Kayıtlı çözüm; ürün bilgilerini ve uygulama örneklerini sunan, ziyaretçileri ürün konfigüratörüne ve teklif akışına yönlendiren bir web sitesidir. Bu açıklama proje kaydındaki kapsamı özetler; listelenmeyen hizmetleri PakSoft katkısı olarak varsaymaz.</p><ul className="mt-4 flex flex-wrap gap-2">{['Ürün ve kullanım bilgileri', 'Konfigüratöre geçiş', 'Teklif akışına yönlendirme'].map(x => <li key={x} className="rounded-full border border-heritage-sand bg-heritage-ivory px-3 py-1.5 text-xs font-medium text-gray-700">{x}</li>)}</ul><Link href={projectHref('sun-container')} className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Sun Container proje incelemesini açın <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link></div>
+        </div>
+      </article>
+    </PageSection>
+
+    <PageSection title="Projelerde İhtiyaçları Nasıl Çözüme Dönüştürdük?">
+      <div className="space-y-6">
+        <article className="overflow-hidden rounded-2xl border border-gray-200 bg-white">
+          <div className="grid lg:grid-cols-[.9fr_1.1fr]">
+            <div className="order-2 p-5 md:p-7 lg:order-1"><p className="text-overline text-heritage-turquoise-deep">Şirket web sitesi · Almanya</p><h3 className="mt-2 text-xl font-semibold text-gray-900">Sun Container GmbH</h3><dl className="mt-5 space-y-4 text-sm leading-6"><div><dt className="font-semibold text-gray-900">İşletmenin İhtiyacı</dt><dd className="mt-1 text-gray-600">Modüler konteyner gibi seçenekli ürünleri, farklı kullanım alanlarını ve satın alma öncesi bilgileri Almanya’daki ziyaretçilere sunmak.</dd></div><div><dt className="font-semibold text-gray-900">PakSoft’un Katkısı</dt><dd className="mt-1 text-gray-600">Proje kaydı; ürün odaklı, görsel bir web sitesi çözümünü ve ziyaretçiyi konfigüratör ile teklif akışına yönlendiren yapıyı PakSoft çalışması olarak belgeliyor.</dd></div><div><dt className="font-semibold text-gray-900">Geliştirilen Yapı ve İşlevler</dt><dd className="mt-1 text-gray-600">Ürün ve kullanım bilgileri, referans içerikleri, konfigüratör giriş noktası ve ayrı sipariş takip portalına yönlendirme.</dd></div><div><dt className="font-semibold text-gray-900">Teslim Edilen Çözüm</dt><dd className="mt-1 text-gray-600">Ürünleri tanıtan ve ziyaretçiyi sonraki adıma taşıyan kurumsal web sitesi. Proje kaydında ölçülmüş iş sonucu bildirilmediğinden burada sonuç metriği sunulmuyor.</dd></div></dl></div>
+            <Link href={projectHref('sun-container')} className="group order-1 block self-center p-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-heritage-turquoise lg:order-2"><Image src="/images/portfolio/sun-container.png" alt="Sun Container ürün sayfası ve konfigüratöre yönlendiren web sitesi arayüzü" width={1366} height={850} sizes="(max-width: 1024px) 100vw, 55vw" className="h-auto w-full rounded-xl border border-gray-200 object-contain transition-transform duration-500 group-hover:scale-[1.01] motion-reduce:transition-none" /></Link>
+          </div>
+        </article>
+        <article className="overflow-hidden rounded-2xl border border-gray-200 bg-white">
+          <div className="grid lg:grid-cols-[1.1fr_.9fr]">
+            <Link href={projectHref('sun-container-tracking')} className="group block self-center p-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-heritage-turquoise"><Image src="/images/portfolio/sun-container-tracking.png" alt="Sun Container sipariş takip portalı; sipariş numarası ve e-posta alanları bulunan ekran" width={1366} height={850} sizes="(max-width: 1024px) 100vw, 55vw" className="h-auto w-full rounded-xl border border-gray-200 object-contain transition-transform duration-500 group-hover:scale-[1.01] motion-reduce:transition-none" /></Link>
+            <div className="p-5 md:p-7"><p className="text-overline text-heritage-turquoise-deep">Ayrı müşteri portalı · Kurumsal site değildir</p><h3 className="mt-2 text-xl font-semibold text-gray-900">Sun Container Tracking</h3><dl className="mt-5 space-y-4 text-sm leading-6"><div><dt className="font-semibold text-gray-900">İşletmenin İhtiyacı</dt><dd className="mt-1 text-gray-600">Müşterilerin sipariş durumunu takip numarası ve e-posta ile sorgulayabilmesi; özel sipariş bilgilerinin açıkça sunulmaması.</dd></div><div><dt className="font-semibold text-gray-900">PakSoft’un Katkısı</dt><dd className="mt-1 text-gray-600">Proje kaydında Next.js tabanlı, bot korumalı ve iki dilli mobil portal çözümü belgelenmiştir.</dd></div><div><dt className="font-semibold text-gray-900">Geliştirilen Yapı ve İşlevler</dt><dd className="mt-1 text-gray-600">Sipariş referansı ve e-posta girişiyle durum sorgulama arayüzü. Kayıtlı teknoloji listesi Next.js, React, TypeScript, Cloudflare Turnstile ve Vercel’i içeriyor.</dd></div><div><dt className="font-semibold text-gray-900">Teslim Edilen Çözüm</dt><dd className="mt-1 text-gray-600">Şirket sitesini tamamlayan ayrı bir web uygulaması. Bu örnek, içerik yönetimli kurumsal siteyle aynı türde bir teslimat olarak sunulmuyor.</dd></div></dl><Link href={projectHref('sun-container-tracking')} className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Portal proje sayfasını inceleyin <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link></div>
+          </div>
+        </article>
+      </div>
+    </PageSection>
+
+    <PageSection title="Web Sitesi Örneklerini İncelerken Nelere Bakmalısınız?" tone="gray">
+      <p className="max-w-4xl text-body text-gray-600">Görsel tasarım, bir örneğin işletmeniz için uygun olup olmadığını tek başına göstermez. İçerik, ziyaretçi akışı ve günlük kullanım ihtiyaçlarını da değerlendirin.</p>
+      <ul className="mt-5 grid gap-x-8 sm:grid-cols-2">{checklist.map((x, i) => <li key={x} className="flex gap-3 border-b border-gray-200 py-3 text-sm leading-6 text-gray-700"><span className="text-overline text-heritage-turquoise-deep">0{i + 1}</span>{x}</li>)}</ul>
+      <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3 text-sm"><Link href={localizedHref('/services/corporate-website-design/features', 'tr')} className="font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Web sitesi özelliklerini inceleyin <ArrowRightIcon className="inline h-4 w-4" aria-hidden="true" /></Link><Link href={localizedHref('/services/corporate-website-design/technologies', 'tr')} className="font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Teknoloji seçeneklerini karşılaştırın <ArrowRightIcon className="inline h-4 w-4" aria-hidden="true" /></Link></div>
+    </PageSection>
+
+    <PageSection title="İşletmenizin İhtiyacına Uygun Yaklaşım">
+      <div className="grid gap-5 md:grid-cols-3">
+        <article className="border-t-2 border-heritage-turquoise bg-background-gray p-5"><h3 className="text-lg font-semibold text-gray-900">Hizmetlerini Tanıtmak İsteyen İşletmeler</h3><p className="mt-3 text-sm leading-6 text-gray-600">Hizmet açıklamaları, hizmet verilen bölgeler ve kolay bulunan iletişim adımları öne çıkabilir. Ülkü Lojistik proje kaydı, hizmet ve bölge sayfalarıyla teklif ve WhatsApp/telefon iletişim akışlarını belgeliyor.</p><Link href={projectHref('ulku-lojistik')} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Ülkü Lojistik proje kaydını inceleyin <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link></article>
+        <article className="border-t-2 border-heritage-turquoise bg-background-gray p-5"><h3 className="text-lg font-semibold text-gray-900">Ürün ve Teknik Bilgi Sunan Firmalar</h3><p className="mt-3 text-sm leading-6 text-gray-600">Ürün grupları, kullanım alanları ve seçim ya da teklif adımları birlikte planlanabilir. Sun Container örneğinde ürün sunumu ile konfigüratör ve teklif akışı kayıtlıdır.</p><Link href={projectHref('sun-container')} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Sun Container örneğine dönün <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link></article>
+        <article className="border-t-2 border-heritage-turquoise bg-background-gray p-5"><h3 className="text-lg font-semibold text-gray-900">Farklı Dillerde Müşterilere Ulaşan Şirketler</h3><p className="mt-3 text-sm leading-6 text-gray-600">Dil seçimi, çevrilen içerikler ve her dildeki gezinme yapısı kapsamda ele alınır. Sun Container ekran görüntüsünde Almanca ve İngilizce seçenekleri bulunuyor; çeviri hizmetinin kim tarafından sağlandığına dair ayrıca bir iddiada bulunmuyoruz.</p><Link href={projectHref('sun-container')} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Çok dilli ekran örneğini inceleyin <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link></article>
+      </div>
+    </PageSection>
+
+    <PageSection title="Benzer Bir Projeyi Nasıl Planlarız?" tone="ivory">
+      <p className="max-w-4xl text-body text-gray-700">Portföydeki bir çalışma, tasarımı aynen kopyalama vaadi değil; ihtiyaçları konuşmak için bir başlangıçtır. İş hedefleri ve ziyaretçi kitlesi, gerekli sayfa ve içerikler, diller, işlevler ve entegrasyonlar ile varsa mevcut sitenin yenilenme ihtiyacı birlikte değerlendirilir.</p>
+      <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3 text-sm"><Link href={localizedHref('/services/corporate-website-design/process', 'tr')} className="font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Planlama ve teslim sürecini inceleyin <ArrowRightIcon className="inline h-4 w-4" aria-hidden="true" /></Link><Link href={localizedHref('/services/corporate-website-design/pricing', 'tr')} className="font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Fiyatlandırma ve kapsamı inceleyin <ArrowRightIcon className="inline h-4 w-4" aria-hidden="true" /></Link></div>
+    </PageSection>
+
+    <PageSection title="Web Sitesi Projeleri Hakkında Sorular" tone="gray">
+      <div className="grid max-w-5xl gap-4 md:grid-cols-2">{faqs.map(([question, answer]) => <article key={question} className="rounded-xl border border-gray-200 bg-white p-5"><h3 className="font-semibold leading-snug text-gray-900">{question}</h3><p className="mt-3 text-sm leading-6 text-gray-600">{answer}</p></article>)}</div>
+      <Link href={localizedHref('/services/corporate-website-design/faq', 'tr')} className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Kurumsal web sitesi hakkında sık sorulan tüm sorular <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>
+      <nav aria-label="Kurumsal web tasarım hizmeti bağlantıları" className="mt-6 flex flex-wrap gap-x-5 gap-y-3 border-t border-gray-200 pt-5">{related.map(([href, label]) => <Link key={href} href={localizedHref(href, 'tr')} className="text-sm font-medium text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">{label} <ArrowRightIcon className="inline h-4 w-4" aria-hidden="true" /></Link>)}</nav>
+    </PageSection>
+  </>;
+}
+
+function TurkishFaqContent({ p }: { p: Record<string, any> }) {
+  const groupIds = ['faq-scope', 'faq-costs', 'faq-content', 'faq-process', 'faq-management', 'faq-technical'];
+  const relatedLinks = [
+    [['/services/corporate-website-design', 'Kurumsal web tasarım hizmeti'], ['/services/corporate-website-design/features', 'Web sitesi özellikleri']],
+    [['/services/corporate-website-design/pricing', 'Fiyatlandırma ve kapsam']],
+    [['/services/corporate-website-design/features', 'İçerik ve özellikler'], ['/services/corporate-website-design/process', 'İçerik planlama süreci']],
+    [['/services/corporate-website-design/process', 'Proje aşamaları']],
+    [['/services/corporate-website-design/technologies', 'CMS, erişim ve altyapı seçenekleri']],
+    [['/services/corporate-website-design/technologies', 'Teknoloji seçenekleri'], ['/services/maintenance-support', 'Bakım ve destek hizmetleri']],
+  ];
+
+  return <>
+    <div className="bg-white py-6">
+      <nav aria-label="Sık sorulan soru kategorileri" className="container mx-auto flex max-w-[1200px] flex-wrap gap-2 px-4">
+        {p.groups.map((group: FaqGroup, i: number) => <a key={group.title} href={`#${groupIds[i]}`} className="inline-flex min-h-10 items-center rounded-full border border-heritage-sand bg-heritage-ivory px-4 py-2 text-sm font-medium text-gray-800 underline-offset-4 hover:border-heritage-turquoise hover:text-heritage-turquoise-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">{group.title}</a>)}
+      </nav>
+    </div>
+    {p.groups.map((group: FaqGroup, i: number) => <PageSection key={group.title} title={group.title} id={groupIds[i]} tone={i % 2 === 0 ? 'gray' : 'white'}>
+      <div className="grid max-w-5xl gap-4 md:grid-cols-2">
+        {group.items.map(([question, answer]) => <article key={question} className="h-full rounded-xl border border-gray-200 bg-white p-5 md:p-6">
+          <h3 className="text-base font-semibold leading-snug text-gray-900">{question}</h3>
+          <p className="mt-3 text-sm leading-6 text-gray-600">{answer}</p>
+        </article>)}
+      </div>
+      <nav aria-label={`${group.title} için ilgili sayfalar`} className="mt-5 flex flex-wrap gap-x-5 gap-y-3">
+        {relatedLinks[i].map(([path, label]) => <Link key={path} href={localizedHref(path, 'tr')} className="inline-flex items-center gap-1 text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">{label}<ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>)}
+      </nav>
+    </PageSection>)}
+    <FAQJsonLd faqs={p.groups.flatMap((group: FaqGroup) => group.items.map(([question, answer]) => ({ question, answer })))} />
+  </>;
+}
+
+function TurkishProcessContent({ p }: { p: Record<string, any> }) {
+  const anchorClass = 'font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise';
+  const prep = [
+    'İşletmenizin faaliyet alanı ve hedef kitlesi',
+    'Web sitesinin iş hedefleri ve ziyaretçiden beklenen adımlar',
+    'Varsa mevcut web sitesi ve korunması gereken bilgiler',
+    'Gerekli içerik türleri ve diller',
+    'İhtiyaç duyulan işlevler ve sistem bağlantıları',
+    'Hedeflenen yayın tarihi',
+    'İsteğe bağlı bütçe beklentisi',
+  ];
+  const responsibilities = [
+    ['Kapsam tanımı', 'İhtiyaçları ve teknik bağımlılıkları değerlendirir, kapsam taslağını oluştururuz.', 'Öncelikleri ve bilinen gereksinimleri paylaşır, kapsamı birlikte netleştirirsiniz.'],
+    ['Marka materyalleri', 'Gelen logo, renk ve marka dosyalarını proje tasarımında değerlendiririz.', 'Mevcut marka rehberini, logoları ve varsa görsel kaynakları iletirsiniz.'],
+    ['İçerik ve çeviriler', 'Kapsama alınan içerikleri yerleştirir ve kararlaştırılan dil sürümlerini kontrol ederiz.', 'İçerik ve çevirileri sağlar ya da onaylar; sorumluluklar teklifte belirlenir.'],
+    ['Tasarım geri bildirimi', 'Tasarım seçeneklerini ve incelenecek çalışmaları paylaşırız.', 'Geri bildirimleri bir araya getirip üzerinde anlaşılan aşamalarda iletirsiniz.'],
+    ['Harici hesap erişimleri', 'Gereken erişim ve entegrasyon ihtiyaçlarını önceden belirtiriz.', 'Gerekli hesapları veya test erişimlerini güvenli ve uygun biçimde sağlarsınız.'],
+    ['Son onay', 'Yayın öncesi kontrolleri ve açık noktaları bildiririz.', 'İçeriği ve önemli kullanım akışlarını inceleyerek yayın onayı verirsiniz.'],
+  ];
+  const faq = [
+    ['Projeye başlamak için bütün içerikler hazır olmalı mı?', 'Hayır. İlk planlama için mevcut materyalleri ve eksikleri konuşabiliriz. Hangi içeriklerin kim tarafından ve ne zaman sağlanacağı proje planında netleştirilir; içerik yerleşimi ve son onaydan önce gerekli metinlerin hazır olması gerekir.'],
+    ['Tasarım aşamasında nasıl geri bildirim verebiliriz?', 'Geri bildirim, üzerinde anlaşılan tasarım incelemelerinde toplanır. Yorumları tek bir listede birleştirmek, çelişen yönlendirmeleri azaltır. İnceleme ve revizyon sınırları teklif kapsamına göre belirlenir.'],
+    ['Proje devam ederken yeni sayfa veya özellik ekleyebilir miyiz?', 'Yeni talep değerlendirilir. Onaylı kapsam, maliyet veya takvim etkileniyorsa değişiklikler işe başlamadan önce yeniden netleştirilir ve yazılı olarak kararlaştırılır.'],
+    ['Mevcut alan adımızı ve hostingimizi kullanabilir miyiz?', 'Mevcut sağlayıcılar teknik gereksinimleri karşılıyorsa kullanılabilir. Erişim, DNS, hosting yapılandırması ve sağlayıcı kısıtları yayın planında değerlendirilir.'],
+    ['Yayından önce siteyi inceleyebilir miyiz?', 'Evet. Proje kapsamında incelenebilir bir geliştirme sürümü ve yayın öncesi kontrol aşaması planlanır. İncelenecek akışlar ve onay adımı proje kapsamına göre belirlenir.'],
+    ['İçerikleri kendimiz güncellemeyi öğrenebilir miyiz?', 'Yönetim paneli, düzenleme erişimi ve kullanım bilgilendirmesi projeye dahil edilmişse devir sırasında paylaşılır. Erişim ve rehberlik kapsamı teklifte açıklanır.'],
+  ];
+
+  return <>
+    <PageSection title="Projeye Başlamadan Önce" tone="gray">
+      <p className="max-w-4xl text-body leading-relaxed text-gray-700">İlk görüşmede gereksinimleri konuşmak için bütün teknik kararları vermiş veya kesin sayfa sayısını çıkarmış olmanız gerekmez. Aşağıdaki bilgiler başlangıç kapsamını ve öncelikleri anlamaya yardımcı olur:</p>
+      <ul className="mt-4 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-3">{prep.map(item => <li key={item} className="border-b border-gray-200 py-3 text-sm leading-6 text-gray-700">{item}</li>)}</ul>
+      <p className="mt-4 text-sm leading-6 text-gray-600">Teknoloji seçimi ve ayrıntılı sayfa planı gereksinimler incelendikten sonra ele alınabilir; bütçe aralığını paylaşmak da isteğe bağlıdır.</p>
+    </PageSection>
+
+    <PageSection title={p.title} tone="ivory" id="project-stages">
+      <p className="max-w-4xl text-body leading-relaxed text-gray-700">Kurumsal web sitesi yapım süreci, proje kapsamına göre uyarlanan yedi aşamada ilerler. Her adımda hazırlanacak çalışma, müşteri katkısı ve onay noktası birlikte netleştirilir.</p>
+      <ol className="relative mt-6 space-y-4 border-s-2 border-heritage-sand ps-5 sm:ps-7">
+        {p.stages.map((stage: ProcessStage, i: number) => <li key={stage.title} className="relative rounded-xl border border-gray-200 bg-white p-4 shadow-sm sm:p-5">
+          <span aria-hidden="true" className="absolute -start-[2.05rem] top-4 flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-heritage-turquoise text-xs font-semibold text-white sm:-start-[2.55rem]">{String(i + 1).padStart(2, '0')}</span>
+          <h3 className="text-base font-semibold text-gray-900 sm:text-lg">{i + 1}. {stage.title}</h3>
+          <dl className="mt-4 grid gap-4 text-sm leading-6 md:grid-cols-3">
+            <div><dt className="text-overline text-heritage-turquoise-deep">PakSoft ne yapar?</dt><dd className="mt-1 text-gray-700">{stage.paksoft}</dd></div>
+            <div><dt className="text-overline text-heritage-turquoise-deep">Sizden gerekenler</dt><dd className="mt-1 text-gray-700">{stage.client}</dd></div>
+            <div className="rounded-lg bg-background-gray p-3"><dt className="text-overline text-gray-600">Çıktı / onay noktası</dt><dd className="mt-1 text-gray-700">{stage.approval}</dd></div>
+          </dl>
+        </li>)}
+      </ol>
+    </PageSection>
+
+    <PageSection title="Proje Boyunca Kimden Ne Beklenir?">
+      <p className="mb-4 max-w-4xl text-body text-gray-600">Sorumluluklar projeye ve kararlaştırılan kapsama göre netleştirilir; tablo iş birliğini planlamaya yardımcı olur.</p>
+      <div className="overflow-x-auto rounded-xl border border-gray-200 bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise" tabIndex={0} role="region" aria-label="Proje sorumlulukları tablosu"><table className="w-full min-w-[720px] border-collapse text-left text-sm"><thead><tr><th scope="col" className="border-b border-gray-300 bg-background-gray px-4 py-3 font-semibold text-gray-900">Konu</th><th scope="col" className="border-b border-gray-300 bg-background-gray px-4 py-3 font-semibold text-gray-900">PakSoft’un Sorumluluğu</th><th scope="col" className="border-b border-gray-300 bg-background-gray px-4 py-3 font-semibold text-gray-900">Müşterinin Katkısı</th></tr></thead><tbody>{responsibilities.map(([topic, paksoft, client]) => <tr key={topic}><th scope="row" className="border-b border-gray-200 px-4 py-3 align-top font-semibold text-gray-900">{topic}</th><td className="border-b border-gray-200 px-4 py-3 align-top leading-6 text-gray-700">{paksoft}</td><td className="border-b border-gray-200 px-4 py-3 align-top leading-6 text-gray-700">{client}</td></tr>)}</tbody></table></div>
+    </PageSection>
+
+    <PageSection title={p.timingTitle} tone="gray"><p className="max-w-4xl text-body leading-relaxed text-gray-700">{p.timing}</p></PageSection>
+
+    <PageSection title="Geri Bildirim ve Revizyonlar Nasıl Yönetilir?">
+      <ul className="grid gap-x-8 md:grid-cols-2">{[
+        'Geri bildirim, proje planında belirlenen tasarım ve inceleme aşamalarında toplanır.',
+        'Birleştirilmiş geri bildirim, farklı paydaşlardan gelen çelişkileri azaltmaya yardımcı olur.',
+        'Revizyon sınırları ve onay adımları proje teklifinde belgelenir.',
+        'Yeni işlev veya değişen gereksinim, kapsamın yanı sıra fiyat ve takvim güncellemesi gerektirebilir.',
+      ].map(item => <li key={item} className="border-b border-gray-200 py-3 text-sm leading-6 text-gray-700">{item}</li>)}</ul>
+      <Link href={localizedHref('/services/corporate-website-design/features', 'tr')} className={`mt-5 inline-flex items-center gap-2 text-sm ${anchorClass}`}>Proje kapsamına alınabilecek özellikleri inceleyin <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>
+    </PageSection>
+
+    <PageSection title="Mevcut Web Sitesi Yenileniyorsa" tone="ivory">
+      <p className="max-w-4xl text-body leading-relaxed text-gray-700">Yenileme çalışmalarında mevcut yapıyı ve içeriği inceleyerek korunacak, geliştirilecek veya kaldırılacak öğeleri belirleriz. Geçiş planı proje gereksinimleriyle birlikte hazırlanır.</p>
+      <ul className="mt-4 grid gap-x-8 sm:grid-cols-2">{[
+        'Mevcut sayfaların, içeriklerin ve önemli URL’lerin envanteri',
+        'İçeriğin korunması, güncellenmesi veya kaldırılması kararı',
+        'Değişen adresler için gerekli URL eşleştirmeleri ve yönlendirmeler',
+        'Alan adı ve hosting sağlayıcısıyla yapılacak koordinasyon',
+        'Yayın öncesi ve sonrası kontrollerin planlanması',
+      ].map(item => <li key={item} className="border-b border-heritage-sand py-3 text-sm leading-6 text-gray-700">{item}</li>)}</ul>
+      <p className="mt-4 text-sm leading-6 text-gray-600">Geçiş sırasında kısa süreli kesinti veya arama görünürlüğünde değişim yaşanabilir; bunların sıfır olacağı garanti edilemez.</p>
+      <Link href={localizedHref('/services/corporate-website-design', 'tr')} className={`mt-5 inline-flex items-center gap-2 text-sm ${anchorClass}`}>Web sitesi yenileme yaklaşımını genel bakışta inceleyin <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>
+    </PageSection>
+
+    <PageSection title="Yayından Sonra Ne Olur?">
+      <p className="max-w-4xl text-body text-gray-600">Yayın sonrasında devir ve düzenleme bilgilendirmesi üzerinde anlaşılan proje kapsamına göre tamamlanır. Sonraki işler, teslim kontrolü ve devam eden hizmetler olarak ayrı değerlendirilir.</p>
+      <dl className="mt-4 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-4">{[
+        ['Devir ve düzenleme', 'Kararlaştırılan erişim ve CMS kullanım bilgileri teslim kapsamına göre paylaşılır.'],
+        ['Sorun bildirimi', 'Yayında fark edilen konular mevcut proje anlaşmasındaki teslim ve düzeltme koşullarına göre ele alınır.'],
+        ['Bakım ve güncellemeler', 'Yayın sonrası bakım ayrıca kapsamlandırılır; her projede otomatik olarak bulunmaz.'],
+        ['Yeni içerik ve pazarlama', 'İçerik geliştirme, ek işlevler, devam eden SEO ve reklam çalışmaları ayrı hizmet olarak planlanabilir.'],
+      ].map(([title, description]) => <div key={title} className="border-b border-gray-200 py-3"><dt className="font-semibold text-gray-900">{title}</dt><dd className="mt-1 text-sm leading-6 text-gray-600">{description}</dd></div>)}</dl>
+      <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3 text-sm"><Link href={localizedHref('/services/corporate-website-design/technologies', 'tr')} className={anchorClass}>Altyapı ve yönetim seçenekleri <ArrowRightIcon className="inline h-4 w-4" aria-hidden="true" /></Link><Link href={localizedHref('/services/corporate-website-design/portfolio', 'tr')} className={anchorClass}>Belgelenmiş projeyi inceleyin <ArrowRightIcon className="inline h-4 w-4" aria-hidden="true" /></Link><Link href={localizedHref('/services/corporate-website-design/pricing', 'tr')} className={anchorClass}>Fiyatlandırma ve kapsam <ArrowRightIcon className="inline h-4 w-4" aria-hidden="true" /></Link></div>
+    </PageSection>
+
+    <PageSection title="Proje Süreci Hakkında Sık Sorulan Sorular" tone="gray">
+      <dl className="grid gap-x-8 md:grid-cols-2">{faq.map(([question, answer]) => <div key={question} className="border-b border-gray-200 py-5"><dt><h3 className="font-semibold leading-6 text-gray-900">{question}</h3></dt><dd className="mt-2 text-sm leading-6 text-gray-600">{answer}</dd></div>)}</dl>
+      <Link href={localizedHref('/services/corporate-website-design/faq', 'tr')} className={`mt-5 inline-flex items-center gap-2 text-sm ${anchorClass}`}>Tüm sık sorulan soruları inceleyin <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>
+    </PageSection>
+  </>;
+}
+
+function TurkishFeaturesContent() {
+  const anchorClass = 'font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise';
+  const companyPages = [
+    ['Şirket ve Ekip Tanıtımı', 'İşletmenizin geçmişini, çalışma alanlarını, ekibini ve varsa şubelerini tanıtarak ziyaretçilerin şirketinizi anlamasına yardımcı olur.'],
+    ['Hizmet Sayfaları', 'Her hizmetin kapsamını, çalışma biçimini ve müşterinin sonraki adımını ayrı ve anlaşılır biçimde açıklayabilir.'],
+    ['Projeler ve Referanslar', 'Paylaşılmasına izin verilen proje örnekleri, uygulama alanları ve referans bilgileri için düzenli bir sunum alanı sağlar.'],
+    ['Sertifikalar ve Belgeler', 'İşletmenizin paylaşmak istediği sertifikaları, teknik dokümanları veya indirilebilir dosyaları düzenleyebilir.'],
+    ['Haberler ve Duyurular', 'Yeni gelişmeler, duyurular ve içerik yazıları için güncellenebilir bir alan oluşturur.'],
+    ['Şube ve İletişim Bilgileri', 'Adresleri, iletişim kanallarını, çalışma saatlerini ve ilgili talep formlarını ziyaretçilerin bulabileceği şekilde sunar.'],
+  ];
+  const catalogueFeatures = [
+    ['Ürün kategorileri ve detay sayfaları', 'Ürünleri gruplandırıp açıklamalarını ve temel bilgilerini ayrı sayfalarda sunar.'],
+    ['Teknik özellikler ve dokümanlar', 'Ürün özelliklerini ve indirilebilir katalog ya da belgeleri ilgili içerikle birlikte gösterir.'],
+    ['Arama ve filtreleme', 'Kapsama alındığında ziyaretçilerin geniş ürün listelerinde aradıklarını daraltmasına yardımcı olur.'],
+    ['Ürüne özel teklif talepleri', 'İlgilenilen ürünü talep formuyla ilişkilendirerek ekibin hangi ürün hakkında bilgi istendiğini görmesini sağlar.'],
+  ];
+  const optionalModules = [
+    ['CRM bağlantıları', 'Talep bilgilerini seçilen müşteri yönetimi sistemine aktarmayı amaçlar; API erişimi, alan eşleştirmesi ve sağlayıcı izinleri gerekir.'],
+    ['İşe alım sistemleri', 'Açık pozisyonları veya başvuruları harici işe alım araçlarıyla ilişkilendirebilir; sağlayıcı hesabı ve başvuru akışı netleştirilir.'],
+    ['Site içi arama', 'Ziyaretçilerin sayfa, haber veya katalog içeriğinde arama yapmasını sağlar; indekslenecek içerik türleri ve filtreler belirlenir.'],
+    ['Bülten entegrasyonları', 'İzin veren ziyaretçileri seçilen bülten hizmetine kaydetmeye yardımcı olur; hesap, onay metinleri ve sağlayıcı koşulları gerekir.'],
+    ['Analitik ve dönüşüm takibi', 'Üzerinde anlaşılan ziyaret veya form olaylarının ölçülmesini destekler; hesap erişimi, çerez tercihleri ve ölçüm kapsamı değerlendirilir.'],
+    ['Randevu entegrasyonları', 'Ziyaretçilerin uygun zaman talep etmesine veya seçilen randevu sistemiyle ilerlemesine yardımcı olur; kullanılacak hizmet ve kuralları belirlenir.'],
+    ['Diğer iş sistemi bağlantıları', 'Uygun arayüzü bulunan harici sistemlerle veri alışverişi kurabilir; teknik dokümantasyon, yetkiler ve lisanslar kapsamı etkiler.'],
+  ];
+  const planningRows = [
+    ['Hizmetleri tanıtma', 'Hizmet sayfaları', 'İçerik ve sayfa yapısı'],
+    ['Ürün talepleri', 'Katalog ve teklif formu', 'Ürün verileri ve form alanları'],
+    ['İçerik düzenleme', 'CMS', 'Düzenlenebilir alanlar ve yetkiler'],
+    ['Yurt dışı müşteriler', 'Çok dilli sayfalar', 'Diller ve çeviri sorumlulukları'],
+    ['Satış akışını bağlama', 'CRM entegrasyonu', 'Sağlayıcı ve veri gereksinimleri'],
+  ];
+  const faqs: [string, string][] = [
+    ['Web sitesindeki içerikleri kendimiz değiştirebilir miyiz?', 'Seçilen altyapıda yönetim paneli ve düzenlenebilir alanlar kapsamlanırsa yetkili ekip üyeleri belirli içerikleri güncelleyebilir. Erişim ve kullanım bilgilendirmesi teklif ve devir kapsamında netleştirilir.'],
+    ['Sonradan yeni bir dil veya modül eklenebilir mi?', 'Teknik yapıya ve mevcut içeriğe bağlı olarak ekleme değerlendirilebilir. Yeni dil için içerik, çeviri ve onay sorumlulukları; modül içinse işlev, entegrasyon ve varsa üçüncü taraf koşulları ayrıca kapsamlandırılır.'],
+    ['Ürün kataloğu ile e-ticaret sitesi arasındaki fark nedir?', 'Katalog ürünleri ve teknik bilgileri tanıtır, genellikle iletişim veya teklif talebine yönlendirir. E-ticaret ise sipariş ve çevrimiçi ödeme gibi satış akışları içerebilir; bu özellikler katalogda kendiliğinden bulunmaz.'],
+    ['Teklif formundan gelen talepler nasıl iletilir?', 'Form gönderimlerinin hangi e-posta adresine veya sisteme yönlendirileceği proje kapsamında belirlenir. CRM aktarımı, otomatik bildirim veya kayıt saklama gibi işlevler ayrıca netleştirilir.'],
+    ['Mevcut CRM sistemimize bağlantı kurulabilir mi?', 'CRM’in API ve erişim olanakları incelenerek uygunluk değerlendirilir. Veri alanları, yetkiler, test ortamı, lisanslar ve sağlayıcı kısıtları kapsamı etkiler.'],
+    ['Hangi özellikler proje fiyatını etkiler?', 'Sayfa ve şablon yapısı, içerik yönetimi, diller, katalog ve form kapsamı, entegrasyonlar ile içerik hazırlığı gibi işler teklifin kapsamını etkiler.'],
+  ];
+
+  return <>
+    <PageSection title="Kurumsal Web Sitesinde Hangi Özellikler Olmalı?" tone="gray" id="feature-overview">
+      <p className="max-w-4xl text-body leading-relaxed text-gray-700">İhtiyaçlar, işletmenin ne sunduğuna ve ziyaretçilerin sitede ne yapacağına göre değişir. Sayfalar bilgiyi sunar; içerik türleri bu bilgiyi düzenler; formlar, arama ve bağlantılar ise ziyaretçinin belirli bir işlem yapmasını sağlar. Her işletmenin bütün modüllere ihtiyacı yoktur.</p>
+      <div className="mt-5 grid gap-3 md:grid-cols-3">
+        <article className="border-s-2 border-heritage-turquoise bg-white p-4"><h3 className="font-semibold text-gray-900">Hizmet işletmeleri</h3><p className="mt-2 text-sm leading-6 text-gray-600">Uzmanlık alanlarını, hizmet kapsamını, ekip bilgilerini ve iletişim yollarını öne çıkarabilir.</p></article>
+        <article className="border-s-2 border-heritage-turquoise bg-white p-4"><h3 className="font-semibold text-gray-900">Üreticiler ve ihracatçılar</h3><p className="mt-2 text-sm leading-6 text-gray-600">Ürünleri, teknik özellikleri, belgeleri ve ürün bazlı talepleri sunabilir.</p></article>
+        <article className="border-s-2 border-heritage-turquoise bg-white p-4"><h3 className="font-semibold text-gray-900">Proje ve içerik paylaşan şirketler</h3><p className="mt-2 text-sm leading-6 text-gray-600">Projeleri, haberleri, kariyer fırsatlarını veya şube bilgilerini düzenli yayınlayabilir.</p></article>
+      </div>
+      <Link href={localizedHref('/services/corporate-website-design', 'tr')} className={`mt-5 inline-flex items-center gap-2 text-sm ${anchorClass}`}>Kurumsal web tasarım genel bakışına dönün <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>
+    </PageSection>
+
+    <PageSection title="İşletmenizi Anlatan Sayfalar" tone="ivory">
+      <div className="grid gap-7 lg:grid-cols-[1.35fr_.65fr]">
+        <dl className="grid gap-x-7 sm:grid-cols-2">{companyPages.map(([title, text]) => <div key={title} className="border-b border-heritage-sand py-3"><dt><h3 className="font-semibold text-gray-900">{title}</h3></dt><dd className="mt-2 text-sm leading-6 text-gray-700">{text}</dd></div>)}</dl>
+        <aside className="self-start rounded-xl border border-heritage-sand bg-white p-4 sm:p-5"><p className="text-overline text-heritage-turquoise-deep">Örnek sayfa yapısı</p><ul className="mt-3 divide-y divide-gray-200 text-sm text-gray-700"><li className="py-2 font-semibold text-gray-900">Kurumsal</li><li className="py-2 ps-4">Hakkımızda ve ekip</li><li className="py-2 ps-4">Hizmetler</li><li className="py-2 ps-4">Projeler ve referanslar</li><li className="py-2 ps-4">Haberler ve duyurular</li><li className="py-2 ps-4">İletişim ve teklif talebi</li></ul></aside>
+      </div>
+      <Link href={localizedHref('/services/corporate-website-design/portfolio', 'tr')} className={`mt-5 inline-flex items-center gap-2 text-sm ${anchorClass}`}>Belgelenmiş web sitesi projesini inceleyin <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>
+    </PageSection>
+
+    <PageSection title="Yönetim Panelli Web Sitesi">
+      <div className="grid gap-7 lg:grid-cols-[1fr_.8fr]">
+        <div className="space-y-4">
+          <article><h3 className="text-base font-semibold text-gray-900">İçerikleri Güncelleme</h3><p className="mt-2 text-sm leading-6 text-gray-600">Seçilen içerik yönetim sistemi, yetkili kişilerin anlaşmaya dahil edilen metinleri, görselleri, hizmetleri, projeleri veya haberleri güncellemesine imkân verebilir. Hangi alanların düzenlenebileceği platform ve kapsamla belirlenir.</p></article>
+          <article><h3 className="text-base font-semibold text-gray-900">Kullanıcı Rolleri ve Yayın Yetkileri</h3><p className="mt-2 text-sm leading-6 text-gray-600">Birden fazla içerik sorumlusu veya yayın öncesi onay gerekiyorsa kullanıcı rolleri değerlendirilebilir. Ayrıntılı izin ve onay akışları her projeye otomatik olarak dahil değildir.</p></article>
+          <article><h3 className="text-base font-semibold text-gray-900">Kullanım Rehberi ve Teslim</h3><p className="mt-2 text-sm leading-6 text-gray-600">Düzenleme erişimi, varsa kullanım rehberi ve devir materyalleri teklif içinde tanımlanır. Ekibinizin hangi işlemleri devralacağı teslim kapsamıyla birlikte netleştirilir.</p></article>
+        </div>
+        <div className="overflow-hidden rounded-xl border border-gray-200 bg-white">
+          <div className="border-b border-gray-200 bg-background-gray px-4 py-3"><p className="text-overline text-heritage-turquoise-deep">Örnek gösterim · Yönetim paneli</p></div>
+          <div className="grid min-h-48 sm:grid-cols-[8rem_1fr]">
+            <ul className="border-b border-gray-200 bg-background-gray p-3 text-xs text-gray-600 sm:border-b-0 sm:border-e"><li className="rounded bg-white px-2 py-2 font-semibold text-gray-800">Sayfalar</li><li className="px-2 py-2">Hizmetler</li><li className="px-2 py-2">Haberler</li></ul>
+            <div className="space-y-4 p-4"><p className="text-sm font-semibold text-gray-900">İçerik düzenleme alanı</p><div><span className="mb-1 block text-xs text-gray-500">Başlık</span><div aria-hidden="true" className="h-8 rounded border border-gray-200 bg-white" /></div><div><span className="mb-1 block text-xs text-gray-500">Açıklama</span><div aria-hidden="true" className="h-14 rounded border border-gray-200 bg-white" /></div><p className="text-xs leading-5 text-gray-500">Bu görsel bir arayüz örneğidir; çalışan bir ürün ekranı değildir.</p></div>
+          </div>
+        </div>
+      </div>
+    </PageSection>
+
+    <PageSection title="Mobil Uyumlu Tasarım ve Kullanım Kolaylığı" tone="gray">
+      <p className="max-w-4xl text-body text-gray-600">Arayüz, farklı ekran genişliklerinde içeriğin okunmasını ve önemli işlemlerin kullanılmasını destekleyecek biçimde planlanır. Kontroller ve formlar proje kapsamına alınan cihaz ve tarayıcılarda test edilir; her cihazda aynı davranış veya belirli bir performans puanı garanti edilmez.</p>
+      <ul className="mt-4 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-4">{['Ekran boyutlarına uyum sağlayan sayfa düzenleri', 'Okunabilir metin ve anlaşılır gezinme', 'Dokunmatik kullanıma uygun form alanları ve kontroller', 'Önemli müşteri yolculuklarının test edilmesi'].map(item => <li key={item} className="border-b border-gray-200 py-3 text-sm leading-6 text-gray-700">{item}</li>)}</ul>
+    </PageSection>
+
+    <PageSection title="Ürün Kataloğu ve Teknik İçerikler">
+      <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
+        <div><p className="max-w-4xl text-body leading-relaxed text-gray-600">Ürün kataloğu, müşterilerin ürün gruplarını, teknik bilgileri ve indirilebilir dokümanları incelemesine; ardından ürün hakkında soru veya teklif talebi göndermesine yardımcı olur. Katalog büyüklüğü ve içerik yapısı işletmenin verilerine göre belirlenir.</p><ul className="mt-4 grid gap-x-8 sm:grid-cols-2">{catalogueFeatures.map(([title, text]) => <li key={title} className="border-b border-gray-200 py-3"><h3 className="text-sm font-semibold text-gray-900">{title}</h3><p className="mt-1 text-sm leading-6 text-gray-600">{text}</p></li>)}</ul><p className="mt-4 text-sm leading-6 text-gray-600">Ürün kataloğu kendi başına çevrimiçi ödeme, stok yönetimi veya sepet/sipariş akışı içermez.</p></div>
+        <Link href={localizedHref('/services/e-commerce', 'tr')} className={`inline-flex min-h-11 items-center gap-2 rounded-sm border border-heritage-sand bg-heritage-ivory px-4 py-3 text-sm ${anchorClass}`}>Online satış için e-ticaret çözümlerini inceleyin <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>
+      </div>
+    </PageSection>
+
+    <PageSection title="İletişim ve Teklif Talep Formları" tone="ivory">
+      <div className="grid gap-7 lg:grid-cols-[1.2fr_.8fr]">
+        <div className="grid gap-5 sm:grid-cols-2">
+          <article><h3 className="font-semibold text-gray-900">İletişim Formları</h3><p className="mt-2 text-sm leading-6 text-gray-700">İsim, iletişim bilgisi ve talebin konusu gibi gerekli alanları toplayabilir. Gönderimlerin hangi e-posta adresine veya kanala iletileceği üzerinde anlaşılır.</p></article>
+          <article><h3 className="font-semibold text-gray-900">Teklif Talep Formları</h3><p className="mt-2 text-sm leading-6 text-gray-700">Hizmet veya ürün seçimi, gereksinim alanları ve ihtiyaç varsa dosya ekleme gibi adımlar içerebilir. Alanlar ekibinizin değerlendirmesi için gereken bilgiye göre belirlenir.</p></article>
+          <article className="sm:col-span-2"><h3 className="font-semibold text-gray-900">Randevu ve Başvuru Talepleri</h3><p className="mt-2 text-sm leading-6 text-gray-700">Randevu isteği veya işe başvuru gibi akışlar eklenebilir. Takvim, başvuru yönetimi veya harici sisteme aktarım gibi gelişmiş davranışlar ayrıca kapsamlandırılır.</p></article>
+          <p className="sm:col-span-2 text-sm leading-6 text-gray-600">Form kapsamı; anlaşılır etiketleri, alan doğrulamasını, uygun spam korumasını ve gönderim testlerini içerecek biçimde planlanır. CRM bağlantısı, otomatik e-posta veya veri saklama şekli ayrıca kararlaştırılmadıkça varsayılmaz.</p>
+        </div>
+        <div className="rounded-xl border border-heritage-sand bg-white p-4 sm:p-5"><p className="text-overline text-heritage-turquoise-deep">Örnek gösterim · Teklif formu</p><div className="mt-4 space-y-3"><div><span className="mb-1 block text-xs text-gray-600">İlgilendiğiniz ürün</span><div aria-hidden="true" className="h-9 rounded border border-gray-200" /></div><div><span className="mb-1 block text-xs text-gray-600">İhtiyacınız</span><div aria-hidden="true" className="h-14 rounded border border-gray-200" /></div><div><span className="mb-1 block text-xs text-gray-600">İletişim e-postası</span><div aria-hidden="true" className="h-9 rounded border border-gray-200" /></div><p className="text-xs text-gray-500">Görsel örnektir; bu sayfada form gönderimi yapılmaz.</p></div></div>
+      </div>
+    </PageSection>
+
+    <PageSection title="Çok Dilli Web Sitesi Özellikleri">
+      <div className="grid gap-6 lg:grid-cols-[1fr_.7fr]">
+        <div><p className="text-body leading-relaxed text-gray-600">Her dil için sayfa içeriği ve gezinme ayrı ele alınır. Yerelleştirilmiş formlar ve metadata planlanabilir; Arapça ve Urduca sürümlerde sağdan sola (RTL) metin yönü ve arayüz düzeni değerlendirilir.</p><ul className="mt-4 space-y-2 text-sm leading-6 text-gray-700"><li>İçeriklerin diller arasında nasıl güncelleneceği belirlenir.</li><li>Çeviri, içerik girişi, editoryal kontrol ve onay sorumlulukları paylaşılır.</li><li>Sonradan eklenecek diller için içerik yapısı ve teknik gereksinimler incelenir.</li></ul><p className="mt-3 text-sm leading-6 text-gray-600">Dil seçenekleri ve çeviri hizmetleri teklifte kararlaştırılır; otomatik olarak dahil değildir.</p></div>
+        <aside className="rounded-xl border border-heritage-sand bg-heritage-ivory p-4"><p className="text-overline text-heritage-turquoise-deep">Dile göre planlanabilecek alanlar</p><ul className="mt-3 divide-y divide-heritage-sand text-sm text-gray-700">{['Sayfalar ve menüler', 'Form etiketleri ve bildirim metinleri', 'Sayfa başlıkları ve metadata', 'Arapça / Urduca RTL düzeni'].map(x => <li key={x} className="py-2">{x}</li>)}</ul></aside>
+      </div>
+    </PageSection>
+
+    <PageSection title="SEO, Performans ve Erişilebilirlik Altyapısı" tone="gray">
+      <div className="grid gap-x-8 md:grid-cols-3">
+        <article className="border-b border-gray-200 py-4"><h3 className="font-semibold text-gray-900">Sayfa Yapısı ve Teknik SEO</h3><p className="mt-2 text-sm leading-6 text-gray-600">Anlaşılır başlık yapısı, sayfa metadata’sı ve taranabilir gezinme düzeni planlanabilir. Bunlar temel site altyapısıdır; devam eden SEO ve içerik kampanyaları ayrı hizmettir.</p></article>
+        <article className="border-b border-gray-200 py-4"><h3 className="font-semibold text-gray-900">Görseller ve Sayfa Performansı</h3><p className="mt-2 text-sm leading-6 text-gray-600">Görsel boyutları, uygun dosya kullanımı ve sayfa kaynakları değerlendirilir. Sonuçlar içerik, platform ve barındırma koşullarına bağlıdır; sabit skor garantisi verilmez.</p></article>
+        <article className="border-b border-gray-200 py-4"><h3 className="font-semibold text-gray-900">Formlar ve Erişilebilir Kullanım</h3><p className="mt-2 text-sm leading-6 text-gray-600">Form etiketleri, klavye ile kullanım ve anlaşılır hata durumları proje testlerinde ele alınabilir. Bu çalışma yasal uyum veya erişilebilirlik sertifikası iddiası değildir.</p></article>
+      </div>
+      <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3 text-sm"><Link href={localizedHref('/services/seo', 'tr')} className={anchorClass}>SEO hizmetlerini inceleyin <ArrowRightIcon className="inline h-4 w-4" aria-hidden="true" /></Link><Link href={localizedHref('/services/corporate-website-design/technologies', 'tr')} className={anchorClass}>Teknoloji ve CMS seçeneklerini inceleyin <ArrowRightIcon className="inline h-4 w-4" aria-hidden="true" /></Link></div>
+    </PageSection>
+
+    <PageSection title="İsteğe Bağlı Modüller ve Entegrasyonlar">
+      <p className="max-w-4xl text-body text-gray-600">Aşağıdaki bağlantılar ihtiyaç halinde değerlendirilir. Uygunluk; seçilen sağlayıcıya, erişim izinlerine, aboneliklere ve kullanım ücretlerine bağlı olabilir.</p>
+      <dl className="mt-4 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-3">{optionalModules.map(([title, text]) => <div key={title} className="border-b border-gray-200 py-3"><dt className="font-semibold text-gray-900">{title}</dt><dd className="mt-1 text-sm leading-6 text-gray-600">{text}</dd></div>)}</dl>
+    </PageSection>
+
+    <PageSection title="Projenizin Özelliklerini Birlikte Belirleyelim" tone="ivory">
+      <p className="max-w-4xl text-body text-gray-600">Aşağıdaki eşleştirmeler ihtiyaçları konuşmak içindir; sabit paket veya otomatik dahil olan işler anlamına gelmez.</p>
+      <div className="mt-4 overflow-x-auto rounded-xl border border-heritage-sand bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise" tabIndex={0} role="region" aria-label="Proje ihtiyacı ve özellik kapsamı tablosu"><table className="w-full min-w-[680px] border-collapse text-left text-sm"><thead><tr><th scope="col" className="border-b border-gray-300 bg-background-gray px-4 py-3 font-semibold text-gray-900">İhtiyaç</th><th scope="col" className="border-b border-gray-300 bg-background-gray px-4 py-3 font-semibold text-gray-900">Değerlendirilebilecek Özellik</th><th scope="col" className="border-b border-gray-300 bg-background-gray px-4 py-3 font-semibold text-gray-900">Netleştirilecek Konular</th></tr></thead><tbody>{planningRows.map(([need, feature, scope]) => <tr key={need}><th scope="row" className="border-b border-gray-200 px-4 py-3 align-top font-semibold text-gray-900">{need}</th><td className="border-b border-gray-200 px-4 py-3 align-top leading-6 text-gray-700">{feature}</td><td className="border-b border-gray-200 px-4 py-3 align-top leading-6 text-gray-700">{scope}</td></tr>)}</tbody></table></div>
+      <p className="mt-4 max-w-4xl text-sm leading-6 text-gray-600">Yazılı teklif; dahil olan işlevleri, isteğe bağlı eklemeleri, müşteri sorumluluklarını, üçüncü taraf giderlerini ve kabul/devir kapsamını açıklar.</p>
+      <Link href={localizedHref('/services/corporate-website-design/process', 'tr')} className={`mt-4 inline-flex items-center gap-2 text-sm ${anchorClass}`}>Özelliklerin proje sürecinde nasıl netleştiğini görün <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>
+    </PageSection>
+
+    <PageSection title="Web Sitesi Özellikleri Hakkında Sorular" tone="gray">
+      <dl className="grid gap-x-8 md:grid-cols-2">{faqs.map(([question, answer]) => <div key={question} className="border-b border-gray-200 py-5"><dt><h3 className="font-semibold leading-6 text-gray-900">{question}</h3></dt><dd className="mt-2 text-sm leading-6 text-gray-600">{answer}</dd></div>)}</dl>
+      <Link href={localizedHref('/services/corporate-website-design/faq', 'tr')} className={`mt-5 inline-flex items-center gap-2 text-sm ${anchorClass}`}>Sık sorulan tüm soruları inceleyin <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>
+    </PageSection>
+  </>;
+}
+
+function TurkishPricingContent({ p }: { p: Record<string, any> }) {
+  const tableClass = 'w-full min-w-[760px] border-collapse text-left text-sm';
+  const thClass = 'border-b border-gray-300 bg-background-gray px-4 py-3 font-semibold text-gray-900';
+  const tdClass = 'border-b border-gray-200 px-4 py-3 align-top leading-6 text-gray-700';
+  const enquiryHref = localizedHref('/start-project?service=corporate-website-design', 'tr');
+  return <>
+    <PageSection title={p.optionsTitle} tone="gray" id="scope-options">
+      <p className="max-w-3xl text-body leading-relaxed text-gray-600">{p.optionsIntro}</p>
+      <div className="mt-5 grid gap-4 md:grid-cols-3">
+        {p.options.map((item: any, i: number) => <article key={item.title} className="flex h-full flex-col rounded-xl border border-gray-200 border-t-2 border-t-heritage-turquoise bg-white p-5 shadow-sm">
+          <span className="text-overline text-heritage-turquoise-deep">0{i + 1}</span><h3 className="mt-2 text-lg font-semibold text-gray-900">{item.title}</h3>
+          <dl className="mt-4 flex-1 space-y-3 text-sm leading-6 text-gray-700">
+            <div><dt className="font-semibold text-gray-900">Kimler için?</dt><dd>{item.who}</dd></div>
+            <div><dt className="font-semibold text-gray-900">Kararlaştırılacak kapsam</dt><dd>{item.scope}</dd></div>
+            <div><dt className="font-semibold text-gray-900">Başlıca maliyet etkenleri</dt><dd>{item.drivers}</dd></div>
+          </dl>
+          <Link href={enquiryHref} className="mt-5 inline-flex min-h-11 items-center justify-between gap-2 border-t border-gray-200 pt-4 text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">
+            {item.cta}<ArrowRightIcon className="h-4 w-4 shrink-0 rtl:rotate-180" aria-hidden="true" />
+          </Link>
+        </article>)}
+      </div>
+    </PageSection>
+
+    <PageSection title={p.comparisonTitle}>
+      <p className="mb-4 max-w-4xl text-body text-gray-600">Her proje farklı olduğundan, aşağıdaki başlıklar teklifte karşılaştırılıp netleştirilir; otomatik olarak dahil oldukları varsayılmamalıdır.</p>
+      <div className="overflow-x-auto rounded-xl border border-gray-200 bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise" tabIndex={0} role="region" aria-label={p.comparisonTitle}>
+        <table className={tableClass}><thead><tr><th scope="col" className={thClass}>Karşılaştırma başlığı</th><th scope="col" className={thClass}>Neyi ifade eder?</th><th scope="col" className={thClass}>Teklifte nasıl belirlenir?</th></tr></thead><tbody>{p.comparison.map((row: string[]) => <tr key={row[0]}><th scope="row" className={`${tdClass} font-semibold text-gray-900`}>{row[0]}</th><td className={tdClass}>{row[1]}</td><td className={tdClass}>{row[2]}</td></tr>)}</tbody></table>
+      </div>
+    </PageSection>
+
+    <PageSection title={p.factorsTitle} tone="ivory">
+      <div className="grid gap-x-8 md:grid-cols-2">{p.factors.map(([title, text]: [string, string], i: number) => <article key={title} className="border-b border-heritage-sand py-4"><h3 className="flex items-start gap-3 font-semibold text-gray-900"><span aria-hidden="true" className="text-overline text-heritage-turquoise-deep">0{i + 1}</span>{title}</h3><p className="mt-2 text-sm leading-6 text-gray-700">{text}</p></article>)}</div>
+    </PageSection>
+
+    <PageSection title={p.costsTitle}>
+      <p className="mb-4 max-w-4xl text-body text-gray-600">Web sitesi geliştirme bedeli tek seferlik proje çalışmasını; aşağıdaki kalemler ise varsa yayın sonrası veya sağlayıcıya bağlı giderleri anlatır. Her proje her kalemi gerektirmez.</p>
+      <div className="overflow-x-auto rounded-xl border border-gray-200 bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise" tabIndex={0} role="region" aria-label={p.costsTitle}>
+        <table className={tableClass}><thead><tr><th scope="col" className={thClass}>Gider kalemi</th><th scope="col" className={thClass}>Neyi karşılar?</th><th scope="col" className={thClass}>Sıklık ve sorumluluk</th></tr></thead><tbody>{p.costRows.map((row: string[]) => <tr key={row[0]}><th scope="row" className={`${tdClass} font-semibold text-gray-900`}>{row[0]}</th><td className={tdClass}>{row[1]}</td><td className={tdClass}>{row[2]}</td></tr>)}</tbody></table>
+      </div>
+    </PageSection>
+
+    <PageSection title={p.optionalTitle} tone="gray">
+      <p className="max-w-4xl text-body text-gray-600">{p.optionalNote}</p>
+      <ul className="mt-4 grid gap-x-8 sm:grid-cols-2">{p.optional.map((x: string) => <li key={x} className="border-b border-gray-200 py-3 text-sm leading-6 text-gray-700">{x}</li>)}</ul>
+      <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold">
+        <Link href={localizedHref('/services/seo', 'tr')} className="text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">SEO hizmetlerini inceleyin <ArrowRightIcon className="inline h-4 w-4" aria-hidden="true" /></Link>
+        <Link href={localizedHref('/services/corporate-website-design/features', 'tr')} className="text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Web sitesi özellikleri <ArrowRightIcon className="inline h-4 w-4" aria-hidden="true" /></Link>
+      </div>
+    </PageSection>
+
+    <PageSection title={p.approachTitle}>
+      <div className="grid gap-4 md:grid-cols-3">{p.approaches.map(([title, text]: [string, string]) => <article key={title} className="rounded-xl border border-gray-200 bg-white p-5"><h3 className="font-semibold text-gray-900">{title}</h3><p className="mt-2 text-sm leading-6 text-gray-600">{text}</p></article>)}</div>
+      <Link href={localizedHref('/services/corporate-website-design/technologies', 'tr')} className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Altyapı ve CMS seçeneklerini inceleyin <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>
+    </PageSection>
+
+    <PageSection title={p.quoteTitle} tone="gray">
+      <p className="max-w-4xl text-body text-gray-600">{p.quoteIntro}</p>
+      <ol className="mt-5 grid gap-3 sm:grid-cols-2">{p.quoteSteps.map((x: string, i: number) => <li key={x} className="flex gap-3 rounded-lg border border-gray-200 bg-white p-4 text-sm leading-6 text-gray-700"><span className="text-overline text-heritage-turquoise-deep">0{i + 1}</span>{x}</li>)}</ol>
+      <h3 className="mt-6 font-semibold text-gray-900">Kapsamı anlamaya yardımcı bilgiler</h3>
+      <ul className="mt-3 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-3">{p.quote.map((x: string) => <li key={x} className="border-b border-gray-200 py-2 text-sm text-gray-700">{x}</li>)}</ul>
+    </PageSection>
+
+    <PageSection title={p.faqTitle}>
+      <dl className="grid gap-x-8 md:grid-cols-2">{p.faqs.map(([question, answer]: [string, string]) => <div key={question} className="border-b border-gray-200 py-5"><dt className="font-semibold leading-6 text-gray-900">{question}</dt><dd className="mt-2 text-sm leading-6 text-gray-600">{answer}</dd></div>)}</dl>
+      <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold">
+        <Link href={localizedHref('/services/corporate-website-design/faq', 'tr')} className="text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Sık sorulan tüm sorular <ArrowRightIcon className="inline h-4 w-4" aria-hidden="true" /></Link>
+        <Link href={localizedHref('/services/corporate-website-design/process', 'tr')} className="text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Proje sürecini inceleyin <ArrowRightIcon className="inline h-4 w-4" aria-hidden="true" /></Link>
+        <Link href={localizedHref('/services/corporate-website-design/portfolio', 'tr')} className="text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Projeleri inceleyin <ArrowRightIcon className="inline h-4 w-4" aria-hidden="true" /></Link>
+      </div>
+    </PageSection>
+  </>;
 }
 
 export default function CorporateWebsiteSubpage({ page, locale }: { page: CorporateWebsiteSubpageKey; locale: SupportedLocale }) {
@@ -381,9 +990,43 @@ export default function CorporateWebsiteSubpage({ page, locale }: { page: Corpor
 
   return (
     <main className="min-h-screen bg-white">
-      <InternalPageHero serviceName={locale === 'tr' ? 'Kurumsal Web Sitesi' : 'Corporate Website'} accentWord={p.hero} subtitle={p.intro} accentHex="#0e7c7b" crumbs={crumbs} scene={sceneFor(page)} />
+      <InternalPageHero
+        serviceName={locale === 'tr' ? 'Kurumsal Web Sitesi' : 'Corporate Website'}
+        accentWord={p.hero}
+        subtitle={p.intro}
+        accentHex="#0e7c7b"
+        crumbs={crumbs}
+        scene={page === 'features' && locale === 'tr' ? <div className="mx-auto max-w-sm rounded-2xl border border-heritage-sand bg-white p-5 shadow-lg"><p className="text-overline text-heritage-turquoise-deep">Örnek gösterim · Sayfa modülleri</p><div className="mt-4 flex items-center gap-3 border-b border-gray-200 pb-3"><span className="flex h-9 w-9 items-center justify-center rounded-lg bg-heritage-turquoise-light text-heritage-turquoise-deep" aria-hidden="true">⌘</span><span className="h-2 w-28 rounded bg-heritage-sand" aria-hidden="true" /></div><div className="mt-4 grid grid-cols-2 gap-3">{['Şirket', 'Hizmetler', 'Ürün kataloğu', 'İletişim'].map(x => <span key={x} className="rounded-lg border border-gray-200 bg-background-gray px-3 py-3 text-xs font-medium text-gray-700">{x}</span>)}</div><p className="mt-4 text-xs leading-5 text-gray-500">Bu arayüz şematik bir örnektir; çalışan bir ürün ekranı değildir.</p></div> : sceneFor(page)}
+        heading={page === 'features' && locale === 'tr' ? 'Kurumsal Web Sitesi Özellikleri ve Modülleri' : page === 'pricing' && locale === 'tr' ? 'Kurumsal Web Sitesi Fiyatları ve Paketleri' : page === 'process' && locale === 'tr' ? 'Kurumsal Web Tasarım Süreci' : page === 'technologies' && locale === 'tr' ? 'Kurumsal Web Sitesi Teknolojileri ve Altyapı Seçimi' : page === 'portfolio' && locale === 'tr' ? 'Kurumsal Web Sitesi Örnekleri ve Projelerimiz' : page === 'faq' && locale === 'tr' ? 'Kurumsal Web Sitesi Hakkında Sık Sorulan Sorular' : undefined}
+        actions={page === 'portfolio' && locale === 'tr' ? <>
+          <Link href={localizedHref('/start-project?service=corporate-website-design', 'tr')} className="inline-flex min-h-11 items-center gap-2 rounded-sm bg-heritage-turquoise px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-heritage-turquoise-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2 motion-reduce:transition-none">Projenizi Konuşalım <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>
+          <a href="#selected-projects" className="inline-flex min-h-11 items-center gap-2 rounded-sm border border-gray-300 bg-white px-5 py-3 text-sm font-semibold text-gray-800 transition-colors hover:border-heritage-turquoise hover:text-heritage-turquoise-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2 motion-reduce:transition-none">Projeleri İnceleyin <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></a>
+        </> : page === 'technologies' && locale === 'tr' ? <>
+          <Link href={localizedHref('/start-project?service=corporate-website-design', 'tr')} className="inline-flex min-h-11 items-center gap-2 rounded-sm bg-heritage-turquoise px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-heritage-turquoise-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2 motion-reduce:transition-none">Projenize Uygun Altyapıyı Konuşalım <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>
+          <a href="#platform-comparison" className="inline-flex min-h-11 items-center gap-2 rounded-sm border border-gray-300 bg-white px-5 py-3 text-sm font-semibold text-gray-800 transition-colors hover:border-heritage-turquoise hover:text-heritage-turquoise-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2 motion-reduce:transition-none">Seçenekleri Karşılaştırın <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></a>
+        </> : page === 'features' && locale === 'tr' ? <>
+          <Link href={localizedHref('/start-project?service=corporate-website-design', 'tr')} className="inline-flex min-h-11 items-center gap-2 rounded-sm bg-heritage-turquoise px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-heritage-turquoise-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2 motion-reduce:transition-none">İhtiyaçlarınızı Konuşalım <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>
+          <a href="#feature-overview" className="inline-flex min-h-11 items-center gap-2 rounded-sm border border-gray-300 bg-white px-5 py-3 text-sm font-semibold text-gray-800 transition-colors hover:border-heritage-turquoise hover:text-heritage-turquoise-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2 motion-reduce:transition-none">Özellikleri İnceleyin <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></a>
+        </> : page === 'pricing' && locale === 'tr' ? <>
+          <Link href={localizedHref('/start-project?service=corporate-website-design', 'tr')} className="inline-flex min-h-11 items-center gap-2 rounded-sm bg-heritage-turquoise px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-heritage-turquoise-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2 motion-reduce:transition-none">Projeniz İçin Teklif Alın <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>
+          <a href="#scope-options" className="inline-flex min-h-11 items-center gap-2 rounded-sm border border-gray-300 bg-white px-5 py-3 text-sm font-semibold text-gray-800 transition-colors hover:border-heritage-turquoise hover:text-heritage-turquoise-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2 motion-reduce:transition-none">Kapsam Seçeneklerini İnceleyin <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></a>
+        </> : page === 'process' && locale === 'tr' ? <>
+          <Link href={localizedHref('/start-project?service=corporate-website-design', 'tr')} className="inline-flex min-h-11 items-center gap-2 rounded-sm bg-heritage-turquoise px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-heritage-turquoise-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2 motion-reduce:transition-none">Projenizi Konuşalım <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>
+          <a href="#project-stages" className="inline-flex min-h-11 items-center gap-2 rounded-sm border border-gray-300 bg-white px-5 py-3 text-sm font-semibold text-gray-800 transition-colors hover:border-heritage-turquoise hover:text-heritage-turquoise-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2 motion-reduce:transition-none">Proje Aşamalarını İnceleyin <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></a>
+        </> : undefined}
+      />
 
-      {page === 'features' && <>
+      {page === 'features' && locale === 'tr' && <TurkishFeaturesContent />}
+
+      {page === 'process' && locale === 'tr' && <TurkishProcessContent p={p} />}
+
+      {page === 'technologies' && locale === 'tr' && <TurkishTechnologiesContent />}
+
+      {page === 'portfolio' && locale === 'tr' && <TurkishPortfolioContent />}
+
+      {page === 'faq' && locale === 'tr' && <TurkishFaqContent p={p} />}
+
+      {page === 'features' && locale === 'en' && <>
         <PageSection title={p.title} tone="gray">
           <div className="grid gap-4 md:grid-cols-2">
             {p.features.map((item: Feature, i: number) => <article key={item.title} style={{ animationDelay: `${i * 70}ms` }} className="corporate-info-card animate-fade-in flex h-full flex-col rounded-2xl border border-gray-200 border-t-2 border-t-heritage-turquoise bg-white p-5 shadow-sm md:p-6">
@@ -406,7 +1049,7 @@ export default function CorporateWebsiteSubpage({ page, locale }: { page: Corpor
         </PageSection>
       </>}
 
-      {page === 'technologies' && <>
+      {page === 'technologies' && locale === 'en' && <>
         <PageSection title={p.title} tone="gray"><div className="grid gap-8 lg:grid-cols-[.8fr_1.2fr]">
           <div><h3 className="text-title font-medium text-gray-900">{p.chooseTitle}</h3><p className="mt-3 text-body text-gray-600">{p.chooseIntro}</p><ul className="mt-5 space-y-4">{p.choose.map((item: Fact) => <li key={item.title} className="border-s-2 border-heritage-turquoise ps-4"><h4 className="font-semibold text-gray-900">{item.title}</h4><p className="mt-1 text-sm leading-6 text-gray-600">{item.detail}</p></li>)}</ul></div>
           <div><h3 className="text-title font-medium text-gray-900">{p.platformsTitle}</h3><div className="mt-3 grid gap-3">{p.platforms.map((item: { name: string; best: string; tradeoff: string }, i: number) => <article key={item.name} style={{ animationDelay: `${i * 70}ms` }} className="corporate-info-card animate-fade-in grid gap-3 rounded-xl border border-gray-200 bg-white p-4 sm:grid-cols-[9rem_1fr_1fr] sm:p-5"><h4 className="self-start font-semibold text-heritage-turquoise-deep">{item.name}</h4><dl className="text-sm leading-6 text-gray-700"><dt className="text-overline text-gray-500">{p.experienceLabel}</dt><dd className="mt-1">{item.best}</dd></dl><dl className="text-sm leading-6 text-gray-600"><dt className="text-overline text-gray-500">{p.costsLabel}</dt><dd className="mt-1">{item.tradeoff}</dd></dl></article>)}</div></div>
@@ -422,7 +1065,7 @@ export default function CorporateWebsiteSubpage({ page, locale }: { page: Corpor
         <PageSection title={p.ownershipTitle}><p className="max-w-4xl text-body text-gray-600">{p.ownership}</p></PageSection>
       </>}
 
-      {page === 'process' && <>
+      {page === 'process' && locale === 'en' && <>
         <PageSection title={p.title} tone="gray">
           <ol className="space-y-3">{p.stages.map((stage: ProcessStage, i: number) => <li key={stage.title} style={{ animationDelay: `${i * 65}ms` }} className="corporate-info-card animate-fade-in grid gap-x-5 gap-y-4 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm sm:grid-cols-[3.5rem_1fr_1fr] lg:grid-cols-[3.5rem_1fr_1fr_1fr] md:p-6">
             <span className="flex h-10 w-10 items-center justify-center rounded-full bg-heritage-turquoise-light text-sm font-semibold text-heritage-turquoise-deep">{String(i + 1).padStart(2, '0')}</span><div className="self-center"><h3 className="text-lg font-semibold text-gray-900">{stage.title}</h3></div><div><h4 className="text-overline text-heritage-turquoise-deep">{c.labels.paksoft}</h4><p className="mt-2 text-sm leading-6 text-gray-700">{stage.paksoft}</p></div><div><h4 className="text-overline text-heritage-turquoise-deep">{c.labels.client}</h4><p className="mt-2 text-sm leading-6 text-gray-700">{stage.client}</p></div><div className="rounded-lg bg-heritage-ivory p-3 sm:col-start-2 sm:col-span-2 lg:col-span-3"><h4 className="text-overline text-gray-600">{c.labels.approval}</h4><p className="mt-1 text-sm leading-6 text-gray-700">{stage.approval}</p></div>
@@ -431,7 +1074,7 @@ export default function CorporateWebsiteSubpage({ page, locale }: { page: Corpor
         <PageSection title={p.timingTitle}><p className="max-w-4xl text-body text-gray-600">{p.timing}</p></PageSection>
       </>}
 
-      {page === 'portfolio' && <>
+      {page === 'portfolio' && locale === 'en' && <>
         <PageSection title={p.title} tone="gray">
           <article className="overflow-hidden rounded-2xl border border-gray-200 bg-white">
             <Link href={localizedHref('/projects/sun-container', locale)} className="group relative block aspect-[16/8] min-h-56 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-heritage-turquoise">
@@ -446,7 +1089,9 @@ export default function CorporateWebsiteSubpage({ page, locale }: { page: Corpor
         <PageSection title={p.moreTitle}><p className="max-w-3xl text-body text-gray-600">{p.more}</p></PageSection>
       </>}
 
-      {page === 'pricing' && <>
+      {page === 'pricing' && locale === 'tr' && <TurkishPricingContent p={p} />}
+
+      {page === 'pricing' && locale === 'en' && <>
         <PageSection title={p.title} tone="gray"><p className="max-w-3xl text-body leading-relaxed text-gray-600">{p.optionsIntro}</p><div className="mt-5 grid gap-4 md:grid-cols-3">{p.options.map((item: Fact, i: number) => <article key={item.title} style={{ animationDelay: `${i * 80}ms` }} className="corporate-info-card animate-fade-in h-full rounded-2xl border border-gray-200 border-t-2 border-t-heritage-turquoise bg-white p-5 shadow-sm md:p-6"><span className="text-overline text-heritage-turquoise-deep">0{i + 1}</span><h3 className="mt-3 text-lg font-semibold text-gray-900">{item.title}</h3><p className="mt-2 text-sm leading-6 text-gray-600">{item.detail}</p></article>)}</div></PageSection>
         <PageSection title={p.driversTitle}><ul className="grid gap-x-8 md:grid-cols-2">{p.drivers.map((x: string) => <li key={x} className="flex gap-3 border-b border-gray-200 py-3 text-sm leading-6 text-gray-700"><CheckIcon className="mt-1 h-4 w-4 shrink-0 text-heritage-turquoise" aria-hidden="true"/>{x}</li>)}</ul></PageSection>
         <PageSection title={p.optionalTitle} tone="ivory"><ul className="grid gap-x-8 md:grid-cols-2">{p.optional.map((x: string) => <li key={x} className="border-b border-heritage-sand py-3 text-sm leading-6 text-gray-700">{x}</li>)}</ul></PageSection>
@@ -464,16 +1109,23 @@ export default function CorporateWebsiteSubpage({ page, locale }: { page: Corpor
         </PageSection>
       </>}
 
-      {page === 'faq' && <>
+      {page === 'faq' && locale === 'en' && <>
         {p.groups.map((group: FaqGroup, i: number) => <PageSection key={group.title} title={group.title} tone={i % 2 ? 'white' : 'gray'}>
           <dl className="grid max-w-5xl gap-3 md:grid-cols-2">{group.items.map(([question, answer], j) => <div key={question} style={{ animationDelay: `${j * 80}ms` }} className="corporate-info-card animate-fade-in rounded-xl border border-gray-200 bg-white p-5 md:p-6"><dt className="flex items-start gap-3 font-semibold leading-snug text-gray-900"><span aria-hidden="true" className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-heritage-turquoise-light text-sm text-heritage-turquoise-deep">?</span>{question}</dt><dd className="mt-3 ps-10 text-sm leading-6 text-gray-600">{answer}</dd></div>)}</dl>
         </PageSection>)}
         <FAQJsonLd faqs={p.groups.flatMap((group: FaqGroup) => group.items.map(([question, answer]) => ({ question, answer })))} />
       </>}
 
-      {page === 'technologies' && <PageSection title={locale === 'tr' ? 'Kurumsal Web Tasarım Özellikleri' : 'Corporate Website Design Features'} tone="gray"><p className="text-body text-gray-600">{locale === 'tr' ? 'Sayfa ve işlev seçeneklerini inceleyerek projenizin kapsamını belirleyin.' : 'Explore page and functionality options when defining your project scope.'}</p><Link href={localizedHref('/services/corporate-website-design/features', locale)} className="mt-4 inline-flex items-center gap-2 font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">{locale === 'tr' ? 'Web sitesi özelliklerini inceleyin' : 'Explore website features'}<ArrowRightIcon className="h-4 w-4 rtl:rotate-180" aria-hidden="true"/></Link></PageSection>}
+      {page === 'technologies' && locale === 'en' && <PageSection title="Corporate Website Design Features" tone="gray"><p className="text-body text-gray-600">Explore page and functionality options when defining your project scope.</p><Link href={localizedHref('/services/corporate-website-design/features', locale)} className="mt-4 inline-flex items-center gap-2 font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Explore website features<ArrowRightIcon className="h-4 w-4 rtl:rotate-180" aria-hidden="true"/></Link></PageSection>}
 
-      <CallToAction locale={locale} label={p.cta} />
+      <CallToAction
+        locale={locale}
+        label={p.cta}
+        intro={(page === 'pricing' || page === 'features' || page === 'process') && locale === 'tr' ? p.ctaIntro : page === 'technologies' && locale === 'tr' ? 'İçerik yönetimi, entegrasyon ve bakım ihtiyaçlarınızı paylaşın. İşletmenize uygun seçenekleri kapsam ve devam eden giderleriyle birlikte değerlendirelim.' : page === 'portfolio' && locale === 'tr' ? 'Beğendiğiniz örnekleri, mevcut web sitenizi ve ihtiyaçlarınızı paylaşın. İşletmenize uygun sayfa yapısını, tasarım yaklaşımını ve işlevleri birlikte değerlendirelim.' : page === 'faq' && locale === 'tr' ? 'Mevcut web sitenizi ve projenizle ilgili sorularınızı paylaşın. İhtiyaçlarınıza uygun kapsamı ve sonraki adımları birlikte değerlendirelim.' : undefined}
+        heading={page === 'features' && locale === 'tr' ? 'İşletmenize Uygun Web Sitesi Özelliklerini Belirleyelim' : page === 'process' && locale === 'tr' ? 'Web Sitesi Projenizin İlk Adımını Atın' : page === 'technologies' && locale === 'tr' ? 'Web Siteniz İçin Uygun Altyapıyı Belirleyelim' : page === 'portfolio' && locale === 'tr' ? 'İşletmeniz İçin Uygun Web Sitesini Birlikte Planlayalım' : page === 'faq' && locale === 'tr' ? 'Sorunuzun Yanıtını Bulamadınız mı?' : undefined}
+        secondaryLabel={page === 'features' && locale === 'tr' ? p.ctaSecondary : page === 'portfolio' && locale === 'tr' ? 'Kurumsal Web Tasarım Hizmetini İnceleyin' : undefined}
+        secondaryHref={page === 'features' && locale === 'tr' ? localizedHref('/services/corporate-website-design/pricing', 'tr') : page === 'portfolio' && locale === 'tr' ? overviewHref : undefined}
+      />
       <div className="bg-background-gray py-4"><div className="container mx-auto max-w-[1200px] px-4"><Link href={overviewHref} className="text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise"><ArrowRightIcon className="me-1 inline h-4 w-4 rotate-180 rtl:rotate-0" aria-hidden="true"/>{locale === 'tr' ? 'Kurumsal web tasarım genel bakışına dönün' : 'Back to the corporate website overview'}</Link></div></div>
     </main>
   );

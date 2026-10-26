@@ -252,6 +252,32 @@ function TurkishCorporateWebsiteOverview({ project }: { project?: Project | null
         </div>
       </section>
 
+      <section className="bg-heritage-ivory">
+        <div className="container mx-auto max-w-[1200px] px-4 section-compact">
+          <div className="max-w-3xl">
+            <h2 className="text-headline font-medium text-gray-900">Kurumsal Web Tasarım Hizmetini Keşfedin</h2>
+            <p className="mt-3 text-body leading-relaxed text-gray-600">Projenizin kapsamını değerlendirmek için web sitesi özelliklerini, teknoloji seçeneklerini, çalışma sürecimizi ve fiyatlandırma yaklaşımımızı inceleyin.</p>
+          </div>
+          <nav aria-label="Kurumsal web tasarım hizmeti sayfaları" className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { title: 'Kurumsal Web Sitesi Özellikleri', description: 'Yönetim paneli, mobil uyumluluk, çok dilli yapı ve isteğe bağlı modülleri inceleyin.', route: 'features' },
+              { title: 'Teknolojiler ve Altyapı Seçenekleri', description: 'Web siteniz için kullanılan teknolojileri, içerik yönetimini ve altyapı seçeneklerini değerlendirin.', route: 'technologies' },
+              { title: 'Tasarımdan Yayına Proje Süreci', description: 'Planlama, tasarım, geliştirme, onay ve teslim aşamalarında nasıl ilerlediğimizi öğrenin.', route: 'process' },
+              { title: 'Kurumsal Web Sitesi Projelerimiz', description: 'Sun Container projesinin gereksinimini, PakSoft katkısını ve belgelenen işlevlerini inceleyin.', route: 'portfolio' },
+              { title: 'Kurumsal Web Sitesi Fiyatları', description: 'Proje kapsamlarını, fiyatı etkileyen unsurları ve devam eden maliyetleri karşılaştırın.', route: 'pricing' },
+              { title: 'Web Sitesi Planlama Rehberleri', description: 'Web sitesi hazırlığı, yenileme ve içerik planlamasıyla ilgili mevcut yazıları keşfedin.', route: 'blog' },
+              { title: 'Sık Sorulan Sorular', description: 'İçerik yönetimi, teslimat, çok dilli yapı ve destek hakkındaki soruların yanıtlarını bulun.', route: 'faq' },
+            ].map(item => <LocalizedLink key={item.route} href={sub(item.route)} className="group flex h-full min-h-32 items-start justify-between gap-4 rounded-xl border border-heritage-sand bg-white p-4 transition-colors hover:border-heritage-turquoise hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2 motion-reduce:transition-none sm:p-5">
+              <span className="block">
+                <h3 className="text-base font-semibold leading-snug text-gray-900">{item.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-gray-600">{item.description}</p>
+              </span>
+              <ArrowRightIcon aria-hidden="true" className="mt-0.5 h-5 w-5 shrink-0 text-heritage-turquoise-deep transition-transform group-hover:translate-x-0.5 group-focus-visible:translate-x-0.5 motion-reduce:transition-none motion-reduce:transform-none rtl:rotate-180" />
+            </LocalizedLink>)}
+          </nav>
+        </div>
+      </section>
+
       <section className="bg-gray-950">
         <div className="container mx-auto max-w-5xl px-4 section-compact text-center"><h2 className="text-headline font-medium text-white">Kurumsal Web Sitesi Projenizi Konuşalım</h2><p className="mx-auto mt-4 max-w-2xl text-body leading-relaxed text-gray-300">İşletmenizi, mevcut web sitenizi ve ihtiyaç duyduğunuz sayfa ve işlevleri paylaşın. Size uygun proje kapsamını birlikte değerlendirelim.</p><LocalizedLink href="/start-project?service=corporate-website-design" className="mt-6 inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-heritage-turquoise px-6 py-3 font-semibold text-white transition-colors motion-reduce:transition-none hover:bg-heritage-turquoise-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950">Projenizi Konuşalım<ArrowRightIcon className="h-4 w-4 rtl:rotate-180" aria-hidden="true" /></LocalizedLink></div>
       </section>

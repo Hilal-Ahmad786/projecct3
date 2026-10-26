@@ -35,15 +35,34 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     ? getCorporateWebsiteSubpageMeta('faq', validLocale)
     : null;
   const { title, description } = customMeta || getServiceSubPageMeta('faq', validLocale, service.name);
+  const isTurkishCorporateFaq = slug === 'corporate-website-design' && validLocale === 'tr';
+  const canonicalUrl = `${baseUrl}/${validLocale}${localizedPath}`;
 
   return {
     title,
     description,
     robots: serviceRobots(service),
     alternates: {
-      canonical: `${baseUrl}/${validLocale}${localizedPath}`,
+      canonical: canonicalUrl,
       languages: generateAlternateLinks(path),
     },
+    ...(isTurkishCorporateFaq ? {
+      openGraph: {
+        title,
+        description,
+        url: canonicalUrl,
+        siteName: 'PakSoft',
+        locale: 'tr_TR',
+        type: 'website' as const,
+        images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: title }],
+      },
+      twitter: {
+        card: 'summary_large_image' as const,
+        title,
+        description,
+        images: ['/images/twitter-image.jpg'],
+      },
+    } : {}),
   };
 }
 

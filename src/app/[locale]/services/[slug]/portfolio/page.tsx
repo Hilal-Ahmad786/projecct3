@@ -34,15 +34,34 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     ? getCorporateWebsiteSubpageMeta('portfolio', validLocale)
     : null;
   const { title, description } = customMeta || getServiceSubPageMeta('portfolio', validLocale, service.name);
+  const isTurkishCorporatePortfolio = slug === 'corporate-website-design' && validLocale === 'tr';
+  const canonicalUrl = `${baseUrl}/${validLocale}${localizedPath}`;
 
   return {
     title,
     description,
     robots: serviceRobots(service),
     alternates: {
-      canonical: `${baseUrl}/${validLocale}${localizedPath}`,
+      canonical: canonicalUrl,
       languages: generateAlternateLinks(path),
     },
+    ...(isTurkishCorporatePortfolio ? {
+      openGraph: {
+        title,
+        description,
+        url: canonicalUrl,
+        siteName: 'PakSoft',
+        locale: 'tr_TR',
+        type: 'website' as const,
+        images: [{ url: `${baseUrl}/images/portfolio/sun-container.png`, width: 1366, height: 850, alt: 'Sun Container kurumsal web sitesi örneği' }],
+      },
+      twitter: {
+        card: 'summary_large_image' as const,
+        title,
+        description,
+        images: [`${baseUrl}/images/portfolio/sun-container.png`],
+      },
+    } : {}),
   };
 }
 

@@ -18,6 +18,10 @@ interface InternalPageHeroProps {
   scene?: React.ReactNode;
   /** Heritage accent hex for the title accent */
   accentHex?: string;
+  /** Optional exact localized heading for a page. */
+  heading?: string;
+  /** Optional page-specific calls to action below the introduction. */
+  actions?: React.ReactNode;
 }
 
 export default function InternalPageHero({
@@ -27,6 +31,8 @@ export default function InternalPageHero({
   crumbs,
   scene,
   accentHex = 'var(--heritage-turquoise)',
+  heading,
+  actions,
 }: InternalPageHeroProps) {
   const { dir } = useTranslations();
 
@@ -59,9 +65,7 @@ export default function InternalPageHero({
               transition={{ duration: 0.55, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="text-display font-light text-gray-900 leading-none mb-6"
             >
-              {serviceName}
-              <br />
-              <span className="font-semibold" style={{ color: accentHex }}>{accentWord}</span>
+              {heading ? heading : <>{serviceName}<br /><span className="font-semibold" style={{ color: accentHex }}>{accentWord}</span></>}
             </motion.h1>
 
             <motion.p
@@ -72,6 +76,8 @@ export default function InternalPageHero({
             >
               {subtitle}
             </motion.p>
+
+            {actions && <div className="mt-6 flex flex-wrap gap-3">{actions}</div>}
           </div>
 
           {scene && (
