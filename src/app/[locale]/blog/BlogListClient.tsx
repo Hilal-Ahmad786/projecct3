@@ -11,6 +11,8 @@ import {
   ArrowPathIcon,
 } from '@heroicons/react/24/outline';
 import { StarIcon } from '@heroicons/react/24/solid';
+import BlogInternalLinksCta from '@/components/blog/BlogInternalLinksCta';
+import type { Locale } from '@/lib/i18n';
 
 // This page fetches its data client-side from /api/blog/posts, so the shell is
 // statically prerendered by default (the previous `force-dynamic` was dropped).
@@ -317,6 +319,7 @@ export default function BlogPage() {
               )}
             </>
           )}
+          <BlogInternalLinksCta locale={locale as Locale} />
         </div>
       </section>
     </div>

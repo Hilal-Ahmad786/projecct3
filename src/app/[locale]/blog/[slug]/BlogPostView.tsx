@@ -15,6 +15,8 @@ import {
 } from '@heroicons/react/24/outline';
 import { StarIcon } from '@heroicons/react/24/solid';
 import nextDynamic from 'next/dynamic';
+import BlogInternalLinksCta from '@/components/blog/BlogInternalLinksCta';
+import type { Locale } from '@/lib/i18n';
 
 // Code-split react-markdown + remark-gfm into their own chunk
 const MarkdownContent = nextDynamic(() => import('./MarkdownContent'));
@@ -337,6 +339,8 @@ export default function BlogPostView({ initialPost = null }: { initialPost?: Blo
               </div>
             </motion.div>
 
+            <BlogInternalLinksCta locale={locale as Locale} compact />
+
             {/* Post Content */}
             <motion.article
               initial={{ opacity: 0, y: 20 }}
@@ -347,6 +351,8 @@ export default function BlogPostView({ initialPost = null }: { initialPost?: Blo
             >
               <MarkdownContent content={content.content} />
             </motion.article>
+
+            <BlogInternalLinksCta locale={locale as Locale} />
 
             {/* Bottom CTA */}
             <div className="mt-12 pt-8 border-t border-gray-200">

@@ -14,6 +14,7 @@ import {
 } from '@/components/services/hero-visuals/scenes-internal';
 import { localizeFullPath } from '@/lib/routes';
 import { FAQJsonLd } from '@/components/seo/JsonLd';
+import BlogInternalLinksCta from '@/components/blog/BlogInternalLinksCta';
 import { corporateWebsiteArticleCards } from '@/data/corporate-website-article-cards';
 
 export type CorporateWebsiteSubpageKey = 'features' | 'technologies' | 'process' | 'portfolio' | 'pricing' | 'blog' | 'faq';
@@ -389,6 +390,7 @@ export function CorporateWebsiteGuidePage({ slug, locale }: { slug: string; loca
     <PageSection title={locale === 'tr' ? 'Bu Rehberde' : 'In This Guide'} tone="ivory">
       <article className="max-w-4xl"><div className="space-y-5 text-body leading-relaxed text-gray-700">{guide.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div><h2 className="mt-8 text-title font-semibold text-gray-900">{locale === 'tr' ? 'Kontrol listesi' : 'Checklist'}</h2><ul className="mt-4 space-y-3">{guide.points.map((point) => <li key={point} className="flex gap-3 text-body leading-relaxed text-gray-700"><CheckIcon className="mt-1 h-5 w-5 shrink-0 text-heritage-turquoise" aria-hidden="true" />{point}</li>)}</ul></article>
     </PageSection>
+    <div className="container mx-auto max-w-[1200px] px-4"><BlogInternalLinksCta locale={locale} compact /></div>
     <div className="bg-background-gray section-compact"><div className="container mx-auto max-w-[1200px] px-4"><Link href={blogPath} className="inline-flex items-center gap-2 font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise"><ArrowRightIcon className="h-4 w-4 rotate-180 rtl:rotate-0" aria-hidden="true" />{locale === 'tr' ? 'Tüm rehberlere dönün' : 'Back to all guides'}</Link></div></div>
     <CallToAction locale={locale} label={content[locale].pages.blog.cta} />
   </main>;
@@ -1107,13 +1109,16 @@ export default function CorporateWebsiteSubpage({ page, locale }: { page: Corpor
           <p className="max-w-3xl text-body text-gray-600">{p.featured}</p>
           {locale === 'tr' && <div className="mt-6 grid gap-4 lg:grid-cols-2" aria-label="Yeni kurumsal web sitesi rehberleri">
             {corporateWebsiteArticleCards.map((article) => <article key={article.slug} className="group overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-md motion-reduce:transition-none">
-              <Link href={localizedHref(`/services/corporate-website-design/blog/${article.slug}`, locale)} className="block h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-heritage-turquoise">
-                <div className="relative aspect-[16/8] overflow-hidden bg-heritage-turquoise-light">
-                  <Image src={article.image} alt={article.imageAlt} fill sizes="(max-width: 1024px) 100vw, 560px" className="object-cover transition-transform duration-300 group-hover:scale-[1.02] motion-reduce:transition-none" />
+              <Link href={localizedHref(`/services/corporate-website-design/blog/${article.slug}`, locale)} className="flex h-full flex-col focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-heritage-turquoise">
+                <div className="relative aspect-video overflow-hidden bg-background-gray">
+                  <Image src={article.image} alt={article.imageAlt} fill sizes="(max-width: 1024px) 100vw, 560px" className="object-contain" />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-white/35 via-white/10 to-transparent" aria-hidden="true" />
+                  <div className="absolute inset-y-0 start-0 flex w-[54%] flex-col justify-center px-4 pt-7 sm:px-6 sm:pt-8 md:w-1/2 md:px-7">
+                    <span className="mb-2 w-fit max-w-full rounded-sm bg-white/85 px-2 py-1 text-[10px] font-semibold leading-tight text-heritage-turquoise-deep sm:text-xs">{article.category}</span>
+                    <h3 className="line-clamp-3 max-w-[18rem] text-base font-semibold leading-tight tracking-tight text-gray-950 sm:text-lg md:text-xl">{article.title}</h3>
+                  </div>
                 </div>
-                <div className="flex h-full flex-col p-5 sm:p-6">
-                  <span className="text-xs font-semibold text-heritage-turquoise-deep">{article.category}</span>
-                  <h3 className="mt-2 text-lg font-semibold leading-snug text-gray-900">{article.title}</h3>
+                <div className="flex flex-1 flex-col p-5 sm:p-6">
                   <p className="mt-2 flex-1 text-sm leading-6 text-gray-600">{article.excerpt}</p>
                   <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep">Rehberi okuyun<ArrowRightIcon className="h-4 w-4 rtl:rotate-180" aria-hidden="true" /></span>
                 </div>
@@ -1123,6 +1128,7 @@ export default function CorporateWebsiteSubpage({ page, locale }: { page: Corpor
           <nav aria-label={locale === 'tr' ? 'Rehber kategorileri' : 'Guide categories'} className="mt-4 flex flex-wrap gap-2">{p.categories.map((x: string) => <span key={x} className="rounded-full border border-heritage-sand bg-white px-3 py-1.5 text-sm text-gray-700">{x}</span>)}</nav>
           <Link href={localizedHref(`/services/corporate-website-design/blog/${guideSlugs[1]}`, locale)} className="mt-5 block rounded-xl border border-heritage-sand bg-white p-5 transition-colors hover:border-heritage-turquoise focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise motion-reduce:transition-none"><span className="text-overline text-heritage-turquoise-deep">{locale === 'tr' ? 'Öne çıkan rehber · Planlama' : 'Featured guide · Planning'}</span><h3 className="mt-2 font-semibold text-gray-900">{p.articles[1].title}</h3><p className="mt-2 text-sm leading-6 text-gray-600">{p.articles[1].lead}</p><span className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep">{c.labels.readGuide}<ArrowRightIcon className="h-4 w-4 rtl:rotate-180" aria-hidden="true" /></span></Link>
           <ol className="mt-6 grid gap-3 border-y border-gray-200 py-5 sm:grid-cols-2 lg:grid-cols-3">{p.articles.map((article: Article, i: number) => <li key={article.title}><Link href={localizedHref(`/services/corporate-website-design/blog/${guideSlugs[i]}`, locale)} className="block h-full rounded-lg border border-gray-200 bg-white p-4 transition-colors hover:border-heritage-turquoise focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise motion-reduce:transition-none"><span className="text-xs text-gray-500">{article.category}</span><h3 className="mt-2 text-sm font-semibold leading-6 text-gray-900">{article.title}</h3><p className="mt-2 text-sm leading-6 text-gray-600">{article.lead}</p><span className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep">{c.labels.readGuide}<ArrowRightIcon className="h-4 w-4 rtl:rotate-180" aria-hidden="true" /></span></Link></li>)}</ol>
+          <BlogInternalLinksCta locale={locale} />
         </PageSection>
       </>}
 

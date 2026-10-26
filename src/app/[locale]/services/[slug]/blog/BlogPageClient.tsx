@@ -8,6 +8,8 @@ import ServiceBlogFeed from '@/components/services/ServiceBlogFeed';
 import { BlogFeedScene } from '@/components/services/hero-visuals/scenes-internal';
 import { useTranslations } from '@/hooks/useTranslations';
 import { toHeritageHex } from '@/lib/heritage-accents';
+import BlogInternalLinksCta from '@/components/blog/BlogInternalLinksCta';
+import { useLocale } from '@/hooks/useTranslations';
 
 interface Props {
   serviceName: string;
@@ -19,6 +21,7 @@ interface Props {
 
 export default function BlogPageClient({ serviceName, serviceSlug, serviceColor, blogCategory }: Props) {
   const { t } = useTranslations();
+  const locale = useLocale();
   const accent = toHeritageHex(serviceColor || undefined);
   const tb = (key: string, fallback: string) => {
     const v = t(`services.detail.blogPage.${key}`);
@@ -47,6 +50,9 @@ export default function BlogPageClient({ serviceName, serviceSlug, serviceColor,
         eyebrow={tb('eyebrow', 'Insights')}
         viewAllLabel={tb('viewAll', 'View All Articles')}
       />
+      <div className="container mx-auto max-w-6xl px-4">
+        <BlogInternalLinksCta locale={locale} />
+      </div>
     </>
   );
 }

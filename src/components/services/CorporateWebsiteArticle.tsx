@@ -6,6 +6,7 @@ import remarkGfm from 'remark-gfm';
 import { ArrowRightIcon, CalendarIcon, ClockIcon } from '@heroicons/react/24/outline';
 import { SITE_URL } from '@/config/site';
 import { ArticleJsonLd, BreadcrumbJsonLd } from '@/components/seo/JsonLd';
+import BlogInternalLinksCta from '@/components/blog/BlogInternalLinksCta';
 import articles from '@/data/corporate-website-articles/tr.json';
 
 type ArticleSlug = keyof typeof articles;
@@ -164,7 +165,9 @@ export function CorporateWebsiteArticlePage({ article }: { article: ArticleData 
           </ol>
         </nav>
         <article className="min-w-0 space-y-6">
+          <BlogInternalLinksCta locale="tr" compact />
           <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>{article.body}</ReactMarkdown>
+          <BlogInternalLinksCta locale="tr" />
           <section className="rounded-xl bg-gray-950 p-6 text-white sm:p-8">
             <h2 className="text-xl font-semibold">Kurumsal web sitesi projenizi planlayın</h2>
             <p className="mt-2 max-w-2xl leading-7 text-gray-300">Mevcut sitenizi, hedeflerinizi ve ihtiyaç duyduğunuz sayfaları paylaşın; proje kapsamını birlikte değerlendirelim.</p>
