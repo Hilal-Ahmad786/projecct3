@@ -417,10 +417,10 @@ function localizedHref(path: string, locale: SupportedLocale) {
 function PageSection({ title, children, tone = 'white', id }: { title: string; children: ReactNode; tone?: 'white' | 'gray' | 'ivory'; id?: string }) {
   const background = tone === 'gray' ? 'bg-background-gray' : tone === 'ivory' ? 'bg-heritage-ivory' : 'bg-white';
   return (
-    <section id={id} className={`${background} corporate-section-enter section-compact`}>
+    <section id={id} className={`${background} section-compact`}>
       <div className="container mx-auto max-w-[1200px] px-4">
-        <h2 className="max-w-4xl text-headline font-medium leading-tight text-gray-900">{title}<span aria-hidden="true" className="mt-4 block h-1 w-12 rounded-full bg-heritage-turquoise" /></h2>
-        <div className="mt-6">{children}</div>
+        <h2 className="reveal max-w-4xl text-headline font-medium leading-tight text-gray-900">{title}<span aria-hidden="true" className="mt-4 block h-1 w-12 rounded-full bg-heritage-turquoise" /></h2>
+        <div className="reveal mt-6">{children}</div>
       </div>
     </section>
   );
@@ -431,7 +431,7 @@ function CallToAction({ locale, label, intro, heading, secondaryLabel, secondary
   return (
     <section className="bg-gray-950 section-compact">
       <div className="container mx-auto max-w-[1200px] px-4 text-center">
-        <h2 className="text-headline font-medium text-white">{heading || label}</h2>
+        <h2 className="reveal text-headline font-medium text-white">{heading || label}</h2>
         <p className="text-body mx-auto mt-3 max-w-2xl text-gray-300">{intro || c.labels.ctaIntro}</p>
         {secondaryLabel && secondaryHref ? <div className="mt-5 flex flex-wrap justify-center gap-3">
           <Link href={localizedHref('/start-project?service=corporate-website-design', locale)} className="inline-flex min-h-11 items-center gap-2 rounded-sm bg-heritage-turquoise px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-heritage-turquoise-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950 motion-reduce:transition-none">

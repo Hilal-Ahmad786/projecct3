@@ -105,7 +105,7 @@ const articleCtas: Record<ArticleSlug, Record<CtaStage, CtaCopy>> = {
 function ArticleCta({ stage, copy }: { stage: CtaStage; copy: CtaCopy }) {
   if (stage === 'middle') {
     return (
-      <aside aria-label={copy.heading} className="my-8 flex flex-col gap-4 rounded-xl bg-heritage-turquoise-light px-5 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+      <aside aria-label={copy.heading} className="reveal my-8 flex flex-col gap-4 rounded-xl bg-heritage-turquoise-light px-5 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-6">
         <div className="max-w-lg">
           <p className="font-semibold text-gray-950">{copy.heading}</p>
           <p className="mt-1 text-sm leading-6 text-gray-700">{copy.text}</p>
@@ -119,7 +119,7 @@ function ArticleCta({ stage, copy }: { stage: CtaStage; copy: CtaCopy }) {
 
   if (stage === 'early') {
     return (
-      <aside aria-label={copy.heading} className="my-8 rounded-xl border border-heritage-sand border-s-4 border-s-heritage-turquoise bg-heritage-ivory px-5 py-5 sm:px-6">
+      <aside aria-label={copy.heading} className="reveal my-8 rounded-xl border border-heritage-sand border-s-4 border-s-heritage-turquoise bg-heritage-ivory px-5 py-5 sm:px-6">
         <p className="text-lg font-semibold leading-snug text-gray-950">{copy.heading}</p>
         <p className="mt-1.5 text-sm leading-6 text-gray-700">{copy.text}</p>
         <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-3">
@@ -135,7 +135,7 @@ function ArticleCta({ stage, copy }: { stage: CtaStage; copy: CtaCopy }) {
   }
 
   return (
-    <aside aria-label={copy.heading} className="my-10 rounded-2xl bg-gray-950 px-6 py-7 text-white sm:px-8 sm:py-9">
+    <aside aria-label={copy.heading} className="reveal my-10 rounded-2xl bg-gray-950 px-6 py-7 text-white sm:px-8 sm:py-9">
       <p className="text-overline text-heritage-turquoise-light">PakSoft · Kurumsal Web Tasarım</p>
       <p className="mt-2 text-xl font-semibold leading-snug sm:text-2xl">{copy.heading}</p>
       <p className="mt-2 max-w-xl leading-7 text-gray-300">{copy.text}</p>
@@ -153,7 +153,7 @@ function ArticleCta({ stage, copy }: { stage: CtaStage; copy: CtaCopy }) {
 
 function WorkflowFigure({ article }: { article: ArticleData }) {
   return (
-    <figure className="my-8 overflow-hidden rounded-2xl border border-heritage-sand bg-white">
+    <figure className="reveal my-8 overflow-hidden rounded-2xl border border-heritage-sand bg-white">
       <Image
         src={article.illustration}
         alt={article.illustrationAlt}
@@ -305,7 +305,7 @@ export function CorporateWebsiteArticlePage({ article }: { article: ArticleData 
 
           <section aria-labelledby="related-reading" className="border-t border-gray-200 pt-8">
             <h2 id="related-reading" className="text-xl font-semibold text-gray-950">İlgili rehber</h2>
-            <Link href={`${blogListingPath}/${related.slug}`} className={`corporate-info-card group mt-4 grid overflow-hidden rounded-xl border border-gray-200 bg-white sm:grid-cols-[14rem_1fr] ${focusRing}`}>
+            <Link href={`${blogListingPath}/${related.slug}`} className={`reveal corporate-info-card group mt-4 grid overflow-hidden rounded-xl border border-gray-200 bg-white sm:grid-cols-[14rem_1fr] ${focusRing}`}>
               <span className="relative block aspect-video bg-background-gray sm:aspect-auto">
                 <Image src={related.coverImage} alt="" fill loading="lazy" sizes="(max-width: 640px) 100vw, 224px" className="object-cover object-right" />
               </span>

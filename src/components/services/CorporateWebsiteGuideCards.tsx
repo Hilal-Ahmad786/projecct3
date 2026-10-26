@@ -6,10 +6,10 @@ import { corporateWebsiteArticleCards, corporateWebsiteArticlePath } from '@/dat
 // Cards for the Turkish corporate website guides. Each card is a single
 // crawlable link; the title stays HTML text below the cover (never overlaid on
 // the image) so it remains readable on narrow screens.
-export default function CorporateWebsiteGuideCards({ headingLevel = 'h3' }: { headingLevel?: 'h2' | 'h3' }) {
+export default function CorporateWebsiteGuideCards({ headingLevel = 'h3', reveal = false }: { headingLevel?: 'h2' | 'h3'; reveal?: boolean }) {
   const Heading = headingLevel;
   return (
-    <ul className="grid gap-5 md:grid-cols-2">
+    <ul className={`grid gap-5 md:grid-cols-2 ${reveal ? 'reveal-group' : ''}`}>
       {corporateWebsiteArticleCards.map((article) => (
         <li key={article.slug}>
           <Link

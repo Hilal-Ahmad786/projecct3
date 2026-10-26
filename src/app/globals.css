@@ -692,14 +692,38 @@ body {
   animation: float-subtle 4s ease-in-out infinite;
 }
 
-/* Corporate website service subpages: subtle, theme-aligned content entrances
-   and hover lift keep dense buying information easy to scan. */
-@keyframes corporateSectionEnter {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
+/* Corporate website service pages: scroll-driven section reveals.
+   Pure CSS (no JS/hydration). Progressive enhancement: browsers without
+   scroll timelines, and reduced-motion users, simply see static content.
+   Content is never fully hidden (starts at 35% opacity) so it stays readable
+   and crawlable before it scrolls into view. Uses the independent `translate`
+   property so hover `transform` lifts on cards keep working. The range is a
+   fixed scroll distance, so tall sections finish revealing as quickly as
+   short ones. `.reveal-group` reveals direct children with a slight stagger. */
+@keyframes corporateReveal {
+  from { opacity: 0.35; translate: 0 24px; }
+  to { opacity: 1; translate: 0 0; }
 }
-.corporate-section-enter {
-  animation: corporateSectionEnter 0.55s var(--easing-decelerate, ease-out) both;
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal,
+    .reveal-group > * {
+      animation: corporateReveal linear both;
+      animation-timeline: view();
+      animation-range: cover 0% cover 260px;
+    }
+    .reveal-group > *:nth-child(3n + 2) { animation-range: cover 40px cover 300px; }
+    .reveal-group > *:nth-child(3n + 3) { animation-range: cover 80px cover 340px; }
+  }
+  @media (prefers-reduced-motion: no-preference) and (max-width: 639px) {
+    /* Restrained on phones: shorter travel, no stagger (cards stack). */
+    .reveal,
+    .reveal-group > *:nth-child(n) { animation-range: cover 0% cover 180px; }
+    @keyframes corporateReveal {
+      from { opacity: 0.35; translate: 0 12px; }
+      to { opacity: 1; translate: 0 0; }
+    }
+  }
 }
 .corporate-info-card {
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
