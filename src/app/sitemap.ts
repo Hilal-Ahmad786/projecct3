@@ -194,5 +194,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }));
   });
 
+  // Turkish-only editorial guides for the corporate website service. They use
+  // nested service URLs rather than the database-backed /blog route and have
+  // no translated counterparts, so do not emit hreflang alternates.
+  ['web-sitesi-yenileme', 'ihracat-firmalari-icin-cok-dilli-web-sitesi'].forEach((slug) => {
+    entries.push(entry('tr', `/services/corporate-website-design/blog/${slug}`, {
+      priority: PRIORITY.blogPost,
+      changeFreq: 'monthly',
+      date: new Date('2026-10-26'),
+      includeAlternates: false,
+    }));
+  });
+
   return entries;
 }

@@ -137,6 +137,7 @@ const nextConfig = {
       { source: '/:locale(tr)/hizmetler/:slug/surec', destination: '/:locale/services/:slug/process' },
       { source: '/:locale(tr)/hizmetler/:slug/teknoloji', destination: '/:locale/services/:slug/technologies' },
       { source: '/:locale(tr)/hizmetler/:slug/fiyatlandirma', destination: '/:locale/services/:slug/pricing' },
+      { source: '/:locale(tr)/hizmetler/:slug/blog/:articleSlug', destination: '/:locale/services/:slug/blog/:articleSlug' },
       { source: '/:locale(tr)/hizmetler/:slug/blog', destination: '/:locale/services/:slug/blog' },
       { source: '/:locale(tr)/hizmetler/:slug/portfoy', destination: '/:locale/services/:slug/portfolio' },
       { source: '/:locale(tr)/hizmetler/:slug/sss', destination: '/:locale/services/:slug/faq' },

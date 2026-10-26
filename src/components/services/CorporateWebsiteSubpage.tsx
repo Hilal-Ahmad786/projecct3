@@ -14,6 +14,7 @@ import {
 } from '@/components/services/hero-visuals/scenes-internal';
 import { localizeFullPath } from '@/lib/routes';
 import { FAQJsonLd } from '@/components/seo/JsonLd';
+import { corporateWebsiteArticleCards } from '@/data/corporate-website-article-cards';
 
 export type CorporateWebsiteSubpageKey = 'features' | 'technologies' | 'process' | 'portfolio' | 'pricing' | 'blog' | 'faq';
 type SupportedLocale = 'en' | 'tr';
@@ -23,6 +24,7 @@ type Feature = { title: string; what: string; why: string; scope: string };
 type ProcessStage = { title: string; paksoft: string; client: string; approval: string };
 type Article = { category: string; title: string; lead: string; paragraphs: string[]; points: string[] };
 const guideSlugs = ['corporate-website-cost-factors', 'website-project-preparation', 'redesign-or-rebuild', 'choose-corporate-cms', 'multilingual-website-planning', 'website-handover-access-files'];
+export function getCorporateWebsiteGuideSlugs() { return guideSlugs; }
 type FaqGroup = { title: string; items: [string, string][] };
 
 const content = {
@@ -1103,6 +1105,21 @@ export default function CorporateWebsiteSubpage({ page, locale }: { page: Corpor
       {page === 'blog' && <>
         <PageSection title={p.title} tone="gray" id="guides">
           <p className="max-w-3xl text-body text-gray-600">{p.featured}</p>
+          {locale === 'tr' && <div className="mt-6 grid gap-4 lg:grid-cols-2" aria-label="Yeni kurumsal web sitesi rehberleri">
+            {corporateWebsiteArticleCards.map((article) => <article key={article.slug} className="group overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-md motion-reduce:transition-none">
+              <Link href={localizedHref(`/services/corporate-website-design/blog/${article.slug}`, locale)} className="block h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-heritage-turquoise">
+                <div className="relative aspect-[16/8] overflow-hidden bg-heritage-turquoise-light">
+                  <Image src={article.image} alt={article.imageAlt} fill sizes="(max-width: 1024px) 100vw, 560px" className="object-cover transition-transform duration-300 group-hover:scale-[1.02] motion-reduce:transition-none" />
+                </div>
+                <div className="flex h-full flex-col p-5 sm:p-6">
+                  <span className="text-xs font-semibold text-heritage-turquoise-deep">{article.category}</span>
+                  <h3 className="mt-2 text-lg font-semibold leading-snug text-gray-900">{article.title}</h3>
+                  <p className="mt-2 flex-1 text-sm leading-6 text-gray-600">{article.excerpt}</p>
+                  <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep">Rehberi okuyun<ArrowRightIcon className="h-4 w-4 rtl:rotate-180" aria-hidden="true" /></span>
+                </div>
+              </Link>
+            </article>)}
+          </div>}
           <nav aria-label={locale === 'tr' ? 'Rehber kategorileri' : 'Guide categories'} className="mt-4 flex flex-wrap gap-2">{p.categories.map((x: string) => <span key={x} className="rounded-full border border-heritage-sand bg-white px-3 py-1.5 text-sm text-gray-700">{x}</span>)}</nav>
           <Link href={localizedHref(`/services/corporate-website-design/blog/${guideSlugs[1]}`, locale)} className="mt-5 block rounded-xl border border-heritage-sand bg-white p-5 transition-colors hover:border-heritage-turquoise focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise motion-reduce:transition-none"><span className="text-overline text-heritage-turquoise-deep">{locale === 'tr' ? 'Öne çıkan rehber · Planlama' : 'Featured guide · Planning'}</span><h3 className="mt-2 font-semibold text-gray-900">{p.articles[1].title}</h3><p className="mt-2 text-sm leading-6 text-gray-600">{p.articles[1].lead}</p><span className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep">{c.labels.readGuide}<ArrowRightIcon className="h-4 w-4 rtl:rotate-180" aria-hidden="true" /></span></Link>
           <ol className="mt-6 grid gap-3 border-y border-gray-200 py-5 sm:grid-cols-2 lg:grid-cols-3">{p.articles.map((article: Article, i: number) => <li key={article.title}><Link href={localizedHref(`/services/corporate-website-design/blog/${guideSlugs[i]}`, locale)} className="block h-full rounded-lg border border-gray-200 bg-white p-4 transition-colors hover:border-heritage-turquoise focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise motion-reduce:transition-none"><span className="text-xs text-gray-500">{article.category}</span><h3 className="mt-2 text-sm font-semibold leading-6 text-gray-900">{article.title}</h3><p className="mt-2 text-sm leading-6 text-gray-600">{article.lead}</p><span className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep">{c.labels.readGuide}<ArrowRightIcon className="h-4 w-4 rtl:rotate-180" aria-hidden="true" /></span></Link></li>)}</ol>
