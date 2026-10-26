@@ -22,6 +22,9 @@ const DRAW_PATHS = {
   'glyph-seo': ['link-1', 'link-2', 'link-3'],
   'site-tree': ['link-1', 'link-2', 'link-3', 'link-4', 'link-5', 'link-6'],
   handover: ['done-check-1', 'done-check-2', 'done-check-3', 'done-check-4', 'done-check-5'],
+  'page-builder': ['callout-line-1', 'callout-line-2', 'callout-line-3', 'callout-line-4', 'callout-line-5'],
+  'cms-preview': ['publish-check-path'],
+  'handoff-lanes': ['handoff-1', 'handoff-2', 'handoff-3', 'handoff-4', 'handoff-5'],
 };
 
 const out = {};

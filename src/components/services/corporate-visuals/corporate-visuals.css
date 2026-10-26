@@ -30,7 +30,8 @@
 @keyframes cv-grow-x { from { transform: scaleX(0); } }
 @keyframes cv-from-right { from { opacity: 0; transform: translateX(28px); } }
 @keyframes cv-from-left { from { opacity: 0; transform: translateX(-40px); } }
-@keyframes cv-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+/* opacity guard: a zero-length dash with round caps would still paint a dot */
+@keyframes cv-draw { 0% { stroke-dashoffset: 1; opacity: 0; } 2% { opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 1; } }
 @keyframes cv-blink { 0%, 100% { opacity: 1; } 25%, 75% { opacity: 0; } 50% { opacity: 1; } }
 /* lock fades in with its row, holds, then opens */
 @keyframes cv-lock-out { 0% { opacity: 0; transform: none; } 20%, 70% { opacity: 1; transform: none; } 100% { opacity: 0; transform: scale(0.6); } }
@@ -53,6 +54,24 @@
 .cv-compare[data-intro="true"] .cv-compare-after,
 .cv-compare[data-intro="true"] .cv-compare-handle { transition: clip-path 1.2s var(--cv-ease), left 1.2s var(--cv-ease); }
 
+/* ── Phase B: subpage visuals ── */
+@keyframes cv-fly-in { from { opacity: 0; transform: translateX(260px); } 60% { opacity: 1; } }
+@keyframes cv-dim { 0%, 55% { opacity: 1; } 100% { opacity: 0.32; } }
+@keyframes cv-flash { 0% { opacity: 0.25; } 40% { opacity: 1; filter: drop-shadow(0 0 6px rgb(14 124 123 / 0.55)); } 100% { opacity: 1; } }
+@keyframes cv-dash-flow { to { stroke-dashoffset: -20; } }
+.cv-cms-preview[data-state="play"] [data-part="sync-path"] { animation: cv-in 0.3s 2.2s both, cv-dash-flow 0.8s linear 2.2s 4; }
+.cv-cms-preview [data-part^="body-line-"], .cv-cms-preview [data-part="field-title-fill"] { transform-origin: left center; }
+.cv-scope-meters [data-part^="fill-"] { transform-origin: left center; transition: transform 0.9s var(--cv-ease); }
+/* default (no-JS) bar lengths = the "Tanıtım sitesi" example in ScopeMeters */
+.cv-scope-meters [data-part="fill-1"] { transform: scaleX(0.35); }
+.cv-scope-meters [data-part="fill-2"] { transform: scaleX(0.5); }
+.cv-scope-meters [data-part="fill-3"] { transform: scaleX(0.25); }
+.cv-scope-meters [data-part="fill-4"] { transform: scaleX(0.35); }
+.cv-scope-meters [data-part="fill-5"] { transform: scaleX(0.12); }
+.cv-scope-meters [data-part="fill-6"] { transform: scaleX(0.2); }
+.cv-page-builder .cv-label, .cv-scope-meters .cv-label, .cv-handoff-lanes .cv-label, .cv-catalogue-filter .cv-label { font-weight: 500; color: #333; }
+.cv-catalogue-filter .cv-label { justify-content: center; }
+
 @media (prefers-reduced-motion: reduce) {
   .cv [data-part], .cv .cv-label { animation: none !important; transition: none !important; }
 }
@@ -66,17 +85,17 @@
 .cv-site-build[data-state] [data-part="wire-card-3"] { animation: cv-in 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.73s) both; }
 .cv-site-build[data-state] [data-part="wire-footer"] { animation: cv-in 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.85s) both; }
 .cv-site-build[data-state] [data-part="designed-nav"] { animation: cv-rise 0.6s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.15s) both; }
-.cv-site-build[data-state] [data-part="designed-hero"] { animation: cv-rise 0.6s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.3299999999999998s) both; }
-.cv-site-build[data-state] [data-part="designed-card-1"] { animation: cv-rise 0.6s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.5099999999999998s) both; }
+.cv-site-build[data-state] [data-part="designed-hero"] { animation: cv-rise 0.6s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.32s) both; }
+.cv-site-build[data-state] [data-part="designed-card-1"] { animation: cv-rise 0.6s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.50s) both; }
 .cv-site-build[data-state] [data-part="designed-card-2"] { animation: cv-rise 0.6s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.69s) both; }
-.cv-site-build[data-state] [data-part="designed-card-3"] { animation: cv-rise 0.6s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.8699999999999999s) both; }
+.cv-site-build[data-state] [data-part="designed-card-3"] { animation: cv-rise 0.6s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.86s) both; }
 .cv-site-build[data-state] [data-part="designed-footer"] { animation: cv-rise 0.6s var(--cv-ease) calc(var(--cv-delay, 0s) + 2.05s) both; }
 .cv-site-build[data-state] [data-part="accent-dots"] { animation: cv-pop 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 2.35s) both; }
 .cv-glyph-layout[data-state] [data-part="grid-frame"] { animation: cv-in 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 0s) both; }
 .cv-glyph-layout[data-state] [data-part="block-a"] { animation: cv-pop 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.2s) both; }
 .cv-glyph-layout[data-state] [data-part="block-b"] { animation: cv-pop 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.34s) both; }
-.cv-glyph-layout[data-state] [data-part="block-c"] { animation: cv-pop 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.48000000000000004s) both; }
-.cv-glyph-layout[data-state] [data-part="block-d"] { animation: cv-pop 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.6200000000000001s) both; }
+.cv-glyph-layout[data-state] [data-part="block-c"] { animation: cv-pop 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.48s) both; }
+.cv-glyph-layout[data-state] [data-part="block-d"] { animation: cv-pop 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.62s) both; }
 .cv-glyph-devices[data-state] [data-part="desktop"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0s) both; }
 .cv-glyph-devices[data-state] [data-part="screen-content-desktop"] { animation: cv-in 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.3s) both; }
 .cv-glyph-devices[data-state] [data-part="phone"] { animation: cv-from-right 0.55s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.55s) both; }
@@ -106,13 +125,13 @@
 .cv-site-tree[data-state] [data-part="node-root"] { animation: cv-pop 0.55s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.1s) both; }
 .cv-site-tree[data-state] [data-part="link-1"] { animation: cv-draw 0.7s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.45s) both; }
 .cv-site-tree[data-state] [data-part="node-1"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.85s) both; }
-.cv-site-tree[data-state] [data-part="link-2"] { animation: cv-draw 0.7s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.5700000000000001s) both; }
+.cv-site-tree[data-state] [data-part="link-2"] { animation: cv-draw 0.7s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.57s) both; }
 .cv-site-tree[data-state] [data-part="node-2"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.97s) both; }
 .cv-site-tree[data-state] [data-part="link-3"] { animation: cv-draw 0.7s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.69s) both; }
-.cv-site-tree[data-state] [data-part="node-3"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.0899999999999999s) both; }
+.cv-site-tree[data-state] [data-part="node-3"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.08s) both; }
 .cv-site-tree[data-state] [data-part="link-4"] { animation: cv-draw 0.7s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.81s) both; }
 .cv-site-tree[data-state] [data-part="node-4"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.21s) both; }
-.cv-site-tree[data-state] [data-part="link-5"] { animation: cv-draw 0.7s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.9299999999999999s) both; }
+.cv-site-tree[data-state] [data-part="link-5"] { animation: cv-draw 0.7s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.92s) both; }
 .cv-site-tree[data-state] [data-part="node-5"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.33s) both; }
 .cv-site-tree[data-state] [data-part="link-6"] { animation: cv-draw 0.7s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.05s) both; }
 .cv-site-tree[data-state] [data-part="node-6"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.45s) both; }
@@ -132,9 +151,9 @@
 .cv-scope-builder[data-state] [data-part="chip-2"] { animation: cv-from-left 0.55s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.5s) both; }
 .cv-scope-builder[data-state] [data-part="line-2"] { animation: cv-grow-x 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.75s) both; }
 .cv-scope-builder[data-state] [data-part="chip-3"] { animation: cv-from-left 0.55s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.7s) both; }
-.cv-scope-builder[data-state] [data-part="line-3"] { animation: cv-grow-x 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.9500000000000001s) both; }
-.cv-scope-builder[data-state] [data-part="chip-4"] { animation: cv-from-left 0.55s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.9000000000000001s) both; }
-.cv-scope-builder[data-state] [data-part="line-4"] { animation: cv-grow-x 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.1500000000000001s) both; }
+.cv-scope-builder[data-state] [data-part="line-3"] { animation: cv-grow-x 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.95s) both; }
+.cv-scope-builder[data-state] [data-part="chip-4"] { animation: cv-from-left 0.55s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.90s) both; }
+.cv-scope-builder[data-state] [data-part="line-4"] { animation: cv-grow-x 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.15s) both; }
 .cv-scope-builder[data-state] [data-part="chip-5"] { animation: cv-from-left 0.55s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.1s) both; }
 .cv-scope-builder[data-state] [data-part="line-5"] { animation: cv-grow-x 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.35s) both; }
 .cv-scope-builder[data-state] [data-part="chip-6"] { animation: cv-from-left 0.55s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.3s) both; }
@@ -153,11 +172,85 @@
 .cv-handover[data-state] [data-part="lock-3"] { animation: cv-lock-out 1.44s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.35s) both; }
 .cv-handover[data-state] [data-part="done-3"] { animation: cv-pop 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.44s) both; }
 .cv-handover[data-state] [data-part="done-check-3"] { animation: cv-draw 0.35s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.69s) both; }
-.cv-handover[data-state] [data-part="row-4"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.45000000000000007s) both; }
-.cv-handover[data-state] [data-part="lock-4"] { animation: cv-lock-out 1.6600000000000001s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.45000000000000007s) both; }
-.cv-handover[data-state] [data-part="done-4"] { animation: cv-pop 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.6600000000000001s) both; }
-.cv-handover[data-state] [data-part="done-check-4"] { animation: cv-draw 0.35s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.9100000000000001s) both; }
+.cv-handover[data-state] [data-part="row-4"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.45s) both; }
+.cv-handover[data-state] [data-part="lock-4"] { animation: cv-lock-out 1.66s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.45s) both; }
+.cv-handover[data-state] [data-part="done-4"] { animation: cv-pop 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.66s) both; }
+.cv-handover[data-state] [data-part="done-check-4"] { animation: cv-draw 0.35s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.91s) both; }
 .cv-handover[data-state] [data-part="row-5"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.55s) both; }
 .cv-handover[data-state] [data-part="lock-5"] { animation: cv-lock-out 1.88s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.55s) both; }
 .cv-handover[data-state] [data-part="done-5"] { animation: cv-pop 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.88s) both; }
 .cv-handover[data-state] [data-part="done-check-5"] { animation: cv-draw 0.35s var(--cv-ease) calc(var(--cv-delay, 0s) + 2.13s) both; }
+.cv-page-builder[data-state] [data-part="page-frame"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0s) both; }
+.cv-page-builder[data-state] [data-part="zone-1"] { animation: cv-in 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.15s) both; }
+.cv-page-builder[data-state] [data-part="zone-2"] { animation: cv-in 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.2s) both; }
+.cv-page-builder[data-state] [data-part="zone-3"] { animation: cv-in 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.25s) both; }
+.cv-page-builder[data-state] [data-part="zone-4"] { animation: cv-in 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.30s) both; }
+.cv-page-builder[data-state] [data-part="zone-5"] { animation: cv-in 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.35s) both; }
+.cv-page-builder[data-state] [data-part="module-1"] { animation: cv-fly-in 0.7s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.5s) both; }
+.cv-page-builder[data-state] [data-part="callout-1"] { animation: cv-in 0.35s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.95s) both; }
+.cv-page-builder[data-state] [data-part="callout-line-1"] { animation: cv-draw 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.95s) both; }
+.cv-page-builder[data-state] [data-part="module-2"] { animation: cv-fly-in 0.7s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.72s) both; }
+.cv-page-builder[data-state] [data-part="callout-2"] { animation: cv-in 0.35s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.17s) both; }
+.cv-page-builder[data-state] [data-part="callout-line-2"] { animation: cv-draw 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.17s) both; }
+.cv-page-builder[data-state] [data-part="module-3"] { animation: cv-fly-in 0.7s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.94s) both; }
+.cv-page-builder[data-state] [data-part="callout-3"] { animation: cv-in 0.35s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.39s) both; }
+.cv-page-builder[data-state] [data-part="callout-line-3"] { animation: cv-draw 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.39s) both; }
+.cv-page-builder[data-state] [data-part="module-4"] { animation: cv-fly-in 0.7s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.16s) both; }
+.cv-page-builder[data-state] [data-part="callout-4"] { animation: cv-in 0.35s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.60s) both; }
+.cv-page-builder[data-state] [data-part="callout-line-4"] { animation: cv-draw 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.60s) both; }
+.cv-page-builder[data-state] [data-part="module-5"] { animation: cv-fly-in 0.7s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.38s) both; }
+.cv-page-builder[data-state] [data-part="callout-5"] { animation: cv-in 0.35s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.83s) both; }
+.cv-page-builder[data-state] [data-part="callout-line-5"] { animation: cv-draw 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.83s) both; }
+.cv-catalogue-filter[data-state] [data-part="filter-1"] { animation: cv-in 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.0s) both; }
+.cv-catalogue-filter[data-state] [data-part="filter-2"] { animation: cv-in 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.06s) both; }
+.cv-catalogue-filter[data-state] [data-part="filter-3"] { animation: cv-in 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.12s) both; }
+.cv-catalogue-filter[data-state] [data-part="filter-4"] { animation: cv-in 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.18s) both; }
+.cv-catalogue-filter[data-state] [data-part="product-1"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.2s) both, cv-dim 1.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.3s) forwards; }
+.cv-catalogue-filter[data-state] [data-part="product-2"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.27s) both, cv-dim 1.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.3s) forwards; }
+.cv-catalogue-filter[data-state] [data-part="product-3"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.34s) both; }
+.cv-catalogue-filter[data-state] [data-part="product-4"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.41s) both, cv-dim 1.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.3s) forwards; }
+.cv-catalogue-filter[data-state] [data-part="product-5"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.48s) both; }
+.cv-catalogue-filter[data-state] [data-part="product-6"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.55s) both, cv-dim 1.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.3s) forwards; }
+.cv-catalogue-filter[data-state] [data-part="product-7"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.62s) both, cv-dim 1.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.3s) forwards; }
+.cv-catalogue-filter[data-state] [data-part="product-8"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.69s) both; }
+.cv-catalogue-filter[data-state] [data-part="filter-active"] { animation: cv-pop 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.0s) both; }
+.cv-cms-preview[data-state] [data-part="editor"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0s) both; }
+.cv-cms-preview[data-state] [data-part="preview"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.15s) both; }
+.cv-cms-preview[data-state] [data-part="field-title-fill"] { animation: cv-grow-x 0.6s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.5s) both; }
+.cv-cms-preview[data-state] [data-part="body-line-1"] { animation: cv-grow-x 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.85s) both; }
+.cv-cms-preview[data-state] [data-part="body-line-2"] { animation: cv-grow-x 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.03s) both; }
+.cv-cms-preview[data-state] [data-part="body-line-3"] { animation: cv-grow-x 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.21s) both; }
+.cv-cms-preview[data-state] [data-part="field-image"] { animation: cv-pop 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.45s) both; }
+.cv-cms-preview[data-state] [data-part="publish-button"] { animation: cv-pop 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.8s) both; }
+.cv-cms-preview[data-state] [data-part="publish-check-path"] { animation: cv-draw 0.35s var(--cv-ease) calc(var(--cv-delay, 0s) + 2.05s) both; }
+.cv-cms-preview[data-state] [data-part="sync-path"] { animation: cv-in 0.3s var(--cv-ease) calc(var(--cv-delay, 0s) + 2.2s) both; }
+.cv-cms-preview[data-state] [data-part="preview-title"] { animation: cv-flash 0.7s var(--cv-ease) calc(var(--cv-delay, 0s) + 2.45s) both; }
+.cv-cms-preview[data-state] [data-part="preview-line-1"] { animation: cv-flash 0.7s var(--cv-ease) calc(var(--cv-delay, 0s) + 2.55s) both; }
+.cv-cms-preview[data-state] [data-part="preview-line-2"] { animation: cv-flash 0.7s var(--cv-ease) calc(var(--cv-delay, 0s) + 2.63s) both; }
+.cv-cms-preview[data-state] [data-part="preview-line-3"] { animation: cv-flash 0.7s var(--cv-ease) calc(var(--cv-delay, 0s) + 2.71s) both; }
+.cv-cms-preview[data-state] [data-part="preview-image"] { animation: cv-flash 0.7s var(--cv-ease) calc(var(--cv-delay, 0s) + 2.8s) both; }
+.cv-cms-preview[data-state] [data-part="preview-badge"] { animation: cv-pop 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 3.0s) both; }
+.cv-handoff-lanes[data-state] [data-part="lane-paksoft"] { animation: cv-in 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0s) both; }
+.cv-handoff-lanes[data-state] [data-part="lane-client"] { animation: cv-in 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.1s) both; }
+.cv-handoff-lanes[data-state] [data-part="task-1"] { animation: cv-pop 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.3s) both; }
+.cv-handoff-lanes[data-state] [data-part="task-2"] { animation: cv-pop 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.72s) both; }
+.cv-handoff-lanes[data-state] [data-part="task-3"] { animation: cv-pop 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.14s) both; }
+.cv-handoff-lanes[data-state] [data-part="task-4"] { animation: cv-pop 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.56s) both; }
+.cv-handoff-lanes[data-state] [data-part="task-5"] { animation: cv-pop 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.98s) both; }
+.cv-handoff-lanes[data-state] [data-part="task-6"] { animation: cv-pop 0.45s var(--cv-ease) calc(var(--cv-delay, 0s) + 2.4s) both; }
+.cv-handoff-lanes[data-state] [data-part="handoff-1"] { animation: cv-draw 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.5s) both; }
+.cv-handoff-lanes[data-state] [data-part="arrowhead-1"] { animation: cv-in 0.2s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.85s) both; }
+.cv-handoff-lanes[data-state] [data-part="handoff-2"] { animation: cv-draw 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.91s) both; }
+.cv-handoff-lanes[data-state] [data-part="arrowhead-2"] { animation: cv-in 0.2s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.27s) both; }
+.cv-handoff-lanes[data-state] [data-part="handoff-3"] { animation: cv-draw 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.33s) both; }
+.cv-handoff-lanes[data-state] [data-part="arrowhead-3"] { animation: cv-in 0.2s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.69s) both; }
+.cv-handoff-lanes[data-state] [data-part="handoff-4"] { animation: cv-draw 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 1.76s) both; }
+.cv-handoff-lanes[data-state] [data-part="arrowhead-4"] { animation: cv-in 0.2s var(--cv-ease) calc(var(--cv-delay, 0s) + 2.11s) both; }
+.cv-handoff-lanes[data-state] [data-part="handoff-5"] { animation: cv-draw 0.4s var(--cv-ease) calc(var(--cv-delay, 0s) + 2.17s) both; }
+.cv-handoff-lanes[data-state] [data-part="arrowhead-5"] { animation: cv-in 0.2s var(--cv-ease) calc(var(--cv-delay, 0s) + 2.53s) both; }
+.cv-scope-meters[data-state] [data-part="meter-1"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.0s) both; }
+.cv-scope-meters[data-state] [data-part="meter-2"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.08s) both; }
+.cv-scope-meters[data-state] [data-part="meter-3"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.16s) both; }
+.cv-scope-meters[data-state] [data-part="meter-4"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.24s) both; }
+.cv-scope-meters[data-state] [data-part="meter-5"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.32s) both; }
+.cv-scope-meters[data-state] [data-part="meter-6"] { animation: cv-rise 0.5s var(--cv-ease) calc(var(--cv-delay, 0s) + 0.4s) both; }

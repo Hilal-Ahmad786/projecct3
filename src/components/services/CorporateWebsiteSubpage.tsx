@@ -19,6 +19,7 @@ import CorporateWebsiteGuideCards from '@/components/services/CorporateWebsiteGu
 import AnimatedVisual from '@/components/services/corporate-visuals/AnimatedVisual';
 import BeforeAfterCompare from '@/components/services/corporate-visuals/BeforeAfterCompare';
 import MultilingualDemo from '@/components/services/corporate-visuals/MultilingualDemo';
+import ScopeMeters from '@/components/services/corporate-visuals/ScopeMeters';
 import { corporateWebsiteArticlePath } from '@/data/corporate-website-article-cards';
 
 export type CorporateWebsiteSubpageKey = 'features' | 'technologies' | 'process' | 'portfolio' | 'pricing' | 'blog' | 'faq';
@@ -505,8 +506,8 @@ function TurkishTechnologiesContent() {
     </PageSection>
 
     <PageSection title="Yönetim Paneli ve İçerik Güncelleme">
-      <div className="grid items-center gap-6 lg:grid-cols-[.9fr_1.1fr]">
-        <div className="rounded-xl border border-heritage-sand bg-heritage-ivory p-5 md:p-6"><p className="text-overline text-heritage-turquoise-deep">Örnek gösterim · CMS içerik alanları</p><div className="mt-4 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm"><div className="flex items-center justify-between border-b border-gray-200 bg-background-gray px-4 py-3"><span className="text-sm font-semibold text-gray-800">İçerik yönetimi</span><span className="rounded-full bg-heritage-turquoise-light px-2.5 py-1 text-xs font-semibold text-heritage-turquoise-deep">Taslak</span></div><div className="space-y-4 p-4"><div><span className="text-xs font-medium text-gray-600">Sayfa başlığı</span><div className="mt-1 rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-800">Hizmetlerimiz</div></div><div><span className="text-xs font-medium text-gray-600">Kısa açıklama</span><div className="mt-1 min-h-14 rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-500">İçerik alanı örneği</div></div><div className="flex justify-end"><span className="rounded-md bg-heritage-turquoise px-3 py-2 text-xs font-semibold text-white">Önizleme / Yayınla</span></div></div></div><p className="mt-3 text-xs leading-5 text-gray-600">Bu çizim açıklayıcı bir örnektir; çalışan bir PakSoft yönetim paneli ekranı değildir.</p></div>
+      <div className="grid items-center gap-6 lg:grid-cols-[1.1fr_.9fr]">
+        <figure className="m-0"><AnimatedVisual name="cms-preview" /><figcaption className="mt-3 text-xs leading-5 text-gray-600">Örnek gösterim · Yönetim panelinde güncellenen başlık, metin ve görsel yayınlandığında sayfaya yansır. Düzenlenebilir alanlar projeye göre belirlenir.</figcaption></figure>
         <div><p className="text-body text-gray-600">Yönetim panelinde hangi içerik türlerinin değiştirilebileceği önceden belirlenir. Metin, görsel, hizmet, proje ve haber alanları düzenlenebilir; sayfa şablonunun tamamını serbestçe değiştirmek ayrı bir ihtiyaçtır ve her kurulumda bulunmaz.</p><ul className="mt-5 space-y-4 text-sm leading-6 text-gray-700"><li><strong className="text-gray-900">Düzenlenebilir içerik:</strong> Sayfalar, haberler, görseller ve diğer içerik türleri seçilen platforma göre tanımlanır.</li><li><strong className="text-gray-900">Kullanıcı rolleri:</strong> Farklı düzenleme ve yayın izinleri gerekiyorsa ayrıca planlanır.</li><li><strong className="text-gray-900">Önizleme ve yayın:</strong> Taslak, onay ve yayın adımları sistemin özellikleriyle ve proje gereksinimleriyle belirlenir.</li><li><strong className="text-gray-900">Teslim:</strong> Erişimler, kullanım bilgilendirmesi ve teslim materyalleri teklifte açıklanır.</li></ul><Link href={localizedHref('/services/corporate-website-design/features', 'tr')} className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">İçerik ve modül özelliklerini inceleyin <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link></div>
       </div>
     </PageSection>
@@ -731,6 +732,7 @@ function TurkishProcessContent({ p }: { p: Record<string, any> }) {
 
     <PageSection title="Proje Boyunca Kimden Ne Beklenir?">
       <p className="mb-4 max-w-4xl text-body text-gray-600">Sorumluluklar projeye ve kararlaştırılan kapsama göre netleştirilir; tablo iş birliğini planlamaya yardımcı olur.</p>
+      <figure className="m-0 mb-6"><AnimatedVisual name="handoff-lanes" labels={[{ slot: 'slot-lane-paksoft', text: 'PakSoft', className: 'font-semibold text-heritage-turquoise-deep !text-[clamp(11px,2.8cqi,17px)]' }, { slot: 'slot-lane-client', text: 'Siz', delay: 0.1, className: 'font-semibold text-gray-800 !text-[clamp(11px,2.8cqi,17px)]' }]} /><figcaption className="mt-2 text-xs leading-5 text-gray-600">Örnek gösterim · İş, onay ve içerik adımları iki taraf arasında sırayla ilerler.</figcaption></figure>
       <div className="overflow-x-auto rounded-xl border border-gray-200 bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise" tabIndex={0} role="region" aria-label="Proje sorumlulukları tablosu"><table className="w-full min-w-[720px] border-collapse text-left text-sm"><thead><tr><th scope="col" className="border-b border-gray-300 bg-background-gray px-4 py-3 font-semibold text-gray-900">Konu</th><th scope="col" className="border-b border-gray-300 bg-background-gray px-4 py-3 font-semibold text-gray-900">PakSoft’un Sorumluluğu</th><th scope="col" className="border-b border-gray-300 bg-background-gray px-4 py-3 font-semibold text-gray-900">Müşterinin Katkısı</th></tr></thead><tbody>{responsibilities.map(([topic, paksoft, client]) => <tr key={topic}><th scope="row" className="border-b border-gray-200 px-4 py-3 align-top font-semibold text-gray-900">{topic}</th><td className="border-b border-gray-200 px-4 py-3 align-top leading-6 text-gray-700">{paksoft}</td><td className="border-b border-gray-200 px-4 py-3 align-top leading-6 text-gray-700">{client}</td></tr>)}</tbody></table></div>
     </PageSection>
 
@@ -836,25 +838,19 @@ function TurkishFeaturesContent() {
     <PageSection title="İşletmenizi Anlatan Sayfalar" tone="ivory">
       <div className="grid gap-7 lg:grid-cols-[1.1fr_.9fr] lg:items-center">
         <dl className="grid gap-x-7 sm:grid-cols-2">{companyPages.map(([title, text]) => <div key={title} className="border-b border-heritage-sand py-3"><dt><h3 className="font-semibold text-gray-900">{title}</h3></dt><dd className="mt-2 text-sm leading-6 text-gray-700">{text}</dd></div>)}</dl>
-        <figure className="m-0 self-start rounded-xl border border-heritage-sand bg-white p-4 sm:p-5"><AnimatedVisual name="site-tree" labels={[{ slot: 'slot-root', text: <span className="text-white">Ana Sayfa</span>, delay: 0.3 }, ...['Hakkımızda', 'Hizmetler', 'Ürünler', 'Projeler', 'Duyurular', 'İletişim'].map((page, i) => ({ slot: `slot-${i + 1}`, text: page, delay: 0.95 + i * 0.12 }))]} /><figcaption className="mt-3 text-xs leading-5 text-gray-600">Örnek sayfa yapısı · Sayfalar işletmenin ihtiyacına göre belirlenir.</figcaption></figure>
+        <figure className="m-0 self-start"><AnimatedVisual name="page-builder" labels={['Kurumsal tanıtım', 'Hizmetler', 'Ürün kataloğu', 'Referanslar', 'İletişim ve teklif formu'].map((label, i) => ({ slot: `slot-module-${i + 1}`, text: label, delay: 1.0 + i * 0.22 }))} /><figcaption className="mt-2 text-xs leading-5 text-gray-600">Örnek gösterim · Sayfa, işletmenin ihtiyaç duyduğu modüllerden oluşturulur.</figcaption></figure>
       </div>
       <Link href={localizedHref('/services/corporate-website-design/portfolio', 'tr')} className={`mt-5 inline-flex items-center gap-2 text-sm ${anchorClass}`}>Belgelenmiş web sitesi projesini inceleyin <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>
     </PageSection>
 
     <PageSection title="Yönetim Panelli Web Sitesi">
-      <div className="grid gap-7 lg:grid-cols-[1fr_.8fr]">
+      <div className="grid gap-7 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
         <div className="space-y-4">
           <article><h3 className="text-base font-semibold text-gray-900">İçerikleri Güncelleme</h3><p className="mt-2 text-sm leading-6 text-gray-600">Seçilen içerik yönetim sistemi, yetkili kişilerin anlaşmaya dahil edilen metinleri, görselleri, hizmetleri, projeleri veya haberleri güncellemesine imkân verebilir. Hangi alanların düzenlenebileceği platform ve kapsamla belirlenir.</p></article>
           <article><h3 className="text-base font-semibold text-gray-900">Kullanıcı Rolleri ve Yayın Yetkileri</h3><p className="mt-2 text-sm leading-6 text-gray-600">Birden fazla içerik sorumlusu veya yayın öncesi onay gerekiyorsa kullanıcı rolleri değerlendirilebilir. Ayrıntılı izin ve onay akışları her projeye otomatik olarak dahil değildir.</p></article>
           <article><h3 className="text-base font-semibold text-gray-900">Kullanım Rehberi ve Teslim</h3><p className="mt-2 text-sm leading-6 text-gray-600">Düzenleme erişimi, varsa kullanım rehberi ve devir materyalleri teklif içinde tanımlanır. Ekibinizin hangi işlemleri devralacağı teslim kapsamıyla birlikte netleştirilir.</p></article>
         </div>
-        <div className="overflow-hidden rounded-xl border border-gray-200 bg-white">
-          <div className="border-b border-gray-200 bg-background-gray px-4 py-3"><p className="text-overline text-heritage-turquoise-deep">Örnek gösterim · Yönetim paneli</p></div>
-          <div className="grid min-h-48 sm:grid-cols-[8rem_1fr]">
-            <ul className="border-b border-gray-200 bg-background-gray p-3 text-xs text-gray-600 sm:border-b-0 sm:border-e"><li className="rounded bg-white px-2 py-2 font-semibold text-gray-800">Sayfalar</li><li className="px-2 py-2">Hizmetler</li><li className="px-2 py-2">Haberler</li></ul>
-            <div className="space-y-4 p-4"><p className="text-sm font-semibold text-gray-900">İçerik düzenleme alanı</p><div><span className="mb-1 block text-xs text-gray-500">Başlık</span><div aria-hidden="true" className="h-8 rounded border border-gray-200 bg-white" /></div><div><span className="mb-1 block text-xs text-gray-500">Açıklama</span><div aria-hidden="true" className="h-14 rounded border border-gray-200 bg-white" /></div><p className="text-xs leading-5 text-gray-500">Bu görsel bir arayüz örneğidir; çalışan bir ürün ekranı değildir.</p></div>
-          </div>
-        </div>
+        <figure className="m-0"><AnimatedVisual name="cms-preview" /><figcaption className="mt-3 text-xs leading-5 text-gray-600">Örnek gösterim · Yönetim panelinde güncellenen başlık, metin ve görsel yayınlandığında sayfaya yansır. Düzenlenebilir alanlar projeye göre belirlenir.</figcaption></figure>
       </div>
     </PageSection>
 
@@ -864,9 +860,9 @@ function TurkishFeaturesContent() {
     </PageSection>
 
     <PageSection title="Ürün Kataloğu ve Teknik İçerikler">
-      <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
-        <div><p className="max-w-4xl text-body leading-relaxed text-gray-600">Ürün kataloğu, müşterilerin ürün gruplarını, teknik bilgileri ve indirilebilir dokümanları incelemesine; ardından ürün hakkında soru veya teklif talebi göndermesine yardımcı olur. Katalog büyüklüğü ve içerik yapısı işletmenin verilerine göre belirlenir.</p><ul className="mt-4 grid gap-x-8 sm:grid-cols-2">{catalogueFeatures.map(([title, text]) => <li key={title} className="border-b border-gray-200 py-3"><h3 className="text-sm font-semibold text-gray-900">{title}</h3><p className="mt-1 text-sm leading-6 text-gray-600">{text}</p></li>)}</ul><p className="mt-4 text-sm leading-6 text-gray-600">Ürün kataloğu kendi başına çevrimiçi ödeme, stok yönetimi veya sepet/sipariş akışı içermez.</p></div>
-        <Link href={localizedHref('/services/e-commerce', 'tr')} className={`inline-flex min-h-11 items-center gap-2 rounded-sm border border-heritage-sand bg-heritage-ivory px-4 py-3 text-sm ${anchorClass}`}>Online satış için e-ticaret çözümlerini inceleyin <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>
+      <div className="grid gap-6 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
+        <div><p className="max-w-4xl text-body leading-relaxed text-gray-600">Ürün kataloğu, müşterilerin ürün gruplarını, teknik bilgileri ve indirilebilir dokümanları incelemesine; ardından ürün hakkında soru veya teklif talebi göndermesine yardımcı olur. Katalog büyüklüğü ve içerik yapısı işletmenin verilerine göre belirlenir.</p><ul className="mt-4 grid gap-x-8 sm:grid-cols-2">{catalogueFeatures.map(([title, text]) => <li key={title} className="border-b border-gray-200 py-3"><h3 className="text-sm font-semibold text-gray-900">{title}</h3><p className="mt-1 text-sm leading-6 text-gray-600">{text}</p></li>)}</ul><p className="mt-4 text-sm leading-6 text-gray-600">Ürün kataloğu kendi başına çevrimiçi ödeme, stok yönetimi veya sepet/sipariş akışı içermez.</p><div className="mt-5"><Link href={localizedHref('/services/e-commerce', 'tr')} className={`inline-flex min-h-11 items-center gap-2 rounded-sm border border-heritage-sand bg-heritage-ivory px-4 py-3 text-sm ${anchorClass}`}>Online satış için e-ticaret çözümlerini inceleyin <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link></div></div>
+        <figure className="m-0"><AnimatedVisual name="catalogue-filter" labels={[{ slot: 'slot-filter-1', text: 'Tümü' }, { slot: 'slot-filter-2', text: <span className="text-white">Sac ürünler</span>, delay: 1.0 }, { slot: 'slot-filter-3', text: 'Borular' }, { slot: 'slot-filter-4', text: 'Makine' }]} /><figcaption className="mt-2 text-xs leading-5 text-gray-600">Örnek gösterim · Filtre seçildiğinde ilgili ürünler öne çıkar.</figcaption></figure>
       </div>
     </PageSection>
 
@@ -948,7 +944,7 @@ function TurkishPricingContent({ p }: { p: Record<string, any> }) {
     </PageSection>
 
     <PageSection title={p.factorsTitle} tone="ivory">
-      <div className="grid gap-x-8 md:grid-cols-2">{p.factors.map(([title, text]: [string, string], i: number) => <article key={title} className="border-b border-heritage-sand py-4"><h3 className="flex items-start gap-3 font-semibold text-gray-900"><span aria-hidden="true" className="text-overline text-heritage-turquoise-deep">0{i + 1}</span>{title}</h3><p className="mt-2 text-sm leading-6 text-gray-700">{text}</p></article>)}</div>
+      <div className="grid gap-8 lg:grid-cols-[1.1fr_.9fr] lg:items-start"><div className="grid gap-x-8">{p.factors.map(([title, text]: [string, string], i: number) => <article key={title} className="border-b border-heritage-sand py-4"><h3 className="flex items-start gap-3 font-semibold text-gray-900"><span aria-hidden="true" className="text-overline text-heritage-turquoise-deep">0{i + 1}</span>{title}</h3><p className="mt-2 text-sm leading-6 text-gray-700">{text}</p></article>)}</div><ScopeMeters /></div>
     </PageSection>
 
     <PageSection title={p.costsTitle}>
