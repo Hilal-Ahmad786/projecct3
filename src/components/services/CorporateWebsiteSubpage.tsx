@@ -386,7 +386,7 @@ export function CorporateWebsiteGuidePage({ slug, locale }: { slug: string; loca
   const blogPath = localizedHref('/services/corporate-website-design/blog', locale);
   const homePath = localizedHref('/services/corporate-website-design', locale);
   return <main className="min-h-screen bg-white">
-    <section className="bg-background-gray section-compact">
+    <section className="bg-background-gray cw-section">
       <div className="container mx-auto max-w-[1200px] px-4">
         <nav aria-label={locale === 'tr' ? 'İçerik yolu' : 'Breadcrumb'} className="mb-6 text-sm text-gray-600"><Link href={homePath} className="underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">{locale === 'tr' ? 'Kurumsal Web Tasarım' : 'Corporate Website Design'}</Link><span className="mx-2" aria-hidden="true">/</span><Link href={blogPath} className="underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">{locale === 'tr' ? 'Rehberler' : 'Guides'}</Link><span className="mx-2" aria-hidden="true">/</span><span aria-current="page">{guide.title}</span></nav>
         <p className="text-overline text-heritage-turquoise-deep">{guide.category}</p><h1 className="text-display mt-3 max-w-4xl font-medium text-gray-950">{guide.title}</h1><p className="text-body mt-5 max-w-3xl text-gray-700">{guide.lead}</p>
@@ -396,7 +396,7 @@ export function CorporateWebsiteGuidePage({ slug, locale }: { slug: string; loca
       <article className="max-w-4xl"><div className="space-y-5 text-body leading-relaxed text-gray-700">{guide.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div><h2 className="mt-8 text-title font-semibold text-gray-900">{locale === 'tr' ? 'Kontrol listesi' : 'Checklist'}</h2><ul className="mt-4 space-y-3">{guide.points.map((point) => <li key={point} className="flex gap-3 text-body leading-relaxed text-gray-700"><CheckIcon className="mt-1 h-5 w-5 shrink-0 text-heritage-turquoise" aria-hidden="true" />{point}</li>)}</ul></article>
     </PageSection>
     <div className="container mx-auto max-w-[1200px] px-4"><BlogInternalLinksCta locale={locale} compact /></div>
-    <div className="bg-background-gray section-compact"><div className="container mx-auto max-w-[1200px] px-4"><Link href={blogPath} className="inline-flex items-center gap-2 font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise"><ArrowRightIcon className="h-4 w-4 rotate-180 rtl:rotate-0" aria-hidden="true" />{locale === 'tr' ? 'Tüm rehberlere dönün' : 'Back to all guides'}</Link></div></div>
+    <div className="bg-background-gray cw-section"><div className="container mx-auto max-w-[1200px] px-4"><Link href={blogPath} className="inline-flex items-center gap-2 font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise"><ArrowRightIcon className="h-4 w-4 rotate-180 rtl:rotate-0" aria-hidden="true" />{locale === 'tr' ? 'Tüm rehberlere dönün' : 'Back to all guides'}</Link></div></div>
     <CallToAction locale={locale} label={content[locale].pages.blog.cta} />
   </main>;
 }
@@ -421,10 +421,10 @@ function localizedHref(path: string, locale: SupportedLocale) {
 function PageSection({ title, children, tone = 'white', id }: { title: string; children: ReactNode; tone?: 'white' | 'gray' | 'ivory'; id?: string }) {
   const background = tone === 'gray' ? 'bg-background-gray' : tone === 'ivory' ? 'bg-heritage-ivory' : 'bg-white';
   return (
-    <section id={id} className={`${background} section-compact`}>
+    <section id={id} className={`${background} cw-section`}>
       <div className="container mx-auto max-w-[1200px] px-4">
         <h2 className="reveal max-w-4xl text-headline font-medium leading-tight text-gray-900">{title}<span aria-hidden="true" className="mt-4 block h-1 w-12 rounded-full bg-heritage-turquoise" /></h2>
-        <div className="reveal mt-6">{children}</div>
+        <div className="reveal mt-8 sm:mt-10">{children}</div>
       </div>
     </section>
   );
@@ -433,7 +433,7 @@ function PageSection({ title, children, tone = 'white', id }: { title: string; c
 function CallToAction({ locale, label, intro, heading, secondaryLabel, secondaryHref }: { locale: SupportedLocale; label: string; intro?: string; heading?: string; secondaryLabel?: string; secondaryHref?: string }) {
   const c = content[locale];
   return (
-    <section className="bg-gray-950 section-compact">
+    <section className="bg-gray-950 cw-section">
       <div className="container mx-auto max-w-[1200px] px-4 text-center">
         <h2 className="reveal text-headline font-medium text-white">{heading || label}</h2>
         <p className="text-body mx-auto mt-3 max-w-2xl text-gray-300">{intro || c.labels.ctaIntro}</p>

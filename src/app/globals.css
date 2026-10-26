@@ -1338,3 +1338,11 @@ textarea.form-input {
   -webkit-mask-image: linear-gradient(to top, black 20%, transparent 75%);
   mask-image: linear-gradient(to top, black 20%, transparent 75%);
 }
+
+/* Corporate website service family (overview, subpages, blog listing):
+   section rhythm. Uses padding-block only, and is declared last, because the
+   mobile `.container` rule above resets `padding` and was zeroing the vertical
+   padding of elements that combine `container` with `section-compact`. */
+.cw-section { padding-block: 4.5rem; }
+@media (min-width: 768px) { .cw-section { padding-block: 5.5rem; } }
+@media (min-width: 1024px) { .cw-section { padding-block: 6rem; } }
