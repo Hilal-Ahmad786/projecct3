@@ -84,7 +84,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   // fall back to the generated defaults for services that don't have them yet.
   const corporateMeta: Partial<Record<Locale, { title: string; description: string }>> = {
     en: { title: 'Corporate Website Design & Development | PakSoft', description: 'Plan, design and develop a corporate website with clear content, enquiry tools and an agreed launch scope.' },
-    tr: { title: 'Kurumsal Web Tasarım ve Geliştirme | PakSoft', description: 'İşletmenizi anlatan, müşteri taleplerini kolaylaştıran ve içerik yönetimi sunan kurumsal web siteleri.' },
+    tr: { title: 'Kurumsal Web Tasarım ve Web Sitesi Yapımı | PakSoft', description: 'İşletmenize özel kurumsal web tasarım ve geliştirme. Mobil uyumlu, yönetim panelli ve çok dilli web sitesi seçeneklerini inceleyin, projeniz için teklif alın.' },
   };
   const revisedMeta = slug === 'corporate-website-design' ? corporateMeta[validLocale] : undefined;
   const title = revisedMeta?.title || (service as { metaTitle?: string | null }).metaTitle || `${service.name} | PakSoft`;

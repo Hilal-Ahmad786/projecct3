@@ -229,7 +229,7 @@ export default function ServiceDetailClient({
     const corporateHero = locale === 'tr'
       ? {
           name: 'Kurumsal Web Tasarım ve Geliştirme',
-          description: 'İşletmenizi doğru anlatan, müşteri taleplerini toplamanızı kolaylaştıran ve içeriklerinizi yönetmenize olanak tanıyan kurumsal web siteleri tasarlıyor ve geliştiriyoruz.',
+          description: 'Kurumsal web tasarım projelerinde PakSoft olarak işletmenizi doğru anlatan, ürün ve hizmetlerinizi anlaşılır biçimde sunan web siteleri tasarlıyor ve geliştiriyoruz. Mobil uyumlu tasarım, içerik yönetimi ve iletişim araçlarını ihtiyaçlarınıza göre planlayarak ziyaretçilerinizin işletmenizi tanımasını ve sizinle iletişime geçmesini kolaylaştırıyoruz.',
         }
       : {
           name: 'Corporate Website Design & Development',
@@ -690,13 +690,9 @@ function HeroSection({
             {/* Title */}
             <div className="space-y-2">
               <h1 className="text-display font-light text-gray-900 leading-none">
-                {service.name.split(' ').slice(0, -1).join(' ')}
-                {service.name.split(' ').length > 1 && <br />}
-                <span className={`font-semibold ${colors.titleAccent}`}>
-                  {service.name.split(' ').length > 1
-                    ? service.name.split(' ').slice(-1)[0]
-                    : service.name}
-                </span>
+                {service.slug === 'corporate-website-design' && locale === 'tr'
+                  ? <><span className="font-semibold">{service.name}</span></>
+                  : <>{service.name.split(' ').slice(0, -1).join(' ')}{service.name.split(' ').length > 1 && <br />}<span className={`font-semibold ${colors.titleAccent}`}>{service.name.split(' ').length > 1 ? service.name.split(' ').slice(-1)[0] : service.name}</span></>}
               </h1>
             </div>
 
