@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React, { Children, isValidElement, type ReactNode } from 'react';
 import ReactMarkdown, { type Components } from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { ArrowRightIcon } from '@heroicons/react/24/outline';
+import { ArrowRightIcon, CalendarIcon, ClockIcon } from '@heroicons/react/24/outline';
 import { SITE_URL } from '@/config/site';
 import { ArticleJsonLd, BreadcrumbJsonLd } from '@/components/seo/JsonLd';
 import articles from '@/data/corporate-website-articles/tr.json';
@@ -125,23 +125,26 @@ export function CorporateWebsiteArticlePage({ article }: { article: ArticleData 
       { name: article.title, url: articleUrl },
     ]} />
 
-    <section className="bg-background-gray py-10 sm:py-14 lg:py-16">
+    <section className="bg-white pb-6 pt-24 sm:pb-8 sm:pt-32 lg:pt-40">
       <div className="container mx-auto max-w-6xl px-4">
-        <nav aria-label="İçerik yolu" className="mb-7 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-gray-600">
+        <nav aria-label="İçerik yolu" className="mb-5 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-gray-500 sm:text-sm">
           <Link href="/tr" className="underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Ana Sayfa</Link><span aria-hidden="true">/</span>
           <Link href="/tr/hizmetler" className="underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Hizmetler</Link><span aria-hidden="true">/</span>
           <Link href={mainServicePath} className="underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Kurumsal Web Tasarım</Link><span aria-hidden="true">/</span>
           <Link href={blogListingPath} className="underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Blog</Link><span aria-hidden="true">/</span>
           <span aria-current="page" className="text-gray-800">{article.title}</span>
         </nav>
-        <div className="grid items-center gap-8 lg:grid-cols-[1fr_.9fr] lg:gap-12">
-          <div>
-            <p className="text-overline text-heritage-turquoise-deep">{article.category}</p>
-            <h1 className="text-display mt-3 max-w-3xl font-medium text-gray-950">{article.title}</h1>
-            <p className="mt-5 max-w-2xl text-lg leading-8 text-gray-700">{article.standfirst}</p>
-            <p className="mt-4 text-sm text-gray-600"><time dateTime="2026-10-26">26 Ekim 2026</time> <span aria-hidden="true">·</span> Yaklaşık {Math.max(1, Math.ceil(article.body.split(/\s+/).length / 200))} dk okuma</p>
+        <div className="relative isolate overflow-hidden rounded-xl border border-heritage-sand bg-background-gray shadow-sm sm:rounded-2xl">
+          <div className="relative z-20 px-5 pb-6 pt-6 sm:px-8 sm:pb-8 sm:pt-8 lg:absolute lg:inset-y-0 lg:left-0 lg:flex lg:w-[45%] lg:flex-col lg:justify-center lg:px-10 lg:pb-10 lg:pt-24 xl:px-12">
+            <p className="flex items-center gap-2 text-overline font-semibold text-heritage-turquoise-deep"><span aria-hidden="true" className="h-px w-8 bg-heritage-turquoise" />{article.category}</p>
+            <h1 className="text-display mt-2 max-w-[30rem] text-[clamp(2rem,3vw,2.9rem)] font-medium leading-[1.08] text-gray-950">{article.title}</h1>
+            <p className="mt-4 max-w-[27rem] text-base leading-7 text-gray-700 sm:text-lg sm:leading-8">{article.standfirst}</p>
+            <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-gray-600">
+              <span className="inline-flex items-center gap-2"><CalendarIcon className="h-4 w-4 text-heritage-turquoise-deep" aria-hidden="true" /><time dateTime="2026-10-26">26 Ekim 2026</time></span>
+              <span className="inline-flex items-center gap-2"><ClockIcon className="h-4 w-4 text-heritage-turquoise-deep" aria-hidden="true" />Yaklaşık {Math.max(1, Math.ceil(article.body.split(/\s+/).length / 200))} dk okuma</span>
+            </div>
           </div>
-          <Image src={article.coverImage} alt={article.coverAlt} width={1672} height={941} priority sizes="(max-width: 1024px) 100vw, 520px" className="h-auto w-full rounded-2xl border border-heritage-sand bg-white shadow-sm" />
+          <Image src={article.coverImage} alt={article.coverAlt} width={1672} height={941} priority sizes="(max-width: 1024px) 100vw, 1152px" className="relative z-0 block h-auto w-full" />
         </div>
       </div>
     </section>
