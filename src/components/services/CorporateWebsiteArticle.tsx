@@ -6,6 +6,7 @@ import remarkGfm from 'remark-gfm';
 import { ArrowRightIcon, CalendarIcon, ClockIcon } from '@heroicons/react/24/outline';
 import { SITE_URL } from '@/config/site';
 import { ArticleJsonLd, BreadcrumbJsonLd } from '@/components/seo/JsonLd';
+import { ArticleToc, ReadingProgress } from '@/components/services/ArticleReadingAids';
 import articles from '@/data/corporate-website-articles/tr.json';
 
 type ArticleSlug = keyof typeof articles;
@@ -105,7 +106,7 @@ const articleCtas: Record<ArticleSlug, Record<CtaStage, CtaCopy>> = {
 function ArticleCta({ stage, copy }: { stage: CtaStage; copy: CtaCopy }) {
   if (stage === 'middle') {
     return (
-      <aside aria-label={copy.heading} className="reveal my-8 flex flex-col gap-4 rounded-xl bg-heritage-turquoise-light px-5 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+      <aside aria-label={copy.heading} className="reveal my-10 flex flex-col gap-4 rounded-xl bg-heritage-turquoise-light sm:my-12 px-5 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-6">
         <div className="max-w-lg">
           <p className="font-semibold text-gray-950">{copy.heading}</p>
           <p className="mt-1 text-sm leading-6 text-gray-700">{copy.text}</p>
@@ -119,7 +120,7 @@ function ArticleCta({ stage, copy }: { stage: CtaStage; copy: CtaCopy }) {
 
   if (stage === 'early') {
     return (
-      <aside aria-label={copy.heading} className="reveal my-8 rounded-xl border border-heritage-sand border-s-4 border-s-heritage-turquoise bg-heritage-ivory px-5 py-5 sm:px-6">
+      <aside aria-label={copy.heading} className="reveal my-10 rounded-xl border border-heritage-sand border-s-4 sm:my-12 border-s-heritage-turquoise bg-heritage-ivory px-5 py-5 sm:px-6">
         <p className="text-lg font-semibold leading-snug text-gray-950">{copy.heading}</p>
         <p className="mt-1.5 text-sm leading-6 text-gray-700">{copy.text}</p>
         <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-3">
@@ -135,7 +136,7 @@ function ArticleCta({ stage, copy }: { stage: CtaStage; copy: CtaCopy }) {
   }
 
   return (
-    <aside aria-label={copy.heading} className="reveal my-10 rounded-2xl bg-gray-950 px-6 py-7 text-white sm:px-8 sm:py-9">
+    <aside aria-label={copy.heading} className="reveal my-12 rounded-2xl bg-gray-950 px-6 py-7 text-white sm:my-14 sm:px-8 sm:py-9">
       <p className="text-overline text-heritage-turquoise-light">PakSoft · Kurumsal Web Tasarım</p>
       <p className="mt-2 text-xl font-semibold leading-snug sm:text-2xl">{copy.heading}</p>
       <p className="mt-2 max-w-xl leading-7 text-gray-300">{copy.text}</p>
@@ -153,7 +154,7 @@ function ArticleCta({ stage, copy }: { stage: CtaStage; copy: CtaCopy }) {
 
 function WorkflowFigure({ article }: { article: ArticleData }) {
   return (
-    <figure className="reveal my-8 overflow-hidden rounded-2xl border border-heritage-sand bg-white">
+    <figure className="reveal my-10 overflow-hidden sm:my-12 rounded-2xl border border-heritage-sand bg-white">
       <Image
         src={article.illustration}
         alt={article.illustrationAlt}
@@ -190,11 +191,6 @@ function formatTurkishDate(isoDate: string) {
   return new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${isoDate}T00:00:00Z`));
 }
 
-function TableOfContents({ toc }: { toc: ReturnType<typeof getTableOfContents> }) {
-  return <ol className="mt-3 space-y-2 text-sm leading-6">
-    {toc.map((item) => <li key={item.id} className={item.depth === 3 ? 'ps-3' : ''}><a href={`#${item.id}`} className="text-gray-700 underline-offset-4 hover:text-heritage-turquoise-deep hover:underline focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">{item.title}</a></li>)}
-  </ol>;
-}
 
 export function CorporateWebsiteArticlePage({ article }: { article: ArticleData }) {
   const articleUrl = `${SITE_URL}${blogListingPath}/${article.slug}`;
@@ -209,42 +205,43 @@ export function CorporateWebsiteArticlePage({ article }: { article: ArticleData 
   const markdownComponents: Components = {
     h2: ({ children }) => {
       const text = readHeadingText(children);
-      return <h2 id={headingId(text)} className="scroll-mt-28 pt-3 text-2xl font-semibold leading-tight tracking-tight text-gray-950 sm:text-3xl">{children}</h2>;
+      return <h2 id={headingId(text)} className="mt-14 scroll-mt-[calc(var(--navbar-h,88px)+5.5rem)] border-t border-heritage-sand pt-10 text-2xl font-semibold leading-tight tracking-tight text-gray-950 first:mt-0 first:border-t-0 first:pt-0 sm:mt-16 sm:pt-12 sm:text-3xl lg:scroll-mt-[calc(var(--navbar-h,88px)+2rem)]">{children}</h2>;
     },
     h3: ({ children }) => {
       const text = readHeadingText(children);
-      return <h3 id={headingId(text)} className="scroll-mt-28 pt-2 text-xl font-semibold leading-snug text-gray-900">{children}</h3>;
+      return <h3 id={headingId(text)} className="mt-10 scroll-mt-[calc(var(--navbar-h,88px)+5.5rem)] text-xl font-semibold leading-snug text-gray-900 lg:scroll-mt-[calc(var(--navbar-h,88px)+2rem)]">{children}</h3>;
     },
     p: ({ children }) => {
       const text = readHeadingText(children);
       if (text.includes('[[PAKSOFT_VISUAL:')) return <WorkflowFigure article={article} />;
       const cta = text.match(/\[\[PAKSOFT_CTA:(early|middle|closing)\]\]/);
       if (cta) return <ArticleCta stage={cta[1] as CtaStage} copy={ctas[cta[1] as CtaStage]} />;
-      return <p className="text-base leading-7 text-gray-700">{children}</p>;
+      return <p className="mt-5 text-base leading-7 text-gray-700 sm:text-[1.0625rem] sm:leading-8">{children}</p>;
     },
     a: ({ href = '', children }) => {
       const className = 'font-medium text-heritage-turquoise-deep underline decoration-heritage-turquoise/40 underline-offset-4 hover:decoration-heritage-turquoise focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise';
       return href.startsWith('/') ? <Link href={href} className={className}>{children}</Link> : <a href={href} className={className}>{children}</a>;
     },
-    table: ({ children }) => <div className="my-5 max-w-full overflow-x-auto rounded-lg border border-gray-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise" tabIndex={0} role="region" aria-label="Yatay kaydırılabilir tablo"><table className="w-full min-w-[36rem] border-collapse text-left text-sm">{children}</table></div>,
+    table: ({ children }) => <div className="my-8 max-w-full overflow-x-auto rounded-lg border border-gray-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise" tabIndex={0} role="region" aria-label="Yatay kaydırılabilir tablo"><table className="w-full min-w-[36rem] border-collapse text-left text-sm">{children}</table></div>,
     thead: ({ children }) => <thead className="bg-heritage-turquoise-light text-gray-900">{children}</thead>,
     th: ({ children }) => <th scope="col" className="border-b border-gray-200 px-4 py-3 font-semibold">{children}</th>,
     td: ({ children }) => <td className="border-b border-gray-100 px-4 py-3 align-top leading-6 text-gray-700">{children}</td>,
     // GFM task lists ("- [ ]") render as a readable checklist rather than
     // disabled form controls; nothing here is submitted or stored.
     ul: ({ className, children }) => className?.includes('contains-task-list')
-      ? <ul className="space-y-3 rounded-xl border border-heritage-sand bg-heritage-ivory p-5 text-base leading-7 text-gray-700 sm:p-6">{children}</ul>
-      : <ul className="list-disc space-y-2 ps-6 text-base leading-7 text-gray-700">{children}</ul>,
-    ol: ({ children }) => <ol className="list-decimal space-y-2 ps-6 text-base leading-7 text-gray-700">{children}</ol>,
+      ? <ul className="mt-6 space-y-3 rounded-xl border border-heritage-sand bg-heritage-ivory p-5 text-base leading-7 text-gray-700 sm:p-6">{children}</ul>
+      : <ul className="mt-5 list-disc space-y-2.5 ps-6 text-base leading-7 text-gray-700 sm:text-[1.0625rem] sm:leading-8">{children}</ul>,
+    ol: ({ children }) => <ol className="mt-5 list-decimal space-y-2.5 ps-6 text-base leading-7 text-gray-700 sm:text-[1.0625rem] sm:leading-8">{children}</ol>,
     li: ({ className, children }) => className?.includes('task-list-item')
       ? <li className="flex items-start gap-3">{children}</li>
       : <li className="ps-1">{children}</li>,
     input: () => <span aria-hidden="true" className="mt-1.5 h-4 w-4 shrink-0 rounded-sm border-2 border-heritage-turquoise bg-white" />,
-    blockquote: ({ children }) => <blockquote className="border-s-4 border-heritage-turquoise bg-heritage-turquoise-light/60 px-5 py-3 text-gray-800">{children}</blockquote>,
+    blockquote: ({ children }) => <blockquote className="mt-6 border-s-4 border-heritage-turquoise bg-heritage-turquoise-light/60 px-5 py-3 text-gray-800">{children}</blockquote>,
     hr: () => <hr className="border-heritage-sand" />,
   };
 
   return <main className="min-h-screen bg-white">
+    <ReadingProgress targetId="article-body" />
     <ArticleJsonLd
       headline={article.title}
       description={article.metaDescription}
@@ -290,20 +287,20 @@ export function CorporateWebsiteArticlePage({ article }: { article: ArticleData 
       </div>
     </section>
 
-    <section className="py-10 sm:py-14 lg:py-16">
-      <div className="container mx-auto grid max-w-6xl gap-8 px-4 lg:grid-cols-[16rem_minmax(0,1fr)] lg:gap-12">
-        <details className="rounded-xl border border-heritage-sand bg-heritage-ivory p-4 lg:hidden">
+    <section className="py-8 sm:py-14 lg:py-16">
+      <div className="container mx-auto grid max-w-6xl gap-8 px-4 lg:grid-cols-[16rem_minmax(0,1fr)] lg:gap-14">
+        <details className="sticky z-30 rounded-xl border border-heritage-sand bg-heritage-ivory/95 p-4 shadow-sm backdrop-blur lg:hidden" style={{ top: 'calc(var(--reading-top, var(--navbar-h, 88px)) + 0.75rem)' }}>
           <summary className="cursor-pointer font-semibold text-gray-900 focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Bu yazıda</summary>
-          <TableOfContents toc={toc} />
+          <div className="max-h-[55vh] overflow-y-auto"><ArticleToc items={toc} onNavigate="close-details" /></div>
         </details>
-        <nav aria-label="Bu yazıda" className="hidden self-start rounded-xl border border-heritage-sand bg-heritage-ivory p-5 lg:sticky lg:top-24 lg:block">
+        <nav aria-label="Bu yazıda" className="hidden max-h-[calc(100vh-var(--reading-top,var(--navbar-h,88px))-3rem)] self-start overflow-y-auto rounded-xl border border-heritage-sand bg-heritage-ivory p-5 lg:sticky lg:top-[calc(var(--reading-top,var(--navbar-h,88px))+1.5rem)] lg:block">
           <p className="font-semibold text-gray-900">Bu yazıda</p>
-          <TableOfContents toc={toc} />
+          <ArticleToc items={toc} />
         </nav>
-        <article className="min-w-0 max-w-3xl space-y-6">
+        <article id="article-body" className="min-w-0 max-w-3xl">
           <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>{article.body}</ReactMarkdown>
 
-          <section aria-labelledby="related-reading" className="border-t border-gray-200 pt-8">
+          <section aria-labelledby="related-reading" className="mt-16 border-t border-gray-200 pt-10">
             <h2 id="related-reading" className="text-xl font-semibold text-gray-950">İlgili rehber</h2>
             <Link href={`${blogListingPath}/${related.slug}`} className={`reveal corporate-info-card group mt-4 grid overflow-hidden rounded-xl border border-gray-200 bg-white sm:grid-cols-[14rem_1fr] ${focusRing}`}>
               <span className="relative block aspect-video bg-background-gray sm:aspect-auto">
@@ -318,7 +315,7 @@ export function CorporateWebsiteArticlePage({ article }: { article: ArticleData 
             </Link>
           </section>
 
-          <nav aria-label="Rehber gezinmesi" className="flex flex-wrap gap-x-6 gap-y-3 text-sm">
+          <nav aria-label="Rehber gezinmesi" className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm">
             <Link href={blogListingPath} className={`inline-flex items-center gap-2 font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline ${focusRing}`}><ArrowRightIcon className="h-4 w-4 rotate-180" aria-hidden="true" />Tüm kurumsal web tasarım rehberleri</Link>
             <Link href={mainServicePath} className={`inline-flex items-center gap-2 font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline ${focusRing}`}>Kurumsal web tasarım hizmetine genel bakış<ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>
           </nav>
