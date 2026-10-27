@@ -87,7 +87,7 @@ export default function InternalPageHero({
           </div>
 
           {scene && (
-            <div className="hero-enter-side hidden lg:block">
+            <div className="hero-enter-side mx-auto block w-full max-w-[24rem] lg:max-w-none">
               {scene}
             </div>
           )}

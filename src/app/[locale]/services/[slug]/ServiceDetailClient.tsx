@@ -29,6 +29,7 @@ import { formatPrice } from '@/lib/currency';
 import { COMPANY_STATS } from '@/config/companyStats';
 import CorporateWebsiteOverview from '@/components/services/CorporateWebsiteOverview';
 import EcommercePlatformStrip from '@/components/e-commerce/EcommercePlatformStrip';
+import EcommerceHeroPlatforms from '@/components/e-commerce/EcommerceHeroPlatforms';
 import RotatingHeading from '@/components/services/RotatingHeading';
 
 // ── Types ────────────────────────────────────────────────────────────
@@ -788,7 +789,13 @@ function HeroSection({
                   className={`absolute bottom-0 left-0 w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 ${colors.blob2} rounded-full mix-blend-multiply filter blur-3xl opacity-40`}
                 />
                 <div className="relative z-10">
-                  <HeroVisual type={animation.heroVisual} motionType={animation.motion} accentClass={colors.dot} />
+                  {service.slug === 'e-commerce' && locale === 'tr' ? (
+                    <EcommerceHeroPlatforms>
+                      <HeroVisual type={animation.heroVisual} motionType={animation.motion} accentClass={colors.dot} />
+                    </EcommerceHeroPlatforms>
+                  ) : (
+                    <HeroVisual type={animation.heroVisual} motionType={animation.motion} accentClass={colors.dot} />
+                  )}
                 </div>
               </div>
             ) : (

@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { prefersReducedMotion } from '@/components/services/corporate-visuals/AnimatedVisual';
 
@@ -38,10 +38,17 @@ export default function RotatingHeading({
       <span className="sr-only">{full}</span>
       <span aria-hidden="true" className="block" style={{ perspective: '800px' }}>
         <span className="hero-float-a inline-block">
-          {lead.split('').map((char, i) => (
-            <span key={i} className="hero-enter-char" style={{ animationDelay: `${i * 0.03}s` }}>
-              {char === ' ' ? ' ' : char}
-            </span>
+          {lead.split(/\s+/).map((word, wordIndex) => (
+            <Fragment key={`${word}-${wordIndex}`}>
+              {wordIndex > 0 ? ' ' : null}
+              <span className="inline-block whitespace-nowrap">
+                {word.split('').map((char, i) => (
+                  <span key={`${char}-${i}`} className="hero-enter-char" style={{ animationDelay: `${(wordIndex * 8 + i) * 0.03}s` }}>
+                    {char}
+                  </span>
+                ))}
+              </span>
+            </Fragment>
           ))}
         </span>
         <br />
@@ -49,14 +56,19 @@ export default function RotatingHeading({
           <AnimatePresence mode="wait" initial={false}>
             <motion.span
               key={index}
-              className="inline-block whitespace-nowrap font-normal"
+              className="block font-normal"
               style={{ color: 'var(--heritage-turquoise)' }}
               initial={{ opacity: 0, y: 20, filter: 'blur(8px)' }}
               animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
               exit={{ opacity: 0, y: -20, filter: 'blur(8px)', transition: { duration: 0.12 } }}
               transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
             >
-              {words[index]}
+              {words[index].split(/\s+/).map((word, wordIndex) => (
+                <Fragment key={`${word}-${wordIndex}`}>
+                  {wordIndex > 0 ? ' ' : null}
+                  <span className="inline-block whitespace-nowrap">{word}</span>
+                </Fragment>
+              ))}
             </motion.span>
           </AnimatePresence>
           <motion.span

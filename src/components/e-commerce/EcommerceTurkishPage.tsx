@@ -6,6 +6,7 @@ import InternalPageHero from '@/components/services/InternalPageHero';
 import AnimatedVisual from '@/components/services/corporate-visuals/AnimatedVisual';
 import ScopeMeters from '@/components/services/corporate-visuals/ScopeMeters';
 import ArchitectureToggle from '@/components/services/corporate-visuals/ArchitectureToggle';
+import EcommerceHeroPlatforms from '@/components/e-commerce/EcommerceHeroPlatforms';
 import { GirihHalo, HeritageParticles, H } from '@/components/services/hero-visuals/primitives';
 import {
   BlogFeedScene, FaqScene, FeaturesScene, PortfolioScene, PricingTiersScene, ProcessScene, TechStackScene,
@@ -78,16 +79,20 @@ const ecommerceRotatingHeadings: Record<Exclude<EcommercePageKey, 'overview'>, {
   faq: { lead: 'E-Ticaret Sitesi', words: ['Sık Sorulanlar', 'Merak Edilenler'] },
 };
 
+function EcommerceHeroScene({ children }: { children: ReactNode }) {
+  return <EcommerceHeroPlatforms compact>{children}</EcommerceHeroPlatforms>;
+}
+
 function Hero({ page }: { page: EcommercePageKey }) {
   const m = meta[page];
   const scenes: Record<Exclude<EcommercePageKey, 'overview'>, ReactNode> = {
-    features: <FeaturesScene accent="#0e7c7b" />,
-    technologies: <TechStackScene accent="#0e7c7b" />,
-    process: <ProcessScene accent="#0e7c7b" />,
-    portfolio: <PortfolioScene accent="#0e7c7b" />,
-    pricing: <PricingTiersScene accent="#0e7c7b" />,
-    blog: <BlogFeedScene accent="#0e7c7b" />,
-    faq: <FaqScene accent="#0e7c7b" />,
+    features: <EcommerceHeroScene><FeaturesScene accent="#0e7c7b" /></EcommerceHeroScene>,
+    technologies: <EcommerceHeroScene><TechStackScene accent="#0e7c7b" /></EcommerceHeroScene>,
+    process: <EcommerceHeroScene><ProcessScene accent="#0e7c7b" /></EcommerceHeroScene>,
+    portfolio: <EcommerceHeroScene><PortfolioScene accent="#0e7c7b" /></EcommerceHeroScene>,
+    pricing: <EcommerceHeroScene><PricingTiersScene accent="#0e7c7b" /></EcommerceHeroScene>,
+    blog: <EcommerceHeroScene><BlogFeedScene accent="#0e7c7b" /></EcommerceHeroScene>,
+    faq: <EcommerceHeroScene><FaqScene accent="#0e7c7b" /></EcommerceHeroScene>,
   };
   const anchors: Record<Exclude<EcommercePageKey, 'overview'>, [string, string]> = {
     features: ['#urun-katalog', 'Özellikleri İnceleyin'],

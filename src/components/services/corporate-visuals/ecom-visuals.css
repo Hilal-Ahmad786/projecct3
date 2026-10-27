@@ -245,8 +245,15 @@
   .group:hover .ecom-project-image img { object-position: bottom; }
 }
 
+/* hero platform badges (EcommerceHeroPlatforms): pop in after the scene, then drift */
+@keyframes ecomHeroBadgeIn { from { opacity: 0; transform: scale(0.6) translateY(8px); } 70% { opacity: 1; transform: scale(1.05); } to { opacity: 1; transform: none; } }
+@keyframes ecomHeroBadgeFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+.ecom-hero-badge { animation: ecomHeroBadgeIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.ecom-hero-badge-float { animation: ecomHeroBadgeFloat 3.6s ease-in-out infinite; }
+
 @media (prefers-reduced-motion: reduce) {
   .cv[class*="cv-ecom-"] [data-part], .cv[class*="cv-ecom-"] .cv-label { animation: none !important; transition: none !important; }
   .ecom-project-image img { transition: none; }
+  .ecom-hero-badge, .ecom-hero-badge-float { animation: none; }
 }
 
