@@ -1145,10 +1145,13 @@ export default function Navbar() {
                                   </div>
                                 )}
                                 <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-6">
+                                  {/* prefetch={false}: the mega menu renders ~270 service links at once;
+                                     prefetching them all on open is pure server load. */}
                                   {groups.map(group => (
                                     <div key={group.slug}>
                                       <Link
                                         href={getServicePath(group.slug)}
+                                        prefetch={false}
                                         onClick={handleLinkClick}
                                         className={`block font-semibold text-[13px] text-gray-900 mb-2 ${dir === 'rtl' ? 'border-r-2 border-l-0 pr-2' : 'border-l-2 pl-2'} border-heritage-turquoise hover:text-heritage-turquoise transition-colors leading-tight`}
                                       >
@@ -1160,6 +1163,7 @@ export default function Navbar() {
                                             <li key={childSlug}>
                                               <Link
                                                 href={getServicePath(childSlug)}
+                                                prefetch={false}
                                                 onClick={handleLinkClick}
                                                 className="text-[12px] text-gray-500 hover:text-heritage-turquoise transition-colors leading-snug block"
                                               >
@@ -1484,10 +1488,13 @@ export default function Navbar() {
                                   </div>
                                 )}
                                 <div className="columns-2 gap-x-4">
+                                {/* prefetch={false}: the mega menu renders ~270 service links at once;
+                                   prefetching them all on open is pure server load. */}
                                 {groups.map(group => (
                                   <div key={group.slug} className="break-inside-avoid mb-4">
                                     <Link
                                       href={getServicePath(group.slug)}
+                                      prefetch={false}
                                       onClick={handleLinkClick}
                                       className={`block font-semibold text-[13px] text-gray-900 mb-1.5 ${dir === 'rtl' ? 'border-r-2 border-l-0 pr-2' : 'border-l-2 pl-2'} border-heritage-turquoise hover:text-heritage-turquoise transition-colors leading-tight`}
                                     >
@@ -1499,6 +1506,7 @@ export default function Navbar() {
                                           <li key={childSlug}>
                                             <Link
                                               href={getServicePath(childSlug)}
+                                              prefetch={false}
                                               onClick={handleLinkClick}
                                               className="text-[12px] text-gray-500 hover:text-heritage-turquoise transition-colors leading-snug block py-0.5"
                                             >

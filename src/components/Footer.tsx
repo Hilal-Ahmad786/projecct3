@@ -377,6 +377,9 @@ export default function Footer() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-5">
+            {/* prefetch={false} on these ~60 service links: Next prefetches every
+               link that scrolls into view, so the footer alone fired dozens of
+               server renders per visit. Clicks still navigate normally. */}
             {SERVICE_COLS.map(({ colKey, heading, href, links }) => {
               const translatedHeading = (t(`servicesSection.cols.${colKey}`) as string) || heading;
               return (
@@ -387,6 +390,7 @@ export default function Footer() {
                 >
                   <LocalizedLink
                     href={href}
+                    prefetch={false}
                     className="block text-[11px] font-bold uppercase tracking-[0.14em] text-accent-emerald hover:text-emerald-400 mb-4 transition-colors leading-tight"
                   >
                     {translatedHeading}
@@ -400,6 +404,7 @@ export default function Footer() {
                         <li key={lhref}>
                           <LocalizedLink
                             href={lhref}
+                            prefetch={false}
                             className="text-[13px] text-gray-400 hover:text-white transition-colors leading-snug block"
                           >
                             {translatedLabel}
