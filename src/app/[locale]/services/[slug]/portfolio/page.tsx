@@ -6,6 +6,7 @@ import { localizeFullPath } from '@/lib/routes';
 import { serviceRobots } from '@/lib/service-quality';
 import PortfolioPageClient from './PortfolioPageClient';
 import CorporateWebsiteSubpage, { getCorporateWebsiteSubpageMeta } from '@/components/services/CorporateWebsiteSubpage';
+import EcommerceTurkishPage, { getEcommerceTurkishMeta, getEcommerceTurkishSocialMeta } from '@/components/e-commerce/EcommerceTurkishPage';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -32,7 +33,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const customMeta = slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('portfolio', validLocale)
-    : null;
+    : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('portfolio') : null;
   const { title, description } = customMeta || getServiceSubPageMeta('portfolio', validLocale, service.name);
   const isTurkishCorporatePortfolio = slug === 'corporate-website-design' && validLocale === 'tr';
   const canonicalUrl = `${baseUrl}/${validLocale}${localizedPath}`;
@@ -61,7 +62,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         description,
         images: [`${baseUrl}/images/portfolio/sun-container.png`],
       },
-    } : {}),
+    } : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishSocialMeta('portfolio', canonicalUrl) : {}),
   };
 }
 
@@ -79,6 +80,7 @@ export default async function ServicePortfolioPage({ params }: PageProps) {
   if (slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) {
     return <CorporateWebsiteSubpage page="portfolio" locale={locale} />;
   }
+  if (slug === 'e-commerce' && locale === 'tr') return <EcommerceTurkishPage page="portfolio" />;
 
   const content = service.content as any || {};
   let portfolio = content.portfolio || [];

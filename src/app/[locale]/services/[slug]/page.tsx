@@ -10,6 +10,7 @@ import type { ServiceDetailData } from './ServiceDetailClient';
 import RelatedServices, { type RelatedItem } from '@/components/services/RelatedServices';
 import { getTranslations } from '@/lib/server-i18n';
 import { getServicePageContent, type ServicePageContent } from '@/lib/service-content';
+import EcommerceTurkishPage, { getEcommerceTurkishMeta } from '@/components/e-commerce/EcommerceTurkishPage';
 
 // Enable ISR - revalidate every hour for better performance
 export const revalidate = 3600;
@@ -86,9 +87,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     en: { title: 'Corporate Website Design & Development | PakSoft', description: 'Plan, design and develop a corporate website with clear content, enquiry tools and an agreed launch scope.' },
     tr: { title: 'Kurumsal Web Tasarım ve Web Sitesi Yapımı | PakSoft', description: 'İşletmenize özel kurumsal web tasarım ve geliştirme. Mobil uyumlu, yönetim panelli ve çok dilli web sitesi seçeneklerini inceleyin, projeniz için teklif alın.' },
   };
+  const ecommerceMeta = slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('overview') : undefined;
   const revisedMeta = slug === 'corporate-website-design' ? corporateMeta[validLocale] : undefined;
-  const title = revisedMeta?.title || (service as { metaTitle?: string | null }).metaTitle || `${service.name} | PakSoft`;
-  const description = revisedMeta?.description ||
+  const title = ecommerceMeta?.title || revisedMeta?.title || (service as { metaTitle?: string | null }).metaTitle || `${service.name} | PakSoft`;
+  const description = ecommerceMeta?.description || revisedMeta?.description ||
     (service as { metaDescription?: string | null }).metaDescription ||
     truncateAtWord(service.fullDescription || service.shortDescription || service.description || '', 160);
   const path = `/services/${slug}`;
@@ -129,6 +131,18 @@ export default async function ServicePage({ params }: PageProps) {
 
   if (!service) {
     notFound();
+  }
+
+  if (slug === 'e-commerce' && locale === 'tr') {
+    return <>
+      <ServiceJsonLd name="E-Ticaret" description={getEcommerceTurkishMeta('overview').description} url={`${baseUrl}/tr/hizmetler/e-commerce`} />
+      <BreadcrumbJsonLd items={[
+        { name: 'Ana Sayfa', url: `${baseUrl}/tr` },
+        { name: 'Hizmetler', url: `${baseUrl}/tr/hizmetler` },
+        { name: 'E-Ticaret', url: `${baseUrl}/tr/hizmetler/e-commerce` },
+      ]} />
+      <EcommerceTurkishPage page="overview" />
+    </>;
   }
 
   // Extract structured content from JSON field

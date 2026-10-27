@@ -8,6 +8,7 @@ import ServiceDetailClient from '../ServiceDetailClient';
 import PricingPageClient from './PricingPageClient';
 import { getServiceData, baseUrl } from '../_shared';
 import CorporateWebsiteSubpage, { getCorporateWebsiteSubpageMeta } from '@/components/services/CorporateWebsiteSubpage';
+import EcommerceTurkishPage, { getEcommerceTurkishMeta, getEcommerceTurkishSocialMeta } from '@/components/e-commerce/EcommerceTurkishPage';
 
 export const revalidate = 3600;
 
@@ -25,14 +26,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const localizedPath = localizeFullPath(path, validLocale);
   const customMeta = slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('pricing', validLocale)
-    : null;
+    : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('pricing') : null;
   const { title, description } = customMeta || getServiceSubPageMeta('pricing', validLocale, data.service.name);
 
   return {
     title,
     description,
     robots: serviceRobots(data.service),
-    ...(customMeta && validLocale === 'tr' ? {
+    ...(slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishSocialMeta('pricing', `${baseUrl}/${validLocale}${localizedPath}`) : customMeta && validLocale === 'tr' ? {
       openGraph: {
         type: 'website' as const,
         locale: 'tr_TR',
@@ -64,6 +65,7 @@ export default async function ServicePricingPage({ params }: PageProps) {
   if (slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')) {
     return <CorporateWebsiteSubpage page="pricing" locale={validLocale} />;
   }
+  if (slug === 'e-commerce' && validLocale === 'tr') return <EcommerceTurkishPage page="pricing" />;
 
   const hasPackages = (data.service.pricingPackages?.length ?? 0) > 0;
 

@@ -6,6 +6,7 @@ import { localizeFullPath } from '@/lib/routes';
 import { serviceRobots } from '@/lib/service-quality';
 import FeaturesPageClient from './FeaturesPageClient';
 import CorporateWebsiteSubpage, { getCorporateWebsiteSubpageMeta } from '@/components/services/CorporateWebsiteSubpage';
+import EcommerceTurkishPage, { getEcommerceTurkishMeta, getEcommerceTurkishSocialMeta } from '@/components/e-commerce/EcommerceTurkishPage';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -32,15 +33,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const customMeta = slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('features', validLocale)
-    : null;
+    : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('features') : null;
   const { title, description } = customMeta || getServiceSubPageMeta('features', validLocale, service.name);
+  const canonicalUrl = `${baseUrl}/${validLocale}${localizedPath}`;
 
   return {
     title,
     description,
     robots: serviceRobots(service),
+    ...(slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishSocialMeta('features', canonicalUrl) : {}),
     alternates: {
-      canonical: `${baseUrl}/${validLocale}${localizedPath}`,
+      canonical: canonicalUrl,
       languages: generateAlternateLinks(path),
     },
   };
@@ -60,6 +63,7 @@ export default async function ServiceFeaturesPage({ params }: PageProps) {
   if (slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) {
     return <CorporateWebsiteSubpage page="features" locale={locale} />;
   }
+  if (slug === 'e-commerce' && locale === 'tr') return <EcommerceTurkishPage page="features" />;
 
   const features = service.features || [];
   const animation = (service.content as any)?.animation;
