@@ -246,11 +246,12 @@ export default async function ServicePage({ params }: PageProps) {
         image: '',
       })) || [];
 
+  const isTurkishEcommerce = slug === 'e-commerce' && locale === 'tr';
   const breadcrumbItems = [
     { name: translations.navbar?.home || 'Home', url: `${baseUrl}/${locale}` },
-    { name: translations.services?.detail?.breadcrumb?.services || 'Services', url: `${baseUrl}/${locale}/services` },
+    { name: translations.services?.detail?.breadcrumb?.services || 'Services', url: isTurkishEcommerce ? `${baseUrl}/tr/hizmetler` : `${baseUrl}/${locale}/services` },
     ...(parentService ? [{ name: parentService.name, url: `${baseUrl}/${locale}/services/${parentService.slug}` }] : []),
-    { name: slug === 'e-commerce' && locale === 'tr' ? 'E-Ticaret' : serviceName, url: `${baseUrl}/${locale}/services/${slug}` },
+    { name: isTurkishEcommerce ? 'E-Ticaret' : serviceName, url: isTurkishEcommerce ? `${baseUrl}/tr/hizmetler/e-commerce` : `${baseUrl}/${locale}/services/${slug}` },
   ];
 
   // Build serializable data for the client component
@@ -289,7 +290,7 @@ export default async function ServicePage({ params }: PageProps) {
       <ServiceJsonLd
         name={serviceName}
         description={serviceDescription}
-        url={`${baseUrl}/${locale}/services/${slug}`}
+        url={isTurkishEcommerce ? `${baseUrl}/tr/hizmetler/e-commerce` : `${baseUrl}/${locale}/services/${slug}`}
       />
       <BreadcrumbJsonLd items={breadcrumbItems} />
       {faq.length > 0 && <FAQJsonLd faqs={faq} />}

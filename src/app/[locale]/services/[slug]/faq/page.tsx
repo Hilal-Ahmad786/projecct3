@@ -7,7 +7,7 @@ import { serviceRobots } from '@/lib/service-quality';
 import { FAQJsonLd, BreadcrumbJsonLd } from '@/components/seo/JsonLd';
 import FAQPageClient from './FAQPageClient';
 import CorporateWebsiteSubpage, { getCorporateWebsiteSubpageMeta } from '@/components/services/CorporateWebsiteSubpage';
-import EcommerceTurkishPage, { getEcommerceTurkishMeta, getEcommerceTurkishSocialMeta } from '@/components/e-commerce/EcommerceTurkishPage';
+import EcommerceTurkishPage, { getEcommerceTurkishMeta, getEcommerceTurkishSocialMeta, getEcommerceTurkishFaqItems } from '@/components/e-commerce/EcommerceTurkishPage';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -82,7 +82,7 @@ export default async function ServiceFAQPage({ params }: PageProps) {
   if (slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) {
     return <CorporateWebsiteSubpage page="faq" locale={locale} />;
   }
-  if (slug === 'e-commerce' && locale === 'tr') return <EcommerceTurkishPage page="faq" />;
+  if (slug === 'e-commerce' && locale === 'tr') return <><FAQJsonLd faqs={getEcommerceTurkishFaqItems()} /><EcommerceTurkishPage page="faq" /></>;
 
   const content = service.content as any || {};
   const faq = content.faq || [];
