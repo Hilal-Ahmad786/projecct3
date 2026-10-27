@@ -9,6 +9,7 @@ import FloatingButtons from '@/components/FloatingButtons'
 import { GlobalJsonLd } from '@/components/seo/JsonLd'
 import PageTransition from '@/components/PageTransition'
 import HeatmapTracker from '@/components/HeatmapTracker'
+import { isDbTrackingEnabled } from '@/lib/tracking-flags'
 import MotionProvider from '@/components/MotionProvider'
 import CookieConsent from '@/components/CookieConsent'
 import HtmlLangSync from '@/components/HtmlLangSync'
@@ -40,7 +41,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
           </main>
           <Footer />
           <FloatingButtons />
-          <HeatmapTracker />
+          {isDbTrackingEnabled() && <HeatmapTracker />}
           <CookieConsent />
         </MotionProvider>
       </TranslationsProvider>

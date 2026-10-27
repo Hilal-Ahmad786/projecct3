@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { isDbTrackingEnabled } from '@/lib/tracking-flags';
 
 export const dynamic = 'force-dynamic';
 
@@ -8,6 +9,10 @@ export const dynamic = 'force-dynamic';
 const MAX_POINTS = 50;
 
 export async function POST(request: NextRequest) {
+  // Disabled by default (see lib/tracking-flags). Also covers tabs still
+  // running an older bundle that keeps sending beacons.
+  if (!isDbTrackingEnabled()) return new NextResponse(null, { status: 204 });
+
   try {
     const body = await request.json().catch(() => null);
     const page = typeof body?.page === 'string' ? body.page.slice(0, 300) : null;
