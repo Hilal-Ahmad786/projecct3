@@ -10,7 +10,7 @@ import type { ServiceDetailData } from './ServiceDetailClient';
 import RelatedServices, { type RelatedItem } from '@/components/services/RelatedServices';
 import { getTranslations } from '@/lib/server-i18n';
 import { getServicePageContent, type ServicePageContent } from '@/lib/service-content';
-import EcommerceTurkishPage, { getEcommerceTurkishMeta } from '@/components/e-commerce/EcommerceTurkishPage';
+import { EcommerceTurkishOverviewBody, getEcommerceTurkishMeta } from '@/components/e-commerce/EcommerceTurkishPage';
 
 // Enable ISR - revalidate every hour for better performance
 export const revalidate = 3600;
@@ -133,18 +133,6 @@ export default async function ServicePage({ params }: PageProps) {
     notFound();
   }
 
-  if (slug === 'e-commerce' && locale === 'tr') {
-    return <>
-      <ServiceJsonLd name="E-Ticaret" description={getEcommerceTurkishMeta('overview').description} url={`${baseUrl}/tr/hizmetler/e-commerce`} />
-      <BreadcrumbJsonLd items={[
-        { name: 'Ana Sayfa', url: `${baseUrl}/tr` },
-        { name: 'Hizmetler', url: `${baseUrl}/tr/hizmetler` },
-        { name: 'E-Ticaret', url: `${baseUrl}/tr/hizmetler/e-commerce` },
-      ]} />
-      <EcommerceTurkishPage page="overview" />
-    </>;
-  }
-
   // Extract structured content from JSON field
   const content = (service.content || {}) as {
     process?: { step: number; title: string; description: string }[];
@@ -213,11 +201,14 @@ export default async function ServicePage({ params }: PageProps) {
           description: 'We plan, design and develop corporate websites that present your business clearly, support customer enquiries and help your team manage content.',
         }
     : undefined;
-  const serviceName = corporateOverviewCopy?.name || service.name || jsonContent?.hero?.title || slug;
-  const serviceDescription = corporateOverviewCopy?.description || service.fullDescription || service.shortDescription || service.description || jsonContent?.hero?.description || '';
+  const ecommerceOverviewCopy = slug === 'e-commerce' && locale === 'tr'
+    ? { name: 'İşletmenize Uygun E-Ticaret Sitesi Tasarımı ve Kurulumu', description: getEcommerceTurkishMeta('overview').intro }
+    : undefined;
+  const serviceName = ecommerceOverviewCopy?.name || corporateOverviewCopy?.name || service.name || jsonContent?.hero?.title || slug;
+  const serviceDescription = ecommerceOverviewCopy?.description || corporateOverviewCopy?.description || service.fullDescription || service.shortDescription || service.description || jsonContent?.hero?.description || '';
+  const serviceShortDescription = ecommerceOverviewCopy?.description || service.shortDescription || jsonContent?.hero?.description || serviceDescription;
   // Concise variant for the hero (keeps it compact). Falls back to the full
   // description for services that don't have a dedicated shortDescription yet.
-  const serviceShortDescription = service.shortDescription || jsonContent?.hero?.description || serviceDescription;
 
   // Features: database first, then JSON fallback
   const features = (service.features && service.features.length > 0)
@@ -259,7 +250,7 @@ export default async function ServicePage({ params }: PageProps) {
     { name: translations.navbar?.home || 'Home', url: `${baseUrl}/${locale}` },
     { name: translations.services?.detail?.breadcrumb?.services || 'Services', url: `${baseUrl}/${locale}/services` },
     ...(parentService ? [{ name: parentService.name, url: `${baseUrl}/${locale}/services/${parentService.slug}` }] : []),
-    { name: serviceName, url: `${baseUrl}/${locale}/services/${slug}` },
+    { name: slug === 'e-commerce' && locale === 'tr' ? 'E-Ticaret' : serviceName, url: `${baseUrl}/${locale}/services/${slug}` },
   ];
 
   // Build serializable data for the client component
@@ -305,9 +296,10 @@ export default async function ServicePage({ params }: PageProps) {
 
       {/* Rich animated client component */}
       <ServiceDetailClient service={serviceData} />
+      {slug === 'e-commerce' && locale === 'tr' && <EcommerceTurkishOverviewBody />}
 
       {/* Internal linking — same-category services (server-rendered <a> links) */}
-      {!(slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) &&
+      {!(slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) && !(slug === 'e-commerce' && locale === 'tr') &&
         <RelatedServices items={relatedServices} locale={locale} />}
     </main>
   );

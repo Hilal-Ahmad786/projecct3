@@ -225,6 +225,18 @@ export default function ServiceDetailClient({
 
   // Keep the richer overview isolated to this service and its fully revised
   // Turkish and English versions. Other locales retain their existing page.
+  if (service.slug === 'e-commerce' && locale === 'tr') {
+    const heroService = {
+      ...service,
+      name: 'İşletmenize Uygun E-Ticaret Sitesi Tasarımı ve Kurulumu',
+      description: 'Ürünlerinizi anlaşılır biçimde sunan, müşterilerinizin alışverişini kolaylaştıran ve ekibinizin günlük işleyişine uyum sağlayan bir e-ticaret sitesi planlayın. PakSoft ile tasarım, altyapı, ürün yönetimi ve entegrasyon ihtiyaçlarınızı aynı proje kapsamında ele alın.',
+      fullDescription: 'Ürünlerinizi anlaşılır biçimde sunan, müşterilerinizin alışverişini kolaylaştıran ve ekibinizin günlük işleyişine uyum sağlayan bir e-ticaret sitesi planlayın. PakSoft ile tasarım, altyapı, ürün yönetimi ve entegrasyon ihtiyaçlarınızı aynı proje kapsamında ele alın.',
+      shortDescription: 'Ürünlerinizi anlaşılır biçimde sunan, müşterilerinizin alışverişini kolaylaştıran ve ekibinizin günlük işleyişine uyum sağlayan bir e-ticaret sitesi planlayın. PakSoft ile tasarım, altyapı, ürün yönetimi ve entegrasyon ihtiyaçlarınızı aynı proje kapsamında ele alın.',
+    };
+    const ecommerceAnimation = animation || { heroVisual: 'product-grid' as const, motion: 'float' as const, bgPattern: 'grid' as const, decorations: 'circles' as const, featureStyle: 'icon-left' as const, processLayout: 'timeline' as const };
+    return <div id="overview"><HeroSection service={heroService} colors={colors} accent={accent} process={process} animation={ecommerceAnimation} /></div>;
+  }
+
   if (service.slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) {
     const corporateHero = locale === 'tr'
       ? {
@@ -690,7 +702,7 @@ function HeroSection({
             {/* Title */}
             <div className="space-y-2">
               <h1 className="text-display font-light text-gray-900 leading-none">
-                {service.slug === 'corporate-website-design' && locale === 'tr'
+                {((service.slug === 'corporate-website-design' || service.slug === 'e-commerce') && locale === 'tr')
                   ? <><span className="font-semibold">{service.name}</span></>
                   : <>{service.name.split(' ').slice(0, -1).join(' ')}{service.name.split(' ').length > 1 && <br />}<span className={`font-semibold ${colors.titleAccent}`}>{service.name.split(' ').length > 1 ? service.name.split(' ').slice(-1)[0] : service.name}</span></>}
               </h1>
@@ -714,7 +726,7 @@ function HeroSection({
             <div className="space-y-3 pt-1">
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button
-                  href={service.slug === 'corporate-website-design' ? '/start-project?service=corporate-website-design' : '/contact'}
+                  href={service.slug === 'corporate-website-design' ? '/start-project?service=corporate-website-design' : service.slug === 'e-commerce' && locale === 'tr' ? '/start-project?service=e-commerce' : '/contact'}
                   variant="primary"
                   size="lg"
                   rightIcon={
@@ -723,11 +735,13 @@ function HeroSection({
                     </svg>
                   }
                 >
-                  {service.slug === 'corporate-website-design'
+                  {service.slug === 'e-commerce' && locale === 'tr' ? 'Projenizi Anlatın' : service.slug === 'corporate-website-design'
                     ? (locale === 'tr' ? 'Projenizi Konuşalım' : 'Discuss Your Project')
                     : t('services.detail.hero.startProject')}
                 </Button>
-                {service.slug === 'corporate-website-design' ? (
+                {service.slug === 'e-commerce' && locale === 'tr' ? (
+                  <a href="#e-ticaret-hizmetleri" className="inline-flex items-center justify-center gap-2 rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 transition-colors motion-reduce:transition-none hover:border-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2">E-Ticaret Hizmetlerini İnceleyin</a>
+                ) : service.slug === 'corporate-website-design' ? (
                   <a
                     href="#selected-projects"
                     className="inline-flex items-center justify-center gap-2 rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 transition-colors motion-reduce:transition-none hover:border-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2"
@@ -737,7 +751,7 @@ function HeroSection({
                 ) : <WhatsAppButton source="service_hero" variant="outline" size="lg" />}
               </div>
               {/* Response-time microcopy */}
-              {service.slug !== 'ikas-development' && service.slug !== 'corporate-website-design' && (
+              {service.slug !== 'ikas-development' && service.slug !== 'corporate-website-design' && !(service.slug === 'e-commerce' && locale === 'tr') && (
                 <p className="flex items-center gap-1.5 text-sm text-gray-400">
                   <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />

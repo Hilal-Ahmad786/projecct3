@@ -3,6 +3,9 @@ import Image from 'next/image';
 import type { ReactNode } from 'react';
 import { ArrowRightIcon, ArrowUpRightIcon, ShoppingBagIcon, Squares2X2Icon, CreditCardIcon, CodeBracketIcon, BuildingStorefrontIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
 import InternalPageHero from '@/components/services/InternalPageHero';
+import {
+  BlogFeedScene, FaqScene, FeaturesScene, PortfolioScene, PricingTiersScene, ProcessScene, TechStackScene,
+} from '@/components/services/hero-visuals/scenes-internal';
 
 export type EcommercePageKey = 'overview' | 'features' | 'technologies' | 'process' | 'portfolio' | 'pricing' | 'blog' | 'faq';
 
@@ -35,25 +38,50 @@ export function getEcommerceTurkishSocialMeta(page: EcommercePageKey, url: strin
   };
 }
 
-function A({ href, children, className = '' }: { href: string; children: ReactNode; className?: string }) {
-  return <Link href={href} className={`focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2 ${className}`}>{children}</Link>;
+function A({ href, children, className = '', ...props }: React.ComponentProps<typeof Link>) {
+  return <Link href={href} className={`focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2 ${className || ''}`} {...props}>{children}</Link>;
 }
 function CTA({ href = '/tr/start-project?service=e-commerce', children, secondary = false }: { href?: string; children: ReactNode; secondary?: boolean }) {
   return <A href={href} className={`inline-flex min-h-11 items-center justify-center gap-2 rounded-sm px-5 py-3 text-sm font-semibold transition-colors motion-reduce:transition-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2 ${secondary ? 'border border-heritage-sand bg-white text-gray-800 hover:border-heritage-turquoise' : 'bg-heritage-turquoise text-white hover:bg-heritage-turquoise-deep'}`}>{children}<ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></A>;
 }
 function Section({ title, children, tone = 'white', id }: { title?: string; children: ReactNode; tone?: 'white' | 'gray' | 'ivory'; id?: string }) {
   const bg = tone === 'gray' ? 'bg-background-gray' : tone === 'ivory' ? 'bg-heritage-ivory' : 'bg-white';
-  return <section id={id} className={`${bg} py-12 sm:py-14 lg:py-16`}><div className="mx-auto max-w-[1200px] px-4 sm:px-6">{title && <h2 className="max-w-4xl text-headline font-medium leading-tight text-gray-900">{title}</h2>}{children}</div></section>;
+  return <section id={id} className={`${bg}`}><div className="mx-auto max-w-[1200px] px-4 sm:px-6 cw-section">{title && <h2 className="reveal max-w-4xl text-headline font-medium leading-tight text-gray-900">{title}</h2>}{children}</div></section>;
 }
-function Table({ headers, rows }: { headers: string[]; rows: string[][] }) {
-  return <div className="mt-6 overflow-x-auto rounded-xl border border-heritage-sand bg-white"><table className="w-full min-w-[650px] border-collapse text-left text-sm"><thead className="bg-heritage-ivory"><tr>{headers.map(h => <th key={h} scope="col" className="border-b border-heritage-sand px-4 py-3 font-semibold text-gray-900">{h}</th>)}</tr></thead><tbody>{rows.map((row, i) => <tr key={i} className="even:bg-gray-50/70">{row.map((cell, j) => <td key={j} className="border-b border-gray-100 px-4 py-3 align-top leading-6 text-gray-700">{cell}</td>)}</tr>)}</tbody></table></div>;
+function Table({ headers, rows, label = 'E-ticaret kapsam karşılaştırma tablosu' }: { headers: string[]; rows: string[][]; label?: string }) {
+  return <div tabIndex={0} role="region" aria-label={label} className="mt-6 overflow-x-auto rounded-xl border border-heritage-sand bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise"><table className="w-full min-w-[650px] border-collapse text-left text-sm"><thead className="bg-heritage-ivory"><tr>{headers.map(h => <th key={h} scope="col" className="border-b border-heritage-sand px-4 py-3 font-semibold text-gray-900">{h}</th>)}</tr></thead><tbody>{rows.map((row, i) => <tr key={i} className="even:bg-gray-50/70">{row.map((cell, j) => <td key={j} className="border-b border-gray-100 px-4 py-3 align-top leading-6 text-gray-700">{cell}</td>)}</tr>)}</tbody></table></div>;
 }
 function Intro({ children }: { children: ReactNode }) { return <p className="mt-4 max-w-3xl text-body leading-relaxed text-gray-600">{children}</p>; }
-function PageNav({ current }: { current: EcommercePageKey }) { return <nav aria-label="E-ticaret hizmet sayfaları" className="border-y border-heritage-sand bg-white"><div className="mx-auto flex max-w-[1200px] flex-wrap gap-2 px-4 py-3 sm:px-6"><A href={base} aria-current={current === 'overview' ? 'page' : undefined} className={`rounded-full border px-3.5 py-2 text-sm font-medium ${current === 'overview' ? 'border-heritage-turquoise bg-heritage-turquoise-light text-heritage-turquoise-deep' : 'border-heritage-sand text-gray-700 hover:border-heritage-turquoise hover:text-heritage-turquoise-deep'}`}>Genel Bakış</A>{(Object.keys(labels) as EcommercePageKey[]).filter(k => k !== 'overview').map(k => <A key={k} href={paths[k]} aria-current={current === k ? 'page' : undefined} className={`rounded-full border px-3.5 py-2 text-sm font-medium ${current === k ? 'border-heritage-turquoise bg-heritage-turquoise-light text-heritage-turquoise-deep' : 'border-heritage-sand text-gray-700 hover:border-heritage-turquoise hover:text-heritage-turquoise-deep'}`}>{labels[k]}</A>)}</div></nav>; }
 function Hero({ page }: { page: EcommercePageKey }) {
   const m = meta[page];
-  const scene = <div aria-label="Örnek e-ticaret mağazası arayüzü" className="mx-auto w-full max-w-md rounded-2xl border border-heritage-sand bg-white p-4 shadow-[0_18px_50px_rgba(14,124,123,.09)]"><div className="flex items-center justify-between border-b border-gray-100 pb-3"><span className="text-sm font-semibold text-gray-900">Mağaza önizlemesi</span><span className="rounded-full bg-heritage-turquoise-light px-2.5 py-1 text-xs text-heritage-turquoise-deep">Örnek gösterim</span></div><div className="grid grid-cols-3 gap-3 pt-4"><div className="col-span-2 rounded-lg bg-heritage-ivory p-4"><div className="h-2 w-2/3 rounded bg-heritage-sand"/><div className="mt-2 h-2 w-1/2 rounded bg-heritage-sand"/><div className="mt-5 h-20 rounded-md border border-heritage-sand bg-white"/><div className="mt-3 h-7 w-24 rounded-sm bg-heritage-turquoise"/></div><div className="space-y-3">{[1,2].map(x=><div key={x} className="rounded-lg border border-gray-100 p-2"><div className="h-12 rounded bg-gray-100"/><div className="mt-2 h-1.5 w-3/4 rounded bg-gray-200"/><div className="mt-1.5 h-1.5 w-1/2 rounded bg-gray-100"/></div>)}</div></div><div className="mt-4 flex items-center gap-2 text-xs text-gray-500"><ShoppingBagIcon className="h-4 w-4 text-heritage-turquoise-deep"/>Ürün, kategori ve alışveriş adımları</div></div>;
-  return <><InternalPageHero serviceName="E-Ticaret" accentWord={page === 'overview' ? 'Çözümleri' : labels[page]} heading={m.heading} subtitle={m.intro} crumbs={[{ label: 'Ana Sayfa', href: '/' }, { label: 'Hizmetler', href: '/services' }, { label: 'E-Ticaret', href: '/services/e-commerce' }, ...(page === 'overview' ? [] : [{ label: labels[page] }])]} actions={<><CTA>{page === 'overview' ? 'Projenizi Anlatın' : page === 'features' ? 'Hangi Özelliklere İhtiyacınız Var?' : 'Projenizi Konuşalım'}</CTA>{page === 'overview' ? <CTA href="#e-ticaret-hizmetleri" secondary>E-Ticaret Hizmetlerini İnceleyin</CTA> : <CTA href="#icerik" secondary>İçeriği İnceleyin</CTA>}</>} scene={scene}/><PageNav current={page}/></>;
+  const scenes: Record<Exclude<EcommercePageKey, 'overview'>, ReactNode> = {
+    features: <FeaturesScene accent="#0e7c7b" />,
+    technologies: <TechStackScene accent="#0e7c7b" />,
+    process: <ProcessScene accent="#0e7c7b" />,
+    portfolio: <PortfolioScene accent="#0e7c7b" />,
+    pricing: <PricingTiersScene accent="#0e7c7b" />,
+    blog: <BlogFeedScene accent="#0e7c7b" />,
+    faq: <FaqScene accent="#0e7c7b" />,
+  };
+  const anchors: Record<Exclude<EcommercePageKey, 'overview'>, [string, string]> = {
+    features: ['#urun-katalog', 'Özellikleri İnceleyin'],
+    technologies: ['#altyapi-secimi', 'Seçenekleri Karşılaştırın'],
+    process: ['#asamalar', 'Aşamaları İnceleyin'],
+    portfolio: ['#projeler', 'Projeleri İnceleyin'],
+    pricing: ['#maliyet-unsurlari', 'Maliyet Unsurlarını İnceleyin'],
+    blog: ['#rehberler', 'Rehberleri İnceleyin'],
+    faq: ['#sorular', 'Soruları İnceleyin'],
+  };
+  const [target, label] = anchors[page as Exclude<EcommercePageKey, 'overview'>];
+  return <InternalPageHero
+    serviceName="E-Ticaret"
+    accentWord={labels[page]}
+    heading={m.heading}
+    subtitle={m.intro}
+    crumbs={[{ label: 'Ana Sayfa', href: '/' }, { label: 'Hizmetler', href: '/services' }, { label: 'E-Ticaret', href: '/services/e-commerce' }, { label: labels[page] }]}
+    actions={<><CTA>{page === 'features' ? 'Hangi Özelliklere İhtiyacınız Var?' : 'Projenizi Konuşalım'}</CTA><CTA href={target} secondary>{label}</CTA></>}
+    scene={scenes[page as Exclude<EcommercePageKey, 'overview'>]}
+  />;
 }
 
 type ServiceCard = { title: string; text: string; slug: string; logo?: string; icon: ReactNode; link: string };
@@ -80,7 +108,7 @@ function ServiceGroup({ title, items, columns }: { title: string; items: Service
   </div></div>;
 }
 
-function Overview() {
+export function EcommerceTurkishOverviewBody() {
   const quick = [
     ['İlk E-Ticaret Sitenizi Kurun','Ürün yapısını, tasarım ihtiyaçlarını ve temel operasyonları belirleyerek mağazanızın ilk sürümünü planlayın.',paths.process,'Kurulum Sürecini Görün'],
     ['Mevcut Mağazanızı Geliştirin','Ürün bulma, mobil kullanım, içerik yönetimi veya entegrasyon sorunlarını önceliklendirerek yenileme kapsamını netleştirin.','/tr/start-project?service=e-commerce','İhtiyaçlarınızı Paylaşın'],
@@ -93,7 +121,6 @@ function Overview() {
     ['Özellikler','Mağaza yönetimi, arayüz ve entegrasyon kapsamı.',paths.features],['Teknolojiler','Altyapı seçiminde değerlendirdiğimiz ihtiyaçlar.',paths.technologies],['Süreç','Aşamalar, girdiler ve sorumluluklar.',paths.process],['Portföy','Mevcut gerçek proje ve çalışma örnekleri.',paths.portfolio],['Fiyatlandırma','Kurulum ve işletme maliyetini etkileyen unsurlar.',paths.pricing],['Blog','Planlama ve mağaza geliştirme rehberleri.',paths.blog],['SSS','Teklif öncesi sık sorulan sorular.',paths.faq],
   ];
   return <>
-    <Hero page="overview"/>
     <Section title="İhtiyacınıza Göre Başlayın" tone="gray"><Intro>Yeni bir mağaza açmak, mevcut sitenizi yenilemek ve farklı sistemleri birbirine bağlamak aynı kapsamı gerektirmez. Önce hangi ihtiyacı çözmek istediğinizi belirleyelim.</Intro><div className="mt-6 grid gap-4 md:grid-cols-3">{quick.map(([title,text,href,cta])=><article key={title} className="flex h-full flex-col rounded-xl border border-heritage-sand bg-white p-5"><h3 className="text-title font-medium text-gray-900">{title}</h3><p className="mt-2 flex-1 text-sm leading-6 text-gray-600">{text}</p><A href={href} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">{cta}<ArrowRightIcon className="h-4 w-4"/></A></article>)}</div></Section>
     <Section id="e-ticaret-hizmetleri" title="E-Ticaret Hizmetlerimiz: Altyapıdan Tasarıma, Entegrasyondan Özel Geliştirmeye"><Intro>Mağaza kurulumundan tema geliştirmeye, özel yazılımdan ödeme bağlantılarına kadar ihtiyacınıza uygun hizmeti inceleyin. Altyapınız belli ise ilgili platformdan, özel bir işleyişiniz varsa geliştirme ve entegrasyon seçeneklerinden başlayın.</Intro><ServiceGroup title="Platforma Özel Geliştirme" items={platformCards} columns="lg:grid-cols-4"/><ServiceGroup title="Tasarım, Özel Çözümler ve Entegrasyonlar" items={solutionCards} columns="lg:grid-cols-3"/><div className="mt-7 flex flex-col justify-between gap-3 rounded-xl bg-heritage-ivory p-5 sm:flex-row sm:items-center"><div><h3 className="font-semibold text-gray-900">Hangi Hizmetin Uygun Olduğundan Emin Değil misiniz?</h3><p className="mt-1 text-sm leading-6 text-gray-600">Mevcut mağazanızı veya ihtiyaçlarınızı paylaşın; başlangıç kapsamını birlikte belirleyelim.</p></div><CTA>Projenizi Anlatın</CTA></div></Section>
     <Section title="Altyapıyı Hangi İhtiyaçlara Göre Seçmelisiniz?" tone="ivory"><Intro>Her işletme için tek bir doğru altyapı yoktur. Seçenekleri ihtiyaçlarınız ve sürdürebileceğiniz operasyon üzerinden değerlendirin.</Intro><Table headers={['Değerlendirme alanı','Sorulacak soru','Projeye etkisi']} rows={[
@@ -120,7 +147,7 @@ function Overview() {
 
 const pageBodies: Record<Exclude<EcommercePageKey,'overview'|'blog'>, ReactNode> = {
   features: <>
-    <Section title="Ürün ve Katalog Yönetimi"><Intro>Ürün adları, açıklamalar, görseller, varyantlar ve kategori ilişkileri düzenli bir katalog yapısında ele alınmalıdır. Veri girişini kimin yapacağı, hangi alanların zorunlu olduğu ve mevcut verilerin aktarılıp aktarılamayacağı kurulumdan önce belirlenir.</Intro><h3 className="mt-5 text-base font-semibold text-gray-900">Varyant ve stok ilişkileri</h3><p className="mt-2 max-w-3xl text-sm leading-6 text-gray-600">Ölçü veya renk gibi seçeneklerin ayrı stokla mı yönetileceği, ürün kodlarının nasıl eşleştirileceği ve hangi sistemin stok kaynağı olacağı açıklığa kavuşturulur. Desteklenen işleyiş seçilen altyapı ve bağlantılara bağlıdır.</p></Section>
+    <Section id="urun-katalog" title="Ürün ve Katalog Yönetimi"><Intro>Ürün adları, açıklamalar, görseller, varyantlar ve kategori ilişkileri düzenli bir katalog yapısında ele alınmalıdır. Veri girişini kimin yapacağı, hangi alanların zorunlu olduğu ve mevcut verilerin aktarılıp aktarılamayacağı kurulumdan önce belirlenir.</Intro><h3 className="mt-5 text-base font-semibold text-gray-900">Varyant ve stok ilişkileri</h3><p className="mt-2 max-w-3xl text-sm leading-6 text-gray-600">Ölçü veya renk gibi seçeneklerin ayrı stokla mı yönetileceği, ürün kodlarının nasıl eşleştirileceği ve hangi sistemin stok kaynağı olacağı açıklığa kavuşturulur. Desteklenen işleyiş seçilen altyapı ve bağlantılara bağlıdır.</p></Section>
     <Section title="Kategori, Arama ve Filtreleme" tone="gray"><Intro>Kategori yapısı ürünleri müşterinin arama biçimine göre sunmalıdır. Filtreler, karşılaştırmayı kolaylaştıran gerçek ürün verilerine dayanır. Ürün özellikleri eksikse önce katalog bilgisini düzenlemek, kapsamı gereksiz filtrelerle büyütmekten daha yararlı olabilir.</Intro></Section>
     <Section title="Ürün Detayı ve Mobil Alışveriş Deneyimi"><Intro>Ürün bilgisi, seçenekler, fiyat ve satın alma eylemi anlaşılır bir düzende yer almalıdır. Fotoğraflar, açıklamalar ve teslimat bilgileri mobil ekranlarda da erişilebilir olmalı; ürün kartı, detay, sepet ve ödeme adımları birlikte kontrol edilmelidir.</Intro></Section>
     <Section title="Ödeme, Kargo ve Sipariş Akışları" tone="gray"><Intro>Ödeme yöntemleri ve kargo seçenekleri ilgili sağlayıcıların ve platformun desteklediği yapı üzerinden planlanır. Başarılı ve başarısız ödeme, sipariş bildirimi ve teslimat bilgilerinin aktarımı gibi senaryolar kapsam dahilinde test edilir. Sağlayıcı onayı ve hesap sözleşmeleri ayrıca yönetilir.</Intro><A href="/tr/hizmetler/payment-gateway-integration" className="mt-4 inline-flex items-center gap-2 font-semibold text-heritage-turquoise-deep hover:underline">Ödeme Entegrasyonu Hizmetini İnceleyin<ArrowRightIcon className="h-4 w-4"/></A></Section>
@@ -132,7 +159,7 @@ const pageBodies: Record<Exclude<EcommercePageKey,'overview'|'blog'>, ReactNode>
     ]}/><div className="mt-5 flex flex-wrap gap-3"><CTA>Hangi Özelliklere İhtiyacınız Var?</CTA><CTA href={paths.technologies} secondary>Uygun Altyapıyı İnceleyin</CTA></div></Section>
   </>,
   technologies: <>
-    <Section title="Önce Gereksinimler, Sonra Altyapı"><Intro>Ürün seçenekleri, işlem hacmi beklentisi, içerik güncelleme sorumluluğu, dış sistemler ve tasarım gereksinimleri seçim sürecinin girdileridir. Bir platformun popüler olması, her projenin ihtiyaçlarını aynı düzeyde karşılayacağı anlamına gelmez.</Intro></Section>
+    <Section id="altyapi-secimi" title="Önce Gereksinimler, Sonra Altyapı"><Intro>Ürün seçenekleri, işlem hacmi beklentisi, içerik güncelleme sorumluluğu, dış sistemler ve tasarım gereksinimleri seçim sürecinin girdileridir. Bir platformun popüler olması, her projenin ihtiyaçlarını aynı düzeyde karşılayacağı anlamına gelmez.</Intro></Section>
     <Section title="Geliştirme Yaklaşımlarını Karşılaştırın" tone="ivory"><Table headers={['Yaklaşım','Değerlendirilecek konu','Başlamadan önce netleştirin']} rows={[
       ['Platform tabanlı kurulum','Mevcut tema ve yönetim olanaklarının kapsamı','Paket, uygulama ve özelleştirme sınırları'],['WordPress / WooCommerce','İçerik ve mağaza yönetiminin birlikte yürütülmesi','Hosting, eklenti, güncelleme ve bakım sorumluluğu'],['Özel e-ticaret geliştirme','Özel iş kuralları ve geliştirme esnekliği','Uzun vadeli bakım, dokümantasyon ve işletme planı'],['Headless yaklaşım','Ön yüz ile ticaret sisteminin ayrı ele alınması','Ek entegrasyon, önbellek ve yayın sorumlulukları']
     ]}/><p className="mt-4 text-sm leading-6 text-gray-600">Bu bir kazananlar sıralaması değildir. Güncel paket, API ve entegrasyon olanakları teknik incelemede doğrulanır.</p></Section>
@@ -160,7 +187,7 @@ const pageBodies: Record<Exclude<EcommercePageKey,'overview'|'blog'>, ReactNode>
     <Section title="Yayın Öncesi Kontrol"><ul className="mt-5 grid gap-x-8 sm:grid-cols-2">{['Kategori ve ürün bağlantıları çalışıyor.','Mobil menü ve alışveriş adımları kontrol edildi.','Ödeme ve bildirim senaryoları uygun ortamda test edildi.','Teslimat ve işletme bilgileri işletme tarafından onaylandı.','Gerekli yönlendirme ve indeksleme ayarları incelendi.','Analitik kurulumu kapsama dahilse olaylar kontrol edildi.','Erişim, yedek ve devir sorumluları belli.'].map(x=><li key={x} className="border-b border-heritage-sand py-3 text-sm leading-6 text-gray-700">{x}</li>)}</ul><div className="mt-5 flex flex-wrap gap-3"><CTA>Projeniz İçin Başlangıç Bilgilerini Paylaşın</CTA><CTA href={paths.pricing} secondary>Fiyatlandırmayı İnceleyin</CTA></div></Section>
   </>,
   portfolio: <>
-    <Section title="E-Ticaret Projeleri ve Çalışma Örnekleri"><Intro>Her projede hangi ihtiyacın ele alındığını ve PakSoft’un hangi bölümlerde çalıştığını açıklamaya odaklanıyoruz. Tasarım, tema geliştirme, mağaza kurulumu veya entegrasyon çalışmaları farklı kapsamlar içerebilir.</Intro><div className="mt-6 grid gap-5 md:grid-cols-2">{[
+    <Section id="projeler" title="E-Ticaret Projeleri ve Çalışma Örnekleri"><Intro>Her projede hangi ihtiyacın ele alındığını ve PakSoft’un hangi bölümlerde çalıştığını açıklamaya odaklanıyoruz. Tasarım, tema geliştirme, mağaza kurulumu veya entegrasyon çalışmaları farklı kapsamlar içerebilir.</Intro><div className="mt-6 grid gap-5 md:grid-cols-2">{[
       {name:'Termopazar',industry:'Perakende — Isıtma ve İklimlendirme',platform:'Shopify',need:'Daha yüksek değerlendirme gerektiren ısıtma ve iklimlendirme ürünlerini kategori temelli sunmak.',work:'Proje kaydı; Shopify mağazası, ürün kategorilerine göre düzenlenen vitrin, kampanya alanları ve reklam ölçüm bağlantılarını belgeliyor.',link:'/tr/projeler/termopazar'},
       {name:'Canceviz Hurma',industry:'Gıda Perakendesi — Hurma ve Kuru Meyve',platform:'ikas',need:'Hurma, çikolatalı hurma ve kuru meyve ürünleri için çevrimiçi mağaza sunmak.',work:'Proje kaydı; ikas mağazası, kategori navigasyonu ve kampanya sunumunu; ayrıca reklam ve SEO çalışmalarını belgeliyor.',link:'/tr/projeler/canceviz-hurma'},
     ].map(p=><article key={p.name} className="rounded-2xl border border-heritage-sand bg-white p-5 sm:p-6"><span className="text-overline text-heritage-turquoise-deep">{p.platform} · {p.industry}</span><h3 className="mt-2 text-title font-medium text-gray-900">{p.name}</h3><p className="mt-4 text-sm leading-6 text-gray-600"><strong className="text-gray-800">İşletmenin ihtiyacı: </strong>{p.need}</p><p className="mt-2 text-sm leading-6 text-gray-600"><strong className="text-gray-800">Kayıtlı çalışma kapsamı: </strong>{p.work}</p><A href={p.link} className="mt-4 inline-flex items-center gap-2 font-semibold text-heritage-turquoise-deep hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Proje ayrıntılarını inceleyin<ArrowRightIcon className="h-4 w-4"/></A></article>)}</div></Section>
@@ -170,7 +197,7 @@ const pageBodies: Record<Exclude<EcommercePageKey,'overview'|'blog'>, ReactNode>
     <Section title="Benzer Bir İhtiyacınız mı Var?"><Intro>Beğendiğiniz görsel yaklaşımı, ürün yapınızı ve ihtiyaç duyduğunuz işlevleri paylaşın. Başka bir mağazanın tasarımını aynen kopyalamak yerine markanıza ve işleyişinize uygun kapsamı belirleyelim.</Intro><div className="mt-5 flex flex-wrap gap-3"><CTA>Projenizi Anlatın</CTA><CTA href={paths.features} secondary>Hizmet Kapsamını İnceleyin</CTA></div></Section>
   </>,
   pricing: <>
-    <Section title="Fiyatı Hangi Unsurlar Belirler?" tone="ivory"><Table headers={['Maliyet unsuru','Kapsamı değiştiren durum']} rows={[
+    <Section id="maliyet-unsurlari" title="Fiyatı Hangi Unsurlar Belirler?" tone="ivory"><Table headers={['Maliyet unsuru','Kapsamı değiştiren durum']} rows={[
       ['Altyapı','Platform, paket veya özel geliştirme yaklaşımı'],['Tasarım','Hazır temanın düzenlenmesi veya özel arayüz kapsamı'],['Katalog','Ürün sayısı, varyantlar, veri temizliği ve görsel hazırlığı'],['Entegrasyon','Hazır bağlantı veya özel API geliştirmesi'],['Taşıma','Veri kaynakları, adres eşleştirmeleri ve yayın geçişi'],['Dil ve pazar ihtiyaçları','Çeviri, içerik ve farklı alışveriş senaryoları'],['Destek','Devir sonrası bakım, içerik ve geliştirme kapsamı']
     ]}/><p className="mt-4 text-sm leading-6 text-gray-600">Onaylı bir fiyat listesi veya bu hizmete bağlı sabit paket bulunmadığından, teklif kapsam doğrulandıktan sonra hazırlanır.</p></Section>
     <Section title="Kurulum Bedeli ile Düzenli Giderleri Ayırın"><Intro>İlk kurulum çalışması; tasarım, yapılandırma ve kararlaştırılan geliştirme teslimlerini kapsar. Platform aboneliği, uygulamalar, alan adı, hosting veya üçüncü taraf hizmetler kullanılan yapıya göre ayrı giderler oluşturabilir. Ödeme sağlayıcısı işlem ücretleri de geliştirme bedelinden farklıdır.</Intro></Section>
@@ -183,7 +210,7 @@ const pageBodies: Record<Exclude<EcommercePageKey,'overview'|'blog'>, ReactNode>
     <Section title="Anlamlı Bir Teklif İçin Neleri Paylaşmalısınız?"><Intro>Mevcut site adresi veya yeni mağaza fikri, yaklaşık ürün yapısı, tercih edilen altyapı, gerekli bağlantılar, içeriklerin hazır olma durumu ve hedef tarih bilgisi iyi bir başlangıçtır. Bütçe aralığınız varsa belirtmeniz kapsamı önceliklendirmeyi kolaylaştırır.</Intro><div className="mt-5 flex flex-wrap gap-3"><CTA>Teklif Talebinizi İletin</CTA><CTA href={paths.process} secondary>Kurulum Sürecini İnceleyin</CTA></div></Section>
   </>,
   faq: <>
-    <Section title="Sık Sorulan Sorular"><div className="divide-y divide-heritage-sand border-y border-heritage-sand">{[
+    <Section id="sorular" title="Sık Sorulan Sorular"><div className="divide-y divide-heritage-sand border-y border-heritage-sand">{[
       ['Hangi e-ticaret altyapısı benim için uygun?','Ürün yapınız, günlük yönetim ihtiyaçlarınız, mevcut sistemleriniz ve özel geliştirme gereksinimleriniz birlikte değerlendirilmelidir. Önceden seçtiğiniz bir platform varsa onun üzerinden kapsam çıkarılabilir; seçim yapılmadıysa ihtiyaçlarla başlayabiliriz.'],
       ['E-ticaret sitesi fiyatı nasıl belirlenir?','Altyapı, tasarım, ürün verilerinin hazırlığı, entegrasyonlar ve taşıma kapsamı fiyatı etkiler. Kurulum bedeliyle düzenli lisans veya hizmet giderlerini ayrı incelemek gerekir.'],
       ['Kurulum ne kadar sürer?','Süre, kapsamın yanında içeriklerin hazırlığına, gerekli erişimlere ve onay süreçlerine bağlıdır. Ürün ve bağlantı ihtiyaçları netleştikten sonra aşamalar proje planında belirtilir.'],
@@ -204,7 +231,7 @@ const pageBodies: Record<Exclude<EcommercePageKey,'overview'|'blog'>, ReactNode>
 };
 
 export default async function EcommerceTurkishPage({ page }: { page: EcommercePageKey }) {
-  if (page === 'overview') return <main className="min-h-screen bg-white"><Overview/></main>;
+  if (page === 'overview') return <main className="min-h-screen bg-white"><EcommerceTurkishOverviewBody/></main>;
   if (page === 'blog') {
     let posts: Array<{ slug: string; title: string; excerpt: string | null; date: string | null }> = [];
     try {
@@ -217,7 +244,7 @@ export default async function EcommerceTurkishPage({ page }: { page: EcommercePa
     } catch {
       posts = [];
     }
-    return <main className="min-h-screen bg-white"><Hero page="blog"/><Section title="E-Ticaret Rehberleri" id="icerik">{posts.length ? <div className="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-3">{posts.map(post=><article key={post.slug} className="flex h-full flex-col rounded-xl border border-heritage-sand bg-white p-5"><h3 className="text-base font-semibold leading-snug text-gray-900">{post.title}</h3>{post.excerpt&&<p className="mt-2 flex-1 text-sm leading-6 text-gray-600">{post.excerpt}</p>}{post.date&&<time className="mt-4 text-xs text-gray-500" dateTime={post.date}>{new Date(post.date).toLocaleDateString('tr-TR')}</time>}<A href={`/tr/blog/${post.slug}`} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Yazıyı okuyun<ArrowRightIcon className="h-4 w-4"/></A></article>)}</div> : <><Intro>E-ticaret planlama rehberlerimiz hazırlanıyor. Bu sırada mağazanızın kurulum sürecini ve ihtiyaç duyabileceğiniz özellikleri inceleyebilirsiniz.</Intro><div className="mt-5 flex flex-wrap gap-3"><CTA href={paths.process} secondary>Kurulum Sürecini İnceleyin</CTA><CTA href={paths.features} secondary>Özellikleri İnceleyin</CTA></div></>}</Section></main>;
+    return <main className="min-h-screen bg-white"><Hero page="blog"/><Section title="E-Ticaret Rehberleri" id="rehberler">{posts.length ? <div className="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-3">{posts.map(post=><article key={post.slug} className="flex h-full flex-col rounded-xl border border-heritage-sand bg-white p-5"><h3 className="text-base font-semibold leading-snug text-gray-900">{post.title}</h3>{post.excerpt&&<p className="mt-2 flex-1 text-sm leading-6 text-gray-600">{post.excerpt}</p>}{post.date&&<time className="mt-4 text-xs text-gray-500" dateTime={post.date}>{new Date(post.date).toLocaleDateString('tr-TR')}</time>}<A href={`/tr/blog/${post.slug}`} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Yazıyı okuyun<ArrowRightIcon className="h-4 w-4"/></A></article>)}</div> : <><Intro>E-ticaret planlama rehberlerimiz hazırlanıyor. Bu sırada mağazanızın kurulum sürecini ve ihtiyaç duyabileceğiniz özellikleri inceleyebilirsiniz.</Intro><div className="mt-5 flex flex-wrap gap-3"><CTA href={paths.process} secondary>Kurulum Sürecini İnceleyin</CTA><CTA href={paths.features} secondary>Özellikleri İnceleyin</CTA></div></>}</Section></main>;
   }
-  return <main id="icerik" className="min-h-screen bg-white"><Hero page={page}/>{pageBodies[page]}<section className="bg-gray-950 py-12 text-white"><div className="mx-auto max-w-3xl px-4 text-center"><h2 className="text-headline font-medium">{page==='features'?'Uygun Altyapıyı İnceleyin':page==='technologies'?'Altyapı Seçiminizi Birlikte Değerlendirelim':page==='process'?'Projeniz İçin Başlangıç Bilgilerini Paylaşın':page==='portfolio'?'Benzer Bir İhtiyacınız mı Var?':page==='pricing'?'Önce İhtiyacınızı, Sonra Teklif Kapsamını Netleştirelim':'Sorunuzun Yanıtını Bulamadınız mı?'}</h2><p className="mt-3 text-sm leading-6 text-gray-300">Yeni mağaza fikrinizi veya mevcut sitenizi paylaşın; ihtiyaçlarınıza uygun kapsamı birlikte değerlendirelim.</p><div className="mt-5"><CTA>Projenizi Konuşalım</CTA></div></div></section></main>;
+  return <main className="min-h-screen bg-white"><Hero page={page}/>{pageBodies[page]}<section className="relative isolate overflow-hidden bg-gray-950 text-white"><div aria-hidden="true" className="pointer-events-none absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_50%_50%,rgba(14,124,123,.28),transparent_55%)]"/><div className="relative mx-auto max-w-3xl px-4 cw-section text-center"><h2 className="text-headline font-medium">{page==='features'?'Uygun Altyapıyı İnceleyin':page==='technologies'?'Altyapı Seçiminizi Birlikte Değerlendirelim':page==='process'?'Projeniz İçin Başlangıç Bilgilerini Paylaşın':page==='portfolio'?'Benzer Bir İhtiyacınız mı Var?':page==='pricing'?'Önce İhtiyacınızı, Sonra Teklif Kapsamını Netleştirelim':'Sorunuzun Yanıtını Bulamadınız mı?'}</h2><p className="mt-3 text-sm leading-6 text-gray-300">Yeni mağaza fikrinizi veya mevcut sitenizi paylaşın; ihtiyaçlarınıza uygun kapsamı birlikte değerlendirelim.</p><div className="mt-5"><CTA>Projenizi Konuşalım</CTA></div></div></section></main>;
 }
