@@ -28,6 +28,7 @@ import { useTranslations } from '@/hooks/useTranslations';
 import { formatPrice } from '@/lib/currency';
 import { COMPANY_STATS } from '@/config/companyStats';
 import CorporateWebsiteOverview from '@/components/services/CorporateWebsiteOverview';
+import EcommercePlatformStrip from '@/components/e-commerce/EcommercePlatformStrip';
 
 // ── Types ────────────────────────────────────────────────────────────
 interface ProcessStep {
@@ -759,6 +760,7 @@ function HeroSection({
                   {responseMicrocopy}
                 </p>
               )}
+              {service.slug === 'e-commerce' && locale === 'tr' && <EcommercePlatformStrip />}
             </div>
           </motion.div>
 
