@@ -2,7 +2,7 @@
 
 import { useState, useCallback, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useForm, UseFormRegister, FieldErrors } from 'react-hook-form';
+import { useForm, UseFormRegister, FieldErrors, Resolver } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import Button from '@/components/Button';
@@ -103,7 +103,7 @@ interface ProjectRequestFormProps {
 const TOTAL_STEPS = 5;
 
 // Service-type labels localized for all 5 site locales (en/tr/de/ur/ar)
-const SERVICE_LABELS: { value: string; labels: Record<string, string> }[] = [
+export const SERVICE_LABELS: { value: string; labels: Record<string, string> }[] = [
   { value: 'web-development', labels: { en: 'Web Development', tr: 'Web Geliştirme', de: 'Webentwicklung', ur: 'ویب ڈویلپمنٹ', ar: 'تطوير الويب' } },
   { value: 'mobile-development', labels: { en: 'Mobile App Development', tr: 'Mobil Uygulama Geliştirme', de: 'Mobile-App-Entwicklung', ur: 'موبائل ایپ ڈویلپمنٹ', ar: 'تطوير تطبيقات الجوال' } },
   { value: 'ai-solutions', labels: { en: 'AI Solutions', tr: 'Yapay Zeka Çözümleri', de: 'KI-Lösungen', ur: 'AI حل', ar: 'حلول الذكاء الاصطناعي' } },
@@ -114,6 +114,7 @@ const SERVICE_LABELS: { value: string; labels: Record<string, string> }[] = [
   { value: 'ui-ux-design', labels: { en: 'UI/UX Design', tr: 'UI/UX Tasarımı', de: 'UI/UX-Design', ur: 'UI/UX ڈیزائن', ar: 'تصميم UI/UX' } },
   { value: 'api-development', labels: { en: 'API Development', tr: 'API Geliştirme', de: 'API-Entwicklung', ur: 'API ڈویلپمنٹ', ar: 'تطوير API' } },
   { value: 'e-commerce', labels: { en: 'E-Commerce Solutions', tr: 'E-Ticaret Çözümleri', de: 'E-Commerce-Lösungen', ur: 'ای کامرس حل', ar: 'حلول التجارة الإلكترونية' } },
+  { value: 'corporate-website-design', labels: { en: 'Corporate Website Design', tr: 'Kurumsal Web Tasarım', de: 'Corporate Webdesign', ur: 'کارپوریٹ ویب ڈیزائن', ar: 'تصميم مواقع الشركات' } },
   { value: 'devops-cloud', labels: { en: 'DevOps & Cloud', tr: 'DevOps ve Bulut', de: 'DevOps & Cloud', ur: 'DevOps اور کلاؤڈ', ar: 'DevOps والسحابة' } },
   { value: 'cybersecurity', labels: { en: 'Cybersecurity', tr: 'Siber Güvenlik', de: 'Cybersicherheit', ur: 'سائبر سیکیورٹی', ar: 'الأمن السيبراني' } },
   { value: 'conversational-ai', labels: { en: 'Conversational AI', tr: 'Konuşma Yapay Zekası', de: 'Konversations-KI', ur: 'کنورسیشنل AI', ar: 'الذكاء الاصطناعي الحواري' } },
@@ -190,7 +191,7 @@ export default function ProjectRequestForm({
     reset,
     formState: { errors },
   } = useForm<FormData>({
-    resolver: zodResolver(projectRequestSchema),
+    resolver: zodResolver(projectRequestSchema) as Resolver<FormData>,
     defaultValues: {
       serviceType: prefilledService || '',
       budgetRange: 'MEDIUM',
@@ -284,6 +285,7 @@ export default function ProjectRequestForm({
 
       const submitData = {
         ...data,
+        submissionMode: 'detailed' as const,
         ...(captchaToken ? { captchaToken } : {}),
         budgetEstimate: budgetEstimate ? {
           min: budgetEstimate.minBudget,

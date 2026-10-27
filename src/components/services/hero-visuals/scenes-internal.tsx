@@ -82,13 +82,13 @@ export function PricingTiersScene({ accent = H.turquoise }: { accent?: string })
 }
 
 /* ── blog: article cards + writing pen ───────────────────────────── */
-export function BlogFeedScene({ accent = H.turquoise }: { accent?: string }) {
+export function BlogFeedScene({ accent = H.turquoise, showPublicationMeta = true }: { accent?: string; showPublicationMeta?: boolean }) {
   const reduced = useReducedMotion();
   const L = useSceneLabels();
   return (
     <Scene glow={accent}>
       <GirihHalo color={H.terracotta} opacity={0.18} />
-      <HeritageParticles count={8} colors={[accent, H.saffron, H.terracotta]} />
+      <HeritageParticles count={showPublicationMeta ? 8 : 4} colors={[accent, H.saffron, H.terracotta]} />
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="relative w-56">
           {/* stacked article cards */}
@@ -107,6 +107,7 @@ export function BlogFeedScene({ accent = H.turquoise }: { accent?: string }) {
                   <polygon points={starPoints(16, 16, 11, 6)} fill="none" stroke={accent} strokeWidth="1.4" />
                 </svg>
               </div>
+              {/* Hide publication badges and reading-time cues for an empty blog. */}
               {/* title lines — top card gets "written" */}
               {i === 0 ? (
                 <>
@@ -132,10 +133,12 @@ export function BlogFeedScene({ accent = H.turquoise }: { accent?: string }) {
                     transition={{ delay: 2.1, duration: 0.7 }}
                   />
                   <div className="flex items-center justify-between mt-2.5">
-                    <motion.span {...popIn(2.5)} className="text-[8px] font-bold px-2 py-0.5 rounded-full" style={{ background: `${accent}1c`, color: accent }}>
-                      {L('newPost', 'New post published')}
-                    </motion.span>
-                    <motion.span {...popIn(2.7)} className="text-[8px] font-semibold" style={{ color: '#9a9183' }}>5 min</motion.span>
+                    {showPublicationMeta && <>
+                      <motion.span {...popIn(2.5)} className="text-[8px] font-bold px-2 py-0.5 rounded-full" style={{ background: `${accent}1c`, color: accent }}>
+                        {L('newPost', 'New post published')}
+                      </motion.span>
+                      <motion.span {...popIn(2.7)} className="text-[8px] font-semibold" style={{ color: '#9a9183' }}>5 min</motion.span>
+                    </>}
                   </div>
                 </>
               ) : (
@@ -147,7 +150,7 @@ export function BlogFeedScene({ accent = H.turquoise }: { accent?: string }) {
             </motion.div>
           ))}
           {/* writing pen follows the title line */}
-          {!reduced && (
+          {!reduced && showPublicationMeta && (
             <motion.div
               className="absolute z-10"
               style={{ top: 76, left: 0 }}

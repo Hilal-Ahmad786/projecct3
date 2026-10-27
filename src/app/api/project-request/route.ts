@@ -4,6 +4,7 @@ import { verifyCaptchaToken } from '@/lib/captcha';
 
 // Validation schema
 const projectRequestSchema = z.object({
+  submissionMode: z.enum(['short', 'detailed']).default('detailed'),
   // Contact Info
   name: z.string().min(2),
   email: z.string().email(),
@@ -16,7 +17,7 @@ const projectRequestSchema = z.object({
   projectTitle: z.string().optional(),
 
   // Project Details
-  description: z.string().min(50),
+  description: z.string().trim().min(10).max(5000),
   goals: z.string().optional(),
   targetAudience: z.string().optional(),
 
@@ -26,11 +27,15 @@ const projectRequestSchema = z.object({
   performanceReqs: z.string().optional(),
 
   // Budget & Timeline
-  budgetRange: z.enum(['SMALL', 'MEDIUM', 'LARGE', 'ENTERPRISE', 'CUSTOM']),
-  timeline: z.enum(['URGENT', 'STANDARD', 'FLEXIBLE', 'LONG_TERM']),
+  budgetRange: z.enum(['SMALL', 'MEDIUM', 'LARGE', 'ENTERPRISE', 'CUSTOM']).optional(),
+  timeline: z.enum(['URGENT', 'STANDARD', 'FLEXIBLE', 'LONG_TERM']).optional(),
   urgencyLevel: z.enum(['LOW', 'NORMAL', 'HIGH', 'CRITICAL']).default('NORMAL'),
   preferredStartDate: z.string().optional(),
   additionalNotes: z.string().optional(),
+}).superRefine((data, context) => {
+  if (data.submissionMode === 'detailed' && data.description.length < 50) {
+    context.addIssue({ code: 'custom', message: 'Detailed project briefs must include at least 50 characters.', path: ['description'] });
+  }
 });
 
 export async function POST(request: NextRequest) {
@@ -91,8 +96,8 @@ export async function POST(request: NextRequest) {
           techPreferences: validatedData.techPreferences,
           integrations: validatedData.integrations,
           performanceReqs: validatedData.performanceReqs,
-          budgetRange: validatedData.budgetRange,
-          timeline: validatedData.timeline,
+          budgetRange: validatedData.budgetRange || 'MEDIUM',
+          timeline: validatedData.timeline || 'STANDARD',
           urgencyLevel: validatedData.urgencyLevel,
           preferredStartDate: validatedData.preferredStartDate
             ? new Date(validatedData.preferredStartDate)
@@ -109,8 +114,8 @@ export async function POST(request: NextRequest) {
           description: `New project request submitted for ${validatedData.serviceType}`,
           metadata: {
             serviceType: validatedData.serviceType,
-            budgetRange: validatedData.budgetRange,
-            timeline: validatedData.timeline,
+            budgetRange: validatedData.budgetRange || 'MEDIUM',
+            timeline: validatedData.timeline || 'STANDARD',
           },
         },
       });
@@ -132,8 +137,8 @@ export async function POST(request: NextRequest) {
            Phone: validatedData.phone,
            Company: validatedData.company,
            Service: validatedData.serviceType,
-           Budget: validatedData.budgetRange,
-           Timeline: validatedData.timeline,
+           Budget: validatedData.budgetRange || 'Not provided',
+           Timeline: validatedData.timeline || 'Not provided',
            Description: validatedData.description,
          })}`
       );
@@ -142,7 +147,7 @@ export async function POST(request: NextRequest) {
           {
             success: false,
             message:
-              'We could not save your request right now. Please reach us directly on WhatsApp (+90 552 567 71 64) or email paksoft3@gmail.com — we respond quickly.',
+              'We could not save your request right now. Please try again or use the contact details on our contact page.',
           },
           { status: 503 }
         );
@@ -157,7 +162,7 @@ export async function POST(request: NextRequest) {
       const { alertAdminOfLead } = await import('@/lib/lead-alert');
       if (dbOk) await alertAdminOfLead({
         title: 'New Project Request',
-        message: `${validatedData.name} (${validatedData.email}) — ${validatedData.serviceType}, budget ${validatedData.budgetRange}`,
+        message: `${validatedData.name} (${validatedData.email}) — ${validatedData.serviceType}${validatedData.budgetRange ? `, budget ${validatedData.budgetRange}` : ''}`,
         emailSubject: `New Project Request: ${validatedData.serviceType}`,
         emailHtml: buildAdminEmailHtml(validatedData),
         metadata: { source: 'project_request', requestId: savedRequest.id },
@@ -184,7 +189,7 @@ export async function POST(request: NextRequest) {
         {
           success: false,
           message: 'Validation failed',
-          errors: error.errors,
+          errors: error.issues,
         },
         { status: 400 }
       );
@@ -211,26 +216,34 @@ type RequestData = {
   name: string;
   email: string;
   phone?: string;
+  submissionMode?: 'short' | 'detailed';
   serviceType: string;
-  budgetRange: string;
-  timeline: string;
+  budgetRange?: string;
+  timeline?: string;
   description: string;
   company?: string;
 };
+
+function escapeHtml(value: string) {
+  return value.replace(/[&<>"']/g, (character) => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+  })[character] || character);
+}
 
 function buildAdminEmailHtml(data: RequestData) {
   return `
     <h2>New Project Request Received</h2>
     <table style="border-collapse: collapse; width: 100%;">
-      <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Name</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.name}</td></tr>
-      <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Email</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.email}</td></tr>
-      ${data.company ? `<tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Company</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.company}</td></tr>` : ''}
-      <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Service Type</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.serviceType}</td></tr>
-      <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Budget</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.budgetRange}</td></tr>
-      <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Timeline</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.timeline}</td></tr>
+      <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Name</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${escapeHtml(data.name)}</td></tr>
+      <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Email</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${escapeHtml(data.email)}</td></tr>
+      ${data.company ? `<tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Company</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${escapeHtml(data.company)}</td></tr>` : ''}
+      <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Service Type</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${escapeHtml(data.serviceType)}</td></tr>
+      <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Enquiry type</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.submissionMode === 'short' ? 'Short enquiry' : 'Detailed brief'}</td></tr>
+      ${data.budgetRange ? `<tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Budget</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${escapeHtml(data.budgetRange)}</td></tr>` : ''}
+      ${data.timeline ? `<tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Timeline</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${escapeHtml(data.timeline)}</td></tr>` : ''}
     </table>
     <h3>Project Description</h3>
-    <p style="background: #f5f5f5; padding: 15px; border-radius: 5px;">${data.description.replace(/\n/g, '<br>')}</p>
+    <p style="background: #f5f5f5; padding: 15px; border-radius: 5px;">${escapeHtml(data.description).replace(/\n/g, '<br>')}</p>
     <hr>
     <p style="color: #666; font-size: 12px;">This request was submitted from the PakSoft website.</p>
   `;
@@ -242,19 +255,14 @@ async function sendUserConfirmation(data: RequestData) {
     data.email,
     'We received your project request - PakSoft',
     `
-      <h2>Thank you for your project request, ${data.name}!</h2>
-      <p>We have received your project request and our team will review it within 24-48 hours.</p>
-      <h3>What happens next?</h3>
-      <ol>
-        <li>Our team will review your requirements</li>
-        <li>We'll prepare a preliminary proposal and estimate</li>
-        <li>We'll schedule a call to discuss your project in detail</li>
-      </ol>
+      <h2>Thank you for your project request, ${escapeHtml(data.name)}!</h2>
+      <p>We have received the information you shared. The team can use it to understand your enquiry and the service you selected.</p>
+      <p>If more detail is needed to assess the scope, the team may contact you using the details provided.</p>
       <p><strong>Your project summary:</strong></p>
       <ul>
-        <li>Service Type: ${data.serviceType}</li>
-        <li>Budget Range: ${data.budgetRange}</li>
-        <li>Timeline: ${data.timeline}</li>
+        <li>Service Type: ${escapeHtml(data.serviceType)}</li>
+        ${data.budgetRange ? `<li>Budget Range: ${escapeHtml(data.budgetRange)}</li>` : ''}
+        ${data.timeline ? `<li>Timeline: ${escapeHtml(data.timeline)}</li>` : ''}
       </ul>
       <hr>
       <p>Best regards,<br>The PakSoft Team</p>

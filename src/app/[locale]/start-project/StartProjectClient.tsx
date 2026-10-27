@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
@@ -13,6 +13,7 @@ import {
   ArrowLeftIcon,
 } from '@heroicons/react/24/outline';
 import ProjectRequestForm from '@/components/forms/ProjectRequestForm';
+import ShortProjectRequestForm from '@/components/forms/ShortProjectRequestForm';
 
 const translations: Record<string, Record<string, string>> = {
   title: {
@@ -30,60 +31,28 @@ const translations: Record<string, Record<string, string>> = {
     ar: 'أخبرنا عن رؤيتك وسنحولها إلى واقع',
   },
   benefit1Title: {
-    en: 'Free Consultation',
-    tr: 'Ücretsiz Danışmanlık',
-    de: 'Kostenlose Beratung',
-    ur: 'مفت مشاورت',
-    ar: 'استشارة مجانية',
+    en: 'Project information', tr: 'Proje bilgileri', de: 'Projektinformationen', ur: 'پروجیکٹ کی معلومات', ar: 'معلومات المشروع',
   },
   benefit1Desc: {
-    en: 'Get expert advice on your project requirements',
-    tr: 'Proje gereksinimleriniz için uzman tavsiyesi alın',
-    de: 'Erhalten Sie fachkundige Beratung zu Ihren Projektanforderungen',
-    ur: 'اپنے پروجیکٹ کی ضروریات پر ماہر مشورہ حاصل کریں',
-    ar: 'احصل على مشورة الخبراء لمتطلبات مشروعك',
+    en: 'Share your business, current website and project needs.', tr: 'İşletmenizi, mevcut web sitenizi ve ihtiyaçlarınızı paylaşın.', de: 'Teilen Sie Ihr Unternehmen, Ihre aktuelle Website und Ihre Anforderungen mit.', ur: 'اپنے کاروبار، موجودہ ویب سائٹ اور ضروریات کے بارے میں بتائیں۔', ar: 'شارك معلومات عن نشاطك وموقعك الحالي واحتياجات المشروع.',
   },
   benefit2Title: {
-    en: 'Quick Response',
-    tr: 'Hızlı Yanıt',
-    de: 'Schnelle Antwort',
-    ur: 'فوری جواب',
-    ar: 'استجابة سريعة',
+    en: 'Scope discussion', tr: 'Kapsam görüşmesi', de: 'Umfang besprechen', ur: 'دائرۂ کار پر گفتگو', ar: 'مناقشة النطاق',
   },
   benefit2Desc: {
-    en: 'We respond within 24 hours with a detailed proposal',
-    tr: 'Detaylı teklifle 24 saat içinde yanıt veriyoruz',
-    de: 'Wir antworten innerhalb von 24 Stunden mit einem detaillierten Angebot',
-    ur: 'ہم 24 گھنٹوں میں تفصیلی تجویز کے ساتھ جواب دیتے ہیں',
-    ar: 'نرد خلال 24 ساعة باقتراح مفصل',
+    en: 'We review the pages, functions and integrations relevant to your request.', tr: 'Talebinizle ilgili sayfa, işlev ve entegrasyon ihtiyaçlarını değerlendiriyoruz.', de: 'Wir prüfen die für Ihre Anfrage relevanten Seiten, Funktionen und Integrationen.', ur: 'ہم آپ کی درخواست سے متعلق صفحات، خصوصیات اور انضمام کا جائزہ لیتے ہیں۔', ar: 'نراجع الصفحات والوظائف والتكاملات المرتبطة بطلبك.',
   },
   benefit3Title: {
-    en: 'NDA Protected',
-    tr: 'NDA Korumalı',
-    de: 'NDA-geschützt',
-    ur: 'NDA محفوظ',
-    ar: 'محمي باتفاقية عدم إفشاء',
+    en: 'Useful next steps', tr: 'Sonraki adımlar', de: 'Nächste Schritte', ur: 'اگلے مفید اقدامات', ar: 'الخطوات التالية',
   },
   benefit3Desc: {
-    en: 'Your ideas are safe with confidentiality agreements',
-    tr: 'Fikirleriniz gizlilik anlaşmalarıyla güvende',
-    de: 'Ihre Ideen sind durch Vertraulichkeitsvereinbarungen geschützt',
-    ur: 'آپ کے خیالات رازداری کے معاہدوں کے ساتھ محفوظ ہیں',
-    ar: 'أفكارك آمنة مع اتفاقيات السرية',
+    en: 'The next steps are discussed after your needs are understood.', tr: 'İhtiyaçlarınız netleştiğinde uygun sonraki adımları konuşuyoruz.', de: 'Die nächsten Schritte besprechen wir, sobald Ihre Anforderungen klar sind.', ur: 'ضروریات واضح ہونے کے بعد اگلے اقدامات پر بات کی جائے گی۔', ar: 'نناقش الخطوات التالية بعد فهم احتياجاتك.',
   },
   benefit4Title: {
-    en: 'Dedicated Team',
-    tr: 'Özel Ekip',
-    de: 'Engagiertes Team',
-    ur: 'سرشار ٹیم',
-    ar: 'فريق متخصص',
+    en: 'Selected service', tr: 'Seçilen hizmet', de: 'Ausgewählter Service', ur: 'منتخب کردہ سروس', ar: 'الخدمة المحددة',
   },
   benefit4Desc: {
-    en: 'Work directly with senior developers and designers',
-    tr: 'Kıdemli geliştiriciler ve tasarımcılarla doğrudan çalışın',
-    de: 'Arbeiten Sie direkt mit erfahrenen Entwicklern und Designern',
-    ur: 'سینیئر ڈویلپرز اور ڈیزائنرز کے ساتھ براہ راست کام کریں',
-    ar: 'اعمل مباشرة مع مطورين ومصممين ذوي خبرة',
+    en: 'Your enquiry keeps the service selected on the previous page.', tr: 'Talebiniz, önceki sayfada seçtiğiniz hizmet bilgisiyle iletilir.', de: 'Ihre Anfrage enthält den zuvor ausgewählten Service.', ur: 'آپ کی درخواست میں پچھلے صفحے پر منتخب کردہ سروس شامل ہوگی۔', ar: 'يتضمن طلبك الخدمة التي اخترتها في الصفحة السابقة.',
   },
   backHome: {
     en: 'Back to Home',
@@ -92,6 +61,11 @@ const translations: Record<string, Record<string, string>> = {
     ur: 'ہوم پیج پر واپس جائیں',
     ar: 'العودة إلى الصفحة الرئيسية',
   },
+  shortEnquiry: { en: 'Short Enquiry', tr: 'Kısa Talep Gönder', de: 'Kurze Anfrage senden', ur: 'مختصر درخواست بھیجیں', ar: 'إرسال استفسار مختصر' },
+  detailedBrief: { en: 'Complete Detailed Project Brief', tr: 'Detaylı Proje Briefi Doldur', de: 'Detailliertes Projektbriefing ausfüllen', ur: 'تفصیلی پروجیکٹ بریف پُر کریں', ar: 'املأ موجز المشروع التفصيلي' },
+  formChoice: { en: 'Choose how much detail to share. You can start with a short enquiry.', tr: 'Ne kadar ayrıntı paylaşacağınıza siz karar verin; kısa bir taleple başlayabilirsiniz.', de: 'Wählen Sie, wie viele Details Sie teilen möchten. Sie können mit einer kurzen Anfrage beginnen.', ur: 'آپ کتنی تفصیل دینا چاہتے ہیں، یہ آپ پر منحصر ہے۔ مختصر درخواست سے آغاز کریں۔', ar: 'اختر مقدار التفاصيل التي تريد مشاركتها؛ يمكنك البدء باستفسار مختصر.' },
+  privacyNotice: { en: 'Information in this form is used to review and respond to your enquiry.', tr: 'Bu formdaki bilgiler talebinizi değerlendirmek ve yanıtlamak için kullanılır.', de: 'Die Angaben in diesem Formular werden verwendet, um Ihre Anfrage zu prüfen und zu beantworten.', ur: 'اس فارم کی معلومات آپ کی درخواست کا جائزہ لینے اور جواب دینے کے لیے استعمال ہوتی ہیں۔', ar: 'تُستخدم المعلومات الواردة في هذا النموذج لمراجعة استفسارك والرد عليه.' },
+  privacyLink: { en: 'Privacy policy', tr: 'Gizlilik politikası', de: 'Datenschutzerklärung', ur: 'رازداری کی پالیسی', ar: 'سياسة الخصوصية' },
 };
 
 const benefits = [
@@ -105,6 +79,13 @@ export default function StartProjectPage() {
   const params = useParams();
   const locale = (params?.locale as string) || 'en';
   const isRTL = locale === 'ar' || locale === 'ur';
+  const [serviceType, setServiceType] = useState('');
+  const [formMode, setFormMode] = useState<'short' | 'detailed'>('short');
+
+  useEffect(() => {
+    const selectedService = new URLSearchParams(window.location.search).get('service') || '';
+    setServiceType(selectedService);
+  }, []);
 
   const t = (key: string) => translations[key]?.[locale] || translations[key]?.en || key;
 
@@ -162,16 +143,6 @@ export default function StartProjectPage() {
                   ))}
                 </div>
 
-                {/* Trust indicators */}
-                <div className="mt-10 pt-8 border-t border-gray-200">
-                  {/* ISO 27001 / SOC 2 badges removed 2026-08 — only list certifications PakSoft actually holds. */}
-                  <div className="flex items-center gap-4 text-sm text-gray-500">
-                    <div className="flex items-center gap-1">
-                      <CheckCircleIcon className="w-4 h-4 text-green-500" />
-                      <span>GDPR</span>
-                    </div>
-                  </div>
-                </div>
               </motion.div>
             </div>
 
@@ -183,14 +154,23 @@ export default function StartProjectPage() {
                 transition={{ delay: 0.2 }}
                 className="bg-white rounded-2xl shadow-xl border border-gray-100 p-8"
               >
-                <ProjectRequestForm
+                <p className="mb-4 text-sm leading-6 text-gray-600">{t('formChoice')}</p>
+                <div role="group" aria-label={locale === 'tr' ? 'Talep formu türü' : 'Enquiry form type'} className="mb-6 grid gap-2 sm:grid-cols-2">
+                  {(['short', 'detailed'] as const).map((mode) => <button key={mode} type="button" aria-pressed={formMode === mode} onClick={() => setFormMode(mode)} className={`min-h-11 rounded-lg border px-4 py-3 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2 motion-reduce:transition-none ${formMode === mode ? 'border-heritage-turquoise-deep bg-heritage-turquoise-deep text-white' : 'border-gray-300 bg-white text-gray-800 hover:border-heritage-turquoise'}`}>
+                    {t(mode === 'short' ? 'shortEnquiry' : 'detailedBrief')}
+                  </button>)}
+                </div>
+                <p className="mb-5 text-xs leading-5 text-gray-500">{t('privacyNotice')} <Link href={`/${locale}/privacy-policy`} className="font-medium text-heritage-turquoise-deep underline underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">{t('privacyLink')}</Link></p>
+                {formMode === 'short' ? <ShortProjectRequestForm key={`short-${serviceType}`} prefilledService={serviceType} /> : <ProjectRequestForm
+                  key={`detailed-${serviceType}`}
+                  prefilledService={serviceType}
                   onSuccess={() => {
                     // Optionally redirect or show success
                   }}
                   onClose={() => {
                     // Optionally handle close
                   }}
-                />
+                />}
               </motion.div>
             </div>
           </div>

@@ -216,6 +216,13 @@ export function CorporateWebsiteArticlePage({ article }: { article: ArticleData 
       if (text.includes('[[PAKSOFT_VISUAL:')) return <WorkflowFigure article={article} />;
       const cta = text.match(/\[\[PAKSOFT_CTA:(early|middle|closing)\]\]/);
       if (cta) return <ArticleCta stage={cta[1] as CtaStage} copy={ctas[cta[1] as CtaStage]} />;
+      const download = text.match(/\[\[PAKSOFT_DOWNLOAD:(renewal|multilingual)\]\]/);
+      if (download) {
+        const template = download[1] === 'renewal'
+          ? { href: '/downloads/icerik-envanteri-url-eslestirme-sablonu.csv', label: 'İçerik Envanteri ve URL Eşleştirme Şablonunu İndirin', note: 'CSV şablonunu elektronik tablo uygulamanızda açıp kendi sayfalarınızla doldurun.' }
+          : { href: '/downloads/dil-urun-icerigi-planlama-sablonu.csv', label: 'Dil ve Ürün İçeriği Planlama Şablonunu İndirin', note: 'Boş CSV şablonunu hedef pazar, dil ve içerik onaylarını planlamak için kullanın.' };
+        return <aside className="my-6 rounded-xl border border-heritage-sand bg-heritage-ivory p-4 sm:p-5"><p className="text-sm leading-6 text-gray-700">{template.note}</p><a href={template.href} download className={`mt-3 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline ${focusRing}`}>{template.label}<span aria-hidden="true">↓</span></a></aside>;
+      }
       return <p className="mt-5 text-base leading-7 text-gray-700 sm:text-[1.0625rem] sm:leading-8">{children}</p>;
     },
     a: ({ href = '', children }) => {
