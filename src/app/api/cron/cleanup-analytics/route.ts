@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { timingSafeEqual } from 'node:crypto';
 
 export const dynamic = 'force-dynamic';
 
@@ -9,13 +10,24 @@ export const dynamic = 'force-dynamic';
 // retention loses nothing anyone reads.
 //
 // Invoked by Vercel Cron (see vercel.json). Vercel automatically sends
-// `Authorization: Bearer ${CRON_SECRET}` when the CRON_SECRET env var is set —
-// set it in Vercel so random visitors can't trigger deletes.
+// `Authorization: Bearer ${CRON_SECRET}` when the CRON_SECRET env var is set.
+// Fails closed: without CRON_SECRET configured nothing runs, so a missing env
+// var can never turn this into a public delete endpoint.
 const RETENTION_DAYS = 90;
+
+function isAuthorized(request: NextRequest, secret: string): boolean {
+  const given = Buffer.from(request.headers.get('authorization') ?? '');
+  const expected = Buffer.from(`Bearer ${secret}`);
+  return given.length === expected.length && timingSafeEqual(given, expected);
+}
 
 export async function GET(request: NextRequest) {
   const secret = process.env.CRON_SECRET;
-  if (secret && request.headers.get('authorization') !== `Bearer ${secret}`) {
+  if (!secret) {
+    console.error('[cron/cleanup-analytics] CRON_SECRET is not set; refusing to run');
+    return NextResponse.json({ success: false }, { status: 503 });
+  }
+  if (!isAuthorized(request, secret)) {
     return NextResponse.json({ success: false }, { status: 401 });
   }
 
