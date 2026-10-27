@@ -81,14 +81,16 @@ export default function AnimatedVisual({ name, labels = [], className = '', styl
         focusable="false"
         dangerouslySetInnerHTML={{ __html: visual.markup }}
       />
-      {labels.map(({ slot, text, delay = 0, className: labelClass = '' }) => {
+      {labels.map(({ slot, text, delay, className: labelClass = '' }) => {
         const box = (visual.slots as Record<string, { x: number; y: number; w: number; h: number }>)[slot];
         if (!box) return null;
         return (
           <span
             key={slot}
             className={`cv-label ${labelClass}`}
-            style={{ left: `${box.x}%`, top: `${box.y}%`, width: `${box.w}%`, height: `${box.h}%`, '--cv-label-delay': `${delay}s` } as CSSProperties}
+            data-slot={slot}
+            // Without an explicit delay the stylesheet may time the label to its artwork (per data-slot).
+            style={{ left: `${box.x}%`, top: `${box.y}%`, width: `${box.w}%`, height: `${box.h}%`, ...(delay !== undefined ? { '--cv-label-delay': `${delay}s` } : {}) } as CSSProperties}
           >
             {text}
           </span>

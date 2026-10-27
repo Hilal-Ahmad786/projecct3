@@ -33,6 +33,7 @@ const DRAW_PATHS = {
   'ecom-integration-hub': ['spoke-1', 'spoke-2', 'spoke-3', 'spoke-4', 'spoke-5', 'spoke-6'],
   'ecom-migration': ['bridge', 'verify-path'],
   'ecom-order-flow': ['link-1', 'link-2', 'link-3', 'link-4', 'branch-path', 'retry-path'],
+  'ecom-architecture': ['h-link-1', 'h-link-2'],
   'ecom-launch-checklist': ['tick-1', 'tick-2', 'tick-3', 'tick-4', 'tick-5', 'tick-6', 'tick-7', 'ready-check-path'],
 };
 

@@ -36,7 +36,7 @@ export default function ArchitectureToggle() {
 
   return (
     <figure className="m-0">
-      <div ref={wrap} className="ecom-architecture-demo" data-mode={mode}>
+      <div ref={wrap} className="ecom-architecture-demo" data-mode={mode} data-chosen={chosen}>
         <div role="group" aria-label="E-ticaret mimari örneği" className="mb-3 inline-flex rounded-full border border-heritage-sand bg-white p-1">
           {modes.map((item) => <button key={item.id} type="button" aria-pressed={mode === item.id} onClick={() => select(item.id)} className={`min-h-9 rounded-full px-3 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise ${mode === item.id ? 'bg-heritage-turquoise-deep text-white' : 'text-gray-700 hover:text-heritage-turquoise-deep'}`}>{item.label}</button>)}
         </div>
