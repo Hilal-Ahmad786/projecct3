@@ -401,6 +401,18 @@ export function CorporateWebsiteGuidePage({ slug, locale }: { slug: string; loca
   </main>;
 }
 
+// Homepage-style split headings for the Turkish subpage heroes (static lead +
+// rotating words). The full heading above remains the H1's accessible text.
+const corporateRotatingHeadings: Record<CorporateWebsiteSubpageKey, { lead: string; words: string[] }> = {
+  features: { lead: 'Kurumsal Web Sitesi', words: ['Özellikleri', 'Modülleri', 'Entegrasyonları'] },
+  technologies: { lead: 'Kurumsal Web Sitesi', words: ['Teknolojileri', 'Altyapısı', 'Platformları'] },
+  process: { lead: 'Kurumsal Web Tasarım', words: ['Süreci', 'Aşamaları', 'Teslimi'] },
+  portfolio: { lead: 'Kurumsal Web Sitesi', words: ['Örnekleri', 'Projelerimiz'] },
+  pricing: { lead: 'Kurumsal Web Sitesi', words: ['Fiyatları', 'Proje Kapsamı', 'Maliyetleri'] },
+  blog: { lead: 'Kurumsal Web Tasarım', words: ['Rehberleri', 'Yazıları'] },
+  faq: { lead: 'Kurumsal Web Sitesi', words: ['Sık Sorulanlar', 'Merak Edilenler'] },
+};
+
 const sceneFor = (page: CorporateWebsiteSubpageKey) => {
   const props = { accent: '#0e7c7b' };
   switch (page) {
@@ -1009,6 +1021,7 @@ export default function CorporateWebsiteSubpage({ page, locale }: { page: Corpor
         crumbs={crumbs}
         scene={page === 'features' && locale === 'tr' ? <div className="mx-auto max-w-sm rounded-2xl border border-heritage-sand bg-white p-5 shadow-lg"><p className="text-overline text-heritage-turquoise-deep">Örnek gösterim · Sayfa modülleri</p><div className="mt-4 flex items-center gap-3 border-b border-gray-200 pb-3"><span className="flex h-9 w-9 items-center justify-center rounded-lg bg-heritage-turquoise-light text-heritage-turquoise-deep" aria-hidden="true">⌘</span><span className="h-2 w-28 rounded bg-heritage-sand" aria-hidden="true" /></div><div className="mt-4 grid grid-cols-2 gap-3">{['Şirket', 'Hizmetler', 'Ürün kataloğu', 'İletişim'].map(x => <span key={x} className="rounded-lg border border-gray-200 bg-background-gray px-3 py-3 text-xs font-medium text-gray-700">{x}</span>)}</div><p className="mt-4 text-xs leading-5 text-gray-500">Bu arayüz şematik bir örnektir; çalışan bir ürün ekranı değildir.</p></div> : sceneFor(page)}
         heading={page === 'features' && locale === 'tr' ? 'Kurumsal Web Sitesi Özellikleri ve Modülleri' : page === 'pricing' && locale === 'tr' ? 'Kurumsal Web Sitesi Fiyatları ve Proje Kapsamı' : page === 'process' && locale === 'tr' ? 'Kurumsal Web Tasarım Süreci' : page === 'technologies' && locale === 'tr' ? 'Kurumsal Web Sitesi Teknolojileri ve Altyapı Seçimi' : page === 'portfolio' && locale === 'tr' ? 'Kurumsal Web Sitesi Örnekleri ve Projelerimiz' : page === 'faq' && locale === 'tr' ? 'Kurumsal Web Sitesi Hakkında Sık Sorulan Sorular' : page === 'blog' && locale === 'tr' ? 'Kurumsal Web Tasarım Rehberleri' : undefined}
+        rotating={locale === 'tr' ? corporateRotatingHeadings[page] : undefined}
         actions={page === 'portfolio' && locale === 'tr' ? <>
           <Link href={localizedHref('/start-project?service=corporate-website-design', 'tr')} className="inline-flex min-h-11 items-center gap-2 rounded-sm bg-heritage-turquoise px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-heritage-turquoise-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2 motion-reduce:transition-none">Projenizi Konuşalım <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>
           <a href="#selected-projects" className="inline-flex min-h-11 items-center gap-2 rounded-sm border border-gray-300 bg-white px-5 py-3 text-sm font-semibold text-gray-800 transition-colors hover:border-heritage-turquoise hover:text-heritage-turquoise-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2 motion-reduce:transition-none">Projeleri İnceleyin <ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></a>

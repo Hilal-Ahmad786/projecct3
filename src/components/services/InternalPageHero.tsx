@@ -6,6 +6,7 @@
 import React from 'react';
 import Breadcrumbs, { type Crumb } from '@/components/Breadcrumbs';
 import { useTranslations } from '@/hooks/useTranslations';
+import RotatingHeading from '@/components/services/RotatingHeading';
 
 interface InternalPageHeroProps {
   serviceName: string;
@@ -21,6 +22,8 @@ interface InternalPageHeroProps {
   heading?: string;
   /** Optional page-specific calls to action below the introduction. */
   actions?: React.ReactNode;
+  /** Optional homepage-style split heading: static lead + rotating words. `heading` stays the full (screen-reader/crawlable) text. */
+  rotating?: { lead: string; words: string[] };
 }
 
 export default function InternalPageHero({
@@ -32,6 +35,7 @@ export default function InternalPageHero({
   accentHex = 'var(--heritage-turquoise)',
   heading,
   actions,
+  rotating,
 }: InternalPageHeroProps) {
   const { dir } = useTranslations();
 
@@ -56,12 +60,21 @@ export default function InternalPageHero({
             </div>
 
             {/* title */}
+            {rotating ? (
+              <RotatingHeading
+                full={heading || `${serviceName} ${accentWord}`}
+                lead={rotating.lead}
+                words={rotating.words}
+                className="text-display font-light text-gray-900 leading-none mb-6"
+              />
+            ) : (
             <h1
               className="hero-enter text-display font-light text-gray-900 leading-none mb-6"
               style={{ animationDelay: '0.1s' }}
             >
               {heading ? heading : <>{serviceName}<br /><span className="font-semibold" style={{ color: accentHex }}>{accentWord}</span></>}
             </h1>
+            )}
 
             <p
               className="hero-enter text-body text-gray-600 leading-relaxed"

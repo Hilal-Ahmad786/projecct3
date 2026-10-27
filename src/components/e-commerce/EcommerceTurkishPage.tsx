@@ -66,6 +66,18 @@ function Table({ headers, rows, label = 'E-ticaret kapsam karşılaştırma tabl
 }
 function Intro({ children }: { children: ReactNode }) { return <p className="mt-4 max-w-3xl text-body leading-relaxed text-gray-600">{children}</p>; }
 function VisualFigure({ name, caption, labels = [] }: { name: import('@/components/services/corporate-visuals/svgData').CorporateVisualName; caption: string; labels?: { slot: string; text: ReactNode; delay?: number }[] }) { return <figure className="m-0"><AnimatedVisual name={name} labels={labels}/><figcaption className="mt-3 text-xs leading-5 text-gray-600">Örnek gösterim · {caption}</figcaption></figure>; }
+// Homepage-style split headings for the subpage heroes (static lead + rotating
+// words); the full heading (m.heading) remains the H1's accessible text.
+const ecommerceRotatingHeadings: Record<Exclude<EcommercePageKey, 'overview'>, { lead: string; words: string[] }> = {
+  features: { lead: 'E-Ticaret Sitesi', words: ['Özellikleri', 'Entegrasyonları', 'Yönetim Paneli'] },
+  technologies: { lead: 'E-Ticaret', words: ['Altyapısı', 'Yazılımı', 'Platformları'] },
+  process: { lead: 'E-Ticaret Sitesi', words: ['Kurulum Süreci', 'Proje Aşamaları'] },
+  portfolio: { lead: 'E-Ticaret', words: ['Projeleri', 'Örnekleri'] },
+  pricing: { lead: 'E-Ticaret Sitesi', words: ['Fiyatları', 'Maliyetleri', 'Teklif Kapsamı'] },
+  blog: { lead: 'E-Ticaret', words: ['Rehberleri', 'Yazıları'] },
+  faq: { lead: 'E-Ticaret Sitesi', words: ['Sık Sorulanlar', 'Merak Edilenler'] },
+};
+
 function Hero({ page }: { page: EcommercePageKey }) {
   const m = meta[page];
   const scenes: Record<Exclude<EcommercePageKey, 'overview'>, ReactNode> = {
@@ -91,6 +103,7 @@ function Hero({ page }: { page: EcommercePageKey }) {
     serviceName="E-Ticaret"
     accentWord={labels[page]}
     heading={m.heading}
+    rotating={ecommerceRotatingHeadings[page as Exclude<EcommercePageKey, 'overview'>]}
     subtitle={m.intro}
     crumbs={[{ label: 'Ana Sayfa', href: '/' }, { label: 'Hizmetler', href: '/services' }, { label: 'E-Ticaret', href: '/services/e-commerce' }, { label: labels[page] }]}
     actions={<><CTA>{page === 'features' ? 'Hangi Özelliklere İhtiyacınız Var?' : 'Projenizi Konuşalım'}</CTA><CTA href={target} secondary>{label}</CTA></>}
@@ -116,7 +129,7 @@ const solutionCards: ServiceCard[] = [
 function ServiceGroup({ title, items, columns }: { title: string; items: ServiceCard[]; columns: string }) {
   return <div className="mt-8"><h3 className="text-title font-medium text-gray-900">{title}</h3><div className={`mt-4 grid gap-3 sm:grid-cols-2 ${columns}`}>
     {items.map(item => <A key={item.slug} href={`/tr/hizmetler/${item.slug}`} className="group flex min-h-40 h-full flex-col rounded-xl border border-heritage-sand bg-white p-4 transition-[border-color,box-shadow,transform] duration-200 hover:-translate-y-0.5 hover:border-heritage-turquoise hover:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2 motion-reduce:transition-none motion-reduce:transform-none">
-      <div className="flex h-10 items-center justify-between">{item.logo ? <Image src={item.logo} width={item.logoSize?.[0] ?? 40} height={item.logoSize?.[1] ?? 40} alt="" className="h-10 w-auto max-w-[9rem] object-contain object-left"/> : <span aria-hidden="true" className="flex h-9 w-9 items-center justify-center rounded-lg bg-heritage-turquoise-light text-heritage-turquoise-deep">{item.icon}</span>}<ArrowUpRightIcon className="h-4 w-4 text-gray-400 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 motion-reduce:transition-none" aria-hidden="true"/></div>
+      <div className="flex h-10 items-center justify-between">{item.logo ? <Image src={item.logo} width={item.logoSize?.[0] ?? 40} height={item.logoSize?.[1] ?? 40} alt="" className="h-10 w-auto max-w-[9rem] object-contain object-left"/> : <span aria-hidden="true" className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-heritage-turquoise-light text-heritage-turquoise-deep [&>svg]:block [&>svg]:h-5 [&>svg]:w-5 [&>svg]:shrink-0">{item.icon}</span>}<ArrowUpRightIcon className="h-4 w-4 text-gray-400 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 motion-reduce:transition-none" aria-hidden="true"/></div>
       <h4 className="mt-3 text-base font-semibold text-gray-900">{item.title}</h4><p className="mt-1.5 flex-1 text-sm leading-6 text-gray-600">{item.text}</p><span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-heritage-turquoise-deep">{item.link}<ArrowRightIcon className="h-4 w-4" aria-hidden="true"/></span>
     </A>)}
   </div></div>;

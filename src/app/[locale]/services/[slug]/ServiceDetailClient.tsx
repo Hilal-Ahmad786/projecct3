@@ -29,6 +29,7 @@ import { formatPrice } from '@/lib/currency';
 import { COMPANY_STATS } from '@/config/companyStats';
 import CorporateWebsiteOverview from '@/components/services/CorporateWebsiteOverview';
 import EcommercePlatformStrip from '@/components/e-commerce/EcommercePlatformStrip';
+import RotatingHeading from '@/components/services/RotatingHeading';
 
 // ── Types ────────────────────────────────────────────────────────────
 interface ProcessStep {
@@ -702,11 +703,15 @@ function HeroSection({
 
             {/* Title */}
             <div className="space-y-2">
+              {service.slug === 'e-commerce' && locale === 'tr' ? (
+                <RotatingHeading full={service.name} lead="İşletmenize Uygun" words={['E-Ticaret Sitesi', 'Mağaza Tasarımı', 'Mağaza Kurulumu']} />
+              ) : service.slug === 'corporate-website-design' && locale === 'tr' ? (
+                <RotatingHeading full={service.name} lead="Kurumsal" words={['Web Tasarım', 'Web Geliştirme', 'Web Sitesi']} />
+              ) : (
               <h1 className="text-display font-light text-gray-900 leading-none">
-                {((service.slug === 'corporate-website-design' || service.slug === 'e-commerce') && locale === 'tr')
-                  ? <><span className="font-semibold">{service.name}</span></>
-                  : <>{service.name.split(' ').slice(0, -1).join(' ')}{service.name.split(' ').length > 1 && <br />}<span className={`font-semibold ${colors.titleAccent}`}>{service.name.split(' ').length > 1 ? service.name.split(' ').slice(-1)[0] : service.name}</span></>}
+                <>{service.name.split(' ').slice(0, -1).join(' ')}{service.name.split(' ').length > 1 && <br />}<span className={`font-semibold ${colors.titleAccent}`}>{service.name.split(' ').length > 1 ? service.name.split(' ').slice(-1)[0] : service.name}</span></>
               </h1>
+              )}
             </div>
 
             {/* Description */}
