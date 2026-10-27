@@ -1,0 +1,78 @@
+@keyframes cv-from-left-far { from { opacity: 0; transform: translateX(-50px); } }
+@keyframes ecom-travel { 0% { opacity: 0; offset-distance: 0%; } 15% { opacity: 1; } 85% { opacity: 1; } 100% { opacity: 0; offset-distance: 100%; } }
+.cv-ecom-glyph-new-store[data-state] [data-part="tile"], .cv-ecom-glyph-improve[data-state] [data-part="tile"], .cv-ecom-glyph-migrate[data-state] [data-part="tile"], .cv-ecom-glyph-catalog[data-state] [data-part="tile"], .cv-ecom-glyph-payment[data-state] [data-part="tile"], .cv-ecom-glyph-handover[data-state] [data-part="tile"] { animation: cv-pop .4s var(--cv-ease) var(--cv-delay,0s) both; }
+.cv-ecom-glyph-new-store[data-state] [data-part="storefront"], .cv-ecom-glyph-improve[data-state] [data-part="page-new"], .cv-ecom-glyph-migrate[data-state] [data-part="box-target"], .cv-ecom-glyph-catalog[data-state] [data-part="node-root"], .cv-ecom-glyph-payment[data-state] [data-part="card"], .cv-ecom-glyph-handover[data-state] [data-part="checklist"] { animation: cv-rise .45s var(--cv-ease) calc(var(--cv-delay,0s) + .25s) both; }
+.cv-ecom-glyph-new-store[data-state] [data-part^="shelf-"], .cv-ecom-glyph-improve[data-state] [data-part="page-old"], .cv-ecom-glyph-improve[data-state] [data-part="sparkle"], .cv-ecom-glyph-payment[data-state] [data-part="truck"], .cv-ecom-glyph-payment[data-state] [data-part="check"], .cv-ecom-glyph-handover[data-state] [data-part="key"] { animation: cv-pop .4s var(--cv-ease) calc(var(--cv-delay,0s) + .55s) both; }
+.cv-ecom-glyph-new-store[data-state] [data-part="open-sign"] { animation: cv-pop .35s var(--cv-ease) calc(var(--cv-delay,0s) + .85s) both; }
+.cv-ecom-glyph-migrate[data-state] [data-part^="item-"] { animation: cv-from-left-far .5s var(--cv-ease) calc(var(--cv-delay,0s) + .45s) both; }
+.cv-ecom-glyph-catalog[data-state] [data-part^="node-"] { animation: cv-pop .35s var(--cv-ease) calc(var(--cv-delay,0s) + .45s) both; }
+.cv-ecom-glyph-catalog[data-state] [data-part="products"] { animation: cv-in .4s var(--cv-ease) calc(var(--cv-delay,0s) + .9s) both; }
+.cv-ecom-glyph-payment[data-state] [data-part="check-path"], .cv-ecom-glyph-handover[data-state] [data-part^="tick-"] { animation: cv-draw .3s var(--cv-ease) calc(var(--cv-delay,0s) + .75s) both; }
+.cv-ecom-glyph-payment[data-state] [data-part="link"] { animation: cv-draw .3s var(--cv-ease) calc(var(--cv-delay,0s) + .5s) both; }
+.cv-ecom-shopping-journey[data-state] [data-part="screen-list"] { animation: cv-rise .45s var(--cv-ease) calc(var(--cv-delay,0s) + 0s) both; }
+.cv-ecom-shopping-journey[data-state] [data-part="screen-detail"] { animation: cv-rise .45s var(--cv-ease) calc(var(--cv-delay,0s) + .15s) both; }
+.cv-ecom-shopping-journey[data-state] [data-part="screen-checkout"] { animation: cv-rise .45s var(--cv-ease) calc(var(--cv-delay,0s) + .3s) both; }
+.cv-ecom-shopping-journey[data-state] [data-part="chip-2"], .cv-ecom-shopping-journey[data-state] [data-part="swatch-2-selected"], .cv-ecom-shopping-journey[data-state] [data-part="size-2-selected"], .cv-ecom-shopping-journey[data-state] [data-part="pay-button"], .cv-ecom-shopping-journey[data-state] [data-part="order-done"] { animation: cv-pop .4s var(--cv-ease) calc(var(--cv-delay,0s) + .6s) both; }
+.cv-ecom-shopping-journey[data-state] [data-part="list-product-2"] { animation: cv-flash .6s var(--cv-ease) calc(var(--cv-delay,0s) + .9s) both; }
+.cv-ecom-shopping-journey[data-state] [data-part="flow-1"], .cv-ecom-shopping-journey[data-state] [data-part="flow-2"], .cv-ecom-shopping-journey[data-state] [data-part="order-check-path"] { animation: cv-draw .5s var(--cv-ease) calc(var(--cv-delay,0s) + 1.1s) both; }
+.cv-ecom-shopping-journey[data-state] [data-part="arrowhead-1"], .cv-ecom-shopping-journey[data-state] [data-part="arrowhead-2"] { animation: cv-in .2s var(--cv-ease) calc(var(--cv-delay,0s) + 1.5s) both; }
+.cv-ecom-shopping-journey[data-state] [data-part="tap-dot"] { animation: cv-blink .7s var(--cv-ease) calc(var(--cv-delay,0s) + 2.3s) both; }
+.cv-ecom-shopping-journey[data-state] [data-part^="cart-line-"] { animation: cv-grow-x .4s var(--cv-ease) calc(var(--cv-delay,0s) + 3s) both; transform-origin: left; }
+.cv-ecom-integration-hub[data-state] [data-part="hub"] { animation: cv-pop .45s var(--cv-ease) calc(var(--cv-delay,0s) + .1s) both; }
+.cv-ecom-integration-hub[data-state] [data-part^="spoke-"] { animation: cv-draw .4s var(--cv-ease) calc(var(--cv-delay,0s) + .3s) both; }
+.cv-ecom-integration-hub[data-state] [data-part^="sat-"] { animation: cv-rise .4s var(--cv-ease) calc(var(--cv-delay,0s) + .5s) both; }
+.cv-ecom-integration-hub [data-part^="packet-"] { opacity: 0; }
+.cv-ecom-integration-hub[data-state="play"] [data-part="packet-1"] { offset-path: path('M320 200 L105 79'); animation: ecom-travel 1.5s linear 1.6s 3; }
+.cv-ecom-integration-hub[data-state="play"] [data-part="packet-2"] { offset-path: path('M320 200 L320 70'); animation: ecom-travel 1.5s linear 1.72s 3; }
+.cv-ecom-integration-hub[data-state="play"] [data-part="packet-3"] { offset-path: path('M320 200 L555 79'); animation: ecom-travel 1.5s linear 1.84s 3; }
+.cv-ecom-integration-hub[data-state="play"] [data-part="packet-4"] { offset-path: path('M320 200 L105 309'); animation: ecom-travel 1.5s linear 1.96s 3; }
+.cv-ecom-integration-hub[data-state="play"] [data-part="packet-5"] { offset-path: path('M320 200 L320 316'); animation: ecom-travel 1.5s linear 2.08s 3; }
+.cv-ecom-integration-hub[data-state="play"] [data-part="packet-6"] { offset-path: path('M320 200 L555 309'); animation: ecom-travel 1.5s linear 2.2s 3; }
+.cv-ecom-migration[data-state] [data-part^="store-"] { animation: cv-rise .45s var(--cv-ease) calc(var(--cv-delay,0s) + .1s) both; }
+.cv-ecom-migration[data-state] [data-part="bridge"] { animation: cv-draw .45s var(--cv-ease) calc(var(--cv-delay,0s) + .35s) both; }
+.cv-ecom-migration[data-state] [data-part^="row-"] { animation: cv-from-left-far .45s var(--cv-ease) calc(var(--cv-delay,0s) + .55s) both; }
+.cv-ecom-migration[data-state] [data-part="redirect"] { animation: cv-pop .4s var(--cv-ease) calc(var(--cv-delay,0s) + 1.4s) both; }
+.cv-ecom-migration[data-state] [data-part="verify"] { animation: cv-pop .4s var(--cv-ease) calc(var(--cv-delay,0s) + 1.75s) both; }
+.cv-ecom-migration[data-state] [data-part="verify-path"] { animation: cv-draw .35s var(--cv-ease) calc(var(--cv-delay,0s) + 1.9s) both; }
+.cv-ecom-order-flow[data-state] [data-part^="status-"] { animation: cv-pop .35s var(--cv-ease) calc(var(--cv-delay,0s) + .25s) both; }
+.cv-ecom-order-flow[data-state] [data-part^="link-"] { animation: cv-draw .3s var(--cv-ease) calc(var(--cv-delay,0s) + .35s) both; }
+.cv-ecom-order-flow[data-state] [data-part="branch-path"], .cv-ecom-order-flow[data-state] [data-part="retry-path"] { animation: cv-draw .35s var(--cv-ease) calc(var(--cv-delay,0s) + 2s) both; }
+.cv-ecom-variant-picker[data-state] [data-part="gallery"] { animation: cv-rise .4s var(--cv-ease) calc(var(--cv-delay,0s) + .2s) both; }
+.cv-ecom-variant-picker[data-state] [data-part="swatch-active"], .cv-ecom-variant-picker[data-state] [data-part="size-active"], .cv-ecom-variant-picker[data-state] [data-part="stock-badge"], .cv-ecom-variant-picker[data-state] [data-part="add-button"] { animation: cv-pop .35s var(--cv-ease) calc(var(--cv-delay,0s) + .7s) both; }
+.cv-ecom-variant-picker[data-state] [data-part="sku-row"] { animation: cv-flash .5s var(--cv-ease) calc(var(--cv-delay,0s) + 1.1s) both; }
+.cv-ecom-architecture-demo .cv-ecom-architecture [data-part="arch-headless"] { opacity: 0; }
+.cv-ecom-architecture-demo[data-mode="headless"] .cv-ecom-architecture [data-part="arch-platform"] { opacity: 0; }
+.cv-ecom-architecture-demo[data-mode="headless"] .cv-ecom-architecture [data-part="arch-headless"] { opacity: 1; }
+.cv-ecom-architecture-demo .cv-ecom-architecture [data-part="arch-platform"], .cv-ecom-architecture-demo .cv-ecom-architecture [data-part="arch-headless"] { transition: opacity .4s var(--cv-ease); }
+.cv-ecom-architecture[data-state] [data-part^="h-link-"] { animation: cv-draw .4s var(--cv-ease) calc(var(--cv-delay,0s) + .2s) both; }
+.cv-ecom-launch-checklist[data-state] [data-part^="row-"] { animation: cv-rise .3s var(--cv-ease) calc(var(--cv-delay,0s) + .1s) both; }
+.cv-ecom-launch-checklist[data-state] [data-part^="tick-"] { animation: cv-draw .25s var(--cv-ease) calc(var(--cv-delay,0s) + .3s) both; }
+.cv-ecom-launch-checklist[data-state] [data-part="ready-badge"] { animation: cv-pop .4s var(--cv-ease) calc(var(--cv-delay,0s) + 2.5s) both; }
+.cv-ecom-cost-split[data-state] [data-part^="bucket-"] { animation: cv-rise .4s var(--cv-ease) calc(var(--cv-delay,0s) + .1s) both; }
+.cv-ecom-cost-split[data-state] [data-part^="chip-"] { animation: cv-pop .35s var(--cv-ease) calc(var(--cv-delay,0s) + .45s) both; }
+.cv-ecom-architecture .cv-label, .cv-ecom-cost-split .cv-label, .cv-ecom-integration-hub .cv-label, .cv-ecom-migration .cv-label, .cv-ecom-shopping-journey .cv-label, .cv-ecom-launch-checklist .cv-label { font-size: clamp(9px, 1vw, 12px); font-weight: 600; color: #354148; }
+@media (prefers-reduced-motion: reduce) {
+  .cv-ecom-architecture-demo .cv-ecom-architecture [data-part], .cv-ecom-integration-hub[data-state] [data-part], .cv-ecom-cost-split[data-state] [data-part] { animation: none !important; transition: none !important; }
+}
+/* Default static e-commerce scope (new store, one language); the corporate SVG defaults remain unchanged. */
+.scope-meters-ecom .cv-scope-meters [data-part="fill-1"] { transform: scaleX(.35); }
+.scope-meters-ecom .cv-scope-meters [data-part="fill-2"] { transform: scaleX(.45); }
+.scope-meters-ecom .cv-scope-meters [data-part="fill-3"] { transform: scaleX(.4); }
+.scope-meters-ecom .cv-scope-meters [data-part="fill-4"] { transform: scaleX(.25); }
+.scope-meters-ecom .cv-scope-meters [data-part="fill-5"] { transform: scaleX(.1); }
+.scope-meters-ecom .cv-scope-meters [data-part="fill-6"] { transform: scaleX(.15); }
+.ecom-project-image { overflow: hidden; background: #F8F8F8; }
+.ecom-project-image img { object-position: top; }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .group:hover .ecom-project-image img { object-position: bottom; }
+}
+.cv-ecom-stage-1[data-state] [data-part="ring-active"], .cv-ecom-stage-1[data-state] [data-part="icon-active"] { animation: cv-pop .4s var(--cv-ease) calc(var(--cv-delay,0s) + 0s) both; }
+.cv-ecom-stage-2[data-state] [data-part="ring-active"], .cv-ecom-stage-2[data-state] [data-part="icon-active"] { animation: cv-pop .4s var(--cv-ease) calc(var(--cv-delay,0s) + .35s) both; }
+.cv-ecom-stage-3[data-state] [data-part="ring-active"], .cv-ecom-stage-3[data-state] [data-part="icon-active"] { animation: cv-pop .4s var(--cv-ease) calc(var(--cv-delay,0s) + .7s) both; }
+.cv-ecom-stage-4[data-state] [data-part="ring-active"], .cv-ecom-stage-4[data-state] [data-part="icon-active"] { animation: cv-pop .4s var(--cv-ease) calc(var(--cv-delay,0s) + 1.05s) both; }
+.cv-ecom-stage-5[data-state] [data-part="ring-active"], .cv-ecom-stage-5[data-state] [data-part="icon-active"] { animation: cv-pop .4s var(--cv-ease) calc(var(--cv-delay,0s) + 1.4s) both; }
+.cv-ecom-stage-6[data-state] [data-part="ring-active"], .cv-ecom-stage-6[data-part="icon-active"] { animation: cv-pop .4s var(--cv-ease) calc(var(--cv-delay,0s) + 1.75s) both; }
+.cv-ecom-stage-1 [data-part="ring-active"], .cv-ecom-stage-1 [data-part="icon-active"], .cv-ecom-stage-2 [data-part="ring-active"], .cv-ecom-stage-2 [data-part="icon-active"], .cv-ecom-stage-3 [data-part="ring-active"], .cv-ecom-stage-3 [data-part="icon-active"], .cv-ecom-stage-4 [data-part="ring-active"], .cv-ecom-stage-4 [data-part="icon-active"], .cv-ecom-stage-5 [data-part="ring-active"], .cv-ecom-stage-5 [data-part="icon-active"], .cv-ecom-stage-6 [data-part="ring-active"], .cv-ecom-stage-6 [data-part="icon-active"] { opacity: 0; }
+@media (prefers-reduced-motion: reduce) {
+  .cv-ecom-stage-1[data-state] [data-part], .cv-ecom-stage-2[data-state] [data-part], .cv-ecom-stage-3[data-state] [data-part], .cv-ecom-stage-4[data-state] [data-part], .cv-ecom-stage-5[data-state] [data-part], .cv-ecom-stage-6[data-state] [data-part] { animation: none !important; transition: none !important; }
+}

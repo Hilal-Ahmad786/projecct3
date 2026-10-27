@@ -25,6 +25,15 @@ const DRAW_PATHS = {
   'page-builder': ['callout-line-1', 'callout-line-2', 'callout-line-3', 'callout-line-4', 'callout-line-5'],
   'cms-preview': ['publish-check-path'],
   'handoff-lanes': ['handoff-1', 'handoff-2', 'handoff-3', 'handoff-4', 'handoff-5'],
+  'ecom-glyph-migrate': ['link-path'],
+  'ecom-glyph-catalog': ['link-1', 'link-2', 'link-3'],
+  'ecom-glyph-payment': ['link', 'check-path'],
+  'ecom-glyph-handover': ['tick-1', 'tick-2', 'tick-3'],
+  'ecom-shopping-journey': ['flow-1', 'flow-2', 'order-check-path'],
+  'ecom-integration-hub': ['spoke-1', 'spoke-2', 'spoke-3', 'spoke-4', 'spoke-5', 'spoke-6'],
+  'ecom-migration': ['bridge', 'verify-path'],
+  'ecom-order-flow': ['link-1', 'link-2', 'link-3', 'link-4', 'branch-path', 'retry-path'],
+  'ecom-launch-checklist': ['tick-1', 'tick-2', 'tick-3', 'tick-4', 'tick-5', 'tick-6', 'tick-7', 'ready-check-path'],
 };
 
 const out = {};

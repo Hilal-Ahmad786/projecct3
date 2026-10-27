@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from 'react';
 import { corporateVisuals, type CorporateVisualName } from './svgData';
 import './corporate-visuals.css';
+import './ecom-visuals.css';
 
 // Playback states:
 // - undefined ("static"): no animation — the fully assembled final artwork.
