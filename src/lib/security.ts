@@ -91,6 +91,14 @@ export class SecurityManager {
     details: any,
     fingerprint: string
   ): void {
+    // Report each event type at most once per tab session — every beacon is a
+    // billed function invocation and repeats carry no new information.
+    try {
+      const key = `sec_logged_${type}`;
+      if (sessionStorage.getItem(key)) return;
+      sessionStorage.setItem(key, '1');
+    } catch {}
+
     // Use setTimeout to make it non-blocking
     setTimeout(() => {
       try {
