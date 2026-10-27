@@ -15,6 +15,14 @@ import { EcommerceTurkishOverviewBody, getEcommerceTurkishMeta } from '@/compone
 // Enable ISR - revalidate every hour for better performance
 export const revalidate = 3600;
 
+// Empty list = build nothing at deploy time, render each slug on its first
+// request and cache it as ISR. Without this export Next treats the [slug]
+// segment as fully dynamic and ignores `revalidate`: every request (and every
+// <Link> prefetch) was a fresh server render with 0% CDN caching.
+export function generateStaticParams() {
+  return [];
+}
+
 import { SITE_URL as baseUrl } from '@/config/site';
 
 const ogLocaleMap: Record<Locale, string> = {
