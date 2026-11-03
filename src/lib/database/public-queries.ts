@@ -574,7 +574,8 @@ export const getPublicBlogPostBySlug = unstable_cache(
 // slug from a database outage. Unlike the general blog helper above, this
 // query deliberately lets database errors reach the route error boundary.
 export const getPublicServiceBlogPostBySlug = unstable_cache(
-  async (slug: string, locale: string, category: string) => {
+  async (slug: string, locale: string, category: string, cacheVersion = '') => {
+    void cacheVersion;
     const { getBlogPostBySlug } = await import('@/lib/admin/database/blog-queries');
     const post = await getBlogPostBySlug(slug, locale);
     if (!post || post.status !== 'PUBLISHED' || !post.publishedAt || post.publishedAt > new Date()) return null;
@@ -589,7 +590,8 @@ export const getPublicServiceBlogPostBySlug = unstable_cache(
 // slug lookup above, errors propagate so the listing can tell an outage apart
 // from an empty blog.
 export const getPublicServiceBlogCards = unstable_cache(
-  async (category: string, locale: string, limit: number = 24) => {
+  async (category: string, locale: string, limit: number = 24, cacheVersion = '') => {
+    void cacheVersion;
     const posts = await getPrismaClient().blogPost.findMany({
       where: { status: 'PUBLISHED', publishedAt: { lte: new Date() }, category, language: locale },
       select: { slug: true, title: true, excerpt: true, featuredImage: true, publishedAt: true },

@@ -17,7 +17,7 @@ export function getIkasBlogMeta() {
 }
 
 export default async function IkasTurkishBlogPage() {
-  const posts = await getPublicServiceBlogCards('ikas-development', 'tr');
+  const posts = await getPublicServiceBlogCards('ikas-development', 'tr', 24, 'cover-images-2026-11');
   const blog = getServiceBlog('ikas-development', 'tr');
   const cards = posts.map((post) => {
     const presentation = blog ? getServiceArticlePresentation(blog, post.slug, post.title) : null;

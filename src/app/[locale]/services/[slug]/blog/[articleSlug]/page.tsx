@@ -34,7 +34,7 @@ async function getServiceBlogArticle(serviceSlug: string, locale: string, articl
   const blog = getServiceBlog(serviceSlug, locale);
   if (!blog) return null;
   const { getPublicServiceBlogPostBySlug } = await import('@/lib/database/public-queries');
-  const post = await getPublicServiceBlogPostBySlug(articleSlug, locale, serviceSlug);
+  const post = await getPublicServiceBlogPostBySlug(articleSlug, locale, serviceSlug, serviceSlug === 'ikas-development' ? 'cover-images-2026-11' : '');
   if (!post) notFound();
   return { blog, post, canonical: `${SITE_URL}${serviceBlogPath(blog.config)}/${articleSlug}` };
 }
@@ -122,7 +122,7 @@ export default async function CorporateWebsiteGuideRoute({ params }: PageProps) 
     const { blog, post } = serviceArticle;
     const { config, category, coverAlt } = getServiceArticlePresentation(blog, post.slug, post.title);
     const { getPublicServiceBlogCards } = await import('@/lib/database/public-queries');
-    const relatedPosts = (await getPublicServiceBlogCards(slug, locale).catch(() => []))
+    const relatedPosts = (await getPublicServiceBlogCards(slug, locale, 24, slug === 'ikas-development' ? 'cover-images-2026-11' : '').catch(() => []))
       .filter((card) => card.slug !== post.slug)
       .slice(0, 2)
       .map((card) => ({
