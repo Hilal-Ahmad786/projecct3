@@ -9,6 +9,7 @@ import type { Locale } from '@/lib/i18n';
 // content/blog/<folder>/ with a manifest.json.
 const SERVICE_BLOGS: Record<string, readonly string[]> = {
   'e-commerce': ['tr'],
+  'ikas-development': ['tr'],
 };
 
 export function hasServiceBlog(category: string | null | undefined, locale: string): boolean {

@@ -7,6 +7,7 @@ import BlogPageClient from './BlogPageClient';
 import { getServiceData, baseUrl } from '../_shared';
 import CorporateWebsiteSubpage, { getCorporateWebsiteSubpageMeta } from '@/components/services/CorporateWebsiteSubpage';
 import EcommerceTurkishPage, { getEcommerceTurkishMeta, getEcommerceTurkishSocialMeta } from '@/components/e-commerce/EcommerceTurkishPage';
+import IkasTurkishBlogPage, { getIkasBlogMeta } from '@/components/ikas/IkasTurkishBlogPage';
 
 export const revalidate = 3600;
 
@@ -30,17 +31,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const path = `/services/${slug}/blog`;
   const localizedPath = localizeFullPath(path, validLocale);
-  const customMeta = slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
+  const customMeta = slug === 'ikas-development' && validLocale === 'tr'
+    ? getIkasBlogMeta()
+    : slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('blog', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('blog') : null;
   return {
     title: customMeta?.title || `${data.service.name} — Articles & Insights | PakSoft`,
     description: customMeta?.description || `Practical guides, deep-dives, and lessons learned about ${data.service.name} from the PakSoft team.`,
     ...(slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishSocialMeta('blog', `${baseUrl}/${validLocale}${localizedPath}`) : {}),
-    alternates: {
-      canonical: `${baseUrl}/${validLocale}${localizedPath}`,
-      languages: generateAlternateLinks(path),
-    },
+    ...(slug === 'ikas-development' && validLocale === 'tr' ? { openGraph: { type: 'website', title: customMeta?.title, description: customMeta?.description, url: `${baseUrl}/${validLocale}${localizedPath}`, siteName: 'PakSoft', locale: 'tr_TR' }, twitter: { card: 'summary', title: customMeta?.title, description: customMeta?.description } } : {}),
+    alternates: slug === 'ikas-development' && validLocale === 'tr'
+      ? { canonical: `${baseUrl}/${validLocale}${localizedPath}` }
+      : { canonical: `${baseUrl}/${validLocale}${localizedPath}`, languages: generateAlternateLinks(path) },
   };
 }
 
@@ -54,6 +57,7 @@ export default async function ServiceBlogPage({ params }: PageProps) {
     return <CorporateWebsiteSubpage page="blog" locale={validLocale} />;
   }
   if (slug === 'e-commerce' && validLocale === 'tr') return <EcommerceTurkishPage page="blog" />;
+  if (slug === 'ikas-development' && validLocale === 'tr') return <IkasTurkishBlogPage />;
 
   // Posts are categorized at the parent-service level; fall back to the
   // service's own slug, then its category.

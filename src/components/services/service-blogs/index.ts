@@ -2,11 +2,13 @@ import { hasServiceBlog } from '@/lib/service-blogs';
 import type { ServiceArticleConfig } from '@/components/services/ServiceArticle';
 import type { ServiceBlogDefinition } from './types';
 import { ecommerceBlog } from './ecommerce';
+import { ikasBlog } from './ikas';
 
 // Presentation config per service blog. The list of enabled services/locales
 // lives in src/lib/service-blogs.ts (kept JSX-free for the sitemap).
 const definitions: Record<string, ServiceBlogDefinition> = {
   'e-commerce': ecommerceBlog,
+  'ikas-development': ikasBlog,
 };
 
 export function getServiceBlog(serviceSlug: string, locale: string): ServiceBlogDefinition | null {

@@ -123,13 +123,13 @@ export default async function CorporateWebsiteGuideRoute({ params }: PageProps) 
     const { config, category, coverAlt } = getServiceArticlePresentation(blog, post.slug, post.title);
     const { getPublicServiceBlogCards } = await import('@/lib/database/public-queries');
     const relatedPosts = (await getPublicServiceBlogCards(slug, locale).catch(() => []))
-      .filter((card) => card.slug !== post.slug && card.featuredImage)
+      .filter((card) => card.slug !== post.slug)
       .slice(0, 2)
       .map((card) => ({
         slug: card.slug,
         title: card.title,
         excerpt: card.excerpt || '',
-        coverImage: card.featuredImage!,
+        coverImage: card.featuredImage,
         category: getServiceArticlePresentation(blog, card.slug, card.title).category,
       }));
     const published = isoDay(post.publishedAt);
@@ -142,7 +142,7 @@ export default async function CorporateWebsiteGuideRoute({ params }: PageProps) 
         category,
         standfirst: post.excerpt || post.metaDescription || '',
         metaDescription: post.metaDescription || post.excerpt || '',
-        coverImage: post.featuredImage || '/images/og-image.jpg',
+        coverImage: post.featuredImage,
         coverAlt,
         datePublished: published,
         // Same-day re-publishes are not shown as "updated".

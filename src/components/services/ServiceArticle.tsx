@@ -27,7 +27,7 @@ export type ServiceArticleData = {
   category: string;
   standfirst: string;
   metaDescription: string;
-  coverImage: string;
+  coverImage?: string | null;
   coverAlt: string;
   /** YYYY-MM-DD */
   datePublished: string;
@@ -42,7 +42,7 @@ export type ServiceArticleRelated = {
   title: string;
   category: string;
   excerpt: string;
-  coverImage: string;
+  coverImage?: string | null;
 };
 
 export type ServiceArticleConfig = {
@@ -239,7 +239,7 @@ export function ServiceArticlePage({ article, config, related, relatedPosts }: {
       headline={article.title}
       description={article.metaDescription}
       url={articleUrl}
-      image={`${SITE_URL}${article.coverImage}`}
+      image={article.coverImage ? `${SITE_URL}${article.coverImage}` : undefined}
       datePublished={article.datePublished}
       dateModified={article.dateModified}
       section={config.jsonLdSection ?? article.category}
@@ -276,7 +276,7 @@ export function ServiceArticlePage({ article, config, related, relatedPosts }: {
               <span className="inline-flex items-center gap-2"><ClockIcon className="h-4 w-4 text-heritage-turquoise-deep" aria-hidden="true" />Yaklaşık {readingMinutes} dk okuma</span>
             </div>
           </div>
-          <Image src={article.coverImage} alt={article.coverAlt} width={1672} height={941} priority sizes="(max-width: 1024px) 100vw, 1152px" className="relative z-0 block h-auto w-full" />
+          {article.coverImage ? <Image src={article.coverImage} alt={article.coverAlt} width={1672} height={941} priority sizes="(max-width: 1024px) 100vw, 1152px" className="relative z-0 block h-auto w-full" /> : <div aria-hidden="true" className="hidden min-h-[25rem] bg-gradient-to-br from-heritage-ivory via-background-gray to-heritage-turquoise-light/50 lg:block" />}
         </div>
       </div>
     </section>
@@ -297,10 +297,10 @@ export function ServiceArticlePage({ article, config, related, relatedPosts }: {
           {(relatedPosts?.length || related) ? <section aria-labelledby="related-reading" className="mt-16 border-t border-gray-200 pt-10">
             <h2 id="related-reading" className="text-xl font-semibold text-gray-950">İlgili rehberler</h2>
             <div className="mt-4 grid gap-4 md:grid-cols-2">
-              {(relatedPosts?.length ? relatedPosts : related ? [related] : []).map((item) => <Link key={item.slug} href={`${blogListingPath}/${item.slug}`} className={`reveal corporate-info-card group grid h-full overflow-hidden rounded-xl border border-gray-200 bg-white sm:grid-cols-[10rem_1fr] ${focusRing}`}>
-                <span className="relative block aspect-video bg-background-gray sm:aspect-auto">
+              {(relatedPosts?.length ? relatedPosts : related ? [related] : []).map((item) => <Link key={item.slug} href={`${blogListingPath}/${item.slug}`} className={`reveal corporate-info-card group grid h-full overflow-hidden rounded-xl border border-gray-200 bg-white ${item.coverImage ? 'sm:grid-cols-[10rem_1fr]' : ''} ${focusRing}`}>
+                {item.coverImage ? <span className="relative block aspect-video bg-background-gray sm:aspect-auto">
                   <Image src={item.coverImage} alt="" fill loading="lazy" sizes="(max-width: 640px) 100vw, 160px" className="object-cover object-right" />
-                </span>
+                </span> : null}
                 <span className="block p-5">
                   <span className="text-overline text-heritage-turquoise-deep">{item.category}</span>
                   <span className="mt-1 block font-semibold leading-snug text-gray-950">{item.title}</span>

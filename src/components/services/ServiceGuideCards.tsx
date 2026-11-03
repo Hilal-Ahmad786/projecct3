@@ -8,8 +8,8 @@ export type ServiceGuideCard = {
   title: string;
   category: string;
   excerpt: string;
-  image: string;
-  imageAlt: string;
+  image?: string | null;
+  imageAlt?: string;
   publishedAt?: string | null;
   readingMinutes?: number;
 };
@@ -28,16 +28,16 @@ export default function ServiceGuideCards({ cards, headingLevel = 'h3', reveal =
             href={article.href}
             className="corporate-info-card group flex h-full flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2"
           >
-            <span className="relative block aspect-[1672/941] overflow-hidden bg-background-gray">
+            {article.image ? <span className="relative block aspect-[1672/941] overflow-hidden bg-background-gray">
               <Image
                 src={article.image}
-                alt={article.imageAlt}
+                alt={article.imageAlt ?? ''}
                 fill
                 loading="lazy"
                 sizes="(max-width: 768px) 100vw, 560px"
                 className="object-cover transition-transform duration-500 group-hover:scale-[1.02] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
               />
-            </span>
+            </span> : null}
             <span className="flex flex-1 flex-col p-5 sm:p-6">
               <span className="text-overline text-heritage-turquoise-deep">{article.category}</span>
               <Heading className="mt-2 text-lg font-semibold leading-snug text-gray-950 sm:text-xl">{article.title}</Heading>
