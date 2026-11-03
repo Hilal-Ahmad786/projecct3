@@ -1,8 +1,9 @@
 import { Metadata } from 'next';
-import { notFound } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
 import { Locale, locales, defaultLocale } from '@/lib/i18n';
 import { ArticleJsonLd, BreadcrumbJsonLd } from '@/components/seo/JsonLd';
 import BlogPostView from './BlogPostView';
+import { localizeFullPath } from '@/lib/routes';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -49,7 +50,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const l = localized(post, validLocale);
   const title = (l.metaTitle || `${l.title} | PakSoft Blog`).slice(0, 70);
   const description = (l.metaDescription || l.excerpt || `${l.title} — insights from the PakSoft team.`).slice(0, 200);
-  const url = `${baseUrl}/${validLocale}/blog/${slug}`;
+  const isTurkishEcommerceArticle = validLocale === 'tr' && post.category === 'e-commerce' && post.language === 'tr';
+  const url = isTurkishEcommerceArticle
+    ? `${baseUrl}/tr${localizeFullPath(`/services/e-commerce/blog/${slug}`, 'tr')}`
+    : `${baseUrl}/${validLocale}/blog/${slug}`;
 
   // Posts are single-language (BlogPost.language). When this URL's locale
   // doesn't match the post's language and no translation row exists, the page
@@ -86,6 +90,10 @@ export default async function BlogPostPage({ params }: PageProps) {
   // Real 404 for unknown slugs — previously this rendered an empty page with
   // HTTP 200 (a soft-404 that Google indexes and demotes).
   if (!post) notFound();
+
+  if (validLocale === 'tr' && post.category === 'e-commerce' && post.language === 'tr') {
+    permanentRedirect(`/tr${localizeFullPath(`/services/e-commerce/blog/${slug}`, 'tr')}`);
+  }
 
   const l = post ? localized(post, validLocale) : null;
   const url = `${baseUrl}/${validLocale}/blog/${slug}`;

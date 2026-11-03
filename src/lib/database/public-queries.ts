@@ -570,13 +570,28 @@ export const getPublicBlogPostBySlug = unstable_cache(
   BLOG_CACHE_OPTS,
 );
 
+// Service-specific article pages need to distinguish an unpublished/missing
+// slug from a database outage. Unlike the general blog helper above, this
+// query deliberately lets database errors reach the route error boundary.
+export const getPublicServiceBlogPostBySlug = unstable_cache(
+  async (slug: string, locale: string, category: string) => {
+    const { getBlogPostBySlug } = await import('@/lib/admin/database/blog-queries');
+    const post = await getBlogPostBySlug(slug, locale);
+    if (!post || post.status !== 'PUBLISHED' || !post.publishedAt || post.publishedAt > new Date()) return null;
+    if (post.category !== category || post.language !== locale) return null;
+    return post;
+  },
+  ['public:service-blog-post-by-slug'],
+  BLOG_CACHE_OPTS,
+);
+
 // Sitemap only needs slug + dates — not translations or full markdown content.
 export const getBlogSlugsForSitemap = unstable_cache(
   async () => {
     try {
       return await getPrismaClient().blogPost.findMany({
         where: { status: 'PUBLISHED', publishedAt: { lte: new Date() } },
-        select: { slug: true, publishedAt: true, updatedAt: true, language: true },
+        select: { slug: true, publishedAt: true, updatedAt: true, language: true, category: true },
         orderBy: { publishedAt: 'desc' },
         take: 1000,
       });

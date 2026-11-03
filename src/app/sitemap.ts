@@ -57,7 +57,7 @@ const toolRoutes = [
 const serviceSubPages = ['/features', '/process', '/technologies', '/pricing', '/faq'];
 
 // Blog posts are pulled live from the DB inside sitemap() (see below).
-async function getBlogPostsForSitemap(): Promise<{ slug: string; date: Date; language: string }[]> {
+async function getBlogPostsForSitemap(): Promise<{ slug: string; date: Date; language: string; category: string }[]> {
   try {
     // Cached, slug+dates-only query — the old path pulled every post's full
     // markdown content and all translations, uncached, on each regeneration.
@@ -65,10 +65,11 @@ async function getBlogPostsForSitemap(): Promise<{ slug: string; date: Date; lan
     const posts = await getBlogSlugsForSitemap();
     return posts
       .filter((p: { slug?: string }) => !!p.slug)
-      .map((p: { slug: string; publishedAt?: Date | string | null; updatedAt?: Date | string; language?: string }) => ({
+      .map((p: { slug: string; publishedAt?: Date | string | null; updatedAt?: Date | string; language?: string; category?: string }) => ({
         slug: p.slug,
         date: new Date(p.publishedAt || p.updatedAt || DATES.seoRefresh),
         language: p.language || 'en',
+        category: p.category || 'general',
       }));
   } catch {
     return [];
@@ -185,9 +186,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // (BlogPost.language), so list it once under its own locale — advertising
   // every slug under all 5 locales created duplicate URLs with bogus hreflang.
   const blogPosts = await getBlogPostsForSitemap();
-  blogPosts.forEach(({ slug, date, language }) => {
+  blogPosts.forEach(({ slug, date, language, category }) => {
     const loc = (allLocales as string[]).includes(language) ? (language as Locale) : 'en';
-    entries.push(entry(loc, `/blog/${slug}`, {
+    const path = loc === 'tr' && category === 'e-commerce'
+      ? `/services/e-commerce/blog/${slug}`
+      : `/blog/${slug}`;
+    entries.push(entry(loc, path, {
       priority: PRIORITY.blogPost,
       changeFreq: 'weekly',
       date,

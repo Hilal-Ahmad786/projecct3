@@ -118,7 +118,7 @@ function calculateReadingTime(content: string): number {
   return Math.ceil(words / wordsPerMinute);
 }
 
-export default function BlogPostView({ initialPost = null }: { initialPost?: BlogPost | null }) {
+export default function BlogPostView({ initialPost = null, serviceBlogHref, serviceBlogImageAlt }: { initialPost?: BlogPost | null; serviceBlogHref?: string; serviceBlogImageAlt?: string }) {
   const params = useParams();
   const locale = (params?.locale as string) || 'en';
   const slug = params?.slug as string;
@@ -226,13 +226,27 @@ export default function BlogPostView({ initialPost = null }: { initialPost?: Blo
 
   const content = getPostContent();
   const readingTime = calculateReadingTime(content.content);
+  const backHref = serviceBlogHref || `/${locale}/blog`;
+  const backLabel = serviceBlogHref && locale === 'tr' ? 'E-Ticaret Rehberlerine Dön' : t('backToBlog');
+  const articleHeadings = serviceBlogHref
+    ? Array.from(content.content.matchAll(/^##\s+(.+)$/gm), (match) => ({
+        title: match[1].trim(),
+        id: match[1].trim().toLocaleLowerCase('tr-TR').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ı/g, 'i').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''),
+      }))
+    : [];
 
   return (
     <div className="min-h-screen bg-white" dir={isRTL ? 'rtl' : 'ltr'}>
       {/* Hero Section */}
       <section className="pt-24 pb-0">
         {/* Featured Image */}
-        {post.featuredImage ? (
+        {post.featuredImage && serviceBlogHref ? (
+          <div className="mx-auto w-full max-w-7xl px-4">
+            <div className="relative aspect-[1672/941] max-h-[640px] overflow-hidden rounded-2xl border border-heritage-sand bg-heritage-ivory shadow-sm">
+              <img src={post.featuredImage} alt={serviceBlogImageAlt || content.title} width={1672} height={941} fetchPriority="high" className="h-full w-full object-contain" />
+            </div>
+          </div>
+        ) : post.featuredImage ? (
           <div className="relative h-[400px] md:h-[500px] w-full">
             <img
               src={post.featuredImage}
@@ -257,11 +271,11 @@ export default function BlogPostView({ initialPost = null }: { initialPost?: Blo
           <div className="max-w-3xl mx-auto">
             {/* Back Link */}
             <Link
-              href={`/${locale}/blog`}
+              href={backHref}
               className="inline-flex items-center gap-2 text-gray-500 hover:text-emerald-600 transition-colors mb-8"
             >
               <ArrowLeftIcon className={`w-4 h-4 ${isRTL ? 'rotate-180' : ''}`} />
-              {t('backToBlog')}
+              {backLabel}
             </Link>
 
             {/* Post Header */}
@@ -299,7 +313,7 @@ export default function BlogPostView({ initialPost = null }: { initialPost?: Blo
               </div>
 
               {/* Breadcrumbs */}
-              <Breadcrumbs className="mb-4" items={[{ label: 'Home', href: '/' }, { label: 'Blog', href: '/blog' }, { label: content.title }]} />
+              <Breadcrumbs structuredData={!serviceBlogHref} className="mb-4" items={serviceBlogHref ? [{ label: 'Ana Sayfa', href: '/' }, { label: 'Hizmetler', href: '/services' }, { label: 'E-Ticaret', href: '/services/e-commerce' }, { label: 'Rehberler', href: '/services/e-commerce/blog' }, { label: content.title }] : [{ label: 'Home', href: '/' }, { label: 'Blog', href: '/blog' }, { label: content.title }]} />
 
               {/* Title */}
               <h1 className="text-display font-light text-gray-900 mb-6 leading-none">
@@ -339,7 +353,16 @@ export default function BlogPostView({ initialPost = null }: { initialPost?: Blo
               </div>
             </motion.div>
 
-            <BlogInternalLinksCta locale={locale as Locale} compact />
+            {!serviceBlogHref && <BlogInternalLinksCta locale={locale as Locale} compact />}
+
+            {articleHeadings.length > 0 && (
+              <nav aria-label="Bu rehberde" className="mb-8 rounded-xl border border-heritage-sand bg-heritage-ivory p-4 sm:p-5">
+                <h2 className="text-sm font-semibold text-gray-900">Bu rehberde</h2>
+                <ul className="mt-3 grid gap-x-5 gap-y-2 text-sm sm:grid-cols-2">
+                  {articleHeadings.map((heading) => <li key={heading.id}><a href={`#${heading.id}`} className="text-heritage-turquoise-deep underline underline-offset-4 hover:text-heritage-turquoise focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">{heading.title}</a></li>)}
+                </ul>
+              </nav>
+            )}
 
             {/* Post Content */}
             <motion.article
@@ -349,20 +372,20 @@ export default function BlogPostView({ initialPost = null }: { initialPost?: Blo
               className="blog-article max-w-none"
               dir={isRTL ? 'rtl' : 'ltr'}
             >
-              <MarkdownContent content={content.content} />
+              <MarkdownContent content={content.content} serviceArticle={Boolean(serviceBlogHref)} />
             </motion.article>
 
-            <BlogInternalLinksCta locale={locale as Locale} />
+            {!serviceBlogHref && <BlogInternalLinksCta locale={locale as Locale} />}
 
             {/* Bottom CTA */}
             <div className="mt-12 pt-8 border-t border-gray-200">
               <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                 <Link
-                  href={`/${locale}/blog`}
+                  href={backHref}
                   className="inline-flex items-center gap-2 text-gray-600 hover:text-emerald-600 transition-colors"
                 >
                   <ArrowLeftIcon className={`w-4 h-4 ${isRTL ? 'rotate-180' : ''}`} />
-                  {t('backToBlog')}
+                  {backLabel}
                 </Link>
                 <button
                   onClick={handleShare}

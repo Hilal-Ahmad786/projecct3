@@ -15,7 +15,7 @@ export interface Crumb {
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
-export default function Breadcrumbs({ items, className = '' }: { items: Crumb[]; className?: string }) {
+export default function Breadcrumbs({ items, className = '', structuredData = true }: { items: Crumb[]; className?: string; structuredData?: boolean }) {
   const { dir, locale } = useTranslations();
   const prefersReducedMotion = useReducedMotion();
   const isRTL = dir === 'rtl';
@@ -33,7 +33,7 @@ export default function Breadcrumbs({ items, className = '' }: { items: Crumb[];
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      {structuredData && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />}
       <motion.nav
         aria-label="Breadcrumb"
         {...(prefersReducedMotion ? {} : { initial: { opacity: 0, y: -6 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.3 } })}
