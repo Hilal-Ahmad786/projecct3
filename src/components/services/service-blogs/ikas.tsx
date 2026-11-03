@@ -6,9 +6,9 @@ const servicePath = '/tr/hizmetler/ikas-development';
 const enquiryPath = '/tr/start-project?service=ikas-development';
 
 function ExampleGrid({ title, items, note }: { title: string; items: { title: string; text: string; Icon: typeof CheckCircleIcon }[]; note?: string }) {
-  return <figure className="reveal my-8 overflow-hidden rounded-2xl border border-heritage-sand bg-heritage-ivory sm:my-10">
+  return <figure data-ikas-reveal className="reveal my-8 overflow-hidden rounded-2xl border border-heritage-sand bg-heritage-ivory sm:my-10">
     <figcaption className="border-b border-heritage-sand px-4 py-4 text-sm font-semibold text-gray-900 sm:px-6">{title}</figcaption>
-    <ul className="grid gap-3 p-4 sm:grid-cols-2 sm:p-6 lg:grid-cols-3">{items.map(({ title: heading, text, Icon }) => <li key={heading} className="rounded-xl border border-heritage-sand bg-white p-4">
+    <ul className="grid gap-3 p-4 sm:grid-cols-2 sm:p-6 lg:grid-cols-3">{items.map(({ title: heading, text, Icon }, index) => <li key={heading} data-ikas-reveal data-ikas-delay={index * 55} className="ikas-card-motion rounded-xl border border-heritage-sand bg-white p-4">
       <Icon className="h-5 w-5 text-heritage-turquoise-deep" aria-hidden="true" /><strong className="mt-3 block text-sm font-semibold text-gray-900">{heading}</strong><span className="mt-1 block text-sm leading-6 text-gray-700">{text}</span>
     </li>)}</ul>{note ? <p className="border-t border-heritage-sand px-4 py-3 text-sm leading-6 text-gray-700 sm:px-6">{note}</p> : null}
   </figure>;

@@ -151,6 +151,7 @@ export default async function CorporateWebsiteGuideRoute({ params }: PageProps) 
         keywords: post.tags,
       }}
       relatedPosts={relatedPosts}
+      motionScope={slug === 'ikas-development' && locale === 'tr' ? 'ikas' : undefined}
     />;
   }
   if (slug !== 'corporate-website-design' || (locale !== 'en' && locale !== 'tr')) notFound();

@@ -24,6 +24,12 @@ interface InternalPageHeroProps {
   actions?: React.ReactNode;
   /** Optional homepage-style split heading: static lead + rotating words. `heading` stays the full (screen-reader/crawlable) text. */
   rotating?: { lead: string; words: string[] };
+  /** Optional mark shown before the eyebrow text (e.g. a platform logo). */
+  eyebrowIcon?: React.ReactNode;
+  /** Keep the eyebrow's own casing (brand names such as "ikas" must not be uppercased). */
+  eyebrowNormalCase?: boolean;
+  /** Optional small note below the actions (e.g. a platform link). */
+  footnote?: React.ReactNode;
 }
 
 export default function InternalPageHero({
@@ -36,6 +42,9 @@ export default function InternalPageHero({
   heading,
   actions,
   rotating,
+  eyebrowIcon,
+  eyebrowNormalCase = false,
+  footnote,
 }: InternalPageHeroProps) {
   const { dir } = useTranslations();
 
@@ -55,8 +64,8 @@ export default function InternalPageHero({
                 and animates at first paint; reduced motion disables it. */}
             {/* eyebrow */}
             <div className="hero-enter flex items-center gap-3 mb-6">
-              <div className="w-8 h-0.5" style={{ background: accentHex }} />
-              <span className="text-overline" style={{ color: accentHex }}>{accentWord}</span>
+              {eyebrowIcon ?? <div className="w-8 h-0.5" style={{ background: accentHex }} />}
+              <span className={eyebrowNormalCase ? 'text-sm font-semibold tracking-wide' : 'text-overline'} style={{ color: accentHex }}>{accentWord}</span>
             </div>
 
             {/* title */}
@@ -84,6 +93,7 @@ export default function InternalPageHero({
             </p>
 
             {actions && <div className="hero-enter mt-6 flex flex-wrap gap-3" style={{ animationDelay: '0.3s' }}>{actions}</div>}
+            {footnote && <div className="hero-enter mt-5" style={{ animationDelay: '0.35s' }}>{footnote}</div>}
           </div>
 
           {scene && (

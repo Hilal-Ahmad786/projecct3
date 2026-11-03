@@ -324,9 +324,11 @@ export function NeuralLayersScene() {
 }
 
 /* ── product-grid (storefront + add to cart) ─────────────────────── */
-export function ProductGridScene({ ratings = true }: { ratings?: boolean } = {}) {
+export function ProductGridScene({ ratings = true, ambientMotion = true }: { ratings?: boolean; ambientMotion?: boolean } = {}) {
   const reduced = useReducedMotion();
   const L = useSceneLabels();
+  const draw = (delay: number, duration: number) => reduced ? { initial: false as const } : drawIn(delay, duration);
+  const pop = (delay: number) => reduced ? { initial: false as const } : popIn(delay);
   const cells = [[44, 60], [128, 60], [44, 134], [128, 134]];
   const flyD = 'M 152 96 Q 180 40 196 50';
   return (
@@ -334,9 +336,9 @@ export function ProductGridScene({ ratings = true }: { ratings?: boolean } = {})
       <GirihHalo color={H.saffron} opacity={0.16} />
       <HeritageParticles count={7} colors={[H.turquoise, H.saffron, H.terracotta]} />
       <svg viewBox="0 0 240 240" className={SVG}>
-        <motion.rect x="28" y="46" width="184" height="158" rx="12" fill={H.white} stroke={H.sand} strokeWidth="2" {...drawIn(0.2, 1)} />
+        <motion.rect x="28" y="46" width="184" height="158" rx="12" fill={H.white} stroke={H.sand} strokeWidth="2" {...draw(0.2, 1)} />
         {cells.map(([x, y], i) => (
-          <motion.g key={i} {...popIn(0.7 + i * 0.14)}>
+          <motion.g key={i} {...pop(0.7 + i * 0.14)}>
             <rect x={x} y={y} width="68" height="60" rx="8" fill={H.ivory} stroke={H.sand} />
             <rect x={x} y={y} width="68" height="34" rx="8" fill={`${H.turquoise}1c`} />
             <polygon points={starPoints(x + 34, y + 17, 11, 6)} fill="none" stroke={H.turquoise} strokeWidth="1.4" />
@@ -346,18 +348,18 @@ export function ProductGridScene({ ratings = true }: { ratings?: boolean } = {})
           </motion.g>
         ))}
         {/* cart */}
-        <motion.g {...popIn(1.4)}>
+        <motion.g {...pop(1.4)}>
           <circle cx="196" cy="50" r="16" fill={H.turquoise} />
           <path d="M188 45 h12 l-1.5 9 h-9 z M190 58 a1.6 1.6 0 1 0 0.1 0 M198 58 a1.6 1.6 0 1 0 0.1 0" fill="none" stroke={H.white} strokeWidth="1.6" strokeLinejoin="round" />
         </motion.g>
         {/* add-to-cart arc */}
-        {!reduced && (
+        {!reduced && ambientMotion && (
           <>
             <PathDot d={flyD} color={H.saffron} size={9} duration={1.6} delay={1.8} />
             <motion.circle cx="196" cy="50" r="16" fill="none" stroke={H.saffron} strokeWidth="2" animate={{ r: [16, 26], opacity: [0, 0.8, 0] }} transition={{ duration: 1, repeat: Infinity, delay: 3.3, repeatDelay: 2.2 }} />
           </>
         )}
-        <motion.g {...popIn(2)}>
+        <motion.g {...pop(2)}>
           <rect x="44" y="186" width="60" height="18" rx="9" fill={H.terracotta} />
           <text x="74" y="199" textAnchor="middle" fontSize="9.5" fontWeight="700" fill={H.white}>{L('inStock', 'In stock')}</text>
         </motion.g>

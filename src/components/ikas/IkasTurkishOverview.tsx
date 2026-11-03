@@ -6,7 +6,12 @@ import {
 } from '@heroicons/react/24/outline';
 import WhatsAppButton from '@/components/services/WhatsAppButton';
 import { GirihHalo, HeritageParticles, H } from '@/components/services/hero-visuals/primitives';
-import { IKAS_TR_BASE as base, IKAS_TR_ENQUIRY as enquiry, IKAS_TR_FAQ } from './ikasTurkishCopy';
+import { IKAS_TR_BASE as base, IKAS_TR_ENQUIRY as enquiry, IKAS_TR_FAQ, IKAS_INTEGRATIONS_URL } from './ikasTurkishCopy';
+import IkasMotionScope from './IkasMotionScope';
+import { IkasExternalLink, IkasIcon } from './IkasMark';
+import IkasVisual from './visuals/IkasVisual';
+import type { IkasVisualName } from './visuals/generated';
+import { IkasAppsSection, IkasStoreCase } from './IkasShowcase';
 
 // Server-rendered body (sections 02–14) of the Turkish ikas overview. The hero
 // (01) stays in ServiceDetailClient so its animation is unchanged. Only the
@@ -60,12 +65,12 @@ const startingPoints = [
 ];
 
 const services = [
-  { title: 'Mağaza kurulumu ve temel yapılandırma', text: 'Alan adı bağlantısı, mağaza bilgileri, menüler ve gerekli içerik sayfaları için kurulum planı oluştururuz. Platform paketinizin sunduğu özelliklerle ihtiyaçlarınızın eşleşmesini kontrol ederiz.', Icon: BuildingStorefrontIcon },
-  { title: 'Tema tasarımı ve özelleştirme', text: 'Ana sayfa, kategori ve ürün sunumunu marka kimliğinize göre düzenleriz. Hazır temanın uyarlanması ile özel bölüm veya bileşen geliştirilmesini ayrı değerlendiririz.', Icon: PaintBrushIcon },
-  { title: 'Ürün, kategori ve varyant düzeni', text: 'Ürün bilgilerini, kategori ilişkilerini, varyantları ve görselleri düzenli bir katalog yapısında ele alırız. Aktarım öncesinde örnek veri üzerinden eksikleri ve eşleştirmeleri belirleriz.', Icon: Squares2X2Icon },
-  { title: 'Ödeme, kargo ve iş sistemi bağlantıları', text: 'İhtiyaç duyulan servisleri mevcut ikas imkanları ve sağlayıcı koşulları üzerinden inceleriz. Bağlantının kurulmasıyla birlikte hangi sipariş ve veri akışlarının kontrol edileceğini tanımlarız.', Icon: CreditCardIcon },
-  { title: 'Platform geçişi ve veri aktarımı', text: 'Kaynak sistemdeki verileri ve yeni mağazada kullanılacak alanları eşleştiririz. Geçişin ürün, içerik, URL ve bağlantı kapsamını yazılı bir planla yönetiriz.', Icon: ArrowsRightLeftIcon },
-  { title: 'Test, eğitim ve yayın sonrası destek', text: 'Kararlaştırılan alışveriş akışlarını kontrol eder; mağaza yönetimini ve yapılan ayarları ekibinize aktarırız. Yayın sonrası desteğin süresini ve kapsamını teklifte ayrıca belirtiriz.', Icon: WrenchScrewdriverIcon },
+  { title: 'Mağaza kurulumu ve temel yapılandırma', text: 'Alan adı bağlantısı, mağaza bilgileri, menüler ve gerekli içerik sayfaları için kurulum planı oluştururuz. Platform paketinizin sunduğu özelliklerle ihtiyaçlarınızın eşleşmesini kontrol ederiz.', Icon: BuildingStorefrontIcon , glyph: 'glyph-setup' as IkasVisualName },
+  { title: 'Tema tasarımı ve özelleştirme', text: 'Ana sayfa, kategori ve ürün sunumunu marka kimliğinize göre düzenleriz. Hazır temanın uyarlanması ile özel bölüm veya bileşen geliştirilmesini ayrı değerlendiririz.', Icon: PaintBrushIcon , glyph: 'glyph-theme' as IkasVisualName },
+  { title: 'Ürün, kategori ve varyant düzeni', text: 'Ürün bilgilerini, kategori ilişkilerini, varyantları ve görselleri düzenli bir katalog yapısında ele alırız. Aktarım öncesinde örnek veri üzerinden eksikleri ve eşleştirmeleri belirleriz.', Icon: Squares2X2Icon , glyph: 'glyph-catalog' as IkasVisualName },
+  { title: 'Ödeme, kargo ve iş sistemi bağlantıları', text: 'İhtiyaç duyulan servisleri mevcut ikas imkanları ve sağlayıcı koşulları üzerinden inceleriz. Bağlantının kurulmasıyla birlikte hangi sipariş ve veri akışlarının kontrol edileceğini tanımlarız.', Icon: CreditCardIcon , glyph: 'glyph-integrations' as IkasVisualName },
+  { title: 'Platform geçişi ve veri aktarımı', text: 'Kaynak sistemdeki verileri ve yeni mağazada kullanılacak alanları eşleştiririz. Geçişin ürün, içerik, URL ve bağlantı kapsamını yazılı bir planla yönetiriz.', Icon: ArrowsRightLeftIcon , glyph: 'glyph-migration' as IkasVisualName },
+  { title: 'Test, eğitim ve yayın sonrası destek', text: 'Kararlaştırılan alışveriş akışlarını kontrol eder; mağaza yönetimini ve yapılan ayarları ekibinize aktarırız. Yayın sonrası desteğin süresini ve kapsamını teklifte ayrıca belirtiriz.', Icon: WrenchScrewdriverIcon , glyph: 'glyph-launch' as IkasVisualName },
 ];
 
 const themeWork = [
@@ -97,15 +102,14 @@ const steps = [
   { title: 'Yayın, eğitim ve devir', text: 'Yayın adımlarını uygular, yapılan işleri ekibinize aktarır ve anlaşmalı destek dönemini başlatırız.' },
 ];
 
-// Portföy/Blog use the pack's neutral descriptions: no published ikas
-// projects or guides are claimed until real ones exist.
+// Portföy points at the real Canceviz Hurma store + AI agent app (IkasShowcase).
 const detailPages = [
   { title: 'Özellikler', text: 'Mağaza, katalog, tasarım ve entegrasyon çalışmalarının kapsamı.', href: `${base}/ozellikler` },
   { title: 'Teknolojiler', text: 'Tema ortamı ve geliştirme yönteminin nasıl belirlendiği.', href: `${base}/teknoloji` },
   { title: 'Süreç', text: 'Keşif, uygulama, kontrol ve devir aşamaları.', href: `${base}/surec` },
-  { title: 'Portföy', text: 'Proje örnekleri için portföy alanını inceleyin.', href: `${base}/portfoy` },
+  { title: 'Portföy', text: 'Canceviz Hurma mağazası ve ikas uygulama örneği.', href: `${base}/portfoy` },
   { title: 'Fiyatlandırma', text: 'Teklif kapsamını ve bütçeyi etkileyen işler.', href: `${base}/fiyatlandirma` },
-  { title: 'Blog', text: 'ikas rehberleri için blog alanını inceleyin.', href: `${base}/blog` },
+  { title: 'Blog', text: 'ikas kurulum ve tema tasarımı rehberleri.', href: `${base}/blog` },
   { title: 'SSS', text: 'Kurulum ve geliştirme hakkında sık sorulan sorular.', href: `${base}/sss` },
 ];
 
@@ -124,16 +128,16 @@ function ThemeLayoutSketch() {
   const bar = 'rounded-full bg-heritage-sand';
   return (
     <figure className="reveal m-0">
-      <div aria-hidden="true" className="relative rounded-2xl border border-heritage-sand bg-white p-4 shadow-sm sm:p-6">
+      <div aria-hidden="true" className="ikas-theme-demo relative rounded-2xl border border-heritage-sand bg-white p-4 shadow-sm sm:p-6" data-ikas-reveal>
         <div className="overflow-hidden rounded-lg border border-heritage-sand">
-          <div className="flex items-center gap-1.5 border-b border-heritage-sand bg-heritage-ivory px-3 py-2"><span className="h-2 w-2 rounded-full bg-heritage-sand" /><span className="h-2 w-2 rounded-full bg-heritage-sand" /><span className="h-2 w-2 rounded-full bg-heritage-sand" /><span className={`ms-3 h-2 w-1/3 ${bar}`} /></div>
+          <div className="flex items-center gap-1.5 border-b border-heritage-sand bg-heritage-ivory px-3 py-2"><span className="h-2 w-2 rounded-full bg-heritage-sand" /><span className="h-2 w-2 rounded-full bg-heritage-sand" /><span className="h-2 w-2 rounded-full bg-heritage-sand" /><span className="ms-3 flex w-1/3 items-center gap-1.5 rounded-full bg-white px-1.5 py-0.5"><IkasIcon size={10} /><span className={`h-1.5 flex-1 ${bar}`} /></span></div>
           <div className="space-y-3 p-3 sm:p-4">
             <div className="flex items-center justify-between"><span className="h-3 w-16 rounded bg-heritage-turquoise-deep/80" /><span className="flex gap-2"><span className={`h-2 w-10 ${bar}`} /><span className={`h-2 w-10 ${bar}`} /><span className={`h-2 w-10 ${bar}`} /></span></div>
-            <div className="flex h-20 items-end rounded-md bg-heritage-turquoise-light p-3 sm:h-24"><span className="h-3 w-1/2 rounded bg-heritage-turquoise-deep/70" /></div>
-            <div className="grid grid-cols-4 gap-2">{[0, 1, 2, 3].map((i) => <div key={i} className="space-y-1.5"><div className="aspect-square rounded bg-heritage-ivory" /><span className={`block h-1.5 w-4/5 ${bar}`} /><span className="block h-1.5 w-1/2 rounded-full bg-heritage-turquoise/60" /></div>)}</div>
+            <div className="ikas-theme-banner flex h-20 items-end rounded-md bg-heritage-turquoise-light p-3 sm:h-24"><span className="h-3 w-1/2 rounded bg-heritage-turquoise-deep/70" /></div>
+            <div className="grid grid-cols-4 gap-2">{[0, 1, 2, 3].map((i) => <div key={i} className="ikas-theme-product space-y-1.5"><div className="aspect-square rounded bg-heritage-ivory" /><span className={`block h-1.5 w-4/5 ${bar}`} /><span className="block h-1.5 w-1/2 rounded-full bg-heritage-turquoise/60" /></div>)}</div>
           </div>
         </div>
-        <div className="absolute -bottom-4 end-4 w-[5.5rem] overflow-hidden rounded-xl border-4 border-gray-900 bg-white shadow-lg sm:end-6 sm:w-24">
+        <div className="ikas-theme-content absolute -bottom-4 end-4 w-[5.5rem] overflow-hidden rounded-xl border-4 border-gray-900 bg-white shadow-lg sm:end-6 sm:w-24">
           <div className="space-y-1.5 p-2"><span className="block h-2 w-8 rounded bg-heritage-turquoise-deep/80" /><div className="h-10 rounded bg-heritage-turquoise-light" /><div className="grid grid-cols-2 gap-1">{[0, 1, 2, 3].map((i) => <div key={i} className="aspect-square rounded bg-heritage-ivory" />)}</div><span className="block h-3 rounded bg-heritage-turquoise" /></div>
         </div>
       </div>
@@ -144,13 +148,15 @@ function ThemeLayoutSketch() {
 
 export default function IkasTurkishOverviewBody() {
   return <>
+    <IkasMotionScope />
     {/* 02 — starting point */}
     <Section title="Hangi ihtiyaçla başlamak istiyorsunuz?" tone="gray">
       <Intro>İlk kez mağaza açmak, başka bir platformdan taşınmak ve mevcut ikas sitesini geliştirmek farklı hazırlıklar gerektirir. Çalışmaya mevcut durumunuza göre başlarız.</Intro>
+      <IkasVisual name="start-paths" className="mx-auto mt-8 hidden max-w-2xl md:block" />
       <div className="reveal-group mt-6 grid gap-4 md:grid-cols-3">
         {startingPoints.map(({ title, text, link, href, Icon }) => (
-          <article key={title} className="flex h-full flex-col rounded-xl border border-heritage-sand bg-white p-5">
-            <Icon className="h-7 w-7 text-heritage-turquoise-deep" aria-hidden="true" />
+          <article key={title} data-ikas-reveal className="ikas-card-motion flex h-full flex-col rounded-xl border border-heritage-sand bg-white p-5">
+            <Icon className="ikas-motion-icon h-7 w-7 text-heritage-turquoise-deep" aria-hidden="true" />
             <h3 className="mt-3 text-title font-medium text-gray-900">{title}</h3>
             <p className="mt-2 flex-1 text-sm leading-6 text-gray-600">{text}</p>
             <A href={href} className={`mt-4 ${textLink}`}>{link}<ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></A>
@@ -163,9 +169,9 @@ export default function IkasTurkishOverviewBody() {
     <Section id="ikas-hizmetleri" title="ikas mağazanız için neler yapıyoruz?">
       <Intro>Hizmet kapsamı mağazanızın mevcut durumuna göre belirlenir. Aşağıdaki işler teklifinizde ayrı teslim kalemleri olarak tanımlanabilir.</Intro>
       <div className="reveal-group mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {services.map(({ title, text, Icon }) => (
-          <article key={title} className="h-full rounded-xl border border-heritage-sand bg-white p-5">
-            <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-heritage-turquoise-light"><Icon className="h-5 w-5 text-heritage-turquoise-deep" aria-hidden="true" /></span>
+        {services.map(({ title, text, glyph }) => (
+          <article key={title} data-ikas-reveal className="ikas-card-motion h-full rounded-xl border border-heritage-sand bg-white p-5">
+            <IkasVisual name={glyph} className="h-14 w-14" />
             <h3 className="mt-4 text-base font-semibold leading-snug text-gray-900">{title}</h3>
             <p className="mt-2 text-sm leading-6 text-gray-600">{text}</p>
           </article>
@@ -194,9 +200,16 @@ export default function IkasTurkishOverviewBody() {
       </div>
     </section>
 
+    {/* 04b — real ikas Studio store */}
+    <section className="bg-background-gray"><div className="mx-auto max-w-[1200px] px-4 sm:px-6 cw-section"><IkasStoreCase id="ikas-magaza-ornegi" /></div></section>
+
     {/* 05 — migration */}
     <Section id="ikasa-gecis" title="ikas'a geçişi veri ve URL planıyla yönetelim">
       <Intro>Mevcut mağazanızı taşırken yalnızca yeni tasarımı değil, ürün verisini ve ziyaretçilerinizin kullandığı bağlantıları da ele almak gerekir. Kaynak altyapının dışa aktarma imkanlarını ve hedef mağazanın desteklediği alanları önceden inceleriz.</Intro>
+      <div className="mt-6 max-w-3xl rounded-xl border border-heritage-sand bg-white p-4 sm:p-6">
+        <IkasVisual name="migration-map" label="Temsili geçiş akışı: eski mağazadaki ürün kayıtları ikas mağazasına aktarılıyor, eski URL'ler yeni adreslerle eşleştiriliyor" />
+        <p className="mt-3 text-xs leading-5 text-gray-600">Örnek gösterim · Ürün kayıtlarının aktarımı ve URL eşleştirmesi; gerçek bir aktarım kaydı değildir.</p>
+      </div>
       <Table label="ikas'a geçişte netleştirilecek konular" headers={['Başlık', 'Birlikte netleştireceğimiz konu']} rows={[
         ['Ürün verisi', 'Ürün kodları, varyantlar, fiyatlar, görseller ve kategori ilişkileri'],
         ['İçerik', 'Taşınacak sayfalar, açıklamalar ve eksik görseller'],
@@ -209,23 +222,27 @@ export default function IkasTurkishOverviewBody() {
     </Section>
 
     {/* 06 — integrations */}
-    <Section title="Entegrasyonları günlük operasyonunuza göre planlıyoruz" tone="gray">
+    <Section title="ikas entegrasyonlarını günlük operasyonunuza göre planlıyoruz" tone="gray">
       <Intro>Ödeme almak, siparişi kargoya aktarmak veya stok bilgisini başka bir sistemle paylaşmak farklı bağlantılar gerektirir. Kullanacağınız servisleri ve veri akışında hangi sistemin esas alınacağını başlangıçta belirleriz.</Intro>
+      <IkasVisual name="integration-hub" loop className="mx-auto mt-8 max-w-2xl" label="Temsili entegrasyon akışı: ikas mağazası ödeme, kargo, ERP ve pazar yeri sistemlerine bağlanıyor" slotLabels={{ 'slot-payment': 'Ödeme', 'slot-cargo': 'Kargo', 'slot-erp': 'Muhasebe / ERP', 'slot-marketplace': 'Pazar yeri' }} />
       <div className="reveal-group mt-6 grid gap-4 md:grid-cols-3">
         {integrations.map(({ title, text, Icon }) => (
-          <article key={title} className="h-full rounded-xl border border-heritage-sand bg-white p-5">
-            <Icon className="h-6 w-6 text-heritage-turquoise-deep" aria-hidden="true" />
+          <article key={title} data-ikas-reveal className="ikas-card-motion h-full rounded-xl border border-heritage-sand bg-white p-5">
+            <Icon className="ikas-motion-icon h-6 w-6 text-heritage-turquoise-deep" aria-hidden="true" />
             <h3 className="mt-3 text-base font-semibold text-gray-900">{title}</h3>
             <p className="mt-2 text-sm leading-6 text-gray-600">{text}</p>
           </article>
         ))}
       </div>
-      <p className="mt-5 max-w-3xl text-xs leading-5 text-gray-600">Uygulama uygunluğu, servis sözleşmeleri ve ek ücretler seçilen çözümün güncel koşullarına bağlıdır. PakSoft&apos;un kurulum hizmeti, üçüncü taraf hizmet ücretlerini kendiliğinden kapsamaz.</p>
+      <p className="mt-5 max-w-3xl text-xs leading-5 text-gray-600">Uygulama uygunluğu, servis sözleşmeleri ve ek ücretler seçilen çözümün güncel koşullarına bağlıdır. PakSoft&apos;un kurulum hizmeti, üçüncü taraf hizmet ücretlerini kendiliğinden kapsamaz. Platformun güncel entegrasyon kategorilerini <IkasExternalLink href={IKAS_INTEGRATIONS_URL}>ikas entegrasyonlar sayfasında</IkasExternalLink> inceleyebilirsiniz.</p>
       <div className="mt-6"><ButtonLink href={enquiry}>Entegrasyon kapsamını görüşelim</ButtonLink></div>
     </Section>
 
+    {/* 06b — ikas app development + AI agent */}
+    <IkasAppsSection />
+
     {/* 07 — SEO & measurement */}
-    <Section title="SEO hazırlığı ve ölçümleme">
+    <Section title="ikas mağazanızda SEO hazırlığı ve ölçümleme">
       <div className="mt-4 grid max-w-5xl gap-x-10 gap-y-4 md:grid-cols-2">
         <p className="text-body leading-relaxed text-gray-600">Kategori yapısı, ürün içeriği, sayfa başlıkları ve geçişteki URL eşleştirmelerini mağaza hazırlığının parçası olarak değerlendiririz. Teknik imkanlar doğrultusunda gerekli arama görünürlüğü ayarlarını kontrol ederiz.</p>
         <p className="text-body leading-relaxed text-gray-600">Ölçümleme işlerinde hangi olayların takip edileceğini ve hangi hesapların kullanılacağını başlangıçta belirleriz. Ziyaret, ürün inceleme ve satın alma gibi olayların anlamını ayırarak test planı oluştururuz; satın alma olayının tekrar sayılmamasını kontrol ederiz.</p>
@@ -234,20 +251,24 @@ export default function IkasTurkishOverviewBody() {
     </Section>
 
     {/* 08 — deliverables */}
-    <Section title="Proje sonunda neleri teslim alırsınız?" tone="ivory">
+    <Section title="ikas projesi sonunda neleri teslim alırsınız?" tone="ivory">
       <Intro>Teslim listesi teklifinizdeki kapsamla birlikte hazırlanır. Çalışmanın sonunda yalnızca mağazanın bağlantısını değil, yapılan işleri ve ekibinizin kullanacağı bilgileri de aktarırız.</Intro>
-      <ul className="reveal-group mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-6 grid gap-8 lg:grid-cols-[minmax(0,0.75fr)_minmax(0,1.25fr)] lg:items-center">
+      <IkasVisual name="handover-pack" className="mx-auto w-full max-w-sm" />
+      <ul className="reveal-group grid gap-3 sm:grid-cols-2">
         {deliverables.map((item) => (
           <li key={item} className="flex gap-3 rounded-xl border border-heritage-sand bg-white p-4 text-sm leading-6 text-gray-700">
             <CheckIcon className="mt-0.5 h-5 w-5 shrink-0 text-heritage-turquoise-deep" aria-hidden="true" />{item}
           </li>
         ))}
       </ul>
+      </div>
       <p className="mt-5 max-w-3xl text-sm leading-6 text-gray-600">Hesap sahipliği ve erişim yetkileri işletmenizin kontrolünde olacak şekilde planlanır. Kullanılan tema, uygulama ve geliştirmelerin lisans veya kullanım koşulları ayrıca açıklanır.</p>
     </Section>
 
     {/* 09 — process */}
     <Section title="ikas projenizi beş adımda ilerletiyoruz">
+      <IkasVisual name="process-rail" className="mt-8 hidden lg:block" />
       <ol className="reveal-group mt-6 grid gap-x-7 sm:grid-cols-2 lg:grid-cols-5">
         {steps.map(({ title, text }, i) => (
           <li key={title} className="border-t-2 border-heritage-turquoise py-4">

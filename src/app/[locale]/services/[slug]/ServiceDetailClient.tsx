@@ -32,6 +32,8 @@ import EcommercePlatformStrip from '@/components/e-commerce/EcommercePlatformStr
 import EcommerceHeroPlatforms from '@/components/e-commerce/EcommerceHeroPlatforms';
 import { IKAS_TR_HERO } from '@/components/ikas/ikasTurkishCopy';
 import RotatingHeading from '@/components/services/RotatingHeading';
+import IkasHeroVisual from '@/components/ikas/IkasHeroVisual';
+import { IkasPlatformNote, IkasWordmark } from '@/components/ikas/IkasMark';
 
 // ── Types ────────────────────────────────────────────────────────────
 interface ProcessStep {
@@ -679,7 +681,7 @@ function HeroSection({
               paint, no JS needed. */}
           <motion.div
             initial={false}
-            className="hero-enter space-y-6"
+            className={`${isIkasTr ? 'ikas-hero-content' : 'hero-enter'} space-y-6`}
           >
             {/* Breadcrumb — mt keeps a small gap below the fixed header on mobile */}
             <nav className="flex items-center gap-2 text-sm text-gray-400 mt-3 lg:mt-5">
@@ -708,7 +710,7 @@ function HeroSection({
               <div className="w-8 h-0.5 bg-gray-900" />
               {isIkasTr && (
                 // eslint-disable-next-line @next/next/no-img-element -- small platform mark, already used site-wide
-                <img src="/images/Tech/brand/ikas-icon.png" alt="" width={20} height={20} className="h-5 w-5 rounded" />
+                <img src="/images/Tech/brand/ikas-icon.png" alt="" width={28} height={28} className="h-7 w-7 rounded-md shadow-sm" />
               )}
               {/* ikas writes its name in lowercase; CSS uppercase would render "İKAS". */}
               <span className={`text-xs font-medium ${colors.eyebrow} ${isIkasTr ? '' : 'uppercase'} tracking-wide`}>
@@ -723,7 +725,7 @@ function HeroSection({
               ) : service.slug === 'corporate-website-design' && locale === 'tr' ? (
                 <RotatingHeading full={service.name} lead="Kurumsal" words={['Web Tasarım', 'Web Geliştirme', 'Web Sitesi']} />
               ) : (
-              <h1 className="text-display font-light text-gray-900 leading-none">
+              <h1 className={`text-display font-light text-gray-900 leading-none ${isIkasTr ? 'ikas-hero-title' : ''}`}>
                 <>{service.name.split(' ').slice(0, -1).join(' ')}{service.name.split(' ').length > 1 && <br />}<span className={`font-semibold ${colors.titleAccent}`}>{service.name.split(' ').length > 1 ? service.name.split(' ').slice(-1)[0] : service.name}</span></>
               </h1>
               )}
@@ -739,12 +741,12 @@ function HeroSection({
               Previous (full-description) version kept here on purpose:
                 {service.fullDescription || service.description}
             */}
-            <p className="text-base sm:text-lg text-gray-600 max-w-lg leading-relaxed line-clamp-5">
+            <p className={`text-base sm:text-lg text-gray-600 max-w-lg leading-relaxed line-clamp-5 ${isIkasTr ? 'ikas-hero-copy' : ''}`}>
               {service.shortDescription || service.fullDescription || service.description}
             </p>
 
             {/* Service-specific enquiry and portfolio links keep destinations clear. */}
-            <div className="space-y-3 pt-1">
+            <div className={`space-y-3 pt-1 ${isIkasTr ? 'ikas-hero-actions' : ''}`}>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button
                   href={service.slug === 'corporate-website-design' ? '/start-project?service=corporate-website-design' : service.slug === 'e-commerce' && locale === 'tr' ? '/start-project?service=e-commerce' : isIkasTr ? '/start-project?service=ikas-development' : '/contact'}
@@ -784,6 +786,7 @@ function HeroSection({
               )}
               {service.slug === 'e-commerce' && locale === 'tr' && <EcommercePlatformStrip />}
               {isIkasTr && <p className="text-sm font-medium text-gray-600">{IKAS_TR_HERO.scope}</p>}
+              {isIkasTr && <IkasPlatformNote />}
             </div>
           </motion.div>
 
@@ -796,20 +799,36 @@ function HeroSection({
               /* Parametric Hero Visual */
               <div className="relative aspect-square max-w-xs sm:max-w-sm md:max-w-lg mx-auto flex items-center justify-center">
                 <motion.div
-                  animate={{ scale: [1, 1.1, 1] }}
-                  transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-                  className={`absolute top-0 right-0 w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 ${colors.blob1} rounded-full mix-blend-multiply filter blur-3xl opacity-40`}
+                  animate={isIkasTr ? undefined : { scale: [1, 1.1, 1] }}
+                  transition={isIkasTr ? undefined : { duration: 8, repeat: Infinity, ease: 'easeInOut' }}
+                  data-ikas-loop={isIkasTr ? '' : undefined}
+                  className={`absolute top-0 right-0 w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 ${colors.blob1} rounded-full mix-blend-multiply filter blur-3xl opacity-40 ${isIkasTr ? 'ikas-hero-loop' : ''}`}
                 />
                 <motion.div
-                  animate={{ scale: [1, 1.15, 1] }}
-                  transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-                  className={`absolute bottom-0 left-0 w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 ${colors.blob2} rounded-full mix-blend-multiply filter blur-3xl opacity-40`}
+                  animate={isIkasTr ? undefined : { scale: [1, 1.15, 1] }}
+                  transition={isIkasTr ? undefined : { duration: 10, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+                  data-ikas-loop={isIkasTr ? '' : undefined}
+                  className={`absolute bottom-0 left-0 w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 ${colors.blob2} rounded-full mix-blend-multiply filter blur-3xl opacity-40 ${isIkasTr ? 'ikas-hero-loop' : ''}`}
                 />
                 <div className="relative z-10">
                   {service.slug === 'e-commerce' && locale === 'tr' ? (
                     <EcommerceHeroPlatforms>
                       <HeroVisual type={animation.heroVisual} motionType={animation.motion} accentClass={colors.dot} />
                     </EcommerceHeroPlatforms>
+                  ) : isIkasTr ? (
+                    <>
+                      <IkasHeroVisual animation={animation} />
+                      {/* ikas platform marks on the storefront scene (decorative; the H1 names ikas).
+                          The app icon keeps ikas's own lime green (#DEFF36). */}
+                      <div aria-hidden="true" data-ikas-loop className="ikas-badge-float absolute left-[2%] top-[4%] z-20 rounded-[22px] bg-white p-1.5 shadow-[0_12px_30px_rgba(18,25,38,0.18)] ring-1 ring-black/5 sm:left-[4%]">
+                        <img src="/images/Tech/brand/ikas-icon.png" alt="" width={64} height={64} className="h-14 w-14 rounded-2xl sm:h-16 sm:w-16" />
+                      </div>
+                      <div aria-hidden="true" className="absolute bottom-[20%] right-[3%] z-20 flex items-center gap-2 rounded-full border border-heritage-sand bg-white/95 px-3 py-1.5 shadow-sm">
+                        <span className="h-2 w-2 rounded-full bg-[#DEFF36] ring-1 ring-[#121926]/30" />
+                        <IkasWordmark height={14} />
+                        <span className="text-[11px] font-medium text-gray-500">mağazası</span>
+                      </div>
+                    </>
                   ) : (
                     <HeroVisual type={animation.heroVisual} motionType={animation.motion} accentClass={colors.dot} hideRatings={isIkasTr} />
                   )}
@@ -874,7 +893,7 @@ function HeroSection({
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.8, duration: 0.6 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 cursor-pointer group"
+        className={`absolute bottom-8 left-1/2 -translate-x-1/2 ${isIkasTr ? "hidden" : "flex"} flex-col items-center gap-2 cursor-pointer group`}
         onClick={() => window.scrollBy({ top: window.innerHeight * 0.8, behavior: 'smooth' })}
       >
         {/* Mouse body */}

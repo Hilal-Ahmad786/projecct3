@@ -1,0 +1,926 @@
+{
+  "files": [
+    {
+      "file": "start-paths.svg",
+      "viewBox": "0 0 720 260",
+      "groups": [
+        {
+          "id": "origin",
+          "description": "starting point for the three store scenarios"
+        },
+        {
+          "id": "dest-new",
+          "description": "new store setup destination"
+        },
+        {
+          "id": "dest-improve",
+          "description": "existing store improvement destination"
+        },
+        {
+          "id": "dest-migrate",
+          "description": "platform migration destination"
+        }
+      ],
+      "drawPaths": [
+        "path-new",
+        "path-improve",
+        "path-migrate",
+        "migrate-arrow"
+      ],
+      "slots": [
+        "slot-label-new",
+        "slot-label-improve",
+        "slot-label-migrate"
+      ],
+      "notes": "Three selectable entry paths; the destination cards illustrate only general store states."
+    },
+    {
+      "file": "glyph-setup.svg",
+      "viewBox": "0 0 96 96",
+      "groups": [
+        {
+          "id": "store-frame",
+          "description": "storefront outline"
+        },
+        {
+          "id": "door",
+          "description": "door"
+        },
+        {
+          "id": "settings-cog",
+          "description": "setup and configuration symbol"
+        }
+      ],
+      "drawPaths": [],
+      "slots": [],
+      "notes": "The settings-cog group may rotate; the icon is designed to remain circularly balanced."
+    },
+    {
+      "file": "glyph-theme.svg",
+      "viewBox": "0 0 96 96",
+      "groups": [
+        {
+          "id": "page",
+          "description": "page"
+        },
+        {
+          "id": "banner-block",
+          "description": "store banner area"
+        },
+        {
+          "id": "swatch-1",
+          "description": "swatch 1"
+        },
+        {
+          "id": "swatch-2",
+          "description": "swatch 2"
+        },
+        {
+          "id": "swatch-3",
+          "description": "swatch 3"
+        }
+      ],
+      "drawPaths": [],
+      "slots": [],
+      "notes": "Highlight the three swatch groups in sequence when introducing theme choices."
+    },
+    {
+      "file": "glyph-catalog.svg",
+      "viewBox": "0 0 96 96",
+      "groups": [
+        {
+          "id": "product-card",
+          "description": "abstract product card"
+        },
+        {
+          "id": "variant-chip-1",
+          "description": "variant chip 1"
+        },
+        {
+          "id": "variant-chip-2",
+          "description": "variant chip 2"
+        },
+        {
+          "id": "variant-chip-3",
+          "description": "variant chip 3"
+        }
+      ],
+      "drawPaths": [],
+      "slots": [],
+      "notes": "Animate variant-chip groups as product options; chip 2 is the selected state."
+    },
+    {
+      "file": "glyph-integrations.svg",
+      "viewBox": "0 0 96 96",
+      "groups": [
+        {
+          "id": "hub",
+          "description": "central ikas storefront placeholder"
+        },
+        {
+          "id": "node-card",
+          "description": "node card"
+        },
+        {
+          "id": "node-box",
+          "description": "node box"
+        },
+        {
+          "id": "node-ledger",
+          "description": "node ledger"
+        }
+      ],
+      "drawPaths": [
+        "link-1",
+        "link-2",
+        "link-3"
+      ],
+      "slots": [],
+      "notes": "Draw link-1 through link-3 toward the neutral system nodes; no vendor connection is implied."
+    },
+    {
+      "file": "glyph-migration.svg",
+      "viewBox": "0 0 96 96",
+      "groups": [
+        {
+          "id": "old-store",
+          "description": "source store representation"
+        },
+        {
+          "id": "new-store",
+          "description": "new store"
+        },
+        {
+          "id": "data-row-1",
+          "description": "data row 1"
+        },
+        {
+          "id": "data-row-2",
+          "description": "data row 2"
+        },
+        {
+          "id": "data-row-3",
+          "description": "data row 3"
+        }
+      ],
+      "drawPaths": [
+        "migrate-path"
+      ],
+      "slots": [],
+      "notes": "Move data-row groups from the old-store toward the new-store along migrate-path."
+    },
+    {
+      "file": "glyph-launch.svg",
+      "viewBox": "0 0 96 96",
+      "groups": [
+        {
+          "id": "checklist",
+          "description": "checklist"
+        },
+        {
+          "id": "check-1",
+          "description": "check 1"
+        },
+        {
+          "id": "check-2",
+          "description": "check 2"
+        },
+        {
+          "id": "check-3",
+          "description": "check 3"
+        },
+        {
+          "id": "launch-flag",
+          "description": "launch flag"
+        }
+      ],
+      "drawPaths": [
+        "check-1-path",
+        "check-2-path",
+        "check-3-path"
+      ],
+      "slots": [],
+      "notes": "Reveal checklist marks individually; launch-flag is a decorative final-stage marker."
+    },
+    {
+      "file": "migration-map.svg",
+      "viewBox": "0 0 640 380",
+      "groups": [
+        {
+          "id": "old-store",
+          "description": "source store representation"
+        },
+        {
+          "id": "ikas-store",
+          "description": "destination ikas store representation"
+        },
+        {
+          "id": "old-row-1",
+          "description": "old row 1"
+        },
+        {
+          "id": "ikas-row-1",
+          "description": "ikas row 1"
+        },
+        {
+          "id": "old-row-2",
+          "description": "old row 2"
+        },
+        {
+          "id": "ikas-row-2",
+          "description": "ikas row 2"
+        },
+        {
+          "id": "old-row-3",
+          "description": "old row 3"
+        },
+        {
+          "id": "ikas-row-3",
+          "description": "ikas row 3"
+        },
+        {
+          "id": "old-row-4",
+          "description": "old row 4"
+        },
+        {
+          "id": "ikas-row-4",
+          "description": "ikas row 4"
+        },
+        {
+          "id": "old-row-5",
+          "description": "old row 5"
+        },
+        {
+          "id": "ikas-row-5",
+          "description": "ikas row 5"
+        },
+        {
+          "id": "url-old",
+          "description": "source URL pills"
+        },
+        {
+          "id": "url-old-1",
+          "description": "url old 1"
+        },
+        {
+          "id": "url-old-2",
+          "description": "url old 2"
+        },
+        {
+          "id": "url-old-3",
+          "description": "url old 3"
+        },
+        {
+          "id": "url-old-4",
+          "description": "url old 4"
+        },
+        {
+          "id": "url-new",
+          "description": "destination URL pills"
+        },
+        {
+          "id": "url-new-1",
+          "description": "url new 1"
+        },
+        {
+          "id": "url-new-2",
+          "description": "url new 2"
+        },
+        {
+          "id": "url-new-3",
+          "description": "url new 3"
+        },
+        {
+          "id": "url-new-4",
+          "description": "url new 4"
+        },
+        {
+          "id": "url-map",
+          "description": "old-to-new URL mapping paths"
+        },
+        {
+          "id": "rows-in-transit",
+          "description": "product row copies shown in their final catalogue positions"
+        },
+        {
+          "id": "row-move-1",
+          "description": "first product row for migration motion"
+        },
+        {
+          "id": "row-move-2",
+          "description": "second product row for migration motion"
+        },
+        {
+          "id": "row-move-3",
+          "description": "third product row for migration motion"
+        },
+        {
+          "id": "sample-check",
+          "description": "sample record review marker"
+        }
+      ],
+      "drawPaths": [
+        "url-link-1",
+        "url-link-2",
+        "url-link-3",
+        "url-link-4",
+        "sample-check-path"
+      ],
+      "slots": [
+        "slot-ikas-mark"
+      ],
+      "notes": "Abstract source and destination rows with URL mapping; not a completed migration record."
+    },
+    {
+      "file": "integration-hub.svg",
+      "viewBox": "0 0 640 420",
+      "groups": [
+        {
+          "id": "hub",
+          "description": "central ikas storefront placeholder"
+        },
+        {
+          "id": "hub-product-1",
+          "description": "hub product 1"
+        },
+        {
+          "id": "hub-product-2",
+          "description": "hub product 2"
+        },
+        {
+          "id": "hub-product-3",
+          "description": "hub product 3"
+        },
+        {
+          "id": "node-payment",
+          "description": "neutral payment-system tile"
+        },
+        {
+          "id": "payment-icon",
+          "description": "payment icon"
+        },
+        {
+          "id": "node-cargo",
+          "description": "neutral shipping-system tile"
+        },
+        {
+          "id": "cargo-icon",
+          "description": "cargo icon"
+        },
+        {
+          "id": "node-erp",
+          "description": "neutral business-system tile"
+        },
+        {
+          "id": "erp-icon",
+          "description": "erp icon"
+        },
+        {
+          "id": "node-marketplace",
+          "description": "neutral marketplace tile"
+        },
+        {
+          "id": "marketplace-icon",
+          "description": "marketplace icon"
+        },
+        {
+          "id": "pulse-payment",
+          "description": "pulse payment"
+        },
+        {
+          "id": "pulse-cargo",
+          "description": "pulse cargo"
+        },
+        {
+          "id": "pulse-erp",
+          "description": "pulse erp"
+        },
+        {
+          "id": "pulse-marketplace",
+          "description": "pulse marketplace"
+        }
+      ],
+      "drawPaths": [
+        "link-payment",
+        "link-cargo",
+        "link-erp",
+        "link-marketplace"
+      ],
+      "slots": [
+        "slot-ikas-mark",
+        "slot-payment",
+        "slot-cargo",
+        "slot-erp",
+        "slot-marketplace"
+      ],
+      "notes": "Conceptual store-to-service connections; no live data or transaction is represented."
+    },
+    {
+      "file": "process-rail.svg",
+      "viewBox": "0 0 960 140",
+      "groups": [
+        {
+          "id": "step-1",
+          "description": "step 1"
+        },
+        {
+          "id": "step-2",
+          "description": "step 2"
+        },
+        {
+          "id": "step-3",
+          "description": "step 3"
+        },
+        {
+          "id": "step-4",
+          "description": "step 4"
+        },
+        {
+          "id": "step-5",
+          "description": "step 5"
+        }
+      ],
+      "drawPaths": [
+        "rail-path",
+        "rail-progress-path"
+      ],
+      "slots": [
+        "slot-step-1",
+        "slot-step-2",
+        "slot-step-3",
+        "slot-step-4",
+        "slot-step-5"
+      ],
+      "notes": "Five-step rail, ready for the existing process labels to be overlaid as HTML."
+    },
+    {
+      "file": "handover-pack.svg",
+      "viewBox": "0 0 520 360",
+      "groups": [
+        {
+          "id": "folder",
+          "description": "handover folder"
+        },
+        {
+          "id": "doc-pages",
+          "description": "page structure handover document"
+        },
+        {
+          "id": "grid-icon",
+          "description": "grid icon"
+        },
+        {
+          "id": "doc-access",
+          "description": "account access handover document"
+        },
+        {
+          "id": "key-icon",
+          "description": "key icon"
+        },
+        {
+          "id": "doc-guide",
+          "description": "usage guidance handover document"
+        },
+        {
+          "id": "book-icon",
+          "description": "book icon"
+        },
+        {
+          "id": "seal",
+          "description": "handover completion mark"
+        }
+      ],
+      "drawPaths": [
+        "seal-check-path"
+      ],
+      "slots": [],
+      "notes": "Reveal the three handover document groups from the folder, then the seal."
+    },
+    {
+      "file": "variant-picker.svg",
+      "viewBox": "0 0 560 340",
+      "groups": [
+        {
+          "id": "product-page",
+          "description": "abstract product detail preview"
+        },
+        {
+          "id": "category-crumb",
+          "description": "category crumb"
+        },
+        {
+          "id": "swatch-row",
+          "description": "available product colour options"
+        },
+        {
+          "id": "swatch-1",
+          "description": "swatch 1"
+        },
+        {
+          "id": "swatch-2",
+          "description": "swatch 2"
+        },
+        {
+          "id": "swatch-3",
+          "description": "swatch 3"
+        },
+        {
+          "id": "swatch-4",
+          "description": "swatch 4"
+        },
+        {
+          "id": "swatch-active-ring",
+          "description": "currently selected colour indicator"
+        },
+        {
+          "id": "size-row",
+          "description": "product option pills"
+        },
+        {
+          "id": "size-1",
+          "description": "size 1"
+        },
+        {
+          "id": "size-2",
+          "description": "size 2"
+        },
+        {
+          "id": "size-3",
+          "description": "size 3"
+        },
+        {
+          "id": "size-4",
+          "description": "size 4"
+        },
+        {
+          "id": "image-variants",
+          "description": "overlaid abstract product-image variants for a crossfade"
+        },
+        {
+          "id": "image-a",
+          "description": "image a"
+        },
+        {
+          "id": "image-b",
+          "description": "image b"
+        },
+        {
+          "id": "image-c",
+          "description": "image c"
+        }
+      ],
+      "drawPaths": [
+        "crumb-path"
+      ],
+      "slots": [],
+      "notes": "Crossfade image-a, image-b and image-c at the same position; swatch 1 and size 2 are selected states."
+    },
+    {
+      "file": "launch-checklist.svg",
+      "viewBox": "0 0 480 360",
+      "groups": [
+        {
+          "id": "phone-frame",
+          "description": "mobile storefront preview"
+        },
+        {
+          "id": "phone-product-1",
+          "description": "phone product 1"
+        },
+        {
+          "id": "phone-product-2",
+          "description": "phone product 2"
+        },
+        {
+          "id": "phone-product-3",
+          "description": "phone product 3"
+        },
+        {
+          "id": "phone-product-4",
+          "description": "phone product 4"
+        },
+        {
+          "id": "phone-cart",
+          "description": "phone cart"
+        },
+        {
+          "id": "cart-dot",
+          "description": "cart dot"
+        },
+        {
+          "id": "checklist-card",
+          "description": "pre-launch review checklist"
+        },
+        {
+          "id": "row-1",
+          "description": "row 1"
+        },
+        {
+          "id": "check-1",
+          "description": "check 1"
+        },
+        {
+          "id": "row-2",
+          "description": "row 2"
+        },
+        {
+          "id": "check-2",
+          "description": "check 2"
+        },
+        {
+          "id": "row-3",
+          "description": "row 3"
+        },
+        {
+          "id": "check-3",
+          "description": "check 3"
+        },
+        {
+          "id": "row-4",
+          "description": "row 4"
+        },
+        {
+          "id": "check-4",
+          "description": "check 4"
+        },
+        {
+          "id": "row-5",
+          "description": "row 5"
+        },
+        {
+          "id": "check-5",
+          "description": "check 5"
+        }
+      ],
+      "drawPaths": [
+        "check-1-path",
+        "check-2-path",
+        "check-3-path",
+        "check-4-path",
+        "check-5-path"
+      ],
+      "slots": [],
+      "notes": "Show the five checks in sequence; cart-dot is a small status accent, not a transaction indicator."
+    },
+    {
+      "file": "method-options.svg",
+      "viewBox": "0 0 840 260",
+      "groups": [
+        {
+          "id": "option-panel-1",
+          "description": "option panel 1"
+        },
+        {
+          "id": "option-panel-2",
+          "description": "option panel 2"
+        },
+        {
+          "id": "option-panel-3",
+          "description": "option panel 3"
+        },
+        {
+          "id": "option-settings",
+          "description": "existing theme settings approach"
+        },
+        {
+          "id": "slider-1",
+          "description": "slider 1"
+        },
+        {
+          "id": "knob-1",
+          "description": "knob 1"
+        },
+        {
+          "id": "slider-2",
+          "description": "slider 2"
+        },
+        {
+          "id": "knob-2",
+          "description": "knob 2"
+        },
+        {
+          "id": "slider-3",
+          "description": "slider 3"
+        },
+        {
+          "id": "knob-3",
+          "description": "knob 3"
+        },
+        {
+          "id": "option-section",
+          "description": "custom page section approach"
+        },
+        {
+          "id": "custom-section",
+          "description": "newly added section area"
+        },
+        {
+          "id": "option-connector",
+          "description": "two systems joined by a conceptual connector"
+        },
+        {
+          "id": "plug-left",
+          "description": "plug left"
+        },
+        {
+          "id": "plug-right",
+          "description": "plug right"
+        }
+      ],
+      "drawPaths": [
+        "insert-guide",
+        "connector-link"
+      ],
+      "slots": [
+        "slot-option-1",
+        "slot-option-2",
+        "slot-option-3"
+      ],
+      "notes": "Move slider knobs or join the connector halves without changing the panel layout."
+    },
+    {
+      "file": "editable-fields.svg",
+      "viewBox": "0 0 640 380",
+      "groups": [
+        {
+          "id": "editor-panel",
+          "description": "illustrative content editor panel"
+        },
+        {
+          "id": "field-1",
+          "description": "field 1"
+        },
+        {
+          "id": "field-2",
+          "description": "field 2"
+        },
+        {
+          "id": "field-3",
+          "description": "field 3"
+        },
+        {
+          "id": "field-4",
+          "description": "field 4"
+        },
+        {
+          "id": "preview",
+          "description": "illustrative storefront preview"
+        },
+        {
+          "id": "banner",
+          "description": "editable storefront banner"
+        },
+        {
+          "id": "banner-headline",
+          "description": "editable banner headline placeholder"
+        },
+        {
+          "id": "edit-link",
+          "description": "conceptual connection from field two to the banner"
+        },
+        {
+          "id": "cursor",
+          "description": "cursor"
+        }
+      ],
+      "drawPaths": [
+        "edit-link-path"
+      ],
+      "slots": [
+        "slot-ikas-mark"
+      ],
+      "notes": "Field 2 is active; draw edit-link-path from that field toward the preview banner."
+    },
+    {
+      "file": "stage-path.svg",
+      "viewBox": "0 0 960 200",
+      "groups": [
+        {
+          "id": "stage-1",
+          "description": "stage 1"
+        },
+        {
+          "id": "stage-2",
+          "description": "stage 2"
+        },
+        {
+          "id": "stage-3",
+          "description": "stage 3"
+        },
+        {
+          "id": "stage-4",
+          "description": "stage 4"
+        },
+        {
+          "id": "stage-5",
+          "description": "stage 5"
+        },
+        {
+          "id": "gate-5",
+          "description": "gate 5"
+        },
+        {
+          "id": "stage-6",
+          "description": "stage 6"
+        },
+        {
+          "id": "gate-6",
+          "description": "gate 6"
+        }
+      ],
+      "drawPaths": [
+        "journey-path",
+        "journey-progress-path"
+      ],
+      "slots": [
+        "slot-stage-1",
+        "slot-stage-2",
+        "slot-stage-3",
+        "slot-stage-4",
+        "slot-stage-5",
+        "slot-stage-6"
+      ],
+      "notes": "Reveal the six stage groups along the S-curve; gate-5 and gate-6 indicate review points."
+    },
+    {
+      "file": "cost-split.svg",
+      "viewBox": "0 0 600 320",
+      "groups": [
+        {
+          "id": "cost-service",
+          "description": "PakSoft project service cost category"
+        },
+        {
+          "id": "cost-platform",
+          "description": "platform and application cost category"
+        },
+        {
+          "id": "cost-operations",
+          "description": "store operating cost category"
+        },
+        {
+          "id": "total-tile",
+          "description": "separate planning summary marker"
+        }
+      ],
+      "drawPaths": [
+        "wrench-glyph",
+        "bracket-path",
+        "total-check-path"
+      ],
+      "slots": [
+        "slot-ikas-mark"
+      ],
+      "notes": "The bracket groups cost categories for separate planning; it does not represent a sum."
+    },
+    {
+      "file": "project-brief.svg",
+      "viewBox": "0 0 520 340",
+      "groups": [
+        {
+          "id": "store-sketch",
+          "description": "illustrative store wireframe behind the brief"
+        },
+        {
+          "id": "sketch-product-1",
+          "description": "sketch product 1"
+        },
+        {
+          "id": "sketch-product-2",
+          "description": "sketch product 2"
+        },
+        {
+          "id": "sketch-product-3",
+          "description": "sketch product 3"
+        },
+        {
+          "id": "brief-card",
+          "description": "project brief clipboard"
+        },
+        {
+          "id": "brief-row-1",
+          "description": "brief row 1"
+        },
+        {
+          "id": "brief-row-2",
+          "description": "brief row 2"
+        },
+        {
+          "id": "brief-row-3",
+          "description": "brief row 3"
+        },
+        {
+          "id": "brief-row-4",
+          "description": "brief row 4"
+        },
+        {
+          "id": "pen",
+          "description": "project planning pen"
+        }
+      ],
+      "drawPaths": [],
+      "slots": [],
+      "notes": "Reveal the brief rows in order; the store-sketch is an illustrative wireframe, not a customer project."
+    }
+  ]
+}

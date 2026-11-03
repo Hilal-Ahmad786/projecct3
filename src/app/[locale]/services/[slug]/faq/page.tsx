@@ -34,7 +34,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const customMeta = slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('faq', validLocale)
-    : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('faq') : null;
+    : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('faq')
+    : slug === 'ikas-development' && validLocale === 'tr' ? {
+      title: 'ikas Kurulum ve Tema Tasarımı SSS | PakSoft',
+      description: 'ikas mağaza kurulumu, tema düzenlemesi, ürün aktarımı, entegrasyon ve hizmet bedeli hakkında sık sorulan soruların yanıtları. Kapsamı PakSoft ile netleştirin.',
+    } : null;
   const { title, description } = customMeta || getServiceSubPageMeta('faq', validLocale, service.name);
   const isTurkishCorporateFaq = slug === 'corporate-website-design' && validLocale === 'tr';
   const canonicalUrl = `${baseUrl}/${validLocale}${localizedPath}`;

@@ -1323,6 +1323,16 @@ export default function Navbar() {
               style={{ scrollbarWidth: 'none' }}
             >
               <div className="flex items-center gap-0.5 min-w-max">
+              {currentServiceSlug === 'ikas-development' && (
+                <Link
+                  href={servicePageLinks[0].href}
+                  className="flex items-center gap-2 h-10 pl-1 pr-3 mr-1 border-r border-gray-200/80"
+                  aria-label={`ikas · ${servicePageLinks[0].label}`}
+                >
+                  <img src="/images/Tech/brand/ikas-icon.png" alt="" aria-hidden="true" width={22} height={22} className="h-[22px] w-[22px] rounded-md" />
+                  <img src="/images/Tech/ikas.svg" alt="" aria-hidden="true" width={61} height={16} className="h-4 w-auto" />
+                </Link>
+              )}
               {servicePageLinks.map(({ label, href }) => {
                 const isActive = pathname === href;
                 return (
@@ -1330,6 +1340,7 @@ export default function Navbar() {
                     key={href}
                     href={href}
                     data-active={isActive || undefined}
+                    aria-current={isActive ? 'page' : undefined}
                     className={`relative flex items-center h-10 px-3 text-[13px] font-medium whitespace-nowrap transition-colors ${isActive ? 'text-heritage-turquoise-deep' : 'text-gray-500 hover:text-gray-900'}`}
                   >
                     {label}
@@ -1368,7 +1379,8 @@ export default function Navbar() {
                   {/* Service pages: page-local sections first, then the global links */}
                   {isServicePage && (
                     <li className="mb-4 pb-4 border-b border-gray-200">
-                      <div className={`px-4 pb-2 text-[11px] font-bold uppercase tracking-widest text-heritage-turquoise`}>
+                      <div className={`flex items-center gap-2 px-4 pb-2 text-[11px] font-bold uppercase tracking-widest text-heritage-turquoise`}>
+                        {currentServiceSlug === 'ikas-development' && <img src="/images/Tech/ikas.svg" alt="ikas" width={46} height={12} className="h-3 w-auto" />}
                         {t('serviceNav.onThisPage') || 'On this page'}
                       </div>
                       <ul className="grid grid-cols-2 gap-x-2">
@@ -1379,6 +1391,7 @@ export default function Navbar() {
                               <Link
                                 href={href}
                                 onClick={() => setOpen(false)}
+                                aria-current={isActive ? 'page' : undefined}
                                 className={`block px-4 py-2 text-sm font-medium transition-colors border-l-2 ${isActive ? 'text-heritage-turquoise-deep border-heritage-turquoise bg-heritage-turquoise/5' : 'text-gray-600 border-transparent hover:text-gray-900 hover:border-gray-300'}`}
                               >
                                 {label}

@@ -7,6 +7,23 @@ import { ArrowRightIcon, PlusIcon } from '@heroicons/react/24/outline';
 import InternalPageHero from '@/components/services/InternalPageHero';
 import { FaqScene } from '@/components/services/hero-visuals/scenes-internal';
 import { useTranslations } from '@/hooks/useTranslations';
+import IkasMotionScope from '@/components/ikas/IkasMotionScope';
+import { IkasIcon, IkasPlatformNote } from '@/components/ikas/IkasMark';
+
+// ikas (tr) replaces the generic quick-info copy, whose "free consultation"
+// and "ongoing support" promises aren't part of the approved ikas content.
+const IKAS_FAQ_QUICK = {
+  title: 'ikas projesine başlamadan önce',
+  description: 'Kurulum, tema ve geçiş tekliflerini hazırlarken netleştirdiğimiz dört konu.',
+  items: [
+    ['Başlangıç bilgisi', 'Mağaza adresi veya yeni mağazanın kısa tanımı, örnek ürünler ve öncelikli ihtiyaçlar yeterlidir.'],
+    ['Takvim', 'Süre; kapsam, ürün verisinin hazırlığı, erişimler ve onaylara göre planlanır.'],
+    ['Fiyat', 'PakSoft hizmet bedeli ile ikas aboneliği, uygulama ve servis giderleri ayrı kalemlerdir.'],
+    ['Yayın sonrası', 'Destek ve yeni geliştirme kapsamı teklifte ayrıca tanımlanır.'],
+  ] as const,
+  ctaTitle: 'ikas mağazanızla ilgili sorunuzu yanıtlamadık mı?',
+  ctaText: 'Mağazanızı ve ihtiyacınızı kısaca paylaşın; kapsamı birlikte netleştirelim.',
+};
 
 interface FAQItem {
   question: string;
@@ -28,6 +45,7 @@ export default function FAQPageClient({
   locale
 }: FAQPageClientProps) {
   const { t } = useTranslations();
+  const isIkasTurkish = serviceSlug === 'ikas-development' && locale === 'tr';
   const faqRef = useRef<HTMLDivElement>(null);
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const [searchQuery, setSearchQuery] = useState('');
@@ -47,10 +65,11 @@ export default function FAQPageClient({
 
   return (
     <div className="min-h-screen bg-white">
+      {isIkasTurkish ? <IkasMotionScope /> : null}
       <InternalPageHero
         serviceName={serviceName}
-        accentWord={t('services.detail.breadcrumb.faq') as string}
-        subtitle={(t('services.detail.faq.heroDescription') as string).replace('{serviceName}', serviceName.toLowerCase())}
+        accentWord={isIkasTurkish ? 'ikas Sık Sorulan Sorular' : t('services.detail.breadcrumb.faq') as string}
+        subtitle={isIkasTurkish ? 'Tema düzenlemesi, ürün aktarımı, entegrasyonlar, takvim ve hizmet bedeli hakkında en çok sorulan soruların yanıtları.' : (t('services.detail.faq.heroDescription') as string).replace('{serviceName}', serviceName.toLowerCase())}
         accentHex={accentColor}
         crumbs={[
           { label: t('navbar.home') as string, href: '/' },
@@ -59,6 +78,12 @@ export default function FAQPageClient({
           { label: t('services.detail.breadcrumb.faq') as string },
         ]}
         scene={<FaqScene accent={accentColor} />}
+        {...(isIkasTurkish ? {
+          heading: 'ikas Mağaza Kurulumu: Sık Sorulan Sorular',
+          eyebrowIcon: <IkasIcon size={24} />,
+          eyebrowNormalCase: true,
+          footnote: <IkasPlatformNote />,
+        } : {})}
       />
 
       {/* Search Section */}
@@ -141,8 +166,8 @@ export default function FAQPageClient({
                 {filteredFaq.map((item, index) => (
                   <motion.div
                     key={index}
-                    initial={{ opacity: 0, x: -30 }}
-                    animate={isFaqInView ? {
+                    initial={isIkasTurkish ? false : { opacity: 0, x: -30 }}
+                    animate={isIkasTurkish ? undefined : isFaqInView ? {
                       opacity: 1,
                       x: 0,
                       transition: {
@@ -151,11 +176,15 @@ export default function FAQPageClient({
                         ease: [0.4, 0, 0.2, 1]
                       }
                     } : {}}
+                    data-ikas-reveal={isIkasTurkish ? '' : undefined}
+                    data-ikas-delay={isIkasTurkish ? index * 55 : undefined}
                     className="bg-white rounded-3xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow"
                   >
                     <button
                       onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                      className="w-full flex items-start gap-6 p-8 text-left group hover:bg-gray-50 transition-colors"
+                      aria-expanded={openIndex === index}
+                      aria-controls={isIkasTurkish ? `ikas-faq-answer-${index}` : undefined}
+                      className={`${isIkasTurkish ? 'w-full flex min-w-0 items-start gap-4 p-4 text-left group hover:bg-gray-50 transition-colors sm:gap-6 sm:p-8' : 'w-full flex items-start gap-6 p-8 text-left group hover:bg-gray-50 transition-colors'} ${isIkasTurkish ? 'focus-visible:outline focus-visible:outline-2 focus-visible:outline-heritage-turquoise focus-visible:outline-offset-2' : ''}`}
                     >
                       {/* Question Number with Bounce Animation */}
                       <motion.div
@@ -175,7 +204,7 @@ export default function FAQPageClient({
                       </motion.div>
 
                       {/* Question Text */}
-                      <div className="flex-1 pt-1">
+                      <div className={`${isIkasTurkish ? 'min-w-0 flex-1' : 'flex-1'} pt-1`}>
                         <span
                           className="text-lg font-medium transition-colors"
                           style={{ color: openIndex === index ? accentColor : '#374151' }}
@@ -202,7 +231,18 @@ export default function FAQPageClient({
                     </button>
 
                     {/* Answer with Slide Animation */}
-                    <AnimatePresence>
+                    {isIkasTurkish ? (
+                      <div id={`ikas-faq-answer-${index}`} aria-hidden={openIndex !== index} className={`grid transition-[grid-template-rows] duration-300 ease-out motion-reduce:transition-none ${openIndex === index ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}>
+                        <div className="min-h-0 overflow-hidden">
+                          <div className="px-8 pb-8">
+                            <div className="relative pl-14">
+                              <div aria-hidden="true" className="absolute left-0 top-0 h-full w-px bg-heritage-turquoise" />
+                              <p className="text-gray-600 leading-relaxed pl-6">{item.answer}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ) : <AnimatePresence>
                       {openIndex === index && (
                         <motion.div
                           initial={{ height: 0, opacity: 0 }}
@@ -234,7 +274,7 @@ export default function FAQPageClient({
                           </div>
                         </motion.div>
                       )}
-                    </AnimatePresence>
+                    </AnimatePresence>}
                   </motion.div>
                 ))}
               </div>
@@ -268,9 +308,11 @@ export default function FAQPageClient({
                   transition={{ delay: 0.1 }}
                   className="text-4xl font-light text-gray-900 mb-6"
                 >
+                  {isIkasTurkish ? IKAS_FAQ_QUICK.title : <>
                   {t('services.detail.faq.quickInfo.title')}
                   <br />
                   <span className="font-semibold" style={{ color: accentColor }}>{t('services.detail.faq.quickInfo.titleAccent')}</span>
+                  </>}
                 </motion.h2>
 
                 <motion.p
@@ -280,7 +322,7 @@ export default function FAQPageClient({
                   transition={{ delay: 0.2 }}
                   className="text-gray-500 leading-relaxed"
                 >
-                  {t('services.detail.faq.quickInfo.description').replace('{serviceName}', serviceName.toLowerCase())}
+                  {isIkasTurkish ? IKAS_FAQ_QUICK.description : t('services.detail.faq.quickInfo.description').replace('{serviceName}', serviceName.toLowerCase())}
                 </motion.p>
               </div>
 
@@ -314,9 +356,9 @@ export default function FAQPageClient({
                       />
                       <div>
                         <h3 className="font-medium text-gray-900 mb-2 group-hover:translate-x-1 transition-transform">
-                          {t(`services.detail.faq.quickInfo.${item.labelKey}`)}
+                          {isIkasTurkish ? IKAS_FAQ_QUICK.items[i][0] : t(`services.detail.faq.quickInfo.${item.labelKey}`)}
                         </h3>
-                        <p className="text-sm text-gray-500">{t(`services.detail.faq.quickInfo.${item.descKey}`)}</p>
+                        <p className="text-sm text-gray-500">{isIkasTurkish ? IKAS_FAQ_QUICK.items[i][1] : t(`services.detail.faq.quickInfo.${item.descKey}`)}</p>
                       </div>
                     </div>
                   </motion.div>
@@ -372,18 +414,18 @@ export default function FAQPageClient({
               <span className="text-2xl font-light" style={{ color: accentColor }}>?</span>
             </motion.div>
             <h2 className="text-3xl md:text-4xl font-light text-white mb-6">
-              {t('services.detail.faq.cta.title')}
+              {isIkasTurkish ? IKAS_FAQ_QUICK.ctaTitle : t('services.detail.faq.cta.title')}
             </h2>
             <p className="text-gray-400 mb-10 max-w-xl mx-auto">
-              {t('services.detail.faq.cta.description')}
+              {isIkasTurkish ? IKAS_FAQ_QUICK.ctaText : t('services.detail.faq.cta.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <LocalizedLink
-                href="/contact"
+                href={isIkasTurkish ? '/start-project?service=ikas-development' : '/contact'}
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-white font-bold transition-all hover:scale-105"
                 style={{ backgroundColor: accentColor }}
               >
-                {t('services.detail.faq.cta.contactUs')}
+                {isIkasTurkish ? 'ikas Sorumu Sor' : t('services.detail.faq.cta.contactUs')}
                 <ArrowRightIcon className="w-5 h-5" />
               </LocalizedLink>
               <LocalizedLink
