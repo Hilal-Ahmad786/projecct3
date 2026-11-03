@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { localizeFullPath } from '@/lib/routes';
+import { hasServiceBlog } from '@/lib/service-blogs';
 import { Locale, defaultLocale } from '@/lib/i18n';
 import { getServicesForSitemap } from '@/lib/database/public-queries';
 import { isSubstantialService } from '@/lib/service-quality';
@@ -188,9 +189,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const blogPosts = await getBlogPostsForSitemap();
   blogPosts.forEach(({ slug, date, language, category }) => {
     const loc = (allLocales as string[]).includes(language) ? (language as Locale) : 'en';
-    const path = loc === 'tr' && category === 'e-commerce'
-      ? `/services/e-commerce/blog/${slug}`
-      : `/blog/${slug}`;
+    const path = hasServiceBlog(category, loc) ? `/services/${category}/blog/${slug}` : `/blog/${slug}`;
     entries.push(entry(loc, path, {
       priority: PRIORITY.blogPost,
       changeFreq: 'weekly',

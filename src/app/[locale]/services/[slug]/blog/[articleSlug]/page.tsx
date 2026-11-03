@@ -3,10 +3,14 @@ import { notFound } from 'next/navigation';
 import { Locale } from '@/lib/i18n';
 import { localizeFullPath } from '@/lib/routes';
 import { SITE_URL } from '@/config/site';
-import { ArticleJsonLd, BreadcrumbJsonLd } from '@/components/seo/JsonLd';
-import BlogPostView from '@/app/[locale]/blog/[slug]/BlogPostView';
+import { ServiceArticlePage, serviceBlogPath } from '@/components/services/ServiceArticle';
+import { getServiceArticlePresentation, getServiceBlog } from '@/components/services/service-blogs';
 import { CorporateWebsiteGuidePage, getCorporateWebsiteGuideMeta, getCorporateWebsiteGuideSlugs } from '@/components/services/CorporateWebsiteSubpage';
 import { CorporateWebsiteArticlePage, getCorporateWebsiteArticle, getCorporateWebsiteArticleMeta, getCorporateWebsiteArticleSlugs } from '@/components/services/CorporateWebsiteArticle';
+
+// DB-backed service guides (see getServiceBlogArticle) pick up edits hourly;
+// admin saves also revalidate the 'blog' cache tag immediately.
+export const revalidate = 3600;
 
 export function generateStaticParams() {
   const locales = ['en', 'tr'] as const;
@@ -24,26 +28,24 @@ function articlePath(locale: 'en' | 'tr', articleSlug: string) {
   return `${localizeFullPath('/services/corporate-website-design/blog', locale)}/${articleSlug}`;
 }
 
-function ecommerceArticlePath(articleSlug: string) {
-  return `/tr${localizeFullPath(`/services/e-commerce/blog/${articleSlug}`, 'tr')}`;
-}
-
-const ecommerceArticleImageAlt: Record<string, string> = {
-  'e-ticaret-sitesi-kurmak-icin-gerekenler': 'E-ticaret mağazası, mobil ürün ekranı, hazırlık kontrol panosu ve kargo kutusunu gösteren PakSoft illüstrasyonu',
-  'e-ticaret-altyapisi-secimi': 'Hazır modüller ve özel geliştirmeyi temsil eden iki mağaza arayüzünün PakSoft illüstrasyonu',
-};
-
-async function getEcommerceArticle(slug: string) {
+// Service blogs backed by BlogPost rows (category = service slug), rendered
+// with the shared guide layout. Registered in src/lib/service-blogs.ts.
+async function getServiceBlogArticle(serviceSlug: string, locale: string, articleSlug: string) {
+  const blog = getServiceBlog(serviceSlug, locale);
+  if (!blog) return null;
   const { getPublicServiceBlogPostBySlug } = await import('@/lib/database/public-queries');
-  return getPublicServiceBlogPostBySlug(slug, 'tr', 'e-commerce');
+  const post = await getPublicServiceBlogPostBySlug(articleSlug, locale, serviceSlug);
+  if (!post) notFound();
+  return { blog, post, canonical: `${SITE_URL}${serviceBlogPath(blog.config)}/${articleSlug}` };
 }
+
+const isoDay = (value: Date | string | null | undefined) => (value ? new Date(value).toISOString().slice(0, 10) : '');
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale, slug, articleSlug } = await params;
-  if (slug === 'e-commerce' && locale === 'tr') {
-    const post = await getEcommerceArticle(articleSlug);
-    if (!post) notFound();
-    const canonical = `${SITE_URL}${ecommerceArticlePath(articleSlug)}`;
+  const serviceArticle = await getServiceBlogArticle(slug, locale, articleSlug);
+  if (serviceArticle) {
+    const { post, canonical } = serviceArticle;
     const title = post.metaTitle || post.title;
     const description = post.metaDescription || post.excerpt || '';
     const image = post.featuredImage ? `${SITE_URL}${post.featuredImage}` : undefined;
@@ -115,39 +117,38 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function CorporateWebsiteGuideRoute({ params }: PageProps) {
   const { locale, slug, articleSlug } = await params;
-  if (slug === 'e-commerce' && locale === 'tr') {
-    const post = await getEcommerceArticle(articleSlug);
-    if (!post) notFound();
-    const canonical = `${SITE_URL}${ecommerceArticlePath(articleSlug)}`;
-    const title = post.title;
-    const description = post.excerpt || post.metaDescription || undefined;
-    return (
-      <>
-        <ArticleJsonLd
-          headline={title}
-          description={description}
-          url={canonical}
-          image={post.featuredImage ? `${SITE_URL}${post.featuredImage}` : undefined}
-          datePublished={post.publishedAt ? new Date(post.publishedAt).toISOString() : undefined}
-          dateModified={post.updatedAt ? new Date(post.updatedAt).toISOString() : undefined}
-          section="E-Ticaret"
-          keywords={post.tags}
-          inLanguage="tr-TR"
-        />
-        <BreadcrumbJsonLd items={[
-          { name: 'Ana Sayfa', url: `${SITE_URL}/tr` },
-          { name: 'Hizmetler', url: `${SITE_URL}/tr/hizmetler` },
-          { name: 'E-Ticaret', url: `${SITE_URL}/tr/hizmetler/e-commerce` },
-          { name: 'E-Ticaret Rehberleri', url: `${SITE_URL}/tr/hizmetler/e-commerce/blog` },
-          { name: title, url: canonical },
-        ]} />
-        <BlogPostView
-          initialPost={JSON.parse(JSON.stringify(post))}
-          serviceBlogHref="/tr/hizmetler/e-commerce/blog"
-          serviceBlogImageAlt={ecommerceArticleImageAlt[articleSlug]}
-        />
-      </>
-    );
+  const serviceArticle = await getServiceBlogArticle(slug, locale, articleSlug);
+  if (serviceArticle) {
+    const { blog, post } = serviceArticle;
+    const { config, category, coverAlt } = getServiceArticlePresentation(blog, post.slug, post.title);
+    const { getPublicServiceBlogCards } = await import('@/lib/database/public-queries');
+    const relatedPost = (await getPublicServiceBlogCards(slug, locale).catch(() => [])).find((card) => card.slug !== post.slug && card.featuredImage);
+    const published = isoDay(post.publishedAt);
+    const modified = isoDay(post.updatedAt) || published;
+    return <ServiceArticlePage
+      config={config}
+      article={{
+        slug: post.slug,
+        title: post.title,
+        category,
+        standfirst: post.excerpt || post.metaDescription || '',
+        metaDescription: post.metaDescription || post.excerpt || '',
+        coverImage: post.featuredImage || '/images/og-image.jpg',
+        coverAlt,
+        datePublished: published,
+        // Same-day re-publishes are not shown as "updated".
+        dateModified: modified > published ? modified : published,
+        body: post.content,
+        keywords: post.tags,
+      }}
+      related={relatedPost ? {
+        slug: relatedPost.slug,
+        title: relatedPost.title,
+        excerpt: relatedPost.excerpt || '',
+        coverImage: relatedPost.featuredImage!,
+        category: getServiceArticlePresentation(blog, relatedPost.slug, relatedPost.title).category,
+      } : null}
+    />;
   }
   if (slug !== 'corporate-website-design' || (locale !== 'en' && locale !== 'tr')) notFound();
   if (locale === 'tr') {

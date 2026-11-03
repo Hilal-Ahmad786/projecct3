@@ -6,9 +6,48 @@
     "metaTitle": "E-Ticaret Sitesi Kurmak İçin Gerekenler | PakSoft",
     "metaDescription": "E-ticaret sitesi kurmak için ürün verisi, ödeme, kargo, içerik ve test hazırlıklarını inceleyin. Örnek ürün tablosu ve yayın kontrol listesiyle başlayın.",
     "category": "e-commerce",
-    "tags": ["e-ticaret sitesi kurulumu", "ürün kataloğu", "yayın kontrol listesi"],
+    "tags": [
+      "e-ticaret sitesi kurulumu",
+      "ürün kataloğu",
+      "yayın kontrol listesi"
+    ],
     "featuredImage": "/images/blog/ecommerce/e-ticaret-kurulum-kapak.webp",
-    "imageAlt": "E-ticaret mağazası, mobil ürün ekranı, hazırlık kontrol panosu ve kargo kutusunu gösteren PakSoft illüstrasyonu"
+    "imageAlt": "E-ticaret mağazası, mobil ürün ekranı, hazırlık kontrol panosu ve kargo kutusunu gösteren PakSoft illüstrasyonu",
+    "categoryLabel": "E-Ticaret Kurulumu",
+    "ctas": {
+      "early": {
+        "heading": "E-ticaret projenizi planlıyor musunuz?",
+        "text": "Ürün yapınızı, mevcut sistemlerinizi ve önceliklerinizi paylaşın; kurulum kapsamını birlikte netleştirelim.",
+        "primary": {
+          "label": "Projenizi Anlatın",
+          "href": "/tr/start-project?service=e-commerce"
+        },
+        "secondary": {
+          "label": "E-Ticaret Hizmetimizi İnceleyin",
+          "href": "/tr/hizmetler/e-commerce"
+        }
+      },
+      "middle": {
+        "heading": "Kurulum aşamalarını birlikte değerlendirin",
+        "text": "İçerik hazırlığından test ve devre kadar sorumlulukları adım adım görün.",
+        "primary": {
+          "label": "Kurulum Sürecini İnceleyin",
+          "href": "/tr/hizmetler/e-commerce/surec"
+        }
+      },
+      "closing": {
+        "heading": "Mağazanızı hazırlık listesiyle birlikte planlayalım",
+        "text": "Mevcut site adresinizi veya mağaza fikrinizi, ürün yapınızı ve ihtiyaç duyduğunuz bağlantıları paylaşın.",
+        "primary": {
+          "label": "Teklif Talebinizi İletin",
+          "href": "/tr/start-project?service=e-commerce"
+        },
+        "secondary": {
+          "label": "Fiyatlandırma Bilgilerini İnceleyin",
+          "href": "/tr/hizmetler/e-commerce/fiyatlandirma"
+        }
+      }
+    }
   },
   {
     "slug": "e-ticaret-altyapisi-secimi",
@@ -17,8 +56,48 @@
     "metaTitle": "E-Ticaret Altyapısı Seçimi Rehberi | PakSoft",
     "metaDescription": "E-ticaret altyapınızı katalog, yönetim, entegrasyon ve bakım ihtiyaçlarına göre seçin. Hazır platform, WooCommerce, özel yazılım ve headless farklarını inceleyin.",
     "category": "e-commerce",
-    "tags": ["e-ticaret altyapısı", "e-ticaret yazılımı", "WooCommerce", "headless commerce"],
+    "tags": [
+      "e-ticaret altyapısı",
+      "e-ticaret yazılımı",
+      "WooCommerce",
+      "headless commerce"
+    ],
     "featuredImage": "/images/blog/ecommerce/e-ticaret-altyapi-secimi-kapak.webp",
-    "imageAlt": "Hazır modüller ve özel geliştirmeyi temsil eden iki mağaza arayüzünün PakSoft illüstrasyonu"
+    "imageAlt": "Hazır modüller ve özel geliştirmeyi temsil eden iki mağaza arayüzünün PakSoft illüstrasyonu",
+    "categoryLabel": "E-Ticaret Altyapıları",
+    "ctas": {
+      "early": {
+        "heading": "Altyapı kararınızı gerçek ihtiyaçlarla başlayarak verin",
+        "text": "Ürün yapınızı, mevcut sistemlerinizi ve özel işleyişinizi paylaşın; uygun seçenekleri birlikte değerlendirelim.",
+        "primary": {
+          "label": "Projenizi Anlatın",
+          "href": "/tr/start-project?service=e-commerce"
+        },
+        "secondary": {
+          "label": "E-Ticaret Hizmetimizi İnceleyin",
+          "href": "/tr/hizmetler/e-commerce"
+        }
+      },
+      "middle": {
+        "heading": "Altyapı ve bağlantı ihtiyaçlarını birlikte değerlendirin",
+        "text": "Platform, entegrasyon ve bakım seçeneklerini kapsamlarıyla birlikte görün.",
+        "primary": {
+          "label": "E-Ticaret Teknolojilerini İnceleyin",
+          "href": "/tr/hizmetler/e-commerce/teknoloji"
+        }
+      },
+      "closing": {
+        "heading": "Seçenekleri işletmenizin işleyişiyle birlikte değerlendirelim",
+        "text": "Ürün kataloğunuzu, mevcut sistemlerinizi ve özel gereksinimlerinizi paylaşın.",
+        "primary": {
+          "label": "Teklif Talebinizi İletin",
+          "href": "/tr/start-project?service=e-commerce"
+        },
+        "secondary": {
+          "label": "Fiyatlandırma Bilgilerini İnceleyin",
+          "href": "/tr/hizmetler/e-commerce/fiyatlandirma"
+        }
+      }
+    }
   }
 ]

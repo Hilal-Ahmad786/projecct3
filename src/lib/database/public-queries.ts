@@ -585,6 +585,23 @@ export const getPublicServiceBlogPostBySlug = unstable_cache(
   BLOG_CACHE_OPTS,
 );
 
+// Card fields for a service blog's listing and "related guide" box. Like the
+// slug lookup above, errors propagate so the listing can tell an outage apart
+// from an empty blog.
+export const getPublicServiceBlogCards = unstable_cache(
+  async (category: string, locale: string, limit: number = 24) => {
+    const posts = await getPrismaClient().blogPost.findMany({
+      where: { status: 'PUBLISHED', publishedAt: { lte: new Date() }, category, language: locale },
+      select: { slug: true, title: true, excerpt: true, featuredImage: true, publishedAt: true },
+      orderBy: { publishedAt: 'desc' },
+      take: limit,
+    });
+    return posts.map((post) => ({ ...post, publishedAt: post.publishedAt?.toISOString() ?? null }));
+  },
+  ['public:service-blog-cards'],
+  BLOG_CACHE_OPTS,
+);
+
 // Sitemap only needs slug + dates — not translations or full markdown content.
 export const getBlogSlugsForSitemap = unstable_cache(
   async () => {

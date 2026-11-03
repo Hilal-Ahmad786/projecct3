@@ -14,7 +14,7 @@ Hazır platform, açık kaynak yazılım ve özel geliştirme aynı işletme sor
 
 Hazır platform kullanmak mağazanın kendiliğinden hazır olduğu anlamına gelmez. Özel yazılım da ürün verilerini, tasarım kararlarını ve operasyon sorunlarını otomatik çözmez. Her yaklaşımda kurulum ve işletme işi vardır; dağılımı değişir.
 
-**Altyapı kararınızı gerçek ihtiyaçlarla başlayarak verin.** Ürün yapınızı, mevcut sistemlerinizi ve özel işleyişinizi paylaşın. [Projenizi anlatın](/tr/start-project?service=e-commerce).
+[[PAKSOFT_CTA:early]]
 
 ## 2. Platform adından önce gereksinim listenizi yazın
 
@@ -92,13 +92,13 @@ Ayrı ön yüz; yayın, entegrasyon, önbellek ve ölçüm tarafında ayrıca so
 
 Bu tablo örnektir; her sistemin aynı yöntemleri desteklediğini göstermez. Hazır uygulama, mevcut API veya özel bağlantı seçenekleri teknik dokümantasyon ve erişimlerle doğrulanmalıdır.
 
-**Altyapı ve bağlantı ihtiyaçlarını birlikte değerlendirin.** [E-ticaret teknolojileri ve altyapı yaklaşımımızı inceleyin](/tr/hizmetler/e-commerce/teknoloji).
+[[PAKSOFT_CTA:middle]]
 
 ![E-ticaret vitrini, depo, bağlantılar ve bakım unsurlarını temsil eden PakSoft illüstrasyonu](/images/blog/ecommerce/e-ticaret-altyapi-operasyon.webp)
 
 ## 8. İlk kurulumla birlikte düzenli giderleri de görün
 
-Altyapı gereksinimlerini ekibinizle değerlendirmek için [E-Ticaret Altyapı İhtiyaç Matrisini İndirin](/downloads/e-ticaret-altyapi-ihtiyac-matrisi.csv).
+Gereksinimleri, öncelikleri ve sorumluları tek tabloda toplamak için boş CSV matrisini kullanın. [E-Ticaret Altyapı İhtiyaç Matrisini İndirin](/downloads/e-ticaret-altyapi-ihtiyac-matrisi.csv)
 
 İlk teklif düşük görünse bile işletme maliyetini anlamak için hangi giderlerin tekrar edeceğini bilmeniz gerekir. Öte yandan daha yüksek geliştirme bedeli de otomatik olarak daha düşük uzun vadeli maliyet anlamına gelmez.
 
@@ -131,7 +131,7 @@ Bu soruların cevabı belirsizken yalnızca tema görüntüsü veya başlangıç
 
 Altyapıyı seçtikten sonra ürün, hesap ve yayın hazırlığını [e-ticaret sitesi kurmak için gerekenler rehberiyle](/tr/hizmetler/e-commerce/blog/e-ticaret-sitesi-kurmak-icin-gerekenler) tamamlayabilirsiniz.
 
-**Seçenekleri işletmenizin işleyişiyle birlikte değerlendirelim.** Ürün kataloğunuzu, mevcut sistemlerinizi ve özel gereksinimlerinizi paylaşın. [Teklif talebinizi iletin](/tr/start-project?service=e-commerce).
+[[PAKSOFT_CTA:closing]]
 
 ## Kaynaklar
 

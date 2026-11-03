@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import ServiceGuideCards, { type ServiceGuideCard } from '@/components/services/ServiceGuideCards';
+import { getServiceArticlePresentation, getServiceBlog } from '@/components/services/service-blogs';
 import type { ReactNode } from 'react';
 import { ArrowRightIcon, ArrowUpRightIcon, ShoppingBagIcon, Squares2X2Icon, CreditCardIcon, CodeBracketIcon, BuildingStorefrontIcon, GlobeAltIcon, CheckIcon } from '@heroicons/react/24/outline';
 import InternalPageHero from '@/components/services/InternalPageHero';
@@ -279,20 +281,29 @@ const pageBodies: Record<Exclude<EcommercePageKey,'overview'|'blog'>, ReactNode>
 export default async function EcommerceTurkishPage({ page }: { page: EcommercePageKey }) {
   if (page === 'overview') return <main className="min-h-screen bg-white"><EcommerceTurkishOverviewBody/></main>;
   if (page === 'blog') {
-    let posts: Array<{ slug: string; title: string; excerpt: string | null; date: string | null; image: string | null }> = [];
+    let posts: ServiceGuideCard[] = [];
     let postsUnavailable = false;
     try {
-      const { getPublishedBlogPosts } = await import('@/lib/admin/database/blog-queries');
-      const result = await getPublishedBlogPosts('tr', { page: 1, limit: 12 }, 'e-commerce');
-      posts = result.data.map((post: any) => {
-        const translated = post.translations?.find((item: any) => item.locale === 'tr');
-        return { slug: post.slug, title: translated?.title || post.title, excerpt: translated?.excerpt || post.excerpt || null, date: post.publishedAt?.toISOString?.() || null, image: post.featuredImage || null };
+      const { getPublicServiceBlogCards } = await import('@/lib/database/public-queries');
+      const blog = getServiceBlog('e-commerce', 'tr');
+      const cards = await getPublicServiceBlogCards('e-commerce', 'tr');
+      posts = cards.map((post) => {
+        const presentation = blog ? getServiceArticlePresentation(blog, post.slug, post.title) : null;
+        return {
+          slug: post.slug,
+          href: `/tr/hizmetler/e-commerce/blog/${post.slug}`,
+          title: post.title,
+          category: presentation?.category ?? 'E-Ticaret Rehberi',
+          excerpt: post.excerpt || '',
+          image: post.featuredImage || '/images/og-image.jpg',
+          imageAlt: presentation?.coverAlt ?? post.title,
+        };
       });
     } catch {
       posts = [];
       postsUnavailable = true;
     }
-    return <main className="min-h-screen bg-white"><Hero page="blog"/><Section title="E-Ticaret Rehberleri" id="rehberler">{posts.length ? <div className="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-3">{posts.map(post=><article key={post.slug} className="flex h-full flex-col overflow-hidden rounded-xl border border-heritage-sand bg-white"><A href={`/tr/hizmetler/e-commerce/blog/${post.slug}`} aria-label={`${post.title} yazısını okuyun`} className="group block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">{post.image ? <div className="relative aspect-[16/9] overflow-hidden bg-heritage-ivory"><Image src={post.image} alt="" fill sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw" className="object-cover transition-transform duration-500 group-hover:scale-[1.02] motion-reduce:transition-none"/></div> : <div aria-hidden="true" className="aspect-[16/9] bg-heritage-ivory"/>}<div className="px-5 pt-5"><span className="text-overline text-heritage-turquoise-deep">E-Ticaret Rehberi</span><h3 className="mt-2 text-base font-semibold leading-snug text-gray-900 group-hover:text-heritage-turquoise-deep">{post.title}</h3></div></A>{post.excerpt&&<p className="mt-2 flex-1 px-5 text-sm leading-6 text-gray-600">{post.excerpt}</p>}{post.date&&<time className="mt-4 px-5 text-xs text-gray-500" dateTime={post.date}>{new Date(post.date).toLocaleDateString('tr-TR')}</time>}<A href={`/tr/hizmetler/e-commerce/blog/${post.slug}`} className="m-5 mt-4 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Yazıyı okuyun<ArrowRightIcon className="h-4 w-4"/></A></article>)}</div> : <><Intro>{postsUnavailable ? 'Rehberler şu anda yüklenemiyor. E-ticaret hizmetlerinin özelliklerini ve çalışma sürecini inceleyebilirsiniz.' : 'E-ticaret planlama rehberlerimiz hazırlanıyor. Bu sırada mağazanızın kurulum sürecini ve ihtiyaç duyabileceğiniz özellikleri inceleyebilirsiniz.'}</Intro><div className="mt-5 flex flex-wrap gap-3"><CTA href={paths.process} secondary>Kurulum Sürecini İnceleyin</CTA><CTA href={paths.features} secondary>Özellikleri İnceleyin</CTA></div></>}</Section></main>;
+    return <main className="min-h-screen bg-white"><Hero page="blog"/><Section title="E-Ticaret Rehberleri" id="rehberler">{posts.length ? <div className="mt-5"><ServiceGuideCards cards={posts} reveal/></div> : <><Intro>{postsUnavailable ? 'Rehberler şu anda yüklenemiyor. E-ticaret hizmetlerinin özelliklerini ve çalışma sürecini inceleyebilirsiniz.' : 'E-ticaret planlama rehberlerimiz hazırlanıyor. Bu sırada mağazanızın kurulum sürecini ve ihtiyaç duyabileceğiniz özellikleri inceleyebilirsiniz.'}</Intro><div className="mt-5 flex flex-wrap gap-3"><CTA href={paths.process} secondary>Kurulum Sürecini İnceleyin</CTA><CTA href={paths.features} secondary>Özellikleri İnceleyin</CTA></div></>}</Section></main>;
   }
   return <main className="min-h-screen bg-white"><Hero page={page}/>{pageBodies[page]}<section className="relative isolate overflow-hidden bg-gray-950 text-white"><div aria-hidden="true" className="pointer-events-none absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_50%_50%,rgba(14,124,123,.28),transparent_55%)]"/><div className="relative mx-auto max-w-3xl px-4 cw-section text-center"><h2 className="text-headline font-medium">{page==='features'?'Uygun Altyapıyı İnceleyin':page==='technologies'?'Altyapı Seçiminizi Birlikte Değerlendirelim':page==='process'?'Projeniz İçin Başlangıç Bilgilerini Paylaşın':page==='portfolio'?'Benzer Bir İhtiyacınız mı Var?':page==='pricing'?'Önce İhtiyacınızı, Sonra Teklif Kapsamını Netleştirelim':'Sorunuzun Yanıtını Bulamadınız mı?'}</h2><p className="mt-3 text-sm leading-6 text-gray-300">Yeni mağaza fikrinizi veya mevcut sitenizi paylaşın; ihtiyaçlarınıza uygun kapsamı birlikte değerlendirelim.</p><div className="mt-5"><CTA>Projenizi Konuşalım</CTA></div></div></section></main>;
 }

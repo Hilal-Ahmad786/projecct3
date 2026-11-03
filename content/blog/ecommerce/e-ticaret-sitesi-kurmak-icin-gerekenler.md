@@ -18,7 +18,7 @@ Bu rehber, yeni mağaza hazırlığını somut işlere ayırır. Her şeyi ilk g
 
 İlk sürüme gerekenlerle daha sonra eklenebilecekleri ayırın. Bu karar, hem teklif karşılaştırmasını hem içerik hazırlığını kolaylaştırır.
 
-**E-ticaret projenizi planlıyor musunuz?** Ürün yapınızı, mevcut sistemlerinizi ve önceliklerinizi paylaşın; kurulum kapsamını birlikte netleştirelim. [Projenizi anlatın](/tr/start-project?service=e-commerce) veya [e-ticaret hizmetimizi inceleyin](/tr/hizmetler/e-commerce).
+[[PAKSOFT_CTA:early]]
 
 ## 2. Ürün dosyasını tasarımdan önce düzenleyin
 
@@ -100,7 +100,7 @@ Aşağıdaki senaryoları platform ve sağlayıcının uygun test ortamında den
 
 Canlı kart bilgileri veya gerçek müşteri verileriyle gelişigüzel deneme yapmayın. Gerçek işlem gerekiyorsa işlem sorumluluğunu ve yöntemi önce ilgili ekiplerle kararlaştırın.
 
-**Kurulum aşamalarını birlikte değerlendirin.** İçerik hazırlığından test ve devre kadar sorumlulukları görmek için [e-ticaret kurulum sürecini inceleyin](/tr/hizmetler/e-commerce/surec).
+[[PAKSOFT_CTA:middle]]
 
 ## 7. Yayın hazırlığını altı alanda takip edin
 
@@ -110,7 +110,7 @@ Bu alanlar birbirinin yerine geçmez. Tasarımın bitmiş olması, stok akışı
 
 ## 8. Yayın öncesi kontrol listesi
 
-İşaretleyip ekibinizle paylaşmak için [E-Ticaret Yayın Hazırlık Listesini İndirin](/downloads/e-ticaret-yayin-hazirlik-listesi.csv).
+Kontrol listesini elektronik tablo uygulamanızda açıp sorumlu ve durum sütunlarını ekibinizle doldurun. [E-Ticaret Yayın Hazırlık Listesini İndirin](/downloads/e-ticaret-yayin-hazirlik-listesi.csv)
 
 - [ ] İlk sürüm kapsamı ve ertelenen işler yazılı olarak ayrıldı.
 - [ ] Ürün kodları, varyantlar, fiyat ve stok kaynakları doğrulandı.
@@ -135,7 +135,7 @@ Ardından ürün görüntüleme, sepete ekleme ve tamamlanan sipariş gibi ölç
 
 Altyapı kararınız henüz net değilse [hazır platform ve özel yazılım seçimi rehberini](/tr/hizmetler/e-commerce/blog/e-ticaret-altyapisi-secimi) okuyun. Böylece hazırladığınız gereksinimleri doğru teknoloji sorularına dönüştürebilirsiniz.
 
-**Mağazanızı hazırlık listesiyle birlikte planlayalım.** Mevcut site adresinizi veya mağaza fikrinizi, ürün yapınızı ve ihtiyaç duyduğunuz bağlantıları paylaşın. [Teklif talebinizi iletin](/tr/start-project?service=e-commerce).
+[[PAKSOFT_CTA:closing]]
 
 ## Kaynaklar
 

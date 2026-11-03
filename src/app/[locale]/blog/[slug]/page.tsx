@@ -3,7 +3,7 @@ import { notFound, permanentRedirect } from 'next/navigation';
 import { Locale, locales, defaultLocale } from '@/lib/i18n';
 import { ArticleJsonLd, BreadcrumbJsonLd } from '@/components/seo/JsonLd';
 import BlogPostView from './BlogPostView';
-import { localizeFullPath } from '@/lib/routes';
+import { hasServiceBlog, serviceArticlePath } from '@/lib/service-blogs';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -50,9 +50,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const l = localized(post, validLocale);
   const title = (l.metaTitle || `${l.title} | PakSoft Blog`).slice(0, 70);
   const description = (l.metaDescription || l.excerpt || `${l.title} — insights from the PakSoft team.`).slice(0, 200);
-  const isTurkishEcommerceArticle = validLocale === 'tr' && post.category === 'e-commerce' && post.language === 'tr';
-  const url = isTurkishEcommerceArticle
-    ? `${baseUrl}/tr${localizeFullPath(`/services/e-commerce/blog/${slug}`, 'tr')}`
+  // Service-blog posts live under their service; canonicalize there.
+  const url = post.language === validLocale && hasServiceBlog(post.category, validLocale)
+    ? `${baseUrl}${serviceArticlePath(post.category, validLocale, slug)}`
     : `${baseUrl}/${validLocale}/blog/${slug}`;
 
   // Posts are single-language (BlogPost.language). When this URL's locale
@@ -91,8 +91,8 @@ export default async function BlogPostPage({ params }: PageProps) {
   // HTTP 200 (a soft-404 that Google indexes and demotes).
   if (!post) notFound();
 
-  if (validLocale === 'tr' && post.category === 'e-commerce' && post.language === 'tr') {
-    permanentRedirect(`/tr${localizeFullPath(`/services/e-commerce/blog/${slug}`, 'tr')}`);
+  if (post.language === validLocale && hasServiceBlog(post.category, validLocale)) {
+    permanentRedirect(serviceArticlePath(post.category, validLocale, slug));
   }
 
   const l = post ? localized(post, validLocale) : null;
