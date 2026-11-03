@@ -111,7 +111,7 @@ Gereksinimleri, öncelikleri ve sorumluları tek tabloda toplamak için boş CSV
 | Bakım | Güncelleme, izleme ve hata giderme sorumlusu kim? |
 | Yeni ihtiyaçlar | Ek sayfa, dil veya işlev nasıl tekliflendirilecek? |
 
-Fiyatı değerlendirirken aynı kapsamı karşılaştırın. Bir platform aboneliğini, tasarım ve entegrasyonları içeren geliştirme teklifiyle doğrudan aynı ürün gibi kıyaslamayın. [E-ticaret sitesi fiyatlandırma sayfasında](/tr/hizmetler/e-commerce/fiyatlandirma) maliyet kalemlerini ayrı inceleyebilirsiniz.
+Fiyatı değerlendirirken aynı kapsamı karşılaştırın. Bir platform aboneliğini, tasarım ve entegrasyonları içeren geliştirme teklifiyle doğrudan aynı ürün gibi kıyaslamayın. İlk yıl giderlerini kurulum ve kullanım maliyetleriyle birlikte ele almak için [e-ticaret sitesi fiyatları rehberini](/tr/hizmetler/e-commerce/blog/e-ticaret-sitesi-fiyatlari) okuyun; hizmet kapsamı için [e-ticaret sitesi fiyatlandırma sayfasını](/tr/hizmetler/e-commerce/fiyatlandirma) inceleyebilirsiniz.
 
 ## 9. Üç örnek senaryoyla kararı somutlaştırın
 

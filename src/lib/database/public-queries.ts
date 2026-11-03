@@ -581,7 +581,7 @@ export const getPublicServiceBlogPostBySlug = unstable_cache(
     if (post.category !== category || post.language !== locale) return null;
     return post;
   },
-  ['public:service-blog-post-by-slug'],
+  ['public:service-blog-post-by-slug:v2'],
   BLOG_CACHE_OPTS,
 );
 
@@ -598,7 +598,7 @@ export const getPublicServiceBlogCards = unstable_cache(
     });
     return posts.map((post) => ({ ...post, publishedAt: post.publishedAt?.toISOString() ?? null }));
   },
-  ['public:service-blog-cards'],
+  ['public:service-blog-cards:v2'],
   BLOG_CACHE_OPTS,
 );
 
@@ -617,7 +617,7 @@ export const getBlogSlugsForSitemap = unstable_cache(
       return [];
     }
   },
-  ['public:blog-sitemap'],
+  ['public:blog-sitemap:v2'],
   BLOG_CACHE_OPTS,
 );
 

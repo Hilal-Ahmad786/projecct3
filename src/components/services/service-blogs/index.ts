@@ -23,5 +23,6 @@ export function getServiceArticlePresentation(blog: ServiceBlogDefinition, slug:
     config,
     category: entry?.categoryLabel ?? blog.defaultCategoryLabel,
     coverAlt: entry?.imageAlt ?? title,
+    readingMinutes: entry?.readingMinutes,
   };
 }

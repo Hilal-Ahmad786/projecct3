@@ -10,6 +10,8 @@ export type ServiceGuideCard = {
   excerpt: string;
   image: string;
   imageAlt: string;
+  publishedAt?: string | null;
+  readingMinutes?: number;
 };
 
 // Listing cards for every Turkish service guide (corporate, e-commerce, …).
@@ -17,6 +19,7 @@ export type ServiceGuideCard = {
 // cover (never overlaid on the image) so it remains readable on narrow screens.
 export default function ServiceGuideCards({ cards, headingLevel = 'h3', reveal = false }: { cards: readonly ServiceGuideCard[]; headingLevel?: 'h2' | 'h3'; reveal?: boolean }) {
   const Heading = headingLevel;
+  const formattedDate = (date: string) => new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(date));
   return (
     <ul className={`grid gap-5 md:grid-cols-2 ${reveal ? 'reveal-group' : ''}`}>
       {cards.map((article) => (
@@ -38,6 +41,10 @@ export default function ServiceGuideCards({ cards, headingLevel = 'h3', reveal =
             <span className="flex flex-1 flex-col p-5 sm:p-6">
               <span className="text-overline text-heritage-turquoise-deep">{article.category}</span>
               <Heading className="mt-2 text-lg font-semibold leading-snug text-gray-950 sm:text-xl">{article.title}</Heading>
+              {(article.publishedAt || article.readingMinutes) && <span className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-xs text-gray-500">
+                {article.publishedAt && <time dateTime={article.publishedAt}>{formattedDate(article.publishedAt)}</time>}
+                {article.readingMinutes && <span>Yaklaşık {article.readingMinutes} dk okuma</span>}
+              </span>}
               <span className="mt-2 block flex-1 text-sm leading-6 text-gray-600">{article.excerpt}</span>
               <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep">
                 Rehberi okuyun

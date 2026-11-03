@@ -7,6 +7,8 @@ export type ServiceBlogManifestEntry = {
   categoryLabel?: string;
   /** Cover alt text; falls back to the article title. */
   imageAlt?: string;
+  /** Editorially calculated from the complete body and shown on listing cards. */
+  readingMinutes?: number;
   /** Per-article CTA copy; falls back to the service's config.ctas. */
   ctas?: Partial<Record<CtaStage, CtaCopy>>;
 };

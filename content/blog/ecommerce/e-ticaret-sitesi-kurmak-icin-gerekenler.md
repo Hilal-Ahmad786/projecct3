@@ -72,7 +72,7 @@ Kargoda da yalnızca firma adı yeterli değildir. Ücretin nasıl hesaplanacağ
 | İade | Müşteri nasıl talep iletecek; talep hangi ekibe ulaşacak? |
 | Stok | Sipariş, iptal ve iade sırasında stok nasıl etkilenecek? |
 
-Sağlayıcı ücretleri, platform aboneliği ve geliştirme bedeli ayrı kalemlerdir. Bütçe planında bunları birbirinden ayırın. [E-ticaret fiyatlandırma ve kapsam sayfası](/tr/hizmetler/e-commerce/fiyatlandirma) bu ayrımı teklif karşılaştırmasına taşımak için bir başlangıç olabilir.
+Sağlayıcı ücretleri, platform aboneliği ve geliştirme bedeli ayrı kalemlerdir. Bütçe planında bunları birbirinden ayırın. İlk yıl toplamını kurarken bu kalemleri nasıl karşılaştıracağınızı [e-ticaret sitesi fiyatları rehberinde](/tr/hizmetler/e-commerce/blog/e-ticaret-sitesi-fiyatlari) inceleyebilirsiniz. [E-ticaret fiyatlandırma ve kapsam sayfası](/tr/hizmetler/e-commerce/fiyatlandirma) bu ayrımı teklif karşılaştırmasına taşımak için bir başlangıç olabilir.
 
 ## 5. İşletme bilgileri ve müşteri iletişimini tamamlayın
 

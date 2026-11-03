@@ -122,7 +122,16 @@ export default async function CorporateWebsiteGuideRoute({ params }: PageProps) 
     const { blog, post } = serviceArticle;
     const { config, category, coverAlt } = getServiceArticlePresentation(blog, post.slug, post.title);
     const { getPublicServiceBlogCards } = await import('@/lib/database/public-queries');
-    const relatedPost = (await getPublicServiceBlogCards(slug, locale).catch(() => [])).find((card) => card.slug !== post.slug && card.featuredImage);
+    const relatedPosts = (await getPublicServiceBlogCards(slug, locale).catch(() => []))
+      .filter((card) => card.slug !== post.slug && card.featuredImage)
+      .slice(0, 2)
+      .map((card) => ({
+        slug: card.slug,
+        title: card.title,
+        excerpt: card.excerpt || '',
+        coverImage: card.featuredImage!,
+        category: getServiceArticlePresentation(blog, card.slug, card.title).category,
+      }));
     const published = isoDay(post.publishedAt);
     const modified = isoDay(post.updatedAt) || published;
     return <ServiceArticlePage
@@ -141,13 +150,7 @@ export default async function CorporateWebsiteGuideRoute({ params }: PageProps) 
         body: post.content,
         keywords: post.tags,
       }}
-      related={relatedPost ? {
-        slug: relatedPost.slug,
-        title: relatedPost.title,
-        excerpt: relatedPost.excerpt || '',
-        coverImage: relatedPost.featuredImage!,
-        category: getServiceArticlePresentation(blog, relatedPost.slug, relatedPost.title).category,
-      } : null}
+      relatedPosts={relatedPosts}
     />;
   }
   if (slug !== 'corporate-website-design' || (locale !== 'en' && locale !== 'tr')) notFound();

@@ -163,7 +163,7 @@ function isDownloadHref(href: unknown): href is string {
   return typeof href === 'string' && href.startsWith('/downloads/');
 }
 
-export function ServiceArticlePage({ article, config, related }: { article: ServiceArticleData; config: ServiceArticleConfig; related?: ServiceArticleRelated | null }) {
+export function ServiceArticlePage({ article, config, related, relatedPosts }: { article: ServiceArticleData; config: ServiceArticleConfig; related?: ServiceArticleRelated | null; relatedPosts?: ServiceArticleRelated[] }) {
   const blogListingPath = serviceBlogPath(config);
   const articleUrl = `${SITE_URL}${blogListingPath}/${article.slug}`;
   const toc = getTableOfContents(article.body);
@@ -294,20 +294,22 @@ export function ServiceArticlePage({ article, config, related }: { article: Serv
         <article id="article-body" className="min-w-0 max-w-3xl">
           <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>{article.body}</ReactMarkdown>
 
-          {related && <section aria-labelledby="related-reading" className="mt-16 border-t border-gray-200 pt-10">
-            <h2 id="related-reading" className="text-xl font-semibold text-gray-950">İlgili rehber</h2>
-            <Link href={`${blogListingPath}/${related.slug}`} className={`reveal corporate-info-card group mt-4 grid overflow-hidden rounded-xl border border-gray-200 bg-white sm:grid-cols-[14rem_1fr] ${focusRing}`}>
-              <span className="relative block aspect-video bg-background-gray sm:aspect-auto">
-                <Image src={related.coverImage} alt="" fill loading="lazy" sizes="(max-width: 640px) 100vw, 224px" className="object-cover object-right" />
-              </span>
-              <span className="block p-5">
-                <span className="text-overline text-heritage-turquoise-deep">{related.category}</span>
-                <span className="mt-1 block font-semibold leading-snug text-gray-950">{related.title}</span>
-                <span className="mt-2 block text-sm leading-6 text-gray-600">{related.excerpt}</span>
-                <span className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep">Rehberi okuyun<ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-0.5 motion-reduce:transition-none" aria-hidden="true" /></span>
-              </span>
-            </Link>
-          </section>}
+          {(relatedPosts?.length || related) ? <section aria-labelledby="related-reading" className="mt-16 border-t border-gray-200 pt-10">
+            <h2 id="related-reading" className="text-xl font-semibold text-gray-950">İlgili rehberler</h2>
+            <div className="mt-4 grid gap-4 md:grid-cols-2">
+              {(relatedPosts?.length ? relatedPosts : related ? [related] : []).map((item) => <Link key={item.slug} href={`${blogListingPath}/${item.slug}`} className={`reveal corporate-info-card group grid h-full overflow-hidden rounded-xl border border-gray-200 bg-white sm:grid-cols-[10rem_1fr] ${focusRing}`}>
+                <span className="relative block aspect-video bg-background-gray sm:aspect-auto">
+                  <Image src={item.coverImage} alt="" fill loading="lazy" sizes="(max-width: 640px) 100vw, 160px" className="object-cover object-right" />
+                </span>
+                <span className="block p-5">
+                  <span className="text-overline text-heritage-turquoise-deep">{item.category}</span>
+                  <span className="mt-1 block font-semibold leading-snug text-gray-950">{item.title}</span>
+                  <span className="mt-2 block text-sm leading-6 text-gray-600">{item.excerpt}</span>
+                  <span className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep">Rehberi okuyun<ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-0.5 motion-reduce:transition-none" aria-hidden="true" /></span>
+                </span>
+              </Link>)}
+            </div>
+          </section> : null}
 
           <nav aria-label="Rehber gezinmesi" className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm">
             <Link href={blogListingPath} className={`inline-flex items-center gap-2 font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline ${focusRing}`}><ArrowRightIcon className="h-4 w-4 rotate-180" aria-hidden="true" />{config.allGuidesLabel}</Link>

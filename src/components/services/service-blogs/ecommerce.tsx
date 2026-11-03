@@ -1,4 +1,4 @@
-import { ArchiveBoxIcon, ArrowPathIcon, BanknotesIcon, CircleStackIcon, Cog6ToothIcon, CubeIcon, DocumentCheckIcon, ShoppingBagIcon, UserGroupIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/outline';
+import { AdjustmentsHorizontalIcon, ArchiveBoxIcon, ArrowPathIcon, BanknotesIcon, CalendarDaysIcon, CircleStackIcon, Cog6ToothIcon, CubeIcon, DocumentCheckIcon, RectangleStackIcon, ShoppingBagIcon, UserGroupIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/outline';
 import type { ServiceBlogDefinition } from './types';
 import manifest from '../../../../content/blog/ecommerce/manifest.json';
 
@@ -47,6 +47,30 @@ function DecisionGrid({ title, items }: { title: string; items: GridItem[] }) {
   );
 }
 
+const costComponents: GridItem[] = [
+  { title: 'Tek seferlik işler', text: 'Tasarım, kurulum, veri aktarımı ve başlangıç entegrasyonları.', Icon: RectangleStackIcon },
+  { title: 'Düzenli giderler', text: 'Platform veya hosting, lisanslar ve anlaşmalı bakım.', Icon: CalendarDaysIcon },
+  { title: 'Kullanıma bağlı giderler', text: 'İşlem hacmine göre değişebilen teknik servis ücretleri.', Icon: AdjustmentsHorizontalIcon },
+];
+
+function CostComponentsFigure() {
+  return (
+    <figure className="reveal my-7 overflow-hidden rounded-2xl border border-heritage-sand bg-heritage-ivory p-4 sm:my-9 sm:p-6">
+      <figcaption className="text-sm font-semibold text-gray-900">İlk yıl bütçesindeki gider türleri</figcaption>
+      <ul className="mt-4 grid gap-3 md:grid-cols-3">
+        {costComponents.map(({ title, text, Icon }) => (
+          <li key={title} className="rounded-xl border border-heritage-sand bg-white p-4">
+            <Icon className="h-5 w-5 text-heritage-turquoise-deep" aria-hidden="true" />
+            <h3 className="mt-3 text-sm font-semibold text-gray-900">{title}</h3>
+            <p className="mt-1 text-sm leading-6 text-gray-700">{text}</p>
+          </li>
+        ))}
+      </ul>
+      <p className="mt-4 text-xs leading-5 text-gray-600">Paket içinde yer alan kalemleri ikinci kez eklemeyin. Vergi, dönem ve kur varsayımlarını aynı temelde karşılaştırın.</p>
+    </figure>
+  );
+}
+
 export const ecommerceBlog: ServiceBlogDefinition = {
   config: {
     serviceName: 'E-Ticaret',
@@ -79,6 +103,7 @@ export const ecommerceBlog: ServiceBlogDefinition = {
     renderMarker: (marker) => {
       if (marker === '[[ECOM_LAUNCH_AREAS]]') return <DecisionGrid title="Yayın hazırlığının altı alanı" items={launchAreas} />;
       if (marker === '[[ECOM_PLATFORM_DECISIONS]]') return <DecisionGrid title="Altyapı kararını netleştiren altı soru" items={platformDecisions} />;
+      if (marker === '[[ECOM_COST_COMPONENTS]]') return <CostComponentsFigure />;
       return null;
     },
   },
