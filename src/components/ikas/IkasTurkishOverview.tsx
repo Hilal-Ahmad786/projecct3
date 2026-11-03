@@ -1,4 +1,5 @@
-import Link from 'next/link';
+import Link from '@/components/IntentLink';
+import { trTitleCase } from '@/lib/tr-title-case';
 import type { ReactNode } from 'react';
 import {
   ArrowRightIcon, ArrowsRightLeftIcon, BuildingStorefrontIcon, CheckIcon, CreditCardIcon, PaintBrushIcon,
@@ -32,7 +33,7 @@ function Section({ id, title, tone = 'white', children }: { id?: string; title: 
   return (
     <section id={id} className={`${bg} scroll-mt-[calc(var(--navbar-h,88px)+3.5rem)]`}>
       <div className="mx-auto max-w-[1200px] px-4 sm:px-6 cw-section">
-        <h2 className="reveal max-w-4xl text-headline font-medium leading-tight text-gray-900">{title}</h2>
+        <h2 className="reveal max-w-4xl text-headline font-medium leading-tight text-gray-900">{trTitleCase(title)}</h2>
         {children}
       </div>
     </section>
@@ -184,7 +185,7 @@ export default function IkasTurkishOverviewBody() {
     <section id="ikas-tema-tasarimi" className="bg-heritage-ivory scroll-mt-[calc(var(--navbar-h,88px)+3.5rem)]">
       <div className="mx-auto grid max-w-[1200px] gap-x-12 gap-y-10 px-4 sm:px-6 cw-section lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:items-center">
         <div>
-          <h2 className="reveal max-w-4xl text-headline font-medium leading-tight text-gray-900">ikas tema tasarımı: görünüm kadar yönetilebilirlik de önemli</h2>
+          <h2 className="reveal max-w-4xl text-headline font-medium leading-tight text-gray-900">ikas Tema Tasarımı: Görünüm Kadar Yönetilebilirlik de Önemli</h2>
           <Intro>Mağaza tasarımı yalnızca renk ve banner değişikliğinden oluşmaz. Müşterinizin kategoriyi bulması, ürün seçeneklerini anlaması ve mobilde alışverişi sürdürebilmesi için sayfa yapısını birlikte değerlendiririz.</Intro>
           <div className="reveal-group mt-6 space-y-5">
             {themeWork.map(({ title, text }) => (
@@ -202,6 +203,9 @@ export default function IkasTurkishOverviewBody() {
 
     {/* 04b — real ikas Studio store */}
     <section className="bg-background-gray"><div className="mx-auto max-w-[1200px] px-4 sm:px-6 cw-section"><IkasStoreCase id="ikas-magaza-ornegi" /></div></section>
+
+    {/* 04c — ikas app development + AI agent (kept beside the real store case) */}
+    <IkasAppsSection />
 
     {/* 05 — migration */}
     <Section id="ikasa-gecis" title="ikas'a geçişi veri ve URL planıyla yönetelim">
@@ -237,9 +241,6 @@ export default function IkasTurkishOverviewBody() {
       <p className="mt-5 max-w-3xl text-xs leading-5 text-gray-600">Uygulama uygunluğu, servis sözleşmeleri ve ek ücretler seçilen çözümün güncel koşullarına bağlıdır. PakSoft&apos;un kurulum hizmeti, üçüncü taraf hizmet ücretlerini kendiliğinden kapsamaz. Platformun güncel entegrasyon kategorilerini <IkasExternalLink href={IKAS_INTEGRATIONS_URL}>ikas entegrasyonlar sayfasında</IkasExternalLink> inceleyebilirsiniz.</p>
       <div className="mt-6"><ButtonLink href={enquiry}>Entegrasyon kapsamını görüşelim</ButtonLink></div>
     </Section>
-
-    {/* 06b — ikas app development + AI agent */}
-    <IkasAppsSection />
 
     {/* 07 — SEO & measurement */}
     <Section title="ikas mağazanızda SEO hazırlığı ve ölçümleme">
@@ -345,7 +346,7 @@ export default function IkasTurkishOverviewBody() {
       </div>
       <div className="mx-auto max-w-3xl px-4 cw-section text-center">
         <RocketLaunchIcon className="mx-auto h-8 w-8 text-heritage-turquoise-light" aria-hidden="true" />
-        <h2 className="mt-3 text-headline font-medium">ikas mağazanız için ilk adımı birlikte belirleyelim</h2>
+        <h2 className="mt-3 text-headline font-medium">ikas Mağazanız İçin İlk Adımı Birlikte Belirleyelim</h2>
         <p className="mt-4 text-body leading-relaxed text-gray-300">Yeni mağaza mı kuruyorsunuz, mevcut ikas sitenizi mi geliştiriyorsunuz? Ürün yapınızı, mevcut bağlantınızı ve ihtiyaçlarınızı paylaşın; kurulum, tasarım veya geçiş kapsamını birlikte değerlendirelim.</p>
         <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <ButtonLink href={enquiry}>ikas Projemi Paylaş</ButtonLink>

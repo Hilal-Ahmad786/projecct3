@@ -28,7 +28,19 @@ export function IkasExternalLink({ href = IKAS_OFFICIAL_URL, children, className
 /** Hero footnote for Turkish ikas pages: platform mark, ikas.com link, independence note. */
 export function IkasPlatformNote() {
   return <div className="max-w-xl space-y-1 text-xs leading-5 text-gray-500">
-    <p className="flex flex-wrap items-center gap-x-2 gap-y-1"><IkasWordmark height={14} label="ikas" /><span>altyapısındaki mağazalar için kurulum ve geliştirme</span><span aria-hidden="true">·</span><IkasExternalLink>ikas.com</IkasExternalLink></p>
+    <p className="flex flex-wrap items-center gap-x-2 gap-y-1"><IkasIcon size={18} /><span><span className="font-semibold text-gray-700">ikas</span> altyapısındaki mağazalar için kurulum ve geliştirme</span><span aria-hidden="true">·</span><IkasExternalLink>ikas.com</IkasExternalLink></p>
     <p>{IKAS_INDEPENDENCE_NOTE}</p>
   </div>;
+}
+
+/** Hero scene wrapper: floating green ikas app icon over the page's scene. */
+export function IkasHeroScene({ children }: { children: ReactNode }) {
+  return (
+    <div className="relative">
+      {children}
+      <div aria-hidden="true" data-ikas-loop className="ikas-badge-float absolute left-[3%] top-[3%] z-20 rounded-[20px] bg-white p-1.5 shadow-[0_12px_30px_rgba(18,25,38,0.18)] ring-1 ring-black/5">
+        <IkasIcon size={56} className="rounded-2xl" />
+      </div>
+    </div>
+  );
 }

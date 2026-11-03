@@ -13,6 +13,7 @@ import { isDbTrackingEnabled } from '@/lib/tracking-flags'
 import MotionProvider from '@/components/MotionProvider'
 import CookieConsent from '@/components/CookieConsent'
 import HtmlLangSync from '@/components/HtmlLangSync'
+import NavigationProgress from '@/components/NavigationProgress'
 
 interface LocaleLayoutProps {
   children: ReactNode
@@ -30,6 +31,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   return (
     <div dir={dir} lang={validLocale}>
       <HtmlLangSync locale={validLocale} dir={dir} />
+      <NavigationProgress />
       <TranslationsProvider locale={validLocale} translations={translations}>
         {/* MotionConfig(reducedMotion="user") makes all framer-motion
             animations in the app respect prefers-reduced-motion. */}

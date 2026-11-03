@@ -1,25 +1,9 @@
-// Service routes need the heavy `serviceSubpages` / `servicePages` namespaces
-// that the global layout strips out of the core payload. We re-provide the FULL
-// dictionary here so only /services/* pages pay for it (not home/blog/etc.).
-// This nested TranslationsProvider overrides the core one for this subtree.
+// The full dictionary (heavy `serviceSubpages` / `servicePages` namespaces) is
+// provided one level down — in [slug]/layout.tsx and web-development/layout.tsx —
+// so routes that never read it (the services index, the code-driven Turkish
+// ikas pages) don't serialize ~165KB of extra translations into every payload.
 import { ReactNode } from 'react'
-import { Locale, locales, defaultLocale } from '@/lib/i18n'
-import { getTranslations } from '@/lib/server-i18n'
-import { TranslationsProvider } from '@/hooks/useServerTranslations'
 
-interface ServicesLayoutProps {
-  children: ReactNode
-  params: Promise<{ locale: Locale }>
-}
-
-export default async function ServicesLayout({ children, params }: ServicesLayoutProps) {
-  const { locale } = await params
-  const validLocale = locales.includes(locale) ? locale : defaultLocale
-  const translations = getTranslations(validLocale)
-
-  return (
-    <TranslationsProvider locale={validLocale} translations={translations}>
-      {children}
-    </TranslationsProvider>
-  )
+export default function ServicesLayout({ children }: { children: ReactNode }) {
+  return children
 }

@@ -33,7 +33,7 @@ import EcommerceHeroPlatforms from '@/components/e-commerce/EcommerceHeroPlatfor
 import { IKAS_TR_HERO } from '@/components/ikas/ikasTurkishCopy';
 import RotatingHeading from '@/components/services/RotatingHeading';
 import IkasHeroVisual from '@/components/ikas/IkasHeroVisual';
-import { IkasPlatformNote, IkasWordmark } from '@/components/ikas/IkasMark';
+import { IkasPlatformNote } from '@/components/ikas/IkasMark';
 
 // ── Types ────────────────────────────────────────────────────────────
 interface ProcessStep {
@@ -724,6 +724,8 @@ function HeroSection({
                 <RotatingHeading full={service.name} lead="İşletmenize Uygun" words={['E-Ticaret Sitesi', 'Mağaza Tasarımı', 'Mağaza Kurulumu']} />
               ) : service.slug === 'corporate-website-design' && locale === 'tr' ? (
                 <RotatingHeading full={service.name} lead="Kurumsal" words={['Web Tasarım', 'Web Geliştirme', 'Web Sitesi']} />
+              ) : isIkasTr ? (
+                <RotatingHeading full={IKAS_TR_HERO.title} lead="ikas Mağaza" words={['Kurulumu', 'Tema Tasarımı', 'Uygulamaları']} />
               ) : (
               <h1 className={`text-display font-light text-gray-900 leading-none ${isIkasTr ? 'ikas-hero-title' : ''}`}>
                 <>{service.name.split(' ').slice(0, -1).join(' ')}{service.name.split(' ').length > 1 && <br />}<span className={`font-semibold ${colors.titleAccent}`}>{service.name.split(' ').length > 1 ? service.name.split(' ').slice(-1)[0] : service.name}</span></>
@@ -824,9 +826,8 @@ function HeroSection({
                         <img src="/images/Tech/brand/ikas-icon.png" alt="" width={64} height={64} className="h-14 w-14 rounded-2xl sm:h-16 sm:w-16" />
                       </div>
                       <div aria-hidden="true" className="absolute bottom-[20%] right-[3%] z-20 flex items-center gap-2 rounded-full border border-heritage-sand bg-white/95 px-3 py-1.5 shadow-sm">
-                        <span className="h-2 w-2 rounded-full bg-[#DEFF36] ring-1 ring-[#121926]/30" />
-                        <IkasWordmark height={14} />
-                        <span className="text-[11px] font-medium text-gray-500">mağazası</span>
+                        <img src="/images/Tech/brand/ikas-icon.png" alt="" width={18} height={18} className="h-[18px] w-[18px] rounded" />
+                        <span className="text-[12px] font-semibold text-gray-800">ikas mağazası</span>
                       </div>
                     </>
                   ) : (

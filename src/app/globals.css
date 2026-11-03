@@ -79,6 +79,13 @@
   .ikas-card-motion:focus-within { transform: none; }
 }
 
+/* Route-change progress bar (src/components/NavigationProgress.tsx). */
+.nav-progress { position: fixed; inset-inline: 0; top: 0; z-index: 9999; height: 3px; pointer-events: none; background: #0E7C7B; transform-origin: left; animation: nav-progress-grow 8s cubic-bezier(.1,.7,.2,1) forwards; box-shadow: 0 0 8px rgb(14 124 123 / 45%); }
+.nav-progress--done { animation: nav-progress-finish 280ms ease-out forwards; }
+@keyframes nav-progress-grow { 0% { transform: scaleX(0); } 10% { transform: scaleX(.35); } 100% { transform: scaleX(.92); } }
+@keyframes nav-progress-finish { from { transform: scaleX(.92); opacity: 1; } to { transform: scaleX(1); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .nav-progress { animation: none; transform: scaleX(.6); } .nav-progress--done { opacity: 0; } }
+
 /* ikas visuals (src/components/ikas/visuals). The SVGs render in their final
    state; motion only runs after IkasMotionScope adds .ikas-visible (once) or
    .ikas-in-view (loops, paused off-screen / in hidden tabs). */

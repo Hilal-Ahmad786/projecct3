@@ -5,7 +5,7 @@
 // blurred and the dashboard shows the app's demo data.
 
 import Image from 'next/image';
-import Link from 'next/link';
+import Link from '@/components/IntentLink';
 import { ArrowRightIcon, ChatBubbleLeftRightIcon, ChartBarIcon, CheckIcon, Squares2X2Icon, SwatchIcon, UserGroupIcon } from '@heroicons/react/24/outline';
 import { IkasExternalLink, IkasIcon } from './IkasMark';
 import { IKAS_TR_ENQUIRY as enquiry } from './ikasTurkishCopy';
@@ -41,7 +41,7 @@ export function IkasStoreCase({ headingLevel = 2, id }: { headingLevel?: 2 | 3; 
     <div id={id} className="grid gap-10 scroll-mt-[calc(var(--navbar-h,88px)+3.5rem)] lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center">
       <div>
         <span className={badge}><IkasIcon size={16} />ikas Studio ile geliştirildi</span>
-        <H className={`mt-4 ${headingLevel === 2 ? 'text-headline' : 'text-title'} font-medium leading-tight text-gray-900`}>Canceviz Hurma: ikas Studio ile geliştirdiğimiz e-ticaret mağazası</H>
+        <H className={`mt-4 ${headingLevel === 2 ? 'text-headline' : 'text-title'} font-medium leading-tight text-gray-900 reveal`}>Canceviz Hurma: ikas Studio ile Geliştirdiğimiz E-Ticaret Mağazası</H>
         <p className="mt-4 text-body leading-relaxed text-gray-600">Hurma, kuruyemiş ve kuru meyve satan Canceviz Hurma&apos;nın online mağazasını ikas Studio üzerinde geliştirdik. Mağazanın tema ve bölüm yapısını, ürün yelpazesine ve kampanya dönemlerine göre yönetilebilecek şekilde kurguladık.</p>
         <Ticks items={[
           'ikas Studio ile tema ve özel bölüm geliştirme.',
@@ -81,7 +81,7 @@ export function IkasAppsSection({ id = 'ikas-uygulama-gelistirme', compact = fal
     <section id={id} className="bg-heritage-ivory scroll-mt-[calc(var(--navbar-h,88px)+3.5rem)]">
       <div className="mx-auto max-w-[1200px] px-4 sm:px-6 cw-section">
         <span className={badge}><IkasIcon size={16} />ikas Uygulama Geliştirme</span>
-        <h2 className="mt-4 max-w-4xl text-headline font-medium leading-tight text-gray-900">ikas mağazaları için uygulama geliştiriyoruz</h2>
+        <h2 className="mt-4 reveal max-w-4xl text-headline font-medium leading-tight text-gray-900">ikas Mağazaları İçin Uygulama Geliştiriyoruz</h2>
         <p className="mt-4 max-w-3xl text-body leading-relaxed text-gray-600">Mağaza kurulumunun yanında ikas için özel uygulamalar da geliştiriyoruz. Uygulamalar mağazaya ikas&apos;ın uygulama yetkilendirmesiyle bağlanır; ürün, sipariş ve müşteri verilerini ihtiyaç duyulan izinlerle okuyarak panelde yeni iş akışları sunar.</p>
         {!compact && (
           <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">

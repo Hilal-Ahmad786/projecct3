@@ -8,7 +8,7 @@ import InternalPageHero from '@/components/services/InternalPageHero';
 import { FaqScene } from '@/components/services/hero-visuals/scenes-internal';
 import { useTranslations } from '@/hooks/useTranslations';
 import IkasMotionScope from '@/components/ikas/IkasMotionScope';
-import { IkasIcon, IkasPlatformNote } from '@/components/ikas/IkasMark';
+import { IkasHeroScene, IkasIcon, IkasPlatformNote } from '@/components/ikas/IkasMark';
 
 // ikas (tr) replaces the generic quick-info copy, whose "free consultation"
 // and "ongoing support" promises aren't part of the approved ikas content.
@@ -77,10 +77,11 @@ export default function FAQPageClient({
           { label: serviceName, href: `/services/${serviceSlug}` },
           { label: t('services.detail.breadcrumb.faq') as string },
         ]}
-        scene={<FaqScene accent={accentColor} />}
+        scene={isIkasTurkish ? <IkasHeroScene><FaqScene accent={accentColor} /></IkasHeroScene> : <FaqScene accent={accentColor} />}
         {...(isIkasTurkish ? {
           heading: 'ikas Mağaza Kurulumu: Sık Sorulan Sorular',
           eyebrowIcon: <IkasIcon size={24} />,
+          rotating: { lead: 'ikas Mağaza', words: ['Sık Sorulanlar', 'Merak Edilenler'] },
           eyebrowNormalCase: true,
           footnote: <IkasPlatformNote />,
         } : {})}

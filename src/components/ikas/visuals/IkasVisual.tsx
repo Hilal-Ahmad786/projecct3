@@ -5,7 +5,7 @@
 // final, fully drawn state.
 
 import { IKAS_VISUALS, type IkasVisualName } from './generated';
-import { IkasWordmark } from '../IkasMark';
+import { IkasIcon } from '../IkasMark';
 
 interface IkasVisualProps {
   name: IkasVisualName;
@@ -35,7 +35,7 @@ export default function IkasVisual({ name, label, slotLabels, loop = false, clas
       {Object.entries(slots).map(([id, box]) => {
         const style = { left: `${box.left}%`, top: `${box.top}%`, width: `${box.width}%`, height: `${box.height}%` };
         if (id === 'slot-ikas-mark') {
-          return <span key={id} aria-hidden="true" className="iv-slot absolute flex items-center" style={style}><IkasWordmark height={14} className="h-full max-h-5 w-auto" /></span>;
+          return <span key={id} aria-hidden="true" className="iv-slot absolute flex items-center gap-1.5 text-[clamp(10px,1.3vw,14px)] font-bold text-gray-900" style={style}><IkasIcon size={18} />ikas</span>;
         }
         const text = slotLabels?.[id];
         return text ? <span key={id} aria-hidden="true" className="iv-slot absolute flex items-center justify-center text-center text-[clamp(9px,1.25vw,13px)] font-semibold leading-tight text-gray-700" style={style}>{text}</span> : null;

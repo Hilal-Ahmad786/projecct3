@@ -1,4 +1,5 @@
-import Link from 'next/link';
+import Link from '@/components/IntentLink';
+import { trTitleCase } from '@/lib/tr-title-case';
 import type { ReactNode } from 'react';
 import { ArrowRightIcon, ArrowsRightLeftIcon, BuildingStorefrontIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/outline';
 import InternalPageHero from '@/components/services/InternalPageHero';
@@ -6,7 +7,7 @@ import { ProcessScene } from '@/components/services/hero-visuals/scenes-internal
 import { IKAS_TR_BASE as base, IKAS_TR_ENQUIRY as enquiry } from './ikasTurkishCopy';
 import IkasMotionScope from './IkasMotionScope';
 import IkasVisual from './visuals/IkasVisual';
-import { IkasIcon, IkasPlatformNote } from './IkasMark';
+import { IkasHeroScene, IkasIcon, IkasPlatformNote } from './IkasMark';
 
 const focus = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2';
 const textLink = `font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline ${focus}`;
@@ -17,7 +18,7 @@ function Action({ href, children, secondary = false }: { href: string; children:
 
 function Section({ id, title, children, tone = 'white' }: { id?: string; title: string; children: ReactNode; tone?: 'white' | 'gray' | 'ivory' }) {
   const bg = tone === 'gray' ? 'bg-background-gray' : tone === 'ivory' ? 'bg-heritage-ivory' : 'bg-white';
-  return <section id={id} className={`${bg} scroll-mt-[calc(var(--navbar-h,88px)+3.5rem)]`}><div className="mx-auto max-w-[1200px] px-4 py-12 sm:px-6 sm:py-16"><h2 className="max-w-4xl text-headline font-medium leading-tight text-gray-900">{title}</h2>{children}</div></section>;
+  return <section id={id} className={`${bg} scroll-mt-[calc(var(--navbar-h,88px)+3.5rem)]`}><div className="mx-auto max-w-[1200px] px-4 sm:px-6 cw-section"><h2 className="reveal max-w-4xl text-headline font-medium leading-tight text-gray-900">{trTitleCase(title)}</h2>{children}</div></section>;
 }
 
 function Table({ label, headers, rows }: { label: string; headers: string[]; rows: string[][] }) {
@@ -55,7 +56,8 @@ export default function IkasTurkishPricing() {
       accentWord="ikas Hizmet Fiyatlandırması"
       heading="ikas Kurulum ve Tema Tasarımı Hizmet Fiyatlandırması"
       subtitle="ikas mağazanız için hizmet bedeli; yapılacak kurulum, tema çalışması, veri aktarımı ve entegrasyon kapsamına göre belirlenir. Teklifte PakSoft’un yapacağı işleri, teslimleri ve ayrıca karşılanacak platform veya uygulama giderlerini ayırıyoruz."
-      scene={<ProcessScene />}
+      rotating={{ lead: 'ikas Kurulum', words: ['Hizmet Fiyatları', 'Teklif Kapsamı', 'Maliyet Etkenleri'] }}
+      scene={<IkasHeroScene><ProcessScene /></IkasHeroScene>}
       crumbs={[{ label: 'Ana Sayfa', href: '/' }, { label: 'Hizmetler', href: '/hizmetler' }, { label: 'ikas Geliştirme', href: base }, { label: 'Fiyatlandırma' }]}
       actions={<><Action href={enquiry}>ikas Projem İçin Teklif Talep Et</Action><Action href="#ikas-ornek-kapsamlar" secondary>Örnek Kapsamları İncele</Action></>}
     />
@@ -86,6 +88,6 @@ export default function IkasTurkishPricing() {
       ['E-ticaret sitesi fiyatları: maliyeti neler belirler?', '/tr/hizmetler/e-commerce/blog/e-ticaret-sitesi-fiyatlari'], ['ikas hizmet özellikleri', `${base}/ozellikler`], ['ikas geliştirme süreci', `${base}/surec`], ['ikas genel bakış', base],
     ].map(([label, href]) => <li key={href}><Link href={href} className={textLink}>{label} <ArrowRightIcon className="inline h-4 w-4" aria-hidden="true" /></Link></li>)}</ul></Section>
 
-    <section className="bg-heritage-turquoise-deep text-white"><div className="mx-auto flex max-w-[1200px] flex-col gap-6 px-4 py-10 sm:px-6 sm:py-12 md:flex-row md:items-center md:justify-between"><div className="max-w-2xl"><h2 className="text-title font-semibold leading-tight">ikas projeniz için teklif talep edin</h2><p className="mt-2 text-sm leading-6 text-white/85">Mevcut mağaza bağlantınızı veya yeni mağaza planınızı, örnek ürün yapınızı ve ihtiyaç duyduğunuz değişiklikleri paylaşın. Yapılacak işleri ve ayrıca değerlendirilmesi gereken giderleri birlikte netleştirelim.</p><p className="mt-2 text-xs leading-5 text-white/80">İlk aşamada şifre veya API anahtarı paylaşmanız gerekmez. Kısa bir ihtiyaç özetiyle başlayabilirsiniz.</p></div><Action href={enquiry} secondary>ikas Projemi Paylaş</Action></div></section>
+    <section className="bg-heritage-turquoise-deep text-white"><div className="mx-auto flex max-w-[1200px] flex-col gap-6 px-4 py-10 sm:px-6 sm:py-12 md:flex-row md:items-center md:justify-between"><div className="max-w-2xl"><h2 className="flex items-center gap-3 text-title font-semibold leading-tight"><span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white shadow-sm"><IkasIcon size={30} /></span>ikas Projeniz İçin Teklif Talep Edin</h2><p className="mt-2 text-sm leading-6 text-white/85">Mevcut mağaza bağlantınızı veya yeni mağaza planınızı, örnek ürün yapınızı ve ihtiyaç duyduğunuz değişiklikleri paylaşın. Yapılacak işleri ve ayrıca değerlendirilmesi gereken giderleri birlikte netleştirelim.</p><p className="mt-2 text-xs leading-5 text-white/80">İlk aşamada şifre veya API anahtarı paylaşmanız gerekmez. Kısa bir ihtiyaç özetiyle başlayabilirsiniz.</p></div><Action href={enquiry} secondary>ikas Projemi Paylaş</Action></div></section>
   </>;
 }

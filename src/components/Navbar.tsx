@@ -988,6 +988,15 @@ export default function Navbar() {
     }
   };
 
+  // Prefetch on intent (hover / focus / touch start) rather than on viewport:
+  // static routes prefetch their full payload, so viewport prefetching of the
+  // service tabs made every service page download ~1MB on load.
+  const prefetched = useRef(new Set<string>());
+  const intent = (href: string) => {
+    const go = () => { if (!prefetched.current.has(href)) { prefetched.current.add(href); router.prefetch(href); } };
+    return { onMouseEnter: go, onTouchStart: go, onFocus: go };
+  };
+
   const handleLinkClick = () => {
     setOpen(false);
     setServicesOpen(false);
@@ -1152,6 +1161,7 @@ export default function Navbar() {
                                       <Link
                                         href={getServicePath(group.slug)}
                                         prefetch={false}
+                                        {...intent(getServicePath(group.slug))}
                                         onClick={handleLinkClick}
                                         className={`block font-semibold text-[13px] text-gray-900 mb-2 ${dir === 'rtl' ? 'border-r-2 border-l-0 pr-2' : 'border-l-2 pl-2'} border-heritage-turquoise hover:text-heritage-turquoise transition-colors leading-tight`}
                                       >
@@ -1164,6 +1174,7 @@ export default function Navbar() {
                                               <Link
                                                 href={getServicePath(childSlug)}
                                                 prefetch={false}
+                                                {...intent(getServicePath(childSlug))}
                                                 onClick={handleLinkClick}
                                                 className="text-[12px] text-gray-500 hover:text-heritage-turquoise transition-colors leading-snug block"
                                               >
@@ -1326,11 +1337,12 @@ export default function Navbar() {
               {currentServiceSlug === 'ikas-development' && (
                 <Link
                   href={servicePageLinks[0].href}
+                  prefetch={false}
+                  {...intent(servicePageLinks[0].href)}
                   className="flex items-center gap-2 h-10 pl-1 pr-3 mr-1 border-r border-gray-200/80"
                   aria-label={`ikas · ${servicePageLinks[0].label}`}
                 >
-                  <img src="/images/Tech/brand/ikas-icon.png" alt="" aria-hidden="true" width={22} height={22} className="h-[22px] w-[22px] rounded-md" />
-                  <img src="/images/Tech/ikas.svg" alt="" aria-hidden="true" width={61} height={16} className="h-4 w-auto" />
+                  <img src="/images/Tech/brand/ikas-icon.png" alt="" aria-hidden="true" width={28} height={28} className="h-7 w-7 rounded-lg shadow-sm ring-1 ring-black/5" />
                 </Link>
               )}
               {servicePageLinks.map(({ label, href }) => {
@@ -1339,6 +1351,8 @@ export default function Navbar() {
                   <Link
                     key={href}
                     href={href}
+                    prefetch={false}
+                    {...intent(href)}
                     data-active={isActive || undefined}
                     aria-current={isActive ? 'page' : undefined}
                     className={`relative flex items-center h-10 px-3 text-[13px] font-medium whitespace-nowrap transition-colors ${isActive ? 'text-heritage-turquoise-deep' : 'text-gray-500 hover:text-gray-900'}`}
@@ -1380,7 +1394,7 @@ export default function Navbar() {
                   {isServicePage && (
                     <li className="mb-4 pb-4 border-b border-gray-200">
                       <div className={`flex items-center gap-2 px-4 pb-2 text-[11px] font-bold uppercase tracking-widest text-heritage-turquoise`}>
-                        {currentServiceSlug === 'ikas-development' && <img src="/images/Tech/ikas.svg" alt="ikas" width={46} height={12} className="h-3 w-auto" />}
+                        {currentServiceSlug === 'ikas-development' && <img src="/images/Tech/brand/ikas-icon.png" alt="ikas" width={20} height={20} className="h-5 w-5 rounded" />}
                         {t('serviceNav.onThisPage') || 'On this page'}
                       </div>
                       <ul className="grid grid-cols-2 gap-x-2">
@@ -1390,6 +1404,8 @@ export default function Navbar() {
                             <li key={href}>
                               <Link
                                 href={href}
+                                prefetch={false}
+                                {...intent(href)}
                                 onClick={() => setOpen(false)}
                                 aria-current={isActive ? 'page' : undefined}
                                 className={`block px-4 py-2 text-sm font-medium transition-colors border-l-2 ${isActive ? 'text-heritage-turquoise-deep border-heritage-turquoise bg-heritage-turquoise/5' : 'text-gray-600 border-transparent hover:text-gray-900 hover:border-gray-300'}`}
@@ -1508,8 +1524,9 @@ export default function Navbar() {
                                     <Link
                                       href={getServicePath(group.slug)}
                                       prefetch={false}
+                                      {...intent(getServicePath(group.slug))}
                                       onClick={handleLinkClick}
-                                      className={`block font-semibold text-[13px] text-gray-900 mb-1.5 ${dir === 'rtl' ? 'border-r-2 border-l-0 pr-2' : 'border-l-2 pl-2'} border-heritage-turquoise hover:text-heritage-turquoise transition-colors leading-tight`}
+                                      className={`block py-1 font-semibold text-[13px] text-gray-900 mb-1 ${dir === 'rtl' ? 'border-r-2 border-l-0 pr-2' : 'border-l-2 pl-2'} border-heritage-turquoise hover:text-heritage-turquoise transition-colors leading-tight`}
                                     >
                                       {tServices(`services.${group.slug}`)}
                                     </Link>
@@ -1520,8 +1537,9 @@ export default function Navbar() {
                                             <Link
                                               href={getServicePath(childSlug)}
                                               prefetch={false}
+                                              {...intent(getServicePath(childSlug))}
                                               onClick={handleLinkClick}
-                                              className="text-[12px] text-gray-500 hover:text-heritage-turquoise transition-colors leading-snug block py-0.5"
+                                              className="text-[13px] text-gray-500 hover:text-heritage-turquoise transition-colors leading-snug block py-1.5"
                                             >
                                               {tServices(`services.${childSlug}`)}
                                             </Link>
