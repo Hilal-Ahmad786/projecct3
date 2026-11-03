@@ -115,6 +115,7 @@ export const SERVICE_LABELS: { value: string; labels: Record<string, string> }[]
   { value: 'api-development', labels: { en: 'API Development', tr: 'API Geliştirme', de: 'API-Entwicklung', ur: 'API ڈویلپمنٹ', ar: 'تطوير API' } },
   { value: 'e-commerce', labels: { en: 'E-Commerce Solutions', tr: 'E-Ticaret Çözümleri', de: 'E-Commerce-Lösungen', ur: 'ای کامرس حل', ar: 'حلول التجارة الإلكترونية' } },
   { value: 'corporate-website-design', labels: { en: 'Corporate Website Design', tr: 'Kurumsal Web Tasarım', de: 'Corporate Webdesign', ur: 'کارپوریٹ ویب ڈیزائن', ar: 'تصميم مواقع الشركات' } },
+  { value: 'ikas-development', labels: { en: 'ikas Store Setup & Theme Design', tr: 'ikas Mağaza Kurulumu ve Tema Tasarımı', de: 'ikas-Shop-Einrichtung & Theme-Design', ur: 'ikas اسٹور سیٹ اپ اور تھیم ڈیزائن', ar: 'إعداد متجر ikas وتصميم القالب' } },
   { value: 'devops-cloud', labels: { en: 'DevOps & Cloud', tr: 'DevOps ve Bulut', de: 'DevOps & Cloud', ur: 'DevOps اور کلاؤڈ', ar: 'DevOps والسحابة' } },
   { value: 'cybersecurity', labels: { en: 'Cybersecurity', tr: 'Siber Güvenlik', de: 'Cybersicherheit', ur: 'سائبر سیکیورٹی', ar: 'الأمن السيبراني' } },
   { value: 'conversational-ai', labels: { en: 'Conversational AI', tr: 'Konuşma Yapay Zekası', de: 'Konversations-KI', ur: 'کنورسیشنل AI', ar: 'الذكاء الاصطناعي الحواري' } },

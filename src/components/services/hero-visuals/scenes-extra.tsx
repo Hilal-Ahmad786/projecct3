@@ -324,7 +324,7 @@ export function NeuralLayersScene() {
 }
 
 /* ── product-grid (storefront + add to cart) ─────────────────────── */
-export function ProductGridScene() {
+export function ProductGridScene({ ratings = true }: { ratings?: boolean } = {}) {
   const reduced = useReducedMotion();
   const L = useSceneLabels();
   const cells = [[44, 60], [128, 60], [44, 134], [128, 134]];
@@ -342,7 +342,7 @@ export function ProductGridScene() {
             <polygon points={starPoints(x + 34, y + 17, 11, 6)} fill="none" stroke={H.turquoise} strokeWidth="1.4" />
             <rect x={x + 8} y={y + 40} width="34" height="5" rx="2.5" fill={H.sand} />
             <rect x={x + 8} y={y + 49} width="20" height="5" rx="2.5" fill={H.turquoise} opacity={0.7} />
-            <text x={x + 58} y={y + 53} fontSize="9" fill={H.saffron}>★</text>
+            {ratings && <text x={x + 58} y={y + 53} fontSize="9" fill={H.saffron}>★</text>}
           </motion.g>
         ))}
         {/* cart */}

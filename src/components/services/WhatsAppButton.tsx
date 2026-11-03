@@ -39,12 +39,15 @@ export default function WhatsAppButton({
   variant = 'outline',
   size = 'lg',
   className = '',
+  label = 'WhatsApp',
 }: {
   /** Analytics source tag, e.g. "service_hero" */
   source: string;
   variant?: keyof typeof variantClasses;
   size?: keyof typeof sizeClasses;
   className?: string;
+  /** Visible text; defaults to the locale-neutral brand name. */
+  label?: string;
 }) {
   return (
     <a
@@ -57,8 +60,8 @@ export default function WhatsAppButton({
         ${variantClasses[variant]} ${sizeClasses[size]} ${className}`}
     >
       <WhatsAppIcon className="w-5 h-5 flex-shrink-0" />
-      {/* Brand name — locale-neutral by design */}
-      <span>WhatsApp</span>
+      {/* Brand name — locale-neutral by default */}
+      <span>{label}</span>
     </a>
   );
 }

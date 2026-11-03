@@ -217,7 +217,8 @@ const SCENES: Record<HeroVisualType, React.ComponentType> = {
 };
 
 // ── Main dispatcher (public API unchanged) ──────────────────────────
-export function HeroVisual({ type }: { type: HeroVisualType; motionType?: MotionType; accentClass?: string }) {
+export function HeroVisual({ type, hideRatings = false }: { type: HeroVisualType; motionType?: MotionType; accentClass?: string; /** Drops rating-like ★ marks from product cards (pages that must not imply reviews). */ hideRatings?: boolean }) {
+  if (type === 'product-grid') return <ProductGridScene ratings={!hideRatings} />;
   const SceneComponent = SCENES[type] ?? NetworkNodesScene;
   return <SceneComponent />;
 }

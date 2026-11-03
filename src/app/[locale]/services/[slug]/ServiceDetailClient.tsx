@@ -30,6 +30,7 @@ import { COMPANY_STATS } from '@/config/companyStats';
 import CorporateWebsiteOverview from '@/components/services/CorporateWebsiteOverview';
 import EcommercePlatformStrip from '@/components/e-commerce/EcommercePlatformStrip';
 import EcommerceHeroPlatforms from '@/components/e-commerce/EcommerceHeroPlatforms';
+import { IKAS_TR_HERO } from '@/components/ikas/ikasTurkishCopy';
 import RotatingHeading from '@/components/services/RotatingHeading';
 
 // ── Types ────────────────────────────────────────────────────────────
@@ -238,6 +239,13 @@ export default function ServiceDetailClient({
     };
     const ecommerceAnimation = animation || { heroVisual: 'product-grid' as const, motion: 'float' as const, bgPattern: 'grid' as const, decorations: 'circles' as const, featureStyle: 'icon-left' as const, processLayout: 'timeline' as const };
     return <div id="overview"><HeroSection service={heroService} colors={colors} accent={accent} process={process} animation={ecommerceAnimation} /></div>;
+  }
+
+  // Turkish ikas overview: hero here, the rest comes from the server-rendered
+  // IkasTurkishOverviewBody (see services/[slug]/page.tsx).
+  if (service.slug === 'ikas-development' && locale === 'tr') {
+    const heroService = { ...service, name: IKAS_TR_HERO.title, description: IKAS_TR_HERO.text, fullDescription: IKAS_TR_HERO.text, shortDescription: IKAS_TR_HERO.text };
+    return <div id="overview"><HeroSection service={heroService} colors={colors} accent={accent} process={process} animation={animation} /></div>;
   }
 
   if (service.slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) {
@@ -637,6 +645,7 @@ function HeroSection({
   const hasAnimation = !!animation;
   const parentService = service.parentService;
   const responseMicrocopy = RESPONSE_MICROCOPY[locale] || RESPONSE_MICROCOPY.en;
+  const isIkasTr = service.slug === 'ikas-development' && locale === 'tr';
 
   return (
     <section className="relative overflow-hidden bg-white pt-[var(--navbar-h,64px)] pb-16 lg:pt-[var(--navbar-h,64px)] lg:pb-24">
@@ -697,8 +706,13 @@ function HeroSection({
             {/* Eyebrow */}
             <div className="flex items-center gap-3">
               <div className="w-8 h-0.5 bg-gray-900" />
-              <span className={`text-xs font-medium ${colors.eyebrow} uppercase tracking-wide`}>
-                {t('services.detail.hero.eyebrow')}
+              {isIkasTr && (
+                // eslint-disable-next-line @next/next/no-img-element -- small platform mark, already used site-wide
+                <img src="/images/Tech/brand/ikas-icon.png" alt="" width={20} height={20} className="h-5 w-5 rounded" />
+              )}
+              {/* ikas writes its name in lowercase; CSS uppercase would render "İKAS". */}
+              <span className={`text-xs font-medium ${colors.eyebrow} ${isIkasTr ? '' : 'uppercase'} tracking-wide`}>
+                {isIkasTr ? IKAS_TR_HERO.eyebrow : t('services.detail.hero.eyebrow')}
               </span>
             </div>
 
@@ -733,7 +747,7 @@ function HeroSection({
             <div className="space-y-3 pt-1">
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button
-                  href={service.slug === 'corporate-website-design' ? '/start-project?service=corporate-website-design' : service.slug === 'e-commerce' && locale === 'tr' ? '/start-project?service=e-commerce' : '/contact'}
+                  href={service.slug === 'corporate-website-design' ? '/start-project?service=corporate-website-design' : service.slug === 'e-commerce' && locale === 'tr' ? '/start-project?service=e-commerce' : isIkasTr ? '/start-project?service=ikas-development' : '/contact'}
                   variant="primary"
                   size="lg"
                   rightIcon={
@@ -742,11 +756,13 @@ function HeroSection({
                     </svg>
                   }
                 >
-                  {service.slug === 'e-commerce' && locale === 'tr' ? 'Projenizi Anlatın' : service.slug === 'corporate-website-design'
+                  {service.slug === 'e-commerce' && locale === 'tr' ? 'Projenizi Anlatın' : isIkasTr ? IKAS_TR_HERO.primary : service.slug === 'corporate-website-design'
                     ? (locale === 'tr' ? 'Projenizi Konuşalım' : 'Discuss Your Project')
                     : t('services.detail.hero.startProject')}
                 </Button>
-                {service.slug === 'e-commerce' && locale === 'tr' ? (
+                {isIkasTr ? (
+                  <a href="#ikas-hizmetleri" className="inline-flex items-center justify-center gap-2 rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 transition-colors motion-reduce:transition-none hover:border-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2">{IKAS_TR_HERO.secondary}</a>
+                ) : service.slug === 'e-commerce' && locale === 'tr' ? (
                   <a href="#e-ticaret-hizmetleri" className="inline-flex items-center justify-center gap-2 rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 transition-colors motion-reduce:transition-none hover:border-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2">E-Ticaret Hizmetlerini İnceleyin</a>
                 ) : service.slug === 'corporate-website-design' ? (
                   <a
@@ -767,6 +783,7 @@ function HeroSection({
                 </p>
               )}
               {service.slug === 'e-commerce' && locale === 'tr' && <EcommercePlatformStrip />}
+              {isIkasTr && <p className="text-sm font-medium text-gray-600">{IKAS_TR_HERO.scope}</p>}
             </div>
           </motion.div>
 
@@ -794,7 +811,7 @@ function HeroSection({
                       <HeroVisual type={animation.heroVisual} motionType={animation.motion} accentClass={colors.dot} />
                     </EcommerceHeroPlatforms>
                   ) : (
-                    <HeroVisual type={animation.heroVisual} motionType={animation.motion} accentClass={colors.dot} />
+                    <HeroVisual type={animation.heroVisual} motionType={animation.motion} accentClass={colors.dot} hideRatings={isIkasTr} />
                   )}
                 </div>
               </div>
