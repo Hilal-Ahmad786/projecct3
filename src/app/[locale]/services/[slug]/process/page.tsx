@@ -7,6 +7,7 @@ import { serviceRobots } from '@/lib/service-quality';
 import ProcessPageClient from './ProcessPageClient';
 import CorporateWebsiteSubpage, { getCorporateWebsiteSubpageMeta } from '@/components/services/CorporateWebsiteSubpage';
 import EcommerceTurkishPage, { getEcommerceTurkishMeta, getEcommerceTurkishSocialMeta } from '@/components/e-commerce/EcommerceTurkishPage';
+import IkasTurkishSubpage, { getIkasTurkishSubpageMeta } from '@/components/ikas/IkasTurkishSubpage';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -33,7 +34,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const customMeta = slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('process', validLocale)
-    : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('process') : null;
+    : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('process')
+    : slug === 'ikas-development' && validLocale === 'tr' ? getIkasTurkishSubpageMeta('process') : null;
   const { title, description } = customMeta || getServiceSubPageMeta('process', validLocale, service.name);
   const canonicalUrl = `${baseUrl}/${validLocale}${localizedPath}`;
 
@@ -72,6 +74,7 @@ export default async function ServiceProcessPage({ params }: PageProps) {
     return <CorporateWebsiteSubpage page="process" locale={locale} />;
   }
   if (slug === 'e-commerce' && locale === 'tr') return <EcommerceTurkishPage page="process" />;
+  if (slug === 'ikas-development' && locale === 'tr') return <IkasTurkishSubpage page="process" />;
 
   const content = service.content as any || {};
   const process = content.process || [];

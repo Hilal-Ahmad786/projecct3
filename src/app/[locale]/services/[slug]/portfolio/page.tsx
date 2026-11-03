@@ -7,6 +7,7 @@ import { serviceRobots } from '@/lib/service-quality';
 import PortfolioPageClient from './PortfolioPageClient';
 import CorporateWebsiteSubpage, { getCorporateWebsiteSubpageMeta } from '@/components/services/CorporateWebsiteSubpage';
 import EcommerceTurkishPage, { getEcommerceTurkishMeta, getEcommerceTurkishSocialMeta } from '@/components/e-commerce/EcommerceTurkishPage';
+import IkasTurkishPortfolio, { getIkasTurkishPortfolioMeta } from '@/components/ikas/IkasTurkishPortfolio';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -33,7 +34,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const customMeta = slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('portfolio', validLocale)
-    : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('portfolio') : null;
+    : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('portfolio')
+    : slug === 'ikas-development' && validLocale === 'tr' ? getIkasTurkishPortfolioMeta() : null;
   const { title, description } = customMeta || getServiceSubPageMeta('portfolio', validLocale, service.name);
   const isTurkishCorporatePortfolio = slug === 'corporate-website-design' && validLocale === 'tr';
   const canonicalUrl = `${baseUrl}/${validLocale}${localizedPath}`;
@@ -89,6 +91,7 @@ export default async function ServicePortfolioPage({ params }: PageProps) {
     return <CorporateWebsiteSubpage page="portfolio" locale={locale} />;
   }
   if (slug === 'e-commerce' && locale === 'tr') return <EcommerceTurkishPage page="portfolio" />;
+  if (slug === 'ikas-development' && locale === 'tr') return <IkasTurkishPortfolio />;
 
   const content = service.content as any || {};
   let portfolio = content.portfolio || [];

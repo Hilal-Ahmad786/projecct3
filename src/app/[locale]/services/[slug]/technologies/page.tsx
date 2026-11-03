@@ -10,6 +10,7 @@ import { serviceRobots } from '@/lib/service-quality';
 import TechStackPageClient from '../tech-stack/TechStackPageClient';
 import CorporateWebsiteSubpage, { getCorporateWebsiteSubpageMeta } from '@/components/services/CorporateWebsiteSubpage';
 import EcommerceTurkishPage, { getEcommerceTurkishMeta, getEcommerceTurkishSocialMeta } from '@/components/e-commerce/EcommerceTurkishPage';
+import IkasTurkishSubpage, { getIkasTurkishSubpageMeta } from '@/components/ikas/IkasTurkishSubpage';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -36,7 +37,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const customMeta = slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('technologies', validLocale)
-    : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('technologies') : null;
+    : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('technologies')
+    : slug === 'ikas-development' && validLocale === 'tr' ? getIkasTurkishSubpageMeta('technologies') : null;
   const { title, description } = customMeta || getServiceSubPageMeta('technologies', validLocale, service.name);
   const canonicalUrl = `${baseUrl}/${validLocale}${localizedPath}`;
 
@@ -74,6 +76,7 @@ export default async function ServiceTechnologiesPage({ params }: PageProps) {
     return <CorporateWebsiteSubpage page="technologies" locale={locale} />;
   }
   if (slug === 'e-commerce' && locale === 'tr') return <EcommerceTurkishPage page="technologies" />;
+  if (slug === 'ikas-development' && locale === 'tr') return <IkasTurkishSubpage page="technologies" />;
 
   const content = (service.content as Record<string, unknown>) || {};
   const technologies = ((content.technologies as { name: string; icon?: string }[]) || [])
