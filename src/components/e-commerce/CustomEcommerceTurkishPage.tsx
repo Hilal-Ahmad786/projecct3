@@ -8,6 +8,8 @@ import { ArrowRightIcon, CheckIcon, CodeBracketSquareIcon } from '@heroicons/rea
 import InternalPageHero from '@/components/services/InternalPageHero';
 import IkasVisual from '@/components/ikas/visuals/IkasVisual';
 import type { IkasVisualName } from '@/components/ikas/visuals/generated';
+import CustomEcomArtwork from '@/components/custom-ecommerce/visuals/CustomEcomArtwork';
+import type { CustomEcomVisualName } from '@/components/custom-ecommerce/visuals/generated';
 import { FAQJsonLd } from '@/components/seo/JsonLd';
 import { trTitleCase } from '@/lib/tr-title-case';
 import CustomEcommerceMotionScope from './CustomEcommerceMotionScope';
@@ -117,53 +119,81 @@ function Blocks({ text }: { text: string }) {
 /* ----------------------------------------------------------------- visuals */
 
 const mark = (label: string) => <><span className="flex h-[18px] w-[18px] items-center justify-center rounded bg-heritage-turquoise-deep text-white"><CodeBracketSquareIcon className="h-3 w-3" /></span>{label}</>;
-const methodLabels = { 'slot-option-1': 'Hazır platform', 'slot-option-2': 'Özel modül', 'slot-option-3': 'Özel yazılım' };
+type VisualSpec =
+  | { kind: 'ikas'; name: IkasVisualName; place: 'aside' | 'below'; loop?: boolean; label?: string; markLabel?: string; slotLabels?: Record<string, string> }
+  | { kind: 'custom'; name: CustomEcomVisualName; place: 'aside' | 'below'; loop?: boolean; label?: string; slotLabels?: Record<string, string> };
+const C = (name: CustomEcomVisualName, label: string, slotLabels?: Record<string, string>, place: VisualSpec['place'] = 'aside'): VisualSpec => ({ kind: 'custom', name, place, loop: true, label, slotLabels });
+const I = (name: IkasVisualName, place: VisualSpec['place'], extra: { loop?: boolean; label?: string; markLabel?: string; slotLabels?: Record<string, string> } = {}): VisualSpec => ({ kind: 'ikas', name, place, ...extra });
+
+// Dedicated custom e-commerce art (Codex set, ./custom-ecommerce/visuals) plus
+// the shared ikas visuals where they still fit.
+const ART = {
+  measure: C('measure-pricing', 'Temsili ölçüye göre fiyat: genişlik, yükseklik ve malzeme seçimi fiyatı belirliyor; geçersiz seçenek engelleniyor ve seçimler üretim için sipariş kaydına aktarılıyor', { 'slot-order-label': 'Sipariş kaydı', 'slot-production-label': 'Üretim ekibi' }),
+  dealer: C('dealer-pricing', 'Temsili bayi fiyatı: perakende ziyaretçi ve onaylı bayi aynı üründe farklı fiyat görüyor; bayi fiyatı sepete aynen yansıyor, minimum adet ve onay adımı uygulanıyor', { 'slot-retail-label': 'Perakende', 'slot-dealer-label': 'Bayi', 'slot-approval-label': 'Onay bekliyor' }),
+  source: C('source-of-truth', 'Temsili veri kaynağı: stok ve fiyat işletme yazılımından mağazaya, siparişler mağazadan işletme yazılımına aktarılıyor; ürün kodları eşleşiyor', { 'slot-system-label': 'İşletme yazılımı' }),
+  architecture: C('architecture-options', 'Temsili altyapı seçenekleri: mevcut platforma özel modül, ayrı mağaza arayüzü ve tamamen özel e-ticaret yazılımı', { 'slot-option-1': 'Özel modül', 'slot-option-2': 'Ayrı arayüz', 'slot-option-3': 'Özel yazılım' }, 'below'),
+  release: C('release-scope', 'Temsili ilk sürüm planı: satış ve sipariş için gerekli işlevler ilk sürümde, ek raporlar ve yeni kanallar sonraki aşamada', { 'slot-release-label': 'İlk sürüm', 'slot-later-label': 'Sonraki aşama' }),
+  roles: C('order-roles', 'Temsili sipariş akışı: sipariş onay, depo ve sevkiyat adımlarından geçiyor; iade işlemini yalnız yetkili rol başlatabiliyor', { 'slot-lane-1': 'Onay', 'slot-lane-2': 'Depo', 'slot-lane-3': 'Sevkiyat', 'slot-lane-4': 'İade' }),
+  retry: C('retry-flow', 'Temsili bağlantı hatası: ilk deneme başarısız oluyor ve kayda geçiyor, yeniden deneme başarılı oluyor; tekrar gelen bildirim ikinci sipariş oluşturmuyor', { 'slot-service-label': 'Dış servis', 'slot-log-label': 'İşlem kaydı' }),
+  consistency: C('price-consistency', 'Temsili fiyat tutarlılığı: aynı fiyat kuralı ürün sayfası, sepet ve sipariş özetinde aynı tutarı gösteriyor; sunucu siparişte fiyatı yeniden kontrol ediyor', { 'slot-rule-label': 'Fiyat kuralı' }),
+  scopeChange: C('scope-change', 'Temsili kapsam değişikliği: yeni talebin ekran, yetki, test ve takvime etkisi değerlendiriliyor; talep ilk sürüme veya sonraki aşamaya alınıyor', { 'slot-impact-label': 'Etki değerlendirmesi', 'slot-now-label': 'İlk sürüm', 'slot-later-label': 'Sonraki aşama' }),
+  acceptance: C('acceptance-tests', 'Temsili kabul testleri: normal sipariş ve hata senaryoları kontrol ediliyor, tüm sonuçlar onaylanınca yayın kararı veriliyor', { 'slot-board-label': 'Kabul senaryoları' }),
+  quote: C('quote-builder', 'Temsili teklif yapısı: ekran, iş kuralı, entegrasyon ve test işleri teklifi oluşturuyor; barındırma, lisans ve sağlayıcı giderleri ayrı tutuluyor', { 'slot-quote-label': 'Proje teklifi', 'slot-external-label': 'Dış giderler' }),
+};
 const hubLabels = { 'slot-payment': 'Ödeme', 'slot-cargo': 'Kargo', 'slot-erp': 'Stok / ERP', 'slot-marketplace': 'Muhasebe' };
 
-type VisualSpec = { name: IkasVisualName; place: 'aside' | 'below'; loop?: boolean; label?: string; markLabel?: string; slotLabels?: Record<string, string> };
-const V = (name: IkasVisualName, place: VisualSpec['place'], extra: Omit<VisualSpec, 'name' | 'place'> = {}): VisualSpec => ({ name, place, ...extra });
-
-// Section → shared Codex visual (matched on the start of the H2).
+// Section → visual (matched on the start of the H2).
 const VISUALS: Partial<Record<CustomEcommercePage, [string, VisualSpec][]>> = {
   overview: [
-    ['Özel geliştirme ne zaman', V('method-options', 'below', { loop: true, slotLabels: methodLabels })],
-    ['Özel tasarım', V('variant-picker', 'aside', { loop: true, label: 'Temsili ürün sayfası: seçilen ölçü ve seçeneğe göre ürün görünümü değişiyor' })],
-    ['Özel e-ticaret yazılımı', V('integration-hub', 'aside', { loop: true, markLabel: 'Mağazanız', slotLabels: hubLabels, label: 'Temsili akış: özel mağaza ödeme, kargo, stok ve muhasebe sistemlerine bağlanıyor' })],
-    ['İlk sürüm', V('launch-checklist', 'aside')],
-    ['Proje nasıl', V('process-rail', 'below', { slotLabels: { 'slot-step-1': 'İhtiyaç', 'slot-step-2': 'Kapsam', 'slot-step-3': 'Geliştirme', 'slot-step-4': 'Test', 'slot-step-5': 'Yayın ve devir' } })],
-    ['Özel e-ticaret sitesi fiyatı', V('cost-split', 'aside', { markLabel: 'Dış giderler', label: 'Temsili gider grupları: geliştirme, dış servisler ve yayın sonrası işler' })],
+    ['Özel geliştirme ne zaman', ART.architecture],
+    ['Satış modelinize', { ...ART.measure, place: 'aside' }],
+    ['Özel tasarım', I('variant-picker', 'aside', { loop: true, label: 'Temsili ürün sayfası: seçilen ölçü ve seçeneğe göre ürün görünümü değişiyor' })],
+    ['Özel e-ticaret yazılımı', I('integration-hub', 'aside', { loop: true, markLabel: 'Mağazanız', slotLabels: hubLabels, label: 'Temsili akış: özel mağaza ödeme, kargo, stok ve muhasebe sistemlerine bağlanıyor' })],
+    ['İlk sürüm', ART.release],
+    ['Proje nasıl', I('process-rail', 'below', { slotLabels: { 'slot-step-1': 'İhtiyaç', 'slot-step-2': 'Kapsam', 'slot-step-3': 'Geliştirme', 'slot-step-4': 'Test', 'slot-step-5': 'Yayın ve devir' } })],
+    ['Özel e-ticaret sitesi fiyatı', ART.quote],
   ],
   features: [
-    ['Ürün kataloğu', V('variant-picker', 'aside', { loop: true, label: 'Temsili ürün sayfası: seçilen ölçü ve seçeneğe göre ürün görünümü değişiyor' })],
-    ['Sipariş yönetimi', V('editable-fields', 'aside', { loop: true, markLabel: 'Yönetim paneli', label: 'Temsili yönetim paneli: ekip yetkisine göre düzenlenen alan mağazaya yansıyor' })],
-    ['Entegrasyonlar', V('integration-hub', 'aside', { loop: true, markLabel: 'Mağazanız', slotLabels: hubLabels, label: 'Temsili akış: özel mağaza ödeme, kargo, stok ve muhasebe sistemlerine bağlanıyor' })],
-    ['İlk sürüm', V('launch-checklist', 'aside')],
+    ['Ürün kataloğu', ART.measure],
+    ['Fiyatlandırma ve bayi', ART.dealer],
+    ['Sipariş yönetimi', ART.roles],
+    ['Entegrasyonlar', I('integration-hub', 'aside', { loop: true, markLabel: 'Mağazanız', slotLabels: hubLabels, label: 'Temsili akış: özel mağaza ödeme, kargo, stok ve muhasebe sistemlerine bağlanıyor' })],
+    ['İlk sürüm', ART.release],
   ],
   technologies: [
-    ['Hangi altyapı', V('method-options', 'below', { loop: true, slotLabels: methodLabels })],
-    ['Müşteri arayüzü', V('editable-fields', 'aside', { loop: true, markLabel: 'Yönetim paneli', label: 'Temsili yönetim paneli: düzenlenen alan mağaza arayüzüne yansıyor' })],
-    ['Verinin ana kaynağını', V('integration-hub', 'aside', { loop: true, markLabel: 'Mağazanız', slotLabels: hubLabels, label: 'Temsili akış: mağaza stok, fiyat ve sipariş verisini bağlı sistemlerle paylaşıyor' })],
-    ['Teknik teslimatta', V('handover-pack', 'aside')],
+    ['Hangi altyapı', ART.architecture],
+    ['Müşteri arayüzü', I('editable-fields', 'aside', { loop: true, markLabel: 'Yönetim paneli', label: 'Temsili yönetim paneli: düzenlenen alan mağaza arayüzüne yansıyor' })],
+    ['Fiyat ve sipariş kuralları', ART.consistency],
+    ['Verinin ana kaynağını', ART.source],
+    ['Ödeme, kargo', ART.retry],
+    ['Teknik teslimatta', ART.acceptance],
   ],
   process: [
-    ['İlk görüşmeye', V('project-brief', 'aside')],
-    ['Keşiften yayına', V('stage-path', 'below', { slotLabels: { 'slot-stage-1': 'Keşif', 'slot-stage-2': 'İlk sürüm', 'slot-stage-3': 'Tasarım', 'slot-stage-4': 'Geliştirme', 'slot-stage-5': 'Test', 'slot-stage-6': 'Yayın' } })],
-    ['Mevcut mağaza taşınacaksa', V('migration-map', 'aside', { markLabel: 'Yeni mağaza', label: 'Temsili geçiş: eski mağazadaki kayıtlar yeni mağazaya aktarılıyor, eski adresler eşleştiriliyor' })],
-    ['Yayın sonrası', V('handover-pack', 'aside')],
+    ['İlk görüşmeye', I('project-brief', 'aside')],
+    ['Keşiften yayına', I('stage-path', 'below', { slotLabels: { 'slot-stage-1': 'Keşif', 'slot-stage-2': 'İlk sürüm', 'slot-stage-3': 'Tasarım', 'slot-stage-4': 'Geliştirme', 'slot-stage-5': 'Test', 'slot-stage-6': 'Yayın' } })],
+    ['İlk sürümün kapsamı', ART.scopeChange],
+    ['Mevcut mağaza taşınacaksa', I('migration-map', 'aside', { markLabel: 'Yeni mağaza', label: 'Temsili geçiş: eski mağazadaki kayıtlar yeni mağazaya aktarılıyor, eski adresler eşleştiriliyor' })],
+    ['Örnek kabul', ART.acceptance],
+    ['Yayın sonrası', I('handover-pack', 'aside')],
   ],
-  portfolio: [['Özel e-ticaret örneğini', V('project-brief', 'aside')]],
+  portfolio: [['Özel e-ticaret örneğini', I('project-brief', 'aside')]],
   pricing: [
-    ['Geliştirme, dış hizmetler', V('cost-split', 'aside', { markLabel: 'Dış giderler', label: 'Temsili gider grupları: geliştirme, dış servisler ve yayın sonrası işler' })],
-    ['Teklif almak için', V('project-brief', 'aside')],
+    ['Geliştirme, dış hizmetler', I('cost-split', 'aside', { markLabel: 'Dış giderler', label: 'Temsili gider grupları: geliştirme, dış servisler ve yayın sonrası işler' })],
+    ['Proje bedelini', ART.quote],
+    ['Teklif almak için', I('project-brief', 'aside')],
   ],
 };
+// Portföy scenario cards (in order) each get their matching illustration.
+const SCENARIO_ART: VisualSpec[] = [ART.measure, ART.dealer, ART.source];
 
 const lower = (s: string) => s.toLocaleLowerCase('tr');
 function visualFor(page: CustomEcommercePage, title: string) {
   return VISUALS[page]?.find(([prefix]) => lower(title).startsWith(lower(prefix)))?.[1];
 }
-function Visual({ spec }: { spec: VisualSpec }) {
-  const cls = spec.place === 'below' ? `mt-8 ${spec.name === 'method-options' ? 'hidden max-w-4xl sm:block' : 'hidden lg:block'}` : 'mx-auto w-full max-w-xl';
+function Visual({ spec, className }: { spec: VisualSpec; className?: string }) {
+  const wide = spec.name === 'method-options' || spec.name === 'architecture-options';
+  const cls = className ?? (spec.place === 'below' ? `mt-8 ${wide ? 'mx-auto max-w-4xl' : 'hidden lg:block'}` : 'mx-auto w-full max-w-xl');
+  if (spec.kind === 'custom') return <CustomEcomArtwork name={spec.name} loop={spec.loop} label={spec.label} slotLabels={spec.slotLabels} className={cls} />;
   return <IkasVisual name={spec.name} loop={spec.loop} label={spec.label} slotLabels={spec.slotLabels} mark={spec.markLabel ? mark(spec.markLabel) : undefined} className={cls} />;
 }
 
@@ -197,7 +227,7 @@ function SubGroup({ chunk, page }: { chunk: Chunk; page: CustomEcommercePage }) 
     return <ol className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">{chunk.subs.map((s, i) => <li key={s.title} data-custom-ecom-reveal data-custom-ecom-delay={Math.min(i, 5) * 45} className="flex flex-col rounded-xl border border-heritage-sand bg-white p-5"><span className="flex h-9 w-9 items-center justify-center rounded-full bg-heritage-turquoise-light text-sm font-semibold text-heritage-turquoise-deep">{i + 1}</span><h3 className="mt-3 text-base font-semibold text-gray-900">{stripNumber(s.title)}</h3><div className="mt-2 [&_p]:mt-2 [&_p]:text-sm [&_p]:leading-6"><Md>{s.body}</Md></div></li>)}</ol>;
   }
   const cols = chunk.subs.length % 3 === 0 ? 'lg:grid-cols-3' : 'lg:grid-cols-2';
-  return <div className={`mt-6 grid gap-4 sm:grid-cols-2 ${cols}`}>{chunk.subs.map((s, i) => <article key={s.title} data-custom-ecom-reveal data-custom-ecom-delay={Math.min(i, 5) * 45} className="flex h-full flex-col rounded-xl border border-heritage-sand bg-white p-5">{page === 'portfolio' && <span className="mb-3 self-start rounded-full bg-heritage-ivory px-2.5 py-1 text-xs font-semibold text-gray-600">Temsili senaryo</span>}<h3 className="text-base font-semibold leading-snug text-gray-900">{s.title}</h3><div className="mt-2 [&_p]:mt-2 [&_p]:text-sm [&_p]:leading-6"><Blocks text={s.body} /></div></article>)}</div>;
+  return <div className={`mt-6 grid gap-4 sm:grid-cols-2 ${cols}`}>{chunk.subs.map((s, i) => <article key={s.title} data-custom-ecom-reveal data-custom-ecom-delay={Math.min(i, 5) * 45} className="flex h-full flex-col rounded-xl border border-heritage-sand bg-white p-5">{page === 'portfolio' && SCENARIO_ART[i] && <Visual spec={SCENARIO_ART[i]} className="-mx-1 mb-4 w-[calc(100%+0.5rem)] rounded-lg bg-heritage-ivory/60 p-2" />}{page === 'portfolio' && <span className="mb-3 self-start rounded-full bg-heritage-ivory px-2.5 py-1 text-xs font-semibold text-gray-600">Temsili senaryo</span>}<h3 className="text-base font-semibold leading-snug text-gray-900">{s.title}</h3><div className="mt-2 [&_p]:mt-2 [&_p]:text-sm [&_p]:leading-6"><Blocks text={s.body} /></div></article>)}</div>;
 }
 
 function ChunkSection({ chunk, page, index }: { chunk: Chunk; page: CustomEcommercePage; index: number }) {

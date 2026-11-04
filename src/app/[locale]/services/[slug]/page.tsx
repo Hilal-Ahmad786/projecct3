@@ -16,8 +16,7 @@ import ShopifyArtwork from '@/components/shopify/visuals/ShopifyArtwork';
 import ShopifyTurkishOverview, { SHOPIFY_TR_FAQ } from '@/components/e-commerce/ShopifyTurkishOverview';
 import { IKAS_TR_FAQ, IKAS_TR_HERO, IKAS_TR_META } from '@/components/ikas/ikasTurkishCopy';
 import { CustomEcommerceOverviewBody, getCustomEcommerceMeta } from '@/components/e-commerce/CustomEcommerceTurkishPage';
-import { CustomEcommerceIcon } from '@/components/e-commerce/CustomEcommerceIcon';
-import IkasVisual from '@/components/ikas/visuals/IkasVisual';
+import CustomEcomArtwork from '@/components/custom-ecommerce/visuals/CustomEcomArtwork';
 
 // Enable ISR - revalidate every hour for better performance
 export const revalidate = 3600;
@@ -326,7 +325,7 @@ export default async function ServicePage({ params }: PageProps) {
       {isTurkishIkas ? <FAQJsonLd faqs={IKAS_TR_FAQ} /> : isTurkishShopify ? <FAQJsonLd faqs={SHOPIFY_TR_FAQ.map(([question, answer]) => ({ question, answer }))} /> : !isTurkishCustomEcommerce && faq.length > 0 && <FAQJsonLd faqs={faq} />}
 
       {/* Rich animated client component */}
-      <ServiceDetailClient service={serviceData} showSections={isTurkishShopify || isTurkishCustomEcommerce ? ['hero'] : undefined} heroArt={isTurkishShopify ? <ShopifyArtwork name="hero-storefront" loop className="w-[20rem] max-w-full sm:w-[26rem] md:w-[32rem]" slotLabels={{ 'slot-chip-theme': 'Tema', 'slot-chip-catalog': 'Katalog', 'slot-chip-migrate': 'Taşıma', 'slot-chip-apps': 'Uygulamalar' }} /> : isTurkishCustomEcommerce ? <IkasVisual name="integration-hub" loop className="w-[20rem] max-w-full sm:w-[26rem] md:w-[32rem]" label="Temsili akış: özel e-ticaret sitesi ödeme, kargo, stok ve muhasebe sistemlerine bağlanıyor" mark={<><CustomEcommerceIcon className="h-[18px] w-[18px]" />Mağazanız</>} slotLabels={{ 'slot-payment': 'Ödeme', 'slot-cargo': 'Kargo', 'slot-erp': 'Stok / ERP', 'slot-marketplace': 'Muhasebe' }} /> : undefined} />
+      <ServiceDetailClient service={serviceData} showSections={isTurkishShopify || isTurkishCustomEcommerce ? ['hero'] : undefined} heroArt={isTurkishShopify ? <ShopifyArtwork name="hero-storefront" loop className="w-[20rem] max-w-full sm:w-[26rem] md:w-[32rem]" slotLabels={{ 'slot-chip-theme': 'Tema', 'slot-chip-catalog': 'Katalog', 'slot-chip-migrate': 'Taşıma', 'slot-chip-apps': 'Uygulamalar' }} /> : isTurkishCustomEcommerce ? <CustomEcomArtwork name="hero-custom-store" loop className="w-[20rem] max-w-full sm:w-[26rem] md:w-[32rem]" label="Temsili özel e-ticaret sitesi: mağaza ekranı, fiyat ve sipariş kuralları, yönetim paneli ve bağlı ödeme, kargo ve stok sistemleri" slotLabels={{ 'slot-chip-rule': 'Fiyat kuralı', 'slot-chip-sync': 'Stok akışı' }} /> : undefined} />
       {isTurkishCustomEcommerce && <CustomEcommerceOverviewBody />}
       {slug === 'e-commerce' && locale === 'tr' && <EcommerceTurkishOverviewBody />}
       {isTurkishIkas && <IkasTurkishOverviewBody />}

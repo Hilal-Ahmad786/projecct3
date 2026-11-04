@@ -4,12 +4,14 @@
 // removed and returned as percentage boxes for HTML overlays (ikas logo).
 // Run: node scripts/build-ikas-visuals.mjs           (ikas set, `iv-*` classes)
 //      node scripts/build-ikas-visuals.mjs shopify   (Shopify set, `sv-*` classes)
+//      node scripts/build-ikas-visuals.mjs custom    (custom e-commerce set, `cv-*` classes)
 import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 
 const SETS = {
   ikas: { dir: 'src/components/ikas/visuals', prefix: 'iv', constName: 'IKAS_VISUALS', typeName: 'IkasVisualName' },
   shopify: { dir: 'src/components/shopify/visuals', prefix: 'sv', constName: 'SHOPIFY_VISUALS', typeName: 'ShopifyVisualName' },
+  custom: { dir: 'src/components/custom-ecommerce/visuals', prefix: 'cv', constName: 'CUSTOM_ECOM_VISUALS', typeName: 'CustomEcomVisualName' },
 };
 const set = SETS[process.argv[2] ?? 'ikas'];
 if (!set) throw new Error(`Unknown set: ${process.argv[2]}`);

@@ -1,0 +1,841 @@
+{
+  "files": [
+    {
+      "file": "hero-custom-store.svg",
+      "viewBox": "0 0 640 520",
+      "groups": [
+        {
+          "id": "storefront",
+          "description": "storefront"
+        },
+        {
+          "id": "store-image",
+          "description": "store image"
+        },
+        {
+          "id": "store-options",
+          "description": "store options"
+        },
+        {
+          "id": "store-title",
+          "description": "store title bars"
+        },
+        {
+          "id": "store-price",
+          "description": "store price"
+        },
+        {
+          "id": "store-cta",
+          "description": "store cta"
+        },
+        {
+          "id": "rules-core",
+          "description": "rules core"
+        },
+        {
+          "id": "rule-1",
+          "description": "rule 1"
+        },
+        {
+          "id": "rule-2",
+          "description": "rule 2"
+        },
+        {
+          "id": "rule-3",
+          "description": "rule 3"
+        },
+        {
+          "id": "admin",
+          "description": "admin"
+        },
+        {
+          "id": "order-1",
+          "description": "order 1"
+        },
+        {
+          "id": "order-2",
+          "description": "order 2"
+        },
+        {
+          "id": "order-3",
+          "description": "order 3"
+        },
+        {
+          "id": "system-payment",
+          "description": "system payment"
+        },
+        {
+          "id": "system-cargo",
+          "description": "system cargo"
+        },
+        {
+          "id": "system-stock",
+          "description": "system stock"
+        },
+        {
+          "id": "chip-rule",
+          "description": "chip rule"
+        },
+        {
+          "id": "chip-sync",
+          "description": "chip sync"
+        }
+      ],
+      "drawPaths": [
+        "link-store-rules",
+        "link-rules-admin",
+        "link-rules-systems"
+      ],
+      "slots": [
+        "slot-store-mark",
+        "slot-chip-rule",
+        "slot-chip-sync"
+      ],
+      "notes": "Conceptual store, rules, admin and neutral system tiles; connectors are solid paths."
+    },
+    {
+      "file": "measure-pricing.svg",
+      "viewBox": "0 0 720 380",
+      "groups": [
+        {
+          "id": "configurator",
+          "description": "configurator"
+        },
+        {
+          "id": "dim-width",
+          "description": "dim width"
+        },
+        {
+          "id": "dim-height",
+          "description": "dim height"
+        },
+        {
+          "id": "input-width",
+          "description": "input width"
+        },
+        {
+          "id": "input-height",
+          "description": "input height"
+        },
+        {
+          "id": "material-1",
+          "description": "material 1"
+        },
+        {
+          "id": "material-2",
+          "description": "material 2"
+        },
+        {
+          "id": "material-3",
+          "description": "material 3"
+        },
+        {
+          "id": "material-blocked",
+          "description": "material blocked"
+        },
+        {
+          "id": "blocked-mark",
+          "description": "blocked mark"
+        },
+        {
+          "id": "price",
+          "description": "price"
+        },
+        {
+          "id": "add-to-cart",
+          "description": "add to cart"
+        },
+        {
+          "id": "calc",
+          "description": "calc"
+        },
+        {
+          "id": "order",
+          "description": "order"
+        },
+        {
+          "id": "field-width",
+          "description": "field width"
+        },
+        {
+          "id": "field-height",
+          "description": "field height"
+        },
+        {
+          "id": "field-material",
+          "description": "field material"
+        },
+        {
+          "id": "field-price",
+          "description": "field price"
+        },
+        {
+          "id": "badge-production",
+          "description": "badge production"
+        }
+      ],
+      "drawPaths": [
+        "flow-1",
+        "flow-2"
+      ],
+      "slots": [
+        "slot-order-label",
+        "slot-production-label"
+      ],
+      "notes": "Representative measurement-based product configuration and work-order fields; no real values are shown."
+    },
+    {
+      "file": "dealer-pricing.svg",
+      "viewBox": "0 0 720 400",
+      "groups": [
+        {
+          "id": "product",
+          "description": "product"
+        },
+        {
+          "id": "badge-retail",
+          "description": "badge retail"
+        },
+        {
+          "id": "price-retail",
+          "description": "price retail"
+        },
+        {
+          "id": "cart-retail",
+          "description": "cart retail"
+        },
+        {
+          "id": "badge-dealer",
+          "description": "badge dealer"
+        },
+        {
+          "id": "price-dealer",
+          "description": "price dealer"
+        },
+        {
+          "id": "cart-dealer",
+          "description": "cart dealer"
+        },
+        {
+          "id": "qty",
+          "description": "qty"
+        },
+        {
+          "id": "min-gate",
+          "description": "min gate"
+        },
+        {
+          "id": "approval",
+          "description": "approval"
+        },
+        {
+          "id": "check-dealer-price",
+          "description": "check dealer price"
+        },
+        {
+          "id": "check-dealer-cart",
+          "description": "check dealer cart"
+        }
+      ],
+      "drawPaths": [
+        "flow-retail",
+        "flow-dealer",
+        "flow-approval"
+      ],
+      "slots": [
+        "slot-retail-label",
+        "slot-dealer-label",
+        "slot-approval-label"
+      ],
+      "notes": "Representative retail and dealer pricing paths; the dealer minimum-order gate is shown blocked."
+    },
+    {
+      "file": "source-of-truth.svg",
+      "viewBox": "0 0 720 360",
+      "groups": [
+        {
+          "id": "system",
+          "description": "system"
+        },
+        {
+          "id": "src-stock",
+          "description": "src stock"
+        },
+        {
+          "id": "src-price",
+          "description": "src price"
+        },
+        {
+          "id": "src-product",
+          "description": "src product"
+        },
+        {
+          "id": "master-stock",
+          "description": "master stock"
+        },
+        {
+          "id": "master-price",
+          "description": "master price"
+        },
+        {
+          "id": "master-product",
+          "description": "master product"
+        },
+        {
+          "id": "store",
+          "description": "store"
+        },
+        {
+          "id": "store-stock",
+          "description": "store stock"
+        },
+        {
+          "id": "store-price",
+          "description": "store price"
+        },
+        {
+          "id": "store-order-1",
+          "description": "store order 1"
+        },
+        {
+          "id": "store-order-2",
+          "description": "store order 2"
+        },
+        {
+          "id": "chip-stock-timing",
+          "description": "chip stock timing"
+        },
+        {
+          "id": "chip-price-timing",
+          "description": "chip price timing"
+        },
+        {
+          "id": "chip-order-timing",
+          "description": "chip order timing"
+        },
+        {
+          "id": "code-left",
+          "description": "code left"
+        },
+        {
+          "id": "code-right",
+          "description": "code right"
+        }
+      ],
+      "drawPaths": [
+        "sync-stock",
+        "sync-price",
+        "sync-order"
+      ],
+      "slots": [
+        "slot-system-label",
+        "slot-store-mark"
+      ],
+      "notes": "Representative source-of-truth data lanes; timing chips are illustrative, with no live connection implied."
+    },
+    {
+      "file": "architecture-options.svg",
+      "viewBox": "0 0 720 360",
+      "groups": [
+        {
+          "id": "option-module",
+          "description": "option module"
+        },
+        {
+          "id": "m-top",
+          "description": "m top"
+        },
+        {
+          "id": "m-mid",
+          "description": "m mid"
+        },
+        {
+          "id": "module-block",
+          "description": "module block"
+        },
+        {
+          "id": "m-bottom",
+          "description": "m bottom"
+        },
+        {
+          "id": "option-headless",
+          "description": "option headless"
+        },
+        {
+          "id": "h-top",
+          "description": "h top"
+        },
+        {
+          "id": "h-mid",
+          "description": "h mid"
+        },
+        {
+          "id": "h-bottom",
+          "description": "h bottom"
+        },
+        {
+          "id": "option-custom",
+          "description": "option custom"
+        },
+        {
+          "id": "c-top",
+          "description": "c top"
+        },
+        {
+          "id": "c-mid",
+          "description": "c mid"
+        },
+        {
+          "id": "c-bottom",
+          "description": "c bottom"
+        },
+        {
+          "id": "fit-1",
+          "description": "fit 1"
+        },
+        {
+          "id": "fit-2",
+          "description": "fit 2"
+        },
+        {
+          "id": "fit-3",
+          "description": "fit 3"
+        }
+      ],
+      "drawPaths": [
+        "headless-link",
+        "custom-frame"
+      ],
+      "slots": [
+        "slot-option-1",
+        "slot-option-2",
+        "slot-option-3"
+      ],
+      "notes": "Three neutral architecture approaches; fit chips use dots only and imply relative customization, not performance."
+    },
+    {
+      "file": "release-scope.svg",
+      "viewBox": "0 0 720 340",
+      "groups": [
+        {
+          "id": "launch",
+          "description": "launch"
+        },
+        {
+          "id": "launch-1",
+          "description": "launch 1"
+        },
+        {
+          "id": "launch-2",
+          "description": "launch 2"
+        },
+        {
+          "id": "launch-3",
+          "description": "launch 3"
+        },
+        {
+          "id": "launch-4",
+          "description": "launch 4"
+        },
+        {
+          "id": "later",
+          "description": "later"
+        },
+        {
+          "id": "later-1",
+          "description": "later 1"
+        },
+        {
+          "id": "later-2",
+          "description": "later 2"
+        },
+        {
+          "id": "later-3",
+          "description": "later 3"
+        },
+        {
+          "id": "moving-row",
+          "description": "moving row"
+        },
+        {
+          "id": "marker-now",
+          "description": "marker now"
+        },
+        {
+          "id": "marker-next",
+          "description": "marker next"
+        }
+      ],
+      "drawPaths": [
+        "move-path",
+        "timeline"
+      ],
+      "slots": [
+        "slot-release-label",
+        "slot-later-label"
+      ],
+      "notes": "Illustrative release planning; later-phase items remain visible and the moving row is shown in its final position."
+    },
+    {
+      "file": "order-roles.svg",
+      "viewBox": "0 0 720 360",
+      "groups": [
+        {
+          "id": "lane-approval",
+          "description": "lane approval"
+        },
+        {
+          "id": "lane-warehouse",
+          "description": "lane warehouse"
+        },
+        {
+          "id": "lane-shipping",
+          "description": "lane shipping"
+        },
+        {
+          "id": "lane-returns",
+          "description": "lane returns"
+        },
+        {
+          "id": "order-card",
+          "description": "order card"
+        },
+        {
+          "id": "tracking",
+          "description": "tracking"
+        },
+        {
+          "id": "lock-returns",
+          "description": "lock returns"
+        }
+      ],
+      "drawPaths": [
+        "order-path"
+      ],
+      "slots": [
+        "slot-lane-1",
+        "slot-lane-2",
+        "slot-lane-3",
+        "slot-lane-4"
+      ],
+      "notes": "Illustrative order hand-offs across roles; the order card is positioned in the warehouse lane at rest."
+    },
+    {
+      "file": "retry-flow.svg",
+      "viewBox": "0 0 720 340",
+      "groups": [
+        {
+          "id": "order",
+          "description": "order"
+        },
+        {
+          "id": "service",
+          "description": "service"
+        },
+        {
+          "id": "fail-mark",
+          "description": "fail mark"
+        },
+        {
+          "id": "ok-mark",
+          "description": "ok mark"
+        },
+        {
+          "id": "log",
+          "description": "log"
+        },
+        {
+          "id": "log-1",
+          "description": "log 1"
+        },
+        {
+          "id": "log-2",
+          "description": "log 2"
+        },
+        {
+          "id": "notice-1",
+          "description": "notice 1"
+        },
+        {
+          "id": "notice-2",
+          "description": "notice 2"
+        },
+        {
+          "id": "guard",
+          "description": "guard"
+        },
+        {
+          "id": "ghost-order",
+          "description": "ghost order"
+        }
+      ],
+      "drawPaths": [
+        "attempt-1",
+        "retry-loop",
+        "attempt-2",
+        "ghost-cross"
+      ],
+      "slots": [
+        "slot-store-mark",
+        "slot-service-label",
+        "slot-log-label"
+      ],
+      "notes": "Conceptual integration failure handling; retries, logs and duplicate protection must be scoped to the relevant systems."
+    },
+    {
+      "file": "price-consistency.svg",
+      "viewBox": "0 0 720 300",
+      "groups": [
+        {
+          "id": "card-product",
+          "description": "card product"
+        },
+        {
+          "id": "price-product",
+          "description": "price product"
+        },
+        {
+          "id": "card-cart",
+          "description": "card cart"
+        },
+        {
+          "id": "price-cart",
+          "description": "price cart"
+        },
+        {
+          "id": "card-summary",
+          "description": "card summary"
+        },
+        {
+          "id": "price-summary",
+          "description": "price summary"
+        },
+        {
+          "id": "snapshot",
+          "description": "snapshot"
+        },
+        {
+          "id": "rule",
+          "description": "rule"
+        },
+        {
+          "id": "server",
+          "description": "server"
+        },
+        {
+          "id": "server-check",
+          "description": "server check"
+        }
+      ],
+      "drawPaths": [
+        "rule-rail",
+        "tick-1",
+        "tick-2",
+        "tick-3"
+      ],
+      "slots": [
+        "slot-rule-label"
+      ],
+      "notes": "Illustrates one pricing rule and matching price bars across screens; bars carry no numeric values."
+    },
+    {
+      "file": "scope-change.svg",
+      "viewBox": "0 0 720 340",
+      "groups": [
+        {
+          "id": "request",
+          "description": "request"
+        },
+        {
+          "id": "request-chip",
+          "description": "request chip"
+        },
+        {
+          "id": "impact",
+          "description": "impact"
+        },
+        {
+          "id": "impact-screens",
+          "description": "impact screens"
+        },
+        {
+          "id": "impact-roles",
+          "description": "impact roles"
+        },
+        {
+          "id": "impact-tests",
+          "description": "impact tests"
+        },
+        {
+          "id": "impact-time",
+          "description": "impact time"
+        },
+        {
+          "id": "dest-now",
+          "description": "dest now"
+        },
+        {
+          "id": "dest-later",
+          "description": "dest later"
+        }
+      ],
+      "drawPaths": [
+        "fork-path",
+        "branch-now",
+        "branch-later"
+      ],
+      "slots": [
+        "slot-impact-label",
+        "slot-now-label",
+        "slot-later-label"
+      ],
+      "notes": "Both release destinations are shown as equal options; no schedule or budget outcome is implied."
+    },
+    {
+      "file": "acceptance-tests.svg",
+      "viewBox": "0 0 720 340",
+      "groups": [
+        {
+          "id": "board",
+          "description": "board"
+        },
+        {
+          "id": "test-1",
+          "description": "test 1"
+        },
+        {
+          "id": "test-2",
+          "description": "test 2"
+        },
+        {
+          "id": "test-3",
+          "description": "test 3"
+        },
+        {
+          "id": "test-4",
+          "description": "test 4"
+        },
+        {
+          "id": "test-5",
+          "description": "test 5"
+        },
+        {
+          "id": "result-1",
+          "description": "result 1"
+        },
+        {
+          "id": "result-2",
+          "description": "result 2"
+        },
+        {
+          "id": "result-3",
+          "description": "result 3"
+        },
+        {
+          "id": "result-4",
+          "description": "result 4"
+        },
+        {
+          "id": "result-5",
+          "description": "result 5"
+        },
+        {
+          "id": "chip-not-paid",
+          "description": "chip not paid"
+        },
+        {
+          "id": "gate",
+          "description": "gate"
+        },
+        {
+          "id": "gate-bar",
+          "description": "gate bar"
+        }
+      ],
+      "drawPaths": [
+        "gate-link"
+      ],
+      "slots": [
+        "slot-board-label"
+      ],
+      "notes": "Illustrative acceptance checklist with failure cases and an open release gate."
+    },
+    {
+      "file": "quote-builder.svg",
+      "viewBox": "0 0 720 360",
+      "groups": [
+        {
+          "id": "block-screens",
+          "description": "block screens"
+        },
+        {
+          "id": "block-rules",
+          "description": "block rules"
+        },
+        {
+          "id": "block-integrations",
+          "description": "block integrations"
+        },
+        {
+          "id": "block-tests",
+          "description": "block tests"
+        },
+        {
+          "id": "quote",
+          "description": "quote"
+        },
+        {
+          "id": "quote-line-1",
+          "description": "quote line 1"
+        },
+        {
+          "id": "quote-line-2",
+          "description": "quote line 2"
+        },
+        {
+          "id": "quote-line-3",
+          "description": "quote line 3"
+        },
+        {
+          "id": "quote-line-4",
+          "description": "quote line 4"
+        },
+        {
+          "id": "quote-total",
+          "description": "quote total"
+        },
+        {
+          "id": "external",
+          "description": "external"
+        },
+        {
+          "id": "ext-hosting",
+          "description": "ext hosting"
+        },
+        {
+          "id": "ext-license",
+          "description": "ext license"
+        },
+        {
+          "id": "ext-provider",
+          "description": "ext provider"
+        },
+        {
+          "id": "divider",
+          "description": "divider"
+        }
+      ],
+      "drawPaths": [
+        "stack-path-1",
+        "stack-path-2",
+        "stack-path-3",
+        "stack-path-4"
+      ],
+      "slots": [
+        "slot-quote-label",
+        "slot-external-label"
+      ],
+      "notes": "Illustrative quote composition; external and recurring costs are visually separated from project work."
+    }
+  ]
+}

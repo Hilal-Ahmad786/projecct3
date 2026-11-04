@@ -1753,3 +1753,224 @@ textarea.form-input {
 .cw-section { padding-block: 4.5rem; }
 @media (min-width: 768px) { .cw-section { padding-block: 5.5rem; } }
 @media (min-width: 1024px) { .cw-section { padding-block: 6rem; } }
+
+/* custom-ecommerce visuals (src/components/custom-ecommerce/visuals). Same
+   contract as the ikas/Shopify visuals: SVGs render in their final state;
+   motion runs after IkasMotionScope adds .ikas-visible (once) or
+   .ikas-in-view (loops, paused off-screen / in hidden tabs). */
+.custom-ecom-art svg { display: block; width: 100%; height: auto; }
+.custom-ecom-art [class^="cv-"] { transform-box: fill-box; transform-origin: center; }
+.custom-ecom-art--measure-pricing .cv-price { transform-origin: left center; }
+.custom-ecom-art--architecture-options :is(.cv-slot-option-1, .cv-slot-option-2, .cv-slot-option-3) { justify-content: center; font-size: clamp(11px, 1.5vw, 15px); }
+.custom-ecom-art--hero-custom-store :is(.cv-slot-chip-rule, .cv-slot-chip-sync) { font-size: clamp(9px, 1.05vw, 11.5px); }
+@keyframes cv-from-right { from { opacity: 0; transform: translateX(40px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes cv-module-in { from { opacity: 0; transform: translateX(24px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes cv-grow { from { transform: scaleX(.7); } to { transform: scaleX(1); } }
+@keyframes cv-move-later { 0% { opacity: 0; transform: translate(-358px, 10px); } 12% { opacity: 1; } 100% { opacity: 1; transform: translate(0, 0); } }
+@keyframes cv-lane-step { 0%, 18% { transform: translateY(-74px); } 30%, 55% { transform: translateY(0); } 67%, 90% { transform: translateY(74px); } 100% { transform: translateY(-74px); } }
+@keyframes cv-shake { 0%, 80%, 100% { transform: translateX(0); } 84% { transform: translateX(-3px); } 88% { transform: translateX(3px); } 92% { transform: translateX(-2px); } 96% { transform: translateX(2px); } }
+
+@media (prefers-reduced-motion: no-preference) {
+  .custom-ecom-art.ikas-visible path[pathLength] { stroke-dasharray: 1; animation: iv-draw 800ms ease-out var(--cv-d, 300ms) both; }
+  .custom-ecom-art.ikas-visible .cv-slot { animation: iv-fade 500ms ease-out 250ms both; }
+
+  /* hero: store → rules → admin and systems */
+  .custom-ecom-art--hero-custom-store.ikas-visible .cv-storefront { animation: iv-rise 420ms ease-out both; }
+  .custom-ecom-art--hero-custom-store.ikas-visible .cv-rules-core { animation: iv-pop 420ms ease-out 300ms both; }
+  .custom-ecom-art--hero-custom-store.ikas-visible .cv-admin { animation: iv-rise 420ms ease-out 450ms both; }
+  .custom-ecom-art--hero-custom-store.ikas-visible :is(.cv-rule-1, .cv-rule-2, .cv-rule-3) { animation: iv-slide-in 380ms ease-out both; }
+  .custom-ecom-art--hero-custom-store.ikas-visible .cv-rule-1 { animation-delay: 650ms; }
+  .custom-ecom-art--hero-custom-store.ikas-visible .cv-rule-2 { animation-delay: 750ms; }
+  .custom-ecom-art--hero-custom-store.ikas-visible .cv-rule-3 { animation-delay: 850ms; }
+  .custom-ecom-art--hero-custom-store.ikas-visible :is(.cv-system-payment, .cv-system-cargo, .cv-system-stock) { animation: iv-pop 360ms ease-out both; }
+  .custom-ecom-art--hero-custom-store.ikas-visible .cv-system-payment { animation-delay: 600ms; }
+  .custom-ecom-art--hero-custom-store.ikas-visible .cv-system-cargo { animation-delay: 700ms; }
+  .custom-ecom-art--hero-custom-store.ikas-visible .cv-system-stock { animation-delay: 800ms; }
+  .custom-ecom-art--hero-custom-store.ikas-visible .cv-link-store-rules { --cv-d: 500ms; }
+  .custom-ecom-art--hero-custom-store.ikas-visible .cv-link-rules-admin { --cv-d: 850ms; }
+  .custom-ecom-art--hero-custom-store.ikas-visible .cv-link-rules-systems { --cv-d: 1100ms; }
+  .custom-ecom-art--hero-custom-store .ikas-in-view:not(.ikas-tab-hidden) .cv-rule-1 { animation: iv-slide-in 380ms ease-out 650ms both, sv-glow 3.6s ease-in-out 1.4s infinite; }
+  .custom-ecom-art--hero-custom-store .ikas-in-view:not(.ikas-tab-hidden) .cv-rule-2 { animation: iv-slide-in 380ms ease-out 750ms both, sv-glow 3.6s ease-in-out 2.6s infinite; }
+  .custom-ecom-art--hero-custom-store .ikas-in-view:not(.ikas-tab-hidden) .cv-rule-3 { animation: iv-slide-in 380ms ease-out 850ms both, sv-glow 3.6s ease-in-out 3.8s infinite; }
+  .custom-ecom-art--hero-custom-store .ikas-in-view:not(.ikas-tab-hidden) :is(.cv-order-1, .cv-order-3) { animation: sv-glow 4s ease-in-out 1s infinite; }
+  .custom-ecom-art--hero-custom-store .ikas-in-view:not(.ikas-tab-hidden) .cv-chip-rule,
+  .custom-ecom-art--hero-custom-store:has(.ikas-in-view:not(.ikas-tab-hidden)) .cv-slot-chip-rule { animation: iv-float 3.2s ease-in-out infinite; }
+  .custom-ecom-art--hero-custom-store .ikas-in-view:not(.ikas-tab-hidden) .cv-chip-sync,
+  .custom-ecom-art--hero-custom-store:has(.ikas-in-view:not(.ikas-tab-hidden)) .cv-slot-chip-sync { animation: iv-float 3.2s ease-in-out 1.6s infinite; }
+
+  /* measured product: inputs → price → work order */
+  .custom-ecom-art--measure-pricing.ikas-visible :is(.cv-input-width, .cv-input-height) { animation: iv-slide-in 380ms ease-out both; }
+  .custom-ecom-art--measure-pricing.ikas-visible .cv-input-height { animation-delay: 120ms; }
+  .custom-ecom-art--measure-pricing.ikas-visible :is(.cv-material-1, .cv-material-2, .cv-material-3) { animation: iv-pop 340ms ease-out both; }
+  .custom-ecom-art--measure-pricing.ikas-visible .cv-material-1 { animation-delay: 300ms; }
+  .custom-ecom-art--measure-pricing.ikas-visible .cv-material-2 { animation-delay: 380ms; }
+  .custom-ecom-art--measure-pricing.ikas-visible .cv-material-3 { animation-delay: 460ms; }
+  .custom-ecom-art--measure-pricing.ikas-visible .cv-material-blocked { animation: iv-fade 400ms ease-out 540ms both; }
+  .custom-ecom-art--measure-pricing.ikas-visible .cv-blocked-mark { animation: iv-pop 360ms ease-out 800ms both; }
+  .custom-ecom-art--measure-pricing.ikas-visible .cv-price { animation: cv-grow 500ms ease-out 900ms both; }
+  .custom-ecom-art--measure-pricing.ikas-visible .cv-flow-1 { --cv-d: 1000ms; }
+  .custom-ecom-art--measure-pricing.ikas-visible .cv-calc { animation: iv-pop 380ms ease-out 1350ms both; }
+  .custom-ecom-art--measure-pricing.ikas-visible .cv-flow-2 { --cv-d: 1500ms; }
+  .custom-ecom-art--measure-pricing.ikas-visible :is(.cv-field-width, .cv-field-height, .cv-field-material, .cv-field-price) { animation: iv-slide-in 360ms ease-out both; }
+  .custom-ecom-art--measure-pricing.ikas-visible .cv-field-width { animation-delay: 1900ms; }
+  .custom-ecom-art--measure-pricing.ikas-visible .cv-field-height { animation-delay: 2000ms; }
+  .custom-ecom-art--measure-pricing.ikas-visible .cv-field-material { animation-delay: 2100ms; }
+  .custom-ecom-art--measure-pricing.ikas-visible .cv-field-price { animation-delay: 2200ms; }
+  .custom-ecom-art--measure-pricing.ikas-visible .cv-badge-production { animation: iv-pop 380ms ease-out 2400ms both; }
+  .custom-ecom-art--measure-pricing .ikas-in-view:not(.ikas-tab-hidden) .cv-blocked-mark { animation: iv-pop 360ms ease-out 800ms both, cv-shake 4s ease-in-out 2.6s infinite; }
+  .custom-ecom-art--measure-pricing .ikas-in-view:not(.ikas-tab-hidden) .cv-calc { animation: iv-pop 380ms ease-out 1350ms both, sv-glow 3s ease-in-out 2.8s infinite; }
+
+  /* dealer pricing: two lanes, same dealer price in the cart, min gate, approval */
+  .custom-ecom-art--dealer-pricing.ikas-visible .cv-product { animation: iv-rise 400ms ease-out both; }
+  .custom-ecom-art--dealer-pricing.ikas-visible :is(.cv-flow-retail, .cv-flow-dealer) { --cv-d: 300ms; }
+  .custom-ecom-art--dealer-pricing.ikas-visible :is(.cv-badge-retail, .cv-badge-dealer) { animation: iv-pop 360ms ease-out 700ms both; }
+  .custom-ecom-art--dealer-pricing.ikas-visible :is(.cv-price-retail, .cv-price-dealer) { animation: iv-pop 380ms ease-out 900ms both; }
+  .custom-ecom-art--dealer-pricing.ikas-visible :is(.cv-cart-retail, .cv-cart-dealer) { animation: iv-rise 380ms ease-out 1150ms both; }
+  .custom-ecom-art--dealer-pricing.ikas-visible .cv-qty { animation: iv-fade 360ms ease-out 1300ms both; }
+  .custom-ecom-art--dealer-pricing.ikas-visible .cv-min-gate { animation: iv-pop 360ms ease-out 1450ms both; }
+  .custom-ecom-art--dealer-pricing.ikas-visible .cv-approval { animation: iv-rise 380ms ease-out 1550ms both; }
+  .custom-ecom-art--dealer-pricing.ikas-visible .cv-flow-approval { --cv-d: 1650ms; }
+  .custom-ecom-art--dealer-pricing.ikas-visible .cv-check-dealer-price { animation: iv-pop 340ms ease-out 1900ms both; }
+  .custom-ecom-art--dealer-pricing.ikas-visible .cv-check-dealer-cart { animation: iv-pop 340ms ease-out 2050ms both; }
+  .custom-ecom-art--dealer-pricing .ikas-in-view:not(.ikas-tab-hidden) .cv-price-dealer { animation: iv-pop 380ms ease-out 900ms both, sv-glow 3.4s ease-in-out 2.4s infinite; }
+  .custom-ecom-art--dealer-pricing .ikas-in-view:not(.ikas-tab-hidden) .cv-cart-dealer { animation: iv-rise 380ms ease-out 1150ms both, sv-glow 3.4s ease-in-out 2.4s infinite; }
+  .custom-ecom-art--dealer-pricing .ikas-in-view:not(.ikas-tab-hidden) .cv-min-gate { animation: iv-pop 360ms ease-out 1450ms both, cv-shake 4.5s ease-in-out 3s infinite; }
+
+  /* source of truth: system rows → sync lanes → store; code match */
+  .custom-ecom-art--source-of-truth.ikas-visible :is(.cv-system, .cv-store) { animation: iv-rise 420ms ease-out both; }
+  .custom-ecom-art--source-of-truth.ikas-visible .cv-store { animation-delay: 150ms; }
+  .custom-ecom-art--source-of-truth.ikas-visible :is(.cv-src-stock, .cv-src-price, .cv-src-product) { animation: iv-slide-in 360ms ease-out both; }
+  .custom-ecom-art--source-of-truth.ikas-visible .cv-src-stock { animation-delay: 300ms; }
+  .custom-ecom-art--source-of-truth.ikas-visible .cv-src-price { animation-delay: 400ms; }
+  .custom-ecom-art--source-of-truth.ikas-visible .cv-src-product { animation-delay: 500ms; }
+  .custom-ecom-art--source-of-truth.ikas-visible .cv-sync-stock { --cv-d: 700ms; }
+  .custom-ecom-art--source-of-truth.ikas-visible .cv-sync-price { --cv-d: 900ms; }
+  .custom-ecom-art--source-of-truth.ikas-visible .cv-sync-order { --cv-d: 1100ms; }
+  .custom-ecom-art--source-of-truth.ikas-visible :is(.cv-chip-stock-timing, .cv-chip-price-timing, .cv-chip-order-timing) { animation: iv-pop 340ms ease-out 1500ms both; }
+  .custom-ecom-art--source-of-truth.ikas-visible :is(.cv-code-left, .cv-code-right) { animation: iv-pop 340ms ease-out 1700ms both; }
+  .custom-ecom-art--source-of-truth.ikas-visible .cv-code-match { animation: iv-fade 500ms ease-out 1850ms both; }
+  .custom-ecom-art--source-of-truth .ikas-in-view:not(.ikas-tab-hidden) :is(.cv-master-stock, .cv-master-price, .cv-master-product) { animation: sv-glow 3s ease-in-out infinite; }
+  .custom-ecom-art--source-of-truth .ikas-in-view:not(.ikas-tab-hidden) .cv-master-price { animation-delay: .6s; }
+  .custom-ecom-art--source-of-truth .ikas-in-view:not(.ikas-tab-hidden) .cv-master-product { animation-delay: 1.2s; }
+  .custom-ecom-art--source-of-truth .ikas-in-view:not(.ikas-tab-hidden) :is(.cv-code-left, .cv-code-right) { animation: iv-pop 340ms ease-out 1700ms both, sv-glow 3.6s ease-in-out 2.4s infinite; }
+
+  /* architecture options: columns rise, module plugs in, headless top floats */
+  .custom-ecom-art--architecture-options.ikas-visible :is(.cv-option-module, .cv-option-headless, .cv-option-custom) { animation: iv-rise 420ms ease-out both; }
+  .custom-ecom-art--architecture-options.ikas-visible .cv-option-headless { animation-delay: 150ms; }
+  .custom-ecom-art--architecture-options.ikas-visible .cv-option-custom { animation-delay: 300ms; }
+  .custom-ecom-art--architecture-options.ikas-visible .cv-module-block { animation: cv-module-in 420ms ease-out 700ms both; }
+  .custom-ecom-art--architecture-options.ikas-visible .cv-headless-link { --cv-d: 800ms; }
+  .custom-ecom-art--architecture-options.ikas-visible .cv-custom-frame { --cv-d: 1000ms; }
+  .custom-ecom-art--architecture-options.ikas-visible :is(.cv-fit-1, .cv-fit-2, .cv-fit-3) { animation: iv-pop 340ms ease-out both; }
+  .custom-ecom-art--architecture-options.ikas-visible .cv-fit-1 { animation-delay: 1200ms; }
+  .custom-ecom-art--architecture-options.ikas-visible .cv-fit-2 { animation-delay: 1300ms; }
+  .custom-ecom-art--architecture-options.ikas-visible .cv-fit-3 { animation-delay: 1400ms; }
+  .custom-ecom-art--architecture-options .ikas-in-view:not(.ikas-tab-hidden) .cv-h-top { animation: iv-float 3.4s ease-in-out 1.8s infinite; }
+
+  /* first release vs later: checks, then one feature moves to the later phase */
+  .custom-ecom-art--release-scope.ikas-visible :is(.cv-launch, .cv-later) { animation: iv-rise 420ms ease-out both; }
+  .custom-ecom-art--release-scope.ikas-visible .cv-later { animation-delay: 150ms; }
+  .custom-ecom-art--release-scope.ikas-visible :is(.cv-launch-1, .cv-launch-2, .cv-launch-3, .cv-launch-4) { animation: iv-slide-in 340ms ease-out both; }
+  .custom-ecom-art--release-scope.ikas-visible .cv-launch-1 { animation-delay: 350ms; }
+  .custom-ecom-art--release-scope.ikas-visible .cv-launch-2 { animation-delay: 450ms; }
+  .custom-ecom-art--release-scope.ikas-visible .cv-launch-3 { animation-delay: 550ms; }
+  .custom-ecom-art--release-scope.ikas-visible .cv-launch-4 { animation-delay: 650ms; }
+  .custom-ecom-art--release-scope.ikas-visible :is(.cv-later-1, .cv-later-2, .cv-later-3) { animation: iv-fade 360ms ease-out 800ms both; }
+  .custom-ecom-art--release-scope.ikas-visible .cv-move-path { --cv-d: 1000ms; }
+  .custom-ecom-art--release-scope.ikas-visible .cv-moving-row { animation: cv-move-later 1100ms cubic-bezier(.3,.7,.2,1) 1100ms both; }
+  .custom-ecom-art--release-scope.ikas-visible .cv-timeline { --cv-d: 1400ms; }
+  .custom-ecom-art--release-scope.ikas-visible .cv-marker-now { animation: iv-pop 340ms ease-out 1900ms both; }
+  .custom-ecom-art--release-scope.ikas-visible .cv-marker-next { animation: iv-pop 340ms ease-out 2100ms both; }
+  .custom-ecom-art--release-scope .ikas-in-view:not(.ikas-tab-hidden) .cv-marker-now { animation: iv-pop 340ms ease-out 1900ms both, iv-pulse 2.6s ease-in-out 2.4s infinite; }
+
+  /* order roles: the order steps through approval → warehouse → shipping */
+  .custom-ecom-art--order-roles.ikas-visible :is(.cv-lane-approval, .cv-lane-warehouse, .cv-lane-shipping, .cv-lane-returns) { animation: iv-fade 360ms ease-out both; }
+  .custom-ecom-art--order-roles.ikas-visible .cv-lane-warehouse { animation-delay: 100ms; }
+  .custom-ecom-art--order-roles.ikas-visible .cv-lane-shipping { animation-delay: 200ms; }
+  .custom-ecom-art--order-roles.ikas-visible .cv-lane-returns { animation-delay: 300ms; }
+  .custom-ecom-art--order-roles.ikas-visible .cv-order-path { --cv-d: 500ms; animation-duration: 1100ms; }
+  .custom-ecom-art--order-roles.ikas-visible .cv-order-card { animation: iv-pop 380ms ease-out 700ms both; }
+  .custom-ecom-art--order-roles.ikas-visible .cv-tracking { animation: iv-pop 360ms ease-out 1600ms both; }
+  .custom-ecom-art--order-roles.ikas-visible .cv-lock-returns { animation: iv-pop 360ms ease-out 1800ms both; }
+  .custom-ecom-art--order-roles .ikas-in-view:not(.ikas-tab-hidden) .cv-order-card { animation: iv-pop 380ms ease-out 700ms both, cv-lane-step 7s ease-in-out 2.2s infinite; }
+
+  /* retry: fail → logged → retry succeeds; duplicate notice is blocked */
+  .custom-ecom-art--retry-flow.ikas-visible :is(.cv-order, .cv-service) { animation: iv-rise 400ms ease-out both; }
+  .custom-ecom-art--retry-flow.ikas-visible .cv-attempt-1 { --cv-d: 300ms; }
+  .custom-ecom-art--retry-flow.ikas-visible .cv-fail-mark { animation: iv-pop 340ms ease-out 1000ms both; }
+  .custom-ecom-art--retry-flow.ikas-visible .cv-log { animation: iv-rise 380ms ease-out 1100ms both; }
+  .custom-ecom-art--retry-flow.ikas-visible .cv-retry-loop { --cv-d: 1250ms; animation-duration: 500ms; }
+  .custom-ecom-art--retry-flow.ikas-visible .cv-attempt-2 { --cv-d: 1700ms; }
+  .custom-ecom-art--retry-flow.ikas-visible .cv-ok-mark { animation: iv-pop 360ms ease-out 2450ms both; }
+  .custom-ecom-art--retry-flow.ikas-visible .cv-notice-1 { animation: cv-from-right 420ms ease-out 2600ms both; }
+  .custom-ecom-art--retry-flow.ikas-visible .cv-notice-2 { animation: cv-from-right 420ms ease-out 2800ms both; }
+  .custom-ecom-art--retry-flow.ikas-visible .cv-guard { animation: iv-pop 340ms ease-out 3050ms both; }
+  .custom-ecom-art--retry-flow.ikas-visible .cv-ghost-order { animation: iv-fade 400ms ease-out 3150ms both; }
+  .custom-ecom-art--retry-flow.ikas-visible .cv-ghost-cross { --cv-d: 3300ms; animation-duration: 400ms; }
+  .custom-ecom-art--retry-flow .ikas-in-view:not(.ikas-tab-hidden) .cv-fail-mark { animation: iv-pop 340ms ease-out 1000ms both, cv-shake 4s ease-in-out 3.6s infinite; }
+  .custom-ecom-art--retry-flow .ikas-in-view:not(.ikas-tab-hidden) .cv-guard { animation: iv-pop 340ms ease-out 3050ms both, sv-glow 3s ease-in-out 3.8s infinite; }
+
+  /* price consistency: one rule, three identical prices, server re-check */
+  .custom-ecom-art--price-consistency.ikas-visible :is(.cv-card-product, .cv-card-cart, .cv-card-summary) { animation: iv-rise 400ms ease-out both; }
+  .custom-ecom-art--price-consistency.ikas-visible .cv-card-cart { animation-delay: 120ms; }
+  .custom-ecom-art--price-consistency.ikas-visible .cv-card-summary { animation-delay: 240ms; }
+  .custom-ecom-art--price-consistency.ikas-visible .cv-rule-rail { --cv-d: 500ms; }
+  .custom-ecom-art--price-consistency.ikas-visible .cv-rule { animation: iv-pop 360ms ease-out 900ms both; }
+  .custom-ecom-art--price-consistency.ikas-visible .cv-tick-1 { --cv-d: 1100ms; animation-duration: 400ms; }
+  .custom-ecom-art--price-consistency.ikas-visible .cv-tick-2 { --cv-d: 1200ms; animation-duration: 400ms; }
+  .custom-ecom-art--price-consistency.ikas-visible .cv-tick-3 { --cv-d: 1300ms; animation-duration: 400ms; }
+  .custom-ecom-art--price-consistency.ikas-visible .cv-server { animation: iv-pop 360ms ease-out 1500ms both; }
+  .custom-ecom-art--price-consistency.ikas-visible .cv-server-check { animation: iv-pop 340ms ease-out 1750ms both; }
+  .custom-ecom-art--price-consistency.ikas-visible .cv-snapshot { animation: iv-pop 340ms ease-out 1900ms both; }
+  .custom-ecom-art--price-consistency .ikas-in-view:not(.ikas-tab-hidden) :is(.cv-price-product, .cv-price-cart, .cv-price-summary) { animation: sv-glow 3.2s ease-in-out 2.2s infinite; }
+
+  /* scope change: request → impact → fork */
+  .custom-ecom-art--scope-change.ikas-visible .cv-request { animation: iv-slide-in 420ms ease-out both; }
+  .custom-ecom-art--scope-change.ikas-visible .cv-impact { animation: iv-rise 400ms ease-out 250ms both; }
+  .custom-ecom-art--scope-change.ikas-visible :is(.cv-impact-screens, .cv-impact-roles, .cv-impact-tests, .cv-impact-time) { animation: iv-slide-in 340ms ease-out both; }
+  .custom-ecom-art--scope-change.ikas-visible .cv-impact-screens { animation-delay: 450ms; }
+  .custom-ecom-art--scope-change.ikas-visible .cv-impact-roles { animation-delay: 550ms; }
+  .custom-ecom-art--scope-change.ikas-visible .cv-impact-tests { animation-delay: 650ms; }
+  .custom-ecom-art--scope-change.ikas-visible .cv-impact-time { animation-delay: 750ms; }
+  .custom-ecom-art--scope-change.ikas-visible .cv-fork-path { --cv-d: 950ms; }
+  .custom-ecom-art--scope-change.ikas-visible :is(.cv-branch-now, .cv-branch-later) { --cv-d: 1350ms; }
+  .custom-ecom-art--scope-change.ikas-visible :is(.cv-dest-now, .cv-dest-later) { animation: iv-pop 380ms ease-out 1800ms both; }
+  .custom-ecom-art--scope-change .ikas-in-view:not(.ikas-tab-hidden) .cv-request-chip { animation: iv-float 3s ease-in-out 2.2s infinite; }
+
+  /* acceptance tests: results tick in, then the release gate opens */
+  .custom-ecom-art--acceptance-tests.ikas-visible .cv-board { animation: iv-rise 420ms ease-out both; }
+  .custom-ecom-art--acceptance-tests.ikas-visible :is(.cv-test-1, .cv-test-2, .cv-test-3, .cv-test-4, .cv-test-5) { animation: iv-slide-in 340ms ease-out both; }
+  .custom-ecom-art--acceptance-tests.ikas-visible .cv-test-1 { animation-delay: 200ms; }
+  .custom-ecom-art--acceptance-tests.ikas-visible .cv-test-2 { animation-delay: 290ms; }
+  .custom-ecom-art--acceptance-tests.ikas-visible .cv-test-3 { animation-delay: 380ms; }
+  .custom-ecom-art--acceptance-tests.ikas-visible .cv-test-4 { animation-delay: 470ms; }
+  .custom-ecom-art--acceptance-tests.ikas-visible .cv-test-5 { animation-delay: 560ms; }
+  .custom-ecom-art--acceptance-tests.ikas-visible :is(.cv-result-1, .cv-result-2, .cv-result-3, .cv-result-4, .cv-result-5) { animation: iv-pop 320ms ease-out both; }
+  .custom-ecom-art--acceptance-tests.ikas-visible .cv-result-1 { animation-delay: 800ms; }
+  .custom-ecom-art--acceptance-tests.ikas-visible .cv-result-2 { animation-delay: 950ms; }
+  .custom-ecom-art--acceptance-tests.ikas-visible .cv-result-3 { animation-delay: 1100ms; }
+  .custom-ecom-art--acceptance-tests.ikas-visible .cv-result-4 { animation-delay: 1250ms; }
+  .custom-ecom-art--acceptance-tests.ikas-visible .cv-result-5 { animation-delay: 1400ms; }
+  .custom-ecom-art--acceptance-tests.ikas-visible .cv-chip-not-paid { animation: iv-pop 340ms ease-out 1150ms both; }
+  .custom-ecom-art--acceptance-tests.ikas-visible .cv-gate-link { --cv-d: 1600ms; animation-duration: 400ms; }
+  .custom-ecom-art--acceptance-tests.ikas-visible .cv-gate { animation: iv-fade 400ms ease-out 1900ms both; }
+  .custom-ecom-art--acceptance-tests.ikas-visible .cv-gate-bar { transform-origin: left bottom; animation: sv-nod 700ms ease-out 2200ms both; }
+
+  /* quote: work blocks stack into the quote; external costs stay static */
+  .custom-ecom-art--quote-builder.ikas-visible :is(.cv-block-screens, .cv-block-rules, .cv-block-integrations, .cv-block-tests) { animation: iv-slide-in 400ms ease-out both; }
+  .custom-ecom-art--quote-builder.ikas-visible .cv-block-rules { animation-delay: 150ms; }
+  .custom-ecom-art--quote-builder.ikas-visible .cv-block-integrations { animation-delay: 300ms; }
+  .custom-ecom-art--quote-builder.ikas-visible .cv-block-tests { animation-delay: 450ms; }
+  .custom-ecom-art--quote-builder.ikas-visible .cv-quote { animation: iv-rise 420ms ease-out 100ms both; }
+  .custom-ecom-art--quote-builder.ikas-visible .cv-stack-path-1 { --cv-d: 400ms; }
+  .custom-ecom-art--quote-builder.ikas-visible .cv-stack-path-2 { --cv-d: 550ms; }
+  .custom-ecom-art--quote-builder.ikas-visible .cv-stack-path-3 { --cv-d: 700ms; }
+  .custom-ecom-art--quote-builder.ikas-visible .cv-stack-path-4 { --cv-d: 850ms; }
+  .custom-ecom-art--quote-builder.ikas-visible :is(.cv-quote-line-1, .cv-quote-line-2, .cv-quote-line-3, .cv-quote-line-4) { animation: iv-fade 360ms ease-out both; }
+  .custom-ecom-art--quote-builder.ikas-visible .cv-quote-line-1 { animation-delay: 1000ms; }
+  .custom-ecom-art--quote-builder.ikas-visible .cv-quote-line-2 { animation-delay: 1150ms; }
+  .custom-ecom-art--quote-builder.ikas-visible .cv-quote-line-3 { animation-delay: 1300ms; }
+  .custom-ecom-art--quote-builder.ikas-visible .cv-quote-line-4 { animation-delay: 1450ms; }
+  .custom-ecom-art--quote-builder.ikas-visible .cv-quote-total { animation: iv-pop 400ms ease-out 1700ms both; }
+  .custom-ecom-art--quote-builder .ikas-in-view:not(.ikas-tab-hidden) .cv-quote-total { animation: iv-pop 400ms ease-out 1700ms both, sv-glow 3.4s ease-in-out 2.4s infinite; }
+}
