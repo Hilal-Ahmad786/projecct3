@@ -9,6 +9,7 @@ import CorporateWebsiteSubpage, { getCorporateWebsiteSubpageMeta } from '@/compo
 import EcommerceTurkishPage, { getEcommerceTurkishMeta, getEcommerceTurkishSocialMeta } from '@/components/e-commerce/EcommerceTurkishPage';
 import IkasTurkishSubpage, { getIkasTurkishSubpageMeta } from '@/components/ikas/IkasTurkishSubpage';
 import ShopifyTurkishFeatures from '@/components/e-commerce/ShopifyTurkishFeatures';
+import CustomEcommerceTurkishPage, { getCustomEcommerceMeta } from '@/components/e-commerce/CustomEcommerceTurkishPage';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -37,7 +38,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: 'Shopify Tema Tasarımı ve Mağaza Özellikleri | PakSoft',
     description: 'Shopify tema tasarımı, tema özelleştirme, ürün sayfası tasarımı ve ödeme, kargo entegrasyonu kapsamını inceleyin. Mağazanıza uygun özellikleri PakSoft ile belirleyin.',
   } : undefined;
-  const customMeta = slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
+  const customMeta = slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('features')
+    : slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('features', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('features')
     : slug === 'ikas-development' && validLocale === 'tr' ? getIkasTurkishSubpageMeta('features') : null;
@@ -90,6 +92,7 @@ export default async function ServiceFeaturesPage({ params }: PageProps) {
   if (slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) {
     return <CorporateWebsiteSubpage page="features" locale={locale} />;
   }
+  if (slug === 'custom-ecommerce' && locale === 'tr') return <CustomEcommerceTurkishPage page="features" />;
   if (slug === 'e-commerce' && locale === 'tr') return <EcommerceTurkishPage page="features" />;
   if (slug === 'ikas-development' && locale === 'tr') return <IkasTurkishSubpage page="features" />;
   if (slug === 'shopify-development' && locale === 'tr') return <ShopifyTurkishFeatures />;

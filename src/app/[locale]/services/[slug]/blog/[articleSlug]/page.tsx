@@ -8,6 +8,7 @@ import { getServiceArticlePresentation, getServiceBlog } from '@/components/serv
 import { CorporateWebsiteGuidePage, getCorporateWebsiteGuideMeta, getCorporateWebsiteGuideSlugs } from '@/components/services/CorporateWebsiteSubpage';
 import { CorporateWebsiteArticlePage, getCorporateWebsiteArticle, getCorporateWebsiteArticleMeta, getCorporateWebsiteArticleSlugs } from '@/components/services/CorporateWebsiteArticle';
 import { getShopifyGuide, getShopifyGuides } from '@/components/services/service-blogs/shopify-content';
+import { getCustomEcommerceGuide, getCustomEcommerceGuides } from '@/components/services/service-blogs/custom-ecommerce';
 
 // DB-backed service guides (see getServiceBlogArticle) pick up edits hourly;
 // admin saves also revalidate the 'blog' cache tag immediately.
@@ -20,7 +21,8 @@ export function generateStaticParams() {
     .filter((articleSlug) => locale === 'tr' || !getCorporateWebsiteArticle(articleSlug))
     .map((articleSlug) => ({ locale, slug: 'corporate-website-design', articleSlug })));
   const shopify = getShopifyGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'shopify-development', articleSlug }));
-  return [...corporate, ...shopify];
+  const customEcommerce = getCustomEcommerceGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'custom-ecommerce', articleSlug }));
+  return [...corporate, ...shopify, ...customEcommerce];
 }
 
 interface PageProps {
@@ -38,6 +40,11 @@ async function getServiceBlogArticle(serviceSlug: string, locale: string, articl
   if (!blog) return null;
   if (serviceSlug === 'shopify-development' && locale === 'tr') {
     const post = getShopifyGuide(articleSlug);
+    if (!post) return null;
+    return { blog, post, canonical: `${SITE_URL}${serviceBlogPath(blog.config)}/${articleSlug}` };
+  }
+  if (serviceSlug === 'custom-ecommerce' && locale === 'tr') {
+    const post = getCustomEcommerceGuide(articleSlug);
     if (!post) return null;
     return { blog, post, canonical: `${SITE_URL}${serviceBlogPath(blog.config)}/${articleSlug}` };
   }
@@ -131,6 +138,7 @@ export default async function CorporateWebsiteGuideRoute({ params }: PageProps) 
     const { config, category, coverAlt } = getServiceArticlePresentation(blog, post.slug, post.title);
     const relatedCards = slug === 'shopify-development'
       ? getShopifyGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))
+      : slug === 'custom-ecommerce' ? getCustomEcommerceGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))
       : await (async () => {
         const { getPublicServiceBlogCards } = await import('@/lib/database/public-queries');
         return getPublicServiceBlogCards(slug, locale, 24, slug === 'ikas-development' ? 'cover-images-2026-11' : '').catch(() => []);

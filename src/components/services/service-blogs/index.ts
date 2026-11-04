@@ -4,6 +4,7 @@ import type { ServiceBlogDefinition } from './types';
 import { ecommerceBlog } from './ecommerce';
 import { ikasBlog } from './ikas';
 import { shopifyBlog } from './shopify';
+import { customEcommerceBlog } from './custom-ecommerce';
 
 // Presentation config per service blog. The list of enabled services/locales
 // lives in src/lib/service-blogs.ts (kept JSX-free for the sitemap).
@@ -11,6 +12,7 @@ const definitions: Record<string, ServiceBlogDefinition> = {
   'e-commerce': ecommerceBlog,
   'ikas-development': ikasBlog,
   'shopify-development': shopifyBlog,
+  'custom-ecommerce': customEcommerceBlog,
 };
 
 export function getServiceBlog(serviceSlug: string, locale: string): ServiceBlogDefinition | null {

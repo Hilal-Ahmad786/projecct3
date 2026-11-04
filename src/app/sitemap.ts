@@ -6,6 +6,7 @@ import { getServicesForSitemap } from '@/lib/database/public-queries';
 import { isSubstantialService } from '@/lib/service-quality';
 import corporateWebsiteArticles from '@/data/corporate-website-articles/tr.json';
 import { getShopifyGuides } from '@/components/services/service-blogs/shopify-content';
+import customEcommerceArticles from '../../content/blog/custom-ecommerce/manifest.json';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 const allLocales: Locale[] = ['en', 'tr', 'de', 'ar', 'ur'];
@@ -206,6 +207,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: PRIORITY.blogPost,
       changeFreq: 'weekly',
       date: new Date(`${dateModified}T00:00:00Z`),
+      includeAlternates: false,
+    }));
+  });
+
+  // Repository-backed custom e-commerce guides have no CMS publication rows.
+  // Include only the two visible article routes; their cards do not claim
+  // publication dates, so sitemap lastmod reflects this content release.
+  customEcommerceArticles.forEach(({ slug }) => {
+    entries.push(entry('tr', `/services/custom-ecommerce/blog/${slug}`, {
+      priority: PRIORITY.blogPost,
+      changeFreq: 'monthly',
+      date: new Date('2026-11-04T00:00:00Z'),
       includeAlternates: false,
     }));
   });

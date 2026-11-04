@@ -9,6 +9,7 @@ import FAQPageClient from './FAQPageClient';
 import CorporateWebsiteSubpage, { getCorporateWebsiteSubpageMeta } from '@/components/services/CorporateWebsiteSubpage';
 import EcommerceTurkishPage, { getEcommerceTurkishMeta, getEcommerceTurkishSocialMeta, getEcommerceTurkishFaqItems } from '@/components/e-commerce/EcommerceTurkishPage';
 import ShopifyTurkishFAQ, { shopifyFaqMeta } from '@/components/e-commerce/ShopifyTurkishFAQ';
+import CustomEcommerceTurkishPage, { getCustomEcommerceMeta } from '@/components/e-commerce/CustomEcommerceTurkishPage';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -33,7 +34,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const path = `/services/${slug}/faq`;
   const localizedPath = localizeFullPath(path, validLocale);
 
-  const customMeta = slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
+  const customMeta = slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('faq')
+    : slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('faq', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('faq')
     : slug === 'ikas-development' && validLocale === 'tr' ? {
@@ -98,6 +100,7 @@ export default async function ServiceFAQPage({ params }: PageProps) {
   if (slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) {
     return <CorporateWebsiteSubpage page="faq" locale={locale} />;
   }
+  if (slug === 'custom-ecommerce' && locale === 'tr') return <CustomEcommerceTurkishPage page="faq" />;
   if (slug === 'e-commerce' && locale === 'tr') return <><FAQJsonLd faqs={getEcommerceTurkishFaqItems()} /><EcommerceTurkishPage page="faq" /></>;
   if (slug === 'shopify-development' && locale === 'tr') return <ShopifyTurkishFAQ />;
 

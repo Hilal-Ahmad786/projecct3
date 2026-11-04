@@ -9,6 +9,7 @@ import CorporateWebsiteSubpage, { getCorporateWebsiteSubpageMeta } from '@/compo
 import EcommerceTurkishPage, { getEcommerceTurkishMeta, getEcommerceTurkishSocialMeta } from '@/components/e-commerce/EcommerceTurkishPage';
 import IkasTurkishPortfolio, { getIkasTurkishPortfolioMeta } from '@/components/ikas/IkasTurkishPortfolio';
 import ShopifyTurkishPortfolio, { shopifyPortfolioMeta } from '@/components/e-commerce/ShopifyTurkishPortfolio';
+import CustomEcommerceTurkishPage, { getCustomEcommerceMeta } from '@/components/e-commerce/CustomEcommerceTurkishPage';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -33,7 +34,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const path = `/services/${slug}/portfolio`;
   const localizedPath = localizeFullPath(path, validLocale);
 
-  const customMeta = slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
+  const customMeta = slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('portfolio')
+    : slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('portfolio', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('portfolio')
     : slug === 'ikas-development' && validLocale === 'tr' ? getIkasTurkishPortfolioMeta()
@@ -95,6 +97,7 @@ export default async function ServicePortfolioPage({ params }: PageProps) {
   if (slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) {
     return <CorporateWebsiteSubpage page="portfolio" locale={locale} />;
   }
+  if (slug === 'custom-ecommerce' && locale === 'tr') return <CustomEcommerceTurkishPage page="portfolio" />;
   if (slug === 'e-commerce' && locale === 'tr') return <EcommerceTurkishPage page="portfolio" />;
   if (slug === 'ikas-development' && locale === 'tr') return <IkasTurkishPortfolio />;
   if (slug === 'shopify-development' && locale === 'tr') return <ShopifyTurkishPortfolio />;

@@ -9,6 +9,7 @@ import CorporateWebsiteSubpage, { getCorporateWebsiteSubpageMeta } from '@/compo
 import EcommerceTurkishPage, { getEcommerceTurkishMeta, getEcommerceTurkishSocialMeta } from '@/components/e-commerce/EcommerceTurkishPage';
 import IkasTurkishBlogPage, { getIkasBlogMeta } from '@/components/ikas/IkasTurkishBlogPage';
 import ShopifyTurkishBlogPage, { getShopifyBlogMeta } from '@/components/e-commerce/ShopifyTurkishBlogPage';
+import CustomEcommerceTurkishBlogPage, { getCustomEcommerceBlogMeta } from '@/components/e-commerce/CustomEcommerceTurkishBlogPage';
 
 export const revalidate = 3600;
 
@@ -32,7 +33,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const path = `/services/${slug}/blog`;
   const localizedPath = localizeFullPath(path, validLocale);
-  const customMeta = slug === 'ikas-development' && validLocale === 'tr'
+  const customMeta = slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceBlogMeta()
+    : slug === 'ikas-development' && validLocale === 'tr'
     ? getIkasBlogMeta()
     : slug === 'shopify-development' && validLocale === 'tr' ? getShopifyBlogMeta()
     : slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
@@ -62,6 +64,7 @@ export default async function ServiceBlogPage({ params }: PageProps) {
   if (slug === 'e-commerce' && validLocale === 'tr') return <EcommerceTurkishPage page="blog" />;
   if (slug === 'ikas-development' && validLocale === 'tr') return <IkasTurkishBlogPage />;
   if (slug === 'shopify-development' && validLocale === 'tr') return <ShopifyTurkishBlogPage />;
+  if (slug === 'custom-ecommerce' && validLocale === 'tr') return <CustomEcommerceTurkishBlogPage />;
 
   // Posts are categorized at the parent-service level; fall back to the
   // service's own slug, then its category.

@@ -32,6 +32,7 @@ import EcommercePlatformStrip from '@/components/e-commerce/EcommercePlatformStr
 import EcommerceHeroPlatforms from '@/components/e-commerce/EcommerceHeroPlatforms';
 import { IKAS_TR_HERO } from '@/components/ikas/ikasTurkishCopy';
 import RotatingHeading from '@/components/services/RotatingHeading';
+import { CustomEcommerceIcon } from '@/components/e-commerce/CustomEcommerceIcon';
 import IkasHeroVisual from '@/components/ikas/IkasHeroVisual';
 import { ShopifyIcon, ShopifyPlatformNote } from '@/components/e-commerce/ShopifyMark';
 import { IkasPlatformNote } from '@/components/ikas/IkasMark';
@@ -257,7 +258,7 @@ export default function ServiceDetailClient({
   // The Turkish Shopify overview has its own server-rendered section body.
   // Keep only the shared animated hero here to avoid generic sections and
   // the generic statistics strip appearing ahead of that curated content.
-  if (service.slug === 'shopify-development' && locale === 'tr') {
+  if ((service.slug === 'shopify-development' || service.slug === 'custom-ecommerce') && locale === 'tr') {
     return <div id="overview"><HeroSection service={service} colors={colors} accent={accent} process={process} animation={animation} heroArt={heroArt} /></div>;
   }
 
@@ -662,6 +663,7 @@ function HeroSection({
   const responseMicrocopy = RESPONSE_MICROCOPY[locale] || RESPONSE_MICROCOPY.en;
   const isIkasTr = service.slug === 'ikas-development' && locale === 'tr';
   const isShopifyTr = service.slug === 'shopify-development' && locale === 'tr';
+  const isCustomEcomTr = service.slug === 'custom-ecommerce' && locale === 'tr';
 
   return (
     <section className="relative overflow-hidden bg-white pt-[var(--navbar-h,64px)] pb-16 lg:pt-[var(--navbar-h,64px)] lg:pb-24">
@@ -727,9 +729,10 @@ function HeroSection({
                 <img src="/images/Tech/brand/ikas-icon.png" alt="" width={28} height={28} className="h-7 w-7 rounded-md shadow-sm" />
               )}
               {isShopifyTr && <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-black/5"><ShopifyIcon size={22} /></span>}
+              {isCustomEcomTr && <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-black/5"><CustomEcommerceIcon /></span>}
               {/* ikas writes its name in lowercase; CSS uppercase would render "İKAS". */}
               <span className={`text-xs font-medium ${colors.eyebrow} ${isIkasTr ? '' : 'uppercase'} tracking-wide`}>
-                {isIkasTr ? IKAS_TR_HERO.eyebrow : isShopifyTr ? 'Shopify Kurulum ve Geliştirme Hizmetleri' : t('services.detail.hero.eyebrow')}
+                {isIkasTr ? IKAS_TR_HERO.eyebrow : isShopifyTr ? 'Shopify Kurulum ve Geliştirme Hizmetleri' : isCustomEcomTr ? 'Özel E-Ticaret Geliştirme' : t('services.detail.hero.eyebrow')}
               </span>
             </div>
 
@@ -743,6 +746,8 @@ function HeroSection({
                 <RotatingHeading full={IKAS_TR_HERO.title} lead="ikas" words={['E-Ticaret Sitesi', 'Site Kurma', 'Tema Tasarımı', 'Site Taşıma']} />
               ) : isShopifyTr ? (
                 <RotatingHeading full={service.name} lead="Shopify" words={['Site Kurulumu', 'Tema Tasarımı', 'Mağaza Taşıma']} />
+              ) : isCustomEcomTr ? (
+                <RotatingHeading full={service.name} lead="Özel" words={['E-Ticaret Sitesi', 'E-Ticaret Yazılımı', 'Tasarım Mağaza']} />
               ) : (
               <h1 className={`text-display font-light text-gray-900 leading-none ${isIkasTr ? 'ikas-hero-title' : ''}`}>
                 <>{service.name.split(' ').slice(0, -1).join(' ')}{service.name.split(' ').length > 1 && <br />}<span className={`font-semibold ${colors.titleAccent}`}>{service.name.split(' ').length > 1 ? service.name.split(' ').slice(-1)[0] : service.name}</span></>
@@ -760,7 +765,7 @@ function HeroSection({
               Previous (full-description) version kept here on purpose:
                 {service.fullDescription || service.description}
             */}
-            <p className={`text-base sm:text-lg text-gray-600 max-w-lg leading-relaxed ${isShopifyTr ? '' : 'line-clamp-5'} ${isIkasTr ? 'ikas-hero-copy' : ''}`}>
+            <p className={`text-base sm:text-lg text-gray-600 max-w-lg leading-relaxed ${isShopifyTr || isCustomEcomTr ? '' : 'line-clamp-5'} ${isIkasTr ? 'ikas-hero-copy' : ''}`}>
               {service.shortDescription || service.fullDescription || service.description}
             </p>
 
@@ -768,7 +773,7 @@ function HeroSection({
             <div className={`space-y-3 pt-1 ${isIkasTr ? 'ikas-hero-actions' : ''}`}>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button
-                  href={service.slug === 'corporate-website-design' ? '/start-project?service=corporate-website-design' : service.slug === 'e-commerce' && locale === 'tr' ? '/start-project?service=e-commerce' : isIkasTr ? '/start-project?service=ikas-development' : isShopifyTr ? '/start-project?service=shopify-development' : '/contact'}
+                  href={service.slug === 'corporate-website-design' ? '/start-project?service=corporate-website-design' : service.slug === 'e-commerce' && locale === 'tr' ? '/start-project?service=e-commerce' : isIkasTr ? '/start-project?service=ikas-development' : isShopifyTr ? '/start-project?service=shopify-development' : isCustomEcomTr ? '/start-project?service=custom-ecommerce' : '/contact'}
                   variant="primary"
                   size="lg"
                   rightIcon={
@@ -777,11 +782,13 @@ function HeroSection({
                     </svg>
                   }
                 >
-                  {service.slug === 'e-commerce' && locale === 'tr' ? 'Projenizi Anlatın' : isIkasTr ? IKAS_TR_HERO.primary : isShopifyTr ? 'Shopify Projem İçin Teklif Al' : service.slug === 'corporate-website-design'
+                  {service.slug === 'e-commerce' && locale === 'tr' ? 'Projenizi Anlatın' : isIkasTr ? IKAS_TR_HERO.primary : isShopifyTr ? 'Shopify Projem İçin Teklif Al' : isCustomEcomTr ? 'Projem İçin Teklif Al' : service.slug === 'corporate-website-design'
                     ? (locale === 'tr' ? 'Projenizi Konuşalım' : 'Discuss Your Project')
                     : t('services.detail.hero.startProject')}
                 </Button>
-                {isShopifyTr ? (
+                {isCustomEcomTr ? (
+                  <a href="#satis-modelinize-uygun-is-akislari" className="inline-flex items-center justify-center gap-2 rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 transition-colors motion-reduce:transition-none hover:border-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2">Örnek İş Akışlarını İncele</a>
+                ) : isShopifyTr ? (
                   <a href="#shopify-hizmetleri" className="inline-flex items-center justify-center gap-2 rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 transition-colors motion-reduce:transition-none hover:border-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2">Hizmet Kapsamını İncele</a>
                 ) : isIkasTr ? (
                   <a href="#ikas-hizmetleri" className="inline-flex items-center justify-center gap-2 rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 transition-colors motion-reduce:transition-none hover:border-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2">{IKAS_TR_HERO.secondary}</a>
@@ -797,7 +804,7 @@ function HeroSection({
                 ) : <WhatsAppButton source="service_hero" variant="outline" size="lg" />}
               </div>
               {/* Response-time microcopy */}
-              {service.slug !== 'ikas-development' && service.slug !== 'corporate-website-design' && !(service.slug === 'e-commerce' && locale === 'tr') && !isShopifyTr && (
+              {service.slug !== 'ikas-development' && service.slug !== 'corporate-website-design' && !(service.slug === 'e-commerce' && locale === 'tr') && !isShopifyTr && !isCustomEcomTr && (
                 <p className="flex items-center gap-1.5 text-sm text-gray-400">
                   <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -809,6 +816,7 @@ function HeroSection({
               {isIkasTr && <p className="text-sm font-medium text-gray-600">{IKAS_TR_HERO.scope}</p>}
               {isShopifyTr && <p className="text-sm font-medium text-gray-600">Yeni mağaza · Tema özelleştirme · Shopify’a geçiş</p>}
               {isShopifyTr && <ShopifyPlatformNote />}
+              {isCustomEcomTr && <p className="text-sm font-medium text-gray-600">Özel iş akışları · Özel tasarım · Entegrasyonlar · Veri taşıma</p>}
               {isIkasTr && <IkasPlatformNote />}
             </div>
           </motion.div>
@@ -851,6 +859,8 @@ function HeroSection({
                         <span className="text-[12px] font-semibold text-gray-800">ikas mağazası</span>
                       </div>
                     </>
+                  ) : isCustomEcomTr && heroArt ? (
+                    heroArt
                   ) : isShopifyTr ? (
                     <>
                       {heroArt ?? <HeroVisual type={animation.heroVisual} motionType={animation.motion} accentClass={colors.dot} hideRatings />}
@@ -923,7 +933,7 @@ function HeroSection({
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.8, duration: 0.6 }}
-        className={`absolute bottom-8 left-1/2 -translate-x-1/2 ${isIkasTr || isShopifyTr ? "hidden" : "flex"} flex-col items-center gap-2 cursor-pointer group`}
+        className={`absolute bottom-8 left-1/2 -translate-x-1/2 ${isIkasTr || isShopifyTr || isCustomEcomTr ? "hidden" : "flex"} flex-col items-center gap-2 cursor-pointer group`}
         onClick={() => window.scrollBy({ top: window.innerHeight * 0.8, behavior: 'smooth' })}
       >
         {/* Mouse body */}

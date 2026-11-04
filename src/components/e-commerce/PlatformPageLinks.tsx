@@ -7,9 +7,9 @@ import { trTitleCase } from '@/lib/tr-title-case';
 // and the current page is left out.
 
 export type PlatformPage = 'overview' | 'features' | 'technologies' | 'process' | 'portfolio' | 'pricing' | 'blog' | 'faq';
-type Platform = 'ikas' | 'shopify';
+type Platform = 'ikas' | 'shopify' | 'custom';
 
-const BASE: Record<Platform, string> = { ikas: '/tr/hizmetler/ikas-development', shopify: '/tr/hizmetler/shopify-development' };
+const BASE: Record<Platform, string> = { ikas: '/tr/hizmetler/ikas-development', shopify: '/tr/hizmetler/shopify-development', custom: '/tr/hizmetler/custom-ecommerce' };
 const SLUG: Record<PlatformPage, string> = { overview: '', features: '/ozellikler', technologies: '/teknoloji', process: '/surec', portfolio: '/portfoy', pricing: '/fiyatlandirma', blog: '/blog', faq: '/sss' };
 
 const PAGES: Record<Platform, Record<PlatformPage, [string, string]>> = {
@@ -33,6 +33,16 @@ const PAGES: Record<Platform, Record<PlatformPage, [string, string]>> = {
     blog: ['Shopify rehberleri', 'Mağaza açmak için gerekenler ve geçiş yazıları.'],
     faq: ['Shopify SSS', 'Kurulum, maliyet ve taşıma soruları.'],
   },
+  custom: {
+    overview: ['Özel e-ticaret sitesi ve yazılım geliştirme', 'Özel iş akışları, tasarım ve ilk sürüm kapsamı.'],
+    features: ['E-ticaret sitesi özellikleri', 'Ürün, fiyat, sipariş ve yönetim modülleri.'],
+    technologies: ['Özel e-ticaret altyapısı', 'Mimari, veri kaynakları ve bağlantılar.'],
+    process: ['Özel e-ticaret geliştirme süreci', 'Keşif, geliştirme, test ve yayın adımları.'],
+    portfolio: ['Özel e-ticaret örnek senaryoları', 'Ölçüye göre satış, bayi fiyatı ve stok aktarımı.'],
+    pricing: ['Özel e-ticaret sitesi fiyatları', 'Geliştirme, dış giderler ve bakım kalemleri.'],
+    blog: ['Özel e-ticaret rehberleri', 'Altyapı seçimi ve teklif öncesi kapsam.'],
+    faq: ['Özel e-ticaret SSS', 'Kapsam, maliyet ve teslim soruları.'],
+  },
 };
 
 const RELATED: Record<Platform, [string, string, string][]> = {
@@ -48,12 +58,19 @@ const RELATED: Record<Platform, [string, string, string][]> = {
     ['WooCommerce Geliştirme', 'WordPress tabanlı mağaza çalışmaları.', '/tr/hizmetler/woocommerce-development'],
     ['Özel E-Ticaret', 'Hazır platforma sığmayan iş kuralları.', '/tr/hizmetler/custom-ecommerce'],
   ],
+  custom: [
+    ['E-Ticaret Çözümleri', 'Hazır altyapı seçenekleri ve genel mağaza geliştirme.', '/tr/hizmetler/e-commerce'],
+    ['B2B E-Ticaret', 'Bayi ve kurumsal müşteri sipariş akışları.', '/tr/hizmetler/b2b-ecommerce'],
+    ['Ödeme Geçidi Entegrasyonu', 'Ödeme bağlantısı ve sipariş durumları.', '/tr/hizmetler/payment-gateway-integration'],
+    ['Shopify Geliştirme', 'Hazır platformda kurulum ve tema hizmetleri.', '/tr/hizmetler/shopify-development'],
+    ['ikas Geliştirme', 'ikas kurulum, tema ve uygulama hizmetleri.', '/tr/hizmetler/ikas-development'],
+  ],
 };
 
 const focus = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2';
 
 export default function PlatformPageLinks({ platform, current, title, tone = 'ivory' }: { platform: Platform; current: PlatformPage; title?: string; tone?: 'white' | 'gray' | 'ivory' }) {
-  const name = platform === 'ikas' ? 'ikas' : 'Shopify';
+  const name = platform === 'ikas' ? 'ikas' : platform === 'shopify' ? 'Shopify' : 'Özel e-ticaret';
   const pages = (Object.keys(PAGES[platform]) as PlatformPage[]).filter((page) => page !== current);
   const bg = tone === 'gray' ? 'bg-background-gray' : tone === 'ivory' ? 'bg-heritage-ivory' : 'bg-white';
   return (
