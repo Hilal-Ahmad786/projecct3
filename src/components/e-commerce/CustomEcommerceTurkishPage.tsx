@@ -13,6 +13,8 @@ import type { CustomEcomVisualName } from '@/components/custom-ecommerce/visuals
 import { FAQJsonLd } from '@/components/seo/JsonLd';
 import { trTitleCase } from '@/lib/tr-title-case';
 import CustomEcommerceMotionScope from './CustomEcommerceMotionScope';
+import Image from 'next/image';
+import { FaqScene } from '@/components/services/hero-visuals/scenes-internal';
 import { CustomEcommerceIcon } from './CustomEcommerceIcon';
 import ShopLameesCase from './ShopLameesCase';
 import PageJumpNav, { SectionHead, sectionId } from './PageJumpNav';
@@ -155,14 +157,14 @@ const VISUALS: Partial<Record<CustomEcommercePage, [string, VisualSpec][]>> = {
     ['Özel e-ticaret sitesi fiyatı', ART.quote],
   ],
   features: [
-    ['Ürün kataloğu', ART.measure],
+    ['Ürün kataloğu', I('variant-picker', 'aside', { loop: true, label: 'Temsili ürün sayfası: seçilen ölçü ve seçeneğe göre ürün görünümü değişiyor' })],
     ['Fiyatlandırma ve bayi', ART.dealer],
     ['Sipariş yönetimi', ART.roles],
     ['Entegrasyonlar', I('integration-hub', 'aside', { loop: true, markLabel: 'Mağazanız', slotLabels: hubLabels, label: 'Temsili akış: özel mağaza ödeme, kargo, stok ve muhasebe sistemlerine bağlanıyor' })],
     ['İlk sürüm', ART.release],
   ],
   technologies: [
-    ['Hangi altyapı', ART.architecture],
+    ['Hangi altyapı', I('method-options', 'below', { loop: true, slotLabels: { 'slot-option-1': 'Hazır platform', 'slot-option-2': 'Özel modül', 'slot-option-3': 'Özel yazılım' } })],
     ['Müşteri arayüzü', I('editable-fields', 'aside', { loop: true, markLabel: 'Yönetim paneli', label: 'Temsili yönetim paneli: düzenlenen alan mağaza arayüzüne yansıyor' })],
     ['Fiyat ve sipariş kuralları', ART.consistency],
     ['Verinin ana kaynağını', ART.source],
@@ -180,7 +182,6 @@ const VISUALS: Partial<Record<CustomEcommercePage, [string, VisualSpec][]>> = {
   portfolio: [['Özel e-ticaret örneğini', I('project-brief', 'aside')]],
   pricing: [
     ['Geliştirme, dış hizmetler', I('cost-split', 'aside', { markLabel: 'Dış giderler', label: 'Temsili gider grupları: geliştirme, dış servisler ve yayın sonrası işler' })],
-    ['Proje bedelini', ART.quote],
     ['Teklif almak için', I('project-brief', 'aside')],
   ],
 };
@@ -286,18 +287,42 @@ function Body({ page, chunks }: { page: CustomEcommercePage; chunks: Chunk[] }) 
 
 /* -------------------------------------------------------------------- hero */
 
-function HeroArt({ page }: { page: CustomEcommercePage }) {
-  const modules: Record<CustomEcommercePage, [string, string][]> = {
-    overview: [['Ürün seçimi', 'Ölçü ve seçenekler'], ['Fiyat kuralı', 'Müşteriye göre hesap'], ['Sipariş akışı', 'Ekibe aktarım']],
-    features: [['Katalog', 'Ürün ve varyantlar'], ['Fiyat', 'Seçenek ve müşteri kuralları'], ['Sipariş', 'Durum ve ekip yetkileri']],
-    technologies: [['Mağaza', 'Müşteri arayüzü'], ['Satış kuralları', 'Fiyat ve sipariş'], ['Sistemler', 'Veri bağlantıları']],
-    process: [['Keşif', 'İhtiyaç ve mevcut durum'], ['Geliştirme', 'Ekran ve bağlantılar'], ['Test ve yayın', 'Kontrol ve devir']],
-    portfolio: [['Ürün seçimi', 'Ölçüye göre satış'], ['Bayi siparişi', 'Fiyat ve onay'], ['Stok akışı', 'Sistem bağlantısı']],
-    pricing: [['Geliştirme', 'Ekran ve iş kuralları'], ['Dış giderler', 'Lisans ve sağlayıcı'], ['Devam işleri', 'Bakım ve destek']],
-    faq: [['Kapsam', 'Ürün ve sipariş'], ['Maliyet', 'Teklif ve giderler'], ['Teslim', 'Yayın sonrası']],
-  };
-  return <div className="w-full max-w-md"><figure aria-label="Özel e-ticaret hizmeti için temsili modüller" className="m-0 grid grid-cols-1 gap-3 rounded-2xl border border-heritage-sand bg-white p-4 shadow-sm sm:grid-cols-3">{modules[page].map(([title, text], i) => <div key={title} data-custom-ecom-reveal data-custom-ecom-delay={i * 45} className="rounded-xl border border-heritage-sand bg-heritage-ivory p-4"><span className="text-xs font-semibold text-heritage-turquoise-deep">0{i + 1}</span><strong className="mt-2 block text-sm text-gray-900">{title}</strong><span className="mt-1 block text-xs leading-5 text-gray-600">{text}</span></div>)}</figure><p className="mt-2 text-right text-xs text-gray-500">Temsili gösterim</p></div>;
+/** Floating code tile over the hero art, like the ikas/Shopify logo tiles (loops via IkasMotionScope). */
+export function CustomEcomHeroScene({ children }: { children: ReactNode }) {
+  return (
+    <div className="relative w-full max-w-xl">
+      {children}
+      <div aria-hidden="true" data-ikas-loop className="ikas-badge-float absolute -left-2 -top-14 z-20 rounded-[20px] bg-white p-3 shadow-[0_12px_30px_rgba(18,25,38,0.18)] ring-1 ring-black/5 sm:-left-6">
+        <CodeBracketSquareIcon className="h-10 w-10 text-heritage-turquoise-deep sm:h-12 sm:w-12" />
+      </div>
+    </div>
+  );
 }
+
+/** Portföy hero: the real Shop Lamees store, desktop plus phone frame. */
+function ShopLameesHeroShot() {
+  return (
+    <div className="relative pb-10 pe-6">
+      <div data-custom-ecom-reveal className="overflow-hidden rounded-xl border border-heritage-sand bg-white shadow-md">
+        <Image src="/images/portfolio/shop-lamees/shop-lamees-ana-sayfa.webp" alt="Shop Lamees özel e-ticaret sitesinin ana sayfası" width={1440} height={900} sizes="(min-width: 1024px) 560px, 90vw" className="h-auto w-full" priority />
+      </div>
+      <div data-ikas-loop className="ikas-badge-float absolute -bottom-2 end-0 w-[30%] overflow-hidden rounded-2xl border-4 border-gray-900 bg-white shadow-lg">
+        <Image src="/images/portfolio/shop-lamees/shop-lamees-mobil.webp" alt="Shop Lamees ürün sayfasının mobil görünümü" width={600} height={1080} sizes="170px" className="h-auto w-full" />
+      </div>
+      <span className="absolute bottom-0 start-0 inline-flex items-center gap-1.5 rounded-full border border-heritage-sand bg-white px-3 py-1 text-xs font-semibold text-gray-700 shadow-sm"><span className="h-2 w-2 rounded-full bg-heritage-turquoise" aria-hidden="true" />shoplamees.com · canlı proje</span>
+    </div>
+  );
+}
+
+// Each subpage hero has its own scene (no visual repeats further down the same page).
+const HERO_ART: Record<Exclude<CustomEcommercePage, 'overview'>, () => ReactNode> = {
+  features: () => <Visual spec={ART.measure} className="w-full" />,
+  technologies: () => <Visual spec={ART.architecture} className="w-full" />,
+  process: () => <Visual spec={ART.release} className="w-full" />,
+  portfolio: () => <ShopLameesHeroShot />,
+  pricing: () => <Visual spec={ART.quote} className="w-full" />,
+  faq: () => <FaqScene />,
+};
 
 const ROTATING: Record<Exclude<CustomEcommercePage, 'overview'>, { lead: string; words: string[] }> = {
   features: { lead: 'Özel E-Ticaret', words: ['Sitesi Özellikleri', 'Modülleri', 'Entegrasyonları'] },
@@ -333,7 +358,7 @@ export default function CustomEcommerceTurkishPage({ page }: { page: Exclude<Cus
       heading={copy.heading}
       rotating={ROTATING[page]}
       subtitle={copy.intro}
-      scene={<HeroArt page={page} />}
+      scene={<CustomEcomHeroScene>{HERO_ART[page]()}</CustomEcomHeroScene>}
       crumbs={[{ label: 'Ana Sayfa', href: '/' }, { label: 'Hizmetler', href: '/hizmetler' }, { label: 'Özel E-Ticaret', href: base }, { label: copy.heading }]}
       actions={<><Link href={enquiry} className={`inline-flex min-h-11 items-center justify-center gap-2 rounded-sm bg-heritage-turquoise-deep px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-heritage-turquoise ${focus}`}>{primaryLabel[page]}<ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link><a href={firstAnchor} className={`inline-flex min-h-11 items-center justify-center rounded-sm border border-heritage-sand bg-white px-5 py-3 text-sm font-semibold text-gray-800 hover:border-heritage-turquoise ${focus}`}>{secondaryLabel[page]}</a></>}
     />
