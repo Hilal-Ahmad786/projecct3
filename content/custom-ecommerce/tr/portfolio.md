@@ -1,6 +1,6 @@
 ## İhtiyacınızı bir örnek senaryoyla karşılaştırın
 
-Bu sayfadaki senaryolar, farklı satış kurallarının proje kapsamına nasıl dönüşebileceğini gösterir. Her biri temsili örnektir; müşteri projesi veya tamamlanmış teslimat olarak sunulmaz.
+Aşağıdaki senaryolar, farklı satış kurallarının proje kapsamına nasıl dönüşebileceğini gösterir. Her biri temsili örnektir; müşteri projesi veya tamamlanmış teslimat olarak sunulmaz. Gerçek bir uygulama için yukarıdaki Shop Lamees örneğini inceleyebilirsiniz.
 
 ### Ölçüye göre satılan ürünler
 

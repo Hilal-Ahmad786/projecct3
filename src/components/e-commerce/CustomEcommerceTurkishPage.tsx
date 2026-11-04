@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { Children, cloneElement, isValidElement, type ReactElement, type ReactNode } from 'react';
+import { Children, Fragment, cloneElement, isValidElement, type ReactElement, type ReactNode } from 'react';
 import Link from '@/components/IntentLink';
 import ReactMarkdown, { type Components } from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -14,6 +14,7 @@ import { FAQJsonLd } from '@/components/seo/JsonLd';
 import { trTitleCase } from '@/lib/tr-title-case';
 import CustomEcommerceMotionScope from './CustomEcommerceMotionScope';
 import { CustomEcommerceIcon } from './CustomEcommerceIcon';
+import ShopLameesCase from './ShopLameesCase';
 import PageJumpNav, { SectionHead, sectionId } from './PageJumpNav';
 import PlatformPageLinks from './PlatformPageLinks';
 
@@ -35,7 +36,7 @@ const metadata: Record<CustomEcommercePage, { title: string; description: string
   features: { title: 'E-Ticaret Sitesi Özellikleri ve Özel Modüller | PakSoft', description: 'Özel e-ticaret sitesinde ürün seçenekleri, fiyat kuralları, ödeme, sipariş ve yönetim panelinin işletmenize göre nasıl geliştirilebileceğini inceleyin.', heading: 'Özel E-Ticaret Sitesi Özellikleri', intro: 'Ürün seçenekleri, müşteriye göre fiyatlar, ödeme adımları ve sipariş yönetimi satış modelinize göre şekillenebilir. Mağaza ve ekip akışlarını birlikte tanımlayın.' },
   technologies: { title: 'Özel E-Ticaret Altyapısı ve Teknolojileri | PakSoft', description: 'Özel e-ticaret altyapısında mağaza arayüzü, fiyat kuralları, ödeme, stok ve sipariş entegrasyonları için teknik seçenekleri inceleyin.', heading: 'Özel E-Ticaret Altyapısı ve Teknolojileri', intro: 'Mağaza arayüzü, fiyat hesaplama, stok verisi ve sipariş yönetimi aynı satış akışının parçalarıdır. Hangi parçaların mevcut sisteminizde kalacağını, hangilerinin geliştirileceğini birlikte değerlendiriyoruz.' },
   process: { title: 'Özel E-Ticaret Geliştirme Süreci | PakSoft', description: 'Özel e-ticaret projenizin keşif, tasarım, geliştirme, test ve yayına geçiş adımlarını inceleyin. Her aşamada gereken hazırlıkları öğrenin.', heading: 'Özel E-Ticaret Geliştirme Süreci', intro: 'Gerçek bir sipariş örneğiyle başlıyor; ürün seçimi, fiyat hesabı ve siparişin ekibinize ulaşma biçimini belirliyoruz. Ardından ilk sürümün kapsamını ve test adımlarını planlıyoruz.' },
-  portfolio: { title: 'Özel E-Ticaret Sitesi Örnek Senaryoları | PakSoft', description: 'Ölçüye göre satış, bayi fiyatı ve stok bağlantısı örnekleriyle özel e-ticaret sitesi projenizin kapsamını planlayın.', heading: 'Özel E-Ticaret Sitesi Örnek Senaryoları', intro: 'Aşağıdaki temsili satış senaryoları, farklı ürün ve sipariş kurallarının proje kapsamına nasıl dönüşebileceğini gösterir.' },
+  portfolio: { title: 'Özel E-Ticaret Sitesi Örnekleri ve Projeler | PakSoft', description: 'Next.js ile geliştirdiğimiz Shop Lamees özel e-ticaret sitesini ve ölçüye göre satış, bayi fiyatı ve stok bağlantısı senaryolarını inceleyin.', heading: 'Özel E-Ticaret Sitesi Örnekleri ve Senaryolar', intro: 'Next.js ile geliştirdiğimiz Shop Lamees mağazasını inceleyin; ardından farklı ürün ve sipariş kurallarının proje kapsamına nasıl dönüşebileceğini temsili senaryolarla görün.' },
   pricing: { title: 'Özel E-Ticaret Sitesi Fiyatları ve Maliyetler | PakSoft', description: 'Özel e-ticaret sitesi fiyatlarını belirleyen tasarım, yazılım, veri taşıma ve entegrasyon işlerini inceleyin. Projenize özel teklif alın.', heading: 'Özel E-Ticaret Sitesi Fiyatları Nasıl Belirlenir?', intro: 'Özel e-ticaret sitesi fiyatı; hazırlanacak ekranlara, ürün ve fiyat kurallarına, veri taşıma ihtiyacına ve bağlanacak sistemlere göre belirlenir. Teklifte geliştirme işleri, üçüncü taraf giderleri ve yayın sonrası ihtiyaçlar ayrı değerlendirilir.' },
   faq: { title: 'Özel E-Ticaret Sitesi Sık Sorulan Sorular | PakSoft', description: 'Özel e-ticaret sitesi geliştirme, fiyatlandırma, ürün kuralları, ödeme, entegrasyon ve mağaza taşıma hakkında sık sorulan soruları inceleyin.', heading: 'Özel E-Ticaret Hakkında Sık Sorulan Sorular', intro: 'Özel e-ticaret projesine başlamadan önce kapsam, ürün kuralları, maliyet ve teslim süreciyle ilgili yanıtları inceleyin. Projeye özel teslimler ve ticari koşullar yazılı teklifte netleştirilir.' },
 };
@@ -268,10 +269,16 @@ function ClosingCta({ page }: { page: CustomEcommercePage }) {
   );
 }
 
+// Where the real Shop Lamees case sits: after this H2 on the overview, first on Portföy.
+const CASE_AFTER: Partial<Record<CustomEcommercePage, string | null>> = { overview: 'Özel tasarım', portfolio: null };
+
 function Body({ page, chunks }: { page: CustomEcommercePage; chunks: Chunk[] }) {
+  const caseAt = page in CASE_AFTER ? (CASE_AFTER[page] === null ? 0 : chunks.findIndex((c) => lower(c.title).startsWith(lower(CASE_AFTER[page] as string))) + 1) : -1;
+  const jump = chunks.map((c) => ({ href: `#${sectionId(c.title)}`, label: page === 'faq' ? c.title : jumpLabel(c.title) }));
+  if (caseAt >= 0) jump.splice(caseAt, 0, { href: '#shop-lamees', label: 'Örnek proje' });
   return <>
-    <PageJumpNav label={page === 'faq' ? 'SSS konuları' : 'Bu sayfada'} items={chunks.map((c) => ({ href: `#${sectionId(c.title)}`, label: page === 'faq' ? c.title : jumpLabel(c.title) }))} mark={<CodeBracketSquareIcon className="h-3.5 w-3.5 text-heritage-turquoise-deep" />} />
-    {chunks.map((chunk, i) => <ChunkSection key={chunk.title} chunk={chunk} page={page} index={i} />)}
+    <PageJumpNav label={page === 'faq' ? 'SSS konuları' : 'Bu sayfada'} items={jump} mark={<CodeBracketSquareIcon className="h-3.5 w-3.5 text-heritage-turquoise-deep" />} />
+    {chunks.map((chunk, i) => <Fragment key={chunk.title}>{i === caseAt && <ShopLameesCase />}<ChunkSection chunk={chunk} page={page} index={i} /></Fragment>)}
     <PlatformPageLinks platform="custom" current={page} tone={TONES[chunks.length % TONES.length]} />
     <ClosingCta page={page} />
   </>;
@@ -296,7 +303,7 @@ const ROTATING: Record<Exclude<CustomEcommercePage, 'overview'>, { lead: string;
   features: { lead: 'Özel E-Ticaret', words: ['Sitesi Özellikleri', 'Modülleri', 'Entegrasyonları'] },
   technologies: { lead: 'Özel E-Ticaret', words: ['Altyapısı', 'Teknolojileri', 'Entegrasyonları'] },
   process: { lead: 'Özel E-Ticaret', words: ['Geliştirme Süreci', 'Proje Adımları', 'Yayına Geçiş'] },
-  portfolio: { lead: 'Özel E-Ticaret', words: ['Örnek Senaryoları', 'İş Akışları'] },
+  portfolio: { lead: 'Özel E-Ticaret', words: ['Sitesi Örnekleri', 'Projeleri', 'Senaryoları'] },
   pricing: { lead: 'Özel E-Ticaret Sitesi', words: ['Fiyatları', 'Maliyetleri', 'Teklif Kapsamı'] },
   faq: { lead: 'Özel E-Ticaret', words: ['Sık Sorulanlar', 'Kapsam Soruları', 'Fiyat Soruları'] },
 };
@@ -311,9 +318,9 @@ export function CustomEcommerceOverviewBody() {
 export default function CustomEcommerceTurkishPage({ page }: { page: Exclude<CustomEcommercePage, 'overview'> }) {
   const copy = metadata[page];
   const chunks = readChunks(page);
-  const firstAnchor = chunks[0] ? `#${sectionId(chunks[0].title)}` : '#';
+  const firstAnchor = page === 'portfolio' ? '#shop-lamees' : chunks[0] ? `#${sectionId(chunks[0].title)}` : '#';
   const primaryLabel: Record<typeof page, string> = { features: 'İhtiyaçlarımı Paylaş', technologies: 'Teknik İhtiyaçlarımı Paylaş', process: 'Projemi Planlayalım', portfolio: 'Benzer Bir Projeyi Görüşelim', pricing: 'Projem İçin Teklif Al', faq: 'Projemi Anlatmak İstiyorum' };
-  const secondaryLabel: Record<typeof page, string> = { features: 'Modülleri İncele', technologies: 'Altyapı Seçeneklerini İncele', process: 'Geliştirme Adımlarını İncele', portfolio: 'Örnek Senaryoları İncele', pricing: 'Maliyet Kalemlerini İncele', faq: 'Soruları İncele' };
+  const secondaryLabel: Record<typeof page, string> = { features: 'Modülleri İncele', technologies: 'Altyapı Seçeneklerini İncele', process: 'Geliştirme Adımlarını İncele', portfolio: 'Shop Lamees Örneğini İncele', pricing: 'Maliyet Kalemlerini İncele', faq: 'Soruları İncele' };
   const faqs = page === 'faq' ? faqItems(chunks) : [];
   return <main className="min-h-screen bg-white">
     <CustomEcommerceMotionScope />
