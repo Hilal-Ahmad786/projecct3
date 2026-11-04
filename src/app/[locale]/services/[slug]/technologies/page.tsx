@@ -13,6 +13,7 @@ import EcommerceTurkishPage, { getEcommerceTurkishMeta, getEcommerceTurkishSocia
 import IkasTurkishSubpage, { getIkasTurkishSubpageMeta } from '@/components/ikas/IkasTurkishSubpage';
 import ShopifyTurkishTechnologies from '@/components/e-commerce/ShopifyTurkishTechnologies';
 import CustomEcommerceTurkishPage, { getCustomEcommerceMeta } from '@/components/e-commerce/CustomEcommerceTurkishPage';
+import MarketplaceTurkishPage, { getMarketplaceMeta } from '@/components/e-commerce/MarketplaceTurkishPage';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -37,7 +38,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const path = `/services/${slug}/technologies`;
   const localizedPath = localizeFullPath(path, validLocale);
 
-  const customMeta = slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('technologies')
+  const customMeta = slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('technologies') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('technologies')
     : slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('technologies', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('technologies')
@@ -81,6 +82,8 @@ export default async function ServiceTechnologiesPage({ params }: PageProps) {
   if (!service) {
     notFound();
   }
+
+  if (slug === 'marketplace-development' && locale === 'tr') return <MarketplaceTurkishPage page="technologies" />;
 
   if (slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) {
     return <CorporateWebsiteSubpage page="technologies" locale={locale} />;

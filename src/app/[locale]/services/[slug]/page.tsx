@@ -17,6 +17,7 @@ import ShopifyTurkishOverview, { SHOPIFY_TR_FAQ } from '@/components/e-commerce/
 import { IKAS_TR_FAQ, IKAS_TR_HERO, IKAS_TR_META } from '@/components/ikas/ikasTurkishCopy';
 import { CustomEcommerceOverviewBody, getCustomEcommerceMeta } from '@/components/e-commerce/CustomEcommerceTurkishPage';
 import CustomEcomArtwork from '@/components/custom-ecommerce/visuals/CustomEcomArtwork';
+import MarketplaceTurkishPage, { getMarketplaceMeta } from '@/components/e-commerce/MarketplaceTurkishPage';
 
 // Enable ISR - revalidate every hour for better performance
 export const revalidate = 3600;
@@ -108,8 +109,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const customEcommerceMeta = slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('overview') : undefined;
   const ecommerceMeta = slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('overview') : slug === 'ikas-development' && validLocale === 'tr' ? IKAS_TR_META : undefined;
   const revisedMeta = slug === 'corporate-website-design' ? corporateMeta[validLocale] : undefined;
-  const title = customEcommerceMeta?.title || shopifyMeta?.title || ecommerceMeta?.title || revisedMeta?.title || (service as { metaTitle?: string | null }).metaTitle || `${service.name} | PakSoft`;
-  const description = customEcommerceMeta?.description || shopifyMeta?.description || ecommerceMeta?.description || revisedMeta?.description ||
+  const marketplaceMeta = slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('overview') : undefined;
+  const title = marketplaceMeta?.title || customEcommerceMeta?.title || shopifyMeta?.title || ecommerceMeta?.title || revisedMeta?.title || (service as { metaTitle?: string | null }).metaTitle || `${service.name} | PakSoft`;
+  const description = marketplaceMeta?.description || customEcommerceMeta?.description || shopifyMeta?.description || ecommerceMeta?.description || revisedMeta?.description ||
     (service as { metaDescription?: string | null }).metaDescription ||
     truncateAtWord(service.fullDescription || service.shortDescription || service.description || '', 160);
   const path = `/services/${slug}`;
@@ -151,6 +153,8 @@ export default async function ServicePage({ params }: PageProps) {
   if (!service) {
     notFound();
   }
+
+  if (slug === 'marketplace-development' && locale === 'tr') return <MarketplaceTurkishPage page="overview" />;
 
   // Extract structured content from JSON field
   const content = (service.content || {}) as {

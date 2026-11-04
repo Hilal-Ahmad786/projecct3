@@ -9,6 +9,7 @@ import { CorporateWebsiteGuidePage, getCorporateWebsiteGuideMeta, getCorporateWe
 import { CorporateWebsiteArticlePage, getCorporateWebsiteArticle, getCorporateWebsiteArticleMeta, getCorporateWebsiteArticleSlugs } from '@/components/services/CorporateWebsiteArticle';
 import { getShopifyGuide, getShopifyGuides } from '@/components/services/service-blogs/shopify-content';
 import { getCustomEcommerceGuide, getCustomEcommerceGuides } from '@/components/services/service-blogs/custom-ecommerce';
+import { getMarketplaceArticle, getMarketplaceArticles, getMarketplaceArticleMeta, MarketplaceTurkishArticlePage } from '@/components/e-commerce/MarketplaceTurkishPage';
 
 // DB-backed service guides (see getServiceBlogArticle) pick up edits hourly;
 // admin saves also revalidate the 'blog' cache tag immediately.
@@ -22,7 +23,8 @@ export function generateStaticParams() {
     .map((articleSlug) => ({ locale, slug: 'corporate-website-design', articleSlug })));
   const shopify = getShopifyGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'shopify-development', articleSlug }));
   const customEcommerce = getCustomEcommerceGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'custom-ecommerce', articleSlug }));
-  return [...corporate, ...shopify, ...customEcommerce];
+  const marketplace = getMarketplaceArticles().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'marketplace-development', articleSlug }));
+  return [...corporate, ...shopify, ...customEcommerce, ...marketplace];
 }
 
 interface PageProps {
@@ -58,6 +60,19 @@ const isoDay = (value: Date | string | null | undefined) => (value ? new Date(va
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale, slug, articleSlug } = await params;
+  if (slug === 'marketplace-development' && locale === 'tr') {
+    const article = getMarketplaceArticleMeta(articleSlug);
+    if (!article) notFound();
+    const canonical = `${SITE_URL}/tr/hizmetler/marketplace-development/blog/${articleSlug}`;
+    const image = article.image ? `${SITE_URL}${article.image}` : undefined;
+    return {
+      title: article.title,
+      description: article.description,
+      alternates: { canonical },
+      openGraph: { type: 'article', title: article.title, description: article.description, url: canonical, siteName: 'PakSoft', locale: 'tr_TR', ...(image ? { images: [{ url: image }] } : {}) },
+      twitter: { card: 'summary_large_image', title: article.title, description: article.description, ...(image ? { images: [image] } : {}) },
+    };
+  }
   const serviceArticle = await getServiceBlogArticle(slug, locale, articleSlug);
   if (serviceArticle) {
     const { post, canonical } = serviceArticle;
@@ -132,6 +147,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function CorporateWebsiteGuideRoute({ params }: PageProps) {
   const { locale, slug, articleSlug } = await params;
+  if (slug === 'marketplace-development' && locale === 'tr') {
+    if (!getMarketplaceArticle(articleSlug)) notFound();
+    return <MarketplaceTurkishArticlePage slug={articleSlug} />;
+  }
   const serviceArticle = await getServiceBlogArticle(slug, locale, articleSlug);
   if (serviceArticle) {
     const { blog, post } = serviceArticle;

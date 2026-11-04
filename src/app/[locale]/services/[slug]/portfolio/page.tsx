@@ -10,6 +10,7 @@ import EcommerceTurkishPage, { getEcommerceTurkishMeta, getEcommerceTurkishSocia
 import IkasTurkishPortfolio, { getIkasTurkishPortfolioMeta } from '@/components/ikas/IkasTurkishPortfolio';
 import ShopifyTurkishPortfolio, { shopifyPortfolioMeta } from '@/components/e-commerce/ShopifyTurkishPortfolio';
 import CustomEcommerceTurkishPage, { getCustomEcommerceMeta } from '@/components/e-commerce/CustomEcommerceTurkishPage';
+import MarketplaceTurkishPage, { getMarketplaceMeta } from '@/components/e-commerce/MarketplaceTurkishPage';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -34,7 +35,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const path = `/services/${slug}/portfolio`;
   const localizedPath = localizeFullPath(path, validLocale);
 
-  const customMeta = slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('portfolio')
+  const customMeta = slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('portfolio') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('portfolio')
     : slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('portfolio', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('portfolio')
@@ -93,6 +94,8 @@ export default async function ServicePortfolioPage({ params }: PageProps) {
   if (!service) {
     notFound();
   }
+
+  if (slug === 'marketplace-development' && locale === 'tr') return <MarketplaceTurkishPage page="portfolio" />;
 
   if (slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) {
     return <CorporateWebsiteSubpage page="portfolio" locale={locale} />;

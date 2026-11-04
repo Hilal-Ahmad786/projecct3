@@ -20,6 +20,27 @@
   .page-fade { animation: none; }
 }
 
+/* Marketplace development page: restrained one-time emphasis for role flows,
+   feature states and scenario cards. Content remains visible without JS. */
+@keyframes marketplace-rise {
+  from { transform: translateY(10px); opacity: .82; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.marketplace-scene { animation: marketplace-rise 420ms ease-out both; }
+.marketplace-seller { animation: marketplace-rise 440ms ease-out both; }
+.marketplace-card { animation: marketplace-rise 380ms ease-out both; }
+.marketplace-state-row { animation: marketplace-rise 360ms ease-out both; }
+.marketplace-flow span { animation: marketplace-flow-step 700ms ease-out both; }
+.marketplace-flow span:nth-child(2) { animation-delay: 90ms; }
+.marketplace-flow span:nth-child(3) { animation-delay: 180ms; }
+@keyframes marketplace-flow-step { from { opacity: .35; transform: translateX(-5px); } to { opacity: 1; transform: translateX(0); } }
+.marketplace-timeline { position: relative; }
+.marketplace-timeline::before { position: absolute; top: 2.75rem; bottom: 2.75rem; left: 2.125rem; width: 1px; background: #0E7C7B; content: ''; transform-origin: top; animation: marketplace-timeline-draw 700ms ease-out 160ms both; }
+@keyframes marketplace-timeline-draw { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@media (prefers-reduced-motion: reduce) {
+  .marketplace-scene, .marketplace-seller, .marketplace-card, .marketplace-state-row, .marketplace-flow span, .marketplace-timeline::before { animation: none !important; }
+}
+
 /* Turkish ikas pages: subtle, one-time motion. Elements are visible by
    default and only receive motion after the small observer opts them in. */
 [data-ikas-reveal].ikas-visible {

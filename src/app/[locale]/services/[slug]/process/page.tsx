@@ -10,6 +10,7 @@ import EcommerceTurkishPage, { getEcommerceTurkishMeta, getEcommerceTurkishSocia
 import IkasTurkishSubpage, { getIkasTurkishSubpageMeta } from '@/components/ikas/IkasTurkishSubpage';
 import ShopifyTurkishProcess from '@/components/e-commerce/ShopifyTurkishProcess';
 import CustomEcommerceTurkishPage, { getCustomEcommerceMeta } from '@/components/e-commerce/CustomEcommerceTurkishPage';
+import MarketplaceTurkishPage, { getMarketplaceMeta } from '@/components/e-commerce/MarketplaceTurkishPage';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -34,7 +35,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const path = `/services/${slug}/process`;
   const localizedPath = localizeFullPath(path, validLocale);
 
-  const customMeta = slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('process')
+  const customMeta = slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('process') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('process')
     : slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('process', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('process')
@@ -79,6 +80,8 @@ export default async function ServiceProcessPage({ params }: PageProps) {
   if (!service) {
     notFound();
   }
+
+  if (slug === 'marketplace-development' && locale === 'tr') return <MarketplaceTurkishPage page="process" />;
 
   if (slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) {
     return <CorporateWebsiteSubpage page="process" locale={locale} />;

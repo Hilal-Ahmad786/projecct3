@@ -10,6 +10,7 @@ import EcommerceTurkishPage, { getEcommerceTurkishMeta, getEcommerceTurkishSocia
 import IkasTurkishSubpage, { getIkasTurkishSubpageMeta } from '@/components/ikas/IkasTurkishSubpage';
 import ShopifyTurkishFeatures from '@/components/e-commerce/ShopifyTurkishFeatures';
 import CustomEcommerceTurkishPage, { getCustomEcommerceMeta } from '@/components/e-commerce/CustomEcommerceTurkishPage';
+import MarketplaceTurkishPage, { getMarketplaceMeta } from '@/components/e-commerce/MarketplaceTurkishPage';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: 'Shopify Tema Tasarımı ve Mağaza Özellikleri | PakSoft',
     description: 'Shopify tema tasarımı, tema özelleştirme, ürün sayfası tasarımı ve ödeme, kargo entegrasyonu kapsamını inceleyin. Mağazanıza uygun özellikleri PakSoft ile belirleyin.',
   } : undefined;
-  const customMeta = slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('features')
+  const customMeta = slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('features') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('features')
     : slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('features', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('features')
@@ -88,6 +89,8 @@ export default async function ServiceFeaturesPage({ params }: PageProps) {
   if (!service) {
     notFound();
   }
+
+  if (slug === 'marketplace-development' && locale === 'tr') return <MarketplaceTurkishPage page="features" />;
 
   if (slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) {
     return <CorporateWebsiteSubpage page="features" locale={locale} />;
