@@ -936,6 +936,206 @@ body {
   box-shadow: 0 10px 28px rgb(26 58 107 / 8%);
 }
 
+/* shopify visuals (src/components/shopify/visuals). Same contract as the ikas
+   visuals: SVGs render in their final state; motion runs after IkasMotionScope
+   adds .ikas-visible (once) or .ikas-in-view (loops, paused off-screen). */
+.shopify-art svg { display: block; width: 100%; height: auto; }
+.shopify-art [class^="sv-"] { transform-box: fill-box; transform-origin: center; }
+/* labels the retry loop passes under sit on the section background */
+.shopify-art--webhook-flow :is(.sv-slot-receive-label, .sv-slot-process-label) { background: #fff; border-radius: 6px; }
+@keyframes sv-slide-right { from { opacity: 0; transform: translateX(60px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes sv-travel { from { opacity: 0; transform: translateX(-174px); } 15% { opacity: 1; } to { opacity: 1; transform: translateX(0); } }
+@keyframes sv-glow { 0%, 100% { opacity: 1; } 50% { opacity: .45; } }
+@keyframes sv-nudge { 0%, 70%, 100% { transform: translateY(0); } 80% { transform: translateY(-6px); } 90% { transform: translateY(2px); } }
+@keyframes sv-nod { 0%, 100% { transform: rotate(0); } 30% { transform: rotate(-8deg); } 60% { transform: rotate(6deg); } }
+@keyframes sv-fan { from { transform: translate(14px, 10px); opacity: .4; } to { transform: translate(0, 0); opacity: 1; } }
+
+@media (prefers-reduced-motion: no-preference) {
+  .shopify-art.ikas-visible path[pathLength]:not(.sv-boundary, .sv-plugin-path, .sv-retry-loop, .sv-stub-passwords) { stroke-dasharray: 1; animation: iv-draw 900ms ease-out var(--sv-d, 250ms) both; }
+  /* dashed paths keep their dash pattern: fade instead of draw */
+  .shopify-art.ikas-visible :is(.sv-boundary, .sv-plugin-path, .sv-retry-loop, .sv-stub-passwords) { animation: iv-fade 600ms ease-out var(--sv-d, 250ms) both; }
+
+  /* theme editor: selected block → preview section, then a drag hint */
+  .shopify-art--theme-editor.ikas-visible :is(.sv-row-1, .sv-row-2, .sv-row-3, .sv-row-4, .sv-row-5) { animation: iv-rise 360ms ease-out both; }
+  .shopify-art--theme-editor.ikas-visible .sv-row-2 { animation-delay: 60ms; }
+  .shopify-art--theme-editor.ikas-visible .sv-row-3 { animation-delay: 120ms; }
+  .shopify-art--theme-editor.ikas-visible .sv-row-4 { animation-delay: 180ms; }
+  .shopify-art--theme-editor.ikas-visible .sv-row-5 { animation-delay: 240ms; }
+  .shopify-art--theme-editor.ikas-visible :is(.sv-block-1, .sv-block-2) { animation: iv-slide-in 420ms ease-out 380ms both; }
+  .shopify-art--theme-editor.ikas-visible .sv-link-select { --sv-d: 700ms; }
+  .shopify-art--theme-editor.ikas-visible .sv-preview-split { animation: iv-pop 420ms ease-out 1400ms both; }
+  .shopify-art--theme-editor.ikas-visible .sv-selection-tag { animation: iv-pop 380ms ease-out 1650ms both; }
+  .shopify-art--theme-editor .ikas-in-view:not(.ikas-tab-hidden) .sv-row-4 { animation: sv-nudge 4s ease-in-out 2.4s infinite; }
+  .shopify-art--theme-editor .ikas-in-view:not(.ikas-tab-hidden) .sv-block-1 { animation: sv-glow 3s ease-in-out 2s infinite; }
+
+  /* Liquid: tags light up, matching page parts appear */
+  .shopify-art--liquid-render.ikas-visible .sv-arrow-1 { --sv-d: 300ms; }
+  .shopify-art--liquid-render.ikas-visible .sv-arrow-2 { --sv-d: 900ms; }
+  .shopify-art--liquid-render.ikas-visible :is(.sv-field-1, .sv-field-2, .sv-field-3) { animation: iv-slide-in 420ms ease-out both; }
+  .shopify-art--liquid-render.ikas-visible .sv-field-1 { animation-delay: 600ms; }
+  .shopify-art--liquid-render.ikas-visible .sv-field-2 { animation-delay: 700ms; }
+  .shopify-art--liquid-render.ikas-visible .sv-field-3 { animation-delay: 800ms; }
+  .shopify-art--liquid-render.ikas-visible :is(.sv-page-image, .sv-page-title, .sv-page-price, .sv-page-variants, .sv-page-cta) { animation: iv-rise 420ms ease-out both; }
+  .shopify-art--liquid-render.ikas-visible .sv-page-image { animation-delay: 1200ms; }
+  .shopify-art--liquid-render.ikas-visible .sv-page-title { animation-delay: 1350ms; }
+  .shopify-art--liquid-render.ikas-visible .sv-page-price { animation-delay: 1500ms; }
+  .shopify-art--liquid-render.ikas-visible .sv-page-variants { animation-delay: 1650ms; }
+  .shopify-art--liquid-render.ikas-visible .sv-page-cta { animation: iv-pop 420ms ease-out 1800ms both; }
+  .shopify-art--liquid-render .ikas-in-view:not(.ikas-tab-hidden) :is(.sv-tag-1, .sv-tag-2, .sv-tag-3) { animation: sv-glow 3.6s ease-in-out infinite; }
+  .shopify-art--liquid-render .ikas-in-view:not(.ikas-tab-hidden) .sv-tag-2 { animation-delay: 1.2s; }
+  .shopify-art--liquid-render .ikas-in-view:not(.ikas-tab-hidden) .sv-tag-3 { animation-delay: 2.4s; }
+
+  /* WooCommerce → Shopify bridge */
+  .shopify-art--woo-shopify-bridge.ikas-visible .sv-bridge-rail-top { --sv-d: 150ms; }
+  .shopify-art--woo-shopify-bridge.ikas-visible .sv-bridge-rail-bottom { --sv-d: 250ms; }
+  .shopify-art--woo-shopify-bridge.ikas-visible :is(.sv-chip-1, .sv-chip-2, .sv-chip-3, .sv-chip-4) { animation: iv-pop 380ms ease-out both; }
+  .shopify-art--woo-shopify-bridge.ikas-visible .sv-chip-1 { animation-delay: 800ms; }
+  .shopify-art--woo-shopify-bridge.ikas-visible .sv-chip-2 { animation-delay: 950ms; }
+  .shopify-art--woo-shopify-bridge.ikas-visible .sv-chip-3 { animation-delay: 1100ms; }
+  .shopify-art--woo-shopify-bridge.ikas-visible .sv-chip-4 { animation-delay: 1250ms; }
+  .shopify-art--woo-shopify-bridge.ikas-visible :is(.sv-check-1, .sv-check-2, .sv-check-3, .sv-check-4, .sv-acct-reactivate) { animation: iv-pop 380ms ease-out both; }
+  .shopify-art--woo-shopify-bridge.ikas-visible .sv-check-1 { animation-delay: 1450ms; }
+  .shopify-art--woo-shopify-bridge.ikas-visible .sv-check-2 { animation-delay: 1550ms; }
+  .shopify-art--woo-shopify-bridge.ikas-visible .sv-check-3 { animation-delay: 1650ms; }
+  .shopify-art--woo-shopify-bridge.ikas-visible .sv-check-4 { animation-delay: 1750ms; }
+  .shopify-art--woo-shopify-bridge.ikas-visible .sv-acct-reactivate { animation-delay: 1950ms; }
+  .shopify-art--woo-shopify-bridge.ikas-visible .sv-stub-passwords { --sv-d: 1200ms; animation-duration: 400ms; }
+  .shopify-art--woo-shopify-bridge.ikas-visible .sv-stop-passwords { animation: iv-pop 380ms ease-out 1500ms both; }
+  .shopify-art--woo-shopify-bridge.ikas-visible .sv-plugin-path { --sv-d: 2000ms; animation-duration: 1200ms; }
+  .shopify-art--woo-shopify-bridge.ikas-visible .sv-app { animation: iv-pop 420ms ease-out 3100ms both; }
+  .shopify-art--woo-shopify-bridge .ikas-in-view:not(.ikas-tab-hidden) :is(.sv-chip-1, .sv-chip-2, .sv-chip-3, .sv-chip-4) { animation: iv-float 3s ease-in-out infinite; }
+  .shopify-art--woo-shopify-bridge .ikas-in-view:not(.ikas-tab-hidden) .sv-chip-2 { animation-delay: .4s; }
+  .shopify-art--woo-shopify-bridge .ikas-in-view:not(.ikas-tab-hidden) .sv-chip-3 { animation-delay: .8s; }
+  .shopify-art--woo-shopify-bridge .ikas-in-view:not(.ikas-tab-hidden) .sv-chip-4 { animation-delay: 1.2s; }
+
+  /* theme vs checkout boundary */
+  .shopify-art--checkout-boundary.ikas-visible :is(.sv-editable-1, .sv-editable-2, .sv-editable-3) { animation: iv-fade 360ms ease-out both; }
+  .shopify-art--checkout-boundary.ikas-visible .sv-editable-1 { animation-delay: 200ms; }
+  .shopify-art--checkout-boundary.ikas-visible .sv-editable-2 { animation-delay: 380ms; }
+  .shopify-art--checkout-boundary.ikas-visible .sv-editable-3 { animation-delay: 560ms; }
+  .shopify-art--checkout-boundary.ikas-visible .sv-edit-badge { animation: iv-pop 380ms ease-out 750ms both; }
+  .shopify-art--checkout-boundary.ikas-visible .sv-boundary { --sv-d: 900ms; }
+  .shopify-art--checkout-boundary.ikas-visible .sv-boundary-lock { animation: sv-nod 600ms ease-in-out 1600ms both; transform-origin: center top; }
+  .shopify-art--checkout-boundary.ikas-visible :is(.sv-ext-point-1, .sv-ext-point-2) { animation: iv-pop 380ms ease-out 2000ms both; }
+  .shopify-art--checkout-boundary .ikas-in-view:not(.ikas-tab-hidden) :is(.sv-ext-point-1, .sv-ext-point-2) { animation: sv-glow 2.8s ease-in-out 2.6s infinite; }
+
+  /* metafields → product page */
+  .shopify-art--metafields.ikas-visible :is(.sv-mf-1, .sv-mf-2, .sv-mf-3) { animation: iv-rise 360ms ease-out both; }
+  .shopify-art--metafields.ikas-visible .sv-mf-2 { animation-delay: 100ms; }
+  .shopify-art--metafields.ikas-visible .sv-mf-3 { animation-delay: 200ms; }
+  .shopify-art--metafields.ikas-visible .sv-link-1 { --sv-d: 500ms; }
+  .shopify-art--metafields.ikas-visible .sv-link-2 { --sv-d: 800ms; }
+  .shopify-art--metafields.ikas-visible .sv-link-3 { --sv-d: 1100ms; }
+  .shopify-art--metafields.ikas-visible :is(.sv-info-1, .sv-info-2, .sv-info-3) { animation: iv-fade 360ms ease-out both; }
+  .shopify-art--metafields.ikas-visible .sv-info-1 { animation-delay: 1100ms; }
+  .shopify-art--metafields.ikas-visible .sv-info-2 { animation-delay: 1400ms; }
+  .shopify-art--metafields.ikas-visible .sv-info-3 { animation-delay: 1700ms; }
+  .shopify-art--metafields.ikas-visible .sv-reuse-stack { animation: sv-fan 600ms cubic-bezier(.2,.7,.25,1) 2000ms both; }
+
+  /* redirect map: deliberate one-to-one matches; the homepage dump comes last, struck out */
+  .shopify-art--redirect-map.ikas-visible .sv-redirect-2 { --sv-d: 450ms; }
+  .shopify-art--redirect-map.ikas-visible .sv-redirect-3 { --sv-d: 650ms; }
+  .shopify-art--redirect-map.ikas-visible .sv-redirect-4 { --sv-d: 850ms; }
+  .shopify-art--redirect-map.ikas-visible .sv-redirect-5 { --sv-d: 1050ms; }
+  .shopify-art--redirect-map.ikas-visible :is(.sv-new-1, .sv-new-2, .sv-new-3, .sv-new-4, .sv-new-5) { animation: iv-pop 360ms ease-out both; }
+  .shopify-art--redirect-map.ikas-visible .sv-new-1 { animation-delay: 1050ms; }
+  .shopify-art--redirect-map.ikas-visible .sv-new-2 { animation-delay: 1250ms; }
+  .shopify-art--redirect-map.ikas-visible .sv-new-3 { animation-delay: 1450ms; }
+  .shopify-art--redirect-map.ikas-visible .sv-new-4 { animation-delay: 1650ms; }
+  .shopify-art--redirect-map.ikas-visible .sv-new-5 { animation-delay: 1850ms; }
+  .shopify-art--redirect-map.ikas-visible :is(.sv-home-tile, .sv-bad-funnel) { animation: iv-fade 400ms ease-out 2200ms both; }
+  .shopify-art--redirect-map.ikas-visible .sv-bad-strike { animation: iv-pop 300ms ease-out 2600ms both; }
+
+  /* markets */
+  .shopify-art--markets.ikas-visible .sv-branch-1 { --sv-d: 300ms; }
+  .shopify-art--markets.ikas-visible .sv-branch-2 { --sv-d: 400ms; }
+  .shopify-art--markets.ikas-visible .sv-branch-3 { --sv-d: 500ms; }
+  .shopify-art--markets.ikas-visible :is(.sv-market-1, .sv-market-2, .sv-market-3) { animation: iv-rise 420ms ease-out both; }
+  .shopify-art--markets.ikas-visible .sv-market-1 { animation-delay: 1000ms; }
+  .shopify-art--markets.ikas-visible .sv-market-2 { animation-delay: 1150ms; }
+  .shopify-art--markets.ikas-visible .sv-market-3 { animation-delay: 1300ms; }
+  .shopify-art--markets.ikas-visible .sv-check-pending { animation: iv-pop 380ms ease-out 1700ms both; }
+  .shopify-art--markets .ikas-in-view:not(.ikas-tab-hidden) .sv-check-pending { animation: sv-glow 2.6s ease-in-out 2.2s infinite; }
+
+  /* webhook: event → receive (envelope travels) → verify → process, retry loop */
+  .shopify-art--webhook-flow.ikas-visible .sv-flow-1 { --sv-d: 200ms; }
+  .shopify-art--webhook-flow.ikas-visible .sv-envelope { animation: sv-travel 800ms cubic-bezier(.2,.7,.25,1) 300ms both; }
+  .shopify-art--webhook-flow.ikas-visible :is(.sv-duplicate, .sv-dedupe-tick) { animation: iv-pop 380ms ease-out 1200ms both; }
+  .shopify-art--webhook-flow.ikas-visible .sv-flow-2 { --sv-d: 1300ms; }
+  .shopify-art--webhook-flow.ikas-visible .sv-verify { animation: iv-pop 420ms ease-out 1900ms both; }
+  .shopify-art--webhook-flow.ikas-visible .sv-flow-3 { --sv-d: 2100ms; }
+  .shopify-art--webhook-flow.ikas-visible :is(.sv-process, .sv-target) { animation: iv-pop 420ms ease-out 2700ms both; }
+  .shopify-art--webhook-flow.ikas-visible .sv-retry-loop { --sv-d: 3000ms; animation-duration: 1400ms; }
+
+  /* hero storefront */
+  .shopify-art--hero-storefront.ikas-visible .sv-banner { animation: iv-fade 500ms ease-out 150ms both; }
+  .shopify-art--hero-storefront.ikas-visible :is(.sv-grid-1, .sv-grid-2, .sv-grid-3, .sv-grid-4) { animation: iv-rise 420ms ease-out both; }
+  .shopify-art--hero-storefront.ikas-visible .sv-grid-1 { animation-delay: 350ms; }
+  .shopify-art--hero-storefront.ikas-visible .sv-grid-2 { animation-delay: 450ms; }
+  .shopify-art--hero-storefront.ikas-visible .sv-grid-3 { animation-delay: 550ms; }
+  .shopify-art--hero-storefront.ikas-visible .sv-grid-4 { animation-delay: 650ms; }
+  .shopify-art--hero-storefront.ikas-visible .sv-cart-drawer { animation: sv-slide-right 600ms cubic-bezier(.2,.7,.25,1) 900ms both; }
+  /* chips float together with their HTML labels (same timing) */
+  .shopify-art--hero-storefront:has(.ikas-in-view:not(.ikas-tab-hidden)) :is(.sv-chip-theme, .sv-slot-chip-theme) { animation: iv-float 5s ease-in-out infinite; }
+  .shopify-art--hero-storefront:has(.ikas-in-view:not(.ikas-tab-hidden)) :is(.sv-chip-catalog, .sv-slot-chip-catalog) { animation: iv-float 5s ease-in-out 1.2s infinite; }
+  .shopify-art--hero-storefront:has(.ikas-in-view:not(.ikas-tab-hidden)) :is(.sv-chip-migrate, .sv-slot-chip-migrate) { animation: iv-float 5s ease-in-out .6s infinite; }
+  .shopify-art--hero-storefront:has(.ikas-in-view:not(.ikas-tab-hidden)) :is(.sv-chip-apps, .sv-slot-chip-apps) { animation: iv-float 5s ease-in-out 1.8s infinite; }
+}
+
+/* Shopify service pages: one-time, observer-triggered motion. Elements remain
+   fully visible by default, so content works without JavaScript or observers. */
+[data-shopify-reveal].shopify-motion-visible,
+[data-shopify-reveal-group] > .shopify-motion-visible {
+  animation: shopify-motion-enter 380ms cubic-bezier(.2,.7,.25,1) var(--shopify-motion-delay, 0ms) both;
+}
+@keyframes shopify-motion-enter {
+  from { opacity: .88; translate: 0 12px; }
+  to { opacity: 1; translate: 0 0; }
+}
+.shopify-motion-card { transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease; }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .shopify-motion-card:hover,
+  .shopify-motion-card:focus-within { transform: translateY(-2px); border-color: #0E7C7B; box-shadow: 0 10px 24px rgb(9 93 92 / 8%); }
+}
+.shopify-theme-demo.shopify-motion-visible .shopify-theme-banner { animation: shopify-theme-settle 480ms ease-out 80ms both; }
+.shopify-theme-demo.shopify-motion-visible .shopify-theme-product:nth-child(2) { animation: shopify-theme-settle 420ms ease-out 130ms both; }
+.shopify-theme-demo.shopify-motion-visible .shopify-theme-product:nth-child(3) { animation: shopify-theme-settle 420ms ease-out 180ms both; }
+.shopify-theme-demo.shopify-motion-visible .shopify-theme-content { animation: shopify-theme-highlight 620ms ease-out 200ms both; }
+.shopify-integration-demo.shopify-motion-visible .shopify-integration-line { animation: shopify-line-emphasis 600ms ease-out 140ms both; }
+.shopify-data-flow.shopify-motion-visible .shopify-data-line { animation: shopify-data-transfer 620ms ease-out 120ms both; }
+@keyframes shopify-theme-settle { from { transform: translateY(4px); } to { transform: translateY(0); } }
+@keyframes shopify-theme-highlight { 0%,100% { box-shadow: inset 0 0 0 1px transparent; } 45% { box-shadow: inset 0 0 0 1px rgb(14 124 123 / 35%); } }
+@keyframes shopify-line-emphasis { 0%,100% { opacity: .5; } 45% { opacity: 1; } }
+@keyframes shopify-data-transfer { from { opacity: .35; translate: -3px 0; } to { opacity: 1; translate: 0 0; } }
+/* Ambient loops (floating Shopify mark, integration pulses): only while on
+   screen and the tab is visible (ShopifyMotionScope toggles the classes). */
+@media (prefers-reduced-motion: no-preference) {
+  .shopify-badge-float.shopify-in-view:not(.shopify-tab-hidden) { animation: shopify-float 4.5s ease-in-out infinite; }
+  .shopify-flow-pulse.shopify-in-view:not(.shopify-tab-hidden) { animation: shopify-flow-pulse 2.8s ease-in-out infinite; }
+  .shopify-step-rail.shopify-motion-visible .shopify-step-fill { animation: shopify-rail-fill 900ms cubic-bezier(.2,.7,.25,1) 120ms both; }
+}
+@keyframes shopify-float { 0%,100% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-8px) rotate(2deg); } }
+@keyframes shopify-flow-pulse { 0%,100% { opacity: .55; transform: translateX(0); } 50% { opacity: 1; transform: translateX(3px); } }
+@keyframes shopify-rail-fill { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.shopify-step-fill { transform-origin: left center; }
+@media (max-width: 639px) {
+  [data-shopify-reveal-group] > .shopify-motion-visible { --shopify-motion-delay: 0ms !important; }
+  .shopify-motion-card:hover,
+  .shopify-motion-card:focus-within { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-shopify-reveal].shopify-motion-visible,
+  [data-shopify-reveal-group] > .shopify-motion-visible,
+  .shopify-theme-demo.shopify-motion-visible .shopify-theme-banner,
+  .shopify-theme-demo.shopify-motion-visible .shopify-theme-product,
+  .shopify-theme-demo.shopify-motion-visible .shopify-theme-content,
+  .shopify-integration-demo.shopify-motion-visible .shopify-integration-line,
+  .shopify-data-flow.shopify-motion-visible .shopify-data-line { animation: none !important; }
+  .shopify-motion-card { transition: none !important; }
+  .shopify-motion-card:hover,
+  .shopify-motion-card:focus-within { transform: none; box-shadow: none; }
+}
+
 /* Swiss Layout Utilities */
 .section {
   padding: var(--space-3xl) 0;

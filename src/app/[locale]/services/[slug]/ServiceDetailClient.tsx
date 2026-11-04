@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, type ReactNode } from 'react';
 import LocalizedLink from '@/components/LocalizedLink';
 import { trackServiceView } from '@/lib/analytics';
 import SocialProofBanner from '@/components/SocialProofBanner';
@@ -33,6 +33,7 @@ import EcommerceHeroPlatforms from '@/components/e-commerce/EcommerceHeroPlatfor
 import { IKAS_TR_HERO } from '@/components/ikas/ikasTurkishCopy';
 import RotatingHeading from '@/components/services/RotatingHeading';
 import IkasHeroVisual from '@/components/ikas/IkasHeroVisual';
+import { ShopifyIcon, ShopifyPlatformNote } from '@/components/e-commerce/ShopifyMark';
 import { IkasPlatformNote } from '@/components/ikas/IkasMark';
 
 // ── Types ────────────────────────────────────────────────────────────
@@ -195,10 +196,13 @@ export default function ServiceDetailClient({
   service,
   hideHero = false,
   showSections,
+  heroArt,
 }: {
   service: ServiceDetailData;
   hideHero?: boolean;
   showSections?: SectionKey[];
+  /** Server-rendered hero illustration (keeps large SVG markup out of the client bundle). */
+  heroArt?: ReactNode;
 }) {
   const { t, locale } = useTranslations();
   const accent: AccentColor = colorMap[service.color || ''] || 'emerald';
@@ -248,6 +252,13 @@ export default function ServiceDetailClient({
   if (service.slug === 'ikas-development' && locale === 'tr') {
     const heroService = { ...service, name: IKAS_TR_HERO.title, description: IKAS_TR_HERO.text, fullDescription: IKAS_TR_HERO.text, shortDescription: IKAS_TR_HERO.text };
     return <div id="overview"><HeroSection service={heroService} colors={colors} accent={accent} process={process} animation={animation} /></div>;
+  }
+
+  // The Turkish Shopify overview has its own server-rendered section body.
+  // Keep only the shared animated hero here to avoid generic sections and
+  // the generic statistics strip appearing ahead of that curated content.
+  if (service.slug === 'shopify-development' && locale === 'tr') {
+    return <div id="overview"><HeroSection service={service} colors={colors} accent={accent} process={process} animation={animation} heroArt={heroArt} /></div>;
   }
 
   if (service.slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) {
@@ -635,12 +646,14 @@ function HeroSection({
   accent,
   process,
   animation,
+  heroArt,
 }: {
   service: ServiceDetailData;
   colors: typeof accentColors[AccentColor];
   accent: AccentColor;
   process: ProcessStep[];
   animation?: ServiceAnimation;
+  heroArt?: ReactNode;
 }) {
   const { t, locale } = useTranslations();
   const HeroIcon: HeroIconComponent = heroIconMap[service.icon || ''] || WrenchScrewdriverIcon;
@@ -648,6 +661,7 @@ function HeroSection({
   const parentService = service.parentService;
   const responseMicrocopy = RESPONSE_MICROCOPY[locale] || RESPONSE_MICROCOPY.en;
   const isIkasTr = service.slug === 'ikas-development' && locale === 'tr';
+  const isShopifyTr = service.slug === 'shopify-development' && locale === 'tr';
 
   return (
     <section className="relative overflow-hidden bg-white pt-[var(--navbar-h,64px)] pb-16 lg:pt-[var(--navbar-h,64px)] lg:pb-24">
@@ -712,9 +726,10 @@ function HeroSection({
                 // eslint-disable-next-line @next/next/no-img-element -- small platform mark, already used site-wide
                 <img src="/images/Tech/brand/ikas-icon.png" alt="" width={28} height={28} className="h-7 w-7 rounded-md shadow-sm" />
               )}
+              {isShopifyTr && <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-black/5"><ShopifyIcon size={22} /></span>}
               {/* ikas writes its name in lowercase; CSS uppercase would render "İKAS". */}
               <span className={`text-xs font-medium ${colors.eyebrow} ${isIkasTr ? '' : 'uppercase'} tracking-wide`}>
-                {isIkasTr ? IKAS_TR_HERO.eyebrow : t('services.detail.hero.eyebrow')}
+                {isIkasTr ? IKAS_TR_HERO.eyebrow : isShopifyTr ? 'Shopify Kurulum ve Geliştirme Hizmetleri' : t('services.detail.hero.eyebrow')}
               </span>
             </div>
 
@@ -726,6 +741,8 @@ function HeroSection({
                 <RotatingHeading full={service.name} lead="Kurumsal" words={['Web Tasarım', 'Web Geliştirme', 'Web Sitesi']} />
               ) : isIkasTr ? (
                 <RotatingHeading full={IKAS_TR_HERO.title} lead="ikas Mağaza" words={['Kurulumu', 'Tema Tasarımı', 'Uygulamaları']} />
+              ) : isShopifyTr ? (
+                <RotatingHeading full={service.name} lead="Shopify" words={['Site Kurulumu', 'Tema Tasarımı', 'Mağaza Taşıma']} />
               ) : (
               <h1 className={`text-display font-light text-gray-900 leading-none ${isIkasTr ? 'ikas-hero-title' : ''}`}>
                 <>{service.name.split(' ').slice(0, -1).join(' ')}{service.name.split(' ').length > 1 && <br />}<span className={`font-semibold ${colors.titleAccent}`}>{service.name.split(' ').length > 1 ? service.name.split(' ').slice(-1)[0] : service.name}</span></>
@@ -743,7 +760,7 @@ function HeroSection({
               Previous (full-description) version kept here on purpose:
                 {service.fullDescription || service.description}
             */}
-            <p className={`text-base sm:text-lg text-gray-600 max-w-lg leading-relaxed line-clamp-5 ${isIkasTr ? 'ikas-hero-copy' : ''}`}>
+            <p className={`text-base sm:text-lg text-gray-600 max-w-lg leading-relaxed ${isShopifyTr ? '' : 'line-clamp-5'} ${isIkasTr ? 'ikas-hero-copy' : ''}`}>
               {service.shortDescription || service.fullDescription || service.description}
             </p>
 
@@ -751,7 +768,7 @@ function HeroSection({
             <div className={`space-y-3 pt-1 ${isIkasTr ? 'ikas-hero-actions' : ''}`}>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button
-                  href={service.slug === 'corporate-website-design' ? '/start-project?service=corporate-website-design' : service.slug === 'e-commerce' && locale === 'tr' ? '/start-project?service=e-commerce' : isIkasTr ? '/start-project?service=ikas-development' : '/contact'}
+                  href={service.slug === 'corporate-website-design' ? '/start-project?service=corporate-website-design' : service.slug === 'e-commerce' && locale === 'tr' ? '/start-project?service=e-commerce' : isIkasTr ? '/start-project?service=ikas-development' : isShopifyTr ? '/start-project?service=shopify-development' : '/contact'}
                   variant="primary"
                   size="lg"
                   rightIcon={
@@ -760,11 +777,13 @@ function HeroSection({
                     </svg>
                   }
                 >
-                  {service.slug === 'e-commerce' && locale === 'tr' ? 'Projenizi Anlatın' : isIkasTr ? IKAS_TR_HERO.primary : service.slug === 'corporate-website-design'
+                  {service.slug === 'e-commerce' && locale === 'tr' ? 'Projenizi Anlatın' : isIkasTr ? IKAS_TR_HERO.primary : isShopifyTr ? 'Shopify Projem İçin Teklif Al' : service.slug === 'corporate-website-design'
                     ? (locale === 'tr' ? 'Projenizi Konuşalım' : 'Discuss Your Project')
                     : t('services.detail.hero.startProject')}
                 </Button>
-                {isIkasTr ? (
+                {isShopifyTr ? (
+                  <a href="#shopify-hizmetleri" className="inline-flex items-center justify-center gap-2 rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 transition-colors motion-reduce:transition-none hover:border-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2">Hizmet Kapsamını İncele</a>
+                ) : isIkasTr ? (
                   <a href="#ikas-hizmetleri" className="inline-flex items-center justify-center gap-2 rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 transition-colors motion-reduce:transition-none hover:border-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2">{IKAS_TR_HERO.secondary}</a>
                 ) : service.slug === 'e-commerce' && locale === 'tr' ? (
                   <a href="#e-ticaret-hizmetleri" className="inline-flex items-center justify-center gap-2 rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 transition-colors motion-reduce:transition-none hover:border-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2">E-Ticaret Hizmetlerini İnceleyin</a>
@@ -778,7 +797,7 @@ function HeroSection({
                 ) : <WhatsAppButton source="service_hero" variant="outline" size="lg" />}
               </div>
               {/* Response-time microcopy */}
-              {service.slug !== 'ikas-development' && service.slug !== 'corporate-website-design' && !(service.slug === 'e-commerce' && locale === 'tr') && (
+              {service.slug !== 'ikas-development' && service.slug !== 'corporate-website-design' && !(service.slug === 'e-commerce' && locale === 'tr') && !isShopifyTr && (
                 <p className="flex items-center gap-1.5 text-sm text-gray-400">
                   <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -788,6 +807,8 @@ function HeroSection({
               )}
               {service.slug === 'e-commerce' && locale === 'tr' && <EcommercePlatformStrip />}
               {isIkasTr && <p className="text-sm font-medium text-gray-600">{IKAS_TR_HERO.scope}</p>}
+              {isShopifyTr && <p className="text-sm font-medium text-gray-600">Yeni mağaza · Tema özelleştirme · Shopify’a geçiş</p>}
+              {isShopifyTr && <ShopifyPlatformNote />}
               {isIkasTr && <IkasPlatformNote />}
             </div>
           </motion.div>
@@ -828,6 +849,14 @@ function HeroSection({
                       <div aria-hidden="true" className="absolute bottom-[20%] right-[3%] z-20 flex items-center gap-2 rounded-full border border-heritage-sand bg-white/95 px-3 py-1.5 shadow-sm">
                         <img src="/images/Tech/brand/ikas-icon.png" alt="" width={18} height={18} className="h-[18px] w-[18px] rounded" />
                         <span className="text-[12px] font-semibold text-gray-800">ikas mağazası</span>
+                      </div>
+                    </>
+                  ) : isShopifyTr ? (
+                    <>
+                      {heroArt ?? <HeroVisual type={animation.heroVisual} motionType={animation.motion} accentClass={colors.dot} hideRatings />}
+                      {/* Shopify's own green bag mark on the storefront scene (decorative; the H1 names Shopify). */}
+                      <div aria-hidden="true" data-shopify-loop className="shopify-badge-float absolute left-[1%] top-[2%] z-20 rounded-[22px] bg-white p-3 shadow-[0_12px_30px_rgba(18,25,38,0.18)] ring-1 ring-black/5 sm:left-[4%]">
+                        <ShopifyIcon size={52} />
                       </div>
                     </>
                   ) : (
@@ -894,7 +923,7 @@ function HeroSection({
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.8, duration: 0.6 }}
-        className={`absolute bottom-8 left-1/2 -translate-x-1/2 ${isIkasTr ? "hidden" : "flex"} flex-col items-center gap-2 cursor-pointer group`}
+        className={`absolute bottom-8 left-1/2 -translate-x-1/2 ${isIkasTr || isShopifyTr ? "hidden" : "flex"} flex-col items-center gap-2 cursor-pointer group`}
         onClick={() => window.scrollBy({ top: window.innerHeight * 0.8, behavior: 'smooth' })}
       >
         {/* Mouse body */}

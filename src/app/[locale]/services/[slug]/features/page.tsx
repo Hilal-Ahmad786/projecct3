@@ -8,6 +8,7 @@ import FeaturesPageClient from './FeaturesPageClient';
 import CorporateWebsiteSubpage, { getCorporateWebsiteSubpageMeta } from '@/components/services/CorporateWebsiteSubpage';
 import EcommerceTurkishPage, { getEcommerceTurkishMeta, getEcommerceTurkishSocialMeta } from '@/components/e-commerce/EcommerceTurkishPage';
 import IkasTurkishSubpage, { getIkasTurkishSubpageMeta } from '@/components/ikas/IkasTurkishSubpage';
+import ShopifyTurkishFeatures from '@/components/e-commerce/ShopifyTurkishFeatures';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -32,17 +33,33 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const path = `/services/${slug}/features`;
   const localizedPath = localizeFullPath(path, validLocale);
 
+  const shopifyTurkishMeta = slug === 'shopify-development' && validLocale === 'tr' ? {
+    title: 'Shopify Tema Tasarımı ve Mağaza Özellikleri | PakSoft',
+    description: 'Shopify mağazanız için tema, ürün sayfası, mobil deneyim ve entegrasyon kapsamını inceleyin. Projenize uygun özellikleri ve teslimatları PakSoft ile belirleyin.',
+  } : undefined;
   const customMeta = slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('features', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('features')
     : slug === 'ikas-development' && validLocale === 'tr' ? getIkasTurkishSubpageMeta('features') : null;
-  const { title, description } = customMeta || getServiceSubPageMeta('features', validLocale, service.name);
+  const { title, description } = shopifyTurkishMeta || customMeta || getServiceSubPageMeta('features', validLocale, service.name);
   const canonicalUrl = `${baseUrl}/${validLocale}${localizedPath}`;
 
   return {
     title,
     description,
     robots: serviceRobots(service),
+    ...(shopifyTurkishMeta ? {
+      openGraph: {
+        title,
+        description,
+        url: canonicalUrl,
+        siteName: 'PakSoft',
+        locale: 'tr_TR',
+        type: 'website' as const,
+        images: [{ url: service.heroImage || '/images/og-services.jpg', width: 1200, height: 630, alt: title }],
+      },
+      twitter: { card: 'summary_large_image' as const, title, description, images: [service.heroImage || '/images/og-services.jpg'] },
+    } : {}),
     ...(slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishSocialMeta('features', canonicalUrl) : {}),
     alternates: {
       canonical: canonicalUrl,
@@ -75,6 +92,7 @@ export default async function ServiceFeaturesPage({ params }: PageProps) {
   }
   if (slug === 'e-commerce' && locale === 'tr') return <EcommerceTurkishPage page="features" />;
   if (slug === 'ikas-development' && locale === 'tr') return <IkasTurkishSubpage page="features" />;
+  if (slug === 'shopify-development' && locale === 'tr') return <ShopifyTurkishFeatures />;
 
   const features = service.features || [];
   const animation = (service.content as any)?.animation;

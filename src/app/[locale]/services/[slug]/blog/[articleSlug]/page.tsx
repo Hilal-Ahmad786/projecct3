@@ -7,6 +7,7 @@ import { ServiceArticlePage, serviceBlogPath } from '@/components/services/Servi
 import { getServiceArticlePresentation, getServiceBlog } from '@/components/services/service-blogs';
 import { CorporateWebsiteGuidePage, getCorporateWebsiteGuideMeta, getCorporateWebsiteGuideSlugs } from '@/components/services/CorporateWebsiteSubpage';
 import { CorporateWebsiteArticlePage, getCorporateWebsiteArticle, getCorporateWebsiteArticleMeta, getCorporateWebsiteArticleSlugs } from '@/components/services/CorporateWebsiteArticle';
+import { getShopifyGuide, getShopifyGuides } from '@/components/services/service-blogs/shopify-content';
 
 // DB-backed service guides (see getServiceBlogArticle) pick up edits hourly;
 // admin saves also revalidate the 'blog' cache tag immediately.
@@ -15,9 +16,11 @@ export const revalidate = 3600;
 export function generateStaticParams() {
   const locales = ['en', 'tr'] as const;
   const articleSlugs = [...getCorporateWebsiteGuideSlugs(), ...getCorporateWebsiteArticleSlugs()];
-  return locales.flatMap((locale) => articleSlugs
+  const corporate = locales.flatMap((locale) => articleSlugs
     .filter((articleSlug) => locale === 'tr' || !getCorporateWebsiteArticle(articleSlug))
     .map((articleSlug) => ({ locale, slug: 'corporate-website-design', articleSlug })));
+  const shopify = getShopifyGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'shopify-development', articleSlug }));
+  return [...corporate, ...shopify];
 }
 
 interface PageProps {
@@ -33,6 +36,11 @@ function articlePath(locale: 'en' | 'tr', articleSlug: string) {
 async function getServiceBlogArticle(serviceSlug: string, locale: string, articleSlug: string) {
   const blog = getServiceBlog(serviceSlug, locale);
   if (!blog) return null;
+  if (serviceSlug === 'shopify-development' && locale === 'tr') {
+    const post = getShopifyGuide(articleSlug);
+    if (!post) return null;
+    return { blog, post, canonical: `${SITE_URL}${serviceBlogPath(blog.config)}/${articleSlug}` };
+  }
   const { getPublicServiceBlogPostBySlug } = await import('@/lib/database/public-queries');
   const post = await getPublicServiceBlogPostBySlug(articleSlug, locale, serviceSlug, serviceSlug === 'ikas-development' ? 'cover-images-2026-11' : '');
   if (!post) notFound();
@@ -121,8 +129,13 @@ export default async function CorporateWebsiteGuideRoute({ params }: PageProps) 
   if (serviceArticle) {
     const { blog, post } = serviceArticle;
     const { config, category, coverAlt } = getServiceArticlePresentation(blog, post.slug, post.title);
-    const { getPublicServiceBlogCards } = await import('@/lib/database/public-queries');
-    const relatedPosts = (await getPublicServiceBlogCards(slug, locale, 24, slug === 'ikas-development' ? 'cover-images-2026-11' : '').catch(() => []))
+    const relatedCards = slug === 'shopify-development'
+      ? getShopifyGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))
+      : await (async () => {
+        const { getPublicServiceBlogCards } = await import('@/lib/database/public-queries');
+        return getPublicServiceBlogCards(slug, locale, 24, slug === 'ikas-development' ? 'cover-images-2026-11' : '').catch(() => []);
+      })();
+    const relatedPosts = relatedCards
       .filter((card) => card.slug !== post.slug)
       .slice(0, 2)
       .map((card) => ({
@@ -144,14 +157,14 @@ export default async function CorporateWebsiteGuideRoute({ params }: PageProps) 
         metaDescription: post.metaDescription || post.excerpt || '',
         coverImage: post.featuredImage,
         coverAlt,
-        datePublished: published,
+        datePublished: published || undefined,
         // Same-day re-publishes are not shown as "updated".
-        dateModified: modified > published ? modified : published,
+        dateModified: (modified > published ? modified : published) || undefined,
         body: post.content,
         keywords: post.tags,
       }}
       relatedPosts={relatedPosts}
-      motionScope={slug === 'ikas-development' && locale === 'tr' ? 'ikas' : undefined}
+      motionScope={slug === 'ikas-development' && locale === 'tr' ? 'ikas' : slug === 'shopify-development' && locale === 'tr' ? 'shopify' : undefined}
     />;
   }
   if (slug !== 'corporate-website-design' || (locale !== 'en' && locale !== 'tr')) notFound();

@@ -12,6 +12,8 @@ import { getTranslations } from '@/lib/server-i18n';
 import { getServicePageContent, type ServicePageContent } from '@/lib/service-content';
 import { EcommerceTurkishOverviewBody, getEcommerceTurkishMeta } from '@/components/e-commerce/EcommerceTurkishPage';
 import IkasTurkishOverviewBody from '@/components/ikas/IkasTurkishOverview';
+import ShopifyArtwork from '@/components/shopify/visuals/ShopifyArtwork';
+import ShopifyTurkishOverview, { SHOPIFY_TR_FAQ } from '@/components/e-commerce/ShopifyTurkishOverview';
 import { IKAS_TR_FAQ, IKAS_TR_HERO, IKAS_TR_META } from '@/components/ikas/ikasTurkishCopy';
 
 // Enable ISR - revalidate every hour for better performance
@@ -97,10 +99,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     en: { title: 'Corporate Website Design & Development | PakSoft', description: 'Plan, design and develop a corporate website with clear content, enquiry tools and an agreed launch scope.' },
     tr: { title: 'Kurumsal Web Tasarım ve Web Sitesi Yapımı | PakSoft', description: 'İşletmenize özel kurumsal web tasarım ve geliştirme. Mobil uyumlu, yönetim panelli ve çok dilli web sitesi seçeneklerini inceleyin, projeniz için teklif alın.' },
   };
+  const shopifyMeta = slug === 'shopify-development' && validLocale === 'tr' ? {
+    title: 'Shopify E-Ticaret Sitesi Kurulumu ve Tasarımı | PakSoft',
+    description: 'Shopify e-ticaret sitesi kurulumu, tema tasarımı ve mağaza taşıma hizmeti. Shopify site kurma, ürün aktarımı ve entegrasyon kapsamınızı PakSoft ile belirleyin.',
+  } : undefined;
   const ecommerceMeta = slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('overview') : slug === 'ikas-development' && validLocale === 'tr' ? IKAS_TR_META : undefined;
   const revisedMeta = slug === 'corporate-website-design' ? corporateMeta[validLocale] : undefined;
-  const title = ecommerceMeta?.title || revisedMeta?.title || (service as { metaTitle?: string | null }).metaTitle || `${service.name} | PakSoft`;
-  const description = ecommerceMeta?.description || revisedMeta?.description ||
+  const title = shopifyMeta?.title || ecommerceMeta?.title || revisedMeta?.title || (service as { metaTitle?: string | null }).metaTitle || `${service.name} | PakSoft`;
+  const description = shopifyMeta?.description || ecommerceMeta?.description || revisedMeta?.description ||
     (service as { metaDescription?: string | null }).metaDescription ||
     truncateAtWord(service.fullDescription || service.shortDescription || service.description || '', 160);
   const path = `/services/${slug}`;
@@ -215,9 +221,14 @@ export default async function ServicePage({ params }: PageProps) {
   const ecommerceOverviewCopy = slug === 'e-commerce' && locale === 'tr'
     ? { name: 'İşletmenize Uygun E-Ticaret Sitesi Tasarımı ve Kurulumu', description: getEcommerceTurkishMeta('overview').intro }
     : isTurkishIkas ? { name: IKAS_TR_HERO.title, description: IKAS_TR_HERO.text } : undefined;
-  const serviceName = ecommerceOverviewCopy?.name || corporateOverviewCopy?.name || service.name || jsonContent?.hero?.title || slug;
-  const serviceDescription = ecommerceOverviewCopy?.description || corporateOverviewCopy?.description || service.fullDescription || service.shortDescription || service.description || jsonContent?.hero?.description || '';
-  const serviceShortDescription = ecommerceOverviewCopy?.description || service.shortDescription || jsonContent?.hero?.description || serviceDescription;
+  const isTurkishShopify = slug === 'shopify-development' && locale === 'tr';
+  const shopifyOverviewCopy = isTurkishShopify ? {
+    name: 'Shopify E-Ticaret Sitesi Kurulumu ve Tasarımı',
+    description: 'Shopify mağazanızı ürünlerinize, marka kimliğinize ve günlük iş akışınıza göre hazırlıyoruz. Shopify web sitesi kurma, mevcut tema düzenlemeleri ve WooCommerce gibi başka altyapılardan geçiş ihtiyaçlarını tasarım, veri ve bağlantı işleriyle birlikte planlıyoruz.',
+  } : undefined;
+  const serviceName = shopifyOverviewCopy?.name || ecommerceOverviewCopy?.name || corporateOverviewCopy?.name || service.name || jsonContent?.hero?.title || slug;
+  const serviceDescription = shopifyOverviewCopy?.description || ecommerceOverviewCopy?.description || corporateOverviewCopy?.description || service.fullDescription || service.shortDescription || service.description || jsonContent?.hero?.description || '';
+  const serviceShortDescription = shopifyOverviewCopy?.description || ecommerceOverviewCopy?.description || service.shortDescription || jsonContent?.hero?.description || serviceDescription;
   // Concise variant for the hero (keeps it compact). Falls back to the full
   // description for services that don't have a dedicated shortDescription yet.
 
@@ -262,9 +273,9 @@ export default async function ServicePage({ params }: PageProps) {
   const localizedServiceUrl = `${baseUrl}/${locale}${localizeFullPath(`/services/${slug}`, locale)}`;
   const breadcrumbItems = [
     { name: translations.navbar?.home || 'Home', url: `${baseUrl}/${locale}` },
-    { name: translations.services?.detail?.breadcrumb?.services || 'Services', url: isTurkishEcommerce || isTurkishIkas ? `${baseUrl}/tr/hizmetler` : `${baseUrl}/${locale}/services` },
-    ...(parentService ? [{ name: parentService.name, url: isTurkishIkas ? `${baseUrl}/tr${localizeFullPath(`/services/${parentService.slug}`, 'tr')}` : `${baseUrl}/${locale}/services/${parentService.slug}` }] : []),
-    { name: isTurkishEcommerce ? 'E-Ticaret' : serviceName, url: isTurkishEcommerce || isTurkishIkas ? localizedServiceUrl : `${baseUrl}/${locale}/services/${slug}` },
+    { name: translations.services?.detail?.breadcrumb?.services || 'Services', url: isTurkishEcommerce || isTurkishIkas || isTurkishShopify ? `${baseUrl}/tr/hizmetler` : `${baseUrl}/${locale}/services` },
+    ...(parentService ? [{ name: parentService.name, url: isTurkishIkas || isTurkishShopify ? `${baseUrl}/tr${localizeFullPath(`/services/${parentService.slug}`, 'tr')}` : `${baseUrl}/${locale}/services/${parentService.slug}` }] : []),
+    { name: isTurkishEcommerce ? 'E-Ticaret' : serviceName, url: isTurkishEcommerce || isTurkishIkas || isTurkishShopify ? localizedServiceUrl : `${baseUrl}/${locale}/services/${slug}` },
   ];
 
   // Build serializable data for the client component
@@ -295,7 +306,7 @@ export default async function ServicePage({ params }: PageProps) {
     _jsonContent: jsonContent as any,
   };
 
-  const relatedServices = await getRelatedServices((service as { category?: string }).category, slug, locale);
+  const relatedServices = isTurkishShopify ? [] : await getRelatedServices((service as { category?: string }).category, slug, locale);
 
   return (
     <main className="min-h-screen bg-white">
@@ -303,18 +314,19 @@ export default async function ServicePage({ params }: PageProps) {
       <ServiceJsonLd
         name={serviceName}
         description={serviceDescription}
-        url={isTurkishEcommerce || isTurkishIkas ? localizedServiceUrl : `${baseUrl}/${locale}/services/${slug}`}
+        url={isTurkishEcommerce || isTurkishIkas || isTurkishShopify ? localizedServiceUrl : `${baseUrl}/${locale}/services/${slug}`}
       />
       <BreadcrumbJsonLd items={breadcrumbItems} />
-      {isTurkishIkas ? <FAQJsonLd faqs={IKAS_TR_FAQ} /> : faq.length > 0 && <FAQJsonLd faqs={faq} />}
+      {isTurkishIkas ? <FAQJsonLd faqs={IKAS_TR_FAQ} /> : isTurkishShopify ? <FAQJsonLd faqs={SHOPIFY_TR_FAQ.map(([question, answer]) => ({ question, answer }))} /> : faq.length > 0 && <FAQJsonLd faqs={faq} />}
 
       {/* Rich animated client component */}
-      <ServiceDetailClient service={serviceData} />
+      <ServiceDetailClient service={serviceData} showSections={isTurkishShopify ? ['hero'] : undefined} heroArt={isTurkishShopify ? <ShopifyArtwork name="hero-storefront" loop className="w-[20rem] max-w-full sm:w-[26rem] md:w-[32rem]" slotLabels={{ 'slot-chip-theme': 'Tema', 'slot-chip-catalog': 'Katalog', 'slot-chip-migrate': 'Taşıma', 'slot-chip-apps': 'Uygulamalar' }} /> : undefined} />
       {slug === 'e-commerce' && locale === 'tr' && <EcommerceTurkishOverviewBody />}
       {isTurkishIkas && <IkasTurkishOverviewBody />}
+      {isTurkishShopify && <ShopifyTurkishOverview />}
 
       {/* Internal linking — same-category services (server-rendered <a> links) */}
-      {!(slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) && !(slug === 'e-commerce' && locale === 'tr') && !isTurkishIkas &&
+      {!(slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) && !(slug === 'e-commerce' && locale === 'tr') && !isTurkishIkas && !isTurkishShopify &&
         <RelatedServices items={relatedServices} locale={locale} />}
     </main>
   );

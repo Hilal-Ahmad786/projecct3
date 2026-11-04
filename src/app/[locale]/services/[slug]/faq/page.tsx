@@ -8,6 +8,7 @@ import { FAQJsonLd, BreadcrumbJsonLd } from '@/components/seo/JsonLd';
 import FAQPageClient from './FAQPageClient';
 import CorporateWebsiteSubpage, { getCorporateWebsiteSubpageMeta } from '@/components/services/CorporateWebsiteSubpage';
 import EcommerceTurkishPage, { getEcommerceTurkishMeta, getEcommerceTurkishSocialMeta, getEcommerceTurkishFaqItems } from '@/components/e-commerce/EcommerceTurkishPage';
+import ShopifyTurkishFAQ, { shopifyFaqMeta } from '@/components/e-commerce/ShopifyTurkishFAQ';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     : slug === 'ikas-development' && validLocale === 'tr' ? {
       title: 'ikas Kurulum ve Tema Tasarımı SSS | PakSoft',
       description: 'ikas mağaza kurulumu, tema düzenlemesi, ürün aktarımı, entegrasyon ve hizmet bedeli hakkında sık sorulan soruların yanıtları. Kapsamı PakSoft ile netleştirin.',
-    } : null;
+    } : slug === 'shopify-development' && validLocale === 'tr' ? shopifyFaqMeta : null;
   const { title, description } = customMeta || getServiceSubPageMeta('faq', validLocale, service.name);
   const isTurkishCorporateFaq = slug === 'corporate-website-design' && validLocale === 'tr';
   const canonicalUrl = `${baseUrl}/${validLocale}${localizedPath}`;
@@ -51,7 +52,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       canonical: canonicalUrl,
       languages: generateAlternateLinks(path),
     },
-    ...(slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishSocialMeta('faq', canonicalUrl) : isTurkishCorporateFaq ? {
+    ...(slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishSocialMeta('faq', canonicalUrl) : slug === 'shopify-development' && validLocale === 'tr' ? {
+      openGraph: { title, description, url: canonicalUrl, siteName: 'PakSoft', locale: 'tr_TR', type: 'website' as const, images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: title }] },
+      twitter: { card: 'summary_large_image' as const, title, description, images: ['/images/twitter-image.jpg'] },
+    } : isTurkishCorporateFaq ? {
       openGraph: {
         title,
         description,
@@ -95,6 +99,7 @@ export default async function ServiceFAQPage({ params }: PageProps) {
     return <CorporateWebsiteSubpage page="faq" locale={locale} />;
   }
   if (slug === 'e-commerce' && locale === 'tr') return <><FAQJsonLd faqs={getEcommerceTurkishFaqItems()} /><EcommerceTurkishPage page="faq" /></>;
+  if (slug === 'shopify-development' && locale === 'tr') return <ShopifyTurkishFAQ />;
 
   const content = service.content as any || {};
   const faq = content.faq || [];

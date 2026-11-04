@@ -17,18 +17,19 @@ export type ServiceGuideCard = {
 // Listing cards for every Turkish service guide (corporate, e-commerce, …).
 // Each card is a single crawlable link; the title stays HTML text below the
 // cover (never overlaid on the image) so it remains readable on narrow screens.
-export default function ServiceGuideCards({ cards, headingLevel = 'h3', reveal = false, motionScope }: { cards: readonly ServiceGuideCard[]; headingLevel?: 'h2' | 'h3'; reveal?: boolean; motionScope?: 'ikas' }) {
+export default function ServiceGuideCards({ cards, headingLevel = 'h3', reveal = false, motionScope }: { cards: readonly ServiceGuideCard[]; headingLevel?: 'h2' | 'h3'; reveal?: boolean; motionScope?: 'ikas' | 'shopify' }) {
   const Heading = headingLevel;
   const formattedDate = (date: string) => new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(date));
   return (
-    <ul className={`grid gap-5 md:grid-cols-2 ${reveal ? 'reveal-group' : ''}`}>
+    <ul data-shopify-reveal-group={motionScope === 'shopify' ? '' : undefined} className={`grid gap-5 md:grid-cols-2 ${reveal && motionScope !== 'shopify' ? 'reveal-group' : ''}`}>
       {cards.map((article, index) => (
         <li key={article.slug}>
           <Link
             href={article.href}
-            data-ikas-reveal={motionScope ? '' : undefined}
+            data-ikas-reveal={motionScope === 'ikas' ? '' : undefined}
+            data-shopify-reveal={motionScope === 'shopify' ? '' : undefined}
             data-ikas-delay={motionScope ? index * 65 : undefined}
-            className={`corporate-info-card group flex h-full flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2 ${motionScope ? 'ikas-card-motion' : ''}`}
+            className={`corporate-info-card group flex h-full flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2 ${motionScope === 'ikas' ? 'ikas-card-motion' : ''} ${motionScope === 'shopify' ? 'shopify-motion-card' : ''}`}
           >
             {article.image ? <span className="relative block aspect-[1672/941] overflow-hidden bg-background-gray">
               <Image

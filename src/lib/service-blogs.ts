@@ -10,6 +10,7 @@ import type { Locale } from '@/lib/i18n';
 const SERVICE_BLOGS: Record<string, readonly string[]> = {
   'e-commerce': ['tr'],
   'ikas-development': ['tr'],
+  'shopify-development': ['tr'],
 };
 
 export function hasServiceBlog(category: string | null | undefined, locale: string): boolean {

@@ -8,6 +8,7 @@ import { getServiceData, baseUrl } from '../_shared';
 import CorporateWebsiteSubpage, { getCorporateWebsiteSubpageMeta } from '@/components/services/CorporateWebsiteSubpage';
 import EcommerceTurkishPage, { getEcommerceTurkishMeta, getEcommerceTurkishSocialMeta } from '@/components/e-commerce/EcommerceTurkishPage';
 import IkasTurkishBlogPage, { getIkasBlogMeta } from '@/components/ikas/IkasTurkishBlogPage';
+import ShopifyTurkishBlogPage, { getShopifyBlogMeta } from '@/components/e-commerce/ShopifyTurkishBlogPage';
 
 export const revalidate = 3600;
 
@@ -33,6 +34,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const localizedPath = localizeFullPath(path, validLocale);
   const customMeta = slug === 'ikas-development' && validLocale === 'tr'
     ? getIkasBlogMeta()
+    : slug === 'shopify-development' && validLocale === 'tr' ? getShopifyBlogMeta()
     : slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('blog', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('blog') : null;
@@ -41,6 +43,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: customMeta?.description || `Practical guides, deep-dives, and lessons learned about ${data.service.name} from the PakSoft team.`,
     ...(slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishSocialMeta('blog', `${baseUrl}/${validLocale}${localizedPath}`) : {}),
     ...(slug === 'ikas-development' && validLocale === 'tr' ? { openGraph: { type: 'website', title: customMeta?.title, description: customMeta?.description, url: `${baseUrl}/${validLocale}${localizedPath}`, siteName: 'PakSoft', locale: 'tr_TR' }, twitter: { card: 'summary', title: customMeta?.title, description: customMeta?.description } } : {}),
+    ...(slug === 'shopify-development' && validLocale === 'tr' ? { openGraph: { type: 'website' as const, title: customMeta?.title, description: customMeta?.description, url: `${baseUrl}/${validLocale}${localizedPath}`, siteName: 'PakSoft', locale: 'tr_TR', images: ['/images/blog/shopify/shopify-magaza-kurulumu-hazirlik-kapak.webp'] }, twitter: { card: 'summary_large_image' as const, title: customMeta?.title, description: customMeta?.description, images: ['/images/blog/shopify/shopify-magaza-kurulumu-hazirlik-kapak.webp'] } } : {}),
     alternates: slug === 'ikas-development' && validLocale === 'tr'
       ? { canonical: `${baseUrl}/${validLocale}${localizedPath}` }
       : { canonical: `${baseUrl}/${validLocale}${localizedPath}`, languages: generateAlternateLinks(path) },
@@ -58,6 +61,7 @@ export default async function ServiceBlogPage({ params }: PageProps) {
   }
   if (slug === 'e-commerce' && validLocale === 'tr') return <EcommerceTurkishPage page="blog" />;
   if (slug === 'ikas-development' && validLocale === 'tr') return <IkasTurkishBlogPage />;
+  if (slug === 'shopify-development' && validLocale === 'tr') return <ShopifyTurkishBlogPage />;
 
   // Posts are categorized at the parent-service level; fall back to the
   // service's own slug, then its category.

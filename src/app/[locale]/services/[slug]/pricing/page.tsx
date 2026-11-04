@@ -10,6 +10,7 @@ import { getServiceData, baseUrl } from '../_shared';
 import CorporateWebsiteSubpage, { getCorporateWebsiteSubpageMeta } from '@/components/services/CorporateWebsiteSubpage';
 import EcommerceTurkishPage, { getEcommerceTurkishMeta, getEcommerceTurkishSocialMeta } from '@/components/e-commerce/EcommerceTurkishPage';
 import IkasTurkishPricing, { getIkasTurkishPricingMeta } from '@/components/ikas/IkasTurkishPricing';
+import ShopifyTurkishPricing, { shopifyPricingMeta } from '@/components/e-commerce/ShopifyTurkishPricing';
 
 export const revalidate = 3600;
 
@@ -36,7 +37,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const customMeta = slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('pricing', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('pricing')
-    : slug === 'ikas-development' && validLocale === 'tr' ? getIkasTurkishPricingMeta() : null;
+    : slug === 'ikas-development' && validLocale === 'tr' ? getIkasTurkishPricingMeta()
+    : slug === 'shopify-development' && validLocale === 'tr' ? shopifyPricingMeta : null;
   const { title, description } = customMeta || getServiceSubPageMeta('pricing', validLocale, data.service.name);
 
   return {
@@ -77,6 +79,7 @@ export default async function ServicePricingPage({ params }: PageProps) {
   }
   if (slug === 'e-commerce' && validLocale === 'tr') return <EcommerceTurkishPage page="pricing" />;
   if (slug === 'ikas-development' && validLocale === 'tr') return <IkasTurkishPricing />;
+  if (slug === 'shopify-development' && validLocale === 'tr') return <ShopifyTurkishPricing />;
 
   const hasPackages = (data.service.pricingPackages?.length ?? 0) > 0;
 

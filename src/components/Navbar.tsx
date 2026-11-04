@@ -859,6 +859,11 @@ const serviceCategories: Record<string, { key: string; icon: React.ElementType; 
   },
 };
 
+const PLATFORM_MARKS: Record<string, { src: string; name: string; tile?: boolean }> = {
+  'ikas-development': { src: '/images/Tech/brand/ikas-icon.png', name: 'ikas' },
+  'shopify-development': { src: '/images/Tech/brand/shopify-color.svg', name: 'Shopify', tile: true },
+};
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [navVisible, setNavVisible] = useState(true);
@@ -917,6 +922,8 @@ export default function Navbar() {
     return 'web-development';
   };
   const currentServiceSlug = getServiceSlug();
+  // Platform services show the platform's own colour mark in the sub-page bar.
+  const platformMark = currentServiceSlug ? PLATFORM_MARKS[currentServiceSlug] : undefined;
 
   useEffect(() => {
     const onScroll = () => {
@@ -1334,15 +1341,15 @@ export default function Navbar() {
               style={{ scrollbarWidth: 'none' }}
             >
               <div className="flex items-center gap-0.5 min-w-max">
-              {currentServiceSlug === 'ikas-development' && (
+              {platformMark && (
                 <Link
                   href={servicePageLinks[0].href}
                   prefetch={false}
                   {...intent(servicePageLinks[0].href)}
                   className="flex items-center gap-2 h-10 pl-1 pr-3 mr-1 border-r border-gray-200/80"
-                  aria-label={`ikas · ${servicePageLinks[0].label}`}
+                  aria-label={`${platformMark.name} · ${servicePageLinks[0].label}`}
                 >
-                  <img src="/images/Tech/brand/ikas-icon.png" alt="" aria-hidden="true" width={28} height={28} className="h-7 w-7 rounded-lg shadow-sm ring-1 ring-black/5" />
+                  <img src={platformMark.src} alt="" aria-hidden="true" width={28} height={28} className={`h-7 w-7 rounded-lg ${platformMark.tile ? 'bg-white p-1 shadow-sm ring-1 ring-black/5' : 'shadow-sm ring-1 ring-black/5'}`} />
                 </Link>
               )}
               {servicePageLinks.map(({ label, href }) => {
@@ -1394,7 +1401,7 @@ export default function Navbar() {
                   {isServicePage && (
                     <li className="mb-4 pb-4 border-b border-gray-200">
                       <div className={`flex items-center gap-2 px-4 pb-2 text-[11px] font-bold uppercase tracking-widest text-heritage-turquoise`}>
-                        {currentServiceSlug === 'ikas-development' && <img src="/images/Tech/brand/ikas-icon.png" alt="ikas" width={20} height={20} className="h-5 w-5 rounded" />}
+                        {platformMark && <img src={platformMark.src} alt={platformMark.name} width={20} height={20} className="h-5 w-5 rounded" />}
                         {t('serviceNav.onThisPage') || 'On this page'}
                       </div>
                       <ul className="grid grid-cols-2 gap-x-2">

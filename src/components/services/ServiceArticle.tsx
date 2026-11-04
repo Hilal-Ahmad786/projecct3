@@ -8,6 +8,7 @@ import { SITE_URL } from '@/config/site';
 import { ArticleJsonLd, BreadcrumbJsonLd } from '@/components/seo/JsonLd';
 import { ArticleToc, ReadingProgress } from '@/components/services/ArticleReadingAids';
 import IkasMotionScope from '@/components/ikas/IkasMotionScope';
+import ShopifyMotionScope from '@/components/e-commerce/ShopifyMotionScope';
 
 // Shared long-form layout for every Turkish service guide (kurumsal web
 // tasarım, e-ticaret, and any service blog added later): cover with the title
@@ -31,9 +32,9 @@ export type ServiceArticleData = {
   coverImage?: string | null;
   coverAlt: string;
   /** YYYY-MM-DD */
-  datePublished: string;
+  datePublished?: string;
   /** YYYY-MM-DD */
-  dateModified: string;
+  dateModified?: string;
   body: string;
   keywords?: string[];
 };
@@ -92,10 +93,10 @@ export const focusRing = 'focus-visible:outline-none focus-visible:ring-2 focus-
 // Three deliberate placements per article: a compact prompt after the
 // introduction, a contextual link near the planning section it relates to,
 // and a stronger closing banner once the main content is complete.
-function ArticleCta({ stage, copy, brandLine, motionScope }: { stage: CtaStage; copy: CtaCopy; brandLine: string; motionScope?: 'ikas' }) {
+function ArticleCta({ stage, copy, brandLine, motionScope }: { stage: CtaStage; copy: CtaCopy; brandLine: string; motionScope?: 'ikas' | 'shopify' }) {
   if (stage === 'middle') {
     return (
-      <aside aria-label={copy.heading} data-ikas-reveal={motionScope ? '' : undefined} className="reveal my-10 flex flex-col gap-4 rounded-xl bg-heritage-turquoise-light sm:my-12 px-5 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+      <aside aria-label={copy.heading} data-ikas-reveal={motionScope === 'ikas' ? '' : undefined} data-shopify-reveal={motionScope === 'shopify' ? '' : undefined} className={`${motionScope === 'shopify' ? '' : 'reveal'} my-10 flex flex-col gap-4 rounded-xl bg-heritage-turquoise-light sm:my-12 px-5 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-6`}>
         <div className="max-w-lg">
           <p className="font-semibold text-gray-950">{copy.heading}</p>
           <p className="mt-1 text-sm leading-6 text-gray-700">{copy.text}</p>
@@ -109,7 +110,7 @@ function ArticleCta({ stage, copy, brandLine, motionScope }: { stage: CtaStage; 
 
   if (stage === 'early') {
     return (
-      <aside aria-label={copy.heading} data-ikas-reveal={motionScope ? '' : undefined} className="reveal my-10 rounded-xl border border-heritage-sand border-s-4 sm:my-12 border-s-heritage-turquoise bg-heritage-ivory px-5 py-5 sm:px-6">
+      <aside aria-label={copy.heading} data-ikas-reveal={motionScope === 'ikas' ? '' : undefined} data-shopify-reveal={motionScope === 'shopify' ? '' : undefined} className={`${motionScope === 'shopify' ? '' : 'reveal'} my-10 rounded-xl border border-heritage-sand border-s-4 sm:my-12 border-s-heritage-turquoise bg-heritage-ivory px-5 py-5 sm:px-6`}>
         <p className="text-lg font-semibold leading-snug text-gray-950">{copy.heading}</p>
         <p className="mt-1.5 text-sm leading-6 text-gray-700">{copy.text}</p>
         <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-3">
@@ -125,7 +126,7 @@ function ArticleCta({ stage, copy, brandLine, motionScope }: { stage: CtaStage; 
   }
 
   return (
-    <aside aria-label={copy.heading} data-ikas-reveal={motionScope ? '' : undefined} className="reveal my-12 rounded-2xl bg-gray-950 px-6 py-7 text-white sm:my-14 sm:px-8 sm:py-9">
+    <aside aria-label={copy.heading} data-ikas-reveal={motionScope === 'ikas' ? '' : undefined} data-shopify-reveal={motionScope === 'shopify' ? '' : undefined} className={`${motionScope === 'shopify' ? '' : 'reveal'} my-12 rounded-2xl bg-gray-950 px-6 py-7 text-white sm:my-14 sm:px-8 sm:py-9`}>
       <p className="text-overline text-heritage-turquoise-light">{brandLine}</p>
       <p className="mt-2 text-xl font-semibold leading-snug sm:text-2xl">{copy.heading}</p>
       <p className="mt-2 max-w-xl leading-7 text-gray-300">{copy.text}</p>
@@ -164,13 +165,14 @@ function isDownloadHref(href: unknown): href is string {
   return typeof href === 'string' && href.startsWith('/downloads/');
 }
 
-export function ServiceArticlePage({ article, config, related, relatedPosts, motionScope }: { article: ServiceArticleData; config: ServiceArticleConfig; related?: ServiceArticleRelated | null; relatedPosts?: ServiceArticleRelated[]; motionScope?: 'ikas' }) {
+export function ServiceArticlePage({ article, config, related, relatedPosts, motionScope }: { article: ServiceArticleData; config: ServiceArticleConfig; related?: ServiceArticleRelated | null; relatedPosts?: ServiceArticleRelated[]; motionScope?: 'ikas' | 'shopify' }) {
   const blogListingPath = serviceBlogPath(config);
   const articleUrl = `${SITE_URL}${blogListingPath}/${article.slug}`;
   const toc = getTableOfContents(article.body);
   // Reading time counts the visible prose only, not CTA/visual markers.
   const readingMinutes = Math.max(1, Math.ceil(article.body.replace(/\[\[[A-Z_]+(?::[a-z]+)?\]\]/g, '').split(/\s+/).length / 200));
-  const updated = article.dateModified !== article.datePublished;
+  const updated = Boolean(article.datePublished && article.dateModified && article.dateModified !== article.datePublished);
+  const visibleDate = article.dateModified || article.datePublished;
   // The title sits beside the cover on desktop; longer titles get a smaller
   // size so they stay inside the image's empty left area.
   const longTitle = article.title.length > 56;
@@ -203,7 +205,7 @@ export function ServiceArticlePage({ article, config, related, relatedPosts, mot
       return <p className="mt-5 text-base leading-7 text-gray-700 sm:text-[1.0625rem] sm:leading-8">{children}</p>;
     },
     img: ({ src, alt = '' }) => typeof src === 'string' && src ? (
-      <figure data-ikas-reveal={motionScope ? '' : undefined} className="reveal my-10 overflow-hidden rounded-2xl border border-heritage-sand bg-white sm:my-12">
+      <figure data-ikas-reveal={motionScope === 'ikas' ? '' : undefined} data-shopify-reveal={motionScope === 'shopify' ? '' : undefined} className={`${motionScope === 'shopify' ? '' : 'reveal'} my-10 overflow-hidden rounded-2xl border border-heritage-sand bg-white sm:my-12`}>
         {/* eslint-disable-next-line @next/next/no-img-element -- Markdown images have no intrinsic size; plain lazy <img> avoids layout guesses */}
         <img src={src} alt={alt} loading="lazy" decoding="async" className="block h-auto w-full" />
       </figure>
@@ -235,7 +237,7 @@ export function ServiceArticlePage({ article, config, related, relatedPosts, mot
   const crumbLink = 'underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise';
 
   return <main className="min-h-screen bg-white">
-    {motionScope === 'ikas' ? <IkasMotionScope /> : null}
+    {motionScope === 'ikas' ? <IkasMotionScope /> : motionScope === 'shopify' ? <ShopifyMotionScope /> : null}
     <ReadingProgress targetId="article-body" />
     <ArticleJsonLd
       headline={article.title}
@@ -274,7 +276,7 @@ export function ServiceArticlePage({ article, config, related, relatedPosts, mot
             <h1 className={`text-display mt-2 max-w-[30rem] font-medium leading-[1.08] text-gray-950 ${longTitle ? '!text-[clamp(1.75rem,2.6vw,2.6rem)] lg:max-w-none' : 'text-[clamp(2rem,3vw,2.9rem)]'}`}>{article.title}</h1>
             <p className="mt-4 max-w-[27rem] text-base leading-7 text-gray-700 sm:text-lg sm:leading-8">{article.standfirst}</p>
             <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-gray-600">
-              <span className="inline-flex items-center gap-2"><CalendarIcon className="h-4 w-4 text-heritage-turquoise-deep" aria-hidden="true" /><span>{updated ? 'Güncellendi: ' : ''}<time dateTime={updated ? article.dateModified : article.datePublished}>{formatTurkishDate(updated ? article.dateModified : article.datePublished)}</time></span></span>
+              {visibleDate ? <span className="inline-flex items-center gap-2"><CalendarIcon className="h-4 w-4 text-heritage-turquoise-deep" aria-hidden="true" /><span>{updated || !article.datePublished ? 'Güncellendi: ' : ''}<time dateTime={updated ? article.dateModified : visibleDate}>{formatTurkishDate(updated ? article.dateModified! : visibleDate)}</time></span></span> : null}
               <span className="inline-flex items-center gap-2"><ClockIcon className="h-4 w-4 text-heritage-turquoise-deep" aria-hidden="true" />Yaklaşık {readingMinutes} dk okuma</span>
             </div>
           </div>
@@ -299,7 +301,7 @@ export function ServiceArticlePage({ article, config, related, relatedPosts, mot
           {(relatedPosts?.length || related) ? <section aria-labelledby="related-reading" className="mt-16 border-t border-gray-200 pt-10">
             <h2 id="related-reading" className="text-xl font-semibold text-gray-950">İlgili rehberler</h2>
             <div className="mt-4 grid gap-4 md:grid-cols-2">
-              {(relatedPosts?.length ? relatedPosts : related ? [related] : []).map((item, index) => <Link key={item.slug} href={`${blogListingPath}/${item.slug}`} data-ikas-reveal={motionScope ? '' : undefined} data-ikas-delay={motionScope ? index * 60 : undefined} className={`reveal corporate-info-card group grid h-full overflow-hidden rounded-xl border border-gray-200 bg-white ${motionScope ? 'ikas-card-motion' : ''} ${item.coverImage ? 'sm:grid-cols-[10rem_1fr]' : ''} ${focusRing}`}>
+              {(relatedPosts?.length ? relatedPosts : related ? [related] : []).map((item, index) => <Link key={item.slug} href={`${blogListingPath}/${item.slug}`} data-ikas-reveal={motionScope === 'ikas' ? '' : undefined} data-shopify-reveal={motionScope === 'shopify' ? '' : undefined} data-ikas-delay={motionScope === 'ikas' ? index * 60 : undefined} className={`${motionScope === 'shopify' ? '' : 'reveal'} corporate-info-card group grid h-full overflow-hidden rounded-xl border border-gray-200 bg-white ${motionScope === 'ikas' ? 'ikas-card-motion' : ''} ${motionScope === 'shopify' ? 'shopify-motion-card' : ''} ${item.coverImage ? 'sm:grid-cols-[10rem_1fr]' : ''} ${focusRing}`}>
                 {item.coverImage ? <span className="relative block aspect-video bg-background-gray sm:aspect-auto">
                   <Image src={item.coverImage} alt="" fill loading="lazy" sizes="(max-width: 640px) 100vw, 160px" className="object-cover object-right" />
                 </span> : null}

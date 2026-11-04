@@ -8,6 +8,7 @@ import ProcessPageClient from './ProcessPageClient';
 import CorporateWebsiteSubpage, { getCorporateWebsiteSubpageMeta } from '@/components/services/CorporateWebsiteSubpage';
 import EcommerceTurkishPage, { getEcommerceTurkishMeta, getEcommerceTurkishSocialMeta } from '@/components/e-commerce/EcommerceTurkishPage';
 import IkasTurkishSubpage, { getIkasTurkishSubpageMeta } from '@/components/ikas/IkasTurkishSubpage';
+import ShopifyTurkishProcess from '@/components/e-commerce/ShopifyTurkishProcess';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -35,7 +36,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const customMeta = slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('process', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('process')
-    : slug === 'ikas-development' && validLocale === 'tr' ? getIkasTurkishSubpageMeta('process') : null;
+    : slug === 'ikas-development' && validLocale === 'tr' ? getIkasTurkishSubpageMeta('process')
+    : slug === 'shopify-development' && validLocale === 'tr' ? {
+      title: 'Shopify Kurulum ve Mağaza Taşıma Süreci | PakSoft',
+      description: 'Shopify kurulum ve mağaza taşıma sürecini inceleyin. Veri hazırlığı, WooCommerce geçişi, URL eşleştirme, test ve yayın adımlarını PakSoft ile planlayın.',
+    } : null;
   const { title, description } = customMeta || getServiceSubPageMeta('process', validLocale, service.name);
   const canonicalUrl = `${baseUrl}/${validLocale}${localizedPath}`;
 
@@ -43,7 +48,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title,
     description,
     robots: serviceRobots(service),
-    ...(slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishSocialMeta('process', canonicalUrl) : {}),
+    ...(slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishSocialMeta('process', canonicalUrl) : slug === 'shopify-development' && validLocale === 'tr' ? {
+      openGraph: { type: 'website' as const, locale: 'tr_TR', url: canonicalUrl, title, description, images: ['/images/og-image.jpg'] },
+      twitter: { card: 'summary_large_image' as const, title, description, images: ['/images/twitter-image.jpg'] },
+    } : {}),
     alternates: {
       canonical: canonicalUrl,
       languages: generateAlternateLinks(path),
@@ -75,6 +83,7 @@ export default async function ServiceProcessPage({ params }: PageProps) {
   }
   if (slug === 'e-commerce' && locale === 'tr') return <EcommerceTurkishPage page="process" />;
   if (slug === 'ikas-development' && locale === 'tr') return <IkasTurkishSubpage page="process" />;
+  if (slug === 'shopify-development' && locale === 'tr') return <ShopifyTurkishProcess />;
 
   const content = service.content as any || {};
   const process = content.process || [];

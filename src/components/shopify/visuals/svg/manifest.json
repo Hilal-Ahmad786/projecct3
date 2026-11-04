@@ -1,0 +1,596 @@
+{
+  "files": [
+    {
+      "file": "theme-editor.svg",
+      "viewBox": "0 0 720 400",
+      "groups": [
+        {
+          "id": "panel",
+          "description": "editor panel with title label slot"
+        },
+        {
+          "id": "row-1",
+          "description": "editor section row 1"
+        },
+        {
+          "id": "row-2",
+          "description": "editor section row 2"
+        },
+        {
+          "id": "row-3",
+          "description": "editor section row 3"
+        },
+        {
+          "id": "row-4",
+          "description": "editor section row 4"
+        },
+        {
+          "id": "row-5",
+          "description": "editor section row 5"
+        },
+        {
+          "id": "block-1",
+          "description": "selected editable block"
+        },
+        {
+          "id": "block-2",
+          "description": "editable block"
+        },
+        {
+          "id": "add-section",
+          "description": "add section control"
+        },
+        {
+          "id": "preview",
+          "description": "browser-framed store preview"
+        },
+        {
+          "id": "preview-hero",
+          "description": "storefront banner"
+        },
+        {
+          "id": "preview-products",
+          "description": "abstract product row"
+        },
+        {
+          "id": "preview-split",
+          "description": "selected content split"
+        },
+        {
+          "id": "preview-footer",
+          "description": "storefront footer"
+        },
+        {
+          "id": "selection-tag",
+          "description": "selected area indicator"
+        }
+      ],
+      "drawPaths": [
+        "link-select"
+      ],
+      "slots": [
+        "slot-panel-title",
+        "slot-shopify-mark"
+      ],
+      "notes": "Abstract editor only, not a live Shopify screen. Keep row gaps clear for planned section swap."
+    },
+    {
+      "file": "liquid-render.svg",
+      "viewBox": "0 0 720 300",
+      "groups": [
+        {
+          "id": "template",
+          "description": "editor-like Liquid template represented as bars"
+        },
+        {
+          "id": "tag-1",
+          "description": "template tag one"
+        },
+        {
+          "id": "tag-2",
+          "description": "template tag two"
+        },
+        {
+          "id": "tag-3",
+          "description": "template tag three"
+        },
+        {
+          "id": "data",
+          "description": "abstract product data record"
+        },
+        {
+          "id": "field-1",
+          "description": "structured value one"
+        },
+        {
+          "id": "field-2",
+          "description": "structured value two"
+        },
+        {
+          "id": "field-3",
+          "description": "structured value three"
+        },
+        {
+          "id": "page",
+          "description": "rendered storefront product page"
+        },
+        {
+          "id": "page-image",
+          "description": "product image block"
+        },
+        {
+          "id": "page-title",
+          "description": "product title bars"
+        },
+        {
+          "id": "page-price",
+          "description": "neutral price-like bar"
+        },
+        {
+          "id": "page-variants",
+          "description": "variant chips"
+        },
+        {
+          "id": "page-cta",
+          "description": "add to cart button"
+        }
+      ],
+      "drawPaths": [
+        "arrow-1",
+        "arrow-2"
+      ],
+      "slots": [
+        "slot-template-label",
+        "slot-data-label",
+        "slot-page-label"
+      ],
+      "notes": "No literal code, products or prices are shown."
+    },
+    {
+      "file": "woo-shopify-bridge.svg",
+      "viewBox": "0 0 720 380",
+      "groups": [
+        {
+          "id": "old-store",
+          "description": "neutral source platform panel"
+        },
+        {
+          "id": "rec-products",
+          "description": "source product row"
+        },
+        {
+          "id": "rec-variants",
+          "description": "source variants row"
+        },
+        {
+          "id": "rec-images",
+          "description": "source images row"
+        },
+        {
+          "id": "rec-urls",
+          "description": "source URL row"
+        },
+        {
+          "id": "rec-passwords",
+          "description": "passwords retained at source"
+        },
+        {
+          "id": "stop-passwords",
+          "description": "password transfer stop mark"
+        },
+        {
+          "id": "new-store",
+          "description": "destination platform panel"
+        },
+        {
+          "id": "dest-products",
+          "description": "destination products row"
+        },
+        {
+          "id": "dest-variants",
+          "description": "destination variants row"
+        },
+        {
+          "id": "dest-images",
+          "description": "destination images row"
+        },
+        {
+          "id": "dest-urls",
+          "description": "destination urls row"
+        },
+        {
+          "id": "check-1",
+          "description": "destination check 1"
+        },
+        {
+          "id": "check-2",
+          "description": "destination check 2"
+        },
+        {
+          "id": "check-3",
+          "description": "destination check 3"
+        },
+        {
+          "id": "check-4",
+          "description": "destination check 4"
+        },
+        {
+          "id": "acct-reactivate",
+          "description": "account reactivation invitation"
+        },
+        {
+          "id": "plugin",
+          "description": "neutral plugin tile"
+        },
+        {
+          "id": "app",
+          "description": "neutral app tile"
+        },
+        {
+          "id": "chip-1",
+          "description": "field mapping chip 1"
+        },
+        {
+          "id": "chip-2",
+          "description": "field mapping chip 2"
+        },
+        {
+          "id": "chip-3",
+          "description": "field mapping chip 3"
+        },
+        {
+          "id": "chip-4",
+          "description": "field mapping chip 4"
+        }
+      ],
+      "drawPaths": [
+        "bridge-rail-top",
+        "bridge-rail-bottom",
+        "stub-passwords",
+        "plugin-path"
+      ],
+      "slots": [
+        "slot-source-label",
+        "slot-shopify-mark",
+        "slot-plugin-label",
+        "slot-app-label"
+      ],
+      "notes": "Conceptual migration only. Password transfer is not implied; account reactivation is distinct."
+    },
+    {
+      "file": "checkout-boundary.svg",
+      "viewBox": "0 0 720 320",
+      "groups": [
+        {
+          "id": "storefront",
+          "description": "theme-editable storefront"
+        },
+        {
+          "id": "editable-1",
+          "description": "editable banner outline"
+        },
+        {
+          "id": "editable-2",
+          "description": "editable product row outline"
+        },
+        {
+          "id": "editable-3",
+          "description": "editable cart area outline"
+        },
+        {
+          "id": "edit-badge",
+          "description": "editing marker"
+        },
+        {
+          "id": "boundary-lock",
+          "description": "platform boundary marker"
+        },
+        {
+          "id": "checkout",
+          "description": "separate checkout panel"
+        },
+        {
+          "id": "ext-point-1",
+          "description": "supported extension point one"
+        },
+        {
+          "id": "ext-point-2",
+          "description": "supported extension point two"
+        }
+      ],
+      "drawPaths": [
+        "boundary"
+      ],
+      "slots": [
+        "slot-storefront-label",
+        "slot-checkout-label",
+        "slot-shopify-mark"
+      ],
+      "notes": "Checkout capabilities vary by Shopify plan and supported extension points; no unrestricted editing is implied."
+    },
+    {
+      "file": "metafields.svg",
+      "viewBox": "0 0 640 340",
+      "groups": [
+        {
+          "id": "reuse-stack",
+          "description": "stack of similar product cards showing reusable content"
+        },
+        {
+          "id": "admin-card",
+          "description": "product admin fields"
+        },
+        {
+          "id": "std-fields",
+          "description": "standard title and description fields"
+        },
+        {
+          "id": "std-fields",
+          "description": "standard product content fields"
+        },
+        {
+          "id": "mf-1",
+          "description": "structured metafield one"
+        },
+        {
+          "id": "mf-2",
+          "description": "structured metafield two"
+        },
+        {
+          "id": "mf-3",
+          "description": "structured metafield three"
+        },
+        {
+          "id": "product-page",
+          "description": "product page"
+        },
+        {
+          "id": "info-tabs",
+          "description": "reusable product information block"
+        },
+        {
+          "id": "info-1",
+          "description": "rendered information one"
+        },
+        {
+          "id": "info-2",
+          "description": "rendered information two"
+        },
+        {
+          "id": "info-3",
+          "description": "rendered information three"
+        }
+      ],
+      "drawPaths": [
+        "link-1",
+        "link-2",
+        "link-3"
+      ],
+      "slots": [
+        "slot-mf-label",
+        "slot-shopify-mark"
+      ],
+      "notes": "Illustrative structured fields only; no real product data is represented."
+    },
+    {
+      "file": "redirect-map.svg",
+      "viewBox": "0 0 720 320",
+      "groups": [
+        {
+          "id": "old-1",
+          "description": "old URL pill 1"
+        },
+        {
+          "id": "old-2",
+          "description": "old URL pill 2"
+        },
+        {
+          "id": "old-3",
+          "description": "old URL pill 3"
+        },
+        {
+          "id": "old-4",
+          "description": "old URL pill 4"
+        },
+        {
+          "id": "old-5",
+          "description": "old URL pill 5"
+        },
+        {
+          "id": "new-1",
+          "description": "matched destination URL pill 1"
+        },
+        {
+          "id": "new-2",
+          "description": "matched destination URL pill 2"
+        },
+        {
+          "id": "new-3",
+          "description": "matched destination URL pill 3"
+        },
+        {
+          "id": "new-4",
+          "description": "matched destination URL pill 4"
+        },
+        {
+          "id": "new-5",
+          "description": "matched destination URL pill 5"
+        },
+        {
+          "id": "home-tile",
+          "description": "homepage destination shown as discouraged"
+        },
+        {
+          "id": "bad-funnel",
+          "description": "many-to-one redirect lines"
+        },
+        {
+          "id": "bad-strike",
+          "description": "discouraged mapping crossed out"
+        }
+      ],
+      "drawPaths": [
+        "redirect-1",
+        "redirect-2",
+        "redirect-3",
+        "redirect-4",
+        "redirect-5"
+      ],
+      "slots": [
+        "slot-old-label",
+        "slot-new-label",
+        "slot-shopify-mark"
+      ],
+      "notes": "Each old address maps to its relevant destination; no URLs are displayed as real."
+    },
+    {
+      "file": "markets.svg",
+      "viewBox": "0 0 720 340",
+      "groups": [
+        {
+          "id": "store",
+          "description": "central storefront"
+        },
+        {
+          "id": "market-1",
+          "description": "market option one"
+        },
+        {
+          "id": "market-2",
+          "description": "market option with pending payment availability check"
+        },
+        {
+          "id": "market-3",
+          "description": "market option three"
+        },
+        {
+          "id": "check-pending",
+          "description": "availability check indicator"
+        }
+      ],
+      "drawPaths": [
+        "branch-1",
+        "branch-2",
+        "branch-3"
+      ],
+      "slots": [
+        "slot-shopify-mark",
+        "slot-market-1",
+        "slot-market-2",
+        "slot-market-3"
+      ],
+      "notes": "Market cards are illustrative and do not imply payment availability in any country."
+    },
+    {
+      "file": "webhook-flow.svg",
+      "viewBox": "0 0 720 240",
+      "groups": [
+        {
+          "id": "event",
+          "description": "abstract store event tile"
+        },
+        {
+          "id": "receive",
+          "description": "event receiving tray"
+        },
+        {
+          "id": "envelope",
+          "description": "incoming event envelope"
+        },
+        {
+          "id": "duplicate",
+          "description": "duplicate notification behind primary"
+        },
+        {
+          "id": "dedupe-tick",
+          "description": "duplicate filtering indicator"
+        },
+        {
+          "id": "verify",
+          "description": "verification step"
+        },
+        {
+          "id": "process",
+          "description": "neutral process and ledger tiles"
+        },
+        {
+          "id": "target",
+          "description": "neutral ledger-like destination tile"
+        }
+      ],
+      "drawPaths": [
+        "flow-1",
+        "flow-2",
+        "flow-3",
+        "retry-loop"
+      ],
+      "slots": [
+        "slot-event-label",
+        "slot-receive-label",
+        "slot-verify-label",
+        "slot-process-label",
+        "slot-shopify-mark"
+      ],
+      "notes": "Conceptual webhook flow only; no live data or successful transaction is shown."
+    },
+    {
+      "file": "hero-storefront.svg",
+      "viewBox": "0 0 560 520",
+      "groups": [
+        {
+          "id": "store-frame",
+          "description": "browser-framed abstract Shopify storefront"
+        },
+        {
+          "id": "banner",
+          "description": "storefront hero banner"
+        },
+        {
+          "id": "grid-1",
+          "description": "abstract product tile one"
+        },
+        {
+          "id": "grid-2",
+          "description": "abstract product tile two"
+        },
+        {
+          "id": "grid-3",
+          "description": "abstract product tile three"
+        },
+        {
+          "id": "grid-4",
+          "description": "abstract product tile four"
+        },
+        {
+          "id": "cart-drawer",
+          "description": "abstract cart drawer"
+        },
+        {
+          "id": "chip-theme",
+          "description": "theme service label chip"
+        },
+        {
+          "id": "chip-catalog",
+          "description": "catalog service label chip"
+        },
+        {
+          "id": "chip-migrate",
+          "description": "migration service label chip"
+        },
+        {
+          "id": "chip-apps",
+          "description": "apps service label chip"
+        }
+      ],
+      "drawPaths": [],
+      "slots": [
+        "slot-shopify-mark",
+        "slot-chip-theme",
+        "slot-chip-catalog",
+        "slot-chip-migrate",
+        "slot-chip-apps"
+      ],
+      "notes": "Abstract storefront, not a customer project or live order interface. The top-left 90×90 area is kept clear for the separate brand tile. Floating label chips have 16px clearance from the browser frame."
+    }
+  ]
+}

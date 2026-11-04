@@ -5,6 +5,7 @@ import { Locale, defaultLocale } from '@/lib/i18n';
 import { getServicesForSitemap } from '@/lib/database/public-queries';
 import { isSubstantialService } from '@/lib/service-quality';
 import corporateWebsiteArticles from '@/data/corporate-website-articles/tr.json';
+import { getShopifyGuides } from '@/components/services/service-blogs/shopify-content';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 const allLocales: Locale[] = ['en', 'tr', 'de', 'ar', 'ur'];
@@ -194,6 +195,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: PRIORITY.blogPost,
       changeFreq: 'weekly',
       date,
+      includeAlternates: false,
+    }));
+  });
+
+  // Repository-backed Shopify articles have no database publication record;
+  // include only the two visible, localized routes from their manifest.
+  getShopifyGuides().forEach(({ slug, dateModified }) => {
+    entries.push(entry('tr', `/services/shopify-development/blog/${slug}`, {
+      priority: PRIORITY.blogPost,
+      changeFreq: 'weekly',
+      date: new Date(`${dateModified}T00:00:00Z`),
       includeAlternates: false,
     }));
   });

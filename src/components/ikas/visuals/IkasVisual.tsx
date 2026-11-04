@@ -4,6 +4,7 @@
 // and lives in globals.css under "ikas visuals"; reduced motion shows the
 // final, fully drawn state.
 
+import type { ReactNode } from 'react';
 import { IKAS_VISUALS, type IkasVisualName } from './generated';
 import { IkasIcon } from '../IkasMark';
 
@@ -16,9 +17,11 @@ interface IkasVisualProps {
   /** Keep ambient loops (pulses, knobs) running while on screen. */
   loop?: boolean;
   className?: string;
+  /** Platform mark for `slot-ikas-mark` (default: ikas icon + name). Lets other platform pages reuse the art. */
+  mark?: ReactNode;
 }
 
-export default function IkasVisual({ name, label, slotLabels, loop = false, className = '' }: IkasVisualProps) {
+export default function IkasVisual({ name, label, slotLabels, loop = false, className = '', mark }: IkasVisualProps) {
   const visual = IKAS_VISUALS[name];
   const slots = visual.slots as Record<string, { left: number; top: number; width: number; height: number }>;
   return (
@@ -35,7 +38,7 @@ export default function IkasVisual({ name, label, slotLabels, loop = false, clas
       {Object.entries(slots).map(([id, box]) => {
         const style = { left: `${box.left}%`, top: `${box.top}%`, width: `${box.width}%`, height: `${box.height}%` };
         if (id === 'slot-ikas-mark') {
-          return <span key={id} aria-hidden="true" className="iv-slot absolute flex items-center gap-1.5 text-[clamp(10px,1.3vw,14px)] font-bold text-gray-900" style={style}><IkasIcon size={18} />ikas</span>;
+          return <span key={id} aria-hidden="true" className="iv-slot absolute flex items-center gap-1.5 text-[clamp(10px,1.3vw,14px)] font-bold text-gray-900" style={style}>{mark ?? <><IkasIcon size={18} />ikas</>}</span>;
         }
         const text = slotLabels?.[id];
         return text ? <span key={id} aria-hidden="true" className="iv-slot absolute flex items-center justify-center text-center text-[clamp(9px,1.25vw,13px)] font-semibold leading-tight text-gray-700" style={style}>{text}</span> : null;
