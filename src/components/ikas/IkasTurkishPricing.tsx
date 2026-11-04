@@ -3,6 +3,8 @@ import { trTitleCase } from '@/lib/tr-title-case';
 import type { ReactNode } from 'react';
 import { ArrowRightIcon, ArrowsRightLeftIcon, BuildingStorefrontIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/outline';
 import InternalPageHero from '@/components/services/InternalPageHero';
+import PageJumpNav, { SectionHead, sectionId } from '@/components/e-commerce/PageJumpNav';
+import PlatformPageLinks from '@/components/e-commerce/PlatformPageLinks';
 import { ProcessScene } from '@/components/services/hero-visuals/scenes-internal';
 import { IKAS_TR_BASE as base, IKAS_TR_ENQUIRY as enquiry } from './ikasTurkishCopy';
 import IkasMotionScope from './IkasMotionScope';
@@ -16,11 +18,10 @@ function Action({ href, children, secondary = false }: { href: string; children:
   return <Link href={href} className={`inline-flex min-h-11 items-center justify-center gap-2 rounded-sm px-5 py-3 text-sm font-semibold transition-colors motion-reduce:transition-none ${focus} ${secondary ? 'border border-heritage-sand bg-white text-gray-900 hover:bg-heritage-ivory' : 'bg-heritage-turquoise text-white hover:bg-heritage-turquoise-deep'}`}>{children}<ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>;
 }
 
-function Section({ id, title, children, tone = 'white' }: { id?: string; title: string; children: ReactNode; tone?: 'white' | 'gray' | 'ivory' }) {
-  const bg = tone === 'gray' ? 'bg-background-gray' : tone === 'ivory' ? 'bg-heritage-ivory' : 'bg-white';
-  return <section id={id} className={`${bg} scroll-mt-[calc(var(--navbar-h,88px)+3.5rem)]`}><div className="mx-auto max-w-[1200px] px-4 sm:px-6 cw-section"><h2 className="reveal max-w-4xl text-headline font-medium leading-tight text-gray-900">{trTitleCase(title)}</h2>{children}</div></section>;
+function Section({ id, title, children, tone = 'white', intro, aside }: { id?: string; title: string; children?: ReactNode; tone?: 'white' | 'gray' | 'ivory'; intro?: ReactNode; aside?: ReactNode }) {
+  const background = tone === 'gray' ? 'bg-background-gray' : tone === 'ivory' ? 'bg-heritage-ivory' : 'bg-white';
+  return <section id={id ?? sectionId(title)} className={`${background} scroll-mt-[calc(var(--navbar-h,88px)+3.5rem)]`}><div className="mx-auto max-w-[1200px] px-4 sm:px-6 cw-section"><SectionHead title={trTitleCase(title)} intro={intro} aside={aside} />{children}</div></section>;
 }
-
 function Table({ label, headers, rows }: { label: string; headers: string[]; rows: string[][] }) {
   return <div role="region" aria-label={label} tabIndex={0} className="mt-6 overflow-x-auto rounded-xl border border-heritage-sand bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise"><table className="w-full min-w-[650px] border-collapse text-left text-sm"><thead className="bg-heritage-ivory"><tr>{headers.map((h) => <th key={h} scope="col" className="border-b border-heritage-sand px-4 py-3 font-semibold text-gray-900">{h}</th>)}</tr></thead><tbody>{rows.map((row, i) => <tr key={`${row[0]}-${i}`} className="even:bg-gray-50/70">{row.map((value, j) => <td key={`${j}-${value}`} className={`border-b border-gray-100 px-4 py-3 align-top leading-6 text-gray-700 ${j === 0 ? 'font-semibold text-gray-900' : ''}`}>{value}</td>)}</tr>)}</tbody></table></div>;
 }
@@ -44,7 +45,7 @@ const faq = [
 export function getIkasTurkishPricingMeta() {
   return {
     title: 'ikas Kurulum ve Tema Tasarımı Hizmet Fiyatları | PakSoft',
-    description: 'ikas kurulum, tema tasarımı ve geçiş hizmetlerinde fiyatı etkileyen işleri inceleyin. PakSoft hizmet bedeliyle platform ve uygulama giderlerini ayrı planlayın.',
+    description: 'ikas site kurma, tema tasarımı ve ikas site taşıma hizmetlerinde fiyatı etkileyen işleri inceleyin. PakSoft hizmet bedeliyle platform ve uygulama giderlerini ayrı planlayın.',
   };
 }
 
@@ -62,7 +63,8 @@ export default function IkasTurkishPricing() {
       actions={<><Action href={enquiry}>ikas Projem İçin Teklif Talep Et</Action><Action href="#ikas-ornek-kapsamlar" secondary>Örnek Kapsamları İncele</Action></>}
     />
 
-    <Section title="ikas projesinde üç gider kalemini ayrı değerlendirin" tone="gray"><p className="mt-4 max-w-3xl text-body leading-relaxed text-gray-600">Mağaza bütçesini planlarken hizmet bedeli, platform giderleri ve günlük işletme maliyetleri aynı kalem değildir. Bu ayrım, teklif kapsamındaki işleri karşılaştırmayı kolaylaştırır.</p><IkasVisual name="cost-split" className="mt-6 max-w-lg" label="Temsili gider grupları: PakSoft hizmet bedeli, ikas platform ve uygulama giderleri ile günlük operasyon giderleri ayrı planlanıyor" /><Table label="ikas mağaza gider grupları" headers={['Gider grubu', 'Neyi kapsayabilir?', 'Nasıl değerlendirilir?']} rows={[
+    <PageJumpNav items={[{ href: '#ikas-projesinde-uc-gider-kalemini-ayri-degerlendirin', label: 'Gider kalemleri' }, { href: '#ikas-ornek-kapsamlar', label: 'Örnek kapsamlar' }, { href: '#ikas-hizmet-fiyatini-neler-degistirir', label: 'Fiyatı değiştirenler' }, { href: '#teklifte-hangi-bilgileri-gorebilmelisiniz', label: 'Teklif içeriği' }, { href: '#ilk-yayin-kapsamini-daraltmak-mumkun-mu', label: 'Kapsamı daraltma' }, { href: '#ikas-hizmet-fiyatlari-hakkinda-sik-sorulan-sorular', label: 'SSS' }]} mark={<IkasIcon size={14} />} />
+    <Section title="ikas projesinde üç gider kalemini ayrı değerlendirin" tone="gray" intro={<>Mağaza bütçesini planlarken hizmet bedeli, platform giderleri ve günlük işletme maliyetleri aynı kalem değildir. Bu ayrım, teklif kapsamındaki işleri karşılaştırmayı kolaylaştırır.</>} aside={<IkasVisual name="cost-split" className="mx-auto max-w-lg w-full" label="Temsili gider grupları: PakSoft hizmet bedeli, ikas platform ve uygulama giderleri ile günlük operasyon giderleri ayrı planlanıyor" />}><Table label="ikas mağaza gider grupları" headers={['Gider grubu', 'Neyi kapsayabilir?', 'Nasıl değerlendirilir?']} rows={[
       ['PakSoft hizmet bedeli', 'Kurulum, tasarım, veri aktarımı, bağlantı çalışmaları ve kararlaştırılan bilgilendirme', 'Onaylanan proje ve teslim kapsamına göre'], ['Platform ve dış servis giderleri', 'ikas aboneliği, uygulamalar, alan adı ve ilgili servisler', 'Seçilen sağlayıcının güncel koşullarına göre'], ['Mağaza işletme giderleri', 'Reklam harcaması, paketleme, kargo, ödeme işlemleri ve operasyon', 'İşletmenin kullanımına ve anlaşmalarına göre'],
     ]} /><p className="mt-4 max-w-3xl text-sm leading-6 text-gray-600">Bir bağlantının kurulması, sağlayıcının kullanım bedelinin PakSoft hizmet ücretine dahil olduğu anlamına gelmez. Gider sorumlulukları teklifinizde açıklanır.</p></Section>
 
@@ -88,6 +90,7 @@ export default function IkasTurkishPricing() {
       ['E-ticaret sitesi fiyatları: maliyeti neler belirler?', '/tr/hizmetler/e-commerce/blog/e-ticaret-sitesi-fiyatlari'], ['ikas hizmet özellikleri', `${base}/ozellikler`], ['ikas geliştirme süreci', `${base}/surec`], ['ikas genel bakış', base],
     ].map(([label, href]) => <li key={href}><Link href={href} className={textLink}>{label} <ArrowRightIcon className="inline h-4 w-4" aria-hidden="true" /></Link></li>)}</ul></Section>
 
+    <PlatformPageLinks platform="ikas" current="pricing" tone="ivory" />
     <section className="bg-heritage-turquoise-deep text-white"><div className="mx-auto flex max-w-[1200px] flex-col gap-6 px-4 py-10 sm:px-6 sm:py-12 md:flex-row md:items-center md:justify-between"><div className="max-w-2xl"><h2 className="flex items-center gap-3 text-title font-semibold leading-tight"><span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white shadow-sm"><IkasIcon size={30} /></span>ikas Projeniz İçin Teklif Talep Edin</h2><p className="mt-2 text-sm leading-6 text-white/85">Mevcut mağaza bağlantınızı veya yeni mağaza planınızı, örnek ürün yapınızı ve ihtiyaç duyduğunuz değişiklikleri paylaşın. Yapılacak işleri ve ayrıca değerlendirilmesi gereken giderleri birlikte netleştirelim.</p><p className="mt-2 text-xs leading-5 text-white/80">İlk aşamada şifre veya API anahtarı paylaşmanız gerekmez. Kısa bir ihtiyaç özetiyle başlayabilirsiniz.</p></div><Action href={enquiry} secondary>ikas Projemi Paylaş</Action></div></section>
   </>;
 }

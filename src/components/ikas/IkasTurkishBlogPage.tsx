@@ -7,6 +7,7 @@ import { BlogFeedScene } from '@/components/services/hero-visuals/scenes-interna
 import InternalPageHero from '@/components/services/InternalPageHero';
 import IkasMotionScope from './IkasMotionScope';
 import { IkasHeroScene, IkasIcon, IkasPlatformNote } from './IkasMark';
+import PlatformPageLinks from '@/components/e-commerce/PlatformPageLinks';
 
 const servicePath = '/tr/hizmetler/ikas-development';
 const blogPath = `${servicePath}/blog`;
@@ -41,7 +42,7 @@ export default async function IkasTurkishBlogPage() {
     <InternalPageHero eyebrowIcon={<IkasIcon size={24} />} eyebrowNormalCase footnote={<IkasPlatformNote />} serviceName="ikas Geliştirme" accentWord="ikas Rehberleri" heading="ikas Kurulum ve Tema Tasarımı Rehberleri" subtitle="ikas mağaza hazırlığı, tema tasarımı ve özelleştirme kararları için pratik rehberler. Kontrol listeleri ve örneklerle projenizin kapsamını planlayın." crumbs={[{ label: 'Ana Sayfa', href: '/tr' }, { label: 'Hizmetler', href: '/tr/hizmetler' }, { label: 'ikas Geliştirme', href: servicePath }, { label: 'Rehberler' }]} rotating={{ lead: 'ikas', words: ['Kurulum Rehberleri', 'Tema Rehberleri'] }} scene={<IkasHeroScene><BlogFeedScene /></IkasHeroScene>} />
     <section id="rehberler" className="scroll-mt-28 bg-background-gray py-12 sm:py-16">
       <div className="container mx-auto max-w-6xl px-4">
-        <h2 className="reveal max-w-4xl text-headline font-medium leading-tight text-gray-900">ikas Mağaza Projeniz İçin Rehberler</h2>
+        <h2 className="reveal max-w-4xl text-headline font-medium leading-tight text-gray-900">ikas Site Kurma ve Tema Tasarımı Rehberleri</h2>
         <p className="mt-3 max-w-3xl text-base leading-7 text-gray-600">Kurulum öncesi hazırlıklar ve tema özelleştirme kararları için yayınlanmış içerikleri inceleyin.</p>
         {cards.length ? <div className="mt-7"><ServiceGuideCards cards={cards} reveal motionScope="ikas" /></div> : <div data-ikas-reveal className="mt-7 rounded-xl border border-heritage-sand bg-white p-5 text-gray-700">ikas rehberleri hazırlanıyor. Bu sırada <Link className="font-semibold text-heritage-turquoise-deep underline underline-offset-4" href={`${servicePath}/ozellikler`}>ikas çalışma alanlarını</Link> ve <Link className="font-semibold text-heritage-turquoise-deep underline underline-offset-4" href={`${servicePath}/surec`}>proje sürecini</Link> inceleyebilirsiniz.</div>}
         <aside data-ikas-reveal className="mt-10 flex flex-col gap-4 rounded-2xl bg-heritage-ivory p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6">
@@ -50,5 +51,6 @@ export default async function IkasTurkishBlogPage() {
         </aside>
       </div>
     </section>
+    <PlatformPageLinks platform="ikas" current="blog" tone="white" />
   </main>;
 }

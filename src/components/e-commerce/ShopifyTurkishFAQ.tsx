@@ -3,6 +3,8 @@ import InternalPageHero from '@/components/services/InternalPageHero';
 import ShopifyMotionScope from './ShopifyMotionScope';
 import { ShopifyHeroScene, ShopifyIcon, ShopifyPlatformNote } from './ShopifyMark';
 import { ShopifyIntro, ShopifyPageCTA, ShopifySection, shopifyFocus } from './ShopifyPagePrimitives';
+import PageJumpNav from './PageJumpNav';
+import PlatformPageLinks from './PlatformPageLinks';
 
 const base = '/tr/hizmetler/shopify-development';
 export const shopifyFaqMeta = {
@@ -62,19 +64,13 @@ export default function ShopifyTurkishFAQ() {
     <ShopifyMotionScope />
     <InternalPageHero serviceName="Shopify Geliştirme" accentWord="Shopify Sık Sorulan Sorular" eyebrowNormalCase heading="Shopify Kurulum ve Geliştirme Hakkında Sık Sorulan Sorular" subtitle="Shopify mağazası kurmadan, mevcut sitenizi taşımadan veya geliştirme planlamadan önce kapsamı netleştirin. Kurulum, maliyet, tasarım, veri aktarımı ve bağlantılar hakkındaki soruları burada kısa yanıtlarla açıklıyoruz. Projenize özgü yanıtlar; ürün yapınız, mevcut sistemleriniz ve gerekli özellikler incelendikten sonra belirlenir." crumbs={[{label:'Ana Sayfa',href:'/'},{label:'Hizmetler',href:'/services'},{label:'Shopify Geliştirme',href:base},{label:'SSS'}]} eyebrowIcon={<ShopifyIcon size={26} />} actions={<><Link href="/tr/start-project?service=shopify-development" className={`inline-flex min-h-11 items-center justify-center rounded-sm bg-gray-900 px-5 py-3 text-sm font-semibold text-white hover:bg-gray-700 ${shopifyFocus}`}>Shopify İhtiyacımı Paylaş</Link><a href="#shopify-kurulum-sorulari" className={`inline-flex min-h-11 items-center justify-center rounded-sm border border-gray-300 bg-white px-5 py-3 text-sm font-semibold text-gray-800 hover:border-heritage-turquoise ${shopifyFocus}`}>Soruları İncele</a></>} scene={<ShopifyHeroScene><div className="grid w-full max-w-md gap-3 sm:grid-cols-3">{[['Kurulum','Ürün ve sayfa hazırlığı'],['Taşıma','Veri ve URL planı'],['Maliyet','Kapsam ve devam eden giderler']].map(([title,text],i)=><div key={title} className="rounded-xl border border-heritage-sand bg-white p-4 shadow-sm sm:p-3"><span className="text-xs text-heritage-turquoise-deep">0{i+1}</span><strong className="mt-2 block text-sm text-gray-900">{title}</strong><span className="mt-1 block text-xs leading-5 text-gray-600">{text}</span></div>)}</div></ShopifyHeroScene>} footnote={<div className="space-y-3"><p className="text-sm font-medium text-gray-600">Kurulum · Taşıma · Maliyet · Destek</p><ShopifyPlatformNote /></div>} rotating={{ lead: 'Shopify', words: ['Sık Sorulanlar', 'Kurulum Soruları', 'Taşıma Soruları'] }} />
 
-    <ShopifySection title="Konulara göre sorular" tone="ivory">
-      <ShopifyIntro>İlgili başlığa geçin veya yanıtları sırayla okuyun. Tüm yanıtlar sayfa içeriğinde görünür durumdadır.</ShopifyIntro>
-      <nav aria-label="SSS kategorileri" className="mt-5 flex flex-wrap gap-2">{categoryLinks.map(({id,title})=><a key={id} href={`#${id}`} className={`inline-flex min-h-10 items-center rounded-full border border-heritage-sand bg-white px-4 py-2 text-sm font-medium text-gray-800 transition-colors hover:border-heritage-turquoise hover:text-heritage-turquoise-deep ${shopifyFocus}`}>{title}</a>)}</nav>
-    </ShopifySection>
+    <PageJumpNav label="SSS konuları" items={categoryLinks.map(({ id, title }) => ({ href: `#${id}`, label: title }))} mark={<ShopifyIcon size={14} />} />
 
     {groups.map((group,index)=><ShopifySection key={group.id} id={group.id} title={group.title} tone={index%2===0?'white':'gray'}>
       <div className="divide-y divide-heritage-sand border-y border-heritage-sand">{group.items.map(([question,answer,link])=><article key={question} className="scroll-mt-28 py-5"><h3 className="text-base font-semibold leading-snug text-gray-950 sm:text-lg">{question}</h3><p className="mt-2 max-w-4xl text-sm leading-6 text-gray-700">{answer}</p>{link?<Link href={link[1]} className={`mt-2 inline-flex min-h-10 items-center text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline ${shopifyFocus}`}>{link[0]} <span aria-hidden="true" className="ms-2">→</span></Link>:null}</article>)}</div>
     </ShopifySection>)}
 
-    <ShopifySection title="Shopify hizmetinin diğer ayrıntıları" tone="ivory">
-      <ShopifyIntro>Genel hizmet kapsamını, uygulama seçeneklerini ve proje adımlarını ilgili sayfalarda inceleyin.</ShopifyIntro>
-      <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3"><Link href={base} className={shopifyFocus+' text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline'}>Shopify hizmetinin genel kapsamı</Link><Link href={`${base}/ozellikler`} className={shopifyFocus+' text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline'}>Özellikler</Link><Link href={`${base}/teknoloji`} className={shopifyFocus+' text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline'}>Teknolojiler</Link><Link href={`${base}/surec`} className={shopifyFocus+' text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline'}>Süreç</Link><Link href={`${base}/portfoy`} className={shopifyFocus+' text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline'}>Portföy</Link><Link href={`${base}/fiyatlandirma`} className={shopifyFocus+' text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline'}>Fiyatlandırma</Link><Link href={`${base}/blog`} className={shopifyFocus+' text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline'}>Blog rehberleri</Link></div>
-    </ShopifySection>
+    <PlatformPageLinks platform="shopify" current="faq" tone="ivory" />
     <ShopifyPageCTA title="Shopify sorunuz projenize özelse birlikte değerlendirelim" description="Mevcut mağaza adresinizi, ürün yapınızı ve çözmek istediğiniz ihtiyacı paylaşın. Yanıtı tema, veri ve bağlantı kapsamınızla birlikte netleştirelim." primary="Shopify Sorumu ve Projemi Paylaş" secondaryHref={base} secondary="Shopify Hizmetine Dön"/>
   </main>;
 }

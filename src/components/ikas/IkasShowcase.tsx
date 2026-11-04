@@ -41,7 +41,7 @@ export function IkasStoreCase({ headingLevel = 2, id }: { headingLevel?: 2 | 3; 
     <div id={id} className="grid gap-10 scroll-mt-[calc(var(--navbar-h,88px)+3.5rem)] lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center">
       <div>
         <span className={badge}><IkasIcon size={16} />ikas Studio ile geliştirildi</span>
-        <H className={`mt-4 ${headingLevel === 2 ? 'text-headline' : 'text-title'} font-medium leading-tight text-gray-900 reveal`}>Canceviz Hurma: ikas Studio ile Geliştirdiğimiz E-Ticaret Mağazası</H>
+        <H className={`mt-4 ${headingLevel === 2 ? 'text-headline' : 'text-title'} font-medium leading-tight text-gray-900 reveal`}>ikas ile Yapılan Siteler: Canceviz Hurma E-Ticaret Mağazası</H>
         <p className="mt-4 text-body leading-relaxed text-gray-600">Hurma, kuruyemiş ve kuru meyve satan Canceviz Hurma&apos;nın online mağazasını ikas Studio üzerinde geliştirdik. Mağazanın tema ve bölüm yapısını, ürün yelpazesine ve kampanya dönemlerine göre yönetilebilecek şekilde kurguladık.</p>
         <Ticks items={[
           'ikas Studio ile tema ve özel bölüm geliştirme.',

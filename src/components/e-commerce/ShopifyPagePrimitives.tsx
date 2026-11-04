@@ -4,6 +4,7 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import InternalPageHero from '@/components/services/InternalPageHero';
 import IkasVisual from '@/components/ikas/visuals/IkasVisual';
 import { trTitleCase } from '@/lib/tr-title-case';
+import { SectionHead, sectionId } from './PageJumpNav';
 import { ShopifyHeroScene, ShopifyIcon, ShopifyPlatformNote } from './ShopifyMark';
 
 export const SHOPIFY_TR_BASE = '/tr/hizmetler/shopify-development';
@@ -12,10 +13,10 @@ export const SHOPIFY_TR_ENQUIRY = '/tr/start-project?service=shopify-development
 export const shopifyFocus = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2';
 export const shopifyLinkClass = `group inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline ${shopifyFocus}`;
 
-/** Section shell shared with the e-commerce, corporate and ikas pages: same rhythm (cw-section) and Title Case H2. */
-export function ShopifySection({ id, title, tone = 'white', children }: { id?: string; title: string; tone?: 'white' | 'gray' | 'ivory'; children: ReactNode }) {
+/** Section shell shared with the e-commerce, corporate and ikas pages: same rhythm (cw-section) and Title Case H2. With `aside`, heading + intro sit beside the visual on large screens. */
+export function ShopifySection({ id, title, tone = 'white', intro, aside, children }: { id?: string; title: string; tone?: 'white' | 'gray' | 'ivory'; intro?: ReactNode; aside?: ReactNode; children?: ReactNode }) {
   const background = tone === 'gray' ? 'bg-background-gray' : tone === 'ivory' ? 'bg-heritage-ivory' : 'bg-white';
-  return <section id={id} className={`${background} scroll-mt-[calc(var(--navbar-h,88px)+3.5rem)]`}><div className="mx-auto max-w-[1200px] px-4 sm:px-6 cw-section"><h2 className="reveal max-w-4xl text-headline font-medium leading-tight text-gray-900">{trTitleCase(title)}</h2>{children}</div></section>;
+  return <section id={id ?? sectionId(title)} className={`${background} scroll-mt-[calc(var(--navbar-h,88px)+3.5rem)]`}><div className="mx-auto max-w-[1200px] px-4 sm:px-6 cw-section"><SectionHead title={trTitleCase(title)} intro={intro} aside={aside} />{children}</div></section>;
 }
 
 export function ShopifyIntro({ children }: { children: ReactNode }) { return <p className="mt-4 max-w-3xl text-body leading-relaxed text-gray-600">{children}</p>; }

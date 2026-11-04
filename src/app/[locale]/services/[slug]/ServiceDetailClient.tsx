@@ -740,7 +740,7 @@ function HeroSection({
               ) : service.slug === 'corporate-website-design' && locale === 'tr' ? (
                 <RotatingHeading full={service.name} lead="Kurumsal" words={['Web Tasarım', 'Web Geliştirme', 'Web Sitesi']} />
               ) : isIkasTr ? (
-                <RotatingHeading full={IKAS_TR_HERO.title} lead="ikas Mağaza" words={['Kurulumu', 'Tema Tasarımı', 'Uygulamaları']} />
+                <RotatingHeading full={IKAS_TR_HERO.title} lead="ikas" words={['E-Ticaret Sitesi', 'Site Kurma', 'Tema Tasarımı', 'Site Taşıma']} />
               ) : isShopifyTr ? (
                 <RotatingHeading full={service.name} lead="Shopify" words={['Site Kurulumu', 'Tema Tasarımı', 'Mağaza Taşıma']} />
               ) : (

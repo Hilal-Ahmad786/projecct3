@@ -37,8 +37,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     ? getCorporateWebsiteSubpageMeta('faq', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('faq')
     : slug === 'ikas-development' && validLocale === 'tr' ? {
-      title: 'ikas Kurulum ve Tema Tasarımı SSS | PakSoft',
-      description: 'ikas mağaza kurulumu, tema düzenlemesi, ürün aktarımı, entegrasyon ve hizmet bedeli hakkında sık sorulan soruların yanıtları. Kapsamı PakSoft ile netleştirin.',
+      title: 'ikas Site Kurma ve Tema Tasarımı SSS | PakSoft',
+      description: 'ikas site kurma, tema düzenlemesi, ikas site taşıma, entegrasyon ve hizmet bedeli hakkında sık sorulan sorular. Kapsamı PakSoft ile netleştirin.',
     } : slug === 'shopify-development' && validLocale === 'tr' ? shopifyFaqMeta : null;
   const { title, description } = customMeta || getServiceSubPageMeta('faq', validLocale, service.name);
   const isTurkishCorporateFaq = slug === 'corporate-website-design' && validLocale === 'tr';

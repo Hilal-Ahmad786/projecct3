@@ -3,6 +3,8 @@ import ShopifyArtwork from '@/components/shopify/visuals/ShopifyArtwork';
 import ShopifyMotionScope from './ShopifyMotionScope';
 import { ShopifyHero, ShopifyIntro, ShopifyLink, ShopifyPageCTA, ShopifySection, ShopifyTable, ShopifyVisual, shopifyFocus } from './ShopifyPagePrimitives';
 import { ShopifyIcon } from './ShopifyMark';
+import PageJumpNav from './PageJumpNav';
+import PlatformPageLinks from './PlatformPageLinks';
 
 const base = '/tr/hizmetler/shopify-development';
 
@@ -25,15 +27,6 @@ const faqs = [
   ['Mevcut mağazanın teknolojisini inceleyebilir misiniz?', 'Tema, uygulama ve bağlantı ihtiyaçları için gerekli erişimler sağlandığında mevcut yapı değerlendirilebilir. İncelemenin kapsamı ve sonrasında uygulanacak geliştirmeler ayrı belirtilir.'],
 ] as const;
 
-const detailPages = [
-  ['Shopify Kurulum ve Geliştirme', 'Yeni mağaza ve geliştirme ihtiyaçları için genel hizmet kapsamı.', base],
-  ['Özellikler', 'Tema, ürün, koleksiyon ve bağlantı teslimatları.', `${base}/ozellikler`],
-  ['Süreç', 'Hazırlık, uygulama, test ve yayın adımları.', `${base}/surec`],
-  ['Portföy', 'Doğrulanmış Shopify projelerinin değerlendirilmesi.', `${base}/portfoy`],
-  ['Fiyatlandırma', 'Kapsamı ve toplam maliyeti etkileyen iş kalemleri.', `${base}/fiyatlandirma`],
-  ['Blog', 'Mağaza hazırlığı ve geliştirme kararları için rehberler.', `${base}/blog`],
-  ['Sık Sorulan Sorular', 'Teknik seçim ve hizmet kapsamı sorularının yanıtları.', `${base}/sss`],
-] as const;
 
 export default function ShopifyTurkishTechnologies() {
   return <main className="min-h-screen bg-white">
@@ -50,6 +43,7 @@ export default function ShopifyTurkishTechnologies() {
       scene={<ArchitectureIllustration/>}
     />
 
+    <PageJumpNav items={[{ href: '#shopify-teknik-yaklasim', label: 'Teknik yaklaşım' }, { href: '#shopify-liquid-gelistirme-ve-tema-mimarisi', label: 'Liquid' }, { href: '#metafields-ve-metaobjects-ile-duzenli-icerik', label: 'Metafields' }, { href: '#hazir-uygulama-mi-shopify-ozel-gelistirme-mi', label: 'Uygulama mı, özel mi?' }, { href: '#graphql-api-ile-shopify-erp-entegrasyonu-ve-sistem-baglantil', label: 'ERP entegrasyonu' }, { href: '#webhook-ve-otomasyonlarda-kontrollu-veri-akisi', label: 'Webhook' }, { href: '#odeme-ve-checkout-teknik-sinirlari-bastan-belirleyelim', label: 'Checkout' }, { href: '#headless-yaklasim-ne-zaman-anlamli-olabilir', label: 'Headless' }, { href: '#teknik-yaklasim-hakkinda-sik-sorulan-sorular', label: 'SSS' }]} mark={<ShopifyIcon size={14} />} />
     <ShopifySection id="shopify-teknik-yaklasim" title="Hangi ihtiyaç için hangi teknik yaklaşım?" tone="gray">
       <ShopifyIntro>Bir Shopify e-ticaret sitesi için bütün teknolojileri aynı anda kullanmak gerekmez. Kullanılacak çözümü; tasarım beklentisi, katalog yapısı, bağlantılar ve yönetim ihtiyaçları belirler.</ShopifyIntro>
       <ShopifyTable label="Shopify teknik ihtiyaç ve çözüm karşılaştırması" headers={['İhtiyaç', 'Değerlendirilen çözüm', 'Seçimden önce kontrol']} rows={[
@@ -62,9 +56,8 @@ export default function ShopifyTurkishTechnologies() {
       ]}/>
     </ShopifySection>
 
-    <ShopifySection title="Shopify Liquid geliştirme ve tema mimarisi">
-      <ShopifyIntro>Shopify tema geliştirme hizmetinde Liquid, mağaza verilerinin sayfada gösterilmesini sağlayan şablon dilidir. HTML ve CSS görünümün, gerekli JavaScript ise etkileşimlerin hazırlanmasında kullanılır.</ShopifyIntro>
-      <ShopifyArtwork name="liquid-render" loop className="mt-6 max-w-3xl" label="Temsili Liquid akışı: şablondaki etiketler ürün verisiyle birleşerek müşterinin gördüğü ürün sayfasını oluşturuyor" slotLabels={{ 'slot-template-label': 'Liquid şablonu', 'slot-data-label': 'Ürün verisi', 'slot-page-label': 'Ürün sayfası' }} />
+    <ShopifySection title="Shopify Liquid geliştirme ve tema mimarisi" intro={<>Shopify tema geliştirme hizmetinde Liquid, mağaza verilerinin sayfada gösterilmesini sağlayan şablon dilidir. HTML ve CSS görünümün, gerekli JavaScript ise etkileşimlerin hazırlanmasında kullanılır.</>} aside={<ShopifyArtwork name="liquid-render" loop className="mx-auto w-full" label="Temsili Liquid akışı: şablondaki etiketler ürün verisiyle birleşerek müşterinin gördüğü ürün sayfasını oluşturuyor" slotLabels={{ 'slot-template-label': 'Liquid şablonu', 'slot-data-label': 'Ürün verisi', 'slot-page-label': 'Ürün sayfası' }} />}>
+      
       <div data-shopify-reveal-group className="mt-6 grid gap-5 md:grid-cols-3">{[
         ['Bölümler ve bloklar', 'İçerik ekibinin sık güncellediği alanları uygun section ve block yapılarıyla ele alırız. Görsel, metin ve bağlantı gibi ayarları tema editöründe erişilebilir kılacak biçimde planlarız. Her tasarım değişikliğinin kod müdahalesi gerektirmemesi için yönetilebilir alanları başlangıçta belirleriz.'],
         ['Sayfa şablonları', 'Ürün, koleksiyon ve içerik sayfalarının ihtiyaçlarını ayrı değerlendiririz. JSON şablonları ve tema bileşenleriyle, desteklenen alanlarda farklı sayfa düzenleri oluşturulabilir. Mevcut temanın yapısı ve sınırları uygulamadan önce kontrol edilir.'],
@@ -73,9 +66,8 @@ export default function ShopifyTurkishTechnologies() {
       <p className="mt-5"><ShopifyLink href={`${base}/ozellikler`}>Tema ve mağaza özelliklerini inceleyin</ShopifyLink></p>
     </ShopifySection>
 
-    <ShopifySection title="Metafields ve metaobjects ile düzenli içerik" tone="ivory">
-      <ShopifyIntro>Bazı ürünlerde standart başlık ve açıklama alanları yeterli olmayabilir. Malzeme, ölçü, bakım bilgisi veya başka yapılandırılmış içerikler için ek veri alanlarını değerlendiririz.</ShopifyIntro>
-      <ShopifyArtwork name="metafields" className="mt-6 max-w-2xl" label="Temsili metafield akışı: ürün yönetimindeki ek alanlar her ürün sayfasında aynı bilgi bloğunda gösteriliyor" slotLabels={{ 'slot-mf-label': 'Ek ürün alanları' }} />
+    <ShopifySection title="Metafields ve metaobjects ile düzenli içerik" tone="ivory" intro={<>Bazı ürünlerde standart başlık ve açıklama alanları yeterli olmayabilir. Malzeme, ölçü, bakım bilgisi veya başka yapılandırılmış içerikler için ek veri alanlarını değerlendiririz.</>} aside={<ShopifyArtwork name="metafields" className="mx-auto w-full" label="Temsili metafield akışı: ürün yönetimindeki ek alanlar her ürün sayfasında aynı bilgi bloğunda gösteriliyor" slotLabels={{ 'slot-mf-label': 'Ek ürün alanları' }} />}>
+      
       <div className="mt-5 space-y-3 text-sm leading-6 text-gray-600"><p><strong className="text-gray-900">Metafields:</strong> Desteklenen kayıtlara tanımlı tiplerde ek bilgi eklemek için değerlendirilir. Hangi alanın gerekli olduğu ve nerede gösterileceği birlikte belirlenir.</p><p><strong className="text-gray-900">Metaobjects:</strong> Tekrar kullanılabilen, yapılandırılmış içerik kayıtları gerektiğinde değerlendirilir. Tema üzerinden gösterim ve yönetim ihtiyaçları ayrıca planlanır.</p><p><strong className="text-gray-900">İçerik sorumluluğu:</strong> Alanları oluşturmak ile içeriklerini doldurmak ayrı işlerdir. Mevcut verilerin düzenlenmesi, toplu aktarım ve içerik üretimi teklifte açıkça belirtilir.</p></div>
       <p className="mt-4 rounded-lg border-l-2 border-heritage-turquoise bg-white p-4 text-sm leading-6 text-gray-700"><strong className="font-semibold">Örnek:</strong> Ürün sayfasında malzeme ve bakım bilgilerini standart bir düzende göstermek istiyorsanız önce ürün gruplarını ve veri tiplerini belirler, ardından ilgili şablonda gösterimi hazırlarız.</p>
     </ShopifySection>
@@ -92,9 +84,8 @@ export default function ShopifyTurkishTechnologies() {
       <div className="mt-7 rounded-xl border border-heritage-sand bg-heritage-ivory p-5 sm:p-6"><h3 className="text-title font-semibold text-gray-900">Hangi çözümün gerekli olduğunu birlikte belirleyelim</h3><p className="mt-2 max-w-3xl text-sm leading-6 text-gray-600">İhtiyacınızı ve kullandığınız sistemleri paylaşın. Tema ayarıyla çözülebilen işleri, uygulama veya özel geliştirme gerektiren alanlardan ayıralım.</p><Link href="/tr/start-project?service=shopify-development" className={`mt-4 inline-flex min-h-11 items-center justify-center rounded-sm bg-heritage-turquoise px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-heritage-turquoise-deep ${shopifyFocus}`}>Shopify Teknik Kapsamını Görüşelim</Link></div>
     </ShopifySection>
 
-    <ShopifySection title="GraphQL API ile Shopify ERP entegrasyonu ve sistem bağlantıları" tone="gray">
-      <ShopifyIntro>Shopify bağlantılarında kullanılacak API’yi işlem türüne göre belirleriz. Mağaza yönetim verilerine erişmek ile müşteriye özel bir alışveriş ön yüzü hazırlamak aynı teknik ihtiyaç değildir.</ShopifyIntro>
-      <ShopifyVisual name="integration-hub" loop className="mx-auto mt-8 max-w-2xl" label="Temsili entegrasyon akışı: Shopify mağazası ödeme, kargo, ERP ve pazar yeri sistemlerine bağlanıyor" slotLabels={{ 'slot-payment': 'Ödeme', 'slot-cargo': 'Kargo', 'slot-erp': 'Muhasebe / ERP', 'slot-marketplace': 'Pazar yeri' }} />
+    <ShopifySection title="GraphQL API ile Shopify ERP entegrasyonu ve sistem bağlantıları" tone="gray" intro={<>Shopify bağlantılarında kullanılacak API’yi işlem türüne göre belirleriz. Mağaza yönetim verilerine erişmek ile müşteriye özel bir alışveriş ön yüzü hazırlamak aynı teknik ihtiyaç değildir.</>} aside={<ShopifyVisual name="integration-hub" loop className="mx-auto w-full" label="Temsili entegrasyon akışı: Shopify mağazası ödeme, kargo, ERP ve pazar yeri sistemlerine bağlanıyor" slotLabels={{ 'slot-payment': 'Ödeme', 'slot-cargo': 'Kargo', 'slot-erp': 'Muhasebe / ERP', 'slot-marketplace': 'Pazar yeri' }} />}>
+      
       <div data-shopify-reveal-group className="mt-6 grid gap-5 md:grid-cols-3">{[
         ['GraphQL Admin API', 'Ürün, stok veya sipariş gibi yönetim işlemlerinde, ilgili izinler ve kaynakların desteklediği kapsamda değerlendirilir. Erişim yetkileri, veri alanları ve API sınırları bağlantı tasarımının parçasıdır.'],
         ['Storefront API', 'Özel bir alışveriş ön yüzünün ihtiyaç duyduğu desteklenen müşteri deneyimleri için değerlendirilir. Standart bir tema projesinde sırf teknoloji listesine eklemek için kullanılmaz.'],
@@ -103,9 +94,8 @@ export default function ShopifyTurkishTechnologies() {
       <p className="mt-4 max-w-3xl text-sm leading-6 text-gray-600">API kullanımı; Shopify erişim izinleri, ilgili servislerin olanakları ve güncel sürüm koşullarıyla sınırlıdır. ERP veya muhasebe sisteminizin API erişimi ayrıca gerekebilir.</p>
     </ShopifySection>
 
-    <ShopifySection title="Webhook ve otomasyonlarda kontrollü veri akışı">
-      <ShopifyIntro>Sipariş veya ürün değişikliği gibi olaylara bağlı işlemlerde webhook’lar değerlendirilebilir. Bildirimin gelmesi, işlemin başarıyla tamamlandığı anlamına gelmez; alım, doğrulama ve işleme adımları birlikte ele alınır.</ShopifyIntro>
-      <ShopifyArtwork name="webhook-flow" className="mt-6 max-w-3xl" label="Temsili webhook akışı: Shopify olayı alınıyor, kaynağı doğrulanıyor ve işleniyor; tekrar gelen bildirim ayıklanıyor, başarısız iş yeniden deneniyor" slotLabels={{ 'slot-event-label': 'Olay', 'slot-receive-label': 'Alım', 'slot-verify-label': 'Doğrulama', 'slot-process-label': 'İşleme' }} />
+    <ShopifySection title="Webhook ve otomasyonlarda kontrollü veri akışı" intro={<>Sipariş veya ürün değişikliği gibi olaylara bağlı işlemlerde webhook’lar değerlendirilebilir. Bildirimin gelmesi, işlemin başarıyla tamamlandığı anlamına gelmez; alım, doğrulama ve işleme adımları birlikte ele alınır.</>} aside={<ShopifyArtwork name="webhook-flow" className="mx-auto w-full" label="Temsili webhook akışı: Shopify olayı alınıyor, kaynağı doğrulanıyor ve işleniyor; tekrar gelen bildirim ayıklanıyor, başarısız iş yeniden deneniyor" slotLabels={{ 'slot-event-label': 'Olay', 'slot-receive-label': 'Alım', 'slot-verify-label': 'Doğrulama', 'slot-process-label': 'İşleme' }} />}>
+      
       <ul data-shopify-reveal-group className="mt-5 grid gap-x-8 sm:grid-cols-2">{[
         'HTTPS bildirimlerinde kaynağın doğrulanması.',
         'Aynı bildirimin yeniden gelmesi durumunda tekrar işlemi önleyen tasarım.',
@@ -117,9 +107,8 @@ export default function ShopifyTurkishTechnologies() {
       <p className="mt-4 max-w-3xl text-sm leading-6 text-gray-600">Otomasyon kapsamını “her şeyi bağlayalım” şeklinde değil, belirli bir tetikleyici ve sonuç üzerinden tanımlarız. Örneğin sipariş bilgisinin bir işletme sistemine aktarılması için veri alanları, durum değişiklikleri ve istisnalar yazılı hale getirilir.</p>
     </ShopifySection>
 
-    <ShopifySection title="Ödeme ve checkout: teknik sınırları baştan belirleyelim" tone="ivory">
-      <ShopifyIntro>Ödeme sağlayıcısının uygunluğu; işletmenin kayıt ülkesi, hesap koşulları ve desteklenen bağlantı yöntemleriyle değerlendirilir. Sağlayıcı onayı veya her ödeme yöntemine erişim garanti edilmez.</ShopifyIntro>
-      <ShopifyArtwork name="checkout-boundary" loop className="mt-6 max-w-3xl" label="Temsili sınır: mağaza teması serbestçe düzenlenebiliyor; ödeme sayfasında yalnızca desteklenen uzantı noktaları değiştirilebiliyor" slotLabels={{ 'slot-storefront-label': 'Mağaza teması', 'slot-checkout-label': 'Ödeme sayfası' }} />
+    <ShopifySection title="Ödeme ve checkout: teknik sınırları baştan belirleyelim" tone="ivory" intro={<>Ödeme sağlayıcısının uygunluğu; işletmenin kayıt ülkesi, hesap koşulları ve desteklenen bağlantı yöntemleriyle değerlendirilir. Sağlayıcı onayı veya her ödeme yöntemine erişim garanti edilmez.</>} aside={<ShopifyArtwork name="checkout-boundary" loop className="mx-auto w-full" label="Temsili sınır: mağaza teması serbestçe düzenlenebiliyor; ödeme sayfasında yalnızca desteklenen uzantı noktaları değiştirilebiliyor" slotLabels={{ 'slot-storefront-label': 'Mağaza teması', 'slot-checkout-label': 'Ödeme sayfası' }} />}>
+      
       <p className="mt-4 max-w-3xl text-sm leading-6 text-gray-600">Tema düzenlemesi ile checkout geliştirmesi farklı alanlardır. Checkout’ta kullanılabilecek düzenleme ve uzantılar Shopify planına ve güncel platform kurallarına bağlıdır. Tema dosyasını değiştirebildiğimiz için ödeme adımlarında da sınırsız değişiklik yapabileceğimizi varsaymayız.</p>
       <p className="mt-3 max-w-3xl text-sm leading-6 text-gray-600">Gerekli hesaplar, test ortamları ve sağlayıcı erişimleri belirlenmeden entegrasyonu tamamlanmış saymayız.</p>
       <p className="mt-4"><ShopifyLink href="/tr/hizmetler/payment-gateway-integration">Ödeme bağlantıları için ayrı hizmet kapsamı</ShopifyLink></p>
@@ -141,10 +130,7 @@ export default function ShopifyTurkishTechnologies() {
       <div className="mt-4 flex flex-wrap gap-x-6 gap-y-3"><ShopifyLink href={`${base}/surec`}>Uygulama sürecini inceleyin</ShopifyLink><ShopifyLink href={`${base}/fiyatlandirma`}>Teknik kapsamın maliyete etkisi</ShopifyLink></div>
     </ShopifySection>
 
-    <ShopifySection title="Shopify hizmetinde diğer sayfalara geçin" tone="ivory">
-      <ShopifyIntro>Shopify kurulum ve geliştirme kararlarını ilgili hizmet sayfalarında ayrıntılı inceleyebilirsiniz.</ShopifyIntro>
-      <div data-shopify-reveal-group className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{detailPages.map(([title, text, href]) => <Link key={title} href={href} className={`group flex h-full flex-col rounded-lg border border-heritage-sand bg-white p-4 transition-colors hover:border-heritage-turquoise ${shopifyFocus}`}><h3 className="font-semibold text-gray-900">{title}</h3><p className="mt-1 text-sm leading-6 text-gray-600">{text}</p><span className="mt-auto inline-flex items-center gap-1.5 pt-3 text-sm font-semibold text-heritage-turquoise-deep">İncele<svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-focus-visible:translate-x-0.5" fill="none" stroke="currentColor"><path d="M5 12h14m-6-6 6 6-6 6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></span></Link>)}</div>
-    </ShopifySection>
+    <PlatformPageLinks platform="shopify" current="technologies" tone="ivory" />
 
     <ShopifySection title="Teknik yaklaşım hakkında sık sorulan sorular" tone="gray">
       <div className="divide-y divide-heritage-sand border-y border-heritage-sand">{faqs.map(([question, answer]) => <article key={question} className="py-4"><h3 className="font-semibold text-gray-900">{question}</h3><p className="mt-2 max-w-4xl text-sm leading-6 text-gray-600">{answer}</p></article>)}</div>

@@ -2,6 +2,8 @@ import Link from '@/components/IntentLink';
 import type { ReactNode } from 'react';
 import { ArrowRightIcon, ArrowsRightLeftIcon, ClipboardDocumentListIcon, DevicePhoneMobileIcon, Squares2X2Icon } from '@heroicons/react/24/outline';
 import InternalPageHero from '@/components/services/InternalPageHero';
+import PageJumpNav from '@/components/e-commerce/PageJumpNav';
+import PlatformPageLinks from '@/components/e-commerce/PlatformPageLinks';
 import Image from 'next/image';
 import { IKAS_TR_BASE as base, IKAS_TR_ENQUIRY as enquiry } from './ikasTurkishCopy';
 import IkasMotionScope from './IkasMotionScope';
@@ -24,8 +26,8 @@ const evaluationPoints = [
 
 export function getIkasTurkishPortfolioMeta() {
   return {
-    title: 'ikas Projeleri ve Mağaza Çalışmaları | PakSoft',
-    description: "ikas Studio ile geliştirdiğimiz Canceviz Hurma mağazasını ve ikas uygulaması olarak çalışan yapay zekâ asistanımızı inceleyin. ikas projenizi PakSoft ile planlayın.",
+    title: 'ikas ile Yapılan Siteler ve Örnek Mağaza Çalışmaları | PakSoft',
+    description: "ikas ile yapılan siteler: ikas Studio ile geliştirdiğimiz Canceviz Hurma örnek sitesini ve ikas uygulaması olarak çalışan yapay zekâ asistanımızı inceleyin. ikas projenizi PakSoft ile planlayın.",
   };
 }
 
@@ -35,18 +37,20 @@ export default function IkasTurkishPortfolio() {
     <InternalPageHero eyebrowIcon={<IkasIcon size={24} />} eyebrowNormalCase footnote={<IkasPlatformNote />}
       serviceName="ikas"
       accentWord="ikas Mağaza Projeleri"
-      heading="ikas Projeleri ve Mağaza Çalışmaları"
-      rotating={{ lead: 'ikas', words: ['Projeleri', 'Mağaza Çalışmaları', 'Uygulamaları'] }}
+      heading="ikas ile Yapılan Siteler ve Mağaza Çalışmaları"
+      rotating={{ lead: 'ikas ile', words: ['Yapılan Siteler', 'Örnek Mağazalar', 'Uygulamalar'] }}
       subtitle="ikas Studio ile geliştirdiğimiz Canceviz Hurma mağazasını ve ikas uygulaması olarak çalışan yapay zekâ asistanımızı inceleyin. Kendi mağazanız için kapsamı birlikte belirleyelim."
       scene={<div className="relative mx-auto max-w-lg"><div className="overflow-hidden rounded-xl border border-heritage-sand bg-white shadow-lg"><Image src="/images/portfolio/canceviz/canceviz-hurma-ana-sayfa.webp" alt="Canceviz Hurma ikas mağazasının ana sayfası" width={1440} height={611} priority sizes="(min-width: 1024px) 512px, 100vw" className="h-auto w-full" /></div><div className="absolute -bottom-8 -right-3 w-[48%] overflow-hidden rounded-lg border border-heritage-sand bg-white shadow-xl"><Image src="/images/portfolio/canceviz/canceviz-ai-agent-dashboard.webp" alt="" width={1440} height={611} sizes="250px" className="h-auto w-full" /></div><span className="absolute -left-3 -top-4 rounded-[18px] bg-white p-1 shadow-md ring-1 ring-black/5"><IkasIcon size={44} className="rounded-xl" /></span></div>}
       crumbs={[{ label: 'Ana Sayfa', href: '/' }, { label: 'Hizmetler', href: '/hizmetler' }, { label: 'ikas Geliştirme', href: base }, { label: 'Portföy' }]}
       actions={<><Action href={enquiry}>ikas Projemi Paylaş</Action><Action href="#ikas-calismalari" secondary>Projeleri İncele</Action></>}
     />
 
+<PageJumpNav items={[{ href: '#ikas-calismalari', label: 'Çalışmalar' }, { href: '#canceviz-hurma', label: 'Canceviz Hurma mağazası' }, { href: '#ikas-uygulama-gelistirme', label: 'ikas uygulaması' }, { href: '#ikas-ornek-site-degerlendirme', label: 'Örnekleri değerlendirme' }]} mark={<IkasIcon size={14} />} />
+
     <section id="ikas-calismalari" className="bg-background-gray scroll-mt-[calc(var(--navbar-h,88px)+3.5rem)]">
       <div className="mx-auto max-w-[1200px] px-4 sm:px-6 cw-section">
         <p className="text-sm font-semibold text-heritage-turquoise-deep">ikas Portföyü</p>
-        <h2 className="mt-2 reveal max-w-4xl text-headline font-medium leading-tight text-gray-900">ikas Üzerinde Yaptığımız Çalışmalar</h2>
+        <h2 className="mt-2 reveal max-w-4xl text-headline font-medium leading-tight text-gray-900">ikas Örnek Site ve Uygulama Çalışmalarımız</h2>
         <ul className="mt-6 grid gap-4 md:grid-cols-2">{[
           { title: 'Canceviz Hurma mağazası', type: 'ikas Studio · Mağaza geliştirme', text: 'Hurma, kuruyemiş ve kuru meyve mağazası için tema, bölüm ve vitrin yapısı.', href: '#canceviz-hurma', img: '/images/portfolio/canceviz/canceviz-hurma-ana-sayfa.webp' },
           { title: 'Canceviz AI Agent', type: 'ikas uygulaması · Yapay zekâ', text: 'Müşteri desteği ve mağaza verisi sorularını yanıtlayan yapay zekâ asistanı.', href: '#ikas-uygulama-gelistirme', img: '/images/portfolio/canceviz/canceviz-ai-agent-dashboard.webp' },
@@ -63,9 +67,9 @@ export default function IkasTurkishPortfolio() {
 
     <IkasAppsSection />
 
-    <section className="bg-white">
+    <section id="ikas-ornek-site-degerlendirme" className="bg-white scroll-mt-[calc(var(--navbar-h,88px)+3.5rem)]">
       <div className="mx-auto max-w-[1200px] px-4 sm:px-6 cw-section">
-        <h2 className="reveal max-w-4xl text-headline font-medium leading-tight text-gray-900">ikas Çalışma Örneklerini Değerlendirirken Nelere Bakabilirsiniz?</h2>
+        <h2 className="reveal max-w-4xl text-headline font-medium leading-tight text-gray-900">ikas Örnek Siteleri Değerlendirirken Nelere Bakabilirsiniz?</h2>
         <p className="mt-4 max-w-3xl text-body leading-relaxed text-gray-600">Bir mağazayı kendi ihtiyaçlarınızla karşılaştırırken yalnızca görsel tarza değil, yapılan işin kapsamına da bakın. Benzer görünen mağazalar farklı veri ve operasyon ihtiyaçlarına sahip olabilir.</p>
         <div className="mt-6 grid gap-4 sm:grid-cols-2">
           {evaluationPoints.map(({ title, text, Icon }, index) => <article key={title} data-ikas-reveal data-ikas-delay={index * 60} className="ikas-card-motion rounded-xl border border-heritage-sand bg-white p-5"><Icon className="ikas-motion-icon h-6 w-6 text-heritage-turquoise-deep" aria-hidden="true" /><h3 className="mt-3 font-semibold text-gray-900">{title}</h3><p className="mt-2 text-sm leading-6 text-gray-600">{text}</p></article>)}
@@ -81,13 +85,9 @@ export default function IkasTurkishPortfolio() {
         <p className="mt-4 max-w-3xl text-body leading-relaxed text-gray-600">Beğendiğiniz bir sayfa veya geliştirmek istediğiniz alan varsa paylaşabilirsiniz. İhtiyacınızı mevcut mağazanız, ürün yapınız ve günlük operasyonunuzla birlikte değerlendirerek uygulanacak işleri netleştirelim.</p>
         <div className="mt-5 flex flex-wrap gap-3"><Action href={enquiry}>ikas Projem İçin Görüşme Talep Et</Action><Link href={`${base}/ozellikler`} className={`inline-flex min-h-11 items-center px-3 text-sm font-semibold text-heritage-turquoise-deep underline underline-offset-4 ${focus}`}>ikas hizmet kapsamını incele</Link></div>
         </div><IkasVisual name="project-brief" className="mx-auto w-full max-w-md" /></div>
-        <nav aria-label="ikas hizmet sayfaları" className="mt-8 border-t border-heritage-sand pt-5">
-          <h3 className="text-sm font-semibold text-gray-900">İlgili ikas sayfaları</h3>
-          <ul className="mt-3 flex flex-wrap gap-x-6 gap-y-3 text-sm">{[
-            ['Genel Bakış', base], ['Özellikler', `${base}/ozellikler`], ['Süreç', `${base}/surec`], ['Fiyatlandırma', `${base}/fiyatlandirma`],
-          ].map(([label, href]) => <li key={href}><Link href={href} className={`font-medium text-heritage-turquoise-deep underline-offset-4 hover:underline ${focus}`}>{label}</Link></li>)}</ul>
-        </nav>
       </div>
     </section>
+
+    <PlatformPageLinks platform="ikas" current="portfolio" tone="white" />
   </>;
 }

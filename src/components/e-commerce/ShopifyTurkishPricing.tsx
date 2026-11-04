@@ -3,6 +3,8 @@ import InternalPageHero from '@/components/services/InternalPageHero';
 import ShopifyMotionScope from './ShopifyMotionScope';
 import { ShopifyHeroScene, ShopifyIcon, ShopifyPlatformNote } from './ShopifyMark';
 import { ShopifyIntro, ShopifyLink, ShopifyPageCTA, ShopifySection, ShopifyTable, ShopifyVisual, shopifyFocus } from './ShopifyPagePrimitives';
+import PageJumpNav from './PageJumpNav';
+import PlatformPageLinks from './PlatformPageLinks';
 
 const base = '/tr/hizmetler/shopify-development';
 export const shopifyPricingMeta = {
@@ -38,16 +40,16 @@ export default function ShopifyTurkishPricing() {
     <ShopifyMotionScope />
     <InternalPageHero serviceName="Shopify Geliştirme" accentWord="Shopify Fiyatlandırma" eyebrowNormalCase heading="Shopify Kurulum Hizmeti Fiyatını Neler Belirler?" subtitle="Shopify site kurulum fiyatı; tasarımın kapsamına, ürün verilerinin durumuna, bağlantılara ve varsa mağaza taşıma işlerine göre belirlenir. PakSoft’un kurulum ve geliştirme bedeli ile Shopify aboneliği ve üçüncü taraf giderleri ayrı kalemlerdir. Ürün yapınızı, gerekli sayfaları ve kullandığınız sistemleri paylaşın; projenize dahil işleri ve ayrıca karşılanacak giderleri netleştirelim." crumbs={[{label:'Ana Sayfa',href:'/'},{label:'Hizmetler',href:'/services'},{label:'Shopify Geliştirme',href:base},{label:'Fiyatlandırma'}]} eyebrowIcon={<ShopifyIcon size={26} />} actions={<><Link href="/tr/start-project?service=shopify-development" className={`inline-flex min-h-11 items-center justify-center rounded-sm bg-gray-900 px-5 py-3 text-sm font-semibold text-white hover:bg-gray-700 ${shopifyFocus}`}>Shopify Projem İçin Teklif Al</Link><a href="#shopify-maliyet-kalemleri" className={`inline-flex min-h-11 items-center justify-center rounded-sm border border-gray-300 bg-white px-5 py-3 text-sm font-semibold text-gray-800 hover:border-heritage-turquoise ${shopifyFocus}`}>Maliyet Kalemlerini İncele</a></>} footnote={<div className="space-y-3"><p className="text-sm font-medium text-gray-600">Proje kapsamı · Platform giderleri · Devam eden maliyetler</p><ShopifyPlatformNote /></div>} scene={<ShopifyHeroScene><div className="w-full max-w-md space-y-3" aria-label="Temsili maliyet başlıkları">{[['Kurulum ve geliştirme','Tasarım, tema ve proje işleri'],['Platform ve servisler','Abonelikler ve üçüncü taraf hizmetleri'],['İşlem ve devam eden hizmetler','Kullanım ücretleri, bakım ve yeni işler']].map(([title,text],i)=><div key={title} className="flex items-center gap-4 rounded-xl border border-heritage-sand bg-white p-4 shadow-sm"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-heritage-turquoise-light text-sm font-semibold text-heritage-turquoise-deep">0{i+1}</span><div><strong className="block text-sm text-gray-900">{title}</strong><span className="mt-1 block text-xs text-gray-600">{text}</span></div></div>)}</div></ShopifyHeroScene>} rotating={{ lead: 'Shopify', words: ['Kurulum Fiyatları', 'Site Yaptırma Fiyatları', 'Tema Tasarımı Fiyatı'] }} />
 
-    <ShopifySection id="shopify-maliyet-kalemleri" title="Shopify mağaza kurma maliyetini üç başlıkta düşünün" tone="gray">
-      <ShopifyIntro>Toplam bütçeyi değerlendirirken yalnız ilk kurulum teklifine veya Shopify plan ücretine bakmak yeterli değildir. Başlangıç işleri, düzenli servisler ve işlemle oluşan giderleri ayrı değerlendirin.</ShopifyIntro>
-      <ShopifyVisual name="cost-split" className="mt-6 max-w-lg" label="Temsili gider grupları: PakSoft hizmet bedeli, Shopify platform ve uygulama giderleri ile günlük operasyon giderleri ayrı planlanıyor" />
+    <PageJumpNav items={[{ href: '#shopify-maliyet-kalemleri', label: 'Maliyet kalemleri' }, { href: '#shopify-tema-tasarimi-fiyati-ve-proje-bedelini-etkileyen-isl', label: 'Proje bedeli' }, { href: '#shopify-site-yaptirma-fiyatlari-proje-turune-gore-nasil-seki', label: 'Proje türleri' }, { href: '#shopify-aboneligi-ve-ucuncu-taraf-giderleri', label: 'Abonelik ve giderler' }, { href: '#magaza-tasima-maliyeti-neden-ayrica-degerlendirilir', label: 'Taşıma maliyeti' }, { href: '#teklifte-hangi-ayrintilar-acik-olmali', label: 'Teklif ayrıntıları' }, { href: '#shopify-maliyeti-hakkinda-sik-sorulan-sorular', label: 'SSS' }]} mark={<ShopifyIcon size={14} />} />
+    <ShopifySection id="shopify-maliyet-kalemleri" title="Shopify mağaza kurma maliyetini üç başlıkta düşünün" tone="gray" intro={<>Toplam bütçeyi değerlendirirken yalnız ilk kurulum teklifine veya Shopify plan ücretine bakmak yeterli değildir. Başlangıç işleri, düzenli servisler ve işlemle oluşan giderleri ayrı değerlendirin.</>} aside={<ShopifyVisual name="cost-split" className="mx-auto max-w-lg w-full" label="Temsili gider grupları: PakSoft hizmet bedeli, Shopify platform ve uygulama giderleri ile günlük operasyon giderleri ayrı planlanıyor" />}>
+      
       <ShopifyTable label="Shopify mağaza maliyet grupları" headers={['Maliyet grubu','Neleri kapsayabilir?','Nasıl belirlenir?']} rows={[
         ['Kurulum ve geliştirme','Tasarım, tema düzenleme, veri işleri, test ve kapsam dahilindeki bağlantılar','PakSoft teklifinde yazılı teslimatlar üzerinden'],['Platform ve servis giderleri','Shopify planı, alan adı, ücretli tema ve uygulamalar','İlgili sağlayıcının güncel koşulları üzerinden'],['İşlem ve devam eden hizmetler','Ödeme/işlem ücretleri, kullanıma bağlı servisler, bakım veya yeni geliştirmeler','Hesap, kullanım ve ayrıca kararlaştırılmış hizmet kapsamına göre'],
       ]}/>
       <p className="mt-4 max-w-3xl text-sm leading-6 text-gray-600">Bir kalemin tek seferlik, düzenli veya kullanıma bağlı olması sağlayıcıya ve seçilen çözüme göre değişebilir. Ödeme yapmadan önce güncel fiyat ve koşulları kontrol edin.</p>
     </ShopifySection>
 
-    <ShopifySection title="PakSoft proje bedelini etkileyen işler">
+    <ShopifySection title="Shopify tema tasarımı fiyatı ve proje bedelini etkileyen işler">
       <div data-shopify-reveal-group className="mt-6 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">{drivers.map(([title,text])=><article key={title} className="shopify-motion-card border-t-2 border-heritage-turquoise pt-4"><h3 className="font-semibold text-gray-950">{title}</h3><p className="mt-2 text-sm leading-6 text-gray-600">{text}</p></article>)}</div>
       <p className="mt-5"><ShopifyLink href={`${base}/ozellikler`}>Shopify özellikleri ve teslimat kapsamını inceleyin</ShopifyLink></p>
     </ShopifySection>
@@ -97,10 +99,7 @@ export default function ShopifyTurkishPricing() {
       <p className="mt-4"><Link href="/tr/start-project?service=shopify-development" className={`inline-flex min-h-11 items-center rounded-sm bg-heritage-turquoise-deep px-4 py-2.5 text-sm font-semibold text-white hover:bg-heritage-turquoise ${shopifyFocus}`}>Shopify Teklif Talebi Gönder</Link></p>
     </ShopifySection>
 
-    <ShopifySection title="Shopify hizmetinin diğer ayrıntıları" tone="gray">
-      <ShopifyIntro>Kurulum, teknik kapsam ve proje kararlarını ilgili sayfalarda karşılaştırabilirsiniz.</ShopifyIntro>
-      <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{pageLinks.map(([title,text,href])=><ShopifyLink key={title} href={href} className={`group flex h-full flex-col rounded-lg border border-heritage-sand bg-white p-4 transition-colors hover:border-heritage-turquoise ${shopifyFocus}`}><span className="font-semibold text-gray-900">{title}</span><span className="mt-1 block text-sm font-normal leading-6 text-gray-600">{text}</span><span className="mt-auto pt-3 text-sm font-semibold text-heritage-turquoise-deep">İncele</span></ShopifyLink>)}</div>
-    </ShopifySection>
+    <PlatformPageLinks platform="shopify" current="pricing" tone="gray" />
 
     <ShopifySection title="Shopify maliyeti hakkında sık sorulan sorular">
       <div className="divide-y divide-heritage-sand border-y border-heritage-sand">{faqs.map(([question,answer])=><article key={question} className="py-4"><h3 className="font-semibold text-gray-950">{question}</h3><p className="mt-2 max-w-4xl text-sm leading-6 text-gray-600">{answer}</p></article>)}</div>

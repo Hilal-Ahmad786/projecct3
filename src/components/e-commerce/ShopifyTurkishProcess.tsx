@@ -2,6 +2,9 @@ import Link from '@/components/IntentLink';
 import ShopifyArtwork from '@/components/shopify/visuals/ShopifyArtwork';
 import ShopifyMotionScope from './ShopifyMotionScope';
 import { ShopifyHero, ShopifyIntro, ShopifyLink, ShopifyPageCTA, ShopifySection, ShopifyTable, ShopifyVisual, shopifyFocus } from './ShopifyPagePrimitives';
+import PageJumpNav from './PageJumpNav';
+import PlatformPageLinks from './PlatformPageLinks';
+import { ShopifyIcon } from './ShopifyMark';
 
 const base = '/tr/hizmetler/shopify-development';
 
@@ -22,14 +25,6 @@ const steps = [
   ['Yayın ve devir', 'Yayın öncesi son kontrol yapılır. Kapsamdaki alan adı, erişim ve geçiş adımları onaylanan plana göre uygulanır. Yönetim notları ve devam eden sorumluluklar teslim edilir.', 'Yayın onayı ve ilgili hesaplarda yetkili kişinin ulaşılabilir olması.', 'Yayın kontrolü, teslim notları ve kararlaştırılmış takip kapsamı.'],
 ] as const;
 
-const detailPages = [
-  ['Shopify Kurulum ve Geliştirme', 'Yeni mağaza ve geliştirme ihtiyaçları için genel kapsam.', base],
-  ['Özellikler', 'Tema, ürün sayfaları ve bağlantı teslimatları.', `${base}/ozellikler`],
-  ['Teknolojiler', 'Tema, veri ve entegrasyon yaklaşımı.', `${base}/teknoloji`],
-  ['Portföy', 'Doğrulanmış Shopify çalışmalarını değerlendirin.', `${base}/portfoy`],
-  ['Fiyatlandırma', 'Kapsamın maliyet üzerindeki etkisi.', `${base}/fiyatlandirma`],
-  ['Sık Sorulan Sorular', 'Kurulum, taşıma ve teslimat sorularının yanıtları.', `${base}/sss`],
-] as const;
 
 const faqs = [
   ['Shopify mağazası kurulumu ne kadar sürer?', 'Süre; tasarım, ürün verisi, bağlantılar ve içeriklerin hazır olmasına bağlıdır. İlk inceleme sonrasında teslimatları ve dış bağımlılıkları içeren bir takvim hazırlanır.'],
@@ -55,7 +50,8 @@ export default function ShopifyTurkishProcess() {
       scene={<ProcessIllustration/>}
     />
 
-    <ShopifySection title="Yeni mağaza mı, mevcut siteden geçiş mi?" tone="gray">
+    <PageJumpNav items={[{ href: '#yeni-shopify-magazasi-mi-shopify-gecis-hizmeti-mi', label: 'Kurulum mu, geçiş mi?' }, { href: '#shopify-surec-adimlari', label: 'Altı adım' }, { href: '#baslamadan-once-neleri-hazirlamalisiniz', label: 'Hazırlık' }, { href: '#shopify-magaza-tasima', label: 'Mağaza taşıma' }, { href: '#woocommerce-shopify-tasima', label: 'WooCommerce geçişi' }, { href: '#eski-url-ler-ve-seo-gecis-plani', label: 'URL ve SEO' }, { href: '#yayin-oncesi-alisveris-ve-operasyon-testleri', label: 'Testler' }, { href: '#shopify-sureci-hakkinda-sik-sorulan-sorular', label: 'SSS' }]} mark={<ShopifyIcon size={14} />} />
+    <ShopifySection title="Yeni Shopify mağazası mı, Shopify geçiş hizmeti mi?" tone="gray">
       <ShopifyIntro>Başlangıç durumunuz, proje planını değiştirir. Shopify ile site kurma çalışmasında içerik hazırlığı öne çıkarken, çalışan bir mağazadan geçişte mevcut veriler ve satış operasyonu ayrıca ele alınır.</ShopifyIntro>
       <ShopifyTable label="Shopify başlangıç durumuna göre ilk değerlendirme" headers={['Başlangıç durumunuz', 'İlk değerlendirme', 'Planın belirleyici konusu']} rows={[
         ['Yeni mağaza açılışı', 'Ürünler, marka, içerikler ve hesaplar', 'Satışa başlamak için gerekli ilk kapsam'],
@@ -85,9 +81,8 @@ export default function ShopifyTurkishProcess() {
       <p className="mt-4 max-w-3xl text-sm leading-6 text-gray-600">Şifrelerinizi açık mesajla paylaşmak yerine desteklenen yetkilendirme yöntemlerini kullanırız. Gerekli erişimin türü, yapılacak işe göre belirlenir.</p>
     </ShopifySection>
 
-    <ShopifySection id="shopify-magaza-tasima" title="Shopify mağaza taşıma hizmeti: önce veri haritası">
-      <ShopifyIntro>Taşımaya başlamadan önce hangi kayıtların aktarılacağına ve Shopify’daki karşılıklarına karar veririz. Kaynak sistemde bulunması, her verinin aynı biçimde aktarılabileceği anlamına gelmez.</ShopifyIntro>
-      <ShopifyVisual name="migration-map" className="mt-6 max-w-2xl" label="Temsili geçiş akışı: eski mağazadaki ürün kayıtları Shopify mağazasına aktarılıyor, eski URL'ler yeni adreslerle eşleştiriliyor" />
+    <ShopifySection id="shopify-magaza-tasima" title="Shopify mağaza taşıma hizmeti: önce veri haritası" intro={<>Taşımaya başlamadan önce hangi kayıtların aktarılacağına ve Shopify’daki karşılıklarına karar veririz. Kaynak sistemde bulunması, her verinin aynı biçimde aktarılabileceği anlamına gelmez.</>} aside={<ShopifyVisual name="migration-map" className="mx-auto w-full" label="Temsili geçiş akışı: eski mağazadaki ürün kayıtları Shopify mağazasına aktarılıyor, eski URL'ler yeni adreslerle eşleştiriliyor" />}>
+      
       <ShopifyTable label="Shopify mağaza taşıma veri haritası" headers={['Veri alanı', 'İncelenen konu', 'Kabul kontrolü']} rows={[
         ['Ürün ve varyantlar', 'Seçenekler, tanımlayıcılar ve alan eşleştirmesi', 'Sayıların yanında örnek ürün ayrıntıları'],
         ['Görseller', 'Dosyalara erişim ve ürünlerle ilişkilendirme', 'Örnek ürünlerde görünüm ve sıralama'],
@@ -100,9 +95,8 @@ export default function ShopifyTurkishProcess() {
       <p className="mt-4 max-w-3xl text-sm leading-6 text-gray-600">Aktarım öncesi kapsam, deneme verisi ve mevcut kayıtlara etkiler belirlenir. Toplu işlem yapılacaksa yedekler, erişimler ve tekrar denemede kopya kayıt riskleri planlanır. Tüm geçmiş verilerin eksiksiz ve aynı biçimde aktarılacağı garantisi verilmez.</p>
     </ShopifySection>
 
-    <ShopifySection id="woocommerce-shopify-tasima" title="WooCommerce Shopify taşıma: özel kontrol noktaları" tone="gray">
-      <ShopifyIntro>WooCommerce Shopify taşıma çalışmasında ürün verileri kadar kullanılan eklentiler ve özel alanlar da önemlidir. Mevcut sitedeki her özelliğin Shopify’da birebir karşılığı bulunmayabilir.</ShopifyIntro>
-      <ShopifyArtwork name="woo-shopify-bridge" loop className="mt-6 max-w-3xl" label="Temsili WooCommerce Shopify geçişi: ürün, varyant, görsel ve URL kayıtları eşleştirilerek aktarılıyor; müşteri şifreleri taşınmıyor, eklentiler uygulama veya özel geliştirmeyle karşılanıyor" slotLabels={{ 'slot-source-label': 'WooCommerce mağazası', 'slot-plugin-label': 'Eklenti', 'slot-app-label': 'Uygulama' }} />
+    <ShopifySection id="woocommerce-shopify-tasima" title="WooCommerce Shopify taşıma: WordPress mağazalarında kontrol noktaları" tone="gray" intro={<>WooCommerce Shopify taşıma çalışmasında ürün verileri kadar kullanılan eklentiler ve özel alanlar da önemlidir. Mevcut sitedeki her özelliğin Shopify’da birebir karşılığı bulunmayabilir.</>} aside={<ShopifyArtwork name="woo-shopify-bridge" loop className="mx-auto w-full" label="Temsili WooCommerce Shopify geçişi: ürün, varyant, görsel ve URL kayıtları eşleştirilerek aktarılıyor; müşteri şifreleri taşınmıyor, eklentiler uygulama veya özel geliştirmeyle karşılanıyor" slotLabels={{ 'slot-source-label': 'WooCommerce mağazası', 'slot-plugin-label': 'Eklenti', 'slot-app-label': 'Uygulama' }} />}>
+      
       <div data-shopify-reveal-group className="mt-6 grid gap-5 sm:grid-cols-2">{[
         ['Ürün ve eklenti alanları', 'Varyantlar, ek ürün seçenekleri ve eklentilere ait alanlar incelenir. Standart ürün verisiyle taşınabilen bilgiler ile uygulama veya özel geliştirme gerektiren bilgiler ayrılır.'],
         ['Müşteri hesapları', 'Mevcut müşteri şifreleri taşınmaz. Seçilen Shopify müşteri hesabı türüne göre giriş veya yeniden hesap etkinleştirme yaklaşımı planlanır. Bu değişikliğin müşteriye nasıl anlatılacağı da geçiş hazırlığına eklenir.'],
@@ -112,9 +106,8 @@ export default function ShopifyTurkishProcess() {
       <div className="mt-7 rounded-xl border border-heritage-sand bg-white p-5 sm:p-6"><h3 className="text-title font-semibold text-gray-900">WooCommerce mağazanızın geçiş kapsamını çıkaralım</h3><p className="mt-2 max-w-3xl text-sm leading-6 text-gray-600">Mevcut adresinizi, ürün yapınızı ve önemli eklentilerinizi paylaşın. Taşınabilen kayıtları, yeniden kurulacak işlevleri ve ek inceleme gerektiren konuları ayıralım.</p><Link href="/tr/start-project?service=shopify-development" className={`mt-4 inline-flex min-h-11 items-center justify-center rounded-sm bg-heritage-turquoise px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-heritage-turquoise-deep ${shopifyFocus}`}>Mağaza Taşıma İhtiyacımı Paylaş</Link></div>
     </ShopifySection>
 
-    <ShopifySection title="Eski URL’ler ve SEO geçiş planı">
-      <ShopifyIntro>Taşıma sırasında sayfa adresleri değişebilir. Eski ürün, kategori ve içerik adreslerini ilgili yeni sayfalarla eşleştirerek gereksiz kırık bağlantıları azaltmayı hedefleriz.</ShopifyIntro>
-      <ShopifyArtwork name="redirect-map" className="mt-6 max-w-3xl" label="Temsili yönlendirme haritası: her eski URL anlamca karşılık gelen yeni sayfaya yönleniyor; tüm adresleri ana sayfaya göndermek yapılmıyor" slotLabels={{ 'slot-old-label': 'Eski URL', 'slot-new-label': 'Yeni URL' }} />
+    <ShopifySection title="Eski URL’ler ve SEO geçiş planı" intro={<>Taşıma sırasında sayfa adresleri değişebilir. Eski ürün, kategori ve içerik adreslerini ilgili yeni sayfalarla eşleştirerek gereksiz kırık bağlantıları azaltmayı hedefleriz.</>} aside={<ShopifyArtwork name="redirect-map" className="mx-auto w-full" label="Temsili yönlendirme haritası: her eski URL anlamca karşılık gelen yeni sayfaya yönleniyor; tüm adresleri ana sayfaya göndermek yapılmıyor" slotLabels={{ 'slot-old-label': 'Eski URL', 'slot-new-label': 'Yeni URL' }} />}>
+      
       <ul data-shopify-reveal-group className="mt-5 space-y-3">{[
         'Mevcut URL listesi ve erişim varsa organik trafik alan önemli sayfalar belirlenir.',
         'Eski adresler, anlam bakımından karşılık gelen yeni sayfalara eşleştirilir.',
@@ -153,10 +146,7 @@ export default function ShopifyTurkishProcess() {
       <p className="mt-4"><ShopifyLink href={`${base}/fiyatlandirma`}>Kapsamın fiyatlandırmaya etkisini inceleyin</ShopifyLink></p>
     </ShopifySection>
 
-    <ShopifySection title="Shopify hizmetinin diğer ayrıntıları" tone="ivory">
-      <ShopifyIntro>Kurulum, teknik yaklaşım ve proje kapsamını ilgili sayfalarda karşılaştırabilirsiniz.</ShopifyIntro>
-      <div data-shopify-reveal-group className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{detailPages.map(([title, text, href]) => <ShopifyLink key={title} href={href} className={`group flex h-full flex-col rounded-lg border border-heritage-sand bg-white p-4 transition-colors hover:border-heritage-turquoise ${shopifyFocus}`}><h3 className="font-semibold text-gray-900">{title}</h3><p className="mt-1 text-sm font-normal leading-6 text-gray-600">{text}</p><span className="mt-auto inline-flex items-center gap-1.5 pt-3 text-sm font-semibold text-heritage-turquoise-deep">İncele</span></ShopifyLink>)}</div>
-    </ShopifySection>
+    <PlatformPageLinks platform="shopify" current="process" tone="ivory" />
 
     <ShopifySection title="Shopify süreci hakkında sık sorulan sorular" tone="gray">
       <div className="divide-y divide-heritage-sand border-y border-heritage-sand">{faqs.map(([question, answer]) => <article key={question} className="py-4"><h3 className="font-semibold text-gray-900">{question}</h3><p className="mt-2 max-w-4xl text-sm leading-6 text-gray-600">{answer}</p></article>)}</div>

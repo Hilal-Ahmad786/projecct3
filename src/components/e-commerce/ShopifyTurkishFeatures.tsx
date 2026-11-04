@@ -1,9 +1,12 @@
 import Link from '@/components/IntentLink';
-import type { ReactNode } from 'react';
+import type { ComponentProps, ReactNode } from 'react';
 import { ArrowRightIcon, CheckIcon } from '@heroicons/react/24/outline';
 import ShopifyArtwork from '@/components/shopify/visuals/ShopifyArtwork';
 import ShopifyMotionScope from './ShopifyMotionScope';
 import { ShopifyHero, ShopifySection, ShopifyTable, ShopifyVisual } from './ShopifyPagePrimitives';
+import PageJumpNav from './PageJumpNav';
+import PlatformPageLinks from './PlatformPageLinks';
+import { ShopifyIcon } from './ShopifyMark';
 
 const base = '/tr/hizmetler/shopify-development';
 const paths = {
@@ -20,7 +23,7 @@ const paths = {
 const focus = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2';
 const linkStyle = `inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline ${focus}`;
 
-function Section(props: { id?: string; title: string; tone?: 'white' | 'gray' | 'ivory'; children: ReactNode }) { return <ShopifySection {...props} />; }
+function Section(props: ComponentProps<typeof ShopifySection>) { return <ShopifySection {...props} />; }
 function Intro({ children }: { children: ReactNode }) { return <p className="mt-4 max-w-3xl text-body leading-relaxed text-gray-600">{children}</p>; }
 function A({ href, children, className = linkStyle }: { href: string; children: ReactNode; className?: string }) { return href.startsWith('#') ? <a href={href} className={className}>{children}</a> : <Link href={href} className={className}>{children}</Link>; }
 const Table = ShopifyTable;
@@ -48,15 +51,6 @@ const faq = [
   ['Özel bir ERP bağlantısı geliştirebilir misiniz?', 'Önce ilgili sistemin API olanakları, erişim izinleri ve aktarılacak veriler incelenir. Uygun çözüm bulunduğunda geliştirme, test ve bakım kapsamı ayrıca belirlenir. Ön inceleme yapılmadan her sistemle bağlantı sözü verilmez.'],
 ] as const;
 
-const detailPages = [
-  ['Shopify Kurulum ve Geliştirme', 'Yeni mağaza, mevcut mağaza ve geçiş ihtiyaçlarının genel hizmet kapsamı.', paths.overview],
-  ['Teknolojiler', 'Tema geliştirme yaklaşımı ve teknik bağımlılıkların değerlendirilmesi.', paths.technologies],
-  ['Süreç', 'Hazırlık, geliştirme, test ve yayın adımlarının planlanması.', paths.process],
-  ['Portföy', 'Shopify çalışma örneklerini ve doğrulanmış proje katkılarını inceleyin.', paths.portfolio],
-  ['Fiyatlandırma', 'Tasarım, veri ve entegrasyon ihtiyaçlarının maliyete etkisi.', paths.pricing],
-  ['Blog', 'Shopify mağaza hazırlığı ve geliştirme kararlarına ilişkin rehberler.', paths.blog],
-  ['Sık Sorulan Sorular', 'Kapsam, hesaplar ve geliştirme kararları hakkında yanıtlar.', paths.faq],
-] as const;
 
 export default function ShopifyTurkishFeatures() {
   return <main className="min-h-screen bg-white">
@@ -73,6 +67,7 @@ export default function ShopifyTurkishFeatures() {
       scene={<StoreModulesIllustration/>}
     />
 
+    <PageJumpNav items={[{ href: '#shopify-ozellikleri', label: 'Özellikler' }, { href: '#shopify-tema-ozellikleri', label: 'Tema özelleştirme' }, { href: '#shopify-urun-sayfasi-tasarimi', label: 'Ürün sayfası' }, { href: '#koleksiyonlar-menuler-ve-urun-bulma-deneyimi', label: 'Koleksiyonlar' }, { href: '#sepet-ve-odeme-adimlarinda-netlik', label: 'Sepet ve ödeme' }, { href: '#shopify-odeme-kargo-ve-muhasebe-entegrasyonu', label: 'Entegrasyonlar' }, { href: '#shopify-cok-dilli-magaza-ve-farkli-pazarlara-hazirlik', label: 'Çok dilli mağaza' }, { href: '#shopify-veri-aktarimi-tasima-ve-ek-gelistirme-kapsami', label: 'Veri aktarımı' }, { href: '#shopify-ozellikleri-hakkinda-sik-sorulan-sorular', label: 'SSS' }]} mark={<ShopifyIcon size={14} />} />
     <Section id="shopify-ozellikleri" title="İhtiyacınıza göre şekillenen Shopify mağazası" tone="gray">
       <Intro>Yeni bir Shopify e-ticaret sitesi hazırlamak, yalnızca ana sayfayı tasarlamak değildir. Ürünlerin nasıl bulunacağı, hangi bilgilerin gösterileceği ve siparişin operasyonunuza nasıl aktarılacağı da kapsamın parçasıdır.</Intro>
       <Table label="Shopify mağazası ihtiyaç ve teslimat planı" headers={['İhtiyaç', 'Planladığımız çalışma', 'Netleştirdiğimiz teslimat']} rows={[
@@ -84,9 +79,8 @@ export default function ShopifyTurkishFeatures() {
       ]}/>
     </Section>
 
-    <Section id="shopify-tema-ozellikleri" title="Shopify tema düzenleme ve sayfa tasarımı">
-      <Intro>Hazır temayı olduğu gibi kullanmak ile sıfırdan tema geliştirmek arasında farklı çözümler bulunur. Shopify tema düzenleme çalışmasında önce mevcut yapıyı inceleriz. Mevcut temanın olanaklarını değerlendirir; düzenlenebilen alanlarla özel geliştirme gerektiren işleri ayırırız.</Intro>
-      <ShopifyArtwork name="theme-editor" loop className="mt-6 max-w-3xl" label="Temsili Shopify tema düzenleyici: bölümler ve bloklar sıralanıyor, seçilen blok önizlemedeki alanı vurguluyor" slotLabels={{ 'slot-panel-title': 'Tema düzenleyici' }} />
+    <Section id="shopify-tema-ozellikleri" title="Shopify tema düzenleme hizmeti ve tema özelleştirme" intro={<>Hazır temayı olduğu gibi kullanmak ile sıfırdan tema geliştirmek arasında farklı çözümler bulunur. Shopify tema düzenleme çalışmasında önce mevcut yapıyı inceleriz. Mevcut temanın olanaklarını değerlendirir; düzenlenebilen alanlarla özel geliştirme gerektiren işleri ayırırız.</>} aside={<ShopifyArtwork name="theme-editor" loop className="mx-auto w-full" label="Temsili Shopify tema düzenleyici: bölümler ve bloklar sıralanıyor, seçilen blok önizlemedeki alanı vurguluyor" slotLabels={{ 'slot-panel-title': 'Tema düzenleyici' }} />}>
+      
       <div data-shopify-reveal-group className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{[
         ['Ana sayfa ve kampanya bölümleri', 'Koleksiyon tanıtımları, kampanya alanları, ürün grupları ve güven bilgilerini ziyaretçinin karar sırasına göre yerleştiririz. Yönetilebilir bölüm yapısı, içerik ekibinizin günlük güncellemeleri yapabilmesini destekler.'],
         ['Ürün ve koleksiyon şablonları', 'Farklı ürün türleri için gerekli bilgi alanlarını belirleriz. Tek bir şablona sığmayan ihtiyaçlarda alternatif şablonları ve veri alanlarını kapsam içinde planlarız.'],
@@ -95,9 +89,8 @@ export default function ShopifyTurkishFeatures() {
       <p className="mt-5"><A href={paths.technologies}>Shopify geliştirmede kullandığımız teknolojiler<ArrowRightIcon className="h-4 w-4" aria-hidden="true"/></A></p>
     </Section>
 
-    <Section title="Shopify ürün sayfası tasarımı" tone="ivory">
-      <Intro>Ürün sayfası; fiyatın yanında seçenekleri, teslimat bilgisini ve müşterinin karar vermek için ihtiyaç duyduğu ayrıntıları da anlaşılır göstermelidir. Alanları gerçek ürün verinize göre tasarlarız.</Intro>
-      <ShopifyVisual name="variant-picker" loop className="mt-6 max-w-xl" label="Temsili ürün sayfası: renk ve beden varyantı seçildiğinde ürün görseli değişiyor" />
+    <Section title="Shopify ürün sayfası tasarımı" tone="ivory" intro={<>Ürün sayfası; fiyatın yanında seçenekleri, teslimat bilgisini ve müşterinin karar vermek için ihtiyaç duyduğu ayrıntıları da anlaşılır göstermelidir. Alanları gerçek ürün verinize göre tasarlarız.</>} aside={<ShopifyVisual name="variant-picker" loop className="mx-auto max-w-xl w-full" label="Temsili ürün sayfası: renk ve beden varyantı seçildiğinde ürün görseli değişiyor" />}>
+      
       <ul data-shopify-reveal-group className="mt-5 grid gap-x-8 sm:grid-cols-2">{[
         ['Ürün bilgileri', 'Başlık, açıklama, teknik ayrıntılar ve kullanım bilgileri için düzenli içerik alanları.'],
         ['Varyant seçimi', 'Beden, renk veya diğer seçeneklerin tema ve ürün yapısıyla uyumlu gösterimi.'],
@@ -117,9 +110,8 @@ export default function ShopifyTurkishFeatures() {
       ].map(([title, text]) => <article key={title} className="border-t-2 border-heritage-turquoise py-4"><h3 className="font-semibold text-gray-900">{title}</h3><p className="mt-2 text-sm leading-6 text-gray-600">{text}</p></article>)}</div>
     </Section>
 
-    <Section title="Sepet ve ödeme adımlarında netlik" tone="gray">
-      <Intro>Sepette ürün seçeneklerinin, adetlerin ve ilgili bilgilendirmelerin anlaşılır görünmesini sağlar; ödeme yolculuğunda seçilen planın izin verdiği düzenlemeleri ele alırız.</Intro>
-      <ShopifyArtwork name="checkout-boundary" loop className="mt-6 max-w-3xl" label="Temsili sınır: mağaza teması serbestçe düzenlenebiliyor; ödeme sayfasında yalnızca desteklenen uzantı noktaları değiştirilebiliyor" slotLabels={{ 'slot-storefront-label': 'Mağaza teması', 'slot-checkout-label': 'Ödeme sayfası' }} />
+    <Section title="Sepet ve ödeme adımlarında netlik" tone="gray" intro={<>Sepette ürün seçeneklerinin, adetlerin ve ilgili bilgilendirmelerin anlaşılır görünmesini sağlar; ödeme yolculuğunda seçilen planın izin verdiği düzenlemeleri ele alırız.</>} aside={<ShopifyArtwork name="checkout-boundary" loop className="mx-auto w-full" label="Temsili sınır: mağaza teması serbestçe düzenlenebiliyor; ödeme sayfasında yalnızca desteklenen uzantı noktaları değiştirilebiliyor" slotLabels={{ 'slot-storefront-label': 'Mağaza teması', 'slot-checkout-label': 'Ödeme sayfası' }} />}>
+      
       <div className="mt-5 space-y-4">{[
         ['Sepet alanı', 'Sepet sayfası veya çekmece düzeni, ürün güncelleme davranışları ve tema kapsamında desteklenen bilgilendirmeler incelenir.'],
         ['Ödeme görünümü', 'Marka ayarları ile daha ileri checkout özelleştirmeleri birbirinden ayrılır. Kullanılabilecek değişiklikler Shopify planına, desteklenen uzantılara ve uygulamalara bağlıdır.'],
@@ -141,9 +133,8 @@ export default function ShopifyTurkishFeatures() {
       <p className="mt-4"><A href={paths.payment}>Ödeme geçidi entegrasyonu hizmetini inceleyin<ArrowRightIcon className="h-4 w-4" aria-hidden="true"/></A></p>
     </Section>
 
-    <Section title="Shopify çok dilli mağaza ve farklı pazarlara hazırlık" tone="ivory">
-      <Intro>Farklı pazarlara satış hedefinde yalnızca dil düğmesi eklemek yeterli değildir. Yayınlanacak içerikleri, pazarları ve gerekli yerelleştirme işlerini birlikte belirleriz.</Intro>
-      <ShopifyArtwork name="markets" loop className="mt-6 max-w-3xl" label="Temsili çok dilli yapı: tek Shopify mağazası farklı dil ve pazar sürümlerine ayrılıyor; ödeme uygunluğu pazar bazında kontrol ediliyor" slotLabels={{ 'slot-market-1': 'Türkçe', 'slot-market-2': 'English', 'slot-market-3': 'Deutsch' }} />
+    <Section title="Shopify çok dilli mağaza ve farklı pazarlara hazırlık" tone="ivory" intro={<>Farklı pazarlara satış hedefinde yalnızca dil düğmesi eklemek yeterli değildir. Yayınlanacak içerikleri, pazarları ve gerekli yerelleştirme işlerini birlikte belirleriz.</>} aside={<ShopifyArtwork name="markets" loop className="mx-auto w-full" label="Temsili çok dilli yapı: tek Shopify mağazası farklı dil ve pazar sürümlerine ayrılıyor; ödeme uygunluğu pazar bazında kontrol ediliyor" slotLabels={{ 'slot-market-1': 'Türkçe', 'slot-market-2': 'English', 'slot-market-3': 'Deutsch' }} />}>
+      
       <ul data-shopify-reveal-group className="mt-5 grid gap-x-8 sm:grid-cols-2">{[
         'Dil ve pazar yapısının mevcut Shopify ayarlarıyla değerlendirilmesi.',
         'Çevrilecek ürün, sayfa ve tema metinlerinin listelenmesi.',
@@ -163,7 +154,7 @@ export default function ShopifyTurkishFeatures() {
       ].map(([title, text]) => <article key={title} className="border-t border-heritage-sand pt-4"><h3 className="font-semibold text-gray-900">{title}</h3><p className="mt-2 text-sm leading-6 text-gray-600">{text}</p></article>)}</div>
     </Section>
 
-    <Section title="Ürün aktarımı, taşıma ve ek geliştirme kapsamı" tone="gray">
+    <Section title="Shopify veri aktarımı, taşıma ve ek geliştirme kapsamı" tone="gray">
       <Intro>Her Shopify projesinin başlangıç koşulları aynı değildir. Shopify ürün aktarımı, veri aktarımı, mağaza taşıma veya özel uygulama geliştirme gibi işler kapsamda açıkça belirtilmelidir.</Intro>
       <Table label="Shopify iş kalemlerinin kapsamı" headers={['İş kalemi', 'Nasıl kapsamlandırılır?']} rows={[
         ['Tema ve sayfa düzenleri', 'Sayfa türleri, bölüm sayısı ve onaylı tasarım üzerinden'],
@@ -177,9 +168,8 @@ export default function ShopifyTurkishFeatures() {
       <p className="mt-4"><A href={paths.process}>Shopify kurulum ve taşıma sürecini inceleyin<ArrowRightIcon className="h-4 w-4" aria-hidden="true"/></A></p>
     </Section>
 
-    <Section title="Teslimatta neleri birlikte kontrol ediyoruz?" tone="ivory">
-      <Intro>Proje sonunda yalnızca sayfaları göstermek yerine üzerinde anlaştığımız kapsamı kontrol ederiz. Kabul listesi, projenizde gerçekten bulunan özelliklere göre hazırlanır.</Intro>
-      <ShopifyVisual name="launch-checklist" className="mt-6 max-w-md" />
+    <Section title="Teslimatta neleri birlikte kontrol ediyoruz?" tone="ivory" intro={<>Proje sonunda yalnızca sayfaları göstermek yerine üzerinde anlaştığımız kapsamı kontrol ederiz. Kabul listesi, projenizde gerçekten bulunan özelliklere göre hazırlanır.</>} aside={<ShopifyVisual name="launch-checklist" className="mx-auto max-w-md w-full" />}>
+      
       <ol className="mt-5 grid gap-x-8 sm:grid-cols-2">{[
         'Onaylı sayfa ve şablonlar mevcut mu?',
         'Belirlenen ürün örneklerinde varyantlar ve gerekli bilgiler doğru görünüyor mu?',
@@ -192,10 +182,7 @@ export default function ShopifyTurkishFeatures() {
       <p className="mt-4 max-w-3xl text-sm leading-6 text-gray-600">Testin yapılabilmesi için gerçek hesap erişimi, sağlayıcı onayı veya müşteri verisi gerekiyorsa bu bağımlılıklar teslim planında gösterilir.</p>
     </Section>
 
-    <Section title="Shopify hizmetinin diğer ayrıntıları">
-      <Intro>Özellik kapsamından sonra teknik yaklaşımı, süreci ve maliyeti ilgili sayfalardan inceleyebilirsiniz.</Intro>
-      <div data-shopify-reveal-group className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{detailPages.map(([title, text, href]) => <A key={title} href={href} className={`group rounded-lg border border-heritage-sand bg-white p-4 transition-colors hover:border-heritage-turquoise ${focus}`}><h3 className="font-semibold text-gray-900">{title}</h3><p className="mt-1 text-sm leading-6 text-gray-600">{text}</p><span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-heritage-turquoise-deep">İncele<ArrowRightIcon className="h-4 w-4" aria-hidden="true"/></span></A>)}</div>
-    </Section>
+    <PlatformPageLinks platform="shopify" current="features" tone="white" />
 
     <Section title="Shopify özellikleri hakkında sık sorulan sorular" tone="gray">
       <div className="divide-y divide-heritage-sand border-y border-heritage-sand">{faq.map(([question, answer]) => <div key={question} className="py-4"><h3 className="font-semibold text-gray-900">{question}</h3><p className="mt-2 max-w-4xl text-sm leading-6 text-gray-600">{answer}</p></div>)}</div>

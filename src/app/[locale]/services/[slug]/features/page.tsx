@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const shopifyTurkishMeta = slug === 'shopify-development' && validLocale === 'tr' ? {
     title: 'Shopify Tema Tasarımı ve Mağaza Özellikleri | PakSoft',
-    description: 'Shopify mağazanız için tema, ürün sayfası, mobil deneyim ve entegrasyon kapsamını inceleyin. Projenize uygun özellikleri ve teslimatları PakSoft ile belirleyin.',
+    description: 'Shopify tema tasarımı, tema özelleştirme, ürün sayfası tasarımı ve ödeme, kargo entegrasyonu kapsamını inceleyin. Mağazanıza uygun özellikleri PakSoft ile belirleyin.',
   } : undefined;
   const customMeta = slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('features', validLocale)

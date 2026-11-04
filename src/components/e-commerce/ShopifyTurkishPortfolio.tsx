@@ -4,6 +4,8 @@ import InternalPageHero from '@/components/services/InternalPageHero';
 import ShopifyMotionScope from './ShopifyMotionScope';
 import { ShopifyHeroScene, ShopifyIcon, ShopifyPlatformNote } from './ShopifyMark';
 import { ShopifyIntro, ShopifyLink, ShopifyPageCTA, ShopifySection, ShopifyTable, ShopifyVisual, shopifyFocus } from './ShopifyPagePrimitives';
+import PageJumpNav from './PageJumpNav';
+import PlatformPageLinks from './PlatformPageLinks';
 
 const base = '/tr/hizmetler/shopify-development';
 export const shopifyPortfolioMeta = {
@@ -33,6 +35,7 @@ export default function ShopifyTurkishPortfolio() {
     <ShopifyMotionScope />
     <InternalPageHero serviceName="Shopify Geliştirme" accentWord="Shopify Portföy" eyebrowNormalCase heading="Shopify ile Yapılmış Siteler ve Proje Çalışmaları" subtitle="Shopify ile yapılmış siteleri yalnız ana sayfa görünümüne göre değerlendirmeyin. Ürün sunumunu, mobil gezinmeyi ve projede hangi işlerin gerçekleştirildiğini birlikte inceleyin. Bu sayfadaki çalışmada PakSoft’un üstlendiği kapsamı ayrıca gösteriyoruz; örneği kendi ürün ve operasyon ihtiyaçlarınızla karşılaştırabilirsiniz." crumbs={[{label:'Ana Sayfa',href:'/'},{label:'Hizmetler',href:'/services'},{label:'Shopify Geliştirme',href:base},{label:'Portföy'}]} eyebrowIcon={<ShopifyIcon size={26} />} actions={<><Link href="/tr/start-project?service=shopify-development" className={`inline-flex min-h-11 items-center justify-center rounded-sm bg-gray-900 px-5 py-3 text-sm font-semibold text-white hover:bg-gray-700 ${shopifyFocus}`}>Benzer Bir Shopify Projesi Planlayalım</Link><a href="#shopify-projeleri" className={`inline-flex min-h-11 items-center justify-center rounded-sm border border-gray-300 bg-white px-5 py-3 text-sm font-semibold text-gray-800 hover:border-heritage-turquoise ${shopifyFocus}`}>Projeleri İncele</a></>} footnote={<div className="space-y-3"><p className="text-sm font-medium text-gray-600">Ürün sunumu · Kategori gezinmesi · Talep akışı</p><ShopifyPlatformNote /></div>} scene={<ShopifyHeroScene><div aria-label="Shopify portföy inceleme başlıkları" className="grid w-full max-w-md grid-cols-2 gap-3 rounded-2xl border border-heritage-sand bg-white p-5 shadow-sm">{[['01','Ürün sunumu'],['02','Mobil gezinme'],['03','Proje kapsamı'],['04','İşlevler']].map(([n,label])=><div key={n} className="rounded-xl border border-heritage-sand bg-heritage-ivory p-4"><span className="text-xs text-heritage-turquoise-deep">{n}</span><strong className="mt-2 block text-sm text-gray-900">{label}</strong></div>)}</div></ShopifyHeroScene>} rotating={{ lead: 'Shopify ile', words: ['Yapılmış Siteler', 'Mağaza Örnekleri', 'Proje Çalışmaları'] }} />
 
+    <PageJumpNav items={[{ href: '#shopify-projeleri', label: 'Projeler' }, { href: '#shopify-web-sitesi-orneklerinde-bakmaniz-gereken-alti-nokta', label: 'Örneklerde bakılacaklar' }, { href: '#gorunum-kapsam-ve-sonuc-birbirinden-farklidir', label: 'Kapsam ve sonuç' }, { href: '#proje-gorusmesine-gelirken-kisa-bir-ihtiyac-listesi-hazirlay', label: 'İhtiyaç listesi' }, { href: '#benzer-bir-shopify-projesini-nasil-planliyoruz', label: 'Planlama' }, { href: '#shopify-portfoyu-hakkinda-sik-sorulan-sorular', label: 'SSS' }]} mark={<ShopifyIcon size={14} />} />
     <ShopifySection id="shopify-projeleri" title="Shopify ile yapılmış siteler: proje çalışmalarımız" tone="gray">
       <ShopifyIntro>Bu projede görünen mağaza ile PakSoft’un gerçekleştirdiği işler birlikte açıklanıyor. Kategori odaklı ürün sunumu, kampanya alanları ve keşif talebi akışını inceleyebilirsiniz.</ShopifyIntro>
       <article data-shopify-reveal className="shopify-motion-card mt-7 overflow-hidden rounded-2xl border border-heritage-sand bg-white shadow-sm">
@@ -46,7 +49,7 @@ export default function ShopifyTurkishPortfolio() {
       </article>
     </ShopifySection>
 
-    <ShopifySection title="Shopify mağaza örneklerinde bakmanız gereken altı nokta">
+    <ShopifySection title="Shopify web sitesi örneklerinde bakmanız gereken altı nokta">
       <ShopifyIntro>Bir örneği beğenmeniz, aynı yapının sizin mağazanız için de uygun olacağı anlamına gelmez. Katalog büyüklüğünüzü, ürün bilgilerinizi ve yönetim ihtiyaçlarınızı birlikte değerlendirin.</ShopifyIntro>
       <ol data-shopify-reveal-group className="mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{evaluation.map(([title,text],i)=><li key={title} className="shopify-motion-card rounded-xl border border-heritage-sand bg-white p-5"><span className="text-xs font-semibold text-heritage-turquoise-deep">0{i+1}</span><h3 className="mt-2 font-semibold text-gray-950">{title}</h3><p className="mt-2 text-sm leading-6 text-gray-600">{text}</p></li>)}</ol>
     </ShopifySection>
@@ -59,9 +62,8 @@ export default function ShopifyTurkishPortfolio() {
       <p className="mt-4"><ShopifyLink href={`${base}/ozellikler`}>Shopify mağaza özelliklerini ve teslimatlarını inceleyin</ShopifyLink></p>
     </ShopifySection>
 
-    <ShopifySection title="Proje görüşmesine gelirken kısa bir ihtiyaç listesi hazırlayın">
-      <ShopifyIntro>Örnekleri yalnız “bunun aynısı olsun” diye paylaşmak yerine hangi davranışın veya düzenin gerekli olduğunu belirtin. Başka bir markanın tasarımını ve içeriklerini birebir kopyalamak yerine kendi ihtiyaçlarınıza uygun çözümü belirleriz.</ShopifyIntro>
-      <ShopifyVisual name="project-brief" className="mx-auto mt-6 w-full max-w-md" />
+    <ShopifySection title="Proje görüşmesine gelirken kısa bir ihtiyaç listesi hazırlayın" intro={<>Örnekleri yalnız “bunun aynısı olsun” diye paylaşmak yerine hangi davranışın veya düzenin gerekli olduğunu belirtin. Başka bir markanın tasarımını ve içeriklerini birebir kopyalamak yerine kendi ihtiyaçlarınıza uygun çözümü belirleriz.</>} aside={<ShopifyVisual name="project-brief" className="mx-auto w-full max-w-md" />}>
+      
       <ShopifyTable label="Shopify proje görüşmesi için hazırlanabilecek bilgiler" headers={['Paylaşabileceğiniz bilgi','Örnek açıklama']} rows={[
         ['Beğendiğiniz alan','“Ürün sayfasındaki bilgi grupları kolay okunuyor.”'],['Ürün yapınız','“Ürünlerimizde beden ve renk seçenekleri var.”'],['Güncelleme ihtiyacınız','“Kampanya alanlarını ekibimiz değiştirecek.”'],['Mevcut sisteminiz','“Stokları ayrı bir işletme yazılımında yönetiyoruz.”'],['Geçiş ihtiyacınız','“Mevcut ürün ve önemli bağlantıları değerlendirmek istiyoruz.”'],['Önceliğiniz','“İlk sürümde ürünler ve sipariş akışı hazır olsun.”'],
       ]}/>
@@ -75,6 +77,7 @@ export default function ShopifyTurkishPortfolio() {
     <ShopifySection title="Shopify portföyü hakkında sık sorulan sorular">
       <div className="divide-y divide-heritage-sand border-y border-heritage-sand">{faqs.map(([question,answer])=><article key={question} className="py-4"><h3 className="font-semibold text-gray-950">{question}</h3><p className="mt-2 max-w-4xl text-sm leading-6 text-gray-600">{answer}</p></article>)}</div>
     </ShopifySection>
+    <PlatformPageLinks platform="shopify" current="portfolio" tone="ivory" />
     <ShopifyPageCTA title="Shopify projenizi kendi ihtiyaçlarınıza göre şekillendirelim" description="Beğendiğiniz mağazaları, ürün yapınızı ve önceliklerinizi paylaşın. Görsel beklentilerin yanında sayfaları, veri işlerini ve gerekli bağlantıları da kapsayan bir başlangıç planı oluşturalım." primary="Shopify Projem İçin Görüşelim" secondaryHref={`${base}/fiyatlandirma`} secondary="Maliyeti Etkileyen Kalemleri İncele"/>
   </main>;
 }

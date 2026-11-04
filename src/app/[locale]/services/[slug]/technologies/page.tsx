@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     : slug === 'ikas-development' && validLocale === 'tr' ? getIkasTurkishSubpageMeta('technologies')
     : slug === 'shopify-development' && validLocale === 'tr' ? {
       title: 'Shopify Özel Tema Geliştirme ve Entegrasyon | PakSoft',
-      description: 'Shopify tema geliştirme, Liquid, GraphQL API ve entegrasyon yaklaşımımızı inceleyin. Mağazanız için uygun teknik kapsamı PakSoft ile belirleyin.',
+      description: 'Shopify özel tema geliştirme, Liquid geliştirme, GraphQL API ve ERP entegrasyonu yaklaşımımızı inceleyin. Mağazanız için uygun teknik kapsamı PakSoft ile belirleyin.',
     } : null;
   const { title, description } = customMeta || getServiceSubPageMeta('technologies', validLocale, service.name);
   const canonicalUrl = `${baseUrl}/${validLocale}${localizedPath}`;
