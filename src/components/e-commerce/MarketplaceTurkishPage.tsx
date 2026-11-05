@@ -11,10 +11,10 @@ import { FAQJsonLd } from '@/components/seo/JsonLd';
 import { trTitleCase } from '@/lib/tr-title-case';
 import { BlogFeedScene, FaqScene } from '@/components/services/hero-visuals/scenes-internal';
 import { getMarketplaceGuides } from '@/components/services/service-blogs/marketplace';
-import {
-  CommissionLedgerScene, MarketplaceHeroScene, OrderSplitScene, ProductApprovalScene, RolesScene,
-  ScenarioStackScene, SellerPanelScene, SellerScopeScene,
-} from '@/components/marketplace/MarketplaceScenes';
+import { MarketplaceHeroScene } from '@/components/marketplace/MarketplaceScenes';
+import OtogradeCase, { OtogradeHeroShot } from '@/components/marketplace/OtogradeCase';
+import MarketplaceArtwork from '@/components/marketplace/visuals/MarketplaceArtwork';
+import type { MarketplaceVisualName } from '@/components/marketplace/visuals/generated';
 import CustomEcommerceMotionScope from './CustomEcommerceMotionScope';
 import { sectionId } from './PageJumpNav';
 import PlatformPageLinks from './PlatformPageLinks';
@@ -38,7 +38,7 @@ const metas: Record<MarketplacePage, { title: string; description: string; headi
   features: { title: 'Pazaryeri Yazılımı Özellikleri ve Satıcı Paneli | PakSoft', description: 'Çok satıcılı pazaryerlerinde satıcı paneli, ürün onayı, sipariş dağıtımı, komisyon, hakediş ve iade özelliklerini inceleyin.', heading: 'Pazaryeri Yazılımı Özellikleri', intro: 'Satıcılarınız ürünlerini ve siparişlerini kendi panellerinden yönetirken platform ekibiniz ürün onayı, komisyon ve iade kurallarını belirler. Her rolün hangi bilgilere erişeceğini ve günlük işlemlerin nasıl ilerleyeceğini projenize göre planlayın.' },
   technologies: { title: 'Pazaryeri Altyapısı ve Entegrasyonlar | PakSoft', description: 'Çok satıcılı pazaryeri altyapısında satıcı verilerinin ayrımını, sipariş mimarisini, ödeme ve kargo entegrasyonlarını inceleyin.', heading: 'Çok Satıcılı Pazaryeri Altyapısı ve Entegrasyonları', intro: 'Pazaryeri altyapısı, her satıcının kendi ürün ve siparişlerini yönetmesini, platform ekibinin ise satışları merkezi olarak takip etmesini sağlar. Sipariş, ödeme, stok ve kargo bilgilerinin hangi sistemlerde tutulacağını ve nasıl bağlanacağını planlayın.' },
   process: { title: 'Pazaryeri Geliştirme Süreci ve Yayına Geçiş | PakSoft', description: 'Çok satıcılı pazaryeri projenizin kapsamını belirleyin. Satıcı ve sipariş akışlarının tasarımından kabul testlerine ve pilot yayına kadar adımları inceleyin.', heading: 'Pazaryeri Geliştirme Süreci', intro: 'Projeye ilk satıcı grubunu, satış modelini ve örnek bir siparişi belirleyerek başlayın. Siparişi satıcı başvurusundan kısmi iadeye kadar adım adım ele alarak ilk sürüm için gereken ekranları, kuralları ve bağlantıları netleştirin.' },
-  portfolio: { title: 'Çok Satıcılı Pazaryeri Proje Örnekleri | PakSoft', description: 'Üretici ağları, sektör platformları ve kurumsal tedarik için çok satıcılı pazaryeri senaryolarını ve proje kapsamlarını inceleyin.', heading: 'Çok Satıcılı Pazaryeri Proje Örnekleri', intro: 'Bir üretici ağının, sektör platformunun veya kurumsal tedarik ekibinin pazaryerinden beklentisi farklıdır. Temsili senaryolar; satıcı katılımı, katalog yönetimi ve sipariş kurallarının ilk sürüm kapsamını nasıl şekillendirdiğini gösterir.' },
+  portfolio: { title: 'Çok Satıcılı Pazaryeri Proje Örnekleri | PakSoft', description: 'Hasarlı araç pazaryeri Otograde ile üretici ağı, sektör platformu ve kurumsal tedarik için çok satıcılı pazaryeri senaryolarını ve proje kapsamlarını inceleyin.', heading: 'Çok Satıcılı Pazaryeri Proje Örnekleri', intro: 'Hasarlı araç pazaryeri Otograde, satıcı yönetimi ve ilan kalitesinin bir pazaryerini nasıl şekillendirdiğini gösteriyor. Temsili senaryolar ise üretici ağı, sektör platformu ve kurumsal tedarik için ilk sürüm kapsamını anlatıyor.' },
   pricing: { title: 'Pazaryeri Yazılımı Fiyatları ve Kurulum Maliyeti | PakSoft', description: 'Çok satıcılı pazaryeri kurma maliyetini etkileyen satıcı paneli, komisyon, iade ve entegrasyon kapsamını inceleyin. Projenize özel teklif alın.', heading: 'Pazaryeri Yazılımı Fiyatları Nasıl Belirlenir?', intro: 'Çok satıcılı bir pazaryeri kurmanın maliyeti; alıcı ve satıcı ekranlarına, komisyon ve iade kurallarına, sistem bağlantılarına ve yayın sonrası ihtiyaçlara göre değişir. Geliştirme bedelini, sağlayıcı ücretlerini ve işletme giderlerini ayrı ayrı değerlendirin.' },
   faq: { title: 'Pazaryeri Yazılımı Sık Sorulan Sorular | PakSoft', description: 'Çok satıcılı pazaryeri kurulumu, satıcı paneli, komisyon, hakediş, kısmi iade ve proje kapsamı hakkında sık sorulan soruları inceleyin.', heading: 'Pazaryeri Yazılımı Hakkında Sık Sorulan Sorular', intro: 'Kendi çok satıcılı platformunuzu kurmayı planlıyorsanız satıcıların nasıl katılacağını, siparişlerin nasıl dağıtılacağını ve iade durumunda hangi kayıtların güncelleneceğini bu sayfadan inceleyin.' },
   blog: { title: 'Pazaryeri Geliştirme Rehberleri | PakSoft', description: 'Çok satıcılı platform kurmadan önce satış modelinizi seçin. Komisyon, hakediş ve kısmi iade kurallarını örnek siparişle inceleyin.', heading: 'Pazaryeri Geliştirme Rehberleri', intro: 'Kendi pazaryerinizi kurarken önce satış modelinizi seçin, ardından bir siparişin alıcı, satıcı ve yönetici ekranlarında nasıl ilerleyeceğini belirleyin. Bu rehberler, ilk sürümden önce netleştirmeniz gereken kararları örneklerle gösterir.' },
@@ -57,6 +57,25 @@ const ikas = (name: IkasVisualName, opts: { label?: string; mark?: string; slotL
 const custom = (name: CustomEcomVisualName, label: string, slotLabels: Record<string, string>, className = 'mx-auto w-full max-w-xl') =>
   <CustomEcomArtwork name={name} loop label={label} slotLabels={slotLabels} className={className} storeLabel="Pazaryeriniz" />;
 
+const mp = (name: MarketplaceVisualName, label: string, slotLabels: Record<string, string> = {}, className = 'mx-auto w-full max-w-xl') =>
+  <MarketplaceArtwork name={name} loop label={label} slotLabels={slotLabels} className={className} />;
+
+// Dedicated Codex marketplace SVGs (src/components/marketplace/visuals/svg).
+const MP = {
+  hero: (className?: string) => mp('hero-marketplace', 'Temsili pazaryeri: iki satıcının ürünleri aynı vitrinde, tek sepet iki satıcı siparişine ayrılıyor, yönetici akışı izliyor', { 'slot-chip-approve': 'Ürün onaylandı', 'slot-chip-payout': 'Hakediş hazır', 'slot-order-a': 'Satıcı A', 'slot-order-b': 'Satıcı B' }, className),
+  split: () => mp('order-split', 'Temsili sipariş: alıcı tek ödeme yapıyor, sipariş Satıcı A ve Satıcı B kalemlerine ayrılıyor, her satıcı ayrı gönderi oluşturuyor', { 'slot-cart-label': 'Tek sepet', 'slot-seller-a': 'Satıcı A', 'slot-seller-b': 'Satıcı B' }),
+  ledger: () => mp('commission-ledger', 'Temsili hakediş: Satıcı A 1.000 TL satış, 100 TL komisyon, 900 TL hakediş; Satıcı B 600 TL satış, 90 TL komisyon, 510 TL hakediş; B ürününün 600 TL iadesi yalnızca B hakedişini 0 TL olarak günceller, A hakedişi değişmez', { 'slot-sale-a': '1.000 TL', 'slot-fee-a': '100 TL', 'slot-payout-a': '900 TL', 'slot-sale-b': '600 TL', 'slot-fee-b': '90 TL', 'slot-payout-b': '510 TL', 'slot-refund': '600 TL iade', 'slot-payout-b-new': '0 TL', 'slot-finance-label': 'Mutabakat' }),
+  roles: () => mp('roles', 'Temsili roller: aynı sipariş alıcı, satıcı ve yönetici ekranlarında farklı işlemlerle ilerliyor', { 'slot-order': 'Sipariş', 'slot-role-buyer': 'Alıcı', 'slot-role-seller': 'Satıcı', 'slot-role-operator': 'Yönetici' }),
+  approval: () => mp('product-approval', 'Temsili ürün onayı: satıcı ürünü gönderiyor, yönetici kategori kurallarını kontrol ediyor; ürün yayımlanıyor ya da gerekçeyle satıcıya dönüyor', { 'slot-draft-label': 'Satıcı ürünü', 'slot-review-label': 'Kontrol', 'slot-published-label': 'Yayında', 'slot-returned-label': 'Düzeltme istendi' }),
+  scope: () => mp('seller-scope', 'Temsili veri yetkisi: Satıcı A yalnızca kendi siparişlerini görüyor, Satıcı B kaydına erişimi engelleniyor; yönetici tüm siparişleri görüyor', { 'slot-panel-a': 'Satıcı A paneli', 'slot-panel-operator': 'Yönetici paneli', 'slot-rule': 'Satıcı bazında erişim' }),
+  panel: (className?: string) => mp('seller-panel', 'Temsili satıcı paneli: ürünler, siparişler, stok ve hakediş tek ekranda', { 'slot-seller-name': 'Satıcı paneli', 'slot-kpi-1': 'Yeni sipariş', 'slot-kpi-2': 'Az stok', 'slot-kpi-3': 'Onayda', 'slot-payout': 'Hakediş' }, className),
+  onboarding: () => mp('seller-onboarding', 'Temsili satıcı katılımı: satıcı şirket bilgileri ve belgelerle başvuruyor, yönetici onaylıyor, satıcı mağazası açılıyor', { 'slot-step-1': 'Satıcı başvurusu', 'slot-step-2': 'Yönetici onayı', 'slot-step-3': 'Mağaza açıldı' }),
+  models: () => mp('model-compare', 'Temsili model karşılaştırması: mevcut pazaryerlerine entegrasyon, satıcıları kendi platformunuza alan pazaryeri ve yalnızca kendi ürünlerinizi sattığınız mağaza', { 'slot-model-integration': 'Entegrasyon', 'slot-model-marketplace': 'Kendi pazaryeriniz', 'slot-model-single': 'Tek satıcılı site' }),
+  category: () => mp('category-rules', 'Temsili kategori kuralı: seçilen kategori zorunlu alanları belirliyor, eksik alan varken ürün yayına gönderilemiyor', { 'slot-category': 'Kategori', 'slot-form': 'Zorunlu ürün alanları' }),
+  pilot: () => mp('pilot-launch', 'Temsili pilot yayın: farklı kargo ve komisyon kurallarını temsil eden ilk satıcı grubu test ediliyor, ardından yeni satıcılar katılıyor', { 'slot-pilot': 'Pilot satıcılar', 'slot-wave': 'Sonraki katılım' }),
+  costs: () => mp('marketplace-costs', 'Temsili gider grupları: geliştirme işi teklifte; ödeme, kargo ve barındırma sağlayıcı giderleri ile yayın sonrası işletme ayrı tutuluyor', { 'slot-group-build': 'Geliştirme', 'slot-group-providers': 'Sağlayıcı giderleri', 'slot-group-operations': 'Yayın sonrası' }),
+};
+
 const ART = {
   release: (className?: string) => custom('release-scope', 'Temsili ilk sürüm planı: satıcı başvurusu, ürün onayı, sipariş ve iade ilk sürümde; gelişmiş raporlar ve ek kargo bağlantıları sonraki aşamada', { 'slot-release-label': 'İlk sürüm', 'slot-later-label': 'Sonraki aşama' }, className),
   quote: (className?: string) => custom('quote-builder', 'Temsili teklif yapısı: ekran, iş kuralı, entegrasyon ve test işleri teklifi oluşturuyor; barındırma ve sağlayıcı giderleri ayrı tutuluyor', { 'slot-quote-label': 'Proje teklifi', 'slot-external-label': 'Dış giderler' }, className),
@@ -67,22 +86,24 @@ const ART = {
 // Section → visual (matched on the start of the H2); no visual repeats its page hero.
 const VISUALS: Partial<Record<Exclude<MarketplacePage, 'blog'>, [string, SectionVisual][]>> = {
   overview: [
-    ['Alıcı, satıcı ve yönetici', aside(<RolesScene className="mx-auto max-w-xl" />)],
-    ['İki satıcılı bir sipariş', aside(<CommissionLedgerScene className="mx-auto max-w-xl" />)],
+    ['Pazaryeri entegrasyonu mu', aside(MP.models())],
+    ['Alıcı, satıcı ve yönetici', aside(MP.roles())],
+    ['İki satıcılı bir sipariş', aside(MP.ledger())],
     ['Online pazaryeri kurmak', aside(ART.release())],
     ['Pazaryeri geliştirme projesi', { place: 'below', node: ikas('process-rail', { className: 'mt-8 hidden lg:block', slotLabels: { 'slot-step-1': 'Satış modeli', 'slot-step-2': 'Akış tasarımı', 'slot-step-3': 'Geliştirme', 'slot-step-4': 'Kabul testi', 'slot-step-5': 'Pilot yayın' } }) }],
-    ['Pazaryeri yazılımı fiyatı', aside(ART.quote())],
+    ['Pazaryeri yazılımı fiyatı', aside(MP.costs())],
   ],
   features: [
-    ['Ürün kataloğu', aside(<ProductApprovalScene className="mx-auto max-w-xl" />)],
-    ['Sepet, sipariş', aside(<OrderSplitScene className="mx-auto max-w-xl" />)],
-    ['Komisyon yönetimi', aside(<CommissionLedgerScene className="mx-auto max-w-xl" />)],
+    ['Satıcı paneli', aside(MP.onboarding())],
+    ['Ürün kataloğu', aside(MP.approval())],
+    ['Sepet, sipariş', aside(MP.split())],
+    ['Komisyon yönetimi', aside(MP.ledger())],
     ['İlk sürümünüzde', aside(ART.release())],
   ],
   technologies: [
-    ['Satıcı verileri', aside(<SellerScopeScene className="mx-auto max-w-xl" />)],
-    ['Tek alışveriş', aside(<OrderSplitScene className="mx-auto max-w-xl" />)],
-    ['Ödeme, komisyon', aside(<CommissionLedgerScene className="mx-auto max-w-xl" />)],
+    ['Satıcı verileri', aside(MP.scope())],
+    ['Tek alışveriş', aside(MP.split())],
+    ['Ödeme, komisyon', aside(MP.ledger())],
     ['Kargo, stok', aside(custom('source-of-truth', 'Temsili veri kaynağı: stok ve fiyat işletme yazılımından pazaryerine, siparişler pazaryerinden işletme yazılımına aktarılıyor; ürün kodları eşleşiyor', { 'slot-system-label': 'İşletme yazılımı' }))],
     ['Entegrasyon kesintileri', aside(custom('retry-flow', 'Temsili bağlantı hatası: ilk deneme başarısız oluyor ve kayda geçiyor, yeniden deneme başarılı oluyor; tekrar gelen bildirim ikinci kayıt oluşturmuyor', { 'slot-service-label': 'Kargo servisi', 'slot-log-label': 'İşlem kaydı' }))],
   ],
@@ -94,8 +115,9 @@ const VISUALS: Partial<Record<Exclude<MarketplacePage, 'blog'>, [string, Section
   ],
   portfolio: [['Kendi pazaryeri projenizi', aside(ART.brief())]],
   pricing: [
-    ['Pazaryeri kurma maliyeti', aside(ikas('cost-split', { label: 'Temsili gider grupları: geliştirme, sağlayıcı hizmetleri ve yayın sonrası işletme giderleri' }))],
-    ['İlk sürüm kapsamı nasıl', aside(ART.release())],
+    ['Pazaryeri kurma maliyeti', aside(MP.costs())],
+    ['Geliştirme bedelini', aside(MP.category())],
+    ['İlk sürüm kapsamı nasıl', aside(MP.pilot())],
     ['Teklif almak için', aside(ART.brief())],
   ],
 };
@@ -130,12 +152,16 @@ function ClosingCta({ page }: { page: Exclude<MarketplacePage, 'blog'> }) {
   );
 }
 
+// Where the real Otograde case sits: after this H2 on the overview, first on Portföy.
+const CASE_AFTER: Partial<Record<Exclude<MarketplacePage, 'blog'>, string | null>> = { overview: 'Pazaryeri entegrasyonu mu', portfolio: null };
+
 const config: ServiceMdConfig<Exclude<MarketplacePage, 'blog'>> = {
   enquiry,
   visual: (page, title) => matchPrefix(VISUALS[page], title),
   card: (page) => page === 'portfolio' ? { badge: 'Temsili senaryo' } : undefined,
   jumpLabel,
   jumpMark: <BuildingStorefrontIcon className="h-3.5 w-3.5 text-heritage-turquoise-deep" />,
+  insert: (page) => page in CASE_AFTER ? { after: CASE_AFTER[page] ?? null, node: <OtogradeCase />, jump: { href: '#otograde', label: 'Örnek proje' } } : undefined,
   footer: (page, tone) => <><PlatformPageLinks platform="marketplace" current={page} tone={tone} /><ClosingCta page={page} /></>,
 };
 
@@ -145,14 +171,14 @@ const iconChip = <span className="flex h-8 w-8 items-center justify-center round
 const crumbs = (label: string) => [{ label: 'Ana Sayfa', href: '/' }, { label: 'Hizmetler', href: '/hizmetler' }, { label: 'Pazaryeri Geliştirme', href: base }, { label }];
 
 /** Overview hero art (rendered inside ServiceDetailClient). */
-export const MARKETPLACE_HERO_ART = <MarketplaceHeroScene><OrderSplitScene className="w-[20rem] max-w-full sm:w-[26rem] md:w-[30rem]" /></MarketplaceHeroScene>;
+export const MARKETPLACE_HERO_ART = <MarketplaceHeroScene tile="bottom-left">{MP.hero('w-[20rem] max-w-full sm:w-[26rem] md:w-[30rem]')}</MarketplaceHeroScene>;
 
 // Each subpage hero has its own scene (no visual repeats further down the same page).
 const HERO_ART: Record<SubPage, () => ReactNode> = {
-  features: () => <SellerPanelScene />,
+  features: () => MP.panel('w-full'),
   technologies: () => ART.hub('w-full'),
   process: () => ART.release('w-full'),
-  portfolio: () => <ScenarioStackScene />,
+  portfolio: () => <OtogradeHeroShot />,
   pricing: () => ART.quote('w-full'),
   faq: () => <FaqScene />,
 };
@@ -167,7 +193,7 @@ const ROTATING: Record<SubPage, { lead: string; words: string[] }> = {
 };
 
 const PRIMARY: Record<SubPage, string> = { features: 'Pazaryeri Özelliklerimi Planla', technologies: 'Teknik İhtiyaçlarımı Paylaş', process: 'Pazaryeri Projemi Planla', portfolio: 'Pazaryeri Projemi Anlat', pricing: 'Pazaryeri Projem İçin Teklif Al', faq: 'Pazaryeri Projemi Anlat' };
-const SECONDARY: Record<SubPage, [string, string]> = { features: ['Satıcı Panelini İncele', 'Satıcı paneli'], technologies: ['Entegrasyonları İncele', 'Kargo, stok'], process: ['Geliştirme Adımlarını İncele', ''], portfolio: ['Örnek Senaryoları İncele', ''], pricing: ['Maliyet Kalemlerini İncele', ''], faq: ['Sorulara Göz At', ''] };
+const SECONDARY: Record<SubPage, [string, string]> = { features: ['Satıcı Panelini İncele', 'Satıcı paneli'], technologies: ['Entegrasyonları İncele', 'Kargo, stok'], process: ['Geliştirme Adımlarını İncele', ''], portfolio: ['Otograde Projesini İncele', ''], pricing: ['Maliyet Kalemlerini İncele', ''], faq: ['Sorulara Göz At', ''] };
 
 /** Overview body (the hero stays in ServiceDetailClient). */
 export function MarketplaceOverviewBody() {
@@ -213,7 +239,7 @@ export default function MarketplaceTurkishPage({ page }: { page: Exclude<Marketp
       subtitle={copy.intro}
       scene={<MarketplaceHeroScene>{HERO_ART[page]()}</MarketplaceHeroScene>}
       crumbs={crumbs(copy.heading)}
-      actions={<><Link href={enquiry} className={`inline-flex min-h-11 items-center justify-center gap-2 rounded-sm bg-heritage-turquoise-deep px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-heritage-turquoise ${focus}`}>{PRIMARY[page]}<ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link><a href={target ? `#${sectionId(target.title)}` : '#'} className={`inline-flex min-h-11 items-center justify-center rounded-sm border border-heritage-sand bg-white px-5 py-3 text-sm font-semibold text-gray-800 hover:border-heritage-turquoise ${focus}`}>{secondaryLabel}</a></>}
+      actions={<><Link href={enquiry} className={`inline-flex min-h-11 items-center justify-center gap-2 rounded-sm bg-heritage-turquoise-deep px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-heritage-turquoise ${focus}`}>{PRIMARY[page]}<ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link><a href={page === 'portfolio' ? '#otograde' : target ? `#${sectionId(target.title)}` : '#'} className={`inline-flex min-h-11 items-center justify-center rounded-sm border border-heritage-sand bg-white px-5 py-3 text-sm font-semibold text-gray-800 hover:border-heritage-turquoise ${focus}`}>{secondaryLabel}</a></>}
     />
     <ServiceMdBody page={page} chunks={chunks} config={config} jumpTitle={page === 'faq' ? 'raw' : undefined} />
   </main>;

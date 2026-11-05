@@ -1,0 +1,819 @@
+{
+  "files": [
+    {
+      "file": "hero-marketplace.svg",
+      "viewBox": "0 0 640 520",
+      "groups": [
+        {
+          "id": "storefront",
+          "description": "browser storefront with four products"
+        },
+        {
+          "id": "product-1",
+          "description": "seller-tagged product tile"
+        },
+        {
+          "id": "product-2",
+          "description": "seller-tagged product tile"
+        },
+        {
+          "id": "product-3",
+          "description": "seller-tagged product tile"
+        },
+        {
+          "id": "product-4",
+          "description": "seller-tagged product tile"
+        },
+        {
+          "id": "cart",
+          "description": "single buyer cart with both seller accents"
+        },
+        {
+          "id": "order-a",
+          "description": "seller A order card"
+        },
+        {
+          "id": "order-b",
+          "description": "seller B order card"
+        },
+        {
+          "id": "split-a",
+          "description": "solid connector from cart to seller A order"
+        },
+        {
+          "id": "split-b",
+          "description": "solid connector from cart to seller B order"
+        },
+        {
+          "id": "operator",
+          "description": "marketplace operator dashboard"
+        },
+        {
+          "id": "op-row-1",
+          "description": "operator review row one"
+        },
+        {
+          "id": "op-row-2",
+          "description": "operator row awaiting approval"
+        },
+        {
+          "id": "op-row-3",
+          "description": "operator review row three"
+        },
+        {
+          "id": "chip-approve",
+          "description": "approval label chip"
+        },
+        {
+          "id": "chip-payout",
+          "description": "payout label chip"
+        }
+      ],
+      "drawPaths": [
+        "split-a",
+        "split-b"
+      ],
+      "slots": [
+        "slot-store-mark",
+        "slot-chip-approve",
+        "slot-chip-payout",
+        "slot-order-a",
+        "slot-order-b"
+      ],
+      "notes": "Seller A turquoise; Seller B saffron."
+    },
+    {
+      "file": "order-split.svg",
+      "viewBox": "0 0 720 380",
+      "groups": [
+        {
+          "id": "cart",
+          "description": "buyer cart with two seller items"
+        },
+        {
+          "id": "item-a",
+          "description": "seller A cart row"
+        },
+        {
+          "id": "item-b",
+          "description": "seller B cart row"
+        },
+        {
+          "id": "pay",
+          "description": "single checkout button"
+        },
+        {
+          "id": "split-node",
+          "description": "order split node"
+        },
+        {
+          "id": "flow-in",
+          "description": "cart to split connector"
+        },
+        {
+          "id": "flow-a",
+          "description": "split to seller A connector"
+        },
+        {
+          "id": "flow-b",
+          "description": "split to seller B connector"
+        },
+        {
+          "id": "seller-a",
+          "description": "seller A order lane"
+        },
+        {
+          "id": "seller-b",
+          "description": "seller B order lane"
+        },
+        {
+          "id": "ship-a",
+          "description": "seller A shipment tile"
+        },
+        {
+          "id": "ship-b",
+          "description": "seller B shipment tile"
+        }
+      ],
+      "drawPaths": [
+        "flow-in",
+        "flow-a",
+        "flow-b"
+      ],
+      "slots": [
+        "slot-seller-a",
+        "slot-seller-b",
+        "slot-cart-label"
+      ],
+      "notes": "Seller A turquoise; Seller B saffron."
+    },
+    {
+      "file": "commission-ledger.svg",
+      "viewBox": "0 0 720 400",
+      "groups": [
+        {
+          "id": "header",
+          "description": "ledger columns header"
+        },
+        {
+          "id": "row-a",
+          "description": "seller A sale, commission and payout"
+        },
+        {
+          "id": "sale-a",
+          "description": "seller A sale value pill"
+        },
+        {
+          "id": "fee-a",
+          "description": "seller A commission value pill"
+        },
+        {
+          "id": "payout-a",
+          "description": "seller A payout value pill"
+        },
+        {
+          "id": "row-b",
+          "description": "seller B sale, commission and payout"
+        },
+        {
+          "id": "sale-b",
+          "description": "seller B sale value pill"
+        },
+        {
+          "id": "fee-b",
+          "description": "seller B commission value pill"
+        },
+        {
+          "id": "payout-b",
+          "description": "seller B payout value pill"
+        },
+        {
+          "id": "refund-b",
+          "description": "partial refund row for seller B"
+        },
+        {
+          "id": "refund-amount",
+          "description": "refund amount pill"
+        },
+        {
+          "id": "refund-link",
+          "description": "solid refund adjustment connector"
+        },
+        {
+          "id": "payout-b-new",
+          "description": "adjusted seller B payout"
+        },
+        {
+          "id": "badge-finance",
+          "description": "finance ledger role badge"
+        }
+      ],
+      "drawPaths": [
+        "refund-link"
+      ],
+      "slots": [
+        "slot-sale-a",
+        "slot-fee-a",
+        "slot-payout-a",
+        "slot-sale-b",
+        "slot-fee-b",
+        "slot-payout-b",
+        "slot-refund",
+        "slot-payout-b-new",
+        "slot-finance-label"
+      ],
+      "notes": "Only Seller B payout is adjusted; Seller A row stays unchanged."
+    },
+    {
+      "file": "roles.svg",
+      "viewBox": "0 0 720 380",
+      "groups": [
+        {
+          "id": "order-chip",
+          "description": "shared order role handoff"
+        },
+        {
+          "id": "col-buyer",
+          "description": "buyer responsibilities panel"
+        },
+        {
+          "id": "col-seller",
+          "description": "seller responsibilities panel"
+        },
+        {
+          "id": "col-operator",
+          "description": "operator responsibilities panel"
+        },
+        {
+          "id": "buyer-1",
+          "description": "buyer task row 1"
+        },
+        {
+          "id": "buyer-2",
+          "description": "buyer task row 2"
+        },
+        {
+          "id": "buyer-3",
+          "description": "buyer task row 3"
+        },
+        {
+          "id": "seller-1",
+          "description": "seller task row 1"
+        },
+        {
+          "id": "seller-2",
+          "description": "seller task row 2"
+        },
+        {
+          "id": "seller-3",
+          "description": "seller task row 3"
+        },
+        {
+          "id": "operator-1",
+          "description": "operator task row 1"
+        },
+        {
+          "id": "operator-2",
+          "description": "operator task row 2"
+        },
+        {
+          "id": "operator-3",
+          "description": "operator task row 3"
+        },
+        {
+          "id": "link-buyer",
+          "description": "order to buyer connector"
+        },
+        {
+          "id": "link-seller",
+          "description": "order to seller connector"
+        },
+        {
+          "id": "link-operator",
+          "description": "order to operator connector"
+        }
+      ],
+      "drawPaths": [
+        "link-buyer",
+        "link-seller",
+        "link-operator"
+      ],
+      "slots": [
+        "slot-order",
+        "slot-role-buyer",
+        "slot-role-seller",
+        "slot-role-operator",
+        "slot-buyer-1",
+        "slot-buyer-2",
+        "slot-buyer-3",
+        "slot-seller-1",
+        "slot-seller-2",
+        "slot-seller-3",
+        "slot-operator-1",
+        "slot-operator-2",
+        "slot-operator-3"
+      ],
+      "notes": ""
+    },
+    {
+      "file": "product-approval.svg",
+      "viewBox": "0 0 720 360",
+      "groups": [
+        {
+          "id": "draft",
+          "description": "seller product draft form"
+        },
+        {
+          "id": "submit",
+          "description": "submit product control"
+        },
+        {
+          "id": "review",
+          "description": "operator category review panel"
+        },
+        {
+          "id": "check-1",
+          "description": "first category rule check"
+        },
+        {
+          "id": "check-2",
+          "description": "second category rule check"
+        },
+        {
+          "id": "check-3",
+          "description": "failed category rule check"
+        },
+        {
+          "id": "published",
+          "description": "approved product listing"
+        },
+        {
+          "id": "returned",
+          "description": "returned draft with reason bars"
+        },
+        {
+          "id": "flow-submit",
+          "description": "solid draft to review connector"
+        },
+        {
+          "id": "flow-publish",
+          "description": "solid approval to publish connector"
+        },
+        {
+          "id": "flow-return",
+          "description": "solid return path to seller"
+        }
+      ],
+      "drawPaths": [
+        "flow-submit",
+        "flow-publish",
+        "flow-return"
+      ],
+      "slots": [
+        "slot-draft-label",
+        "slot-review-label",
+        "slot-published-label",
+        "slot-returned-label"
+      ],
+      "notes": ""
+    },
+    {
+      "file": "seller-scope.svg",
+      "viewBox": "0 0 720 380",
+      "groups": [
+        {
+          "id": "data",
+          "description": "shared marketplace order data store"
+        },
+        {
+          "id": "rec-a1",
+          "description": "seller A record one"
+        },
+        {
+          "id": "rec-a2",
+          "description": "seller A record two"
+        },
+        {
+          "id": "rec-b1",
+          "description": "seller B record one"
+        },
+        {
+          "id": "rec-b2",
+          "description": "seller B record two"
+        },
+        {
+          "id": "panel-a",
+          "description": "seller A restricted panel"
+        },
+        {
+          "id": "access-a",
+          "description": "solid seller A access connector"
+        },
+        {
+          "id": "blocked",
+          "description": "dashed blocked access attempt"
+        },
+        {
+          "id": "block-mark",
+          "description": "blocked access mark"
+        },
+        {
+          "id": "panel-operator",
+          "description": "operator panel with all records"
+        },
+        {
+          "id": "access-operator",
+          "description": "solid operator access connector"
+        },
+        {
+          "id": "lock",
+          "description": "access rule lock"
+        }
+      ],
+      "drawPaths": [
+        "access-a",
+        "access-operator"
+      ],
+      "slots": [
+        "slot-panel-a",
+        "slot-panel-operator",
+        "slot-rule"
+      ],
+      "notes": "The blocked path is intentionally dashed and is not an animated drawPath."
+    },
+    {
+      "file": "seller-panel.svg",
+      "viewBox": "0 0 640 480",
+      "groups": [
+        {
+          "id": "nav-products",
+          "description": "products navigation tile"
+        },
+        {
+          "id": "nav-orders",
+          "description": "orders navigation tile"
+        },
+        {
+          "id": "nav-stock",
+          "description": "stock navigation tile"
+        },
+        {
+          "id": "nav-payouts",
+          "description": "payouts navigation tile"
+        },
+        {
+          "id": "dashboard",
+          "description": "seller management dashboard"
+        },
+        {
+          "id": "kpi-1",
+          "description": "seller summary tile one"
+        },
+        {
+          "id": "kpi-2",
+          "description": "seller summary tile two"
+        },
+        {
+          "id": "kpi-3",
+          "description": "seller summary tile three"
+        },
+        {
+          "id": "orders",
+          "description": "seller order list"
+        },
+        {
+          "id": "order-row-1",
+          "description": "seller order row 1"
+        },
+        {
+          "id": "order-row-2",
+          "description": "seller order row 2"
+        },
+        {
+          "id": "order-row-3",
+          "description": "seller order row 3"
+        },
+        {
+          "id": "order-row-4",
+          "description": "seller order row 4"
+        },
+        {
+          "id": "payout",
+          "description": "seller payout summary"
+        }
+      ],
+      "drawPaths": [],
+      "slots": [
+        "slot-seller-name",
+        "slot-kpi-1",
+        "slot-kpi-2",
+        "slot-kpi-3",
+        "slot-payout"
+      ],
+      "notes": ""
+    },
+    {
+      "file": "seller-onboarding.svg",
+      "viewBox": "0 0 720 340",
+      "groups": [
+        {
+          "id": "application",
+          "description": "seller application and documents"
+        },
+        {
+          "id": "doc-1",
+          "description": "company document tile"
+        },
+        {
+          "id": "doc-2",
+          "description": "supporting document tile"
+        },
+        {
+          "id": "approval",
+          "description": "operator application approval"
+        },
+        {
+          "id": "store-open",
+          "description": "seller storefront activation"
+        },
+        {
+          "id": "step-link-1",
+          "description": "solid application to approval connector"
+        },
+        {
+          "id": "step-link-2",
+          "description": "solid approval to store connector"
+        }
+      ],
+      "drawPaths": [
+        "step-link-1",
+        "step-link-2"
+      ],
+      "slots": [
+        "slot-step-1",
+        "slot-step-2",
+        "slot-step-3"
+      ],
+      "notes": ""
+    },
+    {
+      "file": "model-compare.svg",
+      "viewBox": "0 0 720 300",
+      "groups": [
+        {
+          "id": "model-integration",
+          "description": "existing store connected to external marketplaces"
+        },
+        {
+          "id": "model-marketplace",
+          "description": "multi-seller marketplace panel highlighted"
+        },
+        {
+          "id": "model-single",
+          "description": "single seller store panel"
+        },
+        {
+          "id": "integration-store",
+          "description": "source store tile"
+        },
+        {
+          "id": "out-1",
+          "description": "external marketplace tile one"
+        },
+        {
+          "id": "out-2",
+          "description": "external marketplace tile two"
+        },
+        {
+          "id": "out-3",
+          "description": "external marketplace tile three"
+        },
+        {
+          "id": "marketplace-store",
+          "description": "marketplace storefront"
+        },
+        {
+          "id": "single-store",
+          "description": "single-store storefront"
+        },
+        {
+          "id": "link-out-1",
+          "description": "outbound integration connector 1"
+        },
+        {
+          "id": "link-out-2",
+          "description": "outbound integration connector 2"
+        },
+        {
+          "id": "link-out-3",
+          "description": "outbound integration connector 3"
+        },
+        {
+          "id": "seller-1",
+          "description": "seller badge 1"
+        },
+        {
+          "id": "in-1",
+          "description": "seller to marketplace connector 1"
+        },
+        {
+          "id": "seller-2",
+          "description": "seller badge 2"
+        },
+        {
+          "id": "in-2",
+          "description": "seller to marketplace connector 2"
+        },
+        {
+          "id": "seller-3",
+          "description": "seller badge 3"
+        },
+        {
+          "id": "in-3",
+          "description": "seller to marketplace connector 3"
+        },
+        {
+          "id": "seller-4",
+          "description": "seller badge 4"
+        },
+        {
+          "id": "in-4",
+          "description": "seller to marketplace connector 4"
+        }
+      ],
+      "drawPaths": [
+        "link-out-1",
+        "link-out-2",
+        "link-out-3",
+        "in-1",
+        "in-2",
+        "in-3",
+        "in-4"
+      ],
+      "slots": [
+        "slot-model-integration",
+        "slot-model-marketplace",
+        "slot-model-single",
+        "slot-store-mark"
+      ],
+      "notes": "Two seller badges turquoise; two saffron."
+    },
+    {
+      "file": "category-rules.svg",
+      "viewBox": "0 0 720 320",
+      "groups": [
+        {
+          "id": "tree",
+          "description": "category selection tree"
+        },
+        {
+          "id": "cat-1",
+          "description": "category node one"
+        },
+        {
+          "id": "cat-2",
+          "description": "selected category node"
+        },
+        {
+          "id": "cat-3",
+          "description": "category node three"
+        },
+        {
+          "id": "form",
+          "description": "required product information form"
+        },
+        {
+          "id": "field-1",
+          "description": "required field one complete"
+        },
+        {
+          "id": "field-2",
+          "description": "required field two complete"
+        },
+        {
+          "id": "field-3",
+          "description": "required field three complete"
+        },
+        {
+          "id": "field-4",
+          "description": "missing required field"
+        },
+        {
+          "id": "publish",
+          "description": "disabled publish control"
+        },
+        {
+          "id": "rule-link",
+          "description": "solid category rule connector"
+        }
+      ],
+      "drawPaths": [
+        "rule-link"
+      ],
+      "slots": [
+        "slot-category",
+        "slot-form"
+      ],
+      "notes": ""
+    },
+    {
+      "file": "pilot-launch.svg",
+      "viewBox": "0 0 720 300",
+      "groups": [
+        {
+          "id": "pilot",
+          "description": "small initial seller cohort and launch checks"
+        },
+        {
+          "id": "wave-2",
+          "description": "later seller expansion group"
+        },
+        {
+          "id": "expand-path",
+          "description": "solid pilot to wider launch connector"
+        },
+        {
+          "id": "pilot-seller-1",
+          "description": "initial seller badge 1"
+        },
+        {
+          "id": "pilot-seller-2",
+          "description": "initial seller badge 2"
+        },
+        {
+          "id": "pilot-seller-3",
+          "description": "initial seller badge 3"
+        },
+        {
+          "id": "test-1",
+          "description": "pilot test check 1"
+        },
+        {
+          "id": "test-2",
+          "description": "pilot test check 2"
+        },
+        {
+          "id": "test-3",
+          "description": "pilot test check 3"
+        },
+        {
+          "id": "wave-seller-1",
+          "description": "later seller badge 1"
+        },
+        {
+          "id": "wave-seller-2",
+          "description": "later seller badge 2"
+        },
+        {
+          "id": "wave-seller-3",
+          "description": "later seller badge 3"
+        },
+        {
+          "id": "wave-seller-4",
+          "description": "later seller badge 4"
+        },
+        {
+          "id": "wave-seller-5",
+          "description": "later seller badge 5"
+        },
+        {
+          "id": "wave-seller-6",
+          "description": "later seller badge 6"
+        }
+      ],
+      "drawPaths": [
+        "expand-path"
+      ],
+      "slots": [
+        "slot-pilot",
+        "slot-wave"
+      ],
+      "notes": "Three initial sellers (two turquoise, one saffron); expansion group is faded."
+    },
+    {
+      "file": "marketplace-costs.svg",
+      "viewBox": "0 0 720 320",
+      "groups": [
+        {
+          "id": "group-build",
+          "description": "development work group"
+        },
+        {
+          "id": "group-providers",
+          "description": "external service and provider expense group"
+        },
+        {
+          "id": "group-operations",
+          "description": "ongoing operational work group"
+        }
+      ],
+      "drawPaths": [],
+      "slots": [
+        "slot-group-build",
+        "slot-group-providers",
+        "slot-group-operations"
+      ],
+      "notes": "First group represents quoted development work; provider and operating items are separate categories."
+    }
+  ]
+}

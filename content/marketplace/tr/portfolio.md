@@ -1,6 +1,6 @@
 ## Üç farklı pazaryeri senaryosu
 
-Her senaryoda satıcıların platforma nasıl katıldığını, kataloğun kimin kontrolünde olduğunu ve ilk sürümün kapsamını belirleyen soruyu bulabilirsiniz. Senaryolar temsilîdir; yayımlanmış bir müşteri projesini anlatmaz.
+Otograde ilan tabanlı bir pazaryeridir; sepet ve sipariş içeren platformlarda kapsam başka sorularla belirlenir. Aşağıdaki senaryolarda satıcıların platforma nasıl katıldığını, kataloğun kimin kontrolünde olduğunu ve ilk sürümün kapsamını belirleyen soruyu bulabilirsiniz. Senaryolar temsilîdir; yayımlanmış bir müşteri projesini anlatmaz.
 
 ### Üreticileri ortak katalogda buluşturan platform
 

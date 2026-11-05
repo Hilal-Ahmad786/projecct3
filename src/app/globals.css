@@ -20,19 +20,147 @@
   .page-fade { animation: none; }
 }
 
-/* marketplace scenes (src/components/marketplace/MarketplaceScenes.tsx).
-   Final state is the markup; IkasMotionScope opts a visible figure into the
-   one-time build (`ikas-visible`) and the inner loop wrapper into ambient
-   status pulses (`ikas-in-view`). Reduced motion never gets either class. */
-@keyframes mp-rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
-@keyframes mp-pop { 0% { opacity: 0; transform: scale(.9); } 65% { opacity: 1; transform: scale(1.03); } 100% { opacity: 1; transform: none; } }
-@keyframes mp-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
-@keyframes mp-pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(14, 124, 123, 0); } 50% { box-shadow: 0 0 0 4px rgba(14, 124, 123, .22); } }
-.mp-scene[data-ikas-reveal].ikas-visible { animation: none; }
-.mp-scene.ikas-visible .mp-step { animation: mp-rise 480ms cubic-bezier(.2,.7,.25,1) calc(var(--mp-i, 0) * 150ms + 80ms) both; }
-.mp-scene.ikas-visible .mp-pop { animation: mp-pop 520ms cubic-bezier(.2,.7,.25,1) calc(var(--mp-i, 0) * 150ms + 120ms) both; }
-.mp-scene.ikas-visible .mp-draw { stroke-dasharray: 1; animation: mp-draw 640ms ease-out calc(var(--mp-i, 0) * 150ms) both; }
-.mp-scene .ikas-in-view:not(.ikas-tab-hidden) .mp-pulse { animation: mp-pulse 2.6s ease-in-out calc(var(--mp-i, 0) * 700ms + 1.4s) infinite; }
+/* marketplace visuals (src/components/marketplace/visuals). Same contract as
+   the custom-ecommerce visuals: SVGs render in their final state; motion runs
+   after IkasMotionScope adds .ikas-visible (once) or .ikas-in-view (loops,
+   paused off-screen / in hidden tabs). Reduced motion keeps the end state. */
+.mp-art .mv-art > svg { display: block; width: 100%; height: auto; }
+.mp-art [class^="mv-"] { transform-box: fill-box; transform-origin: center; }
+.mp-art--commission-ledger [class^="mv-slot-"] { justify-content: center; }
+.mp-art--commission-ledger .mv-slot-fee-a, .mp-art--commission-ledger .mv-slot-fee-b { padding-left: 0.9em; }
+.mp-art--model-compare [class^="mv-slot-model"], .mp-art--marketplace-costs [class^="mv-slot-group"], .mp-art--seller-onboarding [class^="mv-slot-step"], .mp-art--roles .mv-slot-order { justify-content: center; }
+.mp-art--hero-marketplace :is(.mv-slot-chip-approve, .mv-slot-chip-payout) { font-size: clamp(9px, 1.05vw, 11.5px); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .mp-art.ikas-visible path[pathLength] { stroke-dasharray: 1; animation: iv-draw 800ms ease-out var(--mv-d, 300ms) both; }
+  .mp-art.ikas-visible .mv-slot { animation: iv-fade 500ms ease-out 300ms both; }
+  /* hero-marketplace */
+  .mp-art--hero-marketplace.ikas-visible :is(.mv-storefront) { animation: iv-rise 420ms ease-out 0ms both; }
+  .mp-art--hero-marketplace.ikas-visible :is(.mv-product-1) { animation: iv-pop 380ms ease-out 150ms both; }
+  .mp-art--hero-marketplace.ikas-visible :is(.mv-product-2) { animation: iv-pop 380ms ease-out 230ms both; }
+  .mp-art--hero-marketplace.ikas-visible :is(.mv-product-3) { animation: iv-pop 380ms ease-out 310ms both; }
+  .mp-art--hero-marketplace.ikas-visible :is(.mv-product-4) { animation: iv-pop 380ms ease-out 390ms both; }
+  .mp-art--hero-marketplace.ikas-visible :is(.mv-cart) { animation: iv-pop 380ms ease-out 550ms both; }
+  .mp-art--hero-marketplace.ikas-visible :is(.mv-order-a, .mv-order-b) { animation: iv-rise 420ms ease-out 1000ms both; }
+  .mp-art--hero-marketplace.ikas-visible :is(.mv-operator) { animation: iv-rise 420ms ease-out 1250ms both; }
+  .mp-art--hero-marketplace.ikas-visible :is(.mv-op-row-1, .mv-op-row-2, .mv-op-row-3) { animation: iv-fade 400ms ease-out 1450ms both; }
+  .mp-art--hero-marketplace.ikas-visible :is(.mv-chip-approve, .mv-chip-payout) { animation: iv-pop 380ms ease-out 1600ms both; }
+  .mp-art--hero-marketplace.ikas-visible :is(.mv-split-a, .mv-split-b) { --mv-d: 700ms; }
+  .mp-art--hero-marketplace .ikas-in-view:not(.ikas-tab-hidden) :is(.mv-chip-approve) { animation: iv-pop 380ms ease-out 1600ms both, iv-float 3.2s ease-in-out infinite; }
+  .mp-art--hero-marketplace .ikas-in-view:not(.ikas-tab-hidden) :is(.mv-chip-payout) { animation: iv-pop 380ms ease-out 1600ms both, iv-float 3.2s ease-in-out 1.6s infinite; }
+  .mp-art--hero-marketplace .ikas-in-view:not(.ikas-tab-hidden) :is(.mv-op-row-2) { animation: iv-fade 400ms ease-out 1450ms both, sv-glow 3.6s ease-in-out 2s infinite; }
+  /* order-split */
+  .mp-art--order-split.ikas-visible :is(.mv-cart) { animation: iv-rise 420ms ease-out 0ms both; }
+  .mp-art--order-split.ikas-visible :is(.mv-pay) { animation: iv-pop 380ms ease-out 350ms both; }
+  .mp-art--order-split.ikas-visible :is(.mv-split-node) { animation: iv-pop 380ms ease-out 700ms both; }
+  .mp-art--order-split.ikas-visible :is(.mv-seller-a, .mv-seller-b) { animation: iv-rise 420ms ease-out 1050ms both; }
+  .mp-art--order-split.ikas-visible :is(.mv-ship-a) { animation: iv-rise 420ms ease-out 1350ms both; }
+  .mp-art--order-split.ikas-visible :is(.mv-ship-b) { animation: iv-rise 420ms ease-out 1450ms both; }
+  .mp-art--order-split.ikas-visible :is(.mv-flow-in) { --mv-d: 400ms; }
+  .mp-art--order-split.ikas-visible :is(.mv-flow-a, .mv-flow-b) { --mv-d: 800ms; }
+  .mp-art--order-split .ikas-in-view:not(.ikas-tab-hidden) :is(.mv-split-node) { animation: iv-pop 380ms ease-out 700ms both, sv-glow 3.4s ease-in-out 2s infinite; }
+  /* commission-ledger */
+  .mp-art--commission-ledger.ikas-visible :is(.mv-header) { animation: iv-fade 400ms ease-out 0ms both; }
+  .mp-art--commission-ledger.ikas-visible :is(.mv-row-a) { animation: iv-rise 420ms ease-out 150ms both; }
+  .mp-art--commission-ledger.ikas-visible :is(.mv-row-b) { animation: iv-rise 420ms ease-out 300ms both; }
+  .mp-art--commission-ledger.ikas-visible :is(.mv-refund-b) { animation: iv-rise 420ms ease-out 800ms both; }
+  .mp-art--commission-ledger.ikas-visible :is(.mv-payout-b-new) { animation: iv-pop 380ms ease-out 1450ms both; }
+  .mp-art--commission-ledger.ikas-visible :is(.mv-badge-finance) { animation: iv-rise 420ms ease-out 1600ms both; }
+  .mp-art--commission-ledger.ikas-visible :is(.mv-refund-link) { --mv-d: 1050ms; }
+  .mp-art--commission-ledger .ikas-in-view:not(.ikas-tab-hidden) :is(.mv-payout-b-new) { animation: iv-pop 380ms ease-out 1450ms both, sv-glow 3.6s ease-in-out 2.4s infinite; }
+  /* roles */
+  .mp-art--roles.ikas-visible :is(.mv-order-chip) { animation: iv-pop 380ms ease-out 0ms both; }
+  .mp-art--roles.ikas-visible :is(.mv-col-buyer) { animation: iv-rise 420ms ease-out 500ms both; }
+  .mp-art--roles.ikas-visible :is(.mv-col-seller) { animation: iv-rise 420ms ease-out 600ms both; }
+  .mp-art--roles.ikas-visible :is(.mv-col-operator) { animation: iv-rise 420ms ease-out 700ms both; }
+  .mp-art--roles.ikas-visible :is(.mv-buyer-1, .mv-seller-1, .mv-operator-1) { animation: iv-fade 400ms ease-out 850ms both; }
+  .mp-art--roles.ikas-visible :is(.mv-buyer-2, .mv-seller-2, .mv-operator-2) { animation: iv-fade 400ms ease-out 950ms both; }
+  .mp-art--roles.ikas-visible :is(.mv-buyer-3, .mv-seller-3, .mv-operator-3) { animation: iv-fade 400ms ease-out 1050ms both; }
+  .mp-art--roles.ikas-visible :is(.mv-link-buyer, .mv-link-seller, .mv-link-operator) { --mv-d: 200ms; }
+  /* product-approval */
+  .mp-art--product-approval.ikas-visible :is(.mv-draft) { animation: iv-rise 420ms ease-out 0ms both; }
+  .mp-art--product-approval.ikas-visible :is(.mv-submit) { animation: iv-pop 380ms ease-out 250ms both; }
+  .mp-art--product-approval.ikas-visible :is(.mv-review) { animation: iv-rise 420ms ease-out 600ms both; }
+  .mp-art--product-approval.ikas-visible :is(.mv-check-1) { animation: iv-pop 380ms ease-out 850ms both; }
+  .mp-art--product-approval.ikas-visible :is(.mv-check-2) { animation: iv-pop 380ms ease-out 950ms both; }
+  .mp-art--product-approval.ikas-visible :is(.mv-check-3) { animation: iv-pop 380ms ease-out 1050ms both; }
+  .mp-art--product-approval.ikas-visible :is(.mv-published) { animation: iv-rise 420ms ease-out 1450ms both; }
+  .mp-art--product-approval.ikas-visible :is(.mv-returned) { animation: iv-rise 420ms ease-out 1900ms both; }
+  .mp-art--product-approval.ikas-visible :is(.mv-flow-submit) { --mv-d: 400ms; }
+  .mp-art--product-approval.ikas-visible :is(.mv-flow-publish) { --mv-d: 1200ms; }
+  .mp-art--product-approval.ikas-visible :is(.mv-flow-return) { --mv-d: 1650ms; }
+  .mp-art--product-approval .ikas-in-view:not(.ikas-tab-hidden) :is(.mv-check-3) { animation: iv-pop 380ms ease-out 1050ms both, cv-shake 4.5s ease-in-out 3s infinite; }
+  /* seller-scope */
+  .mp-art--seller-scope.ikas-visible :is(.mv-data) { animation: iv-pop 380ms ease-out 0ms both; }
+  .mp-art--seller-scope.ikas-visible :is(.mv-panel-a, .mv-panel-operator) { animation: iv-rise 420ms ease-out 450ms both; }
+  .mp-art--seller-scope.ikas-visible :is(.mv-operator-record-1, .mv-operator-record-2, .mv-operator-record-3, .mv-operator-record-4) { animation: iv-fade 400ms ease-out 700ms both; }
+  .mp-art--seller-scope.ikas-visible :is(.mv-blocked) { animation: iv-fade 400ms ease-out 1000ms both; }
+  .mp-art--seller-scope.ikas-visible :is(.mv-block-mark) { animation: iv-pop 380ms ease-out 1200ms both; }
+  .mp-art--seller-scope.ikas-visible :is(.mv-lock) { animation: iv-pop 380ms ease-out 1350ms both; }
+  .mp-art--seller-scope.ikas-visible :is(.mv-access-a, .mv-access-operator) { --mv-d: 200ms; }
+  .mp-art--seller-scope .ikas-in-view:not(.ikas-tab-hidden) :is(.mv-block-mark) { animation: iv-pop 380ms ease-out 1200ms both, cv-shake 4.5s ease-in-out 2.6s infinite; }
+  /* seller-panel */
+  .mp-art--seller-panel.ikas-visible :is(.mv-dashboard) { animation: iv-fade 400ms ease-out 0ms both; }
+  .mp-art--seller-panel.ikas-visible :is(.mv-nav-products) { animation: iv-pop 380ms ease-out 150ms both; }
+  .mp-art--seller-panel.ikas-visible :is(.mv-nav-orders) { animation: iv-pop 380ms ease-out 210ms both; }
+  .mp-art--seller-panel.ikas-visible :is(.mv-nav-stock) { animation: iv-pop 380ms ease-out 270ms both; }
+  .mp-art--seller-panel.ikas-visible :is(.mv-nav-payouts) { animation: iv-pop 380ms ease-out 330ms both; }
+  .mp-art--seller-panel.ikas-visible :is(.mv-kpi-1) { animation: iv-rise 420ms ease-out 350ms both; }
+  .mp-art--seller-panel.ikas-visible :is(.mv-kpi-2) { animation: iv-rise 420ms ease-out 450ms both; }
+  .mp-art--seller-panel.ikas-visible :is(.mv-kpi-3) { animation: iv-rise 420ms ease-out 550ms both; }
+  .mp-art--seller-panel.ikas-visible :is(.mv-order-row-1) { animation: iv-rise 420ms ease-out 700ms both; }
+  .mp-art--seller-panel.ikas-visible :is(.mv-order-row-2) { animation: iv-rise 420ms ease-out 780ms both; }
+  .mp-art--seller-panel.ikas-visible :is(.mv-order-row-3) { animation: iv-rise 420ms ease-out 860ms both; }
+  .mp-art--seller-panel.ikas-visible :is(.mv-order-row-4) { animation: iv-rise 420ms ease-out 940ms both; }
+  .mp-art--seller-panel.ikas-visible :is(.mv-payout) { animation: iv-pop 380ms ease-out 1100ms both; }
+  .mp-art--seller-panel .ikas-in-view:not(.ikas-tab-hidden) :is(.mv-order-row-3) { animation: iv-rise 420ms ease-out 860ms both, sv-glow 3.4s ease-in-out 2s infinite; }
+  /* seller-onboarding */
+  .mp-art--seller-onboarding.ikas-visible :is(.mv-application) { animation: iv-rise 420ms ease-out 0ms both; }
+  .mp-art--seller-onboarding.ikas-visible :is(.mv-doc-1) { animation: iv-pop 380ms ease-out 200ms both; }
+  .mp-art--seller-onboarding.ikas-visible :is(.mv-doc-2) { animation: iv-pop 380ms ease-out 280ms both; }
+  .mp-art--seller-onboarding.ikas-visible :is(.mv-approval) { animation: iv-pop 380ms ease-out 750ms both; }
+  .mp-art--seller-onboarding.ikas-visible :is(.mv-store-open) { animation: iv-pop 380ms ease-out 1350ms both; }
+  .mp-art--seller-onboarding.ikas-visible :is(.mv-step-link-1) { --mv-d: 400ms; }
+  .mp-art--seller-onboarding.ikas-visible :is(.mv-step-link-2) { --mv-d: 1000ms; }
+  .mp-art--seller-onboarding .ikas-in-view:not(.ikas-tab-hidden) :is(.mv-store-open) { animation: iv-pop 380ms ease-out 1350ms both, sv-glow 3.6s ease-in-out 2.2s infinite; }
+  /* model-compare */
+  .mp-art--model-compare.ikas-visible :is(.mv-model-integration) { animation: iv-rise 420ms ease-out 0ms both; }
+  .mp-art--model-compare.ikas-visible :is(.mv-model-marketplace) { animation: iv-rise 420ms ease-out 120ms both; }
+  .mp-art--model-compare.ikas-visible :is(.mv-model-single) { animation: iv-rise 420ms ease-out 240ms both; }
+  .mp-art--model-compare.ikas-visible :is(.mv-integration-store) { animation: iv-pop 380ms ease-out 350ms both; }
+  .mp-art--model-compare.ikas-visible :is(.mv-out-1, .mv-out-2, .mv-out-3) { animation: iv-pop 380ms ease-out 600ms both; }
+  .mp-art--model-compare.ikas-visible :is(.mv-marketplace-store) { animation: iv-pop 380ms ease-out 800ms both; }
+  .mp-art--model-compare.ikas-visible :is(.mv-seller-1, .mv-seller-2, .mv-seller-3, .mv-seller-4) { animation: iv-pop 380ms ease-out 1100ms both; }
+  .mp-art--model-compare.ikas-visible :is(.mv-single-store) { animation: iv-pop 380ms ease-out 1300ms both; }
+  .mp-art--model-compare.ikas-visible :is(.mv-link-out-1, .mv-link-out-2, .mv-link-out-3) { --mv-d: 450ms; }
+  .mp-art--model-compare.ikas-visible :is(.mv-in-1, .mv-in-2, .mv-in-3, .mv-in-4) { --mv-d: 950ms; }
+  /* category-rules */
+  .mp-art--category-rules.ikas-visible :is(.mv-tree) { animation: iv-rise 420ms ease-out 0ms both; }
+  .mp-art--category-rules.ikas-visible :is(.mv-cat-1, .mv-cat-3) { animation: iv-fade 400ms ease-out 150ms both; }
+  .mp-art--category-rules.ikas-visible :is(.mv-cat-2) { animation: iv-pop 380ms ease-out 250ms both; }
+  .mp-art--category-rules.ikas-visible :is(.mv-form) { animation: iv-rise 420ms ease-out 600ms both; }
+  .mp-art--category-rules.ikas-visible :is(.mv-field-1) { animation: iv-rise 420ms ease-out 750ms both; }
+  .mp-art--category-rules.ikas-visible :is(.mv-field-2) { animation: iv-rise 420ms ease-out 850ms both; }
+  .mp-art--category-rules.ikas-visible :is(.mv-field-3) { animation: iv-rise 420ms ease-out 950ms both; }
+  .mp-art--category-rules.ikas-visible :is(.mv-field-4) { animation: iv-rise 420ms ease-out 1050ms both; }
+  .mp-art--category-rules.ikas-visible :is(.mv-publish) { animation: iv-fade 400ms ease-out 1250ms both; }
+  .mp-art--category-rules.ikas-visible :is(.mv-rule-link) { --mv-d: 400ms; }
+  .mp-art--category-rules .ikas-in-view:not(.ikas-tab-hidden) :is(.mv-field-4) { animation: iv-rise 420ms ease-out 1050ms both, cv-shake 4.5s ease-in-out 2.6s infinite; }
+  /* pilot-launch */
+  .mp-art--pilot-launch.ikas-visible :is(.mv-pilot) { animation: iv-rise 420ms ease-out 0ms both; }
+  .mp-art--pilot-launch.ikas-visible :is(.mv-pilot-seller-1) { animation: iv-pop 380ms ease-out 200ms both; }
+  .mp-art--pilot-launch.ikas-visible :is(.mv-pilot-seller-2) { animation: iv-pop 380ms ease-out 280ms both; }
+  .mp-art--pilot-launch.ikas-visible :is(.mv-pilot-seller-3) { animation: iv-pop 380ms ease-out 360ms both; }
+  .mp-art--pilot-launch.ikas-visible :is(.mv-test-1) { animation: iv-fade 400ms ease-out 500ms both; }
+  .mp-art--pilot-launch.ikas-visible :is(.mv-test-2) { animation: iv-fade 400ms ease-out 600ms both; }
+  .mp-art--pilot-launch.ikas-visible :is(.mv-test-3) { animation: iv-fade 400ms ease-out 700ms both; }
+  .mp-art--pilot-launch.ikas-visible :is(.mv-wave-2) { animation: iv-rise 420ms ease-out 1150ms both; }
+  .mp-art--pilot-launch.ikas-visible :is(.mv-wave-seller-1, .mv-wave-seller-2, .mv-wave-seller-3, .mv-wave-seller-4, .mv-wave-seller-5, .mv-wave-seller-6) { animation: iv-fade 400ms ease-out 1300ms both; }
+  .mp-art--pilot-launch.ikas-visible :is(.mv-expand-path) { --mv-d: 850ms; }
+  /* marketplace-costs */
+  .mp-art--marketplace-costs.ikas-visible :is(.mv-group-build) { animation: iv-rise 420ms ease-out 0ms both; }
+  .mp-art--marketplace-costs.ikas-visible :is(.mv-group-providers, .mv-group-operations) { animation: iv-rise 420ms ease-out 350ms both; }
+}
 
 /* Turkish ikas pages: subtle, one-time motion. Elements are visible by
    default and only receive motion after the small observer opts them in. */
