@@ -205,8 +205,8 @@ export default function ProjectsHeroAnimation() {
           className="absolute w-2 h-2 rounded-full opacity-40"
           style={{
             background: `linear-gradient(135deg, ${['#1a3a6b', '#8B5CF6', '#0e7c7b', '#F59E0B', '#EC4899'][i]}, transparent)`,
-            left: `${10 + Math.random() * 80}%`,
-            top: `${10 + Math.random() * 80}%`,
+            left: `${10 + (((i + 1) * 0.618) % 1) * 80}%`,
+            top: `${10 + (((i + 1) * 0.382 + 0.5) % 1) * 80}%`,
           }}
           animate={{
             y: [-8, 8, -8],

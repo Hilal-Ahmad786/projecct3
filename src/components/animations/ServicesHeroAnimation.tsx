@@ -205,8 +205,8 @@ export default function ServicesHeroAnimation() {
           key={i}
           className="absolute w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 opacity-60"
           style={{
-            left: `${20 + Math.random() * 60}%`,
-            top: `${20 + Math.random() * 60}%`,
+            left: `${20 + (((i + 1) * 0.618) % 1) * 60}%`,
+            top: `${20 + (((i + 1) * 0.382 + 0.5) % 1) * 60}%`,
           }}
           animate={{
             y: [-10, 10, -10],

@@ -232,8 +232,8 @@ export default function AboutHeroAnimation() {
           key={i}
           className="absolute w-1.5 h-1.5 rounded-full bg-gradient-to-r from-blue-400 to-violet-400 opacity-50"
           style={{
-            left: `${15 + Math.random() * 70}%`,
-            top: `${15 + Math.random() * 70}%`,
+            left: `${15 + (((i + 1) * 0.618) % 1) * 70}%`,
+            top: `${15 + (((i + 1) * 0.382 + 0.5) % 1) * 70}%`,
           }}
           animate={{
             y: [-8, 8, -8],

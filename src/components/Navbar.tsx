@@ -896,7 +896,7 @@ export default function Navbar() {
   const [activeMegaCat, setActiveMegaCat] = useState('webSoftware');
   const servicesRef = useRef<HTMLLIElement>(null);
   const sectionBarRef = useRef<HTMLDivElement>(null);
-  const pathname = usePathname();
+  const rawPathname = usePathname();
   const router = useRouter();
 
   const { locale, setLocale, isLoading, dir } = useTranslations();
@@ -906,8 +906,14 @@ export default function Navbar() {
 
   // Convert localized pathname to English for detection
   // e.g., /tr/hizmetler/web-development → /services/web-development
-  const pathWithoutLocale = pathname.replace(`/${locale}`, '') || '/';
+  const pathWithoutLocale = rawPathname.replace(`/${locale}`, '') || '/';
   const englishPath = delocalizePath(pathWithoutLocale, locale);
+  // On the server an ISR render behind the localized rewrite sees the internal
+  // English route (/tr/services/…), the browser sees the public URL
+  // (/tr/hizmetler/…). Compare against one canonical localized path so the
+  // active states render the same on both sides (React hydration error #418).
+  const pathname = englishPath === '/' ? `/${locale}` : `/${locale}${localizeFullPath(englishPath, locale)}`;
+  const inServices = englishPath.startsWith('/services');
 
   // Detect if we are on a service detail page (microsite)
   const isServicePage = englishPath.includes('/services/') && englishPath.split('/').length > 2;
@@ -1076,7 +1082,7 @@ export default function Navbar() {
                     onClick={() => { setServicesOpen(!servicesOpen); setSearchQuery(''); }}
                     className={`
                       flex items-center gap-1 text-sm font-medium tracking-wide transition-colors duration-250
-                      ${pathname.includes('/services')
+                      ${inServices
                         ? 'text-gray-900'
                         : 'text-gray-600 hover:text-gray-900'
                       }
@@ -1085,7 +1091,7 @@ export default function Navbar() {
                     {t('services')}
                     <ChevronDownIcon className={`h-4 w-4 transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`} />
                   </button>
-                  {pathname.includes('/services') && !servicesOpen && (
+                  {inServices && !servicesOpen && (
                     <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gray-900" />
                   )}
 
@@ -1449,7 +1455,7 @@ export default function Navbar() {
                       onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
                       className={`
                         w-full flex items-center justify-between px-4 py-3 text-sm font-medium transition-colors border-l-2
-                        ${pathname.includes('/services')
+                        ${inServices
                           ? 'text-gray-900 border-gray-900 bg-gray-50'
                           : 'text-gray-600 border-transparent hover:text-gray-900 hover:border-gray-300'
                         }
