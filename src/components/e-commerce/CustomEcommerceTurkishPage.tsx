@@ -1,10 +1,6 @@
-import { readFileSync } from 'node:fs';
-import { join } from 'node:path';
-import { Children, Fragment, cloneElement, isValidElement, type ReactElement, type ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import Link from '@/components/IntentLink';
-import ReactMarkdown, { type Components } from 'react-markdown';
-import remarkGfm from 'remark-gfm';
-import { ArrowRightIcon, CheckIcon, CodeBracketSquareIcon } from '@heroicons/react/24/outline';
+import { ArrowRightIcon, CodeBracketSquareIcon } from '@heroicons/react/24/outline';
 import InternalPageHero from '@/components/services/InternalPageHero';
 import IkasVisual from '@/components/ikas/visuals/IkasVisual';
 import type { IkasVisualName } from '@/components/ikas/visuals/generated';
@@ -17,13 +13,13 @@ import Image from 'next/image';
 import { FaqScene } from '@/components/services/hero-visuals/scenes-internal';
 import { CustomEcommerceIcon } from './CustomEcommerceIcon';
 import ShopLameesCase from './ShopLameesCase';
-import PageJumpNav, { SectionHead, sectionId } from './PageJumpNav';
+import { sectionId } from './PageJumpNav';
+import { ServiceMdBody, matchPrefix, readServiceChunks, serviceFaqItems, type Chunk, type ServiceMdConfig } from './ServiceMarkdownPage';
 import PlatformPageLinks from './PlatformPageLinks';
 
 // Turkish custom e-commerce service (/tr/hizmetler/custom-ecommerce). Copy lives
-// in content/custom-ecommerce/tr/*.md; this file turns each `##` block into a
-// page section in the same rhythm as the ikas/Shopify pages (tones, Title Case
-// H2, jump bar, cards, shared Codex visuals, closing links + CTA).
+// in content/custom-ecommerce/tr/*.md and is rendered by ServiceMarkdownPage;
+// this file holds the page-specific parts (metadata, visuals, hero, closing).
 
 export type CustomEcommercePage = 'overview' | 'features' | 'technologies' | 'process' | 'portfolio' | 'pricing' | 'faq';
 export const CUSTOM_ECOM_BASE = '/tr/hizmetler/custom-ecommerce';
@@ -31,7 +27,6 @@ export const CUSTOM_ECOM_ENQUIRY = '/tr/start-project?service=custom-ecommerce';
 const base = CUSTOM_ECOM_BASE;
 const enquiry = CUSTOM_ECOM_ENQUIRY;
 const focus = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2';
-const linkClass = `font-semibold text-heritage-turquoise-deep underline decoration-heritage-turquoise/40 underline-offset-4 hover:decoration-heritage-turquoise ${focus}`;
 
 const metadata: Record<CustomEcommercePage, { title: string; description: string; heading: string; intro: string }> = {
   overview: { title: 'Özel E-Ticaret Sitesi ve Yazılım Geliştirme | PakSoft', description: 'Ürün seçeneklerinize, fiyat kurallarınıza ve sipariş akışınıza uygun özel e-ticaret sitesi ve özel e-ticaret yazılımı geliştirin. Kapsamı PakSoft ile belirleyin.', heading: 'Özel E-Ticaret Sitesi ve Yazılım Geliştirme', intro: 'Ürün seçenekleriniz, fiyatlandırma kurallarınız veya sipariş süreciniz standart bir mağaza kurulumundan daha fazla esneklik gerektiriyorsa satış sitenizi bu ihtiyaçlara göre geliştiriyoruz. Müşterinizin gördüğü mağaza ile ekibinizin kullandığı yönetim ve sipariş akışını birlikte planlıyoruz.' },
@@ -45,79 +40,8 @@ const metadata: Record<CustomEcommercePage, { title: string; description: string
 
 export function getCustomEcommerceMeta(page: CustomEcommercePage) { return metadata[page]; }
 
-/* ------------------------------------------------------------------ parsing */
-
-type Sub = { title: string; body: string };
-type Chunk = { title: string; intro: string; subs: Sub[] };
-
-const stripNumber = (title: string) => title.replace(/^\d+\.\s*/, '').trim();
-
-function readChunks(page: CustomEcommercePage): Chunk[] {
-  const markdown = readFileSync(join(process.cwd(), 'content/custom-ecommerce/tr', `${page}.md`), 'utf8');
-  const chunks: Chunk[] = [];
-  for (const line of markdown.split('\n')) {
-    if (line.startsWith('## ')) { chunks.push({ title: stripNumber(line.slice(3)), intro: '', subs: [] }); continue; }
-    const chunk = chunks.at(-1);
-    if (!chunk) continue;
-    if (line.startsWith('### ')) { chunk.subs.push({ title: line.slice(4).trim(), body: '' }); continue; }
-    const sub = chunk.subs.at(-1);
-    if (sub) sub.body += `${line}\n`; else chunk.intro += `${line}\n`;
-  }
-  return chunks.map((c) => ({ ...c, intro: c.intro.trim(), subs: c.subs.map((s) => ({ ...s, body: s.body.trim() })) }));
-}
-
-const isFaqChunk = (c: Chunk) => c.subs.length > 0 && c.subs.every((s) => s.title.endsWith('?'));
-const isStepChunk = (c: Chunk) => c.subs.length > 1 && c.subs.every((s) => /^\d+\./.test(s.title));
-const plain = (md: string) => md.replace(/\*\*|__|\[([^\]]+)\]\([^)]*\)/g, (_m, text) => text ?? '').replace(/\s+/g, ' ').trim();
-
-/** Q&A pairs for FAQPage JSON-LD (visible text, same wording). */
-function faqItems(chunks: Chunk[]) {
-  return chunks.filter(isFaqChunk).flatMap((c) => c.subs.map((s) => ({ question: s.title, answer: plain(s.body.replace(/^::cta .*$/gm, '')) })));
-}
-
-/* ---------------------------------------------------------------- markdown */
-
-/** Tag list items with their list kind/number so `li` can draw a tick or a step number. */
-function markItems(children: ReactNode, kind: 'ul' | 'ol') {
-  let n = 0;
-  return Children.map(children, (child) => isValidElement(child) ? cloneElement(child as ReactElement<Record<string, unknown>>, { 'data-kind': kind, 'data-index': ++n }) : child);
-}
-
-const md: Components = {
-  p: ({ children }) => <p className="mt-4 max-w-3xl text-body leading-relaxed text-gray-600 first:mt-0">{children}</p>,
-  strong: ({ children }) => <strong className="font-semibold text-gray-900">{children}</strong>,
-  ul: ({ children }) => <ul className="mt-4 grid max-w-4xl gap-2.5 sm:grid-cols-2">{markItems(children, 'ul')}</ul>,
-  ol: ({ children }) => <ol className="mt-4 max-w-3xl space-y-2.5">{markItems(children, 'ol')}</ol>,
-  li: (props) => {
-    const { children, 'data-kind': kind, 'data-index': index } = props as { children?: ReactNode; 'data-kind'?: string; 'data-index'?: number };
-    return <li className="flex gap-3 rounded-lg border border-heritage-sand bg-white px-4 py-3 text-sm leading-6 text-gray-700">{kind === 'ol'
-      ? <span aria-hidden="true" className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-heritage-turquoise-light text-xs font-semibold text-heritage-turquoise-deep">{index}</span>
-      : <CheckIcon className="mt-0.5 h-5 w-5 shrink-0 text-heritage-turquoise-deep" aria-hidden="true" />}<span>{children}</span></li>;
-  },
-  a: ({ href, children }) => href?.startsWith('/') ? <Link href={href} className={linkClass}>{children}</Link> : <a href={href} className={linkClass}>{children}</a>,
-  table: ({ children }) => <div role="region" aria-label="İçerik tablosu" tabIndex={0} className={`mt-6 overflow-x-auto rounded-xl border border-heritage-sand bg-white ${focus}`}><table className="w-full min-w-[620px] border-collapse text-left text-sm">{children}</table></div>,
-  thead: ({ children }) => <thead className="bg-heritage-ivory">{children}</thead>,
-  tr: ({ children }) => <tr className="even:bg-gray-50/70">{children}</tr>,
-  th: ({ children }) => <th scope="col" className="border-b border-heritage-sand px-4 py-3 font-semibold text-gray-900">{children}</th>,
-  td: ({ children }) => <td className="border-b border-gray-100 px-4 py-3 align-top leading-6 text-gray-700 first:font-medium first:text-gray-900">{children}</td>,
-  blockquote: ({ children }) => <blockquote className="mt-5 max-w-3xl border-s-4 border-heritage-turquoise bg-heritage-ivory p-5 text-sm leading-7 text-gray-700">{children}</blockquote>,
-};
-const inline: Components = { ...md, p: ({ children }) => <>{children}</> };
-
-function Md({ children, components = md }: { children: string; components?: Components }) {
-  return <ReactMarkdown remarkPlugins={[remarkGfm]} components={components}>{children}</ReactMarkdown>;
-}
-
-/** Markdown with `::cta text | button` lines turned into inline CTA boxes. */
-function Blocks({ text }: { text: string }) {
-  if (!text) return null;
-  const parts = text.split(/^(::cta .*)$/m).map((part) => part.trim()).filter(Boolean);
-  return <>{parts.map((part, i) => {
-    if (!part.startsWith('::cta ')) return <div key={i} className="mt-4 first:mt-0"><Md>{part}</Md></div>;
-    const [copy, button = 'Projemi Paylaş'] = part.slice(6).split('|').map((x) => x.trim());
-    return <div key={i} data-custom-ecom-reveal className="mt-7 flex max-w-4xl flex-col gap-4 rounded-xl border border-heritage-turquoise/30 bg-heritage-turquoise-light/60 p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6"><p className="text-sm font-medium leading-6 text-gray-800">{copy}</p><Link href={enquiry} className={`inline-flex min-h-11 shrink-0 items-center gap-2 self-start rounded-sm bg-heritage-turquoise-deep px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-heritage-turquoise sm:self-auto ${focus}`}>{button}<ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link></div>;
-  })}</>;
-}
+const readChunks = (page: CustomEcommercePage) => readServiceChunks('content/custom-ecommerce/tr', page);
+const faqItems = serviceFaqItems;
 
 /* ----------------------------------------------------------------- visuals */
 
@@ -188,10 +112,6 @@ const VISUALS: Partial<Record<CustomEcommercePage, [string, VisualSpec][]>> = {
 // Portföy scenario cards (in order) each get their matching illustration.
 const SCENARIO_ART: VisualSpec[] = [ART.measure, ART.dealer, ART.source];
 
-const lower = (s: string) => s.toLocaleLowerCase('tr');
-function visualFor(page: CustomEcommercePage, title: string) {
-  return VISUALS[page]?.find(([prefix]) => lower(title).startsWith(lower(prefix)))?.[1];
-}
 function Visual({ spec, className }: { spec: VisualSpec; className?: string }) {
   const wide = spec.name === 'method-options' || spec.name === 'architecture-options';
   const cls = className ?? (spec.place === 'below' ? `mt-8 ${wide ? 'mx-auto max-w-4xl' : 'hidden lg:block'}` : 'mx-auto w-full max-w-xl');
@@ -213,45 +133,9 @@ const JUMP_LABELS: [string, string][] = [
   ['İhtiyacınızı bir örnek', 'Senaryolar'], ['Özel e-ticaret örneğini', 'Değerlendirme'],
   ['Geliştirme, dış hizmetler', 'Maliyet kalemleri'], ['Proje bedelini', 'Bedeli etkileyenler'], ['Üç örnek teklif', 'Örnek kapsamlar'], ['Teklif almak için', 'Teklif hazırlığı'],
 ];
-const jumpLabel = (title: string) => JUMP_LABELS.find(([prefix]) => lower(title).startsWith(lower(prefix)))?.[1] ?? title.replace(/[?:].*$/, '');
+const jumpLabel = (title: string) => matchPrefix(JUMP_LABELS, title) ?? title.replace(/[?:].*$/, '');
 
 /* ---------------------------------------------------------------- sections */
-
-const TONES = ['gray', 'white', 'ivory'] as const;
-const toneClass = { gray: 'bg-background-gray', white: 'bg-white', ivory: 'bg-heritage-ivory' } as const;
-
-function SubGroup({ chunk, page }: { chunk: Chunk; page: CustomEcommercePage }) {
-  if (!chunk.subs.length) return null;
-  if (isFaqChunk(chunk)) {
-    return <div className="mt-6 max-w-4xl divide-y divide-heritage-sand border-y border-heritage-sand">{chunk.subs.map((s) => <div key={s.title} className="py-5"><h3 className="text-base font-semibold text-gray-900">{s.title}</h3><div className="mt-2 [&_p]:text-sm [&_p]:leading-6"><Blocks text={s.body} /></div></div>)}</div>;
-  }
-  if (isStepChunk(chunk)) {
-    return <ol className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">{chunk.subs.map((s, i) => <li key={s.title} data-custom-ecom-reveal data-custom-ecom-delay={Math.min(i, 5) * 45} className="flex flex-col rounded-xl border border-heritage-sand bg-white p-5"><span className="flex h-9 w-9 items-center justify-center rounded-full bg-heritage-turquoise-light text-sm font-semibold text-heritage-turquoise-deep">{i + 1}</span><h3 className="mt-3 text-base font-semibold text-gray-900">{stripNumber(s.title)}</h3><div className="mt-2 [&_p]:mt-2 [&_p]:text-sm [&_p]:leading-6"><Md>{s.body}</Md></div></li>)}</ol>;
-  }
-  const cols = chunk.subs.length % 3 === 0 ? 'lg:grid-cols-3' : 'lg:grid-cols-2';
-  return <div className={`mt-6 grid gap-4 sm:grid-cols-2 ${cols}`}>{chunk.subs.map((s, i) => <article key={s.title} data-custom-ecom-reveal data-custom-ecom-delay={Math.min(i, 5) * 45} className="flex h-full flex-col rounded-xl border border-heritage-sand bg-white p-5">{page === 'portfolio' && SCENARIO_ART[i] && <Visual spec={SCENARIO_ART[i]} className="-mx-1 mb-4 w-[calc(100%+0.5rem)] rounded-lg bg-heritage-ivory/60 p-2" />}{page === 'portfolio' && <span className="mb-3 self-start rounded-full bg-heritage-ivory px-2.5 py-1 text-xs font-semibold text-gray-600">Temsili senaryo</span>}<h3 className="text-base font-semibold leading-snug text-gray-900">{s.title}</h3><div className="mt-2 [&_p]:mt-2 [&_p]:text-sm [&_p]:leading-6"><Blocks text={s.body} /></div></article>)}</div>;
-}
-
-function ChunkSection({ chunk, page, index }: { chunk: Chunk; page: CustomEcommercePage; index: number }) {
-  const tone = TONES[index % TONES.length];
-  const spec = visualFor(page, chunk.title);
-  // With a side visual, the first plain paragraph becomes the heading intro.
-  let lead: string | undefined; let rest = chunk.intro;
-  if (spec?.place === 'aside') {
-    const [first, ...others] = chunk.intro.split(/\n\s*\n/);
-    if (first && !/^(\||-|\d+\.|::cta|>)/.test(first.trim())) { lead = first; rest = others.join('\n\n'); }
-  }
-  return (
-    <section id={sectionId(chunk.title)} className={`${toneClass[tone]} scroll-mt-[calc(var(--navbar-h,88px)+3.5rem)]`}>
-      <div className="mx-auto max-w-[1200px] px-4 sm:px-6 cw-section">
-        <SectionHead title={trTitleCase(chunk.title)} intro={lead ? <Md components={inline}>{lead}</Md> : undefined} aside={spec?.place === 'aside' ? <Visual spec={spec} /> : undefined} />
-        {rest && <div className="mt-5"><Blocks text={rest} /></div>}
-        {spec?.place === 'below' && <Visual spec={spec} />}
-        <SubGroup chunk={chunk} page={page} />
-      </div>
-    </section>
-  );
-}
 
 function ClosingCta({ page }: { page: CustomEcommercePage }) {
   const title = page === 'pricing' ? 'Özel e-ticaret projeniz için teklif alın' : page === 'faq' ? 'Mağazanız için kapsamı birlikte konuşalım' : 'Özel e-ticaret sitenizin ihtiyaçlarını birlikte planlayalım';
@@ -273,16 +157,18 @@ function ClosingCta({ page }: { page: CustomEcommercePage }) {
 // Where the real Shop Lamees case sits: after this H2 on the overview, first on Portföy.
 const CASE_AFTER: Partial<Record<CustomEcommercePage, string | null>> = { overview: 'Özel tasarım', portfolio: null };
 
+const config: ServiceMdConfig<CustomEcommercePage> = {
+  enquiry,
+  visual: (page, title) => { const spec = matchPrefix(VISUALS[page], title); return spec && { place: spec.place, node: <Visual spec={spec} /> }; },
+  card: (page, i) => page === 'portfolio' ? { art: SCENARIO_ART[i] && <Visual spec={SCENARIO_ART[i]} className="-mx-1 mb-4 w-[calc(100%+0.5rem)] rounded-lg bg-heritage-ivory/60 p-2" />, badge: 'Temsili senaryo' } : undefined,
+  jumpLabel,
+  jumpMark: <CodeBracketSquareIcon className="h-3.5 w-3.5 text-heritage-turquoise-deep" />,
+  insert: (page) => page in CASE_AFTER ? { after: CASE_AFTER[page] ?? null, node: <ShopLameesCase />, jump: { href: '#shop-lamees', label: 'Örnek proje' } } : undefined,
+  footer: (page, tone) => <><PlatformPageLinks platform="custom" current={page} tone={tone} /><ClosingCta page={page} /></>,
+};
+
 function Body({ page, chunks }: { page: CustomEcommercePage; chunks: Chunk[] }) {
-  const caseAt = page in CASE_AFTER ? (CASE_AFTER[page] === null ? 0 : chunks.findIndex((c) => lower(c.title).startsWith(lower(CASE_AFTER[page] as string))) + 1) : -1;
-  const jump = chunks.map((c) => ({ href: `#${sectionId(c.title)}`, label: page === 'faq' ? c.title : jumpLabel(c.title) }));
-  if (caseAt >= 0) jump.splice(caseAt, 0, { href: '#shop-lamees', label: 'Örnek proje' });
-  return <>
-    <PageJumpNav label={page === 'faq' ? 'SSS konuları' : 'Bu sayfada'} items={jump} mark={<CodeBracketSquareIcon className="h-3.5 w-3.5 text-heritage-turquoise-deep" />} />
-    {chunks.map((chunk, i) => <Fragment key={chunk.title}>{i === caseAt && <ShopLameesCase />}<ChunkSection chunk={chunk} page={page} index={i} /></Fragment>)}
-    <PlatformPageLinks platform="custom" current={page} tone={TONES[chunks.length % TONES.length]} />
-    <ClosingCta page={page} />
-  </>;
+  return <ServiceMdBody page={page} chunks={chunks} config={config} jumpTitle={page === 'faq' ? 'raw' : undefined} />;
 }
 
 /* -------------------------------------------------------------------- hero */

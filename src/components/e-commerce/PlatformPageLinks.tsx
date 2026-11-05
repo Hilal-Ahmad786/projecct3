@@ -7,9 +7,9 @@ import { trTitleCase } from '@/lib/tr-title-case';
 // and the current page is left out.
 
 export type PlatformPage = 'overview' | 'features' | 'technologies' | 'process' | 'portfolio' | 'pricing' | 'blog' | 'faq';
-type Platform = 'ikas' | 'shopify' | 'custom';
+type Platform = 'ikas' | 'shopify' | 'custom' | 'marketplace';
 
-const BASE: Record<Platform, string> = { ikas: '/tr/hizmetler/ikas-development', shopify: '/tr/hizmetler/shopify-development', custom: '/tr/hizmetler/custom-ecommerce' };
+const BASE: Record<Platform, string> = { ikas: '/tr/hizmetler/ikas-development', shopify: '/tr/hizmetler/shopify-development', custom: '/tr/hizmetler/custom-ecommerce', marketplace: '/tr/hizmetler/marketplace-development' };
 const SLUG: Record<PlatformPage, string> = { overview: '', features: '/ozellikler', technologies: '/teknoloji', process: '/surec', portfolio: '/portfoy', pricing: '/fiyatlandirma', blog: '/blog', faq: '/sss' };
 
 const PAGES: Record<Platform, Record<PlatformPage, [string, string]>> = {
@@ -43,6 +43,16 @@ const PAGES: Record<Platform, Record<PlatformPage, [string, string]>> = {
     blog: ['Özel e-ticaret rehberleri', 'Altyapı seçimi ve teklif öncesi kapsam.'],
     faq: ['Özel e-ticaret SSS', 'Kapsam, maliyet ve teslim soruları.'],
   },
+  marketplace: {
+    overview: ['Pazaryeri yazılımı ve çok satıcılı platform', 'Roller, örnek sipariş akışı ve ilk sürüm kapsamı.'],
+    features: ['Pazaryeri yazılımı özellikleri', 'Satıcı paneli, ürün onayı, komisyon ve kısmi iade.'],
+    technologies: ['Çok satıcılı pazaryeri altyapısı', 'Veri yetkileri, sipariş kalemleri ve entegrasyonlar.'],
+    process: ['Pazaryeri geliştirme süreci', 'Satış modelinden kabul testine ve pilot yayına.'],
+    portfolio: ['Pazaryeri proje senaryoları', 'Üretici ağı, sektör platformu ve kurumsal tedarik.'],
+    pricing: ['Pazaryeri yazılımı fiyatları', 'Geliştirme, sağlayıcı ve işletme giderleri.'],
+    blog: ['Pazaryeri geliştirme rehberleri', 'Satış modeli seçimi, komisyon ve kısmi iade.'],
+    faq: ['Pazaryeri SSS', 'Satıcı, sipariş, ödeme ve proje planı soruları.'],
+  },
 };
 
 const RELATED: Record<Platform, [string, string, string][]> = {
@@ -64,13 +74,20 @@ const RELATED: Record<Platform, [string, string, string][]> = {
     ['Ödeme Geçidi Entegrasyonu', 'Ödeme bağlantısı ve sipariş durumları.', '/tr/hizmetler/payment-gateway-integration'],
     ['Shopify Geliştirme', 'Hazır platformda kurulum ve tema hizmetleri.', '/tr/hizmetler/shopify-development'],
     ['ikas Geliştirme', 'ikas kurulum, tema ve uygulama hizmetleri.', '/tr/hizmetler/ikas-development'],
+    ['Pazaryeri Geliştirme', 'Çok satıcılı platform, satıcı paneli ve komisyon.', '/tr/hizmetler/marketplace-development'],
+  ],
+  marketplace: [
+    ['E-Ticaret Çözümleri', 'Tek satıcılı mağaza ve altyapı seçenekleri.', '/tr/hizmetler/e-commerce'],
+    ['Özel E-Ticaret', 'Hazır platforma sığmayan ürün ve sipariş kuralları.', '/tr/hizmetler/custom-ecommerce'],
+    ['B2B E-Ticaret', 'Bayi ve kurumsal müşteri sipariş akışları.', '/tr/hizmetler/b2b-ecommerce'],
+    ['Ödeme Geçidi Entegrasyonu', 'Ödeme bağlantısı, iade ve sipariş durumları.', '/tr/hizmetler/payment-gateway-integration'],
   ],
 };
 
 const focus = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2';
 
 export default function PlatformPageLinks({ platform, current, title, tone = 'ivory' }: { platform: Platform; current: PlatformPage; title?: string; tone?: 'white' | 'gray' | 'ivory' }) {
-  const name = platform === 'ikas' ? 'ikas' : platform === 'shopify' ? 'Shopify' : 'Özel e-ticaret';
+  const name = platform === 'ikas' ? 'ikas' : platform === 'shopify' ? 'Shopify' : platform === 'custom' ? 'Özel e-ticaret' : 'Pazaryeri';
   const pages = (Object.keys(PAGES[platform]) as PlatformPage[]).filter((page) => page !== current);
   const bg = tone === 'gray' ? 'bg-background-gray' : tone === 'ivory' ? 'bg-heritage-ivory' : 'bg-white';
   return (

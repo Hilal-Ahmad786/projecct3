@@ -12,6 +12,7 @@ const SERVICE_BLOGS: Record<string, readonly string[]> = {
   'ikas-development': ['tr'],
   'shopify-development': ['tr'],
   'custom-ecommerce': ['tr'],
+  'marketplace-development': ['tr'],
 };
 
 export function hasServiceBlog(category: string | null | undefined, locale: string): boolean {

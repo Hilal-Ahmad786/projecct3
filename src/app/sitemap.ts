@@ -7,6 +7,7 @@ import { isSubstantialService } from '@/lib/service-quality';
 import corporateWebsiteArticles from '@/data/corporate-website-articles/tr.json';
 import { getShopifyGuides } from '@/components/services/service-blogs/shopify-content';
 import customEcommerceArticles from '../../content/blog/custom-ecommerce/manifest.json';
+import marketplaceArticles from '../../content/blog/marketplace/manifest.json';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 const allLocales: Locale[] = ['en', 'tr', 'de', 'ar', 'ur'];
@@ -219,6 +220,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: PRIORITY.blogPost,
       changeFreq: 'monthly',
       date: new Date('2026-11-04T00:00:00Z'),
+      includeAlternates: false,
+    }));
+  });
+
+  // Repository-backed pazaryeri guides (Turkish only, dated in their manifest).
+  marketplaceArticles.forEach(({ slug, datePublished }) => {
+    entries.push(entry('tr', `/services/marketplace-development/blog/${slug}`, {
+      priority: PRIORITY.blogPost,
+      changeFreq: 'monthly',
+      date: new Date(`${datePublished}T00:00:00Z`),
       includeAlternates: false,
     }));
   });

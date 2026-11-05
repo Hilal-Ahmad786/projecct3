@@ -3,7 +3,7 @@ import { Locale } from '@/lib/i18n'
 import FullTranslations from '../FullTranslations'
 
 // Code-driven pages that only read core namespaces skip the full dictionary.
-const CORE_ONLY: Record<string, Locale[]> = { 'ikas-development': ['tr'], 'shopify-development': ['tr'], 'custom-ecommerce': ['tr'] }
+const CORE_ONLY: Record<string, Locale[]> = { 'ikas-development': ['tr'], 'shopify-development': ['tr'], 'custom-ecommerce': ['tr'], 'marketplace-development': ['tr'] }
 
 export default async function ServiceSlugLayout({ children, params }: { children: ReactNode; params: Promise<{ locale: Locale; slug: string }> }) {
   const { locale, slug } = await params

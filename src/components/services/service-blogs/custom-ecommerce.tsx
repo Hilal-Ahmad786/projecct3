@@ -20,13 +20,17 @@ export const customEcommerceBlog: ServiceBlogDefinition = {
   articles: manifest,
 };
 
-export function getCustomEcommerceGuides() { return manifest; }
+/** Manifest titles are SEO titles; headings and cards drop the brand suffix. */
+const heading = (title: string) => title.replace(/\s*\|\s*PakSoft$/, '');
+
+export function getCustomEcommerceGuides() { return manifest.map((entry) => ({ ...entry, title: heading(entry.title) })); }
 
 export function getCustomEcommerceGuide(slug: string) {
   const entry = manifest.find((item) => item.slug === slug);
   if (!entry) return null;
   return {
     ...entry,
+    title: heading(entry.title),
     metaTitle: entry.title,
     tags: ['özel e-ticaret', 'e-ticaret yazılımı', 'proje kapsamı'],
     content: readFileSync(join(process.cwd(), 'content/blog/custom-ecommerce', `${entry.slug}.md`), 'utf8'),

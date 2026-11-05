@@ -20,26 +20,19 @@
   .page-fade { animation: none; }
 }
 
-/* Marketplace development page: restrained one-time emphasis for role flows,
-   feature states and scenario cards. Content remains visible without JS. */
-@keyframes marketplace-rise {
-  from { transform: translateY(10px); opacity: .82; }
-  to { transform: translateY(0); opacity: 1; }
-}
-.marketplace-scene { animation: marketplace-rise 420ms ease-out both; }
-.marketplace-seller { animation: marketplace-rise 440ms ease-out both; }
-.marketplace-card { animation: marketplace-rise 380ms ease-out both; }
-.marketplace-state-row { animation: marketplace-rise 360ms ease-out both; }
-.marketplace-flow span { animation: marketplace-flow-step 700ms ease-out both; }
-.marketplace-flow span:nth-child(2) { animation-delay: 90ms; }
-.marketplace-flow span:nth-child(3) { animation-delay: 180ms; }
-@keyframes marketplace-flow-step { from { opacity: .35; transform: translateX(-5px); } to { opacity: 1; transform: translateX(0); } }
-.marketplace-timeline { position: relative; }
-.marketplace-timeline::before { position: absolute; top: 2.75rem; bottom: 2.75rem; left: 2.125rem; width: 1px; background: #0E7C7B; content: ''; transform-origin: top; animation: marketplace-timeline-draw 700ms ease-out 160ms both; }
-@keyframes marketplace-timeline-draw { from { transform: scaleY(0); } to { transform: scaleY(1); } }
-@media (prefers-reduced-motion: reduce) {
-  .marketplace-scene, .marketplace-seller, .marketplace-card, .marketplace-state-row, .marketplace-flow span, .marketplace-timeline::before { animation: none !important; }
-}
+/* marketplace scenes (src/components/marketplace/MarketplaceScenes.tsx).
+   Final state is the markup; IkasMotionScope opts a visible figure into the
+   one-time build (`ikas-visible`) and the inner loop wrapper into ambient
+   status pulses (`ikas-in-view`). Reduced motion never gets either class. */
+@keyframes mp-rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@keyframes mp-pop { 0% { opacity: 0; transform: scale(.9); } 65% { opacity: 1; transform: scale(1.03); } 100% { opacity: 1; transform: none; } }
+@keyframes mp-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes mp-pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(14, 124, 123, 0); } 50% { box-shadow: 0 0 0 4px rgba(14, 124, 123, .22); } }
+.mp-scene[data-ikas-reveal].ikas-visible { animation: none; }
+.mp-scene.ikas-visible .mp-step { animation: mp-rise 480ms cubic-bezier(.2,.7,.25,1) calc(var(--mp-i, 0) * 150ms + 80ms) both; }
+.mp-scene.ikas-visible .mp-pop { animation: mp-pop 520ms cubic-bezier(.2,.7,.25,1) calc(var(--mp-i, 0) * 150ms + 120ms) both; }
+.mp-scene.ikas-visible .mp-draw { stroke-dasharray: 1; animation: mp-draw 640ms ease-out calc(var(--mp-i, 0) * 150ms) both; }
+.mp-scene .ikas-in-view:not(.ikas-tab-hidden) .mp-pulse { animation: mp-pulse 2.6s ease-in-out calc(var(--mp-i, 0) * 700ms + 1.4s) infinite; }
 
 /* Turkish ikas pages: subtle, one-time motion. Elements are visible by
    default and only receive motion after the small observer opts them in. */

@@ -17,9 +17,11 @@ interface CustomEcomArtworkProps {
   /** Keep ambient loops running while on screen. */
   loop?: boolean;
   className?: string;
+  /** Text beside the store mark in `slot-store-mark` boxes. */
+  storeLabel?: string;
 }
 
-export default function CustomEcomArtwork({ name, label, slotLabels, loop = false, className = '' }: CustomEcomArtworkProps) {
+export default function CustomEcomArtwork({ name, label, slotLabels, loop = false, className = '', storeLabel = 'Mağazanız' }: CustomEcomArtworkProps) {
   const visual = CUSTOM_ECOM_VISUALS[name];
   const slots = visual.slots as Record<string, { left: number; top: number; width: number; height: number }>;
   return (
@@ -34,7 +36,7 @@ export default function CustomEcomArtwork({ name, label, slotLabels, loop = fals
       {Object.entries(slots).map(([id, box]) => {
         const style = { left: `${box.left}%`, top: `${box.top}%`, width: `${box.width}%`, height: `${box.height}%` };
         if (id === 'slot-store-mark') {
-          return <span key={id} aria-hidden="true" className="cv-slot cv-slot-store-mark absolute flex items-center gap-1 whitespace-nowrap text-[clamp(9px,1.2vw,13px)] font-bold text-gray-900" style={style}><span className="inline-flex shrink-0" style={{ width: '1.25em', height: '1.25em' }}><CustomEcommerceIcon className="h-full w-full" /></span>Mağazanız</span>;
+          return <span key={id} aria-hidden="true" className="cv-slot cv-slot-store-mark absolute flex items-center gap-1 whitespace-nowrap text-[clamp(9px,1.2vw,13px)] font-bold text-gray-900" style={style}><span className="inline-flex shrink-0" style={{ width: '1.25em', height: '1.25em' }}><CustomEcommerceIcon className="h-full w-full" /></span>{storeLabel}</span>;
         }
         const text = slotLabels?.[id];
         return text ? <span key={id} aria-hidden="true" className={`cv-slot cv-${id} absolute flex items-center ${id.startsWith('slot-chip') ? 'ps-1' : ''} whitespace-nowrap text-[clamp(8px,1.15vw,12.5px)] font-semibold leading-tight text-gray-700`} style={style}>{text}</span> : null;
