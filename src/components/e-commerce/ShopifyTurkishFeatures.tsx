@@ -79,7 +79,7 @@ export default function ShopifyTurkishFeatures() {
       ]}/>
     </Section>
 
-    <Section id="shopify-tema-ozellikleri" title="Shopify tema düzenleme hizmeti ve tema özelleştirme" intro={<>Hazır temayı olduğu gibi kullanmak ile sıfırdan tema geliştirmek arasında farklı çözümler bulunur. Shopify tema düzenleme çalışmasında önce mevcut yapıyı inceleriz. Mevcut temanın olanaklarını değerlendirir; düzenlenebilen alanlarla özel geliştirme gerektiren işleri ayırırız.</>} aside={<ShopifyArtwork name="theme-editor" loop className="mx-auto w-full" label="Temsili Shopify tema düzenleyici: bölümler ve bloklar sıralanıyor, seçilen blok önizlemedeki alanı vurguluyor" slotLabels={{ 'slot-panel-title': 'Tema düzenleyici' }} />}>
+    <Section id="shopify-tema-ozellikleri" title="Shopify tema düzenleme hizmeti ve tema özelleştirme" intro={<>Hazır temayı olduğu gibi kullanmak ile sıfırdan tema geliştirmek arasında farklı çözümler bulunur. Shopify tema düzenleme çalışmasında önce mevcut yapıyı inceleriz. Mevcut temanın olanaklarını değerlendirir; düzenlenebilen alanlarla özel geliştirme gerektiren işleri ayırırız.</>} aside={<ShopifyVisual name="editable-fields" loop className="mx-auto w-full max-w-xl" label="Temsili Shopify yönetim paneli: panelde düzenlenen alan mağaza temasında aynı yerde güncelleniyor" />}>
       
       <div data-shopify-reveal-group className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{[
         ['Ana sayfa ve kampanya bölümleri', 'Koleksiyon tanıtımları, kampanya alanları, ürün grupları ve güven bilgilerini ziyaretçinin karar sırasına göre yerleştiririz. Yönetilebilir bölüm yapısı, içerik ekibinizin günlük güncellemeleri yapabilmesini destekler.'],
@@ -110,7 +110,7 @@ export default function ShopifyTurkishFeatures() {
       ].map(([title, text]) => <article key={title} className="border-t-2 border-heritage-turquoise py-4"><h3 className="font-semibold text-gray-900">{title}</h3><p className="mt-2 text-sm leading-6 text-gray-600">{text}</p></article>)}</div>
     </Section>
 
-    <Section title="Sepet ve ödeme adımlarında netlik" tone="gray" intro={<>Sepette ürün seçeneklerinin, adetlerin ve ilgili bilgilendirmelerin anlaşılır görünmesini sağlar; ödeme yolculuğunda seçilen planın izin verdiği düzenlemeleri ele alırız.</>} aside={<ShopifyArtwork name="checkout-boundary" loop className="mx-auto w-full" label="Temsili sınır: mağaza teması serbestçe düzenlenebiliyor; ödeme sayfasında yalnızca desteklenen uzantı noktaları değiştirilebiliyor" slotLabels={{ 'slot-storefront-label': 'Mağaza teması', 'slot-checkout-label': 'Ödeme sayfası' }} />}>
+    <Section title="Sepet ve ödeme adımlarında netlik" tone="gray" intro={<>Sepette ürün seçeneklerinin, adetlerin ve ilgili bilgilendirmelerin anlaşılır görünmesini sağlar; ödeme yolculuğunda seçilen planın izin verdiği düzenlemeleri ele alırız.</>}>
       
       <div className="mt-5 space-y-4">{[
         ['Sepet alanı', 'Sepet sayfası veya çekmece düzeni, ürün güncelleme davranışları ve tema kapsamında desteklenen bilgilendirmeler incelenir.'],

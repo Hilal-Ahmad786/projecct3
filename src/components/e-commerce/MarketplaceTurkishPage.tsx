@@ -72,7 +72,7 @@ const MP = {
   onboarding: () => mp('seller-onboarding', 'Temsili satıcı katılımı: satıcı şirket bilgileri ve belgelerle başvuruyor, yönetici onaylıyor, satıcı mağazası açılıyor', { 'slot-step-1': 'Satıcı başvurusu', 'slot-step-2': 'Yönetici onayı', 'slot-step-3': 'Mağaza açıldı' }),
   models: () => mp('model-compare', 'Temsili model karşılaştırması: mevcut pazaryerlerine entegrasyon, satıcıları kendi platformunuza alan pazaryeri ve yalnızca kendi ürünlerinizi sattığınız mağaza', { 'slot-model-integration': 'Entegrasyon', 'slot-model-marketplace': 'Kendi pazaryeriniz', 'slot-model-single': 'Tek satıcılı site' }),
   category: () => mp('category-rules', 'Temsili kategori kuralı: seçilen kategori zorunlu alanları belirliyor, eksik alan varken ürün yayına gönderilemiyor', { 'slot-category': 'Kategori', 'slot-form': 'Zorunlu ürün alanları' }),
-  pilot: () => mp('pilot-launch', 'Temsili pilot yayın: farklı kargo ve komisyon kurallarını temsil eden ilk satıcı grubu test ediliyor, ardından yeni satıcılar katılıyor', { 'slot-pilot': 'Pilot satıcılar', 'slot-wave': 'Sonraki katılım' }),
+  pilot: (className?: string) => mp('pilot-launch', 'Temsili pilot yayın: farklı kargo ve komisyon kurallarını temsil eden ilk satıcı grubu test ediliyor, ardından yeni satıcılar katılıyor', { 'slot-pilot': 'Pilot satıcılar', 'slot-wave': 'Sonraki katılım' }, className),
   costs: () => mp('marketplace-costs', 'Temsili gider grupları: geliştirme işi teklifte; ödeme, kargo ve barındırma sağlayıcı giderleri ile yayın sonrası işletme ayrı tutuluyor', { 'slot-group-build': 'Geliştirme', 'slot-group-providers': 'Sağlayıcı giderleri', 'slot-group-operations': 'Yayın sonrası' }),
 };
 
@@ -83,27 +83,22 @@ const ART = {
   brief: () => ikas('project-brief'),
 };
 
-// Section → visual (matched on the start of the H2); no visual repeats its page hero.
+// Section → visual (matched on the start of the H2). Each visual appears once
+// per service, heroes included; sections without a good fit stay text-only.
 const VISUALS: Partial<Record<Exclude<MarketplacePage, 'blog'>, [string, SectionVisual][]>> = {
   overview: [
     ['Pazaryeri entegrasyonu mu', aside(MP.models())],
     ['Alıcı, satıcı ve yönetici', aside(MP.roles())],
     ['İki satıcılı bir sipariş', aside(MP.ledger())],
     ['Online pazaryeri kurmak', aside(ART.release())],
-    ['Pazaryeri geliştirme projesi', { place: 'below', node: ikas('process-rail', { className: 'mt-8 hidden lg:block', slotLabels: { 'slot-step-1': 'Satış modeli', 'slot-step-2': 'Akış tasarımı', 'slot-step-3': 'Geliştirme', 'slot-step-4': 'Kabul testi', 'slot-step-5': 'Pilot yayın' } }) }],
-    ['Pazaryeri yazılımı fiyatı', aside(MP.costs())],
   ],
   features: [
     ['Satıcı paneli', aside(MP.onboarding())],
     ['Ürün kataloğu', aside(MP.approval())],
     ['Sepet, sipariş', aside(MP.split())],
-    ['Komisyon yönetimi', aside(MP.ledger())],
-    ['İlk sürümünüzde', aside(ART.release())],
   ],
   technologies: [
     ['Satıcı verileri', aside(MP.scope())],
-    ['Tek alışveriş', aside(MP.split())],
-    ['Ödeme, komisyon', aside(MP.ledger())],
     ['Kargo, stok', aside(custom('source-of-truth', 'Temsili veri kaynağı: stok ve fiyat işletme yazılımından pazaryerine, siparişler pazaryerinden işletme yazılımına aktarılıyor; ürün kodları eşleşiyor', { 'slot-system-label': 'İşletme yazılımı' }))],
     ['Entegrasyon kesintileri', aside(custom('retry-flow', 'Temsili bağlantı hatası: ilk deneme başarısız oluyor ve kayda geçiyor, yeniden deneme başarılı oluyor; tekrar gelen bildirim ikinci kayıt oluşturmuyor', { 'slot-service-label': 'Kargo servisi', 'slot-log-label': 'İşlem kaydı' }))],
   ],
@@ -111,13 +106,10 @@ const VISUALS: Partial<Record<Exclude<MarketplacePage, 'blog'>, [string, Section
     ['Pazaryeri geliştirme süreci', { place: 'below', node: ikas('process-rail', { className: 'mt-8 hidden lg:block', slotLabels: { 'slot-step-1': 'Satış modeli', 'slot-step-2': 'Akış tasarımı', 'slot-step-3': 'Geliştirme', 'slot-step-4': 'Kabul testi', 'slot-step-5': 'Pilot yayın' } }) }],
     ['Kabul testinde', aside(custom('acceptance-tests', 'Temsili kabul testleri: iki satıcılı sipariş, ürün reddi, kısmi iade ve tekrar gelen bildirim senaryoları kontrol ediliyor; sonuçlar onaylanınca yayın kararı veriliyor', { 'slot-board-label': 'Kabul senaryoları' }))],
     ['İlk sürüm kapsamı değişirse', aside(custom('scope-change', 'Temsili kapsam değişikliği: yeni talebin ekran, yetki, test ve takvime etkisi değerlendiriliyor; talep ilk sürüme veya sonraki aşamaya alınıyor', { 'slot-impact-label': 'Etki değerlendirmesi', 'slot-now-label': 'İlk sürüm', 'slot-later-label': 'Sonraki aşama' }))],
-    ['İlk görüşmeye', aside(ART.brief())],
   ],
-  portfolio: [['Kendi pazaryeri projenizi', aside(ART.brief())]],
   pricing: [
     ['Pazaryeri kurma maliyeti', aside(MP.costs())],
     ['Geliştirme bedelini', aside(MP.category())],
-    ['İlk sürüm kapsamı nasıl', aside(MP.pilot())],
     ['Teklif almak için', aside(ART.brief())],
   ],
 };
@@ -177,7 +169,7 @@ export const MARKETPLACE_HERO_ART = <MarketplaceHeroScene tile="bottom-left">{MP
 const HERO_ART: Record<SubPage, () => ReactNode> = {
   features: () => MP.panel('w-full'),
   technologies: () => ART.hub('w-full'),
-  process: () => ART.release('w-full'),
+  process: () => MP.pilot('w-full'),
   portfolio: () => <OtogradeHeroShot />,
   pricing: () => ART.quote('w-full'),
   faq: () => <FaqScene />,

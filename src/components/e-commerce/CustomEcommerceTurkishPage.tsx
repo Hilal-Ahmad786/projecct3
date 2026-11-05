@@ -69,41 +69,33 @@ const ART = {
 };
 const hubLabels = { 'slot-payment': 'Ödeme', 'slot-cargo': 'Kargo', 'slot-erp': 'Stok / ERP', 'slot-marketplace': 'Muhasebe' };
 
-// Section → visual (matched on the start of the H2).
+// Section → visual (matched on the start of the H2). Each visual appears once
+// per service, heroes included (Portföy scenario cards excepted); sections
+// without a good fit stay text-only.
 const VISUALS: Partial<Record<CustomEcommercePage, [string, VisualSpec][]>> = {
   overview: [
     ['Özel geliştirme ne zaman', ART.architecture],
     ['Satış modelinize', { ...ART.measure, place: 'aside' }],
     ['Özel tasarım', I('variant-picker', 'aside', { loop: true, label: 'Temsili ürün sayfası: seçilen ölçü ve seçeneğe göre ürün görünümü değişiyor' })],
     ['Özel e-ticaret yazılımı', I('integration-hub', 'aside', { loop: true, markLabel: 'Mağazanız', slotLabels: hubLabels, label: 'Temsili akış: özel mağaza ödeme, kargo, stok ve muhasebe sistemlerine bağlanıyor' })],
-    ['İlk sürüm', ART.release],
     ['Proje nasıl', I('process-rail', 'below', { slotLabels: { 'slot-step-1': 'İhtiyaç', 'slot-step-2': 'Kapsam', 'slot-step-3': 'Geliştirme', 'slot-step-4': 'Test', 'slot-step-5': 'Yayın ve devir' } })],
-    ['Özel e-ticaret sitesi fiyatı', ART.quote],
   ],
   features: [
-    ['Ürün kataloğu', I('variant-picker', 'aside', { loop: true, label: 'Temsili ürün sayfası: seçilen ölçü ve seçeneğe göre ürün görünümü değişiyor' })],
-    ['Fiyatlandırma ve bayi', ART.dealer],
+    ['Fiyatlandırma ve bayi', ART.consistency],
     ['Sipariş yönetimi', ART.roles],
-    ['Entegrasyonlar', I('integration-hub', 'aside', { loop: true, markLabel: 'Mağazanız', slotLabels: hubLabels, label: 'Temsili akış: özel mağaza ödeme, kargo, stok ve muhasebe sistemlerine bağlanıyor' })],
-    ['İlk sürüm', ART.release],
   ],
   technologies: [
     ['Hangi altyapı', I('method-options', 'below', { loop: true, slotLabels: { 'slot-option-1': 'Hazır platform', 'slot-option-2': 'Özel modül', 'slot-option-3': 'Özel yazılım' } })],
     ['Müşteri arayüzü', I('editable-fields', 'aside', { loop: true, markLabel: 'Yönetim paneli', label: 'Temsili yönetim paneli: düzenlenen alan mağaza arayüzüne yansıyor' })],
-    ['Fiyat ve sipariş kuralları', ART.consistency],
-    ['Verinin ana kaynağını', ART.source],
     ['Ödeme, kargo', ART.retry],
-    ['Teknik teslimatta', ART.acceptance],
   ],
   process: [
-    ['İlk görüşmeye', I('project-brief', 'aside')],
     ['Keşiften yayına', I('stage-path', 'below', { slotLabels: { 'slot-stage-1': 'Keşif', 'slot-stage-2': 'İlk sürüm', 'slot-stage-3': 'Tasarım', 'slot-stage-4': 'Geliştirme', 'slot-stage-5': 'Test', 'slot-stage-6': 'Yayın' } })],
     ['İlk sürümün kapsamı', ART.scopeChange],
     ['Mevcut mağaza taşınacaksa', I('migration-map', 'aside', { markLabel: 'Yeni mağaza', label: 'Temsili geçiş: eski mağazadaki kayıtlar yeni mağazaya aktarılıyor, eski adresler eşleştiriliyor' })],
     ['Örnek kabul', ART.acceptance],
     ['Yayın sonrası', I('handover-pack', 'aside')],
   ],
-  portfolio: [['Özel e-ticaret örneğini', I('project-brief', 'aside')]],
   pricing: [
     ['Geliştirme, dış hizmetler', I('cost-split', 'aside', { markLabel: 'Dış giderler', label: 'Temsili gider grupları: geliştirme, dış servisler ve yayın sonrası işler' })],
     ['Teklif almak için', I('project-brief', 'aside')],
@@ -202,8 +194,8 @@ function ShopLameesHeroShot() {
 
 // Each subpage hero has its own scene (no visual repeats further down the same page).
 const HERO_ART: Record<Exclude<CustomEcommercePage, 'overview'>, () => ReactNode> = {
-  features: () => <Visual spec={ART.measure} className="w-full" />,
-  technologies: () => <Visual spec={ART.architecture} className="w-full" />,
+  features: () => <Visual spec={ART.dealer} className="w-full" />,
+  technologies: () => <Visual spec={ART.source} className="w-full" />,
   process: () => <Visual spec={ART.release} className="w-full" />,
   portfolio: () => <ShopLameesHeroShot />,
   pricing: () => <Visual spec={ART.quote} className="w-full" />,

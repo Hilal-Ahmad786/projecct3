@@ -81,7 +81,7 @@ export default function ShopifyTurkishProcess() {
       <p className="mt-4 max-w-3xl text-sm leading-6 text-gray-600">Şifrelerinizi açık mesajla paylaşmak yerine desteklenen yetkilendirme yöntemlerini kullanırız. Gerekli erişimin türü, yapılacak işe göre belirlenir.</p>
     </ShopifySection>
 
-    <ShopifySection id="shopify-magaza-tasima" title="Shopify mağaza taşıma hizmeti: önce veri haritası" intro={<>Taşımaya başlamadan önce hangi kayıtların aktarılacağına ve Shopify’daki karşılıklarına karar veririz. Kaynak sistemde bulunması, her verinin aynı biçimde aktarılabileceği anlamına gelmez.</>} aside={<ShopifyVisual name="migration-map" className="mx-auto w-full" label="Temsili geçiş akışı: eski mağazadaki ürün kayıtları Shopify mağazasına aktarılıyor, eski URL'ler yeni adreslerle eşleştiriliyor" />}>
+    <ShopifySection id="shopify-magaza-tasima" title="Shopify mağaza taşıma hizmeti: önce veri haritası" intro={<>Taşımaya başlamadan önce hangi kayıtların aktarılacağına ve Shopify’daki karşılıklarına karar veririz. Kaynak sistemde bulunması, her verinin aynı biçimde aktarılabileceği anlamına gelmez.</>}>
       
       <ShopifyTable label="Shopify mağaza taşıma veri haritası" headers={['Veri alanı', 'İncelenen konu', 'Kabul kontrolü']} rows={[
         ['Ürün ve varyantlar', 'Seçenekler, tanımlayıcılar ve alan eşleştirmesi', 'Sayıların yanında örnek ürün ayrıntıları'],
