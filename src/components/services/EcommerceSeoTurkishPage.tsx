@@ -52,24 +52,45 @@ const V = {
   quote: (className?: string) => art('quote-groups', 'Temsili e-ticaret SEO teklifi: kategori ve ürün içeriği, filtre ve varyant adresleri, platform geçişi ve satış ölçümü kalemleri; tema ve entegrasyon geliştirmesi ayrı değerlendiriliyor', { 'slot-group-1': 'Kategori ve ürün içeriği', 'slot-group-2': 'Filtre ve varyant adresleri', 'slot-group-3': 'Platform geçişi', 'slot-group-4': 'Satış ölçümü', 'slot-quote': 'Mağaza SEO teklifi', 'slot-extra': 'Tema · entegrasyon işleri' }, className),
 };
 
+const EK = {
+  roles: () => art('role-lanes', 'E-ticaret SEO’da iş bölümü: mağaza ekibi ürün verisini ve onayları, PakSoft inceleme ve önceliklendirmeyi, geliştirici tema ve entegrasyon değişikliklerini üstleniyor', { 'slot-role-1': 'Mağaza ekibi', 'slot-role-sub-1': 'Ürün ve onay', 'slot-task-1-1': 'Ürün verisi', 'slot-task-1-2': 'Kampanya takvimi', 'slot-task-1-3': 'Yayın onayı', 'slot-role-2': 'PakSoft', 'slot-role-sub-2': 'SEO çalışması', 'slot-task-2-1': 'Sayfa önceliği', 'slot-task-2-2': 'İçerik önerisi', 'slot-task-2-3': 'Kontrol ve rapor', 'slot-role-3': 'Geliştirici', 'slot-role-sub-3': 'Tema ve entegrasyon', 'slot-task-3-1': 'Şablon değişikliği', 'slot-task-3-2': 'Yönlendirme', 'slot-task-3-3': 'Veri aktarımı' }),
+  channels: () => art('channel-compare', 'Pazaryeri ürün kaydı ile kendi mağazanız: pazaryerinde başlık, görsel ve fiyat düzenlenebilir; kendi mağazanızda kategori yapısı, adresler ve iç bağlantılar da sizin kontrolünüzde', { 'slot-market': 'Pazaryeri ürün kaydı', 'slot-market-sub': 'Örn. Trendyol', 'slot-market-row-1': 'Ürün başlığı ve özellikler', 'slot-market-row-2': 'Görseller ve fiyat', 'slot-market-row-3': 'Kategori yapısı', 'slot-market-row-4': 'Adres ve iç bağlantı', 'slot-store': 'Kendi mağazanız', 'slot-store-sub': 'Shopify, ikas, WooCommerce', 'slot-store-row-1': 'Ürün başlığı ve özellikler', 'slot-store-row-2': 'Görseller ve fiyat', 'slot-store-row-3': 'Kategori yapısı', 'slot-store-row-4': 'Adres ve iç bağlantı' }),
+  product: () => art('page-annotate', 'Ürün sayfasında SEO alanları: ürün adı, açıklama, görsel alt metni ve ürün işaretlemesi işaretleniyor', { 'slot-tag-1': 'Ürün sayfası başlığı', 'slot-tag-2': 'Ürün adı (H1)', 'slot-tag-3': 'Açıklama ve görsel alt metni', 'slot-tag-4': 'Ürün işaretlemesi (schema)' }),
+  mobile: () => art('tech-cwv', 'Temsili mobil ürün sayfası performansı: LCP ana ürün görseli, INP varyant seçimi, CLS görsel kayma; örnekte varyant seçimi iyileştirme gerektiriyor', { 'slot-tag': 'Temsili durum', 'slot-metric-1': 'LCP', 'slot-desc-1': 'Ana ürün görseli', 'slot-state-1': 'İyi', 'slot-metric-2': 'INP', 'slot-desc-2': 'Varyant seçimi', 'slot-state-2': 'İyileştirme gerekli', 'slot-metric-3': 'CLS', 'slot-desc-3': 'Görsel kayma', 'slot-state-3': 'İyi' }),
+  live: () => art('tech-status', 'Temsili canlı sayfa kontrolü: ürün sayfası 200 yanıtı veriyor, indekslenebilir ve canonical sayfanın kendisi; ayar canlıda doğrulandı', { 'slot-url': 'https://magazaniz.com/urun/yuruyus-ayakkabisi', 'slot-check-1': 'HTTP yanıtı', 'slot-value-1': '200', 'slot-check-2': 'Meta robots', 'slot-value-2': 'index', 'slot-check-3': 'Canonical', 'slot-value-3': 'Sayfanın kendisi', 'slot-verdict': 'Ayar canlı sayfada doğrulandı' }),
+  season: () => art('season-calendar', 'Temsili kampanya takvimi: Ramazan, Kasım indirimleri ve yılbaşı kampanyaları her yıl aynı kalıcı kampanya adresini kullanıyor', { 'slot-year': 'Kampanya takvimi', 'slot-mark-1': 'Ramazan', 'slot-mark-2': 'Kasım indirimleri', 'slot-mark-3': 'Yılbaşı', 'slot-url': '/kampanya/yilbasi-hediyeleri', 'slot-note': 'Her yıl aynı adres güncellenir' }),
+  markets: () => art('hreflang-pair', 'Temsili çok dilli mağaza: Türkçe ve Almanca ürün sayfaları karşılıklı dil bağlantısıyla eşleşiyor; para birimi ve teslimat bilgisi pazara göre değişiyor', { 'slot-tr-lang': 'TR', 'slot-tr-url': '/tr/urun/hurma', 'slot-tr-price': 'TL fiyat', 'slot-tr-ship': 'Türkiye teslimatı', 'slot-de-lang': 'DE', 'slot-de-url': '/de/produkt/datteln', 'slot-de-price': 'EUR fiyat', 'slot-de-ship': 'Almanya teslimatı', 'slot-hreflang': 'hreflang' }),
+  monthly: () => art('monthly-plan', 'Temsili aylık e-ticaret SEO çalışması: ilk hafta stok ve kategori kontrolü, ikinci hafta sayfa güncellemesi, üçüncü hafta kampanya hazırlığı, dördüncü hafta rapor', { 'slot-month': 'Aylık e-ticaret SEO çalışması', 'slot-week-1': '1. hafta', 'slot-week-2': '2. hafta', 'slot-week-3': '3. hafta', 'slot-week-4': '4. hafta', 'slot-task-1': 'Kontrol', 'slot-task-sub-1': 'Stok ve kategori', 'slot-task-2': 'Güncelleme', 'slot-task-sub-2': 'Kategori ve ürün', 'slot-task-3': 'Hazırlık', 'slot-task-sub-3': 'Kampanya sayfası', 'slot-task-4': 'Rapor', 'slot-task-sub-4': 'Organik satış' }),
+};
+
 const VISUALS: SeoServiceConfig['visuals'] = {
   overview: [
     ['E-ticaret SEO çalışması neleri kapsar', aside(V.richResult())],
     ['Shopify SEO, ikas SEO', aside(V.platforms())],
+    ['E-ticaret SEO ajansıyla iş bölümü', aside(EK.roles())],
+    ['Trendyol SEO’su ile', aside(EK.channels())],
   ],
   features: [
     ['Kategori sayfası ve ürün sayfası', aside(V.tree())],
     ['Filtre, varyant ve stok', aside(V.stockRules())],
+    ['Ürün sayfasında açıklama', aside(EK.product())],
   ],
   technologies: [
     ['Örnek kontrol', aside(V.stockSync())],
     ['Satış ölçümü nasıl', aside(V.funnel())],
+    ['Altyapı ayarları ve mobil', aside(EK.mobile())],
+    ['Mağaza ayarını canlı sayfada', aside(EK.live())],
   ],
   process: [
     ['E-ticaret SEO nasıl yapılır', { place: 'below', node: V.rail() }],
     ['Yayından sonra neyi', aside(V.report())],
+    ['Kampanya ve sezon sayfaları', aside(EK.season())],
+  ],
+  portfolio: [
+    ['Temsili örnek — Çok dilli', aside(EK.markets())],
   ],
   pricing: [
+    ['Aylık e-ticaret SEO', aside(EK.monthly())],
     ['E-ticaret SEO paketleri', aside(<IkasVisual name="method-options" loop label="Üç çalışma türü: tek seferlik mağaza incelemesi, proje bazlı uygulama ve aylık e-ticaret SEO çalışması" slotLabels={{ 'slot-option-1': 'Tek seferlik inceleme', 'slot-option-2': 'Proje bazlı uygulama', 'slot-option-3': 'Aylık çalışma' }} className="mx-auto w-full max-w-xl" />)],
   ],
 };
@@ -108,6 +129,12 @@ const JUMP_LABELS: [string, string][] = [
   ['Shopify, ikas ve WooCommerce SEO ayarları', 'Platform ayarları'], ['Hangi veriyle neyi', 'Veri kontrolleri'], ['Örnek kontrol', 'Varyant stoku'], ['Satış ölçümü nasıl', 'Satış ölçümü'],
   ['E-ticaret SEO nasıl yapılır', 'Dört adım'], ['Yayından sonra neyi', 'Yayın sonrası'], ['İlk görüşmeye hangi', 'Hazırlık'],
   ['Mağazalarda karşılaşılan', 'Senaryolar'],
+  ['E-ticaret SEO ajansıyla iş bölümü', 'İş bölümü'], ['Trendyol SEO’su ile', 'Trendyol ve mağaza'], ['E-ticaret sitelerinde öncelik', 'Sık hatalar'],
+  ['Ürün sayfasında açıklama', 'Ürün içeriği'], ['Çok dilli ve e-ihracat', 'E-ihracat'], ['Kategori bağlantıları', 'Kategori bağlantıları'],
+  ['Google Merchant Center', 'Merchant Center'], ['Altyapı ayarları ve mobil', 'Mobil performans'], ['Mağaza ayarını canlı sayfada', 'Canlı doğrulama'],
+  ['İlk deneme için', 'Deneme kategorisi'], ['Kampanya ve sezon sayfaları', 'Kampanya sayfaları'], ['İlk denemeyi diğer', 'Yaygınlaştırma'],
+  ['Temsili örnek — Çok dilli', 'Çok dilli mağaza'], ['Temsili örnek — Sezonluk', 'Sezonluk kampanya'], ['Mağaza örneklerinde', 'Doğrulama'],
+  ['Katalog büyüklüğü', 'Katalog büyüklüğü'], ['Aylık e-ticaret SEO', 'Aylık çalışma'], ['Mağaza teklifinde veri', 'Veri hazırlığı'],
   ['E-ticaret SEO fiyatlarını', 'Fiyat kalemleri'], ['E-ticaret SEO paketleri', 'Çalışma türleri'],
 ];
 

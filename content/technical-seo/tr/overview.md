@@ -46,6 +46,36 @@ Site hızı optimizasyonunda tek bir puana değil, gerçek kullanıcı verisinde
 | İçerik planı, anahtar kelime hedefleri ve genel organik büyüme stratejisi oluşturmak | [SEO hizmeti ve danışmanlığı](/tr/hizmetler/seo) |
 | Ürün ve kategori sayfalarının organik görünürlüğünü geliştirmek | [E-Ticaret SEO](/tr/hizmetler/ecommerce-seo) |
 
+## Teknik SEO ile içerik çalışması nerede kesişir?
+
+Teknik SEO nedir sorusunu bir hizmet sayfası üzerinden düşünebilirsiniz. Sayfanın arama motorları tarafından erişilebilir olması teknik incelemeye girer. Sayfanın müşteri sorusuna verdiği yanıt ise içerik çalışmasının konusudur. Örneğin bakım hizmeti sayfası doğru kapsamı anlatıyor ama bir şablon ayarı nedeniyle indeksleme dışında kalıyorsa önce teknik engel incelenir.
+
+| Gözlem | İlk inceleme |
+| --- | --- |
+| Yeni hizmet sayfası yanlış adrese yönleniyor | Teknik SEO ve yönlendirme kontrolü |
+| Hizmet kapsamı ve bölgesi sayfada belirsiz | İçerik ve arama niyeti incelemesi |
+| Mobil menüde hizmet bağlantısı bulunmuyor | Şablon ve dahili bağlantı kontrolü |
+
+Bazı işler iki ekibin katkısını gerektirir. Örneğin yeni bir hizmet sayfası açılırken editör metni hazırlar, geliştirici doğru bağlantı ve şablonu kontrol eder. Teknik SEO danışmanlığı, bu işlerin sırasını ve doğrulama adımlarını belirlemeye yardımcı olur.
+
+## Hangi altyapılarda teknik SEO incelemesi yapılabilir?
+
+Teknik SEO hizmetinde önce sorunun hangi bileşenden kaynaklanabileceğini belirleriz. Bir içerik yönetim sisteminde ayar olarak çözülebilen bir durum, özel yazılımda şablon veya sunucu değişikliği gerektirebilir.
+
+Bir SEO audit çalışmasında her altyapı için önce canlı bir sayfayı, ilgili ayarı ve beklenen davranışı kaydederiz.
+
+### WordPress
+
+SEO eklentisinin ürettiği başlık ve indeksleme yönergelerini canlı HTML ile karşılaştırırız. Örneğin yalnızca bir kategori şablonu etkileniyorsa benzer bir kategoriyle yan yana inceleriz.
+
+### Shopify ve ikas
+
+Mağaza şablonunu ürün, kategori ve varyant adresleri üzerinden değerlendiririz. Örneğin bir filtre bağlantısı açıldığında üretilen adresin hangi durumda tekrar kullanılacağını kontrol ederiz.
+
+### Next.js ve özel yazılım
+
+İlk HTTP yanıtını ve tarayıcıda oluşan sayfayı karşılaştırırız. Örneğin hizmet bağlantıları yalnızca bir etkileşimden sonra görünüyorsa, ilgili bileşenin nasıl çalıştığını geliştiriciyle inceleriz.
+
 ## Sık sorulan sorular
 
 ### Teknik SEO denetimi için hangi bilgilere ihtiyaç var?

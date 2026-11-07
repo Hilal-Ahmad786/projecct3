@@ -49,23 +49,44 @@ const SEO = {
   quote: (className?: string) => art('quote-groups', 'Temsili SEO teklifi: teknik inceleme, içerik ve iç bağlantılar, uygulama ve doğrulama, ölçüm ve raporlama kalemleri teklifi oluşturuyor; ek geliştirme ve araç lisansları ayrı değerlendiriliyor', { 'slot-group-1': 'Teknik inceleme', 'slot-group-2': 'İçerik ve iç bağlantılar', 'slot-group-3': 'Uygulama ve doğrulama', 'slot-group-4': 'Ölçüm ve raporlama', 'slot-quote': 'SEO teklifi', 'slot-extra': 'Ek geliştirme · lisans' }, className),
 };
 
+const EK = {
+  roles: () => art('role-lanes', 'SEO ajansı, uzmanı ve danışmanı: ajans ekibiyle planlar ve uygular, uzman belirli işleri yürütür, danışman kararları yönlendirir', { 'slot-role-1': 'SEO ajansı', 'slot-role-sub-1': 'Ekip ve süreç', 'slot-task-1-1': 'Plan ve öncelik', 'slot-task-1-2': 'İçerik ve teknik', 'slot-task-1-3': 'Raporlama', 'slot-role-2': 'SEO uzmanı', 'slot-role-sub-2': 'Uygulama', 'slot-task-2-1': 'Sayfa düzenleme', 'slot-task-2-2': 'Teknik kontrol', 'slot-task-2-3': 'Takip', 'slot-role-3': 'SEO danışmanı', 'slot-role-sub-3': 'Karar desteği', 'slot-task-3-1': 'Strateji', 'slot-task-3-2': 'Ekip yönlendirme', 'slot-task-3-3': 'Teklif kontrolü' }),
+  onpage: () => art('page-annotate', 'Site içi SEO: bir hizmet sayfasında başlık etiketi, meta açıklama, sayfa başlığı ve iç bağlantı alanları işaretleniyor', { 'slot-tag-1': 'Başlık etiketi (title)', 'slot-tag-2': 'Sayfa başlığı (H1)', 'slot-tag-3': 'Hizmet kapsamı metni', 'slot-tag-4': 'İlgili sayfaya iç bağlantı' }),
+  local: () => art('seo-local', 'Yerel SEO: Google İşletme Profili, sitedeki hizmet bölgesi sayfasına bağlanıyor', { 'slot-profile': 'İşletme profili', 'slot-rating': 'Yorumlar', 'slot-info-1': 'Adres ve çalışma saatleri', 'slot-info-2': 'Web sitesi bağlantısı', 'slot-site': 'Hizmet bölgesi sayfası', 'slot-site-area': 'Hizmet verilen ilçeler', 'slot-site-cta': 'Randevu al' }),
+  sources: () => art('tech-sources', 'Üç veri kaynağı aynı hizmet sayfası için: Semrush sıralama verisi, Ahrefs bağlantı verisi ve Search Console gösterim verisi', { 'slot-src-1': 'Semrush', 'slot-src-2': 'Search Console', 'slot-src-3': 'Ahrefs', 'slot-url': '/hizmetler/web-tasarim', 'slot-tag': 'Temsili veri' }),
+  competitor: () => art('seo-competitor', 'Temsili rakip analizi: aynı sorguda sizin sayfanız ile rakip sayfa başlık uyumu, içerik kapsamı ve iç bağlantılar açısından karşılaştırılıyor', { 'slot-query': 'kurumsal web sitesi tasarımı', 'slot-yours': 'Sizin sayfanız', 'slot-rival': 'Rakip sayfa', 'slot-yours-row-1': 'Başlık sorguyla uyumlu', 'slot-yours-row-2': 'Süreç bilgisi eksik', 'slot-yours-row-3': 'İç bağlantılar var', 'slot-rival-row-1': 'Başlık sorguyla uyumlu', 'slot-rival-row-2': 'Süreç ve fiyat bilgisi', 'slot-rival-row-3': 'Rehberlerden bağlantı' }),
+  monthly: () => art('monthly-plan', 'Temsili aylık SEO çalışması: ilk hafta öncelik, ikinci hafta sayfa güncellemesi, üçüncü hafta kontrol, dördüncü hafta rapor ve görüşme', { 'slot-month': 'Aylık çalışma düzeni', 'slot-week-1': '1. hafta', 'slot-week-2': '2. hafta', 'slot-week-3': '3. hafta', 'slot-week-4': '4. hafta', 'slot-task-1': 'Öncelik', 'slot-task-sub-1': 'Sayfa seçimi', 'slot-task-2': 'Uygulama', 'slot-task-sub-2': 'Sayfa güncellemesi', 'slot-task-3': 'Kontrol', 'slot-task-sub-3': 'Yayın doğrulama', 'slot-task-4': 'Rapor', 'slot-task-sub-4': 'Görüşme ve karar' }),
+  evidence: () => art('tech-evidence', 'Bir SEO örneğinde istenecek kanıtlar: önceki durum, yapılan değişiklik ve yeniden kontrol', { 'slot-col-1': 'Önce', 'slot-item-1-1': 'Hedef sayfa', 'slot-item-1-2': 'Başlangıç verisi', 'slot-item-1-3': 'Tespit edilen sorun', 'slot-col-2': 'Değişiklik', 'slot-item-2-1': 'Yapılan iş', 'slot-item-2-2': 'Uygulayan ekip', 'slot-item-2-3': 'Yayın tarihi', 'slot-col-3': 'Yeniden kontrol', 'slot-item-3-1': 'Aynı sayfa', 'slot-item-3-2': 'Karşılaştırma dönemi', 'slot-item-3-3': 'Sonraki karar' }),
+  contract: () => art('contract-scope', 'SEO hizmet sözleşmesinde kontrol edilecek maddeler: kapsam, onay süreci, erişimler, raporlama; garanti ifadesi ayrıca sorgulanmalı', { 'slot-doc': 'SEO hizmet sözleşmesi', 'slot-clause-1': 'Kapsamdaki sayfalar ve işler', 'slot-clause-2': 'Onay ve yayın süreci', 'slot-clause-3': 'Hesap erişimleri', 'slot-clause-4': 'Raporlama sıklığı', 'slot-clause-5': 'Sıralama garantisi ifadesi' }),
+};
+
 const VISUALS: Partial<Record<SeoContentPage, [string, SectionVisual][]>> = {
   overview: [
     ['SEO hizmeti neleri kapsar', aside(SEO.queryMap())],
     ['Bir SEO ajansıyla çalışma', aside(SEO.report())],
+    ['SEO ajansı, uzmanı ve danışmanı', aside(EK.roles())],
   ],
   features: [
     ['SEO çalışmasında hangi işler', aside(SEO.links())],
     ['Mağaza ve hizmet sitelerinde', aside(SEO.category())],
+    ['Site içi SEO ile', aside(EK.onpage())],
+    ['Yerel SEO ve Google İşletme', aside(EK.local())],
   ],
   technologies: [
     ['Bir bulguyu nasıl doğrularız', aside(SEO.redirects())],
+    ['Semrush, Ahrefs ve Search Console', aside(EK.sources())],
+    ['SEO rakip analizi', aside(EK.competitor())],
     ['İlk inceleme için', aside(ikas('project-brief', 'Temsili inceleme hazırlığı: site adresi, öncelikli sayfalar, son değişiklikler ve veri erişimi'))],
   ],
   process: [
     ['İlk görüşmeden performans takibine', { place: 'below', node: SEO.rail() }],
+    ['Aylık SEO hizmetinde', aside(EK.monthly())],
+  ],
+  portfolio: [
+    ['Bir SEO örneğini değerlendirirken', aside(EK.evidence())],
   ],
   pricing: [
+    ['SEO hizmet sözleşmesinde', aside(EK.contract())],
     ['SEO paketlerini nasıl', aside(ikas('method-options', 'Üç çalışma türü: tek seferlik inceleme, proje bazlı uygulama ve aylık SEO çalışması', { 'slot-option-1': 'Tek seferlik inceleme', 'slot-option-2': 'Proje bazlı uygulama', 'slot-option-3': 'Aylık çalışma' }))],
   ],
 };
@@ -105,6 +126,12 @@ const JUMP_LABELS: [string, string][] = [
   ['Hangi araç hangi soruya', 'Araçlar'], ['Bir bulguyu nasıl doğrularız', 'Doğrulama'], ['İlk inceleme için', 'Gerekli bilgiler'],
   ['İlk görüşmeden performans takibine', 'Dört aşama'], ['Her aşamada hangi karar', 'Karar noktaları'], ['İlk görüşmeye nasıl', 'Hazırlık'],
   ['Üç farklı SEO senaryosu', 'Senaryolar'], ['Sitenizde hangi sayfayı', 'İlk sayfa'],
+  ['SEO ajansı, uzmanı ve danışmanı', 'Ajans, uzman, danışman'], ['Kurumsal, yerel ve e-ticaret', 'Site türleri'], ['SEO hizmetinden hangi çıktıları', 'Beklenen çıktılar'],
+  ['Site içi SEO ile', 'Site içi SEO'], ['Yerel SEO ve Google İşletme', 'Yerel SEO'], ['İçerik ve bağlantı kazanımına', 'İçerik ve bağlantı'],
+  ['Semrush, Ahrefs ve Search Console', 'Semrush ve Ahrefs'], ['SEO rakip analizi', 'Rakip analizi'], ['Bir rapor satırının kaynağını', 'Rapor kaynağı'],
+  ['İlk çalışma döneminde', 'İlk dönem'], ['Aylık SEO hizmetinde', 'Aylık düzen'], ['Yayınlanan değişikliklerin kaydını', 'Değişiklik kaydı'],
+  ['Yerel, çok dilli ve rehber', 'Diğer örnekler'], ['Bir SEO örneğini değerlendirirken', 'Kanıtlar'], ['Kendi sitenizi örneklerle', 'Karşılaştırma'],
+  ['Aylık SEO fiyatları', 'Aylık fiyatlar'], ['Düşük bütçeli bir SEO teklifinde', 'Düşük bütçeli teklif'], ['SEO hizmet sözleşmesinde', 'Sözleşme'],
   ['SEO teklifini hangi işler', 'Fiyat kalemleri'], ['SEO paketlerini nasıl', 'Çalışma türleri'], ['SEO teklifi almak için', 'Teklif hazırlığı'],
 ];
 

@@ -221,4 +221,152 @@ export default function more({ ICONS, svg, g, rect, bar, slot, path, text, icon,
       + path('M270 233 C292 233 300 201 330 201', { id: 'conflict', stroke: S, sw: 2, dash: '4 4' });
     svg('tech-robots-sitemap', 600, 302, body);
   }
+
+  /* ------------------------------------------- ek içerik (2026-11-08) visuals */
+  Object.assign(ICONS, {
+    pin: 'M12 21s-6-5.7-6-11a6 6 0 1 1 12 0c0 5.3-6 11-6 11z M12 7.5a2.5 2.5 0 1 0 0 5a2.5 2.5 0 1 0 0-5z',
+    team: 'M9 11a3 3 0 1 0 0-6a3 3 0 1 0 0 6z M3 20c.7-3.3 3-5 6-5s5.3 1.7 6 5 M16 5.5a3 3 0 0 1 0 5.5 M18 15c1.6.6 2.6 2.2 3 5',
+    compass: 'M12 3a9 9 0 1 0 0 18a9 9 0 1 0 0-18z M15.5 8.5l-2 5-5 2 2-5z',
+    calendar: 'M4 6h16v14H4z M4 10h16 M8 3v5 M16 3v5',
+    lang: 'M4 5h9 M8.5 3v2 M6 5c1 4 3.5 6.5 6 7.5 M11 5c-1 4-3.5 6.5-6 7.5 M13 21l4-9 4 9 M14.5 18h5',
+  });
+
+  // role-lanes — üç rol, her birinin işi (ajans/uzman/danışman veya mağaza/PakSoft/geliştirici)
+  {
+    let body = '';
+    [['team', 16], ['pen', 216], ['compass', 416]].forEach(([ic, x], i) => {
+      const n = i + 1;
+      body += g(`lane-${n}`, `${rect(x, 16, 168, 252, { stroke: n === 2 ? T : B, sw: n === 2 ? 2 : 1.5, fill: n === 2 ? L : '#FFFFFF' })}${badge(ic, x + 62, 32, { size: 44, fill: n === 2 ? '#FFFFFF' : L })}${slot(`role-${n}`, x + 8, 86, 152, 18)}${slot(`role-sub-${n}`, x + 8, 108, 152, 16)}${path(`M${x + 16} 136 H${x + 152}`, { stroke: B, sw: 1.5 })}`
+        + [0, 1, 2].map((r) => `${okChip(x + 30, 160 + r * 34)}${slot(`task-${n}-${r + 1}`, x + 48, 151 + r * 34, 112, 18)}`).join(''));
+    });
+    body += path('M184 76 H216', { id: 'hand-1', sw: 2.5 }) + path('M384 76 H416', { id: 'hand-2', sw: 2.5 });
+    svg('role-lanes', 600, 284, body, ['hand-1', 'hand-2']);
+  }
+
+  // channel-compare — pazaryeri ürün kaydı ile kendi mağazanızın sayfaları
+  {
+    const col = (id, x, hi) => g(id, `${rect(x, 16, 272, 264, { stroke: hi ? T : B, sw: hi ? 2 : 1.5 })}${badge('store', x + 16, 30, { size: 36, fill: hi ? L : G })}${slot(`${id}`, x + 62, 36, 196, 18)}${slot(`${id}-sub`, x + 62, 56, 196, 16)}${path(`M${x + 16} 92 H${x + 256}`, { stroke: B, sw: 1.5 })}`
+      + [0, 1, 2, 3].map((r) => `${okChip(x + 32, 116 + r * 40, hi || r < 2)}${slot(`${id}-row-${r + 1}`, x + 52, 107 + r * 40, 208, 18)}`).join(''));
+    svg('channel-compare', 600, 296, col('market', 16, false) + col('store', 312, true));
+  }
+
+  // page-annotate — sayfa üzerinde işaretlenen SEO alanları
+  {
+    const body = g('page', `${rect(16, 16, 300, 288)}${browserTop(16, 16, 300)}${rect(32, 58, 268, 16, { rx: 4, fill: G, stroke: 'none' })}${bar(40, 63, 150, 6, T)}${bar(32, 92, 220, 12, '#1F2937')}${rect(32, 118, 120, 92, { rx: 8, fill: L, stroke: 'none' })}${icon('box', 80, 152)}${bar(164, 122, 136)}${bar(164, 138, 120)}${bar(164, 154, 128)}${bar(164, 170, 96)}${bar(32, 228, 240)}${bar(32, 244, 200)}${bar(32, 266, 90, 7, T)}`)
+      + [[66, 1], [98, 2], [164, 3], [270, 4]].map(([y, n]) => `${path(`M300 ${y} C326 ${y} 330 ${36 + (n - 1) * 70} 350 ${36 + (n - 1) * 70}`, { id: `ann-${n}`, stroke: S, sw: 1.8, dash: '4 4' })}`).join('')
+      + [1, 2, 3, 4].map((n) => g(`tag-${n}`, `${rect(350, 18 + (n - 1) * 70, 234, 40, { rx: 10, fill: n === 1 ? L : '#FFFFFF', stroke: n === 1 ? T : B })}<circle cx="370" cy="${38 + (n - 1) * 70}" r="10" fill="${D}"/>${text(370, 38.5 + (n - 1) * 70, n, { size: 11 })}${slot(`tag-${n}`, 388, 29 + (n - 1) * 70, 188, 18)}`)).join('');
+    svg('page-annotate', 600, 320, body);
+  }
+
+  // seo-local — işletme profili ile sitedeki hizmet sayfası
+  {
+    const body = g('profile', `${rect(16, 16, 268, 268)}${rect(16, 16, 268, 92, { rx: 12, fill: L, stroke: 'none' })}${icon('pin', 132, 46, { s: 1.4, stroke: T })}${slot('profile', 32, 120, 236, 18)}${[0, 1, 2, 3, 4].map((i) => icon('star', 32 + i * 16, 146, { s: 0.6, stroke: S, sw: 1.6 })).join('')}${slot('rating', 116, 145, 150, 16)}`
+        + [0, 1].map((r) => `${rect(32, 180 + r * 44, 236, 34, { rx: 8, fill: G, stroke: 'none' })}${slot(`info-${r + 1}`, 42, 188 + r * 44, 216, 18)}`).join(''))
+      + path('M284 150 C310 150 312 120 336 120', { id: 'to-site', sw: 2.5 })
+      + g('site', `${rect(336, 40, 248, 220, { stroke: T, sw: 2 })}${browserTop(336, 40, 248)}${slot('site', 352, 78, 216, 18)}${bar(352, 106, 180, 9, T)}${bar(352, 124, 200)}${bar(352, 140, 160)}${rect(352, 166, 216, 40, { rx: 8, fill: L, stroke: 'none' })}${slot('site-area', 362, 177, 196, 18)}${rect(352, 220, 120, 26, { rx: 6, fill: D, stroke: 'none' })}${slot('site-cta', 352, 224, 120, 18)}`);
+    svg('seo-local', 600, 300, body, ['to-site']);
+  }
+
+  // seo-competitor — aynı sorguda sizin sayfanız ve rakip sayfa
+  {
+    let body = g('query', `${rect(150, 16, 300, 40, { rx: 20, fill: G })}${icon('search', 166, 24)}${slot('query', 196, 27, 240, 18)}`);
+    body += path('M260 56 C260 76 160 76 160 92', { id: 'q-left', sw: 2 }) + path('M340 56 C340 76 440 76 440 92', { id: 'q-right', sw: 2 });
+    [['yours', 16, true], ['rival', 316, false]].forEach(([id, x, hi]) => {
+      body += g(id, `${rect(x, 92, 268, 196, { stroke: hi ? T : B, sw: hi ? 2 : 1.5, fill: hi ? L : '#FFFFFF' })}${slot(id, x + 16, 106, 236, 18)}${path(`M${x + 16} 134 H${x + 252}`, { stroke: B, sw: 1.5 })}`
+        + [0, 1, 2].map((r) => `${slot(`${id}-row-${r + 1}`, x + 16, 150 + r * 42, 176, 18)}${okChip(x + 236, 159 + r * 42, id === 'rival' || r !== 1)}`).join(''));
+    });
+    svg('seo-competitor', 600, 304, body, ['q-left', 'q-right']);
+  }
+
+  // monthly-plan — bir aylık çalışma: haftalara dağılan işler ve rapor
+  {
+    let body = g('month', `${rect(16, 16, 568, 268)}${badge('calendar', 32, 30, { size: 34 })}${slot('month', 76, 38, 260, 18)}${path('M32 80 H568', { stroke: B, sw: 1.5 })}`);
+    [0, 1, 2, 3].forEach((w) => {
+      const x = 32 + w * 136;
+      body += g(`week-${w + 1}`, `${slot(`week-${w + 1}`, x, 92, 124, 16)}${rect(x, 116, 124, 108, { rx: 10, fill: w === 3 ? L : G, stroke: w === 3 ? T : 'none' })}${badge(['flag', 'pen', 'check', 'chart'][w], x + 44, 128, { size: 34, fill: '#FFFFFF' })}${slot(`task-${w + 1}`, x + 6, 172, 112, 18)}${slot(`task-sub-${w + 1}`, x + 6, 194, 112, 16)}`);
+    });
+    body += path('M32 246 H568', { stroke: BAR, sw: 6 }) + path('M32 246 H568', { id: 'month-progress', sw: 6 });
+    svg('monthly-plan', 600, 300, body, ['month-progress']);
+  }
+
+  // contract-scope — sözleşmede kontrol edilecek maddeler
+  {
+    let body = g('doc', `${rect(140, 16, 320, 312)}${badge('doc', 160, 32, { size: 36 })}${slot('doc', 206, 40, 236, 18)}${path('M160 84 H440', { stroke: B, sw: 1.5 })}`);
+    [0, 1, 2, 3, 4].forEach((r) => {
+      body += g(`clause-${r + 1}`, `${rect(160, 98 + r * 40, 280, 32, { rx: 8, fill: r === 4 ? SAF : G, stroke: r === 4 ? S : 'none' })}${okChip(180, 114 + r * 40, r !== 4)}${slot(`clause-${r + 1}`, 200, 105 + r * 40, 232, 18)}`);
+    });
+    body += g('sign', `${path('M176 312 C200 300 214 320 236 308 S270 302 286 310', { id: 'signature', stroke: D, sw: 2 })}`);
+    svg('contract-scope', 600, 340, body, ['signature']);
+  }
+
+  // hreflang-pair — iki dil sürümü karşılıklı hreflang ile bağlı
+  {
+    const pagePair = (id, x, hi) => g(id, `${rect(x, 24, 236, 240, { stroke: hi ? T : B, sw: hi ? 2 : 1.5 })}${browserTop(x, 24, 236)}${rect(x + 16, 62, 52, 22, { rx: 11, fill: hi ? L : G, stroke: 'none' })}${slot(`${id}-lang`, x + 16, 64, 52, 18)}${slot(`${id}-url`, x + 76, 64, 150, 18)}${rect(x + 16, 98, 90, 80, { rx: 8, fill: L, stroke: 'none' })}${icon('box', x + 49, 126)}${bar(x + 118, 104, 100, 9, T)}${bar(x + 118, 122, 90)}${rect(x + 118, 140, 100, 22, { rx: 11, fill: G, stroke: 'none' })}${slot(`${id}-price`, x + 120, 142, 96, 18)}${slot(`${id}-ship`, x + 16, 196, 204, 18)}${bar(x + 16, 228, 160)}`);
+    const body = pagePair('tr', 16, false) + pagePair('de', 348, true)
+      + path('M252 120 C290 100 310 100 348 120', { id: 'alt-1', sw: 2.5 }) + path('M348 160 C310 180 290 180 252 160', { id: 'alt-2', sw: 2.5 })
+      + g('hreflang', `${rect(256, 128, 88, 24, { rx: 12, fill: D, stroke: 'none' })}${slot('hreflang', 256, 131, 88, 18)}`);
+    svg('hreflang-pair', 600, 288, body, ['alt-1', 'alt-2']);
+  }
+
+  // season-calendar — yıl boyunca aynı kampanya adresi
+  {
+    let body = g('year', `${rect(16, 16, 568, 132, { fill: '#FFFFFF' })}${slot('year', 32, 28, 240, 18)}${path('M40 98 H520', { stroke: BAR, sw: 6 })}`);
+    for (let m = 0; m < 12; m++) body += `<circle cx="${40 + m * 43.6}" cy="98" r="3" fill="${B}"/>`;
+    [[2, 1, 60], [9.4, 2, 60], [11, 3, 114]].forEach(([m, n, ly]) => {
+      const x = 40 + m * 43.6;
+      body += g(`mark-${n}`, `<circle cx="${x}" cy="98" r="9" fill="${n === 3 ? S : T}"/>${slot(`mark-${n}`, x - 60, ly, 120, 16)}`);
+    });
+    body += path('M40 98 H520', { id: 'year-line', sw: 3 })
+      + g('url', `${rect(150, 176, 300, 44, { rx: 22, stroke: T, sw: 2, fill: L })}${icon('link', 168, 186)}${slot('url', 198, 189, 236, 18)}`)
+      + path('M520 107 C520 150 440 150 420 176', { id: 'to-url', stroke: S, sw: 2, dash: '4 4' })
+      + g('note', `${slot('note', 120, 236, 360, 16)}`);
+    svg('season-calendar', 600, 264, body, ['year-line']);
+  }
+
+  // log-lines — sunucu kayıtlarında Googlebot isteklerinin dağılımı
+  {
+    let body = g('log', `${rect(16, 16, 340, 268, { fill: '#111827', stroke: 'none' })}${slot('log', 32, 28, 300, 16)}`);
+    [0, 1, 2, 3, 4, 5].forEach((r) => {
+      const hi = r === 2 || r === 4;
+      body += g(`line-${r + 1}`, `${rect(28, 56 + r * 36, 316, 28, { rx: 6, fill: hi ? '#1F3A3A' : '#1F2937', stroke: 'none' })}${slot(`line-${r + 1}`, 36, 61 + r * 36, 300, 18)}`);
+    });
+    body += g('chart', `${rect(376, 16, 208, 268)}${slot('chart', 392, 28, 180, 16)}`
+      + [[0.9, S], [0.75, S], [0.3, T], [0.22, T]].map(([f, c], i) => `${slot(`group-${i + 1}`, 392, 62 + i * 52, 176, 16)}${bar(392, 82 + i * 52, 176, 10, BAR)}${rect(392, 82 + i * 52, Math.round(176 * f), 10, { rx: 5, fill: c, stroke: 'none', id: `fill-${i + 1}` })}`).join(''));
+    svg('log-lines', 600, 300, body);
+  }
+
+  // crawl-table — tarama aracı çıktısı: URL, durum, canonical, iç bağlantı
+  {
+    let body = g('table', `${rect(16, 16, 568, 280)}${slot('h-url', 32, 30, 230, 16)}${slot('h-status', 282, 30, 70, 16)}${slot('h-canon', 362, 30, 120, 16)}${slot('h-links', 492, 30, 80, 16)}${path('M32 56 H568', { stroke: B, sw: 1.5 })}`);
+    [0, 1, 2, 3, 4].forEach((r) => {
+      const st = ['200', '301', '200', '404', '200'][r]; const bad = st === '404' || r === 2;
+      body += g(`row-${r + 1}`, `${rect(28, 66 + r * 44, 544, 36, { rx: 8, fill: bad ? SAF : (r % 2 ? G : '#FFFFFF'), stroke: bad ? S : 'none' })}${slot(`url-${r + 1}`, 38, 75 + r * 44, 236, 18)}${rect(282, 73 + r * 44, 56, 22, { rx: 11, fill: st === '200' ? L : st === '301' ? G : '#FBE9E4', stroke: 'none' })}${slot(`st-${r + 1}`, 282, 75 + r * 44, 56, 18)}${slot(`canon-${r + 1}`, 362, 75 + r * 44, 120, 18)}${slot(`links-${r + 1}`, 492, 75 + r * 44, 70, 18)}`);
+    });
+    svg('crawl-table', 600, 312, body);
+  }
+
+  // migration-phases — taşıma öncesi, yayın günü, sonrası
+  {
+    let body = '';
+    [16, 216, 416].forEach((x, i) => {
+      const n = i + 1;
+      body += g(`phase-${n}`, `${rect(x, 16, 168, 268, { stroke: n === 2 ? T : B, sw: n === 2 ? 2 : 1.5, fill: n === 2 ? L : '#FFFFFF' })}<circle cx="${x + 84}" cy="46" r="16" fill="${D}"/>${text(x + 84, 46.5, n, { size: 14 })}${slot(`phase-${n}`, x + 8, 72, 152, 18)}${path(`M${x + 16} 102 H${x + 152}`, { stroke: B, sw: 1.5 })}`
+        + [0, 1, 2, 3].map((r) => `${okChip(x + 30, 126 + r * 38)}${slot(`item-${n}-${r + 1}`, x + 48, 117 + r * 38, 112, 18)}`).join(''));
+      if (i < 2) body += path(`M${x + 170} 46 L${x + 214} 46`, { id: `next-${n}`, sw: 2.5 });
+    });
+    svg('migration-phases', 600, 300, body, ['next-1', 'next-2']);
+  }
+
+  // traffic-drop — düşüş tarihi, yayın kaydı ve etkilenen sayfa grubu
+  {
+    const body = g('panel', `${rect(16, 16, 568, 280)}${slot('panel', 32, 30, 260, 18)}${slot('tag', 468, 30, 100, 16)}${path('M40 120 H560 M40 170 H560 M40 220 H560', { stroke: BAR, sw: 1 })}`)
+      + `<path id="drop-area" d="M40 130 C90 126 140 124 190 122 S270 120 300 124 L318 196 C360 200 420 196 470 186 S530 176 560 170 V236 H40z" fill="${L}" stroke="none"/>`
+      + path('M40 130 C90 126 140 124 190 122 S270 120 300 124 L318 196 C360 200 420 196 470 186 S530 176 560 170', { id: 'drop-line', sw: 2.5 })
+      + path('M309 70 V240', { id: 'release', stroke: S, sw: 2, dash: '5 4' })
+      + g('release-tag', `${rect(250, 60, 118, 26, { rx: 13, fill: SAF, stroke: S })}${slot('release', 254, 64, 110, 18)}`)
+      + g('group', `${rect(40, 250, 250, 32, { rx: 16, fill: G, stroke: 'none' })}${slot('group', 52, 257, 230, 18)}`)
+      + g('first', `${rect(310, 250, 250, 32, { rx: 16, fill: L, stroke: T })}${slot('first', 322, 257, 230, 18)}`);
+    svg('traffic-drop', 600, 312, body, ['drop-line']);
+  }
 }
+

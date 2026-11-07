@@ -20,6 +20,18 @@ Belirli bir ürün grubunu arayan müşterilere fayda sağlayan filtre kombinasy
 
 Ürün geçici olarak tükendiyse sayfayı erişilebilir tutup stok durumunu açıkça göstermek ve varsa uygun alternatifleri sunmak değerlendirilebilir. Ürün kalıcı olarak kaldırıldıysa, önce yakın bir karşılığın bulunup bulunmadığına bakarız. Eski adresin nasıl ele alınacağını ve ilgili iç bağlantıların nereye gideceğini buna göre belirleriz.
 
+## Ürün içeriği ve sezon sayfaları
+
+### Ürün açıklamasını üreticiden olduğu gibi alabilir miyim?
+
+Üreticinin teknik verisi başlangıç noktası olabilir. Mağazanızın müşterisine özgü, doğrulanabilir bilgiler ekleyin. Örneğin aynı matkabı satan mağazalardan biri kutu içeriğini, uyumlu uçları ve servis koşullarını ayrıntılı açıklayabilir. Üreticiye ait ölçüleri değiştirmeden kendi kullanım açıklamanızı, ürün fotoğraflarınızı veya sık sorulan soruları ekleyebilirsiniz. İçeriğin hangi varyanta ait olduğunu da açıkça belirtin.
+
+Açıklama yayımlandıktan sonra örnek ürünü mobilde açıp ölçü ve kutu içeriğinin okunabildiğini kontrol edin.
+
+### Sezonluk ürün veya kategori sayfasını sezon bitince kaldırmalı mıyım?
+
+Önce sayfanın yeniden kullanılıp kullanılmayacağını ve kullanıcıya hâlâ hangi bilginin yarar sağlayacağını değerlendirin. Örneğin her yıl dönen bir hediye koleksiyonu için aynı adres güncellenebilir. Tamamen kaldırılan bir ürünün uygun karşılığı varsa yönlendirme değerlendirilebilir. Sayfada tarihi geçmiş fiyat, stok veya teslimat vaadi görünüyorsa bu alanları sezon sonunda güncelleyin. Kararı benzer sayfalara da uygulanacak şekilde kaydedin.
+
 ## Altyapı ve mağaza geçişi
 
 ### Shopify, ikas veya WooCommerce mağazamda çalışma yapılabilir mi?
@@ -29,6 +41,22 @@ Belirli bir ürün grubunu arayan müşterilere fayda sağlayan filtre kombinasy
 ### Mağazayı taşımadan önce SEO için ne hazırlamalıyım?
 
 Aramadan ziyaret alan ürün ve kategori adreslerini, yeni mağazadaki karşılıklarıyla eşleştirin. Yayından sonra örnek eski adreslerin doğru hedeflere ulaştığını ve menü bağlantılarının güncellendiğini kontrol edin. İlk görüşmede varsa eski adres listesini ve hedef yayın tarihini paylaşabilirsiniz. Teknik yönlendirme ve tarama konuları için [Teknik SEO hizmetini](/tr/hizmetler/technical-seo) inceleyin.
+
+## Mağaza altyapıları
+
+### Shopify’da SEO yapılır mı?
+
+Evet. Shopify SEO çalışmasında mağazanın ürün, koleksiyon ve tema çıktıları üzerinden ilerlenebilir. Örneğin bir koleksiyonu arayan müşterinin ilgili ürünleri bulabilmesi için koleksiyon metni ve ürün bağlantıları incelenebilir. Paneldeki ayarları canlı HTML ile karşılaştırır, tema veya uygulama kaynaklı farklılıkları örnek URL’lerle kaydederiz.
+
+Örneğin koleksiyon kartının bağlantısını da yayın sonrası test listesine ekleyebilirsiniz.
+
+### ikas SEO ayarlarında önce neye bakılır?
+
+İkas SEO çalışmasında önce seçilen ürün ve kategori sayfalarının yayındaki adresini, başlığını ve dahili bağlantılarını kontrol ederiz. Örneğin bir kategori adı değiştiyse yeni adın menüde ve sayfa başlığında doğru göründüğüne bakarız. URL de değiştiyse eski adresin davranışı ayrıca test edilir. Panelde yapılan değişikliğin canlı sayfaya yansıması doğrulanır.
+
+### Pazaryeri ürünlerimi kendi siteme taşıyabilir miyim?
+
+Evet. Önce ürün adı, görsel kullanım yetkisi, varyantlar ve stok verisinin hangi kaynaktan alınacağını belirleyin. Örneğin üç rengi olan bir üründe her varyantın ürün kimliğini kontrol edin. Mağazada kategori ve dahili bağlantıları kendi yapınıza göre oluşturun. Yayın sonrası mağazadaki ürün bilgisini örnek kayıtlarla karşılaştırın.
 
 ## Ölçüm ve teklif
 

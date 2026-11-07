@@ -339,6 +339,60 @@
   .seo-art--tech-robots-sitemap.ikas-visible .sev-conflict { animation: iv-fade 420ms ease-out 900ms both; }
 }
 
+/* Ek içerik visuals (role-lanes, channel-compare, page-annotate, seo-local, seo-competitor, monthly-plan,
+   contract-scope, hreflang-pair, season-calendar, log-lines, crawl-table, migration-phases, traffic-drop). */
+.seo-art :is([class*="sev-slot-role-"], [class*="sev-slot-week-"], [class*="sev-slot-task-sub-"], .seo-art--monthly-plan [class*="sev-slot-task-"], [class*="sev-slot-phase-"], [class*="sev-slot-mark-"], .sev-slot-note, .sev-slot-hreflang, [class*="sev-slot-st-"], .sev-slot-site-cta, [class*="-lang"]) { justify-content: center; text-align: center; }
+.seo-art :is(.sev-slot-site-cta, .sev-slot-hreflang) { color: #fff; }
+.seo-art :is([class^="sev-slot sev-slot-role-"]:not([class*="role-sub"]), .sev-slot-market, .sev-slot-store, .sev-slot-yours, .sev-slot-rival, [class*="sev-slot-phase-"], .sev-slot-profile, .sev-slot-site, .sev-slot-month, .sev-slot-doc, .sev-slot-year) { color: #111827; font-weight: 700; }
+.seo-art :is([class*="sev-slot-role-sub-"], .sev-slot-market-sub, .sev-slot-store-sub, [class*="sev-slot-week-"], [class*="sev-slot-task-sub-"], .sev-slot-note, .sev-slot-rating) { font-weight: 500; color: #6B7280; font-size: clamp(7px, 0.95vw, 11px); }
+.seo-art :is([class*="sev-slot-task-"]:not([class*="task-sub"]), [class*="sev-slot-item-"], [class*="sev-slot-clause-"], [class*="sev-slot-market-row-"], [class*="sev-slot-store-row-"], [class*="sev-slot-yours-row-"], [class*="sev-slot-rival-row-"], [class*="sev-slot-tag-"], [class*="sev-slot-info-"], [class*="sev-slot-group-"], .sev-slot-group, .sev-slot-first) { font-size: clamp(7px, 0.95vw, 11px); }
+.seo-art--log-lines [class*="sev-slot-line-"] { color: #D1FAE5; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 500; font-size: clamp(6.5px, 0.9vw, 10.5px); }
+.seo-art--log-lines .sev-slot-log { color: #9CA3AF; font-size: clamp(7px, 0.9vw, 10.5px); text-transform: uppercase; letter-spacing: .04em; }
+.seo-art :is([class*="sev-slot-url-"], [class*="-url"], .seo-art--crawl-table [class*="sev-slot-canon-"]) { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 500; font-size: clamp(6.5px, 0.95vw, 11px); }
+.seo-art--crawl-table :is([class*="sev-slot-h-"]) { font-size: clamp(7px, 0.9vw, 10.5px); text-transform: uppercase; letter-spacing: .04em; color: #6B7280; }
+.seo-art :is(.sev-slot-release, .seo-art--contract-scope .sev-slot-clause-5) { color: #8A5512; }
+.seo-art--traffic-drop .sev-slot-tag { justify-content: flex-end; font-size: clamp(7px, 0.9vw, 10.5px); text-transform: uppercase; color: #6B7280; }
+.seo-art--hreflang-pair :is(.sev-slot-tr-ship, .sev-slot-de-ship) { font-size: clamp(6.5px, 0.9vw, 10.5px); }
+@media (prefers-reduced-motion: no-preference) {
+  .seo-art--role-lanes.ikas-visible :is(.sev-lane-1, .sev-lane-2, .sev-lane-3), .seo-art--migration-phases.ikas-visible :is(.sev-phase-1, .sev-phase-2, .sev-phase-3) { animation: iv-rise 420ms ease-out 0ms both; }
+  .seo-art--role-lanes.ikas-visible .sev-lane-2, .seo-art--migration-phases.ikas-visible .sev-phase-2 { animation-delay: 160ms; }
+  .seo-art--role-lanes.ikas-visible .sev-lane-3, .seo-art--migration-phases.ikas-visible .sev-phase-3 { animation-delay: 320ms; }
+  .seo-art--channel-compare.ikas-visible .sev-market { animation: iv-rise 420ms ease-out 0ms both; }
+  .seo-art--channel-compare.ikas-visible .sev-store { animation: iv-rise 420ms ease-out 250ms both; }
+  .seo-art--page-annotate.ikas-visible .sev-page { animation: iv-fade 420ms ease-out 0ms both; }
+  .seo-art--page-annotate.ikas-visible :is(.sev-tag-1, .sev-tag-2, .sev-tag-3, .sev-tag-4) { animation: iv-slide-in 380ms ease-out 700ms both; }
+  .seo-art--page-annotate.ikas-visible .sev-tag-2 { animation-delay: 820ms; }
+  .seo-art--page-annotate.ikas-visible .sev-tag-3 { animation-delay: 940ms; }
+  .seo-art--page-annotate.ikas-visible .sev-tag-4 { animation-delay: 1060ms; }
+  .seo-art--seo-local.ikas-visible .sev-profile { animation: iv-rise 420ms ease-out 0ms both; }
+  .seo-art--seo-local.ikas-visible .sev-site { animation: iv-rise 420ms ease-out 700ms both; }
+  .seo-art--seo-competitor.ikas-visible .sev-query { animation: iv-pop 380ms ease-out 0ms both; }
+  .seo-art--seo-competitor.ikas-visible :is(.sev-yours, .sev-rival) { animation: iv-rise 420ms ease-out 600ms both; }
+  .seo-art--monthly-plan.ikas-visible :is(.sev-week-1, .sev-week-2, .sev-week-3, .sev-week-4) { animation: iv-rise 420ms ease-out 0ms both; }
+  .seo-art--monthly-plan.ikas-visible .sev-week-2 { animation-delay: 120ms; }
+  .seo-art--monthly-plan.ikas-visible .sev-week-3 { animation-delay: 240ms; }
+  .seo-art--monthly-plan.ikas-visible .sev-week-4 { animation-delay: 360ms; }
+  .seo-art--monthly-plan.ikas-visible .sev-month-progress { --sev-d: 700ms; animation-duration: 1400ms; }
+  .seo-art--contract-scope.ikas-visible :is(.sev-clause-1, .sev-clause-2, .sev-clause-3, .sev-clause-4, .sev-clause-5) { animation: iv-fade 380ms ease-out 200ms both; }
+  .seo-art--contract-scope.ikas-visible .sev-clause-5 { animation: iv-pop 380ms ease-out 900ms both; }
+  .seo-art--contract-scope.ikas-visible .sev-signature { --sev-d: 1200ms; }
+  .seo-art--hreflang-pair.ikas-visible .sev-tr { animation: iv-rise 420ms ease-out 0ms both; }
+  .seo-art--hreflang-pair.ikas-visible .sev-de { animation: iv-rise 420ms ease-out 200ms both; }
+  .seo-art--hreflang-pair.ikas-visible :is(.sev-alt-1, .sev-alt-2) { --sev-d: 700ms; }
+  .seo-art--hreflang-pair.ikas-visible .sev-hreflang { animation: iv-pop 380ms ease-out 1300ms both; }
+  .seo-art--season-calendar.ikas-visible .sev-year-line { --sev-d: 200ms; animation-duration: 1400ms; }
+  .seo-art--season-calendar.ikas-visible :is(.sev-mark-1, .sev-mark-2, .sev-mark-3) { animation: iv-pop 380ms ease-out 900ms both; }
+  .seo-art--season-calendar.ikas-visible .sev-url { animation: iv-rise 420ms ease-out 1500ms both; }
+  .seo-art--log-lines.ikas-visible :is(.sev-line-1, .sev-line-2, .sev-line-3, .sev-line-4, .sev-line-5, .sev-line-6) { animation: iv-fade 300ms ease-out 100ms both; }
+  .seo-art--log-lines.ikas-visible :is(.sev-fill-1, .sev-fill-2, .sev-fill-3, .sev-fill-4) { transform-origin: left center; animation: sev-grow 800ms ease-out 700ms both; }
+  .seo-art--crawl-table.ikas-visible :is(.sev-row-1, .sev-row-2, .sev-row-3, .sev-row-4, .sev-row-5) { animation: iv-rise 380ms ease-out 100ms both; }
+  .seo-art--crawl-table.ikas-visible :is(.sev-row-3, .sev-row-4) { animation: iv-pop 380ms ease-out 700ms both; }
+  .seo-art--migration-phases.ikas-visible :is(.sev-next-1, .sev-next-2) { --sev-d: 600ms; }
+  .seo-art--traffic-drop.ikas-visible .sev-drop-line { --sev-d: 200ms; animation-duration: 1400ms; }
+  .seo-art--traffic-drop.ikas-visible :is(.sev-release-tag, .sev-release) { animation: iv-pop 380ms ease-out 1300ms both; }
+  .seo-art--traffic-drop.ikas-visible :is(.sev-group, .sev-first) { animation: iv-rise 420ms ease-out 1600ms both; }
+}
+
 /* Turkish ikas pages: subtle, one-time motion. Elements are visible by
    default and only receive motion after the small observer opts them in. */
 [data-ikas-reveal].ikas-visible {

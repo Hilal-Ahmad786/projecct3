@@ -9,6 +9,14 @@
 | Yönlendirme hangi adreste sona eriyor? | HTTP istekleri ve yanıt başlıkları | Durum kodları, ara adresler ve son hedef |
 | Ürün işaretlemesi sayfadaki bilgilerle uyumlu mu? | Rich Results Test ve sayfa içeriği | Google’ın desteklediği işaretleme türlerinde tespit edilen alanlar ve hatalar |
 
+## Screaming Frog ile bir site taramasında neye bakılır?
+
+Screaming Frog nedir sorusunun pratik yanıtı, bir sitenin bağlantılarını takip edip bulduğu URL’lere ait teknik bilgileri listeleyen bir tarama aracıdır. Teknik SEO analizinde örneğin hangi menü bağlantısının kırık bir hizmet adresine gittiğini araştırmak için kullanılabilir.
+
+Taramanın başlangıç adresini, kapsamını ve ayarlarını kaydederiz. Örneğin yalnızca Türkçe hizmet sayfalarını inceliyorsak farklı dil dizinlerini raporda ayrı tutarız. Sonuçta bir adres 404 görünüyorsa önce o adrese hangi sayfanın bağlantı verdiğine, ardından canlı yanıtın aynı olup olmadığına bakarız.
+
+Tarama aracının gördüğü URL’lerle Google’ın kayıtlı indeks durumunu ayrı değerlendiririz. Tarama çıktısını site haritası ve gerekirse Search Console örnekleriyle karşılaştırırız. Böylece bir rapor satırı geliştirici için somut işe dönüşür. Örneğin menüdeki eski bağlantıyı güncelleyip örnek şablonları yeniden taramak üzere kayda alırız.
+
 ## Ölçümleri nasıl yorumluyoruz?
 
 ### Search Console ve site taraması
@@ -43,6 +51,22 @@ Site taşımasında eski URL’nin yanıt kodunu, varsa ara yönlendirmeleri ve 
 ## Denetim için hangi erişimler gerekir?
 
 Herkese açık sayfalarda site taraması, HTTP kontrolleri ve tarayıcı testleriyle başlayabiliriz. Google’ın sitenizle ilgili raporlarını incelemek için ilgili Search Console mülküne yetkili erişim gerekir. Hazırlık ortamı veya sunucu kayıtları gerekiyorsa bunların kapsamını proje başında birlikte belirleriz.
+
+## Google Search Console mülkü nasıl doğrulanır?
+
+Google Search Console kaydı nasıl yapılır sorusunda ilk karar, hangi alanın raporlanacağıdır. Örneğin bütün alt alanları kapsamak ile yalnızca bir HTTPS adres önekini incelemek farklı mülk seçimleri gerektirir.
+
+### 1. Mülk türünü seçin
+
+Alan adı mülkü bütün alt alanları ve protokolleri kapsar. URL ön eki mülkünde ise kapsam girilen önekle sınırlıdır. İncelemek istediğiniz adresin mülke dahil olduğunu kontrol edin.
+
+### 2. Sahipliği doğrulayın
+
+Alan adı mülkünde DNS doğrulamasını kullanın. URL ön eki mülkü için arayüzde sunulan uygun yöntemi seçin. Örneğin HTML dosyası seçildiğinde dosyanın doğru canlı adreste açıldığını doğrulayın.
+
+### 3. İnceleme erişimini tanımlayın
+
+Doğrulama tamamlandıktan sonra ekip üyesine ihtiyacı olan yetkiyi verin. Örnek URL’yi ilgili mülkte açarak kapsamı kontrol edin. Hesap şifresi paylaşmak yerine kişi bazında yetki tanımlayın.
 
 ## Siteniz için doğru ölçüm kapsamını belirleyelim
 

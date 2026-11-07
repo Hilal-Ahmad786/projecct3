@@ -38,6 +38,30 @@ Site haritası Google’ın adresi keşfetmesine yardımcı olur. İndeksleme ka
 
 Evet. Yayından önce öncelikli eski URL’leri çıkarabilir, bunları karşılık gelen yeni sayfalarla eşleştirebilir ve hazırlık ortamında kontrol edilecek şablonları belirleyebiliriz. Yayından sonra canlı yönlendirmeleri, dahili bağlantıları ve yeni sayfaların yanıtlarını yeniden test ederiz.
 
+## Tarama ve mobil görünüm
+
+### Mobil SEO nedir?
+
+Mobil SEO, sayfanın telefonda kullanılabilmesini ve önemli içeriğin mobil sürümde erişilebilir olmasını kapsayan çalışmalardır. Örneğin hizmet menüsü masaüstünde görünürken mobilde bağlantılar ancak özel bir etkileşimden sonra oluşuyorsa bu farkı inceleriz. Ana başlığı, önemli bağlantıları ve performans ölçümünü aynı örnek sayfalar üzerinden kontrol ederiz.
+
+Örneğin bir ürünün açıklamasının mobilde nerede göründüğü de test sırasında kaydedilebilir.
+
+### robots.txt ile noindex arasındaki fark nedir?
+
+robots.txt, uyumlu tarayıcıların hangi yollara erişebileceğini düzenler. noindex, erişilebilen bir sayfanın arama dizinine alınmamasını ister. Örneğin bir adresi robots.txt ile engellerseniz Google sayfadaki noindex yönergesini okuyamayabilir. Uygun yöntemi seçmeden önce amacın taramayı sınırlamak mı, sayfayı arama dizininden çıkarmak mı olduğunu belirleyin. Gizli sayfalar için sunucu tarafında erişim kontrolü kullanın.
+
+## Adres değişiklikleri
+
+### HTTPS geçişi SEO’yu etkiler mi?
+
+HTTP adreslerinden HTTPS adreslerine geçerken eski ve yeni URL’leri birlikte test etmek gerekir. Örneğin eski hizmet adresinin doğrudan eşdeğer HTTPS sayfasına ulaştığını, menünün güncel bağlantıyı kullandığını ve canonical hedefinin HTTPS olduğunu doğrulayın. Sertifika, yönlendirme veya şablon hatası bulunursa değişikliği yayındaki örnekler üzerinden yeniden kontrol edin.
+
+Bir örnek adres seçip hem eski hem yeni bağlantıyı aynı yayın kontrolünde inceleyebilirsiniz.
+
+### 404 sayfaları sitenin sıralamasını düşürür mü?
+
+Kaldırılmış ve uygun karşılığı bulunmayan bir URL için 404 normal bir yanıttır. Örneğin sona eren bir kampanya kalıcı olarak kaldırıldıysa 404 görülebilir. Öncelik, aktif menü veya önemli içeriklerden gelen bağlantıların kırık hedefe gitmemesidir. Uygun karşılık varsa yönlendirmeyi değerlendirin ve site haritasında kaldırılan adresin bulunmadığını kontrol edin.
+
 ## Uygulama, teslimat ve takip
 
 ### Düzeltmeleri kendi geliştiricim yapabilir mi?

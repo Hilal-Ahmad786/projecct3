@@ -48,6 +48,53 @@ WordPress kalıcı bağlantı ayarlarını, ürün kategorisi ve etiket arşivle
 
 Hazır e-ticaret altyapılarında hangi alanların panelden düzenlenebildiğini belirleyerek başlarız. Platformun izin vermediği değişiklikleri raporda ayrıca belirtiriz.
 
+## E-ticaret SEO ajansıyla iş bölümü nasıl yapılır?
+
+Bir e-ticaret SEO ajansıyla çalışırken mağaza verisini kimin sağlayacağını, önerileri kimin uygulayacağını ve sonuçları kimin kontrol edeceğini belirleyin. E-ticaret SEO danışmanlığı, uygulamayı kendi ekibinizin üstlendiği bir düzende de yürütülebilir.
+
+### 1. Mağazadan bir örnek seçin
+
+Örneğin koşu ayakkabısı kategorisini açın. Ürün çeşitleri, stok yapısı ve en çok sorulan müşteri soruları hakkında mağaza ekibinden bilgi alın. Kategorinin hangi alışveriş ihtiyacını karşılaması gerektiğini birlikte belirleyin.
+
+### 2. Görevleri ilgili ekiplere ayırın
+
+Kategori metnini içerik ekibi, filtre davranışını geliştirici, ürün verilerini mağaza ekibi güncelleyebilir. Teklifte hangi işleri e-ticaret SEO hizmetinin kapsadığını ve her değişikliğin hangi ortamda deneneceğini yazın.
+
+### 3. Yayındaki örneği kontrol edin
+
+Değişen URL’leri ve yayın tarihini kaydedin. Mobilde kategori bağlantılarını, ürün kartlarını ve satın alma yolunu test edin. Arama performansını takip ederken yeni kategoriyle benzer bir grubu ve karşılaştırılabilir dönemleri seçin.
+
+## Trendyol SEO’su ile kendi mağazanızın SEO’su nasıl ayrılır?
+
+Trendyol SEO’su gibi pazaryeri SEO çalışmalarında ürünün platform içindeki sunumuna odaklanırsınız. Kendi mağazanızda ise ürün ve kategori sayfalarının yanı sıra URL yapısı, dahili bağlantılar ve Google’daki görünürlük üzerinde çalışabilirsiniz. Aynı ürün iki kanalda satılsa da inceleme kapsamı farklıdır.
+
+| Konu | Pazaryeri | Kendi mağazanız |
+| --- | --- | --- |
+| Ürün bilgisi | Platform alanları ve kategori kuralları | Ürün şablonu, açıklama ve bağlantılar |
+| Kontrol alanı | Satıcıya açık listeleme ayarları | URL, şablon ve mağaza mimarisi |
+| Ölçüm | Platformun sunduğu raporlar | Search Console ve mağaza analitiği |
+
+Örneğin bir kahve öğütücüsünün teknik ölçüleri iki kanalda da doğru olmalıdır. Kendi mağazanızda ayrıca öğütücüler kategorisinden ve öğütüm rehberinden ürüne bağlantı verebilirsiniz. Pazaryerinde ise ürünün doğru kategori ve özellik alanlarında yer aldığını kontrol edersiniz.
+
+Mağaza ve pazaryeri ölçümlerini ayrı tutun. Bir ürünün platform içi görüntülenmesi ile Google’dan mağazanıza gelen ziyaret, farklı kararları destekleyen verilerdir.
+
+## E-ticaret sitelerinde öncelik verilen üç SEO hatası
+
+Bir e-ticaret SEO incelemesinde hatanın ne kadar sık görüldüğü kadar, müşterinin doğru ürünü bulmasını nasıl etkilediğine bakarız. Aşağıdaki örnekler, mağazanızdaki ilk kontrolü seçmeye yardımcı olur.
+
+Her bulguyu bir örnek adresle kaydedin.
+
+### Aynı ihtiyaca açılan birden çok kategori
+
+“Kışlık botlar” ve “kış botları” aynı ürünleri ve metni gösteriyorsa ziyaretçi hangi kategoriye bakacağını bilemeyebilir. Menü bağlantıları, kategori içeriği ve URL’ler birlikte incelenir.
+
+### Her filtre için gereksiz adres üretimi
+
+Renk ve sıralama seçenekleri farklı adresler oluşturabilir. Örneğin yalnızca sıralamayı değiştiren bir adresle farklı ürün grubu sunan bir filtreyi ayrı değerlendiririz.
+
+### Önemli ürünlere zayıf bağlantı
+
+Bir ürün mağazada satışa açık olduğu halde ilgili kategoride görünmüyorsa ürün listeleme kuralları incelenir. Düzeltme sonrası mobil kategoriden ürüne gidilebildiği ve bağlantının beklenen adresi açtığı kontrol edilir.
 
 ## Mağazanız için ilk SEO adımını belirleyelim
 

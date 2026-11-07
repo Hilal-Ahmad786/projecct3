@@ -41,6 +41,18 @@ Düzeltilen adresleri ve ilgili şablon örneklerini yeniden kontrol ederiz. Ör
 
 ::cta Taşıma tarihini ve değişecek adres gruplarını paylaşın; eşleme ve kontrol planını birlikte hazırlayalım. | Site Taşıma Planımı Paylaş
 
+## Site taşımasında hangi kontrol hangi aşamada yapılır?
+
+Site taşıma çalışmasında yayın öncesi ve sonrası kontrolleri aynı örnek adresler üzerinden planlarız. Örneğin bir üretici sitesinin eski bakım hizmeti URL’si için hedef adres, yönlendirmeden sorumlu ekip ve yayın sonrası test tarihi önceden belirlenebilir.
+
+| Aşama | Örnek kontrol |
+| --- | --- |
+| Yayın öncesi | Eski adresi içerik açısından eşdeğer yeni adresle eşleştir |
+| Yayın sırasında | Eski adresin tek adımda beklenen hedefe ulaştığını doğrula |
+| Yayın sonrası | Yeni hedefi, dahili bağlantıları ve ilgili arama verisini izle |
+
+Yönlendirme düzgün çalışsa bile yeni hedefin beklenen içeriği sunduğunu ayrıca kontrol ederiz. Örneğin eski bakım sayfası yeni adrese ulaşıyor ama yeni şablonda indeksleme engeli kalmış olabilir. Ekip bu durumda yönlendirme ve indeksleme kontrolünü farklı satırlarda görür. Yayından önce hangi sorunların müdahale gerektireceğini ve hangi ekibin müdahale edeceğini belirleriz.
+
 ## Hangi işi kim üstlenir?
 
 | İş | Sorumluluk |
@@ -50,6 +62,22 @@ Düzeltilen adresleri ve ilgili şablon örneklerini yeniden kontrol ederiz. Ör
 | Kod ve altyapı değişiklikleri | Teklifte belirlenen uygulama ekibi |
 | Yayın onayı ve zamanlaması | Müşteri ve uygulama ekibi |
 | Yeniden test ve takip | PakSoft, anlaşılan kapsam dahilinde |
+
+## Ani organik trafik düşüşünde ilk inceleme
+
+Ani trafik düşüşü gördüğümüzde önce değişimin hangi veri kaynağında ve hangi sayfa grubunda başladığına bakarız. Örneğin analitik oturumları düşmüş ama Search Console tıklamaları benzer kalmışsa ölçüm kurulumunu da inceleriz.
+
+### 1. Etkilenen grubu belirleyin
+
+Tarih aralığını, ülke ve cihaz filtrelerini kaydedin. Düşüşün tek bir kategoriye, tüm hizmet sayfalarına veya yalnızca mobil ziyaretlere ait olup olmadığına bakın.
+
+### 2. Son değişiklikleri karşılaştırın
+
+Yayın kaydı, sunucu durumu ve ilgili URL’lerin yanıtlarını inceleyin. Örneğin yeni sürümden sonra ürün adresleri hata veriyorsa önce hatayı canlı örnekte tekrar üretin.
+
+### 3. İlk müdahaleyi ve doğrulamayı kaydedin
+
+Neden doğrulanabiliyorsa sorumlu ekibe örnek adres ve beklenen davranışı iletin. Örneğin hatalı şablon düzeltildiğinde URL’leri yeniden test edin. Arama verisinin sonraki değerlendirmesini teknik testten ayrı planlayın.
 
 ## İlk görüşmeye nasıl hazırlanabilirsiniz?
 

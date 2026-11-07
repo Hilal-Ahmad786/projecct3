@@ -26,6 +26,21 @@ Bu senaryolar, olası teknik SEO sorunlarını ve uygulanabilecek doğrulama ad�
 
 **Doğrulama.** Aynı örnek ürün adresleri, karşılaştırılabilir cihaz ve ağ koşullarında yeniden test edilir. Görsel isteğinin başlangıcı ve görünür hale gelme zamanı karşılaştırılır. Gerçek kullanıcı verisi varsa ayrı değerlendirilir.
 
+## Temsili örnek — JavaScript ile yüklenen kategori içeriği
+
+Temsili bir mağazada kategori açıldığında başlık görünüyor, ürün bağlantıları ise yalnızca ziyaretçi filtreyi değiştirdikten sonra ekleniyor. Geliştirici, ilk HTTP yanıtını ve sayfanın etkileşim olmadan oluşan görünümünü karşılaştırır. Hangi ürün bağlantılarının hangi aşamada bulunduğu kaydedilir.
+
+Varsayılan kategoride gösterilmesi amaçlanan ürünlerin bağlantıları, uygun şablon değişikliğiyle başlangıçta kullanılabilir hale getirilebilir. Örneğin ilk ürün grubunu sunucu çıktısına eklerken filtre sonrasında değişen grupları ayrı test etmek gerekebilir. Uygulama kararı mevcut mağaza altyapısına göre alınır.
+
+Yayından sonra bir kategori adresi etkileşimsiz açılır ve örnek ürün bağlantıları kontrol edilir. Filtreleme ve sonraki sayfaya geçme davranışı ayrıca test edilir. Raporda değişen bileşen ve kontrol edilen adresler yazılır. Arama motorunun sayfayı ne zaman yeniden işleyeceği bu teknik doğrulamadan ayrı izlenir. Geliştirici, aynı bileşenin kullanıldığı bir başka kategoriyi de örnek olarak test eder.
+
+## Temsili örnek — Çok dilli sitede yanlış hreflang hedefi
+
+Temsili bir üretici sitesinde Türkçe ürün sayfalarının dil alternatifi olarak Almanca ana sayfa belirtiliyor. Oysa ürünlerin bir kısmının Almanca karşılığı var. İlk incelemede örnek ürünlerin dil seçicisi, hreflang hedefi ve HTTP yanıtı birlikte kaydedilir.
+
+Eşdeğer ürünü olan adresler karşılıklı işaretlenir. Almanca karşılığı bulunmayan bir ürün için otomatik olarak ana sayfayı eşdeğer kabul etmek yerine mevcut yayın yapısı değerlendirilir. Şablon dil eşlemelerini ortak bir kaynaktan oluşturuyorsa düzeltmenin hangi diğer sayfalara yansıyacağı kontrol edilir.
+
+Yayında Türkçe ürünün Almanca ürüne, Almanca ürünün de Türkçe karşılığına işaret ettiği doğrulanır. Örnek sayfaların bildirdiği canonical hedefler ve bağlantıların açıldığı dil de kontrol edilir. Böylece hangi eşleşmenin düzeldiği ve hangi ürün için henüz karşılık bulunmadığı ayrı ayrı görülebilir. Düzeltme kaydına kontrol tarihi ve şablon adı da eklenir.
 
 ## Bir teknik SEO örneğinde hangi kanıtları aramalısınız?
 

@@ -26,6 +26,14 @@ Adresler değişecekse eski URL’lerin çıkarılması, karşılık gelen yeni 
 
 Düzeltmeleri kendi geliştiriciniz yapacaksa teklif denetim ve geliştiriciye teslim edilecek iş listesine odaklanabilir. PakSoft’un uygulaması istenirse ilgili geliştirmeler ayrıca kapsamlandırılır. Yeniden testin ve devam eden izlemenin kapsamı teklif üzerinde belirtilir.
 
+## Denetim ücreti ve uygulama bedeli nasıl ayrılır?
+
+SEO audit fiyatını karşılaştırırken raporlama ve uygulamanın hangi kalemlerde yer aldığını sorun. Denetimde örnek URL’ler incelenir, sorunlar önceliklendirilir ve kabul ölçütleri yazılır. Uygulamada ise geliştirici ilgili şablonu, ayarı veya sunucu kuralını değiştirir.
+
+Örneğin bir kategori şablonundaki yanlış indeksleme kuralı denetimde tespit edilebilir. Düzeltme için şablon değişikliği, test ortamında kontrol ve yayın planı gerekebilir. Kendi geliştiriciniz bu işleri yapacaksa teklif denetim ve iş listesine odaklanabilir. PakSoft uygulamayı üstlenecekse yapılacak işler teklif üzerinde ayrıca açıklanır.
+
+Yayın sonrası kontrolü de ayrı okuyun. Örneğin değişen şablondan kaç sayfanın örnekleneceğini ve açık bir sorun görülürse kimin devreye gireceğini belirleyin. Böylece iki teklif aynı bulguyu kapsıyor olsa da hangi ekibin işi tamamlayacağını ve yeniden testi kimin yapacağını anlayabilirsiniz. Geliştirme sonrası test kapsamını teklif görüşmesinde açıkça belirtin.
+
 ## Üç örnek teklif kapsamı
 
 | İhtiyaç | Teklife girebilecek işler |
@@ -35,6 +43,14 @@ Düzeltmeleri kendi geliştiriciniz yapacaksa teklif denetim ve geliştiriciye t
 | Kurumsal site yeni altyapıya taşınıyor | Eski ve yeni URL eşleştirmesi, yönlendirme planı, yayın öncesi test ve yayındaki örnek adreslerin kontrolü |
 
 ::cta Site adresinizi ve öncelikli sayfa türlerini paylaşın; teklif kapsamını birlikte netleştirelim. | İncelenecek Site Adresini Paylaş
+
+## Site büyüklüğü denetim kapsamını nasıl değiştirir?
+
+Teknik SEO fiyatları, sayfa adediyle birlikte şablon çeşitliliğine ve URL kurallarına bağlıdır. Örneğin tek ürün şablonu kullanan geniş bir katalog ile farklı dil ve bölge seçenekleri sunan daha küçük bir mağaza farklı örnekleme planları gerektirir.
+
+Bir teklifte hangi sayfa türlerinin inceleneceğini, her grubun nasıl örnekleneceğini ve hangi bulguların şablon düzeyinde değerlendirileceğini sorun. Örneğin sadece Türkçe hizmet sayfalarında görülen bir sorun için diğer dillerden birkaç kontrol örneği seçilebilir. Taşıma yapılacaksa eski URL envanteri ve eşleştirme işi ayrı kapsamlandırılır.
+
+Sunucu kayıtları veya hazırlık ortamı gerekiyorsa bu erişimleri kimin sağlayacağını belirleyin. Eksik bir URL listesi varsa önce listeyi hazırlamak da teklif kapsamını değiştirebilir. Böylece site büyüklüğünün hangi denetim ve doğrulama işlerine yansıdığını teklif üzerinden görebilirsiniz. Örnek URL listesi teklifin karşılaştırılmasını kolaylaştırır.
 
 ## Teklif almak için neleri paylaşmalısınız?
 

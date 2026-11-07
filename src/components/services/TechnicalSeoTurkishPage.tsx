@@ -53,24 +53,41 @@ const V = {
   quote: (className?: string) => art('quote-groups', 'Temsili teknik SEO teklifi: denetim, uygulama, doğrulama ve takip kalemleri; altyapı geliştirmesi ayrı değerlendiriliyor', { 'slot-group-1': 'Teknik SEO denetimi', 'slot-group-2': 'Düzeltmelerin uygulanması', 'slot-group-3': 'Canlı sitede doğrulama', 'slot-group-4': 'Yayın sonrası takip', 'slot-quote': 'Teknik SEO teklifi', 'slot-extra': 'Altyapı geliştirmesi' }, className),
 };
 
+const EK = {
+  stacks: () => art('ecom-platforms', 'Teknik SEO incelemesi yapılabilen altyapılar: WordPress, Shopify, ikas ve özel yazılım; her birinde farklı ayar ve şablon alanları kontrol ediliyor', { 'slot-plat-1': 'WordPress', 'slot-focus-1': 'Eklenti · tema', 'slot-plat-2': 'Shopify', 'slot-focus-2': 'Tema · uygulama', 'slot-plat-3': 'ikas', 'slot-focus-3': 'Panel · tema', 'slot-plat-4': 'Özel yazılım', 'slot-focus-4': 'Kod · sunucu' }),
+  logs: () => art('log-lines', 'Temsili sunucu kayıtları: Googlebot isteklerinin büyük kısmı filtre ve parametre adreslerine gidiyor, öncelikli kategori ve ürün sayfaları daha az taranıyor', { 'slot-log': 'Sunucu kayıtları · Googlebot', 'slot-line-1': 'GET /kategori?renk=siyah 200', 'slot-line-2': 'GET /kategori?sirala=fiyat 200', 'slot-line-3': 'GET /kategori/yeni-urunler 200', 'slot-line-4': 'GET /arama?q=canta 200', 'slot-line-5': 'GET /urun/model-a 200', 'slot-line-6': 'GET /kategori?beden=m 200', 'slot-chart': 'Taranan adres grupları', 'slot-group-1': 'Filtre parametreleri', 'slot-group-2': 'İç arama sayfaları', 'slot-group-3': 'Kategori sayfaları', 'slot-group-4': 'Ürün sayfaları' }),
+  crawl: () => art('crawl-table', 'Temsili site taraması çıktısı: adres, durum kodu, canonical ve iç bağlantı sayısı; 404 veren adres ve başka adresi canonical gösteren sayfa işaretleniyor', { 'slot-h-url': 'Adres', 'slot-h-status': 'Durum', 'slot-h-canon': 'Canonical', 'slot-h-links': 'İç bağlantı', 'slot-url-1': '/hizmetler/seo', 'slot-st-1': '200', 'slot-canon-1': 'Kendisi', 'slot-links-1': 'Çok', 'slot-url-2': '/hizmet/seo', 'slot-st-2': '301', 'slot-canon-2': '—', 'slot-links-2': 'Az', 'slot-url-3': '/blog/seo-nedir?utm=x', 'slot-st-3': '200', 'slot-canon-3': 'Başka adres', 'slot-links-3': 'Az', 'slot-url-4': '/eski-kampanya', 'slot-st-4': '404', 'slot-canon-4': '—', 'slot-links-4': 'Var', 'slot-url-5': '/iletisim', 'slot-st-5': '200', 'slot-canon-5': 'Kendisi', 'slot-links-5': 'Çok' }),
+  migration: () => art('migration-phases', 'Site taşıma kontrolleri: öncesinde adres listesi ve eşleme, yayın gününde yönlendirme ve robots kontrolü, sonrasında Search Console ve tekrar tarama', { 'slot-phase-1': 'Taşıma öncesi', 'slot-item-1-1': 'Adres listesi', 'slot-item-1-2': 'Eski-yeni eşleme', 'slot-item-1-3': 'Başlangıç kaydı', 'slot-item-1-4': 'Test ortamı', 'slot-phase-2': 'Yayın günü', 'slot-item-2-1': '301 yönlendirmeler', 'slot-item-2-2': 'robots ve noindex', 'slot-item-2-3': 'Site haritası', 'slot-item-2-4': 'Canonical hedefleri', 'slot-phase-3': 'Yayın sonrası', 'slot-item-3-1': 'Search Console', 'slot-item-3-2': 'Tekrar tarama', 'slot-item-3-3': '404 takibi', 'slot-item-3-4': 'İç bağlantılar' }),
+  drop: () => art('traffic-drop', 'Temsili trafik düşüşü incelemesi: düşüş bir yayın tarihine denk geliyor; etkilenen sayfa grubu kategori sayfaları, ilk kontrol yönlendirme ve indeksleme ayarları', { 'slot-panel': 'Organik tıklamalar · temsili', 'slot-tag': 'Temsili veri', 'slot-release': 'Yayın kaydı', 'slot-group': 'Etkilenen grup: kategori sayfaları', 'slot-first': 'İlk kontrol: yönlendirme ve noindex' }),
+  hreflang: () => art('hreflang-pair', 'Temsili hreflang düzeltmesi: Türkçe ürün sayfası doğru Almanca karşılığına, Almanca sayfa da Türkçe sayfaya karşılıklı dil bağlantısı veriyor', { 'slot-tr-lang': 'tr', 'slot-tr-url': '/tr/urun/canta', 'slot-tr-price': 'TL', 'slot-tr-ship': 'hreflang="de" → /de/…/tasche', 'slot-de-lang': 'de', 'slot-de-url': '/de/produkt/tasche', 'slot-de-price': 'EUR', 'slot-de-ship': 'hreflang="tr" → /tr/urun/canta', 'slot-hreflang': 'karşılıklı' }),
+};
+
 const VISUALS: SeoServiceConfig['visuals'] = {
   overview: [
     ['Teknik SEO denetimi (SEO audit)', aside(V.robots())],
     ['Bir bulguyu nasıl düzeltme', aside(V.finding())],
     ['Site hızı ve Core Web Vitals', aside(V.cwv())],
+    ['Hangi altyapılarda teknik SEO', aside(EK.stacks())],
   ],
   features: [
     ['Teknik SEO kontrol listesi', aside(V.canonical())],
     ['Aynı belirti için', aside(V.status())],
     ['Örnek teknik SEO denetimi', aside(V.findings())],
+    ['Tarama bütçesi ve sunucu', aside(EK.logs())],
   ],
   technologies: [
     ['Ölçümleri nasıl yorumluyoruz', aside(V.render())],
+    ['Screaming Frog ile', aside(EK.crawl())],
     ['Denetim için hangi erişimler', aside(<IkasVisual name="project-brief" loop label="Temsili denetim hazırlığı: site adresi, öncelikli sayfalar, Search Console erişimi ve altyapı bilgisi" className="mx-auto w-full max-w-xl" />)],
   ],
   process: [
     ['Teknik SEO çalışmasının 5 adımı', { place: 'below', node: V.rail() }],
     ['Örnek uygulama', aside(V.redirects())],
+    ['Site taşımasında hangi kontrol', aside(EK.migration())],
+    ['Ani organik trafik düşüşünde', aside(EK.drop())],
+  ],
+  portfolio: [
+    ['Temsili örnek — Çok dilli', aside(EK.hreflang())],
   ],
   pricing: [
     ['Üç örnek teklif kapsamı', aside(<IkasVisual name="method-options" loop label="Üç teklif kapsamı: yalnızca denetim, denetim ve uygulama, denetim ile düzenli takip" slotLabels={{ 'slot-option-1': 'Yalnızca denetim', 'slot-option-2': 'Denetim + uygulama', 'slot-option-3': 'Düzenli takip' }} className="mx-auto w-full max-w-xl" />)],
@@ -112,6 +129,12 @@ const JUMP_LABELS: [string, string][] = [
   ['Teknik SEO analizinde', 'Araçlar'], ['Ölçümleri nasıl', 'Yorumlama'], ['Örnek inceleme', 'Örnek inceleme'], ['Denetim için hangi erişimler', 'Erişimler'],
   ['Teknik SEO çalışmasının 5 adımı', 'Beş adım'], ['Örnek uygulama', 'Örnek uygulama'], ['Hangi işi kim', 'Sorumluluklar'], ['İlk görüşmeye', 'Hazırlık'],
   ['Temsili uygulama örnekleri', 'Senaryolar'], ['Bir teknik SEO örneğinde', 'Kanıtlar'],
+  ['Teknik SEO ile içerik', 'Teknik ve içerik'], ['Hangi altyapılarda teknik SEO', 'Altyapılar'],
+  ['Tarama bütçesi ve sunucu', 'Tarama bütçesi'], ['Mobil içerik ve dil', 'Mobil ve dil'],
+  ['Screaming Frog ile', 'Screaming Frog'], ['Google Search Console mülkü', 'Search Console'],
+  ['Site taşımasında hangi kontrol', 'Taşıma kontrolleri'], ['Ani organik trafik düşüşünde', 'Trafik düşüşü'],
+  ['Temsili örnek — JavaScript', 'JavaScript örneği'], ['Temsili örnek — Çok dilli', 'Hreflang örneği'],
+  ['Denetim ücreti ve uygulama', 'Denetim ve uygulama'], ['Site büyüklüğü denetim', 'Site büyüklüğü'],
   ['Teklifte hangi işler', 'Teklif kalemleri'], ['Teknik SEO ve SEO audit', 'Fiyatı etkileyenler'], ['Üç örnek teklif', 'Örnek kapsamlar'], ['Teklif almak için', 'Teklif hazırlığı'], ['Fiyatlandırma hakkında', 'Fiyat SSS'],
 ];
 
