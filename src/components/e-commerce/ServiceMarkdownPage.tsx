@@ -113,6 +113,8 @@ export interface ServiceMdConfig<P extends string> {
   insert?: (page: P) => { after: string | null; node: ReactNode; jump: { href: string; label: string } } | undefined;
   /** Closing blocks after the last section (related pages, CTA). */
   footer: (page: P, tone: SectionTone) => ReactNode;
+  /** Optional service/page-specific IDs for stable CTA and jump targets. */
+  sectionId?: (page: P, title: string) => string | undefined;
 }
 
 function SubGroup<P extends string>({ chunk, page, config }: { chunk: Chunk; page: P; config: ServiceMdConfig<P> }) {
@@ -141,7 +143,7 @@ function ChunkSection<P extends string>({ chunk, page, index, config }: { chunk:
     if (first && !/^(\||-|\d+\.|::cta|>)/.test(first.trim())) { lead = first; rest = others.join('\n\n'); }
   }
   return (
-    <section id={sectionId(chunk.title)} className={`${toneClass[tone]} scroll-mt-[calc(var(--navbar-h,88px)+3.5rem)]`}>
+    <section id={config.sectionId?.(page, chunk.title) ?? sectionId(chunk.title)} className={`${toneClass[tone]} scroll-mt-[calc(var(--navbar-h,88px)+3.5rem)]`}>
       <div className="mx-auto max-w-[1200px] px-4 sm:px-6 cw-section">
         <SectionHead title={trTitleCase(chunk.title)} intro={lead ? <Md components={inline}>{lead}</Md> : undefined} aside={visual?.place === 'aside' ? visual.node : undefined} />
         {rest && <div className="mt-5"><Blocks text={rest} enquiry={config.enquiry} /></div>}
@@ -155,7 +157,7 @@ function ChunkSection<P extends string>({ chunk, page, index, config }: { chunk:
 export function ServiceMdBody<P extends string>({ page, chunks, config, jumpTitle }: { page: P; chunks: Chunk[]; config: ServiceMdConfig<P>; jumpTitle?: 'raw' }) {
   const insert = config.insert?.(page);
   const insertAt = insert ? (insert.after === null ? 0 : chunks.findIndex((c) => lowerTr(c.title).startsWith(lowerTr(insert.after as string))) + 1) : -1;
-  const jump = chunks.map((c) => ({ href: `#${sectionId(c.title)}`, label: jumpTitle === 'raw' ? c.title : config.jumpLabel(c.title) }));
+  const jump = chunks.map((c) => ({ href: `#${config.sectionId?.(page, c.title) ?? sectionId(c.title)}`, label: jumpTitle === 'raw' ? c.title : config.jumpLabel(c.title) }));
   if (insert && insertAt >= 0) jump.splice(insertAt, 0, insert.jump);
   return <>
     <PageJumpNav label={jumpTitle === 'raw' ? 'SSS konuları' : 'Bu sayfada'} items={jump} mark={config.jumpMark} />

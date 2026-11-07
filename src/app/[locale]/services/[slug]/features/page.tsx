@@ -11,6 +11,7 @@ import IkasTurkishSubpage, { getIkasTurkishSubpageMeta } from '@/components/ikas
 import ShopifyTurkishFeatures from '@/components/e-commerce/ShopifyTurkishFeatures';
 import CustomEcommerceTurkishPage, { getCustomEcommerceMeta } from '@/components/e-commerce/CustomEcommerceTurkishPage';
 import MarketplaceTurkishPage, { getMarketplaceMeta } from '@/components/e-commerce/MarketplaceTurkishPage';
+import SeoTurkishPage, { getSeoTurkishMeta, getSeoTurkishSocialMeta } from '@/components/services/SeoTurkishPage';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -39,7 +40,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: 'Shopify Tema Tasarımı ve Mağaza Özellikleri | PakSoft',
     description: 'Shopify tema tasarımı, tema özelleştirme, ürün sayfası tasarımı ve ödeme, kargo entegrasyonu kapsamını inceleyin. Mağazanıza uygun özellikleri PakSoft ile belirleyin.',
   } : undefined;
-  const customMeta = slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('features') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('features')
+  const customMeta = slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('features') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('features') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('features')
     : slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('features', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('features')
@@ -51,6 +52,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title,
     description,
     robots: serviceRobots(service),
+    ...(slug === 'seo' && validLocale === 'tr' ? getSeoTurkishSocialMeta('features', canonicalUrl) : {}),
     ...(shopifyTurkishMeta ? {
       openGraph: {
         title,
@@ -89,6 +91,8 @@ export default async function ServiceFeaturesPage({ params }: PageProps) {
   if (!service) {
     notFound();
   }
+
+  if (slug === 'seo' && locale === 'tr') return <SeoTurkishPage page="features" />;
 
   if (slug === 'marketplace-development' && locale === 'tr') return <MarketplaceTurkishPage page="features" />;
 

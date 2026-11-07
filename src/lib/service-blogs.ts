@@ -13,6 +13,7 @@ const SERVICE_BLOGS: Record<string, readonly string[]> = {
   'shopify-development': ['tr'],
   'custom-ecommerce': ['tr'],
   'marketplace-development': ['tr'],
+  'seo': ['tr'],
 };
 
 export function hasServiceBlog(category: string | null | undefined, locale: string): boolean {

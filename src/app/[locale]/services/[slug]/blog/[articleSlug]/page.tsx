@@ -10,6 +10,7 @@ import { CorporateWebsiteArticlePage, getCorporateWebsiteArticle, getCorporateWe
 import { getShopifyGuide, getShopifyGuides } from '@/components/services/service-blogs/shopify-content';
 import { getCustomEcommerceGuide, getCustomEcommerceGuides } from '@/components/services/service-blogs/custom-ecommerce';
 import { getMarketplaceGuide, getMarketplaceGuides } from '@/components/services/service-blogs/marketplace';
+import { getSeoGuide, getSeoGuides } from '@/components/services/service-blogs/seo';
 
 // DB-backed service guides (see getServiceBlogArticle) pick up edits hourly;
 // admin saves also revalidate the 'blog' cache tag immediately.
@@ -23,8 +24,9 @@ export function generateStaticParams() {
     .map((articleSlug) => ({ locale, slug: 'corporate-website-design', articleSlug })));
   const shopify = getShopifyGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'shopify-development', articleSlug }));
   const customEcommerce = getCustomEcommerceGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'custom-ecommerce', articleSlug }));
+  const seo = getSeoGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'seo', articleSlug }));
   const marketplace = getMarketplaceGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'marketplace-development', articleSlug }));
-  return [...corporate, ...shopify, ...customEcommerce, ...marketplace];
+  return [...corporate, ...shopify, ...customEcommerce, ...marketplace, ...seo];
 }
 
 interface PageProps {
@@ -42,6 +44,11 @@ async function getServiceBlogArticle(serviceSlug: string, locale: string, articl
   if (!blog) return null;
   if (serviceSlug === 'shopify-development' && locale === 'tr') {
     const post = getShopifyGuide(articleSlug);
+    if (!post) return null;
+    return { blog, post, canonical: `${SITE_URL}${serviceBlogPath(blog.config)}/${articleSlug}` };
+  }
+  if (serviceSlug === 'seo' && locale === 'tr') {
+    const post = getSeoGuide(articleSlug);
     if (!post) return null;
     return { blog, post, canonical: `${SITE_URL}${serviceBlogPath(blog.config)}/${articleSlug}` };
   }
@@ -143,7 +150,8 @@ export default async function CorporateWebsiteGuideRoute({ params }: PageProps) 
   if (serviceArticle) {
     const { blog, post } = serviceArticle;
     const { config, category, coverAlt } = getServiceArticlePresentation(blog, post.slug, post.title);
-    const relatedCards = slug === 'shopify-development'
+    const relatedCards = slug === 'seo' ? getSeoGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))
+      : slug === 'shopify-development'
       ? getShopifyGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))
       : slug === 'custom-ecommerce' ? getCustomEcommerceGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))
       : slug === 'marketplace-development' ? getMarketplaceGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))

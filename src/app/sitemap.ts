@@ -6,6 +6,7 @@ import { getServicesForSitemap } from '@/lib/database/public-queries';
 import { isSubstantialService } from '@/lib/service-quality';
 import corporateWebsiteArticles from '@/data/corporate-website-articles/tr.json';
 import { getShopifyGuides } from '@/components/services/service-blogs/shopify-content';
+import { getSeoGuides } from '@/components/services/service-blogs/seo';
 import customEcommerceArticles from '../../content/blog/custom-ecommerce/manifest.json';
 import marketplaceArticles from '../../content/blog/marketplace/manifest.json';
 
@@ -220,6 +221,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: PRIORITY.blogPost,
       changeFreq: 'monthly',
       date: new Date('2026-11-04T00:00:00Z'),
+      includeAlternates: false,
+    }));
+  });
+
+  // Repository-backed SEO guides (Turkish only, published from their manifest).
+  getSeoGuides().forEach(({ slug, datePublished }) => {
+    entries.push(entry('tr', `/services/seo/blog/${slug}`, {
+      priority: PRIORITY.blogPost,
+      changeFreq: 'monthly',
+      date: new Date(`${datePublished}T00:00:00Z`),
       includeAlternates: false,
     }));
   });

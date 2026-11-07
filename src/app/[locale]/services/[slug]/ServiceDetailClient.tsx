@@ -248,6 +248,15 @@ export default function ServiceDetailClient({
     return <div id="overview"><HeroSection service={heroService} colors={colors} accent={accent} process={process} animation={ecommerceAnimation} /></div>;
   }
 
+  // Curated Turkish SEO overview: this component renders the shared hero only;
+  // its service-specific server-rendered body is added by the route.
+  if (service.slug === 'seo' && locale === 'tr') {
+    const seoIntro = 'Google’da müşterilerinizin aradığı konuları, sitenizde bu aramalara karşılık veren sayfaları ve görünürlüğü sınırlayan teknik sorunları birlikte inceleyelim. PakSoft SEO hizmeti, hangi sayfaların önce iyileştirileceğini, hangi değişikliklerin uygulanacağını ve sonuçların nasıl ölçüleceğini belirleyen bir çalışma planıyla başlar.';
+    const heroService = { ...service, name: 'İşletmeler İçin SEO Hizmeti', description: seoIntro, fullDescription: seoIntro, shortDescription: seoIntro };
+    const seoAnimation = animation || { heroVisual: 'browser-window' as const, motion: 'float' as const, bgPattern: 'grid' as const, decorations: 'circles' as const, featureStyle: 'icon-left' as const, processLayout: 'timeline' as const };
+    return <div id="overview"><HeroSection service={heroService} colors={colors} accent={accent} process={process} animation={seoAnimation} /></div>;
+  }
+
   // Turkish ikas overview: hero here, the rest comes from the server-rendered
   // IkasTurkishOverviewBody (see services/[slug]/page.tsx).
   if (service.slug === 'ikas-development' && locale === 'tr') {
@@ -665,6 +674,7 @@ function HeroSection({
   const isShopifyTr = service.slug === 'shopify-development' && locale === 'tr';
   const isCustomEcomTr = service.slug === 'custom-ecommerce' && locale === 'tr';
   const isMarketTr = service.slug === 'marketplace-development' && locale === 'tr';
+  const isSeoTr = service.slug === 'seo' && locale === 'tr';
   // Curated hero art can stand in for a missing DB hero animation.
   const artOnly = !hasAnimation && (isCustomEcomTr || isMarketTr) && !!heroArt;
 
@@ -779,7 +789,7 @@ function HeroSection({
             <div className={`space-y-3 pt-1 ${isIkasTr ? 'ikas-hero-actions' : ''}`}>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button
-                  href={service.slug === 'corporate-website-design' ? '/start-project?service=corporate-website-design' : service.slug === 'e-commerce' && locale === 'tr' ? '/start-project?service=e-commerce' : isIkasTr ? '/start-project?service=ikas-development' : isShopifyTr ? '/start-project?service=shopify-development' : isCustomEcomTr ? '/start-project?service=custom-ecommerce' : isMarketTr ? '/start-project?service=marketplace-development' : '/contact'}
+                  href={service.slug === 'corporate-website-design' ? '/start-project?service=corporate-website-design' : service.slug === 'e-commerce' && locale === 'tr' ? '/start-project?service=e-commerce' : isSeoTr ? '/start-project?service=seo' : isIkasTr ? '/start-project?service=ikas-development' : isShopifyTr ? '/start-project?service=shopify-development' : isCustomEcomTr ? '/start-project?service=custom-ecommerce' : isMarketTr ? '/start-project?service=marketplace-development' : '/contact'}
                   variant="primary"
                   size="lg"
                   rightIcon={
@@ -788,11 +798,13 @@ function HeroSection({
                     </svg>
                   }
                 >
-                  {service.slug === 'e-commerce' && locale === 'tr' ? 'Projenizi Anlatın' : isIkasTr ? IKAS_TR_HERO.primary : isShopifyTr ? 'Shopify Projem İçin Teklif Al' : isCustomEcomTr ? 'Projem İçin Teklif Al' : isMarketTr ? 'Pazaryeri Projenizi Anlatın' : service.slug === 'corporate-website-design'
+                  {service.slug === 'e-commerce' && locale === 'tr' ? 'Projenizi Anlatın' : isIkasTr ? IKAS_TR_HERO.primary : isShopifyTr ? 'Shopify Projem İçin Teklif Al' : isCustomEcomTr ? 'Projem İçin Teklif Al' : isMarketTr ? 'Pazaryeri Projenizi Anlatın' : isSeoTr ? 'Sitem İçin SEO Planı Al' : service.slug === 'corporate-website-design'
                     ? (locale === 'tr' ? 'Projenizi Konuşalım' : 'Discuss Your Project')
                     : t('services.detail.hero.startProject')}
                 </Button>
-                {isMarketTr ? (
+                {isSeoTr ? (
+                  <a href="#seo-hizmeti-kapsami" className="inline-flex items-center justify-center gap-2 rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 transition-colors motion-reduce:transition-none hover:border-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2">Çalışma Kapsamını İncele</a>
+                ) : isMarketTr ? (
                   <a href="#iki-saticili-bir-siparis-nasil-ilerler" className="inline-flex items-center justify-center gap-2 rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 transition-colors motion-reduce:transition-none hover:border-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2">Örnek Sipariş Akışını İnceleyin</a>
                 ) : isCustomEcomTr ? (
                   <a href="#satis-modelinize-uygun-is-akislari" className="inline-flex items-center justify-center gap-2 rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 transition-colors motion-reduce:transition-none hover:border-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2">Örnek İş Akışlarını İncele</a>
@@ -812,7 +824,7 @@ function HeroSection({
                 ) : <WhatsAppButton source="service_hero" variant="outline" size="lg" />}
               </div>
               {/* Response-time microcopy */}
-              {service.slug !== 'ikas-development' && service.slug !== 'corporate-website-design' && !(service.slug === 'e-commerce' && locale === 'tr') && !isShopifyTr && !isCustomEcomTr && !isMarketTr && (
+              {service.slug !== 'ikas-development' && service.slug !== 'corporate-website-design' && !(service.slug === 'e-commerce' && locale === 'tr') && !isShopifyTr && !isCustomEcomTr && !isMarketTr && !isSeoTr && (
                 <p className="flex items-center gap-1.5 text-sm text-gray-400">
                   <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />

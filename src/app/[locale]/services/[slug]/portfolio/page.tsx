@@ -11,6 +11,7 @@ import IkasTurkishPortfolio, { getIkasTurkishPortfolioMeta } from '@/components/
 import ShopifyTurkishPortfolio, { shopifyPortfolioMeta } from '@/components/e-commerce/ShopifyTurkishPortfolio';
 import CustomEcommerceTurkishPage, { getCustomEcommerceMeta } from '@/components/e-commerce/CustomEcommerceTurkishPage';
 import MarketplaceTurkishPage, { getMarketplaceMeta } from '@/components/e-commerce/MarketplaceTurkishPage';
+import SeoTurkishPage, { getSeoTurkishMeta, getSeoTurkishSocialMeta } from '@/components/services/SeoTurkishPage';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -35,7 +36,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const path = `/services/${slug}/portfolio`;
   const localizedPath = localizeFullPath(path, validLocale);
 
-  const customMeta = slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('portfolio') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('portfolio')
+  const customMeta = slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('portfolio') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('portfolio') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('portfolio')
     : slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('portfolio', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('portfolio')
@@ -49,6 +50,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title,
     description,
     robots: serviceRobots(service),
+    ...(slug === 'seo' && validLocale === 'tr' ? getSeoTurkishSocialMeta('portfolio', canonicalUrl) : {}),
     alternates: {
       canonical: canonicalUrl,
       languages: generateAlternateLinks(path),
@@ -94,6 +96,8 @@ export default async function ServicePortfolioPage({ params }: PageProps) {
   if (!service) {
     notFound();
   }
+
+  if (slug === 'seo' && locale === 'tr') return <SeoTurkishPage page="portfolio" />;
 
   if (slug === 'marketplace-development' && locale === 'tr') return <MarketplaceTurkishPage page="portfolio" />;
 

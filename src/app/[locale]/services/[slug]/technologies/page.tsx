@@ -14,6 +14,7 @@ import IkasTurkishSubpage, { getIkasTurkishSubpageMeta } from '@/components/ikas
 import ShopifyTurkishTechnologies from '@/components/e-commerce/ShopifyTurkishTechnologies';
 import CustomEcommerceTurkishPage, { getCustomEcommerceMeta } from '@/components/e-commerce/CustomEcommerceTurkishPage';
 import MarketplaceTurkishPage, { getMarketplaceMeta } from '@/components/e-commerce/MarketplaceTurkishPage';
+import SeoTurkishPage, { getSeoTurkishMeta, getSeoTurkishSocialMeta } from '@/components/services/SeoTurkishPage';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const path = `/services/${slug}/technologies`;
   const localizedPath = localizeFullPath(path, validLocale);
 
-  const customMeta = slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('technologies') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('technologies')
+  const customMeta = slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('technologies') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('technologies') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('technologies')
     : slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('technologies', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('technologies')
@@ -54,6 +55,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title,
     description,
     robots: serviceRobots(service),
+    ...(slug === 'seo' && validLocale === 'tr' ? getSeoTurkishSocialMeta('technologies', canonicalUrl) : {}),
     ...(slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishSocialMeta('technologies', canonicalUrl) : slug === 'shopify-development' && validLocale === 'tr' ? {
       openGraph: { type: 'website' as const, locale: 'tr_TR', url: canonicalUrl, title, description, images: ['/images/og-image.jpg'] },
       twitter: { card: 'summary_large_image' as const, title, description, images: ['/images/twitter-image.jpg'] },
@@ -82,6 +84,8 @@ export default async function ServiceTechnologiesPage({ params }: PageProps) {
   if (!service) {
     notFound();
   }
+
+  if (slug === 'seo' && locale === 'tr') return <SeoTurkishPage page="technologies" />;
 
   if (slug === 'marketplace-development' && locale === 'tr') return <MarketplaceTurkishPage page="technologies" />;
 
