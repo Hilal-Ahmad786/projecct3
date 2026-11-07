@@ -168,9 +168,6 @@
    hidden tabs). Reduced motion keeps the end state. Charts are representative. */
 .seo-art .sev-art > svg { display: block; width: 100%; height: auto; }
 .seo-art [class^="sev-"] { transform-box: fill-box; transform-origin: center; }
-.seo-art--hero-seo [class^="sev-glow-"] { opacity: 0; }
-.seo-art--hero-seo .sev-slot-domain { color: #095D5C; }
-.seo-art--hero-seo .sev-slot-chip, .seo-art--report .sev-slot-next, .seo-art--report .sev-slot-tag, .seo-art--category-filters .sev-slot-legend-skip { color: #8A5512; }
 .seo-art :is(.sev-slot-head-q, .sev-slot-head-p, .sev-slot-old-head, .sev-slot-new-head, .sev-slot-col-1, .sev-slot-col-2, .sev-slot-col-3, .sev-slot-progress, .sev-slot-legend-ok, .sev-slot-legend-skip) { font-size: clamp(7.5px, 1vw, 11px); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; color: #6B7280; }
 .seo-art--report .sev-slot-tag, .seo-art--redirect-map [class*="sev-slot-code-"], .seo-art--process-rail [class*="sev-slot-"] { justify-content: center; }
 .seo-art--process-rail [class*="sev-slot-step-"] { color: #111827; font-weight: 700; }
@@ -181,27 +178,10 @@
 .seo-art--tools .sev-slot-center, .seo-art--site-types [class*="sev-slot-type-"] { color: #095D5C; }
 .seo-art--tools .sev-slot-center { justify-content: center; }
 .seo-art--tools [class*="sev-slot-tool-"] { font-size: clamp(7px, 0.95vw, 11px); }
-@keyframes sev-flash { 0% { opacity: 0; } 35% { opacity: 1; } 100% { opacity: 0; } }
 
 @media (prefers-reduced-motion: no-preference) {
   .seo-art.ikas-visible path[pathLength] { stroke-dasharray: 1; animation: iv-draw 800ms ease-out var(--sev-d, 300ms) both; }
   .seo-art.ikas-visible .sev-slot { animation: iv-fade 500ms ease-out 300ms both; }
-  /* hero-seo: search → results → links → İnceleme / Öncelik / Takip, each highlighted once */
-  .seo-art--hero-seo.ikas-visible .sev-search { animation: iv-rise 420ms ease-out 0ms both; }
-  .seo-art--hero-seo.ikas-visible .sev-result-1 { animation: iv-fade 380ms ease-out 200ms both; }
-  .seo-art--hero-seo.ikas-visible .sev-result-2 { animation: iv-pop 380ms ease-out 320ms both; }
-  .seo-art--hero-seo.ikas-visible .sev-result-3 { animation: iv-fade 380ms ease-out 420ms both; }
-  .seo-art--hero-seo.ikas-visible :is(.sev-link-1, .sev-link-2, .sev-link-3) { --sev-d: 650ms; }
-  .seo-art--hero-seo.ikas-visible .sev-card-1 { animation: iv-rise 420ms ease-out 900ms both; }
-  .seo-art--hero-seo.ikas-visible .sev-card-2 { animation: iv-rise 420ms ease-out 1000ms both; }
-  .seo-art--hero-seo.ikas-visible .sev-card-3 { animation: iv-rise 420ms ease-out 1100ms both; }
-  .seo-art--hero-seo.ikas-visible .sev-glow-1 { animation: sev-flash 900ms ease-in-out 1500ms both; }
-  .seo-art--hero-seo.ikas-visible .sev-glow-2 { animation: sev-flash 900ms ease-in-out 2200ms both; }
-  .seo-art--hero-seo.ikas-visible .sev-glow-3 { animation: sev-flash 900ms ease-in-out 2900ms both; }
-  .seo-art--hero-seo.ikas-visible :is(.sev-report, .sev-trend-area) { animation: iv-fade 420ms ease-out 600ms both; }
-  .seo-art--hero-seo.ikas-visible .sev-trend { --sev-d: 900ms; }
-  .seo-art--hero-seo.ikas-visible .sev-chip { animation: iv-pop 380ms ease-out 1700ms both; }
-  .seo-art--hero-seo .ikas-in-view:not(.ikas-tab-hidden) .sev-chip { animation: iv-pop 380ms ease-out 1700ms both, iv-float 3.4s ease-in-out 2.2s infinite; }
   /* query-map */
   .seo-art--query-map.ikas-visible :is(.sev-q-1, .sev-q-2, .sev-q-3) { animation: iv-slide-in 420ms ease-out 0ms both; }
   .seo-art--query-map.ikas-visible .sev-q-2 { animation-delay: 90ms; }

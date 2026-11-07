@@ -71,9 +71,9 @@ const art = (name: SeoVisualName, label: string, slotLabels: Record<string, stri
 const ikas = (name: IkasVisualName, label: string, slotLabels?: Record<string, string>, className = 'mx-auto w-full max-w-xl') =>
   <IkasVisual name={name} loop label={label} slotLabels={slotLabels} className={className} />;
 
-// Each visual appears once per service (heroes included).
+// Each visual appears once per service (heroes included). The overview hero
+// keeps the service's own serp-ranking animation (results moving up).
 const SEO = {
-  hero: (className?: string) => art('hero-seo', 'Temsili SEO çalışması: arama sonucunda sitenizin sayfası öne çıkıyor; inceleme, öncelik ve takip adımları bu sayfaya bağlanıyor; altta öncelikli sayfaların temsili eğilimi', { 'slot-query': 'kurumsal web sitesi tasarımı', 'slot-domain': 'siteniz.com', 'slot-card-1': 'İnceleme', 'slot-card-2': 'Öncelik', 'slot-card-3': 'Takip', 'slot-report': 'Öncelikli sayfalar · temsili', 'slot-chip': 'Çalışma planı' }, className),
   queryMap: () => art('query-map', 'Temsili sorgu ve sayfa eşleştirmesi: “seo hizmeti” hizmet sayfasına, “seo fiyatları” fiyatlandırma sayfasına, “seo nedir” rehber yazısına yönleniyor', { 'slot-head-q': 'Arama sorgusu', 'slot-head-p': 'Yanıt veren sayfa', 'slot-q-1': 'seo hizmeti', 'slot-q-2': 'seo fiyatları', 'slot-q-3': 'seo nedir', 'slot-p-1': 'Hizmet sayfası', 'slot-p-2': 'Fiyatlandırma', 'slot-p-3': 'Rehber yazısı' }),
   report: () => art('report', 'Temsili dönem raporu: tamamlanan üç iş, öncelikli sayfaların gösterim ve tıklama eğilimi ve sıradaki öncelik; sayılar gösterilmiyor', { 'slot-title': 'Dönem raporu', 'slot-tag': 'Temsili', 'slot-done-1': 'Yönlendirmeler düzeltildi', 'slot-done-2': 'Hizmet sayfası güncellendi', 'slot-done-3': 'Form ölçümü doğrulandı', 'slot-chart': 'Gösterim ve tıklama', 'slot-next': 'Sıradaki öncelik: kategori sayfaları' }),
   deliverables: (className?: string) => art('deliverables', 'Temsili SEO çıktıları: anahtar kelime ve sayfa planı, önceliklendirilmiş teknik iş listesi, sayfa güncelleme listesi ve performans özeti', { 'slot-doc-1': 'Anahtar kelime planı', 'slot-doc-2': 'Teknik iş listesi', 'slot-doc-3': 'Sayfa güncellemeleri', 'slot-doc-4': 'Performans özeti' }, className),
@@ -108,14 +108,11 @@ const VISUALS: Partial<Record<SeoContentPage, [string, SectionVisual][]>> = {
   ],
 };
 
-/** Overview hero art (rendered inside ServiceDetailClient). */
-export const SEO_HERO_ART = <SeoHeroScene tile="bottom-left">{SEO.hero('w-[20rem] max-w-full sm:w-[26rem] md:w-[30rem]')}</SeoHeroScene>;
-
-function SeoHeroScene({ children, tile = 'top' }: { children: ReactNode; tile?: 'top' | 'bottom-left' }) {
+function SeoHeroScene({ children }: { children: ReactNode }) {
   return (
     <div className="relative w-full max-w-xl">
       {children}
-      <div aria-hidden="true" data-ikas-loop className={`ikas-badge-float absolute z-20 ${tile === 'top' ? '-left-2 -top-14 sm:-left-6' : '-bottom-6 -left-3 sm:-left-6'} rounded-[20px] bg-white p-3 shadow-[0_12px_30px_rgba(18,25,38,0.18)] ring-1 ring-black/5`}>
+      <div aria-hidden="true" data-ikas-loop className={`ikas-badge-float absolute z-20 -left-2 -top-14 sm:-left-6 rounded-[20px] bg-white p-3 shadow-[0_12px_30px_rgba(18,25,38,0.18)] ring-1 ring-black/5`}>
         <MagnifyingGlassIcon className="h-10 w-10 text-heritage-turquoise-deep sm:h-12 sm:w-12" />
       </div>
     </div>
