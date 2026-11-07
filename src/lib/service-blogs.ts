@@ -14,6 +14,8 @@ const SERVICE_BLOGS: Record<string, readonly string[]> = {
   'custom-ecommerce': ['tr'],
   'marketplace-development': ['tr'],
   'seo': ['tr'],
+  'ecommerce-seo': ['tr'],
+  'technical-seo': ['tr'],
 };
 
 export function hasServiceBlog(category: string | null | undefined, locale: string): boolean {

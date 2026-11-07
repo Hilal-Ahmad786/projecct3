@@ -262,6 +262,83 @@
 }
 @keyframes sev-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
 
+/* E-Ticaret SEO (ecom-*) and Teknik SEO (tech-*) visuals — same contract. */
+.seo-art--ecom-category-tree .sev-slot, .seo-art--tech-evidence .sev-slot, .seo-art--ecom-deliverables .sev-slot { font-size: clamp(7px, 0.95vw, 11px); }
+.seo-art :is([class*="sev-slot-size-"], .sev-slot-buy, [class*="sev-slot-plat-"], [class*="sev-slot-focus-"], .seo-art--ecom-sales-funnel [class*="sev-slot-step-"], [class*="sev-slot-stage-"], [class*="sev-slot-sub-"], [class*="sev-slot-col-"], .sev-slot-verdict, .sev-slot-js, [class*="sev-slot-tag-"], .seo-art--tech-cwv [class*="sev-slot-state-"], .seo-art--tech-cwv [class*="sev-slot-metric-"], .seo-art--tech-cwv [class*="sev-slot-desc-"], .sev-slot-priority) { justify-content: center; text-align: center; }
+.seo-art :is(.sev-slot-verdict, .sev-slot-js) { color: #fff; }
+.seo-art :is(.seo-art--ecom-stock-sync .sev-slot-stock-page, .sev-slot-val-2, [class*="sev-slot-tag-"], .sev-slot-priority, .sev-slot-once, .seo-art--tech-cwv .sev-slot-state-2, .seo-art--ecom-stock-rules .sev-slot-state-2, .sev-slot-robots-note), .seo-art--ecom-stock-sync .sev-slot-size-3 { color: #8A5512; }
+.seo-art :is([class*="sev-slot-plat-"], .seo-art--tech-cwv [class*="sev-slot-metric-"], [class*="sev-slot-col-"], [class*="sev-slot-stage-"], .sev-slot-target, .sev-slot-title) { color: #111827; font-weight: 700; }
+.seo-art :is([class*="sev-slot-focus-"], [class*="sev-slot-sub-"], .seo-art--tech-cwv [class*="sev-slot-desc-"], [class*="sev-slot-check-"]:not(.seo-art--tech-status *), .sev-slot-target-sub, .sev-slot-crumb, .sev-slot-robots-note) { font-weight: 500; color: #6B7280; font-size: clamp(7px, 0.95vw, 11px); }
+.seo-art :is(.sev-slot-head-s, .sev-slot-head-state, .sev-slot-head-rule, .sev-slot-head-dup, .sev-slot-head-can, [class*="sev-slot-label-"], .seo-art--tech-cwv .sev-slot-tag, .seo-art--tech-sources .sev-slot-tag, .seo-art--ecom-stock-sync [class*="sev-slot-key-"], .sev-slot-variant-head) { font-size: clamp(7px, 0.95vw, 10.5px); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; color: #6B7280; }
+.seo-art :is([class*="sev-slot-dup-"], .sev-slot-target, .seo-art--tech-status .sev-slot-url, [class*="sev-slot-rule-"]:not(.seo-art--ecom-stock-rules *), .seo-art--tech-robots-sitemap [class*="sev-slot-url-"], .sev-slot-value-1, .sev-slot-value-3, .seo-art--tech-sources .sev-slot-url, .seo-art--ecom-rich-result .sev-slot-domain) { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 500; font-size: clamp(7px, 1vw, 11.5px); }
+.seo-art--tech-status [class*="sev-slot-value-"], .seo-art--tech-finding .sev-slot-value-2, .seo-art--tech-finding .sev-slot-value-4 { font-family: inherit; }
+.seo-art--tech-status [class*="sev-slot-value-"], .seo-art--ecom-rich-result :is(.sev-slot-domain, .sev-slot-stock), .seo-art--tech-sources .sev-slot-url { color: #095D5C; justify-content: center; }
+.seo-art--ecom-rich-result .sev-slot-domain { justify-content: flex-start; }
+.seo-art--ecom-rich-result :is(.sev-slot-stock, .sev-slot-price, [class*="sev-slot-link-"]) { justify-content: center; font-size: clamp(7px, 0.95vw, 11px); }
+.seo-art--tech-robots-sitemap .sev-slot-robots-note { white-space: normal; align-items: flex-start; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .seo-art--ecom-stock-sync.ikas-visible .sev-page { animation: iv-rise 420ms ease-out 0ms both; }
+  .seo-art--ecom-stock-sync.ikas-visible .sev-feed { animation: iv-rise 420ms ease-out 150ms both; }
+  .seo-art--ecom-stock-sync.ikas-visible :is(.sev-stock-page, .sev-row-2) { animation: iv-pop 380ms ease-out 900ms both; }
+  .seo-art--ecom-stock-sync.ikas-visible .sev-sync { --sev-d: 700ms; }
+  .seo-art--ecom-stock-sync.ikas-visible .sev-match { animation: iv-pop 380ms ease-out 1400ms both; }
+  .seo-art--ecom-category-tree.ikas-visible :is(.sev-q-1, .sev-q-2) { animation: iv-slide-in 420ms ease-out 0ms both; }
+  .seo-art--ecom-category-tree.ikas-visible :is(.sev-root, .sev-cat, .sev-cat-2) { animation: iv-pop 380ms ease-out 250ms both; }
+  .seo-art--ecom-category-tree.ikas-visible .sev-prod { animation: iv-pop 380ms ease-out 700ms both; }
+  .seo-art--ecom-category-tree.ikas-visible .sev-crumb { animation: iv-fade 420ms ease-out 1100ms both; }
+  .seo-art--ecom-stock-rules.ikas-visible :is(.sev-state-1, .sev-state-2, .sev-state-3) { animation: iv-slide-in 420ms ease-out 0ms both; }
+  .seo-art--ecom-stock-rules.ikas-visible :is(.sev-rule-1, .sev-rule-2, .sev-rule-3) { animation: iv-fade 420ms ease-out 800ms both; }
+  .seo-art--ecom-stock-rules.ikas-visible :is([class*="sev-rule-tip-"]) { animation: iv-fade 200ms ease-out 900ms both; }
+  .seo-art--ecom-platforms.ikas-visible :is(.sev-plat-1, .sev-plat-2, .sev-plat-3, .sev-plat-4) { animation: iv-rise 420ms ease-out 0ms both; }
+  .seo-art--ecom-platforms.ikas-visible .sev-plat-2 { animation-delay: 100ms; }
+  .seo-art--ecom-platforms.ikas-visible .sev-plat-3 { animation-delay: 200ms; }
+  .seo-art--ecom-platforms.ikas-visible .sev-plat-4 { animation-delay: 300ms; }
+  .seo-art--ecom-rich-result.ikas-visible .sev-result-1 { animation: iv-rise 420ms ease-out 300ms both; }
+  .seo-art--ecom-rich-result.ikas-visible :is(.sev-stock, .sev-price) { animation: iv-pop 380ms ease-out 800ms both; }
+  .seo-art--ecom-rich-result.ikas-visible .sev-links { animation: iv-fade 420ms ease-out 1100ms both; }
+  .seo-art--ecom-sales-funnel.ikas-visible :is(.sev-step-1, .sev-step-2, .sev-step-3, .sev-step-4) { animation: iv-rise 420ms ease-out 0ms both; }
+  .seo-art--ecom-sales-funnel.ikas-visible .sev-step-2 { animation-delay: 150ms; }
+  .seo-art--ecom-sales-funnel.ikas-visible .sev-step-3 { animation-delay: 300ms; }
+  .seo-art--ecom-sales-funnel.ikas-visible .sev-step-4 { animation-delay: 450ms; }
+  .seo-art--ecom-sales-funnel.ikas-visible .sev-once { animation: iv-pop 380ms ease-out 1100ms both; }
+  .seo-art--ecom-scenarios.ikas-visible :is(.sev-case-1, .sev-case-2, .sev-case-3) { animation: iv-slide-in 420ms ease-out 0ms both; }
+  .seo-art--ecom-scenarios.ikas-visible .sev-case-2 { animation-delay: 120ms; }
+  .seo-art--ecom-scenarios.ikas-visible .sev-case-3 { animation-delay: 240ms; }
+  .seo-art--tech-crawl-index.ikas-visible :is(.sev-stage-1, .sev-stage-2, .sev-stage-3, .sev-stage-4, .sev-stage-5) { animation: iv-pop 380ms ease-out 0ms both; }
+  .seo-art--tech-crawl-index.ikas-visible .sev-stage-2 { animation-delay: 120ms; }
+  .seo-art--tech-crawl-index.ikas-visible .sev-stage-3 { animation-delay: 240ms; }
+  .seo-art--tech-crawl-index.ikas-visible .sev-stage-4 { animation-delay: 360ms; }
+  .seo-art--tech-crawl-index.ikas-visible .sev-stage-5 { animation-delay: 480ms; }
+  .seo-art--tech-crawl-index.ikas-visible :is([class*="sev-status-"]) { animation: iv-pop 380ms ease-out 1100ms both; }
+  .seo-art--tech-cwv.ikas-visible :is(.sev-metric-1, .sev-metric-2, .sev-metric-3) { animation: iv-rise 420ms ease-out 0ms both; }
+  .seo-art--tech-cwv.ikas-visible .sev-metric-2 { animation-delay: 120ms; }
+  .seo-art--tech-cwv.ikas-visible .sev-metric-3 { animation-delay: 240ms; }
+  .seo-art--tech-canonical.ikas-visible :is(.sev-dup-1, .sev-dup-2, .sev-dup-3) { animation: iv-slide-in 420ms ease-out 0ms both; }
+  .seo-art--tech-canonical.ikas-visible .sev-target { animation: iv-pop 380ms ease-out 1100ms both; }
+  .seo-art--tech-status.ikas-visible :is(.sev-check-1, .sev-check-2, .sev-check-3) { animation: iv-rise 420ms ease-out 200ms both; }
+  .seo-art--tech-status.ikas-visible .sev-check-2 { animation-delay: 320ms; }
+  .seo-art--tech-status.ikas-visible .sev-check-3 { animation-delay: 440ms; }
+  .seo-art--tech-status.ikas-visible .sev-verdict { animation: iv-pop 380ms ease-out 900ms both; }
+  .seo-art--tech-render.ikas-visible .sev-raw { animation: iv-rise 420ms ease-out 0ms both; }
+  .seo-art--tech-render.ikas-visible .sev-js { animation: iv-pop 380ms ease-out 500ms both; }
+  .seo-art--tech-render.ikas-visible .sev-rendered { animation: iv-rise 420ms ease-out 800ms both; }
+  .seo-art--tech-finding.ikas-visible :is(.sev-field-1, .sev-field-2, .sev-field-3, .sev-field-4) { animation: iv-fade 420ms ease-out 200ms both; }
+  .seo-art--tech-finding.ikas-visible .sev-field-4 { animation: iv-pop 380ms ease-out 900ms both; }
+  .seo-art--tech-sources.ikas-visible :is(.sev-src-1, .sev-src-2, .sev-src-3) { animation: iv-rise 420ms ease-out 0ms both; }
+  .seo-art--tech-sources.ikas-visible .sev-src-2 { animation-delay: 140ms; }
+  .seo-art--tech-sources.ikas-visible .sev-src-3 { animation-delay: 280ms; }
+  .seo-art--tech-sources.ikas-visible :is(.sev-to-url-1, .sev-to-url-2, .sev-to-url-3) { --sev-d: 800ms; }
+  .seo-art--tech-sources.ikas-visible .sev-url { animation: iv-pop 380ms ease-out 1500ms both; }
+  .seo-art--tech-evidence.ikas-visible :is(.sev-col-1, .sev-col-2, .sev-col-3) { animation: iv-rise 420ms ease-out 0ms both; }
+  .seo-art--tech-evidence.ikas-visible .sev-col-2 { animation-delay: 200ms; }
+  .seo-art--tech-evidence.ikas-visible .sev-col-3 { animation-delay: 400ms; }
+  .seo-art--tech-evidence.ikas-visible :is(.sev-ev-tip-1, .sev-ev-tip-2) { animation: iv-fade 200ms ease-out 1000ms both; }
+  .seo-art--tech-robots-sitemap.ikas-visible .sev-robots { animation: iv-rise 420ms ease-out 0ms both; }
+  .seo-art--tech-robots-sitemap.ikas-visible .sev-sitemap { animation: iv-rise 420ms ease-out 200ms both; }
+  .seo-art--tech-robots-sitemap.ikas-visible .sev-conflict { animation: iv-fade 420ms ease-out 900ms both; }
+}
+
 /* Turkish ikas pages: subtle, one-time motion. Elements are visible by
    default and only receive motion after the small observer opts them in. */
 [data-ikas-reveal].ikas-visible {

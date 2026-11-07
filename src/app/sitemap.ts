@@ -7,6 +7,8 @@ import { isSubstantialService } from '@/lib/service-quality';
 import corporateWebsiteArticles from '@/data/corporate-website-articles/tr.json';
 import { getShopifyGuides } from '@/components/services/service-blogs/shopify-content';
 import { getSeoGuides } from '@/components/services/service-blogs/seo';
+import { getEcommerceSeoGuides } from '@/components/services/service-blogs/ecommerce-seo';
+import { getTechnicalSeoGuides } from '@/components/services/service-blogs/technical-seo';
 import customEcommerceArticles from '../../content/blog/custom-ecommerce/manifest.json';
 import marketplaceArticles from '../../content/blog/marketplace/manifest.json';
 
@@ -228,6 +230,26 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Repository-backed SEO guides (Turkish only, published from their manifest).
   getSeoGuides().forEach(({ slug, datePublished }) => {
     entries.push(entry('tr', `/services/seo/blog/${slug}`, {
+      priority: PRIORITY.blogPost,
+      changeFreq: 'monthly',
+      date: new Date(`${datePublished}T00:00:00Z`),
+      includeAlternates: false,
+    }));
+  });
+
+  // Repository-backed e-commerce SEO guides (Turkish only, dated in manifest).
+  getEcommerceSeoGuides().forEach(({ slug, datePublished }) => {
+    entries.push(entry('tr', `/services/ecommerce-seo/blog/${slug}`, {
+      priority: PRIORITY.blogPost,
+      changeFreq: 'monthly',
+      date: new Date(`${datePublished}T00:00:00Z`),
+      includeAlternates: false,
+    }));
+  });
+
+  // Repository-backed technical SEO guides (Turkish only, dated in their manifest).
+  getTechnicalSeoGuides().forEach(({ slug, datePublished }) => {
+    entries.push(entry('tr', `/services/technical-seo/blog/${slug}`, {
       priority: PRIORITY.blogPost,
       changeFreq: 'monthly',
       date: new Date(`${datePublished}T00:00:00Z`),

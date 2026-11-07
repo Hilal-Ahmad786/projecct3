@@ -11,7 +11,9 @@ import IkasTurkishBlogPage, { getIkasBlogMeta } from '@/components/ikas/IkasTurk
 import ShopifyTurkishBlogPage, { getShopifyBlogMeta } from '@/components/e-commerce/ShopifyTurkishBlogPage';
 import CustomEcommerceTurkishBlogPage, { getCustomEcommerceBlogMeta } from '@/components/e-commerce/CustomEcommerceTurkishBlogPage';
 import MarketplaceTurkishPage, { getMarketplaceMeta } from '@/components/e-commerce/MarketplaceTurkishPage';
+import TechnicalSeoTurkishPage, { getTechnicalSeoMeta, getTechnicalSeoSocialMeta } from '@/components/services/TechnicalSeoTurkishPage';
 import SeoTurkishPage, { getSeoTurkishMeta, getSeoTurkishSocialMeta } from '@/components/services/SeoTurkishPage';
+import EcommerceSeoTurkishPage, { getEcommerceSeoTurkishMeta, getEcommerceSeoTurkishSocialMeta } from '@/components/services/EcommerceSeoTurkishPage';
 
 export const revalidate = 3600;
 
@@ -35,7 +37,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const path = `/services/${slug}/blog`;
   const localizedPath = localizeFullPath(path, validLocale);
-  const customMeta = slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('blog') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('blog') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceBlogMeta()
+  const customMeta = slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoMeta('blog') : slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('blog') : slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('blog') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('blog') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceBlogMeta()
     : slug === 'ikas-development' && validLocale === 'tr'
     ? getIkasBlogMeta()
     : slug === 'shopify-development' && validLocale === 'tr' ? getShopifyBlogMeta()
@@ -46,6 +48,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: customMeta?.title || `${data.service.name} — Articles & Insights | PakSoft`,
     description: customMeta?.description || `Practical guides, deep-dives, and lessons learned about ${data.service.name} from the PakSoft team.`,
     ...(slug === 'seo' && validLocale === 'tr' ? getSeoTurkishSocialMeta('blog', `${baseUrl}/${validLocale}${localizedPath}`) : {}),
+    ...(slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoSocialMeta('blog', `${baseUrl}/${validLocale}${localizedPath}`) : {}),
+    ...(slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishSocialMeta('blog', `${baseUrl}/${validLocale}${localizedPath}`) : {}),
     ...(slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishSocialMeta('blog', `${baseUrl}/${validLocale}${localizedPath}`) : {}),
     ...(slug === 'ikas-development' && validLocale === 'tr' ? { openGraph: { type: 'website', title: customMeta?.title, description: customMeta?.description, url: `${baseUrl}/${validLocale}${localizedPath}`, siteName: 'PakSoft', locale: 'tr_TR' }, twitter: { card: 'summary', title: customMeta?.title, description: customMeta?.description } } : {}),
     ...(slug === 'shopify-development' && validLocale === 'tr' ? { openGraph: { type: 'website' as const, title: customMeta?.title, description: customMeta?.description, url: `${baseUrl}/${validLocale}${localizedPath}`, siteName: 'PakSoft', locale: 'tr_TR', images: ['/images/blog/shopify/shopify-magaza-kurulumu-hazirlik-kapak.webp'] }, twitter: { card: 'summary_large_image' as const, title: customMeta?.title, description: customMeta?.description, images: ['/images/blog/shopify/shopify-magaza-kurulumu-hazirlik-kapak.webp'] } } : {}),
@@ -61,7 +65,11 @@ export default async function ServiceBlogPage({ params }: PageProps) {
   const data = await getServiceData(slug, validLocale);
   if (!data) notFound();
 
+  if (slug === 'technical-seo' && validLocale === 'tr') return <TechnicalSeoTurkishPage page="blog" />;
+
   if (slug === 'seo' && validLocale === 'tr') return <SeoTurkishPage page="blog" />;
+
+  if (slug === 'ecommerce-seo' && validLocale === 'tr') return <EcommerceSeoTurkishPage page="blog" />;
 
   if (slug === 'marketplace-development' && validLocale === 'tr') return <MarketplaceTurkishPage page="blog" />;
 

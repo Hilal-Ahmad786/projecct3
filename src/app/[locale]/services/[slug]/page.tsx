@@ -19,6 +19,9 @@ import { CustomEcommerceOverviewBody, getCustomEcommerceMeta } from '@/component
 import CustomEcomArtwork from '@/components/custom-ecommerce/visuals/CustomEcomArtwork';
 import { MarketplaceOverviewBody, MARKETPLACE_HERO_ART, getMarketplaceMeta } from '@/components/e-commerce/MarketplaceTurkishPage';
 import { SeoTurkishOverviewBody, getSeoTurkishMeta, getSeoTurkishSocialMeta } from '@/components/services/SeoTurkishPage';
+import { TechnicalSeoTurkishOverviewBody, getTechnicalSeoMeta, getTechnicalSeoSocialMeta } from '@/components/services/TechnicalSeoTurkishPage';
+import { EcommerceSeoTurkishOverviewBody, getEcommerceSeoTurkishMeta, getEcommerceSeoTurkishSocialMeta } from '@/components/services/EcommerceSeoTurkishPage';
+import { EcommerceSerpScene, TechnicalAuditScene } from '@/components/services/hero-visuals/scenes-seo-services';
 
 // Enable ISR - revalidate every hour for better performance
 export const revalidate = 3600;
@@ -112,8 +115,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const revisedMeta = slug === 'corporate-website-design' ? corporateMeta[validLocale] : undefined;
   const marketplaceMeta = slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('overview') : undefined;
   const seoMeta = slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('overview') : undefined;
-  const title = seoMeta?.title || marketplaceMeta?.title || customEcommerceMeta?.title || shopifyMeta?.title || ecommerceMeta?.title || revisedMeta?.title || (service as { metaTitle?: string | null }).metaTitle || `${service.name} | PakSoft`;
-  const description = seoMeta?.description || marketplaceMeta?.description || customEcommerceMeta?.description || shopifyMeta?.description || ecommerceMeta?.description || revisedMeta?.description ||
+  const technicalSeoMeta = slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoMeta('overview') : undefined;
+  const ecommerceSeoMeta = slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('overview') : undefined;
+  const title = technicalSeoMeta?.title || ecommerceSeoMeta?.title || seoMeta?.title || marketplaceMeta?.title || customEcommerceMeta?.title || shopifyMeta?.title || ecommerceMeta?.title || revisedMeta?.title || (service as { metaTitle?: string | null }).metaTitle || `${service.name} | PakSoft`;
+  const description = technicalSeoMeta?.description || ecommerceSeoMeta?.description || seoMeta?.description || marketplaceMeta?.description || customEcommerceMeta?.description || shopifyMeta?.description || ecommerceMeta?.description || revisedMeta?.description ||
     (service as { metaDescription?: string | null }).metaDescription ||
     truncateAtWord(service.fullDescription || service.shortDescription || service.description || '', 160);
   const path = `/services/${slug}`;
@@ -127,7 +132,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       canonical: `${baseUrl}/${validLocale}${localizedPath}`,
       languages: generateAlternateLinks(path),
     },
+    ...(technicalSeoMeta ? getTechnicalSeoSocialMeta('overview', `${baseUrl}/${validLocale}${localizedPath}`, service.heroImage || '/images/og-services.jpg') : {}),
     ...(seoMeta ? getSeoTurkishSocialMeta('overview', `${baseUrl}/${validLocale}${localizedPath}`, service.heroImage || '/images/og-services.jpg') : {}),
+    ...(ecommerceSeoMeta ? getEcommerceSeoTurkishSocialMeta('overview', `${baseUrl}/${validLocale}${localizedPath}`, service.heroImage || '/images/og-services.jpg') : {}),
     openGraph: {
       title,
       description,
@@ -227,12 +234,16 @@ export default async function ServicePage({ params }: PageProps) {
     : undefined;
   const isTurkishMarketplace = slug === 'marketplace-development' && locale === 'tr';
   const isTurkishSeo = slug === 'seo' && locale === 'tr';
+  const isTurkishTechnicalSeo = slug === 'technical-seo' && locale === 'tr';
+  const isTurkishEcommerceSeo = slug === 'ecommerce-seo' && locale === 'tr';
   // Turkish pages built from content/<service>/tr markdown: curated body, hero only from ServiceDetailClient.
   const isTurkishMdService = (slug === 'custom-ecommerce' || slug === 'marketplace-development') && locale === 'tr';
   const isTurkishIkas = slug === 'ikas-development' && locale === 'tr';
   const ecommerceOverviewCopy = slug === 'e-commerce' && locale === 'tr'
     ? { name: 'İşletmenize Uygun E-Ticaret Sitesi Tasarımı ve Kurulumu', description: getEcommerceTurkishMeta('overview').intro }
     : isTurkishIkas ? { name: IKAS_TR_HERO.title, description: IKAS_TR_HERO.text } : undefined;
+  const technicalSeoOverviewCopy = isTurkishTechnicalSeo ? { name: getTechnicalSeoMeta('overview').heading, description: getTechnicalSeoMeta('overview').intro } : undefined;
+  const ecommerceSeoOverviewCopy = isTurkishEcommerceSeo ? { name: 'E-Ticaret SEO Hizmeti', description: getEcommerceSeoTurkishMeta('overview').intro } : undefined;
   const isTurkishShopify = slug === 'shopify-development' && locale === 'tr';
   const shopifyOverviewCopy = isTurkishShopify ? {
     name: 'Shopify E-Ticaret Sitesi Kurulumu ve Tasarımı',
@@ -240,9 +251,9 @@ export default async function ServicePage({ params }: PageProps) {
   } : undefined;
   const customEcommerceOverviewCopy = isTurkishMarketplace ? { name: getMarketplaceMeta('overview').heading, description: getMarketplaceMeta('overview').intro }
     : isTurkishMdService ? { name: getCustomEcommerceMeta('overview').heading, description: getCustomEcommerceMeta('overview').intro } : undefined;
-  const serviceName = customEcommerceOverviewCopy?.name || shopifyOverviewCopy?.name || ecommerceOverviewCopy?.name || corporateOverviewCopy?.name || service.name || jsonContent?.hero?.title || slug;
-  const serviceDescription = customEcommerceOverviewCopy?.description || shopifyOverviewCopy?.description || ecommerceOverviewCopy?.description || corporateOverviewCopy?.description || service.fullDescription || service.shortDescription || service.description || jsonContent?.hero?.description || '';
-  const serviceShortDescription = customEcommerceOverviewCopy?.description || shopifyOverviewCopy?.description || ecommerceOverviewCopy?.description || service.shortDescription || jsonContent?.hero?.description || serviceDescription;
+  const serviceName = technicalSeoOverviewCopy?.name || ecommerceSeoOverviewCopy?.name || customEcommerceOverviewCopy?.name || shopifyOverviewCopy?.name || ecommerceOverviewCopy?.name || corporateOverviewCopy?.name || service.name || jsonContent?.hero?.title || slug;
+  const serviceDescription = technicalSeoOverviewCopy?.description || ecommerceSeoOverviewCopy?.description || customEcommerceOverviewCopy?.description || shopifyOverviewCopy?.description || ecommerceOverviewCopy?.description || corporateOverviewCopy?.description || service.fullDescription || service.shortDescription || service.description || jsonContent?.hero?.description || '';
+  const serviceShortDescription = technicalSeoOverviewCopy?.description || ecommerceSeoOverviewCopy?.description || customEcommerceOverviewCopy?.description || shopifyOverviewCopy?.description || ecommerceOverviewCopy?.description || service.shortDescription || jsonContent?.hero?.description || serviceDescription;
   // Concise variant for the hero (keeps it compact). Falls back to the full
   // description for services that don't have a dedicated shortDescription yet.
 
@@ -287,9 +298,9 @@ export default async function ServicePage({ params }: PageProps) {
   const localizedServiceUrl = `${baseUrl}/${locale}${localizeFullPath(`/services/${slug}`, locale)}`;
   const breadcrumbItems = [
     { name: translations.navbar?.home || 'Home', url: `${baseUrl}/${locale}` },
-    { name: translations.services?.detail?.breadcrumb?.services || 'Services', url: isTurkishEcommerce || isTurkishIkas || isTurkishShopify || isTurkishMdService ? `${baseUrl}/tr/hizmetler` : `${baseUrl}/${locale}/services` },
-    ...(parentService ? [{ name: parentService.name, url: isTurkishIkas || isTurkishShopify || isTurkishMdService ? `${baseUrl}/tr${localizeFullPath(`/services/${parentService.slug}`, 'tr')}` : `${baseUrl}/${locale}/services/${parentService.slug}` }] : []),
-    { name: isTurkishEcommerce ? 'E-Ticaret' : serviceName, url: isTurkishEcommerce || isTurkishIkas || isTurkishShopify || isTurkishMdService ? localizedServiceUrl : `${baseUrl}/${locale}/services/${slug}` },
+    { name: translations.services?.detail?.breadcrumb?.services || 'Services', url: isTurkishEcommerce || isTurkishEcommerceSeo || isTurkishIkas || isTurkishShopify || isTurkishMdService ? `${baseUrl}/tr/hizmetler` : `${baseUrl}/${locale}/services` },
+    ...(parentService ? [{ name: parentService.name, url: isTurkishEcommerceSeo || isTurkishIkas || isTurkishShopify || isTurkishMdService ? `${baseUrl}/tr${localizeFullPath(`/services/${parentService.slug}`, 'tr')}` : `${baseUrl}/${locale}/services/${parentService.slug}` }] : []),
+    { name: isTurkishEcommerce ? 'E-Ticaret' : serviceName, url: isTurkishEcommerce || isTurkishEcommerceSeo || isTurkishIkas || isTurkishShopify || isTurkishMdService ? localizedServiceUrl : `${baseUrl}/${locale}/services/${slug}` },
   ];
 
   // Build serializable data for the client component
@@ -320,7 +331,7 @@ export default async function ServicePage({ params }: PageProps) {
     _jsonContent: jsonContent as any,
   };
 
-  const relatedServices = isTurkishShopify || isTurkishMdService || isTurkishSeo ? [] : await getRelatedServices((service as { category?: string }).category, slug, locale);
+  const relatedServices = isTurkishShopify || isTurkishMdService || isTurkishSeo || isTurkishTechnicalSeo || isTurkishEcommerceSeo ? [] : await getRelatedServices((service as { category?: string }).category, slug, locale);
 
   return (
     <main className="min-h-screen bg-white">
@@ -328,21 +339,25 @@ export default async function ServicePage({ params }: PageProps) {
       <ServiceJsonLd
         name={serviceName}
         description={serviceDescription}
-        url={isTurkishEcommerce || isTurkishIkas || isTurkishShopify || isTurkishMdService ? localizedServiceUrl : `${baseUrl}/${locale}/services/${slug}`}
+        url={isTurkishEcommerce || isTurkishEcommerceSeo || isTurkishIkas || isTurkishShopify || isTurkishMdService ? localizedServiceUrl : `${baseUrl}/${locale}/services/${slug}`}
       />
       <BreadcrumbJsonLd items={breadcrumbItems} />
-      {isTurkishIkas ? <FAQJsonLd faqs={IKAS_TR_FAQ} /> : isTurkishShopify ? <FAQJsonLd faqs={SHOPIFY_TR_FAQ.map(([question, answer]) => ({ question, answer }))} /> : !isTurkishMdService && faq.length > 0 && <FAQJsonLd faqs={faq} />}
+      {isTurkishIkas ? <FAQJsonLd faqs={IKAS_TR_FAQ} /> : isTurkishShopify ? <FAQJsonLd faqs={SHOPIFY_TR_FAQ.map(([question, answer]) => ({ question, answer }))} /> : !isTurkishMdService && !isTurkishTechnicalSeo && !isTurkishEcommerceSeo && faq.length > 0 && <FAQJsonLd faqs={faq} />}
 
       {/* Rich animated client component */}
-      <ServiceDetailClient service={serviceData} showSections={isTurkishShopify || isTurkishMdService || isTurkishSeo ? ['hero'] : undefined} heroArt={isTurkishShopify ? <ShopifyArtwork name="hero-storefront" loop className="w-[20rem] max-w-full sm:w-[26rem] md:w-[32rem]" slotLabels={{ 'slot-chip-theme': 'Tema', 'slot-chip-catalog': 'Katalog', 'slot-chip-migrate': 'Taşıma', 'slot-chip-apps': 'Uygulamalar' }} /> : isTurkishMarketplace ? MARKETPLACE_HERO_ART : isTurkishMdService ? <CustomEcomArtwork name="hero-custom-store" loop className="w-[20rem] max-w-full sm:w-[26rem] md:w-[32rem]" label="Temsili özel e-ticaret sitesi: mağaza ekranı, fiyat ve sipariş kuralları, yönetim paneli ve bağlı ödeme, kargo ve stok sistemleri" slotLabels={{ 'slot-chip-rule': 'Fiyat kuralı', 'slot-chip-sync': 'Stok akışı' }} /> : undefined} />
+      <ServiceDetailClient service={serviceData} showSections={isTurkishShopify || isTurkishMdService || isTurkishSeo || isTurkishTechnicalSeo || isTurkishEcommerceSeo ? ['hero'] : undefined} heroArt={isTurkishTechnicalSeo ? <TechnicalAuditScene /> : isTurkishEcommerceSeo ? <EcommerceSerpScene /> : isTurkishShopify ? <ShopifyArtwork name="hero-storefront" loop className="w-[20rem] max-w-full sm:w-[26rem] md:w-[32rem]" slotLabels={{ 'slot-chip-theme': 'Tema', 'slot-chip-catalog': 'Katalog', 'slot-chip-migrate': 'Taşıma', 'slot-chip-apps': 'Uygulamalar' }} /> : isTurkishMarketplace ? MARKETPLACE_HERO_ART : isTurkishMdService ? <CustomEcomArtwork name="hero-custom-store" loop className="w-[20rem] max-w-full sm:w-[26rem] md:w-[32rem]" label="Temsili özel e-ticaret sitesi: mağaza ekranı, fiyat ve sipariş kuralları, yönetim paneli ve bağlı ödeme, kargo ve stok sistemleri" slotLabels={{ 'slot-chip-rule': 'Fiyat kuralı', 'slot-chip-sync': 'Stok akışı' }} /> : undefined} />
       {isTurkishMarketplace ? <MarketplaceOverviewBody /> : isTurkishMdService && <CustomEcommerceOverviewBody />}
       {isTurkishSeo && <SeoTurkishOverviewBody />}
+      {isTurkishTechnicalSeo && <TechnicalSeoTurkishOverviewBody />}
+      {isTurkishEcommerceSeo && <EcommerceSeoTurkishOverviewBody />}
       {slug === 'e-commerce' && locale === 'tr' && <EcommerceTurkishOverviewBody />}
       {isTurkishIkas && <IkasTurkishOverviewBody />}
       {isTurkishShopify && <ShopifyTurkishOverview />}
 
+      {slug === 'woocommerce-development' && locale === 'tr' && <aside className="mx-auto my-10 max-w-[1200px] px-4 sm:px-6"><div className="rounded-xl border border-heritage-sand bg-heritage-ivory p-5 sm:p-6"><h2 className="text-lg font-semibold text-gray-900">WooCommerce mağazanız için SEO</h2><p className="mt-2 max-w-3xl text-sm leading-6 text-gray-600">Ürün, kategori, varyant ve stok bilgilerinin arama görünürlüğünü mağazanızın yapısına göre değerlendirin.</p><a href="/tr/hizmetler/ecommerce-seo" className="mt-4 inline-flex min-h-10 items-center gap-2 font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2">E-Ticaret SEO hizmetini inceleyin<span aria-hidden="true">→</span></a></div></aside>}
+
       {/* Internal linking — same-category services (server-rendered <a> links) */}
-      {!(slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) && !(slug === 'e-commerce' && locale === 'tr') && !isTurkishSeo && !isTurkishIkas && !isTurkishShopify &&
+      {!(slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) && !(slug === 'e-commerce' && locale === 'tr') && !isTurkishSeo && !isTurkishTechnicalSeo && !isTurkishEcommerceSeo && !isTurkishIkas && !isTurkishShopify &&
         <RelatedServices items={relatedServices} locale={locale} />}
     </main>
   );

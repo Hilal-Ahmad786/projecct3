@@ -114,6 +114,8 @@ export const SERVICE_LABELS: { value: string; labels: Record<string, string> }[]
   { value: 'ui-ux-design', labels: { en: 'UI/UX Design', tr: 'UI/UX Tasarımı', de: 'UI/UX-Design', ur: 'UI/UX ڈیزائن', ar: 'تصميم UI/UX' } },
   { value: 'api-development', labels: { en: 'API Development', tr: 'API Geliştirme', de: 'API-Entwicklung', ur: 'API ڈویلپمنٹ', ar: 'تطوير API' } },
   { value: 'e-commerce', labels: { en: 'E-Commerce Solutions', tr: 'E-Ticaret Çözümleri', de: 'E-Commerce-Lösungen', ur: 'ای کامرس حل', ar: 'حلول التجارة الإلكترونية' } },
+  { value: 'ecommerce-seo', labels: { en: 'E-Commerce SEO', tr: 'E-Ticaret SEO', de: 'E-Commerce-SEO', ur: 'ای کامرس SEO', ar: 'تحسين محركات البحث للتجارة الإلكترونية' } },
+  { value: 'technical-seo', labels: { en: 'Technical SEO', tr: 'Teknik SEO', de: 'Technisches SEO', ur: 'ٹیکنیکل SEO', ar: 'السيو التقني' } },
   { value: 'corporate-website-design', labels: { en: 'Corporate Website Design', tr: 'Kurumsal Web Tasarım', de: 'Corporate Webdesign', ur: 'کارپوریٹ ویب ڈیزائن', ar: 'تصميم مواقع الشركات' } },
   { value: 'ikas-development', labels: { en: 'ikas Store Setup & Theme Design', tr: 'ikas Mağaza Kurulumu ve Tema Tasarımı', de: 'ikas-Shop-Einrichtung & Theme-Design', ur: 'ikas اسٹور سیٹ اپ اور تھیم ڈیزائن', ar: 'إعداد متجر ikas وتصميم القالب' } },
   { value: 'devops-cloud', labels: { en: 'DevOps & Cloud', tr: 'DevOps ve Bulut', de: 'DevOps & Cloud', ur: 'DevOps اور کلاؤڈ', ar: 'DevOps والسحابة' } },

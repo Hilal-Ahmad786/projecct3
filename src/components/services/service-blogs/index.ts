@@ -7,6 +7,8 @@ import { shopifyBlog } from './shopify';
 import { customEcommerceBlog } from './custom-ecommerce';
 import { marketplaceBlog } from './marketplace';
 import { seoBlog } from './seo';
+import { ecommerceSeoBlog } from './ecommerce-seo';
+import { technicalSeoBlog } from './technical-seo';
 
 // Presentation config per service blog. The list of enabled services/locales
 // lives in src/lib/service-blogs.ts (kept JSX-free for the sitemap).
@@ -17,6 +19,8 @@ const definitions: Record<string, ServiceBlogDefinition> = {
   'custom-ecommerce': customEcommerceBlog,
   'marketplace-development': marketplaceBlog,
   'seo': seoBlog,
+  'ecommerce-seo': ecommerceSeoBlog,
+  'technical-seo': technicalSeoBlog,
 };
 
 export function getServiceBlog(serviceSlug: string, locale: string): ServiceBlogDefinition | null {

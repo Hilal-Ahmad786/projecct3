@@ -1,69 +1,33 @@
 import type { ReactNode } from 'react';
-import Link from '@/components/IntentLink';
-import { ArrowRightIcon, MagnifyingGlassIcon } from '@heroicons/react/24/outline';
-import InternalPageHero from '@/components/services/InternalPageHero';
-import ServiceGuideCards from '@/components/services/ServiceGuideCards';
+import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import IkasVisual from '@/components/ikas/visuals/IkasVisual';
 import type { IkasVisualName } from '@/components/ikas/visuals/generated';
 import SeoArtwork from '@/components/seo/visuals/SeoArtwork';
 import type { SeoVisualName } from '@/components/seo/visuals/generated';
-import { FAQJsonLd } from '@/components/seo/JsonLd';
-import { trTitleCase } from '@/lib/tr-title-case';
-import { BlogFeedScene, FaqScene } from '@/components/services/hero-visuals/scenes-internal';
-import CustomEcommerceMotionScope from '@/components/e-commerce/CustomEcommerceMotionScope';
-import PlatformPageLinks from '@/components/e-commerce/PlatformPageLinks';
-import { sectionId } from '@/components/e-commerce/PageJumpNav';
-import { ServiceMdBody, matchPrefix, readServiceChunks, serviceFaqItems, type Chunk, type SectionVisual, type ServiceMdConfig } from '@/components/e-commerce/ServiceMarkdownPage';
+import type { SectionVisual } from '@/components/e-commerce/ServiceMarkdownPage';
 import { getSeoGuides } from '@/components/services/service-blogs/seo';
+import { createSeoService, type SeoContentPage, type SeoMeta, type SeoPageKind, type SeoServiceConfig } from './seo-pages/SeoServiceEngine';
 
-// Turkish SEO service at /tr/hizmetler/seo. Copy lives in content/seo/tr (from
-// the Codex packs in Keywords/Pazarlama/SEO/SEO/codex) and renders through
-// ServiceMarkdownPage like the pazaryeri and custom e-commerce pages. Visuals
-// are the SEO SVGs in src/components/seo/visuals; every chart is labelled
-// representative (no invented results). The last `##` block of each page is
-// its closing CTA, rendered as the dark closing band.
+// Turkish SEO service at /tr/hizmetler/seo. Copy: content/seo/tr (Codex packs in
+// Keywords/Pazarlama/SEO/SEO/codex). Rendering is shared with E-Ticaret SEO and
+// Teknik SEO through seo-pages/SeoServiceEngine. The overview hero keeps the
+// service's own serp-ranking animation (results moving up).
 
-export type SeoTurkishPageKind = 'overview' | 'features' | 'technologies' | 'process' | 'portfolio' | 'pricing' | 'faq' | 'blog';
-type SeoContentPage = Exclude<SeoTurkishPageKind, 'blog'>;
-type SubPage = Exclude<SeoTurkishPageKind, 'overview' | 'blog'>;
+export type SeoTurkishPageKind = SeoPageKind;
 export const SEO_TR_BASE = '/tr/hizmetler/seo';
 export const SEO_TR_ENQUIRY = '/tr/start-project?service=seo';
 const base = SEO_TR_BASE;
-const enquiry = SEO_TR_ENQUIRY;
-const focus = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2';
 
-const metadata: Record<SeoTurkishPageKind, { title: string; description: string; heading: string; intro: string }> = {
-  overview: { title: 'SEO Hizmeti ve Danışmanlığı | PakSoft', description: 'PakSoft SEO hizmetiyle sitenizin teknik sorunlarını, içerik fırsatlarını ve organik aramadan gelen talepleri değerlendirin. Sitenize özel çalışma planı alın.', heading: 'İşletmeler İçin SEO Hizmeti', intro: 'Google’da müşterilerinizin aradığı konuları, sitenizde bu aramalara karşılık veren sayfaları ve görünürlüğü sınırlayan teknik sorunları birlikte inceleyelim. PakSoft SEO hizmeti, hangi sayfaların önce iyileştirileceğini, hangi değişikliklerin uygulanacağını ve sonuçların nasıl ölçüleceğini belirleyen bir çalışma planıyla başlar.' },
+const metadata: Record<SeoTurkishPageKind, SeoMeta> = {
+  overview: { title: 'SEO Hizmeti ve Danışmanlığı | SEO Ajansı PakSoft', description: 'PakSoft SEO hizmetiyle sitenizin teknik sorunlarını, içerik fırsatlarını ve organik aramadan gelen talepleri değerlendirin. Sitenize özel çalışma planı alın.', heading: 'İşletmeler İçin SEO Hizmeti', intro: 'Google’da müşterilerinizin aradığı konuları, sitenizde bu aramalara karşılık veren sayfaları ve görünürlüğü sınırlayan teknik sorunları birlikte inceleyelim. PakSoft SEO hizmeti, hangi sayfaların önce iyileştirileceğini, hangi değişikliklerin uygulanacağını ve sonuçların nasıl ölçüleceğini belirleyen bir çalışma planıyla başlar.' },
   features: { title: 'SEO Hizmeti Neleri Kapsar? | PakSoft', description: 'SEO çalışmasında hangi sayfaların incelendiğini, teknik sorunların nasıl önceliklendirildiğini ve tamamlanan işlerin nasıl raporlandığını öğrenin.', heading: 'SEO Hizmeti Neleri Kapsar?', intro: 'SEO çalışmasının kapsamı, sitenizde hangi sayfaların müşteriye ulaştığını ve hangi sorunların bu sayfaların görünürlüğünü sınırladığını inceleyerek belirlenir. PakSoft ile anahtar kelime eşleştirmesinden teknik incelemeye ve raporlamaya kadar hangi işlerin projenize dahil olacağını netleştirin.' },
   technologies: { title: 'SEO Araçları ve Ölçüm Yöntemleri | PakSoft', description: 'Search Console, site taraması, PageSpeed Insights ve GA4 verilerinin SEO kararlarında nasıl kullanıldığını örneklerle inceleyin.', heading: 'SEO Araçları ve Ölçüm Yöntemleri', intro: 'Bir hizmet sayfası Google’da gösterim alıyor mu? Eski adres doğru sayfaya yönleniyor mu? Organik aramadan gelen ziyaretçiler teklif formunu kullanıyor mu? Her soru farklı bir veri gerektirir. Sitenizin önceliklerine göre hangi verilerin inceleneceğini ve değişikliklerin nasıl doğrulanacağını belirleyin.' },
   process: { title: 'SEO Çalışması Nasıl İlerler? | PakSoft', description: 'PakSoft SEO çalışma sürecini inceleyin. İlk site değerlendirmesinden öncelik planına, uygulama kontrollerine ve performans takibine kadar adımları öğrenin.', heading: 'SEO Çalışması Nasıl İlerler?', intro: 'SEO çalışmasına, organik aramada hangi hizmet veya ürün sayfalarının işletmeniz için öncelikli olduğunu belirleyerek başlarız. Mevcut durumu kaydeder, iyileştirmeleri sıraya koyar, uygulanan değişiklikleri kontrol eder ve elde edilen verilerle bir sonraki dönemi planlarız.' },
   portfolio: { title: 'SEO Proje Örnekleri ve Uygulama Senaryoları | PakSoft', description: 'Kurumsal web sitesi, e-ticaret mağazası ve site yenilemesi için temsili SEO senaryolarını inceleyin. Her senaryoda hangi işlerin önceliklendirildiğini görün.', heading: 'SEO Proje Örnekleri', intro: 'Bir kurumsal site, bir e-ticaret mağazası ve yenilenen bir web sitesi farklı SEO kararları gerektirir. Aşağıdaki temsili senaryolarda sorunun nasıl incelendiğini, hangi işin önce ele alınabileceğini ve değişikliğin nasıl kontrol edileceğini görebilirsiniz.' },
-  pricing: { title: 'SEO Fiyatları ve Hizmet Kapsamı | PakSoft', description: 'SEO fiyatlarını etkileyen teknik inceleme, içerik, uygulama ve raporlama kalemlerini karşılaştırın. Sitenizin kapsamına göre teklif alın.', heading: 'SEO Fiyatları Nasıl Belirlenir?', intro: 'SEO hizmeti fiyatı, incelenecek sayfa gruplarına, teknik sorunların kapsamına, hazırlanacak içeriklere ve uygulamayı kimin üstleneceğine göre belirlenir. PakSoft ile tek seferlik inceleme, proje bazlı uygulama ve düzenli takip işlerini ayrı ayrı değerlendirerek sitenize uygun bir teklif oluşturabilirsiniz.' },
+  pricing: { title: 'SEO Paketleri ve Fiyatları | PakSoft', description: 'SEO paketlerini ve aylık SEO fiyatlarını etkileyen teknik inceleme, içerik, uygulama ve raporlama kalemlerini karşılaştırın. Sitenize özel teklif alın.', heading: 'SEO Fiyatları Nasıl Belirlenir?', intro: 'SEO hizmeti fiyatı, incelenecek sayfa gruplarına, teknik sorunların kapsamına, hazırlanacak içeriklere ve uygulamayı kimin üstleneceğine göre belirlenir. PakSoft ile tek seferlik inceleme, proje bazlı uygulama ve düzenli takip işlerini ayrı ayrı değerlendirerek sitenize uygun bir teklif oluşturabilirsiniz.' },
   faq: { title: 'SEO Hizmeti Hakkında Sık Sorulan Sorular | PakSoft', description: 'SEO çalışmasının ne zaman sonuç verebileceğini, hangi verilerin izlendiğini ve teklif için neler paylaşmanız gerektiğini öğrenin.', heading: 'SEO Hizmeti Hakkında Sık Sorulan Sorular', intro: 'SEO çalışmasına başlamadan önce sitenizde hangi değişikliklerin yapılacağını, sonuçların nasıl takip edileceğini ve teklif için hangi bilgilerin gerektiğini öğrenin.' },
   blog: { title: 'SEO Rehberleri ve İşletmeler İçin İpuçları | PakSoft', description: 'SEO’nun nasıl çalıştığını ve bir SEO ajansının teklifini hangi sorularla değerlendirebileceğinizi PakSoft rehberlerinde öğrenin.', heading: 'İşletmeler İçin SEO Rehberleri', intro: 'Sitenize gelen organik ziyaretleri anlamak ve SEO çalışmasına nereden başlayacağınızı belirlemek için rehberlerimizi inceleyin. İlk yazı, arama görünürlüğünü örnek bir hizmet sayfası üzerinden açıklıyor. İkinci yazı, ajans tekliflerini kapsam ve teslimatlar üzerinden karşılaştırmanıza yardımcı oluyor.' },
 };
-
-export function getSeoTurkishMeta(page: SeoTurkishPageKind) { return metadata[page]; }
-
-export function getSeoTurkishSocialMeta(page: SeoTurkishPageKind, canonicalUrl: string, image = '/images/og-image.jpg') {
-  const { title, description } = metadata[page];
-  return {
-    openGraph: { type: 'website' as const, title, description, url: canonicalUrl, siteName: 'PakSoft', locale: 'tr_TR', images: [{ url: image, width: 1200, height: 630, alt: title }] },
-    twitter: { card: 'summary_large_image' as const, title, description, images: [image] },
-  };
-}
-
-/* ------------------------------------------------------------------ content */
-
-// The closing `##` block of each page becomes the dark CTA band, not a section.
-const isClosing = (chunk: Chunk) => /^siteniz(in|de)? (için|ilk|seo|hangi)/.test(chunk.title.toLocaleLowerCase('tr'));
-function readPage(page: SeoContentPage) {
-  const chunks = readServiceChunks('content/seo/tr', page);
-  const last = chunks.at(-1);
-  return last && isClosing(last) ? { sections: chunks.slice(0, -1), closing: last } : { sections: chunks, closing: undefined };
-}
-
-/* ------------------------------------------------------------------ visuals */
 
 const aside = (node: ReactNode): SectionVisual => ({ place: 'aside', node });
 const art = (name: SeoVisualName, label: string, slotLabels: Record<string, string>, className = 'mx-auto w-full max-w-xl') =>
@@ -71,8 +35,6 @@ const art = (name: SeoVisualName, label: string, slotLabels: Record<string, stri
 const ikas = (name: IkasVisualName, label: string, slotLabels?: Record<string, string>, className = 'mx-auto w-full max-w-xl') =>
   <IkasVisual name={name} loop label={label} slotLabels={slotLabels} className={className} />;
 
-// Each visual appears once per service (heroes included). The overview hero
-// keeps the service's own serp-ranking animation (results moving up).
 const SEO = {
   queryMap: () => art('query-map', 'Temsili sorgu ve sayfa eşleştirmesi: “seo hizmeti” hizmet sayfasına, “seo fiyatları” fiyatlandırma sayfasına, “seo nedir” rehber yazısına yönleniyor', { 'slot-head-q': 'Arama sorgusu', 'slot-head-p': 'Yanıt veren sayfa', 'slot-q-1': 'seo hizmeti', 'slot-q-2': 'seo fiyatları', 'slot-q-3': 'seo nedir', 'slot-p-1': 'Hizmet sayfası', 'slot-p-2': 'Fiyatlandırma', 'slot-p-3': 'Rehber yazısı' }),
   report: () => art('report', 'Temsili dönem raporu: tamamlanan üç iş, öncelikli sayfaların gösterim ve tıklama eğilimi ve sıradaki öncelik; sayılar gösterilmiyor', { 'slot-title': 'Dönem raporu', 'slot-tag': 'Temsili', 'slot-done-1': 'Yönlendirmeler düzeltildi', 'slot-done-2': 'Hizmet sayfası güncellendi', 'slot-done-3': 'Form ölçümü doğrulandı', 'slot-chart': 'Gösterim ve tıklama', 'slot-next': 'Sıradaki öncelik: kategori sayfaları' }),
@@ -108,49 +70,34 @@ const VISUALS: Partial<Record<SeoContentPage, [string, SectionVisual][]>> = {
   ],
 };
 
-function SeoHeroScene({ children }: { children: ReactNode }) {
-  return (
-    <div className="relative w-full max-w-xl">
-      {children}
-      <div aria-hidden="true" data-ikas-loop className={`ikas-badge-float absolute z-20 -left-2 -top-14 sm:-left-6 rounded-[20px] bg-white p-3 shadow-[0_12px_30px_rgba(18,25,38,0.18)] ring-1 ring-black/5`}>
-        <MagnifyingGlassIcon className="h-10 w-10 text-heritage-turquoise-deep sm:h-12 sm:w-12" />
-      </div>
-    </div>
-  );
-}
-
-// Each subpage hero has its own scene (no visual repeats further down).
-const HERO_ART: Record<SubPage, () => ReactNode> = {
+const HERO_ART: SeoServiceConfig['heroArt'] = {
   features: () => SEO.deliverables('w-full'),
   technologies: () => SEO.tools('w-full'),
   process: () => SEO.priority('w-full'),
   portfolio: () => SEO.sites('w-full'),
   pricing: () => SEO.quote('w-full'),
-  faq: () => <FaqScene />,
 };
 
-const ROTATING: Record<SubPage, { lead: string; words: string[] }> = {
+const ROTATING: SeoServiceConfig['rotating'] = {
+  blog: { lead: 'İşletmeler İçin', words: ['SEO Rehberleri', 'SEO Nedir?', 'Ajans Seçimi'] },
   features: { lead: 'SEO Hizmeti', words: ['Kapsamı', 'Teslimatları', 'Yapılan İşler'] },
   technologies: { lead: 'SEO', words: ['Araçları', 'Ölçüm Yöntemleri', 'Veri Kaynakları'] },
   process: { lead: 'SEO', words: ['Çalışma Süreci', 'Öncelik Planı', 'Performans Takibi'] },
   portfolio: { lead: 'SEO', words: ['Proje Örnekleri', 'Senaryoları', 'Uygulama Örnekleri'] },
-  pricing: { lead: 'SEO', words: ['Fiyatları', 'Hizmet Kapsamı', 'Teklif Kalemleri'] },
+  pricing: { lead: 'SEO', words: ['Fiyatları', 'Paketleri', 'Aylık Ücretleri'] },
   faq: { lead: 'SEO Hizmeti', words: ['Sık Sorulanlar', 'Ölçüm Soruları', 'Teklif Soruları'] },
 };
 
-// Hero CTAs from the Codex packs: primary → SEO enquiry, secondary → the page's key section.
 const PRIMARY: Record<SeoTurkishPageKind, string> = { overview: 'Sitem İçin SEO Planı Al', features: 'Sitem İçin SEO Kapsamı Belirle', technologies: 'Sitem İçin SEO Planı Al', process: 'Sitem İçin SEO Planı Al', portfolio: 'Sitem İçin SEO Planı Al', pricing: 'Sitem İçin SEO Teklifi Al', faq: 'Sitem İçin SEO Planı Al', blog: 'Sitem İçin SEO Planı Al' };
-const SECONDARY: Record<SubPage, [string, string]> = {
+const SECONDARY: SeoServiceConfig['secondary'] = {
   features: ['Teslimatları İncele', '#seo-teslimatlari'], technologies: ['Ölçüm Araçlarını İncele', '#seo-olcum-araclari'], process: ['Çalışma Adımlarını İncele', '#seo-calisma-adimlari'],
   portfolio: ['Proje Örneklerini İncele', '#seo-proje-ornekleri'], pricing: ['Fiyatı Etkileyen Kalemleri İncele', '#seo-fiyat-kalemleri'], faq: ['Sorulara Göz At', ''],
 };
 // Closing band secondary link (Codex packs: Süreç or Fiyatlandırma).
-const CLOSING_LINK: Record<SeoContentPage, [string, string]> = {
+const CLOSING_LINK: SeoServiceConfig['closingLink'] = {
   overview: ['SEO Sürecini İncele', `${base}/surec`], features: ['SEO Sürecini İncele', `${base}/surec`], technologies: ['SEO Sürecini İncele', `${base}/surec`],
   process: ['SEO Fiyatlandırmasını İncele', `${base}/fiyatlandirma`], portfolio: ['SEO Sürecini İncele', `${base}/surec`], pricing: ['SEO Sürecini İncele', `${base}/surec`], faq: ['SEO Fiyatlandırmasını İncele', `${base}/fiyatlandirma`],
 };
-
-/* -------------------------------------------------------------- jump + CTA */
 
 const JUMP_LABELS: [string, string][] = [
   ['Siteniz için doğru başlangıç', 'Başlangıç noktası'], ['SEO hizmeti neleri kapsar', 'Hizmet kapsamı'], ['Bir SEO ajansıyla çalışma', 'Çalışma adımları'], ['İhtiyacınıza uygun SEO', 'İlgili SEO hizmetleri'],
@@ -170,91 +117,28 @@ const SECTION_IDS: Record<string, string> = {
   'pricing:SEO teklifini hangi işler etkiler?': 'seo-fiyat-kalemleri',
 };
 
-/** Closing copy without the inline "inceleyin" link sentence (it becomes the secondary button). */
-const closingText = (intro: string) => intro.replace(/\s*[^.!?]*\[[^\]]+\]\([^)]*\)[^.!?]*[.!?]?/g, '').replace(/\*\*/g, '').trim();
-
-function ClosingCta({ page, closing }: { page: SeoContentPage; closing?: Chunk }) {
-  const title = closing?.title ?? 'Siteniz için ilk SEO adımını belirleyelim';
-  const text = closing ? closingText(closing.intro) : 'Site adresinizi ve öne çıkarmak istediğiniz bir sayfayı paylaşın. İlk görüşmede hangi çalışmanın ihtiyacınıza uygun olduğunu birlikte değerlendirelim.';
-  const [linkLabel, linkHref] = CLOSING_LINK[page];
-  return (
-    <section data-custom-ecom-reveal className="bg-gray-950 text-white">
-      <div className="mx-auto max-w-3xl px-4 py-14 text-center sm:px-6 sm:py-16">
-        <span aria-hidden="true" className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-white shadow-lg"><MagnifyingGlassIcon className="h-8 w-8 text-heritage-turquoise-deep" /></span>
-        <h2 className="text-headline font-medium">{trTitleCase(title)}</h2>
-        <p className="mt-4 text-body leading-relaxed text-gray-300">{text}</p>
-        <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
-          <Link href={enquiry} className={`group inline-flex min-h-11 items-center justify-center gap-2 rounded-sm bg-heritage-turquoise px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-heritage-turquoise-deep ${focus}`}>{PRIMARY[page]}<ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-0.5 motion-reduce:transition-none" aria-hidden="true" /></Link>
-          <Link href={linkHref} className={`inline-flex min-h-11 items-center justify-center gap-2 rounded-sm border border-white/30 px-5 py-3 text-sm font-semibold text-white hover:bg-white/10 ${focus}`}>{linkLabel}</Link>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-const configFor = (closing?: Chunk): ServiceMdConfig<SeoContentPage> => ({
-  enquiry,
-  visual: (page, title) => matchPrefix(VISUALS[page], title),
-  card: (page) => page === 'portfolio' ? { badge: 'Temsili senaryo' } : undefined,
-  jumpLabel: (title) => matchPrefix(JUMP_LABELS, title) ?? title.replace(/[?:].*$/, ''),
-  jumpMark: <MagnifyingGlassIcon className="h-3.5 w-3.5 text-heritage-turquoise-deep" />,
-  sectionId: (page, title) => SECTION_IDS[`${page}:${title}`],
-  footer: (page, tone) => <><PlatformPageLinks platform="seo" current={page} tone={tone} /><ClosingCta page={page} closing={closing} /></>,
+const seo = createSeoService({
+  platform: 'seo',
+  contentDir: 'content/seo/tr',
+  base,
+  enquiry: SEO_TR_ENQUIRY,
+  serviceName: 'SEO Hizmeti',
+  Icon: MagnifyingGlassIcon,
+  metadata,
+  visuals: VISUALS,
+  heroArt: HERO_ART,
+  rotating: ROTATING,
+  primary: PRIMARY,
+  secondary: SECONDARY,
+  closingLink: CLOSING_LINK,
+  closingDefault: { title: 'Siteniz için ilk SEO adımını belirleyelim', text: 'Site adresinizi ve öne çıkarmak istediğiniz bir sayfayı paylaşın. İlk görüşmede hangi çalışmanın ihtiyacınıza uygun olduğunu birlikte değerlendirelim.' },
+  jumpLabels: JUMP_LABELS,
+  sectionIds: SECTION_IDS,
+  portfolioBadge: 'Temsili senaryo',
+  blog: { id: 'seo-rehberleri', title: 'SEO çalışmasına nereden başlayacağınızı belirleyin', text: 'SEO’nun temel çalışma biçimini ve ajans tekliflerini değerlendirme yöntemlerini anlatan rehberler.', asideTitle: 'Rehberleri kendi sitenize uygulayalım', asideText: 'Site adresinizi ve öne çıkarmak istediğiniz bir sayfayı paylaşın.', guides: getSeoGuides },
 });
 
-/* -------------------------------------------------------------------- pages */
-
-const iconChip = <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-black/5"><MagnifyingGlassIcon className="h-5 w-5 text-heritage-turquoise-deep" aria-hidden="true" /></span>;
-const crumbs = (label?: string) => [{ label: 'Ana Sayfa', href: '/' }, { label: 'Hizmetler', href: '/hizmetler' }, { label: 'SEO Hizmeti', href: base }, ...(label ? [{ label }] : [])];
-const primaryClass = `inline-flex min-h-11 items-center justify-center gap-2 rounded-sm bg-heritage-turquoise-deep px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-heritage-turquoise ${focus}`;
-const secondaryClass = `inline-flex min-h-11 items-center justify-center rounded-sm border border-heritage-sand bg-white px-5 py-3 text-sm font-semibold text-gray-800 hover:border-heritage-turquoise ${focus}`;
-
-/** Overview body (the hero stays in ServiceDetailClient). */
-export function SeoTurkishOverviewBody() {
-  const { sections, closing } = readPage('overview');
-  return <><CustomEcommerceMotionScope /><ServiceMdBody page="overview" chunks={sections} config={configFor(closing)} /></>;
-}
-
-function BlogListing() {
-  const meta = metadata.blog;
-  const cards = getSeoGuides().map((guide) => ({ slug: guide.slug, href: `${base}/blog/${guide.slug}`, title: guide.title, category: guide.categoryLabel, excerpt: guide.excerpt, image: guide.featuredImage, imageAlt: guide.imageAlt, publishedAt: guide.datePublished }));
-  return <main className="min-h-screen bg-white">
-    <CustomEcommerceMotionScope />
-    <InternalPageHero serviceName="SEO Hizmeti" accentWord={meta.heading} eyebrowNormalCase eyebrowIcon={iconChip} heading={meta.heading} rotating={{ lead: 'İşletmeler İçin', words: ['SEO Rehberleri', 'SEO Nedir?', 'Ajans Seçimi'] }} subtitle={meta.intro} crumbs={crumbs('Rehberler')}
-      actions={<><a href="#seo-rehberleri" className={primaryClass}>Rehberleri İncele</a><Link href={enquiry} className={secondaryClass}>{PRIMARY.blog}</Link></>}
-      scene={<SeoHeroScene><BlogFeedScene showPublicationMeta={false} /></SeoHeroScene>} />
-    <section id="seo-rehberleri" className="bg-background-gray scroll-mt-[calc(var(--navbar-h,88px)+1rem)]"><div className="mx-auto max-w-[1200px] px-4 sm:px-6 cw-section">
-      <h2 className="reveal max-w-4xl text-headline font-medium leading-tight text-gray-900">{trTitleCase('SEO çalışmasına nereden başlayacağınızı belirleyin')}</h2>
-      <p className="mt-3 max-w-3xl text-base leading-7 text-gray-600">SEO’nun temel çalışma biçimini ve ajans tekliflerini değerlendirme yöntemlerini anlatan rehberler.</p>
-      <div className="mt-7"><ServiceGuideCards cards={cards} /></div>
-      <aside className="mt-9 flex flex-col gap-4 rounded-2xl border border-heritage-sand bg-heritage-ivory p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6"><div><h2 className="text-lg font-semibold text-gray-950">Rehberleri kendi sitenize uygulayalım</h2><p className="mt-1 text-sm leading-6 text-gray-700">Site adresinizi ve öne çıkarmak istediğiniz bir sayfayı paylaşın.</p></div><Link href={enquiry} className={`${primaryClass} self-start sm:self-auto`}>{PRIMARY.blog}<ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link></aside>
-    </div></section>
-    <PlatformPageLinks platform="seo" current="blog" tone="white" />
-  </main>;
-}
-
-export default function SeoTurkishPage({ page }: { page: Exclude<SeoTurkishPageKind, 'overview'> }) {
-  if (page === 'blog') return <BlogListing />;
-  const copy = metadata[page];
-  const { sections, closing } = readPage(page);
-  const faqs = page === 'faq' ? serviceFaqItems(sections) : [];
-  const [secondaryLabel, secondaryHref] = SECONDARY[page];
-  const target = secondaryHref || (sections[0] ? `#${SECTION_IDS[`${page}:${sections[0].title}`] ?? sectionId(sections[0].title)}` : '#');
-  return <main className="min-h-screen bg-white">
-    <CustomEcommerceMotionScope />
-    {faqs.length > 0 && <FAQJsonLd faqs={faqs} />}
-    <InternalPageHero
-      eyebrowNormalCase
-      eyebrowIcon={iconChip}
-      serviceName="SEO Hizmeti"
-      accentWord={copy.heading}
-      heading={copy.heading}
-      rotating={ROTATING[page]}
-      subtitle={copy.intro}
-      scene={<SeoHeroScene>{HERO_ART[page]()}</SeoHeroScene>}
-      crumbs={crumbs(copy.heading)}
-      actions={<><Link href={enquiry} className={primaryClass}>{PRIMARY[page]}<ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link><a href={target} className={secondaryClass}>{secondaryLabel}</a></>}
-    />
-    <ServiceMdBody page={page} chunks={sections} config={configFor(closing)} jumpTitle={page === 'faq' ? 'raw' : undefined} />
-  </main>;
-}
+export const getSeoTurkishMeta = seo.getMeta;
+export const getSeoTurkishSocialMeta = seo.getSocialMeta;
+export const SeoTurkishOverviewBody = seo.OverviewBody;
+export default seo.Page;

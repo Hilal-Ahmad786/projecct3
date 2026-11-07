@@ -14,7 +14,9 @@ import IkasTurkishSubpage, { getIkasTurkishSubpageMeta } from '@/components/ikas
 import ShopifyTurkishTechnologies from '@/components/e-commerce/ShopifyTurkishTechnologies';
 import CustomEcommerceTurkishPage, { getCustomEcommerceMeta } from '@/components/e-commerce/CustomEcommerceTurkishPage';
 import MarketplaceTurkishPage, { getMarketplaceMeta } from '@/components/e-commerce/MarketplaceTurkishPage';
+import TechnicalSeoTurkishPage, { getTechnicalSeoMeta, getTechnicalSeoSocialMeta } from '@/components/services/TechnicalSeoTurkishPage';
 import SeoTurkishPage, { getSeoTurkishMeta, getSeoTurkishSocialMeta } from '@/components/services/SeoTurkishPage';
+import EcommerceSeoTurkishPage, { getEcommerceSeoTurkishMeta, getEcommerceSeoTurkishSocialMeta } from '@/components/services/EcommerceSeoTurkishPage';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -39,7 +41,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const path = `/services/${slug}/technologies`;
   const localizedPath = localizeFullPath(path, validLocale);
 
-  const customMeta = slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('technologies') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('technologies') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('technologies')
+  const customMeta = slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoMeta('technologies') : slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('technologies') : slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('technologies') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('technologies') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('technologies')
     : slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('technologies', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('technologies')
@@ -55,7 +57,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title,
     description,
     robots: serviceRobots(service),
+    ...(slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishSocialMeta('technologies', canonicalUrl) : {}),
     ...(slug === 'seo' && validLocale === 'tr' ? getSeoTurkishSocialMeta('technologies', canonicalUrl) : {}),
+    ...(slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoSocialMeta('technologies', canonicalUrl) : {}),
     ...(slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishSocialMeta('technologies', canonicalUrl) : slug === 'shopify-development' && validLocale === 'tr' ? {
       openGraph: { type: 'website' as const, locale: 'tr_TR', url: canonicalUrl, title, description, images: ['/images/og-image.jpg'] },
       twitter: { card: 'summary_large_image' as const, title, description, images: ['/images/twitter-image.jpg'] },
@@ -84,6 +88,10 @@ export default async function ServiceTechnologiesPage({ params }: PageProps) {
   if (!service) {
     notFound();
   }
+
+  if (slug === 'ecommerce-seo' && locale === 'tr') return <EcommerceSeoTurkishPage page="technologies" />;
+
+  if (slug === 'technical-seo' && locale === 'tr') return <TechnicalSeoTurkishPage page="technologies" />;
 
   if (slug === 'seo' && locale === 'tr') return <SeoTurkishPage page="technologies" />;
 

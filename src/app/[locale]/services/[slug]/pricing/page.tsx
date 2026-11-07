@@ -13,7 +13,9 @@ import IkasTurkishPricing, { getIkasTurkishPricingMeta } from '@/components/ikas
 import ShopifyTurkishPricing, { shopifyPricingMeta } from '@/components/e-commerce/ShopifyTurkishPricing';
 import CustomEcommerceTurkishPage, { getCustomEcommerceMeta } from '@/components/e-commerce/CustomEcommerceTurkishPage';
 import MarketplaceTurkishPage, { getMarketplaceMeta } from '@/components/e-commerce/MarketplaceTurkishPage';
+import TechnicalSeoTurkishPage, { getTechnicalSeoMeta, getTechnicalSeoSocialMeta } from '@/components/services/TechnicalSeoTurkishPage';
 import SeoTurkishPage, { getSeoTurkishMeta, getSeoTurkishSocialMeta } from '@/components/services/SeoTurkishPage';
+import EcommerceSeoTurkishPage, { getEcommerceSeoTurkishMeta, getEcommerceSeoTurkishSocialMeta } from '@/components/services/EcommerceSeoTurkishPage';
 
 export const revalidate = 3600;
 
@@ -37,7 +39,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const path = `/services/${slug}/pricing`;
   const localizedPath = localizeFullPath(path, validLocale);
-  const customMeta = slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('pricing') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('pricing') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('pricing')
+  const customMeta = slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoMeta('pricing') : slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('pricing') : slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('pricing') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('pricing') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('pricing')
     : slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('pricing', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('pricing')
@@ -50,7 +52,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title,
     description,
     robots: serviceRobots(data.service),
+    ...(slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishSocialMeta('pricing', canonicalUrl) : {}),
     ...(slug === 'seo' && validLocale === 'tr' ? getSeoTurkishSocialMeta('pricing', canonicalUrl) : {}),
+    ...(slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoSocialMeta('pricing', canonicalUrl) : {}),
     ...(slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishSocialMeta('pricing', `${baseUrl}/${validLocale}${localizedPath}`) : customMeta && validLocale === 'tr' ? {
       openGraph: {
         type: 'website' as const,
@@ -79,6 +83,10 @@ export default async function ServicePricingPage({ params }: PageProps) {
   const validLocale = locales.includes(locale) ? locale : defaultLocale;
   const data = await getServiceData(slug, validLocale);
   if (!data) notFound();
+
+  if (slug === 'ecommerce-seo' && locale === 'tr') return <EcommerceSeoTurkishPage page="pricing" />;
+
+  if (slug === 'technical-seo' && locale === 'tr') return <TechnicalSeoTurkishPage page="pricing" />;
 
   if (slug === 'seo' && locale === 'tr') return <SeoTurkishPage page="pricing" />;
 

@@ -293,6 +293,7 @@ export default function IkasTurkishOverviewBody() {
         <div className="rounded-xl border border-heritage-sand bg-white p-5"><h3 className="text-base font-semibold text-gray-900">Ölçümleme</h3><p className="mt-2 text-sm leading-6 text-gray-600">Hangi olayların takip edileceğini ve hangi hesapların kullanılacağını başlangıçta belirleriz. Ziyaret, ürün inceleme ve satın alma olaylarını ayırarak test planı oluştururuz; satın alma olayının tekrar sayılmamasını kontrol ederiz.</p></div>
       </div>
       <p className="mt-5 max-w-3xl rounded-lg border border-heritage-sand bg-heritage-ivory px-4 py-3 text-sm leading-6 text-gray-700">Temel kurulum, sürekli SEO içerik üretimi ve reklam yönetimi farklı hizmet kapsamlarıdır. Hangi işlerin dahil olacağı teklifinizde açıkça belirtilir.</p>
+      <Link href="/tr/hizmetler/ecommerce-seo" className={`${textLink} mt-4`}>ikas mağazaları için E-Ticaret SEO hizmetini inceleyin<ArrowRightIcon className="h-4 w-4" aria-hidden="true"/></Link>
     </Section>
 
     {/* 08 — deliverables */}

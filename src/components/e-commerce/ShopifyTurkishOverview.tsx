@@ -156,6 +156,7 @@ export default function ShopifyTurkishOverview() {
         <div className="shopify-motion-card rounded-xl border border-heritage-sand bg-white p-5"><h3 className="font-semibold text-gray-900">Ölçümleme</h3><p className="mt-2 text-sm leading-6 text-gray-600">Hangi hesapların ve olayların kullanılacağını başlangıçta belirler, kararlaştırılan olaylar için kontrol planı oluştururuz.</p></div>
       </div>
       <p className="mt-5 max-w-3xl rounded-lg border border-heritage-sand bg-heritage-ivory px-4 py-3 text-sm leading-6 text-gray-700">Teknik kurulum, sürekli SEO, içerik üretimi ve reklam yönetimi farklı iş kalemleridir; dahil işler teklifinizde belirtilir.</p>
+      <Link href="/tr/hizmetler/ecommerce-seo" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-heritage-turquoise-deep underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2">Shopify mağazaları için E-Ticaret SEO hizmetini inceleyin<ArrowRightIcon className="h-4 w-4" aria-hidden="true"/></Link>
     </Section>
 
     <Section title="Shopify projesi sonunda hangi çıktıları alırsınız?" tone="ivory">

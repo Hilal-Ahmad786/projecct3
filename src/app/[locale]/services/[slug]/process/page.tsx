@@ -11,7 +11,9 @@ import IkasTurkishSubpage, { getIkasTurkishSubpageMeta } from '@/components/ikas
 import ShopifyTurkishProcess from '@/components/e-commerce/ShopifyTurkishProcess';
 import CustomEcommerceTurkishPage, { getCustomEcommerceMeta } from '@/components/e-commerce/CustomEcommerceTurkishPage';
 import MarketplaceTurkishPage, { getMarketplaceMeta } from '@/components/e-commerce/MarketplaceTurkishPage';
+import TechnicalSeoTurkishPage, { getTechnicalSeoMeta, getTechnicalSeoSocialMeta } from '@/components/services/TechnicalSeoTurkishPage';
 import SeoTurkishPage, { getSeoTurkishMeta, getSeoTurkishSocialMeta } from '@/components/services/SeoTurkishPage';
+import EcommerceSeoTurkishPage, { getEcommerceSeoTurkishMeta, getEcommerceSeoTurkishSocialMeta } from '@/components/services/EcommerceSeoTurkishPage';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -36,7 +38,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const path = `/services/${slug}/process`;
   const localizedPath = localizeFullPath(path, validLocale);
 
-  const customMeta = slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('process') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('process') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('process')
+  const customMeta = slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoMeta('process') : slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('process') : slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('process') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('process') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('process')
     : slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('process', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('process')
@@ -52,7 +54,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title,
     description,
     robots: serviceRobots(service),
+    ...(slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishSocialMeta('process', canonicalUrl) : {}),
     ...(slug === 'seo' && validLocale === 'tr' ? getSeoTurkishSocialMeta('process', canonicalUrl) : {}),
+    ...(slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoSocialMeta('process', canonicalUrl) : {}),
     ...(slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishSocialMeta('process', canonicalUrl) : slug === 'shopify-development' && validLocale === 'tr' ? {
       openGraph: { type: 'website' as const, locale: 'tr_TR', url: canonicalUrl, title, description, images: ['/images/og-image.jpg'] },
       twitter: { card: 'summary_large_image' as const, title, description, images: ['/images/twitter-image.jpg'] },
@@ -82,6 +86,10 @@ export default async function ServiceProcessPage({ params }: PageProps) {
   if (!service) {
     notFound();
   }
+
+  if (slug === 'ecommerce-seo' && locale === 'tr') return <EcommerceSeoTurkishPage page="process" />;
+
+  if (slug === 'technical-seo' && locale === 'tr') return <TechnicalSeoTurkishPage page="process" />;
 
   if (slug === 'seo' && locale === 'tr') return <SeoTurkishPage page="process" />;
 

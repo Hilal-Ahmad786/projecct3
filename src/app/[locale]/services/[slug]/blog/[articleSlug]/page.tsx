@@ -11,6 +11,8 @@ import { getShopifyGuide, getShopifyGuides } from '@/components/services/service
 import { getCustomEcommerceGuide, getCustomEcommerceGuides } from '@/components/services/service-blogs/custom-ecommerce';
 import { getMarketplaceGuide, getMarketplaceGuides } from '@/components/services/service-blogs/marketplace';
 import { getSeoGuide, getSeoGuides } from '@/components/services/service-blogs/seo';
+import { getEcommerceSeoGuide, getEcommerceSeoGuides } from '@/components/services/service-blogs/ecommerce-seo';
+import { getTechnicalSeoGuide, getTechnicalSeoGuides } from '@/components/services/service-blogs/technical-seo';
 
 // DB-backed service guides (see getServiceBlogArticle) pick up edits hourly;
 // admin saves also revalidate the 'blog' cache tag immediately.
@@ -25,8 +27,10 @@ export function generateStaticParams() {
   const shopify = getShopifyGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'shopify-development', articleSlug }));
   const customEcommerce = getCustomEcommerceGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'custom-ecommerce', articleSlug }));
   const seo = getSeoGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'seo', articleSlug }));
+  const technicalSeo = getTechnicalSeoGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'technical-seo', articleSlug }));
+  const ecommerceSeo = getEcommerceSeoGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'ecommerce-seo', articleSlug }));
   const marketplace = getMarketplaceGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'marketplace-development', articleSlug }));
-  return [...corporate, ...shopify, ...customEcommerce, ...marketplace, ...seo];
+  return [...corporate, ...shopify, ...customEcommerce, ...marketplace, ...seo, ...ecommerceSeo, ...technicalSeo];
 }
 
 interface PageProps {
@@ -49,6 +53,16 @@ async function getServiceBlogArticle(serviceSlug: string, locale: string, articl
   }
   if (serviceSlug === 'seo' && locale === 'tr') {
     const post = getSeoGuide(articleSlug);
+    if (!post) return null;
+    return { blog, post, canonical: `${SITE_URL}${serviceBlogPath(blog.config)}/${articleSlug}` };
+  }
+  if (serviceSlug === 'technical-seo' && locale === 'tr') {
+    const post = getTechnicalSeoGuide(articleSlug);
+    if (!post) return null;
+    return { blog, post, canonical: `${SITE_URL}${serviceBlogPath(blog.config)}/${articleSlug}` };
+  }
+  if (serviceSlug === 'ecommerce-seo' && locale === 'tr') {
+    const post = getEcommerceSeoGuide(articleSlug);
     if (!post) return null;
     return { blog, post, canonical: `${SITE_URL}${serviceBlogPath(blog.config)}/${articleSlug}` };
   }
@@ -150,7 +164,9 @@ export default async function CorporateWebsiteGuideRoute({ params }: PageProps) 
   if (serviceArticle) {
     const { blog, post } = serviceArticle;
     const { config, category, coverAlt } = getServiceArticlePresentation(blog, post.slug, post.title);
-    const relatedCards = slug === 'seo' ? getSeoGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))
+    const relatedCards = slug === 'technical-seo' ? getTechnicalSeoGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))
+      : slug === 'ecommerce-seo' ? getEcommerceSeoGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))
+      : slug === 'seo' ? getSeoGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))
       : slug === 'shopify-development'
       ? getShopifyGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))
       : slug === 'custom-ecommerce' ? getCustomEcommerceGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))
