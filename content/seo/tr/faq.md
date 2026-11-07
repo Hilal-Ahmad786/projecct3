@@ -27,3 +27,7 @@ Tek seferlik inceleme, belirli bir dönemde sitenin durumunu değerlendirir ve �
 
 ### E-ticaret mağazam için hangi hizmeti incelemeliyim?
 Ürün ve kategori sayfaları, filtre adresleri ve mağaza içi bağlantılar öncelikliyse [E-Ticaret SEO](/tr/hizmetler/ecommerce-seo) ile başlayabilirsiniz. Site geçişi, tarama veya indeksleme sorunu ağırlıktaysa [Teknik SEO](/tr/hizmetler/technical-seo) kapsamını inceleyebilirsiniz.
+
+## Siteniz için ilk adımı belirleyelim
+
+Site adresinizi ve öne çıkarmak istediğiniz bir sayfayı paylaşın. İlk görüşmede hangi çalışmanın ihtiyacınıza uygun olduğunu birlikte değerlendirelim.

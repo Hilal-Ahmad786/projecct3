@@ -12,7 +12,7 @@ import {
   ShieldCheckIcon, BoltIcon, ChatBubbleLeftRightIcon, CpuChipIcon,
   CodeBracketIcon, DevicePhoneMobileIcon, GlobeAltIcon, SparklesIcon,
   PaintBrushIcon, MegaphoneIcon, ShoppingCartIcon, CloudIcon,
-  ServerStackIcon, LightBulbIcon, WrenchScrewdriverIcon, BuildingStorefrontIcon,
+  ServerStackIcon, LightBulbIcon, WrenchScrewdriverIcon, BuildingStorefrontIcon, MagnifyingGlassIcon,
 } from '@heroicons/react/24/outline';
 import Button from '@/components/Button';
 import ServicePortfolio from '@/components/services/ServicePortfolio';
@@ -254,7 +254,7 @@ export default function ServiceDetailClient({
     const seoIntro = 'Google’da müşterilerinizin aradığı konuları, sitenizde bu aramalara karşılık veren sayfaları ve görünürlüğü sınırlayan teknik sorunları birlikte inceleyelim. PakSoft SEO hizmeti, hangi sayfaların önce iyileştirileceğini, hangi değişikliklerin uygulanacağını ve sonuçların nasıl ölçüleceğini belirleyen bir çalışma planıyla başlar.';
     const heroService = { ...service, name: 'İşletmeler İçin SEO Hizmeti', description: seoIntro, fullDescription: seoIntro, shortDescription: seoIntro };
     const seoAnimation = animation || { heroVisual: 'browser-window' as const, motion: 'float' as const, bgPattern: 'grid' as const, decorations: 'circles' as const, featureStyle: 'icon-left' as const, processLayout: 'timeline' as const };
-    return <div id="overview"><HeroSection service={heroService} colors={colors} accent={accent} process={process} animation={seoAnimation} /></div>;
+    return <div id="overview"><HeroSection service={heroService} colors={colors} accent={accent} process={process} animation={seoAnimation} heroArt={heroArt} /></div>;
   }
 
   // Turkish ikas overview: hero here, the rest comes from the server-rendered
@@ -676,7 +676,7 @@ function HeroSection({
   const isMarketTr = service.slug === 'marketplace-development' && locale === 'tr';
   const isSeoTr = service.slug === 'seo' && locale === 'tr';
   // Curated hero art can stand in for a missing DB hero animation.
-  const artOnly = !hasAnimation && (isCustomEcomTr || isMarketTr) && !!heroArt;
+  const artOnly = !hasAnimation && (isCustomEcomTr || isMarketTr || isSeoTr) && !!heroArt;
 
   return (
     <section className="relative overflow-hidden bg-white pt-[var(--navbar-h,64px)] pb-16 lg:pt-[var(--navbar-h,64px)] lg:pb-24">
@@ -744,9 +744,10 @@ function HeroSection({
               {isShopifyTr && <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-black/5"><ShopifyIcon size={22} /></span>}
               {isCustomEcomTr && <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-black/5"><CustomEcommerceIcon /></span>}
               {isMarketTr && <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-black/5"><BuildingStorefrontIcon className="h-5 w-5 text-heritage-turquoise-deep" aria-hidden="true" /></span>}
+              {isSeoTr && <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-black/5"><MagnifyingGlassIcon className="h-5 w-5 text-heritage-turquoise-deep" aria-hidden="true" /></span>}
               {/* ikas writes its name in lowercase; CSS uppercase would render "İKAS". */}
               <span className={`text-xs font-medium ${colors.eyebrow} ${isIkasTr ? '' : 'uppercase'} tracking-wide`}>
-                {isIkasTr ? IKAS_TR_HERO.eyebrow : isShopifyTr ? 'Shopify Kurulum ve Geliştirme Hizmetleri' : isCustomEcomTr ? 'Özel E-Ticaret Geliştirme' : isMarketTr ? 'Pazaryeri Geliştirme' : t('services.detail.hero.eyebrow')}
+                {isIkasTr ? IKAS_TR_HERO.eyebrow : isShopifyTr ? 'Shopify Kurulum ve Geliştirme Hizmetleri' : isCustomEcomTr ? 'Özel E-Ticaret Geliştirme' : isMarketTr ? 'Pazaryeri Geliştirme' : isSeoTr ? 'SEO Hizmeti ve Danışmanlığı' : t('services.detail.hero.eyebrow')}
               </span>
             </div>
 
@@ -764,6 +765,8 @@ function HeroSection({
                 <RotatingHeading full={service.name} lead="Özel" words={['E-Ticaret Sitesi', 'E-Ticaret Yazılımı', 'Tasarım Mağaza']} />
               ) : isMarketTr ? (
                 <RotatingHeading full={service.name} lead="Çok Satıcılı" words={['Pazaryeri Yazılımı', 'Pazaryeri Platformu', 'Satıcı Paneli']} />
+              ) : isSeoTr ? (
+                <RotatingHeading full={service.name} lead="İşletmeler İçin" words={['SEO Hizmeti', 'SEO Danışmanlığı', 'SEO Çalışması']} />
               ) : (
               <h1 className={`text-display font-light text-gray-900 leading-none ${isIkasTr ? 'ikas-hero-title' : ''}`}>
                 <>{service.name.split(' ').slice(0, -1).join(' ')}{service.name.split(' ').length > 1 && <br />}<span className={`font-semibold ${colors.titleAccent}`}>{service.name.split(' ').length > 1 ? service.name.split(' ').slice(-1)[0] : service.name}</span></>
@@ -781,7 +784,7 @@ function HeroSection({
               Previous (full-description) version kept here on purpose:
                 {service.fullDescription || service.description}
             */}
-            <p className={`text-base sm:text-lg text-gray-600 max-w-lg leading-relaxed ${isShopifyTr || isCustomEcomTr || isMarketTr ? '' : 'line-clamp-5'} ${isIkasTr ? 'ikas-hero-copy' : ''}`}>
+            <p className={`text-base sm:text-lg text-gray-600 max-w-lg leading-relaxed ${isShopifyTr || isCustomEcomTr || isMarketTr || isSeoTr ? '' : 'line-clamp-5'} ${isIkasTr ? 'ikas-hero-copy' : ''}`}>
               {service.shortDescription || service.fullDescription || service.description}
             </p>
 
@@ -838,6 +841,7 @@ function HeroSection({
               {isShopifyTr && <ShopifyPlatformNote />}
               {isCustomEcomTr && <p className="text-sm font-medium text-gray-600">Özel iş akışları · Özel tasarım · Entegrasyonlar · Veri taşıma</p>}
               {isMarketTr && <p className="text-sm font-medium text-gray-600">Satıcı paneli · Ürün onayı · Komisyon ve hakediş · Kısmi iade</p>}
+              {isSeoTr && <p className="text-sm font-medium text-gray-600">Teknik inceleme · Anahtar kelime ve sayfa eşleştirmesi · İç bağlantılar · Raporlama</p>}
               {isIkasTr && <IkasPlatformNote />}
             </div>
           </motion.div>
@@ -882,7 +886,7 @@ function HeroSection({
                         <span className="text-[12px] font-semibold text-gray-800">ikas mağazası</span>
                       </div>
                     </>
-                  ) : (isCustomEcomTr || isMarketTr) && heroArt ? (
+                  ) : (isCustomEcomTr || isMarketTr || isSeoTr) && heroArt ? (
                     heroArt
                   ) : isShopifyTr ? (
                     <>

@@ -162,6 +162,126 @@
   .mp-art--marketplace-costs.ikas-visible :is(.mv-group-providers, .mv-group-operations) { animation: iv-rise 420ms ease-out 350ms both; }
 }
 
+/* seo visuals (src/components/seo/visuals). Same contract as the marketplace
+   visuals: SVGs render in their final state; motion runs after IkasMotionScope
+   adds .ikas-visible (once) or .ikas-in-view (loops, paused off-screen / in
+   hidden tabs). Reduced motion keeps the end state. Charts are representative. */
+.seo-art .sev-art > svg { display: block; width: 100%; height: auto; }
+.seo-art [class^="sev-"] { transform-box: fill-box; transform-origin: center; }
+.seo-art--hero-seo [class^="sev-glow-"] { opacity: 0; }
+.seo-art--hero-seo .sev-slot-domain { color: #095D5C; }
+.seo-art--hero-seo .sev-slot-chip, .seo-art--report .sev-slot-next, .seo-art--report .sev-slot-tag, .seo-art--category-filters .sev-slot-legend-skip { color: #8A5512; }
+.seo-art :is(.sev-slot-head-q, .sev-slot-head-p, .sev-slot-old-head, .sev-slot-new-head, .sev-slot-col-1, .sev-slot-col-2, .sev-slot-col-3, .sev-slot-progress, .sev-slot-legend-ok, .sev-slot-legend-skip) { font-size: clamp(7.5px, 1vw, 11px); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; color: #6B7280; }
+.seo-art--report .sev-slot-tag, .seo-art--redirect-map [class*="sev-slot-code-"], .seo-art--process-rail [class*="sev-slot-"] { justify-content: center; }
+.seo-art--process-rail [class*="sev-slot-step-"] { color: #111827; font-weight: 700; }
+.seo-art--process-rail [class*="sev-slot-sub-"] { font-weight: 500; color: #6B7280; font-size: clamp(7.5px, 1vw, 11.5px); }
+.seo-art--redirect-map [class*="sev-slot-code-"] { color: #095D5C; font-size: clamp(7.5px, 1vw, 11px); }
+.seo-art--redirect-map :is([class*="sev-slot-old-"], [class*="sev-slot-new-"]), .seo-art--category-filters [class*="sev-slot-url-"] { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 500; font-size: clamp(7.5px, 1.05vw, 12px); }
+.seo-art--priority-board [class*="sev-slot-owner-"], .seo-art--priority-board [class*="sev-slot-page-"] { font-size: clamp(7.5px, 1.05vw, 12px); }
+.seo-art--tools .sev-slot-center, .seo-art--site-types [class*="sev-slot-type-"] { color: #095D5C; }
+.seo-art--tools .sev-slot-center { justify-content: center; }
+.seo-art--tools [class*="sev-slot-tool-"] { font-size: clamp(7px, 0.95vw, 11px); }
+@keyframes sev-flash { 0% { opacity: 0; } 35% { opacity: 1; } 100% { opacity: 0; } }
+
+@media (prefers-reduced-motion: no-preference) {
+  .seo-art.ikas-visible path[pathLength] { stroke-dasharray: 1; animation: iv-draw 800ms ease-out var(--sev-d, 300ms) both; }
+  .seo-art.ikas-visible .sev-slot { animation: iv-fade 500ms ease-out 300ms both; }
+  /* hero-seo: search → results → links → İnceleme / Öncelik / Takip, each highlighted once */
+  .seo-art--hero-seo.ikas-visible .sev-search { animation: iv-rise 420ms ease-out 0ms both; }
+  .seo-art--hero-seo.ikas-visible .sev-result-1 { animation: iv-fade 380ms ease-out 200ms both; }
+  .seo-art--hero-seo.ikas-visible .sev-result-2 { animation: iv-pop 380ms ease-out 320ms both; }
+  .seo-art--hero-seo.ikas-visible .sev-result-3 { animation: iv-fade 380ms ease-out 420ms both; }
+  .seo-art--hero-seo.ikas-visible :is(.sev-link-1, .sev-link-2, .sev-link-3) { --sev-d: 650ms; }
+  .seo-art--hero-seo.ikas-visible .sev-card-1 { animation: iv-rise 420ms ease-out 900ms both; }
+  .seo-art--hero-seo.ikas-visible .sev-card-2 { animation: iv-rise 420ms ease-out 1000ms both; }
+  .seo-art--hero-seo.ikas-visible .sev-card-3 { animation: iv-rise 420ms ease-out 1100ms both; }
+  .seo-art--hero-seo.ikas-visible .sev-glow-1 { animation: sev-flash 900ms ease-in-out 1500ms both; }
+  .seo-art--hero-seo.ikas-visible .sev-glow-2 { animation: sev-flash 900ms ease-in-out 2200ms both; }
+  .seo-art--hero-seo.ikas-visible .sev-glow-3 { animation: sev-flash 900ms ease-in-out 2900ms both; }
+  .seo-art--hero-seo.ikas-visible :is(.sev-report, .sev-trend-area) { animation: iv-fade 420ms ease-out 600ms both; }
+  .seo-art--hero-seo.ikas-visible .sev-trend { --sev-d: 900ms; }
+  .seo-art--hero-seo.ikas-visible .sev-chip { animation: iv-pop 380ms ease-out 1700ms both; }
+  .seo-art--hero-seo .ikas-in-view:not(.ikas-tab-hidden) .sev-chip { animation: iv-pop 380ms ease-out 1700ms both, iv-float 3.4s ease-in-out 2.2s infinite; }
+  /* query-map */
+  .seo-art--query-map.ikas-visible :is(.sev-q-1, .sev-q-2, .sev-q-3) { animation: iv-slide-in 420ms ease-out 0ms both; }
+  .seo-art--query-map.ikas-visible .sev-q-2 { animation-delay: 90ms; }
+  .seo-art--query-map.ikas-visible .sev-q-3 { animation-delay: 180ms; }
+  .seo-art--query-map.ikas-visible :is(.sev-map-1, .sev-map-2, .sev-map-3) { --sev-d: 450ms; }
+  .seo-art--query-map.ikas-visible :is(.sev-p-1, .sev-p-2, .sev-p-3, .sev-pin-1, .sev-pin-2, .sev-pin-3) { animation: iv-pop 380ms ease-out 1000ms both; }
+  /* report */
+  .seo-art--report.ikas-visible :is(.sev-done-1, .sev-done-2, .sev-done-3) { animation: iv-rise 420ms ease-out 150ms both; }
+  .seo-art--report.ikas-visible .sev-done-2 { animation-delay: 260ms; }
+  .seo-art--report.ikas-visible .sev-done-3 { animation-delay: 370ms; }
+  .seo-art--report.ikas-visible .sev-chart { animation: iv-fade 420ms ease-out 300ms both; }
+  .seo-art--report.ikas-visible :is(.sev-trend-1, .sev-trend-2) { --sev-d: 600ms; }
+  .seo-art--report.ikas-visible .sev-next { animation: iv-rise 420ms ease-out 1100ms both; }
+  /* deliverables */
+  .seo-art--deliverables.ikas-visible :is(.sev-doc-1, .sev-doc-2, .sev-doc-3, .sev-doc-4) { animation: iv-rise 420ms ease-out 0ms both; }
+  .seo-art--deliverables.ikas-visible .sev-doc-2 { animation-delay: 110ms; }
+  .seo-art--deliverables.ikas-visible .sev-doc-3 { animation-delay: 220ms; }
+  .seo-art--deliverables.ikas-visible .sev-doc-4 { animation-delay: 330ms; }
+  .seo-art--deliverables.ikas-visible :is(.sev-tick-1, .sev-tick-2, .sev-tick-3, .sev-tick-4) { animation: iv-pop 380ms ease-out 800ms both; }
+  /* internal-links */
+  .seo-art--internal-links.ikas-visible :is(.sev-guide, .sev-service, .sev-form) { animation: iv-rise 420ms ease-out 0ms both; }
+  .seo-art--internal-links.ikas-visible .sev-service { animation-delay: 120ms; }
+  .seo-art--internal-links.ikas-visible .sev-form { animation-delay: 240ms; }
+  .seo-art--internal-links.ikas-visible .sev-link-a { --sev-d: 550ms; }
+  .seo-art--internal-links.ikas-visible .sev-link-b { --sev-d: 1100ms; }
+  .seo-art--internal-links.ikas-visible .sev-head-a { animation: iv-fade 200ms ease-out 1300ms both; }
+  .seo-art--internal-links.ikas-visible .sev-head-b { animation: iv-fade 200ms ease-out 1850ms both; }
+  .seo-art--internal-links.ikas-visible .sev-cta { animation: iv-pop 380ms ease-out 900ms both; }
+  /* category-filters */
+  .seo-art--category-filters.ikas-visible :is(.sev-prod-1, .sev-prod-2, .sev-prod-3, .sev-prod-4, .sev-prod-5, .sev-prod-6) { animation: iv-fade 380ms ease-out 150ms both; }
+  .seo-art--category-filters.ikas-visible .sev-flow { --sev-d: 450ms; }
+  .seo-art--category-filters.ikas-visible :is(.sev-url-1, .sev-url-2, .sev-url-3, .sev-url-4) { animation: iv-slide-in 420ms ease-out 800ms both; }
+  .seo-art--category-filters.ikas-visible .sev-url-2 { animation-delay: 900ms; }
+  .seo-art--category-filters.ikas-visible .sev-url-3 { animation-delay: 1000ms; }
+  .seo-art--category-filters.ikas-visible .sev-url-4 { animation-delay: 1100ms; }
+  /* tools: each source connects to the page once */
+  .seo-art--tools.ikas-visible :is(.sev-tool-1, .sev-tool-2, .sev-tool-3, .sev-tool-4) { animation: iv-pop 380ms ease-out 0ms both; }
+  .seo-art--tools.ikas-visible .sev-tool-2 { animation-delay: 100ms; }
+  .seo-art--tools.ikas-visible .sev-tool-3 { animation-delay: 200ms; }
+  .seo-art--tools.ikas-visible .sev-tool-4 { animation-delay: 300ms; }
+  .seo-art--tools.ikas-visible .sev-wire-1 { --sev-d: 550ms; }
+  .seo-art--tools.ikas-visible .sev-wire-2 { --sev-d: 700ms; }
+  .seo-art--tools.ikas-visible .sev-wire-3 { --sev-d: 850ms; }
+  .seo-art--tools.ikas-visible .sev-wire-4 { --sev-d: 1000ms; }
+  .seo-art--tools.ikas-visible .sev-center { animation: iv-pop 380ms ease-out 1500ms both; }
+  /* redirect-map */
+  .seo-art--redirect-map.ikas-visible :is(.sev-old-1, .sev-old-2, .sev-old-3) { animation: iv-fade 380ms ease-out 0ms both; }
+  .seo-art--redirect-map.ikas-visible .sev-arrow-1 { --sev-d: 300ms; }
+  .seo-art--redirect-map.ikas-visible .sev-arrow-2 { --sev-d: 450ms; }
+  .seo-art--redirect-map.ikas-visible .sev-arrow-3 { --sev-d: 600ms; }
+  .seo-art--redirect-map.ikas-visible :is(.sev-tip-1, .sev-tip-2, .sev-tip-3, .sev-code-1, .sev-code-2, .sev-code-3) { animation: iv-fade 300ms ease-out 1100ms both; }
+  .seo-art--redirect-map.ikas-visible :is(.sev-new-1, .sev-new-2, .sev-new-3) { animation: iv-slide-in 420ms ease-out 1200ms both; }
+  /* priority-board */
+  .seo-art--priority-board.ikas-visible :is(.sev-row-1, .sev-row-2, .sev-row-3) { animation: iv-rise 420ms ease-out 150ms both; }
+  .seo-art--priority-board.ikas-visible .sev-row-2 { animation-delay: 260ms; }
+  .seo-art--priority-board.ikas-visible .sev-row-3 { animation-delay: 370ms; }
+  .seo-art--priority-board.ikas-visible .sev-progress { transform-origin: left center; animation: sev-grow 900ms ease-out 800ms both; }
+  /* process-rail: line advances once through the four stages */
+  .seo-art--process-rail.ikas-visible .sev-rail { --sev-d: 200ms; animation-duration: 1400ms; }
+  .seo-art--process-rail.ikas-visible .sev-node-1 { animation: iv-pop 380ms ease-out 150ms both; }
+  .seo-art--process-rail.ikas-visible .sev-node-2 { animation: iv-pop 380ms ease-out 600ms both; }
+  .seo-art--process-rail.ikas-visible .sev-node-3 { animation: iv-pop 380ms ease-out 1050ms both; }
+  .seo-art--process-rail.ikas-visible .sev-node-4 { animation: iv-pop 380ms ease-out 1500ms both; }
+  /* site-types */
+  .seo-art--site-types.ikas-visible :is(.sev-site-1, .sev-site-2, .sev-site-3) { animation: iv-rise 420ms ease-out 0ms both; }
+  .seo-art--site-types.ikas-visible .sev-site-2 { animation-delay: 150ms; }
+  .seo-art--site-types.ikas-visible .sev-site-3 { animation-delay: 300ms; }
+  .seo-art--site-types.ikas-visible .sev-renew-arrow { --sev-d: 800ms; }
+  .seo-art--site-types.ikas-visible .sev-renew-tip { animation: iv-fade 200ms ease-out 1500ms both; }
+  /* quote-groups */
+  .seo-art--quote-groups.ikas-visible :is(.sev-group-1, .sev-group-2, .sev-group-3, .sev-group-4) { animation: iv-slide-in 420ms ease-out 0ms both; }
+  .seo-art--quote-groups.ikas-visible .sev-group-2 { animation-delay: 90ms; }
+  .seo-art--quote-groups.ikas-visible .sev-group-3 { animation-delay: 180ms; }
+  .seo-art--quote-groups.ikas-visible .sev-group-4 { animation-delay: 270ms; }
+  .seo-art--quote-groups.ikas-visible .sev-brace { --sev-d: 550ms; }
+  .seo-art--quote-groups.ikas-visible .sev-quote { animation: iv-pop 380ms ease-out 1200ms both; }
+  .seo-art--quote-groups.ikas-visible .sev-extra { animation: iv-fade 420ms ease-out 1500ms both; }
+}
+@keyframes sev-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
 /* Turkish ikas pages: subtle, one-time motion. Elements are visible by
    default and only receive motion after the small observer opts them in. */
 [data-ikas-reveal].ikas-visible {

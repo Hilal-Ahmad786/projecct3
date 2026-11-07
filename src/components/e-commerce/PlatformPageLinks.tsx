@@ -7,9 +7,9 @@ import { trTitleCase } from '@/lib/tr-title-case';
 // and the current page is left out.
 
 export type PlatformPage = 'overview' | 'features' | 'technologies' | 'process' | 'portfolio' | 'pricing' | 'blog' | 'faq';
-type Platform = 'ikas' | 'shopify' | 'custom' | 'marketplace';
+type Platform = 'ikas' | 'shopify' | 'custom' | 'marketplace' | 'seo';
 
-const BASE: Record<Platform, string> = { ikas: '/tr/hizmetler/ikas-development', shopify: '/tr/hizmetler/shopify-development', custom: '/tr/hizmetler/custom-ecommerce', marketplace: '/tr/hizmetler/marketplace-development' };
+const BASE: Record<Platform, string> = { ikas: '/tr/hizmetler/ikas-development', shopify: '/tr/hizmetler/shopify-development', custom: '/tr/hizmetler/custom-ecommerce', marketplace: '/tr/hizmetler/marketplace-development', seo: '/tr/hizmetler/seo' };
 const SLUG: Record<PlatformPage, string> = { overview: '', features: '/ozellikler', technologies: '/teknoloji', process: '/surec', portfolio: '/portfoy', pricing: '/fiyatlandirma', blog: '/blog', faq: '/sss' };
 
 const PAGES: Record<Platform, Record<PlatformPage, [string, string]>> = {
@@ -53,6 +53,16 @@ const PAGES: Record<Platform, Record<PlatformPage, [string, string]>> = {
     blog: ['Pazaryeri geliştirme rehberleri', 'Satış modeli seçimi, komisyon ve kısmi iade.'],
     faq: ['Pazaryeri SSS', 'Satıcı, sipariş, ödeme ve proje planı soruları.'],
   },
+  seo: {
+    overview: ['SEO hizmeti ve danışmanlığı', 'Başlangıç noktası, çalışma kapsamı ve adımlar.'],
+    features: ['SEO hizmeti kapsamı', 'Yapılan işler ve proje çıktıları.'],
+    technologies: ['SEO araçları ve ölçüm yöntemleri', 'Search Console, site taraması, PageSpeed ve GA4.'],
+    process: ['SEO çalışma süreci', 'Başlangıçtan uygulamaya ve takibe dört aşama.'],
+    portfolio: ['SEO proje örnekleri', 'Kurumsal site, mağaza ve site yenileme senaryoları.'],
+    pricing: ['SEO fiyatları', 'Teklifi etkileyen işler ve çalışma türleri.'],
+    blog: ['SEO rehberleri', 'SEO nedir ve SEO ajansı nasıl seçilir?'],
+    faq: ['SEO SSS', 'Süre, raporlama ve teklif soruları.'],
+  },
 };
 
 const RELATED: Record<Platform, [string, string, string][]> = {
@@ -82,12 +92,18 @@ const RELATED: Record<Platform, [string, string, string][]> = {
     ['B2B E-Ticaret', 'Bayi ve kurumsal müşteri sipariş akışları.', '/tr/hizmetler/b2b-ecommerce'],
     ['Ödeme Geçidi Entegrasyonu', 'Ödeme bağlantısı, iade ve sipariş durumları.', '/tr/hizmetler/payment-gateway-integration'],
   ],
+  seo: [
+    ['Teknik SEO', 'Tarama, indeksleme, yönlendirme ve site hızı.', '/tr/hizmetler/technical-seo'],
+    ['E-Ticaret SEO', 'Ürün, kategori ve filtre sayfaları.', '/tr/hizmetler/ecommerce-seo'],
+    ['Kurumsal Web Sitesi Tasarımı', 'Aramada bulunabilir hizmet sayfaları.', '/tr/hizmetler/corporate-website-design'],
+    ['E-Ticaret Çözümleri', 'Mağaza altyapısı ve kategori yapısı.', '/tr/hizmetler/e-commerce'],
+  ],
 };
 
 const focus = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2';
 
 export default function PlatformPageLinks({ platform, current, title, tone = 'ivory' }: { platform: Platform; current: PlatformPage; title?: string; tone?: 'white' | 'gray' | 'ivory' }) {
-  const name = platform === 'ikas' ? 'ikas' : platform === 'shopify' ? 'Shopify' : platform === 'custom' ? 'Özel e-ticaret' : 'Pazaryeri';
+  const name = platform === 'ikas' ? 'ikas' : platform === 'shopify' ? 'Shopify' : platform === 'custom' ? 'Özel e-ticaret' : platform === 'seo' ? 'SEO' : 'Pazaryeri';
   const pages = (Object.keys(PAGES[platform]) as PlatformPage[]).filter((page) => page !== current);
   const bg = tone === 'gray' ? 'bg-background-gray' : tone === 'ivory' ? 'bg-heritage-ivory' : 'bg-white';
   return (
@@ -109,7 +125,7 @@ export default function PlatformPageLinks({ platform, current, title, tone = 'iv
             </ul>
           </div>
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-gray-500">İlgili e-ticaret hizmetleri</h3>
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-gray-500">{platform === 'seo' ? 'İlgili hizmetler' : 'İlgili e-ticaret hizmetleri'}</h3>
             <ul className="mt-3 divide-y divide-heritage-sand rounded-xl border border-heritage-sand bg-white/70">
               {RELATED[platform].map(([label, text, href]) => (
                 <li key={href}>
