@@ -284,6 +284,44 @@
         "to-ok",
         "to-check"
       ]
+    },
+    {
+      "file": "gads-goals.svg",
+      "drawPaths": []
+    },
+    {
+      "file": "gads-rsa.svg",
+      "drawPaths": []
+    },
+    {
+      "file": "gads-consent.svg",
+      "drawPaths": [
+        "c-yes",
+        "c-no"
+      ]
+    },
+    {
+      "file": "gads-offline.svg",
+      "drawPaths": [
+        "import"
+      ]
+    },
+    {
+      "file": "gads-bidding.svg",
+      "drawPaths": []
+    },
+    {
+      "file": "gads-merchant-issues.svg",
+      "drawPaths": []
+    },
+    {
+      "file": "gads-adrank.svg",
+      "drawPaths": [
+        "f-1",
+        "f-2",
+        "f-3",
+        "f-4"
+      ]
     }
   ]
 }

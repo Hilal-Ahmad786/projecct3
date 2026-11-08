@@ -8,6 +8,14 @@
 
 Örneğin mevcut form ölçümü düzgün çalışıyorsa önce kampanya yönetimi planlanabilir. Form ölçümü hatalıysa düzeltme ve doğrulama işi ayrıca kapsamlandırılabilir.
 
+## Tıklama maliyeti neden değişir?
+
+Tıklama maliyetini kampanya yönetim ücretinden ayrı değerlendirin. Aynı arama teriminde rakiplerin katılımı, aramanın bağlamı, cihaz ve konum gibi koşullar değişebilir; bu nedenle maliyet dönem içinde farklılaşabilir.
+
+Reklam Sıralaması (Ad Rank), teklifin yanı sıra reklam ve açılış sayfası kalitesi, rekabet ve aramanın bağlamı gibi etkenlere göre hesaplanır. Paneldeki Kalite Puanı ise iyileştirme alanlarını gösteren bir teşhis aracıdır; açık artırmaya doğrudan girmez. Kampanya raporunda benzer sorgu ve bölgeleri karşılaştırır, uygun talepleri yalnızca tıklama maliyetine bakarak değerlendirmeyiz.
+
+Reklam bütçesini planlarken [Google Ads reklam bütçesi rehberini](/tr/hizmetler/google-ads/blog/google-ads-reklam-butcesi) inceleyebilirsiniz.
+
 ## Google Ads yönetim ücretini neler etkiler?
 
 Google reklam yönetimi fiyatları ve Google Ads danışmanlık ücretleri; kampanya sayısına, hesabın mevcut durumuna ve ürün kataloğunun büyüklüğüne göre değişir.
@@ -33,6 +41,18 @@ Google Alışveriş veya Performance Max çalışmasında Merchant Center ürün
 | Düzenli yönetim desteği istiyorsunuz | Kararlaştırılan kampanyalarda takip, değişiklik kaydı ve dönemsel raporlama |
 
 Google Ads danışmanlık ücretlerini karşılaştırırken raporun yanında uygulama veya yeniden test desteği olup olmadığını sorun. Örneğin bir denetim ölçüm hatasını gösterebilir, düzeltmeyi ise kendi geliştiriciniz üstlenebilir.
+
+## Kampanya türü teklif kapsamını nasıl etkiler?
+
+Teklifte çalışmanın bir defalık inceleme, ilk kurulum veya düzenli yönetim olup olmadığını netleştiririz. Kampanya türü; başlangıç kontrollerini, gereken ürün veya reklam verisini ve düzenli takip işlerini etkileyebilir.
+
+| Kampanya | Kurulumda değerlendirilen işler | Düzenli yönetimde değerlendirilen işler |
+| --- | --- | --- |
+| Arama Ağı | Sorgu grupları, reklam metni, açılış sayfası | Arama terimleri, negatif listeler, reklam öğeleri |
+| Alışveriş | Merchant Center bağlantısı, veri kaynağı, ürün uygunluğu | Ürün teşhisleri ve katalog değişiklikleri |
+| Performance Max | Dönüşüm hedefi, öğe grupları, varsa ürün verisi | Öğe ve ürün kapsamı, erişilebilir raporlar |
+
+Reklam harcaması, kurulum ve düzenli yönetim ayrı kalemler olarak değerlendirilir. Ürün verisi bağlantısı veya yeni açılış sayfası gerekiyorsa, bu işin kapsamını ve sorumlu ekibi de teklifte netleştiririz.
 
 ::cta Mevcut kampanya kapsamınızı ve ek kurulum ihtiyaçlarınızı değerlendirelim. | Mevcut Kampanyam İçin Teklif Al
 

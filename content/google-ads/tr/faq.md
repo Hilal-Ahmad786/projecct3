@@ -56,6 +56,24 @@ Tıklama, reklamla yapılan bir etkileşimdir. Dönüşüm, işletmeniz için ö
 
 Rapor kapsamı, kampanya hedefi ve erişilebilen veriye göre belirlenir. Örneğin teklif toplama kampanyasında harcamayı, ölçülen form gönderimlerini ve varsa uygun başvuruları ayrı gösteririz. Mağaza kampanyasında satın alma ve sipariş değeri ölçülebiliyorsa bunları rapora ekleriz. Yapılan değişiklikleri ve bir sonraki incelemenin konusunu da kaydederiz.
 
+## Kampanya yönetimi
+
+### Hangi eşleme türünü kullanmalıyım?
+
+Eşleme türünü hedeflediğiniz sorgu kapsamına ve ölçüm verisine göre seçeriz. Örneğin yalnızca endüstriyel bakım sunuyorsanız ilgili bir aramayla başlayıp gerçek arama terimlerini incelemek yararlı olabilir. Tam eşleme yakın anlamlı sorguları da kapsayabilir. Geniş eşlemeyi değerlendirirken dönüşüm hedefini ve hariç tutulan aramaları birlikte gözden geçiririz.
+
+### Performance Max, Arama Ağı kampanyalarımın yerini alır mı?
+
+Her zaman değil; iki kampanya birlikte kullanılabilir. Belirli sorgular için ayrı reklam metni ve sayfa gerekiyorsa Arama Ağı kampanyası bu kontrolü sağlar. Bir arama sorgusuyla birebir aynı uygun tam eşlemeli anahtar kelime varsa Google, Arama Ağı eşleşmesine Performance Max’e göre öncelik verir. Diğer durumlarda uygunluk ve öncelik kuralları devreye girer.
+
+### Merchant Center ürünüm onaylanmadı, ne yapmalıyım?
+
+Önce Merchant Center’daki ürün sorununun açıklamasını kontrol edin. Fiyat uyuşmazlığında veri kaynağındaki fiyatı, ilgili varyantın sayfasını ve para birimini karşılaştırın. Bağlantı yanlış varyantı açıyorsa doğru ürün sayfasına yönlendirin; veri yeniden işlendiğinde durumu tekrar kontrol edin ve arayüz gerektiriyorsa inceleme isteyin.
+
+### Reklamı kendim mi yönetmeliyim, ajansla mı çalışmalıyım?
+
+Ekibiniz arama terimlerini, ölçümü ve bütçeyi düzenli izleyebiliyorsa kampanyaları içeride yönetebilirsiniz. Birden fazla kampanya, ürün verisi veya çevrimdışı satış ölçümü varsa dış destekle sorumlulukları netleştirmek yararlı olabilir. Hesap sahipliği ve faturalandırma düzeni işletmenizin kontrolünde kalacak şekilde erişim kapsamını belirler.
+
 ## Siteniz için ilk Google Ads adımını belirleyelim
 
 Site adresinizi ve öncelikli hedefinizi paylaşın. İlk görüşmede kampanya türünü, bütçe yaklaşımını ve ölçüm kapsamını birlikte değerlendirelim.

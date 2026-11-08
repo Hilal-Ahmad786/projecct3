@@ -16,6 +16,18 @@ Duyarlı arama ağı reklamlarında başlık ve açıklama seçeneklerini, uygun
 
 Harcamanın kampanyalar arasındaki dağılımını hedef ve ölçüm verisine göre inceleriz. Örneğin bir mağazada sipariş değeri doğru kaydedilmiyorsa önce bu veriyi doğrularız. Ardından kampanya hedefiyle uyumlu teklif stratejisini ve hangi ürün gruplarının öncelikli olduğunu değerlendiririz.
 
+## Arama terimlerini nasıl kontrol ediyoruz?
+
+Google Ads uzmanı, hedeflenen anahtar kelimeyle reklamı tetikleyen gerçek arama terimini ayrı inceler. Örneğin “endüstriyel pompa servisi” için raporda “pompa servisi iş ilanı” görünüyorsa önce bu niyetin hizmet kapsamına girip girmediğini kontrol ederiz. Ardından uygun negatif kelimeyi ilgili kampanyaya veya listeye ekleriz.
+
+| Eşleme | Nasıl çalışır? | Temsili örnek |
+| --- | --- | --- |
+| Geniş | İlgili anlam ve arama bağlamından yararlanır. | pompa bakım servisi |
+| Sıralı | Anahtar kelimenin anlamını içeren aramaları kapsayabilir. | “endüstriyel pompa servisi” |
+| Tam | Aynı anlamı veya niyeti taşıyan aramalara odaklanır; yakın varyasyonlar da eşleşebilir. | [endüstriyel pompa servisi] |
+
+Negatif kelimelerde yakın varyasyonlar otomatik olarak dışlanmadığı için raporda tekil, çoğul ve farklı ifadeleri ayrıca kontrol ederiz. “İş ilanı” ifadesi hizmet kampanyasına uymayabilir; ancak dışlamayı başka kampanyalara yaymadan önce kapsamı inceleriz.
+
 ## Dönüşüm takibinde hangi eylemleri ayırıyoruz?
 
 Bir reklam hesabında bütün etkileşimler aynı iş sonucunu göstermez. Örneğin telefon düğmesine tıklama, tamamlanmış bir görüşmenin göstergesi olarak tek başına yeterli değildir. Hedeflerinizi belirlerken hangi eylemin kampanya optimizasyonuna, hangisinin gözleme hizmet edeceğini birlikte seçeriz.
@@ -43,6 +55,16 @@ Merchant Center ürün verisini mağazadaki fiyat, stok ve açılış adresleriy
 ### Performance Max (PMax)
 
 Dönüşüm hedefleri, reklam öğeleri ve mağaza kampanyalarında ürün verisinin hazır olup olmadığını değerlendiririz. Örneğin yeni bir koleksiyon için kullanılacak görselleri, ürün grubunu ve satın alma ölçümünü yayından önce kontrol ederiz. [Performance Max yönetimini inceleyin](/tr/hizmetler/performance-max).
+
+## Arama reklamında hangi öğeler kullanılır?
+
+Duyarlı arama ağı reklamlarında birden fazla başlık ve açıklama hazırlarız. Google Ads bunları farklı kombinasyonlarda gösterebilir. Örneğin bir bakım firması için “Endüstriyel Pompa Bakımı” ile “Servis Talebi Oluşturun” mesajlarının açılış sayfasında karşılığı bulunmalıdır.
+
+- **Site bağlantısı:** “Servis Bölgeleri” veya “Bakım Talep Formu” gibi, arama yapan kişiyi ilgili sayfaya yönlendirir.
+- **Arama ve konum öğeleri:** Telefon araması hedefleniyorsa yanıt saatlerini, fiziksel ziyaret bekleniyorsa konum bilgilerinin güncelliğini kontrol ederiz. Bu öğelerin gösterimi uygunluk ve açık artırma koşullarına bağlıdır.
+- **Dinamik arama ağı reklamları:** Hesapta kullanılıyorsa hedeflenen sayfaları ve hariç tutulan adresleri inceleriz. Örneğin ürün sayfalarıyla işe alım sayfalarının aynı kapsama girip girmediğini kontrol ederiz. Google’ın AI Max geçişi veya güncel ayarları söz konusuysa hesapta görünen seçenekleri ayrıca doğrularız.
+
+Mevcut [Arama Ağı reklamlarınızın kapsamını](/tr/hizmetler/google-search-ads) değerlendirirken reklam mesajını ziyaretçinin ulaştığı sayfayla birlikte okuruz.
 
 ## Rapor ve iş listesinde neleri görebilirsiniz?
 

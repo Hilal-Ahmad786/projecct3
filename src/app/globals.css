@@ -431,6 +431,44 @@
   .seo-art--gads-lead-quality.ikas-visible :is(.sev-ok, .sev-check) { animation: iv-pop 380ms ease-out 1000ms both; }
 }
 
+/* Google Ads ek içerik visuals (gads-goals, rsa, consent, offline, bidding, merchant-issues, adrank). */
+.seo-art :is([class*="sev-slot-biz-"], [class*="sev-slot-goal-"], [class*="sev-slot-camp-"], .sev-slot-accept, .sev-slot-reject, .sev-slot-banner, .sev-slot-rank, .sev-slot-rank-sub, [class*="sev-slot-status-"], .seo-art--gads-offline .sev-slot-note) { justify-content: center; text-align: center; }
+.seo-art.seo-art--gads-goals [class*="sev-slot-goal-"]:not([class*="goal-label"]), .seo-art.seo-art--gads-consent .sev-slot.sev-slot-accept { color: #fff; }
+.seo-art :is([class^="sev-slot sev-slot-biz-"]:not([class*="biz-sub"]), .sev-slot-banner, .sev-slot-granted, .sev-slot-denied, .sev-slot-crm, .seo-art--gads-offline .sev-slot-ads, .sev-slot-mc, .sev-slot-quality, .sev-slot-bid, .sev-slot-context, .sev-slot-rank, [class^="sev-slot sev-slot-bid-"]:not([class*="bid-sub"]), [class*="sev-slot-part-"]) { color: #111827; font-weight: 700; }
+.seo-art :is([class*="sev-slot-biz-sub-"], [class*="sev-slot-goal-label-"], [class*="sev-slot-camp-label-"], .sev-slot-banner-note, .sev-slot-granted-sub, .sev-slot-denied-sub, [class*="sev-slot-bid-sub-"], [class*="sev-slot-q-"], .sev-slot-rank-sub, .seo-art--gads-adrank .sev-slot-note, .seo-art--gads-bidding .sev-slot-note, .seo-art--gads-merchant-issues .sev-slot-note, .seo-art--gads-offline .sev-slot-note, [class*="sev-slot-ads-"]) { font-weight: 500; color: #4B5563; font-size: clamp(6.5px, 0.9vw, 10.5px); }
+.seo-art :is([class*="sev-slot-goal-label-"], [class*="sev-slot-camp-label-"], .seo-art--gads-bidding [class*="sev-slot-h-"], .seo-art--gads-merchant-issues [class*="sev-slot-h-"]) { text-transform: uppercase; letter-spacing: .04em; color: #6B7280; font-weight: 600; font-size: clamp(6.5px, 0.85vw, 10px); }
+.seo-art :is(.sev-slot-banner-note, .sev-slot-granted-sub, .sev-slot-denied-sub, .sev-slot-rank-sub, .seo-art--gads-adrank .sev-slot-note, .seo-art--gads-offline .sev-slot-note) { white-space: normal; align-items: flex-start; }
+.seo-art--gads-rsa .sev-slot-headline { color: #095D5C; font-weight: 700; font-size: clamp(7px, 1vw, 11.5px); }
+.seo-art--gads-rsa :is(.sev-slot-domain, [class*="sev-slot-sitelink-"], .sev-slot-call, .sev-slot-loc) { font-size: clamp(6.5px, 0.9vw, 10.5px); }
+.seo-art--gads-merchant-issues :is(.sev-slot-status-2, .sev-slot-fix-2) { color: #9A3412; }
+.seo-art--gads-merchant-issues :is(.sev-slot-status-3, .sev-slot-fix-3), .seo-art--gads-consent .sev-slot-denied { color: #8A5512; }
+@media (prefers-reduced-motion: no-preference) {
+  .seo-art--gads-goals.ikas-visible :is(.sev-goal-1, .sev-goal-2, .sev-goal-3) { animation: iv-rise 420ms ease-out 0ms both; }
+  .seo-art--gads-goals.ikas-visible .sev-goal-2 { animation-delay: 150ms; }
+  .seo-art--gads-goals.ikas-visible .sev-goal-3 { animation-delay: 300ms; }
+  .seo-art--gads-rsa.ikas-visible .sev-ad { animation: iv-fade 420ms ease-out 0ms both; }
+  .seo-art--gads-rsa.ikas-visible :is(.sev-part-1, .sev-part-2, .sev-part-3, .sev-part-4) { animation: iv-slide-in 380ms ease-out 700ms both; }
+  .seo-art--gads-rsa.ikas-visible .sev-part-2 { animation-delay: 820ms; }
+  .seo-art--gads-rsa.ikas-visible .sev-part-3 { animation-delay: 940ms; }
+  .seo-art--gads-rsa.ikas-visible .sev-part-4 { animation-delay: 1060ms; }
+  .seo-art--gads-consent.ikas-visible .sev-banner { animation: iv-rise 420ms ease-out 0ms both; }
+  .seo-art--gads-consent.ikas-visible :is(.sev-c-yes, .sev-c-no) { --sev-d: 500ms; }
+  .seo-art--gads-consent.ikas-visible :is(.sev-granted, .sev-denied) { animation: iv-pop 380ms ease-out 1100ms both; }
+  .seo-art--gads-offline.ikas-visible :is(.sev-stage-1, .sev-stage-2, .sev-stage-3, .sev-stage-4) { animation: iv-fade 360ms ease-out 100ms both; }
+  .seo-art--gads-offline.ikas-visible .sev-stage-3 { animation: iv-pop 380ms ease-out 600ms both; }
+  .seo-art--gads-offline.ikas-visible .sev-import { --sev-d: 900ms; }
+  .seo-art--gads-offline.ikas-visible :is(.sev-upload, .sev-ads) { animation: iv-pop 380ms ease-out 1500ms both; }
+  .seo-art--gads-bidding.ikas-visible :is(.sev-bid-1, .sev-bid-2, .sev-bid-3, .sev-bid-4) { animation: iv-rise 400ms ease-out 0ms both; }
+  .seo-art--gads-bidding.ikas-visible :is(.sev-need-1, .sev-need-2, .sev-need-3, .sev-need-4) { transform-origin: left center; animation: sev-grow 800ms ease-out 600ms both; }
+  .seo-art--gads-merchant-issues.ikas-visible :is(.sev-item-1, .sev-item-2, .sev-item-3, .sev-item-4) { animation: iv-rise 380ms ease-out 100ms both; }
+  .seo-art--gads-merchant-issues.ikas-visible :is(.sev-item-2, .sev-item-3) { animation: iv-pop 380ms ease-out 700ms both; }
+  .seo-art--gads-adrank.ikas-visible :is(.sev-bid, .sev-quality, .sev-context) { animation: iv-slide-in 420ms ease-out 0ms both; }
+  .seo-art--gads-adrank.ikas-visible :is(.sev-f-1, .sev-f-2, .sev-f-3) { --sev-d: 500ms; }
+  .seo-art--gads-adrank.ikas-visible .sev-rank { animation: iv-pop 380ms ease-out 1200ms both; }
+  .seo-art--gads-adrank.ikas-visible .sev-f-4 { --sev-d: 1400ms; }
+  .seo-art--gads-adrank.ikas-visible .sev-serp { animation: iv-fade 420ms ease-out 1700ms both; }
+}
+
 /* Turkish ikas pages: subtle, one-time motion. Elements are visible by
    default and only receive motion after the small observer opts them in. */
 [data-ikas-reveal].ikas-visible {

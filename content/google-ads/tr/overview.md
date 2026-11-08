@@ -52,6 +52,22 @@ Google Ads uzmanı ya da Google reklam uzmanı, hesabı günlük olarak yöneten
 
 Hangi biçimi seçerseniz seçin, reklam hesabının ve ödeme bilgilerinin işletmenize ait kalmasını öneririz. PakSoft hesabınıza yönetici erişimiyle bağlanır; çalışma sona erdiğinde erişim kaldırılabilir.
 
+## İşletmenizin ilk kampanya hedefi ne olmalı?
+
+Google Ads yönetimi için ilk görüşmede müşterinizin hangi adımı atmasını beklediğinizi ve ekibinizin bu adımı nasıl doğrulayacağını belirleriz. Kapsamı bu hedefe göre kurar; stok, ekip kapasitesi ve satış süresi gibi işletme koşullarını da dikkate alırız. Aşağıdaki temsili örneklerde aynı reklam paneli, üç farklı satış sürecine hizmet eder.
+
+### Bölgesel hizmet işletmeleri
+
+Bir klima servisi için “klima bakım servisi” aramasına hizmet verilen ilçeleri ve çalışma saatlerini açıklayan bir sayfa hazırlayabiliriz. Telefon düğmesine dokunmayı ayrı izler; sonuçları değerlendirirken ekibin yanıtladığı ve hizmet bölgesine uyan aramaları da inceleriz.
+
+### E-ticaret mağazaları
+
+Bir aydınlatma mağazasında başlangıç ürün grubu, stokta olan ve teslimat koşulları net ürünlerden oluşabilir. “Led masa lambası” gibi bir aramada ürün sayfasındaki fiyatı, stok bilgisini ve siparişin ölçüme doğru değerle yansımasını kontrol ederiz.
+
+### B2B satış ekipleri
+
+Bir ambalaj üreticisi için “özel ölçü koli üretimi” araması ölçü ve adet bilgisi isteyen bir teklif formuna bağlanabilir. Satış ekibi üretim koşullarına uyan talepleri işaretlediğinde, kampanya değerlendirmesine bu sonucu da dahil ederiz.
+
 ## Reklam bütçesi ile yönetim ücreti nasıl ayrılır?
 
 Reklam bütçesi, Google Ads hesabındaki kampanya harcamasıdır. Yönetim ücreti ise PakSoft’un teklifinde belirtilen kurulum, takip ve raporlama kapsamına göre belirlenir. Örneğin tek bir Arama Ağı kampanyasının yönetimiyle, ürün verisi takibi de gerektiren çok kampanyalı bir mağazanın kapsamı farklı olabilir. Hesap denetimi, ölçüm kurulumu ve açılış sayfası geliştirmesi gibi işlerin teklifte nasıl yer aldığını ayrıca gösteririz.

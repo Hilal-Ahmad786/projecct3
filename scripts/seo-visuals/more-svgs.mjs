@@ -466,5 +466,90 @@ export default function more({ ICONS, svg, g, rect, bar, slot, path, text, icon,
       + g('check', `${rect(316, 164, 268, 112, { fill: SAF, stroke: S })}${slot('check', 332, 178, 236, 18)}${slot('check-1', 332, 206, 236, 16)}${slot('check-2', 332, 228, 236, 16)}${slot('check-3', 332, 250, 236, 16)}`);
     svg('gads-lead-quality', 600, 300, body, ['to-ok', 'to-check']);
   }
+
+  /* -------------------------------------------- Google Ads ek içerik (gads-*) */
+  Object.assign(ICONS, {
+    lock: 'M6 11h12v9H6z M8.5 11V8a3.5 3.5 0 0 1 7 0v3',
+    upload: 'M12 16V5 M7 9l5-5 5 5 M5 19h14',
+    scale: 'M12 4v16 M5 8h14 M7 8l-3 6h6z M17 8l-3 6h6z',
+  });
+
+  // gads-goals — işletme türüne göre ilk kampanya hedefi ve dönüşüm
+  {
+    let body = '';
+    [['pin', 16], ['cart', 216], ['team', 416]].forEach(([ic, x], i) => {
+      const n = i + 1;
+      body += g(`goal-${n}`, `${rect(x, 16, 168, 266, { stroke: n === 1 ? T : B, sw: n === 1 ? 2 : 1.5, fill: n === 1 ? L : '#FFFFFF' })}${badge(ic, x + 62, 32, { size: 44, fill: n === 1 ? '#FFFFFF' : L })}${slot(`biz-${n}`, x + 8, 86, 152, 18)}${slot(`biz-sub-${n}`, x + 8, 108, 152, 16)}${path(`M${x + 16} 136 H${x + 152}`, { stroke: B, sw: 1.5 })}${slot(`goal-label-${n}`, x + 12, 148, 144, 14)}${rect(x + 12, 168, 144, 30, { rx: 15, fill: D, stroke: 'none' })}${slot(`goal-${n}`, x + 12, 174, 144, 18)}${slot(`camp-label-${n}`, x + 12, 212, 144, 14)}${rect(x + 12, 232, 144, 30, { rx: 15, fill: '#FFFFFF', stroke: T })}${slot(`camp-${n}`, x + 12, 238, 144, 18)}`);
+    });
+    svg('gads-goals', 600, 298, body);
+  }
+
+  // gads-rsa — duyarlı arama ağı reklamının parçaları
+  {
+    const body = g('ad', `${rect(16, 16, 360, 268)}${adTag(32, 32)}${slot('domain', 74, 32, 280, 16)}${rect(32, 60, 328, 30, { rx: 6, fill: L, stroke: T })}${slot('headline', 40, 66, 312, 18)}${bar(32, 104, 320)}${bar(32, 118, 280)}${slot('desc', 32, 98, 1, 1)}`
+        + [0, 1, 2, 3].map((i) => `${rect(32 + (i % 2) * 166, 140 + Math.floor(i / 2) * 40, 158, 30, { rx: 6, fill: G, stroke: 'none' })}${slot(`sitelink-${i + 1}`, 40 + (i % 2) * 166, 146 + Math.floor(i / 2) * 40, 142, 18)}`).join('')
+        + `${rect(32, 228, 160, 32, { rx: 16, fill: '#FFFFFF' })}${icon('phone', 42, 232, { s: 0.9 })}${slot('call', 68, 235, 116, 18)}${rect(200, 228, 160, 32, { rx: 16, fill: '#FFFFFF' })}${icon('pin', 210, 232, { s: 0.9 })}${slot('loc', 236, 235, 116, 18)}`)
+      + [[75, 1], [111, 2], [175, 3], [244, 4]].map(([y, n]) => path(`M376 ${y} C396 ${y} 398 ${32 + (n - 1) * 66} 416 ${32 + (n - 1) * 66}`, { id: `ann-${n}`, stroke: S, sw: 1.8, dash: '4 4' })).join('')
+      + [1, 2, 3, 4].map((n) => g(`part-${n}`, `${rect(416, 14 + (n - 1) * 66, 168, 40, { rx: 10, fill: n === 1 ? L : '#FFFFFF', stroke: n === 1 ? T : B })}${slot(`part-${n}`, 424, 25 + (n - 1) * 66, 152, 18)}`)).join('');
+    svg('gads-rsa', 600, 300, body);
+  }
+
+  // gads-consent — izin tercihi, etiket davranışı ve gelişmiş dönüşümler
+  {
+    const body = g('banner', `${rect(16, 24, 176, 252)}${badge('lock', 70, 40, { size: 36 })}${slot('banner', 28, 90, 152, 18)}${rect(32, 124, 144, 32, { rx: 8, fill: D, stroke: 'none' })}${slot('accept', 32, 131, 144, 18)}${rect(32, 166, 144, 32, { rx: 8, fill: '#FFFFFF' })}${slot('reject', 32, 173, 144, 18)}${slot('banner-note', 28, 214, 152, 32)}`)
+      + path('M192 140 C220 140 220 84 248 84', { id: 'c-yes', sw: 2.5 }) + path('M192 182 C220 182 220 212 248 212', { id: 'c-no', stroke: S, sw: 2.5 })
+      + g('granted', `${rect(248, 40, 336, 96, { stroke: T, sw: 2, fill: L })}${okChip(270, 70)}${slot('granted', 290, 61, 280, 18)}${slot('granted-sub', 264, 96, 304, 30)}`)
+      + g('denied', `${rect(248, 164, 336, 96, { fill: SAF, stroke: S })}${okChip(270, 194, false)}${slot('denied', 290, 185, 280, 18)}${slot('denied-sub', 264, 220, 304, 30)}`);
+    svg('gads-consent', 600, 300, body, ['c-yes', 'c-no']);
+  }
+
+  // gads-offline — CRM aşamaları çevrimdışı dönüşüm olarak içe aktarılıyor
+  {
+    let body = g('crm', `${rect(16, 16, 300, 268)}${badge('team', 32, 30, { size: 34 })}${slot('crm', 76, 38, 220, 18)}${path('M32 78 H300', { stroke: B, sw: 1.5 })}`);
+    [0, 1, 2, 3].forEach((r) => {
+      const hi = r === 2;
+      body += g(`stage-${r + 1}`, `${rect(32, 92 + r * 46, 268, 36, { rx: 8, fill: hi ? L : G, stroke: hi ? T : 'none' })}<circle cx="52" cy="${110 + r * 46}" r="9" fill="${hi ? D : '#C9D3DA'}"/>${text(52, 110.5 + r * 46, r + 1, { size: 10 })}${slot(`stage-${r + 1}`, 70, 101 + r * 46, 222, 18)}`);
+    });
+    body += path('M300 202 C336 202 336 150 372 150', { id: 'import', sw: 2.5 })
+      + g('upload', `${rect(330, 160, 40, 40, { rx: 20, fill: '#FFFFFF', stroke: T })}${icon('upload', 338, 168)}`)
+      + g('ads', `${rect(372, 100, 212, 112, { stroke: T, sw: 2, fill: L })}${slot('ads', 388, 116, 184, 18)}${slot('ads-1', 388, 146, 184, 16)}${slot('ads-2', 388, 170, 184, 16)}`)
+      + g('note', `${rect(372, 228, 212, 56, { rx: 10, fill: SAF, stroke: S })}${slot('note', 384, 236, 190, 40)}`);
+    svg('gads-offline', 600, 300, body, ['import']);
+  }
+
+  // gads-bidding — teklif stratejisi ve gerektirdiği veri
+  {
+    let body = slot('h-strat', 16, 8, 240, 16) + slot('h-data', 380, 8, 204, 16);
+    [0, 1, 2, 3].forEach((r) => {
+      const y = 32 + r * 64; const n = r + 1;
+      body += g(`bid-${n}`, `${rect(16, y, 568, 52, { rx: 10, fill: n === 4 ? L : '#FFFFFF', stroke: n === 4 ? T : B })}${badge(['cursor', 'check', 'flag', 'chart'][r], 30, y + 8, { size: 36 })}${slot(`bid-${n}`, 78, y + 10, 290, 18)}${slot(`bid-sub-${n}`, 78, y + 30, 290, 14)}${bar(380, y + 22, 188, 10, BAR)}${rect(380, y + 22, [40, 90, 140, 170][r], 10, { rx: 5, fill: T, stroke: 'none', id: `need-${n}` })}`);
+    });
+    body += slot('note', 16, 290, 568, 14);
+    svg('gads-bidding', 600, 310, body);
+  }
+
+  // gads-merchant-issues — Merchant Center ürün durumları
+  {
+    let body = g('mc', `${rect(16, 16, 568, 310)}${badge('box', 32, 30, { size: 34 })}${slot('mc', 76, 38, 300, 18)}${slot('h-product', 32, 82, 220, 16)}${slot('h-status', 300, 82, 120, 16)}${slot('h-fix', 432, 82, 140, 16)}${path('M32 104 H568', { stroke: B, sw: 1.5 })}`);
+    [['ok', 0], ['bad', 1], ['warn', 2], ['ok', 3]].forEach(([st, r]) => {
+      const y = 114 + r * 44; const bad = st === 'bad';
+      body += g(`item-${r + 1}`, `${rect(28, y, 544, 36, { rx: 8, fill: bad ? '#FBE9E4' : st === 'warn' ? SAF : (r % 2 ? G : '#FFFFFF'), stroke: bad ? '#C4572E' : st === 'warn' ? S : 'none' })}${slot(`product-${r + 1}`, 40, y + 9, 240, 18)}${rect(300, y + 7, 116, 22, { rx: 11, fill: st === 'ok' ? L : '#FFFFFF', stroke: 'none' })}${slot(`status-${r + 1}`, 300, y + 9, 116, 18)}${slot(`fix-${r + 1}`, 432, y + 9, 132, 18)}`);
+    });
+    body += slot('note', 32, 296, 536, 16);
+    svg('gads-merchant-issues', 600, 340, body);
+  }
+
+  // gads-adrank — reklam sırasını belirleyen etkenler
+  {
+    const body = g('bid', `${rect(16, 24, 176, 76, { rx: 12 })}${badge('scale', 30, 44, { size: 36 })}${slot('bid', 74, 52, 112, 18)}`)
+      + g('quality', `${rect(16, 112, 176, 118, { rx: 12, stroke: T, sw: 2, fill: L })}${badge('check', 30, 126, { size: 36, fill: '#FFFFFF' })}${slot('quality', 74, 134, 112, 18)}${slot('q-1', 30, 172, 156, 14)}${slot('q-2', 30, 190, 156, 14)}${slot('q-3', 30, 208, 156, 14)}`)
+      + g('context', `${rect(16, 242, 176, 52, { rx: 12 })}${badge('pin', 30, 250, { size: 36 })}${slot('context', 74, 259, 112, 18)}`)
+      + path('M192 62 C240 62 240 150 288 150', { id: 'f-1', sw: 2.5 }) + path('M192 171 C240 171 240 150 288 150', { id: 'f-2', sw: 2.5 }) + path('M192 268 C240 268 240 150 288 150', { id: 'f-3', sw: 2.5 })
+      + g('rank', `${rect(288, 106, 140, 88, { stroke: T, sw: 2, fill: L })}${slot('rank', 296, 124, 124, 18)}${slot('rank-sub', 296, 152, 124, 28)}`)
+      + path('M428 150 L460 150', { id: 'f-4', sw: 2.5 })
+      + g('serp', `${rect(460, 56, 124, 188)}${[0, 1, 2].map((i) => `${rect(470, 70 + i * 54, 104, 42, { rx: 6, fill: i === 0 ? L : G, stroke: i === 0 ? T : 'none' })}${i === 0 ? adTag(476, 76) : ''}${bar(476, 96 + i * 54, 80, 6, i === 0 ? T : BAR)}`).join('')}`)
+      + slot('note', 288, 268, 296, 30);
+    svg('gads-adrank', 600, 310, body, ['f-1', 'f-2', 'f-3', 'f-4']);
+  }
 }
 

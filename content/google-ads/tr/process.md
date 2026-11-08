@@ -30,6 +30,19 @@ Arama terimlerini, harcamayı ve ölçülen sonuçları yeterli veri oluştuğun
 
 **Çıktı** — Yapılan değişikliklerin gerekçesi, ölçüm dönemi ve sonraki iş listesi.
 
+## Teklif stratejisini neye göre seçiyoruz?
+
+Kampanya kurulumunda akıllı teklif stratejilerini değerlendirirken önce dönüşüm verisinin güvenilirliğine bakarız. Örneğin randevu talebiyle iletişim sayfası görüntülemesi aynı hedefe dahilse, teklif sistemi işletme açısından farklı değerdeki eylemleri birlikte değerlendirebilir. Önce optimizasyona yön verecek eylemi netleştiririz.
+
+| Strateji | Kullanım amacı | Önce neyi kontrol ederiz? |
+| --- | --- | --- |
+| Dönüşümleri en üst düzeye çıkarma | Bütçe dahilinde dönüşüm sayısını artırmaya çalışır. | Seçilen dönüşüm eylemleri |
+| Hedef EBM | Ortalama dönüşüm maliyeti için belirlenen hedefle çalışır. | Geçmiş maliyet ve dönüşüm gecikmesi |
+| Dönüşüm değerini en üst düzeye çıkarma | Bütçe dahilinde toplam dönüşüm değerini artırmaya çalışır. | Doğru değer ve para birimi |
+| Hedef ROAS | Reklam harcamasına göre dönüşüm değeri hedefi kullanır. | Değer geçmişi ve hedefin gerçekçiliği |
+
+Hedef değişikliğinden sonra dönemleri karşılaştırırken dönüşümlerin gecikmeli kaydedilebileceğini hesaba katarız. Son dönemin verisi tamamlanmadıysa bunu kararda belirtiriz.
+
 ## Örnek karar — Form geliyor, uygun müşteri az
 
 | Gözlem | İlk kontrol | Sonraki adım |
@@ -40,11 +53,24 @@ Arama terimlerini, harcamayı ve ölçülen sonuçları yeterli veri oluştuğun
 
 Bu senaryo temsilidir. Raporlama sırasında teknik test sonucunu ve satış ekibinin başvuru değerlendirmesini ayrı gösteririz.
 
-::cta Mevcut hesabınızı ve öncelikli kampanyanızı birlikte değerlendirelim. | Kampanyamı Görüşmek İstiyorum
+## Haftalık ve aylık kontroller nasıl ayrılır?
+
+Kampanya optimizasyonunda günlük sapmaları düzenli iş listesine girecek konulardan ayırırız. Örneğin bir yedek parça kampanyasında form tamamen çalışmayı bıraktıysa bunu hızlıca inceleriz. Hangi kategoriye daha çok bütçe ayrılacağına ise daha uzun bir dönemin verisiyle karar veririz.
+
+### Haftalık kontrol
+
+Arama terimlerinde yeni niyetleri, reklam öğelerindeki hatalı adresleri ve harcamadaki beklenmeyen değişiklikleri inceleriz. “Kullanım kılavuzu” aramaları sık görünüyorsa bunların satış ya da destek amacıyla gelip gelmediğine bakar; dışlama, reklam metni değişikliği veya ayrı sayfa seçeneklerini değerlendiririz.
+
+### Aylık karar
+
+Tamamlanan dönüşümleri, satış ekibi geri bildirimini ve açılış sayfasındaki engelleri birlikte ele alırız. Her değişiklik için sorumlu kişiyi, izlenecek ölçütü ve yeniden inceleme zamanını kaydederiz. Kontrol sıklığı çalışma kapsamına göre planlanır.
+
 
 ## İlk görüşmeye hangi bilgilerle gelebilirsiniz?
 
 Site adresinizi, öncelikli hizmet veya ürününüzü, hedef bölgenizi ve varsa planladığınız reklam bütçesi aralığını paylaşın. Reklamlarınız çalışıyorsa bir örnek sorun ekleyin. Örneğin form sayısının arttığını ama taleplerin farklı bir hizmetle ilgili olduğunu belirtmeniz, ilk incelemede hangi kampanyaya bakacağımızı belirlememize yardımcı olur. Hesap erişimi gerekirse kapsam ve yetkileri birlikte belirleriz.
+
+::cta Mevcut hesabınızı ve öncelikli kampanyanızı birlikte değerlendirelim. | Kampanyamı Görüşmek İstiyorum
 
 ## Sitenizin Google Ads çalışmasını birlikte planlayalım
 

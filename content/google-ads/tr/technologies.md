@@ -30,6 +30,12 @@ Mevcut kurulum uygunsa GTM önizlemesi ve Tag Assistant ile hangi etiketin ne za
 
 Test edilen adresi, beklenen davranışı ve sonucu kaydederiz. Örneğin başarı sinyali site tarafından iletilmiyorsa geliştiriciye örnek adımı ve gerekli bilgiyi aktarırız. Değişiklik yayınlandığında aynı senaryoları yeniden çalıştırırız.
 
+## İzin tercihleri ve gelişmiş dönüşümler nasıl çalışır?
+
+Google Ads dönüşüm takibinde gelişmiş dönüşümler, uygun kurulum ve izin koşulları sağlandığında mevcut ölçümü destekleyebilir. Örneğin mağazada satın alma olayı zaten kaydediliyorsa, işlem sırasında uygun şekilde toplanan birinci taraf verileri tek yönlü özetlenerek (hash) gönderilebilir ve dönüşüm eşleştirmesine yardımcı olabilir. Kullanılan veri ve kurulum Google’ın müşteri verisi politikalarına uygun olmalıdır.
+
+İzin modu (Consent Mode) kullanıcının tercihlerini Google etiketlerine iletir. Reklam verisi kullanımı ve reklam kişiselleştirme ayrı izin sinyalleridir. İzin tercihinin etiket davranışına doğru yansımasını ve ölçüm üzerindeki etkisini kurulum kapsamına göre test ederiz.
+
 ## Alışveriş ve Performance Max için ürün verisi
 
 Mağaza kampanyalarında ürün kataloğunun kaynağını ve Merchant Center ile Google Ads hesaplarının bağlantısını inceleriz. Örneğin siyah bir ayakkabının 42 numarası tükenirse ilgili ürün kaydındaki stok durumunu mağaza sayfasındaki bilgiyle karşılaştırırız. Sorun mağaza, veri aktarımı veya kampanya seçimiyle ilgiliyse bulguyu ilgili ekibe yönlendiririz.
@@ -39,6 +45,22 @@ Mağaza kampanyalarında ürün kataloğunun kaynağını ve Merchant Center ile
 ## İlk inceleme için hangi erişimler gerekir?
 
 Önce site veya mağaza adresi ve ölçmek istediğiniz sonucu paylaşın. Hesap incelemesi gerektiğinde Google Ads, GA4, GTM veya Merchant Center için kapsamla uyumlu kullanıcı yetkilerini belirleriz. Örneğin yalnızca mevcut kampanya raporunu incelemek ile yeni bir etiketi yayınlamak farklı yetkiler gerektirir. Erişimi hesap sahibi kendi hesabından tanımlar.
+
+## Satış ekibindeki sonuçlar reklama nasıl bağlanır?
+
+Teklif formundan sonra satış ekibi talebi değerlendiriyorsa, form ile nitelikli talep arasındaki fark uygun bir çevrimdışı dönüşüm aktarımıyla ölçülebilir. Örneğin bir üretici, minimum sipariş koşuluna uyan talepleri satış sisteminde ayrı bir aşamaya taşıyabilir. Kurulum; veri kaynağına, bağlantı yöntemine, izin koşullarına ve Google’ın güncel gereksinimlerine bağlıdır.
+
+### 1. Satış aşamasını tanımlayın
+
+Hangi koşullarda bir talebin nitelikli kabul edildiğini belirler, CRM kaydında durum ve zaman bilgisinin düzenli tutulup tutulmadığını inceleriz.
+
+### 2. Test kaydını eşleştirin
+
+Uygun bağlantı ve izin koşulları varsa örnek bir kaydı aktararak satış sistemindeki kayıtla eşleşmesini kontrol ederiz.
+
+### 3. Raporu ve teklif sinyalini ayırın
+
+Form ve nitelikli talep ayrı dönüşüm işlemleri olarak izlenebilir. Aktarılan kayıtların işlendiğini ve yinelenmediğini doğruladıktan sonra hangi eylemin kampanya teklif stratejisinde kullanılacağını değerlendiririz.
 
 ## Sitenizin ölçüm kurulumunu birlikte kontrol edelim
 
