@@ -64,6 +64,18 @@ Kampanyanız çalışıyorsa incelemeye hesap geçmişinden başlarız. Reklam g
 
 Hesap ve faturalandırma işletmenizde kalır. İnceleme için uygun Google Ads erişimiyle çalışırız. İlk görüşmede reklamını verdiğiniz sayfanın adresi, hizmet bölgeniz ve ekibinizin uygun bulduğu bir talep örneği değerlendirmeyi somutlaştırır. Bütçeyi planlıyorsanız [Google Ads reklam bütçesi rehberini](/tr/hizmetler/google-ads/blog/google-ads-reklam-butcesi) inceleyebilirsiniz.
 
+## Marka aramalarını ve yeni hizmet talebini nasıl ayırıyoruz?
+
+Google Arama Ağı reklam yönetiminde marka adınızı içeren sorguları, sunduğunuz hizmeti genel adıyla arayan kişilerden ayrı değerlendiririz. Örneğin bir kompresör bakım firmasının adını yazan kişi firmayı zaten tanıyor olabilir. “Ankara kompresör bakım servisi” yazan kişi ise farklı sağlayıcıları değerlendiriyor olabilir. Aynı raporda bu iki sorgu türünü ayrı gösterdiğimizde yeni hizmet talebinin nereden geldiğini daha iyi anlayabiliriz.
+
+| Kampanya | Ne zaman değerlendirilir? | İlk kontrol |
+| --- | --- | --- |
+| Arama Ağı | Belirli bir hizmet sorgusuna ilgili mesaj ve sayfayla yanıt vermek için | Marka ve marka dışı sorgular ile uygun talepler |
+| [Google Alışveriş](/tr/hizmetler/google-shopping) | Satışa hazır ürün kataloğuyla reklam vermek için | Ürün uygunluğu ve satın alma ölçümü |
+| [Performance Max](/tr/hizmetler/performance-max) | Birden fazla Google kanalını aynı hedefle değerlendirmek için | Seçili dönüşüm hedefi ve kaydedilen satış değeri |
+
+Bir Google Arama Ağı reklam ajansıyla çalışırken bu ayrımı raporda nasıl göreceğinizi sorun. Örneğin marka sorguları kampanyadaki başvuruların çoğunu getiriyorsa, yeni hizmet aramalarının kapsamını ve niteliğini ayrıca inceleriz. Arama ağı reklamcılığı için bütçe kararını verirken satış ekibinin bu iki grupta hangi taleplere teklif hazırlayabildiğini de karşılaştırırız.
+
 ## Arama Ağı kampanyası hakkında sorular
 
 ### Reklam bütçesi yönetim ücretine dahil mi?

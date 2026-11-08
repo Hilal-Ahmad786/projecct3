@@ -43,8 +43,40 @@ Bir reklam sayfasının açılması tek başına yeterli bir yayın kontrolü de
 - **Başvuru testi.** Uygun bir test başvurusunun sisteme ulaştığını ve ilgili ölçüm olayının beklendiği gibi çalıştığını doğrularız.
 - **Yayın kararı.** Gönderimleri engelleyen bir sorun varsa sorumluyu ve tekrar test adımını belirleriz. Gerekirse ilk yayını kapsamı doğrulanmış hizmetlerle sınırlarız.
 
+## Teklif stratejisini ne zaman değiştiriyoruz?
+
+Akıllı teklif stratejilerini değerlendirirken önce kampanyanın hangi sonucu ölçtüğünü doğrularız. Örneğin klima servisinde telefon bağlantısına dokunma ile kabul edilen bakım talebi farklı sonuçlardır. Bir strateji değişikliği yapmadan önce hangi dönüşümün teklifleri yönlendireceğini ve sonuçların ne kadar gecikmeyle geldiğini belirleriz.
+
+| Strateji | Ne zaman değerlendiririz? | İlk kontrol |
+| --- | --- | --- |
+| Manuel TBM | Tıklama teklifleri üzerinde doğrudan kontrol isteniyorsa | Arama kapsamı ve tıklama maliyeti |
+| Dönüşümleri en üst düzeye çıkarma | Seçili dönüşüm için bütçe dahilinde daha fazla sonuç hedefleniyorsa | Dönüşüm doğruluğu ve bütçe |
+| Hedef EBM | Dönüşüm başına ortalama maliyet hedefi belirlenebiliyorsa | Geçmiş maliyet ve dönüşüm gecikmesi |
+
+Bu seçenekler zorunlu bir geçiş sırası oluşturmaz. Sipariş değerleri güvenilir biçimde ölçülüyorsa, dönüşüm değerini en üst düzeye çıkarma veya Hedef ROAS seçenekleri de incelenebilir. Değişiklikten sonra gecikmeli sonuçların rapora yansıması için uygun bir değerlendirme aralığı belirleriz.
+
 ## İlk sonuçlarla hangi kararları alıyoruz?
 
 Örneğin bakım reklamı form getiriyor ancak satış ekibine çoğunlukla yedek parça talepleri ulaşıyor. Önce bu taleplerin geldiği sayfayı ve raporda görünen arama terimlerini kontrol ederiz. Sayfa bakım hizmetini belirsiz anlatıyorsa mesajı netleştiririz. İlgisiz sorgular görünüyorsa uygun dışlamaları değerlendiririz.
 
 İlk raporda bulguyu, yapılan değişikliği ve yeniden kontrol edilecek ölçütü ayrı gösteririz. Örneğin form metni güncellendiyse sonraki incelemede bakım kapsamına uyan başvurulara bakarız. Bazı başvuruların sonucu tıklamadan sonra belli olduğu için raporu yorumlarken dönüşüm gecikmesini ve işletmenizin satış süresini dikkate alırız.
+
+## Haftalık ve aylık kontrolleri nasıl ayırıyoruz?
+
+Google Arama Ağı kampanya yönetiminde reklam optimizasyonu için inceleme sıklığını harcamaya, veri miktarına ve iş kapsamına göre belirleriz. Örneğin form çalışmıyorsa planlı rapor tarihini beklemeden incelemek gerekir. Bütçeyi bir hizmetten diğerine kaydırma kararı için ise karşılaştırılabilir dönemlere ve satış geri bildirimine bakarız.
+
+### Arama terimleri
+
+Haftalık incelemede görünen yeni sorguları hizmet kapsamıyla karşılaştırırız. Kompresör bakımı kampanyasında eğitim sorgusu görünüyorsa hangi grupta tetiklendiğine bakarız.
+
+### Reklam öğeleri
+
+Öğelerin durumunu, bağlantıları ve güncelliği kontrol ederiz. Servis bölgesi değiştiyse eski bölge bilgisini taşıyan reklamları ve sayfaları belirleriz.
+
+### Bütçe kısıtı
+
+Aylık değerlendirmede bütçe kısıtlarını ve uygun talepleri yan yana okuruz. Önerilen değişikliğin hangi hizmeti etkileyeceğini ve ne zaman yeniden kontrol edileceğini kaydederiz.
+
+### Açılış sayfası
+
+Mobil formda tekrarlanan hata varsa test adımını ve sorumlu ekibi kaydederiz. Sayfa güncellendikten sonra başvurunun işletmeye ulaştığını ve raporda doğru sayıldığını tekrar kontrol ederiz.

@@ -10,6 +10,26 @@ Duyarlı arama ağı reklamları için birden fazla başlık ve açıklama hazı
 
 Mevcut hesabınızda dinamik arama ağı reklamları varsa hangi sayfaların kapsama girdiğini ve sistemin seçtiği açılış sayfalarını inceleriz. Örneğin servis sayfaları hedeflenirken iş ilanları ve kullanım kılavuzları kapsam dışında tutulabilir. Google’ın AI Max geçişi kapsamında hesabınızın durumunu, URL kontrollerini ve metin ayarlarını ayrı değerlendiririz.
 
+## Reklam öğeleriyle hangi bilgileri gösteriyoruz?
+
+Duyarlı arama ağı reklamlarında 15’e kadar başlık ve 4’e kadar açıklama eklenebilir. Google Arama Ağı reklam kurulumu sırasında başlıkları yalnızca gerekli bilginin belirli konumda görünmesi gerektiğinde sabitlemeyi değerlendiririz. Reklam öğelerini de müşterinin hizmete uygun olup olmadığını anlamasını kolaylaştıracak bilgilerden seçeriz. Gösterim açık artırmaya ve öğenin uygunluğuna bağlıdır.
+
+### Site bağlantısı
+
+Su arıtma servisi için “Servis bölgeleri” bağlantısı müşteriyi doğrudan ilgili sayfaya götürebilir. Teklif formunu arayanlar için ayrı bir bağlantı kullanılabilir.
+
+### Açıklama metni
+
+“Yerinde endüstriyel bakım” gibi kısa bir öğeyle hizmet kapsamını belirtiriz. Bu ifadeyi açılış sayfasındaki hizmet tanımıyla karşılaştırırız.
+
+### Yapılandırılmış snippet
+
+“Hizmetler” başlığı altında filtre değişimi, membran bakımı ve sistem kontrolü gibi sunulan işleri sıralayabiliriz.
+
+### Konum öğesi
+
+Müşterilerin ziyaret edebildiği bir servis noktası varsa güncel işletme bilgilerini kullanırız. Hizmet bölgesini ayrıca sayfada açıklarız.
+
 ## Eşleme türleri ve negatif kelimeler nasıl kullanılır?
 
 Bir anahtar kelime kampanyada seçtiğiniz ifadedir. Arama terimi ise kullanıcının yazdığı sorgudur. Örneğin “hidrolik pompa tamiri” anahtar kelimesiyle çalışırken raporda “hidrolik pompa bakım servisi” gibi ilişkili sorgular görebilirsiniz. Kapsamı değerlendirirken bu iki alanı yan yana okuruz.
@@ -29,6 +49,18 @@ Telefonla teklif veya randevu alan işletmeler için duyarlı arama reklamların
 Daha önce yalnızca telefon araması için oluşturulmuş reklamlarınız varsa geçişi mevcut hesap üzerinden inceleriz. Telefon öğesine geçerken numaranın doğruluğunu, reklam metnini, çalışma saatlerini ve açılış sayfasındaki iletişim bilgilerini birlikte kontrol ederiz.
 
 Arama öğesine dokunmak, bir görüşmenin gerçekleştiğini göstermez. Kullanılabilen çağrı raporlarını ve işletmenizin doğrulayabildiği görüşme sonuçlarını ayrı değerlendiririz. Örneğin yalnızca tıklama izlenebiliyorsa raporda bunu telefon tıklaması olarak gösteririz. Satış ekibinin uygun bulduğu bir servis talebini ise ayrıca değerlendirebiliriz.
+
+## Konum, zamanlama ve cihaz ayarlarını nasıl seçiyoruz?
+
+Google Arama Ağı reklam optimizasyonunda ayarları işletmenin karşılayabildiği taleplere göre inceleriz. Örneğin Ankara’da yerinde servis veren bir işletme ile Ankara’da yatırım yapacak şehir dışındaki firmalara teklif sunan bir üretici farklı konum seçeneklerini değerlendirebilir.
+
+| Ayar | Örnek | Ne zaman inceleriz? |
+| --- | --- | --- |
+| Konum | Bölgede bulunan veya düzenli bulunan kişiler ile bölgeye ilgi gösterenleri kapsayan seçenekler | Bölge dışı talepler arttığında |
+| Zamanlama | Çağrı karşılanan saatleri reklam veya arama öğesi için ayrı planlamak | Yanıtsız aramalar biriktiğinde |
+| Cihaz | Mobil ve masaüstü başvurularını ayırmak | Mobil form performansı farklılaştığında |
+
+Cihaz teklif ayarlamasının etkisi kullanılan teklif stratejisine bağlıdır. Ayarı değiştirmeden önce sayfa ve ölçüm sorunlarını araştırırız. Kitleleri gözlem modunda eklediğimizde reklamın erişimini o kitlelerle sınırlandırmadan mevcut performansı inceleyebiliriz. Örneğin daha önce siteyi ziyaret eden kişilerin bakım tekliflerini nasıl değerlendirdiğine bakabiliriz.
 
 ## Düzenli optimizasyonda hangi kararları alırız?
 

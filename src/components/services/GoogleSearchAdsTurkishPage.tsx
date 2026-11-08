@@ -112,6 +112,11 @@ const V = {
   budget: (className?: string) => art('gads-budget-split', 'Teklif kalemleri: reklam bütçesi Google Ads hesabınızdan Google’a ödenir; yönetim ücreti ve varsa kurulum işleri PakSoft teklifinde ayrı kalemdir', { 'slot-budget': 'Reklam bütçesi', 'slot-budget-sub': 'Kampanya harcaması', 'slot-fee': 'Yönetim ücreti', 'slot-setup': 'Kurulum (tek seferlik)', 'slot-google': 'Google Ads hesabınız', 'slot-google-sub': 'Ödeme doğrudan Google’a', 'slot-paksoft': 'PakSoft teklifi', 'slot-paksoft-sub': 'Yönetim ve kurulum ayrı' }, className),
   adrank: () => art('gads-adrank', 'Reklam sırasını etkileyen etkenler: teklif, reklam kalitesi (beklenen tıklama oranı, reklam alaka düzeyi, açılış sayfası deneyimi) ve arama bağlamı', { 'slot-bid': 'Teklif', 'slot-quality': 'Reklam kalitesi', 'slot-q-1': 'Beklenen tıklama oranı', 'slot-q-2': 'Reklam alaka düzeyi', 'slot-q-3': 'Açılış sayfası deneyimi', 'slot-context': 'Arama bağlamı', 'slot-rank': 'Reklam sırası', 'slot-rank-sub': 'Her açık artırmada yeniden', 'slot-note': 'Tıklama maliyeti bu etkenlere ve rekabete göre değişir; sabit bir tutar yoktur.' }),
   quote: () => art('quote-groups', 'Arama Ağı yönetim teklifini etkileyenler: hizmet ve bölge sayısı, hesap ve ölçüm durumu, açılış sayfası sayısı, raporlama sıklığı; sayfa geliştirme ayrı', { 'slot-group-1': 'Hizmet ve bölge sayısı', 'slot-group-2': 'Hesap ve ölçüm durumu', 'slot-group-3': 'Açılış sayfası sayısı', 'slot-group-4': 'Raporlama sıklığı', 'slot-quote': 'Yönetim ücreti', 'slot-extra': 'Sayfa geliştirme ayrı' }),
+  brandTerms: () => art('gads-search-terms', 'Temsili sorgu ayrımı: firma adını içeren marka aramaları ile kompresör bakımını genel adıyla arayan marka dışı sorgular raporda ayrı gruplanıyor', { 'slot-report': 'Marka ve marka dışı · temsili', 'slot-h-term': 'Arama terimi', 'slot-h-action': 'Grup', 'slot-term-1': 'firmaadı kompresör', 'slot-action-1': 'Marka', 'slot-term-2': 'ankara kompresör bakım servisi', 'slot-action-2': 'Marka dışı', 'slot-term-3': 'firmaadı servis telefonu', 'slot-action-3': 'Marka', 'slot-term-4': 'endüstriyel kompresör bakımı', 'slot-action-4': 'Marka dışı', 'slot-term-5': 'vidalı kompresör revizyonu', 'slot-action-5': 'Marka dışı' }),
+  targeting: () => art('tech-finding', 'Temsili hedefleme ayarları: konumda bölgede bulunan kişiler, çağrı karşılanan saatlere göre zamanlama, mobil ve masaüstü ayrımı, kitleler gözlem modunda', { 'slot-title': 'Hedefleme ayarları · temsili', 'slot-priority': 'Yerel servis', 'slot-label-1': 'Konum', 'slot-value-1': 'Bölgede bulunan kişiler', 'slot-label-2': 'Zamanlama', 'slot-value-2': 'Çağrı karşılanan saatler', 'slot-label-3': 'Cihaz', 'slot-value-3': 'Mobil ve masaüstü ayrı', 'slot-label-4': 'Kitleler', 'slot-value-4': 'Gözlem modu' }),
+  bidding: () => art('gads-bidding', 'Teklif stratejileri ve ön koşulları: manuel TBM, dönüşümleri en üst düzeye çıkarma, hedef EBM ve hedef ROAS; zorunlu bir geçiş sırası yoktur', { 'slot-h-strat': 'Teklif stratejisi', 'slot-h-data': 'Gereken veri', 'slot-bid-1': 'Manuel TBM', 'slot-bid-sub-1': 'Tıklama teklifi kontrolü', 'slot-bid-2': 'Dönüşümleri en üst düzeye çıkarma', 'slot-bid-sub-2': 'Doğru ölçülen dönüşüm', 'slot-bid-3': 'Hedef EBM', 'slot-bid-sub-3': 'Geçmiş maliyet ve gecikme', 'slot-bid-4': 'Hedef ROAS', 'slot-bid-sub-4': 'Güvenilir sipariş değeri', 'slot-note': 'Şematik; zorunlu geçiş sırası yoktur, karar hesabın kendi verisine göre verilir.' }),
+  diagnose: () => art('tech-finding', 'Temsili teşhis notu: sorunun kapsamı, ikinci kaynakla doğrulama, yapılan değişiklik ve yeniden kontrol edilecek ölçüt', { 'slot-title': 'Teşhis notu · temsili', 'slot-priority': 'Tek reklam', 'slot-label-1': 'Kapsam', 'slot-value-1': 'Tek reklam grubu, tarih aralığı', 'slot-label-2': 'İkinci kaynak', 'slot-value-2': 'Test başvurusu, satış kaydı', 'slot-label-3': 'Değişiklik', 'slot-value-3': 'Reklam metni · tarih notu', 'slot-label-4': 'Yeniden kontrol', 'slot-value-4': 'Aynı grup, aynı ölçüt' }),
+  scope: () => art('contract-scope', 'Kurulum ve yönetim teklifinde yazılı kontrol edilecek maddeler: kurulum teslimi, düzenli yönetim işleri, ölçüm ve CRM bağlantısı, raporlama; reklam harcaması ayrı', { 'slot-doc': 'Teklif kapsamı', 'slot-clause-1': 'Tek seferlik kurulum teslimi', 'slot-clause-2': 'Aylık yönetim işleri', 'slot-clause-3': 'Ölçüm ve CRM bağlantısı', 'slot-clause-4': 'Raporlama sıklığı', 'slot-clause-5': 'Reklam harcaması Google’a' }),
 };
 
 const visuals: SeoServiceConfig['visuals'] = {
@@ -120,30 +125,37 @@ const visuals: SeoServiceConfig['visuals'] = {
     ['Arama Ağı kampanyası hangi', aside(V.goals())],
     ['Bir arama terimini reklama', { place: 'below', node: V.terms() }],
     ['Mevcut hesabı', aside(V.report())],
+    ['Marka aramalarını', aside(V.brandTerms())],
   ],
   features: [
     ['Eşleme türleri', aside(V.match())],
     ['Telefon aramaları', aside(V.actions())],
+    ['Konum, zamanlama', aside(V.targeting())],
     ['Düzenli optimizasyonda', aside(V.weekly())],
   ],
   technologies: [
     ['Hangi işlemleri dönüşüm', aside(V.actions())],
     ['Google Ads, GA4 ve GTM', aside(V.ga4())],
-    ['Telefon araması ve nitelikli', aside(V.offline())],
+    ['Gelişmiş dönüşümler', aside(V.consent())],
+    ['Satış ekibinin teklif', aside(V.offline())],
     ['İzin tercihleri ve etiketler', aside(V.gtm())],
   ],
   process: [
     ['Arama Ağı kampanyası nasıl ilerler?', { place: 'below', node: V.rail() }],
     ['Yayından önce hangi koşulları', aside(V.consent())],
+    ['Teklif stratejisini', aside(V.bidding())],
     ['İlk sonuçlarla hangi kararları', aside(V.lead())],
+    ['Haftalık ve aylık', aside(V.weekly())],
   ],
   portfolio: [
     ['Üç Arama Ağı kampanya örneği', aside(V.caseTerms())],
     ['Bir kampanya değişikliğinin', aside(V.report())],
+    ['Bir Arama Ağı sorununu', aside(V.diagnose())],
   ],
   pricing: [
-    ['Başlangıç bütçesini', aside(V.adrank())],
+    ['Tıklama maliyetini', aside(V.adrank())],
     ['Yönetim teklifini', aside(V.quote())],
+    ['Tek seferlik kurulum', aside(V.scope())],
   ],
 };
 
@@ -216,6 +228,9 @@ const config: SeoServiceConfig = {
     ['Üç Arama Ağı kampanya örneği', 'Kampanya örnekleri'], ['Bir kampanya değişikliğinin', 'Etkiyi okumak'], ['Kendi kampanyanızdan', 'Örneğinizi paylaşın'],
     ['Reklam bütçesi, kurulum', 'Maliyet kalemleri'], ['Başlangıç bütçesini', 'Başlangıç bütçesi'], ['Yönetim teklifini', 'Teklifi etkileyenler'],
     ['Teklif almak için', 'Gerekli bilgiler'], ['Fiyatlandırma hakkında', 'Kısa yanıtlar'],
+    ['Marka aramalarını', 'Marka ve marka dışı'], ['Reklam öğeleriyle', 'Reklam öğeleri'], ['Konum, zamanlama', 'Konum ve zamanlama'],
+    ['Gelişmiş dönüşümler', 'Gelişmiş dönüşümler'], ['Satış ekibinin teklif', 'Teklif aşaması aktarımı'], ['Teklif stratejisini', 'Teklif stratejisi'],
+    ['Haftalık ve aylık', 'Kontrol takvimi'], ['Bir Arama Ağı sorununu', 'Teşhis sırası'], ['Tıklama maliyetini', 'Tıklama maliyeti'], ['Tek seferlik kurulum', 'Kurulum ve yönetim'],
   ],
   sectionIds: {
     'overview:Bir arama terimini reklama ve sayfaya nasıl bağlarız?': 'arama-reklami-ornegi',

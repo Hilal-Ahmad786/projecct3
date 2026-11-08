@@ -17,6 +17,14 @@ Arama Ağı reklam bütçesi, Google Ads hesabınızdaki kampanya harcamaların�
 
 Ortalama günlük bütçe kullanıldığında Google Ads harcaması günler arasında değişebilir. Kampanyanın bütçe ayarını ve harcama sınırlarını yayın öncesinde kontrol ederiz. İlk incelemede tıklama maliyetini, tamamlanan başvuruları ve ekibinizin uygun bulduğu talepleri ayrı ayrı ele alırız. Daha geniş bir plan için [Google Ads reklam bütçesi rehberini](/tr/hizmetler/google-ads/blog/google-ads-reklam-butcesi) inceleyebilirsiniz.
 
+## Tıklama maliyetini neler belirler?
+
+Google arama reklamları fiyatlarını araştırırken bir tıklamanın maliyeti ile kampanyayı yönetmenin ücretini ayrı değerlendirin. Örneğin “yerinde klima bakımı” sorgusunda rekabet, arama bağlamı ve açık artırmadaki teklifler değişebilir. Bu nedenle aynı arama teriminin tıklama maliyeti dönem içinde dalgalanabilir.
+
+Google’da ilk sayfada veya en üstte reklam göstermeyi belirleyen etkenler arasında Reklam Sıralaması yer alır. Google teklif, açık artırmadaki reklam ve açılış sayfası kalitesi, rekabet ve arama bağlamı gibi etkenleri değerlendirir. Kalite Puanı ise beklenen tıklama oranı, reklam alaka düzeyi ve açılış sayfası deneyimi gibi alanları incelemeye yardımcı olan bir teşhis göstergesidir. Açık artırmanın doğrudan girdisi değildir.
+
+Örneğin daha yüksek maliyetli bir servis sorgusundan gelen taleplere ekip teklif hazırlayabiliyorsa, sorguyu yalnızca tıklama maliyetine bakarak elemeziz. Harcamayı ve uygun başvuruları benzer dönemlerde karşılaştırırız. Hizmet bölgesi değiştiyse bunu raporda belirtiriz.
+
 ## Yönetim teklifini neler etkiler?
 
 Bir bölgede tek hizmeti tanıtmak ile farklı bölgelerde birden fazla hizmeti ayrı sayfalara yönlendirmek farklı iş yükü yaratır. Yönetim kapsamını belirlerken her kampanyanın kendi reklam metnine, hedef sayfasına veya raporlamasına ihtiyaç duyup duymadığını inceleriz.
@@ -24,6 +32,17 @@ Bir bölgede tek hizmeti tanıtmak ile farklı bölgelerde birden fazla hizmeti 
 - **Hizmet ve bölge sayısı.** Farklı bölgeler için farklı hizmet kapsamı veya çalışma saatleri varsa kampanya yapısı buna göre hazırlanır.
 - **Hesap ve sayfa durumu.** Mevcut kampanyada korunacak ayarlar, eksik dönüşümler veya mobil form sorunları ilk iş listesini etkiler.
 - **Ölçüm ve raporlama.** Form gönderimini izlemek ile satış ekibinin doğruladığı sonucu Google Ads’e aktarmak farklı hazırlıklar gerektirebilir. [Dönüşüm takibi seçeneklerini](/tr/hizmetler/google-search-ads/teknoloji) inceleyebilirsiniz.
+
+## Tek seferlik kurulum ile aylık yönetim nasıl ayrılır?
+
+Google Arama Ağı reklam yönetimi ücretini değerlendirirken hangi işlerin ilk teslimde, hangilerinin düzenli çalışmada yer aldığını yazılı olarak kontrol edin. Örneğin çalışan ölçüm altyapısı olan bir işletme yalnızca yeni bir hizmet kampanyasının hazırlanmasını isteyebilir. Yayında olan birden fazla kampanya ise düzenli sorgu incelemesi ve satış geri bildirimi gerektirebilir.
+
+| Kapsam | Ne içerebilir? | Kime uygun? |
+| --- | --- | --- |
+| Tek seferlik kurulum | Kampanya taslağı, reklam grupları, yayın ve ölçüm kontrolleri | Kampanyayı içeride devralacak ekibe |
+| Düzenli yönetim | Sorgu incelemesi, değişiklik kaydı ve raporlama | Yayındaki kampanyaları düzenli değerlendirmek isteyen ekibe |
+
+Reklam harcamasını kendi Google Ads hesabınız üzerinden Google’a ödersiniz. PakSoft teklifinde kurulum ve yönetim ayrı gösterilir. Örneğin CRM aktarımı gerekiyorsa bağlantıyı kimin kuracağını ve ilk testin hangi işe dahil olduğunu teklif sırasında belirleriz.
 
 ## Teklif almak için hangi bilgiler yeterli?
 

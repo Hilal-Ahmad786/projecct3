@@ -39,3 +39,21 @@ Telefon bağlantısına tıklama, bir kişinin numaraya dokunduğunu gösterir. 
 ### Kampanyanın sonucunu ne zaman değerlendirebiliriz?
 
 Yayın başladıktan sonra reklam durumu ve ölçüm hataları erken kontrol edilebilir. Başvuruların satışa veya uygun bir talebe dönüşmesini değerlendirmek için yeterli veri ve satış ekibinin geri bildirimi gerekir. Örneğin teklif değerlendirmesi birkaç gün sürüyorsa en yeni kayıtları önceki dönemle karşılaştırırken bu gecikmeyi hesaba katarız.
+
+## Kampanya ayarları
+
+### Rakip firma adlarıyla reklam verebilir miyim?
+
+Google’ın marka politikası, marka adının anahtar kelime olarak kullanılmasıyla reklam metninde kullanılmasını ayrı değerlendirir. Örneğin bir kompresör servisinin rakip adıyla ilgili sorgulara reklam vermesi düşünülüyorsa önce reklam metni, sayfanın ne sunduğu ve karışıklık ihtimali incelenir. Bu seçeneği değerlendirmeden önce hizmet odaklı sorguların sonuçlarına da bakarız.
+
+### Reklamım neden sınırlı gösterim durumunda görünüyor?
+
+Sınırlı uygunluk, reklamın bazı koşullarda gösterilebileceği anlamına gelir. Google Ads’te reklam durumunun ayrıntısını açıp hangi politikanın uygulandığını kontrol edin. Örneğin sorun belirli bir reklam öğesindeyse önce etkilenen öğeyi ve açılış sayfasını inceleriz. Gerekli düzeltme yapıldığında yeni inceleme durumunu takip ederiz.
+
+### Hangi saatlerde reklam göstereceğimi seçebilir miyim?
+
+Evet, reklam zamanlamasıyla kampanyanın hangi gün ve saatlerde gösterime uygun olacağını belirleyebilirsiniz. Örneğin servis ekibiniz telefonu yalnızca mesai saatlerinde yanıtlıyorsa arama öğesini bu saatlerle sınırlandırmayı değerlendirebiliriz. Form üzerinden mesai dışında da talep alıyorsanız kampanya zamanlaması ve telefon öğesi zamanlamasını ayrı planlarız.
+
+### Arama Ağı kampanyasını kendim mi yönetmeliyim, ajansla mı çalışmalıyım?
+
+Ekibiniz arama terimlerini, ölçümü ve bütçeyi düzenli kontrol edebiliyorsa kampanyayı içeride yönetebilirsiniz. Örneğin yeni bir ölçüm kurulumu veya mevcut hesaptaki belirli bir sorunun incelenmesi gerekiyorsa Google Arama Ağı reklam danışmanlığı ayrı bir iş olarak değerlendirilebilir. Hesap ve faturalandırma işletmenizde kalır.
