@@ -1,3 +1,4 @@
+import { ProcessScene } from '@/components/services/hero-visuals/scenes-internal';
 import type { ReactNode } from 'react';
 import { CursorArrowRaysIcon } from '@heroicons/react/24/outline';
 import type { SectionVisual } from '@/components/e-commerce/ServiceMarkdownPage';
@@ -79,6 +80,7 @@ const visuals: SeoServiceConfig['visuals'] = {
   ],
   portfolio: [
     ['İki temsili e-ticaret kampanyası', aside(V.merchant())],
+    ['Bir kampanya çalışmasını değerlendirirken', aside(V.report())],
   ],
   pricing: [
     ['Tıklama maliyeti neden değişir', aside(V.adrank())],
@@ -90,7 +92,7 @@ const visuals: SeoServiceConfig['visuals'] = {
 const heroArt: SeoServiceConfig['heroArt'] = {
   features: () => V.account('w-full'),
   technologies: () => V.tagFlow('w-full'),
-  process: () => V.report('w-full'),
+  process: () => <ProcessScene />,
   portfolio: () => V.evidence('w-full'),
   pricing: () => V.budget('w-full'),
 };

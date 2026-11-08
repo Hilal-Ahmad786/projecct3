@@ -1,3 +1,4 @@
+import { ProcessScene } from '@/components/services/hero-visuals/scenes-internal';
 import type { ReactNode } from 'react';
 import { ArrowDownIcon, ArrowRightIcon, CheckCircleIcon, MagnifyingGlassIcon, PhoneIcon } from '@heroicons/react/24/outline';
 import type { SectionVisual } from '@/components/e-commerce/ServiceMarkdownPage';
@@ -121,7 +122,7 @@ const V = {
 
 const visuals: SeoServiceConfig['visuals'] = {
   overview: [
-    ['Arama reklamları', aside(V.rsa())],
+    ['Arama reklamları', aside(<GoogleSearchAdsHeroVisual />)],
     ['Arama Ağı kampanyası hangi', aside(V.goals())],
     ['Bir arama terimini reklama', { place: 'below', node: V.terms() }],
     ['Mevcut hesabı', aside(V.report())],
@@ -162,7 +163,7 @@ const visuals: SeoServiceConfig['visuals'] = {
 const heroArt: SeoServiceConfig['heroArt'] = {
   features: () => V.rsa('w-full'),
   technologies: () => V.tagFlow('w-full'),
-  process: () => V.report('w-full'),
+  process: () => <ProcessScene />,
   portfolio: () => V.evidence('w-full'),
   pricing: () => V.budget('w-full'),
 };

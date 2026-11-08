@@ -1,3 +1,4 @@
+import { ProcessScene } from '@/components/services/hero-visuals/scenes-internal';
 import type { ReactNode } from 'react';
 import { WrenchScrewdriverIcon } from '@heroicons/react/24/outline';
 import IkasVisual from '@/components/ikas/visuals/IkasVisual';
@@ -88,6 +89,7 @@ const VISUALS: SeoServiceConfig['visuals'] = {
   ],
   portfolio: [
     ['Temsili örnek — Çok dilli', aside(EK.hreflang())],
+    ['Bir teknik SEO örneğinde', aside(V.report())],
   ],
   pricing: [
     ['Üç örnek teklif kapsamı', aside(<IkasVisual name="method-options" loop label="Üç teklif kapsamı: yalnızca denetim, denetim ve uygulama, denetim ile düzenli takip" slotLabels={{ 'slot-option-1': 'Yalnızca denetim', 'slot-option-2': 'Denetim + uygulama', 'slot-option-3': 'Düzenli takip' }} className="mx-auto w-full max-w-xl" />)],
@@ -97,7 +99,7 @@ const VISUALS: SeoServiceConfig['visuals'] = {
 const HERO_ART: SeoServiceConfig['heroArt'] = {
   features: () => V.crawl('w-full'),
   technologies: () => V.sources('w-full'),
-  process: () => V.report('w-full'),
+  process: () => <ProcessScene />,
   portfolio: () => V.evidence('w-full'),
   pricing: () => V.quote('w-full'),
 };

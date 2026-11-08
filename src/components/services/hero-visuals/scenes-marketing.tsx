@@ -143,8 +143,10 @@ export function RocketLaunchScene() {
 }
 
 /* ── target-bullseye (precision targeting) ───────────────────────── */
-export function TargetBullseyeScene() {
+/** `badge` replaces the default "100%" chip — pages that must not imply a guaranteed result pass a neutral label. */
+export function TargetBullseyeScene({ badge = '100%' }: { badge?: string } = {}) {
   const reduced = useReducedMotion();
+  const badgeW = Math.max(64, badge.length * 7 + 18);
   return (
     <Scene glow={H.terracotta}>
       <GirihHalo color={H.terracotta} opacity={0.2} />
@@ -200,8 +202,8 @@ export function TargetBullseyeScene() {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ delay: 2.1, duration: 0.5, ease: [0.34, 1.56, 0.64, 1] }}
         >
-          <rect x="156" y="172" width="64" height="24" rx="12" fill={H.lapis} />
-          <text x="188" y="188" textAnchor="middle" fontSize="11" fontWeight="800" fill={H.saffron}>100%</text>
+          <rect x={Math.min(156, 228 - badgeW)} y="172" width={badgeW} height="24" rx="12" fill={H.lapis} />
+          <text x={Math.min(156, 228 - badgeW) + badgeW / 2} y="188" textAnchor="middle" fontSize="11" fontWeight="800" fill={H.saffron}>{badge}</text>
         </motion.g>
       </svg>
     </Scene>
