@@ -11,6 +11,7 @@ import { getEcommerceSeoGuides } from '@/components/services/service-blogs/ecomm
 import { getTechnicalSeoGuides } from '@/components/services/service-blogs/technical-seo';
 import customEcommerceArticles from '../../content/blog/custom-ecommerce/manifest.json';
 import marketplaceArticles from '../../content/blog/marketplace/manifest.json';
+import googleAdsArticles from '../../content/blog/google-ads/manifest.json';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 const allLocales: Locale[] = ['en', 'tr', 'de', 'ar', 'ur'];
@@ -189,6 +190,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     });
   });
 
+  // Google Ads has complete Turkish content in the repository-backed service renderer.
+  // Advertise its existing overview and seven localized subpages even when the
+  // CMS row does not yet contain the same curated Markdown sections.
+  const googleAdsPaths = ['/services/google-ads', '/services/google-ads/features', '/services/google-ads/technologies', '/services/google-ads/process', '/services/google-ads/portfolio', '/services/google-ads/pricing', '/services/google-ads/faq', '/services/google-ads/blog'];
+  googleAdsPaths.forEach((path, index) => {
+    const candidate = `${baseUrl}/tr${localizeFullPath(path, 'tr')}`;
+    if (!entries.some((item) => item.url === candidate)) entries.push(entry('tr', path, { priority: index === 0 ? PRIORITY.serviceDetail : PRIORITY.other, changeFreq: index === 0 ? 'weekly' : 'monthly', date: DATES.seoRefresh }));
+  });
+
   // 5. Blog posts (live from DB). Each post exists in ONE language
   // (BlogPost.language), so list it once under its own locale — advertising
   // every slug under all 5 locales created duplicate URLs with bogus hreflang.
@@ -253,6 +263,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: PRIORITY.blogPost,
       changeFreq: 'monthly',
       date: new Date(`${datePublished}T00:00:00Z`),
+      includeAlternates: false,
+    }));
+  });
+
+  // Repository-backed Google Ads guides are Turkish-only and have no authored
+  // publication date, so the sitemap lastmod reflects the content release.
+  googleAdsArticles.forEach(({ slug }) => {
+    entries.push(entry('tr', `/services/google-ads/blog/${slug}`, {
+      priority: PRIORITY.blogPost,
+      changeFreq: 'monthly',
+      date: new Date('2026-11-08T00:00:00Z'),
       includeAlternates: false,
     }));
   });

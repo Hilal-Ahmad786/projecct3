@@ -14,6 +14,7 @@ import MarketplaceTurkishPage, { getMarketplaceMeta } from '@/components/e-comme
 import TechnicalSeoTurkishPage, { getTechnicalSeoMeta, getTechnicalSeoSocialMeta } from '@/components/services/TechnicalSeoTurkishPage';
 import SeoTurkishPage, { getSeoTurkishMeta, getSeoTurkishSocialMeta } from '@/components/services/SeoTurkishPage';
 import EcommerceSeoTurkishPage, { getEcommerceSeoTurkishMeta, getEcommerceSeoTurkishSocialMeta } from '@/components/services/EcommerceSeoTurkishPage';
+import { GoogleAdsTurkishPage, getGoogleAdsMeta, getGoogleAdsSocialMeta } from '@/components/services/GoogleAdsTurkishPage';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const path = `/services/${slug}/portfolio`;
   const localizedPath = localizeFullPath(path, validLocale);
 
-  const customMeta = slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoMeta('portfolio') : slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('portfolio') : slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('portfolio') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('portfolio') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('portfolio')
+  const customMeta = slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsMeta('portfolio') : slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoMeta('portfolio') : slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('portfolio') : slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('portfolio') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('portfolio') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('portfolio')
     : slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('portfolio', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('portfolio')
@@ -55,6 +56,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     ...(slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishSocialMeta('portfolio', canonicalUrl) : {}),
     ...(slug === 'seo' && validLocale === 'tr' ? getSeoTurkishSocialMeta('portfolio', canonicalUrl) : {}),
     ...(slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoSocialMeta('portfolio', canonicalUrl) : {}),
+    ...(slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsSocialMeta('portfolio', canonicalUrl) : {}),
     alternates: {
       canonical: canonicalUrl,
       languages: generateAlternateLinks(path),
@@ -102,6 +104,8 @@ export default async function ServicePortfolioPage({ params }: PageProps) {
   }
 
   if (slug === 'ecommerce-seo' && locale === 'tr') return <EcommerceSeoTurkishPage page="portfolio" />;
+
+  if (slug === 'google-ads' && locale === 'tr') return <GoogleAdsTurkishPage page="portfolio" />;
 
   if (slug === 'technical-seo' && locale === 'tr') return <TechnicalSeoTurkishPage page="portfolio" />;
 

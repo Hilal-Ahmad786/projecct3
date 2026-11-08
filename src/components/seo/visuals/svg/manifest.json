@@ -240,6 +240,50 @@
       "drawPaths": [
         "drop-line"
       ]
+    },
+    {
+      "file": "gads-campaign-types.svg",
+      "drawPaths": []
+    },
+    {
+      "file": "gads-budget-split.svg",
+      "drawPaths": [
+        "to-google",
+        "to-paksoft"
+      ]
+    },
+    {
+      "file": "gads-search-terms.svg",
+      "drawPaths": []
+    },
+    {
+      "file": "gads-conversion-actions.svg",
+      "drawPaths": []
+    },
+    {
+      "file": "gads-tag-flow.svg",
+      "drawPaths": [
+        "flow-1",
+        "flow-2"
+      ]
+    },
+    {
+      "file": "gads-ga4-match.svg",
+      "drawPaths": [
+        "map-1",
+        "map-2"
+      ]
+    },
+    {
+      "file": "gads-gtm-test.svg",
+      "drawPaths": []
+    },
+    {
+      "file": "gads-lead-quality.svg",
+      "drawPaths": [
+        "to-ok",
+        "to-check"
+      ]
     }
   ]
 }

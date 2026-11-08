@@ -368,5 +368,103 @@ export default function more({ ICONS, svg, g, rect, bar, slot, path, text, icon,
       + g('first', `${rect(310, 250, 250, 32, { rx: 16, fill: L, stroke: T })}${slot('first', 322, 257, 230, 18)}`);
     svg('traffic-drop', 600, 312, body, ['drop-line']);
   }
+
+  /* ---------------------------------------------------- Google Ads (gads-*) */
+  Object.assign(ICONS, {
+    cursor: 'M5 4l6 16 2.5-6.5L20 11z M13.5 13.5L19 19',
+    phone: 'M7 3h4l1.5 5-2.5 1.5a11 11 0 0 0 5 5l1.5-2.5 5 1.5v4a2 2 0 0 1-2 2A17 17 0 0 1 5 5a2 2 0 0 1 2-2z',
+    play: 'M5 4h14v16H5z M10 9l5 3-5 3z',
+    mail: 'M4 6h16v12H4z M4 7l8 6 8-6',
+    tag: 'M4 12V4h8l8 8-8 8z M8.5 8.5h.01',
+  });
+  const adTag = (x, y) => `${rect(x, y, 34, 16, { rx: 4, fill: '#FFFFFF', stroke: D, sw: 1.2 })}${text(x + 17, y + 8.5, 'Ad', { size: 9, fill: D })}`;
+
+  // gads-campaign-types — Arama Ağı, Alışveriş ve Performance Max
+  {
+    const col = (n, x, inner, hi) => g(`type-${n}`, `${rect(x, 16, 182, 276, { stroke: hi ? T : B, sw: hi ? 2 : 1.5, fill: hi ? L : '#FFFFFF' })}${slot(`type-${n}`, x + 12, 28, 158, 18)}${slot(`type-sub-${n}`, x + 12, 50, 158, 16)}${path(`M${x + 12} 78 H${x + 170}`, { stroke: B, sw: 1.5 })}${inner}`);
+    const search = (x) => [0, 1].map((r) => `${rect(x + 12, 92 + r * 76, 158, 64, { rx: 8, fill: '#FFFFFF' })}${adTag(x + 20, 100 + r * 76)}${bar(x + 60, 104 + r * 76, 90, 7, T)}${bar(x + 20, 124 + r * 76, 140)}${bar(x + 20, 138 + r * 76, 110)}`).join('') + `${bar(x + 20, 252, 140)}${bar(x + 20, 266, 100)}`;
+    const shop = (x) => [0, 1].map((r) => [0, 1].map((c) => `${rect(x + 12 + c * 82, 92 + r * 96, 76, 86, { rx: 8, fill: '#FFFFFF' })}${rect(x + 20 + c * 82, 100 + r * 96, 60, 40, { rx: 6, fill: L, stroke: 'none' })}${bar(x + 20 + c * 82, 148 + r * 96, 50)}${bar(x + 20 + c * 82, 162 + r * 96, 34, 7, T)}`).join('')).join('');
+    const pmax = (x) => [['search', 0], ['play', 1], ['mail', 2], ['globe', 3], ['pin', 4]].map(([ic, i]) => `${badge(ic, x + 16 + (i % 3) * 52, 100 + Math.floor(i / 3) * 58, { size: 40, fill: '#FFFFFF' })}`).join('') + `${rect(x + 12, 226, 158, 54, { rx: 8, fill: '#FFFFFF' })}${slot('pmax-note', x + 20, 244, 142, 18)}`;
+    svg('gads-campaign-types', 600, 308, col(1, 16, search(16), false) + col(2, 209, shop(209), false) + col(3, 402, pmax(402), true));
+  }
+
+  // gads-budget-split — reklam bütçesi Google'a, yönetim ve kurulum ayrı kalem
+  {
+    const body = g('budget', `${rect(16, 24, 250, 110, { stroke: T, sw: 2, fill: L })}${badge('chart', 32, 40, { size: 36, fill: '#FFFFFF' })}${slot('budget', 78, 46, 176, 18)}${slot('budget-sub', 32, 92, 222, 16)}`)
+      + g('fee', `${rect(16, 152, 250, 64, { rx: 12 })}${badge('team', 32, 166, { size: 36 })}${slot('fee', 78, 175, 176, 18)}`)
+      + g('setup', `${rect(16, 230, 250, 64, { rx: 12, fill: SAF, stroke: S, extra: ' stroke-dasharray="5 4"' })}${badge('pen', 32, 244, { size: 36, fill: '#FFFFFF', stroke: '#A8661A' })}${slot('setup', 78, 253, 176, 18)}`)
+      + path('M266 79 C320 79 320 79 360 79', { id: 'to-google', sw: 2.5 }) + path('M266 184 C320 184 320 220 360 220', { id: 'to-paksoft', sw: 2.5 }) + path('M266 262 C320 262 320 230 360 230', { id: 'to-paksoft-2', stroke: S, sw: 2, dash: '4 4' })
+      + g('google', `${rect(360, 40, 224, 78, { stroke: T, sw: 2 })}${slot('google', 376, 56, 196, 18)}${slot('google-sub', 376, 82, 196, 16)}`)
+      + g('paksoft', `${rect(360, 182, 224, 86, { rx: 12 })}${slot('paksoft', 376, 200, 196, 18)}${slot('paksoft-sub', 376, 228, 196, 16)}`);
+    svg('gads-budget-split', 600, 310, body, ['to-google', 'to-paksoft']);
+  }
+
+  // gads-search-terms — arama terimleri raporu ve negatif anahtar kelimeler
+  {
+    let body = g('report', `${rect(16, 16, 568, 284)}${slot('report', 32, 30, 300, 18)}${slot('h-term', 32, 62, 250, 16)}${slot('h-action', 400, 62, 168, 16)}${path('M32 86 H568', { stroke: B, sw: 1.5 })}`);
+    [0, 1, 2, 3, 4].forEach((r) => {
+      const neg = r === 1 || r === 3;
+      body += g(`term-${r + 1}`, `${rect(28, 96 + r * 40, 544, 32, { rx: 8, fill: neg ? SAF : (r % 2 ? G : '#FFFFFF'), stroke: neg ? S : 'none' })}${icon('search', 38, 100 + r * 40, { s: 0.85 })}${slot(`term-${r + 1}`, 64, 103 + r * 40, 300, 18)}${rect(400, 101 + r * 40, 160, 22, { rx: 11, fill: neg ? '#FFFFFF' : L, stroke: neg ? S : 'none' })}${slot(`action-${r + 1}`, 404, 103 + r * 40, 152, 18)}`);
+    });
+    svg('gads-search-terms', 600, 316, body);
+  }
+
+  // gads-conversion-actions — birincil ve ikincil dönüşüm eylemleri
+  {
+    let body = slot('h-action', 16, 8, 260, 16) + slot('h-role', 420, 8, 164, 16);
+    [['form', true], ['cart', true], ['phone', false], ['cursor', false]].forEach(([ic, primary], i) => {
+      const y = 32 + i * 64; const n = i + 1;
+      body += g(`act-${n}`, `${rect(16, y, 568, 52, { rx: 10, fill: primary ? L : '#FFFFFF', stroke: primary ? T : B })}${badge(ic, 30, y + 8, { size: 36, fill: primary ? '#FFFFFF' : L })}${slot(`act-${n}`, 78, y + 10, 300, 18)}${slot(`act-sub-${n}`, 78, y + 30, 300, 14)}${rect(420, y + 14, 148, 24, { rx: 12, fill: primary ? D : G, stroke: 'none' })}${slot(`role-${n}`, 420, y + 17, 148, 18)}`);
+    });
+    svg('gads-conversion-actions', 600, 300, body);
+  }
+
+  // gads-tag-flow — site eylemi → etiket testi → dönüşüm raporu
+  {
+    let body = '';
+    [['form', 16], ['code', 222], ['chart', 428]].forEach(([ic, x], i) => {
+      const n = i + 1; const last = n === 3;
+      body += g(`step-${n}`, `${rect(x, 40, 156, 170, { stroke: last ? T : B, sw: last ? 2 : 1.5, fill: last ? L : '#FFFFFF' })}${badge(ic, x + 56, 56, { size: 44, fill: last ? '#FFFFFF' : L })}${slot(`step-${n}`, x + 8, 112, 140, 18)}${slot(`sub-${n}`, x + 8, 136, 140, 16)}${okChip(x + 78, 182)}`);
+      if (i < 2) body += path(`M${x + 158} 125 L${x + 220} 125`, { id: `flow-${n}`, sw: 2.5 }) + path(`M${x + 213} 119 L${x + 220} 125 L${x + 213} 131`, { id: `tip-${n}`, sw: 2.5 });
+    });
+    body += slot('note', 16, 228, 568, 16);
+    svg('gads-tag-flow', 600, 252, body, ['flow-1', 'flow-2']);
+  }
+
+  // gads-ga4-match — GA4 olayları ile Google Ads dönüşüm eylemleri
+  {
+    let body = slot('h-ga4', 16, 10, 240, 16) + slot('h-ads', 344, 10, 240, 16);
+    [0, 1, 2].forEach((r) => {
+      const y = 40 + r * 76; const n = r + 1; const skip = n === 3;
+      body += g(`ga4-${n}`, `${rect(16, y, 240, 56, { rx: 10, fill: G })}${slot(`ga4-${n}`, 32, y + 19, 210, 18)}`);
+      body += skip ? path(`M256 ${y + 28} L300 ${y + 28}`, { id: `map-${n}`, stroke: B, sw: 2, dash: '4 4' }) : path(`M256 ${y + 28} L344 ${y + 28}`, { id: `map-${n}`, sw: 2.5 });
+      body += skip ? g(`ads-${n}`, `${rect(344, y, 240, 56, { rx: 10, fill: '#FFFFFF', stroke: B, extra: ' stroke-dasharray="5 4"' })}${slot(`ads-${n}`, 360, y + 19, 210, 18)}`) : g(`ads-${n}`, `${rect(344, y, 240, 56, { rx: 10, stroke: T, fill: L })}${okChip(366, y + 28)}${slot(`ads-${n}`, 386, y + 19, 190, 18)}`);
+    });
+    svg('gads-ga4-match', 600, 274, body, ['map-1', 'map-2']);
+  }
+
+  // gads-gtm-test — önizleme modunda etiket testi
+  {
+    let body = g('panel', `${rect(16, 16, 568, 280)}${badge('code', 32, 30, { size: 34 })}${slot('panel', 76, 38, 300, 18)}${rect(440, 34, 128, 26, { rx: 13, fill: L, stroke: 'none' })}${slot('mode', 444, 38, 120, 18)}${path('M32 80 H568', { stroke: B, sw: 1.5 })}`);
+    [['Form gönderimi', true], ['Teşekkür sayfası', true], ['Boş form denemesi', false]].forEach((_, r) => {
+      const ok = r !== 2; const y = 96 + r * 56;
+      body += g(`test-${r + 1}`, `${rect(32, y, 536, 44, { rx: 8, fill: ok ? '#FFFFFF' : SAF, stroke: ok ? B : S })}${okChip(54, y + 22, ok)}${slot(`test-${r + 1}`, 76, y + 13, 280, 18)}${slot(`result-${r + 1}`, 380, y + 13, 176, 18)}`);
+    });
+    body += g('log', `${rect(32, 262, 536, 22, { rx: 11, fill: G, stroke: 'none' })}${slot('log', 44, 264, 512, 18)}`);
+    svg('gads-gtm-test', 600, 312, body);
+  }
+
+  // gads-lead-quality — formlar geliyor, uygun müşteri az: bölge ve sorgu ayrımı
+  {
+    let body = g('forms', `${rect(16, 24, 230, 252)}${badge('form', 32, 40, { size: 36 })}${slot('forms', 78, 48, 160, 18)}`);
+    [0, 1, 2, 3, 4].forEach((r) => {
+      const ok = r === 0 || r === 3;
+      body += `${rect(32, 92 + r * 34, 198, 26, { rx: 6, fill: ok ? L : SAF, stroke: 'none' })}${slot(`lead-${r + 1}`, 40, 96 + r * 34, 182, 18)}`;
+    });
+    body += path('M246 150 C280 150 284 96 316 96', { id: 'to-ok', sw: 2.5 }) + path('M246 150 C280 150 284 210 316 210', { id: 'to-check', stroke: S, sw: 2.5 })
+      + g('ok', `${rect(316, 52, 268, 88, { stroke: T, sw: 2, fill: L })}${slot('ok', 332, 66, 236, 18)}${slot('ok-sub', 332, 92, 236, 32)}`)
+      + g('check', `${rect(316, 164, 268, 112, { fill: SAF, stroke: S })}${slot('check', 332, 178, 236, 18)}${slot('check-1', 332, 206, 236, 16)}${slot('check-2', 332, 228, 236, 16)}${slot('check-3', 332, 250, 236, 16)}`);
+    svg('gads-lead-quality', 600, 300, body, ['to-ok', 'to-check']);
+  }
 }
 

@@ -171,3 +171,74 @@ export function TechnicalAuditScene() {
     </Scene>
   );
 }
+
+/* ── Google Ads: the sponsored result climbs to the top, then Hedef → Kampanya → Ölçüm ── */
+export function GoogleAdsScene() {
+  const reduced = useReducedMotion();
+  const rows = [0, 1, 2, 3];
+  const cards = ['Hedef', 'Kampanya', 'Ölçüm'];
+  return (
+    <Scene glow={H.turquoise}>
+      <GirihHalo color={H.saffron} opacity={0.2} />
+      <HeritageParticles count={8} />
+      <motion.div {...riseIn(0.1)} className="absolute inset-4 flex flex-col items-center justify-center gap-3 sm:inset-6">
+        <motion.div
+          className="w-full overflow-hidden rounded-xl shadow-2xl"
+          style={{ background: H.white, border: `1px solid ${H.sand}` }}
+          animate={reduced ? undefined : { y: [0, -6, 0] }}
+          transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
+        >
+          <div className="flex items-center gap-2 px-3 py-2.5" style={{ background: H.ivory, borderBottom: `1px solid ${H.sand}` }}>
+            <Search />
+            <div className="flex h-5 flex-1 items-center overflow-hidden rounded-full px-2.5 text-[9px] font-semibold" style={{ background: H.white, border: `1px solid ${H.sand}`, color: H.ink }}>
+              <motion.span className="inline-block overflow-hidden whitespace-nowrap" initial={{ maxWidth: 0 }} animate={{ maxWidth: 170 }} transition={{ delay: 0.4, duration: 0.9, ease: 'linear' }}>
+                endüstriyel kompresör bakımı
+              </motion.span>
+            </div>
+          </div>
+          <div className="relative space-y-2 p-3" style={{ height: 196 }}>
+            {rows.map((i) => (
+              <div key={i} className="rounded-lg px-3 py-2 space-y-1.5" style={{ background: H.ivory, height: 41 }}>
+                <div className="h-1.5 rounded-full" style={{ background: H.sand, width: `${70 - i * 8}%` }} />
+                <div className="h-1.5 rounded-full" style={{ background: H.sand, width: '40%', opacity: 0.6 }} />
+              </div>
+            ))}
+            {/* the sponsored result */}
+            <motion.div
+              className="absolute left-3 right-3 flex items-center gap-2 rounded-lg px-2.5 py-1.5 shadow-lg"
+              style={{ background: H.white, border: `1.6px solid ${H.turquoise}`, height: 41, top: 12 }}
+              initial={{ y: 147 }}
+              animate={reduced ? { y: 0 } : { y: [147, 98, 49, 0] }}
+              transition={{ delay: 1.2, duration: 2.6, times: [0, 0.35, 0.7, 1], ease: 'easeInOut' }}
+            >
+              <span className="shrink-0 rounded px-1.5 py-0.5 text-[8px] font-bold" style={{ border: `1px solid ${H.turquoiseDeep}`, color: H.turquoiseDeep }}>Sponsorlu</span>
+              <div className="min-w-0 flex-1">
+                <div className="truncate text-[9px] font-bold" style={{ color: H.turquoiseDeep }}>siteniz.com › kompresör-bakımı</div>
+                <div className="mt-1 h-1.5 w-3/5 rounded-full" style={{ background: H.turquoiseLight }} />
+              </div>
+              <motion.span {...popIn(3.9)} className="shrink-0 rounded-full px-2 py-0.5 text-[9px] font-bold" style={{ background: H.saffron, color: H.white }}>
+                Form ✓
+              </motion.span>
+            </motion.div>
+          </div>
+        </motion.div>
+        {/* Hedef → Kampanya → Ölçüm, each highlighted once */}
+        <div className="flex items-center gap-1.5" aria-hidden="true">
+          {cards.map((label, i) => (
+            <React.Fragment key={label}>
+              <motion.span
+                className="rounded-full px-2.5 py-1 text-[10px] font-semibold shadow-sm"
+                style={{ background: H.white, color: H.turquoiseDeep, border: `1px solid ${H.sand}` }}
+                animate={reduced ? undefined : { backgroundColor: [H.white, H.turquoiseLight, H.white], borderColor: [H.sand, H.turquoise, H.sand] }}
+                transition={{ delay: 4.3 + i * 0.6, duration: 0.9 }}
+              >
+                {label}
+              </motion.span>
+              {i < cards.length - 1 && <span className="text-[10px] font-bold" style={{ color: H.turquoise }}>→</span>}
+            </React.Fragment>
+          ))}
+        </div>
+      </motion.div>
+    </Scene>
+  );
+}

@@ -11,8 +11,7 @@ import PlatformPageLinks, { type Platform } from '@/components/e-commerce/Platfo
 import { sectionId } from '@/components/e-commerce/PageJumpNav';
 import { ServiceMdBody, matchPrefix, readServiceChunks, serviceFaqItems, type Chunk, type SectionVisual, type ServiceMdConfig } from '@/components/e-commerce/ServiceMarkdownPage';
 
-// Shared engine for the Turkish SEO-family service pages (SEO, E-Ticaret SEO,
-// Teknik SEO). Copy lives in content/<service>/tr/<page>.md and renders through
+// Shared engine for Turkish service pages using section markdown. Copy lives in content/<service>/tr/<page>.md and renders through
 // ServiceMarkdownPage like the pazaryeri pages; each service supplies its
 // metadata, section visuals, hero scenes and CTA wording. The last `##` block
 // of a page ("Siteniz…", "Mağazanız…") becomes the dark closing CTA band.
@@ -24,7 +23,7 @@ export type SeoMeta = { title: string; description: string; heading: string; int
 type Guide = { slug: string; title: string; categoryLabel: string; excerpt: string; featuredImage: string; imageAlt?: string; datePublished?: string | null };
 
 export interface SeoServiceConfig {
-  platform: Extract<Platform, 'seo' | 'ecommerce-seo' | 'technical-seo'>;
+  platform: Extract<Platform, 'seo' | 'ecommerce-seo' | 'technical-seo' | 'google-ads'>;
   contentDir: string;
   base: string;
   enquiry: string;
@@ -69,7 +68,7 @@ export function createSeoService(cfg: SeoServiceConfig) {
     return (
       <div className="relative w-full max-w-xl">
         {children}
-        <div aria-hidden="true" data-ikas-loop className="ikas-badge-float absolute -left-2 -top-14 z-20 rounded-[20px] bg-white p-3 shadow-[0_12px_30px_rgba(18,25,38,0.18)] ring-1 ring-black/5 sm:-left-6">
+        <div aria-hidden="true" data-ikas-loop={cfg.platform === 'google-ads' ? undefined : ''} className={`absolute -left-2 -top-14 z-20 rounded-[20px] bg-white p-3 shadow-[0_12px_30px_rgba(18,25,38,0.18)] ring-1 ring-black/5 sm:-left-6 ${cfg.platform === 'google-ads' ? '' : 'ikas-badge-float'} ${cfg.platform === 'google-ads' ? 'google-ads-hero-mark' : ''}`}>
           <Icon className="h-10 w-10 text-heritage-turquoise-deep sm:h-12 sm:w-12" />
         </div>
       </div>

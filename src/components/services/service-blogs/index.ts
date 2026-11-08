@@ -9,6 +9,7 @@ import { marketplaceBlog } from './marketplace';
 import { seoBlog } from './seo';
 import { ecommerceSeoBlog } from './ecommerce-seo';
 import { technicalSeoBlog } from './technical-seo';
+import { googleAdsBlog } from './google-ads';
 
 // Presentation config per service blog. The list of enabled services/locales
 // lives in src/lib/service-blogs.ts (kept JSX-free for the sitemap).
@@ -21,6 +22,7 @@ const definitions: Record<string, ServiceBlogDefinition> = {
   'seo': seoBlog,
   'ecommerce-seo': ecommerceSeoBlog,
   'technical-seo': technicalSeoBlog,
+  'google-ads': googleAdsBlog,
 };
 
 export function getServiceBlog(serviceSlug: string, locale: string): ServiceBlogDefinition | null {

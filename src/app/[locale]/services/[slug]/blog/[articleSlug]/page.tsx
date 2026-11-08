@@ -13,6 +13,7 @@ import { getMarketplaceGuide, getMarketplaceGuides } from '@/components/services
 import { getSeoGuide, getSeoGuides } from '@/components/services/service-blogs/seo';
 import { getEcommerceSeoGuide, getEcommerceSeoGuides } from '@/components/services/service-blogs/ecommerce-seo';
 import { getTechnicalSeoGuide, getTechnicalSeoGuides } from '@/components/services/service-blogs/technical-seo';
+import { getGoogleAdsGuide, getGoogleAdsGuides } from '@/components/services/service-blogs/google-ads';
 
 // DB-backed service guides (see getServiceBlogArticle) pick up edits hourly;
 // admin saves also revalidate the 'blog' cache tag immediately.
@@ -30,7 +31,8 @@ export function generateStaticParams() {
   const technicalSeo = getTechnicalSeoGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'technical-seo', articleSlug }));
   const ecommerceSeo = getEcommerceSeoGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'ecommerce-seo', articleSlug }));
   const marketplace = getMarketplaceGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'marketplace-development', articleSlug }));
-  return [...corporate, ...shopify, ...customEcommerce, ...marketplace, ...seo, ...ecommerceSeo, ...technicalSeo];
+  const googleAds = getGoogleAdsGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'google-ads', articleSlug }));
+  return [...corporate, ...shopify, ...customEcommerce, ...marketplace, ...seo, ...ecommerceSeo, ...technicalSeo, ...googleAds];
 }
 
 interface PageProps {
@@ -58,6 +60,11 @@ async function getServiceBlogArticle(serviceSlug: string, locale: string, articl
   }
   if (serviceSlug === 'technical-seo' && locale === 'tr') {
     const post = getTechnicalSeoGuide(articleSlug);
+    if (!post) return null;
+    return { blog, post, canonical: `${SITE_URL}${serviceBlogPath(blog.config)}/${articleSlug}` };
+  }
+  if (serviceSlug === 'google-ads' && locale === 'tr') {
+    const post = getGoogleAdsGuide(articleSlug);
     if (!post) return null;
     return { blog, post, canonical: `${SITE_URL}${serviceBlogPath(blog.config)}/${articleSlug}` };
   }
@@ -171,6 +178,7 @@ export default async function CorporateWebsiteGuideRoute({ params }: PageProps) 
       ? getShopifyGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))
       : slug === 'custom-ecommerce' ? getCustomEcommerceGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))
       : slug === 'marketplace-development' ? getMarketplaceGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))
+      : slug === 'google-ads' ? getGoogleAdsGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))
       : await (async () => {
         const { getPublicServiceBlogCards } = await import('@/lib/database/public-queries');
         return getPublicServiceBlogCards(slug, locale, 24, slug === 'ikas-development' ? 'cover-images-2026-11' : '').catch(() => []);
