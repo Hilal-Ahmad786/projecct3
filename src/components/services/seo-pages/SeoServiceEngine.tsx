@@ -23,7 +23,7 @@ export type SeoMeta = { title: string; description: string; heading: string; int
 type Guide = { slug: string; title: string; categoryLabel: string; excerpt: string; featuredImage: string; imageAlt?: string; datePublished?: string | null };
 
 export interface SeoServiceConfig {
-  platform: Extract<Platform, 'seo' | 'ecommerce-seo' | 'technical-seo' | 'google-ads'>;
+  platform: Extract<Platform, 'seo' | 'ecommerce-seo' | 'technical-seo' | 'google-ads' | 'google-search-ads'>;
   contentDir: string;
   base: string;
   enquiry: string;
@@ -40,6 +40,7 @@ export interface SeoServiceConfig {
   secondary: Record<SeoSubPage, [string, string]>;
   closingLink: Record<SeoContentPage, [string, string]>;
   closingDefault: { title: string; text: string };
+  closingCopy?: Partial<Record<SeoContentPage, { title: string; text: string }>>;
   jumpLabels: [string, string][];
   sectionIds: Record<string, string>;
   portfolioBadge?: string;
@@ -68,7 +69,7 @@ export function createSeoService(cfg: SeoServiceConfig) {
     return (
       <div className="relative w-full max-w-xl">
         {children}
-        <div aria-hidden="true" data-ikas-loop={cfg.platform === 'google-ads' ? undefined : ''} className={`absolute -left-2 -top-14 z-20 rounded-[20px] bg-white p-3 shadow-[0_12px_30px_rgba(18,25,38,0.18)] ring-1 ring-black/5 sm:-left-6 ${cfg.platform === 'google-ads' ? '' : 'ikas-badge-float'} ${cfg.platform === 'google-ads' ? 'google-ads-hero-mark' : ''}`}>
+        <div aria-hidden="true" data-ikas-loop={cfg.platform === 'google-ads' || cfg.platform === 'google-search-ads' ? undefined : ''} className={`absolute -left-2 -top-14 z-20 rounded-[20px] bg-white p-3 shadow-[0_12px_30px_rgba(18,25,38,0.18)] ring-1 ring-black/5 sm:-left-6 ${cfg.platform === 'google-ads' || cfg.platform === 'google-search-ads' ? '' : 'ikas-badge-float'} ${cfg.platform === 'google-ads' || cfg.platform === 'google-search-ads' ? 'google-ads-hero-mark' : ''}`}>
           <Icon className="h-10 w-10 text-heritage-turquoise-deep sm:h-12 sm:w-12" />
         </div>
       </div>
@@ -76,8 +77,9 @@ export function createSeoService(cfg: SeoServiceConfig) {
   }
 
   function ClosingCta({ page, closing }: { page: SeoContentPage; closing?: Chunk }) {
-    const title = closing?.title ?? cfg.closingDefault.title;
-    const text = closing ? closingText(closing.intro) : cfg.closingDefault.text;
+    const copy = cfg.closingCopy?.[page];
+    const title = copy?.title ?? closing?.title ?? cfg.closingDefault.title;
+    const text = copy?.text ?? (closing ? closingText(closing.intro) : cfg.closingDefault.text);
     const [linkLabel, linkHref] = cfg.closingLink[page];
     return (
       <section data-custom-ecom-reveal className="bg-gray-950 text-white">

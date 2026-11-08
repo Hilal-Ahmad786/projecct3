@@ -394,6 +394,10 @@
 }
 
 /* Google Ads visuals (gads-*). */
+.gsa-hero-visual { transform-origin: 50% 50%; animation: gsa-hero-enter 280ms cubic-bezier(.2,.7,.25,1) both; }
+.gsa-hero-visual .gsa-visual-card { box-shadow: 0 8px 24px rgb(9 93 92 / 8%); }
+@keyframes gsa-hero-enter { from { opacity: .9; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) { .gsa-hero-visual { animation: none; } }
 .seo-art :is([class*="sev-slot-type-"], .seo-art--gads-tag-flow [class*="sev-slot-step-"], .seo-art--gads-tag-flow [class*="sev-slot-sub-"], .seo-art--gads-tag-flow .sev-slot-note, .sev-slot-pmax-note, .sev-slot-mode, [class*="sev-slot-action-"], .seo-art--gads-conversion-actions [class*="sev-slot-role-"]) { justify-content: center; text-align: center; }
 .seo-art.seo-art--gads-conversion-actions :is(.sev-slot.sev-slot-role-1, .sev-slot.sev-slot-role-2) { color: #fff; }
 .seo-art :is([class^="sev-slot sev-slot-type-"]:not([class*="type-sub"]), .sev-slot-budget, .sev-slot-fee, .sev-slot-setup, .sev-slot-google, .sev-slot-paksoft, .sev-slot-forms, .sev-slot-ok, .sev-slot-check, .seo-art--gads-tag-flow [class*="sev-slot-step-"], [class*="sev-slot-act-"]:not([class*="act-sub"]), .seo-art--gads-search-terms .sev-slot-report, .seo-art--gads-gtm-test .sev-slot-panel) { color: #111827; font-weight: 700; }

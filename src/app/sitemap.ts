@@ -12,6 +12,7 @@ import { getTechnicalSeoGuides } from '@/components/services/service-blogs/techn
 import customEcommerceArticles from '../../content/blog/custom-ecommerce/manifest.json';
 import marketplaceArticles from '../../content/blog/marketplace/manifest.json';
 import googleAdsArticles from '../../content/blog/google-ads/manifest.json';
+import googleSearchAdsArticles from '../../content/blog/google-search-ads/manifest.json';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 const allLocales: Locale[] = ['en', 'tr', 'de', 'ar', 'ur'];
@@ -198,6 +199,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const candidate = `${baseUrl}/tr${localizeFullPath(path, 'tr')}`;
     if (!entries.some((item) => item.url === candidate)) entries.push(entry('tr', path, { priority: index === 0 ? PRIORITY.serviceDetail : PRIORITY.other, changeFreq: index === 0 ? 'weekly' : 'monthly', date: DATES.seoRefresh }));
   });
+  const googleSearchAdsPaths = ['/services/google-search-ads', '/services/google-search-ads/features', '/services/google-search-ads/technologies', '/services/google-search-ads/process', '/services/google-search-ads/portfolio', '/services/google-search-ads/pricing', '/services/google-search-ads/faq', '/services/google-search-ads/blog'];
+  googleSearchAdsPaths.forEach((path, index) => {
+    const candidate = `${baseUrl}/tr${localizeFullPath(path, 'tr')}`;
+    if (!entries.some((item) => item.url === candidate)) entries.push(entry('tr', path, { priority: index === 0 ? PRIORITY.serviceDetail : PRIORITY.other, changeFreq: index === 0 ? 'weekly' : 'monthly', date: new Date('2026-11-08T00:00:00Z') }));
+  });
 
   // 5. Blog posts (live from DB). Each post exists in ONE language
   // (BlogPost.language), so list it once under its own locale — advertising
@@ -274,6 +280,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: PRIORITY.blogPost,
       changeFreq: 'monthly',
       date: new Date('2026-11-08T00:00:00Z'),
+      includeAlternates: false,
+    }));
+  });
+  googleSearchAdsArticles.forEach(({ slug, datePublished }) => {
+    entries.push(entry('tr', `/services/google-search-ads/blog/${slug}`, {
+      priority: PRIORITY.blogPost,
+      changeFreq: 'monthly',
+      date: new Date(`${datePublished}T00:00:00Z`),
       includeAlternates: false,
     }));
   });

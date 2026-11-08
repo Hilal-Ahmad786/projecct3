@@ -15,6 +15,7 @@ import TechnicalSeoTurkishPage, { getTechnicalSeoMeta, getTechnicalSeoSocialMeta
 import SeoTurkishPage, { getSeoTurkishMeta, getSeoTurkishSocialMeta } from '@/components/services/SeoTurkishPage';
 import EcommerceSeoTurkishPage, { getEcommerceSeoTurkishMeta, getEcommerceSeoTurkishSocialMeta } from '@/components/services/EcommerceSeoTurkishPage';
 import { GoogleAdsTurkishPage, getGoogleAdsMeta, getGoogleAdsSocialMeta } from '@/components/services/GoogleAdsTurkishPage';
+import { GoogleSearchAdsTurkishPage, getGoogleSearchAdsMeta, getGoogleSearchAdsSocialMeta } from '@/components/services/GoogleSearchAdsTurkishPage';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -43,7 +44,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: 'Shopify Tema Tasarımı ve Mağaza Özellikleri | PakSoft',
     description: 'Shopify tema tasarımı, tema özelleştirme, ürün sayfası tasarımı ve ödeme, kargo entegrasyonu kapsamını inceleyin. Mağazanıza uygun özellikleri PakSoft ile belirleyin.',
   } : undefined;
-  const customMeta = slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsMeta('features') : slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoMeta('features') : slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('features') : slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('features') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('features') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('features')
+  const customMeta = slug === 'google-search-ads' && validLocale === 'tr' ? getGoogleSearchAdsMeta('features') : slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsMeta('features') : slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoMeta('features') : slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('features') : slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('features') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('features') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('features')
     : slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('features', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('features')
@@ -54,10 +55,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title,
     description,
-    robots: serviceRobots(service),
+    robots: slug === 'google-search-ads' && validLocale === 'tr' ? { index: true, follow: true } : serviceRobots(service),
     ...(slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishSocialMeta('features', canonicalUrl) : {}),
     ...(slug === 'seo' && validLocale === 'tr' ? getSeoTurkishSocialMeta('features', canonicalUrl) : {}),
     ...(slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoSocialMeta('features', canonicalUrl) : {}),
+    ...(slug === 'google-search-ads' && validLocale === 'tr' ? getGoogleSearchAdsSocialMeta('features', canonicalUrl) : {}),
     ...(slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsSocialMeta('features', canonicalUrl) : {}),
     ...(shopifyTurkishMeta ? {
       openGraph: {
@@ -99,6 +101,8 @@ export default async function ServiceFeaturesPage({ params }: PageProps) {
   }
 
   if (slug === 'ecommerce-seo' && locale === 'tr') return <EcommerceSeoTurkishPage page="features" />;
+
+  if (slug === 'google-search-ads' && locale === 'tr') return <GoogleSearchAdsTurkishPage page="features" />;
 
   if (slug === 'google-ads' && locale === 'tr') return <GoogleAdsTurkishPage page="features" />;
 
