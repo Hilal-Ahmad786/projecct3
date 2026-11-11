@@ -16,6 +16,8 @@ import SeoTurkishPage, { getSeoTurkishMeta, getSeoTurkishSocialMeta } from '@/co
 import EcommerceSeoTurkishPage, { getEcommerceSeoTurkishMeta, getEcommerceSeoTurkishSocialMeta } from '@/components/services/EcommerceSeoTurkishPage';
 import { GoogleAdsTurkishPage, getGoogleAdsMeta, getGoogleAdsSocialMeta } from '@/components/services/GoogleAdsTurkishPage';
 import { GoogleSearchAdsTurkishPage, getGoogleSearchAdsMeta, getGoogleSearchAdsSocialMeta } from '@/components/services/GoogleSearchAdsTurkishPage';
+import { GoogleShoppingTurkishPage, getGoogleShoppingMeta, getGoogleShoppingSocialMeta } from '@/components/services/GoogleShoppingTurkishPage';
+import { PerformanceMaxTurkishPage, getPerformanceMaxMeta, getPerformanceMaxSocialMeta } from '@/components/services/PerformanceMaxTurkishPage';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
@@ -40,7 +42,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const path = `/services/${slug}/process`;
   const localizedPath = localizeFullPath(path, validLocale);
 
-  const customMeta = slug === 'google-search-ads' && validLocale === 'tr' ? getGoogleSearchAdsMeta('process') : slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsMeta('process') : slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoMeta('process') : slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('process') : slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('process') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('process') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('process')
+  const customMeta = slug === 'performance-max' && validLocale === 'tr' ? getPerformanceMaxMeta('process') : slug === 'google-shopping' && validLocale === 'tr' ? getGoogleShoppingMeta('process') : slug === 'google-search-ads' && validLocale === 'tr' ? getGoogleSearchAdsMeta('process') : slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsMeta('process') : slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoMeta('process') : slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('process') : slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('process') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('process') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('process')
     : slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('process', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('process')
@@ -55,10 +57,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title,
     description,
-    robots: slug === 'google-search-ads' && validLocale === 'tr' ? { index: true, follow: true } : serviceRobots(service),
+    robots: (slug === 'google-search-ads' || slug === 'google-shopping' || slug === 'performance-max') && validLocale === 'tr' ? { index: true, follow: true } : serviceRobots(service),
     ...(slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishSocialMeta('process', canonicalUrl) : {}),
     ...(slug === 'seo' && validLocale === 'tr' ? getSeoTurkishSocialMeta('process', canonicalUrl) : {}),
     ...(slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoSocialMeta('process', canonicalUrl) : {}),
+    ...(slug === 'performance-max' && validLocale === 'tr' ? getPerformanceMaxSocialMeta('process', canonicalUrl) : {}),
+    ...(slug === 'google-shopping' && validLocale === 'tr' ? getGoogleShoppingSocialMeta('process', canonicalUrl) : {}),
     ...(slug === 'google-search-ads' && validLocale === 'tr' ? getGoogleSearchAdsSocialMeta('process', canonicalUrl) : {}),
     ...(slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsSocialMeta('process', canonicalUrl) : {}),
     ...(slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishSocialMeta('process', canonicalUrl) : slug === 'shopify-development' && validLocale === 'tr' ? {
@@ -93,6 +97,8 @@ export default async function ServiceProcessPage({ params }: PageProps) {
 
   if (slug === 'ecommerce-seo' && locale === 'tr') return <EcommerceSeoTurkishPage page="process" />;
 
+  if (slug === 'performance-max' && locale === 'tr') return <PerformanceMaxTurkishPage page="process" />;
+  if (slug === 'google-shopping' && locale === 'tr') return <GoogleShoppingTurkishPage page="process" />;
   if (slug === 'google-search-ads' && locale === 'tr') return <GoogleSearchAdsTurkishPage page="process" />;
 
   if (slug === 'google-ads' && locale === 'tr') return <GoogleAdsTurkishPage page="process" />;

@@ -23,7 +23,7 @@ export type SeoMeta = { title: string; description: string; heading: string; int
 type Guide = { slug: string; title: string; categoryLabel: string; excerpt: string; featuredImage: string; imageAlt?: string; datePublished?: string | null };
 
 export interface SeoServiceConfig {
-  platform: Extract<Platform, 'seo' | 'ecommerce-seo' | 'technical-seo' | 'google-ads' | 'google-search-ads'>;
+  platform: Extract<Platform, 'seo' | 'ecommerce-seo' | 'technical-seo' | 'google-ads' | 'google-search-ads' | 'google-shopping' | 'performance-max'>;
   contentDir: string;
   base: string;
   enquiry: string;
@@ -33,7 +33,7 @@ export interface SeoServiceConfig {
   Icon: ComponentType<SVGProps<SVGSVGElement>>;
   metadata: Record<SeoPageKind, SeoMeta>;
   visuals: Partial<Record<SeoContentPage, [string, SectionVisual][]>>;
-  heroArt: Record<Exclude<SeoSubPage, 'faq'>, () => ReactNode>;
+  heroArt: Record<Exclude<SeoSubPage, 'faq'>, () => ReactNode> & { faq?: () => ReactNode };
   rotating: Record<SeoSubPage | 'blog', { lead: string; words: string[] }>;
   primary: Record<SeoPageKind, string>;
   /** Hero secondary button: label + anchor ('' = first section). */
@@ -44,6 +44,8 @@ export interface SeoServiceConfig {
   jumpLabels: [string, string][];
   sectionIds: Record<string, string>;
   portfolioBadge?: string;
+  portfolioBadgeFor?: (title: string) => string | undefined;
+  structuredFaq?: boolean;
   blog: { id: string; title: string; text: string; asideTitle: string; asideText: string; guides: () => Guide[] };
 }
 
@@ -99,7 +101,7 @@ export function createSeoService(cfg: SeoServiceConfig) {
   const configFor = (closing?: Chunk): ServiceMdConfig<SeoContentPage> => ({
     enquiry,
     visual: (page, title) => matchPrefix(cfg.visuals[page], title),
-    card: (page) => page === 'portfolio' && cfg.portfolioBadge ? { badge: cfg.portfolioBadge } : undefined,
+    card: (page, _index, title) => page === 'portfolio' ? ((cfg.portfolioBadgeFor?.(title) ?? cfg.portfolioBadge) ? { badge: cfg.portfolioBadgeFor?.(title) ?? cfg.portfolioBadge } : undefined) : undefined,
     jumpLabel: (title) => matchPrefix(cfg.jumpLabels, title) ?? title.replace(/[?:].*$/, ''),
     jumpMark: <Icon className="h-3.5 w-3.5 text-heritage-turquoise-deep" />,
     sectionId: (page, title) => cfg.sectionIds[`${page}:${title}`],
@@ -116,7 +118,7 @@ export function createSeoService(cfg: SeoServiceConfig) {
   function OverviewBody() {
     const { sections, closing } = readPage('overview');
     const faqs = serviceFaqItems(sections);
-    return <><CustomEcommerceMotionScope />{faqs.length > 0 && <FAQJsonLd faqs={faqs} />}<ServiceMdBody page="overview" chunks={sections} config={configFor(closing)} /></>;
+    return <><CustomEcommerceMotionScope />{cfg.structuredFaq !== false && faqs.length > 0 && <FAQJsonLd faqs={faqs} />}<ServiceMdBody page="overview" chunks={sections} config={configFor(closing)} /></>;
   }
 
   function BlogListing() {
@@ -146,7 +148,7 @@ export function createSeoService(cfg: SeoServiceConfig) {
     const target = secondaryHref || (sections[0] ? `#${cfg.sectionIds[`${page}:${sections[0].title}`] ?? sectionId(sections[0].title)}` : '#');
     return <main className="min-h-screen bg-white">
       <CustomEcommerceMotionScope />
-      {faqs.length > 0 && <FAQJsonLd faqs={faqs} />}
+      {cfg.structuredFaq !== false && faqs.length > 0 && <FAQJsonLd faqs={faqs} />}
       <InternalPageHero
         eyebrowNormalCase
         eyebrowIcon={iconChip}
@@ -155,7 +157,7 @@ export function createSeoService(cfg: SeoServiceConfig) {
         heading={copy.heading}
         rotating={cfg.rotating[page]}
         subtitle={copy.intro}
-        scene={page === 'faq' ? <HeroScene><FaqScene /></HeroScene> : <HeroScene>{cfg.heroArt[page]()}</HeroScene>}
+        scene={page === 'faq' ? <HeroScene>{cfg.heroArt.faq ? cfg.heroArt.faq() : <FaqScene />}</HeroScene> : <HeroScene>{cfg.heroArt[page]()}</HeroScene>}
         crumbs={crumbs(copy.heading)}
         actions={<><Link href={enquiry} className={primaryClass}>{cfg.primary[page]}<ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link><a href={target} className={secondaryClass}>{secondaryLabel}</a></>}
       />

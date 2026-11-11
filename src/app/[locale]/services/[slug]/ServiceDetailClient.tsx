@@ -12,7 +12,7 @@ import {
   ShieldCheckIcon, BoltIcon, ChatBubbleLeftRightIcon, CpuChipIcon,
   CodeBracketIcon, DevicePhoneMobileIcon, GlobeAltIcon, SparklesIcon,
   PaintBrushIcon, MegaphoneIcon, ShoppingCartIcon, CloudIcon,
-  ServerStackIcon, LightBulbIcon, WrenchScrewdriverIcon, BuildingStorefrontIcon, MagnifyingGlassIcon, ShoppingBagIcon,
+  ServerStackIcon, LightBulbIcon, WrenchScrewdriverIcon, BuildingStorefrontIcon, MagnifyingGlassIcon, ShoppingBagIcon, ChartBarIcon,
 } from '@heroicons/react/24/outline';
 import Button from '@/components/Button';
 import ServicePortfolio from '@/components/services/ServicePortfolio';
@@ -679,8 +679,10 @@ function HeroSection({
   const isTechnicalSeoTr = service.slug === 'technical-seo' && locale === 'tr';
   const isGoogleAdsTr = service.slug === 'google-ads' && locale === 'tr';
   const isGoogleSearchAdsTr = service.slug === 'google-search-ads' && locale === 'tr';
+  const isGoogleShoppingTr = service.slug === 'google-shopping' && locale === 'tr';
+  const isPerformanceMaxTr = service.slug === 'performance-max' && locale === 'tr';
   // Curated hero art can stand in for a missing DB hero animation.
-  const artOnly = !hasAnimation && (isCustomEcomTr || isMarketTr || isSeoTr || isEcommerceSeoTr || isTechnicalSeoTr || isGoogleAdsTr || isGoogleSearchAdsTr) && !!heroArt;
+  const artOnly = !hasAnimation && (isCustomEcomTr || isMarketTr || isSeoTr || isEcommerceSeoTr || isTechnicalSeoTr || isGoogleAdsTr || isGoogleSearchAdsTr || isGoogleShoppingTr || isPerformanceMaxTr) && !!heroArt;
 
   return (
     <section className="relative overflow-hidden bg-white pt-[var(--navbar-h,64px)] pb-16 lg:pt-[var(--navbar-h,64px)] lg:pb-24">
@@ -751,11 +753,13 @@ function HeroSection({
               {isSeoTr && <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-black/5"><MagnifyingGlassIcon className="h-5 w-5 text-heritage-turquoise-deep" aria-hidden="true" /></span>}
               {isEcommerceSeoTr && <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-black/5"><ShoppingBagIcon className="h-5 w-5 text-heritage-turquoise-deep" aria-hidden="true" /></span>}
               {isTechnicalSeoTr && <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-black/5"><WrenchScrewdriverIcon className="h-5 w-5 text-heritage-turquoise-deep" aria-hidden="true" /></span>}
+              {isGoogleShoppingTr && <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-black/5"><ShoppingBagIcon className="h-5 w-5 text-heritage-turquoise-deep" aria-hidden="true" /></span>}
               {isGoogleSearchAdsTr && <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-black/5"><MagnifyingGlassIcon className="h-5 w-5 text-heritage-turquoise-deep" aria-hidden="true" /></span>}
+              {isPerformanceMaxTr && <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-black/5"><ChartBarIcon className="h-5 w-5 text-heritage-turquoise-deep" aria-hidden="true" /></span>}
               {isGoogleAdsTr && <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-black/5"><MegaphoneIcon className="h-5 w-5 text-heritage-turquoise-deep" aria-hidden="true" /></span>}
               {/* ikas writes its name in lowercase; CSS uppercase would render "İKAS". */}
               <span className={`text-xs font-medium ${colors.eyebrow} ${isIkasTr ? '' : 'uppercase'} tracking-wide`}>
-                {isIkasTr ? IKAS_TR_HERO.eyebrow : isShopifyTr ? 'Shopify Kurulum ve Geliştirme Hizmetleri' : isCustomEcomTr ? 'Özel E-Ticaret Geliştirme' : isMarketTr ? 'Pazaryeri Geliştirme' : isEcommerceSeoTr ? 'E-Ticaret SEO Hizmeti ve Danışmanlığı' : isTechnicalSeoTr ? 'Teknik SEO ve SEO Denetimi' : isGoogleSearchAdsTr ? 'Arama kampanyası kurulumu ve yönetimi' : isGoogleAdsTr ? 'Google Ads Kampanya Yönetimi' : isSeoTr ? 'SEO Hizmeti ve Danışmanlığı' : t('services.detail.hero.eyebrow')}
+                {isIkasTr ? IKAS_TR_HERO.eyebrow : isShopifyTr ? 'Shopify Kurulum ve Geliştirme Hizmetleri' : isCustomEcomTr ? 'Özel E-Ticaret Geliştirme' : isMarketTr ? 'Pazaryeri Geliştirme' : isEcommerceSeoTr ? 'E-Ticaret SEO Hizmeti ve Danışmanlığı' : isTechnicalSeoTr ? 'Teknik SEO ve SEO Denetimi' : isGoogleShoppingTr ? 'E-ticaret ürün reklamları ve katalog yönetimi' : isGoogleSearchAdsTr ? 'Arama kampanyası kurulumu ve yönetimi' : isPerformanceMaxTr ? 'Maksimum Performans kampanya yönetimi' : isGoogleAdsTr ? 'Google Ads Kampanya Yönetimi' : isSeoTr ? 'SEO Hizmeti ve Danışmanlığı' : t('services.detail.hero.eyebrow')}
               </span>
             </div>
 
@@ -779,6 +783,10 @@ function HeroSection({
                 <RotatingHeading full={service.name} lead="E-Ticaret SEO" words={['Hizmeti', 'Danışmanlığı', 'Ajansı']} />
               ) : isTechnicalSeoTr ? (
                 <RotatingHeading full={service.name} lead="Teknik SEO" words={['Hizmeti', 'Denetimi', 'Danışmanlığı']} />
+              ) : isPerformanceMaxTr ? (
+                <RotatingHeading full={service.name} lead="Performance Max" words={['Kampanya Yönetimi', 'Dönüşüm Takibi']} />
+              ) : isGoogleShoppingTr ? (
+                <h1 className="text-display font-light text-gray-900 leading-tight">Google Alışveriş Reklamları</h1>
               ) : isGoogleAdsTr ? (
                 <RotatingHeading full={service.name} lead="Google Ads" words={['Yönetimi', 'Ajansı', 'Danışmanlığı']} />
               ) : (
@@ -798,7 +806,7 @@ function HeroSection({
               Previous (full-description) version kept here on purpose:
                 {service.fullDescription || service.description}
             */}
-            <p className={`text-base sm:text-lg text-gray-600 max-w-lg leading-relaxed ${isShopifyTr || isCustomEcomTr || isMarketTr || isSeoTr || isEcommerceSeoTr || isTechnicalSeoTr || isGoogleAdsTr || isGoogleSearchAdsTr ? '' : 'line-clamp-5'} ${isIkasTr ? 'ikas-hero-copy' : ''}`}>
+            <p className={`text-base sm:text-lg text-gray-600 max-w-lg leading-relaxed ${isShopifyTr || isCustomEcomTr || isMarketTr || isSeoTr || isEcommerceSeoTr || isTechnicalSeoTr || isGoogleAdsTr || isGoogleSearchAdsTr || isGoogleShoppingTr || isPerformanceMaxTr ? '' : 'line-clamp-5'} ${isIkasTr ? 'ikas-hero-copy' : ''}`}>
               {service.shortDescription || service.fullDescription || service.description}
             </p>
 
@@ -806,7 +814,7 @@ function HeroSection({
             <div className={`space-y-3 pt-1 ${isIkasTr ? 'ikas-hero-actions' : ''}`}>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button
-                  href={service.slug === 'corporate-website-design' ? '/start-project?service=corporate-website-design' : service.slug === 'e-commerce' && locale === 'tr' ? '/start-project?service=e-commerce' : isEcommerceSeoTr ? '/start-project?service=ecommerce-seo' : isTechnicalSeoTr ? '/start-project?service=technical-seo' : isGoogleSearchAdsTr ? '/start-project?service=google-search-ads' : isGoogleAdsTr ? '/start-project?service=google-ads' : isSeoTr ? '/start-project?service=seo' : isIkasTr ? '/start-project?service=ikas-development' : isShopifyTr ? '/start-project?service=shopify-development' : isCustomEcomTr ? '/start-project?service=custom-ecommerce' : isMarketTr ? '/start-project?service=marketplace-development' : '/contact'}
+                  href={service.slug === 'corporate-website-design' ? '/start-project?service=corporate-website-design' : service.slug === 'e-commerce' && locale === 'tr' ? '/start-project?service=e-commerce' : isPerformanceMaxTr ? '/start-project?service=performance-max' : isEcommerceSeoTr ? '/start-project?service=ecommerce-seo' : isTechnicalSeoTr ? '/start-project?service=technical-seo' : isGoogleShoppingTr ? '/start-project?service=google-shopping' : isGoogleSearchAdsTr ? '/start-project?service=google-search-ads' : isGoogleAdsTr ? '/start-project?service=google-ads' : isSeoTr ? '/start-project?service=seo' : isIkasTr ? '/start-project?service=ikas-development' : isShopifyTr ? '/start-project?service=shopify-development' : isCustomEcomTr ? '/start-project?service=custom-ecommerce' : isMarketTr ? '/start-project?service=marketplace-development' : '/contact'}
                   variant="primary"
                   size="lg"
                   rightIcon={
@@ -815,16 +823,20 @@ function HeroSection({
                     </svg>
                   }
                 >
-                  {service.slug === 'e-commerce' && locale === 'tr' ? 'Projenizi Anlatın' : isEcommerceSeoTr ? 'Mağazam İçin SEO Planı Al' : isTechnicalSeoTr ? 'Teknik SEO Teklifi Al' : isGoogleSearchAdsTr ? 'Arama Ağı Teklifi Al' : isGoogleAdsTr ? 'Google Ads Teklifi Al' : isIkasTr ? IKAS_TR_HERO.primary : isShopifyTr ? 'Shopify Projem İçin Teklif Al' : isCustomEcomTr ? 'Projem İçin Teklif Al' : isMarketTr ? 'Pazaryeri Projenizi Anlatın' : isSeoTr ? 'Sitem İçin SEO Planı Al' : service.slug === 'corporate-website-design'
+                  {service.slug === 'e-commerce' && locale === 'tr' ? 'Projenizi Anlatın' : isPerformanceMaxTr ? 'Performance Max Teklifi Al' : isEcommerceSeoTr ? 'Mağazam İçin SEO Planı Al' : isTechnicalSeoTr ? 'Teknik SEO Teklifi Al' : isGoogleShoppingTr ? 'Alışveriş Reklamı Teklifi Al' : isGoogleSearchAdsTr ? 'Arama Ağı Teklifi Al' : isGoogleAdsTr ? 'Google Ads Teklifi Al' : isIkasTr ? IKAS_TR_HERO.primary : isShopifyTr ? 'Shopify Projem İçin Teklif Al' : isCustomEcomTr ? 'Projem İçin Teklif Al' : isMarketTr ? 'Pazaryeri Projenizi Anlatın' : isSeoTr ? 'Sitem İçin SEO Planı Al' : service.slug === 'corporate-website-design'
                     ? (locale === 'tr' ? 'Projenizi Konuşalım' : 'Discuss Your Project')
                     : t('services.detail.hero.startProject')}
                 </Button>
-                {isTechnicalSeoTr ? (
+                {isPerformanceMaxTr ? (
+                  <a href="#pmax-kampanya-hedefi" className="inline-flex items-center justify-center gap-2 rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 transition-colors motion-reduce:transition-none hover:border-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2">Kampanya Hedefini İncele</a>
+                ) : isTechnicalSeoTr ? (
                   <a href="#teknik-seo-kapsami" className="inline-flex items-center justify-center gap-2 rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 transition-colors motion-reduce:transition-none hover:border-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2">Denetim Kapsamını İncele</a>
                 ) : isEcommerceSeoTr ? (
                   <a href="#e-ticaret-seo-kapsami" className="inline-flex items-center justify-center gap-2 rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 transition-colors motion-reduce:transition-none hover:border-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2">Çalışma Kapsamını İncele</a>
                 ) : isSeoTr ? (
                   <a href="#seo-hizmeti-kapsami" className="inline-flex items-center justify-center gap-2 rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 transition-colors motion-reduce:transition-none hover:border-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2">Çalışma Kapsamını İncele</a>
+                ) : isGoogleShoppingTr ? (
+                  <a href="#alisveris-urun-ornegi" className="inline-flex items-center justify-center gap-2 rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 transition-colors motion-reduce:transition-none hover:border-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2">Ürün Örneğini İncele</a>
                 ) : isGoogleSearchAdsTr ? (
                   <a href="#arama-reklami-ornegi" className="inline-flex items-center justify-center gap-2 rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 transition-colors motion-reduce:transition-none hover:border-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2">Kampanya Örneğini İncele</a>
                 ) : isGoogleAdsTr ? (
@@ -849,7 +861,7 @@ function HeroSection({
                 ) : <WhatsAppButton source="service_hero" variant="outline" size="lg" />}
               </div>
               {/* Response-time microcopy */}
-              {service.slug !== 'ikas-development' && service.slug !== 'corporate-website-design' && !(service.slug === 'e-commerce' && locale === 'tr') && !isShopifyTr && !isCustomEcomTr && !isMarketTr && !isSeoTr && !isEcommerceSeoTr && !isTechnicalSeoTr && !isGoogleAdsTr && !isGoogleSearchAdsTr && (
+              {service.slug !== 'ikas-development' && service.slug !== 'corporate-website-design' && !(service.slug === 'e-commerce' && locale === 'tr') && !isShopifyTr && !isCustomEcomTr && !isMarketTr && !isSeoTr && !isEcommerceSeoTr && !isTechnicalSeoTr && !isGoogleAdsTr && !isGoogleSearchAdsTr && !isGoogleShoppingTr && !isPerformanceMaxTr && (
                 <p className="flex items-center gap-1.5 text-sm text-gray-400">
                   <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -868,6 +880,7 @@ function HeroSection({
               {isTechnicalSeoTr && <p className="text-sm font-medium text-gray-600">SEO audit · Tarama ve indeksleme · Site hızı ve Core Web Vitals · Site taşıma</p>}
               {isGoogleAdsTr && <p className="text-sm font-medium text-gray-600">Hedef · Kampanya · Dönüşüm takibi · Raporlama</p>}
               {isGoogleSearchAdsTr && <p className="text-sm font-medium text-gray-600">Arama terimleri · Reklam metni · Açılış sayfası · Başvuru ölçümü</p>}
+              {isGoogleShoppingTr && <p className="text-sm font-medium text-gray-600">Merchant Center · Ürün verisi · Kampanya kapsamı · Satın alma ölçümü</p>}
               {isIkasTr && <IkasPlatformNote />}
             </div>
           </motion.div>
@@ -912,7 +925,7 @@ function HeroSection({
                         <span className="text-[12px] font-semibold text-gray-800">ikas mağazası</span>
                       </div>
                     </>
-                  ) : (isCustomEcomTr || isMarketTr || isSeoTr || isEcommerceSeoTr || isTechnicalSeoTr || isGoogleAdsTr || isGoogleSearchAdsTr) && heroArt ? (
+                  ) : (isCustomEcomTr || isMarketTr || isSeoTr || isEcommerceSeoTr || isTechnicalSeoTr || isGoogleAdsTr || isGoogleSearchAdsTr || isGoogleShoppingTr || isPerformanceMaxTr) && heroArt ? (
                     heroArt
                   ) : isShopifyTr ? (
                     <>

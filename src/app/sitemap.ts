@@ -13,6 +13,8 @@ import customEcommerceArticles from '../../content/blog/custom-ecommerce/manifes
 import marketplaceArticles from '../../content/blog/marketplace/manifest.json';
 import googleAdsArticles from '../../content/blog/google-ads/manifest.json';
 import googleSearchAdsArticles from '../../content/blog/google-search-ads/manifest.json';
+import googleShoppingArticles from '../../content/blog/google-shopping/manifest.json';
+import performanceMaxArticles from '../../content/blog/performance-max/manifest.json';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 const allLocales: Locale[] = ['en', 'tr', 'de', 'ar', 'ur'];
@@ -204,6 +206,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const candidate = `${baseUrl}/tr${localizeFullPath(path, 'tr')}`;
     if (!entries.some((item) => item.url === candidate)) entries.push(entry('tr', path, { priority: index === 0 ? PRIORITY.serviceDetail : PRIORITY.other, changeFreq: index === 0 ? 'weekly' : 'monthly', date: new Date('2026-11-08T00:00:00Z') }));
   });
+  const performanceMaxPaths = ['/services/performance-max', '/services/performance-max/features', '/services/performance-max/technologies', '/services/performance-max/process', '/services/performance-max/portfolio', '/services/performance-max/pricing', '/services/performance-max/faq', '/services/performance-max/blog'];
+  performanceMaxPaths.forEach((path, index) => {
+    const candidate = `${baseUrl}/tr${localizeFullPath(path, 'tr')}`;
+    if (!entries.some((item) => item.url === candidate)) entries.push(entry('tr', path, { priority: index === 0 ? PRIORITY.serviceDetail : PRIORITY.other, changeFreq: index === 0 ? 'weekly' : 'monthly', date: new Date('2026-11-11T00:00:00Z') }));
+  });
+  const googleShoppingPaths = ['/services/google-shopping', '/services/google-shopping/features', '/services/google-shopping/technologies', '/services/google-shopping/process', '/services/google-shopping/portfolio', '/services/google-shopping/pricing', '/services/google-shopping/faq', '/services/google-shopping/blog'];
+  googleShoppingPaths.forEach((path, index) => {
+    const candidate = `${baseUrl}/tr${localizeFullPath(path, 'tr')}`;
+    if (!entries.some((item) => item.url === candidate)) entries.push(entry('tr', path, { priority: index === 0 ? PRIORITY.serviceDetail : PRIORITY.other, changeFreq: index === 0 ? 'weekly' : 'monthly', date: new Date('2026-11-11T00:00:00Z') }));
+  });
 
   // 5. Blog posts (live from DB). Each post exists in ONE language
   // (BlogPost.language), so list it once under its own locale — advertising
@@ -288,6 +300,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: PRIORITY.blogPost,
       changeFreq: 'monthly',
       date: new Date(`${datePublished}T00:00:00Z`),
+      includeAlternates: false,
+    }));
+  });
+  performanceMaxArticles.forEach(({ slug }) => {
+    entries.push(entry('tr', `/services/performance-max/blog/${slug}`, {
+      priority: PRIORITY.blogPost,
+      changeFreq: 'monthly',
+      date: new Date('2026-11-11T00:00:00Z'),
+      includeAlternates: false,
+    }));
+  });
+  googleShoppingArticles.forEach(({ slug }) => {
+    entries.push(entry('tr', `/services/google-shopping/blog/${slug}`, {
+      priority: PRIORITY.blogPost,
+      changeFreq: 'monthly',
+      date: new Date('2026-11-11T00:00:00Z'),
       includeAlternates: false,
     }));
   });

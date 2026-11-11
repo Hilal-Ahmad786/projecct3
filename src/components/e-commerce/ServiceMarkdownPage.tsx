@@ -106,7 +106,7 @@ export interface ServiceMdConfig<P extends string> {
   /** Visual for a section, looked up by page + H2 title. */
   visual?: (page: P, title: string) => SectionVisual | undefined;
   /** Optional art + badge on the cards of a page (e.g. Portföy scenarios). */
-  card?: (page: P, index: number) => { art?: ReactNode; badge?: string } | undefined;
+  card?: (page: P, index: number, sectionTitle: string) => { art?: ReactNode; badge?: string } | undefined;
   jumpLabel: (title: string) => string;
   jumpMark: ReactNode;
   /** Extra section (e.g. a real case study) after the H2 matching `after`, or first when `after` is null. */
@@ -128,7 +128,7 @@ function SubGroup<P extends string>({ chunk, page, config }: { chunk: Chunk; pag
   }
   const cols = chunk.subs.length % 3 === 0 ? 'lg:grid-cols-3' : 'lg:grid-cols-2';
   return <div className={`mt-6 grid gap-4 sm:grid-cols-2 ${cols}`}>{chunk.subs.map((s, i) => {
-    const card = config.card?.(page, i);
+    const card = config.card?.(page, i, chunk.title);
     return <article key={s.title} data-custom-ecom-reveal data-custom-ecom-delay={Math.min(i, 5) * 45} className="flex h-full flex-col rounded-xl border border-heritage-sand bg-white p-5">{card?.art}{card?.badge && <span className="mb-3 self-start rounded-full bg-heritage-ivory px-2.5 py-1 text-xs font-semibold text-gray-600">{card.badge}</span>}<h3 className="text-base font-semibold leading-snug text-gray-900">{s.title}</h3><div className="mt-2 [&_p]:mt-2 [&_p]:text-sm [&_p]:leading-6"><Blocks text={s.body} enquiry={enquiry} /></div></article>;
   })}</div>;
 }

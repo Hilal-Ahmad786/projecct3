@@ -7,9 +7,9 @@ import { trTitleCase } from '@/lib/tr-title-case';
 // and the current page is left out.
 
 export type PlatformPage = 'overview' | 'features' | 'technologies' | 'process' | 'portfolio' | 'pricing' | 'blog' | 'faq';
-export type Platform = 'ikas' | 'shopify' | 'custom' | 'marketplace' | 'seo' | 'ecommerce-seo' | 'technical-seo' | 'google-ads' | 'google-search-ads';
+export type Platform = 'ikas' | 'shopify' | 'custom' | 'marketplace' | 'seo' | 'ecommerce-seo' | 'technical-seo' | 'google-ads' | 'google-search-ads' | 'google-shopping' | 'performance-max';
 
-const BASE: Record<Platform, string> = { ikas: '/tr/hizmetler/ikas-development', shopify: '/tr/hizmetler/shopify-development', custom: '/tr/hizmetler/custom-ecommerce', marketplace: '/tr/hizmetler/marketplace-development', seo: '/tr/hizmetler/seo', 'ecommerce-seo': '/tr/hizmetler/ecommerce-seo', 'technical-seo': '/tr/hizmetler/technical-seo', 'google-ads': '/tr/hizmetler/google-ads', 'google-search-ads': '/tr/hizmetler/google-search-ads' };
+const BASE: Record<Platform, string> = { ikas: '/tr/hizmetler/ikas-development', shopify: '/tr/hizmetler/shopify-development', custom: '/tr/hizmetler/custom-ecommerce', marketplace: '/tr/hizmetler/marketplace-development', seo: '/tr/hizmetler/seo', 'ecommerce-seo': '/tr/hizmetler/ecommerce-seo', 'technical-seo': '/tr/hizmetler/technical-seo', 'google-ads': '/tr/hizmetler/google-ads', 'google-search-ads': '/tr/hizmetler/google-search-ads', 'google-shopping': '/tr/hizmetler/google-shopping', 'performance-max': '/tr/hizmetler/performance-max' };
 const SLUG: Record<PlatformPage, string> = { overview: '', features: '/ozellikler', technologies: '/teknoloji', process: '/surec', portfolio: '/portfoy', pricing: '/fiyatlandirma', blog: '/blog', faq: '/sss' };
 
 const PAGES: Record<Platform, Record<PlatformPage, [string, string]>> = {
@@ -103,6 +103,26 @@ const PAGES: Record<Platform, Record<PlatformPage, [string, string]>> = {
     blog: ['Arama Ağı reklam rehberleri', 'Kampanya kurulumu ve arama terimi incelemesi.'],
     faq: ['Arama Ağı reklamları SSS', 'Hesap, görünürlük ve ölçüm soruları.'],
   },
+  'google-shopping': {
+    overview: ['Google Alışveriş reklam yönetimi', 'Merchant Center, ürün kapsamı ve satın alma ölçümü.'],
+    features: ['Merchant Center ve ürün verisi', 'Ürün kaydı, varyant, uygunluk ve kampanya kapsamı.'],
+    technologies: ['Ürün aktarımı ve satın alma takibi', 'Mağaza verisi, Merchant Center ve dönüşüm testi.'],
+    process: ['Google Alışveriş kurulum süreci', 'Katalog incelemesi, kampanya onayı ve takip.'],
+    portfolio: ['Google Alışveriş örnekleri', 'Fiyat, varyant ve ölçüm sorunlarına temsili yaklaşımlar.'],
+    pricing: ['Google Alışveriş reklam fiyatları', 'Reklam harcaması, kurulum ve yönetim kapsamı.'],
+    blog: ['Google Alışveriş rehberleri', 'Kampanya hazırlığı ve ürün verisi kontrolleri.'],
+    faq: ['Google Alışveriş SSS', 'Ürün uygunluğu, kampanya ve sipariş takibi.'],
+  },
+  'performance-max': {
+    overview: ['Performance Max kampanya yönetimi', 'Hedef, reklam öğeleri ve ölçüm yaklaşımı.'],
+    features: ['Performance Max kampanya özellikleri', 'Öğe grupları, ürün kapsamı ve sayfa kontrolleri.'],
+    technologies: ['Performance Max dönüşüm takibi', 'Google Ads, GA4, GTM ve CRM ölçüm akışı.'],
+    process: ['Performance Max kurulum süreci', 'Hesap incelemesinden yayın sonrası değerlendirmeye.'],
+    portfolio: ['Performance Max kampanya örnekleri', 'E-ticaret ve B2B için temsili senaryolar.'],
+    pricing: ['Performance Max fiyatları', 'Reklam bütçesi, kurulum ve yönetim kapsamı.'],
+    blog: ['Performance Max rehberleri', 'Kurulum ve dönüşüm sorunlarını inceleme.'],
+    faq: ['Performance Max SSS', 'Kampanya, bütçe ve ölçüm soruları.'],
+  },
 };
 
 const RELATED: Record<Platform, [string, string, string][]> = {
@@ -165,12 +185,24 @@ const RELATED: Record<Platform, [string, string, string][]> = {
     ['Performance Max', 'Birden fazla Google kanalını kapsayan kampanyalar.', '/tr/hizmetler/performance-max'],
     ['Dijital Pazarlama', 'İşletmenizin dijital pazarlama seçenekleri.', '/tr/hizmetler/digital-marketing'],
   ],
+  'google-shopping': [
+    ['Google Ads Yönetimi', 'Google kampanya türlerini birlikte değerlendirin.', '/tr/hizmetler/google-ads'],
+    ['Google Arama Ağı Reklamları', 'Arama sorgularına yönelik metin kampanyaları.', '/tr/hizmetler/google-search-ads'],
+    ['Performance Max', 'Birden fazla Google kanalını kapsayan kampanyalar.', '/tr/hizmetler/performance-max'],
+    ['E-Ticaret SEO', 'Ürün ve kategori sayfalarının organik görünürlüğü.', '/tr/hizmetler/ecommerce-seo'],
+  ],
+
+  'performance-max': [
+    ['Google Ads Yönetimi', 'Arama, Alışveriş ve Performance Max kampanyaları.', '/tr/hizmetler/google-ads'],
+    ['Google Arama Ağı Reklamları', 'Belirli sorgulara yönelik metin reklamları.', '/tr/hizmetler/google-search-ads'],
+    ['Google Alışveriş Reklamları', 'Merchant Center ürün verisi ve alışveriş reklamları.', '/tr/hizmetler/google-shopping'],
+  ],
 };
 
 const focus = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2';
 
 export default function PlatformPageLinks({ platform, current, title, tone = 'ivory' }: { platform: Platform; current: PlatformPage; title?: string; tone?: 'white' | 'gray' | 'ivory' }) {
-  const name = platform === 'ikas' ? 'ikas' : platform === 'shopify' ? 'Shopify' : platform === 'custom' ? 'Özel e-ticaret' : platform === 'seo' ? 'SEO' : platform === 'ecommerce-seo' ? 'E-ticaret SEO' : platform === 'technical-seo' ? 'Teknik SEO' : platform === 'google-search-ads' ? 'Google Arama Ağı' : platform === 'google-ads' ? 'Google Ads' : 'Pazaryeri';
+  const name = platform === 'ikas' ? 'ikas' : platform === 'shopify' ? 'Shopify' : platform === 'custom' ? 'Özel e-ticaret' : platform === 'seo' ? 'SEO' : platform === 'ecommerce-seo' ? 'E-ticaret SEO' : platform === 'technical-seo' ? 'Teknik SEO' : platform === 'google-search-ads' ? 'Google Arama Ağı' : platform === 'google-shopping' ? 'Google Alışveriş' : platform === 'performance-max' ? 'Performance Max' : platform === 'google-ads' ? 'Google Ads' : 'Pazaryeri';
   const pages = (Object.keys(PAGES[platform]) as PlatformPage[]).filter((page) => page !== current);
   const bg = tone === 'gray' ? 'bg-background-gray' : tone === 'ivory' ? 'bg-heritage-ivory' : 'bg-white';
   return (
@@ -192,7 +224,7 @@ export default function PlatformPageLinks({ platform, current, title, tone = 'iv
             </ul>
           </div>
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-gray-500">{platform === 'seo' || platform === 'ecommerce-seo' || platform === 'technical-seo' || platform === 'google-ads' || platform === 'google-search-ads' ? 'İlgili hizmetler' : 'İlgili e-ticaret hizmetleri'}</h3>
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-gray-500">{platform === 'seo' || platform === 'ecommerce-seo' || platform === 'technical-seo' || platform === 'google-ads' || platform === 'google-search-ads' || platform === 'google-shopping' || platform === 'performance-max' ? 'İlgili hizmetler' : 'İlgili e-ticaret hizmetleri'}</h3>
             <ul className="mt-3 divide-y divide-heritage-sand rounded-xl border border-heritage-sand bg-white/70">
               {RELATED[platform].map(([label, text, href]) => (
                 <li key={href}>

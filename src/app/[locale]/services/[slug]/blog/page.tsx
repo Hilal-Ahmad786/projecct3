@@ -16,6 +16,8 @@ import SeoTurkishPage, { getSeoTurkishMeta, getSeoTurkishSocialMeta } from '@/co
 import EcommerceSeoTurkishPage, { getEcommerceSeoTurkishMeta, getEcommerceSeoTurkishSocialMeta } from '@/components/services/EcommerceSeoTurkishPage';
 import { GoogleAdsTurkishPage, getGoogleAdsMeta, getGoogleAdsSocialMeta } from '@/components/services/GoogleAdsTurkishPage';
 import { GoogleSearchAdsTurkishPage, getGoogleSearchAdsMeta, getGoogleSearchAdsSocialMeta } from '@/components/services/GoogleSearchAdsTurkishPage';
+import { GoogleShoppingTurkishPage, getGoogleShoppingMeta, getGoogleShoppingSocialMeta } from '@/components/services/GoogleShoppingTurkishPage';
+import { PerformanceMaxTurkishPage, getPerformanceMaxMeta, getPerformanceMaxSocialMeta } from '@/components/services/PerformanceMaxTurkishPage';
 
 export const revalidate = 3600;
 
@@ -39,7 +41,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const path = `/services/${slug}/blog`;
   const localizedPath = localizeFullPath(path, validLocale);
-  const customMeta = slug === 'google-search-ads' && validLocale === 'tr' ? getGoogleSearchAdsMeta('blog') : slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsMeta('blog') : slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoMeta('blog') : slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('blog') : slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('blog') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('blog') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceBlogMeta()
+  const customMeta = slug === 'performance-max' && validLocale === 'tr' ? getPerformanceMaxMeta('blog') : slug === 'google-shopping' && validLocale === 'tr' ? getGoogleShoppingMeta('blog') : slug === 'google-search-ads' && validLocale === 'tr' ? getGoogleSearchAdsMeta('blog') : slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsMeta('blog') : slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoMeta('blog') : slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('blog') : slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('blog') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('blog') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceBlogMeta()
     : slug === 'ikas-development' && validLocale === 'tr'
     ? getIkasBlogMeta()
     : slug === 'shopify-development' && validLocale === 'tr' ? getShopifyBlogMeta()
@@ -53,6 +55,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     ...(slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoSocialMeta('blog', `${baseUrl}/${validLocale}${localizedPath}`) : {}),
     ...(slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishSocialMeta('blog', `${baseUrl}/${validLocale}${localizedPath}`) : {}),
     ...(slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsSocialMeta('blog', `${baseUrl}/${validLocale}${localizedPath}`) : {}),
+    ...(slug === 'performance-max' && validLocale === 'tr' ? getPerformanceMaxSocialMeta('blog', `${baseUrl}/${validLocale}${localizedPath}`) : {}),
+    ...(slug === 'google-shopping' && validLocale === 'tr' ? getGoogleShoppingSocialMeta('blog', `${baseUrl}/${validLocale}${localizedPath}`) : {}),
     ...(slug === 'google-search-ads' && validLocale === 'tr' ? getGoogleSearchAdsSocialMeta('blog', `${baseUrl}/${validLocale}${localizedPath}`) : {}),
     ...(slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishSocialMeta('blog', `${baseUrl}/${validLocale}${localizedPath}`) : {}),
     ...(slug === 'ikas-development' && validLocale === 'tr' ? { openGraph: { type: 'website', title: customMeta?.title, description: customMeta?.description, url: `${baseUrl}/${validLocale}${localizedPath}`, siteName: 'PakSoft', locale: 'tr_TR' }, twitter: { card: 'summary', title: customMeta?.title, description: customMeta?.description } } : {}),
@@ -70,6 +74,8 @@ export default async function ServiceBlogPage({ params }: PageProps) {
   if (!data) notFound();
 
   if (slug === 'google-ads' && validLocale === 'tr') return <GoogleAdsTurkishPage page="blog" />;
+  if (slug === 'performance-max' && validLocale === 'tr') return <PerformanceMaxTurkishPage page="blog" />;
+  if (slug === 'google-shopping' && validLocale === 'tr') return <GoogleShoppingTurkishPage page="blog" />;
   if (slug === 'google-search-ads' && validLocale === 'tr') return <GoogleSearchAdsTurkishPage page="blog" />;
 
   if (slug === 'technical-seo' && validLocale === 'tr') return <TechnicalSeoTurkishPage page="blog" />;

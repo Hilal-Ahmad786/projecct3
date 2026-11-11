@@ -18,6 +18,8 @@ const SERVICE_BLOGS: Record<string, readonly string[]> = {
   'technical-seo': ['tr'],
   'google-ads': ['tr'],
   'google-search-ads': ['tr'],
+  'google-shopping': ['tr'],
+  'performance-max': ['tr'],
 };
 
 export function hasServiceBlog(category: string | null | undefined, locale: string): boolean {
