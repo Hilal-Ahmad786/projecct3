@@ -267,7 +267,7 @@ export default function ServiceDetailClient({
   // The Turkish Shopify overview has its own server-rendered section body.
   // Keep only the shared animated hero here to avoid generic sections and
   // the generic statistics strip appearing ahead of that curated content.
-  if ((service.slug === 'shopify-development' || service.slug === 'custom-ecommerce' || service.slug === 'marketplace-development' || service.slug === 'ecommerce-seo' || service.slug === 'technical-seo' || service.slug === 'google-ads' || service.slug === 'google-search-ads') && locale === 'tr') {
+  if ((service.slug === 'shopify-development' || service.slug === 'custom-ecommerce' || service.slug === 'marketplace-development' || service.slug === 'ecommerce-seo' || service.slug === 'technical-seo' || service.slug === 'google-ads' || service.slug === 'google-search-ads' || service.slug === 'google-shopping' || service.slug === 'performance-max') && locale === 'tr') {
     return <div id="overview"><HeroSection service={service} colors={colors} accent={accent} process={process} animation={animation} heroArt={heroArt} /></div>;
   }
 
@@ -881,6 +881,7 @@ function HeroSection({
               {isGoogleAdsTr && <p className="text-sm font-medium text-gray-600">Hedef · Kampanya · Dönüşüm takibi · Raporlama</p>}
               {isGoogleSearchAdsTr && <p className="text-sm font-medium text-gray-600">Arama terimleri · Reklam metni · Açılış sayfası · Başvuru ölçümü</p>}
               {isGoogleShoppingTr && <p className="text-sm font-medium text-gray-600">Merchant Center · Ürün verisi · Kampanya kapsamı · Satın alma ölçümü</p>}
+              {isPerformanceMaxTr && <p className="text-sm font-medium text-gray-600">Kampanya hedefi · Öğe grupları · Dönüşüm takibi · Ürün verisi</p>}
               {isIkasTr && <IkasPlatformNote />}
             </div>
           </motion.div>
