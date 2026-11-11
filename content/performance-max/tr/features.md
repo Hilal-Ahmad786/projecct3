@@ -31,6 +31,27 @@ Merchant Center ürün verisi bağlandığında, öğe grubundaki ürün listele
 
 Nihai URL genişletmesi açıkken Google, reklam için aynı alan adındaki daha ilgili bir sayfayı seçebilir. Sayfa akışı eklediğinizde, akışın URL seçimini nasıl etkilediği genişletme ayarına bağlıdır. Marka hariç tutmalarında Arama ve Alışveriş gösterimlerine uygulanan kapsamı kampanya ayarlarından kontrol ederiz.
 
+## Performance Max raporlarında neye bakıyoruz?
+
+Google Ads Performance Max raporlarını incelerken önce hangi soruya yanıt aradığımızı belirleriz. Teknik servis için ilgisiz aramaları bulmak ile aydınlatma mağazası için yeni görsel ihtiyacını belirlemek farklı raporlar gerektirir.
+
+| Rapor | Ne gösterir? | Örnek karar |
+| --- | --- | --- |
+| Öğe raporu | Öğeler ve raporlanan performans ölçümleri | Sarkıt avizelerin kullanım alanını gösteren yeni bir görsel hazırlamak |
+| Arama terimleri raporu ve içgörüleri | Raporlanan sorgular ve bunların gruplandığı temalar | Yalnızca yeni ürün satan mağazada “ikinci el” sorgularını incelemek |
+| Kanal performansı | Kanal düzeyinde dağılım ve performans | Video öğesi eksikse kampanya içeriğini gözden geçirmek |
+| Yerleşim raporu | Desteklenen yerleşimlerde gösterim bilgileri | Markaya uygunluğu açısından bir YouTube yerleşimini incelemek |
+
+Bir Maksimum Performans kampanyasında tek bir rapor satırı değişiklik kararı için yeterli olmayabilir. Örneğin bir görselin dönüşüm verisini, birlikte gösterildiği öğeler ve öğe grubunun amacıyla değerlendiririz. Yerleşim raporunu reklamın nerede göründüğünü incelemek için, kanal raporunu ise kanal düzeyindeki performansı değerlendirmek için kullanırız.
+
+## Listeleme grupları ve özel etiketlerle ürün kapsamını nasıl ayırıyoruz?
+
+Alışveriş odaklı Performance Max (Shopping Performance Max) kampanyasında önce ürün türünü, ardından işletme açısından önemli olan ürün niteliğini ayırırız. Örneğin sarkıt avizeler ve yedek aksesuarlar ayrı ürün türleri olabilir. Her türün içinde katkı payı veya teslimata hazır stok gibi ölçütler özel etiketlerle işaretlenebilir.
+
+Bir aydınlatma mağazası kampanyayı teslimata hazır, katkı payı yüksek sarkıt avizelerle başlatmak istiyorsa listeleme grubunu buna göre daraltabilir. Daha düşük fiyatlı aksesuarlar veya katkı payı düşük modeller için kapsamı ayrıca değerlendiririz. Ayrı bütçe gerekiyorsa bu ihtiyacı kampanya yapısı düzeyinde ele alırız. Özel etiket ürünleri ayırt eder. Bütçeyi kampanya ayarları belirler.
+
+Yeni ürünler kataloğa eklendiğinde beklenen gruba girip girmediğini ve stok değişikliklerinin ürün verisine yansıdığını kontrol ederiz. Örneğin yeni bir dış mekân ürünü için özel etiket boşsa ürünün hangi gruba düştüğüne bakarız. Kapsamın dışında kalması gereken ürünler için kalan ürünler grubunun ayarını da inceleriz. Ürün veri kaynağının kurulumu için [Google Alışveriş reklamları hizmetini](/tr/hizmetler/google-shopping) inceleyin.
+
 ## Mevcut kampanyanızda neyi önce inceleriz?
 
 Satış kampanyasında önce reklam öğesini, seçili ürünü ve açılış sayfasını birlikte kontrol ederiz. Örneğin bir ürün kategorisine tıklama geliyor ancak siparişler oluşmuyorsa reklam mesajının ürünle uyumunu, Merchant Center’daki ürün durumunu ve satın alma ölçümünü ayrı ayrı inceleriz. Başvuru kampanyasında aynı kontrolü hizmet sayfası ve form akışı üzerinden yaparız.

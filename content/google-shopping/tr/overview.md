@@ -42,6 +42,35 @@ Temsili bir mağaza “160 × 220 cm keten masa örtüsü” satıyor. Ürünün
 
 Stokta olmayan renk ürün kaynağında hâlâ satışa açık görünüyorsa önce farkın nerede oluştuğunu buluruz. Düzeltmeden sonra ürün verisi yeniden işlendiğinde ilgili ürünün durumunu kontrol ederiz.
 
+## Ücretsiz ürün listelemeleri ile Alışveriş reklamları arasındaki fark nedir?
+
+Google Ads Alışveriş reklamları ücretli kampanyalarla yayınlanır. Ücretsiz ürün listelemeleri ise reklam bütçesi olmadan uygun Google alanlarında görünebilir. Örneğin aynı keten masa örtüsünün Merchant Center kaydı her iki kullanımda da değerlendirilebilir. Ürünün uygunluk durumunu her gösterim yöntemi için ayrı kontrol ederiz.
+
+| Görünüm | Ödeme | Ne gerekir? |
+| --- | --- | --- |
+| Ücretsiz ürün listelemesi | Listeleme için Google’a reklam ücreti ödenmez. | Uygun ürün verisi, mağaza bilgileri ve ilgili politikalarla uyum |
+| Alışveriş reklamı | Reklam harcaması Google Ads hesabınızdan yönetilir. | Uygun ürün verisi, Google Ads bağlantısı ve ürünün kampanya kapsamına alınması |
+
+Google ürün reklamları için bir nevresim takımını değerlendirirken ürünün ücretsiz listeleme durumunu, reklam uygunluğunu ve seçili ürün grubunu ayrı ayrı inceleriz. Böylece hangi ayarın mağaza verisinde, hangisinin kampanyada ele alınması gerektiğini görürsünüz.
+
+## Bir Google Alışveriş reklam ajansından hangi bilgileri yazılı almalısınız?
+
+### Hesap erişimi
+
+Google Alışveriş reklam danışmanlığı kapsamında Google Ads ve Merchant Center hesapları işletmenizde kalır. PakSoft, kararlaştırılan işler için uygun kullanıcı veya yönetici erişimiyle çalışır. Reklam harcaması kendi hesabınız üzerinden Google’a ödenir.
+
+### Ürün verisinden sorumlu kişi
+
+Google Shopping reklam yönetiminde örneğin açık bej masa örtüsü fiyatı yanlış aktarılıyorsa düzeltmeyi kimin yapacağı yazılı olmalı. Mağaza kaydı ile katalog bağlantısı farklı ekiplerin sorumluluğunda olabilir.
+
+### Rapor satırları
+
+Raporun hangi tarih aralığını ve hangi satın alma işlemini kullandığını sorun. Örneğin nevresim takımlarında harcamayı, siparişleri ve raporlanan sipariş değerini hangi kapsamda okuyacağınızı önceden belirleyin.
+
+### Değişiklik kaydı
+
+Bir sezonluk seri kampanyadan çıkarılırsa değişiklik tarihini ve nedenini kaydederiz. Sonraki değerlendirmede hangi ürün grubunun etkilendiğini ve hangi veriye yeniden bakacağımızı görebilirsiniz.
+
 ## Mevcut kampanyaya nereden başlarız?
 
 Mağaza adresinizi, satışını artırmak istediğiniz kategoriyi ve varsa Merchant Center’da gördüğünüz sorunu paylaşın. Örneğin bir kategori gösterim almıyorsa önce ürünlerin uygunluğunu, ardından kampanyadaki ürün kapsamını ve ölçüm durumunu inceleriz.

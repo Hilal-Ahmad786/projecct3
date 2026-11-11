@@ -4,6 +4,20 @@ Google Merchant Center kurulumu için mağaza alan adının doğrulama ve hak ta
 
 Mevcut bir hesabınız varsa önce ürünlerin durumunu ve veri kaynağının son işlenme bilgisini inceleriz. Bir ürünün listede görünmesi ile Alışveriş reklamlarına uygun olması farklı durumlardır. Uygunluğu sınırlayan bir sorun varsa etkilenen ürünü, nedeni ve düzeltmeyi yapacak ekibi belirleriz. Hesaplar işletmenizde kalır. Gereken erişimle çalışırız.
 
+## Merchant Center’da bir ürün neden onaylanmaz?
+
+Google Merchant Center’da ürününüz onaylanmadıysa önce ürün ayrıntısındaki sorun açıklamasını açın. Merchant Center danışmanlığında düzeltmenin hangi sistemde yapılacağını bu açıklamaya ve ürünün gönderilen değerlerine bakarak belirleriz.
+
+| Sorun | Nerede görülür? | İlk kontrol |
+| --- | --- | --- |
+| Fiyat veya stok farkı | Ürün sorunu ayrıntısı | Katalogdaki değeri açılan varyantla karşılaştırın. |
+| Eksik veya geçersiz GTIN | Ürün tanımlayıcılarına ilişkin uyarı | Üreticinin o varyant için atadığı kodu doğrulayın. |
+| Görselde tanıtım yazısı veya filigran | Görsel gereksinimi uyarısı | Ürün fotoğrafını kaynağında güncelleyin. |
+| Açılış sayfasına erişilemiyor | Bağlantı sorunu ayrıntısı | Gönderilen ürün adresini mobilde ve oturum açmadan deneyin. |
+| Politika sorunu | Ürün veya hesap uyarısı | Açıklanan gereksinimi ilgili ürün, mağaza veya hesap kaydında inceleyin. |
+
+Örneğin bej örtünün bağlantısı mavi varyantı açıyorsa katalogdaki bağlantıyı düzeltip sonraki işleme sonrasında ürün durumunu yeniden kontrol ederiz.
+
 ## Ürün veri kaynağı optimizasyonu hangi alanları kapsar?
 
 Ürün veri kaynağı (feed) optimizasyonunda önce mağaza kaydı ile Google’a gönderilen satırı karşılaştırırız. Ardından ürün bağlantısının müşteriyi doğru varyanta götürdüğünü doğrularız. Örneğin iki ölçüde satılan bir masa örtüsünde farklı ölçülerin stok ve fiyat bilgisi kendi ürün kayıtlarına yansımalıdır.
@@ -17,11 +31,27 @@ Mevcut bir hesabınız varsa önce ürünlerin durumunu ve veri kaynağının so
 
 Örneğin kampanya fiyatı sitede sona erdiği halde veri kaynağında görünüyorsa önce hangi sistemin eski fiyatı gönderdiğini buluruz. Düzeltmeden sonra veri kaynağı yeniden işlendiğinde ilgili satırın durumunu kontrol ederiz.
 
+## Özel etiketlerle ürünleri nasıl gruplarız?
+
+Google Merchant Center ürün feed kurulumunda, kampanyada kullanacağımız sınıflandırmayı mağazanın katalog alanlarıyla eşleştiririz. Örneğin `custom_label_0` sezonluk seriyi, `custom_label_1` stok sürekliliğini, `custom_label_2` katkı payı grubunu belirtebilir. Böylece aynı kategorideki sürekli stoklanan nevresimlerle sezonluk takımları kampanya düzeyinde ayrı değerlendirebilirsiniz.
+
+Google Merchant Center ürün feed optimizasyonunda, platform bu etiketleri aktarmıyorsa ek veri kaynağı seçeneğini inceleriz. Örneğin ana kaynaktaki açık bej masa örtüsünün `id` değeriyle ek kaynaktaki sezon etiketini eşleştiririz. Ek kaynak, ana kaynakta bulunan ilgili ürün kaydını zenginleştirir.
+
+Etiketler işlendiğinde örnek varyantı Merchant Center’da açıp alan değerini doğrularız. Ardından Google Ads ürün grubunun beklenen ürünleri içerdiğine bakarız. Örneğin bir seri sezon etiketi yanlış kaldığı için başka gruba giriyorsa önce etiket kaynağını düzeltir, sonra kampanyanın ürün kapsamını yeniden kontrol ederiz.
+
 ## Hangi ürünleri reklama dahil edeceğimizi nasıl seçiyoruz?
 
 Google Alışveriş reklam kurulumunda satışa hazır kategorileri, stok sürekliliğini ve işletmenizin önceliklerini birlikte değerlendiririz. Örneğin düzenli stoklanan nevresimler ilk kampanyada yer alabilir. Tedarik süresi belirsiz bir seri içinse ürün bilgilerinin doğru güncellenmesini ve sipariş koşullarının açık olmasını bekleyebiliriz.
 
 Katalog yapısı uygunsa ürün türü, marka veya özel etiketlerle gruplama yapabiliriz. Örneğin “sezonluk” etiketi, kısa süreli ürünleri sürekli stoklanan serilerden ayırmaya yardımcı olur. Standart Alışveriş’te ürün gruplarını, ürün verisi kullanan Performance Max’te listeleme gruplarını kampanyanın kapsamına göre değerlendiririz. Bir ürünün kampanyaya dahil olması, gösterim alacağını garanti etmez. Kampanya türlerinin kısa karşılaştırmasını [Google Alışveriş Genel Bakış](/tr/hizmetler/google-shopping) sayfasında bulabilirsiniz.
+
+## Standart Alışveriş’te öncelik ve negatif kelimeler nasıl kullanılır?
+
+Google Alışveriş reklam kurulumunda aynı keten masa örtüsü birden çok Standart Alışveriş kampanyasında, aynı satış ülkesi için yer alıyorsa kampanya önceliğini kontrol ederiz. Düşük, orta ve yüksek ayarları, aynı üründe hangi kampanyanın teklifinin önce kullanılacağını etkiler. Kampanyaların bütçesi ve gösterim uygunluğu da değerlendirmeye girer.
+
+Google Alışveriş reklam optimizasyonunda arama terimleri raporunu inceleriz. Örneğin mağaza hazır örtü satıyor ve “masa örtüsü dikimi kursu” sorgusu raporda görünüyorsa, sorgunun hangi kısmının ilgisiz olduğunu belirleriz. Ardından uygun negatif eşleme seçeneğini değerlendiririz.
+
+Bir değişiklikten sonra satılan ürünü tarif eden sorguların kapsamını da kontrol ederiz. Örneğin “keten masa örtüsü” araması satışla ilgili olabilir. Bu yüzden hangi ifadeyi hangi kampanyada hariç tutacağımızı belirler, kararın gerekçesini değişiklik kaydına yazarız. Sonraki raporda bu sorgunun durumunu tekrar kontrol ederiz.
 
 ## Yayındaki kampanyada hangi sorunları inceliyoruz?
 

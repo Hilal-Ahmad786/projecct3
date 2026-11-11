@@ -44,6 +44,32 @@ Performance Max yönetimi için önce seçili dönüşüm hedeflerini, öğe gru
 
 İlk görüşmede site adresinizi, öncelikli ürün veya hizmetinizi ve kampanyadaki bir sorunu paylaşabilirsiniz. Hesap ve faturalandırma işletmenizde kalır. Google Ads hesabına uygun kullanıcı veya yönetici erişimiyle bağlanırız. Reklam bütçesi ile PakSoft’un kurulum ve yönetim kapsamı teklifte ayrı açıklanır.
 
+## Bir Performance Max ajansıyla çalışırken neleri sormalısınız?
+
+### Teklifler hangi dönüşümü esas alıyor?
+
+Performance Max danışmanlığında önce tekliflerin hangi iş sonucuna göre ayarlandığını sorun. Örneğin teknik servis için başarılı form gönderimini ve iletişim sayfası ziyaretini ayrı ölçeriz. Kampanyanın hangisini hedef olarak kullandığını raporda belirtiriz.
+
+### Marka aramaları nasıl değerlendiriliyor?
+
+PMax ajansı seçerken işletme adınızı içeren aramaların raporda nasıl ele alındığını sorun. Marka adını ayrı bir Arama Ağı kampanyasında yönetiyorsanız marka hariç tutmalarının kapsamını birlikte inceleriz.
+
+### Hangi raporlar karar almamıza yardımcı olacak?
+
+Google Ads Performance Max yönetiminde her raporun hangi karara dayanak olduğunu sorun. Örneğin avize mağazasında katalog trafiğini incelerken seçili ürünleri, stok durumunu ve ölçülen sipariş değerini aynı dönemde değerlendiririz.
+
+### Hesap ve faturalandırma kimde kalıyor?
+
+Maksimum Performans kampanya yönetimi için Google Ads hesabı ve faturalandırma sizde kalır. PakSoft, iş kapsamına uygun kullanıcı veya yönetici erişimiyle çalışır. Erişimleri hesabınızdan inceleyebilir ve yönetebilirsiniz.
+
+## Yeni müşteri edinme hedefi ne zaman değerlendirilir?
+
+Bir Performance Max kampanyasıyla ilk alışverişi teşvik etmek istiyorsanız önce yeni müşteriyi nasıl tanıdığınızı belirleyin. Örneğin bir aydınlatma mağazasında ilk kez sarkıt avize alan kişiyle daha önce mağazadan dış mekân aydınlatması alan müşteriyi sipariş geçmişinden ayırabilirsiniz.
+
+Yeni müşteri edinme hedefini değerlendirirken mevcut müşteri bilgisinin ne kadar güncel olduğunu ve ilk siparişin işletmeniz için taşıdığı değeri inceleriz. Kampanya seçeneğine göre Google Ads yeni müşterilere öncelik verebilir veya yalnızca yeni müşteri edinmeye odaklanabilir. Mevcut müşterilerin tekrar siparişi önemliyse bu akışı da planlamaya alırız.
+
+Raporu okurken yeni müşteri siparişlerini mağaza kayıtlarıyla karşılaştırırız. İlk alışverişi doğrulanamayan kayıtlar varsa önce müşteri sınıflandırmasını gözden geçiririz. Örneğin misafir olarak alışveriş yapan birinin önceki siparişi farklı bir kayıtta kalmış olabilir. Böylece teklif ayarını hangi veriye dayanarak değiştirdiğimizi takip edebilirsiniz.
+
 ## Performance Max hakkında kısa yanıtlar
 
 ### Ürün kataloğu olmadan Performance Max kullanılabilir mi?

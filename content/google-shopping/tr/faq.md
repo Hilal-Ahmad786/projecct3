@@ -39,3 +39,21 @@ Rapordaki dönüşüm değeri, ölçüm kurulumunda Google Ads’e iletilen değ
 ### Hesaplar kimde kalır ve reklam harcamasını kim öder?
 
 Google Ads ve Merchant Center hesapları işletmenizde kalır. Reklam harcamasını kendi Google Ads hesabınız üzerinden Google’a ödersiniz. PakSoft gerekli kullanıcı veya yönetici erişimiyle çalışır. Örneğin katalog düzeltmesi ve düzenli kampanya yönetimi gerekiyorsa bu işler teklifinizde ayrı kapsamlandırılır. [Fiyatlandırma sayfası](/tr/hizmetler/google-shopping/fiyatlandirma) maliyet kalemlerini açıklar.
+
+## Kampanya ve ürün ayarları
+
+### Google Alışveriş reklamları kaldırılıyor mu?
+
+Google Alışveriş reklamları kullanılmaya devam ediyor. Google, Akıllı Alışveriş kampanyalarını 2022’de Performance Max’e yükseltti. Standart Alışveriş kampanyası oluşturma seçeneği de bulunuyor. Örneğin nevresim takımları için kampanya planlarken hedefinizi, ürün kapsamını ve hangi ayarlara ihtiyaç duyduğunuzu değerlendirip Standart Alışveriş veya [Performance Max](/tr/hizmetler/performance-max) seçeneğini buna göre inceleriz. Eski raporları karşılaştırırken de kampanya türünün değiştiği tarihi dikkate alırız.
+
+### Ücretsiz ürün listelemeleri ile Alışveriş reklamları arasındaki fark nedir?
+
+Ücretsiz ürün listelemelerinde Google’a reklam ücreti ödemezsiniz. Ücretli Alışveriş reklamları Google Ads kampanyasıyla yönetilir. Örneğin 160 × 220 cm keten örtünüz ücretsiz listelemeye uygun görünebilir. Reklam için ise ilgili ürünün uygunluğunu, Google Ads bağlantısını ve ürünü kampanyaya dahil eden ürün grubunu ayrıca kontrol ederiz. Merchant Center’daki durum, ürünün hangi gösterim yöntemi için uygun olduğunu anlamaya yardımcı olur.
+
+### Hangi ürünlerin reklamda gösterileceğini seçebilir miyim?
+
+Kampanyaya hangi ürünlerin dahil edileceğini seçebilirsiniz. Örneğin sezonluk nevresim takımlarına özel etiket ekleyip Standart Alışveriş’te ürün grubu, Performance Max’te listeleme grubu üzerinden kapsamı belirleyebiliriz. Seçilen ürünlerin gösterim uygunluğunu Merchant Center’da ayrıca inceleriz. Böylece kampanya ayarına göre hangi renk ve ölçülerin kapsamda olduğunu takip edebilirsiniz.
+
+### Yurt dışına satış yapıyorsam Alışveriş reklamları için ne gerekir?
+
+Önce ürün verisinin hedef ülkede kullanılabildiğini ve mağazanın o ülkeye gönderim yaptığını doğrulayın. Örneğin Almanya’ya satılacak nevresim takımlarında ürün sayfasının dili, fiyat ve para birimi, teslimat ücreti, teslimat süresi ve iade bilgilerini birlikte kontrol ederiz. Sonra Merchant Center satış ülkesiyle Google Ads konum hedeflemesinin satış planınıza uygunluğunu inceleriz. Örneğin yalnızca belirli bölgelere teslimat varsa bunu hedefleme ve gönderim ayarlarına yansıtırız.

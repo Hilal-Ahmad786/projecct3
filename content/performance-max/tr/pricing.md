@@ -39,6 +39,20 @@ Ortalama günlük bütçe, Google Ads’de kampanyanın harcama ayarlarından bi
 
 ::cta Bu konuyu işletmenizin kampanya hedefiyle birlikte değerlendirelim | Proje Kapsamımı Paylaş
 
+## Teklifleri karşılaştırırken hangi satırlara bakmalısınız?
+
+Bir Performance Max ajansından teklif alırken hizmet bedelinin karşılığında teslim edilecek işleri yazılı olarak isteyin. Örneğin bir teknik servis için “dönüşüm kontrolü”, çalışan form etiketinin test edilmesi veya yeni bir etiket kurulması anlamına gelebilir. Teklif, hangi işin hangi kaleme dahil olduğunu belirtmeli.
+
+| Teklif satırı | Neden önemli? | Ne sormalısınız? |
+| --- | --- | --- |
+| Kurulum kapsamı | Yayına hazırlık işlerini gösterir. | Form testi ve gerekli etiket düzeltmesi ayrı mı yazılıyor? |
+| Aylık iş listesi | Performance Max yönetiminin kapsamını belirler. | Ürün, öğe ve arama terimi kontrolleri hangi sıklıkta yapılır? |
+| İçerik üretimi | Hazır materyal ile yeni üretimin kapsamı farklıdır. | Yeni video, görsel veya katalog düzenlemesi hangi kaleme giriyor? |
+| Raporlama | Hangi sonucun değerlendirileceğini gösterir. | Harcama ve başvuru verisiyle birlikte nitelikli talepler de ele alınır mı? |
+| Erişim ve faturalandırma | Hesap kontrolünü ve ödeme yolunu açıklar. | Kendi Google Ads hesabımda faturalandırmayı nasıl yönetirim? |
+
+Reklam harcamasını kendi Google Ads hesabınız üzerinden Google’a ödersiniz. PakSoft teklifinde kurulum, aylık yönetim ve gerekiyorsa katalog, etiket veya CRM çalışmaları ayrı satırlarda gösterilir. Karşılaştırırken aynı iş kapsamını ve aynı raporlama sıklığını esas alın. Örneğin raporun nasıl paylaşılacağını ve bulguların kiminle değerlendirileceğini teklifte netleştirin.
+
 ## Teklif için hangi bilgileri paylaşmalısınız?
 
 1. Web sitesi adresiniz ve reklamı yapılacak ürün veya hizmet.

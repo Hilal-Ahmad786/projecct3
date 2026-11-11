@@ -28,6 +28,26 @@ Başlangıç için satışa hazır ürün grubunu, stok sürekliliğini ve satı
 
 Standart Alışveriş veya ürün verisi kullanan Performance Max tercihinin neyi kapsadığı da bütçe görüşmesinin parçasıdır. Kampanya türünü [Genel Bakış sayfasındaki seçeneklerle](/tr/hizmetler/google-shopping) birlikte değerlendirebilirsiniz. İlk sonuçlarda harcamayı, kaydedilen siparişleri ve sipariş değerini karşılaştırırız. İşletmenin ürün maliyeti, teslimat gideri ve iade durumu da bütçe kararında değerlendirebileceği bilgilerdir.
 
+## Ürün sayısı ve katalog durumu teklifi nasıl etkiler?
+
+Google Alışveriş reklam fiyatlarını değerlendirirken ürün sayısıyla birlikte katalogdaki iş yüküne bakın. Örneğin az sayıda ürün içeren bir mağazada her keten örtü rengi farklı ürün koduyla aktarılıyorsa sorunlu bağlantıları tek tek incelemek gerekebilir. Daha büyük bir katalogda renk, ölçü ve stok alanları düzenli aktarılıyorsa kontroller kategori ve örnek varyant düzeyinde planlanabilir.
+
+Teklifte hangi kategorilerin ve veri kaynaklarının ele alınacağını, ürün sorunlarının tek tek mi yoksa aktarım kuralıyla mı düzeltileceğini netleştiririz. Örneğin sezonluk nevresimlerin etiketi eksikse tek bir kural yeterli olabilir. Üretici kodları eksikse mağazadan varyant bazında bilgi gerekebilir.
+
+Teklifleri karşılaştırırken kaç kampanyanın yönetileceğini, hangi kategorilerin kapsandığını ve raporun hangi sıklıkta paylaşılacağını kontrol edin. Aynı ürün sayısında bile bu işler farklı kapsamlar oluşturabilir.
+
+## Tek seferlik ürün verisi düzeltmesi mi, aylık yönetim mi?
+
+Google Alışveriş reklam yönetimi teklifinde katalog işi, kampanya kurulumu ve aylık takip ayrı satırlarda gösterilir. Örneğin yanlış ölçüyü açan örtü bağlantıları tek seferlik düzeltme gerektirebilir. Sezon boyunca sık değişen ürün grupları ve fiyatlar için düzenli takip gerekebilir.
+
+| Kapsam | Ne içerir? | Kime uygun? |
+| --- | --- | --- |
+| Ürün verisi düzeltmesi | Sorunlu alanın kaynağını bulma ve örnek ürünle kontrol | Varyant bağlantısı veya ürün kodu sorunu olan mağaza |
+| Kampanya kurulumu | Ürün kapsamı, hedef ve yayın ayarlarını hazırlama | Yeni kampanya açacak mağaza |
+| Aylık yönetim | Kararlaştırılan kontroller, optimizasyon ve raporlama | Ürün gruplarını ve sonuçları düzenli değerlendirecek mağaza |
+
+Reklam harcaması kendi Google Ads hesabınız üzerinden Google’a ödenir. Teklifte aylık takibin sıklığını ve ek katalog çalışması gerektiğinde bunun nasıl ele alınacağını yazılı olarak karşılaştırın.
+
 ## Teklif istemek için hangi bilgileri paylaşmalısınız?
 
 Mağaza adresinizi, öncelikli kategorinizi ve hedef teslimat bölgenizi paylaşın. Mevcut kampanyanız varsa en çok zorlandığınız noktayı belirtin. Örneğin “Ürünler Merchant Center’da görünüyor ama kampanyada hangi seriye bütçe ayıracağımızı belirleyemiyoruz” ifadesi ilk incelemeyi somutlaştırır.

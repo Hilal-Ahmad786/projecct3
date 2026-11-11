@@ -14,6 +14,34 @@ Bir masa örtüsünün iki ölçüsü var. Reklamdaki ürün kaydı büyük öl�
 
 Bir mağazada reklam raporundaki satış değeri ile sipariş paneli arasında fark görülüyor. Aynı dönem, para birimi ve değer tanımını karşılaştırarak başlarız. Test siparişinde ürün adedinin değere nasıl yansıdığını ve aynı satın almanın birden fazla dönüşüm işleminde tekliflere dahil edilip edilmediğini inceleriz. Düzeltme gerekiyorsa yeni test siparişini ve rapor kayıtlarını yeniden kontrol ederiz.
 
+## İki ek temsili Alışveriş örneği
+
+### Temsili örnek 4 · Yeni seride bazı ürünlerin GTIN bilgisi eksik
+
+Mağaza yeni bir nevresim serisi ekliyor. Merchant Center bazı renk ve ölçülerde ürün tanımlayıcısı uyarısı gösteriyor. Önce ürün ayrıntısından hangi satırların etkilendiğini buluruz. Üreticinin o varyanta atadığı GTIN’i ambalaj veya üretici kaydıyla karşılaştırırız. Kod atanmamış ürünlerde Google’ın ilgili ürün tanımlayıcısı kurallarını kontrol ederiz. **Değerlendirme** · Bir renk için doğruladığımız kodu diğer varyantlara kopyalamadan her satırı ayrı eşler, veri işlendikten sonra ürün durumuna yeniden bakarız.
+
+### Temsili örnek 5 · Sezon sonu ürünlerde harcama yoğunlaşıyor
+
+Ev tekstili mağazası, harcamanın sezon sonu masa örtülerinde yoğunlaştığını görüyor. Ürün grubu raporundaki harcama ve satın almaları, kalan stok ve katkı payıyla karşılaştırırız. Sezon sonu ürünlere uygun bir özel etiket vererek sürekli stoklanan ürünlerden ayırırız. Ayrı bütçe gerekiyorsa bunu kampanya yapısı düzeyinde değerlendiririz. Örneğin tükenmek üzere olan bir seriyi, aynı ürün grubundaki düzenli stoklanan örtülerle birlikte yorumlamadan önce kalan satılabilir varyantları ve ürünlerin teslimat süresini kontrol ederiz. **Değerlendirme** · Sonraki raporda aynı tarih aralığı uzunluğunu ve satın alma tanımını kullanarak ürün dağılımı ile siparişleri birlikte inceleriz.
+
+## Bir Alışveriş sorununu hangi sırayla teşhis ediyoruz?
+
+### 1. Ürün durumunu açın
+
+Google Alışveriş reklam danışmanlığında önce sorunlu varyantın Merchant Center kaydına bakarız. Açık bej 160 × 220 cm örtü için sorun açıklamasını, etkilenen ülkeyi ve ilgili gösterim yöntemini kaydederiz. Aynı modelin diğer renklerinde sorun olup olmadığını da kontrol ederiz.
+
+### 2. Veri kaynağını karşılaştırın
+
+Ürün kaydındaki alanı mağazadaki bilgi ve gönderilen değerle karşılaştırırız. Örneğin GTIN hatalıysa önce kodun mağaza alanında mı, aktarım sırasında mı değiştiğini belirleriz. Düzeltmeyi sonraki işleme sonrasında aynı ürün kimliğiyle tekrar inceleriz.
+
+### 3. Kampanya kapsamını doğrulayın
+
+Ürün reklam için uygun görünüyorsa Google Ads’de ilgili ürün veya listeleme grubuna bakarız. Örneğin sezon etiketi yeni eklenmiş bir örtünün doğru kampanyaya dahil olup olmadığını, kampanyada seçili ürün kapsamıyla karşılaştırırız.
+
+### 4. Satın alma ölçümünü kontrol edin
+
+Ürün reklam kapsamında olduğu hâlde sonuçlar belirsizse örnek siparişle işlem kimliğini, değeri ve para birimini test ederiz. Ardından düzeltmenin etkisini değerlendireceğimiz raporu ve tarih aralığını belirleriz. Bulguyu aynı ürün satırı üzerinden paylaşırız.
+
 ## Yapılan değişikliği hangi verilerle değerlendiriyoruz?
 
 Örneğin fiyat sorunu düzeltildikten sonra ilk kontrol, ürün kaynağının yeniden işlenmesi ve ilgili ürünün durumudur. Harcama veya sipariş değişimini yorumlamak içinse ürünün kampanyadaki kapsamına, stok durumuna ve aynı dönemdeki diğer değişikliklere bakarız.

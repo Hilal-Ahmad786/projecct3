@@ -10,11 +10,31 @@
 
 Örneğin bir nevresimin mavi ve beyaz renkleri farklı ürün kimlikleriyle aktarılıyorsa mağazada stok değiştiğinde hangi kaydın güncellendiğini kontrol ederiz. Satışa uygun ürünlerin nasıl seçildiğini [Google Alışveriş Özellikler](/tr/hizmetler/google-shopping/ozellikler) sayfasında inceleyebilirsiniz.
 
+## Varyantlar ürün verisinde nasıl gruplanır?
+
+Google Merchant Center ürün feed kurulumunda keten masa örtüsünün her satılabilir renk ve ölçüsüne ayrı `id` verilir. Aynı modelin seçenekleri ortak `item_group_id` altında toplanır. Her satırda `color`, `size` ve doğru seçeneği açan `link` gönderilir.
+
+| Örnek `id` | `item_group_id` | `color` | `size` |
+| --- | --- | --- | --- |
+| `ort-bej-160220` | `ort-keten` | Açık bej | 160 × 220 cm |
+| `ort-mavi-160220` | `ort-keten` | Mavi | 160 × 220 cm |
+| `ort-bej-140180` | `ort-keten` | Açık bej | 140 × 180 cm |
+
+Örneğin açık bej 160 × 220 cm satırının bağlantısı, açılış sayfasında o renk ve ölçüyü seçili göstermeli. Varyant farklı fiyattan satılıyorsa açılan sayfadaki tutarı da karşılaştırırız. Varyant adresleri platforma göre farklı biçimde oluşturulabilir. Bu nedenle ürün başlığındaki ölçüyü, ilk açılıştaki seçimi ve sepete eklenen ürünü aynı testte kontrol ederiz. Satın alınamayan bir seçeneğin bağlantısı varsa ilgili varyantı ürün kimliği ve stok alanı üzerinden ayrıca inceleriz.
+
 ## Fiyat veya stok farkı hangi sistemde oluşuyor?
 
 Örneğin bir masa örtüsü mağazada stokta yok görünürken Merchant Center’da satışa açık kalmış olabilir. Ürünün kimliğini kullanarak mağaza kaydını, son gönderilen ürün verisini ve müşterinin açtığı varyant sayfasını karşılaştırırız. Mağaza doğru ama gönderilen veri eskiyse aktarım zamanını inceleriz. Gönderilen veri doğru ama bağlantı başka bir ölçüyü açıyorsa ürün adresini kontrol ederiz.
 
 Düzeltmeyi mümkün olduğunda bilginin yönetildiği sistemde yaparız. Sonraki aktarımda örnek ürünün yeniden işlendiğini ve beklenen fiyat ya da stok durumunun göründüğünü doğrularız. Aynı durum birden fazla üründe varsa ortak aktarım kuralını inceleriz.
+
+## Gönderim ve iade bilgileri neden mağazayla uyumlu olmalı?
+
+Google Alışveriş reklam kurulumunda gönderim ücretini, tahmini teslimat süresini ve yayımlanan iade politikasını kontrol ederiz. Örneğin nevresim takımları hemen gönderilirken belirli keten örtü ölçüleri daha geç hazırlanabilir. Mağazanın gösterdiği teslimat süresinin ürün ve hedef bölge için geçerli ayarla eşleşmesi gerekir.
+
+Örnek bir teslimat adresiyle sepette görünen gönderim ücretini Merchant Center ayarıyla karşılaştırırız. Hesap genelindeki hizmete ek olarak ürüne özel `shipping` bilgisi gönderiliyorsa hangi ayarın ilgili ürüne uygulandığını kontrol ederiz. İade sayfasında açıklanan süreyi ve varsa istisnaları Merchant Center’da tanımlanan politikayla karşılaştırırız.
+
+Ürün veya veri kaynağı ayrıntısında bir sorun görülürse önce bunun hangi ürün ve ülkeyi etkilediğini belirleriz. Örneğin sorun yalnızca sezonluk örtülerde görünüyorsa genel gönderim ayarını değiştirmeden önce bu ürünlerin kurallarını inceleriz.
 
 ## Google Ads, GA4 ve GTM satın alma ölçümünde nasıl kullanılır?
 

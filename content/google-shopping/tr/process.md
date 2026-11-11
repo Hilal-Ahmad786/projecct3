@@ -43,6 +43,32 @@ Google Ads ve Merchant Center hesapları işletmenizde kalır. İlk inceleme iç
 - **Sipariş ve ölçüm testi.** Başarılı test siparişinin mağazada ve ölçümde beklenen kimlik, değer ve para birimiyle kaydedildiğini kontrol ederiz.
 - **Kapsam onayı.** Ürün grubu, kampanya türü ve bütçe üzerinde mutabık kalırız. Hazır olan ürünlerle başlanabiliyorsa ilk kapsamı buna göre belirleriz.
 
+## Haftalık ve aylık kontrolleri nasıl ayırıyoruz?
+
+### Ürün durumları
+
+Google Shopping reklam yönetiminde haftalık kontrolde yeni sorunları ürün düzeyinde inceleriz. Örneğin bir nevresim serisinin bazı renkleri reklama uygun görünmüyorsa, aylık özette etkilenen modelleri ve düzeltme durumunu kaydederiz.
+
+### Fiyat ve stok farkları
+
+Haftalık incelemede fiyatı veya stoğu değişen örnek varyantları açarız. Aylık değerlendirmede tekrar eden farkları, örneğin bej örtüde mağaza ile katalog aktarımı arasındaki gecikmeyi, kaynak düzeyinde ele alırız.
+
+### Standart Alışveriş arama terimleri
+
+Google Alışveriş reklam optimizasyonunda haftalık olarak raporlanan ilgisiz sorgulara bakarız. Aylık değerlendirmede hangi negatif kelimelerin eklendiğini ve ilgili aramaların kapsamını nasıl takip edeceğimizi belirtiriz.
+
+### Ürün grubu sonuçları
+
+Haftalık kontrolde harcama ve satın alma kaydındaki değişiklikleri inceleriz. Ay sonunda nevresim takımları ve sezonluk örtüler gibi grupları aynı tarih aralığı ve aynı dönüşüm tanımıyla değerlendiririz.
+
+## İndirim ve sezon dönemlerinde ürün verisini nasıl hazırlıyoruz?
+
+Sezonluk keten örtülerde kampanya başlamadan önce hangi renk ve ölçülerin indirime gireceğini mağazada işaretleriz. İndirimli tutar `sale_price` ile gönderiliyorsa geçerlilik aralığını `sale_price_effective_date` alanıyla planlarız. Mağazadaki fiyat değişim saati ile ürün kaynağındaki başlangıç ve bitiş zamanını karşılaştırırız.
+
+Yayın sırasında örnek bir indirimli ürünü açar, aynı fiyatı ürün sayfası ve sepette kontrol ederiz. Bir nevresim rengi tükenirse ilgili varyantın `availability` değerinin sonraki veri işlemesinde güncellendiğini doğrularız. İndirimin sona erdiği gün örnek varyantta normal fiyatın geri geldiğini ve ürün bağlantısının hâlâ doğru seçeneği açtığını yeniden kontrol ederiz.
+
+Sezonluk ürünleri ayrı yönetiyorsanız etiketleri de gözden geçiririz. Örneğin indirim bitse de stokta kalan örtülerin hangi ürün grubunda yer alacağını belirleriz. Böylece katalog güncellemesiyle kampanya kapsamı aynı planı izler.
+
 ## İlk raporda hangi kararları alıyoruz?
 
 Bir kategorinin tıklamaları artarken satın alma verisi aynı seviyede kalıyorsa önce kaydın doğru çalıştığını kontrol ederiz. Sonra ilgili ürünlerin fiyatını, stok durumunu, teslimat koşullarını ve mobil ödeme akışını inceleriz. Örneğin reklama dahil edilen bir seride teslimat süresi uzadıysa bu değişikliğin ürün sayfasında açık görünüp görünmediğine bakarız.
