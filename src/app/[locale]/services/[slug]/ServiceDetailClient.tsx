@@ -1,5 +1,7 @@
 'use client';
 
+import { CorporateSiteScene } from '@/components/services/hero-visuals/scenes-3d';
+
 import { useState, useRef, useEffect, type ReactNode } from 'react';
 import LocalizedLink from '@/components/LocalizedLink';
 import { trackServiceView } from '@/lib/analytics';
@@ -292,7 +294,7 @@ export default function ServiceDetailClient({
     return (
       <>
         <div id="overview">
-          <HeroSection service={heroService} colors={colors} accent={accent} process={process} animation={animation} />
+          <HeroSection service={heroService} colors={colors} accent={accent} process={process} animation={animation} heroArt={<CorporateSiteScene locale={locale} />} />
         </div>
         <CorporateWebsiteOverview locale={locale} project={service.corporateProject} />
       </>
@@ -682,7 +684,7 @@ function HeroSection({
   const isGoogleShoppingTr = service.slug === 'google-shopping' && locale === 'tr';
   const isPerformanceMaxTr = service.slug === 'performance-max' && locale === 'tr';
   // Curated hero art can stand in for a missing DB hero animation.
-  const artOnly = !hasAnimation && (isCustomEcomTr || isMarketTr || isSeoTr || isEcommerceSeoTr || isTechnicalSeoTr || isGoogleAdsTr || isGoogleSearchAdsTr || isGoogleShoppingTr || isPerformanceMaxTr) && !!heroArt;
+  const artOnly = !hasAnimation && (service.slug === 'corporate-website-design' || isCustomEcomTr || isMarketTr || isSeoTr || isEcommerceSeoTr || isTechnicalSeoTr || isGoogleAdsTr || isGoogleSearchAdsTr || isGoogleShoppingTr || isPerformanceMaxTr) && !!heroArt;
 
   return (
     <section className="relative overflow-hidden bg-white pt-[var(--navbar-h,64px)] pb-16 lg:pt-[var(--navbar-h,64px)] lg:pb-24">
@@ -926,7 +928,7 @@ function HeroSection({
                         <span className="text-[12px] font-semibold text-gray-800">ikas mağazası</span>
                       </div>
                     </>
-                  ) : (isCustomEcomTr || isMarketTr || isSeoTr || isEcommerceSeoTr || isTechnicalSeoTr || isGoogleAdsTr || isGoogleSearchAdsTr || isGoogleShoppingTr || isPerformanceMaxTr) && heroArt ? (
+                  ) : (service.slug === 'corporate-website-design' || isCustomEcomTr || isMarketTr || isSeoTr || isEcommerceSeoTr || isTechnicalSeoTr || isGoogleAdsTr || isGoogleSearchAdsTr || isGoogleShoppingTr || isPerformanceMaxTr) && heroArt ? (
                     heroArt
                   ) : isShopifyTr ? (
                     <>

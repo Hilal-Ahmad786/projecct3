@@ -117,7 +117,7 @@ export function GirihStar({ cx, cy, size, color = H.turquoise, filled = false, s
 
 // ── Rotating girih halo behind a scene ───────────────────────────────
 
-export function GirihHalo({ size = 360, color = H.saffron, opacity = 0.25 }: { size?: number; color?: string; opacity?: number }) {
+export function GirihHalo({ size = 360, color = H.saffron, opacity = 0.25, active = true }: { size?: number; color?: string; opacity?: number; active?: boolean }) {
   const reduced = useReducedMotion();
   const r = size / 2 - 16;
   const stars = Array.from({ length: 8 }, (_, i) => {
@@ -129,8 +129,8 @@ export function GirihHalo({ size = 360, color = H.saffron, opacity = 0.25 }: { s
       viewBox={`0 0 ${size} ${size}`}
       className="absolute inset-0 w-full h-full pointer-events-none"
       style={{ opacity }}
-      animate={reduced ? undefined : { rotate: 360 }}
-      transition={{ duration: 90, repeat: Infinity, ease: 'linear' }}
+      animate={reduced || !active ? { rotate: 0 } : { rotate: 360 }}
+      transition={active && !reduced ? { duration: 90, repeat: Infinity, ease: 'linear' } : { duration: 0 }}
       aria-hidden="true"
     >
       <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke={color} strokeWidth="0.8" strokeDasharray="3 6" />
@@ -149,7 +149,7 @@ const PARTICLE_SEEDS = [
   [25, 92], [58, 8], [88, 58], [5, 80], [48, 70], [80, 30],
 ];
 
-export function HeritageParticles({ count = 12, colors = [H.turquoise, H.saffron, H.terracotta] }: { count?: number; colors?: string[] }) {
+export function HeritageParticles({ count = 12, colors = [H.turquoise, H.saffron, H.terracotta], active = true, duration = 4 }: { count?: number; colors?: string[]; active?: boolean; duration?: number }) {
   const reduced = useReducedMotion();
   const items = PARTICLE_SEEDS.slice(0, Math.min(count, PARTICLE_SEEDS.length));
   return (
@@ -166,8 +166,8 @@ export function HeritageParticles({ count = 12, colors = [H.turquoise, H.saffron
             background: colors[i % colors.length],
             opacity: 0.25,
           }}
-          animate={reduced ? undefined : { y: [0, -18, 0], opacity: [0.15, 0.4, 0.15] }}
-          transition={{ duration: 4 + (i % 4), repeat: Infinity, delay: (i % 6) * 0.7, ease: 'easeInOut' }}
+          animate={reduced || !active ? { y: 0, opacity: 0.25 } : { y: [0, -18, 0], opacity: [0.15, 0.4, 0.15] }}
+          transition={active && !reduced ? { duration: duration + (i % 4), repeat: Infinity, delay: (i % 6) * 0.7, ease: 'easeInOut' } : { duration: 0 }}
         />
       ))}
     </div>
