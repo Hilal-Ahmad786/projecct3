@@ -710,6 +710,145 @@ export function ShopifyScene() {
   </>}</Frame>;
 }
 
+// ── E-ticaret: the original product grid merged with platforms, basket, payment and order ──────
+export function EcommerceScene() {
+  const platforms = [
+    { name: 'ikas', logo: '/images/Tech/brand/ikas-icon.png', x: 6, y: 30, w: 44, to: 'M50 39 C56 39 56 50 60 52' },
+    { name: 'Shopify', logo: '/images/Tech/brand/shopify-color.svg', x: 188, y: 26, w: 48, to: 'M188 35 C184 35 184 48 180 50' },
+    { name: 'WooCommerce', logo: '/images/Tech/brand/woocommerce-color.svg', x: 4, y: 112, w: 50, to: 'M54 121 C58 121 58 112 60 110' },
+    { name: 'Magento', logo: '/images/Tech/brand/magento-color.svg', x: 186, y: 108, w: 50, to: 'M186 117 C182 117 182 110 180 108' },
+  ];
+  const flow = [{ label: 'Sepet', x: 50, draw: Icon2.cart }, { label: 'Ödeme', x: 120, draw: Icon2.card }, { label: 'Sipariş', x: 190, draw: Icon2.box }];
+  const hops = ['M64 172 L106 172', 'M134 172 L176 172'];
+  const steps = [['Tasarım', 18, 44], ['Altyapı', 68, 42], ['Ürün yönetimi', 116, 64], ['Yayın', 186, 36]] as const;
+  return <Frame label="Temsili e-ticaret sitesi: ikas, Shopify, WooCommerce veya Magento altyapısıyla kurulan mağazada ürünler listeleniyor; ziyaretçi sepetten ödemeye geçiyor ve sipariş oluşuyor.">{active => <>
+    <svg viewBox="0 0 240 240" className="absolute inset-0 h-full w-full" aria-hidden="true">
+      <defs><Shadow id="ecShadow" /><Grad id="ecTile" from={H.turquoiseLight} to={H.turquoise} /></defs>
+      {/* platforms feed the store */}
+      {platforms.map((p, i) => <g key={p.name}>
+        <motion.path d={p.to} fill="none" stroke={H.turquoise} strokeWidth="1.2" strokeDasharray="3 3" {...drawIn(1 + i * 0.1, 0.4)} />
+        <Travel active={active} d={p.to} delay={2 + i * 0.7} duration={0.8} period={8} r={2.4} />
+        <motion.g {...pop(0.8 + i * 0.12)}>
+          <motion.g {...loop(active, { y: [0, -2.5, 0] }, 6 + i, i * 0.5)}>
+            <rect x={p.x} y={p.y} width={p.w} height="18" rx="9" fill={H.white} stroke={H.sand} filter="url(#ecShadow)" />
+            {p.name === 'WooCommerce'
+              ? <image href={p.logo} x={p.x + 5} y={p.y + 4.5} width={p.w - 10} height="9" preserveAspectRatio="xMidYMid meet" />
+              : <><image href={p.logo} x={p.x + 4} y={p.y + 3} width="12" height="12" preserveAspectRatio="xMidYMid meet" /><text x={p.x + 19} y={p.y + 11.6} fontSize="6.6" fontWeight="700" fill={H.lapisDeep}>{p.name}</text></>}
+          </motion.g>
+        </motion.g>
+      </g>)}
+      {/* the store: original product grid */}
+      <motion.g {...pop(0.2)}>
+        <motion.g {...loop(active, { y: [0, -2, 0] }, 9)}>
+          <rect x="60" y="20" width="120" height="122" rx="12" fill={H.white} filter="url(#ecShadow)" />
+          <motion.rect x="60" y="20" width="120" height="122" rx="12" fill="none" stroke={H.sand} strokeWidth="1.5" {...drawIn(0.1, 1)} />
+          <text x="68" y="33" fontSize="7" fontWeight="700" fill={H.lapisDeep}>Mağazanız</text>
+          <circle cx="168" cy="30" r="7" fill={H.turquoise} />
+          {Icon2.cart(168, 30, H.white)}
+          {[0, 1, 2, 3].map(k => {
+            const x = 68 + (k % 2) * 54, y = 40 + Math.floor(k / 2) * 50;
+            return <motion.g key={k} {...pop(0.5 + k * 0.1)}>
+              <rect x={x} y={y} width="50" height="46" rx="7" fill={k === 0 ? 'url(#ecTile)' : H.ivory} stroke={H.sand} />
+              <motion.g {...loop(active, { rotate: [0, 45] }, 16 + k * 2)} style={center}>
+                <polygon points={starPoints(x + 25, y + 18, 10, 5.4)} fill="none" stroke={k === 0 ? H.white : H.turquoise} strokeWidth="1.3" opacity={k === 0 ? 1 : 0.7} />
+              </motion.g>
+              <rect x={x + 6} y={y + 33} width="26" height="3" rx="1.5" fill={k === 0 ? H.white : H.sand} />
+              <rect x={x + 6} y={y + 39} width="16" height="3.5" rx="1.7" fill={k === 0 ? H.white : H.turquoise} />
+              <SmallStar cx={x + 42} cy={y + 40} />
+            </motion.g>;
+          })}
+          <motion.g {...pop(1.2)}>
+            <rect x="100" y="128" width="40" height="13" rx="6.5" fill={H.terracotta} />
+            <text x="120" y="137" textAnchor="middle" fontSize="7" fontWeight="700" fill={H.white}>Stokta</text>
+          </motion.g>
+        </motion.g>
+      </motion.g>
+      {/* basket → payment → order */}
+      <motion.path d="M120 146 L120 156" stroke={H.turquoise} strokeWidth="1.2" strokeDasharray="2 2" {...drawIn(1.4, 0.2)} />
+      {hops.map((d, i) => <motion.path key={d} d={d} fill="none" stroke={H.turquoise} strokeWidth="1.3" strokeDasharray="3 3" {...drawIn(1.6 + i * 0.15, 0.4)} />)}
+      {hops.map((d, i) => <Travel key={d} active={active} d={d} delay={4.6 + i * 1} duration={0.9} period={8} color={H.terracotta} r={2.6} />)}
+      {flow.map((n, i) => <motion.g key={n.label} {...pop(1.5 + i * 0.15)}>
+        <motion.circle cx={n.x} cy="172" r="14" initial={false} {...flash(active, 4.4 + i, 8, H.white, H.turquoiseLight)} stroke={H.turquoise} strokeOpacity="0.5" filter="url(#ecShadow)" />
+        {n.draw(n.x, 172, H.turquoiseDeep)}
+        <text x={n.x} y="198" textAnchor="middle" fontSize="7" fontWeight="700" fill={H.lapisDeep}>{n.label}</text>
+      </motion.g>)}
+      <Rail active={active} steps={steps} start={3} />
+    </svg>
+  </>}</Frame>;
+}
+
+// ── ikas: the original ikas storefront merged with theme, products, integrations and mobile ─────
+export function IkasScene() {
+  const outs = [{ label: 'Ödeme', x: 40, draw: Icon2.card }, { label: 'Kargo', x: 96, draw: Icon2.box }, { label: 'Pazaryeri', x: 152, draw: Icon2.cart }];
+  const lines = outs.map(n => `M96 150 C96 160 ${n.x} 158 ${n.x} 166`);
+  const steps = [['Tema', 20, 34], ['Ürünler', 60, 44], ['Entegrasyon', 110, 62], ['Yayın', 178, 40]] as const;
+  return <Frame label="Temsili ikas mağazası: tema, ürün listesi ve mobil görünüm hazırlanıyor; mağaza ödeme, kargo ve pazaryeri entegrasyonlarına bağlanıyor.">{active => <>
+    <svg viewBox="0 0 240 240" className="absolute inset-0 h-full w-full" aria-hidden="true">
+      <defs><Shadow id="ikShadow" /><Grad id="ikHero" from={H.turquoise} to={H.turquoiseDeep} /><Grad id="ikProd" from={H.terracotta} to={H.saffron} /></defs>
+      {/* ikas storefront */}
+      <motion.g {...loop(active, { y: [0, -2, 0] }, 9)}>
+        <rect x="12" y="22" width="156" height="128" rx="12" fill={H.white} filter="url(#ikShadow)" />
+        <motion.rect x="12" y="22" width="156" height="128" rx="12" fill="none" stroke={H.sand} strokeWidth="1.5" {...drawIn(0.1, 1)} />
+        <path d="M12 36 a12 12 0 0 1 12 -14 h132 a12 12 0 0 1 12 14 z" fill={H.ivory} />
+        <text x="50" y="32" fontSize="6.8" fontWeight="700" fill={H.lapisDeep}>ikas mağazanız</text>
+        <rect x="120" y="26" width="40" height="7" rx="3.5" fill={H.white} stroke={H.sand} />
+        <text x="140" y="31.4" textAnchor="middle" fontSize="5.4" fill={H.lapis}>magazaniz.com</text>
+        <motion.g {...riseIn(0.5)}>
+          <rect x="20" y="42" width="140" height="38" rx="8" fill="url(#ikHero)" />
+          <rect x="28" y="52" width="54" height="5" rx="2.5" fill={H.white} />
+          <rect x="28" y="61" width="38" height="3" rx="1.5" fill={H.white} opacity="0.6" />
+          <rect x="28" y="68" width="26" height="7" rx="3.5" fill="#DEFF36" />
+          <motion.g {...loop(active, { rotate: [0, 45] }, 18)} style={center}><polygon points={starPoints(138, 61, 12, 6.5)} fill="none" stroke={H.white} strokeWidth="1.4" opacity="0.85" /></motion.g>
+        </motion.g>
+        {[0, 1, 2].map(k => <motion.g key={k} {...pop(0.8 + k * 0.12)}>
+          <rect x={20 + k * 47} y="86" width="43" height="56" rx="6" fill={H.ivory} stroke={H.sand} />
+          <rect x={25 + k * 47} y="91" width="33" height="26" rx="4" fill={k === 1 ? 'url(#ikProd)' : H.turquoiseLight} />
+          <polygon points={starPoints(41.5 + k * 47, 104, 6.5, 3.4)} fill="none" stroke={k === 1 ? H.white : H.turquoise} strokeWidth="1" opacity="0.8" />
+          <rect x={25 + k * 47} y="122" width="26" height="3" rx="1.5" fill={H.sand} />
+          <rect x={25 + k * 47} y="129" width="15" height="4" rx="2" fill={H.turquoise} />
+        </motion.g>)}
+      </motion.g>
+      {/* ikas mark (the app keeps its own lime) */}
+      <motion.g {...pop(0.3)}>
+        <motion.g {...loop(active, { y: [0, -3, 0] }, 6)}>
+          <rect x="8" y="6" width="36" height="36" rx="10" fill={H.white} filter="url(#ikShadow)" />
+          <image href="/images/Tech/brand/ikas-icon.png" x="12" y="10" width="28" height="28" preserveAspectRatio="xMidYMid meet" />
+        </motion.g>
+      </motion.g>
+      {/* phone */}
+      <motion.g {...pop(1.3)}>
+        <motion.g {...loop(active, { y: [0, -3, 0] }, 7, 1)}>
+          <rect x="176" y="40" width="52" height="102" rx="11" fill={H.white} stroke={H.lapisDeep} strokeWidth="2" filter="url(#ikShadow)" />
+          <rect x="194" y="45" width="16" height="3" rx="1.5" fill={H.lapisDeep} />
+          <rect x="182" y="54" width="40" height="24" rx="5" fill="url(#ikHero)" />
+          <rect x="187" y="70" width="16" height="4" rx="2" fill="#DEFF36" />
+          {[0, 1].map(k => <rect key={k} x={182 + k * 21} y="84" width="19" height="26" rx="4" fill={k ? 'url(#ikProd)' : H.turquoiseLight} />)}
+          <rect x="182" y="118" width="40" height="9" rx="4.5" fill={H.terracotta} />
+        </motion.g>
+      </motion.g>
+      {/* integrations */}
+      {lines.map((d, i) => <motion.path key={d} d={d} fill="none" stroke={H.turquoise} strokeWidth="1.2" strokeDasharray="3 3" {...drawIn(1.5 + i * 0.1, 0.5)} />)}
+      {lines.map((d, i) => <Travel key={d} active={active} d={d} delay={2.6 + i * 0.6} duration={1} period={7} color={H.terracotta} r={2.6} />)}
+      {outs.map((n, i) => <motion.g key={n.label} {...pop(1.6 + i * 0.12)}>
+        <motion.circle cx={n.x} cy="180" r="15" fill="none" stroke={H.turquoise} initial={false} style={center}
+          animate={active ? { scale: [1, 1, 1.4, 1.4], opacity: [0, 0.8, 0, 0] } : { scale: 1, opacity: 0 }}
+          transition={active ? { duration: 7, delay: 3.5 + i * 0.6, repeat: Infinity, times: [0, 0.02, 0.2, 1] } : { duration: 0 }} />
+        <circle cx={n.x} cy="180" r="14" fill={H.white} stroke={H.turquoise} strokeOpacity="0.45" filter="url(#ikShadow)" />
+        {n.draw(n.x, 180, H.turquoiseDeep)}
+        <text x={n.x} y="205" textAnchor="middle" fontSize="6.8" fontWeight="700" fill={H.lapisDeep}>{n.label}</text>
+      </motion.g>)}
+      {/* published badge */}
+      <motion.g {...pop(2)}>
+        <rect x="178" y="166" width="50" height="22" rx="11" fill={H.white} stroke={H.turquoise} strokeOpacity="0.45" filter="url(#ikShadow)" />
+        <motion.circle cx="190" cy="177" r="6.5" initial={false} {...flash(active, 5.2, 7, H.turquoise, H.turquoiseDeep)} />
+        <Check cx={190} cy={177} r={5.5} />
+        <text x="200" y="179.5" fontSize="6.6" fontWeight="700" fill={H.lapisDeep}>Yayında</text>
+      </motion.g>
+      <Rail active={active} steps={steps} start={3} />
+    </svg>
+  </>}</Frame>;
+}
+
 // Meta overview hero: the original AdCreativeScene look (full-canvas SVG, gradient ad card with a
 // girih star, draw-in outlines, rising heart) merged with the newer story: the same ad in the feed and
 // in a story, a click travelling to the landing page, a measured form and the four-step rail.

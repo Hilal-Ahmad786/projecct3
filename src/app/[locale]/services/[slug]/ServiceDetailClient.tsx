@@ -1,6 +1,6 @@
 'use client';
 
-import { CorporateSiteScene } from '@/components/services/hero-visuals/scenes-3d';
+import { CorporateSiteScene, EcommerceScene, IkasScene } from '@/components/services/hero-visuals/scenes-3d';
 
 import { useState, useRef, useEffect, type ReactNode } from 'react';
 import LocalizedLink from '@/components/LocalizedLink';
@@ -31,11 +31,9 @@ import { formatPrice } from '@/lib/currency';
 import { COMPANY_STATS } from '@/config/companyStats';
 import CorporateWebsiteOverview from '@/components/services/CorporateWebsiteOverview';
 import EcommercePlatformStrip from '@/components/e-commerce/EcommercePlatformStrip';
-import EcommerceHeroPlatforms from '@/components/e-commerce/EcommerceHeroPlatforms';
 import { IKAS_TR_HERO } from '@/components/ikas/ikasTurkishCopy';
 import RotatingHeading from '@/components/services/RotatingHeading';
 import { CustomEcommerceIcon } from '@/components/e-commerce/CustomEcommerceIcon';
-import IkasHeroVisual from '@/components/ikas/IkasHeroVisual';
 import { ShopifyIcon, ShopifyPlatformNote } from '@/components/e-commerce/ShopifyMark';
 import { IkasPlatformNote } from '@/components/ikas/IkasMark';
 
@@ -915,22 +913,9 @@ function HeroSection({
                 />
                 <div className="relative z-10">
                   {service.slug === 'e-commerce' && locale === 'tr' ? (
-                    <EcommerceHeroPlatforms>
-                      <HeroVisual type={animation.heroVisual} motionType={animation.motion} accentClass={colors.dot} />
-                    </EcommerceHeroPlatforms>
+                    <EcommerceScene />
                   ) : isIkasTr ? (
-                    <>
-                      <IkasHeroVisual animation={animation} />
-                      {/* ikas platform marks on the storefront scene (decorative; the H1 names ikas).
-                          The app icon keeps ikas's own lime green (#DEFF36). */}
-                      <div aria-hidden="true" data-ikas-loop className="ikas-badge-float absolute left-[2%] top-[4%] z-20 rounded-[22px] bg-white p-1.5 shadow-[0_12px_30px_rgba(18,25,38,0.18)] ring-1 ring-black/5 sm:left-[4%]">
-                        <img src="/images/Tech/brand/ikas-icon.png" alt="" width={64} height={64} className="h-14 w-14 rounded-2xl sm:h-16 sm:w-16" />
-                      </div>
-                      <div aria-hidden="true" className="absolute bottom-[20%] right-[3%] z-20 flex items-center gap-2 rounded-full border border-heritage-sand bg-white/95 px-3 py-1.5 shadow-sm">
-                        <img src="/images/Tech/brand/ikas-icon.png" alt="" width={18} height={18} className="h-[18px] w-[18px] rounded" />
-                        <span className="text-[12px] font-semibold text-gray-800">ikas mağazası</span>
-                      </div>
-                    </>
+                    <IkasScene />
                   ) : (service.slug === 'corporate-website-design' || isCustomEcomTr || isMarketTr || isSeoTr || isEcommerceSeoTr || isTechnicalSeoTr || isGoogleAdsTr || isGoogleSearchAdsTr || isGoogleShoppingTr || isMetaAdsTr || isPerformanceMaxTr) && heroArt ? (
                     heroArt
                   ) : isShopifyTr ? (
