@@ -39,6 +39,10 @@ const V = {
   review: (c?: string) => art('monthly-plan', 'Temsili izleme planı: yayın kontrolü, harcama ve kayıt, talep kalitesi ve sonraki test önerisi', { 'slot-month': 'İzleme planı', 'slot-week-1': 'Yayın sonrası', 'slot-week-2': 'Düzenli', 'slot-week-3': 'Düzenli', 'slot-week-4': 'Dönem sonu', 'slot-task-1': 'Yayın kontrolü', 'slot-task-sub-1': 'Bağlantı ve bütçe', 'slot-task-2': 'Harcama ve kayıt', 'slot-task-sub-2': 'Aynı dönem', 'slot-task-3': 'Talep kalitesi', 'slot-task-sub-3': 'Ekip geri bildirimi', 'slot-task-4': 'Sonraki test', 'slot-task-sub-4': 'Gerekçesiyle' }, c),
   project: (c?: string) => art('tech-finding', 'Bir Meta reklam projesi değerlendirmesinde bulunması gerekenler: işletme hedefi, başlangıç durumu, yapılan işler, dönem ve veri kaynağı', { 'slot-title': 'Proje değerlendirmesi', 'slot-priority': 'Yöntem', 'slot-label-1': 'İşletme hedefi', 'slot-value-1': 'Satış veya başvuru', 'slot-label-2': 'Başlangıç durumu', 'slot-value-2': 'Hesap ve ölçüm', 'slot-label-3': 'Yapılan işler', 'slot-value-3': 'Yönetim, kreatif, teknik', 'slot-label-4': 'Dönem ve kaynak', 'slot-value-4': 'Tarih aralığı, veri' }, c),
   models: (c?: string) => art('site-types', 'Satış modeline göre değerlendirme: e-ticaret mağazasında sipariş akışı, hizmet işletmesinde teklif süreci, yeni üründe tanıtım sayfası', { 'slot-type-1': 'E-ticaret mağazası', 'slot-type-2': 'Hizmet işletmesi', 'slot-type-3': 'Yeni ürün tanıtımı' }, c),
+  catalog: (c?: string) => art('category-filters', 'Temsili ürün setleri: doğal kozmetik kataloğunda stoktaki sıvı sabunlar ve el kremleri ayrı setlerde reklamda; tükenen ürünler ve görseli eksik ürün set dışında tutuluyor', { 'slot-category': 'Doğal kozmetik kataloğu', 'slot-urls': 'Ürün setleri', 'slot-url-1': 'Sıvı sabunlar · stokta', 'slot-url-2': 'Tükenen ürünler', 'slot-url-3': 'El kremleri · stokta', 'slot-url-4': 'Görseli eksik ürün', 'slot-legend-ok': 'Sette', 'slot-legend-skip': 'Set dışı' }, c),
+  changeLog: (c?: string) => art('tech-finding', 'Temsili değişiklik kaydı: kahve ekipmanı reklamında gözlem, yapılan değişiklik, gerekçe ve sonraki kontrol birlikte yazılıyor', { 'slot-title': 'Değişiklik kaydı', 'slot-priority': 'Temsili', 'slot-label-1': 'Gözlem', 'slot-value-1': 'Etkileşim var, geçiş az', 'slot-label-2': 'Değişiklik', 'slot-value-2': 'Tek mesaj: kullanım', 'slot-label-3': 'Gerekçe', 'slot-value-3': 'Ürün anlaşılmıyor', 'slot-label-4': 'Sonraki kontrol', 'slot-value-4': 'Aynı dönem, aynı hedef' }, c),
+  diagnose: (c?: string) => art('tech-finding', 'Temsili teşhis sırası: önce ölçüm ve olaylar, sonra teklif ve açılış sayfası, kreatif ve hedef kitle, en son bütçe ve sıklık kontrol ediliyor', { 'slot-title': 'Teşhis sırası', 'slot-priority': 'Sırayla', 'slot-label-1': '1 · Ölçüm', 'slot-value-1': 'Olay doğru mu?', 'slot-label-2': '2 · Teklif ve sayfa', 'slot-value-2': 'Reklamla tutarlı mı?', 'slot-label-3': '3 · Kreatif ve kitle', 'slot-value-3': 'Mesaj net mi?', 'slot-label-4': '4 · Bütçe ve sıklık', 'slot-value-4': 'Dağılım dengeli mi?' }, c),
+  packages: (c?: string) => art('contract-scope', 'Hazır paketlerde sorulacaklar: kreatif adedi ve formatlar, revizyon, teknik kurulum ve rapor içeriği; pakette yazmayan iş ayrı ücretlendirilebilir', { 'slot-doc': 'Paket kapsamı', 'slot-clause-1': 'Kreatif adedi ve formatlar', 'slot-clause-2': 'Revizyon sınırı', 'slot-clause-3': 'Teknik kurulum', 'slot-clause-4': 'Rapor içeriği', 'slot-clause-5': 'Yazmayan iş ayrı ücretli' }, c),
   budget: (c?: string) => art('gads-budget-split', 'Maliyet kalemleri: medya bütçesi Meta reklam hesabınızdan Meta’ya ödenir; yönetim, kreatif üretimi ve teknik çalışma PakSoft teklifinde ayrı kalemlerdir', { 'slot-budget': 'Medya bütçesi', 'slot-budget-sub': 'Reklam harcaması', 'slot-fee': 'Yönetim bedeli', 'slot-setup': 'Kreatif ve teknik iş', 'slot-google': 'Meta reklam hesabınız', 'slot-google-sub': 'Ödeme doğrudan Meta’ya', 'slot-paksoft': 'PakSoft teklifi', 'slot-paksoft-sub': 'Kalemler ayrı yazılır' }, c),
   quote: (c?: string) => art('quote-groups', 'Yönetim bedelini etkileyenler: ürün grupları, dil ve pazar sayısı, içerik üretimi, rapor ve toplantı kapsamı; medya bütçesi ayrı', { 'slot-group-1': 'Ürün grupları', 'slot-group-2': 'Dil ve pazar', 'slot-group-3': 'İçerik üretimi', 'slot-group-4': 'Rapor ve toplantı', 'slot-quote': 'Yönetim bedeli', 'slot-extra': 'Medya bütçesi ayrı' }, c),
   compare: (c?: string) => art('deliverables', 'Teklifleri karşılaştırırken sorulacaklar: medya harcaması dahil mi, kaç içerik üretilecek, kurulum dahil mi, rapor neyi açıklayacak', { 'slot-doc-1': 'Medya dahil mi?', 'slot-doc-2': 'İçerik ve revizyon', 'slot-doc-3': 'Kurulum dahil mi?', 'slot-doc-4': 'Rapor kapsamı' }, c),
@@ -56,6 +60,7 @@ const visuals: SeoServiceConfig['visuals'] = {
     ['Kreatifleri bir soruya', aside(V.creative())],
     ['Yeniden pazarlama', aside(V.audience())],
     ['E-ticaret ve başvuru', aside(V.goals())],
+    ['Katalog reklamları', aside(V.catalog())],
   ],
   technologies: [
     ['Hesaplar ve yetkiler', aside(V.access())],
@@ -67,14 +72,17 @@ const visuals: SeoServiceConfig['visuals'] = {
   process: [
     ['Hedef ve mevcut durum', { place: 'below', node: V.rail() }],
     ['Yayın öncesi kontrol', aside(V.launch())],
-    ['İzleme ve değerlendirme', aside(V.review())],
+    ['Haftalık ve aylık kontrolleri', aside(V.review())],
+    ['Kampanya değişikliklerini', aside(V.changeLog())],
   ],
   portfolio: [
+    ['Bir Meta reklam sorununu', aside(V.diagnose())],
     ['Projenizi benzer', aside(V.models())],
   ],
   pricing: [
     ['Yönetim ücretini', aside(V.quote())],
     ['Teklifleri karşılaştırırken', aside(V.compare())],
+    ['Hazır Meta reklam paketleri', aside(V.packages())],
   ],
 };
 
@@ -96,13 +104,13 @@ const config: SeoServiceConfig = {
   closingDefault: { title: 'İşletmeniz İçin Meta Reklam Planını Konuşalım', text: 'Web sitenizi, hedefinizi ve mevcut reklam durumunuzu paylaşın. Başlangıç için gerekli işleri birlikte belirleyelim.' },
   closingCopy: { overview: { title: 'İşletmeniz için Meta reklam planını konuşalım', text: 'Yeni bir hesap kuruyor veya mevcut reklamlarınızı geliştirmek istiyor olabilirsiniz. Hedefinizi ve mevcut durumunuzu paylaşın; hangi işlerin öncelikli olduğunu birlikte belirleyelim.' } },
   jumpLabels: [
-    ['Reklamlarınızdan hangi sonucu', 'Reklam hedefi'], ['Meta reklam yönetimi hizmetine', 'Hizmet kapsamı'], ['Facebook ve Instagram', 'Facebook ve Instagram'], ['Tıklamadan sonraki', 'Açılış sayfası'], ['Raporlarda ne', 'Raporlar'], ['Meta reklam ajansı seçerken', 'Ajans seçimi'], ['Meta reklam danışmanlığı mı', 'Danışmanlık veya yönetim'],
-    ['Kampanya öncesi hazırlık', 'Hazırlık'], ['Kreatifleri bir soruya', 'Kreatif testleri'], ['Yeniden pazarlama', 'Yeniden pazarlama'], ['E-ticaret ve başvuru', 'E-ticaret ve başvuru'], ['Dahil olan ve ayrıca', 'Kapsam tablosu'], ['Değişikliklerin nedenini', 'Değişiklik kaydı'],
-    ['Hesaplar ve yetkiler', 'Hesap ve yetki'], ['Meta piksel kurulumu', 'Meta piksel'], ['Sunucu tarafı ölçüm', 'Sunucu tarafı ölçüm'], ['Kurulumdan sonra hangi', 'Kurulum kontrolleri'], ['Araç seçimi', 'Altyapı'], ['Raporlama kaynaklarını', 'Rapor kaynakları'],
-    ['Hedef ve mevcut', 'Hedef'], ['Erişim ve ölçüm', 'Erişim ve ölçüm'], ['Mesaj, içerik', 'İçerik ve bütçe'], ['Yayın öncesi', 'Yayın öncesi'], ['İzleme ve', 'İzleme'], ['Sizden hangi bilgiler', 'Gerekli bilgiler'],
-    ['Bir proje değerlendirmesinde', 'Değerlendirme ölçütleri'], ['Projenizi benzer', 'Projenizi konuşalım'],
-    ['Reklam harcaması ile hizmet', 'Maliyet kalemleri'], ['Yönetim ücretini', 'Ücreti etkileyenler'], ['Başlangıç bütçesi', 'Başlangıç bütçesi'], ['Teklifleri karşılaştırırken', 'Teklif karşılaştırma'], ['Size uygun kapsamı', 'Kapsam ve teklif'],
-    ['Sık sorulan sorular', 'Sık sorulan sorular'],
+    ['Reklamlarınızdan hangi sonucu', 'Reklam hedefi'], ['Meta reklam yönetimi hizmetine', 'Hizmet kapsamı'], ['Facebook ve Instagram', 'Facebook ve Instagram'], ['Tıklamadan sonraki', 'Açılış sayfası'], ['Raporlarda ne', 'Raporlar'], ['Meta reklam ajansı seçerken', 'Ajans seçimi'], ['Meta reklam danışmanlığı mı', 'Danışmanlık veya yönetim'], ['Hangi kampanya hedefi', 'Kampanya hedefi'], ['Meta reklam uzmanı ilk hafta', 'İlk hafta kontrolleri'],
+    ['Kampanya öncesi hazırlık', 'Hazırlık'], ['Kreatifleri bir soruya', 'Kreatif testleri'], ['Yeniden pazarlama', 'Yeniden pazarlama'], ['E-ticaret ve başvuru', 'E-ticaret ve başvuru'], ['Dahil olan ve ayrıca', 'Kapsam tablosu'], ['Değişikliklerin nedenini', 'Değişiklik kaydı'], ['Potansiyel müşteri reklamlarında', 'Form mu, site mi?'], ['Katalog reklamları', 'Katalog reklamları'], ['Advantage+', 'Advantage+'], ['Reklam yorgunluğu', 'Kreatif yenileme'],
+    ['Hesaplar ve yetkiler', 'Hesap ve yetki'], ['Meta piksel kurulumu', 'Meta piksel'], ['Sunucu tarafı ölçüm', 'Sunucu tarafı ölçüm'], ['Kurulumdan sonra hangi', 'Kurulum kontrolleri'], ['Araç seçimi', 'Altyapı'], ['Raporlama kaynaklarını', 'Rapor kaynakları'], ['Standart olaylar', 'Standart olaylar'], ['Piksel ve Dönüşümler API', 'Piksel ve CAPI'], ['Katalog bağlantısı', 'Katalog bağlantısı'], ['Hedef kitle sinyalleri', 'Kitle sinyalleri'],
+    ['Hedef ve mevcut', 'Hedef'], ['Erişim ve ölçüm', 'Erişim ve ölçüm'], ['Mesaj, içerik', 'İçerik ve bütçe'], ['Yayın öncesi', 'Yayın öncesi'], ['İzleme ve', 'İzleme'], ['Sizden hangi bilgiler', 'Gerekli bilgiler'], ['İlk çalışma döneminde', 'İlk dönem'], ['Öğrenme aşamasında', 'Öğrenme aşaması'], ['Haftalık ve aylık', 'Kontrol takvimi'], ['Kampanya değişikliklerini', 'Değişiklik kaydı'],
+    ['Bir proje değerlendirmesinde', 'Değerlendirme ölçütleri'], ['Projenizi benzer', 'Projenizi konuşalım'], ['Üç temsili Meta', 'Temsili senaryolar'], ['Bir Meta reklam sorununu', 'Teşhis sırası'], ['Raporu işletme kayıtlarıyla', 'Rapor karşılaştırma'],
+    ['Reklam harcaması ile hizmet', 'Maliyet kalemleri'], ['Yönetim ücretini', 'Ücreti etkileyenler'], ['Başlangıç bütçesi', 'Başlangıç bütçesi'], ['Teklifleri karşılaştırırken', 'Teklif karşılaştırma'], ['Size uygun kapsamı', 'Kapsam ve teklif'], ['Hazır Meta reklam paketleri', 'Hazır paketler'], ['Kreatif üretimi maliyeti', 'Kreatif maliyeti'], ['Test bütçesi', 'Test bütçesi'],
+    ['Sık sorulan sorular', 'Sık sorulan sorular'], ['Kampanya ve kreatif', 'Kampanya ve kreatif'], ['Ölçüm ve hesap', 'Ölçüm ve hesap'],
   ],
   sectionIds: {
     'features:Kampanya öncesi hazırlık': 'meta-kampanya-hazirligi',
