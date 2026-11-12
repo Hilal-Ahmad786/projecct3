@@ -20,6 +20,7 @@ const SERVICE_BLOGS: Record<string, readonly string[]> = {
   'google-search-ads': ['tr'],
   'google-shopping': ['tr'],
   'performance-max': ['tr'],
+  'meta-ads': ['tr'],
 };
 
 export function hasServiceBlog(category: string | null | undefined, locale: string): boolean {

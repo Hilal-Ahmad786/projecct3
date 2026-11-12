@@ -104,6 +104,7 @@ const TOTAL_STEPS = 5;
 
 // Service-type labels localized for all 5 site locales (en/tr/de/ur/ar)
 export const SERVICE_LABELS: { value: string; labels: Record<string, string> }[] = [
+  { value: 'meta-ads', labels: { en: 'Meta Ads Management', tr: 'Meta Reklam Yönetimi', de: 'Meta-Werbeanzeigen', ur: 'میٹا اشتہارات', ar: 'إدارة إعلانات ميتا' } },
   { value: 'web-development', labels: { en: 'Web Development', tr: 'Web Geliştirme', de: 'Webentwicklung', ur: 'ویب ڈویلپمنٹ', ar: 'تطوير الويب' } },
   { value: 'mobile-development', labels: { en: 'Mobile App Development', tr: 'Mobil Uygulama Geliştirme', de: 'Mobile-App-Entwicklung', ur: 'موبائل ایپ ڈویلپمنٹ', ar: 'تطوير تطبيقات الجوال' } },
   { value: 'ai-solutions', labels: { en: 'AI Solutions', tr: 'Yapay Zeka Çözümleri', de: 'KI-Lösungen', ur: 'AI حل', ar: 'حلول الذكاء الاصطناعي' } },

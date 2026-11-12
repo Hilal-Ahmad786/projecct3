@@ -1,3 +1,4 @@
+import metaAdsArticles from '../../content/blog/meta-ads/manifest.json';
 import { MetadataRoute } from 'next';
 import { localizeFullPath } from '@/lib/routes';
 import { hasServiceBlog } from '@/lib/service-blogs';
@@ -217,6 +218,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     if (!entries.some((item) => item.url === candidate)) entries.push(entry('tr', path, { priority: index === 0 ? PRIORITY.serviceDetail : PRIORITY.other, changeFreq: index === 0 ? 'weekly' : 'monthly', date: new Date('2026-11-11T00:00:00Z') }));
   });
 
+  const metaAdsPaths = ['', '/features', '/technologies', '/process', '/portfolio', '/pricing', '/faq', '/blog'].map(suffix => `/services/meta-ads${suffix}`);
+  metaAdsPaths.forEach((path, index) => {
+    const candidate = `${baseUrl}/tr${localizeFullPath(path, 'tr')}`;
+    if (!entries.some(item => item.url === candidate)) entries.push(entry('tr', path, { priority: index === 0 ? PRIORITY.serviceDetail : PRIORITY.other, changeFreq: 'monthly', date: new Date('2026-11-12T00:00:00Z') }));
+  });
   // 5. Blog posts (live from DB). Each post exists in ONE language
   // (BlogPost.language), so list it once under its own locale — advertising
   // every slug under all 5 locales created duplicate URLs with bogus hreflang.
@@ -320,6 +326,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }));
   });
 
+  metaAdsArticles.forEach(({ slug }) => {
+    const path = `/services/meta-ads/blog/${slug}`;
+    const candidate = `${baseUrl}/tr${localizeFullPath(path, 'tr')}`;
+    if (!entries.some(item => item.url === candidate)) entries.push(entry('tr', path, { priority: PRIORITY.blogPost, changeFreq: 'monthly', date: new Date('2026-11-12T00:00:00Z'), includeAlternates: false }));
+  });
   // Repository-backed pazaryeri guides (Turkish only, dated in their manifest).
   marketplaceArticles.forEach(({ slug, datePublished }) => {
     entries.push(entry('tr', `/services/marketplace-development/blog/${slug}`, {

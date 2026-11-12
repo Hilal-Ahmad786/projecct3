@@ -104,3 +104,36 @@ export function CorporateSiteScene({ locale = 'tr' }: { locale?: 'tr' | 'en' }) 
     <div className="absolute bottom-[3%] left-[10%] flex items-center gap-2 rounded-full px-3 py-2 font-semibold" style={{background:H.turquoiseLight}}><PencilSquareIcon className="h-4 w-4" />{t.cms}</div>
   </>}</Frame>;
 }
+
+export function MetaAdsScene() {
+  const steps = ['Hedef', 'Kreatif', 'Ölçüm', 'Değerlendirme'];
+  return <Frame label="Temsili Meta reklam akışı: Facebook akışı ve Instagram hikâyesindeki aynı reklam açılış sayfasına yönlendiriyor; başarılı form kaydı ölçülüyor ve hedef, kreatif, ölçüm, değerlendirme adımlarıyla izleniyor.">{active => <>
+    <Connections active={active} paths={['M40 30 Q54 40 60 52', 'M58 39 L68 52', 'M64 80 Q52 86 42 74']} />
+    <Plane active={active} floating x={1} y={3} width={41} angle={16} depth={8}>
+      <b>Akış</b><p className="text-[9px]" style={{ color: H.turquoiseDeep }}>Facebook</p>
+      <div className="mt-1.5 flex h-14 items-center justify-center rounded-md" style={{ background: H.ivory }}><PhotoIcon className="h-5 w-5" style={{ color: H.turquoise }} /></div>
+      <Bars />
+      <div className="mt-2 rounded px-2 py-1 text-center text-[9px] font-semibold text-white" style={{ background: H.turquoise }}>Daha fazla bilgi</div>
+    </Plane>
+    <Plane active={active} floating x={45} y={1} width={25} depth={-14} delay={0.15}>
+      <b>Hikâye</b><p className="text-[9px]" style={{ color: H.turquoiseDeep }}>Instagram</p>
+      <div className="mt-1.5 flex h-14 items-center justify-center rounded-md" style={{ background: H.sand }}><PlayIcon className="h-5 w-5" style={{ color: H.turquoiseDeep }} /></div>
+      <div className="mt-2 rounded-full border px-1 py-0.5 text-center text-[8px]" style={{ borderColor: H.turquoise }}>Siteye git</div>
+    </Plane>
+    <Plane active={active} floating x={56} y={45} width={42} angle={-16} depth={26} delay={0.3}>
+      <b>Açılış sayfası</b>
+      <Bars />
+      <div className="mt-2 space-y-1"><div className="h-3 rounded border" style={{ borderColor: H.sand }} /><div className="h-3 rounded border" style={{ borderColor: H.sand }} /></div>
+      <div className="mt-2 h-3 w-1/2 rounded" style={{ background: H.terracotta }} />
+    </Plane>
+    <Plane active={active} x={6} y={56} width={40} angle={10} depth={18} delay={0.45}>
+      <b>Ölçüm</b>
+      <div className="mt-1.5 flex items-center gap-1.5 text-[9px]"><CheckIcon className="h-3.5 w-3.5" style={{ color: H.turquoise }} />Başarılı form kaydı</div>
+      <div className="mt-1 flex items-center gap-1.5 text-[9px]"><CheckIcon className="h-3.5 w-3.5" style={{ color: H.turquoise }} />Tekrar sayılmadı</div>
+    </Plane>
+    <div className="absolute bottom-[1%] flex w-full justify-center gap-1">{steps.map((s, i) => <motion.span key={s} initial={false}
+      animate={active ? { backgroundColor: [H.ivory, H.turquoiseLight, H.ivory], borderColor: [H.sand, H.turquoise, H.sand] } : { backgroundColor: H.ivory, borderColor: H.sand }}
+      transition={active ? { duration: 8, repeat: Infinity, delay: 1 + i * 2, times: [0, 0.12, 0.25], ease: 'easeInOut' } : { duration: 0 }}
+      className="rounded-md border px-2 py-1 font-semibold" style={{ background: H.ivory, borderColor: H.sand }}>{s}</motion.span>)}</div>
+  </>}</Frame>;
+}

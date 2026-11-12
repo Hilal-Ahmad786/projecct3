@@ -28,6 +28,8 @@ Google’da belirli bir ürün veya hizmet arayan kişilere ulaşmak için değe
 
 Google’ın birden fazla reklam kanalında çalışan hedef odaklı bir kampanya türüdür. Örneğin bir mağaza için satın alma ölçümü, ürün verileri ve reklam öğelerinin kampanyaya hazır olup olmadığını değerlendiririz. [Performance Max yönetimini inceleyin](/tr/hizmetler/performance-max).
 
+Facebook ve Instagram kampanyalarını da değerlendiriyorsanız [Meta reklam yönetimi](/tr/hizmetler/meta-ads) hizmetini inceleyebilirsiniz.
+
 ## Yeni hesap ile mevcut hesabı nasıl ele alıyoruz?
 
 | Durum | İlk inceleme | Örnek karar |

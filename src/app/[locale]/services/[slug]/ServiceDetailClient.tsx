@@ -269,7 +269,7 @@ export default function ServiceDetailClient({
   // The Turkish Shopify overview has its own server-rendered section body.
   // Keep only the shared animated hero here to avoid generic sections and
   // the generic statistics strip appearing ahead of that curated content.
-  if ((service.slug === 'shopify-development' || service.slug === 'custom-ecommerce' || service.slug === 'marketplace-development' || service.slug === 'ecommerce-seo' || service.slug === 'technical-seo' || service.slug === 'google-ads' || service.slug === 'google-search-ads' || service.slug === 'google-shopping' || service.slug === 'performance-max') && locale === 'tr') {
+  if ((service.slug === 'shopify-development' || service.slug === 'custom-ecommerce' || service.slug === 'marketplace-development' || service.slug === 'ecommerce-seo' || service.slug === 'technical-seo' || service.slug === 'google-ads' || service.slug === 'google-search-ads' || service.slug === 'google-shopping' || service.slug === 'performance-max' || service.slug === 'meta-ads') && locale === 'tr') {
     return <div id="overview"><HeroSection service={service} colors={colors} accent={accent} process={process} animation={animation} heroArt={heroArt} /></div>;
   }
 
@@ -682,9 +682,10 @@ function HeroSection({
   const isGoogleAdsTr = service.slug === 'google-ads' && locale === 'tr';
   const isGoogleSearchAdsTr = service.slug === 'google-search-ads' && locale === 'tr';
   const isGoogleShoppingTr = service.slug === 'google-shopping' && locale === 'tr';
+  const isMetaAdsTr = service.slug === 'meta-ads' && locale === 'tr';
   const isPerformanceMaxTr = service.slug === 'performance-max' && locale === 'tr';
   // Curated hero art can stand in for a missing DB hero animation.
-  const artOnly = !hasAnimation && (service.slug === 'corporate-website-design' || isCustomEcomTr || isMarketTr || isSeoTr || isEcommerceSeoTr || isTechnicalSeoTr || isGoogleAdsTr || isGoogleSearchAdsTr || isGoogleShoppingTr || isPerformanceMaxTr) && !!heroArt;
+  const artOnly = !hasAnimation && (service.slug === 'corporate-website-design' || isCustomEcomTr || isMarketTr || isSeoTr || isEcommerceSeoTr || isTechnicalSeoTr || isGoogleAdsTr || isGoogleSearchAdsTr || isGoogleShoppingTr || isMetaAdsTr || isPerformanceMaxTr) && !!heroArt;
 
   return (
     <section className="relative overflow-hidden bg-white pt-[var(--navbar-h,64px)] pb-16 lg:pt-[var(--navbar-h,64px)] lg:pb-24">
@@ -808,7 +809,7 @@ function HeroSection({
               Previous (full-description) version kept here on purpose:
                 {service.fullDescription || service.description}
             */}
-            <p className={`text-base sm:text-lg text-gray-600 max-w-lg leading-relaxed ${isShopifyTr || isCustomEcomTr || isMarketTr || isSeoTr || isEcommerceSeoTr || isTechnicalSeoTr || isGoogleAdsTr || isGoogleSearchAdsTr || isGoogleShoppingTr || isPerformanceMaxTr ? '' : 'line-clamp-5'} ${isIkasTr ? 'ikas-hero-copy' : ''}`}>
+            <p className={`text-base sm:text-lg text-gray-600 max-w-lg leading-relaxed ${isShopifyTr || isCustomEcomTr || isMarketTr || isSeoTr || isEcommerceSeoTr || isTechnicalSeoTr || isGoogleAdsTr || isGoogleSearchAdsTr || isGoogleShoppingTr || isMetaAdsTr || isPerformanceMaxTr ? '' : 'line-clamp-5'} ${isIkasTr ? 'ikas-hero-copy' : ''}`}>
               {service.shortDescription || service.fullDescription || service.description}
             </p>
 
@@ -816,7 +817,7 @@ function HeroSection({
             <div className={`space-y-3 pt-1 ${isIkasTr ? 'ikas-hero-actions' : ''}`}>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button
-                  href={service.slug === 'corporate-website-design' ? '/start-project?service=corporate-website-design' : service.slug === 'e-commerce' && locale === 'tr' ? '/start-project?service=e-commerce' : isPerformanceMaxTr ? '/start-project?service=performance-max' : isEcommerceSeoTr ? '/start-project?service=ecommerce-seo' : isTechnicalSeoTr ? '/start-project?service=technical-seo' : isGoogleShoppingTr ? '/start-project?service=google-shopping' : isGoogleSearchAdsTr ? '/start-project?service=google-search-ads' : isGoogleAdsTr ? '/start-project?service=google-ads' : isSeoTr ? '/start-project?service=seo' : isIkasTr ? '/start-project?service=ikas-development' : isShopifyTr ? '/start-project?service=shopify-development' : isCustomEcomTr ? '/start-project?service=custom-ecommerce' : isMarketTr ? '/start-project?service=marketplace-development' : '/contact'}
+                  href={isMetaAdsTr ? '/start-project?service=meta-ads' : service.slug === 'corporate-website-design' ? '/start-project?service=corporate-website-design' : service.slug === 'e-commerce' && locale === 'tr' ? '/start-project?service=e-commerce' : isPerformanceMaxTr ? '/start-project?service=performance-max' : isEcommerceSeoTr ? '/start-project?service=ecommerce-seo' : isTechnicalSeoTr ? '/start-project?service=technical-seo' : isGoogleShoppingTr ? '/start-project?service=google-shopping' : isGoogleSearchAdsTr ? '/start-project?service=google-search-ads' : isGoogleAdsTr ? '/start-project?service=google-ads' : isSeoTr ? '/start-project?service=seo' : isIkasTr ? '/start-project?service=ikas-development' : isShopifyTr ? '/start-project?service=shopify-development' : isCustomEcomTr ? '/start-project?service=custom-ecommerce' : isMarketTr ? '/start-project?service=marketplace-development' : '/contact'}
                   variant="primary"
                   size="lg"
                   rightIcon={
@@ -825,11 +826,13 @@ function HeroSection({
                     </svg>
                   }
                 >
-                  {service.slug === 'e-commerce' && locale === 'tr' ? 'Projenizi Anlatın' : isPerformanceMaxTr ? 'Performance Max Teklifi Al' : isEcommerceSeoTr ? 'Mağazam İçin SEO Planı Al' : isTechnicalSeoTr ? 'Teknik SEO Teklifi Al' : isGoogleShoppingTr ? 'Alışveriş Reklamı Teklifi Al' : isGoogleSearchAdsTr ? 'Arama Ağı Teklifi Al' : isGoogleAdsTr ? 'Google Ads Teklifi Al' : isIkasTr ? IKAS_TR_HERO.primary : isShopifyTr ? 'Shopify Projem İçin Teklif Al' : isCustomEcomTr ? 'Projem İçin Teklif Al' : isMarketTr ? 'Pazaryeri Projenizi Anlatın' : isSeoTr ? 'Sitem İçin SEO Planı Al' : service.slug === 'corporate-website-design'
+                  {isMetaAdsTr ? 'Meta Reklam Teklifi Al' : service.slug === 'e-commerce' && locale === 'tr' ? 'Projenizi Anlatın' : isPerformanceMaxTr ? 'Performance Max Teklifi Al' : isEcommerceSeoTr ? 'Mağazam İçin SEO Planı Al' : isTechnicalSeoTr ? 'Teknik SEO Teklifi Al' : isGoogleShoppingTr ? 'Alışveriş Reklamı Teklifi Al' : isGoogleSearchAdsTr ? 'Arama Ağı Teklifi Al' : isGoogleAdsTr ? 'Google Ads Teklifi Al' : isIkasTr ? IKAS_TR_HERO.primary : isShopifyTr ? 'Shopify Projem İçin Teklif Al' : isCustomEcomTr ? 'Projem İçin Teklif Al' : isMarketTr ? 'Pazaryeri Projenizi Anlatın' : isSeoTr ? 'Sitem İçin SEO Planı Al' : service.slug === 'corporate-website-design'
                     ? (locale === 'tr' ? 'Projenizi Konuşalım' : 'Discuss Your Project')
                     : t('services.detail.hero.startProject')}
                 </Button>
-                {isPerformanceMaxTr ? (
+                {isMetaAdsTr ? (
+                  <a href="/tr/hizmetler/meta-ads/ozellikler" className="inline-flex items-center justify-center rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 hover:border-heritage-turquoise focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Yönetim Kapsamını İncele</a>
+                ) : isPerformanceMaxTr ? (
                   <a href="#pmax-kampanya-hedefi" className="inline-flex items-center justify-center gap-2 rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 transition-colors motion-reduce:transition-none hover:border-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2">Kampanya Hedefini İncele</a>
                 ) : isTechnicalSeoTr ? (
                   <a href="#teknik-seo-kapsami" className="inline-flex items-center justify-center gap-2 rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 transition-colors motion-reduce:transition-none hover:border-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2">Denetim Kapsamını İncele</a>
@@ -863,7 +866,7 @@ function HeroSection({
                 ) : <WhatsAppButton source="service_hero" variant="outline" size="lg" />}
               </div>
               {/* Response-time microcopy */}
-              {service.slug !== 'ikas-development' && service.slug !== 'corporate-website-design' && !(service.slug === 'e-commerce' && locale === 'tr') && !isShopifyTr && !isCustomEcomTr && !isMarketTr && !isSeoTr && !isEcommerceSeoTr && !isTechnicalSeoTr && !isGoogleAdsTr && !isGoogleSearchAdsTr && !isGoogleShoppingTr && !isPerformanceMaxTr && (
+              {service.slug !== 'ikas-development' && service.slug !== 'corporate-website-design' && !(service.slug === 'e-commerce' && locale === 'tr') && !isShopifyTr && !isCustomEcomTr && !isMarketTr && !isSeoTr && !isEcommerceSeoTr && !isTechnicalSeoTr && !isGoogleAdsTr && !isGoogleSearchAdsTr && !isGoogleShoppingTr && !isMetaAdsTr && !isPerformanceMaxTr && (
                 <p className="flex items-center gap-1.5 text-sm text-gray-400">
                   <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -928,7 +931,7 @@ function HeroSection({
                         <span className="text-[12px] font-semibold text-gray-800">ikas mağazası</span>
                       </div>
                     </>
-                  ) : (service.slug === 'corporate-website-design' || isCustomEcomTr || isMarketTr || isSeoTr || isEcommerceSeoTr || isTechnicalSeoTr || isGoogleAdsTr || isGoogleSearchAdsTr || isGoogleShoppingTr || isPerformanceMaxTr) && heroArt ? (
+                  ) : (service.slug === 'corporate-website-design' || isCustomEcomTr || isMarketTr || isSeoTr || isEcommerceSeoTr || isTechnicalSeoTr || isGoogleAdsTr || isGoogleSearchAdsTr || isGoogleShoppingTr || isMetaAdsTr || isPerformanceMaxTr) && heroArt ? (
                     heroArt
                   ) : isShopifyTr ? (
                     <>

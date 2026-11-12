@@ -1,3 +1,4 @@
+import { MetaAdsTurkishPage, getMetaAdsMeta, getMetaAdsSocialMeta } from '@/components/services/MetaAdsTurkishPage';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { Locale, locales, defaultLocale } from '@/lib/i18n';
@@ -46,7 +47,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: 'Shopify Tema Tasarımı ve Mağaza Özellikleri | PakSoft',
     description: 'Shopify tema tasarımı, tema özelleştirme, ürün sayfası tasarımı ve ödeme, kargo entegrasyonu kapsamını inceleyin. Mağazanıza uygun özellikleri PakSoft ile belirleyin.',
   } : undefined;
-  const customMeta = slug === 'performance-max' && validLocale === 'tr' ? getPerformanceMaxMeta('features') : slug === 'google-shopping' && validLocale === 'tr' ? getGoogleShoppingMeta('features') : slug === 'google-search-ads' && validLocale === 'tr' ? getGoogleSearchAdsMeta('features') : slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsMeta('features') : slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoMeta('features') : slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('features') : slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('features') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('features') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('features')
+  const customMeta = slug === 'meta-ads' && validLocale === 'tr' ? getMetaAdsMeta('features') : slug === 'performance-max' && validLocale === 'tr' ? getPerformanceMaxMeta('features') : slug === 'google-shopping' && validLocale === 'tr' ? getGoogleShoppingMeta('features') : slug === 'google-search-ads' && validLocale === 'tr' ? getGoogleSearchAdsMeta('features') : slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsMeta('features') : slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoMeta('features') : slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('features') : slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('features') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('features') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('features')
     : slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('features', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('features')
@@ -62,6 +63,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     ...(slug === 'seo' && validLocale === 'tr' ? getSeoTurkishSocialMeta('features', canonicalUrl) : {}),
     ...(slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoSocialMeta('features', canonicalUrl) : {}),
     ...(slug === 'performance-max' && validLocale === 'tr' ? getPerformanceMaxSocialMeta('features', canonicalUrl) : {}),
+    ...(slug === 'meta-ads' && validLocale === 'tr' ? getMetaAdsSocialMeta('features', canonicalUrl) : {}),
     ...(slug === 'google-shopping' && validLocale === 'tr' ? getGoogleShoppingSocialMeta('features', canonicalUrl) : {}),
     ...(slug === 'google-search-ads' && validLocale === 'tr' ? getGoogleSearchAdsSocialMeta('features', canonicalUrl) : {}),
     ...(slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsSocialMeta('features', canonicalUrl) : {}),
@@ -107,6 +109,7 @@ export default async function ServiceFeaturesPage({ params }: PageProps) {
   if (slug === 'ecommerce-seo' && locale === 'tr') return <EcommerceSeoTurkishPage page="features" />;
 
   if (slug === 'performance-max' && locale === 'tr') return <PerformanceMaxTurkishPage page="features" />;
+  if (slug === 'meta-ads' && locale === 'tr') return <MetaAdsTurkishPage page="features" />;
   if (slug === 'google-shopping' && locale === 'tr') return <GoogleShoppingTurkishPage page="features" />;
   if (slug === 'google-search-ads' && locale === 'tr') return <GoogleSearchAdsTurkishPage page="features" />;
 

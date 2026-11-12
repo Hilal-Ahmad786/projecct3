@@ -1,3 +1,4 @@
+import { MetaAdsTurkishPage, getMetaAdsMeta, getMetaAdsSocialMeta } from '@/components/services/MetaAdsTurkishPage';
 // Canonical technologies page — the service sub-nav links here.
 // Reuses the TechStackPageClient; /tech-stack redirects to this URL.
 
@@ -45,7 +46,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const path = `/services/${slug}/technologies`;
   const localizedPath = localizeFullPath(path, validLocale);
 
-  const customMeta = slug === 'performance-max' && validLocale === 'tr' ? getPerformanceMaxMeta('technologies') : slug === 'google-shopping' && validLocale === 'tr' ? getGoogleShoppingMeta('technologies') : slug === 'google-search-ads' && validLocale === 'tr' ? getGoogleSearchAdsMeta('technologies') : slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsMeta('technologies') : slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoMeta('technologies') : slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('technologies') : slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('technologies') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('technologies') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('technologies')
+  const customMeta = slug === 'meta-ads' && validLocale === 'tr' ? getMetaAdsMeta('technologies') : slug === 'performance-max' && validLocale === 'tr' ? getPerformanceMaxMeta('technologies') : slug === 'google-shopping' && validLocale === 'tr' ? getGoogleShoppingMeta('technologies') : slug === 'google-search-ads' && validLocale === 'tr' ? getGoogleSearchAdsMeta('technologies') : slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsMeta('technologies') : slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoMeta('technologies') : slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('technologies') : slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('technologies') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('technologies') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('technologies')
     : slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('technologies', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('technologies')
@@ -65,6 +66,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     ...(slug === 'seo' && validLocale === 'tr' ? getSeoTurkishSocialMeta('technologies', canonicalUrl) : {}),
     ...(slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoSocialMeta('technologies', canonicalUrl) : {}),
     ...(slug === 'performance-max' && validLocale === 'tr' ? getPerformanceMaxSocialMeta('technologies', canonicalUrl) : {}),
+    ...(slug === 'meta-ads' && validLocale === 'tr' ? getMetaAdsSocialMeta('technologies', canonicalUrl) : {}),
     ...(slug === 'google-shopping' && validLocale === 'tr' ? getGoogleShoppingSocialMeta('technologies', canonicalUrl) : {}),
     ...(slug === 'google-search-ads' && validLocale === 'tr' ? getGoogleSearchAdsSocialMeta('technologies', canonicalUrl) : {}),
     ...(slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsSocialMeta('technologies', canonicalUrl) : {}),
@@ -100,6 +102,7 @@ export default async function ServiceTechnologiesPage({ params }: PageProps) {
   if (slug === 'ecommerce-seo' && locale === 'tr') return <EcommerceSeoTurkishPage page="technologies" />;
 
   if (slug === 'performance-max' && locale === 'tr') return <PerformanceMaxTurkishPage page="technologies" />;
+  if (slug === 'meta-ads' && locale === 'tr') return <MetaAdsTurkishPage page="technologies" />;
   if (slug === 'google-shopping' && locale === 'tr') return <GoogleShoppingTurkishPage page="technologies" />;
   if (slug === 'google-search-ads' && locale === 'tr') return <GoogleSearchAdsTurkishPage page="technologies" />;
 

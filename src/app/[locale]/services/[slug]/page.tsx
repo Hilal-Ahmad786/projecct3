@@ -1,4 +1,5 @@
-import { GoogleAdsHubScene, PerformanceMaxScene, GoogleShoppingScene } from '@/components/services/hero-visuals/scenes-3d';
+import { MetaAdsOverviewBody, getMetaAdsMeta, getMetaAdsSocialMeta } from '@/components/services/MetaAdsTurkishPage';
+import { GoogleAdsHubScene, PerformanceMaxScene, GoogleShoppingScene, MetaAdsScene } from '@/components/services/hero-visuals/scenes-3d';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { Locale, locales, defaultLocale } from '@/lib/i18n';
@@ -125,10 +126,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const ecommerceSeoMeta = slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('overview') : undefined;
   const googleAdsMeta = slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsMeta('overview') : undefined;
   const googleSearchAdsMeta = slug === 'google-search-ads' && validLocale === 'tr' ? getGoogleSearchAdsMeta('overview') : undefined;
+  const metaAdsMeta = slug === 'meta-ads' && validLocale === 'tr' ? getMetaAdsMeta('overview') : undefined;
   const performanceMaxMeta = slug === 'performance-max' && validLocale === 'tr' ? getPerformanceMaxMeta('overview') : undefined;
   const googleShoppingMeta = slug === 'google-shopping' && validLocale === 'tr' ? getGoogleShoppingMeta('overview') : undefined;
-  const title = performanceMaxMeta?.title || googleShoppingMeta?.title || googleSearchAdsMeta?.title || googleAdsMeta?.title || technicalSeoMeta?.title || ecommerceSeoMeta?.title || seoMeta?.title || marketplaceMeta?.title || customEcommerceMeta?.title || shopifyMeta?.title || ecommerceMeta?.title || revisedMeta?.title || (service as { metaTitle?: string | null }).metaTitle || `${service.name} | PakSoft`;
-  const description = performanceMaxMeta?.description || googleShoppingMeta?.description || googleSearchAdsMeta?.description || googleAdsMeta?.description || technicalSeoMeta?.description || ecommerceSeoMeta?.description || seoMeta?.description || marketplaceMeta?.description || customEcommerceMeta?.description || shopifyMeta?.description || ecommerceMeta?.description || revisedMeta?.description ||
+  const title = metaAdsMeta?.title || performanceMaxMeta?.title || googleShoppingMeta?.title || googleSearchAdsMeta?.title || googleAdsMeta?.title || technicalSeoMeta?.title || ecommerceSeoMeta?.title || seoMeta?.title || marketplaceMeta?.title || customEcommerceMeta?.title || shopifyMeta?.title || ecommerceMeta?.title || revisedMeta?.title || (service as { metaTitle?: string | null }).metaTitle || `${service.name} | PakSoft`;
+  const description = metaAdsMeta?.description || performanceMaxMeta?.description || googleShoppingMeta?.description || googleSearchAdsMeta?.description || googleAdsMeta?.description || technicalSeoMeta?.description || ecommerceSeoMeta?.description || seoMeta?.description || marketplaceMeta?.description || customEcommerceMeta?.description || shopifyMeta?.description || ecommerceMeta?.description || revisedMeta?.description ||
     (service as { metaDescription?: string | null }).metaDescription ||
     truncateAtWord(service.fullDescription || service.shortDescription || service.description || '', 160);
   const path = `/services/${slug}`;
@@ -161,6 +163,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title,
       description,
     },
+    ...(metaAdsMeta ? getMetaAdsSocialMeta('overview', `${baseUrl}/${validLocale}${localizedPath}`) : {}),
     ...(performanceMaxMeta ? getPerformanceMaxSocialMeta('overview', `${baseUrl}/${validLocale}${localizedPath}`, service.heroImage || '/images/og-services.jpg') : {}),
     ...(googleShoppingMeta ? getGoogleShoppingSocialMeta('overview', `${baseUrl}/${validLocale}${localizedPath}`, service.heroImage || '/images/og-services.jpg') : {}),
     ...(googleSearchAdsMeta ? getGoogleSearchAdsSocialMeta('overview', `${baseUrl}/${validLocale}${localizedPath}`, service.heroImage || '/images/og-services.jpg') : {}),
@@ -252,6 +255,7 @@ export default async function ServicePage({ params }: PageProps) {
   const isTurkishEcommerceSeo = slug === 'ecommerce-seo' && locale === 'tr';
   const isTurkishGoogleAds = slug === 'google-ads' && locale === 'tr';
   const isTurkishGoogleSearchAds = slug === 'google-search-ads' && locale === 'tr';
+  const isTurkishMetaAds = slug === 'meta-ads' && locale === 'tr';
   const isTurkishGoogleShopping = slug === 'google-shopping' && locale === 'tr';
   const isTurkishPerformanceMax = slug === 'performance-max' && locale === 'tr';
   // Turkish pages built from content/<service>/tr markdown: curated body, hero only from ServiceDetailClient.
@@ -269,9 +273,9 @@ export default async function ServicePage({ params }: PageProps) {
   } : undefined;
   const customEcommerceOverviewCopy = isTurkishMarketplace ? { name: getMarketplaceMeta('overview').heading, description: getMarketplaceMeta('overview').intro }
     : isTurkishMdService ? { name: getCustomEcommerceMeta('overview').heading, description: getCustomEcommerceMeta('overview').intro } : undefined;
-  const serviceName = isTurkishPerformanceMax ? getPerformanceMaxMeta('overview').heading : isTurkishGoogleShopping ? getGoogleShoppingMeta('overview').heading : isTurkishGoogleSearchAds ? getGoogleSearchAdsMeta('overview').heading : isTurkishGoogleAds ? getGoogleAdsMeta('overview').heading : technicalSeoOverviewCopy?.name || ecommerceSeoOverviewCopy?.name || customEcommerceOverviewCopy?.name || shopifyOverviewCopy?.name || ecommerceOverviewCopy?.name || corporateOverviewCopy?.name || service.name || jsonContent?.hero?.title || slug;
-  const serviceDescription = isTurkishPerformanceMax ? getPerformanceMaxMeta('overview').intro : isTurkishGoogleShopping ? getGoogleShoppingMeta('overview').intro : isTurkishGoogleSearchAds ? getGoogleSearchAdsMeta('overview').intro : isTurkishGoogleAds ? getGoogleAdsMeta('overview').intro : technicalSeoOverviewCopy?.description || ecommerceSeoOverviewCopy?.description || customEcommerceOverviewCopy?.description || shopifyOverviewCopy?.description || ecommerceOverviewCopy?.description || corporateOverviewCopy?.description || service.fullDescription || service.shortDescription || service.description || jsonContent?.hero?.description || '';
-  const serviceShortDescription = isTurkishPerformanceMax ? getPerformanceMaxMeta('overview').intro : isTurkishGoogleShopping ? getGoogleShoppingMeta('overview').intro : isTurkishGoogleSearchAds ? getGoogleSearchAdsMeta('overview').intro : isTurkishGoogleAds ? getGoogleAdsMeta('overview').intro : technicalSeoOverviewCopy?.description || ecommerceSeoOverviewCopy?.description || customEcommerceOverviewCopy?.description || shopifyOverviewCopy?.description || ecommerceOverviewCopy?.description || service.shortDescription || jsonContent?.hero?.description || serviceDescription;
+  const serviceName = isTurkishMetaAds ? getMetaAdsMeta('overview').heading : isTurkishPerformanceMax ? getPerformanceMaxMeta('overview').heading : isTurkishGoogleShopping ? getGoogleShoppingMeta('overview').heading : isTurkishGoogleSearchAds ? getGoogleSearchAdsMeta('overview').heading : isTurkishGoogleAds ? getGoogleAdsMeta('overview').heading : technicalSeoOverviewCopy?.name || ecommerceSeoOverviewCopy?.name || customEcommerceOverviewCopy?.name || shopifyOverviewCopy?.name || ecommerceOverviewCopy?.name || corporateOverviewCopy?.name || service.name || jsonContent?.hero?.title || slug;
+  const serviceDescription = isTurkishMetaAds ? getMetaAdsMeta('overview').intro : isTurkishPerformanceMax ? getPerformanceMaxMeta('overview').intro : isTurkishGoogleShopping ? getGoogleShoppingMeta('overview').intro : isTurkishGoogleSearchAds ? getGoogleSearchAdsMeta('overview').intro : isTurkishGoogleAds ? getGoogleAdsMeta('overview').intro : technicalSeoOverviewCopy?.description || ecommerceSeoOverviewCopy?.description || customEcommerceOverviewCopy?.description || shopifyOverviewCopy?.description || ecommerceOverviewCopy?.description || corporateOverviewCopy?.description || service.fullDescription || service.shortDescription || service.description || jsonContent?.hero?.description || '';
+  const serviceShortDescription = isTurkishMetaAds ? getMetaAdsMeta('overview').intro : isTurkishPerformanceMax ? getPerformanceMaxMeta('overview').intro : isTurkishGoogleShopping ? getGoogleShoppingMeta('overview').intro : isTurkishGoogleSearchAds ? getGoogleSearchAdsMeta('overview').intro : isTurkishGoogleAds ? getGoogleAdsMeta('overview').intro : technicalSeoOverviewCopy?.description || ecommerceSeoOverviewCopy?.description || customEcommerceOverviewCopy?.description || shopifyOverviewCopy?.description || ecommerceOverviewCopy?.description || service.shortDescription || jsonContent?.hero?.description || serviceDescription;
   // Concise variant for the hero (keeps it compact). Falls back to the full
   // description for services that don't have a dedicated shortDescription yet.
 
@@ -318,7 +322,7 @@ export default async function ServicePage({ params }: PageProps) {
     { name: translations.navbar?.home || 'Home', url: `${baseUrl}/${locale}` },
     { name: translations.services?.detail?.breadcrumb?.services || 'Services', url: isTurkishEcommerce || isTurkishEcommerceSeo || isTurkishIkas || isTurkishShopify || isTurkishMdService || isTurkishGoogleAds || isTurkishGoogleSearchAds || isTurkishGoogleShopping ? `${baseUrl}/tr/hizmetler` : `${baseUrl}/${locale}/services` },
     ...(parentService ? [{ name: parentService.name, url: isTurkishEcommerceSeo || isTurkishIkas || isTurkishShopify || isTurkishMdService ? `${baseUrl}/tr${localizeFullPath(`/services/${parentService.slug}`, 'tr')}` : `${baseUrl}/${locale}/services/${parentService.slug}` }] : []),
-    { name: isTurkishEcommerce ? 'E-Ticaret' : serviceName, url: isTurkishEcommerce || isTurkishEcommerceSeo || isTurkishIkas || isTurkishShopify || isTurkishMdService || isTurkishGoogleAds || isTurkishGoogleSearchAds || isTurkishGoogleShopping || isTurkishPerformanceMax ? localizedServiceUrl : `${baseUrl}/${locale}/services/${slug}` },
+    { name: isTurkishEcommerce ? 'E-Ticaret' : serviceName, url: isTurkishEcommerce || isTurkishEcommerceSeo || isTurkishIkas || isTurkishShopify || isTurkishMdService || isTurkishGoogleAds || isTurkishGoogleSearchAds || isTurkishGoogleShopping || isTurkishMetaAds || isTurkishPerformanceMax ? localizedServiceUrl : `${baseUrl}/${locale}/services/${slug}` },
   ];
 
   // Build serializable data for the client component
@@ -349,7 +353,7 @@ export default async function ServicePage({ params }: PageProps) {
     _jsonContent: jsonContent as any,
   };
 
-  const relatedServices = isTurkishShopify || isTurkishMdService || isTurkishSeo || isTurkishTechnicalSeo || isTurkishEcommerceSeo || isTurkishGoogleAds || isTurkishGoogleSearchAds || isTurkishGoogleShopping || isTurkishPerformanceMax ? [] : await getRelatedServices((service as { category?: string }).category, slug, locale);
+  const relatedServices = isTurkishShopify || isTurkishMdService || isTurkishSeo || isTurkishTechnicalSeo || isTurkishEcommerceSeo || isTurkishGoogleAds || isTurkishGoogleSearchAds || isTurkishGoogleShopping || isTurkishMetaAds || isTurkishPerformanceMax ? [] : await getRelatedServices((service as { category?: string }).category, slug, locale);
 
   return (
     <main className="min-h-screen bg-white">
@@ -357,13 +361,13 @@ export default async function ServicePage({ params }: PageProps) {
       <ServiceJsonLd
         name={serviceName}
         description={serviceDescription}
-        url={isTurkishEcommerce || isTurkishEcommerceSeo || isTurkishIkas || isTurkishShopify || isTurkishMdService || isTurkishGoogleAds || isTurkishGoogleSearchAds || isTurkishGoogleShopping || isTurkishPerformanceMax ? localizedServiceUrl : `${baseUrl}/${locale}/services/${slug}`}
+        url={isTurkishEcommerce || isTurkishEcommerceSeo || isTurkishIkas || isTurkishShopify || isTurkishMdService || isTurkishGoogleAds || isTurkishGoogleSearchAds || isTurkishGoogleShopping || isTurkishMetaAds || isTurkishPerformanceMax ? localizedServiceUrl : `${baseUrl}/${locale}/services/${slug}`}
       />
       <BreadcrumbJsonLd items={breadcrumbItems} />
-      {isTurkishIkas ? <FAQJsonLd faqs={IKAS_TR_FAQ} /> : isTurkishShopify ? <FAQJsonLd faqs={SHOPIFY_TR_FAQ.map(([question, answer]) => ({ question, answer }))} /> : !isTurkishMdService && !isTurkishTechnicalSeo && !isTurkishEcommerceSeo && !isTurkishGoogleAds && !isTurkishGoogleShopping && !isTurkishPerformanceMax && faq.length > 0 && <FAQJsonLd faqs={faq} />}
+      {isTurkishIkas ? <FAQJsonLd faqs={IKAS_TR_FAQ} /> : isTurkishShopify ? <FAQJsonLd faqs={SHOPIFY_TR_FAQ.map(([question, answer]) => ({ question, answer }))} /> : !isTurkishMdService && !isTurkishTechnicalSeo && !isTurkishEcommerceSeo && !isTurkishGoogleAds && !isTurkishGoogleShopping && !isTurkishMetaAds && !isTurkishPerformanceMax && faq.length > 0 && <FAQJsonLd faqs={faq} />}
 
       {/* Rich animated client component */}
-      <ServiceDetailClient service={serviceData} showSections={isTurkishShopify || isTurkishMdService || isTurkishSeo || isTurkishTechnicalSeo || isTurkishEcommerceSeo || isTurkishGoogleAds || isTurkishGoogleSearchAds || isTurkishGoogleShopping || isTurkishPerformanceMax ? ['hero'] : undefined} heroArt={isTurkishPerformanceMax ? <PerformanceMaxScene /> : isTurkishGoogleShopping ? <GoogleShoppingScene /> : isTurkishGoogleSearchAds ? <TargetBullseyeScene badge="Hedef sorgu" /> : isTurkishGoogleAds ? <GoogleAdsHubScene /> : isTurkishTechnicalSeo ? <TechnicalAuditScene /> : isTurkishEcommerceSeo ? <EcommerceSerpScene /> : isTurkishShopify ? <ShopifyArtwork name="hero-storefront" loop className="w-[20rem] max-w-full sm:w-[26rem] md:w-[32rem]" slotLabels={{ 'slot-chip-theme': 'Tema', 'slot-chip-catalog': 'Katalog', 'slot-chip-migrate': 'Taşıma', 'slot-chip-apps': 'Uygulamalar' }} /> : isTurkishMarketplace ? MARKETPLACE_HERO_ART : isTurkishMdService ? <CustomEcomArtwork name="hero-custom-store" loop className="w-[20rem] max-w-full sm:w-[26rem] md:w-[32rem]" label="Temsili özel e-ticaret sitesi: mağaza ekranı, fiyat ve sipariş kuralları, yönetim paneli ve bağlı ödeme, kargo ve stok sistemleri" slotLabels={{ 'slot-chip-rule': 'Fiyat kuralı', 'slot-chip-sync': 'Stok akışı' }} /> : undefined} />
+      <ServiceDetailClient service={serviceData} showSections={isTurkishShopify || isTurkishMdService || isTurkishSeo || isTurkishTechnicalSeo || isTurkishEcommerceSeo || isTurkishGoogleAds || isTurkishGoogleSearchAds || isTurkishGoogleShopping || isTurkishMetaAds || isTurkishPerformanceMax ? ['hero'] : undefined} heroArt={isTurkishMetaAds ? <MetaAdsScene /> : isTurkishPerformanceMax ? <PerformanceMaxScene /> : isTurkishGoogleShopping ? <GoogleShoppingScene /> : isTurkishGoogleSearchAds ? <TargetBullseyeScene badge="Hedef sorgu" /> : isTurkishGoogleAds ? <GoogleAdsHubScene /> : isTurkishTechnicalSeo ? <TechnicalAuditScene /> : isTurkishEcommerceSeo ? <EcommerceSerpScene /> : isTurkishShopify ? <ShopifyArtwork name="hero-storefront" loop className="w-[20rem] max-w-full sm:w-[26rem] md:w-[32rem]" slotLabels={{ 'slot-chip-theme': 'Tema', 'slot-chip-catalog': 'Katalog', 'slot-chip-migrate': 'Taşıma', 'slot-chip-apps': 'Uygulamalar' }} /> : isTurkishMarketplace ? MARKETPLACE_HERO_ART : isTurkishMdService ? <CustomEcomArtwork name="hero-custom-store" loop className="w-[20rem] max-w-full sm:w-[26rem] md:w-[32rem]" label="Temsili özel e-ticaret sitesi: mağaza ekranı, fiyat ve sipariş kuralları, yönetim paneli ve bağlı ödeme, kargo ve stok sistemleri" slotLabels={{ 'slot-chip-rule': 'Fiyat kuralı', 'slot-chip-sync': 'Stok akışı' }} /> : undefined} />
       {isTurkishMarketplace ? <MarketplaceOverviewBody /> : isTurkishMdService && <CustomEcommerceOverviewBody />}
       {isTurkishSeo && <SeoTurkishOverviewBody />}
       {isTurkishTechnicalSeo && <TechnicalSeoTurkishOverviewBody />}
@@ -371,6 +375,7 @@ export default async function ServicePage({ params }: PageProps) {
       {isTurkishGoogleAds && <GoogleAdsOverviewBody />}
       {isTurkishGoogleSearchAds && <GoogleSearchAdsOverviewBody />}
       {isTurkishGoogleShopping && <GoogleShoppingOverviewBody />}
+      {isTurkishMetaAds && <MetaAdsOverviewBody />}
       {isTurkishPerformanceMax && <PerformanceMaxOverviewBody />}
       {slug === 'e-commerce' && locale === 'tr' && <EcommerceTurkishOverviewBody />}
       {isTurkishIkas && <IkasTurkishOverviewBody />}
