@@ -145,6 +145,7 @@ const nextConfig = {
       { source: '/:locale(tr)/projeler/:slug', destination: '/:locale/projects/:slug' },
       { source: '/:locale(tr)/hakkimizda', destination: '/:locale/about' },
       { source: '/:locale(tr)/iletisim', destination: '/:locale/contact' },
+      { source: '/:locale(tr)/fiyatlandirma', destination: '/:locale/pricing' },
 
       // German (de)
       { source: '/:locale(de)/dienstleistungen', destination: '/:locale/services' },
@@ -160,6 +161,7 @@ const nextConfig = {
       { source: '/:locale(de)/projekte/:slug', destination: '/:locale/projects/:slug' },
       { source: '/:locale(de)/uber-uns', destination: '/:locale/about' },
       { source: '/:locale(de)/kontakt', destination: '/:locale/contact' },
+      { source: '/:locale(de)/preise', destination: '/:locale/pricing' },
 
       // Arabic (ar)
       { source: '/:locale(ar)/alkhadamat', destination: '/:locale/services' },
@@ -175,6 +177,7 @@ const nextConfig = {
       { source: '/:locale(ar)/almasharie/:slug', destination: '/:locale/projects/:slug' },
       { source: '/:locale(ar)/men-nahnu', destination: '/:locale/about' },
       { source: '/:locale(ar)/ittisal', destination: '/:locale/contact' },
+      { source: '/:locale(ar)/tasiir', destination: '/:locale/pricing' },
 
       // Urdu (ur)
       { source: '/:locale(ur)/khidmaat', destination: '/:locale/services' },
@@ -190,6 +193,7 @@ const nextConfig = {
       { source: '/:locale(ur)/mansoobay/:slug', destination: '/:locale/projects/:slug' },
       { source: '/:locale(ur)/hamare-bare-mein', destination: '/:locale/about' },
       { source: '/:locale(ur)/raabta', destination: '/:locale/contact' },
+      { source: '/:locale(ur)/qeemat', destination: '/:locale/pricing' },
     ];
 
     return localeRewrites;

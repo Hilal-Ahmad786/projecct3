@@ -3,7 +3,6 @@
 import { motion, useReducedMotion } from 'framer-motion';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 import LocalizedLink from '@/components/LocalizedLink';
-import SplitHeading from '@/components/SplitHeading';
 import ScrollRevealText from '@/components/ScrollRevealText';
 import WebDevHeroVisual from './WebDevHeroVisual';
 import { smoothSpring } from '@/lib/animations';
@@ -81,18 +80,13 @@ export default function WebDevHero({ serviceName, description }: { serviceName: 
               </span>
             </motion.div>
 
-            {/* Headline — split into two lines for impact */}
-            <div>
+            {/* Headline: one <h1> with two visual lines. Visible in the server HTML
+                (CSS hero-enter entrance) instead of starting at opacity 0. */}
+            <h1 className="hero-enter text-display font-light leading-none">
               {headline.split('\n').map((line, i) => (
-                <SplitHeading
-                  key={i}
-                  text={line}
-                  tag="h1"
-                  delay={i * 0.1}
-                  className={`text-display font-light leading-none ${i === 1 ? 'font-semibold text-heritage-turquoise' : 'text-gray-900'}`}
-                />
+                <span key={i} className={`block ${i === 1 ? 'font-semibold text-heritage-turquoise' : 'text-gray-900'}`}>{line}</span>
               ))}
-            </div>
+            </h1>
 
             {/* Sub description */}
             <ScrollRevealText className="text-lg text-gray-500 leading-relaxed">

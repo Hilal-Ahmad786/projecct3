@@ -65,8 +65,25 @@ const toolRoutes = [
   { path: '/tools/ai-readiness',    priority: PRIORITY.tools, changeFreq: 'monthly' as const },
 ];
 
-// Core sub-pages that exist for every service (canonical sub-nav URLs).
-const serviceSubPages = ['/features', '/process', '/technologies', '/pricing', '/faq'];
+// Turkish services with curated, written sub-pages (content/<service>/tr or a
+// dedicated page component). Only these advertise sub-pages in the sitemap.
+const ALL_SUBPAGES = ['/features', '/technologies', '/process', '/portfolio', '/pricing', '/faq', '/blog'];
+const CURATED_TR_SERVICES: { slug: string; date: string; pages: string[] }[] = [
+  { slug: 'seo', date: '2026-11-08', pages: ALL_SUBPAGES },
+  { slug: 'ecommerce-seo', date: '2026-11-08', pages: ALL_SUBPAGES },
+  { slug: 'technical-seo', date: '2026-11-08', pages: ALL_SUBPAGES },
+  { slug: 'google-ads', date: '2026-11-08', pages: ALL_SUBPAGES },
+  { slug: 'google-search-ads', date: '2026-11-08', pages: ALL_SUBPAGES },
+  { slug: 'google-shopping', date: '2026-11-11', pages: ALL_SUBPAGES },
+  { slug: 'performance-max', date: '2026-11-11', pages: ALL_SUBPAGES },
+  { slug: 'meta-ads', date: '2026-11-12', pages: ALL_SUBPAGES },
+  { slug: 'custom-ecommerce', date: '2026-11-05', pages: ALL_SUBPAGES },
+  { slug: 'marketplace-development', date: '2026-11-05', pages: ALL_SUBPAGES },
+  { slug: 'shopify-development', date: '2026-11-03', pages: ALL_SUBPAGES },
+  { slug: 'ikas-development', date: '2026-11-03', pages: ALL_SUBPAGES },
+  { slug: 'e-commerce', date: '2026-11-03', pages: ALL_SUBPAGES },
+  { slug: 'corporate-website-design', date: '2026-11-01', pages: ALL_SUBPAGES },
+];
 
 // Blog posts are pulled live from the DB inside sitemap() (see below).
 async function getBlogPostsForSitemap(): Promise<{ slug: string; date: Date; language: string; category: string }[]> {
@@ -136,21 +153,6 @@ function entry(
 // Sitemap
 // --------------------------------------------------------------------------
 
-const hasArr = (a: unknown) => Array.isArray(a) && a.length > 0;
-
-/** Only list a sub-page when the service actually has that content, so we
- *  never feed Google thin/empty pages. */
-function subPagesFor(svc: Record<string, unknown>): string[] {
-  const c = (svc.content || {}) as Record<string, unknown>;
-  const subs: string[] = [];
-  if (hasArr(svc.features) || hasArr(c.features)) subs.push('/features');
-  if (hasArr(c.process)) subs.push('/process');
-  if (hasArr(c.technologies)) subs.push('/technologies');
-  if (hasArr(c.faq)) subs.push('/faq');
-  if (hasArr(svc.pricingPackages) || !!c.pricingMeta) subs.push('/pricing');
-  return subs;
-}
-
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const entries: MetadataRoute.Sitemap = [];
 
@@ -183,46 +185,26 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // a sitemap must not advertise noindexed URLs, so skip them entirely.
     if (!isSubstantialService(svc as Parameters<typeof isSubstantialService>[0])) return;
     const lastMod = svc.updatedAt ? new Date(svc.updatedAt as string) : DATES.seoRefresh;
-    const base = `/services/${slug}`;
     allLocales.forEach(locale => {
-      entries.push(entry(locale, base, { priority: PRIORITY.serviceDetail, changeFreq: 'weekly', date: lastMod }));
-    });
-    subPagesFor(svc).forEach(sub => {
-      allLocales.forEach(locale => {
-        entries.push(entry(locale, `${base}${sub}`, { priority: PRIORITY.other, changeFreq: 'monthly', date: lastMod }));
-      });
+      entries.push(entry(locale, `/services/${slug}`, { priority: PRIORITY.serviceDetail, changeFreq: 'weekly', date: lastMod }));
     });
   });
 
-  // Google Ads has complete Turkish content in the repository-backed service renderer.
-  // Advertise its existing overview and seven localized subpages even when the
-  // CMS row does not yet contain the same curated Markdown sections.
-  const googleAdsPaths = ['/services/google-ads', '/services/google-ads/features', '/services/google-ads/technologies', '/services/google-ads/process', '/services/google-ads/portfolio', '/services/google-ads/pricing', '/services/google-ads/faq', '/services/google-ads/blog'];
-  googleAdsPaths.forEach((path, index) => {
-    const candidate = `${baseUrl}/tr${localizeFullPath(path, 'tr')}`;
-    if (!entries.some((item) => item.url === candidate)) entries.push(entry('tr', path, { priority: index === 0 ? PRIORITY.serviceDetail : PRIORITY.other, changeFreq: index === 0 ? 'weekly' : 'monthly', date: DATES.seoRefresh }));
-  });
-  const googleSearchAdsPaths = ['/services/google-search-ads', '/services/google-search-ads/features', '/services/google-search-ads/technologies', '/services/google-search-ads/process', '/services/google-search-ads/portfolio', '/services/google-search-ads/pricing', '/services/google-search-ads/faq', '/services/google-search-ads/blog'];
-  googleSearchAdsPaths.forEach((path, index) => {
-    const candidate = `${baseUrl}/tr${localizeFullPath(path, 'tr')}`;
-    if (!entries.some((item) => item.url === candidate)) entries.push(entry('tr', path, { priority: index === 0 ? PRIORITY.serviceDetail : PRIORITY.other, changeFreq: index === 0 ? 'weekly' : 'monthly', date: new Date('2026-11-08T00:00:00Z') }));
-  });
-  const performanceMaxPaths = ['/services/performance-max', '/services/performance-max/features', '/services/performance-max/technologies', '/services/performance-max/process', '/services/performance-max/portfolio', '/services/performance-max/pricing', '/services/performance-max/faq', '/services/performance-max/blog'];
-  performanceMaxPaths.forEach((path, index) => {
-    const candidate = `${baseUrl}/tr${localizeFullPath(path, 'tr')}`;
-    if (!entries.some((item) => item.url === candidate)) entries.push(entry('tr', path, { priority: index === 0 ? PRIORITY.serviceDetail : PRIORITY.other, changeFreq: index === 0 ? 'weekly' : 'monthly', date: new Date('2026-11-11T00:00:00Z') }));
-  });
-  const googleShoppingPaths = ['/services/google-shopping', '/services/google-shopping/features', '/services/google-shopping/technologies', '/services/google-shopping/process', '/services/google-shopping/portfolio', '/services/google-shopping/pricing', '/services/google-shopping/faq', '/services/google-shopping/blog'];
-  googleShoppingPaths.forEach((path, index) => {
-    const candidate = `${baseUrl}/tr${localizeFullPath(path, 'tr')}`;
-    if (!entries.some((item) => item.url === candidate)) entries.push(entry('tr', path, { priority: index === 0 ? PRIORITY.serviceDetail : PRIORITY.other, changeFreq: index === 0 ? 'weekly' : 'monthly', date: new Date('2026-11-11T00:00:00Z') }));
+  // 4. Service sub-pages: only the curated Turkish services, whose sub-pages carry
+  // their own written content. The generic DB sub-pages (5 per service × 5 locales,
+  // ~5,500 URLs of 400–600 words) stay published and indexable through internal
+  // links, but are no longer advertised: they drew no clicks and diluted crawl
+  // priority for the finished pages (Search Console, Nov 2026).
+  CURATED_TR_SERVICES.forEach(({ slug, date, pages }) => {
+    const lastMod = new Date(`${date}T00:00:00Z`);
+    ['', ...pages].forEach((sub, index) => {
+      const path = `/services/${slug}${sub}`;
+      const candidate = `${baseUrl}/tr${localizeFullPath(path, 'tr')}`;
+      if (entries.some(item => item.url === candidate)) return;
+      entries.push(entry('tr', path, { priority: index === 0 ? PRIORITY.serviceDetail : PRIORITY.other, changeFreq: index === 0 ? 'weekly' : 'monthly', date: lastMod, includeAlternates: index === 0 }));
+    });
   });
 
-  const metaAdsPaths = ['', '/features', '/technologies', '/process', '/portfolio', '/pricing', '/faq', '/blog'].map(suffix => `/services/meta-ads${suffix}`);
-  metaAdsPaths.forEach((path, index) => {
-    const candidate = `${baseUrl}/tr${localizeFullPath(path, 'tr')}`;
-    if (!entries.some(item => item.url === candidate)) entries.push(entry('tr', path, { priority: index === 0 ? PRIORITY.serviceDetail : PRIORITY.other, changeFreq: 'monthly', date: new Date('2026-11-12T00:00:00Z') }));
-  });
   // 5. Blog posts (live from DB). Each post exists in ONE language
   // (BlogPost.language), so list it once under its own locale — advertising
   // every slug under all 5 locales created duplicate URLs with bogus hreflang.
