@@ -1,5 +1,5 @@
 import { MetaAdsOverviewBody, getMetaAdsMeta, getMetaAdsSocialMeta } from '@/components/services/MetaAdsTurkishPage';
-import { GoogleAdsHubScene, PerformanceMaxScene, GoogleShoppingScene, MetaAdsScene } from '@/components/services/hero-visuals/scenes-3d';
+import { GoogleAdsHubScene, PerformanceMaxScene, GoogleShoppingScene, MetaAdsScene, EcommerceSeoScene, TechnicalSeoScene, CustomEcommerceScene, MarketplaceScene, ShopifyScene } from '@/components/services/hero-visuals/scenes-3d';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { Locale, locales, defaultLocale } from '@/lib/i18n';
@@ -14,12 +14,10 @@ import { getTranslations } from '@/lib/server-i18n';
 import { getServicePageContent, type ServicePageContent } from '@/lib/service-content';
 import { EcommerceTurkishOverviewBody, getEcommerceTurkishMeta } from '@/components/e-commerce/EcommerceTurkishPage';
 import IkasTurkishOverviewBody from '@/components/ikas/IkasTurkishOverview';
-import ShopifyArtwork from '@/components/shopify/visuals/ShopifyArtwork';
 import ShopifyTurkishOverview, { SHOPIFY_TR_FAQ } from '@/components/e-commerce/ShopifyTurkishOverview';
 import { IKAS_TR_FAQ, IKAS_TR_HERO, IKAS_TR_META } from '@/components/ikas/ikasTurkishCopy';
 import { CustomEcommerceOverviewBody, getCustomEcommerceMeta } from '@/components/e-commerce/CustomEcommerceTurkishPage';
-import CustomEcomArtwork from '@/components/custom-ecommerce/visuals/CustomEcomArtwork';
-import { MarketplaceOverviewBody, MARKETPLACE_HERO_ART, getMarketplaceMeta } from '@/components/e-commerce/MarketplaceTurkishPage';
+import { MarketplaceOverviewBody, getMarketplaceMeta } from '@/components/e-commerce/MarketplaceTurkishPage';
 import { SeoTurkishOverviewBody, getSeoTurkishMeta, getSeoTurkishSocialMeta } from '@/components/services/SeoTurkishPage';
 import { TechnicalSeoTurkishOverviewBody, getTechnicalSeoMeta, getTechnicalSeoSocialMeta } from '@/components/services/TechnicalSeoTurkishPage';
 import { EcommerceSeoTurkishOverviewBody, getEcommerceSeoTurkishMeta, getEcommerceSeoTurkishSocialMeta } from '@/components/services/EcommerceSeoTurkishPage';
@@ -27,7 +25,6 @@ import { GoogleAdsOverviewBody, getGoogleAdsMeta, getGoogleAdsSocialMeta } from 
 import { GoogleSearchAdsOverviewBody, getGoogleSearchAdsMeta, getGoogleSearchAdsSocialMeta } from '@/components/services/GoogleSearchAdsTurkishPage';
 import { GoogleShoppingOverviewBody, getGoogleShoppingMeta, getGoogleShoppingSocialMeta } from '@/components/services/GoogleShoppingTurkishPage';
 import { PerformanceMaxOverviewBody, getPerformanceMaxMeta, getPerformanceMaxSocialMeta } from '@/components/services/PerformanceMaxTurkishPage';
-import { EcommerceSerpScene, TechnicalAuditScene } from '@/components/services/hero-visuals/scenes-seo-services';
 import { TargetBullseyeScene } from '@/components/services/hero-visuals/scenes-marketing';
 
 // Enable ISR - revalidate every hour for better performance
@@ -367,7 +364,7 @@ export default async function ServicePage({ params }: PageProps) {
       {isTurkishIkas ? <FAQJsonLd faqs={IKAS_TR_FAQ} /> : isTurkishShopify ? <FAQJsonLd faqs={SHOPIFY_TR_FAQ.map(([question, answer]) => ({ question, answer }))} /> : !isTurkishMdService && !isTurkishTechnicalSeo && !isTurkishEcommerceSeo && !isTurkishGoogleAds && !isTurkishGoogleShopping && !isTurkishMetaAds && !isTurkishPerformanceMax && faq.length > 0 && <FAQJsonLd faqs={faq} />}
 
       {/* Rich animated client component */}
-      <ServiceDetailClient service={serviceData} showSections={isTurkishShopify || isTurkishMdService || isTurkishSeo || isTurkishTechnicalSeo || isTurkishEcommerceSeo || isTurkishGoogleAds || isTurkishGoogleSearchAds || isTurkishGoogleShopping || isTurkishMetaAds || isTurkishPerformanceMax ? ['hero'] : undefined} heroArt={isTurkishMetaAds ? <MetaAdsScene /> : isTurkishPerformanceMax ? <PerformanceMaxScene /> : isTurkishGoogleShopping ? <GoogleShoppingScene /> : isTurkishGoogleSearchAds ? <TargetBullseyeScene badge="Hedef sorgu" /> : isTurkishGoogleAds ? <GoogleAdsHubScene /> : isTurkishTechnicalSeo ? <TechnicalAuditScene /> : isTurkishEcommerceSeo ? <EcommerceSerpScene /> : isTurkishShopify ? <ShopifyArtwork name="hero-storefront" loop className="w-[20rem] max-w-full sm:w-[26rem] md:w-[32rem]" slotLabels={{ 'slot-chip-theme': 'Tema', 'slot-chip-catalog': 'Katalog', 'slot-chip-migrate': 'Taşıma', 'slot-chip-apps': 'Uygulamalar' }} /> : isTurkishMarketplace ? MARKETPLACE_HERO_ART : isTurkishMdService ? <CustomEcomArtwork name="hero-custom-store" loop className="w-[20rem] max-w-full sm:w-[26rem] md:w-[32rem]" label="Temsili özel e-ticaret sitesi: mağaza ekranı, fiyat ve sipariş kuralları, yönetim paneli ve bağlı ödeme, kargo ve stok sistemleri" slotLabels={{ 'slot-chip-rule': 'Fiyat kuralı', 'slot-chip-sync': 'Stok akışı' }} /> : undefined} />
+      <ServiceDetailClient service={serviceData} showSections={isTurkishShopify || isTurkishMdService || isTurkishSeo || isTurkishTechnicalSeo || isTurkishEcommerceSeo || isTurkishGoogleAds || isTurkishGoogleSearchAds || isTurkishGoogleShopping || isTurkishMetaAds || isTurkishPerformanceMax ? ['hero'] : undefined} heroArt={isTurkishMetaAds ? <MetaAdsScene /> : isTurkishPerformanceMax ? <PerformanceMaxScene /> : isTurkishGoogleShopping ? <GoogleShoppingScene /> : isTurkishGoogleSearchAds ? <TargetBullseyeScene badge="Hedef sorgu" /> : isTurkishGoogleAds ? <GoogleAdsHubScene /> : isTurkishTechnicalSeo ? <TechnicalSeoScene /> : isTurkishEcommerceSeo ? <EcommerceSeoScene /> : isTurkishShopify ? <ShopifyScene /> : isTurkishMarketplace ? <MarketplaceScene /> : isTurkishMdService ? <CustomEcommerceScene /> : undefined} />
       {isTurkishMarketplace ? <MarketplaceOverviewBody /> : isTurkishMdService && <CustomEcommerceOverviewBody />}
       {isTurkishSeo && <SeoTurkishOverviewBody />}
       {isTurkishTechnicalSeo && <TechnicalSeoTurkishOverviewBody />}
