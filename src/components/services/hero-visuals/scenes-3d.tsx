@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { motion, useAnimationControls, useInView } from 'framer-motion';
 import { MagnifyingGlassIcon, PlayIcon, EnvelopeIcon, MapPinIcon, PhotoIcon, PencilSquareIcon, CheckIcon } from '@heroicons/react/24/outline';
-import { Scene, H, GirihHalo, HeritageParticles } from './primitives';
+import { H, GirihHalo, HeritageParticles } from './primitives';
 
 function useActivity() {
   const ref = useRef<HTMLDivElement>(null);
@@ -22,15 +22,17 @@ function useActivity() {
 
 function Frame({ label, children }: { label: string; children: (active: boolean) => ReactNode }) {
   const { ref, active } = useActivity();
-  return <div ref={ref} role="img" aria-label={label} className="max-w-full">
-    <Scene><div aria-hidden="true" className="absolute inset-0 overflow-hidden rounded-3xl" style={{ perspective: 850 }}>
-      <GirihHalo active={active} opacity={0.16} /><HeritageParticles active={active} duration={6} count={5} />
-      {/* The scenes are laid out on a fixed 384 px stage (the md Scene size) and scaled down with the
-          Scene frame (288 px → .75, 320 px → .833), so the composition stays identical on phones. */}
-      <div className="absolute left-1/2 top-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 scale-75 sm:scale-[0.8333] md:scale-100" style={{ transformStyle: 'preserve-3d' }}>
-        <div className="absolute inset-[5%]" style={{ transformStyle: 'preserve-3d', fontSize: 10, color: H.lapisDeep }}>{children(active)}</div>
+  // The scene is laid out on a fixed 384 px stage and sized with CSS `zoom`, which re-lays out the
+  // content (text and icons stay sharp, unlike a scale transform). The zoom follows the hero column:
+  // 352 px on phones, 448 px on tablets and lg, 512 px at md (single column), 544 px from xl.
+  return <div ref={ref} role="img" aria-label={label} className="flex max-w-full justify-center">
+    <div className="relative h-96 w-96 [zoom:0.9167] sm:[zoom:1.1667] md:[zoom:1.3333] lg:[zoom:1.1667] xl:[zoom:1.4167]">
+      <div aria-hidden="true" className="pointer-events-none absolute left-1/2 top-1/2 h-3/4 w-3/4 -translate-x-1/2 -translate-y-1/2 rounded-full blur-3xl" style={{ background: H.turquoise, opacity: 0.12 }} />
+      <div aria-hidden="true" className="absolute inset-0 overflow-hidden rounded-3xl" style={{ perspective: 850 }}>
+        <GirihHalo active={active} opacity={0.16} /><HeritageParticles active={active} duration={6} count={5} />
+        <div className="absolute inset-[3%]" style={{ transformStyle: 'preserve-3d', fontSize: 10, color: H.lapisDeep }}>{children(active)}</div>
       </div>
-    </div></Scene>
+    </div>
   </div>;
 }
 
