@@ -28,7 +28,7 @@ import { PerformanceMaxOverviewBody, getPerformanceMaxMeta, getPerformanceMaxSoc
 import { TargetBullseyeScene } from '@/components/services/hero-visuals/scenes-marketing';
 
 // Enable ISR - revalidate every hour for better performance
-export const revalidate = 3600;
+export const revalidate = 86400; // daily safety net — admin edits refresh instantly via revalidateTag (Vercel cost)
 
 // Empty list = build nothing at deploy time, render each slug on its first
 // request and cache it as ISR. Without this export Next treats the [slug]

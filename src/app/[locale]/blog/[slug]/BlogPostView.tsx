@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
+import Link from '@/components/IntentLink';
 import { useParams, notFound } from 'next/navigation';
 import {
   CalendarIcon,

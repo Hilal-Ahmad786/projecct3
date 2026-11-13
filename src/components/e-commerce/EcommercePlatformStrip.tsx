@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import Link from '@/components/IntentLink';
 import { CodeBracketIcon } from '@heroicons/react/24/outline';
 
 // Platforms PakSoft has a dedicated service page for. Logos use each brand's

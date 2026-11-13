@@ -1,7 +1,7 @@
 // src/components/Card.tsx
 'use client'
 
-import Link from 'next/link'
+import Link from '@/components/IntentLink';
 import { ReactNode, ElementType, AnchorHTMLAttributes } from 'react'
 import { useTranslations } from '@/hooks/useTranslations'
 

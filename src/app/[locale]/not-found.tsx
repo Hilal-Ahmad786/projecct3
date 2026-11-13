@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import Link from '@/components/IntentLink';
 import { useParams } from 'next/navigation';
 
 const translations: Record<string, Record<string, string>> = {

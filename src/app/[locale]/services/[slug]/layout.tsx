@@ -8,5 +8,5 @@ const CORE_ONLY: Record<string, Locale[]> = { 'ikas-development': ['tr'], 'shopi
 export default async function ServiceSlugLayout({ children, params }: { children: ReactNode; params: Promise<{ locale: Locale; slug: string }> }) {
   const { locale, slug } = await params
   if (CORE_ONLY[slug]?.includes(locale)) return children
-  return <FullTranslations locale={locale}>{children}</FullTranslations>
+  return <FullTranslations locale={locale} slug={slug}>{children}</FullTranslations>
 }

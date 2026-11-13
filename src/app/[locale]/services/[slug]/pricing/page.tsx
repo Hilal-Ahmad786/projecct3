@@ -22,7 +22,7 @@ import { GoogleSearchAdsTurkishPage, getGoogleSearchAdsMeta, getGoogleSearchAdsS
 import { GoogleShoppingTurkishPage, getGoogleShoppingMeta, getGoogleShoppingSocialMeta } from '@/components/services/GoogleShoppingTurkishPage';
 import { PerformanceMaxTurkishPage, getPerformanceMaxMeta, getPerformanceMaxSocialMeta } from '@/components/services/PerformanceMaxTurkishPage';
 
-export const revalidate = 3600;
+export const revalidate = 86400; // daily safety net — admin edits refresh instantly via revalidateTag (Vercel cost)
 
 // Empty list = build nothing at deploy time, render each slug on its first
 // request and cache it as ISR. Without this export Next treats the [slug]

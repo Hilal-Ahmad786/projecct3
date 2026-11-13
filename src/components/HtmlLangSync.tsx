@@ -11,6 +11,11 @@ export default function HtmlLangSync({ locale, dir }: { locale: string; dir: 'lt
   useEffect(() => {
     document.documentElement.lang = locale;
     document.documentElement.dir = dir;
+    // Remember the language for the bare "/" redirect. This used to be set by
+    // the middleware on every page response (a billed function call per hit).
+    try {
+      document.cookie = `NEXT_LOCALE=${locale}; path=/; max-age=31536000; samesite=lax`;
+    } catch {}
   }, [locale, dir]);
   return null;
 }

@@ -39,9 +39,31 @@ interface TranslationsProviderProps {
   translations: any;
 }
 
-export function TranslationsProvider({ children, locale, translations }: TranslationsProviderProps) {
+export function TranslationsProvider({ children, locale, translations: ownTranslations }: TranslationsProviderProps) {
   const router = useRouter();
   const pathname = usePathname();
+
+  // A nested provider (e.g. FullTranslations on service routes) only ships the
+  // namespaces it adds; they are layered over the parent's dictionary here.
+  // Previously the nested provider re-sent the whole dictionary, which put the
+  // core translations into every service page's payload twice (~150KB+).
+  const parent = useContext(TranslationsContext);
+  const parentTranslations = parent && parent.locale === locale ? parent.translations : undefined;
+  const translations = useMemo(() => {
+    if (!parentTranslations) return ownTranslations;
+    // Merge two levels deep so a nested provider can add e.g. `services.list`
+    // without replacing the parent's other `services.*` keys.
+    const merged: Record<string, any> = { ...parentTranslations };
+    for (const key in ownTranslations) {
+      const a = merged[key];
+      const b = ownTranslations[key];
+      merged[key] =
+        a && b && typeof a === 'object' && typeof b === 'object' && !Array.isArray(a) && !Array.isArray(b)
+          ? { ...a, ...b }
+          : b;
+    }
+    return merged;
+  }, [parentTranslations, ownTranslations]);
 
   const t = useMemo(() => {
     return (key: string, variables?: Record<string, string | number>): string => {

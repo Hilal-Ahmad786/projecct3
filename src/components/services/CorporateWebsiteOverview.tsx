@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import LocalizedLink from '@/components/LocalizedLink';
-import Link from 'next/link';
+import Link from '@/components/IntentLink';
 import { ArrowRightIcon, CheckIcon } from '@heroicons/react/24/outline';
 import type { CSSProperties } from 'react';
 import CorporateWebsiteGuideCards from '@/components/services/CorporateWebsiteGuideCards';

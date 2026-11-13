@@ -517,7 +517,9 @@ export const getPublicPricingPackages = unstable_cache(
 // pages / APIs / the sitemap must use so blog reads stop hitting Neon per
 // request. Cached 1h (not 24h) so scheduled posts (publishedAt <= now checks)
 // appear within the hour; admin blog mutations also call revalidateTag('blog').
-const BLOG_CACHE_OPTS = { revalidate: 3600, tags: ['blog'] };
+// 6 h (was 1 h): admin publish/edit refreshes instantly via revalidateTag('blog');
+// this only bounds how late a *scheduled* post (future publishedAt) appears.
+const BLOG_CACHE_OPTS = { revalidate: 21600, tags: ['blog'] };
 
 export const getPublicBlogPosts = unstable_cache(
   async (locale: string = 'en', page: number = 1, limit: number = 10, category?: string) => {

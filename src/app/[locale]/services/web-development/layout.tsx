@@ -4,5 +4,5 @@ import FullTranslations from '../FullTranslations'
 
 export default async function WebDevelopmentLayout({ children, params }: { children: ReactNode; params: Promise<{ locale: Locale }> }) {
   const { locale } = await params
-  return <FullTranslations locale={locale}>{children}</FullTranslations>
+  return <FullTranslations locale={locale} slug="web-development">{children}</FullTranslations>
 }

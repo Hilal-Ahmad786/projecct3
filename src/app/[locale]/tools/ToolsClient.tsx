@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Link from 'next/link';
+import Link from '@/components/IntentLink';
 import { useParams } from 'next/navigation';
 import {
   CalculatorIcon,

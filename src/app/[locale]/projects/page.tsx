@@ -16,7 +16,7 @@ import { getProjectsForGallery } from '@/lib/database/public-queries';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
-export const revalidate = 3600; // ISR: revalidate every hour
+export const revalidate = 86400; // daily safety net — admin edits refresh instantly via revalidateTag (Vercel cost)
 
 const ogLocaleMap: Record<Locale, string> = {
   en: 'en_US',

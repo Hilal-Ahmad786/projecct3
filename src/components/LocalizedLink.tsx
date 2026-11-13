@@ -1,7 +1,7 @@
 // src/components/LocalizedLink.tsx
 'use client';
 
-import Link from 'next/link';
+import Link from '@/components/IntentLink';
 import { useLocale } from '@/hooks/useTranslations';
 import { localizeFullPath, delocalizePath } from '@/lib/routes';
 import { locales } from '@/lib/i18n';

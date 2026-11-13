@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Link from 'next/link';
+import Link from '@/components/IntentLink';
 import { useTranslations } from '@/hooks/useTranslations';
 
 interface CookieConsentProps {

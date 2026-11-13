@@ -8,7 +8,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { initGSAP } from '@/lib/gsap';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 import { Locale } from '@/lib/i18n';
-import Link from 'next/link';
+import Link from '@/components/IntentLink';
 import Image from 'next/image';
 
 interface ProjectTranslation {

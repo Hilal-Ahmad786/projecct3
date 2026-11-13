@@ -3,7 +3,7 @@
 
 import { useState } from 'react';
 import { servicesByCategory, type ServiceEntry } from '@/data/serviceHierarchy';
-import Link from 'next/link';
+import Link from '@/components/IntentLink';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import SectionHeader from '@/components/SectionHeader';
 import Button from '@/components/Button';

@@ -60,12 +60,28 @@ const SERVICE_ONLY_NAMESPACES = ['serviceSubpages', 'servicePages'] as const;
 
 // Core translations for the global client provider: everything EXCEPT the
 // heavy service-only namespaces. Used on home/blog/about/contact/etc.
+// Namespaces read only by components that are no longer imported anywhere
+// (legacy per-service pages). Shipping them cost every page ~25KB.
+const UNUSED_CLIENT_NAMESPACES = ['devopsCloud', 'dataAnalytics', 'mobileDevelopment', 'conversationalAI', 'aiServices', 'fileUpload'] as const;
+
+// Large sub-keys of `services` that only specific routes read:
+//   services.list   (~60KB, 272 services) — ServicesSection (home, services index)
+//   services.detail (~10KB)               — /services/[slug] routes
+// They are re-provided there (ServicesListTranslations / FullTranslations).
+const ROUTE_ONLY_SERVICES_KEYS = ['list', 'detail'] as const;
+
 export const getCoreTranslations = cache((locale: Locale) => {
   const full = getTranslations(locale);
   const core: Record<string, any> = {};
   for (const key in full) {
     if ((SERVICE_ONLY_NAMESPACES as readonly string[]).includes(key)) continue;
+    if ((UNUSED_CLIENT_NAMESPACES as readonly string[]).includes(key)) continue;
     core[key] = full[key];
+  }
+  if (core.services && typeof core.services === 'object') {
+    const services: Record<string, any> = { ...core.services };
+    for (const k of ROUTE_ONLY_SERVICES_KEYS) delete services[k];
+    core.services = services;
   }
   return core;
 });

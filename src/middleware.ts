@@ -262,8 +262,16 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
+  // Vercel cost: middleware runs as a billed function call (with CPU time) on
+  // every matched request — including CDN cache hits. Localized pages
+  // (/tr/..., /en/...) are ~all traffic and need nothing from it: security
+  // headers come from next.config headers() and the NEXT_LOCALE cookie is set
+  // in the browser (HtmlLangSync). So it now only runs for admin routes and
+  // for paths without a locale prefix (which it redirects to /<locale>/...).
   matcher: [
-    '/((?!api|_next/static|_next/image|images|downloads|favicon.ico|sitemap.xml|robots.txt).*)',
+    '/((?!api|_vercel|_next/static|_next/image|_next/data|images|downloads|favicon.ico|sitemap.xml|robots.txt|(?:en|tr|de|ur|ar)(?:/|$)).*)',
+    '/:locale(en|tr|de|ur|ar)/admin/:path*',
+    '/:locale(en|tr|de|ur|ar)/admin',
     '/api/admin/:path*',
   ],
 }

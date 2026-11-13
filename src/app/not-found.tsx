@@ -1,5 +1,5 @@
 import './globals.css';
-import Link from 'next/link';
+import Link from '@/components/IntentLink';
 
 export default function NotFound() {
   return (

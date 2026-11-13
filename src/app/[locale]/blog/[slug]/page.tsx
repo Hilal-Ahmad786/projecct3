@@ -10,7 +10,7 @@ import { SITE_URL as baseUrl } from '@/config/site';
 // ISR: render once, cache for an hour, regenerate in the background. New slugs
 // render on first request then cache (dynamicParams default = true). This stops
 // every visit from hitting the database.
-export const revalidate = 3600;
+export const revalidate = 86400; // daily safety net — admin edits refresh instantly via revalidateTag (Vercel cost)
 
 // Empty list = build nothing at deploy time, render each slug on its first
 // request and cache it as ISR. Without this export Next treats the [slug]

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import Link from '@/components/IntentLink';
 import type { ReactNode } from 'react';
 import { ArrowRightIcon, CheckIcon } from '@heroicons/react/24/outline';
 import InternalPageHero from '@/components/services/InternalPageHero';

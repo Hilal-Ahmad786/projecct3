@@ -9,9 +9,11 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useCallback, useRef, type ComponentProps } from 'react';
 
-type Props = Omit<ComponentProps<typeof Link>, 'prefetch'>;
+// `prefetch` is accepted for drop-in compatibility with next/link but ignored:
+// these links always prefetch on intent only (Vercel cost + page weight).
+type Props = ComponentProps<typeof Link>;
 
-export default function IntentLink({ href, onMouseEnter, onTouchStart, onFocus, ...rest }: Props) {
+export default function IntentLink({ href, onMouseEnter, onTouchStart, onFocus, prefetch: _prefetch, ...rest }: Props) {
   const router = useRouter();
   const done = useRef(false);
   const prefetch = useCallback(() => {

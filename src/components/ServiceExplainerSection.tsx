@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from '@/components/IntentLink';
 import type { ComponentType, SVGProps } from 'react'
 import {
   ArrowLeftIcon,

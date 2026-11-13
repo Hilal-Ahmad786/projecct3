@@ -7,6 +7,7 @@ import Hero from '@/components/Hero'
 import FeaturedServices from '@/components/FeaturedServices'
 import SocialProofBanner from '@/components/SocialProofBanner'
 import ServicesSection from '@/components/ServicesSection'
+import ServicesListTranslations from '@/components/ServicesListTranslations'
 import ProjectDetailSection from '@/components/ProjectDetailSection'
 import DemoSection from '@/components/DemoSection'
 import BusinessSolutionsSection from '@/components/BusinessSolutionsSection'
@@ -83,7 +84,9 @@ export default async function HomePage({ params }: PageProps) {
     <>
       <Hero />
       <FeaturedServices locale={validLocale} />
-      <ServicesSection heading={t('footer.servicesSection.heading')} />
+      <ServicesListTranslations locale={validLocale}>
+        <ServicesSection heading={t('footer.servicesSection.heading')} />
+      </ServicesListTranslations>
       <SocialProofBanner variant="stats" />
       <PatternDivider className="py-8" />
       <DemoSection />

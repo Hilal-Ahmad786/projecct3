@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { motion } from 'framer-motion';
 import { useParams } from 'next/navigation';
-import Link from 'next/link';
+import Link from '@/components/IntentLink';
 import {
   CheckCircleIcon,
   ArrowRightIcon,

@@ -6,6 +6,7 @@ import { generateAlternateLinks } from '@/lib/seo'
 import { localizeFullPath } from '@/lib/routes'
 import ServicesHero from '@/components/ServicesHero'
 import ServicesSection from '@/components/ServicesSection'
+import ServicesListTranslations from '@/components/ServicesListTranslations'
 import PricingSection from '@/components/PricingSection'
 import WhyUsSection from '@/components/WhyUsSection'
 import ServicesWhyUs from '@/components/ServicesWhyUs'
@@ -61,11 +62,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 }
 
-export default function ServicesPage() {
+export default async function ServicesPage({ params }: PageProps) {
+  const { locale } = await params
+  const validLocale = locales.includes(locale) ? locale : defaultLocale
   return (
     <>
       <ServicesHero />
-      <ServicesSection />
+      <ServicesListTranslations locale={validLocale}>
+        <ServicesSection />
+      </ServicesListTranslations>
       <ServicesWhyUs />
       <PricingSection />
       <WhyUsSection />

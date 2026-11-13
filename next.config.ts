@@ -223,8 +223,9 @@ const nextConfig = {
             value: 'nosniff'
           },
           {
+            // Same value the middleware used to set (it no longer runs on pages).
             key: 'Referrer-Policy',
-            value: 'origin-when-cross-origin'
+            value: 'strict-origin-when-cross-origin'
           }
         ],
       },

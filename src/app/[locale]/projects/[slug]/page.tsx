@@ -102,7 +102,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 // ISR: cache for an hour instead of re-querying the DB on every request.
-export const revalidate = 3600;
+export const revalidate = 86400; // daily safety net — admin edits refresh instantly via revalidateTag (Vercel cost)
 
 // Empty list = build nothing at deploy time, render each slug on its first
 // request and cache it as ISR. Without this export Next treats the [slug]

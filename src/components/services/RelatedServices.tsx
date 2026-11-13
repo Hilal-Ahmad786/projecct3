@@ -2,7 +2,7 @@
 // HTML to other services in the same category. Improves internal linking /
 // crawl depth and gives users a path deeper into the catalog.
 
-import Link from 'next/link';
+import Link from '@/components/IntentLink';
 import { localizeFullPath } from '@/lib/routes';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 
