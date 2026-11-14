@@ -20,13 +20,10 @@ interface SocialProofBannerProps {
   badges?: TrustBadge[];
 }
 
-const defaultLogos = [
-  '/logos/clients/client1.svg',
-  '/logos/clients/client2.svg',
-  '/logos/clients/client3.svg',
-  '/logos/clients/client4.svg',
-  '/logos/clients/client5.svg',
-];
+// No default logos: the old placeholders (/logos/clients/client1-5.svg) never
+// existed, so every service page showed 5 broken images and each one was
+// answered by a rendered 404 page. Pass real `logos` to show the logo row.
+const defaultLogos: string[] = [];
 
 function CountUpStatItem({ value, label, dir }: { value: string; label: string; dir: string }) {
   const { ref, isInView } = useInViewOnce();
