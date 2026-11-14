@@ -60,9 +60,17 @@ const SERVICE_ONLY_NAMESPACES = ['serviceSubpages', 'servicePages'] as const;
 
 // Core translations for the global client provider: everything EXCEPT the
 // heavy service-only namespaces. Used on home/blog/about/contact/etc.
-// Namespaces read only by components that are no longer imported anywhere
-// (legacy per-service pages). Shipping them cost every page ~25KB.
-const UNUSED_CLIENT_NAMESPACES = ['devopsCloud', 'dataAnalytics', 'mobileDevelopment', 'conversationalAI', 'aiServices', 'fileUpload'] as const;
+// Namespaces no live component reads (legacy per-service pages that are no
+// longer imported, and leftovers). Each page carried them ~4x on Vercel (HTML,
+// RSC payload, and Next 16 segment-prefetch copies), so dropping ~70KB here
+// saves ~280KB of ISR write per cached page. Server code is unaffected: it
+// uses getTranslations(), which still has everything.
+const UNUSED_CLIENT_NAMESPACES = [
+  'devopsCloud', 'dataAnalytics', 'mobileDevelopment', 'conversationalAI', 'aiServices', 'fileUpload',
+  'apiDevelopment', 'machineLearning', 'cybersecurity', 'pythonAutomation', 'aiSolutions',
+  'digitalMarketing', 'ecommerce', 'webDevelopment',
+  'components', 'pages', 'time', 'accessibility', 'validation', 'navigation', 'buttons',
+] as const;
 
 // Large sub-keys of `services` that only specific routes read:
 //   services.list   (~60KB, 272 services) — ServicesSection (home, services index)

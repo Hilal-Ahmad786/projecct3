@@ -21,7 +21,7 @@ import { getPerformanceMaxGuide, getPerformanceMaxGuides } from '@/components/se
 
 // DB-backed service guides (see getServiceBlogArticle) pick up edits hourly;
 // admin saves also revalidate the 'blog' cache tag immediately.
-export const revalidate = 86400; // daily safety net — admin edits refresh instantly via revalidateTag (Vercel cost)
+export const revalidate = 604800; // weekly safety net — admin edits refresh instantly via revalidateTag (Vercel CPU/ISR cost)
 
 export function generateStaticParams() {
   const locales = ['en', 'tr'] as const;

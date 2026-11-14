@@ -10,7 +10,8 @@ import {
 
 const getPrismaClient = () => getPrisma();
 
-// Public service content is cached for 24 hours (tag 'services') so service
+// Public service content is cached for 7 days (tag 'services'; admin edits
+// revalidate the tag instantly) so service
 // pages serve from the Next data cache instead of hitting Neon on every
 // request — the hourly window was re-transferring the whole catalog 24×/day
 // against the Neon free-tier transfer quota. Admin content mutations call
@@ -18,7 +19,7 @@ const getPrismaClient = () => getPrisma();
 // immediately; the 24h clock only bounds how stale data can get if a bust is
 // missed. Pages stay fully server-rendered — crawlers see identical complete
 // HTML; this only changes where the data comes from, so it's SEO-safe.
-const CACHE_OPTS = { revalidate: 86400, tags: ['services'] };
+const CACHE_OPTS = { revalidate: 604800, tags: ['services'] };
 
 // Emergency kill-switch: set FORCE_BAKED_CONTENT=1 (Vercel env var) to serve
 // the baked snapshot without touching Neon at all — use when the transfer
@@ -330,7 +331,7 @@ export const getPublishedProjects = unstable_cache(
     }
   },
   ['public:projects-all'],
-  { revalidate: 86400, tags: ['projects'] },
+  { revalidate: 604800, tags: ['projects'] },
 );
 
 // Merge a baked fallback project down to a single locale, reusing the same
@@ -386,7 +387,7 @@ export const getProjectsForGallery = unstable_cache(
     }
   },
   ['public:projects-gallery'],
-  { revalidate: 86400, tags: ['projects'] },
+  { revalidate: 604800, tags: ['projects'] },
 );
 
 export const getFeaturedProjects = unstable_cache(
@@ -413,7 +414,7 @@ export const getFeaturedProjects = unstable_cache(
     }
   },
   ['public:projects-featured'],
-  { revalidate: 86400, tags: ['projects'] },
+  { revalidate: 604800, tags: ['projects'] },
 );
 
 export const getPublishedProjectBySlug = unstable_cache(
@@ -443,7 +444,7 @@ export const getPublishedProjectBySlug = unstable_cache(
     }
   },
   ['public:project-by-slug'],
-  { revalidate: 86400, tags: ['projects'] },
+  { revalidate: 604800, tags: ['projects'] },
 );
 
 function mergeProjectTranslation(project: any, locale?: string) {
@@ -509,7 +510,7 @@ export const getPublicPricingPackages = unstable_cache(
     }
   },
   ['public:pricing-packages'],
-  { revalidate: 86400, tags: ['pricing', 'services'] },
+  { revalidate: 604800, tags: ['pricing', 'services'] },
 );
 
 // ==================== BLOG QUERIES (public, cached) ====================
@@ -517,9 +518,9 @@ export const getPublicPricingPackages = unstable_cache(
 // pages / APIs / the sitemap must use so blog reads stop hitting Neon per
 // request. Cached 1h (not 24h) so scheduled posts (publishedAt <= now checks)
 // appear within the hour; admin blog mutations also call revalidateTag('blog').
-// 6 h (was 1 h): admin publish/edit refreshes instantly via revalidateTag('blog');
+// 24 h (was 1 h): admin publish/edit refreshes instantly via revalidateTag('blog');
 // this only bounds how late a *scheduled* post (future publishedAt) appears.
-const BLOG_CACHE_OPTS = { revalidate: 21600, tags: ['blog'] };
+const BLOG_CACHE_OPTS = { revalidate: 86400, tags: ['blog'] };
 
 export const getPublicBlogPosts = unstable_cache(
   async (locale: string = 'en', page: number = 1, limit: number = 10, category?: string) => {

@@ -16,7 +16,7 @@ import { getProjectsForGallery } from '@/lib/database/public-queries';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 
-export const revalidate = 86400; // daily safety net — admin edits refresh instantly via revalidateTag (Vercel cost)
+export const revalidate = 604800; // weekly safety net — admin edits refresh instantly via revalidateTag (Vercel CPU/ISR cost)
 
 const ogLocaleMap: Record<Locale, string> = {
   en: 'en_US',

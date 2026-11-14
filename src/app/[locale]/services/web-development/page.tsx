@@ -16,7 +16,7 @@ import WebDevPageWrapper from '@/components/web-development/WebDevPageWrapper';
 import WebDevBlogWrapper from '@/components/web-development/WebDevBlogWrapper';
 import { PatternDivider } from '@/components/heritage';
 
-export const revalidate = 86400; // daily safety net — admin edits refresh instantly via revalidateTag (Vercel cost)
+export const revalidate = 604800; // weekly safety net — admin edits refresh instantly via revalidateTag (Vercel CPU/ISR cost)
 
 import { SITE_URL as baseUrl } from '@/config/site';
 const SLUG = 'web-development';
