@@ -206,7 +206,8 @@ export default function ServiceDetailClient({
   heroArt?: ReactNode;
 }) {
   const { t, locale } = useTranslations();
-  const accent: AccentColor = colorMap[service.color || ''] || 'emerald';
+  // The Turkish Facebook Ads row is stored as blue; keep it on the turquoise accent the other ad pages use.
+  const accent: AccentColor = service.slug === 'facebook-ads' && locale === 'tr' ? 'emerald' : colorMap[service.color || ''] || 'emerald';
   const colors = accentColors[accent];
 
   // Remarketing: record service-page views (GA4 view_item + FB ViewContent).
@@ -759,9 +760,11 @@ function HeroSection({
               {isGoogleSearchAdsTr && <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-black/5"><MagnifyingGlassIcon className="h-5 w-5 text-heritage-turquoise-deep" aria-hidden="true" /></span>}
               {isPerformanceMaxTr && <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-black/5"><ChartBarIcon className="h-5 w-5 text-heritage-turquoise-deep" aria-hidden="true" /></span>}
               {isGoogleAdsTr && <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-black/5"><MegaphoneIcon className="h-5 w-5 text-heritage-turquoise-deep" aria-hidden="true" /></span>}
+              {isMetaAdsTr && <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-black/5"><MegaphoneIcon className="h-5 w-5 text-heritage-turquoise-deep" aria-hidden="true" /></span>}
+              {isFacebookAdsTr && <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-black/5"><ChatBubbleLeftRightIcon className="h-5 w-5 text-heritage-turquoise-deep" aria-hidden="true" /></span>}
               {/* ikas writes its name in lowercase; CSS uppercase would render "İKAS". */}
               <span className={`text-xs font-medium ${colors.eyebrow} ${isIkasTr ? '' : 'uppercase'} tracking-wide`}>
-                {isIkasTr ? IKAS_TR_HERO.eyebrow : isShopifyTr ? 'Shopify Kurulum ve Geliştirme Hizmetleri' : isCustomEcomTr ? 'Özel E-Ticaret Geliştirme' : isMarketTr ? 'Pazaryeri Geliştirme' : isEcommerceSeoTr ? 'E-Ticaret SEO Hizmeti ve Danışmanlığı' : isTechnicalSeoTr ? 'Teknik SEO ve SEO Denetimi' : isGoogleShoppingTr ? 'E-ticaret ürün reklamları ve katalog yönetimi' : isGoogleSearchAdsTr ? 'Arama kampanyası kurulumu ve yönetimi' : isPerformanceMaxTr ? 'Maksimum Performans kampanya yönetimi' : isGoogleAdsTr ? 'Google Ads Kampanya Yönetimi' : isSeoTr ? 'SEO Hizmeti ve Danışmanlığı' : t('services.detail.hero.eyebrow')}
+                {isIkasTr ? IKAS_TR_HERO.eyebrow : isShopifyTr ? 'Shopify Kurulum ve Geliştirme Hizmetleri' : isCustomEcomTr ? 'Özel E-Ticaret Geliştirme' : isMarketTr ? 'Pazaryeri Geliştirme' : isEcommerceSeoTr ? 'E-Ticaret SEO Hizmeti ve Danışmanlığı' : isTechnicalSeoTr ? 'Teknik SEO ve SEO Denetimi' : isGoogleShoppingTr ? 'E-ticaret ürün reklamları ve katalog yönetimi' : isGoogleSearchAdsTr ? 'Arama kampanyası kurulumu ve yönetimi' : isPerformanceMaxTr ? 'Maksimum Performans kampanya yönetimi' : isGoogleAdsTr ? 'Google Ads Kampanya Yönetimi' : isMetaAdsTr ? 'Facebook ve Instagram Reklam Yönetimi' : isFacebookAdsTr ? 'Facebook Reklam Kampanya Yönetimi' : isSeoTr ? 'SEO Hizmeti ve Danışmanlığı' : t('services.detail.hero.eyebrow')}
               </span>
             </div>
 
@@ -791,6 +794,10 @@ function HeroSection({
                 <h1 className="text-display font-light text-gray-900 leading-tight">Google Alışveriş Reklamları</h1>
               ) : isGoogleAdsTr ? (
                 <RotatingHeading full={service.name} lead="Google Ads" words={['Yönetimi', 'Ajansı', 'Danışmanlığı']} />
+              ) : isMetaAdsTr ? (
+                <RotatingHeading full={service.name} lead="Meta Reklam" words={['Yönetimi', 'Ajansı', 'Danışmanlığı']} />
+              ) : isFacebookAdsTr ? (
+                <RotatingHeading full={service.name} lead="Facebook Reklam" words={['Yönetimi', 'Ajansı', 'Danışmanlığı']} />
               ) : (
               <h1 className={`text-display font-light text-gray-900 leading-none ${isIkasTr ? 'ikas-hero-title' : ''}`}>
                 <>{service.name.split(' ').slice(0, -1).join(' ')}{service.name.split(' ').length > 1 && <br />}<span className={`font-semibold ${colors.titleAccent}`}>{service.name.split(' ').length > 1 ? service.name.split(' ').slice(-1)[0] : service.name}</span></>
@@ -888,6 +895,8 @@ function HeroSection({
               {isGoogleSearchAdsTr && <p className="text-sm font-medium text-gray-600">Arama terimleri · Reklam metni · Açılış sayfası · Başvuru ölçümü</p>}
               {isGoogleShoppingTr && <p className="text-sm font-medium text-gray-600">Merchant Center · Ürün verisi · Kampanya kapsamı · Satın alma ölçümü</p>}
               {isPerformanceMaxTr && <p className="text-sm font-medium text-gray-600">Kampanya hedefi · Öğe grupları · Dönüşüm takibi · Ürün verisi</p>}
+              {isMetaAdsTr && <p className="text-sm font-medium text-gray-600">Kampanya hedefi · Kreatif testleri · Meta piksel ve ölçüm · Raporlama</p>}
+              {isFacebookAdsTr && <p className="text-sm font-medium text-gray-600">Form reklamları · Katalog reklamları · Yeniden pazarlama · Raporlama</p>}
               {isIkasTr && <IkasPlatformNote />}
             </div>
           </motion.div>
