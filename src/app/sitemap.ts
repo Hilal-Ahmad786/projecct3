@@ -77,7 +77,7 @@ const CURATED_TR_SERVICES: { slug: string; date: string; pages: string[] }[] = [
   { slug: 'google-search-ads', date: '2026-11-08', pages: ALL_SUBPAGES },
   { slug: 'google-shopping', date: '2026-11-11', pages: ALL_SUBPAGES },
   { slug: 'performance-max', date: '2026-11-11', pages: ALL_SUBPAGES },
-  { slug: 'meta-ads', date: '2026-11-12', pages: ALL_SUBPAGES },
+  { slug: 'meta-ads', date: '2026-11-19', pages: ALL_SUBPAGES },
   { slug: 'facebook-ads', date: '2026-11-19', pages: ALL_SUBPAGES },
   { slug: 'custom-ecommerce', date: '2026-11-05', pages: ALL_SUBPAGES },
   { slug: 'marketplace-development', date: '2026-11-05', pages: ALL_SUBPAGES },
