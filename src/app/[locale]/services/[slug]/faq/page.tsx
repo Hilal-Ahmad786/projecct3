@@ -1,3 +1,4 @@
+import { FacebookAdsTurkishPage, getFacebookAdsMeta, getFacebookAdsSocialMeta } from '@/components/services/FacebookAdsTurkishPage';
 import { MetaAdsTurkishPage, getMetaAdsMeta, getMetaAdsSocialMeta } from '@/components/services/MetaAdsTurkishPage';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
@@ -43,7 +44,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const path = `/services/${slug}/faq`;
   const localizedPath = localizeFullPath(path, validLocale);
 
-  const customMeta = slug === 'meta-ads' && validLocale === 'tr' ? getMetaAdsMeta('faq') : slug === 'performance-max' && validLocale === 'tr' ? getPerformanceMaxMeta('faq') : slug === 'google-shopping' && validLocale === 'tr' ? getGoogleShoppingMeta('faq') : slug === 'google-search-ads' && validLocale === 'tr' ? getGoogleSearchAdsMeta('faq') : slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsMeta('faq') : slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoMeta('faq') : slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('faq') : slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('faq') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('faq') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('faq')
+  const customMeta = slug === 'facebook-ads' && validLocale === 'tr' ? getFacebookAdsMeta('faq') : slug === 'meta-ads' && validLocale === 'tr' ? getMetaAdsMeta('faq') : slug === 'performance-max' && validLocale === 'tr' ? getPerformanceMaxMeta('faq') : slug === 'google-shopping' && validLocale === 'tr' ? getGoogleShoppingMeta('faq') : slug === 'google-search-ads' && validLocale === 'tr' ? getGoogleSearchAdsMeta('faq') : slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsMeta('faq') : slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoMeta('faq') : slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('faq') : slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('faq') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('faq') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('faq')
     : slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('faq', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('faq')
@@ -58,11 +59,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title,
     description,
-    robots: (slug === 'google-search-ads' || slug === 'google-shopping' || slug === 'performance-max') && validLocale === 'tr' ? { index: true, follow: true } : serviceRobots(service),
+    robots: (slug === 'facebook-ads' || slug === 'google-search-ads' || slug === 'google-shopping' || slug === 'performance-max') && validLocale === 'tr' ? { index: true, follow: true } : serviceRobots(service),
     ...(slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishSocialMeta('faq', canonicalUrl) : {}),
     ...(slug === 'seo' && validLocale === 'tr' ? getSeoTurkishSocialMeta('faq', canonicalUrl) : {}),
     ...(slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoSocialMeta('faq', canonicalUrl) : {}),
     ...(slug === 'performance-max' && validLocale === 'tr' ? getPerformanceMaxSocialMeta('faq', canonicalUrl) : {}),
+    ...(slug === 'facebook-ads' && validLocale === 'tr' ? getFacebookAdsSocialMeta('faq', canonicalUrl) : {}),
     ...(slug === 'meta-ads' && validLocale === 'tr' ? getMetaAdsSocialMeta('faq', canonicalUrl) : {}),
     ...(slug === 'google-shopping' && validLocale === 'tr' ? getGoogleShoppingSocialMeta('faq', canonicalUrl) : {}),
     ...(slug === 'google-search-ads' && validLocale === 'tr' ? getGoogleSearchAdsSocialMeta('faq', canonicalUrl) : {}),
@@ -117,6 +119,7 @@ export default async function ServiceFAQPage({ params }: PageProps) {
   if (slug === 'ecommerce-seo' && locale === 'tr') return <EcommerceSeoTurkishPage page="faq" />;
 
   if (slug === 'performance-max' && locale === 'tr') return <PerformanceMaxTurkishPage page="faq" />;
+  if (slug === 'facebook-ads' && locale === 'tr') return <FacebookAdsTurkishPage page="faq" />;
   if (slug === 'meta-ads' && locale === 'tr') return <MetaAdsTurkishPage page="faq" />;
   if (slug === 'google-shopping' && locale === 'tr') return <GoogleShoppingTurkishPage page="faq" />;
   if (slug === 'google-search-ads' && locale === 'tr') return <GoogleSearchAdsTurkishPage page="faq" />;

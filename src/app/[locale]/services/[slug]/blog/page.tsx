@@ -1,4 +1,5 @@
 import { MetaAdsTurkishPage, getMetaAdsMeta, getMetaAdsSocialMeta } from '@/components/services/MetaAdsTurkishPage';
+import { FacebookAdsTurkishPage, getFacebookAdsMeta, getFacebookAdsSocialMeta } from '@/components/services/FacebookAdsTurkishPage';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { Locale, locales, defaultLocale } from '@/lib/i18n';
@@ -42,7 +43,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const path = `/services/${slug}/blog`;
   const localizedPath = localizeFullPath(path, validLocale);
-  const customMeta = slug === 'meta-ads' && validLocale === 'tr' ? getMetaAdsMeta('blog') : slug === 'performance-max' && validLocale === 'tr' ? getPerformanceMaxMeta('blog') : slug === 'google-shopping' && validLocale === 'tr' ? getGoogleShoppingMeta('blog') : slug === 'google-search-ads' && validLocale === 'tr' ? getGoogleSearchAdsMeta('blog') : slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsMeta('blog') : slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoMeta('blog') : slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('blog') : slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('blog') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('blog') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceBlogMeta()
+  const customMeta = slug === 'facebook-ads' && validLocale === 'tr' ? getFacebookAdsMeta('blog') : slug === 'meta-ads' && validLocale === 'tr' ? getMetaAdsMeta('blog') : slug === 'performance-max' && validLocale === 'tr' ? getPerformanceMaxMeta('blog') : slug === 'google-shopping' && validLocale === 'tr' ? getGoogleShoppingMeta('blog') : slug === 'google-search-ads' && validLocale === 'tr' ? getGoogleSearchAdsMeta('blog') : slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsMeta('blog') : slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoMeta('blog') : slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('blog') : slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('blog') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('blog') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceBlogMeta()
     : slug === 'ikas-development' && validLocale === 'tr'
     ? getIkasBlogMeta()
     : slug === 'shopify-development' && validLocale === 'tr' ? getShopifyBlogMeta()
@@ -58,6 +59,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     ...(slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsSocialMeta('blog', `${baseUrl}/${validLocale}${localizedPath}`) : {}),
     ...(slug === 'performance-max' && validLocale === 'tr' ? getPerformanceMaxSocialMeta('blog', `${baseUrl}/${validLocale}${localizedPath}`) : {}),
     ...(slug === 'meta-ads' && validLocale === 'tr' ? getMetaAdsSocialMeta('blog', `${baseUrl}/${validLocale}${localizedPath}`) : {}),
+    ...(slug === 'facebook-ads' && validLocale === 'tr' ? getFacebookAdsSocialMeta('blog', `${baseUrl}/${validLocale}${localizedPath}`) : {}),
     ...(slug === 'google-shopping' && validLocale === 'tr' ? getGoogleShoppingSocialMeta('blog', `${baseUrl}/${validLocale}${localizedPath}`) : {}),
     ...(slug === 'google-search-ads' && validLocale === 'tr' ? getGoogleSearchAdsSocialMeta('blog', `${baseUrl}/${validLocale}${localizedPath}`) : {}),
     ...(slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishSocialMeta('blog', `${baseUrl}/${validLocale}${localizedPath}`) : {}),
@@ -78,6 +80,7 @@ export default async function ServiceBlogPage({ params }: PageProps) {
   if (slug === 'google-ads' && validLocale === 'tr') return <GoogleAdsTurkishPage page="blog" />;
   if (slug === 'performance-max' && validLocale === 'tr') return <PerformanceMaxTurkishPage page="blog" />;
   if (slug === 'meta-ads' && validLocale === 'tr') return <MetaAdsTurkishPage page="blog" />;
+  if (slug === 'facebook-ads' && validLocale === 'tr') return <FacebookAdsTurkishPage page="blog" />;
   if (slug === 'google-shopping' && validLocale === 'tr') return <GoogleShoppingTurkishPage page="blog" />;
   if (slug === 'google-search-ads' && validLocale === 'tr') return <GoogleSearchAdsTurkishPage page="blog" />;
 

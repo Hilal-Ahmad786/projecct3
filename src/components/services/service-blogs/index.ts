@@ -13,6 +13,7 @@ import { googleAdsBlog } from './google-ads';
 import { googleSearchAdsBlog } from './google-search-ads';
 import { googleShoppingBlog } from './google-shopping';
 import { metaAdsBlog } from './meta-ads';
+import { facebookAdsBlog } from './facebook-ads';
 import { performanceMaxBlog } from './performance-max';
 
 // Presentation config per service blog. The list of enabled services/locales
@@ -31,6 +32,7 @@ const definitions: Record<string, ServiceBlogDefinition> = {
   'google-shopping': googleShoppingBlog,
   'performance-max': performanceMaxBlog,
   'meta-ads': metaAdsBlog,
+  'facebook-ads': facebookAdsBlog,
 };
 
 export function getServiceBlog(serviceSlug: string, locale: string): ServiceBlogDefinition | null {

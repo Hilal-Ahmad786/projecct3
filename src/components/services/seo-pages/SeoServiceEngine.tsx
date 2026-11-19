@@ -20,10 +20,10 @@ export type SeoPageKind = 'overview' | 'features' | 'technologies' | 'process' |
 export type SeoContentPage = Exclude<SeoPageKind, 'blog'>;
 export type SeoSubPage = Exclude<SeoPageKind, 'overview' | 'blog'>;
 export type SeoMeta = { title: string; description: string; heading: string; intro: string };
-type Guide = { slug: string; title: string; categoryLabel: string; excerpt: string; featuredImage: string; imageAlt?: string; datePublished?: string | null };
+type Guide = { slug: string; title: string; categoryLabel: string; excerpt: string; featuredImage: string; imageAlt?: string; datePublished?: string | null; readingMinutes?: number };
 
 export interface SeoServiceConfig {
-  platform: Extract<Platform, 'seo' | 'ecommerce-seo' | 'technical-seo' | 'google-ads' | 'google-search-ads' | 'google-shopping' | 'performance-max' | 'meta-ads'>;
+  platform: Extract<Platform, 'seo' | 'ecommerce-seo' | 'technical-seo' | 'google-ads' | 'google-search-ads' | 'google-shopping' | 'performance-max' | 'meta-ads' | 'facebook-ads'>;
   contentDir: string;
   base: string;
   enquiry: string;
@@ -41,6 +41,7 @@ export interface SeoServiceConfig {
   closingLink: Record<SeoContentPage, [string, string]>;
   closingDefault: { title: string; text: string };
   closingCopy?: Partial<Record<SeoContentPage, { title: string; text: string }>>;
+  closingTitlePrefix?: Partial<Record<SeoContentPage, string>>;
   jumpLabels: [string, string][];
   sectionIds: Record<string, string>;
   portfolioBadge?: string;
@@ -64,7 +65,8 @@ export function createSeoService(cfg: SeoServiceConfig) {
   function readPage(page: SeoContentPage) {
     const chunks = readServiceChunks(cfg.contentDir, page);
     const last = chunks.at(-1);
-    return last && isClosing(last) ? { sections: chunks.slice(0, -1), closing: last } : { sections: chunks, closing: undefined };
+    const explicitClosing = !!last && !!cfg.closingTitlePrefix?.[page] && last.title.startsWith(cfg.closingTitlePrefix[page]!);
+    return last && (isClosing(last) || explicitClosing) ? { sections: chunks.slice(0, -1), closing: last } : { sections: chunks, closing: undefined };
   }
 
   function HeroScene({ children }: { children: ReactNode }) {
@@ -105,7 +107,7 @@ export function createSeoService(cfg: SeoServiceConfig) {
     jumpLabel: (title) => matchPrefix(cfg.jumpLabels, title) ?? title.replace(/[?:].*$/, ''),
     jumpMark: <Icon className="h-3.5 w-3.5 text-heritage-turquoise-deep" />,
     sectionId: (page, title) => cfg.sectionIds[`${page}:${title}`],
-    footer: (page, tone) => <><PlatformPageLinks platform={cfg.platform} current={page} tone={tone} title={cfg.platform === 'meta-ads' ? 'Hizmetin ayrıntılarını inceleyin' : undefined} /><ClosingCta page={page} closing={closing} /></>,
+    footer: (page, tone) => <><PlatformPageLinks platform={cfg.platform} current={page} tone={tone} title={cfg.platform === 'meta-ads' || cfg.platform === 'facebook-ads' ? 'Hizmetin ayrıntılarını inceleyin' : undefined} /><ClosingCta page={page} closing={closing} /></>,
   });
 
   const iconChip = <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-black/5"><Icon className="h-5 w-5 text-heritage-turquoise-deep" aria-hidden="true" /></span>;
@@ -123,7 +125,7 @@ export function createSeoService(cfg: SeoServiceConfig) {
 
   function BlogListing() {
     const meta = metadata.blog;
-    const cards = cfg.blog.guides().map((guide) => ({ slug: guide.slug, href: `${base}/blog/${guide.slug}`, title: guide.title, category: guide.categoryLabel, excerpt: guide.excerpt, image: guide.featuredImage, imageAlt: guide.imageAlt, publishedAt: guide.datePublished }));
+    const cards = cfg.blog.guides().map((guide) => ({ slug: guide.slug, href: `${base}/blog/${guide.slug}`, title: guide.title, category: guide.categoryLabel, excerpt: guide.excerpt, image: guide.featuredImage, imageAlt: guide.imageAlt, publishedAt: guide.datePublished, readingMinutes: guide.readingMinutes }));
     return <main className="min-h-screen bg-white">
       <CustomEcommerceMotionScope />
       <InternalPageHero serviceName={cfg.serviceName} accentWord={meta.heading} eyebrowNormalCase eyebrowIcon={iconChip} heading={meta.heading} rotating={cfg.rotating.blog} subtitle={meta.intro} crumbs={crumbs('Rehberler')}

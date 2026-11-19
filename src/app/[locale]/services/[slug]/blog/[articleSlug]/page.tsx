@@ -1,4 +1,5 @@
 import { getMetaAdsGuide, getMetaAdsGuides } from '@/components/services/service-blogs/meta-ads';
+import { getFacebookAdsGuide, getFacebookAdsGuides } from '@/components/services/service-blogs/facebook-ads';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Locale } from '@/lib/i18n';
@@ -40,7 +41,8 @@ export function generateStaticParams() {
   const googleShopping = getGoogleShoppingGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'google-shopping', articleSlug }));
   const performanceMax = getPerformanceMaxGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'performance-max', articleSlug }));
   const metaAds = getMetaAdsGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'meta-ads', articleSlug }));
-  return [...metaAds, ...corporate, ...shopify, ...customEcommerce, ...marketplace, ...seo, ...ecommerceSeo, ...technicalSeo, ...googleAds, ...googleSearchAds, ...googleShopping, ...performanceMax];
+  const facebookAds = getFacebookAdsGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'facebook-ads', articleSlug }));
+  return [...facebookAds, ...metaAds, ...corporate, ...shopify, ...customEcommerce, ...marketplace, ...seo, ...ecommerceSeo, ...technicalSeo, ...googleAds, ...googleSearchAds, ...googleShopping, ...performanceMax];
 }
 
 interface PageProps {
@@ -83,6 +85,11 @@ async function getServiceBlogArticle(serviceSlug: string, locale: string, articl
   }
   if (serviceSlug === 'meta-ads' && locale === 'tr') {
     const post = getMetaAdsGuide(articleSlug);
+    if (!post) return null;
+    return { blog, post, canonical: `${SITE_URL}${serviceBlogPath(blog.config)}/${articleSlug}` };
+  }
+  if (serviceSlug === 'facebook-ads' && locale === 'tr') {
+    const post = getFacebookAdsGuide(articleSlug);
     if (!post) return null;
     return { blog, post, canonical: `${SITE_URL}${serviceBlogPath(blog.config)}/${articleSlug}` };
   }
@@ -199,7 +206,8 @@ export default async function CorporateWebsiteGuideRoute({ params }: PageProps) 
   if (serviceArticle) {
     const { blog, post } = serviceArticle;
     const { config, category, coverAlt } = getServiceArticlePresentation(blog, post.slug, post.title);
-    const relatedCards = slug === 'meta-ads' ? getMetaAdsGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))
+    const relatedCards = slug === 'facebook-ads' ? getFacebookAdsGuides().map((guide) => ({ slug: guide.slug, title: guide.heading, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))
+      : slug === 'meta-ads' ? getMetaAdsGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))
       : slug === 'technical-seo' ? getTechnicalSeoGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))
       : slug === 'ecommerce-seo' ? getEcommerceSeoGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))
       : slug === 'seo' ? getSeoGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))

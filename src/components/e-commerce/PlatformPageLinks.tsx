@@ -7,12 +7,22 @@ import { trTitleCase } from '@/lib/tr-title-case';
 // and the current page is left out.
 
 export type PlatformPage = 'overview' | 'features' | 'technologies' | 'process' | 'portfolio' | 'pricing' | 'blog' | 'faq';
-export type Platform = 'ikas' | 'shopify' | 'custom' | 'marketplace' | 'seo' | 'ecommerce-seo' | 'technical-seo' | 'google-ads' | 'google-search-ads' | 'google-shopping' | 'performance-max' | 'meta-ads';
+export type Platform = 'ikas' | 'shopify' | 'custom' | 'marketplace' | 'seo' | 'ecommerce-seo' | 'technical-seo' | 'google-ads' | 'google-search-ads' | 'google-shopping' | 'performance-max' | 'meta-ads' | 'facebook-ads';
 
-const BASE: Record<Platform, string> = { 'meta-ads': '/tr/hizmetler/meta-ads', ikas: '/tr/hizmetler/ikas-development', shopify: '/tr/hizmetler/shopify-development', custom: '/tr/hizmetler/custom-ecommerce', marketplace: '/tr/hizmetler/marketplace-development', seo: '/tr/hizmetler/seo', 'ecommerce-seo': '/tr/hizmetler/ecommerce-seo', 'technical-seo': '/tr/hizmetler/technical-seo', 'google-ads': '/tr/hizmetler/google-ads', 'google-search-ads': '/tr/hizmetler/google-search-ads', 'google-shopping': '/tr/hizmetler/google-shopping', 'performance-max': '/tr/hizmetler/performance-max' };
+const BASE: Record<Platform, string> = { 'meta-ads': '/tr/hizmetler/meta-ads', 'facebook-ads': '/tr/hizmetler/facebook-ads', ikas: '/tr/hizmetler/ikas-development', shopify: '/tr/hizmetler/shopify-development', custom: '/tr/hizmetler/custom-ecommerce', marketplace: '/tr/hizmetler/marketplace-development', seo: '/tr/hizmetler/seo', 'ecommerce-seo': '/tr/hizmetler/ecommerce-seo', 'technical-seo': '/tr/hizmetler/technical-seo', 'google-ads': '/tr/hizmetler/google-ads', 'google-search-ads': '/tr/hizmetler/google-search-ads', 'google-shopping': '/tr/hizmetler/google-shopping', 'performance-max': '/tr/hizmetler/performance-max' };
 const SLUG: Record<PlatformPage, string> = { overview: '', features: '/ozellikler', technologies: '/teknoloji', process: '/surec', portfolio: '/portfoy', pricing: '/fiyatlandirma', blog: '/blog', faq: '/sss' };
 
 const PAGES: Record<Platform, Record<PlatformPage, [string, string]>> = {
+  'facebook-ads': {
+    overview: ['Facebook reklam yönetimi', 'Kampanya hedefi, içerik ve ölçüm planı'],
+    features: ['Hizmet kapsamı', 'Kampanya, kreatif ve optimizasyon çalışmaları'],
+    technologies: ['Ölçüm ve araçlar', 'Piksel, olay ve raporlama altyapısı'],
+    process: ['Çalışma süreci', 'Hazırlıktan değerlendirmeye adımlar'],
+    portfolio: ['Çalışma yaklaşımı', 'Örnek senaryolar ve değerlendirme ölçütleri'],
+    pricing: ['Fiyatlandırma', 'Medya bütçesi ve hizmet kapsamı'],
+    blog: ['Reklam rehberleri', 'Hazırlık ve maliyet kararlarına dair yazılar'],
+    faq: ['Sık sorulan sorular', 'Facebook reklam yönetimi hakkında yanıtlar'],
+  },
   'meta-ads': {
     overview: ['Meta reklam yönetimi', 'Hedef, kreatif ve ölçüm planı.'],
     features: ['Yönetim kapsamı', 'Kreatif, kampanya ve raporlama.'],
@@ -136,6 +146,11 @@ const PAGES: Record<Platform, Record<PlatformPage, [string, string]>> = {
 };
 
 const RELATED: Record<Platform, [string, string, string][]> = {
+  'facebook-ads': [
+    ['Meta Reklam Yönetimi', 'Facebook ve Instagram kampanyalarını birlikte değerlendirin.', '/tr/hizmetler/meta-ads'],
+    ['E-Ticaret Çözümleri', 'Reklamdan sonraki mağaza ve satın alma deneyimini planlayın.', '/tr/hizmetler/e-commerce'],
+    ['Google Ads Yönetimi', 'Arama ve diğer Google kampanyalarını inceleyin.', '/tr/hizmetler/google-ads'],
+  ],
   'meta-ads': [
     ['Facebook Reklamları', 'Facebook reklam yönetimi.', '/tr/hizmetler/facebook-ads'],
     ['Instagram Reklamları', 'Instagram reklam yönetimi.', '/tr/hizmetler/instagram-ads'],
@@ -218,7 +233,7 @@ const RELATED: Record<Platform, [string, string, string][]> = {
 const focus = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2';
 
 export default function PlatformPageLinks({ platform, current, title, tone = 'ivory' }: { platform: Platform; current: PlatformPage; title?: string; tone?: 'white' | 'gray' | 'ivory' }) {
-  const name = platform === 'meta-ads' ? 'Meta reklam' : platform === 'ikas' ? 'ikas' : platform === 'shopify' ? 'Shopify' : platform === 'custom' ? 'Özel e-ticaret' : platform === 'seo' ? 'SEO' : platform === 'ecommerce-seo' ? 'E-ticaret SEO' : platform === 'technical-seo' ? 'Teknik SEO' : platform === 'google-search-ads' ? 'Google Arama Ağı' : platform === 'google-shopping' ? 'Google Alışveriş' : platform === 'performance-max' ? 'Performance Max' : platform === 'google-ads' ? 'Google Ads' : 'Pazaryeri';
+  const name = platform === 'facebook-ads' ? 'Facebook reklam' : platform === 'meta-ads' ? 'Meta reklam' : platform === 'ikas' ? 'ikas' : platform === 'shopify' ? 'Shopify' : platform === 'custom' ? 'Özel e-ticaret' : platform === 'seo' ? 'SEO' : platform === 'ecommerce-seo' ? 'E-ticaret SEO' : platform === 'technical-seo' ? 'Teknik SEO' : platform === 'google-search-ads' ? 'Google Arama Ağı' : platform === 'google-shopping' ? 'Google Alışveriş' : platform === 'performance-max' ? 'Performance Max' : platform === 'google-ads' ? 'Google Ads' : 'Pazaryeri';
   const pages = (Object.keys(PAGES[platform]) as PlatformPage[]).filter((page) => page !== current);
   const bg = tone === 'gray' ? 'bg-background-gray' : tone === 'ivory' ? 'bg-heritage-ivory' : 'bg-white';
   return (
@@ -240,7 +255,7 @@ export default function PlatformPageLinks({ platform, current, title, tone = 'iv
             </ul>
           </div>
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-gray-500">{platform === 'meta-ads' || platform === 'seo' || platform === 'ecommerce-seo' || platform === 'technical-seo' || platform === 'google-ads' || platform === 'google-search-ads' || platform === 'google-shopping' || platform === 'performance-max' ? 'İlgili hizmetler' : 'İlgili e-ticaret hizmetleri'}</h3>
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-gray-500">{platform === 'meta-ads' || platform === 'facebook-ads' || platform === 'seo' || platform === 'ecommerce-seo' || platform === 'technical-seo' || platform === 'google-ads' || platform === 'google-search-ads' || platform === 'google-shopping' || platform === 'performance-max' ? 'İlgili hizmetler' : 'İlgili e-ticaret hizmetleri'}</h3>
             <ul className="mt-3 divide-y divide-heritage-sand rounded-xl border border-heritage-sand bg-white/70">
               {RELATED[platform].map(([label, text, href]) => (
                 <li key={href}>

@@ -950,3 +950,101 @@ export function MetaAdsScene() {
     </svg>
   </>}</Frame>;
 }
+
+// Facebook overview hero: same Fable standard as MetaAdsScene, but a Facebook-only story — a feed ad
+// with a product carousel, a Facebook instant form opening from the ad, a qualified-lead check before
+// the record reaches the sales team, and the four-step rail. No brand marks.
+export function FacebookAdsScene() {
+  const steps = [['Hedef', 14, 44], ['Kreatif', 62, 48], ['Başvuru', 114, 48], ['Rapor', 166, 60]] as const;
+  const toForm = 'M100 158 C122 158 134 142 150 130';
+  const toCheck = 'M188 150 C188 158 186 164 186 170';
+  const toLead = 'M140 194 C136 194 132 194 128 194';
+  const tiles = [32, 66, 100] as const;
+  return <Frame label="Temsili Facebook reklam akışı: akıştaki ürün kaydırmalı reklam Facebook başvuru formunu açıyor; başvuru nitelik kontrolünden geçip satış ekibine iletiliyor ve hedef, kreatif, başvuru, rapor adımlarıyla izleniyor.">{active => <>
+    <GirihHalo active={active} color={H.lapis} opacity={0.14} />
+    <svg viewBox="0 0 240 240" className="absolute inset-0 h-full w-full" aria-hidden="true">
+      <defs>
+        <linearGradient id="fbTileA" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stopColor={H.lapis} /><stop offset="100%" stopColor={H.turquoise} /></linearGradient>
+        <linearGradient id="fbTileB" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stopColor={H.terracotta} /><stop offset="100%" stopColor={H.saffron} /></linearGradient>
+        <filter id="fbShadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="4" floodColor={H.lapisDeep} floodOpacity="0.12" /></filter>
+        <clipPath id="fbCarousel"><rect x="30" y="58" width="104" height="52" rx="8" /></clipPath>
+      </defs>
+
+      {/* feed ad card with a product carousel */}
+      <motion.g {...loop(active, { y: [0, -2.5, 0] }, 8)}>
+        <rect x="20" y="22" width="124" height="150" rx="14" fill={H.white} filter="url(#fbShadow)" />
+        <motion.rect x="20" y="22" width="124" height="150" rx="14" fill="none" stroke={H.sand} strokeWidth="2" {...drawIn(0.1, 1)} />
+        <motion.g {...riseIn(0.35)}>
+          <circle cx="34" cy="38" r="6" fill={H.turquoiseLight} stroke={H.turquoise} />
+          <text x="45" y="36" fontSize="7" fontWeight="700" fill={H.lapisDeep}>İşletmeniz</text>
+          <text x="45" y="45" fontSize="5.5" fill={H.lapisDeep} opacity="0.6">Sponsorlu · Facebook</text>
+        </motion.g>
+        <g clipPath="url(#fbCarousel)">
+          <motion.g {...pop(0.6)}>
+            <motion.g {...loop(active, { x: [0, 0, -34, -34, 0] }, 9, 1.5)}>
+              {tiles.map((x, i) => <g key={x}>
+                <rect x={x} y="58" width="30" height="52" rx="7" fill={i === 1 ? 'url(#fbTileB)' : 'url(#fbTileA)'} />
+                <polygon points={starPoints(x + 15, 78, 8, 4.4)} fill="none" stroke={H.white} strokeWidth="1.3" />
+                <rect x={x + 5} y="96" width="20" height="6" rx="3" fill={H.white} opacity="0.9" />
+              </g>)}
+              <rect x="134" y="58" width="30" height="52" rx="7" fill="url(#fbTileB)" />
+            </motion.g>
+          </motion.g>
+        </g>
+        <motion.g {...pop(0.9)}>{[74, 82, 90].map((cx, i) => <motion.circle key={cx} cx={cx} cy="117" r="2" initial={false}
+          animate={active ? { fill: i === 0 ? [H.turquoise, H.sand, H.sand, H.turquoise] : i === 1 ? [H.sand, H.turquoise, H.sand, H.sand] : [H.sand, H.sand, H.turquoise, H.sand] } : { fill: i === 0 ? H.turquoise : H.sand }}
+          transition={active ? { duration: 9, repeat: Infinity, delay: 1.5 } : { duration: 0 }} />)}</motion.g>
+        <motion.rect x="30" y="127" width="90" height="6" rx="3" fill={H.sand} {...pop(1.05)} />
+        <motion.rect x="30" y="138" width="62" height="5" rx="2.5" fill={H.ivory} {...pop(1.15)} />
+        <motion.g {...pop(1.3)}>
+          <rect x="30" y="150" width="70" height="16" rx="8" fill={H.lapis} />
+          <text x="65" y="160.6" textAnchor="middle" fontSize="6.5" fontWeight="700" fill={H.white}>Başvur</text>
+        </motion.g>
+      </motion.g>
+
+      {/* tap opens the instant form */}
+      <motion.path d={toForm} fill="none" stroke={H.turquoise} strokeWidth="1.4" strokeDasharray="3 3" {...drawIn(1.5, 0.7)} />
+      <Travel active={active} d={toForm} delay={2.4} duration={1.6} period={6} />
+
+      {/* Facebook instant form */}
+      <motion.g {...pop(1.7)}>
+        <motion.g {...loop(active, { y: [0, -2, 0] }, 9, 1)}>
+          <rect x="150" y="40" width="76" height="110" rx="10" fill={H.white} stroke={H.lapis} strokeOpacity="0.3" filter="url(#fbShadow)" />
+          <path d="M150 50 a10 10 0 0 1 10 -10 h56 a10 10 0 0 1 10 10 z" fill={H.ivory} />
+          <text x="158" y="62" fontSize="7" fontWeight="700" fill={H.lapisDeep}>Başvuru formu</text>
+          {[['Ad soyad', 70], ['Telefon', 92], ['Hizmet', 114]].map(([label, y], i) => <motion.g key={label as string} {...riseIn(2 + i * 0.15)}>
+            <text x="158" y={(y as number) - 1} fontSize="5.5" fill={H.lapisDeep} opacity="0.65">{label}</text>
+            <rect x="158" y={(y as number) + 2} width="60" height="11" rx="3" fill={H.ivory} stroke={H.sand} />
+            <motion.rect x="161" y={(y as number) + 6} height="3" rx="1.5" fill={H.turquoise} initial={false}
+              animate={active ? { width: [0, 0, 26 + i * 6, 26 + i * 6, 0] } : { width: 26 + i * 6 }}
+              transition={active ? { duration: 9, repeat: Infinity, delay: 2.6 + i * 0.35, times: [0, 0.05, 0.18, 0.9, 1] } : { duration: 0 }} />
+          </motion.g>)}
+          <motion.rect x="158" y="132" width="60" height="11" rx="5.5" fill={H.terracotta} {...loop(active, { opacity: [1, 0.75, 1] }, 6, 4.4)} />
+          <text x="188" y="139.6" textAnchor="middle" fontSize="6" fontWeight="700" fill={H.white}>Gönder</text>
+        </motion.g>
+      </motion.g>
+
+      {/* qualified lead reaches the sales team */}
+      <motion.path d={toCheck} fill="none" stroke={H.turquoise} strokeWidth="1.4" strokeDasharray="3 3" {...drawIn(2.2, 0.4)} />
+      <motion.path d={toLead} fill="none" stroke={H.turquoise} strokeWidth="1.4" strokeDasharray="3 3" {...drawIn(2.5, 0.3)} />
+      <Travel active={active} d={toCheck} delay={4.2} duration={0.8} period={6} color={H.turquoise} />
+      <motion.g {...pop(2.4)}>
+        <rect x="20" y="182" width="108" height="24" rx="12" fill={H.white} stroke={H.turquoise} strokeOpacity="0.45" filter="url(#fbShadow)" />
+        <motion.circle cx="33" cy="194" r="7" fill={H.turquoise} {...loop(active, { scale: [1, 1.12, 1] }, 6, 5)} style={center} />
+        <path d="M29.5 194 l2.5 2.5 l4.5 -5" fill="none" stroke={H.white} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+        <text x="45" y="192" fontSize="6.5" fontWeight="700" fill={H.lapisDeep}>Nitelikli başvuru</text>
+        <text x="45" y="200.5" fontSize="5.5" fill={H.lapisDeep} opacity="0.65">Satış ekibine iletildi</text>
+      </motion.g>
+      <motion.g {...pop(2.6)}>
+        <rect x="140" y="170" width="86" height="36" rx="9" fill={H.ivory} stroke={H.sand} />
+        <text x="148" y="182" fontSize="6" fontWeight="700" fill={H.lapisDeep}>Kontrol</text>
+        {[['Telefon doğru', 192], ['Hizmet uygun', 201]].map(([t, y], i) => <motion.g key={t as string} {...riseIn(2.8 + i * 0.15)}>
+          <circle cx="151" cy={(y as number) - 2} r="2.6" fill={H.turquoise} />
+          <text x="157" y={y as number} fontSize="5.5" fill={H.lapisDeep}>{t}</text>
+        </motion.g>)}
+      </motion.g>
+
+      <Rail active={active} steps={steps} />
+    </svg>
+  </>}</Frame>;
+}

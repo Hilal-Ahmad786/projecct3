@@ -1,4 +1,5 @@
 import metaAdsArticles from '../../content/blog/meta-ads/manifest.json';
+import facebookAdsArticles from '../../content/blog/facebook-ads/manifest.json';
 import { MetadataRoute } from 'next';
 import { localizeFullPath } from '@/lib/routes';
 import { hasServiceBlog } from '@/lib/service-blogs';
@@ -77,6 +78,7 @@ const CURATED_TR_SERVICES: { slug: string; date: string; pages: string[] }[] = [
   { slug: 'google-shopping', date: '2026-11-11', pages: ALL_SUBPAGES },
   { slug: 'performance-max', date: '2026-11-11', pages: ALL_SUBPAGES },
   { slug: 'meta-ads', date: '2026-11-12', pages: ALL_SUBPAGES },
+  { slug: 'facebook-ads', date: '2026-11-19', pages: ALL_SUBPAGES },
   { slug: 'custom-ecommerce', date: '2026-11-05', pages: ALL_SUBPAGES },
   { slug: 'marketplace-development', date: '2026-11-05', pages: ALL_SUBPAGES },
   { slug: 'shopify-development', date: '2026-11-03', pages: ALL_SUBPAGES },
@@ -227,6 +229,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: PRIORITY.blogPost,
       changeFreq: 'weekly',
       date: new Date(`${dateModified}T00:00:00Z`),
+      includeAlternates: false,
+    }));
+  });
+
+  // Facebook ads guides are repository-backed, like the Meta Ads guides.
+  facebookAdsArticles.forEach(({ slug, datePublished }) => {
+    entries.push(entry('tr', `/services/facebook-ads/blog/${slug}`, {
+      priority: PRIORITY.blogPost,
+      changeFreq: 'weekly',
+      date: new Date(`${datePublished}T00:00:00Z`),
       includeAlternates: false,
     }));
   });
