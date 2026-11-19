@@ -1,4 +1,4 @@
-import { ProcessScene } from '@/components/services/hero-visuals/scenes-internal';
+import { BudgetScene, CaseScene, GuidesScene, MeasureScene, QaScene, ScopeScene, TimelineScene } from '@/components/services/hero-visuals/scenes-subpages';
 import type { ReactNode } from 'react';
 import { ArrowDownIcon, ArrowRightIcon, CheckCircleIcon, MagnifyingGlassIcon, PhoneIcon } from '@heroicons/react/24/outline';
 import type { SectionVisual } from '@/components/e-commerce/ServiceMarkdownPage';
@@ -133,14 +133,16 @@ const visuals: SeoServiceConfig['visuals'] = {
     ['Telefon aramaları', aside(V.actions())],
     ['Konum, zamanlama', aside(V.targeting())],
     ['Düzenli optimizasyonda', aside(V.weekly())],
-  ],
+
+    ['Hangi arama reklamı biçimlerini', aside(V.rsa())],  ],
   technologies: [
     ['Hangi işlemleri dönüşüm', aside(V.actions())],
     ['Google Ads, GA4 ve GTM', aside(V.ga4())],
     ['Gelişmiş dönüşümler', aside(V.consent())],
     ['Satış ekibinin teklif', aside(V.offline())],
     ['İzin tercihleri ve etiketler', aside(V.gtm())],
-  ],
+
+    ['Telefon araması ve nitelikli', aside(V.tagFlow())],  ],
   process: [
     ['Arama Ağı kampanyası nasıl ilerler?', { place: 'below', node: V.rail() }],
     ['Yayından önce hangi koşulları', aside(V.consent())],
@@ -157,15 +159,18 @@ const visuals: SeoServiceConfig['visuals'] = {
     ['Tıklama maliyetini', aside(V.adrank())],
     ['Yönetim teklifini', aside(V.quote())],
     ['Tek seferlik kurulum', aside(V.scope())],
-  ],
+
+    ['Başlangıç bütçesini nasıl planlıyoruz', aside(V.budget())],  ],
 };
 
+// Sub-page heroes: animated story scenes in the overview standard (scenes-subpages.tsx).
 const heroArt: SeoServiceConfig['heroArt'] = {
-  features: () => V.rsa('w-full'),
-  technologies: () => V.tagFlow('w-full'),
-  process: () => <ProcessScene />,
-  portfolio: () => V.evidence('w-full'),
-  pricing: () => V.budget('w-full'),
+  features: () => <ScopeScene label={"Temsili Google Arama Ağı kapsamı: Anahtar kelime planı, Reklam metinleri, Negatif kelimeler, Açılış sayfası adım adım tamamlanıyor; iki seçenek sırayla karşılaştırılıyor ve sonraki adım belirleniyor."} title={"Arama kampanyası"} items={["Anahtar kelime planı", "Reklam metinleri", "Negatif kelimeler", "Açılış sayfası"]} test={["Başlık A", "Başlık B", "Metin testi"]} result={"Sonraki test"} steps={["Kelime", "Reklam", "Ölçüm", "Rapor"]} />,
+  technologies: () => <MeasureScene label={"Temsili Google Arama Ağı ölçüm akışı: Google etiketi ve Arama ve form verisi aynı rapora ulaşıyor; sonuç doğrulanıyor."} browser={["Google etiketi", "Teklif iste"]} server={["Arama ve form", "Dönüşüm işlemleri"]} report={"Dönüşüm raporu"} events={["Form gönderimi", "Telefon araması", "Teklif talebi"]} badge={"Tekrar sayılmadı"} consent={"İzin modu uygulanır"} steps={["Olay planı", "Kurulum", "Test", "Rapor"]} />,
+  process: () => <TimelineScene label={"Temsili Google Arama Ağı süreci: Hedef, Kelimeler, Reklamlar, Yayın, Rapor adımları sırayla ilerliyor; ilk dönem planı kontrol ediliyor."} milestones={["Hedef", "Kelimeler", "Reklamlar", "Yayın", "Rapor"]} plan={["İlk dönem planı", "Arama terimleri", "Negatif kelimeler", "Teklif ayarı"]} steps={["Hedef", "Hazırlık", "Yayın", "Değerlendirme"]} />,
+  portfolio: () => <CaseScene label={"Temsili Google Arama Ağı senaryosu: raporda gözlem, değişiklik ve kontrol noktaları işaretleniyor; başlangıçtan yaklaşıma geçiliyor."} title="Temsili senaryo" badge="Temsili" notes={["Gözlem", "Negatif kelime", "Kontrol"]} start={["Başlangıç", "Alakasız aramalar"]} approach={["Yaklaşım", "Eşleme düzeni"]} verdict={"Değerlendirme aynı dönemle yapılır"} steps={["Durum", "Kontrol", "Değişiklik", "Sonuç"]} />,
+  pricing: () => <BudgetScene label={"Google Arama Ağı maliyet kalemleri: Reklam planı, reklam bütçesi ve PakSoft teklifindeki ayrı kalemler olarak ikiye ayrılıyor."} plan={"Reklam planı"} spend={["Reklam bütçesi", "Google Ads hesabınız"]} quote="PakSoft teklifi" items={["Kurulum", "Aylık yönetim", "Sayfa önerisi"]} badge={"Kalemler ayrı yazılır"} steps={["Bütçe", "Kapsam", "Teklif", "Onay"]} />,
+  faq: () => <QaScene label={"Google Arama Ağı hakkında sık sorulan sorular: arama yapılıyor, ilk sorunun yanıtı açılıyor ve konular sırayla vurgulanıyor."} search={"Arama ağı reklamı"} questions={["Tıklama başına ne öderim?", "Hangi aramalarda görünürüm?", "Negatif kelime nedir?"]} answer={["Tıklama maliyeti açık artırmayla", "belirlenir; sabit bir ücret yoktur."]} topics={["Kelime", "Reklam", "Bütçe"]} steps={["Soru", "Yanıt", "Kapsam", "Teklif"]} />,
 };
 
 const config: SeoServiceConfig = {
@@ -245,6 +250,7 @@ const config: SeoServiceConfig = {
     'faq:Ölçüm ve başvurular': 'olcum-ve-basvurular',
   },
   portfolioBadge: 'Temsili örnek',
+  blogArt: () => <GuidesScene label={"Google Arama Ağı rehberleri: öndeki rehber okunuyor, diğer rehberler arkada sıralanıyor."} guides={["Arama ağı reklamı nasıl verilir?", "Arama terimleri raporu", "Negatif kelimeler"]} chip="Rehber" minutes={"Uygulamalı kontrol listesi"} steps={["Öğren", "Planla", "Uygula", "Ölç"]} />,
   blog: {
     id: 'arama-agi-rehberleri', title: 'Arama Ağı reklamları için pratik rehberler',
     text: 'Kampanya taslağı hazırlamaktan arama terimlerini değerlendirmeye kadar uygulanabilir adımları inceleyin.',

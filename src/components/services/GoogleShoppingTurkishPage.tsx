@@ -1,7 +1,7 @@
+import { BudgetScene, CaseScene, GuidesScene, MeasureScene, QaScene, ScopeScene, TimelineScene } from '@/components/services/hero-visuals/scenes-subpages';
 import type { ReactNode } from 'react';
 import { ShoppingBagIcon } from '@heroicons/react/24/outline';
 import type { SectionVisual } from '@/components/e-commerce/ServiceMarkdownPage';
-import { ProcessScene } from '@/components/services/hero-visuals/scenes-internal';
 import SeoArtwork from '@/components/seo/visuals/SeoArtwork';
 import type { SeoVisualName } from '@/components/seo/visuals/generated';
 import { createSeoService, type SeoMeta, type SeoPageKind, type SeoServiceConfig } from './seo-pages/SeoServiceEngine';
@@ -77,12 +77,14 @@ const visuals: SeoServiceConfig['visuals'] = {
     ['Google Merchant Center kurulumunda', aside(V.mcSetup())],
     ['Hangi ürünleri reklama', aside(V.groups())],
     ['Yayındaki kampanyada', aside(V.weekly())],
-  ],
+
+    ['Özel etiketlerle ürünleri nasıl', aside(V.merchant())],  ],
   technologies: [
     ['Fiyat veya stok farkı', aside(V.stockSync())],
     ['Google Ads, GA4 ve GTM', aside(V.ga4())],
     ['Test siparişinde', aside(V.orderTest())],
-  ],
+
+    ['Gönderim ve iade bilgileri', aside(V.feedFlow())],  ],
   process: [
     ['Google Alışveriş kampanyası hangi adımlarla', { place: 'below', node: V.rail() }],
     ['Yayın kararından önce', aside(V.launch())],
@@ -92,18 +94,22 @@ const visuals: SeoServiceConfig['visuals'] = {
   portfolio: [
     ['Üç Google Alışveriş reklam örneği', aside(V.diagnose())],
     ['İki ek temsili Alışveriş örneği', aside(V.gtin())],
-  ],
+
+    ['Bir Alışveriş sorununu hangi', aside(V.evidence())],  ],
   pricing: [
     ['Alışveriş reklam yönetim ücretini', aside(V.quote())],
-  ],
+
+    ['İlk reklam bütçesini nasıl', aside(V.budget())],  ],
 };
 
+// Sub-page heroes: animated story scenes in the overview standard (scenes-subpages.tsx).
 const heroArt: SeoServiceConfig['heroArt'] = {
-  features: () => V.merchant('w-full'),
-  technologies: () => V.feedFlow('w-full'),
-  process: () => <ProcessScene />,
-  portfolio: () => V.evidence('w-full'),
-  pricing: () => V.budget('w-full'),
+  features: () => <ScopeScene label={"Temsili Google Alışveriş kapsamı: Merchant Center, Ürün verisi, Ürün grupları, Satın alma ölçümü adım adım tamamlanıyor; iki seçenek sırayla karşılaştırılıyor ve sonraki adım belirleniyor."} title={"Alışveriş kampanyası"} items={["Merchant Center", "Ürün verisi", "Ürün grupları", "Satın alma ölçümü"]} test={["Başlık A", "Başlık B", "Ürün başlığı testi"]} result={"Sonraki test"} steps={["Feed", "Kampanya", "Ölçüm", "Rapor"]} />,
+  technologies: () => <MeasureScene label={"Temsili Google Alışveriş ölçüm akışı: Google etiketi ve Ürün verisi verisi aynı rapora ulaşıyor; sonuç doğrulanıyor."} browser={["Google etiketi", "Sepete ekle"]} server={["Ürün verisi", "Merchant Center"]} report={"Satış raporu"} events={["Satın alma", "Sepete ekleme", "Ürün görüntüleme"]} badge={"Değer doğru"} consent={"İzin modu uygulanır"} steps={["Olay planı", "Kurulum", "Test", "Rapor"]} />,
+  process: () => <TimelineScene label={"Temsili Google Alışveriş süreci: Hedef, Feed, Kampanya, Yayın, Rapor adımları sırayla ilerliyor; ilk dönem planı kontrol ediliyor."} milestones={["Hedef", "Feed", "Kampanya", "Yayın", "Rapor"]} plan={["İlk dönem planı", "Feed hataları", "Ürün grupları", "Satış ölçümü"]} steps={["Hedef", "Hazırlık", "Yayın", "Değerlendirme"]} />,
+  portfolio: () => <CaseScene label={"Temsili Google Alışveriş senaryosu: raporda gözlem, değişiklik ve kontrol noktaları işaretleniyor; başlangıçtan yaklaşıma geçiliyor."} title="Temsili senaryo" badge="Temsili" notes={["Gözlem", "Feed düzeltme", "Kontrol"]} start={["Başlangıç", "Onaysız ürünler"]} approach={["Yaklaşım", "Feed düzeni"]} verdict={"Değerlendirme aynı dönemle yapılır"} steps={["Durum", "Kontrol", "Değişiklik", "Sonuç"]} />,
+  pricing: () => <BudgetScene label={"Google Alışveriş maliyet kalemleri: Reklam planı, reklam bütçesi ve PakSoft teklifindeki ayrı kalemler olarak ikiye ayrılıyor."} plan={"Reklam planı"} spend={["Reklam bütçesi", "Google Ads hesabınız"]} quote="PakSoft teklifi" items={["Feed kurulumu", "Aylık yönetim", "Ölçüm işi"]} badge={"Kalemler ayrı yazılır"} steps={["Bütçe", "Kapsam", "Teklif", "Onay"]} />,
+  faq: () => <QaScene label={"Google Alışveriş hakkında sık sorulan sorular: arama yapılıyor, ilk sorunun yanıtı açılıyor ve konular sırayla vurgulanıyor."} search={"Merchant Center onayı"} questions={["Ürünlerim neden onaylanmıyor?", "Kaç ürünle başlamalıyım?", "Bütçe yönetim ücretine dahil mi?"]} answer={["Ürün verisi ve politika uyumu", "Merchant Center’da kontrol edilir."]} topics={["Ürün verisi", "Kampanya", "Bütçe"]} steps={["Soru", "Yanıt", "Kapsam", "Teklif"]} />,
 };
 
 const config: SeoServiceConfig = {
@@ -119,6 +125,7 @@ const config: SeoServiceConfig = {
  jumpLabels: [['Google Alışveriş reklam yönetiminde', 'Hizmet kapsamı'], ['Mağazanız Alışveriş reklamlarına', 'Mağaza uygunluğu'], ['Standart Alışveriş mi', 'Kampanya türleri'], ['Bir ürün reklamını', 'Ürün örneği'], ['Ücretsiz ürün listelemeleri', 'Ücretsiz listeleme ve reklam'], ['Bir Google Alışveriş reklam ajansından', 'Ajans kapsamı'], ['Mevcut kampanyaya', 'İlk inceleme'], ['Google Merchant Center kurulumunda', 'Merchant Center'], ['Merchant Center’da bir ürün', 'Ürün onayı'], ['Ürün veri kaynağı optimizasyonu', 'Ürün verisi'], ['Özel etiketlerle ürünleri', 'Özel etiketler'], ['Hangi ürünleri reklama', 'Ürün seçimi'], ['Standart Alışveriş’te öncelik', 'Öncelik ve negatif kelimeler'], ['Yayındaki kampanyada', 'Optimizasyon'], ['Google Alışveriş kampanyası hangi', 'Kampanya adımları'], ['Üç Google Alışveriş reklam örneği', 'Kampanya örnekleri'], ['İki ek temsili Alışveriş', 'Ek örnekler'], ['Bir Alışveriş sorununu', 'Teşhis sırası'], ['Reklam harcaması ve hizmet', 'Maliyet kalemleri'], ['Alışveriş reklam yönetim ücretini', 'Ücreti etkileyenler'], ['Ürün sayısı ve katalog durumu', 'Katalog kapsamı'], ['Tek seferlik ürün verisi', 'Düzeltme veya yönetim'], ['İlk reklam bütçesini', 'Başlangıç bütçesi'], ['Teklif istemek için', 'Gerekli bilgiler'], ['Fiyatlandırma hakkında', 'Kısa yanıtlar'], ['Başlangıç ve kampanya', 'Başlangıç ve kampanya'], ['Ürün verisi ve onay', 'Ürün verisi ve onay'], ['Sipariş ve yönetim', 'Sipariş ve yönetim'], ['Kampanya ve ürün ayarları', 'Kampanya ve ürün ayarları'], ['Mağaza kataloğu', 'Katalog aktarımı'], ['Varyantlar ürün verisinde', 'Varyant verisi'], ['Fiyat veya stok farkı', 'Fiyat ve stok farkı'], ['Gönderim ve iade bilgileri', 'Gönderim ve iade'], ['Google Ads, GA4 ve GTM', 'Satın alma ölçümü'], ['Test siparişinde', 'Test siparişi'], ['İlk görüşmede', 'İlk görüşme'], ['Yayın kararından', 'Yayın öncesi kontrol'], ['Haftalık ve aylık kontrolleri', 'Kontrol takvimi'], ['İndirim ve sezon dönemlerinde', 'İndirim ve sezon'], ['İlk raporda', 'İlk rapor'], ['Yapılan değişikliği', 'Değerlendirme verileri'], ['İnceleme için', 'Örneğinizi paylaşın']],
  sectionIds: { 'overview:Bir ürün reklamını nasıl kontrol ediyoruz?': 'alisveris-urun-ornegi', 'features:Ürün veri kaynağı optimizasyonu hangi alanları kapsar?': 'alisveris-urun-verisi', 'technologies:Mağaza kataloğu Merchant Center’a nasıl aktarılır?': 'alisveris-veri-akisi', 'process:Google Alışveriş kampanyası hangi adımlarla hazırlanır?': 'alisveris-kampanya-adimlari', 'portfolio:Üç Google Alışveriş reklam örneği': 'alisveris-kampanya-ornekleri', 'pricing:Reklam harcaması ve hizmet bedeli hangi işleri kapsar?': 'alisveris-maliyet-kalemleri', 'faq:Başlangıç ve kampanya': 'baslangic-ve-kampanya', 'faq:Ürün verisi ve onay': 'urun-verisi-ve-onay', 'faq:Sipariş ve yönetim': 'siparis-ve-yonetim' },
  portfolioBadge: 'Temsili örnek',
+  blogArt: () => <GuidesScene label={"Google Alışveriş rehberleri: öndeki rehber okunuyor, diğer rehberler arkada sıralanıyor."} guides={["Alışveriş reklamı nasıl verilir?", "Fiyat, stok ve varyant", "Ürün verisi kontrolü"]} chip="Rehber" minutes={"Uygulamalı kontrol listesi"} steps={["Öğren", "Planla", "Uygula", "Ölç"]} />,
  blog: { id: 'google-alisveris-rehberleri', title: 'Google Alışveriş reklamları için pratik rehberler', text: 'Kampanyaya hazırlık, Merchant Center ürün verisi ve sipariş kontrolleri için adım adım rehberleri inceleyin.', asideTitle: 'Mağazanız için ilk kontrolü planlayın', asideText: 'Öne çıkarmak istediğiniz kategoriyi ve varsa ürün verisi sorununu paylaşın.', guides: getGoogleShoppingGuides },
 };
 const service = createSeoService(config);

@@ -1,3 +1,4 @@
+import { BudgetScene, CaseScene, GuidesScene, MeasureScene, QaScene, ScopeScene, TimelineScene } from '@/components/services/hero-visuals/scenes-subpages';
 import type { ReactNode } from 'react';
 import { ShoppingBagIcon } from '@heroicons/react/24/outline';
 import IkasVisual from '@/components/ikas/visuals/IkasVisual';
@@ -74,33 +75,40 @@ const VISUALS: SeoServiceConfig['visuals'] = {
     ['Kategori sayfası ve ürün sayfası', aside(V.tree())],
     ['Filtre, varyant ve stok', aside(V.stockRules())],
     ['Ürün sayfasında açıklama', aside(EK.product())],
-  ],
+
+    ['E-ticaret SEO tekniklerinde ilk', aside(V.deliverables())],  ],
   technologies: [
     ['Örnek kontrol', aside(V.stockSync())],
     ['Satış ölçümü nasıl', aside(V.funnel())],
     ['Altyapı ayarları ve mobil', aside(EK.mobile())],
     ['Mağaza ayarını canlı sayfada', aside(EK.live())],
-  ],
+
+    ['Shopify, ikas ve WooCommerce', aside(V.tools())],  ],
   process: [
     ['E-ticaret SEO nasıl yapılır', { place: 'below', node: V.rail() }],
     ['Yayından sonra neyi', aside(V.report())],
     ['Kampanya ve sezon sayfaları', aside(EK.season())],
-  ],
+
+    ['İlk deneme için bir', aside(V.priority())],  ],
   portfolio: [
     ['Temsili örnek — Çok dilli', aside(EK.markets())],
-  ],
+
+    ['Mağazalarda karşılaşılan üç SEO', aside(V.scenarios())],  ],
   pricing: [
     ['Aylık e-ticaret SEO', aside(EK.monthly())],
     ['E-ticaret SEO paketleri', aside(<IkasVisual name="method-options" loop label="Üç çalışma türü: tek seferlik mağaza incelemesi, proje bazlı uygulama ve aylık e-ticaret SEO çalışması" slotLabels={{ 'slot-option-1': 'Tek seferlik inceleme', 'slot-option-2': 'Proje bazlı uygulama', 'slot-option-3': 'Aylık çalışma' }} className="mx-auto w-full max-w-xl" />)],
-  ],
+
+    ['Katalog büyüklüğü ve çeşitliliği', aside(V.quote())],  ],
 };
 
+// Sub-page heroes: animated story scenes in the overview standard (scenes-subpages.tsx).
 const HERO_ART: SeoServiceConfig['heroArt'] = {
-  features: () => V.deliverables('w-full'),
-  technologies: () => V.tools('w-full'),
-  process: () => V.priority('w-full'),
-  portfolio: () => V.scenarios('w-full'),
-  pricing: () => V.quote('w-full'),
+  features: () => <ScopeScene label={"Temsili E-ticaret SEO kapsamı: Kategori sayfaları, Ürün sayfaları, Filtre ve tekrarlar, Yapısal veri adım adım tamamlanıyor; iki seçenek sırayla karşılaştırılıyor ve sonraki adım belirleniyor."} title={"Mağaza SEO kapsamı"} items={["Kategori sayfaları", "Ürün sayfaları", "Filtre ve tekrarlar", "Yapısal veri"]} test={["Mevcut metin", "Yeni metin", "Kategori metni"]} result={"Sonraki kategori"} steps={["Analiz", "Kategori", "Ürün", "Rapor"]} />,
+  technologies: () => <MeasureScene label={"Temsili E-ticaret SEO ölçüm akışı: Ürün sayfası ve Search Console verisi aynı rapora ulaşıyor; sonuç doğrulanıyor."} browser={["Ürün sayfası", "Sayfayı tara"]} server={["Search Console", "İndeks durumu"]} report={"Mağaza SEO raporu"} events={["Kategori indekste", "Ürün indekste", "Zengin sonuç"]} badge={"Tekrar sayfa yok"} consent={"Analitik izni uygulanır"} steps={["Tarama", "İndeks", "Görünürlük", "Rapor"]} />,
+  process: () => <TimelineScene label={"Temsili E-ticaret SEO süreci: Analiz, Kategori, Ürün, Kontrol, Rapor adımları sırayla ilerliyor; ilk dönem planı kontrol ediliyor."} milestones={["Analiz", "Kategori", "Ürün", "Kontrol", "Rapor"]} plan={["İlk dönem planı", "Kategori yapısı", "Ürün şablonu", "Filtre kuralları"]} steps={["Analiz", "Plan", "Uygulama", "Ölçüm"]} />,
+  portfolio: () => <CaseScene label={"Temsili E-ticaret SEO senaryosu: raporda gözlem, değişiklik ve kontrol noktaları işaretleniyor; başlangıçtan yaklaşıma geçiliyor."} title="Temsili senaryo" badge="Temsili" notes={["Gözlem", "Kanonik düzeni", "Kontrol"]} start={["Başlangıç", "Çok filtre sayfası"]} approach={["Yaklaşım", "Kanonik ve sitemap"]} verdict={"Değerlendirme Search Console ile yapılır"} steps={["Durum", "Kontrol", "Değişiklik", "Sonuç"]} />,
+  pricing: () => <BudgetScene label={"E-ticaret SEO maliyet kalemleri: Mağaza SEO planı, geliştirme işi ve PakSoft teklifindeki ayrı kalemler olarak ikiye ayrılıyor."} plan={"Mağaza SEO planı"} spend={["Geliştirme işi", "Ayrı kalem"]} quote="PakSoft teklifi" items={["Kategori SEO", "Ürün şablonu", "Raporlama"]} badge={"Kapsam yazılı belirlenir"} steps={["Bütçe", "Kapsam", "Teklif", "Onay"]} />,
+  faq: () => <QaScene label={"E-ticaret SEO hakkında sık sorulan sorular: arama yapılıyor, ilk sorunun yanıtı açılıyor ve konular sırayla vurgulanıyor."} search={"Shopify SEO"} questions={["Hangi altyapılarda çalışıyorsunuz?", "Ürün açıklamalarını kim yazar?", "Filtre sayfaları sorun mu?"]} answer={["Shopify, ikas, WooCommerce ve özel", "altyapıda çalışabiliyoruz."]} topics={["Kategori", "Ürün", "Teknik"]} steps={["Soru", "Yanıt", "Kapsam", "Teklif"]} />,
 };
 
 const ROTATING: SeoServiceConfig['rotating'] = {
@@ -166,6 +174,7 @@ const service = createSeoService({
   jumpLabels: JUMP_LABELS,
   sectionIds: SECTION_IDS,
   portfolioBadge: 'Temsili senaryo',
+  blogArt: () => <GuidesScene label={"E-ticaret SEO rehberleri: öndeki rehber okunuyor, diğer rehberler arkada sıralanıyor."} guides={["Kategori sayfası SEO", "Ürün sayfası SEO", "Mağaza SEO kontrolü"]} chip="Rehber" minutes={"Örnek mağaza sayfalarıyla"} steps={["Öğren", "Planla", "Uygula", "Ölç"]} />,
   blog: { id: 'e-ticaret-seo-rehberleri', title: 'Kategori ve ürün sayfalarınızı aramalara göre düzenleyin', text: 'Kategori sayfası SEO’su ve ürün sayfası SEO’su için örnek mağaza sayfalarıyla hazırlanmış rehberler.', asideTitle: 'Rehberleri kendi mağazanıza uygulayalım', asideText: 'Mağaza adresinizi ve öncelikli bir kategori bağlantısını paylaşın.', guides: getEcommerceSeoGuides },
 });
 

@@ -1,3 +1,4 @@
+import { BudgetScene, CaseScene, GuidesScene, MeasureScene, QaScene, ScopeScene, TimelineScene } from '@/components/services/hero-visuals/scenes-subpages';
 import type { ReactNode } from 'react';
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import IkasVisual from '@/components/ikas/visuals/IkasVisual';
@@ -71,32 +72,39 @@ const VISUALS: Partial<Record<SeoContentPage, [string, SectionVisual][]>> = {
     ['Mağaza ve hizmet sitelerinde', aside(SEO.category())],
     ['Site içi SEO ile', aside(EK.onpage())],
     ['Yerel SEO ve Google İşletme', aside(EK.local())],
-  ],
+
+    ['İçerik ve bağlantı kazanımına', aside(SEO.deliverables())],  ],
   technologies: [
     ['Bir bulguyu nasıl doğrularız', aside(SEO.redirects())],
     ['Semrush, Ahrefs ve Search Console', aside(EK.sources())],
     ['SEO rakip analizi', aside(EK.competitor())],
     ['İlk inceleme için', aside(ikas('project-brief', 'Temsili inceleme hazırlığı: site adresi, öncelikli sayfalar, son değişiklikler ve veri erişimi'))],
-  ],
+
+    ['Bir rapor satırının kaynağını', aside(SEO.tools())],  ],
   process: [
     ['İlk görüşmeden performans takibine', { place: 'below', node: SEO.rail() }],
     ['Aylık SEO hizmetinde', aside(EK.monthly())],
-  ],
+
+    ['İlk çalışma döneminde hangi', aside(SEO.priority())],  ],
   portfolio: [
     ['Bir SEO örneğini değerlendirirken', aside(EK.evidence())],
-  ],
+
+    ['Üç farklı SEO senaryosu', aside(SEO.sites())],  ],
   pricing: [
     ['SEO hizmet sözleşmesinde', aside(EK.contract())],
     ['SEO paketlerini nasıl', aside(ikas('method-options', 'Üç çalışma türü: tek seferlik inceleme, proje bazlı uygulama ve aylık SEO çalışması', { 'slot-option-1': 'Tek seferlik inceleme', 'slot-option-2': 'Proje bazlı uygulama', 'slot-option-3': 'Aylık çalışma' }))],
-  ],
+
+    ['Aylık SEO fiyatları neye', aside(SEO.quote())],  ],
 };
 
+// Sub-page heroes: animated story scenes in the overview standard (scenes-subpages.tsx).
 const HERO_ART: SeoServiceConfig['heroArt'] = {
-  features: () => SEO.deliverables('w-full'),
-  technologies: () => SEO.tools('w-full'),
-  process: () => SEO.priority('w-full'),
-  portfolio: () => SEO.sites('w-full'),
-  pricing: () => SEO.quote('w-full'),
+  features: () => <ScopeScene label={"Temsili SEO kapsamı: Teknik inceleme, Kelime ve sayfa eşleşmesi, İç bağlantılar, Dönem raporu adım adım tamamlanıyor; iki seçenek sırayla karşılaştırılıyor ve sonraki adım belirleniyor."} title={"SEO kapsamı"} items={["Teknik inceleme", "Kelime ve sayfa eşleşmesi", "İç bağlantılar", "Dönem raporu"]} test={["Mevcut başlık", "Yeni başlık", "Başlık önerisi"]} result={"Sonraki sayfa"} steps={["Analiz", "Plan", "Uygulama", "Rapor"]} />,
+  technologies: () => <MeasureScene label={"Temsili SEO ölçüm akışı: Site sayfası ve Search Console verisi aynı rapora ulaşıyor; sonuç doğrulanıyor."} browser={["Site sayfası", "Sayfayı tara"]} server={["Search Console", "İndeks durumu"]} report={"SEO raporu"} events={["Tarandı", "İndekslendi", "Tıklama aldı"]} badge={"Veri doğrulandı"} consent={"Analitik izni uygulanır"} steps={["Tarama", "İndeks", "Görünürlük", "Rapor"]} />,
+  process: () => <TimelineScene label={"Temsili SEO süreci: Analiz, Öncelik, Uygulama, Kontrol, Rapor adımları sırayla ilerliyor; ilk dönem planı kontrol ediliyor."} milestones={["Analiz", "Öncelik", "Uygulama", "Kontrol", "Rapor"]} plan={["İlk dönem planı", "Teknik bulgular", "Öncelikli sayfalar", "İç bağlantılar"]} steps={["Analiz", "Plan", "Uygulama", "Ölçüm"]} />,
+  portfolio: () => <CaseScene label={"Temsili SEO senaryosu: raporda gözlem, değişiklik ve kontrol noktaları işaretleniyor; başlangıçtan yaklaşıma geçiliyor."} title="Temsili senaryo" badge="Temsili" notes={["Gözlem", "Sayfa düzeni", "Kontrol"]} start={["Başlangıç", "Tıklama oranı düşük"]} approach={["Yaklaşım", "Başlık ve içerik"]} verdict={"Değerlendirme Search Console ile yapılır"} steps={["Durum", "Kontrol", "Değişiklik", "Sonuç"]} />,
+  pricing: () => <BudgetScene label={"SEO maliyet kalemleri: SEO planı, ek işler ve PakSoft teklifindeki ayrı kalemler olarak ikiye ayrılıyor."} plan={"SEO planı"} spend={["Ek işler", "Ayrı kalem"]} quote="PakSoft teklifi" items={["Teknik inceleme", "İçerik planı", "Raporlama"]} badge={"Kapsam yazılı belirlenir"} steps={["Bütçe", "Kapsam", "Teklif", "Onay"]} />,
+  faq: () => <QaScene label={"SEO hakkında sık sorulan sorular: arama yapılıyor, ilk sorunun yanıtı açılıyor ve konular sırayla vurgulanıyor."} search={"SEO ne kadar sürer"} questions={["SEO sonuçları ne zaman görülür?", "İlk sıra garantisi var mı?", "İçerikleri kim yazar?"]} answer={["Süre rekabete ve sitenin durumuna göre", "değişir; kesin tarih verilmez."]} topics={["Teknik", "İçerik", "Rapor"]} steps={["Soru", "Yanıt", "Kapsam", "Teklif"]} />,
 };
 
 const ROTATING: SeoServiceConfig['rotating'] = {
@@ -162,6 +170,7 @@ const seo = createSeoService({
   jumpLabels: JUMP_LABELS,
   sectionIds: SECTION_IDS,
   portfolioBadge: 'Temsili senaryo',
+  blogArt: () => <GuidesScene label={"SEO rehberleri: öndeki rehber okunuyor, diğer rehberler arkada sıralanıyor."} guides={["SEO nedir?", "SEO ajansı nasıl seçilir?", "Teklif değerlendirme"]} chip="Rehber" minutes={"Uygulamalı kontrol listesi"} steps={["Öğren", "Planla", "Uygula", "Ölç"]} />,
   blog: { id: 'seo-rehberleri', title: 'SEO çalışmasına nereden başlayacağınızı belirleyin', text: 'SEO’nun temel çalışma biçimini ve ajans tekliflerini değerlendirme yöntemlerini anlatan rehberler.', asideTitle: 'Rehberleri kendi sitenize uygulayalım', asideText: 'Site adresinizi ve öne çıkarmak istediğiniz bir sayfayı paylaşın.', guides: getSeoGuides },
 });
 

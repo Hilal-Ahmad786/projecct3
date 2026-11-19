@@ -1,4 +1,4 @@
-import { ProcessScene } from '@/components/services/hero-visuals/scenes-internal';
+import { BudgetScene, CaseScene, GuidesScene, MeasureScene, QaScene, ScopeScene, TimelineScene } from '@/components/services/hero-visuals/scenes-subpages';
 import type { ReactNode } from 'react';
 import { CursorArrowRaysIcon } from '@heroicons/react/24/outline';
 import type { SectionVisual } from '@/components/e-commerce/ServiceMarkdownPage';
@@ -64,14 +64,16 @@ const visuals: SeoServiceConfig['visuals'] = {
     ['Arama terimlerini nasıl kontrol', aside(V.terms())],
     ['Dönüşüm takibinde hangi eylemleri', aside(V.actions())],
     ['Arama reklamında hangi öğeler', aside(V.rsa())],
-  ],
+
+    ['Hesap kurulumu ve kampanya', aside(V.account())],  ],
   technologies: [
     ['Google Ads ve GA4 dönüşümlerini', aside(V.ga4())],
     ['GTM ile ölçümü', aside(V.gtm())],
     ['İzin tercihleri ve gelişmiş dönüşümler', aside(V.consent())],
     ['Alışveriş ve Performance Max', aside(V.feed())],
     ['Satış ekibindeki sonuçlar reklama', aside(V.offline())],
-  ],
+
+    ['İlk inceleme için hangi', aside(V.tagFlow())],  ],
   process: [
     ['Google Ads çalışmasının beş adımı', { place: 'below', node: V.rail() }],
     ['Teklif stratejisini neye göre', aside(V.bidding())],
@@ -81,20 +83,24 @@ const visuals: SeoServiceConfig['visuals'] = {
   portfolio: [
     ['İki temsili e-ticaret kampanyası', aside(V.merchant())],
     ['Bir kampanya çalışmasını değerlendirirken', aside(V.report())],
-  ],
+
+    ['Üç temsili Google Ads', aside(V.evidence())],  ],
   pricing: [
     ['Tıklama maliyeti neden değişir', aside(V.adrank())],
     ['Google Ads yönetim ücretini', aside(V.quote())],
     ['Hangi çalışma kapsamı', aside(<IkasVisual name="method-options" loop label="Üç çalışma kapsamı: hesap incelemesi ve danışmanlık, kurulum ve ilk yönetim dönemi, aylık Google Ads yönetimi" slotLabels={{ 'slot-option-1': 'Hesap incelemesi', 'slot-option-2': 'Kurulum ve başlangıç', 'slot-option-3': 'Aylık yönetim' }} className="mx-auto w-full max-w-xl" />)],
     ['Kampanya türü teklif kapsamını', aside(V.scope())],
-  ],
+
+    ['Teklifleri karşılaştırırken neleri sorun', aside(V.budget())],  ],
 };
+// Sub-page heroes: animated story scenes in the overview standard (scenes-subpages.tsx).
 const heroArt: SeoServiceConfig['heroArt'] = {
-  features: () => V.account('w-full'),
-  technologies: () => V.tagFlow('w-full'),
-  process: () => <ProcessScene />,
-  portfolio: () => V.evidence('w-full'),
-  pricing: () => V.budget('w-full'),
+  features: () => <ScopeScene label={"Temsili Google Ads kapsamı: Hesap yapısı, Kampanya planı, Dönüşüm ölçümü, Dönem raporu adım adım tamamlanıyor; iki seçenek sırayla karşılaştırılıyor ve sonraki adım belirleniyor."} title={"Yönetim kapsamı"} items={["Hesap yapısı", "Kampanya planı", "Dönüşüm ölçümü", "Dönem raporu"]} test={["Reklam A", "Reklam B", "Reklam testi"]} result={"Sonraki test"} steps={["Hedef", "Kampanya", "Ölçüm", "Rapor"]} />,
+  technologies: () => <MeasureScene label={"Temsili Google Ads ölçüm akışı: Google etiketi ve GA4 ve CRM verisi aynı rapora ulaşıyor; sonuç doğrulanıyor."} browser={["Google etiketi", "Formu gönder"]} server={["GA4 ve CRM", "Çevrimdışı dönüşüm"]} report={"Dönüşüm raporu"} events={["Form gönderimi", "Arama", "Satın alma"]} badge={"Tekrar sayılmadı"} consent={"İzin modu uygulanır"} steps={["Olay planı", "Kurulum", "Test", "Rapor"]} />,
+  process: () => <TimelineScene label={"Temsili Google Ads süreci: Hedef, Hesap, Kampanya, Yayın, Rapor adımları sırayla ilerliyor; ilk dönem planı kontrol ediliyor."} milestones={["Hedef", "Hesap", "Kampanya", "Yayın", "Rapor"]} plan={["İlk dönem planı", "Dönüşüm kontrolü", "Kampanya yapısı", "Arama terimleri"]} steps={["Hedef", "Hazırlık", "Yayın", "Değerlendirme"]} />,
+  portfolio: () => <CaseScene label={"Temsili Google Ads senaryosu: raporda gözlem, değişiklik ve kontrol noktaları işaretleniyor; başlangıçtan yaklaşıma geçiliyor."} title="Temsili senaryo" badge="Temsili" notes={["Gözlem", "Negatif kelime", "Kontrol"]} start={["Başlangıç", "Form gelmiyor"]} approach={["Yaklaşım", "Dönüşüm testi"]} verdict={"Değerlendirme aynı dönemle yapılır"} steps={["Durum", "Kontrol", "Değişiklik", "Sonuç"]} />,
+  pricing: () => <BudgetScene label={"Google Ads maliyet kalemleri: Reklam planı, reklam bütçesi ve PakSoft teklifindeki ayrı kalemler olarak ikiye ayrılıyor."} plan={"Reklam planı"} spend={["Reklam bütçesi", "Google Ads hesabınız"]} quote="PakSoft teklifi" items={["Kurulum", "Aylık yönetim", "Ölçüm işi"]} badge={"Kalemler ayrı yazılır"} steps={["Bütçe", "Kapsam", "Teklif", "Onay"]} />,
+  faq: () => <QaScene label={"Google Ads hakkında sık sorulan sorular: arama yapılıyor, ilk sorunun yanıtı açılıyor ve konular sırayla vurgulanıyor."} search={"Google Ads bütçesi"} questions={["Bütçe yönetim ücretine dahil mi?", "Mevcut hesabımla çalışılır mı?", "Sonuçları ne zaman değerlendiririz?"]} answer={["Hayır. Reklam bütçesi Google’a ödenir,", "yönetim bedeli ayrı yazılır."]} topics={["Kampanya", "Ölçüm", "Bütçe"]} steps={["Soru", "Yanıt", "Kapsam", "Teklif"]} />,
 };
 const config: SeoServiceConfig = {
   platform: 'google-ads', contentDir: 'content/google-ads/tr', base: GOOGLE_ADS_TR_BASE, enquiry: GOOGLE_ADS_TR_ENQUIRY,
@@ -138,6 +144,7 @@ const config: SeoServiceConfig = {
   },
   portfolioBadge: 'Temsili senaryo',
   blog: { id: 'google-ads-rehberleri', title: 'Google Ads bütçesi ve kampanyaları için rehberler', text: 'Kampanya harcamasını planlama ve tıklama alan ancak dönüşüm getirmeyen reklamları inceleme üzerine iki pratik rehber.', asideTitle: 'Kampanyanız için uygun başlangıcı belirleyin', asideText: 'Öncelikli hizmetinizi, hedef bölgenizi ve varsa mevcut hesabınızı paylaşın.', guides: getGoogleAdsGuides },
+  blogArt: () => <GuidesScene label={"Google Ads rehberleri: öndeki rehber okunuyor, diğer rehberler arkada sıralanıyor."} guides={["Google Ads bütçesi", "Tıklama var, dönüşüm yok", "Kampanya ve ölçüm"]} chip="Rehber" minutes={"Uygulamalı kontrol listesi"} steps={["Öğren", "Planla", "Uygula", "Ölç"]} />,
 };
 
 const googleAds = createSeoService(config);
