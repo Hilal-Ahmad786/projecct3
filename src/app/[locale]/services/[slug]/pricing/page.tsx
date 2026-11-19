@@ -1,4 +1,5 @@
 import { FacebookAdsTurkishPage, getFacebookAdsMeta, getFacebookAdsSocialMeta } from '@/components/services/FacebookAdsTurkishPage';
+import { getEngine } from '@/components/services/engine-registry';
 import { MetaAdsTurkishPage, getMetaAdsMeta, getMetaAdsSocialMeta } from '@/components/services/MetaAdsTurkishPage';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
@@ -45,7 +46,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const path = `/services/${slug}/pricing`;
   const localizedPath = localizeFullPath(path, validLocale);
-  const customMeta = slug === 'facebook-ads' && validLocale === 'tr' ? getFacebookAdsMeta('pricing') : slug === 'meta-ads' && validLocale === 'tr' ? getMetaAdsMeta('pricing') : slug === 'performance-max' && validLocale === 'tr' ? getPerformanceMaxMeta('pricing') : slug === 'google-shopping' && validLocale === 'tr' ? getGoogleShoppingMeta('pricing') : slug === 'google-search-ads' && validLocale === 'tr' ? getGoogleSearchAdsMeta('pricing') : slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsMeta('pricing') : slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoMeta('pricing') : slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('pricing') : slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('pricing') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('pricing') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('pricing')
+  const engineSvc = getEngine(slug, validLocale);
+  const engineOn = !!engineSvc;
+  const customMeta = engineOn ? engineSvc!.getMeta('pricing') : slug === 'facebook-ads' && validLocale === 'tr' ? getFacebookAdsMeta('pricing') : slug === 'meta-ads' && validLocale === 'tr' ? getMetaAdsMeta('pricing') : slug === 'performance-max' && validLocale === 'tr' ? getPerformanceMaxMeta('pricing') : slug === 'google-shopping' && validLocale === 'tr' ? getGoogleShoppingMeta('pricing') : slug === 'google-search-ads' && validLocale === 'tr' ? getGoogleSearchAdsMeta('pricing') : slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsMeta('pricing') : slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoMeta('pricing') : slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('pricing') : slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('pricing') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('pricing') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('pricing')
     : slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('pricing', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('pricing')
@@ -57,11 +60,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title,
     description,
-    robots: (slug === 'facebook-ads' || slug === 'google-search-ads' || slug === 'google-shopping' || slug === 'performance-max') && validLocale === 'tr' ? { index: true, follow: true } : serviceRobots(data.service),
+    robots: engineOn ? { index: true, follow: true } : (slug === 'facebook-ads' || slug === 'google-search-ads' || slug === 'google-shopping' || slug === 'performance-max') && validLocale === 'tr' ? { index: true, follow: true } : serviceRobots(data.service),
     ...(slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishSocialMeta('pricing', canonicalUrl) : {}),
     ...(slug === 'seo' && validLocale === 'tr' ? getSeoTurkishSocialMeta('pricing', canonicalUrl) : {}),
     ...(slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoSocialMeta('pricing', canonicalUrl) : {}),
     ...(slug === 'performance-max' && validLocale === 'tr' ? getPerformanceMaxSocialMeta('pricing', canonicalUrl) : {}),
+    ...(engineOn ? engineSvc!.getSocialMeta('pricing', canonicalUrl) : {}),
     ...(slug === 'facebook-ads' && validLocale === 'tr' ? getFacebookAdsSocialMeta('pricing', canonicalUrl) : {}),
     ...(slug === 'meta-ads' && validLocale === 'tr' ? getMetaAdsSocialMeta('pricing', canonicalUrl) : {}),
     ...(slug === 'google-shopping' && validLocale === 'tr' ? getGoogleShoppingSocialMeta('pricing', canonicalUrl) : {}),
@@ -99,6 +103,7 @@ export default async function ServicePricingPage({ params }: PageProps) {
   if (slug === 'ecommerce-seo' && locale === 'tr') return <EcommerceSeoTurkishPage page="pricing" />;
 
   if (slug === 'performance-max' && locale === 'tr') return <PerformanceMaxTurkishPage page="pricing" />;
+  { const eng = getEngine(slug, locale); if (eng) return <eng.Page page="pricing" />; }
   if (slug === 'facebook-ads' && locale === 'tr') return <FacebookAdsTurkishPage page="pricing" />;
   if (slug === 'meta-ads' && locale === 'tr') return <MetaAdsTurkishPage page="pricing" />;
   if (slug === 'google-shopping' && locale === 'tr') return <GoogleShoppingTurkishPage page="pricing" />;

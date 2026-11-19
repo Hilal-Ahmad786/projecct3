@@ -7,7 +7,7 @@ import { FAQJsonLd } from '@/components/seo/JsonLd';
 import { trTitleCase } from '@/lib/tr-title-case';
 import { BlogFeedScene, FaqScene } from '@/components/services/hero-visuals/scenes-internal';
 import CustomEcommerceMotionScope from '@/components/e-commerce/CustomEcommerceMotionScope';
-import PlatformPageLinks, { type Platform } from '@/components/e-commerce/PlatformPageLinks';
+import PlatformPageLinks, { type EngineLinks, type Platform } from '@/components/e-commerce/PlatformPageLinks';
 import { sectionId } from '@/components/e-commerce/PageJumpNav';
 import { ServiceMdBody, matchPrefix, readServiceChunks, serviceFaqItems, type Chunk, type SectionVisual, type ServiceMdConfig } from '@/components/e-commerce/ServiceMarkdownPage';
 
@@ -23,7 +23,7 @@ export type SeoMeta = { title: string; description: string; heading: string; int
 type Guide = { slug: string; title: string; categoryLabel: string; excerpt: string; featuredImage: string; imageAlt?: string; datePublished?: string | null; readingMinutes?: number };
 
 export interface SeoServiceConfig {
-  platform: Extract<Platform, 'seo' | 'ecommerce-seo' | 'technical-seo' | 'google-ads' | 'google-search-ads' | 'google-shopping' | 'performance-max' | 'meta-ads' | 'facebook-ads'>;
+  platform: Extract<Platform, 'seo' | 'ecommerce-seo' | 'technical-seo' | 'google-ads' | 'google-search-ads' | 'google-shopping' | 'performance-max' | 'meta-ads' | 'facebook-ads' | 'engine'>;
   contentDir: string;
   base: string;
   enquiry: string;
@@ -48,6 +48,8 @@ export interface SeoServiceConfig {
   portfolioBadgeFor?: (title: string) => string | undefined;
   structuredFaq?: boolean;
   blog: { id: string; title: string; text: string; asideTitle: string; asideText: string; guides: () => Guide[] };
+  /** Generic services: link-card data for the footer (name, related services, blog on/off). */
+  links?: EngineLinks;
   /** Optional hero scene for the blog listing (defaults to the shared BlogFeedScene). */
   blogArt?: () => ReactNode;
 }
@@ -109,7 +111,7 @@ export function createSeoService(cfg: SeoServiceConfig) {
     jumpLabel: (title) => matchPrefix(cfg.jumpLabels, title) ?? title.replace(/[?:].*$/, ''),
     jumpMark: <Icon className="h-3.5 w-3.5 text-heritage-turquoise-deep" />,
     sectionId: (page, title) => cfg.sectionIds[`${page}:${title}`],
-    footer: (page, tone) => <><PlatformPageLinks platform={cfg.platform} current={page} tone={tone} title={cfg.platform === 'meta-ads' || cfg.platform === 'facebook-ads' ? 'Hizmetin ayrıntılarını inceleyin' : undefined} /><ClosingCta page={page} closing={closing} /></>,
+    footer: (page, tone) => <><PlatformPageLinks platform={cfg.platform} current={page} tone={tone} custom={cfg.links} title={cfg.platform === 'meta-ads' || cfg.platform === 'facebook-ads' || cfg.platform === 'engine' ? 'Hizmetin ayrıntılarını inceleyin' : undefined} /><ClosingCta page={page} closing={closing} /></>,
   });
 
   const iconChip = <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-black/5"><Icon className="h-5 w-5 text-heritage-turquoise-deep" aria-hidden="true" /></span>;

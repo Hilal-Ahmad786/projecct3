@@ -1,4 +1,5 @@
 import { FacebookAdsTurkishPage, getFacebookAdsMeta, getFacebookAdsSocialMeta } from '@/components/services/FacebookAdsTurkishPage';
+import { getEngine } from '@/components/services/engine-registry';
 import { MetaAdsTurkishPage, getMetaAdsMeta, getMetaAdsSocialMeta } from '@/components/services/MetaAdsTurkishPage';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
@@ -44,7 +45,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const path = `/services/${slug}/portfolio`;
   const localizedPath = localizeFullPath(path, validLocale);
 
-  const customMeta = slug === 'facebook-ads' && validLocale === 'tr' ? getFacebookAdsMeta('portfolio') : slug === 'meta-ads' && validLocale === 'tr' ? getMetaAdsMeta('portfolio') : slug === 'performance-max' && validLocale === 'tr' ? getPerformanceMaxMeta('portfolio') : slug === 'google-shopping' && validLocale === 'tr' ? getGoogleShoppingMeta('portfolio') : slug === 'google-search-ads' && validLocale === 'tr' ? getGoogleSearchAdsMeta('portfolio') : slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsMeta('portfolio') : slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoMeta('portfolio') : slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('portfolio') : slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('portfolio') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('portfolio') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('portfolio')
+  const engineSvc = getEngine(slug, validLocale);
+  const engineOn = !!engineSvc;
+  const customMeta = engineOn ? engineSvc!.getMeta('portfolio') : slug === 'facebook-ads' && validLocale === 'tr' ? getFacebookAdsMeta('portfolio') : slug === 'meta-ads' && validLocale === 'tr' ? getMetaAdsMeta('portfolio') : slug === 'performance-max' && validLocale === 'tr' ? getPerformanceMaxMeta('portfolio') : slug === 'google-shopping' && validLocale === 'tr' ? getGoogleShoppingMeta('portfolio') : slug === 'google-search-ads' && validLocale === 'tr' ? getGoogleSearchAdsMeta('portfolio') : slug === 'google-ads' && validLocale === 'tr' ? getGoogleAdsMeta('portfolio') : slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoMeta('portfolio') : slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishMeta('portfolio') : slug === 'seo' && validLocale === 'tr' ? getSeoTurkishMeta('portfolio') : slug === 'marketplace-development' && validLocale === 'tr' ? getMarketplaceMeta('portfolio') : slug === 'custom-ecommerce' && validLocale === 'tr' ? getCustomEcommerceMeta('portfolio')
     : slug === 'corporate-website-design' && (validLocale === 'tr' || validLocale === 'en')
     ? getCorporateWebsiteSubpageMeta('portfolio', validLocale)
     : slug === 'e-commerce' && validLocale === 'tr' ? getEcommerceTurkishMeta('portfolio')
@@ -57,11 +60,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title,
     description,
-    robots: (slug === 'facebook-ads' || slug === 'google-search-ads' || slug === 'google-shopping' || slug === 'performance-max') && validLocale === 'tr' ? { index: true, follow: true } : serviceRobots(service),
+    robots: engineOn ? { index: true, follow: true } : (slug === 'facebook-ads' || slug === 'google-search-ads' || slug === 'google-shopping' || slug === 'performance-max') && validLocale === 'tr' ? { index: true, follow: true } : serviceRobots(service),
     ...(slug === 'ecommerce-seo' && validLocale === 'tr' ? getEcommerceSeoTurkishSocialMeta('portfolio', canonicalUrl) : {}),
     ...(slug === 'seo' && validLocale === 'tr' ? getSeoTurkishSocialMeta('portfolio', canonicalUrl) : {}),
     ...(slug === 'technical-seo' && validLocale === 'tr' ? getTechnicalSeoSocialMeta('portfolio', canonicalUrl) : {}),
     ...(slug === 'performance-max' && validLocale === 'tr' ? getPerformanceMaxSocialMeta('portfolio', canonicalUrl) : {}),
+    ...(engineOn ? engineSvc!.getSocialMeta('portfolio', canonicalUrl) : {}),
     ...(slug === 'facebook-ads' && validLocale === 'tr' ? getFacebookAdsSocialMeta('portfolio', canonicalUrl) : {}),
     ...(slug === 'meta-ads' && validLocale === 'tr' ? getMetaAdsSocialMeta('portfolio', canonicalUrl) : {}),
     ...(slug === 'google-shopping' && validLocale === 'tr' ? getGoogleShoppingSocialMeta('portfolio', canonicalUrl) : {}),
@@ -116,6 +120,7 @@ export default async function ServicePortfolioPage({ params }: PageProps) {
   if (slug === 'ecommerce-seo' && locale === 'tr') return <EcommerceSeoTurkishPage page="portfolio" />;
 
   if (slug === 'performance-max' && locale === 'tr') return <PerformanceMaxTurkishPage page="portfolio" />;
+  { const eng = getEngine(slug, locale); if (eng) return <eng.Page page="portfolio" />; }
   if (slug === 'facebook-ads' && locale === 'tr') return <FacebookAdsTurkishPage page="portfolio" />;
   if (slug === 'meta-ads' && locale === 'tr') return <MetaAdsTurkishPage page="portfolio" />;
   if (slug === 'google-shopping' && locale === 'tr') return <GoogleShoppingTurkishPage page="portfolio" />;

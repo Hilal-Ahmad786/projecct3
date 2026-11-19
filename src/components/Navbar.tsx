@@ -1,4 +1,5 @@
 'use client';
+import { engineHasBlog, isEngineSlug } from '@/lib/engine-services';
 
 import Link from '@/components/IntentLink';
 import { servicesByCategory, type ServiceEntry } from '@/data/serviceHierarchy';
@@ -989,7 +990,7 @@ export default function Navbar() {
     { label: t('serviceNav.process'),      href: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/process`, locale)}` },
     { label: t('serviceNav.portfolio'),    href: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/portfolio`, locale)}` },
     { label: t('serviceNav.pricing'),      href: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/pricing`, locale)}` },
-    { label: t('serviceNav.blog'),         href: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/blog`, locale)}` },
+    ...(locale === 'tr' && currentServiceSlug && isEngineSlug(currentServiceSlug) && !engineHasBlog(currentServiceSlug) ? [] : [{ label: t('serviceNav.blog'),         href: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/blog`, locale)}` }]),
     { label: t('serviceNav.faq'),          href: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/faq`, locale)}` },
   ];
 

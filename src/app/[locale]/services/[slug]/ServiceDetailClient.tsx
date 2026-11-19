@@ -33,6 +33,7 @@ import CorporateWebsiteOverview from '@/components/services/CorporateWebsiteOver
 import EcommercePlatformStrip from '@/components/e-commerce/EcommercePlatformStrip';
 import { IKAS_TR_HERO } from '@/components/ikas/ikasTurkishCopy';
 import RotatingHeading from '@/components/services/RotatingHeading';
+import type { EngineHero } from '@/components/services/engine-registry';
 import { CustomEcommerceIcon } from '@/components/e-commerce/CustomEcommerceIcon';
 import { ShopifyIcon, ShopifyPlatformNote } from '@/components/e-commerce/ShopifyMark';
 import { IkasPlatformNote } from '@/components/ikas/IkasMark';
@@ -198,7 +199,9 @@ export default function ServiceDetailClient({
   hideHero = false,
   showSections,
   heroArt,
+  engineHero,
 }: {
+  engineHero?: EngineHero;
   service: ServiceDetailData;
   hideHero?: boolean;
   showSections?: SectionKey[];
@@ -207,7 +210,7 @@ export default function ServiceDetailClient({
 }) {
   const { t, locale } = useTranslations();
   // The Turkish Facebook Ads row is stored as blue; keep it on the turquoise accent the other ad pages use.
-  const accent: AccentColor = service.slug === 'facebook-ads' && locale === 'tr' ? 'emerald' : colorMap[service.color || ''] || 'emerald';
+  const accent: AccentColor = (service.slug === 'facebook-ads' || !!engineHero) && locale === 'tr' ? 'emerald' : colorMap[service.color || ''] || 'emerald';
   const colors = accentColors[accent];
 
   // Remarketing: record service-page views (GA4 view_item + FB ViewContent).
@@ -268,8 +271,8 @@ export default function ServiceDetailClient({
   // The Turkish Shopify overview has its own server-rendered section body.
   // Keep only the shared animated hero here to avoid generic sections and
   // the generic statistics strip appearing ahead of that curated content.
-  if ((service.slug === 'shopify-development' || service.slug === 'custom-ecommerce' || service.slug === 'marketplace-development' || service.slug === 'ecommerce-seo' || service.slug === 'technical-seo' || service.slug === 'google-ads' || service.slug === 'google-search-ads' || service.slug === 'google-shopping' || service.slug === 'performance-max' || service.slug === 'meta-ads' || service.slug === 'facebook-ads') && locale === 'tr') {
-    return <div id="overview"><HeroSection service={service} colors={colors} accent={accent} process={process} animation={animation} heroArt={heroArt} /></div>;
+  if ((service.slug === 'shopify-development' || service.slug === 'custom-ecommerce' || service.slug === 'marketplace-development' || service.slug === 'ecommerce-seo' || service.slug === 'technical-seo' || service.slug === 'google-ads' || service.slug === 'google-search-ads' || service.slug === 'google-shopping' || service.slug === 'performance-max' || service.slug === 'meta-ads' || service.slug === 'facebook-ads' || !!engineHero) && locale === 'tr') {
+    return <div id="overview"><HeroSection engineHero={engineHero} service={service} colors={colors} accent={accent} process={process} animation={animation} heroArt={heroArt} /></div>;
   }
 
   if (service.slug === 'corporate-website-design' && (locale === 'tr' || locale === 'en')) {
@@ -305,7 +308,7 @@ export default function ServiceDetailClient({
       {/* ── 1. Hero ──────────────────────────────────────────────────── */}
       {show('hero') && !hideHero && (
         <div id="overview">
-          <HeroSection service={service} colors={colors} accent={accent} process={process} animation={animation} />
+          <HeroSection engineHero={engineHero} service={service} colors={colors} accent={accent} process={process} animation={animation} />
         </div>
       )}
 
@@ -658,7 +661,9 @@ function HeroSection({
   process,
   animation,
   heroArt,
+  engineHero,
 }: {
+  engineHero?: EngineHero;
   service: ServiceDetailData;
   colors: typeof accentColors[AccentColor];
   accent: AccentColor;
@@ -682,7 +687,7 @@ function HeroSection({
   const isGoogleSearchAdsTr = service.slug === 'google-search-ads' && locale === 'tr';
   const isGoogleShoppingTr = service.slug === 'google-shopping' && locale === 'tr';
   const isMetaAdsTr = service.slug === 'meta-ads' && locale === 'tr';
-  const isFacebookAdsTr = service.slug === 'facebook-ads' && locale === 'tr';
+  const isFacebookAdsTr = (service.slug === 'facebook-ads' || !!engineHero) && locale === 'tr';
   const isPerformanceMaxTr = service.slug === 'performance-max' && locale === 'tr';
   // Curated hero art can stand in for a missing DB hero animation.
   const artOnly = !hasAnimation && (service.slug === 'corporate-website-design' || isCustomEcomTr || isMarketTr || isSeoTr || isEcommerceSeoTr || isTechnicalSeoTr || isGoogleAdsTr || isGoogleSearchAdsTr || isGoogleShoppingTr || isMetaAdsTr || isFacebookAdsTr || isPerformanceMaxTr) && !!heroArt;
@@ -764,7 +769,7 @@ function HeroSection({
               {isFacebookAdsTr && <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-black/5"><ChatBubbleLeftRightIcon className="h-5 w-5 text-heritage-turquoise-deep" aria-hidden="true" /></span>}
               {/* ikas writes its name in lowercase; CSS uppercase would render "İKAS". */}
               <span className={`text-xs font-medium ${colors.eyebrow} ${isIkasTr ? '' : 'uppercase'} tracking-wide`}>
-                {isIkasTr ? IKAS_TR_HERO.eyebrow : isShopifyTr ? 'Shopify Kurulum ve Geliştirme Hizmetleri' : isCustomEcomTr ? 'Özel E-Ticaret Geliştirme' : isMarketTr ? 'Pazaryeri Geliştirme' : isEcommerceSeoTr ? 'E-Ticaret SEO Hizmeti ve Danışmanlığı' : isTechnicalSeoTr ? 'Teknik SEO ve SEO Denetimi' : isGoogleShoppingTr ? 'E-ticaret ürün reklamları ve katalog yönetimi' : isGoogleSearchAdsTr ? 'Arama kampanyası kurulumu ve yönetimi' : isPerformanceMaxTr ? 'Maksimum Performans kampanya yönetimi' : isGoogleAdsTr ? 'Google Ads Kampanya Yönetimi' : isMetaAdsTr ? 'Facebook ve Instagram Reklam Yönetimi' : isFacebookAdsTr ? 'Facebook Reklam Kampanya Yönetimi' : isSeoTr ? 'SEO Hizmeti ve Danışmanlığı' : t('services.detail.hero.eyebrow')}
+                {isIkasTr ? IKAS_TR_HERO.eyebrow : isShopifyTr ? 'Shopify Kurulum ve Geliştirme Hizmetleri' : isCustomEcomTr ? 'Özel E-Ticaret Geliştirme' : isMarketTr ? 'Pazaryeri Geliştirme' : isEcommerceSeoTr ? 'E-Ticaret SEO Hizmeti ve Danışmanlığı' : isTechnicalSeoTr ? 'Teknik SEO ve SEO Denetimi' : isGoogleShoppingTr ? 'E-ticaret ürün reklamları ve katalog yönetimi' : isGoogleSearchAdsTr ? 'Arama kampanyası kurulumu ve yönetimi' : isPerformanceMaxTr ? 'Maksimum Performans kampanya yönetimi' : isGoogleAdsTr ? 'Google Ads Kampanya Yönetimi' : isMetaAdsTr ? 'Facebook ve Instagram Reklam Yönetimi' : isFacebookAdsTr ? (engineHero?.eyebrow ?? 'Facebook Reklam Kampanya Yönetimi') : isSeoTr ? 'SEO Hizmeti ve Danışmanlığı' : t('services.detail.hero.eyebrow')}
               </span>
             </div>
 
@@ -797,7 +802,7 @@ function HeroSection({
               ) : isMetaAdsTr ? (
                 <RotatingHeading full={service.name} lead="Meta Reklam" words={['Yönetimi', 'Ajansı', 'Danışmanlığı']} />
               ) : isFacebookAdsTr ? (
-                <RotatingHeading full={service.name} lead="Facebook Reklam" words={['Yönetimi', 'Ajansı', 'Danışmanlığı']} />
+                <RotatingHeading full={service.name} lead={engineHero?.lead ?? 'Facebook Reklam'} words={engineHero?.words ?? ['Yönetimi', 'Ajansı', 'Danışmanlığı']} />
               ) : (
               <h1 className={`text-display font-light text-gray-900 leading-none ${isIkasTr ? 'ikas-hero-title' : ''}`}>
                 <>{service.name.split(' ').slice(0, -1).join(' ')}{service.name.split(' ').length > 1 && <br />}<span className={`font-semibold ${colors.titleAccent}`}>{service.name.split(' ').length > 1 ? service.name.split(' ').slice(-1)[0] : service.name}</span></>
@@ -823,7 +828,7 @@ function HeroSection({
             <div className={`space-y-3 pt-1 ${isIkasTr ? 'ikas-hero-actions' : ''}`}>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button
-                  href={isFacebookAdsTr ? '/start-project?service=facebook-ads' : isMetaAdsTr ? '/start-project?service=meta-ads' : service.slug === 'corporate-website-design' ? '/start-project?service=corporate-website-design' : service.slug === 'e-commerce' && locale === 'tr' ? '/start-project?service=e-commerce' : isPerformanceMaxTr ? '/start-project?service=performance-max' : isEcommerceSeoTr ? '/start-project?service=ecommerce-seo' : isTechnicalSeoTr ? '/start-project?service=technical-seo' : isGoogleShoppingTr ? '/start-project?service=google-shopping' : isGoogleSearchAdsTr ? '/start-project?service=google-search-ads' : isGoogleAdsTr ? '/start-project?service=google-ads' : isSeoTr ? '/start-project?service=seo' : isIkasTr ? '/start-project?service=ikas-development' : isShopifyTr ? '/start-project?service=shopify-development' : isCustomEcomTr ? '/start-project?service=custom-ecommerce' : isMarketTr ? '/start-project?service=marketplace-development' : '/contact'}
+                  href={isFacebookAdsTr ? (engineHero?.enquiry ?? '/start-project?service=facebook-ads') : isMetaAdsTr ? '/start-project?service=meta-ads' : service.slug === 'corporate-website-design' ? '/start-project?service=corporate-website-design' : service.slug === 'e-commerce' && locale === 'tr' ? '/start-project?service=e-commerce' : isPerformanceMaxTr ? '/start-project?service=performance-max' : isEcommerceSeoTr ? '/start-project?service=ecommerce-seo' : isTechnicalSeoTr ? '/start-project?service=technical-seo' : isGoogleShoppingTr ? '/start-project?service=google-shopping' : isGoogleSearchAdsTr ? '/start-project?service=google-search-ads' : isGoogleAdsTr ? '/start-project?service=google-ads' : isSeoTr ? '/start-project?service=seo' : isIkasTr ? '/start-project?service=ikas-development' : isShopifyTr ? '/start-project?service=shopify-development' : isCustomEcomTr ? '/start-project?service=custom-ecommerce' : isMarketTr ? '/start-project?service=marketplace-development' : '/contact'}
                   variant="primary"
                   size="lg"
                   rightIcon={
@@ -832,12 +837,12 @@ function HeroSection({
                     </svg>
                   }
                 >
-                  {isFacebookAdsTr ? 'Facebook Reklam Teklifi Al' : isMetaAdsTr ? 'Meta Reklam Teklifi Al' : service.slug === 'e-commerce' && locale === 'tr' ? 'Projenizi Anlatın' : isPerformanceMaxTr ? 'Performance Max Teklifi Al' : isEcommerceSeoTr ? 'Mağazam İçin SEO Planı Al' : isTechnicalSeoTr ? 'Teknik SEO Teklifi Al' : isGoogleShoppingTr ? 'Alışveriş Reklamı Teklifi Al' : isGoogleSearchAdsTr ? 'Arama Ağı Teklifi Al' : isGoogleAdsTr ? 'Google Ads Teklifi Al' : isIkasTr ? IKAS_TR_HERO.primary : isShopifyTr ? 'Shopify Projem İçin Teklif Al' : isCustomEcomTr ? 'Projem İçin Teklif Al' : isMarketTr ? 'Pazaryeri Projenizi Anlatın' : isSeoTr ? 'Sitem İçin SEO Planı Al' : service.slug === 'corporate-website-design'
+                  {isFacebookAdsTr ? (engineHero?.cta ?? 'Facebook Reklam Teklifi Al') : isMetaAdsTr ? 'Meta Reklam Teklifi Al' : service.slug === 'e-commerce' && locale === 'tr' ? 'Projenizi Anlatın' : isPerformanceMaxTr ? 'Performance Max Teklifi Al' : isEcommerceSeoTr ? 'Mağazam İçin SEO Planı Al' : isTechnicalSeoTr ? 'Teknik SEO Teklifi Al' : isGoogleShoppingTr ? 'Alışveriş Reklamı Teklifi Al' : isGoogleSearchAdsTr ? 'Arama Ağı Teklifi Al' : isGoogleAdsTr ? 'Google Ads Teklifi Al' : isIkasTr ? IKAS_TR_HERO.primary : isShopifyTr ? 'Shopify Projem İçin Teklif Al' : isCustomEcomTr ? 'Projem İçin Teklif Al' : isMarketTr ? 'Pazaryeri Projenizi Anlatın' : isSeoTr ? 'Sitem İçin SEO Planı Al' : service.slug === 'corporate-website-design'
                     ? (locale === 'tr' ? 'Projenizi Konuşalım' : 'Discuss Your Project')
                     : t('services.detail.hero.startProject')}
                 </Button>
                 {isFacebookAdsTr ? (
-                  <a href="/tr/hizmetler/facebook-ads/ozellikler" className="inline-flex items-center justify-center rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 hover:border-heritage-turquoise focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Hizmet Kapsamını İncele</a>
+                  <a href={`${engineHero?.base ?? '/tr/hizmetler/facebook-ads'}/ozellikler`} className="inline-flex items-center justify-center rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 hover:border-heritage-turquoise focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Hizmet Kapsamını İncele</a>
                 ) : isMetaAdsTr ? (
                   <a href="/tr/hizmetler/meta-ads/ozellikler" className="inline-flex items-center justify-center rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 hover:border-heritage-turquoise focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Yönetim Kapsamını İncele</a>
                 ) : isPerformanceMaxTr ? (
@@ -896,7 +901,7 @@ function HeroSection({
               {isGoogleShoppingTr && <p className="text-sm font-medium text-gray-600">Merchant Center · Ürün verisi · Kampanya kapsamı · Satın alma ölçümü</p>}
               {isPerformanceMaxTr && <p className="text-sm font-medium text-gray-600">Kampanya hedefi · Öğe grupları · Dönüşüm takibi · Ürün verisi</p>}
               {isMetaAdsTr && <p className="text-sm font-medium text-gray-600">Kampanya hedefi · Kreatif testleri · Meta piksel ve ölçüm · Raporlama</p>}
-              {isFacebookAdsTr && <p className="text-sm font-medium text-gray-600">Form reklamları · Katalog reklamları · Yeniden pazarlama · Raporlama</p>}
+              {isFacebookAdsTr && <p className="text-sm font-medium text-gray-600">{engineHero?.keywordLine ?? 'Form reklamları · Katalog reklamları · Yeniden pazarlama · Raporlama'}</p>}
               {isIkasTr && <IkasPlatformNote />}
             </div>
           </motion.div>

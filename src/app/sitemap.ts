@@ -1,5 +1,7 @@
 import metaAdsArticles from '../../content/blog/meta-ads/manifest.json';
 import facebookAdsArticles from '../../content/blog/facebook-ads/manifest.json';
+import instagramAdsArticles from '../../content/blog/instagram-ads/manifest.json';
+import { ENGINE_SERVICES } from '@/lib/engine-services';
 import { MetadataRoute } from 'next';
 import { localizeFullPath } from '@/lib/routes';
 import { hasServiceBlog } from '@/lib/service-blogs';
@@ -70,6 +72,8 @@ const toolRoutes = [
 // dedicated page component). Only these advertise sub-pages in the sitemap.
 const ALL_SUBPAGES = ['/features', '/technologies', '/process', '/portfolio', '/pricing', '/faq', '/blog'];
 const CURATED_TR_SERVICES: { slug: string; date: string; pages: string[] }[] = [
+  // Services on the shared engine (content/<slug>/tr). Blog is listed only where guides exist.
+  ...ENGINE_SERVICES.map((e) => ({ slug: e.slug, date: e.date, pages: e.blog ? ALL_SUBPAGES : ALL_SUBPAGES.filter((x) => x !== '/blog') })),
   { slug: 'seo', date: '2026-11-08', pages: ALL_SUBPAGES },
   { slug: 'ecommerce-seo', date: '2026-11-08', pages: ALL_SUBPAGES },
   { slug: 'technical-seo', date: '2026-11-08', pages: ALL_SUBPAGES },
@@ -236,6 +240,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Facebook ads guides are repository-backed, like the Meta Ads guides.
   facebookAdsArticles.forEach(({ slug, datePublished }) => {
     entries.push(entry('tr', `/services/facebook-ads/blog/${slug}`, {
+      priority: PRIORITY.blogPost,
+      changeFreq: 'weekly',
+      date: new Date(`${datePublished}T00:00:00Z`),
+      includeAlternates: false,
+    }));
+  });
+  // Instagram ads guides are repository-backed, like the Meta Ads guides.
+  instagramAdsArticles.forEach(({ slug, datePublished }) => {
+    entries.push(entry('tr', `/services/instagram-ads/blog/${slug}`, {
       priority: PRIORITY.blogPost,
       changeFreq: 'weekly',
       date: new Date(`${datePublished}T00:00:00Z`),

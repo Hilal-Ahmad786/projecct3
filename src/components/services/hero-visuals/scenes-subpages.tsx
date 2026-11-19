@@ -430,3 +430,52 @@ export function GuidesScene({ label, guides, chip, minutes, steps }: { label: st
     </svg>
   </>}</Frame>;
 }
+
+/* ── Overview hero for label-driven services: a request card, a travelling step and a result card ── */
+export function ServiceOverviewScene({ label, title, chips, report, bars, badge, steps }: { label: string; title: string; chips: Three; report: string; bars: Three; badge: string; steps: readonly string[] }) {
+  const id = 'ovw';
+  const path = 'M118 92 C136 92 142 84 154 84';
+  const heights = [26, 40, 54];
+  return <Frame label={label}>{active => <>
+    <GirihHalo active={active} color={H.turquoise} opacity={0.14} />
+    <svg viewBox="0 0 240 240" className="absolute inset-0 h-full w-full" aria-hidden="true">
+      <Defs id={id} />
+      <motion.g {...loop(active, { y: [0, -2.5, 0] }, 8)}>
+        <rect x="14" y="26" width="108" height="140" rx="14" fill={H.white} filter={`url(#${id}S)`} />
+        <motion.rect x="14" y="26" width="108" height="140" rx="14" fill="none" stroke={H.sand} strokeWidth="2" {...drawIn(0.1, 1)} />
+        <rect x="14" y="26" width="108" height="26" rx="14" fill={`url(#${id}A)`} />
+        <rect x="14" y="40" width="108" height="12" fill={`url(#${id}A)`} />
+        <Star cx={30} cy={39} r={7} active={active} />
+        <text x="42" y="42" fontSize={fit(title, 74, 7.6)} fontWeight="700" fill={H.white}>{title}</text>
+        {chips.map((c, i) => <motion.g key={c} {...riseIn(0.6 + i * 0.18)}>
+          <rect x="22" y={62 + i * 32} width="92" height="24" rx="7" fill={H.ivory} />
+          <Tick cx={35} cy={74 + i * 32} active={active} delay={1.4 + i * 1.2} period={9} />
+          <text x="46" y={76.4 + i * 32} fontSize={fit(c, 62, 6.6)} fontWeight="600" fill={H.lapisDeep}>{c}</text>
+        </motion.g>)}
+      </motion.g>
+
+      <motion.path d={path} fill="none" stroke={H.turquoise} strokeWidth="1.4" strokeDasharray="3 3" {...drawIn(1.4, 0.7)} />
+      <Travel active={active} d={path} delay={2.6} duration={1.2} period={6} />
+
+      <motion.g {...pop(1.2)}>
+        <motion.g {...loop(active, { y: [0, -2, 0] }, 9, 1)}>
+          <rect x="154" y="44" width="72" height="124" rx="12" fill={H.white} stroke={H.turquoise} strokeOpacity="0.3" filter={`url(#${id}S)`} />
+          <text x="162" y="60" fontSize={fit(report, 58, 7)} fontWeight="700" fill={H.lapisDeep}>{report}</text>
+          {heights.map((h, i) => <motion.rect key={i} x={164 + i * 19} width="13" rx="3.5" fill={i === 2 ? H.terracotta : H.turquoise} initial={false}
+            animate={active ? { height: [8, h, h, 8], y: [124, 132 - h, 132 - h, 124] } : { height: h, y: 132 - h }}
+            transition={active ? { duration: 8, repeat: Infinity, delay: 2 + i * 0.25, times: [0, 0.2, 0.9, 1] } : { duration: 0 }} />)}
+          <line x1="160" y1="132.5" x2="220" y2="132.5" stroke={H.sand} />
+          {bars.map((b, i) => <text key={b} x={170.5 + i * 19} y="143" textAnchor="middle" fontSize={fit(b, 18, 5.4)} fill={H.lapisDeep} opacity="0.7">{b}</text>)}
+          <rect x="162" y="150" width="56" height="4" rx="2" fill={H.sand} />
+        </motion.g>
+      </motion.g>
+
+      <motion.g {...pop(2.2)}>
+        <rect x="40" y="178" width="160" height="26" rx="13" fill={H.ivory} stroke={H.saffron} />
+        <motion.g {...loop(active, { rotate: [0, 45] }, 18)} style={center}><polygon points={starPoints(56, 191, 6, 3.3)} fill={H.saffron} /></motion.g>
+        <text x="68" y="194.2" fontSize={fit(badge, 124, 7)} fontWeight="700" fill={H.lapisDeep}>{badge}</text>
+      </motion.g>
+      <Rail active={active} steps={railSteps(steps)} />
+    </svg>
+  </>}</Frame>;
+}
