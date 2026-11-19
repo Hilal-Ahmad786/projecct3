@@ -1,3 +1,4 @@
+import { BudgetScene, CaseScene, GuidesScene, MeasureScene, QaScene, ScopeScene, TimelineScene } from '@/components/services/hero-visuals/scenes-subpages';
 import Link from '@/components/IntentLink';
 import type { ComponentProps, ReactNode } from 'react';
 import { ArrowRightIcon, CheckIcon } from '@heroicons/react/24/outline';
@@ -64,7 +65,7 @@ export default function ShopifyTurkishFeatures() {
       primary="Mağazam İçin Kapsam Belirle"
       secondary={{ href: '#shopify-ozellikleri', label: 'Özellikleri İncele' }}
       scope="Tema ve sayfalar · Ürün ve koleksiyonlar · Entegrasyonlar"
-      scene={<StoreModulesIllustration/>}
+      scene={<ScopeScene label={"Temsili Shopify mağaza kapsamı: tema, ürün ve koleksiyonlar, ödeme ve kargo, uygulamalar adım adım tamamlanıyor."} title={"Shopify mağaza kapsamı"} items={["Tema düzenleme", "Ürün ve koleksiyonlar", "Ödeme ve kargo", "Uygulamalar"]} test={["Mevcut tema", "Yeni tema", "Ürün sayfası"]} result={"Yayına hazır"} steps={["Analiz", "Tasarım", "Kurulum", "Yayın"]} />}
     />
 
     <PageJumpNav items={[{ href: '#shopify-ozellikleri', label: 'Özellikler' }, { href: '#shopify-tema-ozellikleri', label: 'Tema özelleştirme' }, { href: '#shopify-urun-sayfasi-tasarimi', label: 'Ürün sayfası' }, { href: '#koleksiyonlar-menuler-ve-urun-bulma-deneyimi', label: 'Koleksiyonlar' }, { href: '#sepet-ve-odeme-adimlarinda-netlik', label: 'Sepet ve ödeme' }, { href: '#shopify-odeme-kargo-ve-muhasebe-entegrasyonu', label: 'Entegrasyonlar' }, { href: '#shopify-cok-dilli-magaza-ve-farkli-pazarlara-hazirlik', label: 'Çok dilli mağaza' }, { href: '#shopify-veri-aktarimi-tasima-ve-ek-gelistirme-kapsami', label: 'Veri aktarımı' }, { href: '#shopify-ozellikleri-hakkinda-sik-sorulan-sorular', label: 'SSS' }]} mark={<ShopifyIcon size={14} />} />

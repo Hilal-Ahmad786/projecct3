@@ -1,3 +1,4 @@
+import { BudgetScene, CaseScene, GuidesScene, MeasureScene, QaScene, ScopeScene, TimelineScene } from '@/components/services/hero-visuals/scenes-subpages';
 import Link from '@/components/IntentLink';
 import ShopifyArtwork from '@/components/shopify/visuals/ShopifyArtwork';
 import ShopifyMotionScope from './ShopifyMotionScope';
@@ -40,7 +41,7 @@ export default function ShopifyTurkishTechnologies() {
       primary="Teknik İhtiyacımı Paylaş"
       secondary={{ href: '#shopify-teknik-yaklasim', label: 'Teknik Yaklaşımı İncele' }}
       scope="Tema geliştirme · Liquid · GraphQL API · Sistem bağlantıları"
-      scene={<ArchitectureIllustration/>}
+      scene={<MeasureScene label={"Temsili Shopify veri akışı: mağaza ve Shopify uygulaması aynı sipariş paneline ulaşıyor."} browser={["Shopify mağazası", "Sepete ekle"]} server={["Shopify uygulaması", "Admin API"]} report={"Sipariş paneli"} events={["Sipariş alındı", "Stok güncellendi", "Kargo kodu"]} badge={"Veri eşleşti"} consent={"KVKK izni uygulanır"} steps={["Tema", "Uygulama", "Test", "Yayın"]} />}
     />
 
     <PageJumpNav items={[{ href: '#shopify-teknik-yaklasim', label: 'Teknik yaklaşım' }, { href: '#shopify-liquid-gelistirme-ve-tema-mimarisi', label: 'Liquid' }, { href: '#metafields-ve-metaobjects-ile-duzenli-icerik', label: 'Metafields' }, { href: '#hazir-uygulama-mi-shopify-ozel-gelistirme-mi', label: 'Uygulama mı, özel mi?' }, { href: '#graphql-api-ile-shopify-erp-entegrasyonu-ve-sistem-baglantil', label: 'ERP entegrasyonu' }, { href: '#webhook-ve-otomasyonlarda-kontrollu-veri-akisi', label: 'Webhook' }, { href: '#odeme-ve-checkout-teknik-sinirlari-bastan-belirleyelim', label: 'Checkout' }, { href: '#headless-yaklasim-ne-zaman-anlamli-olabilir', label: 'Headless' }, { href: '#teknik-yaklasim-hakkinda-sik-sorulan-sorular', label: 'SSS' }]} mark={<ShopifyIcon size={14} />} />

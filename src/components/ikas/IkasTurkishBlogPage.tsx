@@ -1,3 +1,4 @@
+import { BudgetScene, CaseScene, GuidesScene, MeasureScene, QaScene, ScopeScene, TimelineScene } from '@/components/services/hero-visuals/scenes-subpages';
 import Link from '@/components/IntentLink';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import { getPublicServiceBlogCards } from '@/lib/database/public-queries';
@@ -39,7 +40,7 @@ export default async function IkasTurkishBlogPage() {
 
   return <main className="min-h-screen bg-white">
     <IkasMotionScope />
-    <InternalPageHero eyebrowIcon={<IkasIcon size={24} />} eyebrowNormalCase footnote={<IkasPlatformNote />} serviceName="ikas Geliştirme" accentWord="ikas Rehberleri" heading="ikas Kurulum ve Tema Tasarımı Rehberleri" subtitle="ikas mağaza hazırlığı, tema tasarımı ve özelleştirme kararları için pratik rehberler. Kontrol listeleri ve örneklerle projenizin kapsamını planlayın." crumbs={[{ label: 'Ana Sayfa', href: '/tr' }, { label: 'Hizmetler', href: '/tr/hizmetler' }, { label: 'ikas Geliştirme', href: servicePath }, { label: 'Rehberler' }]} rotating={{ lead: 'ikas', words: ['Kurulum Rehberleri', 'Tema Rehberleri'] }} scene={<IkasHeroScene><BlogFeedScene /></IkasHeroScene>} />
+    <InternalPageHero eyebrowIcon={<IkasIcon size={24} />} eyebrowNormalCase footnote={<IkasPlatformNote />} serviceName="ikas Geliştirme" accentWord="ikas Rehberleri" heading="ikas Kurulum ve Tema Tasarımı Rehberleri" subtitle="ikas mağaza hazırlığı, tema tasarımı ve özelleştirme kararları için pratik rehberler. Kontrol listeleri ve örneklerle projenizin kapsamını planlayın." crumbs={[{ label: 'Ana Sayfa', href: '/tr' }, { label: 'Hizmetler', href: '/tr/hizmetler' }, { label: 'ikas Geliştirme', href: servicePath }, { label: 'Rehberler' }]} rotating={{ lead: 'ikas', words: ['Kurulum Rehberleri', 'Tema Rehberleri'] }} scene={<IkasHeroScene><GuidesScene label={"ikas rehberleri: öndeki rehber okunuyor, diğer rehberler arkada sıralanıyor."} guides={["ikas fiyatları", "ikas kurulum rehberi", "ikas tema rehberi"]} chip={"Rehber"} minutes={"Uygulamalı rehber"} steps={["Öğren", "Planla", "Uygula", "Ölç"]} /></IkasHeroScene>} />
     <section id="rehberler" className="scroll-mt-28 bg-background-gray py-12 sm:py-16">
       <div className="container mx-auto max-w-6xl px-4">
         <h2 className="reveal max-w-4xl text-headline font-medium leading-tight text-gray-900">ikas Site Kurma ve Tema Tasarımı Rehberleri</h2>
