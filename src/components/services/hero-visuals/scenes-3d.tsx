@@ -19,7 +19,7 @@ function useActivity() {
   return { ref, active: visible && allowed };
 }
 
-function Frame({ label, children }: { label: string; children: (active: boolean) => ReactNode }) {
+export function Frame({ label, children }: { label: string; children: (active: boolean) => ReactNode }) {
   const { ref, active } = useActivity();
   // The scene is laid out on a fixed 384 px stage and sized with CSS `zoom`, which re-lays out the
   // content (text and icons stay sharp, unlike a scale transform). The zoom follows the hero column:
@@ -41,17 +41,17 @@ function Frame({ label, children }: { label: string; children: (active: boolean)
 // Entry animations are plain initial→animate props (same markup on server and client); loops run only
 // while `active` (on screen, tab visible, no reduced-motion preference).
 
-type Values = Record<string, (number | string)[]>;
-function loop(active: boolean, values: Values, duration: number, delay = 0) {
+export type Values = Record<string, (number | string)[]>;
+export function loop(active: boolean, values: Values, duration: number, delay = 0) {
   return active
     ? { animate: values, transition: { duration, delay, repeat: Infinity, ease: 'easeInOut' as const } }
     : { animate: Object.fromEntries(Object.entries(values).map(([k, v]) => [k, v[0]])), transition: { duration: 0 } };
 }
-const center = { transformBox: 'fill-box' as const, transformOrigin: 'center' };
-const pop = (delay: number) => ({ ...popIn(delay), style: center });
+export const center = { transformBox: 'fill-box' as const, transformOrigin: 'center' };
+export const pop = (delay: number) => ({ ...popIn(delay), style: center });
 
 /** A dot travelling once along `d` every `period` seconds, starting at `delay`. */
-function Travel({ active, d, delay, duration = 1.4, period = 6, color = H.saffron, r = 3 }: { active: boolean; d: string; delay: number; duration?: number; period?: number; color?: string; r?: number }) {
+export function Travel({ active, d, delay, duration = 1.4, period = 6, color = H.saffron, r = 3 }: { active: boolean; d: string; delay: number; duration?: number; period?: number; color?: string; r?: number }) {
   return <motion.circle r={r} fill={color} initial={false} style={{ offsetPath: `path("${d}")` }}
     animate={active ? { offsetDistance: ['0%', '100%'], opacity: [0, 1, 1, 0] } : { offsetDistance: '100%', opacity: 0 }}
     transition={active ? { duration, delay, repeat: Infinity, repeatDelay: period - duration, ease: 'easeInOut' } : { duration: 0 }} />;
@@ -64,7 +64,7 @@ function flash(active: boolean, delay: number, period = 6, from: string = H.turq
     : { animate: { fill: from }, transition: { duration: 0 } };
 }
 
-function Rail({ active, steps, y = 219, start = 3 }: { active: boolean; steps: readonly (readonly [string, number, number])[]; y?: number; start?: number }) {
+export function Rail({ active, steps, y = 219, start = 3 }: { active: boolean; steps: readonly (readonly [string, number, number])[]; y?: number; start?: number }) {
   return <>{steps.map(([label, x, w], i) => <motion.g key={label} {...riseIn(start - 0.5 + i * 0.1)}>
     <motion.rect x={x} y={y} width={w} height="16" rx="5" strokeWidth="1" initial={false}
       animate={active ? { fill: [H.ivory, H.turquoiseLight, H.ivory], stroke: [H.sand, H.turquoise, H.sand] } : { fill: H.ivory, stroke: H.sand }}

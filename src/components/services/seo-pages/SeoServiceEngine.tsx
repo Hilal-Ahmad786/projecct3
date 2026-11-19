@@ -48,6 +48,8 @@ export interface SeoServiceConfig {
   portfolioBadgeFor?: (title: string) => string | undefined;
   structuredFaq?: boolean;
   blog: { id: string; title: string; text: string; asideTitle: string; asideText: string; guides: () => Guide[] };
+  /** Optional hero scene for the blog listing (defaults to the shared BlogFeedScene). */
+  blogArt?: () => ReactNode;
 }
 
 const focus = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2';
@@ -130,7 +132,7 @@ export function createSeoService(cfg: SeoServiceConfig) {
       <CustomEcommerceMotionScope />
       <InternalPageHero serviceName={cfg.serviceName} accentWord={meta.heading} eyebrowNormalCase eyebrowIcon={iconChip} heading={meta.heading} rotating={cfg.rotating.blog} subtitle={meta.intro} crumbs={crumbs('Rehberler')}
         actions={<><a href={`#${cfg.blog.id}`} className={primaryClass}>Rehberleri İncele</a><Link href={enquiry} className={secondaryClass}>{cfg.primary.blog}</Link></>}
-        scene={<HeroScene><BlogFeedScene showPublicationMeta={false} /></HeroScene>} />
+        scene={<HeroScene>{cfg.blogArt ? cfg.blogArt() : <BlogFeedScene showPublicationMeta={false} />}</HeroScene>} />
       <section id={cfg.blog.id} className="bg-background-gray scroll-mt-[calc(var(--navbar-h,88px)+1rem)]"><div className="mx-auto max-w-[1200px] px-4 sm:px-6 cw-section">
         <h2 className="reveal max-w-4xl text-headline font-medium leading-tight text-gray-900">{trTitleCase(cfg.blog.title)}</h2>
         <p className="mt-3 max-w-3xl text-base leading-7 text-gray-600">{cfg.blog.text}</p>

@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import { MegaphoneIcon } from '@heroicons/react/24/outline';
 import type { SectionVisual } from '@/components/e-commerce/ServiceMarkdownPage';
-import { ProcessScene } from '@/components/services/hero-visuals/scenes-internal';
+import { BudgetScene, CaseScene, GuidesScene, MeasureScene, QaScene, ScopeScene, TimelineScene } from '@/components/services/hero-visuals/scenes-subpages';
 import SeoArtwork from '@/components/seo/visuals/SeoArtwork';
 import type { SeoVisualName } from '@/components/seo/visuals/generated';
 import { createSeoService, type SeoPageKind, type SeoServiceConfig } from './seo-pages/SeoServiceEngine';
@@ -77,14 +77,21 @@ const visuals: SeoServiceConfig['visuals'] = {
   ],
 };
 
+// Sub-page heroes: animated story scenes in the overview standard (scenes-subpages.tsx).
 const heroArt: SeoServiceConfig['heroArt'] = {
-  features: () => V.evidence('w-full'),
-  technologies: () => V.pixelTest('w-full'),
-  process: () => <ProcessScene />,
-  portfolio: () => V.project('w-full'),
-  pricing: () => V.quote('w-full'),
+  features: () => <ScopeScene label="Temsili Facebook reklam hizmet kapsamı: form reklamları, katalog reklamları, yeniden pazarlama ve optimizasyon adım adım tamamlanıyor; iki form sorusu sırayla test ediliyor."
+    title="Hizmet kapsamı" items={['Form reklamları', 'Katalog reklamları', 'Yeniden pazarlama', 'Optimizasyon kaydı']} test={['Form A', 'Form B', 'Form testi']} result="Nitelikli başvuru" steps={['Hedef', 'Kreatif', 'Başvuru', 'Rapor']} />,
+  technologies: () => <MeasureScene label="Temsili Facebook ölçüm akışı: tarayıcıdaki Meta Pixel olayı ve Conversions API sunucu olayı aynı rapora ulaşıyor, tekrar sayılmıyor ve izin tercihi uygulanıyor."
+    browser={['Meta Pixel', 'Formu gönder']} server={['Conversions API', 'Sunucu olayı']} report="Facebook raporu" events={['Lead', 'Purchase', 'Contact']} badge="Tekrar sayılmadı" consent="İzin tercihi uygulanır" steps={['Olay planı', 'Kurulum', 'Test', 'Rapor']} />,
+  process: () => <TimelineScene label="Temsili Facebook reklam yönetimi süreci: hedef, kapsam, erişim, yayın ve değerlendirme adımları sırayla ilerliyor; ilk dönem planı kontrol ediliyor."
+    milestones={['Hedef', 'Kapsam', 'Erişim', 'Yayın', 'Rapor']} plan={['İlk dönem planı', 'Reklam hesabı erişimi', 'Form ve kreatif', 'İlk kontroller']} steps={['Hedef', 'Hazırlık', 'Yayın', 'Değerlendirme']} />,
+  portfolio: () => <CaseScene label="Temsili Facebook reklam senaryosu: rapor üzerinde gözlem, değişiklik ve kontrol noktaları işaretleniyor; başlangıç durumundan yaklaşıma geçiliyor ve değerlendirme kaydediliyor."
+    title="Temsili senaryo" badge="Temsili" notes={['Gözlem', 'Form sorusu', 'Kontrol']} start={['Başlangıç', 'Form çok, satış az']} approach={['Yaklaşım', 'Hizmet sorusu']} verdict="Uygun başvuru satış ekibiyle doğrulanır" steps={['Durum', 'Kontrol', 'Değişiklik', 'Sonuç']} />,
+  pricing: () => <BudgetScene label="Facebook reklam maliyet kalemleri: toplam plan, reklam hesabınızdan Meta’ya ödenen reklam bütçesi ve yönetim, içerik ve teknik işlerin ayrı yazıldığı PakSoft teklifi olarak ikiye ayrılıyor."
+    plan="Reklam planı" spend={['Reklam bütçesi', 'Reklam hesabınız']} quote="PakSoft teklifi" items={['Yönetim', 'İçerik üretimi', 'Ölçüm kurulumu']} badge="Kalemler ayrı yazılır" steps={['Bütçe', 'Kapsam', 'Teklif', 'Onay']} />,
+  faq: () => <QaScene label="Facebook reklam yönetimi hakkında sık sorulan sorular: arama yapılıyor, ilk sorunun yanıtı açılıyor ve hizmet, bütçe, hesap konuları sırayla vurgulanıyor."
+    search="Facebook ile Meta farkı" questions={['Facebook ile Meta aynı hizmet mi?', 'Hesap şifremi paylaşmalı mıyım?', 'Ne kadar sürede sonuç alırım?']} answer={['Meta, Facebook ve Instagram’ı kapsar;', 'bu sayfa yalnızca Facebook odaklıdır.']} topics={['Hizmet', 'Bütçe', 'Hesap']} steps={['Soru', 'Yanıt', 'Kapsam', 'Teklif']} />,
 };
-
 const config: SeoServiceConfig = {
   platform: 'facebook-ads', contentDir: 'content/facebook-ads/tr', base, enquiry: FACEBOOK_ADS_TR_ENQUIRY,
   serviceName: 'Facebook Reklam Yönetimi', Icon: MegaphoneIcon, metadata, visuals, heroArt,
@@ -115,6 +122,7 @@ const config: SeoServiceConfig = {
   portfolioBadge: 'Temsili senaryo',
   structuredFaq: true,
   blog: { id: 'facebook-reklam-rehberleri', title: 'Facebook Reklam Rehberleri', text: metadata.blog.intro, asideTitle: 'Reklam planınızı birlikte değerlendirelim', asideText: 'Hedefinizi, web sitenizi ve mevcut kampanya durumunuzu paylaşın.', guides: getFacebookAdsGuides },
+  blogArt: () => <GuidesScene label="Facebook reklam rehberleri: öndeki rehber okunuyor, diğer rehberler arkada sıralanıyor." guides={['Facebook reklam nasıl verilir?', 'Maliyet nasıl düşürülür?', 'Bütçe ve ölçüm']} chip="Rehber" minutes="Kontrol listesi ve örnek tablo" steps={['Öğren', 'Planla', 'Uygula', 'Ölç']} />,
 };
 
 const service = createSeoService(config);
