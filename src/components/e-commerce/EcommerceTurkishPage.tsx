@@ -1,3 +1,4 @@
+import { BudgetScene, CaseScene, GuidesScene, MeasureScene, QaScene, ScopeScene, TimelineScene } from '@/components/services/hero-visuals/scenes-subpages';
 import Link from '@/components/IntentLink';
 import Image from 'next/image';
 import ServiceGuideCards, { type ServiceGuideCard } from '@/components/services/ServiceGuideCards';
@@ -88,13 +89,13 @@ function EcommerceHeroScene({ children }: { children: ReactNode }) {
 function Hero({ page }: { page: EcommercePageKey }) {
   const m = meta[page];
   const scenes: Record<Exclude<EcommercePageKey, 'overview'>, ReactNode> = {
-    features: <EcommerceHeroScene><FeaturesScene accent="#0e7c7b" /></EcommerceHeroScene>,
-    technologies: <EcommerceHeroScene><TechStackScene accent="#0e7c7b" /></EcommerceHeroScene>,
-    process: <EcommerceHeroScene><ProcessScene accent="#0e7c7b" /></EcommerceHeroScene>,
-    portfolio: <EcommerceHeroScene><PortfolioScene accent="#0e7c7b" /></EcommerceHeroScene>,
-    pricing: <EcommerceHeroScene><PricingTiersScene accent="#0e7c7b" /></EcommerceHeroScene>,
-    blog: <EcommerceHeroScene><BlogFeedScene accent="#0e7c7b" showPublicationMeta={false} /></EcommerceHeroScene>,
-    faq: <EcommerceHeroScene><FaqScene accent="#0e7c7b" /></EcommerceHeroScene>,
+    features: <EcommerceHeroScene><ScopeScene label={"Temsili e-ticaret kapsamı: Ürün kataloğu, Ödeme ve kargo, Kampanya ve kupon, Yönetim paneli adım adım tamamlanıyor; iki seçenek karşılaştırılıyor."} title={"Mağaza özellikleri"} items={["Ürün kataloğu", "Ödeme ve kargo", "Kampanya ve kupon", "Yönetim paneli"]} test={["Mevcut tasarım", "Yeni tasarım", "Ürün sayfası"]} result={"Yayına hazır"} steps={["Analiz", "Tasarım", "Geliştirme", "Yayın"]} /></EcommerceHeroScene>,
+    technologies: <EcommerceHeroScene><MeasureScene label={"Temsili e-ticaret veri akışı: Mağaza sitesi ve Ödeme altyapısı aynı panele ulaşıyor; kayıtlar eşleşiyor."} browser={["Mağaza sitesi", "Sepete ekle"]} server={["Ödeme altyapısı", "Kargo servisi"]} report={"Sipariş paneli"} events={["Ödeme alındı", "Kargo kodu", "Stok güncellendi"]} badge={"Sipariş tamam"} consent={"KVKK izni uygulanır"} steps={["Altyapı", "Entegrasyon", "Test", "Yayın"]} /></EcommerceHeroScene>,
+    process: <EcommerceHeroScene><TimelineScene label={"Temsili e-ticaret süreci: Analiz, Tasarım, Kurulum, Test, Yayın adımları sırayla ilerliyor."} milestones={["Analiz", "Tasarım", "Kurulum", "Test", "Yayın"]} plan={["Proje planı", "Ürün aktarımı", "Ödeme testi", "Kargo ayarı"]} steps={["Analiz", "Tasarım", "Geliştirme", "Yayın"]} /></EcommerceHeroScene>,
+    portfolio: <EcommerceHeroScene><CaseScene label={"Temsili e-ticaret senaryosu: raporda gözlem, değişiklik ve kontrol noktaları işaretleniyor."} title="Temsili senaryo" badge="Temsili" notes={["Gözlem", "Tasarım", "Kontrol"]} start={["Başlangıç", "Sepet terki"]} approach={["Yaklaşım", "Hızlı ödeme"]} verdict={"Değerlendirme sipariş verisiyle yapılır"} steps={["Durum", "Kontrol", "Değişiklik", "Sonuç"]} /></EcommerceHeroScene>,
+    pricing: <EcommerceHeroScene><BudgetScene label={"E-ticaret maliyet kalemleri: Mağaza bütçesi, altyapı gideri ve PakSoft teklifindeki ayrı kalemler."} plan={"Mağaza bütçesi"} spend={["Altyapı gideri", "Platform ve ödeme"]} quote="PakSoft teklifi" items={["Tasarım", "Kurulum", "Entegrasyon"]} badge="Kalemler ayrı yazılır" steps={["Kapsam", "Tahmin", "Teklif", "Onay"]} /></EcommerceHeroScene>,
+    blog: <EcommerceHeroScene><GuidesScene label={"E-ticaret rehberleri: öndeki rehber okunuyor, diğer rehberler arkada sıralanıyor."} guides={["E-ticaret sitesi fiyatları", "Siteye ne gerekir?", "Altyapı seçimi"]} chip="Rehber" minutes={"Uygulamalı rehber"} steps={["Öğren", "Planla", "Uygula", "Ölç"]} /></EcommerceHeroScene>,
+    faq: <EcommerceHeroScene><QaScene label={"E-ticaret hakkında sık sorulan sorular: arama yapılıyor, ilk sorunun yanıtı açılıyor."} search={"E-ticaret sitesi fiyatı"} questions={["E-ticaret sitesi kaç günde açılır?", "Hangi altyapıyı seçmeliyim?", "Ürünleri kim yükler?"]} answer={["Süre ürün sayısı ve entegrasyonlara", "göre belirlenir."]} topics={["Altyapı", "Tasarım", "Bütçe"]} steps={["Soru", "Yanıt", "Kapsam", "Teklif"]} /></EcommerceHeroScene>,
   };
   const anchors: Record<Exclude<EcommercePageKey, 'overview'>, [string, string]> = {
     features: ['#urun-katalog', 'Özellikleri İnceleyin'],

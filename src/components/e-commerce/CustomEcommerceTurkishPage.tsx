@@ -1,3 +1,4 @@
+import { BudgetScene, CaseScene, GuidesScene, MeasureScene, QaScene, ScopeScene, TimelineScene } from '@/components/services/hero-visuals/scenes-subpages';
 import type { ReactNode } from 'react';
 import Link from '@/components/IntentLink';
 import { ArrowRightIcon, CodeBracketSquareIcon } from '@heroicons/react/24/outline';
@@ -193,13 +194,14 @@ function ShopLameesHeroShot() {
 }
 
 // Each subpage hero has its own scene (no visual repeats further down the same page).
+// Sub-page heroes: animated story scenes (scenes-subpages.tsx); portfolio keeps the real Shop Lamees shot.
 const HERO_ART: Record<Exclude<CustomEcommercePage, 'overview'>, () => ReactNode> = {
-  features: () => <Visual spec={ART.dealer} className="w-full" />,
-  technologies: () => <Visual spec={ART.source} className="w-full" />,
-  process: () => <Visual spec={ART.release} className="w-full" />,
+  features: () => <ScopeScene label={"Temsili özel e-ticaret kapsamı: Bayi ve B2B fiyatı, Ödeme ve kargo, Stok entegrasyonu, Yönetim paneli adım adım tamamlanıyor; iki seçenek karşılaştırılıyor."} title={"Proje kapsamı"} items={["Bayi ve B2B fiyatı", "Ödeme ve kargo", "Stok entegrasyonu", "Yönetim paneli"]} test={["Mevcut akış", "Yeni akış", "Sepet akışı"]} result={"Onaylı kapsam"} steps={["Analiz", "Tasarım", "Geliştirme", "Yayın"]} />,
+  technologies: () => <MeasureScene label={"Temsili özel e-ticaret veri akışı: Mağaza sitesi ve ERP ve stok aynı panele ulaşıyor; kayıtlar eşleşiyor."} browser={["Mağaza sitesi", "Sipariş ver"]} server={["ERP ve stok", "Entegrasyon servisi"]} report={"Sipariş paneli"} events={["Sipariş alındı", "Stok düştü", "Fatura kesildi"]} badge={"Veri eşleşti"} consent={"KVKK izni uygulanır"} steps={["Altyapı", "Entegrasyon", "Test", "Yayın"]} />,
+  process: () => <TimelineScene label={"Temsili özel e-ticaret süreci: Analiz, Tasarım, Geliştirme, Test, Yayın adımları sırayla ilerliyor."} milestones={["Analiz", "Tasarım", "Geliştirme", "Test", "Yayın"]} plan={["Proje planı", "Kapsam belgesi", "Tasarım onayı", "Test ortamı"]} steps={["Analiz", "Tasarım", "Geliştirme", "Yayın"]} />,
   portfolio: () => <ShopLameesHeroShot />,
-  pricing: () => <Visual spec={ART.quote} className="w-full" />,
-  faq: () => <FaqScene />,
+  pricing: () => <BudgetScene label={"özel e-ticaret maliyet kalemleri: Proje bütçesi, altyapı gideri ve PakSoft teklifindeki ayrı kalemler."} plan={"Proje bütçesi"} spend={["Altyapı gideri", "Sunucu ve lisans"]} quote="PakSoft teklifi" items={["Tasarım", "Geliştirme", "Entegrasyon"]} badge="Kalemler ayrı yazılır" steps={["Kapsam", "Tahmin", "Teklif", "Onay"]} />,
+  faq: () => <QaScene label={"özel e-ticaret hakkında sık sorulan sorular: arama yapılıyor, ilk sorunun yanıtı açılıyor."} search={"Özel e-ticaret süresi"} questions={["Proje ne kadar sürer?", "Hazır altyapıdan farkı ne?", "Kaynak kod kimde kalır?"]} answer={["Süre kapsam ve entegrasyonlara göre", "analizden sonra netleşir."]} topics={["Kapsam", "Süre", "Bütçe"]} steps={["Soru", "Yanıt", "Kapsam", "Teklif"]} />,
 };
 
 const ROTATING: Record<Exclude<CustomEcommercePage, 'overview'>, { lead: string; words: string[] }> = {

@@ -1,3 +1,4 @@
+import { BudgetScene, CaseScene, GuidesScene, MeasureScene, QaScene, ScopeScene, TimelineScene } from '@/components/services/hero-visuals/scenes-subpages';
 import type { ReactNode } from 'react';
 import Link from '@/components/IntentLink';
 import { ArrowRightIcon, BuildingStorefrontIcon } from '@heroicons/react/24/outline';
@@ -166,13 +167,14 @@ const crumbs = (label: string) => [{ label: 'Ana Sayfa', href: '/' }, { label: '
 export const MARKETPLACE_HERO_ART = <MarketplaceHeroScene tile="bottom-left">{MP.hero('w-[20rem] max-w-full sm:w-[26rem] md:w-[30rem]')}</MarketplaceHeroScene>;
 
 // Each subpage hero has its own scene (no visual repeats further down the same page).
+// Sub-page heroes: animated story scenes (scenes-subpages.tsx); portfolio keeps the real Otograde shot.
 const HERO_ART: Record<SubPage, () => ReactNode> = {
-  features: () => MP.panel('w-full'),
-  technologies: () => ART.hub('w-full'),
-  process: () => MP.pilot('w-full'),
+  features: () => <ScopeScene label={"Temsili pazaryeri kapsamı: Satıcı paneli, Komisyon ve hakediş, Ürün onayı, Sipariş ve iade adım adım tamamlanıyor; iki seçenek karşılaştırılıyor."} title={"Pazaryeri kapsamı"} items={["Satıcı paneli", "Komisyon ve hakediş", "Ürün onayı", "Sipariş ve iade"]} test={["Satıcı A", "Satıcı B", "Ürün onayı"]} result={"Yayına hazır"} steps={["Analiz", "Tasarım", "Geliştirme", "Yayın"]} />,
+  technologies: () => <MeasureScene label={"Temsili pazaryeri veri akışı: Pazaryeri sitesi ve Satıcı paneli aynı panele ulaşıyor; kayıtlar eşleşiyor."} browser={["Pazaryeri sitesi", "Satın al"]} server={["Satıcı paneli", "Hakediş servisi"]} report={"Hakediş raporu"} events={["Sipariş", "Komisyon", "Satıcı ödemesi"]} badge={"Hakediş doğru"} consent={"KVKK izni uygulanır"} steps={["Altyapı", "Entegrasyon", "Test", "Yayın"]} />,
+  process: () => <TimelineScene label={"Temsili pazaryeri süreci: Analiz, Pilot, Geliştirme, Test, Yayın adımları sırayla ilerliyor."} milestones={["Analiz", "Pilot", "Geliştirme", "Test", "Yayın"]} plan={["Pilot planı", "İlk satıcılar", "Komisyon kuralları", "Test siparişi"]} steps={["Analiz", "Tasarım", "Geliştirme", "Yayın"]} />,
   portfolio: () => <OtogradeHeroShot />,
-  pricing: () => ART.quote('w-full'),
-  faq: () => <FaqScene />,
+  pricing: () => <BudgetScene label={"pazaryeri maliyet kalemleri: Proje bütçesi, altyapı gideri ve PakSoft teklifindeki ayrı kalemler."} plan={"Proje bütçesi"} spend={["Altyapı gideri", "Sunucu ve ödeme"]} quote="PakSoft teklifi" items={["Tasarım", "Geliştirme", "Satıcı paneli"]} badge="Kalemler ayrı yazılır" steps={["Kapsam", "Tahmin", "Teklif", "Onay"]} />,
+  faq: () => <QaScene label={"pazaryeri hakkında sık sorulan sorular: arama yapılıyor, ilk sorunun yanıtı açılıyor."} search={"Pazaryeri yazılımı"} questions={["Satıcı ödemeleri nasıl işler?", "Kaç satıcıyla başlamalıyız?", "Proje ne kadar sürer?"]} answer={["Hakediş, komisyon ve iade kuralları", "proje başında birlikte belirlenir."]} topics={["Satıcı", "Ödeme", "Süre"]} steps={["Soru", "Yanıt", "Kapsam", "Teklif"]} />,
 };
 
 const ROTATING: Record<SubPage, { lead: string; words: string[] }> = {
@@ -200,7 +202,7 @@ function BlogListing() {
     <CustomEcommerceMotionScope />
     <InternalPageHero serviceName="Pazaryeri Geliştirme" accentWord={meta.heading} eyebrowNormalCase eyebrowIcon={iconChip} heading={meta.heading} rotating={{ lead: 'Pazaryeri', words: ['Geliştirme Rehberleri', 'Satış Modeli', 'Komisyon ve İade'] }} subtitle={meta.intro} crumbs={crumbs('Rehberler')}
       actions={<><a href="#pazaryeri-rehberleri" className={`inline-flex min-h-11 items-center justify-center rounded-sm bg-heritage-turquoise-deep px-5 py-3 text-sm font-semibold text-white hover:bg-heritage-turquoise ${focus}`}>Rehberleri İncele</a><Link href={`${base}/surec`} className={`inline-flex min-h-11 items-center justify-center rounded-sm border border-heritage-sand bg-white px-5 py-3 text-sm font-semibold text-gray-800 hover:border-heritage-turquoise ${focus}`}>Geliştirme Sürecini İncele</Link></>}
-      scene={<MarketplaceHeroScene><BlogFeedScene showPublicationMeta={false} /></MarketplaceHeroScene>} />
+      scene={<MarketplaceHeroScene><GuidesScene label={"Pazaryeri rehberleri: öndeki rehber okunuyor, diğer rehberler arkada sıralanıyor."} guides={["Pazaryeri mi, e-ticaret mi?", "Komisyon ve hakediş", "Satıcı paneli"]} chip="Rehber" minutes={"Karar rehberi"} steps={["Öğren", "Planla", "Uygula", "Ölç"]} /></MarketplaceHeroScene>} />
     <section id="pazaryeri-rehberleri" className="bg-background-gray scroll-mt-[calc(var(--navbar-h,88px)+1rem)]"><div className="mx-auto max-w-[1200px] px-4 sm:px-6 cw-section">
       <h2 className="reveal max-w-4xl text-headline font-medium leading-tight text-gray-900">{trTitleCase('Pazaryeri modelinizi ve sipariş kurallarınızı planlayın')}</h2>
       <p className="mt-3 max-w-3xl text-base leading-7 text-gray-600">Satış modeli seçimi ile komisyon, hakediş ve kısmi iade üzerine yayınlanan rehberler.</p>
