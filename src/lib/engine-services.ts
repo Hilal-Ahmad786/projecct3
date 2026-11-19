@@ -6,6 +6,12 @@ export type EngineServiceEntry = { slug: string; date: string; blog?: boolean };
 
 export const ENGINE_SERVICES: EngineServiceEntry[] = [
   { slug: 'instagram-ads', date: '2026-11-20', blog: true },
+  { slug: 'tiktok-ads', date: '2026-11-20' },
+  { slug: 'youtube-ads', date: '2026-11-20' },
+  { slug: 'google-display-ads', date: '2026-11-20' },
+  { slug: 'linkedin-ads', date: '2026-11-20' },
+  { slug: 'trendyol-ads', date: '2026-11-20' },
+  { slug: 'social-media-management', date: '2026-11-20' },
 ];
 
 const bySlug = new Map(ENGINE_SERVICES.map((e) => [e.slug, e]));

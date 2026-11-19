@@ -11,6 +11,13 @@ import { H, GirihHalo, drawIn, riseIn, starPoints } from './primitives';
 import { Frame, Rail, Travel, center, loop, pop } from './scenes-3d';
 
 type Four = readonly [string, string, string, string];
+/** Splits a short label into at most two balanced lines at a space. */
+const wrap2 = (text: string): string[] => {
+  if (text.length <= 13 || !text.includes(' ')) return [text];
+  const mid = text.length / 2; let best = -1;
+  for (let i = 0; i < text.length; i++) if (text[i] === ' ' && (best < 0 || Math.abs(i - mid) < Math.abs(best - mid))) best = i;
+  return [text.slice(0, best), text.slice(best + 1)];
+};
 /** Font size that keeps `text` inside `width` canvas units (≈0.56 em per character), capped at `base`. */
 const fit = (text: string, width: number, base: number) => Math.min(base, +(width / (text.length * 0.56)).toFixed(2));
 type Three = readonly [string, string, string];
@@ -257,8 +264,8 @@ export function CaseScene({ label, title, badge, notes, start, approach, verdict
         <motion.g {...loop(active, { y: [0, -2, 0] }, 9, i)}>
           <rect x="172" y={28 + i * 66} width="56" height="52" rx="10" fill={i ? H.turquoiseLight : H.ivory} stroke={i ? H.turquoise : H.sand} strokeOpacity={i ? 0.5 : 1} filter={`url(#${id}S)`} />
           <text x="180" y={42 + i * 66} fontSize="6" fontWeight="700" fill={H.lapisDeep} opacity="0.7">{head}</text>
-          <text x="180" y={56 + i * 66} fontSize={fit(sub, 44, 6.6)} fontWeight="700" fill={H.lapisDeep}>{sub}</text>
-          <rect x="180" y={63 + i * 66} width="36" height="3" rx="1.5" fill={i ? H.turquoise : H.sand} />
+          {wrap2(sub).map((line, k) => <text key={k} x="180" y={53 + k * 8.5 + i * 66} fontSize={fit(wrap2(sub).reduce((a, b) => (b.length > a.length ? b : a), ''), 44, 6.6)} fontWeight="700" fill={H.lapisDeep}>{line}</text>)}
+          <rect x="180" y={70 + i * 66} width="36" height="3" rx="1.5" fill={i ? H.turquoise : H.sand} />
         </motion.g>
       </motion.g>)}
       <motion.path d="M200 80 L200 94" stroke={H.turquoise} strokeWidth="1.4" strokeDasharray="3 3" {...drawIn(1.6, 0.3)} />
