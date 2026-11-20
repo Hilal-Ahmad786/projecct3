@@ -1,0 +1,52 @@
+## Hangi gider kime ödenir?
+
+| Gider | Kime ödenir? | Neye bağlıdır? |
+| --- | --- | --- |
+| Barındırma ve HTTPS | Hesabı açan taraf, genellikle siz | Trafik ve ortam sayısına göre değişir |
+| Geliştirme bedeli | PakSoft’a | Çevrimdışı kapsamı ve mevcut web uygulamasının durumuna göre belirlenir |
+| Bildirim servisi | Siz veya PakSoft | Bildirim hacmi ve kullanılan servis |
+| Bakım ve destek | PakSoft’a | Tarayıcı ve platform değişikliklerine uyum kapsamı |
+
+## PWA Geliştirme fiyatını neler etkiler?
+
+PWA Geliştirme için herkese uyan tek bir fiyat yoktur; kapsam ve işin büyüklüğü belirleyicidir. Bu sayfada tutar vermeyiz. Fiyatı etkileyen başlıca etkenler şunlardır:
+
+- **Çevrimdışı kapsam.** Ne kadar verinin yerelde çalışacağı karmaşıklığı belirler
+- **Mevcut web mimarisi.** Önbelleğe uygun olmayan yapı ek düzenleme gerektirir
+- **Platform hedefi.** iOS desteği ek test ve kısıtlama yönetimi getirir
+- **Bildirim ihtiyacı.** Platform sınırları kapsamı daraltabilir
+- **Bakım beklentisi.** Tarayıcı güncellemelerine uyum ve önbellek sürümleme
+
+## Üç farklı çalışma kapsamı
+
+| Kapsam | Kimin işi? | Ne zaman uygun? |
+| --- | --- | --- |
+| Danışmanlık | Siz uygularsınız, biz yönlendiririz | Kendi ekibi işi yürütebilen işletmeler |
+| Uygulama | Biz planlar ve uygularız | Düzenli teslim bekleyenler |
+| Uygulama ve süreklilik | Biz uygular, izler ve geliştiririz | Sürekli iyileştirme isteyenler |
+
+## Teklifleri karşılaştırırken bunları sorun
+
+1. Hangi işler teklife dahil, hangileri kapsam dışı?
+2. Teslimlerin biçimi, sayısı ve revizyon hakkı nedir?
+3. Üçüncü taraf ücretleri ayrı mı yazılmış?
+4. Raporda hangi kararlar açıklanacak ve ne sıklıkla paylaşılacak?
+5. Çalışma bittiğinde hesaplar, dosyalar ve veriler kimde kalacak?
+
+## Sık sorulan fiyat soruları
+
+### PWA Geliştirme için sabit bir fiyat listesi var mı?
+
+Hayır. Kapsam, işin büyüklüğü ve ihtiyaç duyulan araçlar fiyatı değiştirir; teklifte kalemler ayrı yazılır.
+
+### Yalnızca danışmanlık alabilir miyim?
+
+Evet. Kendi ekibiniz işi yürütüyorsa planlama ve kontrol desteği ayrı bir kapsam olabilir.
+
+### Kesin sonuç veya getiri garantisi var mı?
+
+Hayır. Sonuçlar birçok etkene bağlıdır; bu nedenle belirli bir sonuç sözü vermeyiz. Ölçüm ve raporlama ile ilerlemeyi şeffaf gösteririz.
+
+## Kapsamınıza uygun teklif alın
+
+Hedefinizi ve mevcut durumunuzu paylaşın; çalışma kapsamını ve maliyet kalemlerini ayrı ayrı yazalım.

@@ -28,7 +28,7 @@ Dönüşüm oranı; trafik kaynağı, fiyat, stok, kampanya ve mevsimden de etki
 | Teslimler | Her çalışmanın çıktısı, biçimi ve teslim tarihi belirlenir |
 | Revizyon | Kaç tur düzeltme yapılacağı ve onay sürecinin kimde olduğu belirlenir |
 | Erişim ve sahiplik | Hesaplar, dosyalar ve kaynak materyallerin kimde kalacağı belirlenir |
-| Üçüncü taraf ücretleri | Lisans, platform veya reklam bütçesi gibi giderler teklifte ayrı yazılır |
+| Üçüncü taraf ücretleri | Lisans, sunucu, platform veya kullanım ücreti gibi giderler teklifte ayrı yazılır |
 
 ## Hangi durumlarda farklı bir yaklaşım öneririz?
 

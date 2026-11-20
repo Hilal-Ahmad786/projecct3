@@ -120,7 +120,7 @@ def gen(sp):
                ['Teslimler', 'Her çalışmanın çıktısı, biçimi ve teslim tarihi belirlenir'],
                ['Revizyon', 'Kaç tur düzeltme yapılacağı ve onay sürecinin kimde olduğu belirlenir'],
                ['Erişim ve sahiplik', 'Hesaplar, dosyalar ve kaynak materyallerin kimde kalacağı belirlenir'],
-               ['Üçüncü taraf ücretleri', 'Lisans, platform veya reklam bütçesi gibi giderler teklifte ayrı yazılır'],
+               ['Üçüncü taraf ücretleri', 'Lisans, sunucu, platform veya kullanım ücreti gibi giderler teklifte ayrı yazılır'],
            ]), '',
            '## Hangi durumlarda farklı bir yaklaşım öneririz?',
            f"{S} her işletme için ilk adım olmayabilir. Hedef netleşmemişse, mevcut altyapı bu çalışmayı taşıyamıyorsa ya da başarıyı değerlendirecek bir kayıt yoksa önce bunları ele almak daha doğru olabilir. Böyle bir durumda kapsamı daraltır veya önce hazırlık işini öneririz; amacımız çalışmanın işletmenize gerçekten fayda sağlamasıdır.", '',

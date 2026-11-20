@@ -1,0 +1,312 @@
+{
+  "name": "Ödeme Sistemi Entegrasyonu",
+  "short": "Ödeme Entegrasyonu",
+  "shortLower": "ödeme entegrasyonu",
+  "hero": {
+    "eyebrow": "Ödeme Sistemi Entegrasyonu",
+    "keywordLine": "3D Secure · Webhook · İade akışı · Mutabakat",
+    "cta": "Ödeme Entegrasyonu Teklifi Al",
+    "words": [
+      "Hizmeti",
+      "Kurulumu",
+      "Danışmanlığı"
+    ]
+  },
+  "overview": {
+    "title": "Ödeme Entegrasyonu",
+    "chips": [
+      "3D Secure akışı",
+      "Webhook ve tekrar",
+      "İade ve mutabakat"
+    ],
+    "report": "Sonuç raporu",
+    "bars": [
+      "Ödeme",
+      "Hook",
+      "İade"
+    ],
+    "badge": "Kapsam yazılı belirlenir",
+    "steps": [
+      "Hedef",
+      "Plan",
+      "Uygulama",
+      "Rapor"
+    ]
+  },
+  "scene": {
+    "scope": {
+      "title": "Hizmet kapsamı",
+      "items": [
+        "Ödeme sayfası akışı",
+        "3D Secure doğrulama",
+        "Webhook ve idempotency",
+        "İade ve mutabakat"
+      ],
+      "test": [
+        "Seçenek A",
+        "Seçenek B",
+        "Karşılaştırma"
+      ],
+      "result": "Sonraki adım"
+    },
+    "meas": {
+      "browser": [
+        "Sağlayıcı paneli",
+        "Eylem"
+      ],
+      "server": [
+        "Sipariş kaydı",
+        "Kayıt"
+      ],
+      "report": "Mutabakat raporu",
+      "events": [
+        "Başarılı ödeme",
+        "Bildirim hatası",
+        "Mutabakat farkı"
+      ],
+      "badge": "Kayıt doğrulandı",
+      "consent": "İzin tercihi uygulanır"
+    },
+    "time": {
+      "milestones": [
+        "Analiz",
+        "Plan",
+        "Uygulama",
+        "Test",
+        "Yayın"
+      ],
+      "plan": [
+        "Sağlayıcı seçimi",
+        "Test ortamı",
+        "Hata senaryoları",
+        "Canlıya alma"
+      ]
+    },
+    "kase": {
+      "notes": [
+        "Gözlem",
+        "Değişiklik",
+        "Kontrol"
+      ],
+      "start": [
+        "Başlangıç",
+        "Ödeme var, sipariş yok"
+      ],
+      "approach": [
+        "Yaklaşım",
+        "Çift tahsilat riski"
+      ],
+      "verdict": "Değerlendirme gerçek kayıtlarla yapılır"
+    },
+    "budget": {
+      "plan": "Proje planı",
+      "spend": [
+        "İşlem komisyonu",
+        "Ayrı ödenir"
+      ],
+      "items": [
+        "Entegrasyon",
+        "Webhook ve iade",
+        "Test ve doküman"
+      ],
+      "badge": "Kalemler ayrı yazılır"
+    },
+    "faq": {
+      "search": "Ödeme sistemi entegrasyonu",
+      "questions": [
+        "Hangi sağlayıcıyı seçmeliyim?",
+        "3D Secure şart mı?",
+        "Kart bilgisini siz saklar mısınız?"
+      ],
+      "answer": [
+        "İşlem komisyonu sağlayıcıya ödenir,",
+        "entegrasyon bedeli ayrı yazılır."
+      ],
+      "topics": [
+        "Kapsam",
+        "Süreç",
+        "Bütçe"
+      ]
+    }
+  },
+  "related": [
+    [
+      "E-Ticaret Çözümleri",
+      "Mağazanızı ve satış akışınızı geliştirin.",
+      "/tr/hizmetler/e-commerce"
+    ],
+    [
+      "API Geliştirme",
+      "Kendi servislerinizi güvenli şekilde sunun.",
+      "/tr/hizmetler/api-development"
+    ],
+    [
+      "Siber Güvenlik",
+      "Uygulamanızın güvenlik düzeyini gözden geçirin.",
+      "/tr/hizmetler/cybersecurity"
+    ]
+  ],
+  "jump": [
+    [
+      "Ödeme Entegrasyonu hizme",
+      "Ödeme Entegrasyonu"
+    ],
+    [
+      "Ödeme Sistemi Entegrasyo",
+      "Ödeme Sistemi Entegrasyonu"
+    ],
+    [
+      "Sağlayıcı seçimi: seçene",
+      "Sağlayıcı seçimi"
+    ],
+    [
+      "Webhook, idempotency ve ",
+      "Webhook, idempotency ve hata"
+    ],
+    [
+      "Ödeme Entegrasyonu için ",
+      "Ödeme Entegrasyonu için"
+    ],
+    [
+      "Ödeme Entegrasyonu maliy",
+      "Ödeme Entegrasyonu maliyetini"
+    ],
+    [
+      "Birlikte değerlendirileb",
+      "Birlikte"
+    ],
+    [
+      "İhtiyacınıza uygun planı",
+      "İhtiyacınıza uygun planı"
+    ],
+    [
+      "Ödeme sistemi entegrasyo",
+      "Ödeme sistemi entegrasyonunda"
+    ],
+    [
+      "PCI kapsamı ve sorumlulu",
+      "PCI kapsamı ve sorumluluklar"
+    ],
+    [
+      "Hizmete dahil olanlar te",
+      "Hizmete dahil olanlar"
+    ],
+    [
+      "Hangi durumlarda farklı ",
+      "Hangi durumlarda farklı bir"
+    ],
+    [
+      "Kapsamı birlikte belirle",
+      "Kapsamı birlikte belirleyelim"
+    ],
+    [
+      "Ödeme Entegrasyonu çalış",
+      "Ödeme Entegrasyonu"
+    ],
+    [
+      "Hangi ölçüler birlikte i",
+      "Hangi ölçüler birlikte izlenir"
+    ],
+    [
+      "Raporlar neden farklı so",
+      "Raporlar neden farklı"
+    ],
+    [
+      "Altyapınız için doğru ba",
+      "Altyapınız için doğru"
+    ],
+    [
+      "Satış modelinizi ve ihti",
+      "Satış modelinizi ve"
+    ],
+    [
+      "Sağlayıcı ve kapsamı net",
+      "Sağlayıcı ve kapsamı"
+    ],
+    [
+      "Test ortamını ve erişiml",
+      "Test ortamını ve erişimleri"
+    ],
+    [
+      "Akışı geliştirip senaryo",
+      "Akışı geliştirip senaryoları"
+    ],
+    [
+      "Canlıya alıp ilk işlemle",
+      "Canlıya alıp ilk işlemleri"
+    ],
+    [
+      "İlk dönemde ne yapılır?",
+      "İlk dönemde ne yapılır"
+    ],
+    [
+      "Başlamak için hangi bilg",
+      "Başlamak için hangi bilgileri"
+    ],
+    [
+      "Online mağaza için örnek",
+      "Online mağaza için örnek"
+    ],
+    [
+      "Abonelik satan yazılım i",
+      "Abonelik satan yazılım için"
+    ],
+    [
+      "Bir sonuç raporunda hang",
+      "Bir sonuç raporunda hangi"
+    ],
+    [
+      "Sizin çalışmanızda hangi",
+      "Sizin çalışmanızda hangi"
+    ],
+    [
+      "Hangi gider kime ödenir?",
+      "Hangi gider kime ödenir"
+    ],
+    [
+      "Ödeme Entegrasyonu fiyat",
+      "Ödeme Entegrasyonu fiyatını"
+    ],
+    [
+      "Üç farklı çalışma kapsam",
+      "Üç farklı çalışma kapsamı"
+    ],
+    [
+      "Teklifleri karşılaştırır",
+      "Teklifleri karşılaştırırken"
+    ],
+    [
+      "Sık sorulan fiyat sorula",
+      "Sık sorulan fiyat soruları"
+    ],
+    [
+      "Kapsamınıza uygun teklif",
+      "Kapsamınıza uygun teklif alın"
+    ],
+    [
+      "Hizmet ve kapsam",
+      "Hizmet ve kapsam"
+    ],
+    [
+      "Süreç ve sonuçlar",
+      "Süreç ve sonuçlar"
+    ],
+    [
+      "Hesap, erişim ve veri",
+      "Hesap, erişim ve veri"
+    ],
+    [
+      "Sorunuz işletmenize özel",
+      "Sorunuz işletmenize özel mi"
+    ]
+  ],
+  "closing": {
+    "overview": "İhtiyacınıza uygun planı",
+    "features": "Kapsamı birlikte belirle",
+    "technologies": "Altyapınız için doğru ba",
+    "process": "Başlamak için hangi bilg",
+    "portfolio": "Sizin çalışmanızda hangi",
+    "pricing": "Kapsamınıza uygun teklif",
+    "faq": "Sorunuz işletmenize özel"
+  }
+}
