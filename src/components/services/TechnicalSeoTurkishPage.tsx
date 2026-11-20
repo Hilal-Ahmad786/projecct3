@@ -1,4 +1,4 @@
-import { BudgetScene, CaseScene, GuidesScene, MeasureScene, QaScene, ScopeScene, TimelineScene } from '@/components/services/hero-visuals/scenes-subpages';
+import { GuidesScene, HeroStage, QaScene } from '@/components/services/hero-visuals/scenes-subpages';
 import type { ReactNode } from 'react';
 import { WrenchScrewdriverIcon } from '@heroicons/react/24/outline';
 import IkasVisual from '@/components/ikas/visuals/IkasVisual';
@@ -76,15 +76,14 @@ const VISUALS: SeoServiceConfig['visuals'] = {
     ['Örnek teknik SEO denetimi', aside(V.findings())],
     ['Tarama bütçesi ve sunucu', aside(EK.logs())],
 
-    ['Mobil içerik ve dil', aside(V.crawl())],  ],
+  ],
   technologies: [
     ['Ölçümleri nasıl yorumluyoruz', aside(V.render())],
     ['Screaming Frog ile', aside(EK.crawl())],
     ['Denetim için hangi erişimler', aside(<IkasVisual name="project-brief" loop label="Temsili denetim hazırlığı: site adresi, öncelikli sayfalar, Search Console erişimi ve altyapı bilgisi" className="mx-auto w-full max-w-xl" />)],
 
-    ['Örnek inceleme — Yeni', aside(V.sources())],  ],
+  ],
   process: [
-    ['Teknik SEO çalışmasının 5 adımı', { place: 'below', node: V.rail() }],
     ['Örnek uygulama', aside(V.redirects())],
     ['Site taşımasında hangi kontrol', aside(EK.migration())],
     ['Ani organik trafik düşüşünde', aside(EK.drop())],
@@ -93,20 +92,21 @@ const VISUALS: SeoServiceConfig['visuals'] = {
     ['Temsili örnek — Çok dilli', aside(EK.hreflang())],
     ['Bir teknik SEO örneğinde', aside(V.report())],
 
-    ['Temsili uygulama örnekleri', aside(V.evidence())],  ],
+  ],
   pricing: [
     ['Üç örnek teklif kapsamı', aside(<IkasVisual name="method-options" loop label="Üç teklif kapsamı: yalnızca denetim, denetim ve uygulama, denetim ile düzenli takip" slotLabels={{ 'slot-option-1': 'Yalnızca denetim', 'slot-option-2': 'Denetim + uygulama', 'slot-option-3': 'Düzenli takip' }} className="mx-auto w-full max-w-xl" />)],
 
-    ['Teknik SEO ve SEO', aside(V.quote())],  ],
+  ],
 };
 
-// Sub-page heroes: animated story scenes in the overview standard (scenes-subpages.tsx).
+// Sub-page heroes: each service shows its OWN labelled illustration inside the animated HeroStage frame.
+const stage = (label: string, node: ReactNode, steps: string[], badge?: string) => <HeroStage label={label} steps={steps} badge={badge}>{node}</HeroStage>;
 const HERO_ART: SeoServiceConfig['heroArt'] = {
-  features: () => <ScopeScene label={"Temsili Teknik SEO kapsamı: Tarama ve indeks, Site hızı, Yönlendirmeler, Yapısal veri adım adım tamamlanıyor; iki seçenek sırayla karşılaştırılıyor ve sonraki adım belirleniyor."} title={"Denetim kapsamı"} items={["Tarama ve indeks", "Site hızı", "Yönlendirmeler", "Yapısal veri"]} test={["Eski adres", "Yeni adres", "Yönlendirme testi"]} result={"Doğrulandı"} steps={["Tarama", "Bulgu", "Düzeltme", "Doğrulama"]} />,
-  technologies: () => <MeasureScene label={"Temsili Teknik SEO ölçüm akışı: Site sayfası ve Sunucu kayıtları verisi aynı rapora ulaşıyor; sonuç doğrulanıyor."} browser={["Site sayfası", "Sayfayı tara"]} server={["Sunucu kayıtları", "Log analizi"]} report={"Denetim raporu"} events={["200 durum kodu", "Kanonik doğru", "Sitemap’te var"]} badge={"Hata giderildi"} consent={"robots.txt doğru"} steps={["Tarama", "Bulgu", "Düzeltme", "Doğrulama"]} />,
-  process: () => <TimelineScene label={"Temsili Teknik SEO süreci: Tarama, Bulgular, Öncelik, Düzeltme, Doğrulama adımları sırayla ilerliyor; ilk dönem planı kontrol ediliyor."} milestones={["Tarama", "Bulgular", "Öncelik", "Düzeltme", "Doğrulama"]} plan={["Denetim planı", "Tarama ve indeks", "Hız ölçümü", "Yönlendirme haritası"]} steps={["Denetim", "Öncelik", "Uygulama", "Doğrulama"]} />,
-  portfolio: () => <CaseScene label={"Temsili Teknik SEO senaryosu: raporda gözlem, değişiklik ve kontrol noktaları işaretleniyor; başlangıçtan yaklaşıma geçiliyor."} title="Temsili senaryo" badge="Temsili" notes={["Bulgu", "Düzeltme", "Kontrol"]} start={["Başlangıç", "İndeks sorunu"]} approach={["Yaklaşım", "Kanonik ve sitemap"]} verdict={"Doğrulama Search Console ile yapılır"} steps={["Durum", "Kontrol", "Değişiklik", "Sonuç"]} />,
-  pricing: () => <BudgetScene label={"Teknik SEO maliyet kalemleri: Denetim planı, geliştirme işi ve PakSoft teklifindeki ayrı kalemler olarak ikiye ayrılıyor."} plan={"Denetim planı"} spend={["Geliştirme işi", "Ayrı kalem"]} quote="PakSoft teklifi" items={["Teknik denetim", "Öncelik listesi", "Doğrulama"]} badge={"Kapsam yazılı belirlenir"} steps={["Bütçe", "Kapsam", "Teklif", "Onay"]} />,
+  features: () => stage('Teknik SEO hizmet kapsamı', V.crawl(), ['Analiz', 'Plan', 'Uygulama', 'Rapor']),
+  technologies: () => stage('Teknik SEO araçlar ve ölçüm akışı', V.sources(), ['Tarama', 'İndeks', 'Görünürlük', 'Rapor'], 'Veri doğrulanır'),
+  process: () => stage('Teknik SEO çalışma süreci', V.rail(), ['Analiz', 'Öncelik', 'Uygulama', 'Ölçüm']),
+  portfolio: () => stage('Teknik SEO temsili senaryolar', V.evidence(), ['Durum', 'Kontrol', 'Değişiklik', 'Sonuç'], 'Temsili'),
+  pricing: () => stage('Teknik SEO maliyet kalemleri', V.quote(), ['Kapsam', 'Çalışma', 'Teklif', 'Onay'], 'Kapsam yazılı'),
   faq: () => <QaScene label={"Teknik SEO hakkında sık sorulan sorular: arama yapılıyor, ilk sorunun yanıtı açılıyor ve konular sırayla vurgulanıyor."} search={"Sayfam neden indekslenmiyor"} questions={["Sayfam neden indekslenmiyor?", "Site taşımada trafik düşer mi?", "Düzeltmeleri kim uygular?"]} answer={["Tarama, kanonik ve kalite sinyalleri", "sırayla kontrol edilir."]} topics={["İndeks", "Hız", "Taşıma"]} steps={["Soru", "Yanıt", "Kapsam", "Teklif"]} />,
 };
 

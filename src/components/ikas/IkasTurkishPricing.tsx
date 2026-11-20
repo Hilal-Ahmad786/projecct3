@@ -1,4 +1,5 @@
-import { BudgetScene, CaseScene, GuidesScene, MeasureScene, QaScene, ScopeScene, TimelineScene } from '@/components/services/hero-visuals/scenes-subpages';
+import { HeroStage } from '@/components/services/hero-visuals/scenes-subpages';
+import { ikasArt } from '@/components/services/hero-visuals/platform-art';
 import Link from '@/components/IntentLink';
 import { trTitleCase } from '@/lib/tr-title-case';
 import type { ReactNode } from 'react';
@@ -59,7 +60,7 @@ export default function IkasTurkishPricing() {
       heading="ikas Kurulum ve Tema Tasarımı Hizmet Fiyatlandırması"
       subtitle="ikas mağazanız için hizmet bedeli; yapılacak kurulum, tema çalışması, veri aktarımı ve entegrasyon kapsamına göre belirlenir. Teklifte PakSoft’un yapacağı işleri, teslimleri ve ayrıca karşılanacak platform veya uygulama giderlerini ayırıyoruz."
       rotating={{ lead: 'ikas Kurulum', words: ['Hizmet Fiyatları', 'Teklif Kapsamı', 'Maliyet Etkenleri'] }}
-      scene={<IkasHeroScene><BudgetScene label={"ikas mağaza maliyet kalemleri: ikas paket ücreti ve PakSoft teklifindeki ayrı kalemler."} plan={"Mağaza bütçesi"} spend={["ikas paketi", "ikas hesabınız"]} quote={"PakSoft teklifi"} items={["Tema tasarımı", "Kurulum", "Entegrasyon"]} badge={"Kalemler ayrı yazılır"} steps={["Kapsam", "Tahmin", "Teklif", "Onay"]} /></IkasHeroScene>}
+      scene={<IkasHeroScene><HeroStage label="ikas teklif kalemleri" steps={["Kapsam","Tahmin","Teklif","Onay"]} badge="Kalemler ayrı">{ikasArt.pricing()}</HeroStage></IkasHeroScene>}
       crumbs={[{ label: 'Ana Sayfa', href: '/' }, { label: 'Hizmetler', href: '/hizmetler' }, { label: 'ikas Geliştirme', href: base }, { label: 'Fiyatlandırma' }]}
       actions={<><Action href={enquiry}>ikas Projem İçin Teklif Talep Et</Action><Action href="#ikas-ornek-kapsamlar" secondary>Örnek Kapsamları İncele</Action></>}
     />

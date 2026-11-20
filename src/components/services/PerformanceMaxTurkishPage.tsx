@@ -1,4 +1,4 @@
-import { BudgetScene, CaseScene, GuidesScene, MeasureScene, QaScene, ScopeScene, TimelineScene } from '@/components/services/hero-visuals/scenes-subpages';
+import { GuidesScene, HeroStage, QaScene } from '@/components/services/hero-visuals/scenes-subpages';
 import type { CSSProperties } from 'react';
 import type { ReactNode } from 'react';
 import { ChartBarIcon, ClipboardDocumentCheckIcon, CursorArrowRaysIcon, RectangleGroupIcon, SignalIcon, SparklesIcon } from '@heroicons/react/24/outline';
@@ -65,7 +65,7 @@ const V = {
   report: () => art('report', 'Temsili Performance Max hesap incelemesi: dönüşüm hedefleri kontrol edildi, öğe grupları ayrıldı, ürün kapsamı netleştirildi; harcama ve dönüşüm değeri; sıradaki iş değer tanımı', { 'slot-title': 'Hesap incelemesi', 'slot-tag': 'Temsili', 'slot-done-1': 'Dönüşüm hedefi kontrol', 'slot-done-2': 'Öğe grupları ayrıldı', 'slot-done-3': 'Ürün kapsamı netleşti', 'slot-chart': 'Harcama ve dönüşüm değeri', 'slot-next': 'Sıradaki iş: değer tanımı' }),
   assetGroup: () => art('tech-finding', 'Temsili öğe grubu: sarkıt avizeler için başlıklar, ürün ve ortam görselleri, listeleme grubu ve aynı kategoriye giden açılış sayfası', { 'slot-title': 'Öğe grubu · Sarkıt avizeler', 'slot-priority': 'Temsili', 'slot-label-1': 'Başlıklar', 'slot-value-1': 'Sarkıt avize modelleri', 'slot-label-2': 'Görseller', 'slot-value-2': 'Ürün ve ortam fotoğrafı', 'slot-label-3': 'Ürünler', 'slot-value-3': 'Sarkıt avize listesi', 'slot-label-4': 'Açılış sayfası', 'slot-value-4': '/sarkit-avizeler' }),
   merchant: () => art('gads-merchant-issues', 'Temsili Merchant Center ürün durumları: onaylı sarkıt avize, fiyatı veri kaynağında eski kalan aplik, marka ve GTIN bilgisi eksik ürün', { 'slot-mc': 'Merchant Center · ürün durumları', 'slot-h-product': 'Ürün', 'slot-h-status': 'Durum', 'slot-h-fix': 'Yapılacak', 'slot-product-1': 'Sarkıt avize · pirinç', 'slot-status-1': 'Onaylandı', 'slot-fix-1': '—', 'slot-product-2': 'Duvar apliği · siyah', 'slot-status-2': 'Reddedildi', 'slot-fix-2': 'Fiyatı eşitle', 'slot-product-3': 'Bahçe armatürü', 'slot-status-3': 'Uyarı', 'slot-fix-3': 'GTIN ekle', 'slot-product-4': 'Sarkıt avize · beyaz', 'slot-status-4': 'Onaylandı', 'slot-fix-4': '—', 'slot-note': 'Durumlar temsilidir; güncel neden Merchant Center’daki ürün ayrıntısında görülür' }),
-  tagFlow: () => art('gads-tag-flow', 'Performance Max ölçüm akışı: sitede tamamlanan sipariş veya form, etiket testi ve kampanyanın kullandığı Google Ads dönüşüm hedefi', { 'slot-step-1': 'Sipariş veya form', 'slot-sub-1': 'Sitede tamamlanan işlem', 'slot-step-2': 'Etiket testi', 'slot-sub-2': 'Tag Assistant', 'slot-step-3': 'Dönüşüm hedefi', 'slot-sub-3': 'Google Ads kampanyası', 'slot-note': 'Her adım ayrı kontrol edilir; bir adım geçmeden sonraki adıma güvenilmez.' }),
+  tagFlow: () => art('gads-tag-flow', 'Performance Max ölçüm akışı: sitede tamamlanan sipariş veya form, etiket testi ve kampanyanın kullandığı Google Ads dönüşüm hedefi', { 'slot-step-1': 'Sipariş veya form', 'slot-sub-1': 'Site işlemi', 'slot-step-2': 'Etiket testi', 'slot-sub-2': 'Tag Assistant', 'slot-step-3': 'Dönüşüm hedefi', 'slot-sub-3': 'Kampanya', 'slot-note': 'Her adım ayrı kontrol edilir; bir adım geçmeden sonraki adıma güvenilmez.' }),
   ga4: () => art('gads-ga4-match', 'Satın alma ölçümü: Google Ads satın alma dönüşümü kampanya hedefinde birincil, GA4’teki aynı satın alma analiz için ikincil, sayfa görüntüleme dönüşüm olarak kullanılmıyor', { 'slot-h-ga4': 'Ölçüm kaynağı', 'slot-h-ads': 'Kampanyada kullanımı', 'slot-ga4-1': 'Ads etiketi · purchase', 'slot-ads-1': 'Birincil · teklif hedefi', 'slot-ga4-2': 'GA4 · purchase', 'slot-ads-2': 'İkincil · analiz', 'slot-ga4-3': 'page_view', 'slot-ads-3': 'Dönüşüm olarak kullanılmaz' }),
   offline: () => art('gads-offline', 'Nitelikli talep aktarımı: makine üreticisinin CRM’inde nitelikli başvuru aşamasına geçen kayıtlar Google Ads’e ayrı bir dönüşüm olarak aktarılıyor', { 'slot-crm': 'CRM aşamaları', 'slot-stage-1': 'Form gönderimi', 'slot-stage-2': 'Satış ekibi incelemesi', 'slot-stage-3': 'Nitelikli başvuru', 'slot-stage-4': 'Satış', 'slot-ads': 'Google Ads dönüşümü', 'slot-ads-1': 'Form gönderimi', 'slot-ads-2': 'Nitelikli başvuru (içe aktarılan)', 'slot-note': 'Aktarım tekrar sayılmamalı; test kaydıyla doğrulanır' }),
   test: () => art('gads-gtm-test', 'Temsili ölçüm testi: başarılı siparişte etiket çalışıyor, sayfa yenilemede tekrar sayılmıyor, form hatasında tetiklenmiyor', { 'slot-panel': 'Ölçüm testi · Tag Assistant', 'slot-mode': 'Önizleme', 'slot-test-1': 'Başarılı sipariş', 'slot-result-1': 'Etiket tetiklendi', 'slot-test-2': 'Onay sayfası yenileme', 'slot-result-2': 'Tekrar sayılmadı (doğru)', 'slot-test-3': 'Form hatası', 'slot-result-3': 'Tetiklenmedi (doğru)', 'slot-log': 'Test tarihi, sayfa ve sorumlu kayda geçirilir' }),
@@ -87,39 +87,35 @@ const visuals: SeoServiceConfig['visuals'] = {
     ['Mevcut Performance Max', aside(V.report())],
   ],
   features: [
-    ['Reklam öğeleri ürün veya', aside(V.assetGroup())],
     ['Alışveriş odaklı Performance', aside(V.merchant())],
     ['Listeleme grupları ve özel', aside(V.listing())],
   ],
   technologies: [
-    ['Performance Max ölçümünde', aside(V.tagFlow())],
     ['E-ticarette satın alma', aside(V.ga4())],
     ['Teklif taleplerinde form', aside(V.offline())],
     ['Müşteri listeleri ve CRM', aside(V.consent())],
     ['Ölçüm kurulumunu', aside(V.test())],
   ],
   process: [
-    ['Performance Max kampanyasını nasıl', { place: 'below', node: V.rail() }],
     ['Haftalık ve aylık kontrolleri', aside(V.weekly())],
     ['Yayına geçiş süresini', aside(V.launch())],
   ],
   portfolio: [
     ['Bir Performance Max sorununu', aside(V.diagnose())],
-    ['Kampanya değerlendirmesinde', aside(V.evidence())],
   ],
   pricing: [
-    ['Performance Max teklifinde', aside(V.budget())],
     ['Kurulum ve yönetim ücretini', aside(V.quote())],
   ],
 };
 const diagram = (title: string, items: { label: string; detail: string }[]): (() => ReactNode) => () => <PerformanceMaxMiniDiagram title={title} items={items} />;
-// Sub-page heroes: animated story scenes in the overview standard (scenes-subpages.tsx).
+// Sub-page heroes: each service shows its OWN labelled illustration inside the animated HeroStage frame.
+const stage = (label: string, node: ReactNode, steps: string[], badge?: string) => <HeroStage label={label} steps={steps} badge={badge}>{node}</HeroStage>;
 const SUB_HERO_ART: SeoServiceConfig['heroArt'] = {
-  features: () => <ScopeScene label={"Temsili Performance Max kapsamı: Öğe grupları, Ürün kapsamı, Kitle sinyalleri, Açılış sayfası adım adım tamamlanıyor; iki seçenek sırayla karşılaştırılıyor ve sonraki adım belirleniyor."} title={"Kampanya öğeleri"} items={["Öğe grupları", "Ürün kapsamı", "Kitle sinyalleri", "Açılış sayfası"]} test={["Öğe A", "Öğe B", "Öğe testi"]} result={"Sonraki test"} steps={["Hedef", "Öğeler", "Ölçüm", "Rapor"]} />,
-  technologies: () => <MeasureScene label={"Temsili Performance Max ölçüm akışı: Google etiketi ve Ürün verisi verisi aynı rapora ulaşıyor; sonuç doğrulanıyor."} browser={["Google etiketi", "Satın al"]} server={["Ürün verisi", "Merchant Center"]} report={"Dönüşüm raporu"} events={["Satın alma", "Teklif talebi", "Dönüşüm değeri"]} badge={"Değer doğru"} consent={"İzin modu uygulanır"} steps={["Olay planı", "Kurulum", "Test", "Rapor"]} />,
-  process: () => <TimelineScene label={"Temsili Performance Max süreci: Hedef, Ölçüm, Öğeler, Yayın, Rapor adımları sırayla ilerliyor; ilk dönem planı kontrol ediliyor."} milestones={["Hedef", "Ölçüm", "Öğeler", "Yayın", "Rapor"]} plan={["İlk dönem planı", "Dönüşüm hedefi", "Öğe grupları", "Ürün verisi"]} steps={["Hedef", "Hazırlık", "Yayın", "Değerlendirme"]} />,
-  portfolio: () => <CaseScene label={"Temsili Performance Max senaryosu: raporda gözlem, değişiklik ve kontrol noktaları işaretleniyor; başlangıçtan yaklaşıma geçiliyor."} title="Temsili senaryo" badge="Temsili" notes={["Gözlem", "Ürün ayrımı", "Kontrol"]} start={["Başlangıç", "Satış az"]} approach={["Yaklaşım", "Ürün grupları"]} verdict={"Değerlendirme aynı dönemle yapılır"} steps={["Durum", "Kontrol", "Değişiklik", "Sonuç"]} />,
-  pricing: () => <BudgetScene label={"Performance Max maliyet kalemleri: Reklam planı, reklam bütçesi ve PakSoft teklifindeki ayrı kalemler olarak ikiye ayrılıyor."} plan={"Reklam planı"} spend={["Reklam bütçesi", "Google Ads hesabınız"]} quote="PakSoft teklifi" items={["Kurulum", "Aylık yönetim", "Öğe üretimi"]} badge={"Kalemler ayrı yazılır"} steps={["Bütçe", "Kapsam", "Teklif", "Onay"]} />,
+  features: () => stage('Performance Max hizmet kapsamı', V.assetGroup(), ['Kapsam', 'Plan', 'Uygulama', 'Rapor']),
+  technologies: () => stage('Performance Max araçlar ve ölçüm akışı', V.tagFlow(), ['Etiket', 'Dönüşüm', 'Test', 'Rapor'], 'Test edilmeden yayın yok'),
+  process: () => stage('Performance Max çalışma süreci', V.rail(), ['Hedef', 'Hazırlık', 'Yayın', 'Değerlendirme']),
+  portfolio: () => stage('Performance Max temsili senaryolar', V.evidence(), ['Durum', 'Kontrol', 'Değişiklik', 'Sonuç'], 'Temsili'),
+  pricing: () => stage('Performance Max maliyet kalemleri', V.budget(), ['Bütçe', 'Kapsam', 'Teklif', 'Onay'], 'Kalemler ayrı'),
   faq: () => <QaScene label={"Performance Max hakkında sık sorulan sorular: arama yapılıyor, ilk sorunun yanıtı açılıyor ve konular sırayla vurgulanıyor."} search={"Performance Max nedir"} questions={["Arama kampanyasının yerine geçer mi?", "Hangi ürünlerle başlamalıyım?", "Bütçe yönetim ücretine dahil mi?"]} answer={["Tek kampanyada Google kanallarında", "yayın yapar; yönlendirme öğelerle olur."]} topics={["Kampanya", "Ürün verisi", "Bütçe"]} steps={["Soru", "Yanıt", "Kapsam", "Teklif"]} />,
 };
 

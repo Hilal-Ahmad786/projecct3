@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import { MegaphoneIcon } from '@heroicons/react/24/outline';
 import type { SectionVisual } from '@/components/e-commerce/ServiceMarkdownPage';
-import { BudgetScene, CaseScene, GuidesScene, MeasureScene, QaScene, ScopeScene, TimelineScene } from '@/components/services/hero-visuals/scenes-subpages';
+import { GuidesScene, HeroStage, QaScene } from '@/components/services/hero-visuals/scenes-subpages';
 import SeoArtwork from '@/components/seo/visuals/SeoArtwork';
 import type { SeoVisualName } from '@/components/seo/visuals/generated';
 import { createSeoService, type SeoPageKind, type SeoServiceConfig } from './seo-pages/SeoServiceEngine';
@@ -37,7 +37,7 @@ const V = {
   rail: (c?: string) => art('process-rail', 'Meta reklam yönetimi süreci: hedef ve mevcut durum, erişim ve ölçüm kontrolü, içerik ve bütçe planı, yayın ve değerlendirme', { 'slot-step-1': 'Hedef', 'slot-sub-1': 'Mevcut durum', 'slot-step-2': 'Erişim ve ölçüm', 'slot-sub-2': 'Kontrol listesi', 'slot-step-3': 'İçerik ve bütçe', 'slot-sub-3': 'Onaylı plan', 'slot-step-4': 'Yayın ve rapor', 'slot-sub-4': 'Sonraki test' }, c),
   launch: (c?: string) => art('contract-scope', 'Yayın öncesi kontrol kaydı: reklam bağlantıları, mobil görünüm, teklif bilgisi, ölçüm testi ve müşteri onayı', { 'slot-doc': 'Yayın kontrol kaydı', 'slot-clause-1': 'Reklam bağlantıları', 'slot-clause-2': 'Mobil görünüm', 'slot-clause-3': 'Teklif bilgisi', 'slot-clause-4': 'Ölçüm testi', 'slot-clause-5': 'Onay eksikse yayın bekler' }, c),
   review: (c?: string) => art('monthly-plan', 'Temsili izleme planı: yayın kontrolü, harcama ve kayıt, talep kalitesi ve sonraki test önerisi', { 'slot-month': 'İzleme planı', 'slot-week-1': 'Yayın sonrası', 'slot-week-2': 'Düzenli', 'slot-week-3': 'Düzenli', 'slot-week-4': 'Dönem sonu', 'slot-task-1': 'Yayın kontrolü', 'slot-task-sub-1': 'Bağlantı ve bütçe', 'slot-task-2': 'Harcama ve kayıt', 'slot-task-sub-2': 'Aynı dönem', 'slot-task-3': 'Talep kalitesi', 'slot-task-sub-3': 'Ekip geri bildirimi', 'slot-task-4': 'Sonraki test', 'slot-task-sub-4': 'Gerekçesiyle' }, c),
-  project: (c?: string) => art('tech-finding', 'Bir Meta reklam projesi değerlendirmesinde bulunması gerekenler: işletme hedefi, başlangıç durumu, yapılan işler, dönem ve veri kaynağı', { 'slot-title': 'Proje değerlendirmesi', 'slot-priority': 'Yöntem', 'slot-label-1': 'İşletme hedefi', 'slot-value-1': 'Satış veya başvuru', 'slot-label-2': 'Başlangıç durumu', 'slot-value-2': 'Hesap ve ölçüm', 'slot-label-3': 'Yapılan işler', 'slot-value-3': 'Yönetim, kreatif, teknik', 'slot-label-4': 'Dönem ve kaynak', 'slot-value-4': 'Tarih aralığı, veri' }, c),
+  project: (c?: string) => art('tech-finding', 'Bir Meta reklam projesi değerlendirmesinde bulunması gerekenler: işletme hedefi, başlangıç durumu, yapılan işler, dönem ve veri kaynağı', { 'slot-title': 'Proje değerlendirmesi', 'slot-priority': 'Yöntem', 'slot-label-1': 'İşletme hedefi', 'slot-value-1': 'Satış veya başvuru', 'slot-label-2': 'Başlangıç', 'slot-value-2': 'Hesap ve ölçüm', 'slot-label-3': 'Yapılan işler', 'slot-value-3': 'Yönetim, kreatif, teknik', 'slot-label-4': 'Dönem ve kaynak', 'slot-value-4': 'Tarih aralığı, veri' }, c),
   models: (c?: string) => art('site-types', 'Satış modeline göre değerlendirme: e-ticaret mağazasında sipariş akışı, hizmet işletmesinde teklif süreci, yeni üründe tanıtım sayfası', { 'slot-type-1': 'E-ticaret mağazası', 'slot-type-2': 'Hizmet işletmesi', 'slot-type-3': 'Yeni ürün tanıtımı' }, c),
   catalog: (c?: string) => art('category-filters', 'Temsili ürün setleri: doğal kozmetik kataloğunda stoktaki sıvı sabunlar ve el kremleri ayrı setlerde reklamda; tükenen ürünler ve görseli eksik ürün set dışında tutuluyor', { 'slot-category': 'Doğal kozmetik kataloğu', 'slot-urls': 'Ürün setleri', 'slot-url-1': 'Sıvı sabunlar · stokta', 'slot-url-2': 'Tükenen ürünler', 'slot-url-3': 'El kremleri · stokta', 'slot-url-4': 'Görseli eksik ürün', 'slot-legend-ok': 'Sette', 'slot-legend-skip': 'Set dışı' }, c),
   changeLog: (c?: string) => art('tech-finding', 'Temsili değişiklik kaydı: kahve ekipmanı reklamında gözlem, yapılan değişiklik, gerekçe ve sonraki kontrol birlikte yazılıyor', { 'slot-title': 'Değişiklik kaydı', 'slot-priority': 'Temsili', 'slot-label-1': 'Gözlem', 'slot-value-1': 'Etkileşim var, geçiş az', 'slot-label-2': 'Değişiklik', 'slot-value-2': 'Tek mesaj: kullanım', 'slot-label-3': 'Gerekçe', 'slot-value-3': 'Ürün anlaşılmıyor', 'slot-label-4': 'Sonraki kontrol', 'slot-value-4': 'Aynı dönem, aynı hedef' }, c),
@@ -61,18 +61,15 @@ const visuals: SeoServiceConfig['visuals'] = {
     ['Yeniden pazarlama', aside(V.audience())],
     ['E-ticaret ve başvuru', aside(V.goals())],
     ['Katalog reklamları', aside(V.catalog())],
-    ['Reklam yorgunluğu', aside(V.evidence())],
   ],
   technologies: [
     ['Hesaplar ve yetkiler', aside(V.access())],
     ['Meta piksel kurulumu', aside(V.pixelTest())],
     ['Sunucu tarafı ölçüm', aside(V.consent())],
     ['Araç seçimi', aside(V.platforms())],
-    ['Piksel ve Dönüşümler API', aside(V.tagFlow())],
     ['Raporlama kaynaklarını', aside(V.sources())],
   ],
   process: [
-    ['Hedef ve mevcut durum', { place: 'below', node: V.rail() }],
     ['Yayın öncesi kontrol', aside(V.launch())],
     ['Haftalık ve aylık kontrolleri', aside(V.review())],
     ['Kampanya değişikliklerini', aside(V.changeLog())],
@@ -83,27 +80,23 @@ const visuals: SeoServiceConfig['visuals'] = {
   ],
   pricing: [
     ['Yönetim ücretini', aside(V.quote())],
-    ['Başlangıç bütçesi', aside(V.budget())],
     ['Teklifleri karşılaştırırken', aside(V.compare())],
     ['Hazır Meta reklam paketleri', aside(V.packages())],
   ],
 };
 
-// Sub-page heroes: animated story scenes in the overview standard (scenes-subpages.tsx).
+// Sub-page heroes: each service shows its OWN labelled illustration inside the animated HeroStage frame.
+const stage = (label: string, node: ReactNode, steps: string[], badge?: string) => <HeroStage label={label} steps={steps} badge={badge}>{node}</HeroStage>;
 const heroArt: SeoServiceConfig['heroArt'] = {
-  features: () => <ScopeScene label="Temsili Meta reklam yönetim kapsamı: hesap ve ölçüm kontrolü, kreatif planı, kampanya kurulumu ve raporlama adım adım tamamlanıyor; iki kreatif sırayla test ediliyor ve sonraki test belirleniyor."
-    title="Yönetim kapsamı" items={['Hesap ve ölçüm kontrolü', 'Kreatif ve mesaj planı', 'Kampanya kurulumu', 'Dönemsel rapor']} test={['Kreatif A', 'Kreatif B', 'Kreatif testi']} result="Sonraki test" steps={['Hazırlık', 'Kreatif', 'Yayın', 'Rapor']} />,
-  technologies: () => <MeasureScene label="Temsili Meta ölçüm akışı: tarayıcıdaki piksel olayı ve sunucudaki Dönüşümler API olayı aynı rapora ulaşıyor, tekrar sayılmıyor ve izin tercihi uygulanıyor."
-    browser={['Meta Pikseli', 'Satın al']} server={['Dönüşümler API', 'Sunucu olayı']} report="Olay raporu" events={['Purchase', 'Lead', 'AddToCart']} badge="Tekrar sayılmadı" consent="İzin tercihi uygulanır" steps={['Olay planı', 'Kurulum', 'Test', 'Rapor']} />,
-  process: () => <TimelineScene label="Temsili Meta reklam yönetimi süreci: hedef, erişim, içerik ve bütçe, yayın ve değerlendirme adımları sırayla ilerliyor; ilk dönem planı kontrol ediliyor."
-    milestones={['Hedef', 'Erişim', 'İçerik', 'Yayın', 'Rapor']} plan={['İlk dönem planı', 'Erişim ve ölçüm', 'Kreatif ve bütçe', 'Yayın kontrolü']} steps={['Hedef', 'Hazırlık', 'Yayın', 'Değerlendirme']} />,
-  portfolio: () => <CaseScene label="Temsili Meta reklam senaryosu: rapor üzerinde gözlem, değişiklik ve kontrol noktaları işaretleniyor; başlangıç durumundan yaklaşıma geçiliyor ve değerlendirme kaydediliyor."
-    title="Temsili senaryo" badge="Temsili" notes={['Gözlem', 'Değişiklik', 'Kontrol']} start={['Başlangıç', 'Sepet var, satış az']} approach={['Yaklaşım', 'Ürün videosu']} verdict="Değerlendirme aynı dönemle yapılır" steps={['Durum', 'Kontrol', 'Değişiklik', 'Sonuç']} />,
-  pricing: () => <BudgetScene label="Meta reklam maliyet kalemleri: toplam plan, Meta reklam hesabınızdan ödenen medya bütçesi ve yönetim, kreatif ve teknik işlerin ayrı yazıldığı PakSoft teklifi olarak ikiye ayrılıyor."
-    plan="Reklam planı" spend={['Medya bütçesi', 'Meta hesabınız']} quote="PakSoft teklifi" items={['Yönetim', 'Kreatif üretimi', 'Teknik iş']} badge="Kalemler ayrı yazılır" steps={['Bütçe', 'Kapsam', 'Teklif', 'Onay']} />,
+  features: () => stage('Meta reklam değerlendirmesi: gözlem, değişiklik ve doğrulama sütunları', V.evidence('w-full'), ['Hazırlık', 'Kreatif', 'Yayın', 'Rapor'], 'Tek değişken'),
+  technologies: () => stage('Meta ölçüm akışı: piksel olayı, sunucu olayı ve tekrar kayıt kontrolü', V.tagFlow('w-full'), ['Piksel', 'Sunucu', 'Kontrol', 'Rapor'], 'Test edilmeden yayın yok'),
+  process: () => stage('Meta reklam yönetimi süreci: hedef, erişim ve ölçüm, içerik ve bütçe, yayın ve değerlendirme', V.rail('w-full'), ['Plan', 'Onay', 'Yayın', 'Rapor']),
+  portfolio: () => stage('Meta reklam senaryoları işletme türüne göre değerlendirilir', V.project('w-full'), ['Durum', 'Kontrol', 'Değişiklik', 'Sonuç'], 'Temsili'),
+  pricing: () => stage('Meta reklam maliyet kalemleri: medya bütçesi Meta’ya, yönetim ve işler PakSoft teklifinde ayrı', V.budget('w-full'), ['Bütçe', 'Kapsam', 'Teklif', 'Onay'], 'Kalemler ayrı'),
   faq: () => <QaScene label="Meta reklam yönetimi hakkında sık sorulan sorular: arama yapılıyor, ilk sorunun yanıtı açılıyor ve kampanya, ölçüm, bütçe konuları sırayla vurgulanıyor."
     search="Meta reklam bütçesi" questions={['Bütçe yönetim ücretine dahil mi?', 'Piksel kurulumu zorunlu mu?', 'Sonuçları ne zaman değerlendiririz?']} answer={['Hayır. Medya bütçesi Meta’ya ödenir,', 'yönetim bedeli ayrı yazılır.']} topics={['Kampanya', 'Ölçüm', 'Bütçe']} steps={['Soru', 'Yanıt', 'Kapsam', 'Teklif']} />,
 };
+
 const config: SeoServiceConfig = {
   platform: 'meta-ads', contentDir: 'content/meta-ads/tr', base, enquiry: META_ADS_TR_ENQUIRY,
   serviceName: 'Meta Reklam Yönetimi', Icon: MegaphoneIcon, metadata, visuals, heroArt,

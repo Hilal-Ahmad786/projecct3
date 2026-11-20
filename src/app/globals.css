@@ -2427,3 +2427,9 @@ textarea.form-input {
   .custom-ecom-art--quote-builder.ikas-visible .cv-quote-total { animation: iv-pop 400ms ease-out 1700ms both; }
   .custom-ecom-art--quote-builder .ikas-in-view:not(.ikas-tab-hidden) .cv-quote-total { animation: iv-pop 400ms ease-out 1700ms both, sv-glow 3.4s ease-in-out 2.4s infinite; }
 }
+
+
+/* HeroStage (services/hero-visuals/scenes-subpages.tsx): the illustration is shown inside a 384px stage that is
+   CSS-zoomed up, so the viewport-based slot text of the labelled illustrations is pinned to a smaller size. */
+.hero-stage :is(.sev-slot, .iv-slot, .mv-slot, .sv-slot, .cv-slot) { font-size: 7.2px !important; }
+.hero-stage figure { margin: 0; }

@@ -1,4 +1,4 @@
-import { BudgetScene, CaseScene, GuidesScene, MeasureScene, QaScene, ScopeScene, TimelineScene } from '@/components/services/hero-visuals/scenes-subpages';
+import { GuidesScene, HeroStage, QaScene } from '@/components/services/hero-visuals/scenes-subpages';
 import type { ReactNode } from 'react';
 import Link from '@/components/IntentLink';
 import { ArrowRightIcon, BuildingStorefrontIcon } from '@heroicons/react/24/outline';
@@ -168,12 +168,13 @@ export const MARKETPLACE_HERO_ART = <MarketplaceHeroScene tile="bottom-left">{MP
 
 // Each subpage hero has its own scene (no visual repeats further down the same page).
 // Sub-page heroes: animated story scenes (scenes-subpages.tsx); portfolio keeps the real Otograde shot.
+const stage = (label: string, node: ReactNode, steps: string[], badge?: string) => <HeroStage label={label} steps={steps} badge={badge}>{node}</HeroStage>;
 const HERO_ART: Record<SubPage, () => ReactNode> = {
-  features: () => <ScopeScene label={"Temsili pazaryeri kapsamı: Satıcı paneli, Komisyon ve hakediş, Ürün onayı, Sipariş ve iade adım adım tamamlanıyor; iki seçenek karşılaştırılıyor."} title={"Pazaryeri kapsamı"} items={["Satıcı paneli", "Komisyon ve hakediş", "Ürün onayı", "Sipariş ve iade"]} test={["Satıcı A", "Satıcı B", "Ürün onayı"]} result={"Yayına hazır"} steps={["Analiz", "Tasarım", "Geliştirme", "Yayın"]} />,
-  technologies: () => <MeasureScene label={"Temsili pazaryeri veri akışı: Pazaryeri sitesi ve Satıcı paneli aynı panele ulaşıyor; kayıtlar eşleşiyor."} browser={["Pazaryeri sitesi", "Satın al"]} server={["Satıcı paneli", "Hakediş servisi"]} report={"Hakediş raporu"} events={["Sipariş", "Komisyon", "Satıcı ödemesi"]} badge={"Hakediş doğru"} consent={"KVKK izni uygulanır"} steps={["Altyapı", "Entegrasyon", "Test", "Yayın"]} />,
-  process: () => <TimelineScene label={"Temsili pazaryeri süreci: Analiz, Pilot, Geliştirme, Test, Yayın adımları sırayla ilerliyor."} milestones={["Analiz", "Pilot", "Geliştirme", "Test", "Yayın"]} plan={["Pilot planı", "İlk satıcılar", "Komisyon kuralları", "Test siparişi"]} steps={["Analiz", "Tasarım", "Geliştirme", "Yayın"]} />,
+  features: () => stage('Pazaryeri: satıcı paneli ve komisyon akışı', MP.panel('w-full'), ['Satıcı', 'Ürün', 'Sipariş', 'Hakediş']),
+  technologies: () => stage('Pazaryeri: satıcı, ürün ve ödeme sistemlerinin bağlantısı', ART.hub('w-full'), ['Satıcı', 'Ödeme', 'Kargo', 'Rapor']),
+  process: () => stage('Pazaryeri: pilot satıcılarla başlayan süreç', MP.pilot('w-full'), ['Analiz', 'Pilot', 'Geliştirme', 'Yayın']),
   portfolio: () => <OtogradeHeroShot />,
-  pricing: () => <BudgetScene label={"pazaryeri maliyet kalemleri: Proje bütçesi, altyapı gideri ve PakSoft teklifindeki ayrı kalemler."} plan={"Proje bütçesi"} spend={["Altyapı gideri", "Sunucu ve ödeme"]} quote="PakSoft teklifi" items={["Tasarım", "Geliştirme", "Satıcı paneli"]} badge="Kalemler ayrı yazılır" steps={["Kapsam", "Tahmin", "Teklif", "Onay"]} />,
+  pricing: () => stage('Pazaryeri: teklif kalemleri', ART.quote('w-full'), ['Kapsam', 'Tahmin', 'Teklif', 'Onay'], 'Kalemler ayrı'),
   faq: () => <QaScene label={"pazaryeri hakkında sık sorulan sorular: arama yapılıyor, ilk sorunun yanıtı açılıyor."} search={"Pazaryeri yazılımı"} questions={["Satıcı ödemeleri nasıl işler?", "Kaç satıcıyla başlamalıyız?", "Proje ne kadar sürer?"]} answer={["Hakediş, komisyon ve iade kuralları", "proje başında birlikte belirlenir."]} topics={["Satıcı", "Ödeme", "Süre"]} steps={["Soru", "Yanıt", "Kapsam", "Teklif"]} />,
 };
 

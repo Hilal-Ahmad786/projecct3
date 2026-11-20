@@ -1,4 +1,4 @@
-import { BudgetScene, CaseScene, GuidesScene, MeasureScene, QaScene, ScopeScene, TimelineScene } from '@/components/services/hero-visuals/scenes-subpages';
+import { GuidesScene, HeroStage, QaScene } from '@/components/services/hero-visuals/scenes-subpages';
 import type { ReactNode } from 'react';
 import { ShoppingBagIcon } from '@heroicons/react/24/outline';
 import type { SectionVisual } from '@/components/e-commerce/ServiceMarkdownPage';
@@ -53,7 +53,7 @@ const V = {
   mcSetup: () => art('tech-finding', 'Temsili Merchant Center kurulum kontrolü: alan adı doğrulaması, ürün veri kaynağı, hedef ülke ve para birimi, Google Ads bağlantısı', { 'slot-title': 'Merchant Center kurulumu', 'slot-priority': 'Temsili', 'slot-label-1': 'Alan adı', 'slot-value-1': 'Doğrulandı, hak talep edildi', 'slot-label-2': 'Veri kaynağı', 'slot-value-2': 'Mağaza bağlantısı', 'slot-label-3': 'Hedef ülke', 'slot-value-3': 'Türkiye · TRY', 'slot-label-4': 'Google Ads', 'slot-value-4': 'Hesaplar bağlı' }),
   groups: () => art('category-filters', 'Temsili ürün seçimi: düzenli stoklanan nevresim ve masa örtüsü serileri ilk kampanyaya alınıyor, tedariki belirsiz seri ve sezon sonu ürünler bekletiliyor', { 'slot-category': 'Ev tekstili kataloğu', 'slot-urls': 'Ürün grupları', 'slot-url-1': 'Nevresim · düzenli stok', 'slot-url-2': 'Tedariki belirsiz seri', 'slot-url-3': 'Masa örtüsü · stokta', 'slot-url-4': 'Sezon sonu ürünler', 'slot-legend-ok': 'İlk', 'slot-legend-skip': 'Sonra' }),
   weekly: () => art('monthly-plan', 'Alışveriş kampanyası kontrol takvimi: haftalık ürün durumları ve fiyat-stok farkları, aylık ürün grubu harcaması ve satın alma ölçümü', { 'slot-month': 'Kontrol takvimi', 'slot-week-1': 'Her hafta', 'slot-week-2': 'Her hafta', 'slot-week-3': 'Her ay', 'slot-week-4': 'Her ay', 'slot-task-1': 'Ürün durumları', 'slot-task-sub-1': 'Reddedilenler', 'slot-task-2': 'Fiyat ve stok', 'slot-task-sub-2': 'Sayfa ve veri farkı', 'slot-task-3': 'Grup harcaması', 'slot-task-sub-3': 'Kategori önceliği', 'slot-task-4': 'Satın alma ölçümü', 'slot-task-sub-4': 'Sipariş paneliyle' }),
-  feedFlow: (className?: string) => art('gads-tag-flow', 'Ürün verisi akışı: mağaza kaydı, Merchant Center’a aktarım ve işlenen ürün durumu', { 'slot-step-1': 'Mağaza kaydı', 'slot-sub-1': 'Fiyat, stok, varyant', 'slot-step-2': 'Aktarım', 'slot-sub-2': 'Bağlantı, dosya veya API', 'slot-step-3': 'Merchant Center', 'slot-sub-3': 'İşlenen ürün durumu', 'slot-note': 'Örnek bir ürün kimliği her adımda karşılaştırılır.' }, className),
+  feedFlow: (className?: string) => art('gads-tag-flow', 'Ürün verisi akışı: mağaza kaydı, Merchant Center’a aktarım ve işlenen ürün durumu', { 'slot-step-1': 'Mağaza kaydı', 'slot-sub-1': 'Fiyat, stok, varyant', 'slot-step-2': 'Aktarım', 'slot-sub-2': 'Dosya veya API', 'slot-step-3': 'Merchant Center', 'slot-sub-3': 'İşlenen ürün durumu', 'slot-note': 'Örnek bir ürün kimliği her adımda karşılaştırılır.' }, className),
   ga4: () => art('gads-ga4-match', 'Satın alma ölçümü: Google Ads satın alma dönüşümü birincil, GA4’ten içe aktarılan aynı satın alma çift sayım olmaması için ikincil, sepete ekleme dönüşüm olarak kullanılmıyor', { 'slot-h-ga4': 'Ölçüm kaynağı', 'slot-h-ads': 'Google Ads’te kullanımı', 'slot-ga4-1': 'Ads etiketi · purchase', 'slot-ads-1': 'Birincil satın alma', 'slot-ga4-2': 'GA4 · purchase', 'slot-ads-2': 'İkincil · çift sayım yok', 'slot-ga4-3': 'add_to_cart', 'slot-ads-3': 'Dönüşüm olarak kullanılmaz' }),
   orderTest: () => art('gads-gtm-test', 'Temsili test siparişi: başarılı ödemede satın alma olayı çalışıyor, onay sayfası yenilendiğinde tekrar sayılmıyor, başarısız ödemede olay oluşmuyor', { 'slot-panel': 'Test siparişi · önizleme', 'slot-mode': 'Önizleme', 'slot-test-1': 'Başarılı ödeme', 'slot-result-1': 'Satın alma kaydedildi', 'slot-test-2': 'Onay sayfası yenileme', 'slot-result-2': 'Tekrar sayılmadı (doğru)', 'slot-test-3': 'Başarısız ödeme', 'slot-result-3': 'Olay yok (doğru)', 'slot-log': 'İşlem kimliği, değer ve para birimi kayda geçirilir' }),
   rail: () => art('process-rail', 'Google Alışveriş kampanya süreci: katalog ve hedef, ürün verisi düzeltmeleri, kampanya taslağı ve ölçüm, yayın ve değerlendirme', { 'slot-step-1': 'Katalog ve hedef', 'slot-step-2': 'Ürün verisi', 'slot-step-3': 'Taslak ve ölçüm', 'slot-step-4': 'Yayın ve rapor' }),
@@ -71,22 +71,20 @@ const visuals: SeoServiceConfig['visuals'] = {
     ['Google Alışveriş reklam yönetiminde', aside(<GoogleShoppingHeroVisual />)],
     ['Standart Alışveriş mi', aside(V.types())],
     ['Bir ürün reklamını', aside(V.stockSync())],
-    ['Mevcut kampanyaya', aside(V.merchant())],
   ],
   features: [
     ['Google Merchant Center kurulumunda', aside(V.mcSetup())],
     ['Hangi ürünleri reklama', aside(V.groups())],
     ['Yayındaki kampanyada', aside(V.weekly())],
 
-    ['Özel etiketlerle ürünleri nasıl', aside(V.merchant())],  ],
+  ],
   technologies: [
     ['Fiyat veya stok farkı', aside(V.stockSync())],
     ['Google Ads, GA4 ve GTM', aside(V.ga4())],
     ['Test siparişinde', aside(V.orderTest())],
 
-    ['Gönderim ve iade bilgileri', aside(V.feedFlow())],  ],
+  ],
   process: [
-    ['Google Alışveriş kampanyası hangi adımlarla', { place: 'below', node: V.rail() }],
     ['Yayın kararından önce', aside(V.launch())],
     ['Haftalık ve aylık kontrolleri', aside(V.weekly())],
     ['İlk raporda', aside(V.report())],
@@ -95,20 +93,21 @@ const visuals: SeoServiceConfig['visuals'] = {
     ['Üç Google Alışveriş reklam örneği', aside(V.diagnose())],
     ['İki ek temsili Alışveriş örneği', aside(V.gtin())],
 
-    ['Bir Alışveriş sorununu hangi', aside(V.evidence())],  ],
+  ],
   pricing: [
     ['Alışveriş reklam yönetim ücretini', aside(V.quote())],
 
-    ['İlk reklam bütçesini nasıl', aside(V.budget())],  ],
+  ],
 };
 
-// Sub-page heroes: animated story scenes in the overview standard (scenes-subpages.tsx).
+// Sub-page heroes: each service shows its OWN labelled illustration inside the animated HeroStage frame.
+const stage = (label: string, node: ReactNode, steps: string[], badge?: string) => <HeroStage label={label} steps={steps} badge={badge}>{node}</HeroStage>;
 const heroArt: SeoServiceConfig['heroArt'] = {
-  features: () => <ScopeScene label={"Temsili Google Alışveriş kapsamı: Merchant Center, Ürün verisi, Ürün grupları, Satın alma ölçümü adım adım tamamlanıyor; iki seçenek sırayla karşılaştırılıyor ve sonraki adım belirleniyor."} title={"Alışveriş kampanyası"} items={["Merchant Center", "Ürün verisi", "Ürün grupları", "Satın alma ölçümü"]} test={["Başlık A", "Başlık B", "Ürün başlığı testi"]} result={"Sonraki test"} steps={["Feed", "Kampanya", "Ölçüm", "Rapor"]} />,
-  technologies: () => <MeasureScene label={"Temsili Google Alışveriş ölçüm akışı: Google etiketi ve Ürün verisi verisi aynı rapora ulaşıyor; sonuç doğrulanıyor."} browser={["Google etiketi", "Sepete ekle"]} server={["Ürün verisi", "Merchant Center"]} report={"Satış raporu"} events={["Satın alma", "Sepete ekleme", "Ürün görüntüleme"]} badge={"Değer doğru"} consent={"İzin modu uygulanır"} steps={["Olay planı", "Kurulum", "Test", "Rapor"]} />,
-  process: () => <TimelineScene label={"Temsili Google Alışveriş süreci: Hedef, Feed, Kampanya, Yayın, Rapor adımları sırayla ilerliyor; ilk dönem planı kontrol ediliyor."} milestones={["Hedef", "Feed", "Kampanya", "Yayın", "Rapor"]} plan={["İlk dönem planı", "Feed hataları", "Ürün grupları", "Satış ölçümü"]} steps={["Hedef", "Hazırlık", "Yayın", "Değerlendirme"]} />,
-  portfolio: () => <CaseScene label={"Temsili Google Alışveriş senaryosu: raporda gözlem, değişiklik ve kontrol noktaları işaretleniyor; başlangıçtan yaklaşıma geçiliyor."} title="Temsili senaryo" badge="Temsili" notes={["Gözlem", "Feed düzeltme", "Kontrol"]} start={["Başlangıç", "Onaysız ürünler"]} approach={["Yaklaşım", "Feed düzeni"]} verdict={"Değerlendirme aynı dönemle yapılır"} steps={["Durum", "Kontrol", "Değişiklik", "Sonuç"]} />,
-  pricing: () => <BudgetScene label={"Google Alışveriş maliyet kalemleri: Reklam planı, reklam bütçesi ve PakSoft teklifindeki ayrı kalemler olarak ikiye ayrılıyor."} plan={"Reklam planı"} spend={["Reklam bütçesi", "Google Ads hesabınız"]} quote="PakSoft teklifi" items={["Feed kurulumu", "Aylık yönetim", "Ölçüm işi"]} badge={"Kalemler ayrı yazılır"} steps={["Bütçe", "Kapsam", "Teklif", "Onay"]} />,
+  features: () => stage('Google Alışveriş hizmet kapsamı', V.merchant(), ['Kapsam', 'Plan', 'Uygulama', 'Rapor']),
+  technologies: () => stage('Google Alışveriş araçlar ve ölçüm akışı', V.feedFlow(), ['Etiket', 'Dönüşüm', 'Test', 'Rapor'], 'Test edilmeden yayın yok'),
+  process: () => stage('Google Alışveriş çalışma süreci', V.rail(), ['Hedef', 'Hazırlık', 'Yayın', 'Değerlendirme']),
+  portfolio: () => stage('Google Alışveriş temsili senaryolar', V.evidence(), ['Durum', 'Kontrol', 'Değişiklik', 'Sonuç'], 'Temsili'),
+  pricing: () => stage('Google Alışveriş maliyet kalemleri', V.budget(), ['Bütçe', 'Kapsam', 'Teklif', 'Onay'], 'Kalemler ayrı'),
   faq: () => <QaScene label={"Google Alışveriş hakkında sık sorulan sorular: arama yapılıyor, ilk sorunun yanıtı açılıyor ve konular sırayla vurgulanıyor."} search={"Merchant Center onayı"} questions={["Ürünlerim neden onaylanmıyor?", "Kaç ürünle başlamalıyım?", "Bütçe yönetim ücretine dahil mi?"]} answer={["Ürün verisi ve politika uyumu", "Merchant Center’da kontrol edilir."]} topics={["Ürün verisi", "Kampanya", "Bütçe"]} steps={["Soru", "Yanıt", "Kapsam", "Teklif"]} />,
 };
 

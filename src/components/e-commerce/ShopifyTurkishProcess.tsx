@@ -1,4 +1,5 @@
-import { BudgetScene, CaseScene, GuidesScene, MeasureScene, QaScene, ScopeScene, TimelineScene } from '@/components/services/hero-visuals/scenes-subpages';
+import { HeroStage } from '@/components/services/hero-visuals/scenes-subpages';
+import { shopifyArt } from '@/components/services/hero-visuals/platform-art';
 import Link from '@/components/IntentLink';
 import ShopifyArtwork from '@/components/shopify/visuals/ShopifyArtwork';
 import ShopifyMotionScope from './ShopifyMotionScope';
@@ -48,7 +49,7 @@ export default function ShopifyTurkishProcess() {
       primary="Shopify Projemi Planlayalım"
       secondary={{ href: '#shopify-surec-adimlari', label: 'Süreç Adımlarını Gör' }}
       scope="Hazırlık · Geliştirme · Veri ve test · Yayın"
-      scene={<TimelineScene label={"Temsili Shopify kurulum süreci: analiz, tasarım, aktarım, test ve yayın sırayla ilerliyor."} milestones={["Analiz", "Tasarım", "Aktarım", "Test", "Yayın"]} plan={["Kurulum planı", "Ürün aktarımı", "Ödeme testi", "Yönlendirmeler"]} steps={["Analiz", "Tasarım", "Kurulum", "Yayın"]} />}
+      scene={<HeroStage label="Shopify kurulum süreci" steps={["Analiz","Tasarım","Aktarım","Yayın"]}>{shopifyArt.process()}</HeroStage>}
     />
 
     <PageJumpNav items={[{ href: '#yeni-shopify-magazasi-mi-shopify-gecis-hizmeti-mi', label: 'Kurulum mu, geçiş mi?' }, { href: '#shopify-surec-adimlari', label: 'Altı adım' }, { href: '#baslamadan-once-neleri-hazirlamalisiniz', label: 'Hazırlık' }, { href: '#shopify-magaza-tasima', label: 'Mağaza taşıma' }, { href: '#woocommerce-shopify-tasima', label: 'WooCommerce geçişi' }, { href: '#eski-url-ler-ve-seo-gecis-plani', label: 'URL ve SEO' }, { href: '#yayin-oncesi-alisveris-ve-operasyon-testleri', label: 'Testler' }, { href: '#shopify-sureci-hakkinda-sik-sorulan-sorular', label: 'SSS' }]} mark={<ShopifyIcon size={14} />} />

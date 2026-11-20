@@ -1,4 +1,4 @@
-import { BudgetScene, CaseScene, GuidesScene, MeasureScene, QaScene, ScopeScene, TimelineScene } from '@/components/services/hero-visuals/scenes-subpages';
+import { GuidesScene, HeroStage, QaScene } from '@/components/services/hero-visuals/scenes-subpages';
 import type { ReactNode } from 'react';
 import { ArrowDownIcon, ArrowRightIcon, CheckCircleIcon, MagnifyingGlassIcon, PhoneIcon } from '@heroicons/react/24/outline';
 import type { SectionVisual } from '@/components/e-commerce/ServiceMarkdownPage';
@@ -108,7 +108,7 @@ const V = {
   rail: () => art('process-rail', 'Arama Ağı kampanya süreci: hedef ve kapsam, kampanya taslağı, ölçüm testi, yayın ve ilk değerlendirme', { 'slot-step-1': 'Hedef ve kapsam', 'slot-step-2': 'Kampanya taslağı', 'slot-step-3': 'Ölçüm testi', 'slot-step-4': 'Yayın ve rapor' }),
   lead: () => art('gads-lead-quality', 'Temsili başvuru kalitesi incelemesi: gelen formların bir kısmı hizmet bölgesi dışından ve ilgisiz sorgulardan geliyor; konum, arama terimi ve form ayarları kontrol ediliyor', { 'slot-forms': 'Gelen formlar', 'slot-lead-1': 'Ankara · bakım talebi', 'slot-lead-2': 'Bölge dışı · bakım', 'slot-lead-3': 'İş başvurusu', 'slot-lead-4': 'Kırıkkale · servis talebi', 'slot-lead-5': 'Filtre satın alma', 'slot-ok': 'Uygun talepler', 'slot-ok-sub': 'Hizmet bölgesi ve hizmet eşleşiyor', 'slot-check': 'Kontrol edilecekler', 'slot-check-1': 'Konum: bölgede bulunan kişiler', 'slot-check-2': 'Arama terimleri ve negatifler', 'slot-check-3': 'Formda hizmet bölgesi sorusu' }),
   report: (className?: string) => art('report', 'Temsili Arama Ağı dönem raporu: negatif terimler eklendi, form ölçümü doğrulandı, reklam metni güncellendi; harcama ve dönüşüm eğilimi; sıradaki iş konum ayarı', { 'slot-title': 'Arama Ağı dönem raporu', 'slot-tag': 'Temsili', 'slot-done-1': 'Negatif terimler eklendi', 'slot-done-2': 'Form ölçümü doğrulandı', 'slot-done-3': 'Reklam metni güncellendi', 'slot-chart': 'Harcama ve dönüşüm', 'slot-next': 'Sıradaki iş: konum ayarı' }, className),
-  evidence: (className?: string) => art('tech-evidence', 'Arama Ağı örneklerini değerlendirme: gözlem, müdahale ve doğrulama', { 'slot-col-1': 'Gözlem', 'slot-item-1-1': 'Arama terimleri', 'slot-item-1-2': 'Form tamamlama', 'slot-item-1-3': 'Satış ekibi notu', 'slot-col-2': 'Müdahale', 'slot-item-2-1': 'Negatif terimler', 'slot-item-2-2': 'Form ve ölçüm', 'slot-item-2-3': 'Değişiklik tarihi', 'slot-col-3': 'Doğrulama', 'slot-item-3-1': 'Test dönüşümü', 'slot-item-3-2': 'Karşılaştırma dönemi', 'slot-item-3-3': 'Sonraki karar' }, className),
+  evidence: (className?: string) => art('tech-evidence', 'Arama Ağı örneklerini değerlendirme: gözlem, müdahale ve doğrulama', { 'slot-col-1': 'Gözlem', 'slot-item-1-1': 'Arama terimleri', 'slot-item-1-2': 'Form tamamlama', 'slot-item-1-3': 'Satış ekibi notu', 'slot-col-2': 'Müdahale', 'slot-item-2-1': 'Negatif terimler', 'slot-item-2-2': 'Form ve ölçüm', 'slot-item-2-3': 'Değişiklik tarihi', 'slot-col-3': 'Doğrulama', 'slot-item-3-1': 'Test dönüşümü', 'slot-item-3-2': 'Aynı dönem', 'slot-item-3-3': 'Sonraki karar' }, className),
   caseTerms: () => art('gads-search-terms', 'Temsili örnek 1: teknik servis kampanyasında eğitim ve kurs arayan sorgular ayrılıyor, servis talebi içeren sorgular korunuyor', { 'slot-report': 'Örnek 1 · arama terimleri', 'slot-h-term': 'Arama terimi', 'slot-h-action': 'Karar', 'slot-term-1': 'klima teknik servisi', 'slot-action-1': 'Koru', 'slot-term-2': 'klima teknisyeni kursu', 'slot-action-2': 'Negatif ekle', 'slot-term-3': 'klima arıza servisi yakın', 'slot-action-3': 'Koru', 'slot-term-4': 'teknik servis eğitimi', 'slot-action-4': 'Negatif ekle', 'slot-term-5': 'klima bakım fiyatı', 'slot-action-5': 'İzle' }),
   budget: (className?: string) => art('gads-budget-split', 'Teklif kalemleri: reklam bütçesi Google Ads hesabınızdan Google’a ödenir; yönetim ücreti ve varsa kurulum işleri PakSoft teklifinde ayrı kalemdir', { 'slot-budget': 'Reklam bütçesi', 'slot-budget-sub': 'Kampanya harcaması', 'slot-fee': 'Yönetim ücreti', 'slot-setup': 'Kurulum (tek seferlik)', 'slot-google': 'Google Ads hesabınız', 'slot-google-sub': 'Ödeme doğrudan Google’a', 'slot-paksoft': 'PakSoft teklifi', 'slot-paksoft-sub': 'Yönetim ve kurulum ayrı' }, className),
   adrank: () => art('gads-adrank', 'Reklam sırasını etkileyen etkenler: teklif, reklam kalitesi (beklenen tıklama oranı, reklam alaka düzeyi, açılış sayfası deneyimi) ve arama bağlamı', { 'slot-bid': 'Teklif', 'slot-quality': 'Reklam kalitesi', 'slot-q-1': 'Beklenen tıklama oranı', 'slot-q-2': 'Reklam alaka düzeyi', 'slot-q-3': 'Açılış sayfası deneyimi', 'slot-context': 'Arama bağlamı', 'slot-rank': 'Reklam sırası', 'slot-rank-sub': 'Her açık artırmada yeniden', 'slot-note': 'Tıklama maliyeti bu etkenlere ve rekabete göre değişir; sabit bir tutar yoktur.' }),
@@ -134,7 +134,7 @@ const visuals: SeoServiceConfig['visuals'] = {
     ['Konum, zamanlama', aside(V.targeting())],
     ['Düzenli optimizasyonda', aside(V.weekly())],
 
-    ['Hangi arama reklamı biçimlerini', aside(V.rsa())],  ],
+  ],
   technologies: [
     ['Hangi işlemleri dönüşüm', aside(V.actions())],
     ['Google Ads, GA4 ve GTM', aside(V.ga4())],
@@ -142,9 +142,8 @@ const visuals: SeoServiceConfig['visuals'] = {
     ['Satış ekibinin teklif', aside(V.offline())],
     ['İzin tercihleri ve etiketler', aside(V.gtm())],
 
-    ['Telefon araması ve nitelikli', aside(V.tagFlow())],  ],
+  ],
   process: [
-    ['Arama Ağı kampanyası nasıl ilerler?', { place: 'below', node: V.rail() }],
     ['Yayından önce hangi koşulları', aside(V.consent())],
     ['Teklif stratejisini', aside(V.bidding())],
     ['İlk sonuçlarla hangi kararları', aside(V.lead())],
@@ -160,16 +159,17 @@ const visuals: SeoServiceConfig['visuals'] = {
     ['Yönetim teklifini', aside(V.quote())],
     ['Tek seferlik kurulum', aside(V.scope())],
 
-    ['Başlangıç bütçesini nasıl planlıyoruz', aside(V.budget())],  ],
+  ],
 };
 
-// Sub-page heroes: animated story scenes in the overview standard (scenes-subpages.tsx).
+// Sub-page heroes: each service shows its OWN labelled illustration inside the animated HeroStage frame.
+const stage = (label: string, node: ReactNode, steps: string[], badge?: string) => <HeroStage label={label} steps={steps} badge={badge}>{node}</HeroStage>;
 const heroArt: SeoServiceConfig['heroArt'] = {
-  features: () => <ScopeScene label={"Temsili Google Arama Ağı kapsamı: Anahtar kelime planı, Reklam metinleri, Negatif kelimeler, Açılış sayfası adım adım tamamlanıyor; iki seçenek sırayla karşılaştırılıyor ve sonraki adım belirleniyor."} title={"Arama kampanyası"} items={["Anahtar kelime planı", "Reklam metinleri", "Negatif kelimeler", "Açılış sayfası"]} test={["Başlık A", "Başlık B", "Metin testi"]} result={"Sonraki test"} steps={["Kelime", "Reklam", "Ölçüm", "Rapor"]} />,
-  technologies: () => <MeasureScene label={"Temsili Google Arama Ağı ölçüm akışı: Google etiketi ve Arama ve form verisi aynı rapora ulaşıyor; sonuç doğrulanıyor."} browser={["Google etiketi", "Teklif iste"]} server={["Arama ve form", "Dönüşüm işlemleri"]} report={"Dönüşüm raporu"} events={["Form gönderimi", "Telefon araması", "Teklif talebi"]} badge={"Tekrar sayılmadı"} consent={"İzin modu uygulanır"} steps={["Olay planı", "Kurulum", "Test", "Rapor"]} />,
-  process: () => <TimelineScene label={"Temsili Google Arama Ağı süreci: Hedef, Kelimeler, Reklamlar, Yayın, Rapor adımları sırayla ilerliyor; ilk dönem planı kontrol ediliyor."} milestones={["Hedef", "Kelimeler", "Reklamlar", "Yayın", "Rapor"]} plan={["İlk dönem planı", "Arama terimleri", "Negatif kelimeler", "Teklif ayarı"]} steps={["Hedef", "Hazırlık", "Yayın", "Değerlendirme"]} />,
-  portfolio: () => <CaseScene label={"Temsili Google Arama Ağı senaryosu: raporda gözlem, değişiklik ve kontrol noktaları işaretleniyor; başlangıçtan yaklaşıma geçiliyor."} title="Temsili senaryo" badge="Temsili" notes={["Gözlem", "Negatif kelime", "Kontrol"]} start={["Başlangıç", "Alakasız aramalar"]} approach={["Yaklaşım", "Eşleme düzeni"]} verdict={"Değerlendirme aynı dönemle yapılır"} steps={["Durum", "Kontrol", "Değişiklik", "Sonuç"]} />,
-  pricing: () => <BudgetScene label={"Google Arama Ağı maliyet kalemleri: Reklam planı, reklam bütçesi ve PakSoft teklifindeki ayrı kalemler olarak ikiye ayrılıyor."} plan={"Reklam planı"} spend={["Reklam bütçesi", "Google Ads hesabınız"]} quote="PakSoft teklifi" items={["Kurulum", "Aylık yönetim", "Sayfa önerisi"]} badge={"Kalemler ayrı yazılır"} steps={["Bütçe", "Kapsam", "Teklif", "Onay"]} />,
+  features: () => stage('Google Arama Ağı hizmet kapsamı', V.rsa(), ['Kapsam', 'Plan', 'Uygulama', 'Rapor']),
+  technologies: () => stage('Google Arama Ağı araçlar ve ölçüm akışı', V.tagFlow(), ['Etiket', 'Dönüşüm', 'Test', 'Rapor'], 'Test edilmeden yayın yok'),
+  process: () => stage('Google Arama Ağı çalışma süreci', V.rail(), ['Hedef', 'Hazırlık', 'Yayın', 'Değerlendirme']),
+  portfolio: () => stage('Google Arama Ağı temsili senaryolar', V.evidence(), ['Durum', 'Kontrol', 'Değişiklik', 'Sonuç'], 'Temsili'),
+  pricing: () => stage('Google Arama Ağı maliyet kalemleri', V.budget(), ['Bütçe', 'Kapsam', 'Teklif', 'Onay'], 'Kalemler ayrı'),
   faq: () => <QaScene label={"Google Arama Ağı hakkında sık sorulan sorular: arama yapılıyor, ilk sorunun yanıtı açılıyor ve konular sırayla vurgulanıyor."} search={"Arama ağı reklamı"} questions={["Tıklama başına ne öderim?", "Hangi aramalarda görünürüm?", "Negatif kelime nedir?"]} answer={["Tıklama maliyeti açık artırmayla", "belirlenir; sabit bir ücret yoktur."]} topics={["Kelime", "Reklam", "Bütçe"]} steps={["Soru", "Yanıt", "Kapsam", "Teklif"]} />,
 };
 

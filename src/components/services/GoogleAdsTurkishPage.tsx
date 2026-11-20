@@ -1,4 +1,4 @@
-import { BudgetScene, CaseScene, GuidesScene, MeasureScene, QaScene, ScopeScene, TimelineScene } from '@/components/services/hero-visuals/scenes-subpages';
+import { GuidesScene, HeroStage, QaScene } from '@/components/services/hero-visuals/scenes-subpages';
 import type { ReactNode } from 'react';
 import { CursorArrowRaysIcon } from '@heroicons/react/24/outline';
 import type { SectionVisual } from '@/components/e-commerce/ServiceMarkdownPage';
@@ -40,7 +40,7 @@ const V = {
   rail: () => <IkasVisual name="process-rail" loop label="Google Ads çalışmasının beş adımı: hedef ve bütçe, hesap ve sayfa incelemesi, ölçüm ve kampanya hazırlığı, yayın ve ilk kontrol, düzenli iyileştirme" className="mt-8 hidden lg:block" slotLabels={{ 'slot-step-1': 'Hedef ve bütçe', 'slot-step-2': 'Hesap incelemesi', 'slot-step-3': 'Ölçüm hazırlığı', 'slot-step-4': 'Yayın ve kontrol', 'slot-step-5': 'İyileştirme' }} />,
   lead: () => art('gads-lead-quality', 'Temsili başvuru kalitesi incelemesi: gelen formların bir kısmı hizmet bölgesi dışından ve ilgisiz sorgulardan geliyor; konum, arama terimi ve sayfa ayarları kontrol ediliyor', { 'slot-forms': 'Gelen formlar', 'slot-lead-1': 'İstanbul · bakım talebi', 'slot-lead-2': 'Bölge dışı · bakım', 'slot-lead-3': 'İş başvurusu', 'slot-lead-4': 'Kocaeli · servis talebi', 'slot-lead-5': 'Fiyat listesi isteği', 'slot-ok': 'Uygun talepler', 'slot-ok-sub': 'Hizmet bölgesi ve hizmet eşleşiyor', 'slot-check': 'Kontrol edilecekler', 'slot-check-1': 'Konum: bölgede bulunan kişiler', 'slot-check-2': 'Arama terimleri ve negatifler', 'slot-check-3': 'Formda hizmet bölgesi sorusu' }),
   report: (className?: string) => art('report', 'Temsili Google Ads dönem raporu: arama terimleri temizlendi, form ölçümü doğrulandı, açılış sayfası güncellendi; harcama ve dönüşüm eğilimi; sıradaki iş konum ayarı', { 'slot-title': 'Google Ads dönem raporu', 'slot-tag': 'Temsili', 'slot-done-1': 'Negatif terimler eklendi', 'slot-done-2': 'Form ölçümü doğrulandı', 'slot-done-3': 'Açılış sayfası güncellendi', 'slot-chart': 'Harcama ve dönüşüm', 'slot-next': 'Sıradaki iş: konum ayarı' }, className),
-  evidence: (className?: string) => art('tech-evidence', 'Google Ads örneklerini değerlendirme: gözlem, müdahale ve doğrulama', { 'slot-col-1': 'Gözlem', 'slot-item-1-1': 'Arama terimleri', 'slot-item-1-2': 'Dönüşüm kaydı', 'slot-item-1-3': 'Satış ekibi notu', 'slot-col-2': 'Müdahale', 'slot-item-2-1': 'Negatif terimler', 'slot-item-2-2': 'Ölçüm ayarı', 'slot-item-2-3': 'Değişiklik tarihi', 'slot-col-3': 'Doğrulama', 'slot-item-3-1': 'Test dönüşümü', 'slot-item-3-2': 'Karşılaştırma dönemi', 'slot-item-3-3': 'Sonraki karar' }, className),
+  evidence: (className?: string) => art('tech-evidence', 'Google Ads örneklerini değerlendirme: gözlem, müdahale ve doğrulama', { 'slot-col-1': 'Gözlem', 'slot-item-1-1': 'Arama terimleri', 'slot-item-1-2': 'Dönüşüm kaydı', 'slot-item-1-3': 'Satış ekibi notu', 'slot-col-2': 'Müdahale', 'slot-item-2-1': 'Negatif terimler', 'slot-item-2-2': 'Ölçüm ayarı', 'slot-item-2-3': 'Değişiklik tarihi', 'slot-col-3': 'Doğrulama', 'slot-item-3-1': 'Test dönüşümü', 'slot-item-3-2': 'Aynı dönem', 'slot-item-3-3': 'Sonraki karar' }, className),
   budget: (className?: string) => art('gads-budget-split', 'Teklif kalemleri: reklam bütçesi Google Ads hesabınızdan Google’a ödenir; yönetim ücreti ve varsa kurulum işleri PakSoft teklifinde ayrı kalemdir', { 'slot-budget': 'Reklam bütçesi', 'slot-budget-sub': 'Kampanya harcaması', 'slot-fee': 'Yönetim ücreti', 'slot-setup': 'Kurulum (tek seferlik)', 'slot-google': 'Google Ads hesabınız', 'slot-google-sub': 'Ödeme doğrudan Google’a', 'slot-paksoft': 'PakSoft teklifi', 'slot-paksoft-sub': 'Yönetim ve kurulum ayrı' }, className),
   quote: () => art('quote-groups', 'Google Ads yönetim ücretini etkileyenler: kampanya sayısı ve bölgeler, hesabın ve ölçümün durumu, ürün kataloğu, raporlama sıklığı; açılış sayfası geliştirmesi ayrı', { 'slot-group-1': 'Kampanya sayısı ve bölge', 'slot-group-2': 'Hesap ve ölçüm durumu', 'slot-group-3': 'Ürün kataloğu', 'slot-group-4': 'Raporlama sıklığı', 'slot-quote': 'Yönetim ücreti', 'slot-extra': 'Sayfa geliştirme ayrı' }),
   goalsByBusiness: () => art('gads-goals', 'İşletme türüne göre ilk kampanya hedefi: bölgesel hizmet işletmesinde form ve arama, e-ticaret mağazasında değerli satın alma, B2B üreticide nitelikli talep', { 'slot-biz-1': 'Hizmet işletmesi', 'slot-biz-sub-1': 'Bölgesel talep', 'slot-goal-label-1': 'Hedef', 'slot-goal-1': 'Form ve arama', 'slot-camp-label-1': 'İlk', 'slot-camp-1': 'Arama Ağı', 'slot-biz-2': 'E-ticaret mağazası', 'slot-biz-sub-2': 'Ürün satışı', 'slot-goal-label-2': 'Hedef', 'slot-goal-2': 'Satın alma değeri', 'slot-camp-label-2': 'İlk', 'slot-camp-2': 'Alışveriş', 'slot-biz-3': 'B2B üretici', 'slot-biz-sub-3': 'Teklif talebi', 'slot-goal-label-3': 'Hedef', 'slot-goal-3': 'Nitelikli talep', 'slot-camp-label-3': 'İlk', 'slot-camp-3': 'Arama Ağı' }),
@@ -65,7 +65,7 @@ const visuals: SeoServiceConfig['visuals'] = {
     ['Dönüşüm takibinde hangi eylemleri', aside(V.actions())],
     ['Arama reklamında hangi öğeler', aside(V.rsa())],
 
-    ['Hesap kurulumu ve kampanya', aside(V.account())],  ],
+  ],
   technologies: [
     ['Google Ads ve GA4 dönüşümlerini', aside(V.ga4())],
     ['GTM ile ölçümü', aside(V.gtm())],
@@ -73,9 +73,8 @@ const visuals: SeoServiceConfig['visuals'] = {
     ['Alışveriş ve Performance Max', aside(V.feed())],
     ['Satış ekibindeki sonuçlar reklama', aside(V.offline())],
 
-    ['İlk inceleme için hangi', aside(V.tagFlow())],  ],
+  ],
   process: [
-    ['Google Ads çalışmasının beş adımı', { place: 'below', node: V.rail() }],
     ['Teklif stratejisini neye göre', aside(V.bidding())],
     ['Örnek karar', aside(V.lead())],
     ['Haftalık ve aylık kontroller', aside(V.weekly())],
@@ -84,22 +83,23 @@ const visuals: SeoServiceConfig['visuals'] = {
     ['İki temsili e-ticaret kampanyası', aside(V.merchant())],
     ['Bir kampanya çalışmasını değerlendirirken', aside(V.report())],
 
-    ['Üç temsili Google Ads', aside(V.evidence())],  ],
+  ],
   pricing: [
     ['Tıklama maliyeti neden değişir', aside(V.adrank())],
     ['Google Ads yönetim ücretini', aside(V.quote())],
     ['Hangi çalışma kapsamı', aside(<IkasVisual name="method-options" loop label="Üç çalışma kapsamı: hesap incelemesi ve danışmanlık, kurulum ve ilk yönetim dönemi, aylık Google Ads yönetimi" slotLabels={{ 'slot-option-1': 'Hesap incelemesi', 'slot-option-2': 'Kurulum ve başlangıç', 'slot-option-3': 'Aylık yönetim' }} className="mx-auto w-full max-w-xl" />)],
     ['Kampanya türü teklif kapsamını', aside(V.scope())],
 
-    ['Teklifleri karşılaştırırken neleri sorun', aside(V.budget())],  ],
+  ],
 };
-// Sub-page heroes: animated story scenes in the overview standard (scenes-subpages.tsx).
+// Sub-page heroes: each service shows its OWN labelled illustration inside the animated HeroStage frame.
+const stage = (label: string, node: ReactNode, steps: string[], badge?: string) => <HeroStage label={label} steps={steps} badge={badge}>{node}</HeroStage>;
 const heroArt: SeoServiceConfig['heroArt'] = {
-  features: () => <ScopeScene label={"Temsili Google Ads kapsamı: Hesap yapısı, Kampanya planı, Dönüşüm ölçümü, Dönem raporu adım adım tamamlanıyor; iki seçenek sırayla karşılaştırılıyor ve sonraki adım belirleniyor."} title={"Yönetim kapsamı"} items={["Hesap yapısı", "Kampanya planı", "Dönüşüm ölçümü", "Dönem raporu"]} test={["Reklam A", "Reklam B", "Reklam testi"]} result={"Sonraki test"} steps={["Hedef", "Kampanya", "Ölçüm", "Rapor"]} />,
-  technologies: () => <MeasureScene label={"Temsili Google Ads ölçüm akışı: Google etiketi ve GA4 ve CRM verisi aynı rapora ulaşıyor; sonuç doğrulanıyor."} browser={["Google etiketi", "Formu gönder"]} server={["GA4 ve CRM", "Çevrimdışı dönüşüm"]} report={"Dönüşüm raporu"} events={["Form gönderimi", "Arama", "Satın alma"]} badge={"Tekrar sayılmadı"} consent={"İzin modu uygulanır"} steps={["Olay planı", "Kurulum", "Test", "Rapor"]} />,
-  process: () => <TimelineScene label={"Temsili Google Ads süreci: Hedef, Hesap, Kampanya, Yayın, Rapor adımları sırayla ilerliyor; ilk dönem planı kontrol ediliyor."} milestones={["Hedef", "Hesap", "Kampanya", "Yayın", "Rapor"]} plan={["İlk dönem planı", "Dönüşüm kontrolü", "Kampanya yapısı", "Arama terimleri"]} steps={["Hedef", "Hazırlık", "Yayın", "Değerlendirme"]} />,
-  portfolio: () => <CaseScene label={"Temsili Google Ads senaryosu: raporda gözlem, değişiklik ve kontrol noktaları işaretleniyor; başlangıçtan yaklaşıma geçiliyor."} title="Temsili senaryo" badge="Temsili" notes={["Gözlem", "Negatif kelime", "Kontrol"]} start={["Başlangıç", "Form gelmiyor"]} approach={["Yaklaşım", "Dönüşüm testi"]} verdict={"Değerlendirme aynı dönemle yapılır"} steps={["Durum", "Kontrol", "Değişiklik", "Sonuç"]} />,
-  pricing: () => <BudgetScene label={"Google Ads maliyet kalemleri: Reklam planı, reklam bütçesi ve PakSoft teklifindeki ayrı kalemler olarak ikiye ayrılıyor."} plan={"Reklam planı"} spend={["Reklam bütçesi", "Google Ads hesabınız"]} quote="PakSoft teklifi" items={["Kurulum", "Aylık yönetim", "Ölçüm işi"]} badge={"Kalemler ayrı yazılır"} steps={["Bütçe", "Kapsam", "Teklif", "Onay"]} />,
+  features: () => stage('Google Ads hizmet kapsamı', V.account(), ['Kapsam', 'Plan', 'Uygulama', 'Rapor']),
+  technologies: () => stage('Google Ads araçlar ve ölçüm akışı', V.tagFlow(), ['Etiket', 'Dönüşüm', 'Test', 'Rapor'], 'Test edilmeden yayın yok'),
+  process: () => stage('Google Ads çalışma süreci', V.rail(), ['Hedef', 'Hazırlık', 'Yayın', 'Değerlendirme']),
+  portfolio: () => stage('Google Ads temsili senaryolar', V.evidence(), ['Durum', 'Kontrol', 'Değişiklik', 'Sonuç'], 'Temsili'),
+  pricing: () => stage('Google Ads maliyet kalemleri', V.budget(), ['Bütçe', 'Kapsam', 'Teklif', 'Onay'], 'Kalemler ayrı'),
   faq: () => <QaScene label={"Google Ads hakkında sık sorulan sorular: arama yapılıyor, ilk sorunun yanıtı açılıyor ve konular sırayla vurgulanıyor."} search={"Google Ads bütçesi"} questions={["Bütçe yönetim ücretine dahil mi?", "Mevcut hesabımla çalışılır mı?", "Sonuçları ne zaman değerlendiririz?"]} answer={["Hayır. Reklam bütçesi Google’a ödenir,", "yönetim bedeli ayrı yazılır."]} topics={["Kampanya", "Ölçüm", "Bütçe"]} steps={["Soru", "Yanıt", "Kapsam", "Teklif"]} />,
 };
 const config: SeoServiceConfig = {

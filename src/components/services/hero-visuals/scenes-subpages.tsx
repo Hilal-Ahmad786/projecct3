@@ -6,6 +6,7 @@
 // Every scene takes its Turkish labels as props, so each service reuses the scene with its own story.
 // First render is identical on server and client; loops start only after mount while on screen.
 
+import type { ReactNode } from 'react';
 import { motion } from 'framer-motion';
 import { H, GirihHalo, drawIn, riseIn, starPoints } from './primitives';
 import { Frame, Rail, Travel, center, loop, pop } from './scenes-3d';
@@ -484,5 +485,35 @@ export function ServiceOverviewScene({ label, title, chips, report, bars, badge,
       </motion.g>
       <Rail active={active} steps={railSteps(steps)} />
     </svg>
+  </>}</Frame>;
+}
+
+/* ── HeroStage: a service's own labelled illustration inside the animated hero frame ──────────────
+   The illustration (SeoArtwork, IkasVisual, …) is rendered by the page; the stage adds the standard
+   hero motion around it: pop-in card, gentle float, a light sweep, a rotating girih mark, a badge chip
+   and a step rail whose pills light up in turn. Slot text is rescaled in globals.css (.hero-stage). */
+export function HeroStage({ label, children, steps, badge }: { label: string; children: ReactNode; steps: readonly string[]; badge?: string }) {
+  return <Frame label={label}>{active => <>
+    <GirihHalo active={active} color={H.turquoise} opacity={0.13} />
+    <div className="hero-stage absolute inset-x-[2%] top-[8%] bottom-[24%] flex items-center justify-center">
+      <motion.div className="relative w-full" initial={{ opacity: 0, y: 14, scale: 0.94 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}>
+        <motion.div className="relative overflow-hidden rounded-2xl border border-heritage-sand bg-white p-2 shadow-[0_14px_34px_rgba(18,42,79,0.14)]"
+          animate={active ? { y: [0, -4, 0] } : { y: 0 }} transition={active ? { duration: 8, repeat: Infinity, ease: 'easeInOut' } : { duration: 0 }}>
+          {children}
+          <motion.div aria-hidden="true" className="pointer-events-none absolute inset-y-0 -left-1/3 w-1/3 -skew-x-12 bg-gradient-to-r from-transparent via-white/70 to-transparent"
+            initial={false} animate={active ? { x: ['0%', '420%'] } : { x: '0%', opacity: 0 }} transition={active ? { duration: 2.4, repeat: Infinity, repeatDelay: 5.6, delay: 1.6, ease: 'easeInOut' } : { duration: 0 }} />
+        </motion.div>
+        <motion.svg aria-hidden="true" viewBox="0 0 40 40" className="absolute -right-2 -top-3 h-9 w-9 drop-shadow" {...loop(active, { rotate: [0, 45] }, 18)} style={center}>
+          <circle cx="20" cy="20" r="18" fill={H.white} stroke={H.sand} />
+          <polygon points={starPoints(20, 20, 11, 6)} fill="none" stroke={H.saffron} strokeWidth="2" />
+        </motion.svg>
+        {badge && <motion.span className="absolute -bottom-3 left-3 rounded-full border border-heritage-saffron bg-heritage-ivory px-2.5 py-0.5 text-[9px] font-bold text-heritage-lapis-deep shadow-sm" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.2, duration: 0.5 }}>{badge}</motion.span>}
+      </motion.div>
+    </div>
+    <div className="absolute inset-x-0 bottom-[1%] flex justify-center gap-1.5">
+      {steps.map((t, i) => <motion.span key={t} className="rounded-[5px] border px-2 py-1 text-[8.5px] font-bold" style={{ color: H.lapisDeep }} initial={{ opacity: 0, y: 8 }}
+        animate={active ? { opacity: 1, y: 0, backgroundColor: [H.ivory, H.turquoiseLight, H.ivory], borderColor: [H.sand, H.turquoise, H.sand] } : { opacity: 1, y: 0, backgroundColor: H.ivory, borderColor: H.sand }}
+        transition={active ? { opacity: { delay: 1.8 + i * 0.1 }, y: { delay: 1.8 + i * 0.1 }, backgroundColor: { duration: 8, repeat: Infinity, delay: 3 + i * 2, times: [0, 0.12, 0.25] }, borderColor: { duration: 8, repeat: Infinity, delay: 3 + i * 2, times: [0, 0.12, 0.25] } } : { duration: 0 }}>{t}</motion.span>)}
+    </div>
   </>}</Frame>;
 }
