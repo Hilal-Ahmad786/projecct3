@@ -1,58 +1,57 @@
-## Hangi gider kime ödenir?
+## Toplam maliyeti oluşturan kalemler
 
-| Gider | Kime ödenir? | Neye bağlıdır? |
+| Gider | Neyi kapsar? | Nasıl netleştirilir? |
 | --- | --- | --- |
-| Reklam bütçesi | Reklam hesabınızdan Meta'ya | Hedefe, kitleye ve rekabete göre değişir |
-| Yönetim bedeli | PakSoft'a | Kampanya sayısına ve çalışma kapsamına göre belirlenir |
-| İçerik üretimi | PakSoft veya sizin ekibiniz | Video ve görsel adedi ile revizyon kapsamı |
-| Teknik kurulum | PakSoft | Piksel, olay planı, katalog ve test işleri |
+| Medya bütçesi | Platformdaki reklam yayını | Hesap, dönem ve harcama planı |
+| Yönetim hizmeti | Plan, kurulum, takip ve raporlama | Mutabık kalınan hizmet kapsamı |
+| Kreatif üretim | Çekim, kurgu, tasarım ve metin | Format, adet, revizyon ve kullanım kapsamı |
+| Teknik işler | Ölçüm, katalog veya bağlantı düzenlemeleri | Mevcut altyapının incelemesi |
+| Açılış sayfası | İçerik, tasarım veya geliştirme | Ayrı iş kapsamı veya teklif içeriği |
 
-## Instagram reklam ücretlerini neler belirler?
+Bir teklifin medya bütçesini içerip içermediğini mutlaka kontrol edin. Dahil olmayan işler, ödeme dönemleri ve ek iş koşulları yazılı biçimde belirtilmelidir.
 
-Instagram reklamları açık artırma sistemiyle gösterilir. Aynı kitleye ulaşmak isteyen işletmelerin sayısı, kitlenin büyüklüğü, hedeflenen konum, yerleşim ve dönem maliyeti etkiler. Reklamın ne kadar ilgi çektiği ve açılış sayfasının deneyimi de sonucu değiştirir. Bu yüzden herkes için geçerli sabit bir Instagram reklam ücreti yoktur.
+## Instagram reklam yönetimi fiyatı neden değişir?
 
-Bu sayfada tutar vermeyiz; tutar işletmenize, hedefinize ve rekabete göre değişir. Maliyet kararını tek başına tıklama maliyetine göre değil, uygun müşteri ve satış sonucuna göre değerlendirmek gerekir.
+Tek bir ürün için mevcut içeriklerle çalışmak ile farklı ürün grupları için düzenli video üretmek aynı iş yükünü doğurmaz. Dil ve pazar sayısı, hesap yapısı, üretim ihtiyacı, teknik hazırlık ve raporlama düzeni kapsamı etkiler.
 
-## Gönderiyi öne çıkarma ücreti ile kampanya bütçesi aynı mıdır?
+## Reels ve hikâye üretimini ayrıca değerlendirin
 
-Gönderiyi öne çıkarmak da bir reklam harcamasıdır ve bütçe belirlenir. Ancak hedef, kitle ve ölçüm seçenekleri sınırlı olabilir. Reklam Yöneticisi'nden kurulan kampanyada daha ayrıntılı kontrol vardır. İkisinde de ücret platforma ödenir; hizmet bedeli ayrıdır.
+Elinizde reklamda kullanılabilecek materyal varsa kurgu ve uyarlama ihtiyacı öne çıkabilir. Yeni çekim gerekiyorsa çekim hazırlığı, ürün temini, sahne planı ve revizyonlar da konuşulmalıdır. Video adedi tek başına fiyat karşılaştırması için yeterli değildir; teslim edilecek formatları ve kullanım koşullarını da sorun.
 
-## Üç farklı çalışma kapsamı
+## Üç örnek teklif kapsamı
 
-| Kapsam | Kimin işi? | Ne zaman uygun? |
-| --- | --- | --- |
-| Danışmanlık | Siz uygularsınız, biz yönlendiririz | Kendi ekibi kampanyayı yönetebilen işletmeler |
-| Yönetim | Biz kurarız ve yönetiriz | Düzenli kampanya yönetimi arayanlar |
-| Yönetim ve içerik | Biz içerik üretimi ve yönetimi birlikte yaparız | İçerik kaynağı sınırlı olanlar |
+| Durum | Görüşülecek işler |
+| --- | --- |
+| Reklama yeni başlayacak işletme | Hedef, materyal, erişim ve ilk test hazırlığı |
+| Mevcut reklamını geliştirmek isteyen işletme | Veri incelemesi, kreatif testi ve mobil akış kontrolü |
+| Ürün gruplarıyla büyüyen mağaza | Ürün mesajları, katalog, üretim planı ve satın alma ölçümü |
 
-## Reklam bütçesini nasıl planlamalısınız?
+Bunlar sabit fiyatlı paketler değildir. İşletmenizin ihtiyaçlarına göre ilk sürüm ve devam eden işler ayrı planlanabilir.
 
-İlk dönemde bütçeyi küçük testlere ayırmak, sonuç veren reklam ve kitleye kademeli olarak daha fazla pay vermek daha kontrollüdür. Bütçeyi bir anda büyük bir değişiklikle artırmak yerine, ölçümün doğru çalıştığından emin olduktan sonra kademeli artırmayı öneririz. Satış sezonları, kampanya tarihleri ve stok durumu da bütçe planını etkiler.
+## Günlük reklam bütçesini nasıl düşünmelisiniz?
 
-Bütçenin yönetim ücretine dahil olmadığını ve platforma doğrudan ödeneceğini unutmayın. [Meta reklam bütçesi planlama rehberimizi](/tr/hizmetler/meta-ads/blog/meta-reklam-butcesi-planlama) de inceleyebilirsiniz.
+Herkes için geçerli bir başarılı günlük bütçe yoktur. Test kapsamı, ürün ekonomisi, satış döngüsü ve mevcut veri birlikte değerlendirilmelidir. Bütçe planı, hangi soruyu öğrenmek istediğinizle bağlantılı olmalıdır; sonuç garantisi olarak sunulmamalıdır.
 
-## Teklifleri karşılaştırırken bunları sorun
+## Sayfalarda paylaşım satın almak aynı şey mi?
 
-1. Reklam bütçesi teklife dahil mi, yoksa ayrıca mı ödenecek?
-2. Kaç video ve görsel üretilecek, kaç revizyon hakkı var?
-3. Piksel ve ölçüm kurulumu kapsamda mı?
-4. Raporda hangi kararlar açıklanacak ve ne sıklıkla paylaşılacak?
-5. Hesap ve veriler çalışma bittiğinde kimde kalacak?
+Bir içerik üreticisine veya başka bir sayfaya paylaşım için ödeme yapmak, platform üzerinden reklam yayınlamakla aynı hizmet değildir. İş birliğinde içerik, kullanım ve yayın koşulları ayrıca belirlenir. Bu sayfadaki hizmet, Instagram reklam kampanyalarının yönetimine odaklanır.
 
-## Sık sorulan fiyat soruları
+## Teklif öncesi sık sorulanlar
 
 ### Instagram sponsorlu reklam ücretleri sabit mi?
 
-Hayır. Ücretler hedefe, kitleye, rekabete ve döneme göre değişir.
+Medya harcaması kampanya koşullarına bağlıdır. Ajans hizmet bedeli ve üretim giderleri ise yapılacak işlere göre belirlenir. Bu kalemler ayrı değerlendirilmelidir.
 
-### Yalnızca danışmanlık alabilir miyim?
+### Instagram reklam danışmanlığı alabilir miyim?
 
-Evet. Kendi ekibiniz kampanyayı yönetiyorsa yalnızca planlama ve kontrol desteği ayrı bir kapsam olabilir.
+Ekibiniz uygulamayı üstleniyorsa mevcut durum değerlendirmesi ve test planı ihtiyacınızı ayrıca görüşebiliriz. Danışmanlığın toplantı, doküman ve takip kapsamı teklifte belirtilir.
 
-### Kesin satış sayısı veya geri dönüş garantisi var mı?
+### Satış garantisi veriliyor mu?
 
-Hayır. Sonuçlar ürün, fiyat, rekabet ve açılış sayfası gibi birçok etkene bağlıdır; bu nedenle belirli bir satış veya getiri sözü vermeyiz.
+Satış; ürün, teklif, kullanıcı deneyimi ve takip dahil birçok etkene bağlıdır. Belirli satış veya getiri garantisi yerine yapılacak işleri, ölçüm yöntemini ve değerlendirme düzenini açıkça tanımlarız.
 
-## Kapsamınıza uygun teklif alın
+## Kapsamınıza uygun teklif isteyin
 
-Hedefinizi, Instagram hesabınızı ve mevcut reklam durumunuzu paylaşın; çalışma kapsamını ve maliyet kalemlerini ayrı ayrı yazalım.
+Instagram hesabınızı, web sitenizi, hedefinizi ve yaklaşık medya bütçenizi paylaşın. Yönetim, kreatif ve teknik işleri birbirinden ayıran bir kapsam hazırlayalım.
+
+[Çalışma süreci](/tr/hizmetler/instagram-ads/surec) · [Gönderi öne çıkarma karşılaştırması](/tr/hizmetler/instagram-ads/blog/instagram-gonderi-one-cikarma-reklam-yonetimi-farki)

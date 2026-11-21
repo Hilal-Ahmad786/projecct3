@@ -1,63 +1,57 @@
-## Instagram reklamlarından hangi sonucu bekliyorsunuz?
+## Instagram reklamlarını hangi ihtiyaç için kullanacaksınız?
 
-### Mağazanızda siparişe dönüşen ziyaretler
+### Ürünlerinizi satın almaya hazır müşterilerle buluşturmak
 
-Bir ürünü Reels veya hikâyede gören kişinin doğru ürün sayfasına ulaşması, fiyatı ve teslimatı anlaması ve ödemeyi tamamlaması gerekir. Reklam çalışmasını ürün sayfası, katalog ve satın alma ölçümüyle birlikte planlarız.
+Ürünün kullanımını gösteren içerik ile ürün sayfasındaki açıklama birbirini tamamlamalıdır. Reklamdan gelen kişinin fiyat, seçenek, teslimat ve ödeme bilgilerine kolayca ulaşmasını hedefleyen bir akış planlarız. Katalog ve satın alma ölçümü ihtiyaçlarını da bu kapsamda değerlendiririz.
 
-### Mesaj veya form ile gelen uygun talepler
+### Hizmetiniz için uygun başvurular almak
 
-Profil ziyareti ve mesaj sayısı tek başına başarı sayılmaz. Gelen taleplerin hizmet bölgenize ve sunduğunuz işe uyup uymadığını görebileceğiniz bir değerlendirme akışı kurarız.
+Bir mesaj veya form, ancak işletmenizin hizmet kapsamına uyduğunda anlamlı bir satış fırsatına dönüşebilir. Reklamda hizmet bölgesini, kapsamı ve kullanıcının sonraki adımını açıklaştırırız. Başvuruların uygunluğunu değerlendirecek geri bildirim düzenini birlikte belirleriz.
 
-### Yeni açılış veya ürün tanıtımı
+### Mevcut reklamların neden ilerlemediğini anlamak
 
-Yeni bir mekân, koleksiyon ya da hizmeti duyururken amaç tanınırlık da olabilir. Bu durumda başarıyı doğru tanımlar, tanıtım sonrası kişiyi hangi sonraki adıma yönlendireceğinizi baştan belirleriz.
+İzlenme var ama ziyaret yoksa mesaj ve yönlendirmeye; ziyaret var ama başvuru yoksa sayfa ve forma; başvuru var ama satış yoksa talep niteliğine ve takip sürecine bakmak gerekir. Çalışmayı yalnızca yeni görsel üretmeye indirgemeyiz.
 
 ## Instagram reklam yönetimi hizmetimiz neleri kapsar?
 
-| Çalışma | Size sağladığı çıktı |
+| Çalışma | Somut çıktı |
 | --- | --- |
-| Başlangıç değerlendirmesi | Hedef, mevcut hesap durumu ve öncelik listesi |
-| Kampanya planı | Reels, hikâye ve akış dağılımı, kitle yaklaşımı, test soruları |
-| Reklam içeriği | Mutabık kalınan kapsamda video ve görsel briefleri, metin varyantları |
-| Ölçüm kontrolü | Profil, mesaj, form ve satın alma eylemlerinin nasıl izleneceği |
-| Optimizasyon | Veriye göre sürdürülecek, değiştirilecek ve durdurulacak işler |
-| Raporlama | Harcama, sonuç kalitesi, bulgular ve sonraki dönem önerileri |
+| Hedef ve teklif değerlendirmesi | Kampanyanın hedefi ve öncelikli teklif |
+| Kreatif planlama | Format, mesaj, sahne ve varyant briefleri |
+| Kampanya hazırlığı | Hedefe uygun kurulum ve test planı |
+| Mobil akış kontrolü | Reklamdan form veya satın almaya kadar kontrol listesi |
+| Ölçüm değerlendirmesi | Başarı sayılan olaylar ve rapor kaynakları |
+| Düzenli yönetim | Bulgular, değişiklikler ve sonraki test önerileri |
 
-Üretilecek içerik sayısı, teknik kurulumlar ve rapor sıklığı teklif aşamasında netleştirilir. [Özellikler sayfasında](/tr/hizmetler/instagram-ads/ozellikler) hizmetin ayrıntılarını inceleyebilirsiniz.
+Video çekimi, kurgu, katalog kurulumu ve sayfa geliştirme her projede aynı kapsamda değildir. Dahil olan işler teklifinizde belirtilir. [Hizmet özelliklerini inceleyin](/tr/hizmetler/instagram-ads/ozellikler).
 
-## Reels, hikâye ve akış reklamlarını aynı hedefe bağlıyoruz
+## Aynı mesajı her formata kopyalamıyoruz
 
-Instagram'da aynı kişi gününde akışa, hikâyelere ve Reels'e ayrı ayrı bakar. Her alanda dikkat çeken içerik farklıdır: Reels'te ilk saniyelerde konuyu gösteren kısa videolar, hikâyede tam ekran dikey tasarım ve tek net mesaj, akışta ise ürünü ya da hizmeti açıklayan görsel ve metin öne çıkar.
+Reels'te ürünün nasıl kullanıldığını göstermek, hikâyede tek bir teklifi açıklamak veya akışta ayrıntılı bir görsele yer vermek farklı hazırlıklar gerektirebilir. Formatı önce seçip işletmeyi ona uydurmak yerine, anlatılacak mesaj ve beklenen eylemden hareket ederiz.
 
-Bir giyim butiği örneğinde aynı ürün için kısa bir kullanım videosu, hikâyede kampanya bilgisi ve akışta ürün seti kullanılabilir. Hepsi aynı ürün sayfasına ve aynı ölçüm planına bağlanır; böylece hangi içeriğin hangi sonuca katkı verdiğini birlikte okuyabiliriz.
+Örneğin kullanımının görülmesi gereken bir ürün için kısa bir gösterim planlanabilir. Kapsamı sık karıştırılan bir hizmette ise kimlere yönelik olduğunun açıkça anlatıldığı bir içerik daha iyi bir test sorusu oluşturabilir. Sonuç hakkında kararı kendi verinizle veririz.
 
-## Gönderiyi öne çıkarmak mı, Reklam Yöneticisi'nden kampanya mı?
+## Beğeni, mesaj ve satışın yerini ayrı belirleyelim
 
-| Konu | Gönderiyi öne çıkar | Reklam Yöneticisi kampanyası |
-| --- | --- | --- |
-| Kurulum | Hızlı, birkaç seçenekle | Hedef, kitle, yerleşim ve ölçüm ayrıntılı seçilir |
-| Ölçüm | Etkileşim ağırlıklı | Satın alma, form veya mesaj hedefine göre kurulabilir |
-| Test | Sınırlı | Kreatif ve kitle testleri planlanabilir |
-| Ne zaman uygun | Basit bir duyuru veya etkileşim | Satış, talep veya düzenli yönetim gereken çalışmalar |
+Her etkileşim aynı iş değerini taşımaz. Bir videonun izlenmesi, ürünün incelenmesi ve siparişin tamamlanması farklı adımlardır. Kampanyanın amacı ve rapor dili bu ayrımı korumalıdır. Hizmet işletmelerinde uygun başvuru; mağazalarda sipariş niteliği ve ekonomik katkı gibi ölçütleri değerlendirmeye dahil ederiz.
 
-Basit bir etkinlik duyurusu için gönderiyi öne çıkarmak yeterli olabilir. Satış ya da uygun talep hedefliyorsanız kampanyayı Reklam Yöneticisi'nde, ölçüm planıyla birlikte kurmak daha sağlıklı karar verir.
+## Instagram reklam ajansı seçerken neyi karşılaştırmalısınız?
 
-## Instagram reklam ajansı seçerken kapsamı karşılaştırın
+Ajansın yalnızca kaç reklam açacağını değil; hangi içerikleri hazırlayacağını, ölçümü kimin kontrol edeceğini, hangi veriyi raporlayacağını ve işletmenizin hangi işleri üstleneceğini sorun. Hesap erişimi ve içerik devri gibi konuların baştan açık olması, sonradan oluşabilecek belirsizliği azaltır.
 
-Aylık bedelin yanında hesap sahipliğini, video ve görsel üretiminin kime ait olduğunu, ölçüm sorumluluğunu ve raporlarda hangi kararların açıklanacağını sorun. Instagram hesabınız ve reklam hesabınız işletmenize ait kalmalı; çalışma sona erdiğinde erişim ve doküman devri baştan konuşulmalıdır.
+PakSoft teklifinde yönetim, üretim ve teknik işlerin sınırlarını birlikte netleştiririz. [Çalışma sürecimizi görün](/tr/hizmetler/instagram-ads/surec).
 
-PakSoft teklifinde yapılacak işleri ve sizin ekibinizden beklenen katkıları birlikte netleştiririz. [Çalışma sürecimizi inceleyin](/tr/hizmetler/instagram-ads/surec).
+**Instagram reklamlarınızda hangi adım eksik?** Hesabınızı, web sitenizi ve çözmek istediğiniz sorunu paylaşın. İlk çalışmanın içerik, ölçüm veya kampanya yönetimi tarafında mı başlaması gerektiğini birlikte değerlendirelim. [Mevcut durumumu konuşalım](/tr/start-project?service=instagram-ads).
 
-::cta Instagram reklamlarınızda ilk hangi noktaya bakmalıyız? Profilinizi, hedefinizi ve varsa mevcut kampanyanızın sorununu paylaşın; öncelikleri birlikte belirleyelim. | Kampanyamı Görüşelim
 
-## Instagram reklam bütçesi ve yönetim bedeli ayrı kalemlerdir
+## Reklam bütçesi ile ajans hizmet bedeli farklıdır
 
-Reklamların gösterilmesi için platforma ayrılan bütçe ile kampanyanın planlanması ve yönetimi için ödenen hizmet bedeli aynı şey değildir. Video üretimi, açılış sayfası ve teknik kurulum ihtiyacı da kapsamı etkileyebilir. [Fiyatlandırma ve maliyet kalemlerini inceleyin](/tr/hizmetler/instagram-ads/fiyatlandirma).
+Platformda reklam yayınlamak için ayrılan medya bütçesi ile kampanya yönetimi için ödenen bedeli ayrı planlayın. Çekim, kurgu, teknik entegrasyon ve açılış sayfası işleri de toplam kapsamı etkileyebilir. [Instagram reklam ücretleri sayfamızda](/tr/hizmetler/instagram-ads/fiyatlandirma) bu ayrımı açıklıyoruz.
 
-## Instagram ile Facebook reklamlarını birlikte planlayın
+## Instagram'ı daha geniş pazarlama planınıza bağlayın
 
-Instagram ve Facebook aynı reklam hesabından yönetilebildiği için kampanyaları birlikte planlamak çoğu işletme için mantıklıdır. Daha geniş kapsam için [Meta reklam yönetimi](/tr/hizmetler/meta-ads) sayfamızı, yalnızca Facebook'a odaklanan çalışma için [Facebook reklam yönetimi](/tr/hizmetler/facebook-ads) sayfamızı inceleyin. Reklamdan sonra gelen ziyaretçi deneyimi için [e-ticaret çözümlerimiz](/tr/hizmetler/e-commerce) de başlangıç olabilir.
+Platformları birlikte ele almak için [Meta reklam yönetimi](/tr/hizmetler/meta-ads), Facebook odaklı çalışma için [Facebook reklam yönetimi](/tr/hizmetler/facebook-ads) kapsamını inceleyebilirsiniz. Reklam sonrası mağaza deneyiminiz geliştirme gerektiriyorsa [e-ticaret çözümlerimiz](/tr/hizmetler/e-commerce) de bu çalışmayı tamamlayabilir.
 
-## İşletmeniz için Instagram reklam planını oluşturalım
+## İşletmeniz için Instagram reklam planı hazırlayalım
 
-Ne sattığınızı, kime ulaşmak istediğinizi ve bugün karşılaştığınız engeli paylaşın. Kampanya kapsamını ve öncelikli işleri birlikte belirleyelim.
+Ürün veya hizmetinizi, hedefinizi ve mevcut durumunuzu paylaşın. İlk aşamada yapılacak işleri ve başarıyı nasıl değerlendireceğimizi birlikte belirleyelim.

@@ -111,7 +111,7 @@ export function createSeoService(cfg: SeoServiceConfig) {
     jumpLabel: (title) => matchPrefix(cfg.jumpLabels, title) ?? title.replace(/[?:].*$/, ''),
     jumpMark: <Icon className="h-3.5 w-3.5 text-heritage-turquoise-deep" />,
     sectionId: (page, title) => cfg.sectionIds[`${page}:${title}`],
-    footer: (page, tone) => <><PlatformPageLinks platform={cfg.platform} current={page} tone={tone} custom={cfg.links} title={cfg.platform === 'meta-ads' || cfg.platform === 'facebook-ads' || cfg.platform === 'engine' ? 'Hizmetin ayrıntılarını inceleyin' : undefined} /><ClosingCta page={page} closing={closing} /></>,
+    footer: (page, tone) => <><PlatformPageLinks platform={cfg.platform} current={page} tone={tone} custom={cfg.links} title={cfg.links?.pagesTitle ?? (cfg.platform === 'meta-ads' || cfg.platform === 'facebook-ads' || cfg.platform === 'engine' ? 'Hizmetin ayrıntılarını inceleyin' : undefined)} /><ClosingCta page={page} closing={closing} /></>,
   });
 
   const iconChip = <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-black/5"><Icon className="h-5 w-5 text-heritage-turquoise-deep" aria-hidden="true" /></span>;

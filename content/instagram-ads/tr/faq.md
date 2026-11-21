@@ -1,67 +1,57 @@
-## Hizmet ve kapsam
+## Hizmet ve üretim
 
 ### Instagram reklam yönetimi neleri kapsar?
 
-Kampanya planı, reklam içeriği brifleri, ölçüm kontrolü, optimizasyon ve raporlama kapsama girebilir. Hangi işlerin teklifte yer aldığı ilk görüşmede yazılı olarak belirlenir.
+Planlama, kreatif hazırlığı, kampanya yönetimi, ölçüm kontrolü ve raporlama gibi işleri içerebilir. Dahil olan işler teklifinizde açıkça belirtilir. [Hizmet kapsamını inceleyin](/tr/hizmetler/instagram-ads/ozellikler).
 
-### Instagram ile Meta reklam yönetimi aynı hizmet mi?
+### Sosyal medya paylaşım yönetimi de dahil mi?
 
-Meta reklamları hem Facebook hem Instagram'ı kapsar. Bu sayfa Instagram'a özgü içeriklere, yani Reels, hikâye ve mesaj reklamlarına odaklanır. Her ikisini birlikte planlamak isterseniz [Meta reklam yönetimi](/tr/hizmetler/meta-ads) sayfamıza bakabilirsiniz.
+Organik paylaşım takvimi ve topluluk yönetimi, reklam kampanyası yönetiminden farklı iş yükleridir. İkisini birlikte istiyorsanız kapsamın ayrıca belirtilmesi gerekir.
 
-### Yalnızca Instagram'da reklam yayınlanabilir mi?
+### Reels çekimi ve kurgu yapılıyor mu?
 
-Evet. Hedefinize ve hedef kitlenize göre yalnızca Instagram yerleşimlerini seçebiliriz. Hangi yerleşimlerin daha uygun olduğunu test ederek değerlendiririz.
+Materyal durumunuza göre çekim, kurgu veya mevcut videoyu reklam için uyarlama ihtiyacını değerlendirebiliriz. Hangi üretim işinin sunulacağı ve adetleri teklif aşamasında kesinleşir.
 
-### Video ve görsel üretimi hizmete dahil mi?
+### Influencer reklam ücretleri bu hizmete dahil mi?
 
-Teklifte yazılı olduğu kadarıyla dahil olur. İçeriği sizin üretmenizi, bizim brif vermemizi veya birlikte çalışmayı seçebilirsiniz.
+İçerik üreticisi iş birlikleri ve başka sayfalarda paylaşım satın alma ayrı kapsamlardır. Platform medya bütçesi ve ajans yönetim bedeliyle aynı kalem olarak değerlendirilmemelidir.
 
-## Reels, hikâye ve içerik
+## Bütçe ve sonuç
 
-### Reels reklamı için profesyonel video şart mı?
+### Instagram reklam bütçesi ne kadar olmalı?
 
-Her zaman şart değildir. Telefonla çekilmiş ve iyi kurgulanmış kısa videolar da kullanılabilir. Önemli olan konunun ilk saniyelerde anlaşılması ve metnin okunabilmesidir.
+Hedef, test kapsamı ve işletmenizin ekonomik yapısı birlikte değerlendirilir. Her işletmeye uygun tek bir bütçe veya garanti sonuç yoktur. [Maliyet kalemlerini inceleyin](/tr/hizmetler/instagram-ads/fiyatlandirma).
 
-### Hikâye reklamı mı Reels reklamı mı daha uygundur?
+### Beğeni sayısı artarsa kampanya başarılı mı?
 
-Hedefe ve içeriğe göre değişir. Birini diğerinden üstün saymayız; küçük testlerle hangisinin işletmeniz için daha uygun olduğunu değerlendiririz.
+Kampanyanın amacı satış veya uygun başvuruysa beğeniler tek başına yeterli değildir. Hedeflenen eyleme ilerlemeyi de ölçmek gerekir.
 
-### Mevcut gönderilerimi reklam olarak kullanabilir miyim?
+### Sonuçları ne zaman değerlendirebiliriz?
 
-Çoğu zaman kullanılabilir. Gönderinin yönlendirme, metin ve görsel açısından reklam hedefine uyup uymadığını önce kontrol ederiz.
+Veri miktarı, kampanya koşulları ve satış döngüsü değerlendirme zamanını etkiler. Teknik hatalar erken kontrol edilir; performans kararı ise uygun dönem ve yeterli veriyle verilir.
 
-## Bütçe ve sonuçlar
+## Hesap ve uygulama
 
-### Reklam bütçesi ile yönetim ücreti farklı mı?
+### Hesap şifremi paylaşmalı mıyım?
 
-Evet. Reklam bütçesi Meta'ya, yönetim bedeli PakSoft'a ödenir ve teklifte ayrı yazılır.
+Gerekli erişimler platformun yetkilendirme araçları üzerinden düzenlenmelidir. Hesap sahipliği, roller ve iş bitimindeki erişim düzeni başlangıçta konuşulur.
 
-### Ne kadar sürede sonuç alırım?
+### Gönderi öne çıkarmak reklam vermek sayılır mı?
 
-Süre ürüne, rekabete ve hazırlığa göre değişir. Kesin bir tarih vermeyiz. Hazırlık tamamlandıktan sonra düzenli kontrollerle ilk değerlendirmeyi birlikte yaparız.
+Evet, mevcut içeriğin ücretli tanıtımı da reklamdır. Ancak yönetim hizmeti ayrıca planlama, üretim, test ve raporlama işleri içerebilir. [Yöntemleri karşılaştırın](/tr/hizmetler/instagram-ads/blog/instagram-gonderi-one-cikarma-reklam-yonetimi-farki).
 
-### Daha fazla mesaj neden daha fazla satış getirmiyor?
+### Her Reels videosu reklamda kullanılabilir mi?
 
-Mesaj sayısı uygun talep sayısı demek değildir. Yanıt süresi, ürün uygunluğu ve fiyat bilgisi gibi unsurlar sonucu belirler. Mesajları niteliğine göre değerlendiririz.
+İçerik uygunluğu, kullanılan ses ve diğer öğeler ile hesap koşulları kontrol edilmelidir. Organik olarak paylaşılabilmesi reklamda da aynı şekilde kullanılabileceği anlamına gelmez. [Reels hazırlık rehberini okuyun](/tr/hizmetler/instagram-ads/blog/instagram-reels-reklam-verme).
 
-## Hesap ve ölçüm
+### Kısıtlı reklam hesabını kesin açabilir misiniz?
 
-### Instagram hesap şifremi paylaşmam gerekir mi?
+Platform kararları üzerinde yetkimiz yoktur. Mevcut durum ve resmi inceleme yolları değerlendirilebilir; kısıtın kaldırılması garanti edilemez. Kısıtı aşmak için sahte hesap veya yanıltıcı yöntem önerilmez.
 
-Hayır. Erişim platformun yetki araçlarıyla verilir ve istediğiniz zaman geri alınabilir.
+### Sadece Instagram'da reklam yayınlamak istiyorum, mümkün mü?
 
-### Meta Pixel kurulu olması yeterli mi?
+İsteğiniz kampanya amacı ve hesapta kullanılabilen reklam alanlarına göre değerlendirilir. Kurulum sırasında gerçek seçenekler kontrol edilir; kullanılacak kapsam yayından önce netleştirilir.
 
-Tek başına yeterli değildir. Olayların doğru tetiklendiği, tekrar sayılmadığı ve değerlerin doğru geldiği test edilmelidir. Ayrıntılar için [Meta ölçüm sayfamıza](/tr/hizmetler/meta-ads/teknoloji) bakabilirsiniz.
+## İşletmenize özel bir sorunuz mu var?
 
-### Reklam verme kısıtlaması aldıysam açabilir misiniz?
-
-Hesabınızın durumunu inceleyip bildirimin nedenini anlamaya ve gerekirse itiraz sürecinde yardım etmeye çalışırız. Kararı Meta verir; sonucu garanti edemeyiz.
-
-### Çalışma sona erdiğinde ne olur?
-
-Instagram hesabınız, reklam hesabınız ve verileriniz işletmenize aittir. Çalışma bittiğinde yetkiler kapatılır ve gerekli dokümanlar size teslim edilir.
-
-## Sorunuz işletmenize özel mi?
-
-Sorunuzu ve işletme durumunuzu paylaşın; ilk görüşmede yanıtlayalım.
+Hesabınızı, hedefinizi ve mevcut sorununuzu paylaşın. Hangi çalışmanın gerekli olduğunu birlikte değerlendirelim.

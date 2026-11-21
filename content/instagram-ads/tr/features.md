@@ -1,65 +1,42 @@
-## Reels reklamları ve kısa video içerikleri
+## Reels reklamları için mesaj ve sahne planı
 
-Reels'te kullanıcı videoyu sesli veya sessiz izleyebilir. Bu yüzden mesajın görüntü ve altyazıyla anlaşılması, ürünün veya hizmetin ilk saniyelerde görünmesi önemlidir. Video süresi, açılış karesi ve yönlendirme sayfası birlikte planlanır.
+Reels çalışmasında videonun ne anlatacağı, ürünü nasıl göstereceği ve kullanıcıdan hangi adımı bekleyeceği önceden belirlenir. Görselin yalnızca hareketli olması yeterli değildir. Ses olmadan da anlaşılabilen bir anlatım, okunabilir metinler ve yönlendirmeyle uyumlu kapanış üzerinde çalışırız.
 
-### Açılış karesi
+Teslimat, mutabık kalınan kapsamda sahne briefi, metin önerisi, kurgu veya varyantlar içerebilir. Çekim ve üretim adedi ayrıca netleşir. [Reels hazırlık rehberini okuyun](/tr/hizmetler/instagram-ads/blog/instagram-reels-reklam-verme).
 
-Konuyu ve ürünü ilk saniyede göstererek kişinin kaydırmayı bırakmasını sağlayacak bir kare belirlenir.
+## Hikâye reklamlarında tek bir teklifin açıklığı
 
-### Altyazı ve okunabilirlik
+Hikâye içeriğinde ürün, kampanya koşulu ve sonraki adımın birlikte anlaşılması gerekir. Metin ve önemli görsel öğelerin arayüzle çakışmadığını önizlemede kontrol ederiz. Her hikâyeye mümkün olan en fazla bilgiyi sıkıştırmak yerine, kullanıcının karar vermesi için gereken bilgiyi seçeriz.
 
-Ses kapalıyken de anlaşılan metinler ve telefon ekranında rahat okunan yazı boyutu kontrol edilir.
+## Akış içerikleri ve görsel varyantlar
 
-### Tek net eylem
+Ürünü yakından göstermek, kullanım bağlamını anlatmak veya hizmet kapsamını açıklamak farklı görsel yaklaşımlar gerektirir. Test edilecek varyantlar bir soruya dayanır: Hangi anlatım daha uygun ziyaret veya başvuru getiriyor? Formatın uygunluğu hesap ve kampanya koşullarında ayrıca kontrol edilir.
 
-Videonun sonunda tek bir yönlendirme bulunur; ürüne bak, mesaj gönder ya da formu doldur gibi.
+## Katalog ve satış odaklı çalışmalar
 
-## Hikâye reklamlarında dikey tasarım
+Katalog reklamlarının anlamlı olması için ürün bağlantısı, stok, fiyat ve görsel bilgilerinin mağazayla tutarlı olması gerekir. Kampanya planını katalog ve ürün sayfasının hazırlık durumuyla birlikte ele alırız. Reklam gösterimi ile mağaza özelliği veya ürün etiketleme gibi farklı platform işlevlerini aynı şey olarak sunmayız.
 
-Hikâye reklamı tam ekran ve dikey görünür. Metin ve düğmelerin ekranın üst ve alt kısmındaki arayüz öğelerinin altında kalmaması için güvenli alan içinde tasarlanması gerekir. Kısa, tek mesajlı içerikler bu alanda daha kolay anlaşılır.
+## Yeniden pazarlama ve kullanıcı yolculuğu
 
-Bir kafe açılışı örneğinde hikâye reklamı yalnızca açılış tarihi, adres ve tek bir düğme içerebilir. Aynı mesajı akış görseline taşımak için yeniden ölçülendirme yapılır.
+İşletmeyle daha önce etkileşime giren kişilere yönelik yaklaşım, mevcut veri ve kullanılabilen hesap seçenekleri üzerinden değerlendirilir. Ürünü tanıyan bir kullanıcıya aynı başlangıç mesajını tekrar göstermek yerine, kararını destekleyen farklı bir bilgi sunmak test edilebilir. Küçük veri havuzlarında ayrı kampanya kurmanın gerekli olup olmadığını ayrıca inceleriz.
 
-## Instagram katalog ve ürün reklamları
+## Mesaj ve başvuru akışının takibi
 
-Mağazanızın ürün kataloğu Meta'ya bağlıysa ürünler reklamlarda kataloğunuzdan çekilerek gösterilebilir. Katalogdaki fiyat, stok ve görsel kalitesi reklam sonucunu doğrudan etkiler.
+Kampanyadan gelen konuşmanın kim tarafından karşılanacağı ve uygun talebin nasıl tanımlanacağı başlangıçta belirlenmelidir. Mesaj sayısı tek başına satış başarısı değildir. Kampanya değerlendirmesinde konuşmanın teklif veya siparişe ilerlemesi hakkında işletmenizden gelen geri bildirimi kullanırız.
 
-- **Ürün setleri.** Stoktaki ürünleri ve kampanya ürünlerini ayrı setlerde toplayabilir, tükenen ürünleri set dışında tutabiliriz.
-- **Ürün görselleri.** Instagram'da kare ve dikey görseller farklı görünür; ürün fotoğraflarının uygun boyutta olup olmadığı kontrol edilir.
-- **Ürün sayfası.** Reklamdaki ürünün tıklanınca doğru sayfada açıldığı ve fiyatın tutarlı olduğu test edilir.
+## Optimizasyonda hangi işi neden yapıyoruz?
 
-Katalog altyapısı Shopify, ikas, WooCommerce veya özel yazılım olabilir; bağlantı yöntemi altyapıya göre belirlenir.
-
-## Mesaj ve form ile talep toplama
-
-Hizmet işletmeleri için Instagram mesajı veya form başvurusu önemli bir talep yoludur. Mesaj yoluyla gelen taleplerde yanıt süresi ve kimin yanıtladığı sonucu belirler. Formda ise sorular uygun olmayan başvuruları ayıklayacak kadar net, doldurmayı zorlaştırmayacak kadar kısa olmalıdır.
-
-Bir fotoğraf stüdyosu için mesaj reklamı çekim türünü ve tarihi sorabilir; form reklamı ise hizmet şehrini ve çekim ihtiyacını netleştirebilir. Hangi yolun işletmeniz için daha uygun olduğunu ilk dönemde birlikte test ederiz.
-
-## Yeniden pazarlama yaklaşımı
-
-Profilinizle etkileşime giren, videonuzu izleyen veya sitenizi ziyaret eden kişilere farklı mesajlar gösterilebilir. Bu kitleler iznin ve veri kurallarının izin verdiği ölçüde kurulur; kitle büyüklüğü küçükse bu yaklaşımın test değeri sınırlı olabilir. Yeni kişilere ulaşmak ile ilgilenen kişilere yeniden ulaşmak ayrı hedeflerdir ve ayrı değerlendirilir.
-
-## Kreatif ve reklam metni testleri
-
-| Test sorusu | Örnek varyant | İncelenecek sonuç |
+| Gözlem | İnceleme | Olası çalışma |
 | --- | --- | --- |
-| Hangi açılış kareleri daha çok izlenme alıyor? | Ürün kullanımı veya sonuç görüntüsü | Videonun izlenme düzeni |
-| Hangi metin daha net? | Kısa fayda cümlesi veya soru | Tıklama sonrası sayfa davranışı |
-| Hangi çağrı uygun? | Mesaj gönder veya formu doldur | Başvurunun uygunluğu |
+| Video izleniyor, sonraki adım zayıf | Mesaj ve yönlendirme | Kapanış ve teklif açıklığını test etmek |
+| Ziyaret var, başvuru yok | Mobil sayfa ve form | Formu ve teklif anlatımını düzenlemek |
+| Çok mesaj, az uygun talep | İçerik ve kapsam | Hedeflenen ihtiyacı daha açık anlatmak |
+| Ürün ilgisi var, ödeme tamamlanmıyor | Stok, teslimat ve ödeme akışı | Mağaza engellerini belirlemek |
 
-Testlerde her seferinde tek değişkeni değiştirmeye çalışırız ve notlarımızı kayda alırız. Kısa sürede çıkan sonuçları tek başına karar için yeterli saymayız.
+Tablo bir teşhis başlangıcıdır; her belirtinin tek bir nedeni olduğu anlamına gelmez.
 
-## Hizmete dahil olanlar teklifinizde açık olsun
+## İlk aşamada gerekli özellikleri seçelim
 
-| Başlık | Nasıl netleşir? |
-| --- | --- |
-| Kampanya yönetimi | Kampanya sayısı, yönetim kapsamı ve toplantı düzeni |
-| İçerik | Video ve görsel adedi, revizyon sınırı, kimin ürettiği |
-| Teknik kurulum | Piksel, olay planı, katalog bağlantısı ve test |
-| Raporlama | Rapor sıklığı, içeriği ve karar önerileri |
-| Reklam bütçesi | Platforma ödenir; teklifte ayrı yazılır |
+Tüm formatları aynı anda kullanmak zorunda değilsiniz. İlk hedefinizi destekleyen içerik, ölçüm ve yönetim işlerini önceliklendirelim.
 
-## İhtiyacınıza göre bir kapsam oluşturalım
-
-Hangi içerik türlerine ve hangi hedefe ağırlık vermek istediğinizi paylaşın; çalışma kapsamını ve öncelikli işleri birlikte belirleyelim.
+[Teknolojiler](/tr/hizmetler/instagram-ads/teknoloji) · [Süreç](/tr/hizmetler/instagram-ads/surec) · [Fiyatlandırma](/tr/hizmetler/instagram-ads/fiyatlandirma)

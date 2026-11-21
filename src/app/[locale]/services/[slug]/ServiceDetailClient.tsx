@@ -688,6 +688,7 @@ function HeroSection({
   const isGoogleShoppingTr = service.slug === 'google-shopping' && locale === 'tr';
   const isMetaAdsTr = service.slug === 'meta-ads' && locale === 'tr';
   const isFacebookAdsTr = (service.slug === 'facebook-ads' || !!engineHero) && locale === 'tr';
+  const isInstagramAdsTr = service.slug === 'instagram-ads' && locale === 'tr';
   const isPerformanceMaxTr = service.slug === 'performance-max' && locale === 'tr';
   // Curated hero art can stand in for a missing DB hero animation.
   const artOnly = !hasAnimation && (service.slug === 'corporate-website-design' || isCustomEcomTr || isMarketTr || isSeoTr || isEcommerceSeoTr || isTechnicalSeoTr || isGoogleAdsTr || isGoogleSearchAdsTr || isGoogleShoppingTr || isMetaAdsTr || isFacebookAdsTr || isPerformanceMaxTr) && !!heroArt;
@@ -801,7 +802,7 @@ function HeroSection({
                 <RotatingHeading full={service.name} lead="Google Ads" words={['Yönetimi', 'Ajansı', 'Danışmanlığı']} />
               ) : isMetaAdsTr ? (
                 <RotatingHeading full={service.name} lead="Meta Reklam" words={['Yönetimi', 'Ajansı', 'Danışmanlığı']} />
-              ) : isFacebookAdsTr ? (
+                ) : isFacebookAdsTr ? (
                 <RotatingHeading full={service.name} lead={engineHero?.lead ?? 'Facebook Reklam'} words={engineHero?.words ?? ['Yönetimi', 'Ajansı', 'Danışmanlığı']} />
               ) : (
               <h1 className={`text-display font-light text-gray-900 leading-none ${isIkasTr ? 'ikas-hero-title' : ''}`}>
@@ -841,7 +842,9 @@ function HeroSection({
                     ? (locale === 'tr' ? 'Projenizi Konuşalım' : 'Discuss Your Project')
                     : t('services.detail.hero.startProject')}
                 </Button>
-                {isFacebookAdsTr ? (
+                {isInstagramAdsTr ? (
+                  <a href="#instagram-hizmet-kapsami" className="inline-flex items-center justify-center rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 hover:border-heritage-turquoise focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Hizmet Kapsamını İncele</a>
+                ) : isFacebookAdsTr ? (
                   <a href={`${engineHero?.base ?? '/tr/hizmetler/facebook-ads'}/ozellikler`} className="inline-flex items-center justify-center rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 hover:border-heritage-turquoise focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Hizmet Kapsamını İncele</a>
                 ) : isMetaAdsTr ? (
                   <a href="/tr/hizmetler/meta-ads/ozellikler" className="inline-flex items-center justify-center rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 hover:border-heritage-turquoise focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Yönetim Kapsamını İncele</a>

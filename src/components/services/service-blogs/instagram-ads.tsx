@@ -1,5 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
+import Image from 'next/image';
 import type { CtaCopy, CtaStage } from '@/components/services/ServiceArticle';
 import type { ServiceBlogDefinition } from './types';
 import manifest from '../../../../content/blog/instagram-ads/manifest.json';
@@ -11,8 +12,40 @@ const cta = (heading: string, text: string, primary: string, secondary: [string,
 const defaultCta = cta('Instagram reklam planınızı birlikte değerlendirelim', 'Hedefinizi, web sitenizi ve mevcut kampanya durumunuzu paylaşın.', 'Instagram Reklam Teklifi Al', ['Hizmet kapsamını inceleyin', `${servicePath}/ozellikler`]);
 const cardClass = 'my-5 overflow-hidden rounded-xl border border-heritage-sand bg-white';
 
-const renderMarker = (_marker: string) => null;
-const articleCtas: Record<string, Partial<Record<CtaStage, CtaCopy>>> = {};
+const diagrams: Record<string, { src: string; alt: string; caption: string; width: number; height: number }> = {
+  '[[INSTAGRAM_DIAGRAM:checklist]]': {
+    src: '/images/blog/instagram-ads/instagram-reklam-hazirlik-infografik.webp',
+    alt: 'Instagram reklamı yayına alınmadan önce kontrol edilecek hedef, teklif, içerik, yönlendirme, ölçüm ve bütçe başlıkları.',
+    caption: 'Reklam yayına alınmadan önce gözden geçirilebilecek hazırlık başlıkları.', width: 1122, height: 1402,
+  },
+  '[[INSTAGRAM_DIAGRAM:reelsbrief]]': {
+    src: '/images/blog/instagram-ads/instagram-reels-cekim-plani-infografik.webp',
+    alt: 'Reels çekim planı için hedef kitle, ihtiyaç, mesaj, sahne, eylem ve yayın öncesi kontrol soruları.',
+    caption: 'Çekimden önce yanıtlanabilecek altı planlama sorusu.', width: 1122, height: 1402,
+  },
+  '[[INSTAGRAM_DIAGRAM:scopechoice]]': {
+    src: '/images/blog/instagram-ads/instagram-gonderi-one-cikarma-infografik.webp',
+    alt: 'Mevcut bir gönderiyi tanıtma ile düzenli reklam yönetimini hazırlık, hedef, içerik ve sonuç takibi açısından karşılaştıran infografik.',
+    caption: 'Öne çıkarma ve reklam yönetimi farklı kapsamları olan, hedefe göre değerlendirilen yaklaşımlardır.', width: 1122, height: 1402,
+  },
+};
+const renderMarker = (marker: string) => {
+  const diagram = diagrams[marker];
+  if (!diagram) return null;
+  return <figure className="my-10 overflow-hidden rounded-2xl border border-heritage-sand bg-white">
+    <Image src={diagram.src} alt={diagram.alt} width={diagram.width} height={diagram.height} sizes="(max-width: 768px) 100vw, 760px" className="block h-auto w-full" />
+    <figcaption className="border-t border-heritage-sand px-4 py-3 text-sm text-gray-600 sm:px-5">{diagram.caption}</figcaption>
+  </figure>;
+};
+const articleCtas: Record<string, Partial<Record<CtaStage, CtaCopy>>> = {
+  'instagram-gonderi-one-cikarma-reklam-yonetimi-farki': {
+    middle: {
+      heading: 'İhtiyacınız tek bir tanıtım mı, düzenli reklam yönetimi mi?',
+      text: 'Mevcut hesabınızı, içeriklerinizi ve hedefinizi PakSoft ile değerlendirin. Önce ihtiyaç duyduğunuz işleri, ardından çalışma kapsamını belirleyelim.',
+      primary: link('Instagram reklam yönetimi hakkında bilgi alın', servicePath),
+    },
+  },
+};
 
 const manifestEntries = manifest as Array<{ slug: string; title: string; heading: string; metaDescription: string; excerpt: string; featuredImage: string; imageAlt: string; categoryLabel: string; datePublished: string; tags?: string[] }>;
 const readContent = (slug: string) => readFileSync(join(process.cwd(), 'content/blog/instagram-ads', `${slug}.md`), 'utf8');

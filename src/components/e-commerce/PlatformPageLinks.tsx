@@ -234,7 +234,15 @@ const RELATED: Record<Platform, [string, string, string][]> = {
 
 const focus = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise focus-visible:ring-offset-2';
 
-export type EngineLinks = { slug: string; name: string; related: [string, string, string][]; blog: boolean };
+export type EngineLinks = {
+  slug: string;
+  name: string;
+  related: [string, string, string][];
+  blog: boolean;
+  pages?: Record<PlatformPage, [string, string]>;
+  pagesTitle?: string;
+  pagesHeading?: string;
+};
 const enginePages = (name: string): Record<PlatformPage, [string, string]> => ({
   overview: [`${name} hizmeti`, 'Hizmetin genel çerçevesi ve hedefleri'],
   features: ['Hizmet kapsamı', 'Çalışma alanları ve dahil olan işler'],
@@ -249,17 +257,17 @@ const enginePages = (name: string): Record<PlatformPage, [string, string]> => ({
 export default function PlatformPageLinks({ platform, current, title, tone = 'ivory', custom }: { platform: Platform; current: PlatformPage; title?: string; tone?: 'white' | 'gray' | 'ivory'; custom?: EngineLinks }) {
   const base = custom ? '/tr/hizmetler/' + custom.slug : BASE[platform];
   const name = custom ? custom.name : platform === 'facebook-ads' ? 'Facebook reklam' : platform === 'meta-ads' ? 'Meta reklam' : platform === 'ikas' ? 'ikas' : platform === 'shopify' ? 'Shopify' : platform === 'custom' ? 'Özel e-ticaret' : platform === 'seo' ? 'SEO' : platform === 'ecommerce-seo' ? 'E-ticaret SEO' : platform === 'technical-seo' ? 'Teknik SEO' : platform === 'google-search-ads' ? 'Google Arama Ağı' : platform === 'google-shopping' ? 'Google Alışveriş' : platform === 'performance-max' ? 'Performance Max' : platform === 'google-ads' ? 'Google Ads' : 'Pazaryeri';
-  const pageMap = custom ? enginePages(custom.name) : PAGES[platform];
+  const pageMap = custom ? (custom.pages ?? enginePages(custom.name)) : PAGES[platform];
   const related = custom ? custom.related : RELATED[platform];
   const pages = (Object.keys(pageMap) as PlatformPage[]).filter((page) => page !== current && !(custom && !custom.blog && page === 'blog'));
   const bg = tone === 'gray' ? 'bg-background-gray' : tone === 'ivory' ? 'bg-heritage-ivory' : 'bg-white';
   return (
     <section className={bg}>
       <div className="mx-auto max-w-[1200px] px-4 sm:px-6 cw-section">
-        <h2 className="reveal max-w-4xl text-headline font-medium leading-tight text-gray-900">{trTitleCase(title ?? `${name} hizmetinin diğer sayfaları ve ilgili hizmetler`)}</h2>
+        <h2 className="reveal max-w-4xl text-headline font-medium leading-tight text-gray-900">{trTitleCase(title ?? custom?.pagesTitle ?? `${name} hizmetinin diğer sayfaları ve ilgili hizmetler`)}</h2>
         <div className="mt-6 grid gap-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)]">
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-gray-500">{name} sayfaları</h3>
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-gray-500">{custom?.pagesHeading ?? `${name} sayfaları`}</h3>
             <ul className="mt-3 grid gap-3 sm:grid-cols-2">
               {pages.map((page) => { const [label, text] = pageMap[page]; return (
                 <li key={page}>

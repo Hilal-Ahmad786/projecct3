@@ -21,7 +21,7 @@ export function getEngine(slug: string, locale: string): EngineService | null {
   if (slug === 'instagram-ads') {
     return {
       slug, heroArt: instagramHeroArt,
-      hero: { eyebrow: 'Instagram Reklam Kampanya Yönetimi', lead: 'Instagram Reklam', words: ['Yönetimi', 'Ajansı', 'Danışmanlığı'], keywordLine: 'Reels reklamları · Hikâye reklamları · Katalog reklamları · Raporlama', cta: 'Instagram Reklam Teklifi Al', enquiry: '/start-project?service=instagram-ads', base: '/tr/hizmetler/instagram-ads' },
+      hero: { eyebrow: 'Instagram Reklam Yönetimi', lead: 'Instagram Reklam', words: ['Yönetimi', 'Ajansı', 'Danışmanlığı'], keywordLine: 'Hedefe uygun kreatif planı · Mobil akış kontrolü · Sonuca göre değerlendirme', cta: 'Instagram Reklam Teklifi Al', enquiry: '/start-project?service=instagram-ads', base: '/tr/hizmetler/instagram-ads' },
       OverviewBody: InstagramAdsOverviewBody, Page: InstagramAdsTurkishPage, getMeta: getInstagramAdsMeta, getSocialMeta: getInstagramAdsSocialMeta,
     };
   }

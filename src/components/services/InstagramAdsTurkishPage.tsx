@@ -44,35 +44,35 @@ const V = {
 
 const visuals: SeoServiceConfig['visuals'] = {
   overview: [
-    ['Instagram reklamlarından hangi sonucu', aside(V.goals())],
-    ['Reels, hikâye ve akış', aside(V.placements())],
+    ['Instagram reklamlarını hangi ihtiyaç', aside(V.goals())],
+    ['Instagram reklam yönetimi hizmetimiz', aside(V.placements())],
     ['Instagram reklam ajansı seçerken', aside(V.agency())],
     ['Instagram reklam bütçesi ve yönetim', aside(V.budget())],
   ],
   features: [
-    ['Reels reklamları', aside(V.reels())],
+    ['Reels reklamları için mesaj', aside(V.reels())],
     ['Instagram katalog', aside(V.catalog())],
     ['Mesaj ve form', aside(V.leadForm())],
     ['Yeniden pazarlama', aside(V.remarketing())],
   ],
   technologies: [
-    ['Instagram hesabı, Facebook sayfası', aside(V.roles())],
-    ['Meta Pixel ve Conversions', aside(V.tagFlow())],
-    ['Raporlar neden', aside(V.sources())],
+    ['Platform içindeki sonuç', aside(V.sources())],
+    ['Olay planı ve veri tutarlılığı', aside(V.tagFlow())],
+    ['Mevcut altyapıyı çoğaltmadan', aside(V.roles())],
   ],
   process: [
-    ['İşletmenizi ve hedefinizi', { place: 'below', node: V.rail() }],
-    ['Kapsam ve sorumlulukları', aside(V.roles())],
-    ['Yayın ve ilk kontrolleri', aside(V.launch())],
+    ['1. Hedef ve mevcut durum', { place: 'below', node: V.rail() }],
+    ['3. Erişim ve teknik hazırlık', aside(V.roles())],
+    ['5. Yayın ve ilk kontrol', aside(V.launch())],
   ],
   portfolio: [
-    ['Giyim butiği', aside(V.ecomCase())],
-    ['Fotoğraf stüdyosu', aside(V.serviceCase())],
+    ['Ürünün kullanımını anlatan Reels', aside(V.ecomCase())],
+    ['Hizmet kapsamını açıklayan hikâye', aside(V.serviceCase())],
   ],
   pricing: [
-    ['Instagram reklam ücretlerini', aside(V.quote())],
-    ['Reklam bütçesini nasıl', aside(V.budgetPlan())],
-    ['Teklifleri karşılaştırırken', aside(V.compare())],
+    ['Toplam maliyeti oluşturan kalemler', aside(V.quote())],
+    ['Günlük reklam bütçesini', aside(V.budgetPlan())],
+    ['Teklif öncesi sık sorulanlar', aside(V.compare())],
   ],
 };
 
@@ -93,14 +93,28 @@ const heroArt: SeoServiceConfig['heroArt'] = {
 };
 
 const config: SeoServiceConfig = {
-  platform: 'engine', links: { slug: 'instagram-ads', name: 'Instagram reklam', blog: true, related: [['Meta Reklam Yönetimi', 'Facebook ve Instagram kampanyalarını birlikte planlayın.', '/tr/hizmetler/meta-ads'], ['Facebook Reklam Yönetimi', 'Yalnızca Facebook odaklı reklam çalışması.', '/tr/hizmetler/facebook-ads'], ['E-Ticaret Çözümleri', 'Reklamdan sonraki mağaza ve satın alma deneyimini planlayın.', '/tr/hizmetler/e-commerce']] }, contentDir: 'content/instagram-ads/tr', base, enquiry: INSTAGRAM_ADS_TR_ENQUIRY,
+  platform: 'engine', links: {
+    slug: 'instagram-ads', name: 'Instagram reklam', blog: true,
+    pagesTitle: 'Instagram hizmetinin ayrıntılarını keşfedin', pagesHeading: 'Instagram reklam sayfaları',
+    pages: {
+      overview: ['Genel Bakış', 'Instagram kampanyalarının hedef ve hizmet çerçevesini görün.'],
+      features: ['Özellikler', 'Reels, hikâye, katalog ve kampanya çalışmalarının kapsamını inceleyin.'],
+      technologies: ['Teknolojiler', 'Ölçüm araçlarını, katalog ve veri akışını değerlendirin.'],
+      process: ['Süreç', 'Brief, kreatif onayı, yayın ve değerlendirme adımlarını öğrenin.'],
+      portfolio: ['Portföy', 'Temsili senaryoları ve çalışma yaklaşımımızı inceleyin.'],
+      pricing: ['Fiyatlandırma', 'Medya bütçesi, yönetim ve üretim giderlerini ayırın.'],
+      blog: ['Blog', 'Reklam verme, Reels ve gönderi tanıtımı rehberlerini okuyun.'],
+      faq: ['SSS', 'Başlangıç, hesap erişimi, bütçe ve kapsam sorularına yanıt bulun.'],
+    },
+    related: [['Meta Reklam Yönetimi', 'Facebook ve Instagram kampanyalarını birlikte planlayın.', '/tr/hizmetler/meta-ads'], ['Facebook Reklam Yönetimi', 'Facebook odaklı reklam çalışmasının kapsamını inceleyin.', '/tr/hizmetler/facebook-ads'], ['E-Ticaret Çözümleri', 'Reklamdan sonraki mağaza ve satın alma deneyimini planlayın.', '/tr/hizmetler/e-commerce']],
+  }, contentDir: 'content/instagram-ads/tr', base, enquiry: INSTAGRAM_ADS_TR_ENQUIRY,
   serviceName: 'Instagram Reklam Yönetimi', Icon: MegaphoneIcon, metadata, visuals, heroArt,
   rotating: { features: { lead: 'Instagram Reklam', words: ['Hizmet Kapsamı', 'Reels Reklamları'] }, technologies: { lead: 'Instagram Reklam', words: ['Ölçümü', 'Piksel Kurulumu'] }, process: { lead: 'Instagram Reklam', words: ['Yönetim Süreci', 'Değerlendirme'] }, portfolio: { lead: 'Instagram Reklam', words: ['Senaryoları', 'Değerlendirme'] }, pricing: { lead: 'Instagram Reklam', words: ['Ücretleri', 'Bütçe Planı'] }, faq: { lead: 'Instagram Reklam', words: ['Sık Sorulan Sorular', 'Yönetimi'] }, blog: { lead: 'Instagram Reklam', words: ['Rehberleri', 'Maliyet Analizi'] } },
   primary: { overview: 'Instagram Reklam Teklifi Al', features: 'Kapsamıma Göre Teklif Al', technologies: 'Ölçüm İhtiyacımı Paylaş', process: 'İlk Görüşme İçin Bilgilerimi Paylaş', portfolio: 'Kampanyamı Görüşmek İstiyorum', pricing: 'Instagram Reklam Teklifi Al', faq: 'Sorumu ve İhtiyacımı Paylaş', blog: 'Instagram Reklam Teklifi Al' },
   secondary: { features: ['Hizmet Kapsamını İncele', '#instagram-reels-reklamlari'], technologies: ['Ölçüm Planını İncele', '#instagram-olay-plani'], process: ['Adımları İncele', '#instagram-surec-adimlari'], portfolio: ['Senaryoları İncele', '#instagram-butik-senaryosu'], pricing: ['Maliyet Kalemlerini İncele', '#instagram-maliyet-kalemleri'], faq: ['Soruları İncele', ''] },
   closingLink: { overview: ['Hizmet Kapsamını İncele', `${base}/ozellikler`], features: ['Fiyatlandırmayı İncele', `${base}/fiyatlandirma`], technologies: ['Hizmet Kapsamına Dön', `${base}/ozellikler`], process: ['Ölçüm ve Teknolojiler', `${base}/teknoloji`], portfolio: ['Çalışma Sürecimiz', `${base}/surec`], pricing: ['Meta Bütçe Rehberi', '/tr/hizmetler/meta-ads/blog/meta-reklam-butcesi-planlama'], faq: ['Instagram Reklam Yönetimi', base] },
   closingDefault: { title: 'Instagram Reklam Planınızı Birlikte Oluşturalım', text: 'Hedefinizi, Instagram hesabınızı ve mevcut reklam durumunuzu paylaşın; gerekli işleri birlikte belirleyelim.' },
-  closingTitlePrefix: { overview: 'İşletmeniz için Instagram reklam planını', features: 'İhtiyacınıza göre bir kapsam', technologies: 'Altyapınız için doğru bağlantıyı', process: 'Başlamak için hangi bilgileri', portfolio: 'Sizin kampanyanızda hangi sonucu', pricing: 'Kapsamınıza uygun teklif', faq: 'Sorunuz işletmenize özel' },
+  closingTitlePrefix: { overview: 'İşletmeniz için Instagram reklam planı', features: 'İlk aşamada gerekli özellikleri', technologies: 'Mevcut altyapıyı çoğaltmadan', process: 'İlk görüşmeye nasıl hazırlanabilirsiniz', portfolio: 'Sizin çalışmanız için başlangıç', pricing: 'Kapsamınıza uygun teklif isteyin', faq: 'İşletmenize özel bir sorunuz' },
   closingCopy: { overview: { title: 'İşletmeniz için Instagram reklam planını oluşturalım', text: 'Ne sattığınızı, kime ulaşmak istediğinizi ve bugün karşılaştığınız engeli paylaşın. Kampanya kapsamını ve öncelikli işleri birlikte belirleyelim.' } },
   jumpLabels: [
     ['Instagram reklamlarından hangi sonucu', 'Reklam hedefi'], ['Instagram reklam yönetimi hizmetimiz', 'Hizmet kapsamı'], ['Reels, hikâye ve akış', 'Reels ve hikâye'], ['Gönderiyi öne çıkarmak', 'Öne çıkar mı, kampanya mı?'], ['Instagram reklam ajansı seçerken', 'Ajans seçimi'], ['Instagram reklam bütçesi ve yönetim', 'Bütçe ve ücret'], ['Instagram ile Facebook', 'Facebook ile birlikte'],
@@ -113,11 +127,11 @@ const config: SeoServiceConfig = {
   ],
   sectionIds: {
     'overview:Instagram reklam yönetimi hizmetimiz neleri kapsar?': 'hizmet-kapsami',
-    'features:Reels reklamları ve kısa video içerikleri': 'instagram-reels-reklamlari',
-    'technologies:Profil ziyareti, mesaj ve form olaylarını ayırıyoruz': 'instagram-olay-plani',
-    'process:İşletmenizi ve hedefinizi tanıyalım': 'instagram-surec-adimlari',
-    'portfolio:Giyim butiği için örnek çalışma senaryosu': 'instagram-butik-senaryosu',
-    'pricing:Hangi gider kime ödenir?': 'instagram-maliyet-kalemleri',
+    'features:Reels reklamları için mesaj ve sahne planı': 'instagram-reels-reklamlari',
+    'technologies:Olay planı ve veri tutarlılığı': 'instagram-olay-plani',
+    'process:1. Hedef ve mevcut durum': 'instagram-surec-adimlari',
+    'portfolio:Ürünün kullanımını anlatan Reels çalışması': 'instagram-butik-senaryosu',
+    'pricing:Toplam maliyeti oluşturan kalemler': 'instagram-maliyet-kalemleri',
   },
   portfolioBadge: 'Temsili senaryo',
   structuredFaq: true,

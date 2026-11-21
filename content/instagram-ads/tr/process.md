@@ -1,34 +1,37 @@
-## 1. İşletmenizi ve hedefinizi tanıyalım
+## 1. Hedef ve mevcut durum
 
-İlk görüşmede ne sattığınızı, müşterinizin sizi nasıl bulduğunu, Instagram'ı bugün nasıl kullandığınızı ve reklamdan ne beklediğinizi dinleriz. Mevcut reklamlarınız varsa sonuçları ve sizi rahatsız eden noktaları da konuşuruz.
+Ne sattığınızı, hangi bölgede çalıştığınızı ve reklamdan hangi eylemi beklediğinizi konuşuruz. Mevcut Instagram hesabınızı, web sitenizi ve varsa geçmiş kampanya verilerini değerlendiririz. Başlangıç çıktısı, hedef ve öncelik listesidir.
 
-## 2. Kapsam ve sorumlulukları netleştirelim
+## 2. İçerik ve teklif briefi
 
-Hangi içeriği kimin üreteceğini, onayı kimin vereceğini ve gelen taleplere kimin ne kadar sürede dönüş yapacağını yazıya dökeriz. Böylece reklam çalışması ile satış ekibinizin işi aynı planın parçası olur.
+Kullanılacak ürün veya hizmeti, temel faydayı, teklif koşullarını ve marka sınırlarını belirleriz. İşletmenizin sağlayacağı fotoğraf, video ve ürün bilgileri listelenir. Çekim, kurgu ve revizyon işleri teklif kapsamına göre ayrılır.
 
-## 3. Erişimleri ve ölçümü kontrol edelim
+## 3. Erişim ve teknik hazırlık
 
-Instagram hesabı, reklam hesabı ve ödeme durumu kontrol edilir. Sitede veya mesaj akışında hangi eylemlerin sayılacağı belirlenir ve test edilir. Ölçüm testi tamamlanmadan kampanyayı başlatmayız.
+İlgili hesaplara gerekli yetkiler tanımlanır. Reklamdan gidilecek sayfa, form veya mağaza akışı test edilir. Kritik ölçüm sorunları varsa kampanya değerlendirmesini nasıl etkileyeceği açıklanır ve çözüm önceliği belirlenir.
 
-## 4. Kampanya ve içerikleri hazırlayalım
+## 4. Kreatif hazırlığı ve onay
 
-Hedefe uygun kampanya yapısı, Reels, hikâye ve akış içerik planı ve metin varyantları hazırlanır. İçerikler telefon ekranında ve farklı yerleşimlerde kontrol edilir. Onayınızdan önce yayına almayız.
+Reels, hikâye veya akış için hazırlanan içerikler mesaj, okunabilirlik ve yönlendirme bakımından kontrol edilir. Ürün bilgileri, teklif, marka kullanımı ve yayın bütçesi işletme tarafından onaylanır. Kullanılacak görsel ve seslerin reklam kullanımına uygunluğu doğrulanır.
 
-## 5. Yayın ve ilk kontrolleri yapalım
+## 5. Yayın ve ilk kontrol
 
-Yayına alındıktan sonra reklamların onaylanıp onaylanmadığı, bağlantıların doğru çalıştığı ve ilk verilerin kayda düşüp düşmediği izlenir. Büyük değişiklikleri ilk günlerde hızla yapmayız; reklam sisteminin veri toplamasına zaman tanırız.
+Kurulum sonrasında bağlantı ve ölçüm kontrolü yapılır. Platform incelemesi, hesap uygunluğu veya teknik durumlar yayın zamanını etkileyebilir. Başlangıç planı bu bağımlılıkları dikkate alır; sabit onay süresi vaat edilmez.
 
-## 6. Sonuçları değerlendirip sonraki adımı seçelim
+## 6. Öğrenme, değişiklik ve raporlama
 
-| Dönem | Yapılan iş | Çıktı |
+Sonuçlar hedeflenen eylem üzerinden değerlendirilir. Değişikliklerin nedeni ve beklenen etkisi kaydedilir. Veri yetersizse bu durum açıkça belirtilir. Bir sonraki test, önceki bulguyla bağlantılı hazırlanır.
+
+| İş | PakSoft | İşletmeniz |
 | --- | --- | --- |
-| Hazırlık | Hedef, erişim, ölçüm ve içerik planı | Onaylı plan |
-| Yayın | Kampanyaların başlatılması ve ilk kontroller | Çalışan kampanya |
-| İlk değerlendirme | Harcama, sonuç ve kalite incelemesi | Bulgular ve öneriler |
-| Sonraki test | Tek değişkenli yeni deneme | Test planı |
+| Plan | Hedefe göre öneri ve kapsam | Hedef, bütçe ve ticari koşullar |
+| İçerik | Mutabık kalınan üretim / düzenleme | Ürün doğruluğu, materyal ve onay |
+| Teknik hazırlık | İnceleme, dahilse kurulum ve test | Gerekli erişim ve ilgili ekip desteği |
+| Yayın | Kampanya kurulumu ve kontrol | Bütçe ve içerik onayı |
+| Değerlendirme | Analiz ve sonraki test | Talep kalitesi ve satış geri bildirimi |
 
-Sonuçları işletme kayıtlarınızla birlikte değerlendirir, bir sonraki dönemde neyi sürdüreceğimizi, değiştireceğimizi veya durduracağımızı gerekçesiyle yazarız.
+## İlk görüşmeye nasıl hazırlanabilirsiniz?
 
-## Başlamak için hangi bilgileri paylaşmalısınız?
+Instagram hesabınız, web siteniz, öncelikli ürün veya hizmetiniz, hedef bölgeniz ve yaklaşık medya bütçeniz başlangıç için yeterlidir. Elinizde içerik yoksa bunu da belirtin; üretim ihtiyacını baştan planlayalım.
 
-Instagram hesabınızın adı, web siteniz, ne sattığınız, hedef bölgeniz ve varsa mevcut reklam hesabınız yeterli bir başlangıçtır. Şifrenizi veya ödeme bilgilerinizi bizimle paylaşmanız gerekmez.
+[Fiyatlandırma](/tr/hizmetler/instagram-ads/fiyatlandirma) · [Ölçüm araçları](/tr/hizmetler/instagram-ads/teknoloji)

@@ -1,41 +1,32 @@
-## Instagram hesabı, Facebook sayfası ve reklam hesabı bağlantısı
+## Platform içindeki sonuç ile işletmedeki sonuç
 
-Instagram reklamları Meta'nın reklam altyapısından yönetilir. Bu yüzden çalışmaya başlamadan önce Instagram hesabınızın, bağlı olduğu varlıkların ve reklam hesabının kime ait olduğunu ve bağlantıların nasıl kurulduğunu kontrol ederiz. Erişimler şifre paylaşımıyla değil, platformun yetki araçlarıyla verilir.
+Bir kampanya raporundaki mesaj veya ziyaret sayısını, satış ekibinizin uygun bulduğu talep ya da tamamlanan siparişle aynı kabul etmeyin. Başlangıçta hangi verinin hangi sistemden geleceğini belirlemek, sonradan yapılan karşılaştırmaları daha anlamlı hale getirir.
 
-Hesabınızın türü, ödeme yönteminin durumu ve reklam verme kısıtlaması olup olmadığı başlangıçta kontrol edilir. Bu kontroller kampanya hazır olduktan sonra değil, çalışmanın başında yapılır.
-
-## Hangi araç hangi soruya cevap verir?
-
-| Araç | Cevapladığı soru |
-| --- | --- |
-| Reklam Yöneticisi | Hangi reklam ne kadar harcadı, hangi sonucu aldı? |
-| Meta Pixel | Sitede kim hangi eylemi yaptı? |
-| Conversions API | Tarayıcı kısıtlarında kaybolan olaylar sunucudan gönderilebiliyor mu? |
-| Etkinlik Yöneticisi | Olaylar doğru ve tekrarsız geliyor mu? |
-| Web analitiği | Reklamdan gelen ziyaretçi sitede ne yaptı? |
-| Satış veya CRM kaydı | Sonuç gerçekten satışa veya uygun talebe dönüştü mü? |
-
-Tüm araçların her işletmede kullanılması gerekmez. İhtiyacı, siteniz ve satış sürecinize göre belirleriz.
-
-## Meta Pixel ve Conversions API ile ölçüm
-
-Meta Pixel ve Conversions API kurulumu Meta reklamlarının tamamı için ortaktır; ayrıntılı anlatım için [Meta reklam teknoloji sayfamızı](/tr/hizmetler/meta-ads/teknoloji) inceleyebilirsiniz. Instagram'a özel olarak bizim bakacağımız şey, reklamdan gelen kişinin hangi yerleşimden geldiğini ve o yerleşimin hangi sonucu getirdiğini okuyabilmektir.
-
-## Profil ziyareti, mesaj ve form olaylarını ayırıyoruz
-
-| Olay | Ne anlama gelir? | Dikkat edilecek nokta |
+| Kaynak / araç | Ne için kullanılır? | Kontrol noktası |
 | --- | --- | --- |
-| Profil ziyareti | Kişi reklamdan sonra profilinize baktı | Tek başına satış anlamına gelmez |
-| Mesaj başlatma | Kişi sohbet başlattı | Yanıt süresi ve uygunluk takip edilmelidir |
-| Form gönderimi | Kişi bilgilerini bıraktı | Bilgilerin doğru ve uygun olması gerekir |
-| Satın alma | Sipariş tamamlandı | Değer ve iptal bilgisinin doğru gelmesi gerekir |
+| Meta Ads Manager | Kampanya yönetimi ve platform raporları | Seçilen amaç, dönem ve sonuç tanımı |
+| Meta Business Suite | Mevcut hesap seçeneklerine göre içerik ve reklam işleri | Yetkiler ve ilgili varlık bağlantıları |
+| Meta Pixel / Conversions API | Uygun web olaylarını iletmek | Doğru olay, değer ve tekrar kontrolü |
+| GA4 | Web sitesindeki davranışı incelemek | Kaynak bilgisi ve olay tanımı |
+| Katalog veri kaynağı | Ürün bilgilerinin reklam kullanımına hazırlanması | Stok, fiyat, görsel ve bağlantı tutarlılığı |
+| CRM / sipariş sistemi | Talebin veya siparişin işletmedeki durumunu görmek | Uygunluk, iptal ve satış geri bildirimi |
 
-Bu olayların her birini aynı başarı gibi saymayız. Bir kahve ekipmanı satan mağazada satın alma ana ölçüt iken, bir stüdyoda nitelikli mesaj veya form ana ölçüt olabilir. Olay planı başlangıçta yazılır ve test edilir.
+## Mobil kullanıcı yolunu test etmek
 
-## Raporlar neden farklı sonuçlar gösterebilir?
+Reklamdan açılan sayfa uygulama içi tarayıcıda veya farklı cihazlarda beklenen şekilde çalışmalıdır. Başvuru formunu, hata mesajını ve başarılı işlem kaydını test ederiz. Bağlantıya basılmasını gerçekleşmiş görüşme olarak saymayız.
 
-Reklam Yöneticisi, web analitiği ve satış kaydı farklı yöntemlerle sayar; dönem ve atıf kuralları farklı olabilir. Bu nedenle üç kaynağı aynı dönem için yan yana okur, farkların nedenini açıklarız. Tek bir rakamın yanlış olduğu sonucuna acele etmeyiz.
+## Olay planı ve veri tutarlılığı
 
-## Altyapınız için doğru bağlantıyı seçelim
+E-ticarette ürün görüntüleme ve satın alma; hizmet işletmelerinde tamamlanan form ve uygun başvuru farklı aşamalardır. Hangi olayın ne zaman oluşacağını belgelemek, aynı işlemin birden fazla entegrasyon tarafından tekrar sayılmasını araştırmayı kolaylaştırır.
 
-Mağazanızın altyapısını, form veya mesaj yolunuzu ve mevcut ölçüm kurulumunuzu paylaşın; Instagram reklamları için hangi bağlantıların gerektiğini birlikte belirleyelim.
+Sunucu ve tarayıcı bağlantıları kullanılıyorsa güncel entegrasyon kurallarına göre test yapılmalıdır. Hiçbir araç her kullanıcıyı eksiksiz izleyeceği veya bütün veri farklarını ortadan kaldıracağı şeklinde sunulmamalıdır.
+
+## Raporlar farklıysa önce tanımları karşılaştırın
+
+Dönem, zaman dilimi, olay kapsamı ve ilişkilendirme yaklaşımı farklı sonuçlar üretebilir. Meta raporuyla web analizini zorla eşitlemek yerine, her sistemin neyi saydığını açıklığa kavuştururuz. Geri bildirimdeki eksiklikleri de raporda belirtiriz.
+
+## Mevcut altyapıyı çoğaltmadan geliştirelim
+
+Shopify, ikas, WooCommerce veya özel yazılım bağlantısının zaten yaptığı işi yeni bir eklentiyle tekrar etmek ölçümü bozabilir. Önce mevcut kurulumun envanterini çıkarır; yeni iş gerekiyorsa kurulum, test ve bakım sorumluluğunu ayrıca tanımlarız.
+
+[Çalışma süreci](/tr/hizmetler/instagram-ads/surec) · [Hizmet kapsamı](/tr/hizmetler/instagram-ads/ozellikler)
