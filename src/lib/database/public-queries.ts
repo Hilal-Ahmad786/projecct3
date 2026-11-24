@@ -70,7 +70,7 @@ export const getPublishedServices = unstable_cache(
       return fallbackServicesLocalized(locale);
     }
   },
-  ['public:services-all'],
+  ['public:services-all:v2'],
   CACHE_OPTS,
 );
 
@@ -93,7 +93,7 @@ export const getFeaturedServices = unstable_cache(
       return fallbackServicesLocalized(locale).filter((s) => s.featured);
     }
   },
-  ['public:services-featured'],
+  ['public:services-featured:v2'],
   CACHE_OPTS,
 );
 
@@ -148,7 +148,7 @@ export const getServicesForSitemap = unstable_cache(
       }));
     }
   },
-  ['public:services-sitemap'],
+  ['public:services-sitemap:v2'],
   CACHE_OPTS,
 );
 
@@ -172,7 +172,7 @@ export const getPublishedServiceBySlug = unstable_cache(
       return fallbackServiceBySlug(slug, locale);
     }
   },
-  ['public:service-by-slug'],
+  ['public:service-by-slug:v2'],
   CACHE_OPTS,
 );
 
@@ -226,7 +226,7 @@ export const getSubServices = unstable_cache(
       return fallbackSubServices(parentSlug, locale);
     }
   },
-  ['public:sub-services'],
+  ['public:sub-services:v2'],
   CACHE_OPTS,
 );
 
@@ -264,7 +264,7 @@ export const getParentService = unstable_cache(
       return s ? { name: s.name, slug: s.slug, icon: s.icon, color: s.color } : null;
     }
   },
-  ['public:parent-service'],
+  ['public:parent-service:v2'],
   CACHE_OPTS,
 );
 
@@ -308,7 +308,7 @@ export const getServicesIndex = unstable_cache(
       return fallbackServicesLocalized(locale).map(toIndex);
     }
   },
-  ['public:services-index'],
+  ['public:services-index:v2'],
   CACHE_OPTS,
 );
 
