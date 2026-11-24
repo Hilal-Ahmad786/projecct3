@@ -30,9 +30,13 @@ const forceBaked = () => process.env.FORCE_BAKED_CONTENT === '1';
 // it is added to the live content database. Keep the public catalog complete
 // without replacing an owner-managed database record if one is created later.
 function withIkasFallback<T extends { slug?: string }>(services: T[], locale?: string): T[] {
-  if (services.some((service) => service.slug === 'ikas-development')) return services;
-  const ikasService = fallbackServiceBySlug('ikas-development', locale);
-  return ikasService ? [...services, ikasService as T] : services;
+  let result = services;
+  for (const slug of ['ikas-development', 'ecommerce-meta-ads']) {
+    if (result.some((service) => service.slug === slug)) continue;
+    const curated = fallbackServiceBySlug(slug, locale);
+    if (curated) result = [...result, curated as T];
+  }
+  return result;
 }
 
 // Now that public pages are statically prerendered, a DB error at build time
@@ -83,7 +87,7 @@ export const getFeaturedServices = unstable_cache(
         orderBy: { order: 'asc' },
       });
       if (!services.length) return fallbackServicesLocalized(locale).filter((s) => s.featured);
-      return services.map((service) => mergeServiceTranslation(service, locale));
+      return withIkasFallback(services.map((service) => mergeServiceTranslation(service, locale)), locale);
     } catch (err) {
       dbError('getFeaturedServices', err);
       return fallbackServicesLocalized(locale).filter((s) => s.featured);
@@ -214,7 +218,9 @@ export const getSubServices = unstable_cache(
       });
       if (!services.length) return fallbackSubServices(parentSlug, locale);
       const localizedServices = services.map((service) => mergeServiceTranslation(service, locale));
-      return parentSlug === 'e-commerce' ? withIkasFallback(localizedServices, locale) : localizedServices;
+      return parentSlug === 'e-commerce' || parentSlug === 'meta-ads'
+        ? withIkasFallback(localizedServices, locale).filter((service: any) => service.parentSlug === parentSlug)
+        : localizedServices;
     } catch (err) {
       dbError('getSubServices', err);
       return fallbackSubServices(parentSlug, locale);

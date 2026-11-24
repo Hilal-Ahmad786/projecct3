@@ -19,6 +19,7 @@ import googleAdsArticles from '../../content/blog/google-ads/manifest.json';
 import googleSearchAdsArticles from '../../content/blog/google-search-ads/manifest.json';
 import googleShoppingArticles from '../../content/blog/google-shopping/manifest.json';
 import performanceMaxArticles from '../../content/blog/performance-max/manifest.json';
+import ecommerceMetaAdsArticles from '../../content/blog/ecommerce-meta-ads/manifest.json';
 
 import { SITE_URL as baseUrl } from '@/config/site';
 const allLocales: Locale[] = ['en', 'tr', 'de', 'ar', 'ur'];
@@ -238,6 +239,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   });
 
   // Facebook ads guides are repository-backed, like the Meta Ads guides.
+  ecommerceMetaAdsArticles.forEach(({ slug }) => {
+    entries.push(entry('tr', `/services/ecommerce-meta-ads/blog/${slug}`, {
+      priority: PRIORITY.blogPost,
+      changeFreq: 'monthly',
+      date: new Date('2026-11-24T00:00:00Z'),
+      includeAlternates: false,
+    }));
+  });
   facebookAdsArticles.forEach(({ slug, datePublished }) => {
     entries.push(entry('tr', `/services/facebook-ads/blog/${slug}`, {
       priority: PRIORITY.blogPost,

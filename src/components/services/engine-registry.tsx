@@ -6,7 +6,7 @@ import { InstagramAdsOverviewBody, InstagramAdsTurkishPage, getInstagramAdsMeta,
 import type { SeoMeta, SeoPageKind } from './seo-pages/SeoServiceEngine';
 
 // One lookup for every Turkish service that runs on the shared engine, so routes do not need a branch per service.
-export type EngineHero = { eyebrow: string; lead: string; words: string[]; keywordLine: string; cta: string; enquiry: string; base: string };
+export type EngineHero = { eyebrow: string; lead: string; words: string[]; keywordLine: string; cta: string; enquiry: string; base: string; secondaryHref?: string };
 export type EngineSubPage = Exclude<SeoPageKind, 'overview'>;
 export type EngineService = {
   slug: string; hero: EngineHero; heroArt: ReactNode;

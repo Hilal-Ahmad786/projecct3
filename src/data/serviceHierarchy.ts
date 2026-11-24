@@ -31,7 +31,7 @@ export const servicesByCategory: Record<string, ServiceEntry[]> = {
   marketing: [
     { slug: 'google-ads', children: ['google-search-ads', 'google-display-ads', 'youtube-ads', 'google-shopping', 'performance-max'] },
     { slug: 'seo', children: ['technical-seo', 'local-seo', 'international-seo', 'link-building', 'ecommerce-seo', 'geo-ai-search-optimization', 'conversion-rate-optimization'] },
-    { slug: 'meta-ads', children: ['facebook-ads', 'instagram-ads', 'advantage-plus-campaigns'] },
+    { slug: 'meta-ads', children: ['facebook-ads', 'instagram-ads', 'ecommerce-meta-ads', 'advantage-plus-campaigns'] },
     { slug: 'digital-marketing', children: ['affiliate-marketing-systems', 'email-marketing-automation', 'social-media-integration'] },
     { slug: 'social-media-marketing', children: ['social-media-management', 'influencer-marketing', 'community-management', 'social-commerce'] },
     { slug: 'tiktok-marketing', children: ['tiktok-ads', 'tiktok-shop', 'tiktok-content'] },

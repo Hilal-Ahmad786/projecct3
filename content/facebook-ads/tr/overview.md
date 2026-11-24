@@ -46,6 +46,8 @@ Reklamın gösterimi için platforma ayrılan bütçe ile kampanyanın planlanma
 
 Facebook ve Instagram'ı birlikte değerlendirmek istiyorsanız [Meta reklam yönetimi](/tr/hizmetler/meta-ads) sayfamızdan daha geniş hizmet kapsamını inceleyin. Reels, hikâye ve Instagram kullanıcı yolculuğuna odaklanan çalışmalar için [Instagram reklam yönetimi](/tr/hizmetler/instagram-ads) hizmetimize geçebilirsiniz. Mağaza deneyiminiz de geliştirme gerektiriyorsa [e-ticaret çözümlerimiz](/tr/hizmetler/e-commerce) reklamdan sonra gelen kullanıcı yolculuğunu iyileştirmek için başlangıç olabilir.
 
+Ürün grupları, stok ve mağaza ölçümünü birlikte ele almak için [e-ticaret Meta reklam çalışmalarımızı](/tr/hizmetler/ecommerce-meta-ads) değerlendirebilirsiniz.
+
 ## İşletmeniz için Facebook reklam planını oluşturalım
 
 Ne sattığınızı, kime ulaşmak istediğinizi ve bugün karşılaştığınız engeli paylaşın. Kampanya kapsamını ve öncelikli işleri birlikte belirleyelim.

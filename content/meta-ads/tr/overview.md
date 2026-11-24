@@ -90,3 +90,5 @@ Yalnız yönetim ücretine bakmayın. Hesap sahipliği, kreatif üretimi, teknik
 Kampanyaları kendi ekibiniz yürütüyorsa değerlendirme ve yol haritası odaklı danışmanlık uygun olabilir. Operasyonun düzenli yürütülmesi gerekiyorsa kampanya yönetimi kapsamı oluşturulur. İki çalışma modelinin teslimleri ve sorumlulukları teklif üzerinde ayrı belirtilir.
 
 Meta Ads yönetimi veya Meta reklam hizmeti ararken hangi işleri dışarıdan almak istediğinizi ayırın: strateji değerlendirmesi, reklam operasyonu, kreatif üretimi ve teknik takip farklı ihtiyaçlardır. Danışmanlıkta ekip kendi kampanyalarını yürütmeye devam edebilir; yönetim modelinde ise düzenli operasyon sorumlulukları ayrıca tanımlanır.
+
+Online mağazanızın ürün kataloğu ve satın alma akışı için [e-ticaret Meta reklam yönetimi](/tr/hizmetler/ecommerce-meta-ads) kapsamını da inceleyebilirsiniz.

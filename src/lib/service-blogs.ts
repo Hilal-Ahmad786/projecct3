@@ -23,6 +23,7 @@ const SERVICE_BLOGS: Record<string, readonly string[]> = {
   'meta-ads': ['tr'],
   'facebook-ads': ['tr'],
   'instagram-ads': ['tr'],
+  'ecommerce-meta-ads': ['tr'],
 };
 
 export function hasServiceBlog(category: string | null | undefined, locale: string): boolean {

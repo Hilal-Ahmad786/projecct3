@@ -6,6 +6,7 @@ export type EngineServiceEntry = { slug: string; date: string; blog?: boolean };
 
 export const ENGINE_SERVICES: EngineServiceEntry[] = [
   { slug: 'instagram-ads', date: '2026-11-20', blog: true },
+  { slug: 'ecommerce-meta-ads', date: '2026-11-24', blog: true },
   { slug: 'tiktok-ads', date: '2026-11-20' },
   { slug: 'youtube-ads', date: '2026-11-20' },
   { slug: 'google-display-ads', date: '2026-11-20' },

@@ -845,7 +845,7 @@ function HeroSection({
                 {isInstagramAdsTr ? (
                   <a href="#instagram-hizmet-kapsami" className="inline-flex items-center justify-center rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 hover:border-heritage-turquoise focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Hizmet Kapsamını İncele</a>
                 ) : isFacebookAdsTr ? (
-                  <a href={`${engineHero?.base ?? '/tr/hizmetler/facebook-ads'}/ozellikler`} className="inline-flex items-center justify-center rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 hover:border-heritage-turquoise focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Hizmet Kapsamını İncele</a>
+                  <a href={engineHero?.secondaryHref ?? `${engineHero?.base ?? '/tr/hizmetler/facebook-ads'}/ozellikler`} className="inline-flex items-center justify-center rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 hover:border-heritage-turquoise focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Hizmet Kapsamını İncele</a>
                 ) : isMetaAdsTr ? (
                   <a href="/tr/hizmetler/meta-ads/ozellikler" className="inline-flex items-center justify-center rounded-sm border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-800 hover:border-heritage-turquoise focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-heritage-turquoise">Yönetim Kapsamını İncele</a>
                 ) : isPerformanceMaxTr ? (

@@ -50,6 +50,7 @@ Bu çalışmayı destekleyen diğer hizmetlerimizi de inceleyebilirsiniz:
 - [WordPress Geliştirme](/tr/hizmetler/wordpress-development): Özel tema, eklenti ve içerik düzeni.
 - [E-Ticaret Çözümleri](/tr/hizmetler/e-commerce): Platform seçimi ve satış deneyimi.
 - [Web Sitesi Hız Optimizasyonu](/tr/hizmetler/website-speed-optimization): Sayfa hızı ve önbellek düzeni.
+- [E-Ticaret Meta Reklam Yönetimi](/tr/hizmetler/ecommerce-meta-ads): Ürün kataloğu, reklam içeriği ve mağaza ölçümünü birlikte değerlendirin.
 
 ## İhtiyacınıza uygun planı birlikte oluşturalım
 

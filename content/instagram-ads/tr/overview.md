@@ -50,7 +50,7 @@ Platformda reklam yayınlamak için ayrılan medya bütçesi ile kampanya yönet
 
 ## Instagram'ı daha geniş pazarlama planınıza bağlayın
 
-Platformları birlikte ele almak için [Meta reklam yönetimi](/tr/hizmetler/meta-ads), Facebook odaklı çalışma için [Facebook reklam yönetimi](/tr/hizmetler/facebook-ads) kapsamını inceleyebilirsiniz. Reklam sonrası mağaza deneyiminiz geliştirme gerektiriyorsa [e-ticaret çözümlerimiz](/tr/hizmetler/e-commerce) de bu çalışmayı tamamlayabilir.
+Platformları birlikte ele almak için [Meta reklam yönetimi](/tr/hizmetler/meta-ads), Facebook odaklı çalışma için [Facebook reklam yönetimi](/tr/hizmetler/facebook-ads) kapsamını inceleyebilirsiniz. Reklam sonrası mağaza deneyiminiz geliştirme gerektiriyorsa [e-ticaret çözümlerimiz](/tr/hizmetler/e-commerce) de bu çalışmayı tamamlayabilir. Ürün tanıtımını katalog ve mağaza sipariş akışına bağlamak için [e-ticaret Meta reklamları](/tr/hizmetler/ecommerce-meta-ads) hizmetimizi inceleyin.
 
 ## İşletmeniz için Instagram reklam planı hazırlayalım
 

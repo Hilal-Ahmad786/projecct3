@@ -15,12 +15,16 @@
 // so the snapshot tracks the DB.
 import servicesData from './services.json'
 import ikasDevelopmentData from './ikas-development.json'
+import ecommerceMetaAdsData from './ecommerce-meta-ads.json'
 import projectsData from './projects.json'
 
 // The JSON is intentionally loosely typed (mirrors Prisma row shapes at runtime).
 const rawServices = [...servicesData] as any[]
 if (!rawServices.some((service) => service.slug === ikasDevelopmentData.slug)) {
   rawServices.push(ikasDevelopmentData)
+}
+if (!rawServices.some((service) => service.slug === ecommerceMetaAdsData.slug)) {
+  rawServices.push(ecommerceMetaAdsData)
 }
 export const fallbackProjects = projectsData as any[]
 

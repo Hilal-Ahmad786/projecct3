@@ -106,6 +106,7 @@ const TOTAL_STEPS = 5;
 export const SERVICE_LABELS: { value: string; labels: Record<string, string> }[] = [
   { value: 'facebook-ads', labels: { en: 'Facebook Ads Management', tr: 'Facebook Reklam Yönetimi', de: 'Facebook-Werbeanzeigen', ur: 'فیس بک اشتہارات', ar: 'إدارة إعلانات فيسبوك' } },
   { value: 'meta-ads', labels: { en: 'Meta Ads Management', tr: 'Meta Reklam Yönetimi', de: 'Meta-Werbeanzeigen', ur: 'میٹا اشتہارات', ar: 'إدارة إعلانات ميتا' } },
+  { value: 'ecommerce-meta-ads', labels: { en: 'E-Commerce Meta Ads Management', tr: 'E-Ticaret Meta Reklam Yönetimi', de: 'Meta-Werbung für E-Commerce', ur: 'ای کامرس میٹا اشتہارات', ar: 'إعلانات ميتا للتجارة الإلكترونية' } },
   { value: 'web-development', labels: { en: 'Web Development', tr: 'Web Geliştirme', de: 'Webentwicklung', ur: 'ویب ڈویلپمنٹ', ar: 'تطوير الويب' } },
   { value: 'mobile-development', labels: { en: 'Mobile App Development', tr: 'Mobil Uygulama Geliştirme', de: 'Mobile-App-Entwicklung', ur: 'موبائل ایپ ڈویلپمنٹ', ar: 'تطوير تطبيقات الجوال' } },
   { value: 'ai-solutions', labels: { en: 'AI Solutions', tr: 'Yapay Zeka Çözümleri', de: 'KI-Lösungen', ur: 'AI حل', ar: 'حلول الذكاء الاصطناعي' } },

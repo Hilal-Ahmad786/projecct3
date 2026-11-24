@@ -1048,3 +1048,79 @@ export function FacebookAdsScene() {
     </svg>
   </>}</Frame>;
 }
+
+// E-commerce Meta Ads overview hero: a product catalogue (one product out of stock and left out), a dynamic
+// product ad built from it, and a purchase that reaches the report once (browser and server event de-duplicated).
+export function EcommerceMetaAdsScene() {
+  const steps = [['Katalog', 14, 46], ['Kreatif', 64, 48], ['Ölçüm', 116, 44], ['Rapor', 164, 62]] as const;
+  const toAd = 'M100 78 C112 78 118 86 130 92';
+  const toBuy = 'M168 128 C168 142 150 152 124 160';
+  const tiles = [[24, 40], [50, 40], [76, 40], [24, 66], [50, 66], [76, 66]] as const;
+  return <Frame label="Temsili e-ticaret Meta reklam akışı: mağaza kataloğundaki stoklu ürünler dinamik ürün reklamına dönüşüyor, tükenen ürün dışarıda kalıyor ve satın alma hem tarayıcıdan hem sunucudan gelse de raporda bir kez sayılıyor.">{active => <>
+    <GirihHalo active={active} color={H.lapis} opacity={0.14} />
+    <svg viewBox="0 0 240 240" className="absolute inset-0 h-full w-full" aria-hidden="true">
+      <defs>
+        <linearGradient id="ecmA" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stopColor={H.turquoise} /><stop offset="100%" stopColor={H.lapis} /></linearGradient>
+        <linearGradient id="ecmB" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stopColor={H.terracotta} /><stop offset="100%" stopColor={H.saffron} /></linearGradient>
+        <filter id="ecmS" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="4" floodColor={H.lapisDeep} floodOpacity="0.12" /></filter>
+      </defs>
+
+      {/* catalogue */}
+      <motion.g {...loop(active, { y: [0, -2.5, 0] }, 8)}>
+        <rect x="14" y="20" width="96" height="116" rx="14" fill={H.white} filter="url(#ecmS)" />
+        <motion.rect x="14" y="20" width="96" height="116" rx="14" fill="none" stroke={H.sand} strokeWidth="2" {...drawIn(0.1, 1)} />
+        <motion.text x="22" y="34" fontSize="7.4" fontWeight="700" fill={H.lapisDeep} {...riseIn(0.35)}>Ürün kataloğu</motion.text>
+        {tiles.map(([x, y], i) => {
+          const out = i === 4;
+          return <motion.g key={i} {...pop(0.6 + i * 0.1)}>
+            <rect x={x - 2} y={y - 2} width="24" height="24" rx="6" fill={out ? H.ivory : 'url(#ecmA)'} stroke={out ? H.sand : 'none'} opacity={out ? 0.9 : 1} />
+            {!out && <polygon points={starPoints(x + 10, y + 10, 6.5, 3.6)} fill="none" stroke={H.white} strokeWidth="1.2" />}
+            {out && <text x={x + 10} y={y + 12} textAnchor="middle" fontSize="5.4" fontWeight="700" fill={H.terracotta}>Tükendi</text>}
+          </motion.g>;
+        })}
+        <motion.rect x="22" y="100" height="4" rx="2" fill={H.turquoise} initial={false} animate={active ? { width: [0, 78, 78, 0] } : { width: 78 }} transition={active ? { duration: 8, repeat: Infinity, delay: 1.2, times: [0, 0.4, 0.9, 1] } : { duration: 0 }} />
+        <rect x="22" y="100" width="78" height="4" rx="2" fill="none" stroke={H.sand} />
+        <text x="22" y="116" fontSize="5.8" fill={H.lapisDeep} opacity="0.7">Stoktaki ürünler reklamda</text>
+        <text x="22" y="126" fontSize="5.8" fill={H.lapisDeep} opacity="0.7">Tükenen ürün dışarıda</text>
+      </motion.g>
+
+      {/* catalogue → dynamic ad */}
+      <motion.path d={toAd} fill="none" stroke={H.turquoise} strokeWidth="1.4" strokeDasharray="3 3" {...drawIn(1.4, 0.7)} />
+      <Travel active={active} d={toAd} delay={2.4} duration={1.4} period={6} />
+
+      {/* dynamic product ad */}
+      <motion.g {...pop(1.3)}>
+        <motion.g {...loop(active, { y: [0, -2, 0] }, 9, 1)}>
+          <rect x="130" y="34" width="96" height="94" rx="12" fill={H.white} stroke={H.lapis} strokeOpacity="0.25" filter="url(#ecmS)" />
+          <text x="138" y="47" fontSize="6.6" fontWeight="700" fill={H.lapisDeep}>Dinamik ürün reklamı</text>
+          <rect x="138" y="52" width="80" height="44" rx="8" fill="url(#ecmB)" />
+          <motion.g {...loop(active, { rotate: [0, 45] }, 18)} style={center}><polygon points={starPoints(178, 74, 14, 7.8)} fill="none" stroke={H.white} strokeWidth="1.5" /></motion.g>
+          <rect x="138" y="102" width="30" height="5" rx="2.5" fill={H.sand} />
+          <rect x="138" y="111" width="20" height="4" rx="2" fill={H.ivory} />
+          <motion.g {...loop(active, { scale: [1, 0.94, 1] }, 6, 3.2)} style={center}>
+            <rect x="176" y="104" width="42" height="14" rx="7" fill={H.terracotta} />
+            <text x="197" y="113.4" textAnchor="middle" fontSize="6" fontWeight="700" fill={H.white}>Satın al</text>
+          </motion.g>
+        </motion.g>
+      </motion.g>
+
+      {/* purchase reaches the report once */}
+      <motion.path d={toBuy} fill="none" stroke={H.turquoise} strokeWidth="1.4" strokeDasharray="3 3" {...drawIn(2.0, 0.6)} />
+      <Travel active={active} d={toBuy} delay={4} duration={1.2} period={6} color={H.terracotta} />
+      <motion.g {...pop(2.3)}>
+        <rect x="24" y="148" width="130" height="28" rx="14" fill={H.white} stroke={H.turquoise} strokeOpacity="0.45" filter="url(#ecmS)" />
+        <motion.circle cx="40" cy="162" r="8" fill={H.turquoise} {...loop(active, { scale: [1, 1.12, 1] }, 6, 5)} style={center} />
+        <path d="M36.2 162 l2.8 2.8 l5 -5.6" fill="none" stroke={H.white} strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
+        <text x="54" y="160" fontSize="6.6" fontWeight="700" fill={H.lapisDeep}>Satın alma sayıldı</text>
+        <text x="54" y="169" fontSize="5.4" fill={H.lapisDeep} opacity="0.65">Tarayıcı + sunucu = tek kayıt</text>
+      </motion.g>
+      <motion.g {...pop(2.6)}>
+        <rect x="160" y="144" width="66" height="36" rx="10" fill={H.ivory} stroke={H.saffron} filter="url(#ecmS)" />
+        <text x="168" y="156" fontSize="5.8" fontWeight="700" fill={H.lapisDeep}>Olay kimliği</text>
+        {[0, 1].map((i) => <motion.g key={i} {...riseIn(2.8 + i * 0.15)}><circle cx="170" cy={166 + i * 8} r="2.4" fill={i ? H.lapis : H.turquoise} /><text x="176" y={168 + i * 8} fontSize="5.4" fill={H.lapisDeep}>{i ? 'Sunucu olayı' : 'Tarayıcı olayı'}</text></motion.g>)}
+      </motion.g>
+
+      <Rail active={active} steps={steps} />
+    </svg>
+  </>}</Frame>;
+}

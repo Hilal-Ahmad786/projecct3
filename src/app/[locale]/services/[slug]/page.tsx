@@ -328,7 +328,7 @@ export default async function ServicePage({ params }: PageProps) {
   const breadcrumbItems = [
     { name: translations.navbar?.home || 'Home', url: `${baseUrl}/${locale}` },
     { name: translations.services?.detail?.breadcrumb?.services || 'Services', url: isTurkishEcommerce || isTurkishEcommerceSeo || isTurkishIkas || isTurkishShopify || isTurkishMdService || isTurkishGoogleAds || isTurkishGoogleSearchAds || isTurkishGoogleShopping || isTurkishFacebookAds || isTurkishEngine ? `${baseUrl}/tr/hizmetler` : `${baseUrl}/${locale}/services` },
-    ...(parentService ? [{ name: parentService.name, url: isTurkishEcommerceSeo || isTurkishIkas || isTurkishShopify || isTurkishMdService ? `${baseUrl}/tr${localizeFullPath(`/services/${parentService.slug}`, 'tr')}` : `${baseUrl}/${locale}/services/${parentService.slug}` }] : []),
+    ...(parentService ? [{ name: parentService.name, url: isTurkishEcommerceSeo || isTurkishIkas || isTurkishShopify || isTurkishMdService || isTurkishEngine ? `${baseUrl}/tr${localizeFullPath(`/services/${parentService.slug}`, 'tr')}` : `${baseUrl}/${locale}/services/${parentService.slug}` }] : []),
     { name: isTurkishEcommerce ? 'E-Ticaret' : serviceName, url: isTurkishEcommerce || isTurkishEcommerceSeo || isTurkishIkas || isTurkishShopify || isTurkishMdService || isTurkishGoogleAds || isTurkishGoogleSearchAds || isTurkishGoogleShopping || isTurkishMetaAds || isTurkishFacebookAds || isTurkishEngine || isTurkishPerformanceMax ? localizedServiceUrl : `${baseUrl}/${locale}/services/${slug}` },
   ];
 

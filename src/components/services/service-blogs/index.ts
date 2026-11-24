@@ -16,6 +16,7 @@ import { metaAdsBlog } from './meta-ads';
 import { facebookAdsBlog } from './facebook-ads';
 import { instagramAdsBlog } from './instagram-ads';
 import { performanceMaxBlog } from './performance-max';
+import { ecommerceMetaAdsBlog } from './ecommerce-meta-ads';
 
 // Presentation config per service blog. The list of enabled services/locales
 // lives in src/lib/service-blogs.ts (kept JSX-free for the sitemap).
@@ -35,6 +36,7 @@ const definitions: Record<string, ServiceBlogDefinition> = {
   'meta-ads': metaAdsBlog,
   'facebook-ads': facebookAdsBlog,
   'instagram-ads': instagramAdsBlog,
+  'ecommerce-meta-ads': ecommerceMetaAdsBlog,
 };
 
 export function getServiceBlog(serviceSlug: string, locale: string): ServiceBlogDefinition | null {

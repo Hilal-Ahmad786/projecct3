@@ -20,6 +20,7 @@ import { getGoogleAdsGuide, getGoogleAdsGuides } from '@/components/services/ser
 import { getGoogleSearchAdsGuide, getGoogleSearchAdsGuides } from '@/components/services/service-blogs/google-search-ads';
 import { getGoogleShoppingGuide, getGoogleShoppingGuides } from '@/components/services/service-blogs/google-shopping';
 import { getPerformanceMaxGuide, getPerformanceMaxGuides } from '@/components/services/service-blogs/performance-max';
+import { getEcommerceMetaAdsGuide, getEcommerceMetaAdsGuides } from '@/components/services/service-blogs/ecommerce-meta-ads';
 
 // DB-backed service guides (see getServiceBlogArticle) pick up edits hourly;
 // admin saves also revalidate the 'blog' cache tag immediately.
@@ -41,10 +42,11 @@ export function generateStaticParams() {
   const googleSearchAds = getGoogleSearchAdsGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'google-search-ads', articleSlug }));
   const googleShopping = getGoogleShoppingGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'google-shopping', articleSlug }));
   const performanceMax = getPerformanceMaxGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'performance-max', articleSlug }));
+  const ecommerceMetaAds = getEcommerceMetaAdsGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'ecommerce-meta-ads', articleSlug }));
   const metaAds = getMetaAdsGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'meta-ads', articleSlug }));
   const facebookAds = getFacebookAdsGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'facebook-ads', articleSlug }));
   const instagramAds = getInstagramAdsGuides().map(({ slug: articleSlug }) => ({ locale: 'tr', slug: 'instagram-ads', articleSlug }));
-  return [...instagramAds, ...facebookAds, ...metaAds, ...corporate, ...shopify, ...customEcommerce, ...marketplace, ...seo, ...ecommerceSeo, ...technicalSeo, ...googleAds, ...googleSearchAds, ...googleShopping, ...performanceMax];
+  return [...ecommerceMetaAds, ...instagramAds, ...facebookAds, ...metaAds, ...corporate, ...shopify, ...customEcommerce, ...marketplace, ...seo, ...ecommerceSeo, ...technicalSeo, ...googleAds, ...googleSearchAds, ...googleShopping, ...performanceMax];
 }
 
 interface PageProps {
@@ -107,6 +109,11 @@ async function getServiceBlogArticle(serviceSlug: string, locale: string, articl
   }
   if (serviceSlug === 'performance-max' && locale === 'tr') {
     const post = getPerformanceMaxGuide(articleSlug);
+    if (!post) return null;
+    return { blog, post, canonical: `${SITE_URL}${serviceBlogPath(blog.config)}/${articleSlug}` };
+  }
+  if (serviceSlug === 'ecommerce-meta-ads' && locale === 'tr') {
+    const post = getEcommerceMetaAdsGuide(articleSlug);
     if (!post) return null;
     return { blog, post, canonical: `${SITE_URL}${serviceBlogPath(blog.config)}/${articleSlug}` };
   }
@@ -226,6 +233,7 @@ export default async function CorporateWebsiteGuideRoute({ params }: PageProps) 
       : slug === 'google-search-ads' ? getGoogleSearchAdsGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))
       : slug === 'google-shopping' ? getGoogleShoppingGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))
       : slug === 'performance-max' ? getPerformanceMaxGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))
+      : slug === 'ecommerce-meta-ads' ? getEcommerceMetaAdsGuides().map((guide) => ({ slug: guide.slug, title: guide.title, excerpt: guide.excerpt, featuredImage: guide.featuredImage }))
       : await (async () => {
         const { getPublicServiceBlogCards } = await import('@/lib/database/public-queries');
         return getPublicServiceBlogCards(slug, locale, 24, slug === 'ikas-development' ? 'cover-images-2026-11' : '').catch(() => []);
